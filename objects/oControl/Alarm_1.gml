@@ -1,0 +1,17 @@
+/// @description Deactivate GO!
+if isPaused=0
+{
+if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
+and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and  room!=rm_howtoplay and room!=rm_cutscene1
+and room!=rm_map and room!=rm_chardata
+{
+if oPlayer.x>xGoCheck
+{
+goActive=0
+goFrame=0
+}
+else
+alarm[1]=30
+}
+
+}

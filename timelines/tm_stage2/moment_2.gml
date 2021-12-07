@@ -1,0 +1,1 @@
+oPlayer.x=0

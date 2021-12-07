@@ -1,0 +1,1 @@
+oControl.TextDialogue="YOU'RE TOO LATE!"

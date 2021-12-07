@@ -1,0 +1,2 @@
+	item=oDrink
+	itemID=oDrink

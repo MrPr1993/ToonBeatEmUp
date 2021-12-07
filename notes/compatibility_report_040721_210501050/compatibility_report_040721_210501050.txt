@@ -1,0 +1,1154 @@
+Converting GML script: ${project_dir}\scripts\animsetup_specialplayer\animsetup_specialplayer.gml
+Converted builtin - line 16: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 20: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 100: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 104: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 27: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 111: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description /// @description Car Mode
+
+Converting GML script: ${project_dir}\scripts\animsetup_viva\animsetup_viva.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_viva\animsetup_viva.gml - 500: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_viva\animsetup_viva.gml - 500: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_viva\animsetup_viva.gml - 500: unexpected terminal operator =
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_viva\animsetup_viva.gml
+
+Converting GML script: ${project_dir}\scripts\viva_weaponanim\viva_weaponanim.gml
+Converted description /// @description Hammer Attack / Weapon Attack
+
+Converting GML script: ${project_dir}\scripts\animsetup_viva_super\animsetup_viva_super.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_viva_super\animsetup_viva_super.gml - 84: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_viva_super\animsetup_viva_super.gml - 84: expected expression
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_viva_super\animsetup_viva_super.gml - 102: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_viva_super\animsetup_viva_super.gml
+
+Converting GML script: ${project_dir}\scripts\animsetup_hina\animsetup_hina.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_hina\animsetup_hina.gml - 517: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_hina\animsetup_hina.gml - 517: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_hina\animsetup_hina.gml - 517: unexpected terminal operator =
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_hina\animsetup_hina.gml
+
+Converting GML script: ${project_dir}\scripts\hina_weaponanim\hina_weaponanim.gml
+Converted description /// @description Hammer Attack
+
+Converting GML script: ${project_dir}\scripts\animsetup_hina_super\animsetup_hina_super.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_hina_super\animsetup_hina_super.gml - 132: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_hina_super\animsetup_hina_super.gml - 132: expected expression
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_hina_super\animsetup_hina_super.gml - 158: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_hina_super\animsetup_hina_super.gml
+
+Converting GML script: ${project_dir}\scripts\animsetup_bahati\animsetup_bahati.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_bahati\animsetup_bahati.gml - 530: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_bahati\animsetup_bahati.gml - 530: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_bahati\animsetup_bahati.gml - 530: unexpected terminal operator =
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_bahati\animsetup_bahati.gml
+
+Converting GML script: ${project_dir}\scripts\bahati_weaponanim\bahati_weaponanim.gml
+Converted description /// @description Hammer Attack
+
+Converting GML script: ${project_dir}\scripts\animsetup_bahati_super\animsetup_bahati_super.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_bahati_super\animsetup_bahati_super.gml - 90: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_bahati_super\animsetup_bahati_super.gml - 90: expected expression
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_bahati_super\animsetup_bahati_super.gml - 97: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_bahati_super\animsetup_bahati_super.gml - 106: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_bahati_super\animsetup_bahati_super.gml
+
+Converting GML script: ${project_dir}\scripts\animsetup_sofia\animsetup_sofia.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_sofia\animsetup_sofia.gml - 523: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_sofia\animsetup_sofia.gml - 523: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_sofia\animsetup_sofia.gml - 523: unexpected terminal operator =
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_sofia\animsetup_sofia.gml
+
+Converting GML script: ${project_dir}\scripts\sofia_weaponanim\sofia_weaponanim.gml
+Converted description /// @description Hammer Attack
+
+Converting GML script: ${project_dir}\scripts\animsetup_sofia_super\animsetup_sofia_super.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_sofia_super\animsetup_sofia_super.gml - 69: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_sofia_super\animsetup_sofia_super.gml - 69: unexpected unary operator and
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_sofia_super\animsetup_sofia_super.gml - 94: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_sofia_super\animsetup_sofia_super.gml
+
+Converting GML script: ${project_dir}\scripts\animsetup_sofia_misc\animsetup_sofia_misc.gml
+Converted description /// @description Footstool Move
+
+Converting GML script: ${project_dir}\scripts\ai_actions\ai_actions.gml
+Converted builtin - line 52: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 53: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 67: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 74: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 74: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 80: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 80: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Attack
+
+Converting GML script: ${project_dir}\scripts\animsetup_burglar\animsetup_burglar.gml
+Converted description /// @description Since they're exactly the same, it'll use the default animations
+
+Converting GML script: ${project_dir}\scripts\animsetup_enemy\animsetup_enemy.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_enemy\animsetup_enemy.gml - 130: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_enemy\animsetup_enemy.gml - 130: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_enemy\animsetup_enemy.gml - 130: unexpected terminal operator =
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_enemy\animsetup_enemy.gml - 144: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_enemy\animsetup_enemy.gml - 144: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_enemy\animsetup_enemy.gml - 144: unexpected terminal operator =
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\animsetup_enemy\animsetup_enemy.gml - 157: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\animsetup_enemy\animsetup_enemy.gml
+
+Converting GML script: ${project_dir}\scripts\animsetup_fatburglar\animsetup_fatburglar.gml
+Converted builtin - line 48: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\scripts\animsetup_robot\animsetup_robot.gml
+Converted builtin - line 64: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 64: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 67: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Animation Setup - Enemy
+
+Converting GML script: ${project_dir}\scripts\enemy_ai\enemy_ai.gml
+Converted builtin - line 32: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 32: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 67: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 29: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description /// @description /AI settings
+
+Converting GML script: ${project_dir}\scripts\enemy_data\enemy_data.gml
+Converted description /// @description If certain details like the Continue happens and it needs to freeze all enemies
+
+Converting GML script: ${project_dir}\scripts\enemy_endstep\enemy_endstep.gml
+Converted description /// @description Attack Setup
+
+Converting GML script: ${project_dir}\scripts\enemy_step\enemy_step.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\scripts\character_setup\character_setup.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_setup\character_setup.gml - 51: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_setup\character_setup.gml - 51: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_setup\character_setup.gml - 51: unexpected terminal operator =
+Too many errors - GML not processed : ${project_dir}\scripts\character_setup\character_setup.gml
+
+Converting GML script: ${project_dir}\scripts\character_hitanims\character_hitanims.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 86: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 86: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 86: unexpected terminal operator =
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 128: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 151: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 170: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 172: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 184: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 195: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 216: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 221: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 246: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 255: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 268: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_hitanims\character_hitanims.gml - 300: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\character_hitanims\character_hitanims.gml
+
+Converting GML script: ${project_dir}\scripts\character_release\character_release.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_release\character_release.gml - 19: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_release\character_release.gml - 19: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_release\character_release.gml - 19: unexpected terminal operator =
+Too many errors - GML not processed : ${project_dir}\scripts\character_release\character_release.gml
+
+Converting GML script: ${project_dir}\scripts\checkwall\checkwall.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\checkwall\checkwall.gml - 1: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\checkwall\checkwall.gml - 1: unexpected unary operator and
+Too many errors - GML not processed : ${project_dir}\scripts\checkwall\checkwall.gml
+
+Converting GML script: ${project_dir}\scripts\controller_setup\controller_setup.gml
+Converted string - line 64: 'J' -> "J"
+
+Converting GML script: ${project_dir}\scripts\flashFX\flashFX.gml
+Converted description /// @description flashFX(x,y,z,sprite,index,speed,alarm,xscale,yscale,blend,alpha)/// @param x
+/// @param y
+/// @param z
+/// @param sprite
+/// @param index
+/// @param speed
+/// @param alarm
+/// @param xscale
+/// @param yscale
+/// @param blend
+/// @param alpha
+
+Converting GML script: ${project_dir}\scripts\frame_set\frame_set.gml
+Converted description /// @description frame_set(frame,image_index,speed)/// @param frame
+/// @param image_index
+/// @param speed
+
+Converting GML script: ${project_dir}\scripts\hit_reaction\hit_reaction.gml
+Converted description /// @description Hurt
+
+Converting GML script: ${project_dir}\scripts\throw_command\throw_command.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\throw_command\throw_command.gml - 38: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\throw_command\throw_command.gml - 38: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\throw_command\throw_command.gml - 38: unexpected terminal operator =
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\throw_command\throw_command.gml - 55: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\throw_command\throw_command.gml
+
+Converting GML script: ${project_dir}\scripts\weaponanim\weaponanim.gml
+Converted description /// @description  @description weaponanim(weaponspr,weaponIndex,x,y,weaponangle,weaponcolor)/// @param weaponspr
+/// @param weaponIndex
+/// @param x
+/// @param y
+/// @param weaponangle
+/// @param weaponcolor
+
+Converting GML script: ${project_dir}\scripts\atkcol_set\atkcol_set.gml
+Converted description /// @description atkcol_set(x,y,z,xScale,yScale,height)/// @param x
+/// @param y
+/// @param z
+/// @param xScale
+/// @param yScale
+/// @param height
+
+Converting GML script: ${project_dir}\scripts\hiscore_check\hiscore_check.gml
+Converted description /// @description 10000
+
+Converting GML script: ${project_dir}\scripts\hiscore_setup\hiscore_setup.gml
+Error: variable 'variable_global_exists' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description Here it's for the Create. Here I put in the variables for the hi-score screen.
+
+Converting GML script: ${project_dir}\scripts\zblock_col\zblock_col.gml
+Converted description /// @description Z Block Collision
+
+Converting GML script: ${project_dir}\scripts\spritepos_setup\spritepos_setup.gml
+Converted description /// @description spritepos_setup(PosType,frame,x,y)/// @param PosType
+/// @param frame
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\keyno_check\keyno_check.gml
+Converted string - line 42: '"' -> "\""
+
+Converting GML script: ${project_dir}\scripts\enemy_heavythrow\enemy_heavythrow.gml
+Converted description /// @description enemy_heavythrow(animFrameStart,animFrameLock,throwStrengthMax,animFrameEnd)/// @param animFrameStart
+/// @param animFrameLock
+/// @param throwStrengthMax
+/// @param animFrameEnd
+
+Converting GML script: ${project_dir}\scripts\pal_swap_draw_palette\pal_swap_draw_palette.gml
+Converted description /// @description pal_swap_draw_palette(palette_sprite,pal_index,x,y);/// @param palette_sprite
+/// @param pal_index
+/// @param x
+/// @param y
+
+Converting GML script: ${project_dir}\scripts\pal_swap_enable_override\pal_swap_enable_override.gml
+Converted description /// @description pal_swap_enable_override(pal sprite)/// @param pal sprite
+
+Converting GML script: ${project_dir}\scripts\pal_swap_get_color_count\pal_swap_get_color_count.gml
+Converted description /// @description pal_swap_get_color_count(palette sprite)/// @param palette sprite
+
+Converting GML script: ${project_dir}\scripts\pal_swap_get_pal_color\pal_swap_get_pal_color.gml
+Converted description /// @description pal_swap_get_pal_color(palette sprite,pal index, color index)/// @param palette sprite
+/// @param pal index
+/// @param  color index
+
+Converting GML script: ${project_dir}\scripts\pal_swap_get_pal_count\pal_swap_get_pal_count.gml
+Converted description /// @description pal_swap_get_pal_count(palette sprite)/// @param palette sprite
+
+Converting GML script: ${project_dir}\scripts\pal_swap_index_palette\pal_swap_index_palette.gml
+Converted description /// @description pal_swap_index_palette(palette sprite index)/// @param palette sprite index
+
+Converting GML script: ${project_dir}\scripts\pal_swap_init_system\pal_swap_init_system.gml
+Converted description /// @description pal_swap_init_system(shader,enable indexing <optional>)/// @param shader
+/// @param enable indexing <optional>
+Converted string - line 12: 'texel_size' -> "texel_size"
+Converted string - line 13: 'palette_UVs' -> "palette_UVs"
+Converted string - line 14: 'palette_index' -> "palette_index"
+Converted string - line 15: 'palette_texture' -> "palette_texture"
+
+Converting GML script: ${project_dir}\scripts\pal_swap_reset\pal_swap_reset.gml
+Converted description /// @description pal_swap_reset();
+
+Converting GML script: ${project_dir}\scripts\pal_swap_set\pal_swap_set.gml
+Converted description /// @description pal_swap_set(palette_sprite_index, palette_index,palette is surface);/// @param palette_sprite_index
+/// @param  palette_index
+/// @param palette is surface
+
+Converting GML script: ${project_dir}\scripts\pal_swap_set_tiles\pal_swap_set_tiles.gml
+Converted description /// @description pal_swap_set_tiles(palette sprite or surface, pal index, start layer, end layer, pal is surface);/// @param palette sprite or surface
+/// @param  pal index
+/// @param  start layer
+/// @param  end layer
+/// @param  pal is surface
+
+Converting GML script: ${project_dir}\scripts\wrap\wrap.gml
+Converted description /// @description wrap(value,min,max)/// @param value
+/// @param min
+/// @param max
+
+Converting GML script: ${project_dir}\scripts\enemy_create\enemy_create.gml
+Converted description /// @description enemy_create(x,y,enemy,z,palette,palSprite,name,hpLayer,hp)/// @param x
+/// @param y
+/// @param enemy
+/// @param z
+/// @param palette
+/// @param palSprite
+/// @param name
+/// @param hpLayer
+/// @param hp
+
+Converting GML script: ${project_dir}\scripts\enemy_modify\enemy_modify.gml
+Converted description /// @description enemy_modify(SprPal,palette,name,HPlayer,hp,MAXhp)/// @param SprPal
+/// @param palette
+/// @param name
+/// @param HPlayer
+/// @param hp
+/// @param MAXhp
+
+Converting GML script: ${project_dir}\scripts\throw_step\throw_step.gml
+Converted description /// @description Throw Setup
+
+Converting GML script: ${project_dir}\scripts\hitFXset\hitFXset.gml
+Converted description /// @description hitFXset(sprite,index,isDepth,animEnd,speedFX,spriteTime,xScale,yScale,blend,alpha)/// @param sprite
+/// @param index
+/// @param isDepth
+/// @param animEnd
+/// @param speedFX
+/// @param spriteTime
+/// @param xScale
+/// @param yScale
+/// @param blend
+/// @param alpha
+
+Converting GML script: ${project_dir}\scripts\enemy_freeze\enemy_freeze.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\enemy_freeze\enemy_freeze.gml - 6: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\enemy_freeze\enemy_freeze.gml - 6: unexpected unary operator and
+Too many errors - GML not processed : ${project_dir}\scripts\enemy_freeze\enemy_freeze.gml
+
+Converting GML script: ${project_dir}\scripts\instance_nth_nearest\instance_nth_nearest.gml
+Converted description /// @description  instance_nth_nearest(x,y,obj,n)/// @param x
+/// @param y
+/// @param obj
+/// @param n
+
+Converting GML script: ${project_dir}\scripts\fight_target\fight_target.gml
+Converted description /// @description fight_target(obj)/// @param obj
+
+Converting GML script: ${project_dir}\scripts\spawner_cammax\spawner_cammax.gml
+Converted description /// @description spawner_cammax(x,xscale,MaxX)/// @param x
+/// @param xscale
+/// @param MaxX
+
+Converting GML script: ${project_dir}\scripts\spawner_followset\spawner_followset.gml
+Converted description /// @description spawner_followset(selfID,MinX,MaxX,canFollow)/// @param selfID
+/// @param MinX
+/// @param MaxX
+/// @param canFollow
+
+Converting GML script: ${project_dir}\scripts\projectile_create\projectile_create.gml
+Converted description /// @description projectile_create(x,y,z,height,sprite,hspeed,mask,sprFX,damage,MoveType,HitType,HitForce,HitForceZ)/// @param x
+/// @param y
+/// @param z
+/// @param height
+/// @param sprite
+/// @param hspeed
+/// @param mask
+/// @param sprFX
+/// @param damage
+/// @param MoveType
+/// @param HitType
+/// @param HitForce
+/// @param HitForceZ
+
+Converting GML script: ${project_dir}\scripts\playermoveset_setup\playermoveset_setup.gml
+Converted description /// @description /Check on the moves on the right top>>>>
+
+Converting GML script: ${project_dir}\scripts\player_attack\player_attack.gml
+Converted description /// @description Attack / Take Item/Weapon
+
+Converting GML script: ${project_dir}\scripts\player_special\player_special.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\player_special\player_special.gml - 8: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\player_special\player_special.gml - 8: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\player_special\player_special.gml - 8: unexpected terminal operator =
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\player_special\player_special.gml - 17: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\player_special\player_special.gml
+
+Converting GML script: ${project_dir}\scripts\player_throwweapon\player_throwweapon.gml
+Converted description /// @description Throw Weapon
+
+Converting GML script: ${project_dir}\scripts\player_prepjump\player_prepjump.gml
+Converted description /// @description Prepare Jump
+
+Converting GML script: ${project_dir}\scripts\player_jump\player_jump.gml
+Converted description /// @description Jump
+
+Converting GML script: ${project_dir}\scripts\player_super\player_super.gml
+Converted description /// @description Super Attack
+
+Converting GML script: ${project_dir}\scripts\player_throwitem\player_throwitem.gml
+Converted description /// @description Throw Item/Object
+
+Converting GML script: ${project_dir}\scripts\player_extramovesettings\player_extramovesettings.gml
+Converted description /// @description Here you can check on the set of moves the player has for the extra moves.
+
+Font font0 has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font0\font0.gms1.png
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_0.gml
+Converted description /// @description Stage Starting
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_200.gml
+Converted builtin - line 13: view_hspeed[0]=0 -> __view_set( e__VW.HSpeed, 0, 0 )
+Converted builtin - line 5: view_object[0]=oViewTarget -> __view_set( e__VW.Object, 0, oViewTarget )
+Converted description /// @description Stage Start
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_210.gml
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_220.gml
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_230.gml
+Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_240.gml
+Converted builtin - line 12: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Next
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_250.gml
+Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_260.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_270.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_290.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_300.gml
+Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description NEXT
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_310.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_320.gml
+Converted builtin - line 4: background_index[0]=bg_sky2 -> __background_set( e__BG.Index, 0, bg_sky2 )
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_330.gml
+Converted builtin - line 11: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Next robot
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_340.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0]=2848 -> __view_set( e__VW.XView, 0, 2848 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_350.gml
+Converted builtin - line 4: view_xview[0]=2848 -> __view_set( e__VW.XView, 0, 2848 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_360.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_370.gml
+Converted description /// @description Prepare Boss
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_380.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview[0]=3488-320 -> __view_set( e__VW.XView, 0, 3488-320 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_480.gml
+Converted description /// @description /Boss Start
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_490.gml
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_720.gml
+Converted description /// @description Freeze Player's Controls
+
+Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_800.gml
+Converted description /// @description Stop Timeline
+
+Converting GML script: ${project_dir}\timelines\tm_tutorial\moment_0.gml
+Converted description /// @description Stage Starting
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_448.gml
+Converted builtin - line 6: view_hspeed[0]=3.5 -> __view_set( e__VW.HSpeed, 0, 3.5 )
+Converted builtin - line 14: view_hspeed[0]=3 -> __view_set( e__VW.HSpeed, 0, 3 )
+Converted builtin - line 3: view_object[0]=oViewTarget -> __view_set( e__VW.Object, 0, oViewTarget )
+Converted builtin - line 11: view_object[0]=oViewTarget -> __view_set( e__VW.Object, 0, oViewTarget )
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_450.gml
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_hspeed[0]=0 -> __view_set( e__VW.HSpeed, 0, 0 )
+Converted builtin - line 8: view_object[0]=-1 -> __view_set( e__VW.Object, 0, -1 )
+Converted description /// @description Stage Start
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_470.gml
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_480.gml
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_490.gml
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_500.gml
+Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_510.gml
+Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_520.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_530.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_550.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_560.gml
+Converted builtin - line 15: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_570.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_580.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_590.gml
+Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_600.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_xview[0]=2368 -> __view_set( e__VW.XView, 0, 2368 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage1\moment_700.gml
+Converted builtin - line 4: view_xview[0]=2368 -> __view_set( e__VW.XView, 0, 2368 )
+Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+
+Converting GML script: ${project_dir}\timelines\tm_stage2\moment_0.gml
+Converted builtin - line 9: background_hspeed[0]=-16 -> __background_set( e__BG.HSpeed, 0, -16 )
+Converted description /// @description Stage Starting
+
+Converting GML script: ${project_dir}\timelines\tm_stage2\moment_180.gml
+Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\oControl\Create_0.gml
+Error: variable 'variable_global_exists' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 122: '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/"' -> "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""
+
+Converting GML script: ${project_dir}\objects\oControl\Alarm_8.gml
+Converted description /// @description Good Game End
+
+Converting GML script: ${project_dir}\objects\oControl\Alarm_6.gml
+Converted description /// @description Show StageClear
+
+Converting GML script: ${project_dir}\objects\oControl\Alarm_5.gml
+Converted description /// @description /This is so it can check when to go and scroll up and where to stop. 
+
+Converting GML script: ${project_dir}\objects\oControl\Alarm_4.gml
+Converted description /// @description Countdown to title and stage 1
+
+Converting GML script: ${project_dir}\objects\oControl\Alarm_3.gml
+Converted description /// @description Countdown to Hi-Score
+
+Converting GML script: ${project_dir}\objects\oControl\Alarm_2.gml
+Converted description /// @description Countdown for Game Over
+
+Converting GML script: ${project_dir}\objects\oControl\Alarm_1.gml
+Converted description /// @description Deactivate GO!
+
+Converting GML script: ${project_dir}\objects\oControl\Alarm_0.gml
+Converted description /// @description Timer
+
+Converting GML script: ${project_dir}\objects\oControl\Step_0.gml
+Converted builtin - line 124: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 124: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 124: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 128: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 128: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 128: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview[0]=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 124: view_xview[0]=oPlayer.x-160 -> __view_set( e__VW.XView, 0, oPlayer.x-160 )
+Converted builtin - line 128: view_xview[0]=oPlayer.x-160 -> __view_set( e__VW.XView, 0, oPlayer.x-160 )
+Converted builtin - line 131: view_yview[0]=YView+oControl.quakeFX -> __view_set( e__VW.YView, 0, YView+oControl.quakeFX )
+Converted builtin - line 134: view_yview[0]=quakeFX -> __view_set( e__VW.YView, 0, quakeFX )
+Converted description /// @description Beta Test
+
+Converting GML script: ${project_dir}\objects\oControl\Mouse_53.gml
+Converted description /// @description Spawn Enemy
+
+Converting GML script: ${project_dir}\objects\oControl\Other_19.gml
+Converted description /// @description Stage Clear
+
+Converting GML script: ${project_dir}\objects\oControl\Other_11.gml
+Converted description /// @description Continue Player
+
+Converting GML script: ${project_dir}\objects\oControl\Other_10.gml
+Converted description /// @description Select Enemy & Item
+
+Converting GML script: ${project_dir}\objects\oControl\Draw_64.gml
+Converted builtin - line 21: background_x[0]=-(view_xview[0]/80) -> __background_set( e__BG.X, 0, -(view_xview[0]/80) )
+Converted builtin - line 217: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Game
+Converted builtin - line 21: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\oControl\KeyPress_123.gml
+Converted description /// @description Change Screen Size
+
+Converting GML script: ${project_dir}\objects\oControl\KeyPress_112.gml
+Converted description /// @description if betatest=1
+
+Converting GML script: ${project_dir}\objects\oPlayer\Alarm_4.gml
+Converted description /// @description Immunity Flash
+
+Converting GML script: ${project_dir}\objects\oPlayer\Alarm_3.gml
+Converted description /// @description Stop FX
+
+Converting GML script: ${project_dir}\objects\oPlayer\Alarm_2.gml
+Converted description /// @description Respawn
+
+Converting GML script: ${project_dir}\objects\oPlayer\Alarm_0.gml
+Converted description /// @description Can Play
+
+Converting GML script: ${project_dir}\objects\oPlayer\Step_2.gml
+Converted builtin - line 59: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 59: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Z Block Collision
+
+Converting GML script: ${project_dir}\objects\oPlayer\Step_1.gml
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 31: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 31: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 38: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 38: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\oPlayer\Step_0.gml
+Converted builtin - line 61: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 67: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\oPlayer\Mouse_1.gml
+Converted description /// @description Restore HP
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_24.gml
+Converted description /// @description Reacting if their attack hits
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_20.gml
+Converted builtin - line 61: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 67: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_19.gml
+Converted builtin - line 20: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 31: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 31: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted description /// @description Respawn
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_13.gml
+Converted description /// @description Attack
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_11.gml
+Converted description /// @description Drop Weapon
+
+Converting GML script: ${project_dir}\objects\oPlayer\Other_10.gml
+Converted description /// @description Hurt
+
+Converting GML script: ${project_dir}\objects\oAnimEditor\Step_2.gml
+Converted builtin - line 1: view_xview[0]=PosX-160 -> __view_set( e__VW.XView, 0, PosX-160 )
+Converted builtin - line 2: view_yview[0]=PosY-120 -> __view_set( e__VW.YView, 0, PosY-120 )
+
+Converting GML script: ${project_dir}\objects\oAnimEditor\Draw_0.gml
+Converted builtin - line 2: background_visible[0]=grid -> __background_set( e__BG.Visible, 0, grid )
+Converted builtin - line 3: background_visible[0]=0 -> __background_set( e__BG.Visible, 0, 0 )
+
+Converting GML script: ${project_dir}\objects\oSelfAtk\Create_0.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSelfAtk\Create_0.gml - 47: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSelfAtk\Create_0.gml - 47: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSelfAtk\Create_0.gml - 47: unexpected terminal operator =
+Too many errors - GML not processed : ${project_dir}\objects\oSelfAtk\Create_0.gml
+
+Converting GML script: ${project_dir}\objects\oProjectile\Step_2.gml
+Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\oLevelSelect\Step_0.gml
+Converted string - line 3: 'W' -> "W"
+Converted string - line 4: 'S' -> "S"
+Converted string - line 6: 'W' -> "W"
+Converted string - line 8: 'S' -> "S"
+Converted string - line 11: 'A' -> "A"
+Converted string - line 12: 'D' -> "D"
+Converted string - line 14: 'A' -> "A"
+Converted string - line 16: 'D' -> "D"
+Converted string - line 20: 'W' -> "W"
+Converted string - line 21: 'S' -> "S"
+Converted string - line 22: 'A' -> "A"
+Converted string - line 23: 'D' -> "D"
+
+Converting GML script: ${project_dir}\objects\oShadowFX\Draw_0.gml
+Converted builtin - line 32: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 32: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 32: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 32: view_yview[0] -> __view_get( e__VW.YView, 0 )
+
+Converting GML script: ${project_dir}\objects\oDisappearPart\Alarm_0.gml
+Converted description /// @description Respawn
+
+Converting GML script: ${project_dir}\objects\oEnemySpawner\Step_2.gml
+Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 37: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_xview[0]-=abs(oPlayer.totalSpeed*2) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (abs(oPlayer.totalSpeed*2)) )
+Converted builtin - line 29: view_xview[0]+=roomHSpd -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (roomHSpd) )
+Converted builtin - line 37: view_xview[0]=clamp(__view_get( e__VW.XView, 0 ),MinX,MaxX-320) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ),MinX,MaxX-320) )
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Create_0.gml
+Converted description /// @description if you want to check on their data, you can check here
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Alarm_3.gml
+Converted description /// @description Stop FX
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Alarm_2.gml
+Converted description /// @description Disappear
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Alarm_1.gml
+Converted description /// @description AI Actions
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Collision_cc51db2c-058d-461b-a753-a79482191eb7.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_cc51db2c-058d-461b-a753-a79482191eb7.gml - 5: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_cc51db2c-058d-461b-a753-a79482191eb7.gml - 5: unexpected unary operator and
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_cc51db2c-058d-461b-a753-a79482191eb7.gml - 44: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\objects\oEnemy1\Collision_cc51db2c-058d-461b-a753-a79482191eb7.gml
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Collision_dc4c436f-2483-4ae3-a8af-2c1717b2053a.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_dc4c436f-2483-4ae3-a8af-2c1717b2053a.gml - 5: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_dc4c436f-2483-4ae3-a8af-2c1717b2053a.gml - 5: expected expression
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_dc4c436f-2483-4ae3-a8af-2c1717b2053a.gml - 37: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\objects\oEnemy1\Collision_dc4c436f-2483-4ae3-a8af-2c1717b2053a.gml
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Collision_679119aa-3efe-4be4-8407-9b51c44d0b6f.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_679119aa-3efe-4be4-8407-9b51c44d0b6f.gml - 5: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_679119aa-3efe-4be4-8407-9b51c44d0b6f.gml - 5: unexpected unary operator and
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_679119aa-3efe-4be4-8407-9b51c44d0b6f.gml - 13: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\objects\oEnemy1\Collision_679119aa-3efe-4be4-8407-9b51c44d0b6f.gml
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Collision_c22aef74-0d9c-418e-aef9-38a3c2197804.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_c22aef74-0d9c-418e-aef9-38a3c2197804.gml - 5: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oEnemy1\Collision_c22aef74-0d9c-418e-aef9-38a3c2197804.gml - 5: unexpected unary operator and
+Too many errors - GML not processed : ${project_dir}\objects\oEnemy1\Collision_c22aef74-0d9c-418e-aef9-38a3c2197804.gml
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Mouse_1.gml
+Converted description /// @description /Increase enemy's HP
+
+Converting GML script: ${project_dir}\objects\oEnemy1\Other_24.gml
+Converted description /// @description Character's response to hitting an enemy
+
+Converting GML script: ${project_dir}\objects\oSneak\Step_2.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSneak\Step_2.gml - 130: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSneak\Step_2.gml - 130: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSneak\Step_2.gml - 130: unexpected terminal operator =
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSneak\Step_2.gml - 188: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSneak\Step_2.gml - 188: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oSneak\Step_2.gml - 188: unexpected terminal operator =
+Too many errors - GML not processed : ${project_dir}\objects\oSneak\Step_2.gml
+
+Converting GML script: ${project_dir}\objects\oSneak\Step_0.gml
+Converted description /// @description Overwrite AI
+
+Converting GML script: ${project_dir}\objects\oSwing\Step_0.gml
+Converted description /// @description Overwrite AI
+
+Converting GML script: ${project_dir}\objects\oRobot\Alarm_2.gml
+Converted description /// @description Disappear
+
+Converting GML script: ${project_dir}\objects\oRobot\Other_22.gml
+Converted description /// @description Special State
+
+Converting GML script: ${project_dir}\objects\oGalsia\Step_2.gml
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oGalsia\Step_2.gml - 123: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oGalsia\Step_2.gml - 123: unexpected syntax error
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oGalsia\Step_2.gml - 123: unexpected terminal operator =
+ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\objects\oGalsia\Step_2.gml - 165: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\objects\oGalsia\Step_2.gml
+
+Converting GML script: ${project_dir}\objects\oAreaSpawner\Step_0.gml
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\oAreaSpawner\Other_10.gml
+Converted description /// @description Spawn Enemy
+
+Converting GML script: ${project_dir}\objects\oBoss1\Step_2.gml
+Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 23: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 38: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 116: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 119: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 161: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 162: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 241: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 241: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\oBoss1\Step_0.gml
+Converted description /// @description Overwrite AI
+
+Converting GML script: ${project_dir}\objects\oBoss1\Other_25.gml
+Converted description /// @description Special Boss State
+
+Converting GML script: ${project_dir}\objects\oBarrel\Other_10.gml
+Converted description /// @description Break & Create Object
+
+Converting GML script: ${project_dir}\objects\oBananaPeel\Other_10.gml
+Converted description /// @description Break & Create Object
+
+Converting GML script: ${project_dir}\objects\oBarrelRoll\Step_0.gml
+Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\oBarrelRoll\Other_10.gml
+Converted description /// @description Break & Create Object
+
+Converting GML script: ${project_dir}\objects\oCrusher\Step_0.gml
+Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\oCar\Alarm_2.gml
+Converted description /// @description Disappear
+
+Converting GML script: ${project_dir}\objects\oCarUnused\Alarm_2.gml
+Converted description /// @description Disappear
+
+Converting GML script: ${project_dir}\objects\oPizza\Alarm_2.gml
+Converted description /// @description Disappear
+
+Converting GML script: ${project_dir}\objects\oPizza\Other_10.gml
+Converted description /// @description Disappear
+
+Converting GML script: ${project_dir}\objects\obj_palette_manager\Create_0.gml
+Converted description /// @description Initilize System and add palettes
+
+Converting GML script: ${project_dir}\objects\obj_basic_example\Create_0.gml
+Converted description /// @description Object Properties
+
+Converting GML script: ${project_dir}\objects\obj_basic_example\Step_0.gml
+Converted description /// @description Change palette with up/down (Basic)/// @param Basic
+
+Converting GML script: ${project_dir}\objects\obj_basic_example\Draw_0.gml
+Converted description /// @description Instructions
+
+Converting GML script: ${project_dir}\objects\obj_dummy\Create_0.gml
+Converted description /// @description Object Properties
+
+Converting GML script: ${project_dir}\objects\obj_dummy\Draw_0.gml
+Converted description /// @description Draw With Unlimited Palette Swap     
+
+Converting GML script: ${project_dir}\objects\obj_gradual_example\Create_0.gml
+Converted description /// @description Object Properties
+
+Converting GML script: ${project_dir}\objects\obj_gradual_example\Step_0.gml
+Converted description /// @description Change palette with up/down (Gradual)/// @param Gradual
+
+Converting GML script: ${project_dir}\objects\obj_gradual_example\Draw_0.gml
+Converted description /// @description Instructions
+
+Converting GML script: ${project_dir}\objects\obj_single_replace_example\Create_0.gml
+Converted description /// @description Object Properties
+
+Converting GML script: ${project_dir}\objects\obj_single_replace_example\Step_0.gml
+Converted description /// @description Change palette with up/down (Basic)/// @param Basic
+
+Converting GML script: ${project_dir}\objects\obj_single_replace_example\Draw_0.gml
+Converted description /// @description instructions
+
+Converting GML script: ${project_dir}\objects\obj_full_fade_example\Create_0.gml
+Converted description /// @description Object Properties
+
+Converting GML script: ${project_dir}\objects\obj_full_fade_example\Step_0.gml
+Converted description /// @description Change palette with up/down (Basic)/// @param Basic
+
+Converting GML script: ${project_dir}\objects\obj_full_fade_example\Draw_0.gml
+Converted description /// @description Instructions
+
+Converting GML script: ${project_dir}\objects\obj_desaturate_example\Create_0.gml
+Converted description /// @description Object Properties
+
+Converting GML script: ${project_dir}\objects\obj_desaturate_example\Step_0.gml
+Converted description /// @description Change palette with up/down (Basic)/// @param Basic
+
+Converting GML script: ${project_dir}\objects\obj_desaturate_example\Draw_0.gml
+Converted description /// @description Draw Instructions
+
+Converting GML script: ${project_dir}\objects\obj_tile_example\Create_0.gml
+Converted description /// @description Object Properties
+
+Converting GML script: ${project_dir}\objects\obj_tile_example\Step_0.gml
+Converted description /// @description Change palette with up/down (Gradual)/// @param Gradual
+
+Converting GML script: ${project_dir}\objects\obj_tile_example\Draw_0.gml
+Converted description /// @description Draw Instructions
+
+Converting GML script: ${project_dir}\objects\obj_tile_swapper_start\Create_0.gml
+Converted description /// @description I AM NECESSARY FOR TILE PALETTE SWAPPING
+
+Converting GML script: ${project_dir}\objects\obj_tile_swapper_start\Step_2.gml
+Converted description /// @description Clean up
+
+Converting GML script: ${project_dir}\objects\obj_tile_swapper_start\Draw_0.gml
+Converted description /// @description Enable Palette Swapping
+
+Converting GML script: ${project_dir}\objects\obj_tile_swapper_end\Create_0.gml
+Converted description /// @description I AM NECESSARY FOR TILE PALETTE SWAPPING
+
+Converting GML script: ${project_dir}\objects\obj_tile_swapper_end\Step_2.gml
+Converted description /// @description Clean up
+
+Converting GML script: ${project_dir}\objects\obj_tile_swapper_end\Draw_0.gml
+Converted description /// @description End Palette Swapping
+
+Converting GML script: ${project_dir}\objects\oAffTag0\Create_0.gml
+Converted description /// @description This will be necessary for the enemy AI
+
+Converting GML script: ${project_dir}\objects\oAffTag0\Draw_0.gml
+Converted description /// @description 
+
+Converting GML script: ${project_dir}\objects\oAffTag1\Create_0.gml
+Converted description /// @description This will be necessary for the enemy AI
+
+Converting GML script: ${project_dir}\objects\oAffTag1\Draw_0.gml
+Converted description /// @description 
+
+Converting GML script: ${project_dir}\objects\oAffTag2\Create_0.gml
+Converted description /// @description This will be necessary for the enemy AI
+
+Converting GML script: ${project_dir}\objects\oAffTag2\Draw_0.gml
+Converted description /// @description 
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'snd_beep' - setting to default audio group
+Missing audiogroup for sound: 'snd_picked' - setting to default audio group
+Missing audiogroup for sound: 'snd_select' - setting to default audio group
+Missing audiogroup for sound: 'snd_titlescreen' - setting to default audio group
+Missing audiogroup for sound: 'snd_flame' - setting to default audio group
+Missing audiogroup for sound: 'snd_thunder' - setting to default audio group
+Missing audiogroup for sound: 'snd_gong' - setting to default audio group
+Missing audiogroup for sound: 'snd_drum' - setting to default audio group
+Missing audiogroup for sound: 'snd_wind2' - setting to default audio group
+Missing audiogroup for sound: 'snd_wind' - setting to default audio group
+Missing audiogroup for sound: 'snd_bounce' - setting to default audio group
+Missing audiogroup for sound: 'snd_break' - setting to default audio group
+Missing audiogroup for sound: 'snd_break2' - setting to default audio group
+Missing audiogroup for sound: 'snd_dashing' - setting to default audio group
+Missing audiogroup for sound: 'snd_fall' - setting to default audio group
+Missing audiogroup for sound: 'snd_go' - setting to default audio group
+Missing audiogroup for sound: 'snd_hit' - setting to default audio group
+Missing audiogroup for sound: 'snd_hit2' - setting to default audio group
+Missing audiogroup for sound: 'snd_hit3' - setting to default audio group
+Missing audiogroup for sound: 'snd_hit4' - setting to default audio group
+Missing audiogroup for sound: 'snd_hit5' - setting to default audio group
+Missing audiogroup for sound: 'snd_hitground' - setting to default audio group
+Missing audiogroup for sound: 'snd_hitgroundheavy' - setting to default audio group
+Missing audiogroup for sound: 'snd_hitgroundmetal' - setting to default audio group
+Missing audiogroup for sound: 'snd_jump' - setting to default audio group
+Missing audiogroup for sound: 'snd_land' - setting to default audio group
+Missing audiogroup for sound: 'snd_laserbeam' - setting to default audio group
+Missing audiogroup for sound: 'snd_swing' - setting to default audio group
+Missing audiogroup for sound: 'snd_swing2' - setting to default audio group
+Missing audiogroup for sound: 'snd_swing3' - setting to default audio group
+Missing audiogroup for sound: 'snd_swing4' - setting to default audio group
+Missing audiogroup for sound: 'snd_cut' - setting to default audio group
+Missing audiogroup for sound: 'snd_explosion' - setting to default audio group
+Missing audiogroup for sound: 'snd_food' - setting to default audio group
+Missing audiogroup for sound: 'snd_getweapon' - setting to default audio group
+Missing audiogroup for sound: 'snd_metalhit' - setting to default audio group
+Missing audiogroup for sound: 'snd_pickitem' - setting to default audio group
+Missing audiogroup for sound: 'snd_swing5' - setting to default audio group
+Missing audiogroup for sound: 'snd_gun' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva1' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva2' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva3' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva4' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva5' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva6' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva7' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva8' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva9' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva10' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva11' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva12' - setting to default audio group
+Missing audiogroup for sound: 'snd_viva13' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina1' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina2' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina3' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina4' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina5' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina6' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina7' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina8' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina9' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina10' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina11' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina12' - setting to default audio group
+Missing audiogroup for sound: 'snd_hina13' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati1' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati2' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati3' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati4' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati5' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati6' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati7' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati8' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati9' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati10' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati11' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati12' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati13' - setting to default audio group
+Missing audiogroup for sound: 'snd_bahati14' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia1' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia2' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia3' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia4' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia5' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia6' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia7' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia8' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia9' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia10' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia11' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia12' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia13' - setting to default audio group
+Missing audiogroup for sound: 'snd_sofia14' - setting to default audio group
+Missing audiogroup for sound: 'snd_vivavoice1' - setting to default audio group
+Missing audiogroup for sound: 'snd_deathcryviva' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy1' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy2' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy3' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy4' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy5' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy6' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy7' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy8' - setting to default audio group
+Missing audiogroup for sound: 'snd_femenemy9' - setting to default audio group
+Missing audiogroup for sound: 'snd_msswing1' - setting to default audio group
+Missing audiogroup for sound: 'snd_msswing2' - setting to default audio group
+Missing audiogroup for sound: 'sound54' - setting to default audio group
+Missing audiogroup for sound: 'snd_enemy1' - setting to default audio group
+Missing audiogroup for sound: 'snd_enemy2' - setting to default audio group
+Missing audiogroup for sound: 'snd_enemy3' - setting to default audio group
+Missing audiogroup for sound: 'snd_squeaky' - setting to default audio group
+Missing audiogroup for sound: 'snd_enemy4' - setting to default audio group
+Missing audiogroup for sound: 'snd_fatburglar' - setting to default audio group
+Missing audiogroup for sound: 'snd_fatburglar2' - setting to default audio group
+Missing audiogroup for sound: 'snd_deathcry1' - setting to default audio group
+Missing audiogroup for sound: 'snd_deathcry2' - setting to default audio group
+Missing audiogroup for sound: 'snd_deathcry3' - setting to default audio group
+Missing audiogroup for sound: 'snd_deathcryrobot' - setting to default audio group
+Missing audiogroup for sound: 'snd_wolfita1' - setting to default audio group
+Missing audiogroup for sound: 'snd_wolfita2' - setting to default audio group
+Missing audiogroup for sound: 'snd_wolfita3' - setting to default audio group
+Missing audiogroup for sound: 'snd_wolfita4' - setting to default audio group
+Missing audiogroup for sound: 'snd_wolfita5' - setting to default audio group
+Missing audiogroup for sound: 'snd_wolfita6' - setting to default audio group
+Missing audiogroup for sound: 'snd_wolfita7' - setting to default audio group
+Missing audiogroup for sound: 'sound19' - setting to default audio group
+Missing audiogroup for sound: 'msc_stage1' - setting to default audio group
+Missing audiogroup for sound: 'msc_stage2' - setting to default audio group
+Missing audiogroup for sound: 'msc_stage3' - setting to default audio group
+Missing audiogroup for sound: 'msc_stageclear' - setting to default audio group
+Missing audiogroup for sound: 'msc_countdown' - setting to default audio group
+Missing audiogroup for sound: 'msc_gameover' - setting to default audio group
+Missing audiogroup for sound: 'msc_charselect' - setting to default audio group
+Missing audiogroup for sound: 'msc_boss' - setting to default audio group
+Imported layer depths for room(s) 'rm_testarea2' were not adequately spaced. Unless updated this will have undefined results in game.
+Game speed set to 60
+Added compatibility script 'action/action_kill_object.gml'
+Added compatibility script 'background/__background_set.gml'
+Added compatibility script 'background/__background_set_internal.gml'
+Added compatibility script 'd3d/d3d_set_culling.gml'
+Added compatibility script 'd3d/d3d_transform_add_scaling.gml'
+Added compatibility script 'd3d/d3d_transform_add_translation.gml'
+Added compatibility script 'd3d/d3d_transform_set_identity.gml'
+Added compatibility script 'd3d/d3d_transform_set_translation.gml'
+Added compatibility script 'draw/draw_set_blend_mode.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'texture/texture_set_interpolation_ext.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script 'd3d/__init_d3d.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script 'background/__background_get_element.gml'
+Added compatibility script 'background/__background_get_internal.gml'
+Added compatibility script 'background/__background_set_element.gml'
+Added compatibility script '__global_object_depths.gml'

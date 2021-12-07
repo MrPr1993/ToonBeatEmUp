@@ -1,0 +1,1 @@
+with oPlayer hasShadow=0

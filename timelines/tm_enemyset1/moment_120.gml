@@ -1,0 +1,40 @@
+oControl.quakeFXTime=5
+
+oPlayer.visible=1
+oEnemySpawner.roomHSpd=0
+
+
+with oPlayer
+{canmove=0 x=480
+key_right=1
+dashing=2 animFrame=0
+anim=21
+oPlayer.hspeed=0
+
+dummy=instance_create_depth(x,y,depth,oEnemy1) with dummy
+{
+hp=0 mask=mask_none image_xscale=-1 HitType=1 hud_show() event_user(0)
+}
+}
+
+with dorr
+{
+dor1=instance_create_depth(x,y,0,oBarrel) with dor1 
+{sprite_index=spr_introdoor image_index=1
+image_xscale=1 solid=false hit=1 ground=0 zSpeed=-8 hspeed=1 mask_index=mask_none
+sentflying=2 image_index=1 alarm[0]=2}
+
+dor2=instance_create_depth(x,y,0,oBarrel) with dor2
+{sprite_index=spr_introdoor
+image_xscale=1 solid=false hit=1 ground=0 zSpeed=-8 hspeed=1 mask_index=mask_none
+sentflying=2 image_index=2 alarm[0]=2}
+
+instance_destroy()
+}
+
+spawner_followset("WaveSet1",0,1248,1)
+
+PlaySound(snd_break)
+
+
+

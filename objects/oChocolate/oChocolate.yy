@@ -1,0 +1,42 @@
+{
+  "spriteId": {
+    "name": "spr_chocolate",
+    "path": "sprites/spr_chocolate/spr_chocolate.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": {
+    "name": "spr_selfatk",
+    "path": "sprites/spr_selfatk/spr_selfatk.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "oPizza",
+    "path": "objects/oPizza/oPizza.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Food Items",
+    "path": "folders/9 - Objects And Items/b - Items/Food Items.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oChocolate",
+  "tags": [],
+  "resourceType": "GMObject",
+}

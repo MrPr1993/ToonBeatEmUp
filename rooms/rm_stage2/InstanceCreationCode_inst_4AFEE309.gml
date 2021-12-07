@@ -1,0 +1,2 @@
+	item=oTommyGun
+	itemID=oTommyGun

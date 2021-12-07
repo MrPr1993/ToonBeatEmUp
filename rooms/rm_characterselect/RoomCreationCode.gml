@@ -1,0 +1,4 @@
+global.CurrentMusic=msc_charselect
+musicplaystart(global.CurrentMusic)
+global.P1Life=global.LifeStart
+global.Continues=global.ContinueStart

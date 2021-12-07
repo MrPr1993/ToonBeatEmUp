@@ -1,0 +1,42 @@
+{
+  "spriteId": {
+    "name": "spr_height128",
+    "path": "sprites/spr_height128/spr_height128.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": {
+    "name": "spr_height0",
+    "path": "sprites/spr_height0/spr_height0.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "oHeight32",
+    "path": "objects/oHeight32/oHeight32.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "1 - General Objects",
+    "path": "folders/1 - General Objects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oHeight128",
+  "tags": [],
+  "resourceType": "GMObject",
+}

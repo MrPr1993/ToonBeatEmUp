@@ -1,0 +1,314 @@
+/// @description Car Mode
+function animsetup_specialplayer() {
+	if anim=200
+	{
+	defMask=spr_shadow3
+
+
+	animFrame+=0.1
+
+	sprite_index=CarSpr
+
+	//sprite_index=spr_car image_index=0
+
+
+	if key_right 
+	{
+	if image_xscale=-1 image_index=1 else image_index=0
+	if place_free(x+6,y) and x<__view_get( e__VW.XView, 0 )+320-28 x+=6}
+	else if image_index=1 image_index=0
+
+	if -key_left {if image_xscale=1 image_index=1 else image_index=0 if place_free(x-6,y)
+	and x>__view_get( e__VW.XView, 0 )+42
+	  x-=6} else if image_index=-1 image_index=0
+	if key_up 
+	{if place_free(x,y-6) y-=6
+	}
+	if key_down 
+	{if place_free(x,y+6)
+	and y<__view_get( e__VW.YView, 0 )+240-2
+	  y+=6
+	}
+
+	if key_jump and ground
+	{
+	ground=0 zSpeed=-12 PlaySoundNoStack(snd_jump)
+	}
+
+	if !ground zSpeed+=0.45
+
+
+	if key_right or -key_left or key_up or key_down
+	{if carAnim<0 carAnim=1.75 else carAnim-=0.25
+	} else 
+	{
+	if carAnim<0 carAnim=1.8 else carAnim-=0.20
+	}
+
+	}
+
+	if anim!=200 and anim!=201 and anim!=202 {carMode=0 mask_index=defMask}
+
+	////Car Hit
+	if anim=201
+	{
+	hurt=1
+
+	if shake=0 shake=2 else shake-=1
+
+	image_index=2
+	image_speed=0
+	animFrame+=0.05 if animFrame>1-0.05 {hurt=0
+
+	{
+	animFrame=0 anim=200 image_index=0}
+
+	}
+	}
+
+	///Dead - Car
+	if anim=202
+	{if animFrame=0 {animFrame=0.1 PlaySoundNoStack(snd_explosion)}
+	sprite_index=ThrownSpr 
+	if !ground 
+	{animFrame=0.25
+	image_speed=0 image_index=clamp(image_index,3+13,5+13)
+	image_index+=0.1 x+=3 alarm[2]=30
+	}
+	else
+	{if animFrame<5.5 {alarm[2]=30}
+frame_set(0,14,0.25)
+frame_set(1,11,0.25)
+frame_set(2,12,0.25)
+frame_set(3,13,0.25)   
+frame_set(4,14,0.25)
+frame_set(5,11,0.25)
+frame_set(6,12,0.25)
+frame_set(7,13,0.25)  
+frame_set(8,18,0.25)  
+frame_set(9,21,0.0)  
+	
+	image_speed=0
+	animFrame+=0.1 if animFrame<8 x-=3 else x-=12}
+	}
+
+	///Car Mode - Ninja Baseball Bat Man
+	if anim=203
+	{
+	defMask=spr_shadow3
+
+	immune=1
+
+	animFrame+=0.1
+
+	sprite_index=CarSpr
+
+
+
+	//sprite_index=spr_car image_index=0
+
+	if key_right 
+	{
+	if image_xscale=-1 image_index=1 else image_index=0
+	if place_free(x+6,y) and x<__view_get( e__VW.XView, 0 )+320-28 x+=6}
+	else if image_index=1 image_index=0
+
+	if -key_left {if image_xscale=1 image_index=1 else image_index=0 if place_free(x-6,y)
+	and x>__view_get( e__VW.XView, 0 )+42
+	  x-=6} else if image_index=-1 image_index=0
+	if key_up 
+	{if place_free(x,y-6) y-=6
+	}
+	if key_down 
+	{if place_free(x,y+6)
+	and y<__view_get( e__VW.YView, 0 )+240-2
+	  y+=6
+	}
+
+	if key_jump
+	{
+	ground=0 zSpeed=-4
+	}
+
+	if !ground zSpeed+=0.45
+
+
+
+
+	if key_right or -key_left or key_up or key_down
+	{if carAnim<0 carAnim=1.75 else carAnim-=0.25
+
+///Collide with object - Disabled
+if x=-999999999999999999999999999999
+{
+	if collision_rectangle(x-64,y-16,x+64,y+16,oBarrel,1,false)
+	{target=collision_rectangle(x-64,y-16,x+64,y+16,oBarrel,1,false)
+	if target.x>x target.sourceCheckX=-1 else sourceCheckX=1
+	if target.hit=0
+	{specialFX=1 alarm[3]=5
+	with target event_user(0)}
+	}
+	if collision_rectangle(x-64,y-16,x+64,y+16,oEnemy1,1,false)
+	{target=collision_rectangle(x-64,y-16,x+64,y+16,oEnemy1,1,false)
+	if target.dead=0 and target.Throw=0 and target.thrownAtk=0 and target.anim!=6 and target.recovery=0
+	and target.immune=0
+	{
+	specialFX=1 alarm[3]=5
+	if target.hp<0
+	PlayerScore+=target.points
+	else
+	PlayerScore+=target.pointshit
+	with target 
+	{hp-=0.25 	if hp<=0.2	noMask=1	shaketime=30
+	recovery=90
+	PlaySoundNoStack(snd_hit)
+	hud_show()
+	flashFX(x,y+2,z-16,spr_hitflash,0,1,5,1,1,c_white,1)
+	canmove=0 hurt=1 HitType=4 event_user(0)}
+	}
+	}
+	}
+	} else 
+	{
+	if carAnim<0 carAnim=1.8 else carAnim-=0.20
+	}
+
+	if animFrame>30
+	{
+	if carExTime<0 {if animFrame<40 carExTime=8 else carExTime=4 specialFX=1 alarm[3]=5}
+	else carExTime-=1
+	}
+
+
+	///Car Explode
+	if animFrame>50 {
+	canmove=1 
+
+	car=instance_create_depth(x,y,depth,oCar) car.dead=1 car.sprite_index=spr_car_dead car.mask_index=mask_none
+	car.image_xscale=image_xscale
+
+	animFrame=0
+
+	ground=0
+
+	anim=2
+
+	event_user(7) event_user(10) zSpeed=-10
+
+	PlaySoundNoStack(snd_explosion) oControl.quakeFXTime=10
+	ex=instance_create_depth(x,y,depth,oExplosion) ex.z=z ex.depth=depth
+	ex.canHarm=0
+
+	}
+
+	}
+
+	///Stage Clear
+	if anim=210
+	{
+	if animFrame=0 drop_object()
+				weaponanim(weaponspr,weaponIndex,2500000,-3500000,90*image_xscale,weaponcolor)
+	
+	if sprite_index!=WinSpr PlaySound(WinSnd)
+	sprite_index=WinSpr
+	image_index=animFrame
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	}
+
+	///Stage Intro
+	if anim=220
+	{
+	sprite_index=PointSpr
+	image_index=0 image_speed=0
+	
+	
+
+	frame_set(0,0,0.03) if animFrame=0.99 {PlaySound(PointDialouge1) animFrame=1}
+	frame_set(1,1,0.01) if animFrame=2 {PlaySound(PointDialouge2)}
+	frame_set(2,1,0.1)
+	frame_set(3,1,0.25)
+	frame_set(4,2,0.01) if animFrame=5 canmove=1
+	frame_set(5,2,0.1) 
+	}
+
+	///Wild Take
+	if oControl.betatest=1 if keyboard_check_pressed(vk_alt)
+	{animFrame=0 anim=choose(300,301)}
+
+	if anim=300
+	{if animFrame=0 drop_object()
+				weaponanim(weaponspr,weaponIndex,2500000,-3500000,90*image_xscale,weaponcolor)
+	
+	if sprite_index!=WildTakeSpr
+	{sprite_index=WildTakeSpr special5=0}
+
+	canmove=0
+
+	frame_set(0,0,0.01)
+	frame_set(1,1,0.25)
+	frame_set(2,2,0.25)  if animFrame=3 {PlaySound(DeathCry)}
+	frame_set(3,3,0.25)
+	frame_set(4,4,0.25)
+	frame_set(5,5,0.25)
+	frame_set(6,6,0.25)
+	frame_set(7,7,0.25) if animFrame>=7.5
+
+	 {if special5<4 {special5+=1 animFrame=4 image_index=4}}
+
+	frame_set(8,3,0.5)
+
+	frame_set(9,2,0.5)
+
+	frame_set(10,1,0.5)
+
+	  if animFrame>10.9 {canmove=1 special5=0}
+
+	}
+	
+	
+		if anim=301 ////Wild Take - Stage 2 - Look Up
+	{if animFrame=0 drop_object()
+
+
+	canmove=0
+	
+	frame_set(0,0,0.05)
+	frame_set(1,0,0.5)
+	if animFrame>2
+	weaponanim(weaponspr,weaponIndex,2500000,-3500000,90*image_xscale,weaponcolor)
+	frame_set(2,0,0.05) if animFrame=3 {PlaySound(DamageVoice1) sprite_index=WildTakeSpr2 special5=0}
+	frame_set(3,0,0.25)
+	frame_set(4,1,0.25)
+	frame_set(5,2,0.25)
+	frame_set(6,1,0.25)
+	frame_set(7,2,0.25) if animFrame>=7.5
+{if special5<4 {special5+=1 animFrame=4 image_index=1}}
+if animFrame=8 {PlaySound(DamageVoice2) image_xscale=-1 sprite_index=ThrownSpr}
+
+frame_set(8,16,0.25)
+frame_set(9,13,0.25)
+frame_set(10,12,0.25)
+frame_set(11,11,0.25)
+frame_set(12,14,0.25)
+frame_set(13,13,0.25)
+frame_set(14,12,0.25)
+frame_set(15,11,0.25)
+frame_set(16,14,0.25)
+frame_set(17,13,0.25)
+frame_set(18,12,0.25)
+frame_set(19,11,0.25)
+frame_set(20,19,0.5) if animFrame=clamp(animFrame,8,19) sentflying=-5 else sentflying=0
+frame_set(21,21,0.05)
+frame_set(22,22,0.5)
+frame_set(23,23,0.5) if animFrame>24 {sprite_index=WildTakeSpr image_index=0 image_xscale=1}
+frame_set(24,0,0.01) 
+
+	  if animFrame>24.9 {canmove=1 special5=0}
+
+	}
+
+
+
+
+}

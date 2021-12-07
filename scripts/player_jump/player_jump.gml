@@ -1,0 +1,18 @@
+/// @description Jump
+function player_jump() {
+	if ground
+	{dashing=dashcheck 
+	if dashing=2 doubledash=0.2
+	PlaySound(snd_jump)
+	if -key_left or key_right
+	{if anim!=2 image_index=0 anim=3}
+	else
+	{if anim!=3 image_index=0 anim=2}
+	ground=0
+	zSpeed=-8
+	}
+
+
+
+
+}
