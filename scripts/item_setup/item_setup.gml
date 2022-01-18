@@ -166,6 +166,8 @@ weaponCut=0
 	override_surface=noone;
 	override_pal_index=1;
 
-
+	waterhoverSpr=spr_waterhover
+	waterMax=0;
+	waterSplash=0;
 
 }

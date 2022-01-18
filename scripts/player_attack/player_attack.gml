@@ -51,7 +51,44 @@ pick_item()
 	}
 	else
 	{
-	if carry=0 anim=10 else {dropitem=1 player_throwitem()}
+	if carry=0 
+	{	anim=10 ///Attack
+		///Pet interaction to overwrite above
+	if instance_exists(oDogPet)
+	{
+	petP=instance_nearest(x,y,oDogPet)
+	with petP
+	{
+	if interact=0 and anim=0
+{
+petP=instance_nearest(x,y,oPlayer)
+if distance_to_object(petP)<distance
+and petP.y=clamp(petP.y,y-distanceY,y+distanceY)
+{
+if petP.key_attack
+if petP.hurt=0 and petP.ground=1
+{petP.canmove=0 interact=1 anim=1
+	
+	image_index=0 animFrame=0
+	
+petID=petP.id
+
+if x>petP.x image_xscale=-1 else image_xscale=1
+
+petP.y=y
+	
+petP.x=x+(petDistance)*image_xscale
+petP.image_xscale=-image_xscale
+petP.image_index=0 petP.animFrame=0 petP.anim=10010
+petP.sprite_index=petP.petSprLow
+}
+}
+}
+	}
+	}
+
+	}
+	else {dropitem=1 player_throwitem()}
 	///Carried
 
 
@@ -80,8 +117,8 @@ pick_item()
 	{
 	animFrame=0
 	anim=15
-	if -key_left or key_right
-	{sentflying=2*image_xscale zSpeed=-4} else {sentflying=0}
+	//if -key_left or key_right
+	//{sentflying=2*image_xscale zSpeed=-4} else {sentflying=0}
 	}
 	}
 	with selfatk

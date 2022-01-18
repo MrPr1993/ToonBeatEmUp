@@ -7,7 +7,8 @@ if key_right_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialsc
 if key_up_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=8 else dataRow-=1}
 if -key_down_pressed {image_alpha=1 dataPalMax=3 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=8 dataRow=1 else dataRow+=1}
 
-
+descleft="";
+descright="";
 
 switch (dataRow)
 {
@@ -15,7 +16,8 @@ case 1:
 switch (dataSelect) ///?ROW 1
 {
   case 1:
-  
+descleft="AGE:35\nNAT.:\nUSA\nH: 5'10\nW: 130LBS"
+descright="LIKES:FINE DINING\nDISLIKES:GET STARTLED"
   charinfo_set(1,spr_viva_stand,1,animsetup_viva,draw_enemy,spr_playerpal,0,spr_playerface,0,"VIVA",
     "LOVELY, BUT\n"+
 	 "TEMPERAMENTAL, VIVA'S\n"+
@@ -26,7 +28,8 @@ switch (dataSelect) ///?ROW 1
   )
 break;
   case 2:
-  
+  descleft="AGE:DRAGON\nNAT.:\nJAPAN\nH: 6'2\nW: 100LBS"
+  descright="LIKES:NAPPING\nDISLIKES:SPICE"
     charinfo_set(2,spr_hina_stand,1,animsetup_hina,draw_enemy,spr_playerpal,0,spr_playerface,1,"HINA",
   "HEAD TENDS TO BE IN\n"+
 	 "THE CLOUDS, BUT SHE'S\n"+
@@ -37,6 +40,8 @@ break;
 )
 break;
   case 3:
+  descleft="AGE:27\nNAT.:\nNIGERIA\nH: 6'0\nW: 260LBS"
+  descright="LIKES:HELPS\nDISLIKES:RUDENESS"
     charinfo_set(3,spr_bahati_stand,1,animsetup_bahati,draw_enemy,spr_playerpal,0,spr_playerface,2,"BAHATI",
 	"LARGE N' HAMMY! SHE'S\n"+
 	 "QUITE THE BRUISER\n"+
@@ -47,6 +52,8 @@ break;
 
 break;
   case 4:
+ descleft="AGE:28\nNAT.:\nMEXICO\nH: 5'2\nW: 110LBS"
+ descright="LIKES:PARTIES\nDISLIKES:CHEATERS"
  charinfo_set(4,spr_sofia_stand,1,animsetup_sofia,draw_enemy,spr_playerpal,0,spr_playerface,3,"SOFIA",
 "AS SPICY AS SHE IS\n"+
 	 "DARING, SOFIA PARTIES\n"+
@@ -68,12 +75,12 @@ break;
 break;
   case 6:
    charinfo_set(6,spr_burglarB_stand,3,animsetup_burglar,draw_enemy,spr_enemypal,2,spr_enemyface,20,"MR.TEEF",
-"RUN SSSOF THE MILL\n"+
-	 "BURGLAR. THIS CHUMP'S\n"+
-	 "FODDER, BUT HIS\n"+
-	 "KICK'LL SEND YOU\n"+
-	 "ROLLING SO WATCH\n"+
-	 "OUT!")
+"ANOTHER BURGLAR, WHO'S\n"+
+"ALSO ANOTHER DUMMY\n"+
+"FODDER. BUT HE MAY\n"+
+"SHOW UP WITH A WEAPON\n"+
+"TO STRIKE YOU WITH!\n"+
+"STILL A CHUMP.")
 break;
 }break;
 

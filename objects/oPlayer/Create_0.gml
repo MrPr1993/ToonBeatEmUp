@@ -1,8 +1,6 @@
 canControl=0
 controller_setup()
 
-
-
 character_setup()
 
 areaEntry=1 ///For the player to start
@@ -18,6 +16,8 @@ enemyID=0
 ///To show which player is which
 playerNO=1
 chardraw=draw_player;
+
+
 
 ///Player Default Setup - their stats changes from their end step scripts instead
 name="VIVA"

@@ -1,5 +1,7 @@
 enemy_data()
 
+dizzyPercentageMax=25
+
 name="MS.SPICE"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=2

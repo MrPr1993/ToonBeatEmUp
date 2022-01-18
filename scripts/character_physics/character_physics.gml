@@ -1,8 +1,27 @@
 function character_physics() {
 	if act=1
 	{
+
+		
 	totalSpeed=abs(walkSpeed)*1+abs(dashing)*1+abs(sentflying)
 if dodgetime!=0 dodgetime-=1 else {dodge=0 dodging=0 dodgetime=0}
+
+///Water Interaction
+if place_meeting(x,y,oWaterFX)
+{
+wfx=instance_place(x,y,oWaterFX)
+waterMax=wfx.z+wfx.zAdd
+
+if !ground if waterSplash=0 and zSpeed>2 and z>waterMax
+{
+watsplash=instance_create_depth(x,y,depth,oFlashFX) watsplash.isDepth=0 watsplash.depth=depth-1
+watsplash.z=waterMax watsplash.image_speed=0.5 watsplash.sprite_index=spr_watersplash
+watsplash.alarm[0]=0
+waterSplash=10; 
+}if ground waterSplash=0;
+}else waterMax=0
+
+if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 
 	if shaketime!=0 
 	{shaketime-=1 if shake!=-2 shake-=1 else shake=2

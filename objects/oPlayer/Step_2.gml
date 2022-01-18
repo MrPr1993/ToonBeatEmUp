@@ -76,17 +76,24 @@ player_anim()
 
 if oControl.betatest=1
 {
-if keyboard_check_pressed(ord("1"))
+if keyboard_check_pressed(ord("2"))
+{
+if oControl.HurtTest=1
 {
 if -key_left or key_right
 hitBack=1 else hitBack=0
 
-HitType=0 event_user(0) hp-=0.1*keyboard_check(vk_shift)
+if !keyboard_check(vk_control)
+{HitType=0 event_user(0) hp-=0.1*keyboard_check(vk_shift)
 targetHeightHit=choose(0,1,2)
-image_index=targetHeightHit
+image_index=targetHeightHit}
+else if instance_exists(oEnemy1)
+with oEnemy1 {HitType=0 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 }
 
-if keyboard_check_pressed(ord("2"))///Rolling backwards
+
+
+if oControl.HurtTest=2///Rolling backwards
 {
 if -key_left or key_right
 hitBack=1 else hitBack=0
@@ -98,36 +105,35 @@ HitType=2 event_user(0) hp-=0.1*keyboard_check(vk_shift)
 else if instance_exists(oEnemy1)
 with oEnemy1 {HitType=2 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 }
-
-if keyboard_check_pressed(ord("3"))///Shocked
+if oControl.HurtTest=3///Shocked
 if !keyboard_check(vk_control)
 {HitType=3 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 else if instance_exists(oEnemy1)
 with oEnemy1
 {HitType=3 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 
-if keyboard_check_pressed(ord("4"))///Flatten
+if oControl.HurtTest=4///Flatten
 if !keyboard_check(vk_control)
 {HitType=4 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 else if instance_exists(oEnemy1)
 with oEnemy1
 {HitType=4 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 
-if keyboard_check_pressed(ord("5"))///Burned
+if oControl.HurtTest=5///Burned
 if !keyboard_check(vk_control)
 {HitType=5 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 else if instance_exists(oEnemy1)
 with oEnemy1
 {HitType=5 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 
-if keyboard_check_pressed(ord("6"))///Frozen
+if oControl.HurtTest=6///Frozen
 if !keyboard_check(vk_control)
 {HitType=6 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 else if instance_exists(oEnemy1)
 with oEnemy1
 {HitType=6 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 
-if keyboard_check_pressed(ord("7"))///Dizzy
+if oControl.HurtTest=7///Dizzy
 if !keyboard_check(vk_control)
 {
 dizzyHit=1
@@ -147,6 +153,20 @@ HitType=0 event_user(0) hp-=0.1*keyboard_check(vk_shift)
 targetHeightHit=choose(0,1,2)
 image_index=targetHeightHit
 }
+
+if oControl.HurtTest=8
+{
+if -key_left or key_right
+hitBack=1 else hitBack=0
+
+if !keyboard_check(vk_control)
+{HitType=590068 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
+else if instance_exists(oEnemy1)
+with oEnemy1 {HitType=590068 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
+}
+}
+
+
 
 if keyboard_check_pressed(ord("8"))///Immune
 {

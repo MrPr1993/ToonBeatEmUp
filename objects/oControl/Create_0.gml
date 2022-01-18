@@ -29,8 +29,13 @@ global.ContinueStart=-1
 global.Continues=-1
 
 global.LifeStart=2
-}
 
+global.DisplayFeats=1
+}
+featicon[99]=0
+featsel=1
+featsellerp=1
+featY=0
 
 stagePause=0
 isCutscene=0
@@ -176,7 +181,7 @@ enemyShowTime=0
 if !variable_global_exists("timefont")
 {
 global.timefont=font_add_sprite_ext(spr_timefont, "0123456789", false, 0);
-global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!", false, 0);
+global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄", false, 0);
 }
 
 if !variable_global_exists("ScreenSize")
@@ -187,6 +192,8 @@ ShowEnemyHP=1
 
 ////Cheats
 StrongMode=0
+
+HurtTest=0
 
 enemySpawn=0
 enemySpawnName="0 MS. DUMMY"
@@ -232,6 +239,8 @@ stageBoss="BOSS NAME"
 stageScore=0
 scoreClearSet=0
 bossScore=10000
+bossID=-1
+bossMaxHP=2
 
 
 if !variable_global_exists("fpsMode") global.fpsMode=0

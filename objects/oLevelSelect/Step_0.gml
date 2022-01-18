@@ -45,3 +45,4 @@ if level=18 roomGo=rm_opening
 if level=19 roomGo=rm_credits
 if level=20 roomGo=rm_map
 if level=21 roomGo=rm_chardata
+if level=22 roomGo=rm_feats

@@ -366,13 +366,17 @@ with cutSelf
 	if animFrame>4 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
 	}
 	}
-
+	
 if anim=590067 { sprite_index=SpookyMonthSpr
 if animFrame>3.9 animFrame=0
 frame_set(0,0,0.2)
 frame_set(1,1,0.2)
 frame_set(2,2,0.2)
 frame_set(3,1,0.2)
+}
+
+if anim=590068 { sprite_index=SpinningSpr animFrame+=0.25 image_index+=0.5
+if animFrame>12 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
 }
 
 }

@@ -1,5 +1,5 @@
 if continueScreen=0
-if room=rm_chardata or room=rm_map or room=rm_hiscore or room=rm_characterselect
+if room=rm_chardata or room=rm_map or room=rm_hiscore or room=rm_characterselect or room=rm_feats
 {global.MenuSkip=1
 room=rm_titlescreen
 }

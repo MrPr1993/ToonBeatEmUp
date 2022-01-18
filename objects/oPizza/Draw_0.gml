@@ -1,7 +1,8 @@
-
 if canFlash=1
 if FX=1 shader_set(shd_white_sprite)
 
+if !(place_meeting(x,y,oWaterFX) and z>waterMax)
+{
 if isweapon=0
 {
 pal_swap_set(weapon_pal_sprite,weapon_pal,false);
@@ -18,7 +19,7 @@ draw_sprite_ext(sprite_index,image_index,round(x),round(y+z+zAdd*zAddGround),ima
 
 pal_swap_reset()
 }
-
+}
 shader_reset()
 
 

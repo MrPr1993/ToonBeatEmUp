@@ -3,6 +3,8 @@ enemy_data()
 
 enemyscript=animsetup_burglar
 
+dizzyPercentageMax=25
+
 nameID="None"
 name="MR.BURG"
 enemyPortraitSpr=spr_enemyface

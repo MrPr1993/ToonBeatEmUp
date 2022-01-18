@@ -3,7 +3,7 @@ if isPaused=0
 {
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and  room!=rm_howtoplay and room!=rm_cutscene1
-and room!=rm_map and room!=rm_chardata
+and room!=rm_map and room!=rm_chardata and room!=rm_feats
 {
 if betatest=1
 {
@@ -38,6 +38,12 @@ weaponDamage=0.2
 weapontargetHeight=2
 weapontype=0
 weaponHitType=1
+}
+
+if object_index=oEnemy1B if keyboard_check(vk_control)
+{
+weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+
 }
 
 if object_index=oSwing if keyboard_check(vk_control)

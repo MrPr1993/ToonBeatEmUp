@@ -36,9 +36,6 @@
     {"compositeImage":{"FrameId":{"name":"aa09fa1d-13ac-4ab6-988b-6c07c2591e38","path":"sprites/spr_newspaper/spr_newspaper.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"aa09fa1d-13ac-4ab6-988b-6c07c2591e38","path":"sprites/spr_newspaper/spr_newspaper.yy",},"LayerId":{"name":"5cb6f09b-aa77-43f2-8f78-50323f762100","path":"sprites/spr_newspaper/spr_newspaper.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_newspaper","path":"sprites/spr_newspaper/spr_newspaper.yy",},"resourceVersion":"1.0","name":"aa09fa1d-13ac-4ab6-988b-6c07c2591e38","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e3a0dae0-5c1d-43a8-91ad-197ef85368d6","path":"sprites/spr_newspaper/spr_newspaper.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e3a0dae0-5c1d-43a8-91ad-197ef85368d6","path":"sprites/spr_newspaper/spr_newspaper.yy",},"LayerId":{"name":"5cb6f09b-aa77-43f2-8f78-50323f762100","path":"sprites/spr_newspaper/spr_newspaper.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_newspaper","path":"sprites/spr_newspaper/spr_newspaper.yy",},"resourceVersion":"1.0","name":"e3a0dae0-5c1d-43a8-91ad-197ef85368d6","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_newspaper","path":"sprites/spr_newspaper/spr_newspaper.yy",},
@@ -48,7 +45,7 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 5.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -57,10 +54,9 @@
             {"id":"96aeb3e5-778f-4e68-80f2-9c48720261ae","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4457a27b-925e-4dad-9c54-f7a5c25f9711","path":"sprites/spr_newspaper/spr_newspaper.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d6c9c0ed-ccd2-4573-8d39-bcbc290f1e5a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bf90f926-b419-441e-bead-c297f3db02fc","path":"sprites/spr_newspaper/spr_newspaper.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6de7865d-5ab2-4c4a-bd36-de7148240dd1","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa09fa1d-13ac-4ab6-988b-6c07c2591e38","path":"sprites/spr_newspaper/spr_newspaper.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"615347fd-9106-412c-b203-4dedafab296a","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e3a0dae0-5c1d-43a8-91ad-197ef85368d6","path":"sprites/spr_newspaper/spr_newspaper.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

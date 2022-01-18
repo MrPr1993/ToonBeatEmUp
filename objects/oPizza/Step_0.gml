@@ -20,7 +20,9 @@ if throwGravity=1 hspeed=0
 if carry=1
 {
 if carryID=-1
-{carry=0 mask_index=itsmask zAddGround=1}
+{carry=0 mask_index=itsmask zAddGround=1
+	
+	}
 else
 {
 
@@ -28,6 +30,7 @@ mask_index=spr_nospace zAddGround=0
 x=carryID.x
 y=carryID.y+2
 z=carryID.z-height+8+carryZ
+waterMax=carryID.waterMax
 }
 }
 else

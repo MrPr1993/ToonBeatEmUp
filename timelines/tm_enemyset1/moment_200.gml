@@ -26,14 +26,14 @@ alarm[0]=60 timecheck=-1}
 
 en1=instance_create(850,164,oEnemy1) en1.canAttack=6 en1.isIdle=1 en1.alarm[1]=60
 en1.idleRange=90
-en2=instance_create(888,164,oEnemy1) en2.canAttack=6 en2.isIdle=1 en2.alarm[1]=60 en2.image_xscale=-1
+en2=instance_create(888,164,oEnemy1B) en2.canAttack=6 en2.isIdle=1 en2.alarm[1]=60 en2.image_xscale=-1
 en2.idleRange=130
 
 en5=instance_create(1000,160,oAreaSpawner)
 with en5
 {
 spawnX=992-160 ///768
-enemytype0=oEnemy1 MaxSpawnFrame=0 visible=1
+enemytype0=oEnemy1B MaxSpawnFrame=0 visible=1
 FXtype=4 canDraw=1 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 }
 

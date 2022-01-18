@@ -197,6 +197,9 @@ function character_setup() {
 	automove=0
 	automoveX=0
 	automoveY=0
+	automoveDist=8
+	automoveFace=1
+	automoveDash=0
 	hurt=0
 
 	canBlock=0
@@ -209,6 +212,9 @@ function character_setup() {
 
 	dizzyAtk=0
 	dizzyHit=0
+	dizzyPercentage=0
+	dizzyPercentageMin=0
+	dizzyPercentageMax=100
 	thrownDMG=0
 	throwATK=0
 	throwAtk=0
@@ -219,6 +225,10 @@ function character_setup() {
 	cutSpr1=spr_viva_cut1
 	cutSpr2=spr_viva_cut2
 	SpookyMonthSpr=spr_spookymonth
+	SpinningSpr=spr_viva_spin
+	petSprLow=spr_viva_petlow
+	petSprMid=spr_viva_petlow
+	petSprHigh=spr_viva_petlow
 	
 	hitCheck=0
 
@@ -269,7 +279,7 @@ function character_setup() {
 	selfatk=instance_create_depth(x,y,0,oSelfAtk)
 	selfatk.x=x selfatk.y=y selfatk.isPlayer=1
 	selfatk.hitSource=id selfatk.selfsource=id
-
+    hitSource=0
 	range=12
 	rangeX=8
 	rangeY=8
@@ -414,6 +424,9 @@ function character_setup() {
 	
 	hasShadow=1;
 	shadowSpr=spr_shadow
+	waterhoverSpr=spr_waterhover
+	waterMax=0;
+	waterSplash=0;
 
 chardraw=draw_enemy;
 

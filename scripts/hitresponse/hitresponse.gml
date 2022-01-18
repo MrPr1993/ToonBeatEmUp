@@ -9,9 +9,19 @@ function hitresponse() {
 	if !(x>other.SourceX and image_xscale=-1)
 	and !(x<other.SourceX and image_xscale=1)
 	hitBack=1 else hitBack=0
-
+	
+dizzyPercentage=random_range(0,100)
+	if !dizzyPercentage=clamp(dizzyPercentage,dizzyPercentageMin,dizzyPercentageMax)
+	dizzyHit=1;
+	else
 	dizzyHit=other.dizzyAtk
+	
 	cutDMG=other.isCut
+	
+
+	
+
+
 
 	PlaySound(other.HitSound)
 

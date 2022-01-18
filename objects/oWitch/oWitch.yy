@@ -1,0 +1,42 @@
+{
+  "spriteId": {
+    "name": "spr_witch_stand",
+    "path": "sprites/spr_witch_stand/spr_witch_stand.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": {
+    "name": "mask_small",
+    "path": "sprites/mask_small/mask_small.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "oEnemy1",
+    "path": "objects/oEnemy1/oEnemy1.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsGroup": 0,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Witch",
+    "path": "folders/8 - Bosses/Witch.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oWitch",
+  "tags": [],
+  "resourceType": "GMObject",
+}

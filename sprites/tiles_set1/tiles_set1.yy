@@ -25,8 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"f8c9ade9-90cf-4a4e-ae63-30438e5f490a","path":"sprites/tiles_set1/tiles_set1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f8c9ade9-90cf-4a4e-ae63-30438e5f490a","path":"sprites/tiles_set1/tiles_set1.yy",},"LayerId":{"name":"bbf02ad9-8533-4226-908e-cb55d0d8cd79","path":"sprites/tiles_set1/tiles_set1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"f8c9ade9-90cf-4a4e-ae63-30438e5f490a","path":"sprites/tiles_set1/tiles_set1.yy",},"LayerId":{"name":"0f618040-1eee-4114-b4b0-d16297fa31fb","path":"sprites/tiles_set1/tiles_set1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"f8c9ade9-90cf-4a4e-ae63-30438e5f490a","path":"sprites/tiles_set1/tiles_set1.yy",},"LayerId":{"name":"60f8606f-0765-4c96-b98e-374013443403","path":"sprites/tiles_set1/tiles_set1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"tiles_set1","path":"sprites/tiles_set1/tiles_set1.yy",},"resourceVersion":"1.0","name":"f8c9ade9-90cf-4a4e-ae63-30438e5f490a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -66,8 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"bbf02ad9-8533-4226-908e-cb55d0d8cd79","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0f618040-1eee-4114-b4b0-d16297fa31fb","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2)","resourceVersion":"1.0","name":"60f8606f-0765-4c96-b98e-374013443403","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": {
     "left": 0,

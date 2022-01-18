@@ -1,5 +1,7 @@
 enemy_data()
 
+dizzyPercentageMax=25
+
 name="MR.LARGE"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=3

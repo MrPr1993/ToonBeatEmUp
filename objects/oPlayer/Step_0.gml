@@ -1,5 +1,28 @@
 if canControl
+if automove=0
+{
 controller_setup()
+}
+else
+{
+if distance_to_point(automoveX,automoveY)>automoveDist
+{doubledash=automoveDash
+if x>automoveX {key_right=0; key_left=-1}
+else {key_right=1; key_left=0}
+if y>automoveY {key_up=1; key_down=0}
+else {key_up=0; key_down=1}
+
+if x=clamp(y,automoveX-6,automoveX+6) {key_left=0 key_right=0}
+if y=clamp(y,automoveY-6,automoveY+6) {key_up=0 key_down=0}
+
+}else {key_left=0 key_right=0 key_up=0 key_down=0 automove=0 doubledash=0 image_xscale=automoveFace}
+}
+
+if oControl.betatest=1
+{if keyboard_check_pressed(vk_backspace)
+{automoveX=round(mouse_x) automoveY=round(mouse_y) automove=1}
+}
+	
 
 player_extramovesettings()
 

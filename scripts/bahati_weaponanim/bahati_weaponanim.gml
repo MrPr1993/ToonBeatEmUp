@@ -15,23 +15,26 @@ function bahati_weaponanim() {
 
 	if weapontype=0
 	{
-	if animFrame=0 PlaySound(WswingSound)
-
 	////Hammer Swing
+frame_set(0,0,0.25)
+frame_set(1,1,0.25) if animFrame=2 PlaySound(WswingSound)
+frame_set(2,0,0.25)
+frame_set(3,2,0.1)
+frame_set(4,3,0.1)
 	if animFrame=clamp(animFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
 	if animFrame=clamp(animFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 	if animFrame=clamp(animFrame,2,2.9)
-	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
+	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
 	if animFrame=clamp(animFrame,3,3.9)
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,4,4.9)
 	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
 	sprite_index=spr_bahati_hammeratk
-	image_index=animFrame image_speed=0
-	if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,2.5)
-	animFrame+=0.20 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
-	}
+	image_speed=0
+	if animFrame=clamp(animFrame,3,3.9) atk=1 else atk=0
+	if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 	if weapontype=1
 	{

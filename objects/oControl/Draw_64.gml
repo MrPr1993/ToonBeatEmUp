@@ -54,9 +54,8 @@ if isPaused=0
 
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay and room!=rm_cutscene1
-and room!=rm_map and room!=rm_chardata
+and room!=rm_map and room!=rm_chardata and room!=rm_feats
 {
-
 if betatest=1
 {
 if keyboard_check_pressed(vk_insert)
@@ -126,32 +125,53 @@ if ShowEnemyHP=1///Enemy's HP
 if showhp=1
 {
 draw_set_color(c_white)
+if enemymaxhp>1
+{
+draw_rectangle(25-1,48-1,25+(1*45)+1,48+8+1,false)
+draw_set_color(c_red)
+draw_rectangle(25,48,25+(1*45),48+8,false)
+}
+else
+{
 draw_rectangle(25-1,48-1,25+(enemymaxhp*45)+1,48+8+1,false)
 draw_set_color(c_red)
 draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-
+}
 
 if enemyhp>=0{///HP Layers
-if enemyhplayer=0
+if enemymaxhp>1
+{
+if enemyhp<=1
 {draw_set_color(c_yellow)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=1{draw_set_color(c_yellow) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_orange)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=2{draw_set_color(c_orange) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_blue)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=3{draw_set_color(c_blue) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_green)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=4{draw_set_color(c_green) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_olive)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=5{draw_set_color(c_olive) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_navy)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=6{draw_set_color(c_navy) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_maroon)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=7{draw_set_color(c_maroon) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_gray)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=8{draw_set_color(c_gray) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_dkgray)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhplayer=9{draw_set_color(c_dkgray) draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
-draw_set_color(c_black)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
+if enemyhp>1 if enemyhp<=2
+{draw_set_color(c_yellow) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_orange)draw_rectangle(25,48,25+((enemyhp-1)*45),48+8,false)}
+if enemyhp>2 if enemyhp<=3
+{draw_set_color(c_orange) draw_rectangle(25,48,25+((1)*45),48+8,false)
+draw_set_color(c_blue)draw_rectangle(25,48,25+((enemyhp-2)*45),48+8,false)}
+if enemyhp>3 if enemyhp<=4
+{draw_set_color(c_blue) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_green)draw_rectangle(25,48,25+((enemyhp-3)*45),48+8,false)}
+if enemyhp>4 if enemyhp<=5
+{draw_set_color(c_green) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_olive)draw_rectangle(25,48,25+((enemyhp-4)*45),48+8,false)}
+if enemyhp>5 if enemyhp<=6
+{draw_set_color(c_olive) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_navy)draw_rectangle(25,48,25+((enemyhp-5)*45),48+8,false)}
+if enemyhp>6 if enemyhp<=7
+{draw_set_color(c_navy) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_maroon)draw_rectangle(25,48,25+((enemyhp-6)*45),48+8,false)}
+if enemyhp>7 if enemyhp<=8
+{draw_set_color(c_maroon) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_gray)draw_rectangle(25,48,25+((enemyhp-7)*45),48+8,false)}
+if enemyhp>8 if enemyhp<=9
+{draw_set_color(c_gray) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_dkgray)draw_rectangle(25,48,25+((enemyhp-8)*45),48+8,false)}
+if enemyhp>9{draw_set_color(c_dkgray) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_black)draw_rectangle(25,48,25+((enemyhp-9)*45),48+8,false)}
+}
+else
+{draw_set_color(c_yellow)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
 }
 {if enemyhplayer=0
 if enemyHPflash=0 enemyHPflash=2 else enemyHPflash-=0.5}
@@ -245,6 +265,11 @@ draw_text_transformed(8,222,string_hash_to_newline("CAMERA X: -"+string(__view_g
 if instance_exists(oEnemySpawner)
 draw_text_transformed(80,222,string_hash_to_newline(oEnemySpawner.timeline_position),0.5,0.5,0.5)
 draw_text_transformed(8,230,string_hash_to_newline("F1 reset - Down"+string(oPlayer.commandDown)+" Up"+string(oPlayer.commandUp)+" Left"+string(oPlayer.commandLeft)+" Right"+string(oPlayer.commandRight)+" Charge "+string(oPlayer.commandCharge)),0.5,0.5,0.5)
+
+draw_text_transformed(80,198,string_hash_to_newline("Hurt Test"+string(HurtTest)),0.5,0.5,0.5)
+if keyboard_check_pressed(ord("1")) HurtTest-=1
+if keyboard_check_pressed(ord("3")) HurtTest+=1
+
 
 draw_sprite(spr_spawnpos,0,P1SpawnX,P1SpawnY)
 }
@@ -445,6 +470,29 @@ draw_set_color(c_white)///Enemy Name Here
 draw_text(160,240-24,string_hash_to_newline(TextDialogue)) draw_set_font(-1)
 draw_set_halign(fa_left)
 
+if bossID!=-1 if !instance_exists(bossID) bossID=-1;
+else
+if bossID.hp>=0
+{
+{
+///Boss Name and Bar
+draw_set_halign(fa_center); draw_set_valign(fa_top);
+draw_set_font(global.scorefont) draw_set_alpha(1)
+draw_set_color(c_white)///Enemy Name Here
+draw_text(160,240-24,string_hash_to_newline(bossID.name)) draw_set_font(-1)
+draw_set_color(c_white) draw_set_alpha(1) draw_rectangle(160-128-1,240-24+10-1,160+128+1,240-24+14+1,false)
+draw_set_color(c_red) draw_set_alpha(1) draw_rectangle(160-128,240-24+10,160-128+256,240-24+14,false)
+
+if bossID.maxhp<=1
+{draw_set_color(c_yellow) draw_set_alpha(1) draw_rectangle(160-128,240-24+10,160-128+(256)*bossID.hp,240-24+14,false)}
+if bossID.maxhp<=2
+{draw_set_color(c_yellow) draw_set_alpha(1) draw_rectangle(160-128,240-24+10,160-128+(128)*bossID.hp,240-24+14,false)}
+}
+
+}
+draw_set_halign(fa_left)
+
+
 ///Stage Clear
 
 if stageClear=1
@@ -557,7 +605,8 @@ titleFlashTime-=1 if titleFlashTime=0 {if titleShow=0 titleShow=1}
 if titleShow=1
 {draw_set_color(c_white) titleImg+=0.1
 draw_sprite_ext(spr_gametitle,titleImg,160,round(titlescreenY),1,1,0,c_white,1)
-draw_set_alpha(titleSquareFX) titleSquareFX-=0.02 if titleSquareFX=0.02 if global.MenuSkip=0 PlaySound(snd_titlescreen)
+draw_set_alpha(titleSquareFX) titleSquareFX-=0.02 if titleSquareFX=0.02 if global.MenuSkip=0
+PlaySound(choose(snd_titlescreen,snd_titlescreen2))
 if noWhite=0
 draw_rectangle(-4,-4,340,260,false)
 
@@ -594,7 +643,8 @@ draw_sprite(spr_scorefont,43,-8+4+320-StarSpace-selectStar,StarY-4)
 
 
 draw_set_color(c_white) draw_set_alpha(1)
-draw_set_halign(fa_center)
+draw_set_halign(fa_center) //▲►▼◄
+
 draw_text(160,184-16-4,string_hash_to_newline("ARCADE MODE"))
 draw_text(160,184-8-4,string_hash_to_newline("SELECT STAGE"))
 draw_text(160,184-4,string_hash_to_newline("CHARACTER PROFILE"))
@@ -1066,6 +1116,27 @@ draw_text(160,10+190-4,"FIX AND ADD SOME THINGS")
 draw_text(160,10+200,"SO ENJOY WHAT I HAVE HERE")
 }
 
+///Feats
+if room=rm_feats
+feats_screen()
+
+if betatest=1 if keyboard_check_pressed(ord("6"))
+{
+featc=instance_create_depth(0,0,0,oFeatDisplay) with featc
+{featX=-128
+}
+}
+
+if global.DisplayFeats=1
+{
+if instance_exists(oFeatDisplay) with oFeatDisplay
+{draw_set_alpha(1) draw_set_font(global.scorefont)
+draw_set_color(c_white) draw_rectangle(0+featX,240-24,128+featX,240,false)
+draw_set_color(c_black) draw_rectangle(0+2+featX,240-24+2,128-2+featX,240-3,false)
+draw_set_halign(fa_left)
+draw_set_color(c_white) draw_text(6+featX,240-24+4,"FEAT COMPLETE:")
+draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
+}}
 
 ///This will be used to play the cutscenes
 if room=rm_cutscene1

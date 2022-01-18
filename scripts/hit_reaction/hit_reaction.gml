@@ -2,6 +2,8 @@
 function hit_reaction() {
 	if act=1
 	{
+if targetID!=-1
+character_release(0,-4,2*image_xscale,0,3,5)
 
 ///Reaction while frozen
 if HitType!=6 and anim=41 
@@ -177,6 +179,15 @@ if hp<=0
 	animFrame=3
 	anim=5
 	}
+	
+	////Spinning
+	if HitType=590068
+	{
+	hurt=1
+	sprite_index=SpinningSpr image_index=0
+	animFrame=0
+	anim=590068
+	}	
 
 	event_user(12)
 	///Special State for certain enemies after

@@ -11,4 +11,6 @@ key_right=0
 areaEntry=0
 }
 
+oWaterFX.visible=1
+
 oControl.stagePause=1

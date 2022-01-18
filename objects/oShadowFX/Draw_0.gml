@@ -1,16 +1,42 @@
 if instance_exists(oPlayer) with oPlayer if visible and hasShadow=1
 { 
 if !place_meeting(x,y,oHeight32) and !place_meeting(x,y,oFallHole)
-draw_sprite(spr_shadow,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2)
+if place_meeting(x,y,oWaterFX)
+{if z>waterMax
+draw_sprite(waterhoverSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2+waterMax)
+else
+draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2+waterMax)
 }
+else
+draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2)
+
+if place_meeting(x,y,oWaterFX)
+{if z>waterMax
+draw_sprite(waterhoverSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2+waterMax)
+else
+draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2+waterMax)
+}
+
+}
+
+
 
 if instance_exists(parEnemy) with parEnemy if visible and hasShadow=1 and !place_meeting(x,y,oFallHole) and fallHole=0
 and !place_meeting(x,y,oHeight32) if name!="NULL"
+if place_meeting(x,y,oWaterFX)
+{if z>waterMax
+draw_sprite(waterhoverSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2+waterMax)
+else
+draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2+waterMax)
+}
+else
 draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+2)
 
 if instance_exists(oBarrel) with oBarrel if visible and !place_meeting(x,y,oFallHole)
 and z!=0 and fallHole=0
+{
 draw_sprite_ext(shadow,0,x,y+2,image_xscale,1,0,c_white,1)
+}
 
 if instance_exists(oShadowOnly) with oShadowOnly if visible and !place_meeting(x,y,oFallHole)
 and fallHole=0
@@ -19,7 +45,17 @@ draw_sprite(shadow,0,x,y+2)
 
 if instance_exists(oPizza) with oPizza if visible and 
 !place_meeting(x,y,oFallHole)
-draw_sprite(spr_shadow,0,x,y+2)
+if place_meeting(x,y,oWaterFX)
+{
+
+	if z>waterMax
+draw_sprite(spr_waterhover,0,x,y+2+waterMax)
+else
+draw_sprite(spr_shadow,0,x,y+2+waterMax)
+}else
+draw_sprite(spr_shadow,0,x,y+2+waterMax)
+
+
 
 if instance_exists(oCrusher) with oCrusher if visible draw_sprite(spr_shadow,0,x,y+2)
 

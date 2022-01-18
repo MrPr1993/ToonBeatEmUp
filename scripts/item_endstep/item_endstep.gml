@@ -1,4 +1,5 @@
 function item_endstep() {
+	
 	x+=spdX
 	if carry=1 or isBroken=1
 	{
@@ -69,6 +70,20 @@ function item_endstep() {
 	}
 	} else if z!=0 if canGrav=1 ground=0
 
+if place_meeting(x,y,oWaterFX)
+{
+wfx=instance_place(x,y,oWaterFX)
+waterMax=wfx.z+wfx.zAdd
 
+if !ground if waterSplash=0 and spdZ>2 and z>waterMax
+{
+watsplash=instance_create_depth(x,y,depth,oFlashFX) watsplash.isDepth=0 watsplash.depth=depth-1
+watsplash.z=waterMax watsplash.image_speed=0.5 watsplash.sprite_index=spr_watersplash
+watsplash.alarm[0]=0
+waterSplash=10; 
+}if ground waterSplash=0;
+}else waterMax=0
+
+if carryID!=-1 and carry=1 waterMax=carryID.waterMax
 
 }

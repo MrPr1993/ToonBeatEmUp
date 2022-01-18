@@ -1,0 +1,27 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+/// @param number
+/// @param sprite
+/// @param index
+/// @param color
+/// @param name
+/// @param description
+function draw_feat(){
+if featsel=clamp(featsel,argument0-4,argument0+4)
+{
+d3d_transform_set_identity()
+d3d_transform_add_translation(0,featY+(48*(argument0-1))+48-48,0)
+draw_set_color(c_black) draw_set_alpha(0.75)
+draw_rectangle(0,48-24,320,48+24,false)
+draw_sprite(argument1,argument2,4+24,4+32+32-32) draw_set_alpha(1)
+draw_set_color(argument3) draw_text(4+28+32,48-8,string(argument0)+"."+string(argument4))
+draw_text(4+28+32,48,argument5)
+draw_set_color(c_black)
+if oControl.featsel=argument0
+draw_set_alpha(0)
+else
+draw_set_alpha(0.75)
+draw_rectangle(0,48-24,320,48+24,false)
+d3d_transform_set_identity()
+}
+}

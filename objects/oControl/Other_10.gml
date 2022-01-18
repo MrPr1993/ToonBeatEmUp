@@ -45,6 +45,8 @@ if enemySpawn=31 {enemySpawnName="31 Pharaoh" spawnUnit=oPharaoh}
 if enemySpawn=32 {enemySpawnName="32 Franki" spawnUnit=oFranki}
 if enemySpawn=33 {enemySpawnName="32 Oni" spawnUnit=oOni}
 if enemySpawn=34 {enemySpawnName="32 Franki" spawnUnit=oPrince}
+if enemySpawn=35 {enemySpawnName="33 Witch" spawnUnit=oWitch}
+if enemySpawn=36 {enemySpawnName="34 P Princess" spawnUnit=oPlantPrincess}
 if enemySpawn=48 {enemySpawnName="48 Dastardly" spawnUnit=oDastardly}
 }
 if spawnType="Item"

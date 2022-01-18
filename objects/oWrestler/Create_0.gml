@@ -1,5 +1,7 @@
 enemy_data()
 
+dizzyPercentageMax=25
+
 name="MS.SLAMS"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=19

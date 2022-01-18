@@ -1,8 +1,8 @@
 /// @description if you want to check on their data, you can check here
 enemy_data()
-
+dizzyPercentageMax=25
 enemyscript=animsetup_burglar
-
+chardraw=draw_burglarb;
 nameID="None"
 name="MR.TEEF"
 enemyPortraitSpr=spr_enemyface

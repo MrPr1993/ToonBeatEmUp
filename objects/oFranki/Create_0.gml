@@ -30,9 +30,9 @@ HitGround=snd_hitground
 
 rangeAtk=400
 
-hp=1
-maxhp=1
-hplayer=1
+hp=2
+maxhp=2
+
 
 StandSpr=spr_franki_stand
 MoveSpr=spr_franki_move
@@ -87,5 +87,4 @@ spritepos_setup(2,24,12,79)
 
 //oControl.BossHPID=self
 
-hplayer=1
 

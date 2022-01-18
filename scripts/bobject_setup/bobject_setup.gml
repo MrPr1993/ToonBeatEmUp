@@ -55,6 +55,10 @@ PickupSound=snd_pickitem
 	walkSpeed=0
 	dashing=0
 	sentflying=0
+	
+	waterhoverSpr=spr_waterhover
+	waterMax=0;
+	waterSplash=0;
 
 
 	current_pal=0;

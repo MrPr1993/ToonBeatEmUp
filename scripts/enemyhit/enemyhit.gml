@@ -14,7 +14,12 @@ function enemyhit() {
 
 	targetEnemy=other.hitSource.id
 
+dizzyPercentage=random_range(0,100)
+	if !dizzyPercentage=clamp(dizzyPercentage,dizzyPercentageMin,dizzyPercentageMax)
+	dizzyHit=1;
+	else
 	dizzyHit=other.dizzyAtk
+
 cutDMG=other.isCut
 
 

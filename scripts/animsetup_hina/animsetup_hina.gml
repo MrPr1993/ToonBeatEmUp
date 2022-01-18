@@ -47,6 +47,8 @@ function animsetup_hina() {
 	WinSnd=snd_hina13
 	cutSpr1=spr_hina_cut1
 	cutSpr2=spr_hina_cut2
+	SpinningSpr=spr_hina_spin
+	petSprLow=spr_hina_petlow
 
 	if atk=0
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
@@ -69,13 +71,20 @@ function animsetup_hina() {
 	if weaponspawn=-1 ////Default Stand
 	{
 	zAddGround=0
-	if isIdle<10
+	if isIdle<60
 	{//isIdle+=0.1
 	if sprite_index!=spr_hina_stand 
 	{animFrame=0 sprite_index=spr_hina_stand}
-	frame_set(0,0,0)
-	frame_set(1,1,0.1) if animFrame>2 animFrame=0
-	frame_set(2,2,0.01)
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	frame_set(2,2,0.1)
+	frame_set(3,1,0.1)
+	frame_set(4,0,0.1)
+	frame_set(5,3,0.1)
+	frame_set(6,4,0.1)
+	frame_set(7,3,0.1)
+	frame_set(8,0,0.1)
+if animFrame>8 animFrame=0
 	}
 	else
 	{
@@ -337,8 +346,17 @@ function animsetup_hina() {
 
 	if anim=15 ///Attack Air - and Forwards Attack Ait
 	{selfatk.NoKnock=0 dizzyAtk=0
-	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_hina4)}
-
+	if animFrame=0 
+	{
+	if -key_left or key_right sentflying=2*image_xscale
+	if key_down
+	{sprite_index=spr_hina_attackair3 PlaySound(snd_hina3)}
+	else
+	{
+	if -key_left or key_right zSpeed=-4	
+	PlaySound(snd_swing) PlaySound(snd_hina4)
+	}		
+	}
 	weaponAttack=0
 
 	comboBreak=0
@@ -370,10 +388,12 @@ function animsetup_hina() {
 	damage=0.04
 	hit=1
 	selfatk.recovery=90
+	
+	if sprite_index!=spr_hina_attackair3
+	{
 	if sentflying=0
 	{sprite_index=spr_hina_attackair MoveType=2 atkAddZ=0 selfatk.height=64}
 	else {sprite_index=spr_hina_attackair2 MoveType=1 atkAddZ=16 selfatk.height=32}
-
 	image_index=animFrame image_speed=0
 	if sprite_index=spr_hina_attackair
 	 {if animFrame>1 and animFrame<=2 atk=1 else atk=0
@@ -381,6 +401,16 @@ function animsetup_hina() {
 	 if sprite_index=spr_hina_attackair2
 	 {if animFrame>1 atk=1 else atk=0
 	 if animFrame<1.5 animFrame+=0.5}
+	}
+	
+if sprite_index=spr_hina_attackair3
+{animFrame=1 atk=1
+atkcol_set(27,0,0,1.25,1,37)
+damage=0.02
+hit=1
+selfatk.recovery=30
+weaponanim(weaponspr,weaponIndex,32,-70,90*image_xscale,weaponcolor)
+}
  
 	 if ground {hurt=1 canmove=0 animFrame=0 anim=25}
 	}
@@ -392,19 +422,14 @@ function animsetup_hina() {
 	weaponanim(weaponspr,weaponIndex,111111,-34,76*image_xscale,weaponcolor)
 
 	weaponAttack=0
-
 	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_hina4)}
-
 	atkcol_set(90,0,48,3.55,1,46)
-
 	if animFrame<3
 	sentflying=2*image_xscale else sentflying=0
-
 	comboBreak=1
 	flashX=12
 	flashY=2
 	flashZ=32
-
 	comboHit=0
 	damage=0.06
 	hit=0 MoveType=1

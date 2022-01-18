@@ -44,6 +44,8 @@ function animsetup_viva() {
 	cutSpr1=spr_viva_cut1
 	cutSpr2=spr_viva_cut2
 	SpookyMonthSpr=spr_viva_spookymonth
+	SpinningSpr=spr_viva_spin
+	petSprLow=spr_viva_petlow
 
 
 	if atk=0 ///To Set default colission
@@ -65,13 +67,28 @@ function animsetup_viva() {
 	{
 	if weaponspawn=-1 ////Default Stand
 	{zAddGround=0
-	if isIdle<10
+	if isIdle<60
 	{//isIdle+=0.1
 	if sprite_index!=spr_viva_stand 
 	{animFrame=0 sprite_index=spr_viva_stand}
-	frame_set(0,0,0.01)
-	frame_set(1,1,0.1) if animFrame>2 animFrame=0
-	frame_set(2,2,0.01)
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	frame_set(2,2,0.1)
+	frame_set(3,1,0.1)
+	frame_set(4,0,0.1)
+	frame_set(5,3,0.1)
+	frame_set(6,4,0.1)
+	frame_set(7,3,0.1)
+	frame_set(8,5,0.1)
+	frame_set(9,1,0.1)
+	frame_set(10,2,0.1)
+	frame_set(11,1,0.1)
+	frame_set(12,0,0.1)
+	frame_set(13,3,0.1)
+	frame_set(14,4,0.1)
+	frame_set(15,3,0.1)
+if animFrame>15.5 animFrame=0
+
 	}
 	else
 	{
@@ -330,18 +347,25 @@ function animsetup_viva() {
 
 	if anim=15 ///Attack Air - and Forwards Attack Ait
 	{selfatk.NoKnock=0 dizzyAtk=0
-	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva5)}
-
+	
+	if animFrame=0 
+	{
+	if -key_left or key_right sentflying=2*image_xscale
+	if key_down
+	{sprite_index=spr_viva_attackair3 PlaySound(snd_viva3)}
+	else
+	{
+	if -key_left or key_right zSpeed=-4	
+	PlaySound(snd_swing) PlaySound(snd_viva5)
+	}		
+	}
 	weaponAttack=0
-
 	comboBreak=0
 	flashX=6
 	flashY=2
 	flashZ=48
 
 	////Change your attack colission box
-
-
 	if sprite_index=spr_viva_attackair
 	{ weaponBack=0 atkcol_set(25,0,-1,1.25,1,86)
 	if image_index<1
@@ -356,14 +380,15 @@ function animsetup_viva() {
 	else
 	weaponanim(weaponspr,weaponIndex,-12,-67,90*image_xscale,weaponcolor)
 	}
-
 	damage=0.04
 	hit=1
 	selfatk.recovery=90
+	
+	 if sprite_index!=spr_viva_attackair3
+	 {
 	if sentflying=0
 	{sprite_index=spr_viva_attackair MoveType=2 atkAddZ=0 selfatk.height=64}
 	else {sprite_index=spr_viva_attackair2 MoveType=1 atkAddZ=16 selfatk.height=32}
-
 	image_index=animFrame image_speed=0
 	if sprite_index=spr_viva_attackair
 	 {if animFrame>1 and animFrame<=2 atk=1 else atk=0
@@ -371,9 +396,18 @@ function animsetup_viva() {
 	 if sprite_index=spr_viva_attackair2
 	 {if animFrame>1 atk=1 else atk=0
 	 if animFrame<1.5 animFrame+=0.5}
+	 }
  
-	 if ground {hurt=1 canmove=0 animFrame=0 anim=25}
-	}
+ if sprite_index=spr_viva_attackair3
+{animFrame=1 atk=1
+atkcol_set(4,0,11,0.65,1,30)
+weaponanim(weaponspr,weaponIndex,13,-69,90*image_xscale,weaponcolor)
+damage=0.02
+hit=1
+selfatk.recovery=30
+}if ground {hurt=1 canmove=0 animFrame=0 anim=25}
+
+}
 
 	if anim=16 ///Attack Dash
 	{selfatk.NoKnock=0 dizzyAtk=0

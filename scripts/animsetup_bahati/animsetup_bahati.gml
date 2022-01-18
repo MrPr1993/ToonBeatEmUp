@@ -49,7 +49,8 @@ function animsetup_bahati() {
 	WinSnd=snd_bahati14
 	cutSpr1=spr_bahati_cut1
 	cutSpr2=spr_bahati_cut2
-
+	SpinningSpr=spr_bahati_spin
+petSprLow=spr_bahati_petlow
 
 	if atk=0 {hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
 	HitForce=0
@@ -67,13 +68,27 @@ function animsetup_bahati() {
 	{
 	if weaponspawn=-1 ////Default Stand
 	{zAddGround=0
-	if isIdle<10
+	if isIdle<60
 	{//isIdle+=0.1
 	if sprite_index!=spr_bahati_stand 
 	{animFrame=0 sprite_index=spr_bahati_stand}
-	frame_set(0,0,0.01)
-	frame_set(1,1,0.1) if animFrame>2 animFrame=0
-	frame_set(2,2,0.01)
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	frame_set(2,2,0.1)
+	frame_set(3,1,0.1)
+	frame_set(4,0,0.1)
+	frame_set(5,3,0.1)
+	frame_set(6,4,0.1)
+	frame_set(7,3,0.1)
+	frame_set(8,5,0.1)
+	frame_set(9,1,0.1)
+	frame_set(10,2,0.1)
+	frame_set(11,1,0.1)
+	frame_set(12,0,0.1)
+	frame_set(13,3,0.1)
+	frame_set(14,4,0.1)
+	frame_set(15,3,0.1)
+if animFrame>15.5 animFrame=0
 	}
 	else
 	{
@@ -270,9 +285,6 @@ function animsetup_bahati() {
 
 
 	damage=0.04 targetHeight=0
-	if comboHit!=0 and animFrame>1.5
-	{if key_shield_pressed event_user(4)
-	if key_attack {PlaySound(snd_swing) PlaySound(snd_bahati11) comboHit=0 animFrame=0 anim=13 atk=1}}
 	hit=0 MoveType=0
 	selfatk.recovery=10
 	sprite_index=spr_bahati_attack3
@@ -281,11 +293,12 @@ function animsetup_bahati() {
 	if animFrame=clamp(animFrame,0,1.5)
 	animFrame+=0.125 else animFrame+=0.1 if animFrame>2.8 {hurt=0 atk=0 canmove=1 hit=0
 	}
+	if comboHit!=0 and animFrame>1.5
+	{if key_shield_pressed event_user(4)
+	if key_attack {comboHit=0 animFrame=0 image_index=0 anim=13}}
 	}
 	if anim=13 ///Attack Stand 4
 	{selfatk.NoKnock=0 dizzyAtk=0
-
-	if animFrame=0 PlaySound(snd_swing)
 
 	comboBreak=1
 	flashX=12
@@ -294,20 +307,29 @@ function animsetup_bahati() {
 
 	atkcol_set(27,0,47,1.85,1,36)
 
+
+
+
 	comboHit=0
 	damage=0.12
 	hit=0 MoveType=1
 	selfatk.recovery=10
-	sprite_index=spr_bahati_attack4
+	sprite_index=spr_bahati_attack5
 	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.1 else {if animFrame>3 and animFrame<4 animFrame+=0.05 else animFrame+=0.5}
+	if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
+	frame_set(0,0,0.1) if animFrame=1 PlaySound(snd_bahati11)
+	frame_set(1,1,0.1) if animFrame=2 PlaySound(snd_swing)
+	frame_set(2,2,0.5)
+	frame_set(3,3,0.05)
+	frame_set(4,0,0.1)
+
 
 if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 
 	if animFrame>4.5 {comboHit=0 hurt=0 atk=0 canmove=1 hit=0
-	}}
+	}
+	}
+	
 	if anim=14 ///Attack Stand 5 (Unused)
 	{selfatk.NoKnock=0 dizzyAtk=0
 
@@ -336,21 +358,27 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	{
 	PlaySound(snd_swing) 
 
-	if key_down ///GroundPound
-	{
-	sentflying=4*image_xscale zSpeed=-8
-	sprite_index=spr_bahati_attackair2 PlaySound(snd_bahati3)}
-	else {sprite_index=spr_bahati_attackair PlaySound(snd_bahati5)}
-	}
-
-
-
 	weaponAttack=0
 
 	comboBreak=0
 	flashX=6
 	flashY=2
 	flashZ=48
+
+	if key_down ///GroundPound
+	{
+	sentflying=4*image_xscale zSpeed=-8
+	sprite_index=spr_bahati_attackair2 PlaySound(snd_bahati3)}
+	else {
+	sprite_index=spr_bahati_attackair PlaySound(snd_bahati5)
+		if -key_left or key_right {sentflying=2*image_xscale zSpeed=-4	sprite_index=spr_bahati_attackair3 }
+		
+		
+		}
+	
+	}
+	
+
 
 	////Change your attack colission box
 
@@ -364,6 +392,15 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	else
 	weaponanim(weaponspr,weaponIndex,32,-47,90*image_xscale,weaponcolor)
 	atkcol_set(9,0,-4,1.85,1,68)
+	}
+	
+	if sprite_index=spr_bahati_attackair3
+	{ weaponBack=1  MoveType=1 damage=0.08 
+	if image_index<1
+	weaponanim(weaponspr,weaponIndex,11,-57,123*image_xscale,weaponcolor)
+	else
+	weaponanim(weaponspr,weaponIndex,5,-76,123*image_xscale,weaponcolor)
+	atkcol_set(31,0,15,2.05,1,45)
 	}
 
 	if sprite_index=spr_bahati_attackair2
@@ -379,6 +416,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 		
 		}
 	}
+	
 
 
 	hit=1
@@ -408,6 +446,16 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	atk=1
 	} else atk=0
 	}
+	
+	if sprite_index=spr_bahati_attackair3
+	{
+	if animFrame<1.5 animFrame+=0.5
+	if animFrame>1 and animFrame<1.9 
+	{
+	atk=1
+	} else atk=0
+	}
+	
 	}
  
 	 if ground 
@@ -727,7 +775,7 @@ image_index=0
 	targetID.atk=0
 	targetID.hurt=1
 	///Drag Enemy
-	if animFrame<2 targetID.targetHeightHit=targetID.GrabFrame else targetID.targetHeightHit=1
+	if animFrame<2 targetID.targetHeightHit=targetID.GrabFrame else targetID.targetHeightHit=15
 	grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale
 	targetID.depth=depth+1
 	atk=0 ///Anim End

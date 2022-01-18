@@ -1,9 +1,14 @@
 enemy_data()
 
+dizzyPercentageMax=25
+
 name="MR.SNEAK"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=6
 chardraw=draw_sneak;
+weaponBack=1;
+
+drawarms=1;
 
 walkSpeed=0.5
 rangeY=4

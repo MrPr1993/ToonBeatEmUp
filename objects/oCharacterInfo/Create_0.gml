@@ -7,6 +7,9 @@ name="VIVA"
 enemyPortraitSpr=spr_playerface
 enemyPortraitIndex=0
 
+descleft=""
+descright=""
+
 enemyscript=animsetup_viva
 specialscript=-1
 

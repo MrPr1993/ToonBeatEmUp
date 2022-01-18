@@ -309,6 +309,13 @@ frame_set(24,0,0.01)
 	}
 
 
-
-
+////Petting Animal
+	if anim=10010
+	{canmove=0 weaponanim(weaponspr,weaponIndex,2000004,-500008,90*image_xscale,weaponcolor)
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	frame_set(2,1,0.1)
+	if animFrame>2 animFrame=0
+	if !key_charge {canmove=1 anim=0}
+	}
 }

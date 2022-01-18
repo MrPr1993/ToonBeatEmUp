@@ -1,5 +1,7 @@
 enemy_data()
 
+dizzyPercentageMax=25
+
 name="MS.SWING"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=7
@@ -31,7 +33,6 @@ weapontargetHeight=2
 weapontype=0
 weaponHitType=1
 WswingSound=snd_swing3
-
 
 
 enemyscript=animsetup_swing

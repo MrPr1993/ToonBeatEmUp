@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": true,
@@ -10,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_titlescreen",
-  "duration": 1.792938,
+  "soundFile": "snd_titlescreen.wav",
+  "duration": 1.871292,
   "parent": {
     "name": "General",
     "path": "folders/f - Sounds/General.yy",

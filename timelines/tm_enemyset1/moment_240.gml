@@ -19,7 +19,7 @@ with en1
 spawnX=1288-240 ///768
 enemytype0=oEnemy1 MaxSpawnFrame=0 visible=1
 FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-enemytype1=oEnemy1
+enemytype1=oEnemy1B
 enemyMax=0
 }
 

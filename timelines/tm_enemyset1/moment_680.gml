@@ -25,7 +25,7 @@ boss.animLock=1 boss.canmove=0 boss.anim=100
 boss.image_xscale=-1
 boss.offScreenMode=0
 
-moon=instance_create_depth(3296,56,9999,oFullMoon)
+moon=instance_create_depth(3296+28-4,56,9999,oFullMoon)
 }
 
 with oPlayer

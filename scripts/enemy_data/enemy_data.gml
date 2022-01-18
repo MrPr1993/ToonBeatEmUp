@@ -103,7 +103,7 @@ function enemy_data() {
 	override_surface=noone;
 	override_pal_index=1;
 	///
-
+drawarms=0;
 	///Throw Frame Setup
 	///spritepos_setup(1,0,0,0)
 

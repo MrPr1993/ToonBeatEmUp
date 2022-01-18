@@ -3,7 +3,7 @@ if __view_get( e__VW.XView, 0 )>=2280-160
 {
 en1=instance_create(__view_get( e__VW.XView, 0 )-64,176,oEnemy1)
 en2=instance_create(__view_get( e__VW.XView, 0 )-32,192,oSneak)
-en3=instance_create(__view_get( e__VW.XView, 0 )+320+32,176,oEnemy1)
+en3=instance_create(__view_get( e__VW.XView, 0 )+320+32,176,oEnemy1B)
 en4=instance_create(__view_get( e__VW.XView, 0 )+320+64,192,oSneak) //2280
 }
 else

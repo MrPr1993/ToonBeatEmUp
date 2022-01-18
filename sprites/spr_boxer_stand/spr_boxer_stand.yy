@@ -7,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 15,
-  "bbox_right": 114,
+  "bbox_left": 13,
+  "bbox_right": 117,
   "bbox_top": 0,
   "bbox_bottom": 124,
   "HTile": false,
@@ -27,6 +27,12 @@
     {"compositeImage":{"FrameId":{"name":"b664bc5c-1c84-43ce-9c68-57f4d35674e0","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"b664bc5c-1c84-43ce-9c68-57f4d35674e0","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"LayerId":{"name":"f7761485-57fa-4c24-939d-70c882e785d2","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_boxer_stand","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","name":"b664bc5c-1c84-43ce-9c68-57f4d35674e0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"49d8ab0e-ce5d-46c2-886e-8970c500cb02","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"49d8ab0e-ce5d-46c2-886e-8970c500cb02","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"LayerId":{"name":"f7761485-57fa-4c24-939d-70c882e785d2","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_boxer_stand","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","name":"49d8ab0e-ce5d-46c2-886e-8970c500cb02","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b6686730-cf43-43c0-ae3b-a2601caeb874","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b6686730-cf43-43c0-ae3b-a2601caeb874","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"LayerId":{"name":"f7761485-57fa-4c24-939d-70c882e785d2","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_boxer_stand","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","name":"b6686730-cf43-43c0-ae3b-a2601caeb874","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_boxer_stand","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},
@@ -36,12 +42,14 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"88a2d2fd-83f9-4689-a46c-8b2b2c9580f2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b664bc5c-1c84-43ce-9c68-57f4d35674e0","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d04d3db5-5eb0-4b55-9215-d209037a1f42","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"49d8ab0e-ce5d-46c2-886e-8970c500cb02","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8a63a595-51ac-45e2-9f67-334003d5db3c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b6686730-cf43-43c0-ae3b-a2601caeb874","path":"sprites/spr_boxer_stand/spr_boxer_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

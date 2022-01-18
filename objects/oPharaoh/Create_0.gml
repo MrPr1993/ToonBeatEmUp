@@ -22,9 +22,8 @@ atkChoices=0
 
 rangeAtk=400
 
-hp=1
-maxhp=1
-hplayer=1
+hp=2
+maxhp=2
 
 StandSpr=spr_pharaoh_stand
 MoveSpr=spr_pharaoh_move
@@ -70,5 +69,5 @@ spritepos_setup(2,24,12,79)
 
 //oControl.BossHPID=self
 
-hplayer=1
+
 
