@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_goblin_stand
-MoveSpr=spr_goblin_stand
-RunSpr=spr_goblin_stand
+MoveSpr=spr_goblin_move
+RunSpr=spr_goblin_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_alienrobot_stand
-MoveSpr=spr_alienrobot_stand
-RunSpr=spr_alienrobot_stand
+MoveSpr=spr_alienrobot_move
+RunSpr=spr_alienrobot_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

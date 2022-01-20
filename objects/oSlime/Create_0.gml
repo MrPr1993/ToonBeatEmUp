@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_slime_stand
-MoveSpr=spr_slime_stand
-RunSpr=spr_skeleton_move
+MoveSpr=spr_slime_move
+RunSpr=spr_slime_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

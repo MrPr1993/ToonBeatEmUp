@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_cobra_stand
-MoveSpr=spr_cobra_stand
-RunSpr=spr_cobra_stand
+MoveSpr=spr_cobra_move
+RunSpr=spr_cobra_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

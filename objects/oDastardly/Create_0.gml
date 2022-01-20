@@ -20,9 +20,9 @@ height=70
 
 specialFX=0
 
-StandSpr=spr_dastardly_laugh
-MoveSpr=spr_dastardly_stand
-RunSpr=spr_dastardly_stand
+StandSpr=spr_dastardly_stand
+MoveSpr=spr_dastardly_move
+RunSpr=spr_dastardly_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

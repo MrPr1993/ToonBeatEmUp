@@ -239,7 +239,7 @@ if animFrame>15.5 animFrame=0
 	damage=0.04 targetHeight=2
 	if comboHit!=0 and animFrame>1.5
 	{if key_shield_pressed event_user(4)
-	if key_attack {PlaySound(snd_swing) PlaySound(snd_bahati5) comboHit=0 animFrame=0 anim=11 atk=1}}
+	if key_attack {PlaySound(snd_swing) PlaySound(snd_bahati12) comboHit=0 animFrame=0 anim=11 atk=1}}
 	selfatk.recovery=10
 	hit=0 MoveType=0
 	sprite_index=spr_bahati_attack

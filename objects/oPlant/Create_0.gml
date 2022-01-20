@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_plant_stand
-MoveSpr=spr_plant_stand
-RunSpr=spr_plant_stand
+MoveSpr=spr_plant_move
+RunSpr=spr_plant_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

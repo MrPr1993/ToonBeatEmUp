@@ -8,13 +8,13 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 50,
+  "bbox_right": 55,
   "bbox_top": 0,
   "bbox_bottom": 96,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 51,
+  "width": 56,
   "height": 97,
   "textureGroupId": {
     "name": "Default",
@@ -27,21 +27,29 @@
     {"compositeImage":{"FrameId":{"name":"d2dd489e-6649-4e56-882f-a416693b8fcc","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"d2dd489e-6649-4e56-882f-a416693b8fcc","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"LayerId":{"name":"8bb90e50-b89c-4a76-a5cf-da5a1daa667d","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_merman_stand","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","name":"d2dd489e-6649-4e56-882f-a416693b8fcc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"349ebd4e-7625-416d-8b12-a79bc996fb9c","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"349ebd4e-7625-416d-8b12-a79bc996fb9c","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"LayerId":{"name":"8bb90e50-b89c-4a76-a5cf-da5a1daa667d","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_merman_stand","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","name":"349ebd4e-7625-416d-8b12-a79bc996fb9c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4c261b84-8fd5-443a-8f99-0f686867794a","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4c261b84-8fd5-443a-8f99-0f686867794a","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"LayerId":{"name":"8bb90e50-b89c-4a76-a5cf-da5a1daa667d","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_merman_stand","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","name":"4c261b84-8fd5-443a-8f99-0f686867794a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_merman_stand","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"4d9694d9-1245-4216-a6bc-36ee51e56880","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2dd489e-6649-4e56-882f-a416693b8fcc","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c0a5f119-4293-4fb7-ac8a-8b3cc07a68b0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"349ebd4e-7625-416d-8b12-a79bc996fb9c","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"991435e5-60d3-40db-93b3-61386972295d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c261b84-8fd5-443a-8f99-0f686867794a","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

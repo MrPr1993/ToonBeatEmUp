@@ -1033,7 +1033,7 @@ weaponanim(weaponspr,weaponIndex,-31,-30,90*image_xscale,weaponcolor)
 	{hit=0 MoveType=0 weaponanim(weaponspr,weaponIndex,2,-9,45*image_xscale,weaponcolor) zAddGround=0
 	if carry=1	{if animFrame<1 item.carryZ=64-76 else item.carryZ=-8-76}
 	if animFrame<1 {sprite_index=spr_sofia_item image_index=0} else {sprite_index=spr_sofia_hammeratk image_index=0}
-		image_speed=0 atk=0 animFrame+=0.1 if animFrame>2 {hurt=0 atk=0 canmove=1 hit=0}}
+		image_speed=0 atk=0 animFrame+=0.05 if animFrame>2 {hurt=0 atk=0 canmove=1 hit=0}}
 
 	///Down Up Attack
 	if anim=80

@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_oni_stand
-MoveSpr=spr_oni_stand
-RunSpr=spr_oni_stand
+MoveSpr=spr_oni_move
+RunSpr=spr_oni_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

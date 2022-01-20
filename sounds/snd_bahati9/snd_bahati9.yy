@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": true,
@@ -10,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_bahati9",
-  "duration": 0.539063,
+  "soundFile": "snd_bahati9.wav",
+  "duration": 0.498934,
   "parent": {
     "name": "Players",
     "path": "folders/f - Sounds/Voice Clips/Players.yy",

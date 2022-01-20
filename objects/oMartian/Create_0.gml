@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_martian_stand
-MoveSpr=spr_martian_stand
-RunSpr=spr_martian_stand
+MoveSpr=spr_martian_move
+RunSpr=spr_martian_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

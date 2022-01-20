@@ -7,7 +7,7 @@ function player_throwitem() {
 	else
 	{
 	carry=0 if hurt=0 {animFrame=1 PlaySound(snd_swing)
-	anim=24 item.canGrav=0 item.attack=dropitem} else {
+	anim=24 item.canGrav=0 item.attack=dropitem item.spdZ=0} else {
 	item.ground=0 item.canGrav=1 item.spdZ=-4 item.carry=0 item.gravLandHalt=1
 	item.attack=0
 	}

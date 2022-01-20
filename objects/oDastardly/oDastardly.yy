@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_swing_stand",
-    "path": "sprites/spr_swing_stand/spr_swing_stand.yy",
+    "name": "spr_dastardly_stand",
+    "path": "sprites/spr_dastardly_stand/spr_dastardly_stand.yy",
   },
   "solid": false,
   "visible": true,

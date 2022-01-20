@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_skeleton_stand",
-    "path": "sprites/spr_skeleton_stand/spr_skeleton_stand.yy",
+    "name": "spr_slime_stand",
+    "path": "sprites/spr_slime_stand/spr_slime_stand.yy",
   },
   "solid": false,
   "visible": true,

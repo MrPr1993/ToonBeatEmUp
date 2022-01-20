@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_witch_stand
-MoveSpr=spr_witch_stand
-RunSpr=spr_witch_stand
+MoveSpr=spr_witch_move
+RunSpr=spr_witch_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

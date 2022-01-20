@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_prince_stand
-MoveSpr=spr_prince_stand
-RunSpr=spr_prince_stand
+MoveSpr=spr_prince_move
+RunSpr=spr_prince_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
