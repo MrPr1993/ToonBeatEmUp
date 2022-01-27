@@ -54,7 +54,7 @@ if isPaused=0
 
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay and room!=rm_cutscene1
-and room!=rm_map and room!=rm_chardata and room!=rm_feats
+and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
 {
 if betatest=1
 {
@@ -105,7 +105,6 @@ draw_set_font(-1)
 if superFlashFrame1!=0 superFlashFrame1-=0.25 else superFlashFrame1=2
 if superFlashFrame2!=0 superFlashFrame2-=0.25 else superFlashFrame2=2
 
-
 //draw_sprite(spr_hud,0,240,0)
 
 d3d_transform_set_identity()
@@ -114,7 +113,6 @@ d3d_transform_set_translation(-2,2,0)
 if enemyShowTime!=0
 enemyShowTime-=1 else
 if enemyID!=-1 {enemyID=-1 enemyShowTime=0}
-
 
 enemyhp=hpLerp
 
@@ -137,7 +135,6 @@ draw_rectangle(25-1,48-1,25+(enemymaxhp*45)+1,48+8+1,false)
 draw_set_color(c_red)
 draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
 }
-
 if enemyhp>=0{///HP Layers
 if enemymaxhp>1
 {
@@ -653,7 +650,7 @@ draw_text(160,184+16-4,string_hash_to_newline("HIGH SCORE"))
 
 }
 
-draw_text(160,184+24,string_hash_to_newline("©2021 MRPR1993"))
+draw_text(160,184+24,string_hash_to_newline("©2022 MRPR1993"))
 if global.Continues=-1
 draw_text(160,184+40,string_hash_to_newline("CREDIT ∞"))
 else
@@ -1245,6 +1242,7 @@ draw_set_halign(fa_left)
 charinfo_draw()
 animeditor_gui()
 settings_draw()
+draw_shop()
 
 }
 else ///PauseMode

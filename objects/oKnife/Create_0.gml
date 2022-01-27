@@ -17,7 +17,8 @@ groundAdd=-32
 HitType=0
 food=0
 weaponLife=4
-
+weaponSpin=0
+WhitDisappear=1
 
 weaponColPosX=37
 weaponColPosY=0

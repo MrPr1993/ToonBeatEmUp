@@ -49,6 +49,7 @@ function animsetup_hina() {
 	cutSpr2=spr_hina_cut2
 	SpinningSpr=spr_hina_spin
 	petSprLow=spr_hina_petlow
+	throwItemSpr=spr_hina_itemthrow
 
 	if atk=0
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
@@ -99,12 +100,20 @@ if animFrame>8 animFrame=0
 	{zAddGround=0 image_index=0
 	sprite_index=spr_hina_runatk
 
-	if weapontype=2 or weapontype=6 ////Machine Gun Stand
+	if weapontype=2 or weapontype=6 or weapontype=7 ////Machine Gun Stand
 	{
 	weaponanim(weaponspr,weaponIndex,6,-50,90*image_xscale,weaponcolor)
 	zAddGround=0 image_index=0
 	sprite_index=spr_hina_gunstand
 	}
+	
+			if weapontype=4 ////Hand Gun Stand
+	{
+	weaponanim(weaponspr,weaponIndex,17,-69,135*image_xscale,weaponcolor)
+	zAddGround=0 image_index=0
+	sprite_index=spr_hina_handgun
+	}
+	
 	}
 
 	}
@@ -210,42 +219,27 @@ if animFrame>8 animFrame=0
 
 	///Attacks
 	if anim=10 ///Attack Stand
-	{selfatk.NoKnock=0 dizzyAtk=0
+	{
+	selfatk.NoKnock=0 dizzyAtk=0
 	///Instantly Change if Carrying Object
-	if carry=1 {dropitem=1 event_user(2)}
-
-	atkcol_set(49,0,50,1.95,1,14)
-
-	weaponAttack=0
-
-	comboBreak=0
-	flashX=0
-	flashY=2
-	flashZ=32
+	if carry=1 {dropitem=1 event_user(2)} atkcol_set(49,0,50,1.95,1,14) weaponAttack=0 comboBreak=0 flashX=0 flashY=2 flashZ=32
 
 	///Change Anim from weapons
-	if weaponspawn=oHammer {
-	if weaponLife=0 and weaponIsGun=1
-	{
-	event_user(5)
-	}
-	else
-	{anim=26 exit;}
-	} 
+	if weaponspawn=oHammer {if weaponLife=0 and weaponIsGun=1{event_user(5)} else {anim=26 exit;}} 
+
 
 	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_hina3)}
-
 	damage=0.02 targetHeight=2
 	if comboHit!=0 and animFrame>1.7
-	{if key_shield_pressed event_user(4)
-	if key_attack {PlaySound(snd_swing) PlaySound(snd_hina3) comboHit=0 animFrame=0 anim=11 atk=1}}
+	{if key_shield_pressed event_user(4)////<---Here to use special instantly
+	if key_attack {comboHit=0 animFrame=0 anim=11 atk=1}}////<---Here to perform second attack
 	selfatk.recovery=10
 	hit=0 MoveType=0
 	sprite_index=spr_hina_attack
 	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,1,1.5) atk=1 else atk=0
+	 if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
 	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.16 else animFrame+=0.1 if animFrame>2.8 {hurt=0 atk=0 canmove=1 hit=0
+	animFrame+=0.2 else animFrame+=0.1 if animFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	if anim=11 ///Attack Stand 2
@@ -1070,6 +1064,8 @@ afterimage_create(4,make_colour_rgb(247,008, 33),current_pal,my_pal_sprite,0)
 	hina_weaponanim()
 
 	animsetup_hina_super()
+	
+	
 
 	///Stand
 	///Move

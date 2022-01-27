@@ -31,11 +31,27 @@ global.Continues=-1
 global.LifeStart=2
 
 global.DisplayFeats=1
+
+global.Gold=0
 }
 featicon[99]=0
 featsel=1
 featsellerp=1
 featY=0
+
+shopsel=0
+shopselX=0
+shopselY=0
+shopFrame0=0
+shopFrame0b=0
+shopFrame1=0
+shopFrame1b=0
+shopFrame2=0
+shopFrame2b=0
+shopSet=0
+shopName="LOCKED"
+shopDesc=""
+shopCost=""
 
 stagePause=0
 isCutscene=0
@@ -181,7 +197,7 @@ enemyShowTime=0
 if !variable_global_exists("timefont")
 {
 global.timefont=font_add_sprite_ext(spr_timefont, "0123456789", false, 0);
-global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄", false, 0);
+global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$", false, 0);
 }
 
 if !variable_global_exists("ScreenSize")

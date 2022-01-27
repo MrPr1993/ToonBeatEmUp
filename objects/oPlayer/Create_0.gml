@@ -3,6 +3,9 @@ controller_setup()
 
 character_setup()
 
+current_pal=0;
+my_pal_sprite=spr_playerpal
+
 areaEntry=1 ///For the player to start
 x=-64 key_right=1
 alarm[0]=90 ///Time to stop
@@ -153,3 +156,10 @@ p4=instance_create(160,208+24,oPlayer) p4.playerNO=4
 
 //spawnplayericon()
 
+if instance_number(oPlayer)=99999
+with oControl
+{
+p2=instance_create(160,208-16,oPlayer) p2.playerNO=2 p2.character=1
+p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.character=2
+p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.character=3
+}

@@ -60,9 +60,9 @@ if enemySpawn=5 {enemySpawnName="6 Bomb" spawnUnit=oBomb}
 if enemySpawn=6 {enemySpawnName="7 Knife" spawnUnit=oKnife}
 if enemySpawn=7 {enemySpawnName="8 Gun" spawnUnit=oGun}
 if enemySpawn=8 {enemySpawnName="9 Tommy Gun" spawnUnit=oTommyGun}
-if enemySpawn=9 {enemySpawnName="10 Hammer" spawnUnit=oHammer}
-if enemySpawn=10 {enemySpawnName="10 Ice Gun" spawnUnit=oIceGun}
-if enemySpawn=10 {enemySpawnName="10 Ice Gun" spawnUnit=oIceGun}
+if enemySpawn=9 {enemySpawnName="10 Shotgun" spawnUnit=oShotgun}
+if enemySpawn=10 {enemySpawnName="11 Ice Gun" spawnUnit=oIceGun}
+if enemySpawn=11 {enemySpawnName="12 Ice Gun" spawnUnit=oIceGun}
 }
 
 if spawnType="Obstacle"

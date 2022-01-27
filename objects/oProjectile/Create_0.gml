@@ -43,4 +43,4 @@ xScaleFX=1
 yScaleFX=1
 blendFX=c_white
 alphaFX=1
-
+spdZ=0

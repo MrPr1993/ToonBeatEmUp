@@ -111,6 +111,8 @@ function character_setup() {
 	weaponColScaleY=0
 	weaponColScaleZ=0
 	weaponCut=0
+	weaponSpin=1
+	WhitDisappear=0
 	armX=0
 	armY=0
 	////Weapon effects and sounds
@@ -229,6 +231,7 @@ function character_setup() {
 	petSprLow=spr_viva_petlow
 	petSprMid=spr_viva_petlow
 	petSprHigh=spr_viva_petlow
+	throwItemSpr=spr_viva_itemthrow
 	
 	hitCheck=0
 

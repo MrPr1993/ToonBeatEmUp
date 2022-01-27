@@ -72,7 +72,8 @@ function pick_item(){
 
 	HitSound=item.HitSound
 	WswingSound=item.WswingSound
-
+	WhitDisappear=item.WhitDisappear
+    weaponSpin=item.weaponSpin
 
 	}else if item.food=0 spawnID=-1
 	hp+=item.hp 

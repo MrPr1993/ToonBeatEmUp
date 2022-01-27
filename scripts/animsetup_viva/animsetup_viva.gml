@@ -46,6 +46,7 @@ function animsetup_viva() {
 	SpookyMonthSpr=spr_viva_spookymonth
 	SpinningSpr=spr_viva_spin
 	petSprLow=spr_viva_petlow
+    throwItemSpr=spr_viva_itemthrow
 
 
 	if atk=0 ///To Set default colission
@@ -105,11 +106,18 @@ if animFrame>15.5 animFrame=0
 	{zAddGround=0 image_index=0
 	sprite_index=spr_viva_grab
 
-	if weapontype=2 or weapontype=6 ////Machine Gun Stand
+	if weapontype=2 or weapontype=6 or weapontype=7 ////Machine Gun Stand
 	{
 	weaponanim(weaponspr,weaponIndex,6,-50,90*image_xscale,weaponcolor)
 	zAddGround=0 image_index=0
 	sprite_index=spr_viva_gunstand
+	}
+	
+		if weapontype=4 ////Hand Gun Stand
+	{
+	weaponanim(weaponspr,weaponIndex,17,-69,135*image_xscale,weaponcolor)
+	zAddGround=0 image_index=0
+	sprite_index=spr_viva_handgun
 	}
 
 	}

@@ -24,6 +24,7 @@ HitType=1//other.HitType
 event_user(0)
 if other.weaponIsGun=0
 other.weaponLife-=1
+
 }
 
 with other
@@ -37,9 +38,13 @@ else
 instance_destroy()}
 if isweapon=0
 event_user(0)
+
+PlaySound(HitSound)
+
+if WhitDisappear=1 instance_destroy()
 }
 
-PlaySound(other.HitSound)
+
 
 }
 }

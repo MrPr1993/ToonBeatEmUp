@@ -58,8 +58,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "1 - General Objects",
-    "path": "folders/1 - General Objects.yy",
+    "name": "6 - Player Data",
+    "path": "folders/6 - Player Data.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPlayer",

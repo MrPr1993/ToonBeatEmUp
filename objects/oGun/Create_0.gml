@@ -1,23 +1,28 @@
 item_setup()
 
-name="HAND GUN"
+name="TOMMY GUN"
 
+itemCentered=1
 hp=0
 itemname=oHammer
-itemHP=1
+itemHP=0
 isweapon=1
-weapontype=0
+weapontype=4
+weaponDamage=0.1
 isdepth=1
 zAdd=-8
 zAddGround=0
 attack=0
-damage=0.2
+damage=0.1
 atktype=0
-groundAdd=-32
-HitType=1
+groundAdd=32
+HitType=0
 food=0
 weaponExtraAngle=270
 weaponIsGun=1
+weaponLife=6
 
 PickupSound=snd_getweapon
+
+
 

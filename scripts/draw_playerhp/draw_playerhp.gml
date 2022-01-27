@@ -13,7 +13,11 @@ d3d_transform_set_translation(320-72,0,0)
 
 if hp>0
 draw_sprite_part_ext(spr_hpbar,character,0,0,32*hp,10,24,21,1,1,c_white,1)
+pal_swap_set(my_pal_sprite,current_pal,false);
 draw_sprite(spr_playerface,character,2,8)
+pal_swap_reset();
+shader_reset()
+
 draw_set_font(global.scorefont)
 if string_length(name)<=4
 draw_text(25,12,string_hash_to_newline(name))

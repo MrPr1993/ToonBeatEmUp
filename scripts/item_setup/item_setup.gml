@@ -157,7 +157,8 @@ weaponCut=0
 	WblendFX=c_white
 	WalphaFX=1
 	WswingSound=snd_swing3
-
+	weaponSpin=1
+    WhitDisappear=0
 
 	weapon_pal=0;
 	weapon_pal_sprite=spr_weaponpal

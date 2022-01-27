@@ -30,6 +30,12 @@
     {"compositeImage":{"FrameId":{"name":"683340cc-bd0d-454f-8c2f-5337d48324b9","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"683340cc-bd0d-454f-8c2f-5337d48324b9","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"LayerId":{"name":"6854aa67-e8a0-4edf-bcbc-7aba540ecee2","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_hina_gunstand","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","name":"683340cc-bd0d-454f-8c2f-5337d48324b9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"201b1307-0749-4ead-9f8b-b6526c994fa3","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"201b1307-0749-4ead-9f8b-b6526c994fa3","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"LayerId":{"name":"6854aa67-e8a0-4edf-bcbc-7aba540ecee2","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_hina_gunstand","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","name":"201b1307-0749-4ead-9f8b-b6526c994fa3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"257ddc7c-f797-4501-b147-ea5c9d872076","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"257ddc7c-f797-4501-b147-ea5c9d872076","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"LayerId":{"name":"6854aa67-e8a0-4edf-bcbc-7aba540ecee2","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_hina_gunstand","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","name":"257ddc7c-f797-4501-b147-ea5c9d872076","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_hina_gunstand","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},
@@ -39,16 +45,18 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 2.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"781bcf26-cea4-4a79-9b37-ba3ea2c9a335","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"35db1404-73f4-4f77-91a1-0914ceaf2b8b","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"60a6a7bb-4306-4b08-a74b-3bdd8f072f4c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"683340cc-bd0d-454f-8c2f-5337d48324b9","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
+            {"id":"4d8e1372-e012-4ebe-be8a-2a1346544fc8","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"201b1307-0749-4ead-9f8b-b6526c994fa3","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"713f804e-9808-4923-998e-e8a8582ed625","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"257ddc7c-f797-4501-b147-ea5c9d872076","path":"sprites/spr_hina_gunstand/spr_hina_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,

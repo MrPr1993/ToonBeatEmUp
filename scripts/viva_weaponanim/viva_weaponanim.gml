@@ -38,19 +38,24 @@ frame_set(4,3,0.1)
 	}
 	if weapontype=1
 	{
+	
 	///Knife Stab
-	if animFrame=0 PlaySound(WswingSound)
-
-	if image_index=clamp(image_index,0,0.9)
+	if animFrame=0 
+	{if weaponLife=1 {animFrame=0 anim=19930 exit;}
+		
+		
+		PlaySound(WswingSound)
+		}
+		if image_index=clamp(image_index,0,0.9)
 	weaponanim(weaponspr,weaponIndex,7,-49,0*image_xscale,weaponcolor)
 	else
 	weaponanim(weaponspr,weaponIndex,32,-51,0*image_xscale,weaponcolor)
-
 	sprite_index=spr_viva_knife
 	image_index=animFrame image_speed=0
 	if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-	animFrame+=0.2 if animFrame>2.6 {hurt=0 atk=0 canmove=1 hit=0
-	}
+	animFrame+=0.2 if animFrame>2.6 {hurt=0 atk=0 canmove=1 hit=0}
+	
+	
 	}
 	///Machine Gun Fire
 	if weapontype=2 or weapontype=3
@@ -68,9 +73,31 @@ frame_set(4,3,0.1)
 	else weaponanim(weaponspr,weaponIndex,6-1,-50,90*image_xscale,weaponcolor)
 	if image_index<2 image_index+=0.5 else image_index=0
 	animFrame+=0.2 if animFrame>4 {hurt=0 atk=0 canmove=1 hit=0} atk=0
-	
 	}
 	
+		///Hand Gun Fire
+	if weapontype=4
+	{
+	if animFrame=0 {
+		if -key_left image_xscale=-1 if key_right image_xscale=1
+		weaponLife-=1 PlaySound(snd_gun)
+		
+	flashFX(x+38*image_xscale,y,z-50,spr_gunflash,0,1,0,1,1,c_white,1)
+	projectile_create(x+38*image_xscale,y,z-50,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	}
+		sprite_index=spr_viva_handgun
+	
+	frame_set(0,1,0.25)
+	frame_set(1,2,0.1)
+	frame_set(2,2,0.25) if animFrame>2 {hurt=0 atk=0 canmove=1 hit=0}
+	
+	if image_index<2 weaponanim(weaponspr,weaponIndex,23,-44,90*image_xscale,weaponcolor)
+	else {weaponanim(weaponspr,weaponIndex,22,-70,135*image_xscale,weaponcolor)
+	if key_attack if weaponLife!=0 animFrame=0	
+	}
+	}
+
+
 		///Ice Gun Fire
 	if weapontype=6
 	{MoveType=weaponHitType
@@ -85,6 +112,38 @@ frame_set(4,3,0.1)
 		if image_index<1 weaponanim(weaponspr,weaponIndex,6,-50,90*image_xscale,weaponcolor)
 	else weaponanim(weaponspr,weaponIndex,6-1,-50,90*image_xscale,weaponcolor)
 	animFrame+=0.2 if animFrame>4 {hurt=0 atk=0 canmove=1 hit=0}
+	}
+	///Shotgun Fire
+	if weapontype=7
+	{atkcol_set(50,0,22,3.35,1,49)
+	
+	selfatk.recovery=10
+	hit=0 selfatk.MoveType=1 selfatk.HitType=1 selfatk.damage=0.25
+		selfatk.HitSound=-1 selfatk.spriteFX=spr_nospace
+		
+	if animFrame=0 weaponLife-=1
+	if animFrame=0 
+	{ atk=1
+	PlaySoundNoStack(snd_shotgun)
+	flashFX(x+42*image_xscale,y,z-57,spr_shotgunfx,0,1,0,image_xscale,1,c_white,1)
+	}
+	if animFrame=0.25
+	{
+	projectile_create(x+42*image_xscale,y,z-57,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
+	projectile_create(x+42*image_xscale,y,z-57,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
+	projectile.spdZ=-2
+	projectile_create(x+42*image_xscale,y,z-57,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
+	projectile.spdZ=2
+	}	
+	sprite_index=spr_viva_gunstand if animFrame<1 atk=1 else atk=0
+	frame_set(0,2,0.25)
+	frame_set(1,1,0.25)	
+	frame_set(2,3,0.1)
+	frame_set(3,0,0.1) 
+	
+	if image_index<1 weaponanim(weaponspr,weaponIndex,6,-50,90*image_xscale,weaponcolor)
+	else weaponanim(weaponspr,weaponIndex,6-1,-50,90*image_xscale,weaponcolor)
+	if animFrame>3.9 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 	
 	}

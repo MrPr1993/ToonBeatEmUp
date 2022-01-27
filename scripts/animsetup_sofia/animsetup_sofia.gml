@@ -54,6 +54,7 @@ function animsetup_sofia() {
 	cutSpr2=spr_sofia_cut2
 	SpinningSpr=spr_sofia_spin
 	petSprLow=spr_sofia_petlow
+	throwItemSpr=spr_sofia_itemthrow
 
 	if atk=0
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
@@ -109,12 +110,20 @@ if animFrame>15.5 animFrame=0
 	{zAddGround=0 image_index=0
 	sprite_index=spr_sofia_grab
 
-	if weapontype=2 or weapontype=6////Machine Gun Stand
+	if weapontype=2 or weapontype=6 or weapontype=7////Machine Gun Stand
 	{
 	weaponanim(weaponspr,weaponIndex,6,-50+13,90*image_xscale,weaponcolor)
 	zAddGround=0 image_index=0
 	sprite_index=spr_sofia_gunstand
 	}
+	
+	if weapontype=4 ////Hand Gun Stand
+	{
+	weaponanim(weaponspr,weaponIndex,17,-69+10,135*image_xscale,weaponcolor)
+	zAddGround=0 image_index=0
+	sprite_index=spr_sofia_handgun
+	}
+	
 	}
 
 
@@ -217,37 +226,21 @@ if animFrame>15.5 animFrame=0
 	}
 
 	///Attacks
-	///Attacks
 	if anim=10 ///Attack Stand
-	{selfatk.NoKnock=0 dizzyAtk=0
+	{
+	selfatk.NoKnock=0 dizzyAtk=0
 	///Instantly Change if Carrying Object
-	if carry=1 {dropitem=1 event_user(2)}
-
-	atkcol_set(34,0,26,1.55,1,30)
-
-	weaponAttack=0
-
-	comboBreak=0
-	flashX=0
-	flashY=2
-	flashZ=32
+	if carry=1 {dropitem=1 event_user(2)} atkcol_set(34,0,26,1.55,1,30) weaponAttack=0 comboBreak=0 flashX=0 flashY=2 flashZ=32
 
 	///Change Anim from weapons
-	if weaponspawn=oHammer {
-	if weaponLife=0 and weaponIsGun=1
-	{
-	event_user(5)
-	}
-	else
-	{anim=26 exit;}
-	}
+	if weaponspawn=oHammer {if weaponLife=0 and weaponIsGun=1{event_user(5)} else {anim=26 exit;}} 
+
 
 	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_sofia3)}
-
-	damage=0.02 targetHeight=0
+	damage=0.02 targetHeight=2
 	if comboHit!=0 and animFrame>2
-	{if key_shield_pressed event_user(4)
-	{comboHit=0 animFrame=0 anim=11 atk=1}}
+	{if key_shield_pressed event_user(4)////<---Here to use special instantly
+	{comboHit=0 animFrame=0 anim=11 atk=1}}////<---Here to perform second attack
 	selfatk.recovery=5
 	hit=0 MoveType=0
 	sprite_index=spr_sofia_attack
