@@ -168,7 +168,7 @@ with oEnemy1 {HitType=590068 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 }
 
 ///Switch palette
-if keyboard_check_pressed(ord("5"))///Immune
+if keyboard_check_pressed(ord("5"))//Palette Swap
 {if keyboard_check(vk_control)
 current_pal-=1;
 else current_pal+=1;

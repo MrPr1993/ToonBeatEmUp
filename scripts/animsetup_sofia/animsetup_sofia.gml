@@ -1120,6 +1120,37 @@ if animFrame>3
 	if animFrame>3 if ground {hurt=1 canmove=0 animFrame=0 anim=25}
 	}
 	
+	/////Respawn
+		if anim=255
+{sprite_index=spr_sofia_respawn
+
+if animFrame=0
+{
+oControl.quakeFXTime=10
+wnd=instance_create_depth(x-320*image_xscale,y,depth,oAnimFX) wnd.alarm[0]=9999 wnd.canEnd=0
+wnd.sprite_index=spr_sofia_respawnwind wnd.image_speed=0.5
+}
+frame_set(0,0,0.025)
+
+if animFrame=clamp(animFrame,0.25,1-0.25) {wnd.x=lerp(wnd.x,x,0.25)}
+
+if animFrame=1 {with wnd instance_destroy() oControl.quakeFXTime=10
+	PlaySoundNoStack(snd_swing5)
+	PlaySound(ReturnVoice) enemy_knoockdown() visible=1 dead=0 hurt=0 DeathCryOnce=0}
+frame_set(1,0,0.25)
+frame_set(2,1,0.25)
+frame_set(3,2,0.25)
+frame_set(4,3,0.1)
+frame_set(5,4,0.05)
+if animFrame>5.8
+{hurt=0 atk=0 canmove=1 hit=0 disappearTime=90 canmove=1 recovery=180
+alarm[4]=2
+if visible=0 visible=1 else visible=0
+disappearTime-=1
+	
+}
+}
+	
 	sofia_weaponanim()
 
 	animsetup_sofia_super()

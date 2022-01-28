@@ -1220,6 +1220,67 @@ if animFrame>2.5 {image_index=3 animFrame+=0.25}
 	if animFrame>11.75 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 
+/////Respawn
+		if anim=255
+{sprite_index=spr_bahati_respawn
+
+frame_set(0,0,0.025)
+
+if animFrame=0.25
+{
+ oControl.quakeFXTime=10
+	PlaySoundNoStack(snd_explosion)
+	
+st=instance_create_depth(x,y,depth,oAnimFX) st.sprite_index=spr_bahati_respawn
+st.image_speed=0.5
+}
+if animFrame=0.6 st.image_speed=0
+
+
+frame_set(1,0,0.25)
+if animFrame=1.5 st.image_index=4
+
+if animFrame=2 {with st instance_destroy()
+ oControl.quakeFXTime=10
+	PlaySoundNoStack(snd_explosion)
+					iceFX=0;
+								
+		repeat(8)
+{
+part=instance_create_depth(x,y+1,depth,oDisappearPart)
+if iceFX=0 or iceFX=1 or iceFX=2 or iceFX=3 part.x=x
+if iceFX=4 or iceFX=5 or iceFX=6 or iceFX=7 part.x=x
+if iceFX=0 or iceFX=4 part.z=z-16
+if iceFX=1 or iceFX=5 part.z=z-48
+if iceFX=2 or iceFX=6 part.z=z-64
+if iceFX=3 or iceFX=7 part.z=z-80
+part.sprite_index=spr_bahati_rock3
+if iceFX <4
+part.hspeed=choose(-1,-2,-1.5)
+else
+part.hspeed=choose(1,2,1.5)
+part.image_index=choose(0,1,2) part.image_speed=0
+part.spdZ=-4 part.image_blend=image_blend
+part.disappeartime=random_range(16,24)
+part.my_pal_sprite=my_pal_sprite
+part.current_pal=current_pal
+	iceFX+=1;
+} iceFX=0; enemy_knoockdown() dead=0 hurt=0 DeathCryOnce=0
+	PlaySound(ReturnVoice) visible=1
+	}
+frame_set(2,5,0.25) 
+frame_set(3,5,0.25)
+frame_set(4,6,0.1)
+frame_set(5,6,0.05)
+if animFrame>5.8
+{hurt=0 atk=0 canmove=1 hit=0 disappearTime=90 canmove=1 recovery=180
+alarm[4]=2
+if visible=0 visible=1 else visible=0
+disappearTime-=1
+	
+}
+}
+
 	bahati_weaponanim()
 
 	animsetup_bahati_super()

@@ -1,5 +1,6 @@
 isDepth=1
 z=0
+zSpeed=0
 
 SourceHit=-1
 DeleteIfSourceHit=0

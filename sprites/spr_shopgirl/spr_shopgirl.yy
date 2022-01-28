@@ -25,13 +25,13 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"866e19f6-e4bc-47cd-b6c0-a89a23d69d44","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"866e19f6-e4bc-47cd-b6c0-a89a23d69d44","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":{"name":"835002e0-c3aa-4145-92b5-d15dc16d08d8","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"866e19f6-e4bc-47cd-b6c0-a89a23d69d44","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":{"name":"8209cdd7-a246-4350-b461-e202dd1ff48f","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_shopgirl","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"866e19f6-e4bc-47cd-b6c0-a89a23d69d44","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"72e324e4-6f1d-437e-85a6-6e2ff102a776","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"72e324e4-6f1d-437e-85a6-6e2ff102a776","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":{"name":"835002e0-c3aa-4145-92b5-d15dc16d08d8","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"72e324e4-6f1d-437e-85a6-6e2ff102a776","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":{"name":"8209cdd7-a246-4350-b461-e202dd1ff48f","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_shopgirl","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"72e324e4-6f1d-437e-85a6-6e2ff102a776","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"cc152600-17c1-4eec-a09c-d817d7f0aad4","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cc152600-17c1-4eec-a09c-d817d7f0aad4","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":{"name":"835002e0-c3aa-4145-92b5-d15dc16d08d8","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"cc152600-17c1-4eec-a09c-d817d7f0aad4","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"LayerId":{"name":"8209cdd7-a246-4350-b461-e202dd1ff48f","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_shopgirl","path":"sprites/spr_shopgirl/spr_shopgirl.yy",},"resourceVersion":"1.0","name":"cc152600-17c1-4eec-a09c-d817d7f0aad4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -73,7 +73,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"835002e0-c3aa-4145-92b5-d15dc16d08d8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2)","resourceVersion":"1.0","name":"8209cdd7-a246-4350-b461-e202dd1ff48f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
