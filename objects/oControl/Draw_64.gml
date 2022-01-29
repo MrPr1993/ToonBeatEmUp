@@ -603,7 +603,7 @@ if titleShow=1
 {draw_set_color(c_white) titleImg+=0.1
 draw_sprite_ext(spr_gametitle,titleImg,160,round(titlescreenY),1,1,0,c_white,1)
 draw_set_alpha(titleSquareFX) titleSquareFX-=0.02 if titleSquareFX=0.02 if global.MenuSkip=0
-PlaySound(choose(snd_titlescreen,snd_titlescreen2,snd_titlescreen3))
+PlaySound(choose(snd_titlescreen,snd_titlescreen2,snd_titlescreen3,snd_titlescreen4))
 if noWhite=0
 draw_rectangle(-4,-4,340,260,false)
 

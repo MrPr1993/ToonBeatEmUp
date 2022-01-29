@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_sofia1",
-  "duration": 0.824313,
+  "soundFile": "snd_sofia1.wav",
+  "duration": 0.807098,
   "parent": {
     "name": "Players",
     "path": "folders/f - Sounds/Voice Clips/Players.yy",

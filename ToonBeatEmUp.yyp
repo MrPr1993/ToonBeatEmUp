@@ -348,6 +348,7 @@
     {"id":{"name":"spr_sneak_flat","path":"sprites/spr_sneak_flat/spr_sneak_flat.yy",},"order":5,},
     {"id":{"name":"spr_sneak_frozen","path":"sprites/spr_sneak_frozen/spr_sneak_frozen.yy",},"order":6,},
     {"id":{"name":"spr_sneak_grab","path":"sprites/spr_sneak_grab/spr_sneak_grab.yy",},"order":7,},
+    {"id":{"name":"snd_titlescreen4","path":"sounds/snd_titlescreen4/snd_titlescreen4.yy",},"order":22,},
     {"id":{"name":"spr_sneak_grab2","path":"sprites/spr_sneak_grab2/spr_sneak_grab2.yy",},"order":8,},
     {"id":{"name":"spr_sneak_hit","path":"sprites/spr_sneak_hit/spr_sneak_hit.yy",},"order":9,},
     {"id":{"name":"spr_sneak_move","path":"sprites/spr_sneak_move/spr_sneak_move.yy",},"order":10,},
