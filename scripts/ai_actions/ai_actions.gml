@@ -57,13 +57,13 @@ function ai_actions() {	alarmCheck1=alarm[1]
 
 
 	if AIchoose=1 
-	if ground
+	if ground or atkAir=1
 	{
 	ground=0
 	zSpeed=-16
 	}
 
-	if ground
+	if ground or atkAir=1
 	{
 	if x<__view_get( e__VW.XView, 0 )+16 {key_right=1 key_left=0}
 	if x>__view_get( e__VW.XView, 0 )+320-16 {key_left=-1 key_right=0}

@@ -88,9 +88,7 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 	{
 	if zSpeed<4 zSpeed+=0.4
 	if z>0 {
-if fallHole=0 if place_meeting(x,y,oFallHole) {fallHole=1 ground=0 canmove=0 atk=0 hurt=1 hp=0 dead=1 sentflying=sentflying alarm[2]=60 exit;
-	}	
-		
+	
 		
 	
 		
@@ -101,12 +99,7 @@ if fallHole=0 if place_meeting(x,y,oFallHole) {fallHole=1 ground=0 canmove=0 atk
 	}
 	else
 	{
-	if fallHole=0 if place_meeting(x,y,oFallHole) {
-		
-		if hurt=0 {animFrame=0 anim=2}
-		if anim=7 {animFrame=0 anim=5 }
-		
-		zSpeed=4 fallHole=1 ground=0 canmove=0 atk=0 hurt=1 hp=0 dead=1 alarm[2]=60 exit;}	
+
 	
 	if hurt=1 { dashing=0 doubledash=0}
 	sentflying=0

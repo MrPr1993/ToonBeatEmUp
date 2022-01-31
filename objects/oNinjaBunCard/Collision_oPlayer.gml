@@ -8,10 +8,14 @@ with other
 {
 if other.immune=0 and other.hurt=0 and other.recovery=0 and other.Throw=0
 {
+other.HitType=HitType	
+other.hp-=damage
+PlaySoundNoStack(HitSound)
 with other
-{PlaySoundNoStack(snd_cut) flashFX(x-8*image_xscale,y+2,z-32,spr_blood,0,1,10,1,1,c_white,1)
-HitType=1 event_user(0) recovery=10 dizzyHit=0 hp-=0.1
+{ flashFX(x-8*image_xscale,y+2,z-32,other.HitSpark,0,1,10,1,1,c_white,1)
+event_user(0) recovery=10 dizzyHit=0 
 }
+if disappearHit=1
 instance_destroy()
 }
 }

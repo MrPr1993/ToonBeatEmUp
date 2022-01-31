@@ -50,6 +50,10 @@ function character_setup() {
 	z=0
 	zSpeed=0
 	ground=1
+	noHitFall=0
+	hover=0
+	hoverZ=0
+	atkAir=0
 	fallHole=0
 	wallCheck=0
 	ThrowDamage=0

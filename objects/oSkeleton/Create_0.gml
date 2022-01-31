@@ -20,6 +20,8 @@ height=70
 
 specialFX=0
 
+rangeAtk=320
+
 StandSpr=spr_skeleton_stand
 MoveSpr=spr_skeleton_move
 RunSpr=spr_skeleton_move

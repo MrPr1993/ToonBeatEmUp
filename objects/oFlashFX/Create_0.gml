@@ -10,6 +10,8 @@ isDepth=1
 
 animEnd=1
 
+xSpeed=0
+ySpeed=0
 zSpeed=0
 
 image_speed=0.5

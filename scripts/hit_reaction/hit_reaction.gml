@@ -53,7 +53,7 @@ if hp<=0
 	if damageFall>=0
 	{///Hit Ground
 	if HitType=1 ground=0
-	if ground 
+	if ground or noHitFall=1
 	{canBounce=0
 	thrownDMG=0
 	if hitBack=0
@@ -63,18 +63,28 @@ if hp<=0
 	animFrame=0
 	anim=4
 	}}
-	else ground=0
-
-	if !ground ///Hit Air
+	else
+///Hit Air
 	{event_user(1) canBounce=1
+		ground=0
 	zSpeed=-4
-
 	if hitBack=0
 	sentflying=4*-image_xscale
 	else
 	sentflying=4*image_xscale
+	image_index=3 sprite_index=ThrownSpr
+	animFrame=3
+	anim=5
+	exit;
+	}
 
-
+	if !ground and noHitFall=0 ///Hit Air
+	{event_user(1) canBounce=1
+	zSpeed=-4
+	if hitBack=0
+	sentflying=4*-image_xscale
+	else
+	sentflying=4*image_xscale
 	image_index=3 sprite_index=ThrownSpr
 	animFrame=3
 	anim=5

@@ -3,20 +3,7 @@ if automove=0
 {
 controller_setup()
 }
-else
-{
-if distance_to_point(automoveX,automoveY)>automoveDist
-{doubledash=automoveDash
-if x>automoveX {key_right=0; key_left=-1}
-else {key_right=1; key_left=0}
-if y>automoveY {key_up=1; key_down=0}
-else {key_up=0; key_down=1}
 
-if x=clamp(y,automoveX-6,automoveX+6) {key_left=0 key_right=0}
-if y=clamp(y,automoveY-6,automoveY+6) {key_up=0 key_down=0}
-
-}else {key_left=0 key_right=0 key_up=0 key_down=0 automove=0 doubledash=0 image_xscale=automoveFace}
-}
 
 if oControl.betatest=1
 {if keyboard_check_pressed(vk_backspace)
@@ -169,4 +156,18 @@ throw_command(instance_nearest(x,y,oEnemy1),24*image_xscale,0,0,GrabFrame,30,1)
 }
 
 
+if automove
+{
+if distance_to_point(automoveX,automoveY)>automoveDist
+{doubledash=automoveDash
+if x>automoveX {key_right=0; key_left=-1}
+else {key_right=1; key_left=0}
 
+if y>automoveY {key_up=1; key_down=0}
+else {key_up=0; key_down=1}
+
+if x=clamp(x,automoveX-2,automoveX+2) {x=automoveX key_left=0 key_right=0 image_xscale=automoveFace}
+if y=clamp(y,automoveY-2,automoveY+2) {y=automoveY key_up=0 key_down=0}
+
+}else {key_left=0 key_right=0 key_up=0 key_down=0 automove=0 doubledash=0 image_xscale=automoveFace}
+}

@@ -32,7 +32,7 @@ function enemy_step() {
 	if keyboard_check_pressed(vk_tab)
 	if canmove {
 
-	if x>oPlayer.x image_xscale=-1 else image_xscale=1
+	if x>targetEnemy.x image_xscale=-1 else image_xscale=1
 
 	canmove=0 animFrame=0 anim=10}
 	}

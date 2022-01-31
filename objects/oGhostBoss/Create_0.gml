@@ -9,6 +9,23 @@ chardraw=ghost_effect
 ghostAlpha=1
 ghostSet=100
 
+atkAir=1
+noHitFall=1
+
+walkSpeed=0.5
+rangeY=4
+rangeAtk=320
+RunMoveSpeedDecrease=0.2
+
+hp=2
+maxhp=2
+
+height=100
+
+hover=1
+hoverZ=0
+
+
 //weaponanim(weaponspr,weaponIndex,10,-90,0*image_xscale,weaponcolor)
 
 hasHead=1
@@ -20,6 +37,10 @@ headAngle=0
 
 headRespawn=0
 
+overwriteAttack=1
+overwriteAttack2=1
+overwriteAttack3=1
+overwriteAttack4=1
 
 pointshit=10
 points=100
