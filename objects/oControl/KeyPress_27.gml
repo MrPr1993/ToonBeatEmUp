@@ -1,6 +1,9 @@
 if continueScreen=0
 if room=rm_chardata or room=rm_map or room=rm_hiscore or room=rm_characterselect or room=rm_feats or room=rm_shop
 {global.MenuSkip=1
+if rm_characterselect and p1Select=1
+{PlaySound(snd_select) p1selFrame=0 alarm[4]=-1 p1Select=0 exit;}
+
 room=rm_titlescreen
 }
 else

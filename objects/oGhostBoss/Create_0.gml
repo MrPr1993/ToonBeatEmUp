@@ -34,6 +34,7 @@ GheadY=-90
 headSpr=spr_ghost_head
 headInd=0
 headAngle=0
+headFront=1
 
 headRespawn=0
 

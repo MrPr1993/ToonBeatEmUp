@@ -726,40 +726,42 @@ if global.P1Char=3 global.P1Char=0 else
 global.P1Char+=1}
 }
 
-draw_sprite(spr_characterselect,0,0,53)
-draw_sprite(spr_characterselect,1,80,53)
-draw_sprite(spr_characterselect,2,160,53)
-draw_sprite(spr_characterselect,3,240,53)
+draw_sprite(spr_csviva,0,0,53)
+draw_sprite(spr_cshina,0,80,53)
+draw_sprite(spr_csbahati,0,160,53)
+draw_sprite(spr_cssofia,0,240,53)
 
 if p1Select=1
-{if global.P1Char=0
-draw_sprite(spr_characterselect,6,0,53)
+{
+if p1selFrame<3 if p1selFrame<1 p1selFrame+=0.05 else p1selFrame+=0.2
+if global.P1Char=0
+draw_sprite(spr_csviva,1+p1selFrame,0,53)
 if global.P1Char=1
-draw_sprite(spr_characterselect,7,80,53)
+draw_sprite(spr_cshina,1+p1selFrame,80,53)
 if global.P1Char=2
-draw_sprite(spr_characterselect,8,160,53)
+draw_sprite(spr_csbahati,1+p1selFrame,160,53)
 if global.P1Char=3
-draw_sprite(spr_characterselect,9,240,53)
+draw_sprite(spr_cssofia,1+p1selFrame,240,53)
 }
 
 if charSelectFlash!=0
 {
 shader_set(shd_white_sprite)
 if global.P1Char=0
-draw_sprite(spr_characterselect,5,0,53)
+draw_sprite(spr_characterselect,1,0,53)
 if global.P1Char=1
-draw_sprite(spr_characterselect,5,80,53)
+draw_sprite(spr_characterselect,1,80,53)
 if global.P1Char=2
-draw_sprite(spr_characterselect,5,160,53)
+draw_sprite(spr_characterselect,1,160,53)
 if global.P1Char=3
-draw_sprite(spr_characterselect,5,240,53)
+draw_sprite(spr_characterselect,1,240,53)
 shader_reset()
 }
 
 if p1Select=1 {if p1Flicker<0 p1Flicker=2 else p1Flicker-=0.5}
 {
 
-if alarm[4]=90
+if alarm[4]=90+80
 {
 if global.P1Char=0 PlaySound(snd_viva1)
 if global.P1Char=1 PlaySound(snd_hina1)
@@ -770,34 +772,34 @@ if global.P1Char=3 PlaySound(snd_sofia1)
 
 if global.P1Char=0 {
 if p1Flicker<1
-draw_sprite(spr_characterselect,4,0,53)
+draw_sprite(spr_characterselect,0,0,53)
 //draw_sprite_ext(spr_characterselect,5,0,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,80,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,160,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,240,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,80,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,160,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,240,53,1,1,0,0,0.5)
 }
 if global.P1Char=1 {
 if p1Flicker<1
-draw_sprite(spr_characterselect,4,80,53)
-draw_sprite_ext(spr_characterselect,5,0,53,1,1,0,0,0.5)
+draw_sprite(spr_characterselect,0,80,53)
+draw_sprite_ext(spr_characterselect,1,0,53,1,1,0,0,0.5)
 //draw_sprite_ext(spr_characterselect,5,80,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,160,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,240,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,160,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,240,53,1,1,0,0,0.5)
 }
 if global.P1Char=2 {
 if p1Flicker<1
-draw_sprite(spr_characterselect,4,160,53)
-draw_sprite_ext(spr_characterselect,5,0,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,80,53,1,1,0,0,0.5)
+draw_sprite(spr_characterselect,0,160,53)
+draw_sprite_ext(spr_characterselect,1,0,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,80,53,1,1,0,0,0.5)
 //draw_sprite_ext(spr_characterselect,5,160,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,240,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,240,53,1,1,0,0,0.5)
 }
 if global.P1Char=3 {
 if p1Flicker<1
-draw_sprite(spr_characterselect,4,240,53)
-draw_sprite_ext(spr_characterselect,5,0,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,80,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,5,160,53,1,1,0,0,0.5)
+draw_sprite(spr_characterselect,0,240,53)
+draw_sprite_ext(spr_characterselect,1,0,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,80,53,1,1,0,0,0.5)
+draw_sprite_ext(spr_characterselect,1,160,53,1,1,0,0,0.5)
 ///draw_sprite_ext(spr_characterselect,5,240,53,1,1,0,0,0.5)
 }
 }
@@ -862,7 +864,7 @@ if key_attack or keyboard_check_pressed(vk_enter) or charSelForceSelect=1
 if p1Select=0///Select Character
 {PlaySound(snd_picked) charSelectFlash=1
 p1Select=1
-alarm[4]=120
+alarm[4]=200
 }}
 
 draw_set_color(c_white) draw_set_alpha(1)

@@ -92,6 +92,10 @@ p1Select=0
 p2Flicker=0
 p2Select=0
 
+p1selFrame=0
+p2selFrame=0
+p3selFrame=0
+p4selFrame=0
 
 
 ////Screen Effect for Intro

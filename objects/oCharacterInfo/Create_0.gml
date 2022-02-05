@@ -17,6 +17,7 @@ canControl=1
 
 x+=8
 
+headFront=1
 ghostSet=100
 ghostAlpha=1
 hasHead=1

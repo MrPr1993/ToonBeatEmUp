@@ -9,9 +9,13 @@ pal_swap_set(my_pal_sprite,current_pal,false);
 ghostSet-=1 if ghostSet=0 {ghostSet=100 if ghostAlpha=1 ghostAlpha=-1 else ghostAlpha=1}
 if ghostAlpha=1 image_alpha=lerp(image_alpha,0.5,0.01) else image_alpha=lerp(image_alpha,1,0.01)
 
+if hasHead=1 and headFront=0
+draw_sprite_ext(headSpr,headInd,round(x+(GheadX+(floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+(+floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+GheadY),image_xscale,image_yscale,headAngle*image_xscale,image_blend,image_alpha)
+
+
 draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 
-if hasHead=1
+if hasHead=1 and headFront=1
 draw_sprite_ext(headSpr,headInd,round(x+(GheadX+(floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+(+floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+GheadY),image_xscale,image_yscale,headAngle*image_xscale,image_blend,image_alpha)
 
 
