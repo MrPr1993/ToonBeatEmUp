@@ -16,8 +16,8 @@ rangeAtk=300
 
 OneAttack=2
 
-hp=0.4
-maxhp=0.4
+hp=0.25
+maxhp=0.25
 
 //walkSpeed=
 

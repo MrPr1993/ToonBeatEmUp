@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"bg_sky2","path":"sprites/bg_sky2/bg_sky2.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "bg_sky2",
     "tags": [],
     "resourceType": "GMSequence",
   },

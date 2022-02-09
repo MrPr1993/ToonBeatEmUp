@@ -1,10 +1,16 @@
 enemy_data()
 
-name="SNEK"
+name="ASPA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=24
 
-enemyscript=animsetup_enemy
+enemyscript=animsetup_zombie
+
+pointshit=10
+points=100
+
+walkSpeed=0.5
+walkSpeedY=0.5
 
 pointshit=10
 points=100

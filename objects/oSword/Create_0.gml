@@ -20,6 +20,7 @@ groundAdd=-32
 HitType=1
 food=0
 
+
 weaponCut=1
 
 weaponLife=12

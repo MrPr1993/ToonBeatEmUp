@@ -134,7 +134,7 @@ if overwriteAttack=1
 if weaponspr!=-1
 {
 weaponBack=1 dizzyAtk=stunWeapon
-damage=weaponDamage targetHeight=weapontargetHeight isCut=weaponCut
+damage=weaponDamage targetHeight=weapontargetHeight selfatk.isCut=weaponCut
 selfatk.recovery=10 
 hit=0 MoveType=weaponHitType
 atkcol_set(weaponColPosX,weaponColPosY,weaponColPosZ,weaponColScaleX,weaponColScaleY,weaponColScaleZ)

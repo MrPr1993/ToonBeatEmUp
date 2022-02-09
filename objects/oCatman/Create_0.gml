@@ -1,6 +1,6 @@
 enemy_data()
 
-name="CATMAN"
+name="MAU"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=12
 

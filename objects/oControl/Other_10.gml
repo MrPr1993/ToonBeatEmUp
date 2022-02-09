@@ -37,7 +37,7 @@ if enemySpawn=24 {enemySpawnName="24 Goblin" spawnUnit=oGoblin}
 if enemySpawn=25 {enemySpawnName="25 Alien Robot" spawnUnit=oAlienRobot}
 if enemySpawn=26 {enemySpawnName="26 Cobra" spawnUnit=oCobra}
 if enemySpawn=27 {enemySpawnName="27 Plant" spawnUnit=oPlant}
-//if enemySpawn=28 {enemySpawnName="28 Skeleton" spawnUnit=oSkeleton}
+if enemySpawn=28 {enemySpawnName="28 Animated Object" spawnUnit=oAnimatedObject}
 //if enemySpawn=29 {enemySpawnName="29 Skeleton" spawnUnit=oSkeleton}
 if enemySpawn=29 {enemySpawnName="29 Lady Wolf, Human" spawnUnit=oBoss1a}
 if enemySpawn=30 {enemySpawnName="30 Lady Wolf" spawnUnit=oBoss1}

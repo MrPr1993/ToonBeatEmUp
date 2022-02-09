@@ -38,7 +38,7 @@ if hp<=0
 	event_user(1) canBounce=1
 	hurt=1
 	ground=0
-	zSpeed=-8
+	zSpeed=-8 
 	if hitBack=0
 	sentflying=4*-image_xscale
 	else

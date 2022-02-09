@@ -8,7 +8,24 @@ overwriteAttack2=1
 
 if anim=10
 {
+if distance_to_point(targetEnemy.x,targetEnemy.y)>80
 anim=12
+else
+anim=11
+}
+
+//Swing Attack
+if anim=11 ///Attack Stand
+{ hit=0  sprite_index=spr_zombiew_attack
+atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.05
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,1,0.1)
+frame_set(3,1,0.25) 
+frame_set(4,2,0.1) if animFrame=clamp(animFrame,3,4) {atk=1 sentflying=4*image_xscale} else {atk=0 sentflying=0}
+frame_set(5,3,0.25)
+frame_set(6,0,0.25)
+if animFrame>6.75 {canmove=1}
 }
 
 ///Vomit Attack
