@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": true,
@@ -10,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_wolfita7",
-  "duration": 0.583333,
+  "soundFile": "snd_wolfita7.wav",
+  "duration": 0.501202,
   "parent": {
     "name": "Lady Wolf",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Lady Wolf.yy",

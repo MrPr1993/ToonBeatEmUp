@@ -19,11 +19,16 @@ if (z-height)<(other.z) and (z)>(other.z-other.height)
 {
 hp-=other.damage*6
 
+if hp<=0 PlaySound(snd_ant3) else PlaySound(snd_ant2)
+
 shaketime=30
 
 recovery=90
 
 PlaySoundNoStack(snd_hit)
+
+
+
 if other.hitSource.x>x image_xscale=1 else image_xscale=-1
 
 	oControl.showhp=1

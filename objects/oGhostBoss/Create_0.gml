@@ -5,6 +5,12 @@ enemyPortraitIndex=17
 
 enemyscript=animsetup_enemy
 
+	DeathCry=snd_ant1//snd_deathcry2
+	HitGround=snd_hitground
+	DamageVoice1=snd_ant2
+	DamageVoice2=snd_ant2
+	DamageVoice3=snd_ant2
+
 chardraw=ghost_effect
 ghostAlpha=1
 ghostSet=100
@@ -50,10 +56,7 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=1.0
-maxhp=1.0
-
-height=70
+height=90
 
 specialFX=0
 

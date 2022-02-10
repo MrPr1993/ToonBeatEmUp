@@ -69,7 +69,7 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
 frame_set(3,3,0.025) if animFrame=4
-{
+{PlaySound(snd_ant4) PlaySound(snd_flame)
 card=instance_create_depth(x+32*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 card.sprite_index=spr_headproj
 card.z=z card.image_xscale=image_xscale card.disappearHit=0 card.image_alpha=0.75 card.damage=0.1

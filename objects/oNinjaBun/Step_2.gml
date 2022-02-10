@@ -13,17 +13,24 @@ overwriteAttack5=1
 
 	///Attacks
 	if anim=10 ///Attack Stand
-	{animFrame=0 canmove=0
-	anim=12
+	{animFrame=0 canmove=0 specialcheck0=0
+	
+if distance_to_point(targetEnemy.x,targetEnemy.y)>50
+{
+if distance_to_point(targetEnemy.x,targetEnemy.y)>100
+	anim=11 else anim=12
+}
+	else
+	anim=13
 	}
-
+	
 if anim=11 ///Card Throw
 {sprite_index=spr_ninjabun_card
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.1)
  if animFrame=3
-{card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
+{PlaySoundNoStack(snd_swing2) card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 	card.z=z-56 card.image_xscale=image_xscale
 	}
 frame_set(3,3,0.5)
@@ -55,7 +62,7 @@ if animFrame=clamp(animFrame,1,22) z=lerp(z,zLock,0.1)
 	frame_set(17,12,0.25)
 	frame_set(18,13,0.25) if animFrame=19 {sprite_index=spr_ninjabun_cardair z+=32}
 	frame_set(19,0,0.25) if animFrame=20
-	{card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=6*image_xscale
+	{PlaySoundNoStack(snd_swing2) card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=6*image_xscale
 	 card.image_xscale=image_xscale
 	card.zSpeed=6 card.sprite_index=spr_ninjabun_cardproj2 card.image_speed=0
 	card.z=z-24
@@ -66,7 +73,46 @@ if animFrame=clamp(animFrame,1,22) z=lerp(z,zLock,0.1)
 if sprite_index=spr_ninjabun_jump if ground {animFrame=10 image_index=10 anim=6 canmove=1}
 }
 
+if anim=13 ///Attack
+{
 
+sprite_index=spr_ninjabun_attack MoveType=0
+frame_set(0,0,0.25) if animFrame=1 if specialcheck0=2 {animFrame=0 anim=14 exit;}
+frame_set(1,1,0.25) if animFrame=2 PlaySoundNoStack(snd_swing) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+frame_set(2,2,0.25)
+frame_set(3,1,0.25)
+frame_set(4,0,0.1)
+frame_set(5,0,0.1)
+
+	if animFrame>5
+	{
+	if specialcheck0=2{specialcheck0=3}
+	if specialcheck0=1{specialcheck0=2 animFrame=0 anim=13}
+	if specialcheck0=1 or specialcheck0=2 animFrame=0
+	}
+
+
+	if animFrame>5 {
+
+	if specialcheck0=3{animFrame=0 anim=14}
+	if specialcheck0=1{specialcheck0=2 animFrame=0 anim=13}
+	if specialcheck0=0
+	{hurt=0 atk=0 canmove=1 hit=0}
+	if specialcheck0=1 or specialcheck0=2 animFrame=0
+
+	}
+
+}
+
+if anim=14 ///Attack
+{sprite_index=spr_ninjabun_kick MoveType=1
+frame_set(0,0,0.1) 
+frame_set(1,1,0.25) if animFrame=2 PlaySoundNoStack(snd_swing) if animFrame=clamp(animFrame,2,3) {sentflying=2*image_xscale atk=1} else {sentflying=0 atk=0}
+frame_set(2,2,0.25)
+frame_set(3,3,0.25)
+frame_set(4,4,0.25)
+frame_set(5,5,0.25) if animFrame=6 {animFrame=0 canmove=1 atk=0 anim=0}
+}
 
 	if anim=5 ///Hit Air - has own unique take to break fall if alive
 	{

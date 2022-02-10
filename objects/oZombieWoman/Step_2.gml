@@ -19,8 +19,8 @@ if anim=11 ///Attack Stand
 { hit=0  sprite_index=spr_zombiew_attack
 atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.05
 frame_set(0,0,0.1)
-frame_set(1,1,0.1)
-frame_set(2,1,0.1)
+frame_set(1,1,0.1) 
+frame_set(2,1,0.1) if animFrame=3 PlaySound(snd_fzombie5)
 frame_set(3,1,0.25) 
 frame_set(4,2,0.1) if animFrame=clamp(animFrame,3,4) {atk=1 sentflying=4*image_xscale} else {atk=0 sentflying=0}
 frame_set(5,3,0.25)
@@ -31,6 +31,7 @@ if animFrame>6.75 {canmove=1}
 ///Vomit Attack
 if anim=12
 {sprite_index=spr_zombiew_range
+	if animFrame=0 PlaySoundNoStack(snd_fzombie3)
 frame_set(0,0,0.125)
 frame_set(1,1,0.125)
 frame_set(2,2,0.125)
@@ -39,7 +40,8 @@ frame_set(4,4,0.25) if animFrame=5
 {
 specialcheck0=0
 	if specialcheck0=0
-	{	spit=instance_create_depth(x+27*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale}
+	{PlaySoundNoStack(snd_fzombie4)
+		spit=instance_create_depth(x+27*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale}
 	else
 {sm=instance_create_depth(x+27*image_xscale,y+2,0,oPharaohSmoke) sm.hspeed=1*image_xscale
 		sm.z=z-55}

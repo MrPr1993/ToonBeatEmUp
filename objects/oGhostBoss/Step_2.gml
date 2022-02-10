@@ -42,11 +42,18 @@ hoverZ=lerp(hoverZ,-2,0.025) if hoverZ<-1.8 hover=1
 
 if anim=10
 {
-anim=14//choose(11,12,13)
+if distance_to_point(targetEnemy.x,targetEnemy.y)>80
+anim=choose(11,12)
+else
+anim=choose(13,14)
 }
 
 if anim=11 ///Charge
-{atkcol_set(5,0,-11,3.05,1,86) MoveType=1 damage=0.2
+{
+if animFrame=0
+PlaySound(choose(snd_ant7,snd_ant8,snd_ant8,snd_ant8))
+
+	atkcol_set(5,0,-11,3.05,1,86) MoveType=1 damage=0.2
 animFrame+=0.025
 if animFrame=clamp(animFrame,0,1) {z=lerp(z,-128,0.1) sprite_index=spr_ghost_stand image_index+=0.1
 	if image_xscale=1 x=lerp(x,__view_get( e__VW.XView, 0 )+48,0.1)
@@ -76,11 +83,14 @@ if animFrame>2.5 {canmove=1 anim=0}
 }
 
 		if anim=12 ///Axe Throw
-	{sprite_index=spr_ghost_axe
+	{
+if animFrame=0 PlaySound(choose(snd_ant5))	
+
+	sprite_index=spr_ghost_axe
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.25) 
 	frame_set(2,2,0.05) if animFrame=3 
-	{PlaySoundNoStack(snd_swing)
+	{PlaySoundNoStack(snd_swing) PlaySound(choose(snd_ant9,snd_ant10)) 
  if animFrame=3
 {card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 	card.image_speed=0 card.Spin=-22.5*image_xscale card.sprSpin=0 card.sprite_index=spr_ghost_axeobj
@@ -102,13 +112,16 @@ headAngle=0
 	}
 	
 	if anim=13 //Greataxe
-	{headAngle=0 headSpr=spr_ghost_head
+	{
+	if animFrame=0 PlaySound(choose(snd_ant6))
+		headAngle=0 headSpr=spr_ghost_head
 	atkcol_set(42,0,0,2.55,1,120) selfatk.MoveType=1 selfatk.HitType=1 selfatk.isCut=1 selfatk.HitSpark=spr_blood
-		damage=0.2 selfatk.HitSound=snd_cut
+damage=0.2 selfatk.HitSound=snd_cut
+
 	 if animFrame=clamp(animFrame,1,2) {atk=1 sentflying=16*image_xscale} else {atk=0
 		if animFrame<0.5 sentflying=-2*image_xscale else if animFrame<1 sentflying=lerp(animFrame,0,0.1)}
 	sprite_index=spr_ghost_greataxe
-	frame_set(0,0,0.025)
+	frame_set(0,0,0.025) if animFrame=1 {PlaySound(choose(snd_ant9,snd_ant10,snd_ant8)) PlaySoundNoStack(snd_swing2)}
 	frame_set(1,1,0.25) if animFrame>2 sentflying=0
 	frame_set(2,2,0.05)
 	frame_set(3,2,0.05)
@@ -120,7 +133,11 @@ headAngle=0
 	}
 	
 		if anim=14 //Spin Kick
-		{atkcol_set(0,0,0,3.65,1,116) headAngle=0 headSpr=spr_ghost_head
+		{
+		if animFrame=0
+		PlaySound(choose(snd_ant9,snd_ant10,snd_ant8))
+		
+			atkcol_set(0,0,0,3.65,1,116) headAngle=0 headSpr=spr_ghost_head
 		sprite_index=spr_ghost_spin MoveType=2 damage=0.1
 		
 		if image_index=3 or image_index=7 PlaySoundNoStack(snd_swing3)

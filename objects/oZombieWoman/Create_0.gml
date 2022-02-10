@@ -9,6 +9,10 @@ enemyscript=animsetup_zombie
 pointshit=10
 points=100
 
+	DeathCry=snd_fzombie1//snd_deathcry2
+	DamageVoice1=snd_fzombie2
+	DamageVoice2=snd_fzombie2
+	DamageVoice3=snd_fzombie2
 
 rangeAtk=300
 
