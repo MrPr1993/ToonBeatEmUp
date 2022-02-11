@@ -25,6 +25,9 @@ else
 //Swing Attack
 if anim=11 ///Attack Stand
 { hit=0  sprite_index=spr_zombiem_attack
+
+if animFrame=0 PlaySoundNoStack(snd_mzombie4)
+	
 atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.05
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
@@ -41,6 +44,7 @@ if anim=12 canbeGrabbed=0 else canbeGrabbed=1
 /////Zombie Grab Charge
 if anim=12
 {
+if animFrame=0 PlaySoundNoStack(snd_mzombie5)
 
 	atkcol_set(13,0,0,0.85,1,1) damage=0 MoveType=0
 animFrame+=0.01 //selfatk.HitSound=-1
@@ -74,6 +78,9 @@ if image_index<1
 image_index+=0.1
 else
 image_index+=0.25 if image_index>4 image_index=0 hspeed=0 canmove=0
+
+if image_index=1 PlaySoundNoStack(snd_mzombie3)
+
 if targetID!=-1 
 {
 targetID.x=x+24*image_xscale

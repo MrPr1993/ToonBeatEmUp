@@ -8,6 +8,11 @@ enemyscript=animsetup_zombie
 
 	walkSpeed=0.5
 	walkSpeedY=0.5
+	
+	DeathCry=snd_mzombie1//snd_deathcry2
+	DamageVoice1=snd_mzombie2
+	DamageVoice2=snd_mzombie2
+	DamageVoice3=snd_mzombie2
 
 pointshit=10
 points=100
