@@ -25,7 +25,17 @@ frame_set(3,1,0.1) if animFrame>3.75 animFrame=0
 	or (image_xscale=-1 and key_left) sprite_index=RunSpr 
 
 	}
-	image_index+=0.1 if image_index>5.9 image_index=0 atk=0}
+	
+	if  x<xprevious {if image_xscale=1 image_index-=0.1 else image_index+=0.1}
+	else {if image_xscale=1 image_index+=0.1 else image_index-=0.1}
+	
+	if image_index>5.9 image_index=0 
+	if image_index<0 image_index=5.9
+	
+	//image_index+=0.1 if image_index>5.9 image_index=0 atk=0
+	
+	
+	}
 	
 ///Rise from the Dead
 if anim=666

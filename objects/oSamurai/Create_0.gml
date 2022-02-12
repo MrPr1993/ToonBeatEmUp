@@ -1,20 +1,27 @@
 enemy_data()
 
-name="SASAKI"
+name="SAKE"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=16
 
 enemyscript=animsetup_enemy
 
+DamageVoice1=snd_femenemy7
+DamageVoice2=snd_femenemy7
+DamageVoice3=snd_femenemy7
+
+DeathCry=snd_femenemy2
+HitGround=snd_hitground
+
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=130
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=0.4
+maxhp=0.4
 
 height=70
 

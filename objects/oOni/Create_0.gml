@@ -1,6 +1,6 @@
 enemy_data()
 
-name="ONI"
+name="FUKUKIJO"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=31
 
@@ -15,6 +15,8 @@ OneAttack=2
 
 hp=2
 maxhp=2
+
+isHeavy=1
 
 height=70
 
@@ -32,14 +34,14 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_oni_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_oni_stand
+JumpSpr2=spr_oni_stand
+ThrownSpr=spr_oni_hit
+FlatSpr=spr_oni_flat
+ShockSpr=spr_oni_elec
+BurnSpr=spr_oni_burned
+FrozenSpr=spr_oni_frozen
 
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_ninjapal

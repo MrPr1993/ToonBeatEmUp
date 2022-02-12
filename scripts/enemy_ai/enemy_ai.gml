@@ -47,23 +47,36 @@ function enemy_ai() {
 
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
 	if y!=clamp(y,targetY,targetY)
+	{
+		if y!=clamp(y,targetY-rangeY,targetY+rangeY)
 	{if y>targetY {anim=1 key_up=1 key_down=0} else {anim=1 key_down=1 key_up=0}}
+	else {key_up=0 key_down=0}
+	}
 	else {key_up=0 key_down=0}
 	}
 
 	if canAttack=1 ///Try to get to the opponent
 	{anim=1
 	if x!=clamp(x,targetX-rangeX-64,targetX+rangeX+64)
-	{if x>targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
+	{if x>targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
+		}
 
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
 	if y!=clamp(y,targetY,targetY)
-	{if y>targetY {anim=1 key_up=1 key_down=0} else {anim=1 key_down=1 key_up=0}}
+	{
+	if y!=clamp(y,targetY-rangeY-1,targetY+rangeY-1)
+	{
+		if y>targetY {anim=1 key_up=1 key_down=0} else {anim=1 key_down=1 key_up=0}
+	}else {key_up=0 key_down=0}
+	}
 	else {key_up=0 key_down=0}
+	
+	if key_up=0 and key_down=0 and key_left=0 and key_right=0 if anim=1 anim=0
 	}
 
 	if canAttack=2 ///Stop
 	 {anim=0 key_left=0 key_right=0 key_up=0 key_down=0 key_attack=0
+
  
 	 if x<__view_get( e__VW.XView, 0 )+16 {canAttack=1}
 	  if x>__view_get( e__VW.XView, 0 )+320-16 {canAttack=1}

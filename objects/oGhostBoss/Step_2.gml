@@ -172,6 +172,8 @@ damage=0.2 selfatk.HitSound=snd_cut
 		}
 
 if anim=5 or anim=6 ///When they get thrown or fall they lose the head
+or sprite_index=FlatSpr or sprite_index=ShockSpr or sprite_index=BurnSpr
+or sprite_index=FrozenSpr
 if hasHead=1
 {
 part=instance_create_depth(x+GheadX,y,depth,oGhostHead)

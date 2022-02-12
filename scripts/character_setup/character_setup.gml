@@ -289,7 +289,7 @@ function character_setup() {
     hitSource=0
 	range=12
 	rangeX=8
-	rangeY=8
+	rangeY=1
 	rangeAtk=64
 
 	///For attack colissions

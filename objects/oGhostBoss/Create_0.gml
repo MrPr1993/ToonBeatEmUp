@@ -31,6 +31,8 @@ height=100
 hover=1
 hoverZ=0
 
+isHeavy=1
+
 
 //weaponanim(weaponspr,weaponIndex,10,-90,0*image_xscale,weaponcolor)
 
@@ -72,13 +74,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
+JumpSpr=spr_ghost_stand
+JumpSpr2=spr_ghost_stand
 ThrownSpr=spr_ghost_hit
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+FlatSpr=spr_ghost_flat
+ShockSpr=spr_ghost_elec
+BurnSpr=spr_ghost_burned
+FrozenSpr=spr_ghost_frozen
 
 
 spritepos_setup(1,24,-6,63)
