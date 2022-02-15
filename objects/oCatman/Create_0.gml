@@ -6,6 +6,12 @@ enemyPortraitIndex=12
 
 enemyscript=animsetup_enemy
 
+DamageVoice1=snd_cat2
+DamageVoice2=snd_cat2
+DamageVoice3=snd_cat2
+
+DeathCry=snd_cat1
+
 pointshit=10
 points=100
 

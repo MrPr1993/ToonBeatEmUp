@@ -56,7 +56,7 @@ function enemy_data() {
 	overwriteAttack5=0
 	AtkSpr5=spr_burglar_attack
 	overwriteJumpAtk=0
-	JumpAtkSpr=spr_burglar_attack
+	JumpAtkSpr=spr_burglar_airattack
 	overwriteJumpAtk2=0
 	JumpAtkSpr2=spr_burglar_attack
 	overwriteRollBack=0

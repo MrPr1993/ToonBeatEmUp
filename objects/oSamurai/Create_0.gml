@@ -4,7 +4,7 @@ name="SAKE"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=16
 
-enemyscript=animsetup_enemy
+enemyscript=animsetup_zombie
 
 DamageVoice1=snd_femenemy7
 DamageVoice2=snd_femenemy7
@@ -18,12 +18,14 @@ points=100
 
 rangeAtk=130
 
+shadowSpr=spr_midshadow
+
 OneAttack=2
 
 hp=0.4
 maxhp=0.4
 
-height=70
+height=85
 
 specialFX=0
 

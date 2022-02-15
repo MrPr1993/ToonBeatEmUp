@@ -21,6 +21,7 @@ hit=0
 atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.1
 frame_set(0,0,0.1) if animFrame>1 sprite_index=spr_cobra_kick else sprite_index=spr_cobra_attack
 frame_set(1,0,0.1) if animFrame=clamp(animFrame,2,3) {atk=1 sentflying=2*image_xscale} else {atk=0 sentflying=0}
+if animFrame=2 PlaySoundNoStack(snd_cobra2)
 frame_set(2,1,0.5)
 frame_set(3,2,0.1) 
 frame_set(4,0,0.1)
@@ -33,6 +34,7 @@ hit=0
 atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.5
 frame_set(0,0,0.1)
 frame_set(1,1,0.1) if animFrame=clamp(animFrame,3,5) atk=1 else atk=0
+if animFrame=2 PlaySoundNoStack(snd_cobra3)
 frame_set(2,2,0.5) if animFrame<3 atkcol_set(30,0,58,2.05,1,19)
 else if special0=0 atkcol_set(50,0,46,3.05,1,35) else atkcol_set(92,0,46,0.85,1,35)
 frame_set(3,3,0.5) 

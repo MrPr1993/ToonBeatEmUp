@@ -765,11 +765,13 @@ selfatk.recovery=30
 	targetID.hit=2 targetID.hitSource=id targetID.ThrowDamage=0
 	targetID.ground=0
 	targetID.atk=0
-	targetID.hurt=1
+	targetID.hurt=1 
 	///Drag Enemy
-	if animFrame<0.5 {targetID.targetHeightHit=1 grabX=32*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale}
-	if animFrame=1 {targetID.targetHeightHit=2 grabX=32*image_xscale grabY=0 grabZ=-1 targetID.image_xscale=-image_xscale}
-	if animFrame=2 {targetID.targetHeightHit=0 grabX=32*image_xscale grabY=0 grabZ=-1 targetID.image_xscale=-image_xscale}
+	if animFrame<0.75 {targetID.targetHeightHit=targetID.GrabFrame grabX=32*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale}
+	else {targetID.targetHeightHit=targetID.GrabFrame grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale}
+	
+//	if animFrame=1 {targetID.targetHeightHit=2 grabX=32*image_xscale grabY=0 grabZ=-1 targetID.image_xscale=-image_xscale}
+//	if animFrame=2 {targetID.targetHeightHit=0 grabX=32*image_xscale grabY=0 grabZ=-1 targetID.image_xscale=-image_xscale}
 
 	 if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
 	if animFrame=clamp(animFrame,0,1.5)

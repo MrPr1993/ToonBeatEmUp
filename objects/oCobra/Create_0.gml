@@ -4,6 +4,12 @@ name="ASPA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=24
 
+DamageVoice1=snd_cobra2
+DamageVoice2=snd_cobra2
+DamageVoice3=snd_cobra2
+
+DeathCry=snd_cobra2
+
 enemyscript=animsetup_zombie
 
 pointshit=10
