@@ -5,9 +5,12 @@ function animsetup_robot() {
 	overwriteStand=1
 	overwriteMove=1
 	overwriteAttack=1
+	overwriteAttack1=1
 	overwriteAttack2=1
+overwriteAttack3=1
+overwriteAttack4=1
 
-	animsetup_burglar()
+	animsetup_enemy()
 
 	robotArmLX=-14
 	robotArmLY=-64

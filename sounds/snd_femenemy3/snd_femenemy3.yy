@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_femenemy3",
-  "duration": 0.642646,
+  "soundFile": "snd_femenemy3.wav",
+  "duration": 0.596521,
   "parent": {
     "name": "Enemies",
     "path": "folders/f - Sounds/Voice Clips/Enemies.yy",

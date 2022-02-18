@@ -30,7 +30,7 @@ DamageVoice3=snd_enemy3
 pointshit=10
 points=100
 
-enemyscript=animsetup_burglar
+enemyscript=animsetup_enemy
 
 overwriteAttack=1
 overwriteAttack2=1

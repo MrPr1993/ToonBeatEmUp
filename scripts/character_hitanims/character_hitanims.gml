@@ -1,5 +1,5 @@
 function character_hitanims() {
-	if hurt=1
+	//if hurt=1
 	{
 
 	if anim=4 ///Hit Stand
@@ -37,8 +37,7 @@ function character_hitanims() {
 	{animFrame=0 anim=1337 exit;}
 		
 	atk=0 sprite_index=ThrownSpr
-	hurt=1 recovery=120
-
+	hurt=1
 	recovery=30
 
 	if hitBack=0

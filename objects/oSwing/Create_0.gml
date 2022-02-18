@@ -14,26 +14,13 @@ DamageVoice3=snd_femenemy7
 pointshit=10
 points=100
 
+
 hp=0.2
 maxhp=0.2
 
 DeathCry=snd_femenemy2
 
-spawnID=oHammer
-weaponspr=spr_hammer
-weaponIndex=0
-weaponX=14
-weaponY=-69
-weaponangle=180
-weaponcolor=c_white
-weaponBack=1
-weaponRange=100
-weaponDamage=0.2
-weapontargetHeight=2
-weapontype=0
-weaponHitType=1
-WswingSound=snd_swing3
-
+weapon_add("HAMMER")
 
 enemyscript=animsetup_swing
 

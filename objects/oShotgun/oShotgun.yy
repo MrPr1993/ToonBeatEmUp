@@ -11,8 +11,8 @@
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "oHammer",
-    "path": "objects/oHammer/oHammer.yy",
+    "name": "oTommyGun",
+    "path": "objects/oTommyGun/oTommyGun.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

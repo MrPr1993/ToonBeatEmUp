@@ -1,15 +1,26 @@
 enemy_data()
 
-name="SIREN"
+bub=-1
+
+name="SIRENA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=26
 
-enemyscript=animsetup_enemy
+DamageVoice1=snd_femenemy6
+DamageVoice2=snd_femenemy6
+DamageVoice3=snd_femenemy6
+
+DeathCry=snd_femenemy1
+
+enemyscript=animsetup_zombie
+
+	walkSpeed=0.5
+	walkSpeedY=0.5
 
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=300
 
 OneAttack=2
 

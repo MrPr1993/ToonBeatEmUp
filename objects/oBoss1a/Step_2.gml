@@ -40,9 +40,9 @@ if specialcheck1=4 MoveType=1
 	image_speed=0 selfatk.targetHeight=2
 	
 	
-	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
+	 if animFrame=clamp(animFrame,2,2.25) atk=1 else atk=0
 	if animFrame=clamp(animFrame,0,.5) or animFrame=clamp(animFrame,3,3.5)
-	animFrame+=0.1 else animFrame+=0.25 selfatk.recovery=2
+	animFrame+=0.25 else animFrame+=0.5 selfatk.recovery=2
 	
 	selfatk.flashZ=-90
 	
@@ -79,7 +79,7 @@ if ground {animFrame=0 anim=14}
 sprite_index=spr_hwolf_attack2 image_index=0
 image_speed=0 atk=0
 	if animFrame=clamp(animFrame,0,1)
-	animFrame+=0.05 else animFrame+=0.05 if animFrame>0.1 {
+	animFrame+=0.5 else animFrame+=0.05 if animFrame>0.1 {
  canmove=1
 	}
 	}

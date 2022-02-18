@@ -8,7 +8,7 @@ DamageVoice1=snd_cobra2
 DamageVoice2=snd_cobra2
 DamageVoice3=snd_cobra2
 
-DeathCry=snd_cobra2
+DeathCry=snd_cobra1
 
 enemyscript=animsetup_zombie
 

@@ -34,10 +34,10 @@ weaponangle=180
 weaponcolor=c_white
 weaponBack=1
 weaponRange=100
-weaponDamage=0.2
+weaponDamage=0.1
 weapontargetHeight=2
 weapontype=0
-weaponHitType=1
+weaponHitType=0
 }
 
 if object_index=oEnemy1B if keyboard_check(vk_control)

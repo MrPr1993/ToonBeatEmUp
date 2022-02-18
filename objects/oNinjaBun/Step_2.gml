@@ -11,6 +11,8 @@ overwriteAttack3=1
 overwriteAttack4=1
 overwriteAttack5=1
 
+if DeathCryOnce=0 hasBounce=0 else hasBounce=1
+
 	///Attacks
 	if anim=10 ///Attack Stand
 	{animFrame=0 canmove=0 specialcheck0=0

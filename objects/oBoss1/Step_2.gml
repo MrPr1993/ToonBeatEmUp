@@ -7,6 +7,45 @@ overwriteAttack3=1
 overwriteAttack4=1
 overwriteJump=1
 
+///AI for enemy doing blocks
+if name="BBB" ///To lock block to make boss easier
+if canmove=1 and (anim=0 or anim=1)
+if distance_to_object(targetEnemy)<64
+and (targetEnemy.y=clamp(targetEnemy.y,y-8,y+8))
+and (
+(image_xscale=1 and x<targetEnemy.x and targetEnemy.image_xscale=-1)
+or (image_xscale=-1 and x>targetEnemy.x and targetEnemy.image_xscale=1)
+)
+{
+if targetEnemy.atk=1 if anim!=60
+{animFrame=0 canmove=0 recovery=0
+anim=60 
+}
+}
+
+///Block
+if anim=60
+{canBlock=1
+sprite_index=spr_wolfita_block
+animFrame+=0.1
+if animFrame>6 {canmove=1 anim=0 alarm[1]=2}
+}
+
+if anim=60 or anim=61
+canBlock=1 else canBlock=0
+
+///Block Hit
+if anim=61
+{canBlock=1 animFrame+=0.1 shaketime=30
+if animFrame<0.5
+{
+if place_free(x+0.1*-image_xscale,y) x+=0.1*-image_xscale
+}
+sprite_index=spr_wolfita_block
+if animFrame>2 {anim=60 anim=11 image_index=0 animFrame=0 alarm[1]=2}
+}
+
+
 
 if offScreenMode=1
 {

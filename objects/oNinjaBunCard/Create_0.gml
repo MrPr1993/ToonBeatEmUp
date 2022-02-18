@@ -23,7 +23,7 @@ ground=0
 HitType=1
 HitSound=snd_cut
 HitSpark=spr_blood
-
+SourceX=x
 Spin=0
 sprSpin=0
 disappearHit=1

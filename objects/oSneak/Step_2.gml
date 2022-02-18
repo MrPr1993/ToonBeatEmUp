@@ -307,34 +307,40 @@ targetID=-1
 if anim=810 ///Gun Fire
 {specialcheck3=4
 	
-
+if animFrame=2.0
+or animFrame=2.8
+or animFrame=3.8
+or animFrame=4.8
+or animFrame=5.8
+or animFrame=6.8
+{
+PlaySoundNoStack(snd_gun)
+flashFX(x+34*image_xscale,y,z-42,spr_gunflash,0,1,0,1,1,c_white,1)
+projectile_create(x+34*image_xscale,y,z-42,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.05,weaponHitType,weapontargetHeight,0,0)
+}
 	
 sprite_index=spr_sneak_gunfire
 frame_set(0,0,0.1)
 frame_set(1,1,0.025)
-frame_set(2,2,0.25) //1
+ //1
 
-if animFrame=clamp(animFrame,2,2.25)
-or animFrame=clamp(animFrame,4,4.25)
-or animFrame=clamp(animFrame,6,6.25)
-or animFrame=clamp(animFrame,8,8.25)
-or animFrame=clamp(animFrame,10,10.25)
-{
-PlaySoundNoStack(snd_gun)
-flashFX(x+34*image_xscale,y,z-42,spr_gunflash,0,1,0,1,1,c_white,1)
-projectile_create(x+34*image_xscale,y,z-42,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,weaponDamage,weaponHitType,weapontargetHeight,0,0)
-}
-frame_set(3,1,0.25)
-frame_set(4,2,0.25) //2 
-frame_set(5,1,0.25)
-frame_set(6,2,0.25) //3
-frame_set(7,1,0.25) 
-frame_set(8,2,0.25) //4
-frame_set(9,1,0.25)
-frame_set(10,2,0.25) //5
-frame_set(11,1,0.25)
+//	if animFrame=0
+	//or animFrame=0.8 or animFrame=1.6 or animFrame=2.4  or animFrame=3.2
+frame_set(2,1,0.2)
+frame_set(3,2,0.2)
+frame_set(4,1,0.2) //2 
+frame_set(5,2,0.2)
+frame_set(6,1,0.2) //3
+frame_set(7,2,0.2) 
+frame_set(8,1,0.2) //4
+frame_set(9,1,0.2)
+frame_set(10,1,0.2) //5
+frame_set(11,1,0.2)
 frame_set(12,1,0.025)
 frame_set(13,0,0.25)
+
+
+
 if animFrame>13.75 {atk=0 canmove=1}
 
 

@@ -411,6 +411,15 @@ break;///ROW END
 break;
 }
 
+if oControl.betatest=1 if keyboard_check_pressed(vk_tab)
+if OwnDescTest=1 OwnDescTest=0
+else
+{
+OwnDescTest=1
+OwnDesc=get_string(OwnDesc,OwnDesc)
+}if OwnDescTest=1 desc=OwnDesc
+
+
 
 if key_attack
 {

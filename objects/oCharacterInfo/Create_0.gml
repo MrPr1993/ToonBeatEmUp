@@ -10,6 +10,9 @@ enemyPortraitIndex=0
 descleft=""
 descright=""
 
+OwnDescTest=0
+OwnDesc=""
+
 enemyscript=animsetup_viva
 specialscript=-1
 

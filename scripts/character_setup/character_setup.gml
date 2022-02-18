@@ -83,7 +83,7 @@ function character_setup() {
 	invincible=0
 	immune=0
 	///Turn it on and when the player hits the ground, they'll bounce a bit
-	hasBounce=0
+	hasBounce=1
 	canBounce=0
 	canDrag=1
 	///------------------------

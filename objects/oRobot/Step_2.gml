@@ -3,6 +3,7 @@
 enemy_endstep()
 throw_step()
 
+
 ///Robot Variation will have own attack
 	if anim=12 ///Laser Attack
 	{
