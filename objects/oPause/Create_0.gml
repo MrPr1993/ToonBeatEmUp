@@ -18,6 +18,12 @@ PlaySoundNoStack(snd_picked)
 
 tvshade_set()
 
+surface_resize(application_surface,320,240)
+surface_save(application_surface,"screenshot")
+surface_resize(application_surface,320,240)
+surface_free(application_surface)
+
+sprite_replace(spr_photoplaceholder,"screenshot",0,false,false,0,0)
 
 instance_deactivate_all(true)
 

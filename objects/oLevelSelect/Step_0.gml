@@ -47,3 +47,5 @@ if level=20 roomGo=rm_map
 if level=21 roomGo=rm_chardata
 if level=22 roomGo=rm_feats
 if level=23 roomGo=rm_shop
+
+if level=30 roomGo=rm_stagemermaid

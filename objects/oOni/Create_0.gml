@@ -9,7 +9,11 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-rangeAtk=100
+chardraw=draw_swing
+
+weapon_add("ONI CLUB")
+
+rangeAtk=160
 
 OneAttack=2
 
@@ -18,7 +22,7 @@ maxhp=2
 
 isHeavy=1
 
-height=70
+height=120
 
 specialFX=0
 

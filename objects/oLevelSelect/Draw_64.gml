@@ -73,8 +73,8 @@ if level=28 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=29 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
-if level=30 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=30 draw_set_color(c_yellow) else draw_set_color(c_red)
+draw_text(10, yy++ * 10, string_hash_to_newline("MERMAID STAGE"));
 if level=31 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(210, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=32 draw_set_color(c_yellow) else draw_set_color(c_gray)
