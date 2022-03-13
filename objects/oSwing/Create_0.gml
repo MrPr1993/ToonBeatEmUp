@@ -5,7 +5,7 @@ dizzyPercentageMax=25
 name="MS.SWING"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=7
-chardraw=draw_swing;
+chardraw=draw_merman;
 
 DamageVoice1=snd_femenemy7
 DamageVoice2=snd_femenemy7

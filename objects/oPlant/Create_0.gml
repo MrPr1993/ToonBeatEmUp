@@ -13,12 +13,15 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=0.7
+maxhp=0.7
 
-height=70
+height=110
 
 specialFX=0
+
+isHeavy=1
+throwHeavy=1
 
 StandSpr=spr_plant_stand
 MoveSpr=spr_plant_move
@@ -34,12 +37,11 @@ JumpAtkSpr2=spr_burglar_attack
 
 JumpSpr=spr_burglar_stand
 JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_plant_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
-
+ThrownSpr=spr_plant_hit
+FlatSpr=spr_plant_flat
+ShockSpr=spr_plant_elec
+BurnSpr=spr_plant_burned
+FrozenSpr=spr_plant_frozen
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_plantpal

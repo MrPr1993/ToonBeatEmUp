@@ -40,5 +40,41 @@ weaponHitType=1
 WswingSound=snd_swing3
 }
 
+if wpadd="SPEAR"
+{
+spawnID=oSpear
+weaponspr=spr_merman_spear
+weaponIndex=0
+weaponX=-3
+weaponY=-37
+weaponangle=42
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.2
+weapontargetHeight=2
+weapontype=0
+weaponHitType=1
+WswingSound=snd_cut //weaponanim(weaponspr,weaponIndex,-3,-37,42*image_xscale,weaponcolor)
+}
+
+if wpadd="TRIDENT"
+{
+spawnID=oTrident
+weaponspr=spr_merman_trident
+weaponIndex=0
+weaponX=-3
+weaponY=-37
+weaponangle=42
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.2
+weapontargetHeight=2
+weapontype=0
+weaponHitType=1
+WswingSound=snd_cut //weaponanim(weaponspr,weaponIndex,-3,-37,42*image_xscale,weaponcolor)
+}
+
 
 }

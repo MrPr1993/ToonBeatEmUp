@@ -4,7 +4,15 @@ name="MERMAN"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=25
 
-enemyscript=animsetup_enemy
+enemyscript=animsetup_merman
+chardraw=draw_merman;
+armsX=0
+armsY=0
+armspr=spr_merman_arms
+
+weapon_add("SPEAR")
+//weapon_add("TRIDENT")
+weaponBack=0
 
 pointshit=10
 points=100
@@ -34,12 +42,14 @@ JumpAtkSpr2=spr_burglar_attack
 
 JumpSpr=spr_burglar_stand
 JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_merman_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+ThrownSpr=spr_merman_hit
+FlatSpr=spr_merman_flat
+ShockSpr=spr_merman_elec
+BurnSpr=spr_merman_burned
+FrozenSpr=spr_merman_frozen
 
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
+
+
