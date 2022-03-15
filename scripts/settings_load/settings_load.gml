@@ -12,5 +12,8 @@ global.Screenflash=ini_read_real("SETTINGS","FLASH",1)
 global.LifeStart=ini_read_real("SETTINGS","LIFE",2)
 global.ContinueStart=ini_read_real("SETTINGS","CONTINUES",-1)
 global.fpsMode=ini_read_real("SETTINGS","FPS",0)
+
+global.enemytest=ini_read_real("ENEMYTEST","TEST",0)
+global.enemytestB=ini_read_real("ENEMYTEST","TESTB",0)
 ini_close()
 }

@@ -5,5 +5,6 @@ if !keyboard_check(vk_control)
 {
 if spawnNo=3 spawnNo=0 else spawnNo+=1
 event_user(0)
+global.enemytestB=spawnNo
 }
 

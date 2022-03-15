@@ -7,6 +7,12 @@ and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
 {
 if betatest=1
 {
+//global.enemytest=ini_read_real("ENEMYTEST","TEST",0)
+//global.enemytestB=ini_read_real("ENEMYTEST","TESTB",0)
+ini_open("GAMEDATA/settings.ini");
+ini_write_real("ENEMYTEST","TEST", global.enemytest)
+ini_write_real("ENEMYTEST","TESTB", global.enemytestB)
+ini_close()
 
 en=instance_create(mouse_x,mouse_y,spawnUnit)
 

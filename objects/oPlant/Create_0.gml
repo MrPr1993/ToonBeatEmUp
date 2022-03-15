@@ -4,7 +4,9 @@ name="FLORA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=29
 
-enemyscript=animsetup_enemy
+enemyscript=animsetup_zombie
+
+
 
 pointshit=10
 points=100

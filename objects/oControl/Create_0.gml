@@ -33,6 +33,9 @@ global.LifeStart=2
 global.DisplayFeats=1
 
 global.Gold=0
+
+global.enemytest=0
+global.enemytestB=0
 }
 featicon[99]=0
 featsel=1
@@ -221,6 +224,8 @@ spawnUnit=oMsDummy
 spawnType="Enemy"
 spawnNo=0
 
+
+
 MinX=x-320
 MaxX=x+sprite_width-320
 
@@ -392,3 +397,7 @@ if !variable_global_exists("LOADSET")
 {global.LOADSET=0
 settings_load()
 }
+
+enemySpawn=global.enemytest
+spawnNo=global.enemytestB
+

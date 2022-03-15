@@ -6,5 +6,6 @@ if !keyboard_check(vk_control)
 if enemySpawn=60 enemySpawn=0
 else enemySpawn+=1
 event_user(0)
+global.enemytest=enemySpawn
 }
 
