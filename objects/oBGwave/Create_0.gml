@@ -4,4 +4,11 @@
 shader=shd_wave
 uTime = shader_get_uniform(shader, "Time");
 uTexel = shader_get_uniform(shader, "Texel");
-bgSpr=sprite_index
+spr_background=sprite_index
+xscale=1
+yscale=1
+
+
+//surf_floor = surface_create(room_width, room_height);
+
+

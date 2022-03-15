@@ -44,6 +44,7 @@ pal_swap_reset();
 
 pal_swap_set(my_pal_sprite,current_pal,false);
 ///ARMS
+if anim=1 or anim=0 or anim=11 or anim=12
 draw_sprite_ext(armspr,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+armsX*image_xscale),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+armsY),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 pal_swap_reset();
 

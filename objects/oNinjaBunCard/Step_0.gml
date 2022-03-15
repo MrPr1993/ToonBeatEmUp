@@ -4,6 +4,10 @@
 sprSpin+=Spin
 z+=zSpeed
 
+zSpeed+=zSpeedAdd
+
+hspeed+=sidespeedadd
+
 depth=-y
 
 if x!=clamp(x,__view_get( e__VW.XView, 0 )-16,__view_get( e__VW.XView, 0 )+320+16)

@@ -35,3 +35,5 @@ disappearTime=24
 hit=0
 
 zSpeed=0
+zSpeedAdd=0
+sidespeedadd=0

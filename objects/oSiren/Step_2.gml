@@ -39,7 +39,7 @@ if anim=12
 {sprite_index=spr_siren_shoot
 	//if animFrame=0 PlaySoundNoStack(snd_fzombie3)
 frame_set(0,0,0.1)
-if animFrame=1
+if animFrame=11111
 {
 	bub=instance_create_depth(x+32*image_xscale,y,depth,oFlashFX)
 	bub.z=z-64
@@ -51,19 +51,21 @@ if animFrame=1
 	bub.image_yscale=1
 }
 frame_set(1,1,0.25)
-frame_set(2,2,0.25)
-frame_set(3,2,0.1)
-frame_set(4,2,0.1)
-frame_set(5,2,0.1)
-frame_set(6,2,0.25)
-frame_set(7,2,0.25)
-frame_set(8,2,0.25)
-frame_set(9,2,0.25)
+frame_set(2,2,0.5)
+frame_set(3,2,0.5)
+frame_set(4,2,0.5)
+frame_set(5,2,0.5)
+frame_set(6,2,0.5)
+frame_set(7,2,0.5)
+frame_set(8,2,0.5)
+frame_set(9,2,0.5)
 frame_set(10,1,0.25) if animFrame=11
-{with bub instance_destroy() bub=-1
+{//with bub instance_destroy() bub=-1
 PlaySound(snd_femenemy5) PlaySound(snd_flame)
 card=instance_create_depth(x+32*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
-card.sprite_index=spr_siren_proj2
+card.sprite_index=spr_siren_proj2 
+if distance_to_point(targetEnemy.x,targetEnemy.y)<120
+{card.zSpeed=1 card.zSpeedAdd=-0.1} else card.sidespeedadd=0.1*image_xscale
 card.z=z-64 card.image_xscale=image_xscale card.disappearHit=0 card.damage=0.1
 }
 frame_set(11,3,0.25)
