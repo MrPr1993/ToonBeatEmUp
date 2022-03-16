@@ -483,7 +483,7 @@ weaponanim(weaponspr,weaponIndex,32,-70,90*image_xscale,weaponcolor)
 
 
 
-	if animFrame=0 {PlaySound(snd_hina3) PlaySound(snd_flame)}
+	if animFrame=0 {PlaySound(snd_hina3) PlaySound(snd_flame) specialcheck5=0}
 
 	atkcol_set(69,0,43,2.2,1,22)
 
@@ -510,19 +510,20 @@ if animFrame=0 fireFX=0
 	frame_set(1,1,0.25)
 	frame_set(2,2,0.25)
 
-	if animFrame=3
-	{flame=instance_create_depth(x+37*image_xscale,y,depth,oFlashFX) flame.image_xscale=image_xscale
+	if animFrame=3 and specialcheck5=0
+	{specialcheck5=1
+	flame=instance_create_depth(x+37*image_xscale,y,depth,oFlashFX) flame.image_xscale=image_xscale
 	with flame
 	{z=-42 image_speed=0.5 sprite_index=spr_hina_firebreath alarm[0]=0}
 	}
-
+if specialcheck5=1
+{
 	if animFrame=3.1
 	{
 	flame=instance_create_depth(x+37*image_xscale,y,depth,oFlashFX) flame.image_xscale=image_xscale
 	with flame
 	{z=-42 image_speed=0.5 sprite_index=spr_hina_firebreath alarm[0]=0}
-	}
-	
+	}	
 	if animFrame=clamp(animFrame,3.1,3.9)
 	if instance_exists(flame) with flame if image_index>3 image_index=0
 
@@ -535,7 +536,7 @@ if animFrame=0 fireFX=0
 	with flame
 	{z=-42 image_speed=0.5 sprite_index=spr_hina_firebreath2 alarm[0]=0}
 	}
-
+}
 	frame_set(4,4,0.25)
 	frame_set(5,5,0.25)
  

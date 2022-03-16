@@ -43,10 +43,13 @@ if enemySpawn=29 {enemySpawnName="29 Lady Wolf, Human" spawnUnit=oBoss1a}
 if enemySpawn=30 {enemySpawnName="30 Lady Wolf" spawnUnit=oBoss1}
 if enemySpawn=31 {enemySpawnName="31 Pharaoh" spawnUnit=oPharaoh}
 if enemySpawn=32 {enemySpawnName="32 Franki" spawnUnit=oFranki}
-if enemySpawn=33 {enemySpawnName="32 Oni" spawnUnit=oOni}
-if enemySpawn=34 {enemySpawnName="32 Franki" spawnUnit=oPrince}
-if enemySpawn=35 {enemySpawnName="33 Witch" spawnUnit=oWitch}
-if enemySpawn=36 {enemySpawnName="34 P Princess" spawnUnit=oPlantPrincess}
+if enemySpawn=33 {enemySpawnName="33 Oni" spawnUnit=oOni}
+if enemySpawn=34 {enemySpawnName="34 Franki" spawnUnit=oPrince}
+if enemySpawn=35 {enemySpawnName="35 Witch" spawnUnit=oWitch}
+if enemySpawn=36 {enemySpawnName="36 P Princess" spawnUnit=oPlantPrincess}
+if enemySpawn=37 {enemySpawnName="37 Heads" spawnUnit=oTwoHeads}
+if enemySpawn=38 {enemySpawnName="38 Harpy" spawnUnit=oHarpy}
+if enemySpawn=39 {enemySpawnName="39 Scientist" spawnUnit=oScientist}
 if enemySpawn=48 {enemySpawnName="48 Dastardly" spawnUnit=oDastardly}
 }
 if spawnType="Item"

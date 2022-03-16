@@ -401,3 +401,4 @@ settings_load()
 enemySpawn=global.enemytest
 spawnNo=global.enemytestB
 
+event_user(0)

@@ -1,5 +1,10 @@
 if attachID!=-1
-{x=attachID.x+attachX y=attachID.y+attachY z=attachID.z+attachZ}
+{
+if !instance_exists(attachID) attachID=-1
+else
+{
+x=attachID.x+attachX y=attachID.y+attachY z=attachID.z+attachZ}
+}
 
 
 
