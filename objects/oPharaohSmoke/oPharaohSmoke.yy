@@ -38,7 +38,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Mummy Empress Objects",
-    "path": "folders/8 - Bosses/Mummy Empress/Mummy Empress Objects.yy",
+    "path": "folders/8 - Bosses/3Mummy Empress/Mummy Empress Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPharaohSmoke",

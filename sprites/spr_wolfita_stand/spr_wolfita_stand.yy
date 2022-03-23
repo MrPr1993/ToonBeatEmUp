@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Lady Wolf",
-    "path": "folders/8 - Bosses/Lady Wolf.yy",
+    "name": "1Lady Wolf",
+    "path": "folders/8 - Bosses/1Lady Wolf.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_wolfita_stand",

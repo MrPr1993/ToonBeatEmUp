@@ -37,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Frankenstein",
-    "path": "folders/8 - Bosses/Frankenstein.yy",
+    "name": "2Frankenstein",
+    "path": "folders/8 - Bosses/2Frankenstein.yy",
   },
   "resourceVersion": "1.0",
   "name": "oFranki",

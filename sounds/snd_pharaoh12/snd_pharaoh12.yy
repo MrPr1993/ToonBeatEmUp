@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_pharaoh12.wav",
-  "duration": 0.464396,
+  "duration": 0.263401,
   "parent": {
     "name": "Pharaoh",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Pharaoh.yy",

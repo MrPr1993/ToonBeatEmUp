@@ -55,6 +55,8 @@ draw_text(10, yy++ * 10, string_hash_to_newline("MAP SCREEN"));
 }
 
 ///
+if level<41
+{
 if level=21 draw_set_color(c_maroon) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("CHARACTER DATA"));
 if level=22 draw_set_color(c_maroon) else draw_set_color(c_red)
@@ -95,6 +97,9 @@ if level=39 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=40 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+}
+if level<61
+{
 if level=41 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=42 draw_set_color(c_yellow) else draw_set_color(c_gray)
@@ -116,7 +121,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=50 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=51 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 1"));
 if level=52 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=53 draw_set_color(c_yellow) else draw_set_color(c_gray)
@@ -151,5 +156,4 @@ if level=67 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=68 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
-
-
+}

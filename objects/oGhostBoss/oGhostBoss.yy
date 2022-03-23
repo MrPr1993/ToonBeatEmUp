@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Ghost Boss",
-    "path": "folders/8 - Bosses/Ghost Boss.yy",
+    "name": "4Ghost Boss",
+    "path": "folders/8 - Bosses/4Ghost Boss.yy",
   },
   "resourceVersion": "1.0",
   "name": "oGhostBoss",

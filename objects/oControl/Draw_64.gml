@@ -1147,32 +1147,36 @@ if creditsGo=0
 creditsTime-=1
 if keyboard_check(ord("J")) stageEndFX=1
 
-draw_sprite(CutsceneImage,CutsceneIndex,CutsceneX,CutsceneY)
+//draw_sprite(CutsceneImage,CutsceneIndex,CutsceneX,CutsceneY)
 
 CutsceneX+=CutsceneHSpeed
 CutsceneY+=CutsceneVSpeed
 
-draw_set_alpha(1)
+draw_set_alpha(1) draw_set_color(c_black)
+
+draw_rectangle(-32,192,333,666,false)
+
 draw_set_color(c_white)
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
 
-draw_text(160,10+48,"ASDW - MOVE")
-draw_text(160,10+56,"J - ATTACK   K - JUMP")
-draw_text(160,10+64,"L - SPECIAL OR SIDE SPECIAL")
-draw_text(160,10+72,"HOLD L - CHARGE ATTACK")
-draw_text(160,10+80,"-WHEN BAR IS FULL-")
-draw_text(160,10+90,"PRESS H FOR SUPER ATTACK")
-draw_text(160,10+100,"TAP SIDE TO RUN")
-draw_text(160,10+110,"TAP AND J - SIDE ATTACK")
-draw_text(160,10+120,"DOWN UP J - UPPERCUT")
-draw_text(160,10+130,"RUN AND J - RUN ATTACK")
+//draw_text(160,10+48,"ASDW - MOVE")
+//draw_text(160,10+56,"J - ATTACK   K - JUMP")
+//draw_text(160,10+64,"L - SPECIAL OR SIDE SPECIAL")
+//draw_text(160,10+72,"HOLD L - CHARGE ATTACK")
+//draw_text(160,10+80,"-WHEN BAR IS FULL-")
+//draw_text(160,10+90,"PRESS H FOR SUPER ATTACK")
+//draw_text(160,10+100,"TAP SIDE TO RUN")
+//draw_text(160,10+110,"TAP AND J - SIDE ATTACK")
+//draw_text(160,10+120,"DOWN UP J - UPPERCUT")
+//draw_text(160,10+130,"RUN AND J - RUN ATTACK")
 
-draw_text(160,10+200,"THE GAME IS CONTROLLER COMPATIBLE!")
+//draw_text(160,10+200,"THE GAME IS CONTROLLER COMPATIBLE!")
 
-draw_text(160,10+210,"THE GAME ONLY HAS ONE STAGE")
-draw_text(160,10+220,"BUT I'LL SOON UPDATE")
-draw_text(160,10+230,"WITH TWO MORE FOR THIS DEMO")
+draw_text(160,210-16,cutscenename)
+draw_set_halign(fa_left)
+draw_text(8,220-16,cutsceneline)
+//draw_text(160,10+230,"WITH TWO MORE FOR THIS DEMO")
 
 ///Screen FX for intro
 if stageIntro!=0 stageIntro-=0.05 else stageIntro=0

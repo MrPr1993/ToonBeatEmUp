@@ -402,3 +402,6 @@ enemySpawn=global.enemytest
 spawnNo=global.enemytestB
 
 event_user(0)
+
+cutscenename="VIVA"
+cutsceneline="OKAY. WHERE HAS THAT TRUCK GONE TO?\nSPEAK UP DOG!"

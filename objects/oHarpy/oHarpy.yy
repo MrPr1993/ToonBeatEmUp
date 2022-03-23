@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Harpy",
-    "path": "folders/8 - Bosses/Harpy.yy",
+    "name": "2Harpy",
+    "path": "folders/8 - Bosses/2Harpy.yy",
   },
   "resourceVersion": "1.0",
   "name": "oHarpy",

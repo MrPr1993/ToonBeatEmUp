@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_franki6.wav",
-  "duration": 0.840375,
+  "duration": 0.659025,
   "parent": {
     "name": "Franki",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Franki.yy",

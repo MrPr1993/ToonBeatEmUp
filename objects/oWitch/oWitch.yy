@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Witch",
-    "path": "folders/8 - Bosses/Witch.yy",
+    "name": "4Witch",
+    "path": "folders/8 - Bosses/4Witch.yy",
   },
   "resourceVersion": "1.0",
   "name": "oWitch",

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Oni",
-    "path": "folders/8 - Bosses/Oni.yy",
+    "name": "4Oni",
+    "path": "folders/8 - Bosses/4Oni.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_oni_frozen",

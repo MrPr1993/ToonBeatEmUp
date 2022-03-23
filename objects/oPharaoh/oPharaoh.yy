@@ -35,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mummy Empress",
-    "path": "folders/8 - Bosses/Mummy Empress.yy",
+    "name": "3Mummy Empress",
+    "path": "folders/8 - Bosses/3Mummy Empress.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPharaoh",

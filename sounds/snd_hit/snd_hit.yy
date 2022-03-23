@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": true,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_hit",
-  "duration": 0.187688,
+  "duration": 0.182688,
   "parent": {
     "name": "Objects",
     "path": "folders/f - Sounds/Objects.yy",

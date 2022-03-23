@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Twoheads",
-    "path": "folders/8 - Bosses/Twoheads.yy",
+    "name": "2Twoheads",
+    "path": "folders/8 - Bosses/2Twoheads.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_twoheads_stand",

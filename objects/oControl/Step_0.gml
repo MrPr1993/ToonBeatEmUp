@@ -1,6 +1,9 @@
 /// @description Beta Test
 if isPaused=0
 {
+if room=rm_cutscene1 __view_set( e__VW.YView, 0, quakeFX)	
+
+
 if global.CanGlobalBeta=1
 if keyboard_check_pressed(ord("B")) 
 if !keyboard_check(vk_control) and !keyboard_check(vk_shift)

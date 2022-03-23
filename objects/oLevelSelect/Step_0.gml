@@ -49,3 +49,10 @@ if level=22 roomGo=rm_feats
 if level=23 roomGo=rm_shop
 
 if level=30 roomGo=rm_stagemermaid
+
+if level=51 roomGo=rm_cutscene1
+
+
+
+
+

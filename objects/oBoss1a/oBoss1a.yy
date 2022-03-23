@@ -35,8 +35,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Lady Wolf, Human",
-    "path": "folders/8 - Bosses/Lady Wolf, Human.yy",
+    "name": "1aLady Wolf, Human",
+    "path": "folders/8 - Bosses/1aLady Wolf, Human.yy",
   },
   "resourceVersion": "1.0",
   "name": "oBoss1a",

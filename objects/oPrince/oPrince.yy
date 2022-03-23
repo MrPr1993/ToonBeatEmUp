@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Merman Prince",
-    "path": "folders/8 - Bosses/Merman Prince.yy",
+    "name": "5Merman Prince",
+    "path": "folders/8 - Bosses/5Merman Prince.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPrince",
