@@ -1,4 +1,4 @@
-if canControl
+if canControl=controlNO
 controller_setup()
 
 player_extramovesettings()

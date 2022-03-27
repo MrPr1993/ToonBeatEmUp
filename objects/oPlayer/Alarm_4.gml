@@ -2,7 +2,7 @@
 ///Respawn
 if disappearTime=0
 {
-immune=0
+immune=0 showp1=0;
 disappearTime=24
 }
 else

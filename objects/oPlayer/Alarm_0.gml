@@ -1,6 +1,6 @@
 /// @description Can Play
 
-canControl=1
+canControl=controlNO
 key_right=0
 areaEntry=0
 

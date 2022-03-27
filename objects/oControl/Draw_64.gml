@@ -320,10 +320,16 @@ draw_set_valign(fa_top)
 if continueScreen=2 ///Character Select
 {
 if continueFlash<0 continueFlash=2 else continueFlash-=0.5
-draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1)
-draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1)
-draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1)
-draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1)
+
+if characterSelect=0 pal_swap_set(spr_playerpal,global.p1Pal,false)
+draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=1 pal_swap_set(spr_playerpal,global.p1Pal,false)
+draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=2 pal_swap_set(spr_playerpal,global.p1Pal,false)
+draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=3 pal_swap_set(spr_playerpal,global.p1Pal,false)
+draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
+
 
 draw_set_color(c_white)
 
@@ -332,6 +338,9 @@ draw_text(23*characterSelect+2,2,string_hash_to_newline(characterTimer))
 
 if continueFlash<1
 draw_sprite_ext(spr_playerface,4,23*characterSelect,0,1,1,0,c_white,1)
+
+if oPlayer.key_up_pressed if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1
+if -oPlayer.key_down_pressed if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1
 
 if -oPlayer.key_left_pressed if characterSelect=0 characterSelect=3
 else characterSelect-=1
@@ -726,13 +735,25 @@ if global.P1Char=3 global.P1Char=0 else
 global.P1Char+=1}
 }
 
-draw_sprite(spr_csviva,0,0,53)
-draw_sprite(spr_cshina,0,80,53)
-draw_sprite(spr_csbahati,0,160,53)
-draw_sprite(spr_cssofia,0,240,53)
+if key_up_pressed if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1 
+if -key_down_pressed if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1 
 
+//current_pal=0;
+//my_pal_sprite=spr_playerpal
+
+{
+if global.P1Char=0 pal_swap_set(spr_playerpal,global.p1Pal,false);
+draw_sprite(spr_csviva,0,0,53) pal_swap_reset()
+if global.P1Char=1 pal_swap_set(spr_playerpal,global.p1Pal,false);
+draw_sprite(spr_cshina,0,80,53) pal_swap_reset()
+if global.P1Char=2 pal_swap_set(spr_playerpal,global.p1Pal,false);
+draw_sprite(spr_csbahati,0,160,53) pal_swap_reset()
+if global.P1Char=3 pal_swap_set(spr_playerpal,global.p1Pal,false);
+draw_sprite(spr_cssofia,0,240,53) pal_swap_reset()
+}
 if p1Select=1
 {
+pal_swap_set(spr_playerpal,global.p1Pal,false);
 if p1selFrame<3 if p1selFrame<1 p1selFrame+=0.05 else p1selFrame+=0.2
 if global.P1Char=0
 draw_sprite(spr_csviva,1+p1selFrame,0,53)
@@ -742,6 +763,7 @@ if global.P1Char=2
 draw_sprite(spr_csbahati,1+p1selFrame,160,53)
 if global.P1Char=3
 draw_sprite(spr_cssofia,1+p1selFrame,240,53)
+pal_swap_reset()
 }
 
 if charSelectFlash!=0
@@ -819,7 +841,7 @@ draw_text(40,190,string_hash_to_newline("POWER"))
 draw_text(40,190+8,string_hash_to_newline("✰✰✰"))
 draw_text(40,190+16,string_hash_to_newline("SPEED"))
 draw_text(40,190+24,string_hash_to_newline("✰✰✰"))
-draw_text(40,190+32,string_hash_to_newline("SKILL"))
+draw_text(40,190+32,string_hash_to_newline("REACH"))
 draw_text(40,190+40,string_hash_to_newline("✰✰✰"))
 ///P2
 draw_set_halign(fa_center)
@@ -827,7 +849,7 @@ draw_text(40+80,190,string_hash_to_newline("POWER"))
 draw_text(40+80,190+8,string_hash_to_newline("✰✰✰"))
 draw_text(40+80,190+16,string_hash_to_newline("SPEED"))
 draw_text(40+80,190+24,string_hash_to_newline("✰✰"))
-draw_text(40+80,190+32,string_hash_to_newline("SKILL"))
+draw_text(40+80,190+32,string_hash_to_newline("REACH"))
 draw_text(40+80,190+40,string_hash_to_newline("✰✰✰✰"))
 draw_set_halign(fa_left)
 ///P3
@@ -836,7 +858,7 @@ draw_text(40+160,190,string_hash_to_newline("POWER"))
 draw_text(40+160,190+8,string_hash_to_newline("✰✰✰✰✰"))
 draw_text(40+160,190+16,string_hash_to_newline("SPEED"))
 draw_text(40+160,190+24,string_hash_to_newline("✰"))
-draw_text(40+160,190+32,string_hash_to_newline("SKILL"))
+draw_text(40+160,190+32,string_hash_to_newline("REACH"))
 draw_text(40+160,190+40,string_hash_to_newline("✰✰✰"))
 ///P4
 draw_set_halign(fa_center)
@@ -844,7 +866,7 @@ draw_text(40+240,190,string_hash_to_newline("POWER"))
 draw_text(40+240,190+8,string_hash_to_newline("✰"))
 draw_text(40+240,190+16,string_hash_to_newline("SPEED"))
 draw_text(40+240,190+24,string_hash_to_newline("✰✰✰✰✰"))
-draw_text(40+240,190+32,string_hash_to_newline("SKILL"))
+draw_text(40+240,190+32,string_hash_to_newline("REACH"))
 draw_text(40+240,190+40,string_hash_to_newline("✰✰✰"))
 
 draw_set_font(global.timefont)
@@ -1051,16 +1073,16 @@ draw_set_color(c_white)
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
 draw_text(160,4,"THANK YOU FOR PLAYING")
-draw_text(160,4+8,"THE EARLY 2021 SAGE DEMO")
+draw_text(160,4+8,"THE PROTOTYPE")
 draw_text(160,8+16,"STAY TUNED FOR MORE ")
 draw_text(160,8+24,"UPDATES AND BUG FIXES")
 draw_text(160,8+32,"AND NEW CONTENT")
 
-draw_text(160,190,"CODING-MRPR1993")
-draw_text(160,200,"GRAPHICS-MRPR1993")
-draw_text(160,210,"SOUNDS-MRPR1993, MASTERSAUCE")
-draw_text(160,220,"MUSIC-JONORSI")
-draw_text(160,230,"VOICES-MACSTAR SHYGUYWHY")
+draw_text(160,190,"CODING BY MRPR1993, GRAPHICS BY MRPR1993")
+draw_text(160,200,"SOUNDS BY MRPR1993 AND MASTERSAUCE")
+draw_text(160,210,"MUSIC BY JONORSI")
+draw_text(160,220,"VOICES-MIMI HUNG,FLIRTYFAWN,CINDER")
+draw_text(160,230,"SED,MIZZPEACHY,SUCCUBOO")
 draw_sprite_ext(spr_viva_move,credFram,160+96-32,180,1,1,0,c_black,1)
 draw_sprite_ext(spr_hina_move,credFram,160+48-32,180,1,1,0,c_black,1)
 draw_sprite_ext(spr_bahati_move,credFram,160-32,180,1,1,0,c_black,1)

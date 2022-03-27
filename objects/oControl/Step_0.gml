@@ -103,8 +103,13 @@ if room=rm_characterselect
 {
 ///Set up Stats
 global.P1Life=global.LifeStart
+global.P2Life=global.LifeStart
+global.P3Life=global.LifeStart
+global.P4Life=global.LifeStart
 global.P1Score=0
-
+global.P2Score=0
+global.P3Score=0
+global.P4Score=0
 }
 
 
@@ -172,7 +177,6 @@ musicplaystart(global.CurrentMusic)
 if oPlayer.key_attack or oPlayer.key_jump
 {
 continueScreen=2
-
 }
 
 if characterCount!=0

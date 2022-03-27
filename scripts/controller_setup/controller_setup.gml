@@ -20,7 +20,7 @@ function controller_setup() {
 	key_super=0
 
 	}
-	else
+else
 	{
 	key_right = keyboard_check(ord("D"));
 	key_left = -keyboard_check(ord("A"));

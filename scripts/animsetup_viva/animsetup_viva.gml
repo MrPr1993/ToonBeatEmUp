@@ -1114,7 +1114,7 @@ frame_set(3,2,0.25)
 frame_set(4,3,0.1)
 frame_set(5,4,0.05)
 if animFrame>5.8
-{hurt=0 atk=0 canmove=1 hit=0 disappearTime=90 canmove=1 recovery=180
+{hurt=0 atk=0 canmove=1 hit=0 disappearTime=90 canmove=1 recovery=180 showp1=1;
 alarm[4]=2
 if visible=0 visible=1 else visible=0
 disappearTime-=1

@@ -167,12 +167,20 @@ with oEnemy1 {HitType=590068 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 }
 }
 
+///Change player
+if keyboard_check_pressed(ord("4"))
+{
+if controlNO=4 controlNO=1 else controlNO+=1 showp1=1
+disappearTime=90 recovery=180 showp1=1; alarm[4]=2
+if visible=0 visible=1 else visible=0
+disappearTime-=1
+}
+
 ///Switch palette
 if keyboard_check_pressed(ord("5"))//Palette Swap
 {if keyboard_check(vk_control)
 current_pal-=1;
 else current_pal+=1;
-
 }
 
 

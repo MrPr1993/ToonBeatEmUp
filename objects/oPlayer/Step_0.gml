@@ -1,9 +1,10 @@
-if canControl
+
+
+if canControl=controlNO
 if automove=0
 {
 controller_setup()
 }
-
 
 if oControl.betatest=1
 {if keyboard_check_pressed(vk_backspace)

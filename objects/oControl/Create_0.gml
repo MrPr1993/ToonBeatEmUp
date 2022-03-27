@@ -111,16 +111,39 @@ P1SpawnY=208
 P1SpawnXadd=32
 P1SpawnYadd=208
 
+
+
 if !variable_global_exists("P1Life")
+{
+
 global.P1Life=2
+global.P2Life=2
+global.P3Life=2
+global.P4Life=2
+
+global.p1Pal=0
+global.p2Pal=0
+global.p3Pal=0
+global.p4Pal=0
+}
 if !variable_global_exists("P1Score")
+{
 global.P1Score=0
+global.P2Score=0
+global.P3Score=0
+global.P4Score=0
+}
 
 if !variable_global_exists("HiScoreStage")
 global.HiScoreStage=1
 
 if !variable_global_exists("P1Char")
+{
 global.P1Char=0
+global.P2Char=0
+global.P3Char=0
+global.P4Char=0
+}
 
 if !variable_global_exists("CanGlobalBeta")
 global.CanGlobalBeta=1
@@ -204,7 +227,7 @@ enemyShowTime=0
 if !variable_global_exists("timefont")
 {
 global.timefont=font_add_sprite_ext(spr_timefont, "0123456789", false, 0);
-global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$", false, 0);
+global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,", false, 0);
 }
 
 if !variable_global_exists("ScreenSize")
@@ -397,6 +420,10 @@ if !variable_global_exists("LOADSET")
 {global.LOADSET=0
 settings_load()
 }
+
+
+
+
 
 enemySpawn=global.enemytest
 spawnNo=global.enemytestB

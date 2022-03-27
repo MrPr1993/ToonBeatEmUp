@@ -5,6 +5,8 @@ time=99
 alarm[0]=120
 }
 
+current_pal=global.p1Pal;
+
 //spawnplayericon()
 player_anim()
 

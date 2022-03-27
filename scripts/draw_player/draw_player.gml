@@ -5,6 +5,9 @@ hp=clamp(hp,0,1)
 
 super=clamp(super,0,18)
 
+if showp1=1
+draw_sprite(spr_p1,playerNO-1,round(x),round(y+z-98))
+
 if carMode=0
 {
 

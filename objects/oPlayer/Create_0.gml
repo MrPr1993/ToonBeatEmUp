@@ -3,7 +3,7 @@ controller_setup()
 
 character_setup()
 
-current_pal=0;
+current_pal=global.p1Pal;
 my_pal_sprite=spr_playerpal
 
 areaEntry=1 ///For the player to start
@@ -20,6 +20,7 @@ enemyID=0
 playerNO=1
 chardraw=draw_player;
 
+showp1=0;
 
 
 ///Player Default Setup - their stats changes from their end step scripts instead
@@ -134,19 +135,23 @@ WinSpr=spr_viva_win
 WinSnd=snd_viva13
 hasCut=1
 
+controlNO=1
 
 global.multiMode=1
 if instance_number(oPlayer)=1
-{
-if global.multiMode!=1
+{controlNO=1
+if global.multiMode>1
 with oControl
 {
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper
 {
-p2=instance_create(160,208-16,oPlayer) p2.playerNO=2
-p3=instance_create(160,208+16,oPlayer) p3.playerNO=3
-p4=instance_create(160,208+24,oPlayer) p4.playerNO=4
+if global.multiMode>=2
+{p2=instance_create(160,208-16,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1}
+if global.multiMode>=3
+{p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2}
+if global.multiMode>=4
+{p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3}
 }
 }
 }
@@ -156,10 +161,11 @@ p4=instance_create(160,208+24,oPlayer) p4.playerNO=4
 
 //spawnplayericon()
 
-if instance_number(oPlayer)=99999
+if instance_number(oPlayer)=99999 ///NOT THIS ONE
 with oControl
 {
-p2=instance_create(160,208-16,oPlayer) p2.playerNO=2 p2.character=1
-p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.character=2
-p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.character=3
+p2=instance_create(160,208-16,oPlayer) p2.playerNO=2 p2.character=1 p2.controlNO=2
+p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.character=2 p3.controlNO=3
+p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.character=3 p4.controlNO=4
 }
+
