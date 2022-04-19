@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_goblin_stand","path":"sprites/spr_goblin_stand/spr_goblin_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_goblin_stand",
     "tags": [],
     "resourceType": "GMSequence",

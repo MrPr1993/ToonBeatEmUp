@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_stylefx","path":"sprites/bg_stylefx/bg_stylefx.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_stylefx",
     "tags": [],
     "resourceType": "GMSequence",

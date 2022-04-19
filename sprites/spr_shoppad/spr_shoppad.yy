@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shoppad","path":"sprites/spr_shoppad/spr_shoppad.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shoppad",
     "tags": [],
     "resourceType": "GMSequence",

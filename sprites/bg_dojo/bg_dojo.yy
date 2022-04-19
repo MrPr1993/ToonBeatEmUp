@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_dojo","path":"sprites/bg_dojo/bg_dojo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_dojo",
     "tags": [],
     "resourceType": "GMSequence",

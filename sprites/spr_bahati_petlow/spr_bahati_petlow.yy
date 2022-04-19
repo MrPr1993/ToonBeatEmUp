@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bahati_petlow","path":"sprites/spr_bahati_petlow/spr_bahati_petlow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bahati_petlow",
     "tags": [],
     "resourceType": "GMSequence",

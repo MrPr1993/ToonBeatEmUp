@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_csviva","path":"sprites/spr_csviva/spr_csviva.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_csviva",
     "tags": [],
     "resourceType": "GMSequence",

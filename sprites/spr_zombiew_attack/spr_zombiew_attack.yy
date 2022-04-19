@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_zombiew_attack","path":"sprites/spr_zombiew_attack/spr_zombiew_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_zombiew_attack",
     "tags": [],
     "resourceType": "GMSequence",

@@ -1,6 +1,6 @@
 function musicplaystart(argument0) {
 	global.CurrentMusic=argument0
-
+global.MusicFade=1
 	if global.CurrentMusic=-1 audio_stop_all()
 	else
 	{audio_stop_all()

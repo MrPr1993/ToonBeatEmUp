@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dastardly_laugh","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dastardly_laugh",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ninjapal","path":"sprites/spr_ninjapal/spr_ninjapal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ninjapal",
     "tags": [],
     "resourceType": "GMSequence",

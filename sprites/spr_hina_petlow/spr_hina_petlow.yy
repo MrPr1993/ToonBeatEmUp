@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hina_petlow","path":"sprites/spr_hina_petlow/spr_hina_petlow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hina_petlow",
     "tags": [],
     "resourceType": "GMSequence",

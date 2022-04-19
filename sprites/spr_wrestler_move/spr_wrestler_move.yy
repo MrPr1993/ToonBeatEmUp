@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wrestler_move","path":"sprites/spr_wrestler_move/spr_wrestler_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wrestler_move",
     "tags": [],
     "resourceType": "GMSequence",

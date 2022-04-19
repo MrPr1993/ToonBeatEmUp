@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_head","path":"sprites/spr_ghost_head/spr_ghost_head.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_head",
     "tags": [],
     "resourceType": "GMSequence",

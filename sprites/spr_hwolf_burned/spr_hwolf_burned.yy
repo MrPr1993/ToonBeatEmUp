@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hwolf_burned","path":"sprites/spr_hwolf_burned/spr_hwolf_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hwolf_burned",
     "tags": [],
     "resourceType": "GMSequence",

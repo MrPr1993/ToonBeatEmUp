@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_slime_stand","path":"sprites/spr_slime_stand/spr_slime_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_slime_stand",
     "tags": [],
     "resourceType": "GMSequence",

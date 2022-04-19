@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shopgirl_face","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shopgirl_face",
     "tags": [],
     "resourceType": "GMSequence",

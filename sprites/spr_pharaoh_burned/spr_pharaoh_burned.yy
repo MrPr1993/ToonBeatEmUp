@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pharaoh_burned","path":"sprites/spr_pharaoh_burned/spr_pharaoh_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pharaoh_burned",
     "tags": [],
     "resourceType": "GMSequence",

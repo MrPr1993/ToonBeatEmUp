@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_frozen","path":"sprites/spr_oni_frozen/spr_oni_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_frozen",
     "tags": [],
     "resourceType": "GMSequence",

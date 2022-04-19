@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_siren_move","path":"sprites/spr_siren_move/spr_siren_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_siren_move",
     "tags": [],
     "resourceType": "GMSequence",

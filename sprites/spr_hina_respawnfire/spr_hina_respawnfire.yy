@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hina_respawnfire","path":"sprites/spr_hina_respawnfire/spr_hina_respawnfire.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hina_respawnfire",
     "tags": [],
     "resourceType": "GMSequence",

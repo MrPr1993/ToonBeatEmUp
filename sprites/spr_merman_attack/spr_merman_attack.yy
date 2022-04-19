@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_attack","path":"sprites/spr_merman_attack/spr_merman_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_attack",
     "tags": [],
     "resourceType": "GMSequence",

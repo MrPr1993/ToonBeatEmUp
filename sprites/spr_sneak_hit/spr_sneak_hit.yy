@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sneak_hit","path":"sprites/spr_sneak_hit/spr_sneak_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sneak_hit",
     "tags": [],
     "resourceType": "GMSequence",

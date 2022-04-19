@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sofia_handgun","path":"sprites/spr_sofia_handgun/spr_sofia_handgun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sofia_handgun",
     "tags": [],
     "resourceType": "GMSequence",

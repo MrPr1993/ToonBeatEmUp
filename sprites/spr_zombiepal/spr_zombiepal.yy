@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_zombiepal","path":"sprites/spr_zombiepal/spr_zombiepal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_zombiepal",
     "tags": [],
     "resourceType": "GMSequence",

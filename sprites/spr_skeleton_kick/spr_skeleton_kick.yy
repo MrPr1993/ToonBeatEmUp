@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeleton_kick","path":"sprites/spr_skeleton_kick/spr_skeleton_kick.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skeleton_kick",
     "tags": [],
     "resourceType": "GMSequence",

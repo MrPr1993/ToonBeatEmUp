@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bahati_respawn","path":"sprites/spr_bahati_respawn/spr_bahati_respawn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bahati_respawn",
     "tags": [],
     "resourceType": "GMSequence",

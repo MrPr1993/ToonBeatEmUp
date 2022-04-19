@@ -564,6 +564,8 @@ shader_reset()
 
 draw_sprite_ext(spr_gametitle,0,160,round(titlescreenY),titlescreenXscale,1,0,c_black,titleObjectWhite)
 
+
+
 if iconShow>90
 {
 if iconShow>210-60
@@ -577,7 +579,7 @@ draw_set_color(c_white) draw_set_alpha(1)
 }
 else
 {
-if  iconSel=spr_mrpr1993 and noIcon=0 {iconSel=spr_scicon iconShow+=160}
+if iconSel=spr_mrpr1993 and noIcon=0 {iconSel=spr_scicon iconShow+=160}
 BlackY+=8
 draw_set_color(c_black) draw_set_alpha(iconBlack)
 draw_rectangle(-4,-2-BlackY,344,240+2-BlackY,false)
@@ -601,15 +603,14 @@ if titlescreenY>121
 titlescreenXscale=lerp(titlescreenXscale,1.5,0.2)
 else titlescreenXscale=lerp(titlescreenXscale,1,0.2)
 
-
-
 if titlescreenY<121
 {titleFlashFX=0 if titleObjectWhite>0 titleObjectWhite-=0.02 else titleObjectWhite=0
 titleFlashTime-=1 if titleFlashTime=0 {if titleShow=0 titleShow=1}
 }
 
 if titleShow=1
-{draw_set_color(c_white) titleImg+=0.1
+{
+draw_set_color(c_white) titleImg+=0.1
 draw_sprite_ext(spr_gametitle,titleImg,160,round(titlescreenY),1,1,0,c_white,1)
 draw_set_alpha(titleSquareFX) titleSquareFX-=0.02 if titleSquareFX=0.02 if global.MenuSkip=0
 PlaySound(choose(snd_titlescreen,snd_titlescreen2,snd_titlescreen3,snd_titlescreen4))

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ninjabun_cigar","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ninjabun_cigar",
     "tags": [],
     "resourceType": "GMSequence",

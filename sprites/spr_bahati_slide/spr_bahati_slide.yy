@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bahati_slide","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bahati_slide",
     "tags": [],
     "resourceType": "GMSequence",

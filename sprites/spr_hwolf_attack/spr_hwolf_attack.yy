@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hwolf_attack","path":"sprites/spr_hwolf_attack/spr_hwolf_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hwolf_attack",
     "tags": [],
     "resourceType": "GMSequence",

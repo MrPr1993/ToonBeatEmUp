@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_samurai_move","path":"sprites/spr_samurai_move/spr_samurai_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_samurai_move",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hina_itemthrow","path":"sprites/spr_hina_itemthrow/spr_hina_itemthrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hina_itemthrow",
     "tags": [],
     "resourceType": "GMSequence",

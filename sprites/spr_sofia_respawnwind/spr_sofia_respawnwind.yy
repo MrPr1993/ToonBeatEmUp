@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sofia_respawnwind","path":"sprites/spr_sofia_respawnwind/spr_sofia_respawnwind.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sofia_respawnwind",
     "tags": [],
     "resourceType": "GMSequence",

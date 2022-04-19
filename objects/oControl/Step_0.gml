@@ -116,10 +116,10 @@ global.P4Score=0
 
 global.GlobalBeta=betatest
 
-if global.CurrentMusic!=-1
-audio_sound_gain(global.CurrentMusic, 0+MusicFadeAdd, 0);
+//if global.CurrentMusic!=-1
+//audio_sound_gain(global.CurrentMusic, 0+MusicFadeAdd, 0);
 
-if MusicFade=1 MusicFadeAdd-=0.01 else MusicFadeAdd=1
+if MusicFade=1 global.MusicFade-=0.01
 
 if room=rm_titlescreen
 controller_setup()

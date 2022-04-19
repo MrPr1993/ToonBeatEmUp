@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bahati_handgun","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bahati_handgun",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sofia_respawn","path":"sprites/spr_sofia_respawn/spr_sofia_respawn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sofia_respawn",
     "tags": [],
     "resourceType": "GMSequence",

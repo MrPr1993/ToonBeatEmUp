@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_samurai_flat","path":"sprites/spr_samurai_flat/spr_samurai_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_samurai_flat",
     "tags": [],
     "resourceType": "GMSequence",

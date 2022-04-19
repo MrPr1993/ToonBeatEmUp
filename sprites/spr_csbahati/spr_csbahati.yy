@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_csbahati","path":"sprites/spr_csbahati/spr_csbahati.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_csbahati",
     "tags": [],
     "resourceType": "GMSequence",

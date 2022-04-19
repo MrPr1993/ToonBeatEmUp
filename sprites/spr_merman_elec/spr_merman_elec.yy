@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_elec","path":"sprites/spr_merman_elec/spr_merman_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_elec",
     "tags": [],
     "resourceType": "GMSequence",

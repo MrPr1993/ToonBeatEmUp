@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hwolf_stand","path":"sprites/spr_hwolf_stand/spr_hwolf_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hwolf_stand",
     "tags": [],
     "resourceType": "GMSequence",

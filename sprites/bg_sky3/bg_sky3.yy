@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_sky3","path":"sprites/bg_sky3/bg_sky3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_sky3",
     "tags": [],
     "resourceType": "GMSequence",

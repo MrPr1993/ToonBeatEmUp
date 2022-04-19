@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wolfita_block","path":"sprites/spr_wolfita_block/spr_wolfita_block.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wolfita_block",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wrestler_burned","path":"sprites/spr_wrestler_burned/spr_wrestler_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wrestler_burned",
     "tags": [],
     "resourceType": "GMSequence",

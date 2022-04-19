@@ -13,8 +13,12 @@ noIcon=0
 
 continueMusic=-1
 
+global.MusicFade=0
+
 if !variable_global_exists("CurrentMusic")
 {
+global.SetIntro=0
+	
 global.CurrentMusic=-1
 global.MenuSkip=0
 global.CRTfx=1
@@ -420,9 +424,6 @@ if !variable_global_exists("LOADSET")
 {global.LOADSET=0
 settings_load()
 }
-
-
-
 
 
 enemySpawn=global.enemytest

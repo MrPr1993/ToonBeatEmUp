@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ninjabun_card","path":"sprites/spr_ninjabun_card/spr_ninjabun_card.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ninjabun_card",
     "tags": [],
     "resourceType": "GMSequence",

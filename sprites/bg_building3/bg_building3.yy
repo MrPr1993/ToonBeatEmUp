@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_building3","path":"sprites/bg_building3/bg_building3.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_building3",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_stand","path":"sprites/spr_oni_stand/spr_oni_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_stand",
     "tags": [],
     "resourceType": "GMSequence",

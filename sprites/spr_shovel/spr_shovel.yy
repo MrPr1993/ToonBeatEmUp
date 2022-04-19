@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_shovel","path":"sprites/spr_shovel/spr_shovel.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_shovel",
     "tags": [],
     "resourceType": "GMSequence",

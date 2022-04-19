@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_flat","path":"sprites/spr_merman_flat/spr_merman_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_flat",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_frozen","path":"sprites/spr_cobra_frozen/spr_cobra_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_frozen",
     "tags": [],
     "resourceType": "GMSequence",

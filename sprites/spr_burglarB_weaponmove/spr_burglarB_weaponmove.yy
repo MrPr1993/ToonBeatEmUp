@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglarB_weaponmove","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglarB_weaponmove",
     "tags": [],
     "resourceType": "GMSequence",

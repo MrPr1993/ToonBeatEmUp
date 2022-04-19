@@ -47,4 +47,7 @@ BurnSpr=spr_sandbag_hit
 FrozenSpr=spr_sandbag_hit
 
 
+spritepos_setup(1,24,2,40)
 
+spritepos_setup(2,1,1,0)
+spritepos_setup(2,0,2,80)

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_plant_frozen","path":"sprites/spr_plant_frozen/spr_plant_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_plant_frozen",
     "tags": [],
     "resourceType": "GMSequence",

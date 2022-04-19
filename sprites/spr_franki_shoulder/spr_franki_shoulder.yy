@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_shoulder","path":"sprites/spr_franki_shoulder/spr_franki_shoulder.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_shoulder",
     "tags": [],
     "resourceType": "GMSequence",

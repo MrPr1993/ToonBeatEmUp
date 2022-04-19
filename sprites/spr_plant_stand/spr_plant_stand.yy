@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_plant_stand","path":"sprites/spr_plant_stand/spr_plant_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_plant_stand",
     "tags": [],
     "resourceType": "GMSequence",

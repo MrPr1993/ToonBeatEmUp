@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pharaoh_intro","path":"sprites/spr_pharaoh_intro/spr_pharaoh_intro.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pharaoh_intro",
     "tags": [],
     "resourceType": "GMSequence",

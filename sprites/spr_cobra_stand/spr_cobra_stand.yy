@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_stand","path":"sprites/spr_cobra_stand/spr_cobra_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_stand",
     "tags": [],
     "resourceType": "GMSequence",

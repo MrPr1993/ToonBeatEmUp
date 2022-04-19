@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_viva_petlow","path":"sprites/spr_viva_petlow/spr_viva_petlow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_viva_petlow",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_femburglar_cut2","path":"sprites/spr_femburglar_cut2/spr_femburglar_cut2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_femburglar_cut2",
     "tags": [],
     "resourceType": "GMSequence",

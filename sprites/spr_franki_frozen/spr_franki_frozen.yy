@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_frozen","path":"sprites/spr_franki_frozen/spr_franki_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_frozen",
     "tags": [],
     "resourceType": "GMSequence",

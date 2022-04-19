@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_witch_stand","path":"sprites/spr_witch_stand/spr_witch_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_witch_stand",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sneak_stand","path":"sprites/spr_sneak_stand/spr_sneak_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sneak_stand",
     "tags": [],
     "resourceType": "GMSequence",

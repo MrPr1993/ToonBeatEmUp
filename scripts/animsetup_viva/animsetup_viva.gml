@@ -816,7 +816,6 @@ selfatk.recovery=30
 
 	if anim=38 ///Throw Backards
 	{
-
 	prevanim=38
 	isThrow=1 recovery=10
 	throwing=1
@@ -833,26 +832,26 @@ selfatk.recovery=30
 	targetID.atk=0
 	targetID.hurt=1
 	///Drag Enemy
-	 if animFrame=clamp(animFrame,0,0.9)
+	 if animFrame=clamp(animFrame,0,0.5)
 	{image_index=0 throwStrengthTime=90 throwStrengthMax=0
 	targetID.targetHeightHit=16 grabX=16*image_xscale grabY=1 grabZ=0 targetID.image_xscale=-image_xscale}
 
+	 if animFrame=clamp(animFrame,0.6,0.9)
+	{image_index=1 throwStrengthTime=90 throwStrengthMax=0
+	targetID.targetHeightHit=16 grabX=16*image_xscale grabY=-60 grabZ=0 targetID.image_xscale=-image_xscale}
+
 	  if animFrame=clamp(animFrame,1,1.9)
-	{  if image_index!=1 image_xscale=-image_xscale image_index=1
+	{  if image_index!=2 image_xscale=-image_xscale image_index=2
 	targetID.targetHeightHit=18 grabX=0 grabY=1 grabZ=-72+shake targetID.image_xscale=image_xscale
 	targetID.hitBack=1
-
 	//Check if enemy is too heavy to be picked up and thrown
 	////////////////
-	enemy_heavythrow(1,1.5,3,2.1)
-	//////////
-
-
+	enemy_heavythrow(1,1.5,3,2.1)	//////////
 	}
 
 	 if animFrame=clamp(animFrame,2,2.9)
-	{image_index=2
-	targetID.animFrame=5 grabX=-4*image_xscale grabY=1 grabZ=-70 targetID.image_xscale=-image_xscale}
+	{if animFrame<2.5 image_index=3 else image_index=4
+	targetID.animFrame=5 grabX=-4*image_xscale grabY=1 grabZ=-70}
 
 	 if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
 	if animFrame=clamp(animFrame,0,1.5)
@@ -861,13 +860,11 @@ selfatk.recovery=30
 	super+=0.25*canSuper
 	targetID.thrownAtk=1
 	targetID.thrownAtkDmg=0.1 ///Damage when the thrown targets hits another enemy
-
-	if targetID.hp<=0  PlayerScore+=targetID.points
+    if targetID.hp<=0  PlayerScore+=targetID.points
 	else PlayerScore+=targetID.pointshit
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
-
 	with targetID
 	{
 	PlaySound(snd_swing)
@@ -877,7 +874,6 @@ selfatk.recovery=30
 	hit=1
 	ground=0
 	zSpeed=-6
-	image_xscale=-image_xscale
 	sentflying=5*image_xscale///Throw Distance
 	image_index=3 sprite_index=ThrownSpr
 	animFrame=3
@@ -905,7 +901,7 @@ selfatk.recovery=30
 	if prevanim=37///Throw Fowards
 	{image_index=animFrame image_speed=0}
 	if prevanim=38///Throw Back
-	{if animFrame>3.5 image_index=0 image_speed=0}
+	{if animFrame>3.5 image_index=0 else if image_index<4.5 image_index+=0.25 image_speed=0}
 	throwing=0
 	animFrame+=0.1 if animFrame>4.5 {hurt=0 canmove=1 Throw=0}
 	}
@@ -1065,13 +1061,15 @@ selfatk.recovery=30
 
 	sprite_index=spr_viva_charge
 
-	atkcol_set(0,0,0,2.75,2,100) MoveType=3 damage=0.2
+	atkcol_set(0,0,0,4,3,100) MoveType=3 damage=0.2
 
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.2) if animFrame=2 
 	{PlaySound(snd_viva6) PlaySound(snd_thunder) PlaySound(snd_hitground)
 	oControl.quakeFXTime=8
 	elec=instance_create_depth(x,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z
+	elec=instance_create_depth(x+48,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z
+	elec=instance_create_depth(x-48,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z
 	}
 	frame_set(2,2,0.5) if animFrame=clamp(animFrame,2,2.5) atk=1 else atk=0
 	frame_set(3,3,0.25)

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_martian_move",
     "tags": [],
     "resourceType": "GMSequence",

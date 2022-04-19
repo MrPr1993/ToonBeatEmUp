@@ -42,14 +42,19 @@ function enemy_ai() {
 	{anim=1
 	{dashing=0 doubledash=0}
 
-	if x!=clamp(x,targetX-rangeX-64,targetX+rangeX+64)
+	if x!=clamp(x,targetX-rangeX-8-sprite_get_width(mask_index)/2,targetX+rangeX+8+sprite_get_width(mask_index)/2)
 	{if x<targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
 
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
 	if y!=clamp(y,targetY,targetY)
 	{
 		if y!=clamp(y,targetY-rangeY,targetY+rangeY)
-	{if y>targetY {anim=1 key_up=1 key_down=0} else {anim=1 key_down=1 key_up=0}}
+	{if y>targetY {anim=1 key_up=1 key_down=0} else {anim=1 key_down=1 key_up=0}
+	
+
+		if image_xscale=1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
+	
+	}
 	else {key_up=0 key_down=0}
 	}
 	else {key_up=0 key_down=0}
@@ -57,10 +62,20 @@ function enemy_ai() {
 
 	if canAttack=1 ///Try to get to the opponent
 	{anim=1
-	if x!=clamp(x,targetX-rangeX-64,targetX+rangeX+64)
-	{if x>targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
+	if x!=clamp(x,targetX-rangeX-8-sprite_get_width(mask_index)/2,targetX+rangeX+8+sprite_get_width(mask_index)/2)
+	{if image_xscale=-1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
+		}else 
+		{if image_xscale=-1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}	
+		if y!=clamp(y,-targetY/2,targetY/2) {
+			//anim=0 key_left=0 key_right=0
+		
+			}else 
+			{
+			if place_meeting(x,y,targetEnemy)
+			if image_xscale=1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}	
+			if canAttack!=2 {key_left=0 key_right=0 anim=0 canAttack=2 alarm[1]=8}
+			}
 		}
-
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
 	if y!=clamp(y,targetY,targetY)
 	{

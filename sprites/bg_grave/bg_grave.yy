@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_grave","path":"sprites/bg_grave/bg_grave.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_grave",
     "tags": [],
     "resourceType": "GMSequence",

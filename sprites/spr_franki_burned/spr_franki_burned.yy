@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_burned","path":"sprites/spr_franki_burned/spr_franki_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_burned",
     "tags": [],
     "resourceType": "GMSequence",

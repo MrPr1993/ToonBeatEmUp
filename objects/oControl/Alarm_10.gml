@@ -4,5 +4,5 @@ isPaused=0
 {
 if room=rm_titlescreen
 if pressStart=0
-room=rm_newspaper
+room=rm_hiscore
 }

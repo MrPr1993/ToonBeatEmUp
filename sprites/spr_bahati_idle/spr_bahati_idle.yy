@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bahati_idle","path":"sprites/spr_bahati_idle/spr_bahati_idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bahati_idle",
     "tags": [],
     "resourceType": "GMSequence",

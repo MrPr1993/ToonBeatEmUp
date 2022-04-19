@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_hit","path":"sprites/spr_franki_hit/spr_franki_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_hit",
     "tags": [],
     "resourceType": "GMSequence",

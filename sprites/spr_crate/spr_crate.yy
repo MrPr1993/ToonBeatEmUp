@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_crate","path":"sprites/spr_crate/spr_crate.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_crate",
     "tags": [],
     "resourceType": "GMSequence",

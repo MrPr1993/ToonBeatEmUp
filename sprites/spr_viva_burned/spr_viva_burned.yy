@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_viva_burned","path":"sprites/spr_viva_burned/spr_viva_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_viva_burned",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_harpy_stand","path":"sprites/spr_harpy_stand/spr_harpy_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_harpy_stand",
     "tags": [],
     "resourceType": "GMSequence",

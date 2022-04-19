@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_move","path":"sprites/spr_franki_move/spr_franki_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_move",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_greataxeobj","path":"sprites/spr_ghost_greataxeobj/spr_ghost_greataxeobj.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_greataxeobj",
     "tags": [],
     "resourceType": "GMSequence",

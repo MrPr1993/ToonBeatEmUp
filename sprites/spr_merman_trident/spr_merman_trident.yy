@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_trident","path":"sprites/spr_merman_trident/spr_merman_trident.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_trident",
     "tags": [],
     "resourceType": "GMSequence",

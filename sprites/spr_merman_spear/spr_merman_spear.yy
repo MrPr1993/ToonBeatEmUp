@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_spear","path":"sprites/spr_merman_spear/spr_merman_spear.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_spear",
     "tags": [],
     "resourceType": "GMSequence",

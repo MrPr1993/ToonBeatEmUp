@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_catman_flat","path":"sprites/spr_catman_flat/spr_catman_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_catman_flat",
     "tags": [],
     "resourceType": "GMSequence",

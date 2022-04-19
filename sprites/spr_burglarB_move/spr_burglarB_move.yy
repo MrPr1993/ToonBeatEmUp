@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglarB_move","path":"sprites/spr_burglarB_move/spr_burglarB_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglarB_move",
     "tags": [],
     "resourceType": "GMSequence",

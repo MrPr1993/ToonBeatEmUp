@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_plant_burned","path":"sprites/spr_plant_burned/spr_plant_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_plant_burned",
     "tags": [],
     "resourceType": "GMSequence",

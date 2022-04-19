@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_prince_move","path":"sprites/spr_prince_move/spr_prince_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_prince_move",
     "tags": [],
     "resourceType": "GMSequence",

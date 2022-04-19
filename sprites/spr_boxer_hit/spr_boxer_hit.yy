@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boxer_hit","path":"sprites/spr_boxer_hit/spr_boxer_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boxer_hit",
     "tags": [],
     "resourceType": "GMSequence",

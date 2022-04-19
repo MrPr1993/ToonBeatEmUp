@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_frozen","path":"sprites/spr_merman_frozen/spr_merman_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_frozen",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_wave","path":"sprites/spr_franki_wave/spr_franki_wave.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_wave",
     "tags": [],
     "resourceType": "GMSequence",

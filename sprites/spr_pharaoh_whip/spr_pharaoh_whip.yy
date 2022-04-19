@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pharaoh_whip","path":"sprites/spr_pharaoh_whip/spr_pharaoh_whip.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pharaoh_whip",
     "tags": [],
     "resourceType": "GMSequence",

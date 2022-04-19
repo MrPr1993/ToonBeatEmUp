@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pharaoh_drop","path":"sprites/spr_pharaoh_drop/spr_pharaoh_drop.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pharaoh_drop",
     "tags": [],
     "resourceType": "GMSequence",

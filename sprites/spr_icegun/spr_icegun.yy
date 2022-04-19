@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_icegun","path":"sprites/spr_icegun/spr_icegun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_icegun",
     "tags": [],
     "resourceType": "GMSequence",

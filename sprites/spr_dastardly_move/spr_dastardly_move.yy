@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dastardly_move","path":"sprites/spr_dastardly_move/spr_dastardly_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dastardly_move",
     "tags": [],
     "resourceType": "GMSequence",

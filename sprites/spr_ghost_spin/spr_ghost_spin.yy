@@ -91,7 +91,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_spin","path":"sprites/spr_ghost_spin/spr_ghost_spin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_spin",
     "tags": [],
     "resourceType": "GMSequence",

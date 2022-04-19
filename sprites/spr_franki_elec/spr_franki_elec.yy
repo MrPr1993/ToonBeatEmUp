@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_elec","path":"sprites/spr_franki_elec/spr_franki_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_elec",
     "tags": [],
     "resourceType": "GMSequence",

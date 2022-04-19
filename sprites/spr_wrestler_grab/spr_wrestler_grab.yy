@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wrestler_grab","path":"sprites/spr_wrestler_grab/spr_wrestler_grab.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wrestler_grab",
     "tags": [],
     "resourceType": "GMSequence",

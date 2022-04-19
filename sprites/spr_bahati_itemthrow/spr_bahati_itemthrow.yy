@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bahati_itemthrow","path":"sprites/spr_bahati_itemthrow/spr_bahati_itemthrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bahati_itemthrow",
     "tags": [],
     "resourceType": "GMSequence",

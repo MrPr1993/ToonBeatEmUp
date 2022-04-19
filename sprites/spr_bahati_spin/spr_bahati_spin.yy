@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bahati_spin","path":"sprites/spr_bahati_spin/spr_bahati_spin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bahati_spin",
     "tags": [],
     "resourceType": "GMSequence",

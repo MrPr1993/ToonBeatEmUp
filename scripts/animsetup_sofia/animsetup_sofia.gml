@@ -1104,13 +1104,15 @@ weaponanim(weaponspr,weaponIndex,-31,-30,90*image_xscale,weaponcolor)
 if animFrame<1
 	sprite_index=spr_sofia_charge
 
-	atkcol_set(0,0,0,2,2,100) MoveType=2 damage=0.18
+	atkcol_set(0,0,0,3.5,2,100) MoveType=2 damage=0.18
 
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.2) if animFrame=2 
 	{PlaySound(snd_sofia3) PlaySound(snd_swing5)
 	oControl.quakeFXTime=8
-	elec=instance_create_depth(x,y+1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z elec.sprite_index=spr_sofia_chargewind
+	elec=instance_create_depth(x,y+1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z elec.sprite_index=spr_sofia_chargewind elec.hspeed=4
+	elec=instance_create_depth(x,y+1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z elec.sprite_index=spr_sofia_chargewind elec.hspeed=-4
+	
 	}
 	frame_set(2,2,0.5) if animFrame=clamp(animFrame,2,2.5) {atk=1 zSpeed=-8} else atk=0
 	frame_set(3,3,0.25)

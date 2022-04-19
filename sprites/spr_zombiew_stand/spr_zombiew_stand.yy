@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_zombiew_stand","path":"sprites/spr_zombiew_stand/spr_zombiew_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_zombiew_stand",
     "tags": [],
     "resourceType": "GMSequence",

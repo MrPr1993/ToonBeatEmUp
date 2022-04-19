@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_viva_respawn","path":"sprites/spr_viva_respawn/spr_viva_respawn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_viva_respawn",
     "tags": [],
     "resourceType": "GMSequence",

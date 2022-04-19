@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_hit","path":"sprites/spr_oni_hit/spr_oni_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_hit",
     "tags": [],
     "resourceType": "GMSequence",

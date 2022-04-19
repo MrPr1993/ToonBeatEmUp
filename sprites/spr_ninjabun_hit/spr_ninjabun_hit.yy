@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ninjabun_hit","path":"sprites/spr_ninjabun_hit/spr_ninjabun_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ninjabun_hit",
     "tags": [],
     "resourceType": "GMSequence",

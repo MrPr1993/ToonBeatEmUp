@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_samurai_frozen","path":"sprites/spr_samurai_frozen/spr_samurai_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_samurai_frozen",
     "tags": [],
     "resourceType": "GMSequence",

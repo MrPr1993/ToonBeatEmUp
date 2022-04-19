@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeleton_bonethrow","path":"sprites/spr_skeleton_bonethrow/spr_skeleton_bonethrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skeleton_bonethrow",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_siren_elec","path":"sprites/spr_siren_elec/spr_siren_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_siren_elec",
     "tags": [],
     "resourceType": "GMSequence",

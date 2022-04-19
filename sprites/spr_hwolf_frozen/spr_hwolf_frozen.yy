@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hwolf_frozen","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hwolf_frozen",
     "tags": [],
     "resourceType": "GMSequence",

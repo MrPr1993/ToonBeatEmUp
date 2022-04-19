@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cshina","path":"sprites/spr_cshina/spr_cshina.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cshina",
     "tags": [],
     "resourceType": "GMSequence",

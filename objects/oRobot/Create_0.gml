@@ -29,7 +29,7 @@ hp=1
 maxhp=1
 hplayer=0
 walkSpeed=0.5
-rangeY=4
+rangeY=2
 rangeAtk=320
 RunMoveSpeedDecrease=0.2
 

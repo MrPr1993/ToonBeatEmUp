@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_fan","path":"sprites/spr_oni_fan/spr_oni_fan.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_fan",
     "tags": [],
     "resourceType": "GMSequence",

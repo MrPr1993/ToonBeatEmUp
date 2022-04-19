@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wrestler_hit","path":"sprites/spr_wrestler_hit/spr_wrestler_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wrestler_hit",
     "tags": [],
     "resourceType": "GMSequence",

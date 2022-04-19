@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ninjabun_run","path":"sprites/spr_ninjabun_run/spr_ninjabun_run.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ninjabun_run",
     "tags": [],
     "resourceType": "GMSequence",

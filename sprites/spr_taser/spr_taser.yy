@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_taser","path":"sprites/spr_taser/spr_taser.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_taser",
     "tags": [],
     "resourceType": "GMSequence",

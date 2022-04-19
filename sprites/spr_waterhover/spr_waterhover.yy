@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_waterhover","path":"sprites/spr_waterhover/spr_waterhover.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_waterhover",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_lightpost","path":"sprites/bg_lightpost/bg_lightpost.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_lightpost",
     "tags": [],
     "resourceType": "GMSequence",

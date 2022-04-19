@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_siren_proj1","path":"sprites/spr_siren_proj1/spr_siren_proj1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_siren_proj1",
     "tags": [],
     "resourceType": "GMSequence",

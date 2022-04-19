@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hina_attackair2","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hina_attackair2",
     "tags": [],
     "resourceType": "GMSequence",

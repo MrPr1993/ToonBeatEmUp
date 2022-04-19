@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_frankbossbg","path":"sprites/bg_frankbossbg/bg_frankbossbg.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_frankbossbg",
     "tags": [],
     "resourceType": "GMSequence",

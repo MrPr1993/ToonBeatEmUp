@@ -159,7 +159,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_robot_hit","path":"sprites/spr_robot_hit/spr_robot_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_robot_hit",
     "tags": [],
     "resourceType": "GMSequence",

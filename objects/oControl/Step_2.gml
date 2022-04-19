@@ -6,7 +6,7 @@
 if global.BGMvolume>1
 {
 audio_resume_sound(global.CurrentMusic)
-audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)
+audio_sound_gain(global.CurrentMusic,(global.BGMvolume/100)*global.MusicFade,0)
 }
 else
 {

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglar_stand","path":"sprites/spr_burglar_stand/spr_burglar_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglar_stand",
     "tags": [],
     "resourceType": "GMSequence",

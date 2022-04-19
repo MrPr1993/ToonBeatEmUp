@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_viva_map","path":"sprites/spr_viva_map/spr_viva_map.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_viva_map",
     "tags": [],
     "resourceType": "GMSequence",

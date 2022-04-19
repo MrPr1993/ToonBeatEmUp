@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_zombiew_flat","path":"sprites/spr_zombiew_flat/spr_zombiew_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_zombiew_flat",
     "tags": [],
     "resourceType": "GMSequence",

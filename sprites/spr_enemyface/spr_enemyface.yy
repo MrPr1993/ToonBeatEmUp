@@ -135,6 +135,9 @@
     {"compositeImage":{"FrameId":{"name":"51cc3641-d00c-4450-9449-3e30461772cb","path":"sprites/spr_enemyface/spr_enemyface.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"51cc3641-d00c-4450-9449-3e30461772cb","path":"sprites/spr_enemyface/spr_enemyface.yy",},"LayerId":{"name":"02f7e1a7-6fe6-4f9a-9d05-098446814787","path":"sprites/spr_enemyface/spr_enemyface.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_enemyface","path":"sprites/spr_enemyface/spr_enemyface.yy",},"resourceVersion":"1.0","name":"51cc3641-d00c-4450-9449-3e30461772cb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6b5e078a-a99b-48b9-ad7d-92a218b5fbfb","path":"sprites/spr_enemyface/spr_enemyface.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6b5e078a-a99b-48b9-ad7d-92a218b5fbfb","path":"sprites/spr_enemyface/spr_enemyface.yy",},"LayerId":{"name":"02f7e1a7-6fe6-4f9a-9d05-098446814787","path":"sprites/spr_enemyface/spr_enemyface.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_enemyface","path":"sprites/spr_enemyface/spr_enemyface.yy",},"resourceVersion":"1.0","name":"6b5e078a-a99b-48b9-ad7d-92a218b5fbfb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_enemyface","path":"sprites/spr_enemyface/spr_enemyface.yy",},
@@ -144,7 +147,7 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 37.0,
+    "length": 38.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -186,6 +189,7 @@
             {"id":"e64657ef-f50a-4c2a-b94f-ec53cc3d51a2","Key":34.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fe7ab49e-dc0c-4d21-8310-8883f36af4ee","path":"sprites/spr_enemyface/spr_enemyface.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"88f93701-2ad4-48a6-8c93-4d1e8efeb8e1","Key":35.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b93b8eb-eaac-4b26-9003-6069521962ec","path":"sprites/spr_enemyface/spr_enemyface.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e9c80ec0-c6b6-4df9-a9e1-de433ea39c94","Key":36.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"51cc3641-d00c-4450-9449-3e30461772cb","path":"sprites/spr_enemyface/spr_enemyface.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"72d86e2f-a0cc-47a6-9992-6adf17230007","Key":37.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6b5e078a-a99b-48b9-ad7d-92a218b5fbfb","path":"sprites/spr_enemyface/spr_enemyface.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -203,7 +207,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemyface","path":"sprites/spr_enemyface/spr_enemyface.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

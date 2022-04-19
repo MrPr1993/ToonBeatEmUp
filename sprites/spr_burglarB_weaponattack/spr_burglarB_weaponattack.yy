@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglarB_weaponattack","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglarB_weaponattack",
     "tags": [],
     "resourceType": "GMSequence",

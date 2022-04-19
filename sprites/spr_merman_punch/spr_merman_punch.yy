@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_punch","path":"sprites/spr_merman_punch/spr_merman_punch.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_punch",
     "tags": [],
     "resourceType": "GMSequence",

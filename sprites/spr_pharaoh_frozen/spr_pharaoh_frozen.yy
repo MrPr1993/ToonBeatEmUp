@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pharaoh_frozen","path":"sprites/spr_pharaoh_frozen/spr_pharaoh_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pharaoh_frozen",
     "tags": [],
     "resourceType": "GMSequence",

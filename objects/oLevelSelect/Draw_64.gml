@@ -63,8 +63,8 @@ if level=22 draw_set_color(c_maroon) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("FEATS"));
 if level=23 draw_set_color(c_maroon) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("SHOP"));
-if level=24 draw_set_color(c_maroon) else draw_set_color(c_red)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=24 draw_set_color(c_yellow) else draw_set_color(c_red)
+draw_text(10, yy++ * 10, string_hash_to_newline("TRAINING"));
 if level=25 draw_set_color(c_maroon) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=26 draw_set_color(c_maroon) else draw_set_color(c_red)
@@ -78,7 +78,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=30 draw_set_color(c_yellow) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("MERMAID STAGE"));
 if level=31 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(210, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("SWAMP STAGE"));
 if level=32 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=33 draw_set_color(c_yellow) else draw_set_color(c_gray)

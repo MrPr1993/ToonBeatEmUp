@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_plant_eat","path":"sprites/spr_plant_eat/spr_plant_eat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_plant_eat",
     "tags": [],
     "resourceType": "GMSequence",

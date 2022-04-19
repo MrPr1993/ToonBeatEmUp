@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_attack","path":"sprites/spr_oni_attack/spr_oni_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_attack",
     "tags": [],
     "resourceType": "GMSequence",

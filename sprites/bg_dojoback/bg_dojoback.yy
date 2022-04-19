@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_dojoback","path":"sprites/bg_dojoback/bg_dojoback.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_dojoback",
     "tags": [],
     "resourceType": "GMSequence",

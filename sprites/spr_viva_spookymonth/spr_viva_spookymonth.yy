@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_viva_spookymonth","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_viva_spookymonth",
     "tags": [],
     "resourceType": "GMSequence",

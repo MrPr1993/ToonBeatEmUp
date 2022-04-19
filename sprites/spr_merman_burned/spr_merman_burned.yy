@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_burned","path":"sprites/spr_merman_burned/spr_merman_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_burned",
     "tags": [],
     "resourceType": "GMSequence",

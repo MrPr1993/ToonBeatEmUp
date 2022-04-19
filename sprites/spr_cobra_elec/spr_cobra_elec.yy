@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_elec","path":"sprites/spr_cobra_elec/spr_cobra_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_elec",
     "tags": [],
     "resourceType": "GMSequence",

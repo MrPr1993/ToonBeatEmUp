@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_wavefx","path":"sprites/spr_franki_wavefx/spr_franki_wavefx.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_wavefx",
     "tags": [],
     "resourceType": "GMSequence",

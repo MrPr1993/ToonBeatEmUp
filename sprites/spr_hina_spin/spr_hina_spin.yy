@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hina_spin","path":"sprites/spr_hina_spin/spr_hina_spin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hina_spin",
     "tags": [],
     "resourceType": "GMSequence",

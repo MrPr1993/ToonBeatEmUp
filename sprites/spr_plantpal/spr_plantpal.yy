@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_plantpal","path":"sprites/spr_plantpal/spr_plantpal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_plantpal",
     "tags": [],
     "resourceType": "GMSequence",

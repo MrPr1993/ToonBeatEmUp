@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_twoheads_stand","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_twoheads_stand",
     "tags": [],
     "resourceType": "GMSequence",

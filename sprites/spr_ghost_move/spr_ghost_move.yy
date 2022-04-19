@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_move","path":"sprites/spr_ghost_move/spr_ghost_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_move",
     "tags": [],
     "resourceType": "GMSequence",

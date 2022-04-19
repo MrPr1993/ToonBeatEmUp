@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_peticon","path":"sprites/spr_peticon/spr_peticon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_peticon",
     "tags": [],
     "resourceType": "GMSequence",

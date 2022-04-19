@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_catman_frozen","path":"sprites/spr_catman_frozen/spr_catman_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_catman_frozen",
     "tags": [],
     "resourceType": "GMSequence",

@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cssofia","path":"sprites/spr_cssofia/spr_cssofia.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cssofia",
     "tags": [],
     "resourceType": "GMSequence",

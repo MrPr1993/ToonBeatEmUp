@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sofia_petlow","path":"sprites/spr_sofia_petlow/spr_sofia_petlow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sofia_petlow",
     "tags": [],
     "resourceType": "GMSequence",

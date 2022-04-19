@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_creditsart","path":"sprites/spr_creditsart/spr_creditsart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_creditsart",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hwolf_flat","path":"sprites/spr_hwolf_flat/spr_hwolf_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hwolf_flat",
     "tags": [],
     "resourceType": "GMSequence",

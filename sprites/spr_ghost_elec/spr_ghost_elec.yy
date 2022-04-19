@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_elec","path":"sprites/spr_ghost_elec/spr_ghost_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_elec",
     "tags": [],
     "resourceType": "GMSequence",

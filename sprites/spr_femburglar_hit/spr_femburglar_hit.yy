@@ -163,7 +163,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_femburglar_hit","path":"sprites/spr_femburglar_hit/spr_femburglar_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_femburglar_hit",
     "tags": [],
     "resourceType": "GMSequence",

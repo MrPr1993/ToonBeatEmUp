@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_martian_stand","path":"sprites/spr_martian_stand/spr_martian_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_martian_stand",
     "tags": [],
     "resourceType": "GMSequence",

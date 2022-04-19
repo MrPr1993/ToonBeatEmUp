@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_frozen","path":"sprites/spr_ghost_frozen/spr_ghost_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_frozen",
     "tags": [],
     "resourceType": "GMSequence",

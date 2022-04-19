@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglarB_weaponstand","path":"sprites/spr_burglarB_weaponstand/spr_burglarB_weaponstand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglarB_weaponstand",
     "tags": [],
     "resourceType": "GMSequence",

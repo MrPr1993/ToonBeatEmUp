@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_stand","path":"sprites/spr_ghost_stand/spr_ghost_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_stand",
     "tags": [],
     "resourceType": "GMSequence",

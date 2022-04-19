@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_prince_stand","path":"sprites/spr_prince_stand/spr_prince_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_prince_stand",
     "tags": [],
     "resourceType": "GMSequence",

@@ -16,8 +16,6 @@ function ai_actions() {	alarmCheck1=alarm[1]
 
 	if distance_to_object(oEnemy1)<range*3
 	{
-
-
 	if instance_nearest(x,y,oEnemy1).canAttack=0
 	and instance_nearest(x,y,oEnemy1).dead=1
 	and instance_nearest(x,y,oEnemy1).hurt=1
@@ -26,8 +24,6 @@ function ai_actions() {	alarmCheck1=alarm[1]
 	and instance_nearest(x,y,oEnemy1).dead=1
 	and instance_nearest(x,y,oEnemy1).hurt=1
 	{canAttack=2 alarm[1]=choose(60,70,80)}
-
-
 	}
 	else
 	if canAttack=0 {

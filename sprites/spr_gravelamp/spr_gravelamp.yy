@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gravelamp","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_gravelamp",
     "tags": [],
     "resourceType": "GMSequence",

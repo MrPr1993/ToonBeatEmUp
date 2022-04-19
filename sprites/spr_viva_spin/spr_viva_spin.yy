@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_viva_spin","path":"sprites/spr_viva_spin/spr_viva_spin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_viva_spin",
     "tags": [],
     "resourceType": "GMSequence",

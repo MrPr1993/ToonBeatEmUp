@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_elec","path":"sprites/spr_oni_elec/spr_oni_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_elec",
     "tags": [],
     "resourceType": "GMSequence",

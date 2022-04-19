@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_fatburglar_hit","path":"sprites/spr_fatburglar_hit/spr_fatburglar_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_fatburglar_hit",
     "tags": [],
     "resourceType": "GMSequence",

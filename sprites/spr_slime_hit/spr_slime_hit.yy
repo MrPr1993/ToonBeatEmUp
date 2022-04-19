@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_slime_hit","path":"sprites/spr_slime_hit/spr_slime_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_slime_hit",
     "tags": [],
     "resourceType": "GMSequence",

@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hwolf_hit","path":"sprites/spr_hwolf_hit/spr_hwolf_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hwolf_hit",
     "tags": [],
     "resourceType": "GMSequence",

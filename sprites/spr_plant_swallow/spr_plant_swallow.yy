@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_plant_swallow","path":"sprites/spr_plant_swallow/spr_plant_swallow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_plant_swallow",
     "tags": [],
     "resourceType": "GMSequence",

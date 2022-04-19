@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boxerpal","path":"sprites/spr_boxerpal/spr_boxerpal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boxerpal",
     "tags": [],
     "resourceType": "GMSequence",

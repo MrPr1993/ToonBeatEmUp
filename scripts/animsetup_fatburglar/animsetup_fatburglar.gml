@@ -35,8 +35,8 @@ function animsetup_fatburglar() {
 	  }
 	}
 	if sprite_index=AtkSpr
-	{
-	MoveType=0 image_index=animFrame image_speed=0 damage=0.2
+	{if animFrame=0 PlaySoundNoStack(snd_fatburglar2)
+	MoveType=1 image_index=animFrame image_speed=0 damage=0.2
 	if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
 	}
 	if sprite_index=AtkSpr2

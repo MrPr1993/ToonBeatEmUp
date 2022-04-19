@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_flat","path":"sprites/spr_franki_flat/spr_franki_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_flat",
     "tags": [],
     "resourceType": "GMSequence",

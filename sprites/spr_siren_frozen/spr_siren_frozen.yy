@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_siren_frozen","path":"sprites/spr_siren_frozen/spr_siren_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_siren_frozen",
     "tags": [],
     "resourceType": "GMSequence",

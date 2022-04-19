@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_range","path":"sprites/spr_oni_range/spr_oni_range.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_range",
     "tags": [],
     "resourceType": "GMSequence",

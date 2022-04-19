@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_samurai_charge","path":"sprites/spr_samurai_charge/spr_samurai_charge.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_samurai_charge",
     "tags": [],
     "resourceType": "GMSequence",

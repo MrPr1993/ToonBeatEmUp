@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"tl_stage4decor","path":"sprites/tl_stage4decor/tl_stage4decor.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "tl_stage4decor",
     "tags": [],
     "resourceType": "GMSequence",

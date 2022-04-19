@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeleton_frozen","path":"sprites/spr_skeleton_frozen/spr_skeleton_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skeleton_frozen",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_head_attack","path":"sprites/spr_ghost_head_attack/spr_ghost_head_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_head_attack",
     "tags": [],
     "resourceType": "GMSequence",

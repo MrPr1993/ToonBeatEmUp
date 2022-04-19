@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bahati_attack5","path":"sprites/spr_bahati_attack5/spr_bahati_attack5.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bahati_attack5",
     "tags": [],
     "resourceType": "GMSequence",

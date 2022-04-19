@@ -347,6 +347,9 @@ with cutSelf
 	else
 	image_index=GrabFrame
 	image_speed=0
+	if hasDizzy=0
+	sprite_index=ThrownSpr
+	else
 	sprite_index=DizzySpr
 	if animFrame>10 {hurt=0 canmove=1} else animFrame+=0.05
 	}

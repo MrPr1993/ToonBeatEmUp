@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_kick","path":"sprites/spr_cobra_kick/spr_cobra_kick.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_kick",
     "tags": [],
     "resourceType": "GMSequence",

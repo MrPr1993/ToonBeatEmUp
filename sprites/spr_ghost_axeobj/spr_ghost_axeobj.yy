@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_axeobj","path":"sprites/spr_ghost_axeobj/spr_ghost_axeobj.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_axeobj",
     "tags": [],
     "resourceType": "GMSequence",

@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_slotmachine","path":"sprites/spr_slotmachine/spr_slotmachine.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_slotmachine",
     "tags": [],
     "resourceType": "GMSequence",

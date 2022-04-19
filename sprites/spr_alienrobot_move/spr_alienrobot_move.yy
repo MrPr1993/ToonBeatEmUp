@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_alienrobot_move","path":"sprites/spr_alienrobot_move/spr_alienrobot_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_alienrobot_move",
     "tags": [],
     "resourceType": "GMSequence",

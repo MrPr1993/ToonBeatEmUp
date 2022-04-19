@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_burned","path":"sprites/spr_oni_burned/spr_oni_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_burned",
     "tags": [],
     "resourceType": "GMSequence",

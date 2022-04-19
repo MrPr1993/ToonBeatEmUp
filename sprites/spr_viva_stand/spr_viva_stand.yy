@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_viva_stand","path":"sprites/spr_viva_stand/spr_viva_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_viva_stand",
     "tags": [],
     "resourceType": "GMSequence",

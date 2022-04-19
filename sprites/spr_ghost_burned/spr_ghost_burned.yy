@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_burned","path":"sprites/spr_ghost_burned/spr_ghost_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_burned",
     "tags": [],
     "resourceType": "GMSequence",

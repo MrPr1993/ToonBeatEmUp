@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": true,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_fatburglar",
-  "duration": 0.741875,
+  "duration": 0.736875,
   "parent": {
     "name": "Enemies",
     "path": "folders/f - Sounds/Voice Clips/Enemies.yy",

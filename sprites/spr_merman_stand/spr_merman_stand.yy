@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_stand","path":"sprites/spr_merman_stand/spr_merman_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_stand",
     "tags": [],
     "resourceType": "GMSequence",

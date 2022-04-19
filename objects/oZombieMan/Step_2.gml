@@ -107,15 +107,32 @@ or targetID.key_right_pressed
 
 if grabMax>4
 {
-HitType=1 event_user(0) sentflying=-2*image_xscale zSpeed=-2
+HitType=1 
+
+ canBounce=1
+	hurt=1
+	ground=0
+	zSpeed=-6
+	if hitBack=0
+	sentflying=4*-image_xscale
+	else
+	sentflying=4*image_xscale
+	image_index=3 sprite_index=ThrownSpr
+	animFrame=3
+	anim=5
+
+sentflying=-2*image_xscale zSpeed=-2
 
 if targetID!=-1
 {
+targetID.x=x+24*image_xscale
 with targetID
 {
-	animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
-	throw_quickrelease() ground=0 zSpeed=-2 sentflying=-1*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
-canmove=1 hurt=0 recovery=30}
+animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+throw_quickrelease() ground=0 zSpeed=-2 sentflying=-1*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
+canmove=1 hurt=0 recovery=30
+}
+
 }
 throwing=0 throwcombo=2
 targetID=-1

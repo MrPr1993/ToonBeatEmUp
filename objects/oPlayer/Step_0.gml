@@ -1,10 +1,30 @@
 
 
+if hasAI=0
+{
 if canControl=controlNO
+{
 if automove=0
 {
 controller_setup()
 }
+}}
+else
+{
+if automove=0
+{canControl=0
+controller_setup()
+if instance_exists(oEnemy1)
+{
+targetEnemy=instance_nearest(x,y,oEnemy1)
+if instance_exists(targetEnemy)
+{
+player_ai()
+}
+}
+}
+}
+hasAI=0
 
 if oControl.betatest=1
 {if keyboard_check_pressed(vk_backspace)

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_poof","path":"sprites/spr_ghost_poof/spr_ghost_poof.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_poof",
     "tags": [],
     "resourceType": "GMSequence",

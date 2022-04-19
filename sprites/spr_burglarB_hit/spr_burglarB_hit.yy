@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglarB_hit","path":"sprites/spr_burglarB_hit/spr_burglarB_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglarB_hit",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bone","path":"sprites/spr_bone/spr_bone.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bone",
     "tags": [],
     "resourceType": "GMSequence",

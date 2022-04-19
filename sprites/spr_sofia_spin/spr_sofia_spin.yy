@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sofia_spin","path":"sprites/spr_sofia_spin/spr_sofia_spin.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sofia_spin",
     "tags": [],
     "resourceType": "GMSequence",

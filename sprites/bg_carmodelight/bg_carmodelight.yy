@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_carmodelight","path":"sprites/bg_carmodelight/bg_carmodelight.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_carmodelight",
     "tags": [],
     "resourceType": "GMSequence",

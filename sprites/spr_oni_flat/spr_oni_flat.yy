@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_flat","path":"sprites/spr_oni_flat/spr_oni_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_flat",
     "tags": [],
     "resourceType": "GMSequence",

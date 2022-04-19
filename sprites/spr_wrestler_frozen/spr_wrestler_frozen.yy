@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wrestler_frozen","path":"sprites/spr_wrestler_frozen/spr_wrestler_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wrestler_frozen",
     "tags": [],
     "resourceType": "GMSequence",

@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_dastardly_stand","path":"sprites/spr_dastardly_stand/spr_dastardly_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_dastardly_stand",
     "tags": [],
     "resourceType": "GMSequence",

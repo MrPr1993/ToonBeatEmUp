@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_burned","path":"sprites/spr_cobra_burned/spr_cobra_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_burned",
     "tags": [],
     "resourceType": "GMSequence",

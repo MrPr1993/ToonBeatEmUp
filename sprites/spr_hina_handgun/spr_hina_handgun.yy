@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hina_handgun","path":"sprites/spr_hina_handgun/spr_hina_handgun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hina_handgun",
     "tags": [],
     "resourceType": "GMSequence",

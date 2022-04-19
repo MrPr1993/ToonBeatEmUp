@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_club","path":"sprites/spr_oni_club/spr_oni_club.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_oni_club",
     "tags": [],
     "resourceType": "GMSequence",

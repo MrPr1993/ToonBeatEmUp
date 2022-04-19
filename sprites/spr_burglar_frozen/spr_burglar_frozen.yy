@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglar_frozen","path":"sprites/spr_burglar_frozen/spr_burglar_frozen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglar_frozen",
     "tags": [],
     "resourceType": "GMSequence",

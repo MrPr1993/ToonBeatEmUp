@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_witch_move","path":"sprites/spr_witch_move/spr_witch_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_witch_move",
     "tags": [],
     "resourceType": "GMSequence",

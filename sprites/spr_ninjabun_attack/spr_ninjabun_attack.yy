@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ninjabun_attack","path":"sprites/spr_ninjabun_attack/spr_ninjabun_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ninjabun_attack",
     "tags": [],
     "resourceType": "GMSequence",

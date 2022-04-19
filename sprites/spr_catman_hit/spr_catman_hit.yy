@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_catman_hit","path":"sprites/spr_catman_hit/spr_catman_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_catman_hit",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_alienrobot_stand","path":"sprites/spr_alienrobot_stand/spr_alienrobot_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_alienrobot_stand",
     "tags": [],
     "resourceType": "GMSequence",

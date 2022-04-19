@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cavepart","path":"sprites/spr_cavepart/spr_cavepart.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cavepart",
     "tags": [],
     "resourceType": "GMSequence",

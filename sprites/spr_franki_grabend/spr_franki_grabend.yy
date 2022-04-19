@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_grabend","path":"sprites/spr_franki_grabend/spr_franki_grabend.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_grabend",
     "tags": [],
     "resourceType": "GMSequence",

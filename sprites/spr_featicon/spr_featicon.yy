@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_featicon","path":"sprites/spr_featicon/spr_featicon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_featicon",
     "tags": [],
     "resourceType": "GMSequence",

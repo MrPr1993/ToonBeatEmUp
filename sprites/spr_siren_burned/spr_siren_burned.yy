@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_siren_burned","path":"sprites/spr_siren_burned/spr_siren_burned.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_siren_burned",
     "tags": [],
     "resourceType": "GMSequence",

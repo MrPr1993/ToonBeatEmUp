@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sneak_attack","path":"sprites/spr_sneak_attack/spr_sneak_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sneak_attack",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_move","path":"sprites/spr_cobra_move/spr_cobra_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_move",
     "tags": [],
     "resourceType": "GMSequence",

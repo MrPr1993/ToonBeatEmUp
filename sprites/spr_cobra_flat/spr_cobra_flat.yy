@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_flat","path":"sprites/spr_cobra_flat/spr_cobra_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_flat",
     "tags": [],
     "resourceType": "GMSequence",

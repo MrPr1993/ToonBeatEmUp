@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ninjabun_kick","path":"sprites/spr_ninjabun_kick/spr_ninjabun_kick.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ninjabun_kick",
     "tags": [],
     "resourceType": "GMSequence",

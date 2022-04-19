@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_hina_respawn","path":"sprites/spr_hina_respawn/spr_hina_respawn.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_hina_respawn",
     "tags": [],
     "resourceType": "GMSequence",

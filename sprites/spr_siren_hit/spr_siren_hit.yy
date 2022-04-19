@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_siren_hit","path":"sprites/spr_siren_hit/spr_siren_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_siren_hit",
     "tags": [],
     "resourceType": "GMSequence",

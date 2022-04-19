@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skeleton_elec","path":"sprites/spr_skeleton_elec/spr_skeleton_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_skeleton_elec",
     "tags": [],
     "resourceType": "GMSequence",

@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_catman_move","path":"sprites/spr_catman_move/spr_catman_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_catman_move",
     "tags": [],
     "resourceType": "GMSequence",

@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_hit","path":"sprites/spr_cobra_hit/spr_cobra_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_hit",
     "tags": [],
     "resourceType": "GMSequence",

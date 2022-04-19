@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wrestler_elec","path":"sprites/spr_wrestler_elec/spr_wrestler_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wrestler_elec",
     "tags": [],
     "resourceType": "GMSequence",

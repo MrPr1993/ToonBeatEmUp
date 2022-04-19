@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pharaoh_kick","path":"sprites/spr_pharaoh_kick/spr_pharaoh_kick.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pharaoh_kick",
     "tags": [],
     "resourceType": "GMSequence",

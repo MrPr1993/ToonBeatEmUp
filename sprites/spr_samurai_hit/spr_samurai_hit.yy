@@ -155,7 +155,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_samurai_hit","path":"sprites/spr_samurai_hit/spr_samurai_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_samurai_hit",
     "tags": [],
     "resourceType": "GMSequence",

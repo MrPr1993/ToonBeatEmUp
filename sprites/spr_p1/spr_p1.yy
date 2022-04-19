@@ -150,7 +150,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_p1","path":"sprites/spr_p1/spr_p1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

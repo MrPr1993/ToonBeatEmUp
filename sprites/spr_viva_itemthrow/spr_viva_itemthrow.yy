@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_viva_itemthrow","path":"sprites/spr_viva_itemthrow/spr_viva_itemthrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_viva_itemthrow",
     "tags": [],
     "resourceType": "GMSequence",

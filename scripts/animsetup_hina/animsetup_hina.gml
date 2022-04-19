@@ -761,30 +761,29 @@ if specialcheck5=1
 	image_speed=0
 
 	with targetID {hud_show() hpscan()}
-	targetID.hit=2 targetID.ThrowDamage=0.1
+	targetID.hit=2 //targetID.ThrowDamage=0.1
 	targetID.ground=0
 	targetID.atk=0
 	targetID.hurt=1
 	///Drag Enemy
-	 if animFrame=clamp(animFrame,0,0.9)
+	 if animFrame=clamp(animFrame,0,0.5)
 	{image_index=0
-	targetID.targetHeightHit=16 grabX=30*image_xscale grabY=1 grabZ=-1.75 targetID.image_xscale=-image_xscale}
-	 if animFrame=clamp(animFrame,1,1.9)
+	targetID.targetHeightHit=targetID.GrabFrame grabX=30*image_xscale grabY=1 grabZ=0 targetID.image_xscale=-image_xscale}
+	 if animFrame=clamp(animFrame,0.6,1.9)
 	{image_index=1
-	targetID.targetHeightHit=18 grabX=-5 grabY=1 grabZ=-72+shake targetID.image_xscale=-image_xscale
-
-	enemy_heavythrow(1,1.5,3,2.1)
+	targetID.targetHeightHit=targetID.GrabFrame grabX=30*image_xscale grabY=1 grabZ=0 targetID.image_xscale=-image_xscale
+	//enemy_heavythrow(1,1.5,3,2.1)
 	}
 	 if animFrame=clamp(animFrame,2,2.9)
 
 	 if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
 	if animFrame=clamp(animFrame,0,1.5)
 	animFrame+=0.1 else animFrame+=0.1 if animFrame>2 {anim=39 ///Throw End
-	grabX=0 grabY=0 grabZ=0 super+=0.25 targetID.hp-=0.0+extradamage
+	grabX=0 grabY=0 grabZ=0 super+=0.25 targetID.hp-=0.1+extradamage
 	super+=0.25*canSuper
 	targetID.thrownAtk=1
 	targetID.thrownAtkDmg=0.1 ///Damage when the thrown targets hits another enemy
-
+atkcol_set(24,0,25,1.55,1,52)
 	if targetID.hp<=0  PlayerScore+=targetID.points
 	else PlayerScore+=targetID.pointshit
 
@@ -793,11 +792,11 @@ if specialcheck5=1
 
 	with targetID
 	{
-	PlaySound(snd_swing)
+	PlaySound(snd_hit)	
 	event_user(11) ///Hit Enemy
 	recovery=90 Throw=0
 	hurt=1
-	hit=1 hitBack=1
+	hit=1 hitBack=0 
 	ground=0
 	zSpeed=-6
 	sentflying=-5*image_xscale///Throw Distance
@@ -904,7 +903,7 @@ if specialcheck5=1
 	if prevanim=36 ///Detect previous throwing animations when they throw opponent
 	{image_index=animFrame image_speed=0}
 	if prevanim=37///Throw Fowards
-	{image_index=animFrame image_speed=0}
+	{if animFrame>3.5 image_index=5 else if image_index<4.5 image_index+=0.25 image_speed=0}
 	if prevanim=38///Throw Back
 	{image_index=animFrame image_speed=0}
 	throwing=0 
@@ -971,7 +970,7 @@ if specialcheck5=1
 	if anim=250
 	{hit=0 MoveType=0 weaponanim(weaponspr,weaponIndex,2,-9,45*image_xscale,weaponcolor) zAddGround=0
 	if carry=1	{if animFrame<1 item.carryZ=64-76 else item.carryZ=-8-76}
-	if animFrame<1 {sprite_index=spr_hina_item image_index=0} else {sprite_index=spr_hina_throw image_index=1}
+	if animFrame<1 {sprite_index=spr_hina_item image_index=0} else {sprite_index=spr_hina_moveobject image_index=0}
 		image_speed=0 atk=0 animFrame+=0.1 if animFrame>2 {hurt=0 atk=0 canmove=1 hit=0}}
 
 	///Down Up Attack

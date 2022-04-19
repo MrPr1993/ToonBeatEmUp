@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_catman_stand","path":"sprites/spr_catman_stand/spr_catman_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_catman_stand",
     "tags": [],
     "resourceType": "GMSequence",

@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_grabatk","path":"sprites/spr_franki_grabatk/spr_franki_grabatk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_grabatk",
     "tags": [],
     "resourceType": "GMSequence",

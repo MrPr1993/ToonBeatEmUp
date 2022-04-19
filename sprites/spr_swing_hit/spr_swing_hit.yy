@@ -163,7 +163,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_swing_hit","path":"sprites/spr_swing_hit/spr_swing_hit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_swing_hit",
     "tags": [],
     "resourceType": "GMSequence",

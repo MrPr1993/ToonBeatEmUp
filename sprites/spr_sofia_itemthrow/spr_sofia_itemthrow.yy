@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sofia_itemthrow","path":"sprites/spr_sofia_itemthrow/spr_sofia_itemthrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sofia_itemthrow",
     "tags": [],
     "resourceType": "GMSequence",

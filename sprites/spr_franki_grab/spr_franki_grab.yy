@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_grab","path":"sprites/spr_franki_grab/spr_franki_grab.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_grab",
     "tags": [],
     "resourceType": "GMSequence",

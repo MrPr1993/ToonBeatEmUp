@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_franki_stand","path":"sprites/spr_franki_stand/spr_franki_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_franki_stand",
     "tags": [],
     "resourceType": "GMSequence",

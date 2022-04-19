@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglar_dizzy","path":"sprites/spr_burglar_dizzy/spr_burglar_dizzy.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglar_dizzy",
     "tags": [],
     "resourceType": "GMSequence",

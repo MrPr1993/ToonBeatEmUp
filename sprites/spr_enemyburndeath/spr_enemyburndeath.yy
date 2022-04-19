@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_enemyburndeath","path":"sprites/spr_enemyburndeath/spr_enemyburndeath.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_enemyburndeath",
     "tags": [],
     "resourceType": "GMSequence",

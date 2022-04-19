@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cobra_attack","path":"sprites/spr_cobra_attack/spr_cobra_attack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_cobra_attack",
     "tags": [],
     "resourceType": "GMSequence",

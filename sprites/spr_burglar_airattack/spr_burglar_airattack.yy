@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_burglar_airattack","path":"sprites/spr_burglar_airattack/spr_burglar_airattack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_burglar_airattack",
     "tags": [],
     "resourceType": "GMSequence",

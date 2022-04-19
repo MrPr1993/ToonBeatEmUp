@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_pharaoh_elec","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_pharaoh_elec",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_midshadow","path":"sprites/spr_midshadow/spr_midshadow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_midshadow",
     "tags": [],
     "resourceType": "GMSequence",

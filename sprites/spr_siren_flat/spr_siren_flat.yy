@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_siren_flat","path":"sprites/spr_siren_flat/spr_siren_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_siren_flat",
     "tags": [],
     "resourceType": "GMSequence",

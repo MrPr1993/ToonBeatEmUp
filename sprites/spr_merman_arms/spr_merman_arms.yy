@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_merman_arms","path":"sprites/spr_merman_arms/spr_merman_arms.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_merman_arms",
     "tags": [],
     "resourceType": "GMSequence",

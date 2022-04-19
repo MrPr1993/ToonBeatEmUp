@@ -20,6 +20,9 @@ enemyID=0
 playerNO=1
 chardraw=draw_player;
 
+enemyai=player_ai
+enemycontrol=enemy_control
+
 showp1=0;
 
 
@@ -40,6 +43,8 @@ AtkTime=0
 
 PlayerLife=global.P1Life
 PlayerScore=global.P1Score
+
+
 
 hp=1
 
@@ -158,6 +163,7 @@ if global.multiMode>=4
 //(floorPosX+waistPosX+headPosX)*SpritePos
 //(floorPosY+waistPosY+headPosY)*SpritePos
 
+hasAI=0
 
 //spawnplayericon()
 

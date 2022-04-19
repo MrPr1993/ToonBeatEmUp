@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_wrestler_flat","path":"sprites/spr_wrestler_flat/spr_wrestler_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_wrestler_flat",
     "tags": [],
     "resourceType": "GMSequence",

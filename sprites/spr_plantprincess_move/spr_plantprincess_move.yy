@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_plantprincess_move","path":"sprites/spr_plantprincess_move/spr_plantprincess_move.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_plantprincess_move",
     "tags": [],
     "resourceType": "GMSequence",

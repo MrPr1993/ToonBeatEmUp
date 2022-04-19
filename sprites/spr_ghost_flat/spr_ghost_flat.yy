@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_flat","path":"sprites/spr_ghost_flat/spr_ghost_flat.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_flat",
     "tags": [],
     "resourceType": "GMSequence",

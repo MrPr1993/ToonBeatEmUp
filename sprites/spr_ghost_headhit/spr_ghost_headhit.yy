@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghost_headhit","path":"sprites/spr_ghost_headhit/spr_ghost_headhit.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_ghost_headhit",
     "tags": [],
     "resourceType": "GMSequence",

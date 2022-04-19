@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sshowgirl_stand","path":"sprites/spr_sshowgirl_stand/spr_sshowgirl_stand.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sshowgirl_stand",
     "tags": [],
     "resourceType": "GMSequence",
