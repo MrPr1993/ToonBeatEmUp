@@ -1,5 +1,6 @@
 function bobject_setup() {
 	z=0
+	trainz=0
 	zSpeed=0
 	ground=1
 

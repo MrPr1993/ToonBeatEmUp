@@ -15,6 +15,8 @@ function character_setup() {
 	reFocusTime=0
 
 	AIoff=0
+	
+	
 
 	hp=1
 	maxhp=1
@@ -48,6 +50,7 @@ function character_setup() {
 
 	isDepth=1
 	z=0
+	trainz=0
 	zSpeed=0
 	ground=1
 	noHitFall=0

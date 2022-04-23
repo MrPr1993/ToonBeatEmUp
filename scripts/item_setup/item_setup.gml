@@ -3,6 +3,7 @@ function item_setup() {
 	canGrav=1
 	gravLandHalt=0
 	itemHP=0
+	trainz=0
 
 	canFX=1
 	FX=0

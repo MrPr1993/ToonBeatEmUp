@@ -48,6 +48,8 @@ if level=21 roomGo=rm_chardata
 if level=22 roomGo=rm_feats
 if level=23 roomGo=rm_shop
 if level=24 roomGo=rm_training
+if level=25 roomGo=rm_stage2b
+if level=26 roomGo=rm_stage2c
 
 if level=30 roomGo=rm_stagemermaid
 if level=31 roomGo=rm_stageswamp

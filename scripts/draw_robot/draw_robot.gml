@@ -8,16 +8,16 @@ pal_swap_set(my_pal_sprite,current_pal,false);
 if robotArmR=1
 {
 if image_alpha<1
-draw_sprite_ext(robotArmRsprite,robotArmRIndex,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+(robotArmRX*image_xscale)+(shake*image_xscale)),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+robotArmLY+z+extraY),image_xscale*robotArmRXscale,image_yscale*robotArmRYscale,robotArmRAngle*image_xscale,c_black,1)
+draw_sprite_ext(robotArmRsprite,robotArmRIndex,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+(robotArmRX*image_xscale)+(shake*image_xscale)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+robotArmLY+z+extraY),image_xscale*robotArmRXscale,image_yscale*robotArmRYscale,robotArmRAngle*image_xscale,c_black,1)
 
 
-draw_sprite_ext(robotArmRsprite,robotArmRIndex,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+(robotArmRX*image_xscale)+(shake*image_xscale)),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+robotArmLY+z+extraY),image_xscale*robotArmRXscale,image_yscale*robotArmRYscale,robotArmRAngle*image_xscale,image_blend,image_alpha)
+draw_sprite_ext(robotArmRsprite,robotArmRIndex,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+(robotArmRX*image_xscale)+(shake*image_xscale)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+robotArmLY+z+extraY),image_xscale*robotArmRXscale,image_yscale*robotArmRYscale,robotArmRAngle*image_xscale,image_blend,image_alpha)
 }
 ///Body
 if image_alpha<1
-draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+shake*image_xscale),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_angle,c_black,1)
+draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_angle,c_black,1)
 
-draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+shake*image_xscale),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 
 
 ///Robot Zapper
@@ -55,10 +55,10 @@ draw_sprite_ext(spr_robot_ice,specialcheck5,x+34*image_xscale,y-42,image_xscale,
 if robotArmL=1
 {
 if image_alpha<1
-draw_sprite_ext(robotArmLsprite,robotArmLIndex,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+(robotArmLX*image_xscale)+(shake*image_xscale)),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+robotArmLY+z+extraY),image_xscale*robotArmLXscale,image_yscale*robotArmLYscale,robotArmLAngle*image_xscale,c_black,1)
+draw_sprite_ext(robotArmLsprite,robotArmLIndex,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+(robotArmLX*image_xscale)+(shake*image_xscale)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+robotArmLY+z+extraY),image_xscale*robotArmLXscale,image_yscale*robotArmLYscale,robotArmLAngle*image_xscale,c_black,1)
 
 
-draw_sprite_ext(robotArmLsprite,robotArmLIndex,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+(robotArmLX*image_xscale)+(shake*image_xscale)),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+robotArmLY+z+extraY),image_xscale*robotArmLXscale,image_yscale*robotArmLYscale,robotArmLAngle*image_xscale,image_blend,image_alpha)
+draw_sprite_ext(robotArmLsprite,robotArmLIndex,round(x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale+(robotArmLX*image_xscale)+(shake*image_xscale)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+robotArmLY+z+extraY),image_xscale*robotArmLXscale,image_yscale*robotArmLYscale,robotArmLAngle*image_xscale,image_blend,image_alpha)
 }
 
 pal_swap_reset();
