@@ -9,8 +9,8 @@ newsIndex+=1
 scene1.x=99999
 
 newsRepeat=1
-
-cutsceneline="AND LET'S NOT FORGET SOFIA!\nALL THE WAY FROM MEXICO!"
+cutsceneline="AND SHE HAS QUITE THE FLEXIBLE\nPERSONALITY. SHE'LL BRING OUT THE\nHEAT!"
+cutsceneline="AND LET'S NOT FORGET SOFIA! COMING\nALL THE WAY FROM MEXICO!"
 scenebg.x=99999
 
 newspaperspin=0

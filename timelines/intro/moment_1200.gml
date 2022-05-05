@@ -8,8 +8,7 @@ newsIndex+=1
 
 scene1.x=99999
 newsRepeat=1
-
-cutsceneline="THE AMAZING BAHATI!\nSHE CAME FROM NIGERIA TO JOIN US HERE!"
+cutsceneline="THE AMAZING BAHATI! SHE CAME FROM\nNIGERIA TO JOIN US HERE!"
 scenebg.x=99999
 
 newspaperspin=0

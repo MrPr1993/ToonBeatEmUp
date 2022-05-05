@@ -6,4 +6,4 @@ scene1.y=-32-24
 
 scene2.vspeed=0.4
 
-cutsceneline="AND THERE THEY ARE. JUST RIGHT THERE,\nEASY, EASY LOOT!"
+cutsceneline="MORE ANCIENT RELICS TO COLLECT!"

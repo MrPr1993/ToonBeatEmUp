@@ -6,7 +6,7 @@ scene1.y=240-16
 newsRepeat=2
 
 
-cutsceneline="AND SHE HAS QUITE THE FLEXIBLE PERSONALITY.\nSHE'LL BRING ON THE HEAT!"
+cutsceneline="AND SHE HAS QUITE THE FLEXIBLE\nPERSONALITY. SHE'LL BRING OUT THE\nHEAT!"
 
 scene1.hspeed=0.2
 scene1.vspeed=0.05

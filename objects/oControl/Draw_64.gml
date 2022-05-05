@@ -1028,6 +1028,9 @@ if room=rm_animeditor
 ///Newspaper Scene
 if  room=rm_newspaper
 {
+if betatest=1
+if keyboard_check_pressed(vk_backspace)///Change cutscene text
+cutsceneline=get_string("Change dialogue",cutsceneline)
 
 newsBlack-=0.1
 

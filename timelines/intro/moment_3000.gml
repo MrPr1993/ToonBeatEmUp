@@ -10,4 +10,4 @@ with scene2 {alarm[0]=-1 isDepth=0 depth=-2 animEnd=0 image_speed=0 sprite_index
 scene2.vspeed=0
 
 cutscenename="VAN BAD"
-cutsceneline="OH YES...\nVERY GOOD NIGHT INDEED..."
+cutsceneline="OH YES...A VERY GOOD NIGHT INDEED...\nAND THERE THEY ARE. RIGHT THERE, EASY,\nEASY LOOT!"
