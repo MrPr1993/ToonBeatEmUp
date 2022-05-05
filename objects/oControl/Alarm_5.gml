@@ -4,7 +4,7 @@ if isPaused=0
 if hiScoreYgo=0
 hiScoreYgo=1
 else
-{global.MenuSkip=0
+{global.MenuSkip=0 global.IntroSkip=0
 room_goto(rm_titlescreen)
 }
 

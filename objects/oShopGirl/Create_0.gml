@@ -4,6 +4,8 @@ z=0
 
 image_speed=0
 
+trainz=0
+
 animFrame=0
 
 fallHole=0

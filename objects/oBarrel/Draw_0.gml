@@ -1,6 +1,12 @@
 
 pal_swap_set(weapon_pal_sprite,weapon_pal,false);
 
+if place_meeting(x,y,oTrainFXSpot)
+{trainzSet=instance_place(x,y,oTrainFXSpot)
+if ground
+trainz=trainzSet.Train1Y else trainz=0
+}else trainz=0
+
 //draw_sprite_ext(sprite_index,image_index,round(x),round(y+z),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 	if place_meeting(x,y,oWaterFX) and ground	
 	draw_sprite_clip_ext(sprite_index,image_index,round(x),round(y+trainz+z),image_xscale,image_yscale,image_blend,image_alpha, 

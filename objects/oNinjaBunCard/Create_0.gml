@@ -14,6 +14,8 @@ image_speed=0.25
 
 shadow=spr_shadow
 
+trainz=0
+
 height=8
 
 image_speed=0.5

@@ -4,6 +4,8 @@ controller_setup()
 instance_create(0,0,oBlackFX)
 //instance_create(0,0,oTVfx)
 
+
+
 alarm[10]=640+160
 
 BGmove=0
@@ -15,12 +17,17 @@ continueMusic=-1
 
 global.MusicFade=0
 
+introScene=1
+introPart=0
+introTime=0
+
 if !variable_global_exists("CurrentMusic")
 {
 global.SetIntro=0
 	
 global.CurrentMusic=-1
 global.MenuSkip=0
+global.IntroSkip=0
 global.CRTfx=1
 
 global.BGMvolume=100
@@ -41,6 +48,7 @@ global.Gold=0
 global.enemytest=0
 global.enemytestB=0
 }
+
 featicon[99]=0
 featsel=1
 featsellerp=1
@@ -363,6 +371,13 @@ newspaperspin=0
 newsScale=0.01
 newsIndex=0
 newsTime=0
+newsShow=0
+newsFade=0
+newsFadeA=1
+newsRepeat=1
+newsText=0
+newsX=0
+newsY=0
 
 TextDialogue=""
 
@@ -407,6 +422,29 @@ mapPlayerName="VIVA"
 ///Skip Intro
 if global.MenuSkip=1
 {
+introSkip=1 noWhite=1
+introSkipFX=2
+iconShow=0
+iconBlack=0
+titlescreenY=120
+titlescreenXscale=1
+titleFlashFX=0
+titleFlashTime=0
+titleObjectWhite=0
+titleShow=1
+pressStart=1
+}
+
+if global.IntroSkip=1
+{
+iconShow=210-70
+iconSel=spr_scicon
+}
+
+if global.IntroSkip=2
+{
+iconShow=210-70
+iconSel=spr_scicon
 introSkip=1 noWhite=1
 introSkipFX=2
 iconShow=0

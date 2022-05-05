@@ -4,6 +4,8 @@ z=0
 spdZ=0
 ground=1
 
+trainz=0
+
 damage=0.3
 
 act=1

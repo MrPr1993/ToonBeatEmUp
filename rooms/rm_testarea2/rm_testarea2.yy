@@ -67,6 +67,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oDrink","path":"objects/oDrink/oDrink.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1616.0,"y":176.0,"resourceVersion":"1.0","name":"inst_5F622FE0","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oBurger","path":"objects/oBurger/oBurger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1584.0,"y":176.0,"resourceVersion":"1.0","name":"inst_79E37A09","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oGemstone","path":"objects/oGemstone/oGemstone.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":176.0,"resourceVersion":"1.0","name":"inst_A5BDB0D5","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oMushroom","path":"objects/oMushroom/oMushroom.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1664.0,"y":224.0,"resourceVersion":"1.0","name":"inst_5F4EF409","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":99999,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Compatibility_Instances_Depth_99999","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"bg_testspot","path":"sprites/bg_testspot/bg_testspot.yy",},"w":64,"h":240,"u0":0,"v0":0,"u1":64,"v1":240,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":432.0,"y":0.0,"resourceVersion":"1.0","name":"inst_1E4F48A1","tags":[],"resourceType":"GMRGraphic",},
@@ -163,6 +164,7 @@
     {"name":"inst_193E5676","path":"rooms/rm_testarea2/rm_testarea2.yy",},
     {"name":"inst_7A811B9A","path":"rooms/rm_testarea2/rm_testarea2.yy",},
     {"name":"inst_1A1DA12","path":"rooms/rm_testarea2/rm_testarea2.yy",},
+    {"name":"inst_5F4EF409","path":"rooms/rm_testarea2/rm_testarea2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

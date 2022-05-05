@@ -1,7 +1,7 @@
 depth=-y
 
 //controller_setup()
-
+trainz=0
 z+=zSpeed
 if !ground 
 {sentflying=4

@@ -789,10 +789,11 @@ atkcol_set(24,0,25,1.55,1,52)
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
-
+flashFX(x+39*image_xscale,y,z-77,spr_hitflash,0,0.5,0,1,1,c_white,1)
 	with targetID
 	{
 	PlaySound(snd_hit)	
+	
 	event_user(11) ///Hit Enemy
 	recovery=90 Throw=0
 	hurt=1
@@ -816,46 +817,69 @@ atkcol_set(24,0,25,1.55,1,52)
 	}
 
 	if anim=38 ///Throw Backards
-	{
-
+	{grabLockX=x
 	prevanim=38
 	isThrow=1 recovery=10
 	throwing=1
-	selfatk.image_xscale=0
+	selfatk.image_xscale=2
+	selfatk.image_yscale=2
+	atkAddX=grabX*image_xscale atkAddY=0 atkAddZ=0
+	selfatk.height=64
 	comboBreak=0
-	selfatk.recovery=90
+	selfatk.recovery=0
 	Throw=1
 	sprite_index=spr_hina_throwback
 	image_speed=0
-
+	if instance_exists(targetID) targetID.depth=depth-1
+if targetID!=-1
 	with targetID {hud_show() hpscan()}
-	targetID.hit=2 targetID.ThrowDamage=0.1
+	targetID.hit=2 targetID.ThrowDamage=0
 	targetID.ground=0
 	targetID.atk=0
-	targetID.hurt=1
+	targetID.hurt=1 
 	///Drag Enemy
+		if targetID!=-1
+	{
 	 if animFrame=clamp(animFrame,0,0.9)
-	{image_index=0
-	targetID.targetHeightHit=4 grabX=16*image_xscale grabY=1 grabZ=0 }
-
-	  if animFrame=clamp(animFrame,1,1.9)
-	{if image_index!=1 image_xscale=-image_xscale image_index=1
-	targetID.targetHeightHit=16 grabX=-8 grabY=1 grabZ=-26+shake
-	enemy_heavythrow(1,1.5,3,2.1)
+	{if image_index<1.5 image_index+=0.5 atk=0
+	grabX=38*image_xscale grabY=0 grabZ=-52+targetID.height/2 targetID.image_xscale=-image_xscale 
+	targetID.targetHeightHit=16
 	}
- 
-	 if animFrame=clamp(animFrame,2,2.9)
-	{image_index=2
-	targetID.targetHeightHit=17 grabX=10*image_xscale grabY=1 grabZ=-23}
+	
+	 if animFrame=clamp(animFrame,1,1.9)
+	{	{enemy_heavythrow(1,1.5,3,2)}
+		
+		if image_index<3.5 if animFrame>1.5 image_index+=0.5 else image_index=2  atk=0
+	   	grabY=0
+	if image_index<3
+	{grabX=6*image_xscale  grabZ=-80}
+	else
+	{grabX=-38*image_xscale  grabZ=-64}	
+		if targetID!=-1
+	{
+	targetID.image_xscale=-image_xscale 
+	targetID.targetHeightHit=18
+	}
+	}
+	 if animFrame=clamp(animFrame,1.91,2.9) 
+	{if image_index!=4 {
 
-	 if animFrame=clamp(animFrame,3,3.9)
-	{image_index=3
-	targetID.targetHeightHit=18 grabX=25*image_xscale grabY=1 grabZ=-21}
+	hground=instance_create_depth(x-44*image_xscale,y,depth,oFlashFX)
+	hground.sprite_index=spr_hitground hground.depth=99996
+	hground.isDepth=0 hground.z=z
 
+	oControl.quakeFXTime=10 PlaySoundNoStack(targetID.HitGround) PlaySoundNoStack(snd_hit) image_index=4 targetID.hp-=0.1
+	targetID.animFrame=0 grabX=-44*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale
+	targetID.targetHeightHit=6 with targetID event_user(11)
+	}
+	
+	atkcol_set(-67,0,0,1.95,1,64) MoveType=1 damage=0.1
 
-	 if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,4)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>4 {anim=39 ///Throw End
+	if animFrame<2.5 atk=1 else atk=0 targetID.thrownAtk=1
+	}
+	}
+	if animFrame=clamp(animFrame,0,1.5)
+	animFrame+=0.1 else animFrame+=0.1 if animFrame>3.5 {anim=39 ///Throw End
 	grabX=0 grabY=0 grabZ=0 super+=0.25 targetID.hp-=0.0+extradamage
 	super+=0.25*canSuper
 	targetID.thrownAtk=1
@@ -864,26 +888,24 @@ atkcol_set(24,0,25,1.55,1,52)
 	if targetID.hp<=0  PlayerScore+=targetID.points
 	else PlayerScore+=targetID.pointshit
 
-	if !place_free(x+1*image_xscale,y)
+	if !place_free(x-1*image_xscale,y)
 	targetID.x=x
 
 	with targetID
 	{
-	PlaySound(snd_swing)
-	event_user(11) ///Hit Enemy
 	recovery=90 Throw=0
 	hurt=1
-	hit=1
-	ground=0
-	zSpeed=-8
+	hit=1 hitBack=1
+	ground=0 
+	zSpeed=-4
+	z+=2
 	image_xscale=image_xscale
-	sentflying=3*image_xscale///Throw Distance
+	sentflying=5*image_xscale///Throw Distance
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
-	hitBack=1
+	animFrame=3 image_yscale=1
 	anim=5
 	hud_show() hpscan()
-	event_user(9)
+	event_user(12)
 	}throwing=0
 	targetID=-1
 	}
@@ -905,7 +927,7 @@ atkcol_set(24,0,25,1.55,1,52)
 	if prevanim=37///Throw Fowards
 	{if animFrame>3.5 image_index=5 else if image_index<4.5 image_index+=0.25 image_speed=0}
 	if prevanim=38///Throw Back
-	{image_index=animFrame image_speed=0}
+	{if image_index>0.5 image_index-=0.25 image_speed=0}
 	throwing=0 
 	if prevanim!=38
 	{animFrame+=0.1 if animFrame>4.5 {hurt=0 canmove=1 Throw=0}}
@@ -979,12 +1001,15 @@ atkcol_set(24,0,25,1.55,1,52)
 	weaponBack=-1
 
 	if animFrame=0 {PlaySound(snd_hina4)}
-	if animFrame=1.2 {image_index=1 PlaySound(snd_swing)}
+	if animFrame=1.2 {PlaySound(snd_swing)}
 
-	sprite_index=spr_hina_special1
+	sprite_index=spr_hina_downup
 
 	if ground=1
-	image_index=0 else {afterimage_create(4,make_colour_rgb(247,008, 33),current_pal,my_pal_sprite,0) image_index+=0.75 if image_index=7.75 image_index=1}
+	{
+	if image_index<2.25
+	image_index+=0.25 else image_index=2.25
+	}else {afterimage_create(4,make_colour_rgb(247,008, 33),current_pal,my_pal_sprite,0) image_index+=0.75 if image_index=6.75 image_index=3}
 
 	if animFrame<2 sentflying=0*image_xscale
 	else {
@@ -992,7 +1017,7 @@ atkcol_set(24,0,25,1.55,1,52)
 	sentflying=lerp(sentflying,0,0.1) else { sentflying=6*image_xscale}
 	}
 
-	atkcol_set(0,0,0,1.35,1,88)
+	atkcol_set(0,0,-1,1.35,1,43)
 
 	MoveType=1 damage=0.14
 
@@ -1001,9 +1026,9 @@ atkcol_set(24,0,25,1.55,1,52)
 
 	flashZ=32
 
-	if animFrame=clamp(animFrame,2,4) {ground=0 z-=4 sentflying=4*image_xscale}
+	if animFrame=clamp(animFrame,2,4) {ground=0 z-=4 sentflying=6*image_xscale}
 
-	frame_set(0,0,0.2)
+	frame_set(0,image_index,0.2)
 	frame_set(1,image_index,0.2)
 	frame_set(2,image_index,0.05)
 	frame_set(3,image_index,0.1)
@@ -1020,7 +1045,7 @@ atkcol_set(24,0,25,1.55,1,52)
 
 
 
-	atkcol_set(77,0,24,4.15,1,44) MoveType=1 damage=0.14
+	atkcol_set(65,0,0,2.85,1,46) MoveType=1 damage=0.14
 
 	if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
 

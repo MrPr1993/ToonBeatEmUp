@@ -32,7 +32,6 @@ room_restart()
 
 ///Insta-Game Over
 if keyboard_check_pressed(vk_f2)
-
 {
 with oPlayer if dead=0 {PlayerLife=0 hp=0 event_user(0)}
 }

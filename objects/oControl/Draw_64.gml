@@ -44,7 +44,9 @@ surface_resize(new_surf,320,240)
 
 surface_set_target(new_surf);
 draw_clear_alpha(c_black, 0.0);
+//shader_set(shd_grayscale)
 draw_surface(application_surface, 0, 0);
+//shader_reset()
 	}
 ////////////////
 	
@@ -568,6 +570,11 @@ draw_sprite_ext(spr_gametitle,0,160,round(titlescreenY),titlescreenXscale,1,0,c_
 
 if iconShow>90
 {
+if iconShow<210-70
+if iconSel=spr_scicon if global.IntroSkip=0
+{global.IntroSkip=1 room=rm_newspaper} ///Skip To Newspaper Scene
+
+
 if iconShow>210-60
 {
 draw_set_color(c_white) draw_set_alpha(1)
@@ -576,10 +583,15 @@ draw_sprite(iconSel,0,160,120-16)
 draw_set_color(c_black) draw_set_alpha(iconBlack)
 draw_rectangle(-4,-4,344,260,false)
 draw_set_color(c_white) draw_set_alpha(1)
+
 }
 else
 {
-if iconSel=spr_mrpr1993 and noIcon=0 {iconSel=spr_scicon iconShow+=160}
+
+
+if iconSel=spr_mrpr1993 and noIcon=0 {iconSel=spr_scicon iconShow+=160
+	
+	}
 BlackY+=8
 draw_set_color(c_black) draw_set_alpha(iconBlack)
 draw_rectangle(-4,-2-BlackY,344,240+2-BlackY,false)
@@ -596,7 +608,6 @@ iconShow-=1
 }
 else
 {
-
 titlescreenY=lerp(titlescreenY,120,0.1)
 
 if titlescreenY>121
@@ -605,7 +616,8 @@ else titlescreenXscale=lerp(titlescreenXscale,1,0.2)
 
 if titlescreenY<121
 {titleFlashFX=0 if titleObjectWhite>0 titleObjectWhite-=0.02 else titleObjectWhite=0
-titleFlashTime-=1 if titleFlashTime=0 {if titleShow=0 titleShow=1}
+titleFlashTime-=1 if titleFlashTime=0 {	
+	if titleShow=0 titleShow=1}
 }
 
 if titleShow=1
@@ -682,7 +694,6 @@ draw_rectangle(-4,-4,340,260,false)
 }
 
 draw_set_color(c_white) draw_set_alpha(1)
-
 
 if titleShow=1 introSkip=1
 
@@ -996,15 +1007,13 @@ draw_sprite(spr_playerface,global.HiScoreFace10, 320-96,(yy3++ * 26)-30)
 
 
 if key_attack or keyboard_check_pressed(vk_enter)
+or key_jump or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
+{////Hiscore to Title Screen
+global.MenuSkip=0 global.IntroSkip=0
 room_goto(rm_titlescreen)
 }
-
-
-if room=rm_hiscore
-{
-if key_attack or key_jump or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
-room=rm_titlescreen
 }
+
 
 
 ///Animation Editor
@@ -1019,11 +1028,11 @@ if room=rm_animeditor
 ///Newspaper Scene
 if  room=rm_newspaper
 {
+
 newsBlack-=0.1
 
-if key_attack or key_jump or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
-room=rm_titlescreen
-
+if newsShow=1
+{
 if newsBlack>0
 {
 draw_set_color(c_black) draw_set_alpha(1)
@@ -1031,26 +1040,54 @@ draw_rectangle(-4,-4,324,244,0)
 }
 else
 {
-
 if newsScale!=1 and newsTime<60
 {newspaperspin+=22.5 if newspaperspin=360-22.5 newspaperspin=0 newsTime+=1
 } else {newspaperspin=0 newsTime+=1 if newsScale<1 newsScale=1.1
 
-if newsTime>360 if newsIndex!=3 {
+if newsTime>360
+if newsIndex!=3 {
 newsBlack=1
 newspaperspin=0
 newsScale=0.01
 newsTime=0
-newsIndex+=1} else room_goto(rm_hiscore)
+newsIndex+=1
+} else 
+{global.MenuSkip=0
+global.IntroSkip=1
+room_goto(rm_titlescreen)
 }
-
+}
+}
 newsScale+=angle_difference(1,newsScale)/12
 
+newsX=lerp(newsX,0,0.1)
+newsY=lerp(newsY,0,0.1)
 
-
-draw_sprite_ext(spr_newspaper,newsIndex,160,120,newsScale,newsScale,newspaperspin,c_white,1)
+draw_sprite_ext(spr_newspaper,newsIndex,(160)+newsX,(120-32)+newsY,newsScale,newsScale,newspaperspin,c_white,1)
+}
+if newsFade=0 {if newsFadeA>0 newsFadeA-=0.05 else newsFadeA=0}
+if newsFade=1 {if newsFadeA<1 newsFadeA+=0.05 else newsFadeA=1}
+if newsFade=2 {if newsFadeA<1 newsFadeA+=0.05 else newsFade=0}
+if newsText=1
+{
+draw_set_alpha(1) draw_set_color(c_black)
+draw_rectangle(-32,192,333,666,false)
+draw_set_color(c_white)
+draw_set_font(global.scorefont)
+draw_set_halign(fa_center)
+draw_text(160,210-16,cutscenename)
+draw_set_halign(fa_left)
+draw_text(8,220-16,cutsceneline)
 }
 
+draw_sprite_ext(spr_newspaper,0,160,120,4,4,0,c_black,newsFadeA)
+
+if key_attack or keyboard_check_pressed(vk_enter)
+or key_jump or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
+{////Hiscore to Title Screen
+global.MenuSkip=0 global.IntroSkip=1
+room_goto(rm_titlescreen)
+}
 }
 
 ///Credits

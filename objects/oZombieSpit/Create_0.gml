@@ -2,6 +2,8 @@
 // You can write your code in this editor
 alarm[0]=200
 
+trainz=0
+
 fallHole=0
 
 z=0
