@@ -47,7 +47,7 @@
     "spriteId": {"name":"spr_burglarB_move","path":"sprites/spr_burglarB_move/spr_burglarB_move.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.1,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,

@@ -12,5 +12,5 @@ if menuSelect=3 {instance_create_depth(0,0,0,oSettings)}
 if menuSelect=4 room_goto(rm_hiscore)
 }
 }
-else room_goto(rm_howtoplay)
+else room_goto(rm_opening)
 }

@@ -9,7 +9,7 @@ newsText=0
 scene1=instance_create_depth(0,0,0,oFlashFX);
 with scene1 {alarm[0]=-1 isDepth=0 animEnd=0 image_speed=0 sprite_index=spr_introfilm}
 
-
+PlaySound(snd_film1)
 
 arr=instance_create_depth(160,120,-1,oAlphaFadeFX) 
 with arr

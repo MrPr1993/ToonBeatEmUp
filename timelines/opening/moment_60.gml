@@ -1,5 +1,7 @@
 ///Baddy Appear
-audio_stop_all()
+//audio_stop_all()
+
+
 
 PlaySoundNoStack(snd_swing)
 

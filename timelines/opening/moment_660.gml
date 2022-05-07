@@ -1,0 +1,1 @@
+stageEndFX=1 CutsceneStage=rm_stage1

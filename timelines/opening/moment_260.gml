@@ -1,0 +1,1 @@
+with bad6 {hspeed=0 sprite_index=spr_burglar_point image_speed=0 image_index=0}

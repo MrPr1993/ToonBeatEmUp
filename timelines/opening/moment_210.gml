@@ -1,0 +1,1 @@
+with bad6 {hspeed=0 sprite_index=spr_burglar_idle} PlaySound(snd_enemy5)

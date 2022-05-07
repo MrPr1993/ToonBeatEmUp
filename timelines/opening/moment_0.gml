@@ -1,4 +1,6 @@
 //background_
+
+
 newsBox=0
 newsText=0
 
@@ -28,4 +30,8 @@ diva4=instance_create_depth(180+64, 192+16,-1,oFlashFX);
 with diva4 {alarm[0]=-1 animEnd=0 FlashShadow=1 image_xscale=-1 image_speed=0.08 sprite_index=spr_sofia_opening}
 
 
+bgfog1=layer_background_get_id(layer_get_id("FOGfx1"));
+bgfog2=layer_background_get_id(layer_get_id("FOGfx2"));
 
+layer_background_yscale(bgfog1,0)
+layer_background_yscale(bgfog2,0)
