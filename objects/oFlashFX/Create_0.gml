@@ -3,6 +3,7 @@ alarm[0]=10
 depth=0
 
 z=0
+trainz=0
 
 name="Default"
 
@@ -30,3 +31,6 @@ my_pal_sprite=spr_enemypal
 override_surface=noone;
 override_pal_index=1;
 
+FlashShadow=0
+shadow=spr_shadow
+FlashShadowZ=0

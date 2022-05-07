@@ -3,6 +3,9 @@
 //scene2=instance_create_depth(0,0,-1,oFlashFX);
 //with scene2 {alarm[0]=-1 isDepth=0 animEnd=0 image_speed=0 sprite_index=spr_cutscene1a} newsShow=0
 
+newsBox=0
+newsText=0
+
 scene1=instance_create_depth(0,0,0,oFlashFX);
 with scene1 {alarm[0]=-1 isDepth=0 animEnd=0 image_speed=0 sprite_index=spr_introfilm}
 

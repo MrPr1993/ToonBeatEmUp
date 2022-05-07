@@ -56,7 +56,7 @@ if isPaused=0
 
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay and room!=rm_cutscene1
-and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
+and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 {
 if betatest=1
 {
@@ -1201,8 +1201,12 @@ draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
 }}
 
 ///This will be used to play the cutscenes
-if room=rm_cutscene1
+if room=rm_cutscene1 or room=rm_opening
 {
+__view_set( e__VW.XView, 0, SceneX )
+SceneX+=SceneSpeedX
+__view_set( e__VW.YView, 0, SceneY )
+SceneY+=SceneSpeedY
 
 if creditsGo=0
 {if creditsAlpha>-0.1 creditsAlpha-=0.1} else creditsAlpha+=0.1
@@ -1215,10 +1219,10 @@ if keyboard_check(ord("J")) stageEndFX=1
 CutsceneX+=CutsceneHSpeed
 CutsceneY+=CutsceneVSpeed
 
+
 draw_set_alpha(1) draw_set_color(c_black)
-
+if newsBox=1
 draw_rectangle(-32,192,333,666,false)
-
 draw_set_color(c_white)
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
@@ -1235,10 +1239,12 @@ draw_set_halign(fa_center)
 //draw_text(160,10+130,"RUN AND J - RUN ATTACK")
 
 //draw_text(160,10+200,"THE GAME IS CONTROLLER COMPATIBLE!")
-
+if newsText=1
+{
 draw_text(160,210-16,cutscenename)
 draw_set_halign(fa_left)
 draw_text(8,220-16,cutsceneline)
+}draw_set_halign(fa_left)
 //draw_text(160,10+230,"WITH TWO MORE FOR THIS DEMO")
 
 ///Screen FX for intro

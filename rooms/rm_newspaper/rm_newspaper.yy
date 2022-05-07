@@ -47,8 +47,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "0-General",
-    "path": "folders/d - Rooms/0-General.yy",
+    "name": "0Intro",
+    "path": "folders/1b - Cutscenes/0Intro.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_newspaper",

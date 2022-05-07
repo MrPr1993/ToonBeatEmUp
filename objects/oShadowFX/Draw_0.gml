@@ -42,6 +42,9 @@ if instance_exists(oShadowOnly) with oShadowOnly if visible and !place_meeting(x
 and fallHole=0
 draw_sprite(shadow,0,x,y+trainz+2)
 
+if instance_exists(oFlashFX) with oFlashFX if FlashShadow=1
+draw_sprite(shadow,0,x,y+(trainz*FlashShadowZ)+2)
+
 
 if instance_exists(oPizza) with oPizza if visible and 
 !place_meeting(x,y,oFallHole)

@@ -23,6 +23,7 @@ introTime=0
 
 if !variable_global_exists("CurrentMusic")
 {
+	
 global.SetIntro=0
 	
 global.CurrentMusic=-1
@@ -375,9 +376,14 @@ newsShow=0
 newsFade=0
 newsFadeA=1
 newsRepeat=1
-newsText=0
+newsText=1
+newsBox=1
 newsX=0
 newsY=0
+SceneSpeedX=0
+SceneSpeedY=0
+SceneX=0
+SceneY=0
 
 TextDialogue=""
 

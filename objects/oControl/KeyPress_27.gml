@@ -10,7 +10,7 @@ else
 {
 if stagePause=0
 {if !instance_exists(oSettings)
-	game_end()
+	{if room=rm_titlescreen game_end()}
 	else
 	{
 	global.MenuSkip=1

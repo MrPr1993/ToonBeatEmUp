@@ -14,7 +14,7 @@ or name="Thief3"
 treas.x=x+8
 treas.image_xscale=1 treas.hspeed=4
 
-sprite_index=spr_sneak_move
+sprite_index=spr_sneak_gunmove
 
 if name="Thief2" 
 {treas.x=x+16

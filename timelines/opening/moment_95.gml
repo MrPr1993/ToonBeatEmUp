@@ -1,0 +1,1 @@
+with diva4 {sprite_index=spr_sofia_super image_xscale=1 image_index=0 image_speed=0}

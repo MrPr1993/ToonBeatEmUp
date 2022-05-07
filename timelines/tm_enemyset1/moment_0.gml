@@ -31,7 +31,7 @@ fakeen=instance_create_depth(654+64,218-16,0,oAnimFX) with fakeen
 ////Thieves
 thief1=instance_create_depth(654+96,180+0,0,oFlashFX) with thief1
 {name="Thief" z=0 image_xscale=-1
-sprite_index=spr_sneak_stand animEnd=0 image_speed=0.5
+sprite_index=spr_sneak_gunstand animEnd=0 image_speed=0.5
   image_index=0 image_speed=0 alarm[0]=0 isDepth=1
 shad=instance_create_depth(x,y,0,oFlashFX) shad.alarm[0]=0 shad.sprite_index=spr_shadow shad.z=0 shad.isDepth=0 shad.depth=0 shad.name="Remove" shad.animEnd=0
 treas=instance_create_depth(x-8,y+1,0,oFlashFX) treas.image_index=0 treas.alarm[0]=0 treas.sprite_index=spr_treasure treas.z=-32 treas.isDepth=1 treas.name="Remove" treas.animEnd=0 treas.image_speed=0

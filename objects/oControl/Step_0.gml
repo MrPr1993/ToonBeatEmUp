@@ -1,7 +1,8 @@
 /// @description Beta Test
 if isPaused=0
 {
-if room=rm_cutscene1 __view_set( e__VW.YView, 0, quakeFX)	
+if room=rm_cutscene1 or room=rm_opening
+__view_set( e__VW.YView, 0, quakeFX)	
 
 
 if global.CanGlobalBeta=1
@@ -128,7 +129,7 @@ controller_setup()
 
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and  room!=rm_howtoplay and room!=rm_cutscene1
-and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
+and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 {
 if camMove=0
 {
