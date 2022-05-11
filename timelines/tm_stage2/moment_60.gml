@@ -1,5 +1,7 @@
 /// @description Spawn Barrel 1
 
+//specialSet8=20///for test
+
 if oControl.continueScreen=0
 {
 specialSet7=random(100)

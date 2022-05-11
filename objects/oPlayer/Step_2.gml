@@ -76,7 +76,10 @@ player_anim()
 
 if oControl.betatest=1
 {
-
+if keyboard_check_pressed(ord("1"))
+{
+if keyboard_check(vk_shift) hp=1 else hp=0.1
+}
 if keyboard_check_pressed(ord("2"))
 {
 if oControl.HurtTest=1

@@ -4,4 +4,4 @@ bobject_setup()
 
 roll=0
 
-carrySpr=spr_wbarrel_roll
+carrySpr=spr_dbarrel_roll

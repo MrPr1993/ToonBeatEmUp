@@ -18,7 +18,7 @@ spawner_followset("WaveSet1",0,480+320,1)
 
 ///654
 ///Door
-dorr=instance_create_depth(480+16,229,-1,oAnimFX) with dorr
+dorr=instance_create_depth(480+11,234,-1,oAnimFX) with dorr
 {sprite_index=spr_introdoor image_speed=0 isDepth=0 name="Door"}
 
 

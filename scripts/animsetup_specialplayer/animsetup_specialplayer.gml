@@ -10,7 +10,7 @@ function animsetup_specialplayer() {
 	sprite_index=CarSpr
 
 	//sprite_index=spr_car image_index=0
-
+image_index=0
 
 	if key_right 
 	{
@@ -34,25 +34,27 @@ function animsetup_specialplayer() {
 	{
 	ground=0 zSpeed=-12 PlaySoundNoStack(snd_jump)
 	}
-
-	if !ground zSpeed+=0.45
-
-
-	if key_right or -key_left or key_up or key_down
+	
+		if key_right or -key_left or key_up or key_down
 	{if carAnim<0 carAnim=1.75 else carAnim-=0.25
 	} else 
 	{
 	if carAnim<0 carAnim=1.8 else carAnim-=0.20
 	}
 
-	}
+	if !ground {zSpeed+=0.45 carAnim=2 image_index=3}
+	
+
+
+
+	} 
 
 	if anim!=200 and anim!=201 and anim!=202 {carMode=0 mask_index=defMask}
 
 	////Car Hit
 	if anim=201
 	{
-	hurt=1
+	hurt=1 carAnim=0
 
 	if shake=0 shake=2 else shake-=1
 
@@ -64,11 +66,14 @@ function animsetup_specialplayer() {
 	animFrame=0 anim=200 image_index=0}
 
 	}
+	
 	}
 
 	///Dead - Car
 	if anim=202
-	{if animFrame=0 {animFrame=0.1 PlaySoundNoStack(snd_explosion)}
+	{shadow=spr_shadow
+		
+	if animFrame=0 {animFrame=0.1 PlaySoundNoStack(snd_explosion)}
 	sprite_index=ThrownSpr 
 	if !ground 
 	{animFrame=0.25

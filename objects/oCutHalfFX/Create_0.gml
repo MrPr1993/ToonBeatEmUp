@@ -8,6 +8,7 @@ sentflying=0
 disappearTime=24
 hitBack=0
 HitGround=-1
+trainz=0
 
 fallHole=0
 

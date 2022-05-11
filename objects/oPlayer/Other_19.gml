@@ -40,11 +40,14 @@ else
 x=__view_get( e__VW.XView, 0 )-64 y=__view_get( e__VW.YView, 0 )+200
 areaEntry=1 canmove=0 zSpeed=0 ground=0 sentflying=0 key_jump=0
 carMode=1 visible=1 DeathCryOnce=0
-hp=1 dead=0 hurt=0 canmove=1
+hp=1 dead=0 hurt=0 canmove=0
 PlaySound(ReturnVoice)
 anim=200 canControl=0
 key_right=1
 alarm[0]=30
+//alarm[4]=2
+//if visible=0 visible=1 else visible=0
+//disappearTime-=1
 }
 
 dizzyAtk=0

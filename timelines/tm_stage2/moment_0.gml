@@ -33,7 +33,6 @@ areaEntry=1 key_left=0 key_right=0
 x=-100
 }
 
-
 oControl.showMap=1
 //with oControl{
 //alarm[0]=timecheck timecheck=-1}

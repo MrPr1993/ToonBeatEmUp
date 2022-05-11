@@ -244,6 +244,7 @@ if BossHPID.hplayer=9{draw_set_color(c_dkgray) draw_rectangle(64+1,240-24+1,320-
 draw_set_color(c_black)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
 
 draw_set_halign(fa_left)
+
 }
 
 
@@ -529,11 +530,23 @@ if scoreClearSet=0
 {scoreClearSet=1 alarm[7]=120
 alarm[8]=240
 oPlayer.PlayerScore+=round(oPlayer.hp*20000)+round(time*200)+bossScore
+
+GoldShow=1 GoldGet+=round(oPlayer.PlayerScore/100) global.Gold+=GoldGet
 }
 
 draw_set_halign(fa_left)
 }
 
+}
+
+///Gold getting
+if GoldShow=1 and global.GoldShow=1
+{GoldY=lerp(GoldY,0,0.1)
+draw_set_halign(fa_right)
+draw_set_color(c_white)
+draw_set_font(global.scorefont)
+draw_text(320-10,round(240-16+GoldY),string("+")+string(GoldGet)+string("$"))
+draw_set_halign(fa_left)
 }
 
 ///Screen FX for intro
@@ -552,8 +565,7 @@ if stageEnd!=0
 draw_rectangle(-2,-2,320*stageEnd,999,false)
 draw_set_color(c_white) draw_set_alpha(1)
 }
-
-}
+}////Draw main game end
 
 ///Title Screen
 if room=rm_titlescreen
@@ -561,10 +573,10 @@ if room=rm_titlescreen
 draw_set_color(c_white) draw_set_alpha(1)
 
 shader_set(shd_white_sprite)
-draw_sprite_ext(spr_gametitle,0,160,round(titlescreenY),titlescreenXscale,1,0,c_white,1)
+draw_sprite_ext(spr_gametitle,0,160,round(titlescreenY+titlescreenMenuY),titlescreenXscale,1,0,c_white,1)
 shader_reset()
 
-draw_sprite_ext(spr_gametitle,0,160,round(titlescreenY),titlescreenXscale,1,0,c_black,titleObjectWhite)
+draw_sprite_ext(spr_gametitle,0,160,round(titlescreenY+titlescreenMenuY),titlescreenXscale,1,0,c_black,titleObjectWhite)
 
 
 
@@ -623,7 +635,7 @@ titleFlashTime-=1 if titleFlashTime=0 {
 if titleShow=1
 {
 draw_set_color(c_white) titleImg+=0.1
-draw_sprite_ext(spr_gametitle,titleImg,160,round(titlescreenY),1,1,0,c_white,1)
+draw_sprite_ext(spr_gametitle,titleImg,160,round(titlescreenY+titlescreenMenuY),1,1,0,c_white,1)
 draw_set_alpha(titleSquareFX) titleSquareFX-=0.02 if titleSquareFX=0.02 if global.MenuSkip=0
 PlaySound(choose(snd_titlescreen,snd_titlescreen2,snd_titlescreen3,snd_titlescreen4))
 if noWhite=0
@@ -639,23 +651,26 @@ if pressStartTime<1
 }
 }
 else ///Select Menu
-{
+{titlescreenMenuY=lerp(titlescreenMenuY,-20,0.1)
 	if !instance_exists(oSettings)
 	{
-if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=4 else menuSelect-=1}
-if -key_down_pressed {PlaySound(snd_select) if menuSelect=4 menuSelect=0 else menuSelect+=1}
+if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=7 else menuSelect-=1}
+if -key_down_pressed {PlaySound(snd_select) if menuSelect=7 menuSelect=0 else menuSelect+=1}
 	}
 draw_set_halign(fa_left)
 if selectStar=0 selectStar=2 else selectStar-=0.2
 
-if menuSelect=0 {StarY=184-16 StarSpace=104}
-if menuSelect=1 {StarY=184-16+8 StarSpace=104}
-if menuSelect=2 {StarY=184-16+16 StarSpace=80}
-if menuSelect=3 {StarY=184-16+24 StarSpace=120}
-if menuSelect=4 {StarY=184-16+32 StarSpace=112}
+if menuSelect=0 {StarY=-24+184-16 StarSpace=108}
+if menuSelect=1 {StarY=-24+184-16+8 StarSpace=104}
+if menuSelect=2 {StarY=-24+184-16+16 StarSpace=120}
+if menuSelect=3 {StarY=-24+184-16+24 StarSpace=122}
+if menuSelect=4 {StarY=-24+184-16+32 StarSpace=136}
+if menuSelect=5 {StarY=-24+184-16+40 StarSpace=132}
+if menuSelect=6 {StarY=-24+184-16+48 StarSpace=84}
+if menuSelect=7 {StarY=-24+184-16+56 StarSpace=112}
 ///✰✰✰ //56
 draw_set_color(c_black) draw_set_alpha(0.75)
-draw_rectangle(80,168-4,240,208-4,false)
+draw_rectangle(80,168-4-24,240,208-4,false)
 
 draw_sprite(spr_scorefont,43,-8+4+StarSpace+selectStar,StarY-4)
 draw_sprite(spr_scorefont,43,-8+4+320-StarSpace-selectStar,StarY-4)
@@ -664,12 +679,14 @@ draw_sprite(spr_scorefont,43,-8+4+320-StarSpace-selectStar,StarY-4)
 draw_set_color(c_white) draw_set_alpha(1)
 draw_set_halign(fa_center) //▲►▼◄
 
-draw_text(160,184-16-4,string_hash_to_newline("ARCADE MODE"))
-draw_text(160,184-8-4,string_hash_to_newline("SELECT STAGE"))
-draw_text(160,184-4,string_hash_to_newline("CHARACTER PROFILE"))
-draw_text(160,184+8-4,string_hash_to_newline("SETTINGS"))
-draw_text(160,184+16-4,string_hash_to_newline("HIGH SCORE"))
-
+draw_text(160,184-16-4-24,string_hash_to_newline("ARCADE MODE"))
+draw_text(160,184-8-4-24,string_hash_to_newline("STAGE SELECT"))
+draw_text(160,184-4-24,string_hash_to_newline("SETTINGS"))
+draw_text(160,184+8-4-24,string_hash_to_newline("TRAINING"))
+draw_text(160,184+16-4-24,string_hash_to_newline("SHOP"))
+draw_text(160,184+24-4-24,string_hash_to_newline("FEATS"))
+draw_text(160,184+32-4-24,string_hash_to_newline("CHARACTER PROFILE"))
+draw_text(160,184+40-4-24,string_hash_to_newline("HIGH SCORE"))
 }
 
 draw_text(160,184+24,string_hash_to_newline("©2022 MRPR1993"))
@@ -734,7 +751,7 @@ draw_rectangle(-8,-8,2222,2222,0)
 if room=rm_characterselect
 {
 draw_set_color(c_white) draw_set_alpha(1)
-draw_sprite(spr_characterselecttext,0,160,32)
+draw_sprite(spr_characterselecttext,0,160,round(32+charselLerp))
 
 if p1Select=0
 {
@@ -793,9 +810,9 @@ shader_reset()
 }
 
 if p1Select=1 {if p1Flicker<0 p1Flicker=2 else p1Flicker-=0.5}
-{
+{characterVoiceAnnounce-=1
 
-if alarm[4]=90+80
+if characterVoiceAnnounce=90+80
 {
 if global.P1Char=0 PlaySound(snd_viva1)
 if global.P1Char=1 PlaySound(snd_hina1)
@@ -881,10 +898,17 @@ draw_text(40+240,190+24,string_hash_to_newline("✰✰✰✰✰"))
 draw_text(40+240,190+32,string_hash_to_newline("REACH"))
 draw_text(40+240,190+40,string_hash_to_newline("✰✰✰"))
 
+if characterSelReady=1
+{charselLerp=lerp(charselLerp,-6,0.1)
+draw_text(160,44,"PRESS START TO PLAY")
+}
+
 draw_set_font(global.timefont)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
-draw_text(160,32,string_hash_to_newline(charSelCountdown))
+
+draw_text(160+88888,32,string_hash_to_newline(charSelCountdown)) ////
+charSelCountdown=888888//Disable time
 
 if charSelCountdown!=0 and p1Select=0
 {
@@ -893,13 +917,31 @@ if charSelFlash=0 {charSelFlash=60 charSelCountdown-=1}
 if charSelCountdown=0 charSelForceSelect=1
 }
 
-if key_attack or keyboard_check_pressed(vk_enter) or charSelForceSelect=1
+if key_attack or keyboard_check_pressed(vk_enter)// or charSelForceSelect=1
+{
+
+if characterSelReady!=2
+{
+if characterSelReady=1
+{PlaySound(snd_picked) alarm[4]=20 characterSelReady=2}
+
+if characterSelReady=0
 {
 if p1Select=0///Select Character
-{PlaySound(snd_picked) charSelectFlash=1
+{PlaySound(snd_picked) charSelectFlash=1 characterSelReady=1
 p1Select=1
-alarm[4]=200
-}}
+characterVoiceAnnounce=200
+}
+}
+
+}
+}
+
+
+if characterSelReady=2
+{
+draw_set_color(c_black) draw_rectangle(-1,-1,321,241,false)
+}
 
 draw_set_color(c_white) draw_set_alpha(1)
 }
@@ -1072,7 +1114,7 @@ if newsFade=0 {if newsFadeA>0 newsFadeA-=0.05 else newsFadeA=0}
 if newsFade=1 {if newsFadeA<1 newsFadeA+=0.05 else newsFadeA=1}
 if newsFade=2 {if newsFadeA<1 newsFadeA+=0.05 else newsFade=0}
 if newsText=1
-{
+{fpsY=240-56
 draw_set_alpha(1) draw_set_color(c_black)
 draw_rectangle(-32,192,333,666,false)
 draw_set_color(c_white)
@@ -1081,7 +1123,7 @@ draw_set_halign(fa_center)
 draw_text(160,210-16,cutscenename)
 draw_set_halign(fa_left)
 draw_text(8,220-16,cutsceneline)
-}
+}else fpsY=240-8
 
 draw_sprite_ext(spr_newspaper,0,160,120,4,4,0,c_black,newsFadeA)
 
@@ -1089,6 +1131,7 @@ if key_attack or keyboard_check_pressed(vk_enter)
 or key_jump or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
 {////Hiscore to Title Screen
 global.MenuSkip=0 global.IntroSkip=1
+
 room_goto(rm_titlescreen)
 }
 }
@@ -1222,7 +1265,7 @@ CutsceneY+=CutsceneVSpeed
 
 draw_set_alpha(1) draw_set_color(c_black)
 if newsBox=1
-draw_rectangle(-32,192,333,666,false)
+{draw_rectangle(-32,192,333,666,false)}
 draw_set_color(c_white)
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
@@ -1240,11 +1283,12 @@ draw_set_halign(fa_center)
 
 //draw_text(160,10+200,"THE GAME IS CONTROLLER COMPATIBLE!")
 if newsText=1
-{
+{fpsY=240-56
 draw_text(160,210-16,cutscenename)
 draw_set_halign(fa_left)
 draw_text(8,220-16,cutsceneline)
-}draw_set_halign(fa_left)
+}else fpsY=240-8
+draw_set_halign(fa_left)
 //draw_text(160,10+230,"WITH TWO MORE FOR THIS DEMO")
 
 ///Screen FX for intro
@@ -1273,14 +1317,18 @@ draw_set_font(global.scorefont)
 if global.fpsMode=1
 {draw_set_halign(fa_right)
 
-draw_text(320,240-8,string_hash_to_newline("FPS: "+string(fps_real)))
-draw_text(320,240-16,string_hash_to_newline("FPSR : "+string(fps)))
+
+
+draw_text(fpsX,fpsY-8,string_hash_to_newline("FPSR:"+string(fps_real)))
+draw_text(fpsX,fpsY,string_hash_to_newline("FPS:"+string(fps)))
 draw_set_halign(fa_left)
 }
 draw_set_font(-1)
 	draw_set_halign(fa_top)
 if room=rm_map
 {
+
+
 draw_sprite(spr_hud,0,0,0)
 draw_sprite(spr_hud,0,72,0)
 draw_sprite(spr_hud,0,320-144,0)
@@ -1309,9 +1357,14 @@ draw_text(70,12,string_hash_to_newline(global.P1Life)) //draw_text(39,0,7400)
 draw_text(70,2,string_hash_to_newline(global.P1Score)) //draw_text(39,0,7400)
 
 draw_set_halign(fa_center)
-draw_text(160,48,mapSName)
+draw_text(160,44,mapSName)
 
 draw_set_halign(fa_left)
+if mapSelected=1
+draw_sprite_ext(spr_whitecol,0,-8,-8,99999,9999,0,c_black,1)
+
+if quickMapLerp!=0
+draw_sprite_ext(spr_whitecol,0,-8,-8,99999,9999,0,c_black,1)
 }
 
 charinfo_draw()

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_wbarrel",
-    "path": "sprites/spr_wbarrel/spr_wbarrel.yy",
+    "name": "spr_dbarrel",
+    "path": "sprites/spr_dbarrel/spr_dbarrel.yy",
   },
   "solid": false,
   "visible": true,
@@ -36,7 +36,7 @@
     "path": "folders/9 - Objects And Items/a - Interactive Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oWBarrel",
+  "name": "oDBarrel",
   "tags": [],
   "resourceType": "GMObject",
 }

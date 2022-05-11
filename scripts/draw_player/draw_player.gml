@@ -47,6 +47,10 @@ if anim!=202
 {
 if specialFX=1 shader_set(shd_white_sprite);
 draw_sprite_ext(spr_car_wheels,carAnim,round(x+shake*image_xscale),round(y+z),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+
+if hurt=0
+draw_sprite_ext(spr_car,2-2*ground,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+else
 draw_sprite_ext(spr_car,hurt,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 }
 shader_reset()

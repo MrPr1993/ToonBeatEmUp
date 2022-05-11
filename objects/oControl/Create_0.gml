@@ -4,8 +4,6 @@ controller_setup()
 instance_create(0,0,oBlackFX)
 //instance_create(0,0,oTVfx)
 
-
-
 alarm[10]=640+160
 
 BGmove=0
@@ -21,8 +19,16 @@ introScene=1
 introPart=0
 introTime=0
 
+GoldShow=0
+GoldGet=0
+GoldY=32
+
 if !variable_global_exists("CurrentMusic")
-{
+{global.StageSelect=0
+global.StageGoing=rm_opening
+	
+global.StageSelX=0
+global.StageSelY=0
 	
 global.SetIntro=0
 	
@@ -45,6 +51,7 @@ global.LifeStart=2
 global.DisplayFeats=1
 
 global.Gold=0
+global.GoldShow=1
 
 global.enemytest=0
 global.enemytestB=0
@@ -187,6 +194,8 @@ continueScreen=0
 continueCountdown=9
 characterSelect=0
 characterTimer=9
+characterSelReady=0
+characterVoiceAnnounce=-1
 characterCount=90
 continueFlash=0
 isGameOver=0
@@ -196,6 +205,7 @@ gameOverSpin=0
 charSelFlash=60
 charSelCountdown=20
 charSelForceSelect=0
+charselLerp=0
 
 superFlashFrame1=0
 superFlashFrame2=0
@@ -305,6 +315,8 @@ bossMaxHP=2
 
 
 if !variable_global_exists("fpsMode") global.fpsMode=0
+fpsX=320
+fpsY=240-8
 
 introSkip=0
 introSkipFX=0
@@ -323,6 +335,7 @@ titleFlashFX=0
 titleSquareFX=1
 pressStartTime=0
 titleImg=0
+titlescreenMenuY=0
 
 showMap=1
 mapTime=0
@@ -410,18 +423,20 @@ CutsceneStage=rm_stage2
 
 
 /////Map Screen
-mapSelX=0
-mapSelY=0
+mapSelX=global.StageSelX
+mapSelY=global.StageSelY
 mapSX=80
 mapSY=121
 mapSXlerp=80
 mapSYlerp=121
+quickMapLerp=10
 mapSLevel=0
 mapSName="LEVEL 0"
 mapSpr=spr_viva_map
 mapAnim=0
 mapIndex=0
 mapPlayerName="VIVA"
+mapSelected=0
 
 
 
@@ -439,6 +454,7 @@ titleFlashTime=0
 titleObjectWhite=0
 titleShow=1
 pressStart=1
+titlescreenMenuY=-20
 }
 
 if global.IntroSkip=1
@@ -468,6 +484,8 @@ if !variable_global_exists("LOADSET")
 {global.LOADSET=0
 settings_load()
 }
+
+if room=rm_titlescreen global.StageSelect=0
 
 
 enemySpawn=global.enemytest
