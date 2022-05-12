@@ -18,6 +18,9 @@ en=instance_create(mouse_x,mouse_y,spawnUnit)
 
 if keyboard_check(vk_shift) with en
 {
+if object_index=oEnemy1
+{canmove=0 anim=70000}
+	
 if object_index=oBoss1 or object_index=oPharaoh
 {
 if oPlayer.x>x image_xscale=1 else image_xscale=-1
@@ -54,6 +57,8 @@ if object_index=oEnemy1B if keyboard_check(vk_control)
 weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
 
 }
+
+
 
 if object_index=oSwing if keyboard_check(vk_control)
 {

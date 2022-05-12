@@ -241,6 +241,13 @@ function character_setup() {
 	petSprHigh=spr_viva_petlow
 	throwItemSpr=spr_viva_itemthrow
 	
+	enemyIdle1=spr_burglar_idle
+	enemyIdle2=spr_burglar_idle
+	enemyIdle3=spr_burglar_idle
+	enemyIdle4=spr_burglar_idle
+	enemyIdle5=spr_burglar_idle
+	
+	
 	hitCheck=0
 
 	GrabFrame=24

@@ -1,94 +1,43 @@
-oPlayer.x=56
-oPlayer.y=160
-oPlayer.z=-32
-oPlayer.alarm[0]=0
-
-with oPlayer
+/// @description Stage Start
+if oPlayer.anim=220 and oPlayer.animFrame<5
+timeline_position-=1
+else
 {
-canControl=0
-key_left=0 key_up=0 key_down=0
+if oPlayer.ground=0
+{oViewTarget.x=0
+__view_set( e__VW.Object, 0, oViewTarget )
+oEnemySpawner.canFollow=0
+oControl.camMove=0
+timeline_position-=1
+}
+else
+{oEnemySpawner.roomHSpd=0
+oEnemySpawner.roomMove=0
+__view_set( e__VW.HSpeed, 0, 0 )
+oPlayer.canControl=1
+oPlayer.areaEntry=0
+oControl.camMove=1
+oEnemySpawner.canFollow=1
+timeline_running=true
 
-key_right=0
-areaEntry=0
+with oControl{showMap=1
+alarm[0]=60 timecheck=-1}
 
-image_xscale=1
 
-canmove=0
-anim=220
+en1=instance_create(850,164,oEnemy1) en1.canmove=0 en1.isIdle=1 en1.alarm[1]=60 en1.anim=70000
+en1.idleRange=90
+en2=instance_create(888,164,oEnemy1B) en2.canmove=0 en2.isIdle=1 en2.alarm[1]=60 en2.image_xscale=-1
+en2.idleRange=130 en2.anim=70000
+
+en5=instance_create(1000,160,oAreaSpawner)
+with en5
+{
+spawnX=992-160 ///768
+enemytype0=oEnemy1B MaxSpawnFrame=0 visible=1
+FXtype=4 canDraw=1 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 }
 
-char1=instance_create(96,160-8,oFlashFX) with char1
-{name="Remove" z=-32
-
-if global.P1Char!=3
-sprite_index=spr_sofia_attack
-else 
-sprite_index=spr_viva_attack
-
-
-  image_index=2 image_speed=0 alarm[0]=0 isDepth=1
-shad=instance_create(x,y,oFlashFX) shad.alarm[0]=0 shad.sprite_index=spr_shadow shad.z=-32 shad.isDepth=0 shad.depth=10000 shad.name="Remove" shad.animEnd=0
 }
 
-char2=instance_create(45,220,oFlashFX) with char2
-{name="Remove" z=-32
-
-if global.P1Char!=2
-sprite_index=spr_bahati_hammeratk 
-else 
-sprite_index=spr_viva_hammeratk 
-
-
-image_index=3 image_speed=0 alarm[0]=0 isDepth=1
-shad=instance_create(x,y,oFlashFX) shad.alarm[0]=0 shad.sprite_index=spr_shadow shad.z=-32 shad.isDepth=0 shad.depth=0 shad.name="Remove" shad.animEnd=0
 }
-
-char3=instance_create(22,200,oFlashFX) with char3
-{name="Remove" z=-32
-
-if global.P1Char!=1
-sprite_index=spr_hina_attack
-else 
-sprite_index=spr_viva_attack
-
-  image_index=0 image_speed=0 alarm[0]=0 isDepth=1
-shad=instance_create(x,y,oFlashFX) shad.alarm[0]=0 shad.sprite_index=spr_shadow shad.z=-32 shad.isDepth=0 shad.depth=0 shad.name="Remove" shad.animEnd=0
-}
-
-
-
-////Thieves
-thief1=instance_create(255,170-16,oFlashFX) with thief1
-{name="Thief" z=0 image_xscale=-1
-sprite_index=spr_sneak_stand animEnd=0 image_speed=0.5
-  image_index=0 image_speed=0 alarm[0]=0 isDepth=1
-shad=instance_create(x,y,oFlashFX) shad.alarm[0]=0 shad.sprite_index=spr_shadow shad.z=0 shad.isDepth=0 shad.depth=0 shad.name="Remove" shad.animEnd=0
-treas=instance_create(x-8,y+1,oFlashFX) treas.image_index=0 treas.alarm[0]=0 treas.sprite_index=spr_treasure treas.z=-32 treas.isDepth=1 treas.name="Remove" treas.animEnd=0 treas.image_speed=0
-}
-thief1=instance_create(255-32,150-16,oFlashFX) with thief1
-{name="Thief2" z=0 image_xscale=-1
-sprite_index=spr_burglar_stand animEnd=0 image_speed=0.5
-  image_index=0 image_speed=0 alarm[0]=0 isDepth=1
-shad=instance_create(x,y,oFlashFX) shad.alarm[0]=0 shad.sprite_index=spr_shadow shad.z=0 shad.isDepth=0 shad.depth=0 shad.name="Remove" shad.animEnd=0
-treas=instance_create(x-16,y+1,oFlashFX) treas.image_index=1 treas.alarm[0]=0 treas.sprite_index=spr_treasure treas.z=-32 treas.isDepth=1 treas.name="Remove" treas.animEnd=0 treas.image_speed=0
-current_pal=2
-}
-thief1=instance_create(255+16,190-16,oFlashFX) with thief1
-{name="Thief2" z=0 image_xscale=-1
-sprite_index=spr_burglar_stand animEnd=0 image_speed=0.5
-  image_index=0 image_speed=0 alarm[0]=0 isDepth=1
-shad=instance_create(x,y,oFlashFX) shad.alarm[0]=0 shad.sprite_index=spr_shadow shad.z=0 shad.isDepth=0 shad.depth=0 shad.name="Remove" shad.animEnd=0
-treas=instance_create(x-16,y+1,oFlashFX) treas.image_index=2 treas.alarm[0]=0 treas.sprite_index=spr_treasure treas.z=-32 treas.isDepth=1 treas.name="Remove" treas.animEnd=0 treas.image_speed=0
-current_pal=2
-}
-thief1=instance_create(255-32,210-16,oFlashFX) with thief1
-{name="Thief2" z=0 image_xscale=-1
-sprite_index=spr_burglar_stand animEnd=0 image_speed=0.5
-  image_index=0 image_speed=0 alarm[0]=0 isDepth=1
-shad=instance_create(x,y,oFlashFX) shad.alarm[0]=0 shad.sprite_index=spr_shadow shad.z=0 shad.isDepth=0 shad.depth=0 shad.name="Remove" shad.animEnd=0
-treas=instance_create(x-16,y+1,oFlashFX) treas.image_index=3 treas.alarm[0]=0 treas.sprite_index=spr_treasure treas.z=-32 treas.isDepth=1 treas.name="Remove" treas.animEnd=0 treas.image_speed=0
-current_pal=2
-}
-
-with oControl {if timecheck=-1 {timecheck=alarm[0] alarm[0]=0}}
 

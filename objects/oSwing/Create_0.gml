@@ -69,7 +69,7 @@ spritepos_setup(2,24,-3,76)
 
 canTaunt=0
 
-current_pal=5;
+current_pal=2;
 
 weapontype=0
 weaponColPosX=48

@@ -16,6 +16,11 @@ HasRunAnim=1
 hasFront=1
 hasIdle=1
 hasDizzy=1
+enemyIdle1=spr_burglar_idle
+enemyIdle2=spr_burglar_front
+enemyIdle3=spr_burglar_idle
+enemyIdle4=spr_burglar_idle
+enemyIdle5=spr_burglar_idle
 
 pointshit=10
 points=100
@@ -30,6 +35,8 @@ DeathCry=snd_deathcry1
 
 selfatk.isPlayer=isPlayer
 hasCut=1
+
+
 
 spritepos_setup(1,0,-13,20)
 spritepos_setup(1,1,-5,23)

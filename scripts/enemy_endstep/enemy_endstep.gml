@@ -31,6 +31,7 @@ function enemy_endstep() {
 	if act=1
 	{
 	script_execute(enemyscript)
+	enemyanim_special()
 	}
 	else image_speed=0
 

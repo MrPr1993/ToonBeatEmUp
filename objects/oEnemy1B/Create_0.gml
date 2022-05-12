@@ -53,6 +53,8 @@ StandSpr=spr_burglarB_stand
 	IdleSpr=spr_burglarB_idle
 	cutSpr1=spr_burglarB_cut1
 hasCut=1
+enemyIdle1=spr_burglarB_idle
+enemyIdle2=spr_burglarB_front
 
 spritepos_setup(1,0,-13,20)
 spritepos_setup(1,1,-5,23)

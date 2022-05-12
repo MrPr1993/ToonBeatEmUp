@@ -32,6 +32,8 @@ draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPo
 else
 draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2)
 
+
+
 if instance_exists(oBarrel) with oBarrel if visible and !place_meeting(x,y,oFallHole)
 and z!=0 and fallHole=0
 {
@@ -40,6 +42,7 @@ draw_sprite_ext(shadow,0,x,y+trainz+2,image_xscale,1,0,c_white,1)
 
 if instance_exists(oShadowOnly) with oShadowOnly if visible and !place_meeting(x,y,oFallHole)
 and fallHole=0
+if shadow!=-1
 draw_sprite(shadow,0,x,y+trainz+2)
 
 if instance_exists(oFlashFX) with oFlashFX if FlashShadow=1

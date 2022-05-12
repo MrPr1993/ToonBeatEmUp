@@ -1,5 +1,7 @@
-bub=instance_create(114,40,oFlashFX) with bub
-{isDepth=0 name="Bub" alarm[0]=0
-sprite_index=spr_dialogueintro image_speed=0
+if __view_get( e__VW.XView, 0 )>=928
+{
+en6=instance_create(__view_get( e__VW.XView, 0 )-64,176,oEnemy1)
 }
+else
+timeline_position-=1
 

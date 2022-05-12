@@ -67,6 +67,8 @@ AtkSpr4=spr_sneak_attack
 AtkSpr5=spr_sneak_attack
 JumpAtkSpr=spr_sneak_attack
 JumpAtkSpr2=spr_sneak_attack
+hasFront=1
+FrontSpr=spr_sneak_front
 
 JumpSpr=spr_sneak_stand
 JumpSpr2=spr_sneak_stand
