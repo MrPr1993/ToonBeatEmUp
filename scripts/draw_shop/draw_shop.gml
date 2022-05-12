@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_shop(){
 if room=rm_shop
-{
+{fpsX=320 fpsY=8
 controller_setup()
 
 if shopSet=0 shopName=""

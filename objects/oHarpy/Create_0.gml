@@ -11,6 +11,9 @@ points=100
 
 rangeAtk=100
 
+//hover=1
+//hoverZ=0
+
 OneAttack=2
 
 hp=2
@@ -32,13 +35,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_plantprincess_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_harpy_stand
+JumpSpr2=spr_harpy_stand
+ThrownSpr=spr_harpy_hit
+FlatSpr=spr_harpy_flat
+ShockSpr=spr_harpy_elec
+BurnSpr=spr_harpy_burned
+FrozenSpr=spr_harpy_frozen
 
 
 current_pal=0;

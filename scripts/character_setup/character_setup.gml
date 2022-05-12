@@ -8,6 +8,7 @@ function character_setup() {
 	name="NULL"
 	enemyPortraitSpr=spr_miscface
 	enemyPortraitIndex=0
+	enemyID=0
 
 	characterID=instance_number(self)
 	targetCheckID=0

@@ -11,3 +11,6 @@ BounceOnce=0
 damage=0.16
 
 shadow=spr_barrelshadow
+
+
+

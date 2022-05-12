@@ -10,3 +10,4 @@ with oEnemySpawner
 	MaxY=280
 		}
 
+oControl.StageNumber=4

@@ -336,19 +336,21 @@ case 6:
 switch (dataSelect) ///ROW 6
 {
   case 1:
-   charinfo_set(23,spr_hwolf_stand,2,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,9,"LADY WOLF","")
+   charinfo_set(23,spr_hwolf_stand,0,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,9,"LADY WOLF","")
  if dataPal=2
- charinfo_set(23,spr_wolfita_stand,2,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,5,"LADY WOLF","")
+ charinfo_set(23,spr_wolfita_stand,0,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,5,"LADY WOLF","")
    break;
   case 2:
-///Path Up, Car Roof
+  charinfo_set(23,spr_harpy_stand,0,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,34,"HENRIETTA","")
+///Path Up, Airport
  break;
   case 3:
-  ///Boat
-  charinfo_set(23,spr_franki_stand,2,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,10,"C.ROSY","")
+  ///Path Middle, Boat
+  charinfo_set(23,spr_franki_stand,0,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,10,"C.ROSY","")
 break;
   case 4:
-///Beach?
+///Path Down, Train
+charinfo_set(23,spr_twoheads_stand,0,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,35,"DOLORES","")
 break;
   case 5:
 ////Up, Warehouse

@@ -52,18 +52,22 @@ draw_set_color(c_black) draw_set_alpha(0.5)
 draw_rectangle(-2,-2,888,888,false)
 draw_set_color(c_white) draw_set_alpha(1)
 
+if AreYouSure=0
+{
 draw_sprite(spr_scorefont,43,-8+4+StarSpace+selectStar,StarY-4)
 draw_sprite(spr_scorefont,43,-8+4+320-StarSpace-selectStar,StarY-4)
-
+}
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
+if AreYouSure=0
+{
 draw_text(160,120-24,"PAUSE")
 draw_text(160,120-8,"RESUME")
 if global.StageSelect=0 draw_set_color(c_dkgray)
 draw_text(160,120,"RESTART") draw_set_color(c_white)
 draw_text(160,120+8,"SETTINGS")
 draw_text(160,120+16,"QUIT")
-
+}
 
 if AreYouSure=1
 {

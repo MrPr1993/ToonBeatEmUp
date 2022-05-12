@@ -7,7 +7,7 @@ with oPlayer
 canControl=0
 ground=0
 zSpeed=-16
-PlaySound(snd_swing) key_right=0 key_left=0 key_up=0 key_down=0
+PlaySound(snd_break2) key_right=0 key_left=0 key_up=0 key_down=0
 hspeed=8
 vspeed=0 with oControl specialSet8=0
 }

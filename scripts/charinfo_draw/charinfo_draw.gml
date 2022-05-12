@@ -1,13 +1,13 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function charinfo_draw(){
-if instance_exists(oCharacterInfo) with oCharacterInfo
+if instance_exists(oCharacterInfo) {fpsX=128+8 fpsY=8 with oCharacterInfo
 {
 /// @description Insert description here
 // You can write your code in this editor
 shader_reset()
 draw_set_color(c_white) draw_set_alpha(1)
-shader_set(shd_grayscale)
+//shader_set(shd_grayscale)
 //Row 1
 draw_sprite_ext(spr_playerface,0,0,26,1,1,0,unlockedChar[1],1)
 draw_sprite_ext(spr_playerface,1,24,26,1,1,0,unlockedChar[2],1)
@@ -93,4 +93,4 @@ draw_text(146+2,188,desc) //Description
 
 
 }
-}
+}}

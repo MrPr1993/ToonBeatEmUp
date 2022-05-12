@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemydeathcount(){
 
-if name="MR.BURG"
-{}
+if enemyID=4
+{global.UnlockEnemy[5]=c_white}
 
 }

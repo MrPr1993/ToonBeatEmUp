@@ -1,6 +1,6 @@
 musicplaystart(-1)
 oControl.showMap=0
-
+global.P1Score=0
 global.StageSelect=0
 global.StageGoing=rm_stage1
 oControl.CutsceneStage=rm_stage1

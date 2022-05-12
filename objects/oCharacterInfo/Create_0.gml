@@ -112,12 +112,10 @@ weaponHitType=1
 WswingSound=snd_swing3
 
 unlockedChar[50]=0
-setunlock=1
-repeat(50)
-{
-unlockedChar[setunlock]=c_white
-setunlock+=1
-}
+setunlock=0
+
+
+enemydeathinit()
 
 charNO=1
 

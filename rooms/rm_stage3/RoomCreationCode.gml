@@ -7,3 +7,5 @@ oPlayer.key_right=0
 oControl.stageNext=rm_credits
 
 oControl.stagePause=1
+
+oControl.StageNumber=6

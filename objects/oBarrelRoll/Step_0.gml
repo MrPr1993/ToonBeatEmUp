@@ -16,10 +16,10 @@ if hit=0
 {
 if roll=1
 {
-if image_xscale=-1 and x<__view_get( e__VW.XView, 0 )-64 instance_destroy()
+if image_xscale=-1 and x<__view_get( e__VW.XView, 0 )-200 instance_destroy()
 x+=4*image_xscale
 sprite_index=spr_barrel_roll image_speed=0.5 
-if ground if Bounce!=0 {zSpeed=Bounce PlaySoundNoStack(snd_hitgroundmetal)
+if ground if Bounce!=0 {zSpeed=Bounce if x>__view_get( e__VW.XView, 0 )-64 PlaySoundNoStack(snd_hitgroundmetal)
 if BounceOnce=1 Bounce=0
 }
 }

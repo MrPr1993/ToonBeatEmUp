@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_twoheads_stand
-MoveSpr=spr_twoheads_stand
-RunSpr=spr_twoheads_stand
+MoveSpr=spr_twoheads_move
+RunSpr=spr_twoheads_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -32,13 +32,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_plantprincess_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_twoheads_stand
+JumpSpr2=spr_twoheads_stand
+ThrownSpr=spr_twoheads_hit
+FlatSpr=spr_twoheads_flat
+ShockSpr=spr_twoheads_elec
+BurnSpr=spr_twoheads_burned
+FrozenSpr=spr_twoheads_frozen
 
 
 current_pal=0;

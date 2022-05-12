@@ -22,3 +22,5 @@ oEnemySpawner.timehit=-100
 
 oControl.stageNext=rm_stage3
 oControl.stagePause=1
+
+oControl.StageNumber=3

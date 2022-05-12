@@ -1,6 +1,8 @@
 /// @description If certain details like the Continue happens and it needs to freeze all enemies
 function enemy_data() {
 	character_setup()
+	
+	
 
 	enemyscript=animsetup_enemy
 	enemyai=enemy_ai

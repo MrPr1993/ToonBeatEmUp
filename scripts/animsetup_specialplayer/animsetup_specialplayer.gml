@@ -32,7 +32,7 @@ image_index=0
 
 	if key_jump and ground
 	{
-	ground=0 zSpeed=-12 PlaySoundNoStack(snd_jump)
+	ground=0 zSpeed=-12 PlaySound(snd_break2)
 	}
 	
 		if key_right or -key_left or key_up or key_down

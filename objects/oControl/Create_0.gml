@@ -23,9 +23,30 @@ GoldShow=0
 GoldGet=0
 GoldY=32
 
+StageNumber=0
+
+
+
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 global.StageGoing=rm_opening
+
+global.UnlockCharacterData=0
+global.UnlockFeats=0
+
+global.UnlockStage[20]=0
+
+global.UnlockEnemy[60]=0
+
+global.UnlockEnemy[1]=c_white
+global.UnlockEnemy[2]=c_white
+global.UnlockEnemy[3]=c_white
+global.UnlockEnemy[4]=c_white
+
+global.MenuGlobal=0
+global.MenuSkip=0
+
+global.HiscoreSkip=0
 	
 global.StageSelX=0
 global.StageSelY=0
@@ -86,7 +107,8 @@ shade=shd_television
 tvshade_set()
 
 pressStart=0
-menuSelect=0
+menuSelect=global.MenuGlobal
+menuLocked=0
 selectStar=0
 StarSpace=0
 StarY=0
@@ -423,6 +445,9 @@ CutsceneStage=rm_stage2
 
 
 /////Map Screen
+lockedMap[30]=0
+check_unlockedmap()
+
 mapSelX=global.StageSelX
 mapSelY=global.StageSelY
 mapSX=80

@@ -33,7 +33,7 @@ function animsetup_enemy() {
 	if isIdle=1 and hasIdle=1///idle
 	{
 	sprite_index=IdleSpr
-	image_index+=0.5 if image_index>2 image_index=0
+	image_index+=0.25 if image_index>2 image_index=0
 	}
 
 
