@@ -1,6 +1,6 @@
 /// @description Spawn Barrel 1
 
-//specialSet8=20///for test
+specialSet8=20///for test
 
 if oControl.continueScreen=0
 {

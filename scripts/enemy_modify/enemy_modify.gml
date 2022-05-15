@@ -12,8 +12,4 @@ function enemy_modify(argument0, argument1, argument2, argument3, argument4, arg
 	hplayer=argument3
 	hp=argument4
 	maxhp=argument5
-
-
-
-
 }

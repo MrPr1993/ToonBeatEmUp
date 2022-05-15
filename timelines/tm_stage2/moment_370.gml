@@ -1,3 +1,5 @@
+/// @description Ship Area
+
 if oPlayer.ground
 {
 oPlayer.canControl=1
@@ -8,6 +10,8 @@ oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0
 oControl.camMove=1
 
+with chairen
+{sprite_index=spr_sneak_chair2 image_speed=0.5}
 with oControl
 spawner_followset("WaveSet1",0,1298,1)
 
@@ -22,8 +26,7 @@ instance_destroy()
 }
 
 with oPlayer
-{
-	
+{	
 car=instance_create_depth(x,y,depth,oCar) car.dead=1 car.sprite_index=spr_car_dead
 car.image_xscale=image_xscale car.z=z car.ground=0 car.mask_index=mask_none
 player_jump() canmove=1 canControl=1}

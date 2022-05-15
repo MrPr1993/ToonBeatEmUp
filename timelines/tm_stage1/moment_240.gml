@@ -13,15 +13,24 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 
 spawner_followset("WaveSet1",0,2064,1)
 
-en1=instance_create(1288,160,oAreaSpawner)
+enA=instance_create_depth(1392-32,176,-1,oEnemy1) with enA
+{canmove=0 isIdle=1 alarm[1]=60 anim=70000 idleRange=30 
+	enemyIdle1=spr_burglar_idle2 enemyIdle2=spr_burglar_hit enemyIdle2Ind=10
+	}
+enB=instance_create_depth(1392+32,176,-1,oEnemy1B) with enB
+ {canmove=0 isIdle=1 alarm[1]=60 image_xscale=-1
+idleRange=30 anim=70000}
+
+
+
+en1=instance_create(1288,160,oEntryClimb)
+en1.z=-48 en1.rangeX=en1.x-200 en1.rangeXAdd=0
 with en1
-{
-spawnX=1288-240 ///768
-enemytype0=oEnemy1 MaxSpawnFrame=0 visible=1
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-enemytype1=oEnemy1B
-enemyMax=0
+{spawnEnemy=oSneak
+spawnSpr=spr_sneak_entry1
+spawnFall=spr_sneak_front
 }
+
 
 en2=instance_create(1512,160,oAreaSpawner)
 with en2
@@ -34,7 +43,13 @@ enemytype1=oSneak
 enemyMax=1
 }
 
+doggo=instance_create_depth(1392,176,-1,oDogPet) with doggo anim=2 ///Poor doggo
+doggo.foeID1=enA doggo.foeID2=enB
+
 }
 else
+{
+
 timeline_position-=1
+}
 

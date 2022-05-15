@@ -9,8 +9,9 @@ goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320
 spawner_followset("WaveSet1",0,2847+320,1)
 //__view_set( e__VW.XView, 0, 2848 )
-limo1=instance_create_depth(2848+128,200,0,oFlashFX) limo1.sprite_index=spr_truck  limo1.isdepth=0
+limo1=instance_create_depth(2848+200,200,0,oFlashFX) limo1.sprite_index=spr_truck  limo1.isdepth=0
 limo1.image_speed=0 limo1.image_index=0 limo1.alarm[0]=0 limo1.name="Limo" limo1.image_speed=0
+with limo1 {FlashShadow=1 shadow=spr_carshadow}
 }
  
 //with oEnemySpawner if selfID="WaveSet1"

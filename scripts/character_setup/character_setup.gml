@@ -242,10 +242,15 @@ function character_setup() {
 	throwItemSpr=spr_viva_itemthrow
 	
 	enemyIdle1=spr_burglar_idle
+	enemyIdle1Ind=0
 	enemyIdle2=spr_burglar_idle
+	enemyIdle2Ind=0
 	enemyIdle3=spr_burglar_idle
+	enemyIdle3Ind=0
 	enemyIdle4=spr_burglar_idle
+	enemyIdle4Ind=0
 	enemyIdle5=spr_burglar_idle
+	enemyIdle5Ind=0
 	
 	
 	hitCheck=0

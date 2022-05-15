@@ -19,6 +19,12 @@ RunMoveSpeedDecrease=0.2
 hasIdle=1
 IdleSpr=spr_sneak_idle
 
+enemyIdle1=spr_sneak_idle
+enemyIdle2=spr_sneak_front
+enemyIdle3=spr_burglar_idle
+enemyIdle4=spr_burglar_idle
+enemyIdle5=spr_burglar_idle
+
 grabTest=0
 
 DeathCry=snd_deathcry1

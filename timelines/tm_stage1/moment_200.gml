@@ -25,9 +25,9 @@ alarm[0]=60 timecheck=-1}
 
 
 en1=instance_create(850,164,oEnemy1) en1.canmove=0 en1.isIdle=1 en1.alarm[1]=60 en1.anim=70000
-en1.idleRange=90
+en1.idleRange=30
 en2=instance_create(888,164,oEnemy1B) en2.canmove=0 en2.isIdle=1 en2.alarm[1]=60 en2.image_xscale=-1
-en2.idleRange=130 en2.anim=70000
+en2.idleRange=30+32 en2.anim=70000
 
 en5=instance_create(1000,160,oAreaSpawner)
 with en5

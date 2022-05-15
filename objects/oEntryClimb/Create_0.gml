@@ -12,6 +12,10 @@ image_speed=0
 	///Override stuff.
 	override_surface=noone;
 	override_pal_index=1;
+	hp=-1;
+	maxhp=1;
+	fxXadd=0
+	fxYadd=0
 	
 	animFrame=0
 	
@@ -27,7 +31,7 @@ image_speed=0
 	spawnFall=spr_burglar_front
 	spawnFallIndex=0
 	spawnEnemy=oEnemy1
-	spawnName="MR.BURG"
+	name=-1
 	
 	shadow=-1
 	shadowSpr=spr_shadow

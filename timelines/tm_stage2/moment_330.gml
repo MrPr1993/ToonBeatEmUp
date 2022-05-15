@@ -4,6 +4,8 @@ specialSet8+=1
 if specialSet8<80
 timeline_position-=1
 
+
+
 if specialSet8=10 or specialSet8=20
 fakeen.image_index=1
 if specialSet8=15 fakeen.image_index=2

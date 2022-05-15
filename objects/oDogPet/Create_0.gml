@@ -26,3 +26,18 @@ petDistance=28
 interact=0
 
 iconheight=-48
+
+scared=0
+
+standSpr=spr_dog
+scaredSpr=spr_dog_scared
+
+foeID1=-1
+foeID2=-1
+foeID3=-1
+foeID4=-1
+foeID5=-1
+foeID6=-1
+foeID7=-1
+foeID8=-1
+foeID9=-1
