@@ -33,6 +33,8 @@ height=80
 
 specialFX=0
 
+
+
 StandSpr=spr_fatburglar_stand
 MoveSpr=spr_fatburglar_move
 RunSpr=spr_fatburglar_move

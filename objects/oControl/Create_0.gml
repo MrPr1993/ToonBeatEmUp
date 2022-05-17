@@ -1,3 +1,4 @@
+roomfast=0
 canControl=1
 controller_setup()
 
@@ -30,6 +31,8 @@ StageNumber=0
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 global.StageGoing=rm_opening
+
+global.LevelSelectSave=0
 
 global.UnlockCharacterData=0
 global.UnlockFeats=0

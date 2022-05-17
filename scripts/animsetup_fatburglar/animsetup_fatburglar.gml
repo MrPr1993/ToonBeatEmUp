@@ -41,12 +41,12 @@ function animsetup_fatburglar() {
 	}
 	if sprite_index=AtkSpr2
 	{damage=0.4
-	if animFrame=clamp(animFrame,1,1.5) if ground {PlaySoundNoStack(snd_jump) PlaySoundNoStack(snd_fatburglar) z-=2 ground=0 zSpeed=-10}
+	if animFrame=clamp(animFrame,1,1.5) if ground {specialcheck2=2 PlaySoundNoStack(snd_jump) PlaySoundNoStack(snd_fatburglar) z-=2 ground=0 zSpeed=-10}
 	if !ground 
 	{MoveType=4 animFrame=2.9 SoundCount0=0
 	isThrow=0 throwing=0 atkAddX=0 atkAddY=0 atkAddZ=32 selfatk.image_xscale=1.5*image_xscale selfatk.image_yscale=1
-	if place_free(x+2*targetXcheck,y) x+=2*image_xscale
-	if place_free(x,y+2*targetYcheck) if y<__view_get( e__VW.YView, 0 )+240-2 y+=2*targetYcheck
+	if place_free(x+specialcheck2*targetXcheck,y) x+=specialcheck2*image_xscale
+	if place_free(x,y+specialcheck2*targetYcheck) if y<__view_get( e__VW.YView, 0 )+240-2 y+=specialcheck2*targetYcheck
 	if zSpeed>0 z+=0.45 
 	}
 

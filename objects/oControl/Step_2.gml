@@ -14,3 +14,4 @@ audio_pause_sound(global.CurrentMusic)
 audio_sound_gain(global.CurrentMusic,0,0)
 }
 
+

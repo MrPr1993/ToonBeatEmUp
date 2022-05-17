@@ -1,0 +1,2 @@
+oControl.bossID=oPharaoh
+

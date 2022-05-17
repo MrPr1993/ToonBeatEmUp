@@ -4,6 +4,11 @@ depth=0
 
 z=0
 trainz=0
+trainFX=0
+
+
+shake=0
+shaketime=0
 
 name="Default"
 

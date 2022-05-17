@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": true,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_bounce",
-  "duration": 0.539059,
+  "duration": 0.534059,
   "parent": {
     "name": "Objects",
     "path": "folders/f - Sounds/Objects.yy",

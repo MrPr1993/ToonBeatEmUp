@@ -1,4 +1,4 @@
-musicplaystart(-1)
+musicplaystart(msc_underwater)
 global.HiScoreStage=1
 //with oEnemySpawner {timeline=tm_stage3 event_user(0)}
 

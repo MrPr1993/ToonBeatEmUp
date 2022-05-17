@@ -289,7 +289,7 @@
   },
   "parent": {
     "name": "Stage3",
-    "path": "folders/5 - Sprites/StageFX/Stage3.yy",
+    "path": "folders/5b-Stage Sprites/Stage3.yy",
   },
   "resourceVersion": "1.0",
   "name": "tl_mus",

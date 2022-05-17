@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 3,
   "volume": 1.0,
   "preload": true,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_boss",
-  "duration": 33.6507149,
+  "duration": 33.6457138,
   "parent": {
     "name": "Music",
     "path": "folders/f - Sounds/Music.yy",

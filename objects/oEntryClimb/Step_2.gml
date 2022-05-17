@@ -3,6 +3,11 @@
 
 /// @description Insert description here
 // You can write your code in this editor
+if trainFX=1
+{trainzSet=oTrainFXSpot
+trainz=trainzSet.Train1Y*ground
+}
+
 if __view_get( e__VW.XView, 0 )>rangeX+rangeXAdd if spawned=0 {spawned=1 visible=1}
 
 z+=zSpeed

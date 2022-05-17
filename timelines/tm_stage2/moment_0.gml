@@ -7,7 +7,7 @@ oPlayer.anim=200
 
 oControl.BGmove=0
 
-limo1=instance_create(64+64+64,196+8,oFlashFX) limo1.sprite_index=spr_truck limo1.name="Limo" limo1.isDepth=0
+limo1=instance_create(64+64+64+200,196+8,oFlashFX) limo1.sprite_index=spr_truck limo1.name="Limo" limo1.isDepth=0
 with oFlashFX if name="Limo"
 {
 image_speed=0 animEnd=0 image_index=0 alarm[0]=0 image_speed=0.5 hspeed=6
