@@ -55,6 +55,7 @@ StandSpr=spr_burglarB_stand
 hasCut=1
 enemyIdle1=spr_burglarB_idle
 enemyIdle2=spr_burglarB_front
+bikeSpr=spr_burglarB_bike
 
 spritepos_setup(1,0,-13,20)
 spritepos_setup(1,1,-5,23)

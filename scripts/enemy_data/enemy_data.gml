@@ -7,6 +7,7 @@ function enemy_data() {
 	enemyscript=animsetup_enemy
 	enemyai=enemy_ai
 	enemycontrol=enemy_control
+	specialhit=-1
 
 	nameID="None"
 	name="MR.BURG"
@@ -90,6 +91,8 @@ function enemy_data() {
 	IdleSpr=spr_burglar_idle
 	cutSpr1=spr_burglar_cut1
 	cutSpr2=spr_burglar_cut2
+	bikeSpr=spr_burglar_bike
+	instantFall=0
 	
 	if place_meeting(x,y,oEnemyVisibleCheckLeft)
 	{act=0 visible=0 activeCheck=1}

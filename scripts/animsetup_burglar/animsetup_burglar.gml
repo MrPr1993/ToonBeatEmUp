@@ -47,5 +47,14 @@ if animFrame>3 and ground {canmove=1}
 
 }
 
+///Bike
+if anim=2500
+{sprite_index=bikeSpr image_index+=0.5 sentflying=4*image_xscale atk=1 MoveType=1 atkcol_set(3,0,0,2.25,1,28)
+damage=0.1
+if image_xscale=-1 if x<__view_get( e__VW.XView, 0 )-128 
+{image_xscale=1 y=targetEnemy.y}
+if image_xscale=1 if x>__view_get( e__VW.XView, 0 )+320+128
+{image_xscale=-1 y=targetEnemy.y}
+}
 
 }
