@@ -13,7 +13,7 @@ DamageVoice3=snd_femenemy7
 
 pointshit=10
 points=100
-
+bombs=0
 
 hp=0.2
 maxhp=0.2
@@ -21,6 +21,7 @@ maxhp=0.2
 DeathCry=snd_femenemy2
 
 weapon_add("HAMMER")
+
 
 enemyscript=animsetup_swing
 

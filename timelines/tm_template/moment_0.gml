@@ -1,19 +1,6 @@
 /// @description Stage Starting
-oPlayer.visible=0
-oPlayer.alarm[0]=10
-oPlayer.canControl=0
-oControl.showMap=0
-oControl.P1SpawnX=90
-oControl.P1SpawnY=232
+spawner_followset("WaveSet1",0,692+160,1)
 
-oPlayer.canmove=0
 
-oControl.stageNext=rm_credits
-
-with oControl
-{timecheck=alarm[0] alarm[0]=10000000}
-
-oEnemySpawner.roomHSpd=0
-oEnemySpawner.roomMove=0
-
-spawner_followset("WaveSet1",0,696,1)
+en1=instance_create(320,176,oEnemy1) en1.canAttack=6 en1.isIdle=1 en1.alarm[1]=60 en1.image_xscale=-1
+en1.idleRange=130

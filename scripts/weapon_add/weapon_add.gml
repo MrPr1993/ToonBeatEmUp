@@ -22,6 +22,12 @@ weaponHitType=1
 WswingSound=snd_swing3
 }
 
+if wpadd="PIPE"
+weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+
+if wpadd="SHOVEL"
+weapon_setup(oShovel,spr_shovel,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+
 if wpadd="ONI CLUB"
 {
 spawnID=oOniClub

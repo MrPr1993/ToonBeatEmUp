@@ -17,15 +17,10 @@ targetY=instance_nearest(x,y,oHammer).y
 anim=1
 
 item=instance_nearest(x,y,oHammer)
-if item.isBroken!=0 or item.ground!=1 or item.weapontype=2
-{targetX=instance_nearest(x,y,targetEnemy) 
-	targetY=instance_nearest(x,y,targetEnemy) 
-	enemy_ai() exit;}
 
-if x!=clamp(x,targetX-rangeX,targetX+rangeX)
+if x!=clamp(x,targetX,targetX)
 {if x>targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
 
-if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
 if y!=clamp(y,targetY,targetY)
 {if y>targetY {anim=1 key_up=1 key_down=0} else {anim=1 key_down=1 key_up=0}}
 else {key_up=0 key_down=0}

@@ -54,7 +54,7 @@ if object_index=oMerman if keyboard_check(vk_control)
 
 if object_index=oEnemy1B if keyboard_check(vk_control)
 {
-weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+
 
 }
 

@@ -1,5 +1,5 @@
 /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
-if __view_get( e__VW.XView, 0 )>=1900
+if __view_get( e__VW.XView, 0 )>=2560-320
 {
 en2=instance_create(__view_get( e__VW.XView, 0 )+320+16,176,oFemBurglar)
 with en2

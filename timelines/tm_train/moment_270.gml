@@ -1,7 +1,7 @@
 /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 if __view_get( e__VW.XView, 0 )>=0
 {
-en1=instance_create(__view_get( e__VW.XView, 0 )-64,176,oEnemy1)
+en1=instance_create(__view_get( e__VW.XView, 0 )-64,176,oSwing)
 en2=instance_create(2063-112,124+29,oEntrySeat)
 with en2 {trainFX=1 isDepth=0 depth=16777200 sittingSpr=spr_burglarB_ride spawnFall=spr_burglarB_front rangeXAdd=0
 	rangeX=x-60 spawnEnemy=oEnemy1B

@@ -1,10 +1,13 @@
-/// @description /Make sure to only count the previous ones, otherwise you'll get an error.
-if __view_get( e__VW.XView, 0 )>=1800
+/// @description After Robot
+////Make sure to only count the previous ones, otherwise you'll get an error.
+if !instance_exists(en1)
 {
-en1=instance_create(__view_get( e__VW.XView, 0 )-64,176,oEnemy1)
+with oControl {//camMove=0 camMax=room_width
+ goActive=1 alarm[1]=90
+xGoCheck=__view_get( e__VW.XView, 0 )+320}
+
+spawner_followset("WaveSet1",0,2560,1)
 }
 else
-{
 timeline_position-=1
-}
 

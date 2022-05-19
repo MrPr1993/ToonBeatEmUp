@@ -1,15 +1,14 @@
-if __view_get( e__VW.XView, 0 )>=1764
+if !instance_exists(en1)
+and !instance_exists(en2)
+and !instance_exists(en3)
 {
-en5=instance_create(1928,160,oAreaSpawner)
-en5.spawnX=0 ///2848
-with en5
-{
-enemytype1=oEnemy1
-enemytype2=oEnemy1
-enemyMax=2
+en1=instance_create(__view_get( e__VW.XView, 0 )-64,176,oEnemy1)
+with en1
+{canmove=0 anim=2500 image_xscale=1 specialhit=burglarbike_hit canbeGrabbed=0}
+en2=instance_create(__view_get( e__VW.XView, 0 )+320+64,176+32,oEnemy1B)
+with en2
+{canmove=0 anim=2500 image_xscale=-1 specialhit=burglarbike_hit canbeGrabbed=0
 }
-
-
 }
 else
 {

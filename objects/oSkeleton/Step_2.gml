@@ -45,3 +45,5 @@ anim=12
 	damage=0.1
 	if animFrame>5.75 {anim=0 canmove=1}
 	}
+	
+	
