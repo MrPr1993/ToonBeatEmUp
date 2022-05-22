@@ -54,6 +54,10 @@ hasCut=1
 cutSpr1=spr_femburglar_cut1
 cutSpr2=spr_femburglar_cut2
 
+	enemyIdle2=spr_femburglar_move
+	enemyIdle3=spr_femburglar_idle3
+	enemyIdle3Spd=0.1
+
 
 spritepos_setup(1,6,0,18)
 spritepos_setup(1,24,1,49)

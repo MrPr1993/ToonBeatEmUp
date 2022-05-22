@@ -1,3 +1,4 @@
+
 newsShow=1
 newsText=1
 cutscenename="NARRATOR"
@@ -11,3 +12,4 @@ newsFadeA=1
 newsRepeat=1
 newsX=0
 newsY=128
+

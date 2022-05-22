@@ -16,11 +16,15 @@ entry_setup()
 	spawnSpeedZ=-7
 	spawnFall=spr_burglar_front
 	moveSpr=spr_burglar_run
+	spawnEnemy=oEnemy1
+	runSpd=0.25
 	spawnYAdd=0
 	xSpeed=0
 	ySpeed=0.5
 	zSpeed=0
 	fenceTime=0
+	newSpawn=0
+	newSpawnX=0
 	
 	SplashSnd=-1
 	fallSpdSub=2

@@ -1,0 +1,1 @@
+with oPharaoh animLock=0

@@ -47,4 +47,5 @@ BurnSpr=spr_catman_burned
 FrozenSpr=spr_catman_frozen
 
 
-
+my_pal_sprite=spr_mummypal
+current_pal=0

@@ -60,6 +60,10 @@ hasCut=1
 cutSpr1=spr_fatburglar_cut1
 cutSpr2=spr_fatburglar_cut2
 
+	enemyIdle2=spr_fatburglar_move
+	enemyIdle3=spr_fatburglar_idle3
+	enemyIdle3Spd=0.25
+
 spritepos_setup(1,24,5,43)
 
 spritepos_setup(2,6,10,-4)

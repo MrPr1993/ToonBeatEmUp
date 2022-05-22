@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_sneak_stand",
-    "path": "sprites/spr_sneak_stand/spr_sneak_stand.yy",
+    "name": "spr_sneak_idle3",
+    "path": "sprites/spr_sneak_idle3/spr_sneak_idle3.yy",
   },
   "solid": false,
   "visible": true,

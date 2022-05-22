@@ -47,9 +47,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f32e22d7-92d9-4766-9182-b667585e3aa9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3864f92-54c8-43d3-a217-01a9790c2329","path":"sprites/spr_femburglar_stand/spr_femburglar_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"268177c9-9970-4809-96af-4f8fdec1e23d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0997357a-547c-4a11-8074-d4bf45cac34a","path":"sprites/spr_femburglar_stand/spr_femburglar_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"be4c42e4-03d6-4e3d-aad5-715a079f3aad","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e37db647-7792-48c0-86cf-8dad5d1bda0f","path":"sprites/spr_femburglar_stand/spr_femburglar_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b2263a5c-9a3f-49e8-a0f2-6c206d3175de","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3864f92-54c8-43d3-a217-01a9790c2329","path":"sprites/spr_femburglar_stand/spr_femburglar_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"817a715b-b431-4410-b5ed-d2fc4f545105","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0997357a-547c-4a11-8074-d4bf45cac34a","path":"sprites/spr_femburglar_stand/spr_femburglar_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ca95a8bc-fb49-438c-ad37-3f1e9c4b1201","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e37db647-7792-48c0-86cf-8dad5d1bda0f","path":"sprites/spr_femburglar_stand/spr_femburglar_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -68,7 +68,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_femburglar_stand","path":"sprites/spr_femburglar_stand/spr_femburglar_stand.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "spr_femburglar_stand",
     "tags": [],
     "resourceType": "GMSequence",
   },

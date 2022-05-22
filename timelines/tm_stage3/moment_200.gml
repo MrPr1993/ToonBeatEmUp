@@ -42,11 +42,14 @@ weaponHitType=1
 WswingSound=snd_swing5
 WspriteFX=spr_blood
 Whitsound=snd_cut
+canmove=0 anim=70002
 }
 
 
 en2=instance_create(662+64,176,oEnemy1) en2.canAttack=6 en2.isIdle=1 en2.alarm[1]=60 en2.image_xscale=-1
 en2.idleRange=130
+with en2
+{canmove=0 anim=70002}
 
 
 

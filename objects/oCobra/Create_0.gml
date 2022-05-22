@@ -25,8 +25,8 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=0.4
+maxhp=0.4
 
 height=70
 
@@ -54,4 +54,4 @@ FrozenSpr=spr_cobra_frozen
 
 
 current_pal=0;
-my_pal_sprite=spr_ninjapal
+my_pal_sprite=spr_mummypal

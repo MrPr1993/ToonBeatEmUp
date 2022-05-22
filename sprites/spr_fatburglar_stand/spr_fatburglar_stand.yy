@@ -68,7 +68,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_fatburglar_stand","path":"sprites/spr_fatburglar_stand/spr_fatburglar_stand.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "spr_fatburglar_stand",
     "tags": [],
     "resourceType": "GMSequence",
   },

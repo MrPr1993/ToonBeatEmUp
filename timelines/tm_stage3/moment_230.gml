@@ -11,28 +11,21 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 
 spawner_followset("WaveSet1",0,1477,1)
 
-en1=instance_create(1200,160,oAreaSpawner)
-with en1
-{
-spawnX=1200 ///768
-enemytype0=oEnemy1 MaxSpawnFrame=0 visible=1
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-enemytype1=oEnemy1
-enemytype2=oEnemy1
-enemytype3=oFatBurglar
-enemyMax=3
-}
+en1=instance_create_depth(844,140,-1,oEntryFenceJump) with en1
+{depth=16777214 isDepth=0 ySpeed=2 spawnSpeedZ=-4 rangeXAdd=0 rangeX=744 newSpawn=1 newSpawnX=910-128 rideX=910}
+en2=instance_create_depth(844+160,140,-1,oEntryFenceJump) with en2
+{depth=16777214 isDepth=0 ySpeed=2 spawnSpeedZ=-4 rangeXAdd=0 rangeX=744 newSpawn=1 newSpawnX=910+160+128 rideX=910+90 image_xscale=-1}
 
-en2=instance_create(1384,160,oAreaSpawner)
-with en2
-{
-spawnX=1200 ///768
-enemytype0=oEnemy1 MaxSpawnFrame=0 visible=1
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-enemytype0=oEnemy1
-enemytype1=oSneak
-enemyMax=1
-}
+en3=instance_create(1410,164,oFatBurglar)
+en3.idleRange=60 with en3 {canmove=0 anim=70002 image_xscale=-1}
+
+en4=instance_create(1410-60,164,oEnemy1)
+en4.idleRange=60 with en4 {canmove=0 anim=70002 image_xscale=1}
+
+en5=instance_create_depth(1140,176,-1,oEntryJump) with en5
+{rangeX=x-48 rangeXAdd=0 spawnFall=spr_burglarB_jump spawnEnemy=oEnemy1B}
+en6=instance_create_depth(1140,176+48,-1,oEntryJump) with en6
+{rangeX=x-48 rangeXAdd=0 spawnFall=spr_sneak_move spawnEnemy=oSneak}
 
 }
 else

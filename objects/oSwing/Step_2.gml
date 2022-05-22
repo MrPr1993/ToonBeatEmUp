@@ -66,3 +66,6 @@ weaponanim(weaponspr,weaponIndex,-10,-45,16*image_xscale,weaponcolor)
 
 if sprite_index=spr_swing_frozen
 weaponanim(weaponspr,weaponIndex,10,-63,131,weaponcolor)
+
+
+

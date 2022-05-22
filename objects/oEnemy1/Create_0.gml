@@ -21,6 +21,8 @@ enemyIdle2=spr_burglar_front
 enemyIdle3=spr_burglar_idle
 enemyIdle4=spr_burglar_idle
 enemyIdle5=spr_burglar_idle
+	enemyIdle3=spr_burglar_idle3
+	enemyIdle3Spd=0.25
 
 pointshit=10
 points=100

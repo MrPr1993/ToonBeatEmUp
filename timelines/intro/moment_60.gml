@@ -1,0 +1,1 @@
+musicplayonce(msc_intro)

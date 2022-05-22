@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_femburglar_stand",
-    "path": "sprites/spr_femburglar_stand/spr_femburglar_stand.yy",
+    "name": "spr_femburglar_idle3",
+    "path": "sprites/spr_femburglar_idle3/spr_femburglar_idle3.yy",
   },
   "solid": false,
   "visible": true,

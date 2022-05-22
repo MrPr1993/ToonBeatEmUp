@@ -7,14 +7,14 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 4,
-  "bbox_right": 43,
-  "bbox_top": 1,
+  "bbox_left": 7,
+  "bbox_right": 49,
+  "bbox_top": 0,
   "bbox_bottom": 94,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 50,
+  "width": 60,
   "height": 97,
   "textureGroupId": {
     "name": "Default",
@@ -27,6 +27,18 @@
     {"compositeImage":{"FrameId":{"name":"3880ca0c-6172-4e95-bf0e-1e00418df855","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3880ca0c-6172-4e95-bf0e-1e00418df855","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_ninjabun_cigar","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"3880ca0c-6172-4e95-bf0e-1e00418df855","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"250e3796-8c7e-41f2-ba85-53954cd18997","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"250e3796-8c7e-41f2-ba85-53954cd18997","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ninjabun_cigar","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"250e3796-8c7e-41f2-ba85-53954cd18997","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ninjabun_cigar","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ninjabun_cigar","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"80582329-c6a6-4e78-8629-8f6506880bcc","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"80582329-c6a6-4e78-8629-8f6506880bcc","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ninjabun_cigar","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","name":"80582329-c6a6-4e78-8629-8f6506880bcc","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_ninjabun_cigar","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},
@@ -36,12 +48,16 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 5.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a638a27e-8355-465e-915c-7ab11b0219a0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3880ca0c-6172-4e95-bf0e-1e00418df855","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4d6f2a14-2c55-4c00-bca5-384a292de171","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"250e3796-8c7e-41f2-ba85-53954cd18997","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d157d61a-60f7-4903-a6a9-5097da9e8e6f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"94ffea7e-faba-4c82-9f3c-909b5655bfce","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6b9099fe-4324-4387-82d3-69af6288d396","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80582329-c6a6-4e78-8629-8f6506880bcc","path":"sprites/spr_ninjabun_cigar/spr_ninjabun_cigar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,7 +70,7 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 21,
+    "xorigin": 31,
     "yorigin": 93,
     "eventToFunction": {},
     "eventStubScript": null,

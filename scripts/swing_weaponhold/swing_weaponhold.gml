@@ -17,7 +17,7 @@ weaponanim(weaponspr,weaponIndex,14+1,-65+2,180*image_xscale,weaponcolor)
 else
 weaponanim(weaponspr,weaponIndex,14+1,-65+1,180*image_xscale,weaponcolor)
 }
-if anim=1
+if anim=1 or sprite_index=spr_swing_move
 {
 if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,14+3,-67,180*image_xscale,weaponcolor)
@@ -32,4 +32,16 @@ weaponanim(weaponspr,weaponIndex,14-2,-68,180*image_xscale,weaponcolor)
 if image_index=clamp(image_index,5,5.9)
 weaponanim(weaponspr,weaponIndex,14,-69,180*image_xscale,weaponcolor)
 }
+
+if sprite_index=spr_swing_idle3
+{
+if image_index<1
+weaponanim(weaponspr,weaponIndex,14-6,-65,180*image_xscale,weaponcolor)
+else
+weaponanim(weaponspr,weaponIndex,14-6,-65+1,180*image_xscale,weaponcolor)
+if image_index>2 image_index=0
 }
+
+}
+
+

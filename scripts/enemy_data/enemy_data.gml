@@ -92,6 +92,7 @@ function enemy_data() {
 	cutSpr1=spr_burglar_cut1
 	cutSpr2=spr_burglar_cut2
 	bikeSpr=spr_burglar_bike
+	
 	instantFall=0
 	
 	if place_meeting(x,y,oEnemyVisibleCheckLeft)

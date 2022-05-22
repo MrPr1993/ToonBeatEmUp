@@ -245,8 +245,9 @@ function character_setup() {
 	enemyIdle1Ind=0
 	enemyIdle2=spr_burglar_idle
 	enemyIdle2Ind=0
-	enemyIdle3=spr_burglar_idle
+	enemyIdle3=spr_burglar_idle3
 	enemyIdle3Ind=0
+	enemyIdle3Spd=0.25
 	enemyIdle4=spr_burglar_idle
 	enemyIdle4Ind=0
 	enemyIdle5=spr_burglar_idle

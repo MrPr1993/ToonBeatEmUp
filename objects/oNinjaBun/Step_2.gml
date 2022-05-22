@@ -27,14 +27,20 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>100
 	}
 	
 if anim=11 ///Card Throw
-{sprite_index=spr_ninjabun_card
+{if animFrame=0 prevanim=0 sprite_index=spr_ninjabun_card
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.1)
  if animFrame=3
+ if prevanim!=61
 {PlaySoundNoStack(snd_swing2) card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 	card.z=z-56 card.image_xscale=image_xscale
 	}
+	else
+	{PlaySoundNoStack(snd_swing2) card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
+	card.z=z-56 card.image_xscale=image_xscale card.sprite_index=spr_cigarproj card.HitSound=snd_hit card.HitSpark=spr_hitflash
+	}
+	
 frame_set(3,3,0.5)
 frame_set(4,4,0.1)
 frame_set(5,0,0.25) if animFrame=6 {animFrame=0 canmove=1 atk=0 anim=0}
@@ -106,7 +112,7 @@ frame_set(5,0,0.1)
 
 }
 
-if anim=14 ///Attack
+if anim=14 ///Attack Kick
 {sprite_index=spr_ninjabun_kick MoveType=1
 frame_set(0,0,0.1) 
 frame_set(1,1,0.25) if animFrame=2 PlaySoundNoStack(snd_swing) if animFrame=clamp(animFrame,2,3) {sentflying=2*image_xscale atk=1} else {sentflying=0 atk=0}
@@ -188,3 +194,13 @@ frame_set(5,5,0.25) if animFrame=6 {animFrame=0 canmove=1 atk=0 anim=0}
 	
 	if ground {animFrame=10 image_index=10 anim=6}
 	}
+	
+	if anim=61 ///Cigar Girl
+{if animFrame=0 sprite_index=spr_ninjabun_cigar MoveType=1 prevanim=61
+frame_set(0,0,0)  if animFrame<0.5 if x=clamp(x,targetX-idleRange,targetX+idleRange) animFrame=1
+frame_set(1,1,0.1)
+frame_set(2,2,0.05) 
+frame_set(3,3,0.1) 
+frame_set(4,4,0.1) 
+frame_set(5,4,0.25) if animFrame>5 {animFrame=3 anim=11}
+}

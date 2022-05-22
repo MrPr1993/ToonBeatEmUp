@@ -85,6 +85,10 @@ BurnSpr=spr_sneak_burned
 FrozenSpr=spr_sneak_frozen
 DizzySpr=spr_sneak_hit
 
+	enemyIdle2=spr_sneak_move
+	enemyIdle3=spr_sneak_idle3
+	enemyIdle3Spd=0.1
+
 hasCut=1
 cutSpr1=spr_sneak_cut1
 cutSpr2=spr_sneak_cut2

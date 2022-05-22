@@ -16,6 +16,9 @@ ini_close()
 
 en=instance_create(mouse_x,mouse_y,spawnUnit)
 
+if keyboard_check(vk_pageup) with en
+{canmove=0 anim=70002}
+
 if keyboard_check(vk_shift) with en
 {
 if object_index=oEnemy1
@@ -34,19 +37,7 @@ if object_index=oZombieMan or object_index=oZombieWoman
 
 if object_index=oSneak if keyboard_check(vk_control)
 {
-spawnID=oTommyGun
-weaponspr=spr_tommygun
-weaponIndex=0
-weaponX=14
-weaponY=-69
-weaponangle=180
-weaponcolor=c_white
-weaponBack=1
-weaponRange=100
-weaponDamage=0.1
-weapontargetHeight=2
-weapontype=0
-weaponHitType=0
+weapon_add("TOMMYGUN")
 }
 
 if object_index=oMerman if keyboard_check(vk_control)

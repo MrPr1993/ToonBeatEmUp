@@ -63,6 +63,10 @@ hasCut=1
 cutSpr1=spr_swing_cut1
 cutSpr2=spr_swing_cut2
 
+	enemyIdle2=spr_swing_move
+	enemyIdle3=spr_swing_idle3
+	enemyIdle3Spd=0.1
+
 spritepos_setup(1,24,-3,55)
 
 spritepos_setup(2,6,-3,3)

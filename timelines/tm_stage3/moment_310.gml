@@ -11,7 +11,7 @@ with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
 xGoCheck=2560}
 
-spawner_followset("WaveSet1",0,3702,1)
+//spawner_followset("WaveSet1",0,3702,1)
 
 }
 else

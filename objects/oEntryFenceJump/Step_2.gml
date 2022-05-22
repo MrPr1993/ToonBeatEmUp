@@ -3,7 +3,16 @@
 
 /// @description Insert description here
 // You can write your code in this editor
-if __view_get( e__VW.XView, 0)>rangeX+rangeXAdd if spawned=0 {x=__view_get( e__VW.XView, 0)-100+xAdd spawned=1 visible=1}
+if __view_get( e__VW.XView, 0)>rangeX+rangeXAdd if spawned=0 
+{
+	if newSpawn=0
+	x=__view_get( e__VW.XView, 0)-100+xAdd
+	else
+	x=newSpawnX
+	
+	spawned=1 visible=1
+	
+	}
 
 //144
 
@@ -13,8 +22,11 @@ depth=-y
 z+=zSpeed
 
 if spawned=1
-{hspeed=horseSpd image_speed=0.25 sprite_index=moveSpr
+{hspeed=horseSpd*image_xscale image_speed=runSpd sprite_index=moveSpr
+if image_xscale=1
 if x>rideX {hspeed=0 zSpeed=spawnSpeedZ event_user(0) spawned=2}
+if image_xscale=-1
+if x<rideX {hspeed=0 zSpeed=spawnSpeedZ event_user(0) spawned=2}
 }
 
 if spawned=2

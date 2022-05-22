@@ -1,0 +1,1 @@
+relic.zSpeed=4

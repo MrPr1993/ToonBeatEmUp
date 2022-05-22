@@ -1,4 +1,4 @@
-musicplaystart(-1)
+//musicplaystart(-1)
 oControl.showMap=0
 global.P1Score=0
 global.StageSelect=0
