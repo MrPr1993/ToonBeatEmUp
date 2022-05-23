@@ -50,6 +50,7 @@ function animsetup_hina() {
 	SpinningSpr=spr_hina_spin
 	petSprLow=spr_hina_petlow
 	throwItemSpr=spr_hina_itemthrow
+	BDanceSpr=spr_hina_bdance
 
 	if atk=0
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1

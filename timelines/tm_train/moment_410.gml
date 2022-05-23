@@ -1,6 +1,6 @@
 /// @description Go To Boss
 
-if oPlayer.x>__view_get( e__VW.XView+320-32, 0 )
+if oPlayer.x>__view_get( e__VW.XView, 0 )+320-24
 {
 with oPlayer
 {canControl=0 areaEntry=1

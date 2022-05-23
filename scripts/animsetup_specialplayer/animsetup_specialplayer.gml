@@ -314,6 +314,17 @@ frame_set(24,0,0.01)
 	}
 
 
+		if anim=302 ////Bullet Dance
+	{if animFrame=0 sprite_index=WildTakeSpr
+		
+	frame_set(0,0,0) if animFrame=1 sprite_index=BDanceSpr
+	frame_set(1,0,0.25)
+	frame_set(2,1,0.25) 
+	frame_set(3,2,0.25) if animFrame=4-0.25 animFrame=1
+	frame_set(4,1,0.25) if animFrame=4.25 sprite_index=WildTakeSpr
+	frame_set(5,0,0)
+	}
+
 ////Petting Animal
 	if anim=10010
 	{canmove=0 weaponanim(weaponspr,weaponIndex,2000004,-500008,90*image_xscale,weaponcolor)

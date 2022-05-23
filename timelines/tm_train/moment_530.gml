@@ -1,51 +1,17 @@
-/// @description /Make sure to only count the previous ones, otherwise you'll get an error.
-if __view_get( e__VW.XView, 0 )>5184-320//8
-{//oEnemySpawner.canFollow=1
-oPlayer.canControl=0
-oPlayer.areaEntry=0
-oEnemySpawner.roomHSpd=0 __view_set( e__VW.XView, 0, 5184-320)
-oEnemySpawner.roomMove=0 //3488
 
-//oControl.TextDialogue="STILL FOLLOWING US?"
-}
-else
-{oEnemySpawner.canFollow=0
-oControl.camMove=0
-oEnemySpawner.roomHSpd=4
-oEnemySpawner.roomMove=1
-
-spawner_followset("WaveSet1",5184-320,5184-320,0)
-
-//if specialSet4=0
-//{
-//specialSet4=1
-//boss=instance_create(3488-64,208,oBoss1)
-//boss.animLock=1 boss.canmove=0 boss.anim=100
-//boss.image_xscale=-1
-//boss.offScreenMode=0
-//}
+oEnemySpawner.roomHSpd=0
+oEnemySpawner.roomMove=0
 
 with oPlayer
-{
-doubledash=0
-dashing=0
+{canControl=0 areaEntry=1
+key_up=0 key_down=0 key_left=0
+key_right=0 doubledash=0 dashing=0
+animFrame=0 anim=302 canmove=0
 }
 
-//oPlayer.x=2460+32
-oPlayer.y=200-10
+PlaySound(snd_jump)
+fk=instance_create_depth(3896, 140,16777207,oFlashFX) with fk
+{isDepth=0 depth=16777207 alarm[0]=300 animEnd=0 sprite_index=spr_twoheads_jump hspeed=8 vspeed=-2 haspal=0 image_blend=c_black}
 
-oEnemySpawner.roomHSpd=4
-oEnemySpawner.roomMove=1
-
-oPlayer.dashing=0
-oPlayer.key_right=0
-oControl.camMove=1
-//boss.animFrame=0
-
-with oPharaoh animLock=0
-
-timeline_position-=1
-}
-
-
-
+///16777207
+specialSet8=20

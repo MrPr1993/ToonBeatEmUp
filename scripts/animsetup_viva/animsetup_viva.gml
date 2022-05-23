@@ -47,7 +47,7 @@ function animsetup_viva() {
 	SpinningSpr=spr_viva_spin
 	petSprLow=spr_viva_petlow
     throwItemSpr=spr_viva_itemthrow
-
+BDanceSpr=spr_viva_bdance
 
 	if atk=0 ///To Set default colission
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1

@@ -18,6 +18,13 @@ maxhp=2
 
 height=70
 
+HitGround=snd_hitground
+isBoss=1
+
+offScreen=0
+offScreenMode=1
+isHeavy=1
+
 specialFX=0
 
 StandSpr=spr_twoheads_stand

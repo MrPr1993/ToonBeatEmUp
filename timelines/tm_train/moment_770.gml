@@ -1,8 +1,13 @@
-if boss.canmove=1
-{
 oPlayer.canmove=1
 oPlayer.canControl=1
-oPharaoh.isDepth=1
-}
-else
-timeline_position-=1
+oPlayer.areaEntry=0
+
+boss=instance_create_depth(fk.x,fk.y,-1,oTwoHeads)
+boss.image_xscale=-1
+
+with fk instance_destroy()
+
+oControl.bossID=oTwoHeads
+
+
+

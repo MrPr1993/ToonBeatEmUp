@@ -1,9 +1,15 @@
 with oControl 
 {MusicFade=0 MusicFadeAdd=1
+with oPlayer {key_right=0 doubledash=0 dashing=0}
+global.CurrentMusic=msc_boss2
 
-global.CurrentMusic=msc_boss
-
-audio_play_sound(global.CurrentMusic,0,1)
+musicplaystart(global.CurrentMusic)
 
 alarm[0]=60
 }
+
+
+oEnemySpawner.roomMove=0
+oEnemySpawner.roomHSpd=3
+spawner_followset("WaveSet1",__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+32,0)
+

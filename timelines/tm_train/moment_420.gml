@@ -3,22 +3,24 @@
 with oControl
 {timecheck=alarm[0] alarm[0]=10000000}
 
-if oPlayer.x>=4932
-and oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0 
+if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0 
 {
 oPlayer.canControl=0
 oPlayer.areaEntry=1
-oPlayer.x=4932
+//oPlayer.x=__view_get( e__VW.XView, 0 )+320+32
+//with oPlayer {key_right=0 doubledash=0 dashing=0}
+
 with oPlayer
-{key_right=0 doubledash=0 dashing=0
+{canControl=0 areaEntry=1
+key_up=0 key_down=0 key_left=0
+key_right=1 doubledash=0 dashing=0
 }
 
-with oControl MusicFade=1
+oEnemySpawner.roomHSpd=4
+oEnemySpawner.roomMove=1
+spawner_followset("WaveSet1",__view_get( e__VW.XView, 0 )+320,__view_get( e__VW.XView, 0 )+320,0)
 
-boss=instance_create_depth(5184-64,208-20,0,oPharaoh) 
-boss.animFrame=0 boss.image_index=0
-boss.anim=100 boss.animLock=1 boss.canmove=0 boss.image_xscale=-1
-boss.offScreenMode=0
+with oControl MusicFade=1
 
 }
 else

@@ -135,6 +135,7 @@ PointDialouge1=snd_viva20
 PointDialouge2=snd_viva21
 WildTakeSpr=spr_viva_wildtake
 WildTakeSpr2=spr_viva_wildtake2
+BDanceSpr=spr_viva_bdance
 ScreenHitSpr=spr_viva_hit
 WinSpr=spr_viva_win
 WinSnd=snd_viva13
