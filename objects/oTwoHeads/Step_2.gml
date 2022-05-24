@@ -9,13 +9,23 @@ overwriteAttack4=1
 overwriteAttack5=1
 
 if anim=10
-{anim=choose(11,12,13)
+{
+animFrame=0 canmove=0 specialcheck0=0
+	
+		
+if distance_to_point(targetEnemy.x,targetEnemy.y)>80
+{
+if distance_to_point(targetEnemy.x,targetEnemy.y)>150
+	anim=choose(13,13,13,13,13,12) else anim=12
+}
+	else
+	anim=11
 }
 
 ///Kick
 if anim=11
 {
-if animFrame=0  PlaySound(snd_wolfita7)
+if animFrame=0  PlaySound(snd_twoheads3)
 MoveType=1 damage=0.2
 sprite_index=spr_twoheads_attack1
 image_index=animFrame
@@ -31,7 +41,9 @@ if animFrame>4.5 {atk=0 canmove=1}
 }
 ///Kick Air
 if anim=12
-{damage=0.2
+{
+if animFrame=0  {PlaySound(choose(snd_twoheads10,snd_twoheads3,snd_twoheads11))}
+damage=0.2 
 atkcol_set(29,0,-9,1.75,1,64)
 if animFrame<1 {atk=0 sprite_index=spr_twoheads_attack1 image_index=3 animFrame+=0.1}
 else if !ground {sprite_index=spr_twoheads_jump animFrame+=0.1 if animFrame>3 {sprite_index=spr_twoheads_attack2
@@ -45,7 +57,9 @@ if animFrame=1 {ground=0 zSpeed=-16 sentflying=-4*image_xscale}
 
 ///Bullet Fire
 if anim=13
-{if animFrame=0 specialcheck5=6 sprite_index=spr_twoheads_shoot
+{
+if animFrame=0  {PlaySound(choose(snd_twoheads3,snd_twoheads10,snd_twoheads8))}
+	if animFrame=0 specialcheck5=6 sprite_index=spr_twoheads_shoot
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.25) if animFrame=3

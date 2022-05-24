@@ -35,6 +35,7 @@ weaponanim(weaponspr,weaponIndex,34,-92-2,180*image_xscale,weaponcolor)
 	if anim=10 ///Attack Stand
 	{animFrame=0 canmove=0 specialcheck0=0
 	
+		
 if distance_to_point(targetEnemy.x,targetEnemy.y)>100
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)>150
@@ -47,6 +48,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>150
 ///Swing Attack
 if anim=11
 {
+if animFrame=0 {PlaySound(choose(snd_oni3,snd_oni4))}
 ///With weapon
 if weaponspr!=-1
 {
@@ -86,7 +88,9 @@ if animFrame>5.8 {atk=0 canmove=1 anim=0}
 
 ///Fan Attack
 if anim=12
-{sprite_index=spr_oni_range
+{
+if animFrame=0 {PlaySound(choose(snd_oni3,snd_oni13))}	
+sprite_index=spr_oni_range
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.05)
@@ -114,6 +118,7 @@ weaponanim(weaponspr,weaponIndex,33,-94,180,weaponcolor)
 ///Roll Attack
 if anim=13
 {
+if animFrame=0 {PlaySound(choose(snd_oni5,snd_oni8))}	
 sprite_index=spr_oni_hit
 if animFrame=0 special0=0
 damage=0.2 selfatk.MoveType=1

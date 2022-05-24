@@ -4,12 +4,17 @@ name="DOLORES"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=35
 
+DamageVoice1=snd_twoheads1
+DamageVoice2=snd_twoheads1
+DamageVoice3=snd_twoheads1
+DeathCry=snd_twoheads2
+
 enemyscript=animsetup_enemy
 
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=400
 
 OneAttack=2
 

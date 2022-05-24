@@ -33,6 +33,10 @@ isPlayer=0
 
 NoKnock=0
 
+addXSpeed=0
+addYSpeed=0
+addZSpeed=0
+
 spriteFX=spr_blood
 indexFX=0
 isDepth=1
@@ -44,3 +48,4 @@ yScaleFX=1
 blendFX=c_white
 alphaFX=1
 spdZ=0
+

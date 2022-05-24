@@ -13,6 +13,11 @@ chardraw=draw_swing
 
 weapon_add("ONI CLUB")
 
+DamageVoice1=snd_oni1
+DamageVoice2=snd_oni1
+DamageVoice3=snd_oni1
+DeathCry=snd_oni2
+
 rangeAtk=160
 
 OneAttack=2
