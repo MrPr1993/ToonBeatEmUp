@@ -49,3 +49,5 @@ blendFX=c_white
 alphaFX=1
 spdZ=0
 
+alarm[0]=300
+

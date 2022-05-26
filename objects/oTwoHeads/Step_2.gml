@@ -48,7 +48,7 @@ atkcol_set(29,0,-9,1.75,1,64)
 if animFrame<1 {atk=0 sprite_index=spr_twoheads_attack1 image_index=3 animFrame+=0.1}
 else if !ground {sprite_index=spr_twoheads_jump animFrame+=0.1 if animFrame>3 {sprite_index=spr_twoheads_attack2
 	if animFrame>3 {atk=1 image_index=1 sentflying=8*image_xscale zSpeed=8} else {atk=0 image_index=0 sentflying=0 zSpeed=0} }}
-else {sprite_index=spr_twoheads_attack1 image_index=3 sentflying=lerp(sentflying,0,0.1)
+else {atk=0 sprite_index=spr_twoheads_attack1 image_index=3 sentflying=lerp(sentflying,0,0.1)
 	animFrame+=0.1 if animFrame>8 canmove=1
 	}
 

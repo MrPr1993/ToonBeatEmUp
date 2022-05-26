@@ -1,6 +1,6 @@
 /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 if __view_get( e__VW.XView, 0 )>=2614
-{
+{PlaySound(snd_train)
 cave=layer_get_id("CaveTiles");
 layer_hspeed(cave,-8)	
 

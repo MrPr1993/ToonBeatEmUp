@@ -4,7 +4,7 @@ with oPlayer {key_right=0 doubledash=0 dashing=0}
 global.CurrentMusic=msc_boss2
 
 musicplaystart(global.CurrentMusic)
-
+PlaySound(snd_twoheads5)
 alarm[0]=60
 }
 

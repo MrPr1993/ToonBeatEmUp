@@ -7,8 +7,8 @@ entry_setup()
 	fallHole=0
 	ground=0
 	spawnSpeedZ=-6
-	sittingSpr=spr_burglar_ride
-	spawnFall=spr_burglar_airattack
+	sittingSpr=spr_burglar_seat
+	spawnFall=spr_burglar_jump
 	spawnYAdd=0
 	xSpeed=0
 	ySpeed=1

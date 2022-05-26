@@ -6,6 +6,10 @@ z=0
 trainz=0
 trainFX=0
 
+depthchange=0
+shadowchange=0
+isdepthchange=0
+
 haspal=1
 
 shake=0

@@ -7,6 +7,8 @@ with oControl {//camMove=0 camMax=room_width
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,1158+320,1)
 
+
+
 }
 else
 timeline_position-=1

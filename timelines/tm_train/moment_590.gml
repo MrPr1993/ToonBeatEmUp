@@ -1,7 +1,8 @@
 if specialSet8=20
 {
 with oPlayer
-animFrame=1
+{PlaySoundNoStack(choose(DamageVoice1,DamageVoice2,DamageVoice3))
+animFrame=1}
 }
 
 with oPlayer
@@ -15,7 +16,8 @@ oEnemySpawner.roomMove=1
 
 with fk
 {sprite_index=spr_twoheads_shoot image_index=2 haspal=1 image_xscale=-1 image_blend=c_white y=174
-	x=4184-16 isDepth=1 image_speed=0 vspeed=0 z=0 hspeed=0 alarm[0]=66666
+	x=4184-16 isDepth=1 image_speed=0 vspeed=0 z=0 hspeed=0 alarm[0]=66666 FlashShadow=1 trainFX=1
+FlashShadowZ=1
 }
 
 with oPlayer
@@ -23,4 +25,5 @@ with oPlayer
 
 animFrame=4 
 }
+ specialSet8=0
 }

@@ -9,6 +9,8 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
+shadowSpr=spr_carshadow
+
 rangeAtk=400
 
 atkBuffer1=0
@@ -23,7 +25,7 @@ DeathCry=snd_harpy2
 //hoverZ=0
 
 HitGround=snd_hitgroundheavy
-//isBoss=1
+isBoss=1
 
 offScreen=0
 offScreenMode=1
@@ -37,7 +39,7 @@ OneAttack=2
 hp=2
 maxhp=2
 
-height=70
+height=96
 
 specialFX=0
 

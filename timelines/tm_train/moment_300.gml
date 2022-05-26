@@ -23,7 +23,7 @@ instance_destroy()
 }
 en1=instance_create_depth(2496,160,-1,oEntrySeat)
 with en1 {my_pal_sprite=spr_boxerpal trainFX=1 sittingSpr=spr_femburglar_seat spawnFall=spr_boxer_move image_xscale=-1
-spawnEnemy=oBoxer}
+spawnEnemy=oBoxer PlaySound(snd_steal)}
 en1.rangeX=0 en1.rangeXAdd=0 
 }
 

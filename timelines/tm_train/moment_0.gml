@@ -26,3 +26,5 @@ en1.idleRange=0
 
 en2=instance_create(662+64,176,oEnemy1B) en2.canAttack=6 en2.isIdle=1 en2.alarm[1]=60 en2.image_xscale=-1
 en2.idleRange=0
+
+PlaySound(snd_train)

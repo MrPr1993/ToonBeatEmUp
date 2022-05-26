@@ -1,0 +1,1 @@
+with fk sprite_index=spr_twoheads_attack1
