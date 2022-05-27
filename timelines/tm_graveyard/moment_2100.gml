@@ -1,0 +1,1 @@
+with ghost {zSpeed=4 lerpslow=0}

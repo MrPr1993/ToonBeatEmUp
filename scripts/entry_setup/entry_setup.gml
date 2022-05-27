@@ -9,7 +9,7 @@ trainFX=0
 image_speed=0
 
 isDepth=1
-
+xySpeed=0
 	///Palette Options
 	current_pal=2;
 	my_pal_sprite=spr_enemypal

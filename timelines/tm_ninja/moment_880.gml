@@ -1,1 +1,3 @@
-oControl.TextDialogue="THIS IS AS FAR AS YOU GO!"
+with oni1 image_index=6
+with oni2 image_index=6
+

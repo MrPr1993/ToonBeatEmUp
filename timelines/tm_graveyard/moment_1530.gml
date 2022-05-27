@@ -42,8 +42,6 @@ oPlayer.key_right=0
 oControl.camMove=1
 //boss.animFrame=0
 
-with oPharaoh animLock=0
-
 timeline_position-=1
 }
 

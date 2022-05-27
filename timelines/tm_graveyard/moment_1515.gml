@@ -1,4 +1,4 @@
-if oPlayer.x>4840
+if oPlayer.x>__view_get( e__VW.XView, 0 )+320-24 and oPlayer.ground=1
 {
 with oPlayer
 {canControl=0 areaEntry=1

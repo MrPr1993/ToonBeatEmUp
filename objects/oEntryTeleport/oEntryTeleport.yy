@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oEntryBreak",
+    "path": "objects/oEntryBreak/oEntryBreak.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

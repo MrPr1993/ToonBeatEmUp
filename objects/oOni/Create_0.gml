@@ -18,6 +18,8 @@ DamageVoice2=snd_oni1
 DamageVoice3=snd_oni1
 DeathCry=snd_oni2
 
+specialBossState=1
+
 rangeAtk=160
 
 OneAttack=2

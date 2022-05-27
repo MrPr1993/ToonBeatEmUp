@@ -5,3 +5,4 @@
 		{spawn.hp=hp; spawn.maxhp=maxhp;}
 		
 		spawned=3
+		y=9999999999999

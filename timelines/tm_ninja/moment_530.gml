@@ -1,5 +1,5 @@
 /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
-if __view_get( e__VW.XView, 0 )>5184-320//8
+if __view_get( e__VW.XView, 0 )>5184-320-4//8
 {//oEnemySpawner.canFollow=1
 oPlayer.canControl=0
 oPlayer.areaEntry=0
@@ -42,7 +42,7 @@ oPlayer.key_right=0
 oControl.camMove=1
 //boss.animFrame=0
 
-with oPharaoh animLock=0
+with oOniController animLock=0
 
 timeline_position-=1
 }

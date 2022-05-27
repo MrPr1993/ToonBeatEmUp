@@ -58,7 +58,9 @@ rangeAtk=100
 
 OneAttack=2
 
-height=90
+height=100
+
+isBoss=1
 
 specialFX=0
 

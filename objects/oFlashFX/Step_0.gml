@@ -9,5 +9,6 @@ if lerpslow=1
 {
 hspeed=lerp(hspeed,0,lerpslowSpd)
 vspeed=lerp(vspeed,0,lerpslowSpd)
+zSpeed=lerp(zSpeed,0,lerpslowSpd)
 }
 

@@ -14,12 +14,16 @@ entry_setup()
 	ySpeed=1
 	zSpeed=0
 	hasShadow=1
-	visible=1	
+	visible=0
 	SplashSnd=-1
 	fallSpdSub=2
+	rangeX=x
+	rangeXAdd=-100
+	
+	
 	
 	spawned=0
+teletime=60
 
-alarm[0]=60
 
-event_user(0)
+

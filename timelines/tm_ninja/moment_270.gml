@@ -9,9 +9,8 @@ and !instance_exists(en5)
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
 xGoCheck=2560}
-
-en1=instance_create(2310, 150,oEntryTeleport)
-
+spawner_followset("WaveSet1",0,1158+320+1240+1240,1)
+en1=instance_create(2310+320, 216,oEntryTeleport)
 
 }
 else

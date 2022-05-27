@@ -8,6 +8,7 @@ entry_setup()
 	ySpeed=0
 	zSpeed=0
 	
+	
 	zAppear=-240
 	
 

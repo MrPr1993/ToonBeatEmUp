@@ -7,6 +7,7 @@ enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=17
 immune=0
 hplayer=0
+trainz=0
 side=0
 ownBody=-1
 targetX=0

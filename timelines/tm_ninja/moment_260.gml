@@ -10,7 +10,7 @@ with en4
 
 en5=instance_create(__view_get( e__VW.XView, 0 )+320+48,224,oSamurai)
 with en5
-{canAttack=3 alarm[1]=60 image_xscale=-1
+{canAttack=5 alarm[1]=60 image_xscale=-1
 }
 }
 else

@@ -16,3 +16,10 @@ if trainFX=1
 {trainzSet=oTrainFXSpot
 trainz=trainzSet.Train1Y
 }
+
+if hasgrav=1
+{if z>0 {ground=1 z=0}
+else
+{zSpeed+=0.45}
+if ground=1 zSpeed=0
+}
