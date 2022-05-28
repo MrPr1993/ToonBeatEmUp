@@ -1,1 +1,1 @@
-oControl.TextDialogue="I'M GOING TO TEACH YOU A LESSON!"
+//oControl.TextDialogue="I'M GOING TO TEACH YOU A LESSON!"

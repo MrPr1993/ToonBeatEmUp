@@ -48,23 +48,30 @@ mapSY=mapSYlerp x=mapSXlerp
 //A
 if mapSelX=0 and mapSelY=-1 
 
+lockedMap[1]=1
+lockedMap[2]=1
+lockedMap[3]=1
+lockedMap[4]=1
+lockedMap[5]=1
+lockedMap[6]=1
+lockedMap[7]=1
 
-
+if mapSelX=0 and mapSelY=-1
 {mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
-if mapSelX=0 and mapSelY=0 
 
+if mapSelX=0 and mapSelY=0
 {global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
-if mapSelX=0 and mapSelY=1 
 
+if mapSelX=0 and mapSelY=1
 {mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
 //B
-if mapSelX=1 and mapSelY=-1 {global.StageGoing=rm_stage2b mapSXlerp=190 mapSYlerp=102 if lockedMap[2]=1 mapSName="STAGE 2-B\n AERIAL WALK"}
+if mapSelX=1 and mapSelY=-1 {global.StageGoing=rm_stage2b mapSXlerp=190 mapSYlerp=102 if lockedMap[2]=1 mapSName="STAGE 2-B\nAERIAL WALK"}
 if mapSelX=1 and mapSelY=0 {global.StageGoing=rm_stage2 mapSXlerp=152 mapSYlerp=142 if lockedMap[3]=1 mapSName="STAGE 2\nRUSH OVER THE SEA"}
 if mapSelX=1 and mapSelY=1 {global.StageGoing=rm_stage2c mapSXlerp=102 mapSYlerp=194 if lockedMap[4]=1 mapSName="STAGE 2-C\nTRAINING TRAVEL"}
 //C
-if mapSelX=2 and mapSelY=-1 {mapSXlerp=248 mapSYlerp=109 if lockedMap[5]=1 mapSName="STAGE 3\nMASHUP MUSEUM"}
+if mapSelX=2 and mapSelY=-1 {global.StageGoing=rm_stage4 mapSXlerp=248 mapSYlerp=109 if lockedMap[5]=1 mapSName="STAGE 3-B\nGRITTY GRAVES"}
 if mapSelX=2 and mapSelY=0 {global.StageGoing=rm_stage3 mapSXlerp=228 mapSYlerp=154 if lockedMap[6]=1  mapSName="STAGE 3\nMASHUP MUSEUM"}
-if mapSelX=2 and mapSelY=1 {mapSXlerp=204 mapSYlerp=212 if lockedMap[7]=1 mapSName="STAGE 3\nMASHUP MUSEUM"}
+if mapSelX=2 and mapSelY=1 {global.StageGoing=rm_stage5 mapSXlerp=204 mapSYlerp=212 if lockedMap[7]=1 mapSName="STAGE 3-C\nLUCKY DOJO CASINO"}
 //D
 if mapSelX=3 and mapSelY=-1 {mapSXlerp=320 mapSYlerp=111 if lockedMap[8]=1 mapSName="STAGE 0D"}
 if mapSelX=3 and mapSelY=0 {mapSXlerp=320 mapSYlerp=157 if lockedMap[9]=1 mapSName="STAGE 1D"}

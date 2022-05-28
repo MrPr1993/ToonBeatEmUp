@@ -39,3 +39,8 @@ hit=0
 zSpeed=0
 zSpeedAdd=0
 sidespeedadd=0
+
+haspal=0
+
+my_pal_sprite=spr_ninjapal
+current_pal=0

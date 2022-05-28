@@ -2,6 +2,12 @@ depth=-y
 
 //controller_setup()
 
+if shaketime=0 shake=0 
+else
+{shaketime-=1
+if shake=-1 shake=1 else shake-=1
+}
+
 
 z+=zSpeed
 if !ground 

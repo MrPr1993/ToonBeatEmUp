@@ -58,6 +58,10 @@ cutSpr1=spr_wrestler_cut1
 cutSpr2=spr_wrestler_cut2
 hasCut=1
 
+	enemyIdle2=spr_wrestler_grab
+	enemyIdle3=spr_wrestler_idle3
+	enemyIdle3Spd=0.1
+
 current_pal=0;
 my_pal_sprite=spr_ninjapal
 //Usagi, Nousagi, Koni

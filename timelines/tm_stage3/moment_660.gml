@@ -13,4 +13,4 @@ bad2.shaketime=10
 bad3.shaketime=10
 bad4.shaketime=10
 
-
+PlaySound(snd_enemy2)

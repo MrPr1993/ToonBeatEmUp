@@ -1,18 +1,28 @@
-if __view_get( e__VW.XView, 0 )>=4000-160
+if __view_get( e__VW.XView, 0 )>=3638+320
 {
-en5=instance_create(4000,160,oAreaSpawner) with en5
-{
-spawnX=0 ///768
-enemytype0=oSneak MaxSpawnFrame=0 visible=1
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-turn0=1 enemyMax=0
-}
 
-en6=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,210,0,oEnemy1) with en6
-{enemy_modify(my_pal_sprite,6,"MR. LAR",0,0.24,0.24) image_xscale=-1 canAttack=3 alarm[3]=30}
-en7=instance_create_depth(__view_get( e__VW.XView, 0 )+320+64,190,0,oEnemy1) with en7
-{enemy_modify(my_pal_sprite,6,"MR. LAR",0,0.24,0.24) image_xscale=-1 canAttack=3 alarm[3]=30}
-
+en3=instance_create_depth(4576,160-8,-1,oEntryBreak) with en3
+{image_xscale=-1 spawnSprFX=spr_ninjabun_desk spawnFall=spr_ninjabun_jump canEvent0=0 
+	shellSprMax=1.8 spawnEnemy=oNinjaBun
+	shellSpawnSpd=0.1 
+		rangeXAdd=-240
+	spawnSpeedZ=-8
+	xSpeed=0
+	ySpeed=2
+	}
+	
+en4=instance_create_depth(4720,160-8,-1,oEntryBreak) with en4
+{image_xscale=-1 spawnSprFX=spr_ninjabun_desk spawnFall=spr_ninjabun_jump canEvent0=0 
+	shellSprMax=1.8 spawnEnemy=oNinjaBun hideShadow=1
+	shellSpawnSpd=0.1  spawnAnimSpr=spr_ninjabun_shake
+		rangeXAdd=-240 isDepth=0 depth=16777212 
+	spawnSpeedZ=-8
+	xSpeed=0 
+	ySpeed=2 enemy_modify(spr_ninjapal,4,"KONI",0,0.4,0.4)
+	}
+	
+	en5=instance_create(4630, 165,oFatBurglar) with en5
+{canmove=0 isIdle=1 alarm[1]=60 anim=70002 idleRange=30}
 
 }
 else

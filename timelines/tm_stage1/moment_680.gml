@@ -7,7 +7,8 @@ oPlayer.Immune=0
 oEnemySpawner.roomHSpd=0 __view_set( e__VW.XView, 0, 3488-320 )
 oEnemySpawner.roomMove=0 //3488
 
-oControl.TextDialogue="STILL FOLLOWING US?"
+//oControl.TextDialogue="STILL FOLLOWING US?"
+PlaySound(snd_hwolf6)
 }
 else
 {oEnemySpawner.canFollow=0

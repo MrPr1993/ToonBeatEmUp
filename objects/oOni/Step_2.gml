@@ -96,7 +96,7 @@ frame_set(1,1,0.1)
 frame_set(2,2,0.05)
  if animFrame=3
 {PlaySoundNoStack(snd_swing2) card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
-	card.z=z-56 card.sprite_index=spr_oni_fan card.image_xscale=image_xscale
+	card.z=z-56 card.sprite_index=spr_oni_fan card.image_xscale=image_xscale card.current_pal=current_pal
 	}
 frame_set(3,3,0.5)
 frame_set(4,4,0.025)

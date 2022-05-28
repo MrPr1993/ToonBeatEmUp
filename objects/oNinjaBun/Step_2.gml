@@ -32,13 +32,15 @@ frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.1)
  if animFrame=3
- if prevanim!=61
+ if prevanim!=61 and prevanim!=62
 {PlaySoundNoStack(snd_swing2) card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 	card.z=z-56 card.image_xscale=image_xscale
 	}
 	else
 	{PlaySoundNoStack(snd_swing2) card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
-	card.z=z-56 card.image_xscale=image_xscale card.sprite_index=spr_cigarproj card.HitSound=snd_hit card.HitSpark=spr_hitflash
+	card.z=z-56 card.image_xscale=image_xscale 
+	card.sprite_index=spr_cigarproj if prevanim=62 card.sprite_index=spr_ninjadrinks
+	card.HitSound=snd_hit card.HitSpark=spr_hitflash
 	}
 	
 frame_set(3,3,0.5)
@@ -199,6 +201,16 @@ frame_set(5,5,0.25) if animFrame=6 {animFrame=0 canmove=1 atk=0 anim=0}
 {if animFrame=0 sprite_index=spr_ninjabun_cigar MoveType=1 prevanim=61
 frame_set(0,0,0)  if animFrame<0.5 if x=clamp(x,targetX-idleRange,targetX+idleRange) animFrame=1
 frame_set(1,1,0.1)
+frame_set(2,2,0.05) 
+frame_set(3,3,0.1) 
+frame_set(4,4,0.1) 
+frame_set(5,4,0.25) if animFrame>5 {animFrame=3 anim=11}
+}
+
+	if anim=62 ///Drinks Girl
+{if animFrame=0 sprite_index=spr_ninjabun_drinks MoveType=1 prevanim=62
+frame_set(0,0,0)  if animFrame<0.5 if x=clamp(x,targetX-idleRange,targetX+idleRange) animFrame=1
+frame_set(1,1,0.1) if animFrame=2 {if x>targetX image_xscale=-1 else image_xscale=1}
 frame_set(2,2,0.05) 
 frame_set(3,3,0.1) 
 frame_set(4,4,0.1) 

@@ -1,1 +1,0 @@
-oControl.TextDialogue="THIS IS AS FAR AS YOU GO!"

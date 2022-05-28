@@ -15,6 +15,8 @@ var bg1	= layer_get_id("StreetBG");
 layer_hspeed(bg1,-20)
 var bg2	= layer_get_id("GroundImg");
 layer_hspeed(bg2,-20)
+var bg3	= layer_get_id("Compatibility_Background_0_bg_sky");
+layer_hspeed(bg3,-20)
 }
 else
 timeline_position-=1

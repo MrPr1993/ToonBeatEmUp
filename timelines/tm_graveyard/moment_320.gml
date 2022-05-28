@@ -17,10 +17,12 @@ FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 turn0=-1 enemyMax=1
 }
 
-en3=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,192,0,oSkeleton)
-en4=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,192+24,0,oSkeleton)
-en5=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,192+48,0,oSkeleton)
-
+en3=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,192,0,oZombieWoman)
+with en3 {canmove=0 anim=61 idleRange=15}
+en4=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16+64,192,0,oZombieMan)
+with en4 {canmove=0 anim=61 image_xscale=-1 idleRange=15+64}
+en5=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16+16,192+16,0,oSkeleton)
+with en5 {canmove=0 anim=61 idleRange=15+16}
 
 }
 else

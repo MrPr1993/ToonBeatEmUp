@@ -7,12 +7,19 @@ and !instance_exists(en3)
 with thunder
 {sprite_index=spr_whitecol oControl.quakeFXTime=10 image_alpha=1 image_xscale=999999 image_yscale=99999999 isfading=1 PlaySound(snd_thunder)}
 	
-en1=instance_create(__view_get( e__VW.XView, 0 )+160-64,224,oZombieMan)
+en1=instance_create_depth(__view_get( e__VW.XView, 0 )+160-64,224,-1,oEntryBreak)
 with en1
-{canmove=0 animFrame=0 anim=666 alarm[1]=choose(60,90,120)}
-en2=instance_create(__view_get( e__VW.XView, 0 )+160+64,224,oZombieMan)
+{rangeX=0 instaSpawn=1
+	spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1
+	shellSpawnSpd=0.25	spawnSprFX=spr_zombiem_rise
+	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan	xSpeed=0 ySpeed=0 zSpeed=0 ground=1
+	}
+en2=instance_create_depth(__view_get( e__VW.XView, 0 )+160+64,224,-1,oEntryBreak)
 with en2
-{canmove=0 animFrame=0 anim=666 alarm[1]=choose(60,90,120) image_xscale=-1
+{rangeX=0 instaSpawn=1
+spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1
+	shellSpawnSpd=0.25	spawnSprFX=spr_zombiem_rise
+	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan	xSpeed=0 ySpeed=0 zSpeed=0 image_xscale=-1 ground=1
 }
 }
 else

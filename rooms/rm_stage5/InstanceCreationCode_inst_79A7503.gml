@@ -1,0 +1,2 @@
+	item=oDango
+	itemID=oDango

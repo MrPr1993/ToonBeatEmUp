@@ -17,6 +17,8 @@ with oControl MusicFade=1
 
 boss=instance_create_depth(5184-64,208-20,0,oOniController) 
 
+
+
 }
 else
 {

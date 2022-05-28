@@ -12,14 +12,14 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320
 }
 
 //1418
-en1=instance_create_depth(__view_get( e__VW.XView, 0 )-16,224,0,oEnemy1)
-with en1 canAttack=3
-en2=instance_create_depth(__view_get( e__VW.XView, 0 )-16,224-64,0,oEnemy1)
-with en2 canAttack=3
-en3=instance_create_depth(__view_get( e__VW.XView, 0 )+640+16,132+64,0,oEnemy1)
-with en3{ canAttack=3 image_xscale=-1}
-en4=instance_create_depth(__view_get( e__VW.XView, 0 )+640+16,132,0,oEnemy1)
-with en4{ canAttack=3 image_xscale=-1}
+en1=instance_create_depth(__view_get( e__VW.XView, 0 )-32,224,0,oEnemy1)
+with en1 canAttack=5
+en2=instance_create_depth(__view_get( e__VW.XView, 0 )-32,224-64,0,oEnemy1)
+with en2 canAttack=5
+en3=instance_create_depth(__view_get( e__VW.XView, 0 )+320+32,132+64,0,oEnemy1)
+with en3{ canAttack=5 image_xscale=-1}
+en4=instance_create_depth(__view_get( e__VW.XView, 0 )+320+32,132,0,oEnemy1)
+with en4{ canAttack=5 image_xscale=-1}
 
 en5=instance_create(1560,16+112,oAreaSpawner)
 with en5

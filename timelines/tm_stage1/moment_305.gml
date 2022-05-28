@@ -1,9 +1,9 @@
-if fakeenS.timer!=120
+if fakeenS.timer!=240
 {fakeenS.timer+=1
 timeline_position-=1
 }
 else
-{fakeenS.timer=0
+{
 with oControl {TextDialogue=""}
 
 with oBoss1a

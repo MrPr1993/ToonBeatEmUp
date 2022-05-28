@@ -5,6 +5,8 @@ scene1.image_index=4 scene1.image_speed=0
 scene1.y+=8 scene1.vspeed=-0.8
 scene2.y-=8 scene2.vspeed=0.8
 
+PlaySound(snd_dastardly3)
+
 if newsRepeat!=0
 {
 newsRepeat-=1

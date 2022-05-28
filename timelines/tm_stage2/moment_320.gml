@@ -7,7 +7,8 @@ with fakeen {name="BAD" alarm[0]=-1 image_xscale=-1 FlashShadow=1 animEnd=0 imag
 chairen=instance_create_depth(908, 108,-1,oFlashFX);
 with chairen {alarm[0]=-1 animEnd=0 image_speed=0 sprite_index=spr_sneak_chair1 current_pal=0;}
 
-
+var bg3	= layer_get_id("Compatibility_Background_0_bg_sky");
+layer_hspeed(bg3,-1)
 	
 //
 

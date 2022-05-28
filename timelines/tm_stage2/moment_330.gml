@@ -18,7 +18,7 @@ fakeen.image_index=3
 }
 
 if specialSet8=64 or specialSet8=68 or specialSet8=72 or specialSet8=76 or specialSet8=80
-{if specialSet8=64 {PlaySound(snd_deathcry1) oPlayer.z=-320 oPlayer.zSpeed=-24}
+{if specialSet8=64 {PlaySound(snd_enemy6) oPlayer.z=-320 oPlayer.zSpeed=-24}
 fakeen.image_index=4
 }
 if specialSet8=66 or specialSet8=70 or specialSet8=74 or specialSet8=76 or specialSet8=82

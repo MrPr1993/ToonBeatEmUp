@@ -1,0 +1,2 @@
+	item=oGum
+	itemID=oGum

@@ -10,6 +10,9 @@ function bobject_setup() {
 	damage=0.1
 fallHole=0
 
+shake=0
+shaketime=0
+
 	act=1
 
 	name="BARREL"

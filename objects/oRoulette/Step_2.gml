@@ -26,16 +26,16 @@ if spin>360 spin=0
 if hit=3
 {
 //45
-if spin<45 {prize=instance_create_depth(x,y+4,-1,oPizza)} else //1
-if spin<45*2 {prize=instance_create_depth(x,y+4,-1,oBurger)} else //2
-if spin<45*3 {prize=instance_create_depth(x,y+4,-1,oTea)} else //3
-if spin<45*4 {prize=instance_create_depth(x,y+4,-1,oGun)} else //4
+if spin<45 {prize=instance_create_depth(x,y+4,-1,oBomb)} else //1
+if spin<45*2 {prize=instance_create_depth(x,y+4,-1,oKatana)} else //2
+if spin<45*3 {prize=instance_create_depth(x,y+4,-1,oDango)} else //3
+if spin<45*4 {prize=instance_create_depth(x,y+4,-1,oGum)} else //4
 if spin<45*5 {prize=instance_create_depth(x,y+4,-1,oBomb)} else //5
-if spin<45*6 {prize=instance_create_depth(x,y+4,-1,oGum)} else //6
-if spin<45*7 {prize=instance_create_depth(x,y+4,-1,oChocolate)} else //7
-{prize=instance_create_depth(x,y+4,-1,oShotgun)} //8
+if spin<45*6 {prize=instance_create_depth(x,y+4,-1,oBat)} else //6
+if spin<45*7 {prize=instance_create_depth(x,y+4,-1,oApple)} else //7
+{prize=instance_create_depth(x,y+4,-1,oSuperItem)} //8
 
-with prize {z=-240 ground=0}
+with prize {z=-240 ground=0 if object_index=oBomb trigger=1 triggerTime=25}
 
 hit=4
 }

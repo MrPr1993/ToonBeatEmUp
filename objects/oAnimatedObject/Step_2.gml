@@ -96,6 +96,7 @@ if hover=1
 hoverZ=lerp(hoverZ,2,0.025) if hoverZ>1.8 hover=-1
 if hover=-1
 hoverZ=lerp(hoverZ,-2,0.025) if hoverZ<-1.8 hover=1
+
 }
 
 if sprite_index=ThrownSpr

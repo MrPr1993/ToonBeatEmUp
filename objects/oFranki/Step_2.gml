@@ -278,7 +278,7 @@ else {image_index=0 zSpeed=16}
 
 if animFrame>2.5 {if image_index!=5 image_index+=0.5 animFrame+=0.25}
 
-if animFrame>2 if animFrame>20 oControl.TextDialogue="" else oControl.TextDialogue="GET. OFF. MY. SHIP!"
+//if animFrame>2 if animFrame>20 oControl.TextDialogue="" else oControl.TextDialogue="GET. OFF. MY. SHIP!"
 
 if animFrame>25.75 {anim=15 oPlayer.canmove=1 oPlayer.anim=0}
 

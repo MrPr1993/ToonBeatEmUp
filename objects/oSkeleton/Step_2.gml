@@ -46,4 +46,13 @@ anim=12
 	if animFrame>5.75 {anim=0 canmove=1}
 	}
 	
-	
+	if anim=61 ///Out of Character
+{if animFrame=0 sprite_index=spr_skeleton_ooc MoveType=1 prevanim=61
+frame_set(0,0,0.1)  if animFrame<2 if x=clamp(x,targetX-idleRange,targetX+idleRange) animFrame=2.1
+frame_set(1,1,0.1) if animFrame=2 animFrame=0
+frame_set(2,2,0.1) 
+frame_set(3,3,0.05) 
+frame_set(4,2,0.1) 
+frame_set(5,2,0.25) if animFrame>5 {canmove=1 anim=0}
+}
+

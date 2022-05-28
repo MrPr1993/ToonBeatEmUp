@@ -1,1 +1,1 @@
-oControl.TextDialogue="YOU'RE TOO LATE!"
+//oControl.TextDialogue="YOU'RE TOO LATE!"

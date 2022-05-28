@@ -16,8 +16,8 @@ PlaySound(snd_sofia9)
 layer_background_alpha(bgfog1,0.5)
 layer_background_alpha(bgfog2,0.5)
 
-layer_background_yscale(bgfog1,1)
-layer_background_yscale(bgfog2,1)
+layer_background_visible(bgfog1,1)
+layer_background_visible(bgfog2,1)
 
 ///Blackout
 blackout=instance_create_depth(0,0,0,oAlphaFadeFX)
@@ -28,6 +28,7 @@ image_xscale=400 image_yscale=400 depth=-6000
 
 //layer_background_alpha
 
+with cam1 image_speed=0.5
 
 with diva1 {sprite_index=spr_viva_hit image_index=8 x+=8}
 with diva2 {sprite_index=spr_hina_hit image_index=8 x+=8}

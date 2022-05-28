@@ -11,6 +11,8 @@ entry_setup()
 	shellSprMax=3
 	shellSpawnSpd=0.25
 	spawnSprFX=spr_catman_mummy
+	spawnAnimSpr=-1
+	spawnAnimSpd=0.25
 	spawnFall=spr_catman_move
 	spawnEnemy=oCatman
 	spawnYAdd=0
@@ -19,6 +21,8 @@ entry_setup()
 	zSpeed=0
 	visible=1
 	rangeXAdd=-100
+	hideShadow=0
+	instaSpawn=0
 	
 	SplashSnd=-1
 	fallSpdSub=2

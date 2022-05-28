@@ -15,15 +15,15 @@ draw_text(10, yy++ * 10, string_hash_to_newline("TITLE SCREEN"));
 if level=1 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("CHARACTER SELECT"));
 if level=2 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 1"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 1, STREET"));
 if level=3 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 2"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 2, CAR-SHIP"));
 if level=4 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3 "));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3, MUSEUM "));
 if level=5 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 4"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3B, GRAVEYARD"));
 if level=6 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 5"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3C, CASINO"));
 if level=7 draw_set_color(c_yellow) else draw_set_color(c_blue)
 draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 6"));
 if level=8 draw_set_color(c_yellow) else draw_set_color(c_blue)
@@ -66,9 +66,9 @@ draw_text(10, yy++ * 10, string_hash_to_newline("SHOP"));
 if level=24 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("TRAINING"));
 if level=25 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("AIRPORT STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 2-B, AIRPORT STAGE"));
 if level=26 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("TRAIN STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3-C, TRAIN STAGE"));
 if level=27 draw_set_color(c_maroon) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=28 draw_set_color(c_yellow) else draw_set_color(c_gray)
