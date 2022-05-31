@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_altselfatk","path":"sprites/spr_altselfatk/spr_altselfatk.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "spr_altselfatk",
     "tags": [],
     "resourceType": "GMSequence",
   },

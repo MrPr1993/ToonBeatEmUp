@@ -10,10 +10,16 @@ overwriteAttack2=1
 if weaponspr=-1 if anim=0 or anim=1
 if instance_exists(oOniClub)
 {with instance_nearest(x,y,oOniClub) {
-	flashFX(x,y,z,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
+flashFX(x+(32-8)*image_xscale,y+2,z-8,spr_ghost_poof,0,0.5,0,1,1,c_white,1) with fx
+{current_pal=1 my_pal_sprite=spr_poofpal isDepth=1 zSpeed=-1}
+flashFX(x+(-32+8)*image_xscale,y+2,z-8,spr_ghost_poof,0,0.5,0,1,1,c_white,1) with fx
+{current_pal=1 my_pal_sprite=spr_poofpal isDepth=1 zSpeed=-1}
 	instance_destroy()}
 weapon_add("ONI CLUB")
-flashFX(x+weaponX*image_xscale,y,z+weaponY,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
+flashFX(x+(weaponX-16+16)*image_xscale,y+2,z+weaponY-32,spr_ghost_poof,0,0.5,0,1,1,c_white,1) with fx
+{current_pal=1 my_pal_sprite=spr_poofpal isDepth=1}
+flashFX(x+(weaponX-56+16)*image_xscale,y+2,z+weaponY-32,spr_ghost_poof,0,0.5,0,1,1,c_white,1) with fx
+{current_pal=1 my_pal_sprite=spr_poofpal isDepth=1}
 }
 
 if anim=0
@@ -189,3 +195,6 @@ weaponanim(weaponspr,weaponIndex,45,-76,166,weaponcolor)
 if image_index=clamp(image_index,24,25)
 weaponanim(weaponspr,weaponIndex,34,-93,176,weaponcolor)
 }
+
+if hp<=0
+x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)

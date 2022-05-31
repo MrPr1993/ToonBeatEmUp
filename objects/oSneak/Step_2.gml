@@ -61,7 +61,9 @@ anim=12///Slide
 else
 {rangeAtk=160
 animFrame=0
-if special0=0 and bombRecharge=0 and instance_number(oBomb)<3 {bombRecharge=choose(320,400,480,560) special0=1 anim=14 special1=320} else anim=12
+if special0=0 and bombRecharge=0 and instance_number(oBomb)<3 {bombRecharge=choose(320,400,480,560) special0=1 
+if current_pal=1 anim=14 else anim=12
+	special1=320} else anim=12
 }
 }
 }

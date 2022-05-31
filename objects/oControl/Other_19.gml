@@ -15,7 +15,7 @@ stageClear=1
 
 with oPlayer
 {global.P1Char=character
-canmove=0  canControl=0 animFrame=0
+canmove=0  animFrame=0
 anim=210
 
 }

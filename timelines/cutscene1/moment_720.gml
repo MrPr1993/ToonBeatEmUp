@@ -2,3 +2,5 @@
 
 cutscenename="BAHATI"
 cutsceneline="HEY MISS? MAYBE YOU SHOULD BE CALM.\nWE ALREADY BEAT THEM ENOUGH."
+
+

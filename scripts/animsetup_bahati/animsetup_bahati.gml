@@ -27,7 +27,6 @@ function animsetup_bahati() {
 
 	///Hit Sprite Animation Setup
 	defMask=spr_shadow
-
 	ThrownSpr=spr_bahati_hit
 	BurnSpr=spr_bahati_burned
 	FrozenSpr=spr_bahati_frozen
@@ -49,10 +48,16 @@ function animsetup_bahati() {
 	WinSnd=snd_bahati14
 	cutSpr1=spr_bahati_cut1
 	cutSpr2=spr_bahati_cut2
+	cutSpr1B=spr_bahati_cutB1
+cutSpr2B=spr_bahati_cutB2
 	SpinningSpr=spr_bahati_spin
 petSprLow=spr_bahati_petlow
 throwItemSpr=spr_bahati_itemthrow
 BDanceSpr=spr_bahati_bdance
+WildTakeSpr3=spr_bahati_wildtake3
+PlaneOutSpr=spr_bahati_planeout
+HeartSpr=spr_bahati_heart
+WildTakeSpr4=spr_bahati_wildtake4
 
 	if atk=0 {hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
 	HitForce=0
@@ -169,10 +174,19 @@ if animFrame>15.5 animFrame=0
 
 	image_index+=0.2 if image_index>6-0.2  image_index=0 atk=0}
 	else
-	{if weaponspawn=-1
-	sprite_index=spr_bahati_run
-	if weaponspawn=oHammer
-	sprite_index=spr_bahati_move
+	{sprite_index=spr_bahati_run
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,13,-38,84*image_xscale,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,13,-34,84*image_xscale,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,13,-35,84*image_xscale,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,13,-38,84*image_xscale,weaponcolor)
+if image_index=clamp(image_index,4,4.9)
+weaponanim(weaponspr,weaponIndex,13,-34,84*image_xscale,weaponcolor)
+if image_index=clamp(image_index,5,5.9)
+weaponanim(weaponspr,weaponIndex,13,-35,84*image_xscale,weaponcolor)
 	  ///Run
 	image_index+=0.2 if image_index>6-0.2  image_index=0 atk=0}
 	}
@@ -520,7 +534,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	selfatk.x=x
 	selfatk.image_xscale=3
 	selfatk.image_yscale=2
-
+selfatk.height=128
 	damage=0.26 targetHeight=3
 	selfatk.recovery=60
 	hit=0 MoveType=2
@@ -598,7 +612,10 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	///instantly use Down Up Move
 	if key_attack and (commandDown!=0 and commandUp!=0)
 	{if !place_free(x+1*image_xscale,y)
-	targetID.x=x targetID.z=z with targetID {throwcombo=2
+	targetID.x=x
+	if !place_free(targetID.x+1*image_xscale,y)
+	targetID.x=x
+	targetID.z=z with targetID {throwcombo=2
 	animFrame=0 HitType=0 ground=1 hurt=0 hit=0 Throw=0 hitBack=0
 	HitForceReact=0*image_xscale throw_quickrelease() recovery=0 recoveryThrow=0 shake=0 shaketime=0}
 	targetID=-1 animFrame=0 anim=80 exit;} ///instantly use Down Up Move
@@ -735,7 +752,8 @@ image_index=0
 	grabX=0 grabY=0 grabZ=0 //targetID.hp-=0.05+extradamage
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
-
+if !place_free(targetID.x+1*image_xscale,y)
+	targetID.x=x
 	with targetID
 	{recovery=0 animFrame=0 
 	hurt=0 Throw=0 if !ground {hurt=1 anim=4}
@@ -801,7 +819,8 @@ image_index=0
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
-
+if !place_free(targetID.x+1*image_xscale,y)
+	targetID.x=x
 	with targetID
 	{
 	hurt=1
@@ -828,7 +847,8 @@ image_index=0
 	{
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
-
+if !place_free(targetID.x+1*image_xscale,y)
+	targetID.x=x
 	with targetID
 	{
 	hurt=1
@@ -1011,6 +1031,8 @@ if targetID!=-1
 	else PlayerScore+=targetID.pointshit
 
 	if !place_free(x-1*image_xscale,y)
+	targetID.x=x
+	if !place_free(targetID.x-1*image_xscale,y)
 	targetID.x=x
 
 	with targetID

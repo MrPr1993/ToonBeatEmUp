@@ -3,6 +3,9 @@ if oPlayer.anim=220 and oPlayer.animFrame<5
 timeline_position-=1
 else
 {
+oControl.tutorialTextTime=300
+
+
 if oPlayer.ground=0
 {oViewTarget.x=0
 __view_set( e__VW.Object, 0, oViewTarget )

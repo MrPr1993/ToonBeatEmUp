@@ -1,6 +1,5 @@
 with oFlashFX instance_destroy()
-layer_background_yscale(bgfog1,0)
-layer_background_yscale(bgfog2,0)
+
 
 PlaySound(snd_hit) PlaySound(snd_hit3)
 PlaySound(snd_deathcry1) PlaySound(snd_deathcry2)
@@ -15,6 +14,10 @@ quakeFXTime=30
 bg1=layer_background_get_id(layer_get_id("BackgroundP1"));
 bg2=layer_background_get_id(layer_get_id("BackgroundP2"));
 layer_background_visible(bg1,0) layer_background_visible(bg2,0)
+
+bgfog1=layer_background_get_id(layer_get_id("FOGfx1"));
+bgfog2=layer_background_get_id(layer_get_id("FOGfx2"));
+layer_background_visible(bgfog1,0) layer_background_visible(bgfog2,0)
 
 SceneX=0
 

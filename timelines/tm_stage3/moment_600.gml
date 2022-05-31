@@ -8,3 +8,5 @@ bad3.image_speed=0
 bad4.image_speed=0
 
 relic.x=bad1.x-16
+
+with oPlayer{canmove=0 anim=305 animFrame=0}

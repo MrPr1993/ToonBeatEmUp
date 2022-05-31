@@ -42,6 +42,10 @@ ShockSpr=spr_skeleton_elec
 BurnSpr=spr_skeleton_burned
 FrozenSpr=spr_skeleton_frozen
 
+spritepos_setup(1,24,1,44)
+
+spritepos_setup(2,0,-1,73)
+spritepos_setup(2,24,2,73)
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_mummypal

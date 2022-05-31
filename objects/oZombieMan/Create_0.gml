@@ -26,7 +26,7 @@ maxhp=0.25
 
 //walkSpeed=
 
-height=70
+height=86
 
 specialFX=0
 
@@ -53,3 +53,7 @@ FrozenSpr=spr_zombiem_frozen
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+spritepos_setup(1,24,3,40)
+
+spritepos_setup(2,0,17,70)
+spritepos_setup(2,24,18,67)

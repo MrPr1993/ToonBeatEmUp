@@ -45,6 +45,11 @@ and fallHole=0
 if shadow!=-1
 draw_sprite(shadow,0,x,y+trainz+2)
 
+if instance_exists(oCutHalfFX) with oCutHalfFX if visible and !place_meeting(x,y,oFallHole)
+and fallHole=0
+if shadow!=-1
+draw_sprite(shadow,0,x+shadowXAdd*image_xscale,y+trainz+2)
+
 if instance_exists(oFlashFX) with oFlashFX if FlashShadow=1
 draw_sprite(shadow,0,x,y+(trainz*FlashShadowZ)+2)
 

@@ -26,13 +26,47 @@ GoldY=32
 
 StageNumber=0
 
+specialcheck1=0
+specialcheck2=0
+specialcheck3=0
+specialcheck4=0
+specialcheck5=0
 
+cutscenedecision=0
+cutsceneDecmode=0
+CDtextT="LADY WOLF IS GETTING AWAY!\nWHAT WILL YOU DO?"
+CDtextA="FOLLOW HER."
+CDtextB="STOP HER."
+CDtextC="LET HER GO."
+cutsceneDecbuffer=20
+cutsceneDecbufferBG=0
+
+CDtextTy=-200
+CDtextAx=-240
+CDtextBx=240
+CDtextCx=-240
+CDtextAy=0
+CDtextBy=0
+CDtextCy=0
+CDtextAs=1
+CDtextBs=1
+CDtextCs=1
+CDtextvis=0
+CDtextflash=1
+canSkipCutscene=0
 
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 global.StageGoing=rm_opening
 
+global.HiScoreLoad=0
+
+global.CutsceneSkip=0
+global.CutsceneSkipper=0
+
 global.LevelSelectSave=0
+
+global.TrainingRoom=0
 
 global.UnlockCharacterData=0
 global.UnlockFeats=0
@@ -75,7 +109,7 @@ global.LifeStart=2
 global.DisplayFeats=1
 
 global.Gold=0
-global.GoldShow=1
+global.GoldShow=0 //global.GoldShow=1 Show Gold
 
 global.enemytest=0
 global.enemytestB=0
@@ -314,7 +348,10 @@ quakeFXTime=0
 
 
 hiscore_setup()
-
+if global.HiScoreLoad=0 ///Load HiScore
+{global.HiScoreLoad=1
+hiscore_load()
+}
 
 
 if room=rm_setup
@@ -433,9 +470,16 @@ BossHPSub=2
 
 creditsAlpha=1
 creditsGo=0
-creditsTime=400
+creditsTime=800
 credFram=0
 credMSC=0
+creditsCameo=0
+creditsCameoX=0
+creditsCameoY=0
+
+finalStage=0
+finalStageEnd=0
+finalStageScoreMark=0
 
 //Cutscenes
 CutsceneImage=spr_cutscene1
@@ -523,3 +567,8 @@ event_user(0)
 
 cutscenename="VIVA"
 cutsceneline="OKAY. WHERE HAS THAT TRUCK GONE TO?\nSPEAK UP DOG!"
+
+tutorialTextY=48
+tutorialTextTime=0
+tutorialText="ASDW TO MOVE\nJ TO ATTACK, K/SPACE TO JUMP"
+

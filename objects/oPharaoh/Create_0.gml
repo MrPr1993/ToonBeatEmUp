@@ -4,7 +4,7 @@ specialFX=0
 pointshit=10
 points=100
 
-name="EVE"
+name="HATHOR"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=11
 

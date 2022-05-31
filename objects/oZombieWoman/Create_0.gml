@@ -52,3 +52,8 @@ FrozenSpr=spr_zombiew_frozen
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
+
+spritepos_setup(1,24,-4,47)
+
+spritepos_setup(2,0,15,72)
+spritepos_setup(2,24,13,72)

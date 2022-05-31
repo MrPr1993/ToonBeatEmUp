@@ -33,7 +33,7 @@ function character_hitanims() {
 	{
 	//////If dead get cut
 //	if cutDMG=1 and hasCut=0
-	if hp<=0 and hasCut=1 and cutDMG=1
+	if hp<=0 and hasCut=1 and cutDMG!=0
 	{animFrame=0 anim=1337 exit;}
 		
 	atk=0 sprite_index=ThrownSpr
@@ -177,14 +177,18 @@ function character_hitanims() {
 			if !ground
 			{
 			if animFrame=0
-			{sprite_index=cutSpr1
+			{if cutDMG=1 sprite_index=cutSpr1 if cutDMG=2 sprite_index=cutSpr1B
 if cutSpawn<0.9 {cutSpawn+=0.1 sprite_index=ThrownSpr image_index=3}
 else
 {
 if 	cutSpawn!=1
 {image_index=0
 cutSelf=instance_create(x,y,oCutHalfFX) cutSelf.hitBack=hitBack cutSelf.z=z cutSelf.image_xscale=image_xscale 
-cutSelf.sprite_index=cutSpr2 cutSelf.my_pal_sprite=my_pal_sprite  cutSelf.current_pal=current_pal
+if cutDMG=1
+cutSelf.sprite_index=cutSpr2
+if cutDMG=2
+{cutSelf.sprite_index=cutSpr2B cutSelf.shadowXAdd=-32}
+cutSelf.my_pal_sprite=my_pal_sprite  cutSelf.current_pal=current_pal
 cutSelf.HitGround=HitGround
 with cutSelf
 	{

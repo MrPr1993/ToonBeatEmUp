@@ -135,11 +135,17 @@ PointDialouge1=snd_viva20
 PointDialouge2=snd_viva21
 WildTakeSpr=spr_viva_wildtake
 WildTakeSpr2=spr_viva_wildtake2
+WildTakeSpr3=spr_viva_wildtake3
+WildTakeSpr4=spr_viva_wildtake4
+PlaneOutSpr=spr_viva_planeout
+HeartSpr=spr_viva_heart
 BDanceSpr=spr_viva_bdance
 ScreenHitSpr=spr_viva_hit
 WinSpr=spr_viva_win
 WinSnd=snd_viva13
 hasCut=1
+cutSpr1B=spr_viva_cutB1
+cutSpr2B=spr_viva_cutB2
 
 controlNO=1
 

@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_viva7",
-  "duration": 1.287042,
+  "soundFile": "snd_viva7.wav",
+  "duration": 2.339583,
   "parent": {
     "name": "Players",
     "path": "folders/f - Sounds/Voice Clips/Players.yy",

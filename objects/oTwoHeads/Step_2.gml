@@ -111,3 +111,6 @@ with tarl zSpeed=-8
 
 frame_set(5,0,0.05) if animFrame>5.7 canmove=1
 }
+
+if hp<=0
+x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)

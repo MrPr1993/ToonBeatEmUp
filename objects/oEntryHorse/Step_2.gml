@@ -14,7 +14,7 @@ z+=zSpeed
 
 if spawned=1
 {hspeed=horseSpd image_speed=0.25
-if x>rideX {hspeed=0 zSpeed=spawnSpeedZ event_user(0) spawned=2 isDepth=1}
+if x>rideX {hspeed=0 zSpeed=spawnSpeedZ horsespr=sprite_index event_user(0) spawned=2 isDepth=1}
 }
 
 if spawned=2

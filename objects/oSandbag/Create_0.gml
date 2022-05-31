@@ -41,10 +41,10 @@ JumpAtkSpr2=spr_sandbag_stand
 JumpSpr=spr_sandbag_stand
 JumpSpr2=spr_sandbag_stand
 ThrownSpr=spr_sandbag_hit
-FlatSpr=spr_sandbag_hit
-ShockSpr=spr_sandbag_hit
-BurnSpr=spr_sandbag_hit
-FrozenSpr=spr_sandbag_hit
+FlatSpr=spr_sandbag_flat
+ShockSpr=spr_sandbag_elec
+BurnSpr=spr_sandbag_burned
+FrozenSpr=spr_sandbag_frozen
 
 
 spritepos_setup(1,24,2,40)

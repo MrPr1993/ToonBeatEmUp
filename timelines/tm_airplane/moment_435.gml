@@ -17,5 +17,8 @@ layer_background_visible(bgg1,0)
 bgg2=layer_background_get_id(layer_get_id("BGground2"));
 layer_background_visible(bgg2,0)
 
-bgs=layer_background_get_id(layer_get_id("BG"));
-layer_hspeed(bgs,-2)
+bgs=layer_get_id("BG");
+layer_hspeed(bgs,-1)
+layer_y(bgs,48)
+
+

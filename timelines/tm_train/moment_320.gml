@@ -5,7 +5,9 @@ cave=layer_get_id("CaveTiles");
 layer_hspeed(cave,-8)	
 
 en1=instance_create_depth(__view_get( e__VW.XView, 0 )+320+32,170,0,oSneak) with en1
-{canAttack=3 image_xscale=-1}
+{canAttack=3 image_xscale=-1
+enemy_modify(my_pal_sprite,1,"MR. BLAST",0,0.2,0.2)
+	}
 }
 else
 {

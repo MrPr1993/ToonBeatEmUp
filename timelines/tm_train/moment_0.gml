@@ -8,7 +8,7 @@ oControl.P1SpawnY=232
 oPlayer.areaEntry=0
 oPlayer.canmove=0
 
-oControl.stageNext=rm_credits
+oControl.stageNext=rm_stage5
 
 with oControl
 {timecheck=alarm[0] alarm[0]=10000000}

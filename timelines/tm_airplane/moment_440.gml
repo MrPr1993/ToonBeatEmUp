@@ -1,5 +1,5 @@
 /// @description Plane Area Start
-
+timer_set(1)
 with oPlayer
 {canmove=1
 	canControl=1

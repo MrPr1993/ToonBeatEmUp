@@ -54,7 +54,7 @@ else {if hp<=0
 	{
 	if ownBody!=-1 with ownBody
 	{headRespawn=100}	
-	flashFX(x,y,z-24,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
+	flashFX(x+10*image_xscale,y,z+12,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
 	instance_destroy()
 	}
 	image_index=9}

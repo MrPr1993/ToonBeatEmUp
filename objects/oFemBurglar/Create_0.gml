@@ -62,7 +62,6 @@ cutSpr2=spr_femburglar_cut2
 spritepos_setup(1,6,0,18)
 spritepos_setup(1,24,1,49)
 
-
 spritepos_setup(2,6,4,-1)
 spritepos_setup(2,24,5,72)
 

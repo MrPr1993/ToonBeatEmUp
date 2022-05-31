@@ -20,6 +20,7 @@ entry_setup()
 	xSpeed=0
 	ySpeed=-1
 	zSpeed=0
+	horsespr=sprite_index
 	
 	SplashSnd=-1
 	fallSpdSub=2

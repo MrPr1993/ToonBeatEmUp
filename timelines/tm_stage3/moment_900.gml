@@ -18,7 +18,7 @@ bad2.sprite_index=spr_burglarB_run
 bad3.sprite_index=spr_sneak_move
 bad4.sprite_index=spr_swing_move
 
-
+PlaySound(snd_pharaoh8)
 
 oControl.quakeFXTime=30 PlaySound(snd_thunder)
 

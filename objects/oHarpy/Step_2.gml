@@ -138,3 +138,6 @@ oPlayer.x+=3*image_xscale
 	animFrame+=0.1
 		if animFrame>20.7 {canmove=1 sentflying=0 alarm[1]=60}
 	}
+	
+	if hp<=0
+x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)

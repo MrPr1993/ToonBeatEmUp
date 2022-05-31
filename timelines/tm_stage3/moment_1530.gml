@@ -6,6 +6,11 @@ oPlayer.areaEntry=0
 oEnemySpawner.roomHSpd=0 __view_set( e__VW.XView, 0, 5184-320-600)
 oEnemySpawner.roomMove=0 //3488
 
+boss=instance_create_depth(5184-64-500,208-20,0,oPharaoh) 
+boss.animFrame=0 boss.image_index=0
+boss.anim=100 boss.canmove=0 boss.image_xscale=-1
+boss.offScreenMode=0 boss.animLock=0
+
 //oControl.TextDialogue="STILL FOLLOWING US?"
 }
 else
@@ -42,7 +47,7 @@ oPlayer.key_right=0
 oControl.camMove=1
 //boss.animFrame=0
 
-with oPharaoh animLock=0
+
 
 timeline_position-=1
 }

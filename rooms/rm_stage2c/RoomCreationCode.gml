@@ -6,4 +6,4 @@ oControl.stageNext=rm_stage5
 oControl.stagePause=1
 oControl.StageNumber=4
 
-
+global.HiScoreLevel=2

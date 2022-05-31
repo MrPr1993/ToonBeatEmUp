@@ -77,62 +77,63 @@ function hiscore_check() {
 	global.HiScore1=global.P1Score
 	global.HiScoreName1=HiInput1
 	global.HiScoreFace1=global.P1Char
-	global.HiScoreStage1=global.HiScoreStage
+	global.HiScoreStage1=global.HiScoreLevel
    
 	} else {/////The non-scored
 	global.HiScore2=global.P1Score
 	global.HiScoreName2=HiInput1
 	global.HiScoreFace2=global.P1Char
-	global.HiScoreStage2=global.HiScoreStage
+	global.HiScoreStage2=global.HiScoreLevel
 	}
 	} else {
 	global.HiScore3=global.P1Score
 	global.HiScoreName3=HiInput1
 	global.HiScoreFace3=global.P1Char
-	global.HiScoreStage3=global.HiScoreStage
+	global.HiScoreStage3=global.HiScoreLevel
 	}
 	} else {
 	global.HiScore4=global.P1Score
 	global.HiScoreName4=HiInput1
 	global.HiScoreFace4=global.P1Char
-	global.HiScoreStage4=global.HiScoreStage
+	global.HiScoreStage4=global.HiScoreLevel
 	}
 	} else {
 	global.HiScore5=global.P1Score
 	global.HiScoreName5=HiInput1
 	global.HiScoreFace5=global.P1Char
-	global.HiScoreStage5=global.HiScoreStage
+	global.HiScoreStage5=global.HiScoreLevel
 	}
 	} else {
 	global.HiScore6=global.P1Score
 	global.HiScoreName6=HiInput1
 	global.HiScoreFace6=global.P1Char
-	global.HiScoreStage6=global.HiScoreStage
+	global.HiScoreStage6=global.HiScoreLevel
 	}
 	} else {
 	global.HiScore7=global.P1Score
 	global.HiScoreName7=HiInput1
 	global.HiScoreFace7=global.P1Char
-	global.HiScoreStage7=global.HiScoreStage
+	global.HiScoreStage7=global.HiScoreLevel
 	}
 	} else {
 	global.HiScore8=global.P1Score
 	global.HiScoreName8=HiInput1
 	global.HiScoreFace8=global.P1Char
-	global.HiScoreStage8=global.HiScoreStage
+	global.HiScoreStage8=global.HiScoreLevel
 	}
 	} else {
 	global.HiScore9=global.P1Score
 	global.HiScoreName9=HiInput1
 	global.HiScoreFace9=global.P1Char
-	global.HiScoreStage9=global.HiScoreStage
+	global.HiScoreStage9=global.HiScoreLevel
 	}
 	} else {
 	global.HiScore10=global.P1Score
 	global.HiScoreName10=HiInput1
 	global.HiScoreFace10=global.P1Char
-	global.HiScoreStage10=global.HiScoreStage
+	global.HiScoreStage10=global.HiScoreLevel
 	}
+	hiscore_save()
 	}
 
 

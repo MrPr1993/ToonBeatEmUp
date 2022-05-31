@@ -56,6 +56,7 @@ hasCut=1
 enemyIdle1=spr_burglarB_idle
 enemyIdle2=spr_burglarB_front
 bikeSpr=spr_burglarB_bike
+	JumpAtkSpr=spr_burglarB_airattack
 
 	enemyIdle3=spr_burglarB_idle3
 	enemyIdle3Spd=0.25

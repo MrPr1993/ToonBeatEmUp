@@ -66,7 +66,9 @@ current_pal=0;
 my_pal_sprite=spr_ninjapal
 //Usagi, Nousagi, Koni
 
-spritepos_setup(1,24,10,34)
-spritepos_setup(2,24,-5,65)
+spritepos_setup(1,24,6,20)
+
+spritepos_setup(2,0,29,35)
+spritepos_setup(2,24,28,36)
 
 enemyscript=animsetup_zombie

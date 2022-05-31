@@ -27,4 +27,5 @@ interact=0
 
 iconheight=-48
 
-tutorialtext=""
+//tutorialtext="PRESS J TO\nATTACK!"
+tutorialtext="TRAIN AND BEAT UP\nBAGGY HERE."

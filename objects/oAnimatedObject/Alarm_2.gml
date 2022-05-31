@@ -17,6 +17,8 @@ if visible=0 visible=1 else visible=0
 flashFX(x,y+1,z-8,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
 fx.zSpeed=-1
 
+if x=-11111
+{
 weapon=instance_create_depth(x,y,depth,spawnID)
 weapon.z=z-2 weapon.spdZ=-4 weapon.ground=0 weapon.airSpin=1
 weapon.image_blend=weaponcolor
@@ -32,7 +34,7 @@ weaponangle=0
 weaponcolor=c_white
 weaponspawn=-1
 spawnID=-1
-
+}
 instance_destroy()
 
 

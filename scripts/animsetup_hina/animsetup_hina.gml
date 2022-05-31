@@ -12,7 +12,6 @@ function animsetup_hina() {
 
 	DeathCry=snd_hina2
 	ReturnVoice=snd_hina8
-
 	DamageVoice1=snd_hina12
 	DamageVoice2=snd_hina11
 	DamageVoice3=snd_hina10
@@ -26,7 +25,6 @@ function animsetup_hina() {
 	weaponBack=1
 	///Hit Sprite Animation Setup
 	defMask=mask_small
-
 	ThrownSpr=spr_hina_hit
 	BurnSpr=spr_hina_burned
 	FrozenSpr=spr_hina_frozen
@@ -47,11 +45,17 @@ function animsetup_hina() {
 	WinSnd=snd_hina13
 	cutSpr1=spr_hina_cut1
 	cutSpr2=spr_hina_cut2
+	cutSpr1B=spr_hina_cutB1
+cutSpr2B=spr_hina_cutB2
 	SpinningSpr=spr_hina_spin
 	petSprLow=spr_hina_petlow
 	throwItemSpr=spr_hina_itemthrow
 	BDanceSpr=spr_hina_bdance
-
+	WildTakeSpr3=spr_hina_wildtake3
+PlaneOutSpr=spr_hina_planeout
+HeartSpr=spr_hina_heart
+	WildTakeSpr4=spr_hina_wildtake4
+	
 	if atk=0
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
 	HitForce=0
@@ -164,10 +168,19 @@ if animFrame>8 animFrame=0
 
 	image_index+=0.2 if image_index>6-0.2  image_index=0 atk=0}
 	else
-	{if weaponspawn=-1
-	sprite_index=spr_hina_run
-	if weaponspawn=oHammer
-	sprite_index=spr_hina_move
+	{sprite_index=spr_hina_run
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,-15,-45,142*image_xscale,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,-15,-52,144*image_xscale,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,-17,-46,144*image_xscale,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,-15,-45,142*image_xscale,weaponcolor)
+if image_index=clamp(image_index,4,4.9)
+weaponanim(weaponspr,weaponIndex,-15,-52,144*image_xscale,weaponcolor)
+if image_index=clamp(image_index,5,5.9)
+weaponanim(weaponspr,weaponIndex,-17,-46,144*image_xscale,weaponcolor)
 	  ///Run
 	image_index+=0.2 if image_index>6-0.2 -0.2 image_index=0 atk=0}
 	}
@@ -452,7 +465,7 @@ weaponanim(weaponspr,weaponIndex,32,-70,90*image_xscale,weaponcolor)
 	selfatk.x=x
 	selfatk.image_xscale=3
 	selfatk.image_yscale=2
-
+selfatk.height=128
 	damage=0.2 targetHeight=3
 	selfatk.recovery=60
 	hit=0 MoveType=2
@@ -701,6 +714,8 @@ if specialcheck5=1
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
+	if !place_free(targetID.x+1*image_xscale,y)
+	targetID.x=x
 	with targetID
 	{
 	hurt=1
@@ -789,6 +804,8 @@ atkcol_set(24,0,25,1.55,1,52)
 	else PlayerScore+=targetID.pointshit
 
 	if !place_free(x+1*image_xscale,y)
+	targetID.x=x
+	if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
 flashFX(x+39*image_xscale,y,z-77,spr_hitflash,0,0.5,0,1,1,c_white,1)
 	with targetID
@@ -891,7 +908,9 @@ if targetID!=-1
 
 	if !place_free(x-1*image_xscale,y)
 	targetID.x=x
-
+	if !place_free(targetID.x-1*image_xscale,y)
+	targetID.x=x
+	
 	with targetID
 	{
 	recovery=90 Throw=0
@@ -907,6 +926,8 @@ if targetID!=-1
 	anim=5
 	hud_show() hpscan()
 	event_user(12)
+
+	
 	}throwing=0
 	targetID=-1
 	}

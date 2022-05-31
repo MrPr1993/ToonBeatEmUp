@@ -5,7 +5,6 @@ global.CurrentMusic=msc_boss2
 
 musicplaystart(global.CurrentMusic)
 PlaySound(snd_twoheads5)
-alarm[0]=60
 }
 
 

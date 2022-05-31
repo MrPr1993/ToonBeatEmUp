@@ -55,7 +55,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 6,
-    "yorigin": 18,
+    "yorigin": 19,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_oni_club","path":"sprites/spr_oni_club/spr_oni_club.yy",},

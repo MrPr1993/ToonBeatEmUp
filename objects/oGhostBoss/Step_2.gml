@@ -115,7 +115,7 @@ headAngle=0
 	{
 	if animFrame=0 PlaySound(choose(snd_ant6))
 		headAngle=0 headSpr=spr_ghost_head
-	atkcol_set(42,0,0,2.55,1,120) selfatk.MoveType=1 selfatk.HitType=1 selfatk.isCut=1 selfatk.HitSpark=spr_blood
+	atkcol_set(42,0,0,2.55,1,120) selfatk.MoveType=1 selfatk.HitType=1 selfatk.isCut=2 selfatk.HitSpark=spr_blood
 damage=0.2 selfatk.HitSound=snd_cut
 
 	 if animFrame=clamp(animFrame,1,2) {atk=1 sentflying=16*image_xscale} else {atk=0
@@ -192,7 +192,7 @@ if hasHead=0
 {
 
 	headRespawn-=1
-	if headRespawn=0 {flashFX(x+GheadX,y+2,z+GheadY,spr_ghost_poof,0,0.5,0,1,1,c_white,1) hasHead=1}}
+	if headRespawn=0 {flashFX(x+GheadX*image_xscale,y+2,z+GheadY-16,spr_ghost_poof,0,0.5,0,1,1,c_white,1) hasHead=1}}
 
 
 
@@ -260,4 +260,5 @@ if image_index=clamp(image_index,24,24.9)
 
 	}
 
-	
+	if hp<=0
+x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)

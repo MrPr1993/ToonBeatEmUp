@@ -7,4 +7,7 @@ x=__view_get( e__VW.XView, 0 )-64
 sprite_index=spr_ghost_charge image_speed=0 image_index=0 image_xscale=1
 	}
 
-
+with oPlayer
+{
+anim=303 animFrame=0
+}

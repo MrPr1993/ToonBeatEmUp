@@ -22,6 +22,10 @@ sprite_index=spr_shopgirl_stand
 	if animFrame>15.9 animFrame=0
 }
 
+oPlayer.pow=1
+oPlayer.super=1
+oPlayer.hp=1
+
 with oControl
 {time=99}
 

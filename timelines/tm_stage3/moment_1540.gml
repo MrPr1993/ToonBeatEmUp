@@ -1,0 +1,1 @@
+with oPlayer{canmove=0 anim=305 animFrame=1}

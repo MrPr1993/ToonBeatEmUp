@@ -4,6 +4,8 @@ with oni2 image_index=6
 PlaySound(snd_explosion)
 oControl.quakeFXTime=30
 
+with oPlayer {ground=0 zSpeed=-4}
+
 clubb=instance_create_depth(oniR.x-14,oniR.y,-1,oFlashFX) with clubb
 {depth=16777215 isDepth=0 sprite_index=spr_oni_club animEnd=0 image_speed=0 alarm[0]=0 image_angle=270 z-=90 zSpeed=-6}
 clubb2=instance_create_depth(oniR.x+14,oniR.y,-1,oFlashFX) with clubb

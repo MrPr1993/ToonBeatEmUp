@@ -52,6 +52,10 @@ ShockSpr=spr_cobra_elec
 BurnSpr=spr_cobra_burned
 FrozenSpr=spr_cobra_frozen
 
+spritepos_setup(1,24,2,60)
+
+spritepos_setup(2,0,4,101)
+spritepos_setup(2,24,2,101)
 
 current_pal=0;
 my_pal_sprite=spr_mummypal

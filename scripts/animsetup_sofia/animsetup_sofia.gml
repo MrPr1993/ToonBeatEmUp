@@ -29,7 +29,6 @@ function animsetup_sofia() {
 	///Hit Sprite Animation Setup
 	defMask=mask_small
 
-
 	ThrownSpr=spr_sofia_hit
 	BurnSpr=spr_sofia_burned
 	FrozenSpr=spr_sofia_frozen
@@ -52,10 +51,16 @@ function animsetup_sofia() {
 	WinSnd=snd_sofia14
 	cutSpr1=spr_sofia_cut1
 	cutSpr2=spr_sofia_cut2
+	cutSpr1B=spr_sofia_cut1B
+cutSpr2B=spr_sofia_cut2B
 	SpinningSpr=spr_sofia_spin
 	petSprLow=spr_sofia_petlow
 	throwItemSpr=spr_sofia_itemthrow
 	BDanceSpr=spr_sofia_bdance
+WildTakeSpr3=spr_sofia_wildtake3
+PlaneOutSpr=spr_sofia_planeout
+HeartSpr=spr_sofia_heart
+WildTakeSpr4=spr_sofia_wildtake4
 
 	if atk=0
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
@@ -175,10 +180,19 @@ if animFrame>15.5 animFrame=0
 
 	image_index+=0.2 if image_index>6-0.2  image_index=0 atk=0}
 	else
-	{if weaponspawn=-1
-	sprite_index=spr_sofia_run
-	if weaponspawn=oHammer
-	sprite_index=spr_sofia_move
+	{	sprite_index=spr_sofia_run
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,-4,-36,-10*image_xscale,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,0,-29,-29*image_xscale,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,3,-29,-4*image_xscale,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,22,-52,160*image_xscale,weaponcolor)
+if image_index=clamp(image_index,4,4.9)
+weaponanim(weaponspr,weaponIndex,24,-46,132*image_xscale,weaponcolor)
+if image_index=clamp(image_index,5,5.9)
+weaponanim(weaponspr,weaponIndex,21,-40,101*image_xscale,weaponcolor)
 	  ///Run
 	image_index+=0.2 if image_index>6-0.2  image_index=0 atk=0}
 	}
@@ -492,7 +506,7 @@ weaponanim(weaponspr,weaponIndex,-31,-30,90*image_xscale,weaponcolor)
 	selfatk.x=x
 	selfatk.image_xscale=3
 	selfatk.image_yscale=2
-
+selfatk.height=128
 	damage=0.2 targetHeight=3
 	selfatk.recovery=60
 	hit=0 MoveType=2
@@ -917,6 +931,8 @@ weaponanim(weaponspr,weaponIndex,-31,-30,90*image_xscale,weaponcolor)
 	else PlayerScore+=targetID.pointshit
 
 	if !place_free(x+1*image_xscale,y)
+	targetID.x=x
+	if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
 
 	with targetID

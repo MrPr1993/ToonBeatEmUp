@@ -20,7 +20,8 @@ function player_throwitem() {
 	item.z=z-64  item.mask_index=spr_selfatk item.hitSource=id item.thrown=1
 
 	if !place_free(x,y-2) with item mask_index=spr_altselfatk
-	}
+	if !place_free(x,y+2) with item mask_index=spr_altselfatk2
+}
 
 
 

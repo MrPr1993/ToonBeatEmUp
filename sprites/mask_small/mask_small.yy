@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"mask_small","path":"sprites/mask_small/mask_small.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "mask_small",
     "tags": [],
     "resourceType": "GMSequence",
   },

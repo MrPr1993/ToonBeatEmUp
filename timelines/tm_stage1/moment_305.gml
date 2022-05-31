@@ -1,4 +1,4 @@
-if fakeenS.timer!=240
+if fakeenS.timer!=260
 {fakeenS.timer+=1
 timeline_position-=1
 }

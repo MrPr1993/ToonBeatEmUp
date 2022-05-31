@@ -18,11 +18,9 @@ function animsetup_viva() {
 	defMask=mask_small
 
 	DeathCry=snd_viva2
-
 	DamageVoice1=snd_viva9
 	DamageVoice2=snd_viva10
 	DamageVoice3=snd_viva11
-
 	ReturnVoice=snd_viva8
 	ThrownSpr=spr_viva_hit
 	BurnSpr=spr_viva_burned
@@ -43,11 +41,18 @@ function animsetup_viva() {
 	WinSnd=snd_viva13
 	cutSpr1=spr_viva_cut1
 	cutSpr2=spr_viva_cut2
+	cutSpr1B=spr_viva_cutB1
+cutSpr2B=spr_viva_cutB2
 	SpookyMonthSpr=spr_viva_spookymonth
 	SpinningSpr=spr_viva_spin
 	petSprLow=spr_viva_petlow
     throwItemSpr=spr_viva_itemthrow
 BDanceSpr=spr_viva_bdance
+WildTakeSpr3=spr_viva_wildtake3
+PlaneOutSpr=spr_viva_planeout
+HeartSpr=spr_viva_heart
+WildTakeSpr4=spr_viva_wildtake4
+
 
 	if atk=0 ///To Set default colission
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
@@ -174,10 +179,20 @@ if animFrame>15.5 animFrame=0
 
 	image_index+=0.2 if image_index>6-0.2 image_index=0 atk=0}
 	else
-	{if weaponspawn=-1
+	{
 	sprite_index=spr_viva_run
-	if weaponspawn=oHammer
-	sprite_index=spr_viva_moveweapon
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,-12,-44,-16*image_xscale,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,-12,-45,-29*image_xscale,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,-8,-33,-4*image_xscale,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,24,-57,160*image_xscale,weaponcolor)
+if image_index=clamp(image_index,4,4.9)
+weaponanim(weaponspr,weaponIndex,32,-50,132*image_xscale,weaponcolor)
+if image_index=clamp(image_index,5,5.9)
+weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 	  ///Run
 	image_index+=0.2 if image_index>6-0.2 image_index=0 atk=0}
 	}
@@ -790,6 +805,8 @@ selfatk.recovery=30
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
+	if !place_free(targetID.x+1*image_xscale,y)
+	targetID.x=x
 	if instance_exists(targetID) targetID.depth=depth+1
 	with targetID
 	{event_user(11) PlaySound(snd_hit)  ////This is for the enemy they grab, setting up the animations and effects
@@ -865,6 +882,8 @@ selfatk.recovery=30
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
+	if !place_free(targetID.x+1*image_xscale,y)
+	targetID.x=x
 	with targetID
 	{
 	PlaySound(snd_swing)
@@ -880,6 +899,10 @@ selfatk.recovery=30
 	anim=5
 	hud_show() hpscan()
 	event_user(12)
+	if !place_free(x,y+1) y-=1
+	if !place_free(x,y+2) y-=2
+	if !place_free(x,y-1) y+=1
+	if !place_free(x,y-2) y+=2
 	}throwing=0
 	targetID=-1
 	}

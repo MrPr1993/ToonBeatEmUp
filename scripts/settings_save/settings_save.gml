@@ -13,3 +13,4 @@ ini_write_real("SETTINGS", "CONTINUES", global.ContinueStart)
 ini_write_real("SETTINGS", "FPS", global.fpsMode)
 ini_close()
 }
+

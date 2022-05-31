@@ -324,6 +324,59 @@ frame_set(24,0,0.01)
 	frame_set(4,1,0.25) if animFrame=4.25 sprite_index=WildTakeSpr
 	frame_set(5,0,0)
 	}
+	
+			if anim=303 ////Sucked by Plane Door
+	{if animFrame=0 sprite_index=WildTakeSpr
+	frame_set(0,0,0) 
+	frame_set(1,0,0.1) 
+	frame_set(2,0,0.1) 
+	frame_set(3,1,0.1) if animFrame=4 {if sprite_index!=PlaneOutSpr {sprite_index=PlaneOutSpr image_xscale=-image_xscale}}
+	frame_set(4,0,0.25)
+	frame_set(5,1,0.25) 
+	frame_set(6,0,0.25)
+	frame_set(7,2,0.25)	if animFrame=8-0.25 animFrame=4
+	}
+	
+			if anim=304 ////Sucked by Plane Door
+	{if animFrame=0 sprite_index=WildTakeSpr
+	frame_set(0,1,0.25) if animFrame=1 sprite_index=WildTakeSpr3
+frame_set(1,0,0.25) 
+frame_set(2,1,0.25) 
+frame_set(3,0,0.25) 
+frame_set(4,1,0.25) 
+frame_set(5,1,0.25) 
+frame_set(6,0,0.25) 
+frame_set(7,1,0.25) 
+frame_set(8,0,0.25) 
+frame_set(9,1,0.25) 
+frame_set(10,1,0.25) 
+frame_set(11,0,0.25) 
+frame_set(12,1,0.25) 
+frame_set(13,1,0.25) 
+frame_set(14,0,0.25) 
+frame_set(15,1,0.25) 
+frame_set(16,0,0.25) 
+frame_set(17,1,0.05) if animFrame=18 sprite_index=HeartSpr
+frame_set(18,0,0.1)
+frame_set(19,1,0.1)
+frame_set(20,2,0.05) if animFrame=21 animFrame=18
+	}
+	
+				if anim=305 ////Reaction of Museum
+				{
+					frame_set(0,0,0) if animFrame=0 {sprite_index=PointSpr image_index=0}
+					frame_set(1,0,0) if animFrame=1 {sprite_index=PointSpr image_index=2}
+					
+				}
+				
+						if anim=306 ////Oni Quake
+				{if animFrame=0 sprite_index=WildTakeSpr4
+					frame_set(0,0,0)
+					frame_set(1,1,0.25) 
+					frame_set(2,2,0.25) 
+					if animFrame=3 {animFrame=1}
+					frame_set(4,0,0) if animFrame=4 sprite_index=WildTakeSpr
+				}
 
 ////Petting Animal
 	if anim=10010

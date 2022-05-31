@@ -37,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "a - Interactive Objects",
-    "path": "folders/9 - Objects And Items/a - Interactive Objects.yy",
+    "name": "ToonBeatEmUp",
+    "path": "ToonBeatEmUp.yyp",
   },
   "resourceVersion": "1.0",
   "name": "oHiddenObject",

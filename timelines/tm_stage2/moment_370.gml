@@ -2,6 +2,8 @@
 
 if oPlayer.ground
 {
+timer_set(1)
+	
 oPlayer.canControl=1
 oPlayer.areaEntry=0
 oPlayer.Immune=0

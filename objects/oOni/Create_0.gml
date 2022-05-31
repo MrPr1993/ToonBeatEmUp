@@ -1,13 +1,15 @@
 enemy_data()
 
 name="FUKUKIJO"
+///Kijo - female oni
+///
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=31
 
 enemyscript=animsetup_enemy
 
 pointshit=10
-points=100
+points=10
 
 chardraw=draw_swing
 
@@ -53,6 +55,9 @@ ShockSpr=spr_oni_elec
 BurnSpr=spr_oni_burned
 FrozenSpr=spr_oni_frozen
 
+spritepos_setup(1,24,4,72)
+spritepos_setup(2,0,0,102)
+spritepos_setup(2,24,0,102)
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal

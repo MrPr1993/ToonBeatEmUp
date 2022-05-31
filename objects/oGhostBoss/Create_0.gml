@@ -86,4 +86,5 @@ FrozenSpr=spr_ghost_frozen
 
 
 spritepos_setup(1,24,-6,63)
+spritepos_setup(2,0,-6,94)
 spritepos_setup(2,24,-6,94)

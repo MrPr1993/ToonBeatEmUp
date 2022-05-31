@@ -1,5 +1,5 @@
 //background_
-
+canSkipCutscene=2
 
 newsBox=0
 newsText=0

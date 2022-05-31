@@ -1,0 +1,4 @@
+cutscenename="BAHATI"
+cutsceneline="WELL LOT AT 'ER, SHE ALREADY HAD ENOUGH.\nAGGRESSIVE INTERROGATION DOESN'T ALWAYS\nWORK. HAVEN'T YA SEEN IT IN THE\nPICTURES?"
+
+with diva3 {image_speed=0.1 image_index=0}

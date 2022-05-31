@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_pharaoh13.wav",
-  "duration": 5.36381,
+  "duration": 3.308844,
   "parent": {
     "name": "Pharaoh",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Pharaoh.yy",

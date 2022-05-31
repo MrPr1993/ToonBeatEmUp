@@ -7,8 +7,6 @@ oPlayer.Immune=0
 oEnemySpawner.GoBack=1
 oEnemySpawner.MinX=0
 
-
-
 spawner_followset("WaveSet1",3488,3488,1)
 
 with oEnemySpawner
@@ -19,7 +17,7 @@ oControl.camMove=0
 with oControl 
 {MusicFade=0 MusicFadeAdd=1
 musicplaystart(msc_boss)
-alarm[0]=60
+alarm[0]=180
 }
 
 oControl.camMove=1

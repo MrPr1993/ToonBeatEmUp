@@ -17,3 +17,4 @@ with oControl
 stageEndFX=1 specialSet8=0
 }
 }
+timer_set(0)

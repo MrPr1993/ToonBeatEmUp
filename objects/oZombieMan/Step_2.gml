@@ -10,6 +10,8 @@ throw_step()
 overwriteAttack=1
 overwriteAttack2=1
 overwriteAttack3=1
+overwriteAttack4=1
+overwriteAttack5=1
 
 if anim=10
 {
@@ -46,11 +48,21 @@ if anim=12
 {
 if animFrame=0 PlaySoundNoStack(snd_mzombie5)
 
-	atkcol_set(13,0,0,0.85,1,1) damage=0 MoveType=0
+atkcol_set(13,0,0,0.85,1,1) damage=0 MoveType=0
 animFrame+=0.01 //selfatk.HitSound=-1
 if animFrame<0.25 {sprite_index=StandSpr image_index=1}
 else
 {
+if current_pal=0 ///Change to a clumsy tackle
+{
+if image_xscale=1
+and targetEnemy.x<x+96// and y=clamp(y,targetEnemy.y-8,targetEnemy.x+8)
+{animFrame=0 anim=13 ground=0 zSpeed=-6 sentflying=6*image_xscale PlaySoundNoStack(DamageVoice1)}
+if image_xscale=-1
+and targetEnemy.x>x-96// and y=clamp(y,targetEnemy.y-8,targetEnemy.x+8)
+{animFrame=0 anim=13 ground=0 zSpeed=-4 sentflying=4*image_xscale PlaySoundNoStack(DamageVoice1)}
+}	
+
 if targetEnemy.anim=30 or targetEnemy=31
 {canmove=1 anim=0 alarm[0]=60 exit;}
 	atk=1 
@@ -60,12 +72,29 @@ else {image_xscale=-1 sentflying=-2}
 if y!=clamp(y,targetEnemy.y-2,targetEnemy.y+2)
 if y>targetEnemy.y {if place_free(x,y-1) y-=1}
 else {if place_free(x,y+1) y+=1}
+
 }
 if animFrame>2 {atk=0 canmove=1 anim=0}
 }
 
+///Clumsy Tacklea
+if anim=13
+{sprite_index=ThrownSpr atk=1 selfatk.damage=0.1 atkcol_set(13,0,0,0.85,1,64)
+	selfatk.MoveType=1 sentflying=4*image_xscale
+frame_set(0,16,0.25) 
+frame_set(1,17,0.25)
+frame_set(2,18,0.25)
+
+if ground {selfatk.atk=0 canBounce=0 sentflying=0 hitBack=1 animFrame=0 anim=6 
+	hground=instance_create_depth(x,y,0,oFlashFX) PlaySoundNoStack(snd_hitground)
+	hground.sprite_index=spr_hitground hground.depth=99996
+	hground.isDepth=0 hground.z=z
+
+	}
+}
+
 if anim=6666 ///Grab Enemy
-{
+{canBounce=0
 isThrow=1 hud_show()
 throwing=1
 selfatk.image_xscale=0
@@ -109,7 +138,7 @@ if grabMax>4
 {
 HitType=1 
 
- canBounce=1
+ canBounce=0
 	hurt=1
 	ground=0
 	zSpeed=-6

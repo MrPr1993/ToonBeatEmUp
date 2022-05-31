@@ -12,4 +12,6 @@ oControl.stageNext=rm_credits
 oControl.stagePause=1
 oControl.StageNumber=6
 
+oControl.finalStage=1
 
+global.HiScoreLevel=3

@@ -11,16 +11,23 @@ loopimg=-1
 depthchange=0
 shadowchange=0
 isdepthchange=0
+scalechange=0
+loopimgchange=-1
 
 haspal=1
 
 hasgrav=0
+gravspd=0.45
 ground=0
 
 shake=0
 shaketime=0
 
 name="Default"
+
+changespr=sprite_index
+changeimgspd=0
+changeimpindex=0
 
 isDepth=1
 

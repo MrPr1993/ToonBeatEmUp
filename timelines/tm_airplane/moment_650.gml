@@ -7,6 +7,9 @@ oControl.MusicFade=0
 bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
 layer_background_visible(bgfog1,1)
 
+bgs=layer_get_id("BG");
+layer_y(bgs,0)
+
 if specialSet8<30
 timeline_position-=1
 else

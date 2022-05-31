@@ -9,7 +9,7 @@ disappearTime=24
 hitBack=0
 HitGround=-1
 trainz=0
-
+shadowXAdd=0
 fallHole=0
 
 ///Palette Options

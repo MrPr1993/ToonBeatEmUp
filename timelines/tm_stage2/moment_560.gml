@@ -1,7 +1,6 @@
 /// @description Prepare Boss
 
-with oControl
-{timecheck=alarm[0] alarm[0]=10000000}
+timer_set(0)
 
 if oPlayer.x>=2460-320+160
 and oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0 

@@ -19,8 +19,21 @@ if DeathCryOnce=0 hasBounce=0 else hasBounce=1
 	
 if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 {
-if distance_to_point(targetEnemy.x,targetEnemy.y)>100
-	anim=11 else anim=12
+	if current_pal=0 or current_pal=1
+	{
+	if distance_to_point(targetEnemy.x,targetEnemy.y)>100
+	anim=11 
+	else anim=12
+	}
+	if current_pal=2 or current_pal=3
+	anim=65
+	
+		if current_pal=4
+		{
+	if distance_to_point(targetEnemy.x,targetEnemy.y)>100
+	anim=choose(11,65)
+	else anim=choose(12,65)		
+		}
 }
 	else
 	anim=13
@@ -138,6 +151,8 @@ frame_set(5,5,0.25) if animFrame=6 {animFrame=0 canmove=1 atk=0 anim=0}
 	image_index=animFrame+13 else image_index=animFrame}
 
 
+
+
 //60
 
 
@@ -215,4 +230,14 @@ frame_set(2,2,0.05)
 frame_set(3,3,0.1) 
 frame_set(4,4,0.1) 
 frame_set(5,4,0.25) if animFrame>5 {animFrame=3 anim=11}
+}
+
+if anim=65 ///Air Kick
+{if animFrame=0 sprite_index=spr_ninjabun_airkick atkcol_set(28,0,10,1.45,1,29) MoveType=1
+frame_set(0,0,0.05)
+if animFrame=1 {image_index=1 sentflying=3*image_xscale PlaySoundNoStack(snd_swing) ground=0 zSpeed=-6}
+frame_set(1,1,0.1)
+if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=ThrownSpr image_index=10 sentflying=0 atk=0} else {sprite_index=spr_ninjabun_airkick sentflying=3*image_xscale atk=1}
+
+if animFrame>3 and ground {canmove=1}
 }

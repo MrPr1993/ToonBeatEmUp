@@ -202,6 +202,7 @@ else enemyHPflash=0
 
 d3d_transform_set_identity()
 
+
 if BossHPID!=-1
 {
 if !instance_exists(BossHPID) {BossHPID=-1 exit;}
@@ -245,9 +246,20 @@ draw_set_color(c_black)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,fal
 
 draw_set_halign(fa_left)
 
+
 }
 
-
+if tutorialTextTime!=0
+{tutorialTextTime-=1
+tutorialTextY=lerp(tutorialTextY,-24,0.1)
+}else if tutorialTextY!=24 tutorialTextY+=1
+if tutorialTextY<23
+{draw_set_alpha(1)
+draw_set_halign(fa_center);
+draw_set_font(global.scorefont)
+draw_set_color(c_white)
+draw_text(160,round(240+tutorialTextY),tutorialText)
+}
 
 ///GO!
 if goActive=1
@@ -417,10 +429,22 @@ draw_text(16,0,string_hash_to_newline(string(keyGet3)))
 if keyToGameOver=0 ///Set Hi-Score
 {
 HiInput1=keyGet1+keyGet2+keyGet3
-hiscore_check()
+
+if finalStageEnd=0
+{hiscore_check()
 isGameOver=0 
 keyToGameOver=1
 alarm[2]=240
+}
+else
+{
+if finalStageScoreMark!=100 finalStageScoreMark+=1
+else
+{alarm[8]=100 finalStageScoreMark=241 hiscore_check()
+stageEndFX=1
+stageEnd=0
+}
+}
 }
 }
 }
@@ -528,10 +552,12 @@ draw_text(160+8,160+32,string_hash_to_newline(round(time*200)))
 
 if scoreClearSet=0
 {scoreClearSet=1 alarm[7]=120
-alarm[8]=240
+alarm[8]=240///Stage change time
 oPlayer.PlayerScore+=round(oPlayer.hp*20000)+round(time*200)+bossScore
-
 GoldShow=1 GoldGet+=round(oPlayer.PlayerScore/100) global.Gold+=GoldGet
+global.P1Score=oPlayer.PlayerScore
+global.P1Life=oPlayer.PlayerLife
+
 }
 
 draw_set_halign(fa_left)
@@ -545,6 +571,7 @@ if GoldShow=1 and global.GoldShow=1
 draw_set_halign(fa_right)
 draw_set_color(c_white)
 draw_set_font(global.scorefont)
+if GoldGet!=0
 draw_text(320-10,round(240-16+GoldY),string("+")+string(GoldGet)+string("$"))
 draw_set_halign(fa_left)
 }
@@ -651,7 +678,8 @@ if pressStartTime<1
 }
 }
 else ///Select Menu
-{titlescreenMenuY=lerp(titlescreenMenuY,-20,0.1)
+{
+titlescreenMenuY=lerp(titlescreenMenuY,-20,0.1)
 	if !instance_exists(oSettings)
 	{
 if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=7 else menuSelect-=1}
@@ -699,7 +727,7 @@ draw_text(160,184+40,string_hash_to_newline("CREDIT "+string(global.Continues)))
 draw_set_halign(fa_left)
 
 draw_set_valign(fa_bottom)
-draw_text(0,320,string_hash_to_newline("V.0.1"))
+draw_text(0,320,string_hash_to_newline("EARLY ACCESS DEMO V.1"))
 draw_set_valign(fa_top)
 }
 }
@@ -719,7 +747,8 @@ if titleShow=1 introSkip=1
 if selectScreen=0
 if key_attack or keyboard_check_pressed(vk_enter)
 if introSkip=0
-{introSkip=1 noWhite=1
+{
+introSkip=1 noWhite=1
 introSkipFX=2
 iconShow=0
 iconBlack=0
@@ -733,7 +762,9 @@ titleShow=1
 else
 {
 if pressStart=0
-{pressStart=1 PlaySound(snd_picked)}
+{pressStart=1 PlaySound(snd_picked)
+	global.MenuSkip=1 global.IntroSkip=2
+	}
 else
 if !instance_exists(oSettings)
 	{if menuLocked=0 PlaySound(snd_steal) else
@@ -1077,6 +1108,7 @@ if  room=rm_newspaper
 {
 if betatest=1
 if keyboard_check_pressed(vk_backspace)///Change cutscene text
+
 cutsceneline=get_string("Change dialogue",cutsceneline)
 
 newsBlack-=0.1
@@ -1127,7 +1159,13 @@ draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
 draw_text(160,210-16,cutscenename)
 draw_set_halign(fa_left)
-draw_text(8,220-16,cutsceneline)
+if instance_exists(oTextBox)
+{
+//draw_text(8,220-16,cutsceneline)
+// Draw the text
+with oTextBox
+draw_dialogue()
+}
 }else fpsY=240-8
 
 draw_sprite_ext(spr_newspaper,0,160,120,4,4,0,c_black,newsFadeA)
@@ -1152,30 +1190,67 @@ if creditsGo=0
 {if creditsAlpha>-0.1 creditsAlpha-=0.1} else creditsAlpha+=0.1
 
 if creditsAlpha>1.5 room=rm_titlescreen
-
+creditsCameo=0
 
 creditsTime-=1
 if creditsTime<0 creditsGo=1
 
-	draw_set_alpha(1)
+if creditsTime<400
+creditsCameoY=lerp(creditsCameoY,-240,0.1)
+
+draw_set_alpha(1)
 draw_set_color(c_white)
 draw_set_font(global.scorefont)
+d3d_transform_set_identity()
+d3d_transform_set_translation(0,round(creditsCameoY),0)
 draw_set_halign(fa_center)
+if creditsCameoY>-120
+{
 draw_text(160,4,"THANK YOU FOR PLAYING")
-draw_text(160,4+8,"THE PROTOTYPE")
-draw_text(160,8+16,"STAY TUNED FOR MORE ")
-draw_text(160,8+24,"UPDATES AND BUG FIXES")
-draw_text(160,8+32,"AND NEW CONTENT")
+draw_text(160,4+8,"THE EARLY ACCESS 2022 DEMO")
+draw_text(160,8+16,"COMING SOON:MORE STAGES!MORE CUTSCENES!")
+draw_text(160,8+24,"BOSSES!BUGFIXES!FEATURES!CHOICES!")
+draw_text(160,8+32,"LEVEL UPDATES!MORE ANIMALS TO PET!")
 
-draw_text(160,190,"CODING BY MRPR1993, GRAPHICS BY MRPR1993")
-draw_text(160,200,"SOUNDS BY MRPR1993 AND MASTERSAUCE")
-draw_text(160,210,"MUSIC BY JONORSI")
-draw_text(160,220,"VOICES-MIMI HUNG,FLIRTYFAWN,CINDER")
-draw_text(160,230,"SED,MIZZPEACHY,SUCCUBOO")
-draw_sprite_ext(spr_viva_move,credFram,160+96-32,180,1,1,0,c_black,1)
-draw_sprite_ext(spr_hina_move,credFram,160+48-32,180,1,1,0,c_black,1)
-draw_sprite_ext(spr_bahati_move,credFram,160-32,180,1,1,0,c_black,1)
-draw_sprite_ext(spr_sofia_move,credFram,160-48-4-32,180,1,1,0,c_black,1)
+draw_text(160,190-8,"CODING:MRPR1993")
+draw_text(160,190,"GRAPHICS:MRPR1993,FROTHIER")
+draw_text(160,200,"SOUNDS:MRPR1993,MASTERSAUCE")
+draw_text(160,210,"MUSIC:JONORSI")
+draw_text(160,220,"VOICES:MIMI HUNG,FLIRTYFAWN,CINDER")
+draw_text(160,230,"SED2116,MIZZPEACHY,SUCCUBOO,SHYGUYWHY")
+
+draw_sprite_ext(spr_viva_move,credFram,160+96-32,180-8,1,1,0,c_black,1)
+draw_sprite_ext(spr_hina_move,credFram,160+48-32,180-8,1,1,0,c_black,1)
+draw_sprite_ext(spr_bahati_move,credFram,160-32,180-8,1,1,0,c_black,1)
+draw_sprite_ext(spr_sofia_move,credFram,160-48-4-32-8,180,1,1,0,c_black,1)
+}
+else
+{
+draw_text(160,4+240,"CAMEOS SHOWN IN GAME")
+
+draw_sprite_ext(spr_cameo1a,0,-32+16+64,100+248,1,1,0,c_white,1)
+draw_sprite_ext(spr_cameo2,1,-32+8+64*2,100+248,1,1,0,c_white,1)
+draw_sprite_ext(spr_cameo3,2,-32-16+8+64*3,100+248,1,1,0,c_white,1)
+draw_sprite_ext(spr_cameo4,3,-48+8+64*4,100+248,1,1,0,c_white,1)
+draw_sprite_ext(spr_cameo5,4,-48+8+64*5,100+248,1,1,0,c_white,1)
+
+draw_sprite_ext(spr_cameo6,0,-4-16-32+16+64,100+248+220-100,1,1,0,c_white,1)
+draw_sprite_ext(spr_cameo7,1,-8-32+8+64*2,100+248+220-100,1,1,0,c_white,1)
+draw_sprite_ext(spr_cameo8,2,24-32-16+8+64*3,100+248+220-100,1,1,0,c_white,1)
+draw_sprite_ext(spr_cameo9,3,8-48+8+64*4,100+248+220-100,1,1,0,c_white,1)
+draw_sprite_ext(spr_cameo10,4,4-48+8+64*5,100+248+220-100,1,1,0,c_white,1)
+
+draw_text(-32+8+64*2,100+8+240-8,"-SHADES,SILVIE,DETOUR-\nSHADY CORNER")
+draw_text(-48+8+64*4,100+8+240-32,"-SEDRIANA-\nSED2116")
+draw_text(-48+8+64*5,100+8+240,"-CATAPPA-\nBLUETOMATO")
+
+draw_text(6-16-32+16+64,100+8+240+220-100-9,"-JENNY-\nSLASHER03")
+draw_text(-8-32+8+64*2,100+8+240-32+220-100,"-TURQUOISE-\nSHEEP")
+draw_text(24-32-16+8+64*3,100+8+240+220-100-9,"-CAIT-\nPONNO")
+draw_text(8-48+8+64*4,100+8+240-32+220-100,"-TAMARA-\nBRADFLAKES")
+draw_text(4-48+8+64*5,100+8+240+220-100-9,"-ELOA-\nTHEFLAW")
+}
+d3d_transform_set_identity()
 credFram+=0.25
 
 draw_set_alpha(creditsAlpha)
@@ -1251,6 +1326,11 @@ draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
 ///This will be used to play the cutscenes
 if room=rm_cutscene1 or room=rm_opening
 {
+if keyboard_check_pressed(vk_f5)
+game_save("SaveState")
+if keyboard_check_pressed(vk_f7)
+game_load("SaveState")
+	
 __view_set( e__VW.XView, 0, SceneX )
 SceneX+=SceneSpeedX
 __view_set( e__VW.YView, 0, SceneY )
@@ -1260,7 +1340,16 @@ if creditsGo=0
 {if creditsAlpha>-0.1 creditsAlpha-=0.1} else creditsAlpha+=0.1
 
 creditsTime-=1
-if keyboard_check(ord("J")) stageEndFX=1
+controller_setup()
+/////Skip Cutscene if cutsceneMode=0
+if key_attack or key_jump or key_shield or key_super or keyboard_check_pressed(vk_enter)
+{
+if cutscenedecision=0
+{
+if canSkipCutscene=2 stageEndFX=1
+if canSkipCutscene=1 {global.CutsceneSkip=1 room_restart()}
+}
+}
 
 //draw_sprite(CutsceneImage,CutsceneIndex,CutsceneX,CutsceneY)
 
@@ -1291,11 +1380,80 @@ if newsText=1
 {fpsY=240-56
 draw_text(160,210-16,cutscenename)
 draw_set_halign(fa_left)
-draw_text(8,220-16,cutsceneline)
+//draw_text(8,220-16,cutsceneline)
+with oTextBox
+draw_dialogue()
 }else fpsY=240-8
-draw_set_halign(fa_left)
+
 //draw_text(160,10+230,"WITH TWO MORE FOR THIS DEMO")
 
+///Decision Text
+if cutscenedecision!=0
+{
+controller_setup()
+	
+		
+	
+	if cutscenedecision=1
+	{if cutsceneDecbuffer!=0 cutsceneDecbuffer-=1 cutsceneDecbufferBG=lerp(cutsceneDecbufferBG,0.8,0.1) 
+	CDtextTy=lerp(CDtextTy,0,0.1)
+	CDtextAx=lerp(CDtextAx,0,0.1)
+	CDtextBx=lerp(CDtextBx,0,0.1)
+	CDtextCx=lerp(CDtextCx,0,0.1)
+		
+if key_up_pressed {PlaySound(snd_select) if cutsceneDecmode=0 cutsceneDecmode=2 else cutsceneDecmode-=1}
+if -key_down_pressed {PlaySound(snd_select) if cutsceneDecmode=2 cutsceneDecmode=0 else cutsceneDecmode+=1}
+
+if key_attack or key_jump or key_super or key_shield or keyboard_check_pressed(vk_enter)
+{cutscenedecision=2 PlaySound(snd_picked) cutsceneDecbuffer=120
+	CDtextTy=0
+	CDtextAx=0
+	CDtextBx=0
+	CDtextCx=0
+	}
+	
+}
+
+	
+	if cutscenedecision=2 ///Decided
+	{if cutsceneDecbuffer!=0 cutsceneDecbuffer-=1
+	else cutscenedecision=0
+	
+	
+	
+	CDtextTy=lerp(CDtextTy,-400,0.1)
+	if cutsceneDecmode=0 {CDtextAy=lerp(CDtextAy,-10,0.1) CDtextAs=lerp(CDtextAs,1.5,0.1)} else CDtextAx=lerp(CDtextAx,240,0.1)
+	if cutsceneDecmode=1 {CDtextBy=lerp(CDtextBy,-10,0.1) CDtextBs=lerp(CDtextBs,1.5,0.1)} else CDtextBx=lerp(CDtextBx,-240,0.1)
+	if cutsceneDecmode=2 {CDtextCy=lerp(CDtextCy,-10,0.1) CDtextCs=lerp(CDtextCs,1.5,0.1)}else CDtextCx=lerp(CDtextCx,240,0.1)
+	
+	if cutsceneDecbuffer<60
+	{
+	if cutsceneDecmode=0 {CDtextAy=lerp(CDtextAy,320,0.1) CDtextAs=lerp(CDtextAs,0,0.1)}
+	if cutsceneDecmode=1 {CDtextBy=lerp(CDtextBy,320,0.1) CDtextBs=lerp(CDtextBs,0,0.1)}
+	if cutsceneDecmode=2 {CDtextCy=lerp(CDtextCy,320,0.1) CDtextCs=lerp(CDtextCs,0,0.1)}
+	}
+	cutsceneDecbufferBG=lerp(cutsceneDecbufferBG,0,0.05) 
+	}
+
+if CDtextvis=1
+{
+draw_set_color(c_black) draw_set_alpha(cutsceneDecbufferBG)	
+draw_rectangle(-66,-66,666,666,false)
+
+draw_set_halign(fa_center)draw_set_color(c_white) draw_set_alpha(1)
+draw_text_transformed(160,round(60+CDtextTy),CDtextT,1.5,1.5,0)
+if cutscenedecision=2 {if CDtextflash=0 CDtextflash=2 else CDtextflash-=0.25}
+draw_set_color(c_gray)
+if cutsceneDecmode=0 if CDtextflash<=1 draw_set_color(c_white)
+draw_text_transformed(round(160+CDtextAx),round(90+CDtextAy),CDtextA,CDtextAs,CDtextAs,0) draw_set_color(c_gray)
+if cutsceneDecmode=1 if CDtextflash<=1 draw_set_color(c_white)
+draw_text_transformed(round(160+CDtextBx),round(120+CDtextBy),CDtextB,CDtextBs,CDtextBs,0) draw_set_color(c_gray)
+if cutsceneDecmode=2 if CDtextflash<=1 draw_set_color(c_white)
+draw_text_transformed(round(160+CDtextCx),round(150+CDtextCy),CDtextC,CDtextCs,CDtextCs,0)
+}
+} 
+
+draw_set_halign(fa_left)
 ///Screen FX for intro
 if stageIntro!=0 stageIntro-=0.05 else stageIntro=0
 draw_set_color(c_black) draw_set_alpha(1)
@@ -1312,7 +1470,6 @@ if stageEnd!=0
 draw_rectangle(320-320*stageEnd,-2,320+2,999,false)
 draw_set_color(c_white) draw_set_alpha(1)
 }
-
 }
 
 ///Bottom Screen

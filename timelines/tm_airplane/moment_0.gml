@@ -1,6 +1,8 @@
 /// @description Stage Starting
 spawner_followset("WaveSet1",0,692+160,1)
 
+oControl.stageNext=rm_stage5
+
 ////Skip to Plane
 //spawner_followset("WaveSet1",0,5800,1)
 //oPlayer.x=5000
@@ -19,3 +21,6 @@ enemy_modify(my_pal_sprite,4,"MR. LAR",0,0.24,0.24) en3.enemyIdle1=spr_burglar_i
 bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
 layer_background_visible(bgfog1,0)
 
+fk=instance_create_depth(320-48+16-16-64,176+24+32,-1,oFlashFX) with fk
+{sprite_index=spr_hwolf_escape hspeed=2 alarm[0]=120 animEnd=0 FlashShadow=1
+}

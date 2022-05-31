@@ -20,6 +20,10 @@ function character_release_selfatk(argument0, argument1, argument2, argument3, a
 	Throw=0
 	recovery=10
 	recoveryThrow=10
+	if !place_free(x,y+1) y-=1
+	if !place_free(x,y+2) y-=2
+	if !place_free(x,y-1) y+=1
+	if !place_free(x,y-2) y+=2
 	}
 	selfatk.hitID=-1
 

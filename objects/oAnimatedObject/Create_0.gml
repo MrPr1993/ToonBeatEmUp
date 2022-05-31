@@ -4,7 +4,10 @@ name="AXE"
 enemyPortraitSpr=spr_miscface
 enemyPortraitIndex=0
 
-
+DamageVoice1=snd_metalhit
+DamageVoice2=snd_metalhit
+DamageVoice3=snd_metalhit
+DeathCry=snd_metalhit
 enemyscript=animsetup_enemy
 
 	walkSpeed=0.5

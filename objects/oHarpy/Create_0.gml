@@ -63,6 +63,9 @@ ShockSpr=spr_harpy_elec
 BurnSpr=spr_harpy_burned
 FrozenSpr=spr_harpy_frozen
 
+spritepos_setup(1,24,-2,41)
+spritepos_setup(2,0,27,72)
+spritepos_setup(2,24,27,72)
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

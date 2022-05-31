@@ -8,8 +8,9 @@ function hiscore_setup() {
 	global.P1Score=0
 
 	if !variable_global_exists("HiScoreStage")///Set to check which stage they were on when it's Game Over
-	global.HiScoreStage=1
-
+	{global.HiScoreStage=1
+	global.HiScoreLevel=1
+	}
 	HiInput1="AAA"///Default Input for the Name
 
 	if !variable_global_exists("P1Char")

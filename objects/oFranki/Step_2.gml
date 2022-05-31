@@ -284,3 +284,5 @@ if animFrame>25.75 {anim=15 oPlayer.canmove=1 oPlayer.anim=0}
 
 }
 
+if hp<=0
+x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)

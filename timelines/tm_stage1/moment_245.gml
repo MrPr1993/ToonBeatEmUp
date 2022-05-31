@@ -9,7 +9,6 @@ with en4 enemy_modify(my_pal_sprite,4,"MR. LAR",0,0.24,0.24)
 }
 else
 {
-
 timeline_position-=1
 }
 

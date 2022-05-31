@@ -54,5 +54,7 @@ current_pal=0;
 my_pal_sprite=spr_ninjapal
 //Usagi, Nousagi, Koni
 
-spritepos_setup(2,24,2,64)
-spritepos_setup(1,24,-2,43)
+spritepos_setup(1,24,-1,40)
+
+spritepos_setup(2,0,5,65)
+spritepos_setup(2,24,3,65)

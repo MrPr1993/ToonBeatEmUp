@@ -20,6 +20,10 @@ function character_release(argument0, argument1, argument2, argument3, argument4
 	Throw=0
 	recovery=10
 	recoveryThrow=10
+	if !place_free(x,y+1) y-=1
+	if !place_free(x,y+2) y-=2
+	if !place_free(x,y-1) y+=1
+	if !place_free(x,y-2) y+=2
 	}
 	targetID=-1
 	grabX=0

@@ -23,6 +23,9 @@ audio_stop_sound(snd_pharaoh3)
 	///Attacks
 	if anim=10 ///Attack Pick
 	{
+if distance_to_object(oPlayer)<60
+{anim=choose(14,21) exit;}	
+	
 if y=clamp(y,targetEnemy.y-10,targetEnemy.y+10)
 and (x=clamp(x,targetEnemy.x-160,targetEnemy.x) or x=clamp(x,targetEnemy.x,targetEnemy.x+160))
 if distance_to_object(targetEnemy)<60 
@@ -139,8 +142,8 @@ selfatk.NoKnock=1 dizzyAtk=0 damage=0.01
 sprite_index=spr_pharaoh_kick selfatk.recovery=4
 	//atkAddX=-32 selfatk.image_xscale=3 selfatk.image_yscale=1.5
 	 
-		frame_set(0,0,0.1) if animFrame=1 {PlaySound(snd_swing2)}
-	frame_set(1,1,0.2)
+		frame_set(0,0,0.1) if animFrame=1 {PlaySound(snd_swing2) sentflying=4}
+	frame_set(1,1,0.2) if animFrame=2 sentflying=0
 	frame_set(2,2,0.25)
 	frame_set(3,0,0.25)
 	frame_set(4,3,0.2)//-
@@ -226,11 +229,8 @@ frame_set(2,2,0.5)	if animFrame=3 {oControl.quakeFX=5
  atk=0
 frame_set(3,2,0.5)
 frame_set(4,2,0.1)
-frame_set(5,1,0.25)
-frame_set(6,0,0.25)
-
-	image_index=animFrame
-
+frame_set(5,2,0.25)
+frame_set(6,1,0.25)
 	
 	if animFrame>6.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
@@ -239,84 +239,62 @@ frame_set(6,0,0.25)
 	///Intro
 if anim=100
 {canbeGrabbed=0 recovery=10
- 
- isDepth=0 depth=888
-
-if animFrame=0
-{animFrame=0.01 sprite_index=spr_pharaoh_intro
-	coff1=instance_create_depth(x,y,0,oFlashFX) coff1.image_xscale=image_xscale with coff1
-	{image_speed=0 sprite_index=spr_coffincrusher image_index=0 isDepth=0 animEnd=0 depth=depth+1000 alarm[0]=-1}
-	coff2=instance_create_depth(x,y,0,oFlashFX) coff2.image_xscale=image_xscale with coff2
-	{image_speed=0 sprite_index=spr_coffincrusher image_index=1 isDepth=0 animEnd=0 depth=depth+887 alarm[0]=-1}	
-	
-	}
-
-
-
-if animLock=0
-frame_set(0,3,0.01) if animFrame=1 {PlaySound(snd_hit) special4=0 coff2.x+=1}
-
-
-frame_set(1,3,0.5) if animFrame=2 { coff2.x-=1}
-frame_set(2,3,0.5) if animFrame=3 { coff2.x+=1}
-frame_set(3,3,0.5) if animFrame=4 { coff2.x-=1}
-frame_set(4,3,0.5) if animFrame=5 { coff2.x+=1  if special4!=8 {special4+=1 animFrame=4}}
-frame_set(5,3,0.1) if animFrame=6.5 {}
-frame_set(6,3,0.01) if animFrame=7 {coff2.hspeed=1*image_xscale coff2.vspeed=-0.5
-
-
-	}
-	
-	
-	if animFrame=7.5
-	{PlaySound(snd_pharaoh7)
-
-	}
-	
-
-		
-		
-		if animFrame=9.7
-		
-		
-if animFrame<2 visible=0 else visible=1
-
-frame_set(7,3,0.025) if animFrame=8 {coff2.hspeed=0 coff2.vspeed=-0 coff2.depth=depth+400}
-frame_set(8,3,0.01)
-	frame_set(9,0,0.01) if animFrame=clamp(animFrame,9,9.5) {animFrame=9.6}
-	frame_set(10,1,0.1)
-	if animFrame=11
-		{//PlaySound(snd_thunder) PlaySound(snd_hitground)
-	oControl.quakeFXTime=8 sprite_index=spr_pharaoh_drop PlaySound(snd_pharaoh12)
-	elec=instance_create_depth(x,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z PlaySound(snd_thunder)
-		}
-
-	frame_set(11,2,0.5) 
-	frame_set(12,3,0.25)
-	frame_set(13,4,0.25)
-	frame_set(14,3,0.25) 
-	frame_set(15,4,0.25)
-	frame_set(16,3,0.25)
-	frame_set(17,4,0.25)
-	frame_set(18,3,0.25)
-	frame_set(19,4,0.25)
-	frame_set(20,3,0.25)
-	frame_set(21,4,0.25)
-	frame_set(22,3,0.25)
-	frame_set(23,4,0.25)
-	frame_set(24,3,0.25)
-	frame_set(25,4,0.25)
-	frame_set(26,3,0.25)
-	frame_set(27,4,0.25)
-	frame_set(28,3,0.25)
-	frame_set(29,4,0.25)
-	frame_set(30,3,0.25)
-	frame_set(31,4,0.25)
-	frame_set(32,3,0.25) if animFrame=33 {isDepth=1 coff1.zSpeed=-16 coff2.zSpeed=-16}
-	frame_set(33,4,0.05)
-	frame_set(34,0,0.25)
-	frame_set(35,0,0.25)
-	frame_set(36,0,0.25)
+ if animFrame=0 {visible=0 sprite_index=spr_pharaoh_rise z=-240
+	pillar=instance_create_depth(x,y-2,-1,oFlashFX) with pillar
+	{sprite_index=spr_pharaoh_teleport animEnd=0 alarm[0]=0 loopimg=2 image_speed=0.5 z=-16}
+	pillar2=instance_create_depth(x,y-2,-1,oFlashFX) with pillar2
+	{sprite_index=spr_pharaoh_teleport animEnd=0 alarm[0]=0 loopimg=2 image_speed=0.5 z=-16 image_yscale=-32}
+	PlaySound(snd_thunder) oControl.quakeFX=10
+	}zSpeed=0
+frame_set(0,0,0.1)
+frame_set(1,0,0.1) 
+frame_set(2,0,0.1) if animFrame>4 and animFrame<8{z+=0.5}
+frame_set(3,0,0.1) if animFrame=4 {visible=1 PlaySound(snd_pharaoh11)}
+frame_set(4,0,0.01)
+frame_set(5,0,0.01)
+frame_set(6,0,0.01)
+frame_set(7,0,0.01) if animFrame=8 {PlaySound(snd_pharaoh13)
+	flashFX(x+16*image_xscale,y+2,-80+8-2-50,spr_smokeend,0,0.25,0,1,1,c_white,1)
+	fx.hspeed=0.5*image_xscale fx.zSpeed=-0.5
+}
+frame_set(8,1,0.01)
+frame_set(9,2,0.01) if animFrame=10 {
+	pillar.sprite_index=spr_pharaoh_teleport2 pillar.image_index=0 pillar.animEnd=1
+	pillar2.sprite_index=spr_pharaoh_teleport2 pillar2.image_index=0 pillar2.animEnd=1
+	animFrame=0.1 specialcheck0=0 anim=21}
 
 if animFrame>36.9 {oControl.TextDialogue="" canbeGrabbed=1 recovery=0 anim=0 canmove=1 alarm[1]=30}
 }
+
+///Prepare To Jump
+if anim=21
+{if animFrame=0 specialcheck0=4
+if x<__view_get( e__VW.XView, 0 ) image_xscale=1
+if x>__view_get( e__VW.XView, 0 )+320 image_xscale=-1
+
+sprite_index=spr_pharaoh_jump
+image_index=0
+
+image_speed=0 atk=0
+if animFrame=clamp(animFrame,0,1)
+animFrame+=0.05 else animFrame+=0.05 if animFrame>0.1 {PlaySound(snd_pharaoh2) anim=666}
+}
+
+///Jump
+if anim=666
+{
+if animFrame<0.5 {animFrame=1 ground=0 z-=2 zSpeed=-8 }
+sprite_index=spr_pharaoh_jump
+image_index=1
+
+
+if image_xscale=1 if x>__view_get( e__VW.XView, 0 )+32 x-=specialcheck0
+if image_xscale=-1 if x<__view_get( e__VW.XView, 0 )+320-32 x+=specialcheck0
+
+
+
+if ground {animFrame=4 anim=12}
+}
+
+if hp<=0
+x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)

@@ -75,7 +75,7 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 	if instance_exists(oEnemy1) with oEnemy1 if dead=0 {hp=0 DeathCryOnce=1 HitType=1 event_user(0)
 	}
 	isBossCheck=1 if !ground spdZ=-8 room_speed=10 
-	oControl.alarm[9]=30
+	oControl.alarm[9]=30 with oControl timer_set(0)
 	}
 	}
 	}

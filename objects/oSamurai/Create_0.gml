@@ -52,3 +52,8 @@ FrozenSpr=spr_samurai_frozen
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal
+
+spritepos_setup(1,24,-1,40)
+
+spritepos_setup(2,0,5,65)
+spritepos_setup(2,24,3,65)
