@@ -414,6 +414,9 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 
 	if sprite_index=spr_bahati_attackair2
 	{ weaponBack=1 MoveType=4 sentflying=lerp(sentflying,0,0.1) zSpeed+=0.1
+
+		if !ground and zSpeed>=0.1 {wobbleX=lerp(wobbleX,0.8,0.1) wobbleY=lerp(wobbleY,1.2,0.1)}
+		
 	if image_index<5
 	weaponanim(weaponspr,weaponIndex,25,-35,90*image_xscale,weaponcolor)
 	else
@@ -471,7 +474,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	 {
 	 if sprite_index=spr_bahati_attackair2
 	if animFrame<5.9
-	{animFrame=6 PlaySoundNoStack(snd_hitgroundheavy) oControl.quakeFXTime=5
+	{animFrame=6 PlaySoundNoStack(snd_hitgroundheavy) oControl.quakeFXTime=5 wobbleX=1.25 wobbleY=0.7
 	FX=instance_create_depth(x,y,depth,oAnimFX) FX.sprite_index=spr_hitground}
  
 	 if sprite_index=spr_bahati_attackair2
@@ -481,7 +484,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	 if animFrame>7.5 {hurt=1 canmove=0 animFrame=0 anim=25}
 	 }
 	 else
-	 {hurt=1 canmove=0 animFrame=0 anim=25}
+	 {hurt=1 canmove=0 animFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
 	 }
 	}
 
@@ -1078,7 +1081,9 @@ if targetID!=-1
 
 	///Prepare To Jump
 	if anim=21 or anim=22
-	{hit=0 MoveType=0 canmove=0  weaponBack=1
+	{
+			if anim=22 if animFrame=0 {wobbleX=1.1 wobbleY=0.9}
+	hit=0 MoveType=0 canmove=0  weaponBack=1
 	weaponanim(weaponspr,weaponIndex,9,-31,90*image_xscale,weaponcolor)
 
 	if carry=0
@@ -1168,7 +1173,7 @@ if targetID!=-1
 	frame_set(3,1,0.5)
 	frame_set(4,1,0.0)
 
-	if animFrame>2 and ground=1 {canmove=0 animFrame=0 anim=25}
+	if animFrame>2 and ground=1 {wobbleX=1.25 wobbleY=0.7 canmove=0 animFrame=0 anim=25}
 	}
 
 	///Grab Jump

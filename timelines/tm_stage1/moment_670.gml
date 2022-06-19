@@ -11,6 +11,7 @@ oPlayer.areaEntry=1
 
 with oPlayer
 {key_right=0 doubledash=0 dashing=0
+
 }
 
 with oControl MusicFade=1

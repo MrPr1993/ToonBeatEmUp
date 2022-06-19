@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_miscface","path":"sprites/spr_miscface/spr_miscface.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "spr_miscface",
     "tags": [],
     "resourceType": "GMSequence",
   },

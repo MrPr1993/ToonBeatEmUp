@@ -54,6 +54,8 @@ function character_setup() {
 	trainz=0
 	zSpeed=0
 	ground=1
+	fallMul=1
+	jumpMul=1
 	noHitFall=0
 	hover=0
 	hoverZ=0
@@ -303,7 +305,7 @@ function character_setup() {
 	selfatk=instance_create_depth(x,y,0,oSelfAtk)
 	selfatk.x=x selfatk.y=y selfatk.isPlayer=1
 	selfatk.hitSource=id selfatk.selfsource=id
-    hitSource=0
+    hitSource=-1
 	range=12
 	rangeX=8
 	rangeY=1
@@ -451,7 +453,11 @@ function character_setup() {
 	waterhoverSpr=spr_waterhover
 	waterMax=0;
 	waterSplash=0;
-
+	
+	wobbleFX=0
+	wobbleX=1
+    wobbleY=1
+	
 chardraw=draw_enemy;
 
 }

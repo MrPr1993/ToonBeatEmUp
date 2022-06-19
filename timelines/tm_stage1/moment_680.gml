@@ -9,6 +9,9 @@ oEnemySpawner.roomMove=0 //3488
 
 //oControl.TextDialogue="STILL FOLLOWING US?"
 PlaySound(snd_hwolf6)
+fk=instance_create_depth(boss.x,boss.y,-1,oFlashFX) with fk
+{sprite_index=spr_hwolf_angry image_speed=0.1 image_xscale=-1 animEnd=0 FlashShadow=1 alarm[0]=99999}
+boss.y+=9999
 }
 else
 {oEnemySpawner.canFollow=0
@@ -33,6 +36,7 @@ with oPlayer
 {
 doubledash=0
 dashing=0
+canmove=0 animFrame=0 anim=305
 }
 
 oPlayer.y=208

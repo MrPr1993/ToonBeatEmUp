@@ -13,9 +13,8 @@ and !instance_exists(enA)
 and !instance_exists(enB)
 {spawner_followset("WaveSet1",1744,1744,1) oControl.camMove=1
 with fakeenS {timer=0 x=__view_get( e__VW.XView, 0 )+320+16 hspeed=-4 isDepth=0 sprite_index=spr_shadow}
-with fakeen {x=__view_get( e__VW.XView, 0 )+320+16 hspeed=-4 visible=1 sprite_index=spr_hwolf_move isDepth=1 image_xscale=-1}
+with fakeen {x=__view_get( e__VW.XView, 0 )+320+16 alarm[0]=0 hspeed=-4 visible=1 sprite_index=spr_hwolf_move isDepth=1 image_xscale=-1}
 PlaySound(snd_hwolf8) timer_set(0)
-
 
 }
 else

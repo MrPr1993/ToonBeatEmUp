@@ -5,8 +5,10 @@ and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and 
 {
 if oPlayer.dead=0
 {
-if time!=0 {time-=1 alarm[0]=120}
+if time!=0 {time-=1 alarm[0]=timeclick}
 else
+if timedead=1
+{
 with oPlayer
 {
 if hurt=0
@@ -14,6 +16,11 @@ if hurt=0
 hp=0 canmove=0 hurt=1 HitType=1
 event_user(0)
 }
+}
+}
+else
+{
+if specialTimer!=-1 with specialTimer event_user(9)
 }
 }
 }

@@ -53,6 +53,10 @@ if level=26 roomGo=rm_stage2c
 
 if level=30 roomGo=rm_stagemermaid
 if level=31 roomGo=rm_stageswamp
+if level=32 roomGo=rm_stageswamp
+if level=33 roomGo=rm_stagebeach
+
+if level=45 roomGo=rm_cargame
 
 if level=51 roomGo=rm_cutscene1
 

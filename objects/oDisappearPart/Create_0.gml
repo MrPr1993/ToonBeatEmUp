@@ -10,6 +10,8 @@ SpriteSpd=0
 
 z=0
 
+zAdd=0
+
 bounce=1
 
 spdZ=choose(-8,-6,-4,-2)

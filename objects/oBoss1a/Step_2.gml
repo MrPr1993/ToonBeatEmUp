@@ -93,13 +93,18 @@ image_speed=0 atk=0
 		///Far Away Attack
 	if anim=101
 	{
-	if sprite_index=spr_hwolf_move
-	image_index+=0.25
-	else
-	{
+	{sprite_index=spr_hwolf_angry image_speed=0.25
 	frame_set(0,11,0.25)
 	frame_set(1,14,0.25)
 	frame_set(2,10,0.25)
-	frame_set(3,24,0)
+	frame_set(3,24,0.01)
+	frame_set(4,24,0.01)
+	frame_set(5,24,0.01)
+	if animFrame>5.5 {		
+	fk=instance_create_depth(x,y,-1,oFlashFX) with fk
+	{hspeed=4 sprite_index=spr_hwolf_move image_speed=0.5 animEnd=0 alarm[0]=400 FlashShadow=1}
+	
+	y=9999 hspeed=4
+	}
 	}
 	}

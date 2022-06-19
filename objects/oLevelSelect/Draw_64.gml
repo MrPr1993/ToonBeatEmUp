@@ -78,11 +78,11 @@ draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=30 draw_set_color(c_yellow) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("MERMAID STAGE"));
 if level=31 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("SWAMP STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGe 4-A, SWAMP STAGE"));
 if level=32 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGe 4-B, CARNIVAL STAGE"));
 if level=33 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGe 4-C, BEACH STAGE"));
 if level=34 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=35 draw_set_color(c_yellow) else draw_set_color(c_gray)
@@ -109,7 +109,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=44 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=45 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CAR GAME"));
 if level=46 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=47 draw_set_color(c_yellow) else draw_set_color(c_gray)

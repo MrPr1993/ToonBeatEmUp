@@ -1,6 +1,6 @@
 item_setup()
 
-name="TOMMY GUN"
+name="HAND GUN"
 
 itemCentered=1
 hp=0

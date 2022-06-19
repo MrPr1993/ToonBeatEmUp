@@ -1,6 +1,8 @@
 function character_physics() {
 	if act=1
 	{
+	
+
 
 		
 	totalSpeed=abs(walkSpeed)*1+abs(dashing)*1+abs(sentflying)
@@ -99,7 +101,7 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 	z+=zSpeed
 	if !ground 
 	{
-	if zSpeed<4 zSpeed+=0.4
+	if zSpeed<4 zSpeed+=0.4*fallMul
 	if z>0 {
 	
 		
@@ -123,6 +125,6 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 	if hurt=1 atk=0
 	}
 
-
+fallMul=1
 
 }

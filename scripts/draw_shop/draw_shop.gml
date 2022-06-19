@@ -5,18 +5,103 @@ if room=rm_shop
 {fpsX=320 fpsY=8
 controller_setup()
 
+///Buy Item
+if shopBuy!=-1
+{
+if -key_left_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
+if key_right_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
+
+if key_attack or key_jump or key_shield_pressed or key_super
+if shopBuy=0 {shopBuy=-1 shopDialogueTime=2 shopDialogueAlt=5}
+else {shopDialogueAlt=4 shopDialogueTime=120 shopBuy=-1
+	
+	global.Gold-=shopPrice gold_save()
+	
+	if  shopSelect=1
+	global.UnlockCharacterData=1
+	if  shopSelect=2
+	global.UnlockAltPal=1
+	 unlock_save()
+	}/// BUY ITEM
+}
+
+if betatest=1
+{if keyboard_check_pressed(vk_backspace)
+	if keyboard_check(vk_shift)
+	shopreset()
+	else
+		global.Gold=get_string("Set Money",global.Gold)
+	
+	}
+
 if shopSet=0 shopName=""
 
 shopName=""
 shopDesc=""
 shopCost=""
+shopSelect=-1
 
+//////
 if shopSet=0 and shopselY=0 and shopselX=0
-{
+{shopPrice=3000
 shopName="CHARACTER PROFILE"
-shopCost="COST:6000"
+shopCost="COST:3000"
 shopDesc="CHECK THEIR INFO! \nBUT TO GET THE\nENEMY DATA YOU\nGOTTA BEAT EM' UP!"
+if global.UnlockCharacterData=0 shopSelect=1 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
+if shopSet=0 and shopselY=0 and shopselX=1
+{shopPrice=4000
+shopName="PALETTE SWAP"
+shopCost="COST:4000"
+shopDesc="BORING OF YOUR\nCLOTHING COLOR?\nYOU CAN CHANGE IT\nWITH THIS!"
+if global.UnlockAltPal=0 shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
+}
+
+
+
+if shopDialogueAlt!=0
+{
+if shopDialogueAlt=1
+{shopDesc="     WELCOME!" shopName="" shopCost=""}
+if shopDialogueAlt=2
+{shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE." shopAltFace=3 shopName="" shopCost=""}
+if shopDialogueAlt=3
+{shopDesc="  WANT THAT ONE?" shopAltFace=-1}
+shopDialogueTime-=1 if shopDialogueTime=0 {shopDialogueAlt=0 shopAltFace=-1}
+if shopDialogueAlt=4
+{shopDesc="    THANK YOU!" shopName="" shopCost="" shopAltFace=5}
+if shopDialogueAlt=5 {}
+if shopDialogueAlt=6
+{shopDesc="OH YOU BOUGHT\nTHAT ONE ALREADY." shopAltFace=3 shopName="" shopCost=""}
+if shopDialogueAlt=7
+{shopDesc="SORRY,YOU DON'T\nHAVE ENOUGH CASH." shopAltFace=3 shopName="" shopCost=""}
+}
+else
+{
+if key_attack or key_jump or key_shield_pressed or key_super
+if shopSelect=-1 or shopSelect=-2
+{
+shopDialogueTime=120 shopDialogueAlt=2 
+if shopSelect=-2 shopDialogueAlt=6
+}
+else
+{
+if shopBuy=-1
+{
+if global.Gold>=shopPrice
+{
+PlaySound(snd_picked)
+shopDialogueAlt=3 shopDialogueTime=-1
+shopBuy=1
+}
+else {shopDialogueTime=120 shopDialogueAlt=7}
+}
+
+}
+
+}
+
+
 
 shopFrame0b=0
 shopFrame0+=0.1 if shopFrame0>8 shopFrame0=0
@@ -25,13 +110,16 @@ if shopFrame0=clamp(shopFrame0,2,8)
 if shopFrame0=clamp(shopFrame0,4,6) shopFrame0b=2
 }
 
+if shopAltFace=-1
+{
 shopFrame1b=0
 shopFrame1+=0.01 if shopFrame1>6 shopFrame1=0
 if shopFrame1=clamp(shopFrame1,3-0.1,3+0.1)
 {shopFrame1b=1
 if shopFrame1=clamp(shopFrame1,3-0.05,3+0.05) shopFrame1b=2
-}
-	
+}}
+else shopFrame1b=shopAltFace
+
 draw_sprite(spr_shopgirl,shopFrame0b,160,0)
 draw_sprite(spr_shopgirl_face,shopFrame1b,160+48,57+round(shopFrame0b))
 
@@ -44,30 +132,29 @@ draw_text(80,4,"SHOP")
 draw_set_halign(fa_left)
 draw_text(80,12,"")
 
-if shopSet=0
+if shopSet=0 /////Shop Items
 {
 ///Set 1
-draw_sprite(spr_shopitem,1,2+2,16)
-draw_sprite(spr_shopitem,2,2+4+32,16)
-draw_sprite(spr_shopitem,2,2+6+64,16)
-draw_sprite(spr_shopitem,2,2+8+64+32,16)
+if 	global.UnlockCharacterData=0 shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,1,2+2,16) shader_reset() if 	global.UnlockAltPal=0 shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,2,2+4+32,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+6+64,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+8+64+32,16) shader_reset() shader_set(shd_grayscale)
 ///Set 2
-draw_sprite(spr_shopitem,2,2+2,16+2+32)
-draw_sprite(spr_shopitem,2,2+4+32,16+2+32)
-draw_sprite(spr_shopitem,2,2+6+64,16+2+32)
-draw_sprite(spr_shopitem,2,2+8+64+32,16+2+32)
+draw_sprite(spr_shopitem,0,2+2,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+4+32,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+6+64,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+8+64+32,16+2+32) shader_reset() shader_set(shd_grayscale)
 ///Set 3
-draw_sprite(spr_shopitem,2,2+2,16+4+64)
-draw_sprite(spr_shopitem,2,2+4+32,16+4+64)
-draw_sprite(spr_shopitem,2,2+6+64,16+4+64)
-draw_sprite(spr_shopitem,2,2+8+64+32,16+4+64)
+draw_sprite(spr_shopitem,0,2+2,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+4+32,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+6+64,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+8+64+32,16+4+64) shader_reset() shader_set(shd_grayscale)
 ///Set 4
-draw_sprite(spr_shopitem,2,2+2,16+6+96)
-draw_sprite(spr_shopitem,2,2+4+32,16+6+96)
-draw_sprite(spr_shopitem,2,2+6+64,16+6+96)
-draw_sprite(spr_shopitem,2,2+8+64+32,16+6+96)
-
-
+draw_sprite(spr_shopitem,0,2+2,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+4+32,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+6+64,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,0,2+8+64+32,16+6+96) shader_reset()
 }
 
 draw_sprite(spr_shoppad,2,140,15)
@@ -75,9 +162,10 @@ draw_sprite(spr_shoppad,3,140,15+43+3)
 draw_sprite(spr_shoppad,4,140,15+86+6)
 
 ///Cursor
+if shopBuy=-1
+{
 if -key_left_pressed {if shopselX=0 shopselX=4 else shopselX-=1 PlaySound(snd_select)}
 if key_right_pressed {if shopselX=4 shopselX=0 else shopselX+=1 PlaySound(snd_select)}
-
 if shopselX!=4
 {
 if key_up_pressed 
@@ -98,11 +186,15 @@ else
 {
 if key_up_pressed {if shopSet=0 shopSet=2 else shopSet-=1 PlaySound(snd_select)}
 if -key_down_pressed {if shopSet=2 shopSet=0 else shopSet+=1 PlaySound(snd_select)}
-}
+}}
 
 if shopselX!=4
-draw_sprite(spr_shopitem,0,2+2+(2*shopselX)+(32*shopselX),16+(2*shopselY)+(32*shopselY))
-
+{
+if shopBuy=-1
+draw_sprite(spr_shopitemcursor,0,2+2+(2*shopselX)+(32*shopselX),16+(2*shopselY)+(32*shopselY))
+else
+draw_sprite(spr_shopitemcursor,1,2+2+(2*shopselX)+(32*shopselX),16+(2*shopselY)+(32*shopselY))
+}
 if shopselX=4
 {
 shader_set(shd_white_sprite)
@@ -130,9 +222,20 @@ draw_rectangle(320-10-96,240-16-1,320-10,240-16+8,false)
 
 draw_set_halign(fa_center) draw_set_color(c_white)
 draw_text(80,180+4-24,shopName)
-draw_text(80,180+4-16,shopCost)
+if shopCost="SOLD OUT!" or global.Gold<shopPrice draw_set_color(c_red)
+draw_text(80,180+4-16,shopCost) draw_set_color(c_white)
 draw_set_halign(fa_left)
+
 draw_text(8,180+4+10-8,shopDesc)
+if shopBuy!=-1
+{
+draw_text(8,180+4+10,"     NO    YES")
+if shopBuy=0
+draw_text(8,180+4+10,"       ✰     ")
+else
+draw_text(8,180+4+10,"              ✰")
+}
+
 draw_set_halign(fa_right) 
 draw_text(320-10,240-16,string(global.Gold)+string("$"))
 draw_set_halign(fa_left)

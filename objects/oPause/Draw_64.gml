@@ -27,6 +27,7 @@ surface_resize(new_surf,320,240)
 
 surface_set_target(new_surf);
 draw_clear_alpha(c_black, 0.0);
+if global.MonochromeFX=1 shader_set(shd_grayscale)
 draw_surface(application_surface, 0, 0);
 	}
 

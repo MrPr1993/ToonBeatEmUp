@@ -8,12 +8,17 @@ if recovery=0
 {
 hp-=other.thrownAtkDmg/(defense+extradefense)
 
+if !instance_exists(hitSource) hitSource=-1
+
+if hitSource!=-1
+{
 if isEnemy=1
 {
 if hp<=0
 with other hitSource.PlayerScore+=points
 else
 with other hitSource.PlayerScore+=pointshit
+}
 }
 
 shaketime=30

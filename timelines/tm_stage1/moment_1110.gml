@@ -21,9 +21,9 @@ alarm[0]=180
 }
 
 oControl.camMove=1
-
+with fk instance_destroy()
 with oBoss1
-{
+{y-=9999
 offScreenMode=1
 animLock=0
 }

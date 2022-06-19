@@ -268,7 +268,7 @@ weaponanim(weaponspr,weaponIndex,-17,-46,144*image_xscale,weaponcolor)
 
 	damage=0.02 targetHeight=2
 	if comboHit!=0 and animFrame>1.7
-	{if key_shield_pressed event_user(4)
+	{if key_shield_pressed event_user(4)////<---Here to use special instantly
 	if key_attack {PlaySound(snd_swing) PlaySound(snd_hina3) comboHit=0 animFrame=0 anim=12 atk=1}}
 	  hit=0 MoveType=0
 	selfatk.recovery=10
@@ -292,7 +292,7 @@ weaponanim(weaponspr,weaponIndex,-17,-46,144*image_xscale,weaponcolor)
 
 	damage=0.02 targetHeight=0
 	if comboHit!=0 and animFrame>1.7
-	{if key_shield_pressed event_user(4)
+	{if key_shield_pressed event_user(4)////<---Here to use special instantly
 	if key_attack {PlaySound(snd_swing) PlaySound(snd_hina3) comboHit=0 animFrame=0 anim=13 atk=1}}
 	hit=0 MoveType=0
 	selfatk.recovery=10
@@ -317,7 +317,7 @@ weaponanim(weaponspr,weaponIndex,-17,-46,144*image_xscale,weaponcolor)
 
 	damage=0.04 targetHeight=1
 	if comboHit!=0 and animFrame>1.7
-	{if key_shield_pressed event_user(4)
+	{if key_shield_pressed {event_user(4)}////<---Here to use special instantly
 	if key_attack {PlaySound(snd_swing) PlaySound(snd_hina5) comboHit=0 animFrame=0 anim=14 atk=1}}
 	hit=0 MoveType=0
 	selfatk.recovery=10
@@ -420,7 +420,7 @@ selfatk.recovery=30
 weaponanim(weaponspr,weaponIndex,32,-70,90*image_xscale,weaponcolor)
 }
  
-	 if ground {hurt=1 canmove=0 animFrame=0 anim=25}
+	 if ground {hurt=1 canmove=0 animFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
 	}
 
 	if anim=16 ///Attack Dash
@@ -430,10 +430,13 @@ weaponanim(weaponspr,weaponIndex,32,-70,90*image_xscale,weaponcolor)
 	weaponanim(weaponspr,weaponIndex,111111,-34,76*image_xscale,weaponcolor)
 
 	weaponAttack=0
-	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_hina4)}
+	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_hina4)  }
 	atkcol_set(90,0,48,3.55,1,46)
+	if animFrame<1 {wobbleX=lerp(wobbleX,0.8,0.1) wobbleY=lerp(wobbleY,1.2,0.1)}
+	if animFrame=2 {wobbleX=1.1 wobbleY=0.9}
+	
 	if animFrame<3
-	sentflying=2*image_xscale else sentflying=0
+	{sentflying=2*image_xscale} else sentflying=0
 	comboBreak=1
 	flashX=12
 	flashY=2
@@ -555,14 +558,19 @@ if specialcheck5=1
 	frame_set(5,5,0.25)
  
 
-	if animFrame>5.5 
-	{hurt=0 atk=0 canmove=1 hit=0
+	if animFrame>5.5
+	{atk=0 canmove=1 hit=0
 	  if powcheck=0 hp-=powhp else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
 	}
 
+if animFrame>5.5 animFrame+=0.25
 
-
+	if animFrame>6.5
+	{atk=0 canmove=1 hit=0
+	  if powcheck=0 hp-=powhp else {pow=0 powlock=0}
+	  if hp<0.01 hp=0.01
+	}
 	}
 
 
@@ -959,7 +967,9 @@ if targetID!=-1
 
 	///Prepare To Jump
 	if anim=21 or anim=22
-	{hit=0 MoveType=0 canmove=0  weaponBack=1
+	{
+	if anim=22 if animFrame=0 {wobbleX=1.1 wobbleY=0.9}
+	hit=0 MoveType=0 canmove=0  weaponBack=1
 	weaponanim(weaponspr,weaponIndex,9,-31,90*image_xscale,weaponcolor)
 
 	if carry=0

@@ -29,6 +29,8 @@ if menuSelect=3 //6
 if global.CRTfx=0
 global.CRTfx=6 else global.CRTfx-=1
 TVfx=global.CRTfx
+if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0
+
 if instance_exists(oControl) oControl.TVfx=TVfx
 if instance_exists(oPause) oPause.TVfx=TVfx
 }
@@ -54,6 +56,7 @@ if menuSelect=3 //6
 {
 if global.CRTfx=6
 global.CRTfx=0 else global.CRTfx+=1
+if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0
 TVfx=global.CRTfx
 if instance_exists(oControl) oControl.TVfx=TVfx
 if instance_exists(oPause) oPause.TVfx=TVfx

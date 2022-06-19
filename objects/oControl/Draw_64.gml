@@ -44,7 +44,8 @@ surface_resize(new_surf,320,240)
 
 surface_set_target(new_surf);
 draw_clear_alpha(c_black, 0.0);
-//shader_set(shd_grayscale)
+if global.MonochromeFX=1
+shader_set(shd_grayscale)
 draw_surface(application_surface, 0, 0);
 //shader_reset()
 	}
@@ -354,8 +355,11 @@ draw_text(23*characterSelect+2,2,string_hash_to_newline(characterTimer))
 if continueFlash<1
 draw_sprite_ext(spr_playerface,4,23*characterSelect,0,1,1,0,c_white,1)
 
-if oPlayer.key_up_pressed if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1
-if -oPlayer.key_down_pressed if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1
+if global.UnlockAltPal=1
+{
+if oPlayer.key_up_pressed {if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1 PlaySound(snd_steal)}
+if -oPlayer.key_down_pressed {if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
+}
 
 if -oPlayer.key_left_pressed if characterSelect=0 characterSelect=3
 else characterSelect-=1
@@ -385,6 +389,7 @@ keyGet1=string(keyNoCheck)
 keyGet2=string(keyNoCheck)
 keyGet3=string(keyNoCheck)
 }
+if hiScoreInputNum!=5
 hiScoreInputNum+=1
 }
 
@@ -533,28 +538,44 @@ if stageClear=1
 stageClearIndex+=0.5
 
 if stageClearY<120 stageClearY+=16
-
-draw_sprite_ext(spr_stageclear,stageClearIndex,160,stageClearY,1,1,0,c_white,1)///Game Over Text
+draw_sprite_ext(stageCspr,stageClearIndex,160,stageClearY,1,1,0,c_white,1)///Game Over Text
 draw_set_alpha(1) draw_set_color(c_white)
 if stageScore=1
 {alarm[0]=0 
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
 draw_set_halign(fa_right)
-draw_text(160-8,160,string_hash_to_newline(string(stageBoss)))
-draw_text(160-8,160+16,string_hash_to_newline("VITALITY"))
-draw_text(160-8,160+32,string_hash_to_newline("TIME"))
+draw_text(160-8,160,string_hash_to_newline(string(resulttext1)))
+draw_text(160-8,160+16,string_hash_to_newline(string(resulttext2)))
+draw_text(160-8,160+32,string_hash_to_newline(string(resulttext3)))
+
 
 draw_set_halign(fa_left)
+if AltScore1=0
 draw_text(160+8,160,string_hash_to_newline(bossScore))
+else draw_text(160+8,160,string_hash_to_newline(altresult1))
+if AltScore2=0
 draw_text(160+8,160+16,string_hash_to_newline(round(oPlayer.hp*20000)))
+else
+draw_text(160+8,160+16,string_hash_to_newline(altresult2))
+if AltScore3=0
 draw_text(160+8,160+32,string_hash_to_newline(round(time*200)))
+else
+draw_text(160+8,160+32,string_hash_to_newline(altresult3))
 
 if scoreClearSet=0
-{scoreClearSet=1 alarm[7]=120
-alarm[8]=240///Stage change time
-oPlayer.PlayerScore+=round(oPlayer.hp*20000)+round(time*200)+bossScore
+{scoreClearSet=1 alarm[7]=120+stageClearDelay
+alarm[8]=240+stageClearDelay///Stage change time
+
+if AltScore1=0 altresult1=bossScore
+if AltScore2=0 altresult2=oPlayer.hp*20000
+if AltScore3=0 altresult3=round(time*200)
+
+oPlayer.PlayerScore+=altresult1+altresult2+altresult3
+
+
 GoldShow=1 GoldGet+=round(oPlayer.PlayerScore/100) global.Gold+=GoldGet
+gold_save()
 global.P1Score=oPlayer.PlayerScore
 global.P1Life=oPlayer.PlayerLife
 
@@ -711,6 +732,7 @@ draw_text(160,184-16-4-24,string_hash_to_newline("ARCADE MODE"))
 draw_text(160,184-8-4-24,string_hash_to_newline("STAGE SELECT"))
 draw_text(160,184-4-24,string_hash_to_newline("SETTINGS"))
 draw_text(160,184+8-4-24,string_hash_to_newline("TRAINING"))
+//global.UnlockShop=1
 draw_text(160,184+16-4-24,string_hash_to_newline("SHOP"))
 if global.UnlockFeats=0 draw_set_color(c_dkgray)
 draw_text(160,184+24-4-24,string_hash_to_newline("FEATS")) draw_set_color(c_white)
@@ -799,9 +821,11 @@ if global.P1Char=3 global.P1Char=0 else
 global.P1Char+=1}
 }
 
+if global.UnlockAltPal=1
+{
 if key_up_pressed if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1 
 if -key_down_pressed if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1 
-
+}
 //current_pal=0;
 //my_pal_sprite=spr_playerpal
 

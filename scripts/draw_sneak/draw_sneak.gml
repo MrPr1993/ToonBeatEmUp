@@ -2,12 +2,12 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_sneak(){
 if image_alpha<1
-draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_angle,c_black,1)
+draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,c_black,1)
 
 if specialFX=1 shader_set(shd_white_sprite)
 if specialFX=0
 pal_swap_set(my_pal_sprite,current_pal,false);
- draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+ draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
 
 pal_swap_reset();
 shader_reset()
@@ -16,11 +16,11 @@ shader_reset()
 if weaponspr!=-1
 {
 if image_alpha<1
-draw_sprite_ext(weaponspr,weaponIndex,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index])*SpritePos)*image_xscale+(shake+weaponX)*image_xscale),round(y+trainz+(floorPosY[image_index]+waistPosY[image_index]+headPosY[image_index])*SpritePos+weaponY+z+extraY),image_xscale,image_yscale,(weaponangle*image_xscale)+weaponExtraAngle*image_xscale,c_black,1)
+draw_sprite_ext(weaponspr,weaponIndex,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index])*SpritePos)*image_xscale+(shake+weaponX*wobbleX)*image_xscale),round(y+trainz+(floorPosY[image_index]+waistPosY[image_index]+headPosY[image_index])*SpritePos+weaponY*wobbleY+z+extraY),image_xscale,image_yscale,(weaponangle*image_xscale)+weaponExtraAngle*image_xscale,c_black,1)
 
 pal_swap_set(weapon_pal_sprite,weapon_pal,false);
 
-draw_sprite_ext(weaponspr,weaponIndex,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index])*SpritePos)*image_xscale+(shake+weaponX)*image_xscale),round(y+trainz+(floorPosY[image_index]+waistPosY[image_index]+headPosY[image_index])*SpritePos+weaponY+z+extraY),image_xscale,image_yscale,(weaponangle*image_xscale)+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
+draw_sprite_ext(weaponspr,weaponIndex,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index])*SpritePos)*image_xscale+(shake+weaponX*wobbleX)*image_xscale),round(y+trainz+(floorPosY[image_index]+waistPosY[image_index]+headPosY[image_index])*SpritePos+weaponY*wobbleY+z+extraY),image_xscale,image_yscale,(weaponangle*image_xscale)+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
 
 pal_swap_reset();
 
@@ -28,14 +28,14 @@ if anim=0 or anim=1 or anim=810
 {
 pal_swap_set(my_pal_sprite,current_pal,false);
 if anim=1
-draw_sprite_ext(spr_sneak_gunstand,3,round(x+(-1+(floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY)+weaponY+39,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+draw_sprite_ext(spr_sneak_gunstand,3,round(x+(-1+(floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY)+weaponY+39,image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
 else
 if anim=810
 {
-draw_sprite_ext(spr_sneak_gunstand,3,round(x+armX*image_xscale),round(y+trainz+armY),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+draw_sprite_ext(spr_sneak_gunstand,3,round(x+armX*(image_xscale*wobbleX)),round(y+trainz+armY*wobbleY),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 }
 else
-draw_sprite_ext(spr_sneak_gunstand,3,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY)+weaponY+39,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+draw_sprite_ext(spr_sneak_gunstand,3,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY)+weaponY+39,image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
 pal_swap_reset();
 }
 }

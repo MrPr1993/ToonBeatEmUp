@@ -33,6 +33,15 @@
     {"compositeImage":{"FrameId":{"name":"43558020-bb37-46ae-94b0-5100fcd9a745","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"43558020-bb37-46ae-94b0-5100fcd9a745","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"LayerId":{"name":"cfe50274-20e1-4ac7-9a63-ea4ad2150b59","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_shopgirl_face","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","name":"43558020-bb37-46ae-94b0-5100fcd9a745","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2ef49a10-bad8-4ae0-8539-cbdde18a01f1","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2ef49a10-bad8-4ae0-8539-cbdde18a01f1","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"LayerId":{"name":"cfe50274-20e1-4ac7-9a63-ea4ad2150b59","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_shopgirl_face","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","name":"2ef49a10-bad8-4ae0-8539-cbdde18a01f1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2fc8add4-e8e5-4ff0-ab09-a05497f87231","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2fc8add4-e8e5-4ff0-ab09-a05497f87231","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"LayerId":{"name":"cfe50274-20e1-4ac7-9a63-ea4ad2150b59","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_shopgirl_face","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","name":"2fc8add4-e8e5-4ff0-ab09-a05497f87231","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cc857e09-6325-4cea-9847-411bda41d0b5","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cc857e09-6325-4cea-9847-411bda41d0b5","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"LayerId":{"name":"cfe50274-20e1-4ac7-9a63-ea4ad2150b59","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_shopgirl_face","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","name":"cc857e09-6325-4cea-9847-411bda41d0b5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_shopgirl_face","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},
@@ -42,7 +51,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 6.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -50,6 +59,9 @@
             {"id":"7b0121b6-fe03-4419-a869-863880de2d5e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a55fa006-c9b0-4085-91e1-0860cf982d89","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"b7f2f27f-5e25-44f0-9943-f706502a88b3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"284f7ee0-d1b5-46bd-a6b3-868ed90c5d4d","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8fda5ce9-14fd-4e58-8050-da0ff6aa645f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43558020-bb37-46ae-94b0-5100fcd9a745","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8ffc026b-beb2-485e-a827-3d3b62b51da9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2ef49a10-bad8-4ae0-8539-cbdde18a01f1","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5c271e61-f2af-4125-a734-a7cee76d9b73","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fc8add4-e8e5-4ff0-ab09-a05497f87231","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f7fb57a6-b630-482a-8f87-6d62e0b450fc","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc857e09-6325-4cea-9847-411bda41d0b5","path":"sprites/spr_shopgirl_face/spr_shopgirl_face.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

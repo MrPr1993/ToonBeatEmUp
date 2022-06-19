@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 31,
-  "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_left": 1,
+  "bbox_right": 30,
+  "bbox_top": 1,
+  "bbox_bottom": 30,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"aabc3e89-6199-46dc-b256-23abbee2cee4","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aabc3e89-6199-46dc-b256-23abbee2cee4","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":{"name":"3ec00119-8020-4854-b266-0409f96c224e","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopitem","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"aabc3e89-6199-46dc-b256-23abbee2cee4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"afc7db27-48a3-4bf7-8067-710ded7cea87","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"afc7db27-48a3-4bf7-8067-710ded7cea87","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":{"name":"3ec00119-8020-4854-b266-0409f96c224e","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopitem","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"afc7db27-48a3-4bf7-8067-710ded7cea87","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"3bce92a8-97c8-4ac1-b1d2-230e0dcfd313","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3bce92a8-97c8-4ac1-b1d2-230e0dcfd313","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":{"name":"3ec00119-8020-4854-b266-0409f96c224e","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_shopitem","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"3bce92a8-97c8-4ac1-b1d2-230e0dcfd313","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"afc7db27-48a3-4bf7-8067-710ded7cea87","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"afc7db27-48a3-4bf7-8067-710ded7cea87","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":{"name":"3ec00119-8020-4854-b266-0409f96c224e","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_shopitem","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"afc7db27-48a3-4bf7-8067-710ded7cea87","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2ec56b8b-4dc4-40cb-8d2a-a21c9ce78292","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2ec56b8b-4dc4-40cb-8d2a-a21c9ce78292","path":"sprites/spr_shopitem/spr_shopitem.yy",},"LayerId":{"name":"3ec00119-8020-4854-b266-0409f96c224e","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_shopitem","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","name":"2ec56b8b-4dc4-40cb-8d2a-a21c9ce78292","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_shopitem","path":"sprites/spr_shopitem/spr_shopitem.yy",},
@@ -47,9 +47,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8be450ff-f487-4eae-a3e1-9b640e84996c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aabc3e89-6199-46dc-b256-23abbee2cee4","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"510c213b-9ab7-43c3-9aef-66f30a931082","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3bce92a8-97c8-4ac1-b1d2-230e0dcfd313","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f34d7a4f-3327-451f-be5c-25f425602e35","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"afc7db27-48a3-4bf7-8067-710ded7cea87","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"510c213b-9ab7-43c3-9aef-66f30a931082","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3bce92a8-97c8-4ac1-b1d2-230e0dcfd313","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9e021c7f-25a5-42fb-bad5-dea56b99ed4c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2ec56b8b-4dc4-40cb-8d2a-a21c9ce78292","path":"sprites/spr_shopitem/spr_shopitem.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

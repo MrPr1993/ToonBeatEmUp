@@ -62,6 +62,8 @@ if hurt=1 and powlock=1 powlock=0
 if powlock=0
 if pow<5 pow+=0.01 else pow=5
 
+pow=0
+
 if takingitem!=0 takingitem-=1 else takingitem=0
 
 if hurt=1 throwcombo=2
@@ -82,6 +84,8 @@ if -key_left
 {//if x>view_xview[0]+16
 if place_free(x-walkSpeed-dashing,y) x-=walkSpeed+dashing if ground image_xscale=-1
 if dashing=2 doubledash=0.2}
+
+if -key_left and key_right {key_left=0  key_right=1}
 
 if key_right
 {//if x<view_xview[0]+320-16
@@ -109,6 +113,8 @@ if key_up_pressed or -key_down_pressed
 if key_up
 {if y>__view_get( e__VW.YView, 0 )+8 if dodge=1 if dodging=1 {dodging=0 dodge=0}
 if place_free(x,y-walkSpeed) y-=walkSpeedY}
+
+if key_up and key_down {key_up=0 key_down=1}
 
 if key_down
 {if y<__view_get( e__VW.YView, 0 )+240-4 if dodge=1 if dodging=-1 {dodging=0 dodge=0}

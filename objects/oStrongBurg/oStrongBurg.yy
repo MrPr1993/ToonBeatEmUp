@@ -5,9 +5,10 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
-    "name": "mask_small",
-    "path": "sprites/mask_small/mask_small.yy",
+    "name": "spr_shadow2",
+    "path": "sprites/spr_shadow2/spr_shadow2.yy",
   },
   "persistent": false,
   "parentObjectId": {
@@ -28,6 +29,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

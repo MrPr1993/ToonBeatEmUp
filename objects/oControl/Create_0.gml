@@ -68,8 +68,8 @@ global.LevelSelectSave=0
 
 global.TrainingRoom=0
 
-global.UnlockCharacterData=0
-global.UnlockFeats=0
+
+global.UnlockFeats=1
 
 global.UnlockStage[20]=0
 
@@ -94,6 +94,7 @@ global.CurrentMusic=-1
 global.MenuSkip=0
 global.IntroSkip=0
 global.CRTfx=1
+global.MonochromeFX=0
 
 global.BGMvolume=100
 global.SFXvolume=100
@@ -113,6 +114,8 @@ global.GoldShow=0 //global.GoldShow=1 Show Gold
 
 global.enemytest=0
 global.enemytestB=0
+
+shopreset()
 }
 
 featicon[99]=0
@@ -133,6 +136,14 @@ shopSet=0
 shopName="LOCKED"
 shopDesc=""
 shopCost=""
+shopDecide=0
+shopBuy=-1
+shopDecidePick=0
+shopDialogueTime=120
+shopDialogueAlt=1
+shopAltFace=-1
+shopSelect=-1
+shopPrice=0
 
 stagePause=0
 isCutscene=0
@@ -233,8 +244,7 @@ global.GlobalBeta=1
 global.GlobalCBeta=1
 global.GlobalTBeta=1
 }
-
-///Turn off Beta Mode
+////Turn off Beta Mode
 //global.CanGlobalBeta=0
 //global.GlobalBeta=0
 noIcon=0
@@ -276,6 +286,8 @@ xGoCheck=0
 ///Time Limit
 time=99//99
 timecheck=-1 ///For the alarm if a cutscene or scene's triggered
+timedead=1
+timeclick=120
 alarm[0]=120
 
 instance_create(-9999,-9999,parEnemy)
@@ -370,11 +382,27 @@ stageClearIndex=0
 stageClearY=-120
 stageBoss="BOSS NAME"
 stageScore=0
+stageCspr=spr_stageclear
 scoreClearSet=0
 bossScore=10000
 bossID=-1
 bossMaxHP=2
+stageclearMusic=1
+stageclearfade=0
+resulttext1="BOSS NAME"
+altresult1=-1
+resulttext2="VITALITY"
+altresult2=-1
+resulttext3="TIME"
+altresult3=-1
+AltScore1=0
+AltScore2=0
+AltScore3=0
+stageClearDelay=0
+stagePose=1
 
+specialTimer=-1
+timeClear=0
 
 if !variable_global_exists("fpsMode") global.fpsMode=0
 fpsX=320
@@ -555,6 +583,8 @@ pressStart=1
 if !variable_global_exists("LOADSET")
 {global.LOADSET=0
 settings_load()
+unlock_load()
+gold_load()
 }
 
 if room=rm_titlescreen global.StageSelect=0
@@ -572,3 +602,13 @@ tutorialTextY=48
 tutorialTextTime=0
 tutorialText="ASDW TO MOVE\nJ TO ATTACK, K/SPACE TO JUMP"
 
+lockedMap[0]=1
+lockedMap[1]=1
+lockedMap[2]=1
+lockedMap[3]=1
+lockedMap[4]=1
+lockedMap[5]=1
+lockedMap[6]=1
+lockedMap[7]=1
+
+if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0

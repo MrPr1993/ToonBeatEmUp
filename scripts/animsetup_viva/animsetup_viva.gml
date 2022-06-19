@@ -428,7 +428,7 @@ weaponanim(weaponspr,weaponIndex,13,-69,90*image_xscale,weaponcolor)
 damage=0.02
 hit=1
 selfatk.recovery=30
-}if ground {hurt=1 canmove=0 animFrame=0 anim=25}
+}if ground {hurt=1 canmove=0 animFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
 
 }
 
@@ -463,7 +463,7 @@ selfatk.recovery=30
 	image_index=animFrame image_speed=0
 	 if animFrame>1 atk=1 else atk=0
 	 animFrame+=0.5 animFrame=clamp(animFrame,0,1.5)
-	 if ground {if image_xscale=1 image_xscale=-1 else image_xscale=1 hurt=1 canmove=0 animFrame=0 anim=25}
+	 if ground {wobbleX=1.1 wobbleY=0.9 if image_xscale=1 image_xscale=-1 else image_xscale=1 hurt=1 canmove=0 animFrame=0 anim=25}
 	}
 
 
@@ -932,6 +932,7 @@ selfatk.recovery=30
 	///Prepare To Jump / Land
 	if anim=21 or anim=22
 	{hit=0 MoveType=0 canmove=0  weaponBack=1
+	if anim=22 if animFrame=0 {wobbleX=1.1 wobbleY=0.9}
 	weaponanim(weaponspr,weaponIndex,9,-31,90*image_xscale,weaponcolor)
 
 	if carry=0
@@ -1019,7 +1020,7 @@ selfatk.recovery=30
 
 	sprite_index=spr_viva_downup image_index=animFrame
 
-	if animFrame<2 sentflying=8*image_xscale
+	if animFrame<2 {sentflying=8*image_xscale wobbleX=lerp(wobbleX,1.1,0.1) wobbleY=lerp(wobbleY,1.1,0.1)}
 	else sentflying=lerp(sentflying,0,0.1)
 	
 	if animFrame<4 afterimage_create(4,make_colour_rgb(57, 173, 255),current_pal,my_pal_sprite,0)
@@ -1033,7 +1034,7 @@ selfatk.recovery=30
 
 	flashZ=32
 
-	if animFrame=clamp(animFrame,2,4) {ground=0 z-=16}
+	if animFrame=clamp(animFrame,2,4) {ground=0 z-=16 wobbleY=1.2 wobbleX=0.8}
 
 
 	frame_set(0,0,0.2)
@@ -1043,7 +1044,7 @@ selfatk.recovery=30
 	frame_set(4,4,0.2)
 	frame_set(5,5,0.0)
 
-	if animFrame>4 and ground=1 {canmove=0 animFrame=0 anim=25}
+	if animFrame>4 and ground=1 {canmove=0 animFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
 	}
 
 	///Side Attack
@@ -1060,7 +1061,9 @@ selfatk.recovery=30
 	if animFrame=clamp(animFrame,3,4) {
 		
 		afterimage_create(4,make_colour_rgb(57, 173, 255),current_pal,my_pal_sprite,0)
-		sentflying=16*image_xscale atk=1} else {sentflying=lerp(sentflying,0,0.3) atk=0}
+		sentflying=16*image_xscale atk=1
+		wobbleX=1.1 wobbleY=0.9
+		} else {sentflying=lerp(sentflying,0,0.3) atk=0}
 
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.2)

@@ -1,4 +1,6 @@
 //
+shader_reset()
+draw_set_alpha(1)
 isPaused=0
 {
 //Draw Map
@@ -6,7 +8,7 @@ if room=rm_map
 {
 controller_setup()
 
-if key_attack or key_jump or key_super or key_shield or keyboard_check_pressed(vk_enter)
+if key_attack or key_jump or key_super or key_shield_pressed or keyboard_check_pressed(vk_enter)
 if mapSelected=0 and quickMapLerp=0
 {
 if mapSName="LOCKED"
@@ -48,13 +50,7 @@ mapSY=mapSYlerp x=mapSXlerp
 //A
 if mapSelX=0 and mapSelY=-1 
 
-lockedMap[1]=1
-lockedMap[2]=1
-lockedMap[3]=1
-lockedMap[4]=1
-lockedMap[5]=1
-lockedMap[6]=1
-lockedMap[7]=1
+
 
 if mapSelX=0 and mapSelY=-1
 {mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
@@ -109,3 +105,5 @@ draw_sprite(mapSpr,mapIndex,mapSX,mapSY)
 
 }
 }
+shader_reset()
+draw_set_alpha(1)

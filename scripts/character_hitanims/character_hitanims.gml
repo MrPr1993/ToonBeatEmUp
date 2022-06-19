@@ -1,6 +1,25 @@
 function character_hitanims() {
 	//if hurt=1
 	{
+		
+if anim=4
+{if animFrame=0 {wobbleX=1 wobbleY=1}
+if targetHeightHit=0 {if wobbleX<1.2 {wobbleX+=0.01 wobbleY+=0.01} else {wobbleX=1 wobbleY=1}}
+if targetHeightHit=1 {if wobbleY<1.2 {wobbleY+=0.01 wobbleX-=0.01} else {wobbleX=1 wobbleY=1}}
+if targetHeightHit=2 {if wobbleX<1.2 {wobbleX+=0.01 wobbleY-=0.01} else {wobbleX=1 wobbleY=1}}
+}
+if anim=5
+{
+if animFrame<=3 {wobbleX=0.8 wobbleY=1.2}
+
+if ground 
+{wobbleX=1.2 wobbleY=0.8}
+}
+if anim=9
+if animFrame=0 {wobbleX=1.4 wobbleY=0.4}
+
+wobbleX=lerp(wobbleX,1,0.1)
+wobbleY=lerp(wobbleY,1,0.1)
 
 	if anim=4 ///Hit Stand
 	if overwriteHitStand=0
@@ -365,7 +384,9 @@ with cutSelf
 	if y<view_yview[0]+240-8 {if image_index<1.5 image_index+=0.5 y+=8 zSpeed=0 z-=4 animFrame=0}
 	else
 	{
-	if image_index<1.8 {image_index=2 oControl.quakeFXTime=10 PlaySound(snd_hitground)}
+	if image_index<1.8 {image_index=2 oControl.quakeFXTime=10 PlaySound(snd_hitground)
+		wobbleX=1.25 wobbleY=1.25
+		}
 
 	zSpeed=0 if animFrame<3.7 image_index=2 else image_index=3
 	animFrame+=0.1 if !ground z+=0.1

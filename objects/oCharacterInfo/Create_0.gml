@@ -39,8 +39,8 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=1
+maxhp=1
 
 height=70
 
@@ -130,3 +130,14 @@ setunlock+=1
 
 dataPal=1
 dataPalMax=3
+
+dataSet=0
+
+arrowSel1=0
+arrowSel2=0
+
+dataabilities="ELECTRICITY,SINGING,\nCOOKING,CHESS,FILMS"
+
+dataRowMax=4
+
+categoryNames="DIVAS"

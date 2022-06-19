@@ -1,6 +1,10 @@
 /// @description Z Block Collision
 zblock_col()
 
+
+fallMul=1
+jumpMul=1
+
 	if canControl=0
 	if 	automove=1
 	{
@@ -8,8 +12,12 @@ x=lerp(x,automoveX,0.2)
 y=lerp(y,automoveY,0.2)
 	}
 
-if canmove=1 and ground=0 if anim!=2 and anim!=3 anim=2
-
+if canmove=1 and ground=0 
+{
+if anim!=2 and anim!=3 anim=2
+if anim=2 or anim=3
+{if key_jump_hold {if zSpeed<0 {jumpMul=0.8 fallMul=0.8}} else zSpeed=lerp(zSpeed,.45,0.1)  }
+}
 ///Throw Setup
 if carry=1
 {

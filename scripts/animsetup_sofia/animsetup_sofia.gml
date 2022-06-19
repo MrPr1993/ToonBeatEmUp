@@ -486,7 +486,7 @@ weaponanim(weaponspr,weaponIndex,-31,-30,90*image_xscale,weaponcolor)
 
 	 if animFrame>1 atk=1 else atk=0
 	 animFrame+=0.5 animFrame=clamp(animFrame,0,1.5)
-	 if ground {hurt=1 canmove=0 animFrame=0 anim=25}
+	 if ground {hurt=1 canmove=0 animFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
 	}
 
 
@@ -558,7 +558,7 @@ selfatk.height=128
 	}
 	else
 	{atk=0
-	animFrame+=0.1 sprite_index=spr_sofia_item
+	animFrame+=0.1 if sprite_index!=spr_sofia_item {sprite_index=spr_sofia_item	wobbleX=1.1 wobbleY=0.9}
 	if animFrame>4
 	{powlock=0 hurt=0 atk=0 canmove=1 hit=0
 	if powcheck=0
@@ -987,6 +987,7 @@ selfatk.height=128
 	///Prepare To Jump
 	if anim=21 or anim=22
 	{
+		if anim=22 if animFrame=0 {wobbleX=1.1 wobbleY=0.9}
 	hit=0 MoveType=0 canmove=0  weaponBack=1
 	weaponanim(weaponspr,weaponIndex,9,-31,90*image_xscale,weaponcolor)
 
@@ -1093,7 +1094,7 @@ selfatk.height=128
 
 	atkcol_set(19,0,47,2.15,1,18) MoveType=1 damage=0.1
 
-	if animFrame=clamp(animFrame,3,4) {
+	if animFrame=clamp(animFrame,3,4) {wobbleX=1.1 wobbleY=0.9
 			afterimage_create(4,make_colour_rgb(0, 189, 90),current_pal,my_pal_sprite,-16*image_xscale)
 
 		sentflying=16*image_xscale atk=1} else {sentflying=lerp(sentflying,0,0.3) atk=0}
