@@ -9,7 +9,7 @@ selectStar=0
 canControl=1
 AreYouSure=0
 Sure=0
-
+controlNO=1
 controller_setup()
 
 stagePause=oControl.stagePause

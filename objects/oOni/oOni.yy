@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "mask_small",
     "path": "sprites/mask_small/mask_small.yy",
@@ -35,8 +36,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "4Oni",
-    "path": "folders/8 - Bosses/4Oni.yy",
+    "name": "3Oni",
+    "path": "folders/8 - Bosses/3Oni.yy",
   },
   "resourceVersion": "1.0",
   "name": "oOni",

@@ -1,9 +1,15 @@
 roomfast=0
 canControl=1
+controlNO=1
 controller_setup()
 
 instance_create(0,0,oBlackFX)
 //instance_create(0,0,oTVfx)
+
+p1=-1
+p2=-1
+p3=-1
+p4=-1
 
 alarm[10]=640+160
 
@@ -94,6 +100,12 @@ global.CurrentMusic=-1
 global.MenuSkip=0
 global.IntroSkip=0
 global.CRTfx=1
+global.CRTcustomDistort=true;
+global.CRTcustomDistortAM=0.12;
+global.CRTcustomBorder=true;
+
+global.ColorMode=0;
+
 global.MonochromeFX=0
 
 global.BGMvolume=100
@@ -611,4 +623,6 @@ lockedMap[5]=1
 lockedMap[6]=1
 lockedMap[7]=1
 
-if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0
+
+
+//if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0

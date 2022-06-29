@@ -2,6 +2,7 @@
 // You can write your code in this editor
 menuSelect=0
 canControl=1
+controlNO=1
 controller_setup()
 
 stagePause=0

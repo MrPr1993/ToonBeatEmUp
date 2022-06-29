@@ -25,6 +25,8 @@ with oPlayer {
 	fakepl.hspeed=3 else fakepl.hspeed=-4 fakepl.depthchange=16777215
 	fakepl.vspeed=-2 fakepl.image_xscale=image_xscale
 	fakepl.alarm[1]=point_distance(x,y,5024,144)/8
+	fakepl.current_pal=current_pal;
+	fakepl.my_pal_sprite=my_pal_sprite;
 	if fakepl.alarm[1]=0 fakepl.alarm[1]=2
 	visible=0 y=0
 	}

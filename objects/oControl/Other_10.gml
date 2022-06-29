@@ -1,11 +1,12 @@
 /// @description Select Enemy & Item
 if !keyboard_check(vk_control)
 {
-if spawnNo=1 spawnType="Item"
-if spawnNo=3 spawnType="Spawn Area"
-if spawnNo=0 spawnType="Enemy"
-if spawnNo=2 spawnType="Obstacle"
 
+if spawnNo=0 spawnType="Enemy"
+if spawnNo=1 spawnType="Bosses"
+if spawnNo=2 spawnType="Itemz"
+if spawnNo=3 spawnType="Obstacle"
+if spawnNo=4 spawnType="Spawn Area"
 
 if spawnType="Enemy"
 {
@@ -22,9 +23,9 @@ if enemySpawn=9 {enemySpawnName="9 Zombieman" spawnUnit=oZombieMan}
 if enemySpawn=10 {enemySpawnName="10 Zombiewoman" spawnUnit=oZombieWoman}
 if enemySpawn=11 {enemySpawnName="11 Ninja Bun" spawnUnit=oNinjaBun}
 if enemySpawn=12 {enemySpawnName="12 S. Showgirl" spawnUnit=oSamurai}
-if enemySpawn=13 {enemySpawnName="13 Robot, Burner" spawnUnit=oRobotBurn}
+if enemySpawn=13 {enemySpawnName="13 Mr Chip" spawnUnit=oStrongBurg}
 if enemySpawn=14 {enemySpawnName="14 Robot, Ice" spawnUnit=oRobotIce}
-if enemySpawn=15 {enemySpawnName="15 Ghost Madame" spawnUnit=oGhostBoss}
+if enemySpawn=15 {enemySpawnName="15 Robot, Fire" spawnUnit=oRobotBurn}
 if enemySpawn=16 {enemySpawnName="16 Mirror Diva" spawnUnit=oMirrorDiva}
 if enemySpawn=17 {enemySpawnName="17 Wrestler" spawnUnit=oWrestler}
 if enemySpawn=18 {enemySpawnName="18 Burglar B" spawnUnit=oEnemy1B}
@@ -52,6 +53,25 @@ if enemySpawn=39 {enemySpawnName="39 Harpy" spawnUnit=oHarpy}
 if enemySpawn=40 {enemySpawnName="40 Scientist" spawnUnit=oScientist}
 if enemySpawn=49 {enemySpawnName="49 Dastardly" spawnUnit=oDastardly}
 }
+if spawnType="Bosses"
+{
+if enemySpawn=0 {enemySpawnName="1 Lady Wolf, Human" spawnUnit=oBoss1a}
+if enemySpawn=1 {enemySpawnName="1 Lady Wolf" spawnUnit=oBoss1}
+if enemySpawn=2 {enemySpawnName="2-a Dolores" spawnUnit=oTwoHeads}
+if enemySpawn=3 {enemySpawnName="2-b C.Rosy" spawnUnit=oFranki}
+if enemySpawn=4 {enemySpawnName="2-c Harpilda" spawnUnit=oHarpy}
+if enemySpawn=5 {enemySpawnName="3-a Annemari" spawnUnit=oGhostBoss}
+if enemySpawn=6 {enemySpawnName="3-b Hathor" spawnUnit=oPharaoh}
+if enemySpawn=7 {enemySpawnName="3-c Oni Sister" spawnUnit=oOni}
+if enemySpawn=8 {enemySpawnName="4-a Swamp Witch" spawnUnit=oWitch}
+if enemySpawn=9 {enemySpawnName="4-b Clown Puppet" spawnUnit=oClown}
+if enemySpawn=10 {enemySpawnName="4-c Seaweed" spawnUnit=oSeaweed}
+if enemySpawn=11 {enemySpawnName="4-c ???" spawnUnit=oIceGun}
+if enemySpawn=12 {enemySpawnName="4-c Merman Prince" spawnUnit=oPrince}
+if enemySpawn=13 {enemySpawnName="4-c ???" spawnUnit=oIceGun}
+if enemySpawn=14 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
+}
+
 if spawnType="Item"
 {
 if enemySpawn=0 {enemySpawnName="1 Food" spawnUnit=oBurger}

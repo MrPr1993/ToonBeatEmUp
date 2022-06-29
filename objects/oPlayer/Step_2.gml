@@ -73,9 +73,6 @@ aff.anim=anim
 if areaEntry=0
 x=clamp(x,__view_get( e__VW.XView, 0 )+16,__view_get( e__VW.XView, 0 )+320-16)
 
-
-
-
 ///Animation Setup
 ////This will be used so depending on the animation set, the character will use those abilities stored in their scripts
 player_anim()

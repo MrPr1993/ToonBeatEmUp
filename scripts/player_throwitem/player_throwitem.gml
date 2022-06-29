@@ -2,10 +2,11 @@
 function player_throwitem() {
 	if key_jump
 	{
-	player_prepjump()
+		//animFrame=0 canmove=0
+	//player_prepjump()
 	}
 	else
-	{
+	{animFrame=0 canmove=0
 	carry=0 if hurt=0 {animFrame=1 PlaySound(snd_swing)
 	anim=24 item.canGrav=0 item.attack=dropitem item.spdZ=0} else {
 	item.ground=0 item.canGrav=1 item.spdZ=-4 item.carry=0 item.gravLandHalt=1

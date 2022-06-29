@@ -1,124 +1,75 @@
 /// @description Attack / Take Item/Weapon
 function player_attack() {
+	if canmove=1
+{
+if -key_left and image_xscale=1 and key_attack and ground {player_punchback() exit;}
+if key_right and image_xscale=-1 and key_attack and ground {player_punchback() exit;}
+}	
+	
 	if key_jump
-	{player_prepjump()}
+	{
+		if carry=0 and weaponspawn=-1
+		player_punchback()
+		else
+		player_prepjump()
+		}
 	else
 	{
-	canmove=0 animFrame=0  ///Attack anim frame = 10
+	  ///Attack anim frame = 10
 	image_index=0 
 	if ground
 	{///Throw
+	
 	if (image_xscale=1 and key_right and dashing=0 and place_meeting(x+16,y,parEnemy))
 	or (image_xscale=-1 and -key_left and dashing=0 and place_meeting(x-16,y,parEnemy))
 	{
+	if AttackOrItem=0 or AttackOrItem=2
+	{
+	canmove=0 animFrame=0
 	throw_command(instance_nearest(x,y,oEnemy1),24*image_xscale,0,0,GrabFrame,30,1);
+	}
 	}
 	else
 	{
 	///Stand Attack
+	
+	
 	if dashing=2
-	{atk=0 MoveType=0 anim=16 ///Dash Attack 
-
+	{
+		
+	if AttackOrItem=0 or AttackOrItem=2
+	{canmove=0 animFrame=0
+	atk=0 MoveType=0 anim=16 ///Dash Attack 
+	}
 	//ground=0 sentflying=4*image_xscale zSpeed=-4
 
 	}///Dash Attack}
 	else
 	{
 	///Check if there's a heavy object
-	if ((image_xscale=1 and key_right) or (image_xscale=-1 and -key_left))
-	if collision_rectangle(x,y-4,x+(4+sprite_get_width(mask_index)/2)*image_xscale,y+4,oBarrel,0,0)
-	{
-grab=collision_rectangle(x,y-4,x+(4+sprite_get_width(mask_index)/2)*image_xscale,y+4,oBarrel,0,0)
-if grab.hit=0 and carry=0
-{///Lift Heavy Object
-animFrame=0
-	anim=250
-	
-
-	item=instance_create(x,y,oGrabbable) item.sprite_index=grab.carrySpr item.image_speed=0
-	item.hasitem=grab.itemID item.name=grab.name
-	with grab instance_destroy()
-		
-	pick_item()
-	
-		exit;
-}
-	}
-	
-	if place_meeting(x,y,oPizza) ////Check if there's an item
-	{anim=25
-pick_item()
-	}
-	else
-	{
-	if carry=0 
-	{	anim=10 ///Attack
-		///Pet interaction to overwrite above
-	if instance_exists(oDogPet)
-	{
-	petP=instance_nearest(x,y,oDogPet)
-	with petP
-	{
-	if interact=0 and anim=0
-{
-petP=instance_nearest(x,y,oPlayer)
-if distance_to_object(petP)<distance
-and petP.y=clamp(petP.y,y-distanceY,y+distanceY)
-{
-if petP.key_attack
-if petP.hurt=0 and petP.ground=1
-{petP.canmove=0 interact=1 anim=1
-	
-	image_index=0 animFrame=0
-	
-petID=petP.id
-
-if x>petP.x image_xscale=-1 else image_xscale=1
-
-petP.y=y
-	
-petP.x=x+(petDistance)*image_xscale
-petP.image_xscale=-image_xscale
-petP.image_index=0 petP.animFrame=0 petP.anim=10010
-petP.sprite_index=petP.petSprLow
-}
-}
-}
-	}
-	}
-
-	}
-	else {dropitem=1 player_throwitem()}
-	///Carried
-
-
-	////Use down-up-attack
-	if anim=10 
-	if commandDown!=0 and commandUp!=0
-	anim=80
-
-	///Use side attack
-	if anim=10 and carry=0 and weaponspawn=-1
-	if commandRight!=0 or commandLeft!=0
-	{anim=81}
-
-	}
+player_interact()
 	}
 	throwATK=0
 	}
 
 	}
-	else {///Still Kick
+	else {
+		
+	///Still Kick
 	if carry=1
-	{dropitem=1
+	{dropitem=1 ///Throw item
+	animFrame=0 canmove=0
 	event_user(2)
 	}
 	else
-	{
+	{ ///Air attack
+		if AttackOrItem=0 or AttackOrItem=2
+		{canmove=0
 	animFrame=0
 	anim=15
 	//if -key_left or key_right
 	//{sentflying=2*image_xscale zSpeed=-4} else {sentflying=0}
+		}
 	}
 	}
 	with selfatk

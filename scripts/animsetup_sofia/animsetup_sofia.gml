@@ -254,8 +254,10 @@ weaponanim(weaponspr,weaponIndex,21,-40,101*image_xscale,weaponcolor)
 	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_sofia3)}
 	damage=0.02 targetHeight=2
 	if comboHit!=0 and animFrame>2
-	{if key_shield_pressed event_user(4)////<---Here to use special instantly
-	{comboHit=0 animFrame=0 anim=11 atk=1}}////<---Here to perform second attack
+	{if key_shield_pressed {event_user(4) exit;} ////<---Here to use special instantly
+	{
+		if -key_left image_xscale=-1 if key_right image_xscale=1
+		comboHit=0 animFrame=0 anim=11 atk=1}}////<---Here to perform second attack
 	selfatk.recovery=5
 	hit=0 MoveType=0
 	sprite_index=spr_sofia_attack
@@ -278,8 +280,10 @@ weaponanim(weaponspr,weaponIndex,21,-40,101*image_xscale,weaponcolor)
 
 	damage=0.02 targetHeight=2
 	if comboHit!=0 and animFrame>2
-	{if key_shield_pressed event_user(4)
-	{comboHit=0 animFrame=0 anim=12 atk=1}}
+	{if key_shield_pressed {event_user(4) exit;} 
+	{
+		
+		comboHit=0 animFrame=0 anim=12 atk=1}}
 	  hit=0 MoveType=0
 	selfatk.recovery=5
 	sprite_index=spr_sofia_attack2
@@ -303,8 +307,10 @@ weaponanim(weaponspr,weaponIndex,21,-40,101*image_xscale,weaponcolor)
 
 	damage=0.04 targetHeight=0
 	if comboHit!=0 and animFrame>1.5
-	{if key_shield_pressed event_user(4)
-	if key_attack {{PlaySound(snd_swing)} comboHit=0 animFrame=0 anim=13 atk=1}}
+	{if key_shield_pressed {event_user(4) exit;} 
+	if key_attack {
+		if -key_left image_xscale=-1 if key_right image_xscale=1
+		{PlaySound(snd_swing)} comboHit=0 animFrame=0 anim=13 atk=1}}
 	hit=0 MoveType=0
 	selfatk.recovery=5
 	sprite_index=spr_sofia_attack
@@ -327,8 +333,10 @@ weaponanim(weaponspr,weaponIndex,21,-40,101*image_xscale,weaponcolor)
 
 	damage=0.04 targetHeight=1
 	if comboHit!=0 and animFrame>2.5
-	{if key_shield_pressed event_user(4)
-	if key_attack {{PlaySound(snd_swing) PlaySound(snd_sofia5)} comboHit=0 animFrame=0 anim=14 atk=1}}
+	{if key_shield_pressed {event_user(4) exit;} 
+	if key_attack {
+		if -key_left image_xscale=-1 if key_right image_xscale=1
+		{PlaySound(snd_swing) PlaySound(snd_sofia5)} comboHit=0 animFrame=0 anim=14 atk=1}}
 	hit=0 MoveType=0
 	selfatk.recovery=10
 	sprite_index=spr_sofia_attack3
@@ -615,23 +623,23 @@ selfatk.height=128
 	with targetID {y=y z=z ground=1 canmove=0 hurt=1 animFrame=0 anim=4 Throw=0 recovery=2}
 	targetID=-1 throwcombo=2 canmove=1 Throw=0 atk=0 animFrame=0 event_user(4) recovery=60 exit;
 	}
-	else {animFrame=0 
+	else {animFrame=0
 	if (key_right and image_xscale=1) anim=37
 	if (-key_left and image_xscale=1) anim=38
 	if (-key_left and image_xscale=-1) anim=37
 	if (key_right and image_xscale=-1) anim=38
-	if (!-key_left and !key_right) anim=36}
+	if (!-key_left and !key_right) anim=36 else PlaySound(snd_sofia4)}
 
 	////Instantly use Super
 	if key_super if super>=17.5
 	{with targetID {ground=1 canmove=0 hurt=1 animFrame=0 anim=4 Throw=0}
 	targetID=-1 throwcombo=2 canmove=1 Throw=0 atk=0 event_user(8) exit;}
-	else {animFrame=0 
+	else {animFrame=0
 	if (key_right and image_xscale=1) anim=37
 	if (-key_left and image_xscale=1) anim=38
 	if (-key_left and image_xscale=-1) anim=37
 	if (key_right and image_xscale=-1) anim=38
-	if (!-key_left and !key_right) anim=36}
+	if (!-key_left and !key_right) anim=36 else PlaySound(snd_sofia4)}
 	}
 
 	isThrow=1
@@ -1109,6 +1117,20 @@ selfatk.height=128
 	if animFrame>5.75 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
+	
+		///Back Punch Attack
+	if anim=84
+{sprite_index=spr_sofia_punchback
+if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_sofia3)}
+atkcol_set(-33,0,12,0.85,1,37) MoveType=1 damage=0.03
+if animFrame=clamp(animFrame,2,3) { atk=1} else atk=0
+	frame_set(0,0,0.2)
+	frame_set(1,1,0.2) if animFrame=2 {ground=0 zSpeed=-4 sentflying=-2*image_xscale}
+	frame_set(2,2,0.2) sentflying=lerp(sentflying,0,0.1) if animFrame>2.5 if !ground animFrame=2.9
+	frame_set(3,1,0.2)
+if animFrame>3.5 {canmove=1 atk=0}
+
+}
 	
 		///Charge Attack
 	if anim=85

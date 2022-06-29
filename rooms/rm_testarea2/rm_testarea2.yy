@@ -65,6 +65,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oEntryHorse","path":"objects/oEntryHorse/oEntryHorse.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":720.0,"y":240.0,"resourceVersion":"1.0","name":"inst_7B39DC57","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oEntrySeat","path":"objects/oEntrySeat/oEntrySeat.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":80.0,"resourceVersion":"1.0","name":"inst_6B2EAC16","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oRoulette","path":"objects/oRoulette/oRoulette.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":160.0,"resourceVersion":"1.0","name":"inst_40B39E4C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oPie","path":"objects/oPie/oPie.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":208.0,"resourceVersion":"1.0","name":"inst_3798B30D","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Compatibility_Instances_Depth_0","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oDrink","path":"objects/oDrink/oDrink.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":true,"ignore":false,"inheritItemSettings":false,"x":1616.0,"y":176.0,"resourceVersion":"1.0","name":"inst_5F622FE0","tags":[],"resourceType":"GMRInstance",},
@@ -171,6 +172,7 @@
     {"name":"inst_7B39DC57","path":"rooms/rm_testarea2/rm_testarea2.yy",},
     {"name":"inst_6B2EAC16","path":"rooms/rm_testarea2/rm_testarea2.yy",},
     {"name":"inst_40B39E4C","path":"rooms/rm_testarea2/rm_testarea2.yy",},
+    {"name":"inst_3798B30D","path":"rooms/rm_testarea2/rm_testarea2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

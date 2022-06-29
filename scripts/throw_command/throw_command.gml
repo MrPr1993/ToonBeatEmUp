@@ -9,7 +9,7 @@ function throw_command(argument0, argument1, argument2, argument3, argument4) {
 	if targetID.hurt=0 and targetID.immune=0 and targetID.act=1 and targetID.dead=0 and targetID.recoveryThrow=0 and targetID.ground
 	and targetID.z=z and targetID.isPlayer!=isPlayer
 	and targetID.canbeGrabbed=1 and ((targetID.x>x and image_xscale=1) or (targetID.x<x and image_xscale=-1) )// and object_index=oPlayer
-	{throwing=1 atk=1 canmove=0 isThrow=1 selfatk.isThrow=1
+	{throwing=1 atk=1 canmove=0 isThrow=1 selfatk.isThrow=1 recovery=10
 
 	if object_index=oPlayer
 	{

@@ -1,6 +1,16 @@
 /// @description Throw Weapon
 function player_throwweapon() {
 	{
+
+	
+	if carry=0 and weaponspawn=-1
+	{
+canmove=0
+////Punch Back
+
+	}
+	else
+	{
 	if weaponspawn!=-1 or carry=1
 	if ground
 	{
@@ -17,9 +27,11 @@ anim=19930
 	}
 	}
 	else
+	{	
 	player_attack()
 	}
-
+	}
+	}
 
 
 

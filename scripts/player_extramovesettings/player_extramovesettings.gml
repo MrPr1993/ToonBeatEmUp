@@ -14,6 +14,11 @@ function player_extramovesettings() {
 	if (key_up and commandDown!=0) commandUp=1 else if commandUp!=0 commandUp-=0.1
 	}
 
+if canmove=1
+{
+if -key_left and image_xscale=1 and key_attack and ground player_punchback()
+if key_right and image_xscale=-1 and key_attack and ground player_punchback()
+}
 	///This line is used for the player's side move
 	if hasSideAtk=1
 	{

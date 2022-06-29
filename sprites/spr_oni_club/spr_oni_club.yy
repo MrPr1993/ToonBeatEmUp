@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "4Oni",
-    "path": "folders/8 - Bosses/4Oni.yy",
+    "name": "3Oni",
+    "path": "folders/8 - Bosses/3Oni.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_oni_club",

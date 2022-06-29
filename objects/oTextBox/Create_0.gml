@@ -8,6 +8,9 @@ height = 224;
 padding = 16;
 start = 16;
 
+canControl=1
+controlNO=1
+
 /// Keep track of the starting line
 start = ds_list_create( );
 ds_list_add(start,0);

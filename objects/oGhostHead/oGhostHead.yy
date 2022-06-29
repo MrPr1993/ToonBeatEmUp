@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_shadow2",
     "path": "sprites/spr_shadow2/spr_shadow2.yy",
@@ -36,8 +37,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "4Ghost Boss",
-    "path": "folders/8 - Bosses/4Ghost Boss.yy",
+    "name": "3Ghost Boss",
+    "path": "folders/8 - Bosses/3Ghost Boss.yy",
   },
   "resourceVersion": "1.0",
   "name": "oGhostHead",

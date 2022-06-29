@@ -247,8 +247,10 @@ weaponanim(weaponspr,weaponIndex,13,-35,84*image_xscale,weaponcolor)
 	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_bahati5)}
 	damage=0.04 targetHeight=2
 	if comboHit!=0 and animFrame>1.5
-	{if key_shield_pressed event_user(4)////<---Here to use special instantly
-	if key_attack {comboHit=0 animFrame=0 anim=11 atk=1}}////<---Here to perform second attack
+	{if key_shield_pressed {event_user(4) exit;} ////<---Here to use special instantly
+	if key_attack {
+		if -key_left image_xscale=-1 if key_right image_xscale=1
+		comboHit=0 animFrame=0 anim=11 atk=1}}////<---Here to perform second attack
 	selfatk.recovery=10
 	hit=0 MoveType=0
 	sprite_index=spr_bahati_attack
@@ -270,8 +272,10 @@ weaponanim(weaponspr,weaponIndex,13,-35,84*image_xscale,weaponcolor)
 
 	damage=0.06 targetHeight=2
 	if comboHit!=0 and animFrame>1.5
-	{if key_shield_pressed event_user(4)
-	if key_attack {PlaySound(snd_swing) PlaySound(snd_bahati5) comboHit=0 animFrame=0 anim=12 atk=1}}
+	{if key_shield_pressed {event_user(4) exit;} 
+	if key_attack {
+		if -key_left image_xscale=-1 if key_right image_xscale=1
+		PlaySound(snd_swing) PlaySound(snd_bahati5) comboHit=0 animFrame=0 anim=12 atk=1}}
 	  hit=0 MoveType=0
 	selfatk.recovery=10
 	sprite_index=spr_bahati_attack2
@@ -303,8 +307,10 @@ weaponanim(weaponspr,weaponIndex,13,-35,84*image_xscale,weaponcolor)
 	animFrame+=0.125 else animFrame+=0.1 if animFrame>2.8 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	if comboHit!=0 and animFrame>1.5
-	{if key_shield_pressed event_user(4)
-	if key_attack {comboHit=0 animFrame=0 image_index=0 anim=13}}
+	{if key_shield_pressed {event_user(4) exit;} 
+	if key_attack {
+		if -key_left image_xscale=-1 if key_right image_xscale=1
+		comboHit=0 animFrame=0 image_index=0 anim=13}}
 	}
 	if anim=13 ///Attack Stand 4
 	{selfatk.NoKnock=0 dizzyAtk=0
@@ -647,7 +653,7 @@ selfatk.height=128
 	if (-key_left and image_xscale=1) {anim=38}
 	if (-key_left and image_xscale=-1) {image_xscale=1 anim=38}
 	if (key_right and image_xscale=-1) {anim=38}
-	if (!-key_left and !key_right) anim=36}
+	if (!-key_left and !key_right) anim=36 else PlaySound(snd_bahati3)}
 
 	////Instantly use Super
 	if key_super if super>=17.5
@@ -658,7 +664,7 @@ selfatk.height=128
 	if (-key_left and image_xscale=1) anim=38
 	if (-key_left and image_xscale=-1) {image_xscale=1 anim=38}
 	if (key_right and image_xscale=-1) anim=38
-	if (!-key_left and !key_right) anim=36}
+	if (!-key_left and !key_right) anim=36 else PlaySound(snd_bahati3)}
 	}
 	else
 	{
@@ -1208,6 +1214,20 @@ if targetID!=-1
 	}
 	}
 	}
+	
+		///Back Punch Attack
+	if anim=84
+{sprite_index=spr_bahati_punchback
+if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_bahati4)}
+atkcol_set(-42,0,23,0.85,1,37) MoveType=1 damage=0.03
+if animFrame=clamp(animFrame,2,3) {atk=1} else atk=0
+	frame_set(0,0,0.2)
+	frame_set(1,1,0.2)
+	frame_set(2,2,0.2)
+	frame_set(3,1,0.2)
+if animFrame>3.5 {canmove=1 atk=0}
+
+}
 	
 		///Charge Attack
 	if anim=85

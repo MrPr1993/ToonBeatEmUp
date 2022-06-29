@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_height0",
     "path": "sprites/spr_height0/spr_height0.yy",

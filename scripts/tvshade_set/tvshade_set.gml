@@ -3,6 +3,17 @@
 function tvshade_set(){
   new_surf = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 
+screenX=0
+screenY=0
+screenXanchorY = 1;
+screenXfrequency = 1;
+screenXamplitude = 1;
+screenXtimer = 0;
+screenYanchorY = 1;
+screenYfrequency = 1;
+screenYamplitude = 1;
+screenYtimer = 0;
+
 crtcheck=window_get_width()
 crt_surface_scale = 1;
 
@@ -25,4 +36,11 @@ surface_resize(application_surface, surface_width, surface_height);
 
 surfcheck=0
 
+var_distort=global.CRTcustomDistort;
+var_distortion_ammount=global.CRTcustomDistortAM;
+var_border=global.CRTcustomBorder;
+
+customR=0.33;
+customG=22.0;
+customB=0.33;
 }

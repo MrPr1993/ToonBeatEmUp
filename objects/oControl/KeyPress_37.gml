@@ -3,7 +3,7 @@ and room!=rm_animeditor and room!=rm_credits and  room!=rm_howtoplay and room!=r
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 if !keyboard_check(vk_control)
 {
-if spawnNo=0 spawnNo=3 else spawnNo-=1
+if spawnNo=0 spawnNo=4 else spawnNo-=1
 event_user(0)
 global.enemytestB=spawnNo
 }

@@ -4,9 +4,8 @@ hasRoof=1
 wallSide=0
 
 
-wall_create()
+//wall_create()
 
-isDraw=1
+isDraw=0
 
 name="Default"
-

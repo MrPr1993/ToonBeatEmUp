@@ -1,10 +1,11 @@
 {
   "spriteId": {
-    "name": "spr_height32",
-    "path": "sprites/spr_height32/spr_height32.yy",
+    "name": "spr_height0",
+    "path": "sprites/spr_height0/spr_height0.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_height0",
     "path": "sprites/spr_height0/spr_height0.yy",

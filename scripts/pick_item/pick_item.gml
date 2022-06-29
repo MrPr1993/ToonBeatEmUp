@@ -3,9 +3,15 @@
 function pick_item(){
 	if carry=0
 	{
-	item=instance_place(x,y,oPizza)
+			if AttackOrItem=0 or AttackOrItem=2
+		{animFrame=0 anim=10 canmove=0}
+		
+		item=instance_place(x,y,oPizza)
 	if item.ground=1 and item.isBroken=0
 	{
+			if AttackOrItem=1 or AttackOrItem=2
+	{
+		anim=25 animFrame=0 canmove=0
 	if weaponspawn!=-1 and (item.iscarry=1 or item.isweapon=1) event_user(1)
 
 	PlaySound(item.PickupSound)
@@ -16,6 +22,8 @@ function pick_item(){
 	{carry=item.iscarry item.carryID=id } if item.isweapon=1 
 	{weaponspawn=item.itemname weaponLife=item.weaponLife }
 	PlayerScore+=item.points
+
+
 
 	oControl.showhp=0
 	oControl.enemyhp=0 oControl.hpLerp=0 oControl.enemymaxhp=0
@@ -45,7 +53,7 @@ function pick_item(){
 	weapontype=item.weapontype
 	weaponCut=item.weaponCut
 	//0 - Heavy - 1 - Knife/Staff-type
-
+    weaponCanFlash=item.canFlash
 	weaponDamage=item.weaponDamage
 	weapontargetHeight=item.weapontargetHeight
 
@@ -91,6 +99,11 @@ function pick_item(){
 	else {carry=1 }
 	}
 
-	}else {anim=10}
+	}
+	}
+	else {
+
+		
+		}
 	} else {dropitem=1 player_throwitem()}
 }

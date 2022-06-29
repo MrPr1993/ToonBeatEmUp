@@ -5,6 +5,13 @@ ini_open("GAMEDATA/settings.ini");
 global.BGMvolume=ini_read_real("SETTINGS", "BGM", 100);
 global.SFXvolume=ini_read_real("SETTINGS", "VFX", 100);
 global.CRTfx=ini_read_real("SETTINGS", "CRT", 0);
+
+global.CRTcustomDistort=ini_read_real("SETTINGS", "CRTcustom1", true);
+global.CRTcustomDistortAM=ini_read_real("SETTINGS", "CRTcustom2", 0.12);
+global.CRTcustomBorder=ini_read_real("SETTINGS", "CRTcustom3", true);
+
+global.ColorMode=ini_read_real("SETTINGS", "ColorMode", 0);
+
 global.ScreenSize=ini_read_real("SETTINGS","SCREEN",0)
 screen_size(-1)
 global.Screenshake=ini_read_real("SETTINGS","SHAKE",1)

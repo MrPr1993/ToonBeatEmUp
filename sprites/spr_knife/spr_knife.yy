@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_knife","path":"sprites/spr_knife/spr_knife.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "spr_knife",
     "tags": [],
     "resourceType": "GMSequence",
   },

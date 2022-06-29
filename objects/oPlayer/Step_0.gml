@@ -2,7 +2,7 @@
 
 if hasAI=0
 {
-if canControl=controlNO
+if canControl=1
 {
 if automove=0
 {
@@ -46,11 +46,16 @@ PlaySound(DeathCry)
 if weaponLife<=0 and spawnID!=-1 and canmove=1 and weaponIsGun=0
 event_user(1)
 
+if weaponCanFlash=0 weaponFlash=2
+else
+{
 if (weaponLife<=1 and weaponIsGun=0)
 or (weaponLife<=0 and weaponIsGun=1)
 {
 if weaponFlash<=0 weaponFlash=2 else weaponFlash-=0.25
 }else weaponFlash=2
+}
+
 
 ///Here you set up the time the player will idle
 if anim=0 and canmove=1
@@ -143,13 +148,25 @@ else
 if key_attack
 {
 if !key_jump
-event_user(3) else if weaponspawn!=-1 or carry=1 event_user(5) else event_user(3)
+event_user(3) else 
+{
+if ground=1 and carry=0 and weaponspawn=-1 {player_punchback()}
+	else
+	{
+if weaponspawn!=-1 or carry=1 event_user(5) else event_user(3)}
+}
 }
 
 if key_jump
 {
 if !key_attack
-event_user(6) else if weaponspawn!=-1 or carry=1 event_user(5) else event_user(6)
+event_user(6) else 
+{
+if ground=1 and carry=0 and weaponspawn=-1 {player_punchback()}
+else
+{
+if weaponspawn!=-1 or carry=1 event_user(5) else event_user(6)}
+}
 }
 
 

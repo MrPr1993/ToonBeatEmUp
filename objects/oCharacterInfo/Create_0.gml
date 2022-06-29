@@ -1,3 +1,5 @@
+canControl=1
+controlNO=1
 character_setup()
 enemy_data()
 
@@ -17,6 +19,8 @@ enemyscript=animsetup_viva
 specialscript=-1
 
 canControl=1
+
+hasVariants=0
 
 x+=8
 
@@ -141,3 +145,8 @@ dataabilities="ELECTRICITY,SINGING,\nCOOKING,CHESS,FILMS"
 dataRowMax=4
 
 categoryNames="DIVAS"
+
+customText=-1
+customText2=-1
+customText3=-1
+customText4=-1

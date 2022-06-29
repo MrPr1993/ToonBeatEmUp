@@ -98,6 +98,7 @@ fallHole=0
 	weaponExtraAngle=0
 	angleImage=0
 	angleFX=0
+	groundRot=0
 
 	angleSpin=90
 

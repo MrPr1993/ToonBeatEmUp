@@ -107,6 +107,7 @@ function character_setup() {
 	weaponLife=6
 	weaponAttack=0
 	weaponFlash=0
+	weaponCanFlash=1
 	weaponIsGun=0
 	weaponDamage=0.2
 	weapontargetHeight=2

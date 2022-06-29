@@ -30,8 +30,11 @@ if keyboard_check(vk_shift)
 oPlayer.x=32 __view_set( e__VW.XView, 0, 0 )
 }
 else
-room_restart()
-
+{
+if keyboard_check(vk_control)
+{p2.x=p1.x p3.x=p1.x p4.x=p1.x}
+else room_restart()
+}
 ///Insta-Game Over
 if keyboard_check_pressed(vk_f2)
 {
@@ -141,12 +144,20 @@ else
 {
 
 ///This side is disabled
-
-if oPlayer.x>=__view_get( e__VW.XView, 0 )+160 {if __view_get( e__VW.XView, 0 )<camMax {__view_set( e__VW.XView, 0, oPlayer.x-160 ) camMin=__view_get( e__VW.XView, 0 )}}
+if (p1.x>=__view_get( e__VW.XView, 0 )+160 
+and p2.x>=__view_get( e__VW.XView, 0 )+160 
+and p3.x>=__view_get( e__VW.XView, 0 )+160 
+and p4.x>=__view_get( e__VW.XView, 0 )+160 )
+{if __view_get( e__VW.XView, 0 )<camMax {__view_set( e__VW.XView, 0, instance_nearest(__view_set( e__VW.XView, 0, 0),0,oPlayer).x-160) camMin=__view_get( e__VW.XView, 0 )}}
 
 if instance_exists(oEnemySpawner)
 {if oEnemySpawner.GoBack=1
-if oPlayer.x<=__view_get( e__VW.XView, 0 )+160 {if __view_get( e__VW.XView, 0 )>oEnemySpawner.MinX {__view_set( e__VW.XView, 0, oPlayer.x-160 ) camMin=__view_get( e__VW.XView, 0 )}}
+
+if (p1.x<=__view_get( e__VW.XView, 0 )+160
+and p2.x<=__view_get( e__VW.XView, 0 )+160
+and p3.x<=__view_get( e__VW.XView, 0 )+160
+and p4.x<=__view_get( e__VW.XView, 0 )+160)
+{if __view_get( e__VW.XView, 0 )>oEnemySpawner.MinX {__view_set( e__VW.XView, 0,  instance_nearest(__view_set( e__VW.XView, 0, 0),0,oPlayer).x-160 ) camMin=__view_get( e__VW.XView, 0 )}}
 
 if oPlayer.y>=oEnemySpawner.YView+120+80 {if oEnemySpawner.YView<camMaxY+80 {oEnemySpawner.YView=oPlayer.y-120-80 camMinY=oEnemySpawner.YView+80}}
 with oEnemySpawner {YView=clamp(YView,MinY,MaxY-240) __view_set( e__VW.YView, 0, YView+oControl.quakeFX )}

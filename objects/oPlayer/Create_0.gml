@@ -152,9 +152,18 @@ controlNO=1
 global.multiMode=1
 if instance_number(oPlayer)=1
 {controlNO=1
+with oControl
+{
+p1=oPlayer
+p2=oPlayer
+p3=oPlayer
+p4=oPlayer
+}
+	
 if global.multiMode>1
 with oControl
 {
+
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper
 {
@@ -182,3 +191,5 @@ p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.character=2 p3.controlNO
 p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.character=3 p4.controlNO=4
 }
 
+ContinueMode=0
+ActivePlayer=0

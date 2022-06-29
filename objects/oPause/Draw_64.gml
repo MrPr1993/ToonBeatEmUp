@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 	if TVfx!=0
 {application_surface_draw_enable(false);
 if crtcheck=320
@@ -90,27 +91,6 @@ draw_set_halign(fa_center)
 settings_draw()
 ////
 
-	if TVfx=1 { var_distort = true; var_distortion_ammount = 0.12; var_border = true;}
-	if TVfx=2 { var_distort = false; var_distortion_ammount = 0.12; var_border = true;}
-	if TVfx=3 { var_distort = true; var_distortion_ammount = 0.12; var_border = false;}
-	if TVfx=4 { var_distort = false; var_distortion_ammount = 0.12; var_border = false;}
-	if TVfx=5 { var_distort = true; var_distortion_ammount = 0.24; var_border = true;}
-	if TVfx=6 { var_distort = true; var_distortion_ammount = 0; var_border = true;}
-
-
-	if TVfx!=0
-	{surface_reset_target();
-application_surface_draw_enable(false);
-
-shader_set(shade)
-  shader_set_uniform_f(uni_crt_sizes, surface_width, surface_height,crt_surface_width, crt_surface_height);
-  shader_set_uniform_f(distort, var_distort);
-  shader_set_uniform_f(distortion, var_distortion_ammount);
-  shader_set_uniform_f(border, var_border);
-  draw_clear_alpha(c_black, 0.0);
-draw_surface_part_ext(new_surf, 0, 0, view_wview[0], view_hview[0], 0, 0, crt_surface_scale, crt_surface_scale, c_white, 1);
-
-shader_reset();
-	}
+crt_fxset()
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
