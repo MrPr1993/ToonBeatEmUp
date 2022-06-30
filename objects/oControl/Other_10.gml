@@ -39,19 +39,9 @@ if enemySpawn=25 {enemySpawnName="25 Alien Robot" spawnUnit=oAlienRobot}
 if enemySpawn=26 {enemySpawnName="26 Cobra" spawnUnit=oCobra}
 if enemySpawn=27 {enemySpawnName="27 Plant" spawnUnit=oPlant}
 if enemySpawn=28 {enemySpawnName="28 Animated Object" spawnUnit=oAnimatedObject}
-if enemySpawn=28 {enemySpawnName="29 Strong Burg" spawnUnit=oStrongBurg}
-if enemySpawn=30 {enemySpawnName="30 Lady Wolf, Human" spawnUnit=oBoss1a}
-if enemySpawn=31 {enemySpawnName="31 Lady Wolf" spawnUnit=oBoss1}
-if enemySpawn=32 {enemySpawnName="32 Pharaoh" spawnUnit=oPharaoh}
-if enemySpawn=33 {enemySpawnName="33 Franki" spawnUnit=oFranki}
-if enemySpawn=34 {enemySpawnName="34 Oni" spawnUnit=oOni}
-if enemySpawn=35 {enemySpawnName="35 Franki" spawnUnit=oPrince}
-if enemySpawn=36 {enemySpawnName="36 Witch" spawnUnit=oWitch}
-if enemySpawn=37 {enemySpawnName="37 P Princess" spawnUnit=oPlantPrincess}
-if enemySpawn=38 {enemySpawnName="38 Heads" spawnUnit=oTwoHeads}
-if enemySpawn=39 {enemySpawnName="39 Harpy" spawnUnit=oHarpy}
-if enemySpawn=40 {enemySpawnName="40 Scientist" spawnUnit=oScientist}
-if enemySpawn=49 {enemySpawnName="49 Dastardly" spawnUnit=oDastardly}
+if enemySpawn=28 {enemySpawnName="29 Monk" spawnUnit=oMonk}
+if enemySpawn=30 {enemySpawnName="30 Lobster" spawnUnit=oLobster}
+if enemySpawn=31 {enemySpawnName="31 Spacer" spawnUnit=oSpacer}
 }
 if spawnType="Bosses"
 {

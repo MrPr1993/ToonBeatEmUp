@@ -4,12 +4,17 @@ controller_setup()
 
 hasVariants=0
 
-if -key_left_pressed {arrowSel1=2
+wobbleX=lerp(wobbleX,1,0.25)
+wobbleY=lerp(wobbleY,1,0.25)
+
+if -key_left_pressed {arrowSel1=2 wobbleX=1.1 wobbleY=0.9
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=1 dataSelect=dataRowMax else dataSelect-=1}
-if key_right_pressed {arrowSel2=2
+if key_right_pressed {arrowSel2=2 wobbleX=1.1 wobbleY=0.9
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=dataRowMax dataSelect=1 else dataSelect+=1}
-if key_up_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=8 else dataRow-=1}
-if -key_down_pressed {image_alpha=1 dataPalMax=3 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=8 dataRow=1 else dataRow+=1}
+if key_up_pressed {wobbleX=1.1 wobbleY=0.9
+	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=8 else dataRow-=1}
+if -key_down_pressed {wobbleX=1.1 wobbleY=0.9
+	image_alpha=1 dataPalMax=3 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=8 dataRow=1 else dataRow+=1}
 
 descleft="";
 descright="";
@@ -21,8 +26,8 @@ dataRowMax=4 categoryNames="DIVAS"
 charinfo_divas()
 
 break;
-case 2: ////Enemy Characters
-dataRowMax=48 categoryNames="ENEMIES" hasVariants=1
+case 2: ////Enemy Characters - 48
+dataRowMax=28 categoryNames="ENEMIES" hasVariants=1
 charinfo_enemies()
 break;
 case 3: ///Boss Characters
