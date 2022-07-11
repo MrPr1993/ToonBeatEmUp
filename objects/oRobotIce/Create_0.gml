@@ -2,35 +2,40 @@ enemy_data()
 ///This enemy has a pretty different moveset. You can change their settings here
 
 specialFX=0
-name="MR.COLD"
+name="MR.BLIZ"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=4
 chardraw=draw_robot;
+enemyscript=animsetup_robot
 
+throwHeavy=1
+
+hasFront=1
+
+GrabFrame=16
 
 pointshit=10
 points=100
-
-GrabFrame=16
 
 DamageVoice1=snd_metalhit
 DamageVoice2=snd_metalhit
 DamageVoice3=snd_metalhit
 
+
 DeathCry=snd_deathcryrobot
-HitGround=snd_metalhit
+HitGround=snd_hitgroundmetal
 
 hp=1
 maxhp=1
 hplayer=0
 walkSpeed=0.5
-rangeAtk=128
+rangeY=2
+rangeAtk=320
 RunMoveSpeedDecrease=0.2
 
 isHeavy=1
 
 height=114
-
 
 
 losepartL=0.5
@@ -55,7 +60,7 @@ robotArmRobject=oFlameArm
 robotArmRXscale=1
 robotArmRYscale=1
 
-enemyscript=animsetup_robot
+
 
 StandSpr=spr_robot_stand
 MoveSpr=spr_robot_stand
@@ -77,14 +82,18 @@ ShockSpr=spr_robot_elec
 BurnSpr=spr_robot_burned
 FrozenSpr=spr_robot_frozen
 DizzySpr=spr_robot_hit
+FrontSpr=spr_robot_front
 
+hasCut=1
+cutSpr1=spr_robot_cut1
+cutSpr2=spr_robot_cut2
 
-
-my_pal_sprite=spr_robotpal
-current_pal=1;
 
 spritepos_setup(1,16,5,50)
 
 spritepos_setup(2,6,-6,-4)
 spritepos_setup(2,16,-5,87)
+
+my_pal_sprite=spr_robotpal
+current_pal=1
 

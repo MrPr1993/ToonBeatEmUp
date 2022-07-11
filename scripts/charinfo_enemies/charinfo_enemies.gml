@@ -126,33 +126,40 @@ break;
  "A!")
 break;
   case 22:
- charinfo_set(12,spr_merman_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,25,"MERMAN",
+ charinfo_set(12,spr_diver_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,45,"DIVERMAN",
  "A!")
 break;
   case 23:
- charinfo_set(12,spr_siren_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,26,"SIREN",
+ charinfo_set(12,spr_merman_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,25,"MERMAN",
  "A!")
 break;
   case 24:
- charinfo_set(12,spr_martian_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,23,"MARTIAN",
+ charinfo_set(12,spr_siren_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,26,"SIREN",
  "A!")
 break;
   case 25:
- charinfo_set(12,spr_alienrobot_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,28,"MARSBOT",
+ charinfo_set(12,spr_martian_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,23,"MARTIAN",
  "A!")
 break;
   case 26:
- charinfo_set(12,spr_spacer_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,43,"SPACER",
+ charinfo_set(12,spr_alienrobot_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,28,"MARSBOT",
  "A!")
 break;
   case 27:
- charinfo_set(12,spr_goblin_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBLIN",
+ charinfo_set(12,spr_spacer_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,43,"SPACER",
  "A!")
 break;
   case 28:
+ charinfo_set(12,spr_goblin_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBLIN",
+ "A!")
+break;
+  case 29:
  charinfo_set(12,spr_slime_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,22,"SLIME",
  "A!")
 break;
-
+  case 30:
+ charinfo_set(12,spr_ladybot_stand,1,animsetup_enemy,draw_enemy,spr_robotpal,0,spr_enemyface,46,"LADYBOT",
+ "A!")
+break;
 }
 }

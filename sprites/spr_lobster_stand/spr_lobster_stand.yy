@@ -7,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 3,
-  "bbox_right": 68,
+  "bbox_left": 2,
+  "bbox_right": 70,
   "bbox_top": 0,
   "bbox_bottom": 107,
   "HTile": false,
@@ -27,6 +27,12 @@
     {"compositeImage":{"FrameId":{"name":"1c569f9e-1ece-4482-8b54-85b61905b520","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"1c569f9e-1ece-4482-8b54-85b61905b520","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"LayerId":{"name":"37af7fb5-2600-469d-b2de-3be0184c8be5","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_lobster_stand","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","name":"1c569f9e-1ece-4482-8b54-85b61905b520","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0688f349-050a-481a-b52b-6dbaa44ef805","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0688f349-050a-481a-b52b-6dbaa44ef805","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"LayerId":{"name":"37af7fb5-2600-469d-b2de-3be0184c8be5","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_lobster_stand","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","name":"0688f349-050a-481a-b52b-6dbaa44ef805","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e08ac02c-8cb7-4e33-a5a2-35f356bb020f","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e08ac02c-8cb7-4e33-a5a2-35f356bb020f","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"LayerId":{"name":"37af7fb5-2600-469d-b2de-3be0184c8be5","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_lobster_stand","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","name":"e08ac02c-8cb7-4e33-a5a2-35f356bb020f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_lobster_stand","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},
@@ -36,12 +42,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d1fb1cd2-1129-44c9-a3c7-14b2be345add","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c569f9e-1ece-4482-8b54-85b61905b520","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7a0fffd7-9f25-441a-8e17-a75261f8a345","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0688f349-050a-481a-b52b-6dbaa44ef805","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6f3e23a6-b03a-4c40-a807-3bbdac4c971a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e08ac02c-8cb7-4e33-a5a2-35f356bb020f","path":"sprites/spr_lobster_stand/spr_lobster_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

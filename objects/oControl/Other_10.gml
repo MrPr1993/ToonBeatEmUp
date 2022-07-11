@@ -40,8 +40,10 @@ if enemySpawn=26 {enemySpawnName="26 Cobra" spawnUnit=oCobra}
 if enemySpawn=27 {enemySpawnName="27 Plant" spawnUnit=oPlant}
 if enemySpawn=28 {enemySpawnName="28 Animated Object" spawnUnit=oAnimatedObject}
 if enemySpawn=28 {enemySpawnName="29 Monk" spawnUnit=oMonk}
-if enemySpawn=30 {enemySpawnName="30 Lobster" spawnUnit=oLobster}
-if enemySpawn=31 {enemySpawnName="31 Spacer" spawnUnit=oSpacer}
+if enemySpawn=29 {enemySpawnName="30 Lobster" spawnUnit=oLobster}
+if enemySpawn=30 {enemySpawnName="31 Spacer" spawnUnit=oSpacer}
+if enemySpawn=31 {enemySpawnName="32 Diver" spawnUnit=oDiver}
+if enemySpawn=32 {enemySpawnName="33 Ladybot" spawnUnit=oLadybot}
 }
 if spawnType="Bosses"
 {

@@ -19,6 +19,8 @@ draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPo
 
 }
 
+if instance_exists(oProjectile) with oProjectile if shadow!=-1
+draw_sprite(shadow,0,x,y)
 
 
 if instance_exists(parEnemy) with parEnemy if visible and hasShadow=1 and !place_meeting(x,y,oFallHole) and fallHole=0

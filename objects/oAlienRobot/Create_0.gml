@@ -32,14 +32,14 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_alienrobot_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_alienrobot_stand
+JumpSpr2=spr_alienrobot_stand
+ThrownSpr=spr_alienrobot_hit
+FlatSpr=spr_alienrobot_flat
+ShockSpr=spr_alienrobot_elec
+BurnSpr=spr_alienrobot_burned
+FrozenSpr=spr_alienrobot_frozen
 
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_robotpal

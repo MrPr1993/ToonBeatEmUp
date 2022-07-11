@@ -4,7 +4,7 @@ function animsetup_zombie(){
 animsetup_enemy()
 overwriteMove=1
 overwriteStand=1
-canRun=0
+canRun=1
 
 if anim=0
 {sprite_index=StandSpr

@@ -69,19 +69,19 @@ if dataSet=-144*3
 draw_charinfoicon(19,spr_enemyface,16,24*19,unlockedChar[19])
 draw_charinfoicon(20,spr_enemyface,29,24*20,unlockedChar[20])
 draw_charinfoicon(21,spr_enemyface,42,24*21,unlockedChar[21])
-draw_charinfoicon(22,spr_enemyface,25,24*22,unlockedChar[22])
-draw_charinfoicon(23,spr_enemyface,26,24*23,unlockedChar[23])
-draw_charinfoicon(24,spr_enemyface,23,24*24,unlockedChar[24])
+draw_charinfoicon(22,spr_enemyface,45,24*22,unlockedChar[22])
+draw_charinfoicon(23,spr_enemyface,25,24*23,unlockedChar[23])
+draw_charinfoicon(24,spr_enemyface,26,24*24,unlockedChar[24])
 }
 else
 if dataSet=-144*4
 {
-draw_charinfoicon(25,spr_enemyface,28,24*25,unlockedChar[25])
-draw_charinfoicon(26,spr_enemyface,43,24*26,unlockedChar[26])
-draw_charinfoicon(27,spr_enemyface,27,24*27,unlockedChar[27])
-draw_charinfoicon(28,spr_enemyface,22,24*28,unlockedChar[28])
-//draw_charinfoicon(29,spr_enemyface,29,24*29,unlockedChar[29])
-//draw_charinfoicon(30,spr_enemyface,30,24*30,unlockedChar[30])
+draw_charinfoicon(25,spr_enemyface,23,24*25,unlockedChar[25])
+draw_charinfoicon(26,spr_enemyface,28,24*26,unlockedChar[26])
+draw_charinfoicon(27,spr_enemyface,43,24*27,unlockedChar[27])
+draw_charinfoicon(28,spr_enemyface,27,24*28,unlockedChar[28])
+draw_charinfoicon(29,spr_enemyface,22,24*29,unlockedChar[29])
+draw_charinfoicon(30,spr_enemyface,46,24*30,unlockedChar[30])
 }
 else
 if dataSet=-144*5

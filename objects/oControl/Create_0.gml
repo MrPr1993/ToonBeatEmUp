@@ -623,6 +623,6 @@ lockedMap[5]=1
 lockedMap[6]=1
 lockedMap[7]=1
 
-
+cameraYAdd=0
 
 //if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0

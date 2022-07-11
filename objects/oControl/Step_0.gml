@@ -163,7 +163,7 @@ if oPlayer.y>=oEnemySpawner.YView+120+80 {if oEnemySpawner.YView<camMaxY+80 {oEn
 with oEnemySpawner {YView=clamp(YView,MinY,MaxY-240) __view_set( e__VW.YView, 0, YView+oControl.quakeFX )}
 }
 else
-__view_set( e__VW.YView, 0, quakeFX )
+__view_set( e__VW.YView, 0, quakeFX)
 //else if view_xview[0]>camMin view_xview[0]-=2
 
 }

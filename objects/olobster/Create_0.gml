@@ -1,6 +1,6 @@
 enemy_data()
 
-name="LOBSTER"
+name="PINCHO"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=42
 
@@ -16,7 +16,7 @@ OneAttack=2
 hp=0.2
 maxhp=0.2
 
-height=70
+height=90
 
 specialFX=0
 
@@ -42,4 +42,4 @@ FrozenSpr=spr_lobster_burned
 
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_lobsterpal

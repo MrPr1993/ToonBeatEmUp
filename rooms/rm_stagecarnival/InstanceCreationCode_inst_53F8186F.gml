@@ -1,0 +1,1 @@
+boardspr=spr_poseboard3
