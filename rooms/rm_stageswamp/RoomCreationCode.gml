@@ -5,7 +5,7 @@ global.HiScoreStage=1
 oControl.stagePause=1
 
 with oEnemySpawner
-{MaxX=room_width-320 GoBack=1
+{MaxX=room_width-24 GoBack=1
 	GoBackY=1 canFollowY=1
 	MaxY=280
 		}

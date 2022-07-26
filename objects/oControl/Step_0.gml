@@ -1,10 +1,10 @@
 /// @description Beta Test
 if isPaused=0
 {
-if room=rm_cutscene1 or room=rm_opening
+if room=rm_cutscene1 or room=rm_opening or rm_brickbreak
 __view_set( e__VW.YView, 0, quakeFX)	
 
-
+camYAdd+=camYAddSpd
 
 if global.CanGlobalBeta=1
 if keyboard_check_pressed(ord("B")) 
@@ -21,6 +21,7 @@ if keyboard_check(vk_shift)
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay
 and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
+and room!=rm_soundtest and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
 {
 if betatest=1
 {
@@ -134,6 +135,7 @@ controller_setup()
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and  room!=rm_howtoplay and room!=rm_cutscene1
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
+and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading  and room!=rm_brickbreak
 {
 if camMove=0
 {
@@ -161,6 +163,7 @@ and p4.x<=__view_get( e__VW.XView, 0 )+160)
 
 if oPlayer.y>=oEnemySpawner.YView+120+80 {if oEnemySpawner.YView<camMaxY+80 {oEnemySpawner.YView=oPlayer.y-120-80 camMinY=oEnemySpawner.YView+80}}
 with oEnemySpawner {YView=clamp(YView,MinY,MaxY-240) __view_set( e__VW.YView, 0, YView+oControl.quakeFX )}
+
 }
 else
 __view_set( e__VW.YView, 0, quakeFX)

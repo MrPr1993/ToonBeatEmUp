@@ -20,4 +20,5 @@ lockedMap[16]=global.UnlockStage[16]
 lockedMap[17]=global.UnlockStage[17]
 lockedMap[18]=global.UnlockStage[18]
 lockedMap[19]=global.UnlockStage[19]
+lockedMap[20]=global.UnlockStage[20]
 }

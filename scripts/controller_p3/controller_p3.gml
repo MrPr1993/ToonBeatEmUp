@@ -19,6 +19,16 @@ key_right = keyboard_check(ord("D"));
 	key_shield_pressed = keyboard_check_pressed(ord("L"));
 	key_super=keyboard_check_pressed(ord("H"));
 
+	key_X=0
+	key_Y=0
+	key_A=0
+	key_B=0
+	key_LB=0
+	key_LT=0
+	key_RB=0
+	key_RT=0
+	key_pause=0
+
 	for (var i=0;i<gamepad_get_device_count();i++)
 	{
 	    if (gamepad_is_connected(i)) 

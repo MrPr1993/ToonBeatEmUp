@@ -18,11 +18,30 @@ key_right = keyboard_check(ord("D"));
 	key_shield = keyboard_check(ord("L"));
 	key_shield_pressed = keyboard_check_pressed(ord("L"));
 	key_super=keyboard_check_pressed(ord("H"));
+	
+	key_X=keyboard_check_pressed(ord("H"))
+	key_Y=keyboard_check_pressed(ord("L"))
+	key_A=keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) ///Accept
+	key_B=keyboard_check_pressed(ord("J"))  ///Cancel
+	key_LB=keyboard_check_pressed(ord("Y"))
+	key_LT=keyboard_check_pressed(ord("U"))
+	key_RB=keyboard_check_pressed(ord("I"))
+	key_RT=keyboard_check_pressed(ord("O"))
+	key_pause=keyboard_check_pressed(vk_escape) ///Pause
 
 	for (var i=0;i<gamepad_get_device_count();i++)
 	{
 	    if (gamepad_is_connected(i)) 
 	        {
+	key_X=0
+	key_Y=0
+	key_A=0
+	key_B=0
+	key_LB=0
+	key_LT=0
+	key_RB=0
+	key_RT=0
+	key_pause=0
         
 	        if keyboard_check(ord("D")) or gamepad_axis_value(i, gp_axislh)>0.1 or gamepad_button_check(i,gp_padr)
 	       key_right= 1 else key_right=0
@@ -50,6 +69,13 @@ key_right = keyboard_check(ord("D"));
 
 	key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(i,gp_face1)
 	key_super=keyboard_check_pressed(ord("H")) or gamepad_button_check_pressed(i,gp_face4)
+			
+
+
+	
 			}
+			
+
+			
 	}
 }

@@ -57,11 +57,12 @@ if enemySpawn=6 {enemySpawnName="3-b Hathor" spawnUnit=oPharaoh}
 if enemySpawn=7 {enemySpawnName="3-c Oni Sister" spawnUnit=oOni}
 if enemySpawn=8 {enemySpawnName="4-a Swamp Witch" spawnUnit=oWitch}
 if enemySpawn=9 {enemySpawnName="4-b Clown Puppet" spawnUnit=oClown}
-if enemySpawn=10 {enemySpawnName="4-c Seaweed" spawnUnit=oSeaweed}
-if enemySpawn=11 {enemySpawnName="4-c ???" spawnUnit=oIceGun}
-if enemySpawn=12 {enemySpawnName="4-c Merman Prince" spawnUnit=oPrince}
+if enemySpawn=10 {enemySpawnName="4-b Duck" spawnUnit=oDuckBoss}
+if enemySpawn=12 {enemySpawnName="4-c Seaweed" spawnUnit=oSeaweed}
 if enemySpawn=13 {enemySpawnName="4-c ???" spawnUnit=oIceGun}
-if enemySpawn=14 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
+if enemySpawn=14 {enemySpawnName="4-c Merman Prince" spawnUnit=oPrince}
+if enemySpawn=15 {enemySpawnName="4-c ???" spawnUnit=oIceGun}
+if enemySpawn=16 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
 }
 
 if spawnType="Item"
@@ -90,9 +91,9 @@ if enemySpawn=4 {enemySpawnName="5 Treadmill" spawnUnit=oTreadmill}
 if enemySpawn=5 {enemySpawnName="6 Bomb" spawnUnit=oBomb}
 if enemySpawn=6 {enemySpawnName="7 Elec Floor" spawnUnit=oElecFloor}
 if enemySpawn=7 {enemySpawnName="8 Barrel" spawnUnit=oBarrel}
-if enemySpawn=8 {enemySpawnName="9 Elec Floor" spawnUnit=oElecFloor}
+if enemySpawn=8 {enemySpawnName="9 Bull" spawnUnit=oBull}
 if enemySpawn=9 {enemySpawnName="10 Car" spawnUnit=oCar}
-if enemySpawn=10 {enemySpawnName="9 Elec Floor" spawnUnit=oElecFloor}
+if enemySpawn=10 {enemySpawnName="11 Gun Range" spawnUnit=oGunRange}
 }
 
 if spawnType="Spawn Area"

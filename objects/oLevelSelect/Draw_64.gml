@@ -17,39 +17,39 @@ draw_text(10, yy++ * 10, string_hash_to_newline("CHARACTER SELECT"));
 if level=2 draw_set_color(c_yellow) else draw_set_color(c_blue)
 draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 1, STREET"));
 if level=3 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 2, CAR-SHIP"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 2B, AIRPORT"));
 if level=4 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3, MUSEUM "));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 2, CAR-SHIP"));
 if level=5 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3B, GRAVEYARD"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 2C, TRAIN"));
 if level=6 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3C, CASINO"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3B, GRAVEYARD"));
 if level=7 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 6"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3, MUSEUM"));
 if level=8 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 7"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3C, NINJA CASINO"));
 if level=9 draw_set_color(c_yellow) else draw_set_color(c_blue)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 8"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 4B, SWAMP"));
 if level=10 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("TEST AREA"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 4, CARNIVAL"));
 if level=11 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("TEST AREA 2"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 4C, BEACH"));
 if level=12 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("TEST AREA 3"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 5B, UFO"));
 if level=13 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("HI SCORE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 5, UNDERWATER"));
 if level=14 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("ANIM EDITOR"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 5C, DESERT"));
 if level=15 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("BLANK VOID"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 6B, SNOW MOUNTAINS"));
 if level=16 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("TEST AREA 4"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 6, CAVERNS"));
 if level=17 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("NEWSPAPER INTRO"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 6C, CLOUDS"));
 if level=18 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("OPENING"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 7, LABORATORY"));
 if level=19 draw_set_color(c_maroon) else draw_set_color(c_red)
-draw_text(10, yy++ * 10, string_hash_to_newline("CREDITS"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 8, FINAL"));
 if level=20 draw_set_color(c_maroon) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("MAP SCREEN"));
 }
@@ -66,29 +66,29 @@ draw_text(10, yy++ * 10, string_hash_to_newline("SHOP"));
 if level=24 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("TRAINING"));
 if level=25 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 2-B, AIRPORT STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("SOUND TEST"));
 if level=26 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGE 3-C, TRAIN STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("GALLERY"));
 if level=27 draw_set_color(c_maroon) else draw_set_color(c_red)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("XXX"));
 if level=28 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("XXX"));
 if level=29 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("HI-SCORE"));
 if level=30 draw_set_color(c_yellow) else draw_set_color(c_red)
-draw_text(10, yy++ * 10, string_hash_to_newline("MERMAID STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("ANIM EDITOR"));
 if level=31 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGe 4-A, SWAMP STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("BLANK VOID"));
 if level=32 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGe 4-B, CARNIVAL STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("NEWSPAPER"));
 if level=33 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("STAGe 4-C, BEACH STAGE"));
+draw_text(10, yy++ * 10, string_hash_to_newline("OPENING"));
 if level=34 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CREDITS"));
 if level=35 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CAR MINIGAME"));
 if level=36 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("BRICK MINIGAME"));
 if level=37 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=38 draw_set_color(c_yellow) else draw_set_color(c_gray)
@@ -101,13 +101,13 @@ draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level<61
 {
 if level=41 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("TEST 1"));
 if level=42 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("TEST 2"));
 if level=43 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("TEST 3"));
 if level=44 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("TEST 4"));
 if level=45 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("CAR GAME"));
 if level=46 draw_set_color(c_yellow) else draw_set_color(c_gray)

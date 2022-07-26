@@ -26,6 +26,17 @@ function controller_setup() {
 	key_cancel=0
 	key_accept=0
 	key_switch=0
+	
+	key_X=0
+	key_Y=0
+	key_A=0
+	key_B=0
+	key_LB=0
+	key_LT=0
+	key_RB=0
+	key_RT=0
+	key_pause=0
+	
 
 	}
 else
@@ -38,8 +49,9 @@ else
 	controller_p3()	    
 	if controlNO=4
 	controller_p4()	    
+	if controlNO=9
+	controller_menu()	   
 	        }
-
 
 
 }

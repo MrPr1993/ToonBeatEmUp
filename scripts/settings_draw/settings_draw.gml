@@ -28,6 +28,7 @@ draw_text(160,56+4+16,"CRT DISTORT LEVEL ")
 draw_text(160,56+4+24,"CRT BORDER LEVEL ")
 draw_set_color(c_white)
 draw_text(160,56+4+32,"COLOR SETTINGS ")
+draw_text(160,56+4+32+8,"SCREEN LAYER ")
 draw_text(160,64+8+48,"SCREEN SHAKE ")
 draw_text(160,72+8+484,"SCREEN FLASH ")
 if stagePause=1 draw_set_color(c_dkgray)
@@ -74,6 +75,13 @@ draw_text(160,56+4+32," SEPIA"+string(global.ColorMode))
 if global.ColorMode=3
 draw_text(160,56+4+32," OLD HANDHELD"+string(global.ColorMode))
 
+if global.ArcadeScreen=0
+draw_text(160,56+4+32+8," NONE "+string(global.ArcadeScreen))
+if global.ArcadeScreen=1
+draw_text(160,56+4+32+8," ARCADE "+string(global.ArcadeScreen))
+if global.ArcadeScreen=2
+draw_text(160,56+4+32+8," ROOM "+string(global.ArcadeScreen))
+
 if global.Screenshake=1
 draw_text(160,64+8+48," ON") else draw_text(160,64+8+48," OFF")
 if global.Screenflash=1
@@ -104,12 +112,13 @@ if menuSelect=4 StarY=24+4+8
 if menuSelect=5 StarY=24+4+16
 if menuSelect=6 StarY=24+4+24
 if menuSelect=7 StarY=24+4+32
+if menuSelect=8 StarY=24+4+32+8
 
-if menuSelect=8 StarY=32+8+32+16
-if menuSelect=9 StarY=40+8+40+8
-if menuSelect=10 StarY=48+12+56-8
-if menuSelect=11 StarY=56+12+64-16
-if menuSelect=12 StarY=56+12+72-4
+if menuSelect=9 StarY=32+8+32+16
+if menuSelect=10 StarY=40+8+40+8
+if menuSelect=11 StarY=48+12+56-8
+if menuSelect=12 StarY=56+12+64-16
+if menuSelect=13 StarY=56+12+72-4
 
 draw_sprite(spr_scorefont,43,160-4,32+StarY)
 

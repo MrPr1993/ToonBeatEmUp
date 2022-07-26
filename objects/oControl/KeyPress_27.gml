@@ -1,5 +1,6 @@
 if continueScreen=0
 if room=rm_chardata or room=rm_map or room=rm_hiscore or room=rm_characterselect or room=rm_feats or room=rm_shop
+or room=rm_soundtest or room=rm_gallery 
 {global.MenuSkip=1 global.IntroSkip=2
 if rm_characterselect and p1Select=1
 {if characterSelReady!=2

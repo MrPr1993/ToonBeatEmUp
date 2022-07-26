@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-	if TVfx!=0
+	if TVfx!=9999
 {application_surface_draw_enable(false);
 if crtcheck=320
 {
@@ -17,12 +17,12 @@ surface_height=window_get_height()/2
 else application_surface_draw_enable(true);
 	
 	
-	if TVfx!=0
+	if TVfx!=9999
 if (surface_exists(new_surf) == false) {
   new_surf = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 }
 
-	if TVfx!=0
+	if TVfx!=999
 	{
 surface_resize(new_surf,320,240)
 

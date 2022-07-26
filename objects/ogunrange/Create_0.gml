@@ -15,5 +15,6 @@ z=0
 
 targetEnemy=instance_nearest(x,y,oPlayer)
 
-armY=0
+armY=64
+away=0
 

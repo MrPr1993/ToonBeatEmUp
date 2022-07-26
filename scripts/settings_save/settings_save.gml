@@ -11,6 +11,7 @@ ini_write_real("SETTINGS", "CRT", global.CRTfx)
 ini_write_real("SETTINGS", "CRTcustom1", global.CRTcustomDistort)
 ini_write_real("SETTINGS", "CRTcustom2", global.CRTcustomDistortAM)
 ini_write_real("SETTINGS", "CRTcustom3", global.CRTcustomBorder)
+ini_write_real("SETTINGS", "CRTcustom4", global.ArcadeScreen)
 
 ini_write_real("SETTINGS", "ColorMode", global.ColorMode)
 

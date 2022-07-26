@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_planecol",
     "path": "sprites/spr_planecol/spr_planecol.yy",

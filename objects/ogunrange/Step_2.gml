@@ -3,6 +3,14 @@
 
 depth=-1000
 
+if armY!=0 armY-=1
+
+if away=1
+{
+fire=9 firing=0 image_index=0
+if armY!=64 armY+=1 else instance_destroy()
+}
+
 if buffer!=0 {buffer-=1 if fire=0 firing=100 state=0}
 else
 {

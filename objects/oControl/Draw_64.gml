@@ -16,7 +16,7 @@ else
 	}
 	}
 	
-	if oControl.TVfx!=0
+	if oControl.TVfx!=9999
 {application_surface_draw_enable(false);
 if crtcheck=320
 {
@@ -37,7 +37,7 @@ if (surface_exists(new_surf) == false) {
   new_surf = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 }
 
-	if oControl.TVfx!=0
+	if oControl.TVfx!=9999
 	{
 surface_resize(new_surf,320,240)
 
@@ -55,6 +55,7 @@ if isPaused=0
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay and room!=rm_cutscene1
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
+and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
 {
 if betatest=1
 {
@@ -808,24 +809,20 @@ draw_set_color(c_white) draw_set_alpha(1)
 draw_sprite(spr_characterselecttext,0,160,round(32+charselLerp))
 
 if p1Select=0
-{
-if -key_left_pressed{PlaySound(snd_select)
+{if -p1.key_left_pressed{PlaySound(snd_select)
 if global.P1Char=0 global.P1Char=3 else
 global.P1Char-=1}
-
-if key_right_pressed{PlaySound(snd_select)
+if p1.key_right_pressed{PlaySound(snd_select)
 if global.P1Char=3 global.P1Char=0 else
 global.P1Char+=1}
 }
-
 if global.UnlockAltPal=1
 {
-if key_up_pressed if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1 
-if -key_down_pressed if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1 
+if p1.key_up_pressed if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1 
+if -p1.key_down_pressed if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1 
 }
 //current_pal=0;
 //my_pal_sprite=spr_playerpal
-
 {
 if global.P1Char=0 pal_swap_set(spr_playerpal,global.p1Pal,false);
 draw_sprite(spr_csviva,0,0,53) pal_swap_reset()
@@ -875,8 +872,6 @@ if global.P1Char=1 PlaySound(snd_hina1)
 if global.P1Char=2 PlaySound(snd_bahati1)
 if global.P1Char=3 PlaySound(snd_sofia1)
 }
-
-
 if global.P1Char=0 {
 if p1Flicker<1
 draw_sprite(spr_characterselect,0,0,53)
@@ -973,7 +968,7 @@ if charSelFlash=0 {charSelFlash=60 charSelCountdown-=1}
 if charSelCountdown=0 charSelForceSelect=1
 }
 
-if key_attack or keyboard_check_pressed(vk_enter)// or charSelForceSelect=1
+if p1.key_attack or keyboard_check_pressed(vk_enter)// or charSelForceSelect=1
 {
 
 if characterSelReady!=2
@@ -1546,6 +1541,8 @@ charinfo_draw()
 animeditor_gui()
 settings_draw()
 draw_shop()
+soundtest_draw()
+gallery_draw()
 
 if global.fpsMode=1
 {draw_set_font(global.scorefont) draw_set_halign(fa_right)
@@ -1564,6 +1561,8 @@ draw_set_color(c_black) draw_set_alpha(0.5)
 }
 ////
 crt_fxset()
+
+
 
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)

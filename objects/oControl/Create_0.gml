@@ -1,6 +1,6 @@
 roomfast=0
 canControl=1
-controlNO=1
+controlNO=9
 controller_setup()
 
 instance_create(0,0,oBlackFX)
@@ -72,6 +72,8 @@ global.CutsceneSkipper=0
 
 global.LevelSelectSave=0
 
+
+
 global.TrainingRoom=0
 
 
@@ -113,6 +115,8 @@ global.SFXvolume=100
 
 global.Screenshake=1
 global.Screenflash=1
+
+global.ArcadeScreen=0
 
 global.ContinueStart=-1
 global.Continues=-1
@@ -360,6 +364,10 @@ MaxX=x+sprite_width-320
 
 camMin=0
 camMinY=0
+
+camYAdd=0
+camYAddSpd=0
+
 if !instance_exists(oCamLock)
 {
 camMax=room_width camMaxY=240+16}
@@ -380,7 +388,14 @@ hiscore_load()
 
 if room=rm_setup
 {
-room_goto_next()
+
+room_goto(rm_loading)
+}
+
+if room=rm_loading
+{
+assets_load()	
+room_goto(rm_titlescreen)
 }
 
 screenBlack=0
@@ -601,6 +616,54 @@ gold_load()
 
 if room=rm_titlescreen global.StageSelect=0
 
+if room=rm_soundtest
+{
+songno=0
+songname="SELECT A SOUND OR SOUND"
+soundno=1
+soundname="VIVA 1"
+playSFX=snd_viva4
+
+songtime=0
+songmin=0
+songsec=0
+
+songMinTime=0
+songMaxTime=0
+
+seconds=0
+seconds2=0
+seconds3=0
+
+secondsMAX=0
+secondsMAX=0
+secondsMAX=0
+
+songplaying=-1
+
+songzero=0
+songend=0
+songPlay=0
+songSPD=1
+playingSound=msc_stage1
+soundSPD=1
+
+songID=-1
+
+soundSelect=1
+}
+
+if room=rm_gallery
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,false,false,sprite_get_width(spr_galleryimg1)/2,sprite_get_height(spr_galleryimg1)/2)
+
+pictureX=0
+pictureY=0
+gallerySet=1
+pictureMax=1
+pictureZoom=0.25/2
+galleryNO=1
+}
 
 enemySpawn=global.enemytest
 spawnNo=global.enemytestB
@@ -624,5 +687,13 @@ lockedMap[6]=1
 lockedMap[7]=1
 
 cameraYAdd=0
+
+if room=rm_characterselect
+{
+p1=instance_create_depth(0,0,-1,oPlayerDisembodied) with p1 {canControl=1 controlNO=1}
+p2=instance_create_depth(0,0,-1,oPlayerDisembodied) with p2 {canControl=1 controlNO=2}
+p3=instance_create_depth(0,0,-1,oPlayerDisembodied) with p3 {canControl=1 controlNO=3}
+p4=instance_create_depth(0,0,-1,oPlayerDisembodied) with p4 {canControl=1 controlNO=4}
+}
 
 //if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0

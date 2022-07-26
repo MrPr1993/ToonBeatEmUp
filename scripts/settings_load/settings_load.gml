@@ -9,6 +9,7 @@ global.CRTfx=ini_read_real("SETTINGS", "CRT", 0);
 global.CRTcustomDistort=ini_read_real("SETTINGS", "CRTcustom1", true);
 global.CRTcustomDistortAM=ini_read_real("SETTINGS", "CRTcustom2", 0.12);
 global.CRTcustomBorder=ini_read_real("SETTINGS", "CRTcustom3", true);
+global.ArcadeScreen=ini_read_real("SETTINGS", "CRTcustom4", 0);
 
 global.ColorMode=ini_read_real("SETTINGS", "ColorMode", 0);
 

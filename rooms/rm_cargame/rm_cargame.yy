@@ -112,8 +112,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "1c - Minigames",
-    "path": "folders/1c - Minigames.yy",
+    "name": "Car Breaking Game",
+    "path": "folders/1c - Minigames/Car Breaking Game.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_cargame",

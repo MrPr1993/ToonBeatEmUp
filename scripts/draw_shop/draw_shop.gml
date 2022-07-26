@@ -3,7 +3,7 @@
 function draw_shop(){
 if room=rm_shop
 {fpsX=320 fpsY=8
-controller_setup()
+
 
 ///Buy Item
 if shopBuy!=-1
@@ -11,7 +11,7 @@ if shopBuy!=-1
 if -key_left_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
 if key_right_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
 
-if key_attack or key_jump or key_shield_pressed or key_super
+if key_A
 if shopBuy=0 {shopBuy=-1 shopDialogueTime=2 shopDialogueAlt=5}
 else {shopDialogueAlt=4 shopDialogueTime=120 shopBuy=-1
 	
@@ -78,7 +78,7 @@ if shopDialogueAlt=7
 }
 else
 {
-if key_attack or key_jump or key_shield_pressed or key_super
+if key_A
 if shopSelect=-1 or shopSelect=-2
 {
 shopDialogueTime=120 shopDialogueAlt=2 
@@ -138,23 +138,23 @@ if shopSet=0 /////Shop Items
 if 	global.UnlockCharacterData=0 shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,1,2+2,16) shader_reset() if 	global.UnlockAltPal=0 shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,2,2+4+32,16) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+6+64,16) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+8+64+32,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,3,2+6+64,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,4,2+8+64+32,16) shader_reset() shader_set(shd_grayscale)
 ///Set 2
-draw_sprite(spr_shopitem,0,2+2,16+2+32) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+4+32,16+2+32) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+6+64,16+2+32) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+8+64+32,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,5,2+2,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,6,2+4+32,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,7,2+6+64,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,8,2+8+64+32,16+2+32) shader_reset() shader_set(shd_grayscale)
 ///Set 3
-draw_sprite(spr_shopitem,0,2+2,16+4+64) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+4+32,16+4+64) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+6+64,16+4+64) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+8+64+32,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,9,2+2,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,10,2+4+32,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,11,2+6+64,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,12,2+8+64+32,16+4+64) shader_reset() shader_set(shd_grayscale)
 ///Set 4
-draw_sprite(spr_shopitem,0,2+2,16+6+96) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+4+32,16+6+96) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+6+64,16+6+96) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,0,2+8+64+32,16+6+96) shader_reset()
+draw_sprite(spr_shopitem,13,2+2,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,14,2+4+32,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,15,2+6+64,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,16,2+8+64+32,16+6+96) shader_reset()
 }
 
 draw_sprite(spr_shoppad,2,140,15)

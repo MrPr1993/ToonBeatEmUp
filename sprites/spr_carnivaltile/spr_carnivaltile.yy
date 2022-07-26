@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"56dd4d25-b132-4eed-83d7-f2b9d9226171","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"56dd4d25-b132-4eed-83d7-f2b9d9226171","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"LayerId":{"name":"a4319849-d86e-44ee-abba-a436ae52b8de","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_carnivaltile","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"resourceVersion":"1.0","name":"56dd4d25-b132-4eed-83d7-f2b9d9226171","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d43cacf9-7919-4449-9a69-c0c6a5e02db7","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d43cacf9-7919-4449-9a69-c0c6a5e02db7","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"LayerId":{"name":"a4319849-d86e-44ee-abba-a436ae52b8de","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_carnivaltile","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"resourceVersion":"1.0","name":"d43cacf9-7919-4449-9a69-c0c6a5e02db7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_carnivaltile","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a544487c-baca-4786-bded-e692985afec0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"56dd4d25-b132-4eed-83d7-f2b9d9226171","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c277e2d5-763a-4738-b43b-1a25c6d995c7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d43cacf9-7919-4449-9a69-c0c6a5e02db7","path":"sprites/spr_carnivaltile/spr_carnivaltile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

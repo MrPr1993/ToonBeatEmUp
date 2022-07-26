@@ -49,7 +49,7 @@ break;
  charinfo_set(12,spr_clown_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,38,"MS.PUNCH",
  "???") break;
     case 10:
- charinfo_set(12,spr_clown_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,39,"MS.PUNCH",
+ charinfo_set(12,spr_duck_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,39,"MS.PUNCH",
  "???") break;
    case 11:
  charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,40,"MS.PUNCH",
@@ -58,7 +58,29 @@ break;
  charinfo_set(12,spr_seaweed_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,41,"MS.PUNCH",
  "???") break;
    case 13:
- charinfo_set(12,spr_boxer_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,0,"MS.PUNCH",
+ charinfo_set(12,spr_martian_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,0,"MS.PUNCH",
  "???") break;
+    case 14:
+ charinfo_set(12,spr_prince_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,30,"MS.PUNCH",
+ "???") break;
+    case 15:
+ charinfo_set(12,spr_genie_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,47,"MS.PUNCH",
+ "???") break;
+     case 16:
+ charinfo_set(12,spr_viva_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,0,"MIRROR VIVA",
+ "???") break;
+     case 17:
+ charinfo_set(12,spr_plantprincess_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,33,"LADY",
+ "???") break;
+     case 18:
+ charinfo_set(12,spr_boxer_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,0,"GIANT",
+ "???") break;
+     case 19:
+ charinfo_set(12,spr_scientist_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,36,"SCIENTIST",
+ "???") break;
+      case 20:
+ charinfo_set(12,spr_dastardly_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,47,"DASTARDLY",
+ "???") break;
+ 
 }
 }

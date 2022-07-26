@@ -31,7 +31,7 @@ if mapSelected=0 and quickMapLerp=0
 if -key_left_pressed
 {if mapSelX!=0 {mapSelX-=1 PlaySound(snd_select)} else {}}
 if key_right_pressed
-{if mapSelX!=6 {mapSelX+=1 PlaySound(snd_select)} else {}}
+{if mapSelX!=7 {mapSelX+=1 PlaySound(snd_select)} else {}}
 
 if key_up_pressed
 {if mapSelY!=-1 {mapSelY-=1 PlaySound(snd_select)} else {}}
@@ -69,21 +69,29 @@ if mapSelX=2 and mapSelY=-1 {global.StageGoing=rm_stage4 mapSXlerp=248 mapSYlerp
 if mapSelX=2 and mapSelY=0 {global.StageGoing=rm_stage3 mapSXlerp=228 mapSYlerp=154 if lockedMap[6]=1  mapSName="STAGE 3\nMASHUP MUSEUM"}
 if mapSelX=2 and mapSelY=1 {global.StageGoing=rm_stage5 mapSXlerp=204 mapSYlerp=212 if lockedMap[7]=1 mapSName="STAGE 3-C\nLUCKY DOJO CASINO"}
 //D
-if mapSelX=3 and mapSelY=-1 {mapSXlerp=320 mapSYlerp=111 if lockedMap[8]=1 mapSName="STAGE 0D"}
-if mapSelX=3 and mapSelY=0 {mapSXlerp=320 mapSYlerp=157 if lockedMap[9]=1 mapSName="STAGE 1D"}
-if mapSelX=3 and mapSelY=1 {mapSXlerp=320 mapSYlerp=215 if lockedMap[10]=1 mapSName="STAGE 2D"}
+if mapSelX=3 and mapSelY=-1 {global.StageGoing=rm_stageswamp mapSXlerp=320 mapSYlerp=111 if lockedMap[8]=1 mapSName="STAGE 4-B\nDEAD SWAMPS"}
+if mapSelX=3 and mapSelY=0 {global.StageGoing=rm_stagecarnival mapSXlerp=320 mapSYlerp=157 if lockedMap[9]=1 mapSName="STAGE 4\nCLOWNY DUCK CARNIVAL"}
+if mapSelX=3 and mapSelY=1 {global.StageGoing=rm_stagebeach mapSXlerp=320 mapSYlerp=215 if lockedMap[10]=1 mapSName="STAGE 4-C/nDOWN SIDE BEACH"}
 //E
-if mapSelX=4 and mapSelY=-1 {mapSXlerp=640-248 mapSYlerp=109 if lockedMap[11]=1 mapSName="STAGE 0E"}
-if mapSelX=4 and mapSelY=0 {mapSXlerp=640-228 mapSYlerp=154 if lockedMap[12]=1 mapSName="STAGE 1E"}
-if mapSelX=4 and mapSelY=1 {mapSXlerp=640-204 mapSYlerp=212 if lockedMap[13]=1 mapSName="STAGE 2E"}
+if mapSelX=4 and mapSelY=-1 {global.StageGoing=rm_stageufo mapSXlerp=640-248 mapSYlerp=109 if lockedMap[11]=1 mapSName="STAGE 5-B\nUFO BEYOND THE STARS"}
+if mapSelX=4 and mapSelY=0 {global.StageGoing=rm_stagemermaid mapSXlerp=640-228 mapSYlerp=154 if lockedMap[12]=1 mapSName="STAGe 5\nUNDERWATER JAM"}
+if mapSelX=4 and mapSelY=1 {global.StageGoing=rm_stagedesert mapSXlerp=640-204 mapSYlerp=212 if lockedMap[13]=1 mapSName="STAGE 5-C\nHEATING HOT DESERT"}
 //F
-if mapSelX=5 and mapSelY=-1 {mapSXlerp=640-190 mapSYlerp=102 if lockedMap[14]=1  mapSName="STAGE 0F"}
-if mapSelX=5 and mapSelY=0 {mapSXlerp=640-152 mapSYlerp=142 if lockedMap[15]=1  mapSName="STAGE 1F"}
-if mapSelX=5 and mapSelY=1 {mapSXlerp=640-102 mapSYlerp=194 if lockedMap[16]=1  mapSName="STAGE 2F"}
+if mapSelX=5 and mapSelY=-1 {global.StageGoing=rm_stagesnow mapSXlerp=640-190 mapSYlerp=102 if lockedMap[14]=1  mapSName="STAGE 6-B\nCLIMBING COLD"}
+if mapSelX=5 and mapSelY=0 {global.StageGoing=rm_stagecave mapSXlerp=640-152 mapSYlerp=142 if lockedMap[15]=1  mapSName="STAGE 6\nFANTASTIC CAVERNS"}
+if mapSelX=5 and mapSelY=1 {global.StageGoing=rm_stageclouds mapSXlerp=640-102 mapSYlerp=194 if lockedMap[16]=1  mapSName="STAGE 6-C\nHEAD IN THE CLOUDS"}
 //G
-if mapSelX=6 and mapSelY=-1 {mapSXlerp=640-128 mapSYlerp=87 if lockedMap[17]=1 mapSName="STAGE 0G"}
-if mapSelX=6 and mapSelY=0 {mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 1G"}
-if mapSelX=6 and mapSelY=1 {mapSXlerp=640-24 mapSYlerp=166 if lockedMap[19]=1 mapSName="STAGE 2G"}
+if mapSelX=6 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=0 {global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+//if mapSelX=6 and mapSelY=-1 {mapSXlerp=640-128 mapSYlerp=87 if lockedMap[17]=1 mapSName="STAGE 0G"}
+//if mapSelX=6 and mapSelY=0 {mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 1G"}
+//if mapSelX=6 and mapSelY=1 {mapSXlerp=640-24 mapSYlerp=166 if lockedMap[19]=1 mapSName="STAGE 2G"}
+//H
+if mapSelX=7 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=0 {global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+
 
 x=mapSX
 y=mapSY
