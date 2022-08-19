@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_shadow3",
     "path": "sprites/spr_shadow3/spr_shadow3.yy",

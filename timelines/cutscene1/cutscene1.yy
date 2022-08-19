@@ -85,7 +85,7 @@
   ],
   "parent": {
     "name": "Cutscene1",
-    "path": "folders/1b - Cutscenes/Cutscene1.yy",
+    "path": "folders/1c - Cutscenes/Cutscene1.yy",
   },
   "resourceVersion": "1.0",
   "name": "cutscene1",

@@ -27,6 +27,8 @@ frame_set(1,1,0.1) if animFrame>2-0.1 animFrame=0
 if key_attack
 {animFrame=0 anim=10
 	if meter=clamp(meter,36-4,36+4) win=1 else win=0
+	
+	PlaySound(voice1)
 	}
 }
 
@@ -37,13 +39,23 @@ frame_set(0,2,0.25)
 frame_set(1,3,0.05)
 frame_set(2,4,0.25) if animFrame=3
 {if win=0
-	{shaketime=10 oBrickBreakGame.resulttext1="NO BONUS" oBrickBreakGame.altresult1=0}
+	{PlaySound(snd_steal) 	PlaySound(voice2)
+		
+		shaketime=10 oBrickBreakGame.resulttext1="NO BONUS" oBrickBreakGame.altresult1=0}
 	else
-	{brickbreak=1 oControl.quakeFXTime=10 oBrickBreakGame.resulttext1="BONUS"}
+	{ //snd_viva13
+		PlaySound(snd_explosion)
+		brickbreak=1 oControl.quakeFXTime=10 oBrickBreakGame.resulttext1="BONUS"}
 }
 if win=0
 frame_set(3,6,0.01) else frame_set(3,5,0.01) 
-if animFrame>4 oBrickBreakGame.p1Over=1
+if animFrame>4 
+{
+	if controlNO=1	oBrickBreakGame.p1Over=1
+		if controlNO=2	oBrickBreakGame.p2Over=1
+			if controlNO=3	oBrickBreakGame.p3Over=1
+				if controlNO=4	oBrickBreakGame.p4Over=1
+}
 frame_set(4,7,0.25)
 if win=0 frame_set(5,9,0) else frame_set(5,8,0)
 }

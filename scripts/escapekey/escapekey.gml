@@ -37,8 +37,7 @@ if stagePause=0
 	else
 	{
 	global.MenuSkip=1
-room_restart() 
-	
+room_restart() 	
 	}
 	}
 else

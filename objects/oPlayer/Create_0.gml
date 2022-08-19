@@ -149,32 +149,9 @@ cutSpr2B=spr_viva_cutB2
 
 controlNO=1
 
-global.multiMode=1
+//global.multiMode=1
 if instance_number(oPlayer)=1
-{controlNO=1
-with oControl
 {
-p1=oPlayer
-p2=oPlayer
-p3=oPlayer
-p4=oPlayer
-}
-	
-if global.multiMode>1
-with oControl
-{
-
-if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
-and room!=rm_animeditor and room!=rm_newspaper
-{
-if global.multiMode>=2
-{p2=instance_create(160,208-16,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1}
-if global.multiMode>=3
-{p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2}
-if global.multiMode>=4
-{p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3}
-}
-}
 }
 //(floorPosX+waistPosX+headPosX)*SpritePos
 //(floorPosY+waistPosY+headPosY)*SpritePos

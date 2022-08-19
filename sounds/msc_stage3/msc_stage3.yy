@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 3,
   "volume": 1.0,
   "preload": true,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_stage3",
-  "duration": 60.8391838,
+  "duration": 60.839184,
   "parent": {
     "name": "Music",
     "path": "folders/f - Sounds/Music.yy",

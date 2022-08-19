@@ -8,7 +8,7 @@ if room=rm_map
 {
 controller_setup()
 
-if key_attack or key_jump or key_super or key_shield_pressed or keyboard_check_pressed(vk_enter)
+if key_attack or key_super or key_shield_pressed or keyboard_check_pressed(vk_enter) or key_start
 if mapSelected=0 and quickMapLerp=0
 {
 if mapSName="LOCKED"
@@ -111,6 +111,68 @@ if global.P1Char=3 mapSpr=spr_sofia_map
 draw_sprite(mapSpr,mapIndex,mapSX,mapSY)
 ///Check on Map Location
 
+}
+
+if room=rm_gallery
+{
+
+fpsY=-999
+
+if gallerychoosing=0
+{
+	draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16,16,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64,16,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64*2,16,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64*3,16,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16,16+96,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64,16+96,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64*2,16+96,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64*3,16+96,1,1,0,c_grey,1)
+
+draw_sprite_ext(spr_galleryicon,0,16+16+64*galleryX,16+96*galleryY,1,1,0,c_white,1)	
+}
+if gallerychoosing=1
+{
+if gallerybuffer=0
+{
+if -key_left pictureX-=1
+if key_right pictureX+=1
+if key_up pictureY-=1
+if key_down pictureY+=1
+if key_charge if pictureZoom<5 pictureZoom+=0.001
+if key_shield if pictureZoom>0.01 pictureZoom-=0.001
+if key_jump room=rm_menu
+
+if key_charge and key_shield pictureZoom=0.25/3
+
+//if key_LB//
+if key_super if showtext=1 showtext=0 else showtext=1
+}
+draw_set_color(c_white)
+//draw_sprite_ext(spr_galleryimg1,galleryNO,160+pictureX,120+pictureY,1*pictureZoom,1*pictureZoom,0,c_white,1)
+{		
+if pictureNO=1 currentimagespr=spr_galleryimg1	
+if pictureNO=2 currentimagespr=spr_galleryimg2
+if pictureNO=3 currentimagespr=spr_galleryimg3	
+if pictureNO=4 currentimagespr=spr_galleryimg4	
+
+
+if key_start if filtermode=0 filtermode=1 else filtermode=0
+
+gpu_set_texfilter(filtermode);
+
+//draw_sprite_ext(spr_galleryimg1,galleryNO,pictureX,pictureY,1*pictureZoom,1*pictureZoom,0,c_white,1)
+
+draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(currentimagespr,0));
+draw_vertex_texture(-(sprite_get_width(currentimagespr)/2)*pictureZoom+pictureX, -(sprite_get_height(currentimagespr)/2)*pictureZoom+pictureY, 0, 0);
+draw_vertex_texture((sprite_get_width(currentimagespr)/2)*pictureZoom+pictureX, -(sprite_get_height(currentimagespr)/2)*pictureZoom+pictureY, 1, 0);
+draw_vertex_texture(-(sprite_get_width(currentimagespr)/2)*pictureZoom+pictureX, (sprite_get_height(currentimagespr)/2)*pictureZoom+pictureY, 0, 1);
+draw_vertex_texture((sprite_get_width(currentimagespr)/2)*pictureZoom+pictureX, (sprite_get_height(currentimagespr)/2)*pictureZoom+pictureY, 1, 1);
+draw_primitive_end();
+gpu_set_texfilter(false);
+
+}
+}
 }
 }
 shader_reset()

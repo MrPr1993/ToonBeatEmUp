@@ -22,6 +22,7 @@ if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay
 and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
 and room!=rm_soundtest and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
+and room!=rm_menu and room!=rm_settings
 {
 if betatest=1
 {
@@ -34,7 +35,18 @@ else
 {
 if keyboard_check(vk_control)
 {p2.x=p1.x p3.x=p1.x p4.x=p1.x}
-else room_restart()
+else
+if keyboard_check(vk_backspace)
+{
+	//global.P1available=(oControl.p1.isReady)
+	global.P2available=get_string("P2 Active?",global.P2available)
+	global.P3available=get_string("P3 Active?",global.P3available)
+	global.P4available=get_string("P4 Active?",global.P4available)
+	global.multiMode=2
+	room_restart()
+	}
+else
+room_restart()
 }
 ///Insta-Game Over
 if keyboard_check_pressed(vk_f2)
@@ -136,6 +148,7 @@ if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and  room!=rm_howtoplay and room!=rm_cutscene1
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading  and room!=rm_brickbreak
+and room!=rm_menu  and room!=rm_settings
 {
 if camMove=0
 {
@@ -273,5 +286,4 @@ quakeFX=0 quakeFXTime=0
 
 
 }
-
 

@@ -1118,6 +1118,26 @@ selfatk.height=128
 	}
 	}
 	
+			///Taunt
+	if anim=83
+{sprite_index=spr_sofia_taunt
+atk=0 
+	frame_set(0,0,0.2)
+	frame_set(1,1,0.1)
+	frame_set(2,2,0.2) if animFrame=3 //-58
+	{hrt=instance_create_depth(x+12*image_xscale,y,-1,oFlashFX)
+		hrt.z=z-42 hrt.depth=depth-1 hrt.hspeed=0.8*image_xscale
+		with hrt
+		{alarm[0]=8888 sprite_index=spr_heart image_speed=0.0001
+image_index=0.9995 zSpeed=2.04 zSpeedAdd=-0.1 isDepth=0
+alarm[5]=60 changespr=sprite_index changeimgspd=0.5 changeimpindex=2}}
+	frame_set(3,3,0.3)
+	frame_set(4,4,0.3)
+	frame_set(5,5,0.05)
+	frame_set(6,0,0.1)
+if animFrame>6.5 {canmove=1 atk=0}
+}
+	
 		///Back Punch Attack
 	if anim=84
 {sprite_index=spr_sofia_punchback

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_boss",
-  "duration": 33.6457138,
+  "duration": 33.645714,
   "parent": {
     "name": "Music",
     "path": "folders/f - Sounds/Music.yy",

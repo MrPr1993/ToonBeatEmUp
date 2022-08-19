@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_lab.mp3",
-  "duration": 60.6301765,
+  "duration": 60.630177,
   "parent": {
     "name": "Music",
     "path": "folders/f - Sounds/Music.yy",

@@ -113,7 +113,7 @@
   },
   "parent": {
     "name": "Car Breaking Game",
-    "path": "folders/1c - Minigames/Car Breaking Game.yy",
+    "path": "folders/1d - Minigames/Car Breaking Game.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_cargame",

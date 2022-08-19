@@ -18,6 +18,9 @@ key_right = keyboard_check(ord("D"));
 	key_shield = keyboard_check(ord("L"));
 	key_shield_pressed = keyboard_check_pressed(ord("L"));
 	key_super=keyboard_check_pressed(ord("H"));
+		key_taunt=keyboard_check_pressed(ord("Y"))
+	key_punchback=keyboard_check_pressed(ord("U"))
+		key_start=keyboard_check_pressed(vk_enter)
 	
 	key_X=keyboard_check_pressed(ord("H"))
 	key_Y=keyboard_check_pressed(ord("L"))
@@ -64,13 +67,19 @@ key_right = keyboard_check(ord("D"));
 	key_attack = keyboard_check_pressed(ord("J")) or gamepad_button_check_pressed(i,gp_face3) 
 	key_charge= keyboard_check(ord("J")) or gamepad_button_check(i,gp_face3)
 	key_release= keyboard_check_released(ord("J")) or gamepad_button_check_released(i,gp_face3);
-	key_shield = gamepad_button_check_released(i,gp_face2) or keyboard_check(ord("L"));
-	key_shield_pressed =  gamepad_button_check(i,gp_face2) or keyboard_check_pressed(ord("L"));
+	key_shield = gamepad_button_check(i,gp_face2) or keyboard_check(ord("L"));
+	key_shield_pressed =  gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("L"));
 
 	key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(i,gp_face1)
+		key_jump_hold = keyboard_check(vk_space) or keyboard_check(ord("K")) or gamepad_button_check(i,gp_face1)
+
 	key_super=keyboard_check_pressed(ord("H")) or gamepad_button_check_pressed(i,gp_face4)
 			
+	key_taunt=keyboard_check_pressed(ord("Y"))  or gamepad_button_check_pressed(i,gp_shoulderl)
+	key_punchback=keyboard_check_pressed(ord("U")) or gamepad_button_check_pressed(i,gp_shoulderr)
 
+
+key_start=keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(i,gp_start) 
 
 	
 			}

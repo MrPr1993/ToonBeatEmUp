@@ -10,10 +10,48 @@ p1=instance_create_depth(0,53,-1,oBrickBreakPlayer) with p1
 {
 oBrickBreakGame.p1Over=0	
 canControl=1
-controlNO=1
+controlNO=1 playerNO=1 character=global.P1Char
 my_pal_sprite=spr_playerpal
 current_pal=global.p1Pal
+voice1=snd_viva5
+voice2=snd_viva11
+event_user(0)
 }
+p2=instance_create_depth(80,53,-1,oBrickBreakPlayer) with p2
+{
+oBrickBreakGame.p2Over=0	sprite_index=spr_hina_brick 
+canControl=1
+controlNO=2 playerNO=2  character=global.P2Char
+my_pal_sprite=spr_playerpal
+current_pal=global.p2Pal name="HINA"
+voice1=snd_hina3
+voice2=snd_hina10
+event_user(0)
+}
+p3=instance_create_depth(160,53,-1,oBrickBreakPlayer) with p3
+{
+oBrickBreakGame.p3Over=0	sprite_index=spr_bahati_brick
+canControl=1 
+controlNO=3 playerNO=3  character=global.P3Char
+my_pal_sprite=spr_playerpal
+current_pal=global.p3Pal name="BAHATI"
+voice1=snd_bahati3
+voice2=snd_bahati8
+event_user(0)
+}
+p4=instance_create_depth(240,53,-1,oBrickBreakPlayer) with p4
+{
+oBrickBreakGame.p4Over=0	sprite_index=spr_sofia_brick
+canControl=1
+controlNO=4 playerNO=4
+my_pal_sprite=spr_playerpal  character=global.P4Char
+current_pal=global.p4Pal name="SOFIA"
+voice1=snd_sofia3
+voice2=snd_sofia9
+event_user(0)
+}
+
+
 
 results=0
 rsultsimg=0

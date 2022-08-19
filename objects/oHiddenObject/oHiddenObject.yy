@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "spr_altselfatk",
     "path": "sprites/spr_altselfatk/spr_altselfatk.yy",

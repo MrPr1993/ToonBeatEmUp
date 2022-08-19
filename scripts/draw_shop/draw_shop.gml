@@ -1,17 +1,28 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function draw_shop(){
+function draw_shop(){controlNO=9
+controller_setup() 
 if room=rm_shop
 {fpsX=320 fpsY=8
 
-
+if shopDialogueAlt!=1
+{
+if key_jump or keyboard_check_pressed(vk_escape)
+if shopBuy!=-1 shopBuy=-1
+else
+{canControl=0
+alarm[4]=80 global.StageGoing=rm_menu
+shopDialogueAlt=8
+}
+}
+if canControl=0 {shopDialogueAlt=8 shopDesc="GOODBYE!" shopAltFace=3 shopName="" shopCost=""}
 ///Buy Item
 if shopBuy!=-1
 {
 if -key_left_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
 if key_right_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
 
-if key_A
+if key_attack
 if shopBuy=0 {shopBuy=-1 shopDialogueTime=2 shopDialogueAlt=5}
 else {shopDialogueAlt=4 shopDialogueTime=120 shopBuy=-1
 	
@@ -61,6 +72,8 @@ if global.UnlockAltPal=0 shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
 
 if shopDialogueAlt!=0
 {
+	if canControl=1
+	{
 if shopDialogueAlt=1
 {shopDesc="     WELCOME!" shopName="" shopCost=""}
 if shopDialogueAlt=2
@@ -75,10 +88,13 @@ if shopDialogueAlt=6
 {shopDesc="OH YOU BOUGHT\nTHAT ONE ALREADY." shopAltFace=3 shopName="" shopCost=""}
 if shopDialogueAlt=7
 {shopDesc="SORRY,YOU DON'T\nHAVE ENOUGH CASH." shopAltFace=3 shopName="" shopCost=""}
+if shopDialogueAlt=8
+{shopDesc="GOODBYE!" shopAltFace=3 shopName="" shopCost=""}
+}else {shopDesc="      GOODBYE!" shopAltFace=3 shopName="" shopCost=""}
 }
 else
 {
-if key_A
+if key_attack
 if shopSelect=-1 or shopSelect=-2
 {
 shopDialogueTime=120 shopDialogueAlt=2 

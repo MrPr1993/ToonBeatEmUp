@@ -29,6 +29,9 @@ name="VIVA"
 super=0
 special=0
 
+voice1=snd_viva5
+voice2=snd_viva11
+
 win=0
 
 shakefrom=1
@@ -43,3 +46,4 @@ PlayerScore=global.P1Score
 character=0
 
 image_speed=0
+

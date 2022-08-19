@@ -6,6 +6,8 @@ controller_setup()
 instance_create(0,0,oBlackFX)
 //instance_create(0,0,oTVfx)
 
+pauseBuffer=10
+
 p1=-1
 p2=-1
 p3=-1
@@ -72,6 +74,7 @@ global.CutsceneSkipper=0
 
 global.LevelSelectSave=0
 
+global.multiMode=1
 
 
 global.TrainingRoom=0
@@ -130,6 +133,11 @@ global.GoldShow=0 //global.GoldShow=1 Show Gold
 
 global.enemytest=0
 global.enemytestB=0
+
+global.P1available=1
+global.P2available=1
+global.P3available=1
+global.P4available=1
 
 shopreset()
 }
@@ -246,9 +254,9 @@ global.HiScoreStage=1
 if !variable_global_exists("P1Char")
 {
 global.P1Char=0
-global.P2Char=0
-global.P3Char=0
-global.P4Char=0
+global.P2Char=1
+global.P3Char=2
+global.P4Char=3
 }
 
 if !variable_global_exists("CanGlobalBeta")
@@ -396,6 +404,14 @@ if room=rm_loading
 {
 assets_load()	
 room_goto(rm_titlescreen)
+}
+
+if room=rm_menu
+{
+MenuText="FIGHT BADDIES"
+MenuScaleX=0
+MenuSil=0
+MenuMoveX=0
 }
 
 screenBlack=0
@@ -622,6 +638,8 @@ songno=0
 songname="SELECT A SOUND OR SOUND"
 soundno=1
 soundname="VIVA 1"
+playingsongname=""
+playingloop=0
 playSFX=snd_viva4
 
 songtime=0
@@ -651,18 +669,35 @@ soundSPD=1
 songID=-1
 
 soundSelect=1
+controlNO=9
+canControl=1
 }
 
 if room=rm_gallery
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,false,false,sprite_get_width(spr_galleryimg1)/2,sprite_get_height(spr_galleryimg1)/2)
-
-pictureX=0
-pictureY=0
-gallerySet=1
-pictureMax=1
-pictureZoom=0.25/2
+gallerychoosing=0
+galleryX=0
+galleryY=0
 galleryNO=1
+galleryHover=0
+galleryname="VIVA'S GALLERY"
+gallerybuffer=10
+
+galleryload=0
+
+authorname="@MRPR1993"
+showtext=1
+pictureX=160
+pictureY=120
+gallerySet=1
+pictureZoom=0.25/3
+
+filtermode=false
+
+pcitureNO=1
+pictureMax=1
+currentimagespr=spr_galleryimg1
 }
 
 enemySpawn=global.enemytest
@@ -690,10 +725,42 @@ cameraYAdd=0
 
 if room=rm_characterselect
 {
-p1=instance_create_depth(0,0,-1,oPlayerDisembodied) with p1 {canControl=1 controlNO=1}
-p2=instance_create_depth(0,0,-1,oPlayerDisembodied) with p2 {canControl=1 controlNO=2}
-p3=instance_create_depth(0,0,-1,oPlayerDisembodied) with p3 {canControl=1 controlNO=3}
-p4=instance_create_depth(0,0,-1,oPlayerDisembodied) with p4 {canControl=1 controlNO=4}
+p1=instance_create_depth(0,53,-1,oCharacterSelectPlayer) with p1 {canControl=1 controlNO=1}
+p2=instance_create_depth(80,53,-1,oCharacterSelectPlayer) with p2 {canControl=0 controlNO=2}
+p3=instance_create_depth(160,53,-1,oCharacterSelectPlayer) with p3 {canControl=0 controlNO=3}
+p4=instance_create_depth(240,53,-1,oCharacterSelectPlayer) with p4 {canControl=0 controlNO=4}
+
+p5=instance_create_depth(2400,53,-1,oCharacterSelectPlayer) with p5 {canControl=1 controlNO=9}
 }
 
 //if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0
+
+if room=rm_settings
+{instance_create_depth(0,0,-1,oSettings)}
+
+if instance_exists(oPlayer)
+{
+controlNO=1
+with oControl
+{
+p1=oPlayer
+p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=0}
+p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=0}
+p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=0}
+}
+	
+if global.multiMode>1
+with oControl
+{
+if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
+and room!=rm_animeditor and room!=rm_newspaper
+{//global.P1available=1
+if global.P2available=1
+{p2=instance_create(160,208-16,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1}
+if global.P3available=1
+{p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2}
+if global.P4available=1
+{p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3}
+}
+}
+}

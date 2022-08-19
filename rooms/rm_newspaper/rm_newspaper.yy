@@ -48,7 +48,7 @@
   },
   "parent": {
     "name": "0Intro",
-    "path": "folders/1b - Cutscenes/0Intro.yy",
+    "path": "folders/1c - Cutscenes/0Intro.yy",
   },
   "resourceVersion": "1.0",
   "name": "rm_newspaper",

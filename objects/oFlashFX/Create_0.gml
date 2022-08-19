@@ -37,6 +37,8 @@ xSpeed=0
 ySpeed=0
 zSpeed=0
 
+zSpeedAdd=0
+
 lerpslow=0
 lerpslowSpd=0.1
 

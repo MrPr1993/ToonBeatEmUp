@@ -23,3 +23,7 @@ else
 {zSpeed+=gravspd}
 if ground=1 zSpeed=0
 }
+else
+{
+zSpeed+=zSpeedAdd
+}

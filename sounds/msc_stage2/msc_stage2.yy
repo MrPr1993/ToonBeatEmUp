@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_stage2",
-  "duration": 45.6359177,
+  "duration": 45.635918,
   "parent": {
     "name": "Music",
     "path": "folders/f - Sounds/Music.yy",

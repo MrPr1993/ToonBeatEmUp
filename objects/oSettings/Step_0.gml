@@ -119,3 +119,9 @@ oPause.var_distort=global.CRTcustomDistort
 oPause.var_distortion_ammount=global.CRTcustomDistortAM
 oPause.var_border=global.CRTcustomBorder
 }
+
+if keyboard_check_pressed(vk_escape) or key_jump
+{
+settings_save()
+if room=rm_settings room=rm_menu else instance_destroy()
+}

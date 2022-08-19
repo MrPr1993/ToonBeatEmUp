@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 3,
   "volume": 1.0,
   "preload": true,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_countdown",
-  "duration": 14.8164291,
+  "duration": 14.816429,
   "parent": {
     "name": "Music",
     "path": "folders/f - Sounds/Music.yy",

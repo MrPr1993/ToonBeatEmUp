@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "mask_small",
     "path": "sprites/mask_small/mask_small.yy",

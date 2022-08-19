@@ -21,11 +21,16 @@ function controller_setup() {
 	key_shield_pressed = 0
 	key_super=0
 	
+	key_taunt=0
+	key_punchback=0
+	
 	key_attackanditem=0
 	
 	key_cancel=0
 	key_accept=0
 	key_switch=0
+	
+	key_start=0
 	
 	key_X=0
 	key_Y=0

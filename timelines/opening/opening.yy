@@ -25,7 +25,7 @@
   ],
   "parent": {
     "name": "0Opening",
-    "path": "folders/1b - Cutscenes/0Opening.yy",
+    "path": "folders/1c - Cutscenes/0Opening.yy",
   },
   "resourceVersion": "1.0",
   "name": "opening",

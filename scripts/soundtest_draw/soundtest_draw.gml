@@ -3,25 +3,41 @@
 function soundtest_draw(){
 if room=rm_soundtest
 {
+controller_setup()
 
-
-if keyboard_check_pressed(vk_escape) room=rm_titlescreen
+if keyboard_check_pressed(vk_escape) room=rm_menu
 
 if key_up_pressed {if soundSelect=1 soundSelect=8 else soundSelect-=1}
 if -key_down_pressed {if soundSelect=8 soundSelect=1 else soundSelect+=1}
 
-
+	if key_jump
+if playingsongname="" {audio_stop_all() room=rm_menu} else {audio_stop_all() playingsongname=""}
+if !audio_is_playing(songplaying) playingsongname=""
 
 if soundSelect=1 /////Select Music
 {
-if key_A {
+if key_attack {
 
 	{audio_stop_all()
+	playingsongname=songname
+playingloop=0
 	songID=audio_play_sound(playingSound,1,0)
 	audio_sound_gain(playingSound,global.BGMvolume/100,0)
 	}	
 	songplaying=playingSound
 	}
+	if key_super {////Loop
+playingsongname=songname
+playingloop=1
+	{audio_stop_all()
+	songID=audio_play_sound(playingSound,1,1)
+	audio_sound_gain(playingSound,global.BGMvolume/100,0)
+	}	
+	songplaying=playingSound
+	}
+
+
+
 
 
 if -key_left_pressed if songno=0 songno=20 else songno-=1
@@ -67,7 +83,13 @@ secondsMAX3 = round(songMaxTime) div 3600
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center) draw_set_color(c_white)
 draw_text(160,8,"SOUND TEST")
-
+if playingsongname!=""
+{
+if playingloop=0
+draw_text(160,32-8,"PLAYING:"+string(playingsongname))
+else
+draw_text(160,32-8,"PLAYING:"+string(playingsongname)+" (LOOPED)")
+}
 draw_text(160,32,"MUSIC")
 draw_text(64,32+8,"◄")
 draw_text(320-64,32+8,"►")
@@ -121,7 +143,7 @@ draw_set_halign(fa_center)
 if soundSelect=3
 {
 draw_text(160,64+16,"✰")
-if key_A {PlaySound(playSFX)}
+if key_attack {PlaySound(playSFX)}
 }
 draw_set_halign(fa_left)
 draw_text(160+4,64+16,soundname)

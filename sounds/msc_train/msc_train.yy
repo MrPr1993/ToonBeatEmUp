@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_train.mp3",
-  "duration": 54.8832664,
+  "duration": 54.883266,
   "parent": {
     "name": "Music",
     "path": "folders/f - Sounds/Music.yy",

@@ -54,7 +54,9 @@ else
 draw_sprite_ext(spr_car,hurt,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 }
 shader_reset()
+pal_swap_set(my_pal_sprite,current_pal,false);
 draw_sprite_ext(sprite_index,image_index,round(x+shake*image_xscale),round(y+z+extraY+carAnim),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+pal_swap_reset()
 }
 
 if commandChargeFrame>3

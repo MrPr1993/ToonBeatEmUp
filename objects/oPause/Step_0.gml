@@ -2,7 +2,27 @@
 // You can write your code in this editor
 controller_setup()
 
+if pauseBuffer!=0 pauseBuffer-=1
 
+if key_start if pauseBuffer=0
+{
+if !instance_exists(oSettings)
+instance_destroy()
+}
+
+if keyboard_check_pressed(vk_escape) or key_jump
+if pauseBuffer=0
+{
+if !instance_exists(oSettings)
+{
+if AreYouSure=0
+instance_destroy() else AreYouSure=0
+}
+else
+{
+//with oSettings instance_destroy()
+}
+}
 
 if key_attack or keyboard_check_pressed(vk_enter)
 if !instance_exists(oSettings)
@@ -32,7 +52,7 @@ if menuSelect=1 room_restart()
 if menuSelect=3 
 {
 if global.StageSelect=0
-room=rm_titlescreen 
+{room=rm_menu global.MenuSkip=0 global.IntroSkip=1}
 else
 room_goto(rm_map)
 }

@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Brick Break",
-    "path": "folders/1c - Minigames/Brick Break.yy",
+    "path": "folders/1d - Minigames/Brick Break.yy",
   },
   "resourceVersion": "1.0",
   "name": "oBrickBreakGame",

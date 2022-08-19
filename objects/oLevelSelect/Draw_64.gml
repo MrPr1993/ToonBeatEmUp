@@ -72,7 +72,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("GALLERY"));
 if level=27 draw_set_color(c_maroon) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("XXX"));
 if level=28 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("XXX"));
+draw_text(10, yy++ * 10, string_hash_to_newline("MAIN MENU"));
 if level=29 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("HI-SCORE"));
 if level=30 draw_set_color(c_yellow) else draw_set_color(c_red)

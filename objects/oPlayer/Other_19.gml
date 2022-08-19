@@ -5,7 +5,14 @@ time=99
 alarm[0]=120
 }
 
+if controlNO=1
 current_pal=global.p1Pal;
+if controlNO=2
+current_pal=global.p2Pal;
+if controlNO=3
+current_pal=global.p3Pal;
+if controlNO=4
+current_pal=global.p4Pal;
 
 //spawnplayericon()
 player_anim()
