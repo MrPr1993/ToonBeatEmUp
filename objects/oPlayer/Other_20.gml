@@ -1,3 +1,5 @@
+if ContinueMode=0
+{
 if canControl=controlNO
 controller_setup()
 
@@ -130,4 +132,4 @@ throw_command(instance_nearest(x,y,oEnemy1),24*image_xscale,0,0,GrabFrame,30,1)
 }
 
 
-
+}

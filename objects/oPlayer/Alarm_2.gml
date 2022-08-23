@@ -1,17 +1,31 @@
 /// @description Respawn
+if ContinueMode=0
+{
 if disappearTime=0
 {
 if PlayerLife!=0
 event_user(9)
 else
 {visible=0
-
+ContinueCountdown=9
+ContinueCTime=90
+continueScreen=1 ContinueSelect=1
 oControl.characterSelect=character
+oControl.playNO=playerNO
+ContinueMode=1
 with oControl
-{alarm[2]=90
+{
+//cont=instance_create_depth(0,0,-1,oContinueScreen)
+//cont.TVfx=TVfx cont.playNO=playNO
+if x=-9999
+{
+alarm[2]=90
 continueScreen=1
 continueCountdown=9
-}}
+}
+}
+
+}
 }
 else
 {
@@ -33,3 +47,4 @@ visible=0 disappearTime=0
 
 }
 
+}

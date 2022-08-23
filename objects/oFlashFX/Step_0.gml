@@ -12,3 +12,16 @@ vspeed=lerp(vspeed,0,lerpslowSpd)
 zSpeed=lerp(zSpeed,0,lerpslowSpd)
 }
 
+
+if scaleAddMode=1
+{
+image_xscale+=scaleAddX
+image_yscale+=scaleAddY
+}
+
+if rotAddMode=1
+{image_angle+=rotAdd
+}
+
+if alphaAddMode=1
+image_alpha+=alphaAdd

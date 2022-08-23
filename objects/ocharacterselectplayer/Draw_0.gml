@@ -27,6 +27,12 @@ draw_text(x+40,190+40,string_hash_to_newline(ability3))
 draw_set_valign(fa_top)
 draw_set_halign(fa_left)	
 
+if charadded=1
+{
+draw_text(x+1,y+136,"◄")
+draw_text(x+80-8,y+136,"►")
+}
+
 
 if controlNO=1
 pal_swap_set(spr_playerpal,global.p1Pal,false);
@@ -38,9 +44,12 @@ if controlNO=4
 pal_swap_set(spr_playerpal,global.p4Pal,false);
 //draw_sprite(sprite_index,image_index,x,y)
 signup=lerp(signup,1,0.1)
-draw_sprite_part(sprite_index,image_index,0,0+136-136*signup,80,136,x,round(y+136-136*signup))
+draw_sprite_part(sprite_index,image_index,0,0+136-136*signup,80,136,round(x+SelectingX),round(y+136-136*signup))
 pal_swap_reset()
-draw_sprite_ext(spr_characterselect,3,x+1,round(y+136-136*signup)+1,1,1-1*signup,0,c_white,1)
+draw_sprite_ext(spr_characterselect,3,x+1+SelectingX,round(y-1+136-136*signup)+1,1,1-1*signup,0,c_white,1)
+
+
+
 
 if charadded=2
 {

@@ -37,7 +37,10 @@ if iceFX=0 or iceFX=2 {part.hspeed=choose(-1,-2,-1.5) part.image_xscale=-1}
 else part.hspeed=choose(1,2,1.5) part.z=z-34
 part.image_speed=0 part.spdZ=-6 part.image_blend=image_blend
 part.disappeartime=random_range(24,32) iceFX+=1; part.zAdd=-32
-
+oPlayer.playerGet=0
+if instance_exists(oPlayerDisembodied) oPlayerDisembodied.playerGet=0
+if instance_exists(oPlayerNoControl) oPlayerNoControl.playerGet=0
+other.hitSource.playerGet=1
 }
 
 }
@@ -111,7 +114,7 @@ part.disappeartime=random_range(24,32) iceFX+=1; } iceFX=0;
 	}
 other.comboHit=90
 }
-PlaySoundNoStack(snd_metalhit)
+PlaySoundNoStack(snd_metalhit) other.hitSource.altresult2+=round(other.damage*2500)
 	PlaySound(other.HitSound)
 	flashFX(other.x,other.y,other.z,other.spriteFX,other.indexFX,other.speedFX,other.spriteTime,other.xScaleFX,other.yScaleFX,other.blendFX,other.alphaFX)
 	fx.isDepth=other.isDepth fx.speedFX=other.speedFX

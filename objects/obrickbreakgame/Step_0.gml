@@ -6,3 +6,7 @@ if stageClear=0
 {
 stageClear=1 alarm[6]=80
 }
+
+
+
+oControl.stagePause=1

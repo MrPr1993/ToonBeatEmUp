@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if ContinueMode=0
+{
 if act=1
 if immune=0
 //and (x>view_xview[0]-sprite_get_width(mask_index)/2 and x<view_xview[0]+320+sprite_get_width(mask_index)/2)
@@ -88,3 +90,4 @@ with other instance_destroy()
 }
 }
 
+}

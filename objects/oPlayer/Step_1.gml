@@ -1,3 +1,8 @@
+
+
+
+if ContinueMode=0
+{
 if anim!=30 and anim!=31
 isGrabbed=0 else isGrabbed=1
 
@@ -45,4 +50,4 @@ x+=sentflying} else checkwall()
 
 
 
-
+}

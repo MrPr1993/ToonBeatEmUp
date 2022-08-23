@@ -4,6 +4,7 @@ if isPaused=0
 if room=rm_cutscene1 or room=rm_opening or rm_brickbreak
 __view_set( e__VW.YView, 0, quakeFX)	
 
+
 camYAdd+=camYAddSpd
 
 if global.CanGlobalBeta=1
@@ -18,14 +19,56 @@ if keyboard_check(vk_shift)
 {if TextBeta=1 TextBeta=0 else TextBeta=1}
 }
 
+if room!=rm_titlescreen and room!=rm_hiscore
+and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay
+and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
+and room!=rm_soundtest and room!=rm_gallery and room!=rm_loading
+and room!=rm_menu and room!=rm_settings
+if keyboard_check(vk_shift) and keyboard_check_pressed(ord("Q"))
+{
+if room=rm_brickbreak
+{
+p1=oBrickBreakGame.p1
+p2=oBrickBreakGame.p2
+p3=oBrickBreakGame.p3
+p4=oBrickBreakGame.p4
+}
+
+p1.canControl=0 p2.canControl=0 p3.canControl=0 p4.canControl=0
+var cntrl=1;
+cntrl=get_string("Pick player number",1)
+if cntrl=1 p1.canControl=1
+if cntrl=2 p2.canControl=1
+if cntrl=3 p3.canControl=1
+if cntrl=4 p4.canControl=1
+if cntrl=5 {p1.canControl=1 p2.canControl=1 p3.canControl=1 p4.canControl=1}
+}
+
+
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay
 and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
 and room!=rm_soundtest and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
 and room!=rm_menu and room!=rm_settings
 {
+///CONTINUE
+//if x=-999999
+if room!=rm_opening
+{
+if p1.ContinueMode=1
+and p2.ContinueMode=1
+and p3.ContinueMode=1
+and p4.ContinueMode=1
+{
+cont=instance_create_depth(0,0,-1,oContinueScreen)
+cont.TVfx=TVfx cont.playNO=playNO
+exit;
+}
+}
+
 if betatest=1
 {
+
 if keyboard_check_pressed(ord("R")) 
 if keyboard_check(vk_shift)
 {
@@ -194,6 +237,8 @@ if camMove=0
 
 
 ///Continue Screen
+if x=-999 ///UNUSED
+{
 if continueScreen=2
 {global.CurrentMusic=continueMusic
 if !audio_is_playing(global.CurrentMusic)
@@ -269,7 +314,7 @@ if global.Continues!=0
 
 
 }
-
+}
 }
 
 if global.Screenshake!=0

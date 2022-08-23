@@ -1,3 +1,5 @@
+if ContinueMode=0
+{
 if immune=0
 {
 if isGrabbed=0
@@ -35,4 +37,4 @@ super+=0.25*canSuper
 }
 }
 
-
+}

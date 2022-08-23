@@ -16,6 +16,10 @@ selfatk.isPlayer=1
 isEnemy=0
 enemyID=0
 
+altresult2=-1
+
+playerGet=0
+
 	isIdle=1
 
 ///To show which player is which
@@ -162,5 +166,10 @@ hasAI=0
 
 
 
-ContinueMode=0
+
 ActivePlayer=0
+
+ContinueCountdown=9
+ContinueCTime=90
+CountdownMode=1
+ContinueMode=1

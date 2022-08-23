@@ -24,7 +24,7 @@ else
 }
 }
 
-if key_attack or keyboard_check_pressed(vk_enter)
+if key_attack
 if !instance_exists(oSettings)
 if AreYouSure=0
 {

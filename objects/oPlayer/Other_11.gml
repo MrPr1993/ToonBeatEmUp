@@ -1,4 +1,6 @@
 /// @description Drop Weapon
+if ContinueMode=0
+{
 if spawnID!=-1
 {
 weapon=instance_create_depth(x,y,depth,spawnID)
@@ -21,4 +23,4 @@ weaponspawn=-1
 spawnID=-1
 }
 
-
+}

@@ -1,4 +1,6 @@
 /// @description Respawn
+if ContinueMode=0
+{
 with oControl
 {
 time=99
@@ -63,3 +65,4 @@ event_user(10)
 
 
 
+}

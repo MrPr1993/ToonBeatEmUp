@@ -1,4 +1,6 @@
 /// @description Z Block Collision
+if ContinueMode=0
+{
 zblock_col()
 
 
@@ -219,4 +221,5 @@ if character=0 character=3 else character-=1
 if keyboard_check_pressed(ord("Y"))///Change Character
 if character=3 character=0 else character+=1
 
+}
 }

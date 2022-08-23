@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 /// @description Attack
+if ContinueMode=0
+{
 function ai_actions() {	alarmCheck1=alarm[1]
 	if canAttack!=6
 	alarm[1]=choose(60,70,80,90)
@@ -85,4 +87,5 @@ function ai_actions() {	alarmCheck1=alarm[1]
 
 
 
+}
 }

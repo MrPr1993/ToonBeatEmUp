@@ -4,6 +4,8 @@ function character_setup() {
 	canControl=0
 	controller_setup()
 
+playerGet=0
+
 	nameID="None"
 	name="NULL"
 	enemyPortraitSpr=spr_miscface

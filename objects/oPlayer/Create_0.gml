@@ -14,6 +14,10 @@ selfatk.isPlayer=1
 isEnemy=0
 enemyID=0
 
+altresult2=-1
+
+playerGet=1
+
 	isIdle=1
 
 ///To show which player is which
@@ -168,5 +172,35 @@ p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.character=2 p3.controlNO
 p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.character=3 p4.controlNO=4
 }
 
+sourcee=0
 ContinueMode=0
+CountdownMode=0
+ContinueCountdown=9
+ContinueCTime=90
+ContinueGameOver=0
+ContinueRestart=0
 ActivePlayer=0
+continueScreen=0
+ContinueSelect=0
+
+continueFlash=0 characterSelect=global.P1Char
+characterTimer=9 hiScoreInputNum=3
+HiScoreCheck=0
+HiScoreLevel=0
+HiCharLevel=0
+
+HiScoreCheckDone=0
+hiScoreInputNum=1
+HiInput1=0
+HiScoreAlarm1=0
+HiScoreAlarm2=0
+finalStageScoreMark=0
+hiScoreInput=0
+hiScoreInputNum=1
+hiScoreNameGet="A"
+keyGet1="A"
+keyGet2="A"
+keyGet3="A"
+keyToGameOver=0
+keyNo=1
+keyNoCheck="A"

@@ -55,7 +55,18 @@ npcDriverOn=0
 npcDriverTimer=0
 
 
-with oPlayer {canmove=0 anim=0 key_left=0 key_right=0}
+with oPlayer {canmove=0 anim=0 key_left=0 key_right=0 altresult2=0}
 
+with oControl
+{
+altresult2a=0
+altresult2b=0
+altresult2c=0
+altresult2d=0
+}
 alarm[0]=180
 hithereY=0
+
+with oPlayer altresult2=0
+if instance_exists(oPlayerDisembodied) with oPlayerDisembodied altresult2=0
+if instance_exists(oPlayerNoControl) with oPlayerNoControl altresult2=0

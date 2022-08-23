@@ -1,6 +1,6 @@
 active=0
 
-
+playernear=0
 
 selfID="WaveSet1"
 

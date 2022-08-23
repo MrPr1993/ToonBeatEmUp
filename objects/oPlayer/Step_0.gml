@@ -1,5 +1,8 @@
 
 
+if ContinueMode=0
+{
+
 if hasAI=0
 {
 if canControl=1
@@ -221,4 +224,5 @@ if x=clamp(x,automoveX-2,automoveX+2) {x=automoveX key_left=0 key_right=0 image_
 if y=clamp(y,automoveY-2,automoveY+2) {y=automoveY key_up=0 key_down=0}
 
 }else {key_left=0 key_right=0 key_up=0 key_down=0 automove=0 doubledash=0 image_xscale=automoveFace}
+}
 }

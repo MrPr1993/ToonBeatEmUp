@@ -3,10 +3,10 @@
 function gameover_set(){
 alarm[2]=0
 ///Game Over - also check if there's score
-global.P1Score=oPlayer.PlayerScore
-global.P1Life=oPlayer.PlayerLife
 
-if global.P1Score>=global.HiScore10 and keyToGameOver=0
+
+
+if HiScoreCheck>=global.HiScore10 and keyToGameOver=0
 {
 hiScoreInput=0
 hiScoreInputNum=1
@@ -19,9 +19,17 @@ keyGet3="A"
 else
 {////Set Game Over
 audio_stop_all()
-GoldShow=1 GoldGet+=round(oPlayer.PlayerScore/100) global.Gold+=GoldGet
+GoldShow=1
+GoldGet+=round(p1.PlayerScore/100) 
+GoldGet+=round(p2.PlayerScore/100) 
+GoldGet+=round(p3.PlayerScore/100) 
+GoldGet+=round(p4.PlayerScore/100) 
+global.Gold+=GoldGet
+gold_save()
+stageClearCheck=1
+
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1
-alarm[3]=260
+alarm[3]=320
 }
 }

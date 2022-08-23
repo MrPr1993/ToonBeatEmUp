@@ -1,4 +1,6 @@
 /// @description Hurt
+if ContinueMode=0
+{
 if carMode=0
 hit_reaction()
 else
@@ -20,3 +22,4 @@ areaEntry=1
 else {shaketime=30 animFrame=0 anim=201 event_user(11)}
 }
 
+}

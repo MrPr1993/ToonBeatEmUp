@@ -75,7 +75,7 @@ if instance_exists(oCrusher) with oCrusher if visible draw_sprite(spr_shadow,0,x
 if instance_exists(oCar) with oCar draw_sprite(spr_carshadow,0,x,y)
 
 if instance_exists(oPlayer) with oPlayer
-if carMode=1 and hasShadow=1 and fallHole=0
+if carMode=1 and hasShadow=1 and fallHole=0 and ContinueMode=0
 {if dead=0 and
 !place_meeting(x,y,oFallHole)
 draw_sprite(spr_carshadow,0,x,y)

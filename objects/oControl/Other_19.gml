@@ -12,14 +12,23 @@ global.GlobalBeta=0
 betatest=0
 }
 
-stageClear=1
-
+//stageClear=1
 
 with oPlayer
-{global.P1Char=character
+if ContinueMode=0
+{
+if playerNO=1	
+global.P1Char=character
+if playerNO=2
+global.P2Char=character
+if playerNO=3
+global.P3Char=character
+if playerNO=4
+global.P4Char=character
 canmove=0  animFrame=0
 key_left=0 key_right=0 key_up=0 key_down=0 anim=0
 }if stagePose=1 oPlayer.anim=210
 
 alarm[6]=80
 
+pauseBuffer=888888888888888888

@@ -107,8 +107,9 @@ if global.P1Char=0 mapSpr=spr_viva_map
 if global.P1Char=1 mapSpr=spr_hina_map
 if global.P1Char=2 mapSpr=spr_bahati_map
 if global.P1Char=3 mapSpr=spr_sofia_map
-
+pal_swap_set(spr_playerpal,global.p1Pal,false);
 draw_sprite(mapSpr,mapIndex,mapSX,mapSY)
+pal_swap_reset()
 ///Check on Map Location
 
 }

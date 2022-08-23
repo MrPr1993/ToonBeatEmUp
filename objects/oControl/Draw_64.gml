@@ -93,16 +93,16 @@ draw_set_halign(fa_left);
  
  //Player Icons
  
-draw_sprite(spr_hud,0,0,0)
-draw_sprite(spr_hud,0,72,0)
-draw_sprite(spr_hud,0,320-144,0)
-draw_sprite(spr_hud,0,320-72,0)
+//draw_sprite(spr_hud,0,0,0)
+//draw_sprite(spr_hud,0,72,0)
+//draw_sprite(spr_hud,0,320-144,0)
+//draw_sprite(spr_hud,0,320-72,0)
 
 //draw_sprite(spr_hud,0,80,0) playerNo=1
-with oPlayer if oControl.continueScreen=0
-{
-draw_playerhp()
-}
+with p1 {draw_playerhp()}
+with p2 {draw_playerhp()}
+with p3 {draw_playerhp()}
+with p4 {draw_playerhp()}
 draw_set_font(-1)
 if superFlashFrame1!=0 superFlashFrame1-=0.25 else superFlashFrame1=2
 if superFlashFrame2!=0 superFlashFrame2-=0.25 else superFlashFrame2=2
@@ -298,6 +298,7 @@ draw_sprite(spr_continue,isGameOver,160,50)///Continue
 //draw_text(160,140,continueCountdown)
 draw_sprite_ext(spr_continuenum,continueCountdown,160,140,2-(1/alarm[2])*2,2-(1/alarm[2])*2,0,c_white,1)
 
+
 draw_set_halign(fa_center)
 draw_set_font(global.scorefont)
 if global.Continues=-1
@@ -332,7 +333,7 @@ draw_set_alpha(1) draw_set_color(c_white)
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 
-if continueScreen=2 ///Character Select
+if continueScreen=200 ///Character Select
 {
 if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 
@@ -366,7 +367,7 @@ if oPlayer.key_right_pressed if characterSelect=3 characterSelect=0
 else characterSelect+=1
 }
 
-if continueScreen=3 ///Set Hi-Score Input
+if continueScreen=300 ///Set Hi-Score Input
 {
 if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 
@@ -532,69 +533,7 @@ draw_set_halign(fa_left)
 
 ///Stage Clear
 
-if stageClear=1
-{
-stageClearIndex+=0.5
 
-if stageClearY<120 stageClearY+=16
-draw_sprite_ext(stageCspr,stageClearIndex,160,stageClearY,1,1,0,c_white,1)///Game Over Text
-draw_set_alpha(1) draw_set_color(c_white)
-if stageScore=1
-{alarm[0]=0 
-draw_set_font(global.scorefont)
-draw_set_halign(fa_center)
-draw_set_halign(fa_right)
-draw_text(160-8,160,string_hash_to_newline(string(resulttext1)))
-draw_text(160-8,160+16,string_hash_to_newline(string(resulttext2)))
-draw_text(160-8,160+32,string_hash_to_newline(string(resulttext3)))
-
-
-draw_set_halign(fa_left)
-if AltScore1=0
-draw_text(160+8,160,string_hash_to_newline(bossScore))
-else draw_text(160+8,160,string_hash_to_newline(altresult1))
-if AltScore2=0
-draw_text(160+8,160+16,string_hash_to_newline(round(oPlayer.hp*20000)))
-else
-draw_text(160+8,160+16,string_hash_to_newline(altresult2))
-if AltScore3=0
-draw_text(160+8,160+32,string_hash_to_newline(round(time*200)))
-else
-draw_text(160+8,160+32,string_hash_to_newline(altresult3))
-
-if scoreClearSet=0
-{scoreClearSet=1 alarm[7]=120+stageClearDelay
-alarm[8]=240+stageClearDelay///Stage change time
-
-if AltScore1=0 altresult1=bossScore
-if AltScore2=0 altresult2=oPlayer.hp*20000
-if AltScore3=0 altresult3=round(time*200)
-
-oPlayer.PlayerScore+=altresult1+altresult2+altresult3
-
-
-GoldShow=1 GoldGet+=round(oPlayer.PlayerScore/100) global.Gold+=GoldGet
-gold_save()
-global.P1Score=oPlayer.PlayerScore
-global.P1Life=oPlayer.PlayerLife
-
-}
-
-draw_set_halign(fa_left)
-}
-
-}
-
-///Gold getting
-if GoldShow=1 and global.GoldShow=1
-{GoldY=lerp(GoldY,0,0.1)
-draw_set_halign(fa_right)
-draw_set_color(c_white)
-draw_set_font(global.scorefont)
-if GoldGet!=0
-draw_text(320-10,round(240-16+GoldY),string("+")+string(GoldGet)+string("$"))
-draw_set_halign(fa_left)
-}
 
 ///Screen FX for intro
 if stageIntro!=0 stageIntro-=0.05 else stageIntro=0
@@ -1508,6 +1447,8 @@ if room=rm_map
 {
 
 
+if x=-9999
+{
 draw_sprite(spr_hud,0,0,0)
 draw_sprite(spr_hud,0,72,0)
 draw_sprite(spr_hud,0,320-144,0)
@@ -1534,9 +1475,16 @@ draw_set_font(global.scorefont)
 draw_set_halign(fa_right)
 draw_text(70,12,string_hash_to_newline(global.P1Life)) //draw_text(39,0,7400)
 draw_text(70,2,string_hash_to_newline(global.P1Score)) //draw_text(39,0,7400)
+}
 
+draw_sprite(spr_stageselecttext,0,160,24)
+
+draw_set_font(global.scorefont) draw_set_color(c_white)
 draw_set_halign(fa_center)
-draw_text(160,44,mapSName)
+if mapSName!="LOCKED"
+draw_text(160,44,string(mapSName)+"\nHIGH SCORE:"+string(mapHighScore))
+else
+draw_text(160,44,string(mapSName))
 
 draw_set_halign(fa_left)
 if mapSelected=1
@@ -1553,6 +1501,7 @@ settings_draw()
 draw_shop()
 soundtest_draw()
 gallery_draw()
+draw_brickbreakgame()
 
 if global.fpsMode=1
 {draw_set_font(global.scorefont) draw_set_halign(fa_right)

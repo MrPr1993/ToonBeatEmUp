@@ -21,7 +21,7 @@ shader_reset()
 if place_meeting(x,y,oPlayer)
 {
 p=instance_place(x,y,oPlayer)
-if p.z<=z-height+16
+if p.z<=z-height+16 and p.ContinueMode=0
 draw_sprite(spr_shadow,0,round(p.x),round(p.y-height+16))
 
 }

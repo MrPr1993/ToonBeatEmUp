@@ -61,3 +61,11 @@ override_pal_index=1;
 FlashShadow=0
 shadow=spr_shadow
 FlashShadowZ=0
+
+scaleAddMode=0
+scaleAddX=0
+scaleAddY=0
+rotAddMode=0
+rotAdd=0
+alphaAddMode=0
+alphaAdd=0

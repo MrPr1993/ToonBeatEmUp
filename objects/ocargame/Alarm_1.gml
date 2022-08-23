@@ -30,6 +30,6 @@ stageClearDelay=240
  event_user(9)
  oControl.stageCspr=spr_bonusresults
 }
-if destroyed=1 oControl.resulttext1="PERECT"
+if destroyed=1 oControl.resulttext1="PERFECT"
 oControl.altresult2=round(hpHit1)*1000
  alarm[2]=120

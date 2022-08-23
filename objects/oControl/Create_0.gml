@@ -1,6 +1,7 @@
 roomfast=0
 canControl=1
 controlNO=9
+playNO=1
 controller_setup()
 
 instance_create(0,0,oBlackFX)
@@ -8,10 +9,14 @@ instance_create(0,0,oBlackFX)
 
 pauseBuffer=10
 
+playernear=0
+
 p1=-1
 p2=-1
 p3=-1
 p4=-1
+
+
 
 alarm[10]=640+160
 
@@ -22,6 +27,7 @@ noIcon=0
 
 continueMusic=-1
 
+global.StageClear=0
 global.MusicFade=0
 
 introScene=1
@@ -66,6 +72,8 @@ canSkipCutscene=0
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 global.StageGoing=rm_opening
+
+global.HiScoreLevel=1
 
 global.HiScoreLoad=0
 
@@ -129,15 +137,15 @@ global.LifeStart=2
 global.DisplayFeats=1
 
 global.Gold=0
-global.GoldShow=0 //global.GoldShow=1 Show Gold
+global.GoldShow=1 //global.GoldShow=1 Show Gold
 
 global.enemytest=0
 global.enemytestB=0
 
 global.P1available=1
-global.P2available=1
-global.P3available=1
-global.P4available=1
+global.P2available=0
+global.P3available=0
+global.P4available=0
 
 shopreset()
 }
@@ -423,7 +431,7 @@ enemyList=oEnemy1
 stageClear=0
 stageClearIndex=0
 stageClearY=-120
-stageBoss="BOSS NAME"
+stageBoss="BOSS"
 stageScore=0
 stageCspr=spr_stageclear
 scoreClearSet=0
@@ -432,10 +440,14 @@ bossID=-1
 bossMaxHP=2
 stageclearMusic=1
 stageclearfade=0
-resulttext1="BOSS NAME"
+resulttext1="BOSS"
 altresult1=-1
-resulttext2="VITALITY"
+resulttext2="VITALS"
 altresult2=-1
+altresult2a=-1
+altresult2b=-1
+altresult2c=-1
+altresult2d=-1
 resulttext3="TIME"
 altresult3=-1
 AltScore1=0
@@ -443,7 +455,6 @@ AltScore2=0
 AltScore3=0
 stageClearDelay=0
 stagePose=1
-
 specialTimer=-1
 timeClear=0
 
@@ -580,7 +591,7 @@ mapAnim=0
 mapIndex=0
 mapPlayerName="VIVA"
 mapSelected=0
-
+mapHighScore=0
 
 
 ///Skip Intro
@@ -740,27 +751,28 @@ if room=rm_settings
 
 if instance_exists(oPlayer)
 {
-controlNO=1
+
 with oControl
 {
 p1=oPlayer
-p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=0}
-p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=0}
-p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=0}
+p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=0 playerNO=2 playerGet=0}
+p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=0 playerNO=3 playerGet=0}
+p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=0 playerNO=4 playerGet=0}
 }
-	
+
 if global.multiMode>1
-with oControl
-{
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper
 {//global.P1available=1
-if global.P2available=1
-{p2=instance_create(160,208-16,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1}
-if global.P3available=1
-{p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2}
-if global.P4available=1
-{p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3}
+	playernear=p1
+	with p1 {if global.P1available=0 ContinueMode=1}
+	
+{p2=instance_create_depth(160,208-16,-1,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1
+	if global.P2available=0 p2.ContinueMode=1 p2.playerGet=0}
+{p3=instance_create_depth(160,208-16,-1,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2
+		if global.P3available=0 p3.ContinueMode=1 p3.playerGet=0} 
+{p4=instance_create_depth(160,208-16,-1,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3
+		if global.P4available=0 p4.ContinueMode=1 p4.playerGet=0}
 }
-}
+
 }
