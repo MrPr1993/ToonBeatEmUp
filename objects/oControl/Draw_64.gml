@@ -258,7 +258,8 @@ if tutorialTextY<23
 draw_set_halign(fa_center);
 draw_set_font(global.scorefont)
 draw_set_color(c_white)
-draw_text(160,round(240+tutorialTextY),tutorialText)
+draw_buttontext(tutorialTextX,240+tutorialTextY,btnSep,btnT1,btnspr,btnind,btnT2,btnT3)
+//draw_text(160,round(240+tutorialTextY),tutorialText)
 }
 
 ///GO!
@@ -268,7 +269,7 @@ draw_sprite(spr_go,goFrame,320-50,80)
 if goFrame!=0 goFrame-=0.25 else {goFrame=6 if goActive=1 PlaySound(snd_go)}
 
 if betatest=1 and TextBeta=1
-{
+{draw_set_halign(fa_left)
 draw_set_color(c_black)
 draw_text_transformed(8,204,string_hash_to_newline("STRONG MODE: "+string(StrongMode)+string(" Press P to be stronk    X ")+string(oPlayer.x)+string("Y ")+string(oPlayer.y)),0.5,0.5,0)
 draw_text_transformed(8,210,string_hash_to_newline("IGNORE: "+string(oPlayer.ignore)+string(" Press I to disable enemy AI")),0.5,0.5,0)
@@ -337,13 +338,13 @@ if continueScreen=200 ///Character Select
 {
 if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 
-if characterSelect=0 pal_swap_set(spr_playerpal,global.p1Pal,false)
+if characterSelect=0 pal_swap_set(global.p1Pals,global.p1Pal,false)
 draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=1 pal_swap_set(spr_playerpal,global.p1Pal,false)
+if characterSelect=1 pal_swap_set(global.p1Pals,global.p1Pal,false)
 draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=2 pal_swap_set(spr_playerpal,global.p1Pal,false)
+if characterSelect=2 pal_swap_set(global.p1Pals,global.p1Pal,false)
 draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=3 pal_swap_set(spr_playerpal,global.p1Pal,false)
+if characterSelect=3 pal_swap_set(global.p1Pals,global.p1Pal,false)
 draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
 
 
@@ -472,40 +473,74 @@ oPlayer.extradefense=0
 ///Map Check
 if showMap=1
 {
-if mapYscale!=1 mapYscale+=0.025
-mapX=lerp(mapX,160,0.08)
+if mapYscale!=1 mapYscale+=0.05
+mapX=lerp(mapX,160,0.16) //0.08
 
 mapTime+=1
 
 if mapTime<140
-mapY=lerp(mapY,80,0.08)
-else mapY=lerp(mapY,-320,0.05)
+mapY=lerp(mapY,80,0.16)
+else mapY=lerp(mapY,-320,0.1)
 
 if mapTime>200 showMap=0
 
+/////INTRO MAP CHECK
+
 d3d_transform_set_identity()
 d3d_transform_add_scaling(mapXscale,mapYscale,1)
-d3d_transform_add_translation(round(mapX),round(mapY),0)
-
+d3d_transform_add_translation(round(mapX+mapXAdd*80),round(mapY),0)
+if mapXAdd>0 mapXAdd-=0.02
 d3d_set_culling(false)
+shader_set(shd_grayscale)
+draw_sprite_ext(spr_filmstage,prevstagecheck1,-240,0,1,1,0,c_white,1)
+draw_sprite_ext(spr_filmstage,prevstagecheck2,-160,0,1,1,0,c_white,1)
+draw_sprite_ext(spr_filmstage,prevstagecheck3,-80,0,1,1,0,c_white,1)
 
-draw_sprite_ext(spr_gamemap,0,0,0,1,1,0,c_black,1)
+shader_reset()
+draw_sprite_ext(spr_filmstage,stagecheck,0,0,1,1,0,c_white,1)
+gpu_set_blendmode_ext(bm_dest_color, bm_zero)
+if prevstagecheck1!=0
+draw_sprite_ext(spr_filmstage2,0,-240,0,1,1,0,c_white,1)
+if prevstagecheck2!=0
+draw_sprite_ext(spr_filmstage2,0,-160,0,1,1,0,c_white,1)
+if prevstagecheck3!=0
+draw_sprite_ext(spr_filmstage2,0,-80,0,1,1,0,c_white,1)
+draw_sprite_ext(spr_filmstage2,0,0,0,1,1,0,c_white,1)
+draw_set_blend_mode(bm_normal)
+draw_sprite_ext(spr_filmstage,0,0,0,1,1,0,c_white,mapXAdd)//
+draw_sprite_ext(spr_filmstage,0,80,0,1,1,0,c_white,1)
+draw_sprite_ext(spr_filmstage,0,160,0,1,1,0,c_white,1)
+mapXFilm-=4 if mapXFilm<-16 mapXFilm+=16 draw_set_alpha(1)
+draw_set_halign(fa_left)
+var filmY=0;
+var iI;
+for (iI=0; iI<=320+64; iI+=16)
+draw_sprite_ext(spr_filmpart,0,-160-64+mapXFilm+iI,-30-8,1,1,0,c_white,1);
+var iB;
+for (iB=0; iB<=320+64; iB+=16)
+draw_sprite_ext(spr_filmpart,0,-160-64+mapXFilm+iB,+30,1,1,0,c_white,1);
 
-d3d_set_culling(true)
+draw_set_font(global.scorefont) draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_text(0,-30,"STAGE "+string(global.HiScoreLevel))
+draw_text(0,30,stagename)
 
-draw_sprite_ext(spr_gamemap,0,0,0,1,1,0,c_white,1)
+draw_set_halign(fa_left)
+//d3d_set_culling(true)
+//draw_sprite_ext(spr_filmstage,0,0,0,1,1,0,c_white,1)
 
 
 d3d_transform_set_identity()
 d3d_set_culling(false)
-}
+}else mapXFilm=0
 
 
 ///Dialogue
 draw_set_halign(fa_center); draw_set_valign(fa_top);
 draw_set_font(global.scorefont) draw_set_alpha(1)
 draw_set_color(c_white)///Enemy Name Here
-draw_text(160,240-24,string_hash_to_newline(TextDialogue)) draw_set_font(-1)
+draw_text(160,240-24,string_hash_to_newline(TextDialogue))
+draw_set_font(-1)
 draw_set_halign(fa_left)
 
 if bossID!=-1 if !instance_exists(bossID) bossID=-1;
@@ -749,150 +784,10 @@ if room=rm_characterselect
 draw_set_color(c_white) draw_set_alpha(1)
 draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))
 
+///COMMAND TEXT
+draw_command(2)
+///
 
-if x=-99999999999999
-{
-if p1Select=0
-{if -p1.key_left_pressed{PlaySound(snd_select)
-if global.P1Char=0 global.P1Char=3 else
-global.P1Char-=1}
-if p1.key_right_pressed{PlaySound(snd_select)
-if global.P1Char=3 global.P1Char=0 else
-global.P1Char+=1}
-}
-if global.UnlockAltPal=1
-{
-if p1.key_up_pressed if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1 
-if -p1.key_down_pressed if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1 
-}
-//current_pal=0;
-//my_pal_sprite=spr_playerpal
-{
-if global.P1Char=0 pal_swap_set(spr_playerpal,global.p1Pal,false);
-draw_sprite(spr_csviva,0,0,53) pal_swap_reset()
-if global.P1Char=1 pal_swap_set(spr_playerpal,global.p1Pal,false);
-draw_sprite(spr_cshina,0,80,53) pal_swap_reset()
-if global.P1Char=2 pal_swap_set(spr_playerpal,global.p1Pal,false);
-draw_sprite(spr_csbahati,0,160,53) pal_swap_reset()
-if global.P1Char=3 pal_swap_set(spr_playerpal,global.p1Pal,false);
-draw_sprite(spr_cssofia,0,240,53) pal_swap_reset()
-}
-if p1Select=1
-{
-pal_swap_set(spr_playerpal,global.p1Pal,false);
-if p1selFrame<3 if p1selFrame<1 p1selFrame+=0.05 else p1selFrame+=0.2
-if global.P1Char=0
-draw_sprite(spr_csviva,1+p1selFrame,0,53)
-if global.P1Char=1
-draw_sprite(spr_cshina,1+p1selFrame,80,53)
-if global.P1Char=2
-draw_sprite(spr_csbahati,1+p1selFrame,160,53)
-if global.P1Char=3
-draw_sprite(spr_cssofia,1+p1selFrame,240,53)
-pal_swap_reset()
-}
-
-if charSelectFlash!=0
-{
-shader_set(shd_white_sprite)
-if global.P1Char=0
-draw_sprite(spr_characterselect,1,0,53)
-if global.P1Char=1
-draw_sprite(spr_characterselect,1,80,53)
-if global.P1Char=2
-draw_sprite(spr_characterselect,1,160,53)
-if global.P1Char=3
-draw_sprite(spr_characterselect,1,240,53)
-shader_reset()
-}
-
-if p1Select=1 {if p1Flicker<0 p1Flicker=2 else p1Flicker-=0.5}
-{characterVoiceAnnounce-=1
-
-if characterVoiceAnnounce=90+80
-{
-if global.P1Char=0 PlaySound(snd_viva1)
-if global.P1Char=1 PlaySound(snd_hina1)
-if global.P1Char=2 PlaySound(snd_bahati1)
-if global.P1Char=3 PlaySound(snd_sofia1)
-}
-if global.P1Char=0 {
-if p1Flicker<1
-draw_sprite(spr_characterselect,0,0,53)
-//draw_sprite_ext(spr_characterselect,5,0,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,80,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,160,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,240,53,1,1,0,0,0.5)
-}
-if global.P1Char=1 {
-if p1Flicker<1
-draw_sprite(spr_characterselect,0,80,53)
-draw_sprite_ext(spr_characterselect,1,0,53,1,1,0,0,0.5)
-//draw_sprite_ext(spr_characterselect,5,80,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,160,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,240,53,1,1,0,0,0.5)
-}
-if global.P1Char=2 {
-if p1Flicker<1
-draw_sprite(spr_characterselect,0,160,53)
-draw_sprite_ext(spr_characterselect,1,0,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,80,53,1,1,0,0,0.5)
-//draw_sprite_ext(spr_characterselect,5,160,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,240,53,1,1,0,0,0.5)
-}
-if global.P1Char=3 {
-if p1Flicker<1
-draw_sprite(spr_characterselect,0,240,53)
-draw_sprite_ext(spr_characterselect,1,0,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,80,53,1,1,0,0,0.5)
-draw_sprite_ext(spr_characterselect,1,160,53,1,1,0,0,0.5)
-///draw_sprite_ext(spr_characterselect,5,240,53,1,1,0,0,0.5)
-}
-}
-
-if charSelectFlash!=0 charSelectFlash-=0.5
-
-draw_sprite(spr_characterstats,0,0,189)
-draw_sprite(spr_characterstats,0,80,189)
-draw_sprite(spr_characterstats,0,160,189)
-draw_sprite(spr_characterstats,0,240,189)
-
-draw_set_font(global.scorefont)
-draw_set_valign(fa_top)
-///P1
-draw_set_halign(fa_center)
-draw_text(40,190,string_hash_to_newline("POWER"))
-draw_text(40,190+8,string_hash_to_newline("✰✰✰"))
-draw_text(40,190+16,string_hash_to_newline("SPEED"))
-draw_text(40,190+24,string_hash_to_newline("✰✰✰"))
-draw_text(40,190+32,string_hash_to_newline("REACH"))
-draw_text(40,190+40,string_hash_to_newline("✰✰✰"))
-///P2
-draw_set_halign(fa_center)
-draw_text(40+80,190,string_hash_to_newline("POWER"))
-draw_text(40+80,190+8,string_hash_to_newline("✰✰✰"))
-draw_text(40+80,190+16,string_hash_to_newline("SPEED"))
-draw_text(40+80,190+24,string_hash_to_newline("✰✰"))
-draw_text(40+80,190+32,string_hash_to_newline("REACH"))
-draw_text(40+80,190+40,string_hash_to_newline("✰✰✰✰"))
-draw_set_halign(fa_left)
-///P3
-draw_set_halign(fa_center)
-draw_text(40+160,190,string_hash_to_newline("POWER"))
-draw_text(40+160,190+8,string_hash_to_newline("✰✰✰✰✰"))
-draw_text(40+160,190+16,string_hash_to_newline("SPEED"))
-draw_text(40+160,190+24,string_hash_to_newline("✰"))
-draw_text(40+160,190+32,string_hash_to_newline("REACH"))
-draw_text(40+160,190+40,string_hash_to_newline("✰✰✰"))
-///P4
-draw_set_halign(fa_center)
-draw_text(40+240,190,string_hash_to_newline("POWER"))
-draw_text(40+240,190+8,string_hash_to_newline("✰"))
-draw_text(40+240,190+16,string_hash_to_newline("SPEED"))
-draw_text(40+240,190+24,string_hash_to_newline("✰✰✰✰✰"))
-draw_text(40+240,190+32,string_hash_to_newline("REACH"))
-draw_text(40+240,190+40,string_hash_to_newline("✰✰✰"))
-}
 draw_set_halign(fa_center)
 if characterSelReady=1
 {charselLerp=lerp(charselLerp,-6,0.1)
@@ -902,40 +797,6 @@ draw_text(160+p5.introtextadd,44,"PRESS START TO PLAY")
 draw_set_font(global.timefont)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
-
-if x=-999999 ////UNUSED
-{
-draw_text(160+88888,32,string_hash_to_newline(charSelCountdown)) ////
-charSelCountdown=888888//Disable time
-
-if charSelCountdown!=0 and p1Select=0
-{
-charSelFlash-=1
-if charSelFlash=0 {charSelFlash=60 charSelCountdown-=1}
-if charSelCountdown=0 charSelForceSelect=1
-}
-
-
-if p1.key_attack or keyboard_check_pressed(vk_enter)// or charSelForceSelect=1
-{
-if characterSelReady!=2
-{
-if characterSelReady=1
-{PlaySound(snd_picked) alarm[4]=20 characterSelReady=2}
-
-if characterSelReady=0
-{
-if p1Select=0///Select Character
-{PlaySound(snd_picked) charSelectFlash=1 characterSelReady=1
-p1Select=1
-characterVoiceAnnounce=200
-}
-}
-
-}
-}
-}
-
 
 if characterSelReady=2
 {
@@ -992,13 +853,15 @@ draw_text(8,64,string_hash_to_newline("NAME "+string(HiInput1)))
 draw_sprite(spr_playerface,global.P1Char,8,96)
 }
 
+if global.HiScoreSee=0
+{
 if hiScoreYgo=1
 if hiScoreY<2
 hiScoreY+=0.025
 else {
 hiScoreYgo=2 alarm[5]=180////This alarm's so it can tell when to change the room
 }
-
+}
 
 
 draw_set_halign(fa_left)
@@ -1035,24 +898,50 @@ draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore1
 
 ///Sprites
 draw_set_halign(fa_left)
-draw_sprite(spr_playerface,global.HiScoreFace1, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace2, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace3, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace4, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace5, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace6, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace7, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace8, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace9, 320-96,(yy3++ * 26)-30)
-draw_sprite(spr_playerface,global.HiScoreFace10, 320-96,(yy3++ * 26)-30)
+pal_swap_set(global.HiScorePalS1,global.HiScorePal1,false);
+draw_sprite(spr_playerface,global.HiScoreFace1, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS2,global.HiScorePal2,false);
+draw_sprite(spr_playerface,global.HiScoreFace2, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS3,global.HiScorePal3,false);
+draw_sprite(spr_playerface,global.HiScoreFace3, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS4,global.HiScorePal4,false);
+draw_sprite(spr_playerface,global.HiScoreFace4, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS5,global.HiScorePal5,false);
+draw_sprite(spr_playerface,global.HiScoreFace5, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS6,global.HiScorePal6,false);
+draw_sprite(spr_playerface,global.HiScoreFace6, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS7,global.HiScorePal7,false);
+draw_sprite(spr_playerface,global.HiScoreFace7, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS8,global.HiScorePal8,false);
+draw_sprite(spr_playerface,global.HiScoreFace8, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS9,global.HiScorePal9,false);
+draw_sprite(spr_playerface,global.HiScoreFace9, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+pal_swap_set(global.HiScorePalS10,global.HiScorePal10,false);
+draw_sprite(spr_playerface,global.HiScoreFace10, 320-96,(yy3++ * 26)-30) pal_swap_reset()
 
 
-if key_attack or keyboard_check_pressed(vk_enter) or key_start
-or key_jump or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
+if global.HiScoreSee=1
+{
+if key_up if hiScoreY>-10 hiScoreY-=0.1
+if key_down if hiScoreY<10 hiScoreY+=0.1
+hiScoreY=clamp(hiScoreY,-2.5,2.5)
+
+draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"","EXIT")
+}
+if pauseBuffer!=0 pauseBuffer-=1
+if key_attack or key_start
+or key_jump or keyboard_check_pressed(vk_escape)
+if pauseBuffer=0
 {////Hiscore to Title Screen
 if global.HiscoreSkip=0 {global.MenuSkip=0 global.IntroSkip=0}
 else {global.MenuSkip=0 global.IntroSkip=1} //global.MenuSkip=1 global.IntroSkip=2}
+if global.HiScoreSee=0
+room_goto(rm_titlescreen)
+else
+if !key_attack and !key_start
+{
 room_goto(rm_menu)
+}
 }
 }
 
@@ -1306,14 +1195,33 @@ if creditsGo=0
 creditsTime-=1
 controller_setup()
 /////Skip Cutscene if cutsceneMode=0
-if key_attack or key_jump or key_shield or key_super or keyboard_check_pressed(vk_enter)
+if key_charge or key_jump_hold or key_shield or keyboard_check(vk_enter)
 {
+
+
 if cutscenedecision=0
+{
+if canSkipCutscene=2 or canSkipCutscene=1
+{
+draw_set_font(global.scorefont)
+draw_set_halign(fa_center) draw_set_color(c_white)
+draw_text_transformed(160,8,"SKIPPING",1.5,1.5,0)
+draw_set_color(c_black)
+draw_rectangle(160-80,24,160+80,32,false)
+draw_set_color(c_white)
+draw_rectangle(160-80+1,24+1,-1+160-80+160*skipScene,32-1,false)
+} else skipScene=0
+draw_set_halign(fa_left)
+
+if skipScene<1 skipScene+=0.01
+else
 {
 if canSkipCutscene=2 stageEndFX=1
 if canSkipCutscene=1 {global.CutsceneSkip=1 room_restart()}
 }
 }
+} else skipScene=0
+
 
 //draw_sprite(CutsceneImage,CutsceneIndex,CutsceneX,CutsceneY)
 
@@ -1447,42 +1355,13 @@ if room=rm_map
 {
 
 
-if x=-9999
-{
-draw_sprite(spr_hud,0,0,0)
-draw_sprite(spr_hud,0,72,0)
-draw_sprite(spr_hud,0,320-144,0)
-draw_sprite(spr_hud,0,320-72,0)
-draw_set_color(c_white)
-draw_sprite_part_ext(spr_hpbar,global.P1Char,0,0,32*1,10,24,21,1,1,c_white,1)
-draw_sprite(spr_playerface,global.P1Char,2,8)
-draw_set_font(global.scorefont)
-if global.P1Char=0
-mapPlayerName="VIVA"
-if global.P1Char=1
-mapPlayerName="HINA"
-if global.P1Char=2
-mapPlayerName="BAHATI"
-if global.P1Char=3
-mapPlayerName="SOFIA"
-if string_length(mapPlayerName)<=4
-draw_text(25,12,string_hash_to_newline(mapPlayerName))
-else
-draw_text_transformed(25,12,string_hash_to_newline(mapPlayerName),0.75,1,0)
-draw_set_font(-1)
-//Super Bar
-draw_set_font(global.scorefont)
-draw_set_halign(fa_right)
-draw_text(70,12,string_hash_to_newline(global.P1Life)) //draw_text(39,0,7400)
-draw_text(70,2,string_hash_to_newline(global.P1Score)) //draw_text(39,0,7400)
-}
-
 draw_sprite(spr_stageselecttext,0,160,24)
+
 
 draw_set_font(global.scorefont) draw_set_color(c_white)
 draw_set_halign(fa_center)
 if mapSName!="LOCKED"
-draw_text(160,44,string(mapSName)+"\nHIGH SCORE:"+string(mapHighScore))
+draw_text(160,44,string(mapSName)+"\nHIGH SCORE: "+string(mapHighScore))
 else
 draw_text(160,44,string(mapSName))
 
@@ -1492,6 +1371,8 @@ draw_sprite_ext(spr_whitecol,0,-8,-8,99999,9999,0,c_black,1)
 
 if quickMapLerp!=0
 draw_sprite_ext(spr_whitecol,0,-8,-8,99999,9999,0,c_black,1)
+
+draw_command(1)
 }
 
 menu_draw()

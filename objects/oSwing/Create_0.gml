@@ -7,6 +7,11 @@ enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=7
 chardraw=draw_swing;
 
+canTrack=0
+weaponcanRecharge=1
+weaponRecharge=0
+weaponRechargeT="DYNAMITE"
+
 DamageVoice1=snd_femenemy7
 DamageVoice2=snd_femenemy7
 DamageVoice3=snd_femenemy7
@@ -20,8 +25,11 @@ maxhp=0.2
 
 DeathCry=snd_femenemy2
 
-weapon_add("HAMMER")
+weapontype=0 
 
+weapon_add("HAMMER") canTrack=1 weaponcanRecharge=0
+//var randH; randH=round(random(3)) if randH=0 {weapon_add("HAMMER") canTrack=1 weaponcanRecharge=0} if randH=1 {weapon_add("DYNAMITE") canTrack=0 weaponcanRecharge=1 weaponRechargeT="DYNAMITE"} if randH=2 {weapon_add("KNIFE") canTrack=0 weaponcanRecharge=1 weaponRechargeT="KNIFE"} if randH=3 {weapon_add("WHIP") canTrack=0 weaponcanRecharge=1 weaponRechargeT="KNIFE"}
+//weapon_add("PIE") canTrack=0 weaponcanRecharge=1 weaponRechargeT="KNIFE"
 
 enemyscript=animsetup_swing
 
@@ -76,7 +84,7 @@ canTaunt=0
 
 current_pal=2;
 
-weapontype=0
+
 weaponColPosX=48
 weaponColPosY=0
 weaponColPosZ=0

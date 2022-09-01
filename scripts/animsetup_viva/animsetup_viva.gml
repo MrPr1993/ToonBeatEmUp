@@ -256,7 +256,7 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 	if carry=1 {dropitem=1 event_user(2)} atkcol_set(31,0,46,1.35,1,21) weaponAttack=0 comboBreak=0 flashX=0 flashY=2 flashZ=32
 
 	///Change Anim from weapons
-	if weaponspawn=oHammer {if weaponLife=0 and weaponIsGun=1{event_user(5)} else {anim=26 exit;}} 
+	if weaponspawn=oHammer {if weaponLife=0 and weaponIsGun=1{event_user(5)} else {animFrame=0 anim=26 exit;}} 
 
 
 	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva3)}
@@ -651,8 +651,8 @@ selfatk.recovery=30
 	targetID.targetHeightHit=targetID.GrabFrame
 	grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale
 	targetID.depth=depth+1
-	atk=0
-	animFrame+=0.02 if animFrame>2 {
+	atk=0 if animFrame>grabTime/2 targetID.shaketime=1
+	animFrame+=0.02 if animFrame>grabTime {grabTime=2
 	grabX=0 grabY=0 grabZ=0 //targetID.hp-=0.05+extradamage
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
@@ -661,6 +661,8 @@ selfatk.recovery=30
 	{recovery=0 animFrame=0 
 	hurt=0 Throw=0
 	atk=0 canmove=1 
+	animFrame=EgrabFrame anim=EgrabAnim if anim!=0 canmove=0 throwcombo=2 z+=EgrabzAdd
+	sentflying=EgrabSentFlying*image_xscale zSpeed=EgrabZspeed if zSpeed!=0 ground=0 sprite_index=EgrabzSpr image_index=EgrabzIG
 	}throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
 	targetID=-1
 	}
@@ -1085,7 +1087,7 @@ selfatk.recovery=30
 	
 		///Taunt
 	if anim=83
-{sprite_index=spr_viva_taunt
+{sprite_index=spr_viva_taunt //if key_right if animFrame<1 {animFrame=0 anim=211}
 atk=0 
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.1)
@@ -1185,6 +1187,24 @@ disappearTime-=1
 	
 }
 }
+
+	if anim=211 ///Special Win
+	{sprite_index=spr_viva_win2 //-4,-72
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	frame_set(2,2,0.01)
+	frame_set(3,1,0.1) if animFrame=4
+			{hrt=instance_create_depth(x-4*image_xscale,y,-1,oFlashFX)
+		hrt.z=z-72 hrt.depth=depth-1 hrt.hspeed=0.8*image_xscale
+		with hrt
+		{alarm[0]=8888 sprite_index=spr_smokesmall image_speed=0.5
+zSpeed=-.04 zSpeedAdd=-0.1 isDepth=0}}
+	frame_set(4,3,0.1)
+	
+
+	
+	}
+
 	viva_weaponanim()
 
 	animsetup_viva_super()

@@ -64,6 +64,29 @@ function hiscore_setup() {
 	global.HiScoreFace8=2
 	global.HiScoreFace9=1
 	global.HiScoreFace10=0
+	
+	global.HiScorePalS1=spr_playerpal
+	global.HiScorePalS2=spr_playerpal
+	global.HiScorePalS3=spr_playerpal
+	global.HiScorePalS4=spr_playerpal
+	global.HiScorePalS5=spr_playerpal
+	global.HiScorePalS6=spr_playerpal
+	global.HiScorePalS7=spr_playerpal
+	global.HiScorePalS8=spr_playerpal
+	global.HiScorePalS9=spr_playerpal
+	global.HiScorePalS10=spr_playerpal
+	
+	global.HiScorePal1=0
+	global.HiScorePal2=0
+	global.HiScorePal3=0
+	global.HiScorePal4=0
+	global.HiScorePal5=0
+	global.HiScorePal6=0
+	global.HiScorePal7=0
+	global.HiScorePal8=0
+	global.HiScorePal9=0
+	global.HiScorePal10=0
+	
 	}
 
 	///These will be used for the scrolling screen

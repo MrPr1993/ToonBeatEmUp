@@ -19,10 +19,32 @@ PlaySound(snd_hwolf8) timer_set(0)
 }
 else
 {
-if oControl.tutorialText="L TO USE SPECIAL ATTACK"
+if oControl.tutorialTextX!=64
 {
 oControl.tutorialTextTime=250
-oControl.tutorialText="IF THE SQUARED BAR IS FULL,\nPRESS H FOR A SHOWTIME!"
+with oControl
+{
+tutorialTextX=64
+tutorialTextY=48
+btnSep=16
+btnT1="PRESS"
+btnspr=spr_commandbutton
+if global.ConsoleType="PC"
+{
+btnind=0
+btnT2="H"
+}
+else
+{
+var commandMul=0;
+if global.ConsoleType="XBOX" commandMul=0;
+if global.ConsoleType="PS" commandMul=1;
+if global.ConsoleType="SWITCH" commandMul=2;
+btnind=7+6*commandMul btnT2=""
+}
+
+btnT3="FOR A SHOWTIME IF BAR'S FULL!"
+}
 }
 timeline_position-=1
 }

@@ -2,6 +2,8 @@
 
 enemy_step()
 
+if canTrack=1
+{
 if spawnID!=-1
 enemy_ai()
 else if instance_exists(oHammer)
@@ -79,6 +81,13 @@ else enemy_ai()
 } else enemy_ai()
 
 enemy_control()
+}
+else
+{
+enemy_ai()
+}
+
+
 
 if hurt=1
 {
@@ -97,7 +106,7 @@ weapon.image_blend=weaponcolor
 weapon.weaponLife=weaponLife
 weapon.weapon_pal_sprite=weapon_pal_sprite
 weapon.weapon_pal=weapon_pal
-
+weapon.image_index=0
 weaponspr=-1
 weaponIndex=0
 weaponX=0
@@ -129,12 +138,16 @@ anim=130
 
 
 if weaponspr!=-1
-rangeAtk=weaponRange else rangeAtk=40
+rangeAtk=weaponRange else {
+if weaponcanRecharge=1
+weaponRecharge=1 else weaponRecharge=0
+	rangeAtk=140 }
 
 if anim=10 ///Attack Stand
 if overwriteAttack=1
 {
-
+if weaponRecharge=0
+{
   hit=1
 if weaponspr!=-1
 {
@@ -148,7 +161,6 @@ weaponAttack=1
 selfatk.HitSound=HitSound
 if weapontype!=-1 selfatk.HitSound=Whitsound
 hitFXset(WspriteFX,WindexFX,WisDepth,WanimEnd,WspeedFX,WspriteTime,WxScaleFX,WyScaleFX,WblendFX,WalphaFX)
-
 
 
 if weapontype=0
@@ -195,27 +207,22 @@ if animFrame>6.5 {hurt=0 atk=0 canmove=1 hit=0
 }
 if weapontype=1
 {
-///Knife Stab 
-if animFrame=0 PlaySoundNoStack(WswingSound)
-if image_index=clamp(image_index,0,0.9)
-weaponanim(weaponspr,weaponIndex,7,-49,0*image_xscale,weaponcolor)
-else
-weaponanim(weaponspr,weaponIndex,32,-51,0*image_xscale,weaponcolor)
+///Knife Weapon
+if distance_to_point(targetEnemy.x,targetEnemy.y)>50
+anim=132 else anim = 133
+}
+if weapontype=3
+{
+if distance_to_point(targetEnemy.x,targetEnemy.y)>50
+anim=132 else anim=135
+}
 
-sprite_index=AtkSpr3
-image_index=animFrame image_speed=0
-if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-animFrame+=0.2 if animFrame>2.6 {hurt=0 atk=0 canmove=1 hit=0
-}
-}
+if weapontype=5 {animFrame=0 anim=134}
 
 }
 else
 {
-hitFXreset() selfatk.HitSound=snd_hit
-sprite_index=AtkSpr2 weaponAttack=0
-atkAddX=16 atkAddY=0 atkAddZ=0 selfatk.targetHeight=0
-selfatk.image_xscale=2*image_xscale selfatk.height=96
+anim=135
 }
 
 if sprite_index=AtkSpr2 {MoveType=0 damage=0.02
@@ -226,6 +233,15 @@ animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=
 }
 
 }
+}
+else
+{
+if distance_to_point(targetEnemy.x,targetEnemy.y)>50
+anim=131 
+else anim=135
+animFrame=0
+}
+
 }
 
 if anim=130 ///Taunt
@@ -242,3 +258,73 @@ if image_index<1.9 image_index+=0.1 else image_index=0
 if animFrame>10 {hurt=0 atk=0 canmove=1 hit=0}
 }
 
+if anim=131 //?RespawnWeapon
+{
+sprite_index=spr_swing_weapon
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,1,0.25)
+frame_set(4,2,0.25)
+frame_set(5,1,0.25)
+frame_set(6,2,0.25)
+frame_set(7,1,0.25)
+frame_set(8,2,0.25)
+frame_set(9,1,0.25) if animFrame>10 {weaponRecharge=0 weapon_add(weaponRechargeT)}
+frame_set(10,3,0.25)
+frame_set(11,4,0.1)
+frame_set(12,4,0.1) if animFrame>12 canmove=1
+}
+
+if anim=132 //Throw Weapon
+{sprite_index=spr_swing_throwitem
+
+frame_set(0,0,0.1)
+frame_set(1,1,0.05)
+frame_set(2,2,0.25) if animFrame=3
+{
+item_thrown()	
+	
+}
+frame_set(3,3,0.05)
+frame_set(4,0,0.25) if animFrame>5 canmove=1
+frame_set(5,0,0.25)
+}
+
+if anim=133 ///Knife Attack
+{
+///Knife Stab 
+if animFrame=0 PlaySoundNoStack(WswingSound)
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,7,-49,0*image_xscale,weaponcolor)
+else
+weaponanim(weaponspr,weaponIndex,32,-51,0*image_xscale,weaponcolor)
+
+sprite_index=AtkSpr3
+image_index=animFrame image_speed=0
+if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
+animFrame+=0.2 if animFrame>2.6 {hurt=0 atk=0 canmove=1 hit=0
+}
+}
+
+if anim=134 //WHIP
+{sprite_index=spr_swing_throwitem
+frame_set(0,0,0.25)
+frame_set(1,1,0.1) 
+frame_set(2,2,0.1)
+frame_set(3,3,0.1)
+frame_set(4,0,0.1)
+atkcol_set(58,0,34-16,3.05,1,25)
+if animFrame=clamp(animFrame,3,3.2) atk=1 else atk=0
+if animFrame>4.7 {canmove=1 anim=0}
+
+}
+
+if anim=135 ///Shove
+{
+hitFXreset() selfatk.HitSound=snd_hit animFrame+=0.1
+sprite_index=AtkSpr2 weaponAttack=0 image_index=animFrame if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
+atkAddX=16 atkAddY=0 atkAddZ=0 selfatk.targetHeight=0
+selfatk.image_xscale=2*image_xscale selfatk.height=96
+if animFrame>2.5 canmove=1
+}

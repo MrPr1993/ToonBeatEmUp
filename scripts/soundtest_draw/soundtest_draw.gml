@@ -155,5 +155,8 @@ draw_sprite(spr_hina_stand,0,160-32,200)
 draw_sprite(spr_bahati_stand,0,160+32,200)
 draw_sprite(spr_sofia_stand,0,160+96,200)
 
+draw_command(6)
+
+
 }
 }

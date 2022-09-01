@@ -13,3 +13,14 @@ oControl.stagePause=1
 oControl.StageNumber=2
 
 global.HiScoreLevel=2
+
+with oControl
+{
+stagename="AERIAL WALK"	
+
+global.PrevStage2=2
+prevstagecheck1=0
+prevstagecheck2=0
+prevstagecheck3=1
+stagecheck=2
+}

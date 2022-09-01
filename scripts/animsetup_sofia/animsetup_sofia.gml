@@ -663,8 +663,8 @@ selfatk.height=128
 	targetID.targetHeightHit=targetID.GrabFrame
 	grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale
 	targetID.depth=depth+1
-	atk=0
-	animFrame+=0.02 if animFrame>2 {
+	atk=0 if animFrame>grabTime/2 targetID.shaketime=1
+	animFrame+=0.02 if animFrame>grabTime {grabTime=2
 	grabX=0 grabY=0 grabZ=0 //targetID.hp-=0.05+extradamage
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
@@ -673,6 +673,8 @@ selfatk.height=128
 	{recovery=0 animFrame=0 
 	hurt=0 Throw=0
 	atk=0 canmove=1 
+	animFrame=EgrabFrame anim=EgrabAnim if anim!=0 canmove=0 throwcombo=2 z+=EgrabzAdd
+	sentflying=EgrabSentFlying*image_xscale zSpeed=EgrabZspeed if zSpeed!=0 ground=0 sprite_index=EgrabzSpr image_index=EgrabzIG
 	}throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
 	targetID=-1
 	}

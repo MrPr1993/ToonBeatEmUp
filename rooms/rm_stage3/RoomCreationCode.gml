@@ -12,3 +12,14 @@ oControl.StageNumber=6
 oControl.finalStage=1
 
 global.HiScoreLevel=3
+
+with oControl
+{
+stagename="MASHUP MUSEUM"		
+
+global.PrevStage3=6
+prevstagecheck1=0
+prevstagecheck2=1
+prevstagecheck3=global.PrevStage2
+stagecheck=6
+}

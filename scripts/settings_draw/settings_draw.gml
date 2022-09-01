@@ -122,6 +122,8 @@ if menuSelect=13 StarY=56+12+72-4
 
 draw_sprite(spr_scorefont,43,160-4,32+StarY)
 
+draw_command(1)
+
 if global.fpsMode=1
 {draw_set_halign(fa_right)
 

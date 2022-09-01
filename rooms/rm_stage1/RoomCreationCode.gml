@@ -6,3 +6,13 @@ oControl.stageNext=rm_cutscene1
 oControl.stagePause=1
 oControl.StageNumber=1
 global.HiScoreLevel=1
+
+with oControl
+{
+stagename="DOWNTOWN BEAT"
+
+prevstagecheck1=0
+prevstagecheck2=0
+prevstagecheck3=0
+stagecheck=1
+}

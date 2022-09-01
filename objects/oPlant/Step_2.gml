@@ -98,7 +98,7 @@ throwing=0 image_index=0 animFrame=0 anim=667 canmove=0 throwcombo=2 alarm[0]=60
 
 
 if targetID!=-1
-{
+{targetID.showmash=1
 if image_index=2 
 {//flashFX(x+34*image_xscale,y+1,z-67,spr_blood,0,0.5,-1,image_xscale,1,c_white,1)
 with targetID {hp-=0.01 //PlaySound(snd_cut) 

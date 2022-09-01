@@ -2,8 +2,26 @@ function character_physics() {
 	if act=1
 	{
 	
-
-
+	///Slippery terrain
+if place_meeting(x,y,oIceTer)
+{
+if ground=0 {frictionX=0 frictionY=0}
+else {
+	if canmove=1
+	{
+if totalSpeed!=0
+if -key_left or key_right
+frictionX+=(totalSpeed*image_xscale)*0.25 frictionX=clamp(frictionX,-totalSpeed,totalSpeed)
+if !key_up=0 or !key_down=0
+frictionY+=(-(walkSpeedY*key_up)+(walkSpeedY*key_down))*0.25/2
+frictionY=clamp(frictionY,-walkSpeedY,walkSpeedY)
+	}
+}
+}else {frictionX=0 frictionY=0}
+if place_free(x+frictionX,y) x+=frictionX
+if place_free(x,y+frictionY) y+=frictionY
+frictionX=lerp(frictionX,0,0.025) frictionY=lerp(frictionY,0,0.025)
+//
 		
 	totalSpeed=abs(walkSpeed)*1+abs(dashing)*1+abs(sentflying)
 if dodgetime!=0 dodgetime-=1 else {dodge=0 dodging=0 dodgetime=0}
@@ -37,7 +55,7 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 
 	if shaketime!=0 
 	{shaketime-=1 if shake!=-2 shake-=1 else shake=2
-	if (anim!=4 and anim!=9 and anim!=41 and anim!=61 and anim!=31 and anim!=37 and anim!=38 and anim!=201 and grabbed=0)
+	if (anim!=4 and anim!=9 and anim!=41 and anim!=61 and anim!=30 and anim!=31 and anim!=37 and anim!=38 and anim!=201 and grabbed=0)
 	  shake=0} else 
 	{shaketime=0 shake=0
 	}

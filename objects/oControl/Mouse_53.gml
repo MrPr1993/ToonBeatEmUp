@@ -25,6 +25,13 @@ if keyboard_check(vk_shift) with en
 {
 if object_index=oEnemy1
 {canmove=0 anim=70000}
+
+if object_index=oBurger
+{
+var bb=choose(oApple,oBanana,oBurger,oCake,oChocolate,oDango,oDonut,oDrink,oFries,oGum,oHotDog,oMeat,oMushroom,oPizza,oTea);
+bbbb=instance_create_depth(x,y,-1,bb)
+instance_destroy()
+}
 	
 if object_index=oBoss1 or object_index=oPharaoh
 {

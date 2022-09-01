@@ -45,11 +45,7 @@ gameOverFlash=1
 audio_stop_all()
 setGameOver=2
 GoldShow=1
-GoldGet+=round(p1.PlayerScore/100) 
-GoldGet+=round(p2.PlayerScore/100) 
-GoldGet+=round(p3.PlayerScore/100) 
-GoldGet+=round(p4.PlayerScore/100) 
-global.Gold+=GoldGet
+//gold_save()
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1
 alarm[3]=320
@@ -62,11 +58,7 @@ gameOverFlash=1
 audio_stop_all()
 setGameOver=2
 GoldShow=1
-GoldGet+=round(p1.PlayerScore/100) 
-GoldGet+=round(p2.PlayerScore/100) 
-GoldGet+=round(p3.PlayerScore/100) 
-GoldGet+=round(p4.PlayerScore/100) 
-global.Gold+=GoldGet
+//gold_save()
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1
 alarm[3]=320

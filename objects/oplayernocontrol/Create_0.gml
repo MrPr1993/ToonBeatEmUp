@@ -16,6 +16,8 @@ selfatk.isPlayer=1
 isEnemy=0
 enemyID=0
 
+GoldGet=0
+
 altresult2=-1
 
 playerGet=0

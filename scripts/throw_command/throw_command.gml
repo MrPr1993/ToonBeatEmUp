@@ -7,7 +7,7 @@ function throw_command(argument0, argument1, argument2, argument3, argument4) {
 	if targetID!=-1
 	{
 	if targetID.hurt=0 and targetID.immune=0 and targetID.act=1 and targetID.dead=0 and targetID.recoveryThrow=0 and targetID.ground
-	and targetID.z=z and targetID.isPlayer!=isPlayer
+	and targetID.z=z and targetID.isPlayer!=isPlayer and targetID.x=clamp(targetID.x,x-16,x+16)
 	and targetID.canbeGrabbed=1 and ((targetID.x>x and image_xscale=1) or (targetID.x<x and image_xscale=-1) )// and object_index=oPlayer
 	{throwing=1 atk=1 canmove=0 isThrow=1 selfatk.isThrow=1 recovery=10
 
@@ -24,6 +24,7 @@ function throw_command(argument0, argument1, argument2, argument3, argument4) {
 	grabX=argument1//24*image_xscale
 	grabY=argument2//0
 	grabZ=argument3//-1
+	 grabTime=targetID.EgrabTime
 	targetID.x=x+grabX
 	targetID.y=y+grabY
 	targetID.z=z+grabZ

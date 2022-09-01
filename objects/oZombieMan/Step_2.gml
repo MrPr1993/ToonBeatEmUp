@@ -128,6 +128,8 @@ targetID.image_index+=0.1
 
 targetID.recovery=0
 
+targetID.showmash=1
+
 if targetID.key_up_pressed
 or targetID.key_down_pressed
 or targetID.key_left_pressed

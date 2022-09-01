@@ -9,3 +9,14 @@ with oEnemySpawner
 	GoBackY=1 canFollowY=1
 	MaxY=280
 		}
+
+with oControl
+{
+stagename="CLOWNY HONKY CARNIVAL"		
+
+global.PrevStage4=9
+prevstagecheck1=1
+prevstagecheck2=global.PrevStage2
+prevstagecheck3=global.PrevStage3
+stagecheck=9
+}

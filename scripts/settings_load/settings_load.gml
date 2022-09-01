@@ -24,5 +24,6 @@ global.fpsMode=ini_read_real("SETTINGS","FPS",0)
 global.enemytest=ini_read_real("ENEMYTEST","TEST",0)
 global.enemytestB=ini_read_real("ENEMYTEST","TESTB",0)
 global.LevelSelectSave=ini_read_real("LEVELTEST","0",0)
+global.Continues=global.ContinueStart
 ini_close()
 }

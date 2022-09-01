@@ -97,6 +97,14 @@ frame_set(4,3,0.1)
 	}
 	}
 
+if weapontype=5 ////Whip
+{if animFrame=0 sprite_index=spr_viva_knife
+frame_set(0,0,0.1) if animFrame=1 sprite_index=spr_viva_grab
+frame_set(1,2,0.1) 
+frame_set(2,3,0.1) if animFrame=3 sprite_index=spr_viva_grab
+frame_set(3,0,0.1)
+if animFrame>3.7 {canmove=1 anim=0}
+}
 
 		///Ice Gun Fire
 	if weapontype=6

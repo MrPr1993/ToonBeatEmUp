@@ -29,3 +29,4 @@ iconheight=-48
 
 //tutorialtext="PRESS J TO\nATTACK!"
 tutorialtext="TRAIN AND BEAT UP\nBAGGY HERE."
+

@@ -111,7 +111,7 @@ if global.P1Char=0 CharSpr=spr_viva_train
 if global.P1Char=1 CharSpr=spr_hina_train
 if global.P1Char=2 CharSpr=spr_bahati_train
 if global.P1Char=3 CharSpr=spr_sofia_train
-pal_swap_set(spr_playerpal,global.p1Pal,false);
+pal_swap_set(global.p1Pals,global.p1Pal,false);
 //CharSpr
 }
 if playNO=2
@@ -120,7 +120,7 @@ if global.P2Char=0 CharSpr=spr_viva_train
 if global.P2Char=1 CharSpr=spr_hina_train
 if global.P2Char=2 CharSpr=spr_bahati_train
 if global.P2Char=3 CharSpr=spr_sofia_train
-pal_swap_set(spr_playerpal,global.p2Pal,false);
+pal_swap_set(global.p2Pals,global.p2Pal,false);
 }
 if playNO=3
 {
@@ -128,7 +128,7 @@ if global.P3Char=0 CharSpr=spr_viva_train
 if global.P3Char=1 CharSpr=spr_hina_train
 if global.P3Char=2 CharSpr=spr_bahati_train
 if global.P3Char=3 CharSpr=spr_sofia_train
-pal_swap_set(spr_playerpal,global.p3Pal,false);
+pal_swap_set(global.p3Pals,global.p3Pal,false);
 }
 if playNO=4
 {
@@ -137,7 +137,7 @@ if global.P4Char=1 CharSpr=spr_hina_train
 if global.P4Char=2 CharSpr=spr_bahati_train
 if global.P4Char=3 CharSpr=spr_sofia_train
 	
-pal_swap_set(spr_playerpal,global.p4Pal,false);
+pal_swap_set(global.p4Pals,global.p4Pal,false);
 }
 draw_sprite(CharSpr,CharFrame,164,round(211+quakeFX))
 pal_swap_reset()
@@ -211,9 +211,11 @@ if setGameOver!=2
 {
 if finalStageHi=1
 {
+finalStageMono-=0.01
+shader_set(shd_grayscale)
 draw_sprite(spr_photoplaceholder,0,0,0)
-draw_set_alpha(stageclearblack) draw_set_color(c_black)
-draw_rectangle(-999,-999,999,999,false)
+shader_reset()
+draw_sprite_ext(spr_photoplaceholder,0,0,0,1,1,0,c_white,finalStageMono)
 }
 draw_set_halign(fa_left)
 if playNO=1 with p1
@@ -246,6 +248,20 @@ if stageScore=1
 {alarm[0]=0 
 draw_set_font(global.scorefont)
 
+if stagecheck!=0
+{
+draw_set_halign(fa_left)
+draw_text(160,220,""+string_hash_to_newline(string(continueStageScore)))
+
+if newrecord=1 {draw_set_halign(fa_center)
+newrecordframe-=0.25 if newrecordframe<0 newrecordframe=2 if newrecordframe<1 draw_set_color(c_red) else draw_set_color(c_yellow)
+draw_text_transformed(160,220-8,"NEW RECORD!",0.75,1,0)
+}
+draw_set_color(c_white)
+draw_set_halign(fa_right)
+draw_text_transformed(160,220,"STAGE SCORE:",0.75,1,0)
+}
+
 actPorg=(actP1+actP2+actP3+actP4)
 if actPorg=0 actPorgT=0 ///3
 else
@@ -275,7 +291,6 @@ d3d_transform_set_translation(round(oContinueScreen.actPorgT+160+((80*oContinueS
 
 //d3d_transform_set_translation(round(320-72-800000),0,0)
 
-draw_set_halign(fa_right)
 draw_set_halign(fa_center)
 
 if controlNO!=9
@@ -287,8 +302,16 @@ draw_text_transformed(0,144,string_hash_to_newline(string("")),0.75,1,0)
 draw_text_transformed(0,144+16,string_hash_to_newline(string(oContinueScreen.resulttext2)),0.75,1,0)
 draw_text_transformed(0,144+32,string_hash_to_newline(string(oContinueScreen.resulttext3)),0.75,1,0)
 
+if controlNO=1
+pal_swap_set(global.p1Pals,global.p1Pal,false);
+if controlNO=2
+pal_swap_set(global.p2Pals,global.p2Pal,false);
+if controlNO=3
+pal_swap_set(global.p3Pals,global.p3Pal,false);
+if controlNO=4
+pal_swap_set(global.p4Pals,global.p4Pal,false);
 draw_sprite(spr_playerface,characterSelect,round(-23/2),144-28)
-
+pal_swap_reset()
 draw_sprite(spr_p1,controlNO-1,0,144-30)
 
 draw_set_halign(fa_center)
@@ -344,16 +367,15 @@ PlayerScore+=altresult2
 
 }
 PlayerScore+=oContinueScreen.altresult3
+
+
+
 }
 else PlayerScore=0
-GoldShow=1
-GoldGet+=round(p1.PlayerScore/100) 
-GoldGet+=round(p2.PlayerScore/100) 
-GoldGet+=round(p3.PlayerScore/100) 
-GoldGet+=round(p4.PlayerScore/100) 
 
-global.Gold+=GoldGet
+GoldShow=1
 gold_save()
+
 stageClearCheck=1
 }
 

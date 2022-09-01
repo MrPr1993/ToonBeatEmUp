@@ -88,25 +88,25 @@ if instance_exists(oControl) sourcy=oControl;
 if instance_exists(oContinueScreen) sourcy=oContinueScreen;
 
 if sourcy.finalStageEnd=0
-{hiscore_check()
+{
 isGameOver=0 
 keyToGameOver=1
 if instance_exists(oContinueScreen)
 {
 with oContinueScreen
 {
-GoldShow=1 GoldGet+=round((p1.PlayerScore/100)+(p2.PlayerScore/100)+(p3.PlayerScore/100)+(p4.PlayerScore/100))
+GoldShow=1
+GoldGet+=round(p1.PlayerScore/100)
+GoldGet+=round(p2.PlayerScore/100)
+GoldGet+=round(p3.PlayerScore/100)
+GoldGet+=round(p4.PlayerScore/100)
 setGameOver=1
+global.Gold+=GoldGet gold_save()
 }
 
-global.P1Score=0
-global.P1Life=0
-global.P2Score=0
-global.P2Life=0
-global.P3Score=0
-global.P3Life=0
-global.P4Score=0
-global.P4Life=0
+hiscore_check()
+
+
 
 if oContinueScreen.finalStage=1
 {oContinueScreen.finalStage=2 oContinueScreen.alarm[7]=240}

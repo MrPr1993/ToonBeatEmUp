@@ -12,6 +12,12 @@ DamageVoice3=snd_femenemy6
 
 DeathCry=snd_femenemy1
 
+EgrabTime=1
+EgrabAnim=60
+EgrabSentFlying=-6
+EgrabZspeed=-4
+EgrabzAdd=-24
+ sprite_index=spr_ninjabun_hit image_index=11
 
 pointshit=10
 points=100

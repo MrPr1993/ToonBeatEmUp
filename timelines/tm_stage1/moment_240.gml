@@ -8,7 +8,30 @@ and !instance_exists(en5)
 and !instance_exists(en6)
 {
 oControl.tutorialTextTime=150
-oControl.tutorialText="L TO USE SPECIAL ATTACK"
+with oControl
+{
+tutorialTextX=160-48
+tutorialTextY=48
+btnSep=16
+btnT1="PRESS"
+btnspr=spr_commandbutton
+
+if global.ConsoleType="PC"
+{
+btnind=0
+btnT2="L"
+}
+else
+{
+var commandMul=0;
+if global.ConsoleType="XBOX" commandMul=0;
+if global.ConsoleType="PS" commandMul=1;
+if global.ConsoleType="SWITCH" commandMul=2;
+btnind=5+6*commandMul btnT2=""
+}
+
+btnT3="FOR SPECIAL ATTACK"
+}
 	
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90

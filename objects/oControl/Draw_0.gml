@@ -22,6 +22,7 @@ alarm[4]=10
 }
 }
 mapSName="LOCKED"
+global.StageName=mapSName
 //mapSelX=0
 //mapSelY=0
 //mapSX=80
@@ -53,44 +54,44 @@ if mapSelX=0 and mapSelY=-1
 
 
 if mapSelX=0 and mapSelY=-1
-{mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
+{mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 mapHighScore=global.LevelHiScore[1] if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
 
 if mapSelX=0 and mapSelY=0
-{global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
+{global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 mapHighScore=global.LevelHiScore[1] if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
 
 if mapSelX=0 and mapSelY=1
-{mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
+{mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121mapHighScore=global.LevelHiScore[1]  if lockedMap[1]=1  mapSName="STAGE 1\nDOWNTOWN BEAT"}
 //B
-if mapSelX=1 and mapSelY=-1 {global.StageGoing=rm_stage2b mapSXlerp=190 mapSYlerp=102 if lockedMap[2]=1 mapSName="STAGE 2-B\nAERIAL WALK"}
-if mapSelX=1 and mapSelY=0 {global.StageGoing=rm_stage2 mapSXlerp=152 mapSYlerp=142 if lockedMap[3]=1 mapSName="STAGE 2\nRUSH OVER THE SEA"}
-if mapSelX=1 and mapSelY=1 {global.StageGoing=rm_stage2c mapSXlerp=102 mapSYlerp=194 if lockedMap[4]=1 mapSName="STAGE 2-C\nTRAINING TRAVEL"}
+if mapSelX=1 and mapSelY=-1 {global.StageGoing=rm_stage2b mapSXlerp=190 mapSYlerp=102 mapHighScore=global.LevelHiScore[2]  if lockedMap[2]=1 mapSName="STAGE 2-B\nAERIAL WALK"}
+if mapSelX=1 and mapSelY=0 {global.StageGoing=rm_stage2 mapSXlerp=152 mapSYlerp=142 mapHighScore=global.LevelHiScore[3] if lockedMap[3]=1 mapSName="STAGE 2\nRUSH OVER THE SEA"}
+if mapSelX=1 and mapSelY=1 {global.StageGoing=rm_stage2c mapSXlerp=102 mapSYlerp=194 mapHighScore=global.LevelHiScore[4] if lockedMap[4]=1 mapSName="STAGE 2-C\nTRAINING TRAVEL"}
 //C
-if mapSelX=2 and mapSelY=-1 {global.StageGoing=rm_stage4 mapSXlerp=248 mapSYlerp=109 if lockedMap[5]=1 mapSName="STAGE 3-B\nGRITTY GRAVES"}
-if mapSelX=2 and mapSelY=0 {global.StageGoing=rm_stage3 mapSXlerp=228 mapSYlerp=154 if lockedMap[6]=1  mapSName="STAGE 3\nMASHUP MUSEUM"}
-if mapSelX=2 and mapSelY=1 {global.StageGoing=rm_stage5 mapSXlerp=204 mapSYlerp=212 if lockedMap[7]=1 mapSName="STAGE 3-C\nLUCKY DOJO CASINO"}
+if mapSelX=2 and mapSelY=-1 {global.StageGoing=rm_stage4 mapSXlerp=248 mapSYlerp=109 mapHighScore=global.LevelHiScore[5] if lockedMap[5]=1 mapSName="STAGE 3-B\nGRITTY GRAVES"}
+if mapSelX=2 and mapSelY=0 {global.StageGoing=rm_stage3 mapSXlerp=228 mapSYlerp=154 mapHighScore=global.LevelHiScore[6] if lockedMap[6]=1 mapSName="STAGE 3\nMASHUP MUSEUM"}
+if mapSelX=2 and mapSelY=1 {global.StageGoing=rm_stage5 mapSXlerp=204 mapSYlerp=212 mapHighScore=global.LevelHiScore[7] if lockedMap[7]=1 mapSName="STAGE 3-C\nLUCKY DOJO CASINO"}
 //D
-if mapSelX=3 and mapSelY=-1 {global.StageGoing=rm_stageswamp mapSXlerp=320 mapSYlerp=111 if lockedMap[8]=1 mapSName="STAGE 4-B\nDEAD SWAMPS"}
-if mapSelX=3 and mapSelY=0 {global.StageGoing=rm_stagecarnival mapSXlerp=320 mapSYlerp=157 if lockedMap[9]=1 mapSName="STAGE 4\nCLOWNY DUCK CARNIVAL"}
-if mapSelX=3 and mapSelY=1 {global.StageGoing=rm_stagebeach mapSXlerp=320 mapSYlerp=215 if lockedMap[10]=1 mapSName="STAGE 4-C/nDOWN SIDE BEACH"}
+if mapSelX=3 and mapSelY=-1 {global.StageGoing=rm_stageswamp mapSXlerp=320 mapSYlerp=111 mapHighScore=global.LevelHiScore[8]  if lockedMap[8]=1 mapSName="STAGE 4-B\nDEEP DEAD SWAMPS"}
+if mapSelX=3 and mapSelY=0 {global.StageGoing=rm_stagecarnival mapSXlerp=320 mapSYlerp=157 mapHighScore=global.LevelHiScore[9] if lockedMap[9]=1 mapSName="STAGE 4\nCLOWNY HONKY CARNIVAL"}
+if mapSelX=3 and mapSelY=1 {global.StageGoing=rm_stagebeach mapSXlerp=320 mapSYlerp=215 mapHighScore=global.LevelHiScore[10] if lockedMap[10]=1 mapSName="STAGE 4-C/nDOWN SIDE BEACH"}
 //E
-if mapSelX=4 and mapSelY=-1 {global.StageGoing=rm_stageufo mapSXlerp=640-248 mapSYlerp=109 if lockedMap[11]=1 mapSName="STAGE 5-B\nUFO BEYOND THE STARS"}
-if mapSelX=4 and mapSelY=0 {global.StageGoing=rm_stagemermaid mapSXlerp=640-228 mapSYlerp=154 if lockedMap[12]=1 mapSName="STAGe 5\nUNDERWATER JAM"}
-if mapSelX=4 and mapSelY=1 {global.StageGoing=rm_stagedesert mapSXlerp=640-204 mapSYlerp=212 if lockedMap[13]=1 mapSName="STAGE 5-C\nHEATING HOT DESERT"}
+if mapSelX=4 and mapSelY=-1 {global.StageGoing=rm_stageufo mapSXlerp=640-248 mapSYlerp=109 mapHighScore=global.LevelHiScore[11]  if lockedMap[11]=1 mapSName="STAGE 5-B\nUFO BEYOND THE STARS"}
+if mapSelX=4 and mapSelY=0 {global.StageGoing=rm_stagemermaid mapSXlerp=640-228 mapSYlerp=154 mapHighScore=global.LevelHiScore[12]  if lockedMap[12]=1 mapSName="STAGe 5\nUNDER THE SEA JAM"}
+if mapSelX=4 and mapSelY=1 {global.StageGoing=rm_stagedesert mapSXlerp=640-204 mapSYlerp=212  mapHighScore=global.LevelHiScore[13] if lockedMap[13]=1 mapSName="STAGE 5-C\nHEATING HOT DESERT"}
 //F
-if mapSelX=5 and mapSelY=-1 {global.StageGoing=rm_stagesnow mapSXlerp=640-190 mapSYlerp=102 if lockedMap[14]=1  mapSName="STAGE 6-B\nCLIMBING COLD"}
-if mapSelX=5 and mapSelY=0 {global.StageGoing=rm_stagecave mapSXlerp=640-152 mapSYlerp=142 if lockedMap[15]=1  mapSName="STAGE 6\nFANTASTIC CAVERNS"}
-if mapSelX=5 and mapSelY=1 {global.StageGoing=rm_stageclouds mapSXlerp=640-102 mapSYlerp=194 if lockedMap[16]=1  mapSName="STAGE 6-C\nHEAD IN THE CLOUDS"}
+if mapSelX=5 and mapSelY=-1 {global.StageGoing=rm_stagesnow mapSXlerp=640-190 mapSYlerp=102 mapHighScore=global.LevelHiScore[14] if lockedMap[14]=1 mapSName="STAGE 6-B\nGREAT CLIMBING COLD"}
+if mapSelX=5 and mapSelY=0 {global.StageGoing=rm_stagecave mapSXlerp=640-152 mapSYlerp=142  mapHighScore=global.LevelHiScore[15] if lockedMap[15]=1 mapSName="STAGE 6\nFANTASTIC FANTASY CAVERNS"}
+if mapSelX=5 and mapSelY=1 {global.StageGoing=rm_stageclouds mapSXlerp=640-102 mapSYlerp=194 mapHighScore=global.LevelHiScore[16] if lockedMap[16]=1 mapSName="STAGE 6-C\nAHEAD IN THE CLOUDS"}
 //G
-if mapSelX=6 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
-if mapSelX=6 and mapSelY=0 {global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
-if mapSelX=6 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121  mapHighScore=global.LevelHiScore[18] if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=0 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] if lockedMap[18]=1  mapSName="STAGE 7\nDANGEROUS SCIENCE"}
 //if mapSelX=6 and mapSelY=-1 {mapSXlerp=640-128 mapSYlerp=87 if lockedMap[17]=1 mapSName="STAGE 0G"}
 //if mapSelX=6 and mapSelY=0 {mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 1G"}
 //if mapSelX=6 and mapSelY=1 {mapSXlerp=640-24 mapSYlerp=166 if lockedMap[19]=1 mapSName="STAGE 2G"}
 //H
-if mapSelX=7 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
-if mapSelX=7 and mapSelY=0 {global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
-if mapSelX=7 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[20] if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=0 {global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[20] if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[20] if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
 
 
 x=mapSX

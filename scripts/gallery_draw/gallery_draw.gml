@@ -12,7 +12,17 @@ if galleryload!=0 galleryload-=1
 if key_jump or keyboard_check_pressed(vk_escape) {if gallerychoosing=1 {PlaySound(snd_steal) gallerychoosing=0} else room=rm_menu}
 
 if gallerychoosing=0
+if galleryTime=0
 {
+draw_set_font(global.scorefont)
+draw_command(1)
+
+draw_set_font(global.scorefont) draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_text(160,2,"CHOOSE A GALLERY") 
+if galleryTime=0
+draw_text(160,240-12,galleryname) 
+draw_set_halign(fa_left)
 	///display_set_gui_size(320,240)
 
 	
@@ -27,7 +37,7 @@ draw_set_halign(fa_center)
 draw_text(160,240-12,galleryname) 
 pictureNO=1
 pictureMax=4
-galleryload=10
+galleryload=2 galleryTime=2
 gallerybuffer=10
 canControl=0
 }
@@ -68,19 +78,16 @@ if galleryNO=8 {galleryX=3 galleryY=1}
 
 //display_set_gui_size(1280,960)
 
-draw_set_font(global.scorefont) draw_set_color(c_white)
-draw_set_halign(fa_center)
-draw_text(160,2,"CHOOSE A GALLERY") 
-if galleryload=0
-draw_text(160,240-12,galleryname) 
-else draw_text(160,240-12,"LOADING") 
-draw_set_halign(fa_left)
 }
+
+if galleryTime!=0
+draw_text(160,240-12-16,"LOADING") 
 
 
 //display_set_gui_size(320,240)
 
 if gallerychoosing=1
+if galleryTime=0
 {
 
 //display_set_gui_size(window_get_width(),window_get_height())
@@ -91,13 +98,20 @@ if key_punchback {if pictureNO=pictureMax pictureNO=1 else pictureNO+=1 PlaySoun
 
 draw_set_font(global.scorefont) draw_set_color(c_white)
 if showtext=1
-{draw_set_halign(fa_left)
+{
+draw_command(5)
+	
+draw_set_halign(fa_left)
 draw_text(0,240-12,authorname) 
 draw_set_halign(fa_right)
 draw_text(320,240-12,string(pictureNO)+"/"+string(pictureMax)) 
 draw_set_halign(fa_left)
 }
 }
-if galleryload!=0 {gallery_load(galleryNO) canControl=1 galleryload=0}
+if galleryload!=0 {
+	galleryTime-=1
+	if galleryTime=0
+	{gallery_load(galleryNO) canControl=1 galleryload=0}
+	}
 }
 }

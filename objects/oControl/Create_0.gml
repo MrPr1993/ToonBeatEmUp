@@ -16,7 +16,7 @@ p2=-1
 p3=-1
 p4=-1
 
-
+menuX=0
 
 alarm[10]=640+160
 
@@ -69,9 +69,18 @@ CDtextvis=0
 CDtextflash=1
 canSkipCutscene=0
 
+prevstagecheck1=0
+prevstagecheck2=0
+prevstagecheck3=0
+stagecheck=0
+stagename=""
+
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 global.StageGoing=rm_opening
+
+
+global.ConsoleType="XBOX"
 
 global.HiScoreLevel=1
 
@@ -84,20 +93,33 @@ global.LevelSelectSave=0
 
 global.multiMode=1
 
+global.HiScoreSee=0
+
+
 
 global.TrainingRoom=0
 
+global.PrevStage1=0
+global.PrevStage2=0
+global.PrevStage3=0
+global.PrevStage4=0
+global.PrevStage5=0
+global.PrevStage6=0
+global.PrevStage7=0
+global.PrevStage8=0
 
 global.UnlockFeats=1
 
 global.UnlockStage[20]=0
-
-global.UnlockEnemy[60]=0
+global.LevelHiScore[20]=0
+stagedata_load()
 
 global.UnlockEnemy[1]=c_white
 global.UnlockEnemy[2]=c_white
 global.UnlockEnemy[3]=c_white
 global.UnlockEnemy[4]=c_white
+
+
 
 global.MenuGlobal=0
 global.MenuSkip=0
@@ -136,11 +158,32 @@ global.LifeStart=2
 
 global.DisplayFeats=1
 
+global.StageName=""
+
 global.Gold=0
 global.GoldShow=1 //global.GoldShow=1 Show Gold
 
 global.enemytest=0
 global.enemytestB=0
+
+global.P1Life=global.LifeStart
+global.P2Life=global.LifeStart
+global.P3Life=global.LifeStart
+global.P4Life=global.LifeStart
+global.P1Score=0
+global.P2Score=0
+global.P3Score=0
+global.P4Score=0
+
+global.p1Pal=0
+global.p2Pal=0
+global.p3Pal=0
+global.p4Pal=0
+
+global.p1Pals=spr_playerpal
+global.p2Pals=spr_playerpal
+global.p3Pals=spr_playerpal
+global.p4Pals=spr_playerpal
 
 global.P1available=1
 global.P2available=0
@@ -235,9 +278,9 @@ P1SpawnYadd=208
 
 
 
-if !variable_global_exists("P1Life")
+if !variable_global_exists("Bappo")
 {
-
+global.Bappo=0
 global.P1Life=2
 global.P2Life=2
 global.P3Life=2
@@ -247,35 +290,28 @@ global.p1Pal=0
 global.p2Pal=0
 global.p3Pal=0
 global.p4Pal=0
-}
-if !variable_global_exists("P1Score")
-{
+
 global.P1Score=0
 global.P2Score=0
 global.P3Score=0
 global.P4Score=0
-}
 
-if !variable_global_exists("HiScoreStage")
 global.HiScoreStage=1
 
-if !variable_global_exists("P1Char")
-{
 global.P1Char=0
 global.P2Char=1
 global.P3Char=2
 global.P4Char=3
-}
 
-if !variable_global_exists("CanGlobalBeta")
 global.CanGlobalBeta=1
 
-if !variable_global_exists("GlobalBeta")
-{
 global.GlobalBeta=1
 global.GlobalCBeta=1
 global.GlobalTBeta=1
 }
+
+charstatsetup=0
+
 ////Turn off Beta Mode
 //global.CanGlobalBeta=0
 //global.GlobalBeta=0
@@ -489,8 +525,10 @@ mapX=320-264//160
 mapY=240+152//80
 mapXscale=1
 mapYscale=-1
+mapXAdd=1
+mapXFilm=0
 
-
+skipScene=0
 
 hiScoreInput=0
 hiScoreInputNum=1
@@ -573,9 +611,7 @@ CutsceneVSpeed=0
 CutsceneStage=rm_stage2
 
 
-/////Map Screen
-lockedMap[30]=0
-check_unlockedmap()
+
 
 mapSelX=global.StageSelX
 mapSelY=global.StageSelY
@@ -639,9 +675,17 @@ if !variable_global_exists("LOADSET")
 settings_load()
 unlock_load()
 gold_load()
+
 }
 
-if room=rm_titlescreen global.StageSelect=0
+/////Map Screen
+lockedMap[30]=0
+check_unlockedmap()
+
+if room=rm_titlescreen 
+{global.StageSelect=0
+global.HiScoreSee=0
+}
 
 if room=rm_soundtest
 {
@@ -697,6 +741,8 @@ gallerybuffer=10
 
 galleryload=0
 
+galleryTime=0
+
 authorname="@MRPR1993"
 showtext=1
 pictureX=160
@@ -723,14 +769,23 @@ tutorialTextY=48
 tutorialTextTime=0
 tutorialText="ASDW TO MOVE\nJ TO ATTACK, K/SPACE TO JUMP"
 
-lockedMap[0]=1
-lockedMap[1]=1
-lockedMap[2]=1
-lockedMap[3]=1
-lockedMap[4]=1
-lockedMap[5]=1
-lockedMap[6]=1
-lockedMap[7]=1
+tutorialTextX=160
+tutorialTextY=48
+btnSep=8
+btnT1="PRESS"
+btnspr=spr_commandbutton
+btnind=0
+btnT2="J"
+btnT3="TO DO"
+
+//lockedMap[0]=1
+//lockedMap[1]=1
+//lockedMap[2]=1
+//lockedMap[3]=1
+//lockedMap[4]=1
+//lockedMap[5]=1
+//lockedMap[6]=1
+//lockedMap[7]=1
 
 cameraYAdd=0
 
@@ -755,6 +810,7 @@ if instance_exists(oPlayer)
 with oControl
 {
 p1=oPlayer
+p1.PlayerLife=global.P1Char p1.PlayerScore=global.P1Score
 p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=0 playerNO=2 playerGet=0}
 p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=0 playerNO=3 playerGet=0}
 p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=0 playerNO=4 playerGet=0}
@@ -765,14 +821,27 @@ if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper
 {//global.P1available=1
 	playernear=p1
-	with p1 {if global.P1available=0 ContinueMode=1}
+	with p1 {if global.P1available=0 ContinueMode=1
+PlayerLife=global.P1Life
+PlayerScore=global.P1Score my_pal_sprite=global.p1Pals
+		}
 	
 {p2=instance_create_depth(160,208-16,-1,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1
-	if global.P2available=0 p2.ContinueMode=1 p2.playerGet=0}
+	if global.P2available=0 p2.ContinueMode=1 else p2.ContinueMode=0 p2.playerGet=0
+	PlayerLife=global.P2Life
+PlayerScore=global.P2Score my_pal_sprite=global.p2Pals
+	}
 {p3=instance_create_depth(160,208-16,-1,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2
-		if global.P3available=0 p3.ContinueMode=1 p3.playerGet=0} 
+		if global.P3available=0 p3.ContinueMode=1 else p3.ContinueMode=0 p3.playerGet=0
+		PlayerLife=global.P3Life
+PlayerScore=global.P3Score my_pal_sprite=global.p3Pals
+		} 
 {p4=instance_create_depth(160,208-16,-1,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3
-		if global.P4available=0 p4.ContinueMode=1 p4.playerGet=0}
+		if global.P4available=0 p4.ContinueMode=1 else p4.ContinueMode=0 p4.playerGet=0
+		PlayerLife=global.P4Life
+PlayerScore=global.P4Score my_pal_sprite=global.p4Pals
+		}
 }
 
 }
+

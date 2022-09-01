@@ -1,5 +1,5 @@
 canControl=1
-controlNO=1
+controlNO=9
 character_setup()
 enemy_data()
 

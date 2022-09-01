@@ -86,6 +86,10 @@ draw_set_halign(fa_left)
 draw_text(160,120+16," YES")
 draw_sprite(spr_scorefont,43,-8+160-24+32*Sure,120+16)
 }
+
+///COMMAND TEXT
+draw_command(1)
+
 draw_set_halign(fa_center)
 
 settings_draw()

@@ -4,6 +4,10 @@ specialFX=0
 pointshit=10
 points=100
 
+EgrabTime=0.5
+EgrabAnim=21
+EgrabFrame=0.05
+
 name="LADY WOLF"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=5

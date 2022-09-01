@@ -20,11 +20,6 @@ else
 {////Set Game Over
 audio_stop_all()
 GoldShow=1
-GoldGet+=round(p1.PlayerScore/100) 
-GoldGet+=round(p2.PlayerScore/100) 
-GoldGet+=round(p3.PlayerScore/100) 
-GoldGet+=round(p4.PlayerScore/100) 
-global.Gold+=GoldGet
 gold_save()
 stageClearCheck=1
 

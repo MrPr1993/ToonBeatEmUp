@@ -1,4 +1,6 @@
 /// @description Z Block Collision
+
+
 if ContinueMode=0
 {
 zblock_col()

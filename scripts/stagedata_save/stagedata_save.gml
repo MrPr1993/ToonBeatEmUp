@@ -1,0 +1,50 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function stagedata_save(){
+
+ini_open("GAMEDATA/stage.ini");
+
+ini_write_real("STAGEdata", "S1a", global.UnlockStage[1])
+ini_write_real("STAGEdata", "S1b", global.LevelHiScore[1])
+ini_write_real("STAGEdata", "S2a", global.UnlockStage[2])
+ini_write_real("STAGEdata", "S2b", global.LevelHiScore[2])
+ini_write_real("STAGEdata", "S3a", global.UnlockStage[3])
+ini_write_real("STAGEdata", "S3b", global.LevelHiScore[3])
+ini_write_real("STAGEdata", "S4a", global.UnlockStage[4])
+ini_write_real("STAGEdata", "S4b", global.LevelHiScore[4])
+ini_write_real("STAGEdata", "S5a", global.UnlockStage[5])
+ini_write_real("STAGEdata", "S5b", global.LevelHiScore[5])
+ini_write_real("STAGEdata", "S6a", global.UnlockStage[6])
+ini_write_real("STAGEdata", "S6b", global.LevelHiScore[6])
+ini_write_real("STAGEdata", "S7a", global.UnlockStage[7])
+ini_write_real("STAGEdata", "S7b", global.LevelHiScore[7])
+ini_write_real("STAGEdata", "S8a", global.UnlockStage[8])
+ini_write_real("STAGEdata", "S8b", global.LevelHiScore[8])
+ini_write_real("STAGEdata", "S9a", global.UnlockStage[9])
+ini_write_real("STAGEdata", "S9b", global.LevelHiScore[9])
+ini_write_real("STAGEdata", "S10a", global.UnlockStage[10])
+ini_write_real("STAGEdata", "S10b", global.LevelHiScore[10])
+ini_write_real("STAGEdata", "S11a", global.UnlockStage[11])
+ini_write_real("STAGEdata", "S11b", global.LevelHiScore[11])
+ini_write_real("STAGEdata", "S12a", global.UnlockStage[12])
+ini_write_real("STAGEdata", "S12b", global.LevelHiScore[12])
+ini_write_real("STAGEdata", "S13a", global.UnlockStage[13])
+ini_write_real("STAGEdata", "S13b", global.LevelHiScore[13])
+ini_write_real("STAGEdata", "S14a", global.UnlockStage[14])
+ini_write_real("STAGEdata", "S14b", global.LevelHiScore[14])
+ini_write_real("STAGEdata", "S15a", global.UnlockStage[15])
+ini_write_real("STAGEdata", "S15b", global.LevelHiScore[15])
+ini_write_real("STAGEdata", "S16a", global.UnlockStage[16])
+ini_write_real("STAGEdata", "S16b", global.LevelHiScore[16])
+ini_write_real("STAGEdata", "S17a", global.UnlockStage[17])
+ini_write_real("STAGEdata", "S17b", global.LevelHiScore[17])
+ini_write_real("STAGEdata", "S18a", global.UnlockStage[18])
+ini_write_real("STAGEdata", "S18b", global.LevelHiScore[18])
+ini_write_real("STAGEdata", "S19a", global.UnlockStage[19])
+ini_write_real("STAGEdata", "S19b", global.LevelHiScore[19])
+ini_write_real("STAGEdata", "S20a", global.UnlockStage[20])
+ini_write_real("STAGEdata", "S20b", global.LevelHiScore[20])
+
+
+ini_close()
+}

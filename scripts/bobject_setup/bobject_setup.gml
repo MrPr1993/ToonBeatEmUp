@@ -4,6 +4,8 @@ function bobject_setup() {
 	zSpeed=0
 	ground=1
 
+spdZ=0
+
 	ground=1
 
 	roll=0

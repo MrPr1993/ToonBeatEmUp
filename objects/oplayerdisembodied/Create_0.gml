@@ -8,6 +8,8 @@ PlayerLife1=-1
 PlayerLife1=0
 PlayerScore=0
 
+GoldGet=0
+
 altresult2=-1
 playerGet=0
 

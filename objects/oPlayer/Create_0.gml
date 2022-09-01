@@ -4,10 +4,10 @@ controller_setup()
 character_setup()
 
 current_pal=global.p1Pal;
-my_pal_sprite=spr_playerpal
+my_pal_sprite=global.p1Pals;//spr_playerpal
 
 areaEntry=1 ///For the player to start
-x=-64 key_right=1
+x=-64 key_right=1 
 alarm[0]=90 ///Time to stop
 
 selfatk.isPlayer=1
@@ -28,7 +28,8 @@ enemyai=player_ai
 enemycontrol=enemy_control
 
 showp1=0;
-
+showmash=0;
+showmashI=0;
 
 ///Player Default Setup - their stats changes from their end step scripts instead
 name="VIVA"
@@ -45,8 +46,8 @@ character=global.P1Char
 HitReactionScript=viva_hitreaction
 AtkTime=0
 
-PlayerLife=global.P1Life
-PlayerScore=global.P1Score
+PlayerLife=0//global.P1Life
+PlayerScore=0//global.P1Score
 
 
 
@@ -204,3 +205,5 @@ keyGet3="A"
 keyToGameOver=0
 keyNo=1
 keyNoCheck="A"
+
+my_pal_sprite=global.p1Pals

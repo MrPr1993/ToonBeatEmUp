@@ -71,3 +71,5 @@ picksound=snd_viva1
 ability1="✰✰✰"
 ability2="✰✰✰"
 ability3="✰✰✰"
+
+palettemode=0

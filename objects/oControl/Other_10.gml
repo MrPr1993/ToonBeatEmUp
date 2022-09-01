@@ -4,7 +4,7 @@ if !keyboard_check(vk_control)
 
 if spawnNo=0 spawnType="Enemy"
 if spawnNo=1 spawnType="Bosses"
-if spawnNo=2 spawnType="Itemz"
+if spawnNo=2 spawnType="Item"
 if spawnNo=3 spawnType="Obstacle"
 if spawnNo=4 spawnType="Spawn Area"
 

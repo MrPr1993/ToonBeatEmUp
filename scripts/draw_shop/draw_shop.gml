@@ -11,7 +11,7 @@ if key_jump or keyboard_check_pressed(vk_escape)
 if shopBuy!=-1 shopBuy=-1
 else
 {canControl=0
-alarm[4]=80 global.StageGoing=rm_menu
+alarm[4]=80 global.StageGoing=rm_menu gold_save()
 shopDialogueAlt=8
 }
 }
@@ -251,6 +251,8 @@ draw_text(8,180+4+10,"       ✰     ")
 else
 draw_text(8,180+4+10,"              ✰")
 }
+
+draw_command(4)
 
 draw_set_halign(fa_right) 
 draw_text(320-10,240-16,string(global.Gold)+string("$"))

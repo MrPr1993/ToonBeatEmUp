@@ -12,6 +12,17 @@ d3d_transform_set_translation(320-72-72,0,0)
 if playerNO=4
 d3d_transform_set_translation(320-72,0,0)
 
+if object_index=oPlayer
+{
+if showp1=1
+draw_sprite(spr_p1,playerNO-1,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
+if showmash=1
+{
+draw_sprite(spr_buttonmash,showmashI,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
+if showmashI=1.75 showmashI=0 else showmashI+=0.25
+}
+}
+
 if object_index=oPlayerNoControl
 {
 draw_set_font(global.scorefont) draw_set_color(c_white) draw_set_alpha(1)
@@ -27,17 +38,54 @@ if ContinueSelect=1
 
 if continueScreen=2 ///Character Select
 {
+
 if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 
-
-if characterSelect=0 pal_swap_set(spr_playerpal,global.p1Pal,false)
+if playerNO=1
+{
+if characterSelect=0 pal_swap_set(global.p1Pals,global.p1Pal,false)
 draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=1 pal_swap_set(spr_playerpal,global.p1Pal,false)
+if characterSelect=1 pal_swap_set(global.p1Pals,global.p1Pal,false)
 draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=2 pal_swap_set(spr_playerpal,global.p1Pal,false)
+if characterSelect=2 pal_swap_set(global.p1Pals,global.p1Pal,false)
 draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=3 pal_swap_set(spr_playerpal,global.p1Pal,false)
+if characterSelect=3 pal_swap_set(global.p1Pals,global.p1Pal,false)
 draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
+}
+if playerNO=1
+{
+if characterSelect=0 pal_swap_set(global.p2Pals,global.p2Pal,false)
+draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=1 pal_swap_set(global.p2Pals,global.p2Pal,false)
+draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=2 pal_swap_set(global.p2Pals,global.p2Pal,false)
+draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=3 pal_swap_set(global.p2Pals,global.p2Pal,false)
+draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
+}
+if playerNO=1
+{
+if characterSelect=0 pal_swap_set(global.p3Pals,global.p3Pal,false)
+draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=1 pal_swap_set(global.p3Pals,global.p3Pal,false)
+draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=2 pal_swap_set(global.p3Pals,global.p3Pal,false)
+draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=3 pal_swap_set(global.p3Pals,global.p3Pal,false)
+draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
+}
+if playerNO=4
+{
+if characterSelect=0 pal_swap_set(global.p4Pals,global.p4Pal,false)
+draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=1 pal_swap_set(global.p4Pals,global.p4Pal,false)
+draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=2 pal_swap_set(global.p4Pals,global.p4Pal,false)
+draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
+if characterSelect=3 pal_swap_set(global.p4Pals,global.p4Pal,false)
+draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
+}
+
 
 draw_set_color(c_white)
 
@@ -195,6 +243,7 @@ draw_text(70,2,string_hash_to_newline(round(PlayerScore))) //draw_text(39,0,7400
 draw_set_halign(fa_left)
 }
 d3d_transform_set_identity()
+
 
 }
 }

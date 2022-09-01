@@ -105,5 +105,92 @@ weapontype=0
 weaponHitType=0
 }
 
+if wpadd="DYNAMITE"
+{
+spawnID=oDynamite
+weaponspr=spr_dynamite
+weaponIndex=0
+weaponX=14
+weaponY=-69
+weaponangle=180
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.1
+weapontype=3
+weaponHitType=0
+spawnZAdd=-4
+wThrowGrav=1
+weaponIsGun=1
+weaponLife=0
+}
+
+if wpadd="KNIFE"
+{
+spawnID=oKnife
+weaponspr=spr_knife
+weaponIndex=0
+weaponX=14
+weaponY=-69
+weaponangle=180
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.1
+weapontype=1
+WswingSound=snd_cut
+weaponHitType=0
+spawnZAdd=0
+wThrowGrav=0
+weaponIsGun=0
+weaponLife=4
+WhitDisappear=1
+WspriteFX=spr_blood
+weaponSpin=0 throwHspd=6
+}
+
+if wpadd="PIE"
+{
+spawnID=oPie
+weaponspr=spr_pie
+weaponIndex=0
+weaponX=14
+weaponY=-69
+weaponangle=180
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.1
+weapontype=3
+WswingSound=snd_hit
+weaponHitType=0
+spawnZAdd=0
+wThrowGrav=0
+weaponIsGun=1
+WhitDisappear=1
+weaponLife=0
+WhitDisappear=1
+WspriteFX=spr_blood
+weaponSpin=0 throwHspd=6
+}
+
+if wpadd="WHIP"
+{
+spawnID=oWhip
+weaponspr=spr_whip
+weaponIndex=0
+weaponX=14
+weaponY=-69
+weaponangle=180
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.2
+weapontargetHeight=2
+weapontype=5
+weaponHitType=1
+WswingSound=snd_swing3
+}
+
 
 }

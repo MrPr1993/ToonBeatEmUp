@@ -1,6 +1,7 @@
 function item_setup() {
 	height=32
 	canGrav=1
+	wThrowGrav=0
 	gravLandHalt=0
 	itemHP=0
 	trainz=0
@@ -8,7 +9,14 @@ function item_setup() {
 	canFX=1
 	FX=0
 
+weaponIndex=-1
+throwHspd=6
+
+spawnZAdd=0
+
 	name="PIZZA"
+	
+	
 
 	HitSound=snd_hit
 	PickupSound=snd_food
@@ -46,6 +54,8 @@ fallHole=0
 	iscarry=0
 
 	isdepth=0
+	
+	isEnemy=0
 
 	carry=0
 	carryZ=0

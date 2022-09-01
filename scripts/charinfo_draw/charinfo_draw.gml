@@ -233,10 +233,9 @@ draw_sprite(spr_playerface,4,-24+24*dataSelect+dataSet,26)
 //draw_set_color(c_black) draw_rectangle(145,-1,333,40,false) draw_set_color(c_white)
 draw_set_font(global.scorefont)
  //Name
- if hasVariants=1
- {
-draw_text(224+8,0,"\nPRESS J TO SWITCH\nVARIATION ("+string(dataPal)+string("/")+string(dataPalMax)+")") //Name
- }
+draw_command(3)
+
+draw_set_halign(fa_center)
 draw_text(72,8,"("+string(dataSelect)+"/"+string(dataRowMax)+")") //TITLE
 
 draw_text(72,16+2,"-"+string(categoryNames)+"-")

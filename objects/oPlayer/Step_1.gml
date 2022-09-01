@@ -1,4 +1,20 @@
 
+if controlNO=1
+{current_pal=global.p1Pal;
+my_pal_sprite=global.p1Pals
+}
+if controlNO=2
+{current_pal=global.p2Pal;
+my_pal_sprite=global.p2Pals
+}
+if controlNO=3
+{current_pal=global.p3Pal;
+my_pal_sprite=global.p3Pals
+}
+if controlNO=4
+{current_pal=global.p4Pal;
+my_pal_sprite=global.p4Pals
+}
 
 
 if ContinueMode=0

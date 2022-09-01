@@ -1,5 +1,6 @@
 if act=1
 if immune=0
+if other.isEnemy=0
 {
 {
 if other.attack=1 and Throw=0 and dead=0 and anim!=6
@@ -29,6 +30,8 @@ other.weaponLife-=1
 
 with other
 {
+if canHit=1
+{
 if isweapon=1
 {spdX=2*-image_xscale
 canGrav=1 gravLandHalt=1 spdZ=-8 attack=0 spinBack=1
@@ -42,7 +45,7 @@ event_user(0)
 PlaySound(HitSound)
 
 if WhitDisappear=1 instance_destroy()
-}
+}}
 
 
 

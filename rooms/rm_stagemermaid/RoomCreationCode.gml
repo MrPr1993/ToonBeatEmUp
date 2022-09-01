@@ -10,3 +10,13 @@ with oEnemySpawner
 	MaxY=280
 		}
 
+with oControl
+{
+stagename="UNDER THE SEA JAM"		
+
+global.PrevStage5=12
+prevstagecheck1=global.PrevStage2
+prevstagecheck2=global.PrevStage3
+prevstagecheck3=global.PrevStage4
+stagecheck=12
+}

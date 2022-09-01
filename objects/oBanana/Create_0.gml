@@ -11,3 +11,4 @@ isweapon=1
 HPDie=0
 itemCentered=1
 
+spawnZAdd=-2

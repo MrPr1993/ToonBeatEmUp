@@ -1,4 +1,4 @@
-
+showmash=0
 
 if ContinueMode=0
 {

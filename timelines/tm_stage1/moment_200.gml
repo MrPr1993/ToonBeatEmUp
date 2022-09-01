@@ -6,6 +6,7 @@ else
 oControl.tutorialTextTime=300
 
 
+
 if oPlayer.ground=0
 {oViewTarget.x=0
 __view_set( e__VW.Object, 0, oViewTarget )
@@ -26,6 +27,29 @@ timeline_running=true
 with oControl{showMap=1
 alarm[0]=60 timecheck=-1}
 
+with oControl
+{
+tutorialTextX=160
+tutorialTextY=48
+btnSep=16
+btnT1="PRESS"
+btnspr=spr_commandbutton
+if global.ConsoleType="PC"
+{
+btnind=0
+btnT2="J"
+}
+else
+{
+var commandMul=0;
+if global.ConsoleType="XBOX" commandMul=0;
+if global.ConsoleType="PS" commandMul=1;
+if global.ConsoleType="SWITCH" commandMul=2;
+btnind=6+6*commandMul btnT2=""
+}
+
+btnT3="TO ATTACK"
+}
 
 en1=instance_create(850,164,oEnemy1) en1.canmove=0 en1.isIdle=1 en1.alarm[1]=60 en1.anim=70000
 en1.idleRange=30

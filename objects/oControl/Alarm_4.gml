@@ -35,7 +35,7 @@ if menuSelect=7 {room_goto(rm_gallery) global.HiscoreSkip=1}
 if menuSelect=8 {room_goto(rm_gallery) global.HiscoreSkip=1}
 if menuSelect=9 {room_goto(rm_soundtest) global.HiscoreSkip=1}
 if menuSelect=10 {room_goto(rm_gallery) global.HiscoreSkip=1}
-if menuSelect=11 {room_goto(rm_hiscore) global.HiscoreSkip=1}
+if menuSelect=11 {room_goto(rm_hiscore) global.HiScoreSee=1 global.HiscoreSkip=1}
 }
 else
 if room=rm_training room=rm_menu

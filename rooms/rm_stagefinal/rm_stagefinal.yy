@@ -27,7 +27,7 @@
     {"spriteId":null,"colour":4290822336,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":2147483600,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Compatibility_Colour","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/stage_template/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/rm_stagefinal/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_1FE3038F_6_1_1_1_1_1_1","path":"rooms/rm_stagefinal/rm_stagefinal.yy",},

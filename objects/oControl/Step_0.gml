@@ -68,6 +68,18 @@ exit;
 
 if betatest=1
 {
+if keyboard_check_pressed(vk_add) global.ConsoleType=get_string("Console Type",global.ConsoleType)
+if keyboard_check_pressed(vk_divide)
+{
+var file;
+file = get_open_filename("Image File|*.txt", "");
+if file != ""
+{
+ // file_text_open_read(file);
+sprite_replace(spr_backgroundtester,file,0,0,0,0,0);
+}
+if !instance_exists(oBackgroundTester) instance_create_depth(0,0,0,oBackgroundTester)
+}
 
 if keyboard_check_pressed(ord("R")) 
 if keyboard_check(vk_shift)

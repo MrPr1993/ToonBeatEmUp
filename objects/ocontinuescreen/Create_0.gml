@@ -10,6 +10,8 @@ isStageClear=0
 StageClearCheck=0
 stageClearMode=0
 
+continueStageScore=0
+
 playerGet=1
 
 finalStageEnd=0
@@ -18,6 +20,7 @@ finalStageEnd=oControl.finalStageEnd
 
 finalStage=0
 finalStageHi=0
+finalStageMono=1
 
 TVfx=oControl.TVfx
 
@@ -51,8 +54,10 @@ stagePose=1
 specialTimer=-1
 timeClear=0
 stageNext=rm_training
+stagecheck=0
 
 menuSelect=0
+menuX=0
 StarY=0
 StarSpace=0
 selectStar=0
@@ -78,6 +83,7 @@ hiScoreMode=0
 //global.P1Life=p1.PlayerLife
 
 oControl.continueMusic=global.CurrentMusic
+stagecheck=oControl.stagecheck
 
 PlayerLife1=-1
 PlayerLife1=0
@@ -164,8 +170,6 @@ pP4=1 pGet4=oControl.p4.playerGet
 else {PlayerLife4=-1 PlayerScore4=0}
 
 
-
-
 numPlayers=0
 
 tvshade_set()
@@ -208,11 +212,14 @@ stageClearCheck=0
 actPorg=0
 actPorgT=0
 
+
+
 instance_deactivate_all(true)
 
 if PlayerLife1!=-1{
 	
-	//if x=-999999 ///For test
+if global.GlobalBeta=1
+if keyboard_check(vk_shift)
 {	
 	actP1=0
 	actP2=1
@@ -227,18 +234,31 @@ if PlayerLife1!=-1{
 	actP4=get_string("see score",actP4)
 	}
 }
+
+if actP1=0
+continueStageScore+=PlayerScore1-global.P1Score
+if actP2=0
+continueStageScore+=PlayerScore2-global.P2Score
+if actP3=0
+continueStageScore+=PlayerScore3-global.P3Score
+if actP4=0
+continueStageScore+=PlayerScore4-global.P4Score
+
+
 	
-p1=instance_create_depth(0,0,-1,oPlayerDisembodied) with p1 {canControl=1 controlNO=1
+p1=instance_create_depth(0,0,-1,oPlayerDisembodied) with p1 {canControl=1 controlNO=1 playNO=1
 	PlayerLife=oContinueScreen.PlayerLife1 PlayerScore=oContinueScreen.PlayerScore1
 	characterSelect=global.P1Char
+	global.P1Score=PlayerScore
 	}p1.hp=hp1 p1.isInctive=actP1 p1.playerNO=1 p1.playerGet=pGet1 p1.altresult2=altresult2a
 	
 	//if p1.isInctive=0 actPTotal1+=80 else actPTotal1=9999
 	} else actPTotal1=9999
 if PlayerLife2!=-1{
-p2=instance_create_depth(0,0,-1,oPlayerDisembodied) with p2 {canControl=1 controlNO=2 
+p2=instance_create_depth(0,0,-1,oPlayerDisembodied) with p2 {canControl=1 controlNO=2 playNO=2
 		PlayerLife=oContinueScreen.PlayerLife2 PlayerScore=oContinueScreen.PlayerScore2
 		characterSelect=global.P2Char
+		global.P2Score=PlayerScore
 		}p2.hp=hp2  p2.isInctive=actP2 p2.playerNO=2 p2.playerGet=pGet2 p2.altresult2=altresult2b
 		
 	if p2.isInctive=0
@@ -248,9 +268,10 @@ p2=instance_create_depth(0,0,-1,oPlayerDisembodied) with p2 {canControl=1 contro
 	} else {actPTotal2=9999 }
 		} else {actPTotal2=9999 }
 if PlayerLife3!=-1{
-p3=instance_create_depth(0,0,-1,oPlayerDisembodied) with p3 {canControl=1 controlNO=3 
+p3=instance_create_depth(0,0,-1,oPlayerDisembodied) with p3 {canControl=1 controlNO=3 playNO=3
 		PlayerLife=oContinueScreen.PlayerLife3 PlayerScore=oContinueScreen.PlayerScore3
 		characterSelect=global.P3Char
+		global.P3Score=PlayerScore
 		}p3.hp=hp3  p3.isInctive=actP3 p3.playerNO=3 p3.playerGet=pGet3 p3.altresult2=altresult2c
 		
 	if p3.isInctive=0
@@ -262,9 +283,10 @@ p3=instance_create_depth(0,0,-1,oPlayerDisembodied) with p3 {canControl=1 contro
 		} else {actPTotal3=9999 }
 if PlayerLife4!=-1
 {
-p4=instance_create_depth(0,0,-1,oPlayerDisembodied) with p4 {canControl=1 controlNO=4 
+p4=instance_create_depth(0,0,-1,oPlayerDisembodied) with p4 {canControl=1 controlNO=4 playNO=4
 		PlayerLife=oContinueScreen.PlayerLife4 PlayerScore=oContinueScreen.PlayerScore4
 		characterSelect=global.P4Char
+		global.P4Score=PlayerScore
 		}p4.hp=hp4  p4.isInctive=actP4 p4.playerNO=4 p4.playerGet=pGet4 p4.altresult2=altresult2d
 		
 		if p4.isInctive=0
@@ -275,6 +297,16 @@ p4=instance_create_depth(0,0,-1,oPlayerDisembodied) with p4 {canControl=1 contro
 	//if p4.isInctive=0 actPTotal4+=80 else actPTotal4=9999
 		} else {actPTotal4=9999 }
 		} else {actPTotal4=9999 }
+
+continueStageScore+=bossScore//-global.P1Score-global.P2Score-global.P3Score-global.P4Score
+with oPlayerDisembodied if isInctive=0 oContinueScreen.continueStageScore+=round(hp*20000)
+continueStageScore+=round(time*200)
+newrecord=0 newrecordframe=0
+if continueStageScore>global.LevelHiScore[stagecheck]
+{global.LevelHiScore[stagecheck]=continueStageScore newrecord=1
+}
+global.UnlockStage[stagecheck]=1
+stagedata_save()
 
 p5=instance_create_depth(0,0,-1,oPlayerDisembodied) with p5 {canControl=1 controlNO=9}
 
@@ -292,6 +324,8 @@ blackFX=10
 
 
 keyToGameOver=0
+
+
 
 hiScoreInput=0
 hiScoreInputNum=1

@@ -7,6 +7,15 @@ canControl=0
 controlNO=0
 controller_setup()
 
+ContinueSelect=0
+ContinueMode=0
+playerGet=0
+
+altresult2=0
+
+PlayerLife=0//global.P1Life
+PlayerScore=0//global.P1Score
+
 anim=0
 animFrame=0
 

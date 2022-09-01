@@ -145,7 +145,7 @@ draw_rectangle(-32,-32,340,24,false)
 draw_rectangle(-32,240-24,340,240,false)
 
 draw_set_color(c_white) draw_set_halign(fa_center)
-draw_text(160,8,"FEATS")
+draw_text(160,8,"ACHIEVEMENTS")
 //draw_text(160,240-16,"1/100 COMPLETE")
 
 }

@@ -43,7 +43,10 @@ function pick_item(){
 	{
 	spawnID=item.itemspawner weaponExtraAngle=item.weaponExtraAngle
 	weaponspr=item.sprite_index
+	if item.weaponIndex=-1	
 	weaponIndex=item.image_index
+	else weaponIndex=item.weaponIndex
+	
 	stunWeapon=item.stunWeapon
 	weaponX=0 weaponHitType=item.HitType
 	weaponY=-32
@@ -63,6 +66,11 @@ function pick_item(){
 	weaponColScaleX=item.weaponColScaleX
 	weaponColScaleY=item.weaponColScaleY
 	weaponColScaleZ=item.weaponColScaleZ
+	throwHspd=item.throwHspd
+	
+	spawnZAdd=item.spawnZAdd
+	wThrowGrav=item.wThrowGrav
+	//WcanGrav=item.canGrav
 
 	weapon_pal=item.weapon_pal
 	weapon_pal_sprite=item.weapon_pal_sprite
