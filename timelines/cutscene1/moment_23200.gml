@@ -1,5 +1,5 @@
 cutscenename="SOFIA"
-cutsceneline="NOW I WONDER HOW YOU EVEN FIT US ALL IN!\nAND WHOSE FOOT IS THIS?"
+cutsceneline="NOW I WONDER HOW YOU EVEN FIT US ALL IN! AND WHOSE FOOT IS THIS?"
 
 with lg
 {hasgrav=1 ground=0

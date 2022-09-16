@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_viva_knife",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fa46f30f-5d3e-4b5d-844e-6b981345e723","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fa46f30f-5d3e-4b5d-844e-6b981345e723","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"LayerId":{"name":"bbce7c3c-6d96-4136-aff8-4643e109cbb5","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_knife","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"resourceVersion":"1.0","name":"fa46f30f-5d3e-4b5d-844e-6b981345e723","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e46af05e-46c8-4a41-8b65-7ef436079b0b","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e46af05e-46c8-4a41-8b65-7ef436079b0b","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"LayerId":{"name":"bbce7c3c-6d96-4136-aff8-4643e109cbb5","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_knife","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"resourceVersion":"1.0","name":"e46af05e-46c8-4a41-8b65-7ef436079b0b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fa46f30f-5d3e-4b5d-844e-6b981345e723",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e46af05e-46c8-4a41-8b65-7ef436079b0b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_viva_knife","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f74a3e8e-924d-4201-b7dc-4c8fddd108a3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa46f30f-5d3e-4b5d-844e-6b981345e723","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"83b54300-5926-482a-99d8-3d3d3eff8dd9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e46af05e-46c8-4a41-8b65-7ef436079b0b","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"f74a3e8e-924d-4201-b7dc-4c8fddd108a3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa46f30f-5d3e-4b5d-844e-6b981345e723","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"83b54300-5926-482a-99d8-3d3d3eff8dd9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e46af05e-46c8-4a41-8b65-7ef436079b0b","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 91,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_viva_knife","path":"sprites/spr_viva_knife/spr_viva_knife.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bbce7c3c-6d96-4136-aff8-4643e109cbb5","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bbce7c3c-6d96-4136-aff8-4643e109cbb5","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p1 - Viva Sprites",
     "path": "folders/6 - Player Data/p1 - Viva Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_viva_knife",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

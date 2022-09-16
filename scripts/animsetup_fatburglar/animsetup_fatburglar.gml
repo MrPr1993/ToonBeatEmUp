@@ -69,7 +69,7 @@ function animsetup_fatburglar() {
 
 	if anim=13 ///Charge Attack
 	{damage=0.2 MoveType=1 if animFrame=0 {image_index=0 PlaySoundNoStack(snd_fatburglar2)}
-	sprite_index=AtkSpr3 
+	sprite_index=AtkSpr3  
 	image_index+=0.5 if image_index=6 image_index=0
 
 
@@ -89,7 +89,7 @@ function animsetup_fatburglar() {
 
 	if animFrame>4 and animFrame<8
 	{if animFrame=4.1 PlaySoundNoStack(snd_fatburglar)
-	atk=1 canbeGrabbed=0
+	atk=1 canbeGrabbed=0 HitQuake=10
 	if place_free(x+8*image_xscale,y) x+=8*image_xscale
 	else {hurt=0 hitBack=0
 

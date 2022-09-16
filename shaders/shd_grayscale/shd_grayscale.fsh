@@ -2,7 +2,11 @@ varying vec2 v_texcoord;
 
 void main()
 { 
-    float gray = dot(texture2D(gm_BaseTexture,v_texcoord).rgb, vec3(0.21, 0.71, 0.07));
-
-    gl_FragColor = vec4(vec3(gray), texture2D(gm_BaseTexture,v_texcoord).a);
+    vec4 colour = texture2D(gm_BaseTexture, v_texcoord);
+    vec3 sepia = vec3(0.0);
+    sepia.r = dot(colour.rgb, vec3(0.2125,0.7154,0.0721));
+    sepia.g = dot(colour.rgb, vec3(0.2125,0.7154,0.0721));
+    sepia.b = dot(colour.rgb, vec3(0.2125,0.7154,0.0721));
+    gl_FragColor.rgb = mix(colour.rgb,sepia.rgb, 1.0);
+    gl_FragColor.a = colour.a;
 }

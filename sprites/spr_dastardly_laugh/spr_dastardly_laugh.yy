@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dastardly_laugh",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b9e250b7-8a38-46ee-b414-4a3c0441a5d2","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b9e250b7-8a38-46ee-b414-4a3c0441a5d2","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},"LayerId":{"name":"ea4e7eda-652e-4d3d-930d-d7177b319915","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dastardly_laugh","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},"resourceVersion":"1.0","name":"b9e250b7-8a38-46ee-b414-4a3c0441a5d2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9e250b7-8a38-46ee-b414-4a3c0441a5d2",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dastardly_laugh","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_dastardly_laugh",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"41f5dadf-721e-4e77-a8f4-184c00ba1699","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9e250b7-8a38-46ee-b414-4a3c0441a5d2","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"41f5dadf-721e-4e77-a8f4-184c00ba1699","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9e250b7-8a38-46ee-b414-4a3c0441a5d2","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 175,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dastardly_laugh","path":"sprites/spr_dastardly_laugh/spr_dastardly_laugh.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_dastardly_laugh",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ea4e7eda-652e-4d3d-930d-d7177b319915","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ea4e7eda-652e-4d3d-930d-d7177b319915","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Dastardly",
     "path": "folders/8 - Bosses/Dastardly.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dastardly_laugh",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

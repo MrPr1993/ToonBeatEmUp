@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_hina_car",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f0ab5180-67fe-4934-b155-31d143cc4930","path":"sprites/spr_hina_car/spr_hina_car.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f0ab5180-67fe-4934-b155-31d143cc4930","path":"sprites/spr_hina_car/spr_hina_car.yy",},"LayerId":{"name":"0f5cd2dd-6202-47e2-8b8c-3c3654c3aa32","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hina_car","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","name":"f0ab5180-67fe-4934-b155-31d143cc4930","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2fecabd8-002b-4af3-b50f-4ff37e3d0679","path":"sprites/spr_hina_car/spr_hina_car.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2fecabd8-002b-4af3-b50f-4ff37e3d0679","path":"sprites/spr_hina_car/spr_hina_car.yy",},"LayerId":{"name":"0f5cd2dd-6202-47e2-8b8c-3c3654c3aa32","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hina_car","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","name":"2fecabd8-002b-4af3-b50f-4ff37e3d0679","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"07ab1872-22f4-42fc-8cf9-c95e2720b69e","path":"sprites/spr_hina_car/spr_hina_car.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"07ab1872-22f4-42fc-8cf9-c95e2720b69e","path":"sprites/spr_hina_car/spr_hina_car.yy",},"LayerId":{"name":"0f5cd2dd-6202-47e2-8b8c-3c3654c3aa32","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hina_car","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","name":"07ab1872-22f4-42fc-8cf9-c95e2720b69e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8f7d27c1-3369-425e-b4e5-0d500ad213d5","path":"sprites/spr_hina_car/spr_hina_car.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8f7d27c1-3369-425e-b4e5-0d500ad213d5","path":"sprites/spr_hina_car/spr_hina_car.yy",},"LayerId":{"name":"0f5cd2dd-6202-47e2-8b8c-3c3654c3aa32","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hina_car","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","name":"8f7d27c1-3369-425e-b4e5-0d500ad213d5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f0ab5180-67fe-4934-b155-31d143cc4930",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2fecabd8-002b-4af3-b50f-4ff37e3d0679",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"07ab1872-22f4-42fc-8cf9-c95e2720b69e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8f7d27c1-3369-425e-b4e5-0d500ad213d5",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_hina_car","path":"sprites/spr_hina_car/spr_hina_car.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,15 +43,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e4e713f4-928a-492c-9b0b-da61c7f8835d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f0ab5180-67fe-4934-b155-31d143cc4930","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"060ab067-6a3e-4e66-a843-44efc434b610","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fecabd8-002b-4af3-b50f-4ff37e3d0679","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"27d8e8b9-af3a-4477-aa1a-0b672900ed7e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07ab1872-22f4-42fc-8cf9-c95e2720b69e","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"01a835f6-15aa-48c2-ba84-f49f198d58a5","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8f7d27c1-3369-425e-b4e5-0d500ad213d5","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e4e713f4-928a-492c-9b0b-da61c7f8835d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f0ab5180-67fe-4934-b155-31d143cc4930","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"060ab067-6a3e-4e66-a843-44efc434b610","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fecabd8-002b-4af3-b50f-4ff37e3d0679","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"27d8e8b9-af3a-4477-aa1a-0b672900ed7e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07ab1872-22f4-42fc-8cf9-c95e2720b69e","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"01a835f6-15aa-48c2-ba84-f49f198d58a5","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8f7d27c1-3369-425e-b4e5-0d500ad213d5","path":"sprites/spr_hina_car/spr_hina_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 80,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_hina_car","path":"sprites/spr_hina_car/spr_hina_car.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0f5cd2dd-6202-47e2-8b8c-3c3654c3aa32","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0f5cd2dd-6202-47e2-8b8c-3c3654c3aa32","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p2 - Hina Sprites",
     "path": "folders/6 - Player Data/p2 - Hina Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_hina_car",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

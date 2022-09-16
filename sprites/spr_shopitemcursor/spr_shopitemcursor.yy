@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_shopitemcursor",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"aabc3e89-6199-46dc-b256-23abbee2cee4","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aabc3e89-6199-46dc-b256-23abbee2cee4","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"LayerId":{"name":"3ec00119-8020-4854-b266-0409f96c224e","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopitemcursor","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"resourceVersion":"1.0","name":"aabc3e89-6199-46dc-b256-23abbee2cee4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ae1bd309-8ca7-4d58-bb31-229497570899","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ae1bd309-8ca7-4d58-bb31-229497570899","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"LayerId":{"name":"3ec00119-8020-4854-b266-0409f96c224e","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopitemcursor","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"resourceVersion":"1.0","name":"ae1bd309-8ca7-4d58-bb31-229497570899","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aabc3e89-6199-46dc-b256-23abbee2cee4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ae1bd309-8ca7-4d58-bb31-229497570899",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_shopitemcursor","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_shopitemcursor",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bf693054-ef2a-4188-9f71-81d38a43298a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aabc3e89-6199-46dc-b256-23abbee2cee4","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"6bd0c7f4-8eea-4b84-9a12-dbf804177fe5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae1bd309-8ca7-4d58-bb31-229497570899","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"bf693054-ef2a-4188-9f71-81d38a43298a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aabc3e89-6199-46dc-b256-23abbee2cee4","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6bd0c7f4-8eea-4b84-9a12-dbf804177fe5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae1bd309-8ca7-4d58-bb31-229497570899","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_shopitemcursor","path":"sprites/spr_shopitemcursor/spr_shopitemcursor.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_shopitemcursor",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3ec00119-8020-4854-b266-0409f96c224e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3ec00119-8020-4854-b266-0409f96c224e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Shop",
     "path": "folders/6b - NPCs/Shop.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_shopitemcursor",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

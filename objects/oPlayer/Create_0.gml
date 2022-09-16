@@ -14,6 +14,7 @@ selfatk.isPlayer=1
 isEnemy=0
 enemyID=0
 
+altresult2Text=-1
 altresult2=-1
 
 playerGet=1

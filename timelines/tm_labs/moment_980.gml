@@ -1,0 +1,1 @@
+oControl.TextDialogue="I'M GOING TO TEACH YOU A LESSON!"

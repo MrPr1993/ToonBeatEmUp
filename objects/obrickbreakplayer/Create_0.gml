@@ -43,6 +43,10 @@ voice2=snd_viva11
 
 win=0
 
+breakresult=0
+
+altresult2=0
+
 shakefrom=1
 
 superFlashFrame1=0

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_strongburg_stand",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"535accde-3165-4781-8bc4-27068171e0ce","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"535accde-3165-4781-8bc4-27068171e0ce","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"LayerId":{"name":"c23f260e-cf59-4cee-b3d5-991ce2febed4","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_strongburg_stand","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","name":"535accde-3165-4781-8bc4-27068171e0ce","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"535accde-3165-4781-8bc4-27068171e0ce",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_strongburg_stand","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_strongburg_stand",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c6d9d712-398d-4a5a-a423-a3b8eef33e0c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"535accde-3165-4781-8bc4-27068171e0ce","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c6d9d712-398d-4a5a-a423-a3b8eef33e0c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"535accde-3165-4781-8bc4-27068171e0ce","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 116,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_strongburg_stand","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_strongburg_stand",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c23f260e-cf59-4cee-b3d5-991ce2febed4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c23f260e-cf59-4cee-b3d5-991ce2febed4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "StrongBurg",
     "path": "folders/7 - Enemies/StrongBurg.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_strongburg_stand",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_pharaoh_elec",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"47e03591-8c36-4ac6-b631-a87176e0cb76","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"47e03591-8c36-4ac6-b631-a87176e0cb76","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"LayerId":{"name":"1fed4b3b-4a7f-43b3-885f-ff65da1ff784","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pharaoh_elec","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"resourceVersion":"1.0","name":"47e03591-8c36-4ac6-b631-a87176e0cb76","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0fa006ae-4c9b-41b8-a441-2cab996b1ecc","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0fa006ae-4c9b-41b8-a441-2cab996b1ecc","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"LayerId":{"name":"1fed4b3b-4a7f-43b3-885f-ff65da1ff784","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pharaoh_elec","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"resourceVersion":"1.0","name":"0fa006ae-4c9b-41b8-a441-2cab996b1ecc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"47e03591-8c36-4ac6-b631-a87176e0cb76",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0fa006ae-4c9b-41b8-a441-2cab996b1ecc",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pharaoh_elec","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_pharaoh_elec",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ef963012-9a1e-4fc5-8320-1dbb953e1e2f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"47e03591-8c36-4ac6-b631-a87176e0cb76","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"eed5abfd-d375-4c0c-b000-7f2db61ef29b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0fa006ae-4c9b-41b8-a441-2cab996b1ecc","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ef963012-9a1e-4fc5-8320-1dbb953e1e2f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"47e03591-8c36-4ac6-b631-a87176e0cb76","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"eed5abfd-d375-4c0c-b000-7f2db61ef29b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0fa006ae-4c9b-41b8-a441-2cab996b1ecc","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 129,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pharaoh_elec","path":"sprites/spr_pharaoh_elec/spr_pharaoh_elec.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_pharaoh_elec",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1fed4b3b-4a7f-43b3-885f-ff65da1ff784","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1fed4b3b-4a7f-43b3-885f-ff65da1ff784","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "3Mummy Empress",
     "path": "folders/8 - Bosses/3Mummy Empress.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_pharaoh_elec",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

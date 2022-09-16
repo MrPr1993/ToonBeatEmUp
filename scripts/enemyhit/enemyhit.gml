@@ -2,7 +2,7 @@ function enemyhit() {
 
 
 	if canBlock=0
-	{
+	{oControl.quakeFXTime+=other.HitQuake
 		atk=0 selfatk.atk=0
 	hp-=other.damage/(defense+extradefense)
 
@@ -74,7 +74,7 @@ cutDMG=other.isCut
 	//if x>other.SourceX image_xscale=-1 else image_xscale=1 
 
 	if canBlock=0
-	{
+	{oControl.quakeFXTime=other.HitQuake
 	if other.object_index!=oProjectile
 	flashFX(x-other.flashX*image_xscale,y+other.flashY,z-other.flashZ,other.spriteFX,other.indexFX,other.speedFX,other.spriteTime,other.xScaleFX,other.yScaleFX,other.blendFX,other.alphaFX)
 	else

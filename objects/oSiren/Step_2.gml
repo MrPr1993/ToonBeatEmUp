@@ -8,6 +8,7 @@ if bub!=-1
 if anim!=12 {with bub instance_destroy() bub=-1}
 
 
+
 	///Attacks
 if anim=10
 {

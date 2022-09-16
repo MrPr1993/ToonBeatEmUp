@@ -44,6 +44,7 @@ if enemySpawn=29 {enemySpawnName="30 Lobster" spawnUnit=oLobster}
 if enemySpawn=30 {enemySpawnName="31 Spacer" spawnUnit=oSpacer}
 if enemySpawn=31 {enemySpawnName="32 Diver" spawnUnit=oDiver}
 if enemySpawn=32 {enemySpawnName="33 Ladybot" spawnUnit=oLadybot}
+if enemySpawn=33 {enemySpawnName="34 Nurse" spawnUnit=oNurse}
 }
 if spawnType="Bosses"
 {

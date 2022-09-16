@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_hwolf_frozen",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3f1a20b9-d6d6-417a-9b64-5a5543a404ac","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3f1a20b9-d6d6-417a-9b64-5a5543a404ac","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},"LayerId":{"name":"9b4cca8e-0308-4d70-a49f-6c3cb7995bf3","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hwolf_frozen","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},"resourceVersion":"1.0","name":"3f1a20b9-d6d6-417a-9b64-5a5543a404ac","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f1a20b9-d6d6-417a-9b64-5a5543a404ac",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_hwolf_frozen","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_hwolf_frozen",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e96e0565-9bfe-4541-aec3-aa525498ee4b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3f1a20b9-d6d6-417a-9b64-5a5543a404ac","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e96e0565-9bfe-4541-aec3-aa525498ee4b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3f1a20b9-d6d6-417a-9b64-5a5543a404ac","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 93,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_hwolf_frozen","path":"sprites/spr_hwolf_frozen/spr_hwolf_frozen.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_hwolf_frozen",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9b4cca8e-0308-4d70-a49f-6c3cb7995bf3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9b4cca8e-0308-4d70-a49f-6c3cb7995bf3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "1aLady Wolf, Human",
     "path": "folders/8 - Bosses/1aLady Wolf, Human.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_hwolf_frozen",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

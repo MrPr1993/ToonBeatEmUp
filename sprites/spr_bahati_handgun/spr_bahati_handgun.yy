@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bahati_handgun",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"364316fb-4cba-4bad-87cb-f84f2220943f","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"364316fb-4cba-4bad-87cb-f84f2220943f","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"LayerId":{"name":"3e5b4af6-5c00-4f63-ae94-806c90c38034","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_handgun","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","name":"364316fb-4cba-4bad-87cb-f84f2220943f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b84624ef-2beb-437b-aa7f-d0810c4d8070","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b84624ef-2beb-437b-aa7f-d0810c4d8070","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"LayerId":{"name":"3e5b4af6-5c00-4f63-ae94-806c90c38034","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_handgun","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","name":"b84624ef-2beb-437b-aa7f-d0810c4d8070","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a2ae5cd3-db0c-4d63-8648-495601509c34","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a2ae5cd3-db0c-4d63-8648-495601509c34","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"LayerId":{"name":"3e5b4af6-5c00-4f63-ae94-806c90c38034","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_handgun","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","name":"a2ae5cd3-db0c-4d63-8648-495601509c34","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"364316fb-4cba-4bad-87cb-f84f2220943f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b84624ef-2beb-437b-aa7f-d0810c4d8070",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a2ae5cd3-db0c-4d63-8648-495601509c34",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bahati_handgun","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_bahati_handgun",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -43,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8d4c280d-2524-493a-8453-09b18fbedfbf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"364316fb-4cba-4bad-87cb-f84f2220943f","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"8028646b-cfd2-485d-a905-35cca22318f4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b84624ef-2beb-437b-aa7f-d0810c4d8070","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"8abc8de5-48a3-45b4-9799-e4d123ca76f4","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a2ae5cd3-db0c-4d63-8648-495601509c34","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"8d4c280d-2524-493a-8453-09b18fbedfbf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"364316fb-4cba-4bad-87cb-f84f2220943f","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8028646b-cfd2-485d-a905-35cca22318f4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b84624ef-2beb-437b-aa7f-d0810c4d8070","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8abc8de5-48a3-45b4-9799-e4d123ca76f4","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a2ae5cd3-db0c-4d63-8648-495601509c34","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 92,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bahati_handgun","path":"sprites/spr_bahati_handgun/spr_bahati_handgun.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_bahati_handgun",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3e5b4af6-5c00-4f63-ae94-806c90c38034","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3e5b4af6-5c00-4f63-ae94-806c90c38034","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p3 - Bahati Sprites",
     "path": "folders/6 - Player Data/p3 - Bahati Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bahati_handgun",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_dog_scared",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f8f02bf7-7991-4c66-928c-626296e76bb4","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f8f02bf7-7991-4c66-928c-626296e76bb4","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"LayerId":{"name":"dc18f87e-a5bf-49f2-9f0b-256dc7a2bfbd","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dog_scared","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"resourceVersion":"1.0","name":"f8f02bf7-7991-4c66-928c-626296e76bb4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d62c4e86-0ba1-4f98-8d1a-2d23e5b105f9","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d62c4e86-0ba1-4f98-8d1a-2d23e5b105f9","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"LayerId":{"name":"dc18f87e-a5bf-49f2-9f0b-256dc7a2bfbd","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dog_scared","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"resourceVersion":"1.0","name":"d62c4e86-0ba1-4f98-8d1a-2d23e5b105f9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f8f02bf7-7991-4c66-928c-626296e76bb4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d62c4e86-0ba1-4f98-8d1a-2d23e5b105f9",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_dog_scared","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_dog_scared",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"33c71e78-c148-4612-95e7-eecb8ace8fd5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8f02bf7-7991-4c66-928c-626296e76bb4","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b2df897f-62e6-45cc-9e3e-109c15066518","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d62c4e86-0ba1-4f98-8d1a-2d23e5b105f9","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"33c71e78-c148-4612-95e7-eecb8ace8fd5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8f02bf7-7991-4c66-928c-626296e76bb4","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b2df897f-62e6-45cc-9e3e-109c15066518","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d62c4e86-0ba1-4f98-8d1a-2d23e5b105f9","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 29,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_dog_scared","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_dog_scared",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dc18f87e-a5bf-49f2-9f0b-256dc7a2bfbd","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dc18f87e-a5bf-49f2-9f0b-256dc7a2bfbd","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Animals",
     "path": "folders/6b - NPCs/Animals.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_dog_scared",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

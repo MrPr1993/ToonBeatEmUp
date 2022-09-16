@@ -59,14 +59,13 @@ else
 {
 if stagePause=0
 {
-			if room=rm_menu {room=rm_titlescreen global.MenuSkip=0 global.IntroSkip=1}
+			if room=rm_menu {room=rm_titlescreen global.IsMovie=0 global.MenuSkip=0 global.IntroSkip=1}
 		else
 	if !instance_exists(oSettings)
 	{if room=rm_titlescreen if !key_jump game_end()}
 	else
 	{
-	global.MenuSkip=0
-room=rm_menu
+	//global.MenuSkip=0 room=rm_menu
 	}
 	}
 else

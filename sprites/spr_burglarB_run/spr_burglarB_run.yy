@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_burglarB_run",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"df9b13d5-b5fb-45d4-aa3f-7899283c0727","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"df9b13d5-b5fb-45d4-aa3f-7899283c0727","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":{"name":"97252f52-9818-41e5-9147-d9bf69cba64e","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_run","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"df9b13d5-b5fb-45d4-aa3f-7899283c0727","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5724e98b-19d7-412e-8fc6-9e4614246052","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5724e98b-19d7-412e-8fc6-9e4614246052","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":{"name":"97252f52-9818-41e5-9147-d9bf69cba64e","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_run","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"5724e98b-19d7-412e-8fc6-9e4614246052","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"214fd89a-2759-4954-8f32-1165aab867e1","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"214fd89a-2759-4954-8f32-1165aab867e1","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":{"name":"97252f52-9818-41e5-9147-d9bf69cba64e","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_run","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"214fd89a-2759-4954-8f32-1165aab867e1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e3f237f1-fca6-4580-a7b3-c2c694a0dc1c","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e3f237f1-fca6-4580-a7b3-c2c694a0dc1c","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":{"name":"97252f52-9818-41e5-9147-d9bf69cba64e","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_run","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"e3f237f1-fca6-4580-a7b3-c2c694a0dc1c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cd0d32eb-706c-4cf0-89d3-8b7e8a3438f0","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cd0d32eb-706c-4cf0-89d3-8b7e8a3438f0","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":{"name":"97252f52-9818-41e5-9147-d9bf69cba64e","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_run","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"cd0d32eb-706c-4cf0-89d3-8b7e8a3438f0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a9aec8f7-0f1c-45fa-9d36-96f6f07e22e1","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a9aec8f7-0f1c-45fa-9d36-96f6f07e22e1","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"LayerId":{"name":"97252f52-9818-41e5-9147-d9bf69cba64e","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_run","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","name":"a9aec8f7-0f1c-45fa-9d36-96f6f07e22e1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"df9b13d5-b5fb-45d4-aa3f-7899283c0727",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5724e98b-19d7-412e-8fc6-9e4614246052",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"214fd89a-2759-4954-8f32-1165aab867e1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e3f237f1-fca6-4580-a7b3-c2c694a0dc1c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cd0d32eb-706c-4cf0-89d3-8b7e8a3438f0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9aec8f7-0f1c-45fa-9d36-96f6f07e22e1",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_burglarB_run","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_burglarB_run",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"172251bf-913f-4c3a-b79e-080b8d891aa6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df9b13d5-b5fb-45d4-aa3f-7899283c0727","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0e4cdd65-b177-44e3-a5fd-e1a90d0d15e4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5724e98b-19d7-412e-8fc6-9e4614246052","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b7497cac-99dd-4127-a9fb-989a05a4ae13","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"214fd89a-2759-4954-8f32-1165aab867e1","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"d1e61bdf-33f6-4aa4-bb54-03034e51210e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e3f237f1-fca6-4580-a7b3-c2c694a0dc1c","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b3e6e59c-c15f-4630-a427-09bebeb24dae","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cd0d32eb-706c-4cf0-89d3-8b7e8a3438f0","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"31479869-f5b6-441e-83b0-1231cab7e9c9","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9aec8f7-0f1c-45fa-9d36-96f6f07e22e1","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"172251bf-913f-4c3a-b79e-080b8d891aa6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df9b13d5-b5fb-45d4-aa3f-7899283c0727","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0e4cdd65-b177-44e3-a5fd-e1a90d0d15e4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5724e98b-19d7-412e-8fc6-9e4614246052","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b7497cac-99dd-4127-a9fb-989a05a4ae13","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"214fd89a-2759-4954-8f32-1165aab867e1","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d1e61bdf-33f6-4aa4-bb54-03034e51210e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e3f237f1-fca6-4580-a7b3-c2c694a0dc1c","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b3e6e59c-c15f-4630-a427-09bebeb24dae","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cd0d32eb-706c-4cf0-89d3-8b7e8a3438f0","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"31479869-f5b6-441e-83b0-1231cab7e9c9","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9aec8f7-0f1c-45fa-9d36-96f6f07e22e1","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 83,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_burglarB_run","path":"sprites/spr_burglarB_run/spr_burglarB_run.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_burglarB_run",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"97252f52-9818-41e5-9147-d9bf69cba64e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"97252f52-9818-41e5-9147-d9bf69cba64e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Burglar B",
     "path": "folders/7 - Enemies/Burglar B.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_burglarB_run",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

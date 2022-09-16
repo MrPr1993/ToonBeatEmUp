@@ -4,6 +4,8 @@ HitSound=snd_hit
 
 z=0
 
+HitQuake=0
+
 height=-4
 
 flashX=0
@@ -51,5 +53,5 @@ spdZ=0
 
 shadow=-1
 
-alarm[0]=300
+//alarm[0]=300
 

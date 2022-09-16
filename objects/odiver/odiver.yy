@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oDiver",
   "spriteId": {
     "name": "spr_diver_stand",
     "path": "sprites/spr_diver_stand/spr_diver_stand.yy",
@@ -28,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +39,4 @@
     "name": "Diver",
     "path": "folders/7 - Enemies/Diver.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oDiver",
-  "tags": [],
-  "resourceType": "GMObject",
 }

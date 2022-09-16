@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bahati_knife",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7dfdb1f4-f7fc-46b3-b134-355f7b2fcec9","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7dfdb1f4-f7fc-46b3-b134-355f7b2fcec9","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"LayerId":{"name":"dc7af5ce-b5e5-4b53-a335-6a402e3cfcd9","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_knife","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"resourceVersion":"1.0","name":"7dfdb1f4-f7fc-46b3-b134-355f7b2fcec9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b5e4c55a-770b-4b74-a3cf-039e8dede43b","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b5e4c55a-770b-4b74-a3cf-039e8dede43b","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"LayerId":{"name":"dc7af5ce-b5e5-4b53-a335-6a402e3cfcd9","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_knife","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"resourceVersion":"1.0","name":"b5e4c55a-770b-4b74-a3cf-039e8dede43b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7dfdb1f4-f7fc-46b3-b134-355f7b2fcec9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5e4c55a-770b-4b74-a3cf-039e8dede43b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bahati_knife","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a301d9dd-976e-4178-8c12-ea9c5fec1f75","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7dfdb1f4-f7fc-46b3-b134-355f7b2fcec9","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"3a4e5cc3-4570-4ee0-a745-f8a08d56bd41","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5e4c55a-770b-4b74-a3cf-039e8dede43b","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"a301d9dd-976e-4178-8c12-ea9c5fec1f75","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7dfdb1f4-f7fc-46b3-b134-355f7b2fcec9","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3a4e5cc3-4570-4ee0-a745-f8a08d56bd41","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5e4c55a-770b-4b74-a3cf-039e8dede43b","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 92,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bahati_knife","path":"sprites/spr_bahati_knife/spr_bahati_knife.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dc7af5ce-b5e5-4b53-a335-6a402e3cfcd9","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dc7af5ce-b5e5-4b53-a335-6a402e3cfcd9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p3 - Bahati Sprites",
     "path": "folders/6 - Player Data/p3 - Bahati Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bahati_knife",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

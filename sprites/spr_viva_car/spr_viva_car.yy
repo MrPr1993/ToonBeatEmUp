@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_viva_car",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"539e26ec-b411-4e89-bd4d-323eed987fbe","path":"sprites/spr_viva_car/spr_viva_car.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"539e26ec-b411-4e89-bd4d-323eed987fbe","path":"sprites/spr_viva_car/spr_viva_car.yy",},"LayerId":{"name":"93c15971-7617-4d12-98a7-d77ecba2e587","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_car","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","name":"539e26ec-b411-4e89-bd4d-323eed987fbe","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0f0fde72-14c1-4211-8a88-018f12d6f2e8","path":"sprites/spr_viva_car/spr_viva_car.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0f0fde72-14c1-4211-8a88-018f12d6f2e8","path":"sprites/spr_viva_car/spr_viva_car.yy",},"LayerId":{"name":"93c15971-7617-4d12-98a7-d77ecba2e587","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_car","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","name":"0f0fde72-14c1-4211-8a88-018f12d6f2e8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c4316429-3fb5-4d4d-9f62-a2d1a3ca99f0","path":"sprites/spr_viva_car/spr_viva_car.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c4316429-3fb5-4d4d-9f62-a2d1a3ca99f0","path":"sprites/spr_viva_car/spr_viva_car.yy",},"LayerId":{"name":"93c15971-7617-4d12-98a7-d77ecba2e587","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_car","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","name":"c4316429-3fb5-4d4d-9f62-a2d1a3ca99f0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1978f636-3ed6-4ad6-8338-a7976699a445","path":"sprites/spr_viva_car/spr_viva_car.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1978f636-3ed6-4ad6-8338-a7976699a445","path":"sprites/spr_viva_car/spr_viva_car.yy",},"LayerId":{"name":"93c15971-7617-4d12-98a7-d77ecba2e587","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_car","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","name":"1978f636-3ed6-4ad6-8338-a7976699a445","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"539e26ec-b411-4e89-bd4d-323eed987fbe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0f0fde72-14c1-4211-8a88-018f12d6f2e8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4316429-3fb5-4d4d-9f62-a2d1a3ca99f0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1978f636-3ed6-4ad6-8338-a7976699a445",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_viva_car","path":"sprites/spr_viva_car/spr_viva_car.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,15 +43,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0603e5e8-bc64-4d1f-9c8b-2bad54a968e3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"539e26ec-b411-4e89-bd4d-323eed987fbe","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7ecbd1af-8761-43f8-96ba-272faf5f20da","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f0fde72-14c1-4211-8a88-018f12d6f2e8","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"e91a9bfe-dc57-4957-891f-6a8e17a6e545","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4316429-3fb5-4d4d-9f62-a2d1a3ca99f0","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"55d1e192-fa5b-49ca-8c8e-e2dff4405015","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1978f636-3ed6-4ad6-8338-a7976699a445","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"0603e5e8-bc64-4d1f-9c8b-2bad54a968e3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"539e26ec-b411-4e89-bd4d-323eed987fbe","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ecbd1af-8761-43f8-96ba-272faf5f20da","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f0fde72-14c1-4211-8a88-018f12d6f2e8","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e91a9bfe-dc57-4957-891f-6a8e17a6e545","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4316429-3fb5-4d4d-9f62-a2d1a3ca99f0","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"55d1e192-fa5b-49ca-8c8e-e2dff4405015","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1978f636-3ed6-4ad6-8338-a7976699a445","path":"sprites/spr_viva_car/spr_viva_car.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 80,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_viva_car","path":"sprites/spr_viva_car/spr_viva_car.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"93c15971-7617-4d12-98a7-d77ecba2e587","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"93c15971-7617-4d12-98a7-d77ecba2e587","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p1 - Viva Sprites",
     "path": "folders/6 - Player Data/p1 - Viva Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_viva_car",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

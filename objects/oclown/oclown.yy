@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oClown",
   "spriteId": {
     "name": "spr_clown_stand",
     "path": "sprites/spr_clown_stand/spr_clown_stand.yy",
@@ -28,16 +31,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "4aClown",
-    "path": "folders/8 - Bosses/4aClown.yy",
+    "name": "Clown",
+    "path": "folders/7 - Enemies/Clown.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oClown",
-  "tags": [],
-  "resourceType": "GMObject",
 }

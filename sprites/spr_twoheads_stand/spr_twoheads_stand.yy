@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_twoheads_stand",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"27ac6bec-1c2f-4f28-a27b-e2895438131a","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"27ac6bec-1c2f-4f28-a27b-e2895438131a","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"LayerId":{"name":"18d7b781-1878-4e43-93a3-a6e221df0d03","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_twoheads_stand","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","name":"27ac6bec-1c2f-4f28-a27b-e2895438131a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9ae2fe43-0eca-4267-ad3d-3167b86d5849","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9ae2fe43-0eca-4267-ad3d-3167b86d5849","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"LayerId":{"name":"18d7b781-1878-4e43-93a3-a6e221df0d03","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_twoheads_stand","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","name":"9ae2fe43-0eca-4267-ad3d-3167b86d5849","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"51af2d29-6334-464a-b39f-eb9ce80d5d7b","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"51af2d29-6334-464a-b39f-eb9ce80d5d7b","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"LayerId":{"name":"18d7b781-1878-4e43-93a3-a6e221df0d03","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_twoheads_stand","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","name":"51af2d29-6334-464a-b39f-eb9ce80d5d7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"27ac6bec-1c2f-4f28-a27b-e2895438131a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ae2fe43-0eca-4267-ad3d-3167b86d5849",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"51af2d29-6334-464a-b39f-eb9ce80d5d7b",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_twoheads_stand","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_twoheads_stand",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -43,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c62aafdb-8dd7-4d07-afe8-5b3a98a3e13b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"27ac6bec-1c2f-4f28-a27b-e2895438131a","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"4c343bae-7e8c-4aba-a66c-d303c87688ba","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ae2fe43-0eca-4267-ad3d-3167b86d5849","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"387b246e-5d45-40d6-ba7d-e108f690d455","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"51af2d29-6334-464a-b39f-eb9ce80d5d7b","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c62aafdb-8dd7-4d07-afe8-5b3a98a3e13b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"27ac6bec-1c2f-4f28-a27b-e2895438131a","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4c343bae-7e8c-4aba-a66c-d303c87688ba","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ae2fe43-0eca-4267-ad3d-3167b86d5849","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"387b246e-5d45-40d6-ba7d-e108f690d455","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"51af2d29-6334-464a-b39f-eb9ce80d5d7b","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 119,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_twoheads_stand","path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_twoheads_stand",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"18d7b781-1878-4e43-93a3-a6e221df0d03","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"18d7b781-1878-4e43-93a3-a6e221df0d03","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "2Twoheads",
     "path": "folders/8 - Bosses/2Twoheads.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_twoheads_stand",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

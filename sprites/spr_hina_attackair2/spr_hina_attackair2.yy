@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_hina_attackair2",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f9523b43-8b76-44d7-9005-d9d0815ca090","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f9523b43-8b76-44d7-9005-d9d0815ca090","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"LayerId":{"name":"a969417b-e4a7-49ce-8bab-38e5dbb92d54","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hina_attackair2","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"resourceVersion":"1.0","name":"f9523b43-8b76-44d7-9005-d9d0815ca090","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d0db6114-1bef-4d7d-9e37-a4cade0a0ede","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d0db6114-1bef-4d7d-9e37-a4cade0a0ede","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"LayerId":{"name":"a969417b-e4a7-49ce-8bab-38e5dbb92d54","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_hina_attackair2","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"resourceVersion":"1.0","name":"d0db6114-1bef-4d7d-9e37-a4cade0a0ede","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f9523b43-8b76-44d7-9005-d9d0815ca090",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d0db6114-1bef-4d7d-9e37-a4cade0a0ede",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_hina_attackair2","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_hina_attackair2",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2967ff85-d5b0-4879-ba54-01d4209fb48c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f9523b43-8b76-44d7-9005-d9d0815ca090","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c296c0b7-a87c-4806-9bb5-ae2afa3cfb89","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0db6114-1bef-4d7d-9e37-a4cade0a0ede","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"2967ff85-d5b0-4879-ba54-01d4209fb48c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f9523b43-8b76-44d7-9005-d9d0815ca090","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c296c0b7-a87c-4806-9bb5-ae2afa3cfb89","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d0db6114-1bef-4d7d-9e37-a4cade0a0ede","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 94,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_hina_attackair2","path":"sprites/spr_hina_attackair2/spr_hina_attackair2.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_hina_attackair2",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a969417b-e4a7-49ce-8bab-38e5dbb92d54","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a969417b-e4a7-49ce-8bab-38e5dbb92d54","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p2 - Hina Sprites",
     "path": "folders/6 - Player Data/p2 - Hina Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_hina_attackair2",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

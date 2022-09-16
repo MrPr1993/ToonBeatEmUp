@@ -14,6 +14,9 @@ isdepthchange=0
 scalechange=0
 loopimgchange=-1
 
+LerpScale=0
+LerpScaleSpd=0.1
+
 haspal=1
 
 hasgrav=0

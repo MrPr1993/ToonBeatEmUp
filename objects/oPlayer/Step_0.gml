@@ -1,5 +1,7 @@
 showmash=0
 
+
+
 if ContinueMode=0
 {
 
@@ -84,6 +86,9 @@ selfatk.flashX=flashX
 selfatk.flashY=flashY
 selfatk.flashZ=flashZ
 selfatk.canSuper=canSuper
+selfatk.HitQuake=HitQuake
+
+HitQuake=0
 
 if canmove=1
 {
@@ -225,4 +230,9 @@ if y=clamp(y,automoveY-2,automoveY+2) {y=automoveY key_up=0 key_down=0}
 
 }else {key_left=0 key_right=0 key_up=0 key_down=0 automove=0 doubledash=0 image_xscale=automoveFace}
 }
+}
+else
+{
+x=__view_get( e__VW.XView, 0 )+oControl.P1SpawnX
+y=__view_get( e__VW.YView, 0 )+oControl.P1SpawnY
 }

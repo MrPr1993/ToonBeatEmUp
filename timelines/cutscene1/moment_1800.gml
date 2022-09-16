@@ -14,4 +14,4 @@ layer_hspeed("BGcity",0.5)
 layer_set_visible("BGcity2",1)
 
 cutscenename="SOFIA"
-cutsceneline="WHERE DID THEY TAKE MY TREASURE?!\nTALK PERRA OR I'LL SHOVE MY FOOT\nRIGHT UP YOUR-"
+cutsceneline="WHERE DID THEY TAKE MY TREASURE?! TALK PERRA OR I'LL SHOVE MY FOOT RIGHT UP YOUR-"

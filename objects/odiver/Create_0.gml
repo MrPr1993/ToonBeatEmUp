@@ -1,8 +1,8 @@
 enemy_data()
 
-name="MONK"
+name="MR.DIVE"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=44
+enemyPortraitIndex=45
 
 enemyscript=animsetup_enemy
 
@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_diver_stand
-MoveSpr=spr_diver_stand
-RunSpr=spr_diver_stand
+MoveSpr=spr_diver_move
+RunSpr=spr_diver_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -32,14 +32,14 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_diver_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_diver_stand
+JumpSpr2=spr_diver_stand
+ThrownSpr=spr_diver_hit
+FlatSpr=spr_diver_flat
+ShockSpr=spr_diver_elec
+BurnSpr=spr_diver_burned
+FrozenSpr=spr_diver_frozen
 
 
 current_pal=0;
-my_pal_sprite=spr_enemypal
+my_pal_sprite=spr_ninjapal

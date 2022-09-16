@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_ninjabun_teleport",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"33a0807f-46f0-46c3-8a98-787c9f7f1687","path":"sprites/spr_ninjabun_teleport/spr_ninjabun_teleport.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"33a0807f-46f0-46c3-8a98-787c9f7f1687","path":"sprites/spr_ninjabun_teleport/spr_ninjabun_teleport.yy",},"LayerId":{"name":"b5035267-889a-4b7e-974c-9f7cb34d5447","path":"sprites/spr_ninjabun_teleport/spr_ninjabun_teleport.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ninjabun_teleport","path":"sprites/spr_ninjabun_teleport/spr_ninjabun_teleport.yy",},"resourceVersion":"1.0","name":"33a0807f-46f0-46c3-8a98-787c9f7f1687","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"33a0807f-46f0-46c3-8a98-787c9f7f1687",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ninjabun_teleport","path":"sprites/spr_ninjabun_teleport/spr_ninjabun_teleport.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_ninjabun_teleport",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8448fb8f-4944-428c-a3d1-bd2c28791f38","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"33a0807f-46f0-46c3-8a98-787c9f7f1687","path":"sprites/spr_ninjabun_teleport/spr_ninjabun_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"8448fb8f-4944-428c-a3d1-bd2c28791f38","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"33a0807f-46f0-46c3-8a98-787c9f7f1687","path":"sprites/spr_ninjabun_teleport/spr_ninjabun_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 94,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ninjabun_teleport","path":"sprites/spr_ninjabun_teleport/spr_ninjabun_teleport.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_ninjabun_teleport",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b5035267-889a-4b7e-974c-9f7cb34d5447","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b5035267-889a-4b7e-974c-9f7cb34d5447","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "NinjaBun",
     "path": "folders/7 - Enemies/NinjaBun.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_ninjabun_teleport",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

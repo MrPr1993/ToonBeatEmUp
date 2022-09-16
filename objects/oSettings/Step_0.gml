@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 controller_setup()
-
-
-if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=13 else menuSelect-=1}
-if -key_down_pressed {PlaySound(snd_select) if menuSelect=13 menuSelect=0 else menuSelect+=1}
+if controlSettings=0
+{
+if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=14 else menuSelect-=1}
+if -key_down_pressed {PlaySound(snd_select) if menuSelect=14 menuSelect=0 else menuSelect+=1}
 
 if -key_left
 {
@@ -68,6 +68,8 @@ if menuSelect=12	{if global.ContinueStart=-1 global.ContinueStart=99 else global
 	}
 	
 if menuSelect=13	if global.fpsMode=0 global.fpsMode=1 else global.fpsMode=0
+	
+	
 	}
 
 
@@ -107,6 +109,13 @@ if menuSelect=12	{if global.ContinueStart=99 global.ContinueStart=-1 else global
 	if menuSelect=13	if global.fpsMode=0 global.fpsMode=1 else global.fpsMode=0
 	}
 	
+if key_attack
+{
+if menuSelect=14 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied menuSelect=-1}
+}
+
+}
+
 	if instance_exists(oControl)
 {
 oControl.var_distort=global.CRTcustomDistort
@@ -122,6 +131,11 @@ oPause.var_border=global.CRTcustomBorder
 
 if keyboard_check_pressed(vk_escape) or key_jump
 {
+if controlSettings=1
+{controlSettings=0 global.MenuSkip=0 PlaySound(snd_steal) exit;}
+{
 settings_save()
-if room=rm_settings {global.Continues=global.ContinueStart room=rm_menu} else instance_destroy()
+if room=rm_settings {global.Continues=global.ContinueStart global.MenuSkip=0 room=rm_menu} else instance_destroy()
+}
+
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_pharaoh_rise",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0f071554-67c6-4925-8a11-1958758745a5","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0f071554-67c6-4925-8a11-1958758745a5","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"LayerId":{"name":"fa1336c8-a7ce-4a0d-81ca-3b7285b03a32","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pharaoh_rise","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","name":"0f071554-67c6-4925-8a11-1958758745a5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f8f48855-f19a-46a0-9e06-25254d0e6520","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f8f48855-f19a-46a0-9e06-25254d0e6520","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"LayerId":{"name":"fa1336c8-a7ce-4a0d-81ca-3b7285b03a32","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pharaoh_rise","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","name":"f8f48855-f19a-46a0-9e06-25254d0e6520","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e861772d-97f3-43a1-8e60-3404acbb49ba","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e861772d-97f3-43a1-8e60-3404acbb49ba","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"LayerId":{"name":"fa1336c8-a7ce-4a0d-81ca-3b7285b03a32","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_pharaoh_rise","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","name":"e861772d-97f3-43a1-8e60-3404acbb49ba","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0f071554-67c6-4925-8a11-1958758745a5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f8f48855-f19a-46a0-9e06-25254d0e6520",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e861772d-97f3-43a1-8e60-3404acbb49ba",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_pharaoh_rise","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_pharaoh_rise",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -43,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1c152f1d-61dd-4755-86ab-913f87e3a019","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f071554-67c6-4925-8a11-1958758745a5","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"884559e7-1ba3-42ea-aa35-7fc5de4728b0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8f48855-f19a-46a0-9e06-25254d0e6520","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f76c3a0b-0c6f-4849-b074-85d3b8692b83","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e861772d-97f3-43a1-8e60-3404acbb49ba","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"1c152f1d-61dd-4755-86ab-913f87e3a019","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f071554-67c6-4925-8a11-1958758745a5","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"884559e7-1ba3-42ea-aa35-7fc5de4728b0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8f48855-f19a-46a0-9e06-25254d0e6520","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f76c3a0b-0c6f-4849-b074-85d3b8692b83","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e861772d-97f3-43a1-8e60-3404acbb49ba","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 110,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_pharaoh_rise","path":"sprites/spr_pharaoh_rise/spr_pharaoh_rise.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_pharaoh_rise",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fa1336c8-a7ce-4a0d-81ca-3b7285b03a32","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fa1336c8-a7ce-4a0d-81ca-3b7285b03a32","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "3Mummy Empress",
     "path": "folders/8 - Bosses/3Mummy Empress.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_pharaoh_rise",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

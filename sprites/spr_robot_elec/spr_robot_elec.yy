@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_robot_elec",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e9f9e763-b72b-4a6d-b8b4-936fdcb61b69","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e9f9e763-b72b-4a6d-b8b4-936fdcb61b69","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"LayerId":{"name":"c5c05092-6430-4511-9025-ed5627c4f48c","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_robot_elec","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"resourceVersion":"1.0","name":"e9f9e763-b72b-4a6d-b8b4-936fdcb61b69","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2c0ae374-b76b-4003-b9b4-cd28178af8ac","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2c0ae374-b76b-4003-b9b4-cd28178af8ac","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"LayerId":{"name":"c5c05092-6430-4511-9025-ed5627c4f48c","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_robot_elec","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"resourceVersion":"1.0","name":"2c0ae374-b76b-4003-b9b4-cd28178af8ac","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9f9e763-b72b-4a6d-b8b4-936fdcb61b69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c0ae374-b76b-4003-b9b4-cd28178af8ac",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_robot_elec","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a5c4cc6d-18cc-4fa4-8eab-986f7431e0c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e9f9e763-b72b-4a6d-b8b4-936fdcb61b69","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"3081e2cf-6b94-467e-a933-d7acf6de51e5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c0ae374-b76b-4003-b9b4-cd28178af8ac","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"a5c4cc6d-18cc-4fa4-8eab-986f7431e0c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e9f9e763-b72b-4a6d-b8b4-936fdcb61b69","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3081e2cf-6b94-467e-a933-d7acf6de51e5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c0ae374-b76b-4003-b9b4-cd28178af8ac","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 120,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_robot_elec","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c5c05092-6430-4511-9025-ed5627c4f48c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c5c05092-6430-4511-9025-ed5627c4f48c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Robot",
     "path": "folders/7 - Enemies/Robot.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_robot_elec",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

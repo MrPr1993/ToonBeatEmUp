@@ -44,6 +44,11 @@ altresult2a=-1
 altresult2b=-1
 altresult2c=-1
 altresult2d=-1
+altresult2Ta=-1
+altresult2Tb=-1
+altresult2Tc=-1
+altresult2Td=-1
+
 resulttext3="TIME"
 altresult3=-1
 AltScore1=0
@@ -136,6 +141,8 @@ hp1=oControl.p1.hp
 PlayerScore=oControl.p1.PlayerScore
 actP1=oControl.p1.ContinueMode 
 pP1=1 pGet1=oControl.p1.playerGet
+altresult2Ta=oControl.p1.altresult2Text
+
 }
 else {PlayerLife1=-1 PlayerScore1=0}
 if instance_exists(oControl.p2)
@@ -146,6 +153,7 @@ hp2=oControl.p2.hp
 PlayerScore=oControl.p2.PlayerScore
 actP2=oControl.p2.ContinueMode 
 pP2=1 pGet2=oControl.p2.playerGet
+altresult2Tb=oControl.p2.altresult2Text
 }
 else {PlayerLife2=-1 PlayerScore2=0}
 if instance_exists(oControl.p3)
@@ -156,6 +164,7 @@ hp3=oControl.p3.hp
 PlayerScore=oControl.p3.PlayerScore
 actP3=oControl.p3.ContinueMode 
 pP3=1 pGet3=oControl.p3.playerGet
+altresult2Tc=oControl.p3.altresult2Text
 }
 else {PlayerLife3=-1 PlayerScore3=0}
 if instance_exists(oControl.p4)
@@ -166,6 +175,7 @@ hp4=oControl.p4.hp
 PlayerScore=oControl.p4.PlayerScore
 actP4=oControl.p4.ContinueMode
 pP4=1 pGet4=oControl.p4.playerGet
+altresult2Td=oControl.p4.altresult2Text
 }
 else {PlayerLife4=-1 PlayerScore4=0}
 
@@ -244,38 +254,40 @@ continueStageScore+=PlayerScore3-global.P3Score
 if actP4=0
 continueStageScore+=PlayerScore4-global.P4Score
 
-
+brickgamenum=0
 	
-p1=instance_create_depth(0,0,-1,oPlayerDisembodied) with p1 {canControl=1 controlNO=1 playNO=1
+p1=instance_create_depth(-99999,0,-1,oPlayerDisembodied) with p1 {canControl=1 controlNO=1 playNO=1
 	PlayerLife=oContinueScreen.PlayerLife1 PlayerScore=oContinueScreen.PlayerScore1
-	characterSelect=global.P1Char
-	global.P1Score=PlayerScore
+	characterSelect=global.P1Char 
+	global.P1Score=PlayerScore 	altresult2Text=oContinueScreen.altresult2Ta
 	}p1.hp=hp1 p1.isInctive=actP1 p1.playerNO=1 p1.playerGet=pGet1 p1.altresult2=altresult2a
+	
+		if p1.isInctive=0 {brickgamenum+=1 p1.x=0}
 	
 	//if p1.isInctive=0 actPTotal1+=80 else actPTotal1=9999
 	} else actPTotal1=9999
 if PlayerLife2!=-1{
-p2=instance_create_depth(0,0,-1,oPlayerDisembodied) with p2 {canControl=1 controlNO=2 playNO=2
+p2=instance_create_depth(-9999,0,-1,oPlayerDisembodied) with p2 {canControl=1 controlNO=2 playNO=2
 		PlayerLife=oContinueScreen.PlayerLife2 PlayerScore=oContinueScreen.PlayerScore2
-		characterSelect=global.P2Char
+		characterSelect=global.P2Char 	altresult2Text=oContinueScreen.altresult2Tb
 		global.P2Score=PlayerScore
 		}p2.hp=hp2  p2.isInctive=actP2 p2.playerNO=2 p2.playerGet=pGet2 p2.altresult2=altresult2b
 		
 	if p2.isInctive=0
-	{
+	{brickgamenum+=1 p2.x=80*(brickgamenum-1)
 	if p1.isInctive=0 {actPTotal1+=80 actPTotal+=0.25} else {actPTotal1=9999 }
 	//if p2.isInctive=0 actPTotal2+=80 else actPTotal2=9999
 	} else {actPTotal2=9999 }
 		} else {actPTotal2=9999 }
 if PlayerLife3!=-1{
-p3=instance_create_depth(0,0,-1,oPlayerDisembodied) with p3 {canControl=1 controlNO=3 playNO=3
+p3=instance_create_depth(-9999,0,-1,oPlayerDisembodied) with p3 {canControl=1 controlNO=3 playNO=3
 		PlayerLife=oContinueScreen.PlayerLife3 PlayerScore=oContinueScreen.PlayerScore3
-		characterSelect=global.P3Char
+		characterSelect=global.P3Char	altresult2Text=oContinueScreen.altresult2Tc
 		global.P3Score=PlayerScore
 		}p3.hp=hp3  p3.isInctive=actP3 p3.playerNO=3 p3.playerGet=pGet3 p3.altresult2=altresult2c
 		
 	if p3.isInctive=0
-	{
+	{brickgamenum+=1 p3.x=80*(brickgamenum-1)
 	if p1.isInctive=0 {actPTotal1+=80 actPTotal+=0.25} else {actPTotal1=9999 }
 	if p2.isInctive=0 {actPTotal2+=80 actPTotal+=0.25} else {actPTotal2=9999 }
 	//if p3.isInctive=0 actPTotal3+=80 else actPTotal3=9999
@@ -283,14 +295,14 @@ p3=instance_create_depth(0,0,-1,oPlayerDisembodied) with p3 {canControl=1 contro
 		} else {actPTotal3=9999 }
 if PlayerLife4!=-1
 {
-p4=instance_create_depth(0,0,-1,oPlayerDisembodied) with p4 {canControl=1 controlNO=4 playNO=4
+p4=instance_create_depth(-9999,0,-1,oPlayerDisembodied) with p4 {canControl=1 controlNO=4 playNO=4
 		PlayerLife=oContinueScreen.PlayerLife4 PlayerScore=oContinueScreen.PlayerScore4
-		characterSelect=global.P4Char
+		characterSelect=global.P4Char 	altresult2Text=oContinueScreen.altresult2Td
 		global.P4Score=PlayerScore
 		}p4.hp=hp4  p4.isInctive=actP4 p4.playerNO=4 p4.playerGet=pGet4 p4.altresult2=altresult2d
 		
 		if p4.isInctive=0
-		{
+		{brickgamenum+=1 p4.x=80*(brickgamenum-1)
 	if p1.isInctive=0 {actPTotal1+=80 actPTotal+=0.25} else {actPTotal1=9999 }
 	if p2.isInctive=0 {actPTotal2+=80 actPTotal+=0.25} else {actPTotal2=9999 }
 	if p3.isInctive=0 {actPTotal3+=80 actPTotal+=0.25} else {actPTotal3=9999 }
@@ -307,6 +319,11 @@ if continueStageScore>global.LevelHiScore[stagecheck]
 }
 global.UnlockStage[stagecheck]=1
 stagedata_save()
+
+if brickgamenum=1 with oPlayerDisembodied x+=160-40
+if brickgamenum=2 with oPlayerDisembodied x+=160-80
+if brickgamenum=3 with oPlayerDisembodied x+=160-120
+if brickgamenum=4 with oPlayerDisembodied x+=0
 
 p5=instance_create_depth(0,0,-1,oPlayerDisembodied) with p5 {canControl=1 controlNO=9}
 
@@ -403,3 +420,7 @@ stageClear=1
 }
 
 
+optionSelect=0
+optionPick=0
+optionSelectA=0
+optionSelectX=200

@@ -278,16 +278,16 @@ d3d_transform_set_identity()
 
 if controlNO=1
 //d3d_transform_set_translation(round(160-80*oContinueScreen.actPTotal),16,0)
-d3d_transform_set_translation(round(oContinueScreen.actPorgT+160+((80*oContinueScreen.actPTotal))-oContinueScreen.actPTotal1),16,0)
+d3d_transform_set_translation(round(x+40),16,0)
 if controlNO=2
 //d3d_transform_set_translation(round(160-80*oContinueScreen.actPTotal),16,0)
-d3d_transform_set_translation(round(oContinueScreen.actPorgT+160+((80*oContinueScreen.actPTotal))-oContinueScreen.actPTotal2),16,0)
+d3d_transform_set_translation(round(x+40),16,0)
 if  controlNO=3
 //d3d_transform_set_translation(round(160-80*oContinueScreen.actPTotal),16,0)
-d3d_transform_set_translation(round(oContinueScreen.actPorgT+160+((80*oContinueScreen.actPTotal))-oContinueScreen.actPTotal3),16,0)
+d3d_transform_set_translation(round(x+40),16,0)
 if  controlNO=4
 //d3d_transform_set_translation(round(160-80*oContinueScreen.actPTotal),16,0)
-d3d_transform_set_translation(round(oContinueScreen.actPorgT+160+((80*oContinueScreen.actPTotal))-oContinueScreen.actPTotal4),16,0)
+d3d_transform_set_translation(round(x+40),16,0)
 
 //d3d_transform_set_translation(round(320-72-800000),0,0)
 
@@ -299,7 +299,11 @@ if playerGet=1
 draw_text_transformed(0,144,string_hash_to_newline(string(oContinueScreen.resulttext1)),0.75,1,0)
 else
 draw_text_transformed(0,144,string_hash_to_newline(string("")),0.75,1,0)
+if altresult2Text=-1
 draw_text_transformed(0,144+16,string_hash_to_newline(string(oContinueScreen.resulttext2)),0.75,1,0)
+else
+draw_text_transformed(0,144+16,string_hash_to_newline(string(altresult2Text)),0.75,1,0)
+
 draw_text_transformed(0,144+32,string_hash_to_newline(string(oContinueScreen.resulttext3)),0.75,1,0)
 
 if controlNO=1
@@ -335,11 +339,14 @@ draw_text(0,144+16+8,string_hash_to_newline(altresult2))
 else
 draw_text(0,144+16+8,string_hash_to_newline(oContinueScreen.altresult2))
 }
+
+if oContinueScreen.AltScore3!=-2
+{
 if oContinueScreen.AltScore3=0
 draw_text(0,144+32+8,string_hash_to_newline(round(oContinueScreen.time*200)))
 else
 draw_text(0,144+32+8,string_hash_to_newline(oContinueScreen.altresult3))
-
+}
 if oContinueScreen.scoreClearSet=0
 {oContinueScreen.scoreClearSet=1
 alarm[8]=240+oContinueScreen.stageClearDelay///Stage change time
@@ -399,9 +406,26 @@ draw_set_halign(fa_left)
 }
 
 }
-
-
 d3d_transform_set_identity()
+
+
+}
+
+if optionSelect=1
+{draw_set_halign(fa_center)
+draw_set_color(c_black) draw_set_alpha(optionSelectA)
+draw_rectangle(-999,-888,899,999,false)
+draw_set_alpha(1)
+if optionSelectX!=0 optionSelectX-=20
+draw_set_color(c_gray)
+if optionPick=0 draw_set_color(c_white)
+draw_text(round(160-optionSelectX),120,"RESTART") draw_set_color(c_gray)
+if optionPick=1 draw_set_color(c_white)
+draw_text(round(160+optionSelectX),120+8,"QUIT") 
+if optionSelectA<0.75 optionSelectA+=0.05
+draw_set_color(c_white)
+draw_set_halign(fa_left)
+draw_command(8)
 }
 
 ///Gold getting

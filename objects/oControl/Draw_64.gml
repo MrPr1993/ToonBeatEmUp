@@ -56,7 +56,7 @@ if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay and room!=rm_cutscene1
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
-and room!=rm_menu and room!=rm_settings
+and room!=rm_menu and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes
 {
 if betatest=1
 {
@@ -818,6 +818,13 @@ yy3 = 1+hiScoreY;///For the character's face
 
 ///For Testing Hi Score - If you don't need this, you can remove this or disable it
 ///////////////
+if global.HiScoreSee=1{
+draw_sprite_tiled(bg_hscore,0,0,(26*hiScoreY))
+draw_sprite_ext(bg_hscore3,0,160,((26*hiScoreY))-28+12,1,286,0,c_white,1)
+draw_sprite(bg_hscore2,0,160,(26*hiScoreY)-28+12-4)
+draw_sprite_ext(bg_hscore2,0,160,((26*hiScoreY))-28+286+12+4,1,-1,0,c_white,1)
+}
+
 if global.GlobalBeta=1
 {
 
@@ -845,6 +852,8 @@ and keyboard_check_pressed(ord("1"))////See how it affects the hi-score
 hiscore_check()
 
 ///////////////////////////////////////////
+
+
 
 ///For Text
 draw_text(8,8,string_hash_to_newline(global.P1Score))
@@ -925,8 +934,8 @@ if global.HiScoreSee=1
 if key_up if hiScoreY>-10 hiScoreY-=0.1
 if key_down if hiScoreY<10 hiScoreY+=0.1
 hiScoreY=clamp(hiScoreY,-2.5,2.5)
-
-draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"","EXIT")
+draw_text(8,8+16+16,"▲▼MOVE")
+draw_command(7)
 }
 if pauseBuffer!=0 pauseBuffer-=1
 if key_attack or key_start
@@ -987,9 +996,15 @@ newsScale=0.01
 newsTime=0
 newsIndex+=1
 } else 
-{global.MenuSkip=0
+{
+if global.IsMovie=0
+{
+global.MenuSkip=0
 global.IntroSkip=1
 room_goto(rm_titlescreen)
+}
+else room_goto(rm_cutscenes)
+
 }
 }
 }
@@ -1026,9 +1041,13 @@ draw_sprite_ext(spr_newspaper,0,160,120,4,4,0,c_black,newsFadeA)
 if key_attack or keyboard_check_pressed(vk_enter)
 or key_jump or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
 {////Hiscore to Title Screen
+if global.IsMovie=0
+{
 global.MenuSkip=0 global.IntroSkip=1
-
 room_goto(rm_titlescreen)
+}
+else
+room_goto(rm_cutscenes)
 }
 }
 
@@ -1177,7 +1196,7 @@ draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
 }}
 
 ///This will be used to play the cutscenes
-if room=rm_cutscene1 or room=rm_opening
+if room=rm_cutscene1 or room=rm_opening or (room=rm_newspaper and global.IsMovie=1)
 {
 if keyboard_check_pressed(vk_f5)
 game_save("SaveState")
@@ -1188,6 +1207,8 @@ __view_set( e__VW.XView, 0, SceneX )
 SceneX+=SceneSpeedX
 __view_set( e__VW.YView, 0, SceneY )
 SceneY+=SceneSpeedY
+
+if global.IsMovie=1 {global.StageName=rm_cutscenes CutsceneStage=rm_cutscenes}
 
 if creditsGo=0
 {if creditsAlpha>-0.1 creditsAlpha-=0.1} else creditsAlpha+=0.1
@@ -1383,6 +1404,8 @@ draw_shop()
 soundtest_draw()
 gallery_draw()
 draw_brickbreakgame()
+draw_minigames()
+draw_cutscenes()
 
 if global.fpsMode=1
 {draw_set_font(global.scorefont) draw_set_halign(fa_right)

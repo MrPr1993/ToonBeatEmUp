@@ -260,6 +260,7 @@ draw_text_transformed(4,240-32,"ABILITIES:",0.75,1,0)
 draw_sprite(spr_selface,0,round(144-arrowSel2-24),0) if arrowSel1>0 arrowSel1-=0.1 else arrowSel1=0
 draw_sprite(spr_selface,1,round(0+arrowSel1),0) if arrowSel2>0 arrowSel2-=0.1 else arrowSel2=0
 //maxhp*45
+maxhp=hp
 draw_set_color(c_white) draw_rectangle(224+8-1-round(maxhp*45/2),8-1+20,224+8+1+round(maxhp*45/2),8+8+1+20,false)
 draw_set_color(c_yellow) draw_rectangle(224+8-round(maxhp*45/2),8+20,224+8+round(maxhp*45/2),8+8+20,false)
 

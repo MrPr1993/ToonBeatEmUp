@@ -51,7 +51,7 @@ if level=24 roomGo=rm_training
 
 if level=25 roomGo=rm_soundtest
 if level=26 roomGo=rm_gallery
-if level=27 roomGo=rm_testarea3
+if level=27 roomGo=rm_settings
 if level=28 roomGo=rm_menu
 if level=29 roomGo=rm_hiscore
 if level=30 roomGo=rm_animeditor

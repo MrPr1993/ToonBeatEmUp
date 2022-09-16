@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_sneak_gunstand",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c21f269f-3394-430b-8c3f-e8ec8c89326f","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c21f269f-3394-430b-8c3f-e8ec8c89326f","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"LayerId":{"name":"4cb5eaf8-7fc9-499a-a0c0-867a1f0147b0","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sneak_gunstand","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","name":"c21f269f-3394-430b-8c3f-e8ec8c89326f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cc66afac-1909-4716-8e01-3c2beb238ad2","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cc66afac-1909-4716-8e01-3c2beb238ad2","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"LayerId":{"name":"4cb5eaf8-7fc9-499a-a0c0-867a1f0147b0","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sneak_gunstand","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","name":"cc66afac-1909-4716-8e01-3c2beb238ad2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"03c5d651-7c02-4fc4-911e-e97be26b9d69","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"03c5d651-7c02-4fc4-911e-e97be26b9d69","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"LayerId":{"name":"4cb5eaf8-7fc9-499a-a0c0-867a1f0147b0","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sneak_gunstand","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","name":"03c5d651-7c02-4fc4-911e-e97be26b9d69","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bb776ccc-35b2-400f-84ed-e11da0def067","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bb776ccc-35b2-400f-84ed-e11da0def067","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"LayerId":{"name":"4cb5eaf8-7fc9-499a-a0c0-867a1f0147b0","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sneak_gunstand","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","name":"bb776ccc-35b2-400f-84ed-e11da0def067","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c21f269f-3394-430b-8c3f-e8ec8c89326f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc66afac-1909-4716-8e01-3c2beb238ad2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"03c5d651-7c02-4fc4-911e-e97be26b9d69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bb776ccc-35b2-400f-84ed-e11da0def067",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_sneak_gunstand","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_sneak_gunstand",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.1,
@@ -46,15 +43,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ef92bd3c-fe22-44f1-9867-7d4add401fbf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c21f269f-3394-430b-8c3f-e8ec8c89326f","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"84594d8c-c719-41d7-860a-440d9d9fdea7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc66afac-1909-4716-8e01-3c2beb238ad2","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"fd804aa9-e534-49e7-92f5-931ab47101bc","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"03c5d651-7c02-4fc4-911e-e97be26b9d69","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"6e4506f7-1369-4010-85ae-4faee24a4dab","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bb776ccc-35b2-400f-84ed-e11da0def067","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"ef92bd3c-fe22-44f1-9867-7d4add401fbf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c21f269f-3394-430b-8c3f-e8ec8c89326f","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"84594d8c-c719-41d7-860a-440d9d9fdea7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc66afac-1909-4716-8e01-3c2beb238ad2","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fd804aa9-e534-49e7-92f5-931ab47101bc","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"03c5d651-7c02-4fc4-911e-e97be26b9d69","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6e4506f7-1369-4010-85ae-4faee24a4dab","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bb776ccc-35b2-400f-84ed-e11da0def067","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 83,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_sneak_gunstand","path":"sprites/spr_sneak_gunstand/spr_sneak_gunstand.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_sneak_gunstand",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4cb5eaf8-7fc9-499a-a0c0-867a1f0147b0","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4cb5eaf8-7fc9-499a-a0c0-867a1f0147b0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Sneak",
     "path": "folders/7 - Enemies/Sneak.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_sneak_gunstand",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

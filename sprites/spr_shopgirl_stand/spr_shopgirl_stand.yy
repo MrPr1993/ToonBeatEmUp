@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_shopgirl_stand",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8240b877-9e42-4ff8-9254-22899abb0434","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8240b877-9e42-4ff8-9254-22899abb0434","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":{"name":"1d00a9a5-192a-468e-a26e-0934e2950595","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopgirl_stand","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"8240b877-9e42-4ff8-9254-22899abb0434","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d9fbbc93-aa43-4da3-a259-e653b340b6c0","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d9fbbc93-aa43-4da3-a259-e653b340b6c0","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":{"name":"1d00a9a5-192a-468e-a26e-0934e2950595","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopgirl_stand","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"d9fbbc93-aa43-4da3-a259-e653b340b6c0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"407ecaee-cc36-447d-aeae-75a672f1e11b","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"407ecaee-cc36-447d-aeae-75a672f1e11b","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":{"name":"1d00a9a5-192a-468e-a26e-0934e2950595","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopgirl_stand","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"407ecaee-cc36-447d-aeae-75a672f1e11b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2f6fe63f-0251-436a-b1ae-14eb0958dd47","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2f6fe63f-0251-436a-b1ae-14eb0958dd47","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":{"name":"1d00a9a5-192a-468e-a26e-0934e2950595","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopgirl_stand","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"2f6fe63f-0251-436a-b1ae-14eb0958dd47","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"554bcbe1-c7f2-4995-a056-39c14cb8df0d","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"554bcbe1-c7f2-4995-a056-39c14cb8df0d","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":{"name":"1d00a9a5-192a-468e-a26e-0934e2950595","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopgirl_stand","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"554bcbe1-c7f2-4995-a056-39c14cb8df0d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"31593011-fe64-4866-bb12-bbed29e7e9cd","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"31593011-fe64-4866-bb12-bbed29e7e9cd","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"LayerId":{"name":"1d00a9a5-192a-468e-a26e-0934e2950595","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shopgirl_stand","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","name":"31593011-fe64-4866-bb12-bbed29e7e9cd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8240b877-9e42-4ff8-9254-22899abb0434",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d9fbbc93-aa43-4da3-a259-e653b340b6c0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"407ecaee-cc36-447d-aeae-75a672f1e11b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2f6fe63f-0251-436a-b1ae-14eb0958dd47",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"554bcbe1-c7f2-4995-a056-39c14cb8df0d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"31593011-fe64-4866-bb12-bbed29e7e9cd",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_shopgirl_stand","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_shopgirl_stand",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cb9e46d6-7680-4db1-811a-93072cbfcf98","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8240b877-9e42-4ff8-9254-22899abb0434","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0e7ac2d5-5fe7-42ec-96b5-fe8a0d68f812","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9fbbc93-aa43-4da3-a259-e653b340b6c0","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b412bb93-003f-4d06-ab61-b9efa7b1c32b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"407ecaee-cc36-447d-aeae-75a672f1e11b","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"adca7cfa-b693-411f-aa3f-d1b01289e53f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f6fe63f-0251-436a-b1ae-14eb0958dd47","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"565a8785-fa64-4c7f-94e6-452969d76ba7","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"554bcbe1-c7f2-4995-a056-39c14cb8df0d","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b56afbc1-7646-4740-b66a-a32b1be97bfa","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31593011-fe64-4866-bb12-bbed29e7e9cd","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"cb9e46d6-7680-4db1-811a-93072cbfcf98","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8240b877-9e42-4ff8-9254-22899abb0434","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0e7ac2d5-5fe7-42ec-96b5-fe8a0d68f812","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9fbbc93-aa43-4da3-a259-e653b340b6c0","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b412bb93-003f-4d06-ab61-b9efa7b1c32b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"407ecaee-cc36-447d-aeae-75a672f1e11b","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"adca7cfa-b693-411f-aa3f-d1b01289e53f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f6fe63f-0251-436a-b1ae-14eb0958dd47","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"565a8785-fa64-4c7f-94e6-452969d76ba7","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"554bcbe1-c7f2-4995-a056-39c14cb8df0d","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b56afbc1-7646-4740-b66a-a32b1be97bfa","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31593011-fe64-4866-bb12-bbed29e7e9cd","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 98,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_shopgirl_stand","path":"sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_shopgirl_stand",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1d00a9a5-192a-468e-a26e-0934e2950595","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1d00a9a5-192a-468e-a26e-0934e2950595","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Shop",
     "path": "folders/6b - NPCs/Shop.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_shopgirl_stand",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

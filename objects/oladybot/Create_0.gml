@@ -1,8 +1,8 @@
 enemy_data()
 
-name="MONK"
+name="O-POLIS"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=44
+enemyPortraitIndex=46
 
 enemyscript=animsetup_enemy
 
@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_ladybot_stand
-MoveSpr=spr_ladybot_stand
-RunSpr=spr_ladybot_stand
+MoveSpr=spr_ladybot_move
+RunSpr=spr_ladybot_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -32,13 +32,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_ladybot_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_ladybot_stand
+JumpSpr2=spr_ladybot_stand
+ThrownSpr=spr_ladybot_hit
+FlatSpr=spr_ladybot_flat
+ShockSpr=spr_ladybot_elec
+BurnSpr=spr_ladybot_burned
+FrozenSpr=spr_ladybot_frozen
 
 
 current_pal=0;

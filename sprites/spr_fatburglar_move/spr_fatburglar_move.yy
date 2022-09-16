@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_fatburglar_move",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"904ed095-156a-4739-8f39-05f9c8c19e63","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"904ed095-156a-4739-8f39-05f9c8c19e63","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":{"name":"1c0dcf6d-c75c-4140-ac2c-3316f0ccd0ac","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatburglar_move","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"904ed095-156a-4739-8f39-05f9c8c19e63","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"459e54c6-3d14-4bf9-a1f5-fe0e46841c17","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"459e54c6-3d14-4bf9-a1f5-fe0e46841c17","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":{"name":"1c0dcf6d-c75c-4140-ac2c-3316f0ccd0ac","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatburglar_move","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"459e54c6-3d14-4bf9-a1f5-fe0e46841c17","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5fc46244-9f8c-42c1-9d8f-faa02e689ec9","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5fc46244-9f8c-42c1-9d8f-faa02e689ec9","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":{"name":"1c0dcf6d-c75c-4140-ac2c-3316f0ccd0ac","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatburglar_move","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"5fc46244-9f8c-42c1-9d8f-faa02e689ec9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"adc9519e-30f9-473e-8096-6c7d4e31feff","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"adc9519e-30f9-473e-8096-6c7d4e31feff","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":{"name":"1c0dcf6d-c75c-4140-ac2c-3316f0ccd0ac","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatburglar_move","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"adc9519e-30f9-473e-8096-6c7d4e31feff","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fbc12872-31ec-4dde-9b21-4ef8c04b0fdc","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fbc12872-31ec-4dde-9b21-4ef8c04b0fdc","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":{"name":"1c0dcf6d-c75c-4140-ac2c-3316f0ccd0ac","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatburglar_move","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"fbc12872-31ec-4dde-9b21-4ef8c04b0fdc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fb09601a-24bd-4bc0-b8d3-fc7c7b3c58eb","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fb09601a-24bd-4bc0-b8d3-fc7c7b3c58eb","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"LayerId":{"name":"1c0dcf6d-c75c-4140-ac2c-3316f0ccd0ac","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_fatburglar_move","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","name":"fb09601a-24bd-4bc0-b8d3-fc7c7b3c58eb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"904ed095-156a-4739-8f39-05f9c8c19e63",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"459e54c6-3d14-4bf9-a1f5-fe0e46841c17",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5fc46244-9f8c-42c1-9d8f-faa02e689ec9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"adc9519e-30f9-473e-8096-6c7d4e31feff",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fbc12872-31ec-4dde-9b21-4ef8c04b0fdc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb09601a-24bd-4bc0-b8d3-fc7c7b3c58eb",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_fatburglar_move","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b786fea7-b841-484d-b30d-45045cf60b20","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"904ed095-156a-4739-8f39-05f9c8c19e63","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"23c14ba1-05cd-4ddd-9c20-b091138e7bd2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"459e54c6-3d14-4bf9-a1f5-fe0e46841c17","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"cc0ee25c-c07e-4d1e-8651-f11c41c999a3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5fc46244-9f8c-42c1-9d8f-faa02e689ec9","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5502b477-1223-473c-9d70-3bcff839744f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"adc9519e-30f9-473e-8096-6c7d4e31feff","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"def7ccbe-488c-4d07-8758-cc853d459fa5","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fbc12872-31ec-4dde-9b21-4ef8c04b0fdc","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7ef8bcca-6243-47a5-b6b9-d7c5a340e540","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fb09601a-24bd-4bc0-b8d3-fc7c7b3c58eb","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"b786fea7-b841-484d-b30d-45045cf60b20","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"904ed095-156a-4739-8f39-05f9c8c19e63","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"23c14ba1-05cd-4ddd-9c20-b091138e7bd2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"459e54c6-3d14-4bf9-a1f5-fe0e46841c17","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cc0ee25c-c07e-4d1e-8651-f11c41c999a3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5fc46244-9f8c-42c1-9d8f-faa02e689ec9","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5502b477-1223-473c-9d70-3bcff839744f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"adc9519e-30f9-473e-8096-6c7d4e31feff","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"def7ccbe-488c-4d07-8758-cc853d459fa5","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fbc12872-31ec-4dde-9b21-4ef8c04b0fdc","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ef8bcca-6243-47a5-b6b9-d7c5a340e540","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fb09601a-24bd-4bc0-b8d3-fc7c7b3c58eb","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 94,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_fatburglar_move","path":"sprites/spr_fatburglar_move/spr_fatburglar_move.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1c0dcf6d-c75c-4140-ac2c-3316f0ccd0ac","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1c0dcf6d-c75c-4140-ac2c-3316f0ccd0ac","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "FatBurglar",
     "path": "folders/7 - Enemies/FatBurglar.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_fatburglar_move",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -13,7 +13,7 @@ stageClearIndex+=0.5
 
 if stageClearY<60 //120
 stageClearY+=16
-draw_sprite_ext(stageCspr,stageClearIndex,160,stageClearY,1,1,0,c_white,1)///Game Over Text
+//draw_sprite_ext(stageCspr,stageClearIndex,160,stageClearY,1,1,0,c_white,1)///Game Over Text
 draw_set_alpha(1) draw_set_color(c_white)
 if stageScore=1
 {alarm[0]=0 
@@ -46,13 +46,11 @@ if AltScore1=0 altresult1=bossScore
 if AltScore2=0 altresult2=oBrickBreakPlayer.hp*20000
 if AltScore3=0 altresult3=round(time*200)
 
-oBrickBreakPlayer.PlayerScore+=altresult1+altresult2+altresult3
-
-
-GoldShow=1 GoldGet+=round(oBrickBreakPlayer.PlayerScore/100) global.Gold+=GoldGet
-gold_save()
-global.P1Score=p1.PlayerScore
-global.P1Life=p1.PlayerLife
+//oBrickBreakPlayer.PlayerScore+=altresult1+altresult2+altresult3
+//GoldShow=1 GoldGet+=round(oBrickBreakPlayer.PlayerScore/100) global.Gold+=GoldGet
+//gold_save()
+//global.P1Score=p1.PlayerScore
+//global.P1Life=p1.PlayerLife
 
 }
 
@@ -72,35 +70,56 @@ draw_text(320-10,round(240-16+GoldY),string("+")+string(GoldGet)+string("$"))
 draw_set_halign(fa_left)
 }
 }
+if oBrickBreakGame.ready=1
+{
 with oBrickBreakPlayer
 {
 d3d_transform_set_identity()
 {
-if playerNO=1
-d3d_transform_set_translation(0,0,0)
-if playerNO=2
-d3d_transform_set_translation(72,0,0)
-if playerNO=3
-d3d_transform_set_translation(320-72-72,0,0)
-if playerNO=4
-d3d_transform_set_translation(320-72,0,0)
-}
+d3d_transform_set_translation(x,0,0)
 
-draw_sprite(spr_hud,0,0,0)
 if anim=0 or anim=1
 {
 draw_set_color(c_white)
-draw_rectangle(2+1,60-4+1-16,72-2-1,60+4-1-16,false)
+draw_rectangle(2-1,60-4-1-16,78+1,60+4+1-16,false)
+draw_set_color(c_maroon)
+draw_rectangle(2,60-4-16,78,60+4-16,false)
 draw_set_color(c_red)
-draw_rectangle(2,60-4-16,72-2,60+4-16,false)
+draw_rectangle(2+16,60-4-16,78-16,60+4-16,false)
+draw_set_color(c_orange)
+draw_rectangle(2+24,60-4-16,78-24,60+4-16,false)
 draw_set_color(c_yellow)
-draw_rectangle(2+26,60-4-16,72-2-26,60+4-16,false)
+draw_rectangle(2+32,60-4-16,78-32,60+4-16,false)
+
 draw_set_color(c_white)
-draw_rectangle(2+34-34+meter,60-4-16,72-2-34-34+meter,60+4-16,false)
+draw_rectangle(-1+meter,60-4-16,1+meter,60+4-16,false)
 }
 d3d_transform_set_identity()
+if anim=0 or anim=1
+{
+draw_set_font(global.timefont)
+draw_set_halign(fa_center)
+draw_text(160,0,oBrickBreakGame.time)
+}
 
-draw_playerhp()
+}
+}
+//draw_sprite(spr_hud,0,0,0)
+
+}
+else
+with oBrickBreakGame
+{draw_set_font(global.scorefont)
+draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_text(160,32,"DESTROY THE BRICKS!")
+
+if stageIntro!=0 stageIntro-=0.05 else stageIntro=0
+draw_set_color(c_black) draw_set_alpha(1)
+if stageIntro!=0
+draw_rectangle(-2,-2,320*stageIntro,999,false)
+draw_set_color(c_white) draw_set_alpha(1)
+//draw_playerhp()
 }
 }
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_chandelier",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"293970b7-e040-4ffb-9b73-37f64a576d1f","path":"sprites/spr_chandelier/spr_chandelier.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"293970b7-e040-4ffb-9b73-37f64a576d1f","path":"sprites/spr_chandelier/spr_chandelier.yy",},"LayerId":{"name":"c3ccd57b-430f-4fa1-8351-f9f771e8fd4e","path":"sprites/spr_chandelier/spr_chandelier.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_chandelier","path":"sprites/spr_chandelier/spr_chandelier.yy",},"resourceVersion":"1.0","name":"293970b7-e040-4ffb-9b73-37f64a576d1f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"111f7162-8735-4ced-99e2-c0ba097afa2c","path":"sprites/spr_chandelier/spr_chandelier.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"111f7162-8735-4ced-99e2-c0ba097afa2c","path":"sprites/spr_chandelier/spr_chandelier.yy",},"LayerId":{"name":"c3ccd57b-430f-4fa1-8351-f9f771e8fd4e","path":"sprites/spr_chandelier/spr_chandelier.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_chandelier","path":"sprites/spr_chandelier/spr_chandelier.yy",},"resourceVersion":"1.0","name":"111f7162-8735-4ced-99e2-c0ba097afa2c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"293970b7-e040-4ffb-9b73-37f64a576d1f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"111f7162-8735-4ced-99e2-c0ba097afa2c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_chandelier","path":"sprites/spr_chandelier/spr_chandelier.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_chandelier",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"addbc3e7-c438-4779-880e-476789f0334e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"293970b7-e040-4ffb-9b73-37f64a576d1f","path":"sprites/spr_chandelier/spr_chandelier.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7a9b0325-bb27-4c0b-b405-cc7e48a3ffb8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"111f7162-8735-4ced-99e2-c0ba097afa2c","path":"sprites/spr_chandelier/spr_chandelier.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"addbc3e7-c438-4779-880e-476789f0334e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"293970b7-e040-4ffb-9b73-37f64a576d1f","path":"sprites/spr_chandelier/spr_chandelier.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7a9b0325-bb27-4c0b-b405-cc7e48a3ffb8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"111f7162-8735-4ced-99e2-c0ba097afa2c","path":"sprites/spr_chandelier/spr_chandelier.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 64,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_chandelier","path":"sprites/spr_chandelier/spr_chandelier.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_chandelier",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c3ccd57b-430f-4fa1-8351-f9f771e8fd4e","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c3ccd57b-430f-4fa1-8351-f9f771e8fd4e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "a - Object Sprites",
     "path": "folders/9 - Objects And Items/a - Object Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_chandelier",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,15 +1,17 @@
 musicplaystart(-1)
-global.HiScoreStage=1
+global.HiScoreStage=5
+global.HiScoreLevel=5
+//with oEnemySpawner {timeline=tm_stage3 event_user(0)}
 
 oControl.stagePause=1
 
 with oEnemySpawner
 {
-	GoBack=1 
 	GoBackY=1 
 	MaxY=280
-	MaxX=7000-320//6648
 		}
+		
+with oEnemySpawner {timeline=tm_desert event_user(0)}
 
 with oControl
 {

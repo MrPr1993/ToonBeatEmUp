@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bahati_jump1",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ff2e844c-8d6f-4f95-b7ca-dc9487e51c76","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ff2e844c-8d6f-4f95-b7ca-dc9487e51c76","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"LayerId":{"name":"13c6e451-5d8e-480e-9219-2308b12e242b","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_jump1","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"resourceVersion":"1.0","name":"ff2e844c-8d6f-4f95-b7ca-dc9487e51c76","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a89b84cf-a8b7-41ca-874f-b324621f9cb3","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a89b84cf-a8b7-41ca-874f-b324621f9cb3","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"LayerId":{"name":"13c6e451-5d8e-480e-9219-2308b12e242b","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_jump1","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"resourceVersion":"1.0","name":"a89b84cf-a8b7-41ca-874f-b324621f9cb3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff2e844c-8d6f-4f95-b7ca-dc9487e51c76",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a89b84cf-a8b7-41ca-874f-b324621f9cb3",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bahati_jump1","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8a9072ff-fdec-40e1-8609-94e4c347fabe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff2e844c-8d6f-4f95-b7ca-dc9487e51c76","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"120f6f70-308b-4120-bb7d-9510b3b4b268","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a89b84cf-a8b7-41ca-874f-b324621f9cb3","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"8a9072ff-fdec-40e1-8609-94e4c347fabe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff2e844c-8d6f-4f95-b7ca-dc9487e51c76","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"120f6f70-308b-4120-bb7d-9510b3b4b268","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a89b84cf-a8b7-41ca-874f-b324621f9cb3","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 92,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bahati_jump1","path":"sprites/spr_bahati_jump1/spr_bahati_jump1.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"13c6e451-5d8e-480e-9219-2308b12e242b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"13c6e451-5d8e-480e-9219-2308b12e242b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p3 - Bahati Sprites",
     "path": "folders/6 - Player Data/p3 - Bahati Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bahati_jump1",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

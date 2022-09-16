@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_ninjabun_desk",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bd2afab7-b4cc-475e-b693-ffe72aee8ad7","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bd2afab7-b4cc-475e-b693-ffe72aee8ad7","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"LayerId":{"name":"cd146040-aa72-4c13-a5f2-ba9512ded8ed","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ninjabun_desk","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"resourceVersion":"1.0","name":"bd2afab7-b4cc-475e-b693-ffe72aee8ad7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ab6a2cec-3ed2-4bcf-b7fb-07b6c4459425","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ab6a2cec-3ed2-4bcf-b7fb-07b6c4459425","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"LayerId":{"name":"cd146040-aa72-4c13-a5f2-ba9512ded8ed","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ninjabun_desk","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"resourceVersion":"1.0","name":"ab6a2cec-3ed2-4bcf-b7fb-07b6c4459425","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bd2afab7-b4cc-475e-b693-ffe72aee8ad7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ab6a2cec-3ed2-4bcf-b7fb-07b6c4459425",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ninjabun_desk","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_ninjabun_desk",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"64e65db8-bdb2-4402-8f4f-f1f846d9861a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bd2afab7-b4cc-475e-b693-ffe72aee8ad7","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"1ed7ce57-4b36-4277-8e2c-ffd218325fe1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ab6a2cec-3ed2-4bcf-b7fb-07b6c4459425","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"64e65db8-bdb2-4402-8f4f-f1f846d9861a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bd2afab7-b4cc-475e-b693-ffe72aee8ad7","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1ed7ce57-4b36-4277-8e2c-ffd218325fe1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ab6a2cec-3ed2-4bcf-b7fb-07b6c4459425","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 87,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ninjabun_desk","path":"sprites/spr_ninjabun_desk/spr_ninjabun_desk.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_ninjabun_desk",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cd146040-aa72-4c13-a5f2-ba9512ded8ed","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cd146040-aa72-4c13-a5f2-ba9512ded8ed","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "NinjaBun",
     "path": "folders/7 - Enemies/NinjaBun.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_ninjabun_desk",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

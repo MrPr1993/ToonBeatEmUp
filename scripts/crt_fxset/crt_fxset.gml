@@ -31,19 +31,51 @@ if global.ColorMode=9 {shader_set(shd_grayscale)
 	
 	}
 else {screenX=0 screenY=0
-if global.ColorMode=0 if TVfx=0 shader_reset()
-if global.ColorMode=1 shader_set(shd_grayscale)
-if global.ColorMode=2 shader_set(shd_sepia)
-if global.ColorMode=3 shader_set(shd_sepia2)
-if global.ColorMode=4 shader_set(shd_handheld)
-
-if global.ColorMode=5 
+if global.ColorMode=0
+if TVfx=0 
 {
-shader_set(shd_customrgb) //customR
-  shader_set_uniform_f(shader_get_uniform(shd_customrgb, "customR"), customR); 
-    shader_set_uniform_f(shader_get_uniform(shd_customrgb, "customB"), customB);
-	  shader_set_uniform_f(shader_get_uniform(shd_customrgb, "customG"), customG);
+shader_reset()
 }
+
+if global.ColorMode=1
+{
+if TVfx=0 
+shader_set(shd_grayscale) else 
+shader_set(shd_grayscaleTV) //grayscale
+}
+if global.ColorMode=2
+{
+if TVfx=0 
+shader_set(shd_sepia) else
+shader_set(shd_sepiaTV)
+}
+if global.ColorMode=3
+{
+if TVfx=0 
+shader_set(shd_2strip) else /// 2-Strip
+shader_set(shd_2stripTV)
+}
+
+if global.ColorMode=4
+{
+if TVfx=0
+shader_set(shd_onecolor) else
+shader_set(shd_onecolorTV) /// One colo 
+}
+
+if global.ColorMode=5
+{
+shader_set(shd_televisionCustom) //customR
+  shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customR"), customR); 
+    shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customB"), customB);
+	  shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customG"), customG);
+}
+  shader_set_uniform_f(uni_crt_sizes, surface_width, surface_height,crt_surface_width, crt_surface_height);
+  shader_set_uniform_f(distort, var_distort);
+  shader_set_uniform_f(distortion, var_distortion_ammount);
+  shader_set_uniform_f(border, var_border);
+
+
 	}
 	
 draw_surface_part_ext(new_surf, 0, 0, view_wview[0], view_hview[0], screenX, screenY, crt_surface_scale, crt_surface_scale, c_white, 1);

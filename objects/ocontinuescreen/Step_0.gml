@@ -14,6 +14,8 @@ room_restart()
 }
 if blackFX!=0 blackFX-=1
 
+if optionSelect=0
+{
 if isGameOver=0 and continueScreen!=1 and trainRan=0 and stageClear=0
 {
 if keyboard_check_pressed(vk_escape)
@@ -49,5 +51,29 @@ with p4 {controller_setup()}
 if p4.key_start or p4.key_attack
 {continuePlayer=4 instance_destroy()}
 }
+
+}
+}
+else
+{
+controlNO=9 controller_setup()
+if key_attack
+{PlaySound(snd_picked) canControl=0 fadetoblack=1 alarm[8]=90
+global.P1Life=global.LifeStart
+global.P2Life=global.LifeStart
+global.P3Life=global.LifeStart
+global.P4Life=global.LifeStart
+global.P1Score=0
+global.P2Score=0
+global.P3Score=0
+global.P4Score=0
+global.Continues=global.ContinueStart
+
+	if optionPick=0 stageNext=room
+	if optionPick=1 {if global.IsMinigame=0 stageNext=rm_map else stageNext=rm_minigames}
+	}
+	if key_up_pressed {if optionPick=0 optionPick=1 else optionPick-=1 PlaySoundNoStack(snd_select)}
+	if -key_down_pressed {if optionPick=1 optionPick=0 else optionPick+=1 PlaySoundNoStack(snd_select)}
+
 
 }

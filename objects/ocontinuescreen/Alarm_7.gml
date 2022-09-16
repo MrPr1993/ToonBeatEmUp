@@ -2,6 +2,13 @@
 // You can write your code in this editor
 
 //alarm[7]
+
+if global.StageSelect=1
+{
+optionSelect=1
+}
+else
+{
 if finalStage=1
 {
 if global.StageSelect=1 {
@@ -20,4 +27,5 @@ else
 {
 fadetoblack=1
 alarm[8]=180
+}
 }

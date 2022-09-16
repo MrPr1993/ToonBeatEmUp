@@ -81,6 +81,8 @@ x=clamp(x,__view_get( e__VW.XView, 0 )+16,__view_get( e__VW.XView, 0 )+320-16)
 ////This will be used so depending on the animation set, the character will use those abilities stored in their scripts
 player_anim()
 
+
+
 ///Beta Hit Set Up
 
 if oControl.betatest=1
@@ -224,4 +226,5 @@ if keyboard_check_pressed(ord("Y"))///Change Character
 if character=3 character=0 else character+=1
 
 }
+
 }

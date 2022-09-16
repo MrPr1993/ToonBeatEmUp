@@ -5,5 +5,4 @@ if isPaused=0
 {
 stageScore=1
 
-
 }

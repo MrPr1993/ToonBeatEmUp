@@ -1,6 +1,6 @@
 enemy_data()
 
-name="GOBLIN"
+name="GOBERT"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=27
 

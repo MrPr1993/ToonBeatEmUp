@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_wolfita_elec",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bc420660-3c3d-42f2-b1c8-638ad28e36d3","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bc420660-3c3d-42f2-b1c8-638ad28e36d3","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"LayerId":{"name":"6c5c037c-5de6-49a2-a97d-3a6327fd39a6","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_wolfita_elec","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"resourceVersion":"1.0","name":"bc420660-3c3d-42f2-b1c8-638ad28e36d3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3eaa7c31-b2bb-45af-a510-96b22a574efa","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3eaa7c31-b2bb-45af-a510-96b22a574efa","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"LayerId":{"name":"6c5c037c-5de6-49a2-a97d-3a6327fd39a6","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_wolfita_elec","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"resourceVersion":"1.0","name":"3eaa7c31-b2bb-45af-a510-96b22a574efa","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bc420660-3c3d-42f2-b1c8-638ad28e36d3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3eaa7c31-b2bb-45af-a510-96b22a574efa",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_wolfita_elec","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3aaec8dc-2c3e-4343-a1d1-7b4e4ed0fac6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc420660-3c3d-42f2-b1c8-638ad28e36d3","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"fd8e384b-9bcb-4f12-b159-97604b6d5b01","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3eaa7c31-b2bb-45af-a510-96b22a574efa","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"3aaec8dc-2c3e-4343-a1d1-7b4e4ed0fac6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc420660-3c3d-42f2-b1c8-638ad28e36d3","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fd8e384b-9bcb-4f12-b159-97604b6d5b01","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3eaa7c31-b2bb-45af-a510-96b22a574efa","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 120,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_wolfita_elec","path":"sprites/spr_wolfita_elec/spr_wolfita_elec.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6c5c037c-5de6-49a2-a97d-3a6327fd39a6","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6c5c037c-5de6-49a2-a97d-3a6327fd39a6","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "1Lady Wolf",
     "path": "folders/8 - Bosses/1Lady Wolf.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_wolfita_elec",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -12,6 +12,11 @@ vspeed=lerp(vspeed,0,lerpslowSpd)
 zSpeed=lerp(zSpeed,0,lerpslowSpd)
 }
 
+if LerpScale=1
+{
+image_xscale=lerp(image_xscale,1,LerpScaleSpd)
+image_yscale=lerp(image_yscale,1,LerpScaleSpd)
+}
 
 if scaleAddMode=1
 {

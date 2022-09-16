@@ -35,6 +35,8 @@ playerGet=0
 	superarmortime=0
 	superarmorFX=0
 	
+	waterbubble=0
+	
 	pow=0
 	powcheck=0
 	powlock=0
@@ -167,6 +169,7 @@ playerGet=0
 	Whitsound=snd_hit
 	///Sounds and effects
 	HitSound=snd_hit
+	HitQuake=0
 	flashX=0
 	flashY=0
 	flashZ=0

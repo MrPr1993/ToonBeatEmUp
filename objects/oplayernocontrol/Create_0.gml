@@ -18,6 +18,7 @@ enemyID=0
 
 GoldGet=0
 
+altresult2Text=-1
 altresult2=-1
 
 playerGet=0

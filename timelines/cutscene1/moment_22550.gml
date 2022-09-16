@@ -31,4 +31,4 @@ with lg {alarm[0]=-1 animEnd=0 sprite_index=spr_cutscene1f isDepth=0 depth=-10
 	}
 
 cutscenename="VIVA"
-cutsceneline="THIS IS YOUR IDEA?! I CAN'T FEEL MY\nLEGS!"
+cutsceneline="THIS IS YOUR IDEA?! I CAN'T FEEL MY LEGS!"

@@ -31,13 +31,36 @@ bgp1=instance_create_depth(320, 240,-1,oFlashFX);
 with bgp1 {alarm[0]=-1 animEnd=0 sprite_index=spr_opening3 image_xscale=-1 image_yscale=-1 isDepth=0}
 
 divas=instance_create_depth(160, 120+32,-1,oFlashFX);
-with divas {alarm[0]=-1 animEnd=0 sprite_index=spr_opening1 vspeed=-2 hspeed=0}
+with divas {alarm[0]=-1 animEnd=0 sprite_index=spr_opening1 vspeed=-2 hspeed=0
+LerpScale=1 image_xscale=1.25 image_yscale=1.25
+	}
+	
+rips=instance_create_depth(160,120,-1,oFlashFX) with rips
+{alarm[0]=60 image_xscale=0.5 image_yscale=0.5 image_speed=0 sprite_index=spr_bigstarfx
+scaleAddMode=1 scaleAddX=0.1 scaleAddY=0.1 rotAddMode=1 rotAdd=0.45 hspeed=-4 vspeed=-2
+alphaAddMode=1 alphaAdd=-0.02 isDepth=0 depth=-8888}
+rips=instance_create_depth(160,120,-1,oFlashFX) with rips
+{alarm[0]=60 image_xscale=0.4 image_yscale=0.4 image_speed=0 sprite_index=spr_bigstarfx
+scaleAddMode=1 scaleAddX=0.1 scaleAddY=0.1 rotAddMode=1 rotAdd=-0.45 hspeed=4 vspeed=-2 image_blend=c_yellow
+alphaAddMode=1 alphaAdd=-0.02 isDepth=0 depth=-8888}
+rips=instance_create_depth(160,120,-1,oFlashFX) with rips
+{alarm[0]=60 image_xscale=0.4 image_yscale=0.4 image_speed=0 sprite_index=spr_bigstarfx
+scaleAddMode=1 scaleAddX=0.1 scaleAddY=0.1 rotAddMode=1 rotAdd=0.45 hspeed=4 vspeed=-4 image_blend=c_yellow
+alphaAddMode=1 alphaAdd=-0.02 isDepth=0 depth=-8888}
+rips=instance_create_depth(160,120,-1,oFlashFX) with rips
+{alarm[0]=60 image_xscale=0.6 image_yscale=0.6 image_speed=0 sprite_index=spr_bigstarfx
+scaleAddMode=1 scaleAddX=0.1 scaleAddY=0.1 rotAddMode=1 rotAdd=-0.45 hspeed=4 vspeed=4 image_blend=c_yellow
+alphaAddMode=1 alphaAdd=-0.02 isDepth=0 depth=-8888}
 
 bad1=instance_create_depth(0, 240,-1,oFlashFX);
-with bad1 {alarm[0]=-1 animEnd=0 image_speed=0 sprite_index=spr_opening2 image_index=0 hspeed=-2 vspeed=1}
+with bad1 {alarm[0]=-1 animEnd=0 image_speed=0 sprite_index=spr_opening2 image_index=0 hspeed=-2 vspeed=1
+	LerpScale=1 image_xscale=1.5 image_yscale=1.5
+	}
 
-bad2=instance_create_depth(161, 240,-1,oFlashFX);
-with bad2 {alarm[0]=-1 animEnd=0 image_speed=0 sprite_index=spr_opening2 image_index=1 hspeed=2 vspeed=1}
+bad2=instance_create_depth(321, 240,-1,oFlashFX);
+with bad2 {alarm[0]=-1 animEnd=0 image_speed=0 sprite_index=spr_opening2b image_index=1 hspeed=2 vspeed=1
+	LerpScale=1 image_xscale=1.5 image_yscale=1.5	
+	}
 
 with oFlashFX
 {lerpslow=1 lerpslowSpd=0.05}

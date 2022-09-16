@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bahati_gunstand",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fc3818b8-0425-45d4-8b07-ee5fd1f8b253","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fc3818b8-0425-45d4-8b07-ee5fd1f8b253","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"LayerId":{"name":"3d72ef5d-9f25-40c0-81e5-8c8bc29be394","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_gunstand","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","name":"fc3818b8-0425-45d4-8b07-ee5fd1f8b253","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e332ae2e-54c7-4ad8-978a-c017540eeb7a","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e332ae2e-54c7-4ad8-978a-c017540eeb7a","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"LayerId":{"name":"3d72ef5d-9f25-40c0-81e5-8c8bc29be394","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_gunstand","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","name":"e332ae2e-54c7-4ad8-978a-c017540eeb7a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e98af4e5-eb12-46f6-8e4f-9b7561253cc2","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e98af4e5-eb12-46f6-8e4f-9b7561253cc2","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"LayerId":{"name":"3d72ef5d-9f25-40c0-81e5-8c8bc29be394","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_gunstand","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","name":"e98af4e5-eb12-46f6-8e4f-9b7561253cc2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"994f274a-f69c-44e2-841c-7e7c185ef0f8","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"994f274a-f69c-44e2-841c-7e7c185ef0f8","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"LayerId":{"name":"3d72ef5d-9f25-40c0-81e5-8c8bc29be394","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_gunstand","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","name":"994f274a-f69c-44e2-841c-7e7c185ef0f8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fc3818b8-0425-45d4-8b07-ee5fd1f8b253",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e332ae2e-54c7-4ad8-978a-c017540eeb7a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e98af4e5-eb12-46f6-8e4f-9b7561253cc2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"994f274a-f69c-44e2-841c-7e7c185ef0f8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bahati_gunstand","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,15 +43,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6661f2cf-dc86-4a66-87b1-736f74885e7c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc3818b8-0425-45d4-8b07-ee5fd1f8b253","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"074fe46d-5c59-4aeb-a8e5-7abf3b4bd7ff","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e332ae2e-54c7-4ad8-978a-c017540eeb7a","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7807fc8a-3e39-4f12-a6f6-c437c9ad2aa7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e98af4e5-eb12-46f6-8e4f-9b7561253cc2","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5e402d88-baf7-40ef-902b-2b15926373be","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"994f274a-f69c-44e2-841c-7e7c185ef0f8","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"6661f2cf-dc86-4a66-87b1-736f74885e7c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fc3818b8-0425-45d4-8b07-ee5fd1f8b253","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"074fe46d-5c59-4aeb-a8e5-7abf3b4bd7ff","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e332ae2e-54c7-4ad8-978a-c017540eeb7a","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7807fc8a-3e39-4f12-a6f6-c437c9ad2aa7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e98af4e5-eb12-46f6-8e4f-9b7561253cc2","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5e402d88-baf7-40ef-902b-2b15926373be","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"994f274a-f69c-44e2-841c-7e7c185ef0f8","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 92,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bahati_gunstand","path":"sprites/spr_bahati_gunstand/spr_bahati_gunstand.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3d72ef5d-9f25-40c0-81e5-8c8bc29be394","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3d72ef5d-9f25-40c0-81e5-8c8bc29be394","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p3 - Bahati Sprites",
     "path": "folders/6 - Player Data/p3 - Bahati Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bahati_gunstand",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

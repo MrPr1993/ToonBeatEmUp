@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_ghost_charge",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cee82950-62b5-49ee-92ee-030fe884653f","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cee82950-62b5-49ee-92ee-030fe884653f","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"LayerId":{"name":"74164d88-ee07-4b6a-87fd-f33ca4080dd6","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ghost_charge","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"resourceVersion":"1.0","name":"cee82950-62b5-49ee-92ee-030fe884653f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9667af9d-b13b-4d0d-985b-5e73dc8628e7","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9667af9d-b13b-4d0d-985b-5e73dc8628e7","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"LayerId":{"name":"74164d88-ee07-4b6a-87fd-f33ca4080dd6","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ghost_charge","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"resourceVersion":"1.0","name":"9667af9d-b13b-4d0d-985b-5e73dc8628e7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cee82950-62b5-49ee-92ee-030fe884653f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9667af9d-b13b-4d0d-985b-5e73dc8628e7",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ghost_charge","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_ghost_charge",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b9133d8e-81d2-46a8-87f9-014e0fc1a9b6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cee82950-62b5-49ee-92ee-030fe884653f","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"ff4fdcdb-de68-4265-8dd6-e044ec0e0093","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9667af9d-b13b-4d0d-985b-5e73dc8628e7","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"b9133d8e-81d2-46a8-87f9-014e0fc1a9b6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cee82950-62b5-49ee-92ee-030fe884653f","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ff4fdcdb-de68-4265-8dd6-e044ec0e0093","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9667af9d-b13b-4d0d-985b-5e73dc8628e7","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 92,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ghost_charge","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_ghost_charge",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"74164d88-ee07-4b6a-87fd-f33ca4080dd6","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"74164d88-ee07-4b6a-87fd-f33ca4080dd6","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "3Ghost Boss",
     "path": "folders/8 - Bosses/3Ghost Boss.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_ghost_charge",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_alienrobot_frozen",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4039a540-7b2e-4da4-99c2-f86faaee416c","path":"sprites/spr_alienrobot_frozen/spr_alienrobot_frozen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4039a540-7b2e-4da4-99c2-f86faaee416c","path":"sprites/spr_alienrobot_frozen/spr_alienrobot_frozen.yy",},"LayerId":{"name":"c8c1918b-d344-4eab-b2b3-ccdb78b0c2ac","path":"sprites/spr_alienrobot_frozen/spr_alienrobot_frozen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_alienrobot_frozen","path":"sprites/spr_alienrobot_frozen/spr_alienrobot_frozen.yy",},"resourceVersion":"1.0","name":"4039a540-7b2e-4da4-99c2-f86faaee416c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4039a540-7b2e-4da4-99c2-f86faaee416c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_alienrobot_frozen","path":"sprites/spr_alienrobot_frozen/spr_alienrobot_frozen.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_alienrobot_frozen",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a977739c-0c61-4b85-aa20-eda2b16f5301","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4039a540-7b2e-4da4-99c2-f86faaee416c","path":"sprites/spr_alienrobot_frozen/spr_alienrobot_frozen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"a977739c-0c61-4b85-aa20-eda2b16f5301","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4039a540-7b2e-4da4-99c2-f86faaee416c","path":"sprites/spr_alienrobot_frozen/spr_alienrobot_frozen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 71,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_alienrobot_frozen","path":"sprites/spr_alienrobot_frozen/spr_alienrobot_frozen.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_alienrobot_frozen",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c8c1918b-d344-4eab-b2b3-ccdb78b0c2ac","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c8c1918b-d344-4eab-b2b3-ccdb78b0c2ac","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mars Robot",
     "path": "folders/7 - Enemies/Mars Robot.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_alienrobot_frozen",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

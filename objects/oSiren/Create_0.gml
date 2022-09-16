@@ -12,7 +12,7 @@ DamageVoice3=snd_femenemy6
 
 DeathCry=snd_femenemy1
 
-enemyscript=animsetup_zombie
+enemyscript=animsetup_enemy
 
 	walkSpeed=0.5
 	walkSpeedY=0.5

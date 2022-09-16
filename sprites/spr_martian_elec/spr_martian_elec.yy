@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_martian_elec",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f6abd459-3c65-44a8-967f-cf20ebfcf89b","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6abd459-3c65-44a8-967f-cf20ebfcf89b","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"LayerId":{"name":"f8d1e85a-5786-493b-8f33-92a6cf9d2f56","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_martian_elec","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"resourceVersion":"1.0","name":"f6abd459-3c65-44a8-967f-cf20ebfcf89b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"090fb3eb-5057-4257-9f44-c6db26dfe7c8","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"090fb3eb-5057-4257-9f44-c6db26dfe7c8","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"LayerId":{"name":"f8d1e85a-5786-493b-8f33-92a6cf9d2f56","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_martian_elec","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"resourceVersion":"1.0","name":"090fb3eb-5057-4257-9f44-c6db26dfe7c8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6abd459-3c65-44a8-967f-cf20ebfcf89b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"090fb3eb-5057-4257-9f44-c6db26dfe7c8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_martian_elec","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_martian_elec",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"12174e39-4daa-4c78-93dc-46b7b9c14e67","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6abd459-3c65-44a8-967f-cf20ebfcf89b","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b7534162-98fe-4a59-b369-c9e35bfe63a5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"090fb3eb-5057-4257-9f44-c6db26dfe7c8","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"12174e39-4daa-4c78-93dc-46b7b9c14e67","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6abd459-3c65-44a8-967f-cf20ebfcf89b","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b7534162-98fe-4a59-b369-c9e35bfe63a5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"090fb3eb-5057-4257-9f44-c6db26dfe7c8","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 100,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_martian_elec","path":"sprites/spr_martian_elec/spr_martian_elec.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_martian_elec",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f8d1e85a-5786-493b-8f33-92a6cf9d2f56","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f8d1e85a-5786-493b-8f33-92a6cf9d2f56","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Martian",
     "path": "folders/7 - Enemies/Martian.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_martian_elec",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

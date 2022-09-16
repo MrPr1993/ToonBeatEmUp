@@ -5,6 +5,6 @@ with diva3 {sprite_index=spr_bahati_cutscene hspeed=0 image_speed=0}
 with diva4 {sprite_index=spr_sofia_point hspeed=0 image_speed=0}
 
 cutscenename="LADY WOLF"
-cutsceneline="...ALRIGHT. FINE. WE TOOK THE GOODS TO THE\nSHIP WAITING BY THE BRIDGE, HAPPY?"
+cutsceneline="...ALRIGHT. FINE. WE TOOK THE GOODS TO THE SHIP WAITING BY THE BRIDGE, HAPPY?"
 
 

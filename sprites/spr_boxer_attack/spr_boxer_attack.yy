@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_boxer_attack",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"aa23352a-29f9-49ed-8750-3a536e423220","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aa23352a-29f9-49ed-8750-3a536e423220","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"LayerId":{"name":"a30ea95b-5ad2-4bd9-81cb-ef55054248a8","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boxer_attack","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","name":"aa23352a-29f9-49ed-8750-3a536e423220","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fa9328ee-edc2-4f35-a5fa-6e2f22c91ee6","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fa9328ee-edc2-4f35-a5fa-6e2f22c91ee6","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"LayerId":{"name":"a30ea95b-5ad2-4bd9-81cb-ef55054248a8","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boxer_attack","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","name":"fa9328ee-edc2-4f35-a5fa-6e2f22c91ee6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"242d298d-8802-4e1a-a68a-d3308646cf90","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"242d298d-8802-4e1a-a68a-d3308646cf90","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"LayerId":{"name":"a30ea95b-5ad2-4bd9-81cb-ef55054248a8","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_boxer_attack","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","name":"242d298d-8802-4e1a-a68a-d3308646cf90","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aa23352a-29f9-49ed-8750-3a536e423220",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fa9328ee-edc2-4f35-a5fa-6e2f22c91ee6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"242d298d-8802-4e1a-a68a-d3308646cf90",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_boxer_attack","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"797b4edb-eacc-4ed1-bbc6-dd568e671509","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa23352a-29f9-49ed-8750-3a536e423220","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f670691b-b575-4c48-967f-4aed160c9d31","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa9328ee-edc2-4f35-a5fa-6e2f22c91ee6","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"54b2aaa3-a8af-4998-9a14-19eb203a7a3a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"242d298d-8802-4e1a-a68a-d3308646cf90","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"797b4edb-eacc-4ed1-bbc6-dd568e671509","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa23352a-29f9-49ed-8750-3a536e423220","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f670691b-b575-4c48-967f-4aed160c9d31","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa9328ee-edc2-4f35-a5fa-6e2f22c91ee6","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"54b2aaa3-a8af-4998-9a14-19eb203a7a3a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"242d298d-8802-4e1a-a68a-d3308646cf90","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 120,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_boxer_attack","path":"sprites/spr_boxer_attack/spr_boxer_attack.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a30ea95b-5ad2-4bd9-81cb-ef55054248a8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a30ea95b-5ad2-4bd9-81cb-ef55054248a8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "BoxerGirl",
     "path": "folders/7 - Enemies/BoxerGirl.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_boxer_attack",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

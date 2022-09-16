@@ -6,10 +6,25 @@ controlNO=0
 controller_setup()
 PlayerLife1=-1
 PlayerLife1=0
+PlayerLife2=-1
+PlayerLife2=0
+PlayerLife3=-1
+PlayerLife3=0
+PlayerLife4=-1
+PlayerLife4=0
 PlayerScore=0
+PlayerLife=-1
+
+isInctive=0
+
+
+StarY=0
+menuSelect=-1
+LegacyMode=0
 
 GoldGet=0
 
+altresult2Text=-1
 altresult2=-1
 playerGet=0
 

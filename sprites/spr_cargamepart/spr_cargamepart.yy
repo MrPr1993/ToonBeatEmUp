@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_cargamepart",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3193ca2f-37b4-4e1e-b8d3-57e47df511ee","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3193ca2f-37b4-4e1e-b8d3-57e47df511ee","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":{"name":"182a41c7-0e36-48a4-a2d8-8bc895dd50cb","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cargamepart","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"3193ca2f-37b4-4e1e-b8d3-57e47df511ee","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d3a1d11a-e201-4a0a-80a8-168eb52dd4c0","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d3a1d11a-e201-4a0a-80a8-168eb52dd4c0","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":{"name":"182a41c7-0e36-48a4-a2d8-8bc895dd50cb","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cargamepart","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"d3a1d11a-e201-4a0a-80a8-168eb52dd4c0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ec81709b-c372-48c6-8462-f549def4deee","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ec81709b-c372-48c6-8462-f549def4deee","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":{"name":"182a41c7-0e36-48a4-a2d8-8bc895dd50cb","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cargamepart","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"ec81709b-c372-48c6-8462-f549def4deee","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2a47e33f-de2e-45ff-a3e7-060d4b60f83e","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2a47e33f-de2e-45ff-a3e7-060d4b60f83e","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":{"name":"182a41c7-0e36-48a4-a2d8-8bc895dd50cb","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cargamepart","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"2a47e33f-de2e-45ff-a3e7-060d4b60f83e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"93848198-7fb1-4fc3-9a74-fca111ecdd6e","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"93848198-7fb1-4fc3-9a74-fca111ecdd6e","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":{"name":"182a41c7-0e36-48a4-a2d8-8bc895dd50cb","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cargamepart","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"93848198-7fb1-4fc3-9a74-fca111ecdd6e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b86a0cd1-5f44-448e-82f0-8704efc5d4b3","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b86a0cd1-5f44-448e-82f0-8704efc5d4b3","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"LayerId":{"name":"182a41c7-0e36-48a4-a2d8-8bc895dd50cb","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cargamepart","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","name":"b86a0cd1-5f44-448e-82f0-8704efc5d4b3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3193ca2f-37b4-4e1e-b8d3-57e47df511ee",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d3a1d11a-e201-4a0a-80a8-168eb52dd4c0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ec81709b-c372-48c6-8462-f549def4deee",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2a47e33f-de2e-45ff-a3e7-060d4b60f83e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"93848198-7fb1-4fc3-9a74-fca111ecdd6e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b86a0cd1-5f44-448e-82f0-8704efc5d4b3",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_cargamepart","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_cargamepart",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9ecb3c57-d14c-418c-97f6-9203698cb080","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3193ca2f-37b4-4e1e-b8d3-57e47df511ee","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"175670c4-07df-49e5-989e-623a87974998","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3a1d11a-e201-4a0a-80a8-168eb52dd4c0","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c96092af-68b9-497e-b4d4-48b160c4f25d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec81709b-c372-48c6-8462-f549def4deee","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"613bc9a5-b498-45c3-9311-b507d50e652e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2a47e33f-de2e-45ff-a3e7-060d4b60f83e","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c9908543-5b24-4fc7-9f06-95268ea6f053","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"93848198-7fb1-4fc3-9a74-fca111ecdd6e","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0a88de26-531a-486e-a925-7cfc264f7f3c","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b86a0cd1-5f44-448e-82f0-8704efc5d4b3","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"9ecb3c57-d14c-418c-97f6-9203698cb080","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3193ca2f-37b4-4e1e-b8d3-57e47df511ee","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"175670c4-07df-49e5-989e-623a87974998","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3a1d11a-e201-4a0a-80a8-168eb52dd4c0","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c96092af-68b9-497e-b4d4-48b160c4f25d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ec81709b-c372-48c6-8462-f549def4deee","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"613bc9a5-b498-45c3-9311-b507d50e652e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2a47e33f-de2e-45ff-a3e7-060d4b60f83e","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c9908543-5b24-4fc7-9f06-95268ea6f053","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"93848198-7fb1-4fc3-9a74-fca111ecdd6e","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0a88de26-531a-486e-a925-7cfc264f7f3c","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b86a0cd1-5f44-448e-82f0-8704efc5d4b3","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 12,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_cargamepart","path":"sprites/spr_cargamepart/spr_cargamepart.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_cargamepart",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"182a41c7-0e36-48a4-a2d8-8bc895dd50cb","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"182a41c7-0e36-48a4-a2d8-8bc895dd50cb","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Car Breaking Game",
     "path": "folders/1d - Minigames/Car Breaking Game.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_cargamepart",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -17,6 +17,7 @@ p3=-1
 p4=-1
 
 menuX=0
+MenuText=""
 
 alarm[10]=640+160
 
@@ -77,6 +78,13 @@ stagename=""
 
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
+	
+global.IsMovie=0
+global.MovieSel=0
+	
+global.IsMinigame=0
+global.MinigameSel=0
+	
 global.StageGoing=rm_opening
 
 
@@ -112,6 +120,59 @@ global.UnlockFeats=1
 
 global.UnlockStage[20]=0
 global.LevelHiScore[20]=0
+
+global.UnlockStageA[1]=1
+global.UnlockStageA[2]=1
+global.UnlockStageA[3]=0
+global.UnlockStageA[4]=0
+global.UnlockStageA[5]=0
+global.UnlockStageA[6]=0
+global.UnlockStageA[7]=0
+global.UnlockStageA[8]=0
+global.UnlockStageA[9]=0
+global.UnlockStageA[10]=0
+global.UnlockStageA[11]=0
+global.UnlockStageA[12]=0
+global.UnlockStageA[13]=0
+global.UnlockStageA[14]=0
+global.UnlockStageA[15]=0
+global.UnlockStageA[16]=0
+
+global.UnlockStageB[1]=1
+global.UnlockStageB[2]=1
+global.UnlockStageB[3]=0
+global.UnlockStageB[4]=0
+global.UnlockStageB[5]=0
+global.UnlockStageB[6]=0
+global.UnlockStageB[7]=0
+global.UnlockStageB[8]=0
+global.UnlockStageB[9]=0
+global.UnlockStageB[10]=0
+global.UnlockStageB[11]=0
+global.UnlockStageB[12]=0
+global.UnlockStageB[13]=0
+global.UnlockStageB[14]=0
+global.UnlockStageB[15]=0
+global.UnlockStageB[16]=0
+
+global.UnlockStageC[1]=1
+global.UnlockStageC[2]=1
+global.UnlockStageC[3]=0
+global.UnlockStageC[4]=0
+global.UnlockStageC[5]=0
+global.UnlockStageC[6]=0
+global.UnlockStageC[7]=0
+global.UnlockStageC[8]=0
+global.UnlockStageC[9]=0
+global.UnlockStageC[10]=0
+global.UnlockStageC[11]=0
+global.UnlockStageC[12]=0
+global.UnlockStageC[13]=0
+global.UnlockStageC[14]=0
+global.UnlockStageC[15]=0
+global.UnlockStageC[16]=0
+
+
 stagedata_load()
 
 global.UnlockEnemy[1]=c_white
@@ -389,7 +450,7 @@ enemyShowTime=0
 if !variable_global_exists("timefont")
 {
 global.timefont=font_add_sprite_ext(spr_timefont, "0123456789", false, 0);
-global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,", false, 0);
+global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,△◯╳◻", false, 0);
 }
 
 if !variable_global_exists("ScreenSize")
@@ -450,7 +511,7 @@ assets_load()
 room_goto(rm_titlescreen)
 }
 
-if room=rm_menu
+if room=rm_menu or room=rm_minigames or room=rm_cutscenes
 {
 MenuText="FIGHT BADDIES"
 MenuScaleX=0
@@ -697,6 +758,17 @@ playingsongname=""
 playingloop=0
 playSFX=snd_viva4
 
+songtext=1
+
+dancer1spr=spr_viva_stand
+dancer1img=0
+dancer2spr=spr_hina_stand
+dancer2img=0
+dancer3spr=spr_bahati_stand
+dancer3img=0
+dancer4spr=spr_sofia_stand
+dancer4img=0
+
 songtime=0
 songmin=0
 songsec=0
@@ -757,13 +829,15 @@ pictureMax=1
 currentimagespr=spr_galleryimg1
 }
 
+
+
 enemySpawn=global.enemytest
 spawnNo=global.enemytestB
 
 event_user(0)
 
 cutscenename="VIVA"
-cutsceneline="OKAY. WHERE HAS THAT TRUCK GONE TO?\nSPEAK UP DOG!"
+cutsceneline="OKAY. WHERE HAS THAT TRUCK GONE TO? SPEAK UP DOG!"
 
 tutorialTextY=48
 tutorialTextTime=0

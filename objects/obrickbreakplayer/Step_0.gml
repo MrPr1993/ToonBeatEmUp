@@ -16,17 +16,20 @@ else shake=0
 ///
 if anim=0
 {
+if oBrickBreakGame.ready=1
 meter+=meterSpd
 if meterSpd=4
-{if meter>72 meterSpd=-4}
-else {if meter<0 meterSpd=4}
+{if meter>76 meterSpd=-4}
+else {if meter<4 meterSpd=4}
 
 frame_set(0,0,0.1)
 frame_set(1,1,0.1) if animFrame>2-0.1 animFrame=0
 
 if key_attack
 {animFrame=0 anim=10
-	if meter=clamp(meter,36-4,36+4) win=1 else win=0
+	if meter=clamp(meter,2+16,78-16) win=1 else win=0
+	
+
 	
 	PlaySound(voice1)
 	}
@@ -39,13 +42,41 @@ frame_set(0,2,0.25)
 frame_set(1,3,0.05)
 frame_set(2,4,0.25) if animFrame=3
 {if win=0
-	{PlaySound(snd_steal) 	PlaySound(voice2)
+	{PlaySound(snd_steal) 	PlaySound(voice2) breakresult=0
 		
-		shaketime=10 oBrickBreakGame.resulttext1="NO BONUS" oBrickBreakGame.altresult1=0}
+		shaketime=10 altresult2Text="NO BONUS" altresult2=0}
 	else
 	{ //snd_viva13
-		PlaySound(snd_explosion)
-		brickbreak=1 oControl.quakeFXTime=10 oBrickBreakGame.resulttext1="BONUS"}
+ oBrickBreakGame.resulttext1="BONUS"
+
+if meter=clamp(meter,2+32,78-32) {PlaySound(snd_explosion) brickbreak=3  oControl.quakeFXTime=10
+			altresult2Text="PERFECT" altresult2=10000
+			dust_make(x+40,240+8,0,0,0,0)
+			dust_make(x+40,240+8-16,0,0,0,0)
+			dust_make(x+40,240+8-32,0,0,0,0)
+			dust_make(x+40,240+8,-48,0,0,0)
+			dust_make(x+40,240+8,-64,0,0,0)
+			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
+			}
+	else
+if meter=clamp(meter,2+24,78-24) {PlaySound(snd_hit) brickbreak=2 	oControl.quakeFXTime=5
+			altresult2Text="GOOD" altresult2=5000
+			dust_make(x+40,240+8-32,0,0,0,0)
+			dust_make(x+40,240+8,-48,0,0,0)
+			dust_make(x+40,240+8,-64,0,0,0)
+			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
+			}	
+else
+{PlaySound(snd_steal) brickbreak=1 		 oControl.quakeFXTime=2
+			dust_make(x+40,240+8,-64,0,0,0)
+			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
+			altresult2Text="AVERAGE" altresult2=2500
+			}
+			
+	
+	
+		
+		}
 }
 if win=0
 frame_set(3,6,0.01) else frame_set(3,5,0.01) 

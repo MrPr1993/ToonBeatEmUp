@@ -174,7 +174,10 @@ if animFrame>15.5 animFrame=0
 
 	image_index+=0.2 if image_index>6-0.2  image_index=0 atk=0}
 	else
-	{sprite_index=spr_bahati_run
+	{if sprite_index!=spr_bahati_run
+		{sprite_index=spr_bahati_run
+			dust_make(x,y,z,-2*image_xscale,0,0)
+		}
 if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,13,-38,84*image_xscale,weaponcolor)
 if image_index=clamp(image_index,1,1.9)

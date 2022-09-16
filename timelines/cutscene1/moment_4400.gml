@@ -7,6 +7,6 @@ with anB {hspeed=-1.2 alarm[2]=30}
 with anC {hspeed=-1.5 alarm[2]=30}
 
 cutscenename="SOFIA"
-cutsceneline="I WAS GOING TO SUGGEST WE'D USE A DOG\nWHISTLE."
+cutsceneline="I WAS GOING TO SUGGEST WE'D USE A DOG WHISTLE."
 
 

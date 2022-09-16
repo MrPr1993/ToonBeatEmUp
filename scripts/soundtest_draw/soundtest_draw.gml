@@ -5,8 +5,13 @@ if room=rm_soundtest
 {
 controller_setup()
 
+draw_sprite(bg_soundtest,0,0,0)
+draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
+
 if keyboard_check_pressed(vk_escape) room=rm_menu
 
+if songtext=1
+{
 if key_up_pressed {if soundSelect=1 soundSelect=8 else soundSelect-=1}
 if -key_down_pressed {if soundSelect=8 soundSelect=1 else soundSelect+=1}
 
@@ -26,7 +31,7 @@ playingloop=0
 	}	
 	songplaying=playingSound
 	}
-	if key_super {////Loop
+	if key_shield_pressed {////Loop
 playingsongname=songname
 playingloop=1
 	{audio_stop_all()
@@ -148,12 +153,23 @@ if key_attack {PlaySound(playSFX)}
 draw_set_halign(fa_left)
 draw_text(160+4,64+16,soundname)
 
+}
+
+if key_super
+if songtext=1 songtext=0 else songtext=1
 
 ///Draw the divas
-draw_sprite(spr_viva_stand,0,160-96,200)
-draw_sprite(spr_hina_stand,0,160-32,200)
-draw_sprite(spr_bahati_stand,0,160+32,200)
-draw_sprite(spr_sofia_stand,0,160+96,200)
+draw_sprite(spr_shadow,0,160-96,200)
+draw_sprite(dancer1spr,dancer1img,160-96,200)
+
+draw_sprite(spr_shadow,0,160-32,200)
+draw_sprite(dancer2spr,dancer2img,160-32,200)
+
+draw_sprite(spr_shadow,0,160+32,200)
+draw_sprite(dancer3spr,dancer3img,160+32,200)
+
+draw_sprite(spr_shadow,0,160+96,200)
+draw_sprite(dancer4spr,dancer4img,160+96,200)
 
 draw_command(6)
 

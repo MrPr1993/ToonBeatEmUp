@@ -152,25 +152,25 @@ if shopSet=0 /////Shop Items
 {
 ///Set 1
 if 	global.UnlockCharacterData=0 shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,1,2+2,16) shader_reset() if 	global.UnlockAltPal=0 shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,2,2+4+32,16) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,3,2+6+64,16) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,4,2+8+64+32,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,1*global.UnlockStageA[1],2+2,16) shader_reset() if 	global.UnlockAltPal=0 shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,2*global.UnlockStageA[2],2+4+32,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,3*global.UnlockStageA[3],2+6+64,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,4*global.UnlockStageA[4],2+8+64+32,16) shader_reset() shader_set(shd_grayscale)
 ///Set 2
-draw_sprite(spr_shopitem,5,2+2,16+2+32) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,6,2+4+32,16+2+32) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,7,2+6+64,16+2+32) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,8,2+8+64+32,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,5*global.UnlockStageA[5],2+2,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,6*global.UnlockStageA[6],2+4+32,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,7*global.UnlockStageA[7],2+6+64,16+2+32) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,8*global.UnlockStageA[8],2+8+64+32,16+2+32) shader_reset() shader_set(shd_grayscale)
 ///Set 3
-draw_sprite(spr_shopitem,9,2+2,16+4+64) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,10,2+4+32,16+4+64) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,11,2+6+64,16+4+64) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,12,2+8+64+32,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,9*global.UnlockStageA[9],2+2,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,10*global.UnlockStageA[10],2+4+32,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,11*global.UnlockStageA[11],2+6+64,16+4+64) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,12*global.UnlockStageA[12],2+8+64+32,16+4+64) shader_reset() shader_set(shd_grayscale)
 ///Set 4
-draw_sprite(spr_shopitem,13,2+2,16+6+96) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,14,2+4+32,16+6+96) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,15,2+6+64,16+6+96) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,16,2+8+64+32,16+6+96) shader_reset()
+draw_sprite(spr_shopitem,13*global.UnlockStageA[13],2+2,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,14*global.UnlockStageA[14],2+4+32,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,15*global.UnlockStageA[15],2+6+64,16+6+96) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,16*global.UnlockStageA[16],2+8+64+32,16+6+96) shader_reset()
 }
 
 draw_sprite(spr_shoppad,2,140,15)

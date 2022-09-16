@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_martian_move",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f5f0c883-b3ac-443d-b228-146a5afe4005","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f5f0c883-b3ac-443d-b228-146a5afe4005","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":{"name":"dea9108f-b833-4ad0-a666-35be1edbc716","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"f5f0c883-b3ac-443d-b228-146a5afe4005","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f0d4767c-4f2b-4ba7-becc-2322d1757077","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f0d4767c-4f2b-4ba7-becc-2322d1757077","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":{"name":"dea9108f-b833-4ad0-a666-35be1edbc716","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"f0d4767c-4f2b-4ba7-becc-2322d1757077","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"755eefc9-290d-4eaa-a7aa-62caed4511f9","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"755eefc9-290d-4eaa-a7aa-62caed4511f9","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":{"name":"dea9108f-b833-4ad0-a666-35be1edbc716","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"755eefc9-290d-4eaa-a7aa-62caed4511f9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"11498eaf-bc85-4402-ac82-e785fb731a94","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"11498eaf-bc85-4402-ac82-e785fb731a94","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":{"name":"dea9108f-b833-4ad0-a666-35be1edbc716","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"11498eaf-bc85-4402-ac82-e785fb731a94","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1cd14d1b-dad7-4b64-ba13-ea33d220e39b","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1cd14d1b-dad7-4b64-ba13-ea33d220e39b","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":{"name":"dea9108f-b833-4ad0-a666-35be1edbc716","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"1cd14d1b-dad7-4b64-ba13-ea33d220e39b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b09d7c87-bfbb-473f-acbb-dd205467ea05","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b09d7c87-bfbb-473f-acbb-dd205467ea05","path":"sprites/spr_martian_move/spr_martian_move.yy",},"LayerId":{"name":"dea9108f-b833-4ad0-a666-35be1edbc716","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","name":"b09d7c87-bfbb-473f-acbb-dd205467ea05","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f5f0c883-b3ac-443d-b228-146a5afe4005",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f0d4767c-4f2b-4ba7-becc-2322d1757077",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"755eefc9-290d-4eaa-a7aa-62caed4511f9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11498eaf-bc85-4402-ac82-e785fb731a94",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1cd14d1b-dad7-4b64-ba13-ea33d220e39b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b09d7c87-bfbb-473f-acbb-dd205467ea05",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_martian_move",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"12814e92-8f7c-4658-ad76-a3fc82c827df","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f5f0c883-b3ac-443d-b228-146a5afe4005","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f7861408-5b2b-4974-8795-708b493ff5c9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f0d4767c-4f2b-4ba7-becc-2322d1757077","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"de6206f9-4ffb-4cec-8dae-138f0b392686","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"755eefc9-290d-4eaa-a7aa-62caed4511f9","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f400277c-5e91-488d-aff4-320ec978324c","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11498eaf-bc85-4402-ac82-e785fb731a94","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"617c0440-f487-44be-abc1-bd77a720c109","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1cd14d1b-dad7-4b64-ba13-ea33d220e39b","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"469e4408-8bd0-455b-ac6e-b42bb854c830","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b09d7c87-bfbb-473f-acbb-dd205467ea05","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"12814e92-8f7c-4658-ad76-a3fc82c827df","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f5f0c883-b3ac-443d-b228-146a5afe4005","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f7861408-5b2b-4974-8795-708b493ff5c9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f0d4767c-4f2b-4ba7-becc-2322d1757077","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"de6206f9-4ffb-4cec-8dae-138f0b392686","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"755eefc9-290d-4eaa-a7aa-62caed4511f9","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f400277c-5e91-488d-aff4-320ec978324c","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11498eaf-bc85-4402-ac82-e785fb731a94","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"617c0440-f487-44be-abc1-bd77a720c109","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1cd14d1b-dad7-4b64-ba13-ea33d220e39b","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"469e4408-8bd0-455b-ac6e-b42bb854c830","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b09d7c87-bfbb-473f-acbb-dd205467ea05","path":"sprites/spr_martian_move/spr_martian_move.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 103,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_martian_move","path":"sprites/spr_martian_move/spr_martian_move.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_martian_move",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dea9108f-b833-4ad0-a666-35be1edbc716","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dea9108f-b833-4ad0-a666-35be1edbc716","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Martian",
     "path": "folders/7 - Enemies/Martian.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_martian_move",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

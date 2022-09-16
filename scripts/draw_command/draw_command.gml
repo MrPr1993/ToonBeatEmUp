@@ -62,11 +62,25 @@ draw_buttontext(160+16,8,8,"",spr_commandbutton,0,"U","NEXT")
 if commandType=6
 {
 ///Menu
+if songtext=1
+{
 draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J","SELECT")
 draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"","CANCEL") 
-draw_buttontext(320-8,240-32,8,"LOOP",spr_commandbutton,0,"H","")
+draw_buttontext(320-8,240-32,8,"LOOP",spr_commandbutton,0,"L","")
+draw_buttontext(320-8,240-32+16,8,"HIDE",spr_commandbutton,0,"H","")
+}
 }
 
+if commandType=7
+{
+draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"","EXIT")
+}
+
+if commandType=8
+{
+///Menu
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J","SELECT")
+}
 }
 else
 {
@@ -122,12 +136,25 @@ draw_buttontext(160+16,8,8,"",spr_commandbutton,9+6*commandMul,"","NEXT")
 if commandType=6
 {
 ///Menu
+if songtext=1
+{
 draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
 draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
-draw_buttontext(320-8,240-32,8,"LOOP",spr_commandbutton,7+6*commandMul,"","")
+draw_buttontext(320-8,240-32,8,"LOOP",spr_commandbutton,6+6*commandMul,"","")
+draw_buttontext(320-8,240-32+16,8,"HIDE",spr_commandbutton,7+6*commandMul,"","")
+}
 }
 
+if commandType=7
+{
+draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
+}
 
+if commandType=8
+{
+///Menu
+draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
+}
 }
 
 }

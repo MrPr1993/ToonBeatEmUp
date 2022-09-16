@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_ninjabun_drinks",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,24 +27,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3880ca0c-6172-4e95-bf0e-1e00418df855","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3880ca0c-6172-4e95-bf0e-1e00418df855","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ninjabun_drinks","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"3880ca0c-6172-4e95-bf0e-1e00418df855","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"250e3796-8c7e-41f2-ba85-53954cd18997","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"250e3796-8c7e-41f2-ba85-53954cd18997","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ninjabun_drinks","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"250e3796-8c7e-41f2-ba85-53954cd18997","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ninjabun_drinks","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ninjabun_drinks","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"80582329-c6a6-4e78-8629-8f6506880bcc","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"80582329-c6a6-4e78-8629-8f6506880bcc","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"LayerId":{"name":"868897df-7400-4d1e-8a30-e118b8671685","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ninjabun_drinks","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","name":"80582329-c6a6-4e78-8629-8f6506880bcc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3880ca0c-6172-4e95-bf0e-1e00418df855",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"250e3796-8c7e-41f2-ba85-53954cd18997",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"80582329-c6a6-4e78-8629-8f6506880bcc",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ninjabun_drinks","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_ninjabun_drinks",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -49,16 +44,16 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 5.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"719498aa-a59e-4a92-8ab7-c20cc76bbd49","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3880ca0c-6172-4e95-bf0e-1e00418df855","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f6318770-a0c7-4f72-a9df-7ccc3ba52d36","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"250e3796-8c7e-41f2-ba85-53954cd18997","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"bab7a2b1-5616-4ec8-82ae-ea8d28093306","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"3b69b323-78d4-4393-8403-ef11970945a4","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"bba626f4-d9be-45f6-912c-81fe2cc84d16","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80582329-c6a6-4e78-8629-8f6506880bcc","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"719498aa-a59e-4a92-8ab7-c20cc76bbd49","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3880ca0c-6172-4e95-bf0e-1e00418df855","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f6318770-a0c7-4f72-a9df-7ccc3ba52d36","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"250e3796-8c7e-41f2-ba85-53954cd18997","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bab7a2b1-5616-4ec8-82ae-ea8d28093306","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1f64114a-08b3-4be5-9b26-7068c5ed4b9a","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3b69b323-78d4-4393-8403-ef11970945a4","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ef34d3f-4cc4-4944-b50c-0c880b3c9641","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bba626f4-d9be-45f6-912c-81fe2cc84d16","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80582329-c6a6-4e78-8629-8f6506880bcc","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -74,22 +69,13 @@
     "yorigin": 93,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ninjabun_drinks","path":"sprites/spr_ninjabun_drinks/spr_ninjabun_drinks.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_ninjabun_drinks",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"868897df-7400-4d1e-8a30-e118b8671685","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"868897df-7400-4d1e-8a30-e118b8671685","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "NinjaBun",
     "path": "folders/7 - Enemies/NinjaBun.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_ninjabun_drinks",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

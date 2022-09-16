@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_spacer_stand
-MoveSpr=spr_spacer_stand
-RunSpr=spr_spacer_stand
+MoveSpr=spr_spacer_move
+RunSpr=spr_spacer_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -32,13 +32,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_spacer_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_spacer_move
+JumpSpr2=spr_spacer_move
+ThrownSpr=spr_spacer_hit
+FlatSpr=spr_spacer_flat
+ShockSpr=spr_spacer_elec
+BurnSpr=spr_spacer_elec
+FrozenSpr=spr_spacer_frozen
 
 
 current_pal=0;

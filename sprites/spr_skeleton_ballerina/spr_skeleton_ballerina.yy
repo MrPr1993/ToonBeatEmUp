@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_skeleton_ballerina",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,30 +27,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"959103dc-0ad9-408e-b08a-17e504a75258","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"959103dc-0ad9-408e-b08a-17e504a75258","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":{"name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"959103dc-0ad9-408e-b08a-17e504a75258","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"342b023e-bd5b-4ab5-bb1f-c043ac225045","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"342b023e-bd5b-4ab5-bb1f-c043ac225045","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":{"name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"342b023e-bd5b-4ab5-bb1f-c043ac225045","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e92963c9-53cb-4fb2-8529-4e267ff8d79b","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e92963c9-53cb-4fb2-8529-4e267ff8d79b","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":{"name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"e92963c9-53cb-4fb2-8529-4e267ff8d79b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"043b2be1-3f21-41d4-b42a-d9cc6b6541ca","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"043b2be1-3f21-41d4-b42a-d9cc6b6541ca","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":{"name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"043b2be1-3f21-41d4-b42a-d9cc6b6541ca","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"631b2a0a-fc7c-403e-9faa-9500215425b5","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"631b2a0a-fc7c-403e-9faa-9500215425b5","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":{"name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"631b2a0a-fc7c-403e-9faa-9500215425b5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a951671d-c7a8-4ec8-8c41-028dc282f580","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a951671d-c7a8-4ec8-8c41-028dc282f580","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":{"name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"a951671d-c7a8-4ec8-8c41-028dc282f580","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a058c47c-c25f-49c7-8d3f-2eb7250c8d1a","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a058c47c-c25f-49c7-8d3f-2eb7250c8d1a","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"LayerId":{"name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","name":"a058c47c-c25f-49c7-8d3f-2eb7250c8d1a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"959103dc-0ad9-408e-b08a-17e504a75258",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"342b023e-bd5b-4ab5-bb1f-c043ac225045",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e92963c9-53cb-4fb2-8529-4e267ff8d79b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"043b2be1-3f21-41d4-b42a-d9cc6b6541ca",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"631b2a0a-fc7c-403e-9faa-9500215425b5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a951671d-c7a8-4ec8-8c41-028dc282f580",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a058c47c-c25f-49c7-8d3f-2eb7250c8d1a",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_skeleton_ballerina",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -55,18 +46,18 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 7.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"81d9a394-7d57-4a38-8ba5-df506aff6ee7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"959103dc-0ad9-408e-b08a-17e504a75258","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7e77c080-7d5a-470d-9e71-eddf438310a8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"342b023e-bd5b-4ab5-bb1f-c043ac225045","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b6f6c184-34df-48d8-a985-9a86cc46f37f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e92963c9-53cb-4fb2-8529-4e267ff8d79b","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"36e8cd96-ac81-452a-95b9-c077bfd4fd10","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"043b2be1-3f21-41d4-b42a-d9cc6b6541ca","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7ec6b720-0007-4dcb-9193-42eb7c297763","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"631b2a0a-fc7c-403e-9faa-9500215425b5","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5f5b824c-247b-4236-92e1-d5387503148d","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a951671d-c7a8-4ec8-8c41-028dc282f580","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"9c752ece-bd75-4749-a8c8-84ac7c38af1e","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a058c47c-c25f-49c7-8d3f-2eb7250c8d1a","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"81d9a394-7d57-4a38-8ba5-df506aff6ee7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"959103dc-0ad9-408e-b08a-17e504a75258","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7e77c080-7d5a-470d-9e71-eddf438310a8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"342b023e-bd5b-4ab5-bb1f-c043ac225045","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b6f6c184-34df-48d8-a985-9a86cc46f37f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e92963c9-53cb-4fb2-8529-4e267ff8d79b","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"36e8cd96-ac81-452a-95b9-c077bfd4fd10","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"043b2be1-3f21-41d4-b42a-d9cc6b6541ca","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ec6b720-0007-4dcb-9193-42eb7c297763","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"631b2a0a-fc7c-403e-9faa-9500215425b5","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5f5b824c-247b-4236-92e1-d5387503148d","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a951671d-c7a8-4ec8-8c41-028dc282f580","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9c752ece-bd75-4749-a8c8-84ac7c38af1e","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a058c47c-c25f-49c7-8d3f-2eb7250c8d1a","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -82,22 +73,13 @@
     "yorigin": 123,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_skeleton_ballerina","path":"sprites/spr_skeleton_ballerina/spr_skeleton_ballerina.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_skeleton_ballerina",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f0b438c6-8f0c-4d23-9050-2f71be1230f2","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Skeleton",
     "path": "folders/7 - Enemies/Skeleton.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_skeleton_ballerina",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

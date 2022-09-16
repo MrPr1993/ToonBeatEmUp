@@ -12,3 +12,4 @@ yscale=1
 //surf_floor = surface_create(room_width, room_height);
 
 
+haswater=1

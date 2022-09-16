@@ -1,3 +1,3 @@
 /// @description Change Screen Size
 
-screen_size(0)
+//screen_size(0)

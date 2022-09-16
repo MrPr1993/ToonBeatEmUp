@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_femburglar_attack2",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f6772bfd-7651-4978-8d27-9bf921874512","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6772bfd-7651-4978-8d27-9bf921874512","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"LayerId":{"name":"799f0eee-f046-41d7-b7f5-76abdb71ee78","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_femburglar_attack2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","name":"f6772bfd-7651-4978-8d27-9bf921874512","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"890641fa-f4b3-4c56-a4b7-6aca6f0343b1","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"890641fa-f4b3-4c56-a4b7-6aca6f0343b1","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"LayerId":{"name":"799f0eee-f046-41d7-b7f5-76abdb71ee78","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_femburglar_attack2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","name":"890641fa-f4b3-4c56-a4b7-6aca6f0343b1","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"295d9c47-9667-4903-b21c-ea49c3d64ff2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"295d9c47-9667-4903-b21c-ea49c3d64ff2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"LayerId":{"name":"799f0eee-f046-41d7-b7f5-76abdb71ee78","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_femburglar_attack2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","name":"295d9c47-9667-4903-b21c-ea49c3d64ff2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"50e7b465-8a89-43e4-bbc3-1ff8dda84a32","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"50e7b465-8a89-43e4-bbc3-1ff8dda84a32","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"LayerId":{"name":"799f0eee-f046-41d7-b7f5-76abdb71ee78","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_femburglar_attack2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","name":"50e7b465-8a89-43e4-bbc3-1ff8dda84a32","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6772bfd-7651-4978-8d27-9bf921874512",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"890641fa-f4b3-4c56-a4b7-6aca6f0343b1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"295d9c47-9667-4903-b21c-ea49c3d64ff2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"50e7b465-8a89-43e4-bbc3-1ff8dda84a32",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_femburglar_attack2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,15 +43,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"54ed27a0-bd0e-487a-b83c-f682420c1a1c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6772bfd-7651-4978-8d27-9bf921874512","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5a7566a0-5e78-4a06-969b-4a129623a017","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"890641fa-f4b3-4c56-a4b7-6aca6f0343b1","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"ce6aca59-1b77-4d9b-a2de-f76c959ffde0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"295d9c47-9667-4903-b21c-ea49c3d64ff2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"00eb43c7-ddc5-466b-882c-fa92d73b84fe","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"50e7b465-8a89-43e4-bbc3-1ff8dda84a32","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"54ed27a0-bd0e-487a-b83c-f682420c1a1c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6772bfd-7651-4978-8d27-9bf921874512","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5a7566a0-5e78-4a06-969b-4a129623a017","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"890641fa-f4b3-4c56-a4b7-6aca6f0343b1","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ce6aca59-1b77-4d9b-a2de-f76c959ffde0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"295d9c47-9667-4903-b21c-ea49c3d64ff2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"00eb43c7-ddc5-466b-882c-fa92d73b84fe","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"50e7b465-8a89-43e4-bbc3-1ff8dda84a32","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 92,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_femburglar_attack2","path":"sprites/spr_femburglar_attack2/spr_femburglar_attack2.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"799f0eee-f046-41d7-b7f5-76abdb71ee78","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"799f0eee-f046-41d7-b7f5-76abdb71ee78","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Female Burglar",
     "path": "folders/7 - Enemies/Female Burglar.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_femburglar_attack2",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

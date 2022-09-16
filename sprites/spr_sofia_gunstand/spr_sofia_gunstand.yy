@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_sofia_gunstand",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"feb11c87-c6b4-4ee0-86ce-9dcfcb1b63ff","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"feb11c87-c6b4-4ee0-86ce-9dcfcb1b63ff","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"LayerId":{"name":"2ce8fb1d-076d-4a8f-9e01-f836f8e42525","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sofia_gunstand","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","name":"feb11c87-c6b4-4ee0-86ce-9dcfcb1b63ff","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ea18f114-01de-4296-b69d-86ead933f86b","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ea18f114-01de-4296-b69d-86ead933f86b","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"LayerId":{"name":"2ce8fb1d-076d-4a8f-9e01-f836f8e42525","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sofia_gunstand","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","name":"ea18f114-01de-4296-b69d-86ead933f86b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7fe23849-0f92-4dc8-a868-c0b27d2aed37","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7fe23849-0f92-4dc8-a868-c0b27d2aed37","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"LayerId":{"name":"2ce8fb1d-076d-4a8f-9e01-f836f8e42525","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sofia_gunstand","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","name":"7fe23849-0f92-4dc8-a868-c0b27d2aed37","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1250a95e-cde5-43b6-bc8b-f58940814640","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1250a95e-cde5-43b6-bc8b-f58940814640","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"LayerId":{"name":"2ce8fb1d-076d-4a8f-9e01-f836f8e42525","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_sofia_gunstand","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","name":"1250a95e-cde5-43b6-bc8b-f58940814640","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"feb11c87-c6b4-4ee0-86ce-9dcfcb1b63ff",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea18f114-01de-4296-b69d-86ead933f86b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7fe23849-0f92-4dc8-a868-c0b27d2aed37",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1250a95e-cde5-43b6-bc8b-f58940814640",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_sofia_gunstand","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,15 +43,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e6c82f7c-4a43-48dc-b218-50255397ee4a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"feb11c87-c6b4-4ee0-86ce-9dcfcb1b63ff","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"db368585-ce9c-4429-94c1-534dfdf43f08","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea18f114-01de-4296-b69d-86ead933f86b","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"bf4e8e84-9cc1-4d48-9b96-ce3b4b6ea931","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7fe23849-0f92-4dc8-a868-c0b27d2aed37","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"38386f13-76ea-40b6-b669-1869c531f03a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1250a95e-cde5-43b6-bc8b-f58940814640","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e6c82f7c-4a43-48dc-b218-50255397ee4a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"feb11c87-c6b4-4ee0-86ce-9dcfcb1b63ff","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"db368585-ce9c-4429-94c1-534dfdf43f08","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea18f114-01de-4296-b69d-86ead933f86b","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bf4e8e84-9cc1-4d48-9b96-ce3b4b6ea931","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7fe23849-0f92-4dc8-a868-c0b27d2aed37","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"38386f13-76ea-40b6-b669-1869c531f03a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1250a95e-cde5-43b6-bc8b-f58940814640","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 90,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_sofia_gunstand","path":"sprites/spr_sofia_gunstand/spr_sofia_gunstand.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2ce8fb1d-076d-4a8f-9e01-f836f8e42525","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2ce8fb1d-076d-4a8f-9e01-f836f8e42525","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p4 - Sofia Sprites",
     "path": "folders/6 - Player Data/p4 - Sofia Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_sofia_gunstand",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

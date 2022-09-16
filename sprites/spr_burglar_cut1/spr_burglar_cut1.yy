@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_burglar_cut1",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dfd868f4-5fe1-4ae6-9537-10503afa787b","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dfd868f4-5fe1-4ae6-9537-10503afa787b","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"LayerId":{"name":"9ea30ff2-3c59-4400-a9ce-c9c39747c542","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglar_cut1","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","name":"dfd868f4-5fe1-4ae6-9537-10503afa787b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"59809f64-c37a-4a6b-b3ed-efa198550f8c","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"59809f64-c37a-4a6b-b3ed-efa198550f8c","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"LayerId":{"name":"9ea30ff2-3c59-4400-a9ce-c9c39747c542","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglar_cut1","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","name":"59809f64-c37a-4a6b-b3ed-efa198550f8c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"118c5758-ec1f-4eec-99c6-d3710a455939","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"118c5758-ec1f-4eec-99c6-d3710a455939","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"LayerId":{"name":"9ea30ff2-3c59-4400-a9ce-c9c39747c542","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglar_cut1","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","name":"118c5758-ec1f-4eec-99c6-d3710a455939","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dfd868f4-5fe1-4ae6-9537-10503afa787b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"59809f64-c37a-4a6b-b3ed-efa198550f8c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"118c5758-ec1f-4eec-99c6-d3710a455939",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_burglar_cut1","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_burglar_cut1",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -43,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5cf79c35-acff-48dc-b882-9920c8710797","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dfd868f4-5fe1-4ae6-9537-10503afa787b","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"11fa1547-7fed-47b3-8e59-8e35dc2f192d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"59809f64-c37a-4a6b-b3ed-efa198550f8c","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2e25ac8f-c000-48cb-ab4c-4a5545b6860a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"118c5758-ec1f-4eec-99c6-d3710a455939","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5cf79c35-acff-48dc-b882-9920c8710797","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dfd868f4-5fe1-4ae6-9537-10503afa787b","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"11fa1547-7fed-47b3-8e59-8e35dc2f192d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"59809f64-c37a-4a6b-b3ed-efa198550f8c","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2e25ac8f-c000-48cb-ab4c-4a5545b6860a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"118c5758-ec1f-4eec-99c6-d3710a455939","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 91,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_burglar_cut1","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_burglar_cut1",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9ea30ff2-3c59-4400-a9ce-c9c39747c542","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9ea30ff2-3c59-4400-a9ce-c9c39747c542","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Burglar",
     "path": "folders/7 - Enemies/Burglar.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_burglar_cut1",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

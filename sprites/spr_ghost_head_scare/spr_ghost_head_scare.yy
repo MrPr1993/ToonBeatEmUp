@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_ghost_head_scare",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"925afd65-7ccf-4c8d-a7aa-a6cdcf2ef600","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"925afd65-7ccf-4c8d-a7aa-a6cdcf2ef600","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"LayerId":{"name":"e5290401-a7c3-4c72-9d67-02e83ba411fd","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ghost_head_scare","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","name":"925afd65-7ccf-4c8d-a7aa-a6cdcf2ef600","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ce6cada5-de5b-4af2-8b7f-200a13d14abd","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ce6cada5-de5b-4af2-8b7f-200a13d14abd","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"LayerId":{"name":"e5290401-a7c3-4c72-9d67-02e83ba411fd","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ghost_head_scare","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","name":"ce6cada5-de5b-4af2-8b7f-200a13d14abd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9cfe575a-860d-4542-b9d0-5d01d4923d5f","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9cfe575a-860d-4542-b9d0-5d01d4923d5f","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"LayerId":{"name":"e5290401-a7c3-4c72-9d67-02e83ba411fd","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ghost_head_scare","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","name":"9cfe575a-860d-4542-b9d0-5d01d4923d5f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6ddff6aa-fbb4-4758-b93e-d3c0a35e5f09","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6ddff6aa-fbb4-4758-b93e-d3c0a35e5f09","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"LayerId":{"name":"e5290401-a7c3-4c72-9d67-02e83ba411fd","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ghost_head_scare","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","name":"6ddff6aa-fbb4-4758-b93e-d3c0a35e5f09","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"925afd65-7ccf-4c8d-a7aa-a6cdcf2ef600",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ce6cada5-de5b-4af2-8b7f-200a13d14abd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9cfe575a-860d-4542-b9d0-5d01d4923d5f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6ddff6aa-fbb4-4758-b93e-d3c0a35e5f09",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ghost_head_scare","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_ghost_head_scare",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -46,15 +43,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8c0258f3-9e85-4e5e-a45d-3444d94278f0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"925afd65-7ccf-4c8d-a7aa-a6cdcf2ef600","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"908e6f81-0888-4f56-b9d7-5c24a944ca88","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce6cada5-de5b-4af2-8b7f-200a13d14abd","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"01376f19-ec6d-426b-a182-c4696104db06","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9cfe575a-860d-4542-b9d0-5d01d4923d5f","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f4a07fb5-3e3f-49fb-bbf4-c6649ba54cf2","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ddff6aa-fbb4-4758-b93e-d3c0a35e5f09","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"8c0258f3-9e85-4e5e-a45d-3444d94278f0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"925afd65-7ccf-4c8d-a7aa-a6cdcf2ef600","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"908e6f81-0888-4f56-b9d7-5c24a944ca88","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce6cada5-de5b-4af2-8b7f-200a13d14abd","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"01376f19-ec6d-426b-a182-c4696104db06","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9cfe575a-860d-4542-b9d0-5d01d4923d5f","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f4a07fb5-3e3f-49fb-bbf4-c6649ba54cf2","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ddff6aa-fbb4-4758-b93e-d3c0a35e5f09","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 80,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ghost_head_scare","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_ghost_head_scare",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e5290401-a7c3-4c72-9d67-02e83ba411fd","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e5290401-a7c3-4c72-9d67-02e83ba411fd","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "3Ghost Boss",
     "path": "folders/8 - Bosses/3Ghost Boss.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_ghost_head_scare",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

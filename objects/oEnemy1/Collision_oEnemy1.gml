@@ -31,6 +31,8 @@ hud_show()
 
 cutDMG=0
 
+
+
 if !(x>other.x and image_xscale=-1)
 and !(x<other.x and image_xscale=1)
 hitBack=1 else hitBack=0

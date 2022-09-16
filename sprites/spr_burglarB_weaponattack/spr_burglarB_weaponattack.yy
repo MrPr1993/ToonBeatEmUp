@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_burglarB_weaponattack",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ecd5cfef-20cd-4862-b729-d28a9f779a1a","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ecd5cfef-20cd-4862-b729-d28a9f779a1a","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"LayerId":{"name":"2c5de5b1-8ec5-47a8-af19-69d2b661290f","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_weaponattack","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","name":"ecd5cfef-20cd-4862-b729-d28a9f779a1a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6f32e4d6-1812-4196-b8a5-c71a535c9b51","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6f32e4d6-1812-4196-b8a5-c71a535c9b51","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"LayerId":{"name":"2c5de5b1-8ec5-47a8-af19-69d2b661290f","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_weaponattack","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","name":"6f32e4d6-1812-4196-b8a5-c71a535c9b51","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"16b9abc0-bb7a-468d-90e0-205aa1432c1d","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"16b9abc0-bb7a-468d-90e0-205aa1432c1d","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"LayerId":{"name":"2c5de5b1-8ec5-47a8-af19-69d2b661290f","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_weaponattack","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","name":"16b9abc0-bb7a-468d-90e0-205aa1432c1d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"835b994f-ab2a-4495-95e1-4f4fb64391c1","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"835b994f-ab2a-4495-95e1-4f4fb64391c1","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"LayerId":{"name":"2c5de5b1-8ec5-47a8-af19-69d2b661290f","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_burglarB_weaponattack","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","name":"835b994f-ab2a-4495-95e1-4f4fb64391c1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ecd5cfef-20cd-4862-b729-d28a9f779a1a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f32e4d6-1812-4196-b8a5-c71a535c9b51",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"16b9abc0-bb7a-468d-90e0-205aa1432c1d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"835b994f-ab2a-4495-95e1-4f4fb64391c1",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_burglarB_weaponattack","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_burglarB_weaponattack",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -46,15 +43,15 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 4.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bc6752f9-2715-4e35-a4ed-6c5ed88830e7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ecd5cfef-20cd-4862-b729-d28a9f779a1a","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7ed0558e-9caf-484b-bf20-20ea0028c5ea","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f32e4d6-1812-4196-b8a5-c71a535c9b51","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"ec6e7cd6-e392-4d73-9209-2ffdda9af53a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"16b9abc0-bb7a-468d-90e0-205aa1432c1d","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"37a3e437-e554-4c25-b967-544d86aa0fd4","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"835b994f-ab2a-4495-95e1-4f4fb64391c1","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"bc6752f9-2715-4e35-a4ed-6c5ed88830e7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ecd5cfef-20cd-4862-b729-d28a9f779a1a","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ed0558e-9caf-484b-bf20-20ea0028c5ea","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f32e4d6-1812-4196-b8a5-c71a535c9b51","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ec6e7cd6-e392-4d73-9209-2ffdda9af53a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"16b9abc0-bb7a-468d-90e0-205aa1432c1d","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"37a3e437-e554-4c25-b967-544d86aa0fd4","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"835b994f-ab2a-4495-95e1-4f4fb64391c1","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 91,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_burglarB_weaponattack","path":"sprites/spr_burglarB_weaponattack/spr_burglarB_weaponattack.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_burglarB_weaponattack",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2c5de5b1-8ec5-47a8-af19-69d2b661290f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2c5de5b1-8ec5-47a8-af19-69d2b661290f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Burglar B",
     "path": "folders/7 - Enemies/Burglar B.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_burglarB_weaponattack",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

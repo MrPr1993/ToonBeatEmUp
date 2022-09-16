@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_clown_frozen",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"86b81f8f-dbed-4cea-ac12-2d820253bb3c","path":"sprites/spr_clown_frozen/spr_clown_frozen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"86b81f8f-dbed-4cea-ac12-2d820253bb3c","path":"sprites/spr_clown_frozen/spr_clown_frozen.yy",},"LayerId":{"name":"e438662c-697c-4234-b46d-c24b23fb558c","path":"sprites/spr_clown_frozen/spr_clown_frozen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_clown_frozen","path":"sprites/spr_clown_frozen/spr_clown_frozen.yy",},"resourceVersion":"1.0","name":"86b81f8f-dbed-4cea-ac12-2d820253bb3c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"86b81f8f-dbed-4cea-ac12-2d820253bb3c",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_clown_frozen","path":"sprites/spr_clown_frozen/spr_clown_frozen.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_clown_frozen",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -37,12 +40,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c6d77f94-7ceb-4678-bc1d-5a3da7e7037e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"86b81f8f-dbed-4cea-ac12-2d820253bb3c","path":"sprites/spr_clown_frozen/spr_clown_frozen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"c6d77f94-7ceb-4678-bc1d-5a3da7e7037e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"86b81f8f-dbed-4cea-ac12-2d820253bb3c","path":"sprites/spr_clown_frozen/spr_clown_frozen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 124,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_clown_frozen","path":"sprites/spr_clown_frozen/spr_clown_frozen.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_clown_frozen",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e438662c-697c-4234-b46d-c24b23fb558c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e438662c-697c-4234-b46d-c24b23fb558c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "4aClown",
-    "path": "folders/8 - Bosses/4aClown.yy",
+    "name": "Clown",
+    "path": "folders/7 - Enemies/Clown.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_clown_frozen",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

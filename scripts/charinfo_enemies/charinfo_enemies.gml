@@ -5,8 +5,11 @@ switch (dataSelect)
 {
   case 1:
   hp=0.2
+  descleft="AGE:32\nNAT.:USA\nH: 4'10\nW: 140LBS"
+descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
   charinfo_set(5,spr_burglar_stand,3,animsetup_burglar,draw_enemy,spr_enemypal,2,spr_enemyface,1,"MR.BURG",
 "RUN OF THE MILL BURGLAR. THIS CHUMP'S FODDER, BUT HIS KICK'LL SEND YOU ROLLING SO WATCH OUT!")
+	dataabilities="BIKING,PUNCHING,KICKING"
 break;
   case 2:
     hp=0.2
@@ -75,7 +78,7 @@ break;
 break;
   case 9:
  charinfo_set(12,spr_wrestler_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,19,"MS.SLAMS",
- "For being rotund, they can be quick to grab you and slam you hard! She also loves to roll. Literally!")
+ "For being rotund, they can be quick to grab you and slam you hard, and can try and flatten you with a roll!")
 break;
   case 10:
  charinfo_set(12,spr_strongburg_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,37,"MR.CHIP",
@@ -86,16 +89,27 @@ break;
  "A!")
 break;
   case 12:
+  hp=0.25
+descleft="AGE:32\nNAT.:USA\nH: 4'10\nW: 140LBS"
+descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
  charinfo_set(12,spr_zombiem_stand,1,animsetup_zombie,draw_enemy,spr_zombiepal,0,spr_enemyface,13,"ZOMBILLY",
- "A!")
+ "A zombie man who's a little on the clumsy side, who will rush towards their foe and tackle them. By accident.")
 break;
   case 13:
+    hp=0.25
  charinfo_set(12,spr_zombiew_stand,1,animsetup_zombie,draw_enemy,spr_zombiepal,0,spr_enemyface,14,"ZOMBETTY",
- "A!")
+ "She calls herself a beauty, despite a missing jaw. Those who are rude will be the subject of her acidic spits!")
 break;
   case 14:
- charinfo_set(12,spr_skeleton_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,21,"SKELLA",
- "A!")
+  hp=0.25
+   if dataPal=1
+{current_pal=0
+ charinfo_set(12,spr_skeleton_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,21,"SKELLA", 
+ "They appropiate themselves by becoming sassy, and they resort on kicks from their ballerina routine.")}
+    if dataPal=2
+{current_pal=1
+ charinfo_set(12,spr_skeleton_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,21,"SKELIE", 
+ "Thse skeletons of the jugglers will show up and have a bone to pick with you to throw at!")} 
 break;
   case 15:
  charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"ANIMATE AXE",

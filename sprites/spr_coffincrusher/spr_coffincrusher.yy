@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_coffincrusher",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"910c06bf-238f-47fd-a59d-3b2228c9994c","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"910c06bf-238f-47fd-a59d-3b2228c9994c","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"LayerId":{"name":"b2cc4510-42d1-4215-8fd8-e5aa77e47d35","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_coffincrusher","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"resourceVersion":"1.0","name":"910c06bf-238f-47fd-a59d-3b2228c9994c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4664202a-4769-4b4a-bbdc-039258023d4e","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4664202a-4769-4b4a-bbdc-039258023d4e","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"LayerId":{"name":"b2cc4510-42d1-4215-8fd8-e5aa77e47d35","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_coffincrusher","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"resourceVersion":"1.0","name":"4664202a-4769-4b4a-bbdc-039258023d4e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"910c06bf-238f-47fd-a59d-3b2228c9994c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4664202a-4769-4b4a-bbdc-039258023d4e",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_coffincrusher","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_coffincrusher",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1e1e26c6-b063-4e12-9325-0f0f24103940","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"910c06bf-238f-47fd-a59d-3b2228c9994c","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"5440fea7-4292-4e40-91a3-4f519842137b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4664202a-4769-4b4a-bbdc-039258023d4e","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"1e1e26c6-b063-4e12-9325-0f0f24103940","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"910c06bf-238f-47fd-a59d-3b2228c9994c","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5440fea7-4292-4e40-91a3-4f519842137b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4664202a-4769-4b4a-bbdc-039258023d4e","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 119,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_coffincrusher","path":"sprites/spr_coffincrusher/spr_coffincrusher.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_coffincrusher",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b2cc4510-42d1-4215-8fd8-e5aa77e47d35","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b2cc4510-42d1-4215-8fd8-e5aa77e47d35","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Effects",
     "path": "folders/5 - Sprites/Effects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_coffincrusher",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

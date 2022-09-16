@@ -1,6 +1,6 @@
 enemy_data()
 
-name="MONK"
+name="SOLI"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=44
 
@@ -21,24 +21,24 @@ height=70
 specialFX=0
 
 StandSpr=spr_monk_stand
-MoveSpr=spr_monk_stand
-RunSpr=spr_monk_stand
+MoveSpr=spr_monk_move
+RunSpr=spr_monk_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
 AtkSpr3=spr_burglar_attack
 AtkSpr4=spr_burglar_attack
 AtkSpr5=spr_burglar_attack
-JumpAtkSpr=spr_burglar_attack
-JumpAtkSpr2=spr_burglar_attack
+JumpAtkSpr=spr_monk_stand
+JumpAtkSpr2=spr_monk_stand
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_monk_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_monk_stand
+JumpSpr2=spr_monk_stand
+ThrownSpr=spr_monk_hit
+FlatSpr=spr_monk_flat
+ShockSpr=spr_monk_elec
+BurnSpr=spr_monk_burned
+FrozenSpr=spr_monk_frozen
 
 
 current_pal=0;

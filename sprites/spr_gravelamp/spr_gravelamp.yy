@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_gravelamp",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2664d30f-ebd3-4914-a446-5378e343c4a0","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2664d30f-ebd3-4914-a446-5378e343c4a0","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"LayerId":{"name":"58fe060f-657f-4def-a32e-ac861a217c95","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gravelamp","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"resourceVersion":"1.0","name":"2664d30f-ebd3-4914-a446-5378e343c4a0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0d1ec260-1ede-4a4d-bf19-9b97664aa518","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0d1ec260-1ede-4a4d-bf19-9b97664aa518","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"LayerId":{"name":"58fe060f-657f-4def-a32e-ac861a217c95","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_gravelamp","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"resourceVersion":"1.0","name":"0d1ec260-1ede-4a4d-bf19-9b97664aa518","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2664d30f-ebd3-4914-a446-5378e343c4a0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0d1ec260-1ede-4a4d-bf19-9b97664aa518",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_gravelamp","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_gravelamp",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f05dfadc-8df2-44ae-91e5-5f1fdca44c85","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2664d30f-ebd3-4914-a446-5378e343c4a0","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f812f4b5-3e0f-469a-8d1e-7564da1e84ff","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d1ec260-1ede-4a4d-bf19-9b97664aa518","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"f05dfadc-8df2-44ae-91e5-5f1fdca44c85","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2664d30f-ebd3-4914-a446-5378e343c4a0","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f812f4b5-3e0f-469a-8d1e-7564da1e84ff","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d1ec260-1ede-4a4d-bf19-9b97664aa518","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 61,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_gravelamp","path":"sprites/spr_gravelamp/spr_gravelamp.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_gravelamp",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"58fe060f-657f-4def-a32e-ac861a217c95","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"58fe060f-657f-4def-a32e-ac861a217c95","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "a - Object Sprites",
     "path": "folders/9 - Objects And Items/a - Object Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_gravelamp",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

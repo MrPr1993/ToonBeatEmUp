@@ -25,7 +25,7 @@ altresult1=0
 resulttext2="DAMAGE"
 resulttext3="TIME"
 altresult3=round(oControl.time*200)*2
-stageClearDelay=120
+//stageClearDelay=120
  event_user(9)
  oControl.stageCspr=spr_bonusresults
 }

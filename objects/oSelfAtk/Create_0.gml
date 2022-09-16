@@ -6,7 +6,7 @@ PlayerThrowAtk=0
 spamatk=0
 
 ThrowWeightDamage=0
-
+HitQuake=0
 MoveType=0
 HitType=0
 HitForce=0

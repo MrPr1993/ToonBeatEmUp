@@ -15,12 +15,15 @@ function enemy_endstep() {
 	selfatk.HitForce=HitForce
 	selfatk.HitForceZ=HitForceZ
 	selfatk.targetHeight=targetHeight
+	selfatk.HitQuake=HitQuake
+
 
 	aff.x=x aff.y=y aff.z=z
 	aff.dead=dead aff.canmove=canmove
 	aff.hp=hp aff.atk=atk aff.hurt=hurt aff.ground=ground
 	aff.immune=immune aff.act=act aff.recoveryThrow=recoveryThrow
 	aff.anim=anim
+	HitQuake=0
 	}
 	else
 	selfatk.atk=0

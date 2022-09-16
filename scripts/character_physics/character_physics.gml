@@ -1,7 +1,7 @@
 function character_physics() {
 	if act=1
 	{
-	
+
 	///Slippery terrain
 if place_meeting(x,y,oIceTer)
 {

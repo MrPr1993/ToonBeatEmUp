@@ -1,6 +1,6 @@
 enemy_data()
 
-name="NATI"
+name="PYR"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=28
 

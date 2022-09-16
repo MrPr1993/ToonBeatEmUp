@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bahati_slide",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"c2935641-ef82-45ff-9aff-509f3ed10cf0","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c2935641-ef82-45ff-9aff-509f3ed10cf0","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"LayerId":{"name":"d9affaa4-0cdf-4096-8ea9-3249e1d0c6d3","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_slide","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"resourceVersion":"1.0","name":"c2935641-ef82-45ff-9aff-509f3ed10cf0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"65d8a513-50b5-4f22-84e0-d278a801ac7e","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"65d8a513-50b5-4f22-84e0-d278a801ac7e","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"LayerId":{"name":"d9affaa4-0cdf-4096-8ea9-3249e1d0c6d3","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_slide","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"resourceVersion":"1.0","name":"65d8a513-50b5-4f22-84e0-d278a801ac7e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c2935641-ef82-45ff-9aff-509f3ed10cf0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65d8a513-50b5-4f22-84e0-d278a801ac7e",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bahati_slide","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_bahati_slide",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0720e12e-0320-43f1-9802-9ef1c3a0ad57","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2935641-ef82-45ff-9aff-509f3ed10cf0","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f17f866a-4ec4-456e-af77-0c3f754580d3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"65d8a513-50b5-4f22-84e0-d278a801ac7e","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"0720e12e-0320-43f1-9802-9ef1c3a0ad57","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c2935641-ef82-45ff-9aff-509f3ed10cf0","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f17f866a-4ec4-456e-af77-0c3f754580d3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"65d8a513-50b5-4f22-84e0-d278a801ac7e","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 66,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bahati_slide","path":"sprites/spr_bahati_slide/spr_bahati_slide.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_bahati_slide",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d9affaa4-0cdf-4096-8ea9-3249e1d0c6d3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d9affaa4-0cdf-4096-8ea9-3249e1d0c6d3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p3 - Bahati Sprites",
     "path": "folders/6 - Player Data/p3 - Bahati Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bahati_slide",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

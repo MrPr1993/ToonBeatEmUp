@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_peticon",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e055a3b0-8bd7-479b-92e3-ff18a80bc672","path":"sprites/spr_peticon/spr_peticon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e055a3b0-8bd7-479b-92e3-ff18a80bc672","path":"sprites/spr_peticon/spr_peticon.yy",},"LayerId":{"name":"03144ae6-54cf-45b7-b172-120cfc261bd4","path":"sprites/spr_peticon/spr_peticon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_peticon","path":"sprites/spr_peticon/spr_peticon.yy",},"resourceVersion":"1.0","name":"e055a3b0-8bd7-479b-92e3-ff18a80bc672","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6a1618b9-cbaa-4ca8-80cd-6ab2f5cd7ce1","path":"sprites/spr_peticon/spr_peticon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6a1618b9-cbaa-4ca8-80cd-6ab2f5cd7ce1","path":"sprites/spr_peticon/spr_peticon.yy",},"LayerId":{"name":"03144ae6-54cf-45b7-b172-120cfc261bd4","path":"sprites/spr_peticon/spr_peticon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_peticon","path":"sprites/spr_peticon/spr_peticon.yy",},"resourceVersion":"1.0","name":"6a1618b9-cbaa-4ca8-80cd-6ab2f5cd7ce1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e055a3b0-8bd7-479b-92e3-ff18a80bc672",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a1618b9-cbaa-4ca8-80cd-6ab2f5cd7ce1",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_peticon","path":"sprites/spr_peticon/spr_peticon.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_peticon",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"15b1325c-7e93-4821-8d2b-3149f5e9aa2a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e055a3b0-8bd7-479b-92e3-ff18a80bc672","path":"sprites/spr_peticon/spr_peticon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"560a040e-fd84-4b2e-a9e0-a158edd7ef3f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a1618b9-cbaa-4ca8-80cd-6ab2f5cd7ce1","path":"sprites/spr_peticon/spr_peticon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"15b1325c-7e93-4821-8d2b-3149f5e9aa2a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e055a3b0-8bd7-479b-92e3-ff18a80bc672","path":"sprites/spr_peticon/spr_peticon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"560a040e-fd84-4b2e-a9e0-a158edd7ef3f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a1618b9-cbaa-4ca8-80cd-6ab2f5cd7ce1","path":"sprites/spr_peticon/spr_peticon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 24,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_peticon","path":"sprites/spr_peticon/spr_peticon.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_peticon",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"03144ae6-54cf-45b7-b172-120cfc261bd4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"03144ae6-54cf-45b7-b172-120cfc261bd4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "6b - NPCs",
     "path": "folders/6b - NPCs.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_peticon",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -17,7 +17,7 @@ with anA
 {alarm[0]=0 depth=100 isDepth=0 animEnd=0 visible=1 image_speed=0 alarm[2]=30 image_index=0 sprite_index=spr_cutscene1d hspeed=8}
 
 cutscenename="HINA"
-cutsceneline="OOH, YOU TWO CAN PLAY GOOD COP,\nBAD COP!"
+cutsceneline="OOH, YOU TWO CAN PLAY GOOD COP, BAD COP!"
 
 SceneX=0 __view_set( e__VW.XView, 0, SceneX ) //324
 

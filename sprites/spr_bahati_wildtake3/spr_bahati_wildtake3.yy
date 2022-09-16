@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bahati_wildtake3",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fa2d43fd-815e-4f06-89fe-20fa564d5d88","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fa2d43fd-815e-4f06-89fe-20fa564d5d88","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"LayerId":{"name":"2a1c8614-c8d8-4c17-9055-ad7fb4250b6d","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_wildtake3","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"resourceVersion":"1.0","name":"fa2d43fd-815e-4f06-89fe-20fa564d5d88","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"393c8e0c-276a-4298-9758-e2c6913fccb0","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"393c8e0c-276a-4298-9758-e2c6913fccb0","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"LayerId":{"name":"2a1c8614-c8d8-4c17-9055-ad7fb4250b6d","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_wildtake3","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"resourceVersion":"1.0","name":"393c8e0c-276a-4298-9758-e2c6913fccb0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fa2d43fd-815e-4f06-89fe-20fa564d5d88",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"393c8e0c-276a-4298-9758-e2c6913fccb0",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bahati_wildtake3","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_bahati_wildtake3",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5d3164a3-7602-45ff-9e01-fcb725079a89","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa2d43fd-815e-4f06-89fe-20fa564d5d88","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"d6061b62-7073-41aa-a974-547f477fb71a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"393c8e0c-276a-4298-9758-e2c6913fccb0","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5d3164a3-7602-45ff-9e01-fcb725079a89","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa2d43fd-815e-4f06-89fe-20fa564d5d88","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d6061b62-7073-41aa-a974-547f477fb71a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"393c8e0c-276a-4298-9758-e2c6913fccb0","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 96,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bahati_wildtake3","path":"sprites/spr_bahati_wildtake3/spr_bahati_wildtake3.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_bahati_wildtake3",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2a1c8614-c8d8-4c17-9055-ad7fb4250b6d","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2a1c8614-c8d8-4c17-9055-ad7fb4250b6d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p3 - Bahati Sprites",
     "path": "folders/6 - Player Data/p3 - Bahati Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bahati_wildtake3",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

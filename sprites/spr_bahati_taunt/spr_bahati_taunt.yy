@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_bahati_taunt",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,27 +27,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f2fab1f5-2adf-4d5d-981b-2291ace399f9","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f2fab1f5-2adf-4d5d-981b-2291ace399f9","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":{"name":"53b0a7c3-9183-442c-86e3-1ccc3b8c25db","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_taunt","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"f2fab1f5-2adf-4d5d-981b-2291ace399f9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a15089d0-f68b-4fd7-abbc-c57cbc5cc833","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a15089d0-f68b-4fd7-abbc-c57cbc5cc833","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":{"name":"53b0a7c3-9183-442c-86e3-1ccc3b8c25db","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_taunt","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"a15089d0-f68b-4fd7-abbc-c57cbc5cc833","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6a6a236d-e54f-48a5-8a80-4762ee21b25a","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6a6a236d-e54f-48a5-8a80-4762ee21b25a","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":{"name":"53b0a7c3-9183-442c-86e3-1ccc3b8c25db","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_taunt","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"6a6a236d-e54f-48a5-8a80-4762ee21b25a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a280729f-7375-4465-b091-66eaf9471160","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a280729f-7375-4465-b091-66eaf9471160","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":{"name":"53b0a7c3-9183-442c-86e3-1ccc3b8c25db","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_taunt","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"a280729f-7375-4465-b091-66eaf9471160","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d83b1585-ad47-4337-854a-6da9bf56a21c","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d83b1585-ad47-4337-854a-6da9bf56a21c","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":{"name":"53b0a7c3-9183-442c-86e3-1ccc3b8c25db","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_taunt","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"d83b1585-ad47-4337-854a-6da9bf56a21c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"49d715e0-fa29-4436-96f7-c51efa998dee","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"49d715e0-fa29-4436-96f7-c51efa998dee","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"LayerId":{"name":"53b0a7c3-9183-442c-86e3-1ccc3b8c25db","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_bahati_taunt","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","name":"49d715e0-fa29-4436-96f7-c51efa998dee","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2fab1f5-2adf-4d5d-981b-2291ace399f9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a15089d0-f68b-4fd7-abbc-c57cbc5cc833",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a6a236d-e54f-48a5-8a80-4762ee21b25a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a280729f-7375-4465-b091-66eaf9471160",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d83b1585-ad47-4337-854a-6da9bf56a21c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"49d715e0-fa29-4436-96f7-c51efa998dee",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_bahati_taunt","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_bahati_taunt",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -52,17 +45,17 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 6.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"194186db-9737-43f5-be6e-da8f11e5dfed","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f2fab1f5-2adf-4d5d-981b-2291ace399f9","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"4ae7ed94-a350-42a5-bd11-3dfe879dd3dd","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a15089d0-f68b-4fd7-abbc-c57cbc5cc833","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"93ebee67-ff40-4f86-80d5-0ccc864da50c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a6a236d-e54f-48a5-8a80-4762ee21b25a","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"513da845-f49a-4191-9d56-6b755e86b642","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a280729f-7375-4465-b091-66eaf9471160","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"7d6a9216-77c7-4bb8-b8ce-37b6605a0e71","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d83b1585-ad47-4337-854a-6da9bf56a21c","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b1899f20-e171-4caa-844f-d74a2543c914","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"49d715e0-fa29-4436-96f7-c51efa998dee","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"194186db-9737-43f5-be6e-da8f11e5dfed","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f2fab1f5-2adf-4d5d-981b-2291ace399f9","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4ae7ed94-a350-42a5-bd11-3dfe879dd3dd","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a15089d0-f68b-4fd7-abbc-c57cbc5cc833","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"93ebee67-ff40-4f86-80d5-0ccc864da50c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a6a236d-e54f-48a5-8a80-4762ee21b25a","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"513da845-f49a-4191-9d56-6b755e86b642","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a280729f-7375-4465-b091-66eaf9471160","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7d6a9216-77c7-4bb8-b8ce-37b6605a0e71","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d83b1585-ad47-4337-854a-6da9bf56a21c","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b1899f20-e171-4caa-844f-d74a2543c914","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"49d715e0-fa29-4436-96f7-c51efa998dee","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -78,22 +71,13 @@
     "yorigin": 92,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_bahati_taunt","path":"sprites/spr_bahati_taunt/spr_bahati_taunt.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_bahati_taunt",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"53b0a7c3-9183-442c-86e3-1ccc3b8c25db","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"53b0a7c3-9183-442c-86e3-1ccc3b8c25db","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p3 - Bahati Sprites",
     "path": "folders/6 - Player Data/p3 - Bahati Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_bahati_taunt",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

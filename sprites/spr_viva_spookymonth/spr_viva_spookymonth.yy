@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_viva_spookymonth",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"eeb3bd39-d017-4846-91fe-a454f5d8252c","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eeb3bd39-d017-4846-91fe-a454f5d8252c","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"LayerId":{"name":"2bca2c95-03a0-4b39-b5ec-9bc49cc5a8a5","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_spookymonth","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","name":"eeb3bd39-d017-4846-91fe-a454f5d8252c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0ebb0d7f-9dc2-4f7d-9e09-e3ca4e16eb55","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0ebb0d7f-9dc2-4f7d-9e09-e3ca4e16eb55","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"LayerId":{"name":"2bca2c95-03a0-4b39-b5ec-9bc49cc5a8a5","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_spookymonth","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","name":"0ebb0d7f-9dc2-4f7d-9e09-e3ca4e16eb55","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"31dffb08-a45b-4a12-9d41-8c7108b98c9d","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"31dffb08-a45b-4a12-9d41-8c7108b98c9d","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"LayerId":{"name":"2bca2c95-03a0-4b39-b5ec-9bc49cc5a8a5","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_spookymonth","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","name":"31dffb08-a45b-4a12-9d41-8c7108b98c9d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eeb3bd39-d017-4846-91fe-a454f5d8252c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0ebb0d7f-9dc2-4f7d-9e09-e3ca4e16eb55",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"31dffb08-a45b-4a12-9d41-8c7108b98c9d",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_viva_spookymonth","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_viva_spookymonth",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7f3b75e3-9c0c-4104-8613-b2682b8f3272","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eeb3bd39-d017-4846-91fe-a454f5d8252c","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"2b796479-d7c0-4234-be03-751ab6f10287","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ebb0d7f-9dc2-4f7d-9e09-e3ca4e16eb55","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"d818875d-92ac-4d59-b567-62e9c6f6c9a7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31dffb08-a45b-4a12-9d41-8c7108b98c9d","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"7f3b75e3-9c0c-4104-8613-b2682b8f3272","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eeb3bd39-d017-4846-91fe-a454f5d8252c","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2b796479-d7c0-4234-be03-751ab6f10287","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ebb0d7f-9dc2-4f7d-9e09-e3ca4e16eb55","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d818875d-92ac-4d59-b567-62e9c6f6c9a7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31dffb08-a45b-4a12-9d41-8c7108b98c9d","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 91,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_viva_spookymonth","path":"sprites/spr_viva_spookymonth/spr_viva_spookymonth.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_viva_spookymonth",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2bca2c95-03a0-4b39-b5ec-9bc49cc5a8a5","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2bca2c95-03a0-4b39-b5ec-9bc49cc5a8a5","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p1 - Viva Sprites",
     "path": "folders/6 - Player Data/p1 - Viva Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_viva_spookymonth",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_car_wheels",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,18 +27,14 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2c49ad0f-a7c9-4987-96ec-42a793141b05","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2c49ad0f-a7c9-4987-96ec-42a793141b05","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"LayerId":{"name":"8eae899c-60ae-4e3f-a957-ad9acaa9bdf9","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_car_wheels","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","name":"2c49ad0f-a7c9-4987-96ec-42a793141b05","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"66c2e3f3-41f9-483a-b269-7056f96ee6ab","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"66c2e3f3-41f9-483a-b269-7056f96ee6ab","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"LayerId":{"name":"8eae899c-60ae-4e3f-a957-ad9acaa9bdf9","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_car_wheels","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","name":"66c2e3f3-41f9-483a-b269-7056f96ee6ab","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"197a28a4-d551-48d6-b9c5-bd478888db87","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"197a28a4-d551-48d6-b9c5-bd478888db87","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"LayerId":{"name":"8eae899c-60ae-4e3f-a957-ad9acaa9bdf9","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_car_wheels","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","name":"197a28a4-d551-48d6-b9c5-bd478888db87","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c49ad0f-a7c9-4987-96ec-42a793141b05",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"66c2e3f3-41f9-483a-b269-7056f96ee6ab",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"197a28a4-d551-48d6-b9c5-bd478888db87",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_car_wheels","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 1.0,
@@ -43,14 +42,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e14b89e5-088e-4c68-a06f-b3b5d388b348","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c49ad0f-a7c9-4987-96ec-42a793141b05","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"16d3182d-a242-4304-871f-310011c3f9d7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66c2e3f3-41f9-483a-b269-7056f96ee6ab","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"ca7cdba6-e891-4922-a6e5-d1433baddd4d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"197a28a4-d551-48d6-b9c5-bd478888db87","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"e14b89e5-088e-4c68-a06f-b3b5d388b348","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c49ad0f-a7c9-4987-96ec-42a793141b05","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"16d3182d-a242-4304-871f-310011c3f9d7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66c2e3f3-41f9-483a-b269-7056f96ee6ab","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ca7cdba6-e891-4922-a6e5-d1433baddd4d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"197a28a4-d551-48d6-b9c5-bd478888db87","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,22 +65,13 @@
     "yorigin": 56,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_car_wheels","path":"sprites/spr_car_wheels/spr_car_wheels.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8eae899c-60ae-4e3f-a957-ad9acaa9bdf9","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8eae899c-60ae-4e3f-a957-ad9acaa9bdf9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "a - Object Sprites",
     "path": "folders/9 - Objects And Items/a - Object Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_car_wheels",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

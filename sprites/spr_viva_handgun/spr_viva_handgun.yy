@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_viva_handgun",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,30 +27,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3a0e49c9-2cf1-4ea7-8028-782dd9855d0f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3a0e49c9-2cf1-4ea7-8028-782dd9855d0f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":{"name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"3a0e49c9-2cf1-4ea7-8028-782dd9855d0f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"12215d3b-7d86-431b-8c05-c5530b5ff373","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"12215d3b-7d86-431b-8c05-c5530b5ff373","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":{"name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"12215d3b-7d86-431b-8c05-c5530b5ff373","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"69d020ae-a167-4f4c-b0d0-d94f908729ec","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"69d020ae-a167-4f4c-b0d0-d94f908729ec","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":{"name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"69d020ae-a167-4f4c-b0d0-d94f908729ec","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4cffee7c-bcee-4904-8a9d-8401b0a94cde","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4cffee7c-bcee-4904-8a9d-8401b0a94cde","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":{"name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"4cffee7c-bcee-4904-8a9d-8401b0a94cde","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b84ade00-c00f-4c2a-8cbf-80aa8df355fa","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b84ade00-c00f-4c2a-8cbf-80aa8df355fa","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":{"name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"b84ade00-c00f-4c2a-8cbf-80aa8df355fa","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f3a979e3-93db-4ede-933f-72e2c3e8d59c","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f3a979e3-93db-4ede-933f-72e2c3e8d59c","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":{"name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"f3a979e3-93db-4ede-933f-72e2c3e8d59c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"368c9a49-25c7-492e-a0e6-1faef3fd9646","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"368c9a49-25c7-492e-a0e6-1faef3fd9646","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"LayerId":{"name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","name":"368c9a49-25c7-492e-a0e6-1faef3fd9646","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3a0e49c9-2cf1-4ea7-8028-782dd9855d0f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"12215d3b-7d86-431b-8c05-c5530b5ff373",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"69d020ae-a167-4f4c-b0d0-d94f908729ec",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4cffee7c-bcee-4904-8a9d-8401b0a94cde",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b84ade00-c00f-4c2a-8cbf-80aa8df355fa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f3a979e3-93db-4ede-933f-72e2c3e8d59c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"368c9a49-25c7-492e-a0e6-1faef3fd9646",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_viva_handgun",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -55,18 +46,18 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 7.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8ed6808a-fbf8-4155-b669-a517b91f0a3c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a0e49c9-2cf1-4ea7-8028-782dd9855d0f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"cb1f7181-42f6-40e2-b7e1-d8bfc6740c40","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"12215d3b-7d86-431b-8c05-c5530b5ff373","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c124ad8d-fd7d-4f3d-8090-a720e4ec3738","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69d020ae-a167-4f4c-b0d0-d94f908729ec","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"4d3fa65a-502f-403a-8f50-c58a617c7d82","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4cffee7c-bcee-4904-8a9d-8401b0a94cde","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f4c23f42-2a03-4388-afaa-d9e1d9218774","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b84ade00-c00f-4c2a-8cbf-80aa8df355fa","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"98a5f73c-0aa3-424f-817c-e23a9a7f20ba","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f3a979e3-93db-4ede-933f-72e2c3e8d59c","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"9ef73c1b-d19a-4527-81d7-f31562b01d7c","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"368c9a49-25c7-492e-a0e6-1faef3fd9646","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"8ed6808a-fbf8-4155-b669-a517b91f0a3c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a0e49c9-2cf1-4ea7-8028-782dd9855d0f","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cb1f7181-42f6-40e2-b7e1-d8bfc6740c40","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"12215d3b-7d86-431b-8c05-c5530b5ff373","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c124ad8d-fd7d-4f3d-8090-a720e4ec3738","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69d020ae-a167-4f4c-b0d0-d94f908729ec","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4d3fa65a-502f-403a-8f50-c58a617c7d82","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4cffee7c-bcee-4904-8a9d-8401b0a94cde","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f4c23f42-2a03-4388-afaa-d9e1d9218774","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b84ade00-c00f-4c2a-8cbf-80aa8df355fa","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"98a5f73c-0aa3-424f-817c-e23a9a7f20ba","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f3a979e3-93db-4ede-933f-72e2c3e8d59c","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9ef73c1b-d19a-4527-81d7-f31562b01d7c","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"368c9a49-25c7-492e-a0e6-1faef3fd9646","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -82,22 +73,13 @@
     "yorigin": 91,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_viva_handgun","path":"sprites/spr_viva_handgun/spr_viva_handgun.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_viva_handgun",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e3abcd3f-5887-413e-b3f2-c5ba5e54215f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "p1 - Viva Sprites",
     "path": "folders/6 - Player Data/p1 - Viva Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_viva_handgun",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
