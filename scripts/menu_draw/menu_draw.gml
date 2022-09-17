@@ -29,7 +29,7 @@ draw_set_halign(fa_left)
 //menuSelect
 draw_set_color(c_white) draw_set_alpha(0.75)
 
-draw_rectangle(0,32-2+10*menuSelect,184,42-2+10*menuSelect,false)
+draw_rectangle(0,32-2+10*menuSelect,180,42-2+10*menuSelect,false)
 
 draw_set_alpha(1)
 draw_set_color(c_gray)
@@ -47,13 +47,18 @@ if menuSelect=4 {draw_set_color(c_white) MenuText="VISIT BETTY O'HARA AND BUY IT
 draw_text(32+8,32+40,"SHOP") draw_set_color(c_gray)
 if menuSelect=5 {draw_set_color(c_white) MenuText="PRACTICE YOUR DIVA'S SKILLS!"}
 draw_text(32+10,32+50,"TRAINING") draw_set_color(c_gray)
-if menuSelect=6 if global.UnlockCharacterData=1
-{draw_set_color(c_white) MenuText="CHECK DATA OF THE CHARACTERS!"} else draw_set_color(c_dkgray)
-draw_text(32+12,32+60,"CHARACTER PROFILE") draw_set_color(c_gray)
-if menuSelect=7 {draw_set_color(c_white) MenuText="CHECK THE ARTWORK AND CONCEPT ART!"}
-draw_text(32+14,32+70,"GALLERY") draw_set_color(c_gray)
-if menuSelect=8 {draw_set_color(c_white) MenuText="PLAY SOME EXTRA GAMES!"}
-draw_text(32+16,32+80,"MINIGAMES") draw_set_color(c_gray)
+
+if menuSelect=6 {draw_set_color(c_white) MenuText="PLAY SOME GAMES OR FIGHT EACH OTHER!"}
+draw_text(32+12,32+60,"MINIGAMES & VS") draw_set_color(c_gray)
+
+
+if menuSelect=7 if global.UnlockCharacterData=1
+{draw_set_color(c_white) MenuText="CHECK DATA OF THE CHARACTERS & STAGES!"} else draw_set_color(c_dkgray)
+draw_text(32+14,32+70,"PROFILE & INFO") draw_set_color(c_gray)
+
+if menuSelect=8 {draw_set_color(c_white) MenuText="CHECK THE ARTWORK AND CONCEPT ART!"}
+draw_text(32+16,32+80,"GALLERY") draw_set_color(c_gray)
+
 if menuSelect=9 {draw_set_color(c_white) MenuText="PLAY SONGS AND WATCH THE DIVAS DANCE!"}
 draw_text(32+18,32+90,"SOUND TEST") draw_set_color(c_gray)
 if menuSelect=10 {draw_set_color(c_white) MenuText="WATCH THE MORE CINEMATIC CUTSCENES!"}

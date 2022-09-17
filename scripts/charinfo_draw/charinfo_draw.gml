@@ -263,6 +263,8 @@ draw_sprite(spr_selface,1,round(0+arrowSel1),0) if arrowSel2>0 arrowSel2-=0.1 el
 maxhp=hp
 draw_set_color(c_white) draw_rectangle(224+8-1-round(maxhp*45/2),8-1+20,224+8+1+round(maxhp*45/2),8+8+1+20,false)
 draw_set_color(c_yellow) draw_rectangle(224+8-round(maxhp*45/2),8+20,224+8+round(maxhp*45/2),8+8+20,false)
-
+draw_set_halign(fa_right)
+draw_set_color(c_white) draw_text_transformed(224+8-2-round(maxhp*45/2),8-1+20+2,"HP",0.5,1,0)
+draw_set_halign(fa_left)
 }
 }}

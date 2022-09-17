@@ -100,8 +100,8 @@ draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL")
 
 if commandType=2
 {
-draw_buttontext(8,8,8,"",spr_commandbutton,6+6*commandMul,"","SELECT")
-draw_buttontext(8,8+16,8,"",spr_commandbutton,4+6*commandMul,"","CANCEL")
+draw_buttontext(8,8,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
+draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL")
 if global.UnlockAltPal=1
 draw_buttontext(320-8,8,8,"PALETTE",spr_commandbutton,7+6*commandMul,"","")
 

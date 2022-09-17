@@ -66,15 +66,31 @@ key_right = keyboard_check(ord("D"));
 
 	key_up = keyboard_check(ord("W")) or gamepad_axis_value(i, gp_axislv)<-0.1 or gamepad_button_check(i,gp_padu)
 	key_down = keyboard_check(ord("S")) or gamepad_axis_value(i, gp_axislv)>0.9 or gamepad_button_check(i,gp_padd)
+	
+	if room=rm_characterselect
+	key_attack = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("J")) or gamepad_button_check_pressed(i,gp_face1)
+	else
 	key_attack = keyboard_check_pressed(ord("J")) or gamepad_button_check_pressed(i,gp_face3) 
+	
 	key_charge= keyboard_check(ord("J")) or gamepad_button_check(i,gp_face3)
 	key_release= keyboard_check_released(ord("J")) or gamepad_button_check_released(i,gp_face3);
 	key_shield = gamepad_button_check(i,gp_face2) or keyboard_check(ord("L"));
+	
+if room=rm_characterselect
+key_shield_pressed =  keyboard_check_pressed(ord("L")) or gamepad_button_check_pressed(i,gp_face3) 
+	else
 	key_shield_pressed =  gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("L"));
 
+if room=rm_characterselect
+	key_jump = gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("K"));
+else
 	key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(i,gp_face1)
+	
 		key_jump_hold = keyboard_check(vk_space) or keyboard_check(ord("K")) or gamepad_button_check(i,gp_face1)
 		
+if room=rm_characterselect
+key_super=keyboard_check_pressed(ord("H")) or gamepad_button_check_pressed(i,gp_face4)
+else
 key_super=keyboard_check_pressed(ord("H")) or gamepad_button_check_pressed(i,gp_face4)
 		
 		
