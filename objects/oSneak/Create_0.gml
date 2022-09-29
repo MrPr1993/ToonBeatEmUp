@@ -8,6 +8,11 @@ enemyPortraitIndex=6
 chardraw=draw_sneak;
 weaponBack=1;
 
+enterAnim=14 
+//leaveAnim=12
+
+enemyID=3
+
 drawarms=1;
 
 walkSpeed=0.5

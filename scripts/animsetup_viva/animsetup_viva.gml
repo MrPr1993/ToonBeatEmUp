@@ -109,7 +109,8 @@ if animFrame>15.5 animFrame=0
 	}
 	if weaponspawn=oHammer ////Hammer Stand
 	{zAddGround=0 image_index=0
-	sprite_index=spr_viva_grab
+	sprite_index=spr_viva_standweapon
+	weaponanim(weaponspr,weaponIndex,10,-46,72*image_xscale,weaponcolor)
 
 	if weapontype=2 or weapontype=6 or weapontype=7 ////Machine Gun Stand
 	{
@@ -1091,7 +1092,7 @@ selfatk.recovery=30
 		///Taunt
 	if anim=83
 {sprite_index=spr_viva_taunt //if key_right if animFrame<1 {animFrame=0 anim=211}
-atk=0 
+atk=0 weaponanim(weaponspr,weaponIndex,99990,99999,101*image_xscale,weaponcolor)
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.1)
 	frame_set(2,2,0.2) if animFrame=3 //-58

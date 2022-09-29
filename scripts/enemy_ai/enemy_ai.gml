@@ -6,6 +6,34 @@ function enemy_ai() {
 	if oPlayer.dead=0
 	targetEnemy=oPlayer
 	////////AI SETUP
+	{		if leaveMode=1 
+		
+		{if (canAttack!=7 and canAttack!=8) { canAttack=8}
+		if hurt=1 canAttack=8
+		}
+if leaveMode=1
+{if canmove=1
+	{
+	if canAttack=7 ////Run On-Screen
+	{RunAnimRecharge=1
+		{if image_xscale=-1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
+		anim=1 dashing=2 doubledash=0.2 RunAnimRecharge=1 
+	key_up=0 key_down=0
+	}
+	
+	if canAttack=8 ////Run Away
+	{
+		
+	image_xscale=leaveDir RunAnimRecharge=1
+	if x!=clamp(x,-__view_get( e__VW.XView, 0 )-sprite_get_width(mask_index)/2,__view_get( e__VW.XView, 0 )+320+sprite_get_width(mask_index)/2)
+instance_destroy()
+		{if image_xscale=-1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
+	anim=1 dashing=2 doubledash=0.2 RunAnimRecharge=1
+	if leaveAnim!=-1 {canmove=0 animFrame=0 anim=leaveAnim}
+	key_up=0 key_down=0
+	}}
+	}
+else	
 	if targetEnemy!=-1
 	{
 	if instance_exists(targetEnemy)
@@ -132,6 +160,9 @@ function enemy_ai() {
 	else {key_left=0 key_right=0 key_up=0 key_down=0 key_attack=0}
 	}
 	else {key_left=0 key_right=0 key_up=0 key_down=0 key_attack=0}
+	
+	}
+	
 	}
 	else
 	reFocusTime-=1

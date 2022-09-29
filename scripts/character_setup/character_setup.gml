@@ -20,6 +20,10 @@ playerGet=0
 	AIoff=0
 	
 	
+	leaveMode=0
+	enterAnim=11
+	leaveAnim=-1
+	leaveDir=1
 
 	hp=1
 	maxhp=1

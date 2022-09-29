@@ -13,6 +13,8 @@ DamageVoice3=snd_femenemy6
 DeathCry=snd_femenemy1
 HitGround=snd_hitground
 
+enemyID=4
+
 rangeAtk=200
 
 pointshit=10

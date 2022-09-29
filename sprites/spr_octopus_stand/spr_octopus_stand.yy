@@ -67,7 +67,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Octopus",
-    "path": "folders/7 - Enemies/Octopus.yy",
+    "name": "ToonBeatEmUp",
+    "path": "ToonBeatEmUp.yyp",
   },
 }

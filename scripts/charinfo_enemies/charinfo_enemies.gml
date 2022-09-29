@@ -10,18 +10,19 @@ descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
   charinfo_set(5,spr_burglar_stand,3,animsetup_burglar,draw_enemy,spr_enemypal,2,spr_enemyface,1,"MR.BURG",
 "RUN OF THE MILL BURGLAR. THIS CHUMP'S FODDER, BUT HIS KICK'LL SEND YOU ROLLING SO WATCH OUT!")
 	dataabilities="BIKING,PUNCHING,KICKING"
+unlockedChar[1]=global.UnlockEnemy[1] charNO=1
 break;
   case 2:
     hp=0.2
    charinfo_set(6,spr_burglarB_stand,3,animsetup_burglar,draw_enemy,spr_enemypal,2,spr_enemyface,20,"MR.TEEF",
 "ANOTHER BURGLAR, WHO'S ALSO ANOTHER DUMMY FODDER. BUT HE MAY SHOW UP WITH A WEAPON TO STRIKE YOU WITH! STILL A CHUMP.")
+unlockedChar[2]=global.UnlockEnemy[2] charNO=2
 break;
-
  case 3:
    hp=0.4
    charinfo_set(7,spr_sneak_stand,3,animsetup_burglar,draw_enemy,spr_sneakpal,0,spr_enemyface,6,"MR.SNEAK",
 "THIS TRENCHCOAT JERK SLIDES AROUND TO TRIP YOU UP AND TRIES TO GRAB YOU. WORST OF ALL? THEY THROW BOMBS!")
-
+unlockedChar[3]=global.UnlockEnemy[3] charNO=3
 break;
   case 4:
    charinfo_set(8,spr_femburglar_stand,2,animsetup_femburglar,draw_enemy,spr_enemypal,2,spr_enemyface,2,"MR.CHILL",
@@ -37,7 +38,7 @@ if dataPal=2
 name="MS.SPICE" current_pal=4
 desc="COMING IN PAIRS SHE'LL ANNOY YOU WITH WITH LEGS TO KICK YOU AND KNOWS ENOUGH DEFENSE TO GUARD YOUR ATTACKS."
 }
-
+charNO=4
 break;
   case 5:
    charinfo_set(9,spr_robot_stand,2,animsetup_robot,draw_robot,spr_robotpal,2,spr_enemyface,4,"MR.BOLTS",
@@ -48,7 +49,7 @@ break;
 	robotArmRsprite=spr_robot_arm
 	name="MR.BOLTS"
 desc="THIS BIG, FANCY BOT COMES EQUIPPED WITH A SHOCKING LASER AND STRONG, BUT DETACHABLE ARMS."
-	 
+	 charNO=5
 }
 if dataPal=2
 {current_pal=2

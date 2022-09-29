@@ -1,12 +1,20 @@
 /// @description Attack
 function ai_actions() {	alarmCheck1=alarm[1]
+	
+if canAttack=7 
+{canmove=0 animFrame=0 anim=enterAnim canAttack=8 exit;}
+	
+if canAttack!=7 and canAttack!=8
+{
 	if canAttack!=6
 	alarm[1]=choose(60,70,80,90)
 	else {canAttack=6 exit;}
+}
 
-
-	if canmove=1 and  act=1 and canAttack!=6 and canGrab=0 and oControl.ignore=0
+	if canmove=1 and  act=1 and canAttack!=6 and canGrab=0 and oControl.ignore=0 and leaveMode=0
 	{
+
+		
 	canAttack=choose(2,3)
 
 	if y=clamp(y,targetY-1,targetY+1)
@@ -53,13 +61,13 @@ function ai_actions() {	alarmCheck1=alarm[1]
 
 
 	if AIchoose=1 
-	if ground or atkAir=1
+	if ground or atkAir=1  or leaveMode=0
 	{
 	ground=0
 	zSpeed=-16
 	}
 
-	if ground or atkAir=1
+	if ground or atkAir=1 or leaveMode=0
 	{
 	if x<__view_get( e__VW.XView, 0 )+16 {key_right=1 key_left=0}
 	if x>__view_get( e__VW.XView, 0 )+320-16 {key_left=-1 key_right=0}

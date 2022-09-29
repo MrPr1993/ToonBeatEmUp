@@ -6,6 +6,7 @@ function enemy_control() {
 	{
 	if place_free(x-(walkSpeed-dashing-RunMoveSpeedDecrease),y) x-=(walkSpeed+dashing+RunMoveSpeedDecrease)
 	if ground
+	if leaveMode=0
 	{
 	if x>targetX+rangeX if image_xscale!=-1 {alarm[1]=30 canAttack=0 image_xscale=-1}
 	if x<targetX-rangeX if image_xscale!=1 {alarm[1]=30 canAttack=0 image_xscale=1}
@@ -16,6 +17,7 @@ function enemy_control() {
 	{
 	if place_free(x+(walkSpeed+dashing+RunMoveSpeedDecrease),y) x+=(walkSpeed+dashing+RunMoveSpeedDecrease)
 	if ground
+	if leaveMode=0
 	{
 	if x>targetX+rangeX+2 if image_xscale!=-1 {alarm[1]=30 canAttack=0 image_xscale=-1}
 	if x<targetX-rangeX-2 if image_xscale!=1 { alarm[1]=30 canAttack=0 image_xscale=1}
@@ -56,6 +58,8 @@ function enemy_control() {
 	}
 
 	///Attack
+		if leaveMode=0
+	{
 	if key_attack
 	{
 	if canmove=1 {canmove=0 alarm[1]=choose(10,20,30)} animFrame=0
@@ -81,6 +85,7 @@ function enemy_control() {
 	alarm[0]=4
 	}
 	///
+	}
 	}
 	}
 

@@ -2,7 +2,7 @@
 enemy_data()
 
 enemyscript=animsetup_burglar
-enemyID=4
+enemyID=1
 dizzyPercentageMax=25
 
 nameID="None"

@@ -1,6 +1,29 @@
 function animsetup_fatburglar() {
 	animsetup_enemy()
 
+if weaponspr=-1
+{
+StandSpr=spr_fatburglar_stand
+MoveSpr=spr_fatburglar_move
+RunSpr=spr_fatburglar_move
+}
+else
+{
+StandSpr=spr_fatburglar_standobject
+if sprite_index=StandSpr or sprite_index=MoveSpr or sprite_index=RunSpr
+weaponX=0 
+if sprite_index=StandSpr weaponY=-93
+if sprite_index=MoveSpr or sprite_index=RunSpr
+{
+if image_index=clamp(image_index,0,0.9) or image_index=clamp(image_index,3,3.9) weaponY=-92
+if image_index=clamp(image_index,1,1.9) or image_index=clamp(image_index,4,4.9) weaponY=-93
+if image_index=clamp(image_index,2,2.9) or image_index=clamp(image_index,5,5.9) weaponY=-94
+}
+MoveSpr=spr_fatburglar_moveobject
+RunSpr=spr_fatburglar_moveobject
+}
+
+
 	overwriteAttack=1
 	overwriteAttack2=1
 
@@ -12,10 +35,15 @@ function animsetup_fatburglar() {
 	///Attacks
 	if anim=10 ///Attack Pick
 	{
+	if weaponspr=-1
+	{
 	if distance_to_object(targetEnemy)<100
 	anim=11
 	else
 	anim=13
+	}
+	else
+	anim=14
 	}
 
 
@@ -118,7 +146,27 @@ function animsetup_fatburglar() {
 
 	}else canbeGrabbed=1
 
-
+if anim=14 /////Object Throw
+{
+if animFrame=0 {PlaySoundNoStack(snd_fatburglar) PlaySoundNoStack(snd_swing) sprite_index=spr_fatburglar_throwobject
+	weaponX=1 weaponY=-93
+	}
+frame_set(0,0,0.1) if animFrame=1 {	weaponX=-4 weaponY=-90}
+frame_set(1,1,0.05)  if animFrame=2 {weaponX=-2 weaponY=-93}
+frame_set(2,0,0.5) 
+if animFrame=3
+{
+if weaponspr!=-1 {
+	item=instance_create_depth(x,y,-1,oGrabbable) item.sprite_index=weaponspr item.image_speed=0
+	item.hasitem=spawnID item.z=z-92 item.isEnemy=1 item.spdZ=-4 item.hspeed=4*image_xscale
+	weaponspr=-1 item.canGrav=1 item.image_xscale=image_xscale item.ground=0
+	}
+}
+frame_set(3,2,0.1)
+frame_set(4,3,0.1) if animFrame>5 sprite_index=spr_fatburglar_attack2
+frame_set(5,0,0.1) 
+if animFrame>5.5 canmove=1
+}
 
 
 }

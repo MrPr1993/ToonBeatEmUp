@@ -153,7 +153,7 @@ else
 
 if anim=14 ///Item Throw Attack
 { hit=0  
-sprite_index=spr_sneak_throwitem MoveType=0 damage=0.1
+sprite_index=spr_sneak_throwitemb MoveType=0 damage=0.1
 image_index=animFrame image_speed=0
 
 if animFrame=3

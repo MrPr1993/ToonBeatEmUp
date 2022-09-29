@@ -108,7 +108,8 @@ if animFrame>15.5 animFrame=0
 	}
 	if weaponspawn=oHammer ////Hammer Stand
 	{zAddGround=0 image_index=0
-	sprite_index=spr_bahati_attack
+	sprite_index=spr_bahati_standweapon
+	weaponanim(weaponspr,weaponIndex,23,-44,101*image_xscale,weaponcolor)
 
 	if weapontype=2 or weapontype=6 or weapontype=7////Machine Gun Stand
 	{
@@ -137,11 +138,11 @@ if animFrame>15.5 animFrame=0
 	if anim=1 ///Move
 	{powlock=0 weaponBack=1
 	if image_index=clamp(image_index,0,0.9) or image_index=clamp(image_index,3,3.9)
-	weaponanim(weaponspr,weaponIndex,15,-48,90*image_xscale,weaponcolor)
+	weaponanim(weaponspr,weaponIndex,20,-48,101*image_xscale,weaponcolor)
 	if image_index=clamp(image_index,1,1.9) or image_index=clamp(image_index,4,4.9)
-	weaponanim(weaponspr,weaponIndex,15,-49,90*image_xscale,weaponcolor)
+	weaponanim(weaponspr,weaponIndex,20,-49,101*image_xscale,weaponcolor)
 	if image_index=clamp(image_index,2,2.9) or image_index=clamp(image_index,5,5.9)
-	weaponanim(weaponspr,weaponIndex,15,-50,90*image_xscale,weaponcolor)
+	weaponanim(weaponspr,weaponIndex,20,-50,101*image_xscale,weaponcolor)
 
 
 	if dashing=0
@@ -1223,7 +1224,7 @@ if targetID!=-1
 			///Taunt
 	if anim=83
 {sprite_index=spr_bahati_taunt
-atk=0 
+atk=0 weaponanim(weaponspr,weaponIndex,99990,99999,101*image_xscale,weaponcolor)
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.1)
 	frame_set(2,2,0.2) if animFrame=3 //-58

@@ -48,8 +48,11 @@ function animsetup_enemy() {
 	else
 	{sprite_index=MoveSpr
 	if HasRunAnim=1 
+	if leaveMode=0
+	{
 	if (image_xscale=1 and key_right) 
 	or (image_xscale=-1 and key_left) sprite_index=RunSpr 
+	} else sprite_index=RunSpr 
 
 	}
 	

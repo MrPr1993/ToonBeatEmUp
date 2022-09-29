@@ -103,7 +103,9 @@ if animFrame>8 animFrame=0
 	}
 	if weaponspawn=oHammer ////Hammer Stand
 	{zAddGround=0 image_index=0
-	sprite_index=spr_hina_runatk
+	sprite_index=spr_hina_standweapon
+	weaponanim(weaponspr,weaponIndex,11,-51,72*image_xscale,weaponcolor)
+
 
 	if weapontype=2 or weapontype=6 or weapontype=7 ////Machine Gun Stand
 	{
@@ -132,11 +134,11 @@ if animFrame>8 animFrame=0
 	if anim=1 ///Move
 	{powlock=0 weaponBack=1
 	if image_index=clamp(image_index,0,0.9) or image_index=clamp(image_index,3,3.9)
-	weaponanim(weaponspr,weaponIndex,6,-51,74*image_xscale,weaponcolor)
+	weaponanim(weaponspr,weaponIndex,14,-49,72*image_xscale,weaponcolor)
 	if image_index=clamp(image_index,1,1.9) or image_index=clamp(image_index,4,4.9)
-	weaponanim(weaponspr,weaponIndex,6,-49,74*image_xscale,weaponcolor)
+	weaponanim(weaponspr,weaponIndex,14,-50,72*image_xscale,weaponcolor)
 	if image_index=clamp(image_index,2,2.9) or image_index=clamp(image_index,5,5.9)
-	weaponanim(weaponspr,weaponIndex,6,-50,74*image_xscale,weaponcolor)
+	weaponanim(weaponspr,weaponIndex,14,-51,72*image_xscale,weaponcolor)
 
 	if dashing=0
 	{
@@ -151,7 +153,7 @@ if animFrame>8 animFrame=0
 	}
 	if weaponspawn=oHammer ////Hammer Move
 	{zAddGround=0 
-	sprite_index=spr_hina_move
+	sprite_index=spr_hina_moveweapon
 	}
 	}
 	else
@@ -1109,7 +1111,7 @@ afterimage_create(4,make_colour_rgb(247,008, 33),current_pal,my_pal_sprite,0)
 			///Taunt
 	if anim=83
 {sprite_index=spr_hina_taunt
-atk=0 
+atk=0 weaponanim(weaponspr,weaponIndex,-15,-499995,142*image_xscale,weaponcolor)
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.1)
 	frame_set(2,2,0.2) if animFrame=3 //-58

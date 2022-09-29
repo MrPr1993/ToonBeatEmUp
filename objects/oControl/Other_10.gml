@@ -79,7 +79,15 @@ if enemySpawn=7 {enemySpawnName="8 Gun" spawnUnit=oGun}
 if enemySpawn=8 {enemySpawnName="9 Tommy Gun" spawnUnit=oTommyGun}
 if enemySpawn=9 {enemySpawnName="10 Shotgun" spawnUnit=oShotgun}
 if enemySpawn=10 {enemySpawnName="11 Ice Gun" spawnUnit=oIceGun}
-if enemySpawn=11 {enemySpawnName="12 Ice Gun" spawnUnit=oIceGun}
+if enemySpawn=11 {enemySpawnName="12 Axe" spawnUnit=oAxe}
+if enemySpawn=12 {enemySpawnName="13 Katana" spawnUnit=oKatana}
+if enemySpawn=13 {enemySpawnName="14 Shovel" spawnUnit=oShovel}
+if enemySpawn=14 {enemySpawnName="15 Pipe" spawnUnit=oPipe}
+if enemySpawn=15 {enemySpawnName="16 Taser" spawnUnit=oTaser}
+if enemySpawn=16 {enemySpawnName="17 Sword" spawnUnit=oSword}
+if enemySpawn=17 {enemySpawnName="18 Pie" spawnUnit=oPie}
+if enemySpawn=18 {enemySpawnName="19 Whip" spawnUnit=oWhip}
+if enemySpawn=18 {enemySpawnName="20 Staff" spawnUnit=oStaff}
 }
 
 if spawnType="Obstacle"

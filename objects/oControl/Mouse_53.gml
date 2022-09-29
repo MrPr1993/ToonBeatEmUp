@@ -21,10 +21,18 @@ en=instance_create(mouse_x,mouse_y,spawnUnit)
 if keyboard_check(vk_pageup) with en
 {canmove=0 anim=70002}
 
+if mouse_check_button(mb_right) with en
+{
+if x>oPlayer.x {image_xscale=-1 x=__view_get( e__VW.XView, 0 )+320+32 } else {image_xscale=1 x=__view_get( e__VW.XView, 0 )-32}
+alarm[1]=20 canAttack=7 leaveMode=1 leaveDir=-image_xscale
+
+}
+
 if keyboard_check(vk_shift) with en
 {
 if object_index=oEnemy1
 {canmove=0 anim=70000}
+
 
 if object_index=oBurger
 {
@@ -58,7 +66,12 @@ if object_index=oEnemy1B if keyboard_check(vk_control)
 
 }
 
+if object_index=oFatBurglar if keyboard_check(vk_control)
+{
+weaponspr=choose(spr_crate,spr_barrel_roll,spr_dbarrel,spr_slotmachine,spr_trash,spr_trash2,spr_vent)
+spawnID=choose(oHotDog,oBurger,oAxe)
 
+}
 
 if object_index=oSwing if keyboard_check(vk_control)
 {
@@ -81,6 +94,8 @@ if oPlayer.x>x image_xscale=1 else image_xscale=-1
 if place_meeting(x,y,oHeight32)
 {h=instance_place(x,y,oHeight32)
 z=-320}
+
+
 }
 
 if spawnUnit=oAreaSpawner 

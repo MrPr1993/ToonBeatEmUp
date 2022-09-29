@@ -175,12 +175,10 @@ global.UnlockStageC[16]=0
 
 stagedata_load()
 
-global.UnlockEnemy[1]=c_white
-global.UnlockEnemy[2]=c_white
-global.UnlockEnemy[3]=c_white
-global.UnlockEnemy[4]=c_white
+global.UnlockEnemy[99]=0
+enemydata_setup()
 
-
+enemydata_load()
 
 global.MenuGlobal=0
 global.MenuSkip=0

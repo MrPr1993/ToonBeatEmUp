@@ -10,6 +10,8 @@ enemyPortraitIndex=20
 hp=0.2
 maxhp=0.2
 
+enemyID=2
+
 HasRunAnim=1
 hasFront=1
 hasIdle=1

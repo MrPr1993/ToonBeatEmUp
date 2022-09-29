@@ -115,11 +115,12 @@ weapontype=0
 weaponHitType=1
 WswingSound=snd_swing3
 
-unlockedChar[50]=0
+unlockedChar[99]=0
 setunlock=0
 
+unlockedChar[0]=1
 
-enemydeathinit()
+//enemydeathinit()
 
 charNO=1
 

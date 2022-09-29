@@ -36,4 +36,5 @@ break;
   dataabilities="WIND,ACROBATICS,SPEED,\nGARDENING,BOUNCING,BREW"
 break;
 }
+charNO=0
 }
