@@ -70,7 +70,7 @@ if level=42 roomGo=rm_testarea2//
 if level=43 roomGo=rm_testarea3//
 if level=44 roomGo=rm_testarea4//
 
-if level=45 roomGo=rm_cargame
+if level=45 roomGo=rm_paletteeditor
 
 if level=51 roomGo=rm_cutscene1
 

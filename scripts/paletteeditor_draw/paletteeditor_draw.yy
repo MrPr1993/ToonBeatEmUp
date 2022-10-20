@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "assets_load",
+  "name": "paletteeditor_draw",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "1b - Outside Assets",
-    "path": "folders/1b - Outside Assets.yy",
+    "name": "1 - General Objects",
+    "path": "folders/1 - General Objects.yy",
   },
 }

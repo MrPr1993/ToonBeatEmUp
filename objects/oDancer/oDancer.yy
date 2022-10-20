@@ -1,22 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oClock",
+  "name": "oDancer",
   "spriteId": {
-    "name": "spr_clock",
-    "path": "sprites/spr_clock/spr_clock.yy",
+    "name": "spr_dancer_stand",
+    "path": "sprites/spr_dancer_stand/spr_dancer_stand.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": {
-    "name": "spr_selfatk",
-    "path": "sprites/spr_selfatk/spr_selfatk.yy",
+    "name": "mask_small",
+    "path": "sprites/mask_small/mask_small.yy",
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "oPizza",
-    "path": "objects/oPizza/oPizza.yy",
+    "name": "oEnemy1",
+    "path": "objects/oEnemy1/oEnemy1.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -36,7 +36,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Special Items",
-    "path": "folders/9 - Objects And Items/b - Items/Special Items.yy",
+    "name": "Dancer",
+    "path": "folders/7 - Enemies/Dancer.yy",
   },
 }
