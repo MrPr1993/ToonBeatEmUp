@@ -1,6 +1,6 @@
 enemy_data()
 
-name="DUCKE"
+name="DUCKESA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=39
 
@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_duck_stand
-MoveSpr=spr_duck_stand
-RunSpr=spr_duck_stand
+MoveSpr=spr_duck_move
+RunSpr=spr_duck_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -32,13 +32,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_duck_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_duck_stand
+JumpSpr2=spr_duck_stand
+ThrownSpr=spr_duck_hit
+FlatSpr=spr_duck_flat
+ShockSpr=spr_duck_elec
+BurnSpr=spr_duck_burned
+FrozenSpr=spr_duck_frozen
 
 
 current_pal=0;
