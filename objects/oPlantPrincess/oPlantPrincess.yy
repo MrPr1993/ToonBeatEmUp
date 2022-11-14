@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oPlantPrincess",
   "spriteId": {
     "name": "spr_plantprincess_stand",
     "path": "sprites/spr_plantprincess_stand/spr_plantprincess_stand.yy",
@@ -28,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +39,4 @@
     "name": "PlantPrincess",
     "path": "folders/8 - Bosses/PlantPrincess.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oPlantPrincess",
-  "tags": [],
-  "resourceType": "GMObject",
 }

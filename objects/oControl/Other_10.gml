@@ -62,10 +62,15 @@ if enemySpawn=8 {enemySpawnName="4-a Swamp Witch" spawnUnit=oWitch}
 if enemySpawn=9 {enemySpawnName="4-b Clown Puppet" spawnUnit=oClown}
 if enemySpawn=10 {enemySpawnName="4-b Duck" spawnUnit=oDuckBoss}
 if enemySpawn=12 {enemySpawnName="4-c Seaweed" spawnUnit=oSeaweed}
-if enemySpawn=13 {enemySpawnName="4-c ???" spawnUnit=oIceGun}
-if enemySpawn=14 {enemySpawnName="4-c Merman Prince" spawnUnit=oPrince}
-if enemySpawn=15 {enemySpawnName="4-c ???" spawnUnit=oIceGun}
-if enemySpawn=16 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
+if enemySpawn=13 {enemySpawnName="5-a ???" spawnUnit=oIceGun} ////Alien
+if enemySpawn=14 {enemySpawnName="5-b Merman Prince" spawnUnit=oPrince}
+if enemySpawn=15 {enemySpawnName="5-c ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=16 {enemySpawnName="6-a ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=17 {enemySpawnName="6-b Plant Princess" spawnUnit=oPlantPrincess}//?Genie
+if enemySpawn=18 {enemySpawnName="6-c ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=19 {enemySpawnName="7- ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=20 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
+
 }
 
 if spawnType="Item"
