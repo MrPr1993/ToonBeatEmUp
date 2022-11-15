@@ -28,8 +28,8 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"04da8be7-7955-4e3a-b143-53afdecf3d1f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90c00d07-7e0b-48ec-ba34-a052bc771e0e",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9cd66501-1049-435b-a85a-b44206b3751b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90c00d07-7e0b-48ec-ba34-a052bc771e0e",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c41200a7-f58a-403e-aebe-c9076a33b12c",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc9bb4dd-f67e-494e-8422-4acf54a9fc47",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ad34f2c8-41af-4e90-a3f3-3d1a1409f308",},
@@ -69,8 +69,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"c11744df-b3c4-49fe-98e5-69546011a8f2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04da8be7-7955-4e3a-b143-53afdecf3d1f","path":"sprites/spr_harpy_hit/spr_harpy_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"d8185c67-1a86-4489-91b1-7be3aede32af","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90c00d07-7e0b-48ec-ba34-a052bc771e0e","path":"sprites/spr_harpy_hit/spr_harpy_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"af74abbb-881b-40e5-8127-ece776421f74","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9cd66501-1049-435b-a85a-b44206b3751b","path":"sprites/spr_harpy_hit/spr_harpy_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"af74abbb-881b-40e5-8127-ece776421f74","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9cd66501-1049-435b-a85a-b44206b3751b","path":"sprites/spr_harpy_hit/spr_harpy_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d8185c67-1a86-4489-91b1-7be3aede32af","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90c00d07-7e0b-48ec-ba34-a052bc771e0e","path":"sprites/spr_harpy_hit/spr_harpy_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"68deb4dd-ba53-414f-becb-99eaf2902d24","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c41200a7-f58a-403e-aebe-c9076a33b12c","path":"sprites/spr_harpy_hit/spr_harpy_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e8218237-6a7a-4392-84dd-b3edac92316f","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc9bb4dd-f67e-494e-8422-4acf54a9fc47","path":"sprites/spr_harpy_hit/spr_harpy_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2f215e3c-eb83-4e83-8716-340ce0d09e95","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad34f2c8-41af-4e90-a3f3-3d1a1409f308","path":"sprites/spr_harpy_hit/spr_harpy_hit.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},

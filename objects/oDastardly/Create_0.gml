@@ -32,13 +32,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_dastardly_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_dastardly_stand
+JumpSpr2=spr_dastardly_stand
+ThrownSpr=spr_dastardly_hit
+FlatSpr=spr_dastardly_flat
+ShockSpr=spr_dastardly_elec
+BurnSpr=spr_dastardly_burned
+FrozenSpr=spr_dastardly_frozen
 
 
 
