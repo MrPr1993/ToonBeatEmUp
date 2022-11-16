@@ -32,13 +32,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_spacer_move
-JumpSpr2=spr_spacer_move
-ThrownSpr=spr_spacer_hit
-FlatSpr=spr_spacer_flat
-ShockSpr=spr_spacer_elec
-BurnSpr=spr_spacer_elec
-FrozenSpr=spr_spacer_frozen
+JumpSpr=spr_shroom_move
+JumpSpr2=spr_shroom_move
+ThrownSpr=spr_shroom_hit
+FlatSpr=spr_shroom_flat
+ShockSpr=spr_shroom_elec
+BurnSpr=spr_shroom_burned
+FrozenSpr=spr_shroom_frozen
 
 
 current_pal=0;

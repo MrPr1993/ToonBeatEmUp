@@ -32,13 +32,15 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_burglar_hit
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_snowgirl_stand
+JumpSpr2=spr_snowgirl_stand
+ThrownSpr=spr_snowgirl_hit
+FlatSpr=spr_snowgirl_flat
+ShockSpr=spr_snowgirl_elec
+BurnSpr=spr_snowgirl_burned
+FrozenSpr=spr_snowgirl_frozen
 
 
+current_pal=0;
+my_pal_sprite=spr_zombiepal
 
