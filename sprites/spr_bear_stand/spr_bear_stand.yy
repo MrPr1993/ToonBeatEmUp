@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 24,
-  "bbox_right": 68,
-  "bbox_top": 27,
-  "bbox_bottom": 95,
+  "bbox_left": 25,
+  "bbox_right": 63,
+  "bbox_top": 14,
+  "bbox_bottom": 93,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -27,7 +27,7 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b607d57c-12a1-4360-819d-da28bfd94cd2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"96b28624-078b-4966-a688-5ba5a6caba1b",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -44,7 +44,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"be55c8bc-0b59-4d44-919d-750dca7894ee","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b607d57c-12a1-4360-819d-da28bfd94cd2","path":"sprites/spr_bear_stand/spr_bear_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f0eda25f-de81-4dea-a392-275f906006de","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96b28624-078b-4966-a688-5ba5a6caba1b","path":"sprites/spr_bear_stand/spr_bear_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -57,8 +57,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 48,
-    "yorigin": 91,
+    "xorigin": 45,
+    "yorigin": 94,
     "eventToFunction": {},
     "eventStubScript": null,
   },

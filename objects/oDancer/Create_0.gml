@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_dancer_stand
-MoveSpr=spr_dancer_stand
-RunSpr=spr_dancer_stand
+MoveSpr=spr_dancer_move
+RunSpr=spr_dancer_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

@@ -21,8 +21,8 @@ height=70
 specialFX=0
 
 StandSpr=spr_shroom_stand
-MoveSpr=spr_shroom_stand
-RunSpr=spr_shroom_stand
+MoveSpr=spr_shroom_move
+RunSpr=spr_shroom_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -42,4 +42,4 @@ FrozenSpr=spr_spacer_frozen
 
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_playerpal

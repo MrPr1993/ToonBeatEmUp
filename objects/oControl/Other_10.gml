@@ -47,6 +47,9 @@ if enemySpawn=32 {enemySpawnName="33 Ladybot" spawnUnit=oLadybot}
 if enemySpawn=33 {enemySpawnName="34 Nurse" spawnUnit=oNurse}
 if enemySpawn=34 {enemySpawnName="35 Shroom" spawnUnit=oShroom}
 if enemySpawn=35 {enemySpawnName="36 Dancer" spawnUnit=oDancer}
+if enemySpawn=36 {enemySpawnName="37 Clown Puppet" spawnUnit=oClown}
+if enemySpawn=37 {enemySpawnName="38 Teddy Bear" spawnUnit=oBear}
+if enemySpawn=38 {enemySpawnName="39 Snow Girl" spawnUnit=oSnowGirl}
 }
 if spawnType="Bosses"
 {
@@ -59,16 +62,15 @@ if enemySpawn=5 {enemySpawnName="3-a Annemari" spawnUnit=oGhostBoss}
 if enemySpawn=6 {enemySpawnName="3-b Hathor" spawnUnit=oPharaoh}
 if enemySpawn=7 {enemySpawnName="3-c Oni Sister" spawnUnit=oOni}
 if enemySpawn=8 {enemySpawnName="4-a Swamp Witch" spawnUnit=oWitch}
-if enemySpawn=9 {enemySpawnName="4-b Clown Puppet" spawnUnit=oClown}
-if enemySpawn=10 {enemySpawnName="4-b Duck" spawnUnit=oDuckBoss}
-if enemySpawn=12 {enemySpawnName="4-c Seaweed" spawnUnit=oSeaweed}
-if enemySpawn=13 {enemySpawnName="5-a ???" spawnUnit=oIceGun} ////Alien
-if enemySpawn=14 {enemySpawnName="5-b Merman Prince" spawnUnit=oPrince}
-if enemySpawn=15 {enemySpawnName="5-c ???" spawnUnit=oIceGun}//?Genie
-if enemySpawn=16 {enemySpawnName="6-a ???" spawnUnit=oIceGun}//?Genie
-if enemySpawn=17 {enemySpawnName="6-b Plant Princess" spawnUnit=oPlantPrincess}//?Genie
-if enemySpawn=18 {enemySpawnName="6-c ???" spawnUnit=oIceGun}//?Genie
-if enemySpawn=19 {enemySpawnName="7- ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=9 {enemySpawnName="4-b Duck" spawnUnit=oDuckBoss}
+if enemySpawn=10 {enemySpawnName="4-c Seaweed" spawnUnit=oSeaweed}
+if enemySpawn=11 {enemySpawnName="5-a ???" spawnUnit=oIceGun} ////Alien
+if enemySpawn=12 {enemySpawnName="5-b Merman Prince" spawnUnit=oPrince}
+if enemySpawn=13 {enemySpawnName="5-c ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=14 {enemySpawnName="6-a ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=15 {enemySpawnName="6-b Plant Princess" spawnUnit=oPlantPrincess}//?Genie
+if enemySpawn=16 {enemySpawnName="6-c ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=17 {enemySpawnName="7- ???" spawnUnit=oIceGun}//?Genie
 if enemySpawn=20 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
 
 }
