@@ -24,7 +24,7 @@ StandSpr=spr_bear_stand
 MoveSpr=spr_bear_move
 RunSpr=spr_bear_move
 
-AtkSpr=spr_burglar_attack
+AtkSpr=spr_bear_attack
 AtkSpr2=spr_burglar_attack2
 AtkSpr3=spr_burglar_attack
 AtkSpr4=spr_burglar_attack

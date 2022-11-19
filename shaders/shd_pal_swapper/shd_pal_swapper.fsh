@@ -5,6 +5,9 @@ uniform sampler2D palette_texture;
 uniform vec2 texel_size;
 uniform vec4 palette_UVs;
 uniform float palette_index;
+//uniform float vecRed;
+//uniform float vecBlue;
+//uniform float vecGreen;
 
 void main()
 {
@@ -23,6 +26,8 @@ void main()
     }
 
     gl_FragColor = source * v_vColour;
-	
+	//gl_FragColor.r = 1.0 * vecRed;
+	//gl_FragColor.b = 1.0 * vecBlue;
+//	gl_FragColor.g = 1.0 * vecGreen;
 	
 }
