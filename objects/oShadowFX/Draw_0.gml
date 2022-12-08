@@ -1,11 +1,19 @@
 if instance_exists(oPlayer) with oPlayer if visible and hasShadow=1
 { 
 if !place_meeting(x,y,oHeight32) and !place_meeting(x,y,oFallHole)
+
 if place_meeting(x,y,oWaterFX)
 {if z>waterMax
+{
+if carMode=0 waterhoverSpr=spr_waterhover else waterhoverSpr=spr_waterhovercar
+
 draw_sprite(waterhoverSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2+waterMax)
+}
 else
+if carMode=0
 draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2+waterMax)
+else
+draw_sprite(spr_carshadow,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2+waterMax)
 }
 else
 draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2)
@@ -14,7 +22,10 @@ if place_meeting(x,y,oWaterFX)
 {if z>waterMax
 draw_sprite(waterhoverSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2+waterMax)
 else
+if carMode=0
 draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2+waterMax)
+else
+draw_sprite(spr_carshadow,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2+waterMax)
 }
 
 }
@@ -78,6 +89,7 @@ if instance_exists(oPlayer) with oPlayer
 if carMode=1 and hasShadow=1 and fallHole=0 and ContinueMode=0
 {if dead=0 and
 !place_meeting(x,y,oFallHole)
+if !place_meeting(x,y,oWaterFX)
 draw_sprite(spr_carshadow,0,x,y)
 }
 if specialShow=1

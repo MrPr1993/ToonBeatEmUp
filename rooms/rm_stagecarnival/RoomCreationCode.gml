@@ -1,4 +1,4 @@
-musicplaystart(-1)
+musicplaystart(msc_carnival)
 global.HiScoreStage=4
 global.HiScoreLevel=4
 //with oEnemySpawner {timeline=tm_stage3 event_user(0)}

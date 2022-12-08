@@ -46,12 +46,25 @@ else
 if anim!=202
 {
 if specialFX=1 shader_set(shd_white_sprite);
-draw_sprite_ext(spr_car_wheels,carAnim,round(x+shake*image_xscale),round(y+z),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+if vehWSpr!=spr_emptyarea
+draw_sprite_ext(vehWSpr,carAnim,round(x+shake*image_xscale),round(y+z),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 
+if place_meeting(x,y,oWaterFX) and z>waterMax	
+{var sprw=sprite_get_width(vehSpr); var sprh=sprite_get_height(vehSpr);
 if hurt=0
-draw_sprite_ext(spr_car,2-2*ground,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+draw_sprite_clip_ext(vehSpr,2-2*ground,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_blend,image_alpha, 
+x-(sprw*2)*image_xscale,y-sprh,x+(sprw*2)*image_xscale,sprh+waterMax)
 else
-draw_sprite_ext(spr_car,hurt,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+draw_sprite_clip_ext(vehSpr,hurt,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_blend,image_alpha, 
+x-(sprw*2)*image_xscale,y-sprh,x+(sprw*2)*image_xscale,sprh+waterMax)
+}
+else
+{
+if hurt=0
+draw_sprite_ext(vehSpr,2-2*ground,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+else
+draw_sprite_ext(vehSpr,hurt,round(x+shake*image_xscale),round(y+z+carAnim),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+}
 }
 shader_reset()
 pal_swap_set(my_pal_sprite,current_pal,false);

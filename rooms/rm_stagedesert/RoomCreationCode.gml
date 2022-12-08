@@ -1,4 +1,4 @@
-musicplaystart(-1)
+musicplaystart(msc_desert)
 global.HiScoreStage=5
 global.HiScoreLevel=5
 //with oEnemySpawner {timeline=tm_stage3 event_user(0)}

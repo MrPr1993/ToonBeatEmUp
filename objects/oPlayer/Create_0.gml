@@ -208,3 +208,7 @@ keyNo=1
 keyNoCheck="A"
 
 my_pal_sprite=global.p1Pals
+
+vehSpr=spr_car
+vehWSpr=spr_car_wheels
+

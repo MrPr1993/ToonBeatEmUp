@@ -68,6 +68,33 @@ exit;
 
 if betatest=1
 {
+/////Change info
+if keyboard_check_pressed(vk_tab) and keyboard_check(vk_shift)
+{
+if instance_exists(oEnemySpawner)
+var changel=get_string("Change level length",oEnemySpawner.MaxXAdd)
+else
+var changel=get_string("Change level length",0)
+if changel="car" or changel="boat"
+{
+if changel="car"
+{with oPlayer {vehSpr=spr_car vehWSpr=spr_car_wheels}}
+if changel="boat"
+with oPlayer {{vehSpr=spr_boat vehWSpr=spr_emptyarea}}
+
+with oPlayer
+if carMode {carMode=0 anim=0 canmove=1}
+else
+{carMode=1; anim=200 canmove=0}
+exit;
+}
+if instance_exists(oEnemySpawner)
+{
+var wavelength=get_string("Change level length",oEnemySpawner.MaxXAdd)
+spawner_followset("WaveSet1",0,wavelength,1)
+}
+}	
+
 if keyboard_check_pressed(vk_add) global.ConsoleType=get_string("Console Type",global.ConsoleType)
 if keyboard_check_pressed(vk_divide)
 {

@@ -1,4 +1,4 @@
-musicplaystart(-1)
+musicplaystart(msc_ufo)
 global.HiScoreStage=6
 global.HiScoreLevel=6
 //with oEnemySpawner {timeline=tm_stage3 event_user(0)}
