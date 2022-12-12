@@ -98,4 +98,11 @@ specialcheck0=0
 //canAttack=6
 
 
+specialtaunt=function()
+{
+sprite_index=spr_burglar_idle
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if animFrame>1.9 animFrame=0
+}
 

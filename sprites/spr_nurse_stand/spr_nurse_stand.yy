@@ -10,9 +10,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 1,
-  "bbox_right": 36,
-  "bbox_top": 2,
+  "bbox_left": 0,
+  "bbox_right": 39,
+  "bbox_top": 10,
   "bbox_bottom": 98,
   "HTile": false,
   "VTile": false,
@@ -28,6 +28,8 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3201bbbd-4aa0-4b3e-90aa-5f7209207115",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23fae46c-2ff5-4f1b-a0d7-4e9649d7c561",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bc301e98-0a4f-4f32-a4c8-007e815acbaa",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -39,12 +41,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"3339de3b-9a45-4308-afc2-151ebaf96f61","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3201bbbd-4aa0-4b3e-90aa-5f7209207115","path":"sprites/spr_nurse_stand/spr_nurse_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ebfa1930-d1a9-4a01-ac8a-46796053778c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"23fae46c-2ff5-4f1b-a0d7-4e9649d7c561","path":"sprites/spr_nurse_stand/spr_nurse_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3392b0b0-5a07-40b9-8390-07d431b2ca40","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc301e98-0a4f-4f32-a4c8-007e815acbaa","path":"sprites/spr_nurse_stand/spr_nurse_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

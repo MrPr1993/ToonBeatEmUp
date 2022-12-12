@@ -2,7 +2,7 @@ enemy_data()
 
 name="TEDI"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=7
+enemyPortraitIndex=49
 
 enemyscript=animsetup_enemy
 

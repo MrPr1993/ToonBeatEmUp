@@ -22,6 +22,12 @@ weaponHitType=1
 WswingSound=snd_swing3
 }
 
+if wpadd="SCIMITAR"
+{
+weapon_setup(oScimitar,spr_scimitar,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,1,64)
+WspriteFX=spr_blood
+}
+
 if wpadd="PIPE"
 weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
 

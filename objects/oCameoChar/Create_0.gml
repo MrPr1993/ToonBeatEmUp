@@ -13,3 +13,8 @@ framespd=0.1
 fallHole=0
 
 trainz=0
+
+
+ground=1
+
+z=0

@@ -11,7 +11,7 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 25,
-  "bbox_right": 63,
+  "bbox_right": 64,
   "bbox_top": 0,
   "bbox_bottom": 95,
   "HTile": false,
@@ -28,6 +28,8 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"506097b6-11c5-4307-8dda-ba62f4bb8826",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f57de73-c49d-473a-9943-92150c9e73d4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c162930-8ba2-4a30-9a4e-7fba9d5e4b34",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -39,12 +41,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7bff5b25-4f74-4ec3-9c6e-4d6a9d1f0413","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"506097b6-11c5-4307-8dda-ba62f4bb8826","path":"sprites/spr_dancer_stand/spr_dancer_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ef2c4d09-6534-4eae-b16c-f4633d4a38ff","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9f57de73-c49d-473a-9943-92150c9e73d4","path":"sprites/spr_dancer_stand/spr_dancer_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fbc7e22c-01fa-43d8-a12b-116338ba5dc1","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c162930-8ba2-4a30-9a4e-7fba9d5e4b34","path":"sprites/spr_dancer_stand/spr_dancer_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

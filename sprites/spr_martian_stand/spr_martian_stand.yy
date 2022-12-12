@@ -11,9 +11,9 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 20,
-  "bbox_right": 62,
-  "bbox_top": 0,
-  "bbox_bottom": 102,
+  "bbox_right": 65,
+  "bbox_top": 1,
+  "bbox_bottom": 103,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,6 +28,8 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f5f0c883-b3ac-443d-b228-146a5afe4005",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5aa62a7-6116-4f74-9fd8-c3f0a55aa581",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"97eac91a-81f5-4107-aaa6-b7f0ce1bfa96",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -39,12 +41,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"585d2a40-c171-4d58-b9c7-f64c68fe373d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f5f0c883-b3ac-443d-b228-146a5afe4005","path":"sprites/spr_martian_stand/spr_martian_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8634d133-bdbb-420f-a1cd-35de4dea4a89","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5aa62a7-6116-4f74-9fd8-c3f0a55aa581","path":"sprites/spr_martian_stand/spr_martian_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"041e8088-7f60-4965-904e-27d93ad674ea","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"97eac91a-81f5-4107-aaa6-b7f0ce1bfa96","path":"sprites/spr_martian_stand/spr_martian_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

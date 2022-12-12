@@ -2,9 +2,10 @@ enemy_data()
 
 name="DANZA"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=43
+enemyPortraitIndex=50
 
 enemyscript=animsetup_enemy
+chardraw=draw_swing;
 
 pointshit=10
 points=100
@@ -13,8 +14,13 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=0.5
+maxhp=0.5
+
+DamageVoice1=snd_femenemy7
+DamageVoice2=snd_femenemy7
+DamageVoice3=snd_femenemy7
+DeathCry=snd_femenemy2
 
 height=70
 
@@ -42,4 +48,6 @@ FrozenSpr=spr_dancer_frozen
 
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_dancerpal
+
+weapon_add("SCIMITAR")

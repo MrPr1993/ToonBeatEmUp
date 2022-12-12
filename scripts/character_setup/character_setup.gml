@@ -4,6 +4,8 @@ function character_setup() {
 	canControl=0
 	controller_setup()
 
+specialtaunt=-1
+
 playerGet=0
 
 	nameID="None"

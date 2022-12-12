@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tilesunderwater",
   "spriteId": {
     "name": "bg_building3",
     "path": "sprites/bg_building3/bg_building3.yy",
@@ -1059,8 +1062,4 @@
     "name": "tilesets",
     "path": "folders/4 - Tile Sets/tilesets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tilesunderwater",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

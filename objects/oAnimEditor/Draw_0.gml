@@ -181,7 +181,7 @@ if keyboard_check(ord("0"))
 if !keyboard_check(vk_shift)
 {
 spr = ds_map_create();
-for(var i=0;i<1000;i++)
+for(var i=0;i<2000;i++)
     if sprite_exists(i) 
         ds_map_add( spr, sprite_get_name(i), i);
 
@@ -198,7 +198,7 @@ else
 else
 {
 spr = ds_map_create();
-for(var i=0;i<1000;i++)
+for(var i=0;i<2000;i++)
     if sprite_exists(i) 
         ds_map_add( spr, sprite_get_name(i), i);
 

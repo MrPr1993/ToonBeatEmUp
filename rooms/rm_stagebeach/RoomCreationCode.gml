@@ -8,7 +8,7 @@ oControl.stagePause=1
 with oEnemySpawner
 {
 	GoBackY=1 
-	MaxY=280
+	MaxY=280*2
 		}
 		
 with oEnemySpawner {timeline=tm_beach event_user(0)}

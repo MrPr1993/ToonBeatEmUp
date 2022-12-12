@@ -1,8 +1,8 @@
 enemy_data()
 
-name="SNOWGIRL"
+name="PRIMA"///FERA, NEANNA
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=7
+enemyPortraitIndex=51
 
 enemyscript=animsetup_enemy
 

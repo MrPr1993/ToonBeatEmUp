@@ -1,8 +1,8 @@
 enemy_data()
 
-name="SHROOM"
+name="AMANITA" //Blue, Cerana - Green, Elegans - Bright Yellow, Pholiota
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=43
+enemyPortraitIndex=52
 
 enemyscript=animsetup_enemy
 

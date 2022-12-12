@@ -114,5 +114,4 @@ drawarms=0;
 	///spritepos_setup(1,0,0,0)
 
 
-
 }

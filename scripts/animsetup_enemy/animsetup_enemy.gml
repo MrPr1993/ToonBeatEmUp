@@ -27,8 +27,20 @@ function animsetup_enemy() {
 	atk=0
 	if isIdle=0 ///Normal Stand
 	{
+	if specialtaunt!=-1
+	{
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	specialtaunt(); else
+	{sprite_index=StandSpr
+	image_index+=0.2 if image_index>2.8 image_index=0}
+	exit;
+	}	
 	sprite_index=StandSpr
 	image_index+=0.2 if image_index>2.8 image_index=0
+	
 	}
 	if isIdle=1 and hasIdle=1///idle
 	{
