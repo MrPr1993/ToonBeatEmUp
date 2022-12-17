@@ -108,6 +108,36 @@ draw_set_halign(fa_left)
 
 
 }
+
+if commandType=10
+{draw_set_font(global.scorefont)
+matrix_set(matrix_world,matrix_build(0,oControl.quakeFX,0,0,0,0,1,1,1))
+///Slot Machine
+draw_set_halign(fa_left)
+var atext="BET"; var btext="SPIN";
+
+if slotmachineplay=3 {atext="STOP"; btext="STOP";
+	draw_buttontext(16,240-24-4,8,"",spr_commandbutton,0,"J",atext)
+	}
+else
+{
+draw_buttontext(16,190,8,"",spr_commandbutton,0,"J",string(atext)+" 10")
+draw_buttontext(104,190,8,"",spr_commandbutton,0,"L",string(atext)+" 25")
+draw_buttontext(192,190,8,"",spr_commandbutton,0,"H",string(atext)+" 50")
+}
+
+draw_buttontext(160,240-24-4,8,"",spr_commandbutton,0,"K",btext)
+
+draw_set_halign(fa_right)
+draw_text(128,240-24-4,string(moneyBet)+"$")
+
+draw_set_halign(fa_center)
+draw_text(160,240-12,string(global.Gold)+string("$"))
+
+matrix_set(matrix_world,matrix_build_identity())
+
+}
+
 }
 else
 {
@@ -184,6 +214,7 @@ draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
 }
 if commandType=9
 {
+
 ///Menu
 draw_buttontext(8,240-24-4,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
 draw_buttontext(8,240-8-4,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
@@ -203,13 +234,34 @@ draw_text(160,8,"PALETTE EDITOR")
 draw_set_halign(fa_left)
 }
 
+
+
 if commandType=10
-{
+{draw_set_font(global.scorefont)
+matrix_set(matrix_world,matrix_build(0,oControl.quakeFX,0,0,0,0,1,1,1))
 ///Slot Machine
 draw_set_halign(fa_left)
-draw_buttontext(8,240-24-4,8,"",spr_commandbutton,4+6*commandMul,"","BET")
+var atext="BET"; var btext="SPIN";
+
+if slotmachineplay=3 {atext="STOP"; btext="STOP";
+	draw_buttontext(16,240-24-4,8,"",spr_commandbutton,4+6*commandMul,"",atext)
+	}
+else
+{
+draw_buttontext(16,190,8,"",spr_commandbutton,4+6*commandMul,"",string(atext)+" 10")
+draw_buttontext(104,190,8,"",spr_commandbutton,6+6*commandMul,"",string(atext)+" 25")
+draw_buttontext(192,190,8,"",spr_commandbutton,7+6*commandMul,"",string(atext)+" 50")
+}
+
+draw_buttontext(160,240-24-4,8,"",spr_commandbutton,5+6*commandMul,"",btext)
+
+draw_set_halign(fa_right)
+draw_text(128,240-24-4,string(moneyBet)+"$")
+
 draw_set_halign(fa_center)
-draw_text(320,240-12,"$")
+draw_text(160,240-12,string(global.Gold)+string("$"))
+
+matrix_set(matrix_world,matrix_build_identity())
 
 }
 

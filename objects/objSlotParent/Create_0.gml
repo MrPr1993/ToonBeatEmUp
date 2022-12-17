@@ -7,6 +7,9 @@ finishedSpinning = false; //Did the reel finish spinning
 canControl=1
 controlNO=9
 
+winFrame=0
 
 controller_setup()
 
+
+y1 = choose(0,80,160,240,320,400,480,560);

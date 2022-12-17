@@ -19,7 +19,7 @@ if spdZ<4 spdZ+=0.45
 if z>32 {Thrown=2 image_index=1
 	
 splash=instance_create_depth(x,y,-1,oFlashFX) splash.sprite_index=spr_watersplashsmall	splash.z=32
-	
+	splash.hspeed=spdX/2
 	}
 
 with oEnemySpawner

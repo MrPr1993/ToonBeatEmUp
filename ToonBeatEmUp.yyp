@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "ToonBeatEmUp",
   "resources": [
+    {"id":{"name":"oFisingFish","path":"objects/oFisingFish/oFisingFish.yy",},"order":85,},
     {"id":{"name":"Retro_Palette_Swapper","path":"extensions/Retro_Palette_Swapper/Retro_Palette_Swapper.yy",},"order":0,},
     {"id":{"name":"font0","path":"fonts/font0/font0.yy",},"order":0,},
     {"id":{"name":"compatibility_report_040721_210501050","path":"notes/compatibility_report_040721_210501050/compatibility_report_040721_210501050.yy",},"order":0,},
@@ -603,6 +604,7 @@
     {"id":{"name":"snd_ant10","path":"sounds/snd_ant10/snd_ant10.yy",},"order":2,},
     {"id":{"name":"snd_ant11","path":"sounds/snd_ant11/snd_ant11.yy",},"order":3,},
     {"id":{"name":"snd_ant12","path":"sounds/snd_ant12/snd_ant12.yy",},"order":4,},
+    {"id":{"name":"msc_snowmountain","path":"sounds/msc_snowmountain/msc_snowmountain.yy",},"order":21,},
     {"id":{"name":"snd_ant13","path":"sounds/snd_ant13/snd_ant13.yy",},"order":5,},
     {"id":{"name":"snd_ant14","path":"sounds/snd_ant14/snd_ant14.yy",},"order":6,},
     {"id":{"name":"snd_ant2","path":"sounds/snd_ant2/snd_ant2.yy",},"order":7,},

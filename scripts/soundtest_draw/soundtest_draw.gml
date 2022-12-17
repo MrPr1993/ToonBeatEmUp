@@ -87,7 +87,7 @@ if songno=10 {songname="DOWNSIDE BEACH" playingSound=msc_beach songcomposer="EVA
 if songno=11 {songname="UFO BEYOND THE STARS" playingSound=msc_ufo songcomposer="EVADER MUSIC"}
 if songno=12 {songname="UNDER THE SEA JAM" playingSound=msc_underwater songcomposer="JONORSI"}
 if songno=13 {songname="HEATING HOT DESERT" playingSound=msc_desert songcomposer="EVADER MUSIC"}
-if songno=14 {songname="GREAT CLIMBING COLD" playingSound=msc_swamp songcomposer="EVADER MUSIC"}//X
+if songno=14 {songname="GREAT CLIMBING COLD" playingSound=msc_snowmountain songcomposer="EVADER MUSIC"}//X
 if songno=15 {songname="FANTASTIC FANTASY CAVERNS" playingSound=msc_swamp songcomposer="EVADER MUSIC"}//X
 if songno=16 {songname="AHEAD IN THE CLOUDS" playingSound=msc_swamp songcomposer="EVADER MUSIC"}//X
 if songno=17 {songname="DANGEROUS SCIENCE" playingSound=msc_lab songcomposer="JONORSI"}

@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_shop(){controlNO=9
-	
+
 	
 ///For testing
 //if x=-9999999999999999
@@ -46,6 +46,8 @@ else {shopDialogueAlt=4 shopDialogueTime=120 shopBuy=-1
 	global.UnlockAltPal=1
 	
 	if shopSelect=5 global.UnlockSoundTest=1
+	
+	if shopSelect=6 global.UnlockMovies=1
 	 unlock_save()
 	}/// BUY ITEM
 }
@@ -87,7 +89,7 @@ if global.UnlockSoundTest=0 shopSelect=5 else {shopSelect=-2 shopCost="SOLD OUT!
 if shopselY=1 and shopselX=1
 {shopPrice=5000 shopName="CUTSCENES" shopCost="COST:5000"
 shopDesc="WATCH AGAIN\nSCENES YOU HAVE\nSEEN HERE IN THE\nRECORDER!"
-if global.UnlockMovies=0 shopSelect=5 else {shopSelect=-2 shopCost="SOLD OUT!"}
+if global.UnlockMovies=0 shopSelect=6 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 }
 

@@ -17,5 +17,21 @@ slotflipperYspd=0
 canControl=1
 controlNO=9
 
+moneyBet=0
+
 controller_setup()
 
+rigMode=-1
+
+rewardPrize=1;
+cherryReward1=0
+cherryReward2=0
+cherryReward3=0
+
+screenshaketime=0
+screenshake=0
+
+winPosX=16
+winPosY=0
+winFlash=0
+winFlashTime=0
