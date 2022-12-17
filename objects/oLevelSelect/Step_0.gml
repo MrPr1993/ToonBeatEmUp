@@ -71,6 +71,8 @@ if level=43 roomGo=rm_testarea3//
 if level=44 roomGo=rm_testarea4//
 
 if level=45 roomGo=rm_paletteeditor
+if level=46 roomGo=rm_fishing
+if level=47 roomGo=rm_slotmachine
 
 if level=51 roomGo=rm_cutscene1
 

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_pharaoh3",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Pharaoh",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Pharaoh.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_pharaoh3",
-  "tags": [],
-  "resourceType": "GMSound",
 }

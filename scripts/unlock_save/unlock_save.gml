@@ -6,5 +6,9 @@ ini_open("GAMEDATA/hiscore.ini");
 ini_write_real("SHOP", "0", global.UnlockCharacterData)
 ini_write_real("SHOP", "1", global.UnlockAltPal)
 
+ini_write_real("SHOP", "4", global.UnlockSoundTest)
+ini_write_real("SHOP", "5", global.UnlockMovies)
+
+
 ini_close()
 }

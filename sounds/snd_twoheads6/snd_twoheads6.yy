@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_twoheads6",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "TwoHeads",
     "path": "folders/f - Sounds/Voice Clips/Bosses/TwoHeads.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_twoheads6",
-  "tags": [],
-  "resourceType": "GMSound",
 }

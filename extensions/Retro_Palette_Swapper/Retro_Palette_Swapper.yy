@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMExtension",
+  "resourceVersion": "1.2",
+  "name": "Retro_Palette_Swapper",
   "optionsFile": "options.json",
   "options": [],
   "exportToGame": true,
@@ -89,8 +92,4 @@
     "name": "z99 - Extensions",
     "path": "folders/z99 - Extensions.yy",
   },
-  "resourceVersion": "1.2",
-  "name": "Retro_Palette_Swapper",
-  "tags": [],
-  "resourceType": "GMExtension",
 }

@@ -203,6 +203,16 @@ draw_text(160,8,"PALETTE EDITOR")
 draw_set_halign(fa_left)
 }
 
+if commandType=10
+{
+///Slot Machine
+draw_set_halign(fa_left)
+draw_buttontext(8,240-24-4,8,"",spr_commandbutton,4+6*commandMul,"","BET")
+draw_set_halign(fa_center)
+draw_text(320,240-12,"$")
+
+}
+
 }
 
 }

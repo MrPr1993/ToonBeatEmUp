@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tl_beach",
   "spriteId": {
     "name": "bg_beachtiles",
     "path": "sprites/bg_beachtiles/bg_beachtiles.yy",
@@ -1059,8 +1062,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tl_beach",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

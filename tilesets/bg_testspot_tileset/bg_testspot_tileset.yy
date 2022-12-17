@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "bg_testspot_tileset",
   "spriteId": {
     "name": "bg_testspot",
     "path": "sprites/bg_testspot/bg_testspot.yy",
@@ -39,8 +42,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_testspot_tileset",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

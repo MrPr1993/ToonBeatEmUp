@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oTPoseViva",
   "spriteId": {
     "name": "spr_tposeviva",
     "path": "sprites/spr_tposeviva/spr_tposeviva.yy",
@@ -28,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +39,4 @@
     "name": "Weapons",
     "path": "folders/9 - Objects And Items/b - Items/Weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oTPoseViva",
-  "tags": [],
-  "resourceType": "GMObject",
 }

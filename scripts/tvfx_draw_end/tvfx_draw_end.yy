@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "tvfx_draw_end",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "TV FX",
     "path": "folders/TV FX.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tvfx_draw_end",
-  "tags": [],
-  "resourceType": "GMScript",
 }

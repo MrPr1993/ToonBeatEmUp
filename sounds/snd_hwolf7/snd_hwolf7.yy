@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_hwolf7",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Lady Wolf",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Lady Wolf.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_hwolf7",
-  "tags": [],
-  "resourceType": "GMSound",
 }

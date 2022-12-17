@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tiles_swamp",
   "spriteId": {
     "name": "tiles_swampspr",
     "path": "sprites/tiles_swampspr/tiles_swampspr.yy",
@@ -1059,8 +1062,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tiles_swamp",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

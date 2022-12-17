@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tl_mus",
   "spriteId": {
     "name": "tiles_museum",
     "path": "sprites/tiles_museum/tiles_museum.yy",
@@ -291,8 +294,4 @@
     "name": "Stage3",
     "path": "folders/5b-Stage Sprites/Stage3.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tl_mus",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

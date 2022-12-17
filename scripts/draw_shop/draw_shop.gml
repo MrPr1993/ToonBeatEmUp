@@ -1,6 +1,18 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_shop(){controlNO=9
+	
+	
+///For testing
+//if x=-9999999999999999
+{var unlockall=1;
+	repeat(16)
+	{
+	global.UnlockStageA[unlockall]=1;
+	unlockall+=1;
+	}
+}
+	
 controller_setup() 
 if room=rm_shop
 {fpsX=320 fpsY=8
@@ -32,6 +44,8 @@ else {shopDialogueAlt=4 shopDialogueTime=120 shopBuy=-1
 	global.UnlockCharacterData=1
 	if  shopSelect=2
 	global.UnlockAltPal=1
+	
+	if shopSelect=5 global.UnlockSoundTest=1
 	 unlock_save()
 	}/// BUY ITEM
 }
@@ -53,22 +67,29 @@ shopCost=""
 shopSelect=-1
 
 //////
-if shopSet=0 and shopselY=0 and shopselX=0
-{shopPrice=3000
-shopName="CHARACTER PROFILE"
-shopCost="COST:3000"
+if shopSet=0 
+{
+if shopselY=0 and shopselX=0
+{shopPrice=3000 shopName="CHARACTER PROFILE" shopCost="COST:3000"
 shopDesc="CHECK THEIR INFO! \nBUT TO GET THE\nENEMY DATA YOU\nGOTTA BEAT EM' UP!"
 if global.UnlockCharacterData=0 shopSelect=1 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
-if shopSet=0 and shopselY=0 and shopselX=1
-{shopPrice=4000
-shopName="PALETTE SWAP"
-shopCost="COST:4000"
+if shopselY=0 and shopselX=1
+{shopPrice=4000 shopName="PALETTE SWAP" shopCost="COST:4000"
 shopDesc="BORING OF YOUR\nCLOTHING COLOR?\nYOU CAN CHANGE IT\nWITH THIS!"
 if global.UnlockAltPal=0 shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
-
-
+if shopselY=1 and shopselX=0
+{shopPrice=5000 shopName="SOUND TEST" shopCost="COST:5000"
+shopDesc="WANNA HEAR SOME\nTUNES? HAVE A\nLISTEN WITH THIS!"
+if global.UnlockSoundTest=0 shopSelect=5 else {shopSelect=-2 shopCost="SOLD OUT!"}
+}
+if shopselY=1 and shopselX=1
+{shopPrice=5000 shopName="CUTSCENES" shopCost="COST:5000"
+shopDesc="WATCH AGAIN\nSCENES YOU HAVE\nSEEN HERE IN THE\nRECORDER!"
+if global.UnlockMovies=0 shopSelect=5 else {shopSelect=-2 shopCost="SOLD OUT!"}
+}
+}
 
 if shopDialogueAlt!=0
 {
@@ -152,12 +173,14 @@ if shopSet=0 /////Shop Items
 {
 ///Set 1
 if 	global.UnlockCharacterData=0 shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,1*global.UnlockStageA[1],2+2,16) shader_reset() if 	global.UnlockAltPal=0 shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,1*global.UnlockStageA[1],2+2,16) shader_reset() if global.UnlockAltPal=0 shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,2*global.UnlockStageA[2],2+4+32,16) shader_reset() shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,3*global.UnlockStageA[3],2+6+64,16) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,4*global.UnlockStageA[4],2+8+64+32,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,4*global.UnlockStageA[4],2+8+64+32,16) shader_reset()
 ///Set 2
-draw_sprite(spr_shopitem,5*global.UnlockStageA[5],2+2,16+2+32) shader_reset() shader_set(shd_grayscale)
+if global.UnlockSoundTest=0 shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,5*global.UnlockStageA[5],2+2,16+2+32) shader_reset()
+if global.UnlockMovies=0 shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,6*global.UnlockStageA[6],2+4+32,16+2+32) shader_reset() shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,7*global.UnlockStageA[7],2+6+64,16+2+32) shader_reset() shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,8*global.UnlockStageA[8],2+8+64+32,16+2+32) shader_reset() shader_set(shd_grayscale)

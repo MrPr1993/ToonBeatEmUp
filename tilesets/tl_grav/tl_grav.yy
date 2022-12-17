@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tl_grav",
   "spriteId": {
     "name": "bg_grave",
     "path": "sprites/bg_grave/bg_grave.yy",
@@ -239,8 +242,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tl_grav",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tile",
   "spriteId": {
     "name": "bg_ship",
     "path": "sprites/bg_ship/bg_ship.yy",
@@ -215,8 +218,4 @@
     "name": "tilesets",
     "path": "folders/4 - Tile Sets/tilesets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tile",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

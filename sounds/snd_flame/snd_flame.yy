@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_flame",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "General",
     "path": "folders/f - Sounds/General.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_flame",
-  "tags": [],
-  "resourceType": "GMSound",
 }

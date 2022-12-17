@@ -72,7 +72,7 @@ if mapSelX=2 and mapSelY=1 {global.StageGoing=rm_stage5 mapSXlerp=204 mapSYlerp=
 //D
 if mapSelX=3 and mapSelY=-1 {global.StageGoing=rm_stageswamp mapSXlerp=320 mapSYlerp=111 mapHighScore=global.LevelHiScore[8]  if lockedMap[8]=1 mapSName="STAGE 4-B\nDEEP DEAD SWAMPS"}
 if mapSelX=3 and mapSelY=0 {global.StageGoing=rm_stagecarnival mapSXlerp=320 mapSYlerp=157 mapHighScore=global.LevelHiScore[9] if lockedMap[9]=1 mapSName="STAGE 4\nCLOWNY HONKY CARNIVAL"}
-if mapSelX=3 and mapSelY=1 {global.StageGoing=rm_stagebeach mapSXlerp=320 mapSYlerp=215 mapHighScore=global.LevelHiScore[10] if lockedMap[10]=1 mapSName="STAGE 4-C/nDOWN SIDE BEACH"}
+if mapSelX=3 and mapSelY=1 {global.StageGoing=rm_stagebeach mapSXlerp=320 mapSYlerp=215 mapHighScore=global.LevelHiScore[10] if lockedMap[10]=1 mapSName="STAGE 4-C/nDOWNSIDE BEACH"}
 //E
 if mapSelX=4 and mapSelY=-1 {global.StageGoing=rm_stageufo mapSXlerp=640-248 mapSYlerp=109 mapHighScore=global.LevelHiScore[11]  if lockedMap[11]=1 mapSName="STAGE 5-B\nUFO BEYOND THE STARS"}
 if mapSelX=4 and mapSelY=0 {global.StageGoing=rm_stagemermaid mapSXlerp=640-228 mapSYlerp=154 mapHighScore=global.LevelHiScore[12]  if lockedMap[12]=1 mapSName="STAGe 5\nUNDER THE SEA JAM"}

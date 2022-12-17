@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "bg_building_tileset2",
   "spriteId": {
     "name": "bg_building2",
     "path": "sprites/bg_building2/bg_building2.yy",
@@ -1059,8 +1062,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_building_tileset2",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

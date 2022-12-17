@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "object90",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -25,8 +28,4 @@
     "name": "a - Interactive Objects",
     "path": "folders/9 - Objects And Items/a - Interactive Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "object90",
-  "tags": [],
-  "resourceType": "GMObject",
 }

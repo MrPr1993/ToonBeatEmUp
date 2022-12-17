@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "background11_tileset",
   "spriteId": {
     "name": "background11",
     "path": "sprites/background11/background11.yy",
@@ -335,8 +338,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "background11_tileset",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

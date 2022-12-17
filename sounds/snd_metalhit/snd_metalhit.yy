@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_metalhit",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Items",
     "path": "folders/f - Sounds/Items.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_metalhit",
-  "tags": [],
-  "resourceType": "GMSound",
 }

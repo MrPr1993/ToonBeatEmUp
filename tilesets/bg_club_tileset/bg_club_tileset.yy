@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "bg_club_tileset",
   "spriteId": {
     "name": "bg_club",
     "path": "sprites/bg_club/bg_club.yy",
@@ -335,8 +338,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_club_tileset",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

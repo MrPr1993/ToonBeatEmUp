@@ -14,6 +14,7 @@ function bahati_weaponanim() {
 	hitFXset(WspriteFX,WindexFX,WisDepth,WanimEnd,WspeedFX,WspriteTime,WxScaleFX,WyScaleFX,WblendFX,WalphaFX)
 
 	if weapontype=0
+	if spawnID!=oFishingRod
 	{
 	////Hammer Swing
 frame_set(0,0,0.25)

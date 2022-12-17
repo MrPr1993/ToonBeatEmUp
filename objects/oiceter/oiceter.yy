@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oIceTer",
   "spriteId": {
     "name": "spr_iceter",
     "path": "sprites/spr_iceter/spr_iceter.yy",
@@ -28,8 +31,4 @@
     "name": "1 - General Objects",
     "path": "folders/1 - General Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oIceTer",
-  "tags": [],
-  "resourceType": "GMObject",
 }

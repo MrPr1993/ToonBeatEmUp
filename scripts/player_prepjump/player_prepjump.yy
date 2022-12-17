@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "player_prepjump",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
     "name": "2 - Scripts",
     "path": "folders/2 - Scripts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "player_prepjump",
-  "tags": [],
-  "resourceType": "GMScript",
 }

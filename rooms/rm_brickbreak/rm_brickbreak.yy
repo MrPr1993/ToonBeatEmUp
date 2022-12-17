@@ -69,7 +69,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Car Breaking Game",
-    "path": "folders/1d - Minigames/Car Breaking Game.yy",
+    "name": "Brick Break",
+    "path": "folders/1d - Minigames/Brick Break.yy",
   },
 }

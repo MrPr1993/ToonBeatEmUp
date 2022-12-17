@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oTrash2",
   "spriteId": {
     "name": "spr_trash2",
     "path": "sprites/spr_trash2/spr_trash2.yy",
@@ -34,8 +37,4 @@
     "name": "a - Interactive Objects",
     "path": "folders/9 - Objects And Items/a - Interactive Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oTrash2",
-  "tags": [],
-  "resourceType": "GMObject",
 }

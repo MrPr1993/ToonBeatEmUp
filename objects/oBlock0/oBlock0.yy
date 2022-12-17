@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oBlock0",
   "spriteId": {
     "name": "spr_height0",
     "path": "sprites/spr_height0/spr_height0.yy",
@@ -28,8 +31,4 @@
     "name": "1 - General Objects",
     "path": "folders/1 - General Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oBlock0",
-  "tags": [],
-  "resourceType": "GMObject",
 }

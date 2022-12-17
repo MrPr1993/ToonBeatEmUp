@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tl_train",
   "spriteId": {
     "name": "tl_traindecor",
     "path": "sprites/tl_traindecor/tl_traindecor.yy",
@@ -291,8 +294,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tl_train",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

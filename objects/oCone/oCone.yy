@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oCone",
   "spriteId": {
     "name": "spr_cone",
     "path": "sprites/spr_cone/spr_cone.yy",
@@ -28,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +39,4 @@
     "name": "a - Interactive Objects",
     "path": "folders/9 - Objects And Items/a - Interactive Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oCone",
-  "tags": [],
-  "resourceType": "GMObject",
 }

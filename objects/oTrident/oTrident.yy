@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oTrident",
   "spriteId": {
     "name": "spr_merman_trident",
     "path": "sprites/spr_merman_trident/spr_merman_trident.yy",
@@ -28,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +39,4 @@
     "name": "Merman",
     "path": "folders/7 - Enemies/Merman.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oTrident",
-  "tags": [],
-  "resourceType": "GMObject",
 }

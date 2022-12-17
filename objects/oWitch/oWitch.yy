@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oWitch",
   "spriteId": {
     "name": "spr_witch_stand",
     "path": "sprites/spr_witch_stand/spr_witch_stand.yy",
@@ -28,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +39,4 @@
     "name": "4Witch",
     "path": "folders/8 - Bosses/4Witch.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oWitch",
-  "tags": [],
-  "resourceType": "GMObject",
 }

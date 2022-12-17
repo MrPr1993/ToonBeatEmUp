@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sound19",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "f - Sounds",
     "path": "folders/f - Sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sound19",
-  "tags": [],
-  "resourceType": "GMSound",
 }

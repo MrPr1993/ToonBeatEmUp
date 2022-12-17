@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tl_plane",
   "spriteId": {
     "name": "tl_planespr",
     "path": "sprites/tl_planespr/tl_planespr.yy",
@@ -291,8 +294,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tl_plane",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

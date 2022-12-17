@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_oni5",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Oni",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Oni.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_oni5",
-  "tags": [],
-  "resourceType": "GMSound",
 }

@@ -111,7 +111,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("TEST 4"));
 if level=45 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PALETTE EDITOR"));
 if level=46 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("FISHING MINIGAME"));
 if level=47 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=48 draw_set_color(c_yellow) else draw_set_color(c_gray)

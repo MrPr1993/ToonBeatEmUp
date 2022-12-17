@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "background12_tileset",
   "spriteId": {
     "name": "background12",
     "path": "sprites/background12/background12.yy",
@@ -95,8 +98,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "background12_tileset",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

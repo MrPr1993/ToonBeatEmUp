@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_harpy10",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Harpy",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Harpy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_harpy10",
-  "tags": [],
-  "resourceType": "GMSound",
 }

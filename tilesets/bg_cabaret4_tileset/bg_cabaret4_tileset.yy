@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "bg_cabaret4_tileset",
   "spriteId": {
     "name": "bg_cabaret4",
     "path": "sprites/bg_cabaret4/bg_cabaret4.yy",
@@ -37,8 +40,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_cabaret4_tileset",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

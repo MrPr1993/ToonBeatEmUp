@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "bg_carpet_tileset",
   "spriteId": {
     "name": "bg_carpet",
     "path": "sprites/bg_carpet/bg_carpet.yy",
@@ -53,8 +56,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bg_carpet_tileset",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

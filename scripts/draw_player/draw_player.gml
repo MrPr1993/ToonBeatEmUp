@@ -19,6 +19,8 @@ else
 
 pal_swap_set(weapon_pal_sprite,weapon_pal,false);
 draw_sprite_ext(weaponspr,weaponIndex,round(x+( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
+
+
 pal_swap_reset();
 shader_reset()
 }
@@ -36,6 +38,8 @@ if weaponFlash<=1 shader_set(shd_white_sprite);
 else
 pal_swap_set(weapon_pal_sprite,weapon_pal,false);
 draw_sprite_ext(weaponspr,weaponIndex,round(x+( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
+
+
 pal_swap_reset();
 shader_reset()
 }

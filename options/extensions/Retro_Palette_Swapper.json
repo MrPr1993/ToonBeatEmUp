@@ -1,8 +1,5 @@
 {
-  "extensionId": {
-    "name": "Retro_Palette_Swapper",
-    "path": "extensions/Retro_Palette_Swapper/Retro_Palette_Swapper.yy"
-  },
+  "extensionId": null,
   "resourceVersion": "1.0",
   "resourceType": "GMExtensionConfigSet",
   "configurables": null

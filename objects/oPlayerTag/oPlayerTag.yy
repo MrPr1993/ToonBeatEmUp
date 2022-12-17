@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oPlayerTag",
   "spriteId": {
     "name": "spr_playertag",
     "path": "sprites/spr_playertag/spr_playertag.yy",
@@ -28,8 +31,4 @@
     "name": "1 - General Objects",
     "path": "folders/1 - General Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oPlayerTag",
-  "tags": [],
-  "resourceType": "GMObject",
 }

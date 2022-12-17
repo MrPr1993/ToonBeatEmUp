@@ -4,4 +4,7 @@ function shopreset(){
 global.UnlockShop=1
 global.UnlockAltPal=0
 global.UnlockCharacterData=0
+
+global.UnlockSoundTest=0
+global.UnlockMovies=0
 }

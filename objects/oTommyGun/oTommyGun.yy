@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oTommyGun",
   "spriteId": {
     "name": "spr_tommygun",
     "path": "sprites/spr_tommygun/spr_tommygun.yy",
@@ -28,7 +31,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -36,8 +39,4 @@
     "name": "Weapons",
     "path": "folders/9 - Objects And Items/b - Items/Weapons.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oTommyGun",
-  "tags": [],
-  "resourceType": "GMObject",
 }

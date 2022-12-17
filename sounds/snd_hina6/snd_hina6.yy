@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_hina6",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Players",
     "path": "folders/f - Sounds/Voice Clips/Players.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_hina6",
-  "tags": [],
-  "resourceType": "GMSound",
 }

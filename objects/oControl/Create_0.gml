@@ -121,6 +121,7 @@ global.UnlockFeats=1
 global.UnlockStage[20]=0
 global.LevelHiScore[20]=0
 
+
 global.UnlockStageA[1]=1
 global.UnlockStageA[2]=1
 global.UnlockStageA[3]=0
@@ -302,6 +303,7 @@ MusicFadeAdd=1
 stageNext=rm_titlescreen
 
 showHUD=1
+disableTimer=0
 
 MusicSet=-1
 
@@ -335,7 +337,7 @@ P1SpawnY=208
 P1SpawnXadd=32
 P1SpawnYadd=208
 
-
+animFrame=0
 
 if !variable_global_exists("Bappo")
 {
@@ -755,17 +757,25 @@ soundname="VIVA 1"
 playingsongname=""
 playingloop=0
 playSFX=snd_viva4
+voiceActor=""
 
 songtext=1
+songcomposer=""
 
-dancer1spr=spr_viva_stand
-dancer1img=0
-dancer2spr=spr_hina_stand
-dancer2img=0
-dancer3spr=spr_bahati_stand
-dancer3img=0
-dancer4spr=spr_sofia_stand
-dancer4img=0
+dancer1spr=spr_viva_dance
+dancer1img=1
+dancer1turn=1
+dancer2spr=spr_hina_dance
+dancer2img=1
+dancer2turn=1
+dancer3spr=spr_bahati_dance
+dancer3img=1
+dancer3turn=1
+dancer4spr=spr_sofia_dance
+dancer4img=1
+dancer4turn=1
+
+dancersfade=1
 
 songtime=0
 songmin=0

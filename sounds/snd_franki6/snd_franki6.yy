@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_franki6",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Franki",
     "path": "folders/f - Sounds/Voice Clips/Bosses/Franki.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_franki6",
-  "tags": [],
-  "resourceType": "GMSound",
 }

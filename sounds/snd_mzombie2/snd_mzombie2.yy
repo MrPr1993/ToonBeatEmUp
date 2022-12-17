@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_mzombie2",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "Enemies",
     "path": "folders/f - Sounds/Voice Clips/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_mzombie2",
-  "tags": [],
-  "resourceType": "GMSound",
 }

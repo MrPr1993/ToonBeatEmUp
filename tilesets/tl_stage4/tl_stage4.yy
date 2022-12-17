@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tl_stage4",
   "spriteId": {
     "name": "tl_stage4decor",
     "path": "sprites/tl_stage4decor/tl_stage4decor.yy",
@@ -291,8 +294,4 @@
     "name": "4 - Tile Sets",
     "path": "folders/4 - Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tl_stage4",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

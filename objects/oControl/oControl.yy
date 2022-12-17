@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oControl",
-  "spriteId": null,
+  "spriteId": {
+    "name": "mask_none",
+    "path": "sprites/mask_none/mask_none.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

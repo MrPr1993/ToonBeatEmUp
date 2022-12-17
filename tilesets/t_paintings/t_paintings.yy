@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "t_paintings",
   "spriteId": {
     "name": "bg_paintings",
     "path": "sprites/bg_paintings/bg_paintings.yy",
@@ -275,8 +278,4 @@
     "name": "Stage3",
     "path": "folders/5b-Stage Sprites/Stage3.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "t_paintings",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

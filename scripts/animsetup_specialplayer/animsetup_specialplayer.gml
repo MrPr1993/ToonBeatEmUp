@@ -402,5 +402,86 @@ item_thrown()
 	frame_set(2,1,0.1)
 	if animFrame>2 {canmove=1 anim=0}
 	}
+
+//////Fishing Minigame
+if anim=26
+if weapontype=0
+if spawnID=oFishingRod
+	{if animFrame=0 image_xscale=1
+	////Hammer Swing
+frame_set(0,0,0.1)
+frame_set(1,1,0.05) if animFrame=2
+{areaEntry=1
+PlaySound(snd_swing5)
+oFishingMinigame.x=x+32 oFishingMinigame.y=y oFishingMinigame.z=z-96
+with oFishingMinigame
+{spdX=8 spdZ=-8
+Thrown=1 
 }
+}
+frame_set(2,0,0.25)
+frame_set(3,2,0.1)
+frame_set(4,3,0.1)
+	if character=0
+	{
+	if animFrame=clamp(animFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,3,3.9)
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,4,4.9)
+	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}	
+	sprite_index=spr_viva_hammeratk
+	}
+	if character=1
+	{sprite_index=spr_hina_hammeratk
+		if animFrame=clamp(animFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,3,3.9)
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,4,4.9)
+	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
+	
+	}
+	if character=2	{
+	sprite_index=spr_bahati_hammeratk
+		if animFrame=clamp(animFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,3,3.9)
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,4,4.9)
+	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
+	sprite_index=spr_bahati_hammeratk
+	}
+	if character=3	
+	{sprite_index=spr_sofia_hammeratk
+	if animFrame=clamp(animFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,3,3.9)
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,4,4.9)
+	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
+	sprite_index=spr_sofia_hammeratk	
+	}
+	image_speed=0
+	//if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
+	}
+
+}
+
 

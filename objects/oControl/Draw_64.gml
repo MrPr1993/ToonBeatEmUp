@@ -57,6 +57,7 @@ and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
 and room!=rm_menu and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes and room!=rm_paletteeditor
+and room!=rm_slotmachine
 {
 if betatest=1
 {
@@ -75,6 +76,9 @@ __background_set( e__BG.X, 0, -(__view_get( e__VW.XView, 0 )/80) )
 
 draw_set_color(c_black)
 draw_set_color(c_white)
+
+if showHUD
+{
 draw_set_font(global.timefont)///Timer
 if continueScreen=0
 {
@@ -267,7 +271,7 @@ if goActive=1
 draw_sprite(spr_go,goFrame,320-50,80)
 
 if goFrame!=0 goFrame-=0.25 else {goFrame=6 if goActive=1 PlaySound(snd_go)}
-
+}
 if betatest=1 and TextBeta=1
 {draw_set_halign(fa_left)
 draw_set_color(c_black)
