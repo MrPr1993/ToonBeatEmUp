@@ -2,6 +2,10 @@ roomfast=0
 canControl=1
 controlNO=9
 playNO=1
+
+recordAng=0
+recordAng2=0
+
 controller_setup()
 
 instance_create(0,0,oBlackFX)

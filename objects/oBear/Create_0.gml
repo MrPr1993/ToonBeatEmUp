@@ -11,6 +11,8 @@ points=100
 
 rangeAtk=100
 
+idlestyle=1
+
 OneAttack=2
 
 hp=0.2

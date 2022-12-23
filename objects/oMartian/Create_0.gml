@@ -1,6 +1,6 @@
 enemy_data()
 
-name="MARTIAN"
+name="MARTIA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=23
 
@@ -12,6 +12,8 @@ points=100
 rangeAtk=100
 
 OneAttack=2
+
+idlestyle=1
 
 hp=0.2
 maxhp=0.2

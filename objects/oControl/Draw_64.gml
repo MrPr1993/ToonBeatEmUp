@@ -719,7 +719,7 @@ draw_set_halign(fa_center) //▲►▼◄
 //draw_text(160,184+40-4-24,string_hash_to_newline("HIGH SCORE"))
 }
 
-draw_text(160,184+24,string_hash_to_newline("©2022 MRPR1993"))
+draw_text(160,184+24,string_hash_to_newline("©2023 MRPR1993"))
 if global.Continues=-1
 draw_text(160,184+40,string_hash_to_newline("CREDIT ∞"))
 else
@@ -1083,7 +1083,7 @@ draw_set_halign(fa_center)
 if creditsCameoY>-120
 {
 draw_text(160,4,"THANK YOU FOR PLAYING")
-draw_text(160,4+8,"THE EARLY ACCESS 2022 DEMO")
+draw_text(160,4+8,"THE EARLY ACCESS 2023 DEMO")
 draw_text(160,8+16,"COMING SOON:MORE STAGES!MORE CUTSCENES!")
 draw_text(160,8+24,"BOSSES!BUGFIXES!FEATURES!CHOICES!")
 draw_text(160,8+32,"LEVEL UPDATES!MORE ANIMALS TO PET!")

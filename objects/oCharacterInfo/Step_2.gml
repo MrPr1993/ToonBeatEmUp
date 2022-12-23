@@ -18,17 +18,39 @@ wobbleX=lerp(wobbleX,1,0.25)
 wobbleY=lerp(wobbleY,1,0.25)
 
 if -key_left_pressed {arrowSel1=2 wobbleX=1.1 wobbleY=0.9
-	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=1 dataSelect=dataRowMax else dataSelect-=1}
-if key_right_pressed {arrowSel2=2 wobbleX=1.1 wobbleY=0.9
+	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=1 dataSelect=dataRowMax else dataSelect-=1
+	
+	name="???" desc="" image_blend=c_black
+	  descleft=""
+descright=""
+dataabilities=""
+	
+	}
+if key_right_pressed {
+		name="???" desc="" image_blend=c_black
+	  descleft=""
+descright=""
+dataabilities=""
+	arrowSel2=2 wobbleX=1.1 wobbleY=0.9
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=dataRowMax dataSelect=1 else dataSelect+=1}
-if key_up_pressed {wobbleX=1.1 wobbleY=0.9
-	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=8 else dataRow-=1}
-if -key_down_pressed {wobbleX=1.1 wobbleY=0.9
-	image_alpha=1 dataPalMax=3 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=8 dataRow=1 else dataRow+=1}
+if key_up_pressed {arrowSel3=2
+		name="???" desc="" image_blend=c_black
+	  descleft=""
+descright=""
+dataabilities=""
+	wobbleX=1.1 wobbleY=0.9
+	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=4 else dataRow-=1}
+if -key_down_pressed {arrowSel4=2
+		name="???" desc="" image_blend=c_black
+	  descleft=""
+descright=""
+dataabilities=""
+	wobbleX=1.1 wobbleY=0.9
+	image_alpha=1 dataPalMax=3 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=4 dataRow=1 else dataRow+=1}
 
 descleft="";
 descright="";
-
+hasShadow=1;
 switch(dataRow)
 {
 case 1: ////Playable Characters
@@ -37,12 +59,16 @@ charinfo_divas()
 
 break;
 case 2: ////Enemy Characters - 48
-dataRowMax=30 categoryNames="ENEMIES" hasVariants=1
+dataRowMax=36 categoryNames="ENEMIES" hasVariants=1
 charinfo_enemies()
 break;
 case 3: ///Boss Characters
 dataRowMax=16 categoryNames="BOSSES" hasVariants=0
 charinfo_bosses()
+break;
+case 4: ///Locations
+dataRowMax=19 categoryNames="LOCATIONS" hasVariants=0 hasShadow=0;
+charinfo_locations()
 break;
 }
 

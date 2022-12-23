@@ -110,7 +110,7 @@ break;
     if dataPal=2
 {current_pal=1
  charinfo_set(12,spr_skeleton_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,21,"SKELIE", 
- "Thse skeletons of the jugglers will show up and have a bone to pick with you to throw at!")} 
+ "These skeletons of jugglers will show up and have a bone to pick with you! And throw it.")} 
 break;
   case 15:
  charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"ANIMATE AXE",
@@ -177,4 +177,10 @@ break;
  "A!")
 break;
 }
+
+if image_blend=c_black {name="???" desc=""
+	  descleft=""
+descright=""
+dataabilities=""
+	}
 }

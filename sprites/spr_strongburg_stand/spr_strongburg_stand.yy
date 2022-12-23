@@ -27,9 +27,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58cbb86c-1cf5-44a4-83e2-10fe72e9f65b",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9fb4a61-3439-4a0c-8b38-c8c70f0d57df",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d01c1570-af50-4385-9b9e-411f5587ef8d",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58cbb86c-1cf5-44a4-83e2-10fe72e9f65b",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,9 +46,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9ec40a2c-fc6f-470d-83ef-9abd38f38e38","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9fb4a61-3439-4a0c-8b38-c8c70f0d57df","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"25262493-9bb5-4d25-ad7e-d5974c5ed4df","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d01c1570-af50-4385-9b9e-411f5587ef8d","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"19004274-eff0-43cf-887a-64b42d4020ce","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58cbb86c-1cf5-44a4-83e2-10fe72e9f65b","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"19004274-eff0-43cf-887a-64b42d4020ce","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58cbb86c-1cf5-44a4-83e2-10fe72e9f65b","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9ec40a2c-fc6f-470d-83ef-9abd38f38e38","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9fb4a61-3439-4a0c-8b38-c8c70f0d57df","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"25262493-9bb5-4d25-ad7e-d5974c5ed4df","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d01c1570-af50-4385-9b9e-411f5587ef8d","path":"sprites/spr_strongburg_stand/spr_strongburg_stand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

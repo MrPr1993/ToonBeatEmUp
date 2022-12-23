@@ -4,6 +4,8 @@ name="SOLI"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=44
 
+idlestyle=1
+
 enemyscript=animsetup_enemy
 
 pointshit=10
@@ -24,8 +26,8 @@ StandSpr=spr_monk_stand
 MoveSpr=spr_monk_move
 RunSpr=spr_monk_move
 
-AtkSpr=spr_burglar_attack
-AtkSpr2=spr_burglar_attack2
+AtkSpr=spr_monk_attack
+AtkSpr2=spr_monk_attack
 AtkSpr3=spr_burglar_attack
 AtkSpr4=spr_burglar_attack
 AtkSpr5=spr_burglar_attack

@@ -132,7 +132,7 @@ if animFrame<4
 
 	if robotArmR=1// and x!=clamp(x,targetX-16,targetX+16)
 	{
-	if robotArmL=1 damage=0.5 else damage=0.3
+	if robotArmL=1 damage=0.3 else damage=0.2
 	MoveType=2
 	sprite_index=AtkSpr
 	image_index=animFrame image_speed=0

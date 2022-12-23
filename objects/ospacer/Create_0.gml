@@ -1,6 +1,6 @@
 enemy_data()
 
-name="SPACER"
+name="SPACE-I"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=43
 
@@ -10,6 +10,8 @@ pointshit=10
 points=100
 
 rangeAtk=100
+
+idlestyle=1
 
 OneAttack=2
 

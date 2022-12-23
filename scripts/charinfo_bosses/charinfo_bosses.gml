@@ -83,4 +83,10 @@ break;
  "???") break;
  
 }
+
+if image_blend=c_black {name="???" desc=""
+	  descleft=""
+descright=""
+dataabilities=""
+	}
 }

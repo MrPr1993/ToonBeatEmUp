@@ -13,6 +13,8 @@ rangeAtk=100
 
 OneAttack=2
 
+idlestyle=1
+
 hp=0.2
 maxhp=0.2
 
@@ -24,8 +26,8 @@ StandSpr=spr_shroom_stand
 MoveSpr=spr_shroom_move
 RunSpr=spr_shroom_move
 
-AtkSpr=spr_burglar_attack
-AtkSpr2=spr_burglar_attack2
+AtkSpr=spr_shroom_attack
+AtkSpr2=spr_shroom_attack
 AtkSpr3=spr_burglar_attack
 AtkSpr4=spr_burglar_attack
 AtkSpr5=spr_burglar_attack

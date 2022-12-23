@@ -13,6 +13,8 @@ rangeAtk=100
 
 OneAttack=2
 
+idlestyle=1
+
 hp=0.2
 maxhp=0.2
 

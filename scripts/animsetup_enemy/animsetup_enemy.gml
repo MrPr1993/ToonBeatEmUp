@@ -38,9 +38,38 @@ function animsetup_enemy() {
 	image_index+=0.2 if image_index>2.8 image_index=0}
 	exit;
 	}	
-	sprite_index=StandSpr
-	image_index+=0.2 if image_index>2.8 image_index=0
 	
+	sprite_index=StandSpr
+	if idlestyle=0
+	{image_index+=0.2 if image_index>2.8 image_index=0}
+	if idlestyle=1
+	{
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,1,0.1) if animFrame>3.75 animFrame=0	
+	}
+if idlestyle=2
+{
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	frame_set(2,2,0.1)
+	frame_set(3,1,0.1)
+	frame_set(4,0,0.1)
+	frame_set(5,3,0.1)
+	frame_set(6,4,0.1)
+	frame_set(7,3,0.1)
+	frame_set(8,5,0.1)
+	frame_set(9,1,0.1)
+	frame_set(10,2,0.1)
+	frame_set(11,1,0.1)
+	frame_set(12,0,0.1)
+	frame_set(13,3,0.1)
+	frame_set(14,4,0.1)
+	frame_set(15,3,0.1)
+	if animFrame>15.9 animFrame=0
+}
+
 	}
 	if isIdle=1 and hasIdle=1///idle
 	{

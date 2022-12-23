@@ -140,6 +140,8 @@ dataSet=0
 
 arrowSel1=0
 arrowSel2=0
+arrowSel3=0
+arrowSel4=0
 
 dataabilities="ELECTRICITY,SINGING,\nCOOKING,CHESS,FILMS"
 

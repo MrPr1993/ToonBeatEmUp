@@ -9,7 +9,7 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-
+idlestyle=1
 
 OneAttack=2
 

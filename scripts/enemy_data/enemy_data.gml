@@ -17,7 +17,7 @@ function enemy_data() {
 	targetEnemy=oPlayer
 	defense=1
 
-
+idlestyle=0
 
 	///Characters affiliation tag
 	isPlayer=0

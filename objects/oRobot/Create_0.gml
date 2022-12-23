@@ -21,6 +21,9 @@ DamageVoice1=snd_metalhit
 DamageVoice2=snd_metalhit
 DamageVoice3=snd_metalhit
 
+EgrabTime=1
+EgrabAnim=11
+EgrabFrame=0.9
 
 DeathCry=snd_deathcryrobot
 HitGround=snd_hitgroundmetal

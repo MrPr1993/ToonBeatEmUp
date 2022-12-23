@@ -10,6 +10,7 @@ enemyPortraitIndex=5
 DeathCry=snd_deathcryviva
 HitGround=snd_hitground
 
+idlestyle=2
 
 hp=0.2
 maxhp=0.2

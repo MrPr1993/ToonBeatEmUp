@@ -10,12 +10,16 @@ draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
 
 if keyboard_check_pressed(vk_escape) room=rm_menu
 
+
+
 if playingsongname=""
 {dancersfade=lerp(dancersfade,1,0.5)
 dancer1img=1
 dancer2img=1
 dancer3img=1
 dancer4img=1
+recordAng2=lerp(recordAng2,45,0.1)
+
 }
 else
 {dancersfade=lerp(dancersfade,0,0.5)
@@ -24,6 +28,13 @@ dancer1img=image_index
 dancer2img=image_index
 dancer3img=image_index
 dancer4img=image_index
+
+if audio_is_playing(songplaying)
+{
+recordAng+=1*songSPD
+recordAng2=lerp(recordAng2,22,0.1)
+} else recordAng2=lerp(recordAng2,45,0.1)
+
 }
 
 if songtext=1
@@ -217,27 +228,36 @@ draw_text(160+4,64+24-4,soundname)
 if key_super
 if songtext=1 songtext=0 else songtext=1
 
+
 ///Draw the divas
+if x=99999999999
+{
 draw_sprite(spr_shadow,0,40,200)
 draw_sprite_ext(dancer1spr,dancer1img,40,200,dancer1turn,1,0,c_white,1) ///Viva
 draw_sprite_ext(dancer1spr,dancer1img,40,200,dancer1turn,1,0,c_black,dancersfade)
-
-
 draw_sprite(spr_shadow,0,40+80-6,200)
 draw_sprite_ext(dancer2spr,dancer2img,40+80-6,200,dancer2turn,1,0,c_white,1) ///Hina
 draw_sprite_ext(dancer2spr,dancer2img,40+80-6,200,dancer2turn,1,0,c_black,dancersfade)
-
-
 draw_sprite(spr_shadow,0,40+160,200)
 draw_sprite_ext(dancer3spr,dancer3img,40+160,200,dancer3turn,1,0,c_white,1) ///Bahati
 draw_sprite_ext(dancer3spr,dancer3img,40+160,200,dancer3turn,1,0,c_black,dancersfade)
-
 draw_sprite(spr_shadow,0,40+240-2,200)
 draw_sprite_ext(dancer4spr,dancer4img,40+240-2,200,dancer4turn,1,0,c_white,1) ///Sofia
 draw_sprite_ext(dancer4spr,dancer4img,40+240-2,200,dancer4turn,1,0,c_black,dancersfade)
-
+}
 
 draw_command(6)
+
+
+
+matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1,1,1))
+draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,0,c_black,1)
+matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1,1,1))
+draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,recordAng,c_white,1)
+matrix_set(matrix_world,matrix_build(234,152,0+0.05*cos(recordAng),85,0,0,1,1,1))
+
+draw_sprite_ext(spr_soundtestrec2,0,0,0,1,1,recordAng2,c_white,1)
+matrix_set(matrix_world,matrix_build_identity())
 
 
 }

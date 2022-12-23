@@ -1,8 +1,22 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function charinfo_draw(){
-if instance_exists(oCharacterInfo) {fpsX=128+8 fpsY=8 with oCharacterInfo
+
+if instance_exists(oCharacterInfo) {fpsX=258 fpsY=232
+if betatest=1 if keyboard_check(ord("7"))
+with oCharacterInfo
 {
+setunlock=0
+repeat(99)
+{
+unlockedChar[setunlock]=1
+setunlock+=1
+}
+}
+
+	with oCharacterInfo
+{
+	
 /// @description Insert description here
 // You can write your code in this editor
 shader_reset()
@@ -24,14 +38,16 @@ if dataSelect<56-7 dataSet=-144*7
 shader_set(shd_grayscale)
 if dataRow=1
 {///Diva set
-draw_charinfoicon(1,spr_playerface,0,24+24,1)
-draw_charinfoicon(2,spr_playerface,1,24+24*2,1)
-draw_charinfoicon(3,spr_playerface,2,24+24*3,1)
-draw_charinfoicon(4,spr_playerface,3,24+24*4,1)
+draw_set_color(c_white)
+unlockedChar[0]=1
+draw_charinfoicon(0,spr_playerface,0,24+24,1)
+draw_charinfoicon(0,spr_playerface,1,24+24*2,1)
+draw_charinfoicon(0,spr_playerface,2,24+24*3,1)
+draw_charinfoicon(0,spr_playerface,3,24+24*4,1)
 //draw_charinfoicon(5,spr_playerface,1,24*5,c_white*unlockedChar[5])
 //draw_charinfoicon(6,spr_playerface,1,24*6,c_white*unlockedChar[6])
 }
-else
+
 if dataRow=2
 {
 if dataSet=0
@@ -200,8 +216,10 @@ if dataSet=0
 if dataRow=1
 draw_sprite_ext(spr_playerface,0,24,26,1,1,0,c_white,1)
 if dataRow=2
+if unlockedChar[1]=1
 draw_sprite_ext(spr_enemyface,1,0,26,1,1,0,c_white,1)
 if dataRow=3
+if unlockedChar[1]=1
 draw_sprite_ext(spr_enemyface,9,0,26,1,1,0,c_white,1)
 draw_set_alpha(1)
 }
@@ -211,12 +229,18 @@ draw_rectangle(-5,-5,144,320,0) draw_set_alpha(1) draw_set_color(c_white)
 pal_swap_set(my_pal_sprite,current_pal,false);
 draw_set_color(c_white)
 
+
+
 if dataRow=1
 draw_sprite_ext(enemyPortraitSpr,enemyPortraitIndex,24+-24+24*dataSelect+dataSet,26,1,1,0,c_white*unlockedChar[charNO],1)
 else
 if dataRow=2 or dataRow=3
 draw_sprite_ext(enemyPortraitSpr,enemyPortraitIndex,-24+24*dataSelect+dataSet,26,1,1,0,c_white*unlockedChar[charNO],1)
 
+if dataRow=4
+{
+draw_sprite_ext(spr_filmstage,enemyPortraitIndex,72,52,1,1,0,c_white*unlockedChar[charNO],1)
+}
 
 pal_swap_reset();
 
@@ -240,6 +264,9 @@ draw_text(72,8,"("+string(dataSelect)+"/"+string(dataRowMax)+")") //TITLE
 
 draw_text(72,16+2,"-"+string(categoryNames)+"-")
 
+if dataRow=4
+draw_text(72,80,""+string(name)+"")
+else
 draw_text(72,16+24+10+4,"-"+string(name)+"-")
 
 draw_set_halign(fa_right)
@@ -257,14 +284,22 @@ draw_text_ext(tex_start_x+146+2-144-4,tex_start_y+32+52+32+8,string_upper(desc),
 draw_text_ext_transformed(4,240-24,string_upper(dataabilities),8,102,0.75,1,0)
 draw_text_transformed(4,240-32,"ABILITIES:",0.75,1,0)
 
-draw_sprite(spr_selface,0,round(144-arrowSel2-24),0) if arrowSel1>0 arrowSel1-=0.1 else arrowSel1=0
-draw_sprite(spr_selface,1,round(0+arrowSel1),0) if arrowSel2>0 arrowSel2-=0.1 else arrowSel2=0
+draw_sprite(spr_selface,0,round(144-arrowSel2-24),54-19) if arrowSel1>0 arrowSel1-=0.1 else arrowSel1=0
+draw_sprite(spr_selface,1,round(0+arrowSel1),54-19) if arrowSel2>0 arrowSel2-=0.1 else arrowSel2=0
+
+draw_sprite(spr_selface,2,round(144-24),round(-arrowSel3)) if arrowSel3>0 arrowSel3-=0.1 else arrowSel3=0
+draw_sprite(spr_selface,3,round(0),round(arrowSel4)) if arrowSel4>0 arrowSel4-=0.1 else arrowSel4=0
+
 //maxhp*45
 maxhp=hp
+if image_blend!=c_black
+if  hp!=0
+{
 draw_set_color(c_white) draw_rectangle(224+8-1-round(maxhp*45/2),8-1+20,224+8+1+round(maxhp*45/2),8+8+1+20,false)
 draw_set_color(c_yellow) draw_rectangle(224+8-round(maxhp*45/2),8+20,224+8+round(maxhp*45/2),8+8+20,false)
 draw_set_halign(fa_right)
 draw_set_color(c_white) draw_text_transformed(224+8-2-round(maxhp*45/2),8-1+20+2,"HP",0.5,1,0)
+}
 draw_set_halign(fa_left)
 }
 }}
