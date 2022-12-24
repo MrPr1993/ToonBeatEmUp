@@ -16,11 +16,11 @@ OneAttack=2
 hp=1
 maxhp=1
 
-DamageVoice1=snd_enemy4
-DamageVoice2=snd_enemy4
-DamageVoice3=snd_enemy4
+DamageVoice1=snd_buffenemy2
+DamageVoice2=snd_buffenemy2
+DamageVoice3=snd_buffenemy2
 
-DeathCry=choose(snd_deathcry3)
+DeathCry=choose(snd_buffenemy3)
 
 HitGround=snd_hitgroundheavy
 isHeavy=1

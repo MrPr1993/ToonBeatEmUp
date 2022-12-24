@@ -22,9 +22,14 @@ weaponHitType=1
 WswingSound=snd_swing3
 }
 
+if wpadd="TASER"
+{
+weapon_setup(oTaser,spr_taser,0,100,0.15,2,1,3,snd_shocked,spr_hitflash,48,0,0,2,1,64)
+}
+
 if wpadd="SCIMITAR"
 {
-weapon_setup(oScimitar,spr_scimitar,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,1,64)
+weapon_setup(oTaser,spr_scimitar,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,1,64)
 WspriteFX=spr_blood
 }
 

@@ -319,6 +319,7 @@ or animFrame=6.8
 PlaySoundNoStack(snd_gun)
 flashFX(x+34*image_xscale,y,z-42,spr_gunflash,0,1,0,1,1,c_white,1)
 projectile_create(x+34*image_xscale,y,z-42,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.05,weaponHitType,weapontargetHeight,0,0)
+
 }
 	
 sprite_index=spr_sneak_gunfire
