@@ -5,3 +5,8 @@
 
 raintype=0
 //1 - Snow
+
+x2=0
+y2=0
+
+fallSpd=2

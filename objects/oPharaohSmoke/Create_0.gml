@@ -13,3 +13,11 @@ image_speed=0.25
 shadow=spr_shadow
 
 height=64
+
+MoveType=0
+
+dizzyHit=1
+
+isPharaoh=1
+
+mainSmoke=spr_psmoke

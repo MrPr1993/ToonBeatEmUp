@@ -6,6 +6,11 @@ enemyPortraitIndex=32
 
 enemyscript=animsetup_enemy
 
+DamageVoice1=snd_femenemy8
+DamageVoice2=snd_femenemy8
+DamageVoice3=snd_femenemy8
+DeathCry=snd_femenemy3
+
 pointshit=10
 points=100
 

@@ -1,0 +1,51 @@
+enemy_endstep()
+throw_step()
+
+overwriteAttack=1
+overwriteAttack1=1
+overwriteAttack2=1
+overwriteAttack3=1
+
+	///Attacks
+	if anim=10 ///Attack Stand
+	{
+if distance_to_point(targetEnemy.x,targetEnemy.y)>40
+anim=12 else anim=11
+
+if anim=12 if specialcheck1!=0 anim=11
+	}
+	
+if specialcheck1!=0 specialcheck1-=1
+	
+	if anim=11
+	{
+	 hit=0  sprite_index=AtkSpr
+MoveType=0 damage=0.1
+	image_index=animFrame image_speed=0
+	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
+	if animFrame=clamp(animFrame,0,1.5)
+	animFrame+=0.2 else animFrame+=0.1
+	if animFrame=2 {ground=0 sentflying=2*image_xscale zSpeed=-2}
+	if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+	}
+	}
+	
+	if anim=12
+	{specialcheck1=200
+		if animFrame=0 {specialcheck0=0}
+sprite_index=spr_shroom_shoot selfatk.x=x+48*image_xscale selfatk.dizzyAtk=1 MoveType=1 damage=0.05 
+frame_set(0,0,0.1)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25) if animFrame=2.75 if specialcheck0!=4 {specialcheck0+=1 animFrame=1}
+frame_set(3,0,0.1)
+frame_set(4,3,0.1)
+frame_set(5,4,0.1)
+frame_set(6,5,0.05)
+ if animFrame=clamp(animFrame,6,7){
+dust_make(x+13*image_xscale,y+1,z-43,4*image_xscale,0,round(choose(-random(2),random(2))))
+atk=1 
+}else atk=0
+frame_set(7,0,0.1)
+if animFrame>7.5 canmove=1
+
+	}

@@ -22,6 +22,11 @@ height=70
 
 specialFX=0
 
+DamageVoice1=snd_femenemy7
+DamageVoice2=snd_femenemy7
+DamageVoice3=snd_femenemy7
+DeathCry=snd_femenemy2
+
 StandSpr=spr_monk_stand
 MoveSpr=spr_monk_move
 RunSpr=spr_monk_move

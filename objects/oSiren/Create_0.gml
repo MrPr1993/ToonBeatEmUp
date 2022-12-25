@@ -14,6 +14,8 @@ DeathCry=snd_femenemy1
 
 enemyscript=animsetup_enemy
 
+idlestyle=1
+
 	walkSpeed=0.5
 	walkSpeedY=0.5
 

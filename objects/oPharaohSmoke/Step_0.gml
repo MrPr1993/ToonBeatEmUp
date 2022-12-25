@@ -10,6 +10,9 @@ depth=-y
 if z>0
 z+=0.1
 
+if isPharaoh=1
+{
 if instance_exists(oPharaoh)
-if oPharaoh.hp=0 or oPharaoh.dead=1 and sprite_index=spr_psmoke
+if oPharaoh.hp=0 or oPharaoh.dead=1 and sprite_index=mainSmoke
 {image_index=0 sprite_index=spr_smokeend}
+}

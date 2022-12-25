@@ -6,6 +6,11 @@ enemyPortraitIndex=51
 
 enemyscript=animsetup_enemy
 
+DamageVoice1=snd_femenemy8
+DamageVoice2=snd_femenemy8
+DamageVoice3=snd_femenemy8
+DeathCry=snd_femenemy3
+
 pointshit=10
 points=100
 
@@ -18,7 +23,12 @@ idlestyle=1
 hp=0.2
 maxhp=0.2
 
-height=70
+HitGround=snd_hitgroundheavy
+isHeavy=1
+throwHeavy=1
+rangeAtk=320
+
+height=100
 
 specialFX=0
 

@@ -18,7 +18,6 @@ pointshit=10
 points=100
 
 
-
 OneAttack=2
 
 DamageVoice1=snd_martian1
