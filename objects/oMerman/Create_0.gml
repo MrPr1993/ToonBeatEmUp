@@ -12,6 +12,11 @@ armspr=spr_merman_arms
 
 	walkSpeed=0.5
 	walkSpeedY=0.5
+	
+DeathCry=snd_merman2
+DamageVoice1=snd_merman1
+DamageVoice2=snd_merman1
+DamageVoice3=snd_merman1
 
 weapon_add("SPEAR")
 //weapon_add("TRIDENT")

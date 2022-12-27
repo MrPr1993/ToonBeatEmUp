@@ -11,7 +11,7 @@ points=100
 
 idlestyle=1
 
-rangeAtk=100
+rangeAtk=300
 
 OneAttack=2
 

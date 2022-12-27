@@ -10,7 +10,9 @@ chardraw=draw_swing;
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=150
+
+idlestyle=1
 
 OneAttack=2
 

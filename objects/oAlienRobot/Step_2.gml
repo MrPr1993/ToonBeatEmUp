@@ -16,13 +16,15 @@ overwriteAttack3=1
 	
 	if anim=11
 	{
+	selfatk.x=x+32*image_xscale	
+	
 	 hit=0  sprite_index=AtkSpr
-MoveType=0 damage=0.1
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
-	}
+MoveType=3 damage=0.2 if animFrame=0 {specialcheck0=0}
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	frame_set(2,2,0.5) if animFrame=clamp(animFrame,2,3.9) atk=1 else atk=0
+	frame_set(3,3,0.5) if animFrame=3.5 if specialcheck0!=16 {specialcheck0+=1 animFrame=2}
+	frame_set(4,1,0.1) if animFrame>4.5 canmove=1
 	}
 	
 		if anim=12
