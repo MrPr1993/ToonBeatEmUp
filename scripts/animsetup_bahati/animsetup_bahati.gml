@@ -99,8 +99,11 @@ if animFrame>15.5 animFrame=0
 	}
 	else
 	{
-	if sprite_index!=spr_bahati_idle
-	{animFrame=0 sprite_index=spr_bahati_idle}
+	var idlespr=spr_bahati_idle;
+	if Cweather=1 idlespr=spr_bahati_idlecold;
+		
+	if sprite_index!=idlespr
+	{animFrame=0 sprite_index=idlespr}
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.1) if animFrame>3-0.1 animFrame=1
 	frame_set(2,2,0.1)

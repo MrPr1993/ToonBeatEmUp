@@ -8,6 +8,9 @@ specialtaunt=-1
 
 playerGet=0
 
+Cweather=0
+///1 - cold - 2 - hot
+
 	nameID="None"
 	name="NULL"
 	enemyPortraitSpr=spr_miscface

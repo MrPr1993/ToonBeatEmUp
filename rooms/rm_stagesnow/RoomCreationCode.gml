@@ -11,7 +11,7 @@ with oEnemySpawner
 	MaxY=280
 		}
 		
-with oEnemySpawner {timeline=tm_carnival event_user(0)}
+with oEnemySpawner {timeline=tm_snow event_user(0)}
 
 
 with oControl

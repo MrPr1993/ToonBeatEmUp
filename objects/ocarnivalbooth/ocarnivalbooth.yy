@@ -43,6 +43,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Stagecarnival",
-    "path": "folders/5b-Stage Sprites/Stagecarnival.yy",
+    "path": "folders/5b-Stage Sprites/Stage5/Stagecarnival.yy",
   },
 }

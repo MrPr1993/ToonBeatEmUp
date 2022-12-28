@@ -4,12 +4,17 @@
 
 if charstatsetup=0
 {
-if instance_exists(oPlayer) with oPlayer
+if instance_exists(oPlayer)
+{with oPlayer
 {
 if controlNO=1 {PlayerLife=global.P1Life PlayerScore=global.P1Score character=global.P1Char;}
 if controlNO=2 {PlayerLife=global.P2Life PlayerScore=global.P2Score character=global.P2Char;}
 if controlNO=3 {PlayerLife=global.P3Life PlayerScore=global.P3Score character=global.P3Char;}
 if controlNO=4 {PlayerLife=global.P4Life PlayerScore=global.P4Score character=global.P4Char;}
+
+if room=rm_stagesnow
+oPlayer.Cweather=1;
+}
 }
 charstatsetup=1
 

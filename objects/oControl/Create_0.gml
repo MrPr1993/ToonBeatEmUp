@@ -933,3 +933,4 @@ PlayerScore=global.P4Score my_pal_sprite=global.p4Pals
 
 if room=rm_paletteeditor
 instance_create_depth(0,0,-1,oPaletteEditor)
+
