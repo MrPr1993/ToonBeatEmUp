@@ -7,6 +7,8 @@ canControl=0
 controlNO=0
 controller_setup()
 
+colorshade_setup()
+
 ContinueSelect=0
 ContinueMode=0
 playerGet=0

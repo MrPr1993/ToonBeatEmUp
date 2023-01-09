@@ -3,6 +3,8 @@ canControl=1
 controlNO=9
 playNO=1
 
+colorshade_setup()
+
 recordAng=0
 recordAng2=0
 
@@ -592,6 +594,10 @@ mapXscale=1
 mapYscale=-1
 mapXAdd=1
 mapXFilm=0
+mapPX=0
+mapPY=0
+mapPflicker=0
+
 
 skipScene=0
 

@@ -2,6 +2,8 @@
 // You can write your code in this editor
 alarm[0]=240
 
+colorshade_setup()
+
 trainz=0
 
 fallHole=0

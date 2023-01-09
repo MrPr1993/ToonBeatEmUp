@@ -25,6 +25,11 @@ specialFX=0
 isHeavy=1
 throwHeavy=1
 
+DeathCry=snd_plant1
+DamageVoice1=snd_plant2
+DamageVoice2=snd_plant2
+DamageVoice3=snd_plant2
+
 StandSpr=spr_plant_stand
 MoveSpr=spr_plant_move
 RunSpr=spr_plant_move

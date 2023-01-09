@@ -44,7 +44,7 @@ layer_hspeed("BGbricks",-32)
 	alarm[0]=20
 	blk=instance_create_depth(320,0,-1,oFlashFX) with blk
 	{sprite_index=spr_block image_xscale=-9999 image_yscale=8888 hspeed=-32
-	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0
+	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0 haspal=0
 	}
 }
 
@@ -65,7 +65,7 @@ if isReady!=0 and charbuffer=0 {PlaySound(snd_picked) oCharacterSelectPlayer.can
 layer_hspeed("BGbricks",-16) introtextaddspd=-16
 	blk=instance_create_depth(320,0,-1,oFlashFX) with blk
 	{sprite_index=spr_block image_xscale=9999 image_yscale=8888 hspeed=-16
-	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0
+	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0  haspal=0
 	}
 	
 	global.P1available=(oControl.p1.isReady)

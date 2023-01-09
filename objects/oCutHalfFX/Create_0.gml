@@ -12,6 +12,9 @@ trainz=0
 shadowXAdd=0
 fallHole=0
 
+colorshade_setup()	
+
+
 ///Palette Options
 	current_pal=0;
 	my_pal_sprite=spr_playerpal

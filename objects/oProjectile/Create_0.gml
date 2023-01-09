@@ -1,5 +1,7 @@
 hitSource=-1
 
+colorshade_setup()
+
 HitSound=snd_hit
 
 z=0

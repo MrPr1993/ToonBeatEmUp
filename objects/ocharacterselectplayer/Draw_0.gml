@@ -1,5 +1,7 @@
 draw_sprite_ext(spr_characterselect,2,x+1,y+1,1,1,0,c_black,0.5)
 
+
+
 if charadded=0
 {
 draw_set_color(c_white)

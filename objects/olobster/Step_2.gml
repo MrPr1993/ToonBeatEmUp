@@ -48,8 +48,8 @@ if anim=12
 sprite_index=spr_lobster_attack2 damage=0.1 MoveType=1
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
-frame_set(2,2,0.1) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
-frame_set(3,3,0.1) 
+frame_set(2,2,0.5) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+frame_set(3,3,0.05) 
 frame_set(4,0,0.1)
 if animFrame>4.7 canmove=1
 }

@@ -801,13 +801,14 @@ draw_text(160+p5.introtextadd,44,"PRESS START TO PLAY")
 draw_set_font(global.timefont)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
-
+draw_set_alpha(1)
 if characterSelReady=2
 {
 draw_set_color(c_black) draw_rectangle(-1,-1,321,241,false)
 }
 
 draw_set_color(c_white) draw_set_alpha(1)
+
 }
 
 ///Hi-Score Screen - Draw_GUI

@@ -9,6 +9,12 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
+
+DeathCry=snd_lobster1
+DamageVoice1=snd_lobster2
+DamageVoice2=snd_lobster2
+DamageVoice3=snd_lobster2
+
 rangeAtk=100
 
 OneAttack=2

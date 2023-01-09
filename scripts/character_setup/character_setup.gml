@@ -3,6 +3,8 @@
 function character_setup() {
 	canControl=0
 	controller_setup()
+	
+	colorshade_setup()
 
 specialtaunt=-1
 

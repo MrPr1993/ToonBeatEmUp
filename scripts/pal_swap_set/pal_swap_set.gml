@@ -24,6 +24,11 @@ function pal_swap_set() {
 	    shader_set_uniform_f(Pal_Texel_Size, texel_x, texel_y);
 	    shader_set_uniform_f(Pal_UVs, UVs[0] + texel_hx, UVs[1] + texel_hy, UVs[2] + texel_hx, UVs[3] + texel_hy);
 	    shader_set_uniform_f(Pal_Index, _pal_index);
+		
+	shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),cRed+cGlow+cShadow+cRedAdd);
+	shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),cBlue+cGlow+cShadow+cBlueAdd);
+	shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),cGreen+cGlow+cShadow+cGreenAdd);
+		
 	}
 	else
 	{   //Using a surface based palette
@@ -40,6 +45,10 @@ function pal_swap_set() {
 	    shader_set_uniform_f(Pal_Texel_Size, texel_x, texel_y);
 	    shader_set_uniform_f(Pal_UVs, texel_hx, texel_hy, 1.0+texel_hx, 1.0+texel_hy);
 	    shader_set_uniform_f(Pal_Index, _pal_index);
+		
+	shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),cRed+cGlow+cShadow+cRedAdd);
+	shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),cBlue+cGlow+cShadow+cBlueAdd);
+	shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),cGreen+cGlow+cShadow+cGreenAdd);
 	}
 
 

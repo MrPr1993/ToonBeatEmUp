@@ -27,10 +27,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"62d3f57b-ddae-4ed2-9b08-666695092444",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"35289f9f-584a-4aaf-b206-4a0964cf5cbb",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0ac41a19-a7de-459d-bfba-38add5b995d1",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"77775e1d-d1da-47d1-9a17-b3821ca1ccbb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"35289f9f-584a-4aaf-b206-4a0964cf5cbb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"62d3f57b-ddae-4ed2-9b08-666695092444",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0ac41a19-a7de-459d-bfba-38add5b995d1",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -47,10 +47,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"094f36ef-65a3-4695-8e59-c32516e763c3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"62d3f57b-ddae-4ed2-9b08-666695092444","path":"sprites/spr_lobster_attack2/spr_lobster_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9c191a42-6bb6-4b7e-974c-b0590451d890","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77775e1d-d1da-47d1-9a17-b3821ca1ccbb","path":"sprites/spr_lobster_attack2/spr_lobster_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4df002a5-9f67-440e-9623-99fce7e8ef65","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"35289f9f-584a-4aaf-b206-4a0964cf5cbb","path":"sprites/spr_lobster_attack2/spr_lobster_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"cb2b85b2-e746-4096-a4b7-3a012f5bccda","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ac41a19-a7de-459d-bfba-38add5b995d1","path":"sprites/spr_lobster_attack2/spr_lobster_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9c191a42-6bb6-4b7e-974c-b0590451d890","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"77775e1d-d1da-47d1-9a17-b3821ca1ccbb","path":"sprites/spr_lobster_attack2/spr_lobster_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"094f36ef-65a3-4695-8e59-c32516e763c3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"62d3f57b-ddae-4ed2-9b08-666695092444","path":"sprites/spr_lobster_attack2/spr_lobster_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cb2b85b2-e746-4096-a4b7-3a012f5bccda","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ac41a19-a7de-459d-bfba-38add5b995d1","path":"sprites/spr_lobster_attack2/spr_lobster_attack2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

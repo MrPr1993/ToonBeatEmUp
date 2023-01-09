@@ -6,6 +6,8 @@ function booth_setup(){
 maxhp=1
 hp=1
 
+colorshade_setup()
+
 name="TICKET BOOTH"
 
 dead=0

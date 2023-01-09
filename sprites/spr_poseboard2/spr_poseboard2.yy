@@ -73,7 +73,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Stagecarnival",
-    "path": "folders/5b-Stage Sprites/Stagecarnival.yy",
+    "name": "ToonBeatEmUp",
+    "path": "ToonBeatEmUp.yyp",
   },
 }

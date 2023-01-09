@@ -13,11 +13,15 @@ if carMode=0
 
 
 if weaponspr!=-1 and weaponBack=1
-{
-if weaponFlash<=1 shader_set(shd_white_sprite);
-else
+{pal_swap_set(weapon_pal_sprite,weapon_pal,false);
+if weaponFlash<=1 
+{shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),2.0)
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),0.5)	
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),0.5)	
+}//shader_set(shd_white_sprite);
+//else
 
-pal_swap_set(weapon_pal_sprite,weapon_pal,false);
+
 draw_sprite_ext(weaponspr,weaponIndex,round(x+( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
 
 
@@ -31,12 +35,15 @@ draw_set_blend_mode(bm_normal);
 draw_character()
 
 
-
 if weaponspr!=-1 and weaponBack=0
-{
-if weaponFlash<=1 shader_set(shd_white_sprite);
-else
-pal_swap_set(weapon_pal_sprite,weapon_pal,false);
+{pal_swap_set(weapon_pal_sprite,weapon_pal,false);
+if weaponFlash<=1 
+{shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),2.0)
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),0.5)	
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),0.5)	
+}//shader_set(shd_white_sprite);
+//else
+
 draw_sprite_ext(weaponspr,weaponIndex,round(x+( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
 
 

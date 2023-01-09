@@ -7,6 +7,8 @@ canControl=0
 controlNO=0
 controller_setup()
 
+colorshade_setup()
+
 introbuffer=50
 introprep=0
 introtextadd=0

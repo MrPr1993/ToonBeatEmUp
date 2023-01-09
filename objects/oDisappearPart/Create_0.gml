@@ -1,3 +1,5 @@
+colorshade_setup()
+
 disappearTime=24
 
 dis=0

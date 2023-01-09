@@ -1,5 +1,6 @@
 image_speed=0
 
+colorshade_setup()
 
 PosX=0
 PosY=-70

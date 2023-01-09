@@ -1,4 +1,6 @@
 function bobject_setup() {
+colorshade_setup()	
+
 	z=0
 	trainz=0
 	zSpeed=0

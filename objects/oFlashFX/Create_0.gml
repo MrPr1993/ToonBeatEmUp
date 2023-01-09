@@ -2,6 +2,8 @@ alarm[0]=10
 
 depth=0
 
+colorshade_setup()
+
 z=0
 trainz=0
 trainFX=0

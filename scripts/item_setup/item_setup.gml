@@ -5,6 +5,10 @@ function item_setup() {
 	gravLandHalt=0
 	itemHP=0
 	trainz=0
+	
+	colorshade_setup()
+
+dead=0
 
 	canFX=1
 	FX=0

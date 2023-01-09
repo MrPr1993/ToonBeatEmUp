@@ -148,7 +148,7 @@ draw_text(40,32,"PLAYER "+string(controlNO))
 
 
 
-if key_attack
+if key_attack or keyboard_check_pressed(vk_enter)
 {
 if menuSelect=0
 if LegacyMode=0 {LegacyMode=1} else {LegacyMode=0}
