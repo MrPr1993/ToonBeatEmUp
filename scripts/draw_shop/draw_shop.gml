@@ -2,20 +2,29 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_shop(){controlNO=9
 
+
 	
 ///For testing
 //if x=-9999999999999999
 {var unlockall=1;
-	repeat(16)
+	repeat(6)
 	{
 	global.UnlockStageA[unlockall]=1;
 	unlockall+=1;
 	}
 }
+
 	
 controller_setup() 
 if room=rm_shop
-{fpsX=320 fpsY=8
+{fpsX=260 fpsY=8
+
+if shopHello!=10 shopHello+=1 else {shopHello=11
+	if shopHelloR=0 PlaySound(snd_betty1)
+	if shopHelloR=1 PlaySound(snd_betty2)
+	if shopHelloR=2 PlaySound(snd_betty3)
+	if shopHelloR=3 PlaySound(snd_betty4)	
+	}
 
 if shopDialogueAlt!=1
 {
@@ -23,11 +32,24 @@ if key_jump or keyboard_check_pressed(vk_escape)
 if shopBuy!=-1 shopBuy=-1
 else
 {canControl=0
+ shopHelloR=choose(0,1,2,3)
+
+	if shopHelloR=0 PlaySound(snd_betty5)
+	if shopHelloR=1 PlaySound(snd_betty6)
+	if shopHelloR=2 PlaySound(snd_betty7)
+	if shopHelloR=3 PlaySound(snd_betty8)		
+
 alarm[4]=80 global.StageGoing=rm_menu gold_save()
 shopDialogueAlt=8
 }
 }
-if canControl=0 {shopDialogueAlt=8 shopDesc="GOODBYE!" shopAltFace=3 shopName="" shopCost=""}
+if canControl=0 {shopDialogueAlt=8 
+	if shopHelloR=0 shopDesc="      BYE BYE!" 
+	if shopHelloR=1 shopDesc="      SEE YA!" 
+	if shopHelloR=2 shopDesc="      SO LONG!" 
+	if shopHelloR=3 shopDesc="      GOODBYE!" 
+	
+	shopAltFace=3 shopName="" shopCost=""}
 ///Buy Item
 if shopBuy!=-1
 {
@@ -38,16 +60,35 @@ if key_attack
 if shopBuy=0 {shopBuy=-1 shopDialogueTime=2 shopDialogueAlt=5}
 else {shopDialogueAlt=4 shopDialogueTime=120 shopBuy=-1
 	
+	PlaySound(snd_picked)
+ shopHelloR=choose(0,1,2,3)
+	if shopHelloR=0 PlaySound(snd_betty9)
+	if shopHelloR=1 PlaySound(snd_betty10)
+	if shopHelloR=2 PlaySound(snd_betty11)
+	if shopHelloR=3 PlaySound(snd_betty12)	
+	
 	global.Gold-=shopPrice gold_save()
 	
-	if  shopSelect=1
-	global.UnlockCharacterData=1
-	if  shopSelect=2
-	global.UnlockAltPal=1
-	
-	if shopSelect=5 global.UnlockSoundTest=1
-	
-	if shopSelect=6 global.UnlockMovies=1
+switch(shopSelect)
+{
+case 1: global.UnlockCharacterData=1 break;
+case 2: global.UnlockAltPal=1 break;
+case 3: global.UnlockAltPal2=2 break;
+case 4: global.UnlockAltPal3=3 break;
+case 5: global.UnlockSoundTest=1 break;
+case 6: global.UnlockMovies=1 break;
+case 7: global.UnlockCharacterData=1 break;
+case 8: global.UnlockCharacterData=1 break;
+case 9: global.UnlockCharacterData=1 break;
+case 10: global.UnlockCharacterData=1 break;
+case 11: global.UnlockCharacterData=1 break;
+case 12: global.UnlockCharacterData=1 break;
+case 13: global.UnlockCharacterData=1 break;
+case 14: global.UnlockCharacterData=1 break;
+case 15: global.UnlockCharacterData=1 break;
+case 16: global.UnlockCharacterData=1 break;	
+
+}
 	 unlock_save()
 	}/// BUY ITEM
 }
@@ -68,7 +109,7 @@ shopDesc=""
 shopCost=""
 shopSelect=-1
 
-//////
+////// Shop items - Set 1
 if shopSet=0 
 {
 if shopselY=0 and shopselX=0
@@ -80,6 +121,16 @@ if shopselY=0 and shopselX=1
 {shopPrice=4000 shopName="PALETTE SWAP" shopCost="COST:4000"
 shopDesc="BORING OF YOUR\nCLOTHING COLOR?\nYOU CAN CHANGE IT\nWITH THIS!"
 if global.UnlockAltPal=0 shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
+}
+if shopselY=0 and shopselX=2
+{shopPrice=6000 shopName="PALETTE SWAP 2" shopCost="COST:4000"
+shopDesc="MORE COLORS!\nAND MORE PALETTES!\nHAVE MORE COLORS\nWITH THIS ONE!"
+if global.UnlockAltPal2=0 shopSelect=3 else {shopSelect=-2 shopCost="SOLD OUT!"}
+}
+if shopselY=0 and shopselX=3
+{shopPrice=8000 shopName="CUSTOM PALETTE" shopCost="COST:8000"
+shopDesc="WANT TO MAKE\nYOUR OWN PALETTE? \nUSE THIS TO\nRECOLOR THE DIVAS!"
+if global.UnlockAltPal3=0 shopSelect=4 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=0
 {shopPrice=5000 shopName="SOUND TEST" shopCost="COST:5000"
@@ -98,30 +149,56 @@ if shopDialogueAlt!=0
 	if canControl=1
 	{
 if shopDialogueAlt=1
-{shopDesc="     WELCOME!" shopName="" shopCost=""}
+{
+if shopHelloR=0	shopDesc="     WELCOME!"
+if shopHelloR=1	shopDesc="   HELLO THERE!"
+if shopHelloR=2	shopDesc="  HOW DO YOU DO?"
+if shopHelloR=3	shopDesc="  WHAT'LL IT BE?"	
+	
+	shopName="" shopCost=""}
 if shopDialogueAlt=2
 {shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE." shopAltFace=3 shopName="" shopCost=""}
 if shopDialogueAlt=3
 {shopDesc="  WANT THAT ONE?" shopAltFace=-1}
 shopDialogueTime-=1 if shopDialogueTime=0 {shopDialogueAlt=0 shopAltFace=-1}
 if shopDialogueAlt=4
-{shopDesc="    THANK YOU!" shopName="" shopCost="" shopAltFace=5}
+{
+if shopHelloR=0	shopDesc="    THANK YOU!"
+if shopHelloR=1	shopDesc="      SOLD!"
+if shopHelloR=2	shopDesc="THANKS FOR BUYING!"
+if shopHelloR=3	shopDesc="   HERE YOU GO!"	
+	
+
+	
+	shopName="" shopCost="" shopAltFace=5
+	
+	}
 if shopDialogueAlt=5 {}
 if shopDialogueAlt=6
 {shopDesc="OH YOU BOUGHT\nTHAT ONE ALREADY." shopAltFace=3 shopName="" shopCost=""}
 if shopDialogueAlt=7
 {shopDesc="SORRY,YOU DON'T\nHAVE ENOUGH CASH." shopAltFace=3 shopName="" shopCost=""}
 if shopDialogueAlt=8
-{shopDesc="GOODBYE!" shopAltFace=3 shopName="" shopCost=""}
-}else {shopDesc="      GOODBYE!" shopAltFace=3 shopName="" shopCost=""}
+{
+	if shopHelloR=0 shopDesc="     BYE BYE!" 
+	if shopHelloR=1 shopDesc="     SEE YA!" 
+	if shopHelloR=2 shopDesc="     SO LONG!" 
+	if shopHelloR=3 shopDesc="     GOODBYE!" 
+	shopAltFace=3 shopName="" shopCost=""}
+}else {
+	if shopHelloR=0 shopDesc="     BYE BYE!" 
+	if shopHelloR=1 shopDesc="     SEE YA!" 
+	if shopHelloR=2 shopDesc="     SO LONG!" 
+	if shopHelloR=3 shopDesc="     GOODBYE!" 
+	shopAltFace=3 shopName="" shopCost=""}
 }
 else
 {
 if key_attack
 if shopSelect=-1 or shopSelect=-2
 {
-shopDialogueTime=120 shopDialogueAlt=2 
-if shopSelect=-2 shopDialogueAlt=6
+shopDialogueTime=120 shopDialogueAlt=2 PlaySound(snd_steal)
+if shopSelect=-2 {shopDialogueAlt=6}
 }
 else
 {
@@ -133,7 +210,7 @@ PlaySound(snd_picked)
 shopDialogueAlt=3 shopDialogueTime=-1
 shopBuy=1
 }
-else {shopDialogueTime=120 shopDialogueAlt=7}
+else {shopDialogueTime=120 shopDialogueAlt=7 PlaySound(snd_steal)}
 }
 
 }
@@ -159,9 +236,16 @@ if shopFrame1=clamp(shopFrame1,3-0.05,3+0.05) shopFrame1b=2
 }}
 else shopFrame1b=shopAltFace
 
+if shopDialogueAlt=1
+{if shopFrameIntro<6-0.15 {shopFrameIntro+=0.15
+draw_sprite(spr_shopgirlintro,shopFrameIntro,160,0)}
+else draw_sprite(spr_shopgirl,0,160,0)
+}
+else
+{
 draw_sprite(spr_shopgirl,shopFrame0b,160,0)
 draw_sprite(spr_shopgirl_face,shopFrame1b,160+48,57+round(shopFrame0b))
-
+}
 
 draw_set_color(c_black) draw_set_alpha(0.8)
 draw_rectangle(-4,-4,160,300,false)
@@ -176,8 +260,8 @@ if shopSet=0 /////Shop Items
 ///Set 1
 if 	global.UnlockCharacterData=0 shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,1*global.UnlockStageA[1],2+2,16) shader_reset() if global.UnlockAltPal=0 shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,2*global.UnlockStageA[2],2+4+32,16) shader_reset() shader_set(shd_grayscale)
-draw_sprite(spr_shopitem,3*global.UnlockStageA[3],2+6+64,16) shader_reset() shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,2*global.UnlockStageA[2],2+4+32,16) shader_reset() if global.UnlockAltPal2=0 shader_set(shd_grayscale)
+draw_sprite(spr_shopitem,3*global.UnlockStageA[3],2+6+64,16) shader_reset() if global.UnlockAltPal3=0 shader_set(shd_grayscale)
 draw_sprite(spr_shopitem,4*global.UnlockStageA[4],2+8+64+32,16) shader_reset()
 ///Set 2
 if global.UnlockSoundTest=0 shader_set(shd_grayscale)

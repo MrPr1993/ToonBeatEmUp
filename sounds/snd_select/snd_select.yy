@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_select",
-  "duration": 0.120011,
+  "duration": 0.115011,
   "parent": {
     "name": "General",
     "path": "folders/f - Sounds/General.yy",

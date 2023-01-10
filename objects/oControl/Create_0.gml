@@ -267,6 +267,7 @@ featY=0
 shopsel=0
 shopselX=0
 shopselY=0
+shopFrameIntro=0
 shopFrame0=0
 shopFrame0b=0
 shopFrame1=0
@@ -285,6 +286,8 @@ shopDialogueAlt=1
 shopAltFace=-1
 shopSelect=-1
 shopPrice=0
+shopHello=0
+shopHelloR=choose(0,1,2,3)
 
 stagePause=0
 isCutscene=0
