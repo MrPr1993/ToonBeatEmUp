@@ -25,7 +25,7 @@ DeathCry=choose(snd_buffenemy3)
 HitGround=snd_hitgroundheavy
 isHeavy=1
 throwHeavy=1
-rangeAtk=120
+rangeAtk=200
 rangeY=2
 
 height=114

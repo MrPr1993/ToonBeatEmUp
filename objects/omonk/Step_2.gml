@@ -75,7 +75,7 @@ if DeathCryOnce=0 hasBounce=0 else hasBounce=1
 	frame_set(4,11,0.25)
 	frame_set(5,12,0.25)
 	frame_set(6,13,0.25)
-	frame_set(7,14,0.5) if animFrame=8 sprite_index=spr_monk_attack
+	frame_set(7,14,0.5) if animFrame=8 sprite_index=spr_monk_jump
 	frame_set(8,0,0) sentflying=lerp(sentflying,0,0.1)
 
 	
@@ -84,15 +84,77 @@ if DeathCryOnce=0 hasBounce=0 else hasBounce=1
 
 if anim=10
 {
-anim=11
+	if distance_to_point(targetEnemy.x,targetEnemy.y)>80
+	anim=12 else anim=11
 }
 
 if anim=11 ///Attack Stand
 { hit=0  
 atkcol_set(35,0,42,1.85,1,22)
 sprite_index=AtkSpr MoveType=1 damage=0.2
-image_index=animFrame image_speed=0 if animFrame=2 {PlaySoundNoStack(snd_swing) }
+image_index=animFrame image_speed=0 if animFrame=2 {PlaySoundNoStack(snd_swing) 
+		flashFX(x+40*image_xscale,y+1,z-55,spr_monk_attackfx,0,0.5,30,image_xscale,1,c_white,1)
+		fx.hspeed=sentflying+4*image_xscale	
+	}
  if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0 if animFrame==clamp(animFrame,2,2.2) sentflying=8*image_xscale else sentflying=0
 if animFrame=clamp(animFrame,0,1.5)
 animFrame+=0.1 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 }}
+
+if anim=12
+{sprite_index=spr_monk_attack2
+atkcol_set(7,0,12,1.05,1,38)
+
+frame_set(0,0,0.25)
+frame_set(1,1,0.05) if animFrame=2 {ground=0 zSpeed=-4 sentflying=8*image_xscale animFrame=2.1
+
+
+	
+	}
+if animFrame=2.1 {image_index=2
+	atk=1 MoveType=1 damage=0.2
+		
+	if ground {animFrame=3 atk=0}}
+frame_set(3,1,0.1)
+frame_set(4,0,0.1)
+if animFrame>4.5 canmove=1
+}
+
+
+///AI for enemy doing blocks
+if canmove=1 and (anim=0 or anim=1)
+if distance_to_object(targetEnemy)<48
+and (targetEnemy.y=clamp(targetEnemy.y,y-8,y+8))
+and (
+(image_xscale=1 and x<targetEnemy.x and targetEnemy.image_xscale=-1)
+or (image_xscale=-1 and x>targetEnemy.x and targetEnemy.image_xscale=1)
+)
+{
+if targetEnemy.atk=1 if anim!=65
+{animFrame=0 canmove=0 recovery=0
+anim=65 canBlock=1
+}
+}
+
+
+///Block
+if anim=65
+{canBlock=1
+sprite_index=spr_monk_block
+animFrame+=0.1 
+if animFrame>6 {canmove=1 anim=0 alarm[1]=2}
+}
+
+if anim=65 or anim=61
+canBlock=1 else canBlock=0
+
+///Block Hit
+if anim=61
+{canBlock=1 animFrame+=0.1 shaketime=30
+if animFrame<0.5
+{
+if place_free(x+0.1*-image_xscale,y) x+=0.1*-image_xscale
+}
+sprite_index=spr_monk_block
+if animFrame>2 {anim=65}
+}

@@ -11,14 +11,14 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=140
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=0.4
+maxhp=0.4
 
-height=70
+height=90
 
 specialFX=0
 
@@ -39,8 +39,8 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_monk_stand
 JumpAtkSpr2=spr_monk_stand
 
-JumpSpr=spr_monk_stand
-JumpSpr2=spr_monk_stand
+JumpSpr=spr_monk_jump
+JumpSpr2=spr_monk_jump
 ThrownSpr=spr_monk_hit
 FlatSpr=spr_monk_flat
 ShockSpr=spr_monk_elec
