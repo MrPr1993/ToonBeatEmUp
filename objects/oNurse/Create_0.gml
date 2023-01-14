@@ -14,14 +14,14 @@ DamageVoice2=snd_femenemy7
 DamageVoice3=snd_femenemy7
 DeathCry=snd_femenemy2
 
-rangeAtk=100
+rangeAtk=300
 
 OneAttack=2
 
 hp=0.2
 maxhp=0.2
 
-height=70
+height=90
 
 specialFX=0
 

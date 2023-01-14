@@ -124,6 +124,7 @@ fallHole=0
 
 isCut=0
 weaponCut=0
+gravZAdd=0.45
 
 	canHit=1
 

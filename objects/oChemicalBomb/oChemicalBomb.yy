@@ -1,22 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oNurse",
+  "name": "oChemicalBomb",
   "spriteId": {
-    "name": "spr_nurse_stand",
-    "path": "sprites/spr_nurse_stand/spr_nurse_stand.yy",
+    "name": "spr_chemicalbomb",
+    "path": "sprites/spr_chemicalbomb/spr_chemicalbomb.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": {
-    "name": "mask_small",
-    "path": "sprites/mask_small/mask_small.yy",
+    "name": "spr_selfatk",
+    "path": "sprites/spr_selfatk/spr_selfatk.yy",
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "oEnemy1",
-    "path": "objects/oEnemy1/oEnemy1.yy",
+    "name": "oCone",
+    "path": "objects/oCone/oCone.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -33,12 +33,13 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":24,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Nurse",
-    "path": "folders/7 - Enemies/Nurse.yy",
+    "name": "Special Items",
+    "path": "folders/9 - Objects And Items/b - Items/Special Items.yy",
   },
 }

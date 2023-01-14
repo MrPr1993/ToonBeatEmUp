@@ -8,7 +8,7 @@ if !place_meeting(x,y,oFallHole)
 else if fallHole=0 {fallHole=1 disappearTime=0 alarm[2]=60}
 
 if !ground
-{z+=spdZ if canGrav=1 spdZ+=0.45}
+{z+=spdZ if canGrav=1 spdZ+=gravZAdd}
 else
 {
 if gravLandHalt=1 spinBack=0
