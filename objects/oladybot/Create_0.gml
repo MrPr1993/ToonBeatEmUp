@@ -13,10 +13,10 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=0.5
+maxhp=0.5
 
-height=70
+height=120
 
 specialFX=0
 

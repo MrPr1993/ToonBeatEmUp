@@ -20,8 +20,8 @@ OneAttack=2
 
 idlestyle=1
 
-hp=0.2
-maxhp=0.2
+hp=0.6
+maxhp=0.6
 
 HitGround=snd_hitgroundheavy
 isHeavy=1

@@ -43,6 +43,10 @@ weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
 if wpadd="SHOVEL"
 weapon_setup(oShovel,spr_shovel,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
 
+if wpadd="PICKAXE"
+weapon_setup(oPickaxe,spr_pickaxe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+
+
 if wpadd="KNIFE"
 weapon_setup(oKnife,spr_knife,0,50,0.05,2,2,0,snd_swing,snd_cut,37,0,45,1.45,1,15)
 

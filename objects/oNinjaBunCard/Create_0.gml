@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+colorshade_setup()
+
 alarm[0]=200
 
 fallHole=0

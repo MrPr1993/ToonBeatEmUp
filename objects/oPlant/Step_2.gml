@@ -12,8 +12,31 @@ overwriteAttack4=1
 
 
 if anim=10
-{anim=12
+{
+if distance_to_point(targetEnemy.x,targetEnemy.y)<60
+anim=11
+else
+{
+if current_pal=0 
+anim=12 else anim=13
 }
+}
+
+if anim=11
+{
+	 hit=0  sprite_index=spr_plant_attack2
+MoveType=1 damage=0.15
+	image_index=animFrame image_speed=0
+	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
+	if animFrame=clamp(animFrame,0,1.5)
+	animFrame+=0.1 else animFrame+=0.05
+	if animFrame=2 {ground=0 sentflying=4*image_xscale zSpeed=-4}
+	if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+	}
+}
+
+
+
 if anim=12
 {atkcol_set(49,0,15,2.85,1,45)
 	sprite_index=spr_plant_attack
@@ -27,6 +50,26 @@ selfatk.HitSpark=spr_hitflash
 
 if animFrame>4.5 canmove=1
 }
+
+
+///Gas attack
+if anim=13
+{
+if animFrame=0 sprite_index=spr_plant_swallow
+frame_set(0,4,0.25) 
+frame_set(1,2,0.25) 
+frame_set(2,1,0.25) 
+if animFrame=3
+{sprite_index=spr_plant_attack
+sm=instance_create_depth(x+32*image_xscale,y+1,0,oPharaohSmoke) sm.hspeed=1*image_xscale
+		sm.z=z-16 sm.dizzyHit=0 sm.MoveType=6 sm.isPharaoh=0
+		sm.sprite_index=spr_bigsmoke sm.mainSmoke=spr_bigsmoke
+}
+frame_set(3,1,0.05)
+frame_set(4,0,0.2)
+if animFrame>4 canmove=1
+}
+
 
 if anim=6666 ///Grab Enemy
 {

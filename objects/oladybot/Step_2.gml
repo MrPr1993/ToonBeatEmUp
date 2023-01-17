@@ -1,0 +1,42 @@
+enemy_endstep()
+throw_step()
+
+
+if anim=10
+{specialcheck0=0
+if distance_to_point(targetEnemy.x,targetEnemy.y)>40
+anim=11 else anim=12
+}
+
+	if anim=11
+	{
+		if animFrame=0 {specialcheck0=0 specialcheck1=0}
+sprite_index=spr_ladybot_charge selfatk.dizzyAtk=1 MoveType=1 damage=0.2 
+frame_set(0,0,0.1)
+frame_set(1,1,0.25) if animFrame<3 {
+	if image_xscale=1 and targetEnemy.x>x+specialcheck1 specialcheck1+=8
+	if image_xscale=-1 and targetEnemy.x<x-specialcheck1 specialcheck1+=8	
+	}
+frame_set(2,2,0.25) if animFrame=2.75 if specialcheck0!=4 {specialcheck0+=1 animFrame=1
+	dust_make(x,y+1,z-4,-0.5*image_xscale,0,0)
+	}
+frame_set(3,3,0.1) if animFrame=clamp(animFrame,3,3.9) {
+		dust_make(x,y+1,z-4,-1*image_xscale,0,0)
+	sentflying=8*image_xscale atk=1
+	specialcheck1-=8 if specialcheck1>0 animFrame=3 else animFrame=4
+	} else {atk=0 sentflying=0}
+frame_set(4,3,0.05)
+frame_set(5,0,0.1)
+if animFrame>5.5 canmove=1
+	}
+
+if anim=12
+{
+sprite_index=spr_ladybot_kick damage=0.1 MoveType=1
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.5) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+frame_set(3,3,0.05) 
+frame_set(4,0,0.1)
+if animFrame>4.7 canmove=1
+}

@@ -1,12 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function animsetup_merman(){
-	overwriteStand=1
 	overwriteAttack=1
 	overwriteAttack1=1
 	overwriteAttack2=1
-	script_execute(animsetup_zombie)
-
+	script_execute(animsetup_enemy)
 
 
 

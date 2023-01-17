@@ -3,9 +3,9 @@
 /// @description Attack
 if ContinueMode=0
 {
-function ai_actions() {	alarmCheck1=alarm[1]
+ai_actions() {	alarmCheck1=alarm[1]
 	if canAttack!=6
-	alarm[1]=choose(60,70,80,90)
+	alarm[1]=round(choose(60,70,80,90))
 	else {canAttack=6 exit;}
 
 
