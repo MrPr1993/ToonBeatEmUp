@@ -517,7 +517,8 @@ room_goto(rm_loading)
 if room=rm_loading
 {
 assets_load()	
-room_goto(rm_titlescreen)
+alarm[11]=60
+//room_goto(rm_titlescreen)
 }
 
 if room=rm_menu or room=rm_minigames or room=rm_cutscenes
