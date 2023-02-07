@@ -8,7 +8,9 @@ height = 224;
 padding = 16;
 start = 16;
 
-canControl=1
+
+
+
 controlNO=1
 
 /// Keep track of the starting line
@@ -61,5 +63,6 @@ canControl=1
 
 textBufferMax=4
 textBuffer=0
+canControl=0
 controller_setup()
-
+canControl=1

@@ -2,6 +2,8 @@
 // You can write your code in this editor
 rangeX=0
 
+colorshade_setup()
+
 danger=0
 
 image_xscale=-1

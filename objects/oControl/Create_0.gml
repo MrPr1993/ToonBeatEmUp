@@ -1,14 +1,16 @@
 roomfast=0
-canControl=1
-controlNO=9
+
 playNO=1
 
 colorshade_setup()
 
 recordAng=0
 recordAng2=0
-
+threshold = 0.9; keytick=0	
+canControl=0
+controlNO=9
 controller_setup()
+canControl=1
 
 instance_create(0,0,oBlackFX)
 //instance_create(0,0,oTVfx)

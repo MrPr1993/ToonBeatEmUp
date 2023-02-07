@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 menuSelect=0
-canControl=1
+canControl=0
 controlNO=9
 controller_setup()
-
+canControl=1
 stagePause=0
 
 TVfx=0

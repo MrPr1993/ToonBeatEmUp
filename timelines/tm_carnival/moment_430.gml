@@ -1,4 +1,5 @@
 if !instance_exists(pl)
+and !instance_exists(pl)
 {
 with oControl
 {

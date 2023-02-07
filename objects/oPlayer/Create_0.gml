@@ -1,4 +1,4 @@
-canControl=0
+canControl=0 
 controller_setup()
 
 character_setup()

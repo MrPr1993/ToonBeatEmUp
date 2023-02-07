@@ -99,10 +99,10 @@ if songno=11 {songname="UFO BEYOND THE STARS" playingSound=msc_ufo songcomposer=
 if songno=12 {songname="UNDER THE SEA JAM" playingSound=msc_underwater songcomposer="JONORSI"}
 if songno=13 {songname="HEATING HOT DESERT" playingSound=msc_desert songcomposer="EVADER MUSIC"}
 if songno=14 {songname="GREAT CLIMBING COLD" playingSound=msc_snowmountain songcomposer="EVADER MUSIC"}//X
-if songno=15 {songname="FANTASTIC FANTASY CAVERNS" playingSound=msc_swamp songcomposer="EVADER MUSIC"}//X
-if songno=16 {songname="AHEAD IN THE CLOUDS" playingSound=msc_swamp songcomposer="EVADER MUSIC"}//X
+if songno=15 {songname="FANTASTIC FANTASY CAVERNS" playingSound=msc_cave songcomposer="EVADER MUSIC"}//X
+if songno=16 {songname="AHEAD IN THE CLOUDS" playingSound=msc_clouds songcomposer="EVADER MUSIC"}//X
 if songno=17 {songname="DANGEROUS SCIENCE" playingSound=msc_lab songcomposer="JONORSI"}
-if songno=18 {songname="ZEPPELIN FINALE" playingSound=msc_swamp songcomposer="EVADER MUSIC"}//X
+if songno=18 {songname="ZEPPELIN FINALE" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}//X
 if songno=19 {songname="NASTY FOE" playingSound=msc_boss songcomposer="JONORSI"}
 if songno=20 {songname="BADDY JAM" playingSound=msc_boss2 songcomposer="JONORSI"}
 if songno=21 {songname="BOSS3" playingSound=msc_boss songcomposer="JONORSI"}//X

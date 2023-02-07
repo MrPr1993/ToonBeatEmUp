@@ -6,11 +6,12 @@ menuSelect=0
 StarY=0
 StarSpace=0
 selectStar=0
-canControl=1
 AreYouSure=0
 Sure=0
 controlNO=9
+canControl=0
 controller_setup()
+canControl=1
 
 stagePause=oControl.stagePause
 

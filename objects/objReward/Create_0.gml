@@ -18,9 +18,9 @@ canControl=1
 controlNO=9
 
 moneyBet=0
-
+canControl=0
 controller_setup()
-
+canControl=1
 rigMode=-1
 
 rewardPrize=1;

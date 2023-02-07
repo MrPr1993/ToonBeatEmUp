@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function controller_menu(){
+	
+	
 key_right = keyboard_check(ord("D"));
 	key_left = -keyboard_check(ord("A"));
 	key_right_pressed = keyboard_check_pressed(ord("D"));
@@ -45,6 +47,81 @@ key_right = keyboard_check(ord("D"));
 	key_RB=0
 	key_RT=0
 	key_pause=0
+	
+	 // left pressed
+    if (!stick_left_held && gamepad_axis_value(i,gp_axislh) <= -threshold)
+    {
+        stick_left_held = true;
+        stick_left_pressed = true;
+        stick_left_released = false;
+        keytick=1;
+    }
+
+    // left released
+    else if (stick_left_held && gamepad_axis_value(i,gp_axislh) > -threshold)
+    {
+        stick_left_held = false;
+        stick_left_pressed = false;
+        stick_left_released = true;
+        keytick=1;
+    }
+
+
+    // right pressed
+    if (!stick_right_held && gamepad_axis_value(i,gp_axislh) >= threshold)
+    {
+        stick_right_held = true;
+        stick_right_pressed = true;
+        stick_right_released = false;
+        keytick=1;
+    }
+
+    // right released
+    else if (stick_right_held && gamepad_axis_value(i,gp_axislh) < threshold)
+    {
+        stick_right_held = false;
+        stick_right_pressed = false;
+        stick_right_released = true;
+        keytick=1;
+    }
+
+  
+    // up pressed
+    if (!stick_up_held && gamepad_axis_value(i,gp_axislv) >= threshold)
+    {
+        stick_up_held = true;
+        stick_up_pressed = true;
+        stick_up_released = false;
+        keytick=1;
+    }
+
+    // up released
+    else if (stick_up_held && gamepad_axis_value(i,gp_axislv) < threshold)
+    {
+        stick_up_held = false;
+        stick_up_pressed = false;
+        stick_up_released = true;
+        keytick=1;
+    }
+
+
+    // down pressed
+    if (!stick_down_held && gamepad_axis_value(i,gp_axislv) <= -threshold)
+    {
+        stick_down_held = true;
+        stick_down_pressed = true;
+        stick_down_released = false;
+        keytick=1;
+    }
+
+    // down released
+    else if (stick_down_held && gamepad_axis_value(i,gp_axislv) > -threshold)
+    {
+        stick_down_held = false;
+        stick_down_pressed = false;
+        stick_down_released = true;
+        keytick=1;
+    }
         
 	        if keyboard_check(ord("D")) or gamepad_axis_value(i, gp_axislh)>0.1 or gamepad_button_check(i,gp_padr)
 	       key_right= 1 else key_right=0
@@ -52,14 +129,14 @@ key_right = keyboard_check(ord("D"));
 	       key_left= -1 else key_left=0
        
   
-	      if keyboard_check_pressed(ord("D"))  or gamepad_button_check_pressed(i,gp_padr)
+	      if keyboard_check_pressed(ord("D"))  or gamepad_button_check_pressed(i,gp_padr) or stick_right_pressed
 	      key_right_pressed = 1 else  key_right_pressed = 0
-	if   keyboard_check_pressed(ord("A"))  or gamepad_button_check_pressed(i,gp_padl)
+	if   keyboard_check_pressed(ord("A"))  or gamepad_button_check_pressed(i,gp_padl) or stick_left_pressed
 	    key_left_pressed = -1 else  key_left_pressed = 0
     
-	          if keyboard_check_pressed(ord("W"))  or gamepad_button_check_pressed(i,gp_padu)
+	          if keyboard_check_pressed(ord("W"))  or gamepad_button_check_pressed(i,gp_padu) or stick_down_pressed
 	      key_up_pressed = 1 else  key_up_pressed = 0
-	if   keyboard_check_pressed(ord("S"))  or gamepad_button_check_pressed(i,gp_padd)
+	if   keyboard_check_pressed(ord("S"))  or gamepad_button_check_pressed(i,gp_padd) or stick_up_pressed
 	    key_down_pressed = -1 else  key_down_pressed = 0
 
 	key_up = keyboard_check(ord("W")) or gamepad_axis_value(i, gp_axislv)<-0.1 or gamepad_button_check(i,gp_padu)

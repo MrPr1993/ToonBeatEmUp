@@ -72,7 +72,30 @@ exit;
 if betatest=1
 {
 /////Change info
-if keyboard_check_pressed(vk_tab) and keyboard_check(vk_shift)
+if keyboard_check_pressed(vk_tab)
+if !keyboard_check(vk_shift)
+{/////
+if instance_exists(oEnemySpawner)
+with oEnemySpawner
+{
+var changetime=get_string("Timeline Change",timeline_position)
+if timeline_position!=changetime
+{
+timeline_position=changetime
+en1=-1
+en2=-1
+en3=-1
+en4=-1
+en5=-1
+en6=-1
+en7=-1
+en8=-1
+en9=-1
+en10=-1
+}
+}
+}
+else
 {
 if instance_exists(oEnemySpawner)
 var changel=get_string("Change level length",oEnemySpawner.MaxXAdd)

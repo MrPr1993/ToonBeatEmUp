@@ -1,10 +1,21 @@
-/// @description After Boxer
+/// @description After Bulls
 ////Make sure to only count the previous ones, otherwise you'll get an error.
 if specialSet6=0
 {
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
-xGoCheck=2560}
+xGoCheck=2560
+spawner_followset("WaveSet1",0,3560,1)
+
+en1=instance_create(__view_get( e__VW.XView, 0)+320+64,224-16,oSneak)
+with en1
+{canAttack=5 image_xscale=-1 alarm[0]=15 weapon_add("TOMMYGUN")
+}
+en2=instance_create(__view_get( e__VW.XView, 0)+320+70,224+16,oSneak)
+with en2
+{canAttack=5 image_xscale=-1 alarm[0]=15 weapon_add("TOMMYGUN")
+}
+}
 
 }
 else

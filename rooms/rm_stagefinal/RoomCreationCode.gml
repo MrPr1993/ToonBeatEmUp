@@ -1,4 +1,4 @@
-musicplaystart(-1)
+musicplaystart(msc_zeppelin)
 global.HiScoreStage=8
 global.HiScoreLevel=8
 //with oEnemySpawner {timeline=tm_stage3 event_user(0)}

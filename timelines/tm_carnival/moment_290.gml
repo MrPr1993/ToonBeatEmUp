@@ -2,7 +2,7 @@
 if __view_get( e__VW.XView, 0 )>=2560-320
 {
 
-specialSet6=240
+specialSet6=120
 
 fakeblock=instance_create_depth(2496,192,-1,oBlock)
 with fakeblock {image_xscale=8888 image_yscale=8888}

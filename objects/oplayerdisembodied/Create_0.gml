@@ -4,6 +4,9 @@ AttackOrItem=0
 canControl=0
 controlNO=0
 controller_setup()
+
+colorshade_setup()
+
 PlayerLife1=-1
 PlayerLife1=0
 PlayerLife2=-1

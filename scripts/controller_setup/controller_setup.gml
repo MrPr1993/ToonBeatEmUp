@@ -2,7 +2,23 @@ function controller_setup() {
 	AttackOrItem=0
 	
 	if canControl=0
-	{
+	{keytick=0 threshold = 0.9;
+		
+	stick_left_pressed=0
+    stick_right_pressed=0
+    stick_up_pressed=0
+    stick_down_pressed=0
+
+    stick_left_held=0
+    stick_right_held=0
+    stick_up_held=0
+    stick_down_held=0
+
+    stick_left_released=0
+    stick_right_released=0
+    stick_up_released=0
+    stick_down_released=0
+		
 	key_right = 0
 	key_left = 0
 	key_right_pressed = 0
@@ -46,6 +62,20 @@ function controller_setup() {
 	}
 else
 	{
+	if keytick=1 {
+keytick=0	
+
+  stick_left_pressed = false;
+    stick_right_pressed = false;
+    stick_up_pressed = false;
+    stick_down_pressed = false;
+
+    stick_left_released = false;
+    stick_right_released = false;
+    stick_up_released = false;
+    stick_down_released = false;
+}	
+	
 	if controlNO=1
 	controller_p1()	    
 	if controlNO=2

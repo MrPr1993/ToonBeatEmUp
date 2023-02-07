@@ -66,12 +66,12 @@ menuX=0
 StarY=0
 StarSpace=0
 selectStar=0
-canControl=1
+canControl=0
 AreYouSure=0
 Sure=0
 controlNO=9
 controller_setup()
-
+canControl=1
 quakeFX=0
 quakeFXTime=0
 
@@ -420,6 +420,7 @@ sprite_replace(spr_photoplaceholder,"screenshot",0,false,false,0,0)
 stageClear=1
 }
 
+colorshade_setup()
 
 optionSelect=0
 optionPick=0
