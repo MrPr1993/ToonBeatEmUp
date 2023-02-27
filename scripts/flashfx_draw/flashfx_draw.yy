@@ -2,8 +2,8 @@
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "flashfx_draw",
-  "isDnD": false,
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "1 - General Objects",
     "path": "folders/1 - General Objects.yy",

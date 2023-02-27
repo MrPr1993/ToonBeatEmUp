@@ -179,6 +179,18 @@ if !keyboard_check(vk_control)
 else if instance_exists(oEnemy1)
 with oEnemy1 {HitType=590068 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 }
+
+if oControl.HurtTest=9 ///Fall Spin
+if !keyboard_check(vk_control)
+{hashitBack=2 {canmove=0 event_user(1) canBounce=1 	zSpeed=-4 ground=0 spdZ=-8
+	if hitBack=0 sentflying=4*-image_xscale	else
+	sentflying=4*image_xscale	image_index=3 sprite_index=ThrownSpr
+	animFrame=3 anim=5 hitBack+=2
+	
+	
+	}
+}
+
 }
 
 ///Change player

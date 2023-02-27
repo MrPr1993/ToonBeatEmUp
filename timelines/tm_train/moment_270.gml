@@ -23,6 +23,7 @@ with en6 {trainFX=1 isDepth=0 sittingSpr=spr_sneak_seat spawnFall=spr_sneak_jump
 	rangeX=x-60 spawnEnemy=oSneak image_xscale=-1}
 
 en7=instance_create_depth(2496-112,124+29,-1,oEntrySeat) en7.image_xscale=-1 en7.trainFX=1
+with en7 rangeX=x-60
 
 }	
 else

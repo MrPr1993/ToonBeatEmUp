@@ -1,5 +1,5 @@
 /// @description Stage Starting
-spawner_followset("WaveSet1",0,692+224,1)
+spawner_followset("WaveSet1",0,1048,1)
 
 instance_create_depth(0,0,-1,oRainFX)
 
@@ -10,14 +10,47 @@ oControl.stageNext=rm_stage4
 //oPlayer.x=5000
 //timeline_position=449
 
-en1=instance_create(305,222,oFatBurglar) en1.canmove=0 en1.isIdle=1 en1.alarm[1]=60 en1.anim=70000
-en1.idleRange=30 en1.enemyIdle1=spr_fatburglar_idle
+en1=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
+with en1
+{depth=16777214 isDepth=0 rideX=200 rangeX=128
+}
 
-en2=instance_create(305+48,222+16,oSwing) en2.canmove=0 en2.isIdle=1 en2.alarm[1]=60 en2.anim=70000
-en2.idleRange=30+24 en2.enemyIdle1=spr_swing_idle3 en2.image_xscale=-1
+en2=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
+with en2
+{depth=16777214 isDepth=0 rideX=356rangeX=128
+	spawnFall=spr_sneak_front
+	moveSpr=spr_sneak_move
+	spawnEnemy=oSneak
+}
 
-en3=instance_create(320-48+16-16,222+16,oSneak) en3.canmove=0 en3.isIdle=1 en3.alarm[1]=60 en3.anim=70000
-en3.idleRange=30+16 en3.enemyIdle1=spr_sneak_idle3
+en3=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
+with en3
+{depth=16777214 isDepth=0 rideX=356+32 rangeX=128
+	spawnFall=spr_burglarB_front
+	moveSpr=spr_burglarB_run
+	spawnEnemy=oEnemy1B
+}
+en4=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
+with en4
+{depth=16777214 isDepth=0 rideX=504 rangeX=128+320
+	spawnFall=spr_sneak_front
+	moveSpr=spr_sneak_move
+	spawnEnemy=oSneak
+}
+en5=instance_create(__view_get( e__VW.XView, 0)+320+64+280,132,oEntryFenceJump)
+with en5
+{depth=16777214 isDepth=0 rideX=504 rangeX=128+320 image_xscale=-1
+	spawnFall=spr_sneak_front
+	moveSpr=spr_sneak_move
+	spawnEnemy=oSneak
+}
+en6=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
+with en6
+{depth=16777214 isDepth=0 rideX=654 rangeX=128+320
+	spawnFall=spr_sneak_front
+	moveSpr=spr_sneak_move
+	spawnEnemy=oSneak
+}
 
 bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
 layer_background_visible(bgfog1,0)

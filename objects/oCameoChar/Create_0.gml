@@ -14,7 +14,12 @@ fallHole=0
 
 trainz=0
 
+isDepth=1
 
 ground=1
 
 z=0
+
+newscript=-1;
+
+specialcheck[9]=0;

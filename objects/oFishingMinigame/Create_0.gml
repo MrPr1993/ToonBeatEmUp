@@ -24,3 +24,4 @@ spdY=0
 spdZ=0
 
 image_speed=0
+

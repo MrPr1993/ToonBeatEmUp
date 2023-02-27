@@ -1,15 +1,12 @@
-/// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+/// @description /Fire Robot
 
 
 
-if __view_get( e__VW.XView, 0 )>=532
+if __view_get( e__VW.XView, 0 )>=1047-320
 {
-en6=instance_create(752-64,192,oEntryClimb) with en6
-{z=-55 rangeX=0}
-en7=instance_create(752+64,192,oEntryClimb) with en7
-{z=-55 rangeX=0}
-enG=instance_create(__view_get( e__VW.XView, 0 )+160,240,oGunRange)
-
+en5=instance_create(920,140,oAreaSpawner)
+en5.spawnX=0 ///2848
+en5.enemytype0=oRobotBurn
 }
 else
 {

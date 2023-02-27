@@ -16,6 +16,10 @@ frame_set(1,1,framespd)
 frame_set(2,2,framespd) if animFrame>3-framespd animFrame=0
 }
 
+if newscript!=-1
+newscript();
+
+if isDepth
 depth=-y
 
 if place_meeting(x,y,oTrainFXSpot)

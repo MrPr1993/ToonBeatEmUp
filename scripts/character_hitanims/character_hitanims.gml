@@ -59,6 +59,8 @@ wobbleY=lerp(wobbleY,1,0.1)
 	hurt=1
 	recovery=30
 
+if hashitBack=0 or hashitBack=1
+{
 	if hitBack=0
 	{image_index=animFrame }
 	else
@@ -70,9 +72,33 @@ wobbleY=lerp(wobbleY,1,0.1)
 
 	image_speed=0 animFrame=clamp(animFrame,3,5)
 	animFrame+=0.1
+}
+if hashitBack=2 or hashitBack=3
+{
+if hashitBack=2
+{
+frame_set(0,18,0.25)
+frame_set(1,17,0.25)
+frame_set(2,16,0.25) 
+frame_set(3,5,0.25)
+frame_set(4,4,0.25)
+frame_set(5,3,0.25)
+if animFrame>5.75 animFrame=0
+}
+else
+{
+frame_set(0,3,0.25)
+frame_set(1,4,0.25)
+frame_set(2,5,0.25)
+frame_set(3,16,0.25)
+frame_set(4,17,0.25)
+frame_set(5,18,0.25) if animFrame>5.75 animFrame=0
+}
+}
+
 	//Land on ground
 	if ground and fallHole=0
-	{
+	{if hashitBack=2 or hashitBack=3 hashitBack-=2
 	if (key_jump_hold and dead=0 and hp!=0 and prevanim!=8 and prevanim!=9)
 	{animFrame=0 anim=25 exit;}///Break out of fall
 

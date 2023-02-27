@@ -5,6 +5,10 @@ global.HiScoreLevel=5
 
 oControl.stagePause=1
 
+
+billb=layer_background_get_id(layer_get_id("Billboard"));
+layer_background_index(billb,3)
+
 with oEnemySpawner
 {
 	GoBackY=1 

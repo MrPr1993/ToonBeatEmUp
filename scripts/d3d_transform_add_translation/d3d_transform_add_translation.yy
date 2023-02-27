@@ -2,8 +2,8 @@
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "d3d_transform_add_translation",
-  "isDnD": false,
   "isCompatibility": true,
+  "isDnD": false,
   "parent": {
     "name": "d3d",
     "path": "folders/2 - Scripts/compatibility/d3d.yy",
