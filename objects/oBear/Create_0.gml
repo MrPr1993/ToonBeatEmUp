@@ -22,6 +22,13 @@ height=70
 
 specialFX=0
 
+DeathCry=snd_bear2
+
+DamageVoice1=snd_bear1
+DamageVoice2=snd_bear1
+DamageVoice3=snd_bear1
+
+
 StandSpr=spr_bear_stand
 MoveSpr=spr_bear_move
 RunSpr=spr_bear_move

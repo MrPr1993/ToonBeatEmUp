@@ -29,7 +29,7 @@ MoveType=0 damage=0.1
 {if animFrame=0 sprite_index=spr_bear_attack2 atkcol_set(8,0,10,1.45,1,29) MoveType=1
 frame_set(0,0,0.05)
 if animFrame=0.5 sprite_index=spr_bear_attack
-if animFrame=1 {image_index=1 sentflying=3*image_xscale ground=0 zSpeed=-6}
+if animFrame=1 {image_index=1 sentflying=3*image_xscale ground=0 zSpeed=-6 PlaySoundNoStack(snd_bear3)}
 frame_set(1,1,0.1)
 if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=spr_bear_attack image_index=0 sentflying=0 atk=0} else {sprite_index=spr_bear_attack2 sentflying=3*image_xscale atk=1}
 

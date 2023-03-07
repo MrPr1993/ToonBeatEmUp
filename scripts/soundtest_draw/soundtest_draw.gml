@@ -103,12 +103,14 @@ if songno=15 {songname="FANTASTIC FANTASY CAVERNS" playingSound=msc_cave songcom
 if songno=16 {songname="AHEAD IN THE CLOUDS" playingSound=msc_clouds songcomposer="EVADER MUSIC"}//X
 if songno=17 {songname="DANGEROUS SCIENCE" playingSound=msc_lab songcomposer="JONORSI"}
 if songno=18 {songname="ZEPPELIN FINALE" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}//X
-if songno=19 {songname="NASTY FOE" playingSound=msc_boss songcomposer="JONORSI"}
-if songno=20 {songname="BADDY JAM" playingSound=msc_boss2 songcomposer="JONORSI"}
-if songno=21 {songname="BOSS3" playingSound=msc_boss songcomposer="JONORSI"}//X
-if songno=22 {songname="BOSS4" playingSound=msc_boss2 songcomposer="JONORSI"}//X
-if songno=23 {songname="RISKY REVIVAL" playingSound=msc_countdown songcomposer="JONORSI"}
-if songno=24 {songname="SHOW'S OVER" playingSound=msc_gameover songcomposer="JONORSI"}
+if songno=19 {songname="NASTY FOE TUNE" playingSound=msc_boss songcomposer="JONORSI"}
+if songno=20 {songname="BADDY BADDIES JAM" playingSound=msc_boss2 songcomposer="JONORSI"}
+if songno=21 {songname="QUICK VILE MELODY" playingSound=msc_boss3 songcomposer="EVADER MUSIC"}//X
+if songno=22 {songname="DANGEROUS OF TONES" playingSound=msc_boss4 songcomposer="EVADER MUSIC"}//X
+if songno=23 {songname="DASTARDLY SUBJECT" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}
+if songno=24 {songname="PIECE OF THE NIGHT" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}
+if songno=25 {songname="RISKY REVIVAL" playingSound=msc_countdown songcomposer="JONORSI"}
+if songno=26 {songname="SHOW'S OVER" playingSound=msc_gameover songcomposer="JONORSI"}
 }
 
 if soundSelect=2

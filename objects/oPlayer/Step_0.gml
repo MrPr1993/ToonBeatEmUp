@@ -160,7 +160,7 @@ if canmove=1 and ground
 
 
 ///Attack
-if key_attack
+if key_attack or key_interact
 {
 if !key_jump
 event_user(3) else 

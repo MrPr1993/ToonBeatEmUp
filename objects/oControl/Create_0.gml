@@ -258,6 +258,12 @@ global.P2available=0
 global.P3available=0
 global.P4available=0
 
+globalcontrols(4)
+globalcontrols(3)
+globalcontrols(2)
+globalcontrols(1)
+
+
 shopreset()
 }
 

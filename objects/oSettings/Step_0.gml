@@ -111,7 +111,11 @@ if menuSelect=12	{if global.ContinueStart=99 global.ContinueStart=-1 else global
 	
 if key_attack
 {
-if menuSelect=14 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied menuSelect=-1}
+if menuSelect=14 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied
+	
+	{menuSelect=-1 LegacyMode=global.LegacyMode[instance_number(oPlayerDisembodied)]}
+	
+	}
 }
 
 }
@@ -129,7 +133,8 @@ oPause.var_distortion_ammount=global.CRTcustomDistortAM
 oPause.var_border=global.CRTcustomBorder
 }
 
-if keyboard_check_pressed(vk_escape) or key_jump
+if keyboard_check_pressed(vk_escape)
+if p1.ControlChange=0 and p2.ControlChange=0 and p3.ControlChange=0 and p4.ControlChange=0
 {
 if controlSettings=1
 {controlSettings=0 global.MenuSkip=0 PlaySound(snd_steal) exit;}

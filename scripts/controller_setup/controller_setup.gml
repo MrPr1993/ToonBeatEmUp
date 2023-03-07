@@ -40,6 +40,8 @@ function controller_setup() {
 	key_taunt=0
 	key_punchback=0
 	
+	key_interact=0
+	
 	key_attackanditem=0
 	
 	key_cancel=0

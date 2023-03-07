@@ -7,5 +7,10 @@ afi.alarm[0]=argument0 afi.image_blend=argument1
 afi.current_pal=argument2;//0
 afi.my_pal_sprite=argument3;//spr_enemypal
 afi.hspeed=argument4;//0
+with afi
+{
+cRed=color_get_red(image_blend)/100 cBlue=color_get_blue(image_blend)/100 cGreen=color_get_green(image_blend)/100
+}
+
 }
 

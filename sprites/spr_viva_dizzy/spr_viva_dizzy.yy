@@ -4,7 +4,7 @@
   "name": "spr_viva_dizzy",
   "bbox_bottom": 94,
   "bbox_left": 29,
-  "bbox_right": 64,
+  "bbox_right": 66,
   "bbox_top": 7,
   "bboxMode": 0,
   "collisionKind": 1,

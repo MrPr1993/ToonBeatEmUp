@@ -13,8 +13,6 @@ with oControl {//camMove=0 camMax=room_width
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,1158+320,1)
 
-oGunRange.away=1
-
 en1=instance_create(928+128,176+32,oEntryBalloon)
 en1.rideX=928+128 en1.horseSpd=0
 

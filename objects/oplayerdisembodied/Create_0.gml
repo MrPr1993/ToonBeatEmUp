@@ -21,9 +21,12 @@ PlayerLife=-1
 isInctive=0
 
 
+
 StarY=0
 menuSelect=-1
 LegacyMode=0
+ControlChange=0
+Joystick=0
 
 GoldGet=0
 

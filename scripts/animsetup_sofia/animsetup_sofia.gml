@@ -22,7 +22,7 @@ function animsetup_sofia() {
 
 	HitReactionScript=sofia_hitreaction
 
-	height=68
+	height=78
 
 	weaponBack=1
 
