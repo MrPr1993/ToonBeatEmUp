@@ -3,7 +3,7 @@ if act=1 and enemytype0!=-1
 {
 if enemy=0
 {
-if FXtype=0
+if FXtype=0 ////Spawn type for breaking wall
 {
 PlaySound(SoundSpawn0)
 oControl.quakeFXTime=10
@@ -11,7 +11,7 @@ image_index=2
 image_speed=2
 }
 
-if FXtype=4
+if FXtype=4 ////Spawn type for door
 {
 PlaySound(SoundSpawn0)
 oControl.quakeFXTime=10

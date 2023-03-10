@@ -1,4 +1,4 @@
-enemytype0=oRobot
+enemytype0=oRobot ///The default assortment of enemies spawned
 enemytype1=oEnemy1
 enemytype2=oSneak
 enemytype3=oFatBurglar
@@ -6,22 +6,22 @@ enemytype4=oSwing
 enemytype5=oMsDummy
 
 act=0
-spawntime=30
+spawntime=30 ///Then before spawning another one
 spawnAlarm=30
 spawnX=x
 
 enemy=0
-enemyMax=0
+enemyMax=0 ///The times the spawner will spawn another
 
 FrameVis=0
 FrameSpd=0.1
 MaxSpawnFrame=2
 
-hasFake=1
+hasFake=1 ////So it only leaves behind a permanent effect like a cracked wall
 
 FXtype=0
 
-SoundSpawn0=snd_break2
+SoundSpawn0=snd_break2 ///Sound for breakable wall where the enemy will spawn from
 SoundSpawn1=snd_break2
 SoundSpawn2=snd_break2
 SoundSpawn3=snd_break2
@@ -37,7 +37,7 @@ en5=-1
 
 randomWeapon=0
 
-////This set will be used for altering the spawning enemy's info
+////This set will be used for altering the spawning enemy's information and data
 //
 
 name0=-1

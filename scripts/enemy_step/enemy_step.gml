@@ -17,7 +17,7 @@ function enemy_step() {
 
 	current_pal=wrap(current_pal,0,pal_swap_get_pal_count(my_pal_sprite)-1);
 
-	if oControl.betatest=1
+	if oControl.betatest=1 ///This is for testing
 	{
 	if keyboard_check(vk_control)
 	{
