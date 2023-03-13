@@ -6,12 +6,11 @@ global.HiScoreLevel=4
 oControl.stagePause=1
 
 with oEnemySpawner
-{
-	GoBackY=1 
-	MaxY=280*2
-		}
-		
-with oEnemySpawner {timeline=tm_beach event_user(0)}
+{	GoBackY=1 	//MaxY=280*2
+		}		
+with oEnemySpawner {
+	//instance_destroy();
+	timeline=tm_beach event_user(0)}
 
 global.HiScoreStage=4
 //with oEnemySpawner {timeline=tm_beach event_user(0)}

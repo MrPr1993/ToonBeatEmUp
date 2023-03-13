@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3bad918-e775-4ea3-89db-db307ca99782",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c55d9b7-e604-4485-b0ee-913bee9477f7",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b3bad918-e775-4ea3-89db-db307ca99782","path":"sprites/tiles_snowspr/tiles_snowspr.yy",},},},"Disabled":false,"id":"4db17b64-5a16-4cbf-bce4-3ecfb4bd98fb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1c55d9b7-e604-4485-b0ee-913bee9477f7","path":"sprites/tiles_snowspr/tiles_snowspr.yy",},},},"Disabled":false,"id":"1137a856-ac2f-4677-ab0d-2af31406c3e8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

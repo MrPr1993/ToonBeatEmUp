@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"887ab102-d256-43d9-b8ab-57f5cc9b9bd3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0da4d6d7-ff9a-473f-a7a2-ee6dddb4cf74",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"887ab102-d256-43d9-b8ab-57f5cc9b9bd3","path":"sprites/bg_beachtiles/bg_beachtiles.yy",},},},"Disabled":false,"id":"3f5896bb-a932-4833-8f96-ec3863e6eb90","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0da4d6d7-ff9a-473f-a7a2-ee6dddb4cf74","path":"sprites/bg_beachtiles/bg_beachtiles.yy",},},},"Disabled":false,"id":"9bf31c20-eabe-404a-b89f-7336cb695d13","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
