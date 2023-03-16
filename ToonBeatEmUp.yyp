@@ -190,7 +190,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.0.71",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"oFisingFish","path":"objects/oFisingFish/oFisingFish.yy",},},
@@ -737,6 +737,7 @@
     {"id":{"name":"PlaySound","path":"scripts/PlaySound/PlaySound.yy",},},
     {"id":{"name":"PlaySoundNoStack","path":"scripts/PlaySoundNoStack/PlaySoundNoStack.yy",},},
     {"id":{"name":"spr_duck_elec","path":"sprites/spr_duck_elec/spr_duck_elec.yy",},},
+    {"id":{"name":"bg_sky9","path":"sprites/bg_sky9/bg_sky9.yy",},},
     {"id":{"name":"projectile_create","path":"scripts/projectile_create/projectile_create.yy",},},
     {"id":{"name":"screen_size","path":"scripts/screen_size/screen_size.yy",},},
     {"id":{"name":"script45","path":"scripts/script45/script45.yy",},},
