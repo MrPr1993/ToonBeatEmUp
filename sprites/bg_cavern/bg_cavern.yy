@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "tiles_ufospr",
-  "bbox_bottom": 503,
+  "name": "bg_cavern",
+  "bbox_bottom": 165,
   "bbox_left": 0,
-  "bbox_right": 511,
+  "bbox_right": 320,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"15089a94-b268-40e2-b5c3-252d40df2cc9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dab4f174-ef2e-44e8-9f00-1a33de45709b",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 512,
+  "height": 166,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a8eca022-f125-4bd7-9e38-37b689dd5705","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"631b3893-1251-4f4e-817d-41cd9587feae","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "4 - Tile Sets",
-    "path": "folders/4 - Tile Sets.yy",
+    "name": "tilesets",
+    "path": "folders/4 - Tile Sets/tilesets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "tiles_ufospr",
+    "name": "bg_cavern",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"15089a94-b268-40e2-b5c3-252d40df2cc9","path":"sprites/tiles_ufospr/tiles_ufospr.yy",},},},"Disabled":false,"id":"2c6c010c-c023-4fbd-bd62-921fb66c3d60","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dab4f174-ef2e-44e8-9f00-1a33de45709b","path":"sprites/bg_cavern/bg_cavern.yy",},},},"Disabled":false,"id":"d15612f3-d64f-476c-ac7f-b3726117667e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 512,
+  "width": 321,
 }

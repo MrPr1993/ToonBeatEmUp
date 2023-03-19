@@ -1186,6 +1186,7 @@
     {"name":"spr_burglarB_dizzy","order":10,"path":"sprites/spr_burglarB_dizzy/spr_burglarB_dizzy.yy",},
     {"name":"spr_burglarB_elec","order":11,"path":"sprites/spr_burglarB_elec/spr_burglarB_elec.yy",},
     {"name":"spr_burglarB_entry1","order":12,"path":"sprites/spr_burglarB_entry1/spr_burglarB_entry1.yy",},
+    {"name":"bg_cavern","order":88,"path":"sprites/bg_cavern/bg_cavern.yy",},
     {"name":"spr_burglarB_flat","order":13,"path":"sprites/spr_burglarB_flat/spr_burglarB_flat.yy",},
     {"name":"spr_burglarB_front","order":14,"path":"sprites/spr_burglarB_front/spr_burglarB_front.yy",},
     {"name":"spr_burglarB_frozen","order":15,"path":"sprites/spr_burglarB_frozen/spr_burglarB_frozen.yy",},
