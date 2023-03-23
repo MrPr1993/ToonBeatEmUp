@@ -1,10 +1,12 @@
-if !instance_exists(pl)
+if oPlayer.x>2840
 {
-with oControl
+with oPlayer
 {
-stageEndFX=1  
+hspeed=0
+animFrame=0 anim=21
 }
-specialSet8=0
+
+
 }
 else
 timeline_position-=1

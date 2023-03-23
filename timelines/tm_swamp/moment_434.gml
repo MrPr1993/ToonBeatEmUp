@@ -1,26 +1,20 @@
 ///@description Plane Area
-specialSet8+=1
-
-if specialSet8<30
-timeline_position-=1
-else
-{specialSet8=0
-with oControl
+if oPlayer.ground and oPlayer.anim!=21
 {
-stageEndFX=0
-stageIntro=1
-oEnemySpawner.roomHSpd=0
-oEnemySpawner.roomMove=0
-oEnemySpawner.MaxX=3338+240-48
-camMove=1
-}
+oEnemySpawner.roomHSpd=8
+
 with oPlayer
-{hspeed=0
-x=3338-64
-y=208
-areaEntry=0
-}
-spawner_followset("WaveSet1",0,3338-64+640,1)
+{
+key_right=1
+ground=0 spdZ=-8 hspeed=4
 
+vehSpr=spr_boat vehWSpr=spr_emptyarea
+carMode=1; anim=200 canmove=0
 
 }
+
+spawner_followset("WaveSet1",0,3264+160,1)
+
+}
+else
+timeline_position-=1

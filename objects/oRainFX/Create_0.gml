@@ -10,3 +10,6 @@ x2=0
 y2=0
 
 fallSpd=2
+
+fallSpdX=1
+fallSpdY=1

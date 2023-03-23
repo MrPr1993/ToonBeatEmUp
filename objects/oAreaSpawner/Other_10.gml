@@ -20,6 +20,27 @@ image_speed=0 visible=0
 door=instance_create_depth(x,y,depth,oDoorTrap) door.depth=depth door.active=1
 }
 
+if FXtype=6 ////Spawn tree parts
+{
+PlaySound(SoundSpawn0)
+oControl.quakeFXTime=10
+image_index=2
+image_speed=0 visible=0
+
+dor1=instance_create_depth(x,y,0,oBarrel) with dor1 
+{sprite_index=spr_swamptree
+image_xscale=1 solid=false hit=1 ground=0 zSpeed=-4 hspeed=-1 mask_index=mask_none
+sentflying=-1 image_index=1 alarm[0]=2 	isDepth=0 depth=-y}
+
+dor1=instance_create_depth(x,y,0,oBarrel) with dor1 
+{sprite_index=spr_swamptree
+image_xscale=1 solid=false hit=1 ground=0 zSpeed=-4 hspeed=1 mask_index=mask_none
+sentflying=1 image_index=2 alarm[0]=2 	isDepth=0 depth=-y
+
+}
+
+}
+
 }
 
 if enemy=0

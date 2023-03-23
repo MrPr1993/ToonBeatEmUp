@@ -16,6 +16,8 @@ with en9
 {canAttack=5 image_xscale=1 alarm[0]=31
 }
 
+tree=instance_create_depth(920,140,-1,oFlashFX) tree.image_speed=0 tree.sprite_index=spr_swamptree tree.alarm[0]=-1
+
 timeline_position=200
 }
 else
