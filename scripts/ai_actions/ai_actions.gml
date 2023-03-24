@@ -1,6 +1,8 @@
 /// @description Attack
 function ai_actions() {	alarmCheck1=alarm[1]
 	
+if canAttack=5 if canAttack5Move!=-1 {canmove=0; anim=canAttack5Move; canAttack5Move=-1; animFrame=0}
+	
 if canAttack=7 
 {canmove=0 animFrame=0 anim=enterAnim canAttack=8 exit;}
 	

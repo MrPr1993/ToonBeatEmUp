@@ -43,6 +43,7 @@
     {"name":"Stage4","order":2,"path":"folders/5b-Stage Sprites/Stage4.yy",},
     {"name":"Stage5","order":5,"path":"folders/5b-Stage Sprites/Stage5.yy",},
     {"name":"Stage6","order":4,"path":"folders/5b-Stage Sprites/Stage6.yy",},
+    {"name":"Swamp Stage","order":6,"path":"folders/5b-Stage Sprites/Swamp Stage.yy",},
     {"name":"6 - Player Data","order":14,"path":"folders/6 - Player Data.yy",},
     {"name":"0 - Player Anims","order":1,"path":"folders/6 - Player Data/0 - Player Anims.yy",},
     {"name":"p1 - Viva Sprites","order":3,"path":"folders/6 - Player Data/p1 - Viva Sprites.yy",},
@@ -145,7 +146,6 @@
     {"name":"g - MISC","order":26,"path":"folders/g - MISC.yy",},
     {"name":"Notes","order":2,"path":"folders/Notes.yy",},
     {"name":"TV FX","order":15,"path":"folders/TV FX.yy",},
-    {"name":"Swamp Stage","order":6,"path":"folders/5b-Stage Sprites/Swamp Stage.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oFisingFish","order":85,"path":"objects/oFisingFish/oFisingFish.yy",},

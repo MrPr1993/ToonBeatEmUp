@@ -62,6 +62,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Stage5","folderPath":"folders/5b-Stage Sprites/Stage5.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Stagecarnival","folderPath":"folders/5b-Stage Sprites/Stage5/Stagecarnival.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Stage6","folderPath":"folders/5b-Stage Sprites/Stage6.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Swamp Stage","folderPath":"folders/5b-Stage Sprites/Swamp Stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"6 - Player Data","folderPath":"folders/6 - Player Data.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"0 - Player Anims","folderPath":"folders/6 - Player Data/0 - Player Anims.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"p1 - Viva Sprites","folderPath":"folders/6 - Player Data/p1 - Viva Sprites.yy",},
@@ -176,7 +177,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TV FX","folderPath":"folders/TV FX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"z99 - Extensions","folderPath":"folders/z99 - Extensions.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Swamp Stage","folderPath":"folders/5b-Stage Sprites/Swamp Stage.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"HinaArtwork1.png","CopyToMask":-1,"filePath":"datafiles/Gallery",},

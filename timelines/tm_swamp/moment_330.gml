@@ -24,7 +24,7 @@ with oPlayer
 {canControl=0 areaEntry=1
 key_up=0 key_down=0 key_left=0
 key_right=1 doubledash=0 dashing=0
-y=160
+y=160+16+16
 myboat=instance_create_depth(2927,y,-1,oFlashFX) with myboat
 {sprite_index=spr_boat image_speed=0 alarm[0]=-1
 }

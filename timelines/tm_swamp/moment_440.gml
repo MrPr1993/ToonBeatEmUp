@@ -1,15 +1,22 @@
 /// @description Boat Area Start
 if oPlayer.x>3390
 {
+oBlock.y+=24	
+
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0	
 
 timer_set(1)
 oControl.time=99
 with oPlayer
-{canControl=1 hspeed=0
+{canControl=1 hspeed=0 
 }
 
+///Billboard
+billboard=instance_create(640,0,oFlashFX) with billboard
+{sprite_index=spr_billboard image_speed=0 isDepth=0
+alarm[0]=0 hspeed=-12 depth=16777016
+}
 
 layer_hspeed("GroundBG1",-8)
 layer_hspeed("GroundBG2",-8)

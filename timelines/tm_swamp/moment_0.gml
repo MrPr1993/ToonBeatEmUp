@@ -12,12 +12,12 @@ oControl.stageNext=rm_stage4
 
 en1=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
 with en1
-{depth=16777214 isDepth=0 rideX=200 rangeX=128
+{depth=16777214 isDepth=0 rideX=200 rangeX=128 ySpeed=1
 }
 
 en2=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
 with en2
-{depth=16777214 isDepth=0 rideX=356rangeX=128
+{depth=16777214 isDepth=0 rideX=356rangeX=128 ySpeed=1
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
 	spawnEnemy=oSneak
@@ -25,28 +25,28 @@ with en2
 
 en3=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
 with en3
-{depth=16777214 isDepth=0 rideX=356+32 rangeX=128
+{depth=16777214 isDepth=0 rideX=356+32 rangeX=128 ySpeed=1
 	spawnFall=spr_burglarB_front
 	moveSpr=spr_burglarB_run
 	spawnEnemy=oEnemy1B
 }
 en4=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
 with en4
-{depth=16777214 isDepth=0 rideX=504 rangeX=128+320
+{depth=16777214 isDepth=0 rideX=504 rangeX=128+320  ySpeed=1
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
 	spawnEnemy=oSneak
 }
 en5=instance_create(__view_get( e__VW.XView, 0)+320+64+280,132,oEntryFenceJump)
 with en5
-{depth=16777214 isDepth=0 rideX=504 rangeX=128+320 image_xscale=-1
+{depth=16777214 isDepth=0 rideX=504 rangeX=128+320 image_xscale=-1  ySpeed=1
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
 	spawnEnemy=oSneak
 }
 en6=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
 with en6
-{depth=16777214 isDepth=0 rideX=654 rangeX=128+320
+{depth=16777214 isDepth=0 rideX=654 rangeX=128+320  ySpeed=1
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
 	spawnEnemy=oSneak

@@ -1,24 +1,97 @@
-if !instance_exists(en1)
-and !instance_exists(en2)
-and !instance_exists(en3)
-and !instance_exists(en4)
-and !instance_exists(en5)
-and !instance_exists(en6)
+/// @description Spawn Barrel 1
+
+//specialSet8=20///for test
+
+if oControl.continueScreen=0
 {
-with oControl {//camMove=0 camMax=room_width
- goActive=1 alarm[1]=90
-xGoCheck=__view_get( e__VW.XView, 0 )+320}
+specialSet7=random(100)
+specialSet8=20
 
-spawner_followset("WaveSet1",0,3594+640+320,1)
+if specialSet8=5
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,160,-32,1,-1,1,1,0,-2)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,1,1,0,-2)
+}
 
-en1=instance_create_depth(3214+80+640,128+28,-1,oEntrySeat) en1.rangeX=3214+640-64
- with en1 {depth=16777212 isDepth=0}
- en2=instance_create_depth(3214+80*2+640,128+28,-1,oEntrySeat) en1.rangeX=3214+640-64+80*2
- with en2 {depth=16777212 isDepth=0 enemy_modify(my_pal_sprite,4,"MR. LAR",0,0.24,0.24)}
- en3=instance_create_depth(3214+80*4+640,128+28,-1,oEntrySeat) en1.rangeX=3214+640-64+80*3
- with en3 {depth=16777212 isDepth=0 enemy_modify(my_pal_sprite,4,"MR. LAR",0,0.24,0.24)}
- en4=instance_create_depth(3214+80*5+640,128+28,-1,oEntrySeat) en4.rangeX=3214+640-64+80*3
- with en4 {depth=16777212 isDepth=0}
+if specialSet8=6
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,0,1,0,-8)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,0,1,0,-8)
+}
+
+if specialSet8=7
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,1,2,0,-2)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,1,2,0,-2)
+}
+
+if specialSet8=8
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,0,0,0,-8)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,160,-32,1,-1,0,0,0,-8)
+}
+
+if specialSet8=9
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,1,1,0,-2)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,1,1,0,-2)
+}
+
+if specialSet8=10
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,0,1,0,-8)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,0,1,0,-8)
+}
+
+if specialSet8=11
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,1,2,0,-2)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,1,2,0,-2)
+}
+
+if specialSet8=12
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,0,0,0,-8)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,160,-32,1,-1,0,0,0,-8)
+}
+
+if specialSet8=13
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,1,1,0,-2)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,1,1,0,-2)
+}
+
+if specialSet8=14
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,160,-32,1,-1,0,0,0,-8)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,0,0,0,-8)
+}
+
+if specialSet8=15
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,0,0,0,-8)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,0,0,0,-8)
+}
+
+if specialSet8=16
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,0,0,0,-8)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,160,-32,1,-1,0,0,0,-8)
+}
+
+if specialSet8=17
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,0,0,1,-8)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,0,1,1,-8)
+}
+
+if specialSet8=19
+{
+barrel_create(__view_get( e__VW.XView, 0)+320+64,160,-32,1,-1,1,2,0,-2)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,192,-32,1,-1,1,2,0,-2)
+barrel_create(__view_get( e__VW.XView, 0)+320+64,224,-32,1,-1,1,2,0,-2)
+}
+
 
 }
 else

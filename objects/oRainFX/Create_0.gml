@@ -13,3 +13,6 @@ fallSpd=2
 
 fallSpdX=1
 fallSpdY=1
+
+
+fade=0

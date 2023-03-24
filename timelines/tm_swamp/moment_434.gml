@@ -6,7 +6,7 @@ oEnemySpawner.roomHSpd=8
 with oPlayer
 {
 key_right=1
-ground=0 spdZ=-8 hspeed=4
+ground=0 spdZ=-8 hspeed=4 zSpeed=-16
 
 vehSpr=spr_boat vehWSpr=spr_emptyarea
 carMode=1; anim=200 canmove=0

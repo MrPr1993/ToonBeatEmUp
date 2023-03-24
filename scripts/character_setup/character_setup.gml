@@ -219,6 +219,7 @@ Cweather=0
 
 	AtkTime=30
 	canAttack=5///To start on what they do when they run through the screen
+	canAttack5Move=-1;
 	canGrab=0
 	screenCheck=0
 	if x>view_xview[0]+320 screenCheck=x-view_xview[0]+sprite_get_width(mask_index)+10
@@ -486,6 +487,8 @@ Cweather=0
 	waterhoverSpr=spr_waterhover
 	waterMax=0;
 	waterSplash=0;
+	
+	
 	
 	wobbleFX=0
 	wobbleX=1
