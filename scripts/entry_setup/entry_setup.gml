@@ -6,10 +6,14 @@ function entry_setup(){
 
 colorshade_setup()
 
+spawnname="Default"
+
 z=0
 trainz=0
 trainFX=0
 image_speed=0
+
+hidden=0
 
 isDepth=1
 xySpeed=0
@@ -53,6 +57,8 @@ xySpeed=0
 	xSpeed=0
 	ySpeed=0
 	zSpeed=0
+	
+	splashscr=-1;
 	
 	spawned=0
 

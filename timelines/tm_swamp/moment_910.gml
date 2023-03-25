@@ -12,9 +12,10 @@ oPlayer.areaEntry=0
 oPlayer.hspeed=0
 oPlayer.canControl=1
 
+with oBlock {if object_index=oBlock y-=24}	
 
 with oControl
-{oBlock.y-=24
+{
 goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
 

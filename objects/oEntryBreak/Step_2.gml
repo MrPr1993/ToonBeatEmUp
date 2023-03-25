@@ -6,7 +6,10 @@ trainz=trainzSet.Train1Y*ground
 }
 /// @description Insert description here
 // You can write your code in this editor
-if __view_get( e__VW.XView, 0 )>rangeX+rangeXAdd if spawned=0 {sprite_index=spawnSprFX image_index=0 spawned=4}
+
+
+
+if __view_get( e__VW.XView, 0 )>rangeX+rangeXAdd if spawned=0 {hidden=0 sprite_index=spawnSprFX image_index=0 spawned=4}
 
 z+=zSpeed
 
@@ -15,7 +18,6 @@ if spawned=0 {
 	if spawnAnimSpr!=-1{sprite_index=spawnAnimSpr image_speed=spawnAnimSpd}
 	else
 	{sprite_index=spawnSprFX image_speed=0}
-	
 	}
 
 if spawned=1

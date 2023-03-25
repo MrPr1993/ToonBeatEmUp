@@ -1,3 +1,6 @@
+/// @description Plants Appear
+
+
 if __view_get( e__VW.XView, 0 )>=4680
 {
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200-32,oPlant)

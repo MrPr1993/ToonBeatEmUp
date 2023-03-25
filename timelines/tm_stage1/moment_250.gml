@@ -4,7 +4,7 @@ if __view_get( e__VW.XView, 0 )>=1088
 en5=instance_create(__view_get( e__VW.XView, 0 )-64,176,oEnemy1B)
 
 en6=instance_create(__view_get( e__VW.XView, 0 )-32,192,oEnemy1)
-with en6 enemy_modify(my_pal_sprite,4,"MR. LAR",0,0.24,0.24)
+with en6 enemy_modify(my_pal_sprite,4,"MR.LAR",0,0.24,0.24)
 }
 else
 {

@@ -12,6 +12,9 @@ z+=zSpeed
 
 if spawned=1
 {visible=1 sprite_index=spawnFall if canEvent0=1 event_user(0)
+	
+if 	splashscr!=-1 splashscr();
+	
 spawned=2 zSpeed=spawnSpeedZ depth=-y
 }
 

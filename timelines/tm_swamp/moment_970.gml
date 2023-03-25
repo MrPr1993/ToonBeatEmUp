@@ -1,5 +1,13 @@
 if !instance_exists(en1)
 and !instance_exists(en2)
+and !instance_exists(en3)
+and !instance_exists(en4)
+and !instance_exists(en5)
+and !instance_exists(en6)
+and !instance_exists(en7)
+and !instance_exists(en8)
+and !instance_exists(en9)
+and !instance_exists(en10)
 {
 with oControl
 {
