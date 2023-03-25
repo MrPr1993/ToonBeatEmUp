@@ -1,6 +1,6 @@
 enemy_data()
 
-name="WITCH"
+name="KIANDRA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=32
 
