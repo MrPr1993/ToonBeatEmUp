@@ -11,16 +11,16 @@ stageEndFX=0
 stageIntro=1
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0
-oEnemySpawner.MaxX=3338+240-48
+oEnemySpawner.MaxX=5744
 camMove=1
 }
 with oPlayer
 {hspeed=0
-x=3338-64
+x=5476
 y=208
 areaEntry=0
 }
-spawner_followset("WaveSet1",0,3338-64+640,1)
+spawner_followset("WaveSet1",0,5744,1)
 
 
 }

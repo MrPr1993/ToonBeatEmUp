@@ -36,4 +36,4 @@ prevstagecheck3=global.PrevStage3
 stagecheck=8
 }
 
-oPlayer.y=480
+//oPlayer.y=480

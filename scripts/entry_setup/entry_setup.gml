@@ -59,7 +59,15 @@ xySpeed=0
 	zSpeed=0
 	
 	splashscr=-1;
+	splashsnd=-1;
 	
 	spawned=0
+	
+	
+	
+	spawnAnim=-1;
+	spawnAnimFrame=0;
+	spawnCanMove=1;
+	
 
 }

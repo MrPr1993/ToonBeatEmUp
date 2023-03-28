@@ -9,11 +9,11 @@ spawner_followset("WaveSet1",0,3560,1)
 
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,224-16,oSneak)
 with en1
-{canAttack=5 image_xscale=-1 alarm[0]=15 weapon_add("TOMMYGUN")
+{canAttack=5 image_xscale=-1 alarm[1]=30 weapon_add("TOMMYGUN")
 }
 en2=instance_create(__view_get( e__VW.XView, 0)+320+70,224+16,oSneak)
 with en2
-{canAttack=5 image_xscale=-1 alarm[0]=15 weapon_add("TOMMYGUN")
+{canAttack=5 image_xscale=-1 alarm[1]=30 weapon_add("TOMMYGUN")
 }
 }
 

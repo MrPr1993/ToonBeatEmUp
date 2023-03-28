@@ -7,5 +7,5 @@ with horse
 {animEnd=0 alarm[0]=320
 	
 	}
-
+if splashsnd!=-1 PlaySound(splashsnd);
 

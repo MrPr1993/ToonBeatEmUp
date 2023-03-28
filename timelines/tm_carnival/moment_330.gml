@@ -12,7 +12,54 @@ with oControl {//camMove=0 camMax=room_width
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
 
 
-spawner_followset("WaveSet1",0,4560,1)
+en1=instance_create(4173,176+32,oEntryBalloon)
+en1.rideX=4173
+en2=instance_create(4173,176+64,oEntryBalloon)
+en2.rideX=4173 en2.image_xscale=-1 en2.horsepal=2 en2.arriveDir=-1
+with en5
+{horseSpd=-2
+	spawnFall=spr_burglarB_jump
+	riderSpr=spr_burglarB_balloon
+	spawnEnemy=oEnemy1B
+}
+
+en3=instance_create_depth(4220,176,-1,oEntryPoseBoard) with en3
+{
+boardspr=spr_poseboard4
+behindspr=spr_burglarB_front
+spawnFall=spr_burglarB_front
+spawnEnemy=oEnemy1B
+spawnEnemy=oEnemy1B rangeX=x-32
+}
+
+
+en4=instance_create(4512,176+32,oEntryBalloon)
+en4.rideX=4320
+{
+	spawnFall=spr_wrestler_hit
+	spawnFallIndex=3
+	riderSpr=spr_wrestler_balloon
+	spawnEnemy=oWrestler
+	
+	spawnAnim=5;
+	spawnAnimFrame=3;
+	spawnCanMove=1;
+	splashsnd=snd_femenemy8;
+	
+	
+}
+
+en5=instance_create(4512,176+64,oEntryBalloon)
+en5.rideX=4512 en2.image_xscale=-1 en2.horsepal=2 en2.arriveDir=-1
+with en5
+{horseSpd=-2
+	spawnFall=spr_sneak_jump
+	riderSpr=spr_sneak_balloon
+	spawnEnemy=oSneak
+}
+
+
+spawner_followset("WaveSet1",0,5270,1)
 }
 else
 timeline_position-=1
