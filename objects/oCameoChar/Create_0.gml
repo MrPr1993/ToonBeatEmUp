@@ -18,6 +18,7 @@ isDepth=1
 
 ground=1
 
+spdZ=0;
 z=0
 
 newscript=-1;
