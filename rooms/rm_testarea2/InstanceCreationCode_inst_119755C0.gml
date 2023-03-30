@@ -48,5 +48,5 @@ sprite_index=spr_bcameo31 anim=666
 }
 pl2=instance_create_depth(x+96,y,-1,oCameoChar) with pl2
 {image_xscale=-1
-sprite_index=spr_bcameo31 anim=666
+sprite_index=spr_bcameo19 anim=666
 }
