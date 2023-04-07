@@ -31,6 +31,7 @@ function animsetup_hina() {
 	ShockSpr=spr_hina_elec
 	FlatSpr=spr_hina_flat
 	DizzySpr=spr_hina_dizzy
+	meltSpr=spr_hina_melt
 	CarSpr=spr_hina_car
 	GrabbedSpr=spr_hina_grabbed
 	SuperSpr=spr_hina_super

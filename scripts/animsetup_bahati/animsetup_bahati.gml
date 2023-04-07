@@ -33,6 +33,7 @@ function animsetup_bahati() {
 	ShockSpr=spr_bahati_elec
 	FlatSpr=spr_bahati_flat
 	DizzySpr=spr_bahati_dizzy
+	meltSpr=spr_bahati_melt
 	CarSpr=spr_bahati_car
 	GrabbedSpr=spr_bahati_grabbed
 	SuperSpr=spr_bahati_super

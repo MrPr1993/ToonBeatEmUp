@@ -190,6 +190,8 @@ if hp<=0
 	anim=5
 	}
 	
+
+	
 	////Spinning
 	if HitType=590068
 	{
@@ -198,6 +200,20 @@ if hp<=0
 	animFrame=0
 	anim=590068
 	}	
+	
+	
+	if HitType=44///Melt
+	{event_user(1)
+	hurt=1 canBounce=0 sprite_index=meltSpr
+	ground=0
+
+	sentflying=HitForceReact
+	zSpeed=HitForceReactZ
+
+	image_index=0
+	animFrame=0
+	anim=44
+	}
 
 	event_user(12)
 	///Special State for certain enemies after

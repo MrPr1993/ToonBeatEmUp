@@ -28,6 +28,7 @@ function animsetup_viva() {
 	ShockSpr=spr_viva_elec
 	FlatSpr=spr_viva_flat
 	DizzySpr=spr_viva_dizzy
+	meltSpr=spr_viva_melt
 	CarSpr=spr_viva_car
 	GrabbedSpr=spr_viva_grabbed
 	SuperSpr=spr_viva_super

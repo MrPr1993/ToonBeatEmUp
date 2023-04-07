@@ -107,7 +107,7 @@ if songno=19 {songname="NASTY FOE TUNE" playingSound=msc_boss songcomposer="JONO
 if songno=20 {songname="BADDY BADDIES JAM" playingSound=msc_boss2 songcomposer="JONORSI"}
 if songno=21 {songname="QUICK VILE MELODY" playingSound=msc_boss3 songcomposer="EVADER MUSIC"}//X
 if songno=22 {songname="DANGEROUS OF TONES" playingSound=msc_boss4 songcomposer="EVADER MUSIC"}//X
-if songno=23 {songname="DASTARDLY SUBJECT" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}
+if songno=23 {songname="DASTARDLY SUBJECT" playingSound=msc_finalboss1 songcomposer="EVADER MUSIC"}
 if songno=24 {songname="PIECE OF THE NIGHT" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}
 if songno=25 {songname="RISKY REVIVAL" playingSound=msc_countdown songcomposer="JONORSI"}
 if songno=26 {songname="SHOW'S OVER" playingSound=msc_gameover songcomposer="JONORSI"}

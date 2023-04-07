@@ -420,6 +420,31 @@ with cutSelf
 	}
 	}
 	
+	if anim=44 ///Melt
+	{
+	sprite_index=meltSpr	
+if hp<=0
+{
+frame_set(0,0,0.025)
+}
+else
+{
+frame_set(0,0,0.025)
+if animFrame<0.5 shaketime=2
+if animFrame>0.9
+{
+hurt=0
+canmove=1 animFrame=0}
+}
+frame_set(1,1,0.2)
+frame_set(2,2,0.2)
+frame_set(3,3,0.2)
+frame_set(4,4,0.2)
+frame_set(5,5,0.2) if animFrame=5.8
+{dead=1 alarm[2]=30}
+	
+	}
+	
 if anim=590067 { sprite_index=SpookyMonthSpr
 if animFrame>3.9 animFrame=0
 frame_set(0,0,0.2)

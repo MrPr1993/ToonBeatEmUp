@@ -4,6 +4,9 @@ throw_step()
 
 if anim=0 {sprite_index=StandSpr}
 
+if anim=11 {enemyscript=animsetup_viva}
+else {enemyscript=animsetup_enemy}
+
 if dead=1 if visible
 {
 

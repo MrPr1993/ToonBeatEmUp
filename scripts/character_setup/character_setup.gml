@@ -270,6 +270,7 @@ Cweather=0
 	petSprMid=spr_viva_petlow
 	petSprHigh=spr_viva_petlow
 	throwItemSpr=spr_viva_itemthrow
+	meltSpr=spr_viva_melt
 	spawnZAdd=0
 	throwHspd=4
 	frictionX=0

@@ -55,7 +55,9 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 
 	if shaketime!=0 
 	{shaketime-=1 if shake!=-2 shake-=1 else shake=2
-	if (anim!=4 and anim!=9 and anim!=41 and anim!=61 and anim!=30 and anim!=31 and anim!=37 and anim!=38 and anim!=201 and grabbed=0)
+	if (anim!=4 and anim!=9 and anim!=41 and anim!=61 and anim!=30 and anim!=31 and anim!=37 and anim!=38 and anim!=201 
+	and anim!=44
+	and grabbed=0)
 	  shake=0} else 
 	{shaketime=0 shake=0
 	}

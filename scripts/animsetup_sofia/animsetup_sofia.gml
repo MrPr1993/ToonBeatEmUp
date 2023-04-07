@@ -35,6 +35,7 @@ function animsetup_sofia() {
 	ShockSpr=spr_sofia_elec
 	FlatSpr=spr_sofia_flat
 	DizzySpr=spr_sofia_dizzy
+	meltSpr=spr_sofia_melt
 	CarSpr=spr_sofia_car
 	GrabbedSpr=spr_sofia_grabbed
 	SuperSpr=spr_sofia_super

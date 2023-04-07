@@ -169,7 +169,7 @@ targetHeightHit=choose(0,1,2)
 image_index=targetHeightHit
 }
 
-if oControl.HurtTest=8
+if oControl.HurtTest=8 ///Spin
 {
 if -key_left or key_right
 hitBack=1 else hitBack=0
@@ -180,7 +180,13 @@ else if instance_exists(oEnemy1)
 with oEnemy1 {HitType=590068 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
 }
 
-if oControl.HurtTest=9 ///Fall Spin
+if oControl.HurtTest=9///Melt
+{
+animFrame=0
+HitType=44 event_user(0) hp-=0.1*keyboard_check(vk_shift)
+}
+
+if oControl.HurtTest=10 ///Fall Spin
 if !keyboard_check(vk_control)
 {hashitBack=2 {canmove=0 event_user(1) canBounce=1 	zSpeed=-4 ground=0 spdZ=-8
 	if hitBack=0 sentflying=4*-image_xscale	else
