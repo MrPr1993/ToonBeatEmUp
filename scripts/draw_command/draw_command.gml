@@ -146,6 +146,13 @@ draw_buttontext(80-16,32+16+8*16+8,8,"",spr_commandbutton,8,"Y","")
 draw_buttontext(80+16,32+16+8*16+8,8,"",spr_commandbutton,9,"U","")
 }
 
+if commandType=12
+{
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J","SELECT")
+draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"","CANCEL") 
+draw_buttontext(320-8,240-32,8,"RESET",spr_commandbutton,0,"L","")
+}
+
 }
 else
 {
@@ -323,6 +330,12 @@ draw_set_halign(fa_left)
 
 }
 
+if commandType=12
+{
+draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
+draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
+draw_buttontext(320-8,240-32,8,"RESET",spr_commandbutton,7+6*commandMul,"","")
+}
 
 }
 

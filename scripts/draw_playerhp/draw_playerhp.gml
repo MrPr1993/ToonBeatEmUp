@@ -214,7 +214,7 @@ else
 draw_sprite(spr_hud,0,0,0)	
 
 if hp>0
-draw_sprite_part_ext(spr_hpbar,character,0,0,32*hp,10,24,21,1,1,c_white,1)
+draw_sprite_part_ext(spr_hpbar,character,0,0,44*hp,6,25,21,1,1,c_white,1)
 pal_swap_set(my_pal_sprite,current_pal,false);
 draw_sprite(spr_playerface,character,2,8)
 pal_swap_reset();
@@ -228,11 +228,11 @@ draw_text_transformed(25,12,string_hash_to_newline(name),0.75,1,0)
 draw_set_font(-1)
 draw_set_color(c_black)///Super Bar
 if super>0
-draw_sprite_part_ext(spr_superbar,0,0,0,(12*super)/17.5,10,57,21,1,1,c_white,1)
+draw_sprite_part_ext(spr_superbar,0,0,0,(44*super)/17.5,3,25,29,1,1,c_white,1)
 draw_set_color(c_white)
 if oControl.superFlashFrame1<1 and super>=17.5
 {shader_set(shd_white_sprite)
-draw_sprite_part_ext(spr_superbar,0,0,0,(12*super)/17.5,10,57,21,1,1,c_white,1)
+draw_sprite_part_ext(spr_superbar,0,0,0,(44*super)/17.5,3,25,29,1,1,c_white,1)
 shader_reset()
 }
 

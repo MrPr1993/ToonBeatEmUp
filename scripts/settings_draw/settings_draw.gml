@@ -174,7 +174,7 @@ if menuSelect!=0
 ControlChange=1
 
 if keyboard_check_pressed(ord("U")) or keyboard_check_pressed(ord("Y"))
-or key_punchback or key_taunt
+or key_LT or  key_RT
 Joystick^=1;
 
 }
@@ -349,7 +349,7 @@ draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*13,"RESET",1,1,0)
 }
 }
 
-draw_command(1)
+draw_command(12)
 
 if global.fpsMode=1
 {draw_set_halign(fa_right)

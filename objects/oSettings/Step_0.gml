@@ -3,6 +3,27 @@
 controller_setup()
 if controlSettings=0
 {
+///Reset Settings
+if key_Y
+{
+if menuSelect=0 {global.BGMvolume=50 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
+if menuSelect=1 global.SFXvolume=50
+if menuSelect=2 {}
+if menuSelect=3 global.CRTfx=0
+if menuSelect=4 global.CRTcustomDistort=0
+if menuSelect=5 global.CRTcustomDistortAM=1.00
+if menuSelect=6 global.CRTcustomBorder=0
+if menuSelect=7 global.ColorMode=0
+if menuSelect=8 global.ArcadeScreen=0
+if menuSelect=9 global.Screenshake=1
+if menuSelect=10 global.Screenflash=1
+if menuSelect=11	global.LifeStart=2
+if menuSelect=12	global.ContinueStart=-1	
+if menuSelect=13 global.fpsMode=0
+
+}	
+
+
 if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=14 else menuSelect-=1}
 if -key_down_pressed {PlaySound(snd_select) if menuSelect=14 menuSelect=0 else menuSelect+=1}
 
@@ -73,7 +94,7 @@ if menuSelect=13	if global.fpsMode=0 global.fpsMode=1 else global.fpsMode=0
 	}
 
 
-if key_right_pressed or key_attack
+if key_right_pressed or key_A
 {PlaySound(snd_select)
 if menuSelect=2 screen_size(1)
 
@@ -109,7 +130,7 @@ if menuSelect=12	{if global.ContinueStart=99 global.ContinueStart=-1 else global
 	if menuSelect=13	if global.fpsMode=0 global.fpsMode=1 else global.fpsMode=0
 	}
 	
-if key_attack
+if key_A
 {
 if menuSelect=14 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied
 	
@@ -117,6 +138,9 @@ if menuSelect=14 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodie
 	
 	}
 }
+
+
+
 
 }
 

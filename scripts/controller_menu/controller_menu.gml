@@ -40,14 +40,14 @@ key_right = keyboard_check(ord("D"));
 	{
 	    if (gamepad_is_connected(i)) 
 	        {
-	key_X=0
-	key_Y=0
-	key_A=0
-	key_B=0
+	key_A=gamepad_button_check_pressed(i,gp_face1)
+	key_B=gamepad_button_check_pressed(i,gp_face2)
+	key_X=gamepad_button_check_pressed(i,gp_face3)
+	key_Y=gamepad_button_check_pressed(i,gp_face4)
 	key_LB=0
-	key_LT=0
+	key_LT=gamepad_button_check_pressed(i,gp_shoulderl)
 	key_RB=0
-	key_RT=0
+	key_RT=gamepad_button_check_pressed(i,gp_shoulderr)
 	key_pause=0
 	
 	 // left pressed
