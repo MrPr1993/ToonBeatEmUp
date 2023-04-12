@@ -2,10 +2,18 @@ enemy_endstep()
 throw_step()
 
 
+overwriteAttack=1
+overwriteAttack1=1
+overwriteAttack2=1
+overwriteAttack3=1
+overwriteAttack4=1
+overwriteAttack5=1
+
 if anim=0 {sprite_index=StandSpr}
 
 if anim=11 {enemyscript=animsetup_viva}
 else {enemyscript=animsetup_enemy}
+
 
 if dead=1 if visible
 {

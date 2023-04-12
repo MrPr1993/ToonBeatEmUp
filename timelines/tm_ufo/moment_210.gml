@@ -1,14 +1,12 @@
-/// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+/// @description Baddies Appear 10
 
-
-
-if __view_get( e__VW.XView, 0 )>=532
+if __view_get( e__VW.XView, 0 )>=8734-2-320
 {
-en6=instance_create(752-64,192,oEntryClimb) with en6
-{z=-55 rangeX=0}
-en7=instance_create(752+64,192,oEntryClimb) with en7
-{z=-55 rangeX=0}
-enG=instance_create(__view_get( e__VW.XView, 0 )+160,240,oGunRange)
+en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oEnemy1)
+with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
+
+en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oEnemy1B)
+with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
 
 }
 else

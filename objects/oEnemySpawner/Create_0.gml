@@ -55,4 +55,4 @@ enemySpawn3=0
 enemySpawn4=0
 
 
-
+specialscript=-1;

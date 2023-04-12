@@ -8,14 +8,6 @@ oControl.stageNext=rm_stage4
 //oPlayer.x=5000
 //timeline_position=449
 
-en1=instance_create(30599,222,oFatBurglar) en1.canmove=0 en1.isIdle=1 en1.alarm[1]=60 en1.anim=70000
-en1.idleRange=30 en1.enemyIdle1=spr_fatburglar_idle
-
-en2=instance_create(305+4998,222+16,oSwing) en2.canmove=0 en2.isIdle=1 en2.alarm[1]=60 en2.anim=70000
-en2.idleRange=30+24 en2.enemyIdle1=spr_swing_idle3 en2.image_xscale=-1
-
-en3=instance_create(320-4899+16-16,222+16,oSneak) en3.canmove=0 en3.isIdle=1 en3.alarm[1]=60 en3.anim=70000
-en3.idleRange=30+16 en3.enemyIdle1=spr_sneak_idle3
 
 bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
 layer_background_visible(bgfog1,0)

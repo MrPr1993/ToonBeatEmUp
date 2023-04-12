@@ -1,18 +1,12 @@
-/// @description /Make sure to only count the previous ones, otherwise you'll get an error.
-
-
-
-if __view_get( e__VW.XView, 0 )>=532
+if !instance_exists(en1)
+and !instance_exists(en2)
+and !instance_exists(en3)
+and !instance_exists(en4)
 {
-en6=instance_create(752-64,192,oEntryClimb) with en6
-{z=-55 rangeX=0}
-en7=instance_create(752+64,192,oEntryClimb) with en7
-{z=-55 rangeX=0}
-enG=instance_create(__view_get( e__VW.XView, 0 )+160,240,oGunRange)
-
+with oControl {//camMove=0 camMax=room_width
+ goActive=1 alarm[1]=90
+xGoCheck=__view_get( e__VW.XView, 0 )+320}
+spawner_followset("WaveSet1",0,6256+320,1)
 }
 else
-{
-timeline_position-=1
-}
-
+timeline_position-=1;

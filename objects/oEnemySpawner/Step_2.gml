@@ -58,3 +58,4 @@ MaxY+=oPlayer.totalSpeedY
 
 visible=oControl.betatest
 
+if specialscript!=-1 specialscript();

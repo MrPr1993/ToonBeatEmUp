@@ -124,6 +124,23 @@ weapontype=0
 weaponHitType=0
 }
 
+if wpadd="HARPOONGUN"
+{
+spawnID=oHarpoonGun
+weaponspr=spr_harpoongun
+weaponIndex=0
+weaponX=14
+weaponY=-69
+weaponangle=180
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.1
+weapontargetHeight=2
+weapontype=0
+weaponHitType=0
+}
+
 if wpadd="DYNAMITE"
 {
 spawnID=oDynamite

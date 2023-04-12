@@ -1,11 +1,10 @@
-/// @description Plane 2
-////Make sure to only count the previous ones, otherwise you'll get an error.
 if !instance_exists(en1)
 and !instance_exists(en2)
 {
-en1=instance_create(__view_get( e__VW.XView, 0 )+320-128,170,oPlaneWheel)
-en1=instance_create(__view_get( e__VW.XView, 0 )+320-128,170+64,oPlaneWheel)
+with oControl {//camMove=0 camMax=room_width
+ goActive=1 alarm[1]=90
+xGoCheck=__view_get( e__VW.XView, 0 )+320}
+spawner_followset("WaveSet1",0,6856+320,1)
 }
 else
-timeline_position-=1
-
+timeline_position-=1;

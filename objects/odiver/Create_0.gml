@@ -4,6 +4,7 @@ name="MR.DIVE"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=45
 
+chardraw=draw_swing;
 enemyscript=animsetup_enemy
 
 DeathCry=snd_deathcry1

@@ -6,6 +6,31 @@ overwriteAttack1=1
 overwriteAttack2=1
 overwriteAttack3=1
 
+
+///Weapons
+if anim=0
+{
+	////Stand
+	if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,25,-39,-1,weaponcolor)
+	if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,26,-38,-1,weaponcolor)
+	if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,24,-36,-1,weaponcolor)
+}
+
+if anim=1
+{
+////Walk
+	if image_index=clamp(image_index,0,0.9) or image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,26,-34,0,weaponcolor)
+	if image_index=clamp(image_index,1,1.9) or image_index=clamp(image_index,4,4.9)
+weaponanim(weaponspr,weaponIndex,26,-37,0,weaponcolor)
+	if image_index=clamp(image_index,2,2.9) or image_index=clamp(image_index,5,5.9)
+weaponanim(weaponspr,weaponIndex,26,-39,0,weaponcolor)
+}
+
+
 	///Attacks
 	if anim=10 ///Attack Stand
 	{
@@ -36,5 +61,75 @@ if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=spr_diver_airkick image_
 
 if animFrame>3 and ground {canmove=1}
 }
-
+	if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,24,-34,0,weaponcolor)
+	if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,24,-32,0,weaponcolor)
+	if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,26,-51,0,weaponcolor)
 	}
+	
+	///Diving Down
+	if anim=13
+	{z+=2 sprite_index=spr_diver_move image_index=2 zSpeed=0
+		weaponanim(weaponspr,weaponIndex,26,-39,0,weaponcolor)
+	if ground {animFrame=5 anim=10}
+	}
+	
+	
+weaponBack=1
+
+////Hit
+if sprite_index=ThrownSpr
+{
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,36,-29,0,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,24,-40,17,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,20,-38,0,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,11,-57,-34,weaponcolor)
+if image_index=clamp(image_index,4,4.9)
+weaponanim(weaponspr,weaponIndex,11,-46,86,weaponcolor)
+if image_index=clamp(image_index,5,5.9)
+weaponanim(weaponspr,weaponIndex,-1,-48,129,weaponcolor)
+if image_index=clamp(image_index,6,6.9)
+weaponanim(weaponspr,weaponIndex,27,-15,25,weaponcolor)
+if image_index=clamp(image_index,7,7.9)
+weaponanim(weaponspr,weaponIndex,12,-40,80,weaponcolor)
+if image_index=clamp(image_index,8,8.9)
+weaponanim(weaponspr,weaponIndex,26,-11,80,weaponcolor)
+if image_index=clamp(image_index,9,9.9)
+weaponanim(weaponspr,weaponIndex,16,-22,-2,weaponcolor)
+if image_index=clamp(image_index,10,10.9)
+weaponanim(weaponspr,weaponIndex,16,-42,-2,weaponcolor)
+if image_index=clamp(image_index,11,11.9)
+weaponanim(weaponspr,weaponIndex,8,-23,78,weaponcolor)
+if image_index=clamp(image_index,12,12.9)
+weaponanim(weaponspr,weaponIndex,0,-28,147,weaponcolor)
+if image_index=clamp(image_index,13,13.9)
+weaponanim(weaponspr,weaponIndex,0,-15,200,weaponcolor)
+if image_index=clamp(image_index,14,14.9)
+weaponanim(weaponspr,weaponIndex,1,-22,311,weaponcolor)
+if image_index=clamp(image_index,15,15.9)
+weaponanim(weaponspr,weaponIndex,-29,-26,392,weaponcolor)
+if image_index=clamp(image_index,16,16.9)
+weaponanim(weaponspr,weaponIndex,5,-22,370,weaponcolor)
+if image_index=clamp(image_index,17,17.9)
+weaponanim(weaponspr,weaponIndex,0,-22,356,weaponcolor)
+if image_index=clamp(image_index,18,18.9)
+weaponanim(weaponspr,weaponIndex,-13,-6,316,weaponcolor)
+if image_index=clamp(image_index,19,19.9)
+weaponanim(weaponspr,weaponIndex,-13,-6,0,weaponcolor)
+if image_index=clamp(image_index,20,20.9)
+weaponanim(weaponspr,weaponIndex,-13,-11,0,weaponcolor)
+if image_index=clamp(image_index,21,21.9)
+weaponanim(weaponspr,weaponIndex,-9,-7,0,weaponcolor)
+if image_index=clamp(image_index,22,22.9)
+weaponanim(weaponspr,weaponIndex,-3,-16,360,weaponcolor)
+if image_index=clamp(image_index,23,23.9)
+weaponanim(weaponspr,weaponIndex,17,-42,360,weaponcolor)
+if image_index=clamp(image_index,24,24.9)
+weaponanim(weaponspr,weaponIndex,24,-40,360,weaponcolor)
+}

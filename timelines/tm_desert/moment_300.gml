@@ -1,17 +1,10 @@
-/// @description /Make sure to only count the previous ones, otherwise you'll get an error.
-if __view_get( e__VW.XView, 0 )>=2238
+if !instance_exists(en1)
+and !instance_exists(en2)
 {
-en3=instance_create(2496,160,oAreaSpawner)
-with en3
-{
-spawnX=0 ///768
-enemytype0=oWrestler MaxSpawnFrame=0 visible=1
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-turn0=-1
-}
+with oControl {//camMove=0 camMax=room_width
+ goActive=1 alarm[1]=90
+xGoCheck=__view_get( e__VW.XView, 0 )+320}
+spawner_followset("WaveSet1",0,8776+320,1)
 }
 else
-{
-timeline_position-=1
-}
-
+timeline_position-=1;
