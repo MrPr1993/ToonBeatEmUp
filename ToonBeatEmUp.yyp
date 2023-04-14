@@ -87,6 +87,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cobra Woman","folderPath":"folders/7 - Enemies/Cobra Woman.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dancer","folderPath":"folders/7 - Enemies/Dancer.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Diver","folderPath":"folders/7 - Enemies/Diver.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fairy","folderPath":"folders/7 - Enemies/Fairy.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FatBurglar","folderPath":"folders/7 - Enemies/FatBurglar.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Female Burglar","folderPath":"folders/7 - Enemies/Female Burglar.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Goblin","folderPath":"folders/7 - Enemies/Goblin.yy",},
@@ -177,7 +178,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TV FX","folderPath":"folders/TV FX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"z99 - Extensions","folderPath":"folders/z99 - Extensions.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fairy","folderPath":"folders/7 - Enemies/Fairy.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"HinaArtwork1.png","CopyToMask":-1,"filePath":"datafiles/Gallery",},

@@ -67,6 +67,7 @@
     {"name":"Cobra Woman","order":7,"path":"folders/7 - Enemies/Cobra Woman.yy",},
     {"name":"Dancer","order":39,"path":"folders/7 - Enemies/Dancer.yy",},
     {"name":"Diver","order":8,"path":"folders/7 - Enemies/Diver.yy",},
+    {"name":"Fairy","order":42,"path":"folders/7 - Enemies/Fairy.yy",},
     {"name":"FatBurglar","order":12,"path":"folders/7 - Enemies/FatBurglar.yy",},
     {"name":"Female Burglar","order":13,"path":"folders/7 - Enemies/Female Burglar.yy",},
     {"name":"Goblin","order":14,"path":"folders/7 - Enemies/Goblin.yy",},
@@ -146,7 +147,6 @@
     {"name":"g - MISC","order":26,"path":"folders/g - MISC.yy",},
     {"name":"Notes","order":2,"path":"folders/Notes.yy",},
     {"name":"TV FX","order":15,"path":"folders/TV FX.yy",},
-    {"name":"Fairy","order":42,"path":"folders/7 - Enemies/Fairy.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oFisingFish","order":85,"path":"objects/oFisingFish/oFisingFish.yy",},
