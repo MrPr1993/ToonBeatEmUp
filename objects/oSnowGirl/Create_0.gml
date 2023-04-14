@@ -52,6 +52,9 @@ ShockSpr=spr_snowgirl_elec
 BurnSpr=spr_snowgirl_burned
 FrozenSpr=spr_snowgirl_frozen
 
+hasFront=1
+FrontSpr=spr_snowgirl_front
+
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

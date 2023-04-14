@@ -49,6 +49,7 @@ frame_set(4,0,0.1)
 selfatk.HitSpark=spr_hitflash
 
 if animFrame>4.5 canmove=1
+
 }
 
 

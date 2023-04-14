@@ -50,6 +50,7 @@ if enemySpawn=35 {enemySpawnName="36 Dancer" spawnUnit=oDancer}
 if enemySpawn=36 {enemySpawnName="37 Clown Puppet" spawnUnit=oClown}
 if enemySpawn=37 {enemySpawnName="38 Teddy Bear" spawnUnit=oBear}
 if enemySpawn=38 {enemySpawnName="39 Snow Girl" spawnUnit=oSnowGirl}
+if enemySpawn=39 {enemySpawnName="40 Fairy" spawnUnit=oFairy}
 }
 if spawnType="Bosses"
 {

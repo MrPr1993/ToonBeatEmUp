@@ -1,12 +1,11 @@
-/// @description Baddies Appear 3
+/// @description Baddies Appear 3 - Snow Babe
 
 if __view_get( e__VW.XView, 0 )>=3920-2-320
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oEnemy1)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
-
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oEnemy1B)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
+en1=instance_create(3784, 170,oAreaSpawner)
+en1.spawnX=0 ///2848
+en1.enemytype0=oSnowGirl en1.hasFake=0
+en1.FXtype=1 turn0=-1
 
 }
 else

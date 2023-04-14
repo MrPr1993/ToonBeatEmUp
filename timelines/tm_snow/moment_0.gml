@@ -8,6 +8,13 @@ oControl.stageNext=rm_stage4
 //oPlayer.x=5000
 //timeline_position=449
 
+en1=instance_create(228,209,oEnemy1)
+with en1 { canmove=0 isIdle=1 alarm[1]=60 anim=70000
+idleRange=30 enemyIdle1=spr_burglar_cold}
+
+en2=instance_create(300,207,oSneak)
+with en2 { canmove=0 isIdle=1 alarm[1]=60 anim=70000 image_xscale=-1
+idleRange=30 enemyIdle1=spr_sneak_idle3}
 
 bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
 layer_background_visible(bgfog1,0)

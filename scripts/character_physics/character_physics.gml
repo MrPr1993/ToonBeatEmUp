@@ -11,10 +11,10 @@ else {
 	{
 if totalSpeed!=0
 if -key_left or key_right
-frictionX+=(totalSpeed*image_xscale)*0.25 frictionX=clamp(frictionX,-totalSpeed,totalSpeed)
+frictionX+=(totalSpeed*image_xscale)*0.25 frictionX=clamp(frictionX,-totalSpeed/2,totalSpeed/2)
 if !key_up=0 or !key_down=0
 frictionY+=(-(walkSpeedY*key_up)+(walkSpeedY*key_down))*0.25/2
-frictionY=clamp(frictionY,-walkSpeedY,walkSpeedY)
+frictionY=clamp(frictionY,-walkSpeedY/2,walkSpeedY/2)
 	}
 }
 }else {frictionX=0 frictionY=0}
