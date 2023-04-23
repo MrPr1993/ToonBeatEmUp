@@ -1,6 +1,6 @@
 enemy_data()
 
-name="TEDI"
+name="ROOSEVELT"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=49
 

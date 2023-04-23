@@ -8,7 +8,7 @@ or z+height<other.z+other.height
 if x>other.SourceX sourceCheckX=-1 else sourceCheckX=1 
 if y>other.y-8 sourceCheckY=-1 else sourceCheckY=1 
 
-hp-=other.damage
+hp-=other.damage*2
 
 
 shakefrom=sourceCheckX

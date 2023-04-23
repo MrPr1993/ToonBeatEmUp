@@ -9,8 +9,13 @@ oControl.stageNext=rm_stage4
 //timeline_position=449
 
 
-bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
-layer_background_visible(bgfog1,0)
-
-
 oPlayer.x-=64
+oPlayer.hspeed=0
+oPlayer.key_right=0
+oPlayer.y=232
+
+oPlayer.visible=0
+oPlayer.alarm[0]=0
+oPlayer.canControl=0
+
+oControl.specialcheck0=90

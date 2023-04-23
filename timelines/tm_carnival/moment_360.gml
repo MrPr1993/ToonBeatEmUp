@@ -1,4 +1,4 @@
-///@description Prepare Mummy Time!
+///@description Fun House
 
 if oPlayer.x>__view_get( e__VW.XView, 0 )+320-24
 {timer_set(0)

@@ -14,7 +14,7 @@ HitGround=snd_hitgroundheavy
 isHeavy=1
 throwHeavy=1
 
-defMask=spr_shadow
+defMask=spr_shadow2
 
 DamageVoice1=snd_femenemy8
 DamageVoice2=snd_femenemy8

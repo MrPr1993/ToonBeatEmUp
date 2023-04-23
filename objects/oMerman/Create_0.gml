@@ -1,6 +1,6 @@
 enemy_data()
 
-name="MERMAN"
+name="DOUGLAS"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=25
 

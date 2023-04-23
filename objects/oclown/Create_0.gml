@@ -1,8 +1,8 @@
 enemy_data()
 
-name="CLOWN"
+name="ANETTE"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=32
+enemyPortraitIndex=38
 
 enemyscript=animsetup_enemy
 
@@ -18,10 +18,10 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=2
-maxhp=2
+hp=4
+maxhp=4
 
-height=70
+height=90
 
 specialFX=0
 

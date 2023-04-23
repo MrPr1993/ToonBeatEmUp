@@ -1,6 +1,6 @@
 enemy_data()
 
-name="SOLI"
+name="MS.KI"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=44
 

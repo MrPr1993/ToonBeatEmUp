@@ -28,6 +28,9 @@ isHeavy=1
 throwHeavy=1
 rangeAtk=320
 
+
+defMask=spr_shadow2
+
 height=100
 
 specialFX=0

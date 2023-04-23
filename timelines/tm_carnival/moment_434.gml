@@ -11,7 +11,7 @@ stageEndFX=0
 stageIntro=1
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0
-oEnemySpawner.MaxX=5744
+oEnemySpawner.MaxX=5744+320
 camMove=1
 }
 with oPlayer

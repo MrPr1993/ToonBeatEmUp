@@ -39,7 +39,7 @@ draw_buttontext(320-8,240-16,8,"CANCEL",spr_commandbutton,2,"","")
  if hasVariants=1
  {
 //draw_text(224+8,0,"\nPRESS J TO SWITCH\nVARIATION ("+string(dataPal)+string("/")+string(dataPalMax)+")") //Name
- draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,0,"J","TO SWITCH VARATION\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
+ draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,0,"J","TO SWITCH VARIATION\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
  }}
 
 if commandType=4
@@ -185,7 +185,7 @@ draw_buttontext(320-8,240-16,8,"CANCEL",spr_commandbutton,5+6*commandMul,"","")
  if hasVariants=1
  {
 //draw_text(224+8,0,"\nPRESS J TO SWITCH\nVARIATION ("+string(dataPal)+string("/")+string(dataPalMax)+")") //Name
- draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,4+6*commandMul,"","TO SWITCH VARATION\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
+ draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,4+6*commandMul,"","TO SWITCH VARIATION\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
  }}
 
 if commandType=4

@@ -83,11 +83,11 @@ break;
 break;
   case 10:
  charinfo_set(12,spr_strongburg_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,37,"MR.CHIP",
- "A!")
+"A huge guy, he can use his massive arms to give you a deadly bear hug. He can also go for a spin if you get too close!")
 break;
   case 11:
- charinfo_set(12,spr_monk_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,44,"MS.KICK",
- "A!")
+ charinfo_set(12,spr_monk_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,44,"MS.KI",
+"Trained under martial arts, she can blast you with her ki and can use their hip to collide you with if you're away.")
 break;
   case 12:
   hp=0.25
@@ -113,69 +113,92 @@ break;
  "These skeletons of jugglers will show up and have a bone to pick with you! And throw it.")} 
 break;
   case 15:
- charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"ANIMATE AXE",
- "A!")
-break;
+ charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"POLTERGEIST",
+"A haunted bladed weapon that's taken over with remnants of a spirit obsessed with heads.")
   case 16:
- charinfo_set(12,spr_catman_stand,1,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,12,"MAU",
- "A!")
+ charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"PAINTING",
+"Painting.")
 break;
   case 17:
- charinfo_set(12,spr_cobra_stand,1,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,24,"ASPA",
- "A!")
+ charinfo_set(12,spr_catman_stand,1,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,12,"MAU",
+"This little kitty will not hestitate in using their claws, and isn't afraid of making you their yarn.")
 break;
   case 18:
- charinfo_set(12,spr_ninjabun_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,15,"USAGI",
- "A!")
+ charinfo_set(12,spr_cobra_stand,1,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,24,"ASPA",
+"They have snake for hands, and will use them to bite at you.")
 break;
   case 19:
- charinfo_set(12,spr_samurai_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,16,"SAKE",
- "A!")
+ charinfo_set(12,spr_ninjabun_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,15,"USAGI",
+"These are trained assassins for hire who also double as servants of the casino. They take it seriously.")
 break;
   case 20:
- charinfo_set(12,spr_plant_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,29,"FLORA",
- "A!")
+ charinfo_set(12,spr_samurai_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,16,"SAKE",
+"A samurai in gear styled after dominos who will take a bit before slicing you in half.")
 break;
   case 21:
- charinfo_set(12,spr_lobster_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,42,"PINCHO",
- "A!")
-break;
-  case 22:
- charinfo_set(12,spr_diver_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,45,"DIVERMAN",
- "A!")
-break;
-  case 23:
- charinfo_set(12,spr_merman_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,25,"MERMAN",
- "A!")
-break;
-  case 24:
- charinfo_set(12,spr_siren_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,26,"SIREN",
- "A!")
+ charinfo_set(12,spr_clown_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"ANETTE",
+"A silly marionette lady who does a good show with their skills and pain towards the offenders.")
+  break;
+   case 22:
+ charinfo_set(12,spr_bear_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"ROOSEVELT",
+"An adorable plush of fluff who can teach naughty people how to treat them nice. With their fists.")
+ break;
+ case 23:
+ charinfo_set(12,spr_fairy_stand,1,animsetup_enemy,draw_enemy,spr_fairypal,0,spr_miscface,0,"BELLE",
+"A fairy with the skills of ballet and magic who'll use their strong legs to crush you.")
+ break;
+   case 24:
+ charinfo_set(12,spr_plant_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,29,"FLORA",
+"A living plant who goes after adversaries and try and catch them with their mouth. Chomp.")
 break;
   case 25:
- charinfo_set(12,spr_martian_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,23,"MARTIAN",
- "A!")
+ charinfo_set(12,spr_lobster_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,42,"PINCHO",
+"A lobster who's big, and has claws that will give you a strong pinch.")
 break;
-  case 26:
- charinfo_set(12,spr_alienrobot_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,28,"MARSBOT",
- "A!")
-break;
-  case 27:
- charinfo_set(12,spr_spacer_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,43,"SPACER",
- "A!")
+case 26:
+charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"OCTO",
+"Pet of the lady of the beach, who is very protective of the area and will use their tentacles. For pain.")
+ break; 
+ case 27:
+ charinfo_set(12,spr_diver_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,45,"MR.DIVE",
+"An underwater minion who seeks for their foes under the sea and rob of the treasures. An underwater chump.")
 break;
   case 28:
- charinfo_set(12,spr_goblin_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBLIN",
- "A!")
+ charinfo_set(12,spr_diver_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,45,"BAD SUB",
+"An underwater submarine operated by Van Bad's baddies as they search for loot under the sea.")
 break;
   case 29:
- charinfo_set(12,spr_slime_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,22,"SLIME",
- "A!")
+ charinfo_set(12,spr_merman_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,25,"DOUGLAS",
+"A fish man guard who's tasked in taking intruders out and use either a spear or trident to stab you with.")
 break;
   case 30:
- charinfo_set(12,spr_ladybot_stand,1,animsetup_enemy,draw_enemy,spr_robotpal,0,spr_enemyface,46,"LADYBOT",
- "A!")
+ charinfo_set(12,spr_siren_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,26,"SIRENA",
+"They say they are lovely, but they can be pretty viscious if they need to with her projectiles.")
 break;
+  case 31:
+ charinfo_set(12,spr_martian_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,23,"MARTIA",
+"These space babes have been capturing specimens and will try and catch you with a shock or with their heads!")
+break;
+  case 32:
+ charinfo_set(12,spr_alienrobot_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,28,"ELECTRON",
+"A security robot from space! These machines assist the invaders in capturing escaped experiments.")
+break;
+  case 33:
+ charinfo_set(12,spr_spacer_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,43,"OJO",
+"They do research on planets and will choose on what planet they will loot with their female counterparts.")
+break;
+  case 34:
+ charinfo_set(12,spr_goblin_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBERT",
+"This is one busy goblin, who hates getting their work disrupted. They want people away from their mine zone!")
+break;
+  case 35:
+ charinfo_set(12,spr_slime_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,22,"MELON",
+ "A smug slime who has a malleable skill to smash anyone. In a way by crushing them with their powers.")
+break;
+  case 36:
+ charinfo_set(12,spr_ladybot_stand,1,animsetup_enemy,draw_enemy,spr_robotpal,0,spr_enemyface,46,"O-POLIS",
+"A sentry fembot built to combat intruders and can manage and go for a punching charge!")
+
 }
 
 if image_blend=c_black {name="???" desc=""

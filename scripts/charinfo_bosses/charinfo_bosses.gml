@@ -10,12 +10,7 @@ switch (dataSelect)
  "A shady woman who works with the thieves to steal the treasures of the divas. And she appears to be hiding something else...")
  if dataPal=2
 	  charinfo_set(11,spr_wolfita_stand,2,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,5,"LADY WOLF",
- "BIG, RUDE AND NASTY,\n"+
-	 "THESE GUYS CHARGE AT\n"+
-	 "YOU AND EVEN TRY TO\n"+
-	 "SQUASH YOU WITH THEIR\n"+ 
-	 "REAR! DON'T GET\n"+
-	 "FLATTENED!")
+ "A shady woman who works with the thieves to steal the treasures of the divas. And she appears to be hiding something else...")
 
 break;
   case 2:

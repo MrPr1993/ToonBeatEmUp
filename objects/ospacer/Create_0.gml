@@ -1,6 +1,6 @@
 enemy_data()
 
-name="SPACE-I"
+name="OJO"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=43
 
@@ -44,4 +44,4 @@ FrozenSpr=spr_spacer_frozen
 
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_fairypal

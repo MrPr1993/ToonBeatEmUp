@@ -1,4 +1,4 @@
-/// @description Plane Area Start
+/// @description Fun House Start
 timer_set(1)
 with oPlayer
 {canmove=1

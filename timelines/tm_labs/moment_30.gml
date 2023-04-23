@@ -17,6 +17,8 @@ specialscript=function()
 specialSet7+=1
 if specialSet7>160 specialSet7=0
 layer_y("ElevatorBG",specialSet7)
+//layer_background_htiled("ElevatorBG",false)
+
 }
 
 }
