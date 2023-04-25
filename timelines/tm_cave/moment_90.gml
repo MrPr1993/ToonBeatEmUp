@@ -1,12 +1,22 @@
 /// @description Baddies Appear 4
 
-if __view_get( e__VW.XView, 0 )>=4560-2-320
+if __view_get( e__VW.XView, 0 )>=4560-2-320-320-320
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oEnemy1)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
-
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oEnemy1B)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
+en5=instance_create_depth(__view_get( e__VW.XView, 0)+320-64,180,-1,oEntryBreak)
+with en5
+{instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 my_pal_sprite=spr_plantpal;
+	shellSpawnSpd=0.25 spawnSprFX=spr_plant_rise hidden=1; image_xscale=-1;
+	spawnFall=spr_plant_stand	spawnEnemy=oPlant
+	xSpeed=0 ySpeed=0 zSpeed=0 ground=1
+	}
+	
+en6=instance_create_depth(__view_get( e__VW.XView, 0)+320-64,220,-1,oEntryBreak)
+with en6
+{instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 my_pal_sprite=spr_plantpal;
+	shellSpawnSpd=0.25 spawnSprFX=spr_plant_rise hidden=1; image_xscale=-1;
+	spawnFall=spr_plant_stand	spawnEnemy=oPlant
+	xSpeed=0 ySpeed=0 zSpeed=0 ground=1
+	}
 
 }
 else

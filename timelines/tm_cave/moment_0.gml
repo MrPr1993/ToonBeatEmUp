@@ -1,5 +1,5 @@
 /// @description Stage Starting
-spawner_followset("WaveSet1",0,692+224,1)
+spawner_followset("WaveSet1",0,596+320,1)
 
 oControl.stageNext=rm_stage4
 
