@@ -1,4 +1,4 @@
-sprite_index=spr_bcameo6
+sprite_index=spr_bcameo25
 image_xscale=-1
 y+=4
 image_alpha=1

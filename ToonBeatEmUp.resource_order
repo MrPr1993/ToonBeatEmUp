@@ -2340,6 +2340,7 @@
     {"name":"spr_wrestler_grab","order":7,"path":"sprites/spr_wrestler_grab/spr_wrestler_grab.yy",},
     {"name":"spr_wrestler_hit","order":8,"path":"sprites/spr_wrestler_hit/spr_wrestler_hit.yy",},
     {"name":"spr_wrestler_idle3","order":9,"path":"sprites/spr_wrestler_idle3/spr_wrestler_idle3.yy",},
+    {"name":"language_check","order":91,"path":"scripts/language_check/language_check.yy",},
     {"name":"spr_wrestler_move","order":10,"path":"sprites/spr_wrestler_move/spr_wrestler_move.yy",},
     {"name":"spr_wrestler_stand","order":11,"path":"sprites/spr_wrestler_stand/spr_wrestler_stand.yy",},
     {"name":"spr_zombieman_ooc","order":2,"path":"sprites/spr_zombieman_ooc/spr_zombieman_ooc.yy",},

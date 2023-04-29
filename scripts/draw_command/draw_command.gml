@@ -13,50 +13,50 @@ if global.ConsoleType="PC"
 if commandType=0
 {
 ///Menu
-draw_buttontext(8,240-32-16,8,"",spr_commandbutton,0,"J","SELECT")
-draw_buttontext(8,240-32,8,"",spr_commandbutton,2,"","CANCEL")
+draw_buttontext(8,240-32-16,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32,8,"",spr_commandbutton,2,"",commandL[1])
 }
 
 if commandType=1
 {
 ///Menu
-draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J","SELECT")
-draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"","CANCEL") 
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"",commandL[1]) 
 }
 
 if commandType=2
 {
-draw_buttontext(8,8,8,"",spr_commandbutton,0,"J","SELECT")
-draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"","CANCEL")
+draw_buttontext(8,8,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"",commandL[1])
 if global.UnlockAltPal=1
-draw_buttontext(320-8,8,8,"PALETTE",spr_commandbutton,0,"H","")
+draw_buttontext(320-8,8,8,commandL[2],spr_commandbutton,0,"H","")
 
 }
 
 if commandType=3
 {
-draw_buttontext(320-8,240-16,8,"CANCEL",spr_commandbutton,2,"","")
+draw_buttontext(320-8,240-16,8,commandL[1],spr_commandbutton,2,"","")
  if hasVariants=1
  {
 //draw_text(224+8,0,"\nPRESS J TO SWITCH\nVARIATION ("+string(dataPal)+string("/")+string(dataPalMax)+")") //Name
- draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,0,"J","TO SWITCH VARIATION\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
+ draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,0,"J",commandL[3]+"\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
  }}
 
 if commandType=4
 {
-draw_buttontext(320-8,8,8,"SELECT",spr_commandbutton,0,"J","")
-draw_buttontext(320-8,8+16,8,"CANCEL",spr_commandbutton,2,"","") 
+draw_buttontext(320-8,8,8,commandL[0],spr_commandbutton,0,"J","")
+draw_buttontext(320-8,8+16,8,commandL[1],spr_commandbutton,2,"","") 
 }
 
 if commandType=5
 {
 ///Menu
-draw_buttontext(8,8,8,"",spr_commandbutton,2,"","CANCEL") 
-draw_buttontext(320-8-16,8,8,"ZOOM",spr_commandbutton,0,"J","")
+draw_buttontext(8,8,8,"",spr_commandbutton,2,"",commandL[1]) 
+draw_buttontext(320-8-16,8,8,commandL[4],spr_commandbutton,0,"J","")
 draw_buttontext(320-8,8,8,"/",spr_commandbutton,0,"L","")
-draw_buttontext(320-8,8+16,8,"HIDE TEXT",spr_commandbutton,0,"H","")
-draw_buttontext(160-16,8,8,"PREV",spr_commandbutton,0,"Y","")
-draw_buttontext(160+16,8,8,"",spr_commandbutton,0,"U","NEXT")
+draw_buttontext(320-8,8+16,8,commandL[5],spr_commandbutton,0,"H","")
+draw_buttontext(160-16,8,8,commandL[6],spr_commandbutton,0,"Y","")
+draw_buttontext(160+16,8,8,"",spr_commandbutton,0,"U",commandL[7])
 }
 
 if commandType=6
@@ -64,45 +64,45 @@ if commandType=6
 ///Menu
 if songtext=1
 {
-draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J","SELECT")
-draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"","CANCEL") 
-draw_buttontext(320-8,240-32,8,"LOOP",spr_commandbutton,0,"L","")
-draw_buttontext(320-8,240-32+16,8,"HIDE",spr_commandbutton,0,"H","")
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"",commandL[1]) 
+draw_buttontext(320-8,240-32,8,commandL[8],spr_commandbutton,0,"L","")
+draw_buttontext(320-8,240-32+16,8,commandL[9],spr_commandbutton,0,"H","")
 }
 }
 
 if commandType=7
 {
-draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"","EXIT")
+draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"",commandL[10])
 }
 
 if commandType=8
 {
 ///Menu
-draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J","SELECT")
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
 }
 
 if commandType=9
 {
-///Menudraw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J","SELECT")
+///Menudraw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
 ///Menu
-draw_buttontext(8,240-24-4,8,"",spr_commandbutton,0,"J","SELECT")
-draw_buttontext(8,240-8-4,8,"",spr_commandbutton,0,"K","CANCEL")
+draw_buttontext(8,240-24-4,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-8-4,8,"",spr_commandbutton,0,"K",commandL[1])
 
 if pickedcolor=1
-draw_buttontext(45-32+32+64,184-16+8,8,"",spr_commandbutton,0,"L","","HOLD TO APPLY\nTO ALL COLORS")
+draw_buttontext(45-32+32+64,184-16+8,8,"",spr_commandbutton,0,"L","",commandL[11])
 
-draw_buttontext(320-8,240-24+4,8,"RESET",spr_commandbutton,0,"H","RESET")
+draw_buttontext(320-8,240-24+4,8,commandL[12],spr_commandbutton,0,"H",commandL[12])
 
 
 
-draw_buttontext(160-16,240-24+4,8,"COPY",spr_commandbutton,0,"Y","")
-draw_buttontext(160+16,240-24+4,8,"",spr_commandbutton,0,"U","PASTE")
+draw_buttontext(160-16,240-24+4,8,commandL[13],spr_commandbutton,0,"Y","")
+draw_buttontext(160+16,240-24+4,8,"",spr_commandbutton,0,"U",commandL[14])
 
 draw_buttontext(320-88,16,8,"",spr_commandbutton,0,"L","","")
 draw_set_halign(fa_center)
-draw_text(320-88,16+12,"CHANGE CHARACTER")
-draw_text(160,8,"PALETTE EDITOR")
+draw_text(320-88,16+12,commandL[15])
+draw_text(160,8,commandL[16])
 draw_set_halign(fa_left)
 
 
@@ -114,9 +114,9 @@ if commandType=10
 matrix_set(matrix_world,matrix_build(0,oControl.quakeFX,0,0,0,0,1,1,1))
 ///Slot Machine
 draw_set_halign(fa_left)
-var atext="BET"; var btext="SPIN";
+var atext=commandL[17]; var btext=commandL[18];
 
-if slotmachineplay=3 {atext="STOP"; btext="STOP";
+if slotmachineplay=3 {atext=commandL[19]; btext=commandL[19];
 	draw_buttontext(16,240-24-4,8,"",spr_commandbutton,0,"J",atext)
 	}
 else
@@ -141,68 +141,68 @@ matrix_set(matrix_world,matrix_build_identity())
 if commandType=11
 {
 
-draw_set_halign(fa_center) if Joystick=0 draw_text(80,32+16+8*15,"KEYBOARD") else draw_text(80,32+16+8*15,"JOYSTICK")
+draw_set_halign(fa_center) if Joystick=0 draw_text(80,32+16+8*15,commandL[20]) else draw_text(80,32+16+8*15,commandL[21])
 draw_buttontext(80-16,32+16+8*16+8,8,"",spr_commandbutton,8,"Y","")
 draw_buttontext(80+16,32+16+8*16+8,8,"",spr_commandbutton,9,"U","")
 }
 
 if commandType=12
 {
-draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J","SELECT")
-draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"","CANCEL") 
-draw_buttontext(320-8,240-32,8,"RESET",spr_commandbutton,0,"L","")
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"",commandL[1]) 
+draw_buttontext(320-8,240-32,8,commandL[12],spr_commandbutton,0,"L","")
 }
 
 }
-else
+else /////Controller
 {
 if commandType=0
 {
 ///Menu
-draw_buttontext(8,240-32-16,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
-draw_buttontext(8,240-32,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL")
+draw_buttontext(8,240-32-16,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
+draw_buttontext(8,240-32,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1])
 }
 
 if commandType=1
 {
 ///Menu
-draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
-draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
+draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
+draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1]) 
 }
 
 if commandType=2
 {
-draw_buttontext(8,8,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
-draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL")
+draw_buttontext(8,8,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
+draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1])
 if global.UnlockAltPal=1
-draw_buttontext(320-8,8,8,"PALETTE",spr_commandbutton,7+6*commandMul,"","")
+draw_buttontext(320-8,8,8,commandL[2],spr_commandbutton,7+6*commandMul,"","")
 
 }
 
 if commandType=3
 {
-draw_buttontext(320-8,240-16,8,"CANCEL",spr_commandbutton,5+6*commandMul,"","")
+draw_buttontext(320-8,240-16,8,commandL[1],spr_commandbutton,5+6*commandMul,"","")
  if hasVariants=1
  {
 //draw_text(224+8,0,"\nPRESS J TO SWITCH\nVARIATION ("+string(dataPal)+string("/")+string(dataPalMax)+")") //Name
- draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,4+6*commandMul,"","TO SWITCH VARIATION\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
+ draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,4+6*commandMul,"",commandL[3]+"\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
  }}
 
 if commandType=4
 {
-draw_buttontext(320-8,8,8,"SELECT",spr_commandbutton,4+6*commandMul,"","")
-draw_buttontext(320-8,8+16,8,"CANCEL",spr_commandbutton,5+6*commandMul,"","") 
+draw_buttontext(320-8,8,8,commandL[0],spr_commandbutton,4+6*commandMul,"","")
+draw_buttontext(320-8,8+16,8,commandL[1],spr_commandbutton,5+6*commandMul,"","") 
 }
 
 if commandType=5
 {
 ///Menu
-draw_buttontext(8,8+8,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
-draw_buttontext(320-8-16,8,8,"ZOOM",spr_commandbutton,4+6*commandMul,"","")
+draw_buttontext(8,8+8,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1]) 
+draw_buttontext(320-8-16,8,8,commandL[4],spr_commandbutton,4+6*commandMul,"","")
 draw_buttontext(320-8,8,8,"/",spr_commandbutton,6+6*commandMul,"","")
-draw_buttontext(320-8,8+16,8,"HIDE TEXT",spr_commandbutton,7+6*commandMul,"","")
-draw_buttontext(160-16,8,8,"PREV",spr_commandbutton,8+6*commandMul,"","")
-draw_buttontext(160+16,8,8,"",spr_commandbutton,9+6*commandMul,"","NEXT")
+draw_buttontext(320-8,8+16,8,commandL[5],spr_commandbutton,7+6*commandMul,"","")
+draw_buttontext(160-16,8,8,commandL[6],spr_commandbutton,8+6*commandMul,"","")
+draw_buttontext(160+16,8,8,"",spr_commandbutton,9+6*commandMul,"",commandL[7])
 }
 
 if commandType=6
@@ -210,42 +210,42 @@ if commandType=6
 ///Menu
 if songtext=1
 {
-draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
-draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
-draw_buttontext(320-8,240-32,8,"LOOP",spr_commandbutton,6+6*commandMul,"","")
-draw_buttontext(320-8,240-32+16,8,"HIDE",spr_commandbutton,7+6*commandMul,"","")
+draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
+draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1]) 
+draw_buttontext(320-8,240-32,8,commandL[8],spr_commandbutton,6+6*commandMul,"","")
+draw_buttontext(320-8,240-32+16,8,commandL[9],spr_commandbutton,7+6*commandMul,"","")
 }
 }
 
 if commandType=7
 {
-draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
+draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1]) 
 }
 
 if commandType=8
 {
 ///Menu
-draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
+draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
 }
 if commandType=9
 {
 
 ///Menu
-draw_buttontext(8,240-24-4,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
-draw_buttontext(8,240-8-4,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
+draw_buttontext(8,240-24-4,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
+draw_buttontext(8,240-8-4,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1]) 
 
 if pickedcolor=1
-draw_buttontext(45-32+32+64,184-16+8,8,"",spr_commandbutton,10+6*commandMul,"","HOLD TO APPLY\nTO ALL COLORS")
+draw_buttontext(45-32+32+64,184-16+8,8,"",spr_commandbutton,10+6*commandMul,"",commandL[11])
 
-draw_buttontext(320-8,240-24+4,8,"RESET",spr_commandbutton,7+6*commandMul,"","")
+draw_buttontext(320-8,240-24+4,8,commandL[12],spr_commandbutton,7+6*commandMul,"","")
 
-draw_buttontext(160-16,240-24+4,8,"COPY",spr_commandbutton,8+6*commandMul,"","")
-draw_buttontext(160+16,240-24+4,8,"",spr_commandbutton,9+6*commandMul,"","PASTE")
+draw_buttontext(160-16,240-24+4,8,commandL[13],spr_commandbutton,8+6*commandMul,"","")
+draw_buttontext(160+16,240-24+4,8,"",spr_commandbutton,9+6*commandMul,"",commandL[14])
 
 draw_buttontext(320-88,16,8,"",spr_commandbutton,10+6*commandMul,"","")
 draw_set_halign(fa_center)
-draw_text(320-88,16+12,"CHANGE CHARACTER")
-draw_text(160,8,"PALETTE EDITOR")
+draw_text(320-88,16+12,commandL[15])
+draw_text(160,8,commandL[16])
 draw_set_halign(fa_left)
 }
 
@@ -256,9 +256,9 @@ if commandType=10
 matrix_set(matrix_world,matrix_build(0,oControl.quakeFX,0,0,0,0,1,1,1))
 ///Slot Machine
 draw_set_halign(fa_left)
-var atext="BET"; var btext="SPIN";
+var atext=commandL[17]; var btext=commandL[18];
 
-if slotmachineplay=3 {atext="STOP"; btext="STOP";
+if slotmachineplay=3 {atext=commandL[19]; btext=commandL[19];
 	draw_buttontext(16,240-24-4,8,"",spr_commandbutton,4+6*commandMul,"",atext)
 	}
 else
@@ -283,7 +283,7 @@ matrix_set(matrix_world,matrix_build_identity())
 if commandType=11 ///For Controller Setup
 {
 
-draw_set_halign(fa_center) if Joystick=0 draw_text(40,32+16+8*15,"KEYBOARD") else draw_text(40,32+16+8*15,"JOYSTICK")
+draw_set_halign(fa_center) if Joystick=0 draw_text(40,32+16+8*15,commandL[20]) else draw_text(40,32+16+8*15,commandL[21])
 draw_buttontext(40-16,32+16+8*16+8,8,"",spr_commandbutton,8+6*commandMul,"","")
 draw_buttontext(40+16,32+16+8*16+8,8,"",spr_commandbutton,9+6*commandMul,"","")
 
@@ -332,9 +332,9 @@ draw_set_halign(fa_left)
 
 if commandType=12
 {
-draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"","SELECT")
-draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"","CANCEL") 
-draw_buttontext(320-8,240-32,8,"RESET",spr_commandbutton,7+6*commandMul,"","")
+draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
+draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1]) 
+draw_buttontext(320-8,240-32,8,commandL[12],spr_commandbutton,7+6*commandMul,"","")
 }
 
 }

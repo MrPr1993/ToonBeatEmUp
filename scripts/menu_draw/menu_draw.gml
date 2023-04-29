@@ -40,38 +40,38 @@ draw_rectangle(0,32-2+10*menuSelect,180,42-2+10*menuSelect,false)
 draw_set_alpha(1)
 draw_set_color(c_gray)
 MenuText="" menuLocked=0
-if menuSelect=0 {draw_set_color(c_white) MenuText="FIGHT IN ALL STAGES IN ARCADE MODE!" menuLocked=1}
-draw_text(32,32,"ARCADE MODE") draw_set_color(c_gray)
-if menuSelect=1 {draw_set_color(c_white) MenuText="SELECT ONE STAGE TO REPLAY!" menuLocked=1}
-draw_text(32+2,32+10,"STAGE SELECT") draw_set_color(c_gray)
-if menuSelect=2 {draw_set_color(c_white) MenuText="CHECK WHAT YOU EARNED IN THE GAME!" menuLocked=1}
-draw_text(32+4,32+20,"ACHIEVEMENTS") draw_set_color(c_gray)
-if menuSelect=3 {draw_set_color(c_white) MenuText="RECONFIGURE YOUR GAME!" menuLocked=1}
-draw_text(32+6,32+30,"SETTINGS") draw_set_color(c_gray)
+if menuSelect=0 {draw_set_color(c_white) MenuText=languagetext[0] menuLocked=1}
+draw_text(32,32,languagetext[1]) draw_set_color(c_gray)
+if menuSelect=1 {draw_set_color(c_white) MenuText=languagetext[2] menuLocked=1}
+draw_text(32+2,32+10,languagetext[3]) draw_set_color(c_gray)
+if menuSelect=2 {draw_set_color(c_white) MenuText=languagetext[4] menuLocked=1}
+draw_text(32+4,32+20,languagetext[5]) draw_set_color(c_gray)
+if menuSelect=3 {draw_set_color(c_white) MenuText=languagetext[6] menuLocked=1}
+draw_text(32+6,32+30,languagetext[7]) draw_set_color(c_gray)
 
-if menuSelect=4 {draw_set_color(c_white) MenuText="VISIT BETTY O'HARA AND BUY ITEMS!" menuLocked=1}
-draw_text(32+8,32+40,"SHOP") draw_set_color(c_gray)
-if menuSelect=5 {draw_set_color(c_white) MenuText="PRACTICE YOUR DIVA'S SKILLS!" menuLocked=1}
-draw_text(32+10,32+50,"TRAINING") draw_set_color(c_gray)
+if menuSelect=4 {draw_set_color(c_white) MenuText=languagetext[8] menuLocked=1}
+draw_text(32+8,32+40,languagetext[9]) draw_set_color(c_gray)
+if menuSelect=5 {draw_set_color(c_white) MenuText=languagetext[10] menuLocked=1}
+draw_text(32+10,32+50,languagetext[11]) draw_set_color(c_gray)
 
-if menuSelect=6 {draw_set_color(c_white) MenuText="PLAY SOME GAMES OR FIGHT EACH OTHER!" menuLocked=1}
-draw_text(32+12,32+60,"MINIGAMES & VS") draw_set_color(c_gray)
+if menuSelect=6 {draw_set_color(c_white) MenuText=languagetext[12] menuLocked=1}
+draw_text(32+12,32+60,languagetext[13]) draw_set_color(c_gray)
 
 
 if menuSelect=7
-{draw_set_color(c_white) MenuText="CHECK DATA OF THE CHARACTERS & STAGES!" menuLocked=global.UnlockCharacterData} if global.UnlockCharacterData=0 
-{draw_set_color(c_dkgray) draw_text(32+14,32+70,"???")} else draw_text(32+14,32+70,"PROFILE & INFO") draw_set_color(c_gray)
+{draw_set_color(c_white) MenuText=languagetext[14] menuLocked=global.UnlockCharacterData} if global.UnlockCharacterData=0 
+{draw_set_color(c_dkgray) draw_text(32+14,32+70,"???")} else draw_text(32+14,32+70,languagetext[15]) draw_set_color(c_gray)
 
-if menuSelect=8 {draw_set_color(c_white) MenuText="CHECK THE ARTWORK AND CONCEPT ART!" menuLocked=1}
-draw_text(32+16,32+80,"GALLERY") draw_set_color(c_gray)
+if menuSelect=8 {draw_set_color(c_white) MenuText=languagetext[16] menuLocked=1}
+draw_text(32+16,32+80,languagetext[17]) draw_set_color(c_gray)
 
-if menuSelect=9 {draw_set_color(c_white) MenuText="PLAY SONGS AND WATCH THE DIVAS DANCE!" menuLocked=global.UnlockSoundTest} if global.UnlockSoundTest=0
-{draw_set_color(c_dkgray) draw_text(32+18,32+90,"???")} else draw_text(32+18,32+90,"SOUND TEST")
+if menuSelect=9 {draw_set_color(c_white) MenuText=languagetext[18] menuLocked=global.UnlockSoundTest} if global.UnlockSoundTest=0
+{draw_set_color(c_dkgray) draw_text(32+18,32+90,"???")} else draw_text(32+18,32+90,languagetext[19])
 draw_set_color(c_gray)
-if menuSelect=10 {draw_set_color(c_white) MenuText="WATCH THE MORE CINEMATIC CUTSCENES!" menuLocked=global.UnlockMovies} if global.UnlockMovies=0
-{draw_set_color(c_dkgray) draw_text(32+20,32+100,"???")} else draw_text(32+20,32+100,"CUTSCENES") draw_set_color(c_gray)
-if menuSelect=11 {draw_set_color(c_white) MenuText="CHECK OUT WHO'S ON TOP!" menuLocked=1}
-draw_text(32+22,32+110,"HIGH SCORE") draw_set_color(c_gray)
+if menuSelect=10 {draw_set_color(c_white) MenuText=languagetext[20] menuLocked=global.UnlockMovies} if global.UnlockMovies=0
+{draw_set_color(c_dkgray) draw_text(32+20,32+100,"???")} else draw_text(32+20,32+100,languagetext[21]) draw_set_color(c_gray)
+if menuSelect=11 {draw_set_color(c_white) MenuText=languagetext[22] menuLocked=1}
+draw_text(32+22,32+110,languagetext[23]) draw_set_color(c_gray)
 
 if menuLocked=0 MenuText=""
 

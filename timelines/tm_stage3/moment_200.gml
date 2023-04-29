@@ -4,7 +4,7 @@ if oPlayer.ground=0
 {oViewTarget.x=0
 __view_set( e__VW.Object, 0, oViewTarget )
 oEnemySpawner.canFollow=0
-oControl.camMove=0
+oControl.camMove=1
 timeline_position-=1
 }
 else

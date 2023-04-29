@@ -13,3 +13,5 @@ controller_setup()
 canControl=1
 
 y1 = choose(0,80,160,240,320,400,480,560);
+
+language_check()

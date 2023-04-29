@@ -21,6 +21,19 @@ if keyboard_check(vk_shift)
 {if TextBeta=1 TextBeta=0 else TextBeta=1}
 }
 
+if betatest=1 if keyboard_check(vk_shift) and keyboard_check_pressed(ord("L"))
+{
+var langcheck=global.Language
+var langtext="ENGLISH"
+if global.Language=1 langtext="ESPANOL"
+
+global.Language=get_string("Change Language: "+string(langtext),global.Language)
+language_check();
+
+if instance_exists(oSettings) with oSettings language_check();
+if instance_exists(oCharacterInfo) with oCharacterInfo language_check();
+}
+
 if room!=rm_titlescreen and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay
 and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop

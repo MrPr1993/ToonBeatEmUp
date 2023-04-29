@@ -75,3 +75,4 @@ if !key_jump
 {pauseBuffer=10 game_pause()}
 }
 }
+

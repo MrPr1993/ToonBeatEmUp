@@ -24,12 +24,12 @@ key_right = keyboard_check(ord("D"));
 	
 	key_interact = global.LegacyMode[_controlno]*keyboard_check_pressed(ord(global.ControlInteract[_controlno]));
 	
-	key_X=keyboard_check_pressed(ord(global.ControlSuper[_controlno]))
-	key_Y=keyboard_check_pressed(ord(global.ControlShield[_controlno]))
+	key_X=keyboard_check_pressed(ord(global.ControlSuper[_controlno])) or keyboard_check_pressed(ord("J"))
+	key_Y=keyboard_check_pressed(ord(global.ControlShield[_controlno])) or keyboard_check_pressed(ord("K"))
 	key_A=keyboard_check_pressed(ord(global.ControlJump[_controlno]))  or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) ///Accept
-	key_B=keyboard_check_pressed(ord(global.ControlAttack[_controlno]))  ///Cancel
-	key_LB=keyboard_check_pressed(ord(global.ControlTaunt[_controlno]))
-	key_LT=keyboard_check_pressed(ord(global.ControlPunchback[_controlno]))
+	key_B=keyboard_check_pressed(ord(global.ControlAttack[_controlno]))   or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_escape)///Cancel
+	key_LB=keyboard_check_pressed(ord(global.ControlTaunt[_controlno])) or keyboard_check_pressed(ord("U"))
+	key_LT=keyboard_check_pressed(ord(global.ControlPunchback[_controlno])) or keyboard_check_pressed(ord("Y"))
 	key_RB=keyboard_check_pressed(ord("I"))
 	key_RT=keyboard_check_pressed(ord("O"))
 	
@@ -45,14 +45,14 @@ key_right = keyboard_check(ord("D"));
 	{
 	    if (gamepad_is_connected(i)) 
 	        {
-	key_A=gamepad_button_check_pressed(i,gp_face1)
-	key_B=gamepad_button_check_pressed(i,gp_face2)
-	key_X=gamepad_button_check_pressed(i,gp_face3)
-	key_Y=gamepad_button_check_pressed(i,gp_face4)
+	key_A=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("J"))
+	key_B=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("K"))
+	key_X=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) ///Accept
+	key_Y=gamepad_button_check_pressed(i,gp_face4) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_escape)///Cancel
 	key_LB=0
-	key_LT=gamepad_button_check_pressed(i,gp_shoulderl)
+	key_LT=gamepad_button_check_pressed(i,gp_shoulderl) or keyboard_check_pressed(ord("U"))
 	key_RB=0
-	key_RT=gamepad_button_check_pressed(i,gp_shoulderr)
+	key_RT=gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("Y"))
 	key_pause=0
 	
 	

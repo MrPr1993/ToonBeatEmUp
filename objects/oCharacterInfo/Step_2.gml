@@ -54,20 +54,20 @@ hasShadow=1;
 switch(dataRow)
 {
 case 1: ////Playable Characters
-dataRowMax=4 categoryNames="DIVAS"
+dataRowMax=4 categoryNames=languagetext[0]
 charinfo_divas()
 
 break;
 case 2: ////Enemy Characters - 48
-dataRowMax=36 categoryNames="ENEMIES" hasVariants=1
+dataRowMax=36 categoryNames=languagetext[1] hasVariants=1
 charinfo_enemies()
 break;
 case 3: ///Boss Characters
-dataRowMax=16 categoryNames="BOSSES" hasVariants=0
+dataRowMax=16 categoryNames=languagetext[2] hasVariants=0
 charinfo_bosses()
 break;
 case 4: ///Locations
-dataRowMax=19 categoryNames="LOCATIONS" hasVariants=0 hasShadow=0;
+dataRowMax=19 categoryNames=languagetext[3] hasVariants=0 hasShadow=0;
 charinfo_locations()
 break;
 }

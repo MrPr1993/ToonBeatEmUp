@@ -23,7 +23,7 @@ en4=instance_create_depth(1660+32,168+32,0,oSwing)
 
 en5=instance_create(1916,192,oEntryJump)
 with en5
-{z=-44 image_xscale=-1
+{z=-44 image_xscale=-1 rangeX=x-67
 sittingSpr=spr_wrestler_stand
 spawnFall=spr_wrestler_grab
 spawnEnemy=oWrestler

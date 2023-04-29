@@ -2531,6 +2531,7 @@
     {"id":{"name":"spr_wrestler_grab","path":"sprites/spr_wrestler_grab/spr_wrestler_grab.yy",},},
     {"id":{"name":"spr_wrestler_hit","path":"sprites/spr_wrestler_hit/spr_wrestler_hit.yy",},},
     {"id":{"name":"spr_wrestler_idle3","path":"sprites/spr_wrestler_idle3/spr_wrestler_idle3.yy",},},
+    {"id":{"name":"language_check","path":"scripts/language_check/language_check.yy",},},
     {"id":{"name":"spr_wrestler_move","path":"sprites/spr_wrestler_move/spr_wrestler_move.yy",},},
     {"id":{"name":"spr_wrestler_stand","path":"sprites/spr_wrestler_stand/spr_wrestler_stand.yy",},},
     {"id":{"name":"spr_zombieman_ooc","path":"sprites/spr_zombieman_ooc/spr_zombieman_ooc.yy",},},

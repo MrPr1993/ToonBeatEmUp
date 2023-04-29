@@ -153,3 +153,6 @@ customText=-1
 customText2=-1
 customText3=-1
 customText4=-1
+
+languagetext[40]=0; ///First 10 will be for the setting stuff
+language_check();

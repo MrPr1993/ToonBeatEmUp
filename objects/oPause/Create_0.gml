@@ -30,3 +30,6 @@ instance_deactivate_all(true)
 
 
 pauseBuffer=10
+
+commandL[30]=0
+language_check()

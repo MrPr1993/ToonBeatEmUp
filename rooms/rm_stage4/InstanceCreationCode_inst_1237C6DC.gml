@@ -1,0 +1,2 @@
+sprite_index=spr_bcameo45
+image_xscale=1

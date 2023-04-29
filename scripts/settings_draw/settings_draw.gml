@@ -14,31 +14,31 @@ draw_set_color(c_white) draw_set_alpha(1)
 draw_sprite_tiled(bg_testarea,0,0,0)
 
 draw_set_halign(fa_center)
-draw_text(160,8,"SETTINGS")
+draw_text(160,8,languagetext[0])
 if controlSettings=0
 {
 ///LEFT SIDE
 draw_set_halign(fa_right)
-draw_text(160,32,"MUSIC VOLUME ")
-draw_text(160,40,"SFX VOLUME ")
-draw_text(160,48+4,"ASPECT RATIO ")
-draw_text(160,56+4,"CRT STYLE ")
+draw_text(160,32,languagetext[1]+string(" "))
+draw_text(160,40,languagetext[2]+string(" "))
+draw_text(160,48+4,languagetext[3]+string(" "))
+draw_text(160,56+4,languagetext[4]+string(" "))
 if TVfx!=7 draw_set_color(c_dkgray)
-draw_text(160,56+4+8,"CRT DISTORT ") 
-draw_text(160,56+4+16,"CRT DISTORT LEVEL ")
-draw_text(160,56+4+24,"CRT BORDER LEVEL ")
+draw_text(160,56+4+8,languagetext[5]+string(" "))
+draw_text(160,56+4+16,languagetext[6]+string(" "))
+draw_text(160,56+4+24,languagetext[7]+string(" "))
 draw_set_color(c_white)
-draw_text(160,56+4+32,"COLOR SETTINGS ")
-draw_text(160,56+4+32+8,"SCREEN LAYER ")
-draw_text(160,64+8+48,"SCREEN SHAKE ")
-draw_text(160,72+8+48,"SCREEN FLASH ")
+draw_text(160,56+4+32,languagetext[8]+string(" "))
+draw_text(160,56+4+32+8,languagetext[9]+string(" "))
+draw_text(160,64+8+48,languagetext[10]+string(" "))
+draw_text(160,72+8+48,languagetext[11]+string(" "))
 if stagePause=1 draw_set_color(c_dkgray)
-draw_text(160,80+12+48,"STARTING LIVES ")
-draw_text(160,88+12+48,"CONTINUES ")
+draw_text(160,80+12+48,languagetext[12]+string(" "))
+draw_text(160,88+12+48,languagetext[13]+string(" "))
 draw_set_color(c_white)
 draw_text(160,96+24+48,"FPS ")
 draw_text(160,104+8+48," ")
-draw_text(160,112+8+48+16,"CONTROLLER ")
+draw_text(160,112+8+48+16,languagetext[14]+string(" "))
 
 ///RIGHT SIDE
 draw_set_halign(fa_left)
@@ -52,61 +52,61 @@ if instance_exists(oPause) TVfx=oPause.TVfx
 if instance_exists(oControl) TVfx=oControl.TVfx
 
 if TVfx=0
-draw_text(160,56+4," NONE")
+draw_text(160,56+4," "+string(languagetext[15]))
 else
 {if TVfx=7
-draw_text(160,56+4," CUSTOM")
+draw_text(160,56+4," "+string(languagetext[16]))
 else
-draw_text(160,56+4," MODE "+string(TVfx))
+draw_text(160,56+4," "+string(languagetext[17])+" "+string(TVfx))
 }
 if TVfx!=7 draw_set_color(c_dkgray)
 if global.CRTcustomDistort=1
-draw_text(160,56+4+8," ON") else draw_text(160,56+4+8," OFF")
+draw_text(160,56+4+8," "+string(languagetext[18])) else draw_text(160,56+4+8," "+string(languagetext[19]))
 draw_text(160,56+4+16," "+string( round(((global.CRTcustomDistortAM+4.01)*25)/2))+"%")
 if global.CRTcustomBorder=1
-draw_text(160,56+4+24," ON") else draw_text(160,56+4+24," OFF")
+draw_text(160,56+4+24," "+string(languagetext[18])) else draw_text(160,56+4+24," "+string(languagetext[19]))
 draw_set_color(c_white)
 
 if global.ColorMode=0
-draw_text(160,56+4+32," DEFAULT")
+draw_text(160,56+4+32," "+string(languagetext[20]))
 if global.ColorMode=1
-draw_text(160,56+4+32," MONOCHROME")
+draw_text(160,56+4+32," "+string(languagetext[21]))
 if global.ColorMode=2
-draw_text(160,56+4+32," SEPIA")
+draw_text(160,56+4+32," "+string(languagetext[22]))
 if global.ColorMode=3
-draw_text(160,56+4+32," 2-STRIP")
+draw_text(160,56+4+32," "+string(languagetext[23]))
 if global.ColorMode=4
-draw_text(160,56+4+32," ONE-COLOR")
+draw_text(160,56+4+32," "+string(languagetext[24]))
 if global.ColorMode=5
-draw_text(160,56+4+32," FASH")
+draw_text(160,56+4+32," "+string(languagetext[25]))
 
 if global.ArcadeScreen=0
-draw_text(160,56+4+32+8," NONE "+string(global.ArcadeScreen))
+draw_text(160,56+4+32+8," "+string(languagetext[15])+" "+string(global.ArcadeScreen))
 if global.ArcadeScreen=1
-draw_text(160,56+4+32+8," ARCADE "+string(global.ArcadeScreen))
+draw_text(160,56+4+32+8," "+string(languagetext[26])+" "+string(global.ArcadeScreen))
 if global.ArcadeScreen=2
-draw_text(160,56+4+32+8," ROOM "+string(global.ArcadeScreen))
+draw_text(160,56+4+32+8," "+string(languagetext[27])+" "+string(global.ArcadeScreen))
 
 if global.Screenshake=1
-draw_text(160,64+8+48," ON") else draw_text(160,64+8+48," OFF")
+draw_text(160,64+8+48," "+string(languagetext[18])) else draw_text(160,64+8+48," "+string(languagetext[19]))
 if global.Screenflash=1
-draw_text(160,72+8+48," ON") else draw_text(160,72+8+48," OFF")
+draw_text(160,72+8+48," "+string(languagetext[18])) else draw_text(160,72+8+48," "+string(languagetext[19]))
 
 if stagePause=1 draw_set_color(c_dkgray)
 draw_text(160,80+12+48," "+string(global.LifeStart))
 if global.ContinueStart=-1
-draw_text(160,88+12+48," INFINITE")
+draw_text(160,88+12+48," "+string(languagetext[28]))
 else
 draw_text(160,88+12+48," "+string(global.ContinueStart))
 draw_set_color(c_white)
 
 if global.fpsMode=0
-draw_text(160,96+24+48," "+string(" OFF"))
+draw_text(160,96+24+48," "+string(" "+string(languagetext[19])))
 else
-draw_text(160,96+24+48," "+string(" ON"))
+draw_text(160,96+24+48," "+string(" "+string(languagetext[18])))
 
 draw_text(160,104+8+48," ")
-draw_text(160,112+8+48+16," SETUP")
+draw_text(160,112+8+48+16," "+string(languagetext[29]))
 
 //STAR
 if menuSelect=0 StarY=0

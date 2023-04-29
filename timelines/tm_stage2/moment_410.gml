@@ -31,7 +31,7 @@ enemytype0=oEnemy1B turn0=-1
 enemyMax=1
 }
 
-spawner_followset("WaveSet1",0,1618,1)
+spawner_followset("WaveSet1",0,1618+4,1)
 
 }
 else

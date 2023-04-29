@@ -15,7 +15,7 @@ oControl.camMove=1
 with chairen
 {sprite_index=spr_sneak_chair2 image_speed=0.5}
 with oControl
-spawner_followset("WaveSet1",0,1298,1)
+spawner_followset("WaveSet1",0,1298+4,1)
 
 with fakeen
 {

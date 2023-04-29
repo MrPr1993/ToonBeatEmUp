@@ -467,7 +467,7 @@ enemyShowTime=0
 if !variable_global_exists("timefont")
 {
 global.timefont=font_add_sprite_ext(spr_timefont, "0123456789", false, 0);
-global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,&△◯╳◻", false, 0);
+global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,&△◯╳◻Ñ¡ÁÉÍÓÚ", false, 0);
 }
 
 if !variable_global_exists("ScreenSize")
@@ -952,3 +952,5 @@ PlayerScore=global.P4Score my_pal_sprite=global.p4Pals
 if room=rm_paletteeditor
 instance_create_depth(0,0,-1,oPaletteEditor)
 
+languagetext[40]=0; ///First 10 will be for the setting stuff
+language_check();
