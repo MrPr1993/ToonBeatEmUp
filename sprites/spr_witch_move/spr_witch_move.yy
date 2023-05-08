@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_witch_move",
-  "bbox_bottom": 107,
+  "bbox_bottom": 106,
   "bbox_left": 1,
   "bbox_right": 61,
   "bbox_top": 4,
@@ -25,7 +25,7 @@
   "height": 109,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f4ef7694-e734-4c11-95d0-fdbc12bec77c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"930e809a-0daf-444b-8b6f-a77e8ceaa0c9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 9,

@@ -11,6 +11,8 @@ points=100
 
 rangeAtk=100
 
+idlestyle=1
+
 OneAttack=2
 
 hp=2
@@ -32,8 +34,8 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_witch_move
-JumpSpr2=spr_witch_move
+JumpSpr=spr_witch_jump
+JumpSpr2=spr_witch_jump
 ThrownSpr=spr_witch_hit
 FlatSpr=spr_witch_flat
 ShockSpr=spr_witch_elec
@@ -43,3 +45,10 @@ FrozenSpr=spr_witch_frozen
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
+
+
+if oControl.betatest=1
+if keyboard_check(vk_shift)
+{
+canmove=0 anim=100 animFrame=0;
+}
