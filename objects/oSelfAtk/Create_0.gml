@@ -35,6 +35,7 @@ flashY=0
 flashZ=0
 comboBreak=0
 canSuper=0
+
 ////This wil be use to indicate who the player get hit by if the selfatk comes from an enemy.
 selfsource=-1
 hitCheck=0

@@ -64,14 +64,16 @@ if enemySpawn=6 {enemySpawnName="3-b Hathor" spawnUnit=oPharaoh}
 if enemySpawn=7 {enemySpawnName="3-c Oni Sister" spawnUnit=oOni}
 if enemySpawn=8 {enemySpawnName="4-a Swamp Witch" spawnUnit=oWitch}
 if enemySpawn=9 {enemySpawnName="4-b Duck" spawnUnit=oDuckBoss}
-if enemySpawn=10 {enemySpawnName="4-c Seaweed" spawnUnit=oSeaweed}
-if enemySpawn=11 {enemySpawnName="5-a ???" spawnUnit=oIceGun} ////Alien
-if enemySpawn=12 {enemySpawnName="5-b Merman Prince" spawnUnit=oPrince}
-if enemySpawn=13 {enemySpawnName="5-c ???" spawnUnit=oIceGun}//?Genie
-if enemySpawn=14 {enemySpawnName="6-a ???" spawnUnit=oIceGun}//?Genie
-if enemySpawn=15 {enemySpawnName="6-b Plant Princess" spawnUnit=oPlantPrincess}//?Genie
-if enemySpawn=16 {enemySpawnName="6-c ???" spawnUnit=oIceGun}//?Genie
-if enemySpawn=17 {enemySpawnName="7- ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=10 {enemySpawnName="4-cb Octopus" spawnUnit=oOctopus}
+if enemySpawn=11 {enemySpawnName="4-c Seaweed" spawnUnit=oSeaweed}
+if enemySpawn=12 {enemySpawnName="5-a ???" spawnUnit=oIceGun} ////Alien
+if enemySpawn=13 {enemySpawnName="4-c Submarine" spawnUnit=oBomb} ///Submarine
+if enemySpawn=14 {enemySpawnName="5-b Merman Prince" spawnUnit=oPrince}
+if enemySpawn=15 {enemySpawnName="5-c ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=16 {enemySpawnName="6-a ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=17 {enemySpawnName="6-b Plant Princess" spawnUnit=oPlantPrincess}//?Genie
+if enemySpawn=18 {enemySpawnName="6-c ???" spawnUnit=oIceGun}//?Genie
+if enemySpawn=19 {enemySpawnName="7- ???" spawnUnit=oIceGun}//?Genie
 if enemySpawn=20 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
 
 }
