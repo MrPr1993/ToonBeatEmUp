@@ -43,3 +43,5 @@ eyeHit=60
 	animFrame=0
 	anim=40
 	}
+	
+	if hp=0 or hp<=0 {animFrame=0 anim=9999 canmove=0 dead=1 selfatk.atk=0}

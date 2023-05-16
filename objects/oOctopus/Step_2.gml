@@ -2,11 +2,54 @@
 // You can write your code in this editor
 depth=-y
 
-ground=1
-z=0;
+selfatk.SourceX=x
+
 
 wobbleX=lerp(wobbleX,1,0.1)
 wobbleY=lerp(wobbleY,1,0.1)
+
+if anim=9999 ////Dead
+{if animFrame=0 {sprite_index=spr_octopus_dead specialcheck0=1 specialcheck1=0}
+selfatk.atk=0
+wobbleX=specialcheck0 wobbleY=wobbleX
+
+if animFrame<1
+{
+if specialcheck1=0 {dust_make(x+choose(-random(32),random(32)),y+4,z-random(100),0,0,0) specialcheck1=4}
+else specialcheck1-=1
+
+ground=1
+z=0;	
+animFrame+=0.005 if image_index>2 image_index=0 else image_index+=0.25	
+	}
+else
+if animFrame=clamp(animFrame,1,2)
+{image_index=0 lockPos=0 z=0
+if specialcheck0>0.25 specialcheck0-=0.05 else {wobbleX=1 wobbleY=1 sprite_index=spr_octopus_tiny solid=false; animFrame+=0.1 ground=0}
+
+if specialcheck1=0 {dust_make(x+choose(-random(32*specialcheck0),random(32*specialcheck0)),y+4,z-random(100*specialcheck0),0,0,0) specialcheck1=4}
+else specialcheck1-=1
+}
+if animFrame>2
+{
+if x>__view_get( e__VW.XView, 0 )+320+64 instance_destroy()
+	
+wobbleX=1 wobbleY=1 if z>0 {ground=1}
+	animFrame+=0.1 if animFrame>3 if ground {image_index=0 ground=0 zSpeed-=6 animFrame=2.1}
+else {x+=4 image_index=1 zSpeed+=0.45
+	
+	}
+}
+}
+else{
+ground=1
+z=0;
+}
+
+
+if hp=0 or hp<=0 or dead=1 if anim!=9999
+{animFrame=0 anim=9999 dead=1 canmove=0 selfatk.atk=0}
+
 
 if anim=0
 {
@@ -22,7 +65,7 @@ if anim=4 ///Replace the usual hit flying animations with this
 or anim=5
 or anim=6
 or anim=7
-{ground=1
+{ground=1 anim=4
 sprite_index=spr_octopus_hit	
 animFrame+=0.1
 
@@ -155,13 +198,11 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	
 	
 	if anim=11 ///Octo Spin
-	{if animFrame=0 {specialcheck0=0;}
+	{if animFrame=0 {specialcheck5=0;}
 	sprite_index=spr_octopus_spin
 
-
-
 	selfatk.x=x
-	selfatk.image_xscale=3
+	selfatk.image_xscale=4.5
 	selfatk.image_yscale=2
 	selfatk.height=128
 	selfatk.damage=0.2 selfatk.MoveType=1
@@ -173,13 +214,36 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	frame_set(4,4,0.25)
 	frame_set(5,5,0.25)
 	frame_set(6,6,0.25)
-	frame_set(7,7,0.25) if animFrame=7.5 {if specialcheck0!=5 {specialcheck0+=1 animFrame=2}}
+	frame_set(7,7,0.25) if animFrame=7.5 {if specialcheck5!=5 {specialcheck5+=1 animFrame=2}}
 	frame_set(8,1,0.1) 
 	frame_set(9,0,0.1)
 	
 	if animFrame=clamp(animFrame,2,8) atk=1 else atk=0 {}
 	
 	if animFrame>9.5 {anim=0 canmove=1 animFrame=0}
+	
+	}
+	
+	///Intro
+	if anim=66{immune=1
+sprite_index=spr_octopus_intro
+frame_set(0,0,0.1) if animFrame=1 {oControl.quakeFXTime=10}
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.25)
+frame_set(4,4,0.25)
+frame_set(5,5,0.05)
+frame_set(6,6,0.2)
+frame_set(7,7,0.2)
+frame_set(8,8,0.2)
+frame_set(9,9,0.2)
+frame_set(10,10,0.025)
+frame_set(11,9,0.2)
+frame_set(12,8,0.2)
+frame_set(13,7,0.2)
+frame_set(14,5,0.1)
+if animFrame>14.5
+{immune=0 anim=0 canmove=1}
 	
 	}
 	

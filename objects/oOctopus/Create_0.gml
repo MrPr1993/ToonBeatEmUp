@@ -69,3 +69,9 @@ tent1=-1;
 tent2=-1;
 tent3=-1;
 tent4=-1;
+
+
+if oControl.betatest=1 if keyboard_check(vk_shift)
+{immune=1
+anim=66 canmove=0
+}

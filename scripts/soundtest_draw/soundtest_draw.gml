@@ -81,8 +81,8 @@ playingloop=1
 
 
 
-if -key_left_pressed if songno=0 songno=30 else songno-=1
-if key_right_pressed if songno=30 songno=0 else songno+=1
+if -key_left_pressed if songno=0 songno=47 else songno-=1
+if key_right_pressed if songno=47 songno=0 else songno+=1
 
 if songno=0 {songname="OPENING FILM" playingSound=msc_intro songcomposer="JONORSI"}
 if songno=1 {songname="DOWNTOWN BEAT" playingSound=msc_stage1 songcomposer="JONORSI"}
@@ -108,9 +108,34 @@ if songno=20 {songname="BADDY BADDIES JAM" playingSound=msc_boss2 songcomposer="
 if songno=21 {songname="QUICK VILE MELODY" playingSound=msc_boss3 songcomposer="EVADER MUSIC"}//X
 if songno=22 {songname="DANGEROUS OF TONES" playingSound=msc_boss4 songcomposer="EVADER MUSIC"}//X
 if songno=23 {songname="DASTARDLY SUBJECT" playingSound=msc_finalboss1 songcomposer="EVADER MUSIC"}
-if songno=24 {songname="PIECE OF THE NIGHT" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}
+if songno=24 {songname="PIECE OF THE NIGHT" playingSound=msc_finalboss2 songcomposer="EVADER MUSIC"}
 if songno=25 {songname="RISKY REVIVAL" playingSound=msc_countdown songcomposer="JONORSI"}
-if songno=26 {songname="SHOW'S OVER" playingSound=msc_gameover songcomposer="JONORSI"}
+if songno=26 {songname="SHOW'S CANCELLED" playingSound=msc_gameover songcomposer="JONORSI"}
+if songno=27 {songname="GOOD SHOW" playingSound=msc_stageclear songcomposer="JONORSI"}
+if songno=28 {songname="MARVELOUS FINALE" playingSound=msc_finalbossclear songcomposer="EVADER MUSIC"}
+if songno=29 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=30 {songname="CONCENTRATING BREAK" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+///
+if songno=31 {songname="MAIN LOBBY" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=32 {songname="TONIGHT'S SHOW" playingSound=msc_charselect songcomposer="JONORSI"}
+if songno=33 {songname="LITTLE IRISH SHOP" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=34 {songname="PICKING INFORMATION" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=35 {songname="STAGE PREPARATIONS" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=36 {songname="TRAININ' GROUNDS" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=37 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=38 {songname="CALM FISHER" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=39 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=40 {songname="LUCKY GAMBLING" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=41 {songname="CONCENTRATING BREAK" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=42 {songname="ODD TIME" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=43 {songname="FRIGHT MOMENT" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=44 {songname="MYSTERY INVESTIGATION" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=45 {songname="ACTION SCENE" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=46 {songname="ENCORE END" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=47 {songname="OUT OF PLACE" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+
+
+
 }
 
 if soundSelect=2

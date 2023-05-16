@@ -60,6 +60,17 @@ frame_set(4,4,0.05)
 frame_set(5,3,0.25) if animFrame>5 {animFrame=0 anim=4}
 }
 
+if targetID!=-1
+if anim!=6666
+{
+with targetID
+{
+animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+throw_quickrelease() ground=0 zSpeed=-2 sentflying=-1*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
+canmove=1 hurt=0 recovery=30
+}
+}
+
 if anim=6666 ///Grab Enemy
 {canBounce=0
 isThrow=1 //hud_show()
