@@ -4,6 +4,7 @@
   "name": "oSeaweed",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -35,8 +36,8 @@
     "path": "sprites/spr_seaweed_stand/spr_seaweed_stand.yy",
   },
   "spriteMaskId": {
-    "name": "mask_small",
-    "path": "sprites/mask_small/mask_small.yy",
+    "name": "spr_shadow3",
+    "path": "sprites/spr_shadow3/spr_shadow3.yy",
   },
   "visible": true,
 }

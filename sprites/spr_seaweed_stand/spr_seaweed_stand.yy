@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_seaweed_stand",
   "bbox_bottom": 127,
-  "bbox_left": 2,
-  "bbox_right": 93,
+  "bbox_left": 1,
+  "bbox_right": 94,
   "bbox_top": 4,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"10a0e0c2-0915-4d78-a942-8236e1b0b67f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"94025dd1-80cd-47da-b427-0787e19d362b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aaa1e326-35a0-4be5-a063-82c6cb4060cb",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"10a0e0c2-0915-4d78-a942-8236e1b0b67f","path":"sprites/spr_seaweed_stand/spr_seaweed_stand.yy",},},},"Disabled":false,"id":"c8b75cb4-a378-4ccb-a78a-4a4ef48633df","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"94025dd1-80cd-47da-b427-0787e19d362b","path":"sprites/spr_seaweed_stand/spr_seaweed_stand.yy",},},},"Disabled":false,"id":"d710c6e9-51e9-41a5-a879-ba689e0a67b1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aaa1e326-35a0-4be5-a063-82c6cb4060cb","path":"sprites/spr_seaweed_stand/spr_seaweed_stand.yy",},},},"Disabled":false,"id":"d2b93556-bdb9-4c85-b31b-23ee60cfa5ab","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
