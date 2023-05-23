@@ -9,14 +9,18 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-rangeAtk=100
+idlestyle=1
+
+rangeAtk=320
 
 OneAttack=2
 
 hp=2
 maxhp=2
 
-height=70
+isHeavy=1
+
+height=110
 
 specialFX=0
 
