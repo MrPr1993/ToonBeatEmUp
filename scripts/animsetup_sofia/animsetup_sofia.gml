@@ -511,7 +511,8 @@ weaponanim(weaponspr,weaponIndex,-31,-30,90*image_xscale,weaponcolor)
 
 	if anim=17 ///Stand Special Attack
 	{selfatk.NoKnock=1 dizzyAtk=0
-	if animFrame=0 {PlaySound(snd_swing2) PlaySound(snd_sofia5)}
+	if animFrame=0 {PlaySound(snd_sofia5)
+		}
 
 
 
@@ -531,9 +532,17 @@ selfatk.height=128
 	sprite_index=spr_sofia_special1
 	image_index+=0.1 image_speed=0
 	 if animFrame=clamp(animFrame,0,0.9)
-	 {image_index=animFrame animFrame+=0.5}
+	 {image_index+=0.5  animFrame+=0.5}
 	  if animFrame=clamp(animFrame,1,8.9)
-	   {animFrame+=0.1 atk=1 if image_index>9 image_index=1 image_index+=0.4}
+	   {
+		  if animFrame=1
+		  {flashFX(x,y+1,z-1,spr_sofia_specialwind,0,0.5,0,image_xscale,1,c_white,1) oControl.quakeFXTime=10 PlaySound(snd_swing4)}
+		   
+		   animFrame+=0.1 atk=1 
+		   if animFrame<5 image_index+=1 else image_index+=0.4
+		   if image_index>9 image_index=1 
+		   z-=0.45 zSpeed=0
+		   }
 	    else atk=0
 	if animFrame>4.9
 	animFrame+=0.5
@@ -572,7 +581,14 @@ selfatk.height=128
 	{
 	if !ground
 	{animFrame=3 sentflying=4*image_xscale zSpeed=4
-	atk=1 sprite_index=spr_sofia_special2 image_index+=0.5
+	atk=1 
+	if sprite_index!=spr_sofia_special2
+	{sprite_index=spr_sofia_special2
+			 
+		  flashFX(x,y,z,spr_sofia_specialwind2,0,0.5,0,image_xscale,1,c_white,1)
+		
+	}
+	image_index+=0.5
 	}
 	else
 	{atk=0

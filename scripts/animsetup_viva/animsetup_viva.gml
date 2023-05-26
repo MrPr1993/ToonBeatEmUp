@@ -485,7 +485,7 @@ selfatk.recovery=30
 
 	if anim=17 ///Stand Special Attack
 	{selfatk.NoKnock=1 dizzyAtk=0
-	if animFrame=0 {PlaySound(snd_swing2) PlaySound(snd_viva5)
+	if animFrame=0 {PlaySound(snd_viva5)
 	   } 
 
 	weaponAttack=0
@@ -498,18 +498,24 @@ selfatk.recovery=30
 	selfatk.image_xscale=3
 	selfatk.image_yscale=2
 	selfatk.height=128
+	
 
 
-
-	damage=0.2 targetHeight=3
+	 targetHeight=3
 	selfatk.recovery=60
-	hit=0 MoveType=2
-	sprite_index=spr_viva_special1
+	hit=0 
+	if animFrame=0 {sprite_index=spr_viva_special1 damage=0.2 MoveType=3
+		
+		}
+		if sprite_index=spr_viva_special1 {selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
+
+		
 	image_index+=0.1 image_speed=0
 	 if animFrame=clamp(animFrame,0,0.9)
 	 {image_index=animFrame animFrame+=0.5}
+	 if animFrame=1 {flashFX(x,y-1,z+1,spr_lightingbolt,0,0.5,0,1,1,c_white,1) oControl.quakeFXTime=10 PlaySound(snd_thunder)}
 	  if animFrame=clamp(animFrame,1,8.9)
-	   {animFrame+=0.1 atk=1 if image_index>8.6 image_index=1 image_index+=0.4}
+	   {animFrame+=0.1 atk=1 if image_index>8.6 {image_index=1 sprite_index=spr_viva_special1b MoveType=2 damage=0.15} image_index+=0.4 }
 	    else atk=0
 	if animFrame>4.9
 	animFrame+=0.5
@@ -554,11 +560,13 @@ selfatk.recovery=30
 	 or animFrame=clamp(animFrame,0+8+4,3.9+8+4)
 	 or animFrame=clamp(animFrame,0+16+4,3.9+16+4)
 	  or animFrame=clamp(animFrame,0+24+4,3.9+24+4)
-	{damage=0.02 sprite_index=spr_viva_attack4 targetHeight=2 MoveType=0}
+	{damage=0.02 sprite_index=spr_viva_attack4 targetHeight=2 MoveType=0
+		//if animFrame=clamp(animFrame,0+24+4,3.9+24+4) sprite_index=spr_viva_special2b
+		}
 	image_index=animFrame image_speed=0 
 
 	    if animFrame=clamp(animFrame,0+30,3.9+30)
-	{damage=0.08 sprite_index=spr_viva_attack4 targetHeight=2 MoveType=1}
+	{damage=0.08 sprite_index=spr_viva_special2b targetHeight=2 MoveType=3 }
 
 	 if animFrame=clamp(animFrame,1,1.9)
 	  or animFrame=clamp(animFrame,1+4,1.9+4)
@@ -571,7 +579,15 @@ selfatk.recovery=30
 	            or animFrame=clamp(animFrame,1+30,1.9+30)
 	   atk=1 else atk=0
 	if animFrame=clamp(animFrame,0,31)
-	animFrame+=0.5 else animFrame+=0.1 if animFrame>32.5 {powlock=0 hurt=0 atk=0 canmove=1 hit=0
+	animFrame+=0.5 else animFrame+=0.1
+	if animFrame=30 {
+			selfatk.HitForce=-4  selfatk.HitForceZ=-4
+		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66,spr_lightingbolt,0,0.5,0,1,1,c_white,1)
+		selfatk.MoveType=3
+		}
+	if sprite_index=spr_viva_special2b {selfatk.MoveType=3 selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
+
+	if animFrame>32.5 {powlock=0 hurt=0 atk=0 canmove=1 hit=0
 	if powcheck=0
 	hp-=powhp else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01

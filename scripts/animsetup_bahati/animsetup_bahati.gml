@@ -540,7 +540,12 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 
 	if anim=17 ///Stand Special Attack
 	{selfatk.NoKnock=1 dizzyAtk=0
-	if animFrame=0 {PlaySound(snd_swing2) PlaySound(snd_bahati12)}
+	if animFrame=0 {PlaySound(snd_hitground) PlaySound(snd_bahati12)
+		
+		flashFX(x,y+1,z-1,spr_bahati_special1b,0,0.5,0,image_xscale,image_yscale,image_blend,image_alpha)
+	oControl.quakeFXTime=10
+
+		}
 
 	weaponAttack=0
 
@@ -562,8 +567,39 @@ selfatk.height=128
 	  if animFrame=clamp(animFrame,1,8.9)
 	   {animFrame+=0.1 atk=1 if image_index>8 image_index=0 image_index+=0.4}
 	    else atk=0
+		
+			if animFrame=1.2
+	{
+							iceFX=0;
+								
+		repeat(8)
+{
+part=instance_create_depth(x,y+1,depth,oDisappearPart)
+if iceFX=0 or iceFX=1 or iceFX=2 or iceFX=3 part.x=x
+if iceFX=4 or iceFX=5 or iceFX=6 or iceFX=7 part.x=x
+if iceFX=0 or iceFX=4 part.z=z-16
+if iceFX=1 or iceFX=5 part.z=z-48
+if iceFX=2 or iceFX=6 part.z=z-64
+if iceFX=3 or iceFX=7 part.z=z-80
+part.sprite_index=spr_bahati_rock3
+if iceFX <4
+part.hspeed=choose(-1,-2,-1.5)
+else
+part.hspeed=choose(1,2,1.5)
+part.image_index=choose(0,1,2) part.image_speed=0
+part.spdZ=-4 part.image_blend=image_blend
+part.disappeartime=random_range(16,24)
+part.my_pal_sprite=my_pal_sprite
+part.current_pal=current_pal
+	iceFX+=1;
+} iceFX=0;
+	}
+		
 	if animFrame>4.9
 	animFrame+=0.5
+	
+	
+
 
 	  if animFrame>9.5 {hurt=0 atk=0 canmove=1 hit=0
 	  if powcheck=0 hp-=powhp else {pow=0 powlock=0}
@@ -586,11 +622,43 @@ selfatk.height=128
 	//atkAddX=-32 selfatk.image_xscale=3 selfatk.image_yscale=1.5
 
 	 if animFrame=0 PlaySound(snd_bahati4)
+if animFrame=0
+	{
+	flashFX(x,y+1,z-1,spr_bahati_special1b,0,0.5,0,image_xscale,image_yscale,image_blend,image_alpha)
 
+	}
 	selfatk.recovery=4
 	hit=0 
 
-	frame_set(0,0,0.2)
+	frame_set(0,0,0.2) if animFrame=1
+	{
+		oControl.quakeFXTime=10 PlaySound(snd_hitground)
+		
+								iceFX=0;
+								
+		repeat(6)
+{
+part=instance_create_depth(x,y+1,depth,oDisappearPart)
+if iceFX=0 or iceFX=1 or iceFX=2 or iceFX=3 part.x=x
+if iceFX=4 or iceFX=5 or iceFX=6 or iceFX=7 part.x=x
+if iceFX=0 or iceFX=4 part.z=z-16
+if iceFX=1 or iceFX=5 part.z=z-48
+if iceFX=2 or iceFX=6 part.z=z-64
+if iceFX=3 or iceFX=7 part.z=z-80
+part.sprite_index=spr_bahati_rock3
+if iceFX <4
+part.hspeed=choose(1,2,1.5)
+else
+part.hspeed=choose(1,2,1.5)
+part.image_index=choose(0,1,2) part.image_speed=0
+part.spdZ=-4 part.image_blend=image_blend
+part.disappeartime=random_range(16,24)
+part.my_pal_sprite=my_pal_sprite
+part.current_pal=current_pal
+	iceFX+=1;
+} iceFX=0;	
+	
+	}
 	frame_set(1,1,0.05)
 	frame_set(2,2,0.2)
 	frame_set(3,3,0.2)

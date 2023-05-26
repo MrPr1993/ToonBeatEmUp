@@ -10,7 +10,7 @@
   "bitRate": 192,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.423005,
+  "duration": 0.418005,
   "parent": {
     "name": "General",
     "path": "folders/f - Sounds/General.yy",

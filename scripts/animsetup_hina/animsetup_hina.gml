@@ -475,7 +475,7 @@ weaponanim(weaponspr,weaponIndex,32,-70,90*image_xscale,weaponcolor)
 
 	if anim=17 ///Stand Special Attack
 	{selfatk.NoKnock=1 dizzyAtk=0
-	if animFrame=0 {PlaySound(snd_swing2) PlaySound(snd_hina4)}
+	if animFrame=0 { PlaySound(snd_hina4)}
 
 
 
@@ -489,23 +489,46 @@ weaponanim(weaponspr,weaponIndex,32,-70,90*image_xscale,weaponcolor)
 	selfatk.image_xscale=3
 	selfatk.image_yscale=2
 selfatk.height=128
-	damage=0.2 targetHeight=3
+	damage=0.15 targetHeight=3
 	selfatk.recovery=60
 	hit=0 MoveType=2
 	sprite_index=spr_hina_special1
 	image_index+=0.1 image_speed=0
+	
+	if animFrame=0 {specialcheck4=0}
+	
+	if animFrame<1.5
+	{MoveType=5
+	HitForce=-4
+	HitForceZ=-4
+	}
+
+	
 	 if animFrame=clamp(animFrame,0,0.9)
 	 {image_index=animFrame animFrame+=0.5}
+	 
+	 			if animFrame=1
+		{
+		flame=instance_create_depth(x,y+1,depth,oFlashFX) flame.image_xscale=image_xscale
+	with flame
+	{z=z-1 image_speed=0.5 sprite_index=spr_hina_specialfire alarm[0]=0 oControl.quakeFXTime=10 PlaySound(snd_flame)}
+		}
+	 
 	  if animFrame=clamp(animFrame,1,8.9)
 	   {animFrame+=0.1 atk=1 if image_index>9 image_index=1 image_index+=0.4}
 	    else atk=0
 	if animFrame>4.9
 	animFrame+=0.5
+	
+
 
 	  if animFrame>9.5 {hurt=0 atk=0 canmove=1 hit=0
 	  if powcheck=0 hp-=powhp else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
 	}
+	
+	
+	
 	}
 
 	///Special Attacks
