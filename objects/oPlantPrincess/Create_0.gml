@@ -1,6 +1,6 @@
 enemy_data()
 
-name="PRINCESS"
+name="P.PLANTA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=33
 
@@ -13,10 +13,14 @@ rangeAtk=100
 
 OneAttack=2
 
+isHeavy=1
+
+
+
 hp=2
 maxhp=2
 
-height=70
+height=120
 
 specialFX=0
 

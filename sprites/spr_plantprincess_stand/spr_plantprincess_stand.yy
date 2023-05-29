@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "spr_plantprincess_stand",
   "bbox_bottom": 127,
-  "bbox_left": 2,
+  "bbox_left": 0,
   "bbox_right": 61,
   "bbox_top": 3,
   "bboxMode": 0,
@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb32faf7-cc04-42dd-bb84-e0f78ac21f00",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"94932972-2c9f-4939-972c-3253e82149d1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"64fcef3e-b968-4440-9a8a-b9bfba2b038d",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fb32faf7-cc04-42dd-bb84-e0f78ac21f00","path":"sprites/spr_plantprincess_stand/spr_plantprincess_stand.yy",},},},"Disabled":false,"id":"74c2224e-933c-480d-835b-8940b4548c17","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"94932972-2c9f-4939-972c-3253e82149d1","path":"sprites/spr_plantprincess_stand/spr_plantprincess_stand.yy",},},},"Disabled":false,"id":"d171230b-2bd9-406c-93d9-11f3b56a74ec","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"64fcef3e-b968-4440-9a8a-b9bfba2b038d","path":"sprites/spr_plantprincess_stand/spr_plantprincess_stand.yy",},},},"Disabled":false,"id":"d8d17f59-5e7e-4fb4-b933-0ee3151a7c83","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
