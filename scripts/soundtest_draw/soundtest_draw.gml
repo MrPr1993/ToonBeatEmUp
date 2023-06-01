@@ -116,11 +116,11 @@ if songno=28 {songname="MARVELOUS FINALE" playingSound=msc_finalbossclear songco
 if songno=29 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
 if songno=30 {songname="CONCENTRATING BREAK" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 ///
-if songno=31 {songname="MAIN LOBBY" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=31 {songname="MAIN LOBBY" playingSound=msc_mainmenu songcomposer="EVADER MUSIC"}
 if songno=32 {songname="TONIGHT'S SHOW" playingSound=msc_charselect songcomposer="JONORSI"}
-if songno=33 {songname="LITTLE IRISH SHOP" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=33 {songname="LITTLE IRISH SHOP" playingSound=msc_gallery songcomposer="EVADER MUSIC"}
 if songno=34 {songname="PICKING INFORMATION" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
-if songno=35 {songname="STAGE PREPARATIONS" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=35 {songname="STAGE PREPARATIONS" playingSound=msc_stageselect songcomposer="EVADER MUSIC"}
 if songno=36 {songname="TRAININ' GROUNDS" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=37 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
 if songno=38 {songname="CALM FISHER" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}

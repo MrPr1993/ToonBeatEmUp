@@ -1,1 +1,1 @@
-musicplaystart(-1)
+musicplaystart(msc_stageselect)
