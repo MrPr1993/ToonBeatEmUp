@@ -21,6 +21,15 @@ ini_write_real("SETTINGS", "FLASH", global.Screenflash)
 ini_write_real("SETTINGS", "LIFE", global.LifeStart)
 ini_write_real("SETTINGS", "CONTINUES", global.ContinueStart)
 ini_write_real("SETTINGS", "FPS", global.fpsMode)
+
+globalcontrols_save(1)
+globalcontrols_save(2)
+globalcontrols_save(3)
+globalcontrols_save(4)
+
+
 ini_close()
+
+
 }
 

@@ -130,7 +130,7 @@ if menuSelect=12	{if global.ContinueStart=99 global.ContinueStart=-1 else global
 	if menuSelect=13	if global.fpsMode=0 global.fpsMode=1 else global.fpsMode=0
 	}
 	
-if key_A
+if key_A or keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("J"))
 {
 if menuSelect=14 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied
 	
@@ -157,7 +157,7 @@ oPause.var_distortion_ammount=global.CRTcustomDistortAM
 oPause.var_border=global.CRTcustomBorder
 }
 
-if keyboard_check_pressed(vk_escape)
+if keyboard_check_pressed(vk_escape) or key_B
 if p1.ControlChange=0 and p2.ControlChange=0 and p3.ControlChange=0 and p4.ControlChange=0
 {
 if controlSettings=1

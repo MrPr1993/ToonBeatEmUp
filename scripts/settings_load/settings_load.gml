@@ -29,5 +29,14 @@ global.Language=ini_read_real("LANGUAGE","0",0)
 ///2, Español
 
 global.Continues=global.ContinueStart
+
+
+///Controls
+globalcontrols_load(1)
+globalcontrols_load(2)
+globalcontrols_load(3)
+globalcontrols_load(4)
+
+
 ini_close()
 }

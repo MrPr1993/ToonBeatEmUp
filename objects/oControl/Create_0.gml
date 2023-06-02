@@ -755,7 +755,7 @@ pressStart=1
 
 if !variable_global_exists("LOADSET")
 {global.LOADSET=0
-settings_load()
+settings_load() ///Controlshere
 unlock_load()
 gold_load()
 
