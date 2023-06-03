@@ -940,10 +940,10 @@ if key_up if hiScoreY>-10 hiScoreY-=0.1
 if key_down if hiScoreY<10 hiScoreY+=0.1
 hiScoreY=clamp(hiScoreY,-2.5,2.5)
 draw_text(8,8+16+16,"▲▼MOVE")
-draw_command(7)
+draw_command(7) global.StageGoing=rm_menu
 }
 if pauseBuffer!=0 pauseBuffer-=1
-if key_attack or key_start or key_A
+if key_attack or key_start or key_A or key_B
 or key_jump or keyboard_check_pressed(vk_escape)
 if pauseBuffer=0
 {////Hiscore to Title Screen

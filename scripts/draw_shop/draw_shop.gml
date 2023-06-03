@@ -28,10 +28,11 @@ if shopHello!=10 shopHello+=1 else {shopHello=11
 
 if shopDialogueAlt!=1
 {
-if key_jump or keyboard_check_pressed(vk_escape)
-if shopBuy!=-1 shopBuy=-1
+if key_B or keyboard_check_pressed(vk_escape)
+if shopBuy!=-1 {}//{shopBuy=-1}
 else
-{canControl=0
+{
+canControl=0
  shopHelloR=choose(0,1,2,3)
 
 	if shopHelloR=0 PlaySound(snd_betty5)
@@ -43,20 +44,27 @@ alarm[4]=80 global.StageGoing=rm_menu gold_save()
 shopDialogueAlt=8
 }
 }
+	if canControl!=0
+	{
 if canControl=0 {shopDialogueAlt=8 
 	if shopHelloR=0 shopDesc="      BYE BYE!" 
 	if shopHelloR=1 shopDesc="      SEE YA!" 
 	if shopHelloR=2 shopDesc="      SO LONG!" 
 	if shopHelloR=3 shopDesc="      GOODBYE!" 
 	
-	shopAltFace=3 shopName="" shopCost=""}
+	shopAltFace=3 shopName="" shopCost=""
+}
+	}
 ///Buy Item
 if shopBuy!=-1
 {
 if -key_left_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
 if key_right_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
 
-if key_attack
+if key_B or keyboard_check_pressed(vk_escape)
+{shopBuy=-1 shopDialogueTime=2 shopDialogueAlt=5}
+
+if key_A
 if shopBuy=0 {shopBuy=-1 shopDialogueTime=2 shopDialogueAlt=5}
 else {shopDialogueAlt=4 shopDialogueTime=120 shopBuy=-1
 	
@@ -194,7 +202,7 @@ if shopDialogueAlt=8
 }
 else
 {
-if key_attack
+if key_A or keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("J"))
 if shopSelect=-1 or shopSelect=-2
 {
 shopDialogueTime=120 shopDialogueAlt=2 PlaySound(snd_steal)
