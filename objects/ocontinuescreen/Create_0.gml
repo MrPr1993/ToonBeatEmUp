@@ -426,3 +426,6 @@ optionSelect=0
 optionPick=0
 optionSelectA=0
 optionSelectX=200
+
+languagetext[40]=0; ///First 10 will be for the setting stuff
+language_check();

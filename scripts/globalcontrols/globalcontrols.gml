@@ -17,6 +17,8 @@ global.ControlTaunt[_controlno]="Y";
 global.ControlPunchback[_controlno]="U";
 global.ControlInteract[_controlno]="J";
 
+
+
 ///Gamepad
 global.gpControlAttack[_controlno]=gp_face3;
 global.gpControlCharge[_controlno]=gp_face3;

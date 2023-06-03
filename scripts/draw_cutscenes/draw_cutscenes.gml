@@ -4,7 +4,7 @@ function draw_cutscenes(){
 
 if room=rm_cutscenes
 {//global.MinigameSel=0
-if key_jump room=rm_menu
+if key_B room=rm_menu
 draw_set_font(global.scorefont)	
 
 draw_sprite(bg_cuts1,0,0-320+MenuMoveX,0)
@@ -24,7 +24,7 @@ MenuText="???"
 
 
 if global.MovieSel=0 {MenuText="DIVA TIME!"
-global.StageGoing=rm_newspaper}
+global.StageGoing=rm_newspaper global.IsMovie=1 global.MenuSkip=0 global.IntroSkip=1}
 if global.MovieSel=1 {MenuText="THE CHAOS"
 global.StageGoing=rm_opening}
 if global.MovieSel=2 {MenuText="WOLFED"
@@ -46,7 +46,7 @@ else MenuSil-=0.5
 
 if MenuMoveX<320 MenuMoveX+=24 else MenuMoveX=320
 
-if key_attack
+if key_A or keyboard_check_pressed(ord("J"))  or keyboard_check_pressed(vk_enter) 
 {
 	if MenuText="???"
 	{

@@ -738,8 +738,6 @@ iconSel=spr_scicon
 
 if global.IntroSkip=2
 {
-iconShow=210-70
-iconSel=spr_scicon
 introSkip=1 noWhite=1
 introSkipFX=2
 iconShow=0
@@ -751,6 +749,7 @@ titleFlashTime=0
 titleObjectWhite=0
 titleShow=1
 pressStart=1
+titlescreenMenuY=-20
 }
 
 if !variable_global_exists("LOADSET")

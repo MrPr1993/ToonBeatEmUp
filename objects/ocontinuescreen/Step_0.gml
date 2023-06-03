@@ -57,7 +57,7 @@ if p4.key_start or p4.key_attack
 else
 {
 controlNO=9 controller_setup()
-if key_attack
+if key_A
 {PlaySound(snd_picked) canControl=0 fadetoblack=1 alarm[8]=90
 global.P1Life=global.LifeStart
 global.P2Life=global.LifeStart

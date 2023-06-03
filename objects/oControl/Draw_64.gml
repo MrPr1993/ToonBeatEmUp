@@ -943,14 +943,14 @@ draw_text(8,8+16+16,"▲▼MOVE")
 draw_command(7)
 }
 if pauseBuffer!=0 pauseBuffer-=1
-if key_attack or key_start
+if key_attack or key_start or key_A
 or key_jump or keyboard_check_pressed(vk_escape)
 if pauseBuffer=0
 {////Hiscore to Title Screen
 if global.HiscoreSkip=0 {global.MenuSkip=0 global.IntroSkip=0}
 else {global.MenuSkip=0 global.IntroSkip=1} //global.MenuSkip=1 global.IntroSkip=2}
 if global.HiScoreSee=0
-room_goto(rm_titlescreen)
+{global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_titlescreen)}
 else
 if !key_attack and !key_start
 {

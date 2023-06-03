@@ -7,8 +7,12 @@ hiScoreYgo=1
 else
 {
 if global.HiscoreSkip=0 {global.MenuSkip=0 global.IntroSkip=0}
-else {global.MenuSkip=1 global.IntroSkip=2}
-room_goto(rm_titlescreen)
+else {global.MenuSkip=0 global.IntroSkip=1} //global.MenuSkip=1 global.IntroSkip=2}
+if global.HiScoreSee=0
+{global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_titlescreen)}
+
 }
+
+
 
 }

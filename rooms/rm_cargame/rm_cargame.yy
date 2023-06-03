@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_cargame",
-  "creationCodeFile": "${project_dir}/rooms/rm_cargame/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_cargame/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

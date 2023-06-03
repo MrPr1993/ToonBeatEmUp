@@ -30,6 +30,7 @@ global.StageGoing=rm_cargame}
 if global.MinigameSel=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION"
 global.StageGoing=rm_brickbreak}
 
+
 	
 draw_set_halign(fa_center)
 draw_set_color(c_black)

@@ -1,5 +1,9 @@
-////VILLAIN
-global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_titlescreen)
+///VILLAIN
+if global.IsMovie=1
+{room_goto(rm_cutscenes)}
+else
+{global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_titlescreen)}
+
 
 newsShow=0
 scene1.sprite_index=spr_introfilm

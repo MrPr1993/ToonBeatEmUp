@@ -1,4 +1,4 @@
-musicplaystart(-1)
+musicplaystart(msc_minigame1)
 oPlayer.x=32
 oPlayer.y=192
 with oPlayer

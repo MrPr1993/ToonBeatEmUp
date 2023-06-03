@@ -2,7 +2,7 @@
 if isPaused=0
 {
 if room=rm_titlescreen 
-{
+{global.MenuSkip=0 global.IntroSkip=1 
 if !instance_exists(oSettings)
 {global.MenuGlobal=menuSelect
 room_goto(rm_menu)
@@ -30,7 +30,7 @@ if menuSelect=2 room_goto(rm_feats)
 if menuSelect=3 {global.TrainingRoom=0 room_goto(rm_settings)}
 if menuSelect=4 room_goto(rm_shop)
 if menuSelect=5 {global.StageSelect=0 global.TrainingRoom=1 global.IsMinigame=0 room_goto(rm_characterselect)}
-if menuSelect=6 {global.StageSelect=1 global.HiscoreSkip=1 global.IsMinigame=1 room_goto(rm_minigames)}
+if menuSelect=6 {global.StageSelect=1 global.TrainingRoom=0 global.HiscoreSkip=1 global.IsMinigame=1 room_goto(rm_minigames)}
 if menuSelect=7 room_goto(rm_chardata)
 if menuSelect=8 {room_goto(rm_gallery) global.HiscoreSkip=1}
 if menuSelect=9 {room_goto(rm_soundtest) global.HiscoreSkip=1}
