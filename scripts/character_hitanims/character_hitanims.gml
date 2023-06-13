@@ -457,6 +457,77 @@ if anim=590068 { sprite_index=SpinningSpr animFrame+=0.25 image_index+=0.5
 if animFrame>12 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
 }
 
+
+/////Transformation Frog
+if anim=591000
+{sprite_index=spr_frog sentflying=0
+	
+if hp=0 {}
+	
+if animFrame=0 {specialcheck4=0; animFrame=1}
+
+
+if ground
+{
+frame_set(1,0,0.25)
+frame_set(2,1,0.25)
+frame_set(3,2,0.25)
+frame_set(4,3,0.25)
+frame_set(5,2,0.25) if animFrame>6 animFrame=1
+}
+else
+{
+frame_set(1,4,0.25)
+frame_set(2,5,0.25)
+frame_set(3,6,0.25)
+}
+
+specialcheck4+=1
+
+
+
+var formspd=2;
+
+if !ground
+{
+	if key_right 
+	{
+	
+	if place_free(x+formspd,y) and x<__view_get( e__VW.XView, 0 )+320-28 x+=formspd}
+	
+
+	if -key_left {if place_free(x-formspd,y)
+	and x>__view_get( e__VW.XView, 0 )+42
+	  x-=formspd}
+	if key_up 
+	{if place_free(x,y-formspd) y-=formspd
+	}
+	if key_down 
+	{if place_free(x,y+formspd)
+	and y<__view_get( e__VW.YView, 0 )+240-2
+	  y+=formspd
+	}
+}
+
+if key_right or -key_left or key_up or key_down
+if ground=1
+{if key_right image_xscale=1
+	if -key_left image_xscale=-1
+	
+	zSpeed=-4 ground=0 animFrame=1
+}
+
+	if key_jump and ground
+	{animFrame=1
+	ground=0 zSpeed=-8 PlaySound(snd_jump)
+	}
+
+
+
+if specialcheck4>160 {animFrame=0 canmove=1}
+}
+
+
 }
 
 

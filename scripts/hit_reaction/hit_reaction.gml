@@ -3,7 +3,13 @@ function hit_reaction() {
 	if act=1
 	{
 if targetID!=-1
+{
 character_release(0,-4,2*image_xscale,0,3,5)
+targetID=-1;
+}
+
+if anim=591000
+flashFX(x,y,z,spr_smokesmall,0,1,0,1,1,c_white,1)
 
 ///Reaction while frozen
 if HitType!=6 and anim=41 
@@ -200,6 +206,17 @@ if hp<=0
 	animFrame=0
 	anim=590068
 	}	
+	
+	
+	////Frog Curse
+	if HitType=591000
+	{
+	sprite_index=ThrownSpr image_index=0
+	animFrame=0
+	anim=591000
+	sentflying=-2*image_xscale
+	ground=0 zSpeed=-6
+	}
 	
 	
 	if HitType=44///Melt

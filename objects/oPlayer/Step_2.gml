@@ -39,7 +39,8 @@ character_release(0,-4,2*image_xscale,0,3,5)
 }
 
 
-
+if targetID!=-1
+{
 if targetID.canDrag=1
 {
 targetID.x=x+grabX
@@ -48,7 +49,7 @@ targetID.z=z+grabZ
 }
 targetID.vspeed=0
 targetID.hspeed=0
-}
+}}
 
 if recovery!=0 recovery-=1 else {recovery=0}
 if recoveryThrow!=0 recoveryThrow-=1 else recoveryThrow=0

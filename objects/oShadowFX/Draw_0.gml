@@ -1,5 +1,5 @@
 if instance_exists(oPlayer) with oPlayer if visible and hasShadow=1
-{ 
+{
 if !place_meeting(x,y,oHeight32) and !place_meeting(x,y,oFallHole)
 
 if place_meeting(x,y,oWaterFX)
@@ -29,6 +29,9 @@ draw_sprite(spr_carshadow,0,x+((floorPosX[image_index]+waistPosX[image_index]+he
 }
 
 }
+
+if instance_exists(oBossHazard) with oBossHazard if shadow!=-1
+draw_sprite(shadow,0,x,y)
 
 if instance_exists(oProjectile) with oProjectile if shadow!=-1
 draw_sprite(shadow,0,x,y)

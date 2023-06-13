@@ -4,12 +4,14 @@ name="KIANDRA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=32
 
+
+
 enemyscript=animsetup_enemy
 
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=300
 
 idlestyle=1
 
@@ -18,7 +20,9 @@ OneAttack=2
 hp=2
 maxhp=2
 
-height=70
+height=90
+
+isHeavy=1
 
 specialFX=0
 

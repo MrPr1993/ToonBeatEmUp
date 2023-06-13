@@ -87,6 +87,13 @@ stagename=""
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 	
+global.CheatPenalty=0;
+global.Cheat[16]=0;
+global.CheatUnlock[16]=0;
+
+global.Gallery[16]=0;
+global.GalleryUnlock[16]=0;
+	
 global.IsMovie=0
 global.MovieSel=0
 	
@@ -296,6 +303,8 @@ shopSelect=-1
 shopPrice=0
 shopHello=0
 shopHelloR=choose(0,1,2,3)
+shopCheatNO=1;
+shopCheatP=0;
 
 stagePause=0
 isCutscene=0
