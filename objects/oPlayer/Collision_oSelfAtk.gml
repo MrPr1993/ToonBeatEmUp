@@ -16,7 +16,7 @@ event_user(14)
 if HitReactionScript!=-1
 script_execute(HitReactionScript)
 
-}}
+}if object_index=oBossHazard hitscript()}
 super+=0.25*canSuper
 }
 
@@ -30,7 +30,7 @@ and recovery=0 and superThrown=0 and anim!=6
 {
 hitresponse() with other {with selfsource {hitCheck=1 hud_show() event_user(14) ///Special Hit for enemy hitting player
 
-}}
+}if object_index=oBossHazard hitscript()}
 super+=0.25*canSuper
 }
 }

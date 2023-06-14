@@ -13,7 +13,7 @@ overwriteAttack5=1
 if anim=10
 {offScreen=0
 if distance_to_point(targetEnemy.x,targetEnemy.y)<50
-anim=choose(13,21)
+anim=choose(21,21)
 else
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)<100
@@ -77,7 +77,7 @@ bone.sentflying=clamp(bone.sentflying,-9999,-1.5)
 with bone selfscript = function()
 {
 if anim=0
-{ x+=sentflying*image_xscale
+{ x+=sentflying//*image_xscale
 
 z+=zSpeed zSpeed+=0.45
 if z>0 {anim=1 z=0}

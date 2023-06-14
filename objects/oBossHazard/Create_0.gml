@@ -98,3 +98,4 @@ frame_set(6,6,0.25)
 if animFrame>6.7 {dust_make(x,y,z,0,0,0) instance_destroy()}
 }
 
+hitscript = function() {}
