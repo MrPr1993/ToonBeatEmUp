@@ -1,6 +1,6 @@
 enemy_data()
 
-name="DR. FRAN"
+name="DR.FRAN"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=36
 

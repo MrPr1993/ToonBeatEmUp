@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "PlantPrincess",
-    "path": "folders/8 - Bosses/PlantPrincess.yy",
+    "name": "6PlantPrincess",
+    "path": "folders/8 - Bosses/6PlantPrincess.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

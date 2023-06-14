@@ -1,6 +1,6 @@
 enemy_data()
 
-name="GENIE"
+name="HAIFA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=47
 
@@ -13,12 +13,26 @@ rangeAtk=100
 
 OneAttack=2
 
+superarmor=1
+
+
+
+isHeavy=1
+throwHeavy=1
+
 hp=2
 maxhp=2
 
 height=70
 
 specialFX=0
+
+HitGround=snd_hitground
+
+rangeAtk=400
+
+hp=2
+maxhp=2
 
 StandSpr=spr_genie_stand
 MoveSpr=spr_genie_stand

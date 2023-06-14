@@ -35,8 +35,8 @@
     "path": "sprites/spr_genie_stand/spr_genie_stand.yy",
   },
   "spriteMaskId": {
-    "name": "mask_small",
-    "path": "sprites/mask_small/mask_small.yy",
+    "name": "spr_genie_stand",
+    "path": "sprites/spr_genie_stand/spr_genie_stand.yy",
   },
   "visible": true,
 }

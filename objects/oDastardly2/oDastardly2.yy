@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oDastardly2",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Dastardly",
+    "path": "folders/8 - Bosses/Dastardly.yy",
+  },
+  "parentObjectId": {
+    "name": "oEnemy1",
+    "path": "objects/oEnemy1/oEnemy1.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 0,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 0,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_dastardly_stand",
+    "path": "sprites/spr_dastardly_stand/spr_dastardly_stand.yy",
+  },
+  "spriteMaskId": {
+    "name": "mask_small",
+    "path": "sprites/mask_small/mask_small.yy",
+  },
+  "visible": true,
+}
