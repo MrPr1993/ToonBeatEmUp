@@ -1,8 +1,8 @@
 enemy_data()
 
-name="DASTARDLY"
+name="VAN BAD 2"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=18
+enemyPortraitIndex=58
 
 enemyscript=animsetup_enemy
 

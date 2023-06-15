@@ -684,6 +684,7 @@
     {"name":"__init_background","order":5,"path":"scripts/__init_background/__init_background.yy",},
     {"name":"spr_seaweed_attack3","order":10,"path":"sprites/spr_seaweed_attack3/spr_seaweed_attack3.yy",},
     {"name":"__init_d3d","order":5,"path":"scripts/__init_d3d/__init_d3d.yy",},
+    {"name":"oPainter","order":6,"path":"objects/oPainter/oPainter.yy",},
     {"name":"__init_global","order":8,"path":"scripts/__init_global/__init_global.yy",},
     {"name":"__view_get","order":1,"path":"scripts/__view_get/__view_get.yy",},
     {"name":"__view_set","order":2,"path":"scripts/__view_set/__view_set.yy",},

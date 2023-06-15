@@ -35,8 +35,8 @@
     "path": "sprites/spr_dastardly_stand/spr_dastardly_stand.yy",
   },
   "spriteMaskId": {
-    "name": "mask_small",
-    "path": "sprites/mask_small/mask_small.yy",
+    "name": "spr_shadow2",
+    "path": "sprites/spr_shadow2/spr_shadow2.yy",
   },
   "visible": true,
 }

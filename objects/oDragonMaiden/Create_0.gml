@@ -78,5 +78,6 @@ anim=66 canmove=0
 
 ///Tail Script
 body=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) body.sprite_index=spr_dragonmaiden_tail
+body.isDepth=0 body.depth=0
 ////Body Script
 body=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) body.sprite_index=spr_dragonmaiden_body

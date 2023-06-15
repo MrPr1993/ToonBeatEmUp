@@ -76,7 +76,7 @@ if enemySpawn=18 {enemySpawnName="6-c Dragon Maiden" spawnUnit=oDragonMaiden}//?
 if enemySpawn=19 {enemySpawnName="7- Scientist Boss" spawnUnit=oScientist}//?Genie
 if enemySpawn=20 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
 if enemySpawn=21 {enemySpawnName="Dastardly?" spawnUnit=oDastardly2}
-
+if enemySpawn=22 {enemySpawnName="???" spawnUnit=oPainter}
 }
 
 if spawnType="Item"

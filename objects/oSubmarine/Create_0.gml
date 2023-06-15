@@ -2,7 +2,7 @@ enemy_data()
 
 name="SEA BANDIT"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=40
+enemyPortraitIndex=57
 
 
 enemyscript=animsetup_enemy

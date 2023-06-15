@@ -1,6 +1,6 @@
 enemy_data()
 
-name="DASTARDLY"
+name="VAN BAD"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=18
 
@@ -13,10 +13,13 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=2
+maxhp=2
 
-height=70
+height=110
+
+isHeavy=1
+
 
 specialFX=0
 
