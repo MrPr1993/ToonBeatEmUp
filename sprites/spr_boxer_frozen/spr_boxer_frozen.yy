@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"771a1118-fa9c-478c-97a0-fb30bf0788d3","path":"sprites/spr_boxer_frozen/spr_boxer_frozen.yy",},},},"Disabled":false,"id":"4d700e1d-2c28-4e64-9aa8-3d93277fe3d2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 64,
     "yorigin": 120,

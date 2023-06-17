@@ -35,8 +35,8 @@
     "path": "sprites/spr_genie_stand/spr_genie_stand.yy",
   },
   "spriteMaskId": {
-    "name": "spr_genie_stand",
-    "path": "sprites/spr_genie_stand/spr_genie_stand.yy",
+    "name": "spr_shadow2",
+    "path": "sprites/spr_shadow2/spr_shadow2.yy",
   },
   "visible": true,
 }

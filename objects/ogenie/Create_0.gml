@@ -48,11 +48,11 @@ JumpAtkSpr2=spr_burglar_attack
 
 JumpSpr=spr_burglar_stand
 JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_genie_stand
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+ThrownSpr=spr_genie_hit
+FlatSpr=spr_genie_flat
+ShockSpr=spr_genie_elec
+BurnSpr=spr_genie_burned
+FrozenSpr=spr_genie_frozen
 
 
 current_pal=0;
