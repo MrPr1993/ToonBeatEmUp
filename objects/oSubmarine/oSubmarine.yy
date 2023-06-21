@@ -35,14 +35,14 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "spr_submarine",
     "path": "sprites/spr_submarine/spr_submarine.yy",
   },
   "spriteMaskId": {
-    "name": "mask_octopus",
-    "path": "sprites/mask_octopus/mask_octopus.yy",
+    "name": "mask_sub",
+    "path": "sprites/mask_sub/mask_sub.yy",
   },
   "visible": true,
 }

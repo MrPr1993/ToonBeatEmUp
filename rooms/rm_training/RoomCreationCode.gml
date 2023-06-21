@@ -1,4 +1,4 @@
-musicplaystart(-1)
+musicplaystart(msc_training)
 oControl.showMap=0
 global.HiScoreStage=-1
 

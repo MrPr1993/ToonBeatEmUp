@@ -121,11 +121,11 @@ if songno=32 {songname="TONIGHT'S SHOW" playingSound=msc_charselect songcomposer
 if songno=33 {songname="LITTLE IRISH SHOP" playingSound=msc_gallery songcomposer="EVADER MUSIC"}
 if songno=34 {songname="PICKING INFORMATION" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=35 {songname="STAGE PREPARATIONS" playingSound=msc_stageselect songcomposer="EVADER MUSIC"}
-if songno=36 {songname="TRAININ' GROUNDS" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
-if songno=37 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=36 {songname="TRAININ' GROUNDS" playingSound=msc_training songcomposer="EVADER MUSIC"}
+if songno=37 {songname="SOUR SURVIVAL" playingSound=msc_survival songcomposer="EVADER MUSIC"}
 if songno=38 {songname="CALM FISHER" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=39 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
-if songno=40 {songname="LUCKY GAMBLING" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=40 {songname="HAPPYY GAMBLING" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=41 {songname="CONCENTRATING BREAK" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=42 {songname="ODD TIME" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=43 {songname="FRIGHT MOMENT" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
