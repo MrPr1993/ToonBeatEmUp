@@ -2152,6 +2152,7 @@
     {"name":"spr_sofia_downup","order":20,"path":"sprites/spr_sofia_downup/spr_sofia_downup.yy",},
     {"name":"spr_sofia_elec","order":21,"path":"sprites/spr_sofia_elec/spr_sofia_elec.yy",},
     {"name":"spr_sofia_flat","order":22,"path":"sprites/spr_sofia_flat/spr_sofia_flat.yy",},
+    {"name":"spr_bcameo22b","order":56,"path":"sprites/spr_bcameo22b/spr_bcameo22b.yy",},
     {"name":"spr_sofia_frozen","order":23,"path":"sprites/spr_sofia_frozen/spr_sofia_frozen.yy",},
     {"name":"spr_sofia_grab","order":24,"path":"sprites/spr_sofia_grab/spr_sofia_grab.yy",},
     {"name":"snd_betty15","order":8,"path":"sounds/snd_betty15/snd_betty15.yy",},

@@ -27,6 +27,10 @@ hp=0 mask=mask_none image_xscale=-1 HitType=4 hud_show() event_user(0) DeathCryO
 instance_destroy()
 }
 
+with oCameoChar if sprite_index=spr_bcameo40
+{image_index=3 anim=666 newscript=function() {image_index+=0.2 if image_index=6-0.2 image_index=4}}
+
+
 with oPlayer
 {	
 car=instance_create_depth(x,y,depth,oCar) car.dead=1 car.sprite_index=spr_car_dead

@@ -2345,6 +2345,7 @@
     {"id":{"name":"spr_sofia_downup","path":"sprites/spr_sofia_downup/spr_sofia_downup.yy",},},
     {"id":{"name":"spr_sofia_elec","path":"sprites/spr_sofia_elec/spr_sofia_elec.yy",},},
     {"id":{"name":"spr_sofia_flat","path":"sprites/spr_sofia_flat/spr_sofia_flat.yy",},},
+    {"id":{"name":"spr_bcameo22b","path":"sprites/spr_bcameo22b/spr_bcameo22b.yy",},},
     {"id":{"name":"spr_sofia_frozen","path":"sprites/spr_sofia_frozen/spr_sofia_frozen.yy",},},
     {"id":{"name":"spr_sofia_grab","path":"sprites/spr_sofia_grab/spr_sofia_grab.yy",},},
     {"id":{"name":"snd_betty15","path":"sounds/snd_betty15/snd_betty15.yy",},},

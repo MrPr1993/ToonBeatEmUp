@@ -4,7 +4,7 @@ image_xscale=-1
 anim=666
 
 framespd=0.1
-
+if specialcheck[1] framespd=0.2
 newscript=function()
 {
 
