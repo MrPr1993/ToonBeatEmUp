@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dastardly",
-    "path": "folders/8 - Bosses/Dastardly.yy",
+    "name": "8Dastardly",
+    "path": "folders/8 - Bosses/8Dastardly.yy",
   },
   "parentObjectId": {
     "name": "oEnemy1",

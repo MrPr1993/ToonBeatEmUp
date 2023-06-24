@@ -1,6 +1,6 @@
 enemy_data()
 
-name="VAN BAD 2"
+name="VAN BAD"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=58
 
@@ -16,13 +16,13 @@ OneAttack=2
 hp=0.2
 maxhp=0.2
 
-height=70
+height=90
 
 specialFX=0
 
-StandSpr=spr_dastardly_stand
-MoveSpr=spr_dastardly_move
-RunSpr=spr_dastardly_move
+StandSpr=spr_dastardly2_stand
+MoveSpr=spr_dastardly2_stand
+RunSpr=spr_dastardly2_stand
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

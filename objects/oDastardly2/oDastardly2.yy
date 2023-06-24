@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dastardly",
-    "path": "folders/8 - Bosses/Dastardly.yy",
+    "name": "8FinalDastardly",
+    "path": "folders/8 - Bosses/8FinalDastardly.yy",
   },
   "parentObjectId": {
     "name": "oEnemy1",
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dastardly_stand",
-    "path": "sprites/spr_dastardly_stand/spr_dastardly_stand.yy",
+    "name": "spr_dastardly2_stand",
+    "path": "sprites/spr_dastardly2_stand/spr_dastardly2_stand.yy",
   },
   "spriteMaskId": {
     "name": "mask_small",

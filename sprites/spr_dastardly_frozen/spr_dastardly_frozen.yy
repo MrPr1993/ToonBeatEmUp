@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Dastardly",
-    "path": "folders/8 - Bosses/Dastardly.yy",
+    "name": "8Dastardly",
+    "path": "folders/8 - Bosses/8Dastardly.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

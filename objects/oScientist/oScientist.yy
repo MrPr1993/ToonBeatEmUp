@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Scientist",
-    "path": "folders/8 - Bosses/Scientist.yy",
+    "name": "7Scientist",
+    "path": "folders/8 - Bosses/7Scientist.yy",
   },
   "parentObjectId": {
     "name": "oEnemy1",

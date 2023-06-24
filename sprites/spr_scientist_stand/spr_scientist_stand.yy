@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Scientist",
-    "path": "folders/8 - Bosses/Scientist.yy",
+    "name": "7Scientist",
+    "path": "folders/8 - Bosses/7Scientist.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
