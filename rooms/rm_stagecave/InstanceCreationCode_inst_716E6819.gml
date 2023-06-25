@@ -1,4 +1,5 @@
-sprite_index=spr_bcameo35
+sprite_index=spr_bcameo52
+
 
 anim=666
 newscript=function()
