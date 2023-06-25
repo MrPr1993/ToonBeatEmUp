@@ -1,4 +1,4 @@
-framespd=0.05
+framespd=0.1
 sprite_index=spr_bcameo6
 image_xscale=1
 

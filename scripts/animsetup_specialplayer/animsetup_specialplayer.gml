@@ -36,12 +36,12 @@ image_index=0
 	}
 	
 		if key_right or -key_left or key_up or key_down
-	{if carAnim<0 carAnim=1.75 else carAnim-=0.25
-		carAnim=clamp(carAnim,0,1.75)
+	{if carAnim<0+0.25 carAnim=1.75 else carAnim-=0.25
+		//carAnim=clamp(carAnim,0,1.75)
 	} else 
 	{
-	if carAnim<0 carAnim=1.8 else carAnim-=0.20
-	carAnim=clamp(carAnim,0,1.8)
+	if carAnim<0+0.2 carAnim=1.8 else carAnim-=0.20
+	//carAnim=clamp(carAnim,0,1.8)
 	}
 
 	if !ground {zSpeed+=0.45 carAnim=2 image_index=3}
