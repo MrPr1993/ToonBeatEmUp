@@ -52,7 +52,7 @@ if hp=0 or hp<=0 or dead=1 if anim!=9999
 
 
 if anim=0
-{
+{canmove=1
 sprite_index=spr_octopus_stand
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
@@ -60,16 +60,16 @@ frame_set(2,2,0.1)
 frame_set(3,1,0.1) if animFrame>3.9 animFrame=0
 }
 
-
+if anim=5 {anim=4 animFrame=0 hurt=0} 
 if anim=4 ///Replace the usual hit flying animations with this
 or anim=5
 or anim=6
 or anim=7
-{ground=1 anim=4
+{ground=1 anim=4 z=0 hurt=0
 sprite_index=spr_octopus_hit	
 animFrame+=0.1
 
-if animFrame>8 {animFrame=0 canmove=1 anim=0 hurt=0}
+if animFrame>8 {sprite_index=spr_octopus_stand animFrame=0 canmove=1 anim=0 hurt=0}
 }
 
 	if anim=8 ///Electrified
@@ -188,7 +188,8 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 
 	if anim=31 ///Special Thrown
 	if overwriteThrown=0
-	{hurt=1 recovery=30}
+	{hurt=1 recovery=30
+		}
 	
 	
 	if anim=10 ///Attack

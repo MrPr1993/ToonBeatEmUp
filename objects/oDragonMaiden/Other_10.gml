@@ -6,6 +6,11 @@ shaketime=10
 
 eyeHit=60
 
+	if HitType=1///Shocked
+	{
+	hurt=1 anim=5
+	}
+
 	if HitType=3///Shocked
 	{event_user(1)
 	hurt=1 canBounce=0
