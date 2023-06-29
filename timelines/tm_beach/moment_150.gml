@@ -1,11 +1,11 @@
 /// @description Baddies Appear 7
 
-if __view_get( e__VW.XView, 0 )>=6480-2-320
+if __view_get( e__VW.XView, 0 )>=6480-2-320+320
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oEnemy1)
+en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oMerman)
 with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oEnemy1B)
+en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oMerman)
 with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
 
 }

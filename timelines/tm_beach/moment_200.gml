@@ -1,10 +1,28 @@
-if !instance_exists(en1)
-and !instance_exists(en2)
+/// @description Prepare Boss
+
+
+
+if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0 
 {
-with oControl {//camMove=0 camMax=room_width
- goActive=1 alarm[1]=90
-xGoCheck=__view_get( e__VW.XView, 0 )+320}
-spawner_followset("WaveSet1",0,8734,1)
+oPlayer.canControl=0
+oPlayer.areaEntry=1
+//oPlayer.x=__view_get( e__VW.XView, 0 )+320+32
+//with oPlayer {key_right=0 doubledash=0 dashing=0}
+
+with oPlayer
+{canControl=0 areaEntry=1
+key_up=0 key_down=0 key_left=0
+key_right=1 doubledash=0 dashing=0
+}
+
+oEnemySpawner.roomHSpd=4
+oEnemySpawner.roomMove=1
+spawner_followset("WaveSet1",0,8160,1)
+
+with oControl MusicFade=1
+
 }
 else
-timeline_position-=1;
+{
+timeline_position-=1
+}

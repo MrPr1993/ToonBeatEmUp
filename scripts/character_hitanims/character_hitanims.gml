@@ -407,7 +407,7 @@ with cutSelf
 	{
 	sprite_index=ScreenHitSpr
 
-	if y<view_yview[0]+240-8 {if image_index<1.5 image_index+=0.5 y+=8 zSpeed=0 z-=4 animFrame=0}
+	if y<__view_get( e__VW.YView, 0)+240-8 {if image_index<1.5 image_index+=0.5 y+=8 zSpeed=0 z-=4 animFrame=0}
 	else
 	{
 	if image_index<1.8 {image_index=2 oControl.quakeFXTime=10 PlaySound(snd_hitground)

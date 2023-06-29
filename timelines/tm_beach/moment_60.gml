@@ -1,19 +1,13 @@
-/// @description Cam move up
+
 if !instance_exists(en1)
 and !instance_exists(en2)
 {
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
-spawner_followset("WaveSet1",0,3920,1)
+spawner_followset("WaveSet1",0,3920-640,1)
 
-	with oEnemySpawner specialscript=function()
-	{
-	if oPlayer.x>__view_get( e__VW.XView, 0)+160
-	{if MaxY>240 MaxY-=1
-		else {MaxY=240 specialscript=-1;}
-	}
-	}
+
 
 }
 else
