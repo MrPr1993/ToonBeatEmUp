@@ -25,6 +25,10 @@ bgbeach=layer_background_get_id(layer_get_id("AnimatedBG"));
 
 layer_background_speed(bgbeach,2)
 
+bgbeach2=layer_background_get_id(layer_get_id("BG"));
+
+layer_background_yscale(bgbeach2,4)
+
 with oControl
 {
 stagename="DOWN SIDE BEACH"		

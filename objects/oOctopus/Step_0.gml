@@ -40,7 +40,7 @@ or dead=1
 	{
 	{if spawntent[1]=0 {if tent1=-1
 {spawntent[1]=choose(120,140,160,180,200,220,240);
-tent=instance_create_depth(x,y,-1,oOctopusT)
+tent=instance_create_depth(x+choose(-128,128),y+choose(-32,160),-1,oOctopusT)
 tent.targetEnemy=targetEnemy
 }}
 else {if tent1=-1 spawntent[1]-=1;}}
