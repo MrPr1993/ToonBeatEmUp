@@ -9,7 +9,7 @@ with en2 {image_xscale=-1 canAttack=5 alarm[1]=60
 weapon_add("PIPE")
 }	
 
-en3=instance_create(__view_get( e__VW.XView, 0)+320+100,200+64+240,oFatBurglar)
+en3=instance_create(__view_get( e__VW.XView, 0)+320+100,200+64+240+64,oFatBurglar)
 with en3 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_modify(my_pal_sprite,4,"MR. WIDE",0,0.4,0.4)}
 
 en4=instance_create_depth(814,448,-1,oAreaSpawner)

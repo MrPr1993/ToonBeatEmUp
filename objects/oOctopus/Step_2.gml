@@ -20,7 +20,7 @@ else specialcheck1-=1
 
 ground=1
 z=0;	
-animFrame+=0.005 if image_index>2 image_index=0 else image_index+=0.25	
+animFrame+=0.01 if image_index>2 image_index=0 else image_index+=0.25	
 	}
 else
 if animFrame=clamp(animFrame,1,2)

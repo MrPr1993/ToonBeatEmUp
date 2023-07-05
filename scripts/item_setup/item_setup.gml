@@ -1,4 +1,6 @@
 function item_setup() {
+	specialscript=-1;
+	
 	height=32
 	canGrav=1
 	wThrowGrav=0

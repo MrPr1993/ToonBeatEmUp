@@ -1,6 +1,7 @@
 depth=-y
 
-
+if specialscript!=-1
+specialscript()
 
 if z>0 
 if !place_meeting(x,y,oFallHole)

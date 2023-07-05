@@ -24,7 +24,7 @@ if y>targetY y-=1 else y+=1
 sprite_index=spr_octopus_tent0 if image_index<4.75 image_index+=0.1 else image_index=3
 
  byetime+=1;
-if  byetime>200 {animFrame=0 anim=4}
+if  byetime>260 {animFrame=0 anim=4}
 }
 
 
