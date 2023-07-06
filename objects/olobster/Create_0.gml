@@ -15,7 +15,7 @@ DamageVoice1=snd_lobster2
 DamageVoice2=snd_lobster2
 DamageVoice3=snd_lobster2
 
-rangeAtk=100
+rangeAtk=200
 
 OneAttack=2
 

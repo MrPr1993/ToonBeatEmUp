@@ -9,7 +9,7 @@ and anim!=6 and recovery=0
 if (z-height)<(other.z-8) and (z)>(other.z-other.height+8)
 {
 enemyhit()
-with other instance_destroy()
+with other if canDestroy instance_destroy()
 }
 }
 

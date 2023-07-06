@@ -55,5 +55,7 @@ spdZ=0
 
 shadow=-1
 
+canDestroy=1
+
 //alarm[0]=300
 

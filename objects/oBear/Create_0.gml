@@ -28,6 +28,8 @@ DamageVoice1=snd_bear1
 DamageVoice2=snd_bear1
 DamageVoice3=snd_bear1
 
+HitGround=snd_bear4
+
 
 StandSpr=spr_bear_stand
 MoveSpr=spr_bear_move

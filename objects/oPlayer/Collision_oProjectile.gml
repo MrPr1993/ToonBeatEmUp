@@ -86,7 +86,7 @@ if (z-height)<(other.z) and (z)>(other.z-other.height)
 	}
 
 
-with other instance_destroy()
+with other if canDestroy instance_destroy()
 }
 }
 
