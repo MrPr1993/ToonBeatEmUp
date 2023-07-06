@@ -939,6 +939,7 @@
     {"name":"snd_pharaoh8","order":12,"path":"sounds/snd_pharaoh8/snd_pharaoh8.yy",},
     {"name":"snd_pharaoh9","order":13,"path":"sounds/snd_pharaoh9/snd_pharaoh9.yy",},
     {"name":"snd_picked","order":6,"path":"sounds/snd_picked/snd_picked.yy",},
+    {"name":"spr_whitebit","order":17,"path":"sprites/spr_whitebit/spr_whitebit.yy",},
     {"name":"snd_pickitem","order":6,"path":"sounds/snd_pickitem/snd_pickitem.yy",},
     {"name":"snd_select","order":7,"path":"sounds/snd_select/snd_select.yy",},
     {"name":"spr_clown_attack","order":8,"path":"sprites/spr_clown_attack/spr_clown_attack.yy",},

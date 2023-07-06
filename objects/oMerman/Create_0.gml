@@ -18,7 +18,7 @@ DamageVoice1=snd_merman1
 DamageVoice2=snd_merman1
 DamageVoice3=snd_merman1
 
-weapon_add("SPEAR")
+//weapon_add("SPEAR")
 //weapon_add("TRIDENT")
 weaponBack=0
 

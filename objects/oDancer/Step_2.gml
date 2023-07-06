@@ -20,6 +20,9 @@ if weaponspr=-1 rangeAtk=100 else rangeAtk=150
 	}
 	}
 	
+	//2 = Special sword thrower
+	
+	
 if anim=11
 {sprite_index=spr_dancer_sword1 atkcol_set(46,0,0,2.75,1,64) damage=0.15 selfatk.isCut=1 selfatk.spriteFX=spr_blood selfatk.HitSound=snd_cut
 frame_set(0,0,0.25) MoveType=1

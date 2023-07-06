@@ -1,12 +1,14 @@
-/// @description /Make sure to only count the previous ones, otherwise you'll get an error.
+/// @description /UFO Appears
 
-if __view_get( e__VW.XView, 0 )>=128
+if __view_get( e__VW.XView, 0 )>=692+224-320-2
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oEnemy1)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oEnemy1B)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
+blackout=instance_create_depth(__view_get( e__VW.XView, 0),0,0,oAlphaFadeFX)
+with blackout
+{image_alpha=0 isfading=1 fadeSpd=0.005 sprite_index=spr_whitecol
+image_xscale=400 image_yscale=400 depth=16777200 fadeMax=0.7
+image_blend=c_black
+}
 
 }
 else

@@ -8,9 +8,12 @@ oControl.stageNext=rm_stage4
 //oPlayer.x=5000
 //timeline_position=449
 
-
-bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
-layer_background_visible(bgfog1,0)
+skybg=layer_background_get_id(layer_get_id("SKYBG"));
+layer_set_visible("UFO1",0)
+layer_set_visible("UFO2",0)
+layer_set_visible("UFO3",0)
+layer_set_visible("UFO4",0)
+layer_background_sprite(skybg,bg_sky2)
 
 
 oPlayer.x-=64

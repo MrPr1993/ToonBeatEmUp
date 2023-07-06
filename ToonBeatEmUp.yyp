@@ -1102,6 +1102,7 @@
     {"id":{"name":"snd_pharaoh8","path":"sounds/snd_pharaoh8/snd_pharaoh8.yy",},},
     {"id":{"name":"snd_pharaoh9","path":"sounds/snd_pharaoh9/snd_pharaoh9.yy",},},
     {"id":{"name":"snd_picked","path":"sounds/snd_picked/snd_picked.yy",},},
+    {"id":{"name":"spr_whitebit","path":"sprites/spr_whitebit/spr_whitebit.yy",},},
     {"id":{"name":"snd_pickitem","path":"sounds/snd_pickitem/snd_pickitem.yy",},},
     {"id":{"name":"snd_select","path":"sounds/snd_select/snd_select.yy",},},
     {"id":{"name":"spr_clown_attack","path":"sprites/spr_clown_attack/spr_clown_attack.yy",},},

@@ -12,7 +12,7 @@ en6=instance_create_depth(7352,128,-1,oEntryFenceJump) with en6
 {depth=16777213 isDepth=0 ySpeed=2 spawnSpeedZ=-4 rangeXAdd=0 rangeX=0 newSpawn=1 newSpawnX=7684-256 rideX=7540
 			spawnFall=spr_lobster_front
 	moveSpr=spr_lobster_move
-	spawnEnemy=oLobster enemy_modify(my_pal_sprite,1,"PINCHER",0,0.3,0.3)
+	spawnEnemy=oLobster enemy_modify(spr_lobsterpal,1,"PINCHER",0,0.3,0.3)
 	}
 en7=instance_create_depth(7684,128,-1,oEntryFenceJump) with en7
 {depth=16777213 isDepth=0 ySpeed=2 spawnSpeedZ=-4 rangeXAdd=0 rangeX=0 newSpawn=1 newSpawnX=7684+128 rideX=7540
