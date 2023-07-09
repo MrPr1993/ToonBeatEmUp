@@ -1,6 +1,6 @@
 enemy_data()
 
-name="?"
+name="???"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=59
 
@@ -13,16 +13,16 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=4
+maxhp=4
 
-height=70
+height=100
 
 specialFX=0
 
 StandSpr=spr_painter_stand
-MoveSpr=spr_painter_stand
-RunSpr=spr_painter_stand
+MoveSpr=spr_painter_move
+RunSpr=spr_painter_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

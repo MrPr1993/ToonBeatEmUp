@@ -1,4 +1,4 @@
-/// @description Baddies Appear 1
+/// @description Baddies Appear 1 - Plant Area
 
 if __view_get( e__VW.XView, 0 )>=2640-2-320-640-320
 {

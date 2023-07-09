@@ -1,4 +1,4 @@
-/// @description Baddies Appear 6
+/// @description Baddies Appear 6 - Rainbow Cloud
 
 if __view_get( e__VW.XView, 0 )>=5840-2-320
 {

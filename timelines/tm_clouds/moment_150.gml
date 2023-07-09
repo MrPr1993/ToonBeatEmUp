@@ -1,4 +1,4 @@
-/// @description Baddies Appear 7
+/// @description Baddies Appear 7 - Castle
 
 if __view_get( e__VW.XView, 0 )>=6480-2-320
 {
@@ -14,3 +14,11 @@ else
 timeline_position-=1
 }
 
+////For castle area
+//6916 - Book Area
+//7566 - Edge of Table
+//8206 - More Table - Furniture
+//8846 - Boss Area
+//
+//
+//
