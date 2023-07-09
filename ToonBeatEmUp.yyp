@@ -1057,6 +1057,7 @@
     {"id":{"name":"spr_bcameo42","path":"sprites/spr_bcameo42/spr_bcameo42.yy",},},
     {"id":{"name":"snd_hwolf8","path":"sounds/snd_hwolf8/snd_hwolf8.yy",},},
     {"id":{"name":"snd_jump","path":"sounds/snd_jump/snd_jump.yy",},},
+    {"id":{"name":"spr_carnivalbgF","path":"sprites/spr_carnivalbgF/spr_carnivalbgF.yy",},},
     {"id":{"name":"snd_land","path":"sounds/snd_land/snd_land.yy",},},
     {"id":{"name":"snd_laserbeam","path":"sounds/snd_laserbeam/snd_laserbeam.yy",},},
     {"id":{"name":"snd_metalhit","path":"sounds/snd_metalhit/snd_metalhit.yy",},},

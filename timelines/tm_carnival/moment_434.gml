@@ -11,12 +11,12 @@ stageEndFX=0
 stageIntro=1
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0
-oEnemySpawner.MaxX=5744+320
+oEnemySpawner.MaxX=5744+320+128
 camMove=1
 }
 with oPlayer
 {hspeed=0
-x=5476
+x=5476+128
 y=208
 areaEntry=0
 }

@@ -896,6 +896,7 @@
     {"name":"spr_bcameo42","order":43,"path":"sprites/spr_bcameo42/spr_bcameo42.yy",},
     {"name":"snd_hwolf8","order":7,"path":"sounds/snd_hwolf8/snd_hwolf8.yy",},
     {"name":"snd_jump","order":16,"path":"sounds/snd_jump/snd_jump.yy",},
+    {"name":"spr_carnivalbgF","order":90,"path":"sprites/spr_carnivalbgF/spr_carnivalbgF.yy",},
     {"name":"snd_land","order":17,"path":"sounds/snd_land/snd_land.yy",},
     {"name":"snd_laserbeam","order":18,"path":"sounds/snd_laserbeam/snd_laserbeam.yy",},
     {"name":"snd_metalhit","order":5,"path":"sounds/snd_metalhit/snd_metalhit.yy",},

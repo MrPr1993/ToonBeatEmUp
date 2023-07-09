@@ -33,8 +33,9 @@ spawnEnemy=oEnemy1B rangeX=x-32
 }
 
 
-en4=instance_create(4512,176+32,oEntryBalloon)
-en4.rideX=4320
+en4=instance_create(__view_get( e__VW.XView, 0)+320,176+32,oEntryBalloon)
+en4.rideX=x+160
+with en4
 {
 	spawnFall=spr_wrestler_hit
 	spawnFallIndex=3
@@ -46,11 +47,10 @@ en4.rideX=4320
 	spawnCanMove=1;
 	splashsnd=snd_femenemy8;
 	
-	
 }
 
-en5=instance_create(4512,176+64,oEntryBalloon)
-en5.rideX=4512 en2.image_xscale=-1 en2.horsepal=2 en2.arriveDir=-1
+en5=instance_create(__view_get( e__VW.XView, 0)+320,176+64,oEntryBalloon)
+en5.rideX=x+160 en2.image_xscale=-1 en2.horsepal=2 en2.arriveDir=-1
 with en5
 {horseSpd=-2
 	spawnFall=spr_sneak_jump
