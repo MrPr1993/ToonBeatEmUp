@@ -24,3 +24,5 @@ z=0
 newscript=-1;
 
 specialcheck[9]=0;
+
+specialdraw=-1;

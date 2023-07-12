@@ -153,6 +153,25 @@ if image_index=clamp(image_index,3,3.9) weaponanim(weaponspr,weaponIndex,41,-46,
 	
 	if ground {animFrame=10 image_index=10 anim=6}
 	}
+	
+	///Alt Jump
+	if anim=13
+	{thrownAtk=0 Throw=0
+	if animFrame=0 sprite_index=ThrownSpr
+	frame_set(0,11,0.25)
+	frame_set(1,12,0.25)
+	frame_set(2,13,0.25)
+	frame_set(3,14,0.25)
+	frame_set(4,11,0.25)
+	frame_set(5,12,0.25)
+	frame_set(6,13,0.25)
+	frame_set(7,14,0.5) if animFrame=8 sprite_index=spr_dancer_move
+	frame_set(8,0,0) sentflying=lerp(sentflying,0,0.1)
+	
+	if ground {animFrame=10 image_index=10 anim=0 canmove=1}
+	}
+	
+
 
 if sprite_index=StandSpr
 {

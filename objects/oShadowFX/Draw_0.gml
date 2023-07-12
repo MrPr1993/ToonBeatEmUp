@@ -5,9 +5,12 @@ if !place_meeting(x,y,oHeight32) and !place_meeting(x,y,oFallHole)
 if place_meeting(x,y,oWaterFX)
 {if z>waterMax
 {
+if oShadowFX.wetTerrain=1
+{
 if carMode=0 waterhoverSpr=spr_waterhover else waterhoverSpr=spr_waterhovercar
 
 draw_sprite(waterhoverSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2+waterMax)
+}
 }
 else
 if carMode=0

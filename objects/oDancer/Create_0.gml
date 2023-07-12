@@ -24,7 +24,7 @@ DamageVoice2=snd_femenemy7
 DamageVoice3=snd_femenemy7
 DeathCry=snd_femenemy2
 
-height=70
+height=84
 
 specialFX=0
 

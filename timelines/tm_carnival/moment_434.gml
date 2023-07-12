@@ -21,6 +21,4 @@ y=208
 areaEntry=0
 }
 spawner_followset("WaveSet1",0,5744,1)
-
-
 }
