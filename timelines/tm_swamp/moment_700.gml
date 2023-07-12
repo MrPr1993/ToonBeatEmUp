@@ -9,6 +9,8 @@ ground=1
 automoveX=3340 automoveY=160+16+16 automove=1
 vspeed=0
 }
+
+
 }
 else
 timeline_position-=1

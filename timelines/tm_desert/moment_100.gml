@@ -11,14 +11,34 @@ stageEndFX=0
 stageIntro=1
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0
-oEnemySpawner.MaxX=3694
+oEnemySpawner.MaxX=4328+320
 camMove=1
 }
+
+
 with oPlayer
 {hspeed=0
-x=3694+128
-y=208
-areaEntry=0
+x=3840
+y=220
+areaEntry=0 z=-200 
+canControl=1
+canmove=0
+	hurt=1
+	ground=0
+	zSpeed=0
+	sentflying=0
+	image_index=3 sprite_index=ThrownSpr
+	animFrame=3
+	anim=5
+	thrownDMG=0
+
 }
-spawner_followset("WaveSet1",0,3694,1)
+
+with sandstorm instance_destroy()
+with quicksnd instance_destroy()
+with quicksnd2 instance_destroy()
+with oShadowFX visible^=1
+
+
+spawner_followset("WaveSet1",0,4328+320,1)
 }

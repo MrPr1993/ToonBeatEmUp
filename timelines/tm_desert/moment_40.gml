@@ -16,8 +16,8 @@ sandstorm=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oCameoChar)
 with sandstorm { isDepth=0 depth=-300
 image_alpha=0 sprite_index=spr_sandstormtile
 newscript=function()
-{x-=4 y-=4
-image_alpha=lerp(image_alpha,0.5,0.005)
+{x-=4
+image_alpha=lerp(image_alpha,0.4,0.005)
 }
 
 specialdraw=function()

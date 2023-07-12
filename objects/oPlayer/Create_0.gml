@@ -152,6 +152,7 @@ WinSnd=snd_viva13
 hasCut=1
 cutSpr1B=spr_viva_cutB1
 cutSpr2B=spr_viva_cutB2
+qSandSpr=spr_viva_quicksand
 
 controlNO=1
 

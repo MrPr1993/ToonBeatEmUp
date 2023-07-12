@@ -1,7 +1,7 @@
 /// @description Desert Temple Area Start
 if !instance_exists(en1)
 and !instance_exists(en2)
-{
+{timer_set(0)
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}

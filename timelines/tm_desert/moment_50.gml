@@ -2,14 +2,14 @@
 
 if __view_get( e__VW.XView, 0 )>=2228-2
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320-64,200+24,oDancer)
+en1=instance_create(__view_get( e__VW.XView, 0)+320-64,180+24,oDancer)
 with en1 {weaponspr=-1
 	var dusty=0; repeat(8) {dust_make(x,y,0,lengthdir_x(2,45*dusty),lengthdir_y(1,45*dusty),0) dusty+=1;}	
 	image_xscale=-1 z=-8
 	animFrame=0 anim=13 zSpeed=-8 canmove=0 ground=0
 	}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320-64,200+64,oDancer)
+en2=instance_create(__view_get( e__VW.XView, 0)+320-64,180+64,oDancer)
 with en2 {weaponspr=-1
 	var dusty=0; repeat(8) {dust_make(x,y,0,lengthdir_x(2,45*dusty),lengthdir_y(1,45*dusty),0) dusty+=1;}	
 	image_xscale=-1 z=-8

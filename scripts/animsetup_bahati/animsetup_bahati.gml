@@ -59,6 +59,7 @@ WildTakeSpr3=spr_bahati_wildtake3
 PlaneOutSpr=spr_bahati_planeout
 HeartSpr=spr_bahati_heart
 WildTakeSpr4=spr_bahati_wildtake4
+qSandSpr=spr_bahati_quicksand
 
 	if atk=0 {hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
 	HitForce=0

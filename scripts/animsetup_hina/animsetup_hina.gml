@@ -56,6 +56,7 @@ cutSpr2B=spr_hina_cutB2
 PlaneOutSpr=spr_hina_planeout
 HeartSpr=spr_hina_heart
 	WildTakeSpr4=spr_hina_wildtake4
+	qSandSpr=spr_hina_quicksand
 	
 	if atk=0
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1

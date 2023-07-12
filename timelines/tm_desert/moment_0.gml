@@ -1,6 +1,10 @@
 /// @description Stage Starting
 spawner_followset("WaveSet1",0,692,1)
 
+//instance_create_depth(0,0,-1,oBGwave) oBGwave.depth=16777215
+//oBGwave.sprite_index=bg_sky8
+
+
 oControl.stageNext=rm_stage4
 
 ////Skip to Plane
