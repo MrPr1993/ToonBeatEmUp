@@ -17,7 +17,10 @@
     "name": "a - Interactive Objects",
     "path": "folders/9 - Objects And Items/a - Interactive Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oShadowOnly",
+    "path": "objects/oShadowOnly/oShadowOnly.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

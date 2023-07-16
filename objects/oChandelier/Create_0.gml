@@ -22,3 +22,7 @@ walkSpeedY=2
 walkMulX=1
 walkMulY=1
 
+fallHole=0
+trainz=0
+
+shadow=spr_shadow

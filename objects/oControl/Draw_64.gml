@@ -1,6 +1,7 @@
 /// @description Game
 tvfx_draw()
 display_set_gui_size(320,240)
+draw_set_alpha(1)
 /////TV Shaders
 if betatest=1
 {

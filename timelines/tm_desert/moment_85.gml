@@ -25,7 +25,10 @@ oTrainFXSpot.Train1Y+=0.5;
 oWaterFX.z-=0.5;
 
 with oPlayer
+{
 weaponanim(weaponspr,weaponIndex,99999,99999,0,c_white)
+areaEntry=1
+}
 
 if oTrainFXSpot.Train1Y>104/4
 {specialcheck[8]+=0.5 if specialcheck[8]>2-0.5 specialcheck[8]=0 oPlayer.image_index=specialcheck[8]+3}

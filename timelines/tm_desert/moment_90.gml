@@ -2,6 +2,7 @@
 
 if oTrainFXSpot.Train1Y>104
 {
+with oPlayer {x=3840 y=220}
 with oControl
 {
 stageEndFX=1  

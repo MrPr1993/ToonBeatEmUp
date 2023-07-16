@@ -8,7 +8,7 @@ if z>1 and ground=0
 {atk=1 alarm[1]=2 
 
 if x=clamp(x,__view_get( e__VW.XView, 0 )-32,__view_get( e__VW.XView, 0 )+320+32)
-{
+{shadow=mask_none
 PlaySoundNoStack(snd_hitground) PlaySound(snd_break)
 image_index=1
 with oControl quakeFXTime=10
