@@ -186,6 +186,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TV FX","folderPath":"folders/TV FX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"z99 - Extensions","folderPath":"folders/z99 - Extensions.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Olga","folderPath":"folders/6b - NPCs/Olga.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"HinaArtwork1.png","CopyToMask":-1,"filePath":"datafiles/Gallery",},
@@ -200,7 +201,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"oFisingFish","path":"objects/oFisingFish/oFisingFish.yy",},},
@@ -455,7 +456,7 @@
     {"id":{"name":"oShadowFX","path":"objects/oShadowFX/oShadowFX.yy",},},
     {"id":{"name":"oShadowOnly","path":"objects/oShadowOnly/oShadowOnly.yy",},},
     {"id":{"name":"oShockSkip","path":"objects/oShockSkip/oShockSkip.yy",},},
-    {"id":{"name":"oShopGirl","path":"objects/oShopGirl/oShopGirl.yy",},},
+    {"id":{"name":"oTrainer","path":"objects/oTrainer/oTrainer.yy",},},
     {"id":{"name":"oShotgun","path":"objects/oShotgun/oShotgun.yy",},},
     {"id":{"name":"oShovel","path":"objects/oShovel/oShovel.yy",},},
     {"id":{"name":"snd_merman2","path":"sounds/snd_merman2/snd_merman2.yy",},},
@@ -2669,6 +2670,7 @@
     {"id":{"name":"spr_wrestler_stand","path":"sprites/spr_wrestler_stand/spr_wrestler_stand.yy",},},
     {"id":{"name":"spr_zombieman_ooc","path":"sprites/spr_zombieman_ooc/spr_zombieman_ooc.yy",},},
     {"id":{"name":"spr_zombiem_attack","path":"sprites/spr_zombiem_attack/spr_zombiem_attack.yy",},},
+    {"id":{"name":"spr_olga_talk","path":"sprites/spr_olga_talk/spr_olga_talk.yy",},},
     {"id":{"name":"spr_zombiem_burned","path":"sprites/spr_zombiem_burned/spr_zombiem_burned.yy",},},
     {"id":{"name":"snd_betty2","path":"sounds/snd_betty2/snd_betty2.yy",},},
     {"id":{"name":"spr_zombiem_elec","path":"sprites/spr_zombiem_elec/spr_zombiem_elec.yy",},},

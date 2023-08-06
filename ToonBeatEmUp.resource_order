@@ -156,6 +156,7 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"TV FX","order":33,"path":"folders/TV FX.yy",},
     {"name":"z99 - Extensions","order":1,"path":"folders/z99 - Extensions.yy",},
+    {"name":"Olga","order":8,"path":"folders/6b - NPCs/Olga.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oFisingFish","order":85,"path":"objects/oFisingFish/oFisingFish.yy",},
@@ -1899,7 +1900,6 @@
     {"name":"spr_nurse_move","order":6,"path":"sprites/spr_nurse_move/spr_nurse_move.yy",},
     {"name":"spr_nurse_stand","order":7,"path":"sprites/spr_nurse_stand/spr_nurse_stand.yy",},
     {"name":"spr_octopus_stand","order":1,"path":"sprites/spr_octopus_stand/spr_octopus_stand.yy",},
-    {"name":"spr_olga_stand","order":5,"path":"sprites/spr_olga_stand/spr_olga_stand.yy",},
     {"name":"spr_oni_attack","order":3,"path":"sprites/spr_oni_attack/spr_oni_attack.yy",},
     {"name":"spr_oni_burned","order":4,"path":"sprites/spr_oni_burned/spr_oni_burned.yy",},
     {"name":"spr_oni_club","order":5,"path":"sprites/spr_oni_club/spr_oni_club.yy",},
@@ -2471,6 +2471,7 @@
     {"name":"spr_wrestler_stand","order":11,"path":"sprites/spr_wrestler_stand/spr_wrestler_stand.yy",},
     {"name":"spr_zombieman_ooc","order":2,"path":"sprites/spr_zombieman_ooc/spr_zombieman_ooc.yy",},
     {"name":"spr_zombiem_attack","order":3,"path":"sprites/spr_zombiem_attack/spr_zombiem_attack.yy",},
+    {"name":"spr_olga_talk","order":1,"path":"sprites/spr_olga_talk/spr_olga_talk.yy",},
     {"name":"spr_zombiem_burned","order":4,"path":"sprites/spr_zombiem_burned/spr_zombiem_burned.yy",},
     {"name":"snd_betty2","order":6,"path":"sounds/snd_betty2/snd_betty2.yy",},
     {"name":"spr_zombiem_elec","order":5,"path":"sprites/spr_zombiem_elec/spr_zombiem_elec.yy",},

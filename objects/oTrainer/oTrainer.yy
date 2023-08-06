@@ -1,12 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oShopGirl",
+  "name": "oTrainer",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -34,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_shopgirl_stand",
-    "path": "sprites/spr_shopgirl_stand/spr_shopgirl_stand.yy",
+    "name": "spr_olga_stand",
+    "path": "sprites/spr_olga_stand/spr_olga_stand.yy",
   },
   "spriteMaskId": null,
   "visible": true,

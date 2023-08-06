@@ -11,6 +11,9 @@ animFrame=0
 fallHole=0
 
 shadow=spr_shadow
+canControl=0
+controlNO=9
+controller_setup()
 
 anim=0
 
@@ -28,5 +31,14 @@ interact=0
 iconheight=-48
 
 //tutorialtext="PRESS J TO\nATTACK!"
-tutorialtext="TRAIN AND BEAT UP\nBAGGY HERE."
+tutorialtext=""
+tutorialchar=""
+tutorialquestion=0
+tutorialquestionpick=0
+
+trainingcheck=0
+
+alarm[0]=30
+
+instance_create_depth(0,0,-1,oTextBox)
 

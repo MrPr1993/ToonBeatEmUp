@@ -2,12 +2,12 @@ musicplaystart(msc_training)
 oControl.showMap=0
 global.HiScoreStage=-1
 
-oPlayer.x=60
+oPlayer.x=240
 oPlayer.y=192
 with oPlayer
-{
-canControl=1
-key_right=0
+{alarm[0]=0
+canControl=0
+key_right=1
 areaEntry=0
 }
 
