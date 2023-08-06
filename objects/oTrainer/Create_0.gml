@@ -36,9 +36,33 @@ tutorialchar=""
 tutorialquestion=0
 tutorialquestionpick=0
 
+trainingnumbers=0
+
+locksuper=1
+
+detectsuper=0
+
 trainingcheck=0
+trainingdraw=function() {}
 
 alarm[0]=30
 
 instance_create_depth(0,0,-1,oTextBox)
 
+trainingdetect=function()
+{
+
+}
+
+//trainingnumbers=9
+
+trainingmoment=function() {} 
+
+
+trainingreact=function()
+{alarm[0]=160 trainingcheck=12 trainingnumbers+=1
+with oSandbag sandbagreact=function() {}
+tutorialtext=choose("GOOD!", "GREAT!", "EXCELLENT")
+trainingdraw=function() {}
+trainingdetect=function() {}
+}

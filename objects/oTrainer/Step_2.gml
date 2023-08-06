@@ -23,7 +23,8 @@ sprite_index=spr_olga_stand
 }
 
 oPlayer.pow=0
-oPlayer.super=1
+if locksuper=1
+oPlayer.super=0
 oPlayer.hp=1
 
 with oControl

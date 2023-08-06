@@ -73,6 +73,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"6b - NPCs","folderPath":"folders/6b - NPCs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animals","folderPath":"folders/6b - NPCs/Animals.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cameos","folderPath":"folders/6b - NPCs/Cameos.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Olga","folderPath":"folders/6b - NPCs/Olga.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Purchased Cameos","folderPath":"folders/6b - NPCs/Purchased Cameos.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shop","folderPath":"folders/6b - NPCs/Shop.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"7 - Enemies","folderPath":"folders/7 - Enemies.yy",},
@@ -186,7 +187,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TV FX","folderPath":"folders/TV FX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"z99 - Extensions","folderPath":"folders/z99 - Extensions.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Olga","folderPath":"folders/6b - NPCs/Olga.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"HinaArtwork1.png","CopyToMask":-1,"filePath":"datafiles/Gallery",},

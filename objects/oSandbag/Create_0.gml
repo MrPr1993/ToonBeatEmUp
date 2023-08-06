@@ -46,6 +46,11 @@ ShockSpr=spr_sandbag_elec
 BurnSpr=spr_sandbag_burned
 FrozenSpr=spr_sandbag_frozen
 
+sandbagreact=function()
+{
+
+}
+
 
 spritepos_setup(1,24,2,40)
 

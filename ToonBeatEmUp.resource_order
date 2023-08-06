@@ -53,6 +53,7 @@
     {"name":"p4 - Sofia Sprites","order":5,"path":"folders/6 - Player Data/p4 - Sofia Sprites.yy",},
     {"name":"6b - NPCs","order":25,"path":"folders/6b - NPCs.yy",},
     {"name":"Animals","order":1,"path":"folders/6b - NPCs/Animals.yy",},
+    {"name":"Olga","order":8,"path":"folders/6b - NPCs/Olga.yy",},
     {"name":"Purchased Cameos","order":7,"path":"folders/6b - NPCs/Purchased Cameos.yy",},
     {"name":"Shop","order":2,"path":"folders/6b - NPCs/Shop.yy",},
     {"name":"7 - Enemies","order":19,"path":"folders/7 - Enemies.yy",},
@@ -156,7 +157,6 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"TV FX","order":33,"path":"folders/TV FX.yy",},
     {"name":"z99 - Extensions","order":1,"path":"folders/z99 - Extensions.yy",},
-    {"name":"Olga","order":8,"path":"folders/6b - NPCs/Olga.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oFisingFish","order":85,"path":"objects/oFisingFish/oFisingFish.yy",},
