@@ -29,144 +29,203 @@ switch(trainingnumbers)
 {
 case 0: { with oPlayer canControl=1
 tutorialtext="GET CLOSE TO BAGGY AND PRESS"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"",spr_commandbutton,6+6*commandMul,"","")};
 with oSandbag sandbagreact=function() {
 if oPlayer.anim=10 and oSandbag.anim=4 and oSandbag.animFrame<0.5
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 case 1: 
 {
 tutorialtext="DO A COMBO AND TRY TO KNOCK EM' DOWN!"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+
+with oControl specialcommanddraw=function() {
+var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+for (var i=0;i<5;i++) {draw_buttontext(244+60-52+16*i,80,8,"",spr_commandbutton,6+6*commandMul,"","")}}
+
 with oSandbag sandbagreact=function() {
 if oPlayer.anim=14 and (oSandbag.anim=5)
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 case 2: 
 {
 tutorialtext="NOW RUN AND DO A DASH ATTACK WITh"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"►►",spr_commandbutton,6+6*commandMul,"","")};
 with oSandbag sandbagreact=function() {
 if oPlayer.anim=16 and (oSandbag.anim=5)
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 case 3: 
 {
 tutorialtext="DO A JUMP AND KICK! STAY STILL."
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60-8,80,8,"",spr_commandbutton,4+6*commandMul,"","")
+draw_buttontext(244+60+8,80,8,"",spr_commandbutton,6+6*commandMul,"","")
+};
+
 trainingdraw=function() {with oControl draw_buttontext(240+72,64+16-8+8,8,commandL[12],spr_commandbutton,0,"L","")}
 with oSandbag sandbagreact=function() {
 if oPlayer.anim=15 and oPlayer.key_down=0 and oPlayer.sentflying=0 and (oSandbag.anim=5 or oSandbag.anim=7) and oSandbag.animFrame<1
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 case 4: 
 {
 tutorialtext="NOW DO IT WHILE MOVING."
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60-8,80,8,"►",spr_commandbutton,4+6*commandMul,"","")
+draw_buttontext(244+60+8,80,8,"",spr_commandbutton,6+6*commandMul,"","")
+};
 trainingdraw=function() {with oControl draw_buttontext(240+72,64+16-8+8,8,commandL[12],spr_commandbutton,0,"L","")}
 with oSandbag sandbagreact=function() {
 if (oPlayer.anim=15 and oPlayer.key_down=0 and oPlayer.sentflying!=0) and (oSandbag.anim=5 or oSandbag.anim=7)
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 case 5: 
 {
 tutorialtext="NOW WHILE IN THE AIR, DO A DOWN ATTACK."
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60-16,80,8,"",spr_commandbutton,4+6*commandMul,"","")
+draw_buttontext(244+60+8,80,8,"▼",spr_commandbutton,6+6*commandMul,"","")
+}
 trainingdraw=function() {with oControl draw_buttontext(240+72,64+16-8+8,8,commandL[12],spr_commandbutton,0,"L","")}
 with oSandbag sandbagreact=function() {
 if (oPlayer.anim=15 and oPlayer.key_down) and (oSandbag.anim=4 or oSandbag.anim=5 or oSandbag.anim=7)
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 	case 6: 
 {
 trainingdetect=function() {	
-trainingreact()
+trainingreact(0)
 tutorialtext="NOW FOR THE MORE ADVANCED MOVESET."}
 } break;
+
 	case 7: 
 {
-tutorialtext="DO AN UPPERCUT WITH"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+tutorialtext="GET CLOSE AND FACE AWAY FROM THEM AND USE"
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"",spr_commandbutton,8+6*commandMul,"","")};
 with oSandbag sandbagreact=function() {
-if oPlayer.anim=80 and oSandbag.anim=5
-with oTrainer {trainingreact()}}} break;
+if oPlayer.anim=84 and oSandbag.anim=5
+with oTrainer {trainingreact(1)}}} break;
+
 	case 8: 
 {
-tutorialtext="YOU CAN USE YOUR FIST AND ZOOM WITH"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+tutorialtext="DO AN UPPERCUT WITH"
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"▼▲",spr_commandbutton,6+6*commandMul,"","")};
 with oSandbag sandbagreact=function() {
-if oPlayer.anim=81 and oSandbag.anim=5
-with oTrainer {trainingreact()}}} break;
+if oPlayer.anim=80 and oSandbag.anim=5
+with oTrainer {trainingreact(1)}}} break;
 	case 9: 
 {
-tutorialtext="NOW TO CHARGE AND RELEASE WITH"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+tutorialtext="YOU CAN USE YOUR FIST AND ZOOM WITH"
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"TAP ►",spr_commandbutton,6+6*commandMul,"","")};
+
+with oSandbag sandbagreact=function() {
+if oPlayer.anim=81 and oSandbag.anim=5
+with oTrainer {trainingreact(1)}}} break;
+	case 10: 
+{
+tutorialtext="NOW TO USE A CHARGE ATTACK"
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"HOLD\nRELEASE!",spr_commandbutton,6+6*commandMul,"","AND")};
+
 with oSandbag sandbagreact=function() {
 if oPlayer.anim=85 and (oSandbag.anim>5)
-with oTrainer {trainingreact()}}} break;
-
-case 10: {
-tutorialtext="TO GRAB EM' GET CLOSE AND PUMMEL WITH"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
-trainingdetect=function() {
-if oPlayer.anim=36 and oPlayer.anim!=35
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 
 case 11: {
-tutorialtext="GRAB EM' AGAIN AND THROW WITH"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+tutorialtext="TO GRAB EM' GET CLOSE AND PUMMEL"
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"GRAB",spr_commandbutton,6+6*commandMul,"","")};
 trainingdetect=function() {
-if oPlayer.anim=37 and oPlayer.anim!=35
-with oTrainer {trainingreact()}}} break;
+if oPlayer.anim=36 and oPlayer.anim!=35
+with oTrainer {trainingreact(1)}}} break;
 
 case 12: {
+tutorialtext="GRAB EM' AGAIN AND THROW WITH"
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"GRAB►",spr_commandbutton,6+6*commandMul,"","")};
+trainingdetect=function() {
+if oPlayer.anim=37 and oPlayer.anim!=35
+with oTrainer {trainingreact(1)}}} break;
+
+case 13: {
 tutorialtext="ONCE MORE AND THROW EM' BACKWARDS WITH"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"GRAB◄",spr_commandbutton,6+6*commandMul,"","")};
 trainingdetect=function() {
 if oPlayer.anim=38 and oPlayer.anim!=35
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 
 
-case 13: 
-{alarm[0]=900
+case 14: 
+{alarm[0]=1600
 trainingdetect=function() {	with oPlayer canmove=0 
-trainingreact() 
+trainingreact(0) 
+tutorialtext="OKAY WE MIGHT HAVE KINDA ROUGHED UP BAGGY TOO MUCH. SO LET'S GIVE IT A KISS."}
+} break;
+
+case 15: {
+tutorialtext="USE TAUNT WITH"
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"",spr_commandbutton,9+6*commandMul,"","")};
+trainingdetect=function() {
+if oPlayer.anim=83
+with oTrainer {trainingreact(1)}}} break;
+
+case 16: 
+{alarm[0]=1600
+trainingdetect=function() {	with oPlayer canmove=0 
+trainingreact(0) 
 tutorialtext="NOW FOR THE SPECIALS. THEY CAN BE USED FOR STRONGER MOVES BUT THEY DRAIN YOUR HEALTH. SO TAKE IT EASY ON EM'."}
 } break;
 
-case 14: {	with oPlayer canmove=1
+case 17: {	with oPlayer canmove=1
 tutorialtext="USE YOUR FIRST SPECIAL WITH"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"",spr_commandbutton,5+6*commandMul,"","")};
+
 with oSandbag sandbagreact=function() {
 if oPlayer.anim=17 and oSandbag.anim>5
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 
-case 15: {
+case 18: {
 tutorialtext="NOW YOUR OTHER SPECIAL. MOVE AND USE"
-trainingdraw=function() {with oControl draw_buttontext(240+72,240-32,8,commandL[12],spr_commandbutton,0,"L","")}
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"►",spr_commandbutton,5+6*commandMul,"","")};
+
 with oSandbag sandbagreact=function() {
 if oPlayer.anim=18 and oSandbag.anim>5
-with oTrainer {trainingreact()}}} break;
+with oTrainer {trainingreact(1)}}} break;
 ////Training Parts
 
-case 16: 
-{with oPlayer {canControl=0 } alarm[0]=1000 locksuper=0
+case 19: 
+{with oPlayer {canControl=0 } alarm[0]=1500 locksuper=0
 trainingdetect=function() {	 
-trainingreact() 
+trainingreact(0) 
 tutorialtext="AND NOW FOR THE GRAND FINALE. SHOWTIME. YOU CAN FILL YOUR BAR BY DEALING OR TAKING DAMAGE."}
 } break;
 
-case 17: 
+case 20: 
 {with oPlayer canControl=1 tutorialtext="HAVE A GO WITH." oPlayer.super=100
+tutorialtext="TO USE YOUR SHOWTIME USE"
+with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
+draw_buttontext(244+60,80,8,"",spr_commandbutton,7+6*commandMul,"","")};
 trainingdetect=function() {	 if oPlayer.anim=50 detectsuper=4 else detectsuper-=1 
 	
-	if oSandbag.anim>4 and detectsuper=2 {trainingreact() tutorialtext="GREAT SHOW!" }
+	if oSandbag.anim>4 and detectsuper=2 {trainingreact(1) tutorialtext="GREAT SHOW!" }
 	} 
 
 } break;
 
-case 18: 
+case 21: 
 {with oPlayer canControl=0 alarm[0]=160
 trainingdetect=function() {	 
-trainingreact() 
+trainingreact(1) 
 tutorialtext="AND THAT IS IT FOR THE TRAINING."}
 } break;
 
-case 19: 
+case 22: 
 {with oPlayer canControl=0
 trainingdetect=function() {	 
-trainingreact() 
+trainingreact(1) 
 tutorialtext="A'IGHT. BEAT UP BAGGY HERE TO YOUR HEART'S CONTENT."}
 } break;
 } break;

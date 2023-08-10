@@ -58,9 +58,14 @@ trainingdetect=function()
 
 trainingmoment=function() {} 
 
+with oControl specialcommanddraw=function()
+{};
 
-trainingreact=function()
-{alarm[0]=160 trainingcheck=12 trainingnumbers+=1
+trainingreact=function(_willchange)
+{
+with oControl specialcommanddraw=function() {};
+
+alarm[0]=160 trainingcheck=12 trainingnumbers+=1 if _willchange {animFrame=0 anim=1}
 with oSandbag sandbagreact=function() {}
 tutorialtext=choose("GOOD!", "GREAT!", "EXCELLENT")
 trainingdraw=function() {}

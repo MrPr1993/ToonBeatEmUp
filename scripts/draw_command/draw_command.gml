@@ -153,6 +153,9 @@ draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"",commandL[1])
 draw_buttontext(320-8,240-32,8,commandL[12],spr_commandbutton,0,"L","")
 }
 
+if commandType=13
+specialcommanddraw();
+
 }
 else /////Controller
 {
@@ -336,6 +339,9 @@ draw_buttontext(8,240-32,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
 draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1]) 
 draw_buttontext(320-8,240-32,8,commandL[12],spr_commandbutton,7+6*commandMul,"","")
 }
+
+if commandType=13
+specialcommanddraw();
 
 }
 

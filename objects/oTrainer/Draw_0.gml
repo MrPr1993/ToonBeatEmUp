@@ -38,8 +38,11 @@ else
 draw_text(244+8-8,64+16-8+8*tutorialquestionpick,string("✰")) draw_text(244+8,56+16,string(tutorialchar)+"'S TRAINING")
 draw_text(244+8,64+16,string("FREE TRAINING"))
 
+
 trainingdraw()
 }
+
+with oControl draw_command(13)
 
 draw_self()
 //draw_set_halign(fa_left)

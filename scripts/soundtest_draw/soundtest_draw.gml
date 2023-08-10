@@ -125,12 +125,12 @@ if songno=36 {songname="TRAININ' GROUNDS" playingSound=msc_training songcomposer
 if songno=37 {songname="SOUR SURVIVAL" playingSound=msc_survival songcomposer="EVADER MUSIC"}
 if songno=38 {songname="CALM FISHER" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=39 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
-if songno=40 {songname="HAPPYY GAMBLING" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=40 {songname="HAPPY GAMBLING" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=41 {songname="CONCENTRATING BREAK" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
-if songno=42 {songname="ODD TIME" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
-if songno=43 {songname="FRIGHT MOMENT" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
-if songno=44 {songname="MYSTERY INVESTIGATION" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
-if songno=45 {songname="ACTION SCENE" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=42 {songname="ODD TIME" playingSound=msc_weird songcomposer="EVADER MUSIC"}
+if songno=43 {songname="FRIGHT MOMENT" playingSound=msc_scary songcomposer="EVADER MUSIC"}
+if songno=44 {songname="MYSTERY INVESTIGATION" playingSound=msc_mystery songcomposer="EVADER MUSIC"}
+if songno=45 {songname="ACTION SCENE" playingSound=msc_action songcomposer="EVADER MUSIC"}
 if songno=46 {songname="ENCORE END" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 if songno=47 {songname="OUT OF PLACE" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 
