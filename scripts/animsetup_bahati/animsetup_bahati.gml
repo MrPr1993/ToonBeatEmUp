@@ -1057,7 +1057,7 @@ if instance_exists(targetID) targetID.depth=depth+1
 	character_release(0,-4,2*image_xscale,0,3,5)}}
 	}
 
-	if anim=38 ///Throw Backards
+	if anim=38 ///Throw Backwards
 	{grabLockX=x
 
 	prevanim=38

@@ -2,6 +2,8 @@
 // You can write your code in this editor
 z=0
 
+specialcheck[9]=0
+
 image_speed=0
 
 trainz=0
@@ -62,7 +64,7 @@ with oControl specialcommanddraw=function()
 {};
 
 trainingreact=function(_willchange)
-{
+{specialcheck[9]=0
 with oControl specialcommanddraw=function() {};
 
 alarm[0]=160 trainingcheck=12 trainingnumbers+=1 if _willchange {animFrame=0 anim=1}

@@ -34,8 +34,12 @@ case 3: tutorialtext="LET'S BEGIN, SHORTSTACK." break;
 }
 else
 {PlaySound(snd_picked) with oPlayer {xstart=x canControl=1} locksuper=0 tutorialquestion=0 tutorialtext="A'IGHT. BEAT UP BAGGY HERE TO YOUR HEART'S CONTENT."}
+draw_text(244+8-8,64+16-8+8*tutorialquestionpick,string("✰"))
+if string_length(tutorialchar)<=4
+draw_text(244+8,56+16,string(tutorialchar)+"'S TRAINING")
+else
+draw_text_transformed(244+8,56+16,string(tutorialchar)+"'S TRAINING",0.75,1,0)
 
-draw_text(244+8-8,64+16-8+8*tutorialquestionpick,string("✰")) draw_text(244+8,56+16,string(tutorialchar)+"'S TRAINING")
 draw_text(244+8,64+16,string("FREE TRAINING"))
 
 
