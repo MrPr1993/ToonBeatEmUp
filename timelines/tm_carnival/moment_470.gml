@@ -7,8 +7,8 @@ MaxSpawnFrame=0 visible=1
 FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 turn0=-1 
 
-enemytype0=oBear  turn0=-1 name0="YOGI" hp0=0.15 pal0=2 palS0=spr_playerpal;
-enemytype1=oBear turn1=-1 name1="FOZZI" hp1=0.15 pal1=3 palS1=spr_playerpal;
+enemytype0=oBear  turn0=-1 name0="SNOOZI" hp0=0.15 pal0=6 palS0=spr_bearpal;
+enemytype1=oBear turn1=-1 name1="ROLI" hp1=0.15 pal1=7 palS1=spr_bearpal;
 enemytype2=oClown turn2=-1
 enemyMax=2
 }

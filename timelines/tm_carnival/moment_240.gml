@@ -7,7 +7,7 @@ if __view_get( e__VW.XView, 0 )>=1158
 	
 en5=instance_create(__view_get( e__VW.XView, 0)-64-200,180,oEntryFenceJump)
 with en5
-{depth=16777215 isDepth=0 rangeXAdd=-48 xAdd=-200
+{depth=16777207 isDepth=0 rangeXAdd=-48 xAdd=-200
 }
 
 en6=instance_create(__view_get( e__VW.XView, 0 )+320+16,242,oSneak)

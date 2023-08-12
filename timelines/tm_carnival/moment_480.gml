@@ -20,11 +20,11 @@ enemytype0=oClown turn2=-1
 enemyMax=0
 }
 
- en2=instance_create_depth(6734,192,-1,oEntrySeat) en2.rangeX=6276-240
- with en2 {enemy_modify(spr_playerpal,4,"PADDY",0,0.2,0.2)}
+ en2=instance_create_depth(6734,192,-1,oEntrySeat) en2.rangeX=6734-240
+ with en2 {sittingSpr=spr_bear_hang3 spawnEnemy=oBear  enemy_modify(spr_bearpal,8,"TERRI",0,0.2,0.2)}
 
- en3=instance_create_depth(6948,192,-1,oEntrySeat) en3.rangeX=6276-240
- with en3 {enemy_modify(spr_playerpal,4,"PADDY",0,0.2,0.2)}
+ en3=instance_create_depth(6948,192,-1,oEntrySeat) en3.rangeX=6734-240
+ with en3 {sittingSpr=spr_bear_hang2 spawnEnemy=oBear  enemy_modify(spr_bearpal,9,"JERRI",0,0.2,0.2)}
 
 
 }

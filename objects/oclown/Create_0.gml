@@ -44,7 +44,7 @@ FlatSpr=spr_clown_flat
 ShockSpr=spr_clown_elec
 BurnSpr=spr_clown_burned
 FrozenSpr=spr_clown_frozen
-
+FrontSpr=spr_clown_front hasFront=1
 
 current_pal=0;
-my_pal_sprite=spr_playerpal
+my_pal_sprite=spr_bearpal
