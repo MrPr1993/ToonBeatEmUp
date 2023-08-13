@@ -2,11 +2,14 @@
 
 if __view_get( e__VW.XView, 0 )>=3594
 {
-en5=instance_create_depth(__view_get( e__VW.XView, 0 )-32,196,-1,oSwing) with en5
-{canAttack=5 alarm[1]=30}
-en6=instance_create_depth(__view_get( e__VW.XView, 0 )+320+32,196+48,-1,oEnemy1B) with en6
-{canAttack=5 alarm[1]=30 image_xscale=-1 weapon_add("PIPE")}
-//spawner_followset("WaveSet1",0,3338-64+640,1)
+
+
+ en5=instance_create_depth(6018,192,-1,oEntrySeat) en5.rangeX=6018+60
+ with en5 {z=-38 sittingSpr=spr_bear_hang2 spawnFall=spr_bear_front  spawnEnemy=oBear enemy_modify(spr_bearpal,0,"ROOSEVELT",0,0.2,0.2)}
+ en6=instance_create_depth(6018+64,192,-1,oEntrySeat) en6.rangeX=6018+60
+ with en6 {z=-64 sittingSpr=spr_bear_hang1 spawnFall=spr_bear_front  spawnEnemy=oBear enemy_modify(spr_bearpal,1,"TEDDIE",0,0.2,0.2)}
+
+
 }
 else
 timeline_position-=1

@@ -33,8 +33,9 @@ spawnEnemy=oEnemy1B rangeX=x-32
 }
 
 
-en4=instance_create(__view_get( e__VW.XView, 0)+320,176+32,oEntryBalloon)
+en4=instance_create(4646,176+48,oEntryBalloon)
 en4.rideX=x+160
+en4.rideX=4700
 with en4
 {
 	spawnFall=spr_wrestler_hit
@@ -49,8 +50,8 @@ with en4
 	
 }
 
-en5=instance_create(__view_get( e__VW.XView, 0)+320,176+64,oEntryBalloon)
-en5.rideX=x+160 en2.image_xscale=-1 en2.horsepal=2 en2.arriveDir=-1
+en5=instance_create(4646,176+64,oEntryBalloon)
+en5.rideX=x+160 en5.image_xscale=-1 en5.horsepal=2 en5.arriveDir=-1
 with en5
 {horseSpd=-2
 	spawnFall=spr_sneak_jump

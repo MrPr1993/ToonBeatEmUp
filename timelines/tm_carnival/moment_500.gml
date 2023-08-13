@@ -1,33 +1,81 @@
+///@description Ride
+
+if specialSet6=120
+{
+boss=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oDuckBoss)
+musicplaystart(msc_boss3)
+oControl.bossID=oDuckBoss
+layer_set_visible("THE_AUDIENCE",1)
+
+
+
+}
+else
+{
+timeline_position-=1
+
 if !instance_exists(en1)
 and !instance_exists(en2)
 and !instance_exists(en3)
 and !instance_exists(en4)
 and !instance_exists(en5)
+and !instance_exists(en6)
+{specialSet6+=1
+if specialSet6=60
 {
-with oControl {//camMove=0 camMax=room_width
- goActive=1 alarm[1]=90
-xGoCheck=__view_get( e__VW.XView, 0 )+320}
-
-spawner_followset("WaveSet1",0,8032,1)
-
-en1=instance_create(6832, 192,oAreaSpawner) with en1
-{
-spawnX=6832-240 ///768
-MaxSpawnFrame=0 visible=1
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-turn0=-1 
-
-enemytype0=oClown turn2=-1
-enemyMax=0
+en1=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oClown)
+with en1 {image_xscale=1 ground=0 canmove=0 anim=13
+	z=-200 //weapon_add("HARPOONGUN")
+	}
+en2=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oClown)
+with en2 {image_xscale=1 ground=0  enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0.24)
+	 z=-200 canmove=0 anim=13
+	}
 }
 
- en2=instance_create_depth(6734,192,-1,oEntrySeat) en2.rangeX=6734-240
- with en2 {enemy_modify(spr_playerpal,10,"OSO",0,0.2,0.2)}
 
- en3=instance_create_depth(6948,192,-1,oEntrySeat) en3.rangeX=6734-240
- with en3 {enemy_modify(spr_playerpal,11,"BIR",0,0.2,0.2)}
+if specialSet6=80
+{
+en1=instance_create(__view_get( e__VW.XView, 0)+160-64,228-32,oBear)
+with en1 {image_xscale=1 ground=0 canmove=0 anim=13
+	z=-200 //weapon_add("HARPOONGUN")
+	}
+en2=instance_create(__view_get( e__VW.XView, 0)+160-64,228+32,oFairy)
+with en2 {image_xscale=1 ground=0  //enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0.24)
+	 z=-200 canmove=0 anim=13
+	}
+en1=instance_create(__view_get( e__VW.XView, 0)+160+64,228-32,oBear)
+with en1 {image_xscale=-1 ground=0 canmove=0 anim=13
+	z=-200 //weapon_add("HARPOONGUN")
+	}
+en2=instance_create(__view_get( e__VW.XView, 0)+160+64,228+32,oFairy)
+with en2 {image_xscale=-1 ground=0  //enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0.24)
+	 z=-200 canmove=0 anim=13
+	}
+}
+
+if specialSet6=100
+{
+en1=instance_create(__view_get( e__VW.XView, 0)+160-64,228-32,oClown)
+with en1 {image_xscale=1 ground=0 canmove=0 anim=13
+	z=-200 //weapon_add("HARPOONGUN")
+	}
+en2=instance_create(__view_get( e__VW.XView, 0)+160-64,228+32,oBear)
+with en2 {image_xscale=1 ground=0  enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0.24)
+	 z=-200  canmove=0 anim=13
+	}
+en3=instance_create(__view_get( e__VW.XView, 0)+160+64,228-32,oClown)
+with en3 {image_xscale=-1 ground=0  canmove=0 anim=13
+	z=-200 //weapon_add("HARPOONGUN")
+	}
+en4=instance_create(__view_get( e__VW.XView, 0)+160+64,228+32,oBear)
+with en4 {image_xscale=-1 ground=0  enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0.24)
+	 z=-200  canmove=0 anim=13
+	}
+}
+
+}
+
 
 
 }
-else
-timeline_position-=1

@@ -37,3 +37,10 @@ if animFrame>3 and ground {canmove=1}
 }
 
 	}
+	
+		///Diving Down
+	if anim=13
+	{sprite_index=spr_bear_front image_index=0
+		
+	if ground {animFrame=5 anim=10}
+	}

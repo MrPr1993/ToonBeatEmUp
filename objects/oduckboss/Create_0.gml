@@ -13,6 +13,8 @@ rangeAtk=360
 
 OneAttack=2
 
+isBoss=1
+
 hp=2
 maxhp=2
 

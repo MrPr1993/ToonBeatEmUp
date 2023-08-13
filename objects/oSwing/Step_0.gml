@@ -92,11 +92,11 @@ enemy_ai()
 if hurt=1
 {
 ///Special State to drop weapon
-if anim=5
-or anim=6
-or anim=7
-or anim=8
-or dead=1
+if dead=1
+//or anim=6
+//or anim=7
+//or anim=8
+//or dead=1
 {
 if weaponspr!=-1
 {

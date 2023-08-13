@@ -1,6 +1,8 @@
 /// @description Stage Starting
 spawner_followset("WaveSet1",0,692+224,1)
 
+layer_set_visible("THE_AUDIENCE",0)
+
 oControl.stageNext=rm_stage4
 
 ////Skip to Plane
@@ -22,3 +24,10 @@ layer_background_visible(bgfog1,0)
 
 
 oPlayer.x-=64
+
+
+////Skip parts
+//if x=-9999999999
+{
+timeline_skip(358)
+}

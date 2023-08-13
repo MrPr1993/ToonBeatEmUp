@@ -44,3 +44,10 @@ MoveType=1 damage=0.1
  if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
+	
+		///Diving Down
+	if anim=13
+	{z+=2 sprite_index=spr_clown_drop image_index+=0.2 zSpeed=0
+		
+	if ground {animFrame=5 anim=10}
+	}
