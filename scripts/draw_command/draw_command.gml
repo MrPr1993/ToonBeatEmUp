@@ -92,16 +92,16 @@ draw_buttontext(8,240-8-4,8,"",spr_commandbutton,0,"K",oControl.commandL[1])
 if pickedcolor=1
 draw_buttontext(45-32+32+64,184-16+8,8,"",spr_commandbutton,0,"L","",oControl.commandL[11])
 
-draw_buttontext(320-8,240-24+4,8,commandL[12],spr_commandbutton,0,"H",oControl.commandL[12])
+draw_buttontext(320-8,240-32,8,commandL[12],spr_commandbutton,0,"H",oControl.commandL[12])
 
 
 
 draw_buttontext(160-16,240-24+4,8,oControl.commandL[13],spr_commandbutton,0,"Y","")
 draw_buttontext(160+16,240-24+4,8,"",spr_commandbutton,0,"U",oControl.commandL[14])
 
-draw_buttontext(320-88,16,8,"",spr_commandbutton,0,"L","","")
+draw_buttontext(320-33,16,8,"",spr_commandbutton,0,"L","","")
 draw_set_halign(fa_center)
-draw_text(320-88,16+12,oControl.commandL[15])
+draw_text(320-88,16+12,"")
 draw_text(160,8,oControl.commandL[16])
 draw_set_halign(fa_left)
 
@@ -240,14 +240,14 @@ draw_buttontext(8,240-8-4,8,"",spr_commandbutton,5+6*commandMul,"",oControl.comm
 if pickedcolor=1
 draw_buttontext(45-32+32+64,184-16+8,8,"",spr_commandbutton,10+6*commandMul,"",oControl.commandL[11])
 
-draw_buttontext(320-8,240-24+4,8,oControl.commandL[12],spr_commandbutton,7+6*commandMul,"","")
+draw_buttontext(320-8,240-32,8,oControl.commandL[12],spr_commandbutton,7+6*commandMul,"","")
 
 draw_buttontext(160-16,240-24+4,8,oControl.commandL[13],spr_commandbutton,8+6*commandMul,"","")
 draw_buttontext(160+16,240-24+4,8,"",spr_commandbutton,9+6*commandMul,"",oControl.commandL[14])
 
-draw_buttontext(320-88,16,8,"",spr_commandbutton,10+6*commandMul,"","")
+draw_buttontext(320-33,16,8,"",spr_commandbutton,10+6*commandMul,"","")
 draw_set_halign(fa_center)
-draw_text(320-88,16+12,oControl.commandL[15])
+draw_text(320-88,16+12,"")
 draw_text(160,8,oControl.commandL[16])
 draw_set_halign(fa_left)
 }

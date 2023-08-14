@@ -33,14 +33,17 @@ else
 {
 draw_text(x+40,190,string_hash_to_newline("PALETTE"))
 
+var palmax=16; if global.UnlockAltPal2 palmax=32;
+var checkpal="NORMAL" if custommode checkpal="CUSTOM"
+
 if controlNO=1
-draw_text(x+40,190+16,"▲SET▼\n"+string(global.p1Pals)+"\n◄"+string(global.p1Pal)+"/16►")
+draw_text(x+40,190+16,"▲SET▼\n"+string(checkpal)+"\n◄"+string(global.p1Pal+1)+"/"+string(palmax)+"►")
 if controlNO=2
-draw_text(x+40,190+16,"▲SET▼\n"+string(global.p2Pals)+"\n◄"+string(global.p2Pal)+"/16►")
+draw_text(x+40,190+16,"▲SET▼\n"+string(checkpal)+"\n◄"+string(global.p2Pal+1)+"/"+string(palmax)+"►")
 if controlNO=3
-draw_text(x+40,190+16,"▲SET▼\n"+string(global.p3Pals)+"\n◄"+string(global.p3Pal)+"/16►")
+draw_text(x+40,190+16,"▲SET▼\n"+string(checkpal)+"\n◄"+string(global.p3Pal+1)+"/"+string(palmax)+"►")
 if controlNO=4
-draw_text(x+40,190+16,"▲SET▼\n"+string(global.p4Pals)+"\n◄"+string(global.p4Pal)+"/16►")
+draw_text(x+40,190+16,"▲SET▼\n"+string(checkpal)+"\n◄"+string(global.p4Pal+1)+"/"+string(palmax)+"►")
 
 
 }

@@ -7,7 +7,7 @@ global.HiScoreName10=ini_read_string("HIGHSCORE10", "NAME", "DAN");
 global.HiScore10=ini_read_real("HIGHSCORE10", "SCORE", 10000);
 global.HiScoreFace10=ini_read_real("HIGHSCORE10", "FACE", 0);
 global.HiScoreStage10=ini_read_real("HIGHSCORE10", "STAGE", 1);
-global.HiScorePalS10=ini_read_real("HIGHSCORE10", "PALS", spr_playerpal2);
+global.HiScorePalS10=ini_read_real("HIGHSCORE10", "PALS", spr_playerpal);
 global.HiScorePal10=ini_read_real("HIGHSCORE10", "PAL", 0);
 
 

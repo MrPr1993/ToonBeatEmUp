@@ -14,6 +14,8 @@ introprep=0
 introtextadd=0
 introtextaddspd=0
 
+custommode=0
+
 SelectingX=0
 
 charbuffer=0

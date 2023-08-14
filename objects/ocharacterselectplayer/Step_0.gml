@@ -5,15 +5,48 @@
 if introbuffer!=0 introbuffer-=1
 if charbuffer!=0 charbuffer-=1
 
+
+
 SelectingX=lerp(SelectingX,0,0.5)
+
 
 if controlNO=1 charno=global.P1Char
 if controlNO=2 charno=global.P2Char
 if controlNO=3 charno=global.P3Char
 if controlNO=4 charno=global.P4Char
+
+var palmax=15; if global.UnlockAltPal2 palmax=31;
+var charcheck=spr_vivapal;
+var customcheck=spr_custompal
+if charno=1 
+{charcheck=spr_hinapal;
+customcheck=spr_custompal2}
+if charno=2
+{charcheck=spr_bahatipal;
+customcheck=spr_custompal3}
+if charno=3 
+{charcheck=spr_sofiapal;
+customcheck=spr_custompal4}
+
+if custommode=0
+{
+if controlNO=1 global.p1Pals=charcheck
+if controlNO=2 global.p2Pals=charcheck
+if controlNO=3 global.p3Pals=charcheck
+if controlNO=4 global.p4Pals=charcheck
+}
+else
+{
+if controlNO=1 global.p1Pals=customcheck
+if controlNO=2 global.p2Pals=customcheck
+if controlNO=3 global.p3Pals=customcheck
+if controlNO=4 global.p4Pals=customcheck
+}
+
 if charno=0
 {sprite_index=spr_csviva picksound=snd_viva1
-ability1="✰✰✰" ability2="✰✰✰" ability3="✰✰✰"}
+ability1="✰✰✰" ability2="✰✰✰" ability3="✰✰✰"
+}
 if charno=1
 {sprite_index=spr_cshina picksound=snd_hina1
 ability1="✰✰✰" ability2="✰✰" ability3="✰✰✰✰"}
@@ -121,29 +154,41 @@ PlaySoundNoStack(snd_steal)
 }
 }
 
+
+
 if controlNO=1
 {
 if palettemode=0
 {
+
+
 if -key_left_pressed {SelectingX=-2 if global.P1Char=0 global.P1Char=3 else global.P1Char-=1 PlaySoundNoStack(snd_select)}
 if key_right_pressed {SelectingX=2 if global.P1Char=3 global.P1Char=0 else global.P1Char+=1 PlaySoundNoStack(snd_select)}
 }
+
+if palettemode=1
+{
+if global.UnlockAltPal3
+{
+if key_up_pressed custommode^=1;
+if -key_down_pressed custommode^=1;
+
+if controlNO=1 global.p1CPal=custommode
+if controlNO=2 global.p2CPal=custommode
+if controlNO=3 global.p3CPal=custommode
+if controlNO=4 global.p4CPal=custommode
+}
+}
+
 if global.UnlockAltPal=1 if palettemode=1
 {
-if -key_left_pressed if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1
-if key_right_pressed if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1
+if -key_left_pressed if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1
+if key_right_pressed if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1
 
-if key_up_pressed
+if global.UnlockAltPal=2
 {
-if global.p1Pals=spr_playerpal global.p1Pals=spr_custompal else
-if global.p1Pals=spr_custompal global.p1Pals=spr_playerpal2 else
-global.p1Pals=spr_playerpal
-}
-if -key_down_pressed
-{
-if global.p1Pals=spr_playerpal global.p1Pals=spr_playerpal2 else
-if global.p1Pals=spr_playerpal2 global.p1Pals=spr_custompal else
-global.p1Pals=spr_playerpal
+if key_up_pressed custommode^=1;
+if -key_down_pressed custommode^=1;
 }
 
 }
@@ -157,21 +202,13 @@ if key_right_pressed {SelectingX=2 if global.P2Char=3 global.P2Char=0 else globa
 }
 if global.UnlockAltPal=1 if palettemode=1
 {
-if -key_left_pressed if global.p2Pal=0 global.p2Pal=15 else global.p2Pal-=1
-if key_right_pressed if global.p2Pal=15 global.p2Pal=0 else global.p2Pal+=1
+if -key_left_pressed if global.p2Pal=0 global.p2Pal=palmax else global.p2Pal-=1
+if key_right_pressed if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1
 
-if key_up_pressed
-{
-if global.p2Pals=spr_playerpal global.p2Pals=spr_custompal else
-if global.p2Pals=spr_custompal global.p2Pals=spr_playerpal2 else
-global.p2Pals=spr_playerpal
-}
-if -key_down_pressed
-{
-if global.p2Pals=spr_playerpal global.p2Pals=spr_playerpal2 else
-if global.p2Pals=spr_playerpal2 global.p2Pals=spr_custompal else
-global.p2Pals=spr_playerpal
-}
+
+
+
+
 }
 charno=global.P2Char}
 if controlNO=3
@@ -181,23 +218,13 @@ if palettemode=0
 if -key_left_pressed {SelectingX=-2 if global.P3Char=0 global.P3Char=3 else global.P3Char-=1 PlaySoundNoStack(snd_select)}
 if key_right_pressed {SelectingX=2 if global.P3Char=3 global.P3Char=0 else global.P3Char+=1 PlaySoundNoStack(snd_select)}
 }
+
 if global.UnlockAltPal=1 if palettemode=1
 {
-if -key_left_pressed if global.p3Pal=0 global.p3Pal=15 else global.p3Pal-=1
-if key_right_pressed if global.p3Pal=15 global.p3Pal=0 else global.p3Pal+=1
+if -key_left_pressed if global.p3Pal=0 global.p3Pal=palmax else global.p3Pal-=1
+if key_right_pressed if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1
 
-if key_up_pressed
-{
-if global.p3Pals=spr_playerpal global.p3Pals=spr_custompal else
-if global.p3Pals=spr_custompal global.p3Pals=spr_playerpal2 else
-global.p3Pals=spr_playerpal
-}
-if -key_down_pressed
-{
-if global.p3Pals=spr_playerpal global.p3Pals=spr_playerpal2 else
-if global.p3Pals=spr_playerpal2 global.p3Pals=spr_custompal else
-global.p3Pals=spr_playerpal
-}
+
 }
 charno=global.P3Char}
 if controlNO=4
@@ -209,21 +236,10 @@ if key_right_pressed {SelectingX=2 if global.P4Char=3 global.P4Char=0 else globa
 }
 if global.UnlockAltPal=1 if palettemode=1
 {
-if -key_left_pressed if global.p4Pal=0 global.p4Pal=15 else global.p4Pal-=1
-if key_right_pressed if global.p4Pal=15 global.p4Pal=0 else global.p4Pal+=1
+if -key_left_pressed if global.p4Pal=0 global.p4Pal=palmax else global.p4Pal-=1
+if key_right_pressed if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1
 
-if key_up_pressed
-{
-if global.p4Pals=spr_playerpal global.p4Pals=spr_custompal else
-if global.p4Pals=spr_custompal global.p4Pals=spr_playerpal2 else
-global.p4Pals=spr_playerpal
-}
-if -key_down_pressed
-{
-if global.p4Pals=spr_playerpal global.p4Pals=spr_playerpal2 else
-if global.p4Pals=spr_playerpal2 global.p4Pals=spr_custompal else
-global.p4Pals=spr_playerpal
-}
+
 
 }
 charno=global.P4Char}

@@ -250,10 +250,18 @@ global.P2Score=0
 global.P3Score=0
 global.P4Score=0
 
+
+
+
 global.p1Pal=0
 global.p2Pal=0
 global.p3Pal=0
 global.p4Pal=0
+
+global.p1CPal=0
+global.p2CPal=0
+global.p3CPal=0
+global.p4CPal=0
 
 global.p1Pals=spr_playerpal
 global.p2Pals=spr_playerpal
@@ -384,6 +392,8 @@ global.P3Score=0
 global.P4Score=0
 
 global.HiScoreStage=1
+
+
 
 global.P1Char=0
 global.P2Char=1

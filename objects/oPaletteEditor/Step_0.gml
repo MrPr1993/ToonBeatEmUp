@@ -1,6 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+customadd=spr_custompal
+customadd2="Special/custompalette.png";
+if character=1
+{customadd=spr_custompal2
+customadd2="Special/custompalette2.png";}
+if character=2
+{customadd=spr_custompal3
+customadd2="Special/custompalette3.png";}
+if character=3
+{customadd=spr_custompal4
+customadd2="Special/custompalette4.png";}
 
 controller_setup()
 
@@ -15,21 +25,21 @@ if SelectChar=0
 
 if key_super{	////RESET COLOR
 surface_resize(application_surface,320,240)
-surface_save_part(application_surface,"Special/custompalette.png",0,0,16,24)
+surface_save_part(application_surface,customadd2,0,0,32,24)
 surface_resize(application_surface,320,240)
 surface_free(application_surface)
 
 }
 if pickedcolor=0
-{if key_jump room=rm_menu
+{if key_B room=rm_menu
 	
-if key_right_pressed if current_pal=15 current_pal=1 else current_pal+=1
-if -key_left_pressed if current_pal=1 current_pal=15 else current_pal-=1
+if key_right_pressed if current_pal=31 current_pal=1 else current_pal+=1
+if -key_left_pressed if current_pal=1 current_pal=31 else current_pal-=1
 
 if key_up_pressed if paletterow=0 paletterow=23 else paletterow-=1
 if -key_down_pressed if paletterow=23 paletterow=0 else paletterow+=1
 
-if key_attack pickedcolor=1
+if key_A pickedcolor=1
 }
 else
 {
@@ -70,25 +80,25 @@ if key_up_pressed if colorOrder=1 colorOrder=3 else colorOrder-=1
 if -key_down_pressed if colorOrder=3 colorOrder=1 else colorOrder+=1
 
 
-if key_attack 
+if key_A 
 {
 pickedcolor=0
 surface_resize(application_surface,320,240)
-surface_save_part(application_surface,"Special/custompalette.png",0,0,16,24)
+surface_save_part(application_surface,customadd2,0,0,32,24)
 surface_resize(application_surface,320,240)
 surface_free(application_surface)
-sprite_replace(spr_custompal,"Special/custompalette.png",0,0,0,0,0)
+sprite_replace(customadd,customadd2,0,0,0,0,0)
 }
 
-if key_jump
+if key_B
 pickedcolor=0
 }
 
-if key_taunt {copyColor=TotalColor
+if key_LT {copyColor=TotalColor
 	
 	}
 
-if key_punchback
+if key_RT
 {
 pickedcolor=1
 TotalColor=copyColor
@@ -100,18 +110,21 @@ colorR=colour_get_red(TotalColor);
 colorG=colour_get_green(TotalColor);
 colorB=colour_get_blue(TotalColor);
 
-draw_sprite_part_ext(spr_custompal,0,0,0,1,24,1*current_pal,0,1,1,c_white,1)	
+
+
+
+draw_sprite_part_ext(customadd,0,0,0,1,24,1*current_pal,0,1,1,c_white,1)	
 
 surface_resize(application_surface,320,240)
-surface_save_part(application_surface,"Special/custompalette.png",0,0,16,24)
+surface_save_part(application_surface,customadd2,0,0,32,24)
 surface_resize(application_surface,320,240)
 surface_free(application_surface)
-sprite_replace(spr_custompal,"Special/custompalette.png",0,0,0,0,0)
+sprite_replace(customadd,customadd2,0,0,0,0,0)
 }
 }
 else
 {
-if key_jump SelectChar=0
+if key_B SelectChar=0
 if key_right_pressed if character=3 character=0 else character+=1
 if -key_left_pressed if character=0 character=3 else character-=1
 }

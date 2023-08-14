@@ -137,6 +137,9 @@ unlockedChar[setunlock]=0
 setunlock+=1
 }
 
+customadd=spr_custompal
+customadd2="Special/custompalette.png";
+
 dataPal=1
 dataPalMax=3
 

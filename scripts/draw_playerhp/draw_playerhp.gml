@@ -41,50 +41,18 @@ if continueScreen=2 ///Character Select
 
 if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 
-if playerNO=1
-{
-if characterSelect=0 pal_swap_set(global.p1Pals,global.p1Pal,false)
-draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=1 pal_swap_set(global.p1Pals,global.p1Pal,false)
-draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=2 pal_swap_set(global.p1Pals,global.p1Pal,false)
-draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=3 pal_swap_set(global.p1Pals,global.p1Pal,false)
-draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
-}
-if playerNO=1
-{
-if characterSelect=0 pal_swap_set(global.p2Pals,global.p2Pal,false)
-draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=1 pal_swap_set(global.p2Pals,global.p2Pal,false)
-draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=2 pal_swap_set(global.p2Pals,global.p2Pal,false)
-draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=3 pal_swap_set(global.p2Pals,global.p2Pal,false)
-draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
-}
-if playerNO=1
-{
-if characterSelect=0 pal_swap_set(global.p3Pals,global.p3Pal,false)
-draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=1 pal_swap_set(global.p3Pals,global.p3Pal,false)
-draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=2 pal_swap_set(global.p3Pals,global.p3Pal,false)
-draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=3 pal_swap_set(global.p3Pals,global.p3Pal,false)
-draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
-}
-if playerNO=4
-{
-if characterSelect=0 pal_swap_set(global.p4Pals,global.p4Pal,false)
-draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=1 pal_swap_set(global.p4Pals,global.p4Pal,false)
-draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=2 pal_swap_set(global.p4Pals,global.p4Pal,false)
-draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_white,1) pal_swap_reset()
-if characterSelect=3 pal_swap_set(global.p4Pals,global.p4Pal,false)
-draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_white,1) pal_swap_reset()
-}
+var playernum1=global.p1Pals;
+var playernum2=global.p1Pal;
+if playerNO=2 {playernum1=global.p2Pals;  playernum2=global.p2Pal;}
+if playerNO=3 {playernum1=global.p3Pals;  playernum2=global.p3Pal;}
+if playerNO=4 {playernum1=global.p4Pals;  playernum2=global.p4Pal;}
+
+draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_dkgray,1)
+draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_dkgray,1)
+draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_dkgray,1)
+draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_dkgray,1)
+pal_swap_set(playernum1,playernum2,false)
+draw_sprite_ext(spr_playerface,characterSelect,23*characterSelect,0,1,1,0,c_white,1) pal_swap_reset()
 
 
 draw_set_color(c_white)
@@ -95,20 +63,48 @@ draw_text(23*characterSelect+2,2,string_hash_to_newline(characterTimer))
 if continueFlash<1
 draw_sprite_ext(spr_playerface,4,23*characterSelect,0,1,1,0,c_white,1)
 
+if key_Y
+{PlaySound(snd_steal)
+if playerNO=1 global.p1CPal^=1
+if playerNO=2 global.p2CPal^=1
+if playerNO=3 global.p3CPal^=1
+if playerNO=4 global.p4CPal^=1
+}
+
 if global.UnlockAltPal=1
-{
+{var palmax=15; if global.UnlockAltPal palmax=31;
 if playerNO=1
-{if key_up_pressed {if global.p1Pal=0 global.p1Pal=15 else global.p1Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p1Pal=15 global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}}
+{if key_up_pressed {if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1 PlaySound(snd_steal)}
+if -key_down_pressed {if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
+if character=0 if global.p1CPal=0 global.p1Pals=spr_vivapal else global.p1Pals=spr_custompal
+if character=1 if global.p1CPal=0 global.p1Pals=spr_hinapal else global.p1Pals=spr_custompal2
+if character=2 if global.p1CPal=0 global.p1Pals=spr_bahatipal else global.p1Pals=spr_custompal3
+if character=3 if global.p1CPal=0 global.p1Pals=spr_sofiapal else global.p1Pals=spr_custompal4
+}
 if playerNO=2
-{if key_up_pressed {if global.p2Pal=0 global.p2Pal=15 else global.p2Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p2Pal=15 global.p2Pal=0 else global.p2Pal+=1 PlaySound(snd_steal)}}
+{if key_up_pressed {if global.p2Pal=0 global.p2Pal=palmax else global.p2Pal-=1 PlaySound(snd_steal)}
+if -key_down_pressed {if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1 PlaySound(snd_steal)}
+if character=0 if global.p2CPal=0 global.p2Pals=spr_vivapal else global.p2Pals=spr_custompal
+if character=1 if global.p2CPal=0 global.p2Pals=spr_hinapal else global.p2Pals=spr_custompal2
+if character=2 if global.p2CPal=0 global.p2Pals=spr_bahatipal else global.p2Pals=spr_custompal3
+if character=3 if global.p2CPal=0 global.p2Pals=spr_sofiapal else global.p2Pals=spr_custompal4
+}
 if playerNO=3
-{if key_up_pressed {if global.p3Pal=0 global.p3Pal=15 else global.p3Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p3Pal=15 global.p3Pal=0 else global.p3Pal+=1 PlaySound(snd_steal)}}
+{if key_up_pressed {if global.p3Pal=0 global.p3Pal=palmax else global.p3Pal-=1 PlaySound(snd_steal)}
+if -key_down_pressed {if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1 PlaySound(snd_steal)}
+if character=0 if global.p3CPal=0 global.p3Pals=spr_vivapal else global.p3Pals=spr_custompal
+if character=1 if global.p3CPal=0 global.p3Pals=spr_hinapal else global.p3Pals=spr_custompal2
+if character=2 if global.p3CPal=0 global.p3Pals=spr_bahatipal else global.p3Pals=spr_custompal3
+if character=3 if global.p3CPal=0 global.p3Pals=spr_sofiapal else global.p3Pals=spr_custompal4
+}
 if playerNO=4
-{if key_up_pressed {if global.p4Pal=0 global.p4Pal=15 else global.p4Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p4Pal=15 global.p4Pal=0 else global.p4Pal+=1 PlaySound(snd_steal)}}
+{if key_up_pressed {if global.p4Pal=0 global.p4Pal=palmax else global.p4Pal-=1 PlaySound(snd_steal)}
+if -key_down_pressed {if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1 PlaySound(snd_steal)}
+if character=0 if global.p4CPal=0 global.p4Pals=spr_vivapal else global.p4Pals=spr_custompal
+if character=1 if global.p4CPal=0 global.p4Pals=spr_hinapal else global.p4Pals=spr_custompal2
+if character=2 if global.p4CPal=0 global.p4Pals=spr_bahatipal else global.p4Pals=spr_custompal3
+if character=3 if global.p4CPal=0 global.p4Pals=spr_sofiapal else global.p4Pals=spr_custompal4
+}
 }
 
 if -key_left_pressed if characterSelect=0 characterSelect=3
