@@ -1,4 +1,4 @@
-/// @description Baddies Appear 9 - Elevator
+/// @description Baddies Appear 9 - Elevator - Heal Items
 
 if __view_get( e__VW.XView, 0 )>=7644-2
 {
@@ -11,6 +11,7 @@ with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}
 PlaySound(snd_hitgroundmetal)
 oControl.quakeFXTime=10
 
+specialSet6=0
 
 with oEnemySpawner
 specialscript=function()

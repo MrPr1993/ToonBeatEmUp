@@ -73,7 +73,7 @@ weaponanim(weaponspr,weaponIndex,26,-51,0,weaponcolor)
 	if anim=13
 	{z+=2 sprite_index=spr_diver_move image_index=2 zSpeed=0
 		weaponanim(weaponspr,weaponIndex,26,-39,0,weaponcolor)
-	if ground {animFrame=5 anim=10}
+	if ground {canmove=1 anim=0}
 	}
 	
 	

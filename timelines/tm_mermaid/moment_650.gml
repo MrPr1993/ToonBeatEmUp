@@ -1,35 +1,17 @@
-///@description Plane Outside Area
-specialSet8+=1
+/// @description Freeze Player's Controls
 
-musicplaystart(msc_boss2)
-oControl.MusicFade=0
+if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
+{
+oPlayer.canControl=0
+oPlayer.areaEntry=1
 
-bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
-layer_background_visible(bgfog1,1)
-
-bgs=layer_get_id("BG");
-layer_y(bgs,0)
-
-if specialSet8<30
-timeline_position-=1
-else
-{specialSet8=0
-with oControl
-{quakeFXTime=0
-stageEndFX=0
-stageIntro=1
-oEnemySpawner.roomHSpd=0
-oEnemySpawner.roomMove=0
-oEnemySpawner.MaxX=5876+240-48
-camMove=1
-}
 with oPlayer
-{hspeed=0 visible=1 PlaySoundNoStack(choose(DamageVoice1,DamageVoice2,DamageVoice3))
-x=5978-160
-y=208 z=-32
-areaEntry=0 zSpeed=-4 hspeed=4 image_xscale=-1 hitBack=0 canBounce=0 anim=5
+{key_right=0 doubledash=0 dashing=0
 }
-spawner_followset("WaveSet1",0,5876-64+480,1)
-
-
+with oControl {oControl.stageNext=rm_cutscene1 event_user(9) stageBoss="PRINCE"}
 }
+else
+{
+timeline_position-=1
+}
+

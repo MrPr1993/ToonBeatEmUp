@@ -20,7 +20,7 @@ if recovery!=0 recovery-=1;
 if eyeHit!=0 eyeHit-=1;
 
 
-
+//lockX
 
 if hp=0 
 or anim=4 ///Replace the usual hit flying animations with this

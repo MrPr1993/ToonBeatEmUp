@@ -56,5 +56,5 @@ if animFrame>4.5 canmove=1
 	if anim=13
 	{z+=2 sprite_index=spr_fairy_fly image_index+=0.2 zSpeed=0
 		
-	if ground {animFrame=5 anim=10}
+	if ground {anim=0 canmove=1}
 	}

@@ -1,4 +1,7 @@
 function hiscore_save(){
+
+
+	
 ini_open("GAMEDATA/hiscore.ini");
 ini_write_real("HIGHSCORE1", "SCORE", global.HiScore1)
 ini_write_string("HIGHSCORE1", "NAME", global.HiScoreName1)
