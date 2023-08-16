@@ -8,12 +8,17 @@ oControl.stageNext=rm_stage4
 //oPlayer.x=5000
 //timeline_position=449
 
+timer_set(0)
+
 skybg=layer_background_get_id(layer_get_id("SKYBG"));
 layer_set_visible("UFO1",0)
 layer_set_visible("UFO2",0)
 layer_set_visible("UFO3",0)
 layer_set_visible("UFO4",0)
 layer_background_sprite(skybg,bg_sky2)
+
+layer_set_visible("ALIENCONTROLS1",0)
+layer_set_visible("ALIENCONTROLS2",0)
 
 
 oPlayer.x-=64

@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"15089a94-b268-40e2-b5c3-252d40df2cc9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"935e842f-0c4f-4fb2-beed-4a13e0dcecda",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"15089a94-b268-40e2-b5c3-252d40df2cc9","path":"sprites/tiles_ufospr/tiles_ufospr.yy",},},},"Disabled":false,"id":"2c6c010c-c023-4fbd-bd62-921fb66c3d60","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"935e842f-0c4f-4fb2-beed-4a13e0dcecda","path":"sprites/tiles_ufospr/tiles_ufospr.yy",},},},"Disabled":false,"id":"32baf23d-e68a-4f38-b1b6-22020109b7be","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

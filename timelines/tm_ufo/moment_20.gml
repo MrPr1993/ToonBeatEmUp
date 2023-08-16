@@ -3,21 +3,30 @@ if specialSet8=900
 
 }
 else
-{specialSet8+=1;
-timeline_position-=1;
+{
+	
+if specialSet8=0
+{
 oPlayer.canControl=0
 with oPlayer
 {key_left=0 key_right=0 key_up=0 key_down=0
 	
 	canmove=0 anim=99999
 	}
+}
+
+specialSet8+=1;
+timeline_position-=1;
 
 if specialSet8=1
-with oEnemySpawner
 {
-spriteLocker=instance_create_depth(-10000,-1,-1,oCameoChar) with spriteLocker
-{with oPlayer
-{anim=99999999
+spriteLocker=instance_create_depth(-10000,-1,-1,oCameoChar)
+
+with spriteLocker
+{image_speed=0 sprite_index=spr_viva_lookaround image_index=0 anim=999999
+	
+	with oPlayer
+{anim=9999977999 image_speed=0
 if character=0 sprite_index=spr_viva_lookaround
 if character=1 sprite_index=spr_hina_lookaround
 if character=2 sprite_index=spr_bahati_lookaround
@@ -26,21 +35,15 @@ if character=3 sprite_index=spr_sofia_lookaround
 
 newscript=function()
 {
-with oPlayer
-{anim=-1
-if character=0 sprite_index=spr_viva_lookaround
-if character=1 sprite_index=spr_hina_lookaround
-if character=2 sprite_index=spr_bahati_lookaround
-if character=3 sprite_index=spr_sofia_lookaround
-}
+
+
+frame_set(0,2,0.1)
+frame_set(1,1,0.1)
+frame_set(2,0,0.1)
+frame_set(3,1,0.1) if animFrame=4 {animFrame=0 image_index=2}
 
 oPlayer.image_index=image_index
-sprite_index=spr_viva_lookaround
 
-frame_set(0,0,0.01)
-frame_set(1,1,0.01)
-frame_set(2,2,0.01)
-frame_set(3,1,0.01) if animFrame>3.75 animFrame=0
 }
 }
 }
@@ -48,31 +51,27 @@ frame_set(3,1,0.01) if animFrame>3.75 animFrame=0
 if specialSet8=60
 {with oControl quakeFXTime=10
 
-	with oEnemySpawner
+	
 	{
 	
 	glowlight=instance_create_depth(__view_get( e__VW.XView, 0)+160,242-16,-1,oAlphaFadeFX)
 	with glowlight {isfading=0 sprite_index=spr_whitebit image_blend=c_yellow fadeSpd=0 image_alpha=0.8 image_xscale=0 image_yscale=-800 depth=-256}
 	
 	 with spriteLocker
-{with oPlayer
 {
-if character=0 sprite_index=spr_viva_bdance
-if character=1 sprite_index=spr_hina_bdance
-if character=2 sprite_index=spr_bahati_bdance
-if character=3 sprite_index=spr_sofia_bdance
+	
+with oPlayer
+{
+if character=0 sprite_index=spr_viva_hit
+if character=1 sprite_index=spr_hina_hit
+if character=2 sprite_index=spr_bahati_hit
+if character=3 sprite_index=spr_sofia_hit
 }
-
 anim=999
 newscript=function()
 {oPlayer.anim=88888
-oPlayer.image_index=image_index
+oPlayer.image_index=24
 sprite_index=spr_viva_bdance
-
-frame_set(0,0,0.25)
-frame_set(1,1,0.25)
-frame_set(2,2,0.25)
-if animFrame>2.75 animFrame=0
 }
 }
 	
@@ -96,6 +95,30 @@ with oPlayer
 
 }
 
+}
+
+if specialSet8=90
+	 with spriteLocker
+{
+	
+with oPlayer
+{
+if character=0 sprite_index=spr_viva_bdance
+if character=1 sprite_index=spr_hina_bdance
+if character=2 sprite_index=spr_bahati_bdance
+if character=3 sprite_index=spr_sofia_bdance
+}
+anim=999
+newscript=function()
+{oPlayer.anim=88888
+oPlayer.image_index=image_index
+sprite_index=spr_viva_bdance
+
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+if animFrame>2.75 animFrame=0
+}
 }
 
 if specialSet8=90
@@ -144,7 +167,7 @@ oEnemySpawner.MaxXAdd+=320
 }
 
 
-with oEnemySpawner {
+ {
 	
  with spriteLocker
 {with oPlayer
@@ -155,7 +178,7 @@ if character=2 sprite_index=spr_bahati_jar
 if character=3 sprite_index=spr_sofia_jar
 }
 anim=999
-newscript=-1
+newscript=function() {oPlayer.z=-8}
 {
 }
 }
@@ -170,6 +193,10 @@ layer_set_visible("UFO1",1)
 layer_set_visible("UFO2",1)
 layer_set_visible("UFO3",1)
 layer_set_visible("UFO4",1)
+layer_set_visible("ALIENCONTROLS1",1)
+layer_set_visible("ALIENCONTROLS2",1)
+
+
 layer_background_sprite(skybg,background18)
 
 }
@@ -207,13 +234,13 @@ else specialSet8-=1
 if specialSet8=310 {image_index=0
 	
 	
-	with oEnemySpawner with spriteLocker
+	 with spriteLocker
 {with oPlayer
 	{image_index=0
 sprite_index=ShockSpr
 anim=99999}
 newscript=function()
-{
+{oPlayer.z=-8
 oPlayer.image_index=image_index
 sprite_index=spr_viva_elec
 image_index+=0.25 if image_index=1.75 image_index=0
@@ -223,24 +250,36 @@ image_index+=0.25 if image_index=1.75 image_index=0
 	
 	oControl.quakeFX=10 PlaySound(snd_shocked)}
 
-if specialSet8=360 {	with oEnemySpawner with spriteLocker newscript=-1
+if specialSet8=360 {	with spriteLocker newscript=-1
 	
+layer_set_visible("ALIENCONTROLS1",0)
+layer_set_visible("ALIENCONTROLS2",0)
+	
+	Fglowlight=instance_create_depth(__view_get( e__VW.XView, 0)+160,-16,-1,oAlphaFadeFX)
+	with Fglowlight {isfading=1 sprite_index=spr_whitebit image_speed=0 image_blend=c_white fadeSpd=-0.1 image_alpha=1 image_xscale=3000 image_yscale=800 depth=-5555}
+		
 	PlaySound(snd_explosion) 
 	with oPlayer 
-	{flashFX(x,y+2,0,spr_explosion,0,0.5,0,1,1,c_white,1) canmove=0 targetID=-1
-	hurt=1 Throw=0
+	{flashFX(x,y+2,0,spr_explosion,0,0.5,0,1,1,c_white,1)
+canmove=0
+	hurt=1
 	ground=0
-	zSpeed=-8 z=-1
+	zSpeed=-8
+	sentflying=0
 	image_index=3 sprite_index=ThrownSpr
 	animFrame=3
 	anim=5
+	thrownDMG=0
 	}
 	
+
 with alien1 {sprite_index=spr_martian_move hspeed=4 image_speed=-0.5 image_xscale=-1}
-with alien2 {sprite_index=spr_martian_move hspeed=-4 image_speed=-0.5 image_xscale=1}
+with alien2 {sprite_index=spr_martian_move hspeed=4 image_speed=-0.5 image_xscale=1}
 
 	
 	}
+	
+	
 	
 if specialSet8=365
 {
@@ -248,11 +287,41 @@ with alien3 {sprite_index=spr_martian_move hspeed=2 image_speed=0.5 image_xscale
 with alien4 {sprite_index=spr_martian_move hspeed=2 image_speed=0.5 image_xscale=1}
 
 with alien1 {sprite_index=spr_martian_stand hspeed=0 image_speed=0}
-with alien2 {sprite_index=spr_martian_stand hspeed=0 image_speed=0}
+with alien2 {sprite_index=spr_martian_stand hspeed=0 image_speed=0 image_xscale=-1}
 }
 	
-if specialSet8=420
+if specialSet8=420 ///Lights On!
 {
+with spriteLocker
+{image_speed=0 image_index=0 animFrame=0
+	
+	with oPlayer
+{anim=99999999
+if character=0 sprite_index=spr_viva_screamdown
+if character=1 sprite_index=spr_hina_screamdown
+if character=2 sprite_index=spr_bahati_screamdown
+if character=3 sprite_index=spr_sofia_screamdown
+}
+
+newscript=function()
+{
+with oPlayer
+{anim=-1
+if character=0 sprite_index=spr_viva_screamdown
+if character=1 sprite_index=spr_hina_screamdown
+if character=2 sprite_index=spr_bahati_screamdown
+if character=3 sprite_index=spr_sofia_screamdown
+}
+
+oPlayer.image_index=image_index
+sprite_index=spr_viva_screamdown
+
+frame_set(0,0,0.1)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25) if animFrame>2.75 animFrame=1
+}
+}	
+
 with blackout {image_alpha=1 fadeSpd=-0.25 image_blend=c_white}
 
 with oCameoChar image_blend=c_white

@@ -6,9 +6,10 @@ with oCameoChar instance_destroy()
 with blackout instance_destroy()
 with oControl{showMap=1
 alarm[0]=60 timecheck=-1
-with oPlayer {canmove=1 canControl=1 targetID=-1
+with oPlayer {canmove=1 canControl=1 targetID=-1 animFrame=0 anim=0
  alarm[0]=2
 	}
 }
-spawner_followset("WaveSet1",0,2640-320,1)
+spawner_followset("WaveSet1",0,2640-320-640,1)
 musicplaystart(msc_ufo)
+timer_set(1)
