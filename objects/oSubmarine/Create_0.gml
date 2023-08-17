@@ -35,13 +35,13 @@ AtkSpr5=spr_octopus_stand
 JumpAtkSpr=spr_octopus_stand
 JumpAtkSpr2=spr_octopus_stand
 
-JumpSpr=spr_octopus_stand
-JumpSpr2=spr_octopus_stand
-ThrownSpr=spr_octopus_hit
-FlatSpr=spr_octopus_flat
-ShockSpr=spr_octopus_elec
-BurnSpr=spr_octopus_burned
-FrozenSpr=spr_octopus_frozen
+JumpSpr=spr_submarine
+JumpSpr2=spr_submarine
+ThrownSpr=spr_submarine
+FlatSpr=spr_submarine_flat
+ShockSpr=mask_none
+BurnSpr=spr_submarine
+FrozenSpr=spr_submarine
 
 
 lockPos=1;
@@ -71,7 +71,16 @@ tent3=-1;
 tent4=-1;
 
 
+scopespr=spr_submarine_scope
+scopeind=0
+rotorind=0
 
+minebuffer=120
+mineind=0
+
+torpedobuffer=120
+torpedoind=0
+torpedotimes=3
 
 if oControl.betatest=1 if keyboard_check(vk_shift)
 {immune=1

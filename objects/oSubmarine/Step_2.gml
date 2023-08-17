@@ -9,26 +9,49 @@ wobbleX=lerp(wobbleX,1,0.1)
 wobbleY=lerp(wobbleY,1,0.1)
 
 if anim=9999 ////Dead
-{if animFrame=0 {sprite_index=spr_octopus_dead specialcheck0=1 specialcheck1=0}
-selfatk.atk=0
+{if animFrame=0 {scopespr=spr_submarine_scope_dead specialcheck0=1 specialcheck1=0}
+selfatk.atk=0 sprite_index=spr_submarine 
 wobbleX=specialcheck0 wobbleY=wobbleX
 
 if animFrame<1
 {
-if specialcheck1=0 {dust_make(x+choose(-random(32),random(32)),y+4,z-random(100),0,0,0) specialcheck1=4}
+if specialcheck1=0 {dust_make(x+choose(-random(50),random(50)),y+4,z-random(100),0,0,0) specialcheck1=4}
 else specialcheck1-=1
 
 ground=1
 z=0;	
-animFrame+=0.005 if image_index>2 image_index=0 else image_index+=0.25	
+animFrame+=0.005
 	}
 else
 if animFrame=clamp(animFrame,1,2)
-{image_index=0 lockPos=0 z=0
-if specialcheck0>0.25 specialcheck0-=0.05 else {wobbleX=1 wobbleY=1 sprite_index=spr_octopus_tiny solid=false; animFrame+=0.1 ground=0}
+{
+var brokenpartX=0; var brokenpartY=1; var brokenpartZ=0;
+var brokenpartV=0; var brokenpartHSPD=0;
+repeat(12)
+{
+switch(brokenpartV)
+{
+case 0: brokenpartX=80 brokenpartZ=-64 brokenpartHSPD=1; break;
+case 1: brokenpartX=72 brokenpartZ=-76 brokenpartHSPD=1; break;
+case 2: brokenpartX=-62 brokenpartZ=-22 brokenpartHSPD=-1; break;
+case 3: brokenpartX=-14 brokenpartZ=-52 brokenpartHSPD=-0.5; break;
+case 4: brokenpartX=-55 brokenpartZ=-51 brokenpartHSPD=-0.75; break;
+case 5: brokenpartX=-88 brokenpartZ=-73 brokenpartHSPD=-1; break;
+case 6: brokenpartX=-88 brokenpartZ=-25 brokenpartHSPD=-1; break;
+case 7: brokenpartX=-100 brokenpartZ=-46 brokenpartHSPD=-1.2; break;
+case 8: brokenpartX=-20 brokenpartZ=-107 brokenpartHSPD=-0.5; break;
+case 9: brokenpartX=34 brokenpartZ=-105 brokenpartHSPD=1; break;
+case 10: brokenpartX=26 brokenpartZ=-140 brokenpartHSPD=1; break;
+case 11: brokenpartX=9 brokenpartZ=-130 brokenpartHSPD=0; break;
+}
 
-if specialcheck1=0 {dust_make(x+choose(-random(32*specialcheck0),random(32*specialcheck0)),y+4,z-random(100*specialcheck0),0,0,0) specialcheck1=4}
-else specialcheck1-=1
+brokenpart=instance_create_depth(x+brokenpartX*image_xscale,y+brokenpartY,-1,oDisappearPart) brokenpart.sprite_index=spr_submarine_brokenparts
+brokenpart.image_speed=0 brokenpart.image_index=brokenpartV; brokenpart.z=z+brokenpartZ brokenpart.hspeed=brokenpartHSPD;
+brokenpart.gravSpd=0.22  brokenpart.spdZ=brokenpart.spdZ/2
+brokenpartV+=1;
+}
+
+oControl.quakeFXTime=10 PlaySound(snd_explosion) instance_destroy()
 }
 if animFrame>2
 {
@@ -52,12 +75,19 @@ if hp=0 or hp<=0 or dead=1 if anim!=9999
 
 
 if anim=0
-{
-sprite_index=StandSpr
-frame_set(0,0,0.1)
-frame_set(1,1,0.1)
-frame_set(2,2,0.1)
-frame_set(3,1,0.1) if animFrame>3.9 animFrame=0
+{sprite_index=spr_submarine
+scopespr=spr_submarine_scope
+if targetEnemy.x>x
+scopeind=2-(point_distance(x,0,targetEnemy.x,0)/64)
+else
+scopeind=2+(point_distance(x,0,targetEnemy.x,0)/64)
+scopeind=clamp(scopeind,0,4)
+
+image_speed=0
+image_index=4-((hp/maxhp)*4) image_index=clamp(image_index,0,3)
+
+rotorind+=0.1
+if rotorind=4 rotorind=0
 }
 
 
@@ -65,8 +95,14 @@ if anim=4 ///Replace the usual hit flying animations with this
 or anim=5
 or anim=6
 or anim=7
-{ground=1 anim=4
-sprite_index=spr_octopus_hit	
+{ground=1 anim=4 rotorind=0
+scopespr=spr_submarine_scope_hit scopeind=0
+minebuffer=120
+mineind=0
+
+torpedobuffer=120
+torpedoind=0
+torpedotimes=3
 animFrame+=0.1
 
 if animFrame>8 {animFrame=0 canmove=1 anim=0 hurt=0}
@@ -74,10 +110,10 @@ if animFrame>8 {animFrame=0 canmove=1 anim=0 hurt=0}
 
 	if anim=8 ///Electrified
 	if overwriteShock=0
-	{atk=0 sprite_index=ShockSpr
+	{atk=0 scopespr=spr_submarine_scope_hit
 	hurt=1 recovery=120 prevanim=8
-	image_index+=0.5
-	if image_index>2 image_index=0
+	scopeind+=0.5
+	if scopeind>2 scopeind=0
 	animFrame+=0.1 
 	if !ground
 	sentflying=HitForceReact
@@ -108,7 +144,7 @@ if animFrame>8 {animFrame=0 canmove=1 anim=0 hurt=0}
 	sentflying=0
 	zSpeed=0
 	if animFrame>1
-	{
+	{sprite_index=spr_submarine
 animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1	
 	}
 
@@ -159,7 +195,7 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	if dead=0
 	if animFrame>0.5 {recovery=0 hurt=0}
 
-	image_index=0
+	
 
 	if hp<=0 if isEnemy=1 {if hplayer=0 {if dead=0 {hplayertake=hp dead=1 alarm[2]=90}} else {hplayertake=hp hp=maxhp+hplayertake hplayer-=1 if oControl.enemyID=1 hud_show() }}
 	else
@@ -180,20 +216,38 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	{
 	if anim=30 ///Thrown
 	{
+	minebuffer=120
+mineind=0
+
+torpedobuffer=120
+torpedoind=0
+torpedotimes=3
+
+ rotorind=0
+scopespr=spr_submarine_scope_hit scopeind=0
+	
 	if overwriteThrown=0
-	{hurt=1 sprite_index=ThrownSpr recovery=30
-	image_index=targetHeightHit image_speed=0
+	{hurt=1 recovery=30
 	}} else SpritePos=0
 	}else SpritePos=0
 
 	if anim=31 ///Special Thrown
 	if overwriteThrown=0
-	{hurt=1 recovery=30}
+	{hurt=1 recovery=30
+	minebuffer=120
+mineind=0
+
+torpedobuffer=120
+torpedoind=0
+torpedotimes=3
+
+ rotorind=0
+scopespr=spr_submarine_scope_hit scopeind=0
+		}
 	
 	
 	if anim=10 ///Attack
-	{canmove=0
-	animFrame=0 anim=11
+	{anim=0
 	}
 	
 	

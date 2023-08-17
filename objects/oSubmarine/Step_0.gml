@@ -31,17 +31,26 @@ or anim=30
 or anim=31
 or dead=1
 {
-	with oOctopusT if anim!=4 {animFrame=0 anim=4}
-	
-	
+
 	
 	}
 	else
-	{
-	{if spawntent[1]=0 {if tent1=-1
-{spawntent[1]=choose(120,140,160,180,200,220,240);
-tent=instance_create_depth(x,y,-1,oOctopusT)
-tent.targetEnemy=targetEnemy
-}}
-else {if tent1=-1 spawntent[1]-=1;}}
+	{minebuffer-=1 
+if minebuffer!=0 minebuffer-=1
+else
+{
+mineind+=0.1 if mineind=5 {mineind=0 minebuffer=choose(120,130,140,150,160)}
+}
+
+if torpedobuffer!=0 torpedobuffer=-1
+else
+{
+torpedoind+=0.1 if mineind=5 {
+	if torpedotimes!=0 {torpedoind=0 torpedotimes-=1}
+	else
+	{torpedoind=0 torpedobuffer=choose(120,130,140,150,160)}
+	}
+}
+
+
 	}

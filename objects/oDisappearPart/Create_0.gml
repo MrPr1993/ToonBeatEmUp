@@ -10,6 +10,8 @@ minSprite=0
 maxSprite=0
 SpriteSpd=0
 
+gravSpd=0.45
+
 z=0
 
 zAdd=0

@@ -8,24 +8,37 @@ y=lockY;
 z=lockZ;
 }
 
+image_blend=c_white;
+
+if anim=40 image_blend=c_black;
+
+if anim=8 if scopeind>1 image_blend=c_black;
+
 image_xscale=1
 
-var watchtarget=0;
-watchtarget=point_direction(x,y,targetEnemy.x,targetEnemy.y+targetEnemy.z/2)
-eyeX=(x+lengthdir_x(15,watchtarget))
-eyeY=(z+y+lengthdir_y(15,watchtarget))
-eyeY=clamp(eyeY,z+y,z+y+10)
-
-if eyeHit=0 eyeReaction=1 else eyeReaction=2
-
 ///Eye
-if dead=0 and anim!=9 and anim!=66
+if anim!=9
 {
-draw_sprite_ext(spr_octopus_eye,0,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
-draw_sprite(spr_octopus_eye,eyeReaction,round(eyeX),round(eyeY))
+draw_sprite_ext(spr_submarine_rotor,rotorind,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
 }
 
 ///Body
 draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
-if anim=11 and animFrame=clamp(animFrame,2,8)
-draw_sprite(spr_octopus_spinFX,delta_time,round(x),round(y+z))
+
+if anim!=9
+draw_sprite_ext(scopespr,scopeind,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
+
+
+
+///Submarine Rockets
+if torpedoind!=0
+draw_sprite_ext(spr_torpedo_launch,torpedoind,round(x+32+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
+
+if mineind!=0
+draw_sprite_ext(spr_sub_minelaunch,mineind,round(x+48+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y-88+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
+
+if anim=8
+{var hpcheck=4-((hp/maxhp)*4); hpcheck=clamp(hpcheck,0,4)
+draw_sprite_ext(spr_submarine,4-((hp/maxhp)*4),round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
+draw_sprite_ext(spr_submarine_elec,scopeind,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,c_white,image_alpha)
+}
