@@ -1,0 +1,1 @@
+standSpr=spr_chicken

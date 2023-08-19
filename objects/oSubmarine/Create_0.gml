@@ -75,14 +75,17 @@ scopespr=spr_submarine_scope
 scopeind=0
 rotorind=0
 
-minebuffer=120
+minebuffer=240
 mineind=0
-
 torpedobuffer=120
 torpedoind=0
-torpedotimes=3
+torpedotimes=6
+
+lockXadd=0
+lockXmode=0
+lockXaddTime=120
 
 if oControl.betatest=1 if keyboard_check(vk_shift)
-{immune=1
-anim=66 canmove=0
+{z=-200 
+lockZ=z
 }

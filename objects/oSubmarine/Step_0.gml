@@ -22,35 +22,49 @@ if eyeHit!=0 eyeHit-=1;
 
 //lockX
 
-if hp=0 
-or anim=4 ///Replace the usual hit flying animations with this
-or anim=5
-or anim=6
-or anim=7
-or anim=30
-or anim=31
-or dead=1
-{
-
-	
-	}
-	else
-	{minebuffer-=1 
+if anim=0
+	{
 if minebuffer!=0 minebuffer-=1
 else
-{
-mineind+=0.1 if mineind=5 {mineind=0 minebuffer=choose(120,130,140,150,160)}
+{mineind+=0.2 if mineind>4.8 {
+	
+	bomb=instance_create_depth(x+32*wobbleX,y+16,-1,oBomb)
+	bomb.z=z-80 PlaySoundNoStack(snd_swing)
+bomb.ground=0 bomb.spdZ=-8 bomb.trigger=1 
+if targetEnemy.x>x
+bomb.spdX=(1*(point_distance(x,0,targetX,0)/48)/2)
+else
+bomb.spdX=-(1*(point_distance(x,0,targetX,0)/48)/2)
+bomb.vspeed=(1*(point_distance(0,y,0,targetY)/48)/2)
+with bomb
+{sprite_index=spr_sub_mine mask_index=mask_mine
 }
 
-if torpedobuffer!=0 torpedobuffer=-1
-else
-{
-torpedoind+=0.1 if mineind=5 {
-	if torpedotimes!=0 {torpedoind=0 torpedotimes-=1}
+
+	
+	mineind=0 minebuffer=160+choose(120,130,140,150,160)}}
+
+if torpedobuffer!=0 torpedobuffer-=1
+else{
+torpedoind+=0.25 if torpedoind>4.8 {
+		torp=instance_create_depth(x+64+32,y+1,-1,oTorpedoLaunch) torp.z=z
+		torp.hspeed=4 torp.speciayY=y+choose(32)+24*torpedotimes	
+
+	if torpedotimes!=1 {torpedoind=0 torpedotimes-=1
+		}
 	else
-	{torpedoind=0 torpedobuffer=choose(120,130,140,150,160)}
+	{torpedoind=0 torpedotimes=6 torpedobuffer=80+choose(120,130,140,150,160)
+		}
 	}
 }
 
 
+	}
+	else
+	{
+	minebuffer=240
+mineind=0
+torpedobuffer=120
+torpedoind=0
+torpedotimes=3
 	}

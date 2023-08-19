@@ -15,7 +15,9 @@ wobbleX=specialcheck0 wobbleY=wobbleX
 
 if animFrame<1
 {
-if specialcheck1=0 {dust_make(x+choose(-random(50),random(50)),y+4,z-random(100),0,0,0) specialcheck1=4}
+if specialcheck1=0 {dust_make(x+choose(-random(50),random(50)),y+4,z-random(100),0,0,0)
+	dustmk.sprite_index=spr_explosion3
+	specialcheck1=4}
 else specialcheck1-=1
 
 ground=1
@@ -44,6 +46,13 @@ case 9: brokenpartX=34 brokenpartZ=-105 brokenpartHSPD=1; break;
 case 10: brokenpartX=26 brokenpartZ=-140 brokenpartHSPD=1; break;
 case 11: brokenpartX=9 brokenpartZ=-130 brokenpartHSPD=0; break;
 }
+
+dust_make(x,y-3,z-25,-1,0,0)
+dustmk.sprite_index=spr_explosion2
+dust_make(x-32,y-3,z-25,0,0,-1)
+dustmk.sprite_index=spr_explosion2
+dust_make(x+32,y-3,z-25,1,0,0)
+dustmk.sprite_index=spr_explosion2
 
 brokenpart=instance_create_depth(x+brokenpartX*image_xscale,y+brokenpartY,-1,oDisappearPart) brokenpart.sprite_index=spr_submarine_brokenparts
 brokenpart.image_speed=0 brokenpart.image_index=brokenpartV; brokenpart.z=z+brokenpartZ brokenpart.hspeed=brokenpartHSPD;
@@ -78,9 +87,9 @@ if anim=0
 {sprite_index=spr_submarine
 scopespr=spr_submarine_scope
 if targetEnemy.x>x
-scopeind=2-(point_distance(x,0,targetEnemy.x,0)/64)
+scopeind=2-(point_distance(x+6*image_xscale,0,targetEnemy.x,0)/64)
 else
-scopeind=2+(point_distance(x,0,targetEnemy.x,0)/64)
+scopeind=2+(point_distance(x+6*image_xscale,0,targetEnemy.x,0)/64)
 scopeind=clamp(scopeind,0,4)
 
 image_speed=0

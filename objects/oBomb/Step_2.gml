@@ -1,5 +1,7 @@
 item_endstep()
 
+if ground vspeed=0
+
 if carry=1
 if trigger=0
 {
