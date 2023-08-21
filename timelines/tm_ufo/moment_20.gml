@@ -144,7 +144,7 @@ hspeed=1
 }
 
 alien3=instance_create_depth(1008+64,248,-1,oCameoChar)
-with alien3 {image_xscale=-1 sprite_index=spr_martian_attack2 image_blend=c_black image_speed=0 anim=444
+with alien3 {image_xscale=-1 sprite_index=spr_martian_idle1 image_blend=c_black image_speed=0 anim=444
 
 }
 
@@ -273,8 +273,10 @@ canmove=0
 	}
 	
 
-with alien1 {sprite_index=spr_martian_move hspeed=4 image_speed=-0.5 image_xscale=-1}
-with alien2 {sprite_index=spr_martian_move hspeed=4 image_speed=-0.5 image_xscale=1}
+with alien1 {sprite_index=spr_martian_move hspeed=4 image_speed=-0.5 image_xscale=-1
+	}
+with alien2 {sprite_index=spr_martian_move hspeed=4 image_speed=-0.5 image_xscale=1
+	}
 
 	
 	}
@@ -286,8 +288,8 @@ if specialSet8=365
 with alien3 {sprite_index=spr_martian_move hspeed=2 image_speed=0.5 image_xscale=1}
 with alien4 {sprite_index=spr_martian_move hspeed=2 image_speed=0.5 image_xscale=1}
 
-with alien1 {sprite_index=spr_martian_stand hspeed=0 image_speed=0}
-with alien2 {sprite_index=spr_martian_stand hspeed=0 image_speed=0 image_xscale=-1}
+with alien1 {sprite_index=spr_martian_attack image_index=1 hspeed=0 image_speed=0}
+with alien2 {sprite_index=spr_martian_hit image_index=24 hspeed=0 image_speed=0 image_xscale=-1}
 }
 	
 if specialSet8=420 ///Lights On!
