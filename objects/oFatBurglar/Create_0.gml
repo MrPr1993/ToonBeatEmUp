@@ -73,4 +73,11 @@ spritepos_setup(2,24,-10,77)
 
 
 
-
+specialtaunt=function()
+{
+sprite_index=spr_fatburglar_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if animFrame>2.9 animFrame=0
+}

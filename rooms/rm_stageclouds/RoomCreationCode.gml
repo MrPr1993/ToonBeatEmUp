@@ -23,3 +23,7 @@ prevstagecheck2=global.PrevStage4
 prevstagecheck3=global.PrevStage5
 stagecheck=16
 }
+
+bgbeach2=layer_background_get_id(layer_get_id("BG"));
+
+layer_background_yscale(bgbeach2,-1)

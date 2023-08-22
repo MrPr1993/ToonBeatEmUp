@@ -120,5 +120,14 @@ specialcheck0=0
 //isIdle=1
 //canAttack=6
 
+specialtaunt=function()
+{
+sprite_index=spr_burglarB_idle4
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if animFrame>2.9 animFrame=0
+}
+
 
 

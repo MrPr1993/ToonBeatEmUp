@@ -1,7 +1,7 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "tilesunderwater",
+  "name": "tilesmermaid",
   "autoTileSets": [],
   "macroPageTiles": {
     "SerialiseHeight": 0,
