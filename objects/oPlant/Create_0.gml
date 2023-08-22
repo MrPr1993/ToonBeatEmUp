@@ -33,6 +33,8 @@ DamageVoice3=snd_plant2
 StandSpr=spr_plant_stand
 MoveSpr=spr_plant_move
 RunSpr=spr_plant_move
+	hasFront=1
+	FrontSpr=spr_plant_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

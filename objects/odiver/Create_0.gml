@@ -49,6 +49,9 @@ ShockSpr=spr_diver_elec
 BurnSpr=spr_diver_burned
 FrozenSpr=spr_diver_frozen
 
+	hasFront=1
+	FrontSpr=spr_diver_front
+
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal

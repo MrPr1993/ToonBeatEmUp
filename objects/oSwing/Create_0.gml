@@ -48,6 +48,8 @@ specialFX=0
 StandSpr=spr_swing_stand
 MoveSpr=spr_swing_move
 RunSpr=spr_swing_move
+	hasFront=1
+	FrontSpr=spr_swing_front
 
 overwriteAttack=1
 AtkSpr=spr_swing_attack

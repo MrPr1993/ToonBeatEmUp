@@ -36,6 +36,8 @@ specialFX=0
 StandSpr=spr_siren_stand
 MoveSpr=spr_siren_move
 RunSpr=spr_siren_move
+	hasFront=1
+	FrontSpr=spr_siren_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

@@ -33,6 +33,8 @@ specialFX=0
 StandSpr=spr_zombiem_stand
 MoveSpr=spr_zombiem_move
 RunSpr=spr_zombiem_move
+	hasFront=1
+	FrontSpr=spr_zombiem_front
 
 AtkSpr=spr_zombiem_attack
 AtkSpr2=spr_burglar_attack2

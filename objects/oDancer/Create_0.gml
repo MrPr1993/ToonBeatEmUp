@@ -31,6 +31,8 @@ specialFX=0
 StandSpr=spr_dancer_stand
 MoveSpr=spr_dancer_move
 RunSpr=spr_dancer_move
+	hasFront=1
+	FrontSpr=spr_dancer_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

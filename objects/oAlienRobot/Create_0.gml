@@ -23,6 +23,8 @@ specialFX=0
 StandSpr=spr_alienrobot_stand
 MoveSpr=spr_alienrobot_move
 RunSpr=spr_alienrobot_move
+	hasFront=1
+	FrontSpr=spr_alienrobot_front
 
 AtkSpr=spr_alienrobot_attack
 AtkSpr2=spr_alienrobot_attack

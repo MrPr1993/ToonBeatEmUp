@@ -46,6 +46,9 @@ BurnSpr=spr_boxer_burned
 FrozenSpr=spr_boxer_frozen
 DizzySpr=spr_boxer_hit
 
+	hasFront=1
+	FrontSpr=spr_boxer_front
+
 hasCut=1
 cutSpr1=spr_boxer_cut1
 cutSpr2=spr_boxer_cut2

@@ -29,6 +29,8 @@ specialFX=0
 StandSpr=spr_lobster_stand
 MoveSpr=spr_lobster_move
 RunSpr=spr_lobster_move
+	hasFront=1
+	FrontSpr=spr_lobster_front
 
 AtkSpr=spr_lobster_stand
 AtkSpr2=spr_burglar_attack2

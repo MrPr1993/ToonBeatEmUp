@@ -29,6 +29,8 @@ specialFX=0
 StandSpr=spr_catman_stand
 MoveSpr=spr_catman_move
 RunSpr=spr_catman_move
+	hasFront=1
+	FrontSpr=spr_catman_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -37,6 +39,7 @@ AtkSpr4=spr_burglar_attack
 AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
+
 
 JumpSpr=spr_catman_stand
 JumpSpr2=spr_catman_stand

@@ -25,6 +25,8 @@ rangeAtk=320
 StandSpr=spr_skeleton_stand
 MoveSpr=spr_skeleton_move
 RunSpr=spr_skeleton_move
+	hasFront=1
+	FrontSpr=spr_skeleton_front
 
 AtkSpr=spr_skeleton_kick
 AtkSpr2=spr_skeleton_kick

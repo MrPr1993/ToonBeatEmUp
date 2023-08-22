@@ -39,6 +39,8 @@ StandSpr=spr_ninjabun_stand
 MoveSpr=spr_ninjabun_move
 HasRunAnim=1
 RunSpr=spr_ninjabun_run
+	hasFront=1
+	FrontSpr=spr_ninjabun_front
 
 AtkSpr=spr_ninjabun_stand
 AtkSpr2=spr_ninjabun_stand

@@ -30,6 +30,8 @@ DeathCry=snd_femenemy2
 StandSpr=spr_monk_stand
 MoveSpr=spr_monk_move
 RunSpr=spr_monk_move
+	hasFront=1
+	FrontSpr=spr_monk_front
 
 AtkSpr=spr_monk_attack
 AtkSpr2=spr_monk_attack

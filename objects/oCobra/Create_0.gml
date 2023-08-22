@@ -35,6 +35,8 @@ specialFX=0
 StandSpr=spr_cobra_stand
 MoveSpr=spr_cobra_move
 RunSpr=spr_cobra_move
+	hasFront=1
+	FrontSpr=spr_cobra_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

@@ -38,6 +38,8 @@ specialFX=0
 StandSpr=spr_wrestler_stand
 MoveSpr=spr_wrestler_move
 RunSpr=spr_wrestler_move
+	hasFront=1
+	FrontSpr=spr_wrestler_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

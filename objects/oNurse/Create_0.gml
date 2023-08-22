@@ -28,6 +28,8 @@ specialFX=0
 StandSpr=spr_nurse_stand
 MoveSpr=spr_nurse_move
 RunSpr=spr_nurse_move
+	hasFront=1
+	FrontSpr=spr_nurse_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

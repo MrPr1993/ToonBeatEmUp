@@ -32,6 +32,8 @@ specialFX=0
 StandSpr=spr_zombiew_stand
 MoveSpr=spr_zombiew_move
 RunSpr=spr_zombiew_move
+	hasFront=1
+	FrontSpr=spr_zombiew_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

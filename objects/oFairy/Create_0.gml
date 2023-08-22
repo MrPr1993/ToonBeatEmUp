@@ -29,6 +29,8 @@ specialFX=0
 StandSpr=spr_fairy_stand
 MoveSpr=spr_fairy_move
 RunSpr=spr_fairy_move
+	hasFront=1
+	FrontSpr=spr_fairy_front
 
 AtkSpr=spr_fairy_attack
 AtkSpr2=spr_fairy_attack2

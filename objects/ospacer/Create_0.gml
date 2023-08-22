@@ -25,6 +25,8 @@ specialFX=0
 StandSpr=spr_spacer_stand
 MoveSpr=spr_spacer_move
 RunSpr=spr_spacer_move
+	hasFront=1
+	FrontSpr=spr_spacer_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

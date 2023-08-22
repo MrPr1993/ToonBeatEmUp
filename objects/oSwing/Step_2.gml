@@ -64,6 +64,16 @@ if image_index=clamp(image_index,24,24.9)
 weaponanim(weaponspr,weaponIndex,-10,-45,16,weaponcolor)
 }
 
+if sprite_index=spr_swing_front
+{
+if image_index=clamp(image_index,0,0.9) or image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,14,-65,180*image_xscale,weaponcolor)
+if image_index=clamp(image_index,1,1.9) or image_index=clamp(image_index,4,4.9)
+weaponanim(weaponspr,weaponIndex,14+1,-65+2,180*image_xscale,weaponcolor)
+if image_index=clamp(image_index,2,2.9) or image_index=clamp(image_index,5,5.9)
+weaponanim(weaponspr,weaponIndex,14+1,-65+1,180*image_xscale,weaponcolor)
+}
+
 if sprite_index=spr_swing_frozen
 weaponanim(weaponspr,weaponIndex,10,-63,131,weaponcolor)
 

@@ -39,6 +39,8 @@ specialFX=0
 StandSpr=spr_merman_stand
 MoveSpr=spr_merman_move
 RunSpr=spr_merman_move
+	hasFront=1
+	FrontSpr=spr_merman_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

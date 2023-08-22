@@ -34,6 +34,8 @@ specialFX=0
 StandSpr=spr_femburglar_stand
 MoveSpr=spr_femburglar_move
 RunSpr=spr_femburglar_move
+	hasFront=1
+	FrontSpr=spr_femburglar_front
 
 AtkSpr=spr_femburglar_attack
 AtkSpr2=spr_femburglar_attack2

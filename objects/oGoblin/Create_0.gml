@@ -34,6 +34,8 @@ specialFX=0
 StandSpr=spr_goblin_stand
 MoveSpr=spr_goblin_move
 RunSpr=spr_goblin_move
+	hasFront=1
+	FrontSpr=spr_goblin_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

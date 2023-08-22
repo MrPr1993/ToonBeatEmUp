@@ -38,6 +38,8 @@ specialFX=0
 StandSpr=spr_fatburglar_stand
 MoveSpr=spr_fatburglar_move
 RunSpr=spr_fatburglar_move
+	hasFront=1
+	FrontSpr=spr_fatburglar_front
 
 AtkSpr=spr_fatburglar_attack
 AtkSpr2=spr_fatburglar_attack2

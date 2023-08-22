@@ -39,6 +39,8 @@ specialFX=0
 StandSpr=spr_martian_stand
 MoveSpr=spr_martian_move
 RunSpr=spr_martian_move
+	hasFront=1
+	FrontSpr=spr_martian_front
 
 AtkSpr=spr_martian_attack
 AtkSpr2=spr_burglar_attack2

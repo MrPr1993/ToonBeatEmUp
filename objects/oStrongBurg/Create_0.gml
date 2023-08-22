@@ -35,6 +35,8 @@ specialFX=0
 StandSpr=spr_strongburg_stand
 MoveSpr=spr_strongburg_move
 RunSpr=spr_strongburg_move
+	hasFront=1
+	FrontSpr=spr_strongburg_front
 
 AtkSpr=spr_strongburg_stand
 AtkSpr2=spr_strongburg_stand

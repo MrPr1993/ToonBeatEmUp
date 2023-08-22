@@ -25,6 +25,8 @@ specialFX=0
 StandSpr=spr_slime_stand
 MoveSpr=spr_slime_move
 RunSpr=spr_slime_move
+	hasFront=1
+	FrontSpr=spr_slime_front
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

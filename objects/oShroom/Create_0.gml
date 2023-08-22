@@ -30,6 +30,8 @@ specialFX=0
 StandSpr=spr_shroom_stand
 MoveSpr=spr_shroom_move
 RunSpr=spr_shroom_move
+	hasFront=1
+	FrontSpr=spr_shroom_front
 
 AtkSpr=spr_shroom_attack
 AtkSpr2=spr_shroom_attack
