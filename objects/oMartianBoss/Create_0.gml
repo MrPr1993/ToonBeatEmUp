@@ -32,13 +32,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
+JumpSpr=spr_martianb_move
+JumpSpr2=spr_martianb_move
 ThrownSpr=spr_martianb_hit
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+FlatSpr=spr_martianb_flat
+ShockSpr=spr_martianb_elec
+BurnSpr=spr_martianb_burned
+FrozenSpr=spr_martianb_frozen
 
 
 current_pal=0;

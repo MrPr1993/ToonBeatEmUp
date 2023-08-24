@@ -21,8 +21,8 @@ height=100
 specialFX=0
 
 StandSpr=spr_scientistm_stand
-MoveSpr=spr_scientistm_stand
-RunSpr=spr_scientistm_stand
+MoveSpr=spr_scientistm_move
+RunSpr=spr_scientistm_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

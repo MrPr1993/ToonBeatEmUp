@@ -29,16 +29,16 @@ AtkSpr2=spr_burglar_attack2
 AtkSpr3=spr_burglar_attack
 AtkSpr4=spr_burglar_attack
 AtkSpr5=spr_burglar_attack
-JumpAtkSpr=spr_burglar_attack
-JumpAtkSpr2=spr_burglar_attack
+JumpAtkSpr=spr_painter_move
+JumpAtkSpr2=spr_painter_move
 
-JumpSpr=spr_burglar_stand
-JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_burglar_hit
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+JumpSpr=spr_painter_move
+JumpSpr2=spr_painter_move
+ThrownSpr=spr_painter_hit
+FlatSpr=spr_painter_flat
+ShockSpr=spr_painter_elec
+BurnSpr=spr_painter_burned
+FrozenSpr=spr_painter_frozen
 
 
 
