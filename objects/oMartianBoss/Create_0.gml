@@ -34,7 +34,7 @@ JumpAtkSpr2=spr_burglar_attack
 
 JumpSpr=spr_burglar_stand
 JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_martianb_stand
+ThrownSpr=spr_martianb_hit
 FlatSpr=spr_burglar_hit
 ShockSpr=spr_burglar_hit
 BurnSpr=spr_burglar_hit

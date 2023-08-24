@@ -2,7 +2,7 @@ enemy_data()
 
 name="DR.FRAN"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=36
+enemyPortraitIndex=60//36
 
 enemyscript=animsetup_enemy
 
@@ -16,13 +16,13 @@ OneAttack=2
 hp=2
 maxhp=2
 
-height=70
+height=100
 
 specialFX=0
 
-StandSpr=spr_scientist_stand
-MoveSpr=spr_scientist_stand
-RunSpr=spr_scientist_stand
+StandSpr=spr_scientistm_stand
+MoveSpr=spr_scientistm_stand
+RunSpr=spr_scientistm_stand
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -34,7 +34,7 @@ JumpAtkSpr2=spr_burglar_attack
 
 JumpSpr=spr_burglar_stand
 JumpSpr2=spr_burglar_stand
-ThrownSpr=spr_plantprincess_stand
+ThrownSpr=spr_scientistm_hit
 FlatSpr=spr_burglar_hit
 ShockSpr=spr_burglar_hit
 BurnSpr=spr_burglar_hit

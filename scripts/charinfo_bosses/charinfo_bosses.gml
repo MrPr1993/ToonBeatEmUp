@@ -53,7 +53,7 @@ break;
  charinfo_set(12,spr_seaweed_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,41,"MS.PUNCH",
  "???") break;
    case 13:
- charinfo_set(12,spr_martian_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,0,"MS.PUNCH",
+ charinfo_set(12,spr_martianb_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,54,"MS.PUNCH",
  "???") break;
     case 14:
  charinfo_set(12,spr_prince_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,30,"MS.PUNCH",
@@ -68,7 +68,7 @@ break;
  charinfo_set(12,spr_plantprincess_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,33,"LADY",
  "???") break;
      case 18:
- charinfo_set(12,spr_boxer_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,0,"GIANT",
+ charinfo_set(12,spr_dragonmaiden_head,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,56,"GIANT DRAGON",
  "???") break;
      case 19:
  charinfo_set(12,spr_scientist_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,36,"SCIENTIST",
