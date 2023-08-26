@@ -35,8 +35,8 @@ hp=2
 maxhp=2
 
 StandSpr=spr_genie_stand
-MoveSpr=spr_genie_stand
-RunSpr=spr_genie_stand
+MoveSpr=spr_genie_move
+RunSpr=spr_genie_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2

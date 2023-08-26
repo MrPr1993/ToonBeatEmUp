@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5edff707-826b-432b-96cd-4c0e1f0db22f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"12bcd057-42fb-4d3c-9e79-c16ad13683ee",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"85bcaf8d-c85f-4f30-b528-e0c06a6e6b29",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5edff707-826b-432b-96cd-4c0e1f0db22f","path":"sprites/spr_pharaoh_stand/spr_pharaoh_stand.yy",},},},"Disabled":false,"id":"c3a60781-ba66-45ee-95b6-aa102c56c3f5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"12bcd057-42fb-4d3c-9e79-c16ad13683ee","path":"sprites/spr_pharaoh_stand/spr_pharaoh_stand.yy",},},},"Disabled":false,"id":"f7570a13-52bf-4f12-a089-914450e1c672","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"85bcaf8d-c85f-4f30-b528-e0c06a6e6b29","path":"sprites/spr_pharaoh_stand/spr_pharaoh_stand.yy",},},},"Disabled":false,"id":"e95f8152-0749-4185-92e4-a9ac154b86af","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

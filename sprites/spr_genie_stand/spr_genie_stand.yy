@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_genie_stand",
   "bbox_bottom": 127,
-  "bbox_left": 17,
-  "bbox_right": 113,
+  "bbox_left": 15,
+  "bbox_right": 114,
   "bbox_top": 7,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e73592d-9afe-47d2-b76f-15f7dfe1db7a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ffb5f83e-0328-4b20-a8b4-0f1b9c1900d4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a4ba7b3-fa60-4dab-ae2c-fadec827f5be",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8e73592d-9afe-47d2-b76f-15f7dfe1db7a","path":"sprites/spr_genie_stand/spr_genie_stand.yy",},},},"Disabled":false,"id":"7f65819b-abd6-4284-b475-5261cde4b19c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ffb5f83e-0328-4b20-a8b4-0f1b9c1900d4","path":"sprites/spr_genie_stand/spr_genie_stand.yy",},},},"Disabled":false,"id":"8a2b8c42-9b54-4bd0-9942-2305456375cf","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4a4ba7b3-fa60-4dab-ae2c-fadec827f5be","path":"sprites/spr_genie_stand/spr_genie_stand.yy",},},},"Disabled":false,"id":"5805e277-ea4b-49fc-98cf-c93d988ec3ee","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

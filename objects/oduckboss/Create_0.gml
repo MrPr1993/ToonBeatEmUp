@@ -1,6 +1,6 @@
 enemy_data()
 
-name="DUCKESA"
+name="QUACKI"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=39
 

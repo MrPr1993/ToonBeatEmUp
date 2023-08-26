@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"74494cd3-12e8-48dd-9537-090e79743c74",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dd966011-92d1-467b-b4c8-1e1db359ada8",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"74494cd3-12e8-48dd-9537-090e79743c74","path":"sprites/tiles_cavespr/tiles_cavespr.yy",},},},"Disabled":false,"id":"d98d45dc-b55a-4774-a2fa-fc2ae0511561","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dd966011-92d1-467b-b4c8-1e1db359ada8","path":"sprites/tiles_cavespr/tiles_cavespr.yy",},},},"Disabled":false,"id":"841095e8-21ec-4b5a-b410-6f5b5d3a099e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2b3d9fe0-945f-4b38-958b-f501fde54a06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"31fec3ed-6ce2-44d6-9ba0-36aaa6af3158",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aa99390f-1c7b-4ac7-bae8-1f1b468902a8",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2b3d9fe0-945f-4b38-958b-f501fde54a06","path":"sprites/spr_oni_stand/spr_oni_stand.yy",},},},"Disabled":false,"id":"4bcbfbfd-0c2d-49dc-815c-2bcc706cb222","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"31fec3ed-6ce2-44d6-9ba0-36aaa6af3158","path":"sprites/spr_oni_stand/spr_oni_stand.yy",},},},"Disabled":false,"id":"d3907293-9c34-4048-94f1-be0260180b37","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aa99390f-1c7b-4ac7-bae8-1f1b468902a8","path":"sprites/spr_oni_stand/spr_oni_stand.yy",},},},"Disabled":false,"id":"cdef9ee8-bfb0-4262-afd4-8a578cc7a8c9","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

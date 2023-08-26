@@ -4,7 +4,7 @@
   "name": "spr_martianb_stand",
   "bbox_bottom": 122,
   "bbox_left": 0,
-  "bbox_right": 76,
+  "bbox_right": 78,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f90aa321-c539-418b-8de5-d80ffdb63b3f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"172b9909-b9bc-4769-b7d0-826d402f0dd3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"861cc7a0-70bf-435f-858c-da50c16c260e",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,11 +57,13 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f90aa321-c539-418b-8de5-d80ffdb63b3f","path":"sprites/spr_martianb_stand/spr_martianb_stand.yy",},},},"Disabled":false,"id":"f289bf82-a270-49c4-8478-a676b894cde4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"172b9909-b9bc-4769-b7d0-826d402f0dd3","path":"sprites/spr_martianb_stand/spr_martianb_stand.yy",},},},"Disabled":false,"id":"eff4b3e3-80bb-45c5-861f-db8f84c22640","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"861cc7a0-70bf-435f-858c-da50c16c260e","path":"sprites/spr_martianb_stand/spr_martianb_stand.yy",},},},"Disabled":false,"id":"f4574449-166c-4fb5-994f-d41a02e8e563","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 40,
+    "xorigin": 41,
     "yorigin": 121,
   },
   "swatchColours": null,
@@ -70,5 +74,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 77,
+  "width": 80,
 }

@@ -63,11 +63,11 @@ dataRowMax=36 categoryNames=languagetext[1] hasVariants=1
 charinfo_enemies()
 break;
 case 3: ///Boss Characters
-dataRowMax=16 categoryNames=languagetext[2] hasVariants=0
+dataRowMax=18 categoryNames=languagetext[2] hasVariants=0
 charinfo_bosses()
 break;
 case 4: ///Locations
-dataRowMax=19 categoryNames=languagetext[3] hasVariants=0 hasShadow=0;
+dataRowMax=18 categoryNames=languagetext[3] hasVariants=0 hasShadow=0;
 charinfo_locations()
 break;
 }

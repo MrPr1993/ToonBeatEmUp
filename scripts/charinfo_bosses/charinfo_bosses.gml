@@ -38,28 +38,28 @@ break;
  "???")
  break;
    case 8:
- charinfo_set(12,spr_witch_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,32,"MS.PUNCH",
+ charinfo_set(12,spr_witch_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,32,"KIANDRA",
  "???") break;
    case 9:
- charinfo_set(12,spr_clown_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,38,"MS.PUNCH",
+ charinfo_set(12,spr_duck_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,39,"QUACKI",
  "???") break;
     case 10:
- charinfo_set(12,spr_duck_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,39,"MS.PUNCH",
+ charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,40,"LARRY",
  "???") break;
    case 11:
- charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,40,"MS.PUNCH",
+ charinfo_set(12,spr_seaweed_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,41,"CIRCE",
  "???") break;
    case 12:
- charinfo_set(12,spr_seaweed_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,41,"MS.PUNCH",
+ charinfo_set(12,spr_martianb_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,54,"KWINN",
  "???") break;
    case 13:
- charinfo_set(12,spr_martianb_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,54,"MS.PUNCH",
+ charinfo_set(12,spr_submarine,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,54,"SEA BANDIT",
  "???") break;
     case 14:
- charinfo_set(12,spr_prince_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,30,"MS.PUNCH",
+ charinfo_set(12,spr_prince_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,30,"PRINCE",
  "???") break;
     case 15:
- charinfo_set(12,spr_genie_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,47,"MS.PUNCH",
+ charinfo_set(12,spr_genie_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,47,"HAIFA",
  "???") break;
      case 16:
  charinfo_set(12,spr_viva_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,0,"MIRROR VIVA",
