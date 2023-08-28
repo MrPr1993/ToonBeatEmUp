@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "ToonBeatEmUp",
-    "path": "ToonBeatEmUp.yyp",
+    "name": "b - Item Sprites",
+    "path": "folders/9 - Objects And Items/b - Item Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

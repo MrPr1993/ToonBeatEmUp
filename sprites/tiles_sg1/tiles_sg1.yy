@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "ToonBeatEmUp",
-    "path": "ToonBeatEmUp.yyp",
+    "name": "Stage1",
+    "path": "folders/5b-Stage Data/Stage1.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

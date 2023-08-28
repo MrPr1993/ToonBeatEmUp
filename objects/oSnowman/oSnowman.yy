@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Stage6",
-    "path": "folders/5b-Stage Sprites/Stage6.yy",
+    "path": "folders/5b-Stage Data/Stage6.yy",
   },
   "parentObjectId": {
     "name": "oBarrel",

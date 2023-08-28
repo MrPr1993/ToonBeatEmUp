@@ -28,7 +28,7 @@
   "origin": 9,
   "parent": {
     "name": "Swamp Stage",
-    "path": "folders/5b-Stage Sprites/Swamp Stage.yy",
+    "path": "folders/5b-Stage Data/Swamp Stage.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "ToonBeatEmUp",
-    "path": "ToonBeatEmUp.yyp",
+    "name": "Stagecarnival",
+    "path": "folders/5b-Stage Data/Stage5/Stagecarnival.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

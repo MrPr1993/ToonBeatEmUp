@@ -308,16 +308,17 @@ animFrame+=0.2 if animFrame>2.6 {hurt=0 atk=0 canmove=1 hit=0
 }
 
 if anim=134 //WHIP
-{sprite_index=spr_swing_throwitem
+{sprite_index=spr_swing_whip
 frame_set(0,0,0.25)
 frame_set(1,1,0.1) 
-frame_set(2,2,0.1)
-frame_set(3,3,0.1)
-frame_set(4,0,0.1)
+frame_set(2,2,0.25)
+frame_set(3,3,0.25)
+frame_set(4,4,0.25)
+frame_set(5,5,0.1)
+frame_set(6,6,0.1)
 atkcol_set(58,0,34-16,3.05,1,25)
 if animFrame=clamp(animFrame,3,3.2) atk=1 else atk=0
-if animFrame>4.7 {canmove=1 anim=0}
-
+if animFrame>6.7 {canmove=1 anim=0}
 }
 
 if anim=135 ///Shove

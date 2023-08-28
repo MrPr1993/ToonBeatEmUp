@@ -15,7 +15,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Stagecarnival",
-    "path": "folders/5b-Stage Sprites/Stage5/Stagecarnival.yy",
+    "path": "folders/5b-Stage Data/Stage5/Stagecarnival.yy",
   },
   "parentObjectId": {
     "name": "oShadowOnly",

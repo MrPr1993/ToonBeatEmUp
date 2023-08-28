@@ -39,18 +39,19 @@ if enemySpawn=25 {enemySpawnName="25 Alien Robot" spawnUnit=oAlienRobot}
 if enemySpawn=26 {enemySpawnName="26 Cobra" spawnUnit=oCobra}
 if enemySpawn=27 {enemySpawnName="27 Plant" spawnUnit=oPlant}
 if enemySpawn=28 {enemySpawnName="28 Animated Object" spawnUnit=oAnimatedObject}
-if enemySpawn=28 {enemySpawnName="29 Monk" spawnUnit=oMonk}
-if enemySpawn=29 {enemySpawnName="30 Lobster" spawnUnit=oLobster}
-if enemySpawn=30 {enemySpawnName="31 Spacer" spawnUnit=oSpacer}
-if enemySpawn=31 {enemySpawnName="32 Diver" spawnUnit=oDiver}
-if enemySpawn=32 {enemySpawnName="33 Ladybot" spawnUnit=oLadybot}
-if enemySpawn=33 {enemySpawnName="34 Nurse" spawnUnit=oNurse}
-if enemySpawn=34 {enemySpawnName="35 Shroom" spawnUnit=oShroom}
-if enemySpawn=35 {enemySpawnName="36 Dancer" spawnUnit=oDancer}
-if enemySpawn=36 {enemySpawnName="37 Clown Puppet" spawnUnit=oClown}
-if enemySpawn=37 {enemySpawnName="38 Teddy Bear" spawnUnit=oBear}
-if enemySpawn=38 {enemySpawnName="39 Snow Girl" spawnUnit=oSnowGirl}
-if enemySpawn=39 {enemySpawnName="40 Fairy" spawnUnit=oFairy}
+if enemySpawn=28 {enemySpawnName="29 Painting" spawnUnit=oPainting}
+if enemySpawn=29 {enemySpawnName="30 Monk" spawnUnit=oMonk}
+if enemySpawn=30 {enemySpawnName="31 Lobster" spawnUnit=oLobster}
+if enemySpawn=31 {enemySpawnName="32 Spacer" spawnUnit=oSpacer}
+if enemySpawn=32 {enemySpawnName="33 Diver" spawnUnit=oDiver}
+if enemySpawn=33 {enemySpawnName="34 Ladybot" spawnUnit=oLadybot}
+if enemySpawn=34 {enemySpawnName="35 Nurse" spawnUnit=oNurse}
+if enemySpawn=35 {enemySpawnName="36 Shroom" spawnUnit=oShroom}
+if enemySpawn=36 {enemySpawnName="37 Dancer" spawnUnit=oDancer}
+if enemySpawn=37 {enemySpawnName="38 Clown Puppet" spawnUnit=oClown}
+if enemySpawn=38 {enemySpawnName="39 Teddy Bear" spawnUnit=oBear}
+if enemySpawn=39 {enemySpawnName="40 Snow Girl" spawnUnit=oSnowGirl}
+if enemySpawn=40 {enemySpawnName="41 Fairy" spawnUnit=oFairy}
 }
 if spawnType="Bosses"
 {

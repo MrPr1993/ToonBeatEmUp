@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "ToonBeatEmUp",
-    "path": "ToonBeatEmUp.yyp",
+    "name": "5b-Stage Data",
+    "path": "folders/5b-Stage Data.yy",
   },
   "parentObjectId": null,
   "persistent": false,

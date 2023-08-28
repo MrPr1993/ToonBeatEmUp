@@ -33,6 +33,8 @@ weapon_add("HAMMER") canTrack=1 weaponcanRecharge=0
 
 enemyscript=animsetup_swing
 
+if oControl.betatest=1
+if keyboard_check(vk_control) weapon_add("WHIP")
 
 rangeAtk=90
 

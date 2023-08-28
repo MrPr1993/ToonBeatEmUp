@@ -213,7 +213,7 @@ weaponSpin=0 throwHspd=6
 if wpadd="WHIP"
 {
 spawnID=oWhip
-weaponspr=spr_whip
+weaponspr=spr_swing_whipweapon
 weaponIndex=0
 weaponX=14
 weaponY=-69

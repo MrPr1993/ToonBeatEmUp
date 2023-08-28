@@ -35,7 +35,7 @@
   "origin": 4,
   "parent": {
     "name": "Stage1",
-    "path": "folders/5b-Stage Sprites/Stage1.yy",
+    "path": "folders/5b-Stage Data/Stage1.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
