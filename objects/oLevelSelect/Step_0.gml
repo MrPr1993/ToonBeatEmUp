@@ -58,7 +58,7 @@ if level=30 roomGo=rm_animeditor
 if level=31 roomGo=rm_blankvoid
 if level=32 roomGo=rm_newspaper
 if level=33 roomGo=rm_opening
-if level=34 roomGo=rm_credits
+if level=34 roomGo=rm_creditscene
 if level=35 roomGo=rm_cargame
 if level=36 roomGo=rm_brickbreak
 if level=37 roomGo=rm_cargame

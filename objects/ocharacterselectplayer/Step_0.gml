@@ -62,23 +62,53 @@ if canControl!=0
 controller_setup()
 
 if controlNO=9
-{	
+{
+if difficultymode=1 
+{	oCharacterSelectPlayer.charadded=0
+oCharacterSelectPlayer.charaddedbuffer=0
+	
+if -key_left_pressed {if global.Difficulty=0 global.Difficulty=4 else global.Difficulty-=1 PlaySound(snd_select)}
+if key_right_pressed {if global.Difficulty=4 global.Difficulty=0 else global.Difficulty+=1 PlaySound(snd_select)}
+
 if introprep=0
-{introprep=1 introtextadd+=640
+{
+introprep=1 introtextadd+=640
 	oControl.p1.x+=640
 	oControl.p2.x+=640
 	oControl.p3.x+=640
 	oControl.p4.x+=640
-	oCharacterSelectPlayer.hspeed=-32
+	
+
+	
+	blk=instance_create_depth(320,0,-1,oFlashFX) with blk
+	{sprite_index=spr_block image_xscale=-9999 image_yscale=8888 hspeed=-32
+	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0 haspal=0
+	}
+}
+
+if key_cancel 
+{
+if global.StageSelect=0 room=rm_menu else 
+if global.IsMinigame=0 room=rm_map else room=rm_minigames
+}
+
+if key_A or key_attack {PlaySound(snd_picked) difficultymode=0
+		oCharacterSelectPlayer.hspeed=-32
 	
 introtextaddspd=-32
 	
 layer_hspeed("BGbricks",-32)
 	alarm[0]=20
-	blk=instance_create_depth(320,0,-1,oFlashFX) with blk
-	{sprite_index=spr_block image_xscale=-9999 image_yscale=8888 hspeed=-32
-	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0 haspal=0
-	}
+
+
+}
+
+}
+else
+{
+if introprep=0
+{
+
 }
 
 if oControl.p1.isReady=0
@@ -116,6 +146,7 @@ or keyboard_check_pressed(vk_escape)
 {
 if global.StageSelect=0 room=rm_menu else 
 if global.IsMinigame=0 room=rm_map else room=rm_minigames
+}
 }
 }
 else

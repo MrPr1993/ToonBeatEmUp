@@ -1,5 +1,13 @@
-draw_sprite_ext(spr_characterselect,2,x+1,y+1,1,1,0,c_black,0.5)
 
+if controlNO=9
+{sprite_index=mask_none
+draw_set_color(c_white)
+
+}
+
+else
+{
+draw_sprite_ext(spr_characterselect,2,x+1,y+1,1,1,0,c_black,0.5)
 
 
 if charadded=0
@@ -73,7 +81,6 @@ draw_sprite_ext(spr_characterselect,3,x+1+SelectingX,round(y-1+136-136*signup)+1
 
 
 
-
 if charadded=2
 {
 if selectedflash=-1 selectedflash=1 else selectedflash-=0.2
@@ -83,5 +90,5 @@ draw_sprite(spr_characterselect,0,x+1,y+1)
 draw_sprite_ext(spr_characterselect,4,x+1,y+1,1,1,0,c_white,round(selectedflashing))
 selectedflashing-=0.5
 }
-
+}
 }

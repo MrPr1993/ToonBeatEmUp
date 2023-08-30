@@ -238,6 +238,8 @@ global.StageName=""
 global.Gold=0
 global.GoldShow=1 //global.GoldShow=1 Show Gold
 
+global.Difficulty=2
+
 global.enemytest=0
 global.enemytestB=0
 
@@ -440,6 +442,8 @@ charSelFlash=60
 charSelCountdown=20
 charSelForceSelect=0
 charselLerp=0
+
+charselectmode=0
 
 superFlashFrame1=0
 superFlashFrame2=0
@@ -788,6 +792,24 @@ if room=rm_titlescreen
 global.HiScoreSee=0
 }
 
+if room=rm_creditscene
+{
+dancer1spr=spr_viva_dance
+dancer1img=1
+dancer1turn=1
+dancer2spr=spr_hina_dance
+dancer2img=1
+dancer2turn=1
+dancer3spr=spr_bahati_dance
+dancer3img=1
+dancer3turn=1
+dancer4spr=spr_sofia_dance
+dancer4img=1
+dancer4turn=1
+
+dancersfade=1
+
+}
 if room=rm_soundtest
 {
 songno=0
@@ -801,7 +823,6 @@ voiceActor=""
 
 songtext=1
 songcomposer=""
-
 dancer1spr=spr_viva_dance
 dancer1img=1
 dancer1turn=1

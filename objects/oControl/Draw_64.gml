@@ -54,7 +54,7 @@ if isPaused=0
 {
 
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
-and room!=rm_animeditor and room!=rm_newspaper and room!=rm_credits and room!=rm_howtoplay and room!=rm_cutscene1
+and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and room!=rm_howtoplay and room!=rm_cutscene1
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
 and room!=rm_menu and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes and room!=rm_paletteeditor
@@ -785,9 +785,45 @@ draw_rectangle(-8,-8,2222,2222,0)
 
 ///Character Select
 if room=rm_characterselect
-{fpsY=16
+{fpsY=32
 draw_set_color(c_white) draw_set_alpha(1)
+draw_sprite(spr_difficultyselect,0,160+p5.introtextadd-640,round(32+charselLerp))
+
 draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))
+
+draw_set_font(global.scorefont)
+var xadd=-640+160+p5.introtextadd
+draw_set_halign(fa_center)
+
+var diftext=""
+var diftext2=""
+if global.Difficulty=0 {diftext="ONE-STAR (VERY EASY)" 
+	diftext2="YOU TAKE WAY LESS DAMAGE AND DEAL MORE."}
+if global.Difficulty=1 {diftext="THE AMATEUR (EASY)" 
+	diftext2="YOU TAKE LESS DAMAGE."}
+if global.Difficulty=2 {diftext="LIL' AVERAGE (MEDIUM)" 
+	diftext2="NORMAL DIFFICULTY, THE BASICS."}
+if global.Difficulty=3 {diftext="THE EXPERT (HARD)" 
+	diftext2="TOUGHER FOES, YOU TAKE MORE DAMAGE."}
+if global.Difficulty=4 {diftext="SKILLED DIVA (VERY HARD)" 
+	diftext2="NOT SUITABLE FOR NEWBIES."}
+
+draw_text(xadd,120-32-8,diftext)
+draw_text(xadd,128+8,diftext2)
+
+
+draw_set_halign(fa_left)
+
+//draw_sprite_ext(spr_characterselect,2,xadd,16,1,1,0,c_white,0.5)
+var difadd=0;
+if global.Difficulty=1 difadd=16
+if global.Difficulty=2 difadd=32
+if global.Difficulty=3 difadd=48
+if global.Difficulty=4 difadd=64
+for (iI=0; iI<=global.Difficulty; iI+=1)
+{
+draw_sprite(spr_difficultystar,0,-32*iI+xadd+difadd,120-8)
+}
 
 ///COMMAND TEXT
 draw_command(2)
@@ -1057,7 +1093,7 @@ room_goto(rm_cutscenes)
 }
 }
 
-///Credits
+///Credits - Unused Version
 if room=rm_credits
 {
 if credMSC=0
@@ -1135,6 +1171,10 @@ draw_set_alpha(creditsAlpha)
 draw_set_color(c_black) draw_rectangle(-32,-32,777,777,0)
 
 }
+
+///Feats
+if room=rm_creditscene
+credits_draw()
 
 if room=rm_howtoplay
 {

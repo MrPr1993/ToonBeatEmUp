@@ -6,7 +6,7 @@ oControl.showMap=0
 oControl.P1SpawnX=90
 oControl.P1SpawnY=232
 
-oControl.stageNext=rm_credits
+oControl.stageNext=rm_creditscene
 
 with oControl
 {timecheck=alarm[0] alarm[0]=10000000}

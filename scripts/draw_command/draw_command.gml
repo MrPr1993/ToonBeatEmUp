@@ -28,6 +28,7 @@ if commandType=2
 {
 draw_buttontext(8,8,8,"",spr_commandbutton,0,"J",commandL[0])
 draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"",commandL[1])
+if p5.difficultymode=0
 if global.UnlockAltPal=1
 draw_buttontext(320-8,8,8,commandL[2],spr_commandbutton,0,"H","")
 
@@ -177,6 +178,7 @@ if commandType=2
 {
 draw_buttontext(8,8,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
 draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1])
+if p5.difficultymode=0
 if global.UnlockAltPal=1
 draw_buttontext(320-8,8,8,commandL[2],spr_commandbutton,7+6*commandMul,"","")
 

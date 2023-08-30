@@ -213,3 +213,9 @@ my_pal_sprite=global.p1Pals
 vehSpr=spr_car
 vehWSpr=spr_car_wheels
 
+if global.Difficulty=0 extradefense=0.5
+if global.Difficulty=1  extradefense=0.25
+if global.Difficulty=3 extradefense=-0.5
+if global.Difficulty=4  extradefense=-0.25
+
+
