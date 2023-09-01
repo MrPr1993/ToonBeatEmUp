@@ -787,6 +787,8 @@ draw_rectangle(-8,-8,2222,2222,0)
 if room=rm_characterselect
 {fpsY=32
 draw_set_color(c_white) draw_set_alpha(1)
+if global.TrainingRoom=0
+{
 draw_sprite(spr_difficultyselect,0,160+p5.introtextadd-640,round(32+charselLerp))
 
 draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))
@@ -797,18 +799,18 @@ draw_set_halign(fa_center)
 
 var diftext=""
 var diftext2=""
-if global.Difficulty=0 {diftext="ONE-STAR (VERY EASY)" 
+if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)" 
 	diftext2="YOU TAKE WAY LESS DAMAGE AND DEAL MORE."}
-if global.Difficulty=1 {diftext="THE AMATEUR (EASY)" 
+if global.Difficulty=1 {diftext="FIRST GIG\n(EASY)" 
 	diftext2="YOU TAKE LESS DAMAGE."}
-if global.Difficulty=2 {diftext="LIL' AVERAGE (MEDIUM)" 
+if global.Difficulty=2 {diftext="FAVORITE AT THE CLUB\n(MEDIUM)" 
 	diftext2="NORMAL DIFFICULTY, THE BASICS."}
-if global.Difficulty=3 {diftext="THE EXPERT (HARD)" 
+if global.Difficulty=3 {diftext="THE MAIN EVENT AT THE CONCERT\n(HARD)" 
 	diftext2="TOUGHER FOES, YOU TAKE MORE DAMAGE."}
-if global.Difficulty=4 {diftext="SKILLED DIVA (VERY HARD)" 
+if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)" 
 	diftext2="NOT SUITABLE FOR NEWBIES."}
 
-draw_text(xadd,120-32-8,diftext)
+draw_text(xadd,120-32-16,diftext)
 draw_text(xadd,128+8,diftext2)
 
 
@@ -824,7 +826,7 @@ for (iI=0; iI<=global.Difficulty; iI+=1)
 {
 draw_sprite(spr_difficultystar,0,-32*iI+xadd+difadd,120-8)
 }
-
+}
 ///COMMAND TEXT
 draw_command(2)
 ///

@@ -315,12 +315,9 @@ if camMove=0
 if keyboard_check(vk_control)
 if keyboard_check_pressed(ord("D"))
 {
- global.Difficulty=get_string("Change Difficulty", global.Difficulty)
+ global.Difficulty=get_integer("Change Difficulty", global.Difficulty)
 with oPlayer{
-if global.Difficulty=0 extradefense=0.5
-if global.Difficulty=1  extradefense=0.25
-if global.Difficulty=3 extradefense=-0.5
-if global.Difficulty=4  extradefense=-0.25
+difficulty_check()
 }
 }
 }

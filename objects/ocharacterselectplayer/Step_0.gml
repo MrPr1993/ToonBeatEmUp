@@ -64,7 +64,7 @@ controller_setup()
 if controlNO=9
 {
 if difficultymode=1 
-{	oCharacterSelectPlayer.charadded=0
+{oCharacterSelectPlayer.charadded=0
 oCharacterSelectPlayer.charaddedbuffer=0
 	
 if -key_left_pressed {if global.Difficulty=0 global.Difficulty=4 else global.Difficulty-=1 PlaySound(snd_select)}
@@ -92,7 +92,9 @@ if global.StageSelect=0 room=rm_menu else
 if global.IsMinigame=0 room=rm_map else room=rm_minigames
 }
 
-if key_A or key_attack {PlaySound(snd_picked) difficultymode=0
+
+if global.TrainingRoom or 
+key_A or key_attack {if key_A or key_attack PlaySound(snd_picked) difficultymode=0
 		oCharacterSelectPlayer.hspeed=-32
 	
 introtextaddspd=-32

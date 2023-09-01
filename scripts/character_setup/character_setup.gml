@@ -34,6 +34,7 @@ Cweather=0
 
 	hp=1
 	maxhp=1
+	extraheal=0
 	showhp=1
 	showp1=0
 	showmash=0

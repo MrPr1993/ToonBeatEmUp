@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_player(){
-hp=clamp(hp,0,1)
+hp=clamp(hp,0,maxhp)
 
 super=clamp(super,0,18)
 

@@ -79,3 +79,4 @@ ability3="✰✰✰"
 difficultymode=1
 
 palettemode=0
+

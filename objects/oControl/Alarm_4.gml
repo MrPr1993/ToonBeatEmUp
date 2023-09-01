@@ -26,7 +26,7 @@ if room=rm_menu
 global.MenuGlobal=menuSelect
 if menuSelect=0 {room_goto(rm_characterselect) global.IsMovie=0 global.IsMinigame=0  global.TrainingRoom=0 global.StageGoing=rm_opening global.StageSelect=0}
 if menuSelect=1 {room_goto(rm_map) global.IsMinigame=0 global.TrainingRoom=0 global.StageSelect=1}
-if menuSelect=2 room_goto(rm_feats)
+if menuSelect=2 {room_goto(rm_feats) global.StageSelect=0}
 if menuSelect=3 {global.TrainingRoom=0 room_goto(rm_settings)}
 if menuSelect=4 room_goto(rm_shop)
 if menuSelect=5 {global.StageSelect=0 global.TrainingRoom=1 global.IsMinigame=0 room_goto(rm_characterselect)}

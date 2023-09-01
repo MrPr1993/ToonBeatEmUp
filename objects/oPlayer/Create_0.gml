@@ -213,9 +213,14 @@ my_pal_sprite=global.p1Pals
 vehSpr=spr_car
 vehWSpr=spr_car_wheels
 
-if global.Difficulty=0 extradefense=0.5
-if global.Difficulty=1  extradefense=0.25
-if global.Difficulty=3 extradefense=-0.5
-if global.Difficulty=4  extradefense=-0.25
+extraheal=0
 
-
+difficulty_check=function()
+{maxhp=1
+if global.Difficulty=0 {maxhp=1.5}
+if global.Difficulty=1 {maxhp=1.25}
+if global.Difficulty=3 {maxhp=0.75}
+if global.Difficulty=4 {maxhp=0.5}
+if global.Difficulty=5 {maxhp=0.25} ///MANIA
+hp=maxhp
+}

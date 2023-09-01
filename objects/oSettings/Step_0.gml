@@ -54,7 +54,7 @@ if menuSelect=5 {if global.CRTcustomDistortAM<3.99 global.CRTcustomDistortAM+=0.
 if -key_left_pressed
 {PlaySound(snd_select)
 	
-	if menuSelect=7 {if global.ColorMode=0 global.ColorMode=5 else global.ColorMode-=1}
+	if menuSelect=7 {if global.ColorMode=0 global.ColorMode=4 else global.ColorMode-=1}
 	if menuSelect=8 {if global.ArcadeScreen=0 global.ArcadeScreen=3 else global.ArcadeScreen-=1}
 	
 	//Screen Size
@@ -98,7 +98,7 @@ if key_right_pressed or key_A
 {PlaySound(snd_select)
 if menuSelect=2 screen_size(1)
 
-if menuSelect=7 {if global.ColorMode=5 global.ColorMode=0 else global.ColorMode+=1}
+if menuSelect=7 {if global.ColorMode=4 global.ColorMode=0 else global.ColorMode+=1}
 if menuSelect=8 {if global.ArcadeScreen=3 global.ArcadeScreen=0 else global.ArcadeScreen+=1}
 
 if menuSelect=3 //6

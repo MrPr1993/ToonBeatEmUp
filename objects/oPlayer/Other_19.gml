@@ -29,7 +29,7 @@ fallHole=0
 
 PlayerLife-=1
 pow=0
-hp=1
+hp=maxhp
 
 
 animFrame=0
