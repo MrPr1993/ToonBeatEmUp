@@ -9,6 +9,7 @@ if x>__view_get( e__VW.XView, 0 )+640+64{x=__view_get( e__VW.XView, 0)+640+64 im
 }
 
 
+
 ///Hits
 if sprite_index=ThrownSpr
 {
@@ -91,6 +92,33 @@ if image_index=clamp(image_index,2,2.9)
 weaponanim(weaponspr,1,-14,-91,190,weaponcolor)
 if image_index=clamp(image_index,3,3.9)
 weaponanim(weaponspr,2,30,-47,90,weaponcolor)
+}
+else
+if anim=134 //WHIP
+{sprite_index=spr_swing_whip
+if animFrame=clamp(animFrame,0,0.9)
+weaponanim(weaponspr,image_index+1,9,-68,0,weaponcolor)
+if animFrame=clamp(animFrame,1,1.9)
+weaponanim(weaponspr,image_index+1,14,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,2,2.9)
+weaponanim(weaponspr,image_index+1,11,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,3,3.9)
+weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,4,4.9)
+weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,5,5.9)
+weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,6,6.9)
+weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
+	
+frame_set(0,0,0.25)
+frame_set(1,1,0.1) 
+frame_set(2,2,0.25)
+frame_set(3,3,0.1) if animFrame=4 PlaySound(WswingSound)
+frame_set(4,4,0.25)
+frame_set(5,5,0.1)
+frame_set(6,6,0.1)
+atkcol_set(93,0,27,5.25,1,38)
+if animFrame=clamp(animFrame,4,4.5) atk=1 else atk=0
+if animFrame>6.7 {canmove=1 anim=0}
 } else weaponIndex=0
-
-

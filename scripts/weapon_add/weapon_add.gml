@@ -19,7 +19,7 @@ weaponDamage=0.2
 weapontargetHeight=2
 weapontype=0
 weaponHitType=1
-WswingSound=snd_swing3
+WswingSound=snd_swing5
 }
 
 if wpadd="TASER"
@@ -221,11 +221,11 @@ weaponangle=180
 weaponcolor=c_white
 weaponBack=1
 weaponRange=100
-weaponDamage=0.2
+weaponDamage=0.05
 weapontargetHeight=2
 weapontype=5
-weaponHitType=1
-WswingSound=snd_swing3
+weaponHitType=0
+WswingSound=snd_swing2
 }
 
 

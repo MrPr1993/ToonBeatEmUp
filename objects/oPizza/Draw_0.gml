@@ -1,6 +1,11 @@
 if canFlash=1
 if FX=1 shader_set(shd_white_sprite)
 
+if 	altSpr=-1
+{var altspr=sprite_index; var altind=image_index;}
+else
+{var altspr=altSpr; var altind=altInd;}
+
 if place_meeting(x,y,oTrainFXSpot)
 {trainzSet=instance_place(x,y,oTrainFXSpot)
 if ground
@@ -12,16 +17,16 @@ if !(place_meeting(x,y,oWaterFX) and z>waterMax)
 if isweapon=0
 {
 pal_swap_set(weapon_pal_sprite,weapon_pal,false);
-draw_sprite_ext(sprite_index,image_index,round(x+groundAdd*image_xscale),round(y+trainz+z+zAdd*zAddGround),image_xscale,image_yscale,(angleImage+angleFX+(groundRot*ground))*image_xscale,image_blend,image_alpha)
+draw_sprite_ext(altspr,altind,round(x+groundAdd*image_xscale),round(y+trainz+z+zAdd*zAddGround),image_xscale,image_yscale,(angleImage+angleFX+(groundRot*ground))*image_xscale,image_blend,image_alpha)
 pal_swap_reset()
 }
 else
 {
 pal_swap_set(weapon_pal_sprite,weapon_pal,false);
 if itemCentered=0
-draw_sprite_ext(sprite_index,image_index,round(x-lengthdir_x(sprite_get_bbox_right(sprite_index)/2,angleImage)*image_xscale),round(y-lengthdir_y(sprite_get_bbox_bottom(sprite_index)/2,angleImage)+z+trainz+zAdd*zAddGround),image_xscale,image_yscale,(angleImage+angleFX+(groundRot*ground))*image_xscale,image_blend,image_alpha)
+draw_sprite_ext(altspr,altind,round(x-lengthdir_x(sprite_get_bbox_right(altspr)/2,angleImage)*image_xscale),round(y-lengthdir_y(sprite_get_bbox_bottom(altspr)/2,angleImage)+z+trainz+zAdd*zAddGround),image_xscale,image_yscale,(angleImage+angleFX+(groundRot*ground))*image_xscale,image_blend,image_alpha)
 else
-draw_sprite_ext(sprite_index,image_index,round(x),round(y+trainz+z+zAdd*zAddGround),image_xscale,image_yscale,(angleImage+angleFX+(groundRot*ground))*image_xscale,image_blend,image_alpha)
+draw_sprite_ext(altspr,altind,round(x),round(y+trainz+z+zAdd*zAddGround),image_xscale,image_yscale,(angleImage+angleFX+(groundRot*ground))*image_xscale,image_blend,image_alpha)
 
 pal_swap_reset()
 }

@@ -8,6 +8,9 @@ function item_setup() {
 	itemHP=0
 	trainz=0
 	
+	altSpr=-1
+	altInd=-1
+	
 	colorshade_setup()
 
 dead=0

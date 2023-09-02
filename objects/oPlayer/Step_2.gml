@@ -245,5 +245,5 @@ if keyboard_check_pressed(ord("Y"))///Change Character
 if character=3 character=0 else character+=1
 
 }
-
+if weapontype=5 if anim!=26 weaponIndex=0
 }

@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_whip",
-    "path": "sprites/spr_whip/spr_whip.yy",
+    "name": "spr_swing_whipweapon",
+    "path": "sprites/spr_swing_whipweapon/spr_swing_whipweapon.yy",
   },
   "spriteMaskId": {
     "name": "spr_selfatk",

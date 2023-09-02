@@ -99,12 +99,32 @@ frame_set(4,3,0.1)
 	}
 
 if weapontype=5 ////Whip
-{if animFrame=0 sprite_index=spr_viva_knife
-frame_set(0,0,0.1) if animFrame=1 sprite_index=spr_viva_grab
-frame_set(1,2,0.1) 
-frame_set(2,3,0.1) if animFrame=3 sprite_index=spr_viva_grab
-frame_set(3,0,0.1)
-if animFrame>3.7 {canmove=1 anim=0}
+{
+sprite_index=spr_viva_whip
+if animFrame=clamp(animFrame,0,0.9)
+weaponanim(weaponspr,image_index+1,9,-68,0,weaponcolor)
+if animFrame=clamp(animFrame,1,1.9)
+weaponanim(weaponspr,image_index+1,14,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,2,2.9)
+weaponanim(weaponspr,image_index+1,11,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,3,3.9)
+weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,4,4.9)
+weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,5,5.9)
+weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
+if animFrame=clamp(animFrame,6,6.9)
+weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
+	frame_set(0,0,0.25)
+frame_set(1,1,0.1) 
+frame_set(2,2,0.25) if animFrame=3 PlaySound(WswingSound)
+frame_set(3,3,0.1)
+frame_set(4,4,0.25)
+frame_set(5,5,0.1)
+frame_set(6,6,0.1)
+atkcol_set(93,0,27,5.25,1,38)
+if animFrame=clamp(animFrame,4,4.5) atk=1 else atk=0
+if animFrame>6.7 {canmove=1 anim=0}
 }
 
 		///Ice Gun Fire
