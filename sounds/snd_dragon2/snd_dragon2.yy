@@ -1,0 +1,23 @@
+{
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_dragon2",
+  "audioGroupId": {
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
+  },
+  "bitDepth": 1,
+  "bitRate": 128,
+  "compression": 0,
+  "conversionMode": 0,
+  "duration": 2.400688,
+  "parent": {
+    "name": "Dragon Maiden",
+    "path": "folders/f - Sounds/Voice Clips/Bosses/Dragon Maiden.yy",
+  },
+  "preload": false,
+  "sampleRate": 44100,
+  "soundFile": "snd_dragon2.wav",
+  "type": 0,
+  "volume": 1.0,
+}

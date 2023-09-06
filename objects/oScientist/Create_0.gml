@@ -4,6 +4,11 @@ name="DR.FRAN"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=60//36
 
+	DeathCry=snd_scientist13//snd_deathcry2
+	DamageVoice1=snd_duck12
+	DamageVoice2=snd_duck12
+	DamageVoice3=snd_duck12
+
 enemyscript=animsetup_enemy
 
 pointshit=10

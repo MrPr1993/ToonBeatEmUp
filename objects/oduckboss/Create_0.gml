@@ -6,6 +6,11 @@ enemyPortraitIndex=39
 
 enemyscript=animsetup_enemy
 
+	DeathCry=snd_duck12//snd_deathcry2
+	DamageVoice1=snd_duck11
+	DamageVoice2=snd_duck11
+	DamageVoice3=snd_duck11
+
 pointshit=10
 points=100
 

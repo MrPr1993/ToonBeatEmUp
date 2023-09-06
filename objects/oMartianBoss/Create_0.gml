@@ -4,6 +4,11 @@ name="KUINN"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=54
 
+	DeathCry=snd_martianb11//snd_deathcry2
+	DamageVoice1=snd_martianb10
+	DamageVoice2=snd_martianb10
+	DamageVoice3=snd_martianb10
+
 enemyscript=animsetup_enemy
 
 pointshit=10
