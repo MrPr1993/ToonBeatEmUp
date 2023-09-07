@@ -8,7 +8,7 @@ controller_setup()
 draw_sprite(bg_soundtest,0,0,0)
 draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
 
-if keyboard_check_pressed(vk_escape) room=rm_menu
+if keyboard_check_pressed(vk_escape) room_goto(rm_menu)
 
 
 
@@ -43,7 +43,7 @@ if key_up_pressed {if soundSelect=1 soundSelect=8 else soundSelect-=1}
 if -key_down_pressed {if soundSelect=8 soundSelect=1 else soundSelect+=1}
 
 	if key_jump
-if playingsongname="" {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 audio_stop_all() room=rm_menu animFrame=0} else {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 animFrame=0 audio_stop_all() playingsongname=""
+if playingsongname="" {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 audio_stop_all() room_goto(rm_menu) animFrame=0} else {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 animFrame=0 audio_stop_all() playingsongname=""
 dancer1img=1
 dancer2img=1
 dancer3img=1

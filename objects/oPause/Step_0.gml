@@ -52,7 +52,7 @@ if menuSelect=1 room_restart()
 if menuSelect=3 
 {
 if global.StageSelect=0
-{room=rm_menu global.MenuSkip=0 global.IntroSkip=1}
+{room_goto(rm_menu) global.MenuSkip=0 global.IntroSkip=1}
 else
 if global.IsMinigame=1 room_goto(rm_minigames)
 else

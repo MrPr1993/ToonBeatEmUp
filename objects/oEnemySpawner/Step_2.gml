@@ -20,8 +20,8 @@ if canFollow=1
 if __view_get( e__VW.XView, 0 )>MinX __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (abs(oPlayer.totalSpeed*2)) )//abs(oPlayer.totalSpeed)
 }
 }
-//if oPlayer.x>view_xview[0]+160
-//if view_xview[0]<MaxX view_xview[0]+=abs(oPlayer.totalSpeed)
+//if oPlayer.x>__view_get( e__VW.XView, 0 )+160
+//if __view_get( e__VW.XView, 0 )<MaxX __view_get( e__VW.XView, 0 )+=abs(oPlayer.totalSpeed)
 
 
 

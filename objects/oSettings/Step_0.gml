@@ -164,7 +164,7 @@ if controlSettings=1
 {controlSettings=0 global.MenuSkip=0 PlaySound(snd_steal) exit;}
 {
 settings_save()
-if room=rm_settings {global.Continues=global.ContinueStart global.MenuSkip=0 room=rm_menu} else instance_destroy()
+if room=rm_settings {global.Continues=global.ContinueStart global.MenuSkip=0 room_goto(rm_menu)} else instance_destroy()
 }
 
 }

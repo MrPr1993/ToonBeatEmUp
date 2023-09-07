@@ -11,7 +11,7 @@ room_goto(rm_menu)
 else 
 if room=rm_map or room=rm_minigames
 {global.StageSelect=1
-room=rm_characterselect
+room_goto(rm_characterselect)
 }
 else
 {
@@ -38,7 +38,7 @@ if menuSelect=10 {room_goto(rm_cutscenes) global.IsMovie=1  global.HiscoreSkip=1
 if menuSelect=11 {room_goto(rm_hiscore) global.HiScoreSee=1 global.HiscoreSkip=1}
 }
 else
-if room=rm_training room=rm_menu
+if room=rm_training room_goto(rm_menu)
 else
 room_goto(global.StageGoing)
 }

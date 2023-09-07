@@ -4,7 +4,7 @@ function draw_cutscenes(){
 
 if room=rm_cutscenes
 {//global.MinigameSel=0
-if key_B room=rm_menu
+if key_B room_goto(rm_menu)
 draw_set_font(global.scorefont)	
 
 draw_sprite(bg_cuts1,0,0-320+MenuMoveX,0)

@@ -610,7 +610,7 @@ if iconShow>90
 {
 if iconShow<210-70
 if iconSel=spr_scicon if global.IntroSkip=0
-{global.IntroSkip=1 room=rm_newspaper} ///Skip To Newspaper Scene
+{global.IntroSkip=1 room_goto(rm_newspaper)} ///Skip To Newspaper Scene
 
 
 if iconShow>210-60
@@ -1105,7 +1105,7 @@ if credMSC=0
 if creditsGo=0
 {if creditsAlpha>-0.1 creditsAlpha-=0.1} else creditsAlpha+=0.1
 
-if creditsAlpha>1.5 room=rm_titlescreen
+if creditsAlpha>1.5 room_goto(rm_titlescreen)
 creditsCameo=0
 
 creditsTime-=1
@@ -1184,7 +1184,7 @@ controller_setup()
 if creditsGo=0
 {if creditsAlpha>-0.1 creditsAlpha-=0.1} else creditsAlpha+=0.1
 
-if creditsAlpha>1.5 room=rm_stage1
+if creditsAlpha>1.5 room_goto(rm_stage1)
 
 creditsTime-=1
 if keyboard_check(vk_anykey)
@@ -1405,7 +1405,7 @@ draw_set_color(c_white) draw_set_alpha(1)
 ///Screen FX for exit
 if stageEndFX=1
 {
-stageEnd+=0.05 if stageEnd>1.5 room=CutsceneStage ///Cutscene End
+stageEnd+=0.05 if stageEnd>1.5 room_goto(CutsceneStage) ///Cutscene End
 draw_set_color(c_black) draw_set_alpha(1)
 if stageEnd!=0
 draw_rectangle(320-320*stageEnd,-2,320+2,999,false)

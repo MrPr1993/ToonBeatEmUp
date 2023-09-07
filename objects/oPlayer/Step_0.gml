@@ -94,14 +94,14 @@ if canmove=1
 {
 
 if -key_left 
-{//if x>view_xview[0]+16
+{//if x>__view_get( e__VW.XView, 0 )+16
 if place_free(x-walkSpeed-dashing,y) x-=walkSpeed+dashing if ground image_xscale=-1
 if dashing=2 doubledash=0.2}
 
 if -key_left and key_right {key_left=0  key_right=1}
 
 if key_right
-{//if x<view_xview[0]+320-16
+{//if x<__view_get( e__VW.XView, 0 )+320-16
 if place_free(x+walkSpeed+dashing,y) x+=walkSpeed+dashing
   if ground image_xscale=1
 if dashing=2 doubledash=0.2}

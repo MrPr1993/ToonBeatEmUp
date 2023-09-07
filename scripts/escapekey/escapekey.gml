@@ -25,9 +25,9 @@ global.StageSelect=0
 }
 
 if global.StageSelect=0
-room=rm_titlescreen
+room_goto(rm_titlescreen)
 if global.StageSelect=1
-room=rm_map
+room_goto(rm_map)
 }
 else
 {

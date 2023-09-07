@@ -88,8 +88,8 @@ introprep=1 introtextadd+=640
 
 if key_cancel 
 {
-if global.StageSelect=0 room=rm_menu else 
-if global.IsMinigame=0 room=rm_map else room=rm_minigames
+if global.StageSelect=0 room_goto(rm_menu) else 
+if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 }
 
 
@@ -146,8 +146,8 @@ if charaddedbuffer=0
 if (oControl.p1.isReady=0 and key_jump and oControl.p1.charadded=0 and palettemode=0) 
 or keyboard_check_pressed(vk_escape)
 {
-if global.StageSelect=0 room=rm_menu else 
-if global.IsMinigame=0 room=rm_map else room=rm_minigames
+if global.StageSelect=0 room_goto(rm_menu) else 
+if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 }
 }
 }
@@ -174,8 +174,8 @@ if key_jump
 {
 if controlNO=1 if palettemode=0
 {
-if global.StageSelect=0 room=rm_menu else 
-if global.IsMinigame=0 room=rm_map else room=rm_minigames
+if global.StageSelect=0 room_goto(rm_menu) else 
+if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 }
 else
 {

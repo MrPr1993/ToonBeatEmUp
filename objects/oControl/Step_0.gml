@@ -274,7 +274,7 @@ and room!=rm_slotmachine
 {
 if camMove=0
 {
-//if oPlayer.x>=view_xview[0]+160 {if view_xview[0]<camMax {view_xview[0]+=2 camMin=view_xview[0]}}
+//if oPlayer.x>=__view_get( e__VW.XView, 0 )+160 {if __view_get( e__VW.XView, 0 )<camMax {__view_get( e__VW.XView, 0 )+=2 camMin=__view_get( e__VW.XView, 0 )}}
 
 }
 else
@@ -302,7 +302,7 @@ with oEnemySpawner {YView=clamp(YView,MinY,MaxY-240) __view_set( e__VW.YView, 0,
 }
 else
 __view_set( e__VW.YView, 0, quakeFX)
-//else if view_xview[0]>camMin view_xview[0]-=2
+//else if __view_get( e__VW.XView, 0 )>camMin __view_get( e__VW.XView, 0 )-=2
 
 }
 

@@ -4,7 +4,7 @@ function draw_minigames(){
 
 if room=rm_minigames
 {//global.MinigameSel=0
-if key_jump room=rm_menu
+if key_jump room_goto(rm_menu)
 draw_set_font(global.scorefont)	
 
 d3d_transform_set_identity()

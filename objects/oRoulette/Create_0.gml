@@ -14,3 +14,8 @@ hit=0
 height=96
 
 face=1
+
+hostID=-1
+hostID2=-1
+
+wintype=0

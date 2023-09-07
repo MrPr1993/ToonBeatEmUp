@@ -1,8 +1,8 @@
 Converting GML script: ${project_dir}\scripts\animsetup_specialplayer\animsetup_specialplayer.gml
-Converted builtin - line 16: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 20: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 100: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 104: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 16: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 20: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 100: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 104: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted builtin - line 27: view_yview[0] -> __view_get( e__VW.YView, 0 )
 Converted builtin - line 111: view_yview[0] -> __view_get( e__VW.YView, 0 )
 Converted description /// @description Car Mode
@@ -72,14 +72,14 @@ Converting GML script: ${project_dir}\scripts\animsetup_sofia_misc\animsetup_sof
 Converted description /// @description Footstool Move
 
 Converting GML script: ${project_dir}\scripts\ai_actions\ai_actions.gml
-Converted builtin - line 52: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 53: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 67: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 68: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 74: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 74: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 80: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 80: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 52: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 53: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 67: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 74: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 74: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 80: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 80: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description Attack
 
 Converting GML script: ${project_dir}\scripts\animsetup_burglar\animsetup_burglar.gml
@@ -99,17 +99,17 @@ Converting GML script: ${project_dir}\scripts\animsetup_fatburglar\animsetup_fat
 Converted builtin - line 48: view_yview[0] -> __view_get( e__VW.YView, 0 )
 
 Converting GML script: ${project_dir}\scripts\animsetup_robot\animsetup_robot.gml
-Converted builtin - line 64: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 64: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 67: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 68: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 64: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 64: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 67: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description Animation Setup - Enemy
 
 Converting GML script: ${project_dir}\scripts\enemy_ai\enemy_ai.gml
-Converted builtin - line 32: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 32: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 67: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 68: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 32: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 32: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 67: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted builtin - line 29: view_yview[0] -> __view_get( e__VW.YView, 0 )
 Converted description /// @description /AI settings
 
@@ -120,8 +120,8 @@ Converting GML script: ${project_dir}\scripts\enemy_endstep\enemy_endstep.gml
 Converted description /// @description Attack Setup
 
 Converting GML script: ${project_dir}\scripts\enemy_step\enemy_step.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\scripts\character_setup\character_setup.gml
 ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatEmUp_66B0A050\scripts\character_setup\character_setup.gml - 51: unexpected syntax error
@@ -162,7 +162,8 @@ Converting GML script: ${project_dir}\scripts\controller_setup\controller_setup.
 Converted string - line 64: 'J' -> "J"
 
 Converting GML script: ${project_dir}\scripts\flashFX\flashFX.gml
-Converted description /// @description flashFX(x,y,z,sprite,index,speed,alarm,xscale,yscale,blend,alpha)/// @param x
+Converted description /// @description flashFX(x,y,z,sprite,index,speed,alarm,xscale,yscale,blend,alpha)
+/// @param x
 /// @param y
 /// @param z
 /// @param sprite
@@ -175,7 +176,8 @@ Converted description /// @description flashFX(x,y,z,sprite,index,speed,alarm,xs
 /// @param alpha
 
 Converting GML script: ${project_dir}\scripts\frame_set\frame_set.gml
-Converted description /// @description frame_set(frame,image_index,speed)/// @param frame
+Converted description /// @description frame_set(frame,image_index,speed)
+/// @param frame
 /// @param image_index
 /// @param speed
 
@@ -190,7 +192,8 @@ ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatE
 Too many errors - GML not processed : ${project_dir}\scripts\throw_command\throw_command.gml
 
 Converting GML script: ${project_dir}\scripts\weaponanim\weaponanim.gml
-Converted description /// @description  @description weaponanim(weaponspr,weaponIndex,x,y,weaponangle,weaponcolor)/// @param weaponspr
+Converted description /// @description  @description weaponanim(weaponspr,weaponIndex,x,y,weaponangle,weaponcolor)
+/// @param weaponspr
 /// @param weaponIndex
 /// @param x
 /// @param y
@@ -198,7 +201,8 @@ Converted description /// @description  @description weaponanim(weaponspr,weapon
 /// @param weaponcolor
 
 Converting GML script: ${project_dir}\scripts\atkcol_set\atkcol_set.gml
-Converted description /// @description atkcol_set(x,y,z,xScale,yScale,height)/// @param x
+Converted description /// @description atkcol_set(x,y,z,xScale,yScale,height)
+/// @param x
 /// @param y
 /// @param z
 /// @param xScale
@@ -216,7 +220,8 @@ Converting GML script: ${project_dir}\scripts\zblock_col\zblock_col.gml
 Converted description /// @description Z Block Collision
 
 Converting GML script: ${project_dir}\scripts\spritepos_setup\spritepos_setup.gml
-Converted description /// @description spritepos_setup(PosType,frame,x,y)/// @param PosType
+Converted description /// @description spritepos_setup(PosType,frame,x,y)
+/// @param PosType
 /// @param frame
 /// @param x
 /// @param y
@@ -225,36 +230,44 @@ Converting GML script: ${project_dir}\scripts\keyno_check\keyno_check.gml
 Converted string - line 42: '"' -> "\""
 
 Converting GML script: ${project_dir}\scripts\enemy_heavythrow\enemy_heavythrow.gml
-Converted description /// @description enemy_heavythrow(animFrameStart,animFrameLock,throwStrengthMax,animFrameEnd)/// @param animFrameStart
+Converted description /// @description enemy_heavythrow(animFrameStart,animFrameLock,throwStrengthMax,animFrameEnd)
+/// @param animFrameStart
 /// @param animFrameLock
 /// @param throwStrengthMax
 /// @param animFrameEnd
 
 Converting GML script: ${project_dir}\scripts\pal_swap_draw_palette\pal_swap_draw_palette.gml
-Converted description /// @description pal_swap_draw_palette(palette_sprite,pal_index,x,y);/// @param palette_sprite
+Converted description /// @description pal_swap_draw_palette(palette_sprite,pal_index,x,y);
+/// @param palette_sprite
 /// @param pal_index
 /// @param x
 /// @param y
 
 Converting GML script: ${project_dir}\scripts\pal_swap_enable_override\pal_swap_enable_override.gml
-Converted description /// @description pal_swap_enable_override(pal sprite)/// @param pal sprite
+Converted description /// @description pal_swap_enable_override(pal sprite)
+/// @param pal sprite
 
 Converting GML script: ${project_dir}\scripts\pal_swap_get_color_count\pal_swap_get_color_count.gml
-Converted description /// @description pal_swap_get_color_count(palette sprite)/// @param palette sprite
+Converted description /// @description pal_swap_get_color_count(palette sprite)
+/// @param palette sprite
 
 Converting GML script: ${project_dir}\scripts\pal_swap_get_pal_color\pal_swap_get_pal_color.gml
-Converted description /// @description pal_swap_get_pal_color(palette sprite,pal index, color index)/// @param palette sprite
+Converted description /// @description pal_swap_get_pal_color(palette sprite,pal index, color index)
+/// @param palette sprite
 /// @param pal index
 /// @param  color index
 
 Converting GML script: ${project_dir}\scripts\pal_swap_get_pal_count\pal_swap_get_pal_count.gml
-Converted description /// @description pal_swap_get_pal_count(palette sprite)/// @param palette sprite
+Converted description /// @description pal_swap_get_pal_count(palette sprite)
+/// @param palette sprite
 
 Converting GML script: ${project_dir}\scripts\pal_swap_index_palette\pal_swap_index_palette.gml
-Converted description /// @description pal_swap_index_palette(palette sprite index)/// @param palette sprite index
+Converted description /// @description pal_swap_index_palette(palette sprite index)
+/// @param palette sprite index
 
 Converting GML script: ${project_dir}\scripts\pal_swap_init_system\pal_swap_init_system.gml
-Converted description /// @description pal_swap_init_system(shader,enable indexing <optional>)/// @param shader
+Converted description /// @description pal_swap_init_system(shader,enable indexing <optional>)
+/// @param shader
 /// @param enable indexing <optional>
 Converted string - line 12: 'texel_size' -> "texel_size"
 Converted string - line 13: 'palette_UVs' -> "palette_UVs"
@@ -265,24 +278,28 @@ Converting GML script: ${project_dir}\scripts\pal_swap_reset\pal_swap_reset.gml
 Converted description /// @description pal_swap_reset();
 
 Converting GML script: ${project_dir}\scripts\pal_swap_set\pal_swap_set.gml
-Converted description /// @description pal_swap_set(palette_sprite_index, palette_index,palette is surface);/// @param palette_sprite_index
+Converted description /// @description pal_swap_set(palette_sprite_index, palette_index,palette is surface);
+/// @param palette_sprite_index
 /// @param  palette_index
 /// @param palette is surface
 
 Converting GML script: ${project_dir}\scripts\pal_swap_set_tiles\pal_swap_set_tiles.gml
-Converted description /// @description pal_swap_set_tiles(palette sprite or surface, pal index, start layer, end layer, pal is surface);/// @param palette sprite or surface
+Converted description /// @description pal_swap_set_tiles(palette sprite or surface, pal index, start layer, end layer, pal is surface);
+/// @param palette sprite or surface
 /// @param  pal index
 /// @param  start layer
 /// @param  end layer
 /// @param  pal is surface
 
 Converting GML script: ${project_dir}\scripts\wrap\wrap.gml
-Converted description /// @description wrap(value,min,max)/// @param value
+Converted description /// @description wrap(value,min,max)
+/// @param value
 /// @param min
 /// @param max
 
 Converting GML script: ${project_dir}\scripts\enemy_create\enemy_create.gml
-Converted description /// @description enemy_create(x,y,enemy,z,palette,palSprite,name,hpLayer,hp)/// @param x
+Converted description /// @description enemy_create(x,y,enemy,z,palette,palSprite,name,hpLayer,hp)
+/// @param x
 /// @param y
 /// @param enemy
 /// @param z
@@ -293,7 +310,8 @@ Converted description /// @description enemy_create(x,y,enemy,z,palette,palSprit
 /// @param hp
 
 Converting GML script: ${project_dir}\scripts\enemy_modify\enemy_modify.gml
-Converted description /// @description enemy_modify(SprPal,palette,name,HPlayer,hp,MAXhp)/// @param SprPal
+Converted description /// @description enemy_modify(SprPal,palette,name,HPlayer,hp,MAXhp)
+/// @param SprPal
 /// @param palette
 /// @param name
 /// @param HPlayer
@@ -304,7 +322,8 @@ Converting GML script: ${project_dir}\scripts\throw_step\throw_step.gml
 Converted description /// @description Throw Setup
 
 Converting GML script: ${project_dir}\scripts\hitFXset\hitFXset.gml
-Converted description /// @description hitFXset(sprite,index,isDepth,animEnd,speedFX,spriteTime,xScale,yScale,blend,alpha)/// @param sprite
+Converted description /// @description hitFXset(sprite,index,isDepth,animEnd,speedFX,spriteTime,xScale,yScale,blend,alpha)
+/// @param sprite
 /// @param index
 /// @param isDepth
 /// @param animEnd
@@ -321,27 +340,32 @@ ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatE
 Too many errors - GML not processed : ${project_dir}\scripts\enemy_freeze\enemy_freeze.gml
 
 Converting GML script: ${project_dir}\scripts\instance_nth_nearest\instance_nth_nearest.gml
-Converted description /// @description  instance_nth_nearest(x,y,obj,n)/// @param x
+Converted description /// @description  instance_nth_nearest(x,y,obj,n)
+/// @param x
 /// @param y
 /// @param obj
 /// @param n
 
 Converting GML script: ${project_dir}\scripts\fight_target\fight_target.gml
-Converted description /// @description fight_target(obj)/// @param obj
+Converted description /// @description fight_target(obj)
+/// @param obj
 
 Converting GML script: ${project_dir}\scripts\spawner_cammax\spawner_cammax.gml
-Converted description /// @description spawner_cammax(x,xscale,MaxX)/// @param x
+Converted description /// @description spawner_cammax(x,xscale,MaxX)
+/// @param x
 /// @param xscale
 /// @param MaxX
 
 Converting GML script: ${project_dir}\scripts\spawner_followset\spawner_followset.gml
-Converted description /// @description spawner_followset(selfID,MinX,MaxX,canFollow)/// @param selfID
+Converted description /// @description spawner_followset(selfID,MinX,MaxX,canFollow)
+/// @param selfID
 /// @param MinX
 /// @param MaxX
 /// @param canFollow
 
 Converting GML script: ${project_dir}\scripts\projectile_create\projectile_create.gml
-Converted description /// @description projectile_create(x,y,z,height,sprite,hspeed,mask,sprFX,damage,MoveType,HitType,HitForce,HitForceZ)/// @param x
+Converted description /// @description projectile_create(x,y,z,height,sprite,hspeed,mask,sprFX,damage,MoveType,HitType,HitForce,HitForceZ)
+/// @param x
 /// @param y
 /// @param z
 /// @param height
@@ -397,92 +421,92 @@ Converted builtin - line 5: view_object[0]=oViewTarget -> __view_set( e__VW.Obje
 Converted description /// @description Stage Start
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_210.gml
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_220.gml
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_230.gml
-Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_240.gml
-Converted builtin - line 12: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description Next
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_250.gml
-Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_260.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_270.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_290.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 8: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 8: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_300.gml
-Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description NEXT
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_310.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_320.gml
 Converted builtin - line 4: background_index[0]=bg_sky2 -> __background_set( e__BG.Index, 0, bg_sky2 )
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_330.gml
-Converted builtin - line 11: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 11: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Next robot
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_340.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0]=2848 -> __view_set( e__VW.XView, 0, 2848 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 )=2848 -> __view_set( e__VW.XView, 0, 2848 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_350.gml
-Converted builtin - line 4: view_xview[0]=2848 -> __view_set( e__VW.XView, 0, 2848 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 )=2848 -> __view_set( e__VW.XView, 0, 2848 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_360.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_370.gml
 Converted description /// @description Prepare Boss
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_380.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 7: view_xview[0]=3488-320 -> __view_set( e__VW.XView, 0, 3488-320 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: __view_get( e__VW.XView, 0 )=3488-320 -> __view_set( e__VW.XView, 0, 3488-320 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_480.gml
 Converted description /// @description /Boss Start
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_490.gml
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\timelines\tm_enemyset1\moment_720.gml
 Converted description /// @description Freeze Player's Controls
@@ -500,86 +524,86 @@ Converted builtin - line 3: view_object[0]=oViewTarget -> __view_set( e__VW.Obje
 Converted builtin - line 11: view_object[0]=oViewTarget -> __view_set( e__VW.Object, 0, oViewTarget )
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_450.gml
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted builtin - line 12: view_hspeed[0]=0 -> __view_set( e__VW.HSpeed, 0, 0 )
 Converted builtin - line 8: view_object[0]=-1 -> __view_set( e__VW.Object, 0, -1 )
 Converted description /// @description Stage Start
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_470.gml
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_480.gml
-Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_490.gml
-Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_500.gml
-Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_510.gml
-Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_520.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_530.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_550.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_560.gml
-Converted builtin - line 15: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 15: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_570.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 5: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 5: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 6: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_580.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_590.gml
-Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_600.gml
-Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 4: view_xview[0]=2368 -> __view_set( e__VW.XView, 0, 2368 )
+Converted builtin - line 2: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 )=2368 -> __view_set( e__VW.XView, 0, 2368 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage1\moment_700.gml
-Converted builtin - line 4: view_xview[0]=2368 -> __view_set( e__VW.XView, 0, 2368 )
+Converted builtin - line 4: __view_get( e__VW.XView, 0 )=2368 -> __view_set( e__VW.XView, 0, 2368 )
 Converted description /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 
 Converting GML script: ${project_dir}\timelines\tm_stage2\moment_0.gml
@@ -587,7 +611,7 @@ Converted builtin - line 9: background_hspeed[0]=-16 -> __background_set( e__BG.
 Converted description /// @description Stage Starting
 
 Converting GML script: ${project_dir}\timelines\tm_stage2\moment_180.gml
-Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\objects\oControl\Create_0.gml
 Error: variable 'variable_global_exists' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
@@ -618,15 +642,15 @@ Converting GML script: ${project_dir}\objects\oControl\Alarm_0.gml
 Converted description /// @description Timer
 
 Converting GML script: ${project_dir}\objects\oControl\Step_0.gml
-Converted builtin - line 124: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 124: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 124: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 128: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 128: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 128: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 14: view_xview[0]=0 -> __view_set( e__VW.XView, 0, 0 )
-Converted builtin - line 124: view_xview[0]=oPlayer.x-160 -> __view_set( e__VW.XView, 0, oPlayer.x-160 )
-Converted builtin - line 128: view_xview[0]=oPlayer.x-160 -> __view_set( e__VW.XView, 0, oPlayer.x-160 )
+Converted builtin - line 124: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 124: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 124: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 128: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 128: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 128: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: __view_get( e__VW.XView, 0 )=0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 124: __view_get( e__VW.XView, 0 )=oPlayer.x-160 -> __view_set( e__VW.XView, 0, oPlayer.x-160 )
+Converted builtin - line 128: __view_get( e__VW.XView, 0 )=oPlayer.x-160 -> __view_set( e__VW.XView, 0, oPlayer.x-160 )
 Converted builtin - line 131: view_yview[0]=YView+oControl.quakeFX -> __view_set( e__VW.YView, 0, YView+oControl.quakeFX )
 Converted builtin - line 134: view_yview[0]=quakeFX -> __view_set( e__VW.YView, 0, quakeFX )
 Converted description /// @description Beta Test
@@ -644,10 +668,10 @@ Converting GML script: ${project_dir}\objects\oControl\Other_10.gml
 Converted description /// @description Select Enemy & Item
 
 Converting GML script: ${project_dir}\objects\oControl\Draw_64.gml
-Converted builtin - line 21: background_x[0]=-(view_xview[0]/80) -> __background_set( e__BG.X, 0, -(view_xview[0]/80) )
-Converted builtin - line 217: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: background_x[0]=-(__view_get( e__VW.XView, 0 )/80) -> __background_set( e__BG.X, 0, -(__view_get( e__VW.XView, 0 )/80) )
+Converted builtin - line 217: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description Game
-Converted builtin - line 21: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\objects\oControl\KeyPress_123.gml
 Converted description /// @description Change Screen Size
@@ -668,21 +692,21 @@ Converting GML script: ${project_dir}\objects\oPlayer\Alarm_0.gml
 Converted description /// @description Can Play
 
 Converting GML script: ${project_dir}\objects\oPlayer\Step_2.gml
-Converted builtin - line 59: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 59: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 59: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 59: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted description /// @description Z Block Collision
 
 Converting GML script: ${project_dir}\objects\oPlayer\Step_1.gml
-Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 21: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 21: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 31: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 31: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 38: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 38: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 7: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 31: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 31: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 38: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 38: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\objects\oPlayer\Step_0.gml
 Converted builtin - line 61: view_yview[0] -> __view_get( e__VW.YView, 0 )
@@ -699,8 +723,8 @@ Converted builtin - line 61: view_yview[0] -> __view_get( e__VW.YView, 0 )
 Converted builtin - line 67: view_yview[0] -> __view_get( e__VW.YView, 0 )
 
 Converting GML script: ${project_dir}\objects\oPlayer\Other_19.gml
-Converted builtin - line 20: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 31: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 20: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 31: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted builtin - line 21: view_yview[0] -> __view_get( e__VW.YView, 0 )
 Converted builtin - line 31: view_yview[0] -> __view_get( e__VW.YView, 0 )
 Converted description /// @description Respawn
@@ -715,7 +739,7 @@ Converting GML script: ${project_dir}\objects\oPlayer\Other_10.gml
 Converted description /// @description Hurt
 
 Converting GML script: ${project_dir}\objects\oAnimEditor\Step_2.gml
-Converted builtin - line 1: view_xview[0]=PosX-160 -> __view_set( e__VW.XView, 0, PosX-160 )
+Converted builtin - line 1: __view_get( e__VW.XView, 0 )=PosX-160 -> __view_set( e__VW.XView, 0, PosX-160 )
 Converted builtin - line 2: view_yview[0]=PosY-120 -> __view_set( e__VW.YView, 0, PosY-120 )
 
 Converting GML script: ${project_dir}\objects\oAnimEditor\Draw_0.gml
@@ -729,8 +753,8 @@ ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatE
 Too many errors - GML not processed : ${project_dir}\objects\oSelfAtk\Create_0.gml
 
 Converting GML script: ${project_dir}\objects\oProjectile\Step_2.gml
-Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 1: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\objects\oLevelSelect\Step_0.gml
 Converted string - line 3: 'W' -> "W"
@@ -747,8 +771,8 @@ Converted string - line 22: 'A' -> "A"
 Converted string - line 23: 'D' -> "D"
 
 Converting GML script: ${project_dir}\objects\oShadowFX\Draw_0.gml
-Converted builtin - line 32: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 32: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 32: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 32: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 Converted builtin - line 32: view_yview[0] -> __view_get( e__VW.YView, 0 )
 Converted builtin - line 32: view_yview[0] -> __view_get( e__VW.YView, 0 )
 
@@ -756,13 +780,13 @@ Converting GML script: ${project_dir}\objects\oDisappearPart\Alarm_0.gml
 Converted description /// @description Respawn
 
 Converting GML script: ${project_dir}\objects\oEnemySpawner\Step_2.gml
-Converted builtin - line 1: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 12: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 37: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 13: view_xview[0]-=abs(oPlayer.totalSpeed*2) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (abs(oPlayer.totalSpeed*2)) )
-Converted builtin - line 29: view_xview[0]+=roomHSpd -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (roomHSpd) )
-Converted builtin - line 37: view_xview[0]=clamp(__view_get( e__VW.XView, 0 ),MinX,MaxX-320) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ),MinX,MaxX-320) )
+Converted builtin - line 1: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 12: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 37: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: __view_get( e__VW.XView, 0 )-=abs(oPlayer.totalSpeed*2) -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (abs(oPlayer.totalSpeed*2)) )
+Converted builtin - line 29: __view_get( e__VW.XView, 0 )+=roomHSpd -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (roomHSpd) )
+Converted builtin - line 37: __view_get( e__VW.XView, 0 )=clamp(__view_get( e__VW.XView, 0 ),MinX,MaxX-320) -> __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ),MinX,MaxX-320) )
 
 Converting GML script: ${project_dir}\objects\oEnemy1\Create_0.gml
 Converted description /// @description if you want to check on their data, you can check here
@@ -834,28 +858,28 @@ ERROR: C:\Users\mrpr1\AppData\Local\GameMakerStudio2\GMS2TEMP\conv\gmx\ToonBeatE
 Too many errors - GML not processed : ${project_dir}\objects\oGalsia\Step_2.gml
 
 Converting GML script: ${project_dir}\objects\oAreaSpawner\Step_0.gml
-Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\objects\oAreaSpawner\Other_10.gml
 Converted description /// @description Spawn Enemy
 
 Converting GML script: ${project_dir}\objects\oBoss1\Step_2.gml
-Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 14: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 21: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 23: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 38: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 39: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 116: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 119: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 161: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 162: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 241: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 241: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 13: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 14: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 21: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 23: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 38: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 116: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 119: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 161: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 162: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 241: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 241: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\objects\oBoss1\Step_0.gml
 Converted description /// @description Overwrite AI
@@ -870,14 +894,14 @@ Converting GML script: ${project_dir}\objects\oBananaPeel\Other_10.gml
 Converted description /// @description Break & Create Object
 
 Converting GML script: ${project_dir}\objects\oBarrelRoll\Step_0.gml
-Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\objects\oBarrelRoll\Other_10.gml
 Converted description /// @description Break & Create Object
 
 Converting GML script: ${project_dir}\objects\oCrusher\Step_0.gml
-Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
-Converted builtin - line 10: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: __view_get( e__VW.XView, 0 ) -> __view_get( e__VW.XView, 0 )
 
 Converting GML script: ${project_dir}\objects\oCar\Alarm_2.gml
 Converted description /// @description Disappear
@@ -898,7 +922,8 @@ Converting GML script: ${project_dir}\objects\obj_basic_example\Create_0.gml
 Converted description /// @description Object Properties
 
 Converting GML script: ${project_dir}\objects\obj_basic_example\Step_0.gml
-Converted description /// @description Change palette with up/down (Basic)/// @param Basic
+Converted description /// @description Change palette with up/down (Basic)
+/// @param Basic
 
 Converting GML script: ${project_dir}\objects\obj_basic_example\Draw_0.gml
 Converted description /// @description Instructions
@@ -913,7 +938,8 @@ Converting GML script: ${project_dir}\objects\obj_gradual_example\Create_0.gml
 Converted description /// @description Object Properties
 
 Converting GML script: ${project_dir}\objects\obj_gradual_example\Step_0.gml
-Converted description /// @description Change palette with up/down (Gradual)/// @param Gradual
+Converted description /// @description Change palette with up/down (Gradual)
+/// @param Gradual
 
 Converting GML script: ${project_dir}\objects\obj_gradual_example\Draw_0.gml
 Converted description /// @description Instructions
@@ -922,7 +948,8 @@ Converting GML script: ${project_dir}\objects\obj_single_replace_example\Create_
 Converted description /// @description Object Properties
 
 Converting GML script: ${project_dir}\objects\obj_single_replace_example\Step_0.gml
-Converted description /// @description Change palette with up/down (Basic)/// @param Basic
+Converted description /// @description Change palette with up/down (Basic)
+/// @param Basic
 
 Converting GML script: ${project_dir}\objects\obj_single_replace_example\Draw_0.gml
 Converted description /// @description instructions
@@ -931,7 +958,8 @@ Converting GML script: ${project_dir}\objects\obj_full_fade_example\Create_0.gml
 Converted description /// @description Object Properties
 
 Converting GML script: ${project_dir}\objects\obj_full_fade_example\Step_0.gml
-Converted description /// @description Change palette with up/down (Basic)/// @param Basic
+Converted description /// @description Change palette with up/down (Basic)
+/// @param Basic
 
 Converting GML script: ${project_dir}\objects\obj_full_fade_example\Draw_0.gml
 Converted description /// @description Instructions
@@ -940,7 +968,8 @@ Converting GML script: ${project_dir}\objects\obj_desaturate_example\Create_0.gm
 Converted description /// @description Object Properties
 
 Converting GML script: ${project_dir}\objects\obj_desaturate_example\Step_0.gml
-Converted description /// @description Change palette with up/down (Basic)/// @param Basic
+Converted description /// @description Change palette with up/down (Basic)
+/// @param Basic
 
 Converting GML script: ${project_dir}\objects\obj_desaturate_example\Draw_0.gml
 Converted description /// @description Draw Instructions
@@ -949,7 +978,8 @@ Converting GML script: ${project_dir}\objects\obj_tile_example\Create_0.gml
 Converted description /// @description Object Properties
 
 Converting GML script: ${project_dir}\objects\obj_tile_example\Step_0.gml
-Converted description /// @description Change palette with up/down (Gradual)/// @param Gradual
+Converted description /// @description Change palette with up/down (Gradual)
+/// @param Gradual
 
 Converting GML script: ${project_dir}\objects\obj_tile_example\Draw_0.gml
 Converted description /// @description Draw Instructions

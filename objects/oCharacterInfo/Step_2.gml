@@ -10,7 +10,7 @@ if unlockedChar[charNO]=0 {image_alpha=1 animFrame=0 image_index=0 name="???" de
 // You can write your code in this editor
 controller_setup()
 
-if key_jump room=rm_menu
+if key_jump room_goto(rm_menu)
 
 hasVariants=0
 

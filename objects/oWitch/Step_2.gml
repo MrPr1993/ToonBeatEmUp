@@ -9,7 +9,7 @@ overwriteAttack3=1
 overwriteAttack4=1
 overwriteAttack5=1
 
-//if x>view_xview[0] and x<view_xview[0]+320
+//if x>__view_get( e__VW.XView, 0 ) and x<__view_get( e__VW.XView, 0 )+320
 if anim=10
 {offScreen=0
 if distance_to_point(targetEnemy.x,targetEnemy.y)<50

@@ -200,7 +200,7 @@ if key_up pictureY-=1
 if key_down pictureY+=1
 if key_charge if pictureZoom<5 pictureZoom+=0.001
 if key_shield if pictureZoom>0.01 pictureZoom-=0.001
-if key_jump room=rm_menu
+if key_jump room_goto(rm_menu)
 
 if key_charge and key_shield pictureZoom=0.25/3
 

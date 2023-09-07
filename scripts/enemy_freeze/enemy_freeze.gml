@@ -5,7 +5,7 @@ function enemy_freeze() {
 
 	   if canact=1 and act=1 and immune=0
 	   and Throw=0 and dead=0
-	  // and (x>view_xview[0]-sprite_get_width(mask_index)/2 and x<view_xview[0]+320+sprite_get_width(mask_index)/2)
+	  // and (x>__view_get( e__VW.XView, 0 )-sprite_get_width(mask_index)/2 and x<__view_get( e__VW.XView, 0 )+320+sprite_get_width(mask_index)/2)
 	{superThrown=1 
 	if watchSourceX>x image_xscale=1 else image_xscale=-1 recovery=200
 	{

@@ -223,8 +223,13 @@ Cweather=0
 	canAttack5Move=-1;
 	canGrab=0
 	screenCheck=0
-	if x>view_xview[0]+320 screenCheck=x-view_xview[0]+sprite_get_width(mask_index)+10
-	if x<view_xview[0] screenCheck=x-view_xview[0]+sprite_get_width(mask_index)+10
+	if sprite_index=-1 sprite_index=mask_none
+	if mask_index=-1 mask_index=mask_none
+	if x>__view_get( e__VW.XView, 0 )+320 screenCheck=x-__view_get( e__VW.XView, 0 )+sprite_get_width(mask_index)+10
+	if x<__view_get( e__VW.XView, 0 ) screenCheck=x-__view_get( e__VW.XView, 0 )+sprite_get_width(mask_index)+10
+	
+	
+	
 	canRun=1///For characters who lack that ability
 	HasRunAnim=0
 	RunAnimRecharge=0

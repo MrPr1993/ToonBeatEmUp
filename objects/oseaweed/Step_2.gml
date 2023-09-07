@@ -10,7 +10,7 @@ overwriteJump=1
 
 if anim=10 ///Detect Attack
 {
-//if x>view_xview[0] and x<view_xview[0]+320
+//if x>__view_get( e__VW.XView, 0 ) and x<__view_get( e__VW.XView, 0 )+320
 {offScreen=0
 if distance_to_object(targetEnemy)<50
 anim=choose(11,11)
