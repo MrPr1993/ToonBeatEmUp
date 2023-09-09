@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.876854,
   "parent": {
-    "name": "NPCs",
-    "path": "folders/f - Sounds/Voice Clips/NPCs.yy",
+    "name": "Betty",
+    "path": "folders/f - Sounds/Voice Clips/NPCs/Betty.yy",
   },
   "preload": false,
   "sampleRate": 44100,
