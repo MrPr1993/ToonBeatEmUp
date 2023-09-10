@@ -23,6 +23,12 @@ isHeavy=1
 
 specialFX=0
 
+DamageVoice1=snd_dastardly28
+DamageVoice2=snd_dastardly28
+DamageVoice3=snd_dastardly28
+
+DeathCry=snd_dastardly29
+
 StandSpr=spr_dastardly_stand
 MoveSpr=spr_dastardly_move
 RunSpr=spr_dastardly_move

@@ -56,7 +56,7 @@ FlatSpr=spr_fatburglar_flat
 ShockSpr=spr_fatburglar_elec
 BurnSpr=spr_fatburglar_burned
 FrozenSpr=spr_fatburglar_frozen
-DizzySpr=spr_fatburglar_hit
+DizzySpr=spr_fatburglar_dizzy hasDizzy=1
 
 hasCut=1
 cutSpr1=spr_fatburglar_cut1

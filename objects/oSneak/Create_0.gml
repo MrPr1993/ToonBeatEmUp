@@ -88,7 +88,7 @@ FlatSpr=spr_sneak_flat
 ShockSpr=spr_sneak_elec
 BurnSpr=spr_sneak_burned
 FrozenSpr=spr_sneak_frozen
-DizzySpr=spr_sneak_hit
+DizzySpr=spr_sneak_dizzy hasDizzy=1
 
 	enemyIdle2=spr_sneak_move
 	enemyIdle3=spr_sneak_idle3

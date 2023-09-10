@@ -59,7 +59,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7efe25ea-ac5c-43be-8db3-e6e172215602","path":"sprites/spr_fatburglar_elec/spr_fatburglar_elec.yy",},},},"Disabled":false,"id":"69012997-13be-43ec-957d-81f11b3defe4","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 69,
     "yorigin": 120,

@@ -44,7 +44,8 @@ FlatSpr=spr_boxer_flat
 ShockSpr=spr_boxer_elec
 BurnSpr=spr_boxer_burned
 FrozenSpr=spr_boxer_frozen
-DizzySpr=spr_boxer_hit
+DizzySpr=spr_boxer_dizzy hasDizzy=1
+
 
 	hasFront=1
 	FrontSpr=spr_boxer_front

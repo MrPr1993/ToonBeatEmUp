@@ -83,7 +83,7 @@ FlatSpr=spr_robot_flat
 ShockSpr=spr_robot_elec
 BurnSpr=spr_robot_burned
 FrozenSpr=spr_robot_frozen
-DizzySpr=spr_robot_hit
+DizzySpr=spr_robot_dizzy hasDizzy=1
 FrontSpr=spr_robot_front
 
 hasCut=1

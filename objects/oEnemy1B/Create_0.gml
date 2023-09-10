@@ -49,7 +49,7 @@ StandSpr=spr_burglarB_stand
 	ShockSpr=spr_burglarB_elec
 	BurnSpr=spr_burglarB_burned
 	FrozenSpr=spr_burglarB_frozen
-	DizzySpr=spr_burglarB_dizzy
+	DizzySpr=spr_burglarB_dizzy hasDizzy=1
 	FrontSpr=spr_burglarB_front
 	ScreenHitSpr=spr_burglarB_hit
 	IdleSpr=spr_burglarB_idle

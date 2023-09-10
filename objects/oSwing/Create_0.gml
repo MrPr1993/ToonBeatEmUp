@@ -69,7 +69,7 @@ FlatSpr=spr_swing_flat
 ShockSpr=spr_swing_elec
 BurnSpr=spr_swing_burned
 FrozenSpr=spr_swing_frozen
-DizzySpr=spr_swing_hit
+DizzySpr=spr_swing_dizzy hasDizzy=1
 
 hasCut=1
 cutSpr1=spr_swing_cut1

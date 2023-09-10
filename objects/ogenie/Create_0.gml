@@ -4,6 +4,11 @@ name="HAIFA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=47
 
+	DeathCry=snd_genie14//snd_deathcry2
+	DamageVoice1=snd_genie13
+	DamageVoice2=snd_genie13
+	DamageVoice3=snd_genie13
+
 enemyscript=animsetup_enemy
 
 pointshit=10
@@ -23,7 +28,7 @@ throwHeavy=1
 hp=2
 maxhp=2
 
-height=70
+height=100
 
 specialFX=0
 

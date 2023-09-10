@@ -54,5 +54,5 @@ ShockSpr=spr_strongburg_elec
 BurnSpr=spr_strongburg_burned
 FrozenSpr=spr_strongburg_frozen
 
-
+DizzySpr=spr_strongburg_dizzy hasDizzy=1
 

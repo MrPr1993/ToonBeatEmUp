@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_sneak_idle3",
-    "path": "sprites/spr_sneak_idle3/spr_sneak_idle3.yy",
+    "name": "spr_sneak_stand",
+    "path": "sprites/spr_sneak_stand/spr_sneak_stand.yy",
   },
   "spriteMaskId": {
     "name": "mask_small",

@@ -52,7 +52,7 @@ FlatSpr=spr_femburglar_flat
 ShockSpr=spr_femburglar_elec
 BurnSpr=spr_femburglar_burned
 FrozenSpr=spr_femburglar_frozen
-DizzySpr=spr_femburglar_hit
+DizzySpr=spr_femburglar_dizzy hasDizzy=1
 
 hasCut=1
 cutSpr1=spr_femburglar_cut1

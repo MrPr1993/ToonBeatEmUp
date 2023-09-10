@@ -48,7 +48,7 @@ FlatSpr=spr_monk_flat
 ShockSpr=spr_monk_elec
 BurnSpr=spr_monk_burned
 FrozenSpr=spr_monk_frozen
-
+DizzySpr=spr_monk_dizzy hasDizzy=1
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal
