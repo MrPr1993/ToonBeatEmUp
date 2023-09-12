@@ -47,7 +47,7 @@ FlatSpr=spr_lobster_flat
 ShockSpr=spr_lobster_elec
 BurnSpr=spr_lobster_burned
 FrozenSpr=spr_lobster_burned
-
+hasDizzy=1 DizzySpr=spr_lobster_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_lobsterpal

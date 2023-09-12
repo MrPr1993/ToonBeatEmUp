@@ -57,6 +57,7 @@ FlatSpr=spr_martian_flat
 ShockSpr=spr_martian_elec
 BurnSpr=spr_martian_burned
 FrozenSpr=spr_martian_burned
+hasDizzy=1 DizzySpr=spr_martian_dizzy
 
 
 current_pal=0;

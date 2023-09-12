@@ -41,7 +41,7 @@ FlatSpr=spr_alienrobot_flat
 ShockSpr=spr_alienrobot_elec
 BurnSpr=spr_alienrobot_burned
 FrozenSpr=spr_alienrobot_frozen
-
+hasDizzy=1 DizzySpr=spr_alienrobot_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_robotpal

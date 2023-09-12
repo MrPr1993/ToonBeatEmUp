@@ -62,6 +62,7 @@ FlatSpr=spr_harpy_flat
 ShockSpr=spr_harpy_elec
 BurnSpr=spr_harpy_burned
 FrozenSpr=spr_harpy_frozen
+hasDizzy=1 DizzySpr=spr_harpy_dizzy
 
 spritepos_setup(1,24,-2,41)
 spritepos_setup(2,0,27,72)
