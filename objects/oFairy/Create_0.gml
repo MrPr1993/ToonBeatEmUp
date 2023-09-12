@@ -47,7 +47,7 @@ FlatSpr=spr_fairy_flat
 ShockSpr=spr_fairy_elec
 BurnSpr=spr_fairy_burned
 FrozenSpr=spr_fairy_frozen
-
+hasDizzy=1 DizzySpr=spr_fairy_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_fairypal

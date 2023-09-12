@@ -49,7 +49,7 @@ FlatSpr=spr_dancer_flat
 ShockSpr=spr_dancer_elec
 BurnSpr=spr_dancer_burned
 FrozenSpr=spr_dancer_frozen
-
+DizzySpr=spr_dancer_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_dancerpal

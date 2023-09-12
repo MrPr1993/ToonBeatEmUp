@@ -48,6 +48,7 @@ FlatSpr=spr_diver_flat
 ShockSpr=spr_diver_elec
 BurnSpr=spr_diver_burned
 FrozenSpr=spr_diver_frozen
+hasDizzy=1 DizzySpr=spr_diver_dizzy
 
 	hasFront=1
 	FrontSpr=spr_diver_front

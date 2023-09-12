@@ -53,6 +53,7 @@ FlatSpr=spr_cobra_flat
 ShockSpr=spr_cobra_elec
 BurnSpr=spr_cobra_burned
 FrozenSpr=spr_cobra_frozen
+hasDizzy=1 DizzySpr=spr_cobra_dizzy
 
 spritepos_setup(1,24,2,60)
 

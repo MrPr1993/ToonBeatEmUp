@@ -51,6 +51,7 @@ FlatSpr=spr_plant_flat
 ShockSpr=spr_plant_elec
 BurnSpr=spr_plant_burned
 FrozenSpr=spr_plant_frozen
+hasDizzy=1 DizzySpr=spr_plant_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_plantpal

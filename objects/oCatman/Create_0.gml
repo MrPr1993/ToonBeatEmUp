@@ -48,6 +48,7 @@ FlatSpr=spr_catman_flat
 ShockSpr=spr_catman_elec
 BurnSpr=spr_catman_burned
 FrozenSpr=spr_catman_frozen
+DizzySpr=spr_catman_dizzy hasDizzy=1
 
 spritepos_setup(1,24,6,22)
 

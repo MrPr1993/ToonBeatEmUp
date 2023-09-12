@@ -52,6 +52,7 @@ FlatSpr=spr_goblin_flat
 ShockSpr=spr_goblin_elec
 BurnSpr=spr_goblin_burned
 FrozenSpr=spr_goblin_frozen
+hasDizzy=1 DizzySpr=spr_goblin_dizzy
 
 
 spritepos_setup(1,24,-5,25)

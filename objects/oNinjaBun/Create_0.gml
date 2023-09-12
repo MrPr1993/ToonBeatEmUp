@@ -57,6 +57,7 @@ FlatSpr=spr_ninjabun_flat
 ShockSpr=spr_ninjabun_elec
 BurnSpr=spr_ninjabun_burned
 FrozenSpr=spr_ninjabun_frozen
+hasDizzy=1 DizzySpr=spr_ninjabun_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal

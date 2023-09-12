@@ -50,7 +50,7 @@ FlatSpr=spr_zombiew_flat
 ShockSpr=spr_zombiew_elec
 BurnSpr=spr_zombiew_burned
 FrozenSpr=spr_zombiew_frozen
-
+DizzySpr=spr_zombiew_dizzy hasDizzy=1
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

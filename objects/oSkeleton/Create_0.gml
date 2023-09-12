@@ -43,6 +43,7 @@ FlatSpr=spr_skeleton_flat
 ShockSpr=spr_skeleton_elec
 BurnSpr=spr_skeleton_burned
 FrozenSpr=spr_skeleton_frozen
+DizzySpr=spr_skeleton_dizzy hasDizzy=1
 
 spritepos_setup(1,24,1,44)
 

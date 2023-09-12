@@ -48,6 +48,7 @@ FlatSpr=spr_shroom_flat
 ShockSpr=spr_shroom_elec
 BurnSpr=spr_shroom_burned
 FrozenSpr=spr_shroom_frozen
+hasDizzy=1 DizzySpr=spr_shroom_dizzy
 
 
 current_pal=0;

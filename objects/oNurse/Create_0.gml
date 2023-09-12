@@ -46,7 +46,7 @@ FlatSpr=spr_nurse_flat
 ShockSpr=spr_nurse_elec
 BurnSpr=spr_nurse_burned
 FrozenSpr=spr_nurse_frozen
-
+hasDizzy=1 DizzySpr=spr_nurse_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal

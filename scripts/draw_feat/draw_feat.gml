@@ -1,12 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-/// @param number
-/// @param sprite
-/// @param index
-/// @param color
-/// @param name
-/// @param description
-function draw_feat(){
+
+function draw_feat(_number,_sprite,_index,_color,_name,_desc){
 if featsel=clamp(featsel,argument0-4,argument0+4)
 {
 d3d_transform_set_identity()

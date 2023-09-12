@@ -50,7 +50,7 @@ FlatSpr=spr_samurai_flat
 ShockSpr=spr_samurai_elec
 BurnSpr=spr_samurai_burned
 FrozenSpr=spr_samurai_frozen
-
+hasDizzy=1 DizzySpr=spr_samurai_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal

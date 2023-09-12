@@ -57,6 +57,7 @@ FlatSpr=spr_merman_flat
 ShockSpr=spr_merman_elec
 BurnSpr=spr_merman_burned
 FrozenSpr=spr_merman_frozen
+hasDizzy=1 DizzySpr=spr_merman_dizzy
 
 
 current_pal=0;

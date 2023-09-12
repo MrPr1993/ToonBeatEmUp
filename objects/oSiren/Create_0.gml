@@ -54,7 +54,7 @@ FlatSpr=spr_siren_flat
 ShockSpr=spr_siren_elec
 BurnSpr=spr_siren_burned
 FrozenSpr=spr_siren_frozen
-
+hasDizzy=1 DizzySpr=spr_siren_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

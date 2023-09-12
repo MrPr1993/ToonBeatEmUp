@@ -43,6 +43,7 @@ FlatSpr=spr_spacer_flat
 ShockSpr=spr_spacer_elec
 BurnSpr=spr_spacer_elec
 FrozenSpr=spr_spacer_frozen
+DizzySpr=spr_spacer_dizzy hasDizzy=1
 
 
 current_pal=0;

@@ -45,6 +45,7 @@ ShockSpr=spr_clown_elec
 BurnSpr=spr_clown_burned
 FrozenSpr=spr_clown_frozen
 FrontSpr=spr_clown_front hasFront=1
+hasDizzy=1 DizzySpr=spr_clown_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_bearpal

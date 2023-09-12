@@ -1,12 +1,12 @@
 /// @description draw_buttontext(x,y,sep,lefttext,buttonspr,buttonind,midtext,righttext)
-/// @param x
-/// @param y
-/// @param sep
-/// @param lefttext
-/// @param buttonspr
-/// @param buttonind
-/// @param midtext
-/// @param righttext
+/// @param _x
+/// @param _y
+/// @param _sep
+/// @param _lefttext
+/// @param _buttonspr
+/// @param _buttonind
+/// @param _midtext
+/// @param _righttext
 
 function draw_buttontext(){	
 var BtextX=round(argument0);

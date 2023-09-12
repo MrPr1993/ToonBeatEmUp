@@ -41,7 +41,7 @@ FlatSpr=spr_ladybot_flat
 ShockSpr=spr_ladybot_elec
 BurnSpr=spr_ladybot_burned
 FrozenSpr=spr_ladybot_frozen
-
+hasDizzy=1 DizzySpr=spr_ladybot_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_robotpal
