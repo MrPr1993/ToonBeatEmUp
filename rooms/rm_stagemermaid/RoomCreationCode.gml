@@ -23,3 +23,6 @@ prevstagecheck2=global.PrevStage3
 prevstagecheck3=global.PrevStage4
 stagecheck=12
 }
+
+bgbeach2=layer_background_get_id(layer_get_id("Arena2"));
+layer_background_xscale(bgbeach2,-1)

@@ -13,3 +13,4 @@ with oPlayer {canmove=1 canControl=1 targetID=-1 animFrame=0 anim=0
 spawner_followset("WaveSet1",0,2640-320-640,1)
 musicplaystart(msc_ufo)
 timer_set(1)
+specialSet8=0

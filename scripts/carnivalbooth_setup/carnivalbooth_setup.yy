@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Stagecarnival",
-    "path": "folders/5b-Stage Data/Stage5/Stagecarnival.yy",
+    "path": "folders/5b-Stage Data/Stagecarnival.yy",
   },
 }

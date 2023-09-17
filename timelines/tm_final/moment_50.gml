@@ -1,13 +1,20 @@
 /// @description Baddies Appear 2
 
-if __view_get( e__VW.XView, 0 )>=3280-2-320
+if __view_get( e__VW.XView, 0 )>=3680-2-320
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oEnemy1)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oEnemy1B)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
-
+en1=instance_create_depth(3190,160,-1,oAreaSpawner)
+en2=instance_create_depth(3320,160,-1,oAreaSpawner)
+en3=instance_create_depth(3448,160,-1,oAreaSpawner)
+with oAreaSpawner
+{spawnX=0 ///768
+MaxSpawnFrame=0 visible=1
+FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
+enemyMax=0}
+en1.enemytype0=oWrestler
+en2.enemytype0=oBoxer
+with en3 {enemytype0=oWrestler name0="MS.CRUSH" pal0=7}
+name0=-1
 }
 else
 {

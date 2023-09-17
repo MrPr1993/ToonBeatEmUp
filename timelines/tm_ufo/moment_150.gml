@@ -1,12 +1,12 @@
 /// @description Baddies Appear 7
 
-if __view_get( e__VW.XView, 0 )>=6480-2-320-960
+if __view_get( e__VW.XView, 0 )>=6660-2-320
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oEnemy1)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
+en3=instance_create(__view_get( e__VW.XView, 0)-64,176,oMartian)
+with en3 {name="INVA" image_xscale=1 canAttack=5 current_pal=1 alarm[1]=60 weapon_add("TASER")}
+en4=instance_create(__view_get( e__VW.XView, 0)-64,240,oMartian)
+with en4 {name="INVA" image_xscale=1 canAttack=5 current_pal=1 alarm[1]=60 weapon_add("TASER")}	
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oEnemy1B)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
 
 }
 else

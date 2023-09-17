@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Stage4",
-    "path": "folders/5b-Stage Data/Stage4.yy",
+    "name": "Graveyard Stage",
+    "path": "folders/5b-Stage Data/Graveyard Stage.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Stage6",
-    "path": "folders/5b-Stage Data/Stage6.yy",
+    "name": "Snow Stage",
+    "path": "folders/5b-Stage Data/Snow Stage.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

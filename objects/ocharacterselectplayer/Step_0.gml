@@ -64,7 +64,14 @@ controller_setup()
 if controlNO=9
 {
 if difficultymode=1 
-{oCharacterSelectPlayer.charadded=0
+{
+if key_cancel or keyboard_check_pressed(vk_escape) or key_jump or key_B
+{
+if global.StageSelect=0 room_goto(rm_menu) else 
+if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
+}
+
+oCharacterSelectPlayer.charadded=0
 oCharacterSelectPlayer.charaddedbuffer=0
 	
 if -key_left_pressed {if global.Difficulty=0 global.Difficulty=4 else global.Difficulty-=1 PlaySound(snd_select)}

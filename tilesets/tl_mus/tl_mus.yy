@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Stage3",
-    "path": "folders/5b-Stage Data/Stage3.yy",
+    "name": "Museum Stage",
+    "path": "folders/5b-Stage Data/Museum Stage.yy",
   },
   "spriteId": {
     "name": "tiles_museum",

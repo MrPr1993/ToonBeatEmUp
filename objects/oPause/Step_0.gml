@@ -10,7 +10,7 @@ if !instance_exists(oSettings)
 instance_destroy()
 }
 
-if keyboard_check_pressed(vk_escape) or key_B or keyboard_check_pressed(ord("K"))
+if keyboard_check_pressed(vk_escape) or key_B
 if pauseBuffer=0
 {
 if !instance_exists(oSettings)
@@ -24,7 +24,7 @@ else
 }
 }
 
-if key_A or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(vk_space)
+if key_A
 if !instance_exists(oSettings)
 if AreYouSure=0
 {

@@ -34,8 +34,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Stage1",
-    "path": "folders/5b-Stage Data/Stage1.yy",
+    "name": "City Stage",
+    "path": "folders/5b-Stage Data/City Stage.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -4,7 +4,7 @@
   "name": "spr_hina_dizzy",
   "bbox_bottom": 95,
   "bbox_left": 33,
-  "bbox_right": 66,
+  "bbox_right": 64,
   "bbox_top": 5,
   "bboxMode": 0,
   "collisionKind": 1,

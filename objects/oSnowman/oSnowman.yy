@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Stage6",
-    "path": "folders/5b-Stage Data/Stage6.yy",
+    "name": "Snow Stage",
+    "path": "folders/5b-Stage Data/Snow Stage.yy",
   },
   "parentObjectId": {
     "name": "oBarrel",

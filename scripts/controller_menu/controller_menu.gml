@@ -40,15 +40,18 @@ key_right = keyboard_check(ord("D"));
 	{
 	    if (gamepad_is_connected(i)) 
 	        {
-	key_A=gamepad_button_check_pressed(i,gp_face1)
-	key_B=gamepad_button_check_pressed(i,gp_face2)
-	key_X=gamepad_button_check_pressed(i,gp_face3)
-	key_Y=gamepad_button_check_pressed(i,gp_face4)
-	key_LB=0
-	key_LT=gamepad_button_check_pressed(i,gp_shoulderl)
-	key_RB=0
-	key_RT=gamepad_button_check_pressed(i,gp_shoulderr)
+	key_A=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) ///Accept
+	key_B=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("J"))
+	key_X=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("H"))
+	key_Y=gamepad_button_check_pressed(i,gp_face4) or keyboard_check_pressed(ord("L"))
+	key_LB=keyboard_check_pressed(ord("Y"))
+	key_LT=gamepad_button_check_pressed(i,gp_shoulderl) or keyboard_check_pressed(ord("U"))
+	key_RB=keyboard_check_pressed(ord("I"))
+	key_RT=gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("O"))
+
+	
 	key_pause=0
+
 	
 	 // left pressed
     if (!stick_left_held && gamepad_axis_value(i,gp_axislh) <= -threshold)
