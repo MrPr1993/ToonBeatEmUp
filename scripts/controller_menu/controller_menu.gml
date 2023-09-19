@@ -28,7 +28,7 @@ key_right = keyboard_check(ord("D"));
 	
 	key_X=keyboard_check_pressed(ord("H"))
 	key_Y=keyboard_check_pressed(ord("L"))
-	key_A=keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) ///Accept
+	key_A=keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space) ///Accept
 	key_B=keyboard_check_pressed(ord("J"))  ///Cancel
 	key_LB=keyboard_check_pressed(ord("Y"))
 	key_LT=keyboard_check_pressed(ord("U"))
@@ -40,7 +40,7 @@ key_right = keyboard_check(ord("D"));
 	{
 	    if (gamepad_is_connected(i)) 
 	        {
-	key_A=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) ///Accept
+	key_A=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space)
 	key_B=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("J"))
 	key_X=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("H"))
 	key_Y=gamepad_button_check_pressed(i,gp_face4) or keyboard_check_pressed(ord("L"))

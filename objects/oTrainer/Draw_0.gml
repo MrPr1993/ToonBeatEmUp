@@ -8,7 +8,7 @@ draw_set_color(c_white) draw_set_alpha(1)
 //draw_text(380-72,48,tutorialtext)
 if instance_exists(oTextBox) with oTextBox
 {draw_dialogue()
-draw_text_ext(244,48, string_hash_to_newline(string_upper(str)),0,140);
+draw_text_ext(244,48, string_hash_to_newline(string_upper(str)),8,140);
 
 }
 if tutorialquestion=1

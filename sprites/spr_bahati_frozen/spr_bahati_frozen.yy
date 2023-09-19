@@ -57,7 +57,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f911eceb-5e9b-4dfd-8f9d-c7ddfc12497f","path":"sprites/spr_bahati_frozen/spr_bahati_frozen.yy",},},},"Disabled":false,"id":"9a75a068-5fe3-4f6d-8cb8-49a63b05b07f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 47,
     "yorigin": 92,

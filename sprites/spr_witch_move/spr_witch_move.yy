@@ -4,7 +4,7 @@
   "name": "spr_witch_move",
   "bbox_bottom": 106,
   "bbox_left": 1,
-  "bbox_right": 61,
+  "bbox_right": 63,
   "bbox_top": 4,
   "bboxMode": 0,
   "collisionKind": 1,

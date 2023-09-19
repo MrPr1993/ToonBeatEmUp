@@ -4,7 +4,7 @@
   "name": "spr_duck_move",
   "bbox_bottom": 127,
   "bbox_left": 2,
-  "bbox_right": 81,
+  "bbox_right": 84,
   "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 1,

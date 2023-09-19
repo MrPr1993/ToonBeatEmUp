@@ -56,7 +56,7 @@ line++;
 str = string_copy(dialogue,ds_list_find_value(start, line), count-ds_list_find_value(start,line) );
 
 if room!=rm_training
-draw_text_ext(round(4+textadd), round(220-16), string_hash_to_newline(string_upper(str)),0,320-16);
+draw_text_ext(round(4+textadd), round(220-16), string_hash_to_newline(string_upper(str)),8,320-16);
 
 // Draw the text
 //if name=0

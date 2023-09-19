@@ -4,7 +4,7 @@
   "name": "spr_pharaoh_move",
   "bbox_bottom": 127,
   "bbox_left": 33,
-  "bbox_right": 103,
+  "bbox_right": 106,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
