@@ -56,3 +56,11 @@ FrozenSpr=spr_strongburg_frozen
 
 DizzySpr=spr_strongburg_dizzy hasDizzy=1
 
+specialtaunt=function()
+{
+sprite_index=spr_strongburg_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if animFrame>1.9 animFrame=0
+}
+

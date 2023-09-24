@@ -142,3 +142,9 @@ if targetEnemy.x=clamp(targetEnemy.x,x-56,x+16) and image_xscale=-1 animFrame=8
 	frame_set(8,0,0.1) 
 	if animFrame>8.5 canmove=1
 	}
+	
+		///Diving Down
+	if anim=13
+	{sprite_index=spr_slime_entry  zSpeed=0 
+	if ground {image_index+=0.5 if image_index>6.5 {animFrame=0 anim=60}} else {image_index=0 recovery=10}
+	}

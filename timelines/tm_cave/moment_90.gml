@@ -1,6 +1,6 @@
 /// @description Baddies Appear 4
 
-if __view_get( e__VW.XView, 0 )>=4560-2-320-320-320
+if __view_get( e__VW.XView, 0 )>=3280-2-320
 {
 en5=instance_create_depth(__view_get( e__VW.XView, 0)+320-64,180,-1,oEntryBreak)
 with en5

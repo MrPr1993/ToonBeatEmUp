@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8bbc6345-92d3-4651-848a-79837133bbda",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"932737a6-1cd5-4850-8883-8a58684a9a62",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b2e01d6-eac3-4859-b178-2a989a0a5796",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,6 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8bbc6345-92d3-4651-848a-79837133bbda","path":"sprites/spr_sneak_taunt/spr_sneak_taunt.yy",},},},"Disabled":false,"id":"b6a4edc0-73d4-4227-8109-b114210779ce","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"932737a6-1cd5-4850-8883-8a58684a9a62","path":"sprites/spr_sneak_taunt/spr_sneak_taunt.yy",},},},"Disabled":false,"id":"76e2d939-2278-47a0-a42f-47b37d7b6706","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b2e01d6-eac3-4859-b178-2a989a0a5796","path":"sprites/spr_sneak_taunt/spr_sneak_taunt.yy",},},},"Disabled":false,"id":"2cbcff10-66d6-423b-b3e9-1fddb6bbfc1f","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

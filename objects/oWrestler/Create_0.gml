@@ -76,3 +76,13 @@ spritepos_setup(2,0,29,35)
 spritepos_setup(2,24,28,36)
 
 enemyscript=animsetup_zombie
+
+specialtaunt=function()
+{
+sprite_index=spr_wrestler_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,0,0.1)
+frame_set(3,2,0.1)
+if animFrame>3.9 animFrame=0
+}

@@ -108,3 +108,11 @@ current_pal=0
 
 grabMax=0
 
+specialtaunt=function()
+{
+sprite_index=spr_sneak_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if animFrame>2.9 animFrame=0
+}
