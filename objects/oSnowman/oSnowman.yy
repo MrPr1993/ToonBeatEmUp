@@ -35,6 +35,9 @@
     "name": "spr_snowman",
     "path": "sprites/spr_snowman/spr_snowman.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_shadow2",
+    "path": "sprites/spr_shadow2/spr_shadow2.yy",
+  },
   "visible": true,
 }
