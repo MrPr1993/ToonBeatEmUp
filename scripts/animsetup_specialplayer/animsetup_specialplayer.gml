@@ -409,7 +409,18 @@ item_thrown()
 if anim=26
 if weapontype=0
 if spawnID=oFishingRod
-	{if animFrame=0 image_xscale=1
+	{if animFrame=0 {image_xscale=1
+	
+fishingmode=0
+fishtime=0
+fishpull=0
+fishspr=spr_gun
+fishind=0
+fishname=""
+fishscore=0
+
+	
+	}
 	////Hammer Swing
 frame_set(0,0,0.1)
 frame_set(1,1,0.05) if animFrame=2
@@ -424,6 +435,18 @@ Thrown=1
 frame_set(2,0,0.25)
 frame_set(3,2,0.1)
 frame_set(4,3,0.1)
+
+if animFrame>4
+{
+fishtime+=1
+
+if fishtime>random_range(200,300)
+{
+animFrame=0 PlaySound(snd_hit2) anim=260000
+}
+
+}
+
 	if character=0
 	{
 	if animFrame=clamp(animFrame,0,0.9)
@@ -480,6 +503,160 @@ frame_set(4,3,0.1)
 	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
 	sprite_index=spr_sofia_hammeratk	
 	}
+	image_speed=0
+	//if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
+	}
+
+/////Fishing Minigame - Dragging Fish
+if anim=260000
+{
+if character=0 {sprite_index=spr_viva_gunstand 
+	if image_index<1 weaponanim(weaponspr,weaponIndex,28,-50,45,weaponcolor)
+	else weaponanim(weaponspr,weaponIndex,28-1,-50,45,weaponcolor)	
+	}
+if character=1 {sprite_index=spr_hina_gunstand 
+	if image_index<1 weaponanim(weaponspr,weaponIndex,28,-50,45,weaponcolor)
+	else weaponanim(weaponspr,weaponIndex,28-1,-50,45,weaponcolor)	
+	}
+if character=2 {sprite_index=spr_bahati_gunstand 
+	if image_index<1 weaponanim(weaponspr,weaponIndex,28,-50,45,weaponcolor)
+	else weaponanim(weaponspr,weaponIndex,28-1,-50,45,weaponcolor)	
+	}
+if character=3 {sprite_index=spr_sofia_gunstand 
+	if image_index<1 weaponanim(weaponspr,weaponIndex,28,-50+13,45,weaponcolor)
+	else weaponanim(weaponspr,weaponIndex,28-1,-50+13,45,weaponcolor)	
+	}
+
+frame_set(0,0,0.25)
+frame_set(1,3,0.25) if animFrame>1.75 animFrame=0
+
+with oFishingMinigame 
+{
+	
+	if dodgetime<0 {dodgetime=100+random(100)+choose(0,200)} else dodgetime-=1
+	if dodgetime<200
+	spdY-=random_range(0,2)/12
+	else
+	spdY+=random_range(0,2)/12
+	
+	if oPlayer.key_up
+	if y<oPlayer.y {y=lerp(y,oPlayer.y,0.01)}
+	
+	if -oPlayer.key_down
+	if y>oPlayer.y {y=lerp(y,oPlayer.y,0.01)}
+	
+	x+=0.25+fishstr+0.1*point_distance(0,y,0,oPlayer.y)/16
+	
+fishstr+=0.05
+if fishstr>10 or x>1080
+{	with oPlayer {canmove=1 anim=0 animFrame=0} Thrown=0
+		fishout=0
+		
+
+}
+}
+
+if key_attack {oFishingMinigame.x-=16
+	oFishingMinigame.fishstr-=1 oFishingMinigame.fishstr=clamp(oFishingMinigame.fishstr,0,30)
+	
+	
+	if oFishingMinigame.x<256 {animFrame=0 anim=260001
+		with oFishingMinigame {fishout=1 spdZ=-16}
+		}
+	
+	}
+
+
+
+}
+
+///Fish Get!
+if anim=260001
+{if animFrame=0 image_xscale=1
+
+var fishcatch=0;
+if oFishingMinigame.fishout=1
+if oFishingMinigame.z>z-48 and oFishingMinigame.spdZ>0
+{
+fishcatch=1; oFishingMinigame.spdZ=0 oFishingMinigame.z=z oFishingMinigame.fishout=2
+
+animFrame=3
+
+with oControl 
+{alarm[6]=120
+resulttext1=""
+altresult1=0
+resulttext2="BONUS"
+AltScore2=1
+resulttext3=""
+altresult3=0
+stageCspr=spr_bonusresults
+altresult2a=p1.altresult2
+altresult2b=p2.altresult2
+altresult2c=p3.altresult2
+altresult2d=p4.altresult2
+time=0
+AltScore3=-2
+}
+}
+if fishcatch=0
+{
+	if character=0
+	{if animFrame=0 sprite_index=spr_viva_hammeratk
+	if animFrame=clamp(animFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+
+	}
+	if character=1
+	{if animFrame=0 sprite_index=spr_hina_hammeratk
+		if animFrame=clamp(animFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+
+	}
+	if character=2	{
+	if animFrame=0 sprite_index=spr_bahati_hammeratk
+		if animFrame=clamp(animFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	}
+	if character=3	
+	{if animFrame=0 sprite_index=spr_sofia_hammeratk
+	if animFrame=clamp(animFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if animFrame=clamp(animFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	}
+}
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+
+if fishcatch=1
+{oFishingMinigame.x=x+21 oFishingMinigame.y=y+1 oFishingMinigame.z=z-54 oFishingMinigame.spdZ=0
+	oFishingMinigame.spdX=0
+	oFishingMinigame.spdY=0
+	
+oFishingMinigame.fishout=3
+	if image_index=clamp(image_index,0,0.9)
+	weaponanim(weaponspr,weaponIndex,-28,-71+1,90*image_xscale,weaponcolor)
+	else
+	weaponanim(weaponspr,weaponIndex,-28,-71,90*image_xscale,weaponcolor)	
+	
+	if character=0 sprite_index=spr_viva_getfish
+	if character=1 sprite_index=spr_hina_getfish
+	if character=2 sprite_index=spr_bahati_getfish
+	if character=3 sprite_index=spr_sofia_getfish
+	
+}
+frame_set(3,0,0.25)
+frame_set(4,1,0.25)
+	
+
+	
 	image_speed=0
 	//if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
 	}

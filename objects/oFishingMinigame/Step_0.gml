@@ -1,15 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-depth=oPlayer.depth+1
 
+
+if fishout!=3
+{
 x+=spdX
 y+=spdY
 z+=spdZ
+}
+if fishout=0
+{depth=oPlayer.depth+1
 
 if Thrown=0
 {image_index=0
 spdX=0 spdY=0 spdZ=0
+
+fishstr=0
 }
 
 if Thrown=1
@@ -45,4 +52,17 @@ spdY+=0.1
 
 	}
 		y=clamp(y,164-32,232-32)
+}
+}
+else{depth=oPlayer.depth-1	imageang=90 sprite_index=spr_fish1
+	if fishout!=3
+	{
+	x=lerp(x,oPlayer.x,0.01)
+	y=lerp(y,oPlayer.y+1,0.01)	
+	}
+if z>0 and spdZ>0 {z=0 spdZ=0} else spdZ+=0.45
+}
+if fishout=2
+{
+imageang=0
 }

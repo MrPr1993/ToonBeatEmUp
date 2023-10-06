@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+imageang=0
 
 z=0
 
@@ -19,9 +19,15 @@ ground=0
 
 Thrown=0
 
+fishstr=0
+
+dodgetime=0
+
 spdX=0
 spdY=0
 spdZ=0
+
+fishout=0
 
 image_speed=0
 

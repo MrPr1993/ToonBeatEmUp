@@ -29,13 +29,15 @@ y=lerp(y,oPlayer.y,0.1)
 z=lerp(z,oPlayer.z-16,0.8)
 }
 
-draw_line(ropeangx,ropeangy,x,y+z)
+var inwater=0;
+if Thrown=2 inwater=-4
+
+draw_line(ropeangx,ropeangy,x,y+z+inwater)
 
 //draw_line(weaponX+(lengthdir_x(weaponXadd,weaponAngle)),weaponY+(lengthdir_y(weaponYadd,weaponAngle)),x,y+z)
 
 
 }
 
-
-draw_sprite_ext(sprite_index,image_index,x,y+z,oPlayer.image_xscale,1,270*oPlayer.image_xscale,c_white,1)
+draw_sprite_ext(sprite_index,image_index,x,y+z+inwater,oPlayer.image_xscale,1,imageang+270*oPlayer.image_xscale,c_white,1)
 }

@@ -215,6 +215,15 @@ vehWSpr=spr_car_wheels
 
 extraheal=0
 
+fishingmode=0
+fishtime=0
+fishpull=0
+fishspr=spr_gun
+fishind=0
+fishname=""
+fishscore=0
+
+
 difficulty_check=function()
 {maxhp=1
 if global.Difficulty=0 {maxhp=1.5}
