@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9fb76d70-82d6-4d5f-88d6-11584d6c8f50",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"45d79096-4da7-4bfb-b6c2-f3181baea84c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"008dff5f-5223-4518-8f7a-61991d26523c",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,6 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9fb76d70-82d6-4d5f-88d6-11584d6c8f50","path":"sprites/spr_viva_getfish/spr_viva_getfish.yy",},},},"Disabled":false,"id":"dbe90f87-83f7-4b88-861c-64792f49c550","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"45d79096-4da7-4bfb-b6c2-f3181baea84c","path":"sprites/spr_viva_getfish/spr_viva_getfish.yy",},},},"Disabled":false,"id":"8192d07d-89f0-4f15-8514-353f3a587825","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"008dff5f-5223-4518-8f7a-61991d26523c","path":"sprites/spr_viva_getfish/spr_viva_getfish.yy",},},},"Disabled":false,"id":"f6ba1234-8b4a-43c3-8014-8b37f1415551","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

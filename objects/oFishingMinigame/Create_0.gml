@@ -29,5 +29,8 @@ spdZ=0
 
 fishout=0
 
+fishname="BOOT"
+fishscore=0
+
 image_speed=0
 

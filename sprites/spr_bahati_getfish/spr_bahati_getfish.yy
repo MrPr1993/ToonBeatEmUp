@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"45d79096-4da7-4bfb-b6c2-f3181baea84c",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9fb76d70-82d6-4d5f-88d6-11584d6c8f50",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a5d21f1-519e-46d3-b5a5-ec772eb4b6c3",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,6 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"45d79096-4da7-4bfb-b6c2-f3181baea84c","path":"sprites/spr_bahati_getfish/spr_bahati_getfish.yy",},},},"Disabled":false,"id":"d2728197-4dff-4f3a-ae89-0078682370b7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9fb76d70-82d6-4d5f-88d6-11584d6c8f50","path":"sprites/spr_bahati_getfish/spr_bahati_getfish.yy",},},},"Disabled":false,"id":"d4cb5480-c54d-4a37-84b2-1421f72a0709","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4a5d21f1-519e-46d3-b5a5-ec772eb4b6c3","path":"sprites/spr_bahati_getfish/spr_bahati_getfish.yy",},},},"Disabled":false,"id":"777fc138-cc8a-4f3c-9ac8-6c1ef39d8ee8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -24,9 +24,8 @@ if Thrown=1
 if spdZ<4 spdZ+=0.45	
 
 if z>32 {Thrown=2 image_index=1
-	
-splash=instance_create_depth(x,y,-1,oFlashFX) splash.sprite_index=spr_watersplashsmall	splash.z=32
-	splash.hspeed=spdX/2
+	 PlaySound(snd_splash1)
+flashFX(x,y,z+6,spr_watersplashsmall,0,0.5,10,1,1,c_white,1)
 	}
 
 with oEnemySpawner
@@ -54,7 +53,7 @@ spdY+=0.1
 		y=clamp(y,164-32,232-32)
 }
 }
-else{depth=oPlayer.depth-1	imageang=90 sprite_index=spr_fish1
+else{depth=oPlayer.depth-1	imageang=90 
 	if fishout!=3
 	{
 	x=lerp(x,oPlayer.x,0.01)
@@ -66,3 +65,5 @@ if fishout=2
 {
 imageang=0
 }
+if fishout=3
+image_speed=0.25

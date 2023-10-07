@@ -410,15 +410,8 @@ if anim=26
 if weapontype=0
 if spawnID=oFishingRod
 	{if animFrame=0 {image_xscale=1
-	
-fishingmode=0
-fishtime=0
-fishpull=0
-fishspr=spr_gun
-fishind=0
-fishname=""
-fishscore=0
-
+	hp=maxhp
+fish_choose(choose(0,1,2,3,4,5,6,7,8,9,10))
 	
 	}
 	////Hammer Swing
@@ -443,6 +436,9 @@ fishtime+=1
 if fishtime>random_range(200,300)
 {
 animFrame=0 PlaySound(snd_hit2) anim=260000
+ PlaySound(snd_splash1)
+with oFishingMinigame
+flashFX(x,y,z+6,spr_watersplashsmall,0,0.5,10,1,1,c_white,1)
 }
 
 }
@@ -545,7 +541,7 @@ with oFishingMinigame
 	if -oPlayer.key_down
 	if y>oPlayer.y {y=lerp(y,oPlayer.y,0.01)}
 	
-	x+=0.25+fishstr+0.1*point_distance(0,y,0,oPlayer.y)/16
+	x+=0.25*oPlayer.fishstr+fishstr+0.1*point_distance(0,y,0,oPlayer.y)/16
 	
 fishstr+=0.05
 if fishstr>10 or x>1080
@@ -560,8 +556,10 @@ if key_attack {oFishingMinigame.x-=16
 	oFishingMinigame.fishstr-=1 oFishingMinigame.fishstr=clamp(oFishingMinigame.fishstr,0,30)
 	
 	
-	if oFishingMinigame.x<256 {animFrame=0 anim=260001
-		with oFishingMinigame {fishout=1 spdZ=-16}
+	if oFishingMinigame.x<256 {animFrame=0 anim=260001 oFishingMinigame.sprite_index=fishspr
+		with oFishingMinigame {fishout=1 spdZ=-16 PlaySound(snd_splash2)
+			flashFX(x,y+2,z+6,spr_watersplash,0,0.5,10,1,1,c_white,1)
+			}
 		}
 	
 	}
@@ -582,12 +580,15 @@ fishcatch=1; oFishingMinigame.spdZ=0 oFishingMinigame.z=z oFishingMinigame.fisho
 
 animFrame=3
 
+oFishingMinigame.fishname=fishname
+oFishingMinigame.fishscore=fishscore
+
 with oControl 
 {alarm[6]=120
 resulttext1=""
 altresult1=0
 resulttext2="BONUS"
-AltScore2=1
+AltScore2=oPlayer.fishscore
 resulttext3=""
 altresult3=0
 stageCspr=spr_bonusresults
@@ -653,7 +654,8 @@ oFishingMinigame.fishout=3
 	
 }
 frame_set(3,0,0.25)
-frame_set(4,1,0.25)
+var hasboot=0; if fishname="BOOT" hasboot=1;
+frame_set(4,1+hasboot,0.25)
 	
 
 	

@@ -40,4 +40,11 @@ draw_line(ropeangx,ropeangy,x,y+z+inwater)
 }
 
 draw_sprite_ext(sprite_index,image_index,x,y+z+inwater,oPlayer.image_xscale,1,imageang+270*oPlayer.image_xscale,c_white,1)
+
+if fishout=3
+{draw_set_font(global.scorefont)
+draw_set_color(c_white)
+draw_text(x,y-16,fishname)
+draw_text(x,y-24,fishscore)
+}
 }

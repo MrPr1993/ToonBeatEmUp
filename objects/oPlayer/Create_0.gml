@@ -222,7 +222,7 @@ fishspr=spr_gun
 fishind=0
 fishname=""
 fishscore=0
-
+fishstr=0
 
 difficulty_check=function()
 {maxhp=1
