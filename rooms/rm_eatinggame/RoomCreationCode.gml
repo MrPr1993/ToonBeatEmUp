@@ -1,0 +1,1 @@
+musicplaystart(msc_minigame2)

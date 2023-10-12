@@ -2,7 +2,7 @@
 if isPaused=0
 {
 if room=rm_cutscene1 or room=rm_opening or rm_brickbreak
-or room=rm_slotmachine
+or room=rm_slotmachine or room=rm_eatinggame
 __view_set( e__VW.YView, 0, quakeFX)	
 
 if disableTimer time=99
@@ -48,6 +48,16 @@ p2=oBrickBreakGame.p2
 p3=oBrickBreakGame.p3
 p4=oBrickBreakGame.p4
 }
+
+if room=rm_eatinggame
+{
+p1=oEatingContestPlayer.p1
+p2=oEatingContestPlayer.p2
+p3=oEatingContestPlayer.p3
+p4=oEatingContestPlayer.p4
+}
+
+
 
 p1.canControl=0 p2.canControl=0 p3.canControl=0 p4.canControl=0
 var cntrl=1;
@@ -270,7 +280,7 @@ and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and  roo
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading  and room!=rm_brickbreak
 and room!=rm_menu  and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes  and room!=rm_paletteeditor
-and room!=rm_slotmachine
+and room!=rm_slotmachine and room!=rm_eatinggame
 {
 if camMove=0
 {

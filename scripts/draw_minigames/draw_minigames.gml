@@ -9,6 +9,8 @@ draw_set_font(global.scorefont)
 
 d3d_transform_set_identity()
 
+
+
 d3d_transform_set_translation(320+MenuMoveX,0,0)
 
 

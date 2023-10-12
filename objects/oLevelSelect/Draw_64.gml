@@ -90,7 +90,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("CAR MINIGAME"));
 if level=36 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("BRICK MINIGAME"));
 if level=37 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("EATING MINIGAME"));
 if level=38 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=39 draw_set_color(c_yellow) else draw_set_color(c_gray)

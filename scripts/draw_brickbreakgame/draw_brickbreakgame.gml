@@ -122,4 +122,28 @@ draw_set_color(c_white) draw_set_alpha(1)
 //draw_playerhp()
 }
 }
+
+if room=rm_eatinggame
+{
+if oEatingContestGame.ready=0
+with oEatingContestPlayer
+{draw_set_font(global.scorefont)
+draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_text(160,32,"EATING CONTEST!")
+
+with oControl
+{
+if stageIntro!=0 stageIntro-=0.05 else stageIntro=0
+draw_set_color(c_black) draw_set_alpha(1)
+if stageIntro!=0
+draw_rectangle(-2,-2,320*stageIntro,999,false)
 }
+draw_set_color(c_white) draw_set_alpha(1)
+//draw_playerhp()
+}
+
+}
+
+}
+
