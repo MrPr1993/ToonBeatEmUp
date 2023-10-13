@@ -15,6 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"94ba0dc6-5ca4-486c-b1ae-df6df57e0720",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3cd9ff22-7b28-4b69-abcb-c19b83baee76",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6afafd8a-d1e2-4c48-9cf8-1b16535b61a3",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -44,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -57,6 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"94ba0dc6-5ca4-486c-b1ae-df6df57e0720","path":"sprites/spr_miniposter/spr_miniposter.yy",},},},"Disabled":false,"id":"6f773e13-bf26-404b-9ee2-2d950d2ecb2a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3cd9ff22-7b28-4b69-abcb-c19b83baee76","path":"sprites/spr_miniposter/spr_miniposter.yy",},},},"Disabled":false,"id":"54636e4f-274c-48f7-b8d4-663a2dd97631","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6afafd8a-d1e2-4c48-9cf8-1b16535b61a3","path":"sprites/spr_miniposter/spr_miniposter.yy",},},},"Disabled":false,"id":"630f33e5-318c-4a3d-a9b9-605ad56eef8c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

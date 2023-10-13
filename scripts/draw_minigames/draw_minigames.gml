@@ -29,9 +29,10 @@ draw_sprite_ext(spr_miniposter,5,220,104,1,1,0,c_gray*0,0.5+0.5*0)
 
 if global.MinigameSel=0 {MenuText="WRECK THAT CAR TO BITS!"
 global.StageGoing=rm_cargame}
-if global.MinigameSel=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION"
+if global.MinigameSel=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION!"
 global.StageGoing=rm_brickbreak}
-
+if global.MinigameSel=2 {MenuText="EAT A MEAL IN THIS EATING COMPETITION!"
+global.StageGoing=rm_eatinggame}
 
 	
 draw_set_halign(fa_center)

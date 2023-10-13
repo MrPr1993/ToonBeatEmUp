@@ -14,79 +14,81 @@ else
 else shake=0
 
 ///
+if anim=0 or anim=1
+{
 if anim=0
 {
-if oEatingContestGame.ready=1
-meter+=meterSpd
-if meterSpd=4
-{if meter>76 meterSpd=-4}
-else {if meter<4 meterSpd=4}
-
 frame_set(0,0,0.1)
 frame_set(1,1,0.1) if animFrame>2-0.1 animFrame=0
 
-if key_attack
-{animFrame=0 anim=10
-	if meter=clamp(meter,2+16,78-16) win=1 else win=0
-	
+if foodhp=0 {animFrame=0 anim=2}
+}
 
-	
-	PlaySound(voice1)
+if key_attack if anim!=10
+if anim=0 or (anim=1 and animFrame>1)
+{animFrame=0 anim=1 eatframe^=1;
+	//if meter=clamp(meter,2+16,78-16) win=1 else win=0
+
+	//PlaySound(voice1)
 	}
 }
+
+if anim=1
+{
+frame_set(0,2+2*eatframe,0.1) if animFrame=1 {foodhp-=1; foodno+=1
+	PlaySoundNoStack(snd_eat)	
+		if foodhp<1 {animFrame=0 anim=10}
+	}
+frame_set(1,3+2*eatframe,0.1)
+frame_set(2,3+2*eatframe,0.1)
+if animFrame>3-0.1 {animFrame=0 anim=0}
+}
+
 
 ///SWING
 if anim=10
 {
-frame_set(0,2,0.25)
-frame_set(1,3,0.05)
-frame_set(2,4,0.25) if animFrame=3
-{if win=0
-	{PlaySound(snd_steal) 	PlaySound(voice2) breakresult=0
-		
-		shaketime=10 altresult2Text="NO BONUS" altresult2=0}
-	else
-	{ //snd_viva13
- oEatingContestGame.resulttext1="BONUS"
-
-if meter=clamp(meter,2+32,78-32) {PlaySound(snd_explosion) brickbreak=3  oControl.quakeFXTime=10
-			altresult2Text="PERFECT" altresult2=10000
-			dust_make(x+40,240+8,0,0,0,0)
-			dust_make(x+40,240+8-16,0,0,0,0)
-			dust_make(x+40,240+8-32,0,0,0,0)
-			dust_make(x+40,240+8,-48,0,0,0)
-			dust_make(x+40,240+8,-64,0,0,0)
-			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
-			}
-	else
-if meter=clamp(meter,2+24,78-24) {PlaySound(snd_hit) brickbreak=2 	oControl.quakeFXTime=5
-			altresult2Text="GOOD" altresult2=5000
-			dust_make(x+40,240+8-32,0,0,0,0)
-			dust_make(x+40,240+8,-48,0,0,0)
-			dust_make(x+40,240+8,-64,0,0,0)
-			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
-			}	
-else
-{PlaySound(snd_steal) brickbreak=1 		 oControl.quakeFXTime=2
-			dust_make(x+40,240+8,-64,0,0,0)
-			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
-			altresult2Text="AVERAGE" altresult2=2500
-			}
-			
-	
-	
-		
-		}
-}
-if win=0
-frame_set(3,6,0.01) else frame_set(3,5,0.01) 
-if animFrame>4 
+if animFrame=0
 {
+oEatingContestGame.resulttext1="BONUS"
+
+			altresult2Text="FOOD" altresult2=abs(foodno)*20
+
+//if win=0
+with oEatingContestPlayer win=0
+
+if controlNO=1
+if foodhp<oEatingContestGame.p2.foodhp 
+and foodhp<oEatingContestGame.p3.foodhp 
+and foodhp<oEatingContestGame.p4.foodhp win=1
+
+if controlNO=2
+if foodhp<oEatingContestGame.p1.foodhp 
+and foodhp<oEatingContestGame.p3.foodhp 
+and foodhp<oEatingContestGame.p4.foodhp win=1
+
+if controlNO=3
+if foodhp<oEatingContestGame.p1.foodhp 
+and foodhp<oEatingContestGame.p2.foodhp 
+and foodhp<oEatingContestGame.p4.foodhp win=1
+
+if controlNO=4
+if foodhp<oEatingContestGame.p1.foodhp 
+and foodhp<oEatingContestGame.p3.foodhp 
+and foodhp<oEatingContestGame.p2.foodhp win=1
+
+}
+
+var haslose=0;
+
+if win=0 haslose=1;
+
+frame_set(0,6,0.1)	
+frame_set(1,7+2*haslose,0.1)	
+frame_set(2,8+2*haslose,0.1) if animFrame>2-0.1 {animFrame=1
+
 	if controlNO=1	oEatingContestGame.p1Over=1
 		if controlNO=2	oEatingContestGame.p2Over=1
 			if controlNO=3	oEatingContestGame.p3Over=1
-				if controlNO=4	oEatingContestGame.p4Over=1
-}
-frame_set(4,7,0.25)
-if win=0 frame_set(5,9,0) else frame_set(5,8,0)
+				if controlNO=4	oEatingContestGame.p4Over=1}
 }

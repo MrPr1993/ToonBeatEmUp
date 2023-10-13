@@ -74,6 +74,10 @@ if oBrickBreakGame.ready=1
 {
 with oBrickBreakPlayer
 {
+draw_set_font(global.timefont)
+draw_set_halign(fa_center)
+draw_text(160,0,oBrickBreakGame.time)	
+
 d3d_transform_set_identity()
 {
 d3d_transform_set_translation(x,0,0)
@@ -95,12 +99,10 @@ draw_set_color(c_white)
 draw_rectangle(-1+meter,60-4-16,1+meter,60+4-16,false)
 }
 d3d_transform_set_identity()
-if anim=0 or anim=1
-{
-draw_set_font(global.timefont)
-draw_set_halign(fa_center)
-draw_text(160,0,oBrickBreakGame.time)
-}
+
+
+
+
 
 }
 }
@@ -125,9 +127,19 @@ draw_set_color(c_white) draw_set_alpha(1)
 
 if room=rm_eatinggame
 {
+draw_set_font(global.timefont)
+draw_set_halign(fa_center)
+draw_set_color(c_white)
+draw_text(160,0,oEatingContestGame.time)
+	
+	
 if oEatingContestGame.ready=0
 with oEatingContestPlayer
-{draw_set_font(global.scorefont)
+{
+
+
+	
+draw_set_font(global.scorefont)
 draw_set_color(c_white)
 draw_set_halign(fa_center)
 draw_text(160,32,"EATING CONTEST!")

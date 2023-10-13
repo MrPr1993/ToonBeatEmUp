@@ -12,7 +12,7 @@ p4=instance_create_depth(0,0,0,oPlayerNoControl) with p4 {controlNO=4 playerNO=4
 
 brickgamenum=0
 
-time=9
+time=20
 
 if global.P1available=1
 {brickgamenum+=1

@@ -1058,6 +1058,7 @@
     {"id":{"name":"snd_bahati12","path":"sounds/snd_bahati12/snd_bahati12.yy",},},
     {"id":{"name":"snd_bahati13","path":"sounds/snd_bahati13/snd_bahati13.yy",},},
     {"id":{"name":"snd_bahati14","path":"sounds/snd_bahati14/snd_bahati14.yy",},},
+    {"id":{"name":"snd_eat","path":"sounds/snd_eat/snd_eat.yy",},},
     {"id":{"name":"snd_bahati2","path":"sounds/snd_bahati2/snd_bahati2.yy",},},
     {"id":{"name":"snd_bahati20","path":"sounds/snd_bahati20/snd_bahati20.yy",},},
     {"id":{"name":"snd_bahati21","path":"sounds/snd_bahati21/snd_bahati21.yy",},},

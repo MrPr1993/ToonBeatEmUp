@@ -51,12 +51,11 @@ p4=oBrickBreakGame.p4
 
 if room=rm_eatinggame
 {
-p1=oEatingContestPlayer.p1
-p2=oEatingContestPlayer.p2
-p3=oEatingContestPlayer.p3
-p4=oEatingContestPlayer.p4
+p1=oEatingContestGame.p1
+p2=oEatingContestGame.p2
+p3=oEatingContestGame.p3
+p4=oEatingContestGame.p4
 }
-
 
 
 p1.canControl=0 p2.canControl=0 p3.canControl=0 p4.canControl=0

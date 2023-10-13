@@ -895,6 +895,7 @@
     {"name":"snd_bahati12","order":3,"path":"sounds/snd_bahati12/snd_bahati12.yy",},
     {"name":"snd_bahati13","order":4,"path":"sounds/snd_bahati13/snd_bahati13.yy",},
     {"name":"snd_bahati14","order":5,"path":"sounds/snd_bahati14/snd_bahati14.yy",},
+    {"name":"snd_eat","order":19,"path":"sounds/snd_eat/snd_eat.yy",},
     {"name":"snd_bahati2","order":6,"path":"sounds/snd_bahati2/snd_bahati2.yy",},
     {"name":"snd_bahati20","order":7,"path":"sounds/snd_bahati20/snd_bahati20.yy",},
     {"name":"snd_bahati21","order":8,"path":"sounds/snd_bahati21/snd_bahati21.yy",},

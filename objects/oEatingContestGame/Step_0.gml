@@ -8,7 +8,7 @@ if stageClear=0
 stageClear=1
 
 with oControl 
-{alarm[6]=20
+{alarm[6]=60
 resulttext1=""
 altresult1=0
 resulttext2="BONUS"

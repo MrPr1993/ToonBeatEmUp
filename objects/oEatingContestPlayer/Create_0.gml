@@ -35,6 +35,10 @@ brickbreak=0
 
 foodno=0
 
+foodhp=50
+
+eatframe=1
+
 my_pal_sprite=spr_playerpal
 current_pal=0
 

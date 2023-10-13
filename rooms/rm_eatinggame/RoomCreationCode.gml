@@ -1,1 +1,1 @@
-musicplaystart(msc_minigame2)
+musicplaystart(msc_training)
