@@ -1,0 +1,30 @@
+/// @description Insert description here
+// You can write your code in this editor
+if character=0
+{
+sprite_index=spr_viva_sgame name="VIVA"
+voice1=snd_VivaSing1
+voice2=snd_VivaSing2
+voice3=snd_VivaSing3
+}
+if character=1
+{
+sprite_index=spr_hina_sgame name="HINA"
+voice1=snd_HinaSing1
+voice2=snd_HinaSing2
+voice3=snd_HinaSing3
+}
+if character=2
+{
+sprite_index=spr_bahati_sgame name="BAHATI"
+//voice1=snd_bahati
+voice2=snd_VivaSing2
+voice3=snd_VivaSing3
+}
+if character=3
+{
+sprite_index=spr_sofia_sgame name="SOFIA"
+voice1=snd_VivaSing1
+voice2=snd_VivaSing2
+voice3=snd_VivaSing3
+}

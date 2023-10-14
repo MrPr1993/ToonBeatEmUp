@@ -62,7 +62,7 @@ if level=34 roomGo=rm_creditscene
 if level=35 roomGo=rm_cargame
 if level=36 roomGo=rm_brickbreak
 if level=37 roomGo=rm_eatinggame
-if level=38 roomGo=rm_cargame
+if level=38 roomGo=rm_singgame
 if level=39 roomGo=rm_cargame
 if level=40 roomGo=rm_cargame
 if level=41 roomGo=rm_testarea//

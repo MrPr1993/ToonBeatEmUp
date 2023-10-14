@@ -2,7 +2,7 @@
 if isPaused=0
 {
 if room=rm_cutscene1 or room=rm_opening or rm_brickbreak
-or room=rm_slotmachine or room=rm_eatinggame
+or room=rm_slotmachine or room=rm_eatinggame or room=rm_singgame
 __view_set( e__VW.YView, 0, quakeFX)	
 
 if disableTimer time=99
@@ -57,6 +57,13 @@ p3=oEatingContestGame.p3
 p4=oEatingContestGame.p4
 }
 
+if room=rm_singgame
+{
+p1=oSingGame.p1
+p2=oSingGame.p2
+p3=oSingGame.p3
+p4=oSingGame.p4
+}
 
 p1.canControl=0 p2.canControl=0 p3.canControl=0 p4.canControl=0
 var cntrl=1;
@@ -74,7 +81,7 @@ and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and room
 and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
 and room!=rm_soundtest and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
 and room!=rm_menu and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes and room!=rm_paletteeditor
-and room!=rm_slotmachine
+and room!=rm_slotmachine and room!=rm_eatinggame  and room!=rm_singgame
 {
 ///CONTINUE
 //if x=-999999
@@ -279,7 +286,7 @@ and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and  roo
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading  and room!=rm_brickbreak
 and room!=rm_menu  and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes  and room!=rm_paletteeditor
-and room!=rm_slotmachine and room!=rm_eatinggame
+and room!=rm_slotmachine and room!=rm_eatinggame and room!=rm_singgame
 {
 if camMove=0
 {
