@@ -2,7 +2,7 @@
 if isPaused=0
 {
 if room=rm_cutscene1 or room=rm_opening or rm_brickbreak
-or room=rm_slotmachine or room=rm_eatinggame or room=rm_singgame
+or room=rm_slotmachine or room=rm_eatinggame or room=rm_singgame or isNotStage=1
 __view_set( e__VW.YView, 0, quakeFX)	
 
 if disableTimer time=99
@@ -38,7 +38,7 @@ if room!=rm_titlescreen and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and room!=rm_howtoplay
 and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
 and room!=rm_soundtest and room!=rm_gallery and room!=rm_loading and room!=rm_minigames and room!=rm_cutscenes
-and room!=rm_menu and room!=rm_settings and room!=rm_paletteeditor
+and room!=rm_menu and room!=rm_settings and room!=rm_paletteeditor and isNotStage=0
 if keyboard_check(vk_shift) and keyboard_check_pressed(ord("Q"))
 {
 if room=rm_brickbreak
@@ -81,7 +81,7 @@ and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and room
 and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop
 and room!=rm_soundtest and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
 and room!=rm_menu and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes and room!=rm_paletteeditor
-and room!=rm_slotmachine and room!=rm_eatinggame  and room!=rm_singgame
+and room!=rm_slotmachine and room!=rm_eatinggame  and room!=rm_singgame and isNotStage=0
 {
 ///CONTINUE
 //if x=-999999
@@ -286,7 +286,7 @@ and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and  roo
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading  and room!=rm_brickbreak
 and room!=rm_menu  and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes  and room!=rm_paletteeditor
-and room!=rm_slotmachine and room!=rm_eatinggame and room!=rm_singgame
+and room!=rm_slotmachine and room!=rm_eatinggame and room!=rm_singgame and isNotStage=0
 {
 if camMove=0
 {

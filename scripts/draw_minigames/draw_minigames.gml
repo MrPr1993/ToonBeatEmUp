@@ -14,29 +14,68 @@ d3d_transform_set_identity()
 d3d_transform_set_translation(320+MenuMoveX,0,0)
 
 
-if -key_left_pressed {if global.MinigameSel=0 global.MinigameSel=5 else global.MinigameSel-=1 PlaySound(snd_select)}
-if key_right_pressed {if global.MinigameSel=5 global.MinigameSel=0 else global.MinigameSel+=1 PlaySound(snd_select)}
+if -key_left_pressed {if global.MinigameSetSel=0 global.MinigameSetSel=2 else global.MinigameSetSel-=1 PlaySound(snd_select)}
+if key_right_pressed {if global.MinigameSetSel=2 global.MinigameSel=0 else global.MinigameSetSel+=1 PlaySound(snd_select)}
 
 
 MenuText="???"
 
-draw_sprite_ext(spr_miniposter,0,28,24,1,1,0,c_gray,0.5+0.5*1)
-draw_sprite_ext(spr_miniposter,1,124,24,1,1,0,c_gray,0.5+0.5*1)
-draw_sprite_ext(spr_miniposter,2,220,24,1,1,0,c_gray*0,0.5+0.5*0)
-draw_sprite_ext(spr_miniposter,3,28,104,1,1,0,c_gray*0,0.5+0.5*0)
-draw_sprite_ext(spr_miniposter,4,124,104,1,1,0,c_gray*0,0.5+0.5*0)
-draw_sprite_ext(spr_miniposter,5,220,104,1,1,0,c_gray*0,0.5+0.5*0)
+//draw_sprite_ext(spr_miniposter,0,28,24,1,1,0,c_gray,0.5+0.5*1)
+//draw_sprite_ext(spr_miniposter,1,124,24,1,1,0,c_gray,0.5+0.5*1)
+//draw_sprite_ext(spr_miniposter,2,220,24,1,1,0,c_gray*0,0.5+0.5*0)
+//draw_sprite_ext(spr_miniposter,3,28,104,1,1,0,c_gray*0,0.5+0.5*0)
+//draw_sprite_ext(spr_miniposter,4,124,104,1,1,0,c_gray*0,0.5+0.5*0)
+//draw_sprite_ext(spr_miniposter,5,220,104,1,1,0,c_gray*0,0.5+0.5*0)
 
+if key_up_pressed {PlaySound(snd_select)
+if global.MinigameSetSel=2
+{if global.MinigameSel=0 global.MinigameSel=5 else global.MinigameSel-=1}
+
+	}
+if -key_down_pressed {PlaySound(snd_select)
+if global.MinigameSetSel=2
+{if global.MinigameSel=5 global.MinigameSel=0 else global.MinigameSel+=1}
+	}
+
+
+if global.MinigameSetSel=0
+{
+
+
+}
+
+if global.MinigameSetSel=1
+{
+}
+
+if global.MinigameSetSel=2
+{
 if global.MinigameSel=0 {MenuText="WRECK THAT CAR TO BITS!"
 global.StageGoing=rm_cargame}
 if global.MinigameSel=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION!"
 global.StageGoing=rm_brickbreak}
 if global.MinigameSel=2 {MenuText="EAT A MEAL IN THIS EATING COMPETITION!"
 global.StageGoing=rm_eatinggame}
+if global.MinigameSel=3 {MenuText="SING TO SHATTER THE COMPETITION!"
+global.StageGoing=rm_singgame}
+if global.MinigameSel=4 {MenuText="RUN FROM THE BIG BAD BULL!"
+global.StageGoing=rm_bullstage}
+if global.MinigameSel=5 {MenuText="RING THE BELL WITH A SLAM OF THE HAMMER!"
+global.StageGoing=rm_hammergame}
+}	
 
-	
+draw_sprite_ext(spr_miniposter,0,28,24,1,1,0,c_white,1)
+
 draw_set_halign(fa_center)
 draw_set_color(c_black)
+
+draw_set_alpha(0.75)
+draw_rectangle(-80+80*global.MinigameSetSel,240-10-4-10+2+8-2-32,0+80*global.MinigameSetSel,240-10-4+2+8-2-32,false)
+draw_rectangle(80+80*global.MinigameSetSel,240-10-4-10+2+8-2-32,333,240-10-4+2+8-2-32,false)
+
+
+draw_set_alpha(1)
+
 draw_rectangle(0,240-10-4-10+2+8-2-32,320,240-10-4+2+8-2-32,false)
 draw_set_alpha(1)draw_set_color(c_white)
 draw_text(round(160),240-10-4-32,MenuText)

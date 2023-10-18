@@ -3,7 +3,7 @@ if x=-99999999999999999
 {
 if continueScreen=0
 if room=rm_chardata or room=rm_map or room=rm_hiscore or room=rm_characterselect or room=rm_feats or room=rm_shop
-or room=rm_soundtest or room=rm_gallery or room!=rm_minigames or room!=rm_cutscenes
+or room=rm_soundtest or room=rm_gallery or room!=rm_minigames or room!=rm_cutscenes and isNotStage=0
 {global.MenuSkip=1 global.IntroSkip=2
 
 if rm_characterselect and p1Select=100

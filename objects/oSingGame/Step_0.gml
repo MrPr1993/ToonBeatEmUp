@@ -2,6 +2,17 @@
 // You can write your code in this editor
 depth=10
 
+if stageClear=0
+if songdone=0
+{
+songbeattime-=1 if songbeattime<0 {songbeattime=120-songbeaten songbeating=2 songdir=choose(0,1) PlaySoundNoStack(snd_beat) songbeaten+=2
+	if songbeaten<1 {songbeaten=0 songdone=1
+	with oSingPlayer {animFrame=0 anim=10 win=0}
+	}
+	} 
+
+
+}
 
 if (p1Over=1 and p2Over=1 and p3Over=1 and p4Over=1)
 if stageClear=0

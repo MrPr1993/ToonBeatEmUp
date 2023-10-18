@@ -12,6 +12,6 @@ if anim!=10 {animFrame=0 anim=10}
 else
 {
 alarm[1]=60
-time-=1
+//time-=1
 }
 }

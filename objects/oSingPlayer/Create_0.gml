@@ -63,5 +63,18 @@ character=0
 
 windowon=1
 
+playercolor=c_black
+singhp=0
+
+singtime=0
+singarrow=0
+
+hitsource=x
+windx=x
+
+extraframe=0
+frameadd=0
+miss=0
+
 image_speed=0
 

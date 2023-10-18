@@ -142,3 +142,9 @@ stageIntro=1
 oControl.stagePause=0
 
 with oSingPlayer canControl=0 alarm[0]=120
+
+songbeattime=120
+songbeaten=0
+songdir=0
+songdone=0
+songbeating=0

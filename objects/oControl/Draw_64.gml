@@ -58,7 +58,7 @@ and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and room
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
 and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading and room!=rm_brickbreak
 and room!=rm_menu and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes and room!=rm_paletteeditor
-and room!=rm_slotmachine and room!=rm_eatinggame and room!=rm_singgame
+and room!=rm_slotmachine and room!=rm_eatinggame and room!=rm_singgame and isNotStage=0
 {
 if betatest=1
 {

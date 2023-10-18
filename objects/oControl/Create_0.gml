@@ -4,6 +4,8 @@ playNO=1
 
 colorshade_setup()
 
+isNotStage=0
+
 recordAng=0
 recordAng2=0
 threshold = 0.9; keytick=0	
@@ -84,6 +86,8 @@ prevstagecheck3=0
 stagecheck=0
 stagename=""
 
+minigameselstage=0
+
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 	
@@ -99,6 +103,11 @@ global.MovieSel=0
 	
 global.IsMinigame=0
 global.MinigameSel=0
+
+global.MinigameSetSel=0
+global.MinigameSel2=0
+global.MinigameSel3=0	
+global.MinigameSelStage=0
 	
 global.StageGoing=rm_opening
 
