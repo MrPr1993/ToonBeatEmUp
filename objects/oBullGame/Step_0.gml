@@ -6,7 +6,7 @@ if stageClear=0
 {
 
 stageClear=1
-
+gameplaying=0 
 with oControl 
 {alarm[6]=80
 resulttext1=""
@@ -26,11 +26,14 @@ AltScore3=-2
 
 }
 
+if stageClear=1
+bullx+=8
+
 if gameplaying=1 
 {
 layer_x("BGfloor",-rundist)
-rundist+=1
-if rundist=1000 with oPlayer
+rundist+=8
+if rundist=2000 with oPlayer
 {win=1 animFrame=0 anim=10}
 
 }

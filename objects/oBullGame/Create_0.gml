@@ -17,7 +17,7 @@ time=9
 
 if global.P1available=1
 {brickgamenum+=1
-p1=instance_create_depth(190,176,-1,oBullPlayer) with p1
+p1=instance_create_depth(190,168,-1,oBullPlayer) with p1
 {
 oBullGame.p1Over=0	
 canControl=1
@@ -32,7 +32,7 @@ event_user(0)
 }}
 if global.P2available=1
 {brickgamenum+=1
-p2=instance_create_depth(190,176+16*instance_number(oBullPlayer),-1,oBullPlayer) with p2
+p2=instance_create_depth(190,168+16*instance_number(oBullPlayer),-1,oBullPlayer) with p2
 {
 oBullGame.p2Over=0	sprite_index=spr_hina_brick 
 canControl=1
@@ -48,7 +48,7 @@ event_user(0)
 }
 if global.P3available=1
 {brickgamenum+=1
-p3=instance_create_depth(190,176+16*instance_number(oBullPlayer),-1,oBullPlayer) with p3
+p3=instance_create_depth(190,168+16*instance_number(oBullPlayer),-1,oBullPlayer) with p3
 {
 oBullGame.p3Over=0	sprite_index=spr_bahati_brick
 canControl=1 
@@ -64,7 +64,7 @@ event_user(0)
 }
 if global.P4available=1
 {brickgamenum+=1
-p4=instance_create_depth(190,176+16*instance_number(oBullPlayer),-1,oBullPlayer) with p4
+p4=instance_create_depth(190,168+16*instance_number(oBullPlayer),-1,oBullPlayer) with p4
 {
 oBullGame.p4Over=0	sprite_index=spr_sofia_brick
 canControl=1

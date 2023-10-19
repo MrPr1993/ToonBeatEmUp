@@ -1,3 +1,9 @@
+
+if ready=1
+draw_sprite(spr_carshadow,0,bullx,178)
+
+if instance_exists(oBullPlayer) with oBullPlayer draw_sprite(spr_shadow,0,round(x),y)
+
 if ready=0
 {
 draw_set_font(global.scorefont)
@@ -13,6 +19,22 @@ draw_text(160,32,"  JUMP\nFOR AVOIDING\nOBSTACLES")
 }
 else
 {
+
+if stageClear=0
 bullx=lerp(bullx,0,0.1)
-draw_sprite(spr_bullrun,current_time/4,bullx,198)
+draw_sprite(spr_bigbullrun,current_time/100,round(bullx),178)
+}
+
+
+if instance_exists(oBullPlayer)
+with oBullPlayer
+{
+	pal_swap_set(my_pal_sprite,current_pal,false);
+
+draw_sprite(sprite_index,image_index,round(x+shake),round(y+z))
+
+
+	pal_swap_reset();
+	shader_reset()
+
 }

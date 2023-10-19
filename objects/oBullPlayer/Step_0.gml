@@ -21,8 +21,18 @@ if anim=0
 if oBullGame.ready=1
 meter+=1
 
-frame_set(0,0,0.1)
-frame_set(1,1,0.1) if animFrame>2-0.1 animFrame=0
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,0,0.25)
+frame_set(3,3,0.25)
+
+if animFrame>4-0.1 animFrame=0
+
+z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
+
+if key_jump {
+if ground {ground=0 spdZ=-8}
+}
 
 if key_attack
 {x+=12 x=clamp(x,0,320-32)
@@ -30,7 +40,7 @@ if key_attack
 	//PlaySound(voice1)
 
 }
-if x<64 {animFrame=0 anim=10 win=0
+if x<64 {animFrame=0 anim=10 win=0 z=0 ground=1
 	
 
 	
@@ -40,7 +50,9 @@ if x<64 {animFrame=0 anim=10 win=0
 
 ///SWING
 if anim=10
-{x-=8
+{
+	if oBullGame.stageClear=0
+	x-=8
 if win=0 sprite_index=flatSpr
 	
 breakresult=0

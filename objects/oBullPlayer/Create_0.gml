@@ -49,6 +49,8 @@ breakresult=0
 
 altresult2=0
 
+z=0 spdZ=0
+
 shakefrom=1
 
 superFlashFrame1=0
@@ -61,6 +63,8 @@ PlayerScore=global.P1Score
 character=0
 
 image_speed=0
+
+ground=1
 
 runSpr=spr_viva_planeout
 flatSpr=spr_viva_flat
