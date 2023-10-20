@@ -5,7 +5,7 @@ if stageClear=0
 {
 if time=0
 {
-with oBrickBreakPlayer
+with oHammerPlayer
 if anim!=10 {animFrame=0 anim=10}
 
 }

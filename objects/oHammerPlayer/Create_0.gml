@@ -62,3 +62,14 @@ character=0
 
 image_speed=0
 
+toweramount=64
+maxpoints=10000
+
+strtotal=0
+slotY=0
+
+slotYdraw=0
+
+slotSpd=0
+
+strGo=0

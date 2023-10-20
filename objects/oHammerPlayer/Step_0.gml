@@ -16,7 +16,7 @@ else shake=0
 ///
 if anim=0
 {
-if oBrickBreakGame.ready=1
+if oHammerGame.ready=1
 meter+=meterSpd
 if meterSpd=4
 {if meter>76 meterSpd=-4}
@@ -41,51 +41,42 @@ if anim=10
 frame_set(0,2,0.25)
 frame_set(1,3,0.05)
 frame_set(2,4,0.25) if animFrame=3
-{if win=0
-	{PlaySound(snd_steal) 	PlaySound(voice2) breakresult=0
-		
-		shaketime=10 altresult2Text="NO BONUS" altresult2=0}
-	else
-	{ //snd_viva13
- oBrickBreakGame.resulttext1="BONUS"
-
-if meter=clamp(meter,2+32,78-32) {PlaySound(snd_explosion) brickbreak=3  oControl.quakeFXTime=10
-			altresult2Text="PERFECT" altresult2=10000
-			dust_make(x+40,240+8,0,0,0,0)
-			dust_make(x+40,240+8-16,0,0,0,0)
-			dust_make(x+40,240+8-32,0,0,0,0)
-			dust_make(x+40,240+8,-48,0,0,0)
-			dust_make(x+40,240+8,-64,0,0,0)
-			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
-			}
-	else
-if meter=clamp(meter,2+24,78-24) {PlaySound(snd_hit) brickbreak=2 	oControl.quakeFXTime=5
-			altresult2Text="GOOD" altresult2=5000
-			dust_make(x+40,240+8-32,0,0,0,0)
-			dust_make(x+40,240+8,-48,0,0,0)
-			dust_make(x+40,240+8,-64,0,0,0)
-			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
-			}	
-else
-{PlaySound(snd_steal) brickbreak=1 		 oControl.quakeFXTime=2
-			dust_make(x+40,240+8,-64,0,0,0)
-			with oFlashFX isDepth=0 oFlashFX.depth=depth-1
-			altresult2Text="AVERAGE" altresult2=2500
-			}
-			
+{
+PlaySound(snd_steal) 	PlaySound(voice2) breakresult=0
+shaketime=10 altresult2Text="SCORE" altresult2=0	
 	
+strGo=1
 	
-		
-		}
+strtotal=round(random(maxpoints))
+slotY=0 slotSpd=32
+	
 }
 if win=0
 frame_set(3,6,0.01) else frame_set(3,5,0.01) 
-if animFrame>4 
+if animFrame>3
 {
-	if controlNO=1	oBrickBreakGame.p1Over=1
-		if controlNO=2	oBrickBreakGame.p2Over=1
-			if controlNO=3	oBrickBreakGame.p3Over=1
-				if controlNO=4	oBrickBreakGame.p4Over=1
+if strGo=1
+{
+slotYdraw=lerp(slotYdraw,(slotY/maxpoints)*toweramount*32,1)
+
+oHammerGame.screenY=lerp(oHammerGame.screenY,(slotY/maxpoints)*toweramount*32,1)
+y=lerp(y,ystart+(slotY/maxpoints)*toweramount*32,1)
+	
+slotSpd+=1 slotSpd=clamp(slotSpd,-32,32) slotY+=slotSpd
+if slotY>strtotal {strGo=0 altresult2=slotY slotSpd=1 lerp(slotYdraw,(slotY/maxpoints)*toweramount*32,1)}
+
+
+
+}
+else
+{
+slotSpd-=0.1 slotY+=slotSpd slotY=clamp(slotY,0,99999) slotYdraw=slotY
+
+	if controlNO=1	oHammerGame.p1Over=1
+		if controlNO=2	oHammerGame.p2Over=1
+			if controlNO=3	oHammerGame.p3Over=1
+				if controlNO=4	oHammerGame.p4Over=1
+}
 }
 frame_set(4,7,0.25)
 if win=0 frame_set(5,9,0) else frame_set(5,8,0)

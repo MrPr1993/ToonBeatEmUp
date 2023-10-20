@@ -1,4 +1,5 @@
 // You can write your code in this editor
+oControl.isNotStage=1
 
 p1Over=1
 p2Over=1
@@ -16,9 +17,9 @@ time=9
 
 if global.P1available=1
 {brickgamenum+=1
-p1=instance_create_depth(0,53,-1,oBrickBreakPlayer) with p1
+p1=instance_create_depth(0,214,-1,oHammerPlayer) with p1
 {
-oBrickBreakGame.p1Over=0	
+oHammerGame.p1Over=0	
 canControl=1
 controlNO=1 playerNO=1 character=global.P1Char
 my_pal_sprite=global.p1Pals
@@ -31,9 +32,9 @@ event_user(0)
 }}
 if global.P2available=1
 {brickgamenum+=1
-p2=instance_create_depth(80*instance_number(oBrickBreakPlayer),53,-1,oBrickBreakPlayer) with p2
+p2=instance_create_depth(80*instance_number(oHammerPlayer),214,-1,oHammerPlayer) with p2
 {
-oBrickBreakGame.p2Over=0	sprite_index=spr_hina_brick 
+oHammerGame.p2Over=0	sprite_index=spr_hina_brick 
 canControl=1
 controlNO=2 playerNO=2  character=global.P2Char
 my_pal_sprite=global.p2Pals
@@ -47,9 +48,9 @@ event_user(0)
 }
 if global.P3available=1
 {brickgamenum+=1
-p3=instance_create_depth(80*instance_number(oBrickBreakPlayer),53,-1,oBrickBreakPlayer) with p3
+p3=instance_create_depth(80*instance_number(oHammerPlayer),214,-1,oHammerPlayer) with p3
 {
-oBrickBreakGame.p3Over=0	sprite_index=spr_bahati_brick
+oHammerGame.p3Over=0	sprite_index=spr_bahati_brick
 canControl=1 
 controlNO=3 playerNO=3  character=global.P3Char
 my_pal_sprite=global.p3Pals
@@ -63,9 +64,9 @@ event_user(0)
 }
 if global.P4available=1
 {brickgamenum+=1
-p4=instance_create_depth(80*instance_number(oBrickBreakPlayer),53,-1,oBrickBreakPlayer) with p4
+p4=instance_create_depth(80*instance_number(oHammerPlayer),214,-1,oHammerPlayer) with p4
 {
-oBrickBreakGame.p4Over=0	sprite_index=spr_sofia_brick
+oHammerGame.p4Over=0	sprite_index=spr_sofia_brick
 canControl=1
 controlNO=4 playerNO=4
 my_pal_sprite=global.p4Pals  character=global.P4Char
@@ -78,10 +79,10 @@ event_user(0)
 }
 }
 
-if brickgamenum=1 with oBrickBreakPlayer x+=160-40
-if brickgamenum=2 with oBrickBreakPlayer x+=160-80
-if brickgamenum=3 with oBrickBreakPlayer x+=160-120
-if brickgamenum=4 with oBrickBreakPlayer x+=0
+if brickgamenum=1 with oHammerPlayer x+=160-40
+if brickgamenum=2 with oHammerPlayer x+=160-80
+if brickgamenum=3 with oHammerPlayer x+=160-120
+if brickgamenum=4 with oHammerPlayer x+=0
 
 
 results=0
@@ -137,10 +138,10 @@ altresult2c=0
 altresult2d=0
 }
 
-
+screenY=0
 
 ready=0
 stageIntro=1
 oControl.stagePause=0
 
-with oBrickBreakPlayer canControl=0 alarm[0]=120
+with oHammerPlayer canControl=0 alarm[0]=120
