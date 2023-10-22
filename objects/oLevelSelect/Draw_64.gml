@@ -96,7 +96,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("SINGING MINIGAME"));
 if level=39 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("BULL RUN"));
 if level=40 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("STRENGTH GAME"));
 }
 if level<61
 {
@@ -123,37 +123,104 @@ draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=51 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 1"));
 if level=52 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 2"));
 if level=53 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 3"));
 if level=54 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 4"));
 if level=55 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 5"));
 if level=56 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 6"));
 if level=57 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 7"));
 if level=58 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 8"));
 if level=59 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 9"));
 if level=60 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 10"));
 if level=61 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 11"));
 if level=62 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 12"));
 if level=63 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 13"));
 if level=64 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 14"));
 if level=65 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 15"));
 if level=66 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 16"));
 if level=67 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=68 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=69 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=70 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+}
+if level<71
+{
+if level=71 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 1"));
+if level=72 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 2"));
+if level=73 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 3"));
+if level=74 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 4"));
+if level=75 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 5"));
+if level=76 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 6"));
+if level=77 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 7"));
+if level=78 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 8"));
+if level=79 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 9"));
+if level=80 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 10"));
+if level=81 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 11"));
+if level=82 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 12"));
+if level=83 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 13"));
+if level=84 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 14"));
+if level=85 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 15"));
+if level=86 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 16"));
+if level=87 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 17"));
+if level=88 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 18"));
+if level=89 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 9"));
+if level=90 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 10"));
+if level=91 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 1"));
+if level=92 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 2"));
+if level=93 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 3"));
+if level=94 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=95 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=96 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=97 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=98 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=99 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+if level=100 draw_set_color(c_yellow) else draw_set_color(c_gray)
+draw_text(10, yy++ * 10, string_hash_to_newline("SECRET BOSS"));
 }

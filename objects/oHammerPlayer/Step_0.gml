@@ -22,8 +22,14 @@ if meterSpd=4
 {if meter>76 meterSpd=-4}
 else {if meter<4 meterSpd=4}
 
+if character=0 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+if character=1 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+if character=2 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+if character=3 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+
+
 frame_set(0,0,0.1)
-frame_set(1,1,0.1) if animFrame>2-0.1 animFrame=0
+frame_set(1,0,0.1) if animFrame>2-0.1 animFrame=0
 
 if key_attack
 {animFrame=0 anim=10
@@ -38,9 +44,47 @@ if key_attack
 ///SWING
 if anim=10
 {
-frame_set(0,2,0.25)
-frame_set(1,3,0.05)
-frame_set(2,4,0.25) if animFrame=3
+	
+	if character=0
+	{
+	if image_index=clamp(image_index,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if image_index=clamp(image_index,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	if image_index=clamp(image_index,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,-45+90*image_xscale,weaponcolor)}
+	}
+	if character=1
+	{
+	if image_index=clamp(image_index,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if image_index=clamp(image_index,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	if image_index=clamp(image_index,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,-45+90*image_xscale,weaponcolor)}
+	}
+	if character=2
+	{
+	if image_index=clamp(image_index,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if image_index=clamp(image_index,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	if image_index=clamp(image_index,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,-45+90*image_xscale,weaponcolor)}
+	}
+	if character=3
+	{
+	if image_index=clamp(image_index,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
+	if image_index=clamp(image_index,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
+	if image_index=clamp(image_index,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-12,-75,-45+90*image_xscale,weaponcolor)}
+	}
+
+frame_set(0,1,0.25)
+frame_set(1,0,0.05)
+frame_set(2,2,0.25) if animFrame=3
 {
 PlaySound(snd_steal) 	PlaySound(voice2) breakresult=0
 shaketime=10 altresult2Text="SCORE" altresult2=0	
@@ -52,7 +96,7 @@ slotY=0 slotSpd=32
 	
 }
 if win=0
-frame_set(3,6,0.01) else frame_set(3,5,0.01) 
+frame_set(3,2,0.01) else frame_set(3,2,0.01) 
 if animFrame>3
 {
 if strGo=1

@@ -5,6 +5,7 @@ playNO=1
 colorshade_setup()
 
 isNotStage=0
+isMulti=0
 
 recordAng=0
 recordAng2=0

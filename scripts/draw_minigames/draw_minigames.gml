@@ -42,6 +42,7 @@ if global.MinigameSetSel=0
 {
 
 
+
 }
 
 if global.MinigameSetSel=1

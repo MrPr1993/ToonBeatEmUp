@@ -15,9 +15,11 @@ draw_sprite(spr_hammergame,4,x+40,y-32-32*i)
 
 draw_sprite(spr_hammergame,1,x+40,y-32-slotYdraw)
 
+draw_sprite_ext(weaponspr,weaponIndex,round(16+x+( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
+
 pal_swap_set(my_pal_sprite,current_pal,false);
 
-draw_sprite(sprite_index,image_index,x+shake+24,y)
+draw_sprite(sprite_index,image_index,x+shake+16,y)
 
 	pal_swap_reset();
 	shader_reset()

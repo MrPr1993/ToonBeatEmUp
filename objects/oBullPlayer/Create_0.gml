@@ -66,5 +66,14 @@ image_speed=0
 
 ground=1
 
+standSpr=spr_viva_stand
+wildtakeSpr=spr_viva_wildtake
 runSpr=spr_viva_planeout
 flatSpr=spr_viva_flat
+jumpSpr=spr_viva_jump1 jumpInd=0
+hangSpr=spr_viva_hang
+ThrownSpr=spr_viva_hit
+
+runpos=0
+
+anim=5

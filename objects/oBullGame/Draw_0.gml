@@ -1,6 +1,12 @@
+draw_sprite(spr_bullgate,1,-rundist,0)
+
+draw_sprite_ext(spr_bullgate,3,320+16+oBullGame.runmax-oBullGame.runmax*(rundist/oBullGame.runmax),0,-1,1,0,c_white,1)
+
 
 if ready=1
 draw_sprite(spr_carshadow,0,bullx,178)
+
+draw_sprite(spr_bullfence,0,obstacleX,200)
 
 if instance_exists(oBullPlayer) with oBullPlayer draw_sprite(spr_shadow,0,round(x),y)
 
@@ -19,22 +25,51 @@ draw_text(160,32,"  JUMP\nFOR AVOIDING\nOBSTACLES")
 }
 else
 {
-
 if stageClear=0
 bullx=lerp(bullx,0,0.1)
-draw_sprite(spr_bigbullrun,current_time/100,round(bullx),178)
+
+if bullx>-32
+if brokengate=0
+{
+brokengate=1
+
+dor1=instance_create_depth(30-rundist,180,0,oBarrel) with dor1  //87
+{sprite_index=spr_bullgate2 image_index=1 z-=62
+image_xscale=1 solid=false hit=1 ground=0 zSpeed=-8 hspeed=2 mask_index=mask_none
+sentflying=2 image_index=0 alarm[0]=2 shadow=mask_none}
+
+dor2=instance_create_depth(60-rundist,150,0,oBarrel) with dor2
+{sprite_index=spr_bullgate2 z-=32
+image_xscale=1 solid=false hit=1 ground=0 zSpeed=-16 hspeed=3 mask_index=mask_none
+sentflying=4 image_index=0 alarm[0]=2 shadow=mask_none}
 }
 
+draw_sprite(spr_bigbullrun,current_time/100,round(bullx),178)
+
+draw_sprite(spr_bullbar,0,26,224)
+}
+
+draw_sprite(spr_bullgate,0,-rundist,0)
+
+if brokengate=0
+draw_sprite(spr_bullgate,2,-rundist,0)
+
+draw_sprite(spr_bullbar,0,26,224)
 
 if instance_exists(oBullPlayer)
 with oBullPlayer
 {
 	pal_swap_set(my_pal_sprite,current_pal,false);
 
-draw_sprite(sprite_index,image_index,round(x+shake),round(y+z))
+draw_sprite_ext(sprite_index,image_index,round(x+shake),round(y+z),image_xscale,1,0,c_white,1)
 
+draw_sprite(spr_bullarrow,character,26+264*(runpos/oBullGame.runmax),224)
 
 	pal_swap_reset();
 	shader_reset()
 
 }
+
+draw_sprite(spr_bullhang,0,oBullGame.runmax-96,y)
+
+if oControl.betatest=1 {draw_text(32,32,rundist)}
