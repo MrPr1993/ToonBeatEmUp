@@ -9,6 +9,8 @@ global.UnlockAltPal2=ini_read_real("SHOP", "2", 0);
 global.UnlockAltPal3=ini_read_real("SHOP", "3", 0);
 global.UnlockSoundTest=ini_read_real("SHOP","4",0)
 global.UnlockMovies=ini_read_real("SHOP","5",0)
+global.FishingUnlock=ini_read_real("SHOP","6",0)
+
 
 ///Cheats
 

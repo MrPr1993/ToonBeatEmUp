@@ -2781,6 +2781,7 @@
     {"id":{"name":"spr_sofia_idle","path":"sprites/spr_sofia_idle/spr_sofia_idle.yy",},},
     {"id":{"name":"spr_sofia_item","path":"sprites/spr_sofia_item/spr_sofia_item.yy",},},
     {"id":{"name":"spr_sofia_itemthrow","path":"sprites/spr_sofia_itemthrow/spr_sofia_itemthrow.yy",},},
+    {"id":{"name":"snd_bull","path":"sounds/snd_bull/snd_bull.yy",},},
     {"id":{"name":"spr_sofia_jump1","path":"sprites/spr_sofia_jump1/spr_sofia_jump1.yy",},},
     {"id":{"name":"spr_sofia_knife","path":"sprites/spr_sofia_knife/spr_sofia_knife.yy",},},
     {"id":{"name":"spr_monk_attack","path":"sprites/spr_monk_attack/spr_monk_attack.yy",},},

@@ -92,6 +92,8 @@ minigameselstage=0
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 	
+global.FishingUnlock=0;
+	
 global.CheatPenalty=0;
 global.Cheat[16]=0;
 global.CheatUnlock[16]=0;

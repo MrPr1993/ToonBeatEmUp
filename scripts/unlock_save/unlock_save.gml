@@ -10,6 +10,7 @@ ini_write_real("SHOP", "3", global.UnlockAltPal3)
 
 ini_write_real("SHOP", "4", global.UnlockSoundTest)
 ini_write_real("SHOP", "5", global.UnlockMovies)
+ini_write_real("SHOP", "6", global.FishingUnlock)
 
 
 ini_write_real("SHOPC", "1", global.Cheat[1])

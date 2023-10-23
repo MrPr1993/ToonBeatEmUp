@@ -33,6 +33,8 @@ if brokengate=0
 {
 brokengate=1
 
+PlaySound(snd_explosion)
+
 dor1=instance_create_depth(30-rundist,180,0,oBarrel) with dor1  //87
 {sprite_index=spr_bullgate2 image_index=1 z-=62
 image_xscale=1 solid=false hit=1 ground=0 zSpeed=-8 hspeed=2 mask_index=mask_none

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-bulltime+=1 if bulltime=60 {oControl.quakeFXTime=120}
+bulltime+=1 if bulltime=60 {oControl.quakeFXTime=120 PlaySound(snd_bull)}
 
 if (p1Over=1 and p2Over=1 and p3Over=1 and p4Over=1)
 if stageClear=0
@@ -37,6 +37,8 @@ layer_x("BGfloor",-rundist)
 rundist+=8
 
 obstacleX-=8 if obstacleX<32 {obstacleX=640+choose(0,120,240)
+	
+PlaySound(snd_break2)
 	
 dor1=instance_create_depth(32,201,0,oBarrel) with dor1  //87
 {sprite_index=spr_bullfence image_index=1 z=-2

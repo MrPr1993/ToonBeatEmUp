@@ -2567,6 +2567,7 @@
     {"name":"spr_sofia_idle","order":32,"path":"sprites/spr_sofia_idle/spr_sofia_idle.yy",},
     {"name":"spr_sofia_item","order":33,"path":"sprites/spr_sofia_item/spr_sofia_item.yy",},
     {"name":"spr_sofia_itemthrow","order":34,"path":"sprites/spr_sofia_itemthrow/spr_sofia_itemthrow.yy",},
+    {"name":"snd_bull","order":21,"path":"sounds/snd_bull/snd_bull.yy",},
     {"name":"spr_sofia_jump1","order":35,"path":"sprites/spr_sofia_jump1/spr_sofia_jump1.yy",},
     {"name":"spr_sofia_knife","order":36,"path":"sprites/spr_sofia_knife/spr_sofia_knife.yy",},
     {"name":"spr_monk_attack","order":8,"path":"sprites/spr_monk_attack/spr_monk_attack.yy",},

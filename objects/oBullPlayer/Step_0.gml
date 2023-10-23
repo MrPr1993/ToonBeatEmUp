@@ -53,7 +53,7 @@ if x<64 {animFrame=0 anim=10 win=0 z=0 ground=1}
 
 ///hurt
 if anim=1
-{z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
+{image_index=0 z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
 sprite_index=ThrownSpr
 animFrame+=0.1 shaketime=2
 if animFrame>3 {animFrame=0 anim=0}
@@ -67,7 +67,7 @@ if win=1 if anim!=10 {animFrame=0 anim=10}
 if anim=5
 {
 if animFrame=0 sprite_index=standSpr
-frame_set(0,0,0.05) if animFrame=1 {sprite_index=wildtakeSpr image_xscale=-1}
+frame_set(0,0,0.02) if animFrame=1 {sprite_index=wildtakeSpr image_xscale=-1}
 frame_set(1,0,0.1)
 }
 
