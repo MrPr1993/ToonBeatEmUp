@@ -179,16 +179,24 @@ fpsY=-999
 
 if gallerychoosing=0
 {
-	draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16,16,1,1,0,c_grey,1)
-draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64,16,1,1,0,c_grey,1)
-draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64*2,16,1,1,0,c_grey,1)
-draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64*3,16,1,1,0,c_grey,1)
-draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16,16+96,1,1,0,c_grey,1)
-draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64,16+96,1,1,0,c_grey,1)
-draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64*2,16+96,1,1,0,c_grey,1)
-draw_sprite_ext(spr_galleryicon,0,galleryHover+16+16+64*3,16+96,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,1*global.Gallery[1],galleryHover+16+16,16,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,2*global.Gallery[2],galleryHover+16+16+64,16,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,3*global.Gallery[3],galleryHover+16+16+64*2,16,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,4*global.Gallery[4],galleryHover+16+16+64*3,16,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,5*global.Gallery[5],galleryHover+16+16,16+48,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,6*global.Gallery[6],galleryHover+16+16+64,16+48,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,7*global.Gallery[7],galleryHover+16+16+64*2,16+48,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,8*global.Gallery[8],galleryHover+16+16+64*3,16+48,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,9*global.Gallery[9],galleryHover+16+16,16+96,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,10*global.Gallery[10],galleryHover+16+16+64,16+96,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,11*global.Gallery[11],galleryHover+16+16+64*2,16+96,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,12*global.Gallery[12],galleryHover+16+16+64*3,16+96,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,13*global.Gallery[13],galleryHover+16+16,16+96+48,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,14*global.Gallery[14],galleryHover+16+16+64,16+96+48,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,15*global.Gallery[15],galleryHover+16+16+64*2,16+96+48,1,1,0,c_grey,1)
+draw_sprite_ext(spr_galleryicon,16*global.Gallery[16],galleryHover+16+16+64*3,16+96+48,1,1,0,c_grey,1)
 
-draw_sprite_ext(spr_galleryicon,0,16+16+64*galleryX,16+96*galleryY,1,1,0,c_white,1)	
+draw_sprite_ext(spr_galleryicon,0,16+16+64*galleryX,16+48*galleryY,1,1,0,c_white,1)	
 }
 if gallerychoosing=1
 {

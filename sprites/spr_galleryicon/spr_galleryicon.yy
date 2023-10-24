@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_galleryicon",
-  "bbox_bottom": 94,
+  "bbox_bottom": 46,
   "bbox_left": 1,
   "bbox_right": 62,
   "bbox_top": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 96,
+  "height": 48,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"de905ff9-4985-4658-96bd-f3ebf5ec6a1d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},

@@ -5,6 +5,8 @@ hp=clamp(hp,0,maxhp)
 
 super=clamp(super,0,18)
 
+var minimodediv=1; if global.Cheat[5]=1 minimodediv=0.25;
+
 //if showp1=1
 //draw_sprite(spr_p1,playerNO-1,round(x),round(y+z-98))
 
@@ -22,7 +24,7 @@ shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),0.5)
 //else
 
 
-draw_sprite_ext(weaponspr,weaponIndex,round(x+( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
+draw_sprite_ext(weaponspr,weaponIndex,round(x+(( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX))*minimodediv),round(y+trainz+((floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY)*minimodediv),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
 
 
 pal_swap_reset();
@@ -44,7 +46,7 @@ shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),0.5)
 }//shader_set(shd_white_sprite);
 //else
 
-draw_sprite_ext(weaponspr,weaponIndex,round(x+( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX)),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
+draw_sprite_ext(weaponspr,weaponIndex,round(x+(( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX))*minimodediv),round(y+trainz+((floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY)*minimodediv),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
 
 
 pal_swap_reset();

@@ -10,4 +10,29 @@ global.UnlockCharacterData=0
 
 global.UnlockSoundTest=0
 global.UnlockMovies=0
+
+global.FishingUnlock=0;
+global.SlotMachineUnlock=0;	
+global.MiniGameUnlock1=0;
+global.MiniGameUnlock2=0;
+global.MiniGameUnlock3=0;
+global.MiniGameUnlock4=0;
+global.MiniGameUnlock5=0;
+global.MiniGameUnlock6=0;
+global.SurvivalUnlock=0;
+global.BossBattleUnlock=0;
+
+global.CheatPenalty=0;
+var reseter=0;
+repeat(17)
+{
+global.UnlockStageA[reseter]=0
+global.Cheat[reseter]=0;
+global.CheatUnlock[reseter]=0;
+global.Gallery[reseter]=0;
+global.GalleryUnlock[reseter]=0;
+reseter+=1;
+}
+
+
 }

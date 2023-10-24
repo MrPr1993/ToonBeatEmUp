@@ -47,25 +47,19 @@ canControl=0
 
 if key_right_pressed
 {PlaySound(snd_select)
-if galleryNO=8 galleryNO=1 else 
+if galleryNO=16 galleryNO=1 else 
 galleryNO+=1
 }
 if -key_left_pressed
 {PlaySound(snd_select)
-if galleryNO=1 galleryNO=8 else 
+if galleryNO=1 galleryNO=16 else 
 galleryNO-=1
 }
-if -key_down_pressed or key_up_pressed
-{PlaySound(snd_select)
-if galleryNO=1 galleryNO=5 else
-if galleryNO=2 galleryNO=6 else 
-if galleryNO=3 galleryNO=7 else 
-if galleryNO=4 galleryNO=8 else 
-if galleryNO=5 galleryNO=1 else
-if galleryNO=6 galleryNO=2 else 
-if galleryNO=7 galleryNO=3 else 
-if galleryNO=8 galleryNO=4 
-}
+if -key_down_pressed
+{PlaySound(snd_select) galleryNO+=4 galleryNO=clamp(galleryNO,1,16)}
+
+if key_up_pressed
+{PlaySound(snd_select) galleryNO-=4 galleryNO=clamp(galleryNO,1,16)}
 
 if galleryNO=1 {galleryX=0 galleryY=0 }
 if galleryNO=2 {galleryX=1 galleryY=0 }
@@ -75,6 +69,14 @@ if galleryNO=5 {galleryX=0 galleryY=1 }
 if galleryNO=6 {galleryX=1 galleryY=1}
 if galleryNO=7 {galleryX=2 galleryY=1}
 if galleryNO=8 {galleryX=3 galleryY=1}
+if galleryNO=9 {galleryX=0 galleryY=2 }
+if galleryNO=10 {galleryX=1 galleryY=2 }
+if galleryNO=11 {galleryX=2 galleryY=2 }
+if galleryNO=12 {galleryX=3 galleryY=2 }
+if galleryNO=13 {galleryX=0 galleryY=3 }
+if galleryNO=14 {galleryX=1 galleryY=3}
+if galleryNO=15 {galleryX=2 galleryY=3}
+if galleryNO=16 {galleryX=3 galleryY=3}
 
 //display_set_gui_size(1280,960)
 

@@ -9,10 +9,10 @@ draw_set_color(c_white)
 if instance_exists(oPlayer)
 {
 with oPlayer
-{
+{var minimodediv=1; if global.Cheat[5]=1 minimodediv=0.25;
 oFishingMinigame.weaponAngle=weaponangle+weaponExtraAngle*image_xscale
-oFishingMinigame.weaponX=round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX))
-oFishingMinigame.weaponY=round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY)
+oFishingMinigame.weaponX=round(x+(((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX))*minimodediv)
+oFishingMinigame.weaponY=round(y+trainz+((floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY)*minimodediv)
 }
 
 

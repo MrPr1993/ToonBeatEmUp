@@ -120,9 +120,9 @@ if commandType=10
 matrix_set(matrix_world,matrix_build(0,oControl.quakeFX,0,0,0,0,1,1,1))
 ///Slot Machine
 draw_set_halign(fa_left)
-var atext=commandL[17]; var btext=commandL[18];
+var atext=oControl.commandL[17]; var btext=oControl.commandL[18];
 
-if slotmachineplay=3 {atext=commandL[19]; btext=commandL[19];
+if slotmachineplay=3 {atext=oControl.commandL[19]; btext=oControl.commandL[19];
 	draw_buttontext(16,240-24-4,8,"",spr_commandbutton,0,"J",atext)
 	}
 else
@@ -270,9 +270,9 @@ if commandType=10
 matrix_set(matrix_world,matrix_build(0,oControl.quakeFX,0,0,0,0,1,1,1))
 ///Slot Machine
 draw_set_halign(fa_left)
-var atext=commandL[17]; var btext=commandL[18];
+var atext=oControl.commandL[17]; var btext=oControl.commandL[18];
 
-if slotmachineplay=3 {atext=commandL[19]; btext=commandL[19];
+if slotmachineplay=3 {atext=oControl.commandL[19]; btext=oControl.commandL[19];
 	draw_buttontext(16,240-24-4,8,"",spr_commandbutton,4+6*commandMul,"",atext)
 	}
 else

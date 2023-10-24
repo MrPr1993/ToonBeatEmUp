@@ -320,6 +320,7 @@ if continueStageScore>global.LevelHiScore[stagecheck]
 global.UnlockStage[stagecheck]=1
 stagedata_save()
 enemydata_save()
+unlock_save()
 
 if brickgamenum=1 with oPlayerDisembodied x+=160-40
 if brickgamenum=2 with oPlayerDisembodied x+=160-80

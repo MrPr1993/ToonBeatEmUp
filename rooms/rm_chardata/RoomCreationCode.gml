@@ -1,1 +1,1 @@
-musicplaystart(msc_gallery)
+musicplaystart(msc_profile)

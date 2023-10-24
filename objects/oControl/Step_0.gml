@@ -100,6 +100,12 @@ exit;
 
 if betatest=1
 {
+///Cheat
+if keyboard_check(vk_control) and keyboard_check(vk_shift) and keyboard_check_pressed(ord("C"))
+{
+var cheattext=get_string("Cheat",0)
+global.Cheat[cheattext]^=1;
+}
 /////Change info
 if keyboard_check_pressed(vk_tab)
 if !keyboard_check(vk_shift)

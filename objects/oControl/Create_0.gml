@@ -93,13 +93,32 @@ if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 	
 global.FishingUnlock=0;
-	
-global.CheatPenalty=0;
-global.Cheat[16]=0;
-global.CheatUnlock[16]=0;
+global.SlotMachineUnlock=0;	
+global.MiniGameUnlock1=0;
+global.MiniGameUnlock2=0;
+global.MiniGameUnlock3=0;
+global.MiniGameUnlock4=0;
+global.MiniGameUnlock5=0;
+global.MiniGameUnlock6=0;
+global.SurvivalUnlock=0;
+global.BossBattleUnlock=0;
 
-global.Gallery[16]=0;
-global.GalleryUnlock[16]=0;
+
+
+global.CheatPenalty=0;
+global.Cheat[20]=0;
+
+
+global.CheatUnlock[20]=0;
+var hahaha=0;
+repeat(17)
+{
+global.CheatUnlock[hahaha]=1;
+hahaha+=1;
+}
+
+global.Gallery[20]=0;
+global.GalleryUnlock[20]=0;
 	
 global.IsMovie=0
 global.MovieSel=0
@@ -165,6 +184,10 @@ global.UnlockStageA[13]=0
 global.UnlockStageA[14]=0
 global.UnlockStageA[15]=0
 global.UnlockStageA[16]=0
+global.UnlockStageA[17]=0
+global.UnlockStageA[18]=0
+global.UnlockStageA[19]=0
+global.UnlockStageA[20]=0
 
 global.UnlockStageB[1]=1
 global.UnlockStageB[2]=1
