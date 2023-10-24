@@ -3,6 +3,8 @@
 function unlock_save(){
 ini_open("GAMEDATA/hiscore.ini");
 
+ini_write_real("SHOPCG", "0", global.ClearGame)
+
 ini_write_real("SHOP", "0", global.UnlockCharacterData)
 ini_write_real("SHOP", "1", global.UnlockAltPal)
 ini_write_real("SHOP", "2", global.UnlockAltPal2)

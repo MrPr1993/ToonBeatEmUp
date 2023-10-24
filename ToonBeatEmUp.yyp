@@ -1190,6 +1190,7 @@
     {"id":{"name":"snd_harpy4","path":"sounds/snd_harpy4/snd_harpy4.yy",},},
     {"id":{"name":"snd_harpy5","path":"sounds/snd_harpy5/snd_harpy5.yy",},},
     {"id":{"name":"spr_danger4","path":"sprites/spr_danger4/spr_danger4.yy",},},
+    {"id":{"name":"spr_multisetting","path":"sprites/spr_multisetting/spr_multisetting.yy",},},
     {"id":{"name":"snd_harpy6","path":"sounds/snd_harpy6/snd_harpy6.yy",},},
     {"id":{"name":"snd_harpy7","path":"sounds/snd_harpy7/snd_harpy7.yy",},},
     {"id":{"name":"snd_harpy8","path":"sounds/snd_harpy8/snd_harpy8.yy",},},

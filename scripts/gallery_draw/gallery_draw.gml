@@ -26,22 +26,7 @@ draw_set_halign(fa_left)
 	///display_set_gui_size(320,240)
 
 	
-	if canControl=1{
-if key_attack or keyboard_check_pressed(vk_enter)
-{
-PlaySound(snd_picked)
-gallerychoosing=1
-gallerybuffer=10
-draw_set_font(global.scorefont) draw_set_color(c_white)
-draw_set_halign(fa_center)
-draw_text(160,240-12,galleryname) 
-pictureNO=1
-pictureMax=4
-galleryload=2 galleryTime=2
-gallerybuffer=10
-canControl=0
-}
-}
+
 
 
 
@@ -61,22 +46,43 @@ if -key_down_pressed
 if key_up_pressed
 {PlaySound(snd_select) galleryNO-=4 galleryNO=clamp(galleryNO,1,16)}
 
-if galleryNO=1 {galleryX=0 galleryY=0 }
-if galleryNO=2 {galleryX=1 galleryY=0 }
-if galleryNO=3 {galleryX=2 galleryY=0 }
-if galleryNO=4 {galleryX=3 galleryY=0 }
-if galleryNO=5 {galleryX=0 galleryY=1 }
-if galleryNO=6 {galleryX=1 galleryY=1}
-if galleryNO=7 {galleryX=2 galleryY=1}
-if galleryNO=8 {galleryX=3 galleryY=1}
-if galleryNO=9 {galleryX=0 galleryY=2 }
-if galleryNO=10 {galleryX=1 galleryY=2 }
-if galleryNO=11 {galleryX=2 galleryY=2 }
-if galleryNO=12 {galleryX=3 galleryY=2 }
-if galleryNO=13 {galleryX=0 galleryY=3 }
-if galleryNO=14 {galleryX=1 galleryY=3}
-if galleryNO=15 {galleryX=2 galleryY=3}
-if galleryNO=16 {galleryX=3 galleryY=3}
+if galleryNO=1 {galleryX=0 galleryY=0 galleryname="VIVA VEGAS"}
+if galleryNO=2 {galleryX=1 galleryY=0 galleryname="HINA TATSUO"}
+if galleryNO=3 {galleryX=2 galleryY=0 galleryname="BAHATI ABARA"}
+if galleryNO=4 {galleryX=3 galleryY=0 galleryname="SOFIA MORENO"}
+if galleryNO=5 {galleryX=0 galleryY=1 galleryname="ENEMY SET 1"}
+if galleryNO=6 {galleryX=1 galleryY=1 galleryname="ENEMY SET 2"}
+if galleryNO=7 {galleryX=2 galleryY=1 galleryname="ENEMY SET 3"}
+if galleryNO=8 {galleryX=3 galleryY=1 galleryname="ENEMY SET 4"}
+if galleryNO=9 {galleryX=0 galleryY=2 galleryname="BOSS SET 1"}
+if galleryNO=10 {galleryX=1 galleryY=2 galleryname="BOSS SET 2"}
+if galleryNO=11 {galleryX=2 galleryY=2  galleryname="BOSS SET 3"}
+if galleryNO=12 {galleryX=3 galleryY=2  galleryname="BOSS SET 4"}
+if galleryNO=13 {galleryX=0 galleryY=3  galleryname="MISC. CHARACTERS"}
+if galleryNO=14 {galleryX=1 galleryY=3  galleryname="CONCEPT ART"}
+if galleryNO=15 {galleryX=2 galleryY=3  galleryname="KEY ART"}
+if galleryNO=16 {galleryX=3 galleryY=3  galleryname="GUEST ART"}
+if global.Gallery[galleryNO]=0 galleryname="???"
+
+	if canControl=1{
+if key_attack or keyboard_check_pressed(vk_enter)
+{
+if galleryname="???" PlaySound(snd_steal) else
+{
+PlaySound(snd_picked)
+gallerychoosing=1
+gallerybuffer=10
+draw_set_font(global.scorefont) draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_text(160,240-12,galleryname) 
+pictureNO=1
+pictureMax=4
+galleryload=2 galleryTime=2
+gallerybuffer=10
+canControl=0
+}
+}
+}
 
 //display_set_gui_size(1280,960)
 

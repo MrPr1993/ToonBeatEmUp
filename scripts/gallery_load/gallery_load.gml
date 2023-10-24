@@ -15,4 +15,78 @@ if galno=2
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 }
+if galno=3
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=4
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=5
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=6
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=7
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=8
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=9
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=10
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=11
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=12
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=13
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=14
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=15
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+if galno=16
+{
+//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
+sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+}
+
+
+
+
 }

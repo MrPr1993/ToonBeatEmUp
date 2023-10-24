@@ -3,7 +3,7 @@
 function draw_minigames(){
 
 if room=rm_minigames
-{//global.MinigameSel=0
+{//global.MinigameSel3=0
 if key_jump room_goto(rm_menu)
 draw_set_font(global.scorefont)	
 
@@ -15,7 +15,7 @@ d3d_transform_set_translation(320+MenuMoveX,0,0)
 
 
 if -key_left_pressed {if global.MinigameSetSel=0 global.MinigameSetSel=2 else global.MinigameSetSel-=1 PlaySound(snd_select)}
-if key_right_pressed {if global.MinigameSetSel=2 global.MinigameSel=0 else global.MinigameSetSel+=1 PlaySound(snd_select)}
+if key_right_pressed {if global.MinigameSetSel=2 global.MinigameSel3=0 else global.MinigameSetSel+=1 PlaySound(snd_select)}
 
 
 MenuText="???"
@@ -29,39 +29,50 @@ MenuText="???"
 
 if key_up_pressed {PlaySound(snd_select)
 if global.MinigameSetSel=2
-{if global.MinigameSel=0 global.MinigameSel=5 else global.MinigameSel-=1}
+{if global.MinigameSel3=0 global.MinigameSel3=5 else global.MinigameSel3-=1}
 
 	}
 if -key_down_pressed {PlaySound(snd_select)
 if global.MinigameSetSel=2
-{if global.MinigameSel=5 global.MinigameSel=0 else global.MinigameSel+=1}
+{if global.MinigameSel3=5 global.MinigameSel3=0 else global.MinigameSel3+=1}
 	}
 
 
 if global.MinigameSetSel=0
 {
+global.MultiVS=0
 
-
-
+global.MultiVS=1
+if global.MinigameSel=0 {MenuText="SURVIVE THE BAD GUYS' ONSLAUGHT!" //if global.MiniGameUnlock1=0 MenuText="LOCKED"
+global.StageGoing=rm_cargame}
+if global.MinigameSel=1 {MenuText="CAN YOU DEFEAT EVERYONE? CAN YOU?" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+global.StageGoing=rm_brickbreak}
 }
 
 if global.MinigameSetSel=1
 {
+global.MultiVS=1
+if global.MinigameSel2=0 {MenuText="A GOOD OLD FASHIONED BRAWLER VS!" //if global.MiniGameUnlock1=0 MenuText="LOCKED"
+global.StageGoing=rm_cargame}
+if global.MinigameSel2=1 {MenuText="THE ONE HOLDING THE BALL BEFORE TIME RUNS OUT WINS!" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+global.StageGoing=rm_brickbreak}
+if global.MinigameSel2=2 {MenuText="GRAB THE STARS AND BE THE ONE WITH THE BIGGEST COUNT!" //if global.MiniGameUnlock3=0 MenuText="LOCKED"
+global.StageGoing=rm_eatinggame}
 }
 
 if global.MinigameSetSel=2
-{
-if global.MinigameSel=0 {MenuText="WRECK THAT CAR TO BITS!"
+{global.MultiVS=2
+if global.MinigameSel3=0 {MenuText="WRECK THAT CAR TO BITS!" if global.MiniGameUnlock1=0 MenuText="LOCKED"
 global.StageGoing=rm_cargame}
-if global.MinigameSel=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION!"
+if global.MinigameSel3=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION!" if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_brickbreak}
-if global.MinigameSel=2 {MenuText="EAT A MEAL IN THIS EATING COMPETITION!"
+if global.MinigameSel3=2 {MenuText="EAT A MEAL IN THIS EATING COMPETITION!" if global.MiniGameUnlock3=0 MenuText="LOCKED"
 global.StageGoing=rm_eatinggame}
-if global.MinigameSel=3 {MenuText="SING TO SHATTER THE COMPETITION!"
+if global.MinigameSel3=3 {MenuText="SING TO SHATTER THE COMPETITION!" if global.MiniGameUnlock4=0 MenuText="LOCKED"
 global.StageGoing=rm_singgame}
-if global.MinigameSel=4 {MenuText="RUN FROM THE BIG BAD BULL!"
+if global.MinigameSel3=4 {MenuText="RUN FROM THE BIG BAD BULL!" if global.MiniGameUnlock5=0 MenuText="LOCKED"
 global.StageGoing=rm_bullstage}
-if global.MinigameSel=5 {MenuText="RING THE BELL WITH A SLAM OF THE HAMMER!"
+if global.MinigameSel3=5 {MenuText="RING THE BELL WITH A SLAM OF THE HAMMER!" if global.MiniGameUnlock6=0 MenuText="LOCKED"
 global.StageGoing=rm_hammergame}
 }	
 
@@ -83,10 +94,10 @@ draw_text(round(160),240-10-4-32,MenuText)
 draw_text(160,8,"SELECT A MINIGAME")
 fpsY=8
 
-if global.MinigameSel<3
-draw_sprite(spr_miniposter,global.MinigameSel,28+(72+24)*(global.MinigameSel),24)
+if global.MinigameSel3<3
+draw_sprite(spr_miniposter,global.MinigameSel3,28+(72+24)*(global.MinigameSel3),24)
 else
-draw_sprite(spr_miniposter,global.MinigameSel,28+(72+24)*(global.MinigameSel-3),104)
+draw_sprite(spr_miniposter,global.MinigameSel3,28+(72+24)*(global.MinigameSel3-3),104)
 
 if canControl=1
 {if MenuMoveX>-320 MenuMoveX-=64 else MenuMoveX=-320}
@@ -95,7 +106,7 @@ else
 draw_command(1)
 if key_attack
 {
-if MenuText="???"
+if MenuText="???" or MenuText="LOCKED"
 {
 PlaySound(snd_steal)
 }

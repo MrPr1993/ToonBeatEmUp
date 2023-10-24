@@ -3,6 +3,8 @@
 function unlock_load(){
 ini_open("GAMEDATA/hiscore.ini");
 
+global.ClearGame=ini_read_real("SHOPCG", "0", 0);
+
 global.UnlockCharacterData=ini_read_real("SHOP", "0", 0);
 global.UnlockAltPal=ini_read_real("SHOP", "1", 0);
 global.UnlockAltPal2=ini_read_real("SHOP", "2", 0);

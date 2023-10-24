@@ -1018,6 +1018,7 @@
     {"name":"snd_harpy4","order":7,"path":"sounds/snd_harpy4/snd_harpy4.yy",},
     {"name":"snd_harpy5","order":8,"path":"sounds/snd_harpy5/snd_harpy5.yy",},
     {"name":"spr_danger4","order":9,"path":"sprites/spr_danger4/spr_danger4.yy",},
+    {"name":"spr_multisetting","order":12,"path":"sprites/spr_multisetting/spr_multisetting.yy",},
     {"name":"snd_harpy6","order":9,"path":"sounds/snd_harpy6/snd_harpy6.yy",},
     {"name":"snd_harpy7","order":10,"path":"sounds/snd_harpy7/snd_harpy7.yy",},
     {"name":"snd_harpy8","order":11,"path":"sounds/snd_harpy8/snd_harpy8.yy",},

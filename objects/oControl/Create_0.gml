@@ -89,6 +89,9 @@ stagename=""
 
 minigameselstage=0
 
+multiVSsetting=0;
+charselectgo=1;
+
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 	
@@ -147,9 +150,12 @@ global.LevelSelectSave=0
 
 global.multiMode=1
 
+global.MultiVS=0;
+global.MultiStage=0
+global.MultiTime=99
+
+
 global.HiScoreSee=0
-
-
 
 global.TrainingRoom=0
 
@@ -240,6 +246,8 @@ global.StageSelX=0
 global.StageSelY=0
 	
 global.SetIntro=0
+
+global.ClearGame=0
 	
 global.CurrentMusic=-1
 global.MenuSkip=0

@@ -8,6 +8,7 @@ global.UnlockStageA[2]=1
 if global.UnlockAltPal=1 global.UnlockStageA[3]=1
 if global.UnlockAltPal2 global.UnlockStageA[4]=1
 
+
 	
 ///For testing
 if x=-9999999999999999

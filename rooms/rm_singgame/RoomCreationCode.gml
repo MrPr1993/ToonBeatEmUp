@@ -1,0 +1,1 @@
+global.UnlockStageA[12]=1

@@ -10,3 +10,5 @@ areaEntry=0
 }
 oControl.showMap=0
 oControl.stagePause=1
+
+global.UnlockStageA[9]=1

@@ -73,9 +73,6 @@ if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 
 oCharacterSelectPlayer.charadded=0
 oCharacterSelectPlayer.charaddedbuffer=0
-	
-if -key_left_pressed {if global.Difficulty=0 global.Difficulty=4 else global.Difficulty-=1 PlaySound(snd_select)}
-if key_right_pressed {if global.Difficulty=4 global.Difficulty=0 else global.Difficulty+=1 PlaySound(snd_select)}
 
 if introprep=0
 {
@@ -91,6 +88,18 @@ introprep=1 introtextadd+=640
 	{sprite_index=spr_block image_xscale=-9999 image_yscale=8888 hspeed=-32
 	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0 haspal=0
 	}
+
+if global.MultiVS=0
+{
+if -key_left_pressed {if global.Difficulty=0 global.Difficulty=4 else global.Difficulty-=1 PlaySound(snd_select)}
+if key_right_pressed {if global.Difficulty=4 global.Difficulty=0 else global.Difficulty+=1 PlaySound(snd_select)}
+
+
+}
+}
+else
+{
+
 }
 
 if key_cancel 
@@ -100,8 +109,14 @@ if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 }
 
 
-if global.TrainingRoom or 
-key_A or key_attack {if key_A or key_attack PlaySound(snd_picked) difficultymode=0
+if global.TrainingRoom=1 or global.MultiVS=2 or
+key_A or key_attack {if key_A or key_attack 
+	if oControl.charselectgo=1
+	PlaySound(snd_picked) else PlaySound(snd_steal)
+	
+if oControl.charselectgo=1
+{
+	difficultymode=0
 		oCharacterSelectPlayer.hspeed=-32
 	
 introtextaddspd=-32
@@ -109,7 +124,7 @@ introtextaddspd=-32
 layer_hspeed("BGbricks",-32)
 	alarm[0]=20
 
-
+}
 }
 
 }
