@@ -107,6 +107,7 @@ global.SurvivalUnlock=0;
 global.BossBattleUnlock=0;
 
 global.SkipDifficulty=0;
+global.P1Only=0;
 
 global.CheatPenalty=0;
 global.Cheat[20]=0;
@@ -982,10 +983,22 @@ cameraYAdd=0
 if room=rm_characterselect
 {
 p1=instance_create_depth(0,53,-1,oCharacterSelectPlayer) with p1 {canControl=1 controlNO=1}
+if global.P1Only=0
+{
+
 p2=instance_create_depth(80,53,-1,oCharacterSelectPlayer) with p2 {canControl=0 controlNO=2}
 p3=instance_create_depth(160,53,-1,oCharacterSelectPlayer) with p3 {canControl=0 controlNO=3}
 p4=instance_create_depth(240,53,-1,oCharacterSelectPlayer) with p4 {canControl=0 controlNO=4}
 
+
+}
+else {p1.x=120
+
+p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=0 playerNO=2 playerGet=0 dead=1}
+p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=0 playerNO=3 playerGet=0 dead=1}
+p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=0 playerNO=4 playerGet=0 dead=1}
+
+}
 p5=instance_create_depth(2400,53,-1,oCharacterSelectPlayer) with p5 {canControl=1 controlNO=9}
 }
 
@@ -1010,6 +1023,8 @@ if global.multiMode>1
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper
 {//global.P1available=1
+
+
 	playernear=p1
 	with p1 {if global.P1available=0 ContinueMode=1
 PlayerLife=global.P1Life
@@ -1031,6 +1046,9 @@ PlayerScore=global.P3Score my_pal_sprite=global.p3Pals
 		PlayerLife=global.P4Life
 PlayerScore=global.P4Score my_pal_sprite=global.p4Pals
 		}
+		
+
+		
 }
 
 }

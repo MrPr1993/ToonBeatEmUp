@@ -787,13 +787,19 @@ draw_rectangle(-8,-8,2222,2222,0)
 if room=rm_characterselect
 {fpsY=32
 draw_set_color(c_white) draw_set_alpha(1)
-if global.TrainingRoom=0 or global.SkipDifficulty=0
-{
-if global.MultiVS=0
-{charselectgo=1;
-draw_sprite(spr_difficultyselect,0,160+p5.introtextadd-640,round(32+charselLerp))
 
 draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))
+
+if global.TrainingRoom=0
+if global.SkipDifficulty=0
+{
+if global.MultiVS=0
+{
+	
+charselectgo=1;
+draw_sprite(spr_difficultyselect,0,160+p5.introtextadd-640,round(32+charselLerp))
+
+
 
 draw_set_font(global.scorefont)
 var xadd=-640+160+p5.introtextadd
@@ -847,37 +853,41 @@ if oControl.multiVSsetting=2
 if -key_left_pressed {if global.MultiStage=-1 global.MultiStage=16 else global.MultiStage-=1 PlaySound(snd_select)}
 if key_right_pressed {if global.MultiStage=16 global.MultiStage=-1 else global.MultiStage+=1 PlaySound(snd_select)}
 }
-global.StageGoing=rm_stage1multi
+global.StageGoing=rm_arena
 if global.MultiStage=-1 {oControl.charselectgo=1 diftext="ARENA"} ///Random
-if global.MultiStage=0 {oControl.charselectgo=global.UnlockStage[1] diftext="DOWNTOWN STREET"} ///Random
-if global.MultiStage=1 {oControl.charselectgo=global.UnlockStage[2] diftext="AIRPORT CATWALK"} ///Random
-if global.MultiStage=2 {oControl.charselectgo=global.UnlockStage[3] diftext="SEA CRUISE SHIP"} ///Random
-if global.MultiStage=3 {oControl.charselectgo=global.UnlockStage[4] diftext="EL LOCO DOS"} ///Random
-if global.MultiStage=4 {oControl.charselectgo=global.UnlockStage[5] diftext="ANNA MARI'S MANSION"} ///Random
-if global.MultiStage=5 {oControl.charselectgo=global.UnlockStage[6] diftext="MASHED MUSEUM"} ///Random
-if global.MultiStage=6 {oControl.charselectgo=global.UnlockStage[7] diftext="LUCKY DOJO CASINO"} ///Random
-if global.MultiStage=7 {oControl.charselectgo=global.UnlockStage[8] diftext="SWAMP OF THE WITCH"} ///Random
-if global.MultiStage=8 {oControl.charselectgo=global.UnlockStage[9] diftext="DUCK'S CARNIVAL"} ///Random
-if global.MultiStage=9 {oControl.charselectgo=global.UnlockStage[10] diftext="WAYSIDE BEACH"} ///Random
-if global.MultiStage=10 {oControl.charselectgo=global.UnlockStage[11] diftext="MARTIAN UFO"} ///Random
-if global.MultiStage=11 {oControl.charselectgo=global.UnlockStage[12] diftext="PRINCE'S COLISSEUM"} ///Random
-if global.MultiStage=12 {oControl.charselectgo=global.UnlockStage[13] diftext="UNDERGROUND TEMPLE"} ///Random
-if global.MultiStage=13 {oControl.charselectgo=global.UnlockStage[14] diftext="SNOWY PALACE"} ///Random
-if global.MultiStage=14 {oControl.charselectgo=global.UnlockStage[15] diftext="GOBLIN CAVERN"} ///Random
-if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[16] diftext="FLUFFY CLOUDY SKY"} ///Random
-if global.MultiStage=16 {oControl.charselectgo=global.UnlockStage[18] diftext="MAD DOCTOR'S LAB"} ///Random
-if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[20] diftext="THE DASTARDLY BLIMP"} ///Random
+if global.MultiStage=0 {oControl.charselectgo=global.UnlockStage[1] global.StageGoing=rm_stage1multi diftext="DOWNTOWN STREET" } ///Random
+if global.MultiStage=1 {oControl.charselectgo=global.UnlockStage[2] diftext="AIRPORT CATWALK" } ///Random
+if global.MultiStage=2 {oControl.charselectgo=global.UnlockStage[3] diftext="SEA CRUISE SHIP" } ///Random
+if global.MultiStage=3 {oControl.charselectgo=global.UnlockStage[4] diftext="EL LOCO DOS" } ///Random
+if global.MultiStage=4 {oControl.charselectgo=global.UnlockStage[5] diftext="ANNA MARI'S MANSION" } ///Random
+if global.MultiStage=5 {oControl.charselectgo=global.UnlockStage[6] diftext="MASHED MUSEUM" } ///Random
+if global.MultiStage=6 {oControl.charselectgo=global.UnlockStage[7] diftext="LUCKY DOJO CASINO" } ///Random
+if global.MultiStage=7 {oControl.charselectgo=global.UnlockStage[8] diftext="SWAMP OF THE WITCH" } ///Random
+if global.MultiStage=8 {oControl.charselectgo=global.UnlockStage[9] diftext="DUCK'S CARNIVAL" } ///Random
+if global.MultiStage=9 {oControl.charselectgo=global.UnlockStage[10] diftext="WAYSIDE BEACH" } ///Random
+if global.MultiStage=10 {oControl.charselectgo=global.UnlockStage[11] diftext="MARTIAN UFO" } ///Random
+if global.MultiStage=11 {oControl.charselectgo=global.UnlockStage[12] diftext="PRINCE'S COLISSEUM" } ///Random
+if global.MultiStage=12 {oControl.charselectgo=global.UnlockStage[13] diftext="UNDERGROUND TEMPLE" } ///Random
+if global.MultiStage=13 {oControl.charselectgo=global.UnlockStage[14] diftext="SNOWY PALACE" } ///Random
+if global.MultiStage=14 {oControl.charselectgo=global.UnlockStage[15] diftext="GOBLIN CAVERN" } ///Random
+if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[16] diftext="FLUFFY CLOUDY SKY" } ///Random
+if global.MultiStage=16 {oControl.charselectgo=global.UnlockStage[18] diftext="MAD DOCTOR'S LAB" } ///Random
+if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[20] diftext="THE DASTARDLY BLIMP" } ///Random
+
+if oControl.charselectgo=0 diftext="LOCKED"
 
 var xadd=-640+160+introtextadd;
 
+draw_set_halign(fa_center)
 draw_set_color(c_gray) if oControl.multiVSsetting=0 draw_set_color(c_white)
 draw_text(xadd,120-32-16-80-60,"HEALTH LEVEL "+string(global.Difficulty))///Stage Name
 draw_set_color(c_gray) if oControl.multiVSsetting=1 draw_set_color(c_white)
 draw_text(xadd,120-32-16-40-60,"LIVES "+string(global.LifeStart))///Stage Name
-draw_set_color(c_gray) var bgcol=c_gray; if oControl.multiVSsetting=2 bgcol=c_white
-draw_sprite_ext(spr_filmstage,1+global.MultiStage*oControl.charselectgo,xadd,120-40,1,1,0,bgcol,1)
+draw_set_color(c_gray) var bgcol=c_gray; var bga=0; if oControl.multiVSsetting=2 {bgcol=c_white bga=0.25;}
+draw_sprite_ext(spr_filmstage,1+global.MultiStage,xadd,168,1,1,0,bgcol*oControl.charselectgo,0.75+bga)
 draw_set_color(c_white)
-draw_text(xadd,120-32-16,diftext)///Stage Name
+draw_text(xadd,178,diftext)///Stage Name
+draw_set_halign(fa_left)
 }
 
 draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))

@@ -22,14 +22,14 @@ else
 if room=rm_opening {global.StageSelect=0 global.StageGoing=rm_stage1}
 else
 if room=rm_menu
-{
+{global.P1Only=0;
 global.MenuGlobal=menuSelect
-if menuSelect=0 {room_goto(rm_characterselect) global.IsMovie=0 global.IsMinigame=0  global.TrainingRoom=0 global.StageGoing=rm_opening global.StageSelect=0}
-if menuSelect=1 {room_goto(rm_map) global.IsMinigame=0 global.TrainingRoom=0 global.StageSelect=1}
+if menuSelect=0 {global.SkipDifficulty=0 room_goto(rm_characterselect) global.IsMovie=0 global.IsMinigame=0  global.TrainingRoom=0 global.StageGoing=rm_opening global.StageSelect=0}
+if menuSelect=1 {global.SkipDifficulty=0 room_goto(rm_map) global.IsMinigame=0 global.TrainingRoom=0 global.StageSelect=1}
 if menuSelect=2 {room_goto(rm_feats) global.StageSelect=0}
 if menuSelect=3 {global.TrainingRoom=0 room_goto(rm_settings)}
 if menuSelect=4 room_goto(rm_shop)
-if menuSelect=5 {global.StageSelect=0 global.TrainingRoom=1 global.IsMinigame=0 room_goto(rm_characterselect)}
+if menuSelect=5 {global.SkipDifficulty=1 global.StageSelect=0 global.P1Only=1; global.TrainingRoom=1 global.IsMinigame=0 room_goto(rm_characterselect)}
 if menuSelect=6 {global.StageSelect=1 global.TrainingRoom=0 global.HiscoreSkip=1 global.IsMinigame=1 room_goto(rm_minigames)}
 if menuSelect=7 room_goto(rm_chardata)
 if menuSelect=8 {room_goto(rm_gallery) global.HiscoreSkip=1}

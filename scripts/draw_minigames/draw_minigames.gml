@@ -10,6 +10,7 @@ draw_set_font(global.scorefont)
 d3d_transform_set_identity()
 
 global.SkipDifficulty=0;
+global.P1Only=0;
 
 d3d_transform_set_translation(320+MenuMoveX,0,0)
 
@@ -49,12 +50,10 @@ if global.MinigameSetSel=0
 if global.MinigameSel=0 if global.UnlockAltPal3=0 isunlocked=0
 if global.MinigameSel=1 if global.SurvivalUnlock=0 isunlocked=0
 if global.MinigameSel=2 if global.BossBattleUnlock=0 isunlocked=0
-if global.MinigameSel=3 {if global.FishingUnlock=0 isunlocked=0 global.SkipDifficulty=1}
+if global.MinigameSel=3 {if global.FishingUnlock=0 isunlocked=0 global.SkipDifficulty=1 global.P1Only=1;}
 if global.MinigameSel=4 if global.SlotMachineUnlock=0 isunlocked=0
 draw_sprite_ext(spr_extraposter,global.MinigameSel+3,28,24+36,1,1,0,c_white*isunlocked,1)
 }
-
-
 
 ///Middle-Multi
 draw_sprite_ext(spr_extraposter,0,124,24+36-72*global.MinigameSel2,1,1,0,c_gray,-sell2+0.5+0.5*1)

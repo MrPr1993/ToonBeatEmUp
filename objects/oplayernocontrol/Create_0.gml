@@ -2,7 +2,7 @@
 // You can write your code in this editor
 canControl=0
 controller_setup()
-
+isReady=0
 character_setup()
 
 current_pal=global.p1Pal;
