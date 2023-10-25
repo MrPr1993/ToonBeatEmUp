@@ -8,7 +8,7 @@ and room!=rm_slotmachine and room!=rm_eatinggame and room!=rm_singgame and isNot
 {
 if oPlayer.dead=0
 {
-if time!=0 {time-=1 alarm[0]=timeclick}
+if time!=0 {time-=1-1*global.CheatUnlock[12] alarm[0]=timeclick}
 else
 if timedead=1
 {

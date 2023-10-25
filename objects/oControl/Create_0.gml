@@ -106,7 +106,7 @@ global.MiniGameUnlock6=0;
 global.SurvivalUnlock=0;
 global.BossBattleUnlock=0;
 
-
+global.SkipDifficulty=0;
 
 global.CheatPenalty=0;
 global.Cheat[20]=0;
@@ -553,7 +553,12 @@ spawnUnit=oMsDummy
 spawnType="Enemy"
 spawnNo=0
 
-
+if global.Cheat[6] {
+global.P1Char=choose(0,1,2,3)
+global.P2Char=choose(0,1,2,3)
+global.P3Char=choose(0,1,2,3)
+global.P4Char=choose(0,1,2,3)
+}
 
 MinX=x-320
 MaxX=x+sprite_width-320

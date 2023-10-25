@@ -18,7 +18,7 @@ function item_collision() {
 	else
 	spdX=2*-image_xscale
 	canGrav=1 gravLandHalt=1 spdZ=-8 attack=0 spinBack=1
-	weaponLife-=1
+	weaponLife-=1-1*global.CheatUnlock[10]
 	}
 	else
 	{if itemHP!=1 itemHP-=1 else

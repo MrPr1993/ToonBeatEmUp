@@ -93,6 +93,8 @@ function pick_item(){
 
 	}else if item.food=0 spawnID=-1
 	hp+=item.hp*maxhp//extraheal
+	if item.hp!=0 if global.CheatUnlock[8] hp=maxhp
+	
 	if item.timeAdd!=0
 	{oControl.alarm[0]=120 
 	oControl.time+=item.timeAdd if oControl.time>99 oControl.time=99

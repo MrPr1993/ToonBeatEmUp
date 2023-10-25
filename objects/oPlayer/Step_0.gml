@@ -4,6 +4,9 @@ showmash=0
 
 if ContinueMode=0
 {
+	
+if global.Cheat[10] super+=0.001
+if global.Cheat[13] hp=maxhp 
 
 if hasAI=0
 {

@@ -6,6 +6,7 @@ if ContinueMode=0
 zblock_col()
 
 
+
 fallMul=1
 jumpMul=1
 

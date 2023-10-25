@@ -31,7 +31,7 @@ surface_free(application_surface)
 
 }
 if pickedcolor=0
-{if key_B room_goto(rm_menu)
+{if key_B or keyboard_check_pressed(vk_escape) room_goto(rm_minigames)
 	
 if key_right_pressed if current_pal=31 current_pal=1 else current_pal+=1
 if -key_left_pressed if current_pal=1 current_pal=31 else current_pal-=1

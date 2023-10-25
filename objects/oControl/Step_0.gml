@@ -26,6 +26,14 @@ if betatest=1 if keyboard_check(vk_shift) and keyboard_check_pressed(ord("L"))
 var langcheck=global.Language
 var langtext="ENGLISH"
 if global.Language=1 langtext="ESPANOL"
+//if global.Language=1 langtext="ESPANOL"
+//if global.Language=1 langtext="ESPANOL"
+//if global.Language=1 langtext="ESPANOL"
+//if global.Language=1 langtext="ESPANOL"
+//if global.Language=1 langtext="ESPANOL"
+//if global.Language=1 langtext="ESPANOL"
+//if global.Language=1 langtext="ESPANOL"
+
 
 global.Language=get_string("Change Language: "+string(langtext),global.Language)
 language_check();
@@ -270,6 +278,11 @@ global.P1Score=0
 global.P2Score=0
 global.P3Score=0
 global.P4Score=0
+
+global.P1Life+=global.P1Life*global.Cheat[2]
+global.P2Life+=global.P2Life*global.Cheat[2]
+global.P3Life+=global.P3Life*global.Cheat[2]
+global.P4Life+=global.P4Life*global.Cheat[2]
 }
 
 

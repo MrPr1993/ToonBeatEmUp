@@ -43,7 +43,9 @@ DamageVoice2=snd_viva10
 DamageVoice3=snd_viva11
 ReturnVoice=snd_viva8
 
-character=global.P1Char
+
+
+
 HitReactionScript=viva_hitreaction
 AtkTime=0
 
@@ -224,12 +226,15 @@ fishname=""
 fishscore=0
 fishstr=0
 
+
+
 difficulty_check=function()
 {maxhp=1
-if global.Difficulty=0 {maxhp=1.5}
-if global.Difficulty=1 {maxhp=1.25}
-if global.Difficulty=3 {maxhp=0.75}
-if global.Difficulty=4 {maxhp=0.5}
-if global.Difficulty=5 {maxhp=0.25} ///MANIA
+if global.Difficulty=0 {maxhp=1.5 }
+if global.Difficulty=1 {maxhp=1.25 }
+if global.Difficulty=3 {maxhp=0.75 }
+if global.Difficulty=4 {maxhp=0.5 }
+if global.Difficulty=5 {maxhp=0.25 } ///MANIA
+maxhp+=maxhp*global.Cheat[1]
 hp=maxhp
 }

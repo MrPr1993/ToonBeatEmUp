@@ -787,7 +787,7 @@ draw_rectangle(-8,-8,2222,2222,0)
 if room=rm_characterselect
 {fpsY=32
 draw_set_color(c_white) draw_set_alpha(1)
-if global.TrainingRoom=0
+if global.TrainingRoom=0 or global.SkipDifficulty=0
 {
 if global.MultiVS=0
 {charselectgo=1;
