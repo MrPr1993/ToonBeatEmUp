@@ -602,6 +602,7 @@
     {"id":{"name":"rm_delta","path":"rooms/rm_delta/rm_delta.yy",},},
     {"id":{"name":"rm_feats","path":"rooms/rm_feats/rm_feats.yy",},},
     {"id":{"name":"oBullGame","path":"objects/oBullGame/oBullGame.yy",},},
+    {"id":{"name":"spr_filmstage3","path":"sprites/spr_filmstage3/spr_filmstage3.yy",},},
     {"id":{"name":"rm_gallery","path":"rooms/rm_gallery/rm_gallery.yy",},},
     {"id":{"name":"rm_hiscore","path":"rooms/rm_hiscore/rm_hiscore.yy",},},
     {"id":{"name":"rm_howtoplay","path":"rooms/rm_howtoplay/rm_howtoplay.yy",},},

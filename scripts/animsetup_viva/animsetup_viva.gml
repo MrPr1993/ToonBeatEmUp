@@ -4,7 +4,7 @@ function animsetup_viva() {
 
 	walkSpeed=2
 	damage=0.05
-	extradamage=damage*global.CheatUnlock[3]
+	extradamage=damage*global.Cheat[3]*global.NoCheat
 	defense=1.5
 	extradefense=0
 	weaponBack=1

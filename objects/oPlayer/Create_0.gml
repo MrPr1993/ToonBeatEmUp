@@ -235,6 +235,6 @@ if global.Difficulty=1 {maxhp=1.25 }
 if global.Difficulty=3 {maxhp=0.75 }
 if global.Difficulty=4 {maxhp=0.5 }
 if global.Difficulty=5 {maxhp=0.25 } ///MANIA
-maxhp+=maxhp*global.Cheat[1]
+maxhp+=maxhp*global.Cheat[1]*global.NoCheat
 hp=maxhp
 }

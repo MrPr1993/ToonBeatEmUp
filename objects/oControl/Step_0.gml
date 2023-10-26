@@ -279,10 +279,10 @@ global.P2Score=0
 global.P3Score=0
 global.P4Score=0
 
-global.P1Life+=global.P1Life*global.Cheat[2]
-global.P2Life+=global.P2Life*global.Cheat[2]
-global.P3Life+=global.P3Life*global.Cheat[2]
-global.P4Life+=global.P4Life*global.Cheat[2]
+global.P1Life+=global.P1Life*global.Cheat[2]*global.NoCheat
+global.P2Life+=global.P2Life*global.Cheat[2]*global.NoCheat
+global.P3Life+=global.P3Life*global.Cheat[2]*global.NoCheat
+global.P4Life+=global.P4Life*global.Cheat[2]*global.NoCheat
 }
 
 

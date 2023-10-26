@@ -3,7 +3,7 @@
 function animsetup_bahati() {
 	walkSpeed=2
 	damage=0.08
-	extradamage=damage*global.CheatUnlock[3]
+	extradamage=damage*global.Cheat[3]*global.NoCheat
 	defense=1.8
 	extradefense=0
 

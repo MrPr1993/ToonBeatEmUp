@@ -9,7 +9,7 @@ function draw_character() {
 		
 	//draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 if object_index=oPlayer
-{	var minimodediv=1; if global.Cheat[5]=1 minimodediv=0.25;
+{	var minimodediv=1; if global.Cheat[5]=1 if global.NoCheat minimodediv=0.25;
 if place_meeting(x,y,oWaterFX) and z>waterMax	
 	draw_sprite_clip_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),(image_xscale*wobbleX)*minimodediv,(image_yscale*wobbleY)*minimodediv,image_blend,image_alpha, 
 	x-(sprite_width*2)*image_xscale,y-sprite_height,x+(sprite_width*2)*image_xscale,sprite_height+waterMax)

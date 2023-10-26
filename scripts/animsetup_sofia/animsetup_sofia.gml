@@ -3,7 +3,7 @@
 function animsetup_sofia() {
 	walkSpeed=2
 	damage=0.02
-	extradamage=damage*global.CheatUnlock[3]
+	extradamage=damage*global.Cheat[3]*global.NoCheat
 	defense=1.2
 	extradefense=0
 

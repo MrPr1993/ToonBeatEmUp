@@ -112,6 +112,8 @@ global.P1Only=0;
 global.CheatPenalty=0;
 global.Cheat[20]=0;
 
+global.NoCheat=1;
+
 
 global.CheatUnlock[20]=0;
 var hahaha=0;
@@ -152,8 +154,11 @@ global.LevelSelectSave=0
 global.multiMode=1
 
 global.MultiVS=0;
+global.MultiVSHP=1;
+global.MultiVSLife=2;
 global.MultiStage=0
 global.MultiTime=99
+
 
 
 global.HiScoreSee=0
@@ -274,6 +279,7 @@ global.ContinueStart=-1
 global.Continues=-1
 
 global.LifeStart=2
+
 
 global.DisplayFeats=1
 
@@ -1052,6 +1058,8 @@ PlayerScore=global.P4Score my_pal_sprite=global.p4Pals
 }
 
 }
+
+if room=rm_menu global.NoCheat=1;
 
 if room=rm_paletteeditor
 instance_create_depth(0,0,-1,oPaletteEditor)

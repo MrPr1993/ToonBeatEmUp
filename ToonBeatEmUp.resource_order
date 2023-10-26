@@ -469,6 +469,7 @@
     {"name":"spr_dragonmaiden_hand","order":3,"path":"sprites/spr_dragonmaiden_hand/spr_dragonmaiden_hand.yy",},
     {"name":"rm_delta","order":1,"path":"rooms/rm_delta/rm_delta.yy",},
     {"name":"rm_feats","order":5,"path":"rooms/rm_feats/rm_feats.yy",},
+    {"name":"spr_filmstage3","order":96,"path":"sprites/spr_filmstage3/spr_filmstage3.yy",},
     {"name":"rm_gallery","order":6,"path":"rooms/rm_gallery/rm_gallery.yy",},
     {"name":"rm_hiscore","order":7,"path":"rooms/rm_hiscore/rm_hiscore.yy",},
     {"name":"rm_howtoplay","order":8,"path":"rooms/rm_howtoplay/rm_howtoplay.yy",},

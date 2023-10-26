@@ -27,7 +27,7 @@ if other.isPlayer=isPlayer and other.atk=1
 {if other.HitQuake!=0 oControl.quakeFXTime=other.HitQuake
 if (z-height)<(other.z) and (z)>(other.z-other.height)
 and recovery=0 and superThrown=0 and anim!=6
-{if global.Cheat[4] hp=0
+{if global.Cheat[4] if global.NoCheat hp=0
 hitresponse() with other {with selfsource {hitCheck=1 hud_show() event_user(14) ///Special Hit for enemy hitting player
 
 }if object_index=oBossHazard hitscript()}

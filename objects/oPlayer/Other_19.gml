@@ -9,7 +9,9 @@ alarm[0]=120
 
 
 
-if global.Cheat[6] {
+if global.Cheat[6] 
+if global.NoCheat
+{
 if controlNO=1 global.P1Char=choose(0,1,2,3)
 if controlNO=2 global.P2Char=choose(0,1,2,3)
 if controlNO=3 global.P3Char=choose(0,1,2,3)

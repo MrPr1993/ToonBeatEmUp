@@ -5,7 +5,7 @@ hp=clamp(hp,0,maxhp)
 
 super=clamp(super,0,18)
 
-var minimodediv=1; if global.Cheat[5]=1 minimodediv=0.25;
+var minimodediv=1; if global.Cheat[5]=1 if global.NoCheat minimodediv=0.25;
 
 //if showp1=1
 //draw_sprite(spr_p1,playerNO-1,round(x),round(y+z-98))
