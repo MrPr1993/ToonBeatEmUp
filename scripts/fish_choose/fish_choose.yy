@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Fishing",
-    "path": "folders/1d - Minigames/Fishing.yy",
+    "path": "folders/1d - Extras and Minigames/Fishing.yy",
   },
 }

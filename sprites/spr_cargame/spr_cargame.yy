@@ -42,7 +42,7 @@
   "origin": 9,
   "parent": {
     "name": "Car Breaking Game",
-    "path": "folders/1d - Minigames/Car Breaking Game.yy",
+    "path": "folders/1d - Extras and Minigames/Car Breaking Game.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -35,7 +35,7 @@
   "origin": 0,
   "parent": {
     "name": "Brick Break",
-    "path": "folders/1d - Minigames/Brick Break.yy",
+    "path": "folders/1d - Extras and Minigames/Brick Break.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

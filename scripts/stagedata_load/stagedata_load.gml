@@ -3,6 +3,18 @@
 function stagedata_load(){
 ini_open("GAMEDATA/stage.ini");
 
+global.HiScoreSurvival=ini_read_real("STAGEdata", "Sextra1", 0);
+global.HiScoreBossBattles=ini_read_real("STAGEdata", "Sextra2", 0);
+global.HiScoreBossBattlesScore=ini_read_real("STAGEdata", "Sextra3", 0);
+global.HiScoreFishing=ini_read_real("STAGEdata", "Sextra4", 0);
+global.HiScoreMini1=ini_read_real("STAGEdata", "Smini1", 0);
+global.HiScoreMini2=ini_read_real("STAGEdata", "Smini2", 0);
+global.HiScoreMini3=ini_read_real("STAGEdata", "Smini3", 0);
+global.HiScoreMini4=ini_read_real("STAGEdata", "Smini4", 0);
+global.HiScoreMini5=ini_read_real("STAGEdata", "Smini5", 0);
+global.HiScoreMini6=ini_read_real("STAGEdata", "Smini6", 0);
+
+
 global.UnlockStage[1]=ini_read_real("STAGEdata", "S1a", 0);
 global.LevelHiScore[1]=ini_read_real("STAGEdata", "S1b", 0);
 global.UnlockStage[2]=ini_read_real("STAGEdata", "S2a", 0);

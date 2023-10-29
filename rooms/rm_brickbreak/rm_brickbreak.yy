@@ -38,7 +38,7 @@
   ],
   "parent": {
     "name": "Brick Break",
-    "path": "folders/1d - Minigames/Brick Break.yy",
+    "path": "folders/1d - Extras and Minigames/Brick Break.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

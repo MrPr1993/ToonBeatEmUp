@@ -4,6 +4,17 @@ function stagedata_save(){
 
 ini_open("GAMEDATA/stage.ini");
 
+ini_write_real("STAGEdata", "Sextra1", global.HiScoreSurvival)
+ini_write_real("STAGEdata", "Sextra2", global.HiScoreBossBattles)
+ini_write_real("STAGEdata", "Sextra3", global.HiScoreBossBattlesScore)
+ini_write_real("STAGEdata", "Sextra4", global.HiScoreFishing)
+ini_write_real("STAGEdata", "Smini1", global.HiScoreMini1)
+ini_write_real("STAGEdata", "Smini2", global.HiScoreMini2)
+ini_write_real("STAGEdata", "Smini3", global.HiScoreMini3)
+ini_write_real("STAGEdata", "Smini4", global.HiScoreMini4)
+ini_write_real("STAGEdata", "Smini5", global.HiScoreMini5)
+ini_write_real("STAGEdata", "Smini6", global.HiScoreMini6)
+
 ini_write_real("STAGEdata", "S1a", global.UnlockStage[1])
 ini_write_real("STAGEdata", "S1b", global.LevelHiScore[1])
 ini_write_real("STAGEdata", "S2a", global.UnlockStage[2])

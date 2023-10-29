@@ -83,13 +83,22 @@ if showHUD
 draw_set_font(global.timefont)///Timer
 if continueScreen=0
 {
+if !instance_exists(oArenaSurvival)
+{
 if time>=10
 draw_text(160-16,0,string_hash_to_newline(time))
 else
 {
 draw_text(160,0,string_hash_to_newline(time))
 draw_text(160-16,0,string_hash_to_newline(0))
-}}
+}
+}
+else
+{time=99
+with oArenaSurvival drawscript()
+}
+
+}
 draw_set_font(-1)
 draw_set_halign(fa_left);
  draw_set_valign(fa_top);

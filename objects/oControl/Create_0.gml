@@ -95,6 +95,20 @@ charselectgo=1;
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 	
+global.HiScoreSurvival=0
+
+global.HiScoreBossBattles=0
+global.HiScoreBossBattlesScore=0
+global.HiScoreFishing=0	
+global.HiScoreMini1=0	
+global.HiScoreMini2=0
+global.HiScoreMini3=0
+global.HiScoreMini4=0
+global.HiScoreMini5=0
+global.HiScoreMini6=0
+
+global.ArenaType=0;
+	
 global.FishingUnlock=0;
 global.SlotMachineUnlock=0;	
 global.MiniGameUnlock1=0;
@@ -1059,7 +1073,27 @@ PlayerScore=global.P4Score my_pal_sprite=global.p4Pals
 
 }
 
-if room=rm_menu global.NoCheat=1;
+/////Modes And Multu
+///1-Boss Battles
+///2-
+
+
+if room=rm_menu {global.NoCheat=1; global.ArenaType=0}
+if room!=rm_characterselect and room!=rm_minigames
+{
+if global.ArenaType=2 instance_create(0,0,oArenaSurvival)
+if global.ArenaType=5 instance_create(0,0,oArenaVS)
+}
+if instance_exists(oArenaSurvival)
+with oControl
+{with oPlayer
+	{key_right=0
+areaEntry=1 ///For the player to start
+alarm[0]=45 ///Time to stop	
+	}
+
+}
+
 
 if room=rm_paletteeditor
 instance_create_depth(0,0,-1,oPaletteEditor)

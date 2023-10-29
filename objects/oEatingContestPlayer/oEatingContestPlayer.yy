@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Eating Contest",
-    "path": "folders/1d - Minigames/Eating Contest.yy",
+    "path": "folders/1d - Extras and Minigames/Eating Contest.yy",
   },
   "parentObjectId": null,
   "persistent": false,

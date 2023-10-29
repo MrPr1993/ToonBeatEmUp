@@ -29,7 +29,7 @@
   "origin": 0,
   "parent": {
     "name": "Arena",
-    "path": "folders/1d - Minigames/Arena.yy",
+    "path": "folders/1d - Extras and Minigames/Arena.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

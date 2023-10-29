@@ -4,6 +4,8 @@ function draw_minigames(){
 
 if room=rm_minigames
 {//global.MinigameSel3=0
+global.ArenaType=0
+	
 if key_cancel room_goto(rm_menu)
 draw_set_font(global.scorefont)	
 
@@ -115,22 +117,22 @@ if global.MinigameSel=0 {MenuText="GIVE YOU DIVAS CUSTOM COLORS!" //if global.Mi
 global.StageGoing=rm_paletteeditor instantroom=1; stagewent=rm_paletteeditor
 if global.UnlockAltPal3=0 MenuText="LOCKED"
 }
-if global.MinigameSel=1 {MenuText="CAN YOU DEFEAT EVERYONE? CAN YOU?" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
-global.StageGoing=rm_brickbreak 
+if global.MinigameSel=1 {MenuText="SURVIVE THE BAD GUYS' ONSLAUGHT!\n"+"HIGH SCORE:"+string(global.HiScoreSurvival) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+global.StageGoing=rm_arena global.ArenaType=2;
 if global.SurvivalUnlock=0 MenuText="LOCKED"
 }
 
-if global.MinigameSel=2 {MenuText="SURVIVE THE BAD GUYS' ONSLAUGHT!" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
-global.StageGoing=rm_brickbreak
+if global.MinigameSel=2 {MenuText="CAN YOU DEFEAT EVERYONE? CAN YOU?\n"+"BOSSES DEFEATED:"+string(global.HiScoreBossBattles)+"\nHIGH SCORE:"+string(global.HiScoreBossBattlesScore) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+global.StageGoing=rm_arena
 if global.BossBattleUnlock=0 MenuText="LOCKED"
 }
 
-if global.MinigameSel=3 {MenuText="RELAX AS YOU TAKE ON THE LAKE TO FISH." //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+if global.MinigameSel=3 {MenuText="RELAX AS YOU TAKE ON THE LAKE TO FISH.\n"+"HIGH SCORE:"+string(global.HiScoreFishing) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_fishing 
 if global.FishingUnlock=0 MenuText="LOCKED"
 }
 
-if global.MinigameSel=4 {MenuText="HAVE SOME FUN AT A LITTLE GAMBLE!" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+if global.MinigameSel=4 {MenuText="HAVE SOME FUN AT A LITTLE GAMBLE!\n"+"$"+string(global.Gold) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_slotmachine instantroom=1 stagewent=rm_slotmachine
 if global.SlotMachineUnlock=0 MenuText="LOCKED"
 }
@@ -140,27 +142,27 @@ if global.SlotMachineUnlock=0 MenuText="LOCKED"
 if global.MinigameSetSel=1
 {
 global.MultiVS=1
-if global.MinigameSel2=0 {MenuText="A GOOD OLD FASHIONED BRAWLER VS!" //if global.MiniGameUnlock1=0 MenuText="LOCKED"
-global.StageGoing=rm_cargame}
+if global.MinigameSel2=0 {MenuText="A GOOD OLD FASHIONED BRAWLER VS!\n" //if global.MiniGameUnlock1=0 MenuText="LOCKED"
+global.StageGoing=rm_cargame global.ArenaType=5;}
 if global.MinigameSel2=1 {MenuText="MAKE SURE YOU'RE THE ONE WITH THE BALL!" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
-global.StageGoing=rm_brickbreak}
+global.StageGoing=rm_brickbreak  global.ArenaType=6;}
 if global.MinigameSel2=2 {MenuText="GET THE MOST STARS TO WIN!" //if global.MiniGameUnlock3=0 MenuText="LOCKED"
-global.StageGoing=rm_eatinggame}
+global.StageGoing=rm_eatinggame  global.ArenaType=7;}
 }
 
 if global.MinigameSetSel=2
 {global.MultiVS=0
-if global.MinigameSel3=0 {MenuText="WRECK THAT CAR TO BITS!" if global.MiniGameUnlock1=0 MenuText="LOCKED"
+if global.MinigameSel3=0 {MenuText="WRECK THAT CAR TO BITS!\n"+"HIGH SCORE:"+string(global.HiScoreMini1) if global.MiniGameUnlock1=0 MenuText="LOCKED"
 global.StageGoing=rm_cargame}
-if global.MinigameSel3=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION!" if global.MiniGameUnlock2=0 MenuText="LOCKED"
+if global.MinigameSel3=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION!\n"+"HIGH SCORE:"+string(global.HiScoreMini2) if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_brickbreak}
-if global.MinigameSel3=2 {MenuText="EAT A MEAL IN THIS EATING COMPETITION!" if global.MiniGameUnlock3=0 MenuText="LOCKED"
+if global.MinigameSel3=2 {MenuText="EAT A MEAL IN THIS EATING COMPETITION!\n"+"HIGH SCORE:"+string(global.HiScoreMini3) if global.MiniGameUnlock3=0 MenuText="LOCKED"
 global.StageGoing=rm_eatinggame}
-if global.MinigameSel3=3 {MenuText="SING TO SHATTER THE COMPETITION!" if global.MiniGameUnlock4=0 MenuText="LOCKED"
+if global.MinigameSel3=3 {MenuText="SING TO SHATTER THE COMPETITION!\n"+"HIGH SCORE:"+string(global.HiScoreMini4) if global.MiniGameUnlock4=0 MenuText="LOCKED"
 global.StageGoing=rm_singgame}
-if global.MinigameSel3=4 {MenuText="RUN FROM THE BIG BAD BULL!" if global.MiniGameUnlock5=0 MenuText="LOCKED"
+if global.MinigameSel3=4 {MenuText="RUN FROM THE BIG BAD BULL!\n"+"HIGH SCORE:"+string(global.HiScoreMini5) if global.MiniGameUnlock5=0 MenuText="LOCKED"
 global.StageGoing=rm_bullstage}
-if global.MinigameSel3=5 {MenuText="RING THE BELL WITH A SLAM OF THE HAMMER!" if global.MiniGameUnlock6=0 MenuText="LOCKED"
+if global.MinigameSel3=5 {MenuText="RING THE BELL WITH A SLAM OF THE HAMMER!\n"+"HIGH SCORE:"+string(global.HiScoreMini6) if global.MiniGameUnlock6=0 MenuText="LOCKED"
 global.StageGoing=rm_hammergame}
 }	
 
@@ -181,6 +183,28 @@ draw_text(160,8,"SELECT A MODE")
 draw_text(28+36,32,"EXTRAS")
 draw_text(160,32,"MULTI")
 draw_text(320-28-36,32,"MINIGAMES")
+
+if global.Cheat[0]
+or global.Cheat[1]	
+or global.Cheat[2]	
+or global.Cheat[3]	
+or global.Cheat[4]	
+or global.Cheat[5]	
+or global.Cheat[6]	
+or global.Cheat[7]	
+or global.Cheat[8]	
+or global.Cheat[9]	
+or global.Cheat[10]	
+or global.Cheat[11]	
+or global.Cheat[12]	
+or global.Cheat[13]
+or global.Cheat[14]
+or global.Cheat[15]
+or global.Cheat[16]
+global.NoCheat=0
+
+if global.NoCheat=0
+draw_text(160,16,"NOTE:CHEATS WILL BE DISABLED")
 
 fpsY=8
 

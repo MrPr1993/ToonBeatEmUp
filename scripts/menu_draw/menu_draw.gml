@@ -82,27 +82,6 @@ draw_set_alpha(1)
 draw_text(round(160+MenuMoveX),240-10-4,MenuText)
 draw_text(round(160+320+MenuMoveX),240-10-4,MenuText)
 
-if global.Cheat[0]
-or global.Cheat[1]	
-or global.Cheat[2]	
-or global.Cheat[3]	
-or global.Cheat[4]	
-or global.Cheat[5]	
-or global.Cheat[6]	
-or global.Cheat[7]	
-or global.Cheat[8]	
-or global.Cheat[9]	
-or global.Cheat[10]	
-or global.Cheat[11]	
-or global.Cheat[12]	
-or global.Cheat[13]
-or global.Cheat[14]
-or global.Cheat[15]
-or global.Cheat[16]
-global.NoCheat=0
-
-if global.NoCheat=0
-draw_text(round(160+320+MenuMoveX),240-10-4+16,"NOTE:CHEATS WILL BE DISABLED")
 
 fpsY=8
 MenuMoveX-=1 if MenuMoveX<-320 MenuMoveX=0

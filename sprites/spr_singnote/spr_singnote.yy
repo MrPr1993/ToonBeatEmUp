@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Singing Game",
-    "path": "folders/1d - Minigames/Singing Game.yy",
+    "path": "folders/1d - Extras and Minigames/Singing Game.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bull Rush",
-    "path": "folders/1d - Minigames/Bull Rush.yy",
+    "path": "folders/1d - Extras and Minigames/Bull Rush.yy",
   },
   "parentObjectId": null,
   "persistent": false,

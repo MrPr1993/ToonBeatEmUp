@@ -33,7 +33,7 @@
   ],
   "parent": {
     "name": "Hammer Game",
-    "path": "folders/1d - Minigames/Hammer Game.yy",
+    "path": "folders/1d - Extras and Minigames/Hammer Game.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
