@@ -1620,6 +1620,7 @@
     {"id":{"name":"spr_bahati_quake","path":"sprites/spr_bahati_quake/spr_bahati_quake.yy",},},
     {"id":{"name":"spr_bahati_respawn","path":"sprites/spr_bahati_respawn/spr_bahati_respawn.yy",},},
     {"id":{"name":"spr_bahati_rock","path":"sprites/spr_bahati_rock/spr_bahati_rock.yy",},},
+    {"id":{"name":"parTargettable","path":"objects/parTargettable/parTargettable.yy",},},
     {"id":{"name":"spr_bahati_rock2","path":"sprites/spr_bahati_rock2/spr_bahati_rock2.yy",},},
     {"id":{"name":"spr_bahati_rock3","path":"sprites/spr_bahati_rock3/spr_bahati_rock3.yy",},},
     {"id":{"name":"spr_bahati_run","path":"sprites/spr_bahati_run/spr_bahati_run.yy",},},

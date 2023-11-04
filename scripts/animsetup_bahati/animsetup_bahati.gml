@@ -1137,7 +1137,7 @@ if targetID!=-1
 	animFrame=3 image_yscale=1
 	anim=5
 	hud_show() hpscan()
-	event_user(12)
+	//event_user(12)
 	}throwing=0
 	targetID=-1
 	}

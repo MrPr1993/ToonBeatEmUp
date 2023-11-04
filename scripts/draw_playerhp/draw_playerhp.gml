@@ -1,6 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_playerhp(){
+	
+if object_index=oPlayer
+{
+if showp1=1
+draw_sprite(spr_p1,playerNO-1,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
+if showmash=1
+{
+draw_sprite(spr_buttonmash,showmashI,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
+if showmashI=1.75 showmashI=0 else showmashI+=0.25
+}
+}
 
 d3d_transform_set_identity()
 if playerNO=1
@@ -12,16 +23,7 @@ d3d_transform_set_translation(320-72-72,0,0)
 if playerNO=4
 d3d_transform_set_translation(320-72,0,0)
 
-if object_index=oPlayer
-{
-if showp1=1
-draw_sprite(spr_p1,playerNO-1,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
-if showmash=1
-{
-draw_sprite(spr_buttonmash,showmashI,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
-if showmashI=1.75 showmashI=0 else showmashI+=0.25
-}
-}
+
 
 if object_index=oPlayerNoControl
 {
@@ -188,7 +190,7 @@ if playerNO=4 global.P4Score=0
 draw_text(34,8,"GAME\nOVER")
 }
 draw_set_halign(fa_left)
-
+if global.Continues=0 ContinueCTime=0
 if ContinueCTime!=0
 ContinueCTime-=1
 else

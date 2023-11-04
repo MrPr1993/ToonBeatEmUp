@@ -4,7 +4,8 @@ canControl=0
 controller_setup()
 isReady=0
 character_setup()
-
+	hasShadow=0;
+	shadowSpr=mask_none
 current_pal=global.p1Pal;
 my_pal_sprite=spr_playerpal
 
@@ -52,12 +53,11 @@ character=global.P1Char
 HitReactionScript=viva_hitreaction
 AtkTime=0
 
-PlayerLife=global.P1Life
-PlayerScore=global.P1Score
+PlayerLife=0
+PlayerScore=0
 
 
-
-hp=1
+hp=0
 
 ///Characters affiliation tag
 isPlayer=1

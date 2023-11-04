@@ -785,7 +785,7 @@ if animFrame>5.5 animFrame+=0.25
 	animFrame=3
 	anim=5
 	hud_show() hpscan()
-	event_user(9)
+	//event_user(9)
 	}throwing=0
 	targetID=-1 throwcombo=2 anim=39
 	}
@@ -808,7 +808,7 @@ if animFrame>5.5 animFrame+=0.25
 	animFrame=3
 	anim=5
 	hud_show() hpscan()
-	event_user(9)
+	//event_user(9)
 	}throwing=0 
 	targetID=-1 throwcombo=2 anim=39 
 	}
@@ -877,7 +877,7 @@ flashFX(x+39*image_xscale,y,z-77,spr_hitflash,0,0.5,0,1,1,c_white,1)
 	animFrame=3
 	anim=5
 	hud_show() hpscan()
-	event_user(9)
+	//event_user(9)
 	}throwing=0
 	targetID=-1
 	}

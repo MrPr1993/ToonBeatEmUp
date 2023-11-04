@@ -12,8 +12,8 @@
     "path": "folders/1 - General Objects.yy",
   },
   "parentObjectId": {
-    "name": "ParCharPhys",
-    "path": "objects/ParCharPhys/ParCharPhys.yy",
+    "name": "parTargettable",
+    "path": "objects/parTargettable/parTargettable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

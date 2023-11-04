@@ -116,7 +116,7 @@ frame_set(5,18,0.25) if animFrame>5.75 animFrame=0
 	if ThrowDamage!=0 
 	if isEnemy=1
 	{event_user(10) hp-=ThrowDamage hpscan() hud_show() ThrowDamage=0} //If land take damage
-	else hp-=ThrowDamage
+	else {hp-=ThrowDamage ThrowDamage=0}
  
 	 recovery=10 
  

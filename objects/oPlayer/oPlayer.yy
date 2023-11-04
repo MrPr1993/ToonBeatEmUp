@@ -40,8 +40,8 @@
     "path": "folders/6 - Player Data.yy",
   },
   "parentObjectId": {
-    "name": "ParCharPhys",
-    "path": "objects/ParCharPhys/ParCharPhys.yy",
+    "name": "parTargettable",
+    "path": "objects/parTargettable/parTargettable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

@@ -26,7 +26,13 @@ dizzyPercentage=random_range(0,100)
 	PlaySound(other.HitSound)
 
 	//if x>other.SourceX image_xscale=-1 else image_xscale=1 
-	flashFX(x-8*image_xscale,y+2,z+other.flashZ,other.spriteFX,other.indexFX,other.speedFX,other.spriteTime,other.xScaleFX,other.yScaleFX,other.blendFX,other.alphaFX)
+	//flashFX(x-8*image_xscale,y+2,z+other.flashZ,other.spriteFX,other.indexFX,other.speedFX,other.spriteTime,other.xScaleFX,other.yScaleFX,other.blendFX,other.alphaFX)
+	if other.object_index!=oProjectile
+	flashFX(x-other.flashX*image_xscale,y+other.flashY,z-other.flashZ,other.spriteFX,other.indexFX,other.speedFX,other.spriteTime,other.xScaleFX,other.yScaleFX,other.blendFX,other.alphaFX)
+	else
+	flashFX(other.x,other.y,other.z,other.spriteFX,other.indexFX,other.speedFX,other.spriteTime,other.xScaleFX,other.yScaleFX,other.blendFX,other.alphaFX)
+	
+	
 	fx.isDepth=other.isDepth fx.speedFX=other.speedFX
 
 

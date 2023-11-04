@@ -10,6 +10,8 @@ var minimodediv=1; if global.Cheat[5]=1 if global.NoCheat minimodediv=0.25;
 //if showp1=1
 //draw_sprite(spr_p1,playerNO-1,round(x),round(y+z-98))
 
+if targetID!=-1 if targetID.y<=y with targetID {script_execute(chardraw);}
+
 if carMode=0
 {
 
@@ -119,6 +121,8 @@ draw_rectangle(x-(sprite_get_width(mask_index)/2),y+z,x+(sprite_get_width(mask_i
 draw_text(x,y-height-24,string_hash_to_newline(aff.aff))
 draw_set_color(c_white) draw_set_alpha(1)
 }
+
+if targetID!=-1 if targetID.y>y with targetID {script_execute(chardraw);}
 
 animsetup_specialplayer()
 character_hitanims()

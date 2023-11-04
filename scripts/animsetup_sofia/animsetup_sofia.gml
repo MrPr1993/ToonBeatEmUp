@@ -779,7 +779,7 @@ selfatk.height=128
 	animFrame=3
 	anim=5
 	hud_show() hpscan()
-	event_user(9)
+	//event_user(9)
 	}throwing=0
 	targetID=-1 throwcombo=2 anim=39
 	}
@@ -802,7 +802,7 @@ selfatk.height=128
 	animFrame=3
 	anim=5
 	hud_show() hpscan()
-	event_user(9)
+	//event_user(9)
 	}throwing=0 
 	targetID=-1 throwcombo=2 anim=39 
 	}
@@ -866,7 +866,7 @@ selfatk.height=128
 	animFrame=3
 	anim=5
 	hud_show() hpscan()
-	event_user(9)
+	//event_user(9)
 	}throwing=0
 	targetID=-1
 	}
@@ -986,7 +986,7 @@ selfatk.height=128
 	animFrame=3
 	anim=5
 	hud_show() hpscan()
-	event_user(9)
+	//event_user(9)
 	}throwing=0
 	targetID=-1
 	}

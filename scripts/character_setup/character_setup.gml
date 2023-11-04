@@ -13,7 +13,7 @@ playerGet=0
 Cweather=0
 ///1 - cold - 2 - hot
 
-
+randomanim=0
 
 	nameID="None"
 	name="NULL"

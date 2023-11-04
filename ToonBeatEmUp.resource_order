@@ -1430,6 +1430,7 @@
     {"name":"spr_bahati_quake","order":45,"path":"sprites/spr_bahati_quake/spr_bahati_quake.yy",},
     {"name":"spr_bahati_respawn","order":46,"path":"sprites/spr_bahati_respawn/spr_bahati_respawn.yy",},
     {"name":"spr_bahati_rock","order":47,"path":"sprites/spr_bahati_rock/spr_bahati_rock.yy",},
+    {"name":"parTargettable","order":7,"path":"objects/parTargettable/parTargettable.yy",},
     {"name":"spr_bahati_rock2","order":48,"path":"sprites/spr_bahati_rock2/spr_bahati_rock2.yy",},
     {"name":"spr_bahati_rock3","order":49,"path":"sprites/spr_bahati_rock3/spr_bahati_rock3.yy",},
     {"name":"spr_bahati_run","order":50,"path":"sprites/spr_bahati_run/spr_bahati_run.yy",},

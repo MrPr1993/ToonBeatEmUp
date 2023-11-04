@@ -67,7 +67,7 @@ global.P4Life=global.LifeStart
 global.P1Life+=global.P1Life*global.Cheat[2]*global.NoCheat
 global.P2Life+=global.P2Life*global.Cheat[2]*global.NoCheat
 global.P3Life+=global.P3Life*global.Cheat[2]*global.NoCheat
-global.P4Life+=global.P5Life*global.Cheat[2]*global.NoCheat
+global.P4Life+=global.P4Life*global.Cheat[2]*global.NoCheat
 
 
 

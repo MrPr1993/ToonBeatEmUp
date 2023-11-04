@@ -204,15 +204,30 @@ if !key_jump_hold and ground
 event_user(4)
 }}
 
-///Grab Enemy
+
 if (image_xscale=1 and key_right and dashing=0 and place_meeting(x+16,y,parEnemy))
 or (image_xscale=-1 and -key_left and dashing=0 and place_meeting(x-16,y,parEnemy))
 or (image_xscale=-1 and key_down and dashing=0 and place_meeting(x-16,y,parEnemy))
 or (image_xscale=-1 and key_up and dashing=0 and place_meeting(x-16,y,parEnemy))
 or (image_xscale=1 and key_down and dashing=0 and place_meeting(x+16,y,parEnemy))
 or (image_xscale=1 and key_up and dashing=0 and place_meeting(x+16,y,parEnemy))
+if anim=1
 {if ground and canmove=1 and carry=0
 throw_command(instance_nearest(x,y,oEnemy1),24*image_xscale,0,0,GrabFrame,30,1)
+}
+
+if (image_xscale=1 and key_right and dashing=0 and place_meeting(x+16,y,oPlayer))
+or (image_xscale=-1 and -key_left and dashing=0 and place_meeting(x-16,y,oPlayer))
+or (image_xscale=-1 and key_down and dashing=0 and place_meeting(x-16,y,oPlayer))
+or (image_xscale=-1 and key_up and dashing=0 and place_meeting(x-16,y,oPlayer))
+or (image_xscale=1 and key_down and dashing=0 and place_meeting(x+16,y,oPlayer))
+or (image_xscale=1 and key_up and dashing=0 and place_meeting(x+16,y,oPlayer))
+if anim=1
+{if ground and canmove=1 and carry=0
+playerthrow=instance_place(x+16*image_xscale,y,oPlayer)
+if place_meeting(x+16*image_xscale,y,playerthrow)
+if playerthrow.immune=0 and playerthrow.recovery=0 and playerthrow.recoveryThrow=0
+throw_command(playerthrow,24*image_xscale,0,0,GrabFrame,30,1)
 }
 
 }

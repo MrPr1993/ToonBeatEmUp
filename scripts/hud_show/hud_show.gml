@@ -1,4 +1,6 @@
 function hud_show() {
+	if object_index!=oPlayer
+	{
 	oControl.showhp=showhp
 
 	oControl.enemyhp=hp oControl.hpLerp=hp oControl.enemymaxhp=maxhp
@@ -20,10 +22,7 @@ function hud_show() {
 	{
 	oControl.enemydead=1
 	} else oControl.enemydead=0
-
-
-
-
+	}
 
 
 }
