@@ -123,7 +123,7 @@ if global.SurvivalUnlock=0 MenuText="LOCKED"
 }
 
 if global.MinigameSel=2 {MenuText="CAN YOU DEFEAT EVERYONE? CAN YOU?\n"+"BOSSES DEFEATED:"+string(global.HiScoreBossBattles)+"\nHIGH SCORE:"+string(global.HiScoreBossBattlesScore) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
-global.StageGoing=rm_arena
+global.StageGoing=rm_arena global.ArenaType=3;
 if global.BossBattleUnlock=0 MenuText="LOCKED"
 }
 
@@ -144,7 +144,7 @@ if global.MinigameSetSel=1
 global.MultiVS=1
 if global.MinigameSel2=0 {MenuText="A GOOD OLD FASHIONED BRAWLER VS!\n" //if global.MiniGameUnlock1=0 MenuText="LOCKED"
 global.StageGoing=rm_cargame global.ArenaType=5;}
-if global.MinigameSel2=1 {MenuText="MAKE SURE YOU'RE THE ONE WITH THE BALL!" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+if global.MinigameSel2=1 {MenuText="ONE WITH THE TROPHY IS THE WINNER!" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_brickbreak  global.ArenaType=6;}
 if global.MinigameSel2=2 {MenuText="GET THE MOST STARS TO WIN!" //if global.MiniGameUnlock3=0 MenuText="LOCKED"
 global.StageGoing=rm_eatinggame  global.ArenaType=7;}

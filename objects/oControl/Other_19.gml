@@ -25,9 +25,9 @@ if playerNO=3
 global.P3Char=character
 if playerNO=4
 global.P4Char=character
-canmove=0  animFrame=0
-key_left=0 key_right=0 key_up=0 key_down=0 anim=0
-}if stagePose=1 oPlayer.anim=210
+canmove=0  key_charge=0
+key_left=0 key_right=0 key_up=0 key_down=0
+}with oPlayer if stagePose!=0 {anim=210 animFrame=0}
 
 alarm[6]=80
 

@@ -1090,7 +1090,10 @@ if room=rm_menu {global.NoCheat=1; global.ArenaType=0}
 if room!=rm_characterselect and room!=rm_minigames
 {
 if global.ArenaType=2 instance_create(0,0,oArenaSurvival)
+if global.ArenaType=3 instance_create(0,0,oArenaBossBattles)
 if global.ArenaType=5 instance_create(0,0,oArenaVS)
+if global.ArenaType=6 instance_create(0,0,oArenaOddball)
+if global.ArenaType=7 instance_create(0,0,oArenaPoints)
 }
 if instance_exists(oArenaSurvival)
 with oControl
