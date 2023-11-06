@@ -1225,7 +1225,7 @@ frame_set(0,0,0.025)
 
 if animFrame=clamp(animFrame,0.25,1-0.25) {wnd.x=lerp(wnd.x,x,0.25)}
 
-if animFrame=1 {with wnd instance_destroy() oControl.quakeFXTime=10
+if animFrame=1 {if instance_exists(wnd) with wnd instance_destroy() oControl.quakeFXTime=10
 	PlaySoundNoStack(snd_swing5)
 	PlaySound(ReturnVoice) enemy_knoockdown() visible=1 dead=0 hurt=0 DeathCryOnce=0}
 frame_set(1,0,0.25)

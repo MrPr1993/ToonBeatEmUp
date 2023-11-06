@@ -91,6 +91,7 @@ minigameselstage=0
 
 multiVSsetting=0;
 charselectgo=1;
+charsetting=0
 
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
@@ -165,7 +166,11 @@ global.CutsceneSkipper=0
 
 global.LevelSelectSave=0
 
+
+
 global.multiMode=1
+
+global.FriendlyFire=0
 
 global.MultiVS=0;
 global.MultiVSHP=1;
@@ -173,7 +178,7 @@ global.MultiVSLife=2;
 global.MultiStage=0
 global.MultiTime=99
 
-
+global.MultiSuper=1 ///players be affected by the super move during multi
 
 global.HiScoreSee=0
 

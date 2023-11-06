@@ -25,6 +25,7 @@ function throw_command(argument0, argument1, argument2, argument3, argument4) {
 	grabY=argument2//0
 	grabZ=argument3//-1
 	 grabTime=targetID.EgrabTime
+	 targetID.thrownPlayer=isPlayer
 	targetID.x=x+grabX
 	targetID.y=y+grabY
 	targetID.z=z+grabZ

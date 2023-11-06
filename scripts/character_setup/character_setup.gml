@@ -344,6 +344,7 @@ randomanim=0
 	Gatk=0
 
 	isPlayer=0
+	thrownPlayer=0
 
 	selfatk=instance_create_depth(x,y,0,oSelfAtk)
 	selfatk.x=x selfatk.y=y selfatk.isPlayer=1

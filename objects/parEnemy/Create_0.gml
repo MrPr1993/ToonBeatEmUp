@@ -28,7 +28,7 @@ ground=1
 
 canmove=1
 
-
+isPlayer=0
 
 sentflying=0
 
@@ -46,6 +46,8 @@ waistPosX[30]=0
 waistPosY[30]=0
 headPosX[30]=0
 headPosY[30]=0
+
+character_setup()
 
 //selfatk=instance_create(-99999999999,-99999999999999,oSelfAtk)
 

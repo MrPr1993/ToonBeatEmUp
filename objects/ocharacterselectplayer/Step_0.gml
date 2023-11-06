@@ -89,11 +89,25 @@ introprep=1 introtextadd+=640
 	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0 haspal=0
 	}
 
-if global.MultiVS=0
+if global.MultiVS=888880
 {
+	
+if oControl.charselectgo=0
+{
+if key_up_pressed{if oControl.multiVSsetting=0 oControl.multiVSsetting=1 else oControl.multiVSsetting-=1 PlaySound(snd_select)}
+if -key_down_pressed{if oControl.multiVSsetting=1 oControl.multiVSsetting=1 else oControl.multiVSsetting+=1 PlaySound(snd_select)}
+
+if oControl.multiVSsetting=0
+{
+
 if -key_left_pressed {if global.Difficulty=0 global.Difficulty=4 else global.Difficulty-=1 PlaySound(snd_select)}
 if key_right_pressed {if global.Difficulty=4 global.Difficulty=0 else global.Difficulty+=1 PlaySound(snd_select)}
-
+}
+if oControl.multiVSsetting=1
+{
+if -key_left_pressed or key_right_pressed {global.FriendlyFire^=1 PlaySound(snd_select)}
+}
+}
 
 }
 }
@@ -116,7 +130,7 @@ key_A or key_attack {if key_A or key_attack
 	
 if oControl.charselectgo=1
 {
-	difficultymode=0
+	difficultymode=0 oControl.charsetting=1
 		oCharacterSelectPlayer.hspeed=-32
 	
 introtextaddspd=-32

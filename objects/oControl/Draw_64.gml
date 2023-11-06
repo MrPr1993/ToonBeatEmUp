@@ -805,10 +805,26 @@ if global.SkipDifficulty=0
 if global.MultiVS=0
 {
 	
+if oControl.charsetting=0
+{
+if p5.key_up_pressed{if oControl.multiVSsetting=0 oControl.multiVSsetting=1 else oControl.multiVSsetting-=1 PlaySound(snd_select)}
+if -p5.key_down_pressed{if oControl.multiVSsetting=1 oControl.multiVSsetting=1 else oControl.multiVSsetting+=1 PlaySound(snd_select)}
+
+if oControl.multiVSsetting=0
+{
+
+if -p5.key_left_pressed {if global.Difficulty=0 global.Difficulty=4 else global.Difficulty-=1 PlaySound(snd_select)}
+if p5.key_right_pressed {if global.Difficulty=4 global.Difficulty=0 else global.Difficulty+=1 PlaySound(snd_select)}
+}
+if oControl.multiVSsetting=1
+{
+if -p5.key_left_pressed or p5.key_right_pressed {global.FriendlyFire^=1 PlaySound(snd_select)}
+}
+}
+
+global.MultiSuper=0	
 charselectgo=1;
 draw_sprite(spr_difficultyselect,0,160+p5.introtextadd-640,round(32+charselLerp))
-
-
 
 draw_set_font(global.scorefont)
 var xadd=-640+160+p5.introtextadd
@@ -827,6 +843,11 @@ if global.Difficulty=3 {diftext="THE MAIN EVENT AT THE CONCERT\n(HARD)"
 if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)" 
 	diftext2="NOT SUITABLE FOR NEWBIES."}
 
+if oControl.multiVSsetting=1
+{diftext="FRIENDLY FIRE" 
+	diftext2="THE OTHER DIVAS CAN GET HIT BY YOUR OWN MOVES.\n(SHOWTIME WON'T APPLY TO THEM)"}
+
+
 draw_text(xadd,120-32-16,diftext)
 draw_text(xadd,128+8,diftext2)
 }
@@ -838,8 +859,8 @@ charselectgo=0;
 
 with p5
 {
-
-
+if oControl.charsetting=0
+{
 if key_up_pressed{if oControl.multiVSsetting=0 oControl.multiVSsetting=3 else oControl.multiVSsetting-=1 PlaySound(snd_select)}
 if -key_down_pressed{if oControl.multiVSsetting=2 oControl.multiVSsetting=3 else oControl.multiVSsetting+=1 PlaySound(snd_select)}
 ////HP Settings
@@ -848,28 +869,27 @@ if oControl.multiVSsetting=0
 if -key_left_pressed {if global.MultiVSHP=0 global.MultiVSHP=3 else global.MultiVSHP-=0.1 PlaySound(snd_select)}
 if key_right_pressed {if global.MultiVSHP=3 global.MultiVSHP=0 else global.MultiVSHP+=0.1 PlaySound(snd_select)}
 }
-
-
 ////Lives/Max Points
+
 if oControl.multiVSsetting=1
 {
 if -key_left_pressed {if global.MultiVSLife=0 global.MultiVSLife=9 else global.MultiVSLife-=1 PlaySound(snd_select)}
 if key_right_pressed {if global.MultiVSLife=9 global.MultiVSLife=0 else global.MultiVSLife+=1 PlaySound(snd_select)}
 }
 
-if oControl.multiVSsetting=2
+if oControl.multiVSsetting=2 
 {
 if -key_left_pressed {if global.MultiTime=0 global.MultiTime=99 else global.MultiTime-=1 PlaySound(snd_select)}
 if key_right_pressed {if global.MultiTime=99 global.MultiTime=0 else global.MultiTime+=1 PlaySound(snd_select)}
 }
 
-
-diftext="LOCKED"
 if oControl.multiVSsetting=3
 {
 if -key_left_pressed {if global.MultiStage=-1 global.MultiStage=18 else global.MultiStage-=1 PlaySound(snd_select)}
 if key_right_pressed {if global.MultiStage=18 global.MultiStage=-1 else global.MultiStage+=1 PlaySound(snd_select)}
 }
+}
+diftext="LOCKED"
 global.StageGoing=rm_arena
 if global.MultiStage=-1 {oControl.charselectgo=1 diftext="RANDOM"
 	
@@ -937,7 +957,14 @@ if global.Difficulty=4 difadd=64
 for (iI=0; iI<=global.Difficulty; iI+=1)
 {
 if global.MultiVS=0
-draw_sprite(spr_difficultystar,0,-32*iI+xadd+difadd,120-8)
+{var selecty=c_gray if oControl.multiVSsetting=0 selecty=c_white
+draw_sprite_ext(spr_difficultystar,0,-32*iI+xadd+difadd,120-8,1,1,0,selecty,1)
+selecty=c_gray if oControl.multiVSsetting=1 selecty=c_white
+draw_set_color(selecty)
+ var onoff="OFF" if global.FriendlyFire onoff="ON" draw_set_halign(fa_center)
+draw_text(-640+160+p5.introtextadd,120+32,"FRIENDLY FIRE:"+string(onoff))
+draw_set_color(c_white) draw_set_halign(fa_left)
+}
 }
 }
 ///COMMAND TEXT

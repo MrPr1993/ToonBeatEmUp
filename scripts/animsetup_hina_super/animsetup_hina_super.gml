@@ -2,7 +2,11 @@
 function animsetup_hina_super() {
 	if anim=50 ///
 	{
-	if animFrame=0 {PlaySound(snd_hina6)}
+	if animFrame=0 {PlaySound(snd_Hina_Subarashi)}
+	
+	var targeten=oEnemy1
+if global.MultiVS=1 targeten=oPlayer
+global.MultiSuper=isPlayer
 
 	weaponBack=2 selfatk.image_xscale=0
 	with oControl {if timecheck=-1 {timecheck=alarm[0] alarm[0]=0}}
@@ -93,7 +97,7 @@ function animsetup_hina_super() {
 	if animFrame=6.5 
 	{
 	oShadowFX.colorChange=c_white
-	if instance_exists(oEnemy1) with oEnemy1
+	if instance_exists(targeten) with targeten
 	{
 	}
 	}
@@ -106,9 +110,10 @@ function animsetup_hina_super() {
 
 	      if animFrame<=6 ///Clear Screen
 	   {oShadowFX.colorChange=c_black
-	        if instance_exists(oEnemy1) 
-	   {oEnemy1.watchSourceX=x
-	   with oEnemy1
+	        if instance_exists(targeten) 
+	   {targeten.watchSourceX=x
+	   with targeten
+	   	if isPlayer!=global.MultiSuper
 	   enemy_freeze(ThrownSpr,GrabFrame,0,0)
 	}
 
@@ -118,19 +123,21 @@ function animsetup_hina_super() {
 	if animFrame=clamp(animFrame,5,16)
 	{oControl.quakeFXTime=2
 
-	    if instance_exists(oEnemy1) 
-	   {oEnemy1.watchSourceX=x 
-	   with oEnemy1
+	    if instance_exists(targeten) 
+	   {targeten.watchSourceX=x 
+	   with targeten
 	   {
+		   	if isPlayer!=global.MultiSuper
 	enemy_freeze(ThrownSpr,GrabFrame,5,0)
 
 	}
 
 	}     } 
 	   if animFrame=16.1 ///Clear Screen
-	   if instance_exists(parEnemy) with parEnemy if canact=1 and act=1 and immune=0
+	   if instance_exists(targeten) with targeten if canact=1 and act=1 and immune=0
 	  // if x<camera_get_view_x(view_camera[0])+320+sprite_get_width(mask_index)/2 and x>camera_get_view_x(view_camera[0])-sprite_get_width(mask_index)/2
 	   if Throw=0 and dead=0
+	   	if isPlayer!=global.MultiSuper
 	{superThrown=0 hspeed=0 hp-=0.5 ////Super Attack Damage
 	 hud_show() hpscan() animFrame=0 image_index=0
 	 if hp<=0

@@ -12,6 +12,8 @@ if controlNO=2 {PlayerLife=global.P2Life PlayerScore=global.P2Score character=gl
 if controlNO=3 {PlayerLife=global.P3Life PlayerScore=global.P3Score character=global.P3Char;}
 if controlNO=4 {PlayerLife=global.P4Life PlayerScore=global.P4Score character=global.P4Char;}
 
+if global.FriendlyFire {isPlayer=playerNO selfatk.isPlayer=isPlayer}
+
 if room=rm_stagesnow
 oPlayer.Cweather=1;
 }
