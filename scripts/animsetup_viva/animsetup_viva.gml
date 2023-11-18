@@ -1112,7 +1112,12 @@ selfatk.recovery=30
 	
 		///Taunt
 	if anim=83
-{sprite_index=spr_viva_taunt //if key_right if animFrame<1 {animFrame=0 anim=211}
+{
+if animFrame=0 {specialtaunt=-1 if key_up {specialtaunt=1 specialtimes[0]+=1}}	
+
+if specialtaunt=-1 ///Heart Taunt
+{
+sprite_index=spr_viva_taunt //if key_right if animFrame<1 {animFrame=0 anim=211}
 atk=0 weaponanim(weaponspr,weaponIndex,99990,99999,101*image_xscale,weaponcolor)
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.1)
@@ -1128,6 +1133,51 @@ alarm[5]=60 changespr=sprite_index changeimgspd=0.5 changeimpindex=2}}
 	frame_set(5,5,0.05)
 	frame_set(6,0,0.1)
 if animFrame>6.5 {canmove=1 atk=0}
+}
+
+if specialtaunt=1 ///Smoke
+{
+sprite_index=spr_viva_win2 //-4,-72
+	frame_set(0,0,0.1)
+	frame_set(1,1,0.1)
+	frame_set(2,2,0.01)
+	frame_set(3,1,0.1) if animFrame=4
+			{
+			if specialtimes[0]<3		
+			{
+			specialtimes[0]+=1			
+			hrt=instance_create_depth(x-4*image_xscale,y,-1,oFlashFX)
+		hrt.z=z-72 hrt.depth=depth-1 hrt.hspeed=0.16*image_xscale
+		with hrt
+		{alarm[0]=8888 sprite_index=spr_smokesmall image_speed=0.5
+zSpeed=-.04 zSpeedAdd=-0.1 isDepth=0}
+			}
+else
+{specialtimes[0]=0 specialcheck5=0
+			specialtaunt=10 animFrame=1
+			}
+}
+	frame_set(4,3,0.05)
+	frame_set(5,0,0.1)
+	if animFrame>5.5 {canmove=1 atk=0}
+}
+if specialtaunt=10 ///Smoke cough
+{frame_set(0,0,0.1) sprite_index=spr_viva_cough
+frame_set(1,1,0.1) if animFrame=1.1
+{
+			hrt=instance_create_depth(x+11*image_xscale,y,-1,oFlashFX)
+		hrt.z=z-59 hrt.depth=depth-1 hrt.hspeed=0.8*image_xscale
+		with hrt
+		{alarm[0]=8888 sprite_index=spr_smokesmall image_speed=0.5
+zSpeed=-.04 zSpeedAdd=-0.1 isDepth=0}
+}
+frame_set(2,2,0.1)
+frame_set(3,3,0.1)
+frame_set(4,4,0.1) if animFrame=5 if specialcheck5!=2 {specialcheck5+=1 animFrame=1}
+frame_set(5,4,0.1) if animFrame>5.5 {specialtaunt=1 animFrame=5}
+
+}
+
 }
 
 	///Back Punch Attack

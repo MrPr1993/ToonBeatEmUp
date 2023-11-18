@@ -621,6 +621,7 @@
     {"name":"spr_bcameo17","order":16,"path":"sprites/spr_bcameo17/spr_bcameo17.yy",},
     {"name":"draw_sprite_clip_ext","order":15,"path":"scripts/draw_sprite_clip_ext/draw_sprite_clip_ext.yy",},
     {"name":"draw_swing","order":4,"path":"scripts/draw_swing/draw_swing.yy",},
+    {"name":"spr_viva_cough","order":90,"path":"sprites/spr_viva_cough/spr_viva_cough.yy",},
     {"name":"draw_wolf","order":5,"path":"scripts/draw_wolf/draw_wolf.yy",},
     {"name":"drop_object","order":16,"path":"scripts/drop_object/drop_object.yy",},
     {"name":"dust_make","order":60,"path":"scripts/dust_make/dust_make.yy",},

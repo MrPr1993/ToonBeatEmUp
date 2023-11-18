@@ -768,6 +768,7 @@
     {"id":{"name":"spr_bcameo17","path":"sprites/spr_bcameo17/spr_bcameo17.yy",},},
     {"id":{"name":"draw_sprite_clip_ext","path":"scripts/draw_sprite_clip_ext/draw_sprite_clip_ext.yy",},},
     {"id":{"name":"draw_swing","path":"scripts/draw_swing/draw_swing.yy",},},
+    {"id":{"name":"spr_viva_cough","path":"sprites/spr_viva_cough/spr_viva_cough.yy",},},
     {"id":{"name":"draw_wolf","path":"scripts/draw_wolf/draw_wolf.yy",},},
     {"id":{"name":"drop_object","path":"scripts/drop_object/drop_object.yy",},},
     {"id":{"name":"dust_make","path":"scripts/dust_make/dust_make.yy",},},

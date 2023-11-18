@@ -7,6 +7,7 @@ function character_setup() {
 	colorshade_setup()
 
 specialtaunt=-1
+specialtimes[9]=0
 
 playerGet=0
 

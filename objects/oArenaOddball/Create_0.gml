@@ -42,7 +42,9 @@ p2Over=0
 p3Over=0
 p4Over=0	
 
-with oPlayer {PlayerLife=9 if weaponspawn!=-1 {
+with oPlayer {
+	playerGet=0 stagePose=0
+	PlayerLife=9 if weaponspawn!=-1 {playerGet=1 stagePose=1
 with oArenaOddball
 {
 p1Over=0
@@ -58,7 +60,9 @@ if playerNO=3 oArenaOddball.p3Over=1
 if playerNO=4 oArenaOddball.p4Over=1
 
 	draw_text(40+80*(playerNO-1),50,"HAS IT!")
-	}}
+	}
+	
+	}
 
 }
 

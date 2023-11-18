@@ -1,4 +1,9 @@
 function enemy_step() {
+selfatk.flashX=flashX
+selfatk.flashY=flashY
+selfatk.flashZ=flashZ
+selfatk.HitQuake=HitQuake	
+
 	if activeCheck=1
 	if __view_get( e__VW.XView, 0 )>x-320-128 {act=1 visible=1 activeCheck=0}
 

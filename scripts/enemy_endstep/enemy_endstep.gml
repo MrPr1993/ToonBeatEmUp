@@ -1,6 +1,6 @@
 /// @description Attack Setup
 function enemy_endstep() {
-	selfatk.flashZ=-32
+	flashZ=32
 	
 	if act=1
 	{
