@@ -10,7 +10,7 @@
   "bitRate": 192,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.223299,
+  "duration": 0.218299,
   "parent": {
     "name": "Items",
     "path": "folders/f - Sounds/Items.yy",

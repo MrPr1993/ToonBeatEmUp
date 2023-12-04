@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.438435,
+  "duration": 0.448167,
   "parent": {
     "name": "Objects",
     "path": "folders/f - Sounds/Objects.yy",

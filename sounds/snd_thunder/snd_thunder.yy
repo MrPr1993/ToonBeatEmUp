@@ -10,14 +10,14 @@
   "bitRate": 192,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.418005,
+  "duration": 0.731646,
   "parent": {
     "name": "General",
     "path": "folders/f - Sounds/General.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd_thunder",
+  "soundFile": "snd_thunder.wav",
   "type": 0,
   "volume": 1.0,
 }

@@ -3,7 +3,7 @@ if immune=0
 {
 {
 if Throw=0 and dead=0 and other.thrownAtk=1 and anim!=6
-if other.z>z-height and other.z<z+2 and other.thrownPlayer!=isPlayer and other.anim=5
+if other.z>z-height and other.z<z+2 and other.thrownPlayer!=-1 and other.thrownPlayer!=isPlayer and other.anim=5
 if recovery=0
 {
 hp-=other.thrownAtkDmg/(defense+extradefense)

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sound19",
+  "name": "snd_creak",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 192,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.875748,
+  "duration": 0.870748,
   "parent": {
-    "name": "f - Sounds",
-    "path": "folders/f - Sounds.yy",
+    "name": "Objects",
+    "path": "folders/f - Sounds/Objects.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "sound19",
+  "soundFile": "snd_creak",
   "type": 0,
   "volume": 1.0,
 }

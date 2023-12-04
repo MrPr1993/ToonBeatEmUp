@@ -10,14 +10,14 @@
   "bitRate": 192,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.640646,
+  "duration": 0.6515,
   "parent": {
     "name": "Objects",
     "path": "folders/f - Sounds/Objects.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd_hitgroundheavy",
+  "soundFile": "snd_hitgroundheavy.wav",
   "type": 0,
   "volume": 1.0,
 }

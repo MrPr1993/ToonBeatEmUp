@@ -1,7 +1,7 @@
 function hitresponse() {
 	hp-=other.damage/(defense+extradefense)
 	roll=other.roll
-
+thrownPlayer=-1
 	other.hitID=id
 
 	recovery=other.recovery

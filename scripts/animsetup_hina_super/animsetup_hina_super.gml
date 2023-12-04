@@ -61,9 +61,9 @@ global.MultiSuper=isPlayer
 	if image_index<1.5
 	image_index+=0.5
 	}
-
+if animFrame=8 PlaySoundNoStack(snd_flamelong) 
 	if animFrame>8 
-	if special1<0 {PlaySoundNoStack(snd_flame) special1=2} else special1-=1
+	if special1<0 {special1=2} else special1-=1
 
 	if animFrame=clamp(animFrame,5,31+0.9)
 	{animFrame+=0.1 gong.image_speed=1

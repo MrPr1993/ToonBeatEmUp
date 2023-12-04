@@ -346,7 +346,7 @@ stagePose=1
 	Gatk=0
 
 	isPlayer=0
-	thrownPlayer=0
+	thrownPlayer=-1
 
 	selfatk=instance_create_depth(x,y,0,oSelfAtk)
 	selfatk.x=x selfatk.y=y selfatk.isPlayer=1

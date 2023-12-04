@@ -10,14 +10,14 @@
   "bitRate": 192,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.802562,
+  "duration": 0.958833,
   "parent": {
     "name": "General",
     "path": "folders/f - Sounds/General.yy",
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd_flame",
+  "soundFile": "snd_flame.wav",
   "type": 0,
   "volume": 1.0,
 }

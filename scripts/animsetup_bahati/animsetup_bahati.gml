@@ -1376,7 +1376,7 @@ if animFrame>3.5 {canmove=1 atk=0}
 	
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.05) if animFrame=2 
-	{PlaySound(snd_bahati12)  PlaySound(snd_hitground)
+	{PlaySound(snd_bahati12)  PlaySound(snd_hitgroundheavy)
 	oControl.quakeFXTime=4
 	rockFX=0;
 	

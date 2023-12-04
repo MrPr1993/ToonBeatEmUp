@@ -41,7 +41,7 @@ if (z-height)<(other.z) and (z)>(other.z-other.height)
 	}
 
 	shaketime=30
-
+thrownPlayer=-1 
 	targetHeightHit=other.targetHeight
 
 	other.comboHit=90

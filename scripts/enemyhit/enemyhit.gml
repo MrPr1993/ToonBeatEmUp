@@ -6,6 +6,8 @@ function enemyhit() {
 		atk=0 selfatk.atk=0
 	hp-=other.damage/(defense+extradefense)
 
+thrownPlayer=-1 
+
 	other.hitID=id
 
 	if !(x>other.SourceX and image_xscale=-1)
