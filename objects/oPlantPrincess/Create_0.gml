@@ -15,7 +15,7 @@ OneAttack=2
 
 isHeavy=1
 
-
+idlestyle=1
 
 hp=2
 maxhp=2

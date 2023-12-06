@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"19e86ece-a3df-46be-915e-7787d7fce9e1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f777037d-f20f-4fbf-9097-e22c250b1450",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"846c3ecf-4c8f-4971-8744-3f1a823c0e40",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"19e86ece-a3df-46be-915e-7787d7fce9e1","path":"sprites/spr_dastardly2_stand/spr_dastardly2_stand.yy",},},},"Disabled":false,"id":"55eddb9f-575a-4dd7-b1e8-a5cdc10461cf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f777037d-f20f-4fbf-9097-e22c250b1450","path":"sprites/spr_dastardly2_stand/spr_dastardly2_stand.yy",},},},"Disabled":false,"id":"a1692ef3-f2f3-4732-9d06-b85d35b06121","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"846c3ecf-4c8f-4971-8744-3f1a823c0e40","path":"sprites/spr_dastardly2_stand/spr_dastardly2_stand.yy",},},},"Disabled":false,"id":"b2e723e8-59ce-4e1d-8094-44ebcc7e90f4","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

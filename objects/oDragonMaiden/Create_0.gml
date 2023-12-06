@@ -35,13 +35,13 @@ AtkSpr5=spr_octopus_stand
 JumpAtkSpr=spr_octopus_stand
 JumpAtkSpr2=spr_octopus_stand
 
-JumpSpr=spr_octopus_stand
-JumpSpr2=spr_octopus_stand
-ThrownSpr=spr_octopus_hit
-FlatSpr=spr_octopus_flat
-ShockSpr=spr_octopus_elec
-BurnSpr=spr_octopus_burned
-FrozenSpr=spr_octopus_frozen
+JumpSpr=spr_dragonmaiden_head
+JumpSpr2=spr_dragonmaiden_head
+ThrownSpr=spr_dragonmaiden_headhit
+FlatSpr=spr_dragonmaiden_headflat
+ShockSpr=spr_dragonmaiden_headelec
+BurnSpr=spr_dragonmaiden_headburned
+FrozenSpr=spr_dragonmaiden_frozen
 
 
 lockPos=1;

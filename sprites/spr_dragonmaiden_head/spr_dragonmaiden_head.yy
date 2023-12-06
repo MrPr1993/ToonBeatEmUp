@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_dragonmaiden_head",
-  "bbox_bottom": 232,
+  "bbox_bottom": 233,
   "bbox_left": 0,
   "bbox_right": 305,
   "bbox_top": 0,
@@ -13,7 +13,9 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cf58baf4-8bb6-4278-b322-617a984e5dcc",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0af6aa34-cbbc-47ae-b886-79803a9b8278",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3bbf70c-38fe-4dbb-83c3-cdaca250cce3",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -54,7 +56,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0af6aa34-cbbc-47ae-b886-79803a9b8278","path":"sprites/spr_dragonmaiden_head/spr_dragonmaiden_head.yy",},},},"Disabled":false,"id":"ed9ee8d0-6509-4195-8863-2e4b7530e7f3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cf58baf4-8bb6-4278-b322-617a984e5dcc","path":"sprites/spr_dragonmaiden_head/spr_dragonmaiden_head.yy",},},},"Disabled":false,"id":"c3c46d57-223f-4392-841a-03c8eb75c234","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0af6aa34-cbbc-47ae-b886-79803a9b8278","path":"sprites/spr_dragonmaiden_head/spr_dragonmaiden_head.yy",},},},"Disabled":false,"id":"ed9ee8d0-6509-4195-8863-2e4b7530e7f3","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3bbf70c-38fe-4dbb-83c3-cdaca250cce3","path":"sprites/spr_dragonmaiden_head/spr_dragonmaiden_head.yy",},},},"Disabled":false,"id":"d161b6a3-b7f6-44f2-8ae6-e65b4680e4ca","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

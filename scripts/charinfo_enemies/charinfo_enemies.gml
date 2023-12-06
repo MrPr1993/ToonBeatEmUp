@@ -74,26 +74,28 @@ break;
 )
 break;
   case 8:
- charinfo_set(12,spr_boxer_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,8,"MS.PUNCH",
+ charinfo_set(13,spr_boxer_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,8,"MS.PUNCH",
  "QUICK ON THEIR TINY FEET, THEY WON'T HESTITATE IF YOU TRY TO GET A JUMP ON THEM. DON'T GET HIT!")
 break;
   case 9:
- charinfo_set(12,spr_wrestler_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,19,"MS.SLAMS",
+ charinfo_set(14,spr_wrestler_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,19,"MS.SLAMS",
  "For being rotund, they can be quick to grab you and slam you hard, and can try and flatten you with a roll!")
 break;
   case 10:
- charinfo_set(12,spr_strongburg_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,37,"MR.CHIP",
+ idlestyle=1
+ charinfo_set(15,spr_strongburg_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,37,"MR.CHIP",
 "A huge guy, he can use his massive arms to give you a deadly bear hug. He can also go for a spin if you get too close!")
 break;
   case 11:
- charinfo_set(12,spr_monk_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,44,"MS.KI",
+ idlestyle=1
+ charinfo_set(16,spr_monk_stand,1,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,44,"MS.KI",
 "Trained under martial arts, she can blast you with her ki and can use their hip to collide you with if you're away.")
 break;
   case 12:
   hp=0.25
 descleft="AGE:32\nNAT.:USA\nH: 4'10\nW: 140LBS"
 descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
- charinfo_set(12,spr_zombiem_stand,1,animsetup_zombie,draw_enemy,spr_zombiepal,0,spr_enemyface,13,"ZOMBILLY",
+ charinfo_set(17,spr_zombiem_stand,1,animsetup_zombie,draw_enemy,spr_zombiepal,0,spr_enemyface,13,"ZOMBILLY",
  "A zombie man who's a little on the clumsy side, who will rush towards their foe and tackle them. By accident.")
 break;
   case 13:
@@ -115,8 +117,9 @@ break;
   case 15:
  charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"POLTERGEIST",
 "A haunted bladed weapon that's taken over with remnants of a spirit obsessed with heads.")
+break;
   case 16:
- charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"PAINTING",
+ charinfo_set(12,spr_painting_base,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"PAINTING",
 "Painting.")
 break;
   case 17:
@@ -140,6 +143,7 @@ break;
 "A silly marionette lady who does a good show with their skills and pain towards the offenders.")
   break;
    case 22:
+  idlestyle=1
  charinfo_set(12,spr_bear_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"ROOSEVELT",
 "An adorable plush of fluff who can teach naughty people how to treat them nice. With their fists.")
  break;
@@ -156,52 +160,65 @@ break;
 "A lobster who's big, and has claws that will give you a strong pinch.")
 break;
 case 26:
-charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"OCTO",
-"Pet of the lady of the beach, who is very protective of the area and will use their tentacles. For pain.")
+idlestyle=1
+charinfo_set(12,spr_dancer_stand,1,animsetup_enemy,draw_enemy,spr_dancerpal,0,spr_enemyface,50,"DANZA",
+"They have the knowledge for enteratinment, with their amorous agility as sharp as their blades.")
  break; 
  case 27:
+idlestyle=1
  charinfo_set(12,spr_diver_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,45,"MR.DIVE",
 "An underwater minion who seeks for their foes under the sea and rob of the treasures. An underwater chump.")
 break;
   case 28:
- charinfo_set(12,spr_diver_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,45,"BAD SUB",
-"An underwater submarine operated by Van Bad's baddies as they search for loot under the sea.")
-break;
-  case 29:
  charinfo_set(12,spr_merman_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,25,"DOUGLAS",
 "A fish man guard who's tasked in taking intruders out and use either a spear or trident to stab you with.")
 break;
-  case 30:
+  case 29:
+ idlestyle=1
  charinfo_set(12,spr_siren_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,26,"SIRENA",
 "They say they are lovely, but they can be pretty viscious if they need to with her projectiles.")
 break;
-  case 31:
+  case 30:
+ idlestyle=1
  charinfo_set(12,spr_martian_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,23,"MARTIA",
 "These space babes have been capturing specimens and will try and catch you with a shock or with their heads!")
 break;
-  case 32:
+  case 31:
  charinfo_set(12,spr_alienrobot_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,28,"ELECTRON",
 "A security robot from space! These machines assist the invaders in capturing escaped experiments.")
 break;
-  case 33:
+  case 32:
+ idlestyle=1
  charinfo_set(12,spr_spacer_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,43,"OJO",
 "They do research on planets and will choose on what planet they will loot with their female counterparts.")
 break;
-  case 34:
+  case 33:
  charinfo_set(12,spr_goblin_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBERT",
 "This is one busy goblin, who hates getting their work disrupted. They want people away from their mine zone!")
 break;
+  case 34:
+  idlestyle=1
+ charinfo_set(12,spr_shroom_stand,1,animsetup_enemy,draw_enemy,spr_playerpal,0,spr_enemyface,52,"AMANITA",
+"She is cheerful! And she can spread a lot of spores to give someone a sensational high like she is now.")
+break;
   case 35:
+ idlestyle=1
  charinfo_set(12,spr_slime_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,22,"MELON",
  "A smug slime who has a malleable skill to smash anyone. In a way by crushing them with their powers.")
 break;
   case 36:
+  idlestyle=1
+ charinfo_set(12,spr_snowgirl_stand,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,51,"PRIMA",
+ "A huge creature who will gonna love them, hug them, pet them and freeze them with their breath.")
+break;
+  case 37:
  charinfo_set(12,spr_ladybot_stand,1,animsetup_enemy,draw_enemy,spr_robotpal,0,spr_enemyface,46,"O-POLIS",
 "A sentry fembot built to combat intruders and can manage and go for a punching charge!")
 
+ 
 }
 
-if image_blend=c_black {name="???" desc=""
+if image_blend=c_black {name="???" desc="" idlestyle=0
 	  descleft=""
 descright=""
 dataabilities=""

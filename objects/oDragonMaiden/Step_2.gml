@@ -53,7 +53,11 @@ if hp=0 or hp<=0 or dead=1 if anim!=9999
 
 if anim=0
 {
+
+if eyeHit
 sprite_index=StandSpr
+else
+sprite_index=spr_dragonmaiden_headhurt
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)

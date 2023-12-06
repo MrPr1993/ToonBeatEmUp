@@ -20,9 +20,11 @@ height=90
 
 specialFX=0
 
+idlestyle=1
+
 StandSpr=spr_dastardly2_stand
-MoveSpr=spr_dastardly2_stand
-RunSpr=spr_dastardly2_stand
+MoveSpr=spr_dastardly2_move
+RunSpr=spr_dastardly2_move
 
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
@@ -32,13 +34,13 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
-JumpSpr=spr_dastardly_stand
+JumpSpr=spr_dastardly2_stand
 JumpSpr2=spr_dastardly_stand
-ThrownSpr=spr_dastardly_hit
-FlatSpr=spr_dastardly_flat
-ShockSpr=spr_dastardly_elec
-BurnSpr=spr_dastardly_burned
-FrozenSpr=spr_dastardly_frozen
+ThrownSpr=spr_dastardly2_hit
+FlatSpr=spr_dastardly2_flat
+ShockSpr=spr_dastardly2_elec
+BurnSpr=spr_dastardly2_burned
+FrozenSpr=spr_dastardly2_frozen
 
 
 

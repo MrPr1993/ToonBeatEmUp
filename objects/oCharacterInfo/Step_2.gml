@@ -20,28 +20,28 @@ wobbleY=lerp(wobbleY,1,0.25)
 if -key_left_pressed {arrowSel1=2 wobbleX=1.1 wobbleY=0.9
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=1 dataSelect=dataRowMax else dataSelect-=1
 	
-	name="???" desc="" image_blend=c_black
+	name="???" desc="" image_blend=c_black idlestyle=0
 	  descleft=""
 descright=""
 dataabilities=""
 	
 	}
 if key_right_pressed {
-		name="???" desc="" image_blend=c_black
+		name="???" desc="" image_blend=c_black idlestyle=0
 	  descleft=""
 descright=""
 dataabilities=""
 	arrowSel2=2 wobbleX=1.1 wobbleY=0.9
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=dataRowMax dataSelect=1 else dataSelect+=1}
 if key_up_pressed {arrowSel3=2
-		name="???" desc="" image_blend=c_black
+		name="???" desc="" image_blend=c_black idlestyle=0
 	  descleft=""
 descright=""
 dataabilities=""
 	wobbleX=1.1 wobbleY=0.9
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=4 else dataRow-=1}
 if -key_down_pressed {arrowSel4=2
-		name="???" desc="" image_blend=c_black
+		name="???" desc="" image_blend=c_black idlestyle=0
 	  descleft=""
 descright=""
 dataabilities=""
@@ -59,11 +59,11 @@ charinfo_divas()
 
 break;
 case 2: ////Enemy Characters - 48
-dataRowMax=36 categoryNames=languagetext[1] hasVariants=1
+dataRowMax=37 categoryNames=languagetext[1] hasVariants=1
 charinfo_enemies()
 break;
 case 3: ///Boss Characters
-dataRowMax=18 categoryNames=languagetext[2] hasVariants=0
+dataRowMax=21 categoryNames=languagetext[2] hasVariants=0
 charinfo_bosses()
 break;
 case 4: ///Locations
