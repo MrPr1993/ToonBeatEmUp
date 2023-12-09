@@ -21,7 +21,9 @@ OneAttack=2
 hp=2
 maxhp=2
 
-height=70
+isHeavy=1
+
+height=110
 
 specialFX=0
 
@@ -48,3 +50,9 @@ FrozenSpr=spr_martianb_frozen
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
+
+if oControl.betatest=1
+if keyboard_check(vk_shift)
+{
+canmove=0 anim=100 animFrame=0;
+}

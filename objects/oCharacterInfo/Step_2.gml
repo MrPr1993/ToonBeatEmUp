@@ -59,7 +59,7 @@ charinfo_divas()
 
 break;
 case 2: ////Enemy Characters - 48
-dataRowMax=37 categoryNames=languagetext[1] hasVariants=1
+dataRowMax=38 categoryNames=languagetext[1] hasVariants=1
 charinfo_enemies()
 break;
 case 3: ///Boss Characters
