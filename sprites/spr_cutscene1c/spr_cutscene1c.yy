@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "spr_cutscene1c",
   "bbox_bottom": 191,
-  "bbox_left": 5,
+  "bbox_left": 0,
   "bbox_right": 206,
   "bbox_top": 9,
   "bboxMode": 0,

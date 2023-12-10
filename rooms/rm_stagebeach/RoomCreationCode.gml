@@ -14,7 +14,7 @@ with oEnemySpawner {
 
 global.HiScoreStage=4
 //with oEnemySpawner {timeline=tm_beach event_user(0)}
-oControl.stageNext=rm_stage4
+oControl.stageNext=rm_cutscene4c
 oControl.stagePause=1
 oControl.StageNumber=8
 

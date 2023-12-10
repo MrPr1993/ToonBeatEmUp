@@ -78,7 +78,23 @@ if level=49 roomGo=rm_arena
 if level=50 roomGo=rm_minigames
 
 if level=51 roomGo=rm_cutscene1
-
+if level=52 roomGo=rm_cutscene2a
+if level=53 roomGo=rm_cutscene2b
+if level=54 roomGo=rm_cutscene2c
+if level=55 roomGo=rm_cutscene3a
+if level=56 roomGo=rm_cutscene3b
+if level=57 roomGo=rm_cutscene3c
+if level=58 roomGo=rm_cutscene4a
+if level=59 roomGo=rm_cutscene4b
+if level=60 roomGo=rm_cutscene4c
+if level=61 roomGo=rm_cutscene5a
+if level=62 roomGo=rm_cutscene5b
+if level=63 roomGo=rm_cutscene5c
+if level=64 roomGo=rm_cutscene6a
+if level=65 roomGo=rm_cutscene6b
+if level=66 roomGo=rm_cutscene6c
+if level=67 roomGo=rm_cutscene7
+if level=68 roomGo=rm_cutscene8
 
 
 

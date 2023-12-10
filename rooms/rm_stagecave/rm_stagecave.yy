@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_stagecave",
-  "creationCodeFile": "${project_dir}/rooms/rm_stagecave/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_stagecave/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_stagecarnival",
-  "creationCodeFile": "${project_dir}/rooms/rm_stagecarnival/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_stagecarnival/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

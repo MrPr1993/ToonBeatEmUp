@@ -29,7 +29,42 @@ if global.MovieSel=1 {MenuText="THE CHAOS"
 global.StageGoing=rm_opening}
 if global.MovieSel=2 {MenuText="WOLFED"
 global.StageGoing=rm_cutscene1}
-
+if global.MovieSel=3 {MenuText="SHIP CUTSCENE"
+global.StageGoing=rm_cutscene2a}
+if global.MovieSel=4 {MenuText="PLANE CUTSCENE"
+global.StageGoing=rm_cutscene2b}
+if global.MovieSel=5 {MenuText="TRAIN CUTSCENE"
+global.StageGoing=rm_cutscene2c}
+if global.MovieSel=6 {MenuText="MUSEUM CUTSCENE"
+global.StageGoing=rm_cutscene3a}
+if global.MovieSel=7 {MenuText="GRAVEYARD CUTSCENE"
+global.StageGoing=rm_cutscene3b}
+if global.MovieSel=8 {MenuText="CASINO CUTSCENE"
+global.StageGoing=rm_cutscene3c}
+if global.MovieSel=9 {MenuText="CARNIVAL CUTSCENE"
+global.StageGoing=rm_cutscene4a}
+if global.MovieSel=10 {MenuText="SWAMP CUTSCENE"
+global.StageGoing=rm_cutscene4b}
+if global.MovieSel=11 {MenuText="BEACH CUTSCENE"
+global.StageGoing=rm_cutscene4c}
+if global.MovieSel=12 {MenuText="MERMAID SCENE"
+global.StageGoing=rm_cutscene5a}
+if global.MovieSel=13 {MenuText="ESCAPE FROM SPACE"
+global.StageGoing=rm_cutscene5b}
+if global.MovieSel=14 {MenuText="GENIE'S WISH"
+global.StageGoing=rm_cutscene5c}
+if global.MovieSel=15 {MenuText="ROYAL PLANT"
+global.StageGoing=rm_cutscene6a}
+if global.MovieSel=16 {MenuText="BROKEN REFLECTION"
+global.StageGoing=rm_cutscene6b}
+if global.MovieSel=17 {MenuText="MAIDEN DRAGON"
+global.StageGoing=rm_cutscene6c}
+if global.MovieSel=18 {MenuText="GET THAT BLIMP!"
+global.StageGoing=rm_cutscene6c}
+if global.MovieSel=19 {MenuText="ENDING SCENE"
+global.StageGoing=rm_cutscene6c}
+if global.MovieSel=20 {MenuText="CREDITS"
+global.StageGoing=rm_creditscene}
 imgscene=global.MovieSel+1
 
 if MenuText="???" imgscene=0;

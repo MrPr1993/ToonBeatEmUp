@@ -11,6 +11,8 @@ with oEnemySpawner
 	MaxY=280
 		}
 		
+		oControl.stageNext=rm_cutscene6b
+		
 with oEnemySpawner {timeline=tm_snow event_user(0)}
 
 

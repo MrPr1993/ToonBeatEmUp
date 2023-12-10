@@ -7,7 +7,7 @@ with oPlayer
 {key_right=0 doubledash=0 dashing=0
 }
 with oControl {
-	stageNext=rm_stage5
+	stageNext=rm_cutscene2c
 	event_user(9) stageBoss="DOLORES"}
 }
 else

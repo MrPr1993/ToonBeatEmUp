@@ -3,6 +3,8 @@ enemy_data()
 
 enemyscript=animsetup_enemy
 
+hasback=0
+
 chardraw=painting_draw
 
 name="PAINTING"
@@ -17,6 +19,7 @@ hp=0.5
 maxhp=0.5
 
 frameSpr=spr_painting_base
+frameSprElec=spr_painting_elec
 frameInd=0
 frameTotal=0
 

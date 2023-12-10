@@ -8,11 +8,11 @@ with oEnemySpawner
 
 global.HiScoreStage=2
 with oEnemySpawner {timeline=tm_graveyard event_user(0)}
-oControl.stageNext=rm_creditscene
+oControl.stageNext=rm_cutscene3b
 oControl.stagePause=1
 oControl.StageNumber=7
 
-oControl.finalStage=1
+
 
 global.HiScoreLevel=3
 

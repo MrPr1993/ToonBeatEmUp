@@ -5,6 +5,8 @@ global.HiScoreLevel=7
 
 oControl.stagePause=1
 
+oControl.stageNext=rm_cutscene7
+
 with oEnemySpawner
 {
 	GoBackY=1 

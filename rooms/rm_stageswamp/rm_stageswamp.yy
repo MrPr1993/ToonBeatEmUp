@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_stageswamp",
-  "creationCodeFile": "${project_dir}/rooms/rm_stageswamp/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/rm_stageswamp/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

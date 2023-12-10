@@ -123,39 +123,39 @@ draw_text(10, yy++ * 10, string_hash_to_newline("MINIGAMES"));
 if level=51 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 1"));
 if level=52 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 2"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 2A-BOAT"));
 if level=53 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 3"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 2B-PLANE"));
 if level=54 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 4"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 2C-TRAIN"));
 if level=55 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 5"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 3A-MUSEUM"));
 if level=56 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 6"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 3B-GRAVEYARD"));
 if level=57 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 7"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 3C-CASINO"));
 if level=58 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 8"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 4A-CARNIVAL"));
 if level=59 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 9"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 4B-SWAMP"));
 if level=60 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 10"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 4C-BEACH"));
 if level=61 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 11"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 5A-UNDERWATER"));
 if level=62 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 12"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 5B-UFO"));
 if level=63 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 13"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 5C-DESERT"));
 if level=64 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 14"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 6A-CAVERN"));
 if level=65 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 15"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 6B-MOUNTAIN"));
 if level=66 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 16"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 6C-CLOUDS"));
 if level=67 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 7A-LAB"));
 if level=68 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING"));
 if level=69 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=70 draw_set_color(c_yellow) else draw_set_color(c_gray)

@@ -11,6 +11,8 @@ with oEnemySpawner
 	MaxY=280
 		}
 		
+		oControl.stageNext=rm_cutscene5b
+		
 with oEnemySpawner {timeline=tm_ufo event_user(0)}
 
 

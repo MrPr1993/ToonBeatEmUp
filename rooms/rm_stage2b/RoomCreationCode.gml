@@ -8,7 +8,7 @@ with oEnemySpawner
 
 global.HiScoreStage=2
 with oEnemySpawner {timeline=tm_airplane event_user(0)}
-oControl.stageNext=rm_stage4
+oControl.stageNext=rm_cutscene2b
 oControl.stagePause=1
 oControl.StageNumber=2
 

@@ -20,7 +20,7 @@ alarm[0]=-1 ///Time to stop
 oEnemySpawner.timeline=tm_stage2
 oEnemySpawner.timehit=-100
 
-oControl.stageNext=rm_stage3
+oControl.stageNext=rm_cutscene2a
 oControl.stagePause=1
 
 oControl.StageNumber=3
