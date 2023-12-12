@@ -13,7 +13,7 @@ if anim=10
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)>80
 {
-if distance_to_point(targetEnemy.x,targetEnemy.y)>120
+if distance_to_point(targetEnemy.x,targetEnemy.y)<120
 	anim=choose(12) else anim=choose(13,14,65)
 }
 	else

@@ -21,8 +21,9 @@ draw_sprite_ext(frameSpr,frameTotal,round(x+((floorPosX[image_index]*floorPos+wa
 
 if hasback 
 {
-
-draw_sprite_ext(paintingSpr,paintingInd,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),(wobbleX)*paintingScale,(image_yscale*wobbleY)*noflattened,image_angle,image_blend,image_alpha)
+var _dirpic=1;
+if frameTotal=clamp(frameTotal,5,12.9) _dirpic=-1
+draw_sprite_ext(paintingSpr,paintingInd,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),((wobbleX)*paintingScale)*_dirpic,(image_yscale*wobbleY)*noflattened,image_angle,image_blend,image_alpha)
 }
 else
 if frameInd!=clamp(frameInd,4,12)

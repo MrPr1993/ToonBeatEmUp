@@ -27,6 +27,8 @@ paintingSpr=spr_painting1
 paintingInd=0
 paintingScale=1
 
+frameParts=spr_painting_part
+
 StandSpr=spr_burglarB_stand
 	MoveSpr=spr_burglarB_move
 	

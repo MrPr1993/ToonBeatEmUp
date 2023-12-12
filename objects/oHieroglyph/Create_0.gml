@@ -27,3 +27,4 @@ paintingSpr=spr_heye
 paintingInd=0
 paintingScale=1
 
+frameParts=spr_hieroglyph_part
