@@ -252,7 +252,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.0.121",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"oFisingFish","path":"objects/oFisingFish/oFisingFish.yy",},},
@@ -799,6 +799,7 @@
     {"id":{"name":"d3d_transform_add_scaling","path":"scripts/d3d_transform_add_scaling/d3d_transform_add_scaling.yy",},},
     {"id":{"name":"spr_strongburg_grabL","path":"sprites/spr_strongburg_grabL/spr_strongburg_grabL.yy",},},
     {"id":{"name":"d3d_transform_add_translation","path":"scripts/d3d_transform_add_translation/d3d_transform_add_translation.yy",},},
+    {"id":{"name":"spr_ladybot_fire","path":"sprites/spr_ladybot_fire/spr_ladybot_fire.yy",},},
     {"id":{"name":"d3d_transform_set_identity","path":"scripts/d3d_transform_set_identity/d3d_transform_set_identity.yy",},},
     {"id":{"name":"d3d_transform_set_translation","path":"scripts/d3d_transform_set_translation/d3d_transform_set_translation.yy",},},
     {"id":{"name":"draw_brickbreakgame","path":"scripts/draw_brickbreakgame/draw_brickbreakgame.yy",},},
@@ -1581,6 +1582,7 @@
     {"id":{"name":"bg_sky3","path":"sprites/bg_sky3/bg_sky3.yy",},},
     {"id":{"name":"bg_sky4","path":"sprites/bg_sky4/bg_sky4.yy",},},
     {"id":{"name":"bg_sky5","path":"sprites/bg_sky5/bg_sky5.yy",},},
+    {"id":{"name":"spr_ladybot_rocket","path":"sprites/spr_ladybot_rocket/spr_ladybot_rocket.yy",},},
     {"id":{"name":"spr_nurse_attack","path":"sprites/spr_nurse_attack/spr_nurse_attack.yy",},},
     {"id":{"name":"spr_crocwet","path":"sprites/spr_crocwet/spr_crocwet.yy",},},
     {"id":{"name":"bg_sky6","path":"sprites/bg_sky6/bg_sky6.yy",},},

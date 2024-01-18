@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "spr_sneak_attack",
   "bbox_bottom": 127,
-  "bbox_left": 33,
+  "bbox_left": 28,
   "bbox_right": 127,
   "bbox_top": 41,
   "bboxMode": 0,
