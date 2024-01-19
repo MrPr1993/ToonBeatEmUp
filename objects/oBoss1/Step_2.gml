@@ -267,8 +267,8 @@ animFrame+=0.2
 animFrame=clamp(animFrame,0,3.5)
 
 image_index=animFrame
-
-sprite_index=spr_wolfita_dead
+if hitBack=0
+sprite_index=spr_wolfita_dead else sprite_index=spr_wolfita_dead2
 if animFrame>3.2
 if specialBossState=1
 {specialBossState=0

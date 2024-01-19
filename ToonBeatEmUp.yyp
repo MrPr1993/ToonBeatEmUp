@@ -3052,6 +3052,7 @@
     {"id":{"name":"oPainting","path":"objects/oPainting/oPainting.yy",},},
     {"id":{"name":"mask_octopus","path":"sprites/mask_octopus/mask_octopus.yy",},},
     {"id":{"name":"spr_spacer_stand","path":"sprites/spr_spacer_stand/spr_spacer_stand.yy",},},
+    {"id":{"name":"spr_wolfita_dead2","path":"sprites/spr_wolfita_dead2/spr_wolfita_dead2.yy",},},
     {"id":{"name":"spr_duck_attack2","path":"sprites/spr_duck_attack2/spr_duck_attack2.yy",},},
     {"id":{"name":"spr_spawnpos","path":"sprites/spr_spawnpos/spr_spawnpos.yy",},},
     {"id":{"name":"spr_spookymonth","path":"sprites/spr_spookymonth/spr_spookymonth.yy",},},

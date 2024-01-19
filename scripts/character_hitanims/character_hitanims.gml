@@ -319,7 +319,9 @@ with cutSelf
 	if image_index<4
 	sprite_index=BurnSpr
 	else
-	sprite_index=spr_viva_burned
+	{if sprite_index!=spr_viva_burned
+	sprite_index=spr_burglar_burned
+	}
 
 	if !ground
 	sentflying=HitForceReact

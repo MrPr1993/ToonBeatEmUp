@@ -2818,6 +2818,7 @@
     {"name":"oPainting","order":1,"path":"objects/oPainting/oPainting.yy",},
     {"name":"mask_octopus","order":9,"path":"sprites/mask_octopus/mask_octopus.yy",},
     {"name":"spr_spacer_stand","order":7,"path":"sprites/spr_spacer_stand/spr_spacer_stand.yy",},
+    {"name":"spr_wolfita_dead2","order":17,"path":"sprites/spr_wolfita_dead2/spr_wolfita_dead2.yy",},
     {"name":"spr_duck_attack2","order":10,"path":"sprites/spr_duck_attack2/spr_duck_attack2.yy",},
     {"name":"spr_spawnpos","order":10,"path":"sprites/spr_spawnpos/spr_spawnpos.yy",},
     {"name":"spr_spookys","order":1,"path":"sprites/spr_spookys/spr_spookys.yy",},

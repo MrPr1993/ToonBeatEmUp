@@ -4,7 +4,7 @@
   "name": "spr_monk_attack",
   "bbox_bottom": 95,
   "bbox_left": 22,
-  "bbox_right": 91,
+  "bbox_right": 93,
   "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 1,
