@@ -1,6 +1,8 @@
 function bobject_setup() {
 colorshade_setup()	
 
+
+
 	z=0
 	trainz=0
 	zSpeed=0
@@ -74,6 +76,9 @@ PickupSound=snd_pickitem
 
 	weapon_pal=0;
 	weapon_pal_sprite=spr_barrelpal
+	
+	enemyPortraitSpr=spr_miscface
+	enemyPortraitIndex=0
 
 	///Override stuff.
 	override_surface=noone;

@@ -17,7 +17,14 @@ ini_write_real("ENEMYTEST","TEST", global.enemytest)
 ini_write_real("ENEMYTEST","TESTB", global.enemytestB)
 ini_close()
 
+if spawnUnit!=-1
 en=instance_create(mouse_x,mouse_y,spawnUnit)
+
+if enemySpawn=19 {
+	var treaset=global.TreasureSet;
+	if keyboard_check(vk_control) treaset=round(random(20));
+treasure_set(treaset,mouse_x,mouse_y,0) exit;
+}
 
 if keyboard_check(vk_pageup) with en
 {canmove=0 anim=70002}
@@ -73,6 +80,8 @@ weaponspr=choose(spr_crate,spr_barrel_roll,spr_dbarrel,spr_slotmachine,spr_trash
 spawnID=choose(oHotDog,oBurger,oAxe)
 
 }
+
+
 
 if object_index=oSwing if keyboard_check(vk_control)
 {

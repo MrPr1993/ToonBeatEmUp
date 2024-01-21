@@ -22,13 +22,15 @@ function pick_item(){
 	{carry=item.iscarry item.carryID=id } if item.isweapon=1 
 	{weaponspawn=item.itemname weaponLife=item.weaponLife }
 	PlayerScore+=item.points
+	
 
+	
 
 
 	oControl.showhp=0
 	oControl.enemyhp=0 oControl.hpLerp=0 oControl.enemymaxhp=0
-	oControl.enemyPortraitSpr=spr_miscface
-	oControl.enemyPortraitIndex=0
+	oControl.enemyPortraitSpr=item.enemyPortraitSpr
+	oControl.enemyPortraitIndex=item.enemyPortraitIndex
 	oControl.enemyname=item.name
 	oControl.enemyShowTime=30
 	oControl.hpLerp=0

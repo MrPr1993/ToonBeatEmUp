@@ -1,4 +1,7 @@
 function item_setup() {
+	enemyPortraitSpr=spr_miscface
+	enemyPortraitIndex=0
+	
 	specialscript=-1;
 	
 	height=32

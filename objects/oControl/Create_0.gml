@@ -354,6 +354,8 @@ globalcontrols(1)
 shopreset()
 }
 
+global.TreasureSet=0;
+
 featicon[99]=0
 featsel=1
 featsellerp=1
