@@ -160,6 +160,7 @@
     {"name":"Special Items","order":2,"path":"folders/9 - Objects And Items/b - Items/Special Items.yy",},
     {"name":"Treasures","order":3,"path":"folders/9 - Objects And Items/b - Items/Treasures.yy",},
     {"name":"Weapons","order":1,"path":"folders/9 - Objects And Items/b - Items/Weapons.yy",},
+    {"name":"c - Treasure Sprites","order":4,"path":"folders/9 - Objects And Items/c - Treasure Sprites.yy",},
     {"name":"a - Unused Objects","order":25,"path":"folders/a - Unused Objects.yy",},
     {"name":"b - Colission Masks","order":36,"path":"folders/b - Colission Masks.yy",},
     {"name":"c - Timelines","order":40,"path":"folders/c - Timelines.yy",},
@@ -202,7 +203,6 @@
     {"name":"Notes","order":16,"path":"folders/Notes.yy",},
     {"name":"TV FX","order":28,"path":"folders/TV FX.yy",},
     {"name":"z99 - Extensions","order":14,"path":"folders/z99 - Extensions.yy",},
-    {"name":"c - Treasure Sprites","order":4,"path":"folders/9 - Objects And Items/c - Treasure Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oFisingFish","order":85,"path":"objects/oFisingFish/oFisingFish.yy",},
@@ -2138,6 +2138,7 @@
     {"name":"spr_harpye_attack1","order":8,"path":"sprites/spr_harpye_attack1/spr_harpye_attack1.yy",},
     {"name":"spr_hina_handgun","order":35,"path":"sprites/spr_hina_handgun/spr_hina_handgun.yy",},
     {"name":"spr_hina_heart","order":36,"path":"sprites/spr_hina_heart/spr_hina_heart.yy",},
+    {"name":"oEntryMirror","order":15,"path":"objects/oEntryMirror/oEntryMirror.yy",},
     {"name":"spr_hina_hit","order":37,"path":"sprites/spr_hina_hit/spr_hina_hit.yy",},
     {"name":"spr_hina_hitscreen","order":38,"path":"sprites/spr_hina_hitscreen/spr_hina_hitscreen.yy",},
     {"name":"spr_hina_idle","order":39,"path":"sprites/spr_hina_idle/spr_hina_idle.yy",},

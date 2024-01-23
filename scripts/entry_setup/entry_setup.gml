@@ -15,6 +15,8 @@ image_speed=0
 
 hidden=0
 
+risespd=0.025
+
 isDepth=1
 xySpeed=0
 	///Palette Options

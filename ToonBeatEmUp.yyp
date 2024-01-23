@@ -184,6 +184,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Special Items","folderPath":"folders/9 - Objects And Items/b - Items/Special Items.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Treasures","folderPath":"folders/9 - Objects And Items/b - Items/Treasures.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Weapons","folderPath":"folders/9 - Objects And Items/b - Items/Weapons.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"c - Treasure Sprites","folderPath":"folders/9 - Objects And Items/c - Treasure Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"a - Unused Objects","folderPath":"folders/a - Unused Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy ID Modifier","folderPath":"folders/a - Unused Objects/Enemy ID Modifier.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"b - Colission Masks","folderPath":"folders/b - Colission Masks.yy",},
@@ -232,7 +233,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"TV FX","folderPath":"folders/TV FX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"z99 - Extensions","folderPath":"folders/z99 - Extensions.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"c - Treasure Sprites","folderPath":"folders/9 - Objects And Items/c - Treasure Sprites.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"HinaArtwork1.png","CopyToMask":-1,"filePath":"datafiles/Gallery",},
@@ -2358,6 +2358,7 @@
     {"id":{"name":"spr_harpye_attack1","path":"sprites/spr_harpye_attack1/spr_harpye_attack1.yy",},},
     {"id":{"name":"spr_hina_handgun","path":"sprites/spr_hina_handgun/spr_hina_handgun.yy",},},
     {"id":{"name":"spr_hina_heart","path":"sprites/spr_hina_heart/spr_hina_heart.yy",},},
+    {"id":{"name":"oEntryMirror","path":"objects/oEntryMirror/oEntryMirror.yy",},},
     {"id":{"name":"spr_hina_hit","path":"sprites/spr_hina_hit/spr_hina_hit.yy",},},
     {"id":{"name":"spr_hina_hitscreen","path":"sprites/spr_hina_hitscreen/spr_hina_hitscreen.yy",},},
     {"id":{"name":"spr_hina_idle","path":"sprites/spr_hina_idle/spr_hina_idle.yy",},},

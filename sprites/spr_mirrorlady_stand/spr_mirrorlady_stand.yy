@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4290d4c3-26d1-481f-962c-758c8912d1d0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f2526af9-1ed9-45b7-817d-846f15e497df",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"73292080-2751-4c5a-8993-299d8433b56e",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4290d4c3-26d1-481f-962c-758c8912d1d0","path":"sprites/spr_mirrorlady_stand/spr_mirrorlady_stand.yy",},},},"Disabled":false,"id":"d22300e1-d22c-4126-9993-a39ba9366041","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f2526af9-1ed9-45b7-817d-846f15e497df","path":"sprites/spr_mirrorlady_stand/spr_mirrorlady_stand.yy",},},},"Disabled":false,"id":"2bf9d798-cfdf-4c21-94d7-7258b025d696","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"73292080-2751-4c5a-8993-299d8433b56e","path":"sprites/spr_mirrorlady_stand/spr_mirrorlady_stand.yy",},},},"Disabled":false,"id":"a447fcd5-1153-4068-b920-b68c8446d2d4","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

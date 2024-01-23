@@ -128,13 +128,18 @@ if enemySpawn=0 {enemySpawnName="Spawn Area 1 - Random Test" spawnUnit=oAreaSpaw
 if enemySpawn=1 {enemySpawnName="Spawn Area 2 - Robot" spawnUnit=oAreaSpawner}
 if enemySpawn=2 {enemySpawnName="Spawn Area 3 - Random Test 2" spawnUnit=oAreaSpawner}
 if enemySpawn=3 {enemySpawnName="Spawn Area 4 - Door" spawnUnit=oAreaSpawner}
-if enemySpawn=4 {enemySpawnName="Spawn Area - Random" spawnUnit=oAreaSpawner}
-if enemySpawn=5 {enemySpawnName="Spawn Area - Random" spawnUnit=oAreaSpawner}
-if enemySpawn=6 {enemySpawnName="Spawn Area - Random" spawnUnit=oAreaSpawner}
-if enemySpawn=7 {enemySpawnName="Spawn Area - Random" spawnUnit=oAreaSpawner}
-if enemySpawn=8 {enemySpawnName="Spawn Area - Random" spawnUnit=oAreaSpawner}
-if enemySpawn=9 {enemySpawnName="Spawn Area - Random" spawnUnit=oAreaSpawner}
-if enemySpawn=10 {enemySpawnName="Spawn Area - Random" spawnUnit=oAreaSpawner}
+if enemySpawn=4 {enemySpawnName="Entry Balloon" spawnUnit=oEntryBalloon}
+if enemySpawn=5 {enemySpawnName="Entry Break" spawnUnit=oEntryBreak}
+if enemySpawn=6 {enemySpawnName="Entry Climb" spawnUnit=oEntryClimb}
+if enemySpawn=7 {enemySpawnName="Entry Fence Jump" spawnUnit=oEntryFenceJump}
+if enemySpawn=8 {enemySpawnName="Entry Jump" spawnUnit=oEntryJump}
+if enemySpawn=9 {enemySpawnName="Entry Horse" spawnUnit=oEntryHorse}
+if enemySpawn=10 {enemySpawnName="Entry Pool" spawnUnit=oEntryPool}
+if enemySpawn=11 {enemySpawnName="Entry Pose Board" spawnUnit=oEntryPoseBoard}
+if enemySpawn=12 {enemySpawnName="Entry Seat" spawnUnit=oEntrySeat}
+if enemySpawn=13 {enemySpawnName="Entry Shatter" spawnUnit=oEntryShatter}
+if enemySpawn=14 {enemySpawnName="Entry Teleport" spawnUnit=oEntryTeleport}
+if enemySpawn=15 {enemySpawnName="Entry Mirror" spawnUnit=oEntryMirror}
 }
 }
 
