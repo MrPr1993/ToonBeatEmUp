@@ -38,9 +38,7 @@ if animFrame>3.9 animFrame=0
 
 if enemyset!=0
 {
-if enemyspawn[0]=0 and enemyspawn[1]=0 and enemyspawn[2]=0 and enemyspawn[3]=0 
-and enemyspawn[4]=0 enemyspawn[5]=0 and enemyspawn[6]=0 
-and enemyspawn[7]=0 enemyspawn[8]=0 and enemyspawn[9]=0
+if hp=0
 {animFrame=0 anim=11 specialcheck1=0
 	
 	if enemyset=3 anim=12 ///Defeat
