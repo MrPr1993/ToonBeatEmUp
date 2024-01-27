@@ -30,7 +30,7 @@ shaketime=0
 hp=1
 maxhp=1
 
-brickspr=spr_eatc_burger
+brickspr=oEatingContestGame.eatspr
 brickbreak=0
 
 foodno=0

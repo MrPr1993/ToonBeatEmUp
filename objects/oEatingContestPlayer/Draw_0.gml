@@ -13,6 +13,6 @@ draw_sprite(sprite_index,image_index,x+shake,y+3)
 	shader_reset()
 
 if foodhp=0
-draw_sprite(brickspr,8,x,y+120)
+draw_sprite(brickspr,0,x,y+120)
 else
-draw_sprite(brickspr,2+8-8*(foodhp/50),x,y+120)
+draw_sprite(brickspr,8.9*(foodhp/50),x,y+120)
