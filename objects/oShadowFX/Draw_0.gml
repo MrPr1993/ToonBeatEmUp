@@ -71,12 +71,12 @@ if instance_exists(oCroc) with oCroc if visible and !place_meeting(x,y,oFallHole
 {
 if place_meeting(x,y,oWaterFX)
 {if ground
-draw_sprite_ext(spr_crocwet,0,x,y+trainz+2,image_xscale,1,0,c_white,1)
+draw_sprite_ext(spr_crocwet,0,x,y-8+trainz+2,image_xscale,1,0,c_white,1)
 else
-draw_sprite_ext(spr_midshadow,0,x,y+trainz+2,image_xscale,1,0,c_white,1)
+draw_sprite_ext(spr_midshadow,0,x,y-8+trainz+2,image_xscale,1,0,c_white,1)
 }
 else
-draw_sprite_ext(spr_midshadow,0,x,y+trainz+2,image_xscale,1,0,c_white,1)
+draw_sprite_ext(spr_midshadow,0,x,y-8+trainz+2,image_xscale,1,0,c_white,1)
 }
 
 if instance_exists(oShadowOnly) with oShadowOnly if visible and !place_meeting(x,y,oFallHole)

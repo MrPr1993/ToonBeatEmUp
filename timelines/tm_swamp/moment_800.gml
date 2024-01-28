@@ -1,6 +1,6 @@
-oPlayer.hspeed=4
+oPlayer.hspeed=8
 oPlayer.key_right=0
-oEnemySpawner.roomHSpd=4
+oEnemySpawner.roomHSpd=8
 oEnemySpawner.roomMove=1
 with oRainFX {fallSpdX=1 fade=1}
 

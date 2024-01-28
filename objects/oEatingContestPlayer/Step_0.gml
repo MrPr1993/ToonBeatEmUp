@@ -52,7 +52,7 @@ if animFrame=0
 {
 oEatingContestGame.resulttext1="BONUS"
 
-			altresult2Text="FOOD" altresult2=abs(foodno)*20
+			altresult2Text="TIME" altresult2=abs(foodno)*20
 
 //if win=0
 with oEatingContestPlayer win=0

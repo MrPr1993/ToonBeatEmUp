@@ -22,7 +22,11 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 
 }
 else
+{
+with oPlayer {if hspeed>0 hspeed-=0.1 else oPlayer.hspeed=0}
+
 timeline_position-=1
+}
 
 
 //5000, plants

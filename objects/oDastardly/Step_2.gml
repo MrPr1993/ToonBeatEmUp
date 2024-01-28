@@ -6,9 +6,6 @@ if hp<1
 current_pal=round(20-20*(hp/1))
 }
 
-enemy_endstep()
-throw_step()
-
 overwriteAttack=1
 overwriteAttack1=1
 overwriteAttack2=1
@@ -99,7 +96,6 @@ if animFrame=clamp(animFrame,4,4.99){
 	atk=1 sentflying=2*image_xscale specialtimes[0]+=0.5 if specialtimes[0]=2 specialtimes[0]=0
 } else { atk=0 sentflying=0}
 frame_set(5,1,0.05)
-if animFrame>4 specialtimes[0]+=0.25 if specialtimes[0]=9 specialtimes[0]=0 
 frame_set(6,1,0.5)
 frame_set(7,0,0.5)
 if animFrame>6.5 canbeGrabbed=1

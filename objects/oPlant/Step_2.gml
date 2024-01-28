@@ -90,7 +90,7 @@ image_index+=0.25 if image_index>4 image_index=1 hspeed=0 canmove=0
 //if image_index=1 PlaySoundNoStack(snd_mzombie3)
 
 if targetID!=-1 
-{
+{targetID.sprite_index=mask_none
 targetID.x=x
 targetID.y=y targetID.z=z
 targetID.GrabFrameExtra+=0.2

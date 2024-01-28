@@ -10,6 +10,9 @@ if hp<=0 or dead=1
 if anim!=202
 {
 car=instance_create_depth(x,y,depth,oCar) car.dead=1 car.sprite_index=spr_car_dead
+
+if vehSpr=spr_boat car.sprite_index=spr_boat_dead
+
 car.image_xscale=image_xscale car.hspeed=-12 car.z=z car.ground=0
 }
 zSpeed=-8

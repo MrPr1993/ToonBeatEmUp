@@ -75,7 +75,11 @@ image_index=0
 	if anim=202
 	{shadow=spr_shadow
 		
-	if animFrame=0 {animFrame=0.1 PlaySoundNoStack(snd_explosion)}
+		
+		
+	if animFrame=0 {specialtimes[0]=0 animFrame=0.1 PlaySoundNoStack(snd_explosion)
+		
+		}
 	sprite_index=ThrownSpr 
 	if !ground 
 	{animFrame=0.25
@@ -83,7 +87,17 @@ image_index=0
 	image_index+=0.1 x+=3 alarm[2]=30
 	}
 	else
-	{if animFrame<5.5 {alarm[2]=30}
+	{
+	if animFrame>1.1
+	if vehSpr=spr_boat 
+	{sprite_index=mask_none
+	if specialtimes[0]=0
+	{specialtimes[0]=1 PlaySound(snd_splash3)
+	flashFX(x,y,-8,spr_watersplash,0,0.5,0,1,1,c_white,1) fx.hspeed=-4
+	}
+	}
+	
+	if animFrame<5.5 {alarm[2]=30}
 frame_set(0,14,0.25)
 frame_set(1,11,0.25)
 frame_set(2,12,0.25)
@@ -191,7 +205,10 @@ if x=-999999999999999999999999999999
 	if animFrame>50 {
 	canmove=1 
 
-	car=instance_create_depth(x,y,depth,oCar) car.dead=1 car.sprite_index=spr_car_dead car.mask_index=mask_none
+	car=instance_create_depth(x,y,depth,oCar) car.dead=1 car.sprite_index=spr_car_dead
+	
+	if vehSpr=spr_boat car.sprite_index=spr_boat_dead
+	car.mask_index=mask_none
 	car.image_xscale=image_xscale
 
 	animFrame=0
