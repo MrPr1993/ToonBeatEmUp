@@ -1,13 +1,11 @@
 ///@description Ride
 
-if specialSet6=120
+if specialSet6=300
 {
-boss=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oDuckBoss)
-musicplaystart(msc_boss3)
-oControl.bossID=oDuckBoss
-layer_set_visible("THE_AUDIENCE",1)
-
-
+with oPlayer
+{
+canControl=1 automove=0
+}
 
 }
 else
@@ -74,8 +72,45 @@ with en4 {image_xscale=-1 ground=0  enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0
 	}
 }
 
+if specialSet6=120
+{
+with bgsetter
+{
+newscript=function()
+{if image_alpha>0 image_alpha-=0.01 else instance_destroy()}
+
+with oPlayer
+{
+canControl=0
+automoveX=6688+64 automoveY=178+64 automove=1
+}
+}
+}
+
+if specialSet6=200
+{oControl.MusicFade=1 oControl.MusicFadeAdd=1
+boss=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oDuckBoss)
+boss.z=-200 boss.anim=100 boss.animFrame=0 boss.ground=0 boss.canmove=0
+
+}
+
+if specialSet6=240
+{
+musicplaystart(msc_boss3)
+oControl.bossID=oDuckBoss
+layer_set_visible("TILE_AUDIENCE",1)
 }
 
 
 
 }
+
+
+
+}
+
+
+
+
+
+

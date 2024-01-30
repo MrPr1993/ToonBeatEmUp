@@ -85,7 +85,7 @@ draw_text(round(160+320+MenuMoveX),240-10-4,MenuText)
 
 fpsY=8
 MenuMoveX-=1 if MenuMoveX<-320 MenuMoveX=0
-if key_attack or keyboard_check_pressed(vk_enter)
+if key_A or keyboard_check_pressed(vk_enter)
 if menuLocked=1
 {PlaySound(snd_picked) selectScreen=1 alarm[4]=10 screenBlack=1 canControl=0
 }else PlaySound(snd_steal)

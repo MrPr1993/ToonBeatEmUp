@@ -42,7 +42,7 @@ if songtext=1
 if key_up_pressed {if soundSelect=1 soundSelect=8 else soundSelect-=1}
 if -key_down_pressed {if soundSelect=8 soundSelect=1 else soundSelect+=1}
 
-	if key_jump
+	if key_A
 if playingsongname="" {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 audio_stop_all() room_goto(rm_menu) animFrame=0} else {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 animFrame=0 audio_stop_all() playingsongname=""
 dancer1img=1
 dancer2img=1
@@ -57,7 +57,7 @@ if !audio_is_playing(songplaying) playingsongname=""
 if soundSelect=1 /////Select Music
 {
 
-if key_attack {
+if key_B {
 
 	{audio_stop_all() animFrame=0
 	playingsongname=songname
@@ -138,7 +138,7 @@ if songno=45 {songname="OUT OF PLACE..." playingSound=msc_secretboss songcompose
 
 if soundSelect=2
 {
-if key_attack songSPD=1
+if key_B songSPD=1
 if -key_left if songSPD>0.01 songSPD-=0.01
 if key_right if songSPD<5 songSPD+=0.01
 }
@@ -242,7 +242,7 @@ if -key_left_pressed if soundno=1 soundno=30 else soundno-=1
 if key_right_pressed if soundno=300 soundno=1 else soundno+=1
 soundtest_sounds()
 
-if key_attack {PlaySound(playSFX)}
+if key_B {PlaySound(playSFX)}
 
 }
 draw_set_halign(fa_left)

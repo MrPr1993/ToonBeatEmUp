@@ -65,7 +65,7 @@ if controlNO=9
 {
 if difficultymode=1 
 {
-if key_cancel or keyboard_check_pressed(vk_escape) or key_jump or key_B
+if key_B or keyboard_check_pressed(vk_escape) or key_B
 {
 if global.StageSelect=0 room_goto(rm_menu) else 
 if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
@@ -116,7 +116,7 @@ else
 
 }
 
-if key_cancel 
+if key_B 
 {
 if global.StageSelect=0 room_goto(rm_menu) else 
 if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
@@ -179,7 +179,7 @@ layer_hspeed("BGbricks",-16) introtextaddspd=-16
 	}
 
 if charaddedbuffer=0
-if (oControl.p1.isReady=0 and key_jump and oControl.p1.charadded=0 and palettemode=0) 
+if (oControl.p1.isReady=0 and key_B and oControl.p1.charadded=0 and palettemode=0) 
 or keyboard_check_pressed(vk_escape)
 {
 if global.StageSelect=0 room_goto(rm_menu) else 
@@ -206,7 +206,7 @@ if charaddedbuffer!=0 charaddedbuffer-=1
 if charadded=1 and charaddedbuffer=0
 {image_index=0 isReady=0
 
-if key_jump
+if key_B
 {
 if controlNO=1 if palettemode=0
 {

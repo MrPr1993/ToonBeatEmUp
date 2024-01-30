@@ -27,7 +27,7 @@ cutscenename=""
 cutsceneline=""
 timeline_position=99997
 blackbg=instance_create_depth(160,120,50,oFlashFX);
-with blackbg {alarm[0]=4 depth=-999999999 isDepth=0 animEnd=0 image_speed=0 image_blend=c_black sprite_index=mask_small image_xscale=9999 image_yscale=8888}
+with blackbg {haspal=0 alarm[0]=4 depth=-999999999 isDepth=0 animEnd=0 image_speed=0 image_blend=c_black sprite_index=mask_small image_xscale=9999 image_yscale=8888}
 stageIntro=0
 }
 

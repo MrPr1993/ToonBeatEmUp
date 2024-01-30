@@ -23,7 +23,8 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 }
 else
 {
-with oPlayer {if hspeed>0 hspeed-=0.1 else oPlayer.hspeed=0}
+with oEnemySpawner {if roomHSpd>0 roomHSpd-=0.2 else roomHSpd=0}
+with oPlayer {if hspeed>0 hspeed-=0.2 else hspeed=0}
 
 timeline_position-=1
 }

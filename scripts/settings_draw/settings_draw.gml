@@ -34,6 +34,8 @@ draw_text(160,64+8+48,languagetext[10]+string(" "))
 draw_text(160,72+8+48,languagetext[11]+string(" "))
 if stagePause=1 draw_set_color(c_dkgray)
 draw_text(160,80+12+48,languagetext[12]+string(" "))
+draw_set_color(c_white)
+
 draw_text(160,88+12+48,languagetext[13]+string(" "))
 draw_set_color(c_white)
 draw_text(160,96+24+48,"FPS ")
@@ -94,10 +96,18 @@ draw_text(160,72+8+48," "+string(languagetext[18])) else draw_text(160,72+8+48,"
 
 if stagePause=1 draw_set_color(c_dkgray)
 draw_text(160,80+12+48," "+string(global.LifeStart))
-if global.ContinueStart=-1
-draw_text(160,88+12+48," "+string(languagetext[28]))
+draw_set_color(c_white)
+
+//if global.ContinueStart=-1
+//draw_text(160,88+12+48," "+string(languagetext[28]))
+//else
+//draw_text(160,88+12+48," "+string(global.ContinueStart))
+
+if global.CutsceneSkipSpd=1
+draw_text(160,88+12+48," "+string(languagetext[31]))
 else
-draw_text(160,88+12+48," "+string(global.ContinueStart))
+draw_text(160,88+12+48," "+string(100*global.CutsceneSkipSpd)+"%")
+
 draw_set_color(c_white)
 
 if global.fpsMode=0

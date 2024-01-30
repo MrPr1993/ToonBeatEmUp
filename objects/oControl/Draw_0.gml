@@ -16,7 +16,7 @@ else
 {var stp=1; repeat(20){lockedMap[stp]=1; stp+=1;}}
 }
 
-if key_attack or key_super or key_shield_pressed or keyboard_check_pressed(vk_enter) or key_start
+if key_A or key_Y or key_X or keyboard_check_pressed(vk_enter) or key_start
 if mapSelected=0 and quickMapLerp=0
 {
 if mapSName="LOCKED"
@@ -208,7 +208,7 @@ if key_up pictureY-=1
 if key_down pictureY+=1
 if key_charge if pictureZoom<5 pictureZoom+=0.001
 if key_shield if pictureZoom>0.01 pictureZoom-=0.001
-if key_jump room_goto(rm_menu)
+if key_B room_goto(rm_menu)
 
 if key_charge and key_shield pictureZoom=0.25/3
 

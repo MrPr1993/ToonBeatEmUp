@@ -18,6 +18,9 @@ screen_size(-1)
 global.Screenshake=ini_read_real("SETTINGS","SHAKE",1)
 global.Screenflash=ini_read_real("SETTINGS","FLASH",1)
 global.LifeStart=ini_read_real("SETTINGS","LIFE",2)
+
+global.CutsceneSkipSpd=ini_read_real("SETTINGS","SKIPSCENE",0.01)
+
 global.ContinueStart=ini_read_real("SETTINGS","CONTINUES",-1)
 global.fpsMode=ini_read_real("SETTINGS","FPS",0)
 
@@ -25,6 +28,9 @@ global.enemytest=ini_read_real("ENEMYTEST","TEST",0)
 global.enemytestB=ini_read_real("ENEMYTEST","TESTB",0)
 global.LevelSelectSave=ini_read_real("LEVELTEST","0",0)
 global.Language=ini_read_real("LANGUAGE","0",0)
+
+
+
 ///1, English
 ///2, Español
 

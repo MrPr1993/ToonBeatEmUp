@@ -9,7 +9,7 @@ controller_setup()
 if gallerybuffer!=0 gallerybuffer-=1
 if galleryload!=0 galleryload-=1
 
-if key_jump or keyboard_check_pressed(vk_escape) {if gallerychoosing=1 {PlaySound(snd_steal) gallerychoosing=0} else room_goto(rm_menu)}
+if key_cancel or keyboard_check_pressed(vk_escape) {if gallerychoosing=1 {PlaySound(snd_steal) gallerychoosing=0} else room_goto(rm_menu)}
 
 if gallerychoosing=0
 if galleryTime=0
@@ -65,7 +65,7 @@ if galleryNO=16 {galleryX=3 galleryY=3  galleryname="GUEST ART"}
 if global.Gallery[galleryNO]=0 galleryname="???"
 
 	if canControl=1{
-if key_attack or keyboard_check_pressed(vk_enter)
+if key_A or keyboard_check_pressed(vk_enter)
 {
 if galleryname="???" PlaySound(snd_steal) else
 {

@@ -18,7 +18,8 @@ if menuSelect=8 global.ArcadeScreen=0
 if menuSelect=9 global.Screenshake=1
 if menuSelect=10 global.Screenflash=1
 if menuSelect=11	global.LifeStart=2
-if menuSelect=12	global.ContinueStart=-1	
+//if menuSelect=12	global.ContinueStart=-1	
+if menuSelect=12 global.CutsceneSkipSpd=0.01
 if menuSelect=13 global.fpsMode=0
 
 }	
@@ -37,6 +38,8 @@ if TVfx=7
 if menuSelect=5 {if global.CRTcustomDistortAM>-3.99 global.CRTcustomDistortAM-=0.01}
 }
 
+
+if menuSelect=12 {if global.CutsceneSkipSpd>0.01 global.CutsceneSkipSpd-=0.01}
 }
 
 if key_right
@@ -49,6 +52,7 @@ if TVfx=7
 if menuSelect=5 {if global.CRTcustomDistortAM<3.99 global.CRTcustomDistortAM+=0.01}
 }
 
+if menuSelect=12 {if global.CutsceneSkipSpd<1 global.CutsceneSkipSpd+=0.01 else global.CutsceneSkipSpd=1}
 }
 
 if -key_left_pressed
@@ -85,7 +89,7 @@ if menuSelect=10 if global.Screenflash=1 global.Screenflash=0 else global.Screen
 	if stagePause=0
 	{
 if menuSelect=11	{if global.LifeStart=0 global.LifeStart=9 else global.LifeStart-=1}
-if menuSelect=12	{if global.ContinueStart=-1 global.ContinueStart=99 else global.ContinueStart-=1}	
+//if menuSelect=12	{if global.ContinueStart=-1 global.ContinueStart=99 else global.ContinueStart-=1}	
 	}
 	
 if menuSelect=13	if global.fpsMode=0 global.fpsMode=1 else global.fpsMode=0

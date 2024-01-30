@@ -1,5 +1,9 @@
 /// @description Fun House Start
 timer_set(1)
+
+layer_set_visible("THE_AUDIENCE",0)
+
+
 with oPlayer
 {canmove=1
 	canControl=1

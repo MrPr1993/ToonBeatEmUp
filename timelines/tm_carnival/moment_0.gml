@@ -1,7 +1,7 @@
 /// @description Stage Starting
 spawner_followset("WaveSet1",0,692+224,1)
 
-layer_set_visible("THE_AUDIENCE",0)
+layer_set_visible("TILE_AUDIENCE",0)
 
 oControl.stageNext=rm_stage4
 

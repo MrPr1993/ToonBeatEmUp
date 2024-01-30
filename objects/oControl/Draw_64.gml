@@ -832,15 +832,15 @@ draw_set_halign(fa_center)
 
 var diftext=""
 var diftext2=""
-if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)" 
+if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)\n(4 LIVES, 5 CONTINUES)" 
 	diftext2="YOU TAKE WAY LESS DAMAGE AND DEAL MORE."}
-if global.Difficulty=1 {diftext="FIRST GIG\n(EASY)" 
+if global.Difficulty=1 {diftext="FIRST GIG\n(EASY)\n(3 LIVES, 4 CONTINUES)"  
 	diftext2="YOU TAKE LESS DAMAGE."}
-if global.Difficulty=2 {diftext="FAVORITE AT THE CLUB\n(MEDIUM)" 
+if global.Difficulty=2 {diftext="FAVORITE AT THE CLUB\n(MEDIUM)\n(2 LIVES, 3 CONTINUES)" 
 	diftext2="NORMAL DIFFICULTY, THE BASICS."}
-if global.Difficulty=3 {diftext="THE MAIN EVENT AT THE CONCERT\n(HARD)" 
+if global.Difficulty=3 {diftext="THE MAIN EVENT AT THE CONCERT\n(HARD)\n(2 LIVES, 2 CONTINUES)" 
 	diftext2="TOUGHER FOES, YOU TAKE MORE DAMAGE."}
-if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)" 
+if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)\n(2 LIVES, 1 CONTINUE)" 
 	diftext2="NOT SUITABLE FOR NEWBIES."}
 
 if oControl.multiVSsetting=1
@@ -848,7 +848,7 @@ if oControl.multiVSsetting=1
 	diftext2="THE OTHER DIVAS CAN GET HIT BY YOUR OWN MOVES.\n(SHOWTIME WON'T APPLY TO THEM)"}
 
 
-draw_text(xadd,120-32-16,diftext)
+draw_text(xadd,120-32-24,diftext)
 draw_text(xadd,128+8,diftext2)
 }
 else
@@ -1123,7 +1123,7 @@ draw_command(7) global.StageGoing=rm_menu
 }
 if pauseBuffer!=0 pauseBuffer-=1
 if key_attack or key_start or key_A or key_B
-or key_jump or keyboard_check_pressed(vk_escape)
+or key_cancel or keyboard_check_pressed(vk_escape)
 if pauseBuffer=0
 {////Hiscore to Title Screen
 if global.HiscoreSkip=0 {global.MenuSkip=0 global.IntroSkip=0}
@@ -1385,6 +1385,7 @@ draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
 
 ///This will be used to play the cutscenes
 if room=rm_cutscene1 or room=rm_opening or (room=rm_newspaper and global.IsMovie=1)
+or isCutscene=1
 {
 if keyboard_check_pressed(vk_f5)
 game_save("SaveState")
@@ -1422,7 +1423,7 @@ draw_rectangle(160-80+1,24+1,-1+160-80+160*skipScene,32-1,false)
 } else skipScene=0
 draw_set_halign(fa_left)
 
-if skipScene<1 skipScene+=0.01
+if skipScene<1 skipScene+=global.CutsceneSkipSpd
 else
 {
 if canSkipCutscene=2 stageEndFX=1

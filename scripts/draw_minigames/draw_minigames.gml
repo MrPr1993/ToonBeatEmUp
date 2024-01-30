@@ -6,7 +6,7 @@ if room=rm_minigames
 {//global.MinigameSel3=0
 global.ArenaType=0
 	
-if key_cancel room_goto(rm_menu)
+if key_B room_goto(rm_menu)
 draw_set_font(global.scorefont)	
 
 d3d_transform_set_identity()
@@ -214,7 +214,7 @@ if canControl=1
 else
 {if MenuMoveX>-640 MenuMoveX-=64 else MenuMoveX=-640}
 draw_command(1)
-if key_attack
+if key_A or keyboard_check_pressed(vk_space)
 {
 if MenuText="???" or MenuText="LOCKED"
 {

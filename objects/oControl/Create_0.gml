@@ -286,6 +286,8 @@ global.ColorMode=0;
 
 global.MonochromeFX=0
 
+global.CutsceneSkipSpd=0.01
+
 global.BGMvolume=100
 global.SFXvolume=100
 

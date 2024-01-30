@@ -22,7 +22,7 @@ audio_sound_gain(global.CurrentMusic,0,0)
 
 depth=-999999999
 
-if key_jump or keyboard_check_pressed(vk_escape)
+if key_B or keyboard_check_pressed(vk_escape)
 if pauseBuffer=0
 {
 if continueScreen=0
@@ -64,14 +64,14 @@ if stagePause=0
 			if room=rm_menu {room_goto(rm_titlescreen) global.IsMovie=0 global.MenuSkip=0 global.IntroSkip=1}
 		else
 	if !instance_exists(oSettings)
-	{if room=rm_titlescreen if !key_jump game_end()}
+	{if room=rm_titlescreen if !key_B game_end()}
 	else
 	{
 	//global.MenuSkip=0 room_goto(rm_menu)
 	}
 	}
 else
-if !key_jump
+if !key_B
 {pauseBuffer=10 game_pause()}
 }
 }

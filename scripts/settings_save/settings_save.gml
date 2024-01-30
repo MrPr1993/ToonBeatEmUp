@@ -18,6 +18,9 @@ ini_write_real("SETTINGS", "ColorMode", global.ColorMode)
 ini_write_real("SETTINGS", "SCREEN", global.ScreenSize)
 ini_write_real("SETTINGS", "SHAKE", global.Screenshake)
 ini_write_real("SETTINGS", "FLASH", global.Screenflash)
+
+ini_write_real("SETTINGS", "SKIPSCENE", global.CutsceneSkipSpd)
+
 ini_write_real("SETTINGS", "LIFE", global.LifeStart)
 ini_write_real("SETTINGS", "CONTINUES", global.ContinueStart)
 ini_write_real("SETTINGS", "FPS", global.fpsMode)

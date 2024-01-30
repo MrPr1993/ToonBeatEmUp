@@ -94,4 +94,19 @@ frame_set(15,0,0.25)
 if animFrame>15.75 {canmove=1 atk=0}
 }
 
+///Intro
+if anim=100
+{sprite_index=spr_duck_intro
+if animFrame=0 {specialtimes[0]=0}	
 
+if !ground animFrame=0.5 else if animFrame=0.5 {animFrame=1 PlaySound(snd_hitgroundmetal) oControl.quakeFXTime=10}
+specialtimes[0]+=0.1 if specialtimes[0]=2 specialtimes[0]=0
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.01)
+frame_set(3,3,0.1)
+frame_set(4,4,0.25)
+frame_set(5,5+specialtimes[0],0.005)
+frame_set(6,4,0.25)
+if animFrame>6 {canmove=1 anim=0}
+}
