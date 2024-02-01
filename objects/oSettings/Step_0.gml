@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 controller_setup()
+
+var languagemax=1;
+
 if controlSettings=0
 {
 ///Reset Settings
@@ -17,7 +20,7 @@ if menuSelect=7 global.ColorMode=0
 if menuSelect=8 global.ArcadeScreen=0
 if menuSelect=9 global.Screenshake=1
 if menuSelect=10 global.Screenflash=1
-if menuSelect=11	global.LifeStart=2
+//if menuSelect=11	global.LifeStart=2
 //if menuSelect=12	global.ContinueStart=-1	
 if menuSelect=12 global.CutsceneSkipSpd=0.01
 if menuSelect=13 global.fpsMode=0
@@ -88,7 +91,9 @@ if menuSelect=10 if global.Screenflash=1 global.Screenflash=0 else global.Screen
 	
 	if stagePause=0
 	{
-if menuSelect=11	{if global.LifeStart=0 global.LifeStart=9 else global.LifeStart-=1}
+//if menuSelect=11	{if global.LifeStart=0 global.LifeStart=9 else global.LifeStart-=1}
+if menuSelect=11 {if global.Language=0 global.Language=languagemax; else global.Language-=1 language_check()}
+
 //if menuSelect=12	{if global.ContinueStart=-1 global.ContinueStart=99 else global.ContinueStart-=1}	
 	}
 	
@@ -127,7 +132,9 @@ if menuSelect=10 if global.Screenflash=1 global.Screenflash=0 else global.Screen
 	
 	if stagePause=0
 	{
-if menuSelect=11	{if global.LifeStart=9 global.LifeStart=0 else global.LifeStart+=1}
+//if menuSelect=11	{if global.LifeStart=9 global.LifeStart=0 else global.LifeStart+=1}
+if menuSelect=11 {if global.Language=languagemax global.Language=0 else global.Language+=1 language_check()}
+
 if menuSelect=12	{if global.ContinueStart=99 global.ContinueStart=-1 else global.ContinueStart+=1}	
 	}
 	

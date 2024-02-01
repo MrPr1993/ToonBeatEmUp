@@ -1,6 +1,6 @@
 /// @description Respawn
 if ContinueMode=0
-{
+{playerIcon=spr_p1
 with oControl
 {
 time=99

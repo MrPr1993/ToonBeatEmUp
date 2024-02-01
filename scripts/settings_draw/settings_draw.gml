@@ -33,7 +33,7 @@ draw_text(160,56+4+32+8,languagetext[9]+string(" "))
 draw_text(160,64+8+48,languagetext[10]+string(" "))
 draw_text(160,72+8+48,languagetext[11]+string(" "))
 if stagePause=1 draw_set_color(c_dkgray)
-draw_text(160,80+12+48,languagetext[12]+string(" "))
+draw_text(160,80+12+48,languagetext[32]+string(" "))
 draw_set_color(c_white)
 
 draw_text(160,88+12+48,languagetext[13]+string(" "))
@@ -95,7 +95,8 @@ if global.Screenflash=1
 draw_text(160,72+8+48," "+string(languagetext[18])) else draw_text(160,72+8+48," "+string(languagetext[19]))
 
 if stagePause=1 draw_set_color(c_dkgray)
-draw_text(160,80+12+48," "+string(global.LifeStart))
+//draw_text(160,80+12+48," "+string(global.LifeStart))
+draw_text(160,80+12+48," "+string(languagetext[33]))
 draw_set_color(c_white)
 
 //if global.ContinueStart=-1

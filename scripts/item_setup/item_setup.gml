@@ -196,4 +196,7 @@ gravZAdd=0.45
 	waterMax=0;
 	waterSplash=0;
 
+itemto=1;
+itemeffect=function(){}
+
 }

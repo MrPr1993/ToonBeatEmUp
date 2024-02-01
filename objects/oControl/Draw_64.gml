@@ -833,15 +833,26 @@ draw_set_halign(fa_center)
 var diftext=""
 var diftext2=""
 if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)\n(4 LIVES, 5 CONTINUES)" 
-	diftext2="YOU TAKE WAY LESS DAMAGE AND DEAL MORE."}
+	diftext2="YOU TAKE WAY LESS DAMAGE AND DEAL MORE."
+	global.LifeStart=4; global.Continues=5;}
 if global.Difficulty=1 {diftext="FIRST GIG\n(EASY)\n(3 LIVES, 4 CONTINUES)"  
-	diftext2="YOU TAKE LESS DAMAGE."}
+	diftext2="YOU TAKE LESS DAMAGE."
+		global.LifeStart=3; global.Continues=4;}
+	
 if global.Difficulty=2 {diftext="FAVORITE AT THE CLUB\n(MEDIUM)\n(2 LIVES, 3 CONTINUES)" 
-	diftext2="NORMAL DIFFICULTY, THE BASICS."}
+	diftext2="NORMAL DIFFICULTY, THE BASICS."
+		global.LifeStart=2; global.Continues=3;}
+	
 if global.Difficulty=3 {diftext="THE MAIN EVENT AT THE CONCERT\n(HARD)\n(2 LIVES, 2 CONTINUES)" 
-	diftext2="TOUGHER FOES, YOU TAKE MORE DAMAGE."}
+	diftext2="TOUGHER FOES, YOU TAKE MORE DAMAGE."
+		global.LifeStart=2; global.Continues=2;}
+	
 if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)\n(2 LIVES, 1 CONTINUE)" 
-	diftext2="NOT SUITABLE FOR NEWBIES."}
+	diftext2="NOT SUITABLE FOR NEWBIES."
+		global.LifeStart=2; global.Continues=1;}
+	
+if global.CheatUnlock[2] global.LifeStart=global.LifeStart*2;
+if global.CheatUnlock[15] global.Continues=-1;
 
 if oControl.multiVSsetting=1
 {diftext="FRIENDLY FIRE" 

@@ -2,7 +2,11 @@
 if controlNO=9
 {sprite_index=mask_none
 draw_set_color(c_white)
-
+////Reset them
+global.P1ScoreLife=0
+global.P2ScoreLife=0
+global.P3ScoreLife=0
+global.P4ScoreLife=0
 }
 
 else

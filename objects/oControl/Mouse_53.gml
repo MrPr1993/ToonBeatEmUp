@@ -20,7 +20,7 @@ ini_close()
 if spawnUnit!=-1
 en=instance_create(mouse_x,mouse_y,spawnUnit)
 
-if enemySpawn=19 {
+if enemySpawn=19 if spawnType="Item" {
 	var treaset=global.TreasureSet;
 	if keyboard_check(vk_control) treaset=round(random(20));
 treasure_set(treaset,mouse_x,mouse_y,0) exit;

@@ -105,6 +105,7 @@ if enemySpawn=17 {enemySpawnName="18 Pie" spawnUnit=oPie}
 if enemySpawn=18 {enemySpawnName="19 Whip" spawnUnit=oWhip}
 if enemySpawn=18 {enemySpawnName="20 Staff" spawnUnit=oStaff}
 if enemySpawn=19 {enemySpawnName="21 Treasure" spawnUnit=-1}
+if enemySpawn=20 {enemySpawnName="22 1-Up" spawnUnit=o1up}
 }
 
 if spawnType="Obstacle"

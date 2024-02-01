@@ -129,7 +129,7 @@ throwing=0 image_index=0 animFrame=0 anim=667 canmove=0 throwcombo=2 alarm[0]=60
 if targetID!=-1
 {
 targetID.targetHeightHit=1 targetID.isGrabbed=1 
-with targetID {sprite_index=ThrownSpr event_user(1) image_index=GrabFrame}
+with targetID {sprite_index=mask_none event_user(1) image_index=GrabFrame}
 targetID.image_xscale=-image_xscale targetID.depth=depth+1
 }
 grabX=32*image_xscale grabY=0 grabZ=0 

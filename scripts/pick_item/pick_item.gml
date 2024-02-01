@@ -13,7 +13,7 @@ function pick_item(){
 	{
 		anim=25 animFrame=0 canmove=0
 	if weaponspawn!=-1 and (item.iscarry=1 or item.isweapon=1) event_user(1)
-
+if item.PickupSound!=-1
 	PlaySound(item.PickupSound)
 
 	///Get Liftable Object
@@ -106,8 +106,8 @@ function pick_item(){
 	item.carryID=self.id item.height=height}
 
 	{
-
-	with item if iscarry=0 instance_destroy()
+if item.iscarry=0 item.itemto=playerNO
+	with item if iscarry=0 {itemeffect() instance_destroy()}
 	else {carry=1 }
 	}
 

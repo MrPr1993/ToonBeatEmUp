@@ -5,7 +5,7 @@ function draw_playerhp(){
 if object_index=oPlayer
 {
 if showp1=1
-draw_sprite(spr_p1,playerNO-1,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
+draw_sprite(playerIcon,playerNO-1,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
 if showmash=1
 {
 draw_sprite(spr_buttonmash,showmashI,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))

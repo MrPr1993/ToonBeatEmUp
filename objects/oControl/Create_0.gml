@@ -324,8 +324,10 @@ global.P2Score=0
 global.P3Score=0
 global.P4Score=0
 
-
-
+global.P1ScoreLife=0
+global.P2ScoreLife=0
+global.P3ScoreLife=0
+global.P4ScoreLife=0
 
 global.p1Pal=0
 global.p2Pal=0

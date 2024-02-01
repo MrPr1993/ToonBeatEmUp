@@ -1,4 +1,4 @@
-if instance_exists(oPlayer) with oPlayer if visible and hasShadow=1
+if instance_exists(oPlayer) with oPlayer if visible and hasShadow=1 and sprite_index!=mask_none
 {
 if !place_meeting(x,y,oHeight32) and !place_meeting(x,y,oFallHole)
 
@@ -129,7 +129,7 @@ if spotlightWidth<1 spotlightWidth+=0.1 else spotlightWidth=1
 draw_sprite_ext(spr_spotlight,0,oPlayer.x,oPlayer.y,spotlightWidth,1,0,c_white,1)
 
 if instance_exists(oPlayer) with oPlayer if visible and
-!place_meeting(x,y,oFallHole) and fallHole=0
+!place_meeting(x,y,oFallHole) and fallHole=0 and sprite_index!=mask_none
 draw_sprite(spr_shadow,0,x,y+trainz+2)
 }
 else
