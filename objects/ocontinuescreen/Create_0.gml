@@ -3,6 +3,7 @@
 
 /// @description Insert description here
 // You can write your code in this editor
+check1up=1
 
 shade=shd_television
 

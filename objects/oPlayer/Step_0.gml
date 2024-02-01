@@ -1,6 +1,12 @@
 showmash=0
 
-
+switch(playerNO)
+{
+case 1: lifescore_check(1,playerNO,global.P1ScoreLife,0,1); break;
+case 2: lifescore_check(1,playerNO,global.P2ScoreLife,0,1); break;
+case 3: lifescore_check(1,playerNO,global.P3ScoreLife,0,1); break;
+case 4: lifescore_check(1,playerNO,global.P4ScoreLife,0,1); break;
+}
 
 if ContinueMode=0
 {
