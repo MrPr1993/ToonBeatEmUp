@@ -935,6 +935,8 @@ secondsMAX=0
 
 songplaying=-1
 
+songnote=0
+
 songzero=0
 songend=0
 songPlay=0

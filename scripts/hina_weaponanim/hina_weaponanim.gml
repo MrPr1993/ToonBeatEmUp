@@ -119,11 +119,11 @@ weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
 frame_set(1,1,0.1) 
 frame_set(2,2,0.25) if animFrame=3 PlaySound(WswingSound)
 frame_set(3,3,0.1)
-frame_set(4,4,0.25)
-frame_set(5,5,0.1)
+frame_set(4,4,0.1)
+frame_set(5,5,0.25)
 frame_set(6,6,0.1)
 atkcol_set(93,0,27,5.25,1,38)
-if animFrame=clamp(animFrame,4,4.5) atk=1 else atk=0
+if animFrame=clamp(animFrame,5,5.5) atk=1 else atk=0
 if animFrame>6.7 {canmove=1 anim=0}
 }
 

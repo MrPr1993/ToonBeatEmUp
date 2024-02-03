@@ -10,6 +10,17 @@ draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
 
 if keyboard_check_pressed(vk_escape) room_goto(rm_menu)
 
+matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1,1,1))
+draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,0,c_black,1)
+matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1,1,1))
+draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,recordAng,c_white,1)
+matrix_set(matrix_world,matrix_build(234,152,0+0.05*cos(recordAng),85,0,0,1,1,1))
+
+draw_sprite_ext(spr_soundtestrec2,0,0,0,1,1,recordAng2,c_white,1)
+matrix_set(matrix_world,matrix_build_identity())
+
+if instance_exists(oCameoChar) with oCameoChar draw_self()
+
 
 
 if playingsongname=""
@@ -30,10 +41,23 @@ dancer3img=image_index
 dancer4img=image_index
 
 if audio_is_playing(songplaying)
+{songnote+=1*songSPD if songnote>(60*songSPD)
+	{songnote=0
+camnote=instance_create_depth(160+choose(-random_range(20,80),random_range(20,80)),156,-1,oCameoChar)
+camnote.visible=0 	camnote.anim=666 
+with camnote 
 {
+	if x>160 hspeed=random_range(1,3) else hspeed=-random_range(1,3)
+	sprite_index=spr_musicnotes image_index=random(7) image_xscale=random_range(0.5,1) image_yscale=image_xscale
+image_blend=choose(c_blue,c_red,c_yellow,c_green) vspeed=-random_range(2,4)
+newscript=function()
+{vspeed+=0.22 if vspeed>0 {image_alpha-=0.01 if image_alpha<0 instance_destroy()}
+}
+}
+}	
 recordAng+=1*songSPD
 recordAng2=lerp(recordAng2,22,0.1)
-} else recordAng2=lerp(recordAng2,45,0.1)
+} else {recordAng2=lerp(recordAng2,45,0.1) songnote=0}
 
 }
 
@@ -275,14 +299,6 @@ draw_command(6)
 
 
 
-matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1,1,1))
-draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,0,c_black,1)
-matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1,1,1))
-draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,recordAng,c_white,1)
-matrix_set(matrix_world,matrix_build(234,152,0+0.05*cos(recordAng),85,0,0,1,1,1))
-
-draw_sprite_ext(spr_soundtestrec2,0,0,0,1,1,recordAng2,c_white,1)
-matrix_set(matrix_world,matrix_build_identity())
 
 
 }
