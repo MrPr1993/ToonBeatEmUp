@@ -19,8 +19,8 @@ if anim=0
 if oHammerGame.ready=1
 meter+=meterSpd
 if meterSpd=4
-{if meter>76 meterSpd=-4}
-else {if meter<4 meterSpd=4}
+{if meter>128 {meter=128 meterSpd=-4}}
+else {if meter<0 {meter=0 meterSpd=4}}
 
 if character=0 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
 if character=1 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
@@ -32,8 +32,8 @@ frame_set(0,0,0.1)
 frame_set(1,0,0.1) if animFrame>2-0.1 animFrame=0
 
 if key_attack
-{animFrame=0 anim=10
-	if meter=clamp(meter,2+16,78-16) win=1 else win=0
+{animFrame=0 anim=10 win=0
+	//if meter=clamp(meter,2+16,78-16) win=1 else win=0
 	
 
 	
@@ -52,7 +52,7 @@ if anim=10
 	if image_index=clamp(image_index,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 	if image_index=clamp(image_index,2,2.9)
-	{weaponanim(weaponspr,weaponIndex,-12,-75,-45+90*image_xscale,weaponcolor)}
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
 	}
 	if character=1
 	{
@@ -61,7 +61,7 @@ if anim=10
 	if image_index=clamp(image_index,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 	if image_index=clamp(image_index,2,2.9)
-	{weaponanim(weaponspr,weaponIndex,-12,-75,-45+90*image_xscale,weaponcolor)}
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
 	}
 	if character=2
 	{
@@ -70,7 +70,7 @@ if anim=10
 	if image_index=clamp(image_index,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 	if image_index=clamp(image_index,2,2.9)
-	{weaponanim(weaponspr,weaponIndex,-12,-75,-45+90*image_xscale,weaponcolor)}
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
 	}
 	if character=3
 	{
@@ -79,19 +79,23 @@ if anim=10
 	if image_index=clamp(image_index,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 	if image_index=clamp(image_index,2,2.9)
-	{weaponanim(weaponspr,weaponIndex,-12,-75,-45+90*image_xscale,weaponcolor)}
+	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
 	}
 
-frame_set(0,1,0.25)
-frame_set(1,0,0.05)
+frame_set(0,1,0.05)
+frame_set(1,0,0.5)
 frame_set(2,2,0.25) if animFrame=3
 {
 PlaySound(snd_steal) 	PlaySound(voice2) breakresult=0
 shaketime=10 altresult2Text="SCORE" altresult2=0	
 	
+if win {altresult2Text="PERFECT" altresult2=10000}
+	
 strGo=1
 	
-strtotal=round(random(maxpoints))
+strtotal=((meter*(32))/(toweramount*32))*(toweramount*32)
+
+
 slotY=0 slotSpd=32
 	
 }
@@ -101,20 +105,23 @@ if animFrame>3
 {
 if strGo=1
 {
-slotYdraw=lerp(slotYdraw,(slotY/maxpoints)*toweramount*32,1)
+slotYdraw=(slotY/maxpoints)*(toweramount*64)
 
-oHammerGame.screenY=lerp(oHammerGame.screenY,(slotY/maxpoints)*toweramount*32,1)
-y=lerp(y,ystart+(slotY/maxpoints)*toweramount*32,1)
+oHammerGame.screenY=lerp(oHammerGame.screenY,(slotY/maxpoints)*toweramount*64,1)
+y=lerp(y,ystart+(slotY/maxpoints)*toweramount*64,1)
 	
 slotSpd+=1 slotSpd=clamp(slotSpd,-32,32) slotY+=slotSpd
-if slotY>strtotal {strGo=0 altresult2=slotY slotSpd=1 lerp(slotYdraw,(slotY/maxpoints)*toweramount*32,1)}
-
-
+if slotY>(strtotal)-64 or slotY>(toweramount*64) {
+	
+	if slotY>-32+(toweramount*64) win=1
+	strGo=0 altresult2=slotY slotSpd=1 lerp(slotYdraw,(slotY/maxpoints)*(toweramount*64),1)}
 
 }
 else
 {
-slotSpd-=0.1 slotY+=slotSpd slotY=clamp(slotY,0,99999) slotYdraw=slotY
+slotSpd-=0.01 slotY+=0 slotY=clamp(slotY,0,99999) 
+
+//slotYdraw=lerp(slotYdraw,0,0.1)
 
 	if controlNO=1	oHammerGame.p1Over=1
 		if controlNO=2	oHammerGame.p2Over=1

@@ -45,7 +45,7 @@ if -key_down_pressed
 
 if key_up_pressed
 {PlaySound(snd_select) galleryNO-=4 galleryNO=clamp(galleryNO,1,16)}
-
+pictureMax=6
 if galleryNO=1 {galleryX=0 galleryY=0 galleryname="VIVA VEGAS"}
 if galleryNO=2 {galleryX=1 galleryY=0 galleryname="HINA TATSUO"}
 if galleryNO=3 {galleryX=2 galleryY=0 galleryname="BAHATI ABARA"}
@@ -60,7 +60,7 @@ if galleryNO=11 {galleryX=2 galleryY=2  galleryname="BOSS SET 3"}
 if galleryNO=12 {galleryX=3 galleryY=2  galleryname="BOSS SET 4"}
 if galleryNO=13 {galleryX=0 galleryY=3  galleryname="MISC. CHARACTERS"}
 if galleryNO=14 {galleryX=1 galleryY=3  galleryname="CONCEPT ART"}
-if galleryNO=15 {galleryX=2 galleryY=3  galleryname="KEY ART"}
+if galleryNO=15 {galleryX=2 galleryY=3 pictureMax=12  galleryname="KEY ART"}
 if galleryNO=16 {galleryX=3 galleryY=3  galleryname="GUEST ART"}
 if global.Gallery[galleryNO]=0 galleryname="???"
 

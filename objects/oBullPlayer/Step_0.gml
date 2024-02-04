@@ -84,9 +84,9 @@ breakresult=0
 		altresult2Text="DISTANCE" altresult2=oBullGame.rundist
 
 if win=1 {altresult2Text="PERFECT" altresult2=10000
-if animFrame=0 {ground=0 spdZ=-8}	
+if animFrame=0 {ground=0 spdZ=-8 animFrame=1}	
 if ground=0 sprite_index=jumpSpr
-if spdZ>= z=-128 sprite_index=hangSpr
+if spdZ>=0 {sprite_index=hangSpr spdZ=0}
 
 z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
 

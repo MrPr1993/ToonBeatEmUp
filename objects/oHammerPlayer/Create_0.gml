@@ -75,6 +75,7 @@ toweramount=64
 maxpoints=10000
 
 strtotal=0
+
 slotY=0
 
 slotYdraw=0

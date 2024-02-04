@@ -14,3 +14,5 @@ if itemto=4 with oPlayer if playerNO=4 lifescore_check(1,playerNO,PlayerScore,1,
 		
 	
 	}
+	
+	event_user(1)
