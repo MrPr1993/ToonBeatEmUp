@@ -9,7 +9,7 @@ newsIndex+=1
 scene1.x=99999
 
 newsRepeat=1
-cutsceneline="AND THE WONDERFUL HINA! SHE CAME ALL THE WAY FROM JAPAN!"
+cutsceneline="AND THE WONDERFUL HINA! SHE CAME FROM JAPAN TO PERFORM AS WELL!"
 
 scenebg.x=99999
 

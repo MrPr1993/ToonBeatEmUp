@@ -18,9 +18,9 @@ if anim=0
 {
 if oHammerGame.ready=1
 meter+=meterSpd
-if meterSpd=4
-{if meter>128 {meter=128 meterSpd=-4}}
-else {if meter<0 {meter=0 meterSpd=4}}
+if meterSpd=0.04
+{if meter>1 {meter=1 meterSpd=-0.04}}
+else {if meter<0 {meter=0 meterSpd=0.04}}
 
 if character=0 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
 if character=1 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
@@ -92,8 +92,9 @@ shaketime=10 altresult2Text="SCORE" altresult2=0
 if win {altresult2Text="PERFECT" altresult2=10000}
 	
 strGo=1
+	var towermax=toweramount*32;
 	
-strtotal=((meter*(32))/(toweramount*32))*(toweramount*32)
+strtotal=((meter/(towermax))*(towermax))//(((meter)*(32))/(toweramount*32))*32//*(toweramount*32)
 
 
 slotY=0 slotSpd=32
@@ -105,16 +106,17 @@ if animFrame>3
 {
 if strGo=1
 {
-slotYdraw=(slotY/maxpoints)*(toweramount*64)
+slotYdraw=(slotY/maxpoints)*(toweramount*32)
 
-oHammerGame.screenY=lerp(oHammerGame.screenY,(slotY/maxpoints)*toweramount*64,1)
-y=lerp(y,ystart+(slotY/maxpoints)*toweramount*64,1)
+oHammerGame.screenY=lerp(oHammerGame.screenY,(slotY/maxpoints)*toweramount*32,1)
+y=lerp(y,ystart+(slotY/maxpoints)*toweramount*32,1)
 	
 slotSpd+=1 slotSpd=clamp(slotSpd,-32,32) slotY+=slotSpd
-if slotY>(strtotal)-64 or slotY>(toweramount*64) {
+if slotY>strtotal*32// or slotY>(toweramount*32)
+{
 	
-	if slotY>-32+(toweramount*64) win=1
-	strGo=0 altresult2=slotY slotSpd=1 lerp(slotYdraw,(slotY/maxpoints)*(toweramount*64),1)}
+	if slotY>-32+(toweramount*32) win=1
+	strGo=0 altresult2=slotY slotSpd=1 lerp(slotYdraw,(slotY/maxpoints)*(toweramount*32),1)}
 
 }
 else

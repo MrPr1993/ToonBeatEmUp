@@ -27,7 +27,7 @@ anim=0
 animFrame=0
 
 meter=0
-meterSpd=4
+meterSpd=0.04
 
 shake=0
 shaketime=0

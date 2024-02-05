@@ -3,7 +3,7 @@
 
 
 draw_sprite(spr_hammergame,0,x+40,y)
-for (var i=0;i<round(toweramount/2); i++)
+for (var i=0;i<round(toweramount); i++)
 {
 draw_sprite(spr_hammergame,2,x+40,y-32-32*i)
 }
@@ -24,6 +24,6 @@ draw_sprite(sprite_index,image_index,x+shake-16,y)
 	pal_swap_reset();
 	shader_reset()
 
-draw_set_color(c_red) draw_rectangle(x+40+4+4,y-128,x+40+8+4,y-16,false)
-draw_set_color(c_yellow) draw_rectangle(x+40+4+4,y-((meter/128)*128)-16,x+40+8+4,y-16,false)
+draw_set_color(c_red) draw_rectangle(x+40+4+4,y-128-16,x+40+8+4,y-16,false)
+draw_set_color(c_yellow) draw_rectangle(x+40+4+4,y-((meter/(128)*128)*(128))-16,x+40+8+4,y-16,false)
 draw_set_color(c_white)
