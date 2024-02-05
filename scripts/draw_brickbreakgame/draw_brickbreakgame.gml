@@ -75,7 +75,7 @@ if oBrickBreakGame.ready=1
 with oBrickBreakPlayer
 {
 draw_set_font(global.timefont)
-draw_set_halign(fa_center)
+draw_set_halign(fa_center) draw_set_color(c_white)
 draw_text(160,0,oBrickBreakGame.time)	
 
 d3d_transform_set_identity()
@@ -157,5 +157,34 @@ draw_set_color(c_white) draw_set_alpha(1)
 
 }
 
+
+if room=rm_hammergame
+{
+draw_set_font(global.timefont)
+draw_set_halign(fa_center)
+draw_set_color(c_white)
+draw_text(160,0,oHammerGame.time)
+	
+if oHammerGame.ready=0
+with oHammerPlayer
+{	
+draw_set_font(global.scorefont)
+draw_set_color(c_white)
+draw_set_halign(fa_center)
+draw_text(160,32,"TEST YOUR STRENGTH!")
+
+with oControl
+{
+if stageIntro!=0 stageIntro-=0.05 else stageIntro=0
+draw_set_color(c_black) draw_set_alpha(1)
+if stageIntro!=0
+draw_rectangle(-2,-2,320*stageIntro,999,false)
 }
+draw_set_color(c_white) draw_set_alpha(1)
+//draw_playerhp()
+}
+
+}
+}
+
 

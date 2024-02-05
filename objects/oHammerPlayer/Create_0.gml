@@ -84,8 +84,10 @@ slotSpd=0
 
 strGo=0
 
+frameadd=0
+
 	spawnID=-1 ///For character's Weapon when they pick it up; the weapon's data will be transferred to them and when they drop it that data will be transferred to it
-	weaponspr=spr_hammer
+	weaponspr=spr_hammer2
 	weaponIndex=0
 	weaponX=0
 	weaponY=0

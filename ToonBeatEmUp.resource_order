@@ -2655,6 +2655,7 @@
     {"name":"spr_skeleton_bonethrow","order":3,"path":"sprites/spr_skeleton_bonethrow/spr_skeleton_bonethrow.yy",},
     {"name":"spr_skeleton_burned","order":4,"path":"sprites/spr_skeleton_burned/spr_skeleton_burned.yy",},
     {"name":"spr_skeleton_elec","order":5,"path":"sprites/spr_skeleton_elec/spr_skeleton_elec.yy",},
+    {"name":"spr_hammer2","order":50,"path":"sprites/spr_hammer2/spr_hammer2.yy",},
     {"name":"spr_skeleton_flat","order":6,"path":"sprites/spr_skeleton_flat/spr_skeleton_flat.yy",},
     {"name":"spr_viva_sgame","order":6,"path":"sprites/spr_viva_sgame/spr_viva_sgame.yy",},
     {"name":"spr_skeleton_frozen","order":7,"path":"sprites/spr_skeleton_frozen/spr_skeleton_frozen.yy",},
