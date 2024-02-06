@@ -1,12 +1,22 @@
-/// @description Pyramid Area
+/// @description Pyramid Area - Hieroglyphs
 
 if __view_get( e__VW.XView, 0 )>=5896-2-320
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oCatman)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
+oControl.quakeFXTime=10
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oCatman)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
+en1=instance_create_depth(5632,176,-1,oEntryPool) with en1
+{rangeX=0 z=-32 spawnFall=spr_hieroglyph_base spawnEnemy=oHieroglyph}
+
+en2=instance_create_depth(5632+96,176,-1,oEntryPool) with en2
+{rangeX=0 z=-32 spawnFall=spr_hieroglyph_base spawnEnemy=oHieroglyph}
+
+en3=instance_create_depth(5632+96*2,176,-1,oEntryPool) with en3
+{rangeX=0 z=-32 spawnFall=spr_hieroglyph_base spawnEnemy=oHieroglyph}
+
+en4=instance_create_depth(5632+96*3,176,-1,oEntryPool) with en4
+{rangeX=0 z=-32 spawnFall=spr_hieroglyph_base spawnEnemy=oHieroglyph}
+
+	
 }
 else
 timeline_position-=1
