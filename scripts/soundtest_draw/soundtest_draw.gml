@@ -54,6 +54,7 @@ newscript=function()
 {vspeed+=0.22 if vspeed>0 {image_alpha-=0.01 if image_alpha<0 instance_destroy()}
 }
 }
+
 }	
 recordAng+=1*songSPD
 recordAng2=lerp(recordAng2,22,0.1)

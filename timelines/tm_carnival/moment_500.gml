@@ -2,8 +2,24 @@
 
 if specialSet6=300
 {
-with oPlayer
+with bgsetter
+{y=-9999999
+image_alpha=1
+specialdraw=function()
 {
+if image_alpha>0 image_alpha-=0.05 else instance_destroy()
+
+draw_set_alpha(image_alpha) draw_set_color(c_white)
+draw_rectangle(__view_get( e__VW.XView, 0)-4,-666,__view_get( e__VW.XView, 0)+444,777,false)
+draw_set_alpha(1)
+}
+	
+
+}
+
+with oPlayer
+{layer_set_visible("TILE_AUDIENCE",1)
+	
 canControl=1 automove=0
 }
 
@@ -77,7 +93,7 @@ if specialSet6=120
 with bgsetter
 {
 newscript=function()
-{if image_alpha>0 image_alpha-=0.01 else instance_destroy()}
+{if image_alpha>0 image_alpha-=0.01}
 
 with oPlayer
 {
@@ -89,7 +105,7 @@ automoveX=6688+64 automoveY=178+64 automove=1
 
 if specialSet6=200
 {oControl.MusicFade=1 oControl.MusicFadeAdd=1
-boss=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oDuckBoss)
+boss=instance_create(__view_get( e__VW.XView, 0)+160,228,oDuckBoss)
 boss.z=-200 boss.anim=100 boss.animFrame=0 boss.ground=0 boss.canmove=0
 
 }
@@ -98,7 +114,7 @@ if specialSet6=240
 {
 musicplaystart(msc_boss3)
 oControl.bossID=oDuckBoss
-layer_set_visible("TILE_AUDIENCE",1)
+
 }
 
 
