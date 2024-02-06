@@ -173,3 +173,51 @@ if animFrame>6.8 {canmove=1 anim=0 animFrame=0 alarm[1]=120}
 }
 else
 {canbeGrabbed=1 selfatk.height=64}
+
+
+///Intro
+if anim=100
+{specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
+sprite_index=spr_prince_intro
+frame_set(0,0,0.01)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.25) if animFrame=4
+{
+clothes=instance_create_depth(x,y-1,-1,oDisappearPart) with clothes
+{
+disappearTime=24
+dis=0
+angle=0
+minSprite=0
+maxSprite=0
+SpriteSpd=0
+z=0
+bounce=1
+spdZ=-2 hspeed=-2*image_xscale
+angleSpin=0
+sprite_index=spr_prince_clothes image_index=0 image_speed=0
+}
+}
+frame_set(4,4,0.25)
+frame_set(5,5,0.02)
+frame_set(6,6,0.25)
+frame_set(7,7+specialtimes[0],0.01)
+frame_set(8,9,0.25)
+frame_set(9,10,0.05)
+frame_set(10,11,0.25)
+frame_set(11,12,0.05)
+frame_set(12,11,0.25) if animFrame=13 if specialtimes[1]!=3 {animFrame=9 specialtimes[1]+=1 }
+frame_set(13,13,0.25)
+frame_set(14,14+specialtimes[0],0.005)
+frame_set(15,15,0.25)
+
+if animFrame>15.5 if ground and animFrame!=17.5 {z=-4 spdZ=-8 ground=0 animFrame=17.5}
+
+if animFrame>=16 {image_index=6
+	y+=2
+	
+	if ground canmove=1
+	}
+
+}

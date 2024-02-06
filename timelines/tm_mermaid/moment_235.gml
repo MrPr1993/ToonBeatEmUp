@@ -13,18 +13,21 @@ stageEndFX=0
 stageIntro=1
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0
-oEnemySpawner.MaxX=9472
+oEnemySpawner.MaxX=6592
+oEnemySpawner.YView=0
 camMove=1
 
 }
 
-boss=instance_create_depth(9312+8,144,-1,oWitch)
-with boss {canmove=0 anim=100 image_xscale=-1}
+boss=instance_create_depth(6430,154,-1,oPrince)
+with boss {canmove=0 anim=100}
 
 with oPlayer
 {hspeed=0
+	
+	 image_xscale=1
 
-areaEntry=0 z=-400 x-=60
+areaEntry=0 z=-400 
 //canControl=1
 canmove=0
 	hurt=1
@@ -38,5 +41,5 @@ canmove=0
 
 }
 
-spawner_followset("WaveSet1",0,9472,1)
+spawner_followset("WaveSet1",0,6592,1)
 }
