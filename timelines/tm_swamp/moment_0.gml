@@ -57,3 +57,6 @@ layer_background_visible(bgfog1,0)
 
 
 oPlayer.x-=64
+
+
+{oPlayer.x=4910 oEnemySpawner.MaxX=4910+320 timeline_skip(910)}

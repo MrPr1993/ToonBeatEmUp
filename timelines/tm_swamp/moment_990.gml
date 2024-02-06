@@ -1,7 +1,8 @@
 /// @description Prepare Boss
 
 
-
+if x=-9999999999999
+{
 if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0 
 {
 oPlayer.canControl=0
@@ -25,4 +26,5 @@ with oControl MusicFade=1
 else
 {
 timeline_position-=1
+}
 }

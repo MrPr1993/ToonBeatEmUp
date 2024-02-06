@@ -189,5 +189,5 @@ frame_set(11,11,0.1)
 frame_set(12,12,0.1)
 frame_set(13,13,0.01) if animFrame=14 sprite_index=spr_witch_attack1
 frame_set(14,0,0.1)
-if animFrame>14.5 canmove=1
+if animFrame>14.5 {canmove=1 y+=96 recovery=20 recoveryThrow=20}
 }
