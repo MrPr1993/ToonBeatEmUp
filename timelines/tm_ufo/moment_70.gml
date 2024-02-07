@@ -19,10 +19,11 @@ en3=instance_create(2360,146,oAreaSpawner)
 en4=instance_create(2470,146,oAreaSpawner)
 en5=instance_create(2580,146,oAreaSpawner)
 with oAreaSpawner
-{isDepth=0 depth=16777200 sittingSpr=spr_spacer_front spawnFall=spr_spacer_front rangeXAdd=0
-	rangeX=0 spawnEnemy=oSpacer
-	flashFX(x,y,0,spr_ateleporter,0,0.5,10,1,1,c_white,1)
-	}	
+{spawnX=0 ///768
+MaxSpawnFrame=0 visible=1
+FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
+enemytype0=oSpacer
+enemyMax=0}
 }
 else
 timeline_position-=1

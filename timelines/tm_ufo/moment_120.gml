@@ -6,7 +6,7 @@ and !instance_exists(en4)
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
-spawner_followset("WaveSet1",0,5560,1)
+spawner_followset("WaveSet1",0,5560+160,1)
 
 en1=instance_create_depth(5478,164,-1,oMartian)
 en2=instance_create_depth(5544,164,-1,oMartian)

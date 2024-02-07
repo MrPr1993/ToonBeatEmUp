@@ -1,31 +1,65 @@
-/// @description Baddies Appear 7 - Castle start
+/// @description Spot for Boss Teleportation
 
-if __view_get( e__VW.XView, 0 )>=6480-2-320
+//if __view_get( e__VW.XView, 0 )>=6256-2
+//{
+
+//boss=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oPrince)
+//musicplaystart(msc_boss4)
+//oControl.bossID=oPrince
+
+
+//}
+//else
+//timeline_position-=1
+
+/// @description Go To Boss
+
+
+/// @description Hit the Quicksand
+if oPlayer.ground and oPlayer.canmove
+{timer_set(0)
+
+oControl.quakeFXTime=10
+	
+with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=999999 image_index=0 sprite_index=qSandSpr}
+with oShadowFX visible^=1
+quicksnd=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oWaterFX) with quicksnd
+{z=0 image_xscale=88888 image_yscale=77777}
+quicksnd2=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oTrainFXSpot) with quicksnd2
+{z=0 image_xscale=88888 image_yscale=77777}
+
+sandstorm=instance_create_depth(0,0,-1,oCameoChar)
+
+
+with sandstorm {newscript=function()
+{specialcheck[8]+=0.5
+
+with oPlayer
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oBear)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
+weaponanim(weaponspr,weaponIndex,99999,99999,0,c_white)
+areaEntry=1
+}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oFairy)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
+if specialcheck[8]=52
+{with oPlayer
+	{sprite_index=mask_none
+	
+	dust_make(x,y,0,1,0,0)
+dust_make(x,y,0,-1,0,0)
+dust_make(x,y,0,0,-0.5,0)
+dust_make(x,y,0,0,0.5,0)
+dust_make(x,y,0,1,-0.5,0)
+dust_make(x,y,0,1,0.5,0)
+dust_make(x,y,0,-1,-0.5,0)
+dust_make(x,y,0,-1,0.5,0)
+	}
 
-en3=instance_create(__view_get( e__VW.XView, 0)-64,200+24,oBear)
-with en3 {image_xscale=-1 canAttack=5 alarm[1]=60}	
+}
 
-en4=instance_create(__view_get( e__VW.XView, 0)-64,200+64,oPlant)
-with en4 {image_xscale=-1 canAttack=5 alarm[1]=60}	
-
+}
+}	
 
 }
 else
-{
-timeline_position-=1
-}
+timeline_position-=1;
 
-////For castle area
-//6916 - Book Area
-//7566 - Edge of Table
-//8206 - More Table - Furniture
-//8846 - Boss Area
-//
-//
-//
