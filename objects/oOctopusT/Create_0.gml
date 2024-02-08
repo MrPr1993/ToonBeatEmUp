@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_speed=0
+hitBack=0
 act=1
 targetEnemy=-1
 enemyPortraitSpr=spr_enemyface

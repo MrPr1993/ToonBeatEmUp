@@ -4,6 +4,12 @@ name="VAN BAD"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=58
 
+DamageVoice1=snd_fdas1
+DamageVoice2=snd_fdas1
+DamageVoice3=snd_fdas1
+
+DeathCry=snd_fdas2
+
 enemyscript=animsetup_enemy
 
 pointshit=10

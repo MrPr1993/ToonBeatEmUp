@@ -153,9 +153,31 @@ if animFrame>4 if ground {atk=0 canmove=1}
 ///Intro
 if anim=100
 {canbeGrabbed=0 recovery=10
+
+if specialtaunt=3
+{sprite_index=spr_scientist_stand image_index+=0.1
+animFrame+=0.1
+
+if animFrame>12 {animFrame=0 specialtaunt-=1}
+}
+
+if specialtaunt=2
+{x-=2 sprite_index=spr_scientist_move image_index+=0.25
+animFrame+=0.1
+
+if animFrame>4 {animFrame=0 specialtaunt-=1}
+}
+
+if specialtaunt=1
+{sprite_index=spr_scientist_anger image_index+=0.1
+animFrame+=0.1
+
+if animFrame>12 {animFrame=0 specialtaunt-=1}
+}
+
+if specialtaunt=0
+{
 sprite_index=spr_scientist_transform 
-
-
 //if animLock=0
 frame_set(0,0,0.2) //if animFrame=1 PlaySound(snd_hwolf4)
 frame_set(1,1,0.2) 
@@ -198,3 +220,5 @@ frame_set(36,12,0.05)
 
 if animFrame>36.9 {canbeGrabbed=1 recovery=0 anim=0 canmove=1 alarm[1]=30}
 }
+}
+
