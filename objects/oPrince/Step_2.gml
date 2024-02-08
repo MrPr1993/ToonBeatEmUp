@@ -215,7 +215,7 @@ frame_set(13,13,0.25)
 frame_set(14,14+specialtimes[0],0.001) if animFrame>=14.9 animFrame=15
 frame_set(15,15,0.25)
 
-if animFrame>14.5 if ground and animFrame!=17.5 {z=-4 zSpeed=-8 ground=0 animFrame=17.5}
+if animFrame>14.25 if ground and animFrame!=17.5 {z=-4 zSpeed=-8 ground=0 animFrame=17.5}
 }
 if animFrame>=16 {image_index=6
 	y+=1

@@ -74,13 +74,13 @@ specialcheck1+=1 if specialcheck1>120 {anim=10}
 
 ////Dead
 if anim=12
-{
+{if animFrame=0 specialtimes[0]=0
 sprite_index=spr_mirrorlady_uhoh
 frame_set(0,1,0.05)
 frame_set(1,0,0.1)
 frame_set(2,1,0.1)
 frame_set(3,0,0.1)
-frame_set(4,2,0.1) if animFrame>4.9 {if specialcheck0<12 {animFrame=1 specialcheck0+=1}
+frame_set(4,2,0.1) if animFrame>4.9 {if specialtimes[0]<12 {animFrame=1  specialtimes[0]+=0.25}
 
 else {oControl.quakeFX=30  
 	
@@ -110,9 +110,9 @@ iceFX+=1;
 }
 
 
-	
+	instance_destroy()
 	}
-instance_destroy()
+
 }
 
 

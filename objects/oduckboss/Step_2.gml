@@ -43,7 +43,7 @@ if animFrame=clamp(animFrame,2,4.9) {atk=1
 	sentflying=8*image_xscale oControl.quakeFXTime=10
 	dust_make(x,y+1,z,-1*image_xscale,1,1)
 
-if x!=clamp(x,-__view_get( e__VW.XView, 0 )-32-sprite_get_width(mask_index)/2,__view_get( e__VW.XView, 0 )+32+320+sprite_get_width(mask_index)/2)
+if x!=clamp(x,oControl.camX-48-sprite_get_width(mask_index)/2,oControl.camX+48+320+sprite_get_width(mask_index)/2)
 {y=targetY
 image_xscale=-image_xscale x+=16*image_xscale
 }

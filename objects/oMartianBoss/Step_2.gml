@@ -149,18 +149,19 @@ if animFrame>10.5 {atk=0 canmove=1}
 if anim=100 ///Intro
 {sprite_index=spr_martianb_intro
 	
-frame_set(0,0,0.5)
-frame_set(1,1,0.5)
-frame_set(2,2,0.5)
-frame_set(3,3,0.5)
-frame_set(4,4,0.5)
-frame_set(5,5,0.5)
-frame_set(6,6,0.5)
-frame_set(7,7,0.05)
-frame_set(8,8,0.1) if animFrame=9 {PlaySound(snd_martianb1)}
-frame_set(9,9,0.1)
-frame_set(10,10,0.005) 
-frame_set(11,11,0.1)
-frame_set(12,12,0.1)
-if animFrame>12.5 {atk=0 canmove=1}
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.25)
+frame_set(4,4,0.25)
+frame_set(5,5,0.25)
+frame_set(6,6,0.01)
+frame_set(7,7,0.25)
+frame_set(8,8,0.25) if animFrame=9 {PlaySound(snd_martianb1)}
+frame_set(9,9,0.25)
+frame_set(10,10,0.01) 
+frame_set(11,10,0.01)
+frame_set(12,11,0.1)
+frame_set(13,12,0.1)
+if animFrame>13.5 {atk=0 canmove=1}
 }

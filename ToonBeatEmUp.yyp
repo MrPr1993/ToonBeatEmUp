@@ -3016,6 +3016,7 @@
     {"id":{"name":"spr_sofia_cut1B","path":"sprites/spr_sofia_cut1B/spr_sofia_cut1B.yy",},},
     {"id":{"name":"spr_sofia_cut2","path":"sprites/spr_sofia_cut2/spr_sofia_cut2.yy",},},
     {"id":{"name":"snd_metalbreakl","path":"sounds/snd_metalbreakl/snd_metalbreakl.yy",},},
+    {"id":{"name":"mirrordiva_check","path":"scripts/mirrordiva_check/mirrordiva_check.yy",},},
     {"id":{"name":"spr_painter_attack4","path":"sprites/spr_painter_attack4/spr_painter_attack4.yy",},},
     {"id":{"name":"spr_sofia_cut2B","path":"sprites/spr_sofia_cut2B/spr_sofia_cut2B.yy",},},
     {"id":{"name":"spr_martianb_burned","path":"sprites/spr_martianb_burned/spr_martianb_burned.yy",},},

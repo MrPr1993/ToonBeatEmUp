@@ -47,3 +47,6 @@ FrozenSpr=spr_plantprincess_frozen
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
+
+
+if oControl.betatest if keyboard_check(vk_control) {canmove=0 anim=100}

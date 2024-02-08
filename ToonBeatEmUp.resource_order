@@ -2765,6 +2765,7 @@
     {"name":"spr_sofia_cut1B","order":16,"path":"sprites/spr_sofia_cut1B/spr_sofia_cut1B.yy",},
     {"name":"spr_sofia_cut2","order":17,"path":"sprites/spr_sofia_cut2/spr_sofia_cut2.yy",},
     {"name":"snd_metalbreakl","order":27,"path":"sounds/snd_metalbreakl/snd_metalbreakl.yy",},
+    {"name":"mirrordiva_check","order":6,"path":"scripts/mirrordiva_check/mirrordiva_check.yy",},
     {"name":"spr_painter_attack4","order":11,"path":"sprites/spr_painter_attack4/spr_painter_attack4.yy",},
     {"name":"spr_sofia_cut2B","order":18,"path":"sprites/spr_sofia_cut2B/spr_sofia_cut2B.yy",},
     {"name":"spr_martianb_burned","order":4,"path":"sprites/spr_martianb_burned/spr_martianb_burned.yy",},

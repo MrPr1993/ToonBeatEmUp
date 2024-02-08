@@ -9,6 +9,7 @@ alarm[0]=choose(200,220,240,260,280,300)
 
 hp=2
 
+character=-1
 
 enemyset=0
 
@@ -25,12 +26,15 @@ spawnenemyscript=function()
 if enemyset=1
 {
 enemyspawn[0]=instance_create_depth(x+32,y+64,-1,oEntryMirror) enemyspawn[0].image_xscale=-1
+
 }
 
 if enemyset=2
 {
 enemyspawn[0]=instance_create_depth(x-32,y+64,-1,oEntryMirror)
 enemyspawn[1]=instance_create_depth(x+32,y+64,-1,oEntryMirror) enemyspawn[1].image_xscale=-1
+
+with enemyspawn[1] character=1
 }
 
 if enemyset=3
@@ -39,11 +43,31 @@ enemyspawn[0]=instance_create_depth(x-32,y+64,-1,oEntryMirror)
 enemyspawn[1]=instance_create_depth(x+32,y+64,-1,oEntryMirror) enemyspawn[1].image_xscale=-1
 enemyspawn[2]=instance_create_depth(x-32,y+96,-1,oEntryMirror)
 enemyspawn[3]=instance_create_depth(x+32,y+96,-1,oEntryMirror) enemyspawn[3].image_xscale=-1
+
+with enemyspawn[1] character=1
+with enemyspawn[2] character=2
+with enemyspawn[3] character=3
+}
+
+with enemyspawn[0]
+{
+my_pal_sprite=oControl.p1.my_pal_sprite
+current_pal=oControl.p1.current_pal
+character=oControl.p1.character
 }
 
 with oEntryMirror
 {
+
+
+image_speed=0 spawnEnemy=oMirrorDiva
+if character=0 sprite_index=spr_viva_stand
+if character=1 sprite_index=spr_hina_stand
+if character=2 sprite_index=spr_bahati_stand
+if character=3 sprite_index=spr_sofia_stand
 image_alpha=0 image_yscale=0 spawned=1 visible=1
+
+
 }
 
 if enemyspawn[0]!=0 if !instance_exists(enemyspawn[0]) enemyspawn[0]=0 else hp+=enemyspawn[0].hp

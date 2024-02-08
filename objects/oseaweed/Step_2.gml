@@ -73,3 +73,36 @@ frame_set(4,2,0.25) if animFrame>4-0.25 {if specialcheck4!=8 {animFrame=2.25 spe
 frame_set(5,1,0.1)
 if animFrame>5.5 canmove=1
 }
+
+///Intro
+if anim=100
+{sprite_index=spr_seaweed_intro
+	if animFrame=0 {specialtimes[0]=0 specialtimes[1]=0}
+specialtimes[1]+=0.25 if specialtimes[1]=2 specialtimes[1]=0
+if specialtimes[1]<1.5 specialtimes[0]=0 else specialtimes[0]=1
+
+frame_set(0,0+specialtimes[0],0.01)
+frame_set(1,2,0.1)
+frame_set(2,3,0.1)
+frame_set(3,4,0.1)
+frame_set(4,5,0.1)
+frame_set(5,6,0.1)
+frame_set(6,7,0.1)
+frame_set(7,8,0.05)
+frame_set(8,9,0.1)
+frame_set(9,10,0.01)
+frame_set(10,11,0.01)
+if animFrame<10.8 {z=-16 shadowSpr=mask_none} else shadowSpr=spr_shadow
+if animFrame=10.8
+{
+ground=0 z=-4 zSpeed=-8 animFrame=13 image_index=12
+}
+if animFrame>10.8 {if ground=0 {y+=1 image_index=12 animFrame=13 } else if animFrame=13
+animFrame=14
+}
+
+frame_set(14,13,0.25)
+frame_set(15,14,0.25)
+if animFrame>15.5 canmove=1
+
+}

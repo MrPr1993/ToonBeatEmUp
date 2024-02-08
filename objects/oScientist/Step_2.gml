@@ -148,3 +148,53 @@ frame_set(8,1,0.1)
 if animFrame>4 if ground {atk=0 canmove=1}
 
 }
+
+
+///Intro
+if anim=100
+{canbeGrabbed=0 recovery=10
+sprite_index=spr_scientist_transform 
+
+
+//if animLock=0
+frame_set(0,0,0.2) //if animFrame=1 PlaySound(snd_hwolf4)
+frame_set(1,1,0.2) 
+frame_set(2,2,0.2)
+frame_set(3,3,0.2)
+frame_set(4,4,0.2)
+frame_set(5,3,0.2)
+frame_set(6,4,0.2)
+frame_set(7,3,0.2)
+frame_set(8,4,0.2)
+frame_set(9,3,0.2)
+frame_set(10,4,0.2)
+frame_set(11,3,0.2)
+frame_set(12,4,0.2)
+frame_set(13,3,0.2)
+frame_set(14,4,0.2)
+frame_set(15,3,0.2) //if animFrame=16 {PlaySound(snd_wolfita2) oControl.quakeFXTime=8}
+
+frame_set(16,4,0.2) 
+frame_set(17,5,0.2)
+frame_set(18,6,0.2)
+frame_set(19,7,0.2)
+frame_set(20,6,0.2)
+frame_set(21,7,0.2)
+frame_set(22,6,0.2)
+frame_set(23,7,0.2)
+frame_set(24,6,0.2)
+frame_set(25,7,0.2)
+frame_set(26,6,0.2)
+frame_set(27,7,0.2)
+frame_set(28,6,0.2)
+frame_set(29,7,0.2)
+frame_set(30,6,0.2)
+frame_set(31,7,0.2)
+frame_set(32,8,0.2)
+frame_set(33,9,0.2)
+frame_set(34,10,0.2)
+frame_set(35,11,0.2)
+frame_set(36,12,0.05)
+
+if animFrame>36.9 {canbeGrabbed=1 recovery=0 anim=0 canmove=1 alarm[1]=30}
+}
