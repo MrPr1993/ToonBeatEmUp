@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function burglarbike_hit(){
+	
+	if anim!=4
+	{
 specialhit=-1 canbeGrabbed=1
 	event_user(1) canBounce=1
 		ground=0
@@ -16,5 +19,10 @@ specialhit=-1 canbeGrabbed=1
 	bike.my_pal_sprite=my_pal_sprite bike.current_pal=current_pal bike.z=z-14
 	with bike {sprite_index=spr_bike}
 	event_user(11)
+	}
+	else
+	{anim=2500 atk=0 specialtimes[1]=60
+	
+	}
 
 }

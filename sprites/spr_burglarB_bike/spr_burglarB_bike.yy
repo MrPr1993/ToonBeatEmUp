@@ -14,7 +14,9 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7a24fdce-4179-4326-9f63-d4627409fba4",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f1e7b826-1f29-4d55-86ab-62efbf197b2b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c57917e-92a9-4131-ad5f-0e2e76aac151",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e61d273f-b5db-4b24-89f2-7d541d245089",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a91f6a98-c872-46f8-bc61-ed25d2a3be05",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -44,7 +46,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -56,7 +58,9 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7a24fdce-4179-4326-9f63-d4627409fba4","path":"sprites/spr_burglarB_bike/spr_burglarB_bike.yy",},},},"Disabled":false,"id":"629181eb-353d-4e61-8377-d1422a5d5473","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f1e7b826-1f29-4d55-86ab-62efbf197b2b","path":"sprites/spr_burglarB_bike/spr_burglarB_bike.yy",},},},"Disabled":false,"id":"5bf0c8b0-9999-4896-b456-8c878786e824","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6c57917e-92a9-4131-ad5f-0e2e76aac151","path":"sprites/spr_burglarB_bike/spr_burglarB_bike.yy",},},},"Disabled":false,"id":"1dd7d307-5bb9-4527-87ae-dd2b035f613e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e61d273f-b5db-4b24-89f2-7d541d245089","path":"sprites/spr_burglarB_bike/spr_burglarB_bike.yy",},},},"Disabled":false,"id":"6072f0b5-0ead-4fba-81f0-0238b2c718fe","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a91f6a98-c872-46f8-bc61-ed25d2a3be05","path":"sprites/spr_burglarB_bike/spr_burglarB_bike.yy",},},},"Disabled":false,"id":"69e24eda-a5f6-4069-9033-1d697a2572b0","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

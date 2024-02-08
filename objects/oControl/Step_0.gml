@@ -1,6 +1,8 @@
 /// @description Beta Test
 if isPaused=0
 {
+camX=__view_get( e__VW.XView, 0 )	
+
 if room=rm_cutscene1 or room=rm_opening or rm_brickbreak
 or room=rm_slotmachine or room=rm_eatinggame or room=rm_singgame or isNotStage=1
 __view_set( e__VW.YView, 0, quakeFX)	

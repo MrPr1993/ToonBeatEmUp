@@ -2,6 +2,8 @@ roomfast=0
 
 playNO=1
 
+camX=0;
+
 colorshade_setup()
 
 isNotStage=0

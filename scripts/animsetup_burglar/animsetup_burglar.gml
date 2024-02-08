@@ -57,12 +57,32 @@ if animFrame>3 and ground {canmove=1}
 
 ///Bike
 if anim=2500
-{sprite_index=bikeSpr image_index+=0.5 sentflying=4*image_xscale atk=1 MoveType=1 atkcol_set(3,0,0,2.25,1,28)
-damage=0.1
-if image_xscale=-1 if x<__view_get( e__VW.XView, 0 )-128 
-{image_xscale=1 y=targetEnemy.y}
-if image_xscale=1 if x>__view_get( e__VW.XView, 0 )+320+128
-{image_xscale=-1 y=targetEnemy.y}
+{sprite_index=bikeSpr   MoveType=1 atkcol_set(3,0,0,2.25,1,28)
+	
+	if specialtimes[1]!=0 specialtimes[1]-=1
+	
+damage=0.1 
+if animFrame=0 {specialtimes[0]=8 image_index=0}
+if animFrame<0.75 {sentflying=0 atk=0 animFrame+=0.01 if animFrame>0.1
+	{x+=specialtimes[0]*image_xscale specialtimes[0]=lerp(specialtimes[0],0,0.1) 
+		
+		//sentflying-=0.0001*image_xscale
+		
+		}
+	//else sentflying=8*image_xscale
+	
+	} else {sentflying=4*image_xscale atk=1 image_index+=0.5 if image_index=3 {image_index=1 dust_make(x-16*image_xscale,y,z,-0.75*image_xscale,0,0)
+		if specialtimes[1]!=0 {image_index=3 atk=0}
+		}}
+
+var getv=oControl.camX//__view_get( e__VW.XView, 0);
+
+if x!=clamp(x,getv-128,getv+320+128 )
+{
+if image_xscale=1 {x=getv+320 x+=32} else {x=getv x-=32}
+
+	image_xscale=-image_xscale animFrame=0  y=targetEnemy.y}
+
 }
 
 }
