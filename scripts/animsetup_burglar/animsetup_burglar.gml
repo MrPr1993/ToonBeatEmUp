@@ -59,21 +59,31 @@ if animFrame>3 and ground {canmove=1}
 if anim=2500
 {sprite_index=bikeSpr   MoveType=1 atkcol_set(3,0,0,2.25,1,28)
 	
-	if specialtimes[1]!=0 specialtimes[1]-=1
+	if specialtimes[1]!=0 {specialtimes[1]-=1 selfatk.atk=0 atk=0}
 	
 damage=0.1 
-if animFrame=0 {specialtimes[0]=8 image_index=0}
-if animFrame<0.75 {sentflying=0 atk=0 animFrame+=0.01 if animFrame>0.1
+if animFrame=0 {specialtimes[0]=8 
+	
+	
+	
+	}
+if animFrame<0.75 {sentflying=0 atk=0 animFrame+=0.01 if animFrame>0.08
 	{x+=specialtimes[0]*image_xscale specialtimes[0]=lerp(specialtimes[0],0,0.1) 
-		
+		image_index=0
 		//sentflying-=0.0001*image_xscale
+		
+		} else {
+		
+		image_index+=0.5 if image_index=3 {image_index=1 dust_make(x-16*image_xscale,y,z,-0.75*image_xscale,0,0)}
 		
 		}
 	//else sentflying=8*image_xscale
 	
-	} else {sentflying=4*image_xscale atk=1 image_index+=0.5 if image_index=3 {image_index=1 dust_make(x-16*image_xscale,y,z,-0.75*image_xscale,0,0)
-		if specialtimes[1]!=0 {image_index=3 atk=0}
+	} else {sentflying=4*image_xscale  image_index+=0.5 if image_index=3 {image_index=1 dust_make(x-16*image_xscale,y,z,-0.75*image_xscale,0,0)
+		if specialtimes[1]!=0 {image_index=3 atk=0} else atk=1 selfatk.atk=atk
 		}}
+		
+		if specialtimes[1]!=0 image_index=3
 
 var getv=oControl.camX//__view_get( e__VW.XView, 0);
 

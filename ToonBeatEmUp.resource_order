@@ -310,6 +310,7 @@
     {"name":"oDBarrel","order":12,"path":"objects/oDBarrel/oDBarrel.yy",},
     {"name":"oDisappearPart","order":19,"path":"objects/oDisappearPart/oDisappearPart.yy",},
     {"name":"spr_sofia_whip","order":77,"path":"sprites/spr_sofia_whip/spr_sofia_whip.yy",},
+    {"name":"oBikeBomb","order":36,"path":"objects/oBikeBomb/oBikeBomb.yy",},
     {"name":"snd_merman3","order":51,"path":"sounds/snd_merman3/snd_merman3.yy",},
     {"name":"snd_betty1","order":7,"path":"sounds/snd_betty1/snd_betty1.yy",},
     {"name":"spr_lobster_idle1","order":14,"path":"sprites/spr_lobster_idle1/spr_lobster_idle1.yy",},

@@ -406,6 +406,7 @@
     {"id":{"name":"oDBarrel","path":"objects/oDBarrel/oDBarrel.yy",},},
     {"id":{"name":"oDisappearPart","path":"objects/oDisappearPart/oDisappearPart.yy",},},
     {"id":{"name":"spr_sofia_whip","path":"sprites/spr_sofia_whip/spr_sofia_whip.yy",},},
+    {"id":{"name":"oBikeBomb","path":"objects/oBikeBomb/oBikeBomb.yy",},},
     {"id":{"name":"oDiver","path":"objects/oDiver/oDiver.yy",},},
     {"id":{"name":"oDogPet","path":"objects/oDogPet/oDogPet.yy",},},
     {"id":{"name":"snd_merman3","path":"sounds/snd_merman3/snd_merman3.yy",},},
