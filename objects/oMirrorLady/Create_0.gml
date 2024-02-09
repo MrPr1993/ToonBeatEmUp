@@ -59,7 +59,6 @@ character=oControl.p1.character
 with oEntryMirror
 {
 
-
 image_speed=0 spawnEnemy=oMirrorDiva
 if character=0 sprite_index=spr_viva_stand
 if character=1 sprite_index=spr_hina_stand

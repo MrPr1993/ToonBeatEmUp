@@ -79,8 +79,8 @@ sprite_index=spr_mirrorlady_uhoh
 frame_set(0,1,0.05)
 frame_set(1,0,0.1)
 frame_set(2,1,0.1)
-frame_set(3,0,0.1)
-frame_set(4,2,0.1) if animFrame>4.9 {if specialtimes[0]<12 {animFrame=1  specialtimes[0]+=0.25}
+frame_set(3,2,0.1)
+frame_set(4,1,0.1) if animFrame>4.9 {if specialtimes[0]<6 {animFrame=1  specialtimes[0]+=0.25}
 
 else {oControl.quakeFX=30  
 	

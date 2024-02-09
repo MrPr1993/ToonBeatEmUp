@@ -190,8 +190,33 @@ frame_set(5,0,0.5)
 if animFrame>5.5 {atk=0 canmove=1}
 }
 
+
+///Intro
 if anim=100
 {
+if animFrame=0 sprite_index=spr_dastardly_seat
+
+if specialtaunt=0
+{image_xscale=1 shadowSpr=mask_none
+animFrame+=0.01
+
+if animFrame>4 {animFrame=0 specialtaunt+=1 ground=0 zSpeed=-4 z=-3}
+}
+if specialtaunt=1 ///Hop
+{sprite_index=spr_dastardly_move animFrame+=0.1 shadowSpr=spr_shadow
+
+y+=2 x+=3 if animFrame>0.5
+if ground {animFrame=0 specialtaunt+=1}
+}
+if specialtaunt=2 ///part for powerup from the treasures
+{image_xscale=-1
+sprite_index=spr_dastardly_stand
+animFrame+=0.01
+if animFrame=5 {}///Laugh
+if animFrame<5 {image_index=0} else {sprite_index=spr_dastardly_laugh if animFrame<10 image_index+=0.25}
+if animFrame>12 {canmove=1 animFrame=0}
+}
+
 }
 
 ///The Big Reveal
@@ -199,40 +224,40 @@ if anim=101
 {
 if specialtaunt=0
 {
-animFrame=0
-
-animFrame+=0.1 if animFrame>8 {animFrame=0 specialtaunt=1}
+animFrame+=0.1 if animFrame>8 {animFrame=0 specialtaunt=1
+	
+	{specialtimes[6]=0 image_index=0
+	sprite_index=spr_dastardly_explode PlaySound(snd_explosion) oControl.quakeFXTime=10
+	flashFX(x,y+1,0,spr_explosion,0,0.1,10,1,1,c_white,1) zSpeed=-2 ground=0 z=-2
+	}
+	}
 }
 
 if specialtaunt=1
 {
-if animFrame=0 {specialtimes[6]=0
-	sprite_index=spr_dastardly_explode PlaySound(snd_explosion) oControl.quakeFXTime=10
-	flashFX(x,y+1,0,spr_explosion,0,0.1,10,1,1,c_white,1) spdZ=-4 ground=0 z=-2
-	}
 image_index=0
-animFrame+=0.1
-if ground {animFrame=0 specialtaunt=2}
+if ground {animFrame=0 specialtimes[6]=0 specialtaunt=2}
 }
 if specialtaunt=2
-{sprite_index=spr_dastardly_die image_index+=0.1
-if animFrame=0 {hspeed=choose(-2,2) hspeed=choose(-1,1)}
-animFrame+=0.1
-
+{ 
+if animFrame=1 {sprite_index=spr_dastardly_die hspeed=choose(-4,4) vspeed=choose(-1,1)}
+animFrame+=0.01
 if specialtimes[6]=0 {specialtimes[6]=10 
 repeat(4){dust_make(x+choose(-random(64),random(64)),y+1,z-random(150),0,0,0) dustmk.sprite_index=spr_explosion3}} specialtimes[6]-=1
 
+if animFrame>1 image_index+=0.25
 
-if x>oControl.camX+320 {x-=2 hspeed=-2}
-if x<oControl.camX {x+=2 hspeed=2}
-if !place_free(x,y-3) vspeed=2
+if x>oControl.camX+320 {x-=4 hspeed=-4}
+if x<oControl.camX {x+=4 hspeed=4}
+if !place_free(x,y-3) {vspeed=2 y+=2}
 if y>240 {y-=2 vspeed=-2}
 
-if animFrame>12 {animFrame=0 specialtaunt=3}
+if animFrame>4 {animFrame=0 specialtaunt=3}
 }
-if specialtaunt=2
-{sprite_index=spr_dastardly_explode
-	
+if specialtaunt=3
+{sprite_index=spr_dastardly_explode hspeed=0 vspeed=0
+	x=lerp(x,oControl.camX+160,0.1)
+	y=lerp(y,200,0.1)
 if specialtimes[6]=0 {specialtimes[6]=4
 repeat(4){dust_make(x+choose(-random(64),random(64)),y+1,z-random(150),0,0,0) dustmk.sprite_index=spr_explosion3}} specialtimes[6]-=1
 
@@ -248,7 +273,7 @@ if animFrame>6.8
 bigboom=instance_create_depth(0,0,-1,oCameoChar) with bigboom
 {anim=9999
 	
-	y=-9999999
+	y=6000
 image_alpha=1.5
 specialdraw=function()
 {

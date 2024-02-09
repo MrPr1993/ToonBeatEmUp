@@ -12,8 +12,8 @@ HitGround=snd_hitground
 
 idlestyle=2
 
-hp=0.2
-maxhp=0.2
+hp=1
+maxhp=1
 
 height=88
 
