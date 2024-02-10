@@ -20,7 +20,7 @@ else specialcheck1-=1
 
 ground=1
 z=0;	
-animFrame+=0.01 if image_index>2 image_index=0 else image_index+=0.25	
+animFrame+=0.01 if animFrame=1 PlaySound(snd_shrink) if image_index>2 image_index=0 else image_index+=0.25	
 	}
 else
 if animFrame=clamp(animFrame,1,2)
@@ -35,7 +35,7 @@ if animFrame>2
 if x>__view_get( e__VW.XView, 0 )+320+64 instance_destroy()
 	
 wobbleX=1 wobbleY=1 if z>0 {ground=1}
-	animFrame+=0.1 if animFrame>3 if ground {image_index=0 ground=0 zSpeed-=6 animFrame=2.1}
+	animFrame+=0.1 if animFrame>3 if ground {PlaySound(snd_hop1) image_index=0 ground=0 zSpeed-=6 animFrame=2.1}
 else {x+=4 image_index=1 zSpeed+=0.45
 	
 	}

@@ -1,23 +1,17 @@
-if !instance_exists(en1)
-and !instance_exists(en2)
-and !instance_exists(en3)
-and !instance_exists(en4)
-and !instance_exists(en5)
-and !instance_exists(en6)
-and !instance_exists(en7)
-and !instance_exists(en8)
-and !instance_exists(en9)
-and !instance_exists(en10)
-and !instance_exists(en11)
+if boss.canmove
 {
-with oControl {//camMove=0 camMax=room_width
- goActive=1 alarm[1]=90
-xGoCheck=3382}
+with oControl 
+{MusicFade=0 MusicFadeAdd=1
+musicplaystart(msc_finalboss1)
 
-spawner_followset("WaveSet1",0,4864,1)
+
+}
+with oPlayer canControl=1
+
+oControl.bossID=boss
 
 }
 else
 {
 timeline_position-=1
-}//4024
+}

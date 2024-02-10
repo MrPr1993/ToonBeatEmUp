@@ -1,13 +1,10 @@
-/// @description Go To Boss
-
 if oPlayer.x>__view_get( e__VW.XView, 0 )+320-24
 {
 timer_set(0)	
+//11528
 
-
-bos=instance_create_depth(8000,144,-1,oFlashFX)
-bos.sprite_index=spr_seaweed_intro bos.image_speed=0 bos.alarm[0]=-1;
-bos.z=-16
+bos=instance_create_depth(11528,160,-1,oFlashFX)
+bos.sprite_index=spr_dastardly_seat bos.image_speed=0 bos.alarm[0]=-1;
 
 with oPlayer
 {canControl=0 areaEntry=1

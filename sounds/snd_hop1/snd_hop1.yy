@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_plant1",
+  "name": "snd_hop1",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.476009,
+  "duration": 0.2322,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/f - Sounds/Voice Clips/Enemies.yy",
+    "name": "General",
+    "path": "folders/f - Sounds/General.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_plant1.wav",
+  "soundFile": "snd_hop1.wav",
   "type": 0,
   "volume": 1.0,
 }

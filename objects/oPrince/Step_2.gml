@@ -58,7 +58,7 @@ if anim=10
 
 
 if anim=11 ///Bite Attack
-{
+{if animFrame=0 {PlaySound(choose(snd_prince3,snd_prince5))}
 //if animFrame=0  PlaySound(snd_wolfita7)
 
 canbeGrabbed=0
@@ -84,7 +84,9 @@ if animFrame>4.5 {atk=0 canmove=1}
 
 ///Ranged Attack
 if anim=12
-{sprite_index=spr_prince_attack1
+{
+	if animFrame=0 {PlaySound(snd_prince6)}
+sprite_index=spr_prince_attack1
 	//if animFrame=0 PlaySoundNoStack(snd_fzombie3)
 frame_set(0,0,0.1)
 if animFrame=11111
@@ -127,7 +129,9 @@ if animFrame>15.75 {canmove=1 atk=0}
 
 ////Knee
 if anim=13
-{sprite_index=spr_prince_attack4
+{
+if animFrame=0 {PlaySound(snd_prince3)}	
+sprite_index=spr_prince_attack4
 atkcol_set(7,0,12,1.05,1,38)
 
 frame_set(0,0,0.25)
@@ -143,7 +147,10 @@ if animFrame>4.5 canmove=1
 }
 
 if anim=14 ///Attack Slide
-{hit=0  if animFrame=2 {PlaySoundNoStack(snd_swing2) PlaySoundNoStack(snd_enemy1)}
+{
+if animFrame=0 {PlaySound(snd_prince4)}
+
+hit=0  if animFrame=2 {PlaySoundNoStack(snd_swing2) PlaySoundNoStack(snd_enemy1)}
 sprite_index=spr_prince_attack3 MoveType=1 damage=0.15
 image_index=animFrame image_speed=0
 
@@ -186,7 +193,7 @@ frame_set(0,0,0.01)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25) if animFrame=4
-{
+{PlaySound(snd_prince4)
 clothes=instance_create_depth(x,y-1,-1,oDisappearPart) with clothes
 {
 disappearTime=24
@@ -203,7 +210,7 @@ sprite_index=spr_prince_clothes image_index=0 image_speed=0
 }
 }
 frame_set(4,4,0.25)
-frame_set(5,5,0.02)
+frame_set(5,5,0.02) if animFrame=6 {PlaySound(snd_prince1)}
 frame_set(6,6,0.25)
 frame_set(7,7+specialtimes[0],0.01)
 frame_set(8,9,0.25)
