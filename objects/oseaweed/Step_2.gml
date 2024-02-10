@@ -88,9 +88,15 @@ frame_set(3,4,0.1)
 frame_set(4,5,0.1)
 frame_set(5,6,0.1)
 frame_set(6,7,0.1)
-frame_set(7,8,0.05)
+frame_set(7,8,0.05) if animFrame=8 {image_xscale=-1 PlaySound(snd_seaweed1)}
 frame_set(8,9,0.1)
-frame_set(9,10,0.01)
+frame_set(9,10,0.01) if animFrame=10 {
+squidgo=instance_create_depth(x-51*image_xscale,y+1,-1,oFlashFX) with squidgo
+{z=-59
+
+}
+
+}
 frame_set(10,11,0.01)
 if animFrame<10.8 {z=-16 shadowSpr=mask_none} else shadowSpr=spr_shadow
 if animFrame=10.8

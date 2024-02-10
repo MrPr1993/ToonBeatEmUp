@@ -18,13 +18,19 @@ camMove=1
 
 }
 
+with oControl 
+{MusicFade=0 MusicFadeAdd=1
+musicplaystart(msc_boss4)
+}
+
+
 boss=instance_create_depth(9312+8,144,-1,oWitch)
 with boss {canmove=0 anim=100 image_xscale=-1}
 
 with oPlayer
 {hspeed=0
 
-areaEntry=0 z=-400 x-=60
+areaEntry=0 z=-400
 //canControl=1
 canmove=0
 	hurt=1

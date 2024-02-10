@@ -16,7 +16,9 @@ oEnemySpawner.roomMove=0
 oEnemySpawner.MaxX=6592
 oEnemySpawner.YView=0
 camMove=1
-
+MusicFade=0 MusicFadeAdd=1
+musicplaystart(msc_boss3)
+alarm[0]=180
 }
 
 boss=instance_create_depth(6430,154,-1,oPrince)

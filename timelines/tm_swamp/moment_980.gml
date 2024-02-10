@@ -27,8 +27,16 @@ areaEntry=1
 }
 
 if specialcheck[8]=52
-{with oPlayer
-	{sprite_index=mask_none
+{
+audio_stop_all()	
+
+PlaySound(snd_break)
+
+with oPlayer
+	{
+	fallholespr=instance_create_depth(x,y,-1,oFlashFX) with fallholespr
+	{isDepth=0 depth=7777 alarm[0]=9999 image_speed=0 sprite_index=spr_swamphole}
+	
 	
 	dust_make(x,y,0,1,0,0)
 dust_make(x,y,0,-1,0,0)
@@ -40,7 +48,29 @@ dust_make(x,y,0,-1,-0.5,0)
 dust_make(x,y,0,-1,0.5,0)
 	}
 
+
+
 }
+
+if specialcheck[8]>=52
+{
+
+with oPlayer
+{
+shadowSpr=mask_none
+if character=0 sprite_index=spr_viva_fallhole
+if character=1 sprite_index=spr_hina_fallhole
+if character=2 sprite_index=spr_bahati_fallhole
+if character=3 sprite_index=spr_sofia_fallhole
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.25) if animFrame>3.9 sprite_index=mask_none
+frame_set(4,4,0.25)
+}
+
+}
+
 
 }
 }	

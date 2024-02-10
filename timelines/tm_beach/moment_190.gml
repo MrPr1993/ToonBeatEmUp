@@ -6,7 +6,7 @@ timer_set(0)
 
 
 bos=instance_create_depth(8000,144,-1,oFlashFX)
-bos.sprite_index=spr_seaweed_stand bos.image_speed=0 bos.alarm[0]=-1;
+bos.sprite_index=spr_seaweed_intro bos.image_speed=0 bos.alarm[0]=-1;
 
 with oPlayer
 {canControl=0 areaEntry=1

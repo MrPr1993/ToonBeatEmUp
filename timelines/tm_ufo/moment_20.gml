@@ -51,7 +51,7 @@ oPlayer.image_index=image_index
 if specialSet8=60
 {with oControl quakeFXTime=10
 
-	
+	PlaySound(snd_laserbeam)
 	{
 	
 	glowlight=instance_create_depth(__view_get( e__VW.XView, 0)+160,242-16,-1,oAlphaFadeFX)
@@ -99,7 +99,7 @@ with oPlayer
 
 if specialSet8=90
 	 with spriteLocker
-{
+{PlaySound(snd_ufo2)
 	
 with oPlayer
 {

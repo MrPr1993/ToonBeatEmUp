@@ -1,7 +1,7 @@
 /// @description /UFO Appears
 
 if __view_get( e__VW.XView, 0 )>=692+224-320-2
-{
+{PlaySound(snd_ufo1)
 
 blackout=instance_create_depth(__view_get( e__VW.XView, 0),0,0,oAlphaFadeFX)
 with blackout

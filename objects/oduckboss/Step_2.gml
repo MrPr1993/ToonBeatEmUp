@@ -15,7 +15,7 @@ anim=12 else anim=13
 
 ///Shoryuken
 if anim=11
-{damage=0.2 MoveType=1
+{damage=0.2 MoveType=1 if animFrame=0 PlaySound(snd_duck10)
 sprite_index=spr_duck_attack2
 sentflying=lerp(sentflying,0,0.1)
 frame_set(0,0,0.1) if animFrame=1
@@ -30,14 +30,14 @@ frame_set(5,5,0.25)
 
 ///Charge!
 if anim=12 
-{if animFrame=0 {specialcheck4=0} damage=0.25 MoveType=4
+{if animFrame=0 {PlaySound(snd_duck3) specialtimes[4]=0} damage=0.25 MoveType=4
 sprite_index=spr_duck_charge
 frame_set(0,0,0.25)
 frame_set(1,1,0.05)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
-frame_set(4,4,0.25) specialcheck4+=1
-if animFrame=5 if specialcheck4<160 {animFrame=2}
+frame_set(4,4,0.25) specialtimes[4]+=1
+if animFrame=5 if specialtimes[4]<160 {animFrame=2}
 
 if animFrame=clamp(animFrame,2,4.9) {atk=1
 	sentflying=8*image_xscale oControl.quakeFXTime=10
@@ -51,11 +51,12 @@ image_xscale=-image_xscale x+=16*image_xscale
 	} else {atk=0 sentflying=lerp(sentflying,0,0.1)}
 frame_set(5,0,0.1)
 if animFrame>5 canmove=1
-}
+} else specialtimes[4]=0
 
 ///Ranged Attack
 if anim=13
 {sprite_index=spr_duck_attack1
+	if animFrame=0 {PlaySound(choose(snd_duck5,snd_duck9,snd_duck8))}
 	//if animFrame=0 PlaySoundNoStack(snd_fzombie3)
 frame_set(0,0,0.1)
 if animFrame=11111
@@ -108,7 +109,7 @@ frame_set(1,1,0.25)
 frame_set(2,2,0.01)
 frame_set(3,3,0.1)
 frame_set(4,4,0.5) if animFrame=5
-{ground=0 spdZ=-4}
+{ground=0 zSpeed=-4 PlaySound(snd_duck1)}
 frame_set(5,5+specialtimes[0],0.005)
 frame_set(6,4,0.25)
 if animFrame>5.70 {canmove=1 anim=0}

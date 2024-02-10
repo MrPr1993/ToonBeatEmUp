@@ -29,7 +29,7 @@ quicksnd2=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oTrainFXSpot) 
 {z=0 image_xscale=88888 image_yscale=77777}
 
 sandstorm=instance_create_depth(0,0,-1,oCameoChar)
-
+with oControl MusicFade=1
 
 with sandstorm {newscript=function()
 {specialcheck[8]+=0.5
