@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.202449,
+  "duration": 0.20898,
   "parent": {
     "name": "Enemies",
     "path": "folders/f - Sounds/Voice Clips/Enemies.yy",

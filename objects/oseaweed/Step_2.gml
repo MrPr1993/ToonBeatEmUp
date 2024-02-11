@@ -92,7 +92,7 @@ frame_set(7,8,0.05) if animFrame=8 {image_xscale=-1 PlaySound(snd_seaweed1)}
 frame_set(8,9,0.1)
 frame_set(9,10,0.01) if animFrame=10 {
 squidgo=instance_create_depth(x-51*image_xscale,y+1,-1,oOctopus) with squidgo
-{z=-59 dead=1 anim=9999 animFrame=2 zSpeed-=6 animFrame=2.1 ground=0 PlaySound(snd_hop1)
+{z=-59 dead=1 hp=0 canmove=0 anim=9999 animFrame=2 zSpeed-=6 animFrame=2.1 ground=0 PlaySound(snd_hop1)
 
 }
 

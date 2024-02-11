@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.12771,
+  "duration": 0.126984,
   "parent": {
     "name": "Enemies",
     "path": "folders/f - Sounds/Voice Clips/Enemies.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_cat2.wav",
   "type": 0,
-  "volume": 0.83,
+  "volume": 1.0,
 }

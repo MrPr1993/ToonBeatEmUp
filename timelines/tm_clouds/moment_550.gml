@@ -1,22 +1,21 @@
-/// @description Prepare Boss
-
-with oControl
-{timecheck=alarm[0] alarm[0]=10000000}
-
-if oPlayer.x>=2847+320+64
-and oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
+if __view_get( e__VW.XView, 0 )>=8734-320
 {
-oPlayer.canControl=0
-oPlayer.areaEntry=1
 
-with oPlayer
-{key_right=0 doubledash=0 dashing=0
-}
+bos=instance_create_depth(oControl.camX+160,190,-1,oFlashFX)
+bos.sprite_index=spr_dragonmaiden_body bos.image_speed=0 bos.alarm[0]=-1;
+bos.z=-16
 
-with oControl MusicFade=1
+oPlayer.key_right=0;
+//oPlayer.canControl=1;
+oPlayer.areaEntry=0
+specialSet8=0
+
+oEnemySpawner.roomHSpd=0
+oEnemySpawner.roomMove=0
+
+
 }
 else
 {
-timeline_position-=1
+timeline_position-=1;
 }
-
