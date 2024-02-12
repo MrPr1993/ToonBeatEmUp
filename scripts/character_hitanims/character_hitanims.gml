@@ -2,7 +2,7 @@ function character_hitanims() {
 	//if hurt=1
 	{
 		
-if anim=4
+if anim=4 
 {if animFrame=0 {wobbleX=1 wobbleY=1}
 if targetHeightHit=0 {if wobbleX<1.2 {wobbleX+=0.01 wobbleY+=0.01} else {wobbleX=1 wobbleY=1}}
 if targetHeightHit=1 {if wobbleY<1.2 {wobbleY+=0.01 wobbleX-=0.01} else {wobbleX=1 wobbleY=1}}
@@ -466,7 +466,7 @@ if anim=591000
 	
 if hp=0 {}
 	
-if animFrame=0 {specialcheck4=0; animFrame=1}
+if animFrame=0 {specialtimes[4]=0; animFrame=1}
 
 
 if ground
@@ -484,7 +484,7 @@ frame_set(2,5,0.25)
 frame_set(3,6,0.25)
 }
 
-specialcheck4+=1
+specialtimes[4]+=1
 
 
 
@@ -526,7 +526,7 @@ if ground=1
 
 
 
-if specialcheck4>160 {animFrame=0 canmove=1}
+if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
 }
 
 

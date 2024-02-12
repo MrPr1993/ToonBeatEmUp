@@ -25,6 +25,7 @@ spdZ=0
 angleSpin=0
 
 shake=0
+atk=0
 
 alarm[0]=150
 image_speed=0

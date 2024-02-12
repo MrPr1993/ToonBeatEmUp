@@ -10,9 +10,8 @@ oControl.quakeFXTime=10
 instance_destroy()
 }
 else
-{
+{atk=1
 alarm[0]=2
-shake=2
 cRedAdd=4
 
 disappearTime-=1

@@ -1,4 +1,4 @@
-if __view_get( e__VW.XView, 0 )>=8734-320
+if __view_get( e__VW.XView, 0 )>=8734-160
 {
 
 bos=instance_create_depth(oControl.camX+160,190,-1,oFlashFX)

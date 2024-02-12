@@ -6,7 +6,7 @@ musicplaystart(msc_finalboss1)
 
 
 }
-with oPlayer canControl=1
+with oPlayer {canControl=1 areaEntry=0}
 
 oControl.bossID=boss
 

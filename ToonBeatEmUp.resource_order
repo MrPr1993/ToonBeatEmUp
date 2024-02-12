@@ -2835,6 +2835,7 @@
     {"name":"spr_sofia_move","order":38,"path":"sprites/spr_sofia_move/spr_sofia_move.yy",},
     {"name":"spr_snowgirl_front","order":10,"path":"sprites/spr_snowgirl_front/spr_snowgirl_front.yy",},
     {"name":"spr_sofia_moveobject","order":39,"path":"sprites/spr_sofia_moveobject/spr_sofia_moveobject.yy",},
+    {"name":"oEntryPainting","order":16,"path":"objects/oEntryPainting/oEntryPainting.yy",},
     {"name":"spr_sofia_moveweapon","order":40,"path":"sprites/spr_sofia_moveweapon/spr_sofia_moveweapon.yy",},
     {"name":"snd_martianb2","order":5,"path":"sounds/snd_martianb2/snd_martianb2.yy",},
     {"name":"spr_sofia_opening","order":41,"path":"sprites/spr_sofia_opening/spr_sofia_opening.yy",},

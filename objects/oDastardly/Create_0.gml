@@ -9,7 +9,7 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=300
 
 OneAttack=2
 
@@ -52,7 +52,7 @@ FrozenSpr=spr_dastardly_frozen
 
 
 if oControl.betatest=1
-{if keyboard_check(vk_control) {canmove=0 anim=100 specialtaunt=0}
+{if keyboard_check(vk_control) {canmove=0 anim=100 specialanim=0}
 	
-	if keyboard_check(vk_shift) {canmove=0 anim=101 specialtaunt=0}
+	if keyboard_check(vk_shift) {canmove=0 anim=101 specialanim=0}
 	}

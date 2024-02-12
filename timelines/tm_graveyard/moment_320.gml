@@ -1,6 +1,9 @@
 /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 if __view_get( e__VW.XView, 0 )>=2614
 {
+	
+if x=-9999999999999
+{
 en1=instance_create(3328, 176,oAreaSpawner) with en1
 {
 spawnX=3328-330 ///768
@@ -17,6 +20,16 @@ enemytype1=oZombieMan
 FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 turn0=-1 enemyMax=1
 }
+}
+
+en1=instance_create_depth(3168, 160,-1,oEntryPainting) with en1
+{rangeX=3168-160 z=-16}
+
+en2=instance_create_depth(3328, 160,-1,oEntryPainting) with en2
+{rangeX=3328-160 z=-16}
+
+en8=instance_create_depth(3504, 160,-1,oEntryPainting) with en8
+{rangeX=3504-160 z=-16}
 
 en3=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,192,0,oZombieWoman)
 with en3 {canmove=0 anim=61 idleRange=15}

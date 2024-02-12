@@ -210,7 +210,7 @@ if hp<=0
 	
 	////Frog Curse
 	if HitType=591000
-	{
+	{hurt=1
 	sprite_index=ThrownSpr image_index=0
 	animFrame=0
 	anim=591000

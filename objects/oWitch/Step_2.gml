@@ -156,7 +156,7 @@ if animFrame>4.5 {atk=0 canmove=1}
 
 if anim=100 ///Intro
 {
-if specialtaunt=-1
+if specialanim=-1
 {
 
 if animFrame=0 sprite_index=spr_witch_intro
@@ -193,16 +193,16 @@ frame_set(11,11,0.1)
 frame_set(12,12,0.1)
 frame_set(13,13,0.01) if animFrame=14 sprite_index=spr_witch_attack1
 frame_set(14,0,0.1)
-if animFrame>14.5 {animFrame=0 specialtaunt=1 ground=0 zSpeed=-4 z=-3}
+if animFrame>14.5 {animFrame=0 specialanim=1 ground=0 zSpeed=-4 z=-3}
 
 }
-if specialtaunt=1 ///Hop
+if specialanim=1 ///Hop
 {sprite_index=spr_witch_jump animFrame+=0.1 shadowSpr=spr_shadow
 
 y+=2 x+=3 if animFrame>0.5
-if ground {animFrame=0 specialtaunt+=1}
+if ground {animFrame=0 specialanim+=1}
 }
-if specialtaunt=2
+if specialanim=2
 {
 canmove=1
 }

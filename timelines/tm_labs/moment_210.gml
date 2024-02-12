@@ -7,7 +7,7 @@ if specialSet7=0
 
 
 boss=instance_create_depth(oControl.camX+320+32,220,-1,oScientist)
-with boss {canmove=0 anim=100 image_xscale=-1 specialtaunt=3}
+with boss {canmove=0 anim=100 image_xscale=-1 specialanim=3}
 
 
 with oControl

@@ -1139,11 +1139,11 @@ afterimage_create(4,make_colour_rgb(247,008, 33),current_pal,my_pal_sprite,0)
 			///Taunt
 	if anim=83
 {weaponanim(weaponspr,weaponIndex,-15,-499995,142*image_xscale,weaponcolor)
-if animFrame=0 {specialtaunt=-1 if key_up {specialtaunt=1 specialtimes[0]+=1}
-if key_down {specialtaunt=2 specialtimes[0]=0}
+if animFrame=0 {specialanim=-1 if key_up {specialanim=1 specialtimes[0]+=1}
+if key_down {specialanim=2 specialtimes[0]=0}
 }	
 
-if specialtaunt=-1 ///Heart Taunt
+if specialanim=-1 ///Heart Taunt
 {
 sprite_index=spr_hina_taunt
 atk=0 
@@ -1162,7 +1162,7 @@ alarm[5]=60 changespr=sprite_index changeimgspd=0.5 changeimpindex=2}}
 	frame_set(6,0,0.1)
 if animFrame>6.5 {canmove=1 atk=0}
 }
-if specialtaunt=1 ///Stretch Taunt
+if specialanim=1 ///Stretch Taunt
 {
 sprite_index=spr_hina_win2 //-4,-72
 	frame_set(0,0,0.1)
@@ -1173,7 +1173,7 @@ sprite_index=spr_hina_win2 //-4,-72
 	frame_set(5,0,0.1)
 	if animFrame>5.5 {canmove=1 atk=0}
 }
-if specialtaunt=2 ///Flex Taunt
+if specialanim=2 ///Flex Taunt
 {specialtimes[0]+=0.1 if specialtimes[0]=1.9 specialtimes[0]=0
 sprite_index=spr_hina_taunt3 //-4,-72
 	frame_set(0,0,0.1)

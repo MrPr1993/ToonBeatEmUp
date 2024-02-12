@@ -196,19 +196,19 @@ if anim=100
 {
 if animFrame=0 sprite_index=spr_dastardly_seat
 
-if specialtaunt=0
+if specialanim=0
 {image_xscale=1 shadowSpr=mask_none
 animFrame+=0.01
 
-if animFrame>4 {animFrame=0 specialtaunt+=1 ground=0 zSpeed=-4 z=-3}
+if animFrame>4 {animFrame=0 specialanim+=1 ground=0 zSpeed=-4 z=-3}
 }
-if specialtaunt=1 ///Hop
+if specialanim=1 ///Hop
 {sprite_index=spr_dastardly_move animFrame+=0.1 shadowSpr=spr_shadow
 
 y+=2 x+=3 if animFrame>0.5
-if ground {animFrame=0 specialtaunt+=1}
+if ground {animFrame=0 specialanim+=1}
 }
-if specialtaunt=2 ///part for powerup from the treasures
+if specialanim=2 ///part for powerup from the treasures
 {image_xscale=-1
 sprite_index=spr_dastardly_stand
 animFrame+=0.01
@@ -222,9 +222,9 @@ if animFrame>12 {canmove=1 animFrame=0}
 ///The Big Reveal
 if anim=101
 {
-if specialtaunt=0
+if specialanim=0
 {
-animFrame+=0.1 if animFrame>8 {animFrame=0 specialtaunt=1
+animFrame+=0.1 if animFrame>8 {animFrame=0 specialanim=1
 	
 	{specialtimes[6]=0 image_index=0
 	sprite_index=spr_dastardly_explode PlaySound(snd_explosion) oControl.quakeFXTime=10
@@ -233,12 +233,12 @@ animFrame+=0.1 if animFrame>8 {animFrame=0 specialtaunt=1
 	}
 }
 
-if specialtaunt=1
+if specialanim=1
 {
 image_index=0
-if ground {animFrame=0 specialtimes[6]=0 specialtaunt=2}
+if ground {animFrame=0 specialtimes[6]=0 specialanim=2}
 }
-if specialtaunt=2
+if specialanim=2
 { 
 if animFrame=1 {sprite_index=spr_dastardly_die hspeed=choose(-4,4) vspeed=choose(-1,1)}
 animFrame+=0.01
@@ -252,9 +252,9 @@ if x<oControl.camX {x+=4 hspeed=4}
 if !place_free(x,y-3) {vspeed=2 y+=2}
 if y>240 {y-=2 vspeed=-2}
 
-if animFrame>4 {animFrame=0 specialtaunt=3}
+if animFrame>4 {animFrame=0 specialanim=3}
 }
-if specialtaunt=3
+if specialanim=3
 {sprite_index=spr_dastardly_explode hspeed=0 vspeed=0
 	x=lerp(x,oControl.camX+160,0.1)
 	y=lerp(y,200,0.1)

@@ -3087,6 +3087,7 @@
     {"id":{"name":"spr_sofia_move","path":"sprites/spr_sofia_move/spr_sofia_move.yy",},},
     {"id":{"name":"spr_snowgirl_front","path":"sprites/spr_snowgirl_front/spr_snowgirl_front.yy",},},
     {"id":{"name":"spr_sofia_moveobject","path":"sprites/spr_sofia_moveobject/spr_sofia_moveobject.yy",},},
+    {"id":{"name":"oEntryPainting","path":"objects/oEntryPainting/oEntryPainting.yy",},},
     {"id":{"name":"spr_sofia_moveweapon","path":"sprites/spr_sofia_moveweapon/spr_sofia_moveweapon.yy",},},
     {"id":{"name":"snd_martianb2","path":"sounds/snd_martianb2/snd_martianb2.yy",},},
     {"id":{"name":"spr_sofia_opening","path":"sprites/spr_sofia_opening/spr_sofia_opening.yy",},},

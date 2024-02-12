@@ -154,28 +154,28 @@ if animFrame>4 if ground {atk=0 canmove=1}
 if anim=100
 {canbeGrabbed=0 recovery=10
 
-if specialtaunt=3
+if specialanim=3
 {sprite_index=spr_scientist_stand image_index+=0.1
 animFrame+=0.1
 
-if animFrame>12 {animFrame=0 specialtaunt-=1}
+if animFrame>12 {animFrame=0 specialanim-=1}
 }
 
-if specialtaunt=2
+if specialanim=2
 {x-=2 sprite_index=spr_scientist_move image_index+=0.25
 animFrame+=0.1
 
-if animFrame>4 {animFrame=0 specialtaunt-=1}
+if animFrame>4 {animFrame=0 specialanim-=1}
 }
 
-if specialtaunt=1
+if specialanim=1
 {sprite_index=spr_scientist_anger image_index+=0.1
 animFrame+=0.1
 
-if animFrame>12 {animFrame=0 specialtaunt-=1}
+if animFrame>12 {animFrame=0 specialanim-=1}
 }
 
-if specialtaunt=0
+if specialanim=0
 {
 sprite_index=spr_scientist_transform 
 //if animLock=0
