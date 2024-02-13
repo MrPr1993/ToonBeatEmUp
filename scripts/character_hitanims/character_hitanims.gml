@@ -392,6 +392,9 @@ with cutSelf
 	if anim=42 ///Dizzy
 	if overwriteDizzy=0
 	{spdZ=0 if z<0 z+=0.45 else z=0
+		
+	if animFrame=0 {if x!=clamp(x,oControl.camX-4,oControl.camX+320+4) {canmove=1 hurt=0}}	
+		
 	hurt=0 dizzyHit=0
 	if hasDizzy=1
 	image_index+=0.1
@@ -403,6 +406,8 @@ with cutSelf
 	else
 	sprite_index=DizzySpr
 	if animFrame>10 {hurt=0 canmove=1} else animFrame+=0.05
+	
+	
 	}
 
 	if anim=43 ///Screen Hit

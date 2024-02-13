@@ -2297,6 +2297,7 @@
     {"id":{"name":"background20","path":"sprites/background20/background20.yy",},},
     {"id":{"name":"spr_ghost_headhit","path":"sprites/spr_ghost_headhit/spr_ghost_headhit.yy",},},
     {"id":{"name":"spr_ghost_head_attack","path":"sprites/spr_ghost_head_attack/spr_ghost_head_attack.yy",},},
+    {"id":{"name":"spr_mirrorlady_front","path":"sprites/spr_mirrorlady_front/spr_mirrorlady_front.yy",},},
     {"id":{"name":"spr_ghost_head_scare","path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},},
     {"id":{"name":"spr_dastardly2_flat","path":"sprites/spr_dastardly2_flat/spr_dastardly2_flat.yy",},},
     {"id":{"name":"spr_sofia_specialwind","path":"sprites/spr_sofia_specialwind/spr_sofia_specialwind.yy",},},

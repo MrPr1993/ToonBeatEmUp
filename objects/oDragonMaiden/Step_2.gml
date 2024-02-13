@@ -54,7 +54,7 @@ if hp=0 or hp<=0 or dead=1 if anim!=9999
 if anim=0
 {
 
-if eyeHit
+if !eyeHit
 sprite_index=StandSpr
 else
 sprite_index=spr_dragonmaiden_headhurt

@@ -11,9 +11,9 @@ draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
 if keyboard_check_pressed(vk_escape) room_goto(rm_menu)
 
 matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1,1,1))
-draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,0,c_black,1)
+draw_sprite_ext(spr_soundtestrec,0,0,0,1.1-0.1*recordscale,0.9+0.1*recordscale,0,c_black,1)
 matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1,1,1))
-draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,recordAng,c_white,1)
+draw_sprite_ext(spr_soundtestrec,0,0,0,1.1-0.1*recordscale,0.9+0.1*recordscale,recordAng,image_blend,1)
 matrix_set(matrix_world,matrix_build(234,152,0+0.05*cos(recordAng),85,0,0,1,1,1))
 
 draw_sprite_ext(spr_soundtestrec2,0,0,0,1,1,recordAng2,c_white,1)
@@ -41,7 +41,9 @@ dancer3img=image_index
 dancer4img=image_index
 
 if audio_is_playing(songplaying)
-{songnote+=1*songSPD if songnote>(60*songSPD)
+{image_blend=recordcol
+	recordscale=0.9+0.1*sin(current_time)
+	songnote+=1*songSPD if songnote>(60*songSPD)
 	{songnote=0
 camnote=instance_create_depth(160+choose(-random_range(20,80),random_range(20,80)),156,-1,oCameoChar)
 camnote.visible=0 	camnote.anim=666 
@@ -58,7 +60,7 @@ newscript=function()
 }	
 recordAng+=1*songSPD
 recordAng2=lerp(recordAng2,22,0.1)
-} else {recordAng2=lerp(recordAng2,45,0.1) songnote=0}
+} else {recordscale=lerp(recordscale,1,0.1) recordAng2=lerp(recordAng2,45,0.1) songnote=0}
 
 }
 
@@ -67,7 +69,7 @@ if songtext=1
 if key_up_pressed {if soundSelect=1 soundSelect=8 else soundSelect-=1}
 if -key_down_pressed {if soundSelect=8 soundSelect=1 else soundSelect+=1}
 
-	if key_A
+	if key_B
 if playingsongname="" {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 audio_stop_all() room_goto(rm_menu) animFrame=0} else {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 animFrame=0 audio_stop_all() playingsongname=""
 dancer1img=1
 dancer2img=1
@@ -82,22 +84,26 @@ if !audio_is_playing(songplaying) playingsongname=""
 if soundSelect=1 /////Select Music
 {
 
-if key_B {
+if key_A {
 
 	{audio_stop_all() animFrame=0
 	playingsongname=songname
 playingloop=0
 	songID=audio_play_sound(playingSound,1,0)
 	audio_sound_gain(playingSound,global.BGMvolume/100,0)
+	recordcol=recordcol2
+	
 	}	
 	songplaying=playingSound
 	}
-	if key_shield_pressed {////Loop
+	if key_Y {////Loop
 playingsongname=songname
 playingloop=1
 	{audio_stop_all()
 	songID=audio_play_sound(playingSound,1,1)
 	audio_sound_gain(playingSound,global.BGMvolume/100,0)
+	
+	recordcol=recordcol2
 	}	
 	songplaying=playingSound
 	}
@@ -109,53 +115,53 @@ playingloop=1
 if -key_left_pressed if songno=0 songno=45 else songno-=1
 if key_right_pressed if songno=45 songno=0 else songno+=1
 
-if songno=0 {songname="OPENING FILM" playingSound=msc_intro songcomposer="JONORSI"}
-if songno=1 {songname="DOWNTOWN BEAT" playingSound=msc_stage1 songcomposer="JONORSI"}
-if songno=2 {songname="AERIAL WALK" playingSound=msc_airplane songcomposer="JONORSI"}
-if songno=3 {songname="RUSH OVER THE SEA" playingSound=msc_stage2 songcomposer="JONORSI"}
-if songno=4 {songname="TRAINING TRAVEL" playingSound=msc_train songcomposer="JONORSI"}
-if songno=5 {songname="GRITTY GRAVES" playingSound=msc_stage4 songcomposer="JONORSI"}
-if songno=6 {songname="MASHUP MUSEUM" playingSound=msc_stage3 songcomposer="JONORSI"}
-if songno=7 {songname="LUCKY DOJO CASINO" playingSound=msc_stage5 songcomposer="JONORSI"}
-if songno=8 {songname="DEEP DEAD SWAMPS" playingSound=msc_swamp songcomposer="JONORSI"}
-if songno=9 {songname="CLOWNY HONKY CARNIVAL" playingSound=msc_carnival songcomposer="EVADER MUSIC"}
-if songno=10 {songname="DOWNSIDE BEACH" playingSound=msc_beach songcomposer="EVADER MUSIC"}
-if songno=11 {songname="UFO BEYOND THE STARS" playingSound=msc_ufo songcomposer="EVADER MUSIC"}
-if songno=12 {songname="UNDER THE SEA JAM" playingSound=msc_underwater songcomposer="JONORSI"}
-if songno=13 {songname="HEATING HOT DESERT" playingSound=msc_desert songcomposer="EVADER MUSIC"}
-if songno=14 {songname="GREAT CLIMBING COLD" playingSound=msc_snowmountain songcomposer="EVADER MUSIC"}//X
-if songno=15 {songname="FANTASTIC FANTASY CAVERNS" playingSound=msc_cave songcomposer="EVADER MUSIC"}//X
-if songno=16 {songname="AHEAD IN THE CLOUDS" playingSound=msc_clouds songcomposer="EVADER MUSIC"}//X
-if songno=17 {songname="DANGEROUS SCIENCE" playingSound=msc_lab songcomposer="JONORSI"}
-if songno=18 {songname="ZEPPELIN FINALE" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}//X
-if songno=19 {songname="NASTY FOE TUNE" playingSound=msc_boss songcomposer="JONORSI"}
-if songno=20 {songname="BADDY BADDIES JAM" playingSound=msc_boss2 songcomposer="JONORSI"}
-if songno=21 {songname="QUICK VILE MELODY" playingSound=msc_boss3 songcomposer="EVADER MUSIC"}//X
-if songno=22 {songname="DANGEROUS OF TONES" playingSound=msc_boss4 songcomposer="EVADER MUSIC"}//X
-if songno=23 {songname="DASTARDLY SUBJECT" playingSound=msc_finalboss1 songcomposer="EVADER MUSIC"}
-if songno=24 {songname="PIECE OF THE NIGHT" playingSound=msc_finalboss2 songcomposer="EVADER MUSIC"}
-if songno=25 {songname="RISKY REVIVAL" playingSound=msc_countdown songcomposer="JONORSI"}
-if songno=26 {songname="SHOW'S CANCELLED" playingSound=msc_gameover songcomposer="JONORSI"}
-if songno=27 {songname="GOOD SHOW" playingSound=msc_stageclear songcomposer="JONORSI"}
-if songno=28 {songname="MARVELOUS FINALE" playingSound=msc_finalbossclear songcomposer="EVADER MUSIC"}
-if songno=29 {songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
-if songno=30 {songname="CONCENTRATING BREAK" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
+if songno=0 {recordcol2=c_white songname="OPENING FILM" playingSound=msc_intro songcomposer="JONORSI"}
+if songno=1 {recordcol2=#AC482F songname="DOWNTOWN BEAT" playingSound=msc_stage1 songcomposer="JONORSI"}
+if songno=2 {recordcol2=#737A65 songname="AERIAL WALK" playingSound=msc_airplane songcomposer="JONORSI"}
+if songno=3 {recordcol2=#006B9C songname="RUSH OVER THE SEA" playingSound=msc_stage2 songcomposer="JONORSI"}
+if songno=4 {recordcol2=#BD6300 songname="TRAINING TRAVEL" playingSound=msc_train songcomposer="JONORSI"}
+if songno=5 {recordcol2=#005026 songname="GRITTY GRAVES" playingSound=msc_stage4 songcomposer="JONORSI"}
+if songno=6 {recordcol2=#D5D7CF songname="MASHUP MUSEUM" playingSound=msc_stage3 songcomposer="JONORSI"}
+if songno=7 {recordcol2=#FF65A0 songname="LUCKY DOJO CASINO" playingSound=msc_stage5 songcomposer="JONORSI"}
+if songno=8 {recordcol2=#66710E songname="DEEP DEAD SWAMPS" playingSound=msc_swamp songcomposer="JONORSI"}
+if songno=9 {recordcol2=#29B6F9 songname="CLOWNY HONKY CARNIVAL" playingSound=msc_carnival songcomposer="EVADER MUSIC"}
+if songno=10 {recordcol2=#FFEE70 songname="DOWNSIDE BEACH" playingSound=msc_beach songcomposer="EVADER MUSIC"}
+if songno=11 {recordcol2=#9147B2 songname="UFO BEYOND THE STARS" playingSound=msc_ufo songcomposer="EVADER MUSIC"}
+if songno=12 {recordcol2=#29397B songname="UNDER THE SEA JAM" playingSound=msc_underwater songcomposer="JONORSI"}
+if songno=13 {recordcol2=#EAC685 songname="HEATING HOT DESERT" playingSound=msc_desert songcomposer="EVADER MUSIC"}
+if songno=14 {recordcol2=#3277BE songname="GREAT CLIMBING COLD" playingSound=msc_snowmountain songcomposer="EVADER MUSIC"}//X
+if songno=15 {recordcol2=#72004A songname="FANTASTIC FANTASY CAVERNS" playingSound=msc_cave songcomposer="EVADER MUSIC"}//X
+if songno=16 {recordcol2=#E55BE0 songname="AHEAD IN THE CLOUDS" playingSound=msc_clouds songcomposer="EVADER MUSIC"}//X
+if songno=17 {recordcol2=#5B9995 songname="DANGEROUS SCIENCE" playingSound=msc_lab songcomposer="JONORSI"}
+if songno=18 {recordcol2=c_red songname="ZEPPELIN FINALE" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}//X
+if songno=19 {recordcol2=#890200 songname="NASTY FOE TUNE" playingSound=msc_boss songcomposer="JONORSI"}
+if songno=20 {recordcol2=#990200 songname="BADDY BADDIES JAM" playingSound=msc_boss2 songcomposer="JONORSI"}
+if songno=21 {recordcol2=#C91122 songname="QUICK VILE MELODY" playingSound=msc_boss3 songcomposer="EVADER MUSIC"}//X
+if songno=22 {recordcol2=#680200 songname="DANGEROUS OF TONES" playingSound=msc_boss4 songcomposer="EVADER MUSIC"}//X
+if songno=23 {recordcol2=#FF002C songname="DASTARDLY SUBJECT" playingSound=msc_finalboss1 songcomposer="EVADER MUSIC"}
+if songno=24 {recordcol2=#5E6091 songname="PIECE OF THE NIGHT" playingSound=msc_finalboss2 songcomposer="EVADER MUSIC"}
+if songno=25 {recordcol2=c_gray songname="RISKY REVIVAL" playingSound=msc_countdown songcomposer="JONORSI"}
+if songno=26 {recordcol2=c_dkgray songname="SHOW'S CANCELLED" playingSound=msc_gameover songcomposer="JONORSI"}
+if songno=27 {recordcol2=c_orange songname="GOOD SHOW" playingSound=msc_stageclear songcomposer="JONORSI"}
+if songno=28 {recordcol2=c_yellow songname="MARVELOUS FINALE" playingSound=msc_finalbossclear songcomposer="EVADER MUSIC"}
+if songno=29 {recordcol2=#508060 songname="ROUGH ROUGHHOUSING" playingSound=msc_minigame1 songcomposer="EVADER MUSIC"}
+if songno=30 {recordcol2=#B7B7B7 songname="CONCENTRATING BREAK" playingSound=msc_minigame2 songcomposer="EVADER MUSIC"}
 ///
-if songno=31 {songname="MAIN LOBBY" playingSound=msc_mainmenu songcomposer="EVADER MUSIC"}
-if songno=32 {songname="TONIGHT'S SHOW" playingSound=msc_charselect songcomposer="JONORSI"}
-if songno=33 {songname="LITTLE IRISH SHOP" playingSound=msc_gallery songcomposer="EVADER MUSIC"}
-if songno=34 {songname="PICKING INFORMATION" playingSound=msc_profile songcomposer="EVADER MUSIC"}
-if songno=35 {songname="STAGE PREPARATIONS" playingSound=msc_stageselect songcomposer="EVADER MUSIC"}
-if songno=36 {songname="TRAININ' GROUNDS" playingSound=msc_training songcomposer="EVADER MUSIC"}
-if songno=37 {songname="SOUR SURVIVAL" playingSound=msc_survival songcomposer="EVADER MUSIC"}
-if songno=38 {songname="CALM FISHER" playingSound=msc_fishing songcomposer="EVADER MUSIC"}
-if songno=39 {songname="HAPPY GAMBLING" playingSound=msc_casinogame songcomposer="EVADER MUSIC"}
-if songno=40 {songname="ODD TIME" playingSound=msc_weird songcomposer="EVADER MUSIC"}
-if songno=41 {songname="FRIGHT MOMENT" playingSound=msc_scary songcomposer="EVADER MUSIC"}
-if songno=42 {songname="MYSTERY INVESTIGATION" playingSound=msc_mystery songcomposer="EVADER MUSIC"}
-if songno=43 {songname="ACTION SCENE" playingSound=msc_action songcomposer="EVADER MUSIC"}
-if songno=44 {songname="SHOW'S END" playingSound=msc_credits songcomposer="EVADER MUSIC"}
-if songno=45 {songname="OUT OF PLACE..." playingSound=msc_secretboss songcomposer="EVADER MUSIC"}
+if songno=31 {recordcol2=c_navy songname="MAIN LOBBY" playingSound=msc_mainmenu songcomposer="EVADER MUSIC"}
+if songno=32 {recordcol2=c_blue songname="TONIGHT'S SHOW" playingSound=msc_charselect songcomposer="JONORSI"}
+if songno=33 {recordcol2=#EF8400 songname="LITTLE IRISH SHOP" playingSound=msc_gallery songcomposer="EVADER MUSIC"}
+if songno=34 {recordcol2=#FFCEC6 songname="PICKING INFORMATION" playingSound=msc_profile songcomposer="EVADER MUSIC"}
+if songno=35 {recordcol2=#4D1E0A songname="STAGE PREPARATIONS" playingSound=msc_stageselect songcomposer="EVADER MUSIC"}
+if songno=36 {recordcol2=#2E3192 songname="TRAININ' GROUNDS" playingSound=msc_training songcomposer="EVADER MUSIC"}
+if songno=37 {recordcol2=#FFBE46 songname="SOUR SURVIVAL" playingSound=msc_survival songcomposer="EVADER MUSIC"}
+if songno=38 {recordcol2=#66B4FF songname="CALM FISHER" playingSound=msc_fishing songcomposer="EVADER MUSIC"}
+if songno=39 {recordcol2=#FCC971 songname="HAPPY GAMBLING" playingSound=msc_casinogame songcomposer="EVADER MUSIC"}
+if songno=40 {recordcol2=c_purple songname="ODD TIME" playingSound=msc_weird songcomposer="EVADER MUSIC"}
+if songno=41 {recordcol2=c_green songname="FRIGHT MOMENT" playingSound=msc_scary songcomposer="EVADER MUSIC"}
+if songno=42 {recordcol2=c_maroon songname="MYSTERY INVESTIGATION" playingSound=msc_mystery songcomposer="EVADER MUSIC"}
+if songno=43 {recordcol2=c_teal songname="ACTION SCENE" playingSound=msc_action songcomposer="EVADER MUSIC"}
+if songno=44 {recordcol2=#18194C songname="SHOW'S END" playingSound=msc_credits songcomposer="EVADER MUSIC"}
+if songno=45 {recordcol2=c_ltgray songname="OUT OF PLACE..." playingSound=msc_secretboss songcomposer="EVADER MUSIC"}
 
 
 

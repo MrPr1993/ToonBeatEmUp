@@ -32,7 +32,7 @@ dashing=0
 }
 
 //oPlayer.x=2460+32
-oPlayer.y=200
+//oPlayer.y=200
 
 oEnemySpawner.roomHSpd=4
 oEnemySpawner.roomMove=1

@@ -49,6 +49,9 @@ ShockSpr=spr_dastardly_elec
 BurnSpr=spr_dastardly_burned
 FrozenSpr=spr_dastardly_frozen
 
+isBoss=1
+specialBossState=1
+
 
 
 if oControl.betatest=1

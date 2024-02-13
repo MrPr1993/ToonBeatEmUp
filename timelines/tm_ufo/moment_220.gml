@@ -17,7 +17,7 @@ key_right=1 doubledash=0 dashing=0
 
 oEnemySpawner.roomHSpd=4
 oEnemySpawner.roomMove=1
-spawner_followset("WaveSet1",0,11824,1)
+spawner_followset("WaveSet1",11536,11536-4,1)
 
 with oControl MusicFade=1
 

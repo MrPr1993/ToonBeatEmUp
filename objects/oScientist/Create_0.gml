@@ -49,6 +49,9 @@ FrozenSpr=spr_burglar_hit
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+isBoss=1
+specialBossState=1
+
 
 if oControl.betatest if keyboard_check(vk_control) {canmove=0 anim=100
 	

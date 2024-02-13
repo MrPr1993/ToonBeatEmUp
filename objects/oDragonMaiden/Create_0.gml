@@ -70,11 +70,15 @@ tent2=-1;
 tent3=-1;
 tent4=-1;
 
+isBoss=1
+specialBossState=1
+
 
 if oControl.betatest=1 if keyboard_check(vk_shift)
 {immune=1
 anim=66 canmove=0
 }
+
 
 ///Tail Script
 body=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) body.sprite_index=spr_dragonmaiden_tail

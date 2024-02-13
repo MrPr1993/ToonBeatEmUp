@@ -41,7 +41,7 @@ frame_set(1,1,0.1) if animFrame=2
 //26, -43
 
 projectile_create(x+26*image_xscale,y+1,z-43,32,spr_fairy_heart,2*image_xscale,mask_small,spr_hitflash,0.2,1,2,0,0)
-
+if current_pal=3 {projectile.MoveType=41 projectile.HitType=41}
 }
 frame_set(2,2,0.5)
 frame_set(3,3,0.05)

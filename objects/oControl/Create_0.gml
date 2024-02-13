@@ -903,6 +903,10 @@ playingloop=0
 playSFX=snd_viva4
 voiceActor=""
 
+recordcol=c_white
+recordcol2=c_white
+recordscale=1
+
 songtext=1
 songcomposer=""
 dancer1spr=spr_viva_dance

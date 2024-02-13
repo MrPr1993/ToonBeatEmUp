@@ -2060,6 +2060,7 @@
     {"name":"background20","order":81,"path":"sprites/background20/background20.yy",},
     {"name":"spr_ghost_headhit","order":13,"path":"sprites/spr_ghost_headhit/spr_ghost_headhit.yy",},
     {"name":"spr_ghost_head_attack","order":14,"path":"sprites/spr_ghost_head_attack/spr_ghost_head_attack.yy",},
+    {"name":"spr_mirrorlady_front","order":6,"path":"sprites/spr_mirrorlady_front/spr_mirrorlady_front.yy",},
     {"name":"spr_ghost_head_scare","order":15,"path":"sprites/spr_ghost_head_scare/spr_ghost_head_scare.yy",},
     {"name":"spr_dastardly2_flat","order":6,"path":"sprites/spr_dastardly2_flat/spr_dastardly2_flat.yy",},
     {"name":"spr_sofia_specialwind","order":71,"path":"sprites/spr_sofia_specialwind/spr_sofia_specialwind.yy",},

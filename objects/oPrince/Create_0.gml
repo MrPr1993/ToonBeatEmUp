@@ -50,6 +50,9 @@ ShockSpr=spr_prince_elec
 BurnSpr=spr_prince_burned
 FrozenSpr=spr_prince_frozen
 
+isBoss=1
+specialBossState=1
+
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

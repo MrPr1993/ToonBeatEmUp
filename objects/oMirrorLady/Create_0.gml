@@ -4,6 +4,9 @@ name="MIRROSA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=55
 
+isBoss=1
+specialBossState=1
+
 
 alarm[0]=choose(200,220,240,260,280,300)
 
