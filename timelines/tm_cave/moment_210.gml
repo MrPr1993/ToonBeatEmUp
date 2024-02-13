@@ -1,13 +1,33 @@
 /// @description Baddies Appear 10
 
-if __view_get( e__VW.XView, 0 )>=10000-2-320
+//if __view_get( e__VW.XView, 0 )>=10000-2-320
+//{
+//boss=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oPlantPrincess)
+//musicplaystart(msc_boss4)
+//oControl.bossID=oPlantPrincess
+//}
+//else
+//{
+//timeline_position-=1
+//}
+
+/// @description Prepare Boss
+
+timer_set(0)
+
+if oPlayer.x>=10000-320+160
+and oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0 
 {
-boss=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oPlantPrincess)
-musicplaystart(msc_boss4)
-oControl.bossID=oPlantPrincess
+oPlayer.canControl=0
+oPlayer.areaEntry=1
+oPlayer.x=10000-160+32
+with oPlayer
+{key_right=0 doubledash=0 dashing=0
+}
+
+with oControl MusicFade=1
 }
 else
 {
 timeline_position-=1
 }
-

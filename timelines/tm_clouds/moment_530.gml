@@ -1,4 +1,4 @@
-if specialSet8=20
+if specialSet8=10
 {
 
 
