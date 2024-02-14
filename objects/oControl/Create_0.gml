@@ -1,3 +1,5 @@
+room_speed=60
+
 roomfast=0
 
 playNO=1
@@ -905,7 +907,7 @@ voiceActor=""
 
 recordcol=c_white
 recordcol2=c_white
-recordscale=1
+recordscale=0
 
 songtext=1
 songcomposer=""

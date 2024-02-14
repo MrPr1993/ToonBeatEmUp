@@ -203,7 +203,7 @@ animFrame+=0.01
 if animFrame>4 {animFrame=0 specialanim+=1 ground=0 zSpeed=-4 z=-3}
 }
 if specialanim=1 ///Hop
-{sprite_index=spr_dastardly_move animFrame+=0.1 shadowSpr=spr_shadow
+{sprite_index=spr_dastardly_move animFrame+=0.1 shadowSpr=spr_midshadow
 
 y+=2 x+=3 if animFrame>0.5
 if ground {animFrame=0 specialanim+=1}

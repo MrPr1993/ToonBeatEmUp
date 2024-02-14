@@ -12,7 +12,6 @@ y=lockY;
 z=lockZ;
 }
 
-anim=0;
 
 if canmove {anim=0}
 

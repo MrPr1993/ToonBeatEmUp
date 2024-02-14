@@ -74,14 +74,20 @@ isBoss=1
 specialBossState=1
 
 
-if oControl.betatest=1 if keyboard_check(vk_shift)
-{immune=1
-anim=66 canmove=0
-}
-
-
 ///Tail Script
-body=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) body.sprite_index=spr_dragonmaiden_tail
-body.isDepth=0 body.depth=0
+tail=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) tail.sprite_index=spr_dragonmaiden_tail
+tail.isDepth=0 tail.depth=16777214 tail.shadow=mask_none
 ////Body Script
-body=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) body.sprite_index=spr_dragonmaiden_body
+body=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) body.sprite_index=spr_dragonmaiden_body3
+body.isDepth=0 body.depth=16777213 body.shadow=mask_none
+
+necc=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) necc.sprite_index=spr_dragonmaiden_headded
+necc.isDepth=0 necc.depth=16777213 necc.shadow=mask_none
+
+
+if oControl.betatest=1 if keyboard_check(vk_control)
+{x=body.x tail.x=x lockPos=0 isdepth=0 depth=16777213
+canmove=0 anim=100
+z=1500
+body.z=1500 tail.z=1500 necc.z=1500
+}

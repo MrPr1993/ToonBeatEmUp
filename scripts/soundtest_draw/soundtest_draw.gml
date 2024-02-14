@@ -10,10 +10,10 @@ draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
 
 if keyboard_check_pressed(vk_escape) room_goto(rm_menu)
 
-matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1,1,1))
-draw_sprite_ext(spr_soundtestrec,0,0,0,1.1-0.1*recordscale,0.9+0.1*recordscale,0,c_black,1)
-matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1,1,1))
-draw_sprite_ext(spr_soundtestrec,0,0,0,1.1-0.1*recordscale,0.9+0.1*recordscale,recordAng,image_blend,1)
+matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1+0.001*recordscale,1+0.001*recordscale,1))
+draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,0,c_black,1)
+matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1+0.001*recordscale,1+0.001*recordscale,1))
+draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,recordAng,image_blend,1)
 matrix_set(matrix_world,matrix_build(234,152,0+0.05*cos(recordAng),85,0,0,1,1,1))
 
 draw_sprite_ext(spr_soundtestrec2,0,0,0,1,1,recordAng2,c_white,1)
@@ -42,7 +42,9 @@ dancer4img=image_index
 
 if audio_is_playing(songplaying)
 {image_blend=recordcol
-	recordscale=0.9+0.1*sin(current_time)
+	var loopa=sin(current_time);
+	
+	recordscale=lerp(recordscale,(1/loopa)*1,0.1)
 	songnote+=1*songSPD if songnote>(60*songSPD)
 	{songnote=0
 camnote=instance_create_depth(160+choose(-random_range(20,80),random_range(20,80)),156,-1,oCameoChar)
@@ -60,7 +62,7 @@ newscript=function()
 }	
 recordAng+=1*songSPD
 recordAng2=lerp(recordAng2,22,0.1)
-} else {recordscale=lerp(recordscale,1,0.1) recordAng2=lerp(recordAng2,45,0.1) songnote=0}
+} else {recordscale=lerp(recordscale,0,0.1) recordAng2=lerp(recordAng2,45,0.1) songnote=0}
 
 }
 
@@ -91,19 +93,19 @@ if key_A {
 playingloop=0
 	songID=audio_play_sound(playingSound,1,0)
 	audio_sound_gain(playingSound,global.BGMvolume/100,0)
-	recordcol=recordcol2
+	recordcol=recordcol2 recordscale=1.1
 	
 	}	
 	songplaying=playingSound
 	}
-	if key_Y {////Loop
+	if key_X {////Loop
 playingsongname=songname
 playingloop=1
 	{audio_stop_all()
 	songID=audio_play_sound(playingSound,1,1)
 	audio_sound_gain(playingSound,global.BGMvolume/100,0)
 	
-	recordcol=recordcol2
+	recordcol=recordcol2 recordscale=1.1
 	}	
 	songplaying=playingSound
 	}
@@ -281,7 +283,7 @@ draw_text(160+4,64+24-4,soundname)
 
 }
 
-if key_super
+if key_Y
 if songtext=1 songtext=0 else songtext=1
 
 
