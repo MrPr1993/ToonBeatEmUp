@@ -975,6 +975,7 @@ galleryload=0
 galleryTime=0
 
 authorname="@MRPR1993"
+picturetext[40]=0;
 showtext=1
 pictureX=160
 pictureY=120

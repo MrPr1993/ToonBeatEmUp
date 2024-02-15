@@ -110,7 +110,9 @@ if showtext=1
 draw_command(5)
 	
 draw_set_halign(fa_left)
-draw_text(0,240-12,authorname) 
+var textshow=""; textshow=string_upper(picturetext[pictureNO])
+
+draw_text(0,240-12,string(textshow)) 
 draw_set_halign(fa_right)
 draw_text(320,240-12,string(pictureNO)+"/"+string(pictureMax)) 
 draw_set_halign(fa_left)
