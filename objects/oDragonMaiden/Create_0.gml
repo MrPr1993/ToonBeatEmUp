@@ -73,6 +73,9 @@ tent4=-1;
 isBoss=1
 specialBossState=1
 
+lockSPD=1
+
+lockX=oControl.camX+360-64
 
 ///Tail Script
 tail=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) tail.sprite_index=spr_dragonmaiden_tail
@@ -84,6 +87,10 @@ body.isDepth=0 body.depth=16777213 body.shadow=mask_none
 necc=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) necc.sprite_index=spr_dragonmaiden_headded
 necc.isDepth=0 necc.depth=16777213 necc.shadow=mask_none
 
+handL=instance_create_depth(__view_get( e__VW.XView, 0 )-200,y,-1,oDragonHand) 
+handL.anim=9999	
+
+
 
 if oControl.betatest=1 if keyboard_check(vk_control)
 {x=body.x tail.x=x lockPos=0 isdepth=0 depth=16777213
@@ -91,3 +98,4 @@ canmove=0 anim=100
 z=1500
 body.z=1500 tail.z=1500 necc.z=1500
 }
+

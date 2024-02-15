@@ -23,8 +23,8 @@ if room=rm_opening {global.StageSelect=0 global.StageGoing=rm_stage1}
 else
 if room=rm_menu
 {global.P1Only=0;
-global.MenuGlobal=menuSelect
-if menuSelect=0 {global.SkipDifficulty=0 room_goto(rm_characterselect) global.IsMovie=0 global.IsMinigame=0  global.TrainingRoom=0 global.StageGoing=rm_opening global.StageSelect=0}
+global.MenuGlobal=menuSelect global.HiScoreSee=1 global.HiscoreSkip=1
+if menuSelect=0 {global.HiScoreSee=0 global.HiscoreSkip=0 global.SkipDifficulty=0 room_goto(rm_characterselect) global.IsMovie=0 global.IsMinigame=0  global.TrainingRoom=0 global.StageGoing=rm_opening global.StageSelect=0}
 if menuSelect=1 {global.SkipDifficulty=0 room_goto(rm_map) global.IsMinigame=0 global.TrainingRoom=0 global.StageSelect=1}
 if menuSelect=2 {room_goto(rm_feats) global.StageSelect=0}
 if menuSelect=3 {global.TrainingRoom=0 room_goto(rm_settings)}

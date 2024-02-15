@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+enemyai=-1 
 enemy_step()
 
 
 if lockPos
 {
-x=lockX;
-y=lockY;
-z=lockZ;
+x=lerp(x,lockX,lockSPD);
+y=lerp(y,lockY,lockSPD);
+z=lerp(z,lockZ,lockSPD);
 }
 
 

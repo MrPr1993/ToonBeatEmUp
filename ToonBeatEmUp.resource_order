@@ -1131,6 +1131,7 @@
     {"name":"snd_witch2","order":3,"path":"sounds/snd_witch2/snd_witch2.yy",},
     {"name":"spr_dastardly2_attack3","order":10,"path":"sprites/spr_dastardly2_attack3/spr_dastardly2_attack3.yy",},
     {"name":"snd_harpy13","order":4,"path":"sounds/snd_harpy13/snd_harpy13.yy",},
+    {"name":"oDragonHand","order":21,"path":"objects/oDragonHand/oDragonHand.yy",},
     {"name":"snd_harpy2","order":5,"path":"sounds/snd_harpy2/snd_harpy2.yy",},
     {"name":"spr_dastardly_attack3","order":15,"path":"sprites/spr_dastardly_attack3/spr_dastardly_attack3.yy",},
     {"name":"snd_harpy3","order":6,"path":"sounds/snd_harpy3/snd_harpy3.yy",},

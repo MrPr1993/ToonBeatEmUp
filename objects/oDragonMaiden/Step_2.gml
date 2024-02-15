@@ -4,12 +4,26 @@ depth=-y
 
 selfatk.SourceX=x
 
+overwriteAttack1=1
+overwriteAttack2=1
+overwriteAttack3=1
+overwriteAttack4=1
+overwriteAttack5=1
+
 
 wobbleX=lerp(wobbleX,1,0.1)
 wobbleY=lerp(wobbleY,1,0.1)
 
+if anim=0
+{if handL.anim=9999 handL.anim=0
+if image_xscale=1 lockY=lerp(lockY,oControl.camX+96,0.01) else lockY=lerp(lockY,oControl.camX+320-96,0.01)
+}
+
+
 if anim=9999 ////Dead
-{if animFrame=0 {sprite_index=spr_dragonmaiden_headdizzy specialtimes[0]=0 specialcheck0=1 specialcheck1=0}
+{
+	lockPos=0
+	if animFrame=0 {sprite_index=spr_dragonmaiden_headdizzy specialtimes[0]=0 specialcheck0=1 specialcheck1=0}
 selfatk.atk=0
 wobbleX=specialcheck0 wobbleY=wobbleX
 
@@ -51,7 +65,7 @@ if hp=0 or hp<=0 or dead=1 if anim!=9999
 
 
 if anim=0
-{
+{lockSPD=0.05
 
 if !eyeHit
 sprite_index=StandSpr
@@ -195,37 +209,90 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	
 	
 	if anim=10 ///Attack
-	{canmove=0
-	animFrame=0 anim=11
+	{canmove=0 prevanim=0
+	animFrame=0 anim=choose(11,12)
+	
+	if (targetEnemy.x>oControl.camX+160+96 and image_xscale=1)
+	or (targetEnemy.x>oControl.camX+320-160-96 and image_xscale=-1)
+	anim=13
 	}
 	
 	
-	if anim=11 ///Octo Spin
-	{if animFrame=0 {specialcheck5=0;}
-	sprite_index=spr_octopus_spin
-
+	if anim=11 //Bite
+	{if animFrame=0 {lockZ=-48 lockX=x
+		
+		if prevanim=11 {if image_xscale=1 lockX=oControl.camX+64 else lockX=oControl.camX+320-64}
+		
+		sprite_index=spr_dragonmaiden_head}
+	lockSPD=0.07
+		
+		
 	selfatk.x=x
 	selfatk.image_xscale=4.5
 	selfatk.image_yscale=2
 	selfatk.height=128
 	selfatk.damage=0.2 selfatk.MoveType=1
-
-	frame_set(0,0,0.1)
-	frame_set(1,1,0.05)
-	frame_set(2,2,0.25)
-	frame_set(3,3,0.25)
-	frame_set(4,4,0.25)
-	frame_set(5,5,0.25)
-	frame_set(6,6,0.25)
-	frame_set(7,7,0.25) if animFrame=7.5 {if specialcheck5!=5 {specialcheck5+=1 animFrame=2}}
-	frame_set(8,1,0.1) 
-	frame_set(9,0,0.1)
-	
-	if animFrame=clamp(animFrame,2,8) atk=1 else atk=0 {}
-	
-	if animFrame>9.5 {anim=0 canmove=1 animFrame=0}
-	
+if animFrame<1 {lockX-=2*image_xscale lockY=targetEnemy.y}
+	frame_set(0,2,0.05) if animFrame=1 {lockZ=0 sprite_index=spr_dragonmaiden_headbite}
+	frame_set(1,0,0.1) if animFrame=clamp(animFrame,1,2)
+	{if image_xscale=1 {if x>targetEnemy.x-32 or x>oControl.camX+200 animFrame=2 else lockX+=8}
+	else {if x<targetEnemy.x+32 or x<oControl.camX+320-200 animFrame=2 else lockX-=8}
+	}	if animFrame=2 {oControl.quakeFXTime=10 atk=1}
+	frame_set(2,1,0.5)
+	frame_set(3,2,0.01)
+	if animFrame=clamp(animFrame,2,3) atk=1 else atk=0 {}
+	if animFrame>3.5 {anim=0 canmove=1 animFrame=0}
 	}
+	
+	if anim=12 //Fire Breath
+	{if animFrame=0 {specialtimes[0]=0 lockZ=-96 sprite_index=spr_dragonmaiden_head
+		
+	
+		}
+		lockY=lerp(lockY,targetEnemy.y,0.1)
+		if image_xscale=1 {lockX=targetEnemy.x-64 lockX=clamp(lockX,oControl.camX-999,oControl.camX+200)} else {lockX=targetEnemy.x+64 lockX=clamp(lockX,oControl.camX+320-200,oControl.camX+999+320)}
+			
+	
+	lockSPD=0.07
+
+frame_set(0,2,0.05) if animFrame=1 sprite_index=spr_dragonmaiden_headbreath
+frame_set(1,0,0.1) 
+frame_set(2,1,0.1) 
+frame_set(3,2,0.05) 
+frame_set(4,3,0.1) 
+frame_set(5,4,0.05) 
+frame_set(6,2,0.1) if animFrame>6.5 {canmove=1}
+	}
+	
+if anim=13 ///Change location
+{lockSPD=0.01
+	
+if animFrame=0 {animFrame=1
+specialtimes[0]=image_xscale specialtimes[1]=0 specialtimes[2]=choose(11,12)
+}
+sprite_index=spr_dragonmaiden_head image_index=2
+specialtimes[1]+=0.45
+lockX+=-specialtimes[0]*specialtimes[1]
+
+if animFrame=1
+if x!=clamp(x,oControl.camX-200,oControl.camX+320+200)
+{
+if image_xscale=1 {x=oControl.camX+320+100 image_xscale=-1}
+else {x=oControl.camX-100 image_xscale=1}
+lockY=targetEnemy.y
+animFrame=2
+}
+
+if animFrame=2
+{
+lockX+=8*image_xscale 
+if x=clamp(x,oControl.camX+96,oControl.camX+320-96)
+{animFrame=2 anim=specialtimes[2]
+	if anim=11 {sprite_index=spr_dragonmaiden_headbite image_index=0}
+	}
+}
+	
+}
 	
 	///Intro
 	if anim=100{immune=1
@@ -250,7 +317,7 @@ frame_set(12,0,0.2)
 frame_set(13,0,0.2)
 frame_set(14,0,0.01)
 if animFrame>14.5
-{immune=0 anim=0 canmove=1}
+{immune=0 anim=0 lockPos=1 canmove=1}
 	
 	}
 	

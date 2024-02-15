@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oDragonHand",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [],
+  "parent": {
+    "name": "6DragonMaiden",
+    "path": "folders/8 - Bosses/6DragonMaiden.yy",
+  },
+  "parentObjectId": {
+    "name": "oOctopusT",
+    "path": "objects/oOctopusT/oOctopusT.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_dragonmaiden_hand",
+    "path": "sprites/spr_dragonmaiden_hand/spr_dragonmaiden_hand.yy",
+  },
+  "spriteMaskId": {
+    "name": "spr_mediumshadow",
+    "path": "sprites/spr_mediumshadow/spr_mediumshadow.yy",
+  },
+  "visible": true,
+}

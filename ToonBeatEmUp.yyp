@@ -1326,6 +1326,7 @@
     {"id":{"name":"snd_witch2","path":"sounds/snd_witch2/snd_witch2.yy",},},
     {"id":{"name":"spr_dastardly2_attack3","path":"sprites/spr_dastardly2_attack3/spr_dastardly2_attack3.yy",},},
     {"id":{"name":"snd_harpy13","path":"sounds/snd_harpy13/snd_harpy13.yy",},},
+    {"id":{"name":"oDragonHand","path":"objects/oDragonHand/oDragonHand.yy",},},
     {"id":{"name":"snd_harpy2","path":"sounds/snd_harpy2/snd_harpy2.yy",},},
     {"id":{"name":"spr_dastardly_attack3","path":"sprites/spr_dastardly_attack3/spr_dastardly_attack3.yy",},},
     {"id":{"name":"snd_harpy3","path":"sounds/snd_harpy3/snd_harpy3.yy",},},
