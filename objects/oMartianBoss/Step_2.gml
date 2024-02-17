@@ -133,7 +133,7 @@ frame_set(2,2,0.25)
 frame_set(3,3,0.25)
 frame_set(4,4,0.25)
 frame_set(5,5,0.25) if animFrame=6
-{projectile_create(x+66,y,z-61,32,spr_martianb_proj,4*image_xscale,mask_small,spr_hitflash,0.25,1,1,4,-4)
+{projectile_create(x+66*image_xscale,y,z-61,32,spr_martianb_proj,4*image_xscale,mask_small,spr_hitflash,0.25,1,1,4,-4)
 oControl.quakeFX=10 PlaySound(snd_explosion)
 }
 frame_set(6,6,0.25)

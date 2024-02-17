@@ -17,11 +17,13 @@ wobbleY=lerp(wobbleY,1,0.1)
 if anim=0
 {if handL.anim=9999 handL.anim=0
 if image_xscale=1 lockY=lerp(lockY,oControl.camX+96,0.01) else lockY=lerp(lockY,oControl.camX+320-96,0.01)
+
+body.image_index=image_index
 }
 
 
 if anim=9999 ////Dead
-{
+{body.image_index=image_index
 	lockPos=0
 	if animFrame=0 {sprite_index=spr_dragonmaiden_headdizzy specialtimes[0]=0 specialcheck0=1 specialcheck1=0}
 selfatk.atk=0
@@ -83,7 +85,7 @@ or anim=5
 or anim=6
 or anim=7
 {ground=1 anim=4
-sprite_index=spr_octopus_hit	
+sprite_index=spr_dragonmaiden_headhit
 animFrame+=0.1
 
 if animFrame>8 {animFrame=0 canmove=1 anim=0 hurt=0}

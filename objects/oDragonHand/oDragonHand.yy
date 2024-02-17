@@ -36,8 +36,8 @@
     "path": "sprites/spr_dragonmaiden_hand/spr_dragonmaiden_hand.yy",
   },
   "spriteMaskId": {
-    "name": "spr_mediumshadow",
-    "path": "sprites/spr_mediumshadow/spr_mediumshadow.yy",
+    "name": "spr_dragonmaiden_handmask",
+    "path": "sprites/spr_dragonmaiden_handmask/spr_dragonmaiden_handmask.yy",
   },
   "visible": true,
 }

@@ -82,7 +82,7 @@ tail=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) t
 tail.isDepth=0 tail.depth=16777214 tail.shadow=mask_none
 ////Body Script
 body=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) body.sprite_index=spr_dragonmaiden_body3
-body.isDepth=0 body.depth=16777213 body.shadow=mask_none
+body.isDepth=0 body.depth=16777213 body.shadow=mask_none body.image_speed=0
 
 necc=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) necc.sprite_index=spr_dragonmaiden_headded
 necc.isDepth=0 necc.depth=16777213 necc.shadow=mask_none

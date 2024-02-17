@@ -121,6 +121,14 @@ if enemySpawn=7 {enemySpawnName="8 Barrel" spawnUnit=oBarrel}
 if enemySpawn=8 {enemySpawnName="9 Bull" spawnUnit=oBull}
 if enemySpawn=9 {enemySpawnName="10 Car" spawnUnit=oCar}
 if enemySpawn=10 {enemySpawnName="11 Gun Range" spawnUnit=oGunRange}
+if enemySpawn=11 {enemySpawnName="12 Piano Dropper" spawnUnit=oPianoDropper}
+if enemySpawn=12 {enemySpawnName="11 Gun Range" spawnUnit=oGunRange}
+if enemySpawn=13 {enemySpawnName="11 Gun Range" spawnUnit=oGunRange}
+if enemySpawn=14 {enemySpawnName="11 Gun Range" spawnUnit=oGunRange}
+if enemySpawn=15 {enemySpawnName="11 Gun Range" spawnUnit=oGunRange}
+
+
+
 }
 
 if spawnType="Spawn Area"

@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"054aea34-3904-4799-9058-9812d5c5812a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d9a85c3e-d951-493d-a97b-7ffa65beeb4e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"86020d79-c7ec-46e4-bcd1-12f4e69ef4bc",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"054aea34-3904-4799-9058-9812d5c5812a","path":"sprites/spr_dragonmaiden_body3/spr_dragonmaiden_body3.yy",},},},"Disabled":false,"id":"c6685be7-5c5b-431c-ae92-50fd49c69b73","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d9a85c3e-d951-493d-a97b-7ffa65beeb4e","path":"sprites/spr_dragonmaiden_body3/spr_dragonmaiden_body3.yy",},},},"Disabled":false,"id":"b4556bf5-6eb2-49ad-99f7-34deb88e90cf","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"86020d79-c7ec-46e4-bcd1-12f4e69ef4bc","path":"sprites/spr_dragonmaiden_body3/spr_dragonmaiden_body3.yy",},},},"Disabled":false,"id":"05d73b46-68be-4f48-a89b-9090e289898c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

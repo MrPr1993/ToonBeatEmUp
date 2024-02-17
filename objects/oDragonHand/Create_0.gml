@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 event_inherited()
-
-
+enemyPortraitIndex=56
+ground=1
 name="HAND"
 Throw=0 
 isPlayer=0
@@ -13,5 +13,7 @@ anim=0
 animFrame=0
 maxhp=0.1
 hp=0.1
-shadow=spr_shadow
-
+shadow=spr_dragonmaiden_handshadow
+ThrownSpr=spr_dragonmaiden_hand
+powhp=0
+height=128

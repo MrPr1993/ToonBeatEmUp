@@ -15,32 +15,34 @@ if anim=0
 if oControl.ignore=0
 {
 
-if image_xscale=1 x=oControl.camX-200 else x=oControl.camX+320+200
+if image_xscale=1 x=oControl.camX-10 else x=oControl.camX+320+10
 y=targetEnemy.y
 }
 sprite_index=spr_dragonmaiden_hand if image_index<4.75 image_index+=0.1 else image_index=3
 
  byetime+=1;
+ 
+ if oControl.betatest=1 and keyboard_check_pressed(vk_tab) byetime=260
+ 
 if  byetime>260 {byetime=0 animFrame=0 anim=10}
 }
 
 
 if anim=10
-{animFrame+=0.1
+{animFrame+=0.1 z=0
 if x!=clamp(x,oControl.camX-90,oControl.camX+320+90) {x+=image_xscale*3}
 if animFrame>3
 {animFrame=0
-anim=choose(11,12)
+anim=choose(11,12,13,14)
 }
 }
 
 if anim=11 ///Attack
 {if animFrame=0 sprite_index=spr_dragonmaiden_hand
 	
-	
 selfatk.damage=0.2 selfatk.MoveType=1 selfatk.image_xscale=image_xscale
-selfatk.x=x+160*image_xscale selfatk.y=y selfatk.z=z+16
-if animFrame<1 x-=2*image_xscale
+selfatk.x=x-80*image_xscale selfatk.y=y selfatk.z=z+16
+if animFrame<1 if animFrame<0.25 {x+=5*image_xscale} else x-=1*image_xscale
 frame_set(0,0,0.01) if animFrame=1 sprite_index=spr_dragonmaiden_handattack1
 frame_set(1,0,0.25)
 frame_set(2,0,0.1) if animFrame=clamp(animFrame,2,3) {atk=1 x+=16*image_xscale} else atk=0
@@ -52,10 +54,59 @@ frame_set(7,0,0.25)
 if animFrame>7.5 {animFrame=0 anim=4}
 }
 
-if anim=12 ///Grab
+if anim=12 ///Flick
+{if animFrame=0 sprite_index=spr_dragonmaiden_handattack2
+z=-8 
+selfatk.damage=0.2 selfatk.MoveType=2 selfatk.image_xscale=image_xscale
+selfatk.x=x-80*image_xscale selfatk.y=y selfatk.z=z+16
+
+if x=clamp(x,oControl.camX+4,oControl.camX+320-4)
+{
+if image_xscale=1 {if x<targetEnemy.x or x<oControl.camX+180 animFrame=1.75 else x+=1*image_xscale}
+if image_xscale=-1 {if x>targetEnemy.x or x>oControl.camX+320-180 animFrame=1.75 else x+=1*image_xscale}
+}
+frame_set(0,0,0.01)
+frame_set(1,0,0.25)
+frame_set(2,1,0.1) if animFrame=clamp(animFrame,2,3) {atk=1 x+=16*image_xscale} else atk=0
+frame_set(3,2,0.25) if animFrame>4 recovery=30;
+frame_set(4,2,0.05) 
+frame_set(5,2,0.25)
+frame_set(6,2,0.25)
+frame_set(7,2,0.25)
+if animFrame>7.5 {animFrame=0 anim=4}
+}
+
+if anim=13 ///Slam
+{if animFrame=0 {z=-4 sprite_index=spr_dragonmaiden_handattack3 ground=0}
+
+selfatk.damage=0.2 selfatk.MoveType=2 selfatk.image_xscale=image_xscale
+selfatk.x=x-80*image_xscale selfatk.y=y selfatk.z=z+16
+if animFrame<1
+{ground=0
+if z>-120 z-=4
+}
+if x=clamp(x,oControl.camX+4,oControl.camX+320-4)
+{
+if image_xscale=1 {if x<targetEnemy.x or x<oControl.camX+180 animFrame=1 else x+=1*image_xscale }
+if image_xscale=-1 {if x>targetEnemy.x or x>oControl.camX+320-180 animFrame=1 else x+=1*image_xscale }
+}
+frame_set(0,0,0.01)
+frame_set(1,0,0.01) if animFrame=clamp(animFrame,1,2) {if ground=0 {animFrame=1.5} z+=8 if z>0
+{z=0 animFrame=2.1 ground=1 oControl.quakeFX=10 atk=1}
+}
+frame_set(2,1,0.1) if animFrame=clamp(animFrame,2,3) {atk=1 x+=16*image_xscale} else atk=0
+frame_set(3,2,0.25) if animFrame>4 recovery=30;
+frame_set(4,2,0.05) 
+frame_set(5,2,0.25)
+frame_set(6,2,0.25)
+frame_set(7,2,0.25)
+if animFrame>7.5 {animFrame=0 anim=4}
+}
+
+if anim=14 ///Grab
 {sprite_index=spr_dragonmaiden_handattack4
 selfatk.damage=0.2 selfatk.MoveType=1 selfatk.image_xscale=image_xscale
-selfatk.x=x+160*image_xscale selfatk.y=y selfatk.z=z+16
+selfatk.x=x-80*image_xscale selfatk.y=y selfatk.z=z+16
 frame_set(0,0,0.01) if animFrame<1 {x+=2*image_xscale}
 frame_set(1,1,0.25)
 frame_set(2,2,0.05) if animFrame=clamp(animFrame,3,4) atk=1 else atk=0
@@ -63,6 +114,8 @@ frame_set(3,3,0.25) if animFrame>4 recovery=30;
 frame_set(4,4,0.05) 
 frame_set(5,3,0.25) if animFrame>5 {animFrame=0 anim=4}
 }
+
+
 
 if targetID!=-1
 if anim!=6666
@@ -93,7 +146,7 @@ image_index+=0.1 if image_index>2 image_index=0 hspeed=0 canmove=0
 
 if targetID!=-1 
 {
-targetID.x=x+32*image_xscale
+targetID.x=x-32*image_xscale
 targetID.y=y targetID.z=z-8
 targetID.GrabFrameExtra+=0.2
 if targetID.GrabFrameExtra=3.8
@@ -106,6 +159,8 @@ targetID.ground=0
 targetID.atk=0
 targetID.hurt=1
 targetID.image_index+=0.1
+
+targetID.depth=depth+1
 
 targetID.recovery=0
 
@@ -237,10 +292,12 @@ targetID=-1
 
 }
 
+if !instance_exists(oDragonMaiden) instance_destroy()
+
 if anim=4 or anim=5 or anim=6 or anim=7 ///Disappear
 {byetime=0
 x-=10*image_xscale	
 animFrame+=0.1
 if oDragonMaiden.dead=0
-if animFrame>20 {animFrame=0 anim=0} 
+if animFrame>20 {hp=0.1 animFrame=0 anim=0} 
 }
