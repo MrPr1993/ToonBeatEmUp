@@ -22,6 +22,9 @@ function animsetup_viva() {
 	DamageVoice2=snd_viva10
 	DamageVoice3=snd_viva11
 	ReturnVoice=snd_viva8
+	
+	if 	ThrownSpr!=spr_viva_hit
+	{
 	ThrownSpr=spr_viva_hit
 	BurnSpr=spr_viva_burned
 	FrozenSpr=spr_viva_frozen
@@ -54,7 +57,8 @@ PlaneOutSpr=spr_viva_planeout
 HeartSpr=spr_viva_heart
 WildTakeSpr4=spr_viva_wildtake4
 qSandSpr=spr_viva_quicksand
-
+	inflateSpr=spr_viva_inflate
+	}
 
 	if atk=0 ///To Set default colission
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1

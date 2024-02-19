@@ -25,6 +25,8 @@ function animsetup_hina() {
 	weaponBack=1
 	///Hit Sprite Animation Setup
 	defMask=mask_small
+	if 	ThrownSpr!=spr_hina_hit
+	{
 	ThrownSpr=spr_hina_hit
 	BurnSpr=spr_hina_burned
 	FrozenSpr=spr_hina_frozen
@@ -57,6 +59,8 @@ PlaneOutSpr=spr_hina_planeout
 HeartSpr=spr_hina_heart
 	WildTakeSpr4=spr_hina_wildtake4
 	qSandSpr=spr_hina_quicksand
+inflateSpr=spr_hina_inflate
+}
 	
 	if atk=0
 	{hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
