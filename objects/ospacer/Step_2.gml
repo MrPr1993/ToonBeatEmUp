@@ -41,7 +41,9 @@ if animFrame>6.75 {canmove=1}
 	frame_set(1,1,0.1)
 	frame_set(2,2,0.25) if animFrame=3 {
 		if specialcheck0=0
-projectile_create(x+28*image_xscale,y+1,z-32,32,spr_spacer_bubbleproj,1*image_xscale,mask_small,spr_hitflash,0.2,1,2,0,0)
+		{PlaySoundNoStack(snd_alien2)
+projectile_create(x+28*image_xscale,y+1,z-32,32,spr_spacer_bubbleproj,1*image_xscale,mask_small,spr_hitflash,0.2,45,45,0,0)
+		}
 		}
 	frame_set(3,3,0.25) if animFrame=3.5 if specialcheck0!=8 {specialcheck0+=1 animFrame=2}
 	frame_set(4,2,0.25)	

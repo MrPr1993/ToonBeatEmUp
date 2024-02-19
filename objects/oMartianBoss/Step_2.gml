@@ -77,7 +77,7 @@ frame_set(12,3,0.5)
 frame_set(13,1,0.5)
 frame_set(14,2,0.5)
 frame_set(15,4,0.2) if animFrame=16
-{
+{PlaySoundNoStack(snd_alien2)
 projectile_create(x+29*image_xscale,y,z-56,-32,spr_martian_stunproj,4*image_xscale,mask_small,spr_hitflash,0.05,0,2,0,0)
 projectile.dizzyAtk=1
 }
@@ -133,7 +133,7 @@ frame_set(2,2,0.25)
 frame_set(3,3,0.25)
 frame_set(4,4,0.25)
 frame_set(5,5,0.25) if animFrame=6
-{projectile_create(x+66*image_xscale,y,z-61,32,spr_martianb_proj,4*image_xscale,mask_small,spr_hitflash,0.25,1,1,4,-4)
+{projectile_create(x+66*image_xscale,y,z-49,32,spr_martianb_proj,4*image_xscale,mask_small,spr_explosion4,0.25,1,1,4,-4)
 oControl.quakeFX=10 PlaySound(snd_explosion)
 }
 frame_set(6,6,0.25)

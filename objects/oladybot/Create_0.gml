@@ -20,6 +20,12 @@ height=120
 
 specialFX=0
 
+DamageVoice1=snd_metalhit
+DamageVoice2=snd_metalhit
+DamageVoice3=snd_metalhit
+DeathCry=snd_deathcryrobot
+HitGround=snd_hitgroundmetal
+
 StandSpr=spr_ladybot_stand
 MoveSpr=spr_ladybot_move
 RunSpr=spr_ladybot_move

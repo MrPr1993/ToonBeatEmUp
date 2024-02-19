@@ -70,7 +70,7 @@ frame_set(12,3,0.5)
 frame_set(13,1,0.5)
 frame_set(14,2,0.5)
 frame_set(15,4,0.2) if animFrame=16
-{
+{PlaySoundNoStack(snd_alien2)
 projectile_create(x+29*image_xscale,y,z-56,-32,spr_martian_stunproj,4*image_xscale,mask_small,spr_hitflash,0.05,0,2,0,0)
 projectile.dizzyAtk=1
 }

@@ -6,6 +6,12 @@ enemyPortraitIndex=28
 
 enemyscript=animsetup_enemy
 
+DamageVoice1=snd_metalhit
+DamageVoice2=snd_metalhit
+DamageVoice3=snd_metalhit
+DeathCry=snd_deathcryrobot
+HitGround=snd_hitgroundmetal
+
 pointshit=10
 points=100
 

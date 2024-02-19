@@ -53,6 +53,12 @@ blendFX=c_white
 alphaFX=1
 spdZ=0
 
+haspal=0
+
+my_pal_sprite=spr_playerpal
+current_pal=0
+
+
 shadow=-1
 
 canDestroy=1

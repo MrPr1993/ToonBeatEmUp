@@ -9,7 +9,12 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=200
+
+DeathCry=snd_plant2
+DamageVoice1=snd_plant1
+DamageVoice2=snd_plant1
+DamageVoice3=snd_plant1
 
 idlestyle=1
 
@@ -41,7 +46,7 @@ JumpSpr2=spr_spacer_move
 ThrownSpr=spr_spacer_hit
 FlatSpr=spr_spacer_flat
 ShockSpr=spr_spacer_elec
-BurnSpr=spr_spacer_elec
+BurnSpr=spr_spacer_burned
 FrozenSpr=spr_spacer_frozen
 DizzySpr=spr_spacer_dizzy hasDizzy=1
 
