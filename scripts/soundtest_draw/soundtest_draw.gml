@@ -2,17 +2,17 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function soundtest_draw(){
 if room=rm_soundtest
-{fpsY=8
+{fpsY=8 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)
 controller_setup()
 
 draw_sprite(bg_soundtest,0,0,0)
 draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
 
-if keyboard_check_pressed(vk_escape) room_goto(rm_menu)
+if keyboard_check_pressed(vk_escape) {room_goto(rm_menu) settings_save()}
 
-matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1+0.001*recordscale,1+0.001*recordscale,1))
+matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1+0.01*recordscale,1-0.01*recordscale,1))
 draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,0,c_black,1)
-matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1+0.001*recordscale,1+0.001*recordscale,1))
+matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1+0.01*recordscale,1-0.01*recordscale,1))
 draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,recordAng,image_blend,1)
 matrix_set(matrix_world,matrix_build(234,152,0+0.05*cos(recordAng),85,0,0,1,1,1))
 
@@ -42,9 +42,10 @@ dancer4img=image_index
 
 if audio_is_playing(songplaying)
 {image_blend=recordcol
-	var loopa=sin(current_time);
+		
+	if songnote>0.5 recordscale=lerp(recordscale,0,0.1) else
+	recordscale=lerp(recordscale,1,0.1)
 	
-	recordscale=lerp(recordscale,(1/loopa)*1,0.1)
 	songnote+=1*songSPD if songnote>(60*songSPD)
 	{songnote=0
 camnote=instance_create_depth(160+choose(-random_range(20,80),random_range(20,80)),156,-1,oCameoChar)
@@ -68,11 +69,11 @@ recordAng2=lerp(recordAng2,22,0.1)
 
 if songtext=1
 {
-if key_up_pressed {if soundSelect=1 soundSelect=8 else soundSelect-=1}
-if -key_down_pressed {if soundSelect=8 soundSelect=1 else soundSelect+=1}
+if key_up_pressed {if soundSelect=1 soundSelect=5 else soundSelect-=1}
+if -key_down_pressed {if soundSelect=5 soundSelect=1 else soundSelect+=1}
 
 	if key_B
-if playingsongname="" {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 audio_stop_all() room_goto(rm_menu) animFrame=0} else {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 animFrame=0 audio_stop_all() playingsongname=""
+if playingsongname="" {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 audio_stop_all() settings_save() room_goto(rm_menu) animFrame=0} else {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 animFrame=0 audio_stop_all() playingsongname=""
 dancer1img=1
 dancer2img=1
 dancer3img=1
@@ -171,7 +172,7 @@ if songno=45 {recordcol2=c_ltgray songname="OUT OF PLACE..." playingSound=msc_se
 
 if soundSelect=2
 {
-if key_B songSPD=1
+if key_A songSPD=1
 if -key_left if songSPD>0.01 songSPD-=0.01
 if key_right if songSPD<5 songSPD+=0.01
 }
@@ -206,9 +207,9 @@ else
 draw_text(160,32-8,"PLAYING:"+string(playingsongname)+" (LOOPED)")
 }
 draw_text(160,32,"MUSIC")
-draw_text(64,32+8,"◄")
-draw_text(320-64,32+8,"►")
-draw_text(160,32+8,songname)
+draw_text(64,32+8,"")
+draw_text(320-64,32+8,"")
+draw_text(160,32+8,"◄ "+string(songname)+" ►")
 draw_text(160,32+24,"COMPOSER:"+string(songcomposer))
 if songplaying!=-1
 {
@@ -246,12 +247,18 @@ draw_text(160+4,32+16,"0:00")
 
 draw_set_halign(fa_right)
 draw_text(160-4,32+16+16,"MUSIC SPEED")
+
+draw_text(160-4,64+24+8+8,"MUSIC VOLUME")
+draw_text(160-4,64+24+8+16,"SOUND VOLUME")
+
 draw_set_halign(fa_center)
 if soundSelect=2
 draw_text(160,32+16+16,"✰")
 draw_set_halign(fa_left)
 draw_text(160+4,32+16+16,string(round(100*songSPD))+"%")
 
+draw_text(160+4,64+24+8+8,string(global.BGMvolume)+string("%"))
+draw_text(160+4,64+24+8+16,string(global.SFXvolume)+string("%"))
 
 draw_set_halign(fa_center)
 //string(secondsMAX3)+string(":")+string(secondsMAX2)+string(":")+string(secondsMAX)
@@ -259,8 +266,11 @@ draw_set_halign(fa_center)
 
 draw_set_color(c_white)
 draw_text(160,64+16-4,"SOUNDS") //songSPD=1
+
+draw_text(160,64+24+8,"SETTINGS") //songSPD=1
 draw_set_halign(fa_right)
-draw_text(160-4,64+24-4,"SOUND "+string(soundno))
+
+draw_text(160-4,64+24-4,"◄ SOUND "+string(soundno))
 draw_set_halign(fa_center)
 if voiceActor!=""
 draw_text(160-4,64+32-4,"VOICED BY:"+string(voiceActor))
@@ -275,12 +285,39 @@ if -key_left_pressed if soundno=1 soundno=30 else soundno-=1
 if key_right_pressed if soundno=300 soundno=1 else soundno+=1
 soundtest_sounds()
 
-if key_B {PlaySound(playSFX)}
+if key_A {PlaySound(playSFX)}
 
 }
 draw_set_halign(fa_left)
-draw_text(160+4,64+24-4,soundname)
+draw_text(160+4,64+24-4,string(soundname)+" ►")
 
+draw_set_color(c_white)
+
+
+if soundSelect=4
+{
+draw_text(160-4,64+24+8+8,"✰")
+
+if -key_left
+{if global.BGMvolume!=0 global.BGMvolume-=1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
+
+
+if key_right
+{if global.BGMvolume!=100 global.BGMvolume+=1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
+
+
+}
+
+if soundSelect=5
+{
+draw_text(160-4,64+24+8+16,"✰")
+if -key_left
+{if global.SFXvolume!=0 global.SFXvolume-=1}
+
+if key_right
+{if global.SFXvolume!=100 global.SFXvolume+=1}
+
+}
 }
 
 if key_Y

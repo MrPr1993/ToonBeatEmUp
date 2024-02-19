@@ -91,22 +91,22 @@ global.GalleryUnlock[14]=ini_read_real("SHOPGg","13",0)
 global.GalleryUnlock[15]=ini_read_real("SHOPGg","14",0)
 global.GalleryUnlock[16]=ini_read_real("SHOPGg","15",0)
 
-global.Gallery[1]=ini_read_real("SHOPG", "0", 0);
-global.Gallery[2]=ini_read_real("SHOPG", "1", 0);
-global.Gallery[3]=ini_read_real("SHOPG", "2", 0);
-global.Gallery[4]=ini_read_real("SHOPG", "3", 0);
-global.Gallery[5]=ini_read_real("SHOPG","4",0)
-global.Gallery[6]=ini_read_real("SHOPG","5",0)
-global.Gallery[7]=ini_read_real("SHOPG","6",0)
-global.Gallery[8]=ini_read_real("SHOPG","7",0)
-global.Gallery[9]=ini_read_real("SHOPG","8",0)
-global.Gallery[10]=ini_read_real("SHOPG","9",0)
-global.Gallery[11]=ini_read_real("SHOPG","10",0)
-global.Gallery[12]=ini_read_real("SHOPG","11",0)
-global.Gallery[13]=ini_read_real("SHOPG","12",0)
-global.Gallery[14]=ini_read_real("SHOPG","13",0)
-global.Gallery[15]=ini_read_real("SHOPG","14",0)
-global.Gallery[16]=ini_read_real("SHOPG","15",0)
+global.Gallery[1]=ini_read_real("SHOPG", "1", 0);
+global.Gallery[2]=ini_read_real("SHOPG", "2", 0);
+global.Gallery[3]=ini_read_real("SHOPG", "3", 0);
+global.Gallery[4]=ini_read_real("SHOPG", "4", 0);
+global.Gallery[5]=ini_read_real("SHOPG","5",0)
+global.Gallery[6]=ini_read_real("SHOPG","6",0)
+global.Gallery[7]=ini_read_real("SHOPG","7",0)
+global.Gallery[8]=ini_read_real("SHOPG","8",0)
+global.Gallery[9]=ini_read_real("SHOPG","9",0)
+global.Gallery[10]=ini_read_real("SHOPG","10",0)
+global.Gallery[11]=ini_read_real("SHOPG","11",0)
+global.Gallery[12]=ini_read_real("SHOPG","12",0)
+global.Gallery[13]=ini_read_real("SHOPG","13",0)
+global.Gallery[14]=ini_read_real("SHOPG","14",0)
+global.Gallery[15]=ini_read_real("SHOPG","15",0)
+global.Gallery[16]=ini_read_real("SHOPG","16",0)
 
 ///Cheats
 
