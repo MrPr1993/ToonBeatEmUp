@@ -452,6 +452,52 @@ frame_set(5,5,0.2) if animFrame=5.8
 	
 	}
 	
+	if anim=45 ///Inflate
+	{mask_index=mask_mid
+if animFrame=0 {sprite_index=inflateSpr specialtimes[4]=0 animFrame=1}
+
+if dead=0
+{
+if ground {ground=0 zSpeed=-4 wobbleX=1.2 wobbleY=0.9
+	
+	} else z+=-2
+var formspd=1
+	if key_right 
+	{
+	
+	if place_free(x+formspd,y) and x<__view_get( e__VW.XView, 0 )+320-28 x+=formspd}
+	
+
+	if -key_left {if place_free(x-formspd,y)
+	and x>__view_get( e__VW.XView, 0 )+42
+	  x-=formspd}
+	if key_up 
+	{if place_free(x,y-formspd) y-=formspd
+	}
+	if key_down 
+	{if place_free(x,y+formspd)
+	and y<__view_get( e__VW.YView, 0 )+240-2
+	  y+=formspd
+	}
+}
+
+if image_index<6.5
+{if dead=0
+{if image_index<2.5 image_index+=0.25} else image_index+=0.25
+}
+else {image_index=6.5 sprite_index=mask_none}
+
+
+	if hp<=0 if isEnemy=1 {if hplayer=0 {if dead=0 {hplayertake=hp dead=1 alarm[2]=90}} else {hplayertake=hp hp=maxhp+hplayertake hplayer-=1 if oControl.enemyID=1 hud_show() }}
+	else
+	if dead=0 {dead=1 alarm[2]=90}
+	
+	specialtimes[4]+=1
+	
+	if dead=0
+if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+	}
+	
 if anim=590067 { sprite_index=SpookyMonthSpr
 if animFrame>3.9 animFrame=0
 frame_set(0,0,0.2)

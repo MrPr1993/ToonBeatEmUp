@@ -199,6 +199,13 @@ if !keyboard_check(vk_control)
 	}
 }
 
+if oControl.HurtTest=11///Inflate
+if !keyboard_check(vk_control)
+{HitType=45 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
+else if instance_exists(oEnemy1)
+with oEnemy1
+{HitType=45 event_user(0) hp-=0.1*keyboard_check(vk_shift)}
+
 }
 
 ///Change player

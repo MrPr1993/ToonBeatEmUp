@@ -11,6 +11,16 @@ targetID=-1;
 if anim=591000
 flashFX(x,y,z,spr_smokesmall,0,1,0,1,1,c_white,1)
 
+///Reaction when hit while in inflated state
+if HitType!=45 and anim=45
+{
+animFrame=1 wobbleX=1.1 wobbleY=0.9 
+sentflying=HitForceReact
+	zSpeed=HitForceReactZ
+exit;
+event_user(12)
+}
+
 ///Reaction while frozen
 if HitType!=6 and anim=41 
 {
@@ -231,6 +241,21 @@ if hp<=0
 	animFrame=0
 	anim=44
 	}
+	
+	if HitType=45///Inflate
+	{event_user(1)
+	hurt=1 canBounce=0 image_index=0 if sprite_index=inflateSpr image_index=2 sprite_index=inflateSpr
+	ground=0
+
+	wobbleX=1.1
+wobbleY=0.9
+
+	sentflying=HitForceReact
+	zSpeed=HitForceReactZ
+	
+	animFrame=0
+	anim=45
+	}	
 
 	event_user(12)
 	///Special State for certain enemies after

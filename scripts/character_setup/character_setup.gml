@@ -282,6 +282,7 @@ stagePose=1
 	petSprHigh=spr_viva_petlow
 	throwItemSpr=spr_viva_itemthrow
 	meltSpr=spr_viva_melt
+	inflateSpr=spr_viva_inflate
 	spawnZAdd=0
 	throwHspd=4
 	frictionX=0

@@ -51,7 +51,7 @@ image_index=0
 
 	} 
 
-	if anim!=200 and anim!=201 and anim!=202 {carMode=0 mask_index=defMask}
+	if anim!=200 and anim!=201 and anim!=202 and anim!=45 {carMode=0 mask_index=defMask}
 
 	////Car Hit
 	if anim=201

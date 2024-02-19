@@ -1500,6 +1500,7 @@
     {"name":"spr_alienrobot_stand","order":7,"path":"sprites/spr_alienrobot_stand/spr_alienrobot_stand.yy",},
     {"name":"spr_altselfatk","order":6,"path":"sprites/spr_altselfatk/spr_altselfatk.yy",},
     {"name":"spr_viva_taunt3","order":91,"path":"sprites/spr_viva_taunt3/spr_viva_taunt3.yy",},
+    {"name":"spr_viva_inflate","order":93,"path":"sprites/spr_viva_inflate/spr_viva_inflate.yy",},
     {"name":"spr_snowgirl_attack","order":9,"path":"sprites/spr_snowgirl_attack/spr_snowgirl_attack.yy",},
     {"name":"spr_altselfatk2","order":7,"path":"sprites/spr_altselfatk2/spr_altselfatk2.yy",},
     {"name":"spr_anchor","order":4,"path":"sprites/spr_anchor/spr_anchor.yy",},

@@ -75,7 +75,8 @@ frame_set(14,3,0.25)
 if animFrame=15
 	{proj=instance_create_depth(x+20*image_xscale,y+1,depth+1,oProjectile) with proj
 		{sprite_index=spr_lobster_bubbleproj mask_index=mask_small spriteFX=spr_hitflash
-			dizzyAtk=0 damage=0.1 MoveType=1 shadow=spr_shadow
+			dizzyAtk=0 damage=0.1 MoveType=1 shadow=spr_shadow MoveType=44
+HitType=44
 			}proj.z=z-40 
 			proj.addXSpeed=(0.3*image_xscale)/4
 		proj.hspeed=(1*image_xscale)/4 proj.spdZ=(7)/7 proj.addZSpeed=(-0.45)/8
