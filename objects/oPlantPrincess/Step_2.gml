@@ -63,7 +63,31 @@ if anim=13 ///Slam Attack
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.05)
-frame_set(3,3,0.25) 
+frame_set(3,3,0.25) if animFrame=4
+{
+bone=instance_create_depth(targetEnemy.x,targetEnemy.y,-1,oBossHazard) bone.image_xscale=image_xscale bone.hspeed=3*image_xscale
+bone.hitSource=self.id with bone
+{
+selfscript = function()
+{MoveType=1 damage=0.1
+depth=-y
+frame_set(0,0,0.25)
+frame_set(1,1,0.25) if animFrame=clamp(animFrame,2,2.9) 
+{if hitSource.anim!=13 animFrame=4 else atk=1} else atk=0
+if animFrame=2 
+{oControl.quakeFXTime=10
+dust_make(x-16,y+1,z,-2,0,0) dust_make(x+16,y+1,z,2,0,0)
+dust_make(x,y+2,z,0,1,0)
+}
+frame_set(2,2,0.25) 
+frame_set(3,3,0.25)
+frame_set(4,4,0.25)
+frame_set(5,5,0.25)
+frame_set(6,6,0.25)
+if animFrame>6.7 {dust_make(x,y,z,0,0,0) instance_destroy()}
+}
+}
+}
 frame_set(4,4,0.1)
 frame_set(5,5,0.05)
 frame_set(6,3,0.05) 
@@ -106,7 +130,7 @@ frame_set(16,16,0.01)
 frame_set(17,12,0.25) if animFrame=18 sprite_index=spr_plantprincess_teleport
 frame_set(18,0,0.25)
 frame_set(19,1,0.25)
-frame_set(20,2,0.25) if animFrame=3 shadowSpr=mask_none
+frame_set(20,2,0.25) if animFrame=21 shadowSpr=mask_none
 frame_set(21,3,0.25)
 frame_set(22,4,0.25) 
 frame_set(23,5,0.01) if animFrame=24 y+=96

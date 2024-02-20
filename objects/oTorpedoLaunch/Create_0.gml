@@ -57,6 +57,11 @@ shadow=spr_shadow
 
 canDestroy=1
 
+haspal=0
+
+my_pal_sprite=spr_playerpal
+current_pal=0
+
 alarm[0]=120
 
 MoveType=5

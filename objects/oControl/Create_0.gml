@@ -5,6 +5,7 @@ roomfast=0
 playNO=1
 
 camX=0;
+camY=0;
 
 colorshade_setup()
 

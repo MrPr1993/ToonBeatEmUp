@@ -24,7 +24,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)<120
 
 if anim=11 ///Bite Attack
 {
-//if animFrame=0  PlaySound(snd_wolfita7)
+if animFrame=0  PlaySound(snd_scientist7)
 
 canbeGrabbed=0
 MoveType=1 damage=0.2
@@ -49,7 +49,9 @@ if animFrame>4.5 {atk=0 canmove=1}
 
 //?Tentacle Slaps
 if anim=12
-{if animFrame=0 {specialcheck4=0} sprite_index=spr_scientistm_attack2
+{
+atkcol_set(75,0,31,3.85,1,40)	
+if animFrame=0 {specialcheck4=0} sprite_index=spr_scientistm_attack2
 frame_set(0,0,0.1) damage=0.1 MoveType=1
 frame_set(1,1,0.1)
 frame_set(2,2,0.2)
@@ -74,15 +76,11 @@ frame_set(2,2,0.125)
 frame_set(3,3,0.05)
 frame_set(4,4,0.25) if animFrame=5 
 {
-specialcheck0=0
-	if specialcheck0=0
-	{//PlaySoundNoStack(snd_fzombie4)
-		spit=instance_create_depth(x+27*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale}
-	else
-{sm=instance_create_depth(x+27*image_xscale,y+2,0,oPharaohSmoke) sm.hspeed=1*image_xscale
-		sm.z=z-55}
-	
-	}
+PlaySoundNoStack(snd_scientist7)
+spit=instance_create_depth(x+48*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale
+spit.sprite_index=spr_scientistm_egg spit.bounce=3
+
+}
 
 
 frame_set(5,5,0.25)
@@ -102,10 +100,10 @@ frame_set(17,0,0.25)
 if animFrame>17.75 {canmove=1 atk=0}
 }
 
-if anim=14 //Rapier Attack
+if anim=14 //Spin Attack
 {
 //if animFrame=0  PlaySound(snd_wolfita7)
-if animFrame=0 {specialtimes[0]=0}
+if animFrame=0 {specialtimes[0]=0 specialtimes[1]=choose(-2,2) specialtimes[2]=choose(-1,1)}
 canbeGrabbed=0
 MoveType=1 damage=0.2 isCut=1 HitSound=snd_cut selfatk.HitSpark=spr_blood
 sprite_index=spr_scientistm_attack4
@@ -116,12 +114,19 @@ sprite_index=spr_scientistm_attack4
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 frame_set(2,1,0.05)
-frame_set(3,1,0.25) if animFrame=4 PlaySound(choose(snd_martianb4,snd_martianb5))
+frame_set(3,1,0.25) if animFrame=4 PlaySound(choose(snd_scientist5,snd_scientist6))
 frame_set(4,2+specialtimes[0],0.01)
 
 if animFrame=clamp(animFrame,4,4.99){
 	if !audio_is_playing(snd_swing5) PlaySound(snd_swing5)
-	atk=1 sentflying=2*image_xscale specialtimes[0]+=0.5 if specialtimes[0]=8 specialtimes[0]=0
+	atk=1 specialtimes[0]+=0.5 if specialtimes[0]=8 specialtimes[0]=0
+x+=specialtimes[1]
+y+=specialtimes[2]
+if x>oControl.camX+320 {x-=2 specialtimes[1]=-2}
+if x<oControl.camX {x+=2 specialtimes[1]=2}
+if !place_free(x,y-1) {specialtimes[2]=1 y+=1}
+if y>oControl.camY+240 {y-=1 specialtimes[2]=-1}
+
 } else { atk=0 sentflying=0}
 frame_set(5,1,0.05)
 frame_set(6,0,0.5)
@@ -132,14 +137,14 @@ if animFrame>7.5 {atk=0 canmove=1}
 }
 
 if anim=65
-{
+{atkcol_set(69,0,-98,4.45,1,139)
 sprite_index=spr_scientistm_attack5
-if animFrame=0 {specialcheck3=z+128}
+if animFrame=0 {specialcheck3=z-96}
 
-frame_set(0,0,0.1) if animFrame=clamp(animFrame,1,8) {zSpeed=-8 z=clamp(z,specialcheck3,0)}
+frame_set(0,0,0.1) if animFrame=clamp(animFrame,1,6) {zSpeed=-8 z=clamp(z,specialcheck3,0)}
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
-frame_set(3,3,0.1)
+frame_set(3,3,0.1) if animFrame=clamp(animFrame,3,3.5) atk=1 else atk=0
 frame_set(4,4,0.05)
 frame_set(5,3,0.1)
 frame_set(6,2,0.1)

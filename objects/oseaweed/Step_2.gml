@@ -13,10 +13,10 @@ if anim=10 ///Detect Attack
 //if x>__view_get( e__VW.XView, 0 ) and x<__view_get( e__VW.XView, 0 )+320
 {offScreen=0
 if distance_to_object(targetEnemy)<50
-anim=choose(11,11)
+anim=choose(11,12)
 else {
 if distance_to_object(targetEnemy)<100
-anim=13 else anim=12}
+anim=choose(13,14) else anim=choose(12,14)}
 }
 //else
 //{offScreen=1 anim=2}
@@ -72,6 +72,21 @@ frame_set(3,3,0.25)
 frame_set(4,2,0.25) if animFrame>4-0.25 {if specialcheck4!=8 {animFrame=2.25 specialcheck4+=1}}
 frame_set(5,1,0.1)
 if animFrame>5.5 canmove=1
+}
+
+if anim=14
+{sprite_index=spr_seaweed_attack4
+frame_set(0,0,0.1) damage=0.15 MoveType=1
+frame_set(1,1,0.1)
+frame_set(2,2,0.05) 
+
+
+frame_set(3,3,0.5) 
+frame_set(4,4,0.1)
+frame_set(5,5,0.1)
+frame_set(6,6,0.1)
+
+if animFrame>6.5 canmove=1
 }
 
 ///Intro

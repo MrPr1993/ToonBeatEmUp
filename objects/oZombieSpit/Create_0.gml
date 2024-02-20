@@ -29,3 +29,6 @@ hit=0
 
 zSpeed=-4
 
+bounce=0
+animLock=0
+

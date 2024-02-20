@@ -26,8 +26,8 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)<120
 
 
 if anim=11
-{
-//if animFrame=0  PlaySound(snd_twoheads3)
+{atkcol_set(58,0,0,3.55,1,75)
+if animFrame=0  PlaySound(choose(snd_dastardly20,snd_dastardly22))
 MoveType=1 damage=0.2
 sprite_index=spr_dastardly_attack1
 image_index=animFrame
@@ -43,10 +43,10 @@ if animFrame>4.5 {atk=0 canmove=1}
 }
 
 if anim=12 ///Air Kick
-{
+{atkcol_set(32,0,4,3.45,1,93)
 if animFrame=0 {specialtimes[0]=0}
 damage=0.2 MoveType=1
-sprite_index=spr_duck_attack2
+sprite_index=spr_dastardly_attack2
 sentflying=lerp(sentflying,0,0.1)
 frame_set(0,0,0.1) if animFrame=1
 {ground=0 z-=4 spdZ=-8 sentflying=3*image_xscale
@@ -60,9 +60,9 @@ frame_set(5,0,0.25)
 
 if anim=13 ///Air Kick
 {
-//if animFrame=0  {PlaySound(choose(snd_twoheads10,snd_twoheads3,snd_twoheads11))}
+if animFrame=0  {PlaySound(choose(snd_dastardly20,snd_dastardly12,snd_dastardly11))}
 damage=0.2 
-atkcol_set(29,0,-9,1.75,1,64)
+atkcol_set(12,0,-2,1.75,1,93)
 if animFrame<1 {atk=0 sprite_index=spr_dastardly_attack3 image_index=2 animFrame+=0.1}
 else if !ground {sprite_index=spr_dastardly_attack3 animFrame+=0.1 if animFrame>3 {sprite_index=spr_dastardly_attack3
 	if animFrame>3 {atk=1 image_index=1 sentflying=8*image_xscale zSpeed=8} else {atk=0 image_index=0 sentflying=0 zSpeed=0} }}
@@ -70,20 +70,20 @@ else {atk=0 sprite_index=spr_dastardly_attack3 image_index=2 sentflying=lerp(sen
 	animFrame+=0.1 if animFrame>8 canmove=1
 	}
 
-if animFrame=1 {ground=0 zSpeed=-16 sentflying=-4*image_xscale}
+if animFrame=1 {PlaySound(snd_dastardly10) ground=0 zSpeed=-16 sentflying=-4*image_xscale}
 
 }
 
 if anim=14 ///Rapid Fists
 {
 //if animFrame=0  PlaySound(snd_wolfita7)
-if animFrame=0 {specialtimes[0]=0}
+if animFrame=0 {specialtimes[0]=0 PlaySound(snd_dastardly14) }
 canbeGrabbed=0
 MoveType=1 damage=0.2
 sprite_index=spr_dastardly_attack4
 
 //atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=3.5*image_xscale selfatk.image_yscale=1
-	atkcol_set(48,0,3,2.5,1,96)
+atkcol_set(53,0,-2,3.55,1,115)
 	
 frame_set(0,0,0.5)
 frame_set(1,0,0.5)
@@ -106,28 +106,28 @@ if animFrame>7.5 {atk=0 canmove=1}
 if anim=65 ///Spin Kick
 {
 //if animFrame=0  PlaySound(snd_wolfita7)
-if animFrame=0 {specialtimes[0]=0}
+if animFrame=0 {specialtimes[0]=0 PlaySound(snd_dastardly16)}
 canbeGrabbed=0
 MoveType=1 damage=0.2
 sprite_index=spr_dastardly_attack5
 
 //atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=3.5*image_xscale selfatk.image_yscale=1
-	atkcol_set(48,0,3,2.5,1,96)
-	
-frame_set(0,0,1)
-frame_set(1,0,1)
-frame_set(2,0,1)
-frame_set(3,0,1) if animFrame=4 PlaySound(choose(snd_martianb4,snd_martianb5))
+atkcol_set(53,0,17,3.45,1,45)
+
+frame_set(0,0,0.25)
+frame_set(1,0,0.25)
+frame_set(2,0,0.25)
+frame_set(3,0,0.25) if animFrame=4 PlaySound(choose(snd_martianb4,snd_martianb5))
 frame_set(4,1+specialtimes[0],0.01)
 
 if animFrame=clamp(animFrame,4,4.99){
 	if !audio_is_playing(snd_swing5) PlaySound(snd_swing5)
 	atk=1 sentflying=1*image_xscale specialtimes[0]+=0.5 if specialtimes[0]=6 specialtimes[0]=0
 } else { atk=0 sentflying=0}
-frame_set(5,0,0.1)
+frame_set(5,0,0.25)
 if animFrame>4 specialtimes[0]+=0.25 if specialtimes[0]=9 specialtimes[0]=0 
-frame_set(6,0,1)
-frame_set(7,0,1)
+frame_set(6,0,0.25)
+frame_set(7,0,0.25)
 if animFrame>6.5 canbeGrabbed=1
 
 if animFrame>7.5 {atk=0 canmove=1}	
@@ -135,6 +135,7 @@ if animFrame>7.5 {atk=0 canmove=1}
 
 if anim=650 ///Cape Swing
 {
+atkcol_set(50,0,-3,3.15,1,95)
 //if animFrame=0  PlaySound(snd_twoheads3)
 MoveType=1 damage=0.2
 sprite_index=spr_dastardly_attack6
@@ -151,7 +152,7 @@ if animFrame>4.5 {atk=0 canmove=1}
 }
 
 if anim=6500 ///Fist Rocket
-{
+{PlaySound(choose(snd_dastardly17,snd_dastardly18))
 //if animFrame=0  PlaySound(snd_twoheads3)
 MoveType=1 damage=0.2
 sprite_index=spr_dastardly_attack7
@@ -162,7 +163,7 @@ frame_set(1,1,0.05)
 frame_set(2,2,0.25)
 if animFrame=clamp(animFrame,2,2.99){
 	///Fire
-	{projectile_create(x+66,y,z-61,32,spr_martianb_proj,4*image_xscale,mask_small,spr_hitflash,0.25,1,1,4,-4)
+	{projectile_create(x+66*image_xscale,y,z-61,32,spr_martianb_proj,4*image_xscale,mask_small,spr_hitflash,0.25,1,1,4,-4)
 oControl.quakeFX=10 PlaySound(snd_explosion)
 }
 } else { atk=0 }
@@ -173,7 +174,10 @@ if animFrame>4.5 {atk=0 canmove=1}
 
 if anim=65000 ///Laser Beam
 {
-if animFrame=0 {specialtimes[0]=0}
+atkcol_set(193,0,34,9.85,1,22)
+if animFrame=0 {specialtimes[0]=0
+	PlaySound(snd_dastardly19,snd_dastardly21)
+	}
 //if animFrame=0  PlaySound(snd_twoheads3)
 MoveType=8 damage=0.4
 sprite_index=spr_dastardly_attack8
@@ -182,6 +186,7 @@ atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=3.5*image_xscale selfatk.ima
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25) specialtimes[0]+=0.25 if specialtimes[0]=1.75 specialtimes[0]=0
+if animFrame=3 {PlaySound(snd_laserbeam) oControl.quakeFXTime=10}
 frame_set(3,3+specialtimes[0],0.005)
 if animFrame=clamp(animFrame,3,3.99){atk=1
 } else { atk=0 }
@@ -194,11 +199,15 @@ if animFrame>5.5 {atk=0 canmove=1}
 ///Intro
 if anim=100
 {
-if animFrame=0 sprite_index=spr_dastardly_seat
+if animFrame=0 {sprite_index=spr_dastardly_seat
+	PlaySound(snd_dastardly4)
+	}
 
 if specialanim=0
 {image_xscale=1 shadowSpr=mask_none
 animFrame+=0.01
+
+if animFrame=2 PlaySound(snd_dastardly5)
 
 if animFrame>4 {animFrame=0 specialanim+=1 ground=0 zSpeed=-4 z=-3}
 }
@@ -209,10 +218,10 @@ y+=2 x+=3 if animFrame>0.5
 if ground {animFrame=0 specialanim+=1}
 }
 if specialanim=2 ///part for powerup from the treasures
-{image_xscale=-1
+{image_xscale=-1 
 sprite_index=spr_dastardly_stand
-animFrame+=0.01
-if animFrame=5 {}///Laugh
+animFrame+=0.01 if animFrame=1 PlaySound(snd_dastardly6)
+if animFrame=5 {if animFrame=1 PlaySound(snd_dastardly7)}///Laugh
 if animFrame<5 {image_index=0} else {sprite_index=spr_dastardly_laugh if animFrame<10 image_index+=0.25}
 if animFrame>12 {canmove=1 animFrame=0}
 }
@@ -229,6 +238,9 @@ animFrame+=0.1 if animFrame>8 {animFrame=0 specialanim=1
 	{specialtimes[6]=0 image_index=0
 	sprite_index=spr_dastardly_explode PlaySound(snd_explosion) oControl.quakeFXTime=10
 	flashFX(x,y+1,0,spr_explosion,0,0.1,10,1,1,c_white,1) zSpeed=-2 ground=0 z=-2
+	
+	
+	
 	}
 	}
 }
@@ -240,7 +252,9 @@ if ground {animFrame=0 specialtimes[6]=0 specialanim=2}
 }
 if specialanim=2
 { 
-if animFrame=1 {sprite_index=spr_dastardly_die hspeed=choose(-4,4) vspeed=choose(-1,1)}
+if animFrame=1 {
+	PlaySound(snd_dastardly30)
+	sprite_index=spr_dastardly_die hspeed=choose(-4,4) vspeed=choose(-1,1)}
 animFrame+=0.01
 if specialtimes[6]=0 {specialtimes[6]=10 
 repeat(4){dust_make(x+choose(-random(64),random(64)),y+1,z-random(150),0,0,0) dustmk.sprite_index=spr_explosion3}} specialtimes[6]-=1
@@ -252,7 +266,9 @@ if x<oControl.camX {x+=4 hspeed=4}
 if !place_free(x,y-3) {vspeed=2 y+=2}
 if y>240 {y-=2 vspeed=-2}
 
-if animFrame>4 {animFrame=0 specialanim=3}
+if animFrame>4 {animFrame=0 specialanim=3
+	PlaySound(snd_dastardly31)
+	}
 }
 if specialanim=3
 {sprite_index=spr_dastardly_explode hspeed=0 vspeed=0

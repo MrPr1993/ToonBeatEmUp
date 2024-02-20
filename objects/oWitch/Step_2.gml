@@ -22,7 +22,7 @@ anim=11 else anim=12
 }
 
 if anim=11 ///Sumon Bone Fist
-{
+{if animFrame=0 {specialtimes[0]=0}
 sprite_index=spr_witch_attack1
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
@@ -38,7 +38,7 @@ frame_set(9,2,0.5) if animFrame=10
 bone=instance_create_depth(targetEnemy.x,targetEnemy.y,-1,oBossHazard)
 bone.hitSource=self.id
 }
-frame_set(10,3,0.25) //if animFrame=11
+frame_set(10,3,0.25) if animFrame=2.5 if specialtimes[0]!=2 {specialtimes[0]+=1 animFrame=9.5}
 frame_set(11,4,0.25)
 frame_set(12,3,0.25)
 frame_set(13,4,0.25)
