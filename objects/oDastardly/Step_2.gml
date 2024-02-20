@@ -106,7 +106,7 @@ if animFrame>7.5 {atk=0 canmove=1}
 if anim=65 ///Spin Kick
 {
 //if animFrame=0  PlaySound(snd_wolfita7)
-if animFrame=0 {specialtimes[0]=0 PlaySound(snd_dastardly16)}
+if animFrame=0 {specialtimes[0]=0}
 canbeGrabbed=0
 MoveType=1 damage=0.2
 sprite_index=spr_dastardly_attack5
@@ -117,7 +117,7 @@ atkcol_set(53,0,17,3.45,1,45)
 frame_set(0,0,0.25)
 frame_set(1,0,0.25)
 frame_set(2,0,0.25)
-frame_set(3,0,0.25) if animFrame=4 PlaySound(choose(snd_martianb4,snd_martianb5))
+frame_set(3,0,0.25) if animFrame=4 PlaySound(snd_dastardly16)
 frame_set(4,1+specialtimes[0],0.01)
 
 if animFrame=clamp(animFrame,4,4.99){
@@ -178,11 +178,9 @@ atkcol_set(193,0,34,9.85,1,22)
 if animFrame=0 {specialtimes[0]=0
 	PlaySound(snd_dastardly19,snd_dastardly21)
 	}
-//if animFrame=0  PlaySound(snd_twoheads3)
 MoveType=8 damage=0.4
 sprite_index=spr_dastardly_attack8
 image_index=animFrame
-atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=3.5*image_xscale selfatk.image_yscale=1
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25) specialtimes[0]+=0.25 if specialtimes[0]=1.75 specialtimes[0]=0
@@ -221,7 +219,7 @@ if specialanim=2 ///part for powerup from the treasures
 {image_xscale=-1 
 sprite_index=spr_dastardly_stand
 animFrame+=0.01 if animFrame=1 PlaySound(snd_dastardly6)
-if animFrame=5 {if animFrame=1 PlaySound(snd_dastardly7)}///Laugh
+if animFrame=5 {PlaySound(snd_dastardly7)}///Laugh
 if animFrame<5 {image_index=0} else {sprite_index=spr_dastardly_laugh if animFrame<10 image_index+=0.25}
 if animFrame>12 {canmove=1 animFrame=0}
 }

@@ -59,6 +59,8 @@ BurnSpr=spr_martian_burned
 FrozenSpr=spr_martian_burned
 hasDizzy=1 DizzySpr=spr_martian_dizzy
 
+	enemyIdle2=spr_martian_attack
+	enemyIdle3=spr_martian_attack
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
