@@ -30,7 +30,7 @@ weaponColScaleX=1.45
 weaponColScaleY=1
 weaponColScaleZ=15
 
-WspriteFX=spr_hitflash
+WspriteFX=spr_pieflash
 HitSound=snd_hit
 
 PickupSound=snd_getweapon

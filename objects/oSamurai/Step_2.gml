@@ -25,7 +25,7 @@ frame_set(4,0,0.25) if animFrame>4.5 canmove=1
 if anim=12
 {if animFrame=0 sprite_index=spr_samurai_charge damage=0.2
 atkcol_set(52,0,2,3.25,1,91) MoveType=1
-selfatk.isCut=1 selfatk.spriteFX=spr_blood selfatk.HitSound=snd_cut
+selfatk.isCut=1 selfatk.spriteFX=spr_blood2 selfatk.HitSound=snd_cut
 frame_set(0,0,0.25) 
 frame_set(1,1,0.025) if animFrame=2 {sprite_index=spr_samurai_attack PlaySoundNoStack(snd_swing5)}
 frame_set(2,2,0.25/2) if animFrame=clamp(animFrame,2,3) {sentflying=32*image_xscale atk=1

@@ -70,7 +70,7 @@ frame_set(4,3,0.1)
 	{
 	PlaySoundNoStack(snd_gun)
 	flashFX(x+42*image_xscale,y,z-57+13,spr_gunflash,0,1,0,1,1,c_white,1)
-	projectile_create(x+42*image_xscale,y,z-57+13,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile_create(x+42*image_xscale,y,z-57+13,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
 	}
 	sprite_index=spr_sofia_gunstand
 	if image_index<1 weaponanim(weaponspr,weaponIndex,6,-50+13,90*image_xscale,weaponcolor)
@@ -87,7 +87,7 @@ frame_set(4,3,0.1)
 		weaponLife-=1-1*global.CheatUnlock[10] PlaySound(snd_gun)
 		
 	flashFX(x+38*image_xscale,y,z-50,spr_gunflash,0,1,0,1,1,c_white,1)
-	projectile_create(x+38*image_xscale,y,z-50,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile_create(x+38*image_xscale,y,z-50,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
 	}
 		sprite_index=spr_sofia_handgun
 	
@@ -163,10 +163,10 @@ if animFrame>6.7 {canmove=1 anim=0}
 	}
 	if animFrame=0.25
 	{
-	projectile_create(x+42*image_xscale,y,z-57+13,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
-	projectile_create(x+42*image_xscale,y,z-57+13,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
+	projectile_create(x+42*image_xscale,y,z-57+13,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile_create(x+42*image_xscale,y,z-57+13,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
 	projectile.spdZ=-2
-	projectile_create(x+42*image_xscale,y,z-57+13,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
+	projectile_create(x+42*image_xscale,y,z-57+13,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
 	projectile.spdZ=2
 	}	
 	sprite_index=spr_sofia_gunstand if animFrame<1 atk=1 else atk=0

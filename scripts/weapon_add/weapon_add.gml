@@ -24,13 +24,13 @@ WswingSound=snd_swing5
 
 if wpadd="TASER"
 {
-weapon_setup(oTaser,spr_taser,0,100,0.15,2,1,3,snd_shocked,spr_hitflash,48,0,0,2,1,64)
+weapon_setup(oTaser,spr_taser,0,100,0.15,2,1,3,snd_swing,snd_shocked,48,0,0,2,1,64)
 }
 
 if wpadd="SCIMITAR"
 {
 weapon_setup(oScimitar,spr_scimitar,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,1,64)
-WspriteFX=spr_blood
+WspriteFX=spr_blood2
 }
 
 if wpadd="FISHING"
@@ -48,8 +48,10 @@ weapon_setup(oPickaxe,spr_pickaxe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,
 
 
 if wpadd="KNIFE"
+{
 weapon_setup(oKnife,spr_knife,0,50,0.05,2,2,0,snd_swing,snd_cut,37,0,45,1.45,1,15)
-
+WspriteFX=spr_blood
+}
 
 
 if wpadd="ONI CLUB"

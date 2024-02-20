@@ -86,7 +86,7 @@ depth=-y
 frame_set(0,0,0.2)
 frame_set(1,1,0.2) if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
 if animFrame=2 
-{oControl.quakeFXTime=10
+{oControl.quakeFXTime=10 PlaySound(snd_quakeground)
 dust_make(x-16,y+1,z,-2,0,0) dust_make(x+16,y+1,z,2,0,0)
 dust_make(x,y+2,z,0,1,0)
 }

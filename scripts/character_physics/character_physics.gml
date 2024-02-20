@@ -88,7 +88,9 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 	DeathCryOnce=1
 	PlaySoundNoStack(DeathCry)
 	if isEnemy=1
+	{itemdrop();
 	enemydeathcount()
+	}
 	}
 
 	if isBoss=1 ////Check if enemy is boss for the slow effect

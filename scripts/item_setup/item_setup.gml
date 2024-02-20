@@ -184,6 +184,14 @@ gravZAdd=0.45
 	WswingSound=snd_swing3
 	weaponSpin=1
     WhitDisappear=0
+	
+	weaponProjSpr=spr_bullet
+	weaponProjSpd=1
+	weaponProjHitSpr=spr_blood
+	weaponProjHitSpd=0.25
+	weaponProjSpd=4
+	weaponProjMask=mask_small
+
 
 	weapon_pal=0;
 	weapon_pal_sprite=spr_weaponpal
@@ -195,6 +203,8 @@ gravZAdd=0.45
 	waterhoverSpr=spr_waterhover
 	waterMax=0;
 	waterSplash=0;
+	
+	
 
 itemto=1;
 itemeffect=function(){}

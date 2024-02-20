@@ -23,8 +23,8 @@ anim=11 else anim=12
 
 if anim=11 ///Sumon Bone Fist
 {if animFrame=0 {specialtimes[0]=0}
-sprite_index=spr_witch_attack1
-frame_set(0,0,0.1)
+sprite_index=spr_witch_attack1 
+frame_set(0,0,0.1) if animFrame=1 PlaySound(choose(snd_witch3,snd_witch4,snd_witch7))
 frame_set(1,1,0.25)
 frame_set(2,2,0.5)
 frame_set(3,2,0.5)
@@ -50,7 +50,7 @@ if animFrame>15.75 {canmove=1 atk=0}
 if anim=12 ///Fire
 {
 sprite_index=spr_witch_attack4
-frame_set(0,0,0.1)
+frame_set(0,0,0.1) 
 frame_set(1,1,0.25)
 frame_set(2,2,0.5)
 frame_set(3,2,0.5)
@@ -131,7 +131,7 @@ if animFrame>2.75 {canmove=1 atk=0}
 ///Kick Away
 if anim=21 ///Bite Attack
 {
-//if animFrame=0  PlaySound(snd_wolfita7)
+if animFrame=0  PlaySound(choose(snd_witch8,snd_witch5))
 
 canbeGrabbed=0
 MoveType=2 damage=0.2
@@ -167,7 +167,7 @@ frame_set(3,3,0.1)
 frame_set(4,4,0.1)
 frame_set(5,5,0.05)
 frame_set(6,6,0.1)
-frame_set(7,7,0.01)
+frame_set(7,7,0.01) if animFrame=8 PlaySound(snd_witch9)
 frame_set(8,8,0.1)
 frame_set(9,9,0.05) if animFrame=10 {
 bowl=instance_create_depth(x+16*image_xscale,y+1,-1,oCameoChar) 
@@ -179,7 +179,7 @@ sprite_index=spr_witch_bowl anim=99 image_speed=0
 
 newscript=function()
 {z+=6
-if z>0 {
+if z>0 {PlaySound(snd_break)
 flashFX(x,y,z,sprite_index,1,0.5,99,image_xscale,1,c_white,1)
 instance_destroy();
 }
@@ -188,12 +188,12 @@ instance_destroy();
 }
 
 }
-frame_set(10,10,0.01)
+frame_set(10,10,0.01) if animFrame=11 PlaySound(snd_witch1)
 frame_set(11,11,0.1)
 frame_set(12,12,0.1)
 frame_set(13,13,0.01) if animFrame=14 sprite_index=spr_witch_attack1
 frame_set(14,0,0.1)
-if animFrame>14.5 {animFrame=0 specialanim=1 ground=0 zSpeed=-4 z=-3}
+if animFrame>14.5 {PlaySound(snd_jump) animFrame=0 specialanim=1 ground=0 zSpeed=-4 z=-3}
 
 }
 if specialanim=1 ///Hop

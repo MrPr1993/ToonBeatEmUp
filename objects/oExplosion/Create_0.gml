@@ -5,7 +5,7 @@ damage=0.3
 
 act=1
 
-image_speed=0.5
+image_speed=0.25
 
 z=0
 

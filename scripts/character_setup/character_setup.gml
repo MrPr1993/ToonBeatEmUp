@@ -154,6 +154,13 @@ stagePose=1
 	weaponColScaleZ=0
 	weaponCut=0
 	weaponSpin=1
+	weaponProjSpr=spr_bullet
+	weaponProjSpd=1
+	weaponProjHitSpr=spr_bullet
+	weaponProjHitSpd=spr_bullet
+	weaponProjSpd=4
+	weaponProjMask=mask_small
+	
 	WhitDisappear=0
 	armX=0
 	armY=0
@@ -509,5 +516,14 @@ stagePose=1
     wobbleY=1
 	
 chardraw=draw_enemy;
+treasureno=0
+itemID=-1
+itemdrop=function() {
+if itemID!=-1 {if itemID=oGemstone global.TreasureSet=treasureno _item=instance_create_depth(x,y,-1,itemID) _item.z=z-height/2 _item.ground=0 item.spdZ=-4
+	 
+	}
+
+
+}
 
 }

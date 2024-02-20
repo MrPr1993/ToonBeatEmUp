@@ -74,7 +74,7 @@ thrownPlayer=-1
 	else
 	{
 
-	flashFX(x-other.flashX*image_xscale,y+other.flashY,z-other.flashZ,spr_hitflash,0,1,5,1,1,c_white,1)
+	flashFX(x-other.flashX*image_xscale,y+other.flashY,z-other.flashZ,other.spriteFX,other.indexFX,other.speedFX,other.spriteTime,other.xScaleFX,other.yScaleFX,other.blendFX,other.alphaFX)
 
 
 	PlaySoundNoStack(other.HitSound)

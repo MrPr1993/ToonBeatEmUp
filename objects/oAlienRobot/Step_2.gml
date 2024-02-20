@@ -17,7 +17,7 @@ overwriteAttack3=1
 	if anim=11
 	{
 	selfatk.x=x+32*image_xscale	
-	
+	selfatk.spriteFX=spr_elecflash
 	 hit=0  sprite_index=AtkSpr
 MoveType=3 damage=0.2 if animFrame=0 {specialcheck0=0}
 	frame_set(0,0,0.1)
@@ -33,7 +33,7 @@ MoveType=3 damage=0.2 if animFrame=0 {specialcheck0=0}
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.1)
 	frame_set(2,2,0.05) if animFrame=3 {PlaySoundNoStack(snd_alien1)
-projectile_create(x+25*image_xscale,y,z-40,-32,spr_alienrobot_bullet,4*image_xscale,mask_small,spr_hitflash,0.05,0,2,0,0)
+projectile_create(x+25*image_xscale,y,z-40,-32,spr_alienrobot_bullet,4*image_xscale,mask_small,spr_hitflash2,0.05,0,2,0,0)
 		
 		}
 	frame_set(3,3,0.1) if animFrame=3.9 if specialcheck0!=4 {specialcheck0+=1 animFrame=2.9}

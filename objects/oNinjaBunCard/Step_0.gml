@@ -10,7 +10,7 @@ hspeed+=sidespeedadd
 
 depth=-y
 
-if x!=clamp(x,oControl.camX-16,oControl.camX+320+16)
+if x!=clamp(x,oControl.camX-sprite_get_width(sprite_index)/2,oControl.camX+320+sprite_get_width(sprite_index)/2)
 instance_destroy()
 
 if ground if hit=0 {hit=1 alarm[2]=20 image_index=1}

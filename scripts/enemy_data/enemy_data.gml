@@ -113,5 +113,7 @@ drawarms=0;
 	///Throw Frame Setup
 	///spritepos_setup(1,0,0,0)
 
+if oControl.betatest=1 if keyboard_check(vk_space) and keyboard_check(ord("Z"))
+itemID=choose(oPizza,oGemstone,o1up,oBomb)
 
 }

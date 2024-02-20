@@ -4,7 +4,7 @@ function hitFXreset() {
 	spamatk=0
 	Gatk=0
 	HitSound=snd_hit
-	spriteFX=spr_hitflash
+	spriteFX=spr_hitflash2
 	indexFX=0
 	isDepth=1
 	animEnd=0

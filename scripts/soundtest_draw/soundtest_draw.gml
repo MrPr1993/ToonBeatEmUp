@@ -10,9 +10,9 @@ draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
 
 if keyboard_check_pressed(vk_escape) {room_goto(rm_menu) settings_save()}
 
-matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1+0.01*recordscale,1-0.01*recordscale,1))
+matrix_set(matrix_world,matrix_build(160,163-1,0,85,0,0,1+0.01*recordscale,1-0.07*recordscale,1))
 draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,0,c_black,1)
-matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1+0.01*recordscale,1-0.01*recordscale,1))
+matrix_set(matrix_world,matrix_build(160,163-3,0,85,0,0,1+0.01*recordscale,1-0.07*recordscale,1))
 draw_sprite_ext(spr_soundtestrec,0,0,0,1,1,recordAng,image_blend,1)
 matrix_set(matrix_world,matrix_build(234,152,0+0.05*cos(recordAng),85,0,0,1,1,1))
 

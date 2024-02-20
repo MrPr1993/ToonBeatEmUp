@@ -22,7 +22,7 @@ atkcol_set(211,0,39,13.15,1,19)
 	}
 
 	sprite_index=spr_robot_chest damage=0.2
-
+selfatk.spriteFX=spr_elecflash
 selfatk.HitSound=snd_shocked
 
 	frame_set(0,0,0.25)

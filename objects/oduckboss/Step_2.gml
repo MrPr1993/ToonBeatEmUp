@@ -41,7 +41,7 @@ if animFrame=5 if specialtimes[4]<160 {animFrame=2}
 
 if animFrame=clamp(animFrame,2,4.9) {atk=1
 	sentflying=8*image_xscale oControl.quakeFXTime=10
-	dust_make(x,y+1,z,-1*image_xscale,1,1)
+	dust_make(x,y+1,z,-2*image_xscale,0,0)
 
 if x!=clamp(x,oControl.camX-48-sprite_get_width(mask_index)/2,oControl.camX+48+320+sprite_get_width(mask_index)/2)
 {y=targetY

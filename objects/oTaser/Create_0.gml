@@ -27,7 +27,7 @@ weaponColScaleX=1.45*1.5
 weaponColScaleY=1
 weaponColScaleZ=15
 
-WspriteFX=spr_hitflash
+WspriteFX=spr_elecflash
 HitSound=snd_shocked
 
 PickupSound=snd_getweapon

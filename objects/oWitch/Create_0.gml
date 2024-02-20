@@ -4,7 +4,10 @@ name="KIANDRA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=32
 
-
+	DeathCry=snd_witch10//snd_deathcry2
+	DamageVoice1=snd_witch9
+	DamageVoice2=snd_witch9
+	DamageVoice3=snd_witch9
 
 enemyscript=animsetup_enemy
 
@@ -50,6 +53,8 @@ FrozenSpr=spr_witch_frozen
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+isBoss=1
+specialBossState=1
 
 if oControl.betatest=1
 if keyboard_check(vk_shift)

@@ -22,6 +22,7 @@ weaponExtraAngle=270
 weaponIsGun=1
 weaponLife=6
 
+weaponProjSpr=spr_harpoonbullet
 PickupSound=snd_getweapon
 
 

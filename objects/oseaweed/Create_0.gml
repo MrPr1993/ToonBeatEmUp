@@ -43,6 +43,9 @@ ShockSpr=spr_seaweed_elec
 BurnSpr=spr_seaweed_burned
 FrozenSpr=spr_seaweed_frozen
 
+isBoss=1
+specialBossState=1
+
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
