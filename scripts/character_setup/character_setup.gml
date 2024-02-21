@@ -519,7 +519,7 @@ chardraw=draw_enemy;
 treasureno=0
 itemID=-1
 itemdrop=function() {
-if itemID!=-1 {if itemID=oGemstone global.TreasureSet=treasureno _item=instance_create_depth(x,y,-1,itemID) _item.z=z-height/2 _item.ground=0 item.spdZ=-4
+if itemID!=-1 {if itemID=oGemstone global.TreasureSet=treasureno _item=instance_create_depth(x,y,-1,itemID) _item.z=z-height/2 _item.ground=0 _item.spdZ=-4
 	 
 	}
 

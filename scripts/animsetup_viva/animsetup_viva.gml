@@ -365,7 +365,7 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 	}
 	if anim=14 ///Attack Stand 5
 	{selfatk.NoKnock=0 dizzyAtk=0
-
+selfatk.spriteFX=spr_hitflash
 	atkcol_set(31,0,44,1.35,1,46)
 
 	if animFrame=0.2 {PlaySound(snd_swing) PlaySound(snd_viva4)}
@@ -390,7 +390,7 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 
 	if anim=15 ///Attack Air - and Forwards Attack Ait
 	{selfatk.NoKnock=0 dizzyAtk=0
-	
+	selfatk.spriteFX=spr_hitflash
 	if animFrame=0 
 	{
 	if -key_left or key_right sentflying=2*image_xscale
@@ -479,7 +479,7 @@ selfatk.recovery=30
 
 
 	sprite_index=spr_viva_runatk
-
+selfatk.spriteFX=spr_hitflash
 	image_index=animFrame image_speed=0
 	 if animFrame>1 atk=1 else atk=0
 	 animFrame+=0.5 animFrame=clamp(animFrame,0,1.5)
@@ -489,7 +489,7 @@ selfatk.recovery=30
 
 
 	if anim=17 ///Stand Special Attack
-	{selfatk.NoKnock=1 dizzyAtk=0
+	{selfatk.NoKnock=1 dizzyAtk=0 selfatk.spriteFX=spr_hitflash
 	if animFrame=0 {PlaySound(snd_viva5)
 	   } 
 
@@ -588,7 +588,7 @@ selfatk.recovery=30
 	if animFrame=30 {
 			selfatk.HitForce=-4  selfatk.HitForceZ=-4
 		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66,spr_lightingbolt,0,0.5,0,1,1,c_white,1)
-		selfatk.MoveType=3
+		selfatk.spriteFX=spr_elecflash selfatk.MoveType=3
 		}
 	if sprite_index=spr_viva_special2b {selfatk.MoveType=3 selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
 

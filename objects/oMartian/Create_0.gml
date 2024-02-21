@@ -65,6 +65,6 @@ hasDizzy=1 DizzySpr=spr_martian_dizzy
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
-spritepos_setup(1,24,2,40)
+spritepos_setup(1,24,3,54)
 spritepos_setup(2,6,1,0)
-spritepos_setup(2,24,2,64)
+spritepos_setup(2,24,9,83)

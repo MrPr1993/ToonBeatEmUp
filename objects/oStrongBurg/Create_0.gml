@@ -64,3 +64,5 @@ frame_set(1,1,0.1)
 if animFrame>1.9 animFrame=0
 }
 
+spritepos_setup(1,24,7,40)
+spritepos_setup(1,24,19,97)

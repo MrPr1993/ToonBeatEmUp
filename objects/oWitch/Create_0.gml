@@ -56,6 +56,9 @@ my_pal_sprite=spr_zombiepal
 isBoss=1
 specialBossState=1
 
+spritepos_setup(1,24,5,53)
+spritepos_setup(2,24,14,81)
+
 if oControl.betatest=1
 if keyboard_check(vk_shift)
 {

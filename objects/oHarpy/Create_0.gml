@@ -39,7 +39,7 @@ OneAttack=2
 hp=2
 maxhp=2
 
-height=96
+height=104
 
 specialFX=0
 

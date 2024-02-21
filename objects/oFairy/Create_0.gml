@@ -51,3 +51,6 @@ hasDizzy=1 DizzySpr=spr_fairy_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_fairypal
+
+spritepos_setup(1,24,-1,47)
+spritepos_setup(2,24,-2,65)

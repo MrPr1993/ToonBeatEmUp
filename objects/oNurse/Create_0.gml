@@ -50,3 +50,6 @@ hasDizzy=1 DizzySpr=spr_nurse_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal
+
+spritepos_setup(1,24,3,46)
+spritepos_setup(2,24,7,64)

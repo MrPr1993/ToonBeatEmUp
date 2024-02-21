@@ -54,6 +54,9 @@ specialBossState=1
 
 shadowSpr=spr_midshadow
 
+spritepos_setup(1,24,4,39)
+spritepos_setup(2,24,37,69)
+
 if oControl.betatest=1
 {if keyboard_check(vk_control) {canmove=0 anim=100 specialanim=0}
 	

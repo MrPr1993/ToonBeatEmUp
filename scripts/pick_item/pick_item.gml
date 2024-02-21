@@ -92,6 +92,13 @@ if item.PickupSound!=-1
 	WswingSound=item.WswingSound
 	WhitDisappear=item.WhitDisappear
     weaponSpin=item.weaponSpin
+	
+	weaponProjSpr=item.weaponProjSpr
+	weaponProjSpd=item.weaponProjSpd
+	weaponProjHitSpr=item.weaponProjHitSpr
+	weaponProjHitSpd=item.weaponProjHitSpd
+	weaponProjSpd=item.weaponProjSpd
+	weaponProjMask=item.weaponProjMask
 
 	}else if item.food=0 spawnID=-1
 	hp+=item.hp*maxhp//extraheal

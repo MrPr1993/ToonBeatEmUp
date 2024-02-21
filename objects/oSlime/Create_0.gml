@@ -18,9 +18,14 @@ OneAttack=2
 hp=0.4
 maxhp=0.4
 
-height=70
+height=90
 
 specialFX=0
+
+DamageVoice1=snd_femenemy7
+DamageVoice2=snd_femenemy7
+DamageVoice3=snd_femenemy7
+DeathCry=snd_femenemy2
 
 StandSpr=spr_slime_stand
 MoveSpr=spr_slime_move
@@ -47,3 +52,6 @@ FrozenSpr=spr_slime_frozen
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
+
+spritepos_setup(1,24,11,61)
+spritepos_setup(2,24,11,91)

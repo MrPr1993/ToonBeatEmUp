@@ -55,3 +55,6 @@ current_pal=0;
 my_pal_sprite=spr_dancerpal
 
 weapon_add("SCIMITAR")
+
+spritepos_setup(1,24,1,50) ///Waist, Frame 24
+spritepos_setup(2,24,1,74) ///Head, Frame 24

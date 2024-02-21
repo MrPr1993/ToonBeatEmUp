@@ -53,6 +53,8 @@ FrozenSpr=spr_prince_frozen
 isBoss=1
 specialBossState=1
 
+spritepos_setup(1,24,5,58)
+spritepos_setup(2,24,1,96)
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

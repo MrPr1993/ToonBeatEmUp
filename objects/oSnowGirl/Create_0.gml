@@ -62,3 +62,5 @@ FrontSpr=spr_snowgirl_front
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+spritepos_setup(1,24,1,37)
+spritepos_setup(2,24,12,79)

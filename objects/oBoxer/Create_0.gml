@@ -56,7 +56,7 @@ cutSpr2=spr_boxer_cut2
 
 current_pal=2;
 my_pal_sprite=spr_boxerpal
-
+spritepos_setup(1,24,3,53)
 spritepos_setup(2,24,-12,93)
 
 //isIdle=1

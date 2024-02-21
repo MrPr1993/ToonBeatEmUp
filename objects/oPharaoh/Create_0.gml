@@ -15,7 +15,7 @@ DamageVoice3=snd_pharaoh12
 DeathCry=snd_pharaoh1
 HitGround=snd_hitground
 
-
+idlestyle=1
 coffinRecharge=0
 summonRecharge=0
 atkChoices=0

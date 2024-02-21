@@ -53,3 +53,6 @@ hasDizzy=1 DizzySpr=spr_shroom_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_playerpal
+
+spritepos_setup(1,24,6,26) ///Waist, Frame 24
+spritepos_setup(2,24,8,48) ///Head, Frame 24

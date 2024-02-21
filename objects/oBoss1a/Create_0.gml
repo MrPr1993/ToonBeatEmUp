@@ -50,6 +50,6 @@ DamageVoice3=snd_hwolf2
 
 DeathCry=snd_hwolf1
 
-
+spritepos_setup(1,24,0,32)
 spritepos_setup(2,24,0,67)
 

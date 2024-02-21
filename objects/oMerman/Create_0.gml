@@ -63,4 +63,5 @@ hasDizzy=1 DizzySpr=spr_merman_dizzy
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
-
+spritepos_setup(1,24,3,44)
+spritepos_setup(2,24,15,73)

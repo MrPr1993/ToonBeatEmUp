@@ -52,6 +52,8 @@ FrozenSpr=spr_duck_frozen
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+spritepos_setup(1,24,3,58)
+spritepos_setup(2,24,21,86)
 
 if oControl.betatest=1
 {if keyboard_check(vk_control) canmove=0 anim=100}

@@ -326,7 +326,7 @@ weaponanim(weaponspr,weaponIndex,13,-35,84*image_xscale,weaponcolor)
 	}
 	if anim=13 ///Attack Stand 4
 	{selfatk.NoKnock=0 dizzyAtk=0
-
+selfatk.spriteFX=spr_hitflash
 	comboBreak=1
 	flashX=12
 	flashY=2
@@ -380,7 +380,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	}
 
 	if anim=15 ///Attack Air - and Forwards Attack Ait
-	{selfatk.NoKnock=0 dizzyAtk=0
+	{selfatk.NoKnock=0 dizzyAtk=0 selfatk.spriteFX=spr_hitflash
 	if animFrame=0 
 	{
 	PlaySound(snd_swing) 
@@ -409,7 +409,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 
 	////Change your attack colission box
 
-
+selfatk.spriteFX=spr_hitflash
 
 
 	if sprite_index=spr_bahati_attackair
@@ -457,7 +457,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 
 	if !ground
 	{
-
+selfatk.spriteFX=spr_hitflash
 	if sprite_index=spr_bahati_attackair2
 	{if animFrame<5.5 animFrame+=0.5
 
@@ -507,7 +507,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	}
 
 	if anim=16 ///Attack Dash
-	{selfatk.NoKnock=0 dizzyAtk=0
+	{selfatk.NoKnock=0 dizzyAtk=0 selfatk.spriteFX=spr_hitflash
 	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_bahati5) MoveType=1
 	ground=0 //sentflying=4*image_xscale zSpeed=-4
 	}sprite_index=spr_bahati_slide
@@ -543,7 +543,7 @@ if animFrame=clamp(animFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 
 
 	if anim=17 ///Stand Special Attack
-	{selfatk.NoKnock=1 dizzyAtk=0
+	{selfatk.NoKnock=1 dizzyAtk=0 selfatk.spriteFX=spr_hitflash
 	if animFrame=0 {PlaySound(snd_hitground) PlaySound(snd_bahati12)
 		
 		flashFX(x,y+1,z-1,spr_bahati_special1b,0,0.5,0,image_xscale,image_yscale,image_blend,image_alpha)
@@ -614,7 +614,7 @@ part.current_pal=current_pal
 	///Special Attacks
 	if anim=18 ///Special Side Attack
 	{selfatk.NoKnock=1 dizzyAtk=0
-	weaponBack=2
+	weaponBack=2 selfatk.spriteFX=spr_hitflash
 	canSuper=1
 	comboBreak=0
 	flashX=6

@@ -55,3 +55,6 @@ DizzySpr=spr_bear_dizzy hasDizzy=1
 
 current_pal=0;
 my_pal_sprite=spr_bearpal
+
+spritepos_setup(1,24,4,20)
+spritepos_setup(1,24,4,44)

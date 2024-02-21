@@ -56,6 +56,6 @@ hasDizzy=1 DizzySpr=spr_plant_dizzy
 current_pal=0;
 my_pal_sprite=spr_plantpal
 
-spritepos_setup(1,24,-5,25)
+spritepos_setup(1,24,4,37)
 spritepos_setup(2,6,0,2)
-spritepos_setup(2,24,-4,80)
+spritepos_setup(2,24,10,70)

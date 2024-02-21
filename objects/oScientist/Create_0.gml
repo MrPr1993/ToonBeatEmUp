@@ -52,6 +52,8 @@ my_pal_sprite=spr_zombiepal
 isBoss=1
 specialBossState=1
 
+spritepos_setup(1,24,2,48)
+spritepos_setup(2,24,42,82)
 
 if oControl.betatest if keyboard_check(vk_control) {canmove=0 anim=100
 	

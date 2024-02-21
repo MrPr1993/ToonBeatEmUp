@@ -56,3 +56,6 @@ hasDizzy=1 DizzySpr=spr_diver_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal
+
+spritepos_setup(1,24,6,38)
+spritepos_setup(2,24,13,63)

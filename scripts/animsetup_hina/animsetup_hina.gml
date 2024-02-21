@@ -355,7 +355,7 @@ weaponanim(weaponspr,weaponIndex,-17,-46,144*image_xscale,weaponcolor)
 	}
 	if anim=14 ///Attack Stand 5
 	{selfatk.NoKnock=0 dizzyAtk=0
-
+selfatk.spriteFX=spr_hitflash
 	atkcol_set(65,0,47,2.95,1,44)
 
 	comboBreak=1
@@ -378,7 +378,7 @@ weaponanim(weaponspr,weaponIndex,-17,-46,144*image_xscale,weaponcolor)
 	}
 
 	if anim=15 ///Attack Air - and Forwards Attack Ait
-	{selfatk.NoKnock=0 dizzyAtk=0
+	{selfatk.NoKnock=0 dizzyAtk=0 
 	if animFrame=0 
 	{
 	if -key_left or key_right sentflying=2*image_xscale
@@ -402,9 +402,9 @@ weaponanim(weaponspr,weaponIndex,-17,-46,144*image_xscale,weaponcolor)
 	atkAddY=0
 	selfatk.image_xscale=1.4
 	selfatk.image_yscale=1
-
+selfatk.spriteFX=spr_hitflash
 	if sprite_index=spr_hina_attackair
-	{ weaponBack=0
+	{ weaponBack=0 
 	if image_index<1
 	weaponanim(weaponspr,weaponIndex,2,-41,90*image_xscale,weaponcolor)
 	else
@@ -449,7 +449,7 @@ weaponanim(weaponspr,weaponIndex,32,-70,90*image_xscale,weaponcolor)
 	}
 
 	if anim=16 ///Attack Dash
-	{
+	{selfatk.spriteFX=spr_hitflash
 	selfatk.NoKnock=0 dizzyAtk=0
 
 	weaponanim(weaponspr,weaponIndex,111111,-34,76*image_xscale,weaponcolor)

@@ -53,3 +53,6 @@ DizzySpr=spr_spacer_dizzy hasDizzy=1
 
 current_pal=0;
 my_pal_sprite=spr_fairypal
+
+spritepos_setup(1,24,3,40)
+spritepos_setup(1,24,13,66)

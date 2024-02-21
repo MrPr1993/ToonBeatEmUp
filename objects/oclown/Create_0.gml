@@ -49,3 +49,6 @@ hasDizzy=1 DizzySpr=spr_clown_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_bearpal
+
+spritepos_setup(1,24,5,61) ///Waist, Frame 24
+spritepos_setup(2,24,12,85) ///Head, Frame 24

@@ -21,7 +21,7 @@ OneAttack=2
 hp=2
 maxhp=2
 
-height=70
+height=80
 
 HitGround=snd_hitground
 isBoss=1
