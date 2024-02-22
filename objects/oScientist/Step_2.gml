@@ -103,7 +103,7 @@ if animFrame>17.75 {canmove=1 atk=0}
 if anim=14 //Spin Attack
 {
 //if animFrame=0  PlaySound(snd_wolfita7)
-if animFrame=0 {specialtimes[0]=0 specialtimes[1]=choose(-2,2) specialtimes[2]=choose(-1,1)}
+if animFrame=0 {specialtimes[0]=0 specialtimes[1]=choose(-4,4) specialtimes[2]=choose(-2,2)}
 canbeGrabbed=0
 MoveType=1 damage=0.2 isCut=1 HitSound=snd_cut selfatk.HitSpark=spr_blood
 sprite_index=spr_scientistm_attack4
@@ -122,10 +122,10 @@ if animFrame=clamp(animFrame,4,4.99){
 	atk=1 specialtimes[0]+=0.5 if specialtimes[0]=8 specialtimes[0]=0
 x+=specialtimes[1]
 y+=specialtimes[2]
-if x>oControl.camX+320 {x-=2 specialtimes[1]=-2}
-if x<oControl.camX {x+=2 specialtimes[1]=2}
-if !place_free(x,y-1) {specialtimes[2]=1 y+=1}
-if y>oControl.camY+240 {y-=1 specialtimes[2]=-1}
+if x>oControl.camX+320 {x-=4 specialtimes[1]=-4}
+if x<oControl.camX {x+=4 specialtimes[1]=4}
+if !place_free(x,y-1) {specialtimes[2]=2 y+=1}
+if y>oControl.camY+240 {y-=1 specialtimes[2]=-2}
 
 } else { atk=0 sentflying=0}
 frame_set(5,1,0.05)

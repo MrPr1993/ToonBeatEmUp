@@ -67,7 +67,9 @@ if animFrame=0 {specialtimes[0]=8
 	
 	
 	}
-if animFrame<0.75 {sentflying=0 atk=0 animFrame+=0.01 if animFrame>0.08
+if animFrame<0.75 {sentflying=0 atk=0 animFrame+=0.01
+	if animFrame=0.75 PlaySoundNoStack(snd_carengine3)
+	if animFrame>0.08
 	{x+=specialtimes[0]*image_xscale specialtimes[0]=lerp(specialtimes[0],0,0.1) 
 		image_index=0
 		//sentflying-=0.0001*image_xscale
@@ -88,7 +90,7 @@ if animFrame<0.75 {sentflying=0 atk=0 animFrame+=0.01 if animFrame>0.08
 var getv=oControl.camX//__view_get( e__VW.XView, 0);
 
 if x!=clamp(x,getv-128,getv+320+128 )
-{
+{PlaySoundNoStack(snd_carengine2)
 if image_xscale=1 {x=getv+320 x+=32} else {x=getv x-=32}
 
 	image_xscale=-image_xscale animFrame=0  y=targetEnemy.y}

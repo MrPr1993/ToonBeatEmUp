@@ -11,7 +11,7 @@ if other.immune=0 and other.hurt=0 and other.recovery=0 and other.Throw=0
 if other.x>xstart {other.HitForceReact=2}
 else {other.HitForceReact=-2}
 with other
-{PlaySoundNoStack(snd_hit) 
+{PlaySoundNoStack(snd_melthit) 
 	HitForceReactZ=-4
 HitType=44 event_user(0) recovery=10 dizzyHit=0  hp-=0.1
 }

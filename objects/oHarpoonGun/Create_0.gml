@@ -1,6 +1,6 @@
 item_setup()
 
-name="HAND GUN"
+name="HARPOON"
 
 itemCentered=1
 hp=0
@@ -24,6 +24,7 @@ weaponLife=6
 
 weaponProjSpr=spr_harpoonbullet
 PickupSound=snd_getweapon
+weaponProjHitSnd=snd_cut
 
 
 

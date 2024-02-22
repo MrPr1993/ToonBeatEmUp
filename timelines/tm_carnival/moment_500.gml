@@ -111,7 +111,7 @@ boss.z=-200 boss.anim=100 boss.animFrame=0 boss.ground=0 boss.canmove=0
 }
 
 if specialSet6=240
-{
+{oControl.MusicFade=0 oControl.MusicFade=0 oControl.MusicFadeAdd=1
 musicplaystart(msc_boss3)
 oControl.bossID=oDuckBoss
 

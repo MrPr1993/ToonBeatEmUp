@@ -19,20 +19,43 @@
 if oPlayer.ground and oPlayer.canmove
 {timer_set(0)
 
-oControl.quakeFXTime=10
+PlaySound(snd_shrink)
 	
-with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=999999 image_index=0 sprite_index=qSandSpr}
-with oShadowFX visible^=1
+with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=0}
+//with oShadowFX visible^=1
 quicksnd=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oWaterFX) with quicksnd
-{z=0 image_xscale=88888 image_yscale=77777}
+{z=0 image_xscale=88888 image_yscale=77777
+	
+	
+	}
 quicksnd2=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oTrainFXSpot) with quicksnd2
 {z=0 image_xscale=88888 image_yscale=77777}
 
 sandstorm=instance_create_depth(0,0,-1,oCameoChar)
 with oControl MusicFade=1
 
-with sandstorm {newscript=function()
+with sandstorm {z=-240 ground=0 specialcheck[6]=0
+	specialcheck[7]=0
+p1=instance_create_depth(oControl.p1.x,oControl.p1.y+1,-1,oCameoChar) with p1 {sprite_index=spr_mermaidcage z=-240 anim=9999}
+p2=instance_create_depth(oControl.p2.x,oControl.p2.y+1,-1,oCameoChar) with p2 {sprite_index=spr_mermaidcage z=-240 anim=9999}
+p3=instance_create_depth(oControl.p3.x,oControl.p3.y+1,-1,oCameoChar) with p3 {sprite_index=spr_mermaidcage z=-240 anim=9999}
+p4=instance_create_depth(oControl.p4.x,oControl.p4.y+1,-1,oCameoChar) with p4 {sprite_index=spr_mermaidcage z=-240 anim=9999}
+
+	
+	newscript=function()
 {specialcheck[8]+=0.5
+p1.z=z p2.z=z p3.z=z p4.z=z
+
+specialcheck[7]+=0.45
+
+if ground=0
+{
+z+=specialcheck[7]
+
+if z>0 {z=0 ground=1 specialcheck[6]=1
+	oControl.quakeFXTime=10 PlaySound(snd_hitgroundmetal)
+	}
+}
 
 with oPlayer
 {
@@ -40,9 +63,12 @@ weaponanim(weaponspr,weaponIndex,99999,99999,0,c_white)
 areaEntry=1
 }
 
-if specialcheck[8]=52
-{with oPlayer
-	{sprite_index=mask_none
+if specialcheck[6]=1
+{specialcheck[6]=2
+	with oPlayer
+	{
+	event_user(11)
+	anim=99999 sprite_index=ThrownSpr image_index=24
 	
 	dust_make(x,y,0,1,0,0)
 dust_make(x,y,0,-1,0,0)

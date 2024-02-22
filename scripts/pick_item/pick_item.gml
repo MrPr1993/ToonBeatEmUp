@@ -99,6 +99,13 @@ if item.PickupSound!=-1
 	weaponProjHitSpd=item.weaponProjHitSpd
 	weaponProjSpd=item.weaponProjSpd
 	weaponProjMask=item.weaponProjMask
+	weaponProjSnd=item.weaponProjSnd
+	weaponProjHitSnd=item.weaponProjHitSnd
+	
+	
+	weaponProjFlashSpr=item.weaponProjFlashSpr
+	weaponProjTimes=item.weaponProjTimes ///machine Gun Only
+	weaponProjEndDelay=item.weaponProjEndDelay
 
 	}else if item.food=0 spawnID=-1
 	hp+=item.hp*maxhp//extraheal

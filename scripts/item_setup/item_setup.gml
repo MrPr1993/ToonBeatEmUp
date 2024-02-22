@@ -186,11 +186,17 @@ gravZAdd=0.45
     WhitDisappear=0
 	
 	weaponProjSpr=spr_bullet
+	weaponProjFlashSpr=spr_gunflash
+	weaponProjTimes=3 ///machine Gun Only
+	weaponProjEndDelay=0.1
+	
 	weaponProjSpd=1
 	weaponProjHitSpr=spr_blood
 	weaponProjHitSpd=0.25
 	weaponProjSpd=4
 	weaponProjMask=mask_small
+	weaponProjSnd=snd_gun
+	weaponProjHitSnd=snd_hit
 
 
 	weapon_pal=0;

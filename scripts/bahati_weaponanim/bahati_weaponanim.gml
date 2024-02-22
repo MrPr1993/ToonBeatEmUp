@@ -65,9 +65,10 @@ frame_set(4,3,0.1)
 	if animFrame=0
 	or animFrame=0.8 or animFrame=1.6 or animFrame=2.4  or animFrame=3.2
 	{
-	PlaySoundNoStack(snd_gun)
-	flashFX(x+42*image_xscale,y,z-57,spr_gunflash,0,1,0,1,1,c_white,1)
-	projectile_create(x+42*image_xscale,y,z-57,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	PlaySoundNoStack(weaponProjSnd)
+	flashFX(x+42*image_xscale,y,z-57,weaponProjFlashSpr,0,1,0,1,1,c_white,1)
+	projectile_create(x+42*image_xscale,y,z-57,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile.HitSound=weaponProjHitSnd
 	}
 	sprite_index=spr_bahati_gunstand
 	if image_index<1 weaponanim(weaponspr,weaponIndex,6,-50,90*image_xscale,weaponcolor)
@@ -81,10 +82,11 @@ frame_set(4,3,0.1)
 	{
 	if animFrame=0 {
 		if -key_left image_xscale=-1 if key_right image_xscale=1
-		weaponLife-=1-1*global.CheatUnlock[10] PlaySound(snd_gun)
+		weaponLife-=1-1*global.CheatUnlock[10] PlaySound(weaponProjSnd)
 		
-	flashFX(x+38*image_xscale,y,z-50,spr_gunflash,0,1,0,1,1,c_white,1)
-	projectile_create(x+38*image_xscale,y,z-50,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	flashFX(x+38*image_xscale,y,z-50,weaponProjFlashSpr,0,1,0,1,1,c_white,1)
+	projectile_create(x+38*image_xscale,y,z-50,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile.HitSound=weaponProjHitSnd
 	}
 		sprite_index=spr_bahati_handgun
 	
@@ -133,7 +135,7 @@ if animFrame>6.7 {canmove=1 anim=0}
 	if animFrame=0 weaponLife-=1-1*global.CheatUnlock[10]
 	if animFrame=0
 	{
-	PlaySoundNoStack(snd_laserbeam)
+	PlaySoundNoStack(weaponProjSnd)
 	flashFX(x+42*image_xscale,y,z-57,spr_icelaserfx,0,0.25,0,image_xscale,1,c_white,1)}
 	sprite_index=spr_bahati_gunstand
 	atkcol_set(207,0,48,9.65,1,17) 
@@ -153,16 +155,17 @@ if animFrame>6.7 {canmove=1 anim=0}
 	if animFrame=0 weaponLife-=1-1*global.CheatUnlock[10]
 	if animFrame=0 
 	{ atk=1
-	PlaySoundNoStack(snd_shotgun)
-	flashFX(x+42*image_xscale,y,z-57,spr_shotgunfx,0,1,0,image_xscale,1,c_white,1)
+	PlaySoundNoStack(weaponProjSnd)
+	flashFX(x+42*image_xscale,y,z-57,weaponProjFlashSpr,0,1,0,image_xscale,1,c_white,1)
 	}
 	if animFrame=0.25
 	{
-	projectile_create(x+42*image_xscale,y,z-57,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
-	projectile_create(x+42*image_xscale,y,z-57,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
-	projectile.spdZ=-2
-	projectile_create(x+42*image_xscale,y,z-57,-8,spr_bullet,4*image_xscale,mask_small,spr_blood,0.1,weaponHitType,weapontargetHeight,0,0)
-	projectile.spdZ=2
+	projectile_create(x+42*image_xscale,y,z-57,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile.HitSound=weaponProjHitSnd
+	projectile_create(x+42*image_xscale,y,z-57,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile.spdZ=-2 projectile.HitSound=weaponProjHitSnd
+	projectile_create(x+42*image_xscale,y,z-57,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile.spdZ=2 projectile.HitSound=weaponProjHitSnd
 	}	
 	sprite_index=spr_bahati_gunstand if animFrame<1 atk=1 else atk=0
 	frame_set(0,2,0.25)

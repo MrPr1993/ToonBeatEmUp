@@ -155,11 +155,16 @@ stagePose=1
 	weaponCut=0
 	weaponSpin=1
 	weaponProjSpr=spr_bullet
+		weaponProjFlashSpr=spr_gunflash
+	weaponProjTimes=3 ///machine Gun Only
+	weaponProjEndDelay=0.1
 	weaponProjSpd=1
 	weaponProjHitSpr=spr_bullet
 	weaponProjHitSpd=spr_bullet
 	weaponProjSpd=4
 	weaponProjMask=mask_small
+	weaponProjSnd=snd_gun
+	weaponProjHitSnd=snd_hit
 	
 	WhitDisappear=0
 	armX=0
