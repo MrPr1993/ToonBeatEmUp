@@ -27,7 +27,7 @@ oPlayer.x-=64
 
 
 ////Skip parts
-//if x=-9999999999
+if x=-9999999999
 {
 timeline_skip(358)
 }

@@ -48,7 +48,7 @@ frame_set(2,2,0.25) if animFrame=2.75 if specialcheck0!=4 {specialcheck0+=1 anim
 frame_set(3,3,0.1) if animFrame=clamp(animFrame,3,3.9) {
 		dust_make(x,y+1,z-4,-1*image_xscale,0,0)
 	sentflying=8*image_xscale atk=1
-	specialcheck1-=8 if specialcheck1>0 animFrame=3 else animFrame=4
+	specialcheck1-=8 if specialcheck1>0 animFrame=3.1 else animFrame=4
 	} else {atk=0 sentflying=0}
 frame_set(4,3,0.05)
 frame_set(5,0,0.1)
