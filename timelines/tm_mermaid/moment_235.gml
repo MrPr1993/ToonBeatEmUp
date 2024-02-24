@@ -26,7 +26,7 @@ with boss {canmove=0 anim=100}
 
 with oPlayer
 {hspeed=0
-	
+	x=6432 y=200
 	 image_xscale=1
 
 areaEntry=0 z=-400 

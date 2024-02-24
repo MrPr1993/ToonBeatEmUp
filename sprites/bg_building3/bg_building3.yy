@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "bg_building3",
-  "bbox_bottom": 463,
+  "bbox_bottom": 479,
   "bbox_left": 0,
   "bbox_right": 511,
   "bbox_top": 1,

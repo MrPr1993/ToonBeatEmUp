@@ -1,7 +1,7 @@
 function bobject_setup() {
 colorshade_setup()	
 
-
+iceFX=0
 
 	z=0
 	trainz=0
