@@ -12,5 +12,15 @@ en7=fx
 en8=fx
 en9=fx
 en10=fx
+en11=fx
+en12=fx
+en13=fx
+en14=fx
+en15=fx
+en16=fx
+en17=fx
+en18=fx
+en19=fx
+en20=fx
 timeline_position=_skip
 }

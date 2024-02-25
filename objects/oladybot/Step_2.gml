@@ -21,7 +21,7 @@ projectile_create(x+6*image_xscale,y,z-61+16,32,spr_ladybot_rocket,4*image_xscal
 projectile.HitSound=snd_explosion2 projectile.haspal=1
 projectile.current_pal=current_pal projectile.my_pal_sprite=my_pal_sprite
 
-dust_make(x+6*image_xscale,y+1,z-64-16,0,0,0) dustmk.sprite_index=spr_explosion
+dust_make(x+6*image_xscale,y+1,z-61+16-8,0,0,0) dustmk.sprite_index=spr_explosion4
 oControl.quakeFX=10 PlaySound(snd_explosion)
 }
 frame_set(2,2,0.25)

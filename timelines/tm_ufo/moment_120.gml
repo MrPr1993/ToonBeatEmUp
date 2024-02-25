@@ -12,7 +12,7 @@ en1=instance_create_depth(5478,164,-1,oMartian)
 en2=instance_create_depth(5544,164,-1,oMartian)
 en3=instance_create_depth(5734,164,-1,oMartian)
 en4=instance_create_depth(5914,164,-1,oMartian)
-en5=instance_create_depth(6000,164,-1,oMartian)
+en5=instance_create_depth(5944,164,-1,oMartian)
 
 with oMartian
 {canmove=0 isIdle=1 alarm[1]=60 anim=70000 idleRange=30 enemyIdle1=spr_martian_back}

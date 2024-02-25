@@ -1,4 +1,4 @@
-if specialSet6=90
+if specialSet6=300
 {
 if specialSet7=0
 {//camMove=0 camMax=room_width

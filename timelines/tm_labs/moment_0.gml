@@ -14,3 +14,5 @@ layer_background_visible(bgfog1,0)
 
 
 oPlayer.x-=64
+
+timeline_skip(0)

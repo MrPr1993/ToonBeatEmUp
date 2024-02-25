@@ -14,7 +14,7 @@ spawner_followset("WaveSet1",0,7480,1)
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,208-24,oSneak)
 with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,208-64,oSneak)
+en2=instance_create(__view_get( e__VW.XView, 0)+320+64,208+24,oSneak)
 with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
 }
 else

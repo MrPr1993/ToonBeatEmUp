@@ -38,6 +38,9 @@ StandSpr=spr_harpye_stand
 MoveSpr=spr_harpye_stand
 RunSpr=spr_harpye_stand
 
+	hasFront=1
+	FrontSpr=spr_harpye_front
+
 AtkSpr=spr_burglar_attack
 AtkSpr2=spr_burglar_attack2
 AtkSpr3=spr_burglar_attack
@@ -54,6 +57,8 @@ ShockSpr=spr_harpye_elec
 BurnSpr=spr_harpye_burned
 FrozenSpr=spr_harpye_frozen
 hasDizzy=1 DizzySpr=spr_harpye_dizzy
+
+
 
 enemyIdle1=spr_harpye_idle1
 enemyIdle2=spr_harpye_front

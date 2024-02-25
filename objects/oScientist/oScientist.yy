@@ -36,8 +36,8 @@
     "path": "sprites/spr_scientist_stand/spr_scientist_stand.yy",
   },
   "spriteMaskId": {
-    "name": "mask_small",
-    "path": "sprites/mask_small/mask_small.yy",
+    "name": "mask_mid",
+    "path": "sprites/mask_mid/mask_mid.yy",
   },
   "visible": true,
 }

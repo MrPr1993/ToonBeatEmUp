@@ -23,10 +23,6 @@ if oPlayer.ground and oPlayer.canmove
 	
 with oPlayer {areaEntry=1 canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=999999 image_index=0}
 
-quicksnd=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oWaterFX) with quicksnd
-{z=0 image_xscale=88888 image_yscale=77777}
-quicksnd2=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oTrainFXSpot) with quicksnd2
-{z=0 image_xscale=88888 image_yscale=77777}
 
 sandstorm=instance_create_depth(0,0,-1,oCameoChar)
 
@@ -58,7 +54,7 @@ dust_make(x,y,0,-1,0.5,0)
 
 }
 
-if specialcheck[8]>52 {oPlayer.z-=32 sprite_index=BDanceSpr}
+if specialcheck[8]>52 {oPlayer.z-=32 with oPlayer sprite_index=BDanceSpr}
 
 
 }

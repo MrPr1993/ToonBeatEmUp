@@ -40,11 +40,12 @@ JumpAtkSpr2=spr_burglar_attack
 JumpSpr=spr_burglar_stand
 JumpSpr2=spr_burglar_stand
 ThrownSpr=spr_scientistm_hit
-FlatSpr=spr_burglar_hit
-ShockSpr=spr_burglar_hit
-BurnSpr=spr_burglar_hit
-FrozenSpr=spr_burglar_hit
+FlatSpr=spr_scientistm_flat
+ShockSpr=spr_scientistm_elec
+BurnSpr=spr_scientistm_burned
+FrozenSpr=spr_scientistm_frozen
 
+isHeavy=1
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

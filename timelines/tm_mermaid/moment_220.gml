@@ -23,13 +23,6 @@ PlaySound(snd_shrink)
 	
 with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=0}
 //with oShadowFX visible^=1
-quicksnd=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oWaterFX) with quicksnd
-{z=0 image_xscale=88888 image_yscale=77777
-	
-	
-	}
-quicksnd2=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oTrainFXSpot) with quicksnd2
-{z=0 image_xscale=88888 image_yscale=77777}
 
 sandstorm=instance_create_depth(0,0,-1,oCameoChar)
 with oControl MusicFade=1

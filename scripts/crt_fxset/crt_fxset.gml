@@ -77,7 +77,7 @@ shader_set(shd_televisionCustom) //customR
 
 
 	}
-draw_set_color(c_white) draw_rectangle(-4,-4,344,244,false)	
+draw_set_color(c_black) draw_rectangle(-4,-4,344,244,false)	draw_set_color(c_white)
 draw_surface_part_ext(new_surf, 0, 0, view_wview[0], view_hview[0], screenX, screenY, crt_surface_scale, crt_surface_scale, c_white, 1);
 
 shader_reset();
