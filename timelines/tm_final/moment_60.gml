@@ -16,7 +16,7 @@ layer_background_change(bgc,bg_sky6)
 en1=instance_create_depth(4390,160,-1,oAreaSpawner)
 en2=instance_create_depth(4648,160,-1,oAreaSpawner)
 with oAreaSpawner
-{spawnX=x-32 ///768
+{spawnX=x-160 ///768
 MaxSpawnFrame=0 visible=1
 FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 enemyMax=0}
