@@ -1,7 +1,7 @@
 ///@description Plane Area
 specialSet8+=1
 
-with oShadowFX visible=1
+
 
 if specialSet8<30
 timeline_position-=1
@@ -37,6 +37,8 @@ canmove=0
 	thrownDMG=0
 
 }
+
+with sandstorm instance_destroy()
 
 spawner_followset("WaveSet1",0,6480,1)
 }

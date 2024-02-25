@@ -2,17 +2,14 @@
 
 if __view_get( e__VW.XView, 0 )>=4322-2
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200-32,oSiren)
-with en1 {image_xscale=-1}
+en3=instance_create(__view_get( e__VW.XView, 0)+320+64,170,oSiren)
+with en3 {image_xscale=-1 canAttack=5 alarm[1]=30 canAttack5Move=12}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+32,oSiren)
-with en2 {image_xscale=-1}
+en4=instance_create(__view_get( e__VW.XView, 0)+320+64,214,oSiren)
+with en4 {image_xscale=-1 canAttack=5 alarm[1]=30 canAttack5Move=12}
 
-en3=instance_create(__view_get( e__VW.XView, 0)-64,200-32,oSiren)
-with en3 {image_xscale=1}
-
-en4=instance_create(__view_get( e__VW.XView, 0)-64,200+32,oSiren)
-with en4 {image_xscale=1}
+en5=instance_create(__view_get( e__VW.XView, 0)-64,264,oSiren)
+with en5 {image_xscale=-1 canAttack=5 alarm[1]=30 canAttack5Move=12}
 
 }
 else

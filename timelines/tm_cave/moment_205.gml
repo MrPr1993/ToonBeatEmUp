@@ -1,6 +1,7 @@
 if oPlayer.x>__view_get( e__VW.XView, 0 )+320-18
 {timer_set(0)
-	
+
+
 bos=instance_create_depth(9798+320,144,-1,oFlashFX) with bos
 {alarm[0]=-1 image_speed=0 sprite_index=spr_plantprincess_intro}
 	

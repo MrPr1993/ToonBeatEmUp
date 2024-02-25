@@ -1,4 +1,4 @@
-if specialSet8!=30
+if specialSet8!=32
 {
 oPlayer.key_right=0;
 //oPlayer.canControl=1;

@@ -19,8 +19,11 @@ spawnX=804-160 ///768
 enemyMax=1
 enemytype0=oEnemy1 
 enemytype1=oEnemy1B
-MaxSpawnFrame=0 visible=1
+visible=1
 FXtype=4 canDraw=1 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
+
+
+
 }
 }
 else

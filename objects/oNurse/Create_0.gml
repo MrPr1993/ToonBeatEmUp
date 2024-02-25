@@ -48,6 +48,10 @@ BurnSpr=spr_nurse_burned
 FrozenSpr=spr_nurse_frozen
 hasDizzy=1 DizzySpr=spr_nurse_dizzy
 
+
+enemyIdle1=spr_nurse_idle1
+enemyIdle2=spr_nurse_front
+
 current_pal=0;
 my_pal_sprite=spr_ninjapal
 

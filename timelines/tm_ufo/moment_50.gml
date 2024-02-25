@@ -15,14 +15,13 @@ else
 
 if __view_get( e__VW.XView, 0 )>=2640-2-320
 {
-en3=instance_create_depth(2360,160,-1,oAreaSpawner)
-en4=instance_create_depth(2470,160,-1,oAreaSpawner)
-en5=instance_create_depth(2580,160,-1,oAreaSpawner)
+en3=instance_create_depth(2360,160,-1,oAreaSpawner) with en3 enemytype0=oAlienRobot
+en4=instance_create_depth(2470,160,-1,oAreaSpawner) with en4 {enemytype0=oMartian pal0="INVA" name0="INVA"}
+en5=instance_create_depth(2580,160,-1,oAreaSpawner) with en5 enemytype0=oAlienRobot
 with oAreaSpawner
 {spawnX=0 ///768
 MaxSpawnFrame=0 visible=1
 FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-enemytype0=oMartian
 enemyMax=0}
 
 }

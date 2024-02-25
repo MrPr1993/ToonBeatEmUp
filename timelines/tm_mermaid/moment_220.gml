@@ -78,6 +78,12 @@ dust_make(x,y,0,1,-0.5,0)
 dust_make(x,y,0,1,0.5,0)
 dust_make(x,y,0,-1,-0.5,0)
 dust_make(x,y,0,-1,0.5,0)
+
+fakeself=instance_create_depth(x,y,-1,oFlashFX) with fakeself
+{haspal=1 image_speed=0 alarm[0]=400 image_index=24} fakeself.sprite_index=sprite_index
+fakeself.my_pal_sprite=my_pal_sprite fakeself.current_pal=current_pal
+
+x=6432 y=200
 	}
 
 }

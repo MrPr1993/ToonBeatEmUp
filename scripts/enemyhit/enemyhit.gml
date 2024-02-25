@@ -47,7 +47,7 @@ cutDMG=other.isCut
 	if other.object_index!=oProjectile and other.hitSource.weaponIsGun=0
 	with other.hitSource
 	if weaponAttack=1
-	weaponLife-=1-1*global.CheatUnlock[10]
+	weaponLife-=1-1*global.Cheat[10]
 
 	with other.hitSource
 	{

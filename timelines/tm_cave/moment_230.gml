@@ -6,3 +6,6 @@ with bos instance_destroy()
 with oPlayer {anim=0 key_right=0}
 
 oControl.bossID=boss
+
+musicplaystart(msc_boss3)
+oControl.MusicFade=0

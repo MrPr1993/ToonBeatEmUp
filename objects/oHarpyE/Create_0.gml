@@ -55,6 +55,9 @@ BurnSpr=spr_harpye_burned
 FrozenSpr=spr_harpye_frozen
 hasDizzy=1 DizzySpr=spr_harpye_dizzy
 
+enemyIdle1=spr_harpye_idle1
+enemyIdle2=spr_harpye_front
+
 spritepos_setup(1,24,-2,43)
 spritepos_setup(2,0,27,72)
 spritepos_setup(2,24,7,59)

@@ -1,7 +1,13 @@
 if !instance_exists(en1)
 and !instance_exists(en2)
 and !instance_exists(en3)
-and specialSet6=90 
+and !instance_exists(en4)
+and !instance_exists(en5)
+and !instance_exists(en6)
+and !instance_exists(en7)
+and !instance_exists(en8)
+and !instance_exists(en9)
+and specialSet6=300
 {
 if specialSet7=0
 {//camMove=0 camMax=room_width
@@ -16,10 +22,12 @@ oControl.quakeFXTime=10
 layer_vspeed("ElevatorBG",0)
 }
 
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200-24,oNurse)
+en1=instance_create(__view_get( e__VW.XView, 0)+320+64,192,oNurse)
 with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200+24,oNurse)
+en2=instance_create(__view_get( e__VW.XView, 0)+320+64,224,oNurse)
 with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}
+en3=instance_create(__view_get( e__VW.XView, 0)+320+64,256,oNurse)
+with en3 {image_xscale=-1 canAttack=5 alarm[1]=60}
 
 specialscript=-1;
 }
@@ -32,22 +40,55 @@ timeline_position-=1;
 }
 else
 {
-if specialSet6!=90 
+if specialSet6!=300
 specialSet6+=1
 
 if specialSet6=10 
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200,oFatBurglar)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}	
+en1=instance_create(1750,190,oEntryJump)
+with en1 {rangeX=0 image_xscale=-1}	
+
+en2=instance_create(1750,250,oEntryJump)
+with en2 {rangeX=0 image_xscale=-1	spawnFall=spr_burglarB_jump	spawnEnemy=oEnemy1B}	
 }
 
 if specialSet6=60 
 {
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,200-32,oFemBurglar)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
-en3=instance_create(__view_get( e__VW.XView, 0)+320+64,200+32,oFemBurglar)
-with en3 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)}	
+en3=instance_create(__view_get( e__VW.XView, 0)+64,200,oFatBurglar)
+with en3 {
+image_xscale=1 z=-320 canmove=0 anim=11 PlaySoundNoStack(snd_fatburglar)
+sprite_index=AtkSpr2 animFrame=2.9 ground=0 zSpeed=8 specialcheck2=0
+}	
 }
+
+if specialSet6=120 
+{
+en4=instance_create(__view_get( e__VW.XView, 0)+320-64,224,oEntryJump)
+with en4 {rangeX=0	spawnFall=spr_femburglar_jump image_xscale=-1	spawnEnemy=oFemBurglar}	
+en5=instance_create(__view_get( e__VW.XView, 0)+320-64,256,oEntryJump)
+with en5 {enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)
+	
+	rangeX=0	spawnFall=spr_femburglar_jump image_xscale=-1	spawnEnemy=oFemBurglar}
+}
+
+if specialSet6=180 
+{
+en6=instance_create(1570,190,oEntryJump)
+with en6 {rangeX=0 image_xscale=1 	spawnFall=spr_sneak_jump	spawnEnemy=oSneak}	
+
+en7=instance_create(1570,250,oEntryJump)
+with en7 {rangeX=0 image_xscale=1	spawnFall=spr_sneak_jump	spawnEnemy=oSneak}	
+}
+
+if specialSet6=240 
+{
+en8=instance_create(1750,190,oEntryJump)
+with en8 {rangeX=0 image_xscale=-1 spawnFall=spr_monk_jump	spawnEnemy=oMonk}	
+
+en9=instance_create(1750,250,oEntryJump)
+with en9 {rangeX=0 image_xscale=-1	spawnFall=spr_monk_jump	spawnEnemy=oMonk}	
+}
+
 
 timeline_position-=1;
 }

@@ -36,8 +36,8 @@
     "path": "sprites/spr_snowgirl_stand/spr_snowgirl_stand.yy",
   },
   "spriteMaskId": {
-    "name": "mask_small",
-    "path": "sprites/mask_small/mask_small.yy",
+    "name": "mask_mid",
+    "path": "sprites/mask_mid/mask_mid.yy",
   },
   "visible": true,
 }

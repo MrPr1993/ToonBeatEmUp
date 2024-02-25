@@ -2,22 +2,21 @@
 
 if __view_get( e__VW.XView, 0 )>=1158
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+160-64,216-32,oDiver)
-with en1 {image_xscale=1 ground=0 enemy_modify(my_pal_sprite,6,"MR.DROP",0,0.24,0.24)
-	canmove=0 anim=13 z=-200 weapon_add("HARPOONGUN")
-	}
-en2=instance_create(__view_get( e__VW.XView, 0)+160-64,216+32,oDiver)
-with en2 {image_xscale=1 ground=0 
-	canmove=0 anim=13 z=-200
-	}
-en3=instance_create(__view_get( e__VW.XView, 0)+160+64,216-32,oDiver)
-with en3 {image_xscale=-1 ground=0 enemy_modify(my_pal_sprite,6,"MR.DROP",0,0.24,0.24)
-	canmove=0 anim=13 z=-200 weapon_add("HARPOONGUN")
-	}
-en4=instance_create(__view_get( e__VW.XView, 0)+160+64,216+32,oDiver)
-with en4 {image_xscale=-1 ground=0
-	canmove=0 anim=13 z=-200
-	}
+
+en3=instance_create(__view_get( e__VW.XView, 0)-64,156,oEntryFenceJump)
+with en3
+{depth=16777215 isDepth=0 enemy_modify(my_pal_sprite,6,"MR.DROP",0,0.24,0.24)
+			spawnFall=spr_diver_front
+	moveSpr=spr_diver_move
+	spawnEnemy=oDiver}
+	
+en4=instance_create(__view_get( e__VW.XView, 0)-128,156,oEntryFenceJump)
+with en4
+{depth=16777215 isDepth=0 enemy_modify(my_pal_sprite,6,"MR.DROP",0,0.24,0.24)
+			spawnFall=spr_diver_front
+	moveSpr=spr_diver_move
+	spawnEnemy=oDiver}
+
 }
 else
 timeline_position-=1

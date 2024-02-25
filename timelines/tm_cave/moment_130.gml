@@ -3,12 +3,10 @@
 if __view_get( e__VW.XView, 0 )>=5840-2-320
 {
 
-en7=instance_create(__view_get( e__VW.XView, 0)-64,200+24,oSlime)
-with en7 {image_xscale=1 canAttack=5 alarm[1]=60}
+en7=instance_create(5560,192,oSlime) with en7 {image_xscale=1 canAttack=5 alarm[1]=60 anim=13 z=-200 canmove=0}
 
-en8=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oSlime)
-with en8 {image_xscale=-1 canAttack=5 alarm[1]=60}	
-
+en8=instance_create(5560,256,oSlime) with en8 {image_xscale=1 canAttack=5 alarm[1]=60 anim=13 z=-200 canmove=0}
+	
 }
 else
 {

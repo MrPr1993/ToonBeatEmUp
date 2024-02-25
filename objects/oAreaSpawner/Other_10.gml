@@ -62,7 +62,7 @@ en1=instance_create_depth(x,y,depth,enemytype0)
 en1.anim=110 en1.image_alpha=0 en1.isSpawn=1
 en1.immune=1 en1.image_xscale=turn1
 
-if name1!=-1 en1.name=name0
+if name1!=-1 en1.name=name1
 if hplayer1!=-1 en1.hplayer=hplayer1
 if hp1!=-1 {en1.hp=hp1 en0.maxhp=hp1}
 if pal1!=-1 en1.current_pal=pal1

@@ -59,6 +59,9 @@ BurnSpr=spr_merman_burned
 FrozenSpr=spr_merman_frozen
 hasDizzy=1 DizzySpr=spr_merman_dizzy
 
+enemyIdle1=spr_merman_idle1
+enemyIdle2=spr_merman_front
+
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

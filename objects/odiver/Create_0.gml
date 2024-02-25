@@ -50,6 +50,9 @@ BurnSpr=spr_diver_burned
 FrozenSpr=spr_diver_frozen
 hasDizzy=1 DizzySpr=spr_diver_dizzy
 
+enemyIdle1=spr_diver_idle1
+enemyIdle2=spr_diver_front
+
 	hasFront=1
 	FrontSpr=spr_diver_front
 

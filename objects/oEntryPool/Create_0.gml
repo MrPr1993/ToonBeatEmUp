@@ -14,6 +14,7 @@ entry_setup()
 	zSpeed=0
 	splashspr=spr_watersplash
 	
+	
 	SplashSnd=-1
 	fallSpdSub=2
 	

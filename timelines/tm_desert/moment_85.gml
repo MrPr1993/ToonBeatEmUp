@@ -4,6 +4,9 @@ if oPlayer.ground and oPlayer.canmove
 	
 oControl.quakeFXTime=10
 
+PlaySound(snd_quicksand)
+
+with oPlayer event_user(11)
 	
 qsand1=instance_create_depth(__view_get( e__VW.XView, 0 )+0,176,-1,oFlashFX) with qsand1
 {sprite_index=spr_quicksand image_speed=0.5 alarm[0]=999999 animEnd=0}
@@ -24,8 +27,9 @@ image_alpha=lerp(image_alpha,0.6,0.005)
 oTrainFXSpot.Train1Y+=0.5;
 oWaterFX.z-=0.5;
 
+
 with oPlayer
-{
+{if areaEntry=0 {PlaySound(DeathCry)}
 weaponanim(weaponspr,weaponIndex,99999,99999,0,c_white)
 areaEntry=1
 }

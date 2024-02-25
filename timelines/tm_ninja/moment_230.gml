@@ -5,7 +5,7 @@ and !instance_exists(en2)
 and !instance_exists(en3)
 and !instance_exists(en4)
 and !instance_exists(enA)
-{
+{PlaySound(snd_carengine2)
 en1=instance_create(__view_get( e__VW.XView, 0 )-64,176,oEnemy1)
 with en1
 {canmove=0 anim=2500 image_xscale=1 specialhit=burglarbike_hit canbeGrabbed=0}

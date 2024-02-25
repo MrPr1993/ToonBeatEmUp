@@ -1,7 +1,7 @@
 /// @description Pyramid Area
 
 if __view_get( e__VW.XView, 0 )>=2868-2
-{
+{PlaySound(snd_stonebreaks)
 en1=instance_create(__view_get( e__VW.XView, 0)+64,180+48,oDancer)
 with en1 {
 	var dusty=0; repeat(8) {dust_make(x,y,0,lengthdir_x(2,45*dusty),lengthdir_y(1,45*dusty),0) dusty+=1;}	

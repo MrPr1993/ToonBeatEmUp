@@ -64,7 +64,7 @@ frame_set(4,3,0.1)
 	///Machine Gun Fire
 	if weapontype=2 or weapontype=3
 	{
-	if animFrame=0 weaponLife-=1-1*global.CheatUnlock[10]
+	if animFrame=0 weaponLife-=1-1*global.Cheat[10]
 	if animFrame=0
 	or animFrame=0.8 or animFrame=1.6 or animFrame=2.4  or animFrame=3.2
 	{
@@ -85,7 +85,7 @@ frame_set(4,3,0.1)
 	{
 	if animFrame=0 {
 		if -key_left image_xscale=-1 if key_right image_xscale=1
-		weaponLife-=1-1*global.CheatUnlock[10] PlaySound(weaponProjSnd)
+		weaponLife-=1-1*global.Cheat[10] PlaySound(weaponProjSnd)
 		
 	flashFX(x+38*image_xscale,y,z-50,weaponProjFlashSpr,0,1,0,1,1,c_white,1)
 	projectile_create(x+38*image_xscale,y,z-50,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
@@ -135,7 +135,7 @@ if animFrame>6.7 {canmove=1 anim=0}
 			///Ice Gun Fire
 	if weapontype=6
 	{
-	if animFrame=0 weaponLife-=1-1*global.CheatUnlock[10]
+	if animFrame=0 weaponLife-=1-1*global.Cheat[10]
 	if animFrame=0
 	{MoveType=weaponHitType
 	PlaySoundNoStack(weaponProjSnd)
@@ -157,7 +157,7 @@ if animFrame>6.7 {canmove=1 anim=0}
 	hit=0 selfatk.MoveType=1 selfatk.HitType=1 selfatk.damage=0.25
 		selfatk.HitSound=-1 selfatk.spriteFX=spr_nospace
 		
-	if animFrame=0 weaponLife-=1-1*global.CheatUnlock[10]
+	if animFrame=0 weaponLife-=1-1*global.Cheat[10]
 	if animFrame=0 
 	{ atk=1
 	PlaySoundNoStack(weaponProjSnd)

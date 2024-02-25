@@ -10,11 +10,11 @@ with oControl {//camMove=0 camMax=room_width
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,2640-640,1)
 
-en1=instance_create(1184, 194,oEntryPool) en1.rangeXAdd=0 en1.splashspr=spr_haysplash
+en1=instance_create(1184, 194,oEntryPool) en1.rangeXAdd=0 en1.splashspr=spr_snowsplash
 with en1
 {spawnSpr=spr_burglarB_front spawnEnemy=oEnemy1B xAdd=-70 rangeX=x-160 z=-2}
 
-en2=instance_create(1184+64, 194,oEntryPool) en2.rangeXAdd=0 en1.splashspr=spr_haysplash
+en2=instance_create(1184+64, 194,oEntryPool) en2.rangeXAdd=0 en2.splashspr=spr_snowsplash
 with en2
 {spawnSpr=spr_burglar_front spawnEnemy=oEnemy1 xAdd=-70 rangeX=x-160 z=-2}
 

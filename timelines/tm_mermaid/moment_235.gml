@@ -1,7 +1,6 @@
 ///@description Plane Area
 specialSet8+=1
 
-with oShadowFX visible=1
 
 if specialSet8<30
 timeline_position-=1
@@ -26,7 +25,7 @@ with boss {canmove=0 anim=100}
 
 with oPlayer
 {hspeed=0
-	x=6432 y=200
+	
 	 image_xscale=1
 
 areaEntry=0 z=-400 
