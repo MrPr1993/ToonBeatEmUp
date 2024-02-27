@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_femenemy9",
+  "name": "snd_coconut",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -17,7 +17,7 @@
   },
   "preload": true,
   "sampleRate": 44100,
-  "soundFile": "snd_femenemy9",
+  "soundFile": "snd_coconut",
   "type": 0,
   "volume": 1.0,
 }

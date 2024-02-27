@@ -27,3 +27,31 @@ part.current_pal=current_pal
 	iceFX+=1;
 } iceFX=0;
 }
+
+function groundhit_fx(){
+
+dust_make(x,y,z,2,0,0)
+dust_make(x,y,z,-2,0,0)
+dust_make(x,y,z,2,-1,0)
+dust_make(x,y,z,2,1,0)
+dust_make(x,y,z,-2,-1,0)
+dust_make(x,y,z,-2,1,0)
+dust_make(x,y,z,0,-1,0)
+dust_make(x,y,z,0,1,0)
+
+}
+
+function burnedash_fx(){
+
+
+dust_make(x-8,y,z-8,0,0,-1) dustmk.current_pal=2
+dust_make(x+8,y,z-8,0,0,-1) dustmk.current_pal=2
+dust_make(x-8,y,z-8-16,0,0,-1) dustmk.current_pal=2
+dust_make(x+8,y,z-8-16,0,0,-1) dustmk.current_pal=2
+dust_make(x-8,y,z-8-32,0,0,-1) dustmk.current_pal=2
+dust_make(x+8,y,z-8-32,0,0,-1) dustmk.current_pal=2
+dust_make(x-8,y,z-8-48,0,0,-1) dustmk.current_pal=2
+dust_make(x+8,y,z-8-48,0,0,-1) dustmk.current_pal=2
+
+
+}

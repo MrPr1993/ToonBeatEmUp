@@ -83,6 +83,10 @@ PickupSound=snd_pickitem
 	///Override stuff.
 	override_surface=noone;
 	override_pal_index=1;
+	
+	shattered=0
+	
+	specialscript=function() {}
 
 carrySpr=sprite_index
 carryIndex=0

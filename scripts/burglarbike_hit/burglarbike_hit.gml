@@ -20,7 +20,7 @@ specialhit=-1 canbeGrabbed=1
 	sentflying=4*-image_xscale
 	else
 	sentflying=4*image_xscale
-	
+	immune=0 recovery=10
 	event_user(11)
 	}
 	else

@@ -22,9 +22,48 @@ else
 
 if anim=11 and animFrame=clamp(animFrame,2,7) canbeGrabbed=0 else canbeGrabbed=1
 
-///Rollout
+///Rollout/Tackle
 if anim=11
-{sprite_index=ThrownSpr if animFrame=0 special0=2
+{
+	if current_pal=7
+	{
+	 hit=0
+	if sprite_index!=spr_wrestler_airattack
+	{
+sprite_index=spr_wrestler_airattack PlaySoundNoStack(snd_swing) PlaySound(snd_hwolf3)
+	 targetX=targetEnemy.x
+	 targetY=targetEnemy.y
+	 if x<targetX targetX=1 else targetX=-1
+ 
+	 if y!=clamp(y,targetY-8,targetY+8)
+	 {if y<targetY targetY=1 else targetY=-1}
+	else targetY=0 
+	  
+	}
+	if sprite_index=spr_wrestler_airattack
+	{
+		MoveType=1
+		if animFrame=clamp(animFrame,1,2) if ground { z-=2 ground=0 zSpeed=-8}
+	if !ground 
+	{MoveType=1 animFrame=2.9
+	isThrow=0 throwing=0 atkcol_set(7,0,0,1.75,1,64)
+	if place_free(x+2*targetX,y) x+=2*image_xscale
+	//if place_free(x,y+2*targetY) if y<view_yview[0]+240-2 y+=2*targetY
+	if zSpeed>0 z+=0.45
+	}
+
+	image_index=animFrame image_speed=0
+	if animFrame=clamp(animFrame,2,3) and !ground atk=1 else atk=0
+	}
+
+	if animFrame=clamp(animFrame,0,1.5)
+	animFrame+=0.2 else {if ground animFrame+=0.1 if sprite_index=spr_wrestler_airattack and ground {if animFrame=2.9 {oControl.quakeFXTime=10 groundhit_fx()}  animFrame+=0.2}} if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}	
+	
+	exit;
+	}
+	
+
+sprite_index=ThrownSpr if animFrame=0 special0=2
 frame_set(0,23,0.1) atkcol_set(7,0,0,1.75,1,64)
 frame_set(1,22,0.1) if animFrame=clamp(animFrame,2,7) {atk=1 sentflying=4*image_xscale} else {atk=0 sentflying=0}
 frame_set(2,14,0.2) MoveType=4 damage=0.4

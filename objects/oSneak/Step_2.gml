@@ -52,10 +52,14 @@ if distance_to_point(targetX,targetY)<60
 anim=11 
 else
 {
-if current_pal=1///Explosive
-anim=14
-else
 anim=12///Slide
+
+if current_pal=1 anim=14///Explosive
+if current_pal=2 anim=12///Throw Diva
+if current_pal=3 anim=choose(12,13)
+if current_pal=4 anim=choose(12,12,13,14)///All
+
+
 }
 }
 else
@@ -95,7 +99,7 @@ frame_set(6,2,0.1)
 
 if animFrame=clamp(animFrame,3,6) 
 {atk=1 canbeGrabbed=0
-
+dust_make(x-8*image_xscale,y,z,-2*image_xscale,0,0)
 if animFrame=clamp(animFrame,3,4) 
 if place_free(x+4*image_xscale,y) x+=4*image_xscale
 if animFrame=clamp(animFrame,4.1,5) 
@@ -110,6 +114,15 @@ if animFrame>6.8 {canmove=1 anim=0 animFrame=0 alarm[1]=120}
 else
 {canbeGrabbed=1 selfatk.height=64}
 
+if anim=13 ///Air Kick
+{if animFrame=0 sprite_index=spr_sneak_airattack atkcol_set(28,0,10,1.45,1,29) MoveType=1
+frame_set(0,0,0.05)
+if animFrame=1 {PlaySoundNoStack(snd_enemy1) image_index=1 sentflying=3*image_xscale ground=0 zSpeed=-4}
+frame_set(1,1,0.1)
+if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=ThrownSpr image_index=10 sentflying=0 atk=0} else {sprite_index=spr_sneak_airattack sentflying=3*image_xscale atk=1}
+
+if animFrame>3 and ground {canmove=1}
+}
 
 if instance_exists(targetEnemy)
 {

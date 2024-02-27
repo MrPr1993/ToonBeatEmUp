@@ -45,6 +45,9 @@ enemyscript=animsetup_enemy
 
 overwriteAttack=1
 overwriteAttack2=1
+overwriteAttack3=1
+overwriteAttack4=1
+overwriteAttack5=1
 
 bombRecharge=0
 

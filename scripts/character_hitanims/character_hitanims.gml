@@ -330,9 +330,13 @@ with cutSelf
 	if animFrame=clamp(animFrame,0,1.9) animFrame+=0.1
 	if animFrame=clamp(animFrame,2,2.9) animFrame+=0.025
 
-	if hp<=0 if isEnemy=1 {if hplayer=0 {if dead=0 {hplayertake=hp dead=1 alarm[2]=90}} else {hplayertake=hp hp=maxhp+hplayertake hplayer-=1 if oControl.enemyID=1 hud_show() }}
+	if hp<=0 if isEnemy=1 {if hplayer=0 {if dead=0 {hplayertake=hp dead=1 alarm[2]=90
+		burnedash_fx()
+		}} else {hplayertake=hp hp=maxhp+hplayertake hplayer-=1 if oControl.enemyID=1 hud_show() }}
 	else
-	if dead=0 {dead=1 alarm[2]=90}
+	if dead=0 {dead=1 alarm[2]=90 burnedash_fx()
+		
+		}
 
 	if dead=0
 	{if animFrame>2.9 {hurt=0 canmove=1}}
