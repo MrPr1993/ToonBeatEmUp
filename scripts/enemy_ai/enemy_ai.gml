@@ -24,8 +24,8 @@ if leaveMode=1 or leaveMode=2
 	}
 	
 	if canAttack=8 ////Run Away
-	if leaveMode=1 
-	{		
+	if leaveMode=1 or leaveMode=2
+	{if leaveMode=2 {leaveMode=0 canAttack=choose(1,2) alarm[1]=2 exit;}
 	image_xscale=leaveDir RunAnimRecharge=1
 	if x!=clamp(x,-oControl.camX-sprite_get_width(mask_index)/2,oControl.camX+320+sprite_get_width(mask_index)/2)
 instance_destroy()

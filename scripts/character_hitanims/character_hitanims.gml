@@ -319,7 +319,8 @@ with cutSelf
 	if image_index<4
 	sprite_index=BurnSpr
 	else
-	{if sprite_index!=spr_viva_burned
+	{if image_index=4 burnedash_fx()
+		if sprite_index!=spr_viva_burned
 	sprite_index=spr_burglar_burned
 	}
 
@@ -331,10 +332,10 @@ with cutSelf
 	if animFrame=clamp(animFrame,2,2.9) animFrame+=0.025
 
 	if hp<=0 if isEnemy=1 {if hplayer=0 {if dead=0 {hplayertake=hp dead=1 alarm[2]=90
-		burnedash_fx()
+		
 		}} else {hplayertake=hp hp=maxhp+hplayertake hplayer-=1 if oControl.enemyID=1 hud_show() }}
 	else
-	if dead=0 {dead=1 alarm[2]=90 burnedash_fx()
+	if dead=0 {dead=1 alarm[2]=90 
 		
 		}
 

@@ -28,7 +28,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 	if current_pal=2 or current_pal=3
 	anim=65
 	
-	if anim=65 if current_pal=5 anim=choose(65,9912)
+	if current_pal=5 anim=choose(65,9912)
 	
 		if current_pal=4
 		{
@@ -161,7 +161,7 @@ frame_set(5,5,0.25) if animFrame=6 {animFrame=0 canmove=1 atk=0 anim=0}
 /////Grab Charge
 if anim=9912
 {selfatk.spriteFX=mask_none
-	atkcol_set(13*2,0,0,0.85,1,1) damage=0 MoveType=0
+	atkcol_set(13,0,0,0.85,1,1) damage=0 MoveType=0
 animFrame+=0.01 //selfatk.HitSound=-1
 if animFrame<0.25 {sprite_index=StandSpr image_index=1}
 else
@@ -180,40 +180,36 @@ if animFrame>2 {atk=0 canmove=1 anim=0}
 }
 
 if anim=6666 ///Grab Enemy
-{
+{if animFrame=0 sprite_index=spr_ninjabun_grab shaketime=0 shake=0
 isThrow=1 hud_show()
 throwing=1
 selfatk.image_xscale=0
 comboBreak=0
 selfatk.recovery=90
 if animFrame>0.1
-Throw=0 else {image_index=0 Throw=1 grabMax=0}
-sprite_index=spr_ninjabun_grab
-if image_index<1
-{image_index+=0.05 special1=1 special2=0}
-else
-image_index+=0.25 if image_index>4 image_index=0 hspeed=0 canmove=0
+Throw=0 else {Throw=1 grabMax=0}
 
-if image_index=2 {special1=0 ground=0 zSpeed=-64
-	
-	PlaySound(snd_jump)
 
+frame_set(0,0,0.1) if animFrame=1 {ground=0 zSpeed=-64 PlaySound(snd_jump)}
+frame_set(1,1,0.1)
+
+frame_set(2,2,0.1) if animFrame>2 if !ground {animFrame=2.9 zSpeed+=1.1
+	if zSpeed>0 image_index=3
 	}
-	if image_index>4.5 {canmove=1 exit;}
-	
-if ground=0 {zSpeed+=0.9 image_index=2.6 x=clamp(x,__view_get( e__VW.XView, 0 ),__view_get( e__VW.XView, 0 )+320-16)} else sentflying=0
-
-if targetID!=-1 
-{
-if ground=1 if image_index=clamp(image_index,2.3,2.9)
-{oControl.quakeFXTime=10 PlaySoundNoStack(snd_hitgroundheavy) image_index=3 
+else if animFrame=3 {
+oControl.quakeFXTime=10 PlaySoundNoStack(snd_hitgroundheavy)
 	targetID.hp-=0.125 with targetID event_user(11)
 	hground=instance_create_depth(targetID.x+targetID.headPosX[6]*targetID.image_xscale,y,depth,oFlashFX)
 	hground.sprite_index=spr_hitground hground.depth=99996
 	hground.isDepth=0 hground.z=z
-	
-	}
+}
 
+frame_set(3,4,0.1)
+frame_set(4,3,0.1)
+if animFrame>4.5 {anim=60 ground=0 sentflying=-6*image_xscale zSpeed=-4 exit;}
+
+if targetID!=-1 
+{
 
 targetID.y=y targetID.z=z
 targetID.GrabFrameExtra+=0.2
@@ -227,59 +223,40 @@ targetID.ground=0
 targetID.atk=0
 targetID.hurt=1
 
-
-if image_index<1
-{targetID.x=x+24*image_xscale
-targetID.image_index=GrabFrame
-targetID.image_xscale=-image_xscale
-}
-else
-{
-	if !ground
-	{targetID.x=x+32*image_xscale zSpeed+=0.45
-	if special1<2 special1+=0.1 
-targetID.image_index=3+special1
-targetID.image_xscale=image_xscale
-	}else targetID.image_index=6
-}
-
 targetID.recovery=0
 
+targetID.depth=depth+1
 
-if targetID.key_up_pressed
-or targetID.key_down_pressed
-or targetID.key_left_pressed
-or targetID.key_right_pressed
-{grabMax+=1 shaketime=10
+if animFrame<1
+{targetID.x=x+32*image_xscale targetID.z=z targetID.image_index=24
+	targetID.image_xscale=-image_xscale
+	}
 
-if grabMax>4
-{
-HitType=1 event_user(0) sentflying=-2*image_xscale zSpeed=-2
+if animFrame=clamp(animFrame,1,2)
+{targetID.x=x+32*image_xscale targetID.image_index=24
+targetID.z=z targetID.image_xscale=image_xscale} 
 
-if targetID!=-1
-{
+if animFrame=clamp(animFrame,2,3) {targetID.image_index=17
+targetID.x=x+32*image_xscale targetID.image_xscale=image_xscale
+targetID.z=z}
+
+if animFrame=clamp(animFrame,2,3) {targetID.image_index=5
+targetID.x=x+32*image_xscale targetID.image_xscale=image_xscale
+targetID.z=z}
+
+if animFrame=clamp(animFrame,3,4) {targetID.image_index=6
+targetID.x=x+32*image_xscale targetID.image_xscale=image_xscale
+targetID.z=z}
+
+if animFrame>4
+{targetID.z=z-2
 with targetID
-{
-	animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
-	throw_quickrelease() ground=0 zSpeed=-2 sentflying=-1*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
-canmove=1 hurt=0 recovery=30}
-}
-throwing=0 throwcombo=2
-targetID=-1
-}
-}
-
-if image_index>3.5 
-{
-with targetID
-{
+{thrownAtkDmg=0.1
 animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
-throw_quickrelease() ground=0 zSpeed=-8 sentflying=4*image_xscale hurt=1 hitBack=1 animFrame=0 anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
+throw_quickrelease() ground=0 zSpeed=-4 sentflying=-2*image_xscale hurt=1 hitBack=1 animFrame=0 anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
 recovery=30}
-throwing=0 throwcombo=2
+throwing=0 throwcombo=2 shaketime=0 shake=0
 targetID=-1
-HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
-ground=0 zSpeed=-2 sentflying=-1*image_xscale canmove=1
 
 }
 }
@@ -293,38 +270,13 @@ if targetID.anim!=30 and targetID.anim!=31
 targetID.ground=0 
 targetID=-1
 
-throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+throwing=0 throwcombo=2
 alarm[1]=2
 }}
 
 
-
-{
-///Drag Enemy
-if targetID!=-1
-{
-targetID.targetHeightHit=1 targetID.isGrabbed=1 
-with targetID {sprite_index=ThrownSpr event_user(1)}
- targetID.depth=depth+1
-}
-grabX=48*image_xscale grabY=0 grabZ=0 
-
-atk=0 
-animFrame+=0.01 if animFrame>4 {///Let go of enemy to attack
-grabX=0 grabY=0 grabZ=0 //targetID.hp-=0.05+extradamage
-if targetID!=-1
-with targetID
-{recovery=10 isGrabbed=0
-hurt=1 Throw=0
-atk=0 canmove=0 animFrame=0 ground=0 zSpeed=-4 sentflying=-2*image_xscale image_index=GrabFrame anim=5 shaketime=10
-canmove=0 hurt=1
-}throwing=0 animFrame=0 anim=0 canmove=0 throwcombo=2 canmove=1 alarm[0]=60
-targetID=-1 }
-}
-
-
 ////Forcibly Break Out With Special Attacks
-if animFrame<4 and targetID!=-1
+if animFrame<1 and targetID!=-1
 {
 if targetID.key_right_pressed
 or targetID.key_right_pressed
@@ -348,6 +300,7 @@ targetID=-1
 }
 }
 ////Instantly use Super	
+
 
 }
 

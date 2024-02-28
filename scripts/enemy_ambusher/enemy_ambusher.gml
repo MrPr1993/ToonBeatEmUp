@@ -1,22 +1,27 @@
 function enemy_ambusher(_x, _y, _enemy,_side,_leaveDir,_offset,_timer,_retreats,_weak,_animFrame,_anim) {
 	var myDepth = object_get_depth( _enemy );
-	return instance_create_depth( _x, _y, myDepth, _enemy );
 	
 	
-if _side=1 {_enemy.x=oControl.camX-_offset _enemy.image_xscale=1 }
 	
-	if _weak {_enemy.hp=0.01 _enemy.maxhp=0.01}
+	_enmake=instance_create_depth( _x, _y, myDepth, _enemy );
+	
+	
+if _side=1 {_enmake.x=oControl.camX-_offset _enmake.image_xscale=1 }
+if _side=-1 {_enmake.x=oControl.camX+320+_offset _enmake.image_xscale=-1 }
+		
 
-_enemy.alarm[1]=_timer; //20
+	if _weak {_enmake.hp=0.01 _enmake.maxhp=0.01}
 
-_enemy.leaveDir=_leaveDir
+_enmake.alarm[1]=_timer; //20
 
-_enemy.leaveMode=_retreats //1; - 2 makes them stay
+_enmake.leaveDir=_leaveDir
 
-_enemy.canAttack5Move=_anim;
+_enmake.leaveMode=_retreats //1; - 2 makes them stay
 
-_enemy.canAttack=7 
-_enemy.leaveMode=1 
+_enmake.canAttack5Move=_anim;
 
+_enmake.canAttack=7 
+
+return _enmake;
 
 }

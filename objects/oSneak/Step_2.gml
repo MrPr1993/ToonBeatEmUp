@@ -156,7 +156,7 @@ animFrame+=0.2 else animFrame+=0.1 if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=
 /////Grab Charge
 if anim=9912
 {selfatk.spriteFX=mask_none
-	atkcol_set(13*2,0,0,0.85,1,1) damage=0 MoveType=0
+	atkcol_set(13,0,0,0.85,1,1) damage=0 MoveType=0
 animFrame+=0.01 //selfatk.HitSound=-1
 if animFrame<0.25 {sprite_index=StandSpr image_index=1}
 else
