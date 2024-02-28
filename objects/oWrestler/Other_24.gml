@@ -17,7 +17,7 @@ if anim=11
 /// @description Insert description here
 // You can write your code in this editor
 if anim=12
-{animFrame=0 anim=6666
+{animFrame=0 anim=6666 atk=0 selfatk.atk=0
 
 targetID=selfatk.hitID
 

@@ -68,6 +68,14 @@ animFrame=0
 if special0=0 and bombRecharge=0 and instance_number(oBomb)<3 {bombRecharge=choose(320,400,480,560) special0=1 
 if current_pal=1 anim=14 else anim=12
 	special1=320} else anim=12
+
+if anim=12
+{
+if current_pal=1 anim=14///Explosive
+if current_pal=2 anim=9912///Throw Diva
+if current_pal=3 anim=choose(12,13)
+if current_pal=4 anim=choose(12,9912,13,14)///All
+}
 }
 }
 }
@@ -83,7 +91,7 @@ animFrame+=0.1 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=
 }}
 
 if anim=12 ///Attack Slide
-{hit=0  if animFrame=2 {PlaySoundNoStack(snd_swing2) PlaySoundNoStack(snd_enemy1)}
+{hit=0  if animFrame=0 {specialtimes[0]=0}
 sprite_index=AtkSpr2 MoveType=1 damage=0.15
 image_index=animFrame image_speed=0
 
@@ -99,7 +107,10 @@ frame_set(6,2,0.1)
 
 if animFrame=clamp(animFrame,3,6) 
 {atk=1 canbeGrabbed=0
-dust_make(x-8*image_xscale,y,z,-2*image_xscale,0,0)
+
+if specialtimes[0]=0 {dust_make(x-8*image_xscale,y,z,-2*image_xscale,0,0) specialtimes[0]=4}
+else specialtimes[0]-=1;
+
 if animFrame=clamp(animFrame,3,4) 
 if place_free(x+4*image_xscale,y) x+=4*image_xscale
 if animFrame=clamp(animFrame,4.1,5) 
@@ -124,46 +135,6 @@ if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=ThrownSpr image_index=10
 if animFrame>3 and ground {canmove=1}
 }
 
-if instance_exists(targetEnemy)
-{
-if 
-(
-(image_xscale=-1 and targetEnemy.image_xscale=-1 and targetEnemy.x<x and targetEnemy.ground)
-or (image_xscale=1 and targetEnemy.image_xscale=1 and targetEnemy.x>x and targetEnemy.ground)
-)
-{
-///Attempt to grab player
-if distance_to_object(targetEnemy)<80 and grabTest=1
-{canGrab=1 targetX=targetEnemy.x targetY=targetEnemy.y
-if hurt=0 and canmove=1 and targetEnemy.ignore=0 and targetEnemy.dead=0
-{
-{if image_xscale=-1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
-anim=1
-if y!=clamp(y,targetY-rangeY,targetY+rangeY)
-if y!=clamp(y,targetY,targetY)
-{if y>targetY {key_up=0 key_down=0} else {key_down=0 key_up=0}}
-else {key_up=0 key_down=0}
-
-///Grab Enemy
-if (image_xscale=1 and key_right and dashing=0 and place_meeting(x+16,y,targetEnemy))
-or (image_xscale=-1 and -key_left and dashing=0 and place_meeting(x-16,y,targetEnemy))
-or (image_xscale=-1 and key_down and dashing=0 and place_meeting(x-16,y,targetEnemy))
-or (image_xscale=-1 and key_up and dashing=0 and place_meeting(x-16,y,targetEnemy))
-or (image_xscale=1 and key_down and dashing=0 and place_meeting(x+16,y,targetEnemy))
-or (image_xscale=1 and key_up and dashing=0 and place_meeting(x+16,y,targetEnemy))
-{if ground and canmove=1
-{
-throw_command(targetEnemy,24*image_xscale,0,0,GrabFrame,30,1)
-}
-}
-}
-}
-else
-{if alarm[1]=0 alarm[1]=2 canGrab=0 enemy_ai() image_blend=c_white }
-}
-else
-{if alarm[1]=0 alarm[1]=2 canGrab=0 enemy_ai() image_blend=c_white }
-
 if anim=14 ///Item Throw Attack
 { hit=0  
 sprite_index=spr_sneak_throwitemb MoveType=0 damage=0.1
@@ -182,8 +153,29 @@ animFrame+=0.2 else animFrame+=0.1 if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=
 
 }}
 
-if anim=35 ///Grab Enemy
+/////Grab Charge
+if anim=9912
+{selfatk.spriteFX=mask_none
+	atkcol_set(13*2,0,0,0.85,1,1) damage=0 MoveType=0
+animFrame+=0.01 //selfatk.HitSound=-1
+if animFrame<0.25 {sprite_index=StandSpr image_index=1}
+else
 {
+if targetEnemy.anim=30 or targetEnemy=31
+{canmove=1 anim=0 alarm[0]=60 exit;}
+	atk=1 
+	sprite_index=MoveSpr image_index+=0.25
+if x<targetEnemy.x {image_xscale=1 sentflying=2}
+else {image_xscale=-1 sentflying=-2}
+if y!=clamp(y,targetEnemy.y-2,targetEnemy.y+2)
+if y>targetEnemy.y {if place_free(x,y-1) y-=1}
+else {if place_free(x,y+1) y+=1}
+}
+if animFrame>2 {atk=0 canmove=1 anim=0}
+}
+
+if anim=6666 ///Grab Enemy
+{if animFrame=0 sprite_index=spr_sneak_throw shaketime=0 shake=0
 isThrow=1 hud_show()
 throwing=1
 selfatk.image_xscale=0
@@ -191,10 +183,19 @@ comboBreak=0
 selfatk.recovery=90
 if animFrame>0.1
 Throw=0 else {Throw=1 grabMax=0}
-sprite_index=spr_sneak_grab
-image_index+=0.25 hspeed=0 canmove=0
+
+
+frame_set(0,0,0.1) if animFrame=1 image_xscale=-image_xscale
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,3,0.1)
+frame_set(4,3,0.1)
+if animFrame>4.5 {canmove=1 exit;}
+
 if targetID!=-1 
 {
+
+targetID.y=y targetID.z=z
 targetID.GrabFrameExtra+=0.2
 if targetID.GrabFrameExtra=3.8
 targetID.GrabFrameExtra=0
@@ -205,57 +206,54 @@ targetID.hitSource=id
 targetID.ground=0 
 targetID.atk=0
 targetID.hurt=1
-targetID.image_index+=0.1
 
 targetID.recovery=0
 
-if targetID.key_up_pressed
-or targetID.key_down_pressed
-or targetID.key_left_pressed
-or targetID.key_right_pressed
-{grabMax+=1 image_index=0 targetID.image_index=0
+targetID.depth=depth+1
 
-if grabMax>4
+if animFrame<1
+{targetID.x=x+32*image_xscale targetID.z=z targetID.image_index=24
+	targetID.image_xscale=-image_xscale
+	}
+
+if animFrame=clamp(animFrame,1,2)
+{targetID.x=x-9*image_xscale targetID.image_index=16
+targetID.z=z-10 targetID.image_xscale=image_xscale} 
+
+if animFrame=clamp(animFrame,2,3) {targetID.image_index=17
+targetID.x=x-3*image_xscale targetID.image_xscale=image_xscale
+targetID.z=z-32}
+
+
+if animFrame>3
+{targetID.z=z-8
+with targetID
+{thrownAtkDmg=0.1
+animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0 ThrowDamage=0.1
+throw_quickrelease() ground=0 zSpeed=-8 sentflying=4*image_xscale hurt=1 hitBack=1 animFrame=0 anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
+recovery=30}
+throwing=0 throwcombo=2 shaketime=0 shake=0
+targetID=-1
+
+}
+}
+
+
+
+if targetID!=-1
 {
-HitType=1 event_user(0) sentflying=-2*image_xscale zSpeed=-2
-}
-}
-
-}
 if targetID.anim!=30 and targetID.anim!=31
 {
 targetID.ground=0 
 targetID=-1
 
-throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+throwing=0 throwcombo=2
 alarm[1]=2
-}
+}}
 
-
-
-{
-///Drag Enemy
-if targetID!=-1
-{
-targetID.targetHeightHit=1 targetID.isGrabbed=1
-with targetID {sprite_index=GrabbedSpr event_user(1)}
-}
-grabX=16*image_xscale grabY=0 grabZ=0 targetID.image_xscale=image_xscale
-targetID.depth=depth+1
-atk=0 
-animFrame+=0.02 if animFrame>4 {///Let go of enemy to attack
-grabX=0 grabY=0 grabZ=0 //targetID.hp-=0.05+extradamage
-if targetID!=-1
-with targetID
-{recovery=10 isGrabbed=0
-hurt=1 Throw=0
-atk=0 canmove=0 animFrame=0 image_index=GrabFrame anim=4 shaketime=10
-}throwing=0 animFrame=0 anim=10 canmove=0 throwcombo=2
-targetID=-1 }
-}
 
 ////Forcibly Break Out With Special Attacks
-if animFrame>0.1 and targetID!=-1
+if animFrame<1 and targetID!=-1
 {
 if targetID.key_right_pressed
 or targetID.key_right_pressed
@@ -272,51 +270,15 @@ with targetID {anim=0 hurt=0 ground=0 isGrabbed=0
 
 powlock=1 pow=0 
 if pow>4 powcheck=1 else if hp>=powhp powcheck=0
-canmove=0 targetID=-1 animFrame=0
+canmove=0 targetID=-1 animFrame=0 atk=1
 anim=17 throwATK=0
    recovery=60}
-targetID=-1 event_user(0)
-}
-}
-////Instantly use Super
-
-}
-}
-
-///Throw Setup
-if recovery!=0 recovery-=1 else {recovery=0}
-if recoveryThrow!=0 recoveryThrow-=1 else recoveryThrow=0
-
-if !instance_exists(targetID)
-{targetID=-1}
-else
-if targetID!=-1
-{
-if hurt=1
-with targetID
-{
-isGrabbed=1
-canmove=1
-hurt=0
-hit=0
-ground=0
-zSpeed=-2
-sentflying=0
-animFrame=0
-anim=2
-}
-
-if targetID.canDrag=1
-{
-targetID.x=x+grabX
-targetID.y=y+grabY
-targetID.z=z+grabZ
-}
-targetID.vspeed=0
-targetID.hspeed=0
-
-if targetID.anim!=30 and targetID.anim!=31
 targetID=-1
+}
+}
+////Instantly use Super	
+
+
 }
 
 if anim=810 ///Gun Fire

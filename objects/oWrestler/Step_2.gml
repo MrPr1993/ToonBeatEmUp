@@ -26,7 +26,7 @@ if anim=11 and animFrame=clamp(animFrame,2,7) canbeGrabbed=0 else canbeGrabbed=1
 if anim=11
 {
 	if current_pal=7
-	{
+	{damage=0.25
 	 hit=0
 	if sprite_index!=spr_wrestler_airattack
 	{
@@ -66,7 +66,7 @@ sprite_index=spr_wrestler_airattack PlaySoundNoStack(snd_swing) PlaySound(snd_hw
 sprite_index=ThrownSpr if animFrame=0 special0=2
 frame_set(0,23,0.1) atkcol_set(7,0,0,1.75,1,64)
 frame_set(1,22,0.1) if animFrame=clamp(animFrame,2,7) {atk=1 sentflying=4*image_xscale} else {atk=0 sentflying=0}
-frame_set(2,14,0.2) MoveType=4 damage=0.4
+frame_set(2,14,0.2) MoveType=4 damage=0.25
 frame_set(3,13,0.2)
 frame_set(4,12,0.2)
 frame_set(5,11,0.2) 
