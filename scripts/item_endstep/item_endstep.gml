@@ -1,5 +1,8 @@
 function item_endstep() {
 	
+	if ScreenDestroy if x!=clamp(x,oControl.camX-8-sprite_get_width(mask_index)-8-sprite_get_width(mask_index),oControl.camX+320+8+sprite_get_width(mask_index))
+	instance_destroy()
+	
 	x+=spdX
 	if carry=1 or isBroken=1
 	{

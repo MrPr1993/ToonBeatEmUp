@@ -3,7 +3,6 @@
 if !instance_exists(en1)
 and !instance_exists(en2)
 and !instance_exists(en3)
-and !instance_exists(en4)
 {
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90

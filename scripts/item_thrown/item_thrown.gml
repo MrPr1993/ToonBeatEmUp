@@ -17,6 +17,8 @@ function item_thrown(){
 	if weaponLife<=0 and weaponIsGun=0
 	weapon.HitType=1
 
+weapon.ScreenDestroy=1
+
 	weapon.thrown=1
 	weaponspr=-1 weapon.image_xscale=image_xscale
 	weaponIndex=0

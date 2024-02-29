@@ -59,8 +59,8 @@ willGrab=0
 grabAttempt=0
 grabSave=0
 
-hp=0.4
-maxhp=0.4
+hp=0.3
+maxhp=0.3
 
 height=70
 

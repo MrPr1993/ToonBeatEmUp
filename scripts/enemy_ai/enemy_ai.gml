@@ -27,7 +27,7 @@ if leaveMode=1 or leaveMode=2
 	if leaveMode=1 or leaveMode=2
 	{if leaveMode=2 {leaveMode=0 canAttack=choose(1,2) alarm[1]=2 exit;}
 	image_xscale=leaveDir RunAnimRecharge=1
-	if x!=clamp(x,-oControl.camX-sprite_get_width(mask_index)/2,oControl.camX+320+sprite_get_width(mask_index)/2)
+	if x!=clamp(x,oControl.camX-sprite_get_width(mask_index)/2,oControl.camX+320+sprite_get_width(mask_index)/2)
 instance_destroy()
 		{if image_xscale=-1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
 	anim=1 dashing=2 doubledash=0.2 RunAnimRecharge=1

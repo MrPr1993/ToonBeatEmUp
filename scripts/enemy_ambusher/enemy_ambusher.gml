@@ -3,7 +3,7 @@ function enemy_ambusher(_x, _y, _enemy,_side,_leaveDir,_offset,_timer,_retreats,
 	
 	
 	
-	_enmake=instance_create_depth( _x, _y, myDepth, _enemy );
+	_enmake=instance_create_depth( _x, _y, -1, _enemy );
 	
 	
 if _side=1 {_enmake.x=oControl.camX-_offset _enmake.image_xscale=1 }
@@ -18,7 +18,7 @@ _enmake.leaveDir=_leaveDir
 
 _enmake.leaveMode=_retreats //1; - 2 makes them stay
 
-_enmake.canAttack5Move=_anim;
+_enmake.enterAnim=_anim;
 
 _enmake.canAttack=7 
 

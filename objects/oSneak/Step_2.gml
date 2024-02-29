@@ -393,3 +393,5 @@ weaponanim(weaponspr,weaponIndex,-6,-30,17*image_xscale,weaponcolor)
 if image_index=clamp(image_index,24,24.9)
 weaponanim(weaponspr,weaponIndex,-2,-39,12*image_xscale,weaponcolor)
 }
+
+throw_step()
