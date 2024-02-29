@@ -16,7 +16,7 @@ DamageVoice3=snd_enemy3
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=160
 
 OneAttack=2
 
@@ -25,7 +25,7 @@ idlestyle=1
 hp=0.2
 maxhp=0.2
 
-height=70
+height=80
 
 specialFX=0
 
@@ -62,3 +62,6 @@ my_pal_sprite=spr_ninjapal
 
 spritepos_setup(1,24,6,38)
 spritepos_setup(2,24,13,63)
+
+if oControl.betatest if keyboard_check(vk_control)
+weapon_add("HARPOONGUN")

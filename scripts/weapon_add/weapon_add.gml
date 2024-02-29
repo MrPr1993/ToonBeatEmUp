@@ -4,7 +4,7 @@ function weapon_add(){
 	
 var wpadd=argument0
 	
-if wpadd="HAMMER"
+if wpadd="HAMMER" or wpadd="TOYHAMMER"
 {
 spawnID=oHammer
 weaponspr=spr_hammer
@@ -20,6 +20,8 @@ weapontargetHeight=2
 weapontype=0
 weaponHitType=1
 WswingSound=snd_swing5
+if wpadd="TOYHAMMER"
+weaponspr=spr_hammer2
 }
 
 if wpadd="TASER"
@@ -141,6 +143,10 @@ weaponDamage=0.1
 weapontargetHeight=2
 weapontype=4
 weaponHitType=0
+weaponProjSpr=spr_harpoonbullet
+PickupSound=snd_getweapon
+weaponProjHitSnd=snd_cut
+
 }
 
 if wpadd="HANDGUN"

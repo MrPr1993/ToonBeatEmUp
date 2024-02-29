@@ -5,6 +5,7 @@ enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=49
 
 enemyscript=animsetup_enemy
+chardraw=draw_swing;
 
 pointshit=10
 points=100
@@ -58,3 +59,6 @@ my_pal_sprite=spr_bearpal
 
 spritepos_setup(1,24,4,20)
 spritepos_setup(1,24,4,44)
+
+if oControl.betatest if keyboard_check(vk_control)
+weapon_add("TOYHAMMER")

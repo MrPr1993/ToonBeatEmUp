@@ -7,6 +7,7 @@ overwriteAttack2=1
 overwriteAttack3=1
 
 
+
 ///Weapons
 if anim=0
 {
@@ -16,7 +17,7 @@ weaponanim(weaponspr,weaponIndex,25,-39,-1,weaponcolor)
 	if image_index=clamp(image_index,1,1.9)
 weaponanim(weaponspr,weaponIndex,26,-38,-1,weaponcolor)
 	if image_index=clamp(image_index,2,2.9)
-weaponanim(weaponspr,weaponIndex,24,-36,-1,weaponcolor)
+weaponanim(weaponspr,weaponIndex,27,-36,-1,weaponcolor)
 }
 
 if anim=1
@@ -35,11 +36,13 @@ weaponanim(weaponspr,weaponIndex,26,-39,0,weaponcolor)
 	if anim=10 ///Attack Stand
 	{
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>50
-	anim=12 else anim=11
+	{anim=12
+		if weaponspr!=-1 anim=810
+		} else anim=11
 	}
 	
 	if anim=11
-	{
+	{weaponanim(weaponspr,weaponIndex,2004,-34,0,weaponcolor)
 	 hit=0  sprite_index=AtkSpr
 MoveType=0 damage=0.1
 	image_index=animFrame image_speed=0
@@ -73,11 +76,61 @@ weaponanim(weaponspr,weaponIndex,26,-51,0,weaponcolor)
 	if anim=13
 	{z+=2 sprite_index=spr_diver_move image_index=2 zSpeed=0
 		weaponanim(weaponspr,weaponIndex,26,-39,0,weaponcolor)
-	if ground {canmove=1 anim=0}
+	if ground {canmove=1 recovery=0 immune=0 recoveryThrow=0 anim=0}
 	}
 	
 	
 weaponBack=1
+
+if anim=810 ///Gun Fire
+{
+
+if animFrame=2.0
+or animFrame=2.8
+or animFrame=3.8
+or animFrame=5.8
+{
+PlaySoundNoStack(snd_gun)
+flashFX(x+42*image_xscale,y,z-44,spr_gunflash,0,1,0,1,1,c_white,1)
+projectile_create(x+42*image_xscale,y,z-44,-10,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+projectile.HitSound=weaponProjHitSnd
+}
+	
+sprite_index=spr_diver_fire
+frame_set(0,0,0.1)
+frame_set(1,1,0.025)
+ //1
+
+//	if animFrame=0
+	//or animFrame=0.8 or animFrame=1.6 or animFrame=2.4  or animFrame=3.2
+frame_set(2,1,0.2)
+frame_set(3,2,0.05)
+frame_set(4,1,0.2) //2 
+frame_set(5,2,0.05)
+frame_set(6,1,0.2) //3
+frame_set(7,2,0.05) 
+frame_set(8,1,0.2)
+frame_set(9,1,0.025)
+frame_set(10,0,0.25)
+
+
+if animFrame>10.75 {atk=0 canmove=1}
+
+
+if image_index=clamp(image_index,0,0.9)
+{
+	weaponanim(weaponspr,weaponIndex,25-7,-40,-1,weaponcolor)
+	}
+if image_index=clamp(image_index,1,1.9)
+{
+weaponanim(weaponspr,weaponIndex,25-3,-40,0*image_xscale,weaponcolor)
+	}
+if image_index=clamp(image_index,2,2.9)
+{
+	weaponanim(weaponspr,weaponIndex,25-5,-40,0*image_xscale,weaponcolor)
+	}
+
+}
 
 ////Hit
 if sprite_index=ThrownSpr
