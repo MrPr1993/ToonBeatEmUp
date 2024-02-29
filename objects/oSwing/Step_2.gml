@@ -8,12 +8,19 @@ throw_step()
 //if x>oControl.camX+320+64{x=oControl.camX+320+64 image_xscale=-1 canAttack=3}
 //}
 
+weaponExtraAngle=0
+
+if weapontype=4 weaponExtraAngle=270
+
 overwriteAttack=1
 overwriteAttack1=1
 overwriteAttack2=1
 overwriteAttack3=1
 overwriteAttack4=1
 overwriteAttack5=1
+
+if weapontype=3 or weapontype=4 rangeAtk=160
+else rangeAtk=90
 
 if overwriteAttack=1
 if anim=10 ///Attack Stand
@@ -87,6 +94,12 @@ if weapontype=3
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 anim=132 else anim=135
+}
+
+if weapontype=4
+{
+if distance_to_point(targetEnemy.x,targetEnemy.y)>50
+anim=1340 else anim=135
 }
 
 if weapontype=5 {animFrame=0 anim=134}
@@ -180,10 +193,34 @@ animFrame+=0.2 if animFrame>2.6 {hurt=0 atk=0 canmove=1 hit=0
 }
 }
 
+if anim=1340 ///Gunfire
+{var imgskp=0;
+sprite_index=spr_swing_handgun
+if animFrame<1
+{
+if animFrame<0.25 {weaponanim(weaponspr,weaponIndex,17,-69,135,weaponcolor) imgskp=1 }
+else {weaponanim(weaponspr,weaponIndex,23,-44,90,weaponcolor)}}
 
+frame_set(0,imgskp,0.025)
+	if animFrame=1 {		PlaySound(snd_gun)		
+	flashFX(x+38*image_xscale,y,z-50,weaponProjFlashSpr,0,1,0,1,1,c_white,1)
+	projectile_create(x+38*image_xscale,y,z-50,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile.HitSound=weaponProjHitSnd
+	}
+	
+	frame_set(1,1,0.25)
+	frame_set(2,2,0.1)
+	frame_set(3,2,0.25) if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0}
+	
+	if animFrame>1 {if animFrame<2 weaponanim(weaponspr,weaponIndex,17,-69,135,weaponcolor) 
+	else {weaponanim(weaponspr,weaponIndex,22,-70,135,weaponcolor)
+	}}
+
+
+}
 
 if anim=135 ///Shove
-{
+{weaponanim(weaponspr,weaponIndex,29992,-70,135*image_xscale,weaponcolor)
 hitFXreset() selfatk.HitSound=snd_hit animFrame+=0.1
 sprite_index=AtkSpr2 weaponAttack=0 image_index=animFrame if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
 atkAddX=16 atkAddY=0 atkAddZ=0 selfatk.targetHeight=0

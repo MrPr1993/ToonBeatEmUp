@@ -27,14 +27,18 @@ DeathCry=snd_femenemy2
 
 weapontype=0 
 
-weapon_add("HAMMER") canTrack=1 weaponcanRecharge=0
+//weapon_add("HAMMER") 
+canTrack=0 weaponcanRecharge=0
 //var randH; randH=round(random(3)) if randH=0 {weapon_add("HAMMER") canTrack=1 weaponcanRecharge=0} if randH=1 {weapon_add("DYNAMITE") canTrack=0 weaponcanRecharge=1 weaponRechargeT="DYNAMITE"} if randH=2 {weapon_add("KNIFE") canTrack=0 weaponcanRecharge=1 weaponRechargeT="KNIFE"} if randH=3 {weapon_add("WHIP") canTrack=0 weaponcanRecharge=1 weaponRechargeT="KNIFE"}
 //weapon_add("PIE") canTrack=0 weaponcanRecharge=1 weaponRechargeT="KNIFE"
 
 enemyscript=animsetup_swing
 
 if oControl.betatest=1
-if keyboard_check(vk_control) weapon_add("WHIP")
+if keyboard_check(vk_control) 
+{if keyboard_check(vk_space) weapon_add("HANDGUN")
+	else weapon_add("WHIP") 
+}
 
 rangeAtk=90
 
@@ -43,7 +47,7 @@ OneAttack=2
 hp=0.2
 maxhp=0.2
 
-height=70
+height=88
 
 specialFX=0
 
@@ -86,6 +90,7 @@ spritepos_setup(2,24,-3,76)
 
 canTaunt=0
 
+my_pal_sprite=spr_swingpal
 current_pal=2;
 
 

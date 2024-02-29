@@ -139,8 +139,26 @@ weaponBack=1
 weaponRange=100
 weaponDamage=0.1
 weapontargetHeight=2
-weapontype=0
+weapontype=4
 weaponHitType=0
+}
+
+if wpadd="HANDGUN"
+{
+spawnID=oGun
+weaponspr=spr_gun
+weaponIndex=0
+weaponX=14
+weaponY=-69
+weaponangle=180
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.1
+weapontargetHeight=2
+weapontype=4
+weaponHitType=0
+weaponProjFlashSpr=spr_gunflash
 }
 
 if wpadd="DYNAMITE"
