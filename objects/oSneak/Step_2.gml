@@ -54,11 +54,13 @@ else
 {
 anim=12///Slide
 
+if anim=12
+{
 if current_pal=1 anim=14///Explosive
 if current_pal=2 anim=12///Throw Diva
 if current_pal=3 anim=choose(12,13)
 if current_pal=4 anim=choose(12,12,13,14)///All
-
+}
 
 }
 }

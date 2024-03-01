@@ -513,6 +513,7 @@
     {"name":"oWhip","order":22,"path":"objects/oWhip/oWhip.yy",},
     {"name":"snd_SofiaScream","order":76,"path":"sounds/snd_SofiaScream/snd_SofiaScream.yy",},
     {"name":"oWoodenDummy","order":29,"path":"objects/oWoodenDummy/oWoodenDummy.yy",},
+    {"name":"enemy_switch","order":78,"path":"scripts/enemy_switch/enemy_switch.yy",},
     {"name":"mask_croc","order":13,"path":"sprites/mask_croc/mask_croc.yy",},
     {"name":"snd_stonebreaks","order":22,"path":"sounds/snd_stonebreaks/snd_stonebreaks.yy",},
     {"name":"oZombieWoman","order":1,"path":"objects/oZombieWoman/oZombieWoman.yy",},

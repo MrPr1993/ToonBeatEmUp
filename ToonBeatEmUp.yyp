@@ -681,6 +681,7 @@
     {"id":{"name":"oWitch","path":"objects/oWitch/oWitch.yy",},},
     {"id":{"name":"snd_SofiaScream","path":"sounds/snd_SofiaScream/snd_SofiaScream.yy",},},
     {"id":{"name":"oWoodenDummy","path":"objects/oWoodenDummy/oWoodenDummy.yy",},},
+    {"id":{"name":"enemy_switch","path":"scripts/enemy_switch/enemy_switch.yy",},},
     {"id":{"name":"oWrestler","path":"objects/oWrestler/oWrestler.yy",},},
     {"id":{"name":"mask_croc","path":"sprites/mask_croc/mask_croc.yy",},},
     {"id":{"name":"oZombieMan","path":"objects/oZombieMan/oZombieMan.yy",},},
