@@ -9,7 +9,8 @@ overwriteAttack3=1
 	///Attacks
 	if anim=10 ///Attack Stand
 	{
-	anim=choose(11,12)
+	if distance_to_point(targetEnemy.x,targetEnemy.y)>50
+	anim=12 else anim=11
 	
 	if anim=11 if weaponspr!=-1 anim=1100
 	}
@@ -63,10 +64,11 @@ else
 	atkcol_set(30,0,10,1.25,1,50)
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.1) if animFrame=2 {PlaySoundNoStack(snd_swing) PlaySoundNoStack(snd_bear3)}
-	frame_set(2,2,0.5) if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
-	frame_set(3,3,0.1)
-	frame_set(4,0,0.1)
-	if animFrame>4.5 canmove=1
+	frame_set(2,2,0.25) if animFrame=clamp(animFrame,3,3.9) atk=1 else atk=0
+	frame_set(3,3,0.5)
+	frame_set(4,3,0.1)
+	frame_set(5,0,0.1)
+	if animFrame>5.5 canmove=1
 	
 	if image_index=clamp(image_index,0,0.9)
 	weaponanim(weaponspr,weaponIndex,16,-22,67,weaponcolor)

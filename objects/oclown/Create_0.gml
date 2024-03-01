@@ -5,6 +5,7 @@ enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=38
 
 enemyscript=animsetup_enemy
+chardraw=draw_swing_2
 
 DamageVoice1=snd_femenemy8
 DamageVoice2=snd_femenemy8
@@ -18,10 +19,10 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.5
-maxhp=0.5
+hp=0.4
+maxhp=0.4
 
-height=90
+height=100
 
 specialFX=0
 
@@ -49,6 +50,19 @@ hasDizzy=1 DizzySpr=spr_clown_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_bearpal
+
+dropweapon=0
+
+weaponanim_2(mask_none,0,0,0,0,0)
+weaponBack2=0
+
+weapon_add_double("JUGGLE")
+
+if oControl.betatest
+{
+if keyboard_check(vk_shift) weapon_add_double("TWIRL")
+if keyboard_check(vk_control) weapon_add_double("WHIP")
+}
 
 spritepos_setup(1,24,5,61) ///Waist, Frame 24
 spritepos_setup(2,24,12,85) ///Head, Frame 24

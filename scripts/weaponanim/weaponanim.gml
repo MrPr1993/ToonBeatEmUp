@@ -20,3 +20,19 @@ function weaponanim(argument0, argument1, argument2, argument3, argument4, argum
 
 
 }
+
+///This will be used if the enemy uses double weapons
+function weaponanim_2(argument0, argument1, argument2, argument3, argument4, argument5) {
+
+
+
+	weaponspr2=argument0
+	weaponIndex2=argument1
+	weaponX2=argument2
+	weaponY2=argument3
+	weaponangle2=argument4
+	weaponcolor2=argument5
+
+
+
+}

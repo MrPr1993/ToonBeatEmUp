@@ -126,6 +126,8 @@ charNO=1
 
 showBlend=1
 
+weaponanim_2(mask_none,0,0,0,0,0)
+
 setunlock=5
 repeat(0)
 {

@@ -256,3 +256,22 @@ WswingSound=snd_swing2
 
 
 }
+
+function weapon_add_double(_type)
+{
+if _type="JUGGLE"
+{
+weaponspr=spr_jugglepin
+weaponspr2=spr_jugglepin
+}
+if _type="TWIRL"
+{
+weaponspr=spr_twirlstick
+weaponspr2=-1
+}
+if _type="WHIP"
+{
+weaponspr=spr_whip
+weaponspr2=-1
+}
+}
