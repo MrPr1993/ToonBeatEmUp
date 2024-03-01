@@ -261,17 +261,26 @@ function weapon_add_double(_type)
 {
 if _type="JUGGLE"
 {
+spawnID=oJugglePin
+spawnID2=oJugglePin
 weaponspr=spr_jugglepin
 weaponspr2=spr_jugglepin
 }
 if _type="TWIRL"
 {
-weaponspr=spr_twirlstick
-weaponspr2=-1
+spawnID=-1
+spawnID2=oTwirlStick
+
+weaponspr=-1
+weaponspr2=spr_twirlstick
+
 }
 if _type="WHIP"
 {
-weaponspr=spr_whip
-weaponspr2=-1
+spawnID=-1
+spawnID2=oWhip
+
+weaponspr2=spr_whip
+weaponspr=-1
 }
 }

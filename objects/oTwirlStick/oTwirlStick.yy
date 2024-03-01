@@ -1,21 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oClown",
+  "name": "oTwirlStick",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Clown",
-    "path": "folders/7 - Enemies/Clown.yy",
+    "name": "Weapons",
+    "path": "folders/9 - Objects And Items/b - Items/Weapons.yy",
   },
   "parentObjectId": {
-    "name": "oEnemy1",
-    "path": "objects/oEnemy1/oEnemy1.yy",
+    "name": "oHammer",
+    "path": "objects/oHammer/oHammer.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,12 +31,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_clown_stand",
-    "path": "sprites/spr_clown_stand/spr_clown_stand.yy",
+    "name": "spr_twirlstickB",
+    "path": "sprites/spr_twirlstickB/spr_twirlstickB.yy",
   },
   "spriteMaskId": {
-    "name": "mask_small",
-    "path": "sprites/mask_small/mask_small.yy",
+    "name": "spr_selfatk",
+    "path": "sprites/spr_selfatk/spr_selfatk.yy",
   },
   "visible": true,
 }

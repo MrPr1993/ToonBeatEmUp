@@ -9,7 +9,10 @@ overwriteAttack3=1
 	///Attacks
 	if anim=10 ///Attack Stand
 	{
-	if distance_to_point(targetEnemy.x,targetEnemy.y)>50
+	var wepdist=50;
+	if weaponspr!=-1 wepdist=65
+	
+	if distance_to_point(targetEnemy.x,targetEnemy.y)>wepdist
 	anim=12 else anim=11
 	
 	if anim=11 if weaponspr!=-1 anim=1100
@@ -44,7 +47,7 @@ if sprite_index=spr_bear_attack2
 	if image_index=clamp(image_index,0,0.9)
 	weaponanim(weaponspr,weaponIndex,16,-27,67,weaponcolor)
 	if image_index=clamp(image_index,1,1.9)
-weaponanim(weaponspr,weaponIndex,-18,-23,90,weaponcolor)
+weaponanim(weaponspr,weaponIndex,18,-23,90,weaponcolor)
 }
 else
 	weaponanim(weaponspr,weaponIndex,16,-22,67,weaponcolor)

@@ -12,10 +12,12 @@ DamageVoice2=snd_femenemy8
 DamageVoice3=snd_femenemy8
 DeathCry=snd_femenemy3
 
+idlestyle=1
+
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=180
 
 OneAttack=2
 
@@ -50,6 +52,8 @@ hasDizzy=1 DizzySpr=spr_clown_dizzy
 
 current_pal=0;
 my_pal_sprite=spr_bearpal
+
+
 
 dropweapon=0
 
