@@ -50,6 +50,7 @@ BurnSpr=spr_shroom_burned
 FrozenSpr=spr_shroom_frozen
 hasDizzy=1 DizzySpr=spr_shroom_dizzy
 
+enemyID=97
 
 current_pal=0;
 my_pal_sprite=spr_playerpal

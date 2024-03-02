@@ -3,6 +3,8 @@
 
 //draw_charinfoicon(1,spr_playerface,2,1,1)
 
+
+
 function draw_charinfoicon(){
 if dataSelect=clamp(dataSelect,argument0-7,argument0+7)
 {if unlockedChar[argument0]=0 {shader_reset()draw_set_color(c_black)}

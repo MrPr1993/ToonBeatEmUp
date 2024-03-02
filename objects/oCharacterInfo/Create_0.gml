@@ -9,6 +9,17 @@ name="VIVA"
 enemyPortraitSpr=spr_playerface
 enemyPortraitIndex=0
 
+frameSpr=spr_painting_base
+frameSprElec=spr_painting_elec
+frameInd=0
+frameTotal=0
+
+paintingSpr=spr_painting1
+paintingInd=0
+paintingScale=1
+
+frameParts=spr_painting_part
+
 descleft=""
 descright=""
 
@@ -115,6 +126,8 @@ weapontype=0
 weaponHitType=1
 WswingSound=snd_swing3
 
+weapon_add_double("JUGGLE")
+
 unlockedChar[99]=0
 setunlock=0
 
@@ -150,6 +163,8 @@ dataabilities="ELECTRICITY,SINGING,\nCOOKING,CHESS,FILMS"
 dataRowMax=4
 
 categoryNames="DIVAS"
+
+weaponBack2=0
 
 customText=-1
 customText2=-1

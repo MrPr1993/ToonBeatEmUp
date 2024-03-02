@@ -262,8 +262,7 @@ global.UnlockStageC[16]=0
 
 stagedata_load()
 
-global.UnlockEnemy[99]=0
-enemydata_setup()
+global.UnlockEnemy[200]=0
 
 enemydata_load()
 

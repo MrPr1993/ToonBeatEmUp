@@ -52,5 +52,7 @@ hasDizzy=1 DizzySpr=spr_alienrobot_dizzy
 current_pal=0;
 my_pal_sprite=spr_robotpal
 
+enemyID=91
+
 spritepos_setup(1,24,7,30)
 spritepos_setup(2,24,12,49)

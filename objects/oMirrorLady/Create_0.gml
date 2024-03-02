@@ -86,4 +86,6 @@ if enemyspawn[9]!=0 if !instance_exists(enemyspawn[9]) enemyspawn[9]=0 else hp+=
 
 }
 
+enemyID=168
+
 if oControl.betatest if keyboard_check(vk_control) {image_alpha=0 anim=100}

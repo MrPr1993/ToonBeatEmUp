@@ -85,6 +85,8 @@ BurnSpr=spr_ghost_burned
 FrozenSpr=spr_ghost_frozen
 
 
+enemyID=155
+
 spritepos_setup(1,24,-6,63)
 spritepos_setup(2,0,-6,94)
 spritepos_setup(2,24,-6,94)

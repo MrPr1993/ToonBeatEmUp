@@ -55,6 +55,8 @@ hasDizzy=1 DizzySpr=spr_samurai_dizzy
 current_pal=0;
 my_pal_sprite=spr_ninjapal
 
+enemyID=58
+
 spritepos_setup(1,24,-1,40)
 
 spritepos_setup(2,0,5,65)

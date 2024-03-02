@@ -62,7 +62,9 @@ specialcheck1+=1 if specialcheck1>120 {anim=10}
 
 ////Dead
 if anim=12
-{if animFrame=0 {specialtimes[0]=0 oControl.quakeFXTime=10}
+{if animFrame=0 {specialtimes[0]=0 oControl.quakeFXTime=10
+	enemydeathcount()
+	}
 sprite_index=spr_mirrorlady_uhoh
 frame_set(0,1,0.01)
 frame_set(1,0,0.1)

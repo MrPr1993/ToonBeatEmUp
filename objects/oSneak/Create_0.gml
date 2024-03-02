@@ -11,7 +11,7 @@ weaponBack=1;
 enterAnim=14 
 //leaveAnim=12
 
-enemyID=3
+enemyID=10
 
 drawarms=1;
 

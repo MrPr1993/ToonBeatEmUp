@@ -48,6 +48,8 @@ ShockSpr=spr_dastardly2_elec
 BurnSpr=spr_dastardly2_burned
 FrozenSpr=spr_dastardly2_frozen
 
+enemyID=177
+
 spritepos_setup(1,24,13,52)
 spritepos_setup(2,24,11,79)
 

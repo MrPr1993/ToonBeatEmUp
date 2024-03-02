@@ -23,6 +23,7 @@ if spawned=2
 	if z>0 if ground=0 {spawned=3 ground=1 zSpeed=0 z=0 shadow=-1
 		
 		spawn=instance_create_depth(x,y+spawnYAdd,-1,spawnEnemy) if name!=-1 spawn.name=name
+		if enemyID!=-1 spawn.enemyID=enemyID
 		spawn.z=z spawn.my_pal_sprite=my_pal_sprite spawn.current_pal=current_pal
 		if hp!=-1
 		{spawn.hp=hp; spawn.maxhp=maxhp;}

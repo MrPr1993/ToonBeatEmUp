@@ -68,5 +68,7 @@ if keyboard_check(vk_shift) weapon_add_double("TWIRL")
 if keyboard_check(vk_control) weapon_add_double("WHIP")
 }
 
+enemyID=60
+
 spritepos_setup(1,24,5,61) ///Waist, Frame 24
 spritepos_setup(2,24,12,85) ///Head, Frame 24

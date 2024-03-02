@@ -71,7 +71,7 @@ spritepos_setup(1,24,5,43)
 spritepos_setup(2,6,10,-4)
 spritepos_setup(2,24,-10,77)
 
-
+ enemyID=25
 
 specialtaunt=function()
 {

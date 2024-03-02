@@ -50,6 +50,7 @@ BurnSpr=spr_spacer_burned
 FrozenSpr=spr_spacer_frozen
 DizzySpr=spr_spacer_dizzy hasDizzy=1
 
+enemyID=93
 
 current_pal=0;
 my_pal_sprite=spr_fairypal

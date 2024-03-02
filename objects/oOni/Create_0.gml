@@ -55,6 +55,8 @@ ShockSpr=spr_oni_elec
 BurnSpr=spr_oni_burned
 FrozenSpr=spr_oni_frozen
 
+enemyID=157
+
 spritepos_setup(1,24,4,72)
 spritepos_setup(2,0,0,102)
 spritepos_setup(2,24,0,102)

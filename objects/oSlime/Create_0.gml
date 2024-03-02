@@ -49,6 +49,7 @@ ShockSpr=spr_slime_elec
 BurnSpr=spr_slime_burned
 FrozenSpr=spr_slime_frozen
 
+enemyID=101
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

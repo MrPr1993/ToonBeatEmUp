@@ -55,5 +55,7 @@ enemyIdle2=spr_fairy_front
 current_pal=0;
 my_pal_sprite=spr_fairypal
 
+enemyID=69
+
 spritepos_setup(1,24,-1,47)
 spritepos_setup(2,24,-2,65)

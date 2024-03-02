@@ -77,6 +77,8 @@ animLock=0
 
 overwriteMove=1
 
+enemyID=153
+
 //isIdle=1
 //canAttack=6
 

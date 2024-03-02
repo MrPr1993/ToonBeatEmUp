@@ -20,6 +20,8 @@ pointshit=10
 points=100
 bombs=0
 
+
+
 hp=0.2
 maxhp=0.2
 
@@ -110,3 +112,5 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 if animFrame>1.9 animFrame=0
 }
+
+enemyID=20

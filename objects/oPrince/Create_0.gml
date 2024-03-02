@@ -56,6 +56,8 @@ specialBossState=1
 spritepos_setup(1,24,5,58)
 spritepos_setup(2,24,1,96)
 
+enemyID=165 //enemyID=166 for water copies
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

@@ -53,6 +53,8 @@ FrozenSpr=spr_witch_frozen
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+enemyID=159
+
 isBoss=1
 specialBossState=1
 

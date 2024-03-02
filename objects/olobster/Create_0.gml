@@ -52,5 +52,7 @@ hasDizzy=1 DizzySpr=spr_lobster_dizzy
 current_pal=0;
 my_pal_sprite=spr_lobsterpal
 
+enemyID=75
+
 spritepos_setup(1,24,0,39)
 spritepos_setup(2,24,13,64)

@@ -341,6 +341,7 @@
     {"name":"oEntryClimb","order":2,"path":"objects/oEntryClimb/oEntryClimb.yy",},
     {"name":"spr_dastardly2_attack5","order":12,"path":"sprites/spr_dastardly2_attack5/spr_dastardly2_attack5.yy",},
     {"name":"oEntryFenceJump","order":3,"path":"objects/oEntryFenceJump/oEntryFenceJump.yy",},
+    {"name":"spr_lockedprofile","order":95,"path":"sprites/spr_lockedprofile/spr_lockedprofile.yy",},
     {"name":"oEntryHorse","order":4,"path":"objects/oEntryHorse/oEntryHorse.yy",},
     {"name":"oEntryJump","order":5,"path":"objects/oEntryJump/oEntryJump.yy",},
     {"name":"objSlot3","order":6,"path":"objects/objSlot3/objSlot3.yy",},

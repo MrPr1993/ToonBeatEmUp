@@ -53,6 +53,8 @@ spritepos_setup(2,24,9,93)
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+enemyID=163
+
 if oControl.betatest=1
 if keyboard_check(vk_control)
 {

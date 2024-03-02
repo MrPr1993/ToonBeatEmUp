@@ -58,6 +58,7 @@ FrozenSpr=spr_snowgirl_frozen
 hasFront=1
 FrontSpr=spr_snowgirl_front
 
+enemyID=107
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

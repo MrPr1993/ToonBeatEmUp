@@ -5,7 +5,7 @@ with clubb2 instance_destroy()
 
 en1=instance_create_depth(oni1.x,oni1.y,-1,oOni)
 with oni1 instance_destroy()
-en2=instance_create_depth(oni2.x,oni2.y,-1,oOni) with en2 {current_pal=7 name="SHOKIJO"}
+en2=instance_create_depth(oni2.x,oni2.y,-1,oOni) with en2 {enemyID=158 current_pal=7 name="SHOKIJO"}
 with oni2 instance_destroy()
 
 PlaySound(snd_heavystep)

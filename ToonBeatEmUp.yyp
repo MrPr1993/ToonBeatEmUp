@@ -467,6 +467,7 @@
     {"id":{"name":"oEntryClimb","path":"objects/oEntryClimb/oEntryClimb.yy",},},
     {"id":{"name":"spr_dastardly2_attack5","path":"sprites/spr_dastardly2_attack5/spr_dastardly2_attack5.yy",},},
     {"id":{"name":"oEntryFenceJump","path":"objects/oEntryFenceJump/oEntryFenceJump.yy",},},
+    {"id":{"name":"spr_lockedprofile","path":"sprites/spr_lockedprofile/spr_lockedprofile.yy",},},
     {"id":{"name":"oEntryHorse","path":"objects/oEntryHorse/oEntryHorse.yy",},},
     {"id":{"name":"oEntryJump","path":"objects/oEntryJump/oEntryJump.yy",},},
     {"id":{"name":"objSlot3","path":"objects/objSlot3/objSlot3.yy",},},

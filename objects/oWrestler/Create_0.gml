@@ -77,6 +77,8 @@ spritepos_setup(2,24,28,36)
 
 enemyscript=animsetup_zombie
 
+ enemyID=30
+
 specialtaunt=function()
 {
 sprite_index=spr_wrestler_taunt

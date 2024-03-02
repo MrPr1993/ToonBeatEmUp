@@ -53,7 +53,7 @@ DizzySpr=spr_monk_dizzy hasDizzy=1
 current_pal=2;
 my_pal_sprite=spr_ninjapal
 
-
+ enemyID=34
 
 spritepos_setup(1,24,2,53)
 spritepos_setup(2,24,0,71)

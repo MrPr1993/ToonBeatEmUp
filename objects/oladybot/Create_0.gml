@@ -52,5 +52,7 @@ hasDizzy=1 DizzySpr=spr_ladybot_dizzy
 current_pal=0;
 my_pal_sprite=spr_robotpal
 
+enemyID=114
+
 spritepos_setup(1,24,8,57)
 spritepos_setup(2,24,0,91)

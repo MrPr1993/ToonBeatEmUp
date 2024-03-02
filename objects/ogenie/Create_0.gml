@@ -62,5 +62,7 @@ FrozenSpr=spr_genie_frozen
 spritepos_setup(1,24,10,47)
 spritepos_setup(2,24,-3,88)
 
+enemyID=167
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal

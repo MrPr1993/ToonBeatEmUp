@@ -60,5 +60,7 @@ my_pal_sprite=spr_bearpal
 spritepos_setup(1,24,4,20)
 spritepos_setup(1,24,4,44)
 
+enemyID=63
+
 if oControl.betatest if keyboard_check(vk_control)
 weapon_add("TOYHAMMER")

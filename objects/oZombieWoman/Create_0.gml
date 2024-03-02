@@ -55,6 +55,8 @@ DizzySpr=spr_zombiew_dizzy hasDizzy=1
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+enemyID=42
+
 spritepos_setup(1,24,-4,47)
 
 spritepos_setup(2,0,15,72)

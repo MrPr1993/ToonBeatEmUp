@@ -57,7 +57,7 @@ offScreenMode=1
 
 isHeavy=1
 
-
+enemyID=151
 
 animLock=0
 

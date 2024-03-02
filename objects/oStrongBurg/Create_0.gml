@@ -56,6 +56,8 @@ FrozenSpr=spr_strongburg_frozen
 
 DizzySpr=spr_strongburg_dizzy hasDizzy=1
 
+ enemyID=32
+
 specialtaunt=function()
 {
 sprite_index=spr_strongburg_taunt

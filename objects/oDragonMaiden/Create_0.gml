@@ -90,7 +90,7 @@ necc.isDepth=0 necc.depth=16777213 necc.shadow=mask_none
 handL=instance_create_depth(__view_get( e__VW.XView, 0 )-200,y,-1,oDragonHand) 
 handL.anim=9999	
 
-
+enemyID=174
 
 if oControl.betatest=1 if keyboard_check(vk_control)
 {x=body.x tail.x=x lockPos=0 isdepth=0 depth=16777213

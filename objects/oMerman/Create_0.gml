@@ -66,5 +66,7 @@ enemyIdle2=spr_merman_front
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+enemyID=82
+
 spritepos_setup(1,24,3,44)
 spritepos_setup(2,24,15,73)

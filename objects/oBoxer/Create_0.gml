@@ -62,6 +62,8 @@ spritepos_setup(2,24,-12,93)
 //isIdle=1
 //canAttack=6
 
+ enemyID=28
+
 specialtaunt=function()
 {
 sprite_index=spr_boxer_taunt

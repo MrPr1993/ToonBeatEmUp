@@ -47,6 +47,8 @@ DamageVoice1=snd_hwolf2
 DamageVoice2=snd_hwolf2
 DamageVoice3=snd_hwolf2
 
+enemyID=150
+
 
 DeathCry=snd_hwolf1
 

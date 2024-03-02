@@ -13,7 +13,7 @@ DamageVoice3=snd_femenemy6
 DeathCry=snd_femenemy1
 HitGround=snd_hitground
 
-enemyID=4
+enemyID=15
 
 rangeAtk=200
 
@@ -30,6 +30,8 @@ maxhp=0.2
 height=90
 
 specialFX=0
+
+
 
 StandSpr=spr_femburglar_stand
 MoveSpr=spr_femburglar_move

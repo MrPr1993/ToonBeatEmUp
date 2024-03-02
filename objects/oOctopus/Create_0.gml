@@ -70,6 +70,8 @@ tent2=-1;
 tent3=-1;
 tent4=-1;
 
+enemyID=161
+
 
 if oControl.betatest=1 if keyboard_check(vk_shift)
 {immune=1

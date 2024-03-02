@@ -10,6 +10,8 @@ animFrame=0
 
 fallHole=0
 
+ground=1
+
 shadow=spr_shadow
 
 anim=0

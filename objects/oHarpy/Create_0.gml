@@ -64,6 +64,8 @@ BurnSpr=spr_harpy_burned
 FrozenSpr=spr_harpy_frozen
 hasDizzy=1 DizzySpr=spr_harpy_dizzy
 
+enemyID=152
+
 spritepos_setup(1,24,-2,41)
 spritepos_setup(2,0,27,72)
 spritepos_setup(2,24,27,72)

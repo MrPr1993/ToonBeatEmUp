@@ -49,6 +49,7 @@ if spawned=2
 		
 		spawn=instance_create_depth(x,y+spawnYAdd,-1,spawnEnemy) if name!=-1 spawn.name=name
 		spawn.z=z spawn.my_pal_sprite=my_pal_sprite spawn.current_pal=current_pal spawn.image_xscale=image_xscale
+		if enemyID!=-1 spawn.enemyID=enemyID
 		if hp!=-1
 		{spawn.hp=hp; spawn.maxhp=maxhp;}
 		//with spawnEnemy {hurt=1 canmove=0 animFrame=10 anim=25}

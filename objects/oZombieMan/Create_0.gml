@@ -53,6 +53,7 @@ BurnSpr=spr_zombiem_burned
 FrozenSpr=spr_zombiem_frozen
 DizzySpr=spr_zombiem_dizzy hasDizzy=1
 
+enemyID=39
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

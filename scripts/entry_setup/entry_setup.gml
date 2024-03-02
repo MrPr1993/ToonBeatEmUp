@@ -3,6 +3,7 @@
 function entry_setup(){
 /// @description Insert description here
 // You can write your code in this editor
+enemyID=-1
 
 colorshade_setup()
 

@@ -54,6 +54,8 @@ specialBossState=1
 
 shadowSpr=spr_midshadow
 
+enemyID=176
+
 spritepos_setup(1,24,4,39)
 spritepos_setup(2,24,37,69)
 

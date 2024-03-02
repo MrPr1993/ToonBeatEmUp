@@ -53,6 +53,8 @@ my_pal_sprite=spr_zombiepal
 isBoss=1
 specialBossState=1
 
+enemyID=175
+
 spritepos_setup(1,24,2,48)
 spritepos_setup(2,24,42,82)
 

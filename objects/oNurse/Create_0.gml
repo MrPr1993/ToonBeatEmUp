@@ -1,6 +1,6 @@
 enemy_data()
 
-name="NURSE"
+name="DR.PERO"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=48
 
@@ -48,6 +48,7 @@ BurnSpr=spr_nurse_burned
 FrozenSpr=spr_nurse_frozen
 hasDizzy=1 DizzySpr=spr_nurse_dizzy
 
+enemyID=110
 
 enemyIdle1=spr_nurse_idle1
 enemyIdle2=spr_nurse_front

@@ -99,3 +99,4 @@ spritepos_setup(2,16,-5,87)
 my_pal_sprite=spr_robotpal
 current_pal=0
 
+enemyID=17

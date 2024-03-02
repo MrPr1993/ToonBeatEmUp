@@ -85,6 +85,8 @@ lockXadd=0
 lockXmode=0
 lockXaddTime=120
 
+enemyID=164
+
 if oControl.betatest=1 if keyboard_check(vk_shift)
 {z=-200 
 lockZ=z

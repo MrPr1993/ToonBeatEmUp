@@ -56,6 +56,8 @@ hasDizzy=1 DizzySpr=spr_plant_dizzy
 current_pal=0;
 my_pal_sprite=spr_plantpal
 
+enemyID=72
+
 spritepos_setup(1,24,4,37)
 spritepos_setup(2,6,0,2)
 spritepos_setup(2,24,10,70)

@@ -54,6 +54,8 @@ DizzySpr=spr_dancer_dizzy
 current_pal=0;
 my_pal_sprite=spr_dancerpal
 
+enemyID=77
+
 weapon_add("SCIMITAR")
 
 spritepos_setup(1,24,1,50) ///Waist, Frame 24

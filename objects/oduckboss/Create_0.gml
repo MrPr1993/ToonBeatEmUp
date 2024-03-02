@@ -48,6 +48,7 @@ ShockSpr=spr_duck_elec
 BurnSpr=spr_duck_burned
 FrozenSpr=spr_duck_frozen
 
+enemyID=160
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

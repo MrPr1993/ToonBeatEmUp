@@ -59,6 +59,7 @@ spritepos_setup(1,24,-5,25)
 spritepos_setup(2,6,0,2)
 spritepos_setup(2,24,-4,56)
 
+enemyID=95
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

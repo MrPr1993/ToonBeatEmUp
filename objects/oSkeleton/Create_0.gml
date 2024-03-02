@@ -52,3 +52,5 @@ spritepos_setup(2,24,2,73)
 
 current_pal=0;
 my_pal_sprite=spr_mummypal
+
+enemyID=45

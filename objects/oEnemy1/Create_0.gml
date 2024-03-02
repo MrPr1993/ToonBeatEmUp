@@ -1,6 +1,7 @@
 /// @description if you want to check on their data, you can check here
 enemy_data()
 
+
 enemyscript=animsetup_burglar
 enemyID=1
 dizzyPercentageMax=25
@@ -107,3 +108,4 @@ frame_set(2,2,0.1)
 if animFrame>2.9 animFrame=0
 }
 
+enemyID=1

@@ -59,6 +59,8 @@ height=100
 
 animLock=0
 
+enemyID=156
+
 //isIdle=1
 //canAttack=6
 

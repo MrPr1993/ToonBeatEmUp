@@ -68,3 +68,5 @@ bikeSpr=spr_burglarB_bike
 
 	enemyIdle3=spr_burglarB_idle3
 	enemyIdle3Spd=0.25
+	
+	enemyID=48
