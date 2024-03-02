@@ -396,4 +396,14 @@ if image_index=clamp(image_index,24,24.9)
 weaponanim(weaponspr,weaponIndex,-2,-39,12*image_xscale,weaponcolor)
 }
 
+	if anim=61 ///Newspaper
+{if animFrame=0 {specialtimes[0]=0 sprite_index=spr_sneak_newspaper} specialtimes[0]+=0.05 if specialtimes[0]=2 specialtimes[0]=0 MoveType=1 prevanim=61
+frame_set(0,specialtimes[0]=0,0)  if animFrame<0.5 if x=clamp(x,targetX-idleRange,targetX+idleRange) animFrame=1
+frame_set(1,2,0.1)
+frame_set(2,3,0.05) 
+frame_set(3,3,0.1) 
+frame_set(4,4,0.1) 
+frame_set(5,4,0.25) if animFrame>5 {canmove=1}
+}
+
 throw_step()

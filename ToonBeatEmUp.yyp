@@ -2010,6 +2010,7 @@
     {"id":{"name":"spr_bahati_getfish","path":"sprites/spr_bahati_getfish/spr_bahati_getfish.yy",},},
     {"id":{"name":"snd_martian1","path":"sounds/snd_martian1/snd_martian1.yy",},},
     {"id":{"name":"spr_burglar_cut1","path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},},
+    {"id":{"name":"spr_slimepal","path":"sprites/spr_slimepal/spr_slimepal.yy",},},
     {"id":{"name":"spr_monk_idle1","path":"sprites/spr_monk_idle1/spr_monk_idle1.yy",},},
     {"id":{"name":"spr_burglar_cut2","path":"sprites/spr_burglar_cut2/spr_burglar_cut2.yy",},},
     {"id":{"name":"snd_fdas12","path":"sounds/snd_fdas12/snd_fdas12.yy",},},

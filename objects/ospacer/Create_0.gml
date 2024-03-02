@@ -20,10 +20,10 @@ idlestyle=1
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=0.25
+maxhp=0.25
 
-height=70
+height=80
 
 specialFX=0
 

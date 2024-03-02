@@ -1763,6 +1763,7 @@
     {"name":"spr_bahati_getfish","order":81,"path":"sprites/spr_bahati_getfish/spr_bahati_getfish.yy",},
     {"name":"snd_martian1","order":41,"path":"sounds/snd_martian1/snd_martian1.yy",},
     {"name":"spr_burglar_cut1","order":13,"path":"sprites/spr_burglar_cut1/spr_burglar_cut1.yy",},
+    {"name":"spr_slimepal","order":27,"path":"sprites/spr_slimepal/spr_slimepal.yy",},
     {"name":"spr_monk_idle1","order":14,"path":"sprites/spr_monk_idle1/spr_monk_idle1.yy",},
     {"name":"spr_burglar_cut2","order":14,"path":"sprites/spr_burglar_cut2/spr_burglar_cut2.yy",},
     {"name":"snd_fdas12","order":1,"path":"sounds/snd_fdas12/snd_fdas12.yy",},

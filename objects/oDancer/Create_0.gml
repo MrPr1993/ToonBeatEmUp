@@ -16,8 +16,8 @@ idlestyle=1
 
 OneAttack=2
 
-hp=0.5
-maxhp=0.5
+hp=0.25
+maxhp=0.25
 
 DamageVoice1=snd_femenemy7
 DamageVoice2=snd_femenemy7

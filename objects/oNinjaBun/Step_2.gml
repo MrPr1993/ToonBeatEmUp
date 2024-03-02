@@ -28,7 +28,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 	if current_pal=2 or current_pal=3
 	anim=65
 	
-	if current_pal=5 anim=choose(65,9912)
+	if current_pal=2 anim=choose(65,9912)
 	
 		if current_pal=4
 		{
@@ -43,7 +43,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 	
 if anim=11 ///Card Throw
 {
-if current_pal=7 ///Bolas
+if current_pal=4 ///Bolas
 {
 sprite_index=spr_ninjabun_bolas	
 frame_set(0,0,0.25)

@@ -22,8 +22,8 @@ OneAttack=2
 
 idlestyle=1
 
-hp=0.2
-maxhp=0.2
+hp=0.25
+maxhp=0.25
 
 height=80
 

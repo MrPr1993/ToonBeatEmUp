@@ -23,7 +23,7 @@ with en9
 	spawnFall=spr_femburglar_jump
 	spawnFallIndex=0
 	spawnEnemy=oFemBurglar
-enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)
+enemy_switch("MS.CHILL",0)
 }
 en10=instance_create(__view_get( e__VW.XView, 0 )-32,192,oSneak)
 }

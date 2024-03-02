@@ -28,10 +28,10 @@ zLock=0
 
 OneAttack=2
 
-hp=0.4
-maxhp=0.4
+hp=0.3
+maxhp=0.3
 
-height=70
+height=80
 
 specialFX=0
 
