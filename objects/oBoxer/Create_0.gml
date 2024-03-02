@@ -6,6 +6,8 @@ name="MS.PUNCH"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=8
 
+hp=0.8 maxhp=0.8
+
 pointshit=10
 points=100
 

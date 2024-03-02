@@ -628,6 +628,7 @@
     {"id":{"name":"oShovel","path":"objects/oShovel/oShovel.yy",},},
     {"id":{"name":"snd_merman2","path":"sounds/snd_merman2/snd_merman2.yy",},},
     {"id":{"name":"oSiren","path":"objects/oSiren/oSiren.yy",},},
+    {"id":{"name":"octopus_draw","path":"scripts/octopus_draw/octopus_draw.yy",},},
     {"id":{"name":"spr_bcameo36","path":"sprites/spr_bcameo36/spr_bcameo36.yy",},},
     {"id":{"name":"spr_boat","path":"sprites/spr_boat/spr_boat.yy",},},
     {"id":{"name":"oSkeleton","path":"objects/oSkeleton/oSkeleton.yy",},},

@@ -470,6 +470,7 @@
     {"name":"oShotgun","order":15,"path":"objects/oShotgun/oShotgun.yy",},
     {"name":"oShovel","order":16,"path":"objects/oShovel/oShovel.yy",},
     {"name":"snd_merman2","order":50,"path":"sounds/snd_merman2/snd_merman2.yy",},
+    {"name":"octopus_draw","order":20,"path":"scripts/octopus_draw/octopus_draw.yy",},
     {"name":"spr_bcameo36","order":37,"path":"sprites/spr_bcameo36/spr_bcameo36.yy",},
     {"name":"spr_boat","order":41,"path":"sprites/spr_boat/spr_boat.yy",},
     {"name":"oSlotMachine","order":24,"path":"objects/oSlotMachine/oSlotMachine.yy",},

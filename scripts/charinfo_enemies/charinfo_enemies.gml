@@ -4,7 +4,7 @@ function charinfo_enemies(){
 switch (dataSelect) 
 {
   case 1:
-  hp=0.2 enemyID=0
+  hp=0.2 enemyID=1
   descleft="AGE:32\nNAT.:USA\nH: 4'10\nW: 140LBS"
 descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
   charinfo_set(5,spr_burglar_stand,3,animsetup_burglar,draw_enemy,spr_enemypal,2,spr_enemyface,1,"MR.BURG",
@@ -116,7 +116,7 @@ if dataPal=4 {weapon_add("DYNAMITE") enemy_switch("MS.THRU",0)}
 if dataPal=5 {weapon_add("KNIFE") enemy_switch("MS.BRAN",0)}
 
 break;
-  case 7:  enemyID=25
+  case 7:  enemyID=25 hp=0.8
  charinfo_set(11,spr_fatburglar_stand,3,animsetup_enemy,draw_enemy,spr_enemypal,2,spr_enemyface,3,"MR.LARGE",
  "BIG, RUDE AND NASTY, THESE GUYS CHARGE AT YOU AND EVEN TRY TO SQUASH YOU WITH THEIR REAR! DON'T GET FLATTENED!"
 )
@@ -130,7 +130,7 @@ enemy_switch("MR.HUGE",0)
 }
 
 break;
-  case 8:  enemyID=28
+  case 8:  enemyID=28 hp=0.8
  charinfo_set(13,spr_boxer_stand,2,animsetup_enemy,draw_enemy,spr_boxerpal,2,spr_enemyface,8,"MS.PUNCH",
  "QUICK ON THEIR TINY FEET, THEY WON'T HESTITATE IF YOU TRY TO GET A JUMP ON THEM. DON'T GET HIT!")
 if dataPal=2
@@ -138,16 +138,16 @@ if dataPal=2
 enemy_switch("MS.JAB",0)
 }
 break;
-  case 9:
-  idlestyle=1  enemyID=30
- charinfo_set(14,spr_wrestler_stand,0,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,19,"MS.SLAMS",
+  case 9: hp=0.8
+  idlestyle=1  enemyID=30 
+ charinfo_set(14,spr_wrestler_stand,2,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,19,"MS.SLAMS",
  "For being rotund, they can be quick to grab you and slam you hard, and can try and flatten you with a roll!")
 if dataPal=2
 {
 enemy_switch("MS.CRUSH",0)
 }
 break;
-  case 10:  enemyID=32
+  case 10:  enemyID=32 hp=1
  idlestyle=1
  charinfo_set(15,spr_strongburg_stand,2,animsetup_enemy,draw_enemy,spr_enemypal,2,spr_enemyface,37,"MR.CHIP",
 "A huge guy, he can use his massive arms to give you a deadly bear hug. He can also go for a spin if you get too close!")
@@ -156,8 +156,8 @@ if dataPal=2
 enemy_switch("MR.DALE",0)
 }
 break;
-  case 11:
- idlestyle=1  enemyID=34
+  case 11: hp=0.35
+ idlestyle=1  enemyID=34 
  charinfo_set(16,spr_monk_stand,3,animsetup_enemy,draw_enemy,spr_ninjapal,2,spr_enemyface,44,"MS.KI",
 "Trained under martial arts, she can blast you with her ki and can use their hip to collide you with if you're away.")
 if dataPal=2
@@ -166,7 +166,7 @@ if dataPal=3
 enemy_switch("MS.MANA",0)
 
 break;
-  case 12:
+  case 12: hp=0.3
  idlestyle=1 enemyID=37
  charinfo_set(16,spr_harpye_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,61,"WINGY",
 "They take on the skies with fashion sense, and will aim those who they will love to bother as they tackle them down.")
@@ -202,14 +202,14 @@ break;
   hp=0.25 enemyID=45
    if dataPal=1
 {current_pal=0
- charinfo_set(12,spr_skeleton_stand,2,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,21,"SKELLA", 
+ charinfo_set(12,spr_skeleton_stand,2,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,21,"SKELLA", 
  "They appropiate themselves by becoming sassy, and they resort on kicks from their ballerina routine.")}
     if dataPal=2
 {current_pal=1 enemyID=46
- charinfo_set(12,spr_skeleton_stand,2,animsetup_enemy,draw_enemy,spr_zombiepal,1,spr_enemyface,21,"SKELIE", 
+ charinfo_set(12,spr_skeleton_stand,2,animsetup_enemy,draw_enemy,spr_mummypal,1,spr_enemyface,21,"SKELIE", 
  "These skeletons of jugglers will show up and have a bone to pick with you! And throw it.")} 
 break;
-  case 16: enemyID=47
+  case 16: enemyID=47 hp=0.3
  charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"POLTERGEIST",
 "A haunted bladed weapon that's taken over with remnants of a spirit obsessed with heads.")
 break;
@@ -370,10 +370,10 @@ break;
 case 29: hp=0.3 enemyID=82
  charinfo_set(12,spr_merman_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,25,"DOUGLAS",
 "A fish man guard who's tasked in taking intruders out and use either a spear or trident to stab you with.")
-break;
+
   if dataPal=2 {enemy_switch("ERIK",0)}
   if dataPal=3 {enemy_switch("ADAM",0)}
-
+break;
   case 30:
  idlestyle=1 hp=0.2 enemyID=85
  charinfo_set(12,spr_siren_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,26,"SIRENA",
@@ -435,7 +435,7 @@ break;
 break;
   case 37: enemyID=107
   idlestyle=1 hp=1
- charinfo_set(12,spr_snowgirl_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,48,"PRIMA",
+ charinfo_set(12,spr_snowgirl_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,51,"PRIMA",
  "A huge creature who will gonna love them, hug them, pet them and freeze them with their breath.")
      if dataPal=2 {enemy_switch("EVA",0)}
     if dataPal=3 {enemy_switch("UNDA",0)}
@@ -444,7 +444,7 @@ break;
 
   case 38:
   idlestyle=1 hp=0.2 enemyID=110
- charinfo_set(12,spr_nurse_stand,0,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,52,"DR.PERO",
+ charinfo_set(12,spr_nurse_stand,4,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,48,"DR.PERO",
  "Whenever they need someone to assist, they will as they throw in their unsefe concoctions, so beware.")
   if dataPal=2 {enemy_switch("DR.SULF",0)}
     if dataPal=3 {enemy_switch("DR.MONIA",0)}
@@ -459,7 +459,7 @@ break;
  
 }
 
-unlockedChar[enemyID]=global.UnlockEnemy[enemyID] if unlockedChar[enemyID]=0 image_blend=c_black
+unlockedChar[enemyID]=global.UnlockEnemy[enemyID] if unlockedChar[enemyID]!=0  image_blend=c_white else image_blend=c_black
 if image_blend=c_black {name="???" desc="" idlestyle=0
 	  descleft=""
 descright=""

@@ -166,12 +166,15 @@ languagetext[0]="DIVAS"
 languagetext[1]="ENEMIES"
 languagetext[2]="BOSSES"
 languagetext[3]="LOCATIONS"
+languagetext[4]="DEFEATED"
+
 break;
 case 1:
 languagetext[0]="DIVAS"
 languagetext[1]="ENEMIGOS"
 languagetext[2]="JEFES"
 languagetext[3]="UBICACIONES"
+languagetext[4]="DERROTADOS"
 break;
 
 }

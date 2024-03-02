@@ -26,8 +26,8 @@ OneAttack=2
 
 
 
-hp=0.6
-maxhp=0.6
+hp=0.8
+maxhp=0.8
 
 height=80
 

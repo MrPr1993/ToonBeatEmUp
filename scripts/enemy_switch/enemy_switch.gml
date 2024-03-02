@@ -37,13 +37,13 @@ case "MR.HUGE": enemy_modify(my_pal_sprite,6,_name,0,1,1)  enemyID=27 break;
 case "MS.JAB": enemy_modify(my_pal_sprite,4,_name,0,0.5,0.5)  enemyID=29 break;
 
 ///Ms. Slams
-case "MS.CRUSH": enemy_modify(my_pal_sprite,4,_name,0,0.8,0.8)  enemyID=31 break;
+case "MS.CRUSH": enemy_modify(my_pal_sprite,6,_name,0,0.8,0.8)  enemyID=31 break;
 
 ///Mr. Chip
-case "MR.DALE": enemy_modify(my_pal_sprite,4,_name,0,0.8,0.8)  enemyID=33 break;
+case "MR.DALE": enemy_modify(my_pal_sprite,6,_name,0,0.8,0.8)  enemyID=33 break;
 
 ///Ms. Ki
-case "MS.CHI": enemy_modify(my_pal_sprite,2,_name,0,0.35,0.35)  enemyID=35 break;
+case "MS.CHI": enemy_modify(my_pal_sprite,0,_name,0,0.35,0.35)  enemyID=35 break;
 case "MS.MANA": enemy_modify(my_pal_sprite,4,_name,0,0.35,0.35)  enemyID=36 break;
 
 
@@ -53,11 +53,11 @@ case "ICARA": enemy_modify(my_pal_sprite,1,_name,0,0.5,0.5) enemyID=38 break;
 
 ///Zombilly
 case "ZOMBOBBY": enemy_modify(my_pal_sprite,1,_name,0,0.25,0.25) enemyID=40 break;
-case "MORTI": enemy_modify(my_pal_sprite,1,_name,0,0.15,0.15) enemyID=41 break;
+case "MORTI": enemy_modify(my_pal_sprite,2,_name,0,0.15,0.15) enemyID=41 break;
 
 //Zombetty
 case "ZOMBELLE": enemy_modify(my_pal_sprite,1,_name,0,0.25,0.25) enemyID=43 break;
-case "RIGORA": enemy_modify(my_pal_sprite,1,_name,0,0.15,0.15) enemyID=44 break;
+case "RIGORA": enemy_modify(my_pal_sprite,2,_name,0,0.15,0.15) enemyID=44 break;
 
 ////MAU
 case "BASTET": enemy_modify(my_pal_sprite,1,_name,0,0.3,0.3) enemyID=52 break;
@@ -149,7 +149,7 @@ case "DR.GLUCO": enemy_modify(my_pal_sprite,4,_name,0,0.4,0.4) enemyID=113 break
 
 
 ///O-Polis the Robot
-case "METR-A": enemy_modify(my_pal_sprite,1,_name,0,0.8,0.8) enemyID=115 break;
+case "METR-A": enemy_modify(my_pal_sprite,3,_name,0,0.8,0.8) enemyID=115 break;
 
 }
 

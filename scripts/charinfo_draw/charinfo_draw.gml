@@ -6,12 +6,7 @@ if instance_exists(oCharacterInfo) {fpsX=258 fpsY=232
 if betatest=1 if keyboard_check(ord("7"))
 with oCharacterInfo
 {
-setunlock=0
-repeat(99)
-{
-unlockedChar[setunlock]=1
-setunlock+=1
-}
+enemydata_unlockall()
 }
 
 	with oCharacterInfo
@@ -52,162 +47,163 @@ if dataRow=2
 {
 if dataSet=0
 {
-draw_charinfoicon(1,spr_enemyface,1,24,c_white*c_white*global.UnlockEnemy[1]) //20
-draw_charinfoicon(2,spr_enemyface,20,24*2,c_white*c_white*global.UnlockEnemy[5])
-draw_charinfoicon(3,spr_enemyface,6,24*3,c_white*c_white*global.UnlockEnemy[10])
-draw_charinfoicon(4,spr_enemyface,2,24*4,c_white*c_white*global.UnlockEnemy[15])
-draw_charinfoicon(5,spr_enemyface,4,24*5,c_white*c_white*global.UnlockEnemy[17])
-draw_charinfoicon(6,spr_enemyface,7,24*6,c_white*c_white*global.UnlockEnemy[20])
+draw_charinfoicon(1,spr_enemyface,1,24,c_white*global.UnlockEnemy[1]) //20
+draw_charinfoicon(2,spr_enemyface,20,24*2,c_white*global.UnlockEnemy[5])
+draw_charinfoicon(3,spr_enemyface,6,24*3,c_white*global.UnlockEnemy[10])
+draw_charinfoicon(4,spr_enemyface,2,24*4,c_white*global.UnlockEnemy[15])
+draw_charinfoicon(5,spr_enemyface,4,24*5,c_white*global.UnlockEnemy[17])
+draw_charinfoicon(6,spr_enemyface,7,24*6,c_white*global.UnlockEnemy[20])
 }
 else
 if dataSet=-144
 {
-draw_charinfoicon(7,spr_enemyface,3,24*7,c_white*c_white*global.UnlockEnemy[25])
-draw_charinfoicon(8,spr_enemyface,8,24*8,c_white*c_white*global.UnlockEnemy[28])
-draw_charinfoicon(9,spr_enemyface,19,24*9,c_white*c_white*global.UnlockEnemy[30])
-draw_charinfoicon(10,spr_enemyface,37,24*10,c_white*c_white*global.UnlockEnemy[32])
-draw_charinfoicon(11,spr_enemyface,44,24*11,c_white*c_white*global.UnlockEnemy[34])
-draw_charinfoicon(12,spr_enemyface,61,24*12,c_white*c_white*global.UnlockEnemy[37])
+draw_charinfoicon(7,spr_enemyface,3,24*7,c_white*global.UnlockEnemy[25])
+draw_charinfoicon(8,spr_enemyface,8,24*8,c_white*global.UnlockEnemy[28])
+draw_charinfoicon(9,spr_enemyface,19,24*9,c_white*global.UnlockEnemy[30])
+draw_charinfoicon(10,spr_enemyface,37,24*10,c_white*global.UnlockEnemy[32])
+draw_charinfoicon(11,spr_enemyface,44,24*11,c_white*global.UnlockEnemy[34])
+draw_charinfoicon(12,spr_enemyface,61,24*12,c_white*global.UnlockEnemy[37])
 }
 else
 if dataSet=-144*2
 {
-draw_charinfoicon(13,spr_enemyface,13,24*13,c_white*c_white*global.UnlockEnemy[39])
-draw_charinfoicon(14,spr_enemyface,14,24*14,c_white*c_white*global.UnlockEnemy[42])
-draw_charinfoicon(15,spr_enemyface,21,24*15,c_white*c_white*global.UnlockEnemy[45])
-draw_charinfoicon(16,spr_miscface,0,24*16,c_white*c_white*global.UnlockEnemy[47])
-draw_charinfoicon(17,spr_miscface,0,24*17,c_white*c_white*global.UnlockEnemy[48])
-draw_charinfoicon(18,spr_enemyface,12,24*18,c_white*c_white*global.UnlockEnemy[51])
+draw_charinfoicon(13,spr_enemyface,13,24*13,c_white*global.UnlockEnemy[39])
+draw_charinfoicon(14,spr_enemyface,14,24*14,c_white*global.UnlockEnemy[42])
+draw_charinfoicon(15,spr_enemyface,21,24*15,c_white*global.UnlockEnemy[45])
+draw_charinfoicon(16,spr_miscface,0,24*16,c_white*global.UnlockEnemy[47])
+draw_charinfoicon(17,spr_miscface,0,24*17,c_white*global.UnlockEnemy[48])
+draw_charinfoicon(18,spr_enemyface,12,24*18,c_white*global.UnlockEnemy[51])
 }
 else
 if dataSet=-144*3
 {
-draw_charinfoicon(19,spr_enemyface,24,24*19,c_white*c_white*global.UnlockEnemy[53])
-draw_charinfoicon(20,spr_enemyface,15,24*20,c_white*c_white*global.UnlockEnemy[55])
-draw_charinfoicon(21,spr_enemyface,16,24*21,c_white*c_white*global.UnlockEnemy[58])
-draw_charinfoicon(22,spr_enemyface,38,24*22,c_white*c_white*global.UnlockEnemy[60])
-draw_charinfoicon(23,spr_enemyface,49,24*23,c_white*c_white*global.UnlockEnemy[63])
-draw_charinfoicon(24,spr_enemyface,53,24*24,c_white*c_white*global.UnlockEnemy[69])
+draw_charinfoicon(19,spr_enemyface,24,24*19,c_white*global.UnlockEnemy[53])
+draw_charinfoicon(20,spr_enemyface,15,24*20,c_white*global.UnlockEnemy[55])
+draw_charinfoicon(21,spr_enemyface,16,24*21,c_white*global.UnlockEnemy[58])
+draw_charinfoicon(22,spr_enemyface,38,24*22,c_white*global.UnlockEnemy[60])
+draw_charinfoicon(23,spr_enemyface,49,24*23,c_white*global.UnlockEnemy[63])
+draw_charinfoicon(24,spr_enemyface,53,24*24,c_white*global.UnlockEnemy[69])
 }
 else
 if dataSet=-144*4
 {
-draw_charinfoicon(25,spr_enemyface,29,24*25,c_white*c_white*global.UnlockEnemy[72])
-draw_charinfoicon(26,spr_enemyface,42,24*26,c_white*c_white*global.UnlockEnemy[75])
-draw_charinfoicon(27,spr_enemyface,50,24*27,c_white*c_white*global.UnlockEnemy[77])
-draw_charinfoicon(28,spr_enemyface,45,24*28,c_white*c_white*global.UnlockEnemy[80])
-draw_charinfoicon(29,spr_enemyface,25,24*29,c_white*c_white*global.UnlockEnemy[82])
-draw_charinfoicon(30,spr_enemyface,26,24*30,c_white*c_white*global.UnlockEnemy[85])
+draw_charinfoicon(25,spr_enemyface,29,24*25,c_white*global.UnlockEnemy[72])
+draw_charinfoicon(26,spr_enemyface,42,24*26,c_white*global.UnlockEnemy[75])
+draw_charinfoicon(27,spr_enemyface,50,24*27,c_white*global.UnlockEnemy[77])
+draw_charinfoicon(28,spr_enemyface,45,24*28,c_white*global.UnlockEnemy[80])
+draw_charinfoicon(29,spr_enemyface,25,24*29,c_white*global.UnlockEnemy[82])
+draw_charinfoicon(30,spr_enemyface,26,24*30,c_white*global.UnlockEnemy[85])
 }
 else
 if dataSet=-144*5
 {
-draw_charinfoicon(31,spr_enemyface,23,24*31,c_white*c_white*global.UnlockEnemy[88])
-draw_charinfoicon(32,spr_enemyface,28,24*32,c_white*c_white*global.UnlockEnemy[90])
-draw_charinfoicon(33,spr_enemyface,43,24*33,c_white*c_white*global.UnlockEnemy[93])
-draw_charinfoicon(34,spr_enemyface,27,24*34,c_white*c_white*global.UnlockEnemy[95])
-draw_charinfoicon(35,spr_enemyface,52,24*35,c_white*c_white*global.UnlockEnemy[97])
-draw_charinfoicon(36,spr_enemyface,22,24*36,c_white*c_white*global.UnlockEnemy[101])
+draw_charinfoicon(31,spr_enemyface,23,24*31,c_white*global.UnlockEnemy[88])
+draw_charinfoicon(32,spr_enemyface,28,24*32,c_white*global.UnlockEnemy[90])
+draw_charinfoicon(33,spr_enemyface,43,24*33,c_white*global.UnlockEnemy[93])
+draw_charinfoicon(34,spr_enemyface,27,24*34,c_white*global.UnlockEnemy[95])
+draw_charinfoicon(35,spr_enemyface,52,24*35,c_white*global.UnlockEnemy[97])
+draw_charinfoicon(36,spr_enemyface,22,24*36,c_white*global.UnlockEnemy[101])
 }
 else
 if dataSet=-144*6
 {
-draw_charinfoicon(37,spr_enemyface,48,24*37,c_white*c_white*global.UnlockEnemy[107])
-draw_charinfoicon(38,spr_enemyface,52,24*38,c_white*c_white*global.UnlockEnemy[110])
-draw_charinfoicon(39,spr_enemyface,46,24*39,c_white*c_white*global.UnlockEnemy[114])
-//draw_charinfoicon(40,spr_enemyface,40,24*40,c_white*c_white*global.UnlockEnemy[40])
-//draw_charinfoicon(41,spr_enemyface,41,24*41,c_white*c_white*global.UnlockEnemy[41])
-//draw_charinfoicon(42,spr_enemyface,42,24*42,c_white*c_white*global.UnlockEnemy[42])
+draw_charinfoicon(37,spr_enemyface,51,24*37,c_white*global.UnlockEnemy[107])
+draw_charinfoicon(38,spr_enemyface,48,24*38,c_white*global.UnlockEnemy[110])
+draw_charinfoicon(39,spr_enemyface,46,24*39,c_white*global.UnlockEnemy[114])
+//draw_charinfoicon(40,spr_enemyface,40,24*40,c_white*global.UnlockEnemy[40])
+//draw_charinfoicon(41,spr_enemyface,41,24*41,c_white*global.UnlockEnemy[41])
+//draw_charinfoicon(42,spr_enemyface,42,24*42,c_white*global.UnlockEnemy[42])
 }
 else
 {
-draw_charinfoicon(43,spr_enemyface,43,24*43,c_white*c_white*global.UnlockEnemy[43])
-draw_charinfoicon(44,spr_enemyface,44,24*44,c_white*c_white*global.UnlockEnemy[44])
-draw_charinfoicon(45,spr_enemyface,45,24*45,c_white*c_white*global.UnlockEnemy[45])
-draw_charinfoicon(46,spr_enemyface,46,24*46,c_white*c_white*global.UnlockEnemy[46])
-draw_charinfoicon(47,spr_enemyface,47,24*47,c_white*c_white*global.UnlockEnemy[47])
-draw_charinfoicon(48,spr_enemyface,48,24*48,c_white*c_white*global.UnlockEnemy[48])
+draw_charinfoicon(43,spr_enemyface,43,24*43,c_white*global.UnlockEnemy[43])
+draw_charinfoicon(44,spr_enemyface,44,24*44,c_white*global.UnlockEnemy[44])
+draw_charinfoicon(45,spr_enemyface,45,24*45,c_white*global.UnlockEnemy[45])
+draw_charinfoicon(46,spr_enemyface,46,24*46,c_white*global.UnlockEnemy[46])
+draw_charinfoicon(47,spr_enemyface,47,24*47,c_white*global.UnlockEnemy[47])
+draw_charinfoicon(48,spr_enemyface,48,24*48,c_white*global.UnlockEnemy[48])
 }
 }
 if dataRow=3 ///Bosses
 {
 if dataSet=0
 {
-draw_charinfoicon(1,spr_enemyface,1,9,c_white*c_white*global.UnlockEnemy[150]) //20
-draw_charinfoicon(2,spr_enemyface,34,24*2,c_white*c_white*global.UnlockEnemy[152])
-draw_charinfoicon(3,spr_enemyface,10,24*3,c_white*c_white*global.UnlockEnemy[153])
-draw_charinfoicon(4,spr_enemyface,35,24*4,c_white*c_white*global.UnlockEnemy[154])
-draw_charinfoicon(5,spr_enemyface,17,24*5,c_white*c_white*global.UnlockEnemy[155])
-draw_charinfoicon(6,spr_enemyface,11,24*6,c_white*c_white*global.UnlockEnemy[156])
+draw_charinfoicon(1,spr_enemyface,1,9,c_white*global.UnlockEnemy[150]) //20
+draw_charinfoicon(2,spr_enemyface,34,24*2,c_white*global.UnlockEnemy[152])
+draw_charinfoicon(3,spr_enemyface,10,24*3,c_white*global.UnlockEnemy[153])
+draw_charinfoicon(4,spr_enemyface,35,24*4,c_white*global.UnlockEnemy[154])
+draw_charinfoicon(5,spr_enemyface,17,24*5,c_white*global.UnlockEnemy[155])
+draw_charinfoicon(6,spr_enemyface,11,24*6,c_white*global.UnlockEnemy[156])
 }
 else
 if dataSet=-144
 {
-draw_charinfoicon(7,spr_enemyface,31,24*7,c_white*c_white*global.UnlockEnemy[157])
-draw_charinfoicon(8,spr_enemyface,32,24*8,c_white*c_white*global.UnlockEnemy[159])
-draw_charinfoicon(9,spr_enemyface,39,24*9,c_white*c_white*global.UnlockEnemy[160])
-draw_charinfoicon(10,spr_enemyface,40,24*10,c_white*c_white*global.UnlockEnemy[161])
-draw_charinfoicon(11,spr_enemyface,41,24*11,c_white*c_white*global.UnlockEnemy[162])
-draw_charinfoicon(12,spr_enemyface,54,24*12,c_white*c_white*global.UnlockEnemy[163])
+draw_charinfoicon(7,spr_enemyface,31,24*7,c_white*global.UnlockEnemy[157])
+draw_charinfoicon(8,spr_enemyface,32,24*8,c_white*global.UnlockEnemy[159])
+draw_charinfoicon(9,spr_enemyface,39,24*9,c_white*global.UnlockEnemy[160])
+draw_charinfoicon(10,spr_enemyface,40,24*10,c_white*global.UnlockEnemy[161])
+draw_charinfoicon(11,spr_enemyface,41,24*11,c_white*global.UnlockEnemy[162])
+draw_charinfoicon(12,spr_enemyface,54,24*12,c_white*global.UnlockEnemy[163])
 }
 else
 if dataSet=-144*2
 {
-draw_charinfoicon(13,spr_enemyface,33,24*13,c_white*c_white*global.UnlockEnemy[173])
-draw_charinfoicon(14,spr_enemyface,56,24*14,c_white*c_white*global.UnlockEnemy[174])
-draw_charinfoicon(15,spr_enemyface,36,24*15,c_white*c_white*global.UnlockEnemy[175])
-draw_charinfoicon(16,spr_enemyface,18,24*16,c_white*c_white*global.UnlockEnemy[176])
-//draw_charinfoicon(17,spr_enemyface,17,24*17,c_white*c_white*global.UnlockEnemy[66])
-//draw_charinfoicon(18,spr_enemyface,18,24*18,c_white*c_white*global.UnlockEnemy[67])
+draw_charinfoicon(13,spr_enemyface,54,24*13,c_white*global.UnlockEnemy[164])
+draw_charinfoicon(14,spr_enemyface,30,24*14,c_white*global.UnlockEnemy[165])
+draw_charinfoicon(15,spr_enemyface,47,24*15,c_white*global.UnlockEnemy[167])
+draw_charinfoicon(16,spr_enemyface,62,24*16,c_white*global.UnlockEnemy[168])
+draw_charinfoicon(17,spr_enemyface,33,24*17,c_white*global.UnlockEnemy[173])
+draw_charinfoicon(18,spr_enemyface,56,24*18,c_white*global.UnlockEnemy[174])
 }
 else
 if dataSet=-144*3
 {
-draw_charinfoicon(19,spr_enemyface,19,24*19,c_white*c_white*global.UnlockEnemy[68])
-draw_charinfoicon(20,spr_enemyface,20,24*20,c_white*c_white*global.UnlockEnemy[69])
-draw_charinfoicon(21,spr_enemyface,21,24*21,c_white*c_white*global.UnlockEnemy[70])
-draw_charinfoicon(22,spr_enemyface,22,24*22,c_white*c_white*global.UnlockEnemy[71])
-draw_charinfoicon(23,spr_enemyface,23,24*23,c_white*c_white*global.UnlockEnemy[72])
-draw_charinfoicon(24,spr_enemyface,24,24*24,c_white*c_white*global.UnlockEnemy[73])
+draw_charinfoicon(36,spr_enemyface,19,24*19,c_white*global.UnlockEnemy[175])
+draw_charinfoicon(58,spr_enemyface,20,24*20,c_white*global.UnlockEnemy[177])
+if global.UnlockEnemy[200]!=0
+draw_charinfoicon(21,spr_enemyface,59,24*21,c_white*global.UnlockEnemy[200])
+//draw_charinfoicon(22,spr_enemyface,22,24*22,c_white*global.UnlockEnemy[71])
+//draw_charinfoicon(23,spr_enemyface,23,24*23,c_white*global.UnlockEnemy[72])
+//draw_charinfoicon(24,spr_enemyface,24,24*24,c_white*global.UnlockEnemy[73])
 }
 else
 if dataSet=-144*4
 {
-draw_charinfoicon(25,spr_enemyface,25,24*25,c_white*c_white*global.UnlockEnemy[74])
-draw_charinfoicon(26,spr_enemyface,26,24*26,c_white*c_white*global.UnlockEnemy[75])
-draw_charinfoicon(27,spr_enemyface,27,24*27,c_white*c_white*global.UnlockEnemy[76])
-draw_charinfoicon(28,spr_enemyface,28,24*28,c_white*c_white*global.UnlockEnemy[77])
-draw_charinfoicon(29,spr_enemyface,29,24*29,c_white*c_white*global.UnlockEnemy[78])
-draw_charinfoicon(30,spr_enemyface,30,24*30,c_white*c_white*global.UnlockEnemy[79])
+draw_charinfoicon(25,spr_enemyface,25,24*25,c_white*global.UnlockEnemy[74])
+draw_charinfoicon(26,spr_enemyface,26,24*26,c_white*global.UnlockEnemy[75])
+draw_charinfoicon(27,spr_enemyface,27,24*27,c_white*global.UnlockEnemy[76])
+draw_charinfoicon(28,spr_enemyface,28,24*28,c_white*global.UnlockEnemy[77])
+draw_charinfoicon(29,spr_enemyface,29,24*29,c_white*global.UnlockEnemy[78])
+draw_charinfoicon(30,spr_enemyface,30,24*30,c_white*global.UnlockEnemy[79])
 }
 else
 if dataSet=-144*5
 {
-draw_charinfoicon(31,spr_enemyface,31,24*31,c_white*c_white*global.UnlockEnemy[80])
-draw_charinfoicon(32,spr_enemyface,32,24*32,c_white*c_white*global.UnlockEnemy[81])
-draw_charinfoicon(33,spr_enemyface,33,24*33,c_white*c_white*global.UnlockEnemy[82])
-draw_charinfoicon(34,spr_enemyface,34,24*34,c_white*c_white*global.UnlockEnemy[83])
-draw_charinfoicon(35,spr_enemyface,35,24*35,c_white*c_white*global.UnlockEnemy[84])
-draw_charinfoicon(36,spr_enemyface,36,24*36,c_white*c_white*global.UnlockEnemy[85])
+draw_charinfoicon(31,spr_enemyface,31,24*31,c_white*global.UnlockEnemy[80])
+draw_charinfoicon(32,spr_enemyface,32,24*32,c_white*global.UnlockEnemy[81])
+draw_charinfoicon(33,spr_enemyface,33,24*33,c_white*global.UnlockEnemy[82])
+draw_charinfoicon(34,spr_enemyface,34,24*34,c_white*global.UnlockEnemy[83])
+draw_charinfoicon(35,spr_enemyface,35,24*35,c_white*global.UnlockEnemy[84])
+draw_charinfoicon(36,spr_enemyface,36,24*36,c_white*global.UnlockEnemy[85])
 }
 else
 if dataSet=-144*6
 {
-draw_charinfoicon(37,spr_enemyface,37,24*37,c_white*c_white*global.UnlockEnemy[86])
-draw_charinfoicon(38,spr_enemyface,38,24*38,c_white*c_white*global.UnlockEnemy[87])
-draw_charinfoicon(39,spr_enemyface,39,24*39,c_white*c_white*global.UnlockEnemy[88])
-draw_charinfoicon(40,spr_enemyface,40,24*40,c_white*c_white*global.UnlockEnemy[89])
-draw_charinfoicon(41,spr_enemyface,41,24*41,c_white*c_white*global.UnlockEnemy[90])
-draw_charinfoicon(42,spr_enemyface,42,24*42,c_white*c_white*global.UnlockEnemy[91])
+draw_charinfoicon(37,spr_enemyface,37,24*37,c_white*global.UnlockEnemy[86])
+draw_charinfoicon(38,spr_enemyface,38,24*38,c_white*global.UnlockEnemy[87])
+draw_charinfoicon(39,spr_enemyface,39,24*39,c_white*global.UnlockEnemy[88])
+draw_charinfoicon(40,spr_enemyface,40,24*40,c_white*global.UnlockEnemy[89])
+draw_charinfoicon(41,spr_enemyface,41,24*41,c_white*global.UnlockEnemy[90])
+draw_charinfoicon(42,spr_enemyface,42,24*42,c_white*global.UnlockEnemy[91])
 }
 else
 {
-draw_charinfoicon(43,spr_enemyface,43,24*43,c_white*c_white*global.UnlockEnemy[92])
-draw_charinfoicon(44,spr_enemyface,44,24*44,c_white*c_white*global.UnlockEnemy[93])
-draw_charinfoicon(45,spr_enemyface,45,24*45,c_white*c_white*global.UnlockEnemy[94])
-draw_charinfoicon(46,spr_enemyface,46,24*46,c_white*c_white*global.UnlockEnemy[95])
-draw_charinfoicon(47,spr_enemyface,47,24*47,c_white*c_white*global.UnlockEnemy[96])
-draw_charinfoicon(48,spr_enemyface,48,24*48,c_white*c_white*global.UnlockEnemy[97])
+draw_charinfoicon(43,spr_enemyface,43,24*43,c_white*global.UnlockEnemy[92])
+draw_charinfoicon(44,spr_enemyface,44,24*44,c_white*global.UnlockEnemy[93])
+draw_charinfoicon(45,spr_enemyface,45,24*45,c_white*global.UnlockEnemy[94])
+draw_charinfoicon(46,spr_enemyface,46,24*46,c_white*global.UnlockEnemy[95])
+draw_charinfoicon(47,spr_enemyface,47,24*47,c_white*global.UnlockEnemy[96])
+draw_charinfoicon(48,spr_enemyface,48,24*48,c_white*global.UnlockEnemy[97])
 }
 }
 
@@ -263,6 +259,12 @@ draw_command(3)
 
 draw_set_halign(fa_center)
 draw_text(72,8,"("+string(dataSelect)+"/"+string(dataRowMax)+")") //TITLE
+
+if unlockedChar[enemyID]!=0
+{
+if dataRow=2 or dataRow=3
+draw_text(224,200,string(languagetext[4])+":"+string(unlockedChar[enemyID]))
+}
 
 draw_text(72,16+2,"-"+string(categoryNames)+"-")
 

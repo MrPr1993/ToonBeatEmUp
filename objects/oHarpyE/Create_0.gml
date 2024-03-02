@@ -27,8 +27,8 @@ noHitFall=1
 
 OneAttack=2
 
-hp=0.5
-maxhp=0.5
+hp=0.3
+maxhp=0.3
 
 height=80
 

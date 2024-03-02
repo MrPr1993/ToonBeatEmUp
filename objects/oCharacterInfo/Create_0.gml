@@ -3,6 +3,8 @@ controlNO=9
 character_setup()
 enemy_data()
 
+hasback=0
+
 infoname=0
 
 name="VIVA"
@@ -128,7 +130,7 @@ WswingSound=snd_swing3
 
 weapon_add_double("JUGGLE")
 
-unlockedChar[99]=0
+unlockedChar[200]=0
 setunlock=0
 
 unlockedChar[0]=1
@@ -173,3 +175,5 @@ customText4=-1
 
 languagetext[40]=0; ///First 10 will be for the setting stuff
 language_check();
+
+eyeReaction=0 eyeX=0 eyeY=0

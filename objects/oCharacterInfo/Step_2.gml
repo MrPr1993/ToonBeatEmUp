@@ -3,8 +3,8 @@
 script_execute(enemyscript)
 if specialscript!=-1
 script_execute(specialscript)
-
-if unlockedChar[charNO]=0 {image_alpha=1 animFrame=0 image_index=0 name="???" desc="" image_blend=c_black} else image_blend=c_white
+if dataRow=1 {enemyID=0 unlockedChar[enemyID]=1}
+if unlockedChar[enemyID]=0 {image_alpha=1 animFrame=0 image_index=0 name="???" desc="" image_blend=c_black} else image_blend=c_white
 
 /// @description Insert description here
 // You can write your code in this editor
@@ -16,6 +16,9 @@ hasVariants=0
 
 wobbleX=lerp(wobbleX,1,0.25)
 wobbleY=lerp(wobbleY,1,0.25)
+
+weaponanim(mask_none,0,0,0,0,0)
+weaponanim_2(mask_none,0,0,0,0,0)
 
 if -key_left_pressed {arrowSel1=2 wobbleX=1.1 wobbleY=0.9
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=1 dataSelect=dataRowMax else dataSelect-=1
@@ -63,7 +66,8 @@ dataRowMax=39 categoryNames=languagetext[1] hasVariants=1
 charinfo_enemies()
 break;
 case 3: ///Boss Characters
-dataRowMax=21 categoryNames=languagetext[2] hasVariants=0
+var addmax=0; if global.UnlockEnemy[200]!=0 addmax=1
+dataRowMax=20+addmax categoryNames=languagetext[2] hasVariants=0
 charinfo_bosses()
 break;
 case 4: ///Locations

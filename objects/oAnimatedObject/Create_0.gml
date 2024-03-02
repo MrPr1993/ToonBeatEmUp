@@ -40,8 +40,8 @@ weapontype=0
 weaponHitType=1
 WswingSound=snd_swing3
 
-hp=0.5
-maxhp=0.5
+hp=0.3
+maxhp=0.3
 
 height=70
 
