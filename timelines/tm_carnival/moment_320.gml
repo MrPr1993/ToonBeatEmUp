@@ -21,7 +21,7 @@ en6=instance_create(__view_get( e__VW.XView, 0)-64-200,180,oEntryFenceJump)
 with en6
 {depth=16777208.5 isDepth=0 rangeXAdd=-48 xAdd=-160-160
 	spawnFall=spr_fatburglar_front moveSpr=spr_fatburglar_move spawnEnemy=oFatBurglar
-	enemy_modify(my_pal_sprite,4,"MR. WIDE",0,0.4,0.4)
+	enemy_switch("MR.WIDE",0)
 	}
 
 }

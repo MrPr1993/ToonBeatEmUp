@@ -25,10 +25,10 @@ enemyMax=1
 }
 
  en2=instance_create_depth(6276,192,-1,oEntrySeat) en2.rangeX=6276-60
- with en2 {sittingSpr=spr_bear_hang1 spawnFall=spr_bear_front z=-96 spawnEnemy=oBear enemy_modify(spr_bearpal,4,"PADDY",0,0.2,0.2)}
+ with en2 {sittingSpr=spr_bear_hang1 spawnFall=spr_bear_front z=-96 spawnEnemy=oBear enemy_switch("PADDY",0)}
 
  en3=instance_create_depth(6334,192,-1,oEntrySeat) en3.rangeX=6276-60
- with en3 {sittingSpr=spr_bear_hang2 spawnFall=spr_bear_front z=-64 spawnEnemy=oBear enemy_modify(spr_bearpal,5,"RONI",0,0.2,0.2)}
+ with en3 {sittingSpr=spr_bear_hang2 spawnFall=spr_bear_front z=-64 spawnEnemy=oBear enemy_switch("RONI",0)}
 
 
 }

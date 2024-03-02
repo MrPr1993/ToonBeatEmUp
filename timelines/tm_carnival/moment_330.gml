@@ -57,6 +57,7 @@ with en5
 	spawnFall=spr_sneak_jump
 	riderSpr=spr_sneak_balloon
 	spawnEnemy=oSneak
+	enemy_switch("MR.SLINK",0)
 }
 
 

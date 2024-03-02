@@ -21,13 +21,14 @@ en1.rideX=928+128 en1.horseSpd=0
 en2=instance_create(928+128,176+32+64,oEntryBalloon)
 en2.rideX=928+128 en2.horseSpd=0
 
-en3=instance_create_depth(1104,176,-1,oEntryPoseBoard) with en3 rangeX=x-32
+en3=instance_create_depth(1104,176,-1,oEntryPoseBoard) with en3 {rangeX=x-32 enemy_switch("MR.LAR",0)}
+
+
 en4=instance_create_depth(1184,176,-1,oEntryPoseBoard) with en4
 {
 boardspr=spr_poseboard2
 behindspr=spr_burglarB_front
 spawnFall=spr_burglarB_front
-spawnEnemy=oEnemy1B
 spawnEnemy=oEnemy1B rangeX=x-32
 }
 

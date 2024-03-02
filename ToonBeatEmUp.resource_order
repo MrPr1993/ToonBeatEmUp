@@ -2750,6 +2750,7 @@
     {"name":"spr_siren_elec","order":3,"path":"sprites/spr_siren_elec/spr_siren_elec.yy",},
     {"name":"colorshade_setup","order":88,"path":"scripts/colorshade_setup/colorshade_setup.yy",},
     {"name":"spr_siren_flat","order":4,"path":"sprites/spr_siren_flat/spr_siren_flat.yy",},
+    {"name":"spr_duck_attack4","order":14,"path":"sprites/spr_duck_attack4/spr_duck_attack4.yy",},
     {"name":"oFairy","order":7,"path":"objects/oFairy/oFairy.yy",},
     {"name":"spr_swingpal","order":26,"path":"sprites/spr_swingpal/spr_swingpal.yy",},
     {"name":"bg_ground9","order":72,"path":"sprites/bg_ground9/bg_ground9.yy",},

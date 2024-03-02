@@ -1,6 +1,6 @@
 enemy_data()
 
-name="QUACKI"
+name="DIXIE"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=39
 
@@ -49,6 +49,8 @@ BurnSpr=spr_duck_burned
 FrozenSpr=spr_duck_frozen
 
 enemyID=160
+
+runCharge=0
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

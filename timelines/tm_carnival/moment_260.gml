@@ -24,12 +24,12 @@ with en6
 	spawnFall=spr_femburglar_jump
 	riderSpr=spr_femburglar_balloon
 	spawnEnemy=oFemBurglar
-	enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)
+enemy_switch("MS.CHILL",0)
 }
 
 
 en7=instance_create_depth(__view_get( e__VW.XView, 0 )-32,232,-1,oWrestler)
-
+enemy_switch("MS.CRUSH",0)
 
 enG=instance_create(__view_get( e__VW.XView, 0 )+160,240,oGunRange)
 

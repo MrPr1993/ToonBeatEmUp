@@ -51,7 +51,7 @@ charinfo_set(12,spr_twoheads_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,s
  "She lives in solitude in her swamp with her undead as she works on her cauldron. She is a druid, not a witch.") break;
    case 9:
    enemyID=160
- charinfo_set(12,spr_duck_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,39,"QUACKI",
+ charinfo_set(12,spr_duck_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,39,"DIXIE",
  "The carnival's biggest attraction. She is a wacky duck toy person... thing. She is a little insane. Quack.") break;
     case 10: enemyID=161
  charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,octopus_draw,spr_enemypal,0,spr_enemyface,40,"LARRY",

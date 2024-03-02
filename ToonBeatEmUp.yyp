@@ -3021,6 +3021,7 @@
     {"id":{"name":"spr_siren_elec","path":"sprites/spr_siren_elec/spr_siren_elec.yy",},},
     {"id":{"name":"colorshade_setup","path":"scripts/colorshade_setup/colorshade_setup.yy",},},
     {"id":{"name":"spr_siren_flat","path":"sprites/spr_siren_flat/spr_siren_flat.yy",},},
+    {"id":{"name":"spr_duck_attack4","path":"sprites/spr_duck_attack4/spr_duck_attack4.yy",},},
     {"id":{"name":"oFairy","path":"objects/oFairy/oFairy.yy",},},
     {"id":{"name":"spr_swingpal","path":"sprites/spr_swingpal/spr_swingpal.yy",},},
     {"id":{"name":"bg_ground9","path":"sprites/bg_ground9/bg_ground9.yy",},},

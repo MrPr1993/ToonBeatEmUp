@@ -9,6 +9,9 @@ repeat(200)
 global.UnlockEnemy[repload]=ini_read_real("EN", repload, 0);
 repload+=1;
 }
+
+global.EnemyDeath=ini_read_real("ENB", 0, 0);
+
 ini_close()
 
 }

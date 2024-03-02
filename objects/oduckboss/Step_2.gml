@@ -1,25 +1,29 @@
 enemy_endstep()
 throw_step()
 
+if runCharge!=0 runCharge-=1
 
 if anim=10
-{offScreen=0
-if distance_to_point(targetEnemy.x,targetEnemy.y)<50
+{offScreen=0 animFrame=0
+if distance_to_point(targetEnemy.x,targetEnemy.y)<60
 anim=choose(11)
 else
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)<100
-anim=12 else anim=13
+anim=choose(12,13,14) else anim=choose(13,14)
+
+if anim=12 or anim=13 if runCharge!=0 {anim=14 runCharge=choose(220,240,260)}
 }
 }
 
 ///Shoryuken
 if anim=11
-{damage=0.2 MoveType=1 if animFrame=0 PlaySound(snd_duck10)
+{damage=0.2 MoveType=1 
 sprite_index=spr_duck_attack2
 sentflying=lerp(sentflying,0,0.1)
 frame_set(0,0,0.1) if animFrame=1
 {ground=0 z-=4 spdZ=-8 sentflying=3*image_xscale
+	PlaySound(snd_duck10)
 }
 frame_set(1,1,0.1) if animFrame=clamp(animFrame,1,1.99) {atk=1 z-=16} else atk=0
 frame_set(2,2,0.2)
@@ -30,10 +34,10 @@ frame_set(5,5,0.25)
 
 ///Charge!
 if anim=12 
-{if animFrame=0 {PlaySound(snd_duck3) specialtimes[4]=0} damage=0.25 MoveType=4
+{if animFrame=0 { specialtimes[4]=0} damage=0.25 MoveType=4
 sprite_index=spr_duck_charge
-frame_set(0,0,0.25)
-frame_set(1,1,0.05)
+frame_set(0,0,0.25) if animFrame=1 PlaySound(snd_duck3)
+frame_set(1,1,0.05) 
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
 frame_set(4,4,0.25) specialtimes[4]+=1
@@ -56,9 +60,9 @@ if animFrame>5 canmove=1
 ///Ranged Attack
 if anim=13
 {sprite_index=spr_duck_attack1
-	if animFrame=0 {PlaySound(choose(snd_duck5,snd_duck9,snd_duck8))}
+	
 	//if animFrame=0 PlaySoundNoStack(snd_fzombie3)
-frame_set(0,0,0.1)
+frame_set(0,0,0.1) if animFrame=1 {PlaySound(choose(snd_duck5,snd_duck9,snd_duck8))}
 if animFrame=11111
 {
 	bub=instance_create_depth(x+32*image_xscale,y,depth,oFlashFX)
@@ -81,7 +85,7 @@ frame_set(8,2,0.5)
 frame_set(9,2,0.5)
 frame_set(10,1,0.25) if animFrame=11
 {//with bub instance_destroy() bub=-1
-PlaySound(snd_femenemy5) PlaySound(snd_flame)
+PlaySound(snd_gun)
 card=instance_create_depth(x+64*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 card.sprite_index=spr_duck_quack card.mask_index=spr_shadow2
 card.z=z-48 card.image_xscale=1 card.disappearHit=0 card.damage=0.1
@@ -93,6 +97,30 @@ frame_set(14,4,0.05)
 frame_set(15,0,0.25)
 
 if animFrame>15.75 {canmove=1 atk=0}
+}
+
+if anim=14 ///Charged Punch
+{
+		if animFrame=0 {specialtimes[0]=0 specialtimes[1]=0  }
+sprite_index=spr_duck_attack4 selfatk.dizzyAtk=1 MoveType=1 damage=0.2 
+frame_set(0,0,0.1)
+frame_set(1,1,0.25)
+if animFrame=0.9 PlaySoundNoStack(snd_carengine2)
+if animFrame<3 {
+	if image_xscale=1 and targetEnemy.x>x+specialtimes[1] specialtimes[1]+=8
+	if image_xscale=-1 and targetEnemy.x<x-specialtimes[1] specialtimes[1]+=8	
+	}
+frame_set(2,2,0.25) if animFrame=2.75 if specialtimes[0]!=4 {specialtimes[0]+=1 animFrame=1
+	dust_make(x,y+1,z-4,-0.5*image_xscale,0,0)
+	}if animFrame=3 PlaySoundNoStack(snd_carengine3)
+frame_set(3,4,0.1) if animFrame=clamp(animFrame,3,3.9) {
+		dust_make(x,y+1,z-4,-1*image_xscale,0,0)
+	sentflying=8*image_xscale atk=1
+	specialtimes[1]-=8 if specialtimes[1]>0 animFrame=3.1 else animFrame=4
+	} else {atk=0 sentflying=0}
+frame_set(4,4,0.05)
+frame_set(5,3,0.1)
+if animFrame>5.5 canmove=1
 }
 
 ///Intro
@@ -109,8 +137,11 @@ frame_set(1,1,0.25)
 frame_set(2,2,0.01)
 frame_set(3,3,0.1)
 frame_set(4,4,0.5) if animFrame=5
-{ground=0 zSpeed=-4 PlaySound(snd_duck1)}
+{ground=0 zSpeed=-4 PlaySound(snd_duck5) PlaySound(snd_explosion)}
 frame_set(5,5+specialtimes[0],0.005)
-frame_set(6,4,0.25)
-if animFrame>5.70 {canmove=1 anim=0}
+frame_set(6,7,0.25)
+frame_set(7,8,0.25) if animFrame=8 PlaySound(snd_duck2)
+frame_set(8,9,0.01)
+frame_set(9,7,0.25)
+if animFrame>9.70 {canmove=1 anim=0}
 }

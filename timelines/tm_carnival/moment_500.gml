@@ -2,6 +2,8 @@
 
 if specialSet6=300
 {
+if boss.canmove
+{
 with bgsetter
 {y=-9999999
 image_alpha=1
@@ -22,7 +24,7 @@ with oPlayer
 	
 canControl=1 automove=0
 }
-
+} else timeline_position-=1
 }
 else
 {
@@ -42,7 +44,7 @@ with en1 {image_xscale=1 ground=0 canmove=0 anim=13
 	z=-200 //weapon_add("HARPOONGUN")
 	}
 en2=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oClown)
-with en2 {image_xscale=1 ground=0  enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0.24)
+with en2 {image_xscale=1 ground=0  enemy_switch("MARI",0) weapon_add_double("TWIRL")
 	 z=-200 canmove=0 anim=13
 	}
 }
@@ -71,19 +73,19 @@ with en2 {image_xscale=-1 ground=0  //enemy_modify(my_pal_sprite,1,"MARI",0,0.24
 if specialSet6=100
 {
 en1=instance_create(__view_get( e__VW.XView, 0)+160-64,228-32,oClown)
-with en1 {image_xscale=1 ground=0 canmove=0 anim=13
+with en1 {image_xscale=1 ground=0 canmove=0 anim=13  enemy_switch("POPPI",0) weapon_add_double("TWIRL")
 	z=-200 //weapon_add("HARPOONGUN")
 	}
 en2=instance_create(__view_get( e__VW.XView, 0)+160-64,228+32,oBear)
-with en2 {image_xscale=1 ground=0  enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0.24)
+with en2 {image_xscale=1 ground=0 
 	 z=-200  canmove=0 anim=13
 	}
 en3=instance_create(__view_get( e__VW.XView, 0)+160+64,228-32,oClown)
-with en3 {image_xscale=-1 ground=0  canmove=0 anim=13
+with en3 {image_xscale=-1 ground=0  canmove=0 anim=13 enemy_switch("POPPI",0) weapon_add_double("TWIRL")
 	z=-200 //weapon_add("HARPOONGUN")
 	}
 en4=instance_create(__view_get( e__VW.XView, 0)+160+64,228+32,oBear)
-with en4 {image_xscale=-1 ground=0  enemy_modify(my_pal_sprite,1,"MARI",0,0.24,0.24)
+with en4 {image_xscale=-1 ground=0  
 	 z=-200  canmove=0 anim=13
 	}
 }
