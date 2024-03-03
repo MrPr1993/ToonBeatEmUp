@@ -12,7 +12,7 @@ else
 if distance_to_point(targetEnemy.x,targetEnemy.y)<100
 anim=choose(12,13,14) else anim=choose(13,14)
 
-if anim=12 or anim=13 if runCharge!=0 {anim=14 runCharge=choose(220,240,260)}
+if anim=12 or anim=13 if runCharge!=0 {anim=14 runCharge=choose(320,340,360)}
 }
 }
 
@@ -113,7 +113,8 @@ sprite_index=spr_duck_attack4 selfatk.dizzyAtk=1 MoveType=1 damage=0.2
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 if animFrame=0.9 {PlaySoundNoStack(snd_carengine2)
-
+		if targetEnemy.y!=clamp(targetEnemy.y,y-8,y+8)
+		{if targetEnemy.y>y specialtimes[2]=4 else specialtimes[2]=-4}
 	}
 if animFrame<3 {
 	if image_xscale=1 and targetEnemy.x>x+specialtimes[1] specialtimes[1]+=8
@@ -121,13 +122,18 @@ if animFrame<3 {
 	}
 frame_set(2,2,0.25) if animFrame=2.75 if specialtimes[0]!=4 {specialtimes[0]+=1 animFrame=1
 	dust_make(x,y+1,z-4,-0.5*image_xscale,0,0)
-	}if animFrame=3 PlaySoundNoStack(snd_carengine3)
+	}if animFrame=3 {PlaySoundNoStack(snd_carengine3)
+
+		
+		}
 frame_set(3,4,0.1) if animFrame=clamp(animFrame,3,3.9) {
 		dust_make(x,y+1,z-4,-1*image_xscale,0,0)
 	sentflying=8*image_xscale atk=1
 	
+	if specialtimes[2]>0 and place_free(x,y+specialtimes[2]) y+=specialtimes[2]
+	else if y<oControl.camY+240 y+=specialtimes[2]
 	
-	if y<oControl.camY and place_free(x,y-specialtimes[2]) y+=specialtimes[2]
+	
 	
 	specialtimes[1]-=8 if specialtimes[1]>0 animFrame=3.1 else animFrame=4
 	} else {atk=0 sentflying=0}
@@ -142,7 +148,7 @@ if anim=100
 if animFrame=0 {specialtimes[0]=0}	
 
 if animFrame<1.1
-if !ground animFrame=0.5 else if animFrame=0.5 {animFrame=1 PlaySound(snd_hitgroundmetal) oControl.quakeFXTime=10}
+if !z=0 animFrame=0.5 else if animFrame=0.5 {animFrame=1 PlaySound(snd_hitgroundmetal) oControl.quakeFXTime=10}
 
 specialtimes[0]+=0.25 if specialtimes[0]>=1.9 specialtimes[0]=0
 frame_set(0,0,0.25)

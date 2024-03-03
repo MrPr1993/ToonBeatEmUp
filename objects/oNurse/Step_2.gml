@@ -20,6 +20,8 @@ frame_set(3,0,0.1)
 if animFrame>3.5 {if specialcheck0=0 canmove=1 else {animFrame=0 anim=14}}
 }
 
+///Needle
+
 
 if anim=14 ///Item Throw Attack
 { hit=0  
@@ -34,7 +36,7 @@ bomb.spdX=clamp(bomb.spdX,1.5,9999)
 else
 bomb.spdX=clamp(bomb.spdX,-9999,-1.5)
 bomb.ground=0 
-bomb.weapon_pal=current_pal
+bomb.weapon_pal=current_pal bomb.my_pal_sprite=my_pal_sprite
 bomb.spdZ=-1*(point_distance(x,0,targetX,0)/32)
 
 bomb.trigger=1

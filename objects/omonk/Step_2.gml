@@ -7,6 +7,8 @@ throw_step()
 overwriteAttack=1
 overwriteAttack1=1
 overwriteAttack2=1
+overwriteAttack3=1
+overwriteAttack4=1
 
 overwriteHitAir=1
 
@@ -86,6 +88,10 @@ if anim=10
 {
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>80
 	anim=12 else anim=11
+	
+	if distance_to_point(targetEnemy.x,targetEnemy.y)<120
+	if anim=12 anim=13
+	
 }
 
 if anim=11 ///Attack Stand
@@ -120,6 +126,23 @@ frame_set(4,0,0.1)
 if animFrame>4.5 canmove=1
 }
 
+if anim=13 ///ORAORAORAORAORARA
+{damage=0.01 MoveType=0
+selfatk.NoKnock=1
+sprite_index=spr_monk_attack3
+if animFrame=0 {specialtimes[0]=0}
+if animFrame=clamp(animFrame,1.9,2.1) {MoveType=1 damage=0.04}
+specialtimes[0]+=0.5 if specialtimes[0]=3 specialtimes[0]=0
+
+frame_set(0,0,0.05)
+frame_set(1,1+specialtimes[0],0.01) if animFrame=clamp(animFrame,1,1.9)
+{if specialtimes[0]=clamp(specialtimes[0],0,1.5) atk=1 else atk=0
+if animFrame<1.1 sentflying=2*image_xscale else sentflying=0
+}
+frame_set(2,4,0.01)
+frame_set(3,0,0.1)
+if animFrame>3.5 canmove=1
+}
 
 ///AI for enemy doing blocks
 if canmove=1 and (anim=0 or anim=1)

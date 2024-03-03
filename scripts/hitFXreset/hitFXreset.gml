@@ -19,7 +19,7 @@ function hitFXreset() {
 	flashY=0
 	flashZ=-60
 	isCut=0
-	dizzyAtk=0
+	dizzyAtk=0 NoKnock=0
 	}
 
 }
