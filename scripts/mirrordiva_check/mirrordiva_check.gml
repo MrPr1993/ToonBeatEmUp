@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function mirrordiva_check(){
 if charchoose=1
-{
+{mirrorscript=animsetup_hina
 name="HINA?"
 enemyPortraitSpr=spr_playerface
 enemyPortraitIndex=1
@@ -37,7 +37,7 @@ cutSpr2=spr_hina_cut2
 }
 
 if charchoose=2
-{mask_index=spr_shadow
+{mask_index=spr_shadow mirrorscript=animsetup_bahati
 
 name="BAHATI?"
 enemyPortraitSpr=spr_playerface
@@ -75,7 +75,7 @@ cutSpr2=spr_bahati_cut2
 if charchoose=3
 {
 name="SOFIA?"
-enemyPortraitSpr=spr_playerface
+enemyPortraitSpr=spr_playerface mirrorscript=animsetup_sofia
 enemyPortraitIndex=3
 
 DeathCry=snd_sofia2

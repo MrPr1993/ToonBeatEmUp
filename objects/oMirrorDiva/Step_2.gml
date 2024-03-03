@@ -11,7 +11,35 @@ overwriteAttack5=1
 
 if anim=0 {sprite_index=StandSpr}
 
-if anim=11 {enemyscript=animsetup_viva}
+if anim=9000
+{animFrame=0 key_right=0 key_left=0
+if distance_to_point(targetEnemy.x,targetEnemy.y)>50 {
+if image_xscale=1 key_right=1 else key_left=-1 
+ground=0 zSpeed=-6 anim=15
+}
+else {anim=choose(10,80,81,15,9001)
+if anim=15 {ground=0 zSpeed=-4}
+}
+}
+
+if anim=9001 ///Running attack
+{sprite_index=RunSpr 
+if sentflying=4*image_xscale
+animFrame+=0.1
+image_index+=0.2
+
+if y!=clamp(y,targetEnemy.y-4,targetEnemy.y+4)
+{
+if y>targetEnemy.y y-=2 else y+=2
+}
+
+if animFrame>2 or x=clamp(x,targetEnemy.x-60,targetEnemy.x+60)
+{animFrame=0 anim=16}
+}
+
+if anim=10 or anim=11 or anim=12 or anim=13 or anim=14 or anim=15 or anim=16
+or anim=17 or anim=35 or anim=36 or anim=37 or anim=80 or anim=81 or anim=25
+{enemyscript=mirrorscript}
 else {enemyscript=animsetup_enemy}
 
 

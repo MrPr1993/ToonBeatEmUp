@@ -353,6 +353,7 @@ stagePose=1
 	grabZ=0
 	extraY=0
 
+animatk=10;
 	animFrame=0
 	animFrameSave=0
 	image_speed=0

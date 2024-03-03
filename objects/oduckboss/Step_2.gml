@@ -5,7 +5,7 @@ if runCharge!=0 runCharge-=1
 
 if anim=10
 {offScreen=0 animFrame=0
-if distance_to_point(targetEnemy.x,targetEnemy.y)<60
+if distance_to_point(targetEnemy.x,targetEnemy.y)<70
 anim=choose(11)
 else
 {
@@ -41,7 +41,7 @@ frame_set(1,1,0.05)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
 frame_set(4,4,0.25) specialtimes[4]+=1
-if animFrame=5 if specialtimes[4]<160 {animFrame=2}
+if animFrame=5 if specialtimes[4]<160 {PlaySoundNoStack(snd_heavystep) animFrame=2}
 
 if animFrame=clamp(animFrame,2,4.9) {atk=1
 	sentflying=8*image_xscale oControl.quakeFXTime=10
@@ -89,6 +89,8 @@ PlaySound(snd_gun)
 card=instance_create_depth(x+64*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 card.sprite_index=spr_duck_quack card.mask_index=spr_shadow2
 card.z=z-48 card.image_xscale=1 card.disappearHit=0 card.damage=0.1
+
+flashFX(x+27*image_xscale,y+1,z-50,spr_confetti2,0,0.25,20,1,1,c_white,1)
 }
 frame_set(11,3,0.25)
 frame_set(12,4,0.25)
@@ -100,12 +102,19 @@ if animFrame>15.75 {canmove=1 atk=0}
 }
 
 if anim=14 ///Charged Punch
-{
-		if animFrame=0 {specialtimes[0]=0 specialtimes[1]=0  }
+{atkcol_set(46,0,38,2.85,1,39)
+		if animFrame=0 {specialtimes[0]=0 specialtimes[1]=0  
+			specialtimes[2]=0
+			
+
+			
+			}
 sprite_index=spr_duck_attack4 selfatk.dizzyAtk=1 MoveType=1 damage=0.2 
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
-if animFrame=0.9 PlaySoundNoStack(snd_carengine2)
+if animFrame=0.9 {PlaySoundNoStack(snd_carengine2)
+
+	}
 if animFrame<3 {
 	if image_xscale=1 and targetEnemy.x>x+specialtimes[1] specialtimes[1]+=8
 	if image_xscale=-1 and targetEnemy.x<x-specialtimes[1] specialtimes[1]+=8	
@@ -116,6 +125,10 @@ frame_set(2,2,0.25) if animFrame=2.75 if specialtimes[0]!=4 {specialtimes[0]+=1 
 frame_set(3,4,0.1) if animFrame=clamp(animFrame,3,3.9) {
 		dust_make(x,y+1,z-4,-1*image_xscale,0,0)
 	sentflying=8*image_xscale atk=1
+	
+	
+	if y<oControl.camY and place_free(x,y-specialtimes[2]) y+=specialtimes[2]
+	
 	specialtimes[1]-=8 if specialtimes[1]>0 animFrame=3.1 else animFrame=4
 	} else {atk=0 sentflying=0}
 frame_set(4,4,0.05)
@@ -137,8 +150,10 @@ frame_set(1,1,0.25)
 frame_set(2,2,0.01)
 frame_set(3,3,0.1)
 frame_set(4,4,0.5) if animFrame=5
-{ground=0 zSpeed=-4 PlaySound(snd_duck5) PlaySound(snd_explosion)}
-frame_set(5,5+specialtimes[0],0.005)
+{ground=0 zSpeed=-4 PlaySound(snd_duck5) PlaySound(snd_explosion)
+	flashFX(x,y+1,z-75,spr_confetti,0,0.25,20,1,1,c_white,1)
+	}
+frame_set(5,5+specialtimes[0],0.01)
 frame_set(6,7,0.25)
 frame_set(7,8,0.25) if animFrame=8 PlaySound(snd_duck2)
 frame_set(8,9,0.01)

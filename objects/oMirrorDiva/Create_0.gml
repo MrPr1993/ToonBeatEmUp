@@ -1,7 +1,7 @@
 enemy_data()
 specialFX=0
 
-
+animatk=9000
 
 name="MIRROR"
 enemyPortraitSpr=spr_enemyface
@@ -53,6 +53,8 @@ FrozenSpr=spr_viva_frozen
 DizzySpr=spr_viva_dizzy
 cutSpr1=spr_viva_cut1
 cutSpr2=spr_viva_cut2
+
+mirrorscript=animsetup_viva
 
 mirrordiva_check()
 
@@ -111,6 +113,8 @@ spritepos_setup(2,21,20,3)
 spritepos_setup(2,22,8,31)
 spritepos_setup(2,23,3,49)
 spritepos_setup(2,24,-4,56)
+
+rangeAtk=320
 
 //isIdle=1
 //canAttack=6
