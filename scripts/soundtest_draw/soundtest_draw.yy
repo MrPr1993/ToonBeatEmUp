@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "soundtest_draw",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "TV FX",
-    "path": "folders/TV FX.yy",
+  "$GMScript":"",
+  "%Name":"soundtest_draw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"soundtest_draw",
+  "parent":{
+    "name":"TV FX",
+    "path":"folders/TV FX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

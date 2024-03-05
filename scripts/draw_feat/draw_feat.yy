@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "draw_feat",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "TV FX",
-    "path": "folders/TV FX.yy",
+  "$GMScript":"",
+  "%Name":"draw_feat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_feat",
+  "parent":{
+    "name":"TV FX",
+    "path":"folders/TV FX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

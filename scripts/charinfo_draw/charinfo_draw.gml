@@ -88,29 +88,32 @@ else
 if dataSet=-144*4
 {
 draw_charinfoicon(25,spr_enemyface,29,24*25,c_white*global.UnlockEnemy[72])
-draw_charinfoicon(26,spr_enemyface,42,24*26,c_white*global.UnlockEnemy[75])
-draw_charinfoicon(27,spr_enemyface,50,24*27,c_white*global.UnlockEnemy[77])
-draw_charinfoicon(28,spr_enemyface,45,24*28,c_white*global.UnlockEnemy[80])
-draw_charinfoicon(29,spr_enemyface,25,24*29,c_white*global.UnlockEnemy[82])
-draw_charinfoicon(30,spr_enemyface,26,24*30,c_white*global.UnlockEnemy[85])
+
+draw_charinfoicon(26,spr_enemyface,63,24*26,c_white*global.UnlockEnemy[117])
+
+draw_charinfoicon(27,spr_enemyface,42,24*27,c_white*global.UnlockEnemy[75])
+draw_charinfoicon(28,spr_enemyface,50,24*28,c_white*global.UnlockEnemy[77])
+draw_charinfoicon(29,spr_enemyface,45,24*29,c_white*global.UnlockEnemy[80])
+draw_charinfoicon(30,spr_enemyface,25,24*30,c_white*global.UnlockEnemy[82])
+
 }
 else
 if dataSet=-144*5
 {
-draw_charinfoicon(31,spr_enemyface,23,24*31,c_white*global.UnlockEnemy[88])
-draw_charinfoicon(32,spr_enemyface,28,24*32,c_white*global.UnlockEnemy[90])
-draw_charinfoicon(33,spr_enemyface,43,24*33,c_white*global.UnlockEnemy[93])
-draw_charinfoicon(34,spr_enemyface,27,24*34,c_white*global.UnlockEnemy[95])
-draw_charinfoicon(35,spr_enemyface,52,24*35,c_white*global.UnlockEnemy[97])
-draw_charinfoicon(36,spr_enemyface,22,24*36,c_white*global.UnlockEnemy[101])
+draw_charinfoicon(31,spr_enemyface,26,24*31,c_white*global.UnlockEnemy[85])
+draw_charinfoicon(32,spr_enemyface,23,24*32,c_white*global.UnlockEnemy[88])
+draw_charinfoicon(33,spr_enemyface,28,24*33,c_white*global.UnlockEnemy[90])
+draw_charinfoicon(34,spr_enemyface,43,24*34,c_white*global.UnlockEnemy[93])
+draw_charinfoicon(35,spr_enemyface,27,24*35,c_white*global.UnlockEnemy[95])
+draw_charinfoicon(36,spr_enemyface,52,24*36,c_white*global.UnlockEnemy[97])
 }
 else
 if dataSet=-144*6
 {
-draw_charinfoicon(37,spr_enemyface,51,24*37,c_white*global.UnlockEnemy[107])
-draw_charinfoicon(38,spr_enemyface,48,24*38,c_white*global.UnlockEnemy[110])
-draw_charinfoicon(39,spr_enemyface,46,24*39,c_white*global.UnlockEnemy[114])
-//draw_charinfoicon(40,spr_enemyface,40,24*40,c_white*global.UnlockEnemy[40])
+draw_charinfoicon(37,spr_enemyface,22,24*37,c_white*global.UnlockEnemy[101])
+draw_charinfoicon(38,spr_enemyface,51,24*38,c_white*global.UnlockEnemy[107])
+draw_charinfoicon(39,spr_enemyface,48,24*39,c_white*global.UnlockEnemy[110])
+draw_charinfoicon(40,spr_enemyface,46,24*40,c_white*global.UnlockEnemy[114])
 //draw_charinfoicon(41,spr_enemyface,41,24*41,c_white*global.UnlockEnemy[41])
 //draw_charinfoicon(42,spr_enemyface,42,24*42,c_white*global.UnlockEnemy[42])
 }

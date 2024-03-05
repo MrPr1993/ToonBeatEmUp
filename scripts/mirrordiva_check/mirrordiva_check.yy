@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "mirrordiva_check",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "0Misc. Enemies",
-    "path": "folders/7 - Enemies/0Misc. Enemies.yy",
+  "$GMScript":"",
+  "%Name":"mirrordiva_check",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mirrordiva_check",
+  "parent":{
+    "name":"0Misc. Enemies",
+    "path":"folders/7 - Enemies/0Misc. Enemies.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

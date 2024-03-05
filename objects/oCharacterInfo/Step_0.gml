@@ -5,6 +5,8 @@ if keyboard_check_pressed(ord("Q"))
 if keyboard_check(vk_shift)
 enemydata_unlockall()
 else
-global.UnlockEnemy[200]=0
+{
+var repload=1; repeat(200) {global.UnlockEnemy[repload]=0 repload+=1;}
+}
 }
 }

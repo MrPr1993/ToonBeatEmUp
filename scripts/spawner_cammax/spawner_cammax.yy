@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "spawner_cammax",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "2 - Scripts",
-    "path": "folders/2 - Scripts.yy",
+  "$GMScript":"",
+  "%Name":"spawner_cammax",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spawner_cammax",
+  "parent":{
+    "name":"2 - Scripts",
+    "path":"folders/2 - Scripts.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "frame_set",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/2 - Scripts/General.yy",
+  "$GMScript":"",
+  "%Name":"frame_set",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"frame_set",
+  "parent":{
+    "name":"General",
+    "path":"folders/2 - Scripts/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

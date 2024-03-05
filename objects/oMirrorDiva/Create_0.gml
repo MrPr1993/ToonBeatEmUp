@@ -23,6 +23,9 @@ if oControl.charCheck=3 oControl.charCheck=0 else oControl.charCheck+=1
 
 charchoose=oControl.charCheck
 
+mirrorAIThrow=0
+mirrorAIThrowTime=0
+
 name="VIVA?"
 enemyPortraitSpr=spr_playerface
 enemyPortraitIndex=0

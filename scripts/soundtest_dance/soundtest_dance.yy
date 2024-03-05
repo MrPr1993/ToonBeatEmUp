@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "soundtest_dance",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "1 - General Objects",
-    "path": "folders/1 - General Objects.yy",
+  "$GMScript":"",
+  "%Name":"soundtest_dance",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"soundtest_dance",
+  "parent":{
+    "name":"1 - General Objects",
+    "path":"folders/1 - General Objects.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

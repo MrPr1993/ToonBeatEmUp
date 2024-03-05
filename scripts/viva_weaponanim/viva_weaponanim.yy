@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "viva_weaponanim",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "0 - Player Anims",
-    "path": "folders/6 - Player Data/0 - Player Anims.yy",
+  "$GMScript":"",
+  "%Name":"viva_weaponanim",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"viva_weaponanim",
+  "parent":{
+    "name":"0 - Player Anims",
+    "path":"folders/6 - Player Data/0 - Player Anims.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

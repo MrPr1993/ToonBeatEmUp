@@ -29,6 +29,10 @@ hit=0
 
 zSpeed=-4
 
+damage=0.1
+
+MoveType=44
+
 bounce=0
 animLock=0
 

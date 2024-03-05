@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "escapeKey",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "1 - General Objects",
-    "path": "folders/1 - General Objects.yy",
+  "$GMScript":"",
+  "%Name":"escapeKey",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"escapeKey",
+  "parent":{
+    "name":"1 - General Objects",
+    "path":"folders/1 - General Objects.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

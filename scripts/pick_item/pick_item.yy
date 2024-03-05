@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "pick_item",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/2 - Scripts/General.yy",
+  "$GMScript":"",
+  "%Name":"pick_item",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"pick_item",
+  "parent":{
+    "name":"General",
+    "path":"folders/2 - Scripts/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "assets_load",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "1b - Outside Assets",
-    "path": "folders/1b - Outside Assets.yy",
+  "$GMScript":"",
+  "%Name":"assets_load",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"assets_load",
+  "parent":{
+    "name":"1b - Outside Assets",
+    "path":"folders/1b - Outside Assets.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

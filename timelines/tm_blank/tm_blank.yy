@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMTimeline",
-  "resourceVersion": "1.0",
-  "name": "tm_blank",
-  "momentList": [],
-  "parent": {
-    "name": "c - Timelines",
-    "path": "folders/c - Timelines.yy",
+  "$GMTimeline":"",
+  "%Name":"tm_blank",
+  "momentList":[],
+  "name":"tm_blank",
+  "parent":{
+    "name":"c - Timelines",
+    "path":"folders/c - Timelines.yy",
   },
+  "resourceType":"GMTimeline",
+  "resourceVersion":"2.0",
 }

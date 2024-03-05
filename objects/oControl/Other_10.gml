@@ -54,6 +54,7 @@ if enemySpawn=40 {enemySpawnName="40 Teddy Bear" spawnUnit=oBear}
 if enemySpawn=41 {enemySpawnName="41 Snow Girl" spawnUnit=oSnowGirl}
 if enemySpawn=42 {enemySpawnName="42 Fairy" spawnUnit=oFairy}
 if enemySpawn=43 {enemySpawnName="43 Hieroglyph" spawnUnit=oHieroglyph}
+if enemySpawn=44 {enemySpawnName="44 Bee Lady" spawnUnit=oBeeLady}
 }
 if spawnType="Bosses"
 {

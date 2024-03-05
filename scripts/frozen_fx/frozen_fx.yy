@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "frozen_fx",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "2 - Scripts",
-    "path": "folders/2 - Scripts.yy",
+  "$GMScript":"",
+  "%Name":"frozen_fx",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"frozen_fx",
+  "parent":{
+    "name":"2 - Scripts",
+    "path":"folders/2 - Scripts.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

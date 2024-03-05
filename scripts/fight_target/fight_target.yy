@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "fight_target",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "2 - Scripts",
-    "path": "folders/2 - Scripts.yy",
+  "$GMScript":"",
+  "%Name":"fight_target",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fight_target",
+  "parent":{
+    "name":"2 - Scripts",
+    "path":"folders/2 - Scripts.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

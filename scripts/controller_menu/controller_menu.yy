@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "controller_menu",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/2 - Scripts/General.yy",
+  "$GMScript":"",
+  "%Name":"controller_menu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"controller_menu",
+  "parent":{
+    "name":"General",
+    "path":"folders/2 - Scripts/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

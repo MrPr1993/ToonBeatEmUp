@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "credits_draw",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Credits",
-    "path": "folders/Credits.yy",
+  "$GMScript":"",
+  "%Name":"credits_draw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"credits_draw",
+  "parent":{
+    "name":"Credits",
+    "path":"folders/Credits.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

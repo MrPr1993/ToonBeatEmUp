@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "character_hitanims",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/2 - Scripts/General.yy",
+  "$GMScript":"",
+  "%Name":"character_hitanims",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"character_hitanims",
+  "parent":{
+    "name":"General",
+    "path":"folders/2 - Scripts/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

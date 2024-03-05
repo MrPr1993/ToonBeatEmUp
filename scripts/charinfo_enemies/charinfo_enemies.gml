@@ -330,7 +330,17 @@ weaponanim_2(weaponspr2,weaponIndex2,-26,-78,84,weaponcolor)}
 
 
 break;
-  case 26: enemyID=75
+
+  case 26: enemyID=117
+  idlestyle=1 hp=0.4
+ charinfo_set(12,spr_beelady_stand,2,animsetup_enemy,draw_enemy,spr_dancerpal,0,spr_enemyface,63,"BEEATRICE",
+"This bee person has a knack of fashion and honey. But they will show how stingy they are if provoked.")
+  if dataPal=2 {enemy_switch("WASPELLA",0)}
+///PINCHER
+
+break;
+
+  case 27: enemyID=75
   idlestyle=1 hp=0.2
  charinfo_set(12,spr_lobster_stand,2,animsetup_enemy,draw_enemy,spr_lobsterpal,0,spr_enemyface,42,"PINCHO",
 "A lobster who's big, and has claws that will give you a strong pinch.")
@@ -338,7 +348,7 @@ break;
 ///PINCHER
 
 break;
-case 27: enemyID=77
+case 28: enemyID=77
 weapon_add("SCIMITAR")
 idlestyle=1 hp=0.25
 charinfo_set(12,spr_dancer_stand,3,animsetup_enemy,draw_enemy,spr_dancerpal,0,spr_enemyface,50,"DANZA",
@@ -348,7 +358,7 @@ charinfo_set(12,spr_dancer_stand,3,animsetup_enemy,draw_enemy,spr_dancerpal,0,sp
   if dataPal=3 {enemy_switch("JAZMYN",0)}
  
  break; 
-  case 28:
+  case 29:
  hp=0.25 enemyID=80
 idlestyle=1
 
@@ -367,14 +377,14 @@ weaponanim(weaponspr,weaponIndex,27,-36,-1,weaponcolor)
 
 break;
 
-case 29: hp=0.3 enemyID=82
+case 30: hp=0.3 enemyID=82
  charinfo_set(12,spr_merman_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,25,"DOUGLAS",
 "A fish man guard who's tasked in taking intruders out and use either a spear or trident to stab you with.")
 
   if dataPal=2 {enemy_switch("ERIK",0)}
   if dataPal=3 {enemy_switch("ADAM",0)}
 break;
-  case 30:
+  case 31:
  idlestyle=1 hp=0.2 enemyID=85
  charinfo_set(12,spr_siren_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,26,"SIRENA",
 "They say they are lovely, but they can be pretty viscious if they need to with her projectiles.")
@@ -382,7 +392,7 @@ break;
   if dataPal=3 {enemy_switch("SKYLA",0)}
 
 break;
-  case 31:
+  case 32:
  idlestyle=1
  hp=0.25 enemyID=88 
  charinfo_set(12,spr_martian_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,23,"MARTIA",
@@ -392,27 +402,27 @@ break;
   if dataPal=3 {enemy_switch("EXTA",0)}
 
 break;
-  case 32: hp=0.2 enemyID=90
+  case 33: hp=0.2 enemyID=90
  charinfo_set(12,spr_alienrobot_stand,2,animsetup_enemy,draw_enemy,spr_robotpal,0,spr_enemyface,28,"ELECTRON",
 "A security robot from space! These machines assist the invaders in capturing escaped experiments.")
   if dataPal=2 {enemy_switch("DESTRON",0)}
 
 break;
-  case 33: hp=0.25 enemyID=93
+  case 34: hp=0.25 enemyID=93
  idlestyle=1
  charinfo_set(12,spr_spacer_stand,2,animsetup_enemy,draw_enemy,spr_fairypal,0,spr_enemyface,43,"OJO",
 "They do research on planets and will choose on what planet they will loot with their female counterparts.")
   if dataPal=2 {enemy_switch("VER",0)}
 
 break;
-  case 34: hp=0.3 enemyID=95
+  case 35: hp=0.3 enemyID=95
   charinfo_set(12,spr_goblin_stand,2,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBERT",
 "This is one busy goblin, who hates getting their work disrupted. They want people away from their mine zone!")
   if dataPal=2 {enemy_switch("GOHNNY",0)}
 
 
 break;
-  case 35:
+  case 36:
   idlestyle=1 enemyID=97
  charinfo_set(12,spr_shroom_stand,4,animsetup_enemy,draw_enemy,spr_playerpal,0,spr_enemyface,52,"AMANITA",
 "She is cheerful! And she can spread a lot of spores to give someone a sensational high like she is now.")
@@ -421,7 +431,7 @@ break;
 	  if dataPal=4 {enemy_switch("PHOLIOTA",0)}
 
 break;
-  case 36:
+  case 37:
  idlestyle=1 hp=0.4 enemyID=101
  charinfo_set(12,spr_slime_stand,6,animsetup_enemy,draw_enemy,spr_slimepal,0,spr_enemyface,22,"MELON",
  "A smug slime who has a malleable skill to smash anyone. In a way by crushing them with their powers.")
@@ -433,7 +443,7 @@ break;
 	  if dataPal=6 {enemy_switch("CHEMI",0)}	  
  
 break;
-  case 37: enemyID=107
+  case 38: enemyID=107
   idlestyle=1 hp=1
  charinfo_set(12,spr_snowgirl_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,51,"PRIMA",
  "A huge creature who will gonna love them, hug them, pet them and freeze them with their breath.")
@@ -442,7 +452,7 @@ break;
 
 break;
 
-  case 38:
+  case 39:
   idlestyle=1 hp=0.2 enemyID=110
  charinfo_set(12,spr_nurse_stand,4,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,48,"DR.PERO",
  "Whenever they need someone to assist, they will as they throw in their unsefe concoctions, so beware.")
@@ -451,7 +461,7 @@ break;
 	  if dataPal=4 {enemy_switch("DR.GLUCO",0)}
  
 break;
-  case 39: hp=1 enemyID=114
+  case 40: hp=1 enemyID=114
  charinfo_set(12,spr_ladybot_stand,2,animsetup_enemy,draw_enemy,spr_robotpal,0,spr_enemyface,46,"O-POLIS",
 "A sentry femenine machine built to combat intruders and can manage and go for a punching charge!")
    if dataPal=2 {enemy_switch("METR-A",0)}

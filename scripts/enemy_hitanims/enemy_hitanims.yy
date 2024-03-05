@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "enemy_hitanims",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Unused",
-    "path": "folders/2 - Scripts/Unused.yy",
+  "$GMScript":"",
+  "%Name":"enemy_hitanims",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"enemy_hitanims",
+  "parent":{
+    "name":"Unused",
+    "path":"folders/2 - Scripts/Unused.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

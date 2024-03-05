@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "hiscore_setup",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Hi-Score",
-    "path": "folders/2 - Scripts/Hi-Score.yy",
+  "$GMScript":"",
+  "%Name":"hiscore_setup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"hiscore_setup",
+  "parent":{
+    "name":"Hi-Score",
+    "path":"folders/2 - Scripts/Hi-Score.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

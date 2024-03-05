@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "player_hitresponse",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Unused",
-    "path": "folders/2 - Scripts/Unused.yy",
+  "$GMScript":"",
+  "%Name":"player_hitresponse",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_hitresponse",
+  "parent":{
+    "name":"Unused",
+    "path":"folders/2 - Scripts/Unused.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "draw_minigames",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "TV FX",
-    "path": "folders/TV FX.yy",
+  "$GMScript":"",
+  "%Name":"draw_minigames",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_minigames",
+  "parent":{
+    "name":"TV FX",
+    "path":"folders/TV FX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

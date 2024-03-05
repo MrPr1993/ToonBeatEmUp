@@ -58,7 +58,7 @@ function animsetup_femburglar() {
 	animFrame+=0.2 else {if ground animFrame+=0.1 if sprite_index=AtkSpr2 and ground animFrame+=0.2} if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 if anim=11
-{sprite_index=spr_femburglar_flip
+{sprite_index=spr_femburglar_flip selfatk.x=x
 		
 	if animFrame<1 {animFrame+=0.1
 		sprite_index=spr_femburglar_attack2 image_index=3

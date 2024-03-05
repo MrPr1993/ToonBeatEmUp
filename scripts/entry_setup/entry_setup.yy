@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "entry_setup",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "0EnemyEntry",
-    "path": "folders/7 - Enemies/0EnemyEntry.yy",
+  "$GMScript":"",
+  "%Name":"entry_setup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"entry_setup",
+  "parent":{
+    "name":"0EnemyEntry",
+    "path":"folders/7 - Enemies/0EnemyEntry.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

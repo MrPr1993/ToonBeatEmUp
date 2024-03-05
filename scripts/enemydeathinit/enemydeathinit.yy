@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "enemydeathinit",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "7 - Enemies",
-    "path": "folders/7 - Enemies.yy",
+  "$GMScript":"",
+  "%Name":"enemydeathinit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"enemydeathinit",
+  "parent":{
+    "name":"7 - Enemies",
+    "path":"folders/7 - Enemies.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

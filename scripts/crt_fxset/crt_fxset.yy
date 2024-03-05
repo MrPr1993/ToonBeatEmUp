@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "crt_fxset",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "TV FX",
-    "path": "folders/TV FX.yy",
+  "$GMScript":"",
+  "%Name":"crt_fxset",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"crt_fxset",
+  "parent":{
+    "name":"TV FX",
+    "path":"folders/TV FX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

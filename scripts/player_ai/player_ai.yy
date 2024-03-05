@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "player_ai",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "6 - Player Data",
-    "path": "folders/6 - Player Data.yy",
+  "$GMScript":"",
+  "%Name":"player_ai",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_ai",
+  "parent":{
+    "name":"6 - Player Data",
+    "path":"folders/6 - Player Data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
