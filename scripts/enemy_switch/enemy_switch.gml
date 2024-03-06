@@ -93,8 +93,8 @@ case "FAUNA": enemy_modify(spr_plantpal,1,_name,0,0.5,0.5) enemyID=73 break;
 case "FOLI": enemy_modify(spr_plantpal,3,_name,0,0.7,0.7) enemyID=74 break;
 
 ///Beeatrice
-case "WASPELLA": enemy_modify(spr_dancerpal,1,_name,0,0.6,0.6) enemyID=118
-
+case "HONEYDEW": enemy_modify(spr_dancerpal,4,_name,0,0.6,0.6) enemyID=118
+case "WASPELLA": enemy_modify(spr_dancerpal,3,_name,0,0.6,0.6) enemyID=119
 ////Pincho
 case "PINCHER": enemy_modify(spr_lobsterpal,1,_name,0,0.5,0.5) enemyID=76 break;
 

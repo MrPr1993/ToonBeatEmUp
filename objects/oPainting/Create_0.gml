@@ -7,7 +7,7 @@ hasback=0
 
 chardraw=painting_draw
 
-name="PAINTING"
+name="ALBUS"
 enemyPortraitSpr=spr_miscface
 enemyPortraitIndex=0
 
@@ -37,6 +37,12 @@ StandSpr=spr_burglarB_stand
 height=96
 
 canbeGrabbed=0
+
+DeathCry=snd_deathcry1
+
+DamageVoice1=snd_enemy3
+DamageVoice2=snd_enemy3
+DamageVoice3=snd_enemy3
 
 
 	RunSpr=spr_burglarB_run

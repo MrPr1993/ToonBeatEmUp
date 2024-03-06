@@ -35,6 +35,12 @@ weapon_setup(oScimitar,spr_scimitar,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,
 WspriteFX=spr_blood2
 }
 
+if wpadd="AXE"
+{
+weapon_setup(oAxe,spr_axe,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,1,64)
+}
+
+
 if wpadd="FISHING"
 weapon_setup(oFishingRod,spr_fishingrod,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
 

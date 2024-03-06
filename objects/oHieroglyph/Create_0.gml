@@ -27,4 +27,10 @@ paintingSpr=spr_heye
 paintingInd=0
 paintingScale=1
 
+DeathCry=snd_stonebreakm
+
+DamageVoice1=snd_stonebreaks
+DamageVoice2=snd_stonebreaks
+DamageVoice3=snd_stonebreaks
+
 frameParts=spr_hieroglyph_part

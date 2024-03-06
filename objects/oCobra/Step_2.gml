@@ -7,12 +7,18 @@ overwriteAttack=1
 overwriteAttack2=1
 overwriteAttack3=1
 
+if bombRecharge!=0 bombRecharge-=1
+
 if anim=10
 {special0=0
 if distance_to_point(targetEnemy.x,targetEnemy.y)>40
 anim=12
 else
 anim=11
+
+if anim=12 if current_pal=1 if bombRecharge=0
+anim=13
+
 }
 
 if anim=11
@@ -29,7 +35,7 @@ if animFrame>4.75 {canmove=1}
 }
 
 if anim=12
-{sprite_index=spr_cobra_attack
+{sprite_index=spr_cobra_attack 
 hit=0
 atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.5
 frame_set(0,0,0.1)
@@ -44,3 +50,17 @@ frame_set(6,0,0.25)
 if animFrame>6.75 {canmove=1}
 }
 
+///Poison Gas
+if anim=13
+{sprite_index=spr_cobra_attack2 bombRecharge=choose(200,320,400)
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.05) if animFrame=3
+{PlaySoundNoStack(snd_cobra3)
+{sm=instance_create_depth(x+27*image_xscale,y+2,0,oPharaohSmoke) sm.hspeed=1*image_xscale
+		sm.z=z-55}
+}
+frame_set(3,3,0.25)
+frame_set(4,4,0.01)
+frame_set(3,3,0.25)
+}

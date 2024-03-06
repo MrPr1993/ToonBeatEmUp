@@ -1,6 +1,26 @@
 enemy_endstep()
 throw_step()
 
+if paintingSpr=spr_painting2
+{name="ANNIE"
+	
+DamageVoice1=snd_femenemy8
+DamageVoice2=snd_femenemy8
+DamageVoice3=snd_femenemy8
+DeathCry=snd_femenemy3
+	
+	}
+
+if paintingSpr=spr_painting3
+{name="FREDERICK" 
+	
+	DeathCry=snd_merman2
+DamageVoice1=snd_merman1
+DamageVoice2=snd_merman1
+DamageVoice3=snd_merman1
+	
+	}
+
 if hp=0
 {
 atkAir=0

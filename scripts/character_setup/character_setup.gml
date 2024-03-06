@@ -295,6 +295,7 @@ stagePose=1
 	throwItemSpr=spr_viva_itemthrow
 	meltSpr=spr_viva_melt
 	inflateSpr=spr_viva_inflate
+	wrapSpr=spr_viva_wrap
 	spawnZAdd=0
 	throwHspd=4
 	frictionX=0

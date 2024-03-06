@@ -586,6 +586,72 @@ if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
 }
 
 
+/////Mummy Wrap
+if anim=591001
+{sprite_index=wrapSpr sentflying=0
+	
+if hp=0 {}
+	
+if animFrame=0 {specialtimes[4]=0; animFrame=1}
+
+
+if ground
+{
+frame_set(1,1,0.25)
+frame_set(2,0,0.25)
+}
+else
+{
+frame_set(1,2,0.25)
+frame_set(2,1,0.25)
+}
+
+specialtimes[4]+=1
+
+
+
+var formspd=2;
+
+if !ground
+{
+	if key_right 
+	{
+	
+	if place_free(x+formspd,y) and x<__view_get( e__VW.XView, 0 )+320-28 x+=formspd}
+	
+
+	if -key_left {if place_free(x-formspd,y)
+	and x>__view_get( e__VW.XView, 0 )+42
+	  x-=formspd}
+	if key_up 
+	{if place_free(x,y-formspd) y-=formspd
+	}
+	if key_down 
+	{if place_free(x,y+formspd)
+	and y<__view_get( e__VW.YView, 0 )+240-2
+	  y+=formspd
+	}
+}
+
+if key_right or -key_left or key_up or key_down
+if ground=1
+{if key_right image_xscale=1
+	if -key_left image_xscale=-1
+	
+	zSpeed=-3 ground=0 animFrame=1
+}
+
+	if key_jump and ground
+	{animFrame=1
+	ground=0 zSpeed=-3 PlaySound(snd_jump)
+	}
+
+
+
+if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+}
+
+
 }
 
 

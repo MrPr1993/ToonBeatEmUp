@@ -60,6 +60,7 @@ HeartSpr=spr_hina_heart
 	WildTakeSpr4=spr_hina_wildtake4
 	qSandSpr=spr_hina_quicksand
 inflateSpr=spr_hina_inflate
+	wrapSpr=spr_hina_wrap
 }
 	
 	if atk=0

@@ -65,6 +65,7 @@ HeartSpr=spr_sofia_heart
 WildTakeSpr4=spr_sofia_wildtake4
 qSandSpr=spr_sofia_quicksand
 inflateSpr=spr_sofia_inflate
+	wrapSpr=spr_sofia_wrap
 }
 
 	if atk=0

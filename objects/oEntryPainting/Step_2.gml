@@ -10,6 +10,8 @@ if __view_get( e__VW.XView, 0 )>rangeX+rangeXAdd if spawned=0 {PlaySound(snd_ste
 
 z+=zSpeed
 
+
+
 if spawned=1
 {visible=1
 	shadow=spr_shadow

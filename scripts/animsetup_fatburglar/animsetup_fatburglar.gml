@@ -101,8 +101,12 @@ RunSpr=spr_fatburglar_moveobject
 	image_index+=0.5 if image_index=6 image_index=0
 
 
+
 	if animFrame<4
-	{if image_index=0 or image_index=3 
+	{
+	dust_make(x,y,z,-2*image_xscale,0,0)
+	
+	if image_index=0 or image_index=3 
 
 	if !(targetEnemy.y>y+4 and targetEnemy.y<y-4)
 	specialcheck2=0
@@ -114,10 +118,15 @@ RunSpr=spr_fatburglar_moveobject
 	}
 
 	animFrame+=0.1
+	
+if animFrame=2 if current_pal=6 animFrame=4
 
 	if animFrame>4 and animFrame<8
 	{if animFrame=4.1 PlaySoundNoStack(snd_fatburglar)
 	atk=1 canbeGrabbed=0 HitQuake=10
+	
+	dust_make(x,y,z,-4*image_xscale,0,0)
+	
 	if place_free(x+8*image_xscale,y) x+=8*image_xscale
 	else {hurt=0 hitBack=0
 

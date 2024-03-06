@@ -210,24 +210,53 @@ break;
  "These skeletons of jugglers will show up and have a bone to pick with you! And throw it.")} 
 break;
   case 16: enemyID=47 hp=0.3
- charinfo_set(12,spr_axe,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"POLTERGEIST",
+  weapon_add("AXE")
+ weaponX=14
+weaponY=-69
+  weaponanim(weaponspr,weaponIndex,lerp(weaponX,0,1),lerp(weaponY,0,1),lerp(weaponangle,90,1),weaponcolor)
+  
+ charinfo_set(12,mask_none,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"POLTERGEIST",
 "A haunted bladed weapon that's taken over with remnants of a spirit obsessed with heads.")
 break;
   case 17:
+  
+  ////Paintings
   hp=0.5 enemyID=48
   paintingSpr=spr_painting1
- charinfo_set(12,spr_painting_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"PAINTING",
+ charinfo_set(12,spr_painting_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ALBUS",
 "Painting.")
 
     if dataPal=2
 	{paintingSpr=spr_painting2 enemyID=49
- charinfo_set(12,spr_painting_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"PAINTING",
+ charinfo_set(12,spr_painting_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ANNIE",
 "Painting.")	}
 	    if dataPal=3
 		{paintingSpr=spr_painting3 enemyID=50
- charinfo_set(12,spr_painting_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"PAINTING",
+ charinfo_set(12,spr_painting_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"FREDERICK",
 "Painting.")}
+
+///Hieroglyphs
+	    if dataPal=4
+		{paintingSpr=spr_heye enemyID=125
+ charinfo_set(12,spr_hieroglyph_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"HORUS",
+"The eye of Horus.")}
+	    if dataPal=5
+		{paintingSpr=spr_heye enemyID=126
+ charinfo_set(12,spr_hieroglyph_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"SCARAB",
+"The eye of Horus.")}
+	    if dataPal=6
+		{paintingSpr=spr_heyankh enemyID=127
+ charinfo_set(12,spr_hieroglyph_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ANKH",
+"The eye of Horus.")}
+	    if dataPal=7
+		{paintingSpr=spr_heya enemyID=128
+ charinfo_set(12,spr_hieroglyph_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ANUBIS",
+"The eye of Horus.")}
+
 break;
+
+
+
   case 18:
   hp=0.2 enemyID=51
  charinfo_set(12,spr_catman_stand,2,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,12,"MAU",
@@ -333,9 +362,10 @@ break;
 
   case 26: enemyID=117
   idlestyle=1 hp=0.4
- charinfo_set(12,spr_beelady_stand,2,animsetup_enemy,draw_enemy,spr_dancerpal,0,spr_enemyface,63,"BEEATRICE",
+ charinfo_set(12,spr_beelady_stand,3,animsetup_enemy,draw_enemy,spr_dancerpal,0,spr_enemyface,63,"BEEATRICE",
 "This bee person has a knack of fashion and honey. But they will show how stingy they are if provoked.")
-  if dataPal=2 {enemy_switch("WASPELLA",0)}
+  if dataPal=2 {enemy_switch("HONEYDEW",0)}
+  if dataPal=3 {enemy_switch("WASPELLA",0)}
 ///PINCHER
 
 break;

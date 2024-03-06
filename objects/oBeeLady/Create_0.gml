@@ -4,6 +4,11 @@ name="BEEATRICE"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=63
 
+DamageVoice1=snd_femenemy8
+DamageVoice2=snd_femenemy8
+DamageVoice3=snd_femenemy8
+DeathCry=snd_femenemy3
+
 enemyscript=animsetup_enemy
 
 pointshit=10
@@ -23,6 +28,9 @@ height=95
 specialFX=0
 
 enemyID=117
+
+spritepos_setup(1,24,5,51)
+spritepos_setup(2,24,25,77)
 
 StandSpr=spr_beelady_stand
 MoveSpr=spr_beelady_move
@@ -49,3 +57,6 @@ FrozenSpr=spr_beelady_frozen
 	hasFront=1
 	FrontSpr=spr_beelady_front
 hasDizzy=1 DizzySpr=spr_beelady_dizzy
+
+my_pal_sprite=spr_dancerpal
+current_pal=0

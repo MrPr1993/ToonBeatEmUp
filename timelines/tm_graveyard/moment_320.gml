@@ -23,13 +23,13 @@ turn0=-1 enemyMax=1
 }
 
 en1=instance_create_depth(3168, 160,-1,oEntryPainting) with en1
-{rangeX=3168-160 z=-16}
+{rangeX=3168-160 z=-16 enemyID=48}
 
 en2=instance_create_depth(3328, 160,-1,oEntryPainting) with en2
-{rangeX=3328-160 z=-14 paintingSpr=spr_painting2}
+{rangeX=3328-160 z=-14 paintingSpr=spr_painting2 enemyID=49}
 
 en8=instance_create_depth(3504, 160,-1,oEntryPainting) with en8
-{rangeX=3504-160 z=-16 paintingSpr=spr_painting3}
+{rangeX=3504-160 z=-16 paintingSpr=spr_painting3 enemyID=50}
 
 en3=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,192,0,oZombieWoman)
 with en3 {canmove=0 anim=61 idleRange=15}

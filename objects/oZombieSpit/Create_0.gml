@@ -36,3 +36,11 @@ MoveType=44
 bounce=0
 animLock=0
 
+hitflash=spr_zombiespithit
+endflash=spr_zombiespitend
+
+hitSnd=snd_melthit
+
+haspal=0
+my_pal_sprite=spr_zombiepal
+current_pal=0
