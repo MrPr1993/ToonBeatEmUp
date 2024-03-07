@@ -16,6 +16,8 @@
     {"$GMSpriteFrame":"","%Name":"6b62558d-64fc-479b-a857-c20330d4b340","name":"6b62558d-64fc-479b-a857-c20330d4b340","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"8b9e3d6c-196b-48df-8d63-d8d47305ca75","name":"8b9e3d6c-196b-48df-8d63-d8d47305ca75","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"d8041ef7-dd37-45f4-9987-2a9edb69f800","name":"d8041ef7-dd37-45f4-9987-2a9edb69f800","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6f51362f-e335-44c5-ace9-385d03781548","name":"6f51362f-e335-44c5-ace9-385d03781548","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"90f37e54-aab2-4833-8d41-104943d96224","name":"90f37e54-aab2-4833-8d41-104943d96224","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -52,7 +54,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":4.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -83,6 +85,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d8041ef7-dd37-45f4-9987-2a9edb69f800","path":"sprites/spr_samurai_attack/spr_samurai_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"5fec022a-4405-4627-b089-1fc68a8d7f6b","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6f51362f-e335-44c5-ace9-385d03781548","path":"sprites/spr_samurai_attack/spr_samurai_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8c9bdd0d-b45c-4654-9a0a-bb8543a1d11c","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"90f37e54-aab2-4833-8d41-104943d96224","path":"sprites/spr_samurai_attack/spr_samurai_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e7a67d9e-2664-476a-9a7a-d044ee1dd18b","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

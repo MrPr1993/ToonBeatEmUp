@@ -57,6 +57,8 @@ FrozenSpr=spr_strongburg_frozen
 DizzySpr=spr_strongburg_dizzy hasDizzy=1
 
  enemyID=32
+ 
+ my_pal_sprite=spr_boxerpal
 
 specialtaunt=function()
 {

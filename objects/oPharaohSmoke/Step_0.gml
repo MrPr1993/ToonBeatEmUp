@@ -1,9 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
 if image_index>3
 {
 hspeed=lerp(hspeed,0,0.01)
 }
+
+if sprite_index=mainSmoke
+if animLoop!=-1
+if image_index>=animLoop image_index=animLoopStart
+
 
 depth=-y
 
@@ -14,5 +21,5 @@ if isPharaoh=1
 {
 if instance_exists(oPharaoh)
 if oPharaoh.hp=0 or oPharaoh.dead=1 and sprite_index=mainSmoke
-{image_index=0 sprite_index=spr_smokeend}
+{image_index=0 sprite_index=endSmoke}
 }

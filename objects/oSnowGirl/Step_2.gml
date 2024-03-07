@@ -26,12 +26,12 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 if animFrame=clamp(animFrame,2,2.2)
 if specialcheck1=1
-{
+{PlaySound(snd_hwolf3) PlaySound(snd_swing)
 ground=0 sentflying=4*image_xscale zSpeed=-4 specialcheck1=0
 }
 frame_set(2,2,0.1)
 frame_set(3,3,0.05) MoveType=4 damage=0.2 
-if animFrame=4 {selfatk.atk=1 oControl.quakeFXTime=10 
+if animFrame=4 {selfatk.atk=1 oControl.quakeFXTime=10 PlaySound(snd_quakeground)
 flashFX(x+34*image_xscale,y,z,spr_hitground,0,1,99,1,1,c_white,1) fx.isDepth=0 fx.depth=6000
 }if animFrame=clamp(animFrame,4,4.9) atk=1 else atk=0
 frame_set(4,4,0.5)

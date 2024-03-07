@@ -53,8 +53,14 @@ animFrame+=0.01 //selfatk.HitSound=-1
 if animFrame<0.25 {sprite_index=StandSpr image_index=1}
 else
 {
-if current_pal=0 ///Change to a clumsy tackle
+if current_pal=0 or current_pal=2 ///Change to a clumsy tackle
 {
+if current_pal=2
+{
+anim=14
+exit;
+}
+
 if image_xscale=1
 and targetEnemy.x<x+96// and y=clamp(y,targetEnemy.y-8,targetEnemy.x+8)
 {animFrame=0 anim=13 ground=0 zSpeed=-6 sentflying=6*image_xscale PlaySoundNoStack(DamageVoice1)}
@@ -91,6 +97,29 @@ if ground {selfatk.atk=0 canBounce=0 sentflying=0 hitBack=1 animFrame=0 anim=6
 	hground.isDepth=0 hground.z=z
 
 	}
+}
+
+///Zombie Kick
+
+///Jump Kick
+if anim=14
+{damage=0.1
+if animFrame=0 {PlaySoundNoStack(snd_mzombie5) specialtimes[0]=0
+
+	}	
+sprite_index=spr_strongburg_kick
+atkcol_set(35,0,22,1.85,1,22)
+
+frame_set(0,0,0.25)
+frame_set(1,0,0.05) if animFrame=2 {ground=0 zSpeed=-6 sentflying=6*image_xscale animFrame=2.1
+	}
+if animFrame=2.1 {image_index=1+specialtimes[0] if specialtimes[0]<1.5 specialtimes[0]+=0.25
+	atk=1 MoveType=1 damage=0.2
+				
+	if ground {animFrame=3 atk=0}}
+frame_set(3,0,0.1)
+frame_set(4,0,0.1)
+if animFrame>4.5 canmove=1
 }
 
 if anim=6666 ///Grab Enemy

@@ -65,11 +65,12 @@ if animFrame=4
 PlaySoundNoStack(snd_swing5)
 spit=instance_create_depth(x+48*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale
 spit.sprite_index=spr_catman_yarn spit.bounce=3
-spit.my_pal_sprite=my_pal_sprite  spit.my_pal_sprite=my_pal_sprite
+spit.my_pal_sprite=my_pal_sprite  spit.current_pal=current_pal
 with spit
-{MoveType=591001
+{MoveType=591001 haspal=1
 hitflash=spr_catman_yarn2
 endflash=spr_catman_yarn2
+
 hitSnd=snd_hit
 }
 

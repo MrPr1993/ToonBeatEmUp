@@ -59,6 +59,10 @@ if anim=10
 
 if atkBuffer2=1 {atkBuffer2=0 atkBuffer1=choose(130,180) anim=choose(13,13,13,14,14) exit;}
 if distance_to_point(targetEnemy.x,targetEnemy.y)>100 anim=11 else anim=12
+
+if anim=13 if x!=clamp(x,oControl.camX-20,oControl.camX+320+20)
+anim=11
+
 }
 if anim=11 ///Charge
 {if animFrame=0 PlaySound(snd_harpy11)

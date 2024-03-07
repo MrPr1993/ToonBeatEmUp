@@ -40,7 +40,7 @@ case "MS.JAB": enemy_modify(spr_boxerpal,4,_name,0,0.5,0.5)  enemyID=29 break;
 case "MS.CRUSH": enemy_modify(spr_ninjapal,6,_name,0,0.8,0.8)  enemyID=31 break;
 
 ///Mr. Chip
-case "MR.DALE": enemy_modify(spr_enemypal,6,_name,0,0.8,0.8)  enemyID=33 break;
+case "MR.DALE": enemy_modify(spr_enemypal,12,_name,0,0.8,0.8)  enemyID=33 break;
 
 ///Ms. Ki
 case "MS.CHI": enemy_modify(spr_ninjapal,0,_name,0,0.35,0.35)  enemyID=35 break;

@@ -9,6 +9,12 @@ if anim=10
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)>100 anim=12
 else anim=11
+
+if current_pal=12
+{
+if distance_to_point(targetEnemy.x,targetEnemy.y)>80 anim=12
+else anim=13
+}
 }
 
 if anim=11
@@ -211,5 +217,27 @@ targetID=-1
 }
 }
 ////Instantly use Super	
+
+}
+
+///Jump Kick
+if anim=13
+{damage=0.2
+if animFrame=0 {PlaySoundNoStack(snd_buffenemy4) specialtimes[0]=0
+
+	}	
+sprite_index=spr_strongburg_kick
+atkcol_set(46,0,20,1.8,1,38)
+
+frame_set(0,0,0.25)
+frame_set(1,1,0.05) if animFrame=2 {ground=0 zSpeed=-6 sentflying=6*image_xscale animFrame=2.1
+	}
+if animFrame=2.1 {image_index=2+specialtimes[0] if specialtimes[0]<1.5 specialtimes[0]+=0.25
+	atk=1 MoveType=1 damage=0.2
+				
+	if ground {animFrame=3 atk=0}}
+frame_set(3,1,0.1)
+frame_set(4,0,0.1)
+if animFrame>4.5 canmove=1
 
 }

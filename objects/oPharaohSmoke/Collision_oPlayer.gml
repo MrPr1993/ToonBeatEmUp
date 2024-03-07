@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if sprite_index!=spr_smokeend
+{
 if (sprite_index=spr_psmoke and image_index>3 and (instance_exists(oPharaoh)) and isPharaoh=1)
 or (isPharaoh=0 and image_index>3)
 {
@@ -19,5 +21,6 @@ image_index=0 sprite_index=spr_smokeend
 }
 }
 
+}
 }
 }

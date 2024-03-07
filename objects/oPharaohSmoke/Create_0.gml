@@ -10,6 +10,8 @@ fallHole=0
 
 z=0
 
+hitOnce=0
+
 image_speed=0.25
 
 shadow=spr_shadow
@@ -23,3 +25,7 @@ dizzyHit=1
 isPharaoh=1
 
 mainSmoke=spr_psmoke
+endSmoke=spr_smokeend
+
+animLoop=-1
+animLoopStart=3

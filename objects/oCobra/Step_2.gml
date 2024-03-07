@@ -37,7 +37,7 @@ if animFrame>4.75 {canmove=1}
 if anim=12
 {sprite_index=spr_cobra_attack 
 hit=0
-atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.5
+atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.2
 frame_set(0,0,0.1)
 frame_set(1,1,0.1) if animFrame=clamp(animFrame,3,5) atk=1 else atk=0
 if animFrame=2 PlaySoundNoStack(snd_cobra3)
@@ -58,9 +58,12 @@ frame_set(1,1,0.25)
 frame_set(2,2,0.05) if animFrame=3
 {PlaySoundNoStack(snd_cobra3)
 {sm=instance_create_depth(x+27*image_xscale,y+2,0,oPharaohSmoke) sm.hspeed=1*image_xscale
-		sm.z=z-55}
+		sm.z=z-24 sm.isPharaoh=0 sm.mainSmoke=spr_bigsmoke
+		sm.sprite_index=spr_smokemid sm.animLoop=5.75 
+		}
 }
 frame_set(3,3,0.25)
 frame_set(4,4,0.01)
-frame_set(3,3,0.25)
+frame_set(5,3,0.25)
+if animFrame>5.75 {canmove=1}
 }

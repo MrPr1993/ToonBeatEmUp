@@ -17,7 +17,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)<60
 anim=11
 else
 {
-if current_pal=0 
+if current_pal=0
 anim=12 else anim=13
 }
 }
@@ -62,9 +62,24 @@ frame_set(1,2,0.25)
 frame_set(2,1,0.25) 
 if animFrame=3
 {sprite_index=spr_plant_attack
+	if current_pal=2
+	{
 sm=instance_create_depth(x+32*image_xscale,y+1,0,oPharaohSmoke) sm.hspeed=1*image_xscale
 		sm.z=z-16 sm.dizzyHit=0 sm.MoveType=6 sm.isPharaoh=0
 		sm.sprite_index=spr_bigsmoke sm.mainSmoke=spr_bigsmoke
+	}
+	else
+	{
+		{PlaySoundNoStack(snd_swing4)
+		spit=instance_create_depth(x+6*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=z-66 spit.image_xscale=image_xscale}
+	with spit {boucespd=-6 MoveType=1
+	sprite_index=spr_plant_seed
+hitflash=spr_plant_seed2
+endflash=spr_plant_seed2
+	}
+	}
+	
+		
 }
 frame_set(3,1,0.05)
 frame_set(4,0,0.2)

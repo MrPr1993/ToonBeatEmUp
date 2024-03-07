@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 alarm[0]=200
-
+colorshade_setup()
 trainz=0
 
 fallHole=0
@@ -34,10 +34,13 @@ damage=0.1
 MoveType=44
 
 bounce=0
+boucespd=-4
 animLock=0
 
 hitflash=spr_zombiespithit
 endflash=spr_zombiespitend
+
+isCut=0
 
 hitSnd=snd_melthit
 
