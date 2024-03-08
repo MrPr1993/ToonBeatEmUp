@@ -230,7 +230,7 @@ sprite_index=spr_strongburg_kick
 atkcol_set(46,0,20,1.8,1,38)
 
 frame_set(0,0,0.25)
-frame_set(1,1,0.05) if animFrame=2 {ground=0 zSpeed=-6 sentflying=6*image_xscale animFrame=2.1
+frame_set(1,1,0.25) if animFrame=2 {ground=0 zSpeed=-6 sentflying=6*image_xscale animFrame=2.1
 	}
 if animFrame=2.1 {image_index=2+specialtimes[0] if specialtimes[0]<1.5 specialtimes[0]+=0.25
 	atk=1 MoveType=1 damage=0.2

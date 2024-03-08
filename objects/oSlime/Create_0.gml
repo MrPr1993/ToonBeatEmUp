@@ -51,6 +51,8 @@ FrozenSpr=spr_slime_frozen
 
 enemyID=101
 
+bombRecharge=0
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

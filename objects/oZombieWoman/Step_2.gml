@@ -77,12 +77,12 @@ if animFrame>17.75 {canmove=1 atk=0}
 ////Claw
 if anim=13
 {
-sprite_index=spr_zombiew_attack damage=0.1
-atkcol_set(52,0,2,3.25,1,91) MoveType=1
+sprite_index=spr_zombiew_attack2 damage=0.1
+atkcol_set(52,0,2,2.25,1,91) MoveType=1
 selfatk.isCut=1 selfatk.spriteFX=spr_blood selfatk.HitSound=snd_cut
-frame_set(0,0,0.1)
+frame_set(0,0,0.25)
 frame_set(1,1,0.1)
-frame_set(2,2,0.1) if animFrame=2 {PlaySoundNoStack(snd_swing5) PlaySound(snd_fzombie5)}
+frame_set(2,2,0.25) if animFrame=2 {PlaySoundNoStack(snd_swing5) PlaySound(snd_fzombie5)}
 frame_set(3,3,0.5) if animFrame=clamp(animFrame,2,3) {sentflying=6*image_xscale atk=1} else {sentflying=0 atk=0}
 frame_set(4,4,0.025)
 frame_set(5,0,0.25) if animFrame>5.5 canmove=1

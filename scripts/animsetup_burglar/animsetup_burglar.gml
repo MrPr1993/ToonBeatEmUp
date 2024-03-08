@@ -22,7 +22,9 @@ if anim=10
 	{		
 	hit=0  
 	if animFrame=0
-	{
+	{if current_pal=4 specialcheck0=6
+		
+	
 	specialcheck1=120
 	if specialcheck0!=2 sprite_index=AtkSpr
 	else {sprite_index=AtkSpr2 specialcheck0=0}
@@ -47,8 +49,10 @@ if anim=10
 
 if anim=12 ///Air Kick
 {if animFrame=0 sprite_index=JumpAtkSpr atkcol_set(28,0,10,1.45,1,29) MoveType=1
-frame_set(0,0,0.025)
-if animFrame=1 {PlaySoundNoStack(snd_enemy1) image_index=1 sentflying=3*image_xscale ground=0 zSpeed=-4}
+	var _multi=1; if current_pal=4 _multi=2
+	
+frame_set(0,0,0.025*_multi)
+if animFrame=1 {PlaySoundNoStack(snd_enemy1) image_index=1 sentflying=(2+1*_multi)*image_xscale ground=0 zSpeed=-4}
 frame_set(1,1,0.1)
 if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=ThrownSpr image_index=10 sentflying=0 atk=0} else {sprite_index=JumpAtkSpr sentflying=3*image_xscale atk=1}
 

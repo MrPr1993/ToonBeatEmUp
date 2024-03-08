@@ -1,10 +1,27 @@
 enemy_endstep()
 throw_step()
 
+overwriteAttack=1
+overwriteAttack1=1
+overwriteAttack2=1
+overwriteAttack3=1
+overwriteAttack4=1
+overwriteAttack5=1
+
+
+if bombRecharge!=0 bombRecharge-=1
+
+
 if anim=10
 {specialcheck0=0
 if distance_to_point(targetX,targetY)<60
 {anim=11} else anim=14
+
+if anim=14 if current_pal=2 anim=12
+
+if anim=14 if current_pal=6 if bombRecharge=0 anim=12 else {anim=0 canmove=1}
+
+if anim=14 if current_pal=10 if bombRecharge=0 anim=12
 }
 
 if anim=11 ///Attack Stand
@@ -17,14 +34,36 @@ frame_set(0,0,0.1) if animFrame=clamp(animFrame,1,2) {sentflying=8*image_xscale 
 frame_set(1,1,0.5)
 frame_set(2,2,0.05)
 frame_set(3,0,0.1)
-if animFrame>3.5 {if specialcheck0=0 canmove=1 else {animFrame=0 anim=14}}
+if animFrame>3.5 {if specialcheck0=0 canmove=1 else {animFrame=0 anim=14
+	
+	if anim=14 
+	{
+		if current_pal=2 anim=12
+		if current_pal=6 {anim=0 canmove=1}
+		if current_pal=10 anim=12
+	}
+	}}
 }
 
 ///Needle
+if anim=12
+{sprite_index=spr_nurse_throwneedle
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.01)
+frame_set(4,4,0.1) if animFrame=5
+{PlaySoundNoStack(snd_swing5)
+projectile_create(x+10*image_xscale,y+2,z-50,32,spr_nurse_needle,6*image_xscale,mask_small,spr_blood4,0.15,1,1,-1,-1)
+}
+frame_set(5,5,0.5)
+frame_set(6,5,0.25)
+if animFrame>6.5 canmove=1
+}
 
 
 if anim=14 ///Item Throw Attack
-{ hit=0  
+{ hit=0  bombRecharge=choose(320,340,360,380,400)
 sprite_index=spr_nurse_throwitem MoveType=0 damage=0.1
 image_index=animFrame image_speed=0
 
@@ -40,6 +79,20 @@ bomb.weapon_pal=current_pal bomb.my_pal_sprite=my_pal_sprite
 bomb.spdZ=-1*(point_distance(x,0,targetX,0)/32)
 
 bomb.trigger=1
+
+if current_pal=6 with bomb
+destroyscript=function()
+{
+if carryID!=-1 and carry=1
+with carryID carry=0
+ex=instance_create_depth(x,y,depth,oAcidPuddle) ex.z=z ex.depth=depth
+
+PlaySound(snd_break)
+
+instance_destroy()
+
+}
+
 }
 
 atk=0

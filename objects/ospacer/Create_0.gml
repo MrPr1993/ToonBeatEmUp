@@ -55,5 +55,7 @@ enemyID=93
 current_pal=0;
 my_pal_sprite=spr_fairypal
 
+bombRecharge=0
+
 spritepos_setup(1,24,3,40)
 spritepos_setup(1,24,13,66)

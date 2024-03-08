@@ -5,6 +5,7 @@ throw_step()
 overwriteAttack=1
 overwriteAttack1=1
 overwriteAttack2=1
+overwriteAttack3=1
 
 if specialcheck0!=0 specialcheck0-=1 //////Brain reload
 
@@ -15,7 +16,11 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>100
 if distance_to_point(targetEnemy.x,targetEnemy.y)>40
 anim=65 else anim=11
 
-if spawnID!=-1 if anim=65 if distance_to_point(targetEnemy.x,targetEnemy.y)<100 anim=11
+if spawnID!=-1 {if anim=65 if distance_to_point(targetEnemy.x,targetEnemy.y)<100 anim=11
+
+spawnID=oLaserGun anim=1340
+}
+
 }
 
 	if anim=11
@@ -88,6 +93,32 @@ frame_set(1,1,0.1)
 if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=ThrownSpr image_index=10 sentflying=0 atk=0} else {sprite_index=spr_martian_airkick sentflying=3*image_xscale atk=1}
 
 if animFrame>3 and ground {canmove=1}
+}
+
+if anim=1340 ///Gunfire
+{var imgskp=0;
+sprite_index=spr_martian_handgun
+if animFrame<1
+{
+if animFrame<0.25 {weaponanim(weaponspr,weaponIndex,22,-70,135,weaponcolor) imgskp=1 }
+else {weaponanim(weaponspr,weaponIndex,21,-70,135,weaponcolor)}}
+
+frame_set(0,imgskp,0.01)
+	if animFrame=1 {		PlaySound(snd_alien1)		
+	flashFX(x+38*image_xscale,y,z-50,weaponProjFlashSpr,0,1,0,1,1,c_white,1)
+	projectile_create(x+38*image_xscale,y,z-50,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
+	projectile.HitSound=weaponProjHitSnd
+	}
+	
+	frame_set(1,1,0.25)
+	frame_set(2,2,0.1)
+	frame_set(3,2,0.25) if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0}
+	
+	if animFrame>1 {if animFrame<2 weaponanim(weaponspr,weaponIndex,17,-69,135,weaponcolor) 
+	else {weaponanim(weaponspr,weaponIndex,22,-70,135,weaponcolor)
+	}}
+
+
 }
 
 if sprite_index=StandSpr

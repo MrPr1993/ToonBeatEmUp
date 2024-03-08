@@ -119,7 +119,7 @@ RunSpr=spr_fatburglar_moveobject
 
 	animFrame+=0.1
 	
-if animFrame=2 if current_pal=6 animFrame=4
+if animFrame=2.5 if current_pal=6 animFrame=4
 
 	if animFrame>4 and animFrame<8
 	{if animFrame=4.1 PlaySoundNoStack(snd_fatburglar)

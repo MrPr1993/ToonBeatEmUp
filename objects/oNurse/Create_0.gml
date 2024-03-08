@@ -50,6 +50,8 @@ hasDizzy=1 DizzySpr=spr_nurse_dizzy
 
 enemyID=110
 
+bombRecharge=0
+
 enemyIdle1=spr_nurse_idle1
 enemyIdle2=spr_nurse_front
 

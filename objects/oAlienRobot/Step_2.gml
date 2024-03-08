@@ -11,6 +11,8 @@ overwriteAttack3=1
 	{
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>80
 	anim=12 else anim=11
+	
+	if anim=12 if current_pal=1 anim=13
 	}
 	
 	
@@ -40,4 +42,31 @@ projectile_create(x+25*image_xscale,y,z-40,-32,spr_alienrobot_bullet,4*image_xsc
 	frame_set(4,2,0.05)	
 	frame_set(5,1,0.1)
 	frame_set(6,0,0.1) if animFrame>6.5 canmove=1
+	}
+	
+	if anim=13
+	{
+	sprite_index=spr_alienrobot_launch
+	frame_set(0,0,0.25)
+	frame_set(1,1,0.25)
+	frame_set(2,2,0.25) if animFrame=3
+	{///8, 51
+		PlaySound(snd_metalhit)
+	spit=instance_create_depth(x+8*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale
+spit.sprite_index=spr_alienrobot_bomb spit.bounce=3
+spit.my_pal_sprite=my_pal_sprite  spit.current_pal=current_pal
+with spit
+{MoveType=5 haspal=1
+hitflash=spr_explosion3
+endflash=spr_explosion3
+
+hitSnd=snd_hit
+}
+	}
+	frame_set(3,3,0.25)
+	frame_set(4,4,0.1)
+	frame_set(5,2,0.25)
+	frame_set(6,0,0.25)
+	if animFrame>6.5 canmove=1
+	
 	}

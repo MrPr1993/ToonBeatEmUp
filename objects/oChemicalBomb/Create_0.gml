@@ -32,6 +32,8 @@ throwGravity=1
 
 canHit=0
 
+angleSpd=45/2
+
 destroyscript=function()
 {
 if carryID!=-1 and carry=1

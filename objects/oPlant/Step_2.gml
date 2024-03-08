@@ -57,8 +57,8 @@ if animFrame>4.5 canmove=1
 if anim=13
 {
 if animFrame=0 sprite_index=spr_plant_swallow
-frame_set(0,4,0.25) 
-frame_set(1,2,0.25) 
+frame_set(0,4,0.1) 
+frame_set(1,2,0.1) 
 frame_set(2,1,0.25) 
 if animFrame=3
 {sprite_index=spr_plant_attack
@@ -72,9 +72,9 @@ sm=instance_create_depth(x+32*image_xscale,y+1,0,oPharaohSmoke) sm.hspeed=1*imag
 	{
 		{PlaySoundNoStack(snd_swing4)
 		spit=instance_create_depth(x+6*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=z-66 spit.image_xscale=image_xscale}
-	with spit {boucespd=-6 MoveType=1
+	with spit {boucespd=-6 MoveType=1 bounce=3 
 	sprite_index=spr_plant_seed
-hitflash=spr_plant_seed2
+hitflash=spr_plant_seed2 hitSnd=snd_hit
 endflash=spr_plant_seed2
 	}
 	}

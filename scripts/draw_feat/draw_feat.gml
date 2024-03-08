@@ -10,7 +10,7 @@ draw_set_color(c_black) draw_set_alpha(0.75)
 draw_rectangle(0,48-24,320,48+24,false)
 draw_sprite_ext(argument1,argument2,4+24,4+32+32-32,1,1,0,argument3,1) draw_set_alpha(1) ///248
 draw_set_color(argument3) draw_text(4+28+32,48-8,string(argument0)+"."+string(string_upper(argument4)))
-draw_text_ext(4+28+32,48,string_upper(argument5),0,248)
+draw_text_ext(4+28+32,48,string_upper(argument5),8,248)
 draw_set_color(c_black)
 if oControl.featsel=argument0
 draw_set_alpha(0)

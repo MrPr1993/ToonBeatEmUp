@@ -69,7 +69,7 @@ spit.my_pal_sprite=my_pal_sprite  spit.current_pal=current_pal
 with spit
 {MoveType=591001 haspal=1
 hitflash=spr_catman_yarn2
-endflash=spr_catman_yarn2
+endflash=spr_catman_yarn2 
 
 hitSnd=snd_hit
 }

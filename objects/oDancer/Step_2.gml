@@ -17,6 +17,9 @@ if weaponspr=-1 rangeAtk=100 else rangeAtk=150
 	else
 	{
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>60 anim=12 else anim=11
+	
+	if anim=12
+	if current_pal=1 or current_pal=2 anim=13
 	}
 	}
 	
@@ -82,6 +85,25 @@ if image_index=clamp(image_index,3,3.9) weaponanim(weaponspr,weaponIndex,41,-46,
 
 }
 
+///Spin Attack
+if anim=13
+{
+//if animFrame=0 {PlaySound(choose(snd_oni5,snd_oni8))}	
+atkcol_set(0,0,0,1.5,1,34)
+if animFrame=0 {special0=0 sprite_index=spr_dancer_sword2}
+damage=0.2 selfatk.MoveType=1 selfatk.isCut=1
+if animFrame<0.5 frame_set(0,0,0.05) else frame_set(0,1,0.05)
+if animFrame=1 if ground {sprite_index=spr_dancer_hit z+=-32 ground=0 zSpeed=-4}
+frame_set(1,14,0.25) if animFrame=clamp(animFrame,1,5) {atk=1 sentflying=6*image_xscale} else {atk=0 sentflying=0}
+frame_set(2,13,0.25) 
+frame_set(3,12,0.25) 
+frame_set(4,11,0.25) if animFrame=5 if !ground animFrame=1
+if ground and animFrame=clamp(animFrame,1,4) {animFrame=5 sprite_index=spr_dancer_attack}
+frame_set(5,1,0.25)
+frame_set(6,1,0.25)
+
+if animFrame>6.75 {canmove=1}
+}
 
 
 	if anim=5 ///Hit Air - has own unique take to break fall if alive

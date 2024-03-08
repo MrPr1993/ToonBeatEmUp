@@ -93,15 +93,17 @@ frame_set(3,1,0.05) damage=0.2
 if animFrame=4 {PlaySoundNoStack(WswingSound) selfatk.atk=1// oControl.quakeFXTime=10 
 }if animFrame=clamp(animFrame,4,4.9) atk=1 else atk=0
 frame_set(4,2,0.5)
-frame_set(5,2,0.05)
+frame_set(5,3,0.05)
 frame_set(6,0,0.1)
 if animFrame>6.5 canmove=1
 
 if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,19,-25,87,weaponcolor)
 if image_index=clamp(image_index,1,1.9)
-weaponanim(weaponspr,weaponIndex,-12,-55,149,weaponcolor)
+weaponanim(weaponspr,weaponIndex,-12,-64,149,weaponcolor)
 if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,25,-17,0,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
 weaponanim(weaponspr,weaponIndex,25,-18,0,weaponcolor)
 }
 

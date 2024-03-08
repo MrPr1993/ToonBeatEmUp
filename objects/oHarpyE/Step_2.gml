@@ -109,7 +109,7 @@ if anim=13 ///Sing
 	{proj=instance_create_depth(x+11*image_xscale,y+1,depth+1,oProjectile) with proj
 		{sprite_index=spr_harpyesong mask_index=mask_small spriteFX=spr_hitflash
 			dizzyAtk=1 damage=0.02 
-			} proj.z=z-48 proj.addXSpeed=0.3*image_xscale
+			} proj.z=z-48 proj.addXSpeed=0.1*image_xscale
 		proj.hspeed=2*image_xscale proj.spdZ=3 proj.addZSpeed=-0.45
 		}
 	frame_set(2,2,0.25)

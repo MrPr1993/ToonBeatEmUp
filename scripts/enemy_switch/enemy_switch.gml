@@ -147,7 +147,7 @@ case "UNDA": enemy_modify(spr_zombiepal,2,_name,0,0.6,0.6) enemyID=109 break;
 ////Nurse gal
 case "DR.SULF": enemy_modify(spr_ninjapal,2,_name,0,0.2,0.2) enemyID=111 break;
 case "DR.MONIA": enemy_modify(spr_ninjapal,6,_name,0,0.2,0.2) enemyID=112 break;
-case "DR.GLUCO": enemy_modify(spr_ninjapal,4,_name,0,0.4,0.4) enemyID=113 break;
+case "DR.GLUCO": enemy_modify(spr_ninjapal,10,_name,0,0.4,0.4) enemyID=113 break;
 
 
 

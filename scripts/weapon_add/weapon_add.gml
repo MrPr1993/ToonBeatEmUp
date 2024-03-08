@@ -173,6 +173,26 @@ weaponHitType=0
 weaponProjFlashSpr=spr_gunflash
 }
 
+if wpadd="LASERGUN"
+{
+spawnID=oLaserGun
+weaponspr=spr_lasergun
+weaponIndex=0
+weaponX=14
+weaponY=-69
+weaponangle=180
+weaponcolor=c_white
+weaponBack=1
+weaponRange=100
+weaponDamage=0.1
+weapontargetHeight=2
+weapontype=4
+weaponHitType=0
+weaponProjSpr=spr_alienrobot_bullet
+PickupSound=snd_getweapon
+weaponProjHitSnd=snd_hit
+}
+
 if wpadd="DYNAMITE"
 {
 spawnID=oDynamite
