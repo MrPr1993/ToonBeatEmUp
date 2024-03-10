@@ -21,7 +21,9 @@ weapontype=0
 weaponHitType=1
 WswingSound=snd_swing5
 if wpadd="TOYHAMMER"
+{
 weaponspr=spr_hammer2
+}
 }
 
 if wpadd="TASER"
@@ -46,7 +48,10 @@ weapon_setup(oFishingRod,spr_fishingrod,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,
 
 
 if wpadd="PIPE"
+{
 weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+
+}
 
 if wpadd="SHOVEL"
 weapon_setup(oShovel,spr_shovel,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)

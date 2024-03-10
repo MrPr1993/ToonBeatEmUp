@@ -21,14 +21,17 @@ PlaySound(snd_hitgroundmetal)
 oControl.quakeFXTime=10
 
 en1=instance_create(4790-48-16,208,oNurse) en1.canmove=0 en1.isIdle=1 en1.alarm[1]=60 en1.anim=70000
-en1.idleRange=30 en1.enemyIdle1=spr_nurse_idle2
+en1.idleRange=30 en1.enemyIdle1=spr_nurse_idle2 with en1
+{
+enemy_switch("DR.MONIA",0)
+}
 
 en2=instance_create(4790-16,208,oEnemy1B) en2.canmove=0 en2.isIdle=1 en2.alarm[1]=60 en2.anim=70000
 en2.idleRange=30 en2.enemyIdle1=spr_burglarB_idle4 en2.image_xscale=-1
 
 en3=instance_create(4790-48+16-16,208+24,oEnemy1) en3.canmove=0 en3.isIdle=1 en3.alarm[1]=60 en3.anim=70000
 en3.idleRange=30+16 with en3
-enemy_modify(my_pal_sprite,4,"MR.LAR",0,0.24,0.24) en3.enemyIdle1=spr_burglar_idle3
+enemy_switch("MR.LAR",0) en3.enemyIdle1=spr_burglar_idle3
 }
 specialscript=-1;
 }
@@ -51,7 +54,7 @@ with en1 {rangeX=0 image_xscale=1 	spawnFall=spr_wrestler_move	spawnEnemy=oWrest
 
 en2=instance_create(4074,256,oEntryJump)
 with en2 {rangeX=0 image_xscale=1	spawnFall=spr_wrestler_move spawnEnemy=oWrestler
-	spawnEnemy=oWrestler enemy_modify(spr_ninjapal,7,"MS.CRUSH",0,0.8,0.8)
+	spawnEnemy=oWrestler enemy_switch("MS.CRUSH",0)
 	
 	}	
 }

@@ -81,35 +81,43 @@ if animFrame>17.75 {canmove=1 atk=0}
 if anim=13
 {
 	
-	if animFrame=0 { sprite_index=spr_snowgirl_attack specialtimes[0]=0
-	MoveType=1 image_index=animFrame image_speed=0 damage=0.2
+	if animFrame=0 { sprite_index=spr_snowgirl_attack specialtimes[0]=2
+	MoveType=1 image_index=0 image_speed=0 damage=0.2
 	if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
 	}
 	
 	{damage=0.4
-	if animFrame=clamp(animFrame,1,1.5) if ground {sprite_index=spr_snowgirl_attack2 specialcheck2=2 PlaySoundNoStack(snd_jump) PlaySound(snd_hwolf3) z-=2 ground=0 zSpeed=-7}
+	if animFrame=clamp(animFrame,1,1.5) if ground {
+			 targetXcheck=targetEnemy.x
+	 targetYcheck=targetEnemy.y
+	 if x<targetXcheck targetXcheck=1 else targetXcheck=-1
+ 
+	 if y!=clamp(y,targetYcheck-8,targetYcheck+8)
+	 {if y<targetYcheck targetYcheck=1 else targetYcheck=-1}
+	else targetYcheck=0 
+		sprite_index=spr_snowgirl_attack2 specialcheck2=2 PlaySoundNoStack(snd_jump) PlaySound(snd_hwolf3) z-=2 ground=0 zSpeed=-7}
 	if !ground 
-	{MoveType=4 animFrame=2.9 SoundCount0=0
+	{MoveType=4 animFrame=2.9 SoundCount0=0 image_index=animFrame
 	isThrow=0 throwing=0 atkAddX=0 atkAddY=0 atkAddZ=32 selfatk.image_xscale=1.5*image_xscale selfatk.image_yscale=1
 	if place_free(x+specialcheck2*targetXcheck,y) x+=specialcheck2*image_xscale
 	if place_free(x,y+specialcheck2*targetYcheck) if y<__view_get( e__VW.YView, 0 )+240-2 y+=specialcheck2*targetYcheck
 	if zSpeed>0 z+=0.45 
-	}
+	}else image_index=0
 
-	image_index=animFrame image_speed=0
+	 image_speed=0
 	if animFrame=clamp(animFrame,2,3) and zSpeed>-1 atk=1 else atk=0
 	}
 	
 		if animFrame=clamp(animFrame,3,3.5) if sprite_index=spr_snowgirl_attack2
 	{
-	if SoundCount0=0 {SoundCount0=1 sprite_index=spr_snowgirl_attack image_index=1 PlaySoundNoStack(HitGround)}
+	if SoundCount0=0 {SoundCount0=1 sprite_index=spr_snowgirl_attack image_index=0 PlaySoundNoStack(HitGround)}
 	oControl.quakeFXTime=10
 	}
 	
 		if animFrame=clamp(animFrame,0,1.5)
 	animFrame+=0.2 else {if ground 
 
-	animFrame+=0.1 if sprite_index=sprite_index=spr_snowgirl_attack and ground animFrame+=0.001} if animFrame>4.5 {
+	animFrame+=0.1 if sprite_index=sprite_index=spr_snowgirl_attack and ground {animFrame+=0.001 if animFrame>3 image_index=clamp(image_index,0,1.4)}} if animFrame>4.5 {
 		if specialtimes[0]=0 {hurt=0 atk=0 canmove=1 hit=0}
 		else {specialtimes[0]-=1 animFrame=1 }
 		

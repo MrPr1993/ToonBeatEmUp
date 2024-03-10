@@ -11,7 +11,7 @@ spawner_followset("WaveSet1",0,5560+160,1)
 en1=instance_create_depth(5478,164,-1,oMartian)
 en2=instance_create_depth(5544,164,-1,oMartian)
 en3=instance_create_depth(5734,164,-1,oMartian)
-en4=instance_create_depth(5914,164,-1,oMartian)
+en4=instance_create_depth(5814,164,-1,oMartian)
 en5=instance_create_depth(5944,164,-1,oMartian)
 
 with oMartian

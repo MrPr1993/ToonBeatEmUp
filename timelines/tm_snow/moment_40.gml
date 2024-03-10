@@ -13,11 +13,15 @@ spawner_followset("WaveSet1",0,3280,1)
 
 en1=instance_create(2540, 196,oEntryJump) en1.rangeXAdd=0
 with en1
-{spawnSpr=spr_monk_jump spawnEnemy=oMonk xAdd=-70 rangeX=x-160 image_xscale=-1}
+{spawnSpr=spr_monk_jump spawnEnemy=oMonk xAdd=-70 rangeX=x-160 image_xscale=-1
+	enemy_switch("MS.CHI",0)
+	}
 
 en2=instance_create(2540, 236,oEntryJump) en2.rangeXAdd=0
 with en2
-{spawnSpr=spr_monk_jump spawnEnemy=oMonk xAdd=-70 rangeX=x-160 image_xscale=-1}
+{spawnSpr=spr_monk_jump spawnEnemy=oMonk xAdd=-70 rangeX=x-160 image_xscale=-1
+	enemy_switch("MS.CHI",0)
+	}
 
 
 }

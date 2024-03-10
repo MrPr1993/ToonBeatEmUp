@@ -5,7 +5,7 @@ if __view_get( e__VW.XView, 0 )>=1744
 //with en8 {alarm[1]=2}
 //en9=instance_create(__view_get( e__VW.XView, 0 )+320+16,192,oFemBurglar)
 //with en9{alarm[1]=2	
-//enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)}
+//enemy_switch("MS.CHILL",0)}
 
 en8=instance_create(2014,190,oEntryJump)
 with en8

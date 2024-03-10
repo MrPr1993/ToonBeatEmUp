@@ -19,6 +19,11 @@ with oControl
 goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
 
+en3=instance_create(__view_get( e__VW.XView, 0)+320+64,200-32,oBeeLady)
+with en3 {image_xscale=-1 canAttack=5 alarm[1]=60}
+
+en4=instance_create(__view_get( e__VW.XView, 0)+320+64,200+32,oBeeLady)
+with en4 {image_xscale=-1 canAttack=5 alarm[1]=60}
 
 }
 else

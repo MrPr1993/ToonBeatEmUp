@@ -64,6 +64,7 @@ if hp<=0
 	anim=5
 	}
 	else
+	if HitType=0
 	{
 
 	if damageFall>=0
@@ -78,7 +79,8 @@ if hp<=0
 	sprite_index=ThrownSpr
 	animFrame=0
 	anim=4
-	}}
+	}
+	}
 	else
 ///Hit Air
 	{event_user(1) canBounce=1

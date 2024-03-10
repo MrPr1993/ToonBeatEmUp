@@ -13,7 +13,7 @@ if anim=10
 if distance_to_point(targetEnemy.x,targetEnemy.y)<40
 anim=11 else anim=12
 
-if anim=12 if current_pal=4 anim=13
+if anim=12 if current_pal=4 anim=1300
 }
 
 if anim=11 ///Close Stinger
@@ -59,7 +59,14 @@ frame_set(4,1,0.25)
 if animFrame>4.7 canmove=1
 }
 
-if anim=13 ///Swelling Stinger
+	///Diving Down
+	if anim=13
+	{z+=2 sprite_index=spr_beelady_drop image_index+=0.2 zSpeed=0
+		
+	if ground {anim=0 recovery=0 canmove=1}
+	}
+
+if anim=1300 ///Swelling Stinger
 {MoveType=45 damage=0.3 
 if animFrame=0 {specialtimes[0]=0} specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
 sprite_index=spr_beelady_attack1
@@ -73,3 +80,4 @@ frame_set(4,4,0.1) if animFrame=clamp(animFrame,3,4) {sentflying=8*image_xscale 
 frame_set(5,1,0.25)
 if animFrame>5.7 canmove=1
 }
+

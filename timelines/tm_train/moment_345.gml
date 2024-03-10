@@ -5,14 +5,28 @@ if __view_get( e__VW.XView, 0 )>=3058+160
 en5=instance_create(__view_get( e__VW.XView, 0 )-140,128,oEntryHorse) en5.rideX=3444 en5.rangeX=0
 with en5
 {ySpeed=3 horsepal=2 spawnSpeedZ=-3 ridetime=210+20 isDepth=0 horsepal=1 depth=16777210 horsedepth=16777210
-spawnSpr=spr_fatburglar_attack2 enemy_modify(my_pal_sprite,4,"MR. WIDE",0,0.4,0.4)
+spawnSpr=spr_fatburglar_attack2 enemy_switch("MR.WIDE",0)
 spawnFall=spr_fatburglar_attack2
 riderSpr=spr_fatburglar_ride spawnEnemy=oFatBurglar
 	sprite_index=spr_fathorserun
 }
 
 en6=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,170,0,oFatBurglar) with en6
-{enemy_modify(my_pal_sprite,4,"MR. WIDE",0,0.4,0.4) image_xscale=-1 canAttack=3 alarm[3]=10}
+{enemy_switch("MR.WIDE",0) image_xscale=-1 canAttack=5 alarm[1]=60
+	
+		weaponspr=spr_crate
+spawnID=choose(oBurger)
+	
+	}
+	
+	
+en7=enemy_ambusher(0,176,oSwing,-1,1,32,10,1,1,0,132)
+with en7 {weapon_add("DYNAMITE") enemy_switch("MS.THRU",1)}
+en8=enemy_ambusher(0,176+16,oSwing,-1,1,32,10,1,1,0,132)
+with en8 {weapon_add("DYNAMITE") enemy_switch("MS.THRU",1)}
+en9=enemy_ambusher(0,176+32,oSwing,-1,1,32,10,1,1,0,132)
+with en9 {weapon_add("DYNAMITE") enemy_switch("MS.THRU",1)}
+	
 }
 else
 {

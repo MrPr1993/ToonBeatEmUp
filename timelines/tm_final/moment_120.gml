@@ -19,18 +19,27 @@ layer_background_change(bgc,bg_sky2)
 
 en1=instance_create_depth(7774,156,-1,oEntryFenceJump) with en1
 {depth=16777204 isDepth=0 ySpeed=2 spawnSpeedZ=-6 rangeXAdd=0 rangeX=7774-200 newSpawn=1 newSpawnX=7774-240 rideX=7774
+enemy_switch("MR.LAR",0) 
 }
 en2=instance_create_depth(8030,156,-1,oEntryFenceJump) with en2
 {depth=16777204 isDepth=0 ySpeed=2 spawnSpeedZ=-6 rangeXAdd=0 rangeX=8030-200 newSpawn=1 newSpawnX=8030-240 rideX=8030
+enemy_switch("MR.ROB",0) 
 }
 en3=instance_create_depth(8030+160,156,-1,oEntryFenceJump) with en3
 {depth=16777204 isDepth=0 ySpeed=2 spawnSpeedZ=-6 rangeXAdd=0 rangeX=8030-200+160 newSpawn=1 newSpawnX=8030-240+160 rideX=8030+160
+
 }
 
 en4=instance_create(__view_get( e__VW.XView, 0)+320+64,208-16,oFatBurglar)
-with en4 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_modify(my_pal_sprite,4,"MR. WIDE",0,0.4,0.4)}	
+with en4 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_switch("MR.WIDE",0) 
+	weaponspr=spr_crate
+spawnID=oHotDog
+	}	
 en5=instance_create(__view_get( e__VW.XView, 0)+320+64,208+16,oFatBurglar)
-with en5 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_modify(my_pal_sprite,4,"MR. WIDE",0,0.4,0.4) }
+with en5 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_switch("MR.WIDE",0) 
+		weaponspr=spr_crate
+spawnID=oHotDog
+	}
 
 
 }

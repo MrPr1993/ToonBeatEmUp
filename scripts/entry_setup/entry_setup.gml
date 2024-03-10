@@ -14,6 +14,8 @@ trainz=0
 trainFX=0
 image_speed=0
 
+spawnDelay=0
+
 hidden=0
 
 risespd=0.025

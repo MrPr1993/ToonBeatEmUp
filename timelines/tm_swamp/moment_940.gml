@@ -8,7 +8,7 @@ with en9 {image_xscale=-1 canAttack=5 alarm[1]=30
 
 en10=instance_create(__view_get( e__VW.XView, 0)+320+64,200+32,oSkeleton)
 with en10 {image_xscale=-1 canAttack=5 alarm[1]=30
-	current_pal=1 name="SKELIE" my_pal_sprite=spr_mummypal
+	current_pal=1 name="SKELIE" my_pal_sprite=spr_mummypal enemy_switch("SKELIE",0)
 	}
 
 }

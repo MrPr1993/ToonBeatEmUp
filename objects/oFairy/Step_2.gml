@@ -16,7 +16,8 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)<80
 anim=11
 else
 anim=12 
-if current_pal=1 or current_pal=3 if anim=12 if distance_to_point(targetEnemy.x,targetEnemy.y)<120 anianim=14
+
+if current_pal=1 or current_pal=3 if anim=12 anim=14
 }
 
 if anim=11
@@ -64,14 +65,17 @@ if animFrame>4.5 canmove=1
 	if anim=14
 	{atkcol_set(0,0,0,0.8,1,45)
 		MoveType=1
-		if animFrame=0 {specialtimes[0]=360 sprite_index=spr_fairy_attack2 image_index=1} damage=0.2
+		if animFrame=0 {specialtimes[0]=1 sprite_index=spr_fairy_attack2 image_index=1} damage=0.2
 	frame_set(0,1,0.25) if animFrame=1
-	{ground=0 sentflying=1*image_xscale zSpeed=-8
-	sprite_index=spr_fairy_spin
+	{ground=0 sentflying=1*image_xscale zSpeed=-10
+	sprite_index=spr_fairy_spin animFrame=1.2
 	}
-	if ground if sprite_index=spr_fairy_spin
-	{sentflying=0 animFrame=2 sprite_index=spr_fairy_attack image_index=0 atk=0}
-	else{image_index=specialtimes[0]
+	if ground {if sprite_index=spr_fairy_spin
+	{sentflying=0 animFrame=2 sprite_index=spr_fairy_attack image_index=0 atk=0}}
+	else{
+		atk=1
+	image_index+=specialtimes[0] if image_index>7.9 image_index=0
+		
 	specialtimes[0]=lerp(specialtimes[0],0,0.1)}
 	
 	frame_set(2,0,0.25) if animFrame>2.5 canmove=1

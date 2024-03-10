@@ -13,14 +13,14 @@ with en2
 		spawnFall=spr_burglarB_front rideX=1333
 	moveSpr=spr_burglarB_run spawnSpeedZ=-8
 	spawnEnemy=oEnemy1B
-	enemy_modify(my_pal_sprite,4,"MR.STIL",0,0.24,0.24)
+	enemy_switch("MR.LAD",0)
 	
 	}
 	
 en3=instance_create(1500,132-8,oEntryFenceJump)
 with en3
 {depth=16777208 isDepth=0 rangeXAdd=-48 ySpeed=1.5 rideX=1520
-enemy_modify(my_pal_sprite,4,"MR.LAR",0,0.24,0.24) spawnSpeedZ=-8
+enemy_switch("MR.LAR",0) spawnSpeedZ=-8
 }
 
 en4=instance_create(1660-32,196-24,oWrestler)
@@ -30,7 +30,7 @@ with en4
 	}
 en5=instance_create(1660+48,196-24,oWrestler)
 with en5{canmove=0 isIdle=1 alarm[1]=60 anim=70002 idleRange=60+32
-	enemyIdle3=spr_wrestler_idle2 enemy_modify(spr_ninjapal,7,"MS.CRUSH",0,hp,maxhp)	
+	enemyIdle3=spr_wrestler_idle2 enemy_switch("MS.CRUSH",0)	
 	image_xscale=-1}
 
 }

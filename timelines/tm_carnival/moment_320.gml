@@ -13,7 +13,7 @@ with en5
 {depth=16777208.5 isDepth=0 rangeXAdd=-48 xAdd=-160+80
 	spawnFall=spr_boxer_front moveSpr=spr_boxer_move spawnEnemy=oBoxer
 current_pal=2;
-my_pal_sprite=spr_boxerpal
+my_pal_sprite=spr_boxerpal enemy_switch("MS.JAB",0)
 
 	}
 	

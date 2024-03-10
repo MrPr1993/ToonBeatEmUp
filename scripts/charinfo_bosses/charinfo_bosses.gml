@@ -77,7 +77,7 @@ idlestyle=1 hasVariants=1
  
  break;
 
-    case 15: enemyID=167
+    case 15: enemyID=167 idlestyle=1
  charinfo_set(12,spr_genie_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,47,"HAIFA",
  "A genie of the lamp who listens to their master as they have a go and crush intruders.") break;
      case 16: enemyID=168

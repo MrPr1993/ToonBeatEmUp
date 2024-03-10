@@ -7,9 +7,9 @@ en3=instance_create(3746,160,oAreaSpawner) with en3
 {
 spawnX=x-160
 enemytype0=oLobster
-MaxSpawnFrame=0 visible=1
+MaxSpawnFrame=0 visible=1 name0="PINCHER"
 FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-turn0=1 enemyMax=0
+turn0=-1 enemyMax=0
 }
 
 en4=instance_create(__view_get( e__VW.XView, 0)+320-64,240,oLobster)

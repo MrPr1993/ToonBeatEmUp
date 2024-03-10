@@ -3,13 +3,18 @@
 enemy_endstep()
 throw_step()
 
+overwriteAttack=1
+
 
 if anim=10
 	{animFrame=0
 	if distance_to_object(targetEnemy)<40
 	anim=11
 	else
+	if distance_to_object(targetEnemy)<80
 	anim=12
+	else
+	anim=130
 	}
 
 	///Attacks
@@ -72,6 +77,44 @@ sprite_index=spr_hwolf_attack2 image_index=1
 sentflying=4*image_xscale
 if ground {animFrame=0 anim=14}
 	}
+	
+if anim=130 ///Swing Attack
+{prevanim=12 if animFrame=0 PlaySound(snd_hwolf3)
+MoveType=2 damage=0.3 
+sprite_index=spr_hwolf_attack3
+image_index=animFrame
+
+atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=2*image_xscale selfatk.image_yscale=1.5
+selfatk.height=128
+
+frame_set(0,0,0.025)
+if animFrame=0.025
+or animFrame=0.025+0.050*1
+or animFrame=0.025+0.050*5
+or animFrame=0.025+0.050*9
+or animFrame=0.025+0.050*13
+or animFrame=0.025+0.050*17
+{specialFX=1 alarm[3]=2}
+
+frame_set(1,1,0.25)
+
+frame_set(2,2,0.25)
+if animFrame=clamp(animFrame,2,2.99){if animFrame<=2.25 {PlaySoundNoStack(snd_swing) PlaySound(snd_hwolf2)} atk=1 canbeGrabbed=0
+
+if image_xscale=-1 and x>__view_get( e__VW.XView, 0 )+80
+if place_free(x-80,y) x-=80
+
+if image_xscale=1 and x<__view_get( e__VW.XView, 0 )+320-80
+if place_free(x+80,y) x+=80
+
+} else { atk=0 canbeGrabbed=1}
+
+
+frame_set(3,3,0.05)
+frame_set(4,4,0.5)
+
+if animFrame>4.5 {atk=0 canmove=1}
+}
 	
 	///Prepare To Jump / Land
 	if anim=14

@@ -17,9 +17,10 @@ en2=instance_create_depth(3616+114, 133,-1,oEntryBreak) with en2
 	spawnFall=spr_cobra_move
 	spawnEnemy=oCobra}
 	
-en3=instance_create_depth(3616+(114*2), 133,-1,oEntryBreak)
+en3=instance_create_depth(3616+(114*2), 133,-1,oEntryBreak) with en3
+{enemy_switch("BASTET",0)}
 en4=instance_create_depth(3616+(114*2)+64, 133,-1,oEntryBreak) with en4
-{enemy_modify(spr_mummypal,1,"BASTET",0,0.3,0.3)}
+{enemy_switch("BASTET",0)}
 en5=instance_create_depth(3616+(114*2)+64*2, 133,-1,oEntryBreak)
 
 en6=instance_create_depth(3616+114+(114*2)-16+64*2, 133,-1,oEntryBreak) with en6

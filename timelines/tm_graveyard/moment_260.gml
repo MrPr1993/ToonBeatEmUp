@@ -22,6 +22,8 @@ spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1
 	shellSpawnSpd=0.25	spawnSprFX=spr_zombiem_rise
 	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan	xSpeed=0 ySpeed=0 zSpeed=0 ground=1
 current_pal=1 name="ZOMBOBBY" my_pal_sprite=spr_zombiepal
+
+enemy_switch("ZOMBOBBY",0)
 }
 en3=instance_create(__view_get( e__VW.XView, 0 )+160+64,224,oEntryBreak)
 with en3

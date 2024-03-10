@@ -16,7 +16,7 @@ en2.idleRange=30 en2.enemyIdle1=spr_burglarB_idle4 en2.image_xscale=-1
 
 en3=instance_create(320-48+16-16,176+24,oEnemy1) en3.canmove=0 en3.isIdle=1 en3.alarm[1]=60 en3.anim=70000
 en3.idleRange=30+16 with en3
-enemy_modify(my_pal_sprite,4,"MR.LAR",0,0.24,0.24) en3.enemyIdle1=spr_burglar_idle3
+enemy_switch("MR.LAR",0) en3.enemyIdle1=spr_burglar_idle3
 
 bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
 layer_background_visible(bgfog1,0)

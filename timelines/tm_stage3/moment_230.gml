@@ -23,9 +23,9 @@ en4=instance_create(1410-60,164,oEnemy1)
 en4.idleRange=60 with en4 {canmove=0 anim=70002 image_xscale=1}
 
 en5=instance_create_depth(1140,176,-1,oEntryJump) with en5
-{rangeX=x-48 rangeXAdd=0 spawnFall=spr_burglarB_jump spawnEnemy=oEnemy1B}
+{ rangeX=x-48 rangeXAdd=0 spawnFall=spr_burglarB_jump spawnEnemy=oEnemy1B}
 en6=instance_create_depth(1140,176+48,-1,oEntryJump) with en6
-{rangeX=x-48 rangeXAdd=0 spawnFall=spr_sneak_move spawnEnemy=oSneak}
+{enemy_switch("MR.SLINK",0) rangeX=x-48 rangeXAdd=0 spawnFall=spr_sneak_move spawnEnemy=oSneak}
 
 }
 else

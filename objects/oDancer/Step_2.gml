@@ -2,6 +2,13 @@ enemy_endstep()
 throw_step()
 
 overwriteHitAir=1
+overwriteAttack=1
+overwriteAttack1=1
+overwriteAttack2=1
+overwriteAttack3=1
+overwriteAttack4=1
+overwriteAttack5=1
+
 
 if DeathCryOnce=0 hasBounce=0 else hasBounce=1
 
@@ -19,7 +26,7 @@ if weaponspr=-1 rangeAtk=100 else rangeAtk=150
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>60 anim=12 else anim=11
 	
 	if anim=12
-	if current_pal=1 or current_pal=2 anim=13
+	if current_pal=1 or current_pal=2 anim=130
 	}
 	}
 	
@@ -86,7 +93,7 @@ if image_index=clamp(image_index,3,3.9) weaponanim(weaponspr,weaponIndex,41,-46,
 }
 
 ///Spin Attack
-if anim=13
+if anim=130
 {
 //if animFrame=0 {PlaySound(choose(snd_oni5,snd_oni8))}	
 atkcol_set(0,0,0,1.5,1,34)

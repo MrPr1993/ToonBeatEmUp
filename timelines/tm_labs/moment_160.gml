@@ -11,10 +11,16 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,7440,1)
 
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,190,oFatBurglar)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_modify(my_pal_sprite,4,"MR. WIDE",0,0.4,0.4)}
+with en1 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_switch("MR.WIDE",0)
+	weaponspr=spr_dbarrel
+spawnID=oHotDog
+	}
 
 en2=instance_create(__view_get( e__VW.XView, 0)+320+64,230,oFatBurglar)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_modify(my_pal_sprite,4,"MR. WIDE",0,0.4,0.4)}	
+with en2 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_switch("MR.WIDE",0)
+		weaponspr=spr_dbarrel
+spawnID=oHotDog
+	}	
 }
 else
 timeline_position-=1;

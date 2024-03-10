@@ -2,14 +2,20 @@
 
 if __view_get( e__VW.XView, 0 )>=5200-2-320
 {
-en3=instance_create(__view_get( e__VW.XView, 0)+320+64,176,oSwing)
-with en3 {image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("KNIFE")}
-en4=instance_create(__view_get( e__VW.XView, 0)+320+64,206,oSwing)
-with en4 {image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("WHIP")}
-en5=instance_create(__view_get( e__VW.XView, 0)+320+64,236,oSwing)
-with en5 {image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("HAMMER")}
-en6=instance_create(__view_get( e__VW.XView, 0)+320+64,266,oSwing)
-with en6 {image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("SHOVEL")}
+specialSet6=0
+en3=enemy_ambusher(0,176,oSwing,-1,1,32,10,1,1,0,132)
+with en3 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}
+en4=enemy_ambusher(0,176+16,oSwing,-1,1,32,10,1,1,0,132)
+with en4 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}
+en5=enemy_ambusher(0,176+32,oSwing,-1,1,32,10,1,1,0,132)
+with en5 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}
+en6=enemy_ambusher(0,176+48,oSwing,-1,1,32,10,1,1,0,132)
+with en6 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}
+en7=enemy_ambusher(0,176+64,oSwing,-1,1,32,10,1,1,0,132)
+with en7 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}
+en8=enemy_ambusher(0,176+80,oSwing,-1,1,32,10,1,1,0,132)
+with en8 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}
+
 
 }
 else

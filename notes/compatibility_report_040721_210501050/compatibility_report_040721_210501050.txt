@@ -310,7 +310,7 @@ Converted description /// @description enemy_create(x,y,enemy,z,palette,palSprit
 /// @param hp
 
 Converting GML script: ${project_dir}\scripts\enemy_modify\enemy_modify.gml
-Converted description /// @description enemy_modify(SprPal,palette,name,HPlayer,hp,MAXhp)
+Converted description /// @description enemy_switch(SprPal,palette,name,HPlayer,hp,MAXhp)
 /// @param SprPal
 /// @param palette
 /// @param name

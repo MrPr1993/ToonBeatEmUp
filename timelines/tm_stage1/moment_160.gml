@@ -3,6 +3,8 @@ timeline_position-=1
 else
 {
 
+PlaySound(snd_hwolf4)
+
 with fakeenS hspeed=4
 with fakeen {image_xscale=1 hspeed=4 image_speed=0.5 sprite_index=spr_hwolf_move}
 

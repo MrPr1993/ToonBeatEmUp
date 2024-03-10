@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function enemy_switch(_name,_isweak){
+function enemy_modify(_name,_isweak){
 
 switch(_name)
 {
@@ -24,9 +24,9 @@ case "MS.CHILL": enemy_modify(spr_enemypal,4,"MS.CHILL",0,0.2,0.2) enemyID=16  b
 
 ///Ms. Swing
 case "MS.TRIG": enemy_modify(spr_swingpal,4,_name,0,0.2,0.2) enemyID=21 break;
-case "MS.DOMI": enemy_modify(spr_swingpal,6,_name,0,0.2,0.2) enemyID=22 break;
+case "MS.DOMI": enemy_modify(spr_swingpal,6,_name,0,0.4,0.4) enemyID=22 break;
 case "MS.THRU": enemy_modify(spr_swingpal,8,_name,0,0.2,0.2) enemyID=23 break;
-case "MS.BRAN": enemy_modify(spr_swingpal,10,_name,0,0.2,0.2) enemyID=24 break;
+case "MS.BRAN": enemy_modify(spr_swingpal,10,_name,0,0.3,0.3) enemyID=24 break;
 
 
 ///Mr. Large
@@ -58,6 +58,9 @@ case "MORTI": enemy_modify(spr_zombiepal,2,_name,0,0.15,0.15) enemyID=41 break;
 //Zombetty
 case "ZOMBELLE": enemy_modify(spr_zombiepal,1,_name,0,0.25,0.25) enemyID=43 break;
 case "RIGORA": enemy_modify(spr_zombiepal,2,_name,0,0.15,0.15) enemyID=44 break;
+
+///Skeleton
+case "SKELIE": enemy_modify(spr_mummypal,1,_name,0,0.3,0.3) enemyID=46 break;
 
 ////MAU
 case "BASTET": enemy_modify(spr_mummypal,1,_name,0,0.3,0.3) enemyID=52 break;
@@ -103,7 +106,7 @@ case "RULA": enemy_modify(spr_dancerpal,1,_name,0,0.4,0.4) enemyID=78 break;
 case "JAZMYN": enemy_modify(spr_dancerpal,2,_name,0,0.5,0.5) enemyID=79 break;
 
 ////Mr. Dive
-case "MR.DROP": enemy_modify(spr_ninjapal,2,_name,0,0.4,0.4) enemyID=81 break;
+case "MR.DROP": enemy_modify(spr_ninjapal,6,_name,0,0.4,0.4) enemyID=81 break;
 
 ///Douglas the fish man
 case "ERIK": enemy_modify(spr_zombiepal,1,_name,0,0.4,0.4) enemyID=83 break;
@@ -140,7 +143,7 @@ case "CALCIUM": enemy_modify(spr_slimepal,4,_name,0,0.3,0.3) enemyID=105 break;
 case "CHEMI": enemy_modify(spr_slimepal,5,_name,0,0.4,0.4) enemyID=106 break;
 
 ///Snow Girl
-case "EVA": enemy_modify(spr_zombiepal,1,_name,0,0.6,0.6) enemyID=108 break;
+case "EVA": enemy_modify(spr_zombiepal,1,_name,0,0.5,0.5) enemyID=108 break;
 case "UNDA": enemy_modify(spr_zombiepal,2,_name,0,0.6,0.6) enemyID=109 break;
 
 

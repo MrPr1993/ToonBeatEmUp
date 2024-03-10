@@ -7,7 +7,7 @@ en4=instance_create(3237+48,237,oNinjaBun) with en4
 {canmove=0 anim=62 image_xscale=-1 idleRange=30+48 }
 en5=instance_create_depth(3237,237,-1,oSneak) with en5
 {canmove=0 isIdle=1 alarm[1]=60 anim=70000 idleRange=30
-idleRange=30 enemyIdle1=spr_sneak_idle4
+idleRange=30 enemyIdle1=spr_sneak_idle4 enemy_switch("MR.SIDLE",1)
 	}
 }
 else timeline_position-=1

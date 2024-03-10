@@ -7,7 +7,7 @@ with en2
 	}
 en3=instance_create(__view_get( e__VW.XView, 0 )+320+16,192,oFemBurglar)
 with en3{alarm[1]=2	
-enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)}
+enemy_switch("MS.CHILL",0)}
 }
 else
 {

@@ -9,7 +9,7 @@ with en3 {image_xscale=-1 canAttack=5 alarm[1]=60
 
 en4=instance_create(__view_get( e__VW.XView, 0)+320+64,200+64,oFemBurglar)
 with en4 {image_xscale=-1 canAttack=5 alarm[1]=60
-enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)
+enemy_switch("MS.CHILL",0)
 	}	
 
 }

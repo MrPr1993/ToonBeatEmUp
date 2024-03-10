@@ -13,7 +13,7 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,2100,1)
 
 en1=instance_create_depth(1600,176,-1,oEntryPoseBoard) with en1
-{
+{enemy_switch("MR.LAR",0)
 boardspr=spr_poseboard3
 behindspr=spr_burglarB_front
 spawnFall=spr_burglarB_front

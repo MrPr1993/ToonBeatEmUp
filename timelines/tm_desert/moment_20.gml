@@ -24,14 +24,14 @@ en4=instance_create_depth(1190,164,-1,oEntryFenceJump) with en4
 {depth=16777138 isDepth=0 ySpeed=2 spawnSpeedZ=-4 rangeXAdd=0 rangeX=1190-200 newSpawn=1 newSpawnX=1190-240-64 rideX=1190
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
-	spawnEnemy=oSneak
+	spawnEnemy=oSneak enemy_switch("MR.SLINK",0)
 }
 
 en5=instance_create_depth(1364,164,-1,oEntryFenceJump) with en5
 {depth=16777138 isDepth=0 ySpeed=2 spawnSpeedZ=-4 rangeXAdd=0 rangeX=1364-200 newSpawn=1 newSpawnX=1364+240 rideX=1364
 	spawnFall=spr_wrestler_front image_xscale=-1
 	moveSpr=spr_wrestler_move
-	spawnEnemy=oWrestler enemy_modify(spr_ninjapal,7,"MS.CRUSH",0,0.8,0.8)	
+	spawnEnemy=oWrestler enemy_switch("MS.CRUSH",0)	
 }
 
 

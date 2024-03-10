@@ -139,7 +139,7 @@ frame_set(1,1+specialtimes[0],0.01) if animFrame=clamp(animFrame,1,1.9)
 {if specialtimes[0]=clamp(specialtimes[0],0,1.5) atk=1 else atk=0
 if animFrame<1.1 sentflying=2*image_xscale else sentflying=0
 if animFrame>0.90 selfatk.NoKnock=0
-}else atk=0
+}else if animFrame=clamp(animFrame,2,2.5) {selfatk.MoveType=1 selfatk.damage=0.1 atk=1} else atk=0
 frame_set(2,4,0.05)
 frame_set(3,0,0.1)
 if animFrame>3.5 canmove=1

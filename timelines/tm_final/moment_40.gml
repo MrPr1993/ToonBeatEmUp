@@ -12,10 +12,10 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,3680,1)
 
 en4=instance_create(__view_get( e__VW.XView, 0)-64,208-16,oSneak)
-with en4 {image_xscale=1 canAttack=5 alarm[1]=60}
+with en4 {image_xscale=1 canAttack=5 alarm[1]=60 enemy_switch("MR.PROWL",0)}
 
 en5=instance_create(__view_get( e__VW.XView, 0)-64,2008+16,oEnemy1B)
-with en5 {image_xscale=1 canAttack=5 alarm[1]=60 weapon_add("PIPE")}	
+with en5 {enemy_switch("MR.RON",0) image_xscale=1 canAttack=5 alarm[1]=60 weapon_add("PIPE")}	
 
 
 }

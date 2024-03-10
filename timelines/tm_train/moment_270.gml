@@ -13,7 +13,7 @@ with en4 {trainFX=1 isDepth=0 depth=16777200 sittingSpr=spr_femburglar_ride spaw
 	}
 en5=instance_create(2127,124+29,oEntrySeat)
 with en5 {trainFX=1 sittingSpr=spr_femburglar_seat spawnFall=spr_femburglar_jump image_xscale=-1
-enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp) spawnEnemy=oFemBurglar}
+enemy_switch("MS.CHILL",0) spawnEnemy=oFemBurglar}
 en5.rangeX=en4.rangeX
 en5.rangeXAdd=en4.rangeXAdd
 

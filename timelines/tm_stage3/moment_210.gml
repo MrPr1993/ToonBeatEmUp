@@ -4,15 +4,11 @@
 
 if __view_get( e__VW.XView, 0 )>=532
 {
-en3=instance_create(__view_get( e__VW.XView, 0 )+320+16,182,oFemBurglar)
-with en3
-{alarm[1]=30	canAttack=3 image_xscale=-1
-	}
-en4=instance_create(__view_get( e__VW.XView, 0 )+320+16,216,oFemBurglar)
-with en4{alarm[1]=30 canAttack=3 image_xscale=-1
-enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)
-}
+en3=enemy_ambusher(0,182,oSwing,-1,1,32,10,1,1,0,132)
+with en3 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}	
 
+en4=enemy_ambusher(0,216,oSwing,-1,1,32,10,1,1,0,132)
+with en4 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}	
 
 }
 else

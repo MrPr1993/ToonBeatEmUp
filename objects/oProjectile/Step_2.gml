@@ -19,5 +19,6 @@ flashX=x
 flashY=y+1
 flashZ=z SourceX=x
 
+if isDepth
 depth=-y
 

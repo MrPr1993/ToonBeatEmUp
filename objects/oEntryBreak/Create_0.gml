@@ -28,4 +28,7 @@ entry_setup()
 	fallSpdSub=2
 	
 	spawned=0
+	
+	
+
 

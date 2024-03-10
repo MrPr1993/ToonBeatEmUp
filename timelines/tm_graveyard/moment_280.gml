@@ -9,7 +9,7 @@ spawner_followset("WaveSet1",0,2560,1)
 en5=instance_create(__view_get( e__VW.XView, 0 )+320+48, 197,oZombieWoman) with en5
 {canAttack=5 image_xscale=1 alarm[0]=20 image_xscale=-1}
 en6=instance_create(__view_get( e__VW.XView, 0 )+320+48, 247,oZombieWoman) with en6
-{canAttack=5 image_xscale=1 alarm[0]=20 current_pal=1 name="ZOMBELLE" image_xscale=-1}
+{canAttack=5 image_xscale=1 alarm[0]=20 current_pal=1 name="ZOMBELLE" image_xscale=-1 enemy_switch("ZOMBELLE",0)}
 
 }
 else

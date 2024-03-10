@@ -18,7 +18,7 @@ en1=instance_create(3664,160,oAreaSpawner) with en1
 spawnX=3664-330 ///768
 enemytype0=oZombieMan MaxSpawnFrame=0 visible=1
 FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-turn0=-1 enemyMax=0 name0="ZOMBOBBY" pal0=1
+turn0=-1 enemyMax=0 name0="ZOMBOBBY" pal0=1 enemy_switch("ZOMBOBBY",0)
 }
 
 }

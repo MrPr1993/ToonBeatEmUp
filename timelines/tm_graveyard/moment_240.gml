@@ -3,18 +3,12 @@
 if __view_get( e__VW.XView, 0 )>=1158
 {
 
-en1=instance_create(__view_get( e__VW.XView, 0)-64,192,oEnemy1)
-with en1
-{canAttack=5 image_xscale=1 alarm[0]=31
-}
-en2=instance_create(__view_get( e__VW.XView, 0)-70,192+32,oEnemy1B)
-with en2
-{canAttack=5 image_xscale=1 alarm[0]=31
-}
-en3=instance_create(__view_get( e__VW.XView, 0)-64,192+64,oEnemy1)
-with en3
-{canAttack=5 image_xscale=1 alarm[0]=31
-}
+en1=enemy_ambusher(0,192,oSwing,1,-1,32,10,2,0,0,132)
+with en1 {weapon_add("DYNAMITE") enemy_switch("MS.THRU",1)}	
+en2=enemy_ambusher(0,192+32,oSwing,1,-1,32,10,2,0,0,132)
+with en2 {weapon_add("DYNAMITE") enemy_switch("MS.THRU",1)}	
+en3=enemy_ambusher(0,192+64,oSwing,1,-1,32,10,2,0,0,132)
+with en3 {weapon_add("DYNAMITE") enemy_switch("MS.THRU",1)}	
 
 }
 else

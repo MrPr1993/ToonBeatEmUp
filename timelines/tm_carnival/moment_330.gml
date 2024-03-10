@@ -34,8 +34,7 @@ spawnEnemy=oEnemy1B rangeX=x-32
 
 
 en4=instance_create(4646,176+48,oEntryBalloon)
-en4.rideX=x+160
-en4.rideX=4700
+en4.rideX=4700+320
 with en4
 {
 	spawnFall=spr_wrestler_hit

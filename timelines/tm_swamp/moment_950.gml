@@ -26,7 +26,7 @@ en2=instance_create(7440,118,oEntryPool) en2.rangeXAdd=0 en2.splashspr=-1
 with en2
 {spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-80 z=-60 spawnname="Bones"
 		current_pal=1 name="SKELIE" my_pal_sprite=spr_mummypal
-		canEvent0=0 ySpeed=1.5 spawnFall=spr_skeleton_front
+		canEvent0=0 ySpeed=1.5 spawnFall=spr_skeleton_front enemy_switch("SKELIE",0)
 		
 		}
 en3=instance_create(7900,118,oEntryPool) en3.rangeXAdd=0 en3.splashspr=-1
@@ -86,7 +86,7 @@ with en6
 	shellSpawnSpd=0.25 spawnSprFX=spr_zombiem_rise hidden=1; image_xscale=-1
 	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan
 	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 current_pal=2
-	enemy_modify(my_pal_sprite,2,"MORTI",0,0.15,0.15)	
+	enemy_switch("MORTI",0)	
 	}
 	
 en7=instance_create_depth(8390, 166+64,-1,oEntryBreak)
@@ -95,7 +95,7 @@ with en7
 	shellSpawnSpd=0.25 spawnSprFX=spr_zombiem_rise hidden=1; image_xscale=-1
 	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan
 	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 current_pal=2
-	enemy_modify(my_pal_sprite,2,"MORTI",0,0.15,0.15)	
+	enemy_switch("MORTI",0)	
 	}
 
 }

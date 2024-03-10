@@ -16,9 +16,9 @@ en4=instance_create_depth(4720,160-8,-1,oEntryBreak) with en4
 	shellSprMax=1.8 spawnEnemy=oNinjaBun hideShadow=1
 	shellSpawnSpd=0.1  spawnAnimSpr=spr_ninjabun_shake
 		rangeXAdd=-240 isDepth=0 depth=16777212 
-	spawnSpeedZ=-8
+	spawnSpeedZ=-8 spawnDelay=240
 	xSpeed=0 
-	ySpeed=2 enemy_modify(spr_ninjapal,4,"KONI",0,0.4,0.4)
+	ySpeed=2 enemy_switch("KONI",0)
 	}
 	
 	en5=instance_create(4630, 165,oFatBurglar) with en5

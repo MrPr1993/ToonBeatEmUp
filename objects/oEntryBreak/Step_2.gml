@@ -9,7 +9,11 @@ trainz=trainzSet.Train1Y*ground
 
 
 
-if __view_get( e__VW.XView, 0 )>rangeX+rangeXAdd if spawned=0 {hidden=0 sprite_index=spawnSprFX image_index=0 spawned=4}
+if __view_get( e__VW.XView, 0 )>rangeX+rangeXAdd 
+{if spawnDelay=0
+{if spawned=0 {hidden=0 sprite_index=spawnSprFX image_index=0 spawned=4}}
+else spawnDelay-=1
+}
 
 z+=zSpeed
 

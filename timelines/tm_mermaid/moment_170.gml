@@ -24,7 +24,7 @@ en2.idleRange=30 en2.enemyIdle1=spr_merman_idle2
 
 en3=instance_create(4768+64,192,oSiren) en3.canmove=0 en3.isIdle=1 en3.alarm[1]=60 en3.anim=70000
 en3.idleRange=30+64 en3.enemyIdle1=spr_siren_idle2 en3.enemyIdle2=spr_siren_attack en3.image_xscale=-1
-
+with en3 enemy_switch("MARINA",0)
 
 }
 else

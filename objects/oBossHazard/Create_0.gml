@@ -80,6 +80,8 @@ sentflying=0;
 
 shadow=-1;//spr_shadow
 
+specialtimes[9]=0
+
 selfscript = function()
 {MoveType=1 damage=0.1
 depth=-y

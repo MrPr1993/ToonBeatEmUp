@@ -11,7 +11,7 @@ rangeAtk=200
 
 if oControl.betatest=1
 {if keyboard_check(vk_shift)
-weapon_add("TASER")
+weapon_add("TASER") if keyboard_check(vk_control) weapon_add("LASERGUN")
 }
 
 pointshit=10
@@ -66,6 +66,8 @@ current_pal=0;
 my_pal_sprite=spr_zombiepal
 
 enemyID=88
+
+
 
 spritepos_setup(1,24,3,54)
 spritepos_setup(2,6,1,0)

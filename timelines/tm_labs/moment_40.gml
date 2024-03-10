@@ -25,7 +25,9 @@ layer_vspeed("ElevatorBG",0)
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,192,oNurse)
 with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
 en2=instance_create(__view_get( e__VW.XView, 0)+320+64,224,oNurse)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}
+with en2 {image_xscale=-1 canAttack=5 alarm[1]=60
+	enemy_switch("DR.SULF",0)
+	}
 en3=instance_create(__view_get( e__VW.XView, 0)+320+64,256,oNurse)
 with en3 {image_xscale=-1 canAttack=5 alarm[1]=60}
 
@@ -66,7 +68,7 @@ if specialSet6=120
 en4=instance_create(__view_get( e__VW.XView, 0)+320-64,224,oEntryJump)
 with en4 {rangeX=0	spawnFall=spr_femburglar_jump image_xscale=-1	spawnEnemy=oFemBurglar}	
 en5=instance_create(__view_get( e__VW.XView, 0)+320-64,256,oEntryJump)
-with en5 {enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)
+with en5 {enemy_switch("MS.CHILL",0)
 	
 	rangeX=0	spawnFall=spr_femburglar_jump image_xscale=-1	spawnEnemy=oFemBurglar}
 }

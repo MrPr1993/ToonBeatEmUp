@@ -9,10 +9,10 @@ overwriteAttack3=1
 	///Attacks
 	if anim=10 ///Attack Stand
 	{
-if distance_to_point(targetEnemy.x,targetEnemy.y)>40
+if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 anim=12 else anim=11
 
-if anim=12 if specialcheck1!=0 anim=11
+if anim!=11 if specialcheck1!=0 anim=11
 
 if anim=12 if current_pal=1 or current_pal=3 anim=13
 	}
@@ -40,7 +40,7 @@ MoveType=0 damage=0.1
 		if animFrame=0 {specialcheck0=0}
 sprite_index=spr_shroom_shoot selfatk.x=x+48*image_xscale 
 
-if _stronger {selfatk.x=x+(48*1.5)*image_xscale selfatk.image_xscale=1.5}
+if _stronger {selfatk.x=x+(48*1.25)*image_xscale selfatk.image_xscale=2}
 
 selfatk.dizzyAtk=1 MoveType=1 damage=0.05 
 frame_set(0,0,0.1)
@@ -67,7 +67,7 @@ MoveType=1 damage=0.15
 	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
 	if animFrame=clamp(animFrame,0,1.5)
 	animFrame+=0.1 else animFrame+=0.1
-	if animFrame=2 {ground=0 sentflying=4*image_xscale zSpeed=-2}
+	if animFrame=2 {ground=0 sentflying=4*image_xscale zSpeed=-4}
 	if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}

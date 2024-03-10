@@ -7,6 +7,7 @@ with en1
 {spawnEnemy=oSneak
 spawnSpr=spr_sneak_entry1
 spawnFall=spr_sneak_front
+enemy_switch("MR.SIDLE",0)
 }	
 
 en2=instance_create(1654,448,oEntryClimb)

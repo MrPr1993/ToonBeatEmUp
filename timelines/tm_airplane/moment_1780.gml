@@ -10,11 +10,11 @@ if boss.hp<1
 {
 if enemySpawn0=1
 {
-enemySpawn0=1
-enemySpawn0=1
+enemySpawn0=2
 en1=instance_create(__view_get( e__VW.XView, 0 )-64,208-16,oHarpyE) en1.canAttack=5
 en2=instance_create(__view_get( e__VW.XView, 0 )-64,208+16,oHarpyE) en2.canAttack=5
-//with en2 enemy_modify(my_pal_sprite,4,"MS.CHILL",0,hp,maxhp)
+with en1 enemy_switch("ICARA",0)
+with en2 enemy_switch("ICARA",0)
 }
 }
 else timeline_position-=1

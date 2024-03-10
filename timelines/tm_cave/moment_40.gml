@@ -10,12 +10,12 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,3280-640,1)
 
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,190+32,oGoblin)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_modify(my_pal_sprite,1,"GOHNNY",0,hp,maxhp)
+with en1 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_switch("GOHNNY",0)
 	weapon_add("PICKAXE")
 	}	
 
 en2=instance_create(__view_get( e__VW.XView, 0)+320+64,190+32,oGoblin)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_modify(my_pal_sprite,1,"GOHNNY",0,hp,maxhp)
+with en2 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_switch("GOHNNY",0)
 	weapon_add("PICKAXE")
 	}	
 	

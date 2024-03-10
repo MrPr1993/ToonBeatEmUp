@@ -7,7 +7,7 @@ with en3
 	spawnFall=spr_ninjabun_jump
 	moveSpr=spr_ninjabun_run rangeX=0 rangeXAdd=0
 	spawnEnemy=oNinjaBun
-enemy_modify(spr_ninjapal,2,"NOUSAGI",0,0.3,0.3)	
+enemy_switch("NOUSAGI",0)	
 }	
 
 en4=instance_create(__view_get( e__VW.XView, 0 )+320+48,224,oSamurai)

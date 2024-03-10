@@ -205,7 +205,7 @@ break;
  charinfo_set(12,spr_skeleton_stand,2,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,21,"SKELLA", 
  "They appropiate themselves by becoming sassy, and they resort on kicks from their ballerina routine.")}
     if dataPal=2
-{current_pal=1 enemyID=46
+{current_pal=1 enemyID=46 hp=0.3
  charinfo_set(12,spr_skeleton_stand,2,animsetup_enemy,draw_enemy,spr_mummypal,1,spr_enemyface,21,"SKELIE", 
  "These skeletons of jugglers will show up and have a bone to pick with you! And throw it.")} 
 break;

@@ -103,7 +103,7 @@ if anim=11 ///Bite Attack
 if animFrame=0  PlaySound(snd_wolfita7)
 
 canbeGrabbed=0
-MoveType=1 damage=0.2
+MoveType=1 damage=0.2 selfatk.isCut=1
 sprite_index=AtkSpr
 image_index=animFrame
 
@@ -131,7 +131,7 @@ or anim=4
 
 if anim=12 ///Swing Attack
 {prevanim=12 if animFrame=0 PlaySound(snd_wolfita5)
-MoveType=2 damage=0.3
+MoveType=2 damage=0.3 selfatk.isCut=1
 sprite_index=AtkSpr2
 image_index=animFrame
 

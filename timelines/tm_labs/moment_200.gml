@@ -67,12 +67,12 @@ if specialSet6=180
 {
 en7=instance_create(4060,190,oEntryJump)
 with en7 {rangeX=0 image_xscale=1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot
-	enemy_modify(my_pal_sprite,3,"METR-A",0,0.4,0.4)
+	enemy_modify("METR-A",0)
 	}	
 
 en8=instance_create(4060,250,oEntryJump)
 with en8 {rangeX=0 image_xscale=-1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot
-	enemy_modify(my_pal_sprite,3,"METR-A",0,0.4,0.4)
+	enemy_modify("METR-A",0)
 	}	
 }
 

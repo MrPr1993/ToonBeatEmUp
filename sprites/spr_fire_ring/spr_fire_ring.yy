@@ -24,7 +24,7 @@
   ],
   "name":"spr_fire_ring",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"5Genie",
     "path":"folders/8 - Bosses/5Genie.yy",
@@ -80,7 +80,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":123,
-    "yorigin":27,
+    "yorigin":25,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

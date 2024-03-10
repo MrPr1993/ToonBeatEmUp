@@ -2,15 +2,13 @@
 
 if __view_get( e__VW.XView, 0 )>=3180-2
 {
-en1=instance_create(__view_get( e__VW.XView, 0)+320+64,190,oMerman)
-with en1 {image_xscale=-1 ground=0 
-	image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("SPEAR")
-	}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,234,oMerman)
-with en2 {image_xscale=-1 ground=0 
-	image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("SPEAR")
-	}
+	
+en1=enemy_ambusher(0,190,oMerman,1,-1,32,10,1,1,0,13) with en1 weapon_add("SPEAR")
+en2=enemy_ambusher(0,190+32,oMerman,1,-1,32,10,1,0,0,13) with en2 weapon_add("SPEAR")
+en3=enemy_ambusher(0,190+64,oMerman,1,-1,32,10,1,1,0,13) with en3 weapon_add("SPEAR")
+
+
 
 }
 else

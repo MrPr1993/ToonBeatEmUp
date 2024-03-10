@@ -14,6 +14,8 @@ flashX=0
 flashY=0
 flashZ=0
 
+isDepth=1
+
 isCut=0
 
 recovery=4
