@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"bg_stage3a",
   "bboxMode":0,
-  "bbox_bottom":237,
+  "bbox_bottom":215,
   "bbox_left":0,
-  "bbox_right":122,
+  "bbox_right":206,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":240,
+  "height":216,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"258cabbe-1b17-4643-84e8-73f3afd3edc7","blendMode":0,"displayName":"default","isLocked":false,"name":"258cabbe-1b17-4643-84e8-73f3afd3edc7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":134,
+  "width":207,
 }

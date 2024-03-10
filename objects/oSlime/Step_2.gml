@@ -151,7 +151,7 @@ if targetEnemy.x=clamp(targetEnemy.x,x-56,x+16) and image_xscale=-1 animFrame=8
 	frame_set(8,3,0.25) 
 	if animFrame=clamp(animFrame,5,11) {sentflying=2*image_xscale if animFrame=10 sentflying=16*image_xscale} else sentflying=0
 	frame_set(9,2,0.25) if animFrame=10 sprite_index=spr_slime_uppercut
-	{if current_pal=3 or current_pal=4 or current_pal=5  {animFrame=0 anim=13}
+	{if current_pal=3 or current_pal=4 or current_pal=5  {animFrame=0 anim=14}
 	
 	}
 	
@@ -197,7 +197,8 @@ atkcol_set(7*2,0,0,0.85,1,1)
 frame_set(0,0,0.25) if animFrame=clamp(animFrame,1,2) atk=1 else atk=0
 frame_set(1,1,0.5)
 frame_set(2,2,0.01)
-frame_set(0,0,0.25)
+frame_set(3.5,0,0.25)
+if animFrame>3 canmove=1
 }
 
 if anim=6666 ///Grab Enemy

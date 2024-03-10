@@ -14,6 +14,19 @@ oPlayer.hspeed=0
 dummy=instance_create_depth(x,y,depth,oEnemy1) with dummy
 {
 hp=0 mask=mask_none image_xscale=-1 HitType=1 hud_show() event_user(0)
+
+dust_make(x,y,-32,4,0,-4)
+dust_make(x,y,-32,4,0,0)
+dust_make(x,y,-32,4,0,4)
+
+dust_make(x,y,-56,5,-2,-4)
+dust_make(x,y,-56,5,-2,0)
+dust_make(x,y,-56,5,-2,4)
+
+dust_make(x,y,-8,5,2,-4)
+dust_make(x,y,-8,5,2,0)
+dust_make(x,y,-8,5,2,4)
+
 }
 }
 

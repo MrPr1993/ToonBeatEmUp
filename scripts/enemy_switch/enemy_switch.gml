@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function enemy_modify(_name,_isweak){
+function enemy_switch(_name,_isweak){
 
 switch(_name)
 {
@@ -160,6 +160,6 @@ case "METR-A": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=115 break;
 }
 
 ////This will be used for spawners such as the ambushers
-if _isweak {hp=0.00001 maxhp=0.00001}
+if _isweak {hp=0.01 maxhp=0.01}
 
 }

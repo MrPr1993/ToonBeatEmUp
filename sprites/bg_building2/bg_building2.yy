@@ -19,7 +19,7 @@
   "height":512,
   "HTile":true,
   "layers":[
-    {"$GMImageLayer":"","%Name":"652be11d-f15c-49cb-888f-05033e08a716","blendMode":0,"displayName":"Layer 1 (2)","isLocked":false,"name":"652be11d-f15c-49cb-888f-05033e08a716","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3132ba7d-e707-48bd-baa8-4d231306b63c","blendMode":0,"displayName":"Layer 1 (2)","isLocked":false,"name":"3132ba7d-e707-48bd-baa8-4d231306b63c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"bg_building2",
   "nineSlice":null,
