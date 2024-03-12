@@ -1,3 +1,4 @@
+item_setup()
 bobject_setup()
 
 roll=0

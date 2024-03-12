@@ -73,12 +73,13 @@ sprite_index=spr_slime_shoot MoveType=0 damage=0.1
 image_index=animFrame image_speed=0
 
 frame_set(0,0,0.25)
-
-if animFrame=3
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.1)
+if animFrame=4
 {PlaySoundNoStack(snd_swing5)
 spit=instance_create_depth(x+33*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-70 spit.image_xscale=image_xscale
 
-with spit
 spit.sprite_index=spr_slime_proj 
 spit.my_pal_sprite=my_pal_sprite  spit.current_pal=current_pal
 with spit
@@ -90,6 +91,9 @@ hitSnd=snd_hit
 }
 
 }
+frame_set(4,4,0.25)
+frame_set(5,5,0.1)
+frame_set(6,1,0.1) if animFrame>6.5 canmove=1
 }
 
 
@@ -150,8 +154,10 @@ if targetEnemy.x=clamp(targetEnemy.x,x-56,x+16) and image_xscale=-1 animFrame=8
 	frame_set(7,7,0.25) if animFrame=7.75 animFrame=5
 	frame_set(8,3,0.25) 
 	if animFrame=clamp(animFrame,5,11) {sentflying=2*image_xscale if animFrame=10 sentflying=16*image_xscale} else sentflying=0
-	frame_set(9,2,0.25) if animFrame=10 sprite_index=spr_slime_uppercut
-	{if current_pal=3 or current_pal=4 or current_pal=5  {animFrame=0 anim=14}
+	frame_set(9,2,0.25) if animFrame=10 {sprite_index=spr_slime_uppercut
+	{if current_pal=3 or current_pal=4 or current_pal=5  {animFrame=0 anim=14}	
+	}
+	
 	
 	}
 	
@@ -193,12 +199,12 @@ if targetEnemy.x=clamp(targetEnemy.x,x-56,x+16) and image_xscale=-1 animFrame=8
 if anim=14
 {damage=0 MoveType=0
 sprite_index=spr_slime_catch
-atkcol_set(7*2,0,0,0.85,1,1)
+atkcol_set(20,0,0,0.85,1,1)
 frame_set(0,0,0.25) if animFrame=clamp(animFrame,1,2) atk=1 else atk=0
 frame_set(1,1,0.5)
-frame_set(2,2,0.01)
-frame_set(3.5,0,0.25)
-if animFrame>3 canmove=1
+frame_set(2,2,0.1)
+frame_set(3,0,0.25)
+if animFrame>3.5 canmove=1
 }
 
 if anim=6666 ///Grab Enemy

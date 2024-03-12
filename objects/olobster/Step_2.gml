@@ -125,7 +125,7 @@ anim=60
 ///Block
 if anim=60
 {canBlock=1
-sprite_index=spr_samurai_block
+sprite_index=spr_lobster_block
 animFrame+=0.1
 if animFrame>6 {canmove=1 anim=0 alarm[1]=2}
 }

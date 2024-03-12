@@ -19,7 +19,7 @@ if DeathCryOnce=0 hasBounce=0 else hasBounce=1
 	
 if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 {anim=11 
-	if current_pal=0 or current_pal=1
+	if current_pal=0
 	{
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>100
 	anim=11 
@@ -28,9 +28,9 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 	if current_pal=2 or current_pal=3
 	anim=65
 	
-	if current_pal=2 anim=choose(65,9912)
+	if current_pal=4 anim=choose(65,9912)
 	
-		if current_pal=4
+		if current_pal=2
 		{
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>100
 	anim=choose(11,65)
@@ -43,7 +43,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 	
 if anim=11 ///Card Throw
 {
-if current_pal=4 ///Bolas
+if current_pal=2 ///Bolas
 {
 sprite_index=spr_ninjabun_bolas	
 frame_set(0,0,0.25)

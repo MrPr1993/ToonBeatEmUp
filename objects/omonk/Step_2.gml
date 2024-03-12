@@ -92,6 +92,8 @@ if anim=10
 	if current_pal=0
 	if anim=11 anim=13
 	
+	if current_pal=4 if anim=11 anim=choose(11,13)
+	
 }
 
 if anim=11 ///Attack Stand

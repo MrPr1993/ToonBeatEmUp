@@ -18,6 +18,8 @@ else
 anim=12 
 
 if current_pal=1 or current_pal=3 if anim=12 anim=14
+
+if current_pal=3 if anim=12 anim=choose(12,14)
 }
 
 if anim=11
@@ -76,7 +78,7 @@ if animFrame>4.5 canmove=1
 		atk=1
 	image_index+=specialtimes[0] if image_index>7.9 image_index=0
 		
-	specialtimes[0]=lerp(specialtimes[0],0,0.1)}
+	specialtimes[0]=lerp(specialtimes[0],0,0.01)}
 	
 	frame_set(2,0,0.25) if animFrame>2.5 canmove=1
 	

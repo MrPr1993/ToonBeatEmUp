@@ -9,7 +9,7 @@ overwriteAttack3=1
 	///Attacks
 	if anim=10 ///Attack Stand
 	{
-	if distance_to_point(targetEnemy.x,targetEnemy.y)>80
+	if distance_to_point(targetEnemy.x,targetEnemy.y)>60
 	anim=12 else anim=11
 	
 	if anim=12 if current_pal=1 anim=13

@@ -15,7 +15,7 @@ with oControl
 {
  goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320
-spawner_followset("WaveSet1",0,5200+320,1)
+spawner_followset("WaveSet1",0,5200,1)
 layer_y("ElevatorBG",0)
 PlaySound(snd_hitgroundmetal)
 oControl.quakeFXTime=10
@@ -28,6 +28,7 @@ enemy_switch("DR.MONIA",0)
 
 en2=instance_create(4790-16,208,oEnemy1B) en2.canmove=0 en2.isIdle=1 en2.alarm[1]=60 en2.anim=70000
 en2.idleRange=30 en2.enemyIdle1=spr_burglarB_idle4 en2.image_xscale=-1
+
 
 en3=instance_create(4790-48+16-16,208+24,oEnemy1) en3.canmove=0 en3.isIdle=1 en3.alarm[1]=60 en3.anim=70000
 en3.idleRange=30+16 with en3

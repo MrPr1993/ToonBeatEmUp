@@ -18,7 +18,7 @@ anim=65 else anim=11
 
 if spawnID!=-1 {if anim=65 if distance_to_point(targetEnemy.x,targetEnemy.y)<100 anim=11
 
-spawnID=oLaserGun anim=1340
+if spawnID=oLaserGun anim=1340
 }
 
 }
@@ -208,3 +208,4 @@ if image_index=clamp(image_index,23,23.9)
 weaponanim(weaponspr,weaponIndex,18,-48,90,weaponcolor)
 
 }
+

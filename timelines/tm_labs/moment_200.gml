@@ -1,3 +1,4 @@
+
 if !instance_exists(en1)
 and !instance_exists(en2)
 and !instance_exists(en3)
@@ -7,20 +8,28 @@ and !instance_exists(en6)
 and !instance_exists(en7)
 and !instance_exists(en8)
 and !instance_exists(en9)
-if specialSet6=300
+and specialSet6=300
 {
 if specialSet7=0
 {//camMove=0 camMax=room_width
-//////// Mark for boss area
+
 foody=instance_create(__view_get( e__VW.XView, 0)+160-32,200,oBurger)
 foody.z=-200
 foody=instance_create(__view_get( e__VW.XView, 0)+160,200,oPizza)
 foody.z=-200
 foody=instance_create(__view_get( e__VW.XView, 0)+160+32,200,oMeat)
 foody.z=-200
-///Part for lab BG
 
-specialSet7=1
+with oEnemySpawner
+specialscript=function()
+{
+specialSet7+=1
+if specialSet7>160 specialSet7=0
+layer_y("ElevatorBG",specialSet7)
+layer_y("TileBoss",specialSet7-240)
+specialSet8=300
+}
+
 }
 else
 {
@@ -31,7 +40,6 @@ timeline_position-=1;
 }
 else
 {
-
 if specialSet6!=300
 specialSet6+=1
 
@@ -67,12 +75,12 @@ if specialSet6=180
 {
 en7=instance_create(4060,190,oEntryJump)
 with en7 {rangeX=0 image_xscale=1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot
-	enemy_modify("METR-A",0)
+	enemy_switch("METR-A",0)
 	}	
 
 en8=instance_create(4060,250,oEntryJump)
 with en8 {rangeX=0 image_xscale=-1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot
-	enemy_modify("METR-A",0)
+	enemy_switch("METR-A",0)
 	}	
 }
 
@@ -83,5 +91,13 @@ en9=instance_create(__view_get( e__VW.XView, 0)+64,200,oEntryJump)
 with en9 {rangeX=0 image_xscale=-1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot}	
 }
 
+
 timeline_position-=1;
 }
+
+
+
+
+
+
+

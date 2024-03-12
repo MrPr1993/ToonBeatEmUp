@@ -237,7 +237,8 @@ shader_reset()
 
 draw_set_font(global.scorefont)
 draw_set_halign(fa_right)
-draw_text(70,12,string_hash_to_newline(clamp(PlayerLife,0,9))) //draw_text(39,0,7400)
+var lifecheck=clamp(PlayerLife,0,9); if global.Cheat[14] lifecheck="∞"
+draw_text(70,12,string_hash_to_newline(lifecheck)) //draw_text(39,0,7400)
 draw_text(70,2,string_hash_to_newline(round(PlayerScore))) //draw_text(39,0,7400)
 draw_set_halign(fa_left)
 }

@@ -44,7 +44,7 @@ cutSpawn=0
 sentflying=0
 fallHole=0
 
-PlayerLife-=1-1*global.CheatUnlock[14]
+PlayerLife-=1-1*global.Cheat[14]
 pow=0
 hp=maxhp
 

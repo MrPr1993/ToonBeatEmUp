@@ -102,10 +102,10 @@ frame_set(2,2,0.25)
 if animFrame=clamp(animFrame,2,2.99){if animFrame<=2.25 {PlaySoundNoStack(snd_swing) PlaySound(snd_hwolf2)} atk=1 canbeGrabbed=0
 
 if image_xscale=-1 and x>__view_get( e__VW.XView, 0 )+80
-if place_free(x-80,y) x-=80
+if place_free(x-20,y) x-=20
 
 if image_xscale=1 and x<__view_get( e__VW.XView, 0 )+320-80
-if place_free(x+80,y) x+=80
+if place_free(x+20,y) x+=20
 
 } else { atk=0 canbeGrabbed=1}
 

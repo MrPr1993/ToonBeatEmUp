@@ -89,7 +89,7 @@ atkcol_set(53,0,-2,3.55,1,115)
 frame_set(0,0,0.5)
 frame_set(1,0,0.5)
 frame_set(2,1,0.5)
-frame_set(3,1,0.5) if animFrame=4 PlaySound(choose(snd_martianb4,snd_martianb5))
+frame_set(3,1,0.5)
 frame_set(4,2+specialtimes[0],0.01)
 
 if animFrame=clamp(animFrame,4,4.99){

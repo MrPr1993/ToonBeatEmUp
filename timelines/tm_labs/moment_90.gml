@@ -47,7 +47,7 @@ if specialSet6=120
 {
 en5=instance_create(__view_get( e__VW.XView, 0)+320-64,224,oEntryJump)
 with en5 {rangeX=0	spawnFall=spr_nurse_move image_xscale=-1	spawnEnemy=oNurse
-	enemy_switch("DR.SULF",0)
+	
 	}	
 en6=instance_create(__view_get( e__VW.XView, 0)+320-64,256,oEntryJump)
 with en6 {rangeX=0	spawnFall=spr_nurse_move image_xscale=-1	spawnEnemy=oNurse

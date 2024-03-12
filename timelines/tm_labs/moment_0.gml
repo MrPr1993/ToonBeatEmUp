@@ -12,6 +12,7 @@ oControl.stageNext=rm_stage4
 bgfog1=layer_background_get_id(layer_get_id("BGclouds"));
 layer_background_visible(bgfog1,0)
 
+layer_y("TileBoss",-240)
 
 oPlayer.x-=64
 

@@ -58,8 +58,8 @@ frame_set(1,1,0.25)
 frame_set(2,2,0.05) if animFrame=3
 {PlaySoundNoStack(snd_cobra3)
 {sm=instance_create_depth(x+27*image_xscale,y+2,0,oPharaohSmoke) sm.hspeed=1*image_xscale
-		sm.z=z-24 sm.isPharaoh=0 sm.mainSmoke=spr_bigsmoke
-		sm.sprite_index=spr_smokemid sm.animLoop=5.75 
+		sm.z=z-24 sm.dizzyHit=1 sm.MoveType=1 sm.isPharaoh=0
+		sm.sprite_index=spr_bigsmoke sm.mainSmoke=spr_bigsmoke
 		}
 }
 frame_set(3,3,0.25)

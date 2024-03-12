@@ -21,7 +21,9 @@ if anim=14 if current_pal=2 anim=12
 
 if anim=12 if current_pal=6 if bombRecharge=0 anim=14 else {anim=0 canmove=1}
 
-if anim=12 if current_pal=10 if bombRecharge=0 anim=14
+if anim=12 if current_pal=10 {if bombRecharge=0 anim=14
+	else anim=12
+	}
 
 bombRecharge=choose(320,340,360,380,400)
 }
@@ -82,7 +84,8 @@ bomb.spdZ=-1*(point_distance(x,0,targetX,0)/32)
 
 bomb.trigger=1
 
-if current_pal=10 with bomb
+if current_pal=10 {bombRecharge=300+choose(320,340,360,380,400)
+	with bomb
 {
 destroyscript=function()
 {
@@ -93,6 +96,27 @@ PlaySound(snd_break)
 instance_destroy()
 
 }}
+
+if current_pal=6 {bombRecharge=300+choose(320,340,360,380,400)
+	with bomb
+{
+destroyscript=function()
+{
+	flashFX(x,y,z,spr_smokemid,0,0.25,20,1,1,c_white,1)
+sm=instance_create_depth(x+32*image_xscale,y+1,0,oPharaohSmoke) sm.hspeed=1*image_xscale
+		sm.z=z-16 sm.dizzyHit=1 sm.MoveType=0 sm.isPharaoh=0
+		sm.sprite_index=spr_bigsmoke sm.mainSmoke=spr_bigsmoke
+	
+	
+PlaySound(snd_break)
+
+instance_destroy()
+
+}}
+}
+
+
+}
 
 }
 

@@ -19,7 +19,7 @@ en3=instance_create(2360,146,oAreaSpawner)
 en4=instance_create(2470,146,oAreaSpawner)
 en5=instance_create(2580,146,oAreaSpawner)
 with oAreaSpawner
-{spawnX=0 ///768
+{spawnX=x-240 ///768
 MaxSpawnFrame=0 visible=1
 FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 enemytype0=oSpacer

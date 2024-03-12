@@ -1,6 +1,6 @@
 /// @description Baddies Appear 
 
-if __view_get( e__VW.XView, 0 )>=9460-2-320
+if __view_get( e__VW.XView, 0 )>=9460-2-320-120
 {
 
 en6=instance_create(__view_get( e__VW.XView, 0)+320-64,190,oSpacer)

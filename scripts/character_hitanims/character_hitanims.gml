@@ -520,7 +520,7 @@ if animFrame>12 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
 if anim=591000
 {sprite_index=spr_frog sentflying=0
 	
-if hp=0 {}
+if hp=0 {canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
 	
 if animFrame=0 {specialtimes[4]=0; animFrame=1}
 
@@ -590,7 +590,7 @@ if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
 if anim=591001
 {sprite_index=wrapSpr sentflying=0
 	
-if hp=0 {}
+if hp=0 {canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
 	
 if animFrame=0 {specialtimes[4]=0; animFrame=1}
 

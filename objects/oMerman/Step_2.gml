@@ -2,13 +2,13 @@
 // You can write your code in this editor
 if weaponspr!=-1
 {
-rangeAtk=120
+rangeAtk=160
 walkSpeed=0.5
 walkSpeedY=0.5
 }
 else
 {
-rangeAtk=60
+rangeAtk=100
 walkSpeed=0.5
 walkSpeedY=0.5
 }

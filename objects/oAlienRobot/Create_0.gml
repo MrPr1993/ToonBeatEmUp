@@ -15,7 +15,7 @@ HitGround=snd_hitgroundmetal
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=180
 
 OneAttack=2
 
