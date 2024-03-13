@@ -1,4 +1,4 @@
-if specialSet8=300
+if specialSet8=160
 {
 if specialSet9=0
 {//camMove=0 camMax=room_width
@@ -29,6 +29,7 @@ specialscript=function()
 specialSet7+=1
 if specialSet7>160 specialSet7=0
 layer_y("ElevatorBG",specialSet7)
+layer_y("TileBoss",specialSet7)
 }
 
 }
@@ -42,7 +43,8 @@ specialscript=function()
 specialSet7+=1
 if specialSet7>160 specialSet7=0
 layer_y("ElevatorBG",specialSet7)
-layer_vspeed("ElevatorBG",specialSet7)
+if specialSet8<160
+layer_y("TileBoss",specialSet7-160)
 }	
 
 timeline_position-=1;
@@ -54,15 +56,6 @@ else
 {
 specialSet8+=1
 
-if specialSet8=50
-{
-foody=instance_create(__view_get( e__VW.XView, 0)+160-32,200,oBurger)
-foody.z=-200
-foody=instance_create(__view_get( e__VW.XView, 0)+160,200,oPizza)
-foody.z=-200
-foody=instance_create(__view_get( e__VW.XView, 0)+160+32,200,oMeat)
-foody.z=-200
-}
 
 timeline_position-=1;
 }

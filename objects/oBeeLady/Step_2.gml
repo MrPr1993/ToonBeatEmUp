@@ -23,7 +23,7 @@ frame_set(0,0,0.25)
 frame_set(1,1,0.25) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
 if animFrame=2 PlaySound(snd_swing5)
 frame_set(2,3,0.25) 
-frame_set(3,4,0.01)
+frame_set(3,4,0.1)
 frame_set(4,1,0.25)
 if animFrame>4.7 canmove=1
 }
@@ -35,7 +35,7 @@ if anim=12 ///Sticky Honey
 	
 if animFrame=0
 {targetX=targetEnemy.x
-specialtimes[0]=(1*(point_distance(x,0,targetX,0)/48)/2)*image_xscale
+specialtimes[0]=(1*(point_distance(x,0,targetX,0)/48))*image_xscale
 specialtimes[1]=-1*(point_distance(x,0,targetX,0)/32)
 
 }
@@ -43,7 +43,7 @@ specialtimes[1]=-1*(point_distance(x,0,targetX,0)/32)
 frame_set(0,0,0.25)
 frame_set(1,1,0.1)
 frame_set(2,3,0.25) if animFrame=3 {PlaySound(snd_swing4)
-spit=instance_create_depth(x+32*image_xscale,y+2,depth,oZombieSpit) spit.spdX=specialtimes[0] spit.z=-69 spit.image_xscale=image_xscale
+spit=instance_create_depth(x+32*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=specialtimes[0] spit.z=-69 spit.image_xscale=image_xscale
 
 spit.zSpeed=specialtimes[1]
 with spit

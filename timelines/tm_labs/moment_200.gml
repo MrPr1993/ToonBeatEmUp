@@ -26,8 +26,9 @@ specialscript=function()
 specialSet7+=1
 if specialSet7>160 specialSet7=0
 layer_y("ElevatorBG",specialSet7)
-layer_y("TileBoss",specialSet7-240)
-specialSet8=300
+
+specialSet9+=1
+layer_y("TileBoss",specialSet9-160)
 }
 
 }
@@ -45,10 +46,10 @@ specialSet6+=1
 
 if specialSet6=10 
 {
-en1=instance_create(4074,190,oEntryJump)
+en1=instance_create(4374,190,oEntryJump)
 with en1 {rangeX=0 image_xscale=1 	spawnFall=spr_wrestler_move	spawnEnemy=oWrestler}
 
-en2=instance_create(4074,256,oEntryJump)
+en2=instance_create(4374,256,oEntryJump)
 with en2 {rangeX=0 image_xscale=1	spawnFall=spr_fatburglar_move spawnEnemy=oFatBurglar}	
 }
 

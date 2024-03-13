@@ -25,7 +25,7 @@ alarm[0]=60 timecheck=-1}
 en1=instance_create(662,176,oSwing) en1.canAttack=6 en1.isIdle=1 en1.alarm[1]=60
 en1.idleRange=90 
 with en1
-{name="MS.HAMS" current_pal=4
+{
 spawnID=oSword
 weaponspr=spr_sword
 weaponIndex=0

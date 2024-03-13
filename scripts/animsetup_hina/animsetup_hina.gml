@@ -529,7 +529,7 @@ selfatk.height=128
 
 
 	  if animFrame>9.5 {hurt=0 atk=0 canmove=1 hit=0
-	  if powcheck=0 hp-=powhp-powhp*global.CheatUnlock[9] else {pow=0 powlock=0}
+	  if powcheck=0 hp-=powhp-powhp*global.Cheat[9] else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
 	}
 	
@@ -609,7 +609,7 @@ if specialcheck5=1
 
 	if animFrame>5.5
 	{atk=0 canmove=1 hit=0
-	  if powcheck=0 hp-=powhp-powhp*global.CheatUnlock[9] else {pow=0 powlock=0}
+	  if powcheck=0 hp-=powhp-powhp*global.Cheat[9] else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
 	}
 
@@ -617,7 +617,7 @@ if animFrame>5.5 animFrame+=0.25
 
 	if animFrame>6.5
 	{atk=0 canmove=1 hit=0
-	  if powcheck=0 hp-=powhp-powhp*global.CheatUnlock[9] else {pow=0 powlock=0}
+	  if powcheck=0 hp-=powhp-powhp*global.Cheat[9] else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
 	}
 	}

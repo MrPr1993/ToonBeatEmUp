@@ -5,7 +5,7 @@ if __view_get( e__VW.XView, 0 )>=7644-2-8
 PlaySound(snd_hitgroundmetal)
 oControl.quakeFXTime=10
 
-with oEnemySpawner {specialSet6=0 specialSet7=0}
+with oEnemySpawner {specialSet6=0 specialSet7=0 specialSet8=0}
 
 with oEnemySpawner
 specialscript=function()

@@ -123,7 +123,7 @@ PlaySoundNoStack(snd_metalhit) other.hitSource.altresult2+=round(other.damage*25
 with other.hitSource
 {if object_index=oPlayer
 if weaponAttack=1
-weaponLife-=1-1*global.CheatUnlock[10]
+weaponLife-=1-1*global.Cheat[10]
 }
 recovery=10
 shaketime=10

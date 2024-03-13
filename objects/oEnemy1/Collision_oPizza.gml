@@ -24,7 +24,7 @@ flashFX(x,y+2,z-32,other.WspriteFX,other.WindexFX,other.WisDepth,other.WspriteTi
 HitType=1//other.HitType
 event_user(0)
 if other.weaponIsGun=0
-other.weaponLife-=1-1*global.CheatUnlock[10]
+other.weaponLife-=1-1*global.Cheat[10]
 
 }
 

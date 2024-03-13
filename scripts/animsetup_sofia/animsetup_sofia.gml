@@ -553,7 +553,7 @@ selfatk.height=128
 	animFrame+=0.5
 
 	  if animFrame>9.5 {hurt=0 atk=0 canmove=1 hit=0
-	  if powcheck=0 hp-=powhp-powhp*global.CheatUnlock[9] else {pow=0 powlock=0}
+	  if powcheck=0 hp-=powhp-powhp*global.Cheat[9] else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
 	}
 	}
@@ -601,7 +601,7 @@ selfatk.height=128
 	if animFrame>4
 	{powlock=0 hurt=0 atk=0 canmove=1 hit=0
 	if powcheck=0
-	hp-=powhp-powhp*global.CheatUnlock[9] else {pow=0 powlock=0}
+	hp-=powhp-powhp*global.Cheat[9] else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
 	}
 	}

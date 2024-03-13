@@ -4,7 +4,7 @@ if __view_get( e__VW.XView, 0 )>=5896-2-320
 {PlaySound(snd_stonebreakl)
 oControl.quakeFXTime=10
 
-with oEntryPainting spawnX=0
+with oEntryPainting rangeX=0
 
 	
 }

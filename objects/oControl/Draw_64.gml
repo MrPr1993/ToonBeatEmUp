@@ -851,8 +851,8 @@ if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)\n(2 LIVES, 1
 	diftext2="NOT SUITABLE FOR NEWBIES."
 		global.LifeStart=2; global.Continues=1;}
 	
-if global.CheatUnlock[2] global.LifeStart=global.LifeStart*2;
-if global.CheatUnlock[15] global.Continues=-1;
+if global.Cheat[2] global.LifeStart=global.LifeStart*2;
+if global.Cheat[15] global.Continues=-1;
 
 if oControl.multiVSsetting=1
 {diftext="FRIENDLY FIRE" 

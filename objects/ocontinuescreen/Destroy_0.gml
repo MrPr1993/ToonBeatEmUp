@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.CheatUnlock[15]=0
+if global.Cheat[15]=0
 {
 if global.Continues!=-1
 global.Continues-=1
