@@ -9,7 +9,7 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=200
 
 OneAttack=2
 
@@ -18,6 +18,8 @@ maxhp=2
 
 isHeavy=1
 throwHeavy=1
+
+idlestyle=1
 
 height=128
 
@@ -51,6 +53,8 @@ spritepos_setup(1,24,17,53)
 spritepos_setup(2,24,5,95)
 
 enemyID=162
+
+bombRecharge=0
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

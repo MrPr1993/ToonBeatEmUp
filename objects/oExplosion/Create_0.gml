@@ -11,3 +11,4 @@ z=0
 
 canHarm=1
 
+harmEnemy=1

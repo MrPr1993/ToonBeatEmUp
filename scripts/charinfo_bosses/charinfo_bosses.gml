@@ -56,7 +56,7 @@ charinfo_set(12,spr_twoheads_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,s
     case 10: enemyID=161
  charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,octopus_draw,spr_enemypal,0,spr_enemyface,40,"LARRY",
  "An octopus who is the a pet who is protective of their master and will take care of interlopers with their tentacles.") break;
-   case 11: enemyID=162
+   case 11: enemyID=162 idlestyle=0
  charinfo_set(12,spr_seaweed_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,41,"CIRCE",
  "A sea witch living in a cave who enjoys ompany as long as they don't cause harm. Otherwise, she'll give tham a spankin'.") break;
    case 12: enemyID=163
