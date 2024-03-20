@@ -60,6 +60,7 @@ FlatSpr=spr_genie_flat
 ShockSpr=spr_genie_elec
 BurnSpr=spr_genie_burned
 FrozenSpr=spr_genie_frozen
+DizzySpr=spr_genie_dizzy hasDizzy=1
 
 spritepos_setup(1,24,10,47)
 spritepos_setup(2,24,-3,88)

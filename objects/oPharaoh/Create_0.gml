@@ -47,6 +47,8 @@ BurnSpr=spr_pharaoh_burned
 FrozenSpr=spr_pharaoh_frozen
 DizzySpr=spr_pharaoh_hit
 
+DizzySpr=spr_pharaoh_dizzy hasDizzy=1
+
 isBoss=1
 specialBossState=1
 

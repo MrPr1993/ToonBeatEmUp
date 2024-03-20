@@ -49,6 +49,7 @@ FlatSpr=spr_prince_flat
 ShockSpr=spr_prince_elec
 BurnSpr=spr_prince_burned
 FrozenSpr=spr_prince_frozen
+DizzySpr=spr_prince_dizzy hasDizzy=1
 
 isBoss=1
 specialBossState=1

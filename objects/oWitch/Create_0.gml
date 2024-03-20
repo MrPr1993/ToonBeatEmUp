@@ -58,6 +58,9 @@ enemyID=159
 isBoss=1
 specialBossState=1
 
+bombRecharge=0
+bombRecharge2=0
+
 spritepos_setup(1,24,5,53)
 spritepos_setup(2,24,14,81)
 

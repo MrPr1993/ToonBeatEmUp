@@ -61,6 +61,7 @@ HeartSpr=spr_hina_heart
 	qSandSpr=spr_hina_quicksand
 inflateSpr=spr_hina_inflate
 	wrapSpr=spr_hina_wrap
+	pigSpr=spr_hina_pig
 }
 	
 	if atk=0

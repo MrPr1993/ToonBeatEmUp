@@ -54,6 +54,7 @@ FlatSpr=spr_oni_flat
 ShockSpr=spr_oni_elec
 BurnSpr=spr_oni_burned
 FrozenSpr=spr_oni_frozen
+DizzySpr=spr_oni_dizzy hasDizzy=1
 
 enemyID=157
 

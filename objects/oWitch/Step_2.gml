@@ -9,16 +9,111 @@ overwriteAttack3=1
 overwriteAttack4=1
 overwriteAttack5=1
 
+
+if bombRecharge!=0 bombRecharge-=1;
+if bombRecharge2!=0 bombRecharge2-=1;
+
 //if x>__view_get( e__VW.XView, 0 ) and x<__view_get( e__VW.XView, 0 )+320
 if anim=10
 {offScreen=0
 if distance_to_point(targetEnemy.x,targetEnemy.y)<50
-anim=choose(21,21)
+anim=choose(21,13)
 else
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)<100
-anim=11 else anim=12
+anim=choose(12,11,1201) else {anim=choose(1200,1201,11,12)
+	
+	if anim=1200 if x!=clamp(x,oControl.camX+40,oControl.camX+320-40) anim=1201
+	}
+
+if anim=12 or anim=11 if bombRecharge!=0 anim=1201 else bombRecharge=120+choose(200,220,240,260)
+if anim=1200 if bombRecharge2!=0 anim=1201 else bombRecharge2=120+choose(200,220,240,260)
+
+
 }
+}
+
+if anim=1200
+{sprite_index=spr_witch_attack5
+	if animFrame=0 {specialtimes[0]=0
+		PlaySound(choose(snd_witch2,snd_witch3,snd_witch4))
+		}
+	specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.1)
+frame_set(3,3+specialtimes[0],0.01) if animFrame=4
+{
+	
+with oPlayer
+{
+if invincible=0 and recovery=0 and superThrown=0
+{hitID=oWitch PlaySoundNoStack(snd_melthit)
+sprite_index=meltSpr canmove=0 hurt=1
+
+specialFX=1 alarm[3]=5
+
+		repeat(8)
+{
+part=instance_create_depth(x,y+1,depth,oFlashFX)
+if iceFX=0 or iceFX=1 or iceFX=2 or iceFX=3 part.x=x
+if iceFX=4 or iceFX=5 or iceFX=6 or iceFX=7 part.x=x
+if iceFX=0 or iceFX=4 part.z=z-16
+if iceFX=1 or iceFX=5 part.z=z-48
+if iceFX=2 or iceFX=6 part.z=z-64
+if iceFX=3 or iceFX=7 part.z=z-80
+part.sprite_index=spr_dust
+if iceFX <4
+part.hspeed=choose(-1,-2,-1.5)
+else
+part.hspeed=choose(1,2,1.5)
+part.image_index=choose(0,1,2) part.image_speed=0
+	iceFX+=1;
+} iceFX=0;
+
+	hp-=0.4
+	roll=0
+thrownPlayer=-1
+
+	recovery=20
+ hitBack=0
+	
+	dizzyHit=0;
+	
+	cutDMG=0
+
+	HitType=44
+
+
+	HitForceReact=0
+	HitForceReactZ=0
+
+	event_user(0)
+
+}
+
+}
+}
+frame_set(4,5,0.25)
+frame_set(5,6,0.25)
+frame_set(6,7,0.25)
+frame_set(7,8,0.05)
+frame_set(8,0,0.1)
+if animFrame>8.5 canmove=1
+}
+
+///Spin Attack
+if anim=1201
+{isCut=1 MoveType=1 damage=0.2 selfatk.HitSound=snd_cut selfatk.flashX=spr_blood2
+sprite_index=spr_witch_attack3 atkcol_set(0,0,0,2,1.5,96)
+if animFrame=0 {specialtimes[0]=0 PlaySound(choose(snd_witch5,snd_witch6))}
+specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
+frame_set(0,0,0.25)
+frame_set(1,1,0.1)
+frame_set(2,2+specialtimes[0],0.02) if animFrame=clamp(animFrame,2,3) {sentflying=6*image_xscale atk=1} else atk=0
+frame_set(3,1,0.25)
+frame_set(4,0,0.25)
+if animFrame>4.5 canmove=1
 }
 
 if anim=11 ///Sumon Bone Fist
@@ -67,7 +162,7 @@ for(var drawparts = -1; drawparts < 2; drawparts++)
 {
 //projectile_create(x+28*image_xscale,y+1,z-32,32,spr_spacer_bubbleproj,4*image_xscale,mask_small,spr_hitflash,0.1,591000,2,0,0)
 bone=instance_create_depth(x+40*image_xscale,y,-1,oBossHazard)
-bone.z=z-70 bone.zSpeed=-4
+bone.z=z-70 bone.zSpeed=-4 
 bone.hitSource=self.id bone.sprite_index=spr_witch_bomb bone.shadow=spr_shadow bone.image_xscale=image_xscale
 bone.sentflying=1*((point_distance(x,0,targetX,0)/48)/2)*image_xscale bone.vspeed=1*drawparts
 if image_xscale=1 
@@ -83,7 +178,7 @@ z+=zSpeed zSpeed+=0.45
 if z>0 {anim=1 z=0}
 }
 if anim=1
-{MoveType=0 dizzyAtk=1 damage=0.05 recovery=10 vspeed=0
+{MoveType=591000 dizzyAtk=1 damage=0.1 recovery=10 vspeed=0
 frame_set(0,1,0.1)
 frame_set(1,2,0.1)
 frame_set(2,3,0.1)
@@ -113,10 +208,10 @@ frame_set(0,0,0.1) if animFrame=1
 var teled=0; repeat(6) {dust_make(x-10,y,z-4*teled,-0.1,0,-0.1-0.1*teled) teled+=1}
 teled=0; repeat(6) {dust_make(x+10,y,z-4*teled,0.1,0,-0.1-0.1*teled) teled+=1}
 
-if instance_nearest(x,y,oPlayer).x< __view_get( e__VW.XView, 0 )+160
-x=__view_get( e__VW.XView, 0 )+160+32*random_range(1,5)
+if instance_nearest(x,y,oPlayer).x< oControl.camX+160
+x=oControl.camX+160+32*random_range(1,5)
 else
-x=__view_get( e__VW.XView, 0 )+32*random_range(1,5)
+x=oControl.camX+32*random_range(1,5)
 
 var teled=0; repeat(6) {dust_make(x-10,y,z-4*teled,-0.1,0,-0.1-0.1*teled) teled+=1}
 teled=0; repeat(6) {dust_make(x+10,y,z-4*teled,0.1,0,-0.1-0.1*teled) teled+=1}

@@ -60,7 +60,7 @@ FlatSpr=spr_franki_flat
 ShockSpr=spr_franki_elec
 BurnSpr=spr_franki_burned
 FrozenSpr=spr_franki_frozen
-DizzySpr=spr_franki_hit
+DizzySpr=spr_franki_dizzy hasDizzy=1
 
 isBoss=1
 specialBossState=1

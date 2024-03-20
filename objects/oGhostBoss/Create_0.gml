@@ -83,6 +83,7 @@ FlatSpr=spr_ghost_flat
 ShockSpr=spr_ghost_elec
 BurnSpr=spr_ghost_burned
 FrozenSpr=spr_ghost_frozen
+DizzySpr=spr_ghost_dizzy hasDizzy=1
 
 
 enemyID=155

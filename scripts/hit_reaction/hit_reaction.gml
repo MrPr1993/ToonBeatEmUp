@@ -240,6 +240,16 @@ if hp<=0
 	ground=0 zSpeed=-6
 	}
 	
+	////Piggy Curse of Circe
+	if HitType=591002
+	{hurt=1
+	sprite_index=ThrownSpr image_index=0
+	animFrame=0
+	anim=591002
+	sentflying=-2*image_xscale
+	ground=0 zSpeed=-6
+	}
+	
 	if HitType=44///Melt
 	{event_user(1)
 	hurt=1 canBounce=0 sprite_index=meltSpr

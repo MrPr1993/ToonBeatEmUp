@@ -296,6 +296,7 @@ stagePose=1
 	meltSpr=spr_viva_melt
 	inflateSpr=spr_viva_inflate
 	wrapSpr=spr_viva_wrap
+	pigSpr=spr_viva_pig
 	spawnZAdd=0
 	throwHspd=4
 	frictionX=0

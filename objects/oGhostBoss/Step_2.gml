@@ -5,6 +5,7 @@ throw_step()
 
 headFront=1
 
+
 if anim=0 or anim=1 or anim=4 or anim=13
 {
 z=lerp(z,-16+hoverZ,0.1)
@@ -259,6 +260,15 @@ if image_index=clamp(image_index,24,24.9)
 {GheadX=-3 GheadY=-90 headAngle=0 headInd=9}
 
 	}
+	
+if sprite_index=DizzySpr
+{
+headSpr=spr_ghost_head_dizzy
+headInd=image_index
+
+GheadX=10
+GheadY=-104
+}
 
 	if hp<=0
 x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)

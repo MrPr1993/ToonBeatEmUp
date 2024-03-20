@@ -47,6 +47,7 @@ FlatSpr=spr_duck_flat
 ShockSpr=spr_duck_elec
 BurnSpr=spr_duck_burned
 FrozenSpr=spr_duck_frozen
+DizzySpr=spr_duck_dizzy hasDizzy=1
 
 enemyID=160
 

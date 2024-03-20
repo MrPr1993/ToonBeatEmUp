@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":5.22449,
+  "duration":0.0,
   "name":"snd_seaweed1",
   "parent":{
     "name":"Seaweed",

@@ -32,7 +32,7 @@ if anim=13 or anim=14 if bombRecharge!=0 anim=12
 if anim=11 ///Slash Attack
 {if animFrame=0 {PlaySound(choose(snd_seaweed7,snd_seaweed8))}
 //if animFrame=0  PlaySound(snd_wolfita7)
-
+atkcol_set(37,0,39,2.15,1,46)
 canbeGrabbed=0 isCut=1
 MoveType=1 damage=0.15
 sprite_index=spr_seaweed_attack5
@@ -44,7 +44,7 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 
 frame_set(2,2,0.25)
-if animFrame=clamp(animFrame,2,2.99){atk=1 sentflying=2*image_xscale
+if animFrame=clamp(animFrame,2,2.99){atk=1 sentflying=4*image_xscale
 } else {sentflying=0 atk=0}
 
 frame_set(3,3,0.05)
@@ -75,12 +75,12 @@ if anim=12
 frame_set(0,0,0.1) damage=0.15 MoveType=1
 frame_set(1,1,0.1) specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
 frame_set(2,2+specialtimes[0],0.05)
-frame_set(3,0,0.1) if animFrame=clamp(animFrame,2,3) {sentflying=6*image_xscale atk=1} else {sentflying=0 atk=0}
+frame_set(3,0,0.1) if animFrame=clamp(animFrame,2,3) {sentflying=8*image_xscale atk=1} else {sentflying=0 atk=0}
 if animFrame>3.5 canmove=1
 }
 
 if anim=13
-{bombRecharge=choose(320,400,500,600)
+{bombRecharge=choose(200,220,240,260)
 if animFrame=0 {specialcheck4=0 PlaySound(choose(snd_seaweed2,snd_seaweed8))} sprite_index=spr_seaweed_attack3
 frame_set(0,0,0.1)
 frame_set(1,1,0.1) if animFrame=2 
@@ -90,7 +90,7 @@ bone=instance_create_depth(x+48*image_xscale,y+1,-1,oBossHazard) bone.hitSource=
 bone.z=z-32 bone.hspeed=4*image_xscale with bone
 {
 selfscript = function()
-{MoveType=591000 damage=0.1
+{MoveType=591002 damage=0.1
 sprite_index=spr_seaweed_curse image_index+=0.25
 atk=1
 }
@@ -108,11 +108,11 @@ if animFrame>5.5 canmove=1
 }
 
 if anim=14
-{sprite_index=spr_seaweed_attack4 bombRecharge=choose(320,400,500,600)
-	PlaySound(choose(snd_seaweed7,snd_seaweed8,snd_seaweed5))
+{sprite_index=spr_seaweed_attack4 bombRecharge=choose(200,220,240,260)
+	if animFrame=0 PlaySound(choose(snd_seaweed7,snd_seaweed8,snd_seaweed5))
 frame_set(0,0,0.1) damage=0.15 MoveType=1
 frame_set(1,1,0.1)
-frame_set(2,2,0.01) if animFrame=3
+frame_set(2,2,0.1) if animFrame=3
 {
 bone=instance_create_depth(targetEnemy.x,targetEnemy.y,-1,oBossHazard)
 bone.hitSource=self.id 

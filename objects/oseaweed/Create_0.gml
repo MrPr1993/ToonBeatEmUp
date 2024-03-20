@@ -4,6 +4,11 @@ name="CIRCE"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=41
 
+	DeathCry=snd_seaweed10//snd_deathcry2
+	DamageVoice1=snd_seaweed9
+	DamageVoice2=snd_seaweed9
+	DamageVoice3=snd_seaweed9
+
 enemyscript=animsetup_enemy
 
 pointshit=10
@@ -21,9 +26,11 @@ throwHeavy=1
 
 idlestyle=1
 
-height=128
+height=110
 
 specialFX=0
+
+
 
 StandSpr=spr_seaweed_stand
 MoveSpr=spr_seaweed_move
@@ -44,6 +51,7 @@ FlatSpr=spr_seaweed_flat
 ShockSpr=spr_seaweed_elec
 BurnSpr=spr_seaweed_burned
 FrozenSpr=spr_seaweed_frozen
+DizzySpr=spr_seaweed_dizzy hasDizzy=1
 
 isBoss=1
 specialBossState=1

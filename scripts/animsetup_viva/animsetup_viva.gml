@@ -59,6 +59,7 @@ WildTakeSpr4=spr_viva_wildtake4
 qSandSpr=spr_viva_quicksand
 	inflateSpr=spr_viva_inflate
 	wrapSpr=spr_viva_wrap
+	pigSpr=spr_viva_pig
 	}
 
 	if atk=0 ///To Set default colission

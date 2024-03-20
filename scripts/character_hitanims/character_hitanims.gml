@@ -520,9 +520,9 @@ if animFrame>12 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
 if anim=591000
 {sprite_index=spr_frog sentflying=0
 	
-if hp=0 {canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
+if hp=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
 	
-if animFrame=0 {specialtimes[4]=0; animFrame=1}
+if animFrame=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) specialtimes[4]=0; animFrame=1}
 
 
 if ground
@@ -582,7 +582,7 @@ if ground=1
 
 
 
-if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+if specialtimes[4]>160 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
 }
 
 
@@ -650,6 +650,84 @@ if ground=1
 
 if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
 }
+
+/////Transformation Pig
+if anim=591002
+{sprite_index=pigSpr sentflying=0
+	
+if hp=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
+	
+if animFrame=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) specialtimes[4]=0; specialtimes[3]=0 animFrame=1 specialtimes[5]=0;}
+
+specialtimes[5]=0
+if key_right or -key_left or key_up or key_down
+if ground=1
+{if key_right image_xscale=1
+	if -key_left image_xscale=-1
+	
+	specialtimes[5]=1
+}
+
+
+if ground
+{
+if specialtimes[5]=0
+{
+frame_set(1,2,0.25)
+frame_set(2,2,0.25)
+frame_set(3,0,0.25)
+frame_set(4,0,0.25)
+frame_set(5,2,0.25) if animFrame>6 animFrame=1
+}
+else
+{
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.25)
+frame_set(4,2,0.25)
+frame_set(5,2,0.25) if animFrame>4 animFrame=1
+}
+
+}
+else
+{
+frame_set(1,4,0.25)
+frame_set(2,5,0.25)
+frame_set(3,5,0.25)
+}
+
+specialtimes[4]+=1
+
+var formspd=2;
+
+//if !ground
+{
+	if key_right 
+	{	
+	if place_free(x+formspd,y) and x<__view_get( e__VW.XView, 0 )+320-28 x+=formspd}
+	
+	if -key_left {if place_free(x-formspd,y)
+	and x>__view_get( e__VW.XView, 0 )+42
+	  x-=formspd}
+	if key_up 
+	{if place_free(x,y-formspd) y-=formspd
+	}
+	if key_down 
+	{if place_free(x,y+formspd)
+	and y<__view_get( e__VW.YView, 0 )+240-2
+	  y+=formspd
+	}
+}
+
+	if key_jump and ground
+	{animFrame=1
+	ground=0 zSpeed=-6 PlaySound(snd_jump)
+	}
+
+
+if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+}
+
 
 
 }
