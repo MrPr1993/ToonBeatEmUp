@@ -47,6 +47,7 @@ FlatSpr=spr_dastardly2_flat
 ShockSpr=spr_dastardly2_elec
 BurnSpr=spr_dastardly2_burned
 FrozenSpr=spr_dastardly2_frozen
+DizzySpr = spr_dastardly2_dizzy hasDizzy=1
 
 enemyID=177
 

@@ -90,7 +90,7 @@ bone=instance_create_depth(x+48*image_xscale,y+1,-1,oBossHazard) bone.hitSource=
 bone.z=z-32 bone.hspeed=4*image_xscale with bone
 {
 selfscript = function()
-{MoveType=591002 damage=0.1
+{MoveType=591002 damage=0.1 depth=-y
 sprite_index=spr_seaweed_curse image_index+=0.25
 atk=1
 }
@@ -121,7 +121,7 @@ with bone{
 	sprite_index=spr_seaweed_column
 	
 selfscript = function()
-{MoveType=1 damage=0.1
+{MoveType=1 damage=0.1 depth=-y
 depth=6666
 frame_set(0,0,0.2)
 frame_set(1,1,0.2)

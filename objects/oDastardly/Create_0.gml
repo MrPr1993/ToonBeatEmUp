@@ -48,6 +48,7 @@ FlatSpr=spr_dastardly_flat
 ShockSpr=spr_dastardly_elec
 BurnSpr=spr_dastardly_burned
 FrozenSpr=spr_dastardly_frozen
+DizzySpr=spr_dastardly_dizzy hasDizzy=1
 
 isBoss=1
 specialBossState=1

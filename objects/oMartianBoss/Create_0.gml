@@ -56,6 +56,10 @@ my_pal_sprite=spr_zombiepal
 
 enemyID=163
 
+isBoss=1
+specialBossState=1
+
+
 if oControl.betatest=1
 if keyboard_check(vk_control)
 {

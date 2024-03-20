@@ -39,8 +39,13 @@ FlatSpr=spr_painter_flat
 ShockSpr=spr_painter_elec
 BurnSpr=spr_painter_burned
 FrozenSpr=spr_painter_frozen
+DizzySpr=spr_painter_dizzy hasDizzy=1
 
 enemyID=200
+
+isBoss=1
+specialBossState=1
+
 
 spritepos_setup(1,24,-2,64)
 spritepos_setup(2,24,2,91)

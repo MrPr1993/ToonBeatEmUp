@@ -70,6 +70,10 @@ enemyID=167
 isHeavy=1
 throwHeavy=1
 
+isBoss=1
+specialBossState=1
+
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

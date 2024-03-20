@@ -53,6 +53,10 @@ enemyID=160
 
 runCharge=0
 
+isBoss=1
+specialBossState=1
+
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

@@ -43,7 +43,7 @@ FlatSpr=spr_plantprincess_flat
 ShockSpr=spr_plantprincess_elec
 BurnSpr=spr_plantprincess_burned
 FrozenSpr=spr_plantprincess_frozen
-
+DizzySpr = spr_plantprincess_dizzy hasDizzy=1
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

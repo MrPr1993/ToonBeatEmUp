@@ -44,6 +44,7 @@ FlatSpr=spr_scientistm_flat
 ShockSpr=spr_scientistm_elec
 BurnSpr=spr_scientistm_burned
 FrozenSpr=spr_scientistm_frozen
+DizzySpr=spr_scientistm_dizzy hasDizzy=1
 
 isHeavy=1
 
