@@ -60,6 +60,7 @@ qSandSpr=spr_viva_quicksand
 	inflateSpr=spr_viva_inflate
 	wrapSpr=spr_viva_wrap
 	pigSpr=spr_viva_pig
+	bubSpr=spr_viva_bubble
 	}
 
 	if atk=0 ///To Set default colission

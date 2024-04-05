@@ -66,6 +66,7 @@ WildTakeSpr4=spr_sofia_wildtake4
 qSandSpr=spr_sofia_quicksand
 inflateSpr=spr_sofia_inflate
 	wrapSpr=spr_sofia_wrap
+	bubSpr=spr_sofia_bubble
 	pigSpr=spr_sofia_pig
 }
 

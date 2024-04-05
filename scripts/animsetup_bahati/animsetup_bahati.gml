@@ -65,6 +65,7 @@ qSandSpr=spr_bahati_quicksand
 	inflateSpr=spr_bahati_inflate
 		wrapSpr=spr_bahati_wrap
 		pigSpr=spr_bahati_pig
+		bubSpr=spr_bahati_bubble
 	}
 	if atk=0 {hitFXreset() selfatk.HitSound=snd_hit isThrow=0 throwing=0 canSuper=1 atkAddX=24 atkAddY=0 atkAddZ=0 selfatk.image_xscale=1.75*image_xscale selfatk.image_yscale=1
 	HitForce=0

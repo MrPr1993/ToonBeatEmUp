@@ -250,6 +250,17 @@ if hp<=0
 	ground=0 zSpeed=-6
 	}
 	
+	///Bubbled
+	if HitType=591003
+	{hurt=1
+	sprite_index=ThrownSpr image_index=0
+	animFrame=0
+	anim=591003 z-=2
+	sentflying=-2*image_xscale
+	ground=0 zSpeed=-6
+	}	
+	
+	
 	if HitType=44///Melt
 	{event_user(1)
 	hurt=1 canBounce=0 sprite_index=meltSpr

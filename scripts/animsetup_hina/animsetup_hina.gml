@@ -62,6 +62,7 @@ HeartSpr=spr_hina_heart
 inflateSpr=spr_hina_inflate
 	wrapSpr=spr_hina_wrap
 	pigSpr=spr_hina_pig
+	bubSpr=spr_hina_bubble
 }
 	
 	if atk=0
