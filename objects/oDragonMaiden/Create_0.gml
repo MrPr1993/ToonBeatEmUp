@@ -4,6 +4,7 @@ name="FIONA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=56
 
+turnanim=0
 
 enemyscript=animsetup_enemy
 

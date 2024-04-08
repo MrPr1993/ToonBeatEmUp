@@ -68,6 +68,8 @@ if hp=0 or hp<=0 or dead=1 if anim!=9999
 
 if anim=0
 {lockSPD=0.05
+	
+	lockY=lerp(lockY,targetEnemy.y,0.1)
 
 if !eyeHit
 sprite_index=StandSpr
@@ -217,83 +219,98 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	if (targetEnemy.x>oControl.camX+160+96 and image_xscale=1)
 	or (targetEnemy.x>oControl.camX+320-160-96 and image_xscale=-1)
 	anim=13
+	
 	}
 	
 	
 	if anim=11 //Bite
-	{if animFrame=0 {lockZ=-48 lockX=x
-		
-		if prevanim=11 {if image_xscale=1 lockX=oControl.camX+64 else lockX=oControl.camX+320-64}
-		
-		sprite_index=spr_dragonmaiden_head}
-	lockSPD=0.07
-		
-		
-	selfatk.x=x
-	selfatk.image_xscale=4.5
-	selfatk.image_yscale=2
-	selfatk.height=128
-	selfatk.damage=0.2 selfatk.MoveType=1
-if animFrame<1 {lockX-=2*image_xscale lockY=targetEnemy.y}
-	frame_set(0,2,0.05) if animFrame=1 {lockZ=0 sprite_index=spr_dragonmaiden_headbite}
-	frame_set(1,0,0.1) if animFrame=clamp(animFrame,1,2)
-	{if image_xscale=1 {if x>targetEnemy.x-32 or x>oControl.camX+200 animFrame=2 else lockX+=8}
-	else {if x<targetEnemy.x+32 or x<oControl.camX+320-200 animFrame=2 else lockX-=8}
-	}	if animFrame=2 {oControl.quakeFXTime=10 atk=1}
+	{if animFrame=0 {animFrame=0.01 specialtimes[0]=0  lockX=x sprite_index=spr_dragonmaiden_head}
+	selfatk.damage=0.25 selfatk.MoveType=1
+	
+	atkcol_set(14*image_xscale,0,0,3.65,1,89)
+	
+	
+	if specialtimes[0]=0
+	{lockZ=lerp(lockZ,-48,0.05)
+	if x=clamp(lockX,oControl.camX-180,oControl.camX+320+180)
+	{lockY=lerp(lockY,targetEnemy.y,0.1)
+lockX-=4*image_xscale
+
+	} else specialtimes[0]+=1
+	}
+	else
+	{sprite_index=spr_dragonmaiden_headbite
+	lockZ=0
+	
+	frame_set(0,0,0) if animFrame<=1 {lockX+=8*image_xscale  if x=clamp(x,targetEnemy.x-24,targetEnemy.y+24)
+	animFrame=1.5}
+	frame_set(1,0,0.25) if animFrame=clamp(animFrame,2,2.5) atk=1 else atk=0
+	if animFrame=2 {oControl.quakeFXTime=10}
 	frame_set(2,1,0.5)
-	frame_set(3,2,0.01)
-	if animFrame=clamp(animFrame,2,3) atk=1 else atk=0 {}
-	if animFrame>3.5 {anim=0 canmove=1 animFrame=0}
+	frame_set(3,2,0.05)	
+	frame_set(4,1,0.01)
+	if animFrame>4.5 {canmove=1 anim=0}
+	}
 	}
 	
 	if anim=12 //Fire Breath
-	{if animFrame=0 {specialtimes[0]=0 lockZ=-96 sprite_index=spr_dragonmaiden_head
-		
+	{
 	
-		}
-		lockY=lerp(lockY,targetEnemy.y,0.1)
-		if image_xscale=1 {lockX=targetEnemy.x-64 lockX=clamp(lockX,oControl.camX-999,oControl.camX+200)} else {lockX=targetEnemy.x+64 lockX=clamp(lockX,oControl.camX+320-200,oControl.camX+999+320)}
-			
-	
-	lockSPD=0.07
+if animFrame=0 {animFrame=0.01 specialtimes[0]=0 specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_head}
+	selfatk.damage=0.25 selfatk.MoveType=1
+	atkcol_set(14,0,0,3.65,1,89)
+	if specialtimes[0]=0
+	{lockZ=lerp(lockZ,-96,0.1)
+	if x=clamp(lockX,oControl.camX+48,oControl.camX+320-48)
+	{lockY=lerp(lockY,targetEnemy.y,0.1)
+lockX-=4*image_xscale
 
-frame_set(0,2,0.05) if animFrame=1 sprite_index=spr_dragonmaiden_headbreath
-frame_set(1,0,0.1) 
-frame_set(2,1,0.1) 
-frame_set(3,2,0.05) 
-frame_set(4,3,0.1) 
-frame_set(5,4,0.05) 
-frame_set(6,2,0.1) if animFrame>6.5 {canmove=1}
+	} else {specialtimes[0]+=1 animFrame=1}
+	}
+	else
+	{sprite_index=spr_dragonmaiden_headbreath
+	lockX+=0.5*image_xscale
+	frame_set(1,0,0.1)
+	frame_set(2,1,0.1)
+	frame_set(3,2,0.1) if animFrame=4
+	{
+	card=instance_create_depth(x+57,y,-1,oNinjaBunCard)
+card.hspeed=6*image_xscale
+card.image_xscale=image_xscale
+card.zSpeed=6 card.sprite_index=spr_ninjabun_cardproj2 card.image_speed=0
+card.z=z-15		
+	}
+	frame_set(4,3,0.1)
+	frame_set(5,4,0.1) if animFrame=6 {if specialtimes[1]!=3 {specialtimes[1]+=1 animFrame=1}}
+	frame_set(6,0,0.1)
+	if animFrame>6.5 {anim=0 canmove=1}
+	}
+	
 	}
 	
 if anim=13 ///Change location
-{lockSPD=0.01
-	
-if animFrame=0 {animFrame=1
-specialtimes[0]=image_xscale specialtimes[1]=0 specialtimes[2]=choose(11,12)
-}
-sprite_index=spr_dragonmaiden_head image_index=2
-specialtimes[1]+=0.45
-lockX+=-specialtimes[0]*specialtimes[1]
-
-if animFrame=1
-if x!=clamp(x,oControl.camX-200,oControl.camX+320+200)
 {
-if image_xscale=1 {x=oControl.camX+320+100 image_xscale=-1}
-else {x=oControl.camX-100 image_xscale=1}
-lockY=targetEnemy.y
-animFrame=2
-}
+if animFrame=0 {animFrame=0.01 specialtimes[0]=0  lockX=x sprite_index=spr_dragonmaiden_head}
 
-if animFrame=2
-{
-lockX+=8*image_xscale 
-if x=clamp(x,oControl.camX+96,oControl.camX+320-96)
-{animFrame=2 anim=specialtimes[2]
-	if anim=11 {sprite_index=spr_dragonmaiden_headbite image_index=0}
+	if specialtimes[0]=0
+	{lockZ=lerp(lockZ,-48,0.05)
+	if x=clamp(lockX,oControl.camX-180,oControl.camX+320+180)
+	{lockY=lerp(lockY,targetEnemy.y,0.1)
+lockX-=8*image_xscale
+
+	} else {specialtimes[0]+=1 
+		image_xscale=-image_xscale
+		if image_xscale=1 lockX=oControl.camX-48 else lockX=oControl.camX+320+48
+		x=lockX
+		}
 	}
-}
-	
+	else
+	{
+lockX+=5*image_xscale
+animFrame+=0.5
+
+	if animFrame>4.5 {canmove=1 anim=0}
+	}
 }
 	
 	///Intro
@@ -323,4 +340,6 @@ if animFrame>14.5
 	
 	}
 	
-	
+	selfatk.x=x+atkAddX
+	selfatk.y=y+atkAddY
+	selfatk.z=z+atkAddZ

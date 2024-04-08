@@ -269,7 +269,7 @@ stagePose=1
 
 	anim=0
 	prevanim=0
-
+turnanim=1
 
 	charThrown=0
 
