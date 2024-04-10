@@ -24,3 +24,8 @@ specialtimes[9]=0
 
 lockPos=1
 lockSPD=1
+targetEnemy=oPlayer
+
+atkAddX=0
+atkAddY=0
+atkAddZ=0

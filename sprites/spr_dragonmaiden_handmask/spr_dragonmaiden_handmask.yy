@@ -23,7 +23,7 @@
   ],
   "name":"spr_dragonmaiden_handmask",
   "nineSlice":null,
-  "origin":9,
+  "origin":3,
   "parent":{
     "name":"6DragonMaiden",
     "path":"folders/8 - Bosses/6DragonMaiden.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":198,
+    "xorigin":0,
     "yorigin":7,
   },
   "swatchColours":null,

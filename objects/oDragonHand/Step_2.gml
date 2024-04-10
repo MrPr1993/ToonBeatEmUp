@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+if !instance_exists(oDragonMaiden) {instance_destroy() exit;}
+
+if recovery!=0 recovery-=1
+
 if targetEnemy!=-1
 if targetEnemy.dead=0 and hurt=0
 {
@@ -12,11 +16,14 @@ depth=-y
 
 if anim=0
 {
-if oControl.ignore=0
+//if oControl.ignore=0
 {
 
-if image_xscale=1 lockX=lerp(lockX,oControl.camX-10,0.5) else lockX=lerp(lockX,oControl.camX+320+10,0.5)
-y=targetEnemy.y
+if image_xscale=1 lockX=lerp(lockX,oControl.camX-200,0.5) else lockX=lerp(lockX,oControl.camX+320+200,0.5)
+lockY=targetY
+
+
+
 }
 sprite_index=spr_dragonmaiden_hand if image_index<4.75 image_index+=0.1 else image_index=3
 
@@ -35,31 +42,46 @@ if animFrame>3
 {animFrame=0
 anim=choose(11,12,13,14)
 }
-anim=11
+anim=choose(11,14,11,14)
+lockZ=0 z=0
+animFrame=0 specialtimes[0]=0  specialtimes[1]=0
 }
 
 if anim=11 ///Attack
 {
-if animFrame=0 {animFrame=0.01 specialtimes[0]=0  lockX=x sprite_index=spr_dragonmaiden_hand}
+if animFrame=0 {animFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_hand}
 	selfatk.damage=0.25 selfatk.MoveType=1
 	
-	atkcol_set(14*image_xscale,0,0,3.65,1,89)
+	atkcol_set(136,0,0,3.75,1,88)
 	
-	if specialtimes[0]=0
+if specialtimes[0]<80
+{sprite_index=spr_dragonmaiden_hand 
+if specialtimes[0]<40
+{if image_xscale=1 lockX=lerp(lockX,oControl.camX-150,0.1) else lockX=lerp(lockX,oControl.camX+320+150,0.1)}
+else
+{if image_xscale=1 lockX=lerp(lockX,oControl.camX-180,0.1) else lockX=lerp(lockX,oControl.camX+320+180,0.1)}
+lockY=lerp(lockY,targetEnemy.y,0.1)
+specialtimes[0]+=1
+}
+	
+	if specialtimes[0]=80
 	{lockZ=lerp(lockZ,-48,0.05)
 	if x=clamp(lockX,oControl.camX-180,oControl.camX+320+180)
 	{lockY=lerp(lockY,targetEnemy.y,0.1)
 lockX-=4*image_xscale
 
-	} else specialtimes[0]+=1
+	} else {animFrame=0.5 specialtimes[0]=200}
 	}
-	else
+if specialtimes[0]=200
 	{sprite_index=spr_dragonmaiden_handattack1
 	lockZ=0
 	
-	frame_set(0,0,0) if animFrame<=1 {lockX+=8*image_xscale  if x=clamp(x,targetEnemy.x-24,targetEnemy.y+24)
-	animFrame=1.5}
-	frame_set(1,0,0.25) if animFrame=clamp(animFrame,2,2.5) atk=1 else atk=0
+	frame_set(0,0,0) if animFrame<=2 {lockX+=16*image_xscale atk=1
+		
+	if (image_xscale=1 and x>targetEnemy.x-100) or (image_xscale=-1 and x<targetEnemy.x+100)
+	or (image_xscale=1 and x>oControl.camX-20) or (image_xscale=-1 and x<oControl.camX+320+20)
+	animFrame=2} else atk=0
+	frame_set(1,0,01)
 	if animFrame=2 {oControl.quakeFXTime=10}
 	frame_set(2,1,0.5)
 	frame_set(3,2,0.05)	
@@ -67,16 +89,89 @@ lockX-=4*image_xscale
 	if animFrame>4.5 {canmove=1 anim=0}
 	}}
 
-if anim=12 ///Flick
+if anim=14 ///Flick
+{atkcol_set(111+53,0,-5,2.95,1,118)
+if animFrame=0 {animFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
+atk=0
+if specialtimes[0]<160
+{sprite_index=spr_dragonmaiden_handattack2 image_index=0
+if specialtimes[0]<40
+//{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
+if image_xscale=1 {if x<oControl.camX+190 lockX=lerp(lockX,targetEnemy.x-210,0.1)}
+else {if x>oControl.camX+320-190 lockX=lerp(lockX,targetEnemy.x+210,0.1)}
+}
+lockY=lerp(lockY,targetEnemy.y,0.1)
+specialtimes[0]+=1
+}
+if specialtimes[0]=160
+{
+	frame_set(1,0,0.25) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+	frame_set(2,1,0.5)
+	frame_set(3,2,0.05)
+	frame_set(4,2,0.1)
+	if animFrame>4.5 {canmove=1 anim=0}
+}
+
 }
 
 if anim=13 ///Slam
+{atkcol_set(114,0,-2,4.35,1,50)
+
+if animFrame=0 {animFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
+atk=0
+if specialtimes[0]<160
+{sprite_index=spr_dragonmaiden_handattack2 image_index=0
+if specialtimes[0]<40
+//{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
+if image_xscale=1 {if x<oControl.camX+190 lockX=lerp(lockX,targetEnemy.x-210,0.1)}
+else {if x>oControl.camX+320-190 lockX=lerp(lockX,targetEnemy.x+210,0.1)}
+}
+lockY=lerp(lockY,targetEnemy.y,0.1)
+specialtimes[0]+=1
+
+lockZ=lerp(lockZ,-96,0.05)
+}
+if specialtimes[0]=160
+{
+	//frame_set(1,0,0.25)// if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+	if animFrame=1 {atk=1 lockZ+=specialtimes[1] z=lockZ if z>0 {animFrame=2 oControl.quakeFXTime=10 PlaySound(snd_quakeground) z=0 lockZ=0}} else atk=0
+	if animFrame=2 animFrame=3
+	
+	frame_set(2,0,0.5)
+	frame_set(3,0,0.05)
+	frame_set(4,0,0.1)
+	if animFrame>4.5 {canmove=1 anim=0}
+}
+	
 }
 
-if anim=14 ///Grab
+if anim=12 ///Grab
+{atkcol_set(145,0,-1,2.45,1,88)
+
+if animFrame=0 {animFrame=1 image_index=0 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack4}
+atk=0
+if specialtimes[0]<160
+{sprite_index=spr_dragonmaiden_handattack4 image_index=0
+if specialtimes[0]<40
+//{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
+if image_xscale=1 {if x<oControl.camX+190 lockX=lerp(lockX,targetEnemy.x-210,0.1) else specialtimes[0]=160}
+else {if x>oControl.camX+320-190 lockX=lerp(lockX,targetEnemy.x+210,0.1) else specialtimes[0]=160}
+}
+lockY=lerp(lockY,targetEnemy.y,0.1)
+specialtimes[0]+=1
+}
+if specialtimes[0]=160
+{
+	frame_set(1,0,0.25) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+	frame_set(2,1,0.5)
+	frame_set(3,1,0.05)
+	frame_set(4,0,0.1)
+	if animFrame>4.5 {canmove=1 anim=0}
+}
+
 }
 
 
@@ -100,11 +195,12 @@ comboBreak=0
 selfatk.recovery=90
 if animFrame>0.1
 Throw=0 else {image_index=0 Throw=1 grabMax=0}
-sprite_index=spr_dragonmaiden_handattack1
+sprite_index=spr_dragonmaiden_handattack4b
 if image_index<1
 image_index+=0.1
 else
-image_index+=0.1 if image_index>2 image_index=0 hspeed=0 canmove=0
+image_index+=0.1 if image_index>3 image_index=0 hspeed=0 canmove=0
+
 
 //if image_index=1 PlaySoundNoStack(snd_buffenemy4)
 
@@ -256,11 +352,11 @@ targetID=-1
 
 }
 
-if !instance_exists(oDragonMaiden) instance_destroy()
+
 
 if anim=4 or anim=5 or anim=6 or anim=7 ///Disappear
 {byetime=0
-x-=10*image_xscale	
+lockX-=10*image_xscale	
 animFrame+=0.1
 if oDragonMaiden.dead=0
 if animFrame>20 {hp=0.1 animFrame=0 anim=0} 
@@ -272,3 +368,8 @@ x=lerp(x,lockX,lockSPD);
 y=lerp(y,lockY,lockSPD);
 z=lerp(z,lockZ,lockSPD);
 }
+
+	selfatk.x=x+atkAddX
+	selfatk.y=y+atkAddY
+	selfatk.z=z+atkAddZ
+	selfatk.atk=atk

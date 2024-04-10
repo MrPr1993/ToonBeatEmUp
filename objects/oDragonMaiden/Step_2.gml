@@ -340,6 +340,9 @@ if animFrame>14.5
 	
 	}
 	
+	if dead=0
+	{
 	selfatk.x=x+atkAddX
 	selfatk.y=y+atkAddY
 	selfatk.z=z+atkAddZ
+	}
