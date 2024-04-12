@@ -100,3 +100,4 @@ z=1500
 body.z=1500 tail.z=1500 necc.z=1500
 }
 
+dircheck=-1

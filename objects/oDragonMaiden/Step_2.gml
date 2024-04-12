@@ -2,6 +2,8 @@
 // You can write your code in this editor
 depth=-y
 
+image_xscale=dircheck
+
 selfatk.SourceX=x
 
 overwriteAttack1=1
@@ -217,7 +219,7 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	animFrame=0 anim=choose(11,12)
 	
 	if (targetEnemy.x>oControl.camX+160+96 and image_xscale=1)
-	or (targetEnemy.x>oControl.camX+320-160-96 and image_xscale=-1)
+	or (targetEnemy.x<oControl.camX+320-96 and image_xscale=-1)
 	anim=13
 	
 	}
@@ -274,7 +276,7 @@ lockX-=4*image_xscale
 	frame_set(2,1,0.1)
 	frame_set(3,2,0.1) if animFrame=4
 	{
-	card=instance_create_depth(x+57,y,-1,oNinjaBunCard)
+	card=instance_create_depth(x+57*image_xscale,y,-1,oNinjaBunCard)
 card.hspeed=6*image_xscale
 card.image_xscale=image_xscale
 card.zSpeed=6 card.sprite_index=spr_ninjabun_cardproj2 card.image_speed=0
@@ -299,8 +301,8 @@ if animFrame=0 {animFrame=0.01 specialtimes[0]=0  lockX=x sprite_index=spr_drago
 lockX-=8*image_xscale
 
 	} else {specialtimes[0]+=1 
-		image_xscale=-image_xscale
-		if image_xscale=1 lockX=oControl.camX-48 else lockX=oControl.camX+320+48
+		dircheck=-dircheck
+		if dircheck=1 lockX=oControl.camX-48 else lockX=oControl.camX+320+48
 		x=lockX
 		}
 	}
@@ -346,3 +348,5 @@ if animFrame>14.5
 	selfatk.y=y+atkAddY
 	selfatk.z=z+atkAddZ
 	}
+	
+	image_xscale=dircheck

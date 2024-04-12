@@ -19,10 +19,10 @@ rangeAtk=100
 
 OneAttack=2
 
-hp=0.2
-maxhp=0.2
+hp=2
+maxhp=2
 
-height=90
+height=110
 
 specialFX=0
 
@@ -57,3 +57,7 @@ spritepos_setup(2,24,11,79)
 isBoss=1
 specialBossState=1
 
+if oControl.betatest=1
+{if keyboard_check(vk_control) {canmove=0 anim=100 specialanim=0 z=-200 ground=0}
+	
+	}

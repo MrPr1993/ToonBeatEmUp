@@ -27,22 +27,23 @@ lockY=targetY
 }
 sprite_index=spr_dragonmaiden_hand if image_index<4.75 image_index+=0.1 else image_index=3
 
+if oDragonMaiden.anim=0
+{
  byetime+=1;
  
  if oControl.betatest=1 and keyboard_check_pressed(vk_tab) byetime=260
  
 if  byetime>260 {byetime=0 animFrame=0 anim=10}
 }
+}
 
 
 if anim=10
-{animFrame+=0.1 z=0
-if x!=clamp(x,oControl.camX-90,oControl.camX+320+90) {x+=image_xscale*3}
-if animFrame>3
-{animFrame=0
+{
+if oDragonMaiden.dircheck=-1 {image_xscale=1 x=oControl.camX-90}
+else {image_xscale=-1 x=oControl.camX+320+90}
+
 anim=choose(11,12,13,14)
-}
-anim=choose(11,14,11,14)
 lockZ=0 z=0
 animFrame=0 specialtimes[0]=0  specialtimes[1]=0
 }
@@ -59,7 +60,7 @@ if specialtimes[0]<80
 if specialtimes[0]<40
 {if image_xscale=1 lockX=lerp(lockX,oControl.camX-150,0.1) else lockX=lerp(lockX,oControl.camX+320+150,0.1)}
 else
-{if image_xscale=1 lockX=lerp(lockX,oControl.camX-180,0.1) else lockX=lerp(lockX,oControl.camX+320+180,0.1)}
+{if image_xscale=1 lockX=lerp(lockX,oControl.camX-150,0.1) else lockX=lerp(lockX,oControl.camX+320+150,0.1)}
 lockY=lerp(lockY,targetEnemy.y,0.1)
 specialtimes[0]+=1
 }
@@ -98,8 +99,8 @@ if specialtimes[0]<160
 if specialtimes[0]<40
 //{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
-if image_xscale=1 {if x<oControl.camX+190 lockX=lerp(lockX,targetEnemy.x-210,0.1)}
-else {if x>oControl.camX+320-190 lockX=lerp(lockX,targetEnemy.x+210,0.1)}
+if image_xscale=1 {if x<oControl.camX+190 lockX=lerp(lockX,targetEnemy.x-180,0.1)}
+else {if x>oControl.camX+320-190 lockX=lerp(lockX,targetEnemy.x+180,0.1)}
 }
 lockY=lerp(lockY,targetEnemy.y,0.1)
 specialtimes[0]+=1
@@ -121,12 +122,12 @@ if anim=13 ///Slam
 if animFrame=0 {animFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
 atk=0
 if specialtimes[0]<160
-{sprite_index=spr_dragonmaiden_handattack2 image_index=0
+{sprite_index=spr_dragonmaiden_handattack3 image_index=0
 if specialtimes[0]<40
 //{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
-if image_xscale=1 {if x<oControl.camX+190 lockX=lerp(lockX,targetEnemy.x-210,0.1)}
-else {if x>oControl.camX+320-190 lockX=lerp(lockX,targetEnemy.x+210,0.1)}
+if image_xscale=1 {if x<oControl.camX+190 lockX=lerp(lockX,targetEnemy.x-190,0.1)}
+else {if x>oControl.camX+320-190 lockX=lerp(lockX,targetEnemy.x+190,0.1)}
 }
 lockY=lerp(lockY,targetEnemy.y,0.1)
 specialtimes[0]+=1
@@ -134,9 +135,9 @@ specialtimes[0]+=1
 lockZ=lerp(lockZ,-96,0.05)
 }
 if specialtimes[0]=160
-{
+{if animFrame<1.5 lockZ+=specialtimes[1] specialtimes[1]+=0.45
 	//frame_set(1,0,0.25)// if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
-	if animFrame=1 {atk=1 lockZ+=specialtimes[1] z=lockZ if z>0 {animFrame=2 oControl.quakeFXTime=10 PlaySound(snd_quakeground) z=0 lockZ=0}} else atk=0
+	if animFrame=1 {atk=1  z=lockZ if z>0 {animFrame=2 oControl.quakeFXTime=10 PlaySound(snd_quakeground) z=0 lockZ=0}} else atk=0
 	if animFrame=2 animFrame=3
 	
 	frame_set(2,0,0.5)
@@ -157,8 +158,8 @@ if specialtimes[0]<160
 if specialtimes[0]<40
 //{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
-if image_xscale=1 {if x<oControl.camX+190 lockX=lerp(lockX,targetEnemy.x-210,0.1) else specialtimes[0]=160}
-else {if x>oControl.camX+320-190 lockX=lerp(lockX,targetEnemy.x+210,0.1) else specialtimes[0]=160}
+if image_xscale=1 {if x<oControl.camX+100 lockX=lerp(lockX,targetEnemy.x-190,0.1) else specialtimes[0]=160}
+else {if x>oControl.camX+320-100 lockX=lerp(lockX,targetEnemy.x+190,0.1) else specialtimes[0]=160}
 }
 lockY=lerp(lockY,targetEnemy.y,0.1)
 specialtimes[0]+=1
@@ -206,8 +207,8 @@ image_index+=0.1 if image_index>3 image_index=0 hspeed=0 canmove=0
 
 if targetID!=-1 
 {
-targetID.x=x-32*image_xscale
-targetID.y=y targetID.z=z-8
+targetID.x=x+146*image_xscale
+targetID.y=y targetID.z=z-32
 targetID.GrabFrameExtra+=0.2
 if targetID.GrabFrameExtra=3.8
 targetID.GrabFrameExtra=0
@@ -369,7 +370,7 @@ y=lerp(y,lockY,lockSPD);
 z=lerp(z,lockZ,lockSPD);
 }
 
-	selfatk.x=x+atkAddX
+	selfatk.x=x+atkAddX*image_xscale
 	selfatk.y=y+atkAddY
 	selfatk.z=z+atkAddZ
 	selfatk.atk=atk
