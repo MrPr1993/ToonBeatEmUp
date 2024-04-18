@@ -41,7 +41,7 @@ if animFrame=clamp(animFrame,2,2.99){atk=1
 } else { atk=0}
 
 frame_set(3,3,0.05)
-frame_set(4,0,0.5)
+frame_set(4,4,0.5)
 if animFrame>3.5 canbeGrabbed=1
 
 if animFrame>4.5 {atk=0 canmove=1}
