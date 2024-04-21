@@ -19,6 +19,20 @@ audio_pause_sound(global.CurrentMusic)
 audio_sound_gain(global.CurrentMusic,0,0)
 }
 
+if instance_exists(oPlayer)
+{
+if p1.x>camX+160 and p2.x>camX+160 and p3.x>camX+160 and p4.x>camX+160
+allPlayersMid=1 else allPlayersMid=0
+
+if p1.x>camX+300 and p2.x>camX+300 and p3.x>camX+300 and p4.x>camX+300
+allPlayersEdge=1 else allPlayersEdge=0
+
+if (p1.canmove and p1.ground)
+and (p2.canmove and p2.ground)
+and (p3.canmove and p3.ground)
+and (p4.canmove and p4.ground)
+allPlayersMove=1 else allPlayersMove=0
+}
 
 depth=-999999999
 
@@ -74,5 +88,7 @@ else
 if !key_B
 {pauseBuffer=10 game_pause()}
 }
+
+
 }
 

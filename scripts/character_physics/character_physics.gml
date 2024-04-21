@@ -83,6 +83,8 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 {
 	if hp<=0 or hp=0 and hplayer=0
 	{
+	if canmove {canmove=0 HitType=1 hit_reaction()}
+	
 	if DeathCryOnce=0
 	{
 	DeathCryOnce=1

@@ -1,7 +1,7 @@
 /// @description Boat Area Start
 if oPlayer.x>3390
 {
-with oBlock {if object_index=oBlock y+=24}	
+
 
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0	

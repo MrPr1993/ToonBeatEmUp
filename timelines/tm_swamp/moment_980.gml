@@ -33,7 +33,7 @@ audio_stop_all()
 PlaySound(snd_break)
 
 with oPlayer
-	{
+	{sentflying=0 canBounce=0
 	fallholespr=instance_create_depth(x,y,-1,oFlashFX) with fallholespr
 	{isDepth=0 depth=7777 alarm[0]=9999 image_speed=0 sprite_index=spr_swamphole}
 	

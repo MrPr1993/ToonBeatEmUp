@@ -51,7 +51,7 @@ if shopHello!=10 shopHello+=1 else {shopHello=11
 
 if shopDialogueAlt!=1
 {
-if key_B or keyboard_check_pressed(vk_escape)
+if key_B or (keyboard_check_pressed(vk_escape) and canControl!=0)
 if shopBuy!=-1 {}//{shopBuy=-1}
 else
 {
@@ -87,7 +87,7 @@ if shopBuy!=-1
 if -key_left_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
 if key_right_pressed {if shopBuy=0 shopBuy=1 else shopBuy=0 PlaySound(snd_select)}
 
-if key_B or keyboard_check_pressed(vk_escape)
+if key_B or (keyboard_check_pressed(vk_escape) and canControl!=0)
 {shopBuy=-1 shopDialogueTime=2 shopDialogueAlt=5}
 
 if key_A  or keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("J"))

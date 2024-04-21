@@ -12,7 +12,8 @@ oPlayer.areaEntry=0
 oPlayer.hspeed=0
 oPlayer.canControl=1
 
-with oBlock {if object_index=oBlock y-=24}	
+with oBlock {y=ystart}	
+with oBlock image_yscale=2
 
 with oControl
 {

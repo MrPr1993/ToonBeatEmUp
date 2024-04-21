@@ -36,6 +36,9 @@
     "name":"spr_pianodropper",
     "path":"sprites/spr_pianodropper/spr_pianodropper.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"mask_pianodropper",
+    "path":"sprites/mask_pianodropper/mask_pianodropper.yy",
+  },
   "visible":true,
 }

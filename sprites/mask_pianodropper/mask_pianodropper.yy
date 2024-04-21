@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_pianodropper",
+  "%Name":"mask_pianodropper",
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":1,
   "bbox_right":30,
-  "bbox_top":30,
+  "bbox_top":58,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"3642440c-5d6d-4730-bbb2-acf8d7a06aee","blendMode":0,"displayName":"default","isLocked":false,"name":"3642440c-5d6d-4730-bbb2-acf8d7a06aee","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_pianodropper",
+  "name":"mask_pianodropper",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c34c62b-5493-49c4-91d0-8e9cb82124a6","path":"sprites/spr_pianodropper/spr_pianodropper.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c34c62b-5493-49c4-91d0-8e9cb82124a6","path":"sprites/mask_pianodropper/mask_pianodropper.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f7d08b5e-024b-44c0-83e2-538dd3b5d1fa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":63,
+    "yorigin":61,
   },
   "swatchColours":null,
   "swfPrecision":2.525,

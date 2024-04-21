@@ -23,7 +23,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)<120
 
 
 if anim=11 ///Bite Attack
-{
+{atkcol_set(59,0,24,2.85,1,64)
 if animFrame=0  PlaySound(snd_scientist7)
 
 canbeGrabbed=0
@@ -50,19 +50,24 @@ if animFrame>4.5 {atk=0 canmove=1}
 //?Tentacle Slaps
 if anim=12
 {
-atkcol_set(75,0,31,3.85,1,40)	
+atkcol_set(89,0,13,4.15,1,79)
 if animFrame=0 {specialcheck4=0} sprite_index=spr_scientistm_attack2
 frame_set(0,0,0.1) damage=0.1 MoveType=1
 frame_set(1,1,0.1)
 frame_set(2,2,0.2)
 frame_set(3,3,0.1)
 frame_set(4,4,0.2)
-frame_set(5,5,0.2)
-frame_set(6,6,0.1) if animFrame=clamp(animFrame,2,3) or animFrame=clamp(animFrame,5,6) {sentflying=8*image_xscale atk=1} else {sentflying=0 atk=0}
-frame_set(7,4,0.1) if animFrame>7-0.2 {if specialcheck4!=2 {animFrame=2 specialcheck4+=1}}
-frame_set(8,1,0.1)
-frame_set(9,0,0.1)
-if animFrame>9.5 canmove=1
+frame_set(5,5,0.2) //
+frame_set(6,6,0.2)
+frame_set(7,7,0.2)
+frame_set(8,8,0.2)
+frame_set(9,9,0.1)
+
+frame_set(10,9,0.1) if animFrame=clamp(animFrame,2,3.9) or animFrame=clamp(animFrame,7,8.9) {sentflying=6*image_xscale atk=1} else {sentflying=0 atk=0}
+frame_set(11,9,0.1) if animFrame>7-0.2 {if specialcheck4!=2 {animFrame=2 specialcheck4+=1}}
+frame_set(12,9,0.1)
+frame_set(13,10,0.1)
+if animFrame>13.5 canmove=1
 }
 
 
@@ -74,28 +79,28 @@ frame_set(0,0,0.125)
 frame_set(1,1,0.125)
 frame_set(2,2,0.125)
 frame_set(3,3,0.05)
-frame_set(4,4,0.25) if animFrame=5 
+frame_set(4,1,0.25) if animFrame=5 
 {
 PlaySoundNoStack(snd_scientist7)
-spit=instance_create_depth(x+48*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale
+spit=instance_create_depth(x+102*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale
 spit.sprite_index=spr_scientistm_egg spit.bounce=3
 
 }
 
 
-frame_set(5,5,0.25)
-frame_set(6,6,0.25)
-frame_set(7,5,0.25)
-frame_set(8,6,0.25)
-frame_set(9,5,0.25)
-frame_set(10,6,0.25)
-frame_set(11,5,0.25)
-frame_set(12,6,0.25)
-frame_set(13,5,0.25)
-frame_set(14,6,0.25)
-frame_set(15,5,0.25)
-frame_set(16,6,0.25)
-frame_set(17,0,0.25)
+frame_set(5,4,0.25)
+frame_set(6,5,0.25)
+frame_set(7,4,0.25)
+frame_set(8,5,0.25)
+frame_set(9,4,0.25)
+frame_set(10,5,0.25)
+frame_set(11,4,0.25)
+frame_set(12,5,0.25)
+frame_set(13,4,0.25)
+frame_set(14,4,0.25)
+frame_set(15,4,0.25)
+frame_set(16,4,0.25)
+frame_set(17,6,0.25)
 
 if animFrame>17.75 {canmove=1 atk=0}
 }
@@ -109,17 +114,17 @@ MoveType=1 damage=0.2 isCut=1 HitSound=snd_cut selfatk.HitSpark=spr_blood
 sprite_index=spr_scientistm_attack4
 
 //atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=3.5*image_xscale selfatk.image_yscale=1
-	atkcol_set(48,0,3,2.5,1,96)
+atkcol_set(0,0,1,5.85,1,152)
 	
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
-frame_set(2,1,0.05)
-frame_set(3,1,0.25) if animFrame=4 PlaySound(choose(snd_scientist5,snd_scientist6))
-frame_set(4,2+specialtimes[0],0.01)
+frame_set(2,2,0.25)
+frame_set(3,2,0.25) if animFrame=4 PlaySound(choose(snd_scientist5,snd_scientist6))
+frame_set(4,3+specialtimes[0],0.01)
 
 if animFrame=clamp(animFrame,4,4.99){
 	if !audio_is_playing(snd_swing5) PlaySound(snd_swing5)
-	atk=1 specialtimes[0]+=0.5 if specialtimes[0]=8 specialtimes[0]=0
+	atk=1 specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
 x+=specialtimes[1]
 y+=specialtimes[2]
 if x>oControl.camX+320 {x-=4 specialtimes[1]=-4}
@@ -128,29 +133,32 @@ if !place_free(x,y-1) {specialtimes[2]=2 y+=1}
 if y>oControl.camY+240 {y-=1 specialtimes[2]=-2}
 
 } else { atk=0 sentflying=0}
-frame_set(5,1,0.05)
-frame_set(6,0,0.5)
-frame_set(7,0,0.5)
+frame_set(5,5,0.25)
+frame_set(6,6,0.05)
+frame_set(7,7,0.25)
 if animFrame>6.5 canbeGrabbed=1
 
 if animFrame>7.5 {atk=0 canmove=1}
 }
 
 if anim=65
-{atkcol_set(69,0,-98,4.45,1,139)
+{atkcol_set(83,0,-158,5.85,1,194)
 sprite_index=spr_scientistm_attack5
-if animFrame=0 {specialcheck3=z-96}
+if animFrame=0 {specialcheck3=z-128 }
 
-frame_set(0,0,0.1) if animFrame=clamp(animFrame,1,6) {zSpeed=-8 z=clamp(z,specialcheck3,0)}
-frame_set(1,1,0.1)
-frame_set(2,2,0.1)
-frame_set(3,3,0.1) if animFrame=clamp(animFrame,3,3.5) atk=1 else atk=0
-frame_set(4,4,0.05)
-frame_set(5,3,0.1)
-frame_set(6,2,0.1)
-frame_set(7,1,0.1)
-frame_set(8,1,0.1)
-if animFrame>4 if ground {atk=0 canmove=1}
+frame_set(0,0,0.25) if animFrame=clamp(animFrame,3,11) {zSpeed=-16 z=clamp(z,specialcheck3,0)}
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.1) if animFrame=clamp(animFrame,3,9.2) atk=1 else atk=0
+frame_set(4,4,0.25)
+frame_set(5,5,0.1)
+frame_set(6,6,0.25)
+frame_set(7,7,0.25)
+frame_set(8,8,0.1)
+frame_set(9,9,0.1)
+frame_set(10,5,0.1)
+frame_set(11,10,0.1)
+if animFrame>11 if ground {atk=0 canmove=1}
 
 }
 

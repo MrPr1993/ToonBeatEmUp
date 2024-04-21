@@ -10,7 +10,7 @@ height=80
 specialtimes[9]=0
 
 spawnspr=spr_pianodrop
-spawnmask=mask_large
+spawnmask=mask_piano
 spawnshadow=spr_carshadow
 
 

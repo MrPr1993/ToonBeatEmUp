@@ -291,12 +291,17 @@ draw_text_transformed(8,216,string_hash_to_newline("L click to SPAWN: -"+string(
 draw_text_transformed(8,222,string_hash_to_newline("CAMERA X: -"+string(__view_get( e__VW.XView, 0 ))),0.5,0.5,0)
 if instance_exists(oEnemySpawner)
 draw_text_transformed(80,222,string_hash_to_newline(oEnemySpawner.timeline_position),0.5,0.5,0.5)
-draw_text_transformed(8,230,string_hash_to_newline("F1 reset - Down"+string(oPlayer.commandDown)+" Up"+string(oPlayer.commandUp)+" Left"+string(oPlayer.commandLeft)+" Right"+string(oPlayer.commandRight)+" Charge "+string(oPlayer.commandCharge)),0.5,0.5,0.5)
+draw_text_transformed(8,230,string_hash_to_newline("Down"+string(oPlayer.commandDown)+" Up"+string(oPlayer.commandUp)+" Left"+string(oPlayer.commandLeft)+" Right"+string(oPlayer.commandRight)+" Charge "+string(oPlayer.commandCharge)),0.5,0.5,0.5)
 
 draw_text_transformed(80,198,string_hash_to_newline("Hurt Test"+string(HurtTest)),0.5,0.5,0.5)
 if keyboard_check_pressed(ord("1")) HurtTest-=1
 if keyboard_check_pressed(ord("3")) HurtTest+=1
 
+draw_set_halign(fa_right)
+draw_text_transformed(320,216,string_hash_to_newline("P Mid"+string(allPlayersMid)),0.5,0.5,0)
+draw_text_transformed(320,222,string_hash_to_newline("Players Edge"+string(allPlayersEdge)),0.5,0.5,0)
+draw_text_transformed(320,230,string_hash_to_newline("Players Move"+string(allPlayersMove)),0.5,0.5,0)
+draw_set_halign(fa_left)
 
 draw_sprite(spr_spawnpos,0,P1SpawnX,P1SpawnY)
 }
@@ -603,6 +608,8 @@ draw_set_color(c_white) draw_set_alpha(1)
 }////Draw main game end
 
 ///Title Screen
+if room=rm_settings fpsY=3200
+
 if room=rm_titlescreen
 {
 draw_set_color(c_white) draw_set_alpha(1)
