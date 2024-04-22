@@ -20,15 +20,20 @@ foody.z=-200
 foody=instance_create(__view_get( e__VW.XView, 0)+160+32,200,oMeat)
 foody.z=-200
 
+
+
 with oEnemySpawner
+{specialSet9=0 specialSet7=-480
 specialscript=function()
 {
 specialSet7+=1
-if specialSet7>160 specialSet7=0
+if specialSet7>160 {specialSet7=0}
 layer_y("ElevatorBG",specialSet7)
 
-specialSet9+=1
-layer_y("TileBoss",specialSet9-160)
+//specialSet9+=1
+
+layer_y("TileBoss",specialSet7-160)
+}
 }
 
 }

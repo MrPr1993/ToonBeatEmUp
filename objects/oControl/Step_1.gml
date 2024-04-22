@@ -31,7 +31,7 @@ oPlayer.Cweather=1;
 if p1.x>camX+160 and p2.x>camX+160 and p3.x>camX+160 and p4.x>camX+160
 allPlayersMid=1 else allPlayersMid=0
 
-if p1.x>camX+300 and p2.x>camX+300 and p3.x>camX+300 and p4.x>camX+300
+if p1.x>camX+296 and p2.x>camX+296 and p3.x>camX+296 and p4.x>camX+296
 allPlayersEdge=1 else allPlayersEdge=0
 
 if (p1.canmove and p1.ground)

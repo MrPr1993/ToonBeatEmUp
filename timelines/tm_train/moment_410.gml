@@ -1,6 +1,7 @@
 /// @description Go To Boss
 
-if oPlayer.x>__view_get( e__VW.XView, 0 )+320-24
+if oControl.allPlayersEdge//oPlayer.x>__view_get( e__VW.XView, 0 )+320-24
+and oControl.allPlayersMove
 {
 timer_set(0)	
 

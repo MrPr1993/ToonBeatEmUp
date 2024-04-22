@@ -1,4 +1,4 @@
-if specialSet8=160
+if specialSet7=160
 {
 if specialSet9=0
 {//camMove=0 camMax=room_width
@@ -26,10 +26,8 @@ oControl.quakeFXTime=10
 with oEnemySpawner
 specialscript=function()
 {
-specialSet7+=1
-if specialSet7>160 specialSet7=0
-layer_y("ElevatorBG",specialSet7)
-layer_y("TileBoss",specialSet7)
+layer_y("ElevatorBG",0)
+layer_y("TileBoss",0)
 }
 
 }
@@ -37,15 +35,6 @@ specialscript=-1;
 }
 else
 {
-with oEnemySpawner
-specialscript=function()
-{
-specialSet7+=1
-if specialSet7>160 specialSet7=0
-layer_y("ElevatorBG",specialSet7)
-if specialSet8<160
-layer_y("TileBoss",specialSet7-160)
-}	
 
 timeline_position-=1;
 }
@@ -54,8 +43,6 @@ timeline_position-=1;
 }
 else
 {
-specialSet8+=1
-
 
 timeline_position-=1;
 }

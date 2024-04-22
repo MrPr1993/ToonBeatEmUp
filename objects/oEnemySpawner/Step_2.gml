@@ -34,6 +34,7 @@ MaxX+=roomHSpd
 }
 else
 {
+if oControl.allPlayersMid
 if MaxX<MaxXAdd
 MaxX+=oPlayer.totalSpeed
 }

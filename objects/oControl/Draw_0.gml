@@ -112,7 +112,7 @@ if mapSelX=3 and mapSelY=1 {global.StageGoing=rm_stagebeach mapSXlerp=320 mapSYl
 if mapSelX=4 and mapSelY=-1 {global.StageGoing=rm_stageufo mapSXlerp=640-248 mapSYlerp=109 mapHighScore=global.LevelHiScore[11]  if lockedMap[11]=1 mapSName="STAGE 5-B\nUFO BEYOND THE STARS"
 	draw_sprite_ext(bg_mapB,10,363,36,1,1,0,c_white,1-1*lockedMap[11])
 	}else draw_sprite_ext(bg_mapB,10,363,36,1,1,0,c_white,1-0.8*lockedMap[11])
-if mapSelX=4 and mapSelY=0 {global.StageGoing=rm_stagemermaid mapSXlerp=640-228 mapSYlerp=154 mapHighScore=global.LevelHiScore[12]  if lockedMap[12]=1 mapSName="STAGe 5\nUNDER THE SEA JAM"
+if mapSelX=4 and mapSelY=0 {global.StageGoing=rm_stagemermaid mapSXlerp=640-228 mapSYlerp=154 mapHighScore=global.LevelHiScore[12]  if lockedMap[12]=1 mapSName="STAGE 5\nUNDER THE SEA JAM"
 	draw_sprite_ext(bg_mapB,11,359,107,1,1,0,c_white,1-1*lockedMap[12])
 	}else draw_sprite_ext(bg_mapB,11,359,107,1,1,0,c_white,1-0.8*lockedMap[12])
 if mapSelX=4 and mapSelY=1 {global.StageGoing=rm_stagedesert mapSXlerp=640-204 mapSYlerp=212  mapHighScore=global.LevelHiScore[13] if lockedMap[13]=1 mapSName="STAGE 5-C\nHEATING HOT DESERT"

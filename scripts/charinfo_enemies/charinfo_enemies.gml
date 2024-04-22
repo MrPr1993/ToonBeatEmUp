@@ -168,7 +168,7 @@ enemy_switch("MS.MANA",0)
 break;
   case 12: hp=0.3
  idlestyle=1 enemyID=37
- charinfo_set(16,spr_harpye_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,61,"WINGY",
+ charinfo_set(16,spr_harpye_stand,2,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,61,"WINGY",
 "They take on the skies with fashion sense, and will aim those who they will love to bother as they tackle them down.")
 if dataPal=2
 enemy_switch("ICARA",0)
@@ -222,7 +222,7 @@ break;
   
   ////Paintings
   hp=0.5 enemyID=48
-  paintingSpr=spr_painting1
+  paintingSpr=spr_painting1 frameSpr=spr_painting_base
  charinfo_set(12,spr_painting_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ALBUS",
 "Painting.")
 
@@ -237,21 +237,21 @@ break;
 
 ///Hieroglyphs
 	    if dataPal=4
-		{paintingSpr=spr_heye enemyID=125
- charinfo_set(12,spr_hieroglyph_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"HORUS",
+		{paintingSpr=spr_heye enemyID=125 frameSpr=spr_hieroglyph_base
+ charinfo_set(12,spr_hieroglyph_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"HORUS",
 "The eye of Horus.")}
 	    if dataPal=5
-		{paintingSpr=spr_heye enemyID=126
- charinfo_set(12,spr_hieroglyph_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"SCARAB",
-"The eye of Horus.")}
+		{paintingSpr=spr_heys enemyID=126 frameSpr=spr_hieroglyph_base 
+ charinfo_set(12,spr_hieroglyph_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"SCARAB",
+"The scarab.")}
 	    if dataPal=6
-		{paintingSpr=spr_heyankh enemyID=127
- charinfo_set(12,spr_hieroglyph_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ANKH",
-"The eye of Horus.")}
+		{paintingSpr=spr_heyankh enemyID=127 frameSpr=spr_hieroglyph_base
+ charinfo_set(12,spr_hieroglyph_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ANKH",
+"The ankh.")}
 	    if dataPal=7
-		{paintingSpr=spr_heya enemyID=128
- charinfo_set(12,spr_hieroglyph_base,3,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ANUBIS",
-"The eye of Horus.")}
+		{paintingSpr=spr_heya enemyID=128 frameSpr=spr_hieroglyph_base
+ charinfo_set(12,spr_hieroglyph_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ANUBIS",
+"The symbol of anubis.")}
 
 break;
 

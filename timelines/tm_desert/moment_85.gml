@@ -1,5 +1,5 @@
 /// @description Hit the Quicksand
-if oPlayer.ground and oPlayer.canmove
+if oControl.allPlayersMove
 {timer_set(0)
 	
 oControl.quakeFXTime=10
@@ -33,7 +33,7 @@ with oPlayer
 weaponanim(weaponspr,weaponIndex,99999,99999,0,c_white)
 areaEntry=1 
 if oTrainFXSpot.Train1Y<90
-dust_make(x+choose(-random(16),random(16)),y+1,z+oTrainFXSpot.Train1Y,0,0,0)
+dust_make(x+choose(-random(16),random(16)),y+1,z-oTrainFXSpot.Train1Y,0,0,0)
 }
 
 if oTrainFXSpot.Train1Y>104/4

@@ -99,7 +99,13 @@ draw_vertex_texture(-50, 240, 0, 1);
 draw_vertex_texture(320+50, 240, 1, 1);
 draw_primitive_end();
 }
-
+else
+{
+draw_set_color(c_black)
+draw_rectangle(-999,-999,-1,999,false)
+draw_rectangle(320,-999,999,999,false)
+draw_set_color(c_white)
+}
 
 if room=rm_loading
 {draw_set_color(c_white) draw_set_halign(fa_center) draw_set_font(global.scorefont)
