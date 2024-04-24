@@ -3,6 +3,9 @@ function character_release(argument0, argument1, argument2, argument3, argument4
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
+	
+	if !place_free(x,y+1)
+	targetID.y=y
 
 	with targetID
 	{

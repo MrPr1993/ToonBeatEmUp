@@ -3,6 +3,9 @@
 function soundtest_draw(){
 if room=rm_soundtest
 {fpsY=8 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)
+
+
+	
 controller_setup()
 
 draw_sprite(bg_soundtest,0,0,0)
@@ -176,7 +179,7 @@ if key_A songSPD=1
 if -key_left if songSPD>0.01 songSPD-=0.01
 if key_right if songSPD<5 songSPD+=0.01
 }
-
+audio_sound_gain(playingSound,global.BGMvolume/100,0)
 	audio_sound_pitch(playingSound,songSPD)
 	
 if songplaying!=-1
