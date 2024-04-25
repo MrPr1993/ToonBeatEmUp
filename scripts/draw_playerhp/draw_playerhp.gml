@@ -220,10 +220,14 @@ pal_swap_reset();
 shader_reset()
 
 draw_set_font(global.scorefont)
+
+if object_index=oPlayer
+{
 if string_length(name)<=4
 draw_text(25,12,string_hash_to_newline(name))
 else
 draw_text_transformed(25,12,string_hash_to_newline(name),0.75,1,0)
+}
 draw_set_font(-1)
 draw_set_color(c_black)///Super Bar
 if super>0

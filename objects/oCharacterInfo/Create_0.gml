@@ -176,4 +176,8 @@ customText4=-1
 languagetext[40]=0; ///First 10 will be for the setting stuff
 language_check();
 
+cRed=0.0;
+cBlue=0.0;
+cGreen=0.0;
+
 eyeReaction=0 eyeX=0 eyeY=0

@@ -26,8 +26,8 @@ void main()
     }
 
     gl_FragColor = source * v_vColour;
-	gl_FragColor.r = source.r * vecRed;
-	gl_FragColor.b = source.b * vecBlue;
-	gl_FragColor.g = source.g * vecGreen;
+	gl_FragColor.r = source.r + vecRed;
+	gl_FragColor.b = source.b + vecBlue;
+	gl_FragColor.g = source.g + vecGreen;
 	
 }

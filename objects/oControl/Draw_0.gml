@@ -255,13 +255,38 @@ gpu_set_texfilter(filtermode);
 
 //draw_sprite_ext(spr_galleryimg1,galleryNO,pictureX,pictureY,1*pictureZoom,1*pictureZoom,0,c_white,1)
 
-var imgexpand=((sprite_get_width(currentimagespr)/1280)*300)/48;
+var imgexpand=0//((sprite_get_width(currentimagespr)/1280)*300)/48;
+
+imgexpand=6
+
+var imgexpandX=sprite_get_width(currentimagespr);
+var imgexpandY=sprite_get_height(currentimagespr);
+var imgexpandX2=sprite_get_width(currentimagespr);
+var imgexpandY2=sprite_get_height(currentimagespr);
+
+if imgexpandX>imgexpandY
+{
+imgexpandX=clamp(imgexpandX,0,320)
+imgexpandY=(imgexpandY2/imgexpandX2)*imgexpandX
+}
+else
+{
+imgexpandY=clamp(imgexpandY,0,320)
+imgexpandX=(imgexpandX2/imgexpandY2)*imgexpandY
+}
 
 draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(currentimagespr,0));
-draw_vertex_texture((-(sprite_get_width(currentimagespr)/2)*pictureZoom)*imgexpand+pictureX, (-(sprite_get_height(currentimagespr)/2)*pictureZoom)*imgexpand+pictureY, 0, 0);
-draw_vertex_texture(((sprite_get_width(currentimagespr)/2)*pictureZoom)*imgexpand+pictureX, (-(sprite_get_height(currentimagespr)/2)*pictureZoom)*imgexpand+pictureY, 1, 0);
-draw_vertex_texture((-(sprite_get_width(currentimagespr)/2)*pictureZoom)*imgexpand+pictureX, ((sprite_get_height(currentimagespr)/2)*pictureZoom)*imgexpand+pictureY, 0, 1);
-draw_vertex_texture(((sprite_get_width(currentimagespr)/2)*pictureZoom)*imgexpand+pictureX, ((sprite_get_height(currentimagespr)/2)*pictureZoom)*imgexpand+pictureY, 1, 1);
+
+draw_vertex_texture((-(imgexpandX/2)*pictureZoom)*imgexpand+pictureX, (-(imgexpandY/2)*pictureZoom)*imgexpand+pictureY, 0, 0);
+draw_vertex_texture(((imgexpandX/2)*pictureZoom)*imgexpand+pictureX, (-(imgexpandY/2)*pictureZoom)*imgexpand+pictureY, 1, 0);
+draw_vertex_texture((-(imgexpandX/2)*pictureZoom)*imgexpand+pictureX, ((imgexpandY/2)*pictureZoom)*imgexpand+pictureY, 0, 1);
+draw_vertex_texture(((imgexpandX/2)*pictureZoom)*imgexpand+pictureX, ((imgexpandY/2)*pictureZoom)*imgexpand+pictureY, 1, 1);
+
+
+//draw_vertex_texture((-(sprite_get_width(currentimagespr)/2)*pictureZoom)*imgexpand+pictureX, (-(sprite_get_height(currentimagespr)/2)*pictureZoom)*imgexpand+pictureY, 0, 0);
+//draw_vertex_texture(((sprite_get_width(currentimagespr)/2)*pictureZoom)*imgexpand+pictureX, (-(sprite_get_height(currentimagespr)/2)*pictureZoom)*imgexpand+pictureY, 1, 0);
+//draw_vertex_texture((-(sprite_get_width(currentimagespr)/2)*pictureZoom)*imgexpand+pictureX, ((sprite_get_height(currentimagespr)/2)*pictureZoom)*imgexpand+pictureY, 0, 1);
+//draw_vertex_texture(((sprite_get_width(currentimagespr)/2)*pictureZoom)*imgexpand+pictureX, ((sprite_get_height(currentimagespr)/2)*pictureZoom)*imgexpand+pictureY, 1, 1);
 
 
 //draw_vertex_texture(-(sprite_get_width(currentimagespr)/2)*pictureZoom+pictureX, -(sprite_get_height(currentimagespr)/2)*pictureZoom+pictureY, 0, 0);

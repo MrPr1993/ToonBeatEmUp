@@ -19,9 +19,9 @@ if carMode=0
 if weaponspr!=-1 and weaponBack=1
 {pal_swap_set(weapon_pal_sprite,weapon_pal,false);
 if weaponFlash<=1 
-{shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),2.0)
-shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),0.5)	
-shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),0.5)	
+{shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),0.5)
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),-1.0)	
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),-1.0)	
 }//shader_set(shd_white_sprite);
 //else
 
@@ -42,9 +42,9 @@ draw_character()
 if weaponspr!=-1 and weaponBack=0
 {pal_swap_set(weapon_pal_sprite,weapon_pal,false);
 if weaponFlash<=1 
-{shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),2.0)
-shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),0.5)	
-shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),0.5)	
+{shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),0.5)
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),-1.0)	
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),-1.0)	
 }//shader_set(shd_white_sprite);
 //else
 
