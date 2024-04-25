@@ -868,6 +868,7 @@ atkcol_set(24,0,25,1.55,1,52)
 	targetID.x=x
 	if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
+	targetID.y=y
 flashFX(x+39*image_xscale,y,z-77,spr_hitflash,0,0.5,0,1,1,c_white,1)
 	with targetID
 	{
@@ -892,6 +893,7 @@ flashFX(x+39*image_xscale,y,z-77,spr_hitflash,0,0.5,0,1,1,c_white,1)
 	{
 	if targetID.dead=1
 	{throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+		if !place_free(targetID.x,targetID.y+1)	targetID.y=y-1
 	character_release(0,-4,2*image_xscale,0,3,5)}}
 	}
 

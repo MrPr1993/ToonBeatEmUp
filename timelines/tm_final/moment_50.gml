@@ -3,18 +3,17 @@
 if __view_get( e__VW.XView, 0 )>=3680-2-320-240
 {
 
-en1=instance_create_depth(3190,160,-1,oAreaSpawner)
-en2=instance_create_depth(3320,160,-1,oAreaSpawner)
-en3=instance_create_depth(3448,160,-1,oAreaSpawner)
+
 with oAreaSpawner
 {spawnX=0 ///768
 MaxSpawnFrame=0 visible=1
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
+FXtype=5 canDraw=1 FrameVis=1 hasFake=0 //sprite_index=spr_doortrap
 enemyMax=0}
-en1.enemytype0=oWrestler
-en2.enemytype0=oBoxer with en2 {name0="MS.JAB"}
-with en3 {enemytype0=oWrestler name0="MS.CRUSH" pal0=7}
-name0=-1
+en1.enemytype0=oRobotBurn
+en2.enemytype0=oRobot// with en2 {name0="MS.JAB"}
+with en3 {enemytype0=oRobotIce //name0="MS.CRUSH" pal0=7
+	}
+//name0=-1
 }
 else
 {

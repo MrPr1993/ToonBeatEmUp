@@ -26,6 +26,14 @@ with en4 {image_xscale=1 canAttack=5 alarm[1]=60 enemy_switch("MR.PROWL",0)}
 en5=instance_create(__view_get( e__VW.XView, 0)-64,2008+16,oEnemy1B)
 with en5 {enemy_switch("MR.RON",0) image_xscale=1 canAttack=5 alarm[1]=60 weapon_add("PIPE")}	
 
+en1=instance_create_depth(3192,160,-1,oAreaSpawner)
+en2=instance_create_depth(3320,160,-1,oAreaSpawner)
+en3=instance_create_depth(3448,160,-1,oAreaSpawner)
+
+with oAreaSpawner
+{spawnX=999999 sprite_index=spr_doorzep visible=1
+	MaxSpawnFrame=5.5 FrameSpd=0.25 FrameVis=1 FXtype=5
+}
 
 }
 else
