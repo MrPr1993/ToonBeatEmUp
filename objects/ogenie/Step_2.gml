@@ -159,40 +159,41 @@ if anim=100
 
 if animFrame=0 {sprite_index=spr_genie_lamp}
 if specialanim=0
-{sprite_index=spr_genie_intro if animFrame=0 PlaySound(snd_genie1)
-frame_set(0,0,0.01) if animFrame=1 {PlaySound(snd_steal) zSpeed=-2}
-frame_set(1,0,0.01) if animFrame=2 {PlaySound(snd_steal) zSpeed=-2}
-frame_set(2,0,0.01) if animFrame=3
+{sprite_index=spr_genie_lamp
+frame_set(0,0,0.02) if animFrame=1 {PlaySound(snd_genie1) PlaySound(snd_steal) zSpeed=-2}
+frame_set(1,0,0.02) if animFrame=2 {PlaySound(snd_steal) zSpeed=-2}
+frame_set(2,0,0.02) if animFrame=3
 {animFrame=0 specialanim=1}
 }
 if specialanim=1
-{
+{sprite_index=spr_genie_intro
 frame_set(0,0,0.25) if animFrame=0 PlaySound(snd_genie8)
-frame_set(1,0,0.25)
-frame_set(2,0,0.25)
-frame_set(3,0,0.25)
-frame_set(4,0,0.25)
-frame_set(5,0,0.25)
-frame_set(6,0,0.25)
-frame_set(7,0,0.25)
-frame_set(8,0,0.25)
-frame_set(9,0,0.25)
-frame_set(10,0,0.25)
-frame_set(11,0,0.25) if animFrame=12 {PlaySound(snd_genie2)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.25)
+frame_set(4,4,0.25)
+frame_set(5,5,0.25)
+frame_set(6,6,0.25)
+frame_set(7,7,0.25)
+frame_set(8,8,0.25)
+frame_set(9,9,0.25)
+frame_set(10,10,0.25)
+frame_set(11,11,0.25) if animFrame=12 {PlaySound(snd_genie2)
 	PlaySound(snd_explosion) oControl.quakeFXTime=10
 	}
-frame_set(12,0,0.25)
-frame_set(13,0,0.25)
-frame_set(14,0,0.25)
-frame_set(15,0,0.25)
-frame_set(16,0,0.25) 
-frame_set(17,0,0.25)
-frame_set(18,0,0.25)
-frame_set(19,0,0.01)
-frame_set(20,0,0.25)
-frame_set(21,0,0.25)
-frame_set(22,0,0.25)
-frame_set(23,0,0.25)
+frame_set(12,12,0.25)
+frame_set(13,13,0.25)
+frame_set(14,14,0.25)
+frame_set(15,15,0.25)
+frame_set(16,16,0.25) 
+frame_set(17,17,0.25)
+frame_set(18,18,0.25)
+frame_set(19,19,0.01)
+frame_set(20,20,0.25)
+frame_set(21,21,0.25)
+frame_set(22,22,0.25)
+frame_set(23,23,0.25)
+if animFrame>22.5 {canmove=1 animFrame=0 anim=0}
 }
 
 }

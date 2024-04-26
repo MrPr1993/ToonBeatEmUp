@@ -10,11 +10,23 @@ if __view_get( e__VW.XView, 0 )>rangeX+rangeXAdd if spawned=0 {PlaySound(snd_ste
 
 z+=zSpeed
 
+if spawned=0
+{
+if nopainting=1 {nopainting=2 frameSprAppear=frameSpr frameSpr=mask_none}
+
+
+nopainting=0
+frameSprAppear=0
+
+}
 
 
 if spawned=1
-{visible=1
+{visible=1 
 	shadow=spr_shadow
+	
+if nopainting=2 frameSpr=frameSprAppear
+	
 spawned=2 zSpeed=spawnSpeedZ depth=-y
 }
 
@@ -23,7 +35,7 @@ if spawned=2
 	if z>0 if ground=0 {spawned=3 ground=1 zSpeed=0 z=0 shadow=-1
 		
 		spawn=instance_create_depth(x,y+spawnYAdd,-1,spawnEnemy) if name!=-1 spawn.name=name
-		spawn.z=z spawn.my_pal_sprite=my_pal_sprite spawn.current_pal=current_pal
+		spawn.z=z spawn.my_pal_sprite=my_pal_sprite spawn.current_pal=current_pal spawn.image_xscale=1
 		if enemyID!=-1 spawn.enemyID=enemyID
 		if hp!=-1
 		{spawn.hp=hp; spawn.maxhp=maxhp;}

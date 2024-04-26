@@ -3,8 +3,8 @@ if oPlayer.x>__view_get( e__VW.XView, 0 )+320-24
 timer_set(0)	
 
 
-bos=instance_create_depth(9700-160,144,-1,oFlashFX)
-bos.sprite_index=spr_genie_stand bos.image_speed=0 bos.alarm[0]=-1;
+//bos=instance_create_depth(9700-160,144,-1,oFlashFX)
+//bos.sprite_index=spr_genie_stand bos.image_speed=0 bos.alarm[0]=-1;
 
 with oPlayer
 {canControl=0 areaEntry=1

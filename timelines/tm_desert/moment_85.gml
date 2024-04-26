@@ -32,7 +32,7 @@ with oPlayer
 {if areaEntry=0 {PlaySound(DeathCry)}
 weaponanim(weaponspr,weaponIndex,99999,99999,0,c_white)
 areaEntry=1 
-if oTrainFXSpot.Train1Y<90
+if oTrainFXSpot.Train1Y<45
 dust_make(x+choose(-random(16),random(16)),y+1,z-oTrainFXSpot.Train1Y,0,0,0)
 }
 

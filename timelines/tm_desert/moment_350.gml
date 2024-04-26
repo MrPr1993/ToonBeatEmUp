@@ -21,6 +21,8 @@ spawner_followset("WaveSet1",0,9700,1)
 
 with oControl MusicFade=1
 
+enb=instance_create_depth(9630+32,228,-1,oGenieMaster)
+enb.specialcheck[1]=1
 }
 else
 {

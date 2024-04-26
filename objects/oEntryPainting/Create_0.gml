@@ -9,8 +9,11 @@ visible=1
 
 	spawnSpeedZMax=8
 	spawnFall=spr_burglar_jump
+			
+nopainting=0
 	
 frameSpr=spr_painting_base
+frameSprAppear=frameSpr
 paintingSpr=spr_painting1
 spawnEnemy=oPainting
 	

@@ -1,6 +1,6 @@
 /// @description Pyramid Area - Hieroglyphs
 
-if __view_get( e__VW.XView, 0 )>=5896-2-320
+if __view_get( e__VW.XView, 0 )>=5896-2-320+16
 {PlaySound(snd_stonebreakl)
 oControl.quakeFXTime=10
 

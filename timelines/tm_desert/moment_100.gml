@@ -18,7 +18,7 @@ camMove=1
 
 with oPlayer
 {hspeed=0
-
+image_xscale=1
 areaEntry=0 z=-200 
 canControl=1
 canmove=0

@@ -77,4 +77,6 @@ specialBossState=1
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
-if oControl.betatest if keyboard_check(vk_control) {canmove=10 anim=100}
+if oControl.betatest if keyboard_check(vk_control) {canmove=0 anim=100
+	if keyboard_check(vk_shift) {instance_create_depth(x,y,-1,oGenieMaster); instance_destroy();}
+	}
