@@ -1,4 +1,4 @@
-if oPlayer.x>__view_get( e__VW.XView, 0 )+320-18
+if oControl.allPlayersEdge and oControl.allPlayersMove
 {timer_set(0)
 
 

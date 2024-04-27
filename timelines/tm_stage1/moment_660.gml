@@ -1,6 +1,8 @@
 /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 if __view_get( e__VW.XView, 0 )>=2847//8
 {
+if oControl.allPlayersEdge and oControl.allPlayersMove
+{
 oPlayer.canControl=0
 oPlayer.areaEntry=1
 
@@ -14,9 +16,9 @@ else
 {
 timeline_position-=1
 }
-
-
-
+}
+else
+timeline_position-=1
 
 
 

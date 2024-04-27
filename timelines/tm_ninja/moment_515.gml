@@ -1,4 +1,5 @@
-if oPlayer.x>4840
+//if oPlayer.x>4840
+if oControl.allPlayersEdge and oControl.allPlayersMove
 {timer_set(0)
 with oPlayer
 {canControl=0 areaEntry=1

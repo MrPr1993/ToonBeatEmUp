@@ -16,7 +16,7 @@
 
 
 /// @description Hit the Quicksand
-if oPlayer.ground and oPlayer.canmove
+if oControl.allPlayersMove
 {timer_set(0)
 
 
@@ -25,10 +25,10 @@ with oPlayer {areaEntry=1 canControl=0 canmove=0 key_left=0 key_right=0 key_up=0
 
 
 sandstorm=instance_create_depth(0,0,-1,oCameoChar)
-
+PlaySound(snd_tremor2)
 
 with sandstorm {newscript=function()
-{specialcheck[8]+=0.5
+{specialcheck[8]+=0.5 
 oControl.quakeFXTime=10
 with oPlayer
 {
@@ -42,19 +42,24 @@ if character=3 sprite_index=spr_sofia_lookaround
 if specialcheck[8]=52
 {with oPlayer
 	{	
-	dust_make(x,y,0,1,0,0)
-dust_make(x,y,0,-1,0,0)
-dust_make(x,y,0,0,-0.5,0)
-dust_make(x,y,0,0,0.5,0)
-dust_make(x,y,0,1,-0.5,0)
-dust_make(x,y,0,1,0.5,0)
-dust_make(x,y,0,-1,-0.5,0)
-dust_make(x,y,0,-1,0.5,0)
+dust_make_ext(x,y,0,1,0,0,spr_dust,3)
+dust_make_ext(x,y,0,-1,0,0,spr_dust,3)
+dust_make_ext(x,y,0,0,-0.5,0,spr_dust,3)
+dust_make_ext(x,y,0,0,0.5,0,spr_dust,3)
+dust_make_ext(x,y,0,1,-0.5,0,spr_dust,3)
+dust_make_ext(x,y,0,1,0.5,0,spr_dust,3)
+dust_make_ext(x,y,0,-1,-0.5,0,spr_dust,3)
+dust_make_ext(x,y,0,-1,0.5,0,spr_dust,3)
 	}
-
+PlaySound(snd_explosion) PlaySound(snd_splash3) with oPlayer event_user(11)
 }
 
-if specialcheck[8]>52 {oPlayer.z-=32 with oPlayer sprite_index=BDanceSpr}
+if specialcheck[8]>52 {oPlayer.z-=32 with oPlayer {sprite_index=BDanceSpr
+
+
+dust_make_ext(x,y,0,0,0,-32,spr_dustmid,3) dustmk.image_speed=0.1
+	
+	}}
 
 
 }

@@ -1,4 +1,5 @@
-if oPlayer.ground and oPlayer.canmove
+//if oPlayer.ground and oPlayer.canmove
+if oControl.allPlayersMove
 {timer_set(0)
 oPlayer.canControl=0 with oPlayer
 	{key_left=0 key_right=0 key_up=0 key_down=0

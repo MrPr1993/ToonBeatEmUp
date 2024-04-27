@@ -1,4 +1,5 @@
 ///@description Plane Area
+//if oPlayer.ground and oPlayer.anim!=21
 if oPlayer.ground and oPlayer.anim!=21
 {
 oEnemySpawner.roomHSpd=8

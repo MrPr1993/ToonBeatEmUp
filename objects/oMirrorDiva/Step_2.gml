@@ -46,7 +46,7 @@ if anim=15 {ground=0 zSpeed=-4}
 
 if anim=9001 ///Running attack
 {sprite_index=RunSpr 
-if sentflying=4*image_xscale
+sentflying=4*image_xscale
 animFrame+=0.1
 image_index+=0.2
 

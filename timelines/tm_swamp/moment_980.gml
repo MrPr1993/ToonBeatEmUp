@@ -6,7 +6,7 @@ if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
 {timer_set(0)
 
 oControl.quakeFXTime=10
-	
+	PlaySound(snd_woodbreakm)
 with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=999999 image_index=0 sprite_index=qSandSpr}
 with oShadowFX visible^=1
 quicksnd=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oWaterFX) with quicksnd
@@ -26,7 +26,7 @@ weaponanim(weaponspr,weaponIndex,99999,99999,0,c_white)
 areaEntry=1
 }
 
-if specialcheck[8]=52
+if specialcheck[8]=26
 {
 audio_stop_all()	
 
@@ -52,7 +52,7 @@ dust_make(x,y,0,-1,0.5,0)
 
 }
 
-if specialcheck[8]>=52
+if specialcheck[8]>=26
 {
 
 with oPlayer

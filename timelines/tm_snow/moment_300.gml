@@ -1,6 +1,6 @@
 if specialSet8!=32
 {
-
+PlaySound(snd_mirrorfx1)
 
 boss=instance_create_depth(bos.x,bos.y,-1,oMirrorLady)
 with boss

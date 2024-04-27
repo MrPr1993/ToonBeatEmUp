@@ -40,7 +40,7 @@ if anim=10
 {
 sprite_index=spr_mirrorlady_attack
 frame_set(0,0,0.1)
-frame_set(1,1,0.1) if animFrame=2 {oControl.quakeFXTime=10 enemyset+=1 spawnenemyscript()}
+frame_set(1,1,0.1) if animFrame=2 {PlaySound(snd_thunderclap2) PlaySound(snd_mirrorfx2) oControl.quakeFXTime=10 enemyset+=1 spawnenemyscript()}
 frame_set(2,2,0.1)
 frame_set(3,1,0.05)
 frame_set(4,0,0.1)

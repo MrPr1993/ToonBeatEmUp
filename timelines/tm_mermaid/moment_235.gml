@@ -23,11 +23,13 @@ alarm[0]=180
 boss=instance_create_depth(6430,154,-1,oPrince)
 with boss {canmove=0 anim=100}
 
+PlaySound(snd_fall)
+
 with oPlayer
 {hspeed=0
 	
 	 image_xscale=1
-
+canBounce=0
 areaEntry=0 z=-400 
 //canControl=1
 canmove=0

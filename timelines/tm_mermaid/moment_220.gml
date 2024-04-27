@@ -16,12 +16,12 @@
 
 
 /// @description Hit the Quicksand
-if oPlayer.ground and oPlayer.canmove
+if oControl.allPlayersMove
 {timer_set(0)
 
 PlaySound(snd_shrink)
 	
-with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=0}
+with oPlayer {canControl=0 canBounce=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=0}
 //with oShadowFX visible^=1
 
 sandstorm=instance_create_depth(0,0,-1,oCameoChar)

@@ -23,7 +23,7 @@ with oPlayer
 {hspeed=0
 	
 	 image_xscale=1
-
+canBounce=0
 areaEntry=0 z=-400 
 //canControl=1
 canmove=0

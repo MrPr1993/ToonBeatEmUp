@@ -1,6 +1,7 @@
 ///@description Fun House
 
-if oPlayer.x>__view_get( e__VW.XView, 0 )+320-24
+//if oPlayer.x>__view_get( e__VW.XView, 0 )+320-24
+if oControl.allPlayersEdge and oControl.allPlayersMove
 {timer_set(0)
 with oPlayer
 {canControl=0 areaEntry=1

@@ -10,20 +10,22 @@ and !instance_exists(en8)
 and !instance_exists(en9)
 and specialSet6=300
 {
+	if oControl.allPlayersMove
+	{
 if specialSet7=0
 {//camMove=0 camMax=room_width
-
-foody=instance_create(__view_get( e__VW.XView, 0)+160-32,200,oBurger)
-foody.z=-200
-foody=instance_create(__view_get( e__VW.XView, 0)+160,200,oPizza)
-foody.z=-200
-foody=instance_create(__view_get( e__VW.XView, 0)+160+32,200,oMeat)
-foody.z=-200
+timer_set(0)
+//foody=instance_create(__view_get( e__VW.XView, 0)+160-32,200,oBurger)
+//foody.z=-200
+//foody=instance_create(__view_get( e__VW.XView, 0)+160,200,oPizza)
+//foody.z=-200
+//foody=instance_create(__view_get( e__VW.XView, 0)+160+32,200,oMeat)
+//foody.z=-200
 
 
 
 with oEnemySpawner
-{specialSet9=0 specialSet7=-480
+{specialSet9=0 specialSet7=-240
 specialscript=function()
 {
 specialSet7+=1
@@ -40,6 +42,7 @@ layer_y("TileBoss",specialSet7-160)
 else
 {
 timeline_position-=1;
+}
 }
 
 

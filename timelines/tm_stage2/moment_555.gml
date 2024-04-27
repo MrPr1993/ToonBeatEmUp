@@ -1,4 +1,5 @@
-if oPlayer.x>2200
+//if oPlayer.x>2200
+if oControl.allPlayersEdge and oControl.allPlayersMove
 {
 with oPlayer
 {canControl=0 areaEntry=1
