@@ -11,7 +11,7 @@ with oControl {//camMove=0 camMax=room_width
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,4400,1)
 
-en1=instance_create(4136, 192,oAreaSpawner) with en1
+en5=instance_create(4136, 192,oAreaSpawner) with en5
 {
 spawnX=4136-240 ///768
 MaxSpawnFrame=0 visible=1

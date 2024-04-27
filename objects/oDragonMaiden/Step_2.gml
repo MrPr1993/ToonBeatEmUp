@@ -317,7 +317,26 @@ animFrame+=0.5
 	
 	///Intro
 	if anim=100{immune=1
-if animFrame=0 {shadowSpr=mask_none  sprite_index=mask_none image_xscale=1}
+if animFrame=0 {shadowSpr=mask_none  sprite_index=mask_none image_xscale=1
+vspeed=0
+lockY=y;
+lockZ=0;
+body.x=oControl.camX+160
+		lockX=x;
+x=body.x tail.x=x lockPos=0 isdepth=0 depth=16777213
+canmove=0
+z=1500
+body.z=1500 tail.z=1500 necc.z=1500
+ tail.sprite_index=spr_dragonmaiden_tail
+tail.isDepth=0 tail.depth=16777214 tail.shadow=mask_none
+////Body Script
+body.sprite_index=spr_dragonmaiden_body3
+body.isDepth=0 body.depth=16777213 body.shadow=mask_none body.image_speed=0
+
+necc.sprite_index=spr_dragonmaiden_headded
+
+	
+	}
 frame_set(0,0,0.01) if animFrame=1 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
 frame_set(1,0,0.01) if animFrame=2 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
 frame_set(2,0,0.01) if animFrame=3 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
@@ -338,7 +357,7 @@ frame_set(12,0,0.2)
 frame_set(13,0,0.2)
 frame_set(14,0,0.01)
 if animFrame>14.5
-{immune=0 anim=0 lockPos=1 canmove=1}
+{lockY=y lockZ=0 immune=0 anim=0 lockPos=1 canmove=1}
 	
 	}
 	

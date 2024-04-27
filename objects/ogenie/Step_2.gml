@@ -189,10 +189,9 @@ frame_set(16,16,0.25)
 frame_set(17,17,0.25)
 frame_set(18,18,0.25)
 frame_set(19,19,0.01)
-frame_set(20,20,0.25)
+frame_set(20,20,0.25) if animFrame=21 dust_make_ext(x,y+2,z-10,0,0,0,spr_dustmid,4)
 frame_set(21,21,0.25)
 frame_set(22,22,0.25)
-frame_set(23,23,0.25)
 if animFrame>22.5 {canmove=1 animFrame=0 anim=0}
 }
 

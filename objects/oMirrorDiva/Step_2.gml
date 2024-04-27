@@ -1,6 +1,10 @@
 enemy_endstep()
 throw_step()
 
+cRed=-0.25;
+cBlue=0.0;
+cGreen=-0.25;
+
 
 overwriteAttack=1
 overwriteAttack1=1

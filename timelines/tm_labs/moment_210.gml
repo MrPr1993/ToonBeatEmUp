@@ -3,11 +3,46 @@ if specialSet7=160
 if specialSet9=0
 {//camMove=0 camMax=room_width
 //////// Mark for boss area
+PlaySound(snd_shocked2)
 
+bosscreen=instance_create_depth(7728,32,-1,oCameoChar) with bosscreen
+{sprite_index=spr_labscreen isDepth=0 depth=16777208
 
+anim=9999 shadow=-1
 
-boss=instance_create_depth(oControl.camX+320+32,220,-1,oScientist)
-with boss {canmove=0 anim=100 image_xscale=-1 specialanim=3}
+newscript=function()
+{
+if specialcheck[1]=0
+{
+image_index+=0.25 if image_index=3 image_index=0
+animFrame+=0.25
+if animFrame>20 {animFrame=0 specialcheck[1]=1 image_index=3 PlaySound(snd_dastardly1)}
+}
+if specialcheck[1]=1
+{
+image_index+=0.2 if image_index=6 image_index=3
+animFrame+=0.1
+if animFrame>38 {animFrame=0 specialcheck[1]=2 image_index=6 PlaySound(snd_dastardly2)}
+}
+if specialcheck[1]=2
+{
+image_index+=0.25 if image_index=9 image_index=7
+
+animFrame+=0.1
+if animFrame>15 {animFrame=0 specialcheck[1]=3 image_index=0 PlaySound(snd_shocked2)}
+}
+
+if specialcheck[1]=3
+{
+image_index+=0.25 if image_index=3 image_index=0
+}
+
+}
+
+//specialcheck[9]=0;
+
+}
+
 
 
 with oControl

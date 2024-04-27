@@ -37,6 +37,7 @@ if enemyset=2
 enemyspawn[0]=instance_create_depth(x-32,y+64,-1,oEntryMirror)
 enemyspawn[1]=instance_create_depth(x+32,y+64,-1,oEntryMirror) enemyspawn[1].image_xscale=-1
 
+with enemyspawn[0] character=0
 with enemyspawn[1] character=1
 }
 
@@ -47,6 +48,7 @@ enemyspawn[1]=instance_create_depth(x+32,y+64,-1,oEntryMirror) enemyspawn[1].ima
 enemyspawn[2]=instance_create_depth(x-32,y+96,-1,oEntryMirror)
 enemyspawn[3]=instance_create_depth(x+32,y+96,-1,oEntryMirror) enemyspawn[3].image_xscale=-1
 
+with enemyspawn[0] character=0
 with enemyspawn[1] character=1
 with enemyspawn[2] character=2
 with enemyspawn[3] character=3
@@ -61,6 +63,9 @@ character=oControl.p1.character
 
 with oEntryMirror
 {
+cRed=-0.25;
+cBlue=0.0;
+cGreen=-0.25;
 
 image_speed=0 spawnEnemy=oMirrorDiva
 if character=0 sprite_index=spr_viva_stand

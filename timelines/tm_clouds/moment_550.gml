@@ -1,15 +1,12 @@
 
 
-bos=instance_create_depth(oControl.camX+160,190,-1,oFlashFX)
-bos.sprite_index=mask_none bos.image_speed=0 bos.alarm[0]=-1;
-bos.z=-16
+//bos=instance_create_depth(oControl.camX+160,190,-1,oFlashFX)
+//bos.sprite_index=mask_none bos.image_speed=0 bos.alarm[0]=-1;
+//bos.z=-16
 
-oPlayer.key_right=0;
-//oPlayer.canControl=1;
-oPlayer.areaEntry=0
+
 specialSet8=0
 
-oEnemySpawner.roomHSpd=0
-oEnemySpawner.roomMove=0
+
 
 

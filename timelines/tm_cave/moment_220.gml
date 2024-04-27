@@ -38,7 +38,7 @@ oEnemySpawner.roomHSpd=4
 oEnemySpawner.roomMove=1
 
 oPlayer.dashing=0
-oPlayer.key_right=1
+oPlayer.key_right=0
 
 //boss.animFrame=0
 

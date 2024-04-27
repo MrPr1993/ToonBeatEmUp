@@ -1,6 +1,41 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function mirrordiva_check(){
+if charchoose=0
+{mirrorscript=animsetup_viva
+name="VIVA?"
+enemyPortraitSpr=spr_playerface
+enemyPortraitIndex=0
+
+DeathCry=snd_viva2
+
+DamageVoice1=snd_viva9
+DamageVoice2=snd_viva10
+DamageVoice3=snd_viva11
+
+StandSpr=spr_viva_stand
+MoveSpr=spr_viva_move
+RunSpr=spr_viva_move
+AtkSpr=spr_viva_attack
+AtkSpr2=spr_viva_attack2
+AtkSpr3=spr_wolfita_attack
+AtkSpr4=spr_wolfita_attack
+AtkSpr5=spr_wolfita_attack
+JumpAtkSpr=spr_wolfita_attack
+JumpAtkSpr2=spr_wolfita_attack
+JumpSpr=spr_viva_stand
+JumpSpr2=spr_viva_stand
+ThrownSpr=spr_viva_hit
+FlatSpr=spr_viva_flat
+ShockSpr=spr_viva_elec
+BurnSpr=spr_viva_burned
+FrozenSpr=spr_viva_frozen
+DizzySpr=spr_viva_dizzy
+cutSpr1=spr_viva_cut1
+cutSpr2=spr_viva_cut2
+
+}
+	
 if charchoose=1
 {mirrorscript=animsetup_hina
 name="HINA?"

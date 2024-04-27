@@ -119,6 +119,11 @@ spritepos_setup(2,24,-4,56)
 
 rangeAtk=320
 
+
+cRed=-0.25;
+cBlue=0.0;
+cGreen=-0.25;
+
 //isIdle=1
 //canAttack=6
 

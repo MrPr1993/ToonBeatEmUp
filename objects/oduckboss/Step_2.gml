@@ -130,7 +130,7 @@ frame_set(3,4,0.1) if animFrame=clamp(animFrame,3,3.9) {
 		dust_make(x,y+1,z-4,-1*image_xscale,0,0)
 	sentflying=8*image_xscale atk=1
 	
-	if specialtimes[2]>0 and place_free(x,y+specialtimes[2]) y+=specialtimes[2]
+	if specialtimes[2]>0 and place_free(x,y-4) y+=specialtimes[2]
 	else if y<oControl.camY+240 y+=specialtimes[2]
 	
 	

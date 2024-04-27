@@ -18,7 +18,7 @@ timer_set(0)
 
 
 bos=instance_create_depth(8576,156,-1,oFlashFX)
-bos.sprite_index=spr_mirrorlady_stand bos.image_speed=0 bos.alarm[0]=-1;
+bos.sprite_index=mask_none bos.image_speed=0 bos.alarm[0]=-1;
 bos.z=-16 with bos {isDepth=0 depth=16777213}
 
 with oPlayer

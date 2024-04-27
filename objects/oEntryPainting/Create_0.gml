@@ -28,5 +28,6 @@ spawnEnemy=oPainting
 	
 isPainting=1
 
+timerscript=-1
 
 

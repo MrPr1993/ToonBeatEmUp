@@ -14,10 +14,6 @@ if spawned=0
 {
 if nopainting=1 {nopainting=2 frameSprAppear=frameSpr frameSpr=mask_none}
 
-
-nopainting=0
-frameSprAppear=0
-
 }
 
 
@@ -31,7 +27,9 @@ spawned=2 zSpeed=spawnSpeedZ depth=-y
 }
 
 if spawned=2
-{zSpeed+=0.45/2 shadow=shadowSpr x+=xSpeed y+=ySpeed 
+{
+if nopainting=2 frameSpr=frameSprAppear	
+zSpeed+=0.45/2 shadow=shadowSpr x+=xSpeed y+=ySpeed 
 	if z>0 if ground=0 {spawned=3 ground=1 zSpeed=0 z=0 shadow=-1
 		
 		spawn=instance_create_depth(x,y+spawnYAdd,-1,spawnEnemy) if name!=-1 spawn.name=name

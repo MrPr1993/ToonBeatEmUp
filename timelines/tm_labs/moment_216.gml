@@ -5,6 +5,8 @@ with oControl
 musicplaystart(msc_boss3)
 }
 
+
+
 oControl.bossID=boss
 
 }
