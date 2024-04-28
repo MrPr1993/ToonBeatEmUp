@@ -16,7 +16,14 @@ if global.StageSelect=0
 room_goto(rm_hiscore)
 }
 else
+{
 optionSelect=1
+
+global.P1Score=0
+global.P2Score=0
+global.P3Score=0
+global.P4Score=0
+}
 //room_goto(rm_map)
 
 }

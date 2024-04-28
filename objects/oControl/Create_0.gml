@@ -11,6 +11,8 @@ allPlayersMid=0;
 allPlayersEdge=0;
 allPlayersMove=0;
 
+
+
 colorshade_setup()
 
 isNotStage=0
@@ -105,6 +107,10 @@ charsetting=0
 if !variable_global_exists("CurrentMusic")
 {global.StageSelect=0
 	
+global.SaveFileNO=1;
+global.SaveNumber=0;
+global.SaveText="EMPTY";
+	
 global.HiScoreSurvival=0
 
 global.HiScoreBossBattles=0
@@ -118,6 +124,8 @@ global.HiScoreMini5=0
 global.HiScoreMini6=0
 
 global.ArenaType=0;
+
+
 	
 global.FishingUnlock=0;
 global.SlotMachineUnlock=0;	
@@ -804,8 +812,7 @@ CutsceneY=0
 CutsceneHSpeed=0
 CutsceneVSpeed=0
 CutsceneStage=rm_stage2
-
-
+CutsceneSaveBuffer=4
 
 
 mapSelX=global.StageSelX
@@ -1029,7 +1036,7 @@ btnT3="TO DO"
 cameraYAdd=0
 
 if room=rm_characterselect
-{
+{if global.StageSelect global.SaveNumber=0
 p1=instance_create_depth(0,53,-1,oCharacterSelectPlayer) with p1 {canControl=1 controlNO=1}
 if global.P1Only=0
 {
@@ -1048,6 +1055,8 @@ p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {con
 
 }
 p5=instance_create_depth(2400,53,-1,oCharacterSelectPlayer) with p5 {canControl=1 controlNO=9}
+
+arcade_load(0)
 }
 
 //if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0

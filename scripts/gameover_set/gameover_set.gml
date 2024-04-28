@@ -23,6 +23,11 @@ GoldShow=1
 gold_save()
 stageClearCheck=1
 
+global.P1Score=0
+global.P2Score=0
+global.P3Score=0
+global.P4Score=0
+
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1
 alarm[3]=320

@@ -327,6 +327,8 @@ stagedata_save()
 enemydata_save()
 unlock_save()
 
+arcade_save(stageNext)
+
 if brickgamenum=1 with oPlayerDisembodied x+=160-40
 if brickgamenum=2 with oPlayerDisembodied x+=160-80
 if brickgamenum=3 with oPlayerDisembodied x+=160-120
@@ -424,6 +426,9 @@ surface_free(application_surface)
 sprite_replace(spr_photoplaceholder,"screenshot",0,false,false,0,0)
 //musicplayonce(msc_stageclear)
 stageClear=1
+GoldShow=global.GoldShow
+
+
 }
 
 colorshade_setup()

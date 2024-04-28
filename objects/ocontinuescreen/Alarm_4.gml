@@ -35,7 +35,7 @@ global.P4Score=p4.PlayerScore
 global.P4Life=p4.PlayerLife
 HiScoreCheck=global.P4Score
 }
-if (HiScoreCheck>=global.HiScore10 and keyToGameOver=0)
+if (HiScoreCheck>=global.HiScore10 and keyToGameOver=0 and global.StageSelect=0)
 {
 gameover_set() continueScreen=1
 }
@@ -44,8 +44,11 @@ else
 gameOverFlash=1 
 audio_stop_all()
 setGameOver=2
-GoldShow=1
+GoldShow=global.GoldShow
 //gold_save()
+
+
+
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1
 alarm[3]=320

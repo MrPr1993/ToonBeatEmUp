@@ -814,19 +814,36 @@ if global.MultiVS=0
 	
 if oControl.charsetting=0
 {
-if p5.key_up_pressed{if oControl.multiVSsetting=0 oControl.multiVSsetting=1 else oControl.multiVSsetting-=1 PlaySound(snd_select)}
-if -p5.key_down_pressed{if oControl.multiVSsetting=1 oControl.multiVSsetting=1 else oControl.multiVSsetting+=1 PlaySound(snd_select)}
+	
+
+if p5.key_up_pressed{var settt=0; if global.MenuGlobal=0 settt=1; if oControl.multiVSsetting=0 oControl.multiVSsetting=1+settt else oControl.multiVSsetting-=1 PlaySound(snd_select)}
+if -p5.key_down_pressed{var settt=0; if global.MenuGlobal=0 settt=1; if oControl.multiVSsetting=1+settt oControl.multiVSsetting=0 else oControl.multiVSsetting+=1 PlaySound(snd_select)}
 
 if oControl.multiVSsetting=0
 {
 
+if global.SaveFileNO=0 or global.SaveNumber=0
+{
 if -p5.key_left_pressed {if global.Difficulty=0 global.Difficulty=4 else global.Difficulty-=1 PlaySound(snd_select)}
 if p5.key_right_pressed {if global.Difficulty=4 global.Difficulty=0 else global.Difficulty+=1 PlaySound(snd_select)}
+}
+else
+if -p5.key_left_pressed or p5.key_right_pressed PlaySound(snd_steal)
+
+
 }
 if oControl.multiVSsetting=1
 {
 if -p5.key_left_pressed or p5.key_right_pressed {global.FriendlyFire^=1 PlaySound(snd_select)}
 }
+
+if oControl.multiVSsetting=2 
+{
+if -p5.key_left_pressed {if global.SaveFileNO=0 global.SaveFileNO=3 else global.SaveFileNO-=1 arcade_load(0) PlaySound(snd_select)}
+
+if p5.key_right_pressed {if global.SaveFileNO=3 global.SaveFileNO=0 else global.SaveFileNO+=1 arcade_load(0) PlaySound(snd_select)}
+}
+
 }
 
 global.MultiSuper=0	
@@ -868,6 +885,28 @@ if oControl.multiVSsetting=1
 
 draw_text(xadd,120-32-24,diftext)
 draw_text(xadd,128+8,diftext2)
+
+///Check if it's Arcade Mode for save file
+if global.MenuGlobal=0
+{var alphaset=0.5 var setsave=c_gray;
+if oControl.multiVSsetting=2 {alphaset=1 setsave=c_white}
+
+draw_set_color(setsave)
+draw_sprite_ext(spr_savefile,0,xadd,128+48,1,1,0,setsave,alphaset)
+
+draw_text(xadd,128+48,"SAVE FILE")
+var savename="SLOT A" if global.SaveFileNO=2 savename="SLOT B" if global.SaveFileNO=3 savename="SLOT C"
+if global.SaveFileNO=0 savename="NO SAVE"
+
+if global.SaveFileNO=0
+draw_text(xadd,128+64,"NO SAVE")
+else
+draw_text(xadd,128+64,string(savename)+"\n"+string(global.SaveText)+"\nTOTAL SCORE\n"+string(
+global.P1Score+global.P2Score+global.P3Score+global.P4Score
+))
+draw_set_color(c_white)
+}
+
 }
 else
 {
@@ -976,6 +1015,7 @@ for (iI=0; iI<=global.Difficulty; iI+=1)
 {
 if global.MultiVS=0
 {var selecty=c_gray if oControl.multiVSsetting=0 selecty=c_white
+	if global.SaveNumber!=0 selecty=c_dkgray
 draw_sprite_ext(spr_difficultystar,global.Difficulty,-32*iI+xadd+difadd,120-8,1,1,0,selecty,1)
 selecty=c_gray if oControl.multiVSsetting=1 selecty=c_white
 draw_set_color(selecty)
@@ -1084,64 +1124,64 @@ draw_set_alpha(1)
 draw_set_color(c_white)
 
 ///Left Part
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 1ST " +string(global.HiScoreName1)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 2ND " +string(global.HiScoreName2)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 3RD " +string(global.HiScoreName3)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 4TH " +string(global.HiScoreName4)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 5TH " +string(global.HiScoreName5)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 6TH " +string(global.HiScoreName6)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 7TH " +string(global.HiScoreName7)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 8TH " +string(global.HiScoreName8)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline(" 9TH " +string(global.HiScoreName9)+string(" ")));
-draw_text(64, (yy++ * 26)-28, string_hash_to_newline("10TH " +string(global.HiScoreName10)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 1ST " +string(global.HiScoreName1)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 2ND " +string(global.HiScoreName2)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 3RD " +string(global.HiScoreName3)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 4TH " +string(global.HiScoreName4)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 5TH " +string(global.HiScoreName5)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 6TH " +string(global.HiScoreName6)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 7TH " +string(global.HiScoreName7)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 8TH " +string(global.HiScoreName8)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline(" 9TH " +string(global.HiScoreName9)+string(" ")));
+draw_text(64, round((yy++ * 26)-28), string_hash_to_newline("10TH " +string(global.HiScoreName10)+string(" ")));
 
 ///Right Part
 draw_set_halign(fa_right)
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore1)+string("   ")+string(global.HiScoreStage1)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore2)+string("   ")+string(global.HiScoreStage2)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore3)+string("   ")+string(global.HiScoreStage3)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore4)+string("   ")+string(global.HiScoreStage4)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore5)+string("   ")+string(global.HiScoreStage5)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore6)+string("   ")+string(global.HiScoreStage6)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore7)+string("   ")+string(global.HiScoreStage7)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore8)+string("   ")+string(global.HiScoreStage8)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore9)+string("   ")+string(global.HiScoreStage9)));
-draw_text(320-64, (yy2++ * 26)-28, string_hash_to_newline(string(global.HiScore10)+string("   ")+string(global.HiScoreStage10)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore1)+string("   ")+string(global.HiScoreStage1)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore2)+string("   ")+string(global.HiScoreStage2)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore3)+string("   ")+string(global.HiScoreStage3)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore4)+string("   ")+string(global.HiScoreStage4)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore5)+string("   ")+string(global.HiScoreStage5)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore6)+string("   ")+string(global.HiScoreStage6)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore7)+string("   ")+string(global.HiScoreStage7)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore8)+string("   ")+string(global.HiScoreStage8)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore9)+string("   ")+string(global.HiScoreStage9)));
+draw_text(320-64, round((yy2++ * 26)-28), string_hash_to_newline(string(global.HiScore10)+string("   ")+string(global.HiScoreStage10)));
 
-///Sprites
+///Sprites 
 draw_set_halign(fa_left)
 pal_swap_set(global.HiScorePalS1,global.HiScorePal1,false);
-draw_sprite(spr_playerface,global.HiScoreFace1, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace1, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS2,global.HiScorePal2,false);
-draw_sprite(spr_playerface,global.HiScoreFace2, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace2, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS3,global.HiScorePal3,false);
-draw_sprite(spr_playerface,global.HiScoreFace3, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace3, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS4,global.HiScorePal4,false);
-draw_sprite(spr_playerface,global.HiScoreFace4, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace4, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS5,global.HiScorePal5,false);
-draw_sprite(spr_playerface,global.HiScoreFace5, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace5, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS6,global.HiScorePal6,false);
-draw_sprite(spr_playerface,global.HiScoreFace6, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace6, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS7,global.HiScorePal7,false);
-draw_sprite(spr_playerface,global.HiScoreFace7, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace7, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS8,global.HiScorePal8,false);
-draw_sprite(spr_playerface,global.HiScoreFace8, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace8, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS9,global.HiScorePal9,false);
-draw_sprite(spr_playerface,global.HiScoreFace9, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace9, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 pal_swap_set(global.HiScorePalS10,global.HiScorePal10,false);
-draw_sprite(spr_playerface,global.HiScoreFace10, 320-96,(yy3++ * 26)-30) pal_swap_reset()
+draw_sprite(spr_playerface,global.HiScoreFace10, 320-96,round((yy3++ * 26)-30)) pal_swap_reset()
 
 
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif1, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif2, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif3, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif4, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif5, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif6, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif7, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif8, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif9, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
-draw_sprite_ext(spr_difficultystar,global.HiScoreDif10, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif1, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif2, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif3, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif4, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif5, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif6, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif7, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif8, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif9, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif10, 320-64,round((yy4++ * 26)-30+13),0.5,0.5,0,c_white,1)
 
 if global.HiScoreSee=1
 {
@@ -1522,6 +1562,8 @@ if key_attack or key_jump or key_super or key_shield or keyboard_check_pressed(v
 	CDtextAx=0
 	CDtextBx=0
 	CDtextCx=0
+	
+	
 	}
 	
 }
@@ -1531,7 +1573,8 @@ if key_attack or key_jump or key_super or key_shield or keyboard_check_pressed(v
 	{if cutsceneDecbuffer!=0 cutsceneDecbuffer-=1
 	else cutscenedecision=0
 	
-	
+	CutsceneSaveBuffer-=0.5
+	if CutsceneSaveBuffer=0 arcade_save(CutsceneStage)
 	
 	CDtextTy=lerp(CDtextTy,-400,0.1)
 	if cutsceneDecmode=0 {CDtextAy=lerp(CDtextAy,-10,0.1) CDtextAs=lerp(CDtextAs,1.5,0.1)} else CDtextAx=lerp(CDtextAx,240,0.1)

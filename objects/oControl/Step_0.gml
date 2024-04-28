@@ -214,7 +214,7 @@ if keyboard_check_pressed(vk_f3)
 with oPlayer
 {
 PlayerScore=get_integer("Write new score",PlayerScore)
-global.P1Score=PlayerScore
+//global.P1Score=PlayerScore
 }
 }
 

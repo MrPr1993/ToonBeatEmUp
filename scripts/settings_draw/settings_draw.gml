@@ -40,7 +40,12 @@ draw_text(160,88+12+48,languagetext[13]+string(" "))
 draw_set_color(c_white)
 draw_text(160,96+24+48,"FPS ")
 draw_text(160,104+8+48," ")
-draw_text(160,112+8+48+16,languagetext[14]+string(" "))
+
+draw_text(160,112+8+48+16,languagetext[35]+string(" "))
+
+draw_text(160,112+8+48+16+8,languagetext[36]+string(" "))
+
+draw_text(160,112+8+48+16+16,languagetext[14]+string(" "))
 
 ///RIGHT SIDE
 draw_set_halign(fa_left)
@@ -88,6 +93,9 @@ if global.ArcadeScreen=1
 draw_text(160,56+4+32+8," "+string(languagetext[26])+" "+string(global.ArcadeScreen))
 if global.ArcadeScreen=2
 draw_text(160,56+4+32+8," "+string(languagetext[27])+" "+string(global.ArcadeScreen))
+if global.ArcadeScreen=3
+draw_text(160,56+4+32+8," "+string(languagetext[34])+" "+string(global.ArcadeScreen))
+
 
 if global.Screenshake=1
 draw_text(160,64+8+48," "+string(languagetext[18])) else draw_text(160,64+8+48," "+string(languagetext[19]))
@@ -117,7 +125,18 @@ else
 draw_text(160,96+24+48," "+string(" "+string(languagetext[18])))
 
 draw_text(160,104+8+48," ")
-draw_text(160,112+8+48+16," "+string(languagetext[29]))
+
+if global.GoldShow=0
+draw_text(160,112+8+48+16," "+string(" "+string(languagetext[19])))
+else
+draw_text(160,112+8+48+16," "+string(" "+string(languagetext[18])))
+
+if global.DisplayFeats=0
+draw_text(160,112+8+48+16+8," "+string(" "+string(languagetext[19])))
+else
+draw_text(160,112+8+48+16+8," "+string(" "+string(languagetext[18])))
+
+draw_text(160,112+8+48+16+16," "+string(languagetext[29]))
 
 //STAR
 if menuSelect=0 StarY=0
@@ -135,7 +154,11 @@ if menuSelect=10 StarY=40+8+40+8
 if menuSelect=11 StarY=48+12+56-8
 if menuSelect=12 StarY=56+12+64-16
 if menuSelect=13 StarY=56+12+72-4
+
 if menuSelect=14 StarY=56+12+72-4+16
+if menuSelect=15 StarY=56+12+72-4+16+8
+
+if menuSelect=16 StarY=56+12+72-4+16+16
 
 draw_sprite(spr_scorefont,43,160-4,32+StarY)
 }

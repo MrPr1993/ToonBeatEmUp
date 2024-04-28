@@ -24,12 +24,14 @@ if menuSelect=10 global.Screenflash=1
 //if menuSelect=12	global.ContinueStart=-1	
 if menuSelect=12 global.CutsceneSkipSpd=0.01
 if menuSelect=13 global.fpsMode=0
+if menuSelect=14 global.GoldShow=1
+if menuSelect=15 global.DisplayFeats=1
 
 }	
 
 
-if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=14 else menuSelect-=1}
-if -key_down_pressed {PlaySound(snd_select) if menuSelect=14 menuSelect=0 else menuSelect+=1}
+if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=16 else menuSelect-=1}
+if -key_down_pressed {PlaySound(snd_select) if menuSelect=16 menuSelect=0 else menuSelect+=1}
 
 if -key_left
 {
@@ -135,15 +137,21 @@ if menuSelect=10 if global.Screenflash=1 global.Screenflash=0 else global.Screen
 //if menuSelect=11	{if global.LifeStart=9 global.LifeStart=0 else global.LifeStart+=1}
 if menuSelect=11 {if global.Language=languagemax global.Language=0 else global.Language+=1 language_check()}
 
-if menuSelect=12	{if global.ContinueStart=99 global.ContinueStart=-1 else global.ContinueStart+=1}	
+//if menuSelect=12	{if global.ContinueStart=99 global.ContinueStart=-1 else global.ContinueStart+=1}	
 	}
 	
 	if menuSelect=13	if global.fpsMode=0 global.fpsMode=1 else global.fpsMode=0
+	
+	if menuSelect=14	if global.GoldShow=0 global.GoldShow=1 else global.GoldShow=0
+	
+	if menuSelect=15	if global.DisplayFeats=0 global.DisplayFeats=1 else global.DisplayFeats=0
 	}
+	
+	
 	
 if key_A or keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("J"))
 {
-if menuSelect=14 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied
+if menuSelect=16 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied
 	
 	{menuSelect=-1 LegacyMode=global.LegacyMode[instance_number(oPlayerDisembodied)]}
 	

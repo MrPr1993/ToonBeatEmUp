@@ -24,6 +24,10 @@ global.CutsceneSkipSpd=ini_read_real("SETTINGS","SKIPSCENE",0.01)
 global.ContinueStart=ini_read_real("SETTINGS","CONTINUES",-1)
 global.fpsMode=ini_read_real("SETTINGS","FPS",0)
 
+global.GoldShow=ini_read_real("SETTINGS","GOLDSHOW",1)
+global.DisplayFeats=ini_read_real("SETTINGS","FEATSHOW",1)
+
+
 global.enemytest=ini_read_real("ENEMYTEST","TEST",0)
 global.enemytestB=ini_read_real("ENEMYTEST","TESTB",0)
 global.LevelSelectSave=ini_read_real("LEVELTEST","0",0)
