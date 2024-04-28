@@ -63,8 +63,8 @@ frame_set(7,7,0.2)
 frame_set(8,8,0.2)
 frame_set(9,9,0.1)
 
-frame_set(10,9,0.1) if animFrame=clamp(animFrame,2,3.9) or animFrame=clamp(animFrame,7,8.9) {sentflying=6*image_xscale atk=1} else {sentflying=0 atk=0}
-frame_set(11,9,0.1) if animFrame>7-0.2 {if specialcheck4!=2 {animFrame=2 specialcheck4+=1}}
+frame_set(10,9,0.1) if animFrame=clamp(animFrame,2,3.9) or animFrame=clamp(animFrame,7,8.9) {sentflying=2*image_xscale atk=1} else {sentflying=0 atk=0}
+frame_set(11,9,0.1) if animFrame>11-0.2 {if specialcheck4!=2 {animFrame=2 specialcheck4+=1}}
 frame_set(12,9,0.1)
 frame_set(13,10,0.1)
 if animFrame>13.5 canmove=1
@@ -84,6 +84,11 @@ frame_set(4,1,0.25) if animFrame=5
 PlaySoundNoStack(snd_scientist7)
 spit=instance_create_depth(x+102*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale
 spit.sprite_index=spr_scientistm_egg spit.bounce=3
+with spit
+{
+hitflash=spr_scientistm_egg3
+endflash=spr_scientistm_egg2
+}
 
 }
 
@@ -146,10 +151,10 @@ if anim=65
 sprite_index=spr_scientistm_attack5
 if animFrame=0 {specialcheck3=z-128 }
 
-frame_set(0,0,0.25) if animFrame=clamp(animFrame,3,11) {zSpeed=-16 z=clamp(z,specialcheck3,0)}
+frame_set(0,0,0.25) if animFrame=clamp(animFrame,3,10) {zSpeed=-16 z=clamp(z,specialcheck3,0)}
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
-frame_set(3,3,0.1) if animFrame=clamp(animFrame,3,9.2) atk=1 else atk=0
+frame_set(3,3,0.1) if animFrame=clamp(animFrame,6,9.2) atk=1 else atk=0
 frame_set(4,4,0.25)
 frame_set(5,5,0.1)
 frame_set(6,6,0.25)

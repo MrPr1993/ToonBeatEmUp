@@ -1,5 +1,6 @@
 if boss.canmove
 {timer_set(1)
+	with oEnemySpawner cammoveUP=0
 oControl.bossID=boss
 oPlayer.canControl=1
 }

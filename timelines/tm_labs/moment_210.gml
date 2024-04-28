@@ -4,7 +4,7 @@ if specialSet9=0
 {//camMove=0 camMax=room_width
 //////// Mark for boss area
 PlaySound(snd_shocked2)
-
+with oEnemySpawner cammoveUP=1
 bosscreen=instance_create_depth(7728,32,-1,oCameoChar) with bosscreen
 {sprite_index=spr_labscreen isDepth=0 depth=16777208
 

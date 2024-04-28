@@ -20,6 +20,8 @@ weapon.z=z-96 weapon.spdZ=-4 weapon.ground=0 weapon.airSpin=1
 weapon.image_blend=weaponcolor
 weapon.weapon_pal_sprite=weapon_pal_sprite
 weapon.weapon_pal=weapon_pal
+weapon.sprite_index=weaponspr
+
 
 weaponspr=-1
 weaponIndex=0

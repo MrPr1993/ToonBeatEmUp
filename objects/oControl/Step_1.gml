@@ -45,6 +45,7 @@ if instance_exists(oPlayerNoControl)
 oPlayerNoControl.x=camX+320
 oPlayerNoControl.ground=instance_nearest(camX+320,0,oPlayer).ground
 oPlayerNoControl.canmove=instance_nearest(camX+320,0,oPlayer).canmove
+oPlayerNoControl.anim=instance_nearest(camX+320,0,oPlayer).anim
 }
 }
 charstatsetup=1

@@ -32,6 +32,9 @@ and (p2.canmove and p2.ground)
 and (p3.canmove and p3.ground)
 and (p4.canmove and p4.ground)
 allPlayersMove=1 else allPlayersMove=0
+
+if instance_exists(oPlayerNoControl)
+oPlayerNoControl.anim=instance_nearest(camX+320,0,oPlayer).anim
 }
 
 depth=-999999999

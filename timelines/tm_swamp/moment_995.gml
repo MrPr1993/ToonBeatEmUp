@@ -23,7 +23,7 @@ with oControl
 musicplaystart(msc_boss4)
 }
 
-
+with oEnemySpawner cammoveUP=1
 boss=instance_create_depth(9312+8,144,-1,oWitch)
 with boss {canmove=0 anim=100 image_xscale=-1}
 

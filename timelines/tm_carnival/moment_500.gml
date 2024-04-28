@@ -43,8 +43,8 @@ en1=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oClown)
 with en1 {image_xscale=1 ground=0 canmove=0 anim=13
 	z=-200 //weapon_add("HARPOONGUN")
 	}
-en2=instance_create(__view_get( e__VW.XView, 0)+160-64,228,oClown)
-with en2 {image_xscale=1 ground=0  enemy_switch("MARI",0) weapon_add_double("TWIRL")
+en2=instance_create(__view_get( e__VW.XView, 0)+160+64,228,oClown)
+with en2 {image_xscale=-1 ground=0  enemy_switch("MARI",0) weapon_add_double("TWIRL")
 	 z=-200 canmove=0 anim=13
 	}
 }

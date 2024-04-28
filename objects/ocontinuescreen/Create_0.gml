@@ -316,8 +316,12 @@ with oPlayerDisembodied if isInctive=0 oContinueScreen.continueStageScore+=round
 continueStageScore+=round(time*200)
 newrecord=0 newrecordframe=0
 if continueStageScore>global.LevelHiScore[stagecheck]
-{global.LevelHiScore[stagecheck]=continueStageScore newrecord=1
+{global.LevelHiScore[stagecheck]=continueStageScore 
+	
+	newrecord=1
 }
+if global.Difficulty>=global.LevelDif[stagecheck] global.LevelDif[stagecheck]=global.Difficulty
+
 global.UnlockStage[stagecheck]=1
 stagedata_save()
 enemydata_save()

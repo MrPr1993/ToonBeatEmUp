@@ -9,10 +9,13 @@ oEnemySpawner.roomMove=0 //3488
 //oControl.TextDialogue="STILL FOLLOWING US?"
 }
 else
-{oEnemySpawner.canFollow=0
-oControl.camMove=0
+{//oEnemySpawner.canFollow=0
+//oControl.camMove=0
 oEnemySpawner.roomHSpd=4
 oEnemySpawner.roomMove=1
+oEnemySpawner.cammoveUP=1
+
+
 
 spawner_followset("WaveSet1",10000,10000,0)
 

@@ -41,6 +41,8 @@ MaxX+=oPlayer.totalSpeed
 __view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 ),MinX,MaxX-320) )
 
 
+if cammoveUP=0
+{
 if roomMoveY=1
 {
 YView+=roomVSpd
@@ -51,7 +53,11 @@ else
 if MaxY<MaxYAdd
 MaxY+=oPlayer.totalSpeedY
 }
-
+}
+else
+{
+if YView>0 YView-=2 else YView=0
+}
 
 
 //oPlayer.y+oControl.quakeFX-240+80//

@@ -334,8 +334,17 @@ and p3.x<=__view_get( e__VW.XView, 0 )+160
 and p4.x<=__view_get( e__VW.XView, 0 )+160)
 {if __view_get( e__VW.XView, 0 )>oEnemySpawner.MinX {__view_set( e__VW.XView, 0,  instance_nearest(__view_set( e__VW.XView, 0, 0),0,oPlayer).x-160 ) camMin=__view_get( e__VW.XView, 0 )}}
 
+
+if oEnemySpawner.cammoveUP=1
+{
+__view_set( e__VW.YView, 0, oEnemySpawner.YView)
+}
+else
+{
 if oPlayer.y>=oEnemySpawner.YView+120+80 {if oEnemySpawner.YView<camMaxY+80 {oEnemySpawner.YView=oPlayer.y-120-80 camMinY=oEnemySpawner.YView+80}}
 with oEnemySpawner {YView=clamp(YView,MinY,MaxY-240) __view_set( e__VW.YView, 0, YView+oControl.quakeFX )}
+}
+
 
 }
 else

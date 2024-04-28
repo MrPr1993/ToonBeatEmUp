@@ -57,5 +57,27 @@ ini_write_real("STAGEdata", "S20a", global.UnlockStage[20])
 ini_write_real("STAGEdata", "S20b", global.LevelHiScore[20])
 
 
+ini_write_real("STAGEdata", "S1d", global.LevelDif[1])
+ini_write_real("STAGEdata", "S2d", global.LevelDif[2])
+ini_write_real("STAGEdata", "S3d", global.LevelDif[3])
+ini_write_real("STAGEdata", "S4d", global.LevelDif[4])
+ini_write_real("STAGEdata", "S5d", global.LevelDif[5])
+ini_write_real("STAGEdata", "S6d", global.LevelDif[6])
+ini_write_real("STAGEdata", "S7d", global.LevelDif[7])
+ini_write_real("STAGEdata", "S8d", global.LevelDif[8])
+ini_write_real("STAGEdata", "S9d", global.LevelDif[9])
+ini_write_real("STAGEdata", "S10d", global.LevelDif[10])
+ini_write_real("STAGEdata", "S11d", global.LevelDif[11])
+ini_write_real("STAGEdata", "S12d", global.LevelDif[12])
+ini_write_real("STAGEdata", "S13d", global.LevelDif[13])
+ini_write_real("STAGEdata", "S14d", global.LevelDif[14])
+ini_write_real("STAGEdata", "S15d", global.LevelDif[15])
+ini_write_real("STAGEdata", "S16d", global.LevelDif[16])
+ini_write_real("STAGEdata", "S17d", global.LevelDif[17])
+ini_write_real("STAGEdata", "S18d", global.LevelDif[18])
+ini_write_real("STAGEdata", "S19d", global.LevelDif[19])
+ini_write_real("STAGEdata", "S20d", global.LevelDif[20])
+
+
 ini_close()
 }

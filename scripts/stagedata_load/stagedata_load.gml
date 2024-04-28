@@ -57,6 +57,28 @@ global.UnlockStage[20]=ini_read_real("STAGEdata", "S20a", 0);
 global.LevelHiScore[20]=ini_read_real("STAGEdata", "S20b", 0);
 
 
+global.LevelDif[1]=ini_read_real("STAGEdata", "S1d", 0);
+global.LevelDif[2]=ini_read_real("STAGEdata", "S2d", 0);
+global.LevelDif[3]=ini_read_real("STAGEdata", "S3d", 0);
+global.LevelDif[4]=ini_read_real("STAGEdata", "S4d", 0);
+global.LevelDif[5]=ini_read_real("STAGEdata", "S5d", 0);
+global.LevelDif[6]=ini_read_real("STAGEdata", "S6d", 0);
+global.LevelDif[7]=ini_read_real("STAGEdata", "S7d", 0);
+global.LevelDif[8]=ini_read_real("STAGEdata", "S8d", 0);
+global.LevelDif[9]=ini_read_real("STAGEdata", "S9d", 0);
+global.LevelDif[10]=ini_read_real("STAGEdata", "S10d", 0);
+global.LevelDif[11]=ini_read_real("STAGEdata", "S11d", 0);
+global.LevelDif[12]=ini_read_real("STAGEdata", "S12d", 0);
+global.LevelDif[13]=ini_read_real("STAGEdata", "S13d", 0);
+global.LevelDif[14]=ini_read_real("STAGEdata", "S14d", 0);
+global.LevelDif[15]=ini_read_real("STAGEdata", "S15d", 0);
+global.LevelDif[16]=ini_read_real("STAGEdata", "S16d", 0);
+global.LevelDif[17]=ini_read_real("STAGEdata", "S17d", 0);
+global.LevelDif[18]=ini_read_real("STAGEdata", "S18d", 0);
+global.LevelDif[19]=ini_read_real("STAGEdata", "S19d", 0);
+global.LevelDif[20]=ini_read_real("STAGEdata", "S20d", 0);
+
+
 
 ini_close()
 }

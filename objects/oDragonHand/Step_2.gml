@@ -189,7 +189,10 @@ canmove=1 hurt=0 recovery=30
 }
 
 if anim=6666 ///Grab Enemy
-{canBounce=0
+{
+	
+if animFrame=0 PlaySound(snd_dragon3)
+canBounce=0
 isThrow=1 //hud_show()
 throwing=1
 comboBreak=0

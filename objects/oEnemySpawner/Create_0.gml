@@ -12,6 +12,8 @@ enemymoment=0
 
 wave=0
 
+cammoveUP=0
+
 ///Use the image x scaling to do how long it can be so you can walk around for more space.
 ///If it's one screen only, set it as 10 in the room editor.
 MinX=x

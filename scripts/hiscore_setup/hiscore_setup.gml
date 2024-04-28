@@ -53,6 +53,18 @@ function hiscore_setup() {
 	global.HiScoreStage8=1
 	global.HiScoreStage9=1
 	global.HiScoreStage10=1
+	
+	global.HiScoreDif1=2
+	global.HiScoreDif2=2
+	global.HiScoreDif3=2
+	global.HiScoreDif4=2
+	global.HiScoreDif5=2
+	global.HiScoreDif6=2
+	global.HiScoreDif7=1
+	global.HiScoreDif8=0
+	global.HiScoreDif9=1
+	global.HiScoreDif10=1
+		
 
 	global.HiScoreFace1=0
 	global.HiScoreFace2=1

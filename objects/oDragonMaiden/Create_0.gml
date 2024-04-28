@@ -79,16 +79,16 @@ lockSPD=1
 lockX=oControl.camX+360-64
 
 ///Tail Script
-tail=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) tail.sprite_index=mask_none//spr_dragonmaiden_tail
+tail=instance_create_depth(oControl.camX+160,176,-1,oCameoChar) tail.sprite_index=mask_none//spr_dragonmaiden_tail
 tail.isDepth=0 tail.depth=16777214 tail.shadow=mask_none
 ////Body Script
-body=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) body.sprite_index=mask_none//spr_dragonmaiden_body3
+body=instance_create_depth(oControl.camX+160,176,-1,oCameoChar) body.sprite_index=mask_none//spr_dragonmaiden_body3
 body.isDepth=0 body.depth=16777213 body.shadow=mask_none body.image_speed=0
 
-necc=instance_create_depth(__view_get( e__VW.XView, 0 )+160,176,-1,oCameoChar) necc.sprite_index=mask_none//spr_dragonmaiden_headded
+necc=instance_create_depth(oControl.camX+160,176,-1,oCameoChar) necc.sprite_index=mask_none//spr_dragonmaiden_headded
 necc.isDepth=0 necc.depth=16777213 necc.shadow=mask_none
 
-handL=instance_create_depth(__view_get( e__VW.XView, 0 )-2000,y,-1,oDragonHand) 
+handL=instance_create_depth(oControl.camX-2000,y,-1,oDragonHand) 
 handL.anim=9999	
 
 enemyID=174

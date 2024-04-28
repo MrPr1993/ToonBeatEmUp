@@ -1,5 +1,6 @@
 /// @description Prepare to jump from ramp
-if oControl.allPlayersMove
+
+if oControl.p1.anim=200 and oControl.p2.anim=200 and oControl.p3.anim=200 and oControl.p4.anim=200
 	{
 with oPlayer 
 {//x=160 =160

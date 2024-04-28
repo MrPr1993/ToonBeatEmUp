@@ -19,7 +19,7 @@ MusicFade=0 MusicFadeAdd=1
 musicplaystart(msc_boss3)
 alarm[0]=180
 }
-
+with oEnemySpawner cammoveUP=1
 boss=instance_create_depth(6430,154,-1,oPrince)
 with boss {canmove=0 anim=100}
 

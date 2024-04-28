@@ -1,5 +1,6 @@
 /// @description Prepare to jump from ramp
-	if oPlayer.dead=0 and oPlayer.hurt=0 and oPlayer.ground
+	//if oPlayer.dead=0 and oPlayer.hurt=0 and oPlayer.ground
+if oControl.p1.anim=200 and oControl.p2.anim=200 and oControl.p3.anim=200 and oControl.p4.anim=200
 	{
 with oPlayer 
 {//x=160 y=200

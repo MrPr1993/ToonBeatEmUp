@@ -14,6 +14,12 @@ and specialSet6=300
 	{
 if specialSet7=0
 {//camMove=0 camMax=room_width
+with oPlayer
+{canControl=0
+	canControl=0
+automoveX=7692 automoveY=222 automove=1
+//7692,222
+}	
 timer_set(0)
 //foody=instance_create(__view_get( e__VW.XView, 0)+160-32,200,oBurger)
 //foody.z=-200
@@ -25,7 +31,7 @@ timer_set(0)
 
 
 with oEnemySpawner
-{specialSet9=0 specialSet7=-240
+{specialSet9=0 specialSet7=-320
 specialscript=function()
 {
 specialSet7+=1

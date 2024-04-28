@@ -28,6 +28,7 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage10=global.HiScoreStage9
 	global.HiScorePalS10=global.HiScorePalS9
 	global.HiScorePal10=global.HiScorePal9
+	global.HiScoreDif10=global.HiScoreDif9
 
 	global.HiScore9=HiScoreCheck
 	if HiScoreCheck>=global.HiScore8 ///8th
@@ -38,6 +39,7 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage9=global.HiScoreStage8
 	global.HiScorePalS9=global.HiScorePalS8
 	global.HiScorePal9=global.HiScorePal8
+	global.HiScoreDif9=global.HiScoreDif8
 
 	global.HiScore8=HiScoreCheck
 	if HiScoreCheck>=global.HiScore7 ///7th
@@ -47,6 +49,7 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage8=global.HiScoreStage7
 	global.HiScorePalS8=global.HiScorePalS7
 	global.HiScorePal8=global.HiScorePal7
+	global.HiScoreDif8=global.HiScoreDif7
  
 	   global.HiScore7=HiScoreCheck
 	if HiScoreCheck>=global.HiScore6 ///6th
@@ -56,6 +59,7 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage7=global.HiScoreStage6
 	global.HiScorePalS7=global.HiScorePalS6
 	global.HiScorePal7=global.HiScorePal6
+	global.HiScoreDif7=global.HiScoreDif6
  
 	   global.HiScore6=HiScoreCheck
 	if HiScoreCheck>=global.HiScore5 ///5th
@@ -65,6 +69,7 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage6=global.HiScoreStage5
 	global.HiScorePalS6=global.HiScorePalS5
 	global.HiScorePal6=global.HiScorePal5
+	global.HiScoreDif6=global.HiScoreDif5
  
 	   global.HiScore5=HiScoreCheck
 	if HiScoreCheck>=global.HiScore4 ///4th
@@ -74,6 +79,7 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage5=global.HiScoreStage4
 	global.HiScorePalS5=global.HiScorePalS4
 	global.HiScorePal5=global.HiScorePal4
+	global.HiScoreDif5=global.HiScoreDif4
  
 	   global.HiScore4=HiScoreCheck
 	if HiScoreCheck>=global.HiScore3 ///3rd
@@ -83,6 +89,7 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage4=global.HiScoreStage3
 	global.HiScorePalS4=global.HiScorePalS3
 	global.HiScorePal4=global.HiScorePal3
+	global.HiScoreDif4=global.HiScoreDif3
  
 	   global.HiScore3=HiScoreCheck
 	if HiScoreCheck>=global.HiScore2 ///2nd
@@ -92,6 +99,7 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage3=global.HiScoreStage2
 	global.HiScorePalS3=global.HiScorePalS2
 	global.HiScorePal3=global.HiScorePal2
+	global.HiScoreDif3=global.HiScoreDif2
  
 	   global.HiScore2=HiScoreCheck
 	if HiScoreCheck>=global.HiScore1 ///1st
@@ -101,11 +109,13 @@ HiScoreCheck=global.P4Score
 	global.HiScoreStage2=global.HiScoreStage1
 	global.HiScorePalS2=global.HiScorePalS1
 	global.HiScorePal2=global.HiScorePal1
+	global.HiScoreDif2=global.HiScoreDif1
  
 	global.HiScore1=HiScoreCheck
 	global.HiScoreName1=HiInput1
 	global.HiScoreFace1=global.P1Char
 	global.HiScoreStage1=global.HiScoreLevel
+	global.HiScoreDif1=global.Difficulty
 if playerNO=1 {global.HiScorePalS1=global.p1Pals global.HiScorePal1=global.p1Pal}
 if playerNO=2 {global.HiScorePalS1=global.p2Pals global.HiScorePal1=global.p2Pal}
 if playerNO=3 {global.HiScorePalS1=global.p3Pals global.HiScorePal1=global.p3Pal}
@@ -116,6 +126,8 @@ if playerNO=4 {global.HiScorePalS1=global.p4Pals global.HiScorePal1=global.p4Pal
 	global.HiScoreName2=HiInput1
 	global.HiScoreFace2=global.P1Char
 	global.HiScoreStage2=global.HiScoreLevel
+	
+	
 if playerNO=1 {global.HiScorePalS2=global.p1Pals global.HiScorePal2=global.p1Pal}
 if playerNO=2 {global.HiScorePalS2=global.p2Pals global.HiScorePal2=global.p2Pal}
 if playerNO=3 {global.HiScorePalS2=global.p3Pals global.HiScorePal2=global.p3Pal}

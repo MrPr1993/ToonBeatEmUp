@@ -18,7 +18,7 @@ wobbleY=lerp(wobbleY,1,0.1)
 
 if anim=0
 {if handL.anim=9999 handL.anim=0
-if image_xscale=1 lockY=lerp(lockY,oControl.camX+96,0.01) else lockY=lerp(lockY,oControl.camX+320-96,0.01)
+if image_xscale=1 lockX=lerp(lockX,oControl.camX+96,0.01) else lockX=lerp(lockX,oControl.camX+320-96,0.01)
 
 body.image_index=image_index
 }
@@ -43,7 +43,9 @@ if animFrame=clamp(animFrame,1,2)
 {
 if image_xscale=1 specialtimes[0]-=0.45 else specialtimes[0]+=0.45
 x+=specialtimes[0]
-if x=clamp(x,oControl.camX-200,oControl.camX+320+200) animFrame=1.8 else {specialtimes[0]=0 animFrame=3.5}
+if x=clamp(x,oControl.camX-200,oControl.camX+320+200) animFrame=1.8 else {
+	PlaySound(snd_dragon9)
+	specialtimes[0]=0 animFrame=3.5}
 }
 if animFrame>3
 {
@@ -226,7 +228,9 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	
 	
 	if anim=11 //Bite
-	{if animFrame=0 {animFrame=0.01 specialtimes[0]=0  lockX=x sprite_index=spr_dragonmaiden_head}
+	{if animFrame=0 {
+		PlaySound(snd_dragon4)
+		animFrame=0.01 specialtimes[0]=0  lockX=x sprite_index=spr_dragonmaiden_head}
 	selfatk.damage=0.25 selfatk.MoveType=1
 	
 	atkcol_set(14*image_xscale,0,0,3.65,1,89)
@@ -238,7 +242,7 @@ animFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	{lockY=lerp(lockY,targetEnemy.y,0.1)
 lockX-=4*image_xscale
 
-	} else specialtimes[0]+=1
+	} else {specialtimes[0]+=1 PlaySound(snd_dragon5)}
 	}
 	else
 	{sprite_index=spr_dragonmaiden_headbite
@@ -340,12 +344,12 @@ necc.sprite_index=spr_dragonmaiden_headded
 frame_set(0,0,0.01) if animFrame=1 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
 frame_set(1,0,0.01) if animFrame=2 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
 frame_set(2,0,0.01) if animFrame=3 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
-frame_set(3,0,0.25) if animFrame=4 oControl.quakeFXTime=10
-if animFrame>3 {body.z=lerp(body.z,0,0.04) tail.z=lerp(tail.z,body.z,0.01) z=body.z necc.z=body.z-170 }
+frame_set(3,0,0.25) if animFrame=4 {oControl.quakeFXTime=10 PlaySound(snd_dragon1)}
+if animFrame>3 {body.x=oControl.camX+160 necc.x=oControl.camX+160 body.z=lerp(body.z,0,0.04) tail.z=lerp(tail.z,body.z,0.01) z=body.z necc.z=body.z-170 }
 else {z=body.z}
 
 frame_set(4,0,0.01) if body.z>10 if animFrame>4 animFrame=4.1
-if animFrame=5 {isDepth=1 shadowSpr=spr_midshadow x=oControl.camX+320+128 sprite_index=spr_dragonmaiden_head image_xscale=-1}
+if animFrame=5 {PlaySound(snd_dragon2) isDepth=1 shadowSpr=spr_midshadow x=oControl.camX+320+128 sprite_index=spr_dragonmaiden_head image_xscale=-1}
 frame_set(5,0,0.05) if animFrame>5.5 {image_xscale=-1 x=lerp(x,oControl.camX+320-96,0.01)}
 frame_set(6,0,0.2)
 frame_set(7,0,0.2)
@@ -357,7 +361,7 @@ frame_set(12,0,0.2)
 frame_set(13,0,0.2)
 frame_set(14,0,0.01)
 if animFrame>14.5
-{lockY=y lockZ=0 immune=0 anim=0 lockPos=1 canmove=1}
+{lockY=y lockZ=0 immune=0 anim=0 lockPos=1 alarm[1]=100 canmove=1}
 	
 	}
 	

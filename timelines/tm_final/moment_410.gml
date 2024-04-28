@@ -14,4 +14,6 @@ oControl.bossID=boss
 else
 {
 timeline_position-=1
+
+if boss.specialanim!=0 with oEnemySpawner cammoveUP=0
 }

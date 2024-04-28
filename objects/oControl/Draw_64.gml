@@ -976,7 +976,7 @@ for (iI=0; iI<=global.Difficulty; iI+=1)
 {
 if global.MultiVS=0
 {var selecty=c_gray if oControl.multiVSsetting=0 selecty=c_white
-draw_sprite_ext(spr_difficultystar,0,-32*iI+xadd+difadd,120-8,1,1,0,selecty,1)
+draw_sprite_ext(spr_difficultystar,global.Difficulty,-32*iI+xadd+difadd,120-8,1,1,0,selecty,1)
 selecty=c_gray if oControl.multiVSsetting=1 selecty=c_white
 draw_set_color(selecty)
  var onoff="OFF" if global.FriendlyFire onoff="ON" draw_set_halign(fa_center)
@@ -1015,6 +1015,7 @@ if room=rm_hiscore
 yy = 1+hiScoreY;///For the left part's text
 yy2 = 1+hiScoreY;///For the right one's text
 yy3 = 1+hiScoreY;///For the character's face
+yy4 = 1+hiScoreY;
 ///The sprite size I used for the character's face is 
 
 
@@ -1130,6 +1131,17 @@ draw_sprite(spr_playerface,global.HiScoreFace9, 320-96,(yy3++ * 26)-30) pal_swap
 pal_swap_set(global.HiScorePalS10,global.HiScorePal10,false);
 draw_sprite(spr_playerface,global.HiScoreFace10, 320-96,(yy3++ * 26)-30) pal_swap_reset()
 
+
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif1, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif2, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif3, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif4, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif5, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif6, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif7, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif8, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif9, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
+draw_sprite_ext(spr_difficultystar,global.HiScoreDif10, 320-64,(yy4++ * 26)-30+13,0.5,0.5,0,c_white,1)
 
 if global.HiScoreSee=1
 {
@@ -1585,13 +1597,23 @@ if room=rm_map
 
 draw_sprite(spr_stageselecttext,0,160,24)
 
+var textdif="✰";
+if mapDif=1 textdif="✰✰"
+if mapDif=2 textdif="✰✰✰"
+if mapDif=3 textdif="✰✰✰✰"
+if mapDif=4 textdif="✰✰✰✰✰"
 
 draw_set_font(global.scorefont) draw_set_color(c_white)
 draw_set_halign(fa_center)
 if mapSName!="LOCKED"
+{
 draw_text(160,44,string(mapSName)+"\nHIGH SCORE: "+string(mapHighScore))
+draw_text(160,44+24,string(textdif))
+}
 else
 draw_text(160,44,string(mapSName))
+
+
 
 draw_set_halign(fa_left)
 if mapSelected=1

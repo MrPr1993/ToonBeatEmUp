@@ -823,7 +823,7 @@ mapIndex=0
 mapPlayerName="VIVA"
 mapSelected=0
 mapHighScore=0
-
+mapDif=2
 
 ///Skip Intro
 if global.MenuSkip=1
