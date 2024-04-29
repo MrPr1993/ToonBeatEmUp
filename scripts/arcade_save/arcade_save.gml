@@ -15,6 +15,8 @@ if room=rm_stagefinal stagenoset=rm_opening
 ini_write_real("SAVE"+string(global.SaveFileNO), "ROOMID", stagenoset)
 global.SaveNumber=stagenoset
 
+if room=rm_stagefinal global.SaveNumber=0
+
 //var checkwinend=0; if instance_exists(oContinueScreen) checkwinend=continueStageScore
 
 ini_write_real("SAVE"+string(global.SaveFileNO), "ROOMID2", global.SaveNumber)
@@ -22,10 +24,10 @@ ini_write_real("SAVE"+string(global.SaveFileNO), "P1L", global.P1Life)
 ini_write_real("SAVE"+string(global.SaveFileNO), "P2L", global.P2Life)
 ini_write_real("SAVE"+string(global.SaveFileNO), "P3L", global.P3Life)
 ini_write_real("SAVE"+string(global.SaveFileNO), "P4L", global.P4Life)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P1S", global.P1Score+checkwinend)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P2S", global.P2Score+checkwinend)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P3S", global.P3Score+checkwinend)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P4S", global.P4Score+checkwinend)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P1S", global.P1Score)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P2S", global.P2Score)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P3S", global.P3Score)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P4S", global.P4Score)
 ini_write_real("SAVE"+string(global.SaveFileNO), "CONT", global.Continues)
 ini_write_real("SAVE"+string(global.SaveFileNO), "DIF", global.Difficulty)
 ini_write_string("SAVE"+string(global.SaveFileNO), "STG", global.SaveText)

@@ -19,6 +19,9 @@ keyGet3="A"
 else
 {////Set Game Over
 audio_stop_all()
+
+if room=rm_arena 
+
 GoldShow=1
 gold_save()
 stageClearCheck=1

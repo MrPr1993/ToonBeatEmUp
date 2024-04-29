@@ -355,9 +355,12 @@ if global.CheatUnlock[16]=0 shopSelect=16 else shopSelect=-3}
 
 if shopSelect!=-1
 {
-shopCost="COST:"+string(shopPrice)+"\nPENALTY:"+string(shopCheatP)
+shopCost="COST:"+string(shopPrice)+"\n(PENALTY:"+string(shopCheatP)+")"
+if global.CheatUnlock[shopCheatNO]
+{shopPrice=0
 if global.Cheat[shopCheatNO]=0 shopCost="CHEAT:OFF\nPENALTY"+string(shopCheatP)
 if global.Cheat[shopCheatNO]=1 shopCost="CHEAT:ON\nPENALTY"+string(shopCheatP)
+}
 }
 
 if shopselX=4

@@ -47,7 +47,17 @@ setGameOver=2
 GoldShow=global.GoldShow
 //gold_save()
 
+if global.ArenaType=2 or global.ArenaType=3
+{
+GoldGet+=round(p1.PlayerScore/100)
+GoldGet+=round(p2.PlayerScore/100)
+GoldGet+=round(p3.PlayerScore/100)
+GoldGet+=round(p4.PlayerScore/100)
+GoldGet+=round(continueStageScore/100)
+global.Gold+=GoldGet gold_save()
 
+GoldShow=global.GoldShow
+}
 
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1
@@ -60,7 +70,7 @@ else
 gameOverFlash=1 
 audio_stop_all()
 setGameOver=2
-GoldShow=1
+GoldShow=global.GoldShow
 //gold_save()
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1

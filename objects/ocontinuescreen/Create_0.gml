@@ -12,7 +12,7 @@ StageClearCheck=0
 stageClearMode=0
 
 continueStageScore=0
-
+cheatpenalty=0;
 playerGet=1
 
 finalStageEnd=0
@@ -132,6 +132,29 @@ pGet2=0
 pGet3=0
 pGet4=0
 
+cheatpenalty=0
+
+var cheatp1=1000*global.Cheat[1]
+var cheatp2=1000*global.Cheat[2]
+var cheatp3=1000*global.Cheat[3]
+var cheatp4=0*global.Cheat[4]
+var cheatp5=1000*global.Cheat[5]
+var cheatp6=1000*global.Cheat[6]
+var cheatp7=2000*global.Cheat[7]
+var cheatp8=2000*global.Cheat[8]
+var cheatp9=2000*global.Cheat[9]
+var cheatp10=2000*global.Cheat[10]
+var cheatp11=5000*global.Cheat[11]
+var cheatp12=5000*global.Cheat[12]
+var cheatp13=10000*global.Cheat[13]
+var cheatp14=10000*global.Cheat[14]
+var cheatp15=10000*global.Cheat[15]
+var cheatp16=999999*global.Cheat[16]
+
+cheatpenalty+=cheatp1+cheatp2+cheatp3+cheatp4+cheatp5+cheatp6+cheatp7+cheatp8+cheatp9+cheatp10+cheatp11+cheatp12+cheatp13+cheatp14+cheatp15+cheatp16
+
+
+
 
 
 if instance_exists(oControl.p1)
@@ -143,7 +166,7 @@ PlayerScore=oControl.p1.PlayerScore
 actP1=oControl.p1.ContinueMode 
 pP1=1 pGet1=oControl.p1.playerGet
 altresult2Ta=oControl.p1.altresult2Text
-
+oControl.p1.PlayerScore-=cheatpenalty oControl.p1.PlayerScore=clamp(oControl.p1.PlayerScore,0,9999999999)
 }
 else {PlayerLife1=-1 PlayerScore1=0}
 if instance_exists(oControl.p2)
@@ -155,6 +178,7 @@ PlayerScore=oControl.p2.PlayerScore
 actP2=oControl.p2.ContinueMode 
 pP2=1 pGet2=oControl.p2.playerGet
 altresult2Tb=oControl.p2.altresult2Text
+oControl.p2.PlayerScore-=cheatpenalty oControl.p2.PlayerScore=clamp(oControl.p2.PlayerScore,0,9999999999)
 }
 else {PlayerLife2=-1 PlayerScore2=0}
 if instance_exists(oControl.p3)
@@ -166,6 +190,7 @@ PlayerScore=oControl.p3.PlayerScore
 actP3=oControl.p3.ContinueMode 
 pP3=1 pGet3=oControl.p3.playerGet
 altresult2Tc=oControl.p3.altresult2Text
+oControl.p3.PlayerScore-=cheatpenalty oControl.p3.PlayerScore=clamp(oControl.p3.PlayerScore,0,9999999999)
 }
 else {PlayerLife3=-1 PlayerScore3=0}
 if instance_exists(oControl.p4)
@@ -177,6 +202,7 @@ PlayerScore=oControl.p4.PlayerScore
 actP4=oControl.p4.ContinueMode
 pP4=1 pGet4=oControl.p4.playerGet
 altresult2Td=oControl.p4.altresult2Text
+oControl.p4.PlayerScore-=cheatpenalty oControl.p4.PlayerScore=clamp(oControl.p4.PlayerScore,0,9999999999)
 }
 else {PlayerLife4=-1 PlayerScore4=0}
 
@@ -247,27 +273,30 @@ if keyboard_check(vk_shift)
 }
 
 if actP1=0
-continueStageScore+=PlayerScore1-global.P1Score
+continueStageScore+=PlayerScore1-global.P1Score-cheatpenalty
 if actP2=0
-continueStageScore+=PlayerScore2-global.P2Score
+continueStageScore+=PlayerScore2-global.P2Score-cheatpenalty
 if actP3=0
-continueStageScore+=PlayerScore3-global.P3Score
+continueStageScore+=PlayerScore3-global.P3Score-cheatpenalty
 if actP4=0
-continueStageScore+=PlayerScore4-global.P4Score
+continueStageScore+=PlayerScore4-global.P4Score-cheatpenalty
+
+
 
 if global.MenuGlobal!=0
 {
 if actP1=0
-continueStageScore+=global.P1Score
+continueStageScore+=global.P1Score-cheatpenalty
 if actP2=0
-continueStageScore+=global.P2Score
+continueStageScore+=global.P2Score-cheatpenalty
 if actP3=0
-continueStageScore+=global.P3Score
+continueStageScore+=global.P3Score-cheatpenalty
 if actP4=0
-continueStageScore+=global.P4Score
+continueStageScore+=global.P4Score-cheatpenalty
 
 
 }
+
 
 brickgamenum=0
 	

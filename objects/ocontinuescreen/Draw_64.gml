@@ -257,6 +257,16 @@ if newrecord=1 {draw_set_halign(fa_center)
 newrecordframe-=0.25 if newrecordframe<0 newrecordframe=2 if newrecordframe<1 draw_set_color(c_red) else draw_set_color(c_yellow)
 draw_text_transformed(160,220-8,"NEW RECORD!",0.75,1,0)
 }
+
+draw_set_halign(fa_center)
+draw_set_color(c_red)
+if global.MenuGlobal=0 or global.MenuGlobal=1
+if cheatpenalty!=0
+{
+	
+draw_text_transformed(160,140,"CHEAT PENALTY: -"+string(cheatpenalty),0.75,1,0)
+}
+
 draw_set_color(c_white)
 draw_set_halign(fa_right)
 draw_text_transformed(160,220,"STAGE SCORE:",0.75,1,0)
