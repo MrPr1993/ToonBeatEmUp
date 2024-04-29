@@ -603,7 +603,8 @@ spawnUnit=oMsDummy
 spawnType="Enemy"
 spawnNo=0
 
-if global.Cheat[6] {
+
+if global.Cheat[6] and global.NoCheat {
 global.P1Char=choose(0,1,2,3)
 global.P2Char=choose(0,1,2,3)
 global.P3Char=choose(0,1,2,3)

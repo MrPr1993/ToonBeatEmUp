@@ -11,6 +11,7 @@ alarm[0]=120
 if global.NoCheat
 {
 if global.Cheat[6] 
+and global.NoCheat
 {
 if controlNO=1 global.P1Char=choose(0,1,2,3)
 if controlNO=2 global.P2Char=choose(0,1,2,3)
@@ -18,6 +19,7 @@ if controlNO=3 global.P3Char=choose(0,1,2,3)
 if controlNO=4 global.P4Char=choose(0,1,2,3)
 }
 if global.Cheat[7]
+and global.NoCheat
 {
 var randomweapon=choose("HAMMER","TASER","SCIMITAR","PIPE","SHOVEL","PICKAXE","KNIFE","ONI CLUB","SPEAR","TRIDENT","TOMMYGUN","HARPOONGUN","DYNAMITE","KNIFE","PIE","WHIP")
 weapon_add(randomweapon)
@@ -44,7 +46,7 @@ cutSpawn=0
 sentflying=0
 fallHole=0
 
-PlayerLife-=1-1*global.Cheat[14]
+PlayerLife-=1-1*global.Cheat[14]*global.NoCheat
 pow=0
 hp=maxhp
 

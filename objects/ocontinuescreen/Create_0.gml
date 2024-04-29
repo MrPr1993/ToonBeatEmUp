@@ -159,6 +159,8 @@ cheatpenalty+=cheatp1+cheatp2+cheatp3+cheatp4+cheatp5+cheatp6+cheatp7+cheatp8+ch
 
 if instance_exists(oControl.p1)
 {
+oControl.p1.PlayerScore-=cheatpenalty oControl.p1.PlayerScore=clamp(oControl.p1.PlayerScore,0,9999999999)
+
 PlayerLife1=oControl.p1.PlayerLife
 PlayerScore1=oControl.p1.PlayerScore
 hp1=oControl.p1.hp
@@ -166,11 +168,13 @@ PlayerScore=oControl.p1.PlayerScore
 actP1=oControl.p1.ContinueMode 
 pP1=1 pGet1=oControl.p1.playerGet
 altresult2Ta=oControl.p1.altresult2Text
-oControl.p1.PlayerScore-=cheatpenalty oControl.p1.PlayerScore=clamp(oControl.p1.PlayerScore,0,9999999999)
 }
 else {PlayerLife1=-1 PlayerScore1=0}
 if instance_exists(oControl.p2)
 {
+oControl.p2.PlayerScore-=cheatpenalty oControl.p2.PlayerScore=clamp(oControl.p2.PlayerScore,0,9999999999)
+
+
 PlayerLife2=oControl.p2.PlayerLife
 PlayerScore2=oControl.p2.PlayerScore
 hp2=oControl.p2.hp
@@ -178,11 +182,12 @@ PlayerScore=oControl.p2.PlayerScore
 actP2=oControl.p2.ContinueMode 
 pP2=1 pGet2=oControl.p2.playerGet
 altresult2Tb=oControl.p2.altresult2Text
-oControl.p2.PlayerScore-=cheatpenalty oControl.p2.PlayerScore=clamp(oControl.p2.PlayerScore,0,9999999999)
 }
 else {PlayerLife2=-1 PlayerScore2=0}
 if instance_exists(oControl.p3)
 {
+oControl.p3.PlayerScore-=cheatpenalty oControl.p3.PlayerScore=clamp(oControl.p3.PlayerScore,0,9999999999)
+
 PlayerLife3=oControl.p3.PlayerLife
 PlayerScore3=oControl.p3.PlayerScore
 hp3=oControl.p3.hp
@@ -190,11 +195,12 @@ PlayerScore=oControl.p3.PlayerScore
 actP3=oControl.p3.ContinueMode 
 pP3=1 pGet3=oControl.p3.playerGet
 altresult2Tc=oControl.p3.altresult2Text
-oControl.p3.PlayerScore-=cheatpenalty oControl.p3.PlayerScore=clamp(oControl.p3.PlayerScore,0,9999999999)
 }
 else {PlayerLife3=-1 PlayerScore3=0}
 if instance_exists(oControl.p4)
 {
+oControl.p4.PlayerScore-=cheatpenalty oControl.p4.PlayerScore=clamp(oControl.p4.PlayerScore,0,9999999999)
+
 PlayerLife4=oControl.p4.PlayerLife
 PlayerScore4=oControl.p4.PlayerScore
 hp4=oControl.p4.hp
@@ -202,7 +208,6 @@ PlayerScore=oControl.p4.PlayerScore
 actP4=oControl.p4.ContinueMode
 pP4=1 pGet4=oControl.p4.playerGet
 altresult2Td=oControl.p4.altresult2Text
-oControl.p4.PlayerScore-=cheatpenalty oControl.p4.PlayerScore=clamp(oControl.p4.PlayerScore,0,9999999999)
 }
 else {PlayerLife4=-1 PlayerScore4=0}
 
@@ -298,6 +303,7 @@ continueStageScore+=global.P4Score-cheatpenalty
 }
 
 
+
 brickgamenum=0
 	
 p1=instance_create_depth(-99999,0,-1,oPlayerDisembodied) with p1 {canControl=1 controlNO=1 playNO=1
@@ -363,6 +369,11 @@ if continueStageScore>global.LevelHiScore[stagecheck]
 	
 	newrecord=1
 }
+
+continueStageScore-=cheatpenalty
+
+continueStageScore=clamp(continueStageScore,0,99999999999)
+
 if global.Difficulty>=global.LevelDif[stagecheck] global.LevelDif[stagecheck]=global.Difficulty
 
 global.UnlockStage[stagecheck]=1

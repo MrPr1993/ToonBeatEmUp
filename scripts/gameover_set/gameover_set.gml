@@ -20,7 +20,42 @@ else
 {////Set Game Over
 audio_stop_all()
 
-if room=rm_arena 
+if global.ArenaType!=0
+{
+if global.ArenaType=1
+{
+var scorecheck=p1.PlayerScore+p2.PlayerScore+p3.PlayerScore+p4.PlayerScore
+if scorecheck>=global.HiScoreSurvival {global.HiScoreSurvival=scorecheck
+ini_open("GAMEDATA/hiscore.ini");
+ini_write_real("STAGEdata", "Sextra1", global.HiScoreSurvival)
+ini_close()	
+	}
+}
+
+if global.ArenaType=2
+{
+var scorecheck=p1.PlayerScore+p2.PlayerScore+p3.PlayerScore+p4.PlayerScore
+if scorecheck>=global.HiScoreBossBattlesScore {global.HiScoreBossBattlesScore=scorecheck
+ini_open("GAMEDATA/hiscore.ini");
+ini_write_real("STAGEdata", "Sextra3", global.HiScoreBossBattlesScore)
+ini_close()	
+	}
+}
+
+
+GoldShow=1
+GoldGet+=round(p1.PlayerScore/100)
+GoldGet+=round(p2.PlayerScore/100)
+GoldGet+=round(p3.PlayerScore/100)
+GoldGet+=round(p4.PlayerScore/100)
+GoldGet+=round(continueStageScore/100)
+
+if GoldGet!=0
+{
+global.Gold+=GoldGet global.Gold=clamp(global.Gold,0,99999999999) gold_save()
+}
+
+}
 
 GoldShow=1
 gold_save()

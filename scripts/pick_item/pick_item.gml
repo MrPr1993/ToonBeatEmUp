@@ -109,7 +109,7 @@ if item.PickupSound!=-1
 
 	}else if item.food=0 spawnID=-1
 	hp+=item.hp*maxhp//extraheal
-	if item.hp!=0 if global.Cheat[8] hp=maxhp
+	if item.hp!=0 if global.Cheat[8] and global.NoCheat hp=maxhp
 	
 	if item.timeAdd!=0
 	{oControl.alarm[0]=120 

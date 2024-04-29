@@ -264,7 +264,7 @@ if global.MenuGlobal=0 or global.MenuGlobal=1
 if cheatpenalty!=0
 {
 	
-draw_text_transformed(160,140,"CHEAT PENALTY: -"+string(cheatpenalty),0.75,1,0)
+draw_text_transformed(160,90,"CHEAT PENALTY: -"+string(cheatpenalty),0.75,1,0)
 }
 
 draw_set_color(c_white)

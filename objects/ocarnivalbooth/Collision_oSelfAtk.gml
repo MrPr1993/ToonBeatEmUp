@@ -27,7 +27,7 @@ PlaySoundNoStack(snd_metalhit)
 with other.hitSource
 {if object_index=oPlayer
 if weaponAttack=1
-weaponLife-=1-1*global.Cheat[10]
+weaponLife-=1-1*global.Cheat[10]*global.NoCheat
 }
 recovery=10
 shaketime=10
