@@ -8,20 +8,29 @@ ini_open("GAMEDATA/hiscore.ini");
 
 var stagenoset=_no//rm_opening;
 
+
+
 if room=rm_stagefinal stagenoset=rm_opening
 
 ini_write_real("SAVE"+string(global.SaveFileNO), "ROOMID", stagenoset)
+global.SaveNumber=stagenoset
+
+//var checkwinend=0; if instance_exists(oContinueScreen) checkwinend=continueStageScore
+
+ini_write_real("SAVE"+string(global.SaveFileNO), "ROOMID2", global.SaveNumber)
 ini_write_real("SAVE"+string(global.SaveFileNO), "P1L", global.P1Life)
 ini_write_real("SAVE"+string(global.SaveFileNO), "P2L", global.P2Life)
 ini_write_real("SAVE"+string(global.SaveFileNO), "P3L", global.P3Life)
 ini_write_real("SAVE"+string(global.SaveFileNO), "P4L", global.P4Life)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P1S", global.P1Score)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P2S", global.P2Score)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P3S", global.P3Score)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P4S", global.P4Score)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P1S", global.P1Score+checkwinend)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P2S", global.P2Score+checkwinend)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P3S", global.P3Score+checkwinend)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P4S", global.P4Score+checkwinend)
 ini_write_real("SAVE"+string(global.SaveFileNO), "CONT", global.Continues)
 ini_write_real("SAVE"+string(global.SaveFileNO), "DIF", global.Difficulty)
 ini_write_string("SAVE"+string(global.SaveFileNO), "STG", global.SaveText)
+
+
 
 ini_close()
 }
@@ -30,6 +39,8 @@ ini_close()
 
 function arcade_load(_no){
 global.Difficulty=2	
+
+global.SaveNumber=0
 
 global.P1Life=global.LifeStart
 global.P2Life=global.LifeStart
@@ -48,9 +59,11 @@ global.P4ScoreLife=0
 
 global.SaveText="EMPTY";
 
-if global.SaveFileNO=0 or global.SaveNumber=0
+if global.SaveFileNO=0
 {
 global.Difficulty=2
+
+global.SaveNumber=0
 
 global.P1Life=global.LifeStart
 global.P2Life=global.LifeStart
@@ -77,7 +90,10 @@ var defstage=rm_opening; var stagenoset=0;
 
 ini_open("GAMEDATA/hiscore.ini");
 
-stagenoset=ini_read_real("SAVE"+string(global.SaveFileNO), "ROOMID", 0)
+
+
+stagenoset=ini_read_real("SAVE"+string(global.SaveFileNO), "ROOMID", rm_opening)
+global.SaveNumber=ini_read_real("SAVE"+string(global.SaveFileNO), "ROOMID2", 0)
 global.P1Life=ini_read_real("SAVE"+string(global.SaveFileNO), "P1L", global.LifeStart)
 global.P2Life=ini_read_real("SAVE"+string(global.SaveFileNO), "P2L", global.LifeStart)
 global.P3Life=ini_read_real("SAVE"+string(global.SaveFileNO), "P3L", global.LifeStart)
@@ -91,6 +107,8 @@ global.Difficulty=ini_read_real("SAVE"+string(global.SaveFileNO), "DIF", 2)
 global.SaveText=ini_read_string("SAVE"+string(global.SaveFileNO), "STG", "EMPTY")
 
 global.StageGoing=stagenoset;
+
+if global.SaveNumber=0 global.SaveFileNO=0
 
 ini_close()
 

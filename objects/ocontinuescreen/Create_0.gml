@@ -255,6 +255,20 @@ continueStageScore+=PlayerScore3-global.P3Score
 if actP4=0
 continueStageScore+=PlayerScore4-global.P4Score
 
+if global.MenuGlobal!=0
+{
+if actP1=0
+continueStageScore+=global.P1Score
+if actP2=0
+continueStageScore+=global.P2Score
+if actP3=0
+continueStageScore+=global.P3Score
+if actP4=0
+continueStageScore+=global.P4Score
+
+
+}
+
 brickgamenum=0
 	
 p1=instance_create_depth(-99999,0,-1,oPlayerDisembodied) with p1 {canControl=1 controlNO=1 playNO=1
@@ -327,7 +341,12 @@ stagedata_save()
 enemydata_save()
 unlock_save()
 
-arcade_save(stageNext)
+
+
+if global.MenuGlobal!=0
+if global.StageClear=1
+{
+}
 
 if brickgamenum=1 with oPlayerDisembodied x+=160-40
 if brickgamenum=2 with oPlayerDisembodied x+=160-80
@@ -418,7 +437,7 @@ else
 musicplayonce(msc_countdown)
 }
 else
-{
+{arcade_save(stageNext)
 surface_resize(application_surface,320,240)
 surface_save(application_surface,"screenshot")
 surface_resize(application_surface,320,240)

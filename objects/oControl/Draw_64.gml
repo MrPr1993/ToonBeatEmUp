@@ -856,6 +856,8 @@ draw_set_halign(fa_center)
 
 var diftext=""
 var diftext2=""
+if global.SaveNumber=0
+{
 if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)\n(4 LIVES, 5 CONTINUES)" 
 	diftext2="YOU TAKE WAY LESS DAMAGE AND DEAL MORE."
 	global.LifeStart=4; global.Continues=5;}
@@ -874,9 +876,11 @@ if global.Difficulty=3 {diftext="THE MAIN EVENT AT THE CONCERT\n(HARD)\n(2 LIVES
 if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)\n(2 LIVES, 1 CONTINUE)" 
 	diftext2="NOT SUITABLE FOR NEWBIES."
 		global.LifeStart=2; global.Continues=1;}
-	
+
+
 if global.Cheat[2] global.LifeStart=global.LifeStart*2;
 if global.Cheat[15] global.Continues=-1;
+}
 
 if oControl.multiVSsetting=1
 {diftext="FRIENDLY FIRE" 
@@ -898,12 +902,19 @@ draw_text(xadd,128+48,"SAVE FILE")
 var savename="SLOT A" if global.SaveFileNO=2 savename="SLOT B" if global.SaveFileNO=3 savename="SLOT C"
 if global.SaveFileNO=0 savename="NO SAVE"
 
+if global.SaveNumber=0
+{global.SaveFileNO=0
+draw_text(xadd,128+80,"NEW GAME")
+}
+else
+{
 if global.SaveFileNO=0
 draw_text(xadd,128+64,"NO SAVE")
 else
 draw_text(xadd,128+64,string(savename)+"\n"+string(global.SaveText)+"\nTOTAL SCORE\n"+string(
 global.P1Score+global.P2Score+global.P3Score+global.P4Score
 ))
+}
 draw_set_color(c_white)
 }
 

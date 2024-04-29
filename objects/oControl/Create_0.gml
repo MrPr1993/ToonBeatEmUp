@@ -1056,6 +1056,7 @@ p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {con
 }
 p5=instance_create_depth(2400,53,-1,oCharacterSelectPlayer) with p5 {canControl=1 controlNO=9}
 
+if global.MenuGlobal=0
 arcade_load(0)
 }
 

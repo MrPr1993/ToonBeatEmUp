@@ -7,6 +7,8 @@ if charstatsetup=0
 if instance_exists(oPlayer)
 {with oPlayer
 {
+	
+	
 if controlNO=1 {PlayerLife=global.P1Life PlayerScore=global.P1Score character=global.P1Char;
 	
 	}
@@ -18,6 +20,20 @@ if controlNO=3 {PlayerLife=global.P3Life PlayerScore=global.P3Score character=gl
 	}
 if controlNO=4 {PlayerLife=global.P4Life PlayerScore=global.P4Score character=global.P4Char;
 	//lifescore_check(1,playerNO,global.P4ScoreLife,0,1)
+	
+	
+	}
+	
+if global.MenuGlobal!=0 {
+global.P1Score=0
+global.P2Score=0
+global.P3Score=0
+global.P4Score=0
+oPlayer.PlayerScore=0 PlayerLife=global.LifeStart global.Continues=global.ContinueStart
+	global.P1ScoreLife=0
+	global.P2ScoreLife=0
+	global.P3ScoreLife=0
+	global.P4ScoreLife=0
 	}
 
 if global.FriendlyFire {isPlayer=playerNO selfatk.isPlayer=isPlayer}

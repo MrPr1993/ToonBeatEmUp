@@ -273,6 +273,8 @@ alarm[9]=alarmSave[9]
 if room=rm_characterselect
 {
 ///Set up Stats
+if global.SaveNumber=0
+{
 global.P1Life=global.LifeStart
 global.P2Life=global.LifeStart
 global.P3Life=global.LifeStart
@@ -286,6 +288,7 @@ global.P1Life+=global.P1Life*global.Cheat[2]*global.NoCheat
 global.P2Life+=global.P2Life*global.Cheat[2]*global.NoCheat
 global.P3Life+=global.P3Life*global.Cheat[2]*global.NoCheat
 global.P4Life+=global.P4Life*global.Cheat[2]*global.NoCheat
+}
 }
 
 
