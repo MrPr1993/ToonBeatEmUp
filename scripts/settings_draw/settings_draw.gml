@@ -73,6 +73,8 @@ draw_text(160,56+4+16," "+string( round(((global.CRTcustomDistortAM+4.01)*25)/2)
 if global.CRTcustomBorder=1
 draw_text(160,56+4+24," "+string(languagetext[18])) else draw_text(160,56+4+24," "+string(languagetext[19]))
 draw_set_color(c_white)
+if TVfx=8
+draw_text(160,56+4," LCD")
 
 if global.ColorMode=0
 draw_text(160,56+4+32," "+string(languagetext[20]))
@@ -85,7 +87,8 @@ draw_text(160,56+4+32," "+string(languagetext[23]))
 if global.ColorMode=4
 draw_text(160,56+4+32," "+string(languagetext[24]))
 if global.ColorMode=5
-draw_text(160,56+4+32," "+string(languagetext[25]))
+draw_text(160,56+4+32," GB")
+
 
 if global.ArcadeScreen=0
 draw_text(160,56+4+32+8," "+string(languagetext[15])+" "+string(global.ArcadeScreen))
@@ -95,7 +98,10 @@ if global.ArcadeScreen=2
 draw_text(160,56+4+32+8," "+string(languagetext[27])+" "+string(global.ArcadeScreen))
 if global.ArcadeScreen=3
 draw_text(160,56+4+32+8," "+string(languagetext[34])+" "+string(global.ArcadeScreen))
-
+if global.ArcadeScreen=4
+draw_text(160,56+4+32+8," "+string(languagetext[37])+" "+string(global.ArcadeScreen))
+if global.ArcadeScreen=5
+draw_text(160,56+4+32+8," "+string(languagetext[37])+" "+string(global.ArcadeScreen)+" B")
 
 if global.Screenshake=1
 draw_text(160,64+8+48," "+string(languagetext[18])) else draw_text(160,64+8+48," "+string(languagetext[19]))

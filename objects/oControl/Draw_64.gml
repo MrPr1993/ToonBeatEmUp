@@ -902,14 +902,14 @@ draw_text(xadd,128+48,"SAVE FILE")
 var savename="SLOT A" if global.SaveFileNO=2 savename="SLOT B" if global.SaveFileNO=3 savename="SLOT C"
 if global.SaveFileNO=0 savename="NO SAVE"
 
-if global.SaveNumber=0
-{global.SaveFileNO=0
-draw_text(xadd,128+80,"NEW GAME")
+if global.SaveFileNO=0
+{global.SaveNumber=0
+draw_text(xadd,128+64,"NO SAVE")
 }
 else
 {
-if global.SaveFileNO=0
-draw_text(xadd,128+64,"NO SAVE")
+if global.SaveNumber=0
+draw_text(xadd,128+64,"NEW GAME")
 else
 draw_text(xadd,128+64,string(savename)+"\n"+string(global.SaveText)+"\nTOTAL SCORE\n"+string(
 global.P1Score+global.P2Score+global.P3Score+global.P4Score

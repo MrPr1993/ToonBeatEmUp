@@ -63,8 +63,8 @@ if menuSelect=12 {if global.CutsceneSkipSpd<1 global.CutsceneSkipSpd+=0.01 else 
 if -key_left_pressed
 {PlaySound(snd_select)
 	
-	if menuSelect=7 {if global.ColorMode=0 global.ColorMode=4 else global.ColorMode-=1}
-	if menuSelect=8 {if global.ArcadeScreen=0 global.ArcadeScreen=3 else global.ArcadeScreen-=1}
+	if menuSelect=7 {if global.ColorMode=0 global.ColorMode=5 else global.ColorMode-=1}
+	if menuSelect=8 {if global.ArcadeScreen=0 global.ArcadeScreen=5 else global.ArcadeScreen-=1}
 	
 	//Screen Size
 if menuSelect=2 screen_size(0)
@@ -72,7 +72,7 @@ if menuSelect=2 screen_size(0)
 if menuSelect=3 //6
 {
 if global.CRTfx=0
-global.CRTfx=7 else global.CRTfx-=1
+global.CRTfx=8 else global.CRTfx-=1
 TVfx=global.CRTfx
 //if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0
 
@@ -109,12 +109,12 @@ if key_right_pressed or key_A
 {PlaySound(snd_select)
 if menuSelect=2 screen_size(1)
 
-if menuSelect=7 {if global.ColorMode=4 global.ColorMode=0 else global.ColorMode+=1}
-if menuSelect=8 {if global.ArcadeScreen=3 global.ArcadeScreen=0 else global.ArcadeScreen+=1}
+if menuSelect=7 {if global.ColorMode=5 global.ColorMode=0 else global.ColorMode+=1}
+if menuSelect=8 {if global.ArcadeScreen=5 global.ArcadeScreen=0 else global.ArcadeScreen+=1}
 
 if menuSelect=3 //6
 {
-if global.CRTfx=7
+if global.CRTfx=8
 global.CRTfx=0 else global.CRTfx+=1
 //if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0
 TVfx=global.CRTfx

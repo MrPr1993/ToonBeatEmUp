@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function crt_fxset(){
 		
-	if TVfx=0 { var_distort = false; var_distortion_ammount = 0.12; var_border = false;}
+	if TVfx=0 or TVfx=8 { var_distort = false; var_distortion_ammount = 0.12; var_border = false;}
 	if TVfx=1 { var_distort = true; var_distortion_ammount = 0.12; var_border = true;}
 	if TVfx=2 { var_distort = false; var_distortion_ammount = 0.12; var_border = true;}
 	if TVfx=3 { var_distort = true; var_distortion_ammount = 0.12; var_border = false;}
@@ -65,11 +65,17 @@ shader_set(shd_onecolorTV) /// One colo
 
 if global.ColorMode=5
 {
-shader_set(shd_televisionCustom) //customR
-  shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customR"), customR); 
-    shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customB"), customB);
-	  shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customG"), customG);
+shader_set(shd_televisionCustom)
+if TVfx=0
+shader_set(shd_gb) else
+shader_set(shd_gbTV) /// One colo 
+//gameboy
+////  shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customR"), customR); 
+//    shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customB"), customB);
+//	  shader_set_uniform_f(shader_get_uniform(shd_televisionCustom, "customG"), customG);
 }
+
+
   shader_set_uniform_f(uni_crt_sizes, surface_width, surface_height,crt_surface_width, crt_surface_height);
   shader_set_uniform_f(distort, var_distort);
   shader_set_uniform_f(distortion, var_distortion_ammount);
@@ -83,7 +89,16 @@ draw_surface_part_ext(new_surf, 0, 0, view_wview[0], view_hview[0], screenX, scr
 shader_reset();
 
 //draw_sprite_ext(spr_screenfx,0,0,0,(sprite_get_width(spr_screenfx)/(window_get_width()-100))/16,(sprite_get_height(spr_screenfx)/window_get_height())/16,0,c_white,1)
-
+if TVfx=8
+{
+shader_reset()
+draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_lcdfx,0));
+draw_vertex_texture(0, 0, 0, 0);
+draw_vertex_texture(320, 0, 1, 0);
+draw_vertex_texture(0, 240, 0, 1);
+draw_vertex_texture(320, 240, 1, 1);
+draw_primitive_end();
+}
 
 if global.ArcadeScreen!=0
 {
@@ -93,6 +108,10 @@ if global.ArcadeScreen=2
 draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx2,0));
 if global.ArcadeScreen=3
 draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx3,0));
+if global.ArcadeScreen=4
+draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx4,0));
+if global.ArcadeScreen=5
+draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx5,0));
 draw_vertex_texture(-50, 0, 0, 0);
 draw_vertex_texture(320+50, 0, 1, 0);
 draw_vertex_texture(-50, 240, 0, 1);
