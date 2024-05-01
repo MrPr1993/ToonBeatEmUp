@@ -212,6 +212,7 @@ commandL[18]="SPIN"
 commandL[19]="STOP"
 commandL[20]="KEYBOARD"
 commandL[21]="JOYSTICK"
+commandL[22]="DELETE"
 break;
 case 1:
 commandL[0]="SELECCIONAR"
@@ -236,6 +237,7 @@ commandL[18]="GIRAR"
 commandL[19]="DETENER"
 commandL[20]="TECLADO"
 commandL[21]="JOYSTICK"
+commandL[22]="BORRAR"
 break;
 
 }

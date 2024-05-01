@@ -35,7 +35,10 @@ if global.UnlockAltPal=1
 draw_buttontext(320-8,8,8,commandL[2],spr_commandbutton,0,"H","")
 }
 else
+{
 draw_buttontext(320-8,8,8,commandL[1],spr_commandbutton,2,"","")
+draw_buttontext(8,8+16,8,"",spr_commandbutton,0,"H",commandL[22])
+}
 
 }
 
@@ -190,7 +193,9 @@ draw_buttontext(320-8,8,8,commandL[2],spr_commandbutton,7+6*commandMul,"","")
 draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1])
 }
 else
+{draw_buttontext(8,8+16,8,"",spr_commandbutton,7+6*commandMul,"J",commandL[22])
 draw_buttontext(320-8,8,8,commandL[1],spr_commandbutton,5+6*commandMul,"","")
+}
 }
 
 if commandType=3

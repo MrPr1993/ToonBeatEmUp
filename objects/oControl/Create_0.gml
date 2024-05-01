@@ -101,7 +101,9 @@ stagename=""
 minigameselstage=0
 
 multiVSsetting=0;
-charselectgo=1;
+charselectgo=1
+deletefile=0;
+deletefileC=0;
 charsetting=0
 
 if !variable_global_exists("CurrentMusic")

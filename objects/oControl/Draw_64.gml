@@ -815,7 +815,8 @@ if global.MultiVS=0
 if oControl.charsetting=0
 {
 	
-
+if deletefile=0
+{
 if p5.key_up_pressed{var settt=0; if global.MenuGlobal=0 settt=1; if oControl.multiVSsetting=0 oControl.multiVSsetting=1+settt else oControl.multiVSsetting-=1 PlaySound(snd_select)}
 if -p5.key_down_pressed{var settt=0; if global.MenuGlobal=0 settt=1; if oControl.multiVSsetting=1+settt oControl.multiVSsetting=0 else oControl.multiVSsetting+=1 PlaySound(snd_select)}
 
@@ -843,7 +844,7 @@ if -p5.key_left_pressed {if global.SaveFileNO=0 global.SaveFileNO=3 else global.
 
 if p5.key_right_pressed {if global.SaveFileNO=3 global.SaveFileNO=0 else global.SaveFileNO+=1 arcade_load(0) PlaySound(snd_select)}
 }
-
+}
 }
 
 global.MultiSuper=0	
@@ -881,6 +882,17 @@ if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)\n(2 LIVES, 1
 if global.Cheat[2] global.LifeStart=global.LifeStart*2;
 if global.Cheat[15] global.Continues=-1;
 }
+else
+{
+diftext="DIFFICULTY CHANGE IS DISABLED"
+if deletefile=1 {diftext2="DELETE FILE?"
+	draw_text(xadd,128+16,"NO")
+	draw_text(xadd,128+16,"YES")
+	draw_set_halign(fa_left)
+	draw_text(xadd-24,128+16+8*deletefileC,"✰")
+	draw_set_halign(fa_center)
+	}
+}
 
 if oControl.multiVSsetting=1
 {diftext="FRIENDLY FIRE" 
@@ -909,7 +921,7 @@ draw_text(xadd,128+64,"NO SAVE")
 else
 {
 if global.SaveNumber=0
-draw_text(xadd,128+64,"NEW GAME")
+draw_text(xadd,128+64,"EMPTY")
 else
 draw_text(xadd,128+64,string(savename)+"\n"+string(global.SaveText)+"\nTOTAL SCORE\n"+string(
 global.P1Score+global.P2Score+global.P3Score+global.P4Score
@@ -926,6 +938,8 @@ draw_sprite(spr_multisetting,0,160+p5.introtextadd-640,round(32+charselLerp))
 charselectgo=0;
 
 with p5
+{
+if oControl.deletefile=0
 {
 if oControl.charsetting=0
 {
@@ -956,7 +970,25 @@ if oControl.multiVSsetting=3
 if -key_left_pressed {if global.MultiStage=-1 global.MultiStage=18 else global.MultiStage-=1 PlaySound(snd_select)}
 if key_right_pressed {if global.MultiStage=18 global.MultiStage=-1 else global.MultiStage+=1 PlaySound(snd_select)}
 }
+
+
+if key_Y if global.SaveFileNO!=0
+{oControl.deletefileC=0 oControl.deletefile=1}
 }
+}
+else
+{
+{
+if -key_left_pressed or key_right_pressed {deletefileC^=1; PlaySound(snd_select)}
+
+if key_B oControl.deletefile=0
+
+if key_A
+{if deletefileC=0 oControl.deletefile=0 else {oControl.deletefile=0 global.SaveNumber=0 arcade_save(0)} }
+}
+
+}
+
 diftext="LOCKED"
 global.StageGoing=rm_arena
 if global.MultiStage=-1 {oControl.charselectgo=1 diftext="RANDOM"

@@ -125,6 +125,9 @@ if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 
 if global.TrainingRoom=1 or global.MultiVS=2 or global.SkipDifficulty=1 or
 key_A or key_attack {if key_A or key_attack 
+	
+	if oControl.deletefile=0
+	{
 	if oControl.charselectgo=1
 	PlaySound(snd_picked) else PlaySound(snd_steal)
 	
@@ -138,6 +141,7 @@ introtextaddspd=-32
 layer_hspeed("BGbricks",-32)
 	alarm[0]=20
 
+}
 }
 }
 

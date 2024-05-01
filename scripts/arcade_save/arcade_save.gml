@@ -132,7 +132,27 @@ ini_close()
 global.StageGoing=stagenoset;
 
 if global.MenuGlobal=0
-if global.SaveNumber=0 global.StageGoing=rm_opening
+if global.SaveNumber=0 
+{global.StageGoing=rm_opening
+	global.Difficulty=2
+
+global.P1Life=global.LifeStart
+global.P2Life=global.LifeStart
+global.P3Life=global.LifeStart
+global.P4Life=global.LifeStart
+global.P5Life=0
+global.P1Score=0
+global.P2Score=0
+global.P3Score=0
+global.P4Score=0
+
+global.P1ScoreLife=0
+global.P2ScoreLife=0
+global.P3ScoreLife=0
+global.P4ScoreLife=0
+
+global.SaveText="EMPTY";
+}
 
 
 }
