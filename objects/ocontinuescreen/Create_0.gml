@@ -477,7 +477,9 @@ else
 musicplayonce(msc_countdown)
 }
 else
-{arcade_save(stageNext)
+{
+
+
 surface_resize(application_surface,320,240)
 surface_save(application_surface,"screenshot")
 surface_resize(application_surface,320,240)

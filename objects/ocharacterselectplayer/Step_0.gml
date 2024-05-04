@@ -117,12 +117,14 @@ else
 }
 
 if key_B 
+if introbuffer=0
 {
 if global.StageSelect=0 room_goto(rm_menu) else 
 if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 }
 
-
+if introbuffer=0
+{
 if global.TrainingRoom=1 or global.MultiVS=2 or global.SkipDifficulty=1 or
 key_A or key_attack {if key_A or key_attack 
 	
@@ -141,6 +143,7 @@ introtextaddspd=-32
 layer_hspeed("BGbricks",-32)
 	alarm[0]=20
 
+}
 }
 }
 }

@@ -13,7 +13,7 @@ function player_throwitem() {
 	carry=0 if hurt=0 {animFrame=1 //PlaySound(snd_swing)
 	anim=24 item.canGrav=0 item.attack=dropitem item.spdZ=0} else {
 	item.ground=0 item.canGrav=1 item.spdZ=-2 item.carry=0 item.gravLandHalt=1
-	item.attack=0
+	item.attack=0 
 	}
 
 	if hurt=0 {item.hspeed=throwHspd*image_xscale 

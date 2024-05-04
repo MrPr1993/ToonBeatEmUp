@@ -35,6 +35,22 @@ global.Gold+=GoldGet global.Gold=clamp(global.Gold,0,99999999999) gold_save()
 }
 
 }
+
+if global.MenuGlobal=0 and global.SaveFileNO!=0
+{
+global.P1LifeS=global.P1Life
+global.P2LifeS=global.P2Life
+global.P3LifeS=global.P3Life
+global.P4LifeS=global.P4Life
+
+global.P1ScoreS=global.P1Score
+global.P2ScoreS=global.P2Score
+global.P3ScoreS=global.P3Score
+global.P4ScoreS=global.P4Score
+arcade_save(stageNext)
+}
+
+
 }
 
 

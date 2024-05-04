@@ -59,6 +59,8 @@ else
 controlNO=9 controller_setup()
 if key_A
 {PlaySound(snd_picked) canControl=0 fadetoblack=1 alarm[8]=90
+
+
 global.P1Life=global.LifeStart
 global.P2Life=global.LifeStart
 global.P3Life=global.LifeStart
@@ -68,8 +70,6 @@ global.P1Life+=global.P1Life*global.Cheat[2]*global.NoCheat
 global.P2Life+=global.P2Life*global.Cheat[2]*global.NoCheat
 global.P3Life+=global.P3Life*global.Cheat[2]*global.NoCheat
 global.P4Life+=global.P4Life*global.Cheat[2]*global.NoCheat
-
-
 
 global.P1Score=0
 global.P2Score=0

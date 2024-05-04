@@ -100,8 +100,8 @@ frame_set(5,18,0.25) if animFrame>5.75 animFrame=0
 	if ground and fallHole=0
 	{if hashitBack=2 or hashitBack=3 hashitBack-=2
 	if (key_jump_hold and dead=0 and hp!=0 and prevanim!=8 and prevanim!=9)
-	{animFrame=0 anim=25 exit;}///Break out of fall
-
+	{hurt=0 animFrame=0 anim=25 exit;}///Break out of fall
+hurt=1
 	
 		hp-=thrownDMG //The character will take damage if it's a throw attack
 

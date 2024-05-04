@@ -8,7 +8,36 @@ ini_open("GAMEDATA/arcade.ini");
 
 var stagenoset=_no//rm_opening;
 
-
+switch(room)
+{
+case rm_opening: global.SaveText="STAGE 1"; break;
+//Stage 1
+case rm_stage1: global.SaveText="STAGE 2"; break;
+//
+case rm_stage2: global.SaveText="STAGE 3"; break;
+case rm_stage2b: global.SaveText="STAGE 3"; break;
+case rm_stage2c: global.SaveText="STAGE 3"; break;
+//
+case rm_stage4: global.SaveText="STAGE 4"; break;
+case rm_stage3: global.SaveText="STAGE 4"; break;
+case rm_stage5: global.SaveText="STAGE 4"; break;
+//
+case rm_stageswamp: global.SaveText="STAGE 5"; break;
+case rm_stagecarnival: global.SaveText="STAGE 5"; break;
+case rm_stagebeach: global.SaveText="STAGE 5"; break;
+//
+case rm_stageufo: global.SaveText="STAGE 6"; break;
+case rm_stagemermaid: global.SaveText="STAGE 6"; break;
+case rm_stagedesert: global.SaveText="STAGE 6"; break;
+//
+case rm_stagesnow: global.SaveText="STAGE 7"; break;
+case rm_stagecave: global.SaveText="STAGE 7"; break;
+case rm_stageclouds: global.SaveText="STAGE 7"; break;
+//
+case rm_stagelab: global.SaveText="STAGE 8"; break;
+//
+case rm_stagefinal: global.SaveText="END"; break;
+}
 
 if room=rm_stagefinal stagenoset=rm_opening
 
@@ -20,14 +49,20 @@ if room=rm_stagefinal global.SaveNumber=0
 //var checkwinend=0; if instance_exists(oContinueScreen) checkwinend=continueStageScore
 
 ini_write_real("SAVE"+string(global.SaveFileNO), "ROOMID2", global.SaveNumber)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P1L", global.P1Life)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P2L", global.P2Life)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P3L", global.P3Life)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P4L", global.P4Life)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P1S", global.P1Score)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P2S", global.P2Score)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P3S", global.P3Score)
-ini_write_real("SAVE"+string(global.SaveFileNO), "P4S", global.P4Score)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P1L", global.P1LifeS)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P2L", global.P2LifeS)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P3L", global.P3LifeS)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P4L", global.P4LifeS)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P1S", global.P1ScoreS)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P2S", global.P2ScoreS)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P3S", global.P3ScoreS)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P4S", global.P4ScoreS)
+
+ini_write_real("SAVE"+string(global.SaveFileNO), "P1LS", global.P1ScoreLife)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P2LS", global.P2ScoreLife)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P3LS", global.P3ScoreLife)
+ini_write_real("SAVE"+string(global.SaveFileNO), "P4LS", global.P4ScoreLife)
+
 ini_write_real("SAVE"+string(global.SaveFileNO), "CONT", global.Continues)
 ini_write_real("SAVE"+string(global.SaveFileNO), "DIF", global.Difficulty)
 ini_write_string("SAVE"+string(global.SaveFileNO), "STG", global.SaveText)
@@ -41,8 +76,6 @@ ini_close()
 
 function arcade_load(_no){
 global.Difficulty=2	
-
-
 
 global.P1Life=global.LifeStart
 global.P2Life=global.LifeStart
@@ -123,6 +156,12 @@ global.P1Score=ini_read_real("SAVE"+string(global.SaveFileNO), "P1S", 0)
 global.P2Score=ini_read_real("SAVE"+string(global.SaveFileNO), "P2S", 0)
 global.P3Score=ini_read_real("SAVE"+string(global.SaveFileNO), "P3S", 0)
 global.P4Score=ini_read_real("SAVE"+string(global.SaveFileNO), "P4S", 0)
+
+global.P1ScoreLife=ini_read_real("SAVE"+string(global.SaveFileNO), "P1LS", 0)
+global.P2ScoreLife=ini_read_real("SAVE"+string(global.SaveFileNO), "P2LS", 0)
+global.P3ScoreLife=ini_read_real("SAVE"+string(global.SaveFileNO), "P3LS", 0)
+global.P4ScoreLife=ini_read_real("SAVE"+string(global.SaveFileNO), "P4LS", 0)
+
 global.Continues=ini_read_real("SAVE"+string(global.SaveFileNO), "CONT", 3)
 global.Difficulty=ini_read_real("SAVE"+string(global.SaveFileNO), "DIF", 2)
 global.SaveText=ini_read_string("SAVE"+string(global.SaveFileNO), "STG", "EMPTY")
@@ -150,6 +189,8 @@ global.P1ScoreLife=0
 global.P2ScoreLife=0
 global.P3ScoreLife=0
 global.P4ScoreLife=0
+
+
 
 global.SaveText="EMPTY";
 }

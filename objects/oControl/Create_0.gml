@@ -342,6 +342,14 @@ global.P1Score=0
 global.P2Score=0
 global.P3Score=0
 global.P4Score=0
+global.P1ScoreS=0
+global.P2ScoreS=0
+global.P3ScoreS=0
+global.P4ScoreS=0
+global.P1LifeS=0
+global.P2LifeS=0
+global.P3LifeS=0
+global.P4LifeS=0
 
 global.P1ScoreLife=0
 global.P2ScoreLife=0
