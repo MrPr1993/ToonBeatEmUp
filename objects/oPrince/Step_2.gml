@@ -202,6 +202,17 @@ frame_set(1,1,0.25)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25) if animFrame=4
 {PlaySound(snd_prince4)
+
+dust_make_ext(x,y+1,-58,-6,0,0,spr_starfx,current_pal) dustmk.image_speed=0 dustmk.alarm[0]=15 dustmk.hasgrav=1
+dust_make_ext(x,y+1,-58,6,0,0,spr_starfx,current_pal) dustmk.image_speed=0 dustmk.alarm[0]=15 dustmk.hasgrav=1
+dust_make_ext(x,y+1,-58,0,0,-4,spr_starfx,current_pal) dustmk.image_speed=0 dustmk.alarm[0]=15 dustmk.hasgrav=1
+dust_make_ext(x,y+1,-58,0,0,4,spr_starfx,current_pal) dustmk.image_speed=0 dustmk.alarm[0]=15 dustmk.hasgrav=1
+
+dust_make_ext(x,y+1,-58,-6,0,-4,spr_starfx,current_pal) dustmk.image_speed=0 dustmk.alarm[0]=15 dustmk.hasgrav=1
+dust_make_ext(x,y+1,-58,6,0,4,spr_starfx,current_pal) dustmk.image_speed=0 dustmk.alarm[0]=15 dustmk.hasgrav=1
+dust_make_ext(x,y+1,-58,-6,0,4,spr_starfx,current_pal) dustmk.image_speed=0 dustmk.alarm[0]=15 dustmk.hasgrav=1
+dust_make_ext(x,y+1,-58,6,0,-4,spr_starfx,current_pal) dustmk.image_speed=0 dustmk.alarm[0]=15 dustmk.hasgrav=1
+	
 clothes=instance_create_depth(x,y-1,-1,oDisappearPart) with clothes
 {
 disappearTime=24
@@ -220,14 +231,14 @@ sprite_index=spr_prince_clothes image_index=0 image_speed=0
 frame_set(4,4,0.25)
 frame_set(5,5,0.02) if animFrame=6 {PlaySound(snd_prince1)}
 frame_set(6,6,0.25)
-frame_set(7,7+specialtimes[0],0.01)
+frame_set(7,7+specialtimes[0],0.02)
 frame_set(8,9,0.25)
 frame_set(9,10,0.05)
 frame_set(10,11,0.25)
 frame_set(11,12,0.05)
 frame_set(12,11,0.25) if animFrame=13 if specialtimes[1]!=3 {animFrame=9 specialtimes[1]+=1 }
 frame_set(13,13,0.25)
-frame_set(14,14+specialtimes[0],0.001) if animFrame>=14.9 animFrame=15
+frame_set(14,14+specialtimes[0],0.002) if animFrame>=14.9 animFrame=15
 frame_set(15,15,0.25)
 
 if animFrame>14.25 if ground and animFrame!=17.5 {z=-4 zSpeed=-8 ground=0 animFrame=17.5}
