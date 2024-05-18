@@ -1,10 +1,10 @@
 with oPlayer
 {areaEntry=0
 
-x-=60
+x-=80
 }
 
-with oCameoChar {x-=60 isDepth=1 depth=-y}
+with oCameoChar {x-=80 isDepth=1 depth=-y}
 
 
 

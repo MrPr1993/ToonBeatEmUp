@@ -150,10 +150,10 @@ if anim=100
 if animFrame=0 {specialtimes[0]=0}	
 
 if animFrame<1.1
-if !z=0 animFrame=0.5 else if animFrame=0.5 {animFrame=1 PlaySound(snd_hitgroundmetal) oControl.quakeFXTime=10}
+if z!=0 animFrame=0.5 else if animFrame=0.5 and ground {animFrame=1}
 
 specialtimes[0]+=0.25 if specialtimes[0]>=1.9 specialtimes[0]=0
-frame_set(0,0,0.25)
+frame_set(0,0,0.25) if animFrame=1 {animFrame=1 PlaySound(snd_hitgroundmetal) oControl.quakeFXTime=10}
 frame_set(1,1,0.25)
 frame_set(2,2,0.01)
 frame_set(3,3,0.1)
