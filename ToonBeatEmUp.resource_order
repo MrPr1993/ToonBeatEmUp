@@ -2015,6 +2015,7 @@
     {"name":"spr_duck_flat","order":6,"path":"sprites/spr_duck_flat/spr_duck_flat.yy",},
     {"name":"spr_duck_frozen","order":4,"path":"sprites/spr_duck_frozen/spr_duck_frozen.yy",},
     {"name":"spr_duck_hit","order":3,"path":"sprites/spr_duck_hit/spr_duck_hit.yy",},
+    {"name":"spr_duck_inflate","order":16,"path":"sprites/spr_duck_inflate/spr_duck_inflate.yy",},
     {"name":"spr_duck_intro","order":13,"path":"sprites/spr_duck_intro/spr_duck_intro.yy",},
     {"name":"spr_duck_move","order":2,"path":"sprites/spr_duck_move/spr_duck_move.yy",},
     {"name":"spr_duck_quack","order":12,"path":"sprites/spr_duck_quack/spr_duck_quack.yy",},
