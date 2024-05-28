@@ -14,7 +14,7 @@ flashFX(x,y,z,spr_smokesmall,0,1,0,1,1,c_white,1)
 ///Reaction when hit while in inflated state
 if HitType!=45 and anim=45
 {
-animFrame=1 wobbleX=1.1 wobbleY=0.9 
+AnimFrame=1 wobbleX=1.1 wobbleY=0.9 
 sentflying=HitForceReact
 	zSpeed=HitForceReactZ
 exit;
@@ -60,7 +60,7 @@ if hp<=0
 	else
 	sentflying=4*image_xscale
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	}
 	else
@@ -77,7 +77,7 @@ if hp<=0
 	image_index=0+targetHeightHit
 	else if hashitBack=1 image_index=15 else image_index=0 
 	sprite_index=ThrownSpr
-	animFrame=0
+	AnimFrame=0
 	anim=4
 	}
 	}
@@ -91,7 +91,7 @@ if hp<=0
 	else
 	sentflying=4*image_xscale
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	exit;
 	}
@@ -104,7 +104,7 @@ if hp<=0
 	else
 	sentflying=4*image_xscale
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	}
 	}
@@ -115,7 +115,7 @@ if hp<=0
 	ground=0
 	sentflying=2*-image_xscale
 	image_index=11 sprite_index=ThrownSpr
-	animFrame=0
+	AnimFrame=0
 	anim=7 
 	}
 
@@ -128,7 +128,7 @@ if hp<=0
 	zSpeed=HitForceReactZ
 
 	image_index=9
-	animFrame=0
+	AnimFrame=0
 	anim=8
 	}
 
@@ -139,7 +139,7 @@ if hp<=0
 	hurt=1
 	sentflying=0
 	image_index=0 sprite_index=FlatSpr
-	animFrame=0
+	AnimFrame=0
 	anim=9
 	specialDead=9
 	}
@@ -153,7 +153,7 @@ if hp<=0
 	sentflying=HitForceReact
 	zSpeed=HitForceReactZ
 	image_index=0
-	animFrame=0
+	AnimFrame=0
 	anim=40
 	}
 
@@ -171,7 +171,7 @@ if hp<=0
 	zSpeed=HitForceReactZ
 
 	image_index=0 sprite_index=ThrownSpr
-	animFrame=0
+	AnimFrame=0
 	anim=41
 
 	}
@@ -190,7 +190,7 @@ if hp<=0
 
 	if HitType=7///Hit Screen
 	{image_index=0
-	sentflying=0 animFrame=0 anim=43
+	sentflying=0 AnimFrame=0 anim=43
 	}
 
 	////Banana Peel
@@ -204,7 +204,7 @@ if hp<=0
 	sentflying=0
 
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	}
 	
@@ -215,7 +215,7 @@ if hp<=0
 	{
 	hurt=1
 	sprite_index=SpinningSpr image_index=0
-	animFrame=0
+	AnimFrame=0
 	anim=590068
 	}	
 	
@@ -224,7 +224,7 @@ if hp<=0
 	if HitType=591000
 	{hurt=1
 	sprite_index=ThrownSpr image_index=0
-	animFrame=0
+	AnimFrame=0
 	anim=591000
 	sentflying=-2*image_xscale
 	ground=0 zSpeed=-6
@@ -234,7 +234,7 @@ if hp<=0
 	if HitType=591001
 	{hurt=1
 	sprite_index=ThrownSpr image_index=0
-	animFrame=0
+	AnimFrame=0
 	anim=591001
 	sentflying=-2*image_xscale
 	ground=0 zSpeed=-6
@@ -244,7 +244,7 @@ if hp<=0
 	if HitType=591002
 	{hurt=1
 	sprite_index=ThrownSpr image_index=0
-	animFrame=0
+	AnimFrame=0
 	anim=591002
 	sentflying=-2*image_xscale
 	ground=0 zSpeed=-6
@@ -254,7 +254,7 @@ if hp<=0
 	if HitType=591003
 	{hurt=1
 	sprite_index=ThrownSpr image_index=0
-	animFrame=0
+	AnimFrame=0
 	anim=591003 z-=2
 	sentflying=-2*image_xscale
 	ground=0 zSpeed=-6
@@ -270,7 +270,7 @@ if hp<=0
 	zSpeed=HitForceReactZ
 
 	image_index=0
-	animFrame=0
+	AnimFrame=0
 	anim=44
 	}
 	
@@ -285,7 +285,7 @@ wobbleY=0.9
 	sentflying=HitForceReact
 	zSpeed=HitForceReactZ
 	
-	animFrame=0
+	AnimFrame=0
 	anim=45
 	}	
 

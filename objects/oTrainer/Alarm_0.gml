@@ -20,8 +20,8 @@ case 12: ////Training Part
 if trainingnumbers!=0 and trainingnumbers!=17 and trainingnumbers!=18
 {detectsuper=0
 with oPlayer {targetID=-1 canControl=1 
-	if anim!=0 animFrame=0 anim=0 ground=1  canmove=1 y=ystart x=298}
-with oSandbag {anim=0 animFrame=0 ground=1  canmove=1 y=ystart x=xstart}
+	if anim!=0 AnimFrame=0 anim=0 ground=1  canmove=1 y=ystart x=298}
+with oSandbag {anim=0 AnimFrame=0 ground=1  canmove=1 y=ystart x=xstart}
 if instance_exists(oFlashFX) with oFlashFX instance_destroy()
 }
 
@@ -34,7 +34,7 @@ if oPlayer.character=3 tutorialtext="GET CLOSE TO BAGGY AND KICK WITH"
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
 draw_buttontext(244+60,80,8,"",spr_commandbutton,6+6*commandMul,"","")};
 with oSandbag sandbagreact=function() {
-if oPlayer.anim=10 and oSandbag.anim=4 and oSandbag.animFrame<0.5
+if oPlayer.anim=10 and oSandbag.anim=4 and oSandbag.AnimFrame<0.5
 with oTrainer {trainingreact(1)}}} break;
 case 1: 
 {
@@ -72,7 +72,7 @@ with oTrainer {trainingreact(1)}}
 else
 {
 with oSandbag sandbagreact=function() {
-if oPlayer.anim=15 and oPlayer.key_down=0 and oPlayer.sentflying=0 and (oSandbag.anim=5 or oSandbag.anim=7) and oSandbag.animFrame<1
+if oPlayer.anim=15 and oPlayer.key_down=0 and oPlayer.sentflying=0 and (oSandbag.anim=5 or oSandbag.anim=7) and oSandbag.AnimFrame<1
 with oTrainer {trainingreact(1)}}
 }
 

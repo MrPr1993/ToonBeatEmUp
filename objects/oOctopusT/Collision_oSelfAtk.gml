@@ -53,7 +53,7 @@ PlaySoundNoStack(snd_hit)
 flashFX(x,y+2,z-32,spr_hitflash,0,1,5,1,1,c_white,1)
 
 
-anim=4 animFrame=0
+anim=4 AnimFrame=0
 
 }
 }

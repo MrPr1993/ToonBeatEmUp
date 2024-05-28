@@ -19,14 +19,14 @@ if anim=0 or anim=1
 if anim=0
 {
 frame_set(0,0,0.1)
-frame_set(1,1,0.1) if animFrame>2-0.1 animFrame=0
+frame_set(1,1,0.1) if AnimFrame>2-0.1 AnimFrame=0
 
-if foodhp=0 {animFrame=0 anim=2}
+if foodhp=0 {AnimFrame=0 anim=2}
 }
 
 if key_attack if anim!=10
-if anim=0 or (anim=1 and animFrame>1)
-{animFrame=0 anim=1 eatframe^=1;
+if anim=0 or (anim=1 and AnimFrame>1)
+{AnimFrame=0 anim=1 eatframe^=1;
 	//if meter=clamp(meter,2+16,78-16) win=1 else win=0
 
 	//PlaySound(voice1)
@@ -35,20 +35,20 @@ if anim=0 or (anim=1 and animFrame>1)
 
 if anim=1
 {
-frame_set(0,2+2*eatframe,0.1) if animFrame=1 {foodhp-=1; foodno+=1
+frame_set(0,2+2*eatframe,0.1) if AnimFrame=1 {foodhp-=1; foodno+=1
 	PlaySoundNoStack(snd_eat)	
-		if foodhp<1 {animFrame=0 anim=10}
+		if foodhp<1 {AnimFrame=0 anim=10}
 	}
 frame_set(1,3+2*eatframe,0.1)
 frame_set(2,3+2*eatframe,0.1)
-if animFrame>3-0.1 {animFrame=0 anim=0}
+if AnimFrame>3-0.1 {AnimFrame=0 anim=0}
 }
 
 
 ///SWING
 if anim=10
 {
-if animFrame=0
+if AnimFrame=0
 {
 oEatingContestGame.resulttext1="BONUS"
 
@@ -85,7 +85,7 @@ if win=0 haslose=1;
 
 frame_set(0,6,0.1)	
 frame_set(1,7+2*haslose,0.1)	
-frame_set(2,8+2*haslose,0.1) if animFrame>2-0.1 {animFrame=1
+frame_set(2,8+2*haslose,0.1) if AnimFrame>2-0.1 {AnimFrame=1
 
 	if controlNO=1	oEatingContestGame.p1Over=1
 		if controlNO=2	oEatingContestGame.p2Over=1

@@ -1,5 +1,5 @@
 /// @description Stage Start
-if oPlayer.anim=220 and oPlayer.animFrame<5
+if oPlayer.anim=220 and oPlayer.AnimFrame<5
 timeline_position-=1
 else
 {

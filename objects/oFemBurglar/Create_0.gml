@@ -79,5 +79,5 @@ specialtaunt=function()
 sprite_index=spr_femburglar_idle1
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
-if animFrame>1.9 animFrame=0
+if AnimFrame>1.9 AnimFrame=0
 }

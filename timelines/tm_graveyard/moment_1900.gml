@@ -13,7 +13,7 @@ image_alpha=0.8
 	
 with oPlayer
 {
-anim=304 animFrame=0 PlaySound(DeathCry)
+anim=304 AnimFrame=0 PlaySound(DeathCry)
 }
 
 

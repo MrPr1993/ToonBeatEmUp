@@ -8,7 +8,7 @@ depth=-y
 if anim=0
 {sprite_index=standSpr
 frame_set(0,0,0.1)
-frame_set(1,1,0.1) if animFrame>2 animFrame=0
+frame_set(1,1,0.1) if AnimFrame>2 AnimFrame=0
 frame_set(2,1,0.1)
 }
 
@@ -17,7 +17,7 @@ if anim=1
 frame_set(0,2,0.1)
 frame_set(1,3,0.1)
 frame_set(2,3,0.1)
-if animFrame>2 animFrame=0
+if AnimFrame>2 AnimFrame=0
 }
 
 if petID!=-1
@@ -32,7 +32,7 @@ if anim=2
 frame_set(0,2,0.1)
 frame_set(1,3,0.1)
 frame_set(2,3,0.1)
-if animFrame>2 animFrame=0
+if AnimFrame>2 AnimFrame=0
 if foeID1=-1 and foeID2=-1 and foeID3=-1 and foeID4=-1 and foeID5=-1 and foeID6=-1 and foeID7=-1 and foeID8=-1 and foeID9=-1
 anim=0
 }

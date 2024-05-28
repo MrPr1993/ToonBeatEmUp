@@ -33,7 +33,7 @@ if oDragonMaiden.anim=0
  
  if oControl.betatest=1 and keyboard_check_pressed(vk_tab) byetime=260
  
-if  byetime>260 {byetime=0 animFrame=0 anim=10}
+if  byetime>260 {byetime=0 AnimFrame=0 anim=10}
 }
 }
 
@@ -45,12 +45,12 @@ else {image_xscale=-1 x=oControl.camX+320+90}
 
 anim=choose(11,12,13,14)
 lockZ=0 z=0
-animFrame=0 specialtimes[0]=0  specialtimes[1]=0
+AnimFrame=0 specialtimes[0]=0  specialtimes[1]=0
 }
 
 if anim=11 ///Attack
 {
-if animFrame=0 {animFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_hand}
+if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_hand}
 	selfatk.damage=0.25 selfatk.MoveType=1
 	
 	atkcol_set(136,0,0,3.75,1,88)
@@ -71,28 +71,28 @@ specialtimes[0]+=1
 	{lockY=lerp(lockY,targetEnemy.y,0.1)
 lockX-=4*image_xscale
 
-	} else {animFrame=0.5 specialtimes[0]=200}
+	} else {AnimFrame=0.5 specialtimes[0]=200}
 	}
 if specialtimes[0]=200
 	{sprite_index=spr_dragonmaiden_handattack1
 	lockZ=0
 	
-	frame_set(0,0,0) if animFrame<=2 {lockX+=16*image_xscale atk=1
+	frame_set(0,0,0) if AnimFrame<=2 {lockX+=16*image_xscale atk=1
 		
 	if (image_xscale=1 and x>targetEnemy.x-100) or (image_xscale=-1 and x<targetEnemy.x+100)
 	or (image_xscale=1 and x>oControl.camX-20) or (image_xscale=-1 and x<oControl.camX+320+20)
-	animFrame=2} else atk=0
+	AnimFrame=2} else atk=0
 	frame_set(1,0,01)
-	if animFrame=2 {oControl.quakeFXTime=10}
+	if AnimFrame=2 {oControl.quakeFXTime=10}
 	frame_set(2,1,0.5)
 	frame_set(3,2,0.05)	
 	frame_set(4,1,0.01)
-	if animFrame>4.5 {canmove=1 anim=0}
+	if AnimFrame>4.5 {canmove=1 anim=0}
 	}}
 
 if anim=14 ///Flick
 {atkcol_set(111+53,0,-5,2.95,1,118)
-if animFrame=0 {animFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
+if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
 atk=0
 if specialtimes[0]<160
 {sprite_index=spr_dragonmaiden_handattack2 image_index=0
@@ -107,11 +107,11 @@ specialtimes[0]+=1
 }
 if specialtimes[0]=160
 {
-	frame_set(1,0,0.25) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+	frame_set(1,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
 	frame_set(2,1,0.5)
 	frame_set(3,2,0.05)
 	frame_set(4,2,0.1)
-	if animFrame>4.5 {canmove=1 anim=0}
+	if AnimFrame>4.5 {canmove=1 anim=0}
 }
 
 }
@@ -119,7 +119,7 @@ if specialtimes[0]=160
 if anim=13 ///Slam
 {atkcol_set(114,0,-2,4.35,1,50)
 
-if animFrame=0 {animFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
+if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
 atk=0
 if specialtimes[0]<160
 {sprite_index=spr_dragonmaiden_handattack3 image_index=0
@@ -135,15 +135,15 @@ specialtimes[0]+=1
 lockZ=lerp(lockZ,-96,0.05)
 }
 if specialtimes[0]=160
-{if animFrame<1.5 lockZ+=specialtimes[1] specialtimes[1]+=0.45
-	//frame_set(1,0,0.25)// if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
-	if animFrame=1 {atk=1  z=lockZ if z>0 {animFrame=2 oControl.quakeFXTime=10 PlaySound(snd_quakeground) z=0 lockZ=0}} else atk=0
-	if animFrame=2 animFrame=3
+{if AnimFrame<1.5 lockZ+=specialtimes[1] specialtimes[1]+=0.45
+	//frame_set(1,0,0.25)// if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
+	if AnimFrame=1 {atk=1  z=lockZ if z>0 {AnimFrame=2 oControl.quakeFXTime=10 PlaySound(snd_quakeground) z=0 lockZ=0}} else atk=0
+	if AnimFrame=2 AnimFrame=3
 	
 	frame_set(2,0,0.5)
 	frame_set(3,0,0.05)
 	frame_set(4,0,0.1)
-	if animFrame>4.5 {canmove=1 anim=0}
+	if AnimFrame>4.5 {canmove=1 anim=0}
 }
 	
 }
@@ -151,7 +151,7 @@ if specialtimes[0]=160
 if anim=12 ///Grab
 {atkcol_set(145,0,-1,2.45,1,88)
 
-if animFrame=0 {animFrame=1 image_index=0 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack4}
+if AnimFrame=0 {AnimFrame=1 image_index=0 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack4}
 atk=0
 if specialtimes[0]<160
 {sprite_index=spr_dragonmaiden_handattack4 image_index=0
@@ -166,11 +166,11 @@ specialtimes[0]+=1
 }
 if specialtimes[0]=160
 {
-	frame_set(1,0,0.25) if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+	frame_set(1,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
 	frame_set(2,1,0.5)
 	frame_set(3,1,0.05)
 	frame_set(4,0,0.1)
-	if animFrame>4.5 {canmove=1 anim=0}
+	if AnimFrame>4.5 {canmove=1 anim=0}
 }
 
 }
@@ -182,7 +182,7 @@ if anim!=6666
 {
 with targetID
 {
-animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
 throw_quickrelease() ground=0 zSpeed=-2 sentflying=-1*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
 canmove=1 hurt=0 recovery=30
 }
@@ -191,13 +191,13 @@ canmove=1 hurt=0 recovery=30
 if anim=6666 ///Grab Enemy
 {
 	
-if animFrame=0 PlaySound(snd_dragon3)
+if AnimFrame=0 PlaySound(snd_dragon3)
 canBounce=0
 isThrow=1 //hud_show()
 throwing=1
 comboBreak=0
 selfatk.recovery=90
-if animFrame>0.1
+if AnimFrame>0.1
 Throw=0 else {image_index=0 Throw=1 grabMax=0}
 sprite_index=spr_dragonmaiden_handattack4b
 if image_index<1
@@ -249,7 +249,7 @@ HitType=1
 	else
 	sentflying=4*image_xscale
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 
 sentflying=-2*image_xscale zSpeed=-2
@@ -259,7 +259,7 @@ if targetID!=-1
 targetID.x=x+24*image_xscale
 with targetID
 {
-animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
 throw_quickrelease() ground=0 zSpeed=-2 sentflying=-1*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
 canmove=1 hurt=0 recovery=30
 }
@@ -279,7 +279,7 @@ if targetID.anim!=30 and targetID.anim!=31
 targetID.ground=0 
 targetID=-1
 
-throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+throwing=0 AnimFrame=0 anim=0 canmove=1 throwcombo=2
 alarm[1]=2
 }}
 
@@ -296,15 +296,15 @@ targetID.image_xscale=-image_xscale targetID.depth=depth+1
 grabX=12*image_xscale grabY=0 grabZ=z-20 
 
 atk=0 
-animFrame+=0.02 if animFrame>4 {///Let go of enemy to attack
+AnimFrame+=0.02 if AnimFrame>4 {///Let go of enemy to attack
 grabX=0 grabY=0 grabZ=0 //targetID.hp-=0.05+extradamage
 if targetID!=-1
 with targetID
 {recovery=10 isGrabbed=0
 hurt=1 Throw=0
-atk=0 canmove=0 animFrame=0 ground=0 zSpeed=-4 sentflying=-2*image_xscale image_index=GrabFrame anim=5 shaketime=10
+atk=0 canmove=0 AnimFrame=0 ground=0 zSpeed=-4 sentflying=-2*image_xscale image_index=GrabFrame anim=5 shaketime=10
 canmove=0 hurt=1
-}throwing=0 animFrame=0 anim=0 canmove=0 throwcombo=2 canmove=1 alarm[0]=60
+}throwing=0 AnimFrame=0 anim=0 canmove=0 throwcombo=2 canmove=1 alarm[0]=60
 targetID=-1 }
 
 
@@ -319,23 +319,23 @@ if targetID.hp<0 or targetID.dead=1
 {
 with targetID
 {
-	animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+	AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
 	HitForceReact=-4*image_xscale throw_quickrelease() ground=0 zSpeed=-4 sentflying=-2*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
 }
-throwing=0 animFrame=0 canmove=1 throwcombo=2 alarm[0]=60
+throwing=0 AnimFrame=0 canmove=1 throwcombo=2 alarm[0]=60
 }
 }
 }
 
 
 ////Forcibly Break Out With Special Attacks
-if animFrame>0.1 and targetID!=-1
+if AnimFrame>0.1 and targetID!=-1
 {
 if targetID.key_right_pressed
 or targetID.key_right_pressed
 or targetID.key_jump
 or targetID.key_attack
-animFrame+=0.25
+AnimFrame+=0.25
 
 ////Instantly use Special
 if (targetID.key_shield_pressed or targetID.key_super)
@@ -346,7 +346,7 @@ with targetID {anim=0 hurt=0 ground=0 isGrabbed=0
 
 powlock=1 pow=0 
 if pow>4 powcheck=1 else if hp>=powhp powcheck=0
-canmove=0 targetID=-1 animFrame=0 atk=1
+canmove=0 targetID=-1 AnimFrame=0 atk=1
 anim=17 throwATK=0
    recovery=60}
 targetID=-1
@@ -361,9 +361,9 @@ targetID=-1
 if anim=4 or anim=5 or anim=6 or anim=7 ///Disappear
 {byetime=0
 lockX-=10*image_xscale	
-animFrame+=0.1
+AnimFrame+=0.1
 if oDragonMaiden.dead=0
-if animFrame>20 {hp=0.1 animFrame=0 anim=0} 
+if AnimFrame>20 {hp=0.1 AnimFrame=0 anim=0} 
 }
 
 if lockPos

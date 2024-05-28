@@ -46,9 +46,9 @@ if spawned=2
 		//spawn.zSpeed=-4
 		if hp!=-1
 		{spawn.hp=hp; spawn.maxhp=maxhp;}
-		//with spawnEnemy {hurt=1 canmove=0 animFrame=10 anim=25}
+		//with spawnEnemy {hurt=1 canmove=0 AnimFrame=10 anim=25}
 		
-		if 	spawnAnim!=-1 {spawn.anim=spawnAnim; spawn.animFrame=spawnAnimFrame; spawn.canmove=spawnCanMove; }
+		if 	spawnAnim!=-1 {spawn.anim=spawnAnim; spawn.AnimFrame=spawnAnimFrame; spawn.canmove=spawnCanMove; }
 		
 		
 		}

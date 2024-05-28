@@ -76,7 +76,7 @@ if key_up_pressed {if soundSelect=1 soundSelect=5 else soundSelect-=1}
 if -key_down_pressed {if soundSelect=5 soundSelect=1 else soundSelect+=1}
 
 	if key_B
-if playingsongname="" {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 audio_stop_all() settings_save() room_goto(rm_menu) animFrame=0} else {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 animFrame=0 audio_stop_all() playingsongname=""
+if playingsongname="" {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 audio_stop_all() settings_save() room_goto(rm_menu) AnimFrame=0} else {dancer1turn=1 dancer2turn=1 dancer3turn=1 dancer4turn=1 AnimFrame=0 audio_stop_all() playingsongname=""
 dancer1img=1
 dancer2img=1
 dancer3img=1
@@ -92,7 +92,7 @@ if soundSelect=1 /////Select Music
 
 if key_A {
 
-	{audio_stop_all() animFrame=0
+	{audio_stop_all() AnimFrame=0
 	playingsongname=songname
 playingloop=0
 	songID=audio_play_sound(playingSound,1,0)

@@ -17,14 +17,14 @@ frame_set(1,30,0.1)
 frame_set(2,29,0.1)
 frame_set(3,30,0.1)}
 else if songline<5.7
-{if image_index=clamp(image_index,29,32) {image_index=28 animFrame=0} 
+{if image_index=clamp(image_index,29,32) {image_index=28 AnimFrame=0} 
 frame_set(0,28,0.1)
 frame_set(1,27,0.1)
 frame_set(2,27,0.1)
 frame_set(3,27,0.1) 
 }
 else if songline<9
-{if image_index>26 {image_index=28 animFrame=0} 
+{if image_index>26 {image_index=28 AnimFrame=0} 
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
@@ -32,14 +32,14 @@ frame_set(3,1,0.1)
 }
 else
 if songline<11.5
-{if image_index>26 {image_index=28 animFrame=0} 
+{if image_index>26 {image_index=28 AnimFrame=0} 
 frame_set(0,6,0.1)
 frame_set(1,7,0.1)
 frame_set(2,8,0.1)
 frame_set(3,6,0.1) 
 }
 else if songline<12
-{animFrame=0 image_index=16 
+{AnimFrame=0 image_index=16 
 	dancer1turn=-1
 	dancer2turn=-1
 	dancer3turn=-1
@@ -54,7 +54,7 @@ frame_set(3,4,0.1)
 	}
 
 
-if animFrame>3.9 animFrame=0
+if AnimFrame>3.9 AnimFrame=0
 break;
 
 

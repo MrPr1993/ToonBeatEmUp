@@ -162,11 +162,11 @@ else
 {
 if key_punchback
 if canmove=1 and ground
-{canmove=0 animFrame=0 anim=83}
+{canmove=0 AnimFrame=0 anim=83}
 
 if key_taunt
 if canmove=1 and ground
-{canmove=0 animFrame=0 anim=84}
+{canmove=0 AnimFrame=0 anim=84}
 
 
 ///Attack

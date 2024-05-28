@@ -13,7 +13,7 @@ zSpeed=0
 carMode=1
 carAnim=0
 canmove=0
-animFrame=0
+AnimFrame=0
 anim=200
 }
 

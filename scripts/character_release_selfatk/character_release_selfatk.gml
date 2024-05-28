@@ -1,4 +1,4 @@
-///character_release(ground,zSpeed,senflying,hitBack,animFrame,anim)
+///character_release(ground,zSpeed,senflying,hitBack,AnimFrame,anim)
 function character_release_selfatk(argument0, argument1, argument2, argument3, argument4, argument5) {
 
 	if !place_free(x+1*image_xscale,y)
@@ -13,7 +13,7 @@ function character_release_selfatk(argument0, argument1, argument2, argument3, a
 	zSpeed=argument1//-4
 	sentflying=argument2//2*-image_xscale
 	hitBack=argument3//0
-	animFrame=argument4//3
+	AnimFrame=argument4//3
 	anim=argument5//5
 	image_yscale=1
 	ThrowDamage=0

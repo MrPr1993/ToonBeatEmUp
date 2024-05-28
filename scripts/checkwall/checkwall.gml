@@ -10,7 +10,7 @@ function checkwall() {
 
 	PlaySoundNoStack(snd_hitground)
 
-	animFrame=3 canBounce=0
+	AnimFrame=3 canBounce=0
 
 	senflying=-sentflying zSpeed-=4
 	if hitBack=0 hitBack=1 else hitBack=0

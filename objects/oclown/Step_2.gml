@@ -25,10 +25,10 @@ overwriteAttack3=1
 	{
 	 hit=0  sprite_index=spr_clown_attack
 MoveType=0 damage=0.1
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	
 
@@ -48,13 +48,13 @@ weaponanim_2(weaponspr2,weaponIndex2,-28,-68,456,weaponcolor)}
 	
 	if anim=12
 	{
-	frame_set(0,0,0.05)	if animFrame<1 {z-=2}
-	frame_set(1,1,0.1) if animFrame=clamp(animFrame,1,2) sentflying=6*image_xscale
+	frame_set(0,0,0.05)	if AnimFrame<1 {z-=2}
+	frame_set(1,1,0.1) if AnimFrame=clamp(AnimFrame,1,2) sentflying=6*image_xscale
 	else sentflying=0
-	if sentflying=6*image_xscale {animFrame=1
+	if sentflying=6*image_xscale {AnimFrame=1
 		if (image_xscale=1 and x=clamp(x,targetEnemy.x-32,targetEnemy.x))	
 		or (image_xscale=-1 and x=clamp(x,targetEnemy.x,targetEnemy.x+32))	
-		{sentflying=0 animFrame=2}
+		{sentflying=0 AnimFrame=2}
 		}
     frame_set(2,2,0.5)
 	frame_set(3,3,0.1)
@@ -62,9 +62,9 @@ weaponanim_2(weaponspr2,weaponIndex2,-28,-68,456,weaponcolor)}
 	
 	 hit=0  sprite_index=spr_clown_attack2
 MoveType=1 damage=0.1
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,2,2.5) atk=1 else atk=0
- if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,2,2.5) atk=1 else atk=0
+ if AnimFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	
 		if image_index=clamp(image_index,0,0.9)
@@ -89,7 +89,7 @@ weaponanim(weaponspr,weaponIndex,-32,-64,477,weaponcolor)}
 	if anim=13
 	{z+=2 sprite_index=spr_clown_drop image_index+=0.2 zSpeed=0
 		
-	if ground {animFrame=5 recovery=0 recoveryThrow=0 anim=10}
+	if ground {AnimFrame=5 recovery=0 recoveryThrow=0 anim=10}
 	
 	weaponanim(weaponspr,weaponIndex,8,-41,-47*image_xscale,weaponcolor)
 	weaponanim_2(weaponspr2,weaponIndex2,-3,-38,-54*image_xscale,weaponcolor)
@@ -104,17 +104,17 @@ frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25) 
 frame_set(3,3,0.5) 
-if animFrame=4 { specialtimes[0]=0
+if AnimFrame=4 { specialtimes[0]=0
 PlaySoundNoStack(snd_swing2)
 
 if weaponspr2=spr_jugglepin
-{animFrame=4.5 
+{AnimFrame=4.5 
 
 projectile_create(x+54*image_xscale,y,z-41,16,spr_jugglepin,4*image_xscale,mask_small,spr_hitflash2,0.2,1,1,4,-4)
 weaponspr2=-1
 }
 }
-if animFrame=clamp(animFrame,4,5)
+if AnimFrame=clamp(AnimFrame,4,5)
 {atk=0
 	
 	
@@ -123,11 +123,11 @@ else {atk=0
 	weaponhide2=1;
 	}
 }
-frame_set(4,4,0.01) if animFrame=5 {
+frame_set(4,4,0.01) if AnimFrame=5 {
 if weaponspr2=-1 {weaponspr2=weaponspr weaponspr=-1}
 }
 frame_set(5,0,0.25)
-if animFrame>5.7 canmove=1
+if AnimFrame>5.7 canmove=1
 if image_index=clamp(image_index,0,0.9)
 {weaponanim(weaponspr,weaponIndex,36,-83,84,weaponcolor)
 weaponanim_2(weaponspr2,weaponIndex2,-21,-75,92,weaponcolor)}

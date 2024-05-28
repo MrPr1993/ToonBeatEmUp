@@ -3,20 +3,20 @@ function character_hitanims() {
 	{
 		
 if anim=4 
-{if animFrame=0 {wobbleX=1 wobbleY=1}
+{if AnimFrame=0 {wobbleX=1 wobbleY=1}
 if targetHeightHit=0 {if wobbleX<1.2 {wobbleX+=0.01 wobbleY+=0.01} else {wobbleX=1 wobbleY=1}}
 if targetHeightHit=1 {if wobbleY<1.2 {wobbleY+=0.01 wobbleX-=0.01} else {wobbleX=1 wobbleY=1}}
 if targetHeightHit=2 {if wobbleX<1.2 {wobbleX+=0.01 wobbleY-=0.01} else {wobbleX=1 wobbleY=1}}
 }
 if anim=5
 {
-if animFrame<=3 {wobbleX=0.8 wobbleY=1.2}
+if AnimFrame<=3 {wobbleX=0.8 wobbleY=1.2}
 
 if ground 
 {wobbleX=1.2 wobbleY=0.8}
 }
 if anim=9
-if animFrame=0 {wobbleX=1.4 wobbleY=0.4}
+if AnimFrame=0 {wobbleX=1.4 wobbleY=0.4}
 
 wobbleX=lerp(wobbleX,1,0.1)
 wobbleY=lerp(wobbleY,1,0.1)
@@ -27,12 +27,12 @@ wobbleY=lerp(wobbleY,1,0.1)
 	hurt=1
 	sentflying=HitForceReact
 	if hitBack=0
-	image_index=animFrame+targetHeightHit
+	image_index=AnimFrame+targetHeightHit
 	else
-	if hashitBack=1 image_index=15 else image_index=animFrame+targetHeightHit
+	if hashitBack=1 image_index=15 else image_index=AnimFrame+targetHeightHit
 
 	 image_speed=0
-	animFrame+=0.05 if animFrame>1-0.05 {hurt=0
+	AnimFrame+=0.05 if AnimFrame>1-0.05 {hurt=0
 
 	if dizzyHit=0
 	{canmove=1}
@@ -40,7 +40,7 @@ wobbleY=lerp(wobbleY,1,0.1)
 	if hasDizzy=0
 	{image_index=GrabFrame image_speed=0}
 
-	animFrame=0 anim=42 }
+	AnimFrame=0 anim=42 }
 
 	}
 	}
@@ -53,7 +53,7 @@ wobbleY=lerp(wobbleY,1,0.1)
 	//////If dead get cut
 //	if cutDMG=1 and hasCut=0
 	if hp<=0 and hasCut=1 and cutDMG!=0
-	{animFrame=0 anim=1337 exit;}
+	{AnimFrame=0 anim=1337 exit;}
 		
 	atk=0 sprite_index=ThrownSpr
 	hurt=1
@@ -62,16 +62,16 @@ wobbleY=lerp(wobbleY,1,0.1)
 if hashitBack=0 or hashitBack=1
 {
 	if hitBack=0
-	{image_index=animFrame }
+	{image_index=AnimFrame }
 	else
 	{if hashitBack=1
-	image_index=animFrame+13 else image_index=animFrame}
+	image_index=AnimFrame+13 else image_index=AnimFrame}
 
 
 
 
-	image_speed=0 animFrame=clamp(animFrame,3,5)
-	animFrame+=0.1
+	image_speed=0 AnimFrame=clamp(AnimFrame,3,5)
+	AnimFrame+=0.1
 }
 if hashitBack=2 or hashitBack=3
 {
@@ -83,7 +83,7 @@ frame_set(2,16,0.25)
 frame_set(3,5,0.25)
 frame_set(4,4,0.25)
 frame_set(5,3,0.25)
-if animFrame>5.75 animFrame=0
+if AnimFrame>5.75 AnimFrame=0
 }
 else
 {
@@ -92,7 +92,7 @@ frame_set(1,4,0.25)
 frame_set(2,5,0.25)
 frame_set(3,16,0.25)
 frame_set(4,17,0.25)
-frame_set(5,18,0.25) if animFrame>5.75 animFrame=0
+frame_set(5,18,0.25) if AnimFrame>5.75 AnimFrame=0
 }
 }
 
@@ -100,7 +100,7 @@ frame_set(5,18,0.25) if animFrame>5.75 animFrame=0
 	if ground and fallHole=0
 	{if hashitBack=2 or hashitBack=3 hashitBack-=2
 	if (key_jump_hold and dead=0 and hp!=0 and prevanim!=8 and prevanim!=9)
-	{hurt=0 animFrame=0 anim=25 exit;}///Break out of fall
+	{hurt=0 AnimFrame=0 anim=25 exit;}///Break out of fall
 hurt=1
 	
 		hp-=thrownDMG //The character will take damage if it's a throw attack
@@ -120,7 +120,7 @@ hurt=1
  
 	 recovery=10 
  
-	 animFrame=6.8 anim=6
+	 AnimFrame=6.8 anim=6
  
 	///if hitBackFaceDown=1 and hashitBackFaceDown=1
 	///{sentflying=-sentflying hitBack=1 hasBounce=1}
@@ -137,9 +137,9 @@ hurt=1
 	{charThrown=0 recovery=30 
 	hurt=1 sprite_index=ThrownSpr
 	if hitBack=0
-	image_index=animFrame 
+	image_index=AnimFrame 
 	else
-	if hashitBack=1 image_index=animFrame+13 else image_index=animFrame
+	if hashitBack=1 image_index=AnimFrame+13 else image_index=AnimFrame
 
 	Throw=0
 
@@ -147,22 +147,22 @@ hurt=1
 	if hp<=0 if dead=0 {dead=1 alarm[2]=30}
 
 	if dead=0
-	animFrame=clamp(animFrame,6,12)
+	AnimFrame=clamp(AnimFrame,6,12)
 	else
-	animFrame=clamp(animFrame,6,8)
+	AnimFrame=clamp(AnimFrame,6,8)
 
-	if animFrame<9
+	if AnimFrame<9
 	{
-	if animFrame<7 animFrame+=0.2 else
+	if AnimFrame<7 AnimFrame+=0.2 else
 	{
-	if animFrame<8
-	animFrame+=0.4
-	else animFrame+=0.02}
-	}else animFrame+=0.4
+	if AnimFrame<8
+	AnimFrame+=0.4
+	else AnimFrame+=0.02}
+	}else AnimFrame+=0.4
 
-	if animFrame>1 and canBounce=1 and hasBounce=1
+	if AnimFrame>1 and canBounce=1 and hasBounce=1
 	{canBounce=0
-	animFrame=4
+	AnimFrame=4
 	if hitBack=0
 	sentflying=-2*image_xscale
 	else
@@ -174,9 +174,9 @@ hurt=1
 	anim=5
 	}
 
-	if animFrame>10.8 {
+	if AnimFrame>10.8 {
 	if dizzyHit=0 {hurt=0 canmove=1 recoveryThrow=10}
-	else {animFrame=0 anim=42
+	else {AnimFrame=0 anim=42
 
 	if hasDizzy=0
 	{image_index=GrabFrame image_speed=0}
@@ -202,14 +202,14 @@ hurt=1
 	}
 
 
-	animFrame+=0.1
+	AnimFrame+=0.1
 	//Land on ground
-	if animFrame>3 if ground{
+	if AnimFrame>3 if ground{
 	hp-=thrownDMG 
 	
 		if (key_jump_hold and dead=0 and hp!=0 and prevanim!=8 and prevanim!=9)
-	{animFrame=0 anim=25 exit;}///Break out of fall
-	{animFrame=7 anim=6}}
+	{AnimFrame=0 anim=25 exit;}///Break out of fall
+	{AnimFrame=7 anim=6}}
 	}
 
 
@@ -221,7 +221,7 @@ hurt=1
 			
 			if !ground
 			{
-			if animFrame=0
+			if AnimFrame=0
 			{if cutDMG=1 sprite_index=cutSpr1 if cutDMG=2 sprite_index=cutSpr1B
 if cutSpawn<0.9 {cutSpawn+=0.1 sprite_index=ThrownSpr image_index=3}
 else
@@ -247,15 +247,15 @@ with cutSelf
 	}
 	cutSpawn=1
 	}
-	 animFrame=1
+	 AnimFrame=1
 }
 	}	
 		}
 	else
 	{
-		frame_set(1,1,0.5) if animFrame=2
+		frame_set(1,1,0.5) if AnimFrame=2
  { ////Start disappearing
-	if image_index!=2.75 animFrame=3
+	if image_index!=2.75 AnimFrame=3
 	{image_index=2.75
 	dead=1 alarm[2]=30
 	hground=instance_create_depth(x,y,0,oFlashFX)
@@ -275,16 +275,16 @@ with cutSelf
 	hurt=1 recovery=120 prevanim=8
 	image_index+=0.5
 	if image_index>2 image_index=0
-	animFrame+=0.1 
+	AnimFrame+=0.1 
 	if !ground
 	sentflying=HitForceReact
 	else sentflying=0
 	//Land on ground
-	if animFrame>3
+	if AnimFrame>3
 	if ground
-	{hp-=thrownDMG {animFrame=3 anim=5}}
+	{hp-=thrownDMG {AnimFrame=3 anim=5}}
 	else
-	{hp-=thrownDMG {animFrame=3 anim=5}}
+	{hp-=thrownDMG {AnimFrame=3 anim=5}}
 	}
 
 	if anim=9 ///Flattened
@@ -301,13 +301,13 @@ with cutSelf
 	if dead=0 {dead=1 alarm[2]=30}
 
 	if dead=0
-	animFrame+=0.01
+	AnimFrame+=0.01
 	sentflying=0
 	zSpeed=0
-	if animFrame>1
+	if AnimFrame>1
 	{
-	if dead=1 {specialDead=9 animFrame=0 anim=6 zSpeed=-2}
-	else {specialDead=0 animFrame=6.8 anim=6 zSpeed=-2}}
+	if dead=1 {specialDead=9 AnimFrame=0 anim=6 zSpeed=-2}
+	else {specialDead=0 AnimFrame=6.8 anim=6 zSpeed=-2}}
 
 	}
 
@@ -315,7 +315,7 @@ with cutSelf
 	if overwriteBurn=0
 	{
 	hurt=1 recovery=30
-	image_index=animFrame image_speed=0
+	image_index=AnimFrame image_speed=0
 	if image_index<4
 	sprite_index=BurnSpr
 	else
@@ -328,8 +328,8 @@ with cutSelf
 	sentflying=HitForceReact
 	else sentflying=0
 
-	if animFrame=clamp(animFrame,0,1.9) animFrame+=0.1
-	if animFrame=clamp(animFrame,2,2.9) animFrame+=0.025
+	if AnimFrame=clamp(AnimFrame,0,1.9) AnimFrame+=0.1
+	if AnimFrame=clamp(AnimFrame,2,2.9) AnimFrame+=0.025
 
 	if hp<=0 if isEnemy=1 {if hplayer=0 {if dead=0 {hplayertake=hp dead=1 alarm[2]=90
 		
@@ -340,9 +340,9 @@ with cutSelf
 		}
 
 	if dead=0
-	{if animFrame>2.9 {hurt=0 canmove=1}}
+	{if AnimFrame>2.9 {hurt=0 canmove=1}}
 	else
-	if animFrame=clamp(animFrame,2.9+0.025,7.5) animFrame+=0.5
+	if AnimFrame=clamp(AnimFrame,2.9+0.025,7.5) AnimFrame+=0.5
 
 
 	}
@@ -358,10 +358,10 @@ with cutSelf
 
 	if dead=0
 	if key_attack or key_jump
-	{animFrame+=0.1 shaketime=10}
+	{AnimFrame+=0.1 shaketime=10}
 
 	if dead=0
-	if animFrame>0.5 {recovery=0 hurt=0}
+	if AnimFrame>0.5 {recovery=0 hurt=0}
 
 	image_index=0
 
@@ -370,11 +370,11 @@ with cutSelf
 	if dead=0 {dead=1 alarm[2]=30}
 
 	if dead=0
-	animFrame+=0.01
-	if animFrame>2
+	AnimFrame+=0.01
+	if AnimFrame>2
 	{
-	if dead=1 {specialDead=9 animFrame=0 anim=6 }
-	else {frozen_fx() hurt=0 canmove=1 specialDead=0 animFrame=0 anim=0 recovery=60}}
+	if dead=1 {specialDead=9 AnimFrame=0 anim=6 }
+	else {frozen_fx() hurt=0 canmove=1 specialDead=0 AnimFrame=0 anim=0 recovery=60}}
 
 	}
 
@@ -398,7 +398,7 @@ with cutSelf
 	if overwriteDizzy=0
 	{spdZ=0 if z<0 z+=0.45 else z=0
 		
-	if animFrame=0 {if x!=clamp(x,oControl.camX-4,oControl.camX+320+4) {canmove=1 hurt=0}}	
+	if AnimFrame=0 {if x!=clamp(x,oControl.camX-4,oControl.camX+320+4) {canmove=1 hurt=0}}	
 		
 	hurt=0 dizzyHit=0
 	if hasDizzy=1
@@ -410,7 +410,7 @@ with cutSelf
 	sprite_index=ThrownSpr
 	else
 	sprite_index=DizzySpr
-	if animFrame>10 {hurt=0 canmove=1} else animFrame+=0.05
+	if AnimFrame>10 {hurt=0 canmove=1} else AnimFrame+=0.05
 	
 	
 	}
@@ -419,16 +419,16 @@ with cutSelf
 	{
 	sprite_index=ScreenHitSpr
 
-	if y<__view_get( e__VW.YView, 0)+240-8 {if image_index<1.5 image_index+=0.5 y+=8 zSpeed=0 z-=4 animFrame=0}
+	if y<__view_get( e__VW.YView, 0)+240-8 {if image_index<1.5 image_index+=0.5 y+=8 zSpeed=0 z-=4 AnimFrame=0}
 	else
 	{
 	if image_index<1.8 {image_index=2 oControl.quakeFXTime=10 PlaySound(snd_hitground)
 		wobbleX=1.25 wobbleY=1.25
 		}
 
-	zSpeed=0 if animFrame<3.7 image_index=2 else image_index=3
-	animFrame+=0.1 if !ground z+=0.1
-	if animFrame>4 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
+	zSpeed=0 if AnimFrame<3.7 image_index=2 else image_index=3
+	AnimFrame+=0.1 if !ground z+=0.1
+	if AnimFrame>4 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
 	}
 	}
 	
@@ -442,24 +442,24 @@ frame_set(0,0,0.025)
 else
 {
 frame_set(0,0,0.025)
-if animFrame<0.5 shaketime=2
-if animFrame>0.9
+if AnimFrame<0.5 shaketime=2
+if AnimFrame>0.9
 {
 hurt=0
-canmove=1 animFrame=0}
+canmove=1 AnimFrame=0}
 }
 frame_set(1,1,0.2)
 frame_set(2,2,0.2)
 frame_set(3,3,0.2)
 frame_set(4,4,0.2)
-frame_set(5,5,0.2) if animFrame=5.8
+frame_set(5,5,0.2) if AnimFrame=5.8
 {dead=1 alarm[2]=30}
 	
 	}
 	
 	if anim=45 ///Inflate
 	{mask_index=mask_mid
-if animFrame=0 {sprite_index=inflateSpr specialtimes[4]=0 animFrame=1}
+if AnimFrame=0 {sprite_index=inflateSpr specialtimes[4]=0 AnimFrame=1}
 
 if dead=0
 {
@@ -500,19 +500,19 @@ else {image_index=6.5 sprite_index=mask_none}
 	specialtimes[4]+=1
 	
 	if dead=0
-if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+if specialtimes[4]>160 {AnimFrame=0 anim=4 targetHeightHit=0 AnimFrame=0.9}
 	}
 	
 if anim=590067 { sprite_index=SpookyMonthSpr
-if animFrame>3.9 animFrame=0
+if AnimFrame>3.9 AnimFrame=0
 frame_set(0,0,0.2)
 frame_set(1,1,0.2)
 frame_set(2,2,0.2)
 frame_set(3,1,0.2)
 }
 
-if anim=590068 { sprite_index=SpinningSpr animFrame+=0.25 image_index+=0.5
-if animFrame>12 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
+if anim=590068 { sprite_index=SpinningSpr AnimFrame+=0.25 image_index+=0.5
+if AnimFrame>12 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
 }
 
 
@@ -520,9 +520,9 @@ if animFrame>12 {HitType=1 event_user(0) sentflying=0 zSpeed=4}
 if anim=591000
 {sprite_index=spr_frog sentflying=0
 	
-if hp=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
+if hp=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr AnimFrame=0 anim=5}
 	
-if animFrame=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) specialtimes[4]=0; animFrame=1}
+if AnimFrame=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) specialtimes[4]=0; AnimFrame=1}
 
 
 if ground
@@ -531,7 +531,7 @@ frame_set(1,0,0.25)
 frame_set(2,1,0.25)
 frame_set(3,2,0.25)
 frame_set(4,3,0.25)
-frame_set(5,2,0.25) if animFrame>6 animFrame=1
+frame_set(5,2,0.25) if AnimFrame>6 AnimFrame=1
 }
 else
 {
@@ -572,17 +572,17 @@ if ground=1
 {if key_right image_xscale=1
 	if -key_left image_xscale=-1
 	
-	zSpeed=-4 ground=0 animFrame=1
+	zSpeed=-4 ground=0 AnimFrame=1
 }
 
 	if key_jump and ground
-	{animFrame=1
+	{AnimFrame=1
 	ground=0 zSpeed=-8 PlaySound(snd_jump)
 	}
 
 
 
-if specialtimes[4]>160 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+if specialtimes[4]>160 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) AnimFrame=0 anim=4 targetHeightHit=0 AnimFrame=0.9}
 }
 
 
@@ -590,9 +590,9 @@ if specialtimes[4]>160 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1
 if anim=591001
 {sprite_index=wrapSpr sentflying=0
 	
-if hp=0 {canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
+if hp=0 {canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr AnimFrame=0 anim=5}
 	
-if animFrame=0 {specialtimes[4]=0; animFrame=1}
+if AnimFrame=0 {specialtimes[4]=0; AnimFrame=1}
 
 
 if ground
@@ -638,26 +638,26 @@ if ground=1
 {if key_right image_xscale=1
 	if -key_left image_xscale=-1
 	
-	zSpeed=-3 ground=0 animFrame=1
+	zSpeed=-3 ground=0 AnimFrame=1
 }
 
 	if key_jump and ground
-	{animFrame=1
+	{AnimFrame=1
 	ground=0 zSpeed=-3 PlaySound(snd_jump)
 	}
 
 
 
-if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+if specialtimes[4]>160 {AnimFrame=0 anim=4 targetHeightHit=0 AnimFrame=0.9}
 }
 
 /////Transformation Pig
 if anim=591002
 {sprite_index=pigSpr sentflying=0
 	
-if hp=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
+if hp=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr AnimFrame=0 anim=5}
 	
-if animFrame=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) specialtimes[4]=0; specialtimes[3]=0 animFrame=1 specialtimes[5]=0;}
+if AnimFrame=0 {flashFX(x,y+2,z-16,spr_smokemid,0,0.25,100,1,1,c_white,1) specialtimes[4]=0; specialtimes[3]=0 AnimFrame=1 specialtimes[5]=0;}
 
 specialtimes[5]=0
 if key_right or -key_left or key_up or key_down
@@ -677,7 +677,7 @@ frame_set(1,2,0.25)
 frame_set(2,2,0.25)
 frame_set(3,0,0.25)
 frame_set(4,0,0.25)
-frame_set(5,2,0.25) if animFrame>6 animFrame=1
+frame_set(5,2,0.25) if AnimFrame>6 AnimFrame=1
 }
 else
 {
@@ -685,7 +685,7 @@ frame_set(1,1,0.25)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
 frame_set(4,2,0.25)
-frame_set(5,2,0.25) if animFrame>4 animFrame=1
+frame_set(5,2,0.25) if AnimFrame>4 AnimFrame=1
 }
 
 }
@@ -720,12 +720,12 @@ var formspd=2;
 }
 
 	if key_jump and ground
-	{animFrame=1
+	{AnimFrame=1
 	ground=0 zSpeed=-6 PlaySound(snd_jump)
 	}
 
 
-if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+if specialtimes[4]>160 {AnimFrame=0 anim=4 targetHeightHit=0 AnimFrame=0.9}
 }
 
 
@@ -733,9 +733,9 @@ if specialtimes[4]>160 {animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
 if anim=591003
 {sprite_index=bubSpr sentflying=0
 	
-if hp=0 {canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr animFrame=0 anim=5}
+if hp=0 {canmove=0 sentflying=-2*image_xscale zSpeed=-4 sprite_index=ThrownSpr AnimFrame=0 anim=5}
 	
-if animFrame=0 {specialtimes[4]=0; animFrame=1}
+if AnimFrame=0 {specialtimes[4]=0; AnimFrame=1}
 
 
 if zSpeed>-3
@@ -777,13 +777,13 @@ if ground=1
 {//if key_right image_xscale=1
 //	if -key_left image_xscale=-1
 	
-	//zSpeed=-3 ground=0 animFrame=1
+	//zSpeed=-3 ground=0 AnimFrame=1
 }
 
 
 if ground {
 	flashFX(x,y,z,spr_bubblepop,0,0.25,10,image_xscale,1,c_white,1)
-	zSpeed=-2 animFrame=0 anim=4 targetHeightHit=0 animFrame=0.9}
+	zSpeed=-2 AnimFrame=0 anim=4 targetHeightHit=0 AnimFrame=0.9}
 }
 
 

@@ -4,7 +4,7 @@ shadow=spr_shadow
 
 anim=0
 
-animFrame=0
+AnimFrame=0
 
 image_speed=0
 

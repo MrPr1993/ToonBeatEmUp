@@ -18,6 +18,9 @@ cast=instance_create_depth(4082,178,-1,oFlashFX) with cast
 		else {MaxY=240 specialscript=-1;}
 	}
 	}
+
+
+
 }
 else
 timeline_position-=1;

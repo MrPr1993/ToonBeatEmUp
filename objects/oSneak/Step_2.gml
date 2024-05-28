@@ -66,7 +66,7 @@ if current_pal=4 anim=choose(12,12,13,14)///All
 }
 else
 {rangeAtk=160
-animFrame=0
+AnimFrame=0
 if special0=0 and bombRecharge=0 and instance_number(oBomb)<3 {bombRecharge=choose(320,400,480,560) special0=1 
 if current_pal=1 anim=14 else anim=12
 	special1=320} else anim=12
@@ -86,16 +86,16 @@ if anim=11 ///Attack Stand
 { hit=0  
 atkcol_set(35,0,42,1.85,1,22)
 sprite_index=AtkSpr MoveType=1 damage=0.2
-image_index=animFrame image_speed=0 if animFrame=2 {PlaySoundNoStack(snd_swing) PlaySoundNoStack(snd_enemy1)}
- if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0 if animFrame==clamp(animFrame,2,2.2) sentflying=4*image_xscale else sentflying=0
-if animFrame=clamp(animFrame,0,1.5)
-animFrame+=0.1 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+image_index=AnimFrame image_speed=0 if AnimFrame=2 {PlaySoundNoStack(snd_swing) PlaySoundNoStack(snd_enemy1)}
+ if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0 if AnimFrame==clamp(AnimFrame,2,2.2) sentflying=4*image_xscale else sentflying=0
+if AnimFrame=clamp(AnimFrame,0,1.5)
+AnimFrame+=0.1 else AnimFrame+=0.1 if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 }}
 
 if anim=12 ///Attack Slide
-{hit=0  if animFrame=0 {specialtimes[0]=0}
+{hit=0  if AnimFrame=0 {specialtimes[0]=0}
 sprite_index=AtkSpr2 MoveType=1 damage=0.15
-image_index=animFrame image_speed=0
+image_index=AnimFrame image_speed=0
 
 selfatk.height=4
 
@@ -107,50 +107,50 @@ frame_set(4,3,0.1)
 frame_set(5,3,0.1)
 frame_set(6,2,0.1)
 
-if animFrame=clamp(animFrame,3,6) 
+if AnimFrame=clamp(AnimFrame,3,6) 
 {atk=1 canbeGrabbed=0
 
 if specialtimes[0]=0 {dust_make(x-8*image_xscale,y,z,-2*image_xscale,0,0) specialtimes[0]=4}
 else specialtimes[0]-=1;
 
-if animFrame=clamp(animFrame,3,4) 
+if AnimFrame=clamp(AnimFrame,3,4) 
 if place_free(x+4*image_xscale,y) x+=4*image_xscale
-if animFrame=clamp(animFrame,4.1,5) 
+if AnimFrame=clamp(AnimFrame,4.1,5) 
 if place_free(x+2*image_xscale,y) x+=4*image_xscale
-if animFrame=clamp(animFrame,5.1,6) 
+if AnimFrame=clamp(AnimFrame,5.1,6) 
 if place_free(x+1*image_xscale,y) x+=2*image_xscale
 
 } else atk=0
 
-if animFrame>6.8 {canmove=1 anim=0 animFrame=0 alarm[1]=120}
+if AnimFrame>6.8 {canmove=1 anim=0 AnimFrame=0 alarm[1]=120}
 }
 else
 {canbeGrabbed=1 selfatk.height=64}
 
 if anim=13 ///Air Kick
-{if animFrame=0 sprite_index=spr_sneak_airattack atkcol_set(28,0,10,1.45,1,29) MoveType=1
+{if AnimFrame=0 sprite_index=spr_sneak_airattack atkcol_set(28,0,10,1.45,1,29) MoveType=1
 frame_set(0,0,0.05)
-if animFrame=1 {PlaySoundNoStack(snd_enemy1) image_index=1 sentflying=3*image_xscale ground=0 zSpeed=-4}
+if AnimFrame=1 {PlaySoundNoStack(snd_enemy1) image_index=1 sentflying=3*image_xscale ground=0 zSpeed=-4}
 frame_set(1,1,0.1)
-if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=ThrownSpr image_index=10 sentflying=0 atk=0} else {sprite_index=spr_sneak_airattack sentflying=3*image_xscale atk=1}
+if AnimFrame>1.5 if ground {AnimFrame+=0.1 sprite_index=ThrownSpr image_index=10 sentflying=0 atk=0} else {sprite_index=spr_sneak_airattack sentflying=3*image_xscale atk=1}
 
-if animFrame>3 and ground {canmove=1}
+if AnimFrame>3 and ground {canmove=1}
 }
 
 if anim=14 ///Item Throw Attack
 { hit=0  
 sprite_index=spr_sneak_throwitemb MoveType=0 damage=0.1
-image_index=animFrame image_speed=0
+image_index=AnimFrame image_speed=0
 
-if animFrame=3
+if AnimFrame=3
 {bomb=instance_create_depth(x+30*image_xscale,y,depth,oBomb) bomb.z=z-70 PlaySoundNoStack(snd_swing)
 bomb.spdX=1.5*image_xscale bomb.ground=0 bomb.spdZ=-8 bomb.trigger=1
 
 }
 
 atk=0
-if animFrame=clamp(animFrame,0,1.5)
-animFrame+=0.2 else animFrame+=0.1 if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0
+if AnimFrame=clamp(AnimFrame,0,1.5)
+AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0
 
 
 }}
@@ -159,8 +159,8 @@ animFrame+=0.2 else animFrame+=0.1 if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=
 if anim=9912
 {selfatk.spriteFX=mask_none
 	atkcol_set(13,0,0,0.85,1,1) damage=0 MoveType=0
-animFrame+=0.01 //selfatk.HitSound=-1
-if animFrame<0.25 {sprite_index=StandSpr image_index=1}
+AnimFrame+=0.01 //selfatk.HitSound=-1
+if AnimFrame<0.25 {sprite_index=StandSpr image_index=1}
 else
 {
 if targetEnemy.anim=30 or targetEnemy=31
@@ -173,26 +173,26 @@ if y!=clamp(y,targetEnemy.y-2,targetEnemy.y+2)
 if y>targetEnemy.y {if place_free(x,y-1) y-=1}
 else {if place_free(x,y+1) y+=1}
 }
-if animFrame>2 {atk=0 canmove=1 anim=0}
+if AnimFrame>2 {atk=0 canmove=1 anim=0}
 }
 
 if anim=6666 ///Grab Enemy
-{if animFrame=0 sprite_index=spr_sneak_throw shaketime=0 shake=0
+{if AnimFrame=0 sprite_index=spr_sneak_throw shaketime=0 shake=0
 isThrow=1 hud_show()
 throwing=1
 selfatk.image_xscale=0
 comboBreak=0
 selfatk.recovery=90
-if animFrame>0.1
+if AnimFrame>0.1
 Throw=0 else {Throw=1 grabMax=0}
 
 
-frame_set(0,0,0.1) if animFrame=1 image_xscale=-image_xscale
+frame_set(0,0,0.1) if AnimFrame=1 image_xscale=-image_xscale
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
 frame_set(3,3,0.1)
 frame_set(4,3,0.1)
-if animFrame>4.5 {canmove=1 exit;}
+if AnimFrame>4.5 {canmove=1 exit;}
 
 if targetID!=-1 
 {
@@ -213,26 +213,26 @@ targetID.recovery=0
 
 targetID.depth=depth+1
 
-if animFrame<1
+if AnimFrame<1
 {targetID.x=x+32*image_xscale targetID.z=z targetID.image_index=24
 	targetID.image_xscale=-image_xscale
 	}
 
-if animFrame=clamp(animFrame,1,2)
+if AnimFrame=clamp(AnimFrame,1,2)
 {targetID.x=x-9*image_xscale targetID.image_index=16
 targetID.z=z-10 targetID.image_xscale=image_xscale} 
 
-if animFrame=clamp(animFrame,2,3) {targetID.image_index=17
+if AnimFrame=clamp(AnimFrame,2,3) {targetID.image_index=17
 targetID.x=x-3*image_xscale targetID.image_xscale=image_xscale
 targetID.z=z-32}
 
 
-if animFrame>3
+if AnimFrame>3
 {targetID.z=z-8
 with targetID
 {thrownAtkDmg=0.1
-animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0 ThrowDamage=0.1
-throw_quickrelease() ground=0 zSpeed=-8 sentflying=4*image_xscale hurt=1 hitBack=1 animFrame=0 anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
+AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0 ThrowDamage=0.1
+throw_quickrelease() ground=0 zSpeed=-8 sentflying=4*image_xscale hurt=1 hitBack=1 AnimFrame=0 anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
 recovery=30}
 throwing=0 throwcombo=2 shaketime=0 shake=0
 targetID=-1
@@ -255,13 +255,13 @@ alarm[1]=2
 
 
 ////Forcibly Break Out With Special Attacks
-if animFrame<1 and targetID!=-1
+if AnimFrame<1 and targetID!=-1
 {
 if targetID.key_right_pressed
 or targetID.key_right_pressed
 or targetID.key_jump
 or targetID.key_attack
-animFrame+=0.25
+AnimFrame+=0.25
 
 ////Instantly use Special
 if (targetID.key_shield_pressed or targetID.key_super)
@@ -272,7 +272,7 @@ with targetID {anim=0 hurt=0 ground=0 isGrabbed=0
 
 powlock=1 pow=0 
 if pow>4 powcheck=1 else if hp>=powhp powcheck=0
-canmove=0 targetID=-1 animFrame=0 atk=1
+canmove=0 targetID=-1 AnimFrame=0 atk=1
 anim=17 throwATK=0
    recovery=60}
 targetID=-1
@@ -286,12 +286,12 @@ targetID=-1
 if anim=810 ///Gun Fire
 {specialcheck3=4
 	
-if animFrame=2.0
-or animFrame=2.8
-or animFrame=3.8
-or animFrame=4.8
-or animFrame=5.8
-or animFrame=6.8
+if AnimFrame=2.0
+or AnimFrame=2.8
+or AnimFrame=3.8
+or AnimFrame=4.8
+or AnimFrame=5.8
+or AnimFrame=6.8
 {
 PlaySoundNoStack(snd_gun)
 flashFX(x+34*image_xscale,y,z-42,spr_gunflash,0,1,0,1,1,c_white,1)
@@ -304,8 +304,8 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.025)
  //1
 
-//	if animFrame=0
-	//or animFrame=0.8 or animFrame=1.6 or animFrame=2.4  or animFrame=3.2
+//	if AnimFrame=0
+	//or AnimFrame=0.8 or AnimFrame=1.6 or AnimFrame=2.4  or AnimFrame=3.2
 frame_set(2,1,0.2)
 frame_set(3,2,0.2)
 frame_set(4,1,0.2) //2 
@@ -321,7 +321,7 @@ frame_set(13,0,0.25)
 
 
 
-if animFrame>13.75 {atk=0 canmove=1}
+if AnimFrame>13.75 {atk=0 canmove=1}
 
 
 if image_index=clamp(image_index,0,0.9)
@@ -397,13 +397,13 @@ weaponanim(weaponspr,weaponIndex,-2,-39,12*image_xscale,weaponcolor)
 }
 
 	if anim=61 ///Newspaper
-{if animFrame=0 {specialtimes[0]=0 sprite_index=spr_sneak_newspaper} specialtimes[0]+=0.05 if specialtimes[0]=2 specialtimes[0]=0 MoveType=1 prevanim=61
-frame_set(0,specialtimes[0]=0,0)  if animFrame<0.5 if x=clamp(x,targetX-idleRange,targetX+idleRange) animFrame=1
+{if AnimFrame=0 {specialtimes[0]=0 sprite_index=spr_sneak_newspaper} specialtimes[0]+=0.05 if specialtimes[0]=2 specialtimes[0]=0 MoveType=1 prevanim=61
+frame_set(0,specialtimes[0]=0,0)  if AnimFrame<0.5 if x=clamp(x,targetX-idleRange,targetX+idleRange) AnimFrame=1
 frame_set(1,2,0.1)
 frame_set(2,3,0.05) 
 frame_set(3,3,0.1) 
 frame_set(4,4,0.1) 
-frame_set(5,4,0.25) if animFrame>5 {canmove=1}
+frame_set(5,4,0.25) if AnimFrame>5 {canmove=1}
 }
 
 throw_step()

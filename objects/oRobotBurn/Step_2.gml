@@ -6,11 +6,11 @@ throw_step()
 ///Robot Variation will have own attack
 	if anim=12 ///Flamethrower Attack
 	{
-	if animFrame=0 {specialcheck4=10}	
+	if AnimFrame=0 {specialcheck4=10}	
 	HitForce=-4
 	HitForceZ=-4
 atkcol_set(40,0,25,2.75,1,50)
-	if animFrame<3
+	if AnimFrame<3
 	{
 	robotArmLX=-14
 	robotArmLY=-64
@@ -35,7 +35,7 @@ selfatk.HitSound=snd_flame
 
 	frame_set(0,0,0.25)
 	frame_set(1,1,0.25)
-	frame_set(2,2,0.04) if animFrame=3 {PlaySoundNoStack(snd_flame)}
+	frame_set(2,2,0.04) if AnimFrame=3 {PlaySoundNoStack(snd_flame)}
 	frame_set(3,3,0.25)
 	frame_set(4,4,0.25)
 	frame_set(5,3,0.25)
@@ -43,18 +43,18 @@ selfatk.HitSound=snd_flame
 	frame_set(7,3,0.25)
 	frame_set(8,4,0.25)
 	frame_set(9,3,0.25)
-	frame_set(10,4,0.25) if animFrame=11 if specialcheck4!=0 {specialcheck4-=1 animFrame=9}
+	frame_set(10,4,0.25) if AnimFrame=11 if specialcheck4!=0 {specialcheck4-=1 AnimFrame=9}
 	frame_set(11,3,0.25)
 	frame_set(12,5,0.05)
 
 	//atkAddX=192 selfatk.image_xscale=12*image_xscale
 	MoveType=5
 
-	if animFrame=clamp(animFrame,3,11)
+	if AnimFrame=clamp(AnimFrame,3,11)
 	{ atk=1 sentflying=1*image_xscale	
 	}
 	else {atk=0 sentflying=0}
 
-	if animFrame>12.75 {hurt=0 atk=0 canmove=1 hit=0}
+	if AnimFrame>12.75 {hurt=0 atk=0 canmove=1 hit=0}
 
 	}

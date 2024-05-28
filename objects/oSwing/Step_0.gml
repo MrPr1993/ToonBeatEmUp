@@ -72,7 +72,7 @@ HitSound=item.HitSound
 WswingSound=item.WswingSound
 
 with item instance_destroy()
-animFrame=0 anim=25 canmove=0
+AnimFrame=0 anim=25 canmove=0
 }
 else enemy_ai()
 
@@ -124,7 +124,7 @@ spawnID=-1
 if canTaunt=1
 {if hurt=1 canTaunt=0
 if canmove=1 and atk=0
-{canTaunt=0 animFrame=0 PlaySoundNoStack(snd_msswing1)
+{canTaunt=0 AnimFrame=0 PlaySoundNoStack(snd_msswing1)
 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0
 anim=130
 }}

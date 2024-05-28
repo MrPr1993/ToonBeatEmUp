@@ -63,7 +63,7 @@ if specialSet6=60
 en3=instance_create(__view_get( e__VW.XView, 0)+64,200,oFatBurglar)
 with en3 {
 image_xscale=1 z=-320 canmove=0 anim=11 PlaySoundNoStack(snd_fatburglar)
-sprite_index=AtkSpr2 animFrame=2.9 ground=0 zSpeed=8 specialcheck2=0
+sprite_index=AtkSpr2 AnimFrame=2.9 ground=0 zSpeed=8 specialcheck2=0
 }	
 }
 

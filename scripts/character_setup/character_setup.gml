@@ -358,8 +358,8 @@ turnanim=1
 	extraY=0
 
 animatk=10;
-	animFrame=0
-	animFrameSave=0
+	AnimFrame=0
+	AnimFrameSave=0
 	image_speed=0
 	atk=0
 	Gatk=0

@@ -3,6 +3,8 @@ controller_setup()
 
 character_setup()
 
+specialanimscript=-1;
+
 current_pal=global.p1Pal;
 my_pal_sprite=global.p1Pals;//spr_playerpal
 

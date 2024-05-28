@@ -21,7 +21,7 @@ dusty+=1;
 }	
 
 key_right=0 visible=1
-dashing=2 animFrame=0
+dashing=2 AnimFrame=0
 anim=21
 oPlayer.hspeed=0 zSpeed=-12
 }

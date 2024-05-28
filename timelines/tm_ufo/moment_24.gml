@@ -6,7 +6,7 @@ with oCameoChar instance_destroy()
 with blackout instance_destroy()
 with oControl{showMap=1
 alarm[0]=60 timecheck=-1
-with oPlayer {canmove=1 canControl=1 targetID=-1 animFrame=0 anim=0
+with oPlayer {canmove=1 canControl=1 targetID=-1 AnimFrame=0 anim=0
  alarm[0]=2
 	}
 }

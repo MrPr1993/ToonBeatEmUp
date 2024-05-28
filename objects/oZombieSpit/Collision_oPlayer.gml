@@ -33,12 +33,12 @@ car.image_xscale=image_xscale car.hspeed=-12 car.z=z car.ground=0
 }
 zSpeed=-8
 image_index=3+13 sprite_index=ThrownSpr
-animFrame=3+13
+AnimFrame=3+13
 anim=202
 
 areaEntry=1
 }
-else {shaketime=30 animFrame=0 anim=201 event_user(11)}
+else {shaketime=30 AnimFrame=0 anim=201 event_user(11)}
 }
 
 recovery=10 dizzyHit=0  

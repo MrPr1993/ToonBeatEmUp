@@ -19,7 +19,7 @@ PlayerLife=0//global.P1Life
 PlayerScore=0//global.P1Score
 
 anim=0
-animFrame=0
+AnimFrame=0
 
 meter=0
 meterSpd=4

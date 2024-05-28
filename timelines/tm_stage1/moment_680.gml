@@ -36,7 +36,7 @@ with oPlayer
 {
 doubledash=0
 dashing=0
-canmove=0 animFrame=0 anim=305
+canmove=0 AnimFrame=0 anim=305
 }
 
 oPlayer.y=208
@@ -47,7 +47,7 @@ oEnemySpawner.roomMove=1
 oPlayer.dashing=0
 oPlayer.key_right=0
 
-boss.animFrame=0
+boss.AnimFrame=0
 
 timeline_position-=1
 }

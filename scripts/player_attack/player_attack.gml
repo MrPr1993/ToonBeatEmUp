@@ -25,7 +25,7 @@ if key_right and image_xscale=-1 and key_attack and ground {player_punchback() e
 	{
 	if AttackOrItem=0 or AttackOrItem=2
 	{
-	canmove=0 animFrame=0
+	canmove=0 AnimFrame=0
 	throw_command(instance_nearest(x,y,oEnemy1),24*image_xscale,0,0,GrabFrame,30,1);
 	}
 	}
@@ -38,7 +38,7 @@ if key_right and image_xscale=-1 and key_attack and ground {player_punchback() e
 	{
 		
 	if AttackOrItem=0 or AttackOrItem=2
-	{canmove=0 animFrame=0
+	{canmove=0 AnimFrame=0
 	atk=0 MoveType=0 anim=16 ///Dash Attack 
 	}
 	//ground=0 sentflying=4*image_xscale zSpeed=-4
@@ -58,14 +58,14 @@ player_interact()
 	///Still Kick
 	if carry=1
 	{dropitem=1 ///Throw item
-	animFrame=0 canmove=0
+	AnimFrame=0 canmove=0
 	event_user(2)
 	}
 	else
 	{ ///Air attack
 		if AttackOrItem=0 or AttackOrItem=2
 		{canmove=0
-	animFrame=0
+	AnimFrame=0
 	anim=15
 	//if -key_left or key_right
 	//{sentflying=2*image_xscale zSpeed=-4} else {sentflying=0}

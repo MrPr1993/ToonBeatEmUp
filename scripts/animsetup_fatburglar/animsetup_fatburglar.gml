@@ -63,46 +63,46 @@ RunSpr=spr_fatburglar_moveobject
 	  }
 	}
 	if sprite_index=AtkSpr
-	{if animFrame=0 PlaySoundNoStack(snd_fatburglar2)
-	MoveType=1 image_index=animFrame image_speed=0 damage=0.2
-	if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
+	{if AnimFrame=0 PlaySoundNoStack(snd_fatburglar2)
+	MoveType=1 image_index=AnimFrame image_speed=0 damage=0.2
+	if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
 	}
 	if sprite_index=AtkSpr2
 	{damage=0.4
-	if animFrame=clamp(animFrame,1,1.5) if ground {specialcheck2=2 PlaySoundNoStack(snd_jump) PlaySoundNoStack(snd_fatburglar) z-=2 ground=0 zSpeed=-10}
+	if AnimFrame=clamp(AnimFrame,1,1.5) if ground {specialcheck2=2 PlaySoundNoStack(snd_jump) PlaySoundNoStack(snd_fatburglar) z-=2 ground=0 zSpeed=-10}
 	if !ground 
-	{MoveType=4 animFrame=2.9 SoundCount0=0
+	{MoveType=4 AnimFrame=2.9 SoundCount0=0
 	isThrow=0 throwing=0 atkAddX=0 atkAddY=0 atkAddZ=32 selfatk.image_xscale=1.5*image_xscale selfatk.image_yscale=1
 	if place_free(x+specialcheck2*targetXcheck,y) x+=specialcheck2*image_xscale
 	if place_free(x,y+specialcheck2*targetYcheck) if y<__view_get( e__VW.YView, 0 )+240-2 y+=specialcheck2*targetYcheck
 	if zSpeed>0 z+=0.45 
 	}
 
-	image_index=animFrame image_speed=0
-	if animFrame=clamp(animFrame,2,3) and zSpeed>-1 atk=1 else atk=0
+	image_index=AnimFrame image_speed=0
+	if AnimFrame=clamp(AnimFrame,2,3) and zSpeed>-1 atk=1 else atk=0
 	}
 
-	if animFrame=clamp(animFrame,3,3.5) if sprite_index=spr_fatburglar_attack2 
+	if AnimFrame=clamp(AnimFrame,3,3.5) if sprite_index=spr_fatburglar_attack2 
 	{
 	if SoundCount0=0 {SoundCount0=1 PlaySoundNoStack(HitGround)}
 	oControl.quakeFXTime=10
 	}
 
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else {if ground 
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else {if ground 
 
-	animFrame+=0.1 if sprite_index=AtkSpr2 and ground animFrame+=0.001} if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
+	AnimFrame+=0.1 if sprite_index=AtkSpr2 and ground AnimFrame+=0.001} if AnimFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 
 
 	if anim=13 ///Charge Attack
-	{damage=0.2 MoveType=1 if animFrame=0 {image_index=0 PlaySoundNoStack(snd_fatburglar2)}
+	{damage=0.2 MoveType=1 if AnimFrame=0 {image_index=0 PlaySoundNoStack(snd_fatburglar2)}
 	sprite_index=AtkSpr3  
 	image_index+=0.5 if image_index=6 image_index=0
 
 
 
-	if animFrame<4
+	if AnimFrame<4
 	{
 	dust_make(x,y,z,-2*image_xscale,0,0)
 	
@@ -117,12 +117,12 @@ RunSpr=spr_fatburglar_moveobject
 	}
 	}
 
-	animFrame+=0.1
+	AnimFrame+=0.1
 	
-if animFrame=2.5 if current_pal=6 animFrame=4
+if AnimFrame=2.5 if current_pal=6 AnimFrame=4
 
-	if animFrame>4 and animFrame<8
-	{if animFrame=4.1 PlaySoundNoStack(snd_fatburglar)
+	if AnimFrame>4 and AnimFrame<8
+	{if AnimFrame=4.1 PlaySoundNoStack(snd_fatburglar)
 	atk=1 canbeGrabbed=0 HitQuake=10
 	
 	dust_make(x,y,z,-4*image_xscale,0,0)
@@ -141,7 +141,7 @@ if animFrame=2.5 if current_pal=6 animFrame=4
 
 
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 
 	PlaySoundNoStack(HitGround) oControl.quakeFXTime=10
@@ -151,19 +151,19 @@ if animFrame=2.5 if current_pal=6 animFrame=4
 
 	}else {atk=0 canbeGrabbed=1}
 
-	if animFrame>10 {canmove=1 anim=0}
+	if AnimFrame>10 {canmove=1 anim=0}
 
 	}else canbeGrabbed=1
 
 if anim=14 /////Object Throw
 {
-if animFrame=0 {PlaySoundNoStack(snd_fatburglar) PlaySoundNoStack(snd_swing) sprite_index=spr_fatburglar_throwobject
+if AnimFrame=0 {PlaySoundNoStack(snd_fatburglar) PlaySoundNoStack(snd_swing) sprite_index=spr_fatburglar_throwobject
 	weaponX=1 weaponY=-93
 	}
-frame_set(0,0,0.1) if animFrame=1 {	weaponX=-4 weaponY=-90}
-frame_set(1,1,0.05)  if animFrame=2 {weaponX=-2 weaponY=-93}
+frame_set(0,0,0.1) if AnimFrame=1 {	weaponX=-4 weaponY=-90}
+frame_set(1,1,0.05)  if AnimFrame=2 {weaponX=-2 weaponY=-93}
 frame_set(2,0,0.5) 
-if animFrame=3
+if AnimFrame=3
 {
 if weaponspr!=-1 {
 	item=instance_create_depth(x,y,-1,oGrabbable) item.sprite_index=weaponspr item.image_speed=0
@@ -172,9 +172,9 @@ if weaponspr!=-1 {
 	}
 }
 frame_set(3,2,0.1)
-frame_set(4,3,0.1) if animFrame>5 sprite_index=spr_fatburglar_attack2
+frame_set(4,3,0.1) if AnimFrame>5 sprite_index=spr_fatburglar_attack2
 frame_set(5,0,0.1) 
-if animFrame>5.5 canmove=1
+if AnimFrame>5.5 canmove=1
 }
 
 

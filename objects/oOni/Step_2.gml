@@ -39,7 +39,7 @@ weaponanim(weaponspr,weaponIndex,34,-92-2,180*image_xscale,weaponcolor)
 
 	///Attacks
 	if anim=10 ///Attack Stand
-	{animFrame=0 canmove=0 specialcheck0=0
+	{AnimFrame=0 canmove=0 specialcheck0=0
 	
 		
 if distance_to_point(targetEnemy.x,targetEnemy.y)>100
@@ -54,7 +54,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>150
 ///Swing Attack
 if anim=11
 {
-if animFrame=0 {PlaySound(choose(snd_oni3,snd_oni4))}
+if AnimFrame=0 {PlaySound(choose(snd_oni3,snd_oni4))}
 ///With weapon
 if weaponspr!=-1
 {
@@ -63,11 +63,11 @@ atkcol_set(66,0,38,4.25,1,34)
 sprite_index=spr_oni_attack
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
-frame_set(2,2,0.5) if animFrame=clamp(animFrame,3,4) atk=1 else atk=0
+frame_set(2,2,0.5) if AnimFrame=clamp(AnimFrame,3,4) atk=1 else atk=0
 frame_set(3,3,0.5)
 frame_set(4,4,0.025)
 frame_set(5,0,0.1)
-if animFrame>5.8 {atk=0 canmove=1 anim=0}
+if AnimFrame>5.8 {atk=0 canmove=1 anim=0}
 
 if image_index=clamp(image_index,0,1)
 weaponanim(weaponspr,weaponIndex,24,-116,189,weaponcolor)
@@ -84,30 +84,30 @@ else
 {sprite_index=spr_oni_attack
 frame_set(0,2,0.1) atkcol_set(33,0,38,2.05,1,30)
 frame_set(1,2,0.1) damage=0.1 MoveType=1
-frame_set(2,2,0.5) if animFrame=clamp(animFrame,3,4) {sentflying=24*image_xscale atk=1} else {sentflying=0 atk=0}
+frame_set(2,2,0.5) if AnimFrame=clamp(AnimFrame,3,4) {sentflying=24*image_xscale atk=1} else {sentflying=0 atk=0}
 frame_set(3,3,0.5)
 frame_set(4,4,0.025)
 frame_set(5,0,0.1)
-if animFrame>5.8 {atk=0 canmove=1 anim=0}
+if AnimFrame>5.8 {atk=0 canmove=1 anim=0}
 }
 }
 
 ///Fan Attack
 if anim=12
 {
-if animFrame=0 {PlaySound(choose(snd_oni3,snd_oni13))}	
+if AnimFrame=0 {PlaySound(choose(snd_oni3,snd_oni13))}	
 sprite_index=spr_oni_range
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.05)
- if animFrame=3
+ if AnimFrame=3
 {PlaySoundNoStack(snd_swing2) card=instance_create_depth(x+16*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 	card.z=z-56 card.sprite_index=spr_oni_fan card.image_xscale=image_xscale card.current_pal=current_pal
 	}
 frame_set(3,3,0.5)
 frame_set(4,4,0.025)
 frame_set(5,0,0.1)
-if animFrame>5.8 {atk=0 canmove=1 anim=0}
+if AnimFrame>5.8 {atk=0 canmove=1 anim=0}
 
 if image_index=clamp(image_index,0,1)
 weaponanim(weaponspr,weaponIndex,36,-95,180,weaponcolor)
@@ -124,21 +124,21 @@ weaponanim(weaponspr,weaponIndex,33,-94,180,weaponcolor)
 ///Roll Attack
 if anim=13
 {
-if animFrame=0 {PlaySound(choose(snd_oni5,snd_oni8))}	
+if AnimFrame=0 {PlaySound(choose(snd_oni5,snd_oni8))}	
 sprite_index=spr_oni_hit
-if animFrame=0 special0=0
+if AnimFrame=0 special0=0
 damage=0.2 selfatk.MoveType=1
-frame_set(0,10,0.05) if animFrame=1 if ground {ground=0 zSpeed=-8}
-frame_set(1,14,0.25) if animFrame=clamp(animFrame,1,5) {atk=1 sentflying=6*image_xscale} else {atk=0 sentflying=0}
+frame_set(0,10,0.05) if AnimFrame=1 if ground {ground=0 zSpeed=-8}
+frame_set(1,14,0.25) if AnimFrame=clamp(AnimFrame,1,5) {atk=1 sentflying=6*image_xscale} else {atk=0 sentflying=0}
 frame_set(2,13,0.25) 
 frame_set(3,12,0.25) 
-frame_set(4,11,0.25) if animFrame=5 if !ground animFrame=1
-if ground and animFrame=clamp(animFrame,1,4) animFrame=5
+frame_set(4,11,0.25) if AnimFrame=5 if !ground AnimFrame=1
+if ground and AnimFrame=clamp(AnimFrame,1,4) AnimFrame=5
 frame_set(5,10,0.25)
 frame_set(6,10,0.25)
 frame_set(7,10,0.25)
 
-if animFrame>7.75 {canmove=1}
+if AnimFrame>7.75 {canmove=1}
 }
 
 

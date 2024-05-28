@@ -3,7 +3,7 @@ function player_jump() {
 	if ground
 	{dashing=dashcheck 
 	if dashing=2 doubledash=0.2
-	PlaySound(snd_jump) animFrame=0
+	PlaySound(snd_jump) AnimFrame=0
 	wobbleX=0.8 wobbleY=1.2
 	
 	if -key_left or key_right

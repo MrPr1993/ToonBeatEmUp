@@ -19,7 +19,7 @@ function throw_command(argument0, argument1, argument2, argument3, argument4) {
 	event_user(1)///Drop weapon
 	}
 
-	animFrame=0 anim=35//anim=20
+	AnimFrame=0 anim=35//anim=20
 	targetID.thrownDMG=0
 	grabX=argument1//24*image_xscale
 	grabY=argument2//0
@@ -39,7 +39,7 @@ function throw_command(argument0, argument1, argument2, argument3, argument4) {
 	{
 	targetHeightHit=argument4
 	Throw=1
-	animFrame=GrabFrame ///Grab Enemy Frame
+	AnimFrame=GrabFrame ///Grab Enemy Frame
 	anim=argument5//30
 	canmove=0
 	hurt=1
@@ -57,7 +57,7 @@ function throw_command(argument0, argument1, argument2, argument3, argument4) {
 	}targetID=-1}
 
 	}}
-	else {targetID=-1 if key_attack{animFrame=0 anim=10}} ///So the player doesn't get stuck
+	else {targetID=-1 if key_attack{AnimFrame=0 anim=10}} ///So the player doesn't get stuck
 	}}
 
 

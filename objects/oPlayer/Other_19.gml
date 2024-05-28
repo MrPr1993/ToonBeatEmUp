@@ -51,7 +51,7 @@ pow=0
 hp=maxhp
 
 
-animFrame=0
+AnimFrame=0
 //disappearTime=90 canmove=1 PlaySound(ReturnVoice)
 x=__view_get( e__VW.XView, 0 )+oControl.P1SpawnX
 y=__view_get( e__VW.YView, 0 )+oControl.P1SpawnY

@@ -3,7 +3,7 @@
 function player_punchback(){
 	if ground
 	{
-canmove=0 animFrame=0 anim=84
+canmove=0 AnimFrame=0 anim=84
 	}
 	else
 	player_attack()

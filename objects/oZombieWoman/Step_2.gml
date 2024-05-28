@@ -26,23 +26,23 @@ if anim=11 ///Attack Stand
 atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.05
 frame_set(0,0,0.25)
 frame_set(1,1,0.25) 
-frame_set(2,1,0.25) if animFrame=3 PlaySound(snd_fzombie5)
+frame_set(2,1,0.25) if AnimFrame=3 PlaySound(snd_fzombie5)
 frame_set(3,1,0.25) 
-frame_set(4,2,0.1) if animFrame=clamp(animFrame,3,4) {atk=1 sentflying=4*image_xscale} else {atk=0 sentflying=0}
+frame_set(4,2,0.1) if AnimFrame=clamp(AnimFrame,3,4) {atk=1 sentflying=4*image_xscale} else {atk=0 sentflying=0}
 frame_set(5,3,0.25)
 frame_set(6,0,0.25)
-if animFrame>6.75 {canmove=1}
+if AnimFrame>6.75 {canmove=1}
 }
 
 ///Vomit Attack
 if anim=12
 {sprite_index=spr_zombiew_range
-	if animFrame=0 PlaySoundNoStack(snd_fzombie3)
+	if AnimFrame=0 PlaySoundNoStack(snd_fzombie3)
 frame_set(0,0,0.125)
 frame_set(1,1,0.125)
 frame_set(2,2,0.125)
 frame_set(3,3,0.05)
-frame_set(4,4,0.25) if animFrame=5 
+frame_set(4,4,0.25) if AnimFrame=5 
 {
 specialcheck0=0
 	if specialcheck0=0
@@ -71,7 +71,7 @@ frame_set(15,5,0.25)
 frame_set(16,6,0.25)
 frame_set(17,0,0.25)
 
-if animFrame>17.75 {canmove=1 atk=0}
+if AnimFrame>17.75 {canmove=1 atk=0}
 }
 
 ////Claw
@@ -82,19 +82,19 @@ atkcol_set(52,0,2,2.25,1,91) MoveType=1
 selfatk.isCut=1 selfatk.spriteFX=spr_blood selfatk.HitSound=snd_cut
 frame_set(0,0,0.25)
 frame_set(1,1,0.1)
-frame_set(2,2,0.25) if animFrame=2 {PlaySoundNoStack(snd_swing5) PlaySound(snd_fzombie5)}
-frame_set(3,3,0.5) if animFrame=clamp(animFrame,2,3) {sentflying=6*image_xscale atk=1} else {sentflying=0 atk=0}
+frame_set(2,2,0.25) if AnimFrame=2 {PlaySoundNoStack(snd_swing5) PlaySound(snd_fzombie5)}
+frame_set(3,3,0.5) if AnimFrame=clamp(AnimFrame,2,3) {sentflying=6*image_xscale atk=1} else {sentflying=0 atk=0}
 frame_set(4,4,0.025)
-frame_set(5,0,0.25) if animFrame>5.5 canmove=1
+frame_set(5,0,0.25) if AnimFrame>5.5 canmove=1
 }
 
 	if anim=61 ///Out of Character
-{if animFrame=0 sprite_index=spr_zombiew_ooc MoveType=1 prevanim=61
-frame_set(0,0,0.1)  if animFrame<2 if x=clamp(x,targetX-idleRange,targetX+idleRange) animFrame=2.1
-frame_set(1,1,0.1) if animFrame=2 animFrame=0
+{if AnimFrame=0 sprite_index=spr_zombiew_ooc MoveType=1 prevanim=61
+frame_set(0,0,0.1)  if AnimFrame<2 if x=clamp(x,targetX-idleRange,targetX+idleRange) AnimFrame=2.1
+frame_set(1,1,0.1) if AnimFrame=2 AnimFrame=0
 frame_set(2,2,0.1) 
 frame_set(3,3,0.05) 
 frame_set(4,2,0.1) 
-frame_set(5,2,0.25) if animFrame>5 {canmove=1 anim=0}
+frame_set(5,2,0.25) if AnimFrame>5 {canmove=1 anim=0}
 }
 

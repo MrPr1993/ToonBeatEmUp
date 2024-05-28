@@ -1,4 +1,4 @@
-if oPlayer.anim=220 and oPlayer.animFrame<2
+if oPlayer.anim=220 and oPlayer.AnimFrame<2
 timeline_position-=1
 else
 {

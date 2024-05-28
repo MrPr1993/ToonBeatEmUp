@@ -32,14 +32,14 @@ sprite_index=AtkSpr
 }
 MoveType=0 damage=0.1
 
-if animFrame=clamp(animFrame,0,2) image_index=0
-if animFrame=clamp(animFrame,2,3) image_index=1
-if animFrame=clamp(animFrame,3,4) image_index=2
+if AnimFrame=clamp(AnimFrame,0,2) image_index=0
+if AnimFrame=clamp(AnimFrame,2,3) image_index=1
+if AnimFrame=clamp(AnimFrame,3,4) image_index=2
 
  image_speed=0
- if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
-if animFrame=clamp(animFrame,0,1.5)
-animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+ if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
+if AnimFrame=clamp(AnimFrame,0,1.5)
+AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 
 }
 }
@@ -54,7 +54,7 @@ hurt=1
 if targetHeightHit=0 image_index=0 else image_index=1
 
 image_speed=0
-animFrame+=0.05 if animFrame>1-0.05 {hurt=0
+AnimFrame+=0.05 if AnimFrame>1-0.05 {hurt=0
 
 if dizzyHit=0
 {canmove=1}
@@ -62,7 +62,7 @@ else {
 if hasDizzy=0
 {image_index=GrabFrame image_speed=0}
 
-animFrame=0 anim=42 }
+AnimFrame=0 anim=42 }
 
 }
 }
@@ -78,8 +78,8 @@ recovery=30
 
 image_index=2
 
-image_speed=0 animFrame=clamp(animFrame,3,5)
-animFrame+=0.1
+image_speed=0 AnimFrame=clamp(AnimFrame,3,5)
+AnimFrame+=0.1
 //Land on ground
 if ground {hp-=thrownDMG
 
@@ -98,7 +98,7 @@ else hp-=ThrowDamage
  
  recovery=10 
  
- animFrame=6.8 anim=6
+ AnimFrame=6.8 anim=6
  
 ///if hitBackFaceDown=1 and hashitBackFaceDown=1
 ///{sentflying=-sentflying hitBack=1 hasBounce=1}
@@ -116,9 +116,9 @@ if anim=6 ///Hit Getup / Get Up
 {charThrown=0 recovery=30
 hurt=1 sprite_index=ThrownSpr
 
-if animFrame=clamp(animFrame,0,9) image_index=3
-if animFrame=clamp(animFrame,9,10) image_index=4
-if animFrame=clamp(animFrame,10,11) image_index=5
+if AnimFrame=clamp(AnimFrame,0,9) image_index=3
+if AnimFrame=clamp(AnimFrame,9,10) image_index=4
+if AnimFrame=clamp(AnimFrame,10,11) image_index=5
 
 Throw=0
 
@@ -126,22 +126,22 @@ Throw=0
 if hp<=0 if dead=0 {dead=1 alarm[2]=30}
 
 if dead=0
-animFrame=clamp(animFrame,6,12)
+AnimFrame=clamp(AnimFrame,6,12)
 else
-animFrame=clamp(animFrame,6,8)
+AnimFrame=clamp(AnimFrame,6,8)
 
-if animFrame<9
+if AnimFrame<9
 {
-if animFrame<7 animFrame+=0.2 else
+if AnimFrame<7 AnimFrame+=0.2 else
 {
-if animFrame<8
-animFrame+=0.4
-else animFrame+=0.02}
-}else animFrame+=0.4
+if AnimFrame<8
+AnimFrame+=0.4
+else AnimFrame+=0.02}
+}else AnimFrame+=0.4
 
-if animFrame>1 and canBounce=1 and hasBounce=1
+if AnimFrame>1 and canBounce=1 and hasBounce=1
 {canBounce=0
-animFrame=4
+AnimFrame=4
 if hitBack=0
 sentflying=-2*image_xscale
 else
@@ -153,9 +153,9 @@ zSpeed=-4
 anim=5
 }
 
-if animFrame>10.8 {
+if AnimFrame>10.8 {
 if dizzyHit=0 {hurt=0 canmove=1}
-else {animFrame=0 anim=42
+else {AnimFrame=0 anim=42
 
 if hasDizzy=0
 {image_index=GrabFrame image_speed=0}

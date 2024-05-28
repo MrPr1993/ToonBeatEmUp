@@ -1,5 +1,5 @@
 /// @description /OH NO
-with oPlayer {canmove=0 animFrame=0 anim=301 canControl=1}
+with oPlayer {canmove=0 AnimFrame=0 anim=301 canControl=1}
 
 with oControl 
 {MusicFade=0 MusicFadeAdd=1

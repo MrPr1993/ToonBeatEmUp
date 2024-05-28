@@ -16,7 +16,7 @@ with oPlayer
 with oControl MusicFade=1
 
 boss=instance_create_depth(5184-64,208-20,0,oPharaoh) 
-boss.animFrame=0 boss.image_index=0
+boss.AnimFrame=0 boss.image_index=0
 boss.anim=100 boss.animLock=1 boss.canmove=0 boss.image_xscale=-1
 boss.offScreenMode=0
 

@@ -22,7 +22,7 @@ draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]+waistP
 
 ///Robot Zapper
 if object_index=oRobot
-if anim=12 and animFrame=clamp(animFrame,3,11)
+if anim=12 and AnimFrame=clamp(AnimFrame,3,11)
 {
 draw_set_color(choose(c_white,c_red,c_yellow))
 draw_rectangle(x+16*image_xscale,y-52+z,x+(16+12)*image_xscale,y-52+6+z,false)
@@ -35,9 +35,9 @@ draw_set_color(c_white)
 
 ///Robot Flames
 if object_index=oRobotBurn
-if anim=12 and animFrame=clamp(animFrame,3,11)
+if anim=12 and AnimFrame=clamp(AnimFrame,3,11)
 {if specialcheck5=4 specialcheck5=0 else specialcheck5+=0.25
-if animFrame!=clamp(animFrame,4,11)
+if AnimFrame!=clamp(AnimFrame,4,11)
 draw_sprite_ext(spr_hina_firebreath2,0,x+34*image_xscale,y-42,image_xscale,1,0,c_white,1)
 else
 draw_sprite_ext(spr_hina_firebreath,specialcheck5,x+34*image_xscale,y-42,image_xscale,1,0,c_white,1)
@@ -45,7 +45,7 @@ draw_sprite_ext(spr_hina_firebreath,specialcheck5,x+34*image_xscale,y-42,image_x
 
 ///Robot Ice
 if object_index=oRobotIce
-if anim=12 and animFrame=clamp(animFrame,3,11)
+if anim=12 and AnimFrame=clamp(AnimFrame,3,11)
 {if specialcheck5=4.5 specialcheck5=4.5 else specialcheck5+=0.25 if specialcheck3=0 specialcheck3=1 else specialcheck3-=0.5
 if specialcheck3=0
 draw_sprite_ext(spr_robot_ice,specialcheck5,x+34*image_xscale,y-42,image_xscale,1,0,c_white,1)

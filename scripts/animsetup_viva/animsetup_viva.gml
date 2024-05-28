@@ -85,7 +85,7 @@ qSandSpr=spr_viva_quicksand
 	if isIdle<60
 	{//isIdle+=0.1
 	if sprite_index!=spr_viva_stand 
-	{animFrame=0 sprite_index=spr_viva_stand}
+	{AnimFrame=0 sprite_index=spr_viva_stand}
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.1)
 	frame_set(2,2,0.1)
@@ -102,7 +102,7 @@ qSandSpr=spr_viva_quicksand
 	frame_set(13,3,0.1)
 	frame_set(14,4,0.1)
 	frame_set(15,3,0.1)
-if animFrame>15.5 animFrame=0
+if AnimFrame>15.5 AnimFrame=0
 
 	}
 	else
@@ -111,9 +111,9 @@ if animFrame>15.5 animFrame=0
 	if Cweather=1 idlespr=spr_viva_idlecold;
 		
 	if sprite_index!=idlespr
-	{animFrame=0 sprite_index=idlespr}
+	{AnimFrame=0 sprite_index=idlespr}
 	frame_set(0,0,0.1)
-	frame_set(1,1,0.1) if animFrame>3-0.1 animFrame=1
+	frame_set(1,1,0.1) if AnimFrame>3-0.1 AnimFrame=1
 	frame_set(2,2,0.1)
 	}
 
@@ -258,9 +258,9 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 	if place_free(x,y+dodging*4) y+=dodging*4
 	hit=0 MoveType=0
 	weaponanim(weaponspr,weaponIndex,2,-9,45*image_xscale,weaponcolor)
-	image_index=animFrame image_speed=0 atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0 atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 
@@ -272,22 +272,22 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 	if carry=1 {dropitem=1 event_user(2)} atkcol_set(31,0,46,1.35,1,21) weaponAttack=0 comboBreak=0 flashX=0 flashY=2 flashZ=32
 
 	///Change Anim from weapons
-	if weaponspawn=oHammer {if weaponLife=0 and weaponIsGun=1{event_user(5)} else {animFrame=0 anim=26 exit;}} 
+	if weaponspawn=oHammer {if weaponLife=0 and weaponIsGun=1{event_user(5)} else {AnimFrame=0 anim=26 exit;}} 
 
 
-	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva3)}
+	if AnimFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva3)}
 	damage=0.02 targetHeight=2
-	if comboHit!=0 and animFrame>1.5
+	if comboHit!=0 and AnimFrame>1.5
 	{if key_shield_pressed {event_user(4) exit;}////<---Here to use special instantly
 	if key_attack {if -key_left image_xscale=-1 if key_right image_xscale=1
-		comboHit=0 animFrame=0 anim=11 atk=1}}////<---Here to perform second attack
+		comboHit=0 AnimFrame=0 anim=11 atk=1}}////<---Here to perform second attack
 	selfatk.recovery=10
 	hit=0 MoveType=0
 	sprite_index=spr_viva_attack
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,1,1.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	if anim=11 ///Attack Stand 2
@@ -301,18 +301,18 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 
 
 	damage=0.02 targetHeight=2
-	if comboHit!=0 and animFrame>1.5
+	if comboHit!=0 and AnimFrame>1.5
 	{if key_shield_pressed {event_user(4) exit;} ////<---Here to use special instantly
 	if key_attack {
 		if -key_left image_xscale=-1 if key_right image_xscale=1
-		comboHit=0 animFrame=0 anim=12 atk=1}} ////<---Here to perform third attack
+		comboHit=0 AnimFrame=0 anim=12 atk=1}} ////<---Here to perform third attack
 	  hit=0 MoveType=0
 	selfatk.recovery=10
 	sprite_index=spr_viva_attack2
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,1,1.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	if anim=12 ///Attack Stand 3
@@ -326,18 +326,18 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 	flashZ=24
 
 	damage=0.02 targetHeight=0
-	if comboHit!=0 and animFrame>1.5
+	if comboHit!=0 and AnimFrame>1.5
 	{if key_shield_pressed {event_user(4) exit;} 
 	if key_attack {
 		if -key_left image_xscale=-1 if key_right image_xscale=1
-		comboHit=0 animFrame=0 anim=13 atk=1}}
+		comboHit=0 AnimFrame=0 anim=13 atk=1}}
 	hit=0 MoveType=0
 	selfatk.recovery=10
 	sprite_index=spr_viva_attack3
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,1,1.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	if anim=13 ///Attack Stand 4
@@ -352,18 +352,18 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 	flashZ=48
 
 	damage=0.04 targetHeight=1
-	if comboHit!=0 and animFrame>1.5
+	if comboHit!=0 and AnimFrame>1.5
 	{if key_shield_pressed {event_user(4) exit;} 
 	if key_attack {
 		if -key_left image_xscale=-1 if key_right image_xscale=1
-		comboHit=0 animFrame=0 anim=14 atk=1}}
+		comboHit=0 AnimFrame=0 anim=14 atk=1}}
 	hit=0 MoveType=0
 	selfatk.recovery=10
 	sprite_index=spr_viva_attack4
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,1,1.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	if anim=14 ///Attack Stand 5
@@ -371,7 +371,7 @@ weaponanim(weaponspr,weaponIndex,25,-36,101*image_xscale,weaponcolor)
 selfatk.spriteFX=spr_hitflash
 	atkcol_set(31,0,44,1.35,1,46)
 
-	if animFrame=0.2 {PlaySound(snd_swing) PlaySound(snd_viva4)}
+	if AnimFrame=0.2 {PlaySound(snd_swing) PlaySound(snd_viva4)}
 
 
 	comboBreak=1
@@ -384,17 +384,17 @@ selfatk.spriteFX=spr_hitflash
 	hit=0 MoveType=1
 	selfatk.recovery=10
 	sprite_index=spr_viva_attack5
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>4.5 {comboHit=0 hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,2,2.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>4.5 {comboHit=0 hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 
 	if anim=15 ///Attack Air - and Forwards Attack Ait
 	{selfatk.NoKnock=0 dizzyAtk=0
 	selfatk.spriteFX=spr_hitflash
-	if animFrame=0 
+	if AnimFrame=0 
 	{
 	if -key_left or key_right sentflying=2*image_xscale
 	if key_down
@@ -435,29 +435,29 @@ selfatk.spriteFX=spr_hitflash
 	if sentflying=0
 	{sprite_index=spr_viva_attackair MoveType=2 atkAddZ=0 selfatk.height=64}
 	else {sprite_index=spr_viva_attackair2 MoveType=1 atkAddZ=16 selfatk.height=32}
-	image_index=animFrame image_speed=0
+	image_index=AnimFrame image_speed=0
 	if sprite_index=spr_viva_attackair
-	 {if animFrame>1 and animFrame<=2 atk=1 else atk=0
-	 if animFrame<2.5 animFrame+=0.5}
+	 {if AnimFrame>1 and AnimFrame<=2 atk=1 else atk=0
+	 if AnimFrame<2.5 AnimFrame+=0.5}
 	 if sprite_index=spr_viva_attackair2
-	 {if animFrame>1 atk=1 else atk=0
-	 if animFrame<1.5 animFrame+=0.5}
+	 {if AnimFrame>1 atk=1 else atk=0
+	 if AnimFrame<1.5 AnimFrame+=0.5}
 	 }
  
  if sprite_index=spr_viva_attackair3
-{animFrame=1 atk=1
+{AnimFrame=1 atk=1
 atkcol_set(4,0,11,0.65,1,30)
 weaponanim(weaponspr,weaponIndex,13,-69,90*image_xscale,weaponcolor)
 damage=0.02
 hit=1
 selfatk.recovery=30
-}if ground {hurt=1 canmove=0 animFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
+}if ground {hurt=1 canmove=0 AnimFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
 
 }
 
 	if anim=16 ///Attack Dash
 	{selfatk.NoKnock=0 dizzyAtk=0
-	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva6) MoveType=1
+	if AnimFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva6) MoveType=1
 	ground=0 sentflying=4*image_xscale zSpeed=-4
 	}
 
@@ -483,17 +483,17 @@ selfatk.recovery=30
 
 	sprite_index=spr_viva_runatk
 selfatk.spriteFX=spr_hitflash
-	image_index=animFrame image_speed=0
-	 if animFrame>1 atk=1 else atk=0
-	 animFrame+=0.5 animFrame=clamp(animFrame,0,1.5)
-	 if ground {wobbleX=1.1 wobbleY=0.9 if image_xscale=1 image_xscale=-1 else image_xscale=1 hurt=1 canmove=0 animFrame=0 anim=25}
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame>1 atk=1 else atk=0
+	 AnimFrame+=0.5 AnimFrame=clamp(AnimFrame,0,1.5)
+	 if ground {wobbleX=1.1 wobbleY=0.9 if image_xscale=1 image_xscale=-1 else image_xscale=1 hurt=1 canmove=0 AnimFrame=0 anim=25}
 	}
 
 
 
 	if anim=17 ///Stand Special Attack
 	{selfatk.NoKnock=1 dizzyAtk=0 selfatk.spriteFX=spr_hitflash
-	if animFrame=0 {PlaySound(snd_viva5)
+	if AnimFrame=0 {PlaySound(snd_viva5)
 	   } 
 
 	weaponAttack=0
@@ -512,23 +512,23 @@ selfatk.spriteFX=spr_hitflash
 	 targetHeight=3
 	selfatk.recovery=60
 	hit=0 
-	if animFrame=0 {sprite_index=spr_viva_special1 damage=0.2 MoveType=3
+	if AnimFrame=0 {sprite_index=spr_viva_special1 damage=0.2 MoveType=3
 		
 		}
 		if sprite_index=spr_viva_special1 {selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
 
 		
 	image_index+=0.1 image_speed=0
-	 if animFrame=clamp(animFrame,0,0.9)
-	 {image_index=animFrame animFrame+=0.5}
-	 if animFrame=1 {flashFX(x,y-1,z+1,spr_lightingbolt,0,0.5,0,1,1,c_white,1) oControl.quakeFXTime=10 PlaySound(snd_thunder)}
-	  if animFrame=clamp(animFrame,1,8.9)
-	   {animFrame+=0.1 atk=1 if image_index>8.6 {image_index=1 sprite_index=spr_viva_special1b MoveType=2 damage=0.15} image_index+=0.4 }
+	 if AnimFrame=clamp(AnimFrame,0,0.9)
+	 {image_index=AnimFrame AnimFrame+=0.5}
+	 if AnimFrame=1 {flashFX(x,y-1,z+1,spr_lightingbolt,0,0.5,0,1,1,c_white,1) oControl.quakeFXTime=10 PlaySound(snd_thunder)}
+	  if AnimFrame=clamp(AnimFrame,1,8.9)
+	   {AnimFrame+=0.1 atk=1 if image_index>8.6 {image_index=1 sprite_index=spr_viva_special1b MoveType=2 damage=0.15} image_index+=0.4 }
 	    else atk=0
-	if animFrame>4.9
-	animFrame+=0.5
+	if AnimFrame>4.9
+	AnimFrame+=0.5
 
-	  if animFrame>9.5 {hurt=0 atk=0 canmove=1 hit=0
+	  if AnimFrame>9.5 {hurt=0 atk=0 canmove=1 hit=0
 	  if powcheck=0 hp-=powhp else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
 	}
@@ -550,52 +550,52 @@ selfatk.spriteFX=spr_hitflash
 
 	//atkAddX=-32 selfatk.image_xscale=3 selfatk.image_yscale=1.5
 
-	 if animFrame=0 {PlaySound(snd_viva4) 
+	 if AnimFrame=0 {PlaySound(snd_viva4) 
 	}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 
 	selfatk.recovery=2
 	hit=0 
 
-	 if animFrame=clamp(animFrame,0,3.9)
-	 or animFrame=clamp(animFrame,0+8,3.9+8)
-	 or animFrame=clamp(animFrame,0+16,3.9+16)
-	  or animFrame=clamp(animFrame,0+24,3.9+24)
+	 if AnimFrame=clamp(AnimFrame,0,3.9)
+	 or AnimFrame=clamp(AnimFrame,0+8,3.9+8)
+	 or AnimFrame=clamp(AnimFrame,0+16,3.9+16)
+	  or AnimFrame=clamp(AnimFrame,0+24,3.9+24)
 
 	{  damage=0.02  sprite_index=spr_viva_attack3 targetHeight=0 MoveType=0}
 
-	 if animFrame=clamp(animFrame,0,3.9+4)
-	 or animFrame=clamp(animFrame,0+8+4,3.9+8+4)
-	 or animFrame=clamp(animFrame,0+16+4,3.9+16+4)
-	  or animFrame=clamp(animFrame,0+24+4,3.9+24+4)
+	 if AnimFrame=clamp(AnimFrame,0,3.9+4)
+	 or AnimFrame=clamp(AnimFrame,0+8+4,3.9+8+4)
+	 or AnimFrame=clamp(AnimFrame,0+16+4,3.9+16+4)
+	  or AnimFrame=clamp(AnimFrame,0+24+4,3.9+24+4)
 	{damage=0.02 sprite_index=spr_viva_attack4 targetHeight=2 MoveType=0
-		//if animFrame=clamp(animFrame,0+24+4,3.9+24+4) sprite_index=spr_viva_special2b
+		//if AnimFrame=clamp(AnimFrame,0+24+4,3.9+24+4) sprite_index=spr_viva_special2b
 		}
-	image_index=animFrame image_speed=0 
+	image_index=AnimFrame image_speed=0 
 
-	    if animFrame=clamp(animFrame,0+30,3.9+30)
+	    if AnimFrame=clamp(AnimFrame,0+30,3.9+30)
 	{damage=0.08 sprite_index=spr_viva_special2b targetHeight=2 MoveType=3 }
 
-	 if animFrame=clamp(animFrame,1,1.9)
-	  or animFrame=clamp(animFrame,1+4,1.9+4)
-	    or animFrame=clamp(animFrame,1+8,1.9+8)
-	      or animFrame=clamp(animFrame,1+12,1.9+12)
-	        or animFrame=clamp(animFrame,1+16,1.9+16)
-	                or animFrame=clamp(animFrame,1+20,1.9+20)
-	   or animFrame=clamp(animFrame,1+24,1.9+24)
-	      or animFrame=clamp(animFrame,1+28,1.9+28)
-	            or animFrame=clamp(animFrame,1+30,1.9+30)
+	 if AnimFrame=clamp(AnimFrame,1,1.9)
+	  or AnimFrame=clamp(AnimFrame,1+4,1.9+4)
+	    or AnimFrame=clamp(AnimFrame,1+8,1.9+8)
+	      or AnimFrame=clamp(AnimFrame,1+12,1.9+12)
+	        or AnimFrame=clamp(AnimFrame,1+16,1.9+16)
+	                or AnimFrame=clamp(AnimFrame,1+20,1.9+20)
+	   or AnimFrame=clamp(AnimFrame,1+24,1.9+24)
+	      or AnimFrame=clamp(AnimFrame,1+28,1.9+28)
+	            or AnimFrame=clamp(AnimFrame,1+30,1.9+30)
 	   atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,31)
-	animFrame+=0.5 else animFrame+=0.1
-	if animFrame=30 {
+	if AnimFrame=clamp(AnimFrame,0,31)
+	AnimFrame+=0.5 else AnimFrame+=0.1
+	if AnimFrame=30 {
 			selfatk.HitForce=-4  selfatk.HitForceZ=-4
 		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66,spr_lightingbolt,0,0.5,0,1,1,c_white,1)
 		selfatk.spriteFX=spr_elecflash selfatk.MoveType=3
 		}
 	if sprite_index=spr_viva_special2b {selfatk.MoveType=3 selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
 
-	if animFrame>32.5 {powlock=0 hurt=0 atk=0 canmove=1 hit=0
+	if AnimFrame>32.5 {powlock=0 hurt=0 atk=0 canmove=1 hit=0
 	if powcheck=0
 	hp-=powhp else {pow=0 powlock=0}
 	  if hp<0.01 hp=0.01
@@ -607,7 +607,7 @@ selfatk.spriteFX=spr_hitflash
 	{weaponBack=2 prevanim=36
 
 
-	if animFrame>0.1
+	if AnimFrame>0.1
 	{
 	weaponAttack=0
 
@@ -620,30 +620,30 @@ selfatk.spriteFX=spr_hitflash
 	if key_attack and (commandDown!=0 and commandUp!=0)
 	{if !place_free(x+1*image_xscale,y)
 	targetID.x=x targetID.z=z with targetID {throwcombo=2
-	animFrame=0 HitType=0 ground=1 hurt=0 hit=0 Throw=0 hitBack=0
+	AnimFrame=0 HitType=0 ground=1 hurt=0 hit=0 Throw=0 hitBack=0
 	HitForceReact=-8*image_xscale throw_quickrelease() recovery=0 recoveryThrow=0 shake=0 shaketime=0}
-	targetID=-1 animFrame=0 anim=80 exit;} ///instantly use Down Up Move
+	targetID=-1 AnimFrame=0 anim=80 exit;} ///instantly use Down Up Move
 
-	animFrame=0 anim=36 ///Pummel
+	AnimFrame=0 anim=36 ///Pummel
 	}
 
 	if (image_xscale=1 and key_right and (key_attack or key_jump))
 	or (image_xscale=-1 and -key_left and (key_attack or key_jump))
-	{PlaySound(snd_viva4) animFrame=0 anim=37 throwcombo=2} ///Throw Forwards
+	{PlaySound(snd_viva4) AnimFrame=0 anim=37 throwcombo=2} ///Throw Forwards
 
 	if (image_xscale=1 and -key_left and (key_attack or key_jump))
 	or (image_xscale=-1 and key_right and (key_attack or key_jump))
-	{PlaySound(snd_viva4) animFrame=0 anim=38 throwcombo=2} ///Throw Backwards
+	{PlaySound(snd_viva4) AnimFrame=0 anim=38 throwcombo=2} ///Throw Backwards
 
 	////Instantly use Special
 	if key_shield_pressed 
 	if hp>=powhp
 	//or pow>4  
 	{prevanim=35
-	with targetID {y=y z=z ground=1 canmove=0 hurt=1 animFrame=0 anim=4 Throw=0 recovery=2}
-	targetID=-1 throwcombo=2 canmove=1 Throw=0 atk=0 animFrame=0 event_user(4) recovery=60 exit;
+	with targetID {y=y z=z ground=1 canmove=0 hurt=1 AnimFrame=0 anim=4 Throw=0 recovery=2}
+	targetID=-1 throwcombo=2 canmove=1 Throw=0 atk=0 AnimFrame=0 event_user(4) recovery=60 exit;
 	}
-	else {animFrame=0 
+	else {AnimFrame=0 
 	if (key_right and image_xscale=1) anim=37
 	if (-key_left and image_xscale=1) anim=38
 	if (-key_left and image_xscale=-1) anim=37
@@ -652,9 +652,9 @@ selfatk.spriteFX=spr_hitflash
 
 	////Instantly use Super
 	if key_super if super>=17.5
-	{with targetID {ground=1 canmove=0 hurt=1 animFrame=0 anim=4 Throw=0}
+	{with targetID {ground=1 canmove=0 hurt=1 AnimFrame=0 anim=4 Throw=0}
 	targetID=-1 throwcombo=2 canmove=1 Throw=0 atk=0 event_user(8) exit;}
-	else {animFrame=0 
+	else {AnimFrame=0 
 	if (key_right and image_xscale=1) anim=37
 	if (-key_left and image_xscale=1) anim=38
 	if (-key_left and image_xscale=-1) anim=37
@@ -667,7 +667,7 @@ selfatk.spriteFX=spr_hitflash
 	selfatk.image_xscale=0
 	comboBreak=0
 	selfatk.recovery=90
-	if animFrame>0.1
+	if AnimFrame>0.1
 	Throw=0 else Throw=1
 	sprite_index=spr_viva_grab
 	image_index=0 image_speed=0
@@ -679,29 +679,29 @@ selfatk.spriteFX=spr_hitflash
 	targetID.atk=0
 	targetID.hurt=1
 	///Drag Enemy
-	targetID.animFrame=0
+	targetID.AnimFrame=0
 	targetID.targetHeightHit=targetID.GrabFrame
 	grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale
 	targetID.depth=depth+1
-	atk=0 if animFrame>grabTime/2 targetID.shaketime=1
-	animFrame+=0.02 if animFrame>grabTime {grabTime=2
+	atk=0 if AnimFrame>grabTime/2 targetID.shaketime=1
+	AnimFrame+=0.02 if AnimFrame>grabTime {grabTime=2
 	grabX=0 grabY=0 grabZ=0 //targetID.hp-=0.05+extradamage
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
 
 	with targetID
-	{recovery=0 animFrame=0 
+	{recovery=0 AnimFrame=0 
 	hurt=0 Throw=0
 	atk=0 canmove=1 
-	animFrame=EgrabFrame anim=EgrabAnim if anim!=0 canmove=0 throwcombo=2 z+=EgrabzAdd
+	AnimFrame=EgrabFrame anim=EgrabAnim if anim!=0 canmove=0 throwcombo=2 z+=EgrabzAdd
 	sentflying=EgrabSentFlying*image_xscale zSpeed=EgrabZspeed if zSpeed!=0 ground=0 sprite_index=EgrabzSpr image_index=EgrabzIG
-	}throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+	}throwing=0 AnimFrame=0 anim=0 canmove=1 throwcombo=2
 	targetID=-1
 	}
 	if targetID!=-1 ///Check if Target is dead
 	{
 	if targetID.dead=1
-	{throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+	{throwing=0 AnimFrame=0 anim=0 canmove=1 throwcombo=2
 	character_release(0,-4,2*image_xscale,0,3,5)}}
 
 	}
@@ -714,7 +714,7 @@ selfatk.spriteFX=spr_hitflash
 	selfatk.recovery=10
 	Throw=1
 	sprite_index=spr_viva_grab
-	image_index=animFrame image_speed=0
+	image_index=AnimFrame image_speed=0
 	sentFlying=0 hspeed=0
 
 	targetID.hit=2 canmove=0 
@@ -722,11 +722,11 @@ selfatk.spriteFX=spr_hitflash
 	targetID.atk=0
 	targetID.hurt=1
 	///Drag Enemy
-	if animFrame<3 targetID.targetHeightHit=targetID.GrabFrame else targetID.targetHeightHit=2
+	if AnimFrame<3 targetID.targetHeightHit=targetID.GrabFrame else targetID.targetHeightHit=2
 	grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale
 	targetID.depth=depth+1 atkcol_set(27,0,43,1.45,1,28)
 	 ///Anim End
-	if animFrame=2.02
+	if AnimFrame=2.02
 	{targetHeight=2 if throwcombo=1 MoveType=1 else MoveType=0 damage=0.06 atk=1
 	super+=0.25*canSuper targetID.hp-=0.06
 	if targetID.hp>=0
@@ -745,7 +745,7 @@ selfatk.spriteFX=spr_hitflash
 	with targetID {hud_show() hpscan()
 	}
 
-	animFrame+=0.2 if animFrame>4 {
+	AnimFrame+=0.2 if AnimFrame>4 {
 	if throwcombo=0
 	{
 	anim=0 ///Throw End
@@ -769,7 +769,7 @@ selfatk.spriteFX=spr_hitflash
 
 	///Throw Distance
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	hud_show() hpscan()
 	event_user(11)
@@ -792,21 +792,21 @@ selfatk.spriteFX=spr_hitflash
 
 	///Throw Distance
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	hud_show() hpscan()
 	event_user(11)
 	}throwing=0 
 	targetID=-1 throwcombo=2 anim=39 
 	}
-	else {throwcombo-=1 animFrame=0 anim=35}
+	else {throwcombo-=1 AnimFrame=0 anim=35}
 	}
 	}
 	}
 
 	if anim=37 ///Throw Forwards
 	{
-	if animFrame=0
+	if AnimFrame=0
 	prevanim=37
 	isThrow=1
 	throwing=1
@@ -815,7 +815,7 @@ selfatk.spriteFX=spr_hitflash
 	selfatk.recovery=90
 	Throw=1 recovery=10
 	sprite_index=spr_viva_throw
-	image_index=animFrame image_speed=0
+	image_index=AnimFrame image_speed=0
 
 	with targetID {hud_show() hpscan()}
 	targetID.hit=2 targetID.hitSource=id targetID.ThrowDamage=0
@@ -823,15 +823,15 @@ selfatk.spriteFX=spr_hitflash
 	targetID.atk=0
 	targetID.hurt=1 
 	///Drag Enemy
-	if animFrame<0.75 {targetID.targetHeightHit=targetID.GrabFrame grabX=32*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale}
+	if AnimFrame<0.75 {targetID.targetHeightHit=targetID.GrabFrame grabX=32*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale}
 	else {targetID.targetHeightHit=targetID.GrabFrame grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale}
 	
-//	if animFrame=1 {targetID.targetHeightHit=2 grabX=32*image_xscale grabY=0 grabZ=-1 targetID.image_xscale=-image_xscale}
-//	if animFrame=2 {targetID.targetHeightHit=0 grabX=32*image_xscale grabY=0 grabZ=-1 targetID.image_xscale=-image_xscale}
+//	if AnimFrame=1 {targetID.targetHeightHit=2 grabX=32*image_xscale grabY=0 grabZ=-1 targetID.image_xscale=-image_xscale}
+//	if AnimFrame=2 {targetID.targetHeightHit=0 grabX=32*image_xscale grabY=0 grabZ=-1 targetID.image_xscale=-image_xscale}
 
-	 if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.1 else animFrame+=0.1 if animFrame>2.5 {
+	 if AnimFrame=clamp(AnimFrame,2,2.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.1 else AnimFrame+=0.1 if AnimFrame>2.5 {
 		atkcol_set(31,0,42,1.35,1,26)
 		MoveType=1 damage=0.1
 		
@@ -858,7 +858,7 @@ selfatk.spriteFX=spr_hitflash
 	zSpeed=-4 
 	sentflying=4*-image_xscale///Throw Distance
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	hud_show() hpscan()
 	event_user(12)
@@ -868,7 +868,7 @@ selfatk.spriteFX=spr_hitflash
 	if targetID!=-1 ///Check if Target is dead
 	{
 	if targetID.dead=1
-	{throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+	{throwing=0 AnimFrame=0 anim=0 canmove=1 throwcombo=2
 	character_release(0,-4,2*image_xscale,0,3,5)}}
 	}
 
@@ -890,15 +890,15 @@ selfatk.spriteFX=spr_hitflash
 	targetID.atk=0
 	targetID.hurt=1
 	///Drag Enemy
-	 if animFrame=clamp(animFrame,0,0.5)
+	 if AnimFrame=clamp(AnimFrame,0,0.5)
 	{image_index=0 throwStrengthTime=90 throwStrengthMax=0
 	targetID.targetHeightHit=16 grabX=16*image_xscale grabY=1 grabZ=0 targetID.image_xscale=-image_xscale}
 
-	 if animFrame=clamp(animFrame,0.6,0.9)
+	 if AnimFrame=clamp(AnimFrame,0.6,0.9)
 	{image_index=1 throwStrengthTime=90 throwStrengthMax=0
 	targetID.targetHeightHit=16 grabX=16*image_xscale grabY=-60 grabZ=0 targetID.image_xscale=-image_xscale}
 
-	  if animFrame=clamp(animFrame,1,1.9)
+	  if AnimFrame=clamp(AnimFrame,1,1.9)
 	{  if image_index!=2 image_xscale=-image_xscale image_index=2
 	targetID.targetHeightHit=18 grabX=0 grabY=1 grabZ=-72+shake targetID.image_xscale=image_xscale
 	targetID.hitBack=1
@@ -907,13 +907,13 @@ selfatk.spriteFX=spr_hitflash
 	enemy_heavythrow(1,1.5,3,2.1)	//////////
 	}
 
-	 if animFrame=clamp(animFrame,2,2.9)
-	{if animFrame<2.5 image_index=3 else image_index=4
-	targetID.animFrame=5 grabX=-4*image_xscale grabY=1 grabZ=-70}
+	 if AnimFrame=clamp(AnimFrame,2,2.9)
+	{if AnimFrame<2.5 image_index=3 else image_index=4
+	targetID.AnimFrame=5 grabX=-4*image_xscale grabY=1 grabZ=-70}
 
-	 if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.1 else animFrame+=0.1 if animFrame>2.5 {anim=39 ///Throw End
+	 if AnimFrame=clamp(AnimFrame,2,2.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.1 else AnimFrame+=0.1 if AnimFrame>2.5 {anim=39 ///Throw End
 	grabX=0 grabY=0 grabZ=0 super+=0.25 targetID.hp-=0.0+extradamage
 	super+=0.25*canSuper
 	targetID.thrownAtk=1
@@ -936,7 +936,7 @@ selfatk.spriteFX=spr_hitflash
 	zSpeed=-6
 	sentflying=5*image_xscale///Throw Distance
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	hud_show() hpscan()
 	event_user(12)
@@ -950,7 +950,7 @@ selfatk.spriteFX=spr_hitflash
 	if targetID!=-1 ///Check if Target is dead
 	{
 	if targetID.dead=1
-	{throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+	{throwing=0 AnimFrame=0 anim=0 canmove=1 throwcombo=2
 	character_release(0,-4,2*image_xscale,0,3,5)}}
 	}
 
@@ -961,19 +961,19 @@ selfatk.spriteFX=spr_hitflash
 	selfatk.recovery=30
 	Throw=0
 	if prevanim=36 ///Detect previous throwing animations when they throw opponent
-	{image_index=animFrame image_speed=0}
+	{image_index=AnimFrame image_speed=0}
 	if prevanim=37///Throw Fowards
-	{image_index=animFrame image_speed=0}
+	{image_index=AnimFrame image_speed=0}
 	if prevanim=38///Throw Back
-	{if animFrame>3.5 image_index=0 else if image_index<4.5 image_index+=0.25 image_speed=0}
+	{if AnimFrame>3.5 image_index=0 else if image_index<4.5 image_index+=0.25 image_speed=0}
 	throwing=0
-	animFrame+=0.1 if animFrame>4.5 {hurt=0 canmove=1 Throw=0}
+	AnimFrame+=0.1 if AnimFrame>4.5 {hurt=0 canmove=1 Throw=0}
 	}
 
 	///Prepare To Jump / Land
 	if anim=21 or anim=22
 	{hit=0 MoveType=0 canmove=0  weaponBack=1
-	if anim=22 if animFrame=0 {wobbleX=1.1 wobbleY=0.9}
+	if anim=22 if AnimFrame=0 {wobbleX=1.1 wobbleY=0.9}
 	weaponanim(weaponspr,weaponIndex,9,-31,90*image_xscale,weaponcolor)
 
 	if carry=0
@@ -984,8 +984,8 @@ selfatk.spriteFX=spr_hitflash
 	}
 
 	 image_speed=0 atk=0
-	if animFrame=clamp(animFrame,0,1)
-	animFrame+=0.05 else animFrame+=0.05 if animFrame>0.1 {
+	if AnimFrame=clamp(AnimFrame,0,1)
+	AnimFrame+=0.05 else AnimFrame+=0.05 if AnimFrame>0.1 {
 	if anim=21
 	{hurt=0 atk=0 canmove=1 hit=0 event_user(7)}
 	else canmove=1
@@ -996,13 +996,13 @@ selfatk.spriteFX=spr_hitflash
 	///Throw Item
 	if anim=24
 	{
-	if animFrame=0 PlaySound(snd_swing)
+	if AnimFrame=0 PlaySound(snd_swing)
 
 	hit=0 MoveType=0 
 	sprite_index=spr_viva_hammeratk
-	image_index=animFrame+1.5 image_speed=0 atk=0
-	if animFrame=clamp(animFrame,0,1)
-	animFrame+=0.05 else animFrame+=0.05 if animFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame+1.5 image_speed=0 atk=0
+	if AnimFrame=clamp(AnimFrame,0,1)
+	AnimFrame+=0.05 else AnimFrame+=0.05 if AnimFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 
@@ -1018,36 +1018,36 @@ selfatk.spriteFX=spr_hitflash
 	{sprite_index=spr_viva_item
 	item.carryZ=64-76
 	}
-	image_index=animFrame image_speed=0 atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0 atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	
 	///Lift Heavy Object
 	if anim=250
 	{hit=0 MoveType=0 weaponanim(weaponspr,weaponIndex,2,-9,45*image_xscale,weaponcolor) zAddGround=0
-	if carry=1	{if animFrame<1 item.carryZ=64-76 else item.carryZ=-8-76}
-	if animFrame<1 {sprite_index=spr_viva_item image_index=0} else {sprite_index=spr_viva_throwback image_index=1}
-		image_speed=0 atk=0 animFrame+=0.1 if animFrame>2 {hurt=0 atk=0 canmove=1 hit=0}}
+	if carry=1	{if AnimFrame<1 item.carryZ=64-76 else item.carryZ=-8-76}
+	if AnimFrame<1 {sprite_index=spr_viva_item image_index=0} else {sprite_index=spr_viva_throwback image_index=1}
+		image_speed=0 atk=0 AnimFrame+=0.1 if AnimFrame>2 {hurt=0 atk=0 canmove=1 hit=0}}
 		
 	if anim=260 ///Hitting Enemy On Ground
 	{
 	selfatk.NoKnock=0 dizzyAtk=0
 	atkcol_set(11,0,-2,1.75,1,12)
 
-	if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva3)}
+	if AnimFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva3)}
 	damage=0.02 targetHeight=2
-	if comboHit!=0 and animFrame>1.5
+	if comboHit!=0 and AnimFrame>1.5
 	{if key_shield_pressed event_user(4)////<---Here to use special instantly
-	if key_attack {comboHit=0 animFrame=0 anim=11 atk=1}}////<---Here to perform second attack
+	if key_attack {comboHit=0 AnimFrame=0 anim=11 atk=1}}////<---Here to perform second attack
 	selfatk.recovery=10
 	hit=0 MoveType=0
 	sprite_index=spr_viva_attack
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,1,1.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 
@@ -1056,26 +1056,26 @@ selfatk.spriteFX=spr_hitflash
 	if anim=80
 	{weaponBack=-1
 
-	if animFrame=0 PlaySound(snd_viva4)
-	if animFrame=1.2 PlaySound(snd_swing)
+	if AnimFrame=0 PlaySound(snd_viva4)
+	if AnimFrame=1.2 PlaySound(snd_swing)
 
-	sprite_index=spr_viva_downup image_index=animFrame
+	sprite_index=spr_viva_downup image_index=AnimFrame
 
-	if animFrame<2 {sentflying=8*image_xscale wobbleX=lerp(wobbleX,1.1,0.1) wobbleY=lerp(wobbleY,1.1,0.1)}
+	if AnimFrame<2 {sentflying=8*image_xscale wobbleX=lerp(wobbleX,1.1,0.1) wobbleY=lerp(wobbleY,1.1,0.1)}
 	else sentflying=lerp(sentflying,0,0.1)
 	
-	if animFrame<4 afterimage_create(4,make_colour_rgb(57, 173, 255),current_pal,my_pal_sprite,0)
+	if AnimFrame<4 afterimage_create(4,make_colour_rgb(57, 173, 255),current_pal,my_pal_sprite,0)
 
 
 	atkcol_set(25,0,0,1.35,1,88)
 
 	MoveType=1 damage=0.14
 
-	if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
 
 	flashZ=32
 
-	if animFrame=clamp(animFrame,2,4) {ground=0 z-=16 wobbleY=1.2 wobbleX=0.8}
+	if AnimFrame=clamp(AnimFrame,2,4) {ground=0 z-=16 wobbleY=1.2 wobbleX=0.8}
 
 
 	frame_set(0,0,0.2)
@@ -1085,21 +1085,21 @@ selfatk.spriteFX=spr_hitflash
 	frame_set(4,4,0.2)
 	frame_set(5,5,0.0)
 
-	if animFrame>4 and ground=1 {canmove=0 animFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
+	if AnimFrame>4 and ground=1 {canmove=0 AnimFrame=0 anim=25 wobbleX=1.1 wobbleY=0.9}
 	}
 
 	///Side Attack
 	if anim=81
-	{if animFrame=0 PlaySound(snd_viva3) weaponBack=-1
+	{if AnimFrame=0 PlaySound(snd_viva3) weaponBack=-1
 
-	if animFrame=2 { PlaySound(snd_viva6)}
-	sprite_index=spr_viva_sideatk image_index=animFrame
+	if AnimFrame=2 { PlaySound(snd_viva6)}
+	sprite_index=spr_viva_sideatk image_index=AnimFrame
 
 
 
 	atkcol_set(19,0,47,2.15,1,18) MoveType=1 damage=0.14
 
-	if animFrame=clamp(animFrame,3,4) {
+	if AnimFrame=clamp(AnimFrame,3,4) {
 		
 		afterimage_create(4,make_colour_rgb(57, 173, 255),current_pal,my_pal_sprite,0)
 		sentflying=16*image_xscale atk=1
@@ -1113,24 +1113,24 @@ selfatk.spriteFX=spr_hitflash
 	frame_set(4,4,0.05)
 	frame_set(5,5,0.1)
 
-	if animFrame>5.75 {hurt=0 atk=0 canmove=1 hit=0
+	if AnimFrame>5.75 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	
 		///Taunt
 	if anim=83
 {weaponanim(weaponspr,weaponIndex,99990,99999,101*image_xscale,weaponcolor)
-if animFrame=0 {specialanim=-1 if key_up {specialanim=1 specialtimes[0]+=1}
+if AnimFrame=0 {specialanim=-1 if key_up {specialanim=1 specialtimes[0]+=1}
 if key_down {specialanim=2 specialtimes[0]=0}
 }	
 
 if specialanim=-1 ///Heart Taunt
 {
-sprite_index=spr_viva_taunt //if key_right if animFrame<1 {animFrame=0 anim=211}
+sprite_index=spr_viva_taunt //if key_right if AnimFrame<1 {AnimFrame=0 anim=211}
 atk=0 
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.1)
-	frame_set(2,2,0.2) if animFrame=3 //-58
+	frame_set(2,2,0.2) if AnimFrame=3 //-58
 	{hrt=instance_create_depth(x+4*image_xscale,y,-1,oFlashFX)
 		hrt.z=z-58 hrt.depth=depth-1 hrt.hspeed=0.8*image_xscale
 		with hrt
@@ -1141,7 +1141,7 @@ alarm[5]=60 changespr=sprite_index changeimgspd=0.5 changeimpindex=2}}
 	frame_set(4,4,0.3)
 	frame_set(5,5,0.05)
 	frame_set(6,0,0.1)
-if animFrame>6.5 {canmove=1 atk=0}
+if AnimFrame>6.5 {canmove=1 atk=0}
 }
 if specialanim=1 ///Smoke
 {
@@ -1149,7 +1149,7 @@ sprite_index=spr_viva_win2 //-4,-72
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.1)
 	frame_set(2,2,0.01)
-	frame_set(3,1,0.1) if animFrame=4
+	frame_set(3,1,0.1) if AnimFrame=4
 			{
 			if specialtimes[0]<3		
 			{
@@ -1162,12 +1162,12 @@ zSpeed=-.04 zSpeedAdd=-0.1 isDepth=0}
 			}
 else
 {specialtimes[0]=0 specialcheck5=0
-			specialanim=10 animFrame=1
+			specialanim=10 AnimFrame=1
 			}
 }
 	frame_set(4,3,0.05)
 	frame_set(5,0,0.1)
-	if animFrame>5.5 {canmove=1 atk=0}
+	if AnimFrame>5.5 {canmove=1 atk=0}
 }
 if specialanim=2 ///Flex Taunt
 {specialtimes[0]+=0.1 if specialtimes[0]=1.9 specialtimes[0]=0
@@ -1178,12 +1178,12 @@ sprite_index=spr_viva_taunt3 //-4,-72
 	frame_set(3,3,0.1)
 	frame_set(4,1,0.1)
 	frame_set(5,0,0.1)
-	if animFrame>5.5 {canmove=1 atk=0}
+	if AnimFrame>5.5 {canmove=1 atk=0}
 }
 
 if specialanim=10 ///Smoke cough
 {frame_set(0,0,0.1) sprite_index=spr_viva_cough
-frame_set(1,1,0.1) if animFrame=1.1
+frame_set(1,1,0.1) if AnimFrame=1.1
 {
 			hrt=instance_create_depth(x+11*image_xscale,y,-1,oFlashFX)
 		hrt.z=z-59 hrt.depth=depth-1 hrt.hspeed=0.8*image_xscale
@@ -1193,8 +1193,8 @@ zSpeed=-.04 zSpeedAdd=-0.1 isDepth=0}
 }
 frame_set(2,2,0.1)
 frame_set(3,3,0.1)
-frame_set(4,4,0.1) if animFrame=5 if specialcheck5!=2 {specialcheck5+=1 animFrame=1}
-frame_set(5,4,0.1) if animFrame>5.5 {specialanim=1 animFrame=5}
+frame_set(4,4,0.1) if AnimFrame=5 if specialcheck5!=2 {specialcheck5+=1 AnimFrame=1}
+frame_set(5,4,0.1) if AnimFrame>5.5 {specialanim=1 AnimFrame=5}
 
 }
 
@@ -1203,14 +1203,14 @@ frame_set(5,4,0.1) if animFrame>5.5 {specialanim=1 animFrame=5}
 	///Back Punch Attack
 	if anim=84
 {sprite_index=spr_viva_punchback
-if animFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva3)}
+if AnimFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva3)}
 atkcol_set(-33,0,28,0.85,1,28) MoveType=1 damage=0.03
-if animFrame=clamp(animFrame,2,3) {atk=1} else atk=0
+if AnimFrame=clamp(AnimFrame,2,3) {atk=1} else atk=0
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.2)
 	frame_set(2,2,0.2)
 	frame_set(3,1,0.2)
-if animFrame>3.5 {canmove=1 atk=0}
+if AnimFrame>3.5 {canmove=1 atk=0}
 
 }
 	///Charge Attack
@@ -1227,14 +1227,14 @@ if animFrame>3.5 {canmove=1 atk=0}
 	atkcol_set(0,0,0,4,3,100) MoveType=3 damage=0.2
 
 	frame_set(0,0,0.1)
-	frame_set(1,1,0.2) if animFrame=2 
+	frame_set(1,1,0.2) if AnimFrame=2 
 	{PlaySound(snd_viva6) PlaySound(snd_thunder) PlaySound(snd_hitground)
 	oControl.quakeFXTime=8
 	elec=instance_create_depth(x,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z
 	elec=instance_create_depth(x+48,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z
 	elec=instance_create_depth(x-48,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z
 	}
-	frame_set(2,2,0.5) if animFrame=clamp(animFrame,2,2.5) atk=1 else atk=0
+	frame_set(2,2,0.5) if AnimFrame=clamp(AnimFrame,2,2.5) atk=1 else atk=0
 	frame_set(3,3,0.25)
 	frame_set(4,4,0.25)
 	frame_set(5,5,0.25)
@@ -1249,7 +1249,7 @@ if animFrame>3.5 {canmove=1 atk=0}
 	frame_set(10,4,0.25)
 	frame_set(11,6,0.05)
 
-	if animFrame>11.75 {hurt=0 atk=0 canmove=1 hit=0}
+	if AnimFrame>11.75 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 	
 /////Respawn
@@ -1258,14 +1258,14 @@ if animFrame>3.5 {canmove=1 atk=0}
 
 frame_set(0,0,0.025)
 
-if animFrame=0.20 or animFrame=0.40
-or animFrame=0.60 or animFrame=0.80
+if AnimFrame=0.20 or AnimFrame=0.40
+or AnimFrame=0.60 or AnimFrame=0.80
 {
 oControl.quakeFXTime=10
 PlaySoundNoStack(snd_thunder)
 instance_create_depth(x+round(choose(-random_range(2,8),random_range(2,8))),y+round(choose(-random_range(1,2),random_range(1,2))),depth,oAnimFX)
 }
-if animFrame=1 { oControl.quakeFXTime=10
+if AnimFrame=1 { oControl.quakeFXTime=10
 	PlaySoundNoStack(snd_thunder)
 instance_create_depth(x,y,depth,oAnimFX)
 	PlaySound(ReturnVoice) enemy_knoockdown() visible=1 dead=0 hurt=0 DeathCryOnce=0}
@@ -1274,7 +1274,7 @@ frame_set(2,1,0.25)
 frame_set(3,2,0.25)
 frame_set(4,3,0.1)
 frame_set(5,4,0.05)
-if animFrame>5.8
+if AnimFrame>5.8
 {hurt=0 atk=0 canmove=1 hit=0 disappearTime=90 canmove=1 recovery=180 showp1=1;
 alarm[4]=2
 if visible=0 visible=1 else visible=0
@@ -1288,7 +1288,7 @@ disappearTime-=1
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.1)
 	frame_set(2,2,0.01)
-	frame_set(3,1,0.1) if animFrame=4
+	frame_set(3,1,0.1) if AnimFrame=4
 			{hrt=instance_create_depth(x-4*image_xscale,y,-1,oFlashFX)
 		hrt.z=z-72 hrt.depth=depth-1 hrt.hspeed=0.8*image_xscale
 		with hrt

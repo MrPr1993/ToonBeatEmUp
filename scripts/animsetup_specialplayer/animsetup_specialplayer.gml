@@ -5,7 +5,7 @@ function animsetup_specialplayer() {
 	defMask=spr_shadow3
 
 
-	animFrame+=0.1
+	AnimFrame+=0.1
 
 	sprite_index=CarSpr
 
@@ -62,10 +62,10 @@ image_index=0
 
 	image_index=2
 	image_speed=0
-	animFrame+=0.05 if animFrame>1-0.05 {hurt=0
+	AnimFrame+=0.05 if AnimFrame>1-0.05 {hurt=0
 
 	{
-	animFrame=0 anim=200 image_index=0}
+	AnimFrame=0 anim=200 image_index=0}
 
 	}
 	
@@ -77,18 +77,18 @@ image_index=0
 		
 		
 		
-	if animFrame=0 {specialtimes[0]=0 animFrame=0.1 PlaySoundNoStack(snd_explosion)
+	if AnimFrame=0 {specialtimes[0]=0 AnimFrame=0.1 PlaySoundNoStack(snd_explosion)
 		
 		}
 	sprite_index=ThrownSpr 
 	if !ground 
-	{animFrame=0.25
+	{AnimFrame=0.25
 	image_speed=0 image_index=clamp(image_index,3+13,5+13)
 	image_index+=0.1 x+=3 alarm[2]=30
 	}
 	else
 	{
-	if animFrame>1.1
+	if AnimFrame>1.1
 	if vehSpr=spr_boat 
 	{sprite_index=mask_none
 	if specialtimes[0]=0
@@ -97,7 +97,7 @@ image_index=0
 	}
 	}
 	
-	if animFrame<5.5 {alarm[2]=30}
+	if AnimFrame<5.5 {alarm[2]=30}
 frame_set(0,14,0.25)
 frame_set(1,11,0.25)
 frame_set(2,12,0.25)
@@ -110,7 +110,7 @@ frame_set(8,18,0.25)
 frame_set(9,21,0.0)  
 	
 	image_speed=0
-	animFrame+=0.1 if animFrame<8 x-=3 else x-=12}
+	AnimFrame+=0.1 if AnimFrame<8 x-=3 else x-=12}
 	}
 
 	///Car Mode - Ninja Baseball Bat Man
@@ -120,7 +120,7 @@ frame_set(9,21,0.0)
 
 	immune=1
 
-	animFrame+=0.1
+	AnimFrame+=0.1
 
 	sprite_index=CarSpr
 
@@ -194,15 +194,15 @@ if x=-999999999999999999999999999999
 	if carAnim<0 carAnim=1.8 else carAnim-=0.20
 	}
 
-	if animFrame>30
+	if AnimFrame>30
 	{
-	if carExTime<0 {if animFrame<40 carExTime=8 else carExTime=4 specialFX=1 alarm[3]=5}
+	if carExTime<0 {if AnimFrame<40 carExTime=8 else carExTime=4 specialFX=1 alarm[3]=5}
 	else carExTime-=1
 	}
 
 
 	///Car Explode
-	if animFrame>50 {
+	if AnimFrame>50 {
 	canmove=1 
 
 	car=instance_create_depth(x,y,depth,oCar) car.dead=1 car.sprite_index=spr_car_dead
@@ -211,7 +211,7 @@ if x=-999999999999999999999999999999
 	car.mask_index=mask_none
 	car.image_xscale=image_xscale
 
-	animFrame=0
+	AnimFrame=0
 
 	ground=0
 
@@ -230,12 +230,12 @@ if x=-999999999999999999999999999999
 	///Stage Clear
 	if anim=210
 	{
-	if animFrame=0 drop_object()
+	if AnimFrame=0 drop_object()
 				weaponanim(weaponspr,weaponIndex,2500000,-3500000,90*image_xscale,weaponcolor)
 	
 	if sprite_index!=WinSpr PlaySound(WinSnd)
 	sprite_index=WinSpr
-	image_index=animFrame
+	image_index=AnimFrame
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.1)
 	}
@@ -248,20 +248,20 @@ if x=-999999999999999999999999999999
 	
 	
 
-	frame_set(0,0,0.03) if animFrame=0.99 {PlaySound(PointDialouge1) animFrame=1}
-	frame_set(1,1,0.01) if animFrame=2 {PlaySound(PointDialouge2)}
+	frame_set(0,0,0.03) if AnimFrame=0.99 {PlaySound(PointDialouge1) AnimFrame=1}
+	frame_set(1,1,0.01) if AnimFrame=2 {PlaySound(PointDialouge2)}
 	frame_set(2,1,0.1)
 	frame_set(3,1,0.25)
-	frame_set(4,2,0.01) if animFrame=5 canmove=1
+	frame_set(4,2,0.01) if AnimFrame=5 canmove=1
 	frame_set(5,2,0.1) 
 	}
 
 	///Wild Take
 	if oControl.betatest=1 if keyboard_check_pressed(vk_alt)
-	{animFrame=0 anim=choose(300,301)}
+	{AnimFrame=0 anim=choose(300,301)}
 
 	if anim=300
-	{if animFrame=0 drop_object()
+	{if AnimFrame=0 drop_object()
 				weaponanim(weaponspr,weaponIndex,2500000,-3500000,90*image_xscale,weaponcolor)
 	
 	if sprite_index!=WildTakeSpr
@@ -271,14 +271,14 @@ if x=-999999999999999999999999999999
 
 	frame_set(0,0,0.01)
 	frame_set(1,1,0.25)
-	frame_set(2,2,0.25)  if animFrame=3 {PlaySound(DeathCry)}
+	frame_set(2,2,0.25)  if AnimFrame=3 {PlaySound(DeathCry)}
 	frame_set(3,3,0.25)
 	frame_set(4,4,0.25)
 	frame_set(5,5,0.25)
 	frame_set(6,6,0.25)
-	frame_set(7,7,0.25) if animFrame>=7.5
+	frame_set(7,7,0.25) if AnimFrame>=7.5
 
-	 {if special5<4 {special5+=1 animFrame=4 image_index=4}}
+	 {if special5<4 {special5+=1 AnimFrame=4 image_index=4}}
 
 	frame_set(8,3,0.5)
 
@@ -286,29 +286,29 @@ if x=-999999999999999999999999999999
 
 	frame_set(10,1,0.5)
 
-	  if animFrame>10.9 {canmove=1 special5=0}
+	  if AnimFrame>10.9 {canmove=1 special5=0}
 
 	}
 	
 	
 		if anim=301 ////Wild Take - Stage 2 - Look Up
-	{if animFrame=0 drop_object()
+	{if AnimFrame=0 drop_object()
 
 
 	canmove=0
 	
 	frame_set(0,0,0.05)
 	frame_set(1,0,0.5)
-	if animFrame>2
+	if AnimFrame>2
 	weaponanim(weaponspr,weaponIndex,2500000,-3500000,90*image_xscale,weaponcolor)
-	frame_set(2,0,0.05) if animFrame=3 {PlaySound(DamageVoice1) sprite_index=WildTakeSpr2 special5=0}
+	frame_set(2,0,0.05) if AnimFrame=3 {PlaySound(DamageVoice1) sprite_index=WildTakeSpr2 special5=0}
 	frame_set(3,0,0.25)
 	frame_set(4,1,0.25)
 	frame_set(5,2,0.25)
 	frame_set(6,1,0.25)
-	frame_set(7,2,0.25) if animFrame>=7.5
-{if special5<4 {special5+=1 animFrame=4 image_index=1}}
-if animFrame=8 {PlaySound(DamageVoice2) image_xscale=-1 sprite_index=ThrownSpr}
+	frame_set(7,2,0.25) if AnimFrame>=7.5
+{if special5<4 {special5+=1 AnimFrame=4 image_index=1}}
+if AnimFrame=8 {PlaySound(DamageVoice2) image_xscale=-1 sprite_index=ThrownSpr}
 
 frame_set(8,16,0.25)
 frame_set(9,13,0.25)
@@ -322,43 +322,43 @@ frame_set(16,14,0.25)
 frame_set(17,13,0.25)
 frame_set(18,12,0.25)
 frame_set(19,11,0.25)
-frame_set(20,19,0.5) if animFrame=clamp(animFrame,8,19) sentflying=-5 else sentflying=0
+frame_set(20,19,0.5) if AnimFrame=clamp(AnimFrame,8,19) sentflying=-5 else sentflying=0
 frame_set(21,21,0.05)
 frame_set(22,22,0.5)
-frame_set(23,23,0.5) if animFrame>24 {sprite_index=WildTakeSpr image_index=0 image_xscale=1}
+frame_set(23,23,0.5) if AnimFrame>24 {sprite_index=WildTakeSpr image_index=0 image_xscale=1}
 frame_set(24,0,0.01) 
 
-	  if animFrame>24.9 {canmove=1 special5=0}
+	  if AnimFrame>24.9 {canmove=1 special5=0}
 
 	}
 
 
 		if anim=302 ////Bullet Dance
-	{if animFrame=0 sprite_index=WildTakeSpr
+	{if AnimFrame=0 sprite_index=WildTakeSpr
 		
-	frame_set(0,0,0) if animFrame=1 sprite_index=BDanceSpr
+	frame_set(0,0,0) if AnimFrame=1 sprite_index=BDanceSpr
 	frame_set(1,0,0.25)
 	frame_set(2,1,0.25) 
-	frame_set(3,2,0.25) if animFrame=4-0.25 animFrame=1
-	frame_set(4,1,0.25) if animFrame=4.25 sprite_index=WildTakeSpr
+	frame_set(3,2,0.25) if AnimFrame=4-0.25 AnimFrame=1
+	frame_set(4,1,0.25) if AnimFrame=4.25 sprite_index=WildTakeSpr
 	frame_set(5,0,0)
 	}
 	
 			if anim=303 ////Sucked by Plane Door
-	{if animFrame=0 sprite_index=WildTakeSpr
+	{if AnimFrame=0 sprite_index=WildTakeSpr
 	frame_set(0,0,0) 
 	frame_set(1,0,0.1) 
 	frame_set(2,0,0.1) 
-	frame_set(3,1,0.1) if animFrame=4 {if sprite_index!=PlaneOutSpr {sprite_index=PlaneOutSpr image_xscale=-image_xscale}}
+	frame_set(3,1,0.1) if AnimFrame=4 {if sprite_index!=PlaneOutSpr {sprite_index=PlaneOutSpr image_xscale=-image_xscale}}
 	frame_set(4,0,0.25)
 	frame_set(5,1,0.25) 
 	frame_set(6,0,0.25)
-	frame_set(7,2,0.25)	if animFrame=8-0.25 animFrame=4
+	frame_set(7,2,0.25)	if AnimFrame=8-0.25 AnimFrame=4
 	}
 	
 			if anim=304 ////Sucked by Plane Door
-	{if animFrame=0 sprite_index=WildTakeSpr
-	frame_set(0,1,0.25) if animFrame=1 sprite_index=WildTakeSpr3
+	{if AnimFrame=0 sprite_index=WildTakeSpr
+	frame_set(0,1,0.25) if AnimFrame=1 sprite_index=WildTakeSpr3
 frame_set(1,0,0.25) 
 frame_set(2,1,0.25) 
 frame_set(3,0,0.25) 
@@ -375,26 +375,26 @@ frame_set(13,1,0.25)
 frame_set(14,0,0.25) 
 frame_set(15,1,0.25) 
 frame_set(16,0,0.25) 
-frame_set(17,1,0.05) if animFrame=18 sprite_index=HeartSpr
+frame_set(17,1,0.05) if AnimFrame=18 sprite_index=HeartSpr
 frame_set(18,0,0.1)
 frame_set(19,1,0.1)
-frame_set(20,2,0.05) if animFrame=21 animFrame=18
+frame_set(20,2,0.05) if AnimFrame=21 AnimFrame=18
 	}
 	
 				if anim=305 ////Reaction of Museum
 				{
-					frame_set(0,0,0) if animFrame=0 {sprite_index=PointSpr image_index=0}
-					frame_set(1,0,0) if animFrame=1 {sprite_index=PointSpr image_index=2}
+					frame_set(0,0,0) if AnimFrame=0 {sprite_index=PointSpr image_index=0}
+					frame_set(1,0,0) if AnimFrame=1 {sprite_index=PointSpr image_index=2}
 					
 				}
 				
 						if anim=306 ////Oni Quake
-				{if animFrame=0 sprite_index=WildTakeSpr4
+				{if AnimFrame=0 sprite_index=WildTakeSpr4
 					frame_set(0,0,0)
 					frame_set(1,1,0.25) 
 					frame_set(2,2,0.25) 
-					if animFrame=3 {animFrame=1}
-					frame_set(4,0,0) if animFrame=4 sprite_index=WildTakeSpr
+					if AnimFrame=3 {AnimFrame=1}
+					frame_set(4,0,0) if AnimFrame=4 sprite_index=WildTakeSpr
 				}
 
 ////Petting Animal
@@ -403,7 +403,7 @@ frame_set(20,2,0.05) if animFrame=21 animFrame=18
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.1)
 	frame_set(2,1,0.1)
-	if animFrame>2 animFrame=0
+	if AnimFrame>2 AnimFrame=0
 	if !key_charge {canmove=1 anim=0}
 	}
 	
@@ -411,7 +411,7 @@ frame_set(20,2,0.05) if animFrame=21 animFrame=18
 if anim=19930
 	{sprite_index=throwItemSpr weaponBack=0 weaponanim(weaponspr,weaponIndex,-12,-53,112*image_xscale,weaponcolor)
 	frame_set(0,0,0.2) 
-	if animFrame=0.8
+	if AnimFrame=0.8
 	if spawnID!=-1
 	{
 	{PlaySound(snd_swing)}
@@ -419,21 +419,21 @@ item_thrown()
 	}
 	frame_set(1,1,0.1)
 	frame_set(2,1,0.1)
-	if animFrame>2 {canmove=1 anim=0}
+	if AnimFrame>2 {canmove=1 anim=0}
 	}
 
 //////Fishing Minigame
 if anim=26
 if weapontype=0
 if spawnID=oFishingRod
-	{if animFrame=0 {image_xscale=1
+	{if AnimFrame=0 {image_xscale=1
 	hp=maxhp
 fish_choose(choose(0,1,2,3,4,5,6,7,8,9,10))
 	
 	}
 	////Hammer Swing
 frame_set(0,0,0.1)
-frame_set(1,1,0.05) if animFrame=2
+frame_set(1,1,0.05) if AnimFrame=2
 {areaEntry=1
 PlaySound(snd_swing5)
 oFishingMinigame.x=x+32 oFishingMinigame.y=y oFishingMinigame.z=z-96
@@ -446,13 +446,13 @@ frame_set(2,0,0.25)
 frame_set(3,2,0.1)
 frame_set(4,3,0.1)
 
-if animFrame>4
+if AnimFrame>4
 {
 fishtime+=1
 
 if fishtime>random_range(200,300)
 {
-animFrame=0 PlaySound(snd_hit2) anim=260000
+AnimFrame=0 PlaySound(snd_hit2) anim=260000
  PlaySound(snd_splash1)
 with oFishingMinigame
 flashFX(x,y,z+6,spr_watersplashsmall,0,0.5,10,1,1,c_white,1)
@@ -462,62 +462,62 @@ flashFX(x,y,z+6,spr_watersplashsmall,0,0.5,10,1,1,c_white,1)
 
 	if character=0
 	{
-	if animFrame=clamp(animFrame,0,0.9)
+	if AnimFrame=clamp(AnimFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,2,2.9)
+	if AnimFrame=clamp(AnimFrame,2,2.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,3,3.9)
+	if AnimFrame=clamp(AnimFrame,3,3.9)
 	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,4,4.9)
+	if AnimFrame=clamp(AnimFrame,4,4.9)
 	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}	
 	sprite_index=spr_viva_hammeratk
 	}
 	if character=1
 	{sprite_index=spr_hina_hammeratk
-		if animFrame=clamp(animFrame,0,0.9)
+		if AnimFrame=clamp(AnimFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,2,2.9)
+	if AnimFrame=clamp(AnimFrame,2,2.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,3,3.9)
+	if AnimFrame=clamp(AnimFrame,3,3.9)
 	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,4,4.9)
+	if AnimFrame=clamp(AnimFrame,4,4.9)
 	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
 	
 	}
 	if character=2	{
 	sprite_index=spr_bahati_hammeratk
-		if animFrame=clamp(animFrame,0,0.9)
+		if AnimFrame=clamp(AnimFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,2,2.9)
+	if AnimFrame=clamp(AnimFrame,2,2.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,3,3.9)
+	if AnimFrame=clamp(AnimFrame,3,3.9)
 	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,4,4.9)
+	if AnimFrame=clamp(AnimFrame,4,4.9)
 	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
 	sprite_index=spr_bahati_hammeratk
 	}
 	if character=3	
 	{sprite_index=spr_sofia_hammeratk
-	if animFrame=clamp(animFrame,0,0.9)
+	if AnimFrame=clamp(AnimFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,2,2.9)
+	if AnimFrame=clamp(AnimFrame,2,2.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,90*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,3,3.9)
+	if AnimFrame=clamp(AnimFrame,3,3.9)
 	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,4,4.9)
+	if AnimFrame=clamp(AnimFrame,4,4.9)
 	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
 	sprite_index=spr_sofia_hammeratk	
 	}
 	image_speed=0
-	//if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
+	//if AnimFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 
 /////Fishing Minigame - Dragging Fish
@@ -541,7 +541,7 @@ if character=3 {sprite_index=spr_sofia_gunstand
 	}
 
 frame_set(0,0,0.25)
-frame_set(1,3,0.25) if animFrame>1.75 animFrame=0
+frame_set(1,3,0.25) if AnimFrame>1.75 AnimFrame=0
 
 with oFishingMinigame 
 {
@@ -562,7 +562,7 @@ with oFishingMinigame
 	
 fishstr+=0.05
 if fishstr>10 or x>1080
-{	with oPlayer {canmove=1 anim=0 animFrame=0} Thrown=0
+{	with oPlayer {canmove=1 anim=0 AnimFrame=0} Thrown=0
 		fishout=0
 		
 
@@ -573,7 +573,7 @@ if key_attack {oFishingMinigame.x-=16
 	oFishingMinigame.fishstr-=1 oFishingMinigame.fishstr=clamp(oFishingMinigame.fishstr,0,30)
 	
 	
-	if oFishingMinigame.x<256 {animFrame=0 anim=260001 oFishingMinigame.sprite_index=fishspr
+	if oFishingMinigame.x<256 {AnimFrame=0 anim=260001 oFishingMinigame.sprite_index=fishspr
 		with oFishingMinigame {fishout=1 spdZ=-16 PlaySound(snd_splash2)
 			flashFX(x,y+2,z+6,spr_watersplash,0,0.5,10,1,1,c_white,1)
 			}
@@ -587,7 +587,7 @@ if key_attack {oFishingMinigame.x-=16
 
 ///Fish Get!
 if anim=260001
-{if animFrame=0 image_xscale=1
+{if AnimFrame=0 image_xscale=1
 
 var fishcatch=0;
 if oFishingMinigame.fishout=1
@@ -595,7 +595,7 @@ if oFishingMinigame.z>z-48 and oFishingMinigame.spdZ>0
 {
 fishcatch=1; oFishingMinigame.spdZ=0 oFishingMinigame.z=z oFishingMinigame.fishout=2
 
-animFrame=3
+AnimFrame=3
 
 oFishingMinigame.fishname=fishname
 oFishingMinigame.fishscore=fishscore
@@ -620,33 +620,33 @@ AltScore3=-2
 if fishcatch=0
 {
 	if character=0
-	{if animFrame=0 sprite_index=spr_viva_hammeratk
-	if animFrame=clamp(animFrame,0,0.9)
+	{if AnimFrame=0 sprite_index=spr_viva_hammeratk
+	if AnimFrame=clamp(AnimFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 
 	}
 	if character=1
-	{if animFrame=0 sprite_index=spr_hina_hammeratk
-		if animFrame=clamp(animFrame,0,0.9)
+	{if AnimFrame=0 sprite_index=spr_hina_hammeratk
+		if AnimFrame=clamp(AnimFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 
 	}
 	if character=2	{
-	if animFrame=0 sprite_index=spr_bahati_hammeratk
-		if animFrame=clamp(animFrame,0,0.9)
+	if AnimFrame=0 sprite_index=spr_bahati_hammeratk
+		if AnimFrame=clamp(AnimFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 	}
 	if character=3	
-	{if animFrame=0 sprite_index=spr_sofia_hammeratk
-	if animFrame=clamp(animFrame,0,0.9)
+	{if AnimFrame=0 sprite_index=spr_sofia_hammeratk
+	if AnimFrame=clamp(AnimFrame,0,0.9)
 	{weaponanim(weaponspr,weaponIndex,-12,-75,180*image_xscale,weaponcolor)}
-	if animFrame=clamp(animFrame,1,1.9)
+	if AnimFrame=clamp(AnimFrame,1,1.9)
 	{weaponanim(weaponspr,weaponIndex,-35,-61,210*image_xscale,weaponcolor)}
 	}
 }
@@ -677,7 +677,7 @@ frame_set(4,1+hasboot,0.25)
 
 	
 	image_speed=0
-	//if animFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
+	//if AnimFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 
 }

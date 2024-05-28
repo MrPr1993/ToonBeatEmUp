@@ -21,7 +21,7 @@ if oControl.allPlayersMove
 
 
 	
-with oPlayer {areaEntry=1 canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=999999 image_index=0}
+with oPlayer {areaEntry=1 canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 AnimFrame=0 anim=999999 image_index=0}
 
 
 sandstorm=instance_create_depth(0,0,-1,oCameoChar)

@@ -15,7 +15,7 @@ else
 draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+trainz+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale*wobbleX,image_yscale*wobbleY,image_angle,image_blend,image_alpha)
 
 
-if sprite_index=spr_slime_punch and animFrame=clamp(animFrame,4,5.99)
+if sprite_index=spr_slime_punch and AnimFrame=clamp(AnimFrame,4,5.99)
 {
 draw_sprite_part_ext(spr_slime_punch2,0,0,0,1,107,round(x+37*image_xscale),round(y-z-107),image_xscale*specialcheck1,image_yscale,image_blend,image_alpha)
 draw_sprite_ext(spr_slime_punch2,0,round(x+(37+specialcheck1)*image_xscale),round(y-z),image_xscale,image_yscale,image_angle,image_blend,image_alpha)

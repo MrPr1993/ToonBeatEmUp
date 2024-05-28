@@ -8,7 +8,7 @@ image_speed=0
 
 trainz=0
 
-animFrame=0
+AnimFrame=0
 
 fallHole=0
 
@@ -67,7 +67,7 @@ trainingreact=function(_willchange)
 {specialcheck[9]=0
 with oControl specialcommanddraw=function() {};
 
-alarm[0]=160 trainingcheck=12 trainingnumbers+=1 if _willchange {animFrame=0 anim=1}
+alarm[0]=160 trainingcheck=12 trainingnumbers+=1 if _willchange {AnimFrame=0 anim=1}
 with oSandbag sandbagreact=function() {}
 tutorialtext=choose("GOOD!", "GREAT!", "EXCELLENT")
 trainingdraw=function() {}

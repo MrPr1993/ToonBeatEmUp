@@ -7,8 +7,8 @@ function animsetup_swing(){
 if anim=0 
 {sprite_index=StandSpr
 	
-if animFrame>1 animFrame+=0.25 else animFrame+=0.01 if animFrame>3 animFrame=0
-image_index=animFrame
+if AnimFrame>1 AnimFrame+=0.25 else AnimFrame+=0.01 if AnimFrame>3 AnimFrame=0
+image_index=AnimFrame
 	
 if image_index<1
 weaponanim(weaponspr,weaponIndex,14,-65,180*image_xscale,weaponcolor)

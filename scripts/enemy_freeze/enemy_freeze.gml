@@ -14,7 +14,7 @@ function enemy_freeze() {
 	shaketime=argument2
 	image_speed=argument3
 	anim=31
-	animFrame=0
+	AnimFrame=0
 	canmove=0
 	superarmorhp=0
 	superarmortime=0

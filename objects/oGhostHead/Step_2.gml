@@ -40,16 +40,16 @@ sprite_index=spr_ghost_head image_index=3
 
 if anim=4
 {sprite_index=spr_ghost_headhit image_index=3 hurt=1 recovery=60
-if z<0 spdZ+=0.4 else {animFrame=0 spdZ=0 z=0 anim=5 PlaySound(snd_hitground)
+if z<0 spdZ+=0.4 else {AnimFrame=0 spdZ=0 z=0 anim=5 PlaySound(snd_hitground)
 	flashFX(x,y,z,spr_hitground,0,0.5,0,1,1,c_white,1)
 	}
 x+=sentflying
 }
 
 if anim=5
-{animFrame+=0.1 sentflying=0 recovery=60
-if animFrame=clamp(animFrame,0,0.5) image_index=5
-else if animFrame=clamp(animFrame,0.5,3) image_index=6
+{AnimFrame+=0.1 sentflying=0 recovery=60
+if AnimFrame=clamp(AnimFrame,0,0.5) image_index=5
+else if AnimFrame=clamp(AnimFrame,0.5,3) image_index=6
 else {if hp<=0 
 	{
 	if ownBody!=-1 with ownBody
@@ -58,7 +58,7 @@ else {if hp<=0
 	instance_destroy()
 	}
 	image_index=9}
-if animFrame>4.5 { hurt=0 anim=0}
+if AnimFrame>4.5 { hurt=0 anim=0}
 }
 
 
@@ -68,7 +68,7 @@ if anim=10
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
-frame_set(3,3,0.025) if animFrame=4
+frame_set(3,3,0.025) if AnimFrame=4
 {PlaySound(snd_ant4) PlaySound(snd_flame)
 card=instance_create_depth(x+32*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 card.sprite_index=spr_headproj
@@ -89,7 +89,7 @@ frame_set(14,4,0.25)
 frame_set(15,5,0.25)
 frame_set(16,4,0.025)
 frame_set(17,0,0.025)
-if animFrame>17.75 anim=0
+if AnimFrame>17.75 anim=0
 }
 
 

@@ -78,7 +78,7 @@ thrownPlayer=-1
 
 
 	PlaySoundNoStack(other.HitSound)
-	animFrame=0
+	AnimFrame=0
 	anim=61 recovery=10
 	shaketime=30
 

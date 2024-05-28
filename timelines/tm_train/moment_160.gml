@@ -13,4 +13,4 @@ oEnemySpawner.roomMove=0
 oControl.camMove=1
 spawner_followset("WaveSet1",0,692+160,1)
 
-with oEnemy1 {canmove=0 sprite_index=ThrownSpr hurt=1 isIdle=0 animFrame=0 ground=0 zSpeed=-6 HitForceReact=3 anim=4 targetHeightHit=24}
+with oEnemy1 {canmove=0 sprite_index=ThrownSpr hurt=1 isIdle=0 AnimFrame=0 ground=0 zSpeed=-6 HitForceReact=3 anim=4 targetHeightHit=24}

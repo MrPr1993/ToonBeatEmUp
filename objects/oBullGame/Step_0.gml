@@ -48,7 +48,7 @@ sentflying=2 image_index=0 alarm[0]=2 shadow=mask_none}
 	}
 
 with oBullPlayer {if x=clamp(x,oBullGame.obstacleX-8,oBullGame.obstacleX+8)
-	if ground {animFrame=0 anim=1}	
+	if ground {AnimFrame=0 anim=1}	
 	}
 
 if rundist>runmax {with oBullPlayer

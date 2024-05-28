@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-animFrame=0
+AnimFrame=0
 anim=0
 atk=0
 height=96
@@ -86,8 +86,8 @@ selfscript = function()
 {MoveType=1 damage=0.1
 depth=-y
 frame_set(0,0,0.2)
-frame_set(1,1,0.2) if animFrame=clamp(animFrame,2,2.9) atk=1 else atk=0
-if animFrame=2 
+frame_set(1,1,0.2) if AnimFrame=clamp(AnimFrame,2,2.9) atk=1 else atk=0
+if AnimFrame=2 
 {oControl.quakeFXTime=10 PlaySound(snd_quakeground)
 dust_make(x-16,y+1,z,-2,0,0) dust_make(x+16,y+1,z,2,0,0)
 dust_make(x,y+2,z,0,1,0)
@@ -97,7 +97,7 @@ frame_set(3,3,0.05)
 frame_set(4,4,0.25)
 frame_set(5,5,0.25)
 frame_set(6,6,0.25)
-if animFrame>6.7 {dust_make(x,y,z,0,0,0) instance_destroy()}
+if AnimFrame>6.7 {dust_make(x,y,z,0,0,0) instance_destroy()}
 }
 
 hitscript = function() {}

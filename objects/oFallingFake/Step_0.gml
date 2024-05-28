@@ -2,10 +2,10 @@
 // You can write your code in this editor
 controller_setup()
 
-if -key_left_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=1 dataSelect=6 else dataSelect-=1}
-if key_right_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataSelect=6 dataSelect=1 else dataSelect+=1}
-if key_up_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=8 else dataRow-=1}
-if -key_down_pressed {image_alpha=1 dataPalMax=3 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 animFrame=0 PlaySound(snd_select) if dataRow=8 dataRow=1 else dataRow+=1}
+if -key_left_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 overwriteStand=0 image_index=0 AnimFrame=0 PlaySound(snd_select) if dataSelect=1 dataSelect=6 else dataSelect-=1}
+if key_right_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 AnimFrame=0 PlaySound(snd_select) if dataSelect=6 dataSelect=1 else dataSelect+=1}
+if key_up_pressed {image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 AnimFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=8 else dataRow-=1}
+if -key_down_pressed {image_alpha=1 dataPalMax=3 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 AnimFrame=0 PlaySound(snd_select) if dataRow=8 dataRow=1 else dataRow+=1}
 
 descleft="";
 descright="";

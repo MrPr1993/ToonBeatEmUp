@@ -11,7 +11,7 @@ if anim=0
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
-frame_set(3,1,0.1) if animFrame>3.75 animFrame=0
+frame_set(3,1,0.1) if AnimFrame>3.75 AnimFrame=0
 }
 
 	if anim=1 ///Move
@@ -47,7 +47,7 @@ frame_set(1,1,0.25)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
 frame_set(4,4,0.25)
-frame_set(5,5,0.25) if animFrame>5 {canmove=1 }
+frame_set(5,5,0.25) if AnimFrame>5 {canmove=1 }
 }
 
 }

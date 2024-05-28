@@ -63,5 +63,5 @@ specialBossState=1
 if oControl.betatest=1
 if keyboard_check(vk_control)
 {
-canmove=0 anim=100 animFrame=0;
+canmove=0 anim=100 AnimFrame=0;
 }

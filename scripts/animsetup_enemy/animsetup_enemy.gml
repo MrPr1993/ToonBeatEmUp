@@ -47,7 +47,7 @@ function animsetup_enemy() {
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
-frame_set(3,1,0.1) if animFrame>3.75 animFrame=0	
+frame_set(3,1,0.1) if AnimFrame>3.75 AnimFrame=0	
 	}
 if idlestyle=2
 {
@@ -67,7 +67,7 @@ if idlestyle=2
 	frame_set(13,3,0.1)
 	frame_set(14,4,0.1)
 	frame_set(15,3,0.1)
-	if animFrame>15.9 animFrame=0
+	if AnimFrame>15.9 AnimFrame=0
 }
 
 	}
@@ -137,8 +137,8 @@ if idlestyle=2
 
 
 	image_index=8 image_speed=0 atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 
@@ -158,10 +158,10 @@ if idlestyle=2
 	}
 	if sprite_index=AtkSpr {MoveType=0 damage=0.1}
 	if sprite_index=AtkSpr2 {MoveType=2 damage=0.15}
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 
@@ -171,9 +171,9 @@ if idlestyle=2
 	hit=1 MoveType=1
 
 	sprite_index=JumpAtkSpr
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,1,1.5) atk=1 else atk=0
-	 animFrame+=0.1 animFrame=clamp(animFrame,0,1.5)
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,1,1.5) atk=1 else atk=0
+	 AnimFrame+=0.1 AnimFrame=clamp(AnimFrame,0,1.5)
 	 if ground {hurt=0 canmove=1}
 	}
 
@@ -181,19 +181,19 @@ if idlestyle=2
 	{
 	Throw=1
 	sprite_index=ThrownSpr
-	image_index=animFrame+targetHeightHit image_speed=0
+	image_index=AnimFrame+targetHeightHit image_speed=0
 	targetID.hit=2
 	targetID.ground=0
 	targetID.atk=0
 	targetID.hurt=1
 	///Drag Enemy
-	if animFrame<0.5 {grabX=16*image_xscale grabY=0 grabZ=16}
-	if animFrame=1 {grabX=32*image_xscale grabY=0 grabZ=8}
-	if animFrame=2 {grabX=64*image_xscale grabY=0 grabZ=16}
+	if AnimFrame<0.5 {grabX=16*image_xscale grabY=0 grabZ=16}
+	if AnimFrame=1 {grabX=32*image_xscale grabY=0 grabZ=8}
+	if AnimFrame=2 {grabX=64*image_xscale grabY=0 grabZ=16}
 
-	 if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.1 else animFrame+=0.1 if animFrame>2.5 {hurt=0 canmove=1 Throw=0
+	 if AnimFrame=clamp(AnimFrame,1,1.9) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.1 else AnimFrame+=0.1 if AnimFrame>2.5 {hurt=0 canmove=1 Throw=0
 	grabX=0 grabY=0 grabZ=0 
 	with targetID
 	{
@@ -223,7 +223,7 @@ if idlestyle=2
 	if y>FrontMax
 	{
 	immune=0
-	animFrame=0 anim=0 canmove=1 alarm[1]=2
+	AnimFrame=0 anim=0 canmove=1 alarm[1]=2
 	if targetEnemy.x>x image_xscale=1 else image_xscale=-1
 	if hasFront=0
 	FrontSpr=MoveSpr

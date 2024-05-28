@@ -37,7 +37,7 @@ function zblock_col() {
 	{if zSpeed>=0 
 	{if z>=hz.z-hz.height+16-zSpeed {z=(hz.z-hz.height+16) ground=1 zSpeed=0
 		
-		if anim=2 or anim=3 {animFrame=0 canmove=0 anim=22}
+		if anim=2 or anim=3 {AnimFrame=0 canmove=0 anim=22}
 		
 		}
 	else ground=0

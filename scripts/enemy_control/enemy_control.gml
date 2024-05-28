@@ -62,7 +62,7 @@ function enemy_control() {
 	{
 	if key_attack
 	{
-	if canmove=1 {canmove=0 alarm[1]=choose(10,20,30)} animFrame=0
+	if canmove=1 {canmove=0 alarm[1]=choose(10,20,30)} AnimFrame=0
 	image_index=0 
 	if ground
 	{///Throw

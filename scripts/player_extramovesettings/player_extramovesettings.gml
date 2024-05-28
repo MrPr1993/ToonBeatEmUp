@@ -4,7 +4,7 @@ function player_extramovesettings() {
 	////I'm going for the ol' classic style 
 	if !anim=18 and !anim=17
 	{powcheck=1 pow=2}
-	else {if animFrame<0.1 pow=5}
+	else {if AnimFrame<0.1 pow=5}
 	///
 
 	///This line is used for the player's down-up move
@@ -45,7 +45,7 @@ if key_right and image_xscale=-1 and key_attack and ground player_punchback()
 	{
 	commandChargeFrame=0 commandChargeAlpha=1
 	if commandCharge>1
-	{animFrame=0 commandCharge=0 canmove=0 anim=85}
+	{AnimFrame=0 commandCharge=0 canmove=0 anim=85}
 	}
 	else
 	{commandCharge=0 commandChargeFrame=0 commandChargeAlpha=1}

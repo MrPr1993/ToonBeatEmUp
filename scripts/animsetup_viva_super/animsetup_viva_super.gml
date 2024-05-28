@@ -12,7 +12,7 @@ function animsetup_viva_super() {
 var targeten=oEnemy1
 if global.MultiVS=1 targeten=oPlayer
 global.MultiSuper=isPlayer
-	if animFrame=0 PlaySound(snd_viva12)
+	if AnimFrame=0 PlaySound(snd_viva12)
 
 	invincible=1
 
@@ -31,8 +31,8 @@ global.MultiSuper=isPlayer
 
 
 
-	if animFrame=clamp(animFrame,5,31+0.9)
-	{animFrame+=0.1 
+	if AnimFrame=clamp(AnimFrame,5,31+0.9)
+	{AnimFrame+=0.1 
 	if image_index<6.5 {image_index+=0.5 
 
 
@@ -40,9 +40,9 @@ global.MultiSuper=isPlayer
 	} else image_index=5
 	if image_index<6 { 
 
-	if animFrame=6.2 PlaySound(snd_viva7)
+	if AnimFrame=6.2 PlaySound(snd_viva7)
 
-	if animFrame=6.5 
+	if AnimFrame=6.5 
 	{
 	oShadowFX.colorChange=c_white
 	if instance_exists(targeten) with targeten
@@ -60,7 +60,7 @@ global.MultiSuper=isPlayer
 
 
 
-	      if animFrame<=6 ///Clear Screen
+	      if AnimFrame<=6 ///Clear Screen
 	   {oShadowFX.colorChange=c_black
 	        if instance_exists(targeten) 
 	   {targeten.watchSourceX=x
@@ -72,7 +72,7 @@ global.MultiSuper=isPlayer
 	}
 
 	///Viva
-	if animFrame=clamp(animFrame,5,16)
+	if AnimFrame=clamp(AnimFrame,5,16)
 	{oControl.quakeFXTime=2
 
 	    if instance_exists(targeten) 
@@ -85,12 +85,12 @@ global.MultiSuper=isPlayer
 	}
 
 	}     } 
-	   if animFrame=16.1 ///Clear Screen
+	   if AnimFrame=16.1 ///Clear Screen
 	   if instance_exists(targeten) with targeten if canact=1 and act=1 and immune=0
 	  // if x<camera_get_view_x(view_camera[0])+320+sprite_get_width(mask_index)/2 and x>camera_get_view_x(view_camera[0])-sprite_get_width(mask_index)/2
 	   if Throw=0 and dead=0 if isPlayer!=global.MultiSuper
 	{superThrown=0 hspeed=0 hp-=0.5 ////Super Attack Damage
-	 hud_show() hpscan() animFrame=0 image_index=0
+	 hud_show() hpscan() AnimFrame=0 image_index=0
 	 if hp<=0
 	other.PlayerScore+=points
 	else other.PlayerScore+=pointshit
@@ -98,7 +98,7 @@ global.MultiSuper=isPlayer
 	}
     
 	///Animation End
-	if animFrame>16 {
+	if AnimFrame>16 {
 
 	with oShadowFX specialShow=0 invincible=0
 	powlock=0 hurt=0 atk=0 canmove=1 hit=0 image_blend=c_white

@@ -43,45 +43,45 @@ hitFXset(WspriteFX,WindexFX,WisDepth,WanimEnd,WspeedFX,WspriteTime,WxScaleFX,WyS
 
 
 if weapontype=0
-{if animFrame=0 PlaySoundNoStack(snd_msswing2)
+{if AnimFrame=0 PlaySoundNoStack(snd_msswing2)
 ////Hammer Swing 
 
-if animFrame=clamp(animFrame,0,0.9)
+if AnimFrame=clamp(AnimFrame,0,0.9)
 {weaponanim(weaponspr,weaponIndex,16,-75,90,weaponcolor)}
-if animFrame=clamp(animFrame,1,1.9)
+if AnimFrame=clamp(AnimFrame,1,1.9)
 {weaponanim(weaponspr,weaponIndex,-14,-85,135,weaponcolor)}
-if animFrame=clamp(animFrame,2,2.9)
+if AnimFrame=clamp(AnimFrame,2,2.9)
 {weaponanim(weaponspr,weaponIndex,-33,-70,224,weaponcolor)}
-if animFrame=clamp(animFrame,3,3.9)
+if AnimFrame=clamp(AnimFrame,3,3.9)
 {weaponanim(weaponspr,weaponIndex,-21,-87,135,weaponcolor)}
-if animFrame=clamp(animFrame,4,4.9)
+if AnimFrame=clamp(AnimFrame,4,4.9)
 {weaponanim(weaponspr,weaponIndex,5,-86,59,weaponcolor)}
-if animFrame=clamp(animFrame,5,5.9)
+if AnimFrame=clamp(AnimFrame,5,5.9)
 {weaponanim(weaponspr,weaponIndex,21,-35,0,weaponcolor)}
-if animFrame=clamp(animFrame,6,6.9)
+if AnimFrame=clamp(AnimFrame,6,6.9)
 {weaponanim(weaponspr,weaponIndex,12,-69,78,weaponcolor)}
 sprite_index=AtkSpr
-image_index=animFrame image_speed=0
-if animFrame=clamp(animFrame,5,5.2) atk=1 else atk=0
+image_index=AnimFrame image_speed=0
+if AnimFrame=clamp(AnimFrame,5,5.2) atk=1 else atk=0
 
 
-if animFrame=clamp(animFrame,5,6.9)
-animFrame+=0.1 
+if AnimFrame=clamp(AnimFrame,5,6.9)
+AnimFrame+=0.1 
 
-if animFrame=clamp(animFrame,0,2)
-animFrame+=0.25
+if AnimFrame=clamp(AnimFrame,0,2)
+AnimFrame+=0.25
 
-if animFrame=clamp(animFrame,2,3)
-animFrame+=0.05
+if AnimFrame=clamp(AnimFrame,2,3)
+AnimFrame+=0.05
 
-if animFrame=3 PlaySoundNoStack(WswingSound)
+if AnimFrame=3 PlaySoundNoStack(WswingSound)
 
-if animFrame=clamp(animFrame,3,5)
-animFrame+=0.5
+if AnimFrame=clamp(AnimFrame,3,5)
+AnimFrame+=0.5
 
 
 
-if animFrame>6.5 {hurt=0 atk=0 canmove=1 hit=0
+if AnimFrame>6.5 {hurt=0 atk=0 canmove=1 hit=0
 }
 }
 if weapontype=1
@@ -102,7 +102,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>50
 anim=1340 else anim=135
 }
 
-if weapontype=5 {animFrame=0 anim=134}
+if weapontype=5 {AnimFrame=0 anim=134}
 
 }
 else
@@ -111,10 +111,10 @@ anim=135
 }
 
 if sprite_index=AtkSpr2 {MoveType=0 damage=0.02
-image_index=animFrame image_speed=0
- if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
-if animFrame=clamp(animFrame,0,1.5)
-animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+image_index=AnimFrame image_speed=0
+ if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
+if AnimFrame=clamp(AnimFrame,0,1.5)
+AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 }
 
 }
@@ -131,7 +131,7 @@ else anim=135
 
 if anim=130 ///Taunt
 if overwriteAttack=1
-{animFrame+=0.1  sprite_index=spr_swing_taunt canmove=0
+{AnimFrame+=0.1  sprite_index=spr_swing_taunt canmove=0
 
 if image_index<1
 weaponanim(weaponspr,weaponIndex,14,-67,180*image_xscale,weaponcolor)
@@ -140,7 +140,7 @@ weaponanim(weaponspr,weaponIndex,14,-64,180*image_xscale,weaponcolor)
 
 if image_index<1.9 image_index+=0.1 else image_index=0
 
-if animFrame>10 {hurt=0 atk=0 canmove=1 hit=0}
+if AnimFrame>10 {hurt=0 atk=0 canmove=1 hit=0}
 }
 
 if anim=131 //?RespawnWeapon
@@ -155,10 +155,10 @@ frame_set(5,1,0.25)
 frame_set(6,2,0.25)
 frame_set(7,1,0.25)
 frame_set(8,2,0.25)
-frame_set(9,1,0.25) if animFrame>10 {weaponRecharge=0 weapon_add(weaponRechargeT)}
+frame_set(9,1,0.25) if AnimFrame>10 {weaponRecharge=0 weapon_add(weaponRechargeT)}
 frame_set(10,3,0.25)
 frame_set(11,4,0.1)
-frame_set(12,4,0.1) if animFrame>12 canmove=1
+frame_set(12,4,0.1) if AnimFrame>12 canmove=1
 }
 
 
@@ -167,42 +167,42 @@ if anim=132 //Throw Weapon
 
 frame_set(0,0,0.1)
 frame_set(1,1,0.05)
-frame_set(2,2,0.25) if animFrame=3
+frame_set(2,2,0.25) if AnimFrame=3
 {
 item_thrown()	
 	
 }
 frame_set(3,3,0.05)
-frame_set(4,0,0.25) if animFrame>5.5 canmove=1
+frame_set(4,0,0.25) if AnimFrame>5.5 canmove=1
 frame_set(5,0,0.25)
 }
 
 if anim=133 ///Knife Attack
 {
 ///Knife Stab 
-if animFrame=0 PlaySoundNoStack(WswingSound)
+if AnimFrame=0 PlaySoundNoStack(WswingSound)
 if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,7,-49,0*image_xscale,weaponcolor)
 else
 weaponanim(weaponspr,weaponIndex,32,-51,0*image_xscale,weaponcolor)
 
 sprite_index=AtkSpr3
-image_index=animFrame image_speed=0
-if animFrame=clamp(animFrame,1,1.9) atk=1 else atk=0
-animFrame+=0.2 if animFrame>2.6 {hurt=0 atk=0 canmove=1 hit=0
+image_index=AnimFrame image_speed=0
+if AnimFrame=clamp(AnimFrame,1,1.9) atk=1 else atk=0
+AnimFrame+=0.2 if AnimFrame>2.6 {hurt=0 atk=0 canmove=1 hit=0
 }
 }
 
 if anim=1340 ///Gunfire
 {var imgskp=0;
 sprite_index=spr_swing_handgun
-if animFrame<1
+if AnimFrame<1
 {
-if animFrame<0.25 {weaponanim(weaponspr,weaponIndex,17,-69,135,weaponcolor) imgskp=1 }
+if AnimFrame<0.25 {weaponanim(weaponspr,weaponIndex,17,-69,135,weaponcolor) imgskp=1 }
 else {weaponanim(weaponspr,weaponIndex,23,-44,90,weaponcolor)}}
 
 frame_set(0,imgskp,0.025)
-	if animFrame=1 {		PlaySound(snd_gun)		
+	if AnimFrame=1 {		PlaySound(snd_gun)		
 	flashFX(x+38*image_xscale,y,z-50,weaponProjFlashSpr,0,1,0,1,1,c_white,1)
 	projectile_create(x+38*image_xscale,y,z-50,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
 	projectile.HitSound=weaponProjHitSnd
@@ -210,9 +210,9 @@ frame_set(0,imgskp,0.025)
 	
 	frame_set(1,1,0.25)
 	frame_set(2,2,0.1)
-	frame_set(3,2,0.25) if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0}
+	frame_set(3,2,0.25) if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0}
 	
-	if animFrame>1 {if animFrame<2 weaponanim(weaponspr,weaponIndex,17,-69,135,weaponcolor) 
+	if AnimFrame>1 {if AnimFrame<2 weaponanim(weaponspr,weaponIndex,17,-69,135,weaponcolor) 
 	else {weaponanim(weaponspr,weaponIndex,22,-70,135,weaponcolor)
 	}}
 
@@ -221,11 +221,11 @@ frame_set(0,imgskp,0.025)
 
 if anim=135 ///Shove
 {weaponanim(weaponspr,weaponIndex,29992,-70,135*image_xscale,weaponcolor)
-hitFXreset() selfatk.HitSound=snd_hit animFrame+=0.1
-sprite_index=AtkSpr2 weaponAttack=0 image_index=animFrame if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
+hitFXreset() selfatk.HitSound=snd_hit AnimFrame+=0.1
+sprite_index=AtkSpr2 weaponAttack=0 image_index=AnimFrame if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
 atkAddX=16 atkAddY=0 atkAddZ=0 selfatk.targetHeight=0
 selfatk.image_xscale=2*image_xscale selfatk.height=96
-if animFrame>2.5 canmove=1
+if AnimFrame>2.5 canmove=1
 }
 
 ///Hits
@@ -314,29 +314,29 @@ weaponanim(weaponspr,2,30,-47,90,weaponcolor)
 else
 if anim=134 //WHIP
 {sprite_index=spr_swing_whip
-if animFrame=clamp(animFrame,0,0.9)
+if AnimFrame=clamp(AnimFrame,0,0.9)
 weaponanim(weaponspr,image_index+1,9,-68,0,weaponcolor)
-if animFrame=clamp(animFrame,1,1.9)
+if AnimFrame=clamp(AnimFrame,1,1.9)
 weaponanim(weaponspr,image_index+1,14,-52,0,weaponcolor)
-if animFrame=clamp(animFrame,2,2.9)
+if AnimFrame=clamp(AnimFrame,2,2.9)
 weaponanim(weaponspr,image_index+1,11,-52,0,weaponcolor)
-if animFrame=clamp(animFrame,3,3.9)
+if AnimFrame=clamp(AnimFrame,3,3.9)
 weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
-if animFrame=clamp(animFrame,4,4.9)
+if AnimFrame=clamp(AnimFrame,4,4.9)
 weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
-if animFrame=clamp(animFrame,5,5.9)
+if AnimFrame=clamp(AnimFrame,5,5.9)
 weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
-if animFrame=clamp(animFrame,6,6.9)
+if AnimFrame=clamp(AnimFrame,6,6.9)
 weaponanim(weaponspr,image_index+1,13,-52,0,weaponcolor)
 	
 frame_set(0,0,0.25)
 frame_set(1,1,0.1) 
 frame_set(2,2,0.25)
-frame_set(3,3,0.25) if animFrame=4 PlaySound(WswingSound)
+frame_set(3,3,0.25) if AnimFrame=4 PlaySound(WswingSound)
 frame_set(4,4,0.25)
 frame_set(5,5,0.25)
 frame_set(6,6,0.25)
 atkcol_set(93,0,27,5.25,1,38)
-if animFrame=clamp(animFrame,4,4.5) atk=1 else atk=0
-if animFrame>6.7 {canmove=1 anim=0}
+if AnimFrame=clamp(AnimFrame,4,4.5) atk=1 else atk=0
+if AnimFrame>6.7 {canmove=1 anim=0}
 } else weaponIndex=0

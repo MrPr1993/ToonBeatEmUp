@@ -18,7 +18,7 @@ function throw_step() {
 	ground=0
 	zSpeed=-8
 	sentflying=-2
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	}
 

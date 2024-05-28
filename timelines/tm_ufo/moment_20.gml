@@ -40,7 +40,7 @@ newscript=function()
 frame_set(0,2,0.1)
 frame_set(1,1,0.1)
 frame_set(2,0,0.1)
-frame_set(3,1,0.1) if animFrame=4 {animFrame=0 image_index=2}
+frame_set(3,1,0.1) if AnimFrame=4 {AnimFrame=0 image_index=2}
 
 oPlayer.image_index=image_index
 
@@ -117,7 +117,7 @@ sprite_index=spr_viva_bdance
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
-if animFrame>2.75 animFrame=0
+if AnimFrame>2.75 AnimFrame=0
 }
 }
 
@@ -267,7 +267,7 @@ canmove=0
 	zSpeed=-8
 	sentflying=0
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	thrownDMG=0
 	}
@@ -295,7 +295,7 @@ with alien2 {sprite_index=spr_martian_hit image_index=24 hspeed=0 image_speed=0 
 if specialSet8=420 ///Lights On!
 {
 with spriteLocker
-{image_speed=0 image_index=0 animFrame=0
+{image_speed=0 image_index=0 AnimFrame=0
 	
 	with oPlayer
 {anim=99999999
@@ -320,7 +320,7 @@ sprite_index=spr_viva_screamdown
 
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
-frame_set(2,2,0.25) if animFrame>2.75 animFrame=1
+frame_set(2,2,0.25) if AnimFrame>2.75 AnimFrame=1
 }
 }	
 

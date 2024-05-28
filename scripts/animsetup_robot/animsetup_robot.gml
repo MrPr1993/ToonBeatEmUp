@@ -28,27 +28,27 @@ overwriteAttack4=1
 	atk=0
 	sprite_index=StandSpr
 
-image_index=animFrame
+image_index=AnimFrame
 
-	if animFrame<1
+	if AnimFrame<1
 	{	robotArmLY=lerp(robotArmLY,-64,0.5)	robotArmRY=lerp(robotArmRY,-64,0.5)	}
-	else if animFrame<3.90
+	else if AnimFrame<3.90
 	{	robotArmLY=lerp(robotArmLY,-70,0.1)	robotArmRY=lerp(robotArmRY,-70,0.1)	}
-else if animFrame<4 {	robotArmLY=lerp(robotArmLY,-60,0.5)	robotArmRY=lerp(robotArmRY,-60,0.5)	}
-	else if animFrame<1+4
+else if AnimFrame<4 {	robotArmLY=lerp(robotArmLY,-60,0.5)	robotArmRY=lerp(robotArmRY,-60,0.5)	}
+	else if AnimFrame<1+4
 	{	robotArmLY=lerp(robotArmLY,-64,0.5)	robotArmRY=lerp(robotArmRY,-64,0.5)	}
-	else if animFrame<3.90+4
+	else if AnimFrame<3.90+4
 	{	robotArmLY=lerp(robotArmLY,-70,0.1)	robotArmRY=lerp(robotArmRY,-70,0.1)	}
 else {	robotArmLY=lerp(robotArmLY,-60,0.5)	robotArmRY=lerp(robotArmRY,-60,0.5)	}
 
-if animFrame<4
+if AnimFrame<4
 {	robotArmLAngle=lerp(robotArmLAngle,0,0.1)
 	robotArmRAngle=lerp(robotArmRAngle,0,0.1)}
 	else
 {	robotArmLAngle=lerp(robotArmLAngle,10,0.1)
 	robotArmRAngle=lerp(robotArmRAngle,10,0.1)}
 	
-	animFrame+=0.05 if animFrame>8 animFrame=0
+	AnimFrame+=0.05 if AnimFrame>8 AnimFrame=0
 	}
 
 	if anim=1 ///Move
@@ -57,7 +57,7 @@ if animFrame<4
 
 	sprite_index=MoveSpr
 
-	if animFrame=clamp(animFrame,1,2) or animFrame=clamp(animFrame,3,4)
+	if AnimFrame=clamp(AnimFrame,1,2) or AnimFrame=clamp(AnimFrame,3,4)
 	{
 	robotArmLY=lerp(robotArmLY,-60,0.5)
 	robotArmRY=lerp(robotArmRY,-60,0.5)
@@ -71,15 +71,15 @@ if animFrame<4
 	robotArmRAngle=lerp(robotArmRAngle,45+11,0.1)
 	robotArmLAngle=lerp(robotArmLAngle,45-11,0.1)
 	}
-	image_index=animFrame
+	image_index=AnimFrame
 
-	if animFrame>4 animFrame=0 else animFrame+=0.1
+	if AnimFrame>4 AnimFrame=0 else AnimFrame+=0.1
 	}
 
 
 
 	if anim=10 ///Check Enemy Distance
-	{animFrame=0
+	{AnimFrame=0
 	if distance_to_object(targetEnemy)>40
 	{
 	if x>__view_get( e__VW.XView, 0 )+16 and x<__view_get( e__VW.XView, 0 )+320-16
@@ -96,14 +96,14 @@ if animFrame<4
 
 	if anim=11 ///Swinging Arm Attack
 	{
-	if animFrame=0
+	if AnimFrame=0
 	{
 	robotArmLX=-14
 	robotArmLY=-64
 	robotArmRX=14
 	robotArmRY=-64}
 
-	if animFrame<0.5
+	if AnimFrame<0.5
 	{
 	targetX=targetEnemy.x
 	targetY=targetEnemy.y
@@ -135,8 +135,8 @@ if animFrame<4
 	if robotArmL=1 damage=0.3 else damage=0.2
 	MoveType=2
 	sprite_index=AtkSpr
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,1,4.5)
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,1,4.5)
 	 {if robotArmLAngle>360-33 robotArmLAngle=0
 	 if robotArmLAngle=33
 	 PlaySoundNoStack(snd_swing4)
@@ -144,25 +144,25 @@ if animFrame<4
 	 if place_free(x+1*image_xscale,y)
 	 x+=1*image_xscale } else 
 	  {atk=0 robotArmLAngle=0 robotArmRAngle=0 robotArmRIndex=0  robotArmLIndex=0}
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.05 else animFrame+=0.05 if animFrame>8 {hurt=0 atk=0 canmove=1 hit=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.05 else AnimFrame+=0.05 if AnimFrame>8 {hurt=0 atk=0 canmove=1 hit=0
 	}}
 	else
 	{
 	sprite_index=ThrownSpr damage=0.15 MoveType=1
-	if animFrame<1
+	if AnimFrame<1
 	image_index=0
-	if animFrame>2 {sprite_index=StandSpr image_index=0}
+	if AnimFrame>2 {sprite_index=StandSpr image_index=0}
 	  image_speed=0
-	if animFrame=clamp(animFrame,1,2)
-	animFrame+=0.1 
+	if AnimFrame=clamp(AnimFrame,1,2)
+	AnimFrame+=0.1 
 	else
-	animFrame+=0.05
+	AnimFrame+=0.05
 
-	if animFrame=clamp(animFrame,1,2)
+	if AnimFrame=clamp(AnimFrame,1,2)
 	{if place_free(x+4*image_xscale,y) if image_index=!16 {PlaySound(snd_swing) PlaySound(snd_swing4) image_index=16} x+=4*image_xscale atk=1}
 	else atk=0
-	if animFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0}
+	if AnimFrame>2.5 {hurt=0 atk=0 canmove=1 hit=0}
 	}
 	}
 

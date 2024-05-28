@@ -25,13 +25,13 @@ if anim=11
 {
 hit=0
 atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.1
-frame_set(0,0,0.1) if animFrame>1 sprite_index=spr_cobra_kick else sprite_index=spr_cobra_attack
-frame_set(1,0,0.1) if animFrame=clamp(animFrame,2,3) {atk=1 sentflying=2*image_xscale} else {atk=0 sentflying=0}
-if animFrame=2 PlaySoundNoStack(snd_cobra2)
+frame_set(0,0,0.1) if AnimFrame>1 sprite_index=spr_cobra_kick else sprite_index=spr_cobra_attack
+frame_set(1,0,0.1) if AnimFrame=clamp(AnimFrame,2,3) {atk=1 sentflying=2*image_xscale} else {atk=0 sentflying=0}
+if AnimFrame=2 PlaySoundNoStack(snd_cobra2)
 frame_set(2,1,0.5)
 frame_set(3,2,0.1) 
 frame_set(4,0,0.1)
-if animFrame>4.75 {canmove=1}
+if AnimFrame>4.75 {canmove=1}
 }
 
 if anim=12
@@ -39,15 +39,15 @@ if anim=12
 hit=0
 atkcol_set(35,0,42,1.85,1,22) MoveType=1 damage=0.2
 frame_set(0,0,0.1)
-frame_set(1,1,0.1) if animFrame=clamp(animFrame,3,5) atk=1 else atk=0
-if animFrame=2 PlaySoundNoStack(snd_cobra3)
-frame_set(2,2,0.5) if animFrame<3 atkcol_set(30,0,58,2.05,1,19)
+frame_set(1,1,0.1) if AnimFrame=clamp(AnimFrame,3,5) atk=1 else atk=0
+if AnimFrame=2 PlaySoundNoStack(snd_cobra3)
+frame_set(2,2,0.5) if AnimFrame<3 atkcol_set(30,0,58,2.05,1,19)
 else if special0=0 atkcol_set(50,0,46,3.05,1,35) else atkcol_set(92,0,46,0.85,1,35)
 frame_set(3,3,0.5) 
-frame_set(4,4,0.5) if animFrame=5 {if special0!=24 {special0+=1 animFrame=3}}
+frame_set(4,4,0.5) if AnimFrame=5 {if special0!=24 {special0+=1 AnimFrame=3}}
 frame_set(5,2,0.25)
 frame_set(6,0,0.25)
-if animFrame>6.75 {canmove=1}
+if AnimFrame>6.75 {canmove=1}
 }
 
 ///Poison Gas
@@ -55,7 +55,7 @@ if anim=13
 {sprite_index=spr_cobra_attack2 bombRecharge=choose(200,320,400)
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
-frame_set(2,2,0.05) if animFrame=3
+frame_set(2,2,0.05) if AnimFrame=3
 {PlaySoundNoStack(snd_cobra3)
 {sm=instance_create_depth(x+27*image_xscale,y+2,0,oPharaohSmoke) sm.hspeed=1*image_xscale
 		sm.z=z-24 sm.dizzyHit=1 sm.MoveType=1 sm.isPharaoh=0
@@ -65,5 +65,5 @@ frame_set(2,2,0.05) if animFrame=3
 frame_set(3,3,0.25)
 frame_set(4,4,0.01)
 frame_set(5,3,0.25)
-if animFrame>5.75 {canmove=1}
+if AnimFrame>5.75 {canmove=1}
 }

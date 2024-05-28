@@ -105,7 +105,7 @@ sprite_index=spr_burglar_idle4
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
-if animFrame>2.9 animFrame=0
+if AnimFrame>2.9 AnimFrame=0
 }
 
 enemyID=1

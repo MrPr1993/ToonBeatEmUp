@@ -22,7 +22,7 @@ if anim=10
 
 if anim=11 ///Bite Attack
 {
-//if animFrame=0  PlaySound(snd_wolfita7)
+//if AnimFrame=0  PlaySound(snd_wolfita7)
 canbeGrabbed=0
 MoveType=1 damage=0.2
 sprite_index=spr_plantprincess_attack1
@@ -31,14 +31,14 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
 frame_set(3,3,0.1)
-if animFrame=clamp(animFrame,3,4.99)
+if AnimFrame=clamp(AnimFrame,3,4.99)
 {atk=1 sentflying=8*image_xscale} else { atk=0 sentflying=0}
 frame_set(4,4,0.5)
 frame_set(5,5,0.05)
 frame_set(6,2,0.5)
-if animFrame>6.5 canbeGrabbed=1
+if AnimFrame>6.5 canbeGrabbed=1
 
-if animFrame>6.5 {atk=0 canmove=1}
+if AnimFrame>6.5 {atk=0 canmove=1}
 }
 
 if anim=12 ///Slam Attack
@@ -46,16 +46,16 @@ if anim=12 ///Slam Attack
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
-frame_set(3,3,0.25) if animFrame=clamp(animFrame,1,5.99) sentflying=4*image_xscale else sentflying=0
+frame_set(3,3,0.25) if AnimFrame=clamp(AnimFrame,1,5.99) sentflying=4*image_xscale else sentflying=0
 frame_set(4,4,0.25)
 frame_set(5,5,0.25)
 frame_set(6,6,0.5) 
-if animFrame=clamp(animFrame,6,6.99) atk=1 else atk=0
+if AnimFrame=clamp(AnimFrame,6,6.99) atk=1 else atk=0
 frame_set(7,7,0.05)
 frame_set(8,3,0.5)
 frame_set(9,2,0.25)
 frame_set(10,1,0.25)
-if animFrame>10.7 canmove=1
+if AnimFrame>10.7 canmove=1
 }
 
 if anim=13 ///Slam Attack
@@ -63,7 +63,7 @@ if anim=13 ///Slam Attack
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.05)
-frame_set(3,3,0.25) if animFrame=4
+frame_set(3,3,0.25) if AnimFrame=4
 {
 bone=instance_create_depth(targetEnemy.x,targetEnemy.y,-1,oBossHazard) bone.image_xscale=image_xscale bone.hspeed=3*image_xscale
 bone.hitSource=self.id with bone
@@ -72,9 +72,9 @@ selfscript = function()
 {MoveType=1 damage=0.1
 depth=-y
 frame_set(0,0,0.25)
-frame_set(1,1,0.25) if animFrame=clamp(animFrame,2,2.9) 
-{if hitSource.anim!=13 animFrame=4 else atk=1} else atk=0
-if animFrame=2 
+frame_set(1,1,0.25) if AnimFrame=clamp(AnimFrame,2,2.9) 
+{if hitSource.anim!=13 AnimFrame=4 else atk=1} else atk=0
+if AnimFrame=2 
 {oControl.quakeFXTime=10
 dust_make(x-16,y+1,z,-2,0,0) dust_make(x+16,y+1,z,2,0,0)
 dust_make(x,y+2,z,0,1,0)
@@ -84,7 +84,7 @@ frame_set(3,3,0.25)
 frame_set(4,4,0.25)
 frame_set(5,5,0.25)
 frame_set(6,6,0.25)
-if animFrame>6.7 {dust_make(x,y,z,0,0,0) instance_destroy()}
+if AnimFrame>6.7 {dust_make(x,y,z,0,0,0) instance_destroy()}
 }
 }
 }
@@ -92,7 +92,7 @@ frame_set(4,4,0.1)
 frame_set(5,5,0.05)
 frame_set(6,3,0.05) 
 frame_set(7,1,0.5)
-if animFrame>7.7 canmove=1
+if AnimFrame>7.7 canmove=1
 }
 
 if anim=14 ///Slam Attack
@@ -105,11 +105,11 @@ frame_set(4,4,0.1)
 frame_set(5,5,0.05)
 frame_set(6,3,0.05) 
 frame_set(7,1,0.5)
-if animFrame>7.7 canmove=1
+if AnimFrame>7.7 canmove=1
 }
 
 if anim=100
-{if animFrame=0 sprite_index=spr_plantprincess_intro
+{if AnimFrame=0 sprite_index=spr_plantprincess_intro
 frame_set(0,0,0.01)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
@@ -127,17 +127,17 @@ frame_set(13,13,0.25)
 frame_set(14,14,0.25)
 frame_set(15,15,0.25)
 frame_set(16,16,0.01)
-frame_set(17,12,0.25) if animFrame=18 sprite_index=spr_plantprincess_teleport
+frame_set(17,12,0.25) if AnimFrame=18 sprite_index=spr_plantprincess_teleport
 frame_set(18,0,0.25)
 frame_set(19,1,0.25)
-frame_set(20,2,0.25) if animFrame=21 shadowSpr=mask_none
+frame_set(20,2,0.25) if AnimFrame=21 shadowSpr=mask_none
 frame_set(21,3,0.25)
 frame_set(22,4,0.25) 
-frame_set(23,5,0.01) if animFrame=24 y+=96
+frame_set(23,5,0.01) if AnimFrame=24 y+=96
 frame_set(24,5,0.25) 
 frame_set(25,5,0.25)
-frame_set(26,2,0.25) if animFrame=27 shadowSpr=spr_shadow
+frame_set(26,2,0.25) if AnimFrame=27 shadowSpr=spr_shadow
 frame_set(27,1,0.25)
 frame_set(28,0,0.1)
-if animFrame>28.8 canmove=1
+if AnimFrame>28.8 canmove=1
 }

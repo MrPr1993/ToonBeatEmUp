@@ -39,7 +39,7 @@ selfatk.HitQuake=HitQuake
 
 	if turnanim=1 {if x>targetEnemy.x image_xscale=-1 else image_xscale=1}
 
-	canmove=0 animFrame=0 anim=animatk}
+	canmove=0 AnimFrame=0 anim=animatk}
 	}
 
 	if enemyai!=-1 script_execute(enemyai)

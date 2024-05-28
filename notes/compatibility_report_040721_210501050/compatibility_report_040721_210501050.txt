@@ -230,11 +230,11 @@ Converting GML script: ${project_dir}\scripts\keyno_check\keyno_check.gml
 Converted string - line 42: '"' -> "\""
 
 Converting GML script: ${project_dir}\scripts\enemy_heavythrow\enemy_heavythrow.gml
-Converted description /// @description enemy_heavythrow(animFrameStart,animFrameLock,throwStrengthMax,animFrameEnd)
-/// @param animFrameStart
-/// @param animFrameLock
+Converted description /// @description enemy_heavythrow(AnimFrameStart,AnimFrameLock,throwStrengthMax,AnimFrameEnd)
+/// @param AnimFrameStart
+/// @param AnimFrameLock
 /// @param throwStrengthMax
-/// @param animFrameEnd
+/// @param AnimFrameEnd
 
 Converting GML script: ${project_dir}\scripts\pal_swap_draw_palette\pal_swap_draw_palette.gml
 Converted description /// @description pal_swap_draw_palette(palette_sprite,pal_index,x,y);

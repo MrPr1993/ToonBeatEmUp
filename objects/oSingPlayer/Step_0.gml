@@ -15,14 +15,14 @@ else shake=0
 
 if anim=0 or anim=1
 {windx=x
-if key_attack {if oSingGame.songdir=0 {audio_stop_sound(voice2) PlaySound(voice1) singhp+=3 miss=0} else {audio_stop_sound(voice2) PlaySound(voice1) singhp-=6 miss=1} extraframe=0 animFrame=0 anim=1}
-if key_jump {if oSingGame.songdir=0 {audio_stop_sound(voice1) PlaySound(voice2) singhp-=6 miss=1} else {audio_stop_sound(voice1) PlaySound(voice2) singhp+=3 miss=0} extraframe=0 animFrame=0 anim=1}
+if key_attack {if oSingGame.songdir=0 {audio_stop_sound(voice2) PlaySound(voice1) singhp+=3 miss=0} else {audio_stop_sound(voice2) PlaySound(voice1) singhp-=6 miss=1} extraframe=0 AnimFrame=0 anim=1}
+if key_jump {if oSingGame.songdir=0 {audio_stop_sound(voice1) PlaySound(voice2) singhp-=6 miss=1} else {audio_stop_sound(voice1) PlaySound(voice2) singhp+=3 miss=0} extraframe=0 AnimFrame=0 anim=1}
 
 singhp=clamp(singhp,0,100)
 
 if singhp=100
-{animFrame=0 anim=10 extraframe=0
-	with oSingPlayer {win=0 animFrame=0 anim=10}
+{AnimFrame=0 anim=10 extraframe=0
+	with oSingPlayer {win=0 AnimFrame=0 anim=10}
 	win=1	
 	audio_stop_sound(voice1) audio_stop_sound(voice2)
 	PlaySound(voice3)
@@ -44,7 +44,7 @@ frame_set(1,1,0.1)
 frame_set(2,0,0.1)
 frame_set(3,2,0.1)
 
-if animFrame>4-0.1 animFrame=0
+if AnimFrame>4-0.1 AnimFrame=0
 
 
 }
@@ -55,7 +55,7 @@ if anim=1
 extraframe+=0.25 if extraframe=2-0.25 extraframe=0
 
 frame_set(0,3+frameadd+extraframe,0.05)
-if animFrame>0.9 {animFrame=0 anim=0}
+if AnimFrame>0.9 {AnimFrame=0 anim=0}
 }
 
 ///SWING
@@ -74,10 +74,10 @@ else
 frame_set(0,3,0.25)
 frame_set(1,9,0.01)
 frame_set(2,9+extraframe,0.1)
-if animFrame=clamp(animFrame,2.5,3) oControl.quakeFXTime=10
+if AnimFrame=clamp(AnimFrame,2.5,3) oControl.quakeFXTime=10
 }
 
-if animFrame=3
+if AnimFrame=3
 {if win=0
 	{breakresult=0 windx=x
 		
@@ -102,7 +102,7 @@ windowon=0
 }
 if win=0
 frame_set(3,8,0.01) else frame_set(3,5,0.01) 
-if animFrame>4 
+if AnimFrame>4 
 {
 	if controlNO=1	oSingGame.p1Over=1
 		if controlNO=2	oSingGame.p2Over=1

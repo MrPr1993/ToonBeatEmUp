@@ -9,7 +9,7 @@ newscript=function()
 frame_set(0,0,framespd)
 frame_set(1,1,framespd)
 frame_set(2,2,framespd)
-frame_set(3,1,framespd) if animFrame>4-framespd animFrame=0;
+frame_set(3,1,framespd) if AnimFrame>4-framespd AnimFrame=0;
 }
 
 framespd=0.05

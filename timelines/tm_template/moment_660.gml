@@ -1,2 +1,2 @@
 with oPlayer
-{canmove=0 animFrame=0 anim=300}
+{canmove=0 AnimFrame=0 anim=300}

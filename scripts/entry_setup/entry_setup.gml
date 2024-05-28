@@ -35,7 +35,7 @@ xySpeed=0
 	fxXadd=0
 	fxYadd=0
 	
-	animFrame=0
+	AnimFrame=0
 	
 	appear=0
 	visible=0

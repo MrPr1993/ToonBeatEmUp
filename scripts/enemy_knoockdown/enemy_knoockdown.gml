@@ -11,7 +11,7 @@ ground=0
 zSpeed=-8
 sentflying=-2
 image_index=3 sprite_index=ThrownSpr
-animFrame=3
+AnimFrame=3
 anim=5
 }}
 }

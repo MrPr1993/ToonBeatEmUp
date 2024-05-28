@@ -7,7 +7,7 @@ function player_super() {
 	if super>=17.5
 	{
 	canmove=0 atk=0
-	animFrame=0
+	AnimFrame=0
 	anim=50 ///FWD ATTACK
 	}
 	else {atk=1 event_user(4)}

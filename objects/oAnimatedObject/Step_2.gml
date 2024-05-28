@@ -20,14 +20,14 @@ anim=11
 ///Close Attack
 if anim=11
 {
-animFrame+=0.1 if animFrame=2 PlaySound(WswingSound)
+AnimFrame+=0.1 if AnimFrame=2 PlaySound(WswingSound)
 
 MoveType=weaponHitType damage=weaponDamage
 
-if animFrame<2
+if AnimFrame<2
 weaponanim(weaponspr,weaponIndex,lerp(weaponX,0,0.1),lerp(weaponY,0,0.1),lerp(weaponangle,175,0.1),weaponcolor)
 else
-if animFrame<3
+if AnimFrame<3
 {atk=1 sentflying=2*image_xscale
 weaponanim(weaponspr,weaponIndex,lerp(weaponX,0,0.1),lerp(weaponY,0,0.1),lerp(weaponangle,-35,0.1),weaponcolor)
 }
@@ -35,23 +35,23 @@ else
 {sentflying=0
 atk=0
 }
-if animFrame>6 {canmove=1}
+if AnimFrame>6 {canmove=1}
 }
 
 ///Ranged Attack
 if anim=12
 {
-animFrame+=0.1 if animFrame=2 PlaySound(WswingSound)
+AnimFrame+=0.1 if AnimFrame=2 PlaySound(WswingSound)
 
 selfatk.isCut=1
 MoveType=weaponHitType damage=weaponDamage
 
-if animFrame<2
+if AnimFrame<2
 {special1=0 special2=0
 weaponanim(weaponspr,weaponIndex,lerp(weaponX,0,0.1),lerp(weaponY,0,0.1),lerp(weaponangle,175,0.1),weaponcolor)
 }
 else
-if animFrame<12-1
+if AnimFrame<12-1
 {atk=1 sentflying=4*image_xscale
 
 selfatk.isCut=1
@@ -68,7 +68,7 @@ else
 sentflying=0
 atk=0
 }
-if animFrame>12 {canmove=1}
+if AnimFrame>12 {canmove=1}
 }
 
 
@@ -166,6 +166,6 @@ if sprite_index=spr_viva_burned
 	else
 	sentflying=0*image_xscale
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 }

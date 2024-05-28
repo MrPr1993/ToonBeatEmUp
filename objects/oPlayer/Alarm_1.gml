@@ -61,13 +61,13 @@ ai_actions() {	alarmCheck1=alarm[1]
 	{
 	///Stand Attack
 	if (x>__view_get( e__VW.XView, 0 )-sprite_get_width(mask_index)/2 and x<__view_get( e__VW.XView, 0 )+320+sprite_get_width(mask_index)/2)
-	{canmove=0 animFrame=0
+	{canmove=0 AnimFrame=0
 	image_index=0 anim=10} else alarm[1]=2
 	}
 	else
 	{
 	if (x>__view_get( e__VW.XView, 0 )-sprite_get_width(mask_index)/2 and x<__view_get( e__VW.XView, 0 )+320+sprite_get_width(mask_index)/2)
-	{canmove=0 animFrame=0
+	{canmove=0 AnimFrame=0
 	image_index=0 anim=10} else alarm[1]=2
 	}
 

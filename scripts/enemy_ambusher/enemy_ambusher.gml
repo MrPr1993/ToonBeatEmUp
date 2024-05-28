@@ -1,4 +1,4 @@
-function enemy_ambusher(_x, _y, _enemy,_side,_leaveDir,_offset,_timer,_retreats,_weak,_animFrame,_anim) {
+function enemy_ambusher(_x, _y, _enemy,_side,_leaveDir,_offset,_timer,_retreats,_weak,_AnimFrame,_anim) {
 	var myDepth = object_get_depth( _enemy );
 	
 	

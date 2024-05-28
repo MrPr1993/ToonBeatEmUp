@@ -43,13 +43,13 @@ hit=4
 
 if hostID!=-1
 {
-hostID.animFrame=0 {hostID.anim=500} 	
+hostID.AnimFrame=0 {hostID.anim=500} 	
 if wintype=1 {hostID.anim=501} 		
 }
 
 if hostID2!=-1
 {
-hostID2.animFrame=0 {hostID2.anim=500} 	
+hostID2.AnimFrame=0 {hostID2.anim=500} 	
 if wintype=1 {hostID2.anim=501} 		
 }
 }

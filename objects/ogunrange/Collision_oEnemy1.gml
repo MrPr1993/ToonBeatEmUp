@@ -62,7 +62,7 @@ PlaySoundNoStack(choose(DamageVoice1,DamageVoice2,DamageVoice3))
 	else
 	sentflying=4*image_xscale
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	
 

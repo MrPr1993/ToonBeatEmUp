@@ -25,7 +25,7 @@ event_user(1) canBounce=1
 	sentflying=2*image_xscale
 
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 } else
 {

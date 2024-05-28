@@ -24,7 +24,7 @@ zSpeed=0
 carMode=1 sentflying=0
 carAnim=0
 canmove=0
-animFrame=0
+AnimFrame=0
 anim=200
 canControl=0
 areaEntry=1 key_left=0 key_right=0

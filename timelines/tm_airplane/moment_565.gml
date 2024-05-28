@@ -3,7 +3,7 @@ if oControl.allPlayersMove
 {timer_set(0)
 oPlayer.canControl=0 with oPlayer
 	{key_left=0 key_right=0 key_up=0 key_down=0
-		anim=303 animFrame=0 canmove=0
+		anim=303 AnimFrame=0 canmove=0
 		
 		}
 }

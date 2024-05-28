@@ -21,7 +21,7 @@ newscript=-1;
 specialdraw=-1;
 
 image_speed=0
-animFrame=0
+AnimFrame=0
 anim=100
 specialcheck[9]=0
 

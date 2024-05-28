@@ -6,7 +6,7 @@ if stageClear=0
 if time=0
 {
 with oEatingContestPlayer
-if anim!=10 {animFrame=0 anim=10}
+if anim!=10 {AnimFrame=0 anim=10}
 
 }
 else

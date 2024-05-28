@@ -45,10 +45,10 @@ if weaponspr!=-1 rangeAtk=150 else rangeAtk=60
 	{
 	 hit=0  sprite_index=spr_goblin_kick
 MoveType=2 damage=0.1
-	image_index=animFrame image_speed=0 if animFrame=2 PlaySound(snd_mzombie5)
-	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0 if AnimFrame=2 PlaySound(snd_mzombie5)
+	 if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	
 	if image_index=clamp(image_index,0,0.9)
@@ -64,11 +64,11 @@ weaponanim(weaponspr,weaponIndex,21,-18,87,weaponcolor)
 	
 
 if anim=12
-{//if animFrame=0 PlaySoundNoStack(snd_msswing2)
+{//if AnimFrame=0 PlaySoundNoStack(snd_msswing2)
 ////Hammer Swing 
 sprite_index=spr_goblin_swing
 
-if animFrame=0 specialcheck1=1
+if AnimFrame=0 specialcheck1=1
 weaponBack=1 dizzyAtk=stunWeapon
 damage=weaponDamage targetHeight=weapontargetHeight selfatk.isCut=weaponCut
 selfatk.recovery=10 
@@ -83,19 +83,19 @@ hitFXset(WspriteFX,WindexFX,WisDepth,WanimEnd,WspeedFX,WspriteTime,WxScaleFX,WyS
 
 frame_set(0,0,0.1)
 frame_set(1,0,0.1)
-if animFrame=clamp(animFrame,2,2.2)
+if AnimFrame=clamp(AnimFrame,2,2.2)
 if specialcheck1=1
 {PlaySound(snd_mzombie5)
 ground=0 sentflying=4*image_xscale zSpeed=-4 specialcheck1=0
 }
 frame_set(2,1,0.1)
 frame_set(3,1,0.05) damage=0.2 
-if animFrame=4 {PlaySoundNoStack(WswingSound) selfatk.atk=1// oControl.quakeFXTime=10 
-}if animFrame=clamp(animFrame,4,4.9) atk=1 else atk=0
+if AnimFrame=4 {PlaySoundNoStack(WswingSound) selfatk.atk=1// oControl.quakeFXTime=10 
+}if AnimFrame=clamp(AnimFrame,4,4.9) atk=1 else atk=0
 frame_set(4,2,0.5)
 frame_set(5,3,0.05)
 frame_set(6,0,0.1)
-if animFrame>6.5 canmove=1
+if AnimFrame>6.5 canmove=1
 
 if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,19,-25,87,weaponcolor)

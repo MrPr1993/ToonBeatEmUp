@@ -10,7 +10,7 @@ frame_set(0,3,framespd)
 frame_set(1,4,framespd)
 frame_set(2,5,framespd)
 frame_set(3,6,framespd)
-frame_set(4,5,framespd) if animFrame>5-framespd animFrame=1
+frame_set(4,5,framespd) if AnimFrame>5-framespd AnimFrame=1
 }
 
 }

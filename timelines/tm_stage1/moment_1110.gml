@@ -31,6 +31,6 @@ animLock=0
 oControl.bossID=oBoss1
 
 with oPlayer
-{animFrame=0 canmove=0
+{AnimFrame=0 canmove=0
 anim=300
 }

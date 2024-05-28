@@ -56,21 +56,21 @@ hitFXset(WspriteFX,WindexFX,WisDepth,WanimEnd,WspeedFX,WspriteTime,WxScaleFX,WyS
 
 hit=0  
  sprite_index=spr_burglarB_weaponattack
-	image_index=animFrame image_speed=0
+	image_index=AnimFrame image_speed=0
 
 frame_set(0,0,0.2)
-frame_set(1,1,0.05) if animFrame=2 PlaySoundNoStack(WswingSound)
-if animFrame=clamp(animFrame,2,3) atk=1 else atk=0
+frame_set(1,1,0.05) if AnimFrame=2 PlaySoundNoStack(WswingSound)
+if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
 frame_set(2,2,0.5)
 frame_set(3,3,0.05)
 
-if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0}
+if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0}
 
-	if animFrame<1
+	if AnimFrame<1
 	weaponanim(weaponspr,weaponIndex,16,-30,90,weaponcolor)
-	else if animFrame<2
+	else if AnimFrame<2
 	weaponanim(weaponspr,weaponIndex,-18,-69,212*image_xscale,weaponcolor)
-		else if animFrame<3
+		else if AnimFrame<3
 	weaponanim(weaponspr,weaponIndex,24,-21,0*image_xscale,weaponcolor)
 	else
 	weaponanim(weaponspr,weaponIndex,23,-20,0*image_xscale,weaponcolor)

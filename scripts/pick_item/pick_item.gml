@@ -4,14 +4,14 @@ function pick_item(){
 	if carry=0
 	{
 			if AttackOrItem=0 or AttackOrItem=2
-		{animFrame=0 anim=10 canmove=0}
+		{AnimFrame=0 anim=10 canmove=0}
 		
 		item=instance_place(x,y,oPizza)
 	if item.ground=1 and item.isBroken=0
 	{
 			if AttackOrItem=1 or AttackOrItem=2
 	{
-		anim=25 animFrame=0 canmove=0
+		anim=25 AnimFrame=0 canmove=0
 	if weaponspawn!=-1 and (item.iscarry=1 or item.isweapon=1) event_user(1)
 if item.PickupSound!=-1
 	PlaySound(item.PickupSound)

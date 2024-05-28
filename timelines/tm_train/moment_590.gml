@@ -2,7 +2,7 @@ if specialSet8=20
 {
 with oPlayer
 {PlaySoundNoStack(choose(DamageVoice1,DamageVoice2,DamageVoice3))
-animFrame=1}
+AnimFrame=1}
 }
 
 with oPlayer
@@ -23,7 +23,7 @@ FlashShadowZ=1
 with oPlayer
 {
 
-animFrame=4 
+AnimFrame=4 
 }
  specialSet8=0
 }

@@ -19,7 +19,7 @@ sprite_index=spr_olga_stand
 	frame_set(13,3,0.1)
 	frame_set(14,4,0.1)
 	frame_set(15,3,0.1)
-	if animFrame>15.9 animFrame=0
+	if AnimFrame>15.9 AnimFrame=0
 }
 
 if anim=1
@@ -27,7 +27,7 @@ if anim=1
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.01)
-frame_set(3,0,0.1) if animFrame>3.5 {animFrame=0 anim=0}
+frame_set(3,0,0.1) if AnimFrame>3.5 {AnimFrame=0 anim=0}
 }
 
 oPlayer.pow=0

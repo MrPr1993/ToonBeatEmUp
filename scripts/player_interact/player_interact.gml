@@ -10,7 +10,7 @@ if grab.hit=0 and carry=0
 {///Lift Heavy Object
 	
 	{canmove=0
-animFrame=0
+AnimFrame=0
 	anim=250
 
 	item=instance_create(x,y,oGrabbable) item.sprite_index=grab.carrySpr item.image_speed=0
@@ -34,7 +34,7 @@ pick_item()
 	if carry=0 
 	{
 			if AttackOrItem=0 or AttackOrItem=2
-		{anim=10 animFrame=0 canmove=0} ///Attack
+		{anim=10 AnimFrame=0 canmove=0} ///Attack
 		///Pet interaction to overwrite above
 		if AttackOrItem=1 or AttackOrItem=2
 		{
@@ -53,7 +53,7 @@ if petP.key_attack
 if petP.hurt=0 and petP.ground=1
 {petP.canmove=0 interact=1 anim=1
 	
-	image_index=0 animFrame=0
+	image_index=0 AnimFrame=0
 	
 petID=petP.id
 
@@ -63,7 +63,7 @@ petP.y=y
 	
 petP.x=x+(petDistance)*image_xscale
 petP.image_xscale=-image_xscale
-petP.image_index=0 petP.animFrame=0 petP.anim=10010
+petP.image_index=0 petP.AnimFrame=0 petP.anim=10010
 petP.sprite_index=petP.petSprLow
 }
 }

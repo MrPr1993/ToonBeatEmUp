@@ -9,9 +9,9 @@ if anim=100
 if image_alpha<1 image_alpha+=0.01 else image_alpha=1
 sprite_index=spr_mirrorlady_laugh
 
-if image_alpha=1 animFrame+=0.1
+if image_alpha=1 AnimFrame+=0.1
 
-if animFrame>4 {animFrame=0 anim=10}
+if AnimFrame>4 {AnimFrame=0 anim=10}
 }
 
 ////Stand
@@ -22,12 +22,12 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)
 frame_set(3,1,0.1)
-if animFrame>3.9 animFrame=0
+if AnimFrame>3.9 AnimFrame=0
 
 if enemyset!=0
 {
 if hp=0
-{animFrame=0 anim=11 specialcheck1=0
+{AnimFrame=0 anim=11 specialcheck1=0
 	
 	if enemyset=3 anim=12 ///Defeat
 	}
@@ -40,11 +40,11 @@ if anim=10
 {
 sprite_index=spr_mirrorlady_attack
 frame_set(0,0,0.1)
-frame_set(1,1,0.1) if animFrame=2 {PlaySound(snd_thunderclap2) PlaySound(snd_mirrorfx2) oControl.quakeFXTime=10 enemyset+=1 spawnenemyscript()}
+frame_set(1,1,0.1) if AnimFrame=2 {PlaySound(snd_thunderclap2) PlaySound(snd_mirrorfx2) oControl.quakeFXTime=10 enemyset+=1 spawnenemyscript()}
 frame_set(2,2,0.1)
 frame_set(3,1,0.05)
 frame_set(4,0,0.1)
-if animFrame>4.9 {animFrame=0 anim=0}
+if AnimFrame>4.9 {AnimFrame=0 anim=0}
 }
 
 ////Angry
@@ -62,7 +62,7 @@ specialcheck1+=1 if specialcheck1>120 {anim=10}
 
 ////Dead
 if anim=12
-{if animFrame=0 {specialtimes[0]=0 oControl.quakeFXTime=10
+{if AnimFrame=0 {specialtimes[0]=0 oControl.quakeFXTime=10
 	enemydeathcount()
 	}
 sprite_index=spr_mirrorlady_uhoh
@@ -70,7 +70,7 @@ frame_set(0,1,0.01)
 frame_set(1,0,0.1)
 frame_set(2,1,0.1)
 frame_set(3,2,0.1)
-frame_set(4,1,0.1) if animFrame>4.9 {if specialtimes[0]<1.5 {animFrame=1  specialtimes[0]+=0.25}
+frame_set(4,1,0.1) if AnimFrame>4.9 {if specialtimes[0]<1.5 {AnimFrame=1  specialtimes[0]+=0.25}
 
 else {oControl.quakeFXTime=30  
 	

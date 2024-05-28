@@ -15,21 +15,21 @@ newscript=function()
 if specialcheck[1]=0
 {
 image_index+=0.25 if image_index=3 image_index=0
-animFrame+=0.25
-if animFrame>20 {animFrame=0 specialcheck[1]=1 image_index=3 PlaySound(snd_dastardly1)}
+AnimFrame+=0.25
+if AnimFrame>20 {AnimFrame=0 specialcheck[1]=1 image_index=3 PlaySound(snd_dastardly1)}
 }
 if specialcheck[1]=1
 {
 image_index+=0.2 if image_index=6 image_index=3
-animFrame+=0.1
-if animFrame>38 {animFrame=0 specialcheck[1]=2 image_index=6 PlaySound(snd_dastardly2)}
+AnimFrame+=0.1
+if AnimFrame>38 {AnimFrame=0 specialcheck[1]=2 image_index=6 PlaySound(snd_dastardly2)}
 }
 if specialcheck[1]=2
 {
 image_index+=0.25 if image_index=9 image_index=7
 
-animFrame+=0.1
-if animFrame>15 {animFrame=0 specialcheck[1]=3 image_index=0 PlaySound(snd_shocked2)}
+AnimFrame+=0.1
+if AnimFrame>15 {AnimFrame=0 specialcheck[1]=3 image_index=0 PlaySound(snd_shocked2)}
 }
 
 if specialcheck[1]=3

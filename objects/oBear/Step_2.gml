@@ -22,24 +22,24 @@ overwriteAttack3=1
 	{
 	 hit=0  sprite_index=AtkSpr
 MoveType=0 damage=0.1
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	
 	if anim=12
 	{
 
-{if animFrame=0 sprite_index=spr_bear_attack2 atkcol_set(8,0,10,1.45,1,29) MoveType=1
+{if AnimFrame=0 sprite_index=spr_bear_attack2 atkcol_set(8,0,10,1.45,1,29) MoveType=1
 frame_set(0,0,0.05)
-if animFrame=0.5 sprite_index=spr_bear_weapon
-if animFrame=1 {image_index=1 sentflying=3*image_xscale ground=0 zSpeed=-6 PlaySoundNoStack(snd_bear3)}
+if AnimFrame=0.5 sprite_index=spr_bear_weapon
+if AnimFrame=1 {image_index=1 sentflying=3*image_xscale ground=0 zSpeed=-6 PlaySoundNoStack(snd_bear3)}
 frame_set(1,1,0.1)
-if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=spr_bear_weapon image_index=0 sentflying=0 atk=0} else {sprite_index=spr_bear_attack2 sentflying=3*image_xscale atk=1}
+if AnimFrame>1.5 if ground {AnimFrame+=0.1 sprite_index=spr_bear_weapon image_index=0 sentflying=0 atk=0} else {sprite_index=spr_bear_attack2 sentflying=3*image_xscale atk=1}
 
-if animFrame>3 and ground {canmove=1}
+if AnimFrame>3 and ground {canmove=1}
 }
 
 if sprite_index=spr_bear_attack2
@@ -57,7 +57,7 @@ else
 	if anim=13
 	{sprite_index=spr_bear_front image_index=0
 		
-	if ground {animFrame=5 recovery=0 recoveryThrow=0 anim=10}
+	if ground {AnimFrame=5 recovery=0 recoveryThrow=0 anim=10}
 	}
 	
 	///Weapon Swing
@@ -66,12 +66,12 @@ else
 		atkcol_set(weaponColPosX,weaponColPosY,weaponColPosZ,weaponColScaleX,weaponColScaleY,weaponColScaleZ)
 	atkcol_set(30,0,10,1.25,1,50)
 	frame_set(0,0,0.1)
-	frame_set(1,1,0.1) if animFrame=2 {PlaySoundNoStack(snd_swing) PlaySoundNoStack(snd_bear3)}
-	frame_set(2,2,0.25) if animFrame=clamp(animFrame,3,3.9) atk=1 else atk=0
+	frame_set(1,1,0.1) if AnimFrame=2 {PlaySoundNoStack(snd_swing) PlaySoundNoStack(snd_bear3)}
+	frame_set(2,2,0.25) if AnimFrame=clamp(AnimFrame,3,3.9) atk=1 else atk=0
 	frame_set(3,3,0.5)
 	frame_set(4,3,0.1)
 	frame_set(5,0,0.1)
-	if animFrame>5.5 canmove=1
+	if AnimFrame>5.5 canmove=1
 	
 	if image_index=clamp(image_index,0,0.9)
 	weaponanim(weaponspr,weaponIndex,16,-22,67,weaponcolor)

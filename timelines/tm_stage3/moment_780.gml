@@ -10,7 +10,7 @@ oControl.quakeFXTime=30
 PlaySound(snd_thunder)
 PlaySound(snd_pharaoh14)
 
-with oPlayer{canmove=0 anim=305 animFrame=1
+with oPlayer{canmove=0 anim=305 AnimFrame=1
 	sentflying=0
 	}
 

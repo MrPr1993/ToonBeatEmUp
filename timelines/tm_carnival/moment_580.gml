@@ -1,4 +1,4 @@
-if boss.animFrame>=5
+if boss.AnimFrame>=5
 {
 oControl.MusicFade=0 oControl.MusicFade=0 oControl.MusicFadeAdd=1
 musicplaystart(msc_boss3)

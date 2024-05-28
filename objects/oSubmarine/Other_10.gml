@@ -20,7 +20,7 @@ eyeHit=60
 	zSpeed=HitForceReactZ
 
 	image_index=9
-	animFrame=0
+	AnimFrame=0
 	anim=8
 	}
 
@@ -31,7 +31,7 @@ eyeHit=60
 	hurt=1
 	sentflying=0
 	image_index=0 sprite_index=FlatSpr
-	animFrame=0
+	AnimFrame=0
 	anim=9
 	specialDead=9
 	}
@@ -45,8 +45,8 @@ eyeHit=60
 	sentflying=HitForceReact
 	zSpeed=HitForceReactZ
 	image_index=0
-	animFrame=0
+	AnimFrame=0
 	anim=40
 	}
 	
-	if hp=0 or hp<=0 {animFrame=0 anim=9999 canmove=0 dead=1 selfatk.atk=0}
+	if hp=0 or hp<=0 {AnimFrame=0 anim=9999 canmove=0 dead=1 selfatk.atk=0}

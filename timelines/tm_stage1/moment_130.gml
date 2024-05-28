@@ -4,7 +4,7 @@ if oPlayer.ground=0
 else
 {
 with oPlayer
-{canmove=0 animFrame=0 anim=220
+{canmove=0 AnimFrame=0 anim=220
 
 	}
 }

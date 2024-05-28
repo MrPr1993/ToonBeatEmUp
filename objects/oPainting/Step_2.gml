@@ -48,27 +48,27 @@ if anim=0 or anim=1
 frameInd=lerp(frameInd,0,0.1)
 
 if anim=10
-{animFrame=0
+{AnimFrame=0
 anim=11
 }
 
 if anim=11
 {
-animFrame+=0.1
+AnimFrame+=0.1
 atk=0 damage=0.2 MoveType=1
 
-if animFrame<1
+if AnimFrame<1
 {if image_xscale=1 frameInd=15 else frameInd=1}
 else
-if animFrame<2
+if AnimFrame<2
 {if image_xscale=1 frameInd=14 else frameInd=2}
 else
-if animFrame<6
+if AnimFrame<6
 {atk=1 sentflying=2*image_xscale
 	if image_xscale=1 {frameInd+=0.5 if frameInd>16 frameInd=0}
 else {frameInd-=0.5 if frameInd<0 frameInd=15.5}
 }
-if animFrame>8 {animFrame=0 anim=0 canmove=1}
+if AnimFrame>8 {AnimFrame=0 anim=0 canmove=1}
 
 }
 

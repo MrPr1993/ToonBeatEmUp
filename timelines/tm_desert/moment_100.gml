@@ -28,7 +28,7 @@ canmove=0
 	sentflying=0
 	canBounce=0
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	thrownDMG=0
 

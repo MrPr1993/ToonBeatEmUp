@@ -5,7 +5,7 @@ function player_special() {
 	{
 	if hp>=powhp
 	{
-	powlock=1 pow=0 powcheck=1 canmove=0 targetID=-1 animFrame=0
+	powlock=1 pow=0 powcheck=1 canmove=0 targetID=-1 AnimFrame=0
 	Throw=0 throwing=0
 if -key_left image_xscale=-1 if key_right image_xscale=1
 	if (key_right or -key_left)
@@ -19,7 +19,7 @@ if -key_left image_xscale=-1 if key_right image_xscale=1
 	}
 	///STAND ATTACk
 	else if hp>=powhp
-	{powlock=1 powcheck=0 canmove=0 targetID=-1 animFrame=0
+	{powlock=1 powcheck=0 canmove=0 targetID=-1 AnimFrame=0
 	if -key_left image_xscale=-1 if key_right image_xscale=1
 		
 	if (key_right or -key_left)

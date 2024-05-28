@@ -31,7 +31,7 @@ if key_attack {meter+=0.9/2} meter-=0.45/32 meter=clamp(meter,0,1)
 
 if meter<0.25 frameadd=3 else if meter<0.5 frameadd=0 else if meter<0.75 frameadd=0 else frameadd=1
 image_index=frameadd
-//{animFrame=0 anim=10 win=0	PlaySound(voice1)}
+//{AnimFrame=0 anim=10 win=0	PlaySound(voice1)}
 }
 
 	if character=0
@@ -76,7 +76,7 @@ image_index=frameadd
 	if image_index=clamp(image_index,2,2.9)
 	{weaponanim(weaponspr,weaponIndex,21,-35,0*image_xscale,weaponcolor)}
 	
-		if animFrame=clamp(animFrame,3,3.9)
+		if AnimFrame=clamp(AnimFrame,3,3.9)
 	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
 	}
 
@@ -88,7 +88,7 @@ if anim=10
 
 frame_set(0,image_index,0.05)
 frame_set(1,0,0.5)
-frame_set(2,2,0.25) if animFrame=3
+frame_set(2,2,0.25) if AnimFrame=3
 {
 PlaySoundNoStack(snd_hit) 	PlaySound(voice2) breakresult=0
 shaketime=10 altresult2Text="SCORE" altresult2=0	
@@ -105,7 +105,7 @@ slotY=0 slotSpd=32
 }
 if win=0
 frame_set(3,2,0.01) else frame_set(3,2,0.01) 
-if animFrame>3
+if AnimFrame>3
 {
 if strGo=1
 {var source1=slotY/maxpoints;

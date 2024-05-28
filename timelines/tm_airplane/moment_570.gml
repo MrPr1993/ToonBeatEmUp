@@ -18,6 +18,6 @@ else
 	oControl.quakeFXTime=300
 audio_stop_all()
 PlaySound(snd_explosion) PlaySound(snd_wind)
-with oPlayer {animFrame=1 canmove=0 canControl=0} specialcheck5=0
+with oPlayer {AnimFrame=1 canmove=0 canControl=0} specialcheck5=0
 
 }

@@ -7,7 +7,7 @@ function throw_quickrelease() {
 	hitBack=0
 	targetHeightHit=GrabFrame
 	image_index=0+targetHeightHit
-	animFrame=0 anim=4
+	AnimFrame=0 anim=4
 
 
 

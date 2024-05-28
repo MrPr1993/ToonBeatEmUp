@@ -53,10 +53,10 @@ if object_index=oBoss1 or object_index=oPharaoh
 {
 if oPlayer.x>x image_xscale=1 else image_xscale=-1
 
-canmove=0 animFrame=0 anim=100}
+canmove=0 AnimFrame=0 anim=100}
 
 if object_index=oZombieMan or object_index=oZombieWoman
-{canmove=0 animFrame=0 anim=666 alarm[1]=choose(60,90,120)
+{canmove=0 AnimFrame=0 anim=666 alarm[1]=choose(60,90,120)
 	current_pal=choose(0,1,2,3,4,5)
 }
 

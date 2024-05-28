@@ -21,7 +21,7 @@ SelectingX=0
 charbuffer=0
 
 anim=0
-animFrame=0
+AnimFrame=0
 
 meter=0
 meterSpd=4

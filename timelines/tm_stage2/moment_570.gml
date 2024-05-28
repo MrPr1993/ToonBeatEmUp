@@ -40,7 +40,7 @@ oEnemySpawner.roomMove=1
 oPlayer.dashing=0
 oPlayer.key_right=1
 
-//boss.animFrame=0
+//boss.AnimFrame=0
 
 timeline_position-=1
 }

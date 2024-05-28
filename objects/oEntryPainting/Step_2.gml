@@ -43,7 +43,7 @@ spawn.frameSpr=frameSpr
 spawn.paintingSpr=paintingSpr
 		}
 		
-		//with spawnEnemy {hurt=1 canmove=0 animFrame=10 anim=25}
+		//with spawnEnemy {hurt=1 canmove=0 AnimFrame=10 anim=25}
 		
 		}
 }

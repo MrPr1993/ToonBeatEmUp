@@ -133,7 +133,7 @@ if waterSplash!=0 waterSplash-=1 else waterSplash=0;
 		
 		if fallHole=0
 		{
-		ground=1 zSpeed=0 z=0 if anim=2 or anim=3 {animFrame=0 canmove=0 anim=22}}
+		ground=1 zSpeed=0 z=0 if anim=2 or anim=3 {AnimFrame=0 canmove=0 anim=22}}
 		}
 	}
 	else

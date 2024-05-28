@@ -31,7 +31,7 @@ or anim=30
 or anim=31
 or dead=1
 {
-	with oOctopusT if anim!=4 {animFrame=0 anim=4}
+	with oOctopusT if anim!=4 {AnimFrame=0 anim=4}
 	
 	
 	

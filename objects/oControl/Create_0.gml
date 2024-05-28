@@ -476,7 +476,7 @@ P1SpawnY=208
 P1SpawnXadd=32
 P1SpawnYadd=208
 
-animFrame=0
+AnimFrame=0
 
 if !variable_global_exists("Bappo")
 {

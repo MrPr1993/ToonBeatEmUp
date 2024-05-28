@@ -10,7 +10,7 @@ specialhit=-1 canbeGrabbed=1
 	zSpeed=-4
 
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 	bike=instance_create_depth(x,y,-1,oBikeBomb)
 	bike.my_pal_sprite=my_pal_sprite bike.current_pal=current_pal bike.image_xscale=image_xscale

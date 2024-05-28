@@ -23,7 +23,7 @@ frame_set(4,2,0.2)
 frame_set(5,3,0.2)
 frame_set(6,4,0.2) 
 frame_set(7,4,0.2) 
-if animFrame>7 {spawned=2 zSpeed=spawnSpeedZ}
+if AnimFrame>7 {spawned=2 zSpeed=spawnSpeedZ}
 }
 
 if spawned=2
@@ -36,7 +36,7 @@ if spawned=2
 				if hp!=-1
 		{spawn.hp=hp; spawn.maxhp=maxhp;}
 	
-		//with spawnEnemy {hurt=1 canmove=0 animFrame=10 anim=25}
+		//with spawnEnemy {hurt=1 canmove=0 AnimFrame=10 anim=25}
 		
 		}
 }

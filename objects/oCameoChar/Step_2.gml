@@ -6,14 +6,14 @@ if anim=0
 frame_set(0,0,framespd)
 frame_set(1,1,framespd)
 frame_set(2,0,framespd)
-frame_set(3,2,framespd) if animFrame>4-framespd animFrame=0
+frame_set(3,2,framespd) if AnimFrame>4-framespd AnimFrame=0
 }
 
 if anim=1
 {
 frame_set(0,0,framespd)
 frame_set(1,1,framespd)
-frame_set(2,2,framespd) if animFrame>3-framespd animFrame=0
+frame_set(2,2,framespd) if AnimFrame>3-framespd AnimFrame=0
 }
 
 if newscript!=-1

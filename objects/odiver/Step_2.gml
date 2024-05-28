@@ -45,24 +45,24 @@ weaponanim(weaponspr,weaponIndex,26,-39,0,weaponcolor)
 	{weaponanim(weaponspr,weaponIndex,2004,-34,0,weaponcolor)
 	 hit=0  sprite_index=AtkSpr
 MoveType=0 damage=0.1
-	image_index=animFrame image_speed=0
-	 if animFrame=clamp(animFrame,2,2.2) atk=1 else atk=0
-	if animFrame=clamp(animFrame,0,1.5)
-	animFrame+=0.2 else animFrame+=0.1 if animFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
+	image_index=AnimFrame image_speed=0
+	 if AnimFrame=clamp(AnimFrame,2,2.2) atk=1 else atk=0
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>3.5 {hurt=0 atk=0 canmove=1 hit=0
 	}
 	}
 	
 	if anim=12
 	{
 
-{if animFrame=0 sprite_index=spr_diver_airkick MoveType=1
+{if AnimFrame=0 sprite_index=spr_diver_airkick MoveType=1
 frame_set(0,0,0.05)
-if animFrame=0.5 sprite_index=spr_diver_airkick
-if animFrame=1 {image_index=1 sentflying=2*image_xscale ground=0 zSpeed=-6}
+if AnimFrame=0.5 sprite_index=spr_diver_airkick
+if AnimFrame=1 {image_index=1 sentflying=2*image_xscale ground=0 zSpeed=-6}
 frame_set(1,1,0.1)
-if animFrame>1.5 if ground {animFrame+=0.1 sprite_index=spr_diver_airkick image_index=0 sentflying=0 atk=0} else {image_index=2 sprite_index=spr_diver_airkick sentflying=2*image_xscale atk=1}
+if AnimFrame>1.5 if ground {AnimFrame+=0.1 sprite_index=spr_diver_airkick image_index=0 sentflying=0 atk=0} else {image_index=2 sprite_index=spr_diver_airkick sentflying=2*image_xscale atk=1}
 
-if animFrame>3 and ground {canmove=1}
+if AnimFrame>3 and ground {canmove=1}
 }
 	if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,24,-34,0,weaponcolor)
@@ -85,10 +85,10 @@ weaponBack=1
 if anim=810 ///Gun Fire
 {
 
-if animFrame=2.0
-or animFrame=2.8
-or animFrame=3.8
-or animFrame=5.8
+if AnimFrame=2.0
+or AnimFrame=2.8
+or AnimFrame=3.8
+or AnimFrame=5.8
 {
 PlaySoundNoStack(snd_gun)
 flashFX(x+42*image_xscale,y,z-44,spr_gunflash,0,1,0,1,1,c_white,1)
@@ -101,8 +101,8 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.025)
  //1
 
-//	if animFrame=0
-	//or animFrame=0.8 or animFrame=1.6 or animFrame=2.4  or animFrame=3.2
+//	if AnimFrame=0
+	//or AnimFrame=0.8 or AnimFrame=1.6 or AnimFrame=2.4  or AnimFrame=3.2
 frame_set(2,1,0.2)
 frame_set(3,2,0.05)
 frame_set(4,1,0.2) //2 
@@ -114,7 +114,7 @@ frame_set(9,1,0.025)
 frame_set(10,0,0.25)
 
 
-if animFrame>10.75 {atk=0 canmove=1}
+if AnimFrame>10.75 {atk=0 canmove=1}
 
 
 if image_index=clamp(image_index,0,0.9)

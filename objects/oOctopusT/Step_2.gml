@@ -24,7 +24,7 @@ if y>targetY y-=1 else y+=1
 sprite_index=spr_octopus_tent0 if image_index<4.75 image_index+=0.1 else image_index=3
 
  byetime+=1;
-if  byetime>260 {animFrame=0 anim=4}
+if  byetime>260 {AnimFrame=0 anim=4}
 }
 
 
@@ -39,13 +39,13 @@ selfatk.damage=0.2 selfatk.MoveType=1 selfatk.image_xscale=image_xscale
 selfatk.x=x+48*image_xscale selfatk.y=y selfatk.z=z+16
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
-frame_set(2,2,0.25) if animFrame=clamp(animFrame,3,4) atk=1 else atk=0
-frame_set(3,3,0.25) if animFrame>4 recovery=30;
+frame_set(2,2,0.25) if AnimFrame=clamp(AnimFrame,3,4) atk=1 else atk=0
+frame_set(3,3,0.25) if AnimFrame>4 recovery=30;
 frame_set(4,4,0.05) 
 frame_set(5,5,0.25)
 frame_set(6,6,0.25)
 frame_set(7,7,0.25)
-if animFrame>7.5 {instance_destroy()}
+if AnimFrame>7.5 {instance_destroy()}
 }
 
 if anim=12 ///Grab
@@ -54,10 +54,10 @@ selfatk.damage=0.2 selfatk.MoveType=1 selfatk.image_xscale=image_xscale
 selfatk.x=x+48*image_xscale selfatk.y=y selfatk.z=z+16
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
-frame_set(2,2,0.05) if animFrame=clamp(animFrame,3,4) atk=1 else atk=0
-frame_set(3,3,0.25) if animFrame>4 recovery=30;
+frame_set(2,2,0.05) if AnimFrame=clamp(AnimFrame,3,4) atk=1 else atk=0
+frame_set(3,3,0.25) if AnimFrame>4 recovery=30;
 frame_set(4,4,0.05) 
-frame_set(5,3,0.25) if animFrame>5 {animFrame=0 anim=4}
+frame_set(5,3,0.25) if AnimFrame>5 {AnimFrame=0 anim=4}
 }
 
 if targetID!=-1
@@ -65,7 +65,7 @@ if anim!=6666
 {
 with targetID
 {
-animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
 throw_quickrelease() ground=0 zSpeed=-2 sentflying=-1*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
 canmove=1 hurt=0 recovery=30
 }
@@ -77,7 +77,7 @@ isThrow=1 //hud_show()
 throwing=1
 comboBreak=0
 selfatk.recovery=90
-if animFrame>0.1
+if AnimFrame>0.1
 Throw=0 else {image_index=0 Throw=1 grabMax=0}
 sprite_index=spr_octopus_tent4
 if image_index<1
@@ -126,7 +126,7 @@ HitType=1
 	else
 	sentflying=4*image_xscale
 	image_index=3 sprite_index=ThrownSpr
-	animFrame=3
+	AnimFrame=3
 	anim=5
 
 sentflying=-2*image_xscale zSpeed=-2
@@ -136,7 +136,7 @@ if targetID!=-1
 targetID.x=x+24*image_xscale
 with targetID
 {
-animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
 throw_quickrelease() ground=0 zSpeed=-2 sentflying=-1*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
 canmove=1 hurt=0 recovery=30
 }
@@ -156,7 +156,7 @@ if targetID.anim!=30 and targetID.anim!=31
 targetID.ground=0 
 targetID=-1
 
-throwing=0 animFrame=0 anim=0 canmove=1 throwcombo=2
+throwing=0 AnimFrame=0 anim=0 canmove=1 throwcombo=2
 alarm[1]=2
 }}
 
@@ -173,15 +173,15 @@ targetID.image_xscale=-image_xscale targetID.depth=depth+1
 grabX=12*image_xscale grabY=0 grabZ=z-20 
 
 atk=0 
-animFrame+=0.02 if animFrame>4 {///Let go of enemy to attack
+AnimFrame+=0.02 if AnimFrame>4 {///Let go of enemy to attack
 grabX=0 grabY=0 grabZ=0 //targetID.hp-=0.05+extradamage
 if targetID!=-1
 with targetID
 {recovery=10 isGrabbed=0
 hurt=1 Throw=0
-atk=0 canmove=0 animFrame=0 ground=0 zSpeed=-4 sentflying=-2*image_xscale image_index=GrabFrame anim=5 shaketime=10
+atk=0 canmove=0 AnimFrame=0 ground=0 zSpeed=-4 sentflying=-2*image_xscale image_index=GrabFrame anim=5 shaketime=10
 canmove=0 hurt=1
-}throwing=0 animFrame=0 anim=0 canmove=0 throwcombo=2 canmove=1 alarm[0]=60
+}throwing=0 AnimFrame=0 anim=0 canmove=0 throwcombo=2 canmove=1 alarm[0]=60
 targetID=-1 }
 
 
@@ -196,23 +196,23 @@ if targetID.hp<0 or targetID.dead=1
 {
 with targetID
 {
-	animFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+	AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
 	HitForceReact=-4*image_xscale throw_quickrelease() ground=0 zSpeed=-4 sentflying=-2*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
 }
-throwing=0 animFrame=0 canmove=1 throwcombo=2 alarm[0]=60
+throwing=0 AnimFrame=0 canmove=1 throwcombo=2 alarm[0]=60
 }
 }
 }
 
 
 ////Forcibly Break Out With Special Attacks
-if animFrame>0.1 and targetID!=-1
+if AnimFrame>0.1 and targetID!=-1
 {
 if targetID.key_right_pressed
 or targetID.key_right_pressed
 or targetID.key_jump
 or targetID.key_attack
-animFrame+=0.25
+AnimFrame+=0.25
 
 ////Instantly use Special
 if (targetID.key_shield_pressed or targetID.key_super)
@@ -223,7 +223,7 @@ with targetID {anim=0 hurt=0 ground=0 isGrabbed=0
 
 powlock=1 pow=0 
 if pow>4 powcheck=1 else if hp>=powhp powcheck=0
-canmove=0 targetID=-1 animFrame=0 atk=1
+canmove=0 targetID=-1 AnimFrame=0 atk=1
 anim=17 throwATK=0
    recovery=60}
 targetID=-1
@@ -240,5 +240,5 @@ frame_set(1,5,0.25)
 frame_set(2,6,0.25)
 frame_set(3,7,0.25)
 frame_set(4,0,0.25)
-if animFrame>4.5 {instance_destroy()}
+if AnimFrame>4.5 {instance_destroy()}
 }

@@ -21,7 +21,7 @@ canmove=0
 	else
 	{
 	if spawnID!=-1
-	{animFrame=0 canmove=0
+	{AnimFrame=0 canmove=0
 anim=19930
 	}
 	}

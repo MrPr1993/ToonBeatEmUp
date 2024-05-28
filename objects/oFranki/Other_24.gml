@@ -1,14 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 if anim=13
-{animFrame=0 anim=40000
+{AnimFrame=0 anim=40000
 
 targetID=selfatk.hitID
 
 	if targetID!=-1
 	if instance_exists(targetID)
 	{
-	targetID.animFrame=0//anim=20
+	targetID.AnimFrame=0//anim=20
 	targetID.thrownDMG=0
 	targetID.vspeed=0
 	targetID.hspeed=0
@@ -17,7 +17,7 @@ targetID=selfatk.hitID
 	with targetID
 	{
 	Throw=1
-	animFrame=GrabFrame ///Grab Enemy Frame
+	AnimFrame=GrabFrame ///Grab Enemy Frame
 	anim=30
 	canmove=0
 	hurt=1

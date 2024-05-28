@@ -14,7 +14,7 @@ qsand2=instance_create_depth(__view_get( e__VW.XView, 0 )+0,176,-1,oFlashFX) wit
 {sprite_index=spr_quicksand image_speed=0.5 alarm[0]=999999 animEnd=0 x+=320 image_xscale=-1}
 
 	
-with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=999999 image_index=0 sprite_index=qSandSpr}
+with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 AnimFrame=0 anim=999999 image_index=0 sprite_index=qSandSpr}
 with oShadowFX visible^=1
 quicksnd=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oWaterFX) with quicksnd
 {z=0 image_xscale=88888 image_yscale=77777}

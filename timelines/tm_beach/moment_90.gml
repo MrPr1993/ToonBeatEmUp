@@ -48,7 +48,36 @@ with cast
 with oPlayer
 {
 canControl=0
-automoveX=4082-64 automoveY=178+64 automove=1
+automoveX=4082-80 automoveY=178 automove=1
+
+specialanimscript=function()
+{
+if automove=0
+{AnimFrame=0 anim=9999 canmove=0 
+specialanimscript=function()
+{
+if AnimFrame=0
+{
+if character=0 sprite_index=spr_viva_point
+if character=1 sprite_index=spr_hina_point
+if character=2 sprite_index=spr_bahati_point
+if character=3 sprite_index=spr_sofia_point
+
+if instance_exists(oOctopus) {
+if character=0 sprite_index=spr_viva_wildtake5	
+if character=1 sprite_index=spr_hina_wildtake5	
+if character=2 sprite_index=spr_bahati_wildtake5	
+if character=3 sprite_index=spr_sofia_wildtake5	
+	AnimFrame=1 }
+}
+frame_set(1,0,0.25)
+frame_set(2,1,0.25)
+if instance_exists(oOctopus)
+{
+if oOctopus.anim=0 {specialanimscript=-1; AnimFrame=0 anim=0 image_index=0 canmove=1}}
+}
+}
+}
 }
 
 oControl.MusicFade=1 oControl.MusicFadeAdd=1

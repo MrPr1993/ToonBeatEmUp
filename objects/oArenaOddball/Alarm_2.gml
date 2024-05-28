@@ -21,7 +21,7 @@ canmove=0
 key_left=0 key_right=0 key_up=0 key_down=0 anim=0
 }
 
-if stagePose!=0 {animFrame=0 oArenaSurvival.playerwinner=string(name)+" WINS!" anim=210}
+if stagePose!=0 {AnimFrame=0 oArenaSurvival.playerwinner=string(name)+" WINS!" anim=210}
 }
 alarm[6]=80
 }

@@ -7,11 +7,11 @@ function player_prepjump() {
 		player_punchback()
 		else
 {	
-		ground=0 zSpeed=-8 animFrame=0 anim=15
-		animFrame=0}
+		ground=0 zSpeed=-8 AnimFrame=0 anim=15
+		AnimFrame=0}
 		}
 	else
-	{animFrame=0 anim=21
+	{AnimFrame=0 anim=21
 	}
 	}
 

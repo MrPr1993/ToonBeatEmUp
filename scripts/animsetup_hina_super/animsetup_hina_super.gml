@@ -2,7 +2,7 @@
 function animsetup_hina_super() {
 	if anim=50 ///
 	{
-	if animFrame=0 {PlaySound(snd_Hina_Subarashi)}
+	if AnimFrame=0 {PlaySound(snd_Hina_Subarashi)}
 	
 	var targeten=oEnemy1
 if global.MultiVS=1 targeten=oPlayer
@@ -28,7 +28,7 @@ global.MultiSuper=isPlayer
 	frame_set(0,0,0.2)
 	frame_set(1,1,0.2)
 	frame_set(2,2,0.2)
-	if animFrame=3
+	if AnimFrame=3
 	{special0=0
 	gong=instance_create_depth(x-56*image_xscale,y,depth,oFlashFX) with gong z=z
 	gong.isDepth=0 gong.depth=depth+1 gong.alarm[0]=0 gong.animEnd=0
@@ -39,7 +39,7 @@ global.MultiSuper=isPlayer
 
 	frame_set(4,4,0.05)
 	frame_set(5,5,0.5)
-	if animFrame=5.5
+	if AnimFrame=5.5
 	{PlaySound(snd_gong)
 	dragon=instance_create_depth(camera_get_view_x(view_camera[0])-0,camera_get_view_y(view_camera[0])-6-128,depth,oFlashFX) with dragon z=z
 	if image_xscale=-1 dragon.x=camera_get_view_x(view_camera[0])+320
@@ -47,7 +47,7 @@ global.MultiSuper=isPlayer
 	dragon.image_speed=0 dragon.sprite_index=spr_hina_dragon dragon.image_xscale=image_xscale
 	}
 
-	if animFrame=clamp(animFrame,6,10)
+	if AnimFrame=clamp(AnimFrame,6,10)
 	{dragon.y=lerp(dragon.y,camera_get_view_y(view_camera[0])-6,0.5)
 	if image_xscale=1 
 	dragon.x=lerp(dragon.x,camera_get_view_x(view_camera[0])+128+64,0.1)
@@ -55,22 +55,22 @@ global.MultiSuper=isPlayer
 	dragon.x=lerp(dragon.x,camera_get_view_x(view_camera[0])+320-128-64,0.1)
 	dragon.hspeed=0
 	}
-	if animFrame=clamp(animFrame,9,16)
+	if AnimFrame=clamp(AnimFrame,9,16)
 	with dragon
 	{hspeed=lerp(hspeed,-8*image_xscale,0.25)
 	if image_index<1.5
 	image_index+=0.5
 	}
-if animFrame=8 PlaySoundNoStack(snd_flamelong) 
-	if animFrame>8 
+if AnimFrame=8 PlaySoundNoStack(snd_flamelong) 
+	if AnimFrame>8 
 	if special1<0 {special1=2} else special1-=1
 
-	if animFrame=clamp(animFrame,5,31+0.9)
-	{animFrame+=0.1 gong.image_speed=1
+	if AnimFrame=clamp(AnimFrame,5,31+0.9)
+	{AnimFrame+=0.1 gong.image_speed=1
 	if image_index<6.5 image_index+=0.5 else image_index=5
 
 	///Dragon FX
-	if animFrame=clamp(animFrame,6,12) 
+	if AnimFrame=clamp(AnimFrame,6,12) 
 	{
 	with dragon
 	{
@@ -79,7 +79,7 @@ if animFrame=8 PlaySoundNoStack(snd_flamelong)
 
 	}
 
-	if animFrame=9.2
+	if AnimFrame=9.2
 	///Flames
 	repeat(5)
 	{
@@ -94,7 +94,7 @@ if animFrame=8 PlaySoundNoStack(snd_flamelong)
 
 
 	if image_index<6 {
-	if animFrame=6.5 
+	if AnimFrame=6.5 
 	{
 	oShadowFX.colorChange=c_white
 	if instance_exists(targeten) with targeten
@@ -108,7 +108,7 @@ if animFrame=8 PlaySoundNoStack(snd_flamelong)
 
 
 
-	      if animFrame<=6 ///Clear Screen
+	      if AnimFrame<=6 ///Clear Screen
 	   {oShadowFX.colorChange=c_black
 	        if instance_exists(targeten) 
 	   {targeten.watchSourceX=x
@@ -120,7 +120,7 @@ if animFrame=8 PlaySoundNoStack(snd_flamelong)
 	}
 
 	///Hina
-	if animFrame=clamp(animFrame,5,16)
+	if AnimFrame=clamp(AnimFrame,5,16)
 	{oControl.quakeFXTime=2
 
 	    if instance_exists(targeten) 
@@ -133,13 +133,13 @@ if animFrame=8 PlaySoundNoStack(snd_flamelong)
 	}
 
 	}     } 
-	   if animFrame=16.1 ///Clear Screen
+	   if AnimFrame=16.1 ///Clear Screen
 	   if instance_exists(targeten) with targeten if canact=1 and act=1 and immune=0
 	  // if x<camera_get_view_x(view_camera[0])+320+sprite_get_width(mask_index)/2 and x>camera_get_view_x(view_camera[0])-sprite_get_width(mask_index)/2
 	   if Throw=0 and dead=0
 	   	if isPlayer!=global.MultiSuper
 	{superThrown=0 hspeed=0 hp-=0.5 ////Super Attack Damage
-	 hud_show() hpscan() animFrame=0 image_index=0
+	 hud_show() hpscan() AnimFrame=0 image_index=0
 	 if hp<=0
 	other.PlayerScore+=points
 	else other.PlayerScore+=pointshit
@@ -150,7 +150,7 @@ if animFrame=8 PlaySoundNoStack(snd_flamelong)
 	}
     
 	///Animation End
-	if animFrame>16 {
+	if AnimFrame>16 {
 
 	with oShadowFX specialShow=0 invincible=0 
 	with gong instance_destroy()

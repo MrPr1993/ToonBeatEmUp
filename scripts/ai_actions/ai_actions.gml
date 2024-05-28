@@ -1,10 +1,10 @@
 /// @description Attack
 function ai_actions() {	alarmCheck1=alarm[1]
 	
-if canAttack=5 if canAttack5Move!=-1 {canmove=0; anim=canAttack5Move; canAttack5Move=-1; animFrame=0}
+if canAttack=5 if canAttack5Move!=-1 {canmove=0; anim=canAttack5Move; canAttack5Move=-1; AnimFrame=0}
 	
 if canAttack=7 
-{canmove=0 animFrame=0 anim=enterAnim canAttack=8 exit;}
+{canmove=0 AnimFrame=0 anim=enterAnim canAttack=8 exit;}
 	
 if canAttack!=7 and canAttack!=8
 {
@@ -79,13 +79,13 @@ if canAttack!=7 and canAttack!=8
 	{
 	///Stand Attack
 	if (x>__view_get( e__VW.XView, 0 )-sprite_get_width(mask_index)/2 and x<__view_get( e__VW.XView, 0 )+320+sprite_get_width(mask_index)/2)
-	{canmove=0 animFrame=0
+	{canmove=0 AnimFrame=0
 	image_index=0 anim=animatk} else alarm[1]=2
 	}
 	else
 	{
 	if (x>__view_get( e__VW.XView, 0 )-sprite_get_width(mask_index)/2 and x<__view_get( e__VW.XView, 0 )+320+sprite_get_width(mask_index)/2)
-	{canmove=0 animFrame=0
+	{canmove=0 AnimFrame=0
 	image_index=0 anim=animatk} else alarm[1]=2
 	}
 

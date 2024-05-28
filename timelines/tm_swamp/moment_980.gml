@@ -7,7 +7,7 @@ if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
 
 oControl.quakeFXTime=10
 	PlaySound(snd_woodbreakm)
-with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 animFrame=0 anim=999999 image_index=0 sprite_index=qSandSpr}
+with oPlayer {canControl=0 canmove=0 key_left=0 key_right=0 key_up=0 key_down=0 AnimFrame=0 anim=999999 image_index=0 sprite_index=qSandSpr}
 with oShadowFX visible^=1
 quicksnd=instance_create_depth(__view_get( e__VW.XView, 0 ),0,-1,oWaterFX) with quicksnd
 {z=0 image_xscale=88888 image_yscale=77777}
@@ -65,7 +65,7 @@ if character=3 sprite_index=spr_sofia_fallhole
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
-frame_set(3,3,0.25) if animFrame>3.9 sprite_index=mask_none
+frame_set(3,3,0.25) if AnimFrame>3.9 sprite_index=mask_none
 frame_set(4,4,0.25)
 }
 
