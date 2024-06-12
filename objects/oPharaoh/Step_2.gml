@@ -249,7 +249,7 @@ if anim=100
 frame_set(0,0,0.1)
 frame_set(1,0,0.1) 
 frame_set(2,0,0.1) if AnimFrame>4 and AnimFrame<8{z+=0.5}
-frame_set(3,0,0.1) if AnimFrame=4 {visible=1 PlaySound(snd_pharaoh11)}
+frame_set(3,0,0.1) if AnimFrame=4 {visible=1 }
 frame_set(4,0,0.01)
 frame_set(5,0,0.01)
 frame_set(6,0,0.01)
