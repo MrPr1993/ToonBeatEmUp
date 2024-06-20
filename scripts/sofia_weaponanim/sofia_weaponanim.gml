@@ -182,6 +182,31 @@ if AnimFrame>6.7 {canmove=1 anim=0}
 	else weaponanim(weaponspr,weaponIndex,6-1,-50+13,90*image_xscale,weaponcolor)
 	if AnimFrame>3.9 {hurt=0 atk=0 canmove=1 hit=0}
 	}
+	
+		///Baseball Bat/Swinging Weapon
+	if weapontype=19935
+	{frame_set(0,0,0.1) frame_set(1,1,0.25) frame_set(2,2,0.25) if AnimFrame=3 PlaySound(WswingSound)
+frame_set(3,3,0.25) frame_set(4,4,0.1) frame_set(5,3,0.25)
+
+if AnimFrame=clamp(AnimFrame,2,2.9) weaponBack=0 else weaponBack=1
+
+	if AnimFrame=clamp(AnimFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,-13,-55+13,76*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-20,-48+13,95*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,5,-36+13,-90*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,3,3.9)
+	{weaponanim(weaponspr,weaponIndex,21,-42+13,0*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,4,4.9)
+	{weaponanim(weaponspr,weaponIndex,-15,-57+13,137*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,5,5.9)
+	{weaponanim(weaponspr,weaponIndex,21,-42+13,90*image_xscale,weaponcolor)}
+	sprite_index=spr_sofia_batter
+	image_speed=0
+	if AnimFrame=clamp(AnimFrame,3,3.9) atk=1 else atk=0
+	if AnimFrame>5.5 {hurt=0 atk=0 canmove=1 hit=0}
+	}
 
 	}
 

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"p1 - Viva Sprites",
-    "path":"folders/6 - Player Data/p1 - Viva Sprites.yy",
+    "name":"p2 - Hina Sprites",
+    "path":"folders/6 - Player Data/p2 - Hina Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

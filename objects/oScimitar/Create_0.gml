@@ -19,6 +19,8 @@ food=0
 weaponLife=6
 weaponCut=1
 
+weapontype=19935
+
 WspriteFX=spr_blood
 HitSound=snd_cut
 WswingSound=snd_swing5

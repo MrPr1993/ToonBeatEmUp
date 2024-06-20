@@ -17,6 +17,8 @@ groundAdd=-32
 HitType=1
 food=0
 
+weapontype=19935
+
 PickupSound=snd_getweapon
 
 

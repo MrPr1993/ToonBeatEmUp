@@ -422,6 +422,14 @@ item_thrown()
 	if AnimFrame>2 {canmove=1 anim=0}
 	}
 
+
+
+		///Baseball Bat
+if anim=19935
+{
+
+}
+
 //////Fishing Minigame
 if anim=26
 if weapontype=0

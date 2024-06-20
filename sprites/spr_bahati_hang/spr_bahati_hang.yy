@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"p2 - Hina Sprites",
-    "path":"folders/6 - Player Data/p2 - Hina Sprites.yy",
+    "name":"p3 - Bahati Sprites",
+    "path":"folders/6 - Player Data/p3 - Bahati Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
