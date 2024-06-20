@@ -7,7 +7,7 @@ itemname=oHammer
 itemHP=4
 isweapon=1
 weapontype=2
-weaponDamage=0.015
+weaponDamage=0.1
 isdepth=1
 zAdd=-8
 zAddGround=0
@@ -20,7 +20,13 @@ food=0
 weaponExtraAngle=270
 weaponIsGun=1
 
-PickupSound=snd_getweapon
+weaponLife=4
+HitSound=snd_flameshort
 
+weapontype=19945
+HitType=5
+weaponProjSnd=snd_flame
+PickupSound=snd_getweapon
+WspriteFX=spr_burn
 //weaponExtraAngle=70
 

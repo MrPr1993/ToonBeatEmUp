@@ -3090,6 +3090,7 @@
     {"id":{"name":"spr_robot_elec","path":"sprites/spr_robot_elec/spr_robot_elec.yy",},},
     {"id":{"name":"spr_robot_flame","path":"sprites/spr_robot_flame/spr_robot_flame.yy",},},
     {"id":{"name":"spr_robot_flame556","path":"sprites/spr_robot_flame556/spr_robot_flame556.yy",},},
+    {"id":{"name":"spr_robot_flamethrower","path":"sprites/spr_robot_flamethrower/spr_robot_flamethrower.yy",},},
     {"id":{"name":"spr_robot_flamew","path":"sprites/spr_robot_flamew/spr_robot_flamew.yy",},},
     {"id":{"name":"spr_robot_flat","path":"sprites/spr_robot_flat/spr_robot_flat.yy",},},
     {"id":{"name":"spr_robot_front","path":"sprites/spr_robot_front/spr_robot_front.yy",},},

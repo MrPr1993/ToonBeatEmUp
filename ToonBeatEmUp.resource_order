@@ -2830,6 +2830,7 @@
     {"name":"spr_robot_elec","order":11,"path":"sprites/spr_robot_elec/spr_robot_elec.yy",},
     {"name":"spr_robot_flame","order":12,"path":"sprites/spr_robot_flame/spr_robot_flame.yy",},
     {"name":"spr_robot_flame556","order":13,"path":"sprites/spr_robot_flame556/spr_robot_flame556.yy",},
+    {"name":"spr_robot_flamethrower","order":24,"path":"sprites/spr_robot_flamethrower/spr_robot_flamethrower.yy",},
     {"name":"spr_robot_flamew","order":14,"path":"sprites/spr_robot_flamew/spr_robot_flamew.yy",},
     {"name":"spr_robot_flat","order":15,"path":"sprites/spr_robot_flat/spr_robot_flat.yy",},
     {"name":"spr_robot_front","order":16,"path":"sprites/spr_robot_front/spr_robot_front.yy",},

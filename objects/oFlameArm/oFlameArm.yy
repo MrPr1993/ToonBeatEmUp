@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_robot_flamew",
-    "path":"sprites/spr_robot_flamew/spr_robot_flamew.yy",
+    "name":"spr_robot_flamethrower",
+    "path":"sprites/spr_robot_flamethrower/spr_robot_flamethrower.yy",
   },
   "spriteMaskId":{
     "name":"spr_selfatk",
