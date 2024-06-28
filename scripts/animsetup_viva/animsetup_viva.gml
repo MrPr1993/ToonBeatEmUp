@@ -586,12 +586,22 @@ selfatk.spriteFX=spr_hitflash
 	      or AnimFrame=clamp(AnimFrame,1+28,1.9+28)
 	            or AnimFrame=clamp(AnimFrame,1+30,1.9+30)
 	   atk=1 else atk=0
+	   
+if AnimFrame<=30
+{//43,34
+if AnimFrame=1 or AnimFrame=8 or AnimFrame=16  or AnimFrame=24
+flashFX(x+40*image_xscale,y+1,z-66,spr_elecex2,0,0.25,0,1,1,c_white,1)
+
+if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
+flashFX(x+43*image_xscale,y+1,z-34,spr_elecex2,0,0.25,0,1,1,c_white,1)
+}
+	   
 	if AnimFrame=clamp(AnimFrame,0,31)
 	AnimFrame+=0.5 else AnimFrame+=0.1
 	if AnimFrame=30 {
 			selfatk.HitForce=-4  selfatk.HitForceZ=-4
-		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66,spr_lightingbolt,0,0.5,0,1,1,c_white,1)
-		selfatk.spriteFX=spr_elecflash selfatk.MoveType=3
+		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66,spr_elecex,0,0.25,0,1,1,c_white,1)
+		selfatk.spriteFX=spr_elecflash selfatk.MoveType=3 
 		}
 	if sprite_index=spr_viva_special2b {selfatk.MoveType=3 selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
 

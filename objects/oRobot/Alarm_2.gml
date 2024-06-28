@@ -2,7 +2,7 @@
 if act=1
 {
 if dead=1
-if anim!=9 and anim!=40 and anim!=41
+if anim!=9 and anim!=40 and anim!=41 and visible
 {
 {PlaySoundNoStack(snd_explosion) oControl.quakeFXTime=10
 ex=instance_create(x,y,oExplosion) ex.z=z ex.depth=depth

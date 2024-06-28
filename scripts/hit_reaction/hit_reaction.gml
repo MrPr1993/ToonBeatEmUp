@@ -31,11 +31,11 @@ if isBoss=0
 	canmove=0
 	hurt=1
 	shaketime=30
-	throwing=0 dead=1;
+	throwing=0 dead=1; anim=9999
 	visible=0 disappearTime=0 alarm[2]=90
 	
 	///use fake body to fly off-screen
-flashFX(x,y,z,ThrownSpr,0,0,90,image_xscale,1,c_white,1) fx.z=z
+flashFX(x-8*image_xscale,y,z-4,ThrownSpr,0,0,90,image_xscale,1,c_white,1) fx.z=z
 fx.zSpeed=-4 fx.my_pal_sprite=my_pal_sprite fx.current_pal=current_pal
 fx.hasShadow=1 fx.shadow=shadowSpr fx.haspal=1
 
@@ -46,8 +46,8 @@ fx.hasShadow=1 fx.shadow=shadowSpr fx.haspal=1
 	
 	exit;///
 
-} else HitType=2
-} else HitType=2
+} else HitType=1
+} else HitType=1
 }
 
 ///Reaction while frozen
