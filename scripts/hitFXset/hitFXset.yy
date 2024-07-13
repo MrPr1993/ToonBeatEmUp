@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"hitFXset",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_robot",
   "isCompatibility":false,
   "isDnD":false,

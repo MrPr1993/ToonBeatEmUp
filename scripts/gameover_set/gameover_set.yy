@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"gameover_set",
   "isCompatibility":false,
   "isDnD":false,

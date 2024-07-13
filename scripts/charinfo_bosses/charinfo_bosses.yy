@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"charinfo_bosses",
   "isCompatibility":false,
   "isDnD":false,

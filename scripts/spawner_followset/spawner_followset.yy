@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"spawner_followset",
   "isCompatibility":false,
   "isDnD":false,

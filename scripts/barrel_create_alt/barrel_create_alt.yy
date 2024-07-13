@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"barrel_create_alt",
   "isCompatibility":false,
   "isDnD":false,

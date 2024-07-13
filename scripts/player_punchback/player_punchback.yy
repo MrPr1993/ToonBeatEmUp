@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"player_punchback",
   "isCompatibility":false,
   "isDnD":false,

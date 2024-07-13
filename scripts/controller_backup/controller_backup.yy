@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"controller_backup",
   "isCompatibility":false,
   "isDnD":false,

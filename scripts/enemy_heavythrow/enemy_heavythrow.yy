@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"enemy_heavythrow",
   "isCompatibility":false,
   "isDnD":false,

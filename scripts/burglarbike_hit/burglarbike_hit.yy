@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"burglarbike_hit",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"hitreaction_armor",
   "isCompatibility":false,
   "isDnD":false,

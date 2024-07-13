@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"character_release_selfatk",
   "isCompatibility":false,
   "isDnD":false,

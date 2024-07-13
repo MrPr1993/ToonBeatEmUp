@@ -299,7 +299,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"ToonBeatEmUp",
   "resources":[
@@ -2170,9 +2170,11 @@
     {"id":{"name":"spr_dastardly_attack2","path":"sprites/spr_dastardly_attack2/spr_dastardly_attack2.yy",},},
     {"id":{"name":"spr_dastardly_attack3","path":"sprites/spr_dastardly_attack3/spr_dastardly_attack3.yy",},},
     {"id":{"name":"spr_dastardly_attack4","path":"sprites/spr_dastardly_attack4/spr_dastardly_attack4.yy",},},
+    {"id":{"name":"spr_dastardly_attack4b","path":"sprites/spr_dastardly_attack4b/spr_dastardly_attack4b.yy",},},
     {"id":{"name":"spr_dastardly_attack5","path":"sprites/spr_dastardly_attack5/spr_dastardly_attack5.yy",},},
     {"id":{"name":"spr_dastardly_attack6","path":"sprites/spr_dastardly_attack6/spr_dastardly_attack6.yy",},},
     {"id":{"name":"spr_dastardly_attack7","path":"sprites/spr_dastardly_attack7/spr_dastardly_attack7.yy",},},
+    {"id":{"name":"spr_dastardly_attack7p","path":"sprites/spr_dastardly_attack7p/spr_dastardly_attack7p.yy",},},
     {"id":{"name":"spr_dastardly_attack8","path":"sprites/spr_dastardly_attack8/spr_dastardly_attack8.yy",},},
     {"id":{"name":"spr_dastardly_burned","path":"sprites/spr_dastardly_burned/spr_dastardly_burned.yy",},},
     {"id":{"name":"spr_dastardly_die","path":"sprites/spr_dastardly_die/spr_dastardly_die.yy",},},

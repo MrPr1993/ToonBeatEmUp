@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"hud_show",
   "isCompatibility":false,
   "isDnD":false,

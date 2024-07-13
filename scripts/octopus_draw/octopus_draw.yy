@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"octopus_draw",
   "isCompatibility":false,
   "isDnD":false,

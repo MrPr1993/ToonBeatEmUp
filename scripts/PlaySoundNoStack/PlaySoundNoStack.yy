@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"PlaySoundNoStack",
   "isCompatibility":false,
   "isDnD":false,

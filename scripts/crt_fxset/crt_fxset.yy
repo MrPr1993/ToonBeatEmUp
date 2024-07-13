@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"crt_fxset",
   "isCompatibility":false,
   "isDnD":false,

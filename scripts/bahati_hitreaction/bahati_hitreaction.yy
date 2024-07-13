@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"bahati_hitreaction",
   "isCompatibility":false,
   "isDnD":false,

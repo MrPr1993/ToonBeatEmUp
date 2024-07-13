@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"escapeKey",
   "isCompatibility":false,
   "isDnD":false,

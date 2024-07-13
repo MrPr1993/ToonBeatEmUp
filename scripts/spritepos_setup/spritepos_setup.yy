@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"spritepos_setup",
   "isCompatibility":false,
   "isDnD":false,

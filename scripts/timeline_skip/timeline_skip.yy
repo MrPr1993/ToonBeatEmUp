@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"timeline_skip",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"frame_set_soundtest",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"viva_hitreaction",
   "isCompatibility":false,
   "isDnD":false,

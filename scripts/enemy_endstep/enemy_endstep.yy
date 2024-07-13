@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"enemy_endstep",
   "isCompatibility":false,
   "isDnD":false,

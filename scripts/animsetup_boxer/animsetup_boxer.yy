@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"animsetup_boxer",
   "isCompatibility":false,
   "isDnD":false,

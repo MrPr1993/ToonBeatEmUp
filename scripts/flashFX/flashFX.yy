@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"flashFX",
   "isCompatibility":false,
   "isDnD":false,

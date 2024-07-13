@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"animsetup_hina_super",
   "isCompatibility":false,
   "isDnD":false,

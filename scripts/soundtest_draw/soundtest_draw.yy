@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"soundtest_draw",
   "isCompatibility":false,
   "isDnD":false,

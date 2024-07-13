@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"d3d_set_culling",
   "isCompatibility":true,
   "isDnD":false,

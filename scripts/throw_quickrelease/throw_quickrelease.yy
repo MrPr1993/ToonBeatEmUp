@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"throw_quickrelease",
   "isCompatibility":false,
   "isDnD":false,

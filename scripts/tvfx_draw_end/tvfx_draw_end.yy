@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"tvfx_draw_end",
   "isCompatibility":false,
   "isDnD":false,

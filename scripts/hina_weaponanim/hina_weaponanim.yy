@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"hina_weaponanim",
   "isCompatibility":false,
   "isDnD":false,

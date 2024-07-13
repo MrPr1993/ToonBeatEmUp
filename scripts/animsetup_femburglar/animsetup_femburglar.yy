@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"animsetup_femburglar",
   "isCompatibility":false,
   "isDnD":false,

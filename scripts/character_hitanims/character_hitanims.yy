@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"character_hitanims",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"zblock_col",
   "isCompatibility":false,
   "isDnD":false,

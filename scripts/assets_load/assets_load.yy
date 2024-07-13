@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"assets_load",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"afterimage_create",
   "isCompatibility":false,
   "isDnD":false,

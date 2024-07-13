@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"object_break",
   "isCompatibility":false,
   "isDnD":false,

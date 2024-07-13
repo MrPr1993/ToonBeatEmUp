@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"frozen_fx",
   "isCompatibility":false,
   "isDnD":false,

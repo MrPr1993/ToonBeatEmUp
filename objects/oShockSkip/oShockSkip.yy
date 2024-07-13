@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"oShockSkip",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"oElecFloor","path":"objects/oElecFloor/oElecFloor.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oElecFloor","path":"objects/oElecFloor/oElecFloor.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oShockSkip",

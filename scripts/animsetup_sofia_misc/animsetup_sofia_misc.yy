@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"animsetup_sofia_misc",
   "isCompatibility":false,
   "isDnD":false,

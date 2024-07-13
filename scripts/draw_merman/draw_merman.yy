@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_merman",
   "isCompatibility":false,
   "isDnD":false,

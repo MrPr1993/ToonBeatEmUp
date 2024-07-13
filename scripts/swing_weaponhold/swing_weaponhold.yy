@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"swing_weaponhold",
   "isCompatibility":false,
   "isDnD":false,

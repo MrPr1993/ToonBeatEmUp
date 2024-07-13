@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"spawnplayericon",
   "isCompatibility":false,
   "isDnD":false,

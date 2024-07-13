@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"throw_command",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"hpscan",
   "isCompatibility":false,
   "isDnD":false,

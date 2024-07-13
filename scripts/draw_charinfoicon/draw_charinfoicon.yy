@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_charinfoicon",
   "isCompatibility":false,
   "isDnD":false,
