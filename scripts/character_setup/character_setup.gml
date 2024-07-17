@@ -525,6 +525,7 @@ animatk=10;
 	wobbleX=1
     wobbleY=1
 	
+
 chardraw=draw_enemy;
 treasureno=0
 itemID=-1

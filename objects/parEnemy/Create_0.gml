@@ -40,12 +40,12 @@ grabFrame=0
 
 SpritePos=0
 SpritePosType=0
-floorPosX[30]=0 floorPosX[24]=128
-floorPosY[30]=0
-waistPosX[30]=0
-waistPosY[30]=0
-headPosX[30]=0
-headPosY[30]=0
+floorPosX[60]=0 floorPosX[24]=128
+floorPosY[60]=0
+waistPosX[60]=0
+waistPosY[60]=0
+headPosX[60]=0
+headPosY[60]=0
 
 character_setup()
 

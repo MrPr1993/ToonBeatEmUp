@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":155,
   "bbox_left":0,
-  "bbox_right":290,
+  "bbox_right":449,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -27,6 +27,7 @@
     {"$GMSpriteFrame":"","%Name":"cfb95a54-4375-4cc4-9433-5a1ed4fb104e","name":"cfb95a54-4375-4cc4-9433-5a1ed4fb104e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"ae759fa1-a4e3-4057-a4a1-94b1fba1308a","name":"ae759fa1-a4e3-4057-a4a1-94b1fba1308a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"48791376-bef3-4301-8f18-9e6a0441fcdc","name":"48791376-bef3-4301-8f18-9e6a0441fcdc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"7989271b-0578-452a-8d6f-654ba5f1fe5c","name":"7989271b-0578-452a-8d6f-654ba5f1fe5c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -63,7 +64,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":15.0,
+    "length":16.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -127,6 +128,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"48791376-bef3-4301-8f18-9e6a0441fcdc","path":"sprites/spr_dastardly_attack8/spr_dastardly_attack8.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"27b2310e-cc8b-4c38-a92e-30f7f71de50e","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7989271b-0578-452a-8d6f-654ba5f1fe5c","path":"sprites/spr_dastardly_attack8/spr_dastardly_attack8.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0f4f2fd5-8e81-4ea5-8b21-9cdfa248dd65","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -142,5 +146,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":291,
+  "width":450,
 }
