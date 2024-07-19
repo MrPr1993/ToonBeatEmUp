@@ -87,8 +87,8 @@
   ],
   "name":"cutscene8",
   "parent":{
-    "name":"Cutscene7",
-    "path":"folders/1c - Cutscenes/Cutscene7.yy",
+    "name":"Cutscene8Final",
+    "path":"folders/1c - Cutscenes/Cutscene8Final.yy",
   },
   "resourceType":"GMTimeline",
   "resourceVersion":"2.0",

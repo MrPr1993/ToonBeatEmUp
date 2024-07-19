@@ -2,7 +2,10 @@
 if stageclearMusic=1
 {
 audio_stop_sound(global.CurrentMusic)
+if stageclearfakeout!=2
 musicplayonce(msc_stageclear)
+if stageclearfakeout=2
+musicplayonce(msc_finalbossclear)
 }
 
 
@@ -17,6 +20,8 @@ betatest=0
 with oPlayer
 if ContinueMode=0
 {
+if oControl.stageclearfakeout!=1
+{
 if playerNO=1	
 global.P1Char=character
 if playerNO=2
@@ -25,9 +30,13 @@ if playerNO=3
 global.P3Char=character
 if playerNO=4
 global.P4Char=character
+}
 canmove=0  key_charge=0
 key_left=0 key_right=0 key_up=0 key_down=0
-}with oPlayer if stagePose!=0 {anim=210 AnimFrame=0}
+}
+
+
+with oPlayer if stagePose!=0 {anim=210 AnimFrame=0}
 
 alarm[6]=80
 

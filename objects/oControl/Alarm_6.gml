@@ -1,4 +1,6 @@
 /// @description Show StageClear
+if stageclearfakeout!=1
+{
 if isPaused=0
 {
 stageScore=1
@@ -54,4 +56,5 @@ arcade_save(stageNext)
 }
 
 
+}
 }

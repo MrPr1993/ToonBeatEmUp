@@ -50,6 +50,8 @@ noIcon=0
 
 continueMusic=-1
 
+stageclearfakeout=0
+
 global.StageClear=0
 global.MusicFade=0
 

@@ -5,6 +5,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":24,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oDastardly2",
@@ -39,8 +40,8 @@
     "path":"sprites/spr_dastardly2_stand/spr_dastardly2_stand.yy",
   },
   "spriteMaskId":{
-    "name":"mask_small",
-    "path":"sprites/mask_small/mask_small.yy",
+    "name":"spr_shadow2",
+    "path":"sprites/spr_shadow2/spr_shadow2.yy",
   },
   "visible":true,
 }

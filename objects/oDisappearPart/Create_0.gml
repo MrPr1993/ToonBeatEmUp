@@ -22,6 +22,8 @@ spdZ=choose(-8,-6,-4,-2)
 
 angleSpin=90
 
+BounceSound=-1;
+
 
 current_pal=2;
 my_pal_sprite=spr_enemypal

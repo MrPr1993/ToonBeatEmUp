@@ -14,3 +14,9 @@ layer_background_visible(bgfog1,0)
 
 
 oPlayer.x-=64
+
+timeline_skip(185)
+__view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + 11320)
+spawner_followset("WaveSet1",11320,11320,1)
+oControl.camX=11320
+oPlayer.x=oControl.camX+32

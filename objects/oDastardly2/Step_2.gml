@@ -13,17 +13,23 @@ overwriteAttack5=1
 
 
 if anim=100
-{if AnimFrame=0 {AnimFrame=0.1 specialtimes[0]=-200}
+{if AnimFrame=0 {AnimFrame=0.1 specialtimes[1]=-200 specialtimes[0]=-200
+	PlaySound(snd_fdas6)
+	}
 sprite_index=spr_dastardly2_intro	
+
+specialtimes[1]=lerp(specialtimes[1],-90,0.05)
 
 spdZ=0
 
 z=specialtimes[0]
 
-if z<0 specialtimes[0]+=0.45 else if AnimFrame=0.1 AnimFrame=1
+if z<0 specialtimes[0]+=0.45 else if AnimFrame=0.1 {AnimFrame=1}
 
-frame_set(1,0,0.1)
-frame_set(2,1,0.05)
+if z=-100 {PlaySound(snd_fdas7)}
+
+frame_set(1,0,0.1) 
+frame_set(2,1,0.05) if AnimFrame=2 PlaySound(snd_fdas5)
 frame_set(3,2,0.25)
 frame_set(4,3,0.05)
 frame_set(5,4,0.1)
@@ -43,6 +49,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)<120
 
 if anim=11 ///Kick
 {sprite_index=spr_dastardly2_attack1
+	if AnimFrame=0 {PlaySound(choose(snd_fdas3,snd_fdas4))}
 atkcol_set(38,0,0,2.55,1,140)
 	MoveType=1 damage=0.2
 frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,1,2) atk=1 else atk=0
@@ -56,6 +63,8 @@ if AnimFrame>4.5 canmove=1
 ///Charge claw
 if anim=12
 {sprite_index=spr_dastardly2_attack2 MoveType=1 damage=0.3 isCut=1
+	if AnimFrame=0 {PlaySound(choose(snd_fdas3,snd_fdas4))}
+	
 	atkcol_set(56,0,0,2.75,1,112)
 	if AnimFrame=0 {specialtimes[0]=10 specialtimes[1]=0}
 frame_set(0,0,0.25)
@@ -70,6 +79,8 @@ if AnimFrame>5.5 canmove=1
 
 if anim=13 ///Bat fire
 {sprite_index=spr_dastardly2_attack3 MoveType=1 damage=0.2
+	if AnimFrame=0 {PlaySound(choose(snd_fdas16,snd_fdas17))}
+	
 	//atkcol_set(30,0,0,1.75,1,112)
 	
 	var bulcheck=0;
@@ -98,6 +109,8 @@ projectile.vspeed=lengthdir_y(4,dirh)
 
 if anim=14 ///Launch
 {sprite_index=spr_dastardly2_attack4
+	if AnimFrame=0 {PlaySound(choose(snd_fdas18,snd_fdas9))}	
+
 	atkcol_set(30,0,0,1.75,1,112)
 if AnimFrame=0 {specialtimes[0]=0} spdZ=0
 z=specialtimes[0] 
@@ -117,6 +130,7 @@ if AnimFrame>6.5 {canmove=1 ground=0 anim=0}
 
 if anim=65 //Grab
 {sprite_index=spr_dastardly2_attack5 sentflying=5*image_xscale
+	if AnimFrame=0 {PlaySound(snd_fdas5)}
 frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) atk=1 else {atk=0 sentflying=0}
 frame_set(1,1,0.25)
 frame_set(2,2,0.025)
@@ -126,6 +140,7 @@ if AnimFrame>3.5 canmove=1
 
 if anim=6666 ///Grab Enemy
 {canBounce=0 sentflying=0
+	if AnimFrame=0 {PlaySound(snd_fdas10)}
 isThrow=1 hud_show()
 throwing=1
 selfatk.image_xscale=0

@@ -78,11 +78,11 @@ frame_set(4,4,0.5)
 frame_set(5,5,0.5) if AnimFrame=6
 {
 sentflying=8*image_xscale
-} if AnimFrame=clamp(AnimFrame,2,6) z-=64
+} if AnimFrame=clamp(AnimFrame,2,6) z-=16
 frame_set(6,6,0.25)
 frame_set(7,7,0.25)
 frame_set(8,8,0.25) if AnimFrame=9 AnimFrame=7
-if AnimFrame>=6 if ground {if AnimFrame<=9.5 {atk=0 z=0 sentflying=0 AnimFrame=10}} else {z+=8 atk=1}
+if AnimFrame>=6 if ground {if AnimFrame<=9.5 {atk=0 z=0 sentflying=0 AnimFrame=10}} else {z+=16 atk=1}
 frame_set(10,9,0.25)
 frame_set(11,10,0.25)
 
@@ -252,13 +252,14 @@ if AnimFrame=5 {PlaySound(snd_dastardly7)}///Laugh
 if AnimFrame<5 {
 	
 if AnimFrame<=2.5 image_index=0 else {if sprite_index!=spr_dastardly_attack4 image_index=2 sprite_index=spr_dastardly_attack4 }
-if sprite_index=spr_dastardly_attack4 {image_index+=0.25 if image_index=4 image_index=2}	
+if sprite_index=spr_dastardly_attack4 {image_index+=0.25 if image_index>=4 image_index=2}	
 		
 	} else 
-{sprite_index=spr_dastardly_laugh if AnimFrame<10 image_index+=0.25}
-if AnimFrame>12 {canmove=0 AnimFrame=0
+{sprite_index=spr_dastardly_laugh if AnimFrame<7.5 image_index+=0.25}
+if AnimFrame>8 {canmove=1 AnimFrame=0 anim=0
 	alarm[0]=2
 	}
+if AnimFrame<=0.05 {sprite_index=spr_dastardly_attack5 image_index=12}
 }
 
 }
@@ -270,7 +271,7 @@ if specialanim=0
 {
 AnimFrame+=0.1 if AnimFrame>8 {AnimFrame=0 specialanim=1
 	
-	{specialtimes[6]=0 image_index=0
+	{specialtimes[6]=0 image_index=0 audio_stop_all()
 	sprite_index=spr_dastardly_explode PlaySound(snd_explosion) oControl.quakeFXTime=10
 	flashFX(x,y+1,0,spr_explosion,0,0.1,10,1,1,c_white,1) zSpeed=-2 ground=0 z=-2
 	
@@ -324,11 +325,11 @@ if AnimFrame>6.8
 bigboom=instance_create_depth(0,0,-1,oCameoChar) with bigboom
 {anim=9999
 	
-	y=6000
+	y=6500
 image_alpha=1.5
 specialdraw=function()
 {
-if image_alpha>0 image_alpha-=0.01 else instance_destroy()
+if image_alpha>0 image_alpha-=0.025 else instance_destroy()
 
 draw_set_alpha(image_alpha) draw_set_color(c_white)
 draw_rectangle(__view_get( e__VW.XView, 0)-4,-666,__view_get( e__VW.XView, 0)+444,777,false)
