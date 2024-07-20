@@ -1,6 +1,8 @@
 item_endstep()
 
-if ground vspeed=0
+if ground {vspeed=0 spdY=0}
+
+if place_free(x,y+spdY) y+=spdY
 
 if carry=1
 if trigger=0

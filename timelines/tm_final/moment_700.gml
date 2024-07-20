@@ -7,7 +7,9 @@ musicplaystart(msc_finalboss2)
 
 
 }
-with oPlayer {canControl=1 canmove=1 areaEntry=0}
+with oPlayer {
+	specialanimscript=-1;
+	canControl=1 canmove=1 areaEntry=0}
 
 oControl.bossID=boss
 }

@@ -174,11 +174,11 @@ var bombV=-4;
 repeat(3)
 {
 bomb=instance_create_depth(x+16*image_xscale,y,-1,oBomb) with bomb
-{canHarm=1 harmEnemy=0 trigger=1 triggerTime=10 mask_index=mask_none} 
+{canHarm=1 harmEnemy=0 trigger=1 triggerTime=1 mask_index=mask_none} 
 if bombV!=-4 bomb.BoomSnd=-1
 bomb.spdX=6*image_xscale 
 if bombV!=0 bomb.spdX=5*image_xscale 
-bomb.ground=0 bomb.spdZ=-6 bomb.trigger=1 bomb.vspeed=bombV;
+bomb.ground=0 bomb.spdZ=-6 bomb.trigger=1 bomb.spdY=bombV/4;
 bombV+=4;
 }
 }
@@ -309,7 +309,7 @@ AnimFrame+=0.1 if AnimFrame>8 {AnimFrame=0 specialanim=1
 }
 
 if specialanim=1
-{
+{hspeed=0 vspeed=0
 image_index=0
 if ground {AnimFrame=0 specialtimes[6]=0 specialanim=2}
 }

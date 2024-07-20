@@ -45,5 +45,51 @@ canmove=0
 	anim=5
 	thrownDMG=0
 
+specialanimscript=function()
+{
+if canmove
+{AnimFrame=0 canmove=0
+anim=9999
+image_index=0
+}
+
+if anim=9999
+{
+AnimFrame+=0.1
+if AnimFrame<1
+{image_index=0
+sprite_index=PointSpr
+}
+else
+{
+switch(character)
+{
+case 0: sprite_index=spr_viva_freact break;
+case 1: sprite_index=spr_hina_freact break;
+case 2: sprite_index=spr_bahati_freact break;
+case 3: sprite_index=spr_sofia_freact break;
+}
+if image_index<=1.5 image_index+=0.25
+}
+
+if instance_exists(oDastardly2)
+if oDastardly2.AnimFrame>=4 {AnimFrame=0 anim=10000}
+}
+
+if anim=10000 ///Oh hecc
+{
+switch(character)
+{
+case 0: sprite_index=spr_viva_freact break;
+case 1: sprite_index=spr_hina_freact break;
+case 2: sprite_index=spr_bahati_freact break;
+case 3: sprite_index=spr_sofia_freact break;
+}
+
+
+}
+
+}
+
 }
 }

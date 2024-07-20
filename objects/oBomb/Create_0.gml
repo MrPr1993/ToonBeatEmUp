@@ -36,3 +36,5 @@ harmEnemy=1
 
 BoomSnd=snd_explosion
 
+spdY=0
+

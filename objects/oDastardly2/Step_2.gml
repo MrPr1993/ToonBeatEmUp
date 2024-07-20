@@ -34,7 +34,7 @@ z=specialtimes[0]
 if specialtimes[3]=0 if z>-100 {specialtimes[3]=1 PlaySound(snd_fdas7)}
 
 if z<0 specialtimes[0]+=0.9 else if AnimFrame=0.1 {AnimFrame=1}
-specialtimes[2]=specialtimes[0]
+specialtimes[2]+=0.25
 
 frame_set(1,0,0.05) 
 frame_set(2,0,0.05) 
@@ -139,7 +139,7 @@ with selfball
 {HitSound=snd_shocked
 shadow=spr_mediumshadow mask_index=spr_mediumshadow height=128 sprite_index=spr_dastardly2_ball image_speed=0.25
 selfscript=function()
-{
+{depth=-y
 if anim=0
 {z=lerp(z,oDastardly2.z-128,0.1) atk=0
 	if oDastardly2.anim=14
@@ -365,10 +365,13 @@ targetID=-1
 
 if anim=650 ///Spin
 {sprite_index=spr_dastardly2_attack6 canbeGrabbed=0
+if AnimFrame=0 {PlaySound(choose(snd_fdas3,snd_fdas4))}
+
+
 	atkcol_set(-1,0,0,1.75,1,112) MoveType=1 isCut=1
 if AnimFrame=0 {specialtimes[0]=0 specialtimes[1]=0}	
 specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
-frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) {atk=1 recovery=2 recoveryThrow=2
+frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) {oControl.quakeFXTime=2 atk=1 recovery=2 recoveryThrow=2
 	if x>targetEnemy.x sentflying=lerp(sentflying,-16,0.1) else sentflying=lerp(sentflying,16,0.1)
 	
 	if y>targetEnemy.y specialtimes[1]=lerp(specialtimes[1],-2,0.1) else specialtimes[1]=lerp(specialtimes[1],2,0.1)	
@@ -379,6 +382,7 @@ frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) {atk=1 recovery=2 recovery
 
 	
 	} else {atk=0 sentflying=0}
+	if AnimFrame=1 PlaySound(snd_wind)
 frame_set(1,1,0.25)
 frame_set(2,2+specialtimes[0],0.01)
 

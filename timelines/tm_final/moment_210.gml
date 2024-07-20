@@ -16,10 +16,10 @@ if specialcheck[0]=0
 {
 if specialcheck[7]=0
 {
-specialcheck[1]=lerp(specialcheck[1],-45,0.1)
-specialcheck[2]=lerp(specialcheck[2],-50,0.1)
-specialcheck[3]=lerp(specialcheck[3],-50,0.1)
-specialcheck[4]=lerp(specialcheck[4],-45,0.1)
+specialcheck[1]=lerp(specialcheck[1],-45/3,0.1)
+specialcheck[2]=lerp(specialcheck[2],-50/3,0.1)
+specialcheck[3]=lerp(specialcheck[3],-50/3,0.1)
+specialcheck[4]=lerp(specialcheck[4],-45/3,0.1)
 }
 }
 if specialcheck[0]=1
