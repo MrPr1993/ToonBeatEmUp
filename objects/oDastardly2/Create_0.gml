@@ -19,6 +19,8 @@ rangeAtk=300
 
 OneAttack=2
 
+isHeavy=1
+
 hp=2
 maxhp=2
 

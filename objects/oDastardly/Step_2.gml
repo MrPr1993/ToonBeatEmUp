@@ -1,6 +1,8 @@
 enemy_endstep()
 throw_step()
 
+if hp=0 if !ground {x=clamp(x,oControl.camX+32,oControl.camX+320-32)}
+
 if hp<1
 {my_pal_sprite=spr_dastardlyskin
 current_pal=round(20-20*(hp/1))
@@ -82,7 +84,7 @@ sentflying=8*image_xscale
 frame_set(6,6,0.25)
 frame_set(7,7,0.25)
 frame_set(8,8,0.25) if AnimFrame=9 AnimFrame=7
-if AnimFrame>=6 if ground {if AnimFrame<=9.5 {atk=0 z=0 sentflying=0 AnimFrame=10}} else {z+=16 atk=1}
+if AnimFrame>=6 if ground {if AnimFrame<=9.5 {oControl.quakeFXTime=10 PlaySound(snd_hitgroundmetal) atk=0 z=0 sentflying=0 AnimFrame=10}} else {z+=16 atk=1}
 frame_set(10,9,0.25)
 frame_set(11,10,0.25)
 
@@ -166,7 +168,20 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
-frame_set(4,4,0.25)
+frame_set(4,4,0.25) if AnimFrame=5
+{
+var bombV=-4;
+repeat(3)
+{
+bomb=instance_create_depth(x+16*image_xscale,y,-1,oBomb) with bomb
+{canHarm=1 harmEnemy=0 trigger=1 triggerTime=10 mask_index=mask_none} 
+if bombV!=-4 bomb.BoomSnd=-1
+bomb.spdX=6*image_xscale 
+if bombV!=0 bomb.spdX=5*image_xscale 
+bomb.ground=0 bomb.spdZ=-6 bomb.trigger=1 bomb.vspeed=bombV;
+bombV+=4;
+}
+}
 frame_set(5,5,0.25)
 if AnimFrame=clamp(AnimFrame,5,5.99){atk=1
 } else { atk=0 }
@@ -233,25 +248,33 @@ if specialanim=0
 {image_xscale=1 shadowSpr=mask_none
 AnimFrame+=0.01
 
+if AnimFrame=2 image_index=1
+
 if AnimFrame=2 PlaySound(snd_dastardly5)
 
-if AnimFrame>4 {AnimFrame=0 specialanim+=1 ground=0 zSpeed=-4 z=-3}
+if AnimFrame>=2 {image_index+=0.25 if image_index=4 image_index=2}
+
+if AnimFrame>4 {PlaySound(snd_jump) AnimFrame=0 specialanim+=1 ground=0 zSpeed=-4 z=-3}
 }
 if specialanim=1 ///Hop
 {sprite_index=spr_dastardly_move AnimFrame+=0.1 shadowSpr=spr_midshadow
 
 y+=2 x+=3 if AnimFrame>0.5
-if ground {AnimFrame=0 specialanim+=1}
+if ground {oControl.quakeFXTime=10 PlaySound(snd_heavystep) sprite_index=spr_dastardly_attack5 image_index=12 AnimFrame=0 specialanim+=1}
 }
 if specialanim=2 ///part for powerup from the treasures
 {image_xscale=-1 
-sprite_index=spr_dastardly_stand
-AnimFrame+=0.01 if AnimFrame=1 PlaySound(snd_dastardly6)
+AnimFrame+=0.01 if AnimFrame=0.05 PlaySound(snd_dastardly6)
+
+
 
 if AnimFrame=5 {PlaySound(snd_dastardly7)}///Laugh
 if AnimFrame<5 {
 	
-if AnimFrame<=2.5 image_index=0 else {if sprite_index!=spr_dastardly_attack4 image_index=2 sprite_index=spr_dastardly_attack4 }
+if AnimFrame<=2.5 {
+	if sprite_index=spr_dastardly_intro1
+image_index+=0.25 else
+	image_index=0} else {if sprite_index!=spr_dastardly_attack4 {image_index=2 oControl.quakeFXTime=25 PlaySound(snd_shocked) PlaySound(snd_bigpowerup)} sprite_index=spr_dastardly_attack4 }
 if sprite_index=spr_dastardly_attack4 {image_index+=0.25 if image_index>=4 image_index=2}	
 		
 	} else 
@@ -260,9 +283,13 @@ if AnimFrame>8 {canmove=1 AnimFrame=0 anim=0
 	alarm[0]=2
 	}
 if AnimFrame<=0.05 {sprite_index=spr_dastardly_attack5 image_index=12}
+if AnimFrame=0.05 sprite_index=spr_dastardly_intro1
+
+
 }
 
 }
+
 
 ///The Big Reveal
 if anim=101
@@ -271,7 +298,7 @@ if specialanim=0
 {
 AnimFrame+=0.1 if AnimFrame>8 {AnimFrame=0 specialanim=1
 	
-	{specialtimes[6]=0 image_index=0 audio_stop_all()
+	{specialtimes[6]=0 image_index=0 audio_stop_all() sentflying=0 hspeed=0 vspeed=0
 	sprite_index=spr_dastardly_explode PlaySound(snd_explosion) oControl.quakeFXTime=10
 	flashFX(x,y+1,0,spr_explosion,0,0.1,10,1,1,c_white,1) zSpeed=-2 ground=0 z=-2
 	

@@ -4,7 +4,10 @@ if instance_exists(oDastardly)
 timeline_position-=1;
 }
 else
-{with treasureboss {specialcheck[0]=1 specialcheck[9]=-1480}
+{
+oControl.pauseBuffer=2
+	
+with treasureboss {specialcheck[0]=1 specialcheck[9]=-1480}
 scenepart=instance_create_depth(0,0,-1,oCameoChar) with scenepart
 {isDepth=0 depth=-6000 anim=9999 y=140 x=160
 
@@ -86,8 +89,6 @@ layer_set_visible("TileV3",0)
 layer_set_visible("TileV4",0)
 layer_set_visible("FinalPhase",1)	
 
-skybg2=layer_background_get_id(layer_get_id("BGclouds"));
-layer_background_sprite(skybg2,bg_sky6c)
 
 skybg=layer_background_get_id(layer_get_id("BG"));
 layer_background_sprite(skybg,bg_sky6b)

@@ -12,8 +12,8 @@
   "duration":0.362812,
   "name":"snd_swing5",
   "parent":{
-    "name":"Items",
-    "path":"folders/f - Sounds/Items.yy",
+    "name":"Objects",
+    "path":"folders/f - Sounds/Objects.yy",
   },
   "preload":true,
   "resourceType":"GMSound",

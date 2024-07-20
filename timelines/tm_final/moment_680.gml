@@ -6,6 +6,27 @@ timeline_position-=1;
 }
 else
 {
+tt=instance_create_depth(oControl.camX-8,0,-1,oTrainFXSpot) with tt
+{specialtimes[1]=1
+visible=0 image_xscale=999
+image_yscale=999
+specialscript=function()
+{
+layer_y("FinalPhase",round(Train1Y))
+
+if specialtimes[1]=1
+specialtimes[0]+=0.25 else specialtimes[0]-=0.25
+
+
+if specialtimes[1]=1 if specialtimes[0]>=8 specialtimes[1]=-1
+if specialtimes[1]=-1 if specialtimes[0]<=-8 specialtimes[1]=1
+
+Train1Y=lerp(Train1Y,specialtimes[0],0.05)
+
+Train1Y=clamp(Train1Y,-8,8)
+}
+
+}
 
 with oPlayer
 {canControl=0

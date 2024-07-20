@@ -4,6 +4,10 @@
 enemy_endstep()
 throw_step()
 
+if hp=0 {if !ground {x=clamp(x,oControl.camX+32,oControl.camX+320-32)}}
+
+
+
 overwriteAttack=1
 overwriteAttack1=1
 overwriteAttack2=1
@@ -14,6 +18,9 @@ overwriteAttack5=1
 
 if anim=100
 {if AnimFrame=0 {AnimFrame=0.1 specialtimes[1]=-200 specialtimes[0]=-200
+	
+	specialtimes[2]=180 specialtimes[3]=0
+	
 	PlaySound(snd_fdas6)
 	}
 sprite_index=spr_dastardly2_intro	
@@ -24,16 +31,23 @@ spdZ=0
 
 z=specialtimes[0]
 
-if z<0 specialtimes[0]+=0.45 else if AnimFrame=0.1 {AnimFrame=1}
+if specialtimes[3]=0 if z>-100 {specialtimes[3]=1 PlaySound(snd_fdas7)}
 
-if z=-100 {PlaySound(snd_fdas7)}
+if z<0 specialtimes[0]+=0.9 else if AnimFrame=0.1 {AnimFrame=1}
+specialtimes[2]=specialtimes[0]
 
-frame_set(1,0,0.1) 
-frame_set(2,1,0.05) if AnimFrame=2 PlaySound(snd_fdas5)
-frame_set(3,2,0.25)
-frame_set(4,3,0.05)
-frame_set(5,4,0.1)
-if AnimFrame>5.5 canmove=1
+frame_set(1,0,0.05) 
+frame_set(2,0,0.05) 
+frame_set(3,1,0.25) if AnimFrame=4 PlaySound(snd_fdas5)
+frame_set(4,2,0.25) 
+frame_set(5,3,0.25)
+frame_set(6,4,0.25)
+frame_set(7,5,0.25)
+frame_set(8,6,0.25)
+frame_set(9,6,0.02)
+frame_set(10,6,0.02)
+frame_set(11,6,0.02)
+if AnimFrame>11.5 canmove=1
 }
 
 if anim=10
@@ -62,24 +76,25 @@ if AnimFrame>4.5 canmove=1
 
 ///Charge claw
 if anim=12
-{sprite_index=spr_dastardly2_attack2 MoveType=1 damage=0.3 isCut=1
+{sprite_index=spr_dastardly2_attack2 MoveType=1 damage=0.3 selfatk.isCut=1
+	selfatk.HitSound=snd_cut selfatk.HitSpark=spr_blood
 	if AnimFrame=0 {PlaySound(choose(snd_fdas3,snd_fdas4))}
 	
 	atkcol_set(56,0,0,2.75,1,112)
 	if AnimFrame=0 {specialtimes[0]=10 specialtimes[1]=0}
-frame_set(0,0,0.25)
+frame_set(0,0,0.25) if AnimFrame=1 {PlaySound(snd_swing5)}
 frame_set(1,1,0.25) if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
 if AnimFrame=clamp(AnimFrame,2,5) sentflying=2*image_xscale else sentflying=0
 frame_set(2,2+2*specialtimes[1],0.5)
 frame_set(3,3+2*specialtimes[1],0.5)
-frame_set(4,3+2*specialtimes[1],0.25) if AnimFrame=5 {if specialtimes[0]!=0 {AnimFrame=1 specialtimes[0]-=1 specialtimes[1]^=1;}}
+frame_set(4,3+2*specialtimes[1],0.25) if AnimFrame=5 {if specialtimes[0]!=0 {PlaySound(snd_swing5) AnimFrame=1 specialtimes[0]-=1 specialtimes[1]^=1;}}
 frame_set(5,0,0.25)
 if AnimFrame>5.5 canmove=1
 }
 
 if anim=13 ///Bat fire
 {sprite_index=spr_dastardly2_attack3 MoveType=1 damage=0.2
-	if AnimFrame=0 {PlaySound(choose(snd_fdas16,snd_fdas17))}
+	if AnimFrame=0 {specialtimes[0]=3 PlaySound(choose(snd_fdas16,snd_fdas17,snd_fdas19))}
 	
 	//atkcol_set(30,0,0,1.75,1,112)
 	
@@ -102,7 +117,7 @@ if AnimFrame>6.5 canmove=1
 
 if bulcheck {
 var dirh=point_direction(x,y,targetEnemy.x,targetEnemy.y)
-projectile_create(x+8*image_xscale,1,z-50,8,spr_bullet,lengthdir_x(4,dirh),mask_small,spr_explosion2,0.2,1,1,-1,-1)
+projectile_create(x+8*image_xscale,y+1,z-50,8,spr_dastardly2_bat,lengthdir_x(4,dirh),mask_small,spr_explosion2,0.2,1,1,-1,-1)
 projectile.vspeed=lengthdir_y(4,dirh)
 }
 }
@@ -115,9 +130,49 @@ if anim=14 ///Launch
 if AnimFrame=0 {specialtimes[0]=0} spdZ=0
 z=specialtimes[0] 
 if AnimFrame<1
-specialtimes[0]-=4
+specialtimes[0]-=2
 frame_set(0,0,0.05) if AnimFrame=clamp(AnimFrame,1,2) atk=1 else atk=0
-frame_set(1,1,0.1)
+frame_set(1,1,0.1) if AnimFrame=2
+{PlaySound(snd_shocked)
+selfball=instance_create_depth(x,y+1,-1,oBossHazard) selfball.image_xscale=image_xscale selfball.z=z-240
+with selfball
+{HitSound=snd_shocked
+shadow=spr_mediumshadow mask_index=spr_mediumshadow height=128 sprite_index=spr_dastardly2_ball image_speed=0.25
+selfscript=function()
+{
+if anim=0
+{z=lerp(z,oDastardly2.z-128,0.1) atk=0
+	if oDastardly2.anim=14
+	{
+if oDastardly2.AnimFrame>=3 {damage=0.25 MoveType=3 atk=1 hspeed=2*image_xscale anim=1}
+	} else {anim=2}
+	
+}
+if anim=1
+{
+z+=4 if z>=0 {oControl.quakeFXTime=10 PlaySound(snd_hitground)
+dust_make(x,y,z,-1,0,0)
+dust_make(x,y,z,1,0,0)
+dust_make(x,y,z,0,-1,0)
+dust_make(x,y,z,0,1,0)
+dust_make(x,y,z,-1,-1,0)
+dust_make(x,y,z,1,1,0)
+dust_make(x,y,z,-1,1,0)
+dust_make(x,y,z,1,-1,0)
+anim=2
+	}
+}
+if anim=2
+{
+z-=3
+if x!=clamp(x,oControl.camX-138,oControl.camX+320+138) or z<=-240 instance_destroy()
+}
+
+}
+}
+
+}
+if AnimFrame=2 PlaySound(snd_shocked2)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
 frame_set(4,4,0.25)
@@ -313,8 +368,8 @@ if anim=650 ///Spin
 	atkcol_set(-1,0,0,1.75,1,112) MoveType=1 isCut=1
 if AnimFrame=0 {specialtimes[0]=0 specialtimes[1]=0}	
 specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
-frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) {atk=1
-	if x>targetEnemy.x sentflying=lerp(sentflying,-6,0.1) else sentflying=lerp(sentflying,6,0.1)
+frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) {atk=1 recovery=2 recoveryThrow=2
+	if x>targetEnemy.x sentflying=lerp(sentflying,-16,0.1) else sentflying=lerp(sentflying,16,0.1)
 	
 	if y>targetEnemy.y specialtimes[1]=lerp(specialtimes[1],-2,0.1) else specialtimes[1]=lerp(specialtimes[1],2,0.1)	
 	

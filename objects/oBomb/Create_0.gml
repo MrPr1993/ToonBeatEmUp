@@ -30,3 +30,9 @@ throwGravity=1
 
 canHit=0
 
+canHarm=1
+
+harmEnemy=1
+
+BoomSnd=snd_explosion
+

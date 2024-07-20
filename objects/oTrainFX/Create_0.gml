@@ -4,3 +4,8 @@ Train1Y=0
 Train1Time=20
 
 
+style=0
+
+specialanim[9]=0
+
+specialscript=-1;
