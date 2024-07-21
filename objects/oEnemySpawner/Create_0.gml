@@ -35,6 +35,9 @@ GoBackY=0
 
 SpawnerScaler=0
 
+skipview=0
+skipviewX=0
+skipviewY=0
 
 canFollow=1
 canFollowY=1

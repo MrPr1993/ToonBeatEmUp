@@ -42,13 +42,13 @@ if AnimFrame>6.5 {atk=0 canmove=1}
 }
 
 if anim=12 ///Slam Attack
-{sprite_index=spr_plantprincess_attack2
+{sprite_index=spr_plantprincess_attack2 MoveType=4 damage=0.2
 frame_set(0,0,0.1)
-frame_set(1,1,0.25)
+frame_set(1,1,0.25) if AnimFrame=2 {zSpeed=-4 ground=0}
 frame_set(2,2,0.25)
-frame_set(3,3,0.25) if AnimFrame=clamp(AnimFrame,1,5.99) sentflying=4*image_xscale else sentflying=0
+frame_set(3,3,0.25) if AnimFrame=clamp(AnimFrame,2,5.99) sentflying=4*image_xscale else sentflying=0
 frame_set(4,4,0.25)
-frame_set(5,5,0.25)
+frame_set(5,5,0.25) if AnimFrame=6 {oControl.quakeFXTime=10 PlaySound(snd_hitgroundheavy)}
 frame_set(6,6,0.5) 
 if AnimFrame=clamp(AnimFrame,6,6.99) atk=1 else atk=0
 frame_set(7,7,0.05)
@@ -58,14 +58,14 @@ frame_set(10,1,0.25)
 if AnimFrame>10.7 canmove=1
 }
 
-if anim=13 ///Slam Attack
+if anim=13 ///Plant Vines
 {sprite_index=spr_plantprincess_attack3
-frame_set(0,0,0.1)
-frame_set(1,1,0.1)
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
 frame_set(2,2,0.05)
 frame_set(3,3,0.25) if AnimFrame=4
 {
-bone=instance_create_depth(targetEnemy.x,targetEnemy.y,-1,oBossHazard) bone.image_xscale=image_xscale bone.hspeed=3*image_xscale
+bone=instance_create_depth(targetEnemy.x,y,-1,oBossHazard) bone.image_xscale=image_xscale
 bone.hitSource=self.id with bone
 {
 selfscript = function()
@@ -95,11 +95,16 @@ frame_set(7,1,0.5)
 if AnimFrame>7.7 canmove=1
 }
 
-if anim=14 ///Slam Attack
-{sprite_index=spr_plantprincess_attack4
+if anim=14 ///Spawn shrooms
+{
+sprite_index=spr_plantprincess_attack4
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
-frame_set(2,2,0.05)
+frame_set(2,2,0.05) if AnimFrame=3
+{
+bone=instance_create_depth(x+96,y+48,-1,oBossHazard) bone.image_xscale=1
+
+}
 frame_set(3,3,0.25) 
 frame_set(4,4,0.1)
 frame_set(5,5,0.05)

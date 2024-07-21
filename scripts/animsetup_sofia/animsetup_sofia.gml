@@ -569,7 +569,7 @@ selfatk.height=128
 	flashX=6
 	flashY=2
 	flashZ=48 damage=0.12
-
+MoveType=0
 
 
 	atkcol_set(-3,0,-4,1.75,1,64)

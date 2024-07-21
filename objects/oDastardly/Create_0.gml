@@ -13,8 +13,8 @@ rangeAtk=300
 
 OneAttack=2
 
-hp=2
-maxhp=2
+hp=3
+maxhp=3
 
 height=110
 

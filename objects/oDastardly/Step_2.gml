@@ -51,13 +51,13 @@ if anim=12 ///Air Kick
 {atkcol_set(53,0,12,3.35,1,173)
 
 if AnimFrame=0 {specialtimes[0]=0 PlaySound(choose(snd_dastardly20,snd_dastardly22))}
-damage=0.2 MoveType=1
+damage=0.2 MoveType=5
 sprite_index=spr_dastardly_attack2
 sentflying=lerp(sentflying,0,0.1)
 frame_set(0,specialtimes[0],0.1)
 frame_set(1,specialtimes[0],0.1) 
 frame_set(2,specialtimes[0],0.2) if AnimFrame=3
-{ground=0 z-=4 spdZ=-8 sentflying=-3*image_xscale specialtimes[0]=0 image_index=3
+{oControl.quakeFXTime=10 PlaySound(snd_flameshort) ground=0 z-=4 spdZ=-8 sentflying=-3*image_xscale specialtimes[0]=0 image_index=3
 } if specialtimes[0]<6 specialtimes[0]+=0.2
 if image_index=clamp(image_index,3,3.99) {atk=1 z-=16} else atk=0
 frame_set(3,specialtimes[0],0.25)
@@ -68,7 +68,7 @@ frame_set(5,9,0.25)
 if anim=13 ///Air Kick Drop
 {sprite_index=spr_dastardly_attack3
 if AnimFrame=0  {PlaySound(choose(snd_dastardly20,snd_dastardly22))}
-damage=0.2 
+damage=0.2 MoveType=4
 atkcol_set(3,0,6,2.55,1,144)
 
 frame_set(0,0,0.25)
@@ -160,7 +160,7 @@ if anim=650 ///Cape Swing
 if AnimFrame=0  PlaySound(choose(snd_dastardly20,snd_dastardly22))
 atkcol_set(54,0,4,3.25,1,139)
 //if AnimFrame=0  PlaySound(snd_twoheads3)
-MoveType=1 damage=0.2
+MoveType=1 damage=0.1
 sprite_index=spr_dastardly_attack6
 image_index=AnimFrame
 atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=3.5*image_xscale selfatk.image_yscale=1
@@ -174,7 +174,7 @@ var bombV=-4;
 repeat(3)
 {
 bomb=instance_create_depth(x+16*image_xscale,y,-1,oBomb) with bomb
-{canHarm=1 harmEnemy=0 trigger=1 triggerTime=1 mask_index=mask_none} 
+{canHarm=1 canFlash=0 harmEnemy=0 trigger=1 triggerTime=27 mask_index=mask_none} 
 if bombV!=-4 bomb.BoomSnd=-1
 bomb.spdX=6*image_xscale 
 if bombV!=0 bomb.spdX=5*image_xscale 
@@ -205,7 +205,8 @@ frame_set(0,specialtimes[0],0.25)
 frame_set(1,specialtimes[0],0.25)
 frame_set(2,specialtimes[0],0.25)
 if AnimFrame=3	///Fire
-	{projectile_create(x+80*image_xscale,y,z-40,32,spr_dastardly_attack7p,4*image_xscale,mask_small,spr_hitflash,0.25,1,1,4,-4)
+	{projectile_create(x+80*image_xscale,y,z-40,32,spr_dastardly_attack7p,4*image_xscale,mask_small,spr_hitflash,0.25,5,5,4,-4)
+		projectile.speedFX=0.25
 oControl.quakeFX=10 PlaySound(snd_shocked) specialtimes[0]=0
 }
 frame_set(3,10+specialtimes[0],0.05)

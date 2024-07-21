@@ -89,6 +89,12 @@ layer_set_visible("TileV3",0)
 layer_set_visible("TileV4",0)
 layer_set_visible("FinalPhase",1)	
 
+if instance_exists(oPizza) with oPizza instance_destroy()
+with oPlayer
+{
+spawnID=-1
+weaponspawn=-1
+}
 
 skybg=layer_background_get_id(layer_get_id("BG"));
 layer_background_sprite(skybg,bg_sky6b)

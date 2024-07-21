@@ -95,12 +95,13 @@ if AnimFrame>5.5 canmove=1
 if anim=13 ///Bat fire
 {sprite_index=spr_dastardly2_attack3 MoveType=1 damage=0.2
 	if AnimFrame=0 {specialtimes[0]=3 PlaySound(choose(snd_fdas16,snd_fdas17,snd_fdas19))}
-	
+	if x=clamp(x,oControl.camX+12,oControl.camX+320-12) {}
+	else {x+=2*image_xscale}
 	//atkcol_set(30,0,0,1.75,1,112)
 	
 	var bulcheck=0;
 	
-if AnimFrame=0 {specialtimes[0]=3 specialtimes[1]=0}
+if AnimFrame=0 {specialtimes[0]=10 specialtimes[1]=0}
 	specialtimes[1]+=0.25 if specialtimes[1]=2 specialtimes[1]=0
 frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,1,2) atk=1 else atk=0
 frame_set(1,1,0.1)
@@ -117,7 +118,8 @@ if AnimFrame>6.5 canmove=1
 
 if bulcheck {
 var dirh=point_direction(x,y,targetEnemy.x,targetEnemy.y)
-projectile_create(x+8*image_xscale,y+1,z-50,8,spr_dastardly2_bat,lengthdir_x(4,dirh),mask_small,spr_explosion2,0.2,1,1,-1,-1)
+projectile_create(x+8*image_xscale,y+1,z-50,8,spr_dastardly2_bat,lengthdir_x(4,dirh),mask_small,spr_explosion2,0.25,5,5,4,-4)
+projectile.speedFX=0.25
 projectile.vspeed=lengthdir_y(4,dirh)
 }
 }
@@ -133,10 +135,10 @@ if AnimFrame<1
 specialtimes[0]-=2
 frame_set(0,0,0.05) if AnimFrame=clamp(AnimFrame,1,2) atk=1 else atk=0
 frame_set(1,1,0.1) if AnimFrame=2
-{PlaySound(snd_shocked)
+{PlaySound(snd_shocked) oControl.quakeFXTime=10
 selfball=instance_create_depth(x,y+1,-1,oBossHazard) selfball.image_xscale=image_xscale selfball.z=z-240
 with selfball
-{HitSound=snd_shocked
+{HitSound=snd_shocked damage=0.25
 shadow=spr_mediumshadow mask_index=spr_mediumshadow height=128 sprite_index=spr_dastardly2_ball image_speed=0.25
 selfscript=function()
 {depth=-y
@@ -144,13 +146,13 @@ if anim=0
 {z=lerp(z,oDastardly2.z-128,0.1) atk=0
 	if oDastardly2.anim=14
 	{
-if oDastardly2.AnimFrame>=3 {damage=0.25 MoveType=3 atk=1 hspeed=2*image_xscale anim=1}
+if oDastardly2.AnimFrame>=3 {damage=0.25 MoveType=3 atk=1 hspeed=4*image_xscale anim=1}
 	} else {anim=2}
 	
 }
 if anim=1
 {
-z+=4 if z>=0 {oControl.quakeFXTime=10 PlaySound(snd_hitground)
+z+=6 if z>=0 {oControl.quakeFXTime=10 PlaySound(snd_hitground)
 dust_make(x,y,z,-1,0,0)
 dust_make(x,y,z,1,0,0)
 dust_make(x,y,z,0,-1,0)
@@ -164,7 +166,7 @@ anim=2
 }
 if anim=2
 {
-z-=3
+z-=4
 if x!=clamp(x,oControl.camX-138,oControl.camX+320+138) or z<=-240 instance_destroy()
 }
 
@@ -364,11 +366,12 @@ targetID=-1
 
 
 if anim=650 ///Spin
-{sprite_index=spr_dastardly2_attack6 canbeGrabbed=0
+{sprite_index=spr_dastardly2_attack6 canbeGrabbed=0 damage=0.3
 if AnimFrame=0 {PlaySound(choose(snd_fdas3,snd_fdas4))}
 
 
-	atkcol_set(-1,0,0,1.75,1,112) MoveType=1 isCut=1
+	atkcol_set(-1,0,0,1.75,1,112) MoveType=1 selfatk.isCut=1
+		selfatk.HitSound=snd_cut selfatk.HitSpark=spr_blood
 if AnimFrame=0 {specialtimes[0]=0 specialtimes[1]=0}	
 specialtimes[0]+=0.25 if specialtimes[0]=2 specialtimes[0]=0
 frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) {oControl.quakeFXTime=2 atk=1 recovery=2 recoveryThrow=2

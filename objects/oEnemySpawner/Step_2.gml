@@ -66,3 +66,9 @@ if YView>0 YView-=2 else YView=0
 visible=oControl.betatest
 
 if specialscript!=-1 specialscript();
+
+if skipview!=0
+{skipview-=1
+MinX=skipviewX MaxX=skipviewX
+__view_set( e__VW.XView, 0, skipviewX )
+}

@@ -575,10 +575,17 @@ draw_text(160,240-24,string_hash_to_newline(bossID.name)) draw_set_font(-1)
 draw_set_color(c_white) draw_set_alpha(1) draw_rectangle(160-128-1,240-24+10-1,160+128+1,240-24+14+1,false)
 draw_set_color(c_red) draw_set_alpha(1) draw_rectangle(160-128,240-24+10,160-128+256,240-24+14,false)
 
-if bossID.maxhp<=1
-{draw_set_color(c_yellow) draw_set_alpha(1) draw_rectangle(160-128,240-24+10,160-128+(256)*bossID.hp,240-24+14,false)}
-if bossID.maxhp<=2
-{draw_set_color(c_yellow) draw_set_alpha(1) draw_rectangle(160-128,240-24+10,160-128+(128)*bossID.hp,240-24+14,false)}
+draw_set_color(c_yellow) draw_set_alpha(1) 
+if bossID.hp!=0
+draw_rectangle(160-128,240-24+10,160-128+((bossID.hp/bossID.maxhp)*256),240-24+14,false)
+
+
+
+//if bossID.maxhp<=1
+//{draw_set_color(c_yellow) draw_set_alpha(1) draw_rectangle(160-128,240-24+10,160-128+(256)*bossID.hp,240-24+14,false)}
+//if bossID.maxhp<=2
+//{draw_set_color(c_yellow) draw_set_alpha(1) draw_rectangle(160-128,240-24+10,160-128+(128)*bossID.hp,240-24+14,false)}
+
 }
 
 }
