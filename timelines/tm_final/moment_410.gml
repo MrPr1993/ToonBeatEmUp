@@ -9,7 +9,7 @@ musicplaystart(msc_finalboss1)
 timer_set(1)
 
 }
-with oPlayer {canControl=1 areaEntry=0}
+with oPlayer {specialanimscript=-1 canmove=1 anim=0 canControl=1 areaEntry=0}
 
 oControl.bossID=boss
 

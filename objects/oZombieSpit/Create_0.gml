@@ -20,6 +20,8 @@ image_speed=0.5
 
 ground=0
 
+dizzyHit=0
+
 
 rs=0
 reverseSpd=0

@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":24,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oPlantPrincess",
@@ -38,8 +39,8 @@
     "path":"sprites/spr_plantprincess_stand/spr_plantprincess_stand.yy",
   },
   "spriteMaskId":{
-    "name":"mask_small",
-    "path":"sprites/mask_small/mask_small.yy",
+    "name":"spr_midshadow2",
+    "path":"sprites/spr_midshadow2/spr_midshadow2.yy",
   },
   "visible":true,
 }

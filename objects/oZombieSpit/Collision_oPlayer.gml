@@ -41,7 +41,7 @@ areaEntry=1
 else {shaketime=30 AnimFrame=0 anim=201 event_user(11)}
 }
 
-recovery=10 dizzyHit=0  
+recovery=10 dizzyHit=other.dizzyHit  
 }
 instance_destroy()
 }

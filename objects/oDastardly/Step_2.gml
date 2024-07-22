@@ -57,12 +57,14 @@ sentflying=lerp(sentflying,0,0.1)
 frame_set(0,specialtimes[0],0.1)
 frame_set(1,specialtimes[0],0.1) 
 frame_set(2,specialtimes[0],0.2) if AnimFrame=3
-{oControl.quakeFXTime=10 PlaySound(snd_flameshort) ground=0 z-=4 spdZ=-8 sentflying=-3*image_xscale specialtimes[0]=0 image_index=3
+{ ground=0 z-=4 spdZ=-8 sentflying=-3*image_xscale specialtimes[0]=0 image_index=3
 } if specialtimes[0]<6 specialtimes[0]+=0.2
 if image_index=clamp(image_index,3,3.99) {atk=1 z-=16} else atk=0
 frame_set(3,specialtimes[0],0.25)
 frame_set(4,8,0.25) if AnimFrame>4 if ground canmove=1
 frame_set(5,9,0.25)
+
+if image_index=2 {oControl.quakeFXTime=10 PlaySound(snd_flameshort)}
 }
 
 if anim=13 ///Air Kick Drop
@@ -296,7 +298,7 @@ if AnimFrame=0.05 sprite_index=spr_dastardly_intro1
 if anim=101
 {
 if specialanim=0
-{
+{vspeed=0 sentflying=0
 AnimFrame+=0.1 if AnimFrame>8 {AnimFrame=0 specialanim=1
 	
 	{specialtimes[6]=0 image_index=0 audio_stop_all() sentflying=0 hspeed=0 vspeed=0
@@ -321,7 +323,7 @@ if AnimFrame=1 {
 	sprite_index=spr_dastardly_die hspeed=choose(-4,4) vspeed=choose(-1,1)}
 AnimFrame+=0.01
 if specialtimes[6]=0 {specialtimes[6]=10 
-repeat(4){dust_make(x+choose(-random(64),random(64)),y+1,z-random(150),0,0,0) dustmk.sprite_index=spr_explosion3}} specialtimes[6]-=1
+repeat(4){dust_make(x+choose(-random(64),random(64)),y+1,z-random(150),0,0,0) dustmk.sprite_index=choose(spr_explosion3,spr_elecflash2)}} specialtimes[6]-=1
 
 if AnimFrame>1 image_index+=0.25
 

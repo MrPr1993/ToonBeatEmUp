@@ -9,7 +9,7 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-rangeAtk=100
+rangeAtk=360
 
 OneAttack=2
 
@@ -56,5 +56,6 @@ spritepos_setup(2,24,8,92)
 
 enemyID=173
 
+shadowSpr=spr_midshadow2
 
 if oControl.betatest if keyboard_check(vk_control) {canmove=0 anim=100}

@@ -8,17 +8,24 @@ oPlayer.areaEntry=1
 
 with oDastardly {canmove=0 AnimFrame=0 anim=101 specialanim=0}
 
+
+
 with oPlayer
-{key_right=0 doubledash=0 dashing=0
+{key_right=0 doubledash=0 dashing=0 specialtimes[0]=0
 	
 specialanimscript=function()
 {
 if instance_exists(oDastardly)
 {
 if oDastardly.anim=101
-{if oDastardly.x>x image_xscale=1 else image_xscale=-1
+{
+if oDastardly.specialanim=1
+if ground
+if specialtimes[0] {specialtimes[0]=1 zSpeed=-4 ground=0 event_user(11)}
+	
+if oDastardly.x>x image_xscale=1 else image_xscale=-1
 if oDastardly.specialanim=1 or oDastardly.specialanim=2
-{if AnimFrame=0 {AnimFrame=1 zSpeed=-4 ground=0 event_user(11)}
+{
 	
 anim=9999 
 if ground
