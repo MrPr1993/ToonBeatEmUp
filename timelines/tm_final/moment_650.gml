@@ -21,7 +21,7 @@ if oDastardly.anim=101
 {
 if oDastardly.specialanim=1
 if ground
-if specialtimes[0] {specialtimes[0]=1 zSpeed=-4 ground=0 event_user(11)}
+if specialtimes[0]=0 {specialtimes[0]=1 zSpeed=-4 ground=0 event_user(11)}
 	
 if oDastardly.x>x image_xscale=1 else image_xscale=-1
 if oDastardly.specialanim=1 or oDastardly.specialanim=2

@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":21,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oDuckBoss",
@@ -38,8 +39,8 @@
     "path":"sprites/spr_duck_stand/spr_duck_stand.yy",
   },
   "spriteMaskId":{
-    "name":"mask_mid",
-    "path":"sprites/mask_mid/mask_mid.yy",
+    "name":"spr_midshadow2",
+    "path":"sprites/spr_midshadow2/spr_midshadow2.yy",
   },
   "visible":true,
 }

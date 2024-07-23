@@ -81,11 +81,14 @@ if AnimFrame>3.5 canmove=1
 
 if anim=13
 {bombRecharge=choose(200,220,240,260)
-if AnimFrame=0 {specialcheck4=0 PlaySound(choose(snd_seaweed2,snd_seaweed8))} sprite_index=spr_seaweed_attack3
+if AnimFrame=0 {specialtimes[0]=0
+	specialcheck4=0 PlaySound(choose(snd_seaweed2,snd_seaweed8))} sprite_index=spr_seaweed_attack3
+	if specialtimes[0]!=0 specialtimes[0]-=1;
 frame_set(0,0,0.1)
-frame_set(1,1,0.1) if AnimFrame=2 
+frame_set(1,1,0.1) if AnimFrame=clamp(AnimFrame,2,4) 
+if specialtimes[0]=0
 {//projectile_create(x+48*image_xscale,y+1,z-32,32,spr_seaweed_curse,4*image_xscale,mask_small,spr_hitflash,0.1,2,591000,0,0)
-
+specialtimes[0]=10
 bone=instance_create_depth(x+48*image_xscale,y+1,-1,oBossHazard) bone.hitSource=self.id bone.height=30
 bone.z=z-32 bone.hspeed=4*image_xscale with bone
 {

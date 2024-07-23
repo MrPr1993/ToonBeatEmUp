@@ -9,6 +9,8 @@ overwriteAttack3=1
 overwriteAttack4=1
 overwriteAttack5=1
 
+if tidalBuffer!=0 tidalBuffer-=1
+
 ///AI for enemy doing blocks
 //if name="BBB" ///To lock block to make boss easier
 if canmove=1 and (anim=0 or anim=1)
@@ -53,11 +55,51 @@ if anim=10
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>150
 	anim=12 else 
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>150/2
-	anim=choose(13,14,12) else anim=11
+	{anim=choose(13,14,12,6501)
+		if anim=6501 if tidalBuffer=0 {tidalBuffer=choose(350,370,410,430) anim=6500} else anim=choose(13,14,12)
+		
+		} else anim=11
+if anim=12 if instance_exists(oNinjaBunCard) anim=13
+}
+
+///Tidal Wave!
+if anim=6500
+{if AnimFrame=0 {PlaySound(choose(snd_prince3,snd_prince7))}
+//160
+sprite_index=spr_prince_attack5
+tidalBuffer=choose(350,370,410,430)
+frame_set(0,0,0.25)
+frame_set(1,1,0.1)
+if AnimFrame=2
+{
+var checkdir=oControl.camX-64 if image_xscale=-1 checkdir=oControl.camX+320+64
+
+var repwave=0;
+repeat(12)
+{
+waveatk=instance_create_depth(checkdir,160+16*repwave,-1,oBossHazard) waveatk.image_xscale=image_xscale
+waveatk.hspeed=4*image_xscale
+with waveatk
+{image_speed=0.25 sprite_index=spr_prince_tidalwave
+selfscript=function()
+{height=48 damage=0.2 atk=1 MoveType=1 hp=0 name="WAVE" depth=-y
+oControl.quakeFXTime=2 if !audio_is_playing(snd_splash4) PlaySoundNoStack(snd_splash4)
+if image_xscale=1 if x>oControl.camX+320+64 instance_destroy()
+if image_xscale=-1 if x<oControl.camX-64 instance_destroy()
+}
+}
+repwave+=1;
 }
 
 
-if anim=11 ///Bite Attack
+}
+frame_set(2,2,0.25)
+frame_set(3,3,0.05)
+frame_set(4,0,0.25)
+if AnimFrame>=4.7 {atk=0 canmove=1}
+}
+
+if anim=11 ///Flex Attack
 {if AnimFrame=0 {PlaySound(choose(snd_prince3,snd_prince5))}
 //if AnimFrame=0  PlaySound(snd_wolfita7)
 
@@ -112,11 +154,25 @@ frame_set(9,1,0.5)
 frame_set(10,1,0.25) if AnimFrame=11
 {//with bub instance_destroy() bub=-1
 //PlaySound(snd_femenemy5) PlaySound(snd_flame)
-card=instance_create_depth(x+32*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
-card.sprite_index=spr_siren_proj3
+var reppart=0;
+repeat(5)
+{
+card=instance_create_depth(x+32*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=8*image_xscale
+card.sprite_index=spr_prince_proj
 if distance_to_point(targetEnemy.x,targetEnemy.y)<120
-{card.zSpeed=1 card.zSpeedAdd=-0.1} else card.sidespeedadd=0.1*image_xscale
+{card.zSpeed=1 card.zSpeedAdd=-0.1} else card.sidespeedadd=-0.2*image_xscale
 card.z=z-64 card.image_xscale=image_xscale card.disappearHit=0 card.damage=0.1
+switch(reppart)
+{
+case 0: card.vspeed=-1 card.hspeed=7*image_xscale break;
+case 1: card.vspeed=-0.5 card.hspeed=7.5*image_xscale break;
+
+case 3: card.vspeed=0.5 card.hspeed=7.5*image_xscale break;
+case 4: card.vspeed=1 card.hspeed=7*image_xscale break;
+}
+reppart+=1;
+}
+
 }
 frame_set(11,2,0.25)
 frame_set(12,3,0.25)
@@ -130,7 +186,7 @@ if AnimFrame>15.75 {canmove=1 atk=0}
 ////Knee
 if anim=13
 {
-if AnimFrame=0 {PlaySound(snd_prince3) specialtimes[0]=0
+if AnimFrame=0 {PlaySound(choose(snd_prince3,snd_prince9)) specialtimes[0]=0
 	specialtimes[1]=0  
 			specialtimes[2]=0
 					if targetEnemy.y!=clamp(targetEnemy.y,y-8,y+8)
@@ -145,8 +201,8 @@ frame_set(1,1,0.05) if AnimFrame=2 {ground=0 zSpeed=-6 sentflying=6*image_xscale
 if AnimFrame=2.1 {image_index=2+specialtimes[0] if specialtimes[0]<1.5 specialtimes[0]+=0.25
 	atk=1 MoveType=1 damage=0.2
 					
-	if specialtimes[2]>0 and place_free(x,y+specialtimes[2]) y+=specialtimes[2]
-	else if y<oControl.camY+240 y+=specialtimes[2]
+	if specialtimes[2]=2 and place_free(x,y+specialtimes[2]) y+=specialtimes[2]
+	y=clamp(y,0,oControl.camY+240)
 		
 	if ground {AnimFrame=3 atk=0}}
 frame_set(3,1,0.1)

@@ -306,7 +306,7 @@ if hp<=0
 	if HitType=45///Inflate
 	{event_user(1)
 	hurt=1 canBounce=0 image_index=0 if sprite_index=inflateSpr image_index=2 sprite_index=inflateSpr
-	ground=0
+	ground=0 recovery=30
 
 	wobbleX=1.1
 wobbleY=0.9

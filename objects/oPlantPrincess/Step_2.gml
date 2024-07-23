@@ -3,6 +3,8 @@
 enemy_endstep()
 throw_step()
 
+if hp=0 if !ground {x=clamp(x,oControl.camX+32,oControl.camX+320-32)}
+
 
 overwriteAttack=1
 overwriteAttack1=1
@@ -315,14 +317,16 @@ frame_set(0,0,0.25) if AnimFrame=clamp(AnimFrame,2,6) {recovery=2 recoveryThrow=
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
-frame_set(4,4,0.05) if AnimFrame=clamp(AnimFrame,4,6.5) {sprite_index=mask_none
-	x=choose(oControl.camX+56,oControl.camX+320-56)
-	}
+frame_set(4,4,0.05)
 frame_set(5,5,0.05) 
 frame_set(6,3,0.25)
 frame_set(7,1,0.25)
 frame_set(8,0,0.25)
 frame_set(9,0,0.25)
+
+if AnimFrame=clamp(AnimFrame,4,6.5) {sprite_index=mask_none
+	x=choose(oControl.camX+56,oControl.camX+320-56)
+	}
 
 if AnimFrame>9.7 canmove=1
 }

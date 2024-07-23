@@ -23,7 +23,7 @@ isBoss=1
 hp=2
 maxhp=2
 
-height=90
+height=110
 isHeavy=1
 
 specialFX=0
@@ -56,6 +56,8 @@ runCharge=0
 isBoss=1
 specialBossState=1
 
+fakeducks=2
+fakeduckbuffer=360
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

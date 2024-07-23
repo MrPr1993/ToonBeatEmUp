@@ -59,6 +59,8 @@ spritepos_setup(2,24,1,96)
 
 enemyID=165 //enemyID=166 for water copies
 
+tidalBuffer=0
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

@@ -1,6 +1,8 @@
 enemy_endstep()
 throw_step()
 
+if fakeduckbuffer!=0 fakeduckbuffer-=1;
+
 if runCharge!=0 runCharge-=1
 
 if anim=10
@@ -10,10 +12,90 @@ anim=choose(11)
 else
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)<100
-anim=choose(12,13,14) else anim=choose(13,14)
+anim=choose(12,13,14,6501) else anim=choose(13,14,6501)
+
+if anim=6501 if fakeduckbuffer=0
+{fakeduckbuffer=360
+anim=6500 {}
+} else anim=choose(13,14)
 
 if anim=12 or anim=13 if runCharge!=0 {anim=14 runCharge=choose(320,340,360)}
 }
+}
+
+///Fake Ducks
+if anim=6500
+{recoveryThrow=2
+//160
+if AnimFrame=0
+{sprite_index=spr_duck_attack4 image_index=0
+}
+AnimFrame+=0.1
+if AnimFrame=1
+{PlaySound(snd_duck4) var choosepos=choose(1,2,3,4) AnimFrame=2
+duck1=instance_create_depth(0,0,-1,oFakeDuck)
+duck2=instance_create_depth(0,0,-1,oFakeDuck)
+duck3=instance_create_depth(0,0,-1,oFakeDuck)
+
+switch(choosepos)
+{
+case 1:
+x=oControl.camX+64 y=160+16
+duck1.x=oControl.camX+320-64 duck1.y=160+16
+duck2.x=oControl.camX+64 duck2.y=160+64
+duck3.x=oControl.camX+320-64 duck3.y=160+64
+break;	
+case 2:
+x=oControl.camX+320-64 y=160+16
+duck1.x=oControl.camX+64 duck1.y=160+16
+duck2.x=oControl.camX+64 duck2.y=160+64
+duck3.x=oControl.camX+320-64 duck3.y=160+64
+break;
+case 3:
+x=oControl.camX+64 y=160+64
+duck1.x=oControl.camX+320-64 duck1.y=160+16
+duck2.x=oControl.camX+64 duck2.y=160+16
+duck3.x=oControl.camX+320-64 duck3.y=160+64
+break;
+case 4:
+x=oControl.camX+320-64 y=160+64
+duck1.x=oControl.camX+320-64 duck1.y=160+16
+duck2.x=oControl.camX+64 duck2.y=160+64
+duck3.x=oControl.camX+64 duck3.y=160+16
+break;
+}
+
+///pose pick
+var choosepos2=choose(1,2,3,4,5,6)
+switch(choosepos2)
+{
+case 0: sprite_index=spr_duck_attack1 image_index=0 break;
+case 1: sprite_index=spr_duck_attack3 image_index=0 break;
+case 2: sprite_index=spr_duck_attack1 image_index=2 break;
+case 3: sprite_index=spr_duck_charge image_index=0 break;
+case 4: sprite_index=spr_duck_inflate image_index=0 break;
+case 5: sprite_index=spr_duck_intro image_index=9 break;
+case 6: sprite_index=spr_duck_move image_index=2 break;
+}
+
+
+
+with oFakeDuck {if x>oControl.camX+160 image_xscale=-1 else image_xscale=1 flashFX(x,y+1,z-64,spr_confetti,0,0.25,30,1,1,c_white,1)}
+if x>oControl.camX+160 image_xscale=-1 else image_xscale=1
+flashFX(x,y+1,z-64,spr_confetti,0,0.25,30,1,1,c_white,1)
+}
+
+if AnimFrame>=1
+if instance_number(oFakeDuck)<3 {AnimFrame=0 anim=6502}
+}
+
+////Got You!
+if anim=6502
+{
+sprite_index=spr_duck_attack3
+frame_set(0,0,0.25)
+frame_set(1,1,0.05)
+if AnimFrame>=0.7 {canmove=1 anim=0 atk=0}
 }
 
 ///Shoryuken
@@ -114,7 +196,7 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 if AnimFrame=0.9 {PlaySoundNoStack(snd_carengine2)
 		if targetEnemy.y!=clamp(targetEnemy.y,y-8,y+8)
-		{if targetEnemy.y>y specialtimes[2]=4 else specialtimes[2]=-4}
+		{if targetEnemy.y>y specialtimes[2]=1 else specialtimes[2]=-1}
 	}
 if AnimFrame<3 {
 	if image_xscale=1 and targetEnemy.x>x+specialtimes[1] specialtimes[1]+=8
@@ -132,8 +214,8 @@ frame_set(3,4,0.1) if AnimFrame=clamp(AnimFrame,3,3.9) {
 	
 	if specialtimes[2]!=0
 	{
-	if specialtimes[2]>0 and place_free(x,y+4) y-=4
-	else if y<oControl.camY+240 y+=specialtimes[2]
+	if specialtimes[2]=-1 {if place_free(x,y-4) y-=4} else y+=4*specialtimes[2]
+	y=clamp(y,0,oControl.camY+240)
 	}
 	
 	
