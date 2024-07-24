@@ -44,6 +44,8 @@
     {"$GMSpriteFrame":"","%Name":"b5e967b9-db8b-4f6e-8f58-aa0ea52d6f1c","name":"b5e967b9-db8b-4f6e-8f58-aa0ea52d6f1c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"f98a7442-9115-4cfe-91a7-b5ad613572b5","name":"f98a7442-9115-4cfe-91a7-b5ad613572b5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"e153738f-ad81-4113-991b-76bc61c6546b","name":"e153738f-ad81-4113-991b-76bc61c6546b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"37a70f07-9287-4a75-a4e8-8bbe5ab2e703","name":"37a70f07-9287-4a75-a4e8-8bbe5ab2e703","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6a5a9bc9-4701-4592-8321-6552143eca28","name":"6a5a9bc9-4701-4592-8321-6552143eca28","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -80,7 +82,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":32.0,
+    "length":34.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -195,6 +197,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e153738f-ad81-4113-991b-76bc61c6546b","path":"sprites/spr_hina_dance/spr_hina_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"68839095-9d04-4b00-a74a-c03c44d32310","IsCreationKey":false,"Key":31.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"37a70f07-9287-4a75-a4e8-8bbe5ab2e703","path":"sprites/spr_hina_dance/spr_hina_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"37a6adaf-fa7a-4746-a9c5-157ca3e506b9","IsCreationKey":false,"Key":32.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6a5a9bc9-4701-4592-8321-6552143eca28","path":"sprites/spr_hina_dance/spr_hina_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6dd1ea98-1d15-458c-8788-d89df5c3057c","IsCreationKey":false,"Key":33.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

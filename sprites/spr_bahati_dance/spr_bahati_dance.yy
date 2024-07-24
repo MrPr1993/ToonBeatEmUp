@@ -44,6 +44,8 @@
     {"$GMSpriteFrame":"","%Name":"241ece1c-abb7-42f2-9f68-eec0fb019a8b","name":"241ece1c-abb7-42f2-9f68-eec0fb019a8b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"c86eb077-3599-434f-a6f6-9fa9c8d4cd6a","name":"c86eb077-3599-434f-a6f6-9fa9c8d4cd6a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"a993a58f-3a1a-4d15-9cfc-59cb30ca671f","name":"a993a58f-3a1a-4d15-9cfc-59cb30ca671f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"179328c8-c2a5-41cd-b18e-ed199c5c4bb4","name":"179328c8-c2a5-41cd-b18e-ed199c5c4bb4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"315a5e35-90f9-4a80-97ad-5d7b0286f7e8","name":"315a5e35-90f9-4a80-97ad-5d7b0286f7e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -80,7 +82,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":32.0,
+    "length":34.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -195,6 +197,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a993a58f-3a1a-4d15-9cfc-59cb30ca671f","path":"sprites/spr_bahati_dance/spr_bahati_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a3111ab1-2c7f-492c-9560-958569bdd72a","IsCreationKey":false,"Key":31.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"179328c8-c2a5-41cd-b18e-ed199c5c4bb4","path":"sprites/spr_bahati_dance/spr_bahati_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"648880d7-2a36-411c-ba0c-92d6d487c83a","IsCreationKey":false,"Key":32.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"315a5e35-90f9-4a80-97ad-5d7b0286f7e8","path":"sprites/spr_bahati_dance/spr_bahati_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"131ae621-6d64-496b-a20a-19eefc310a8d","IsCreationKey":false,"Key":33.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

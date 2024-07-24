@@ -918,6 +918,33 @@ dancer4turn=1
 
 dancersfade=1
 
+songtime=0
+songmin=0
+songsec=0
+
+songMinTime=0
+songMaxTime=0
+
+seconds=0
+seconds2=0
+seconds3=0
+
+secondsMAX=0
+secondsMAX=0
+secondsMAX=0
+
+songplaying=-1
+
+songnote=0
+
+songzero=0
+songend=0
+songPlay=0
+songSPD=1
+playingSound=msc_stage1
+soundSPD=1
+
+songID=-1
 }
 if room=rm_soundtest
 {

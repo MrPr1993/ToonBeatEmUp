@@ -44,6 +44,8 @@
     {"$GMSpriteFrame":"","%Name":"d2f5c057-09d8-43b6-99a6-c218df6e9ca9","name":"d2f5c057-09d8-43b6-99a6-c218df6e9ca9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"e4670bde-6d08-4c67-aa40-efd288065706","name":"e4670bde-6d08-4c67-aa40-efd288065706","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"fa1cb0be-a4fb-44b4-8861-c64e8a2dbe8e","name":"fa1cb0be-a4fb-44b4-8861-c64e8a2dbe8e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"dbdb21b8-7ace-4d3f-b4b5-ec75f33def82","name":"dbdb21b8-7ace-4d3f-b4b5-ec75f33def82","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"8c490497-7b36-4b64-85ee-02001df2fd08","name":"8c490497-7b36-4b64-85ee-02001df2fd08","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -80,7 +82,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":32.0,
+    "length":34.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -195,6 +197,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fa1cb0be-a4fb-44b4-8861-c64e8a2dbe8e","path":"sprites/spr_sofia_dance/spr_sofia_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ae229cda-839b-4e46-ac5e-3bf35c944d9f","IsCreationKey":false,"Key":31.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dbdb21b8-7ace-4d3f-b4b5-ec75f33def82","path":"sprites/spr_sofia_dance/spr_sofia_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3a73cc72-0317-48bc-a371-5a3eb1803cd1","IsCreationKey":false,"Key":32.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8c490497-7b36-4b64-85ee-02001df2fd08","path":"sprites/spr_sofia_dance/spr_sofia_dance.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c04a8146-c34c-42fc-8399-bfced936d2fd","IsCreationKey":false,"Key":33.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

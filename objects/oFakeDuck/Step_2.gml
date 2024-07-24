@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 depth=-y
-
+atk=0
 if anim=4
 {if AnimFrame=0 {AnimFrame=1 PlaySound(snd_duck7)}
 faked=instance_create_depth(x,y,-1,oBossHazard)
