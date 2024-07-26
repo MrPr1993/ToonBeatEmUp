@@ -80,7 +80,7 @@ repeat(12)
 waveatk=instance_create_depth(checkdir,160+16*repwave,-1,oBossHazard) waveatk.image_xscale=image_xscale
 waveatk.hspeed=4*image_xscale
 with waveatk
-{image_speed=0.25 sprite_index=spr_prince_tidalwave
+{image_speed=0.25 sprite_index=spr_prince_tidalwave mask_index=wavemask
 selfscript=function()
 {height=48 damage=0.2 atk=1 MoveType=1 hp=0 name="WAVE" depth=-y
 oControl.quakeFXTime=2 if !audio_is_playing(snd_splash4) PlaySoundNoStack(snd_splash4)

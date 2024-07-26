@@ -1,3 +1,4 @@
-cutscenename="SOFIA"
-cutsceneline="OH, ALLOW ME! I KNOW A GOOD WAY TO PERSUADE THEM."
-scene2.image_index=1
+audio_stop_all()
+cutscenename="VIVA"
+cutsceneline="WAIT. IF SHE'S THE CAPTAIN, WHO'S DRIVING THE SHIP?"
+timeline_position=1600

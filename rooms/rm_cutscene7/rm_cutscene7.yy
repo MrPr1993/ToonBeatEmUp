@@ -113,8 +113,8 @@
   ],
   "name":"rm_cutscene7",
   "parent":{
-    "name":"Cutscene8Final",
-    "path":"folders/1c - Cutscenes/Cutscene8Final.yy",
+    "name":"Cutscene7",
+    "path":"folders/1c - Cutscenes/Cutscene7.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

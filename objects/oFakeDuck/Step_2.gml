@@ -8,6 +8,7 @@ faked=instance_create_depth(x,y,-1,oBossHazard)
 faked.image_xscale=image_xscale faked.hitSource=oDuckBoss
 faked.MoveType=45 faked.HitType=45
 with faked
+selfscript=function()
 {
 if instance_exists(oDuckBoss) {if oDuckBoss.hp=0 instance_destroy()}
 MoveType=45 damage=0.1 

@@ -1,6 +1,5 @@
 
-
 cutscenename="BAHATI"
-cutsceneline="HEY MISS? MAYBE YOU SHOULD BE CALM. WE ALREADY BEAT THEM ENOUGH."
+cutsceneline="THEY SURE AMBUSHED US GOOD, THE BIG WOMAN!"
 
 

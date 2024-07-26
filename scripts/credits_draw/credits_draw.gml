@@ -75,9 +75,11 @@ if oControl.creditsTime<5
 {image_index=30
 }
 else
-if oControl.creditsTime<12
+if oControl.creditsTime<14.9
 {
-if oControl.creditsTime>10
+oControl.dancersfade-=0.005	
+
+if oControl.creditsTime>12
 {
 if specialcheck[0]=0 {specialcheck[0]=1 AnimFrame=0}
 frame_set(0,31,0.01)
@@ -85,7 +87,7 @@ frame_set(1,30,0.01)
 frame_set(2,29,0.01)
 frame_set(3,30,0.01) if AnimFrame=4 AnimFrame=0
 }
-oControl.dancersfade-=0.01
+
 }
 else
 if oControl.creditsTime<15
@@ -369,7 +371,7 @@ else if creditsTime<7+7*8
 creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nSHADES" ;
 else
 {
-creditsCameoY-=0.15
+creditsCameoY-=0.18
 }
 
 draw_set_font(global.scorefont)

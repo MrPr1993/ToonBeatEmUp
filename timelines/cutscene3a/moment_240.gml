@@ -1,2 +1,2 @@
-cutscenename="LADY WOLF"
-cutsceneline="H-HEY! THAT'S RUDE!"
+cutscenename="HINA"
+cutsceneline="YEAH. SHE HUGE!"

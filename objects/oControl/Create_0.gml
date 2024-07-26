@@ -1183,3 +1183,4 @@ instance_create_depth(0,0,-1,oPaletteEditor)
 
 languagetext[40]=0; ///First 10 will be for the setting stuff
 language_check();
+

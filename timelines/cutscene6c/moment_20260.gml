@@ -1,1 +1,0 @@
-SceneSpeedX=6

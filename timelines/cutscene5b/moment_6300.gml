@@ -1,1 +1,2 @@
-///@description Decision 1
+///@description Decision 1 End
+stageEndFX=1
