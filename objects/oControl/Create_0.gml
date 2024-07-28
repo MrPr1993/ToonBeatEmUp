@@ -109,8 +109,7 @@ deletefileC=0;
 charsetting=0
 
 if !variable_global_exists("CurrentMusic")
-{global.StageSelect=0
-	
+{	
 global.SaveFileNO=1;
 global.SaveNumber=0;
 global.SaveText="EMPTY";
@@ -128,8 +127,6 @@ global.HiScoreMini5=0
 global.HiScoreMini6=0
 
 global.ArenaType=0;
-
-
 	
 global.FishingUnlock=0;
 global.SlotMachineUnlock=0;	
@@ -149,8 +146,6 @@ global.CheatPenalty=0;
 global.Cheat[20]=0;
 
 global.NoCheat=1;
-
-
 global.CheatUnlock[20]=0;
 var hahaha=0;
 repeat(17)
@@ -186,8 +181,6 @@ global.CutsceneSkip=0
 global.CutsceneSkipper=0
 
 global.LevelSelectSave=0
-
-
 
 global.multiMode=1
 
@@ -276,12 +269,11 @@ global.UnlockStageC[15]=0
 global.UnlockStageC[16]=0
 
 
-stagedata_load()
+
 
 global.UnlockEnemy[200]=0
 global.EnemyDeath=0
 
-enemydata_load()
 
 global.MenuGlobal=0
 global.MenuSkip=0
@@ -378,13 +370,17 @@ global.P2available=0
 global.P3available=0
 global.P4available=0
 
+stagedata_load()
+enemydata_load()
+
 globalcontrols(4)
 globalcontrols(3)
 globalcontrols(2)
 globalcontrols(1)
 
-
 shopreset()
+
+global.StageSelect=0
 }
 
 global.TreasureSet=0;

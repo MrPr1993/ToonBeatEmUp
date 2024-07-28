@@ -26,3 +26,6 @@ newscript=-1;
 specialcheck[9]=0;
 
 specialdraw=-1;
+
+sceneno=0;
+scenetime=0;

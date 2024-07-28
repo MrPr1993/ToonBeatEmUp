@@ -154,14 +154,19 @@ frame_set(6,20,0.1)
 else
 if oControl.creditsTime<51
 {if specialcheck[0]=8 {specialcheck[0]=9 AnimFrame=0}
-frame_set(0,21,0.1)
-frame_set(1,22,0.1)
-frame_set(2,23,0.1)
-frame_set(3,24,0.1)
-frame_set(4,25,0.1)
-frame_set(5,26,0.1) 
-frame_set(6,25,0.1) 
-frame_set(7,24,0.1) if AnimFrame=8 AnimFrame=4
+frame_set(0,27,0.1)
+frame_set(1,28,0.1)
+frame_set(2,30,0.1)
+frame_set(3,32,0.1)
+frame_set(4,33,0.1)
+frame_set(5,21,0.1)
+frame_set(6,22,0.1)
+frame_set(7,23,0.1)
+frame_set(8,24,0.1)
+frame_set(9,25,0.1)
+frame_set(10,26,0.1) 
+frame_set(11,25,0.1) 
+frame_set(12,24,0.1) if AnimFrame=13 AnimFrame=9
 }
 else
 if oControl.creditsTime<55
@@ -316,35 +321,50 @@ if AnimFrame=10 AnimFrame=6
 else
 if oControl.creditsTime<115
 {if specialcheck[0]=21 {specialcheck[0]+=1 AnimFrame=0}
-frame_set(0,33,0.1)
-frame_set(1,32,0.1)
-frame_set(2,30,0.1)
-frame_set(3,28,0.1)
-frame_set(4,27,0.1)
-frame_set(5,10,0.1)
-frame_set(6,9,0.1)
-frame_set(7,11,0.1)
-frame_set(8,12,0.1)
-}
-else oControl.dancersfade+=0.01
+frame_set(0,33,0.25)
+frame_set(1,32,0.25)
+frame_set(2,30,0.25)
+frame_set(3,28,0.25)
+frame_set(4,27,0.25) if AnimFrame=5 AnimFrame=0
 
+}
+else 
+{
+if specialcheck[0]=22 {specialcheck[0]+=1 AnimFrame=0}
+frame_set(0,10,0.1)
+frame_set(1,9,0.1)
+frame_set(2,11,0.1)
+frame_set(3,12,0.1)
+
+oControl.dancersfade+=0.01
+}
 
 }
 /////
-
-draw_sprite(spr_shadow,0,40,200)
+draw_sprite_ext(spr_shadow,0,40,200,dancer1turn,1,0,1-1*dancersfade,1)
 draw_sprite_ext(dancer1spr,dancer1img,40,200,dancer1turn,1,0,c_white,1) ///Viva
 draw_sprite_ext(dancer1spr,dancer1img,40,200,dancer1turn,1,0,c_black,dancersfade)
-draw_sprite(spr_shadow,0,40+80-6,200)
+draw_sprite_ext(spr_viva_microphone,0,40,200+4,dancer1turn,1,0,c_white,1) ///Viva
+draw_sprite_ext(spr_viva_microphone,0,40,200+4,dancer1turn,1,0,c_black,dancersfade)
+
+
+draw_sprite_ext(spr_shadow,0,40+80-6,200,dancer1turn,1,0,1-1*dancersfade,1)
 draw_sprite_ext(dancer2spr,dancer2img,40+80-6,200,dancer2turn,1,0,c_white,1) ///Hina
 draw_sprite_ext(dancer2spr,dancer2img,40+80-6,200,dancer2turn,1,0,c_black,dancersfade)
-draw_sprite(spr_shadow,0,40+160,200)
+draw_sprite_ext(spr_viva_microphone,0,40+80-6,200+4,dancer1turn,1,0,c_white,1) ///Viva
+draw_sprite_ext(spr_viva_microphone,0,40+80-6,200+4,dancer1turn,1,0,c_black,dancersfade)
+
+draw_sprite_ext(spr_shadow,0,40+160,200,dancer1turn,1,0,1-1*dancersfade,1)
 draw_sprite_ext(dancer3spr,dancer3img,40+160,200,dancer3turn,1,0,c_white,1) ///Bahati
 draw_sprite_ext(dancer3spr,dancer3img,40+160,200,dancer3turn,1,0,c_black,dancersfade)
-draw_sprite(spr_shadow,0,40+240-2,200)
+draw_sprite_ext(spr_viva_microphone,0,40+160,200+2,dancer1turn,1,0,c_white,1) ///Viva
+draw_sprite_ext(spr_viva_microphone,0,40+160,200+2,dancer1turn,1,0,c_black,dancersfade)
+
+draw_sprite_ext(spr_shadow,0,40+240-2,200,dancer1turn,1,0,1-1*dancersfade,1)
 draw_sprite_ext(dancer4spr,dancer4img,40+240-2,200,dancer4turn,1,0,c_white,1) ///Sofia
 draw_sprite_ext(dancer4spr,dancer4img,40+240-2,200,dancer4turn,1,0,c_black,dancersfade)
-
+draw_sprite_ext(spr_viva_microphone,1,40+240-2,200+4,dancer1turn,1,0,c_white,1) ///Viva
+draw_sprite_ext(spr_viva_microphone,1,40+240-2,200+4,dancer1turn,1,0,c_black,dancersfade)
 
 
 var musictime=creditsTime;
@@ -357,17 +377,19 @@ if creditsTime<5 ///8 Per line?
 creditmoment="" ;
 else if creditsTime<5+5*2
 creditmoment="GAME BY\n \nMRPR1993" ;
-else if creditsTime<7+7*3
+else if creditsTime<7+6*3
 creditmoment="MUSIC BY\n \nJONORSI\nEVADER MUSIC" ;
-else if creditsTime<7+7*4
+else if creditsTime<7+6*4
 creditmoment="SOUNDS BY\n \nMRPR1993\nMASTERSAUCE\nSOUNDSOFKOOKIE";
-else if creditsTime<7+7*5
+else if creditsTime<7+6*5
 creditmoment="VOICES BY\n \nMIMI HUNG\nFLIRTY FAWN\nCINDER\nSED2116\nMIZZPEACHY\nSUCCUBOO\nSHYGUYWHY" ;
-else if creditsTime<7+7*6
+else if creditsTime<7+6*6
 creditmoment="GRAPHICS BY\n \nMRPR1993\nFROTHIER\nDR.LILI M.D." ;
-else if creditsTime<7+7*7
+else if creditsTime<7+6*7
+creditmoment="CHARACTER DESIGN BY\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
+else if creditsTime<7+6*8
 creditmoment="CONCEPT ART BY\n \nMRPR1993\nSHADES\nSED2116" ;
-else if creditsTime<7+7*8
+else if creditsTime<7+6*9
 creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nSHADES" ;
 else
 {
@@ -454,6 +476,7 @@ var creditscameor="\n"+
 "\n"
 
 
+
 draw_text(320-4,320+16+round(creditsCameoY),creditscameor)
 draw_set_halign(fa_left)
 draw_text(4,320+16+round(creditsCameoY),creditscameol)
@@ -469,9 +492,7 @@ else
 {global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_hiscore)}
 }
 
-if creditsTime>=134 {global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_hiscore)
-	
-	}
+
 
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center) draw_set_color(c_white)
@@ -483,6 +504,10 @@ draw_rectangle(160-80+1,24+1,-1+160-80+160*skipScene,32-1,false)
 
 
 }else credFram=0
+
+if creditsTime>=134 {global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_hiscore)
+	
+	}
 
 if creditsTime<=60
 draw_sprite_ext(spr_gametitle,creditsTime*10,160,120-320+(320*dancersfade),1,1,0,c_white,1-1*(creditsAlpha*10))

@@ -24,8 +24,8 @@
   ],
   "name":"cutscene6c",
   "parent":{
-    "name":"Cb Mountain",
-    "path":"folders/1c - Cutscenes/Cutscene6/Cb Mountain.yy",
+    "name":"Cc Clouds",
+    "path":"folders/1c - Cutscenes/Cutscene6/Cc Clouds.yy",
   },
   "resourceType":"GMTimeline",
   "resourceVersion":"2.0",

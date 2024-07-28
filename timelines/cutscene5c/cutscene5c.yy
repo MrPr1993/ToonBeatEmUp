@@ -24,8 +24,8 @@
   ],
   "name":"cutscene5c",
   "parent":{
-    "name":"Cb UFO",
-    "path":"folders/1c - Cutscenes/Cutscene5/Cb UFO.yy",
+    "name":"Cc Desert",
+    "path":"folders/1c - Cutscenes/Cutscene5/Cc Desert.yy",
   },
   "resourceType":"GMTimeline",
   "resourceVersion":"2.0",
