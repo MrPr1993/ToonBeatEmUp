@@ -96,6 +96,7 @@ if level=66 roomGo=rm_cutscene6c
 if level=67 roomGo=rm_cutscene7
 if level=68 roomGo=rm_cutscene8
 
+if level=100 roomGo=rm_secret
 
 
 

@@ -13,7 +13,7 @@ cutsceneline=""
 }
 
 actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
-{sprite_index=spr_viva_cutscene image_index=0 anim=9999}
+{sprite_index=spr_viva_run image_index=0 anim=9999}
 actor2=instance_create_depth(50,144,-1,oCameoChar) with actor2
 {sprite_index=spr_hina_point image_index=0 anim=9999}
 actor3=instance_create_depth(46,160,-1,oCameoChar) with actor3
@@ -158,7 +158,7 @@ if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
 cutsceneline=""
 audio_stop_all()
 
-actorscreen.scenetime=510
+actorscreen.scenetime=761
 
 global.CutsceneSkip=0
 

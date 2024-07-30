@@ -32,6 +32,10 @@ Spin=0
 sprSpin=0
 disappearHit=1
 
+HitGroundSpr=-1;
+HitGroundSnd=-1;
+HitQuake=-1;
+
 rs=0
 reverseSpd=0
 
@@ -46,3 +50,4 @@ haspal=0
 
 my_pal_sprite=spr_ninjapal
 current_pal=0
+

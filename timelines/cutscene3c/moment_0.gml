@@ -158,7 +158,7 @@ if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
 cutsceneline=""
 audio_stop_all()
 
-actorscreen.scenetime=510
+actorscreen.scenetime=761
 
 global.CutsceneSkip=0
 

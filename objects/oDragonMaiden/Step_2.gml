@@ -228,7 +228,7 @@ AnimFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	
 	
 	if anim=11 //Bite
-	{if AnimFrame=0 {
+	{if AnimFrame=0 {specialtimes[5]=0 specialtimes[6]=0
 		PlaySound(snd_dragon4)
 		AnimFrame=0.01 specialtimes[0]=0  lockX=x sprite_index=spr_dragonmaiden_head}
 	selfatk.damage=0.25 selfatk.MoveType=1
@@ -240,7 +240,7 @@ AnimFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 	{lockZ=lerp(lockZ,-48,0.05)
 	if x=clamp(lockX,oControl.camX-180,oControl.camX+320+180)
 	{lockY=lerp(lockY,targetEnemy.y,0.1)
-lockX-=4*image_xscale
+lockX-=4*image_xscale specialtimes[6]=point_distance(x,0,targetEnemy.x-24*image_xscale,0)
 
 	} else {specialtimes[0]+=1 PlaySound(snd_dragon5)}
 	}
@@ -248,7 +248,8 @@ lockX-=4*image_xscale
 	{sprite_index=spr_dragonmaiden_headbite
 	lockZ=0
 	
-	frame_set(0,0,0) if AnimFrame<=1 {lockX+=8*image_xscale  if x=clamp(x,targetEnemy.x-24,targetEnemy.y+24)
+	frame_set(0,0,0) if AnimFrame<=1 {lockX+=8*image_xscale specialtimes[5]+=8  //if x=clamp(x,targetEnemy.x-24,targetEnemy.y+24)
+		if specialtimes[5]>=specialtimes[6]
 	AnimFrame=1.5}
 	frame_set(1,0,0.25) if AnimFrame=clamp(AnimFrame,2,2.5) atk=1 else atk=0
 	if AnimFrame=2 {oControl.quakeFXTime=10}
@@ -276,15 +277,26 @@ lockX-=4*image_xscale
 	else
 	{sprite_index=spr_dragonmaiden_headbreath
 	lockX+=0.5*image_xscale
+	
 	frame_set(1,0,0.1)
 	frame_set(2,1,0.1)
 	frame_set(3,2,0.1) if AnimFrame=4
-	{
-	card=instance_create_depth(x+57*image_xscale,y,-1,oNinjaBunCard)
+	{PlaySound(snd_explosion2)
+	card=instance_create_depth(x+(57+32)*image_xscale,y,-1,oNinjaBunCard)
 card.hspeed=6*image_xscale
 card.image_xscale=image_xscale
-card.zSpeed=6 card.sprite_index=spr_ninjabun_cardproj2 card.image_speed=0
-card.z=z-15		
+card.zSpeed=6 card.sprite_index=spr_dragon_flame card.image_speed=0.25 card.mask_index=spr_midshadow
+card.z=z-15
+with card
+{HitType=5 damage=0.2
+HitSound=snd_explosion
+HitSpark=spr_burn
+
+HitGroundSpr=spr_burn;
+HitGroundSnd=snd_explosion;
+HitQuake=10;
+}
+
 	}
 	frame_set(4,3,0.1)
 	frame_set(5,4,0.1) if AnimFrame=6 {if specialtimes[1]!=3 {specialtimes[1]+=1 AnimFrame=1}}
@@ -296,7 +308,7 @@ card.z=z-15
 	
 if anim=13 ///Change location
 {
-if AnimFrame=0 {AnimFrame=0.01 specialtimes[0]=0  lockX=x sprite_index=spr_dragonmaiden_head}
+if AnimFrame=0 {AnimFrame=0.01 specialtimes[0]=0 specialtimes[5]=0  lockX=x sprite_index=spr_dragonmaiden_head}
 
 	if specialtimes[0]=0
 	{lockZ=lerp(lockZ,-48,0.05)

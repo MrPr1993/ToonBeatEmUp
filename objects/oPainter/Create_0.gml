@@ -9,7 +9,7 @@ enemyscript=animsetup_enemy
 pointshit=0
 points=0
 
-rangeAtk=100
+rangeAtk=360
 
 OneAttack=2
 
@@ -43,10 +43,16 @@ DizzySpr=spr_painter_dizzy hasDizzy=1
 
 enemyID=200
 
+runCharge=0
+
 isBoss=1
 specialBossState=1
 
+fakeducks=2
+fakeduckbuffer=360
 
 spritepos_setup(1,24,-2,64)
 spritepos_setup(2,24,2,91)
 
+if oControl.betatest=1
+{if keyboard_check(vk_control) {canmove=0 anim=100}}

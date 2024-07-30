@@ -21,7 +21,7 @@
           4,-2147483648,0,-2147483648,-2147483648,-44,0,1,-2147483648,-39,0,1,-2147483648,-31,0,3,-2147483648,
           0,-2147483648,-5,0,1,-2147483648,-30,0,-4,-2147483648,2,0,-2147483648,-3,0,1,-2147483648,-30,0,-4,-2147483648,
           2,0,-2147483648,-3,0,1,-2147483648,-26,0,-18,-2147483648,-22,0,-10,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":-16,},
     {"$GMRTileLayer":"","%Name":"BTG3","depth":2147483356,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BTG3","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":18,"SerialiseWidth":40,"TileCompressedData":[
           2,41,138,-16,0,4,268435594,268435497,41,138,-18,0,2,41,138,-4,0,8,1073742406,1073742374,1073742342,1073742310,
           1610613222,1610613254,1610613286,1610613318,-4,0,4,268435594,268435497,41,138,-18,0,2,41,138,-4,0,8,
@@ -36,7 +36,7 @@
           1610613292,1610613324,-3,0,6,268435659,268435658,268435657,201,202,203,-17,0,3,233,234,235,-3,0,17,617,
           618,619,620,268436076,268436075,268436074,268436073,268436072,268436071,268436070,268435691,268435690,
           268435689,233,234,235,-337,0,-2,-2147483648,-38,0,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":-16,},
     {"$GMRTileLayer":"","%Name":"BTG2","depth":2147483384,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BTG2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":18,"SerialiseWidth":40,"TileCompressedData":[
           -6,44,8,75,0,0,1073741899,1073741867,1610612779,1610612811,268435531,-9,44,3,46,44,44,-14,0,-3,45,3,
           41,42,43,-8,0,3,268435499,268435498,268435497,-9,45,-14,0,-3,77,3,73,74,75,-8,0,3,268435531,268435530,
@@ -53,11 +53,11 @@
           270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,-14,0,26,270,269,270,269,
           270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,-14,0,23,270,
           269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,269,270,-17,0,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":-16,},
     {"$GMRTileLayer":"","%Name":"BTG1","depth":2147483412,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BTG1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":18,"SerialiseWidth":40,"TileCompressedData":[
           -6,0,-8,536871188,-30,0,-12,293,-28,0,-12,325,-28,0,-12,357,-28,0,-12,389,-28,0,-12,421,-28,0,-12,266,
           -135,0,1,578,-36,0,4,587,0,0,590,-201,0,-7,-2147483648,-32,0,-8,-2147483648,-32,0,-8,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":-16,},
     {"$GMRBackgroundLayer":"","%Name":"BTG0","animationFPS":1.0,"animationSpeedType":1,"colour":4294967295,"depth":2147483440,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BTG0","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"bg_ground2","path":"sprites/bg_ground2/bg_ground2.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":160,},
     {"$GMRBackgroundLayer":"","%Name":"BGcity2","animationFPS":1.0,"animationSpeedType":1,"colour":4294967295,"depth":2147483468,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BGcity2","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"bg_ground2","path":"sprites/bg_ground2/bg_ground2.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":false,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"BGcity","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":2147483500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"BGcity","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"bg_buildings","path":"sprites/bg_buildings/bg_buildings.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":64,},

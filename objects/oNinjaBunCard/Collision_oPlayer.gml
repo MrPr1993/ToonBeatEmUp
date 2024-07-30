@@ -20,7 +20,7 @@ with other
 	if !(x>other.SourceX and image_xscale=-1)
 	and !(x<other.SourceX and image_xscale=1)
 	hitBack=1 else hitBack=0
-
+	if HitQuake!=-1 oControl.quakeFXTime=HitQuake;
 	flashFX(x-8*image_xscale,y+2,other.z,other.HitSpark,0,1,10,1,1,c_white,1)
 event_user(0) recovery=10 dizzyHit=0 
 }

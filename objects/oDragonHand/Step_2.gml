@@ -50,7 +50,7 @@ AnimFrame=0 specialtimes[0]=0  specialtimes[1]=0
 
 if anim=11 ///Attack
 {
-if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_hand}
+if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]=0 specialtimes[6]=0 lockX=x sprite_index=spr_dragonmaiden_hand}
 	selfatk.damage=0.25 selfatk.MoveType=1
 	
 	atkcol_set(136,0,0,3.75,1,88)
@@ -62,7 +62,7 @@ if specialtimes[0]<40
 else
 {if image_xscale=1 lockX=lerp(lockX,oControl.camX-150,0.1) else lockX=lerp(lockX,oControl.camX+320+150,0.1)}
 lockY=lerp(lockY,targetEnemy.y,0.1)
-specialtimes[0]+=1
+specialtimes[0]+=1 specialtimes[6]=point_distance(x,0,targetEnemy.x-100*image_xscale,0)
 }
 	
 	if specialtimes[0]=80
@@ -77,10 +77,11 @@ if specialtimes[0]=200
 	{sprite_index=spr_dragonmaiden_handattack1
 	lockZ=0
 	
-	frame_set(0,0,0) if AnimFrame<=2 {lockX+=16*image_xscale atk=1
+	frame_set(0,0,0) if AnimFrame<=2 {lockX+=16*image_xscale specialtimes[5]+=16 atk=1
 		
-	if (image_xscale=1 and x>targetEnemy.x-100) or (image_xscale=-1 and x<targetEnemy.x+100)
-	or (image_xscale=1 and x>oControl.camX-20) or (image_xscale=-1 and x<oControl.camX+320+20)
+	//if (image_xscale=1 and x>targetEnemy.x-100) or (image_xscale=-1 and x<targetEnemy.x+100)
+	//or (image_xscale=1 and x>oControl.camX-20) or (image_xscale=-1 and x<oControl.camX+320+20)
+	if specialtimes[5]>=specialtimes[6]
 	AnimFrame=2} else atk=0
 	frame_set(1,0,01)
 	if AnimFrame=2 {oControl.quakeFXTime=10}
@@ -93,7 +94,7 @@ if specialtimes[0]=200
 if anim=14 ///Flick
 {atkcol_set(111+53,0,-5,2.95,1,118)
 if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
-atk=0
+atk=0 damage=0.2 MoveType=2
 if specialtimes[0]<160
 {sprite_index=spr_dragonmaiden_handattack2 image_index=0
 if specialtimes[0]<40
@@ -120,7 +121,7 @@ if anim=13 ///Slam
 {atkcol_set(114,0,-2,4.35,1,50)
 
 if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
-atk=0
+atk=0 damage=0.3 MoveType=4
 if specialtimes[0]<160
 {sprite_index=spr_dragonmaiden_handattack3 image_index=0
 if specialtimes[0]<40

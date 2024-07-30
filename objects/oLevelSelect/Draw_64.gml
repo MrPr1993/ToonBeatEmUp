@@ -7,7 +7,7 @@ draw_set_alpha(1)
 draw_set_color(c_black)
 draw_rectangle(-16,-16,888,888,0)
 
-if level<21
+if level<24
 {
 draw_text(10, yy++ * 10, string_hash_to_newline("LEVEL SELECT"));
 if level=0 draw_set_color(c_yellow) else draw_set_color(c_gray)
@@ -55,7 +55,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("MAP SCREEN"));
 }
 
 ///
-if level<41
+if level<44
 {
 if level=21 draw_set_color(c_maroon) else draw_set_color(c_red)
 draw_text(10, yy++ * 10, string_hash_to_newline("CHARACTER DATA"));
@@ -98,7 +98,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("BULL RUN"));
 if level=40 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("STRENGTH GAME"));
 }
-if level<61
+if level<64
 {
 if level=41 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("TEST 1"));
@@ -161,7 +161,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=70 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 }
-if level<71
+if level<74
 {
 if level=71 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("MULTI 1"));
