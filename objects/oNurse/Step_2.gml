@@ -81,7 +81,7 @@ bomb.spdX=clamp(bomb.spdX,-9999,-1.5)
 bomb.ground=0 
 bomb.weapon_pal=current_pal bomb.my_pal_sprite=my_pal_sprite
 bomb.spdZ=-1*(point_distance(x,0,targetX,0)/32)
-
+bomb.harmEnemy=0
 bomb.trigger=1
 
 if current_pal=10 {bombRecharge=300+choose(320,340,360,380,400)

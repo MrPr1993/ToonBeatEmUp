@@ -10,7 +10,7 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,5200,1)
 
 bgc=layer_background_get_id(layer_get_id("BG"));
-layer_background_change(bgc,bg_sky6)
+layer_background_change(bgc,background13)
 
 
 en1=instance_create_depth(4390,160,-1,oAreaSpawner)

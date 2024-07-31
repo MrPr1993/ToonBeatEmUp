@@ -1010,27 +1010,45 @@ if global.MultiStage=-1 {oControl.charselectgo=1 diftext="RANDOM"
 	
 	global.StageGoing=choose(rm_arena,rm_stage1multi)
 	if global.StageGoing=rm_stage1multi if global.UnlockStage[1]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage2bmulti if global.UnlockStage[2]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage2amulti if global.UnlockStage[3]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage2cmulti if global.UnlockStage[4]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage3bmulti if global.UnlockStage[5]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage3amulti if global.UnlockStage[6]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage3cmulti if global.UnlockStage[7]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage4bmulti if global.UnlockStage[8]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage4amulti if global.UnlockStage[9]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage4cmulti if global.UnlockStage[10]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage5bmulti if global.UnlockStage[11]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage5amulti if global.UnlockStage[12]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage5cmulti if global.UnlockStage[13]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage6bmulti if global.UnlockStage[14]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage6amulti if global.UnlockStage[15]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage6cmulti if global.UnlockStage[16]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage7multi if global.UnlockStage[18]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage8multi if global.UnlockStage[20]=0 global.StageGoing=rm_arena
+	
 	
 	} ///Random
 if global.MultiStage=0 {oControl.charselectgo=1 diftext="ARENA"} ///Random
 if global.MultiStage=1 {oControl.charselectgo=global.UnlockStage[1] global.StageGoing=rm_stage1multi diftext="DOWNTOWN STREET" } ///Random
-if global.MultiStage=2 {oControl.charselectgo=global.UnlockStage[2] diftext="AIRPORT CATWALK" } ///Random
-if global.MultiStage=3 {oControl.charselectgo=global.UnlockStage[3] diftext="SEA CRUISE SHIP" } ///Random
-if global.MultiStage=4 {oControl.charselectgo=global.UnlockStage[4] diftext="EL LOCO DOS" } ///Random
-if global.MultiStage=5 {oControl.charselectgo=global.UnlockStage[5] diftext="ANNA MARI'S MANSION" } ///Random
-if global.MultiStage=6 {oControl.charselectgo=global.UnlockStage[6] diftext="MASHED MUSEUM" } ///Random
-if global.MultiStage=7 {oControl.charselectgo=global.UnlockStage[7] diftext="LUCKY DOJO CASINO" } ///Random
-if global.MultiStage=8 {oControl.charselectgo=global.UnlockStage[8] diftext="SWAMP OF THE WITCH" } ///Random
-if global.MultiStage=9 {oControl.charselectgo=global.UnlockStage[9] diftext="DUCK'S CARNIVAL" } ///Random
-if global.MultiStage=10 {oControl.charselectgo=global.UnlockStage[10] diftext="WAYSIDE BEACH" } ///Random
-if global.MultiStage=11 {oControl.charselectgo=global.UnlockStage[11] diftext="MARTIAN UFO" } ///Random
-if global.MultiStage=12 {oControl.charselectgo=global.UnlockStage[12] diftext="PRINCE'S COLISSEUM" } ///Random
-if global.MultiStage=13 {oControl.charselectgo=global.UnlockStage[13] diftext="UNDERGROUND TEMPLE" } ///Random
-if global.MultiStage=14 {oControl.charselectgo=global.UnlockStage[14] diftext="SNOWY PALACE" } ///Random
-if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[15] diftext="GOBLIN CAVERN" } ///Random
-if global.MultiStage=16 {oControl.charselectgo=global.UnlockStage[16] diftext="FLUFFY CLOUDY SKY" } ///Random
-if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[18] diftext="MAD DOCTOR'S LAB" } ///Random
-if global.MultiStage=18 {oControl.charselectgo=global.UnlockStage[20] diftext="THE DASTARDLY BLIMP" } ///Random
+if global.MultiStage=2 {oControl.charselectgo=global.UnlockStage[2] global.StageGoing=rm_stage2bmulti diftext="AIRPORT CATWALK" } ///Random
+if global.MultiStage=3 {oControl.charselectgo=global.UnlockStage[3] global.StageGoing=rm_stage2amulti diftext="SEA CRUISE SHIP" } ///Random
+if global.MultiStage=4 {oControl.charselectgo=global.UnlockStage[4] global.StageGoing=rm_stage2cmulti diftext="EL LOCO DOS" } ///Random
+if global.MultiStage=5 {oControl.charselectgo=global.UnlockStage[5] global.StageGoing=rm_stage3bmulti diftext="ANNA MARI'S GRAVES" } ///Random
+if global.MultiStage=6 {oControl.charselectgo=global.UnlockStage[6] global.StageGoing=rm_stage3amulti diftext="MASHED MUSEUM" } ///Random
+if global.MultiStage=7 {oControl.charselectgo=global.UnlockStage[7] global.StageGoing=rm_stage3cmulti diftext="LUCKY DOJO CASINO" } ///Random
+if global.MultiStage=8 {oControl.charselectgo=global.UnlockStage[8] global.StageGoing=rm_stage4bmulti diftext="SWAMP OF THE WITCH" } ///Random
+if global.MultiStage=9 {oControl.charselectgo=global.UnlockStage[9] global.StageGoing=rm_stage4amulti diftext="DUCK CARNIVAL" } ///Random
+if global.MultiStage=10 {oControl.charselectgo=global.UnlockStage[10] global.StageGoing=rm_stage4cmulti diftext="WAYSIDE BEACH" } ///Random
+if global.MultiStage=11 {oControl.charselectgo=global.UnlockStage[11] global.StageGoing=rm_stage5bmulti diftext="MARTIAN UFO" } ///Random
+if global.MultiStage=12 {oControl.charselectgo=global.UnlockStage[12] global.StageGoing=rm_stage5amulti diftext="PRINCE'S SEA" } ///Random
+if global.MultiStage=13 {oControl.charselectgo=global.UnlockStage[13] global.StageGoing=rm_stage5cmulti diftext="BURNING DESERT" } ///Random
+if global.MultiStage=14 {oControl.charselectgo=global.UnlockStage[14] global.StageGoing=rm_stage6bmulti diftext="SNOWY MOUNTAIN" } ///Random
+if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[15] global.StageGoing=rm_stage6amulti diftext="GOBLIN CAVERN" } ///Random
+if global.MultiStage=16 {oControl.charselectgo=global.UnlockStage[16] global.StageGoing=rm_stage6cmulti diftext="FLUFFY CLOUDY SKY" } ///Random
+if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[18] global.StageGoing=rm_stage7multi diftext="MAD DOCTOR'S LAB" } ///Random
+if global.MultiStage=18 {oControl.charselectgo=global.UnlockStage[20] global.StageGoing=rm_stage8multi diftext="THE DASTARDLY BLIMP" } ///Random
 
 if oControl.charselectgo=0 diftext="LOCKED"
 
