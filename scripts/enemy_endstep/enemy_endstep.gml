@@ -41,7 +41,7 @@ function enemy_endstep() {
 	if noMask=1
 	mask_index=mask_none
 
-
+hp=clamp(hp,0,9999)
 
 
 

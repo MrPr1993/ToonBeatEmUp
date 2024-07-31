@@ -17,13 +17,10 @@ oPlayer.x-=64
 
 
 
-timeline_skip(178)
-//__view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + 11000)
-//spawner_followset("WaveSet1",0,11000,1)
-//__view_set( e__VW.XView, 0, 11000)
-with oEnemySpawner
-{
-skipview=2
-skipviewX=11360
-oControl.camX=11360
-}
+//timeline_skip(178)
+//with oEnemySpawner
+//{
+//skipview=2
+//skipviewX=11360
+//oControl.camX=11360
+//}

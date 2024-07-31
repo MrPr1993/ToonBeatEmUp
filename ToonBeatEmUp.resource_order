@@ -2029,6 +2029,7 @@
     {"name":"spr_dragonmaiden_headflat","order":11,"path":"sprites/spr_dragonmaiden_headflat/spr_dragonmaiden_headflat.yy",},
     {"name":"spr_dragonmaiden_headhit","order":7,"path":"sprites/spr_dragonmaiden_headhit/spr_dragonmaiden_headhit.yy",},
     {"name":"spr_dragonmaiden_headhurt","order":6,"path":"sprites/spr_dragonmaiden_headhurt/spr_dragonmaiden_headhurt.yy",},
+    {"name":"spr_dragonmaiden_shadow","order":26,"path":"sprites/spr_dragonmaiden_shadow/spr_dragonmaiden_shadow.yy",},
     {"name":"spr_dragonmaiden_tail","order":2,"path":"sprites/spr_dragonmaiden_tail/spr_dragonmaiden_tail.yy",},
     {"name":"spr_drink","order":11,"path":"sprites/spr_drink/spr_drink.yy",},
     {"name":"spr_duck_attack1","order":8,"path":"sprites/spr_duck_attack1/spr_duck_attack1.yy",},

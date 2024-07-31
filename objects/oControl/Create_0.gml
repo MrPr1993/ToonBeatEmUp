@@ -7,11 +7,11 @@ playNO=1
 camX=0;
 camY=0;
 
+wallY=160; ///used for certain moves
+
 allPlayersMid=0;
 allPlayersEdge=0;
 allPlayersMove=0;
-
-
 
 colorshade_setup()
 

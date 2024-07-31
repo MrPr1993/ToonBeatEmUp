@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":20,
   "bbox_left":0,
-  "bbox_right":199,
+  "bbox_right":399,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -23,7 +23,7 @@
   ],
   "name":"spr_dragonmaiden_handshadow",
   "nineSlice":null,
-  "origin":3,
+  "origin":4,
   "parent":{
     "name":"6DragonMaiden",
     "path":"folders/8 - Bosses/6DragonMaiden.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":200,
     "yorigin":10,
   },
   "swatchColours":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":200,
+  "width":400,
 }

@@ -18,7 +18,7 @@ with oEnemySpawner {timeline=tm_carnival event_user(0)}
 with oControl
 {
 stagename="CLOWNY HONKY CARNIVAL"		
-
+wallY=192
 global.PrevStage4=9
 prevstagecheck1=1
 prevstagecheck2=global.PrevStage2

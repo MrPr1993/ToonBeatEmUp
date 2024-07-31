@@ -2279,6 +2279,7 @@
     {"id":{"name":"spr_dragonmaiden_headflat","path":"sprites/spr_dragonmaiden_headflat/spr_dragonmaiden_headflat.yy",},},
     {"id":{"name":"spr_dragonmaiden_headhit","path":"sprites/spr_dragonmaiden_headhit/spr_dragonmaiden_headhit.yy",},},
     {"id":{"name":"spr_dragonmaiden_headhurt","path":"sprites/spr_dragonmaiden_headhurt/spr_dragonmaiden_headhurt.yy",},},
+    {"id":{"name":"spr_dragonmaiden_shadow","path":"sprites/spr_dragonmaiden_shadow/spr_dragonmaiden_shadow.yy",},},
     {"id":{"name":"spr_dragonmaiden_tail","path":"sprites/spr_dragonmaiden_tail/spr_dragonmaiden_tail.yy",},},
     {"id":{"name":"spr_drink","path":"sprites/spr_drink/spr_drink.yy",},},
     {"id":{"name":"spr_duck_attack1","path":"sprites/spr_duck_attack1/spr_duck_attack1.yy",},},

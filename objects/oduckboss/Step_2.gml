@@ -40,28 +40,28 @@ duck3=instance_create_depth(0,0,-1,oFakeDuck)
 switch(choosepos)
 {
 case 1:
-x=oControl.camX+64 y=160+16
-duck1.x=oControl.camX+320-64 duck1.y=160+16
-duck2.x=oControl.camX+64 duck2.y=160+64
-duck3.x=oControl.camX+320-64 duck3.y=160+64
+x=oControl.camX+64 y=oControl.wallY+16
+duck1.x=oControl.camX+320-64 duck1.y=oControl.wallY+16
+duck2.x=oControl.camX+64 duck2.y=oControl.wallY+64
+duck3.x=oControl.camX+320-64 duck3.y=oControl.wallY+64
 break;	
 case 2:
-x=oControl.camX+320-64 y=160+16
-duck1.x=oControl.camX+64 duck1.y=160+16
-duck2.x=oControl.camX+64 duck2.y=160+64
-duck3.x=oControl.camX+320-64 duck3.y=160+64
+x=oControl.camX+320-64 y=oControl.wallY+16
+duck1.x=oControl.camX+64 duck1.y=oControl.wallY+16
+duck2.x=oControl.camX+64 duck2.y=oControl.wallY+64
+duck3.x=oControl.camX+320-64 duck3.y=oControl.wallY+64
 break;
 case 3:
-x=oControl.camX+64 y=160+64
-duck1.x=oControl.camX+320-64 duck1.y=160+16
-duck2.x=oControl.camX+64 duck2.y=160+16
-duck3.x=oControl.camX+320-64 duck3.y=160+64
+x=oControl.camX+64 y=oControl.wallY+64
+duck1.x=oControl.camX+320-64 duck1.y=oControl.wallY+16
+duck2.x=oControl.camX+64 duck2.y=oControl.wallY+16
+duck3.x=oControl.camX+320-64 duck3.y=oControl.wallY+64
 break;
 case 4:
-x=oControl.camX+320-64 y=160+64
-duck1.x=oControl.camX+320-64 duck1.y=160+16
-duck2.x=oControl.camX+64 duck2.y=160+64
-duck3.x=oControl.camX+64 duck3.y=160+16
+x=oControl.camX+320-64 y=oControl.wallY+64
+duck1.x=oControl.camX+320-64 duck1.y=oControl.wallY+16
+duck2.x=oControl.camX+64 duck2.y=oControl.wallY+64
+duck3.x=oControl.camX+64 duck3.y=oControl.wallY+16
 break;
 }
 

@@ -78,6 +78,8 @@ lockSPD=1
 
 lockX=oControl.camX+360-64
 
+shadowSpr=spr_dragonmaiden_shadow;
+
 ///Tail Script
 tail=instance_create_depth(oControl.camX+160,176,-1,oCameoChar) tail.sprite_index=mask_none//spr_dragonmaiden_tail
 tail.isDepth=0 tail.depth=16777214 tail.shadow=mask_none
@@ -94,7 +96,7 @@ handL.anim=9999
 enemyID=174
 
 if oControl.betatest=1 if keyboard_check(vk_control)
-{x=body.x tail.x=x lockPos=0 isdepth=0 depth=16777213
+{x=body.x tail.x=x lockPos=0 isdepth=0 depth=16777213 shadowSpr=mask_none
 canmove=0 anim=100
 z=1500
 body.z=1500 tail.z=1500 necc.z=1500

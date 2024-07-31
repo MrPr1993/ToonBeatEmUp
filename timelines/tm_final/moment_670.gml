@@ -92,8 +92,9 @@ layer_set_visible("FinalPhase",1)
 if instance_exists(oPizza) with oPizza instance_destroy()
 with oPlayer
 {
-spawnID=-1
-weaponspawn=-1
+spawnID=-1;
+weaponspawn=-1;
+weaponspr=-1;
 }
 
 skybg=layer_background_get_id(layer_get_id("BG"));

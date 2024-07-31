@@ -23,8 +23,11 @@ or (oniID1.hp<=0 and oniID2.hp<=0)
 or (oniID1.dead=1 and oniID2.dead=1)
 {hp=0 dead=1 PlaySoundNoStack(snd_oni2)
 	if instance_exists(oEnemy1) with oEnemy1 if dead=0 {hp=0 DeathCryOnce=1 HitType=1 event_user(0)}
+	if isBoss=1
+	{
 	room_speed=10 
-	oControl.alarm[9]=30	
+	oControl.alarm[9]=30
+	}
 	}
 }
 

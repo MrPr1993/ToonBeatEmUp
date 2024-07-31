@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":87,
   "bbox_left":0,
-  "bbox_right":193,
+  "bbox_right":319,
   "bbox_top":15,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -23,7 +23,7 @@
   ],
   "name":"spr_dragonmaiden_handattack1",
   "nineSlice":null,
-  "origin":6,
+  "origin":9,
   "parent":{
     "name":"6DragonMaiden",
     "path":"folders/8 - Bosses/6DragonMaiden.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":120,
     "yorigin":89,
   },
   "swatchColours":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":194,
+  "width":320,
 }

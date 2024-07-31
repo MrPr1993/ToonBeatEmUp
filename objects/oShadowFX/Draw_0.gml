@@ -42,6 +42,12 @@ draw_sprite(shadow,0,x,y)
 
 if instance_exists(parEnemy) with parEnemy if visible and hasShadow=1 and !place_meeting(x,y,oFallHole) and fallHole=0
 and !place_meeting(x,y,oHeight32) if name!="NULL"
+if object_index=oDragonMaiden
+{
+draw_sprite_ext(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2,image_xscale,1,0,c_white,1)
+}
+else
+{
 if place_meeting(x,y,oWaterFX)
 {if z>waterMax
 draw_sprite(waterhoverSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2+waterMax)
@@ -50,7 +56,7 @@ draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPo
 }
 else
 draw_sprite(shadowSpr,0,x+((floorPosX[image_index]+waistPosX[image_index]+headPosX[image_index])*SpritePos)*image_xscale,y+trainz+2)
-
+}
 
 
 if instance_exists(oBarrel) with oBarrel if visible and !place_meeting(x,y,oFallHole)

@@ -17,6 +17,9 @@ canmove=0
 
 dead=0
 
+isBoss=1
+specialBossState=0
+
 curtain1=instance_create_depth(4880, 16, 16777214, oFlashFX) with curtain1
 {animEnd=0 sprite_index=spr_oni_curtain alarm[0]=0 isDepth=0 depth=16777214}
 curtain2=instance_create_depth(4880+96, 16, 16777214, oFlashFX) with curtain2

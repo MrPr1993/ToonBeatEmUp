@@ -356,12 +356,13 @@ necc.sprite_index=spr_dragonmaiden_headded
 frame_set(0,0,0.01) if AnimFrame=1 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
 frame_set(1,0,0.01) if AnimFrame=2 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
 frame_set(2,0,0.01) if AnimFrame=3 {PlaySound(snd_heavystep) oControl.quakeFXTime=10}
-frame_set(3,0,0.25) if AnimFrame=4 {oControl.quakeFXTime=10 PlaySound(snd_dragon1)}
+frame_set(3,0,0.25) if AnimFrame=4 {oControl.quakeFXTime=10 }
 if AnimFrame>3 {body.x=oControl.camX+160 necc.x=oControl.camX+160 body.z=lerp(body.z,0,0.04) tail.z=lerp(tail.z,body.z,0.01) z=body.z necc.z=body.z-170 }
 else {z=body.z}
 
 frame_set(4,0,0.01) if body.z>10 if AnimFrame>4 AnimFrame=4.1
-if AnimFrame=5 {PlaySound(snd_dragon2) isDepth=1 shadowSpr=spr_midshadow x=oControl.camX+320+128 sprite_index=spr_dragonmaiden_head image_xscale=-1}
+if AnimFrame=5 {PlaySound(snd_dragon1)
+	isDepth=1 shadowSpr=spr_dragonmaiden_shadow x=oControl.camX+320+128 sprite_index=spr_dragonmaiden_head image_xscale=-1}
 frame_set(5,0,0.05) if AnimFrame>5.5 {image_xscale=-1 x=lerp(x,oControl.camX+320-96,0.01)}
 frame_set(6,0,0.2)
 frame_set(7,0,0.2)
