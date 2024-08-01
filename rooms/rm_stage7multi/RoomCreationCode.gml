@@ -1,4 +1,4 @@
-musicplaystart(msc_stage1)
+musicplaystart(msc_lab)
 oControl.showMap=0
 oControl.isMulti=1
 global.HiScoreStage=-1

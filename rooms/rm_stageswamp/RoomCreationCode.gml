@@ -19,9 +19,9 @@ with oControl
 {
 stagename="DEEP DEAD SWAMPS"		
 
-global.PrevStage4=10
+global.PrevStage4=8
 prevstagecheck1=1
 prevstagecheck2=global.PrevStage2
 prevstagecheck3=global.PrevStage3
-stagecheck=10
+stagecheck=8
 }

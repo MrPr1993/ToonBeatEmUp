@@ -20,9 +20,9 @@ with oControl
 {
 stagename="DANGEROUS SCIENCE"		
 
-global.PrevStage7=17
+global.PrevStage7=18
 prevstagecheck1=global.PrevStage4
 prevstagecheck2=global.PrevStage5
 prevstagecheck3=global.PrevStage6
-stagecheck=17
+stagecheck=18
 }

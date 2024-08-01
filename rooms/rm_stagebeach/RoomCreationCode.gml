@@ -33,11 +33,11 @@ with oControl
 {
 stagename="DOWN SIDE BEACH"		
 
-global.PrevStage4=8
+global.PrevStage4=10
 prevstagecheck1=1
 prevstagecheck2=global.PrevStage2
 prevstagecheck3=global.PrevStage3
-stagecheck=8
+stagecheck=10
 }
 
 //oPlayer.y=480
