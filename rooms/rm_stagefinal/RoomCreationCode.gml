@@ -20,9 +20,9 @@ with oControl
 {
 stagename="ZEPPELIN FINALE"	
 	
-global.PrevStage8=20
+global.PrevStage8=18
 prevstagecheck1=global.PrevStage5
 prevstagecheck2=global.PrevStage6
 prevstagecheck3=global.PrevStage7
-stagecheck=20
+stagecheck=18
 }

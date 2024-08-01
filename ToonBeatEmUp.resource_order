@@ -1103,6 +1103,7 @@
     {"name":"snd_hitground","order":13,"path":"sounds/snd_hitground/snd_hitground.yy",},
     {"name":"snd_hitgroundheavy","order":14,"path":"sounds/snd_hitgroundheavy/snd_hitgroundheavy.yy",},
     {"name":"snd_hitgroundmetal","order":15,"path":"sounds/snd_hitgroundmetal/snd_hitgroundmetal.yy",},
+    {"name":"snd_homerun","order":33,"path":"sounds/snd_homerun/snd_homerun.yy",},
     {"name":"snd_hop1","order":57,"path":"sounds/snd_hop1/snd_hop1.yy",},
     {"name":"snd_hwolf2","order":1,"path":"sounds/snd_hwolf2/snd_hwolf2.yy",},
     {"name":"snd_hwolf3","order":2,"path":"sounds/snd_hwolf3/snd_hwolf3.yy",},

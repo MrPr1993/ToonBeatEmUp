@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.218299,
+  "duration":0.161088,
   "name":"snd_cut",
   "parent":{
     "name":"Items",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_cut",
+  "soundFile":"snd_cut.wav",
   "type":0,
   "volume":1.0,
 }

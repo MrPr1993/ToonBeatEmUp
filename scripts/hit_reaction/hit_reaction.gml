@@ -22,12 +22,15 @@ event_user(12)
 }
 
 ////Reaction to baseball bat. If 0, the character will be sent flying. It won't apply to bosses.
-if HitType=19935
+if HitType=19935 or HitType=19936
 {
 if hp<=0
 {
 if isBoss=0
 {
+///For baseball
+if HitType=19935 {oControl.quakeFX=10 PlaySoundNoStack(snd_homerun)}
+	
 	canmove=0
 	hurt=1
 	shaketime=30
@@ -35,9 +38,11 @@ if isBoss=0
 	visible=0 disappearTime=0 alarm[2]=90
 	
 	///use fake body to fly off-screen
-flashFX(x-8*image_xscale,y,z-4,ThrownSpr,0,0,90,image_xscale,1,c_white,1) fx.z=z
+//flashFX(x-8*image_xscale,y,z-4,ThrownSpr,0,0,90,image_xscale,1,c_white,1)
+fx=instance_create_depth(x,y,-1,oCutHalfFX) fx.type=1 fx.sprite_index=ThrownSpr
+fx.z=z-height/2
 fx.zSpeed=-4 fx.my_pal_sprite=my_pal_sprite fx.current_pal=current_pal
-fx.hasShadow=1 fx.shadow=shadowSpr fx.haspal=1
+fx.hasShadow=1 fx.shadow=shadowSpr// fx.haspal=1
 
 	if hitBack=0
 	fx.hspeed=8*-image_xscale

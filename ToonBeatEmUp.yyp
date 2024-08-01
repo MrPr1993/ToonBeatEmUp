@@ -1322,6 +1322,7 @@
     {"id":{"name":"snd_hitground","path":"sounds/snd_hitground/snd_hitground.yy",},},
     {"id":{"name":"snd_hitgroundheavy","path":"sounds/snd_hitgroundheavy/snd_hitgroundheavy.yy",},},
     {"id":{"name":"snd_hitgroundmetal","path":"sounds/snd_hitgroundmetal/snd_hitgroundmetal.yy",},},
+    {"id":{"name":"snd_homerun","path":"sounds/snd_homerun/snd_homerun.yy",},},
     {"id":{"name":"snd_hop1","path":"sounds/snd_hop1/snd_hop1.yy",},},
     {"id":{"name":"snd_hwolf1","path":"sounds/snd_hwolf1/snd_hwolf1.yy",},},
     {"id":{"name":"snd_hwolf2","path":"sounds/snd_hwolf2/snd_hwolf2.yy",},},

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.2322,
+  "duration":0.0,
   "name":"snd_hop1",
   "parent":{
     "name":"General",

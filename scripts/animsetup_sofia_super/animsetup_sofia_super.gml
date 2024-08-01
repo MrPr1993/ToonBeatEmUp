@@ -110,7 +110,7 @@ global.MultiSuper=isPlayer
 	 if hp<=0
 	other.PlayerScore+=points
 	else other.PlayerScore+=pointshit
-	HitType=1 event_user(0)
+	HitType=19936 event_user(0)
 	}
     
 	///Animation End

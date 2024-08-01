@@ -129,9 +129,9 @@ if mapSelX=5 and mapSelY=1 {global.StageGoing=rm_stageclouds mapSXlerp=640-102 m
 	draw_sprite_ext(bg_mapB,15,486,141,1,1,0,c_white,1-1*lockedMap[16])
 	}else draw_sprite_ext(bg_mapB,15,486,141,1,1,0,c_white,1-0.8*lockedMap[16])
 //G
-if mapSelX=6 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121  mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
-if mapSelX=6 and mapSelY=0 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
-if mapSelX=6 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1  mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121  mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=0 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1  mapSName="STAGE 7\nDANGEROUS SCIENCE"}
 
 if mapSelX=6
 draw_sprite_ext(bg_mapB,16,516,48,1,1,0,c_white,1-1*lockedMap[18])
@@ -140,14 +140,14 @@ else draw_sprite_ext(bg_mapB,16,516,48,1,1,0,c_white,1-0.8*lockedMap[18])
 //if mapSelX=6 and mapSelY=0 {mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 1G"}
 //if mapSelX=6 and mapSelY=1 {mapSXlerp=640-24 mapSYlerp=166 if lockedMap[19]=1 mapSName="STAGE 2G"}
 //H
-if mapSelX=7 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[20] mapDif=global.LevelDif[20] if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
-if mapSelX=7 and mapSelY=0 {global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[20] mapDif=global.LevelDif[20] if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
-if mapSelX=7 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[20] mapDif=global.LevelDif[20] if lockedMap[20]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=0 {global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
 
 if mapSelX=7
-draw_sprite_ext(bg_mapB,17,567,44,1,1,0,c_white,1-1*lockedMap[20])
+draw_sprite_ext(bg_mapB,17,567,44,1,1,0,c_white,1-1*lockedMap[18])
 else
-draw_sprite_ext(bg_mapB,17,567,44,1,1,0,c_white,1-0.8*lockedMap[20])
+draw_sprite_ext(bg_mapB,17,567,44,1,1,0,c_white,1-0.8*lockedMap[18])
 
 
 x=mapSX

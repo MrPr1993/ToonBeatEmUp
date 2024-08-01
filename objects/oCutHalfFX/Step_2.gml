@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+switch(type)
+{
+case 0: ///In Half
 x+=sentflying
 z+=zSpeed
 depth=-y
@@ -22,5 +25,22 @@ alarm[2]=30
 }
 }
 if z>0 {zSpeed=0 ground=1 	sentflying=0}
+break;
+case 1: ///Sent Flying
+x+=sentflying
+z+=zSpeed
+	if hitBack=0
+	{
+	image_index+=0.5
+	if image_index>=15 image_index=11}
+	else
+	{
+	image_index-=0.5
+	if image_index<11 image_index=15-0.25
+	}
+	
+	if x!=clamp(x,oControl.camX-100,oControl.camX+320+100) instance_destroy()
 
 
+break;
+}

@@ -29,4 +29,5 @@ colorshade_setup()
 	
 	shadow=spr_shadow
 	
+	type=0
 	

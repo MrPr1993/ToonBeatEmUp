@@ -91,5 +91,7 @@ PickupSound=snd_pickitem
 carrySpr=sprite_index
 carryIndex=0
 
+carryIce=0;
+
 
 }

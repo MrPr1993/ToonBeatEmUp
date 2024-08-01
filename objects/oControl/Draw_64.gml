@@ -743,11 +743,11 @@ draw_set_halign(fa_center) //▲►▼◄
 //draw_text(160,184+40-4-24,string_hash_to_newline("HIGH SCORE"))
 }
 
-draw_text(160,184+24,string_hash_to_newline("©2023 MRPR1993"))
+draw_text(160,184+24,string_hash_to_newline("©2024 MRPR1993"))
 if global.Continues=-1
-draw_text(160,184+40,string_hash_to_newline("CREDIT ∞"))
+draw_text(160,1184+40,string_hash_to_newline("CREDIT ∞"))
 else
-draw_text(160,184+40,string_hash_to_newline("CREDIT "+string(global.Continues)))
+draw_text(160,1184+40,string_hash_to_newline("CREDIT "+string(global.Continues)))
 draw_set_halign(fa_left)
 
 draw_set_valign(fa_bottom)
@@ -1025,8 +1025,8 @@ if global.MultiStage=-1 {oControl.charselectgo=1 diftext="RANDOM"
 	if global.StageGoing=rm_stage6bmulti if global.UnlockStage[14]=0 global.StageGoing=rm_arena
 	if global.StageGoing=rm_stage6amulti if global.UnlockStage[15]=0 global.StageGoing=rm_arena
 	if global.StageGoing=rm_stage6cmulti if global.UnlockStage[16]=0 global.StageGoing=rm_arena
-	if global.StageGoing=rm_stage7multi if global.UnlockStage[18]=0 global.StageGoing=rm_arena
-	if global.StageGoing=rm_stage8multi if global.UnlockStage[20]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage7multi if global.UnlockStage[17]=0 global.StageGoing=rm_arena
+	if global.StageGoing=rm_stage8multi if global.UnlockStage[18]=0 global.StageGoing=rm_arena
 	
 	
 	} ///Random
@@ -1047,8 +1047,8 @@ if global.MultiStage=13 {oControl.charselectgo=global.UnlockStage[13] global.Sta
 if global.MultiStage=14 {oControl.charselectgo=global.UnlockStage[14] global.StageGoing=rm_stage6bmulti diftext="SNOWY MOUNTAIN" } ///Random
 if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[15] global.StageGoing=rm_stage6amulti diftext="GOBLIN CAVERN" } ///Random
 if global.MultiStage=16 {oControl.charselectgo=global.UnlockStage[16] global.StageGoing=rm_stage6cmulti diftext="FLUFFY CLOUDY SKY" } ///Random
-if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[18] global.StageGoing=rm_stage7multi diftext="MAD DOCTOR'S LAB" } ///Random
-if global.MultiStage=18 {oControl.charselectgo=global.UnlockStage[20] global.StageGoing=rm_stage8multi diftext="THE DASTARDLY BLIMP" } ///Random
+if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[17] global.StageGoing=rm_stage7multi diftext="MAD DOCTOR'S LAB" } ///Random
+if global.MultiStage=18 {oControl.charselectgo=global.UnlockStage[18] global.StageGoing=rm_stage8multi diftext="THE DASTARDLY BLIMP" } ///Random
 
 if oControl.charselectgo=0 diftext="LOCKED"
 

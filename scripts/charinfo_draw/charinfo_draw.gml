@@ -241,6 +241,7 @@ if dataRow=4
 draw_sprite_ext(spr_filmstage,enemyPortraitIndex,72,52,1,1,0,c_white*unlockedChar[charNO],1)
 
 
+
 }
 
 pal_swap_reset();
