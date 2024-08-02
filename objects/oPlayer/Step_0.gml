@@ -155,8 +155,23 @@ or (key_attack and key_jump_hold)
 or (key_jump and key_charge)
 {
 {
+if ground
+{
 if weaponspawn!=-1 or carry=1 anim=24 else event_user(3)
-event_user(5)}
+event_user(5)
+}
+else
+{
+if weaponspawn!=-1 or carry=1 anim=24
+else
+{
+canmove=0
+	AnimFrame=0
+	anim=15
+}
+}
+
+}
 }
 else
 {

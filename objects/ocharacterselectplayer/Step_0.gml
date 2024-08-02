@@ -123,6 +123,17 @@ if global.StageSelect=0 room_goto(rm_menu) else
 if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 }
 
+if global.TrainingRoom=1 or global.MultiVS=2 or global.SkipDifficulty=1
+{
+	difficultymode=0 oControl.charsetting=1
+		oCharacterSelectPlayer.hspeed=-32
+	
+introtextaddspd=-32
+	
+layer_hspeed("BGbricks",-32)
+	alarm[0]=20
+}
+
 if introbuffer=0
 {
 if global.TrainingRoom=1 or global.MultiVS=2 or global.SkipDifficulty=1 or
@@ -144,6 +155,9 @@ layer_hspeed("BGbricks",-32)
 	alarm[0]=20
 
 }
+
+
+
 }
 }
 }

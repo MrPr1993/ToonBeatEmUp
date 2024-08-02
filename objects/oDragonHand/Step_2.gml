@@ -46,54 +46,48 @@ else {image_xscale=-1 lockX=oControl.camX+320+90}
 
 x=lockX
 
-anim=choose(11,12,13,14)
+anim=choose(11,12,13,14) anim=11
 lockZ=0 z=0
 AnimFrame=0 specialtimes[0]=0  specialtimes[1]=0
 }
 
 if anim=11 ///Attack
 {
-if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]=0 specialtimes[6]=0 lockX=x sprite_index=spr_dragonmaiden_hand}
+if AnimFrame=0 {x-=40*image_xscale AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]=0 specialtimes[6]=0 lockX=x sprite_index=spr_dragonmaiden_hand}
 	selfatk.damage=0.25 selfatk.MoveType=1
 	
 	atkcol_set(136,0,0,3.75,1,88)
 	
-if specialtimes[0]<80
-{sprite_index=spr_dragonmaiden_hand 
+specialtimes[0]+=1;
 if specialtimes[0]<40
-{if image_xscale=1 lockX=lerp(lockX,oControl.camX-150,0.1) else lockX=lerp(lockX,oControl.camX+320+150,0.1)}
-lockY=lerp(lockY,targetEnemy.y,0.1)
-specialtimes[0]+=1 specialtimes[6]=point_distance(x,0,targetEnemy.x-160*image_xscale,0)
+{lockX+=1*image_xscale
+sprite_index=spr_dragonmaiden_hand 
 }
-	
-	if specialtimes[0]=40
-	{lockZ=lerp(lockZ,-48,0.05)
-	if x=clamp(lockX,oControl.camX-180,oControl.camX+320+180)
-	{lockY=lerp(lockY,targetEnemy.y,0.1)
-lockX-=4*image_xscale
+else
+if specialtimes[0]<80
+{lockX-=0.1*image_xscale specialtimes[6]=point_distance(x,0,targetEnemy.x,0)
+sprite_index=spr_dragonmaiden_hand 
+}
+else
+if specialtimes[0]<160
+{
+if specialtimes[5]<specialtimes[6]
+or specialtimes[5]<160
+{selfatk.atk=1 atk=1
+lockX+=16*image_xscale 
+specialtimes[5]+=16
+}
+else {specialtimes[0]=200 selfatk.atk=0 oControl.quakeFXTime=10}
+sprite_index=spr_dragonmaiden_handattack1
+}
 
-	} else {AnimFrame=0.5 specialtimes[0]=200}
+if specialtimes[0]>200
+{	
+if specialtimes[0]>260 {canmove=1 anim=0}
+}
+
+x=lockX	
 	}
-if specialtimes[0]=200
-	{sprite_index=spr_dragonmaiden_handattack1
-	lockZ=0
-	
-	frame_set(0,0,0) if AnimFrame<=2 {lockX+=16*image_xscale specialtimes[5]+=16 atk=1
-		
-	//if (image_xscale=1 and x>targetEnemy.x-100) or (image_xscale=-1 and x<targetEnemy.x+100)
-	//or (image_xscale=1 and x>oControl.camX-20) or (image_xscale=-1 and x<oControl.camX+320+20)
-	if specialtimes[5]>=specialtimes[6]
-	AnimFrame=2} else atk=0
-	frame_set(1,0,01)
-	if AnimFrame=2 {oControl.quakeFXTime=10}
-	frame_set(2,1,0.5)
-	frame_set(3,2,0.05)	
-	frame_set(4,1,0.01)
-	if AnimFrame>4.5 {canmove=1 anim=0}
-	
-if image_xscale=1 {lockX=clamp(lockX,x-9999999,oControl.camX+160)}
-else {lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
-	}}
 
 if anim=14 ///Flick
 {atkcol_set(111+53,0,-5,2.95,1,118)

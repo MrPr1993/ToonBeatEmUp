@@ -390,7 +390,7 @@ creditmoment="CHARACTER DESIGN BY\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
 else if creditsTime<7+6*8
 creditmoment="CONCEPT ART BY\n \nMRPR1993\nSHADES\nSED2116" ;
 else if creditsTime<7+6*9
-creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nSHADES" ;
+creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nSHADO\nSHADES" ;
 else
 {
 creditsCameoY-=0.18
@@ -436,7 +436,7 @@ var creditscameol=""+
 "\nKITE"+
 "\nTAKE2ACTION"+
 "\nASPIRING IDOL MERCURY"+
-"\n"+
+"\IKKIn"+
 "\n"+
 "\n"+
 "\n"
@@ -467,7 +467,7 @@ var creditscameor="\n"+
 "\nKENKA"+
 "\nGREEDYBOLT"+
 "\nFLAREJOLT"+
-"\n"+
+"\nBLUE MOBIUS"+
 "\n"+
 "\n"+
 "\n"+

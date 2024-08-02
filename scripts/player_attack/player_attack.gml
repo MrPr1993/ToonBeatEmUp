@@ -72,10 +72,7 @@ player_interact()
 		}
 	}
 	}
-	with selfatk
-	{
-	alarm[0]=4
-	}
+	//with selfatk{alarm[0]=4}
 	}
 	///
 
