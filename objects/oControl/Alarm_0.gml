@@ -7,7 +7,7 @@ and room!=rm_menu and room!=rm_settings and room!=rm_minigames and room!=rm_cuts
 and room!=rm_slotmachine and room!=rm_eatinggame and room!=rm_singgame and isNotStage=0
 {
 if oPlayer.dead=0
-{
+{if stagetime!=0 stagetime-=1;
 if time!=0 {time-=1-1*global.Cheat[12] alarm[0]=timeclick}
 else
 if timedead=1

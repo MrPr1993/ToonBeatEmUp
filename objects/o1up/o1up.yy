@@ -37,6 +37,9 @@
     "name":"spr_1up",
     "path":"sprites/spr_1up/spr_1up.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_selfatk",
+    "path":"sprites/spr_selfatk/spr_selfatk.yy",
+  },
   "visible":true,
 }

@@ -244,6 +244,7 @@
     {"name":"obj_tile_swapper_end","order":8,"path":"objects/obj_tile_swapper_end/obj_tile_swapper_end.yy",},
     {"name":"obj_tile_swapper_start","order":9,"path":"objects/obj_tile_swapper_start/obj_tile_swapper_start.yy",},
     {"name":"Object282","order":9,"path":"objects/Object282/Object282.yy",},
+    {"name":"Object312","order":23,"path":"objects/Object312/Object312.yy",},
     {"name":"object49","order":8,"path":"objects/object49/object49.yy",},
     {"name":"object84","order":9,"path":"objects/object84/object84.yy",},
     {"name":"object90","order":4,"path":"objects/object90/object90.yy",},

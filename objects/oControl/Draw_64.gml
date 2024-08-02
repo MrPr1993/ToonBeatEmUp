@@ -298,6 +298,7 @@ if keyboard_check_pressed(ord("1")) HurtTest-=1
 if keyboard_check_pressed(ord("3")) HurtTest+=1
 
 draw_set_halign(fa_right)
+draw_text_transformed(320,200,string_hash_to_newline("Stage Time "+string(stagetime)+"/"+string(stagetimemax)),0.5,0.5,0)
 draw_text_transformed(320,216,string_hash_to_newline("P Mid"+string(allPlayersMid)),0.5,0.5,0)
 draw_text_transformed(320,222,string_hash_to_newline("Players Edge"+string(allPlayersEdge)),0.5,0.5,0)
 draw_text_transformed(320,230,string_hash_to_newline("Players Move"+string(allPlayersMove)),0.5,0.5,0)

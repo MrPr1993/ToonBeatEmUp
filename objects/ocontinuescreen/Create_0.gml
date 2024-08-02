@@ -245,7 +245,8 @@ stageClearDelay=oControl.stageClearDelay
 stagePose=oControl.stagePose
 specialTimer=oControl.specialTimer
 timeClear=oControl.timeClear
-time=oControl.time
+//time=oControl.time
+time=(oControl.stagetime/oControl.stagetimemax)*100
 stageNext=oControl.stageNext
 finalStage=oControl.finalStage
 

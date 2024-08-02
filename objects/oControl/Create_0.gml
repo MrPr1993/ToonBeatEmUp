@@ -560,6 +560,9 @@ timedead=1
 timeclick=120
 alarm[0]=120
 
+stagetime=400;
+stagetimemax=stagetime;
+
 instance_create(-9999,-9999,parEnemy)
 instance_create(0,0,oShadowFX)
 instance_create(0,0,oSpotlightFX)
