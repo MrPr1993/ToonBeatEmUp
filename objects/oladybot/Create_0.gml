@@ -11,6 +11,8 @@ points=100
 
 rangeAtk=240
 
+isNoBlood=1
+
 OneAttack=2
 
 hp=0.5

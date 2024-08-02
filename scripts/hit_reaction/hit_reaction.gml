@@ -40,14 +40,14 @@ if HitType=19935 {oControl.quakeFX=10 PlaySoundNoStack(snd_homerun)}
 	///use fake body to fly off-screen
 //flashFX(x-8*image_xscale,y,z-4,ThrownSpr,0,0,90,image_xscale,1,c_white,1)
 fx=instance_create_depth(x,y,-1,oCutHalfFX) fx.type=1 fx.sprite_index=ThrownSpr
-fx.z=z-height/2
+fx.z=z-height/2 fx.image_index=11
 fx.zSpeed=-4 fx.my_pal_sprite=my_pal_sprite fx.current_pal=current_pal
 fx.hasShadow=1 fx.shadow=shadowSpr// fx.haspal=1
 
 	if hitBack=0
-	fx.hspeed=8*-image_xscale
+	fx.hspeed=16*-image_xscale
 	else
-	{fx.image_index=15 fx.hspeed=8*image_xscale}
+	{fx.image_index=15 fx.hspeed=16*image_xscale}
 	
 	exit;///
 

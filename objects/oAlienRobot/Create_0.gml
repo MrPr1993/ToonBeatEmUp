@@ -19,6 +19,8 @@ rangeAtk=180
 
 OneAttack=2
 
+isNoBlood=1
+
 hp=0.2
 maxhp=0.2
 

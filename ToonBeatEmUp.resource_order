@@ -2463,6 +2463,7 @@
     {"name":"spr_hitflash2","order":21,"path":"sprites/spr_hitflash2/spr_hitflash2.yy",},
     {"name":"spr_hitflash3","order":22,"path":"sprites/spr_hitflash3/spr_hitflash3.yy",},
     {"name":"spr_hitflash4","order":23,"path":"sprites/spr_hitflash4/spr_hitflash4.yy",},
+    {"name":"spr_hitflash5","order":34,"path":"sprites/spr_hitflash5/spr_hitflash5.yy",},
     {"name":"spr_hitground","order":10,"path":"sprites/spr_hitground/spr_hitground.yy",},
     {"name":"spr_hitwall","order":11,"path":"sprites/spr_hitwall/spr_hitwall.yy",},
     {"name":"spr_hole","order":28,"path":"sprites/spr_hole/spr_hole.yy",},

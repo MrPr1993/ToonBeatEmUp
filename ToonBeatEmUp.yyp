@@ -2720,6 +2720,7 @@
     {"id":{"name":"spr_hitflash2","path":"sprites/spr_hitflash2/spr_hitflash2.yy",},},
     {"id":{"name":"spr_hitflash3","path":"sprites/spr_hitflash3/spr_hitflash3.yy",},},
     {"id":{"name":"spr_hitflash4","path":"sprites/spr_hitflash4/spr_hitflash4.yy",},},
+    {"id":{"name":"spr_hitflash5","path":"sprites/spr_hitflash5/spr_hitflash5.yy",},},
     {"id":{"name":"spr_hitground","path":"sprites/spr_hitground/spr_hitground.yy",},},
     {"id":{"name":"spr_hitwall","path":"sprites/spr_hitwall/spr_hitwall.yy",},},
     {"id":{"name":"spr_hole","path":"sprites/spr_hole/spr_hole.yy",},},

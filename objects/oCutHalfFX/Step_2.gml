@@ -36,7 +36,7 @@ z+=zSpeed
 	else
 	{
 	image_index-=0.5
-	if image_index<11 image_index=15-0.25
+	if image_index<11 image_index=15-0.5
 	}
 	
 	if x!=clamp(x,oControl.camX-100,oControl.camX+320+100) instance_destroy()

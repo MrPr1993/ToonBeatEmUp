@@ -82,6 +82,13 @@ cutDMG=other.isCut
 	else
 	flashFX(other.x,other.y,other.z,other.spriteFX,other.indexFX,other.speedFX,other.spriteTime,other.xScaleFX,other.yScaleFX,other.blendFX,other.alphaFX)
 
+if isNoBlood=1 ///Check if enemy doesn't have blood, which will replace the blood with something else
+{
+if fx.sprite_index=spr_blood fx.sprite_index=spr_hitflash2
+if fx.sprite_index=spr_blood2 fx.sprite_index=spr_hitflash
+if fx.sprite_index=spr_blood3 fx.sprite_index=spr_hitflash
+if fx.sprite_index=spr_blood4 fx.sprite_index=spr_hitflash5
+}
 	fx.isDepth=other.isDepth fx.speedFX=other.speedFX
 
 	HitType=other.MoveType

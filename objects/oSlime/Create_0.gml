@@ -4,6 +4,8 @@ name="MELON"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=22
 
+isNoBlood=1
+
 enemyscript=animsetup_enemy
 
 pointshit=10

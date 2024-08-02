@@ -4,6 +4,7 @@ name="SANDBAG"
 enemyPortraitSpr=spr_miscface
 enemyPortraitIndex=0
 
+isNoBlood=1
 
 enemyscript=animsetup_enemy
 

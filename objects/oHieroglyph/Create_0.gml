@@ -3,6 +3,8 @@
 
 event_inherited()
 
+isNoBlood=1
+
 height=64
 
 name="HIEROGLYPH"

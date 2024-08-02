@@ -11,6 +11,7 @@ enemyscript=animsetup_robot
 throwHeavy=1
 
 hasFront=1
+isNoBlood=1
 
 GrabFrame=16
 

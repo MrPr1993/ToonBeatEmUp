@@ -1,6 +1,8 @@
 
 enemy_data()
 
+isNoBlood=1
+
 enemyscript=animsetup_enemy
 
 hasback=0

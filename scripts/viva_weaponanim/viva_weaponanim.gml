@@ -18,7 +18,7 @@ function viva_weaponanim() {
 	{
 	////Hammer Swing
 frame_set(0,0,0.25)
-frame_set(1,1,0.25) if AnimFrame=2 PlaySound(WswingSound)
+frame_set(1,1,0.25) if AnimFrame=2 {if key_charge {if -key_left image_xscale=-1 if key_right image_xscale=1 AnimFrame-=0.25} else PlaySound(WswingSound)}
 frame_set(2,0,0.25)
 frame_set(3,2,0.1)
 frame_set(4,3,0.1)
@@ -180,7 +180,9 @@ if AnimFrame>6.7 {canmove=1 anim=0}
 	
 	///Baseball Bat/Swinging Weapon
 	if weapontype=19935
-	{frame_set(0,0,0.1) frame_set(1,1,0.25) frame_set(2,2,0.25) if AnimFrame=3 PlaySound(WswingSound)
+	{frame_set(0,0,0.1) frame_set(1,1,0.25)
+if AnimFrame=2 {if key_charge {if -key_left image_xscale=-1 if key_right image_xscale=1 AnimFrame-=0.25}}
+frame_set(2,2,0.25) if AnimFrame=3 {PlaySound(WswingSound)}
 frame_set(3,3,0.25) frame_set(4,4,0.1) frame_set(5,3,0.25)
 
 if AnimFrame=clamp(AnimFrame,2,2.9) weaponBack=0 else weaponBack=1

@@ -4,6 +4,8 @@ name="ROOSEVELT"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=49
 
+isNoBlood=1
+
 enemyscript=animsetup_enemy
 chardraw=draw_swing;
 

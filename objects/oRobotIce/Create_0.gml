@@ -16,6 +16,7 @@ GrabFrame=16
 
 pointshit=10
 points=100
+isNoBlood=1
 
 DamageVoice1=snd_metalhit
 DamageVoice2=snd_metalhit

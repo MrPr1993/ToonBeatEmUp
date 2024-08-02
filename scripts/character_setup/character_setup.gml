@@ -87,6 +87,7 @@ stagePose=1
 	wallCheck=0
 	ThrowDamage=0
 	isHeavy=0
+	isNoBlood=0
 	throwHeavy=0
 	Throw=0
 	disappearTime=24
