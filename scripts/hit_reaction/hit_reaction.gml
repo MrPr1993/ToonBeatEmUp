@@ -44,6 +44,21 @@ fx.z=z-height/2 fx.image_index=11
 fx.zSpeed=-4 fx.my_pal_sprite=my_pal_sprite fx.current_pal=current_pal
 fx.hasShadow=1 fx.shadow=shadowSpr// fx.haspal=1
 
+fx.image_xscale=image_xscale
+
+if object_index=oPainting or object_index=oHieroglyph
+{fx.image_index=1
+fx.frameSpr=frameSpr
+fx.paintingSpr=paintingSpr
+fx.type=2
+}
+
+if object_index=oAnimatedObject
+{fx.image_index=0
+fx.sprite_index=weaponspr
+fx.z+=45 fx.image_angle=90*image_xscale
+}
+
 	if hitBack=0
 	fx.hspeed=16*-image_xscale
 	else

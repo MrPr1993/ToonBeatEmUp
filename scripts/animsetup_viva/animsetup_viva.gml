@@ -521,7 +521,7 @@ selfatk.spriteFX=spr_hitflash
 	image_index+=0.1 image_speed=0
 	 if AnimFrame=clamp(AnimFrame,0,0.9)
 	 {image_index=AnimFrame AnimFrame+=0.5}
-	 if AnimFrame=1 {flashFX(x,y-1,z+1,spr_lightingbolt,0,0.5,0,1,1,c_white,1) oControl.quakeFXTime=10 PlaySound(snd_thunder)}
+	 if AnimFrame=1 {flashFX(x,y-1,z+1,spr_lightingbolt,0,0.5,0,1,1,c_white,1) oControl.quakeFXTime=10 PlaySound(snd_thunder)  PlaySoundNoStack(snd_shocked2)}
 	  if AnimFrame=clamp(AnimFrame,1,8.9)
 	   {AnimFrame+=0.1 atk=1 if image_index>8.6 {image_index=1 sprite_index=spr_viva_special1b MoveType=2 damage=0.15} image_index+=0.4 }
 	    else atk=0
@@ -590,17 +590,17 @@ selfatk.spriteFX=spr_hitflash
 if AnimFrame<=30
 {//43,34
 if AnimFrame=1 or AnimFrame=8 or AnimFrame=16  or AnimFrame=24
-flashFX(x+40*image_xscale,y+1,z-66,spr_elecex2,0,0.25,0,1,1,c_white,1)
+{flashFX(x+40*image_xscale,y+1,z-66,spr_elecex2,0,0.25,0,1,1,c_white,1) PlaySoundNoStack(snd_shocked3)}
 
 if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
-flashFX(x+43*image_xscale,y+1,z-34,spr_elecex2,0,0.25,0,1,1,c_white,1)
+{flashFX(x+43*image_xscale,y+1,z-34,spr_elecex2,0,0.25,0,1,1,c_white,1) PlaySoundNoStack(snd_shocked3)}
 }
 	   
 	if AnimFrame=clamp(AnimFrame,0,31)
 	AnimFrame+=0.5 else AnimFrame+=0.1
 	if AnimFrame=30 {
-			selfatk.HitForce=-4  selfatk.HitForceZ=-4
-		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66,spr_elecex,0,0.25,0,1,1,c_white,1)
+			selfatk.HitForce=-4  selfatk.HitForceZ=-4  PlaySoundNoStack(snd_shocked3)
+		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66,spr_elecex,0,0.25,0,1,1,c_white,1)  PlaySoundNoStack(snd_shocked2)
 		selfatk.spriteFX=spr_elecflash selfatk.MoveType=3 
 		}
 	if sprite_index=spr_viva_special2b {selfatk.MoveType=3 selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
@@ -1238,7 +1238,7 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 
 	frame_set(0,0,0.1)
 	frame_set(1,1,0.2) if AnimFrame=2 
-	{PlaySound(snd_viva6) PlaySound(snd_thunder) PlaySound(snd_hitground)
+	{PlaySound(snd_viva6) PlaySound(snd_thunder) PlaySound(snd_hitground)  PlaySoundNoStack(snd_shocked2)
 	oControl.quakeFXTime=8
 	elec=instance_create_depth(x,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z
 	elec=instance_create_depth(x+48,y-1,depth,oAnimFX) elec.image_speed=0.5 elec.z=z

@@ -29,6 +29,7 @@ break;
 case 1: ///Sent Flying
 x+=sentflying
 z+=zSpeed
+depth=-y
 	if hitBack=0
 	{
 	image_index+=0.5
@@ -43,4 +44,12 @@ z+=zSpeed
 
 
 break;
+
+case 2: ///Painting flying
+{x+=sentflying image_index=1
+z+=zSpeed
+depth=-y
+	if x!=clamp(x,oControl.camX-100,oControl.camX+320+100) instance_destroy()
+}
+
 }

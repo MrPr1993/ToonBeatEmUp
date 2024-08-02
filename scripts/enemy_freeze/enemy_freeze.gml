@@ -7,7 +7,8 @@ function enemy_freeze() {
 	   and Throw=0 and dead=0
 	  // and (x>__view_get( e__VW.XView, 0 )-sprite_get_width(mask_index)/2 and x<__view_get( e__VW.XView, 0 )+320+sprite_get_width(mask_index)/2)
 	{superThrown=1 
-	if watchSourceX>x image_xscale=1 else image_xscale=-1 recovery=200
+	if superturn
+	{if watchSourceX>x image_xscale=1 else image_xscale=-1} recovery=200
 	{
 	sprite_index=argument0
 	image_index=argument1

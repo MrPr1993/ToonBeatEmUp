@@ -1461,6 +1461,7 @@
     {"id":{"name":"snd_select","path":"sounds/snd_select/snd_select.yy",},},
     {"id":{"name":"snd_shocked","path":"sounds/snd_shocked/snd_shocked.yy",},},
     {"id":{"name":"snd_shocked2","path":"sounds/snd_shocked2/snd_shocked2.yy",},},
+    {"id":{"name":"snd_shocked3","path":"sounds/snd_shocked3/snd_shocked3.yy",},},
     {"id":{"name":"snd_shotgun","path":"sounds/snd_shotgun/snd_shotgun.yy",},},
     {"id":{"name":"snd_shrink","path":"sounds/snd_shrink/snd_shrink.yy",},},
     {"id":{"name":"snd_smoke","path":"sounds/snd_smoke/snd_smoke.yy",},},

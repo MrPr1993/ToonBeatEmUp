@@ -4,6 +4,7 @@ image_speed=0
 ground=0
 vSpeed=0
 z=0
+shake=0
 sentflying=0
 disappearTime=24
 hitBack=0
@@ -31,3 +32,13 @@ colorshade_setup()
 	
 	type=0
 	
+frameSpr=spr_painting_base
+frameSprElec=spr_painting_elec
+frameInd=0
+frameTotal=0
+
+paintingSpr=spr_painting1
+paintingInd=0
+paintingScale=1
+
+frameParts=spr_painting_part

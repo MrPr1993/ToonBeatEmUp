@@ -40,8 +40,8 @@
     "path":"sprites/spr_wrestler_stand/spr_wrestler_stand.yy",
   },
   "spriteMaskId":{
-    "name":"mask_mid",
-    "path":"sprites/mask_mid/mask_mid.yy",
+    "name":"spr_shadow2",
+    "path":"sprites/spr_shadow2/spr_shadow2.yy",
   },
   "visible":true,
 }

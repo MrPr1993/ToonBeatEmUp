@@ -124,6 +124,7 @@ stagePose=1
 	hasBounce=1
 	canBounce=0
 	canDrag=1
+	superturn=1; ///When a player uses a super move, the enemy will turn to them
 	///------------------------
 
 

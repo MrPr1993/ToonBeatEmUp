@@ -14,8 +14,11 @@ if anim!=41 ///Check if it's frozen animation
 alarm[2]=2
 if visible=0 visible=1 else visible=0
 
+if visible
+{
 flashFX(x,y+1,z-8,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
 fx.zSpeed=-1
+}
 
 if x=-11111
 {

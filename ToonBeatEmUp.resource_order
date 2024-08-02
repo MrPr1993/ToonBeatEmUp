@@ -1234,6 +1234,7 @@
     {"name":"snd_select","order":7,"path":"sounds/snd_select/snd_select.yy",},
     {"name":"snd_shocked","order":19,"path":"sounds/snd_shocked/snd_shocked.yy",},
     {"name":"snd_shocked2","order":31,"path":"sounds/snd_shocked2/snd_shocked2.yy",},
+    {"name":"snd_shocked3","order":34,"path":"sounds/snd_shocked3/snd_shocked3.yy",},
     {"name":"snd_shotgun","order":20,"path":"sounds/snd_shotgun/snd_shotgun.yy",},
     {"name":"snd_shrink","order":58,"path":"sounds/snd_shrink/snd_shrink.yy",},
     {"name":"snd_smoke","order":8,"path":"sounds/snd_smoke/snd_smoke.yy",},

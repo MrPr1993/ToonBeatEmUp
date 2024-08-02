@@ -12,6 +12,8 @@ targetY=targetEnemy.y
 }
 
 
+
+
 depth=-y
 
 if anim=0
@@ -39,8 +41,10 @@ if  byetime>260 {byetime=0 AnimFrame=0 anim=10}
 
 if anim=10
 {
-if oDragonMaiden.dircheck=-1 {image_xscale=1 x=oControl.camX-90}
-else {image_xscale=-1 x=oControl.camX+320+90}
+if oDragonMaiden.dircheck=-1 {image_xscale=1 lockX=oControl.camX-90}
+else {image_xscale=-1 lockX=oControl.camX+320+90}
+
+x=lockX
 
 anim=choose(11,12,13,14)
 lockZ=0 z=0
@@ -57,8 +61,6 @@ if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]
 if specialtimes[0]<80
 {sprite_index=spr_dragonmaiden_hand 
 if specialtimes[0]<40
-{if image_xscale=1 lockX=lerp(lockX,oControl.camX-150,0.1) else lockX=lerp(lockX,oControl.camX+320+150,0.1)}
-else
 {if image_xscale=1 lockX=lerp(lockX,oControl.camX-150,0.1) else lockX=lerp(lockX,oControl.camX+320+150,0.1)}
 lockY=lerp(lockY,targetEnemy.y,0.1)
 specialtimes[0]+=1 specialtimes[6]=point_distance(x,0,targetEnemy.x-160*image_xscale,0)
@@ -88,6 +90,9 @@ if specialtimes[0]=200
 	frame_set(3,2,0.05)	
 	frame_set(4,1,0.01)
 	if AnimFrame>4.5 {canmove=1 anim=0}
+	
+if image_xscale=1 {lockX=clamp(lockX,x-9999999,oControl.camX+160)}
+else {lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 	}}
 
 if anim=14 ///Flick
@@ -99,8 +104,8 @@ if specialtimes[0]<80
 if specialtimes[0]<40
 //{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
-if image_xscale=1 {if x<oControl.camX+160 lockX=lerp(lockX,targetEnemy.x-180,0.1)}
-else {if x>oControl.camX+320-160 lockX=lerp(lockX,targetEnemy.x+180,0.1)}
+if image_xscale=1 {if x<oControl.camX+160 lockX=lerp(lockX,targetEnemy.x-180,0.1) lockX=clamp(lockX,x-9999999,oControl.camX+160)}
+else {if x>oControl.camX+320-160 lockX=lerp(lockX,targetEnemy.x+180,0.1) lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 }
 lockY=lerp(lockY,targetEnemy.y,0.1)
 specialtimes[0]+=1
@@ -113,7 +118,8 @@ if specialtimes[0]=80
 	frame_set(4,2,0.1)
 	if AnimFrame>4.5 {canmove=1 anim=0}
 }
-
+if image_xscale=1 {lockX=clamp(lockX,x-9999999,oControl.camX+160)}
+else {lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 }
 
 if anim=13 ///Slam
@@ -126,8 +132,8 @@ if specialtimes[0]<80
 if specialtimes[0]<40
 //{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
-if image_xscale=1 {if x<oControl.camX+160 lockX=lerp(lockX,targetEnemy.x-160,0.1)}
-else {if x>oControl.camX+320-160 lockX=lerp(lockX,targetEnemy.x+160,0.1)}
+if image_xscale=1 {if x<oControl.camX+160 lockX=lerp(lockX,targetEnemy.x-160,0.1) lockX=clamp(lockX,x-9999999,oControl.camX+160)}
+else {if x>oControl.camX+320-160 lockX=lerp(lockX,targetEnemy.x+160,0.1) lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 }
 lockY=lerp(lockY,targetEnemy.y,0.1)
 specialtimes[0]+=1
@@ -144,6 +150,9 @@ if specialtimes[0]=80
 	frame_set(3,0,0.05)
 	frame_set(4,0,0.1)
 	if AnimFrame>4.5 {canmove=1 anim=0}
+	
+if image_xscale=1 {lockX=clamp(lockX,x-9999999,oControl.camX+160)}
+else {lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 }
 	
 }
@@ -158,8 +167,8 @@ if specialtimes[0]<80
 if specialtimes[0]<40
 //{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
 {
-if image_xscale=1 {if x<oControl.camX+100 lockX=lerp(lockX,targetEnemy.x-160,0.1) else specialtimes[0]=80}
-else {if x>oControl.camX+320-100 lockX=lerp(lockX,targetEnemy.x+160,0.1) else specialtimes[0]=80}
+if image_xscale=1 {if x<oControl.camX+100 lockX=lerp(lockX,targetEnemy.x-160,0.1) else specialtimes[0]=80 lockX=clamp(lockX,x-9999999,oControl.camX+160)}
+else {if x>oControl.camX+320-100 lockX=lerp(lockX,targetEnemy.x+160,0.1) else specialtimes[0]=80 lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 }
 lockY=lerp(lockY,targetEnemy.y,0.1)
 specialtimes[0]+=1
@@ -172,7 +181,8 @@ if specialtimes[0]=80
 	frame_set(4,0,0.1)
 	if AnimFrame>4.5 {canmove=1 anim=0}
 }
-
+if image_xscale=1 {lockX=clamp(lockX,x-9999999,oControl.camX+160)}
+else {lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 }
 
 

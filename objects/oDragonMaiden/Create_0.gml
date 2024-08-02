@@ -6,6 +6,8 @@ enemyPortraitIndex=56
 
 turnanim=0
 
+superturn=0
+
 enemyscript=animsetup_enemy
 
 pointshit=10

@@ -18,7 +18,7 @@ wobbleY=lerp(wobbleY,1,0.1)
 
 if anim=0
 {if handL.anim=9999 handL.anim=0
-if image_xscale=1 lockX=lerp(lockX,oControl.camX+96,0.01) else lockX=lerp(lockX,oControl.camX+320-96,0.01)
+if image_xscale=1 {lockX=lerp(lockX,oControl.camX+96,0.01) lockX=clamp(lockX,x-9999999,oControl.camX+160)} else {lockX=lerp(lockX,oControl.camX+320-96,0.01) lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 
 body.image_index=image_index
 }
