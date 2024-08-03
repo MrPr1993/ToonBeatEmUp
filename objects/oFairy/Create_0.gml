@@ -49,6 +49,10 @@ BurnSpr=spr_fairy_burned
 FrozenSpr=spr_fairy_frozen
 hasDizzy=1 DizzySpr=spr_fairy_dizzy
 
+hasCut=1
+cutSpr1=spr_fairy_cut1
+cutSpr2=spr_fairy_cut2
+
 enemyIdle1=spr_fairy_idle1
 enemyIdle2=spr_fairy_front
 

@@ -50,6 +50,10 @@ BurnSpr=spr_shroom_burned
 FrozenSpr=spr_shroom_frozen
 hasDizzy=1 DizzySpr=spr_shroom_dizzy
 
+hasCut=1
+cutSpr1=spr_shroom_cut1
+cutSpr2=spr_shroom_cut2
+
 enemyID=97
 
 current_pal=0;

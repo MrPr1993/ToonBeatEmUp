@@ -54,6 +54,9 @@ BurnSpr=spr_goblin_burned
 FrozenSpr=spr_goblin_frozen
 hasDizzy=1 DizzySpr=spr_goblin_dizzy
 
+hasCut=1
+cutSpr1=spr_goblin_cut1
+cutSpr2=spr_goblin_cut2
 
 spritepos_setup(1,24,-5,25)
 spritepos_setup(2,6,0,2)

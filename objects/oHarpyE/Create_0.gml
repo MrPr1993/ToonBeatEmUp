@@ -58,6 +58,10 @@ BurnSpr=spr_harpye_burned
 FrozenSpr=spr_harpye_frozen
 hasDizzy=1 DizzySpr=spr_harpye_dizzy
 
+hasCut=1
+cutSpr1=spr_harpye_cut1
+cutSpr2=spr_harpye_cut2
+
 enemyID=37
 
 enemyIdle1=spr_harpye_idle1

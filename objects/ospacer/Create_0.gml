@@ -50,6 +50,10 @@ BurnSpr=spr_spacer_burned
 FrozenSpr=spr_spacer_frozen
 DizzySpr=spr_spacer_dizzy hasDizzy=1
 
+hasCut=1
+cutSpr1=spr_spacer_cut1
+cutSpr2=spr_spacer_cut2
+
 enemyID=93
 
 current_pal=0;

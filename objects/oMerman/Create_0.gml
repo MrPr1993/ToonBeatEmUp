@@ -62,6 +62,10 @@ hasDizzy=1 DizzySpr=spr_merman_dizzy
 enemyIdle1=spr_merman_idle1
 enemyIdle2=spr_merman_front
 
+hasCut=1
+cutSpr1=spr_merman_cut1
+cutSpr2=spr_merman_cut2
+
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

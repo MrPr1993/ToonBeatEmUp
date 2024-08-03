@@ -54,6 +54,10 @@ ShockSpr=spr_beelady_elec
 BurnSpr=spr_beelady_burned
 FrozenSpr=spr_beelady_frozen
 
+hasCut=1
+cutSpr1=spr_beelady_cut1
+cutSpr2=spr_beelady_cut2
+
 	hasFront=1
 	FrontSpr=spr_beelady_front
 hasDizzy=1 DizzySpr=spr_beelady_dizzy

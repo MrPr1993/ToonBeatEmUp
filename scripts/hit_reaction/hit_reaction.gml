@@ -50,7 +50,7 @@ if object_index=oPainting or object_index=oHieroglyph
 {fx.image_index=1
 fx.frameSpr=frameSpr
 fx.paintingSpr=paintingSpr
-fx.type=2
+fx.type=2 fx.z=z
 }
 
 if object_index=oAnimatedObject

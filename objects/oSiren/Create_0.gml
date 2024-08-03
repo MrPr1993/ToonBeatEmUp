@@ -56,6 +56,10 @@ BurnSpr=spr_siren_burned
 FrozenSpr=spr_siren_frozen
 hasDizzy=1 DizzySpr=spr_siren_dizzy
 
+hasCut=1
+cutSpr1=spr_siren_cut1
+cutSpr2=spr_siren_cut2
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

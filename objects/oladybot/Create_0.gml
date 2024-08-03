@@ -51,6 +51,10 @@ BurnSpr=spr_ladybot_burned
 FrozenSpr=spr_ladybot_frozen
 hasDizzy=1 DizzySpr=spr_ladybot_dizzy
 
+hasCut=1
+cutSpr1=spr_ladybot_cut1
+cutSpr2=spr_ladybot_cut2
+
 current_pal=0;
 my_pal_sprite=spr_robotpal
 

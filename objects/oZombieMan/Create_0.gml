@@ -53,6 +53,10 @@ BurnSpr=spr_zombiem_burned
 FrozenSpr=spr_zombiem_frozen
 DizzySpr=spr_zombiem_dizzy hasDizzy=1
 
+hasCut=1
+cutSpr1=spr_zombiem_cut1
+cutSpr2=spr_zombiem_cut2
+
 enemyID=39
 
 current_pal=0;

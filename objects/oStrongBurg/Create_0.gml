@@ -54,6 +54,10 @@ ShockSpr=spr_strongburg_elec
 BurnSpr=spr_strongburg_burned
 FrozenSpr=spr_strongburg_frozen
 
+hasCut=1
+cutSpr1=spr_strongburg_cut1
+cutSpr2=spr_strongburg_cut2
+
 DizzySpr=spr_strongburg_dizzy hasDizzy=1
 
  enemyID=32

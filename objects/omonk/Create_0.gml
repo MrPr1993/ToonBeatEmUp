@@ -50,6 +50,10 @@ BurnSpr=spr_monk_burned
 FrozenSpr=spr_monk_frozen
 DizzySpr=spr_monk_dizzy hasDizzy=1
 
+hasCut=1
+cutSpr1=spr_monk_cut1
+cutSpr2=spr_monk_cut2
+
 current_pal=2;
 my_pal_sprite=spr_ninjapal
 

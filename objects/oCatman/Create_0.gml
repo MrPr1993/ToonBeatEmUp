@@ -50,6 +50,10 @@ BurnSpr=spr_catman_burned
 FrozenSpr=spr_catman_frozen
 DizzySpr=spr_catman_dizzy hasDizzy=1
 
+hasCut=1
+cutSpr1=spr_catman_cut1
+cutSpr2=spr_catman_cut2
+
 spritepos_setup(1,24,6,22)
 
 spritepos_setup(2,0,26,37)

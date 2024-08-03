@@ -52,6 +52,10 @@ BurnSpr=spr_zombiew_burned
 FrozenSpr=spr_zombiew_frozen
 DizzySpr=spr_zombiew_dizzy hasDizzy=1
 
+hasCut=1
+cutSpr1=spr_zombiew_cut1
+cutSpr2=spr_zombiew_cut2
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

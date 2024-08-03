@@ -56,6 +56,10 @@ FrozenSpr=spr_bear_frozen
 FrontSpr=spr_bear_front hasFront=1
 DizzySpr=spr_bear_dizzy hasDizzy=1
 
+hasCut=1
+cutSpr1=spr_bear_cut1
+cutSpr2=spr_bear_cut2
+
 current_pal=0;
 my_pal_sprite=spr_bearpal
 

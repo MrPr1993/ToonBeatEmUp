@@ -377,20 +377,22 @@ if creditsTime<5 ///8 Per line?
 creditmoment="" ;
 else if creditsTime<5+5*2
 creditmoment="GAME BY\n \nMRPR1993" ;
-else if creditsTime<7+6*3
+else if creditsTime<7+5*3
 creditmoment="MUSIC BY\n \nJONORSI\nEVADER MUSIC" ;
-else if creditsTime<7+6*4
+else if creditsTime<7+5*4
 creditmoment="SOUNDS BY\n \nMRPR1993\nMASTERSAUCE\nSOUNDSOFKOOKIE";
-else if creditsTime<7+6*5
+else if creditsTime<7+5*5
 creditmoment="VOICES BY\n \nMIMI HUNG\nFLIRTY FAWN\nCINDER\nSED2116\nMIZZPEACHY\nSUCCUBOO\nSHYGUYWHY" ;
-else if creditsTime<7+6*6
+else if creditsTime<7+5*6
 creditmoment="GRAPHICS BY\n \nMRPR1993\nFROTHIER\nDR.LILI M.D." ;
-else if creditsTime<7+6*7
+else if creditsTime<7+5*7
+creditmoment="WRITING BY\n \nMRPR1993\nSHADES\nSED2116" ;
+else if creditsTime<7+5*8
 creditmoment="CHARACTER DESIGN BY\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
-else if creditsTime<7+6*8
+else if creditsTime<7+5*9
 creditmoment="CONCEPT ART BY\n \nMRPR1993\nSHADES\nSED2116" ;
-else if creditsTime<7+6*9
-creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nSHADO\nSHADES" ;
+else if creditsTime<7+5*10
+creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nFLASH TRICKSTAR\nSHADO\nSHADES" ;
 else
 {
 creditsCameoY-=0.18

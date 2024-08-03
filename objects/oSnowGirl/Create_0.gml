@@ -55,6 +55,10 @@ ShockSpr=spr_snowgirl_elec
 BurnSpr=spr_snowgirl_burned
 FrozenSpr=spr_snowgirl_frozen
 
+hasCut=1
+cutSpr1=spr_snowgirl_cut1
+cutSpr2=spr_snowgirl_cut2
+
 hasFront=1
 FrontSpr=spr_snowgirl_front
 

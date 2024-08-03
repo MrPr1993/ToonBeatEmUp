@@ -49,6 +49,10 @@ BurnSpr=spr_lobster_burned
 FrozenSpr=spr_lobster_burned
 hasDizzy=1 DizzySpr=spr_lobster_dizzy
 
+hasCut=1
+cutSpr1=spr_lobster_cut1
+cutSpr2=spr_lobster_cut2
+
 current_pal=0;
 my_pal_sprite=spr_lobsterpal
 

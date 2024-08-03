@@ -51,6 +51,10 @@ BurnSpr=spr_dancer_burned
 FrozenSpr=spr_dancer_frozen
 DizzySpr=spr_dancer_dizzy
 
+hasCut=1
+cutSpr1=spr_dancer_cut1
+cutSpr2=spr_dancer_cut2
+
 current_pal=0;
 my_pal_sprite=spr_dancerpal
 

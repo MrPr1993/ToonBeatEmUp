@@ -46,21 +46,26 @@ else {image_xscale=-1 lockX=oControl.camX+320+90}
 
 x=lockX
 
-anim=choose(11,12,13,14) anim=11
+anim=choose(11,12,13,14) //anim=11
 lockZ=0 z=0
 AnimFrame=0 specialtimes[0]=0  specialtimes[1]=0
 }
 
 if anim=11 ///Attack
 {
-if AnimFrame=0 {x-=40*image_xscale AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]=0 specialtimes[6]=0 lockX=x sprite_index=spr_dragonmaiden_hand}
+if AnimFrame=0 { AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]=0 specialtimes[6]=0 sprite_index=spr_dragonmaiden_hand
+	
+if image_xscale=1 lockX=oControl.camX-160
+else lockX=oControl.camX+320+160 x=lockX
+	
+	}
 	selfatk.damage=0.25 selfatk.MoveType=1
 	
 	atkcol_set(136,0,0,3.75,1,88)
-	
+	selfatk.atk=0 atk=0
 specialtimes[0]+=1;
 if specialtimes[0]<40
-{lockX+=1*image_xscale
+{lockX+=2*image_xscale 
 sprite_index=spr_dragonmaiden_hand 
 }
 else
@@ -70,116 +75,166 @@ sprite_index=spr_dragonmaiden_hand
 }
 else
 if specialtimes[0]<160
-{selfatk.atk=1 atk=1
-if specialtimes[5]<specialtimes[6]
-or specialtimes[5]<160
 {
+if specialtimes[5]<160-64
+{selfatk.atk=1 atk=1
 lockX+=16*image_xscale 
 specialtimes[5]+=16
 }
-else {specialtimes[0]=200 selfatk.atk=0 oControl.quakeFXTime=10}
+else {specialtimes[0]=200 selfatk.atk=0 atk=0 oControl.quakeFXTime=10}
 sprite_index=spr_dragonmaiden_handattack1
 }
 
 if specialtimes[0]>200
 {	
-if specialtimes[0]>260 {canmove=1 anim=0}
+if specialtimes[0]>260 {
+	lockX-=10*image_xscale	
+	specialtimes[5]-=10 if specialtimes[5]<200
+	{canmove=1 anim=0}
+	}
 }
 
 x=lockX	
 	}
 
 if anim=14 ///Flick
-{atkcol_set(111+53,0,-5,2.95,1,118)
-if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
+{
+if AnimFrame=0 { AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]=0 specialtimes[6]=0 sprite_index=spr_dragonmaiden_handattack2
+	
+if image_xscale=1 lockX=oControl.camX-160
+else lockX=oControl.camX+320+160 x=lockX
+	
+	}
 atk=0 selfatk.damage=0.2 selfatk.MoveType=2
-if specialtimes[0]<80
-{sprite_index=spr_dragonmaiden_handattack2 image_index=0
+	
+	atkcol_set(111+53,0,-5,2.95,1,118)
+	selfatk.atk=0 atk=0
+specialtimes[0]+=1;
 if specialtimes[0]<40
-//{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
+{lockX+=4*image_xscale 
+}
+else
+if specialtimes[0]<80
+{specialtimes[6]=point_distance(x,0,targetEnemy.x,0)
+y=lerp(y,targetEnemy.y,0.5) image_index=0.75
+}
+else
+if specialtimes[0]<160
+{specialtimes[5]+=16
+if specialtimes[5]<160-64
 {
-if image_xscale=1 {if x<oControl.camX+160 lockX=lerp(lockX,targetEnemy.x-180,0.1) lockX=clamp(lockX,x-9999999,oControl.camX+160)}
-else {if x>oControl.camX+320-160 lockX=lerp(lockX,targetEnemy.x+180,0.1) lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
+if image_index<1
+oControl.quakeFXTime=10
+if image_index<2
+{selfatk.atk=1 atk=1 image_index+=0.5}
+
 }
-lockY=lerp(lockY,targetEnemy.y,0.1)
-specialtimes[0]+=1
+else {specialtimes[0]=200 selfatk.atk=0 atk=0 }
 }
-if specialtimes[0]=80
-{
-	frame_set(1,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
-	frame_set(2,1,0.5)
-	frame_set(3,2,0.05)
-	frame_set(4,2,0.1)
-	if AnimFrame>4.5 {canmove=1 anim=0}
+
+if specialtimes[0]>200
+{	
+if specialtimes[0]>260 {
+	lockX-=10*image_xscale	
+	specialtimes[5]-=10 if specialtimes[5]<200
+	{canmove=1 anim=0}
+	}
 }
-if image_xscale=1 {lockX=clamp(lockX,x-9999999,oControl.camX+160)}
-else {lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
-}
+
+x=lockX	
+	}
 
 if anim=13 ///Slam
-{atkcol_set(114,0,-2,4.35,1,50)
-
-if AnimFrame=0 {AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack2}
+{
+if AnimFrame=0 { AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]=0 specialtimes[6]=0 sprite_index=spr_dragonmaiden_handattack3
+	
+if image_xscale=1 lockX=oControl.camX-160
+else lockX=oControl.camX+320+160 x=lockX
+	
+	}
 atk=0 selfatk.damage=0.3 selfatk.MoveType=4
-if specialtimes[0]<80
-{sprite_index=spr_dragonmaiden_handattack3 image_index=0
+
+if specialtimes[0]<80 {lockY=lerp(lockY,targetEnemy.y,0.5) image_index=0.75 lockZ=lerp(lockZ,-180,0.1)}
+
+	atkcol_set(114,0,-2,4.35,1,50)
+	selfatk.atk=0 atk=0
+specialtimes[0]+=1;
 if specialtimes[0]<40
-//{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
+{lockX+=4*image_xscale 
+}
+else
+if specialtimes[0]<80
+{specialtimes[6]=point_distance(x,0,targetEnemy.x,0)
+
+}
+else
+if specialtimes[0]<160
 {
-if image_xscale=1 {if x<oControl.camX+160 lockX=lerp(lockX,targetEnemy.x-160,0.1) lockX=clamp(lockX,x-9999999,oControl.camX+160)}
-else {if x>oControl.camX+320-160 lockX=lerp(lockX,targetEnemy.x+160,0.1) lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
+if lockZ<0
+{
+lockZ+=16
 }
-lockY=lerp(lockY,targetEnemy.y,0.1)
-specialtimes[0]+=1
-
-lockZ=lerp(lockZ,-96,0.05)
-}
-if specialtimes[0]=80
-{if AnimFrame<1.5 lockZ+=specialtimes[1] specialtimes[1]+=0.45
-	//frame_set(1,0,0.25)// if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
-	if AnimFrame=1 {if specialtimes[1]>1 atk=1 else atk=0 z+=0.45 z=lockZ if z>0 {AnimFrame=2 oControl.quakeFXTime=10 PlaySound(snd_quakeground) z=0 lockZ=0}} else atk=0
-	if AnimFrame=2 AnimFrame=3
-	
-	frame_set(2,0,0.5)
-	frame_set(3,0,0.05)
-	frame_set(4,0,0.1)
-	if AnimFrame>4.5 {canmove=1 anim=0}
-	
-if image_xscale=1 {lockX=clamp(lockX,x-9999999,oControl.camX+160)}
-else {lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
-}
-	
+else {z=0 oControl.quakeFXTime=10 PlaySound(snd_quakeground) specialtimes[0]=200 selfatk.atk=0 atk=0 }
 }
 
+if specialtimes[0]>200
+{	if specialtimes[0]<201 selfatk.atk=1 atk=1
+if specialtimes[0]>260 {selfatk.atk=0 atk=0
+	lockX-=10*image_xscale	
+	specialtimes[5]-=10 if specialtimes[5]<200
+	{canmove=1 anim=0}
+	}
+}
+
+x=lockX	
+	}
+	
 if anim=12 ///Grab
-{atkcol_set(145,0,-1,2.45,1,88)
+{
+if AnimFrame=0 { AnimFrame=1 specialtimes[0]=0  specialtimes[1]=0 specialtimes[5]=0 specialtimes[6]=0 sprite_index=spr_dragonmaiden_handattack4
+	
+if image_xscale=1 lockX=oControl.camX-160
+else lockX=oControl.camX+320+160 x=lockX
+	
+	}
+	
 
-if AnimFrame=0 {AnimFrame=1 image_index=0 specialtimes[0]=0  specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_handattack4}
-atk=0 selfatk.MoveType=0 selfatk.damage=0
-if specialtimes[0]<80
-{sprite_index=spr_dragonmaiden_handattack4 image_index=0
+	selfatk.damage=0 selfatk.MoveType=0
+	
+	atkcol_set(145,0,-1,2.45,1,88)
+	selfatk.atk=0 atk=0
+specialtimes[0]+=1;
 if specialtimes[0]<40
-//{if image_xscale=1 lockX=lerp(lockX,oControl.camX-2,0.1) else lockX=lerp(lockX,oControl.camX+320+2,0.1)}
+{lockX+=4*image_xscale 
+}
+else
+if specialtimes[0]<80
+{specialtimes[6]=point_distance(x,0,targetEnemy.x,0)
+lockY=lerp(lockY,targetEnemy.y,0.5) image_index=0.75
+}
+else
+if specialtimes[0]<160
+{sprite_index=spr_dragonmaiden_handattack4b specialtimes[5]+=16
+if specialtimes[5]<160-64
 {
-if image_xscale=1 {if x<oControl.camX+100 lockX=lerp(lockX,targetEnemy.x-160,0.1) else specialtimes[0]=80 lockX=clamp(lockX,x-9999999,oControl.camX+160)}
-else {if x>oControl.camX+320-100 lockX=lerp(lockX,targetEnemy.x+160,0.1) else specialtimes[0]=80 lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
+if image_index<2
+{selfatk.atk=1 atk=1 image_index+=0.5}
+
 }
-lockY=lerp(lockY,targetEnemy.y,0.1)
-specialtimes[0]+=1
-}
-if specialtimes[0]=80
-{
-	frame_set(1,0,0.25) if AnimFrame=clamp(AnimFrame,2,3) atk=1 else atk=0
-	frame_set(2,1,0.5)
-	frame_set(3,1,0.05)
-	frame_set(4,0,0.1)
-	if AnimFrame>4.5 {canmove=1 anim=0}
-}
-if image_xscale=1 {lockX=clamp(lockX,x-9999999,oControl.camX+160)}
-else {lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
+else {specialtimes[0]=200 selfatk.atk=0 atk=0 }
 }
 
+if specialtimes[0]>200
+{	
+if specialtimes[0]>260 {
+	lockX-=10*image_xscale	
+	specialtimes[5]-=10 if specialtimes[5]<200
+	{canmove=1 anim=0}
+	}
+}
 
+x=lockX	
+	}
 
 if targetID!=-1
 if anim!=6666

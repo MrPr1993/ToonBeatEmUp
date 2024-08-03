@@ -53,6 +53,10 @@ BurnSpr=spr_plant_burned
 FrozenSpr=spr_plant_frozen
 hasDizzy=1 DizzySpr=spr_plant_dizzy
 
+hasCut=1
+cutSpr1=spr_plant_cut1
+cutSpr2=spr_plant_cut2
+
 current_pal=0;
 my_pal_sprite=spr_plantpal
 
