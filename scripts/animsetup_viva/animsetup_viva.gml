@@ -1065,7 +1065,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	///Down Up Attack
 	if anim=80
 	{weaponBack=-1
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	if AnimFrame=0 PlaySound(snd_viva4)
 	if AnimFrame=1.2 PlaySound(snd_swing)
 
@@ -1101,7 +1101,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	///Side Attack
 	if anim=81
 	{if AnimFrame=0 PlaySound(snd_viva3) weaponBack=-1
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	if AnimFrame=2 { PlaySound(snd_viva6)}
 	sprite_index=spr_viva_sideatk image_index=AnimFrame
 
@@ -1212,7 +1212,7 @@ frame_set(5,4,0.1) if AnimFrame>5.5 {specialanim=1 AnimFrame=5}
 
 	///Back Punch Attack
 	if anim=84
-{sprite_index=spr_viva_punchback
+{sprite_index=spr_viva_punchback weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 if AnimFrame=0 {PlaySound(snd_swing) PlaySound(snd_viva3)}
 atkcol_set(-33,0,28,0.85,1,28) MoveType=1 damage=0.03
 if AnimFrame=clamp(AnimFrame,2,3) {atk=1} else atk=0
@@ -1225,7 +1225,7 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 }
 	///Charge Attack
 	if anim=85
-	{
+	{weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	HitForce=-4
 	HitForceZ=-4
 
@@ -1265,7 +1265,7 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 /////Respawn
 		if anim=255
 {sprite_index=spr_viva_respawn
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 frame_set(0,0,0.025)
 
 if AnimFrame=0.20 or AnimFrame=0.40

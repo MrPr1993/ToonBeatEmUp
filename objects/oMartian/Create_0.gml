@@ -32,7 +32,7 @@ idlestyle=1
 hp=0.25
 maxhp=0.25
 
-height=90
+height=96
 
 specialFX=0
 

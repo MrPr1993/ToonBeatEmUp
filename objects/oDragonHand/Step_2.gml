@@ -70,10 +70,10 @@ sprite_index=spr_dragonmaiden_hand
 }
 else
 if specialtimes[0]<160
-{
+{selfatk.atk=1 atk=1
 if specialtimes[5]<specialtimes[6]
 or specialtimes[5]<160
-{selfatk.atk=1 atk=1
+{
 lockX+=16*image_xscale 
 specialtimes[5]+=16
 }

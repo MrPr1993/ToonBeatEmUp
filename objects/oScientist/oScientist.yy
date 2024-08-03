@@ -38,8 +38,8 @@
     "path":"sprites/spr_scientist_stand/spr_scientist_stand.yy",
   },
   "spriteMaskId":{
-    "name":"mask_mid",
-    "path":"sprites/mask_mid/mask_mid.yy",
+    "name":"spr_shadow3",
+    "path":"sprites/spr_shadow3/spr_shadow3.yy",
   },
   "visible":true,
 }

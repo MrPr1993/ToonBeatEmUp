@@ -39,8 +39,8 @@
     "path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",
   },
   "spriteMaskId":{
-    "name":"mask_small",
-    "path":"sprites/mask_small/mask_small.yy",
+    "name":"mask_mid",
+    "path":"sprites/mask_mid/mask_mid.yy",
   },
   "visible":true,
 }

@@ -63,6 +63,8 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>100 anim=11 else anim=12
 if anim=13 if x!=clamp(x,oControl.camX-20,oControl.camX+320+20)
 anim=11
 
+if anim=13 if targetEnemy.anim=42 anim=choose(11,12)
+
 }
 if anim=11 ///Charge
 {if AnimFrame=0 PlaySound(snd_harpy11)

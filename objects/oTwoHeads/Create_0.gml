@@ -9,6 +9,10 @@ DamageVoice2=snd_twoheads1
 DamageVoice3=snd_twoheads1
 DeathCry=snd_twoheads2
 
+EgrabTime=0.5
+EgrabAnim=11
+EgrabFrame=0.05
+
 enemyscript=animsetup_enemy
 
 pointshit=10
@@ -21,7 +25,7 @@ OneAttack=2
 hp=2
 maxhp=2
 
-height=80
+height=110
 
 HitGround=snd_hitground
 isBoss=1

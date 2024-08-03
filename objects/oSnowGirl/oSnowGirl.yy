@@ -38,8 +38,8 @@
     "path":"sprites/spr_snowgirl_stand/spr_snowgirl_stand.yy",
   },
   "spriteMaskId":{
-    "name":"mask_mid",
-    "path":"sprites/mask_mid/mask_mid.yy",
+    "name":"spr_midshadow2",
+    "path":"sprites/spr_midshadow2/spr_midshadow2.yy",
   },
   "visible":true,
 }

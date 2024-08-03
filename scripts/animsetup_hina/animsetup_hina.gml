@@ -1086,7 +1086,7 @@ if targetID!=-1
 	if anim=80
 	{
 	weaponBack=-1
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	if AnimFrame=0 {PlaySound(snd_hina4)}
 	if AnimFrame=1.2 {PlaySound(snd_swing)}
 
@@ -1130,7 +1130,7 @@ if targetID!=-1
 	{if AnimFrame=2 {PlaySound(snd_hina5) PlaySound(snd_swing)}
 	sprite_index=spr_hina_sideatk image_index=AnimFrame
 
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 
 	atkcol_set(65,0,0,2.85,1,46) MoveType=1 damage=0.14
 
@@ -1199,7 +1199,7 @@ sprite_index=spr_hina_taunt3 //-4,-72
 		///Back Punch Attack
 	if anim=84
 {sprite_index=spr_hina_punchback
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 if AnimFrame=0 {PlaySound(snd_swing) PlaySound(snd_hina3)}
 atkcol_set(-26,0,13,1.45,1,37) MoveType=1 damage=0.03
 if AnimFrame=clamp(AnimFrame,2,3) {atk=1} else atk=0
@@ -1217,7 +1217,7 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 	HitForce=-4
 	HitForceZ=-4
 
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	
 
 	sprite_index=spr_hina_charge
@@ -1242,7 +1242,7 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 	/////Respawn
 		if anim=255
 {sprite_index=spr_hina_respawn
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 if AnimFrame=0
 {
 	fr=instance_create_depth(x,y+1,depth,oDisappearPart) fr.spdZ=0 fr.z=z-256 fr.angle=0

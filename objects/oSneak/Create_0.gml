@@ -62,7 +62,7 @@ grabSave=0
 hp=0.3
 maxhp=0.3
 
-height=70
+height=78
 
 specialFX=0
 

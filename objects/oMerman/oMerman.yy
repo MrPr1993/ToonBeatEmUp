@@ -40,8 +40,8 @@
     "path":"sprites/spr_merman_stand/spr_merman_stand.yy",
   },
   "spriteMaskId":{
-    "name":"mask_small",
-    "path":"sprites/mask_small/mask_small.yy",
+    "name":"spr_midshadow2",
+    "path":"sprites/spr_midshadow2/spr_midshadow2.yy",
   },
   "visible":true,
 }

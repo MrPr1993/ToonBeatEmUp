@@ -1091,7 +1091,7 @@ MoveType=0
 
 	///Down Up Attack
 	if anim=80
-	{
+	{weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	if AnimFrame=1.2 {PlaySound(snd_sofia5) PlaySound(snd_swing)}
 
 
@@ -1128,7 +1128,7 @@ MoveType=0
 
 	///Side Attack
 	if anim=81
-	{if AnimFrame=0 PlaySound(snd_sofia3) weaponBack=-1
+	{if AnimFrame=0 PlaySound(snd_sofia3) weaponBack=-1 weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 
 	if AnimFrame=2 { PlaySound(snd_sofia6)}
 	sprite_index=spr_sofia_attack image_index=AnimFrame
@@ -1205,7 +1205,7 @@ sprite_index=spr_sofia_taunt3 //-4,-72
 	
 		///Back Punch Attack
 	if anim=84
-{sprite_index=spr_sofia_punchback
+{sprite_index=spr_sofia_punchback weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 if AnimFrame=0 {PlaySound(snd_swing) PlaySound(snd_sofia3)}
 atkcol_set(-33,0,12,0.85,1,37) MoveType=1 damage=0.03
 if AnimFrame=clamp(AnimFrame,2,3) { atk=1} else atk=0
@@ -1219,7 +1219,7 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 	
 		///Charge Attack
 	if anim=85
-	{
+	{weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	HitForce=-4
 	HitForceZ=-4
 
@@ -1250,7 +1250,7 @@ if AnimFrame>3
 	/////Respawn
 		if anim=255
 {sprite_index=spr_sofia_respawn
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 if AnimFrame=0
 {
 oControl.quakeFXTime=10

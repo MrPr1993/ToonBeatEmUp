@@ -1237,7 +1237,7 @@ if targetID!=-1
 
 	///Down Up Attack
 	if anim=80
-	{
+	{weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	if AnimFrame=0 PlaySound(snd_bahati3)
 	AnimFrame+=0.25 if AnimFrame=1 zSpeed=-12
 	
@@ -1361,6 +1361,7 @@ sprite_index=spr_bahati_taunt3 //-4,-72
 		///Back Punch Attack
 	if anim=84
 {sprite_index=spr_bahati_punchback
+	weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 if AnimFrame=0 {PlaySound(snd_swing) PlaySound(snd_bahati4)}
 atkcol_set(-42,0,23,0.85,1,37) MoveType=1 damage=0.03
 if AnimFrame=clamp(AnimFrame,2,3) {atk=1} else atk=0
@@ -1375,7 +1376,7 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 		///Charge Attack
 	if anim=85
 	{
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	sprite_index=spr_bahati_charge
 
 	atkcol_set(0,0,0,4.45,4.45,16) MoveType=1 damage=0.24
@@ -1414,7 +1415,7 @@ if AnimFrame>2.5 {image_index=3 AnimFrame+=0.25}
 /////Respawn
 		if anim=255
 {sprite_index=spr_bahati_respawn
-
+weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 frame_set(0,0,0.025)
 
 if AnimFrame=0.25
