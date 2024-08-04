@@ -12,7 +12,7 @@ with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
 xGoCheck=2560}
 spawner_followset("WaveSet1",0,1158+320+1240+1240,1)
-
+oControl.time=99
 
 en1=instance_create(3000-320,214-16,oEntryTeleport)
 en2=instance_create(3000-320,214+16,oEntryTeleport)

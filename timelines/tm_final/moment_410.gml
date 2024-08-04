@@ -6,7 +6,7 @@ if instance_exists(oCrate) with oCrate instance_destroy()
 with oControl 
 {MusicFade=0 MusicFadeAdd=1
 musicplaystart(msc_finalboss1)
-timer_set(1)
+timer_set(1) time=99
 
 }
 with oPlayer {specialanimscript=-1 canmove=1 anim=0 canControl=1 areaEntry=0}

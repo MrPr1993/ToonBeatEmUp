@@ -5,7 +5,8 @@ if oGenie.canmove
 	canControl=1;
 	specialanimscript=-1;
 	}
-boss=oGenie
+boss=oGenie oControl.time=99
+timer_set(1)
 }
 else
 {

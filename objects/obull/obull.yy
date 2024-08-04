@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_danger",
-    "path":"sprites/spr_danger/spr_danger.yy",
+    "name":"spr_danger2",
+    "path":"sprites/spr_danger2/spr_danger2.yy",
   },
   "spriteMaskId":{
     "name":"mask_none",

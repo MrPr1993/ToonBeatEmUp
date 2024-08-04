@@ -3,6 +3,8 @@
 enemy_endstep()
 throw_step()
 
+if hp=0 if !ground {x=clamp(x,oControl.camX+32,oControl.camX+320-32)}
+
 if coffinRecharge!=0 coffinRecharge-=1
 if summonRecharge!=0 summonRecharge-=1
 

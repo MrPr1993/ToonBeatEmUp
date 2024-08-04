@@ -13,6 +13,8 @@ oControl.quakeFXTime=10
 
 with oPlayer canmove=1
 
+oControl.time=99
+
 oControl.bossID=oOniController
 oOniController.mode=4
 oOniController.oniID1=en1

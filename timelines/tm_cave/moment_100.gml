@@ -5,7 +5,7 @@ and !instance_exists(en4)
 and !instance_exists(en5)
 and !instance_exists(en6)
 and !instance_exists(en7)
-{
+{oControl.time=99
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}

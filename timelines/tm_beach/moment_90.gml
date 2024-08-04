@@ -25,7 +25,7 @@ musicplaystart(msc_boss)
 en1=instance_create(4082,178,oOctopus)
 with en1
 {immune=1 anim=66 canmove=0}
-
+oControl.time=99
 with oPlayer {canControl=1}
 
 oControl.bossID=oOctopus

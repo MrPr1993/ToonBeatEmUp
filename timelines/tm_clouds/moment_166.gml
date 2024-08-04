@@ -1,4 +1,5 @@
 with oPlayer
-{canControl=1
+{canControl=1 
 x=6144+96  y=224 areaEntry=0
 }
+timer_set(1)

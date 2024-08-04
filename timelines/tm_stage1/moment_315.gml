@@ -2,7 +2,9 @@
 ////Make sure to only count the previous ones, otherwise you'll get an error.
 if oBoss1a.x>2054+64
 {with oBoss1a instance_destroy()
-	
+
+oControl.time=99	
+
 timer_set(1)
 	
 en1=instance_create_depth(2134,160,-1,oEntryClimb) en1.z=-64 en1.rangeX=2134-240 en1.rangeXAdd=0

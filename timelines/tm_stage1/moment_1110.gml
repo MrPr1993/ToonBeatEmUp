@@ -1,6 +1,8 @@
 /// @description /Boss Start
 oControl.TextDialogue=""
 
+oControl.time=99
+
 oPlayer.canControl=1
 oPlayer.areaEntry=0
 oPlayer.Immune=0

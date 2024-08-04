@@ -3,6 +3,7 @@
 enemy_endstep()
 throw_step()
 
+if hp=0 if !ground {x=clamp(x,oControl.camX+32,oControl.camX+320-32)}
 
 ///Interrupt Dialogue
 if hurt=1

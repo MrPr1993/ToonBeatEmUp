@@ -13,6 +13,7 @@ oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0
 oEnemySpawner.MaxX=4328+320
 camMove=1
+time=99
 }
 
 

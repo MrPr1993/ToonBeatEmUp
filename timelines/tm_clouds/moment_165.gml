@@ -16,8 +16,10 @@ oEnemySpawner.roomMove=0
 oEnemySpawner.MaxX=6480
 oEnemySpawner.YView=0
 camMove=1
-
+time=99
 }
+
+
 
 with oPlayer
 {hspeed=0

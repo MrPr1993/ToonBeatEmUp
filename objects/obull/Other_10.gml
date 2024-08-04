@@ -7,3 +7,4 @@ sprite_index=spr_bullrun
 PlaySound(snd_carengine)
 shadow=spr_mediumshadow
 mask_index=spr_planecol
+PlaySoundNoStack(snd_bull)

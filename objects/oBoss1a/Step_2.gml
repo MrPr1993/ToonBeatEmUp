@@ -5,6 +5,7 @@ throw_step()
 
 overwriteAttack=1
 
+if hp=0 if !ground {x=clamp(x,oControl.camX+32,oControl.camX+320-32)}
 
 if anim=10
 	{AnimFrame=0

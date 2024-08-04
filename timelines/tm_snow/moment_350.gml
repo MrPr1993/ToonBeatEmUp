@@ -2,7 +2,7 @@
 if instance_exists(oMirrorDiva)
 {timer_set(1)
 oControl.bossID=oMirrorLady
-
+oControl.time=99
 with oPlayer
 {
 specialanimscript=-1 AnimFrame=0 anim=0

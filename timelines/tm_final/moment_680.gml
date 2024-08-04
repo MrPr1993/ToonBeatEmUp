@@ -28,6 +28,8 @@ Train1Y=clamp(Train1Y,-8,8)
 
 }
 
+oControl.time=99
+
 with oPlayer
 {canControl=0
 visible=1

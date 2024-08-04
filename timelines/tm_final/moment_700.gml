@@ -1,8 +1,8 @@
 if oDastardly2.canmove
-{timer_set(1)
+{timer_set(1) 
 boss=oDastardly2
 with oControl 
-{MusicFade=0 MusicFadeAdd=1
+{MusicFade=0 MusicFadeAdd=1 time=99
 musicplaystart(msc_finalboss2)
 
 

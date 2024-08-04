@@ -3,6 +3,8 @@
 if oPlayer.ground
 {
 timer_set(1)
+
+oControl.time=99
 	
 oPlayer.canControl=1
 oPlayer.areaEntry=0

@@ -1,2 +1,2 @@
-	item=oClock
-	itemID=oClock
+	item=oGum
+	itemID=oGum

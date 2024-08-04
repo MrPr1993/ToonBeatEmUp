@@ -24,7 +24,7 @@ boss=instance_create_depth(6430,154,-1,oPrince)
 with boss {canmove=0 anim=100}
 
 //PlaySound(snd_fall)
-
+oControl.time=99
 
 with oPlayer
 {hspeed=0

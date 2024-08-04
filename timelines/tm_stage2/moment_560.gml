@@ -1,6 +1,6 @@
 /// @description Prepare Boss
 
-timer_set(0)
+
 
 if oPlayer.x>=2460-320+160
 and oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0 

@@ -3,7 +3,7 @@ and !instance_exists(en2)
 and !instance_exists(en3)
 and !instance_exists(en4)
 and !instance_exists(en5)
-{specialSet8=0
+{specialSet8=0 
 with oControl {//camMove=0 camMax=room_width
  goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}

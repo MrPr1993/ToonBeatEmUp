@@ -21,7 +21,7 @@ with oPrince AnimFrame=1
 with oControl
 {
 MusicFade=0 MusicFadeAdd=1
-musicplaystart(msc_boss3)
+musicplaystart(msc_boss3) PlaySound(snd_homerun)
 }
 
 with oPlayer

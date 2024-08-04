@@ -6,3 +6,4 @@ oPlayer.canControl=1
 oPlayer.areaEntry=0
 
 
+oControl.time=99

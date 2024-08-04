@@ -12,7 +12,7 @@ and specialSet6=300
 if specialSet7=0
 {//camMove=0 camMax=room_width
 with oControl
-{
+{time=99
  goActive=1 alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320
 spawner_followset("WaveSet1",0,1530+640+320,1)

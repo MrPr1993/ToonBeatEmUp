@@ -56,7 +56,7 @@ or specialSet6=15*29
 or specialSet6=15*30
 {
 
-bull=instance_create_depth(2448,224+choose(-32,0,32),-1,oBull) with bull
+bull=instance_create_depth(2448,choose(214,220,226,232),-1,oBull) with bull
 {
 x=__view_get( e__VW.XView, 0 )+320+100
 hspeed=-6 image_xscale=-1

@@ -7,6 +7,7 @@ if oPlayer.ground
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0	
 
+oControl.time=99
 
 oPlayer.areaEntry=0
 oPlayer.hspeed=0

@@ -10,3 +10,4 @@ MaxY=240
 }
 }
 
+oControl.time=99

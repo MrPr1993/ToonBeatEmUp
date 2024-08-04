@@ -13,4 +13,4 @@ with cat3 instance_destroy()
 
 oPlayer.canControl=1
 
-
+oControl.time=99
