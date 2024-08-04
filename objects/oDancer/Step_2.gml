@@ -113,8 +113,12 @@ if AnimFrame>6.75 {canmove=1}
 }
 
 
-	if anim=5 ///Hit Air - has own unique take to break fall if alive
+	if anim=5 ///Hit Air
 	{
+	//////If dead get cut
+//	if cutDMG=1 and hasCut=0
+	if hp<=0 and hasCut=1 and cutDMG!=0
+	{AnimFrame=0 anim=1337 exit;}
 	atk=0 sprite_index=ThrownSpr
 	hurt=1 recovery=120
 

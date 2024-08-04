@@ -18,11 +18,12 @@ weaponRange=100
 weaponDamage=0.2
 weapontargetHeight=2
 weapontype=0
-weaponHitType=1
+weaponHitType=4
 WswingSound=snd_swing5
 if wpadd="TOYHAMMER"
-{
+{weaponHitType=1
 weaponspr=spr_hammer2
+weaponX=7
 }
 }
 

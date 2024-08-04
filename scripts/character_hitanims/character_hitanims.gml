@@ -228,7 +228,7 @@ else
 {
 if 	cutSpawn!=1
 {image_index=0
-cutSelf=instance_create(x,y,oCutHalfFX) cutSelf.hitBack=hitBack cutSelf.z=z cutSelf.image_xscale=image_xscale 
+cutSelf=instance_create(x,y,oCutHalfFX) cutSelf.hitBack=hitBack cutSelf.z=z cutSelf.image_xscale=image_xscale cutSelf.isHeavy=isHeavy cutSelf.HitGround=HitGround
 if cutDMG=1
 cutSelf.sprite_index=cutSpr2
 if cutDMG=2
@@ -262,6 +262,7 @@ with cutSelf
 	hground.sprite_index=spr_hitground hground.depth=99996
 	hground.isDepth=0 hground.z=z
 	if HitGround!=-1 PlaySoundNoStack(HitGround)
+	if isHeavy=1 oControl.quakeFXTime=10
 	}		
 	}
 	

@@ -20,11 +20,11 @@ alarm[2]=30
 	hground.sprite_index=spr_hitground hground.depth=99996
 	hground.isDepth=0 hground.z=z
 	if HitGround!=-1 PlaySoundNoStack(HitGround)
-	
+	if isHeavy=1 oControl.quakeFXTime=10
 	}
 }
 }
-if z>0 {zSpeed=0 ground=1 	sentflying=0}
+if z>0 {zSpeed=0 ground=1 z=0 sentflying=0}
 break;
 case 1: ///Sent Flying
 x+=sentflying

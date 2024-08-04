@@ -15,7 +15,7 @@ attack=0
 damage=0.2
 atktype=0
 groundAdd=-32
-HitType=1
+HitType=4
 food=0
 weaponLife=5
 

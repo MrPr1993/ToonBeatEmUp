@@ -12,6 +12,8 @@ HitGround=-1
 trainz=0
 shadowXAdd=0
 fallHole=0
+isHeavy=1
+HitGround=snd_hitground
 
 colorshade_setup()	
 
