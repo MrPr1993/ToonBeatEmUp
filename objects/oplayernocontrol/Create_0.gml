@@ -12,7 +12,7 @@ my_pal_sprite=spr_playerpal
 areaEntry=1 ///For the player to start
 x=-64 key_right=1
 alarm[0]=90 ///Time to stop
-
+specialanimscript=-1;
 selfatk.isPlayer=1
 isEnemy=0
 enemyID=0

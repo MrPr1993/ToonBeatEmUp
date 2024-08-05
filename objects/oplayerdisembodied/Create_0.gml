@@ -7,6 +7,8 @@ controller_setup()
 
 colorshade_setup()
 
+specialanimscript=-1;
+
 PlayerLife1=-1
 PlayerLife1=0
 PlayerLife2=-1

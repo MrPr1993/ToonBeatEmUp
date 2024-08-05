@@ -77,15 +77,53 @@ keytick=0
     stick_up_released = false;
     stick_down_released = false;
 }	
+
+	if controlNO=1 or controlNO=2 or controlNO=3 or controlNO=4
+{
+gamepadMap = ds_list_create();	
+
+//if ds_list_size(gamepadMap) < gamepad_get_device_count() // ** Change gamepad_get_device_count() to how many players you expect there to be
+    {
+    // Loop through all gamepads
+for (var i=0; i<gamepad_get_device_count();i++)
+        {
+        // If this gamepad is on
+        if gamepad_is_connected(i)
+            {
+                // If they hadn't already been assigned
+                if is_undefined(ds_list_find_value(gamepadMap,i))
+                    {
+                    // Assign them to the next available player number
+                    ds_list_add(gamepadMap,i,ds_list_size(gamepadMap));
+                    }   
+					
+
 	
+            }
+     
+
+        }
+    }
+	
+ds_list_sort(gamepadMap,0)
+   
+if !is_undefined(ds_list_find_value(gamepadMap,controlNO-1))
+{
 	if controlNO=1
-	controller_p1()	    
-	if controlNO=2
-	controller_p2()	    
-	if controlNO=3
-	controller_p3()	    
-	if controlNO=4
-	controller_p4()	    
+	{controller_p1(ds_list_find_value(gamepadMap,controlNO-1))}
+	else
+	{controller_p2(ds_list_find_value(gamepadMap,controlNO-1))
+	}
+}
+
+	
+	
+ds_list_destroy(gamepadMap)
+} 
+	    
+	
+	
+	
 	if controlNO=9
 	controller_menu()	   
 	        }

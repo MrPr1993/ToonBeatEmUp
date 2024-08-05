@@ -373,6 +373,16 @@ global.P4available=0
 stagedata_load()
 enemydata_load()
 
+globalcontrols(12)
+globalcontrols(13)
+globalcontrols(12)
+globalcontrols(11)
+globalcontrols(10)
+globalcontrols(9)
+globalcontrols(8)
+globalcontrols(7)
+globalcontrols(6)
+globalcontrols(5)
 globalcontrols(4)
 globalcontrols(3)
 globalcontrols(2)
@@ -1073,16 +1083,15 @@ btnT3="TO DO"
 //lockedMap[7]=1
 
 cameraYAdd=0
-
 if room=rm_characterselect
 {if global.StageSelect global.SaveNumber=0
 p1=instance_create_depth(0,53,-1,oCharacterSelectPlayer) with p1 {canControl=1 controlNO=1}
 if global.P1Only=0
 {
 
-p2=instance_create_depth(80,53,-1,oCharacterSelectPlayer) with p2 {canControl=0 controlNO=2}
-p3=instance_create_depth(160,53,-1,oCharacterSelectPlayer) with p3 {canControl=0 controlNO=3}
-p4=instance_create_depth(240,53,-1,oCharacterSelectPlayer) with p4 {canControl=0 controlNO=4}
+p2=instance_create_depth(80,53,-1,oCharacterSelectPlayer) with p2 {canControl=1 controlNO=2}
+p3=instance_create_depth(160,53,-1,oCharacterSelectPlayer) with p3 {canControl=1 controlNO=3}
+p4=instance_create_depth(240,53,-1,oCharacterSelectPlayer) with p4 {canControl=1 controlNO=4}
 
 
 }

@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function controller_p1(){
+function controller_p1(_controlno){
 
-var _controlno=1;
+//var _controlno=1;
 
 key_right = keyboard_check(ord("D"));
 	key_left = -keyboard_check(ord("A"));
@@ -41,10 +41,9 @@ key_right = keyboard_check(ord("D"));
 
 
 
-	for (var i=0;i<gamepad_get_device_count();i++)
 	{
-	    if (gamepad_is_connected(i)) 
-	        {
+
+	        {var i = _controlno;
 	key_A=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("J"))
 	key_B=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("K"))
 	key_X=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) ///Accept

@@ -46,7 +46,14 @@ globalcontrols_load(1)
 globalcontrols_load(2)
 globalcontrols_load(3)
 globalcontrols_load(4)
-
+globalcontrols_load(5)
+globalcontrols_load(6)
+globalcontrols_load(7)
+globalcontrols_load(8)
+globalcontrols_load(9)
+globalcontrols_load(10)
+globalcontrols_load(11)
+globalcontrols_load(12)
 
 ini_close()
 }
