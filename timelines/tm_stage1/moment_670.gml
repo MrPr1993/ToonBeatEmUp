@@ -14,6 +14,13 @@ with oPlayer
 
 }
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
+
+
 with oControl MusicFade=1
 }
 else

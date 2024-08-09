@@ -1,7 +1,7 @@
 /// @description Start
 
 if oPlayer.ground
-{
+{oPlayer.hspeed=0 oPlayer.vspeed=0
 	musicplaystart(msc_train)
 
 oPlayer.canControl=1

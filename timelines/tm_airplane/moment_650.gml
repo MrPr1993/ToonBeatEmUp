@@ -29,6 +29,12 @@ x=5978-160
 y=208 z=-32
 areaEntry=0 zSpeed=-4 hspeed=4 image_xscale=-1 hitBack=0 canBounce=0 anim=5
 }
+
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
 spawner_followset("WaveSet1",0,5876-64+480,1)
 
 

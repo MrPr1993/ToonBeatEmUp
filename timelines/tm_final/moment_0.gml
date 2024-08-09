@@ -15,7 +15,11 @@ layer_background_visible(bgfog1,0)
 
 oPlayer.x-=64
 
-
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
 
 //timeline_skip(178)
 //with oEnemySpawner

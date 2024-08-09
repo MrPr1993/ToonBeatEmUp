@@ -1,11 +1,31 @@
-{with oPlayer {x=608 y=176 ground=0 visible=1 player_jump() anim=2 zSpeed=-8}
+{with oPlayer {x=608 y=176 ground=0 visible=1 player_jump() anim=2 zSpeed=-8 }
 with luggage1 image_index=1
+
+
 
 PlaySound(snd_hitgroundmetal)
 PlaySound(snd_enemy2)
 PlaySound(snd_enemy3)
 oControl.quakeFXTime=10
 }
+
+if instance_number(oPlayer)!=1
+with oControl
+{
+if instance_number(oPlayer)=2
+{p1.hspeed=-2 p2.hspeed=2}
+else
+{
+p1.hspeed=-2 p1.vspeed=-1
+p2.hspeed=2 p2.vspeed=-1
+p3.hspeed=-2 p3.vspeed=1
+p4.hspeed=2 p4.vspeed=1
+
+}
+
+
+}
+
 oPlayer.areaEntry=0
 oPlayer.Immune=0
 oEnemySpawner.roomHSpd=0

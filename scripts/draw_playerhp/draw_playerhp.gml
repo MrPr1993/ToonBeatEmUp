@@ -5,15 +5,17 @@ function draw_playerhp(){
 if object_index=oPlayer
 {
 if showp1=1
-draw_sprite(playerIcon,playerNO-1,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
+draw_sprite(playerIcon,playerNO-1,round(x-oControl.camX),round(y+z-height-4-oControl.camY))
 if showmash=1
 {
-draw_sprite(spr_buttonmash,showmashI,round(x-__view_get( e__VW.XView, 0, 0)),round(y+z-height-4-__view_get( e__VW.YView, 0, 0)))
+draw_sprite(spr_buttonmash,showmashI,round(x-oControl.camX),round(y+z-height-4-oControl.camY))
 if showmashI=1.75 showmashI=0 else showmashI+=0.25
 }
 }
 
 d3d_transform_set_identity()
+d3d_transform_set_translation(9999,0,0)
+
 if playerNO=1
 d3d_transform_set_translation(0,0,0)
 if playerNO=2
@@ -29,7 +31,8 @@ if object_index=oPlayerNoControl
 {
 draw_set_font(global.scorefont) draw_set_color(c_white) draw_set_alpha(1)
 draw_set_halign(fa_center)
-draw_text(34,8,"GAME\nOVER")
+if oControl.nopleasewait=1
+draw_text(34,8,"GAME\nOVER") else draw_text(34,8,"PLEASE\nWAIT")
 }
 else
 {

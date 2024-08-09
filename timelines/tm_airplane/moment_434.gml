@@ -18,8 +18,18 @@ with oPlayer
 {hspeed=0
 x=3338-64
 y=208
+
+
 areaEntry=0
 }
+
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
+
+
 spawner_followset("WaveSet1",0,3338-64+640,1)
 
 

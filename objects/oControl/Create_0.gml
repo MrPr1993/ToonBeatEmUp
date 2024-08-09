@@ -7,6 +7,8 @@ playNO=1
 camX=0;
 camY=0;
 
+nopleasewait=1;
+
 wallY=160; ///used for certain moves
 
 allPlayersMid=0;
@@ -1137,19 +1139,19 @@ PlayerLife=global.P1Life
 PlayerScore=global.P1Score my_pal_sprite=global.p1Pals
 		}
 	if global.P2available=1	
-{p2=instance_create_depth(160,208-16,-1,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1
+{p2=instance_create_depth(160,208+16*instance_number(oPlayer),-1,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1
 	if global.P2available=0 p2.ContinueMode=1 else p2.ContinueMode=0 p2.playerGet=0
 	PlayerLife=global.P2Life
 PlayerScore=global.P2Score my_pal_sprite=global.p2Pals
 	}
 	if global.P3available=1
-{p3=instance_create_depth(160,208-16,-1,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2
+{p3=instance_create_depth(160,208+16*instance_number(oPlayer),-1,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2
 		if global.P3available=0 p3.ContinueMode=1 else p3.ContinueMode=0 p3.playerGet=0
 		PlayerLife=global.P3Life
 PlayerScore=global.P3Score my_pal_sprite=global.p3Pals
 		} 
 	if global.P4available=1		
-{p4=instance_create_depth(160,208-16,-1,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3
+{p4=instance_create_depth(160,208+16*instance_number(oPlayer),-1,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3
 		if global.P4available=0 p4.ContinueMode=1 else p4.ContinueMode=0 p4.playerGet=0
 		PlayerLife=global.P4Life
 PlayerScore=global.P4Score my_pal_sprite=global.p4Pals

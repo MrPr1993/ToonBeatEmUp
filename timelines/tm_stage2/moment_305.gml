@@ -10,6 +10,15 @@ oPlayer.hspeed=8
 oPlayer.x=-100
 oPlayer.y=200
 
+if instance_number(oPlayer)!=1
+with oControl
+{oPlayer.y-=32
+	var checknum=1;
+if p2.object_index=oPlayer {p2.y+=24;}
+if p3.object_index=oPlayer {p3.y+=48;}
+if p4.object_index=oPlayer {p4.y+=72;}
+}
+
 var bg1	= layer_get_id("StreetBG");
 layer_hspeed(bg1,0)
 var bg2	= layer_get_id("GroundImg");

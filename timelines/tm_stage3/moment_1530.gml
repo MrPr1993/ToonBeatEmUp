@@ -47,6 +47,11 @@ oPlayer.key_right=0
 oControl.camMove=1
 //boss.AnimFrame=0
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16+16*controlNO
+}
 
 
 timeline_position-=1

@@ -4,7 +4,12 @@ function enemyhit() {
 	if canBlock=0
 	{if other.HitQuake!=0 oControl.quakeFXTime=other.HitQuake
 		atk=0 selfatk.atk=0
-	hp-=other.damage/(defense+extradefense)
+		
+if (other.hitSource.weaponAttack=1 and isBoss=1)
+or (other.object_index=oProjectile and isBoss=1)
+hp-=(other.damage/(defense+extradefense))/2
+else
+hp-=other.damage/(defense+extradefense)
 
 thrownPlayer=-1 
 
@@ -36,6 +41,7 @@ cutDMG=other.isCut
 	}
 	else
 	{
+	
 	hp-=0.01
 
 	if hp<=0
@@ -43,6 +49,8 @@ cutDMG=other.isCut
 	else other.PlayerScore=1
 	with other {hitSource.PlayerScore+=PlayerScore}
 	}
+	
+
 
 	if other.object_index!=oProjectile and other.hitSource.weaponIsGun=0
 	with other.hitSource
@@ -52,8 +60,6 @@ cutDMG=other.isCut
 	with other.hitSource
 	{
 	super+=0.25*canSuper
-
-
 
 	event_user(14)
 	if HitReactionScript!=-1

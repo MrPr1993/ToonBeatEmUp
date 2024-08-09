@@ -31,3 +31,9 @@ if x=-9999999999
 {
 timeline_skip(358)
 }
+
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}

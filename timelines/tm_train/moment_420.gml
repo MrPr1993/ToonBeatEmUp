@@ -21,6 +21,13 @@ spawner_followset("WaveSet1",__view_get( e__VW.XView, 0 )+320,__view_get( e__VW.
 
 with oControl MusicFade=1
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+autoYMOVE=oControl.wallY+16*controlNO
+}
+
+
 }
 else
 {

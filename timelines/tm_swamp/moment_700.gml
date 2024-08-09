@@ -7,7 +7,7 @@ with oPlayer
 areaEntry=1
 canControl=0
 ground=1
-automoveX=3340 automoveY=160+16+16 automove=1
+automoveX=3340 automoveY=160+16+16*controlNO automove=1
 vspeed=0
 }
 

@@ -12,6 +12,16 @@ with oPlayer
 {key_right=0 doubledash=0 dashing=0 canmove=0 AnimFrame=0 anim=306
 }
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+if instance_number(oPlayer)=2
+oPlayer.x=5024-8-24+24*(controlNO-1)
+else
+oPlayer.x=5024-8-48+24*(controlNO-1)
+}
+
+
 with oControl MusicFade=1
 
 boss=instance_create_depth(5184-64,208-20,0,oOniController) 

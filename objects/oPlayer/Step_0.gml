@@ -270,6 +270,12 @@ if y=clamp(y,automoveY-2,automoveY+2) {y=automoveY key_up=0 key_down=0}
 
 }else {key_left=0 key_right=0 key_up=0 key_down=0 automove=0 doubledash=0 image_xscale=automoveFace}
 }
+
+if autoYMOVE!=-10000
+{
+y=lerp(y,autoYMOVE,0.1) if y=clamp(y,autoYMOVE-2,autoYMOVE+2) {y=autoYMOVE autoYMOVE=-10000}
+}
+
 }
 else
 {

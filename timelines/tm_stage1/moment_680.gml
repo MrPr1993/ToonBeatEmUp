@@ -41,6 +41,12 @@ canmove=0 AnimFrame=0 anim=305
 
 oPlayer.y=208
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
+
 oEnemySpawner.roomHSpd=4
 oEnemySpawner.roomMove=1
 

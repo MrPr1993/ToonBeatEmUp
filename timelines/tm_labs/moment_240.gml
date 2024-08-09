@@ -8,6 +8,14 @@ with oPlayer
 automoveX=7692 automoveY=222 automove=1
 //7692,222
 }	
+
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+automoveY=oControl.wallY+16+16*controlNO
+}
+
+
 timer_set(0)
 //foody=instance_create(__view_get( e__VW.XView, 0)+160-32,200,oBurger)
 //foody.z=-200

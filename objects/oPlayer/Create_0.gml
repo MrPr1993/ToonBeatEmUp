@@ -16,6 +16,8 @@ selfatk.isPlayer=1
 isEnemy=0
 enemyID=0
 
+autoYMOVE=-10000
+
 playerIcon=spr_p1
 
 altresult2Text=-1
@@ -176,9 +178,9 @@ hasAI=0
 if instance_number(oPlayer)=99999 ///NOT THIS ONE
 with oControl
 {
-p2=instance_create(160,208-16,oPlayer) p2.playerNO=2 p2.character=1 p2.controlNO=2
-p3=instance_create(160,208+16,oPlayer) p3.playerNO=3 p3.character=2 p3.controlNO=3
-p4=instance_create(160,208+24,oPlayer) p4.playerNO=4 p4.character=3 p4.controlNO=4
+p2=instance_create(160,p1.y+16,oPlayer) p2.playerNO=2 p2.character=1 p2.controlNO=2
+p3=instance_create(160,p1.y+32,oPlayer) p3.playerNO=3 p3.character=2 p3.controlNO=3
+p4=instance_create(160,p1.y+48,oPlayer) p4.playerNO=4 p4.character=3 p4.controlNO=4
 }
 
 sourcee=0

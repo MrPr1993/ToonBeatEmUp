@@ -61,8 +61,22 @@ if AnimFrame=320
 {anim=9999 isDepth=0 depth=-6010
 	
 	with oPlayer {visible=0
-		x=oControl.camX+48	y=180
+		x=oControl.camX+48	y=200
 	}
+	
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+if instance_number(oPlayer)=2 
+{if controlNO=1 {y=200} if controlNO=2 {x=oControl.camX+320-48 image_xscale=-1 y=200}}
+else
+{
+{if controlNO=1 {y=200} if controlNO=2 {x=oControl.camX+320-48 image_xscale=-1 y=200}}
+{if controlNO=3 {y=232} if controlNO=4 {x=oControl.camX+320-48 image_xscale=-1 y=232}}
+}
+
+
+}
 	
 	y=6010
 image_alpha=1.5

@@ -160,7 +160,7 @@ with oPlayer areaEntry=1
 ///1040,214
 ///1104,198
 with oPlayer
-{x=912 y=214 z=0 ground=1 canmove=0}
+{x=912-64+64*controlNO y=214 z=0 ground=1 canmove=0}
 oEnemySpawner.roomHSpd=2
 oEnemySpawner.roomMove=1
 oEnemySpawner.MaxXAdd+=320

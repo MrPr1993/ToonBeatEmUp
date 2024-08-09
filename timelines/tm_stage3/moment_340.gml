@@ -35,6 +35,13 @@ dashing=0
 oPlayer.x=3008
 oPlayer.y=200-10
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
+
+
 oEnemySpawner.roomHSpd=4
 oEnemySpawner.roomMove=1
 

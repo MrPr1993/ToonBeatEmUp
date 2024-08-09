@@ -25,6 +25,12 @@ with oPlayer
 {key_right=0 doubledash=0 dashing=0
 }
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16+16*controlNO
+}
+
 with oControl MusicFade=1
 }
 else

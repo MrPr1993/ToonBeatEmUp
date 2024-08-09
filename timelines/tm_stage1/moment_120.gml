@@ -10,7 +10,22 @@ key_right=1
 dashing=2 AnimFrame=0
 anim=21
 oPlayer.hspeed=0
+if controlNO!=1 x-=20
+specialanimscript=function()
+{
+if !ground
+{if controlNO!=1 if x<592 {}
+if controlNO=2 {y+=2 x+=0}
+if controlNO=3 {y+=4 x+=1}
+if controlNO=4 {y+=6 x+=2}
+}
+else
+if anim!=21
+specialanimscript=-1;
+}
 
+if controlNO=1
+{
 dummy=instance_create_depth(x,y,depth,oEnemy1) with dummy
 {
 hp=0 mask=mask_none image_xscale=-1 HitType=1 hud_show() event_user(0)
@@ -27,6 +42,7 @@ dust_make(x,y,-8,5,2,-4)
 dust_make(x,y,-8,5,2,0)
 dust_make(x,y,-8,5,2,4)
 
+}
 }
 }
 

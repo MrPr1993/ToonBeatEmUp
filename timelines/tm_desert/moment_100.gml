@@ -35,6 +35,14 @@ canmove=0
 
 }
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16+16*controlNO
+}
+
+
+
 with sandstorm instance_destroy()
 with quicksnd instance_destroy()
 with quicksnd2 instance_destroy()

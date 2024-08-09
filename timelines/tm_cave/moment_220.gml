@@ -34,6 +34,8 @@ doubledash=0
 dashing=0
 }
 
+
+
 //oPlayer.x=2460+32
 //oPlayer.y=200
 

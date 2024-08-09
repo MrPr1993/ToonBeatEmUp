@@ -8,7 +8,13 @@ newscript=function()
 with oPlayer
 {
 canControl=0
-automoveX=6688+64 automoveY=178+64 automove=1
+automoveX=oControl.camX+64 automoveY=178+64 automove=1
+
+if controlNO=2 {automoveX=oControl.camX+320-64 automoveFace=-1}
+if controlNO=3 {automoveY=178+64+32}
+if controlNO=4 {automoveX=oControl.camX+320-64 automoveY=178+64+32 automoveFace=-1}
+
+
 }
 }
 }

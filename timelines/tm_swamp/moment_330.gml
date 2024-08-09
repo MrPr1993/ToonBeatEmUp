@@ -30,6 +30,13 @@ myboat=instance_create_depth(2927,y,-1,oFlashFX) with myboat
 }
 }
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
+
+
 oEnemySpawner.roomHSpd=4
 oEnemySpawner.roomMove=1
 spawner_followset("WaveSet1",__view_get( e__VW.XView, 0 )+320,__view_get( e__VW.XView, 0 )+320,0)

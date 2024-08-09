@@ -10,6 +10,17 @@ anim=21
 oPlayer.hspeed=0 zSpeed=8 key_jump_hold=1;
 }
 
+if instance_number(oPlayer)!=1
+with oControl
+{oPlayer.x-=40
+//p1.x-=40
+p2.x+=40
+p3.x+=80
+p4.x+=120
+
+
+}
+
 spawner_followset("WaveSet1",0,692+160,0)
 
 PlaySound(snd_jump)

@@ -97,7 +97,7 @@ global.MultiSuper=isPlayer
 	  // if x<camera_get_view_x(view_camera[0])+320+sprite_get_width(mask_index)/2 and x>camera_get_view_x(view_camera[0])-sprite_get_width(mask_index)/2
 	   if Throw=0 and dead=0
 	   	   	if isPlayer!=global.MultiSuper
-	{superThrown=0 hspeed=0 hp-=0.5 ////Super Attack Damage
+	{superThrown=0 hspeed=0 hp-=0.5-0.25*isBoss ////Super Attack Damage
 	 hud_show() hpscan() AnimFrame=0 image_index=0 PlaySoundNoStack(snd_hitgroundheavy)
 	 if hp<=0
 	other.PlayerScore+=points

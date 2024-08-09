@@ -21,3 +21,9 @@ image_index=2
 }
 
 }
+
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}

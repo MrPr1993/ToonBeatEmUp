@@ -5,6 +5,13 @@ instance_create_depth(0,0,-1,oRainFX)
 
 oControl.stageNext=rm_stage4
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
+
+
 ////Skip to Plane
 //spawner_followset("WaveSet1",0,5800,1)
 //oPlayer.x=5000

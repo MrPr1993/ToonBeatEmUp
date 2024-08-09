@@ -1,6 +1,13 @@
 /// @description Stage Starting
 spawner_followset("WaveSet1",0,692+224,1)
 
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
+
+
 oControl.stageNext=rm_stage4
 
 ////Skip to Plane

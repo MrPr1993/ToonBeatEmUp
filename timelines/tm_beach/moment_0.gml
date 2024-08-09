@@ -1,6 +1,8 @@
 /// @description Stage Starting
 spawner_followset("WaveSet1",0,692+224+64,1)
 
+
+
 oControl.stageNext=rm_stage4
 
 ////Skip to Plane
@@ -17,6 +19,13 @@ layer_background_visible(bgfog1,0)
 oPlayer.x-=64
 
 oPlayer.y+=240
+
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=448+16+16*controlNO
+}
+
 
 en1=instance_create_depth(440,448,-1,oAreaSpawner)
 with en1

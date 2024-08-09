@@ -7,6 +7,15 @@ oPlayer.anim=200
 
 oControl.BGmove=0
 
+if instance_number(oPlayer)!=1
+with oControl
+{oPlayer.y-=32
+	var checknum=1;
+if p2.object_index=oPlayer {p2.y+=24;}
+if p3.object_index=oPlayer {p3.y+=48;}
+if p4.object_index=oPlayer {p4.y+=72;}
+}
+
 limo1=instance_create(64+64+64,196+8,oFlashFX) limo1.sprite_index=spr_truck limo1.name="Limo" limo1.isDepth=0
 with oFlashFX if name="Limo"
 {

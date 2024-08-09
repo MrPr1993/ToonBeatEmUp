@@ -24,3 +24,9 @@ layer_background_visible(bgfog1,0)
 fk=instance_create_depth(320-48+16-16-64,176+24+32,-1,oFlashFX) with fk
 {sprite_index=spr_hwolf_escape hspeed=2 alarm[0]=120 animEnd=0 FlashShadow=1
 }
+
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}

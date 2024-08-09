@@ -6,10 +6,11 @@ timerset=argument0
 if timerset=0
 {
 with oControl
-{timecheck=alarm[0] alarm[0]=10000000}}
+{nopleasewait=0 timecheck=alarm[0] alarm[0]=10000000}}
 else
 with oControl
-{
+{nopleasewait=1
 alarm[0]=60
 }
+
 }

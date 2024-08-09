@@ -7,6 +7,12 @@ with oControl
 {
 stageEndFX=1  
 }
+
+if instance_number(oPlayer)!=1
+with oPlayer
+{
+y=oControl.wallY+16*controlNO
+}
 }
 else
 timeline_position-=1
