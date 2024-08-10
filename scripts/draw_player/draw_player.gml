@@ -114,6 +114,9 @@ shader_reset()
 //draw_sprite_ext(spr_chargefx,commandChargeFrame-3,round(x+4*image_xscale),round(y+z-16-height/2),1,1,0,commandChargeColor,commandChargeAlpha)
 }
 
+///Dalton Scream
+if screamset {draw_sprite_ext(spr_viva_screamouth,random(2),round(x+choose(-random(4),random(4))+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),round(y+choose(-random(4),random(4))+trainz-57+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),(image_xscale*wobbleX)*minimodediv,(image_yscale*wobbleY)*minimodediv,image_angle,image_blend,image_alpha)}
+
 if oControl.betatest=1 and oControl.ColBeta=1
 {
 draw_set_color(c_gray) draw_set_alpha(0.5)

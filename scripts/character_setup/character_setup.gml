@@ -16,6 +16,9 @@ Cweather=0
 ///1 - cold - 2 - hot
 
 randomanim=0
+
+screamset=0
+
 stagePose=1
 
 	nameID="None"

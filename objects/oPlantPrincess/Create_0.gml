@@ -1,6 +1,6 @@
 enemy_data()
 
-name="P.PLANTA"
+name="LILY"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=33
 
@@ -23,6 +23,12 @@ maxhp=2
 height=120
 
 specialFX=0
+
+DamageVoice1=snd_princess20
+DamageVoice2=snd_princess20
+DamageVoice3=snd_princess20
+
+DeathCry=snd_princess21
 
 StandSpr=spr_plantprincess_stand
 MoveSpr=spr_plantprincess_move

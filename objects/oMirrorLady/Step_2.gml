@@ -5,18 +5,20 @@ hp=clamp(hp,0,9999)
 
 ///Intro
 if anim=100
-{alarm[0]=0
+{alarm[0]=0 if image_alpha=0 PlaySound(snd_mirrorlady1)
 if image_alpha<1 image_alpha+=0.01 else image_alpha=1
 sprite_index=spr_mirrorlady_laugh
 
-if image_alpha=1 AnimFrame+=0.1
+if image_alpha=1 AnimFrame+=0.01
 
-if AnimFrame>4 {AnimFrame=0 anim=10}
+if AnimFrame>5.8 {AnimFrame=0 anim=10}
 }
 
 ////Stand
 if anim=0
 {
+	
+
 sprite_index=spr_mirrorlady_stand
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
@@ -62,17 +64,23 @@ specialcheck1+=1 if specialcheck1>120 {anim=10}
 
 ////Dead
 if anim=12
-{if AnimFrame=0 {specialtimes[0]=0 oControl.quakeFXTime=10
+{hp=0 if AnimFrame=0 {specialtimes[0]=0 specialtimes[1]=0 oControl.quakeFXTime=10 PlaySound(snd_mirrorlady11)	
 	enemydeathcount()
 	}
+
+specialtimes[1]+=0.01	
+
 sprite_index=spr_mirrorlady_uhoh
-frame_set(0,1,0.01)
+frame_set(0,1,0.01) if specialtimes[1]=1 PlaySound(snd_mirrorlady12)	
 frame_set(1,0,0.1)
 frame_set(2,1,0.1)
 frame_set(3,2,0.1)
+
+if specialtimes[1]=2.25 PlaySound(snd_mirrorlady13)
+
 frame_set(4,1,0.1) if AnimFrame>4.9 {if specialtimes[0]<1.5 {AnimFrame=1  specialtimes[0]+=0.25}
 
-else {oControl.quakeFXTime=30  
+else {oControl.quakeFXTime=30  PlaySound(snd_mirrorlady14)
 	
 	brokenbg=instance_create_depth(x,y,-1,oFlashFX) with brokenbg
 	{alarm[0]=-1 isDepth=0 animEnd=0 sprite_index=spr_mirrorlady_front image_speed=0 image_index=3} brokenbg.depth=depth

@@ -25,6 +25,8 @@ if anim=10
 /////Spore Spread
 if anim=6501
 {
+if AnimFrame=0  PlaySound(choose(snd_princess7,snd_princess8,snd_princess10,snd_princess11))	
+
 sprite_index=spr_plantprincess_attack4
 
 frame_set(0,0,0.25)
@@ -65,7 +67,7 @@ if anim=6500
 atkcol_set(80,0,15,2.85,1,45)
 	sprite_index=spr_plantprincess_attack1
 frame_set(0,0,0.25) 
-frame_set(1,1,0.25) 
+frame_set(1,1,0.25) if AnimFrame=2 {PlaySound(snd_princess2)}
 frame_set(2,2,0.05) if AnimFrame=clamp(AnimFrame,3,4) {atk=1} else {atk=0}
 frame_set(3,3,0.1)
 frame_set(4,4,0.05)
@@ -228,7 +230,7 @@ if AnimFrame>6.5 canmove=1
 
 if anim=11 ///Vine Attack
 {
-//if AnimFrame=0  PlaySound(snd_wolfita7)
+if AnimFrame=0  PlaySound(choose(snd_princess18,snd_princess17))
 canbeGrabbed=0
 MoveType=1 damage=0.2
 sprite_index=spr_plantprincess_attack5
@@ -248,7 +250,10 @@ if AnimFrame>6.5 {atk=0 canmove=1}
 }
 
 if anim=12 ///Slam Attack
-{sprite_index=spr_plantprincess_attack2 MoveType=4 damage=0.2
+{
+if AnimFrame=0  PlaySound(choose(snd_princess18,snd_princess19,snd_princess9,snd_princess5))
+	
+sprite_index=spr_plantprincess_attack2 MoveType=4 damage=0.2
 	atkcol_set(44,0,0,2.95,1,64)
 frame_set(0,0,0.25)
 frame_set(1,1,0.25) if AnimFrame=2 {zSpeed=-4 ground=0}
@@ -266,13 +271,19 @@ if AnimFrame>10.7 canmove=1
 }
 
 if anim=13 ///Plant Vines
-{sprite_index=spr_plantprincess_attack3
+{
+if AnimFrame=0  PlaySound(choose(snd_princess3,snd_princess4,snd_princess9))
+	
+sprite_index=spr_plantprincess_attack3
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.05)
 frame_set(3,3,0.25) if AnimFrame=4
 {
-bone=instance_create_depth(targetEnemy.x,y,-1,oBossHazard) bone.image_xscale=image_xscale
+	var repplant=1; var repdir=point_direction(x,y,targetEnemy.x,targetEnemy.y);
+repeat(8)
+{
+bone=instance_create_depth(x+lengthdir_x(64*repplant,repdir),y+lengthdir_y(64*repplant,repdir),-1,oBossHazard) bone.image_xscale=image_xscale
 bone.hitSource=self.id with bone
 {sprite_index=spr_plantprincess_vine
 selfscript = function()
@@ -302,6 +313,8 @@ if AnimFrame=clamp(AnimFrame,3,5.9)
 if AnimFrame>11.7 {dust_make(x,y,z,0,0,0) instance_destroy()}
 }
 }
+repplant+=1;
+}
 }
 frame_set(4,4,0.1)
 frame_set(5,5,0.05)
@@ -309,7 +322,7 @@ frame_set(6,3,0.05)
 frame_set(7,1,0.5)
 if AnimFrame>7.7 canmove=1
 }
-
+hasShadow=1
 if anim=14 ///Teleport
 {
 sprite_index=spr_plantprincess_teleport
@@ -324,7 +337,7 @@ frame_set(7,1,0.25)
 frame_set(8,0,0.25)
 frame_set(9,0,0.25)
 
-if AnimFrame=clamp(AnimFrame,4,6.5) {sprite_index=mask_none
+if AnimFrame=clamp(AnimFrame,4,6.5) {sprite_index=mask_none hasShadow=0
 	x=choose(oControl.camX+56,oControl.camX+320-56)
 	}
 
@@ -333,11 +346,11 @@ if AnimFrame>9.7 canmove=1
 
 if anim=100
 {if AnimFrame=0 sprite_index=spr_plantprincess_intro
-frame_set(0,0,0.01)
+frame_set(0,0,0.01) if AnimFrame=1 {PlaySound(snd_princess16)}
 frame_set(1,1,0.25)
 frame_set(2,2,0.25)
 frame_set(3,3,0.25)
-frame_set(4,4,0.01)
+frame_set(4,4,0.01) if AnimFrame=5 {PlaySound(snd_princess11)}
 frame_set(5,5,0.25)
 frame_set(6,6,0.25)
 frame_set(7,7,0.25)
@@ -356,7 +369,7 @@ frame_set(19,1,0.25)
 frame_set(20,2,0.25) if AnimFrame=21 shadowSpr=mask_none
 frame_set(21,3,0.25)
 frame_set(22,4,0.25) 
-frame_set(23,5,0.01) if AnimFrame=24 y+=96
+frame_set(23,5,0.01) if AnimFrame=24 {y+=96 x+=32}
 frame_set(24,5,0.25) 
 frame_set(25,5,0.25)
 frame_set(26,2,0.25) if AnimFrame=27 shadowSpr=spr_shadow

@@ -29,7 +29,7 @@ draw_sprite_ext(sprite_index,image_index,round(x+((floorPosX[image_index]*floorP
 
 }
 
-	
+
 
 	pal_swap_reset();
 	shader_reset()

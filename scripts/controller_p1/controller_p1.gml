@@ -22,6 +22,9 @@ key_right = keyboard_check(ord("D"));
 	key_shield_pressed = keyboard_check_pressed(ord(global.ControlShield[_controlno]));
 	key_super=keyboard_check_pressed(ord(global.ControlSuper[_controlno]));
 	
+	key_scream=keyboard_check(ord("O"));
+	key_screamP=keyboard_check_pressed(ord("O"));
+	
 	key_interact = global.LegacyMode[_controlno]*keyboard_check_pressed(ord(global.ControlInteract[_controlno]));
 	
 	key_X=keyboard_check_pressed(ord(global.ControlSuper[_controlno])) or keyboard_check_pressed(ord("J"))

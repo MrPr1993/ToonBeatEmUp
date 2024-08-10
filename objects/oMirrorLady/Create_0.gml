@@ -29,12 +29,16 @@ spawnenemyscript=function()
 	
 if enemyset=1
 {
+PlaySound(snd_mirrorlady2)	
+
 enemyspawn[0]=instance_create_depth(x+32,y+64,-1,oEntryMirror) enemyspawn[0].image_xscale=-1
 maxhp=1
 }
 
 if enemyset=2
 {
+PlaySound(snd_mirrorlady9)		
+
 enemyspawn[0]=instance_create_depth(x-32,y+64,-1,oEntryMirror)
 enemyspawn[1]=instance_create_depth(x+32,y+64,-1,oEntryMirror) enemyspawn[1].image_xscale=-1
 
@@ -46,6 +50,8 @@ with enemyspawn[1] character=1
 
 if enemyset=3
 {
+PlaySound(snd_mirrorlady10)		
+
 maxhp=4	
 
 enemyspawn[0]=instance_create_depth(x-32,y+64,-1,oEntryMirror)

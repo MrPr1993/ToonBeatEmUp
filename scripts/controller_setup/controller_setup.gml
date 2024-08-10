@@ -37,6 +37,8 @@ function controller_setup() {
 	key_shield_pressed = 0
 	key_super=0
 	
+	key_super=0
+	
 	key_taunt=0
 	key_punchback=0
 	
@@ -58,6 +60,10 @@ function controller_setup() {
 	key_LT=0
 	key_RB=0
 	key_RT=0
+	
+key_scream=0
+key_screamP=0
+	
 	key_pause=0
 	
 

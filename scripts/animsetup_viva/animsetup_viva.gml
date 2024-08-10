@@ -1,6 +1,10 @@
 ///Animation Setup - Viva
 ////Here it indicates the character's abilities
 function animsetup_viva() {
+	 
+	 
+//if canmove{if screamset=0 if key_screamP oControl.quakeFXTime=10 screamset=key_scream if screamset {if !audio_is_playing(snd_vivanoise) {var timesSound=1 var snd = audio_play_sound(snd_vivanoise,0,1) audio_sound_gain(snd_vivanoise, timesSound, 0); audio_sound_gain(snd_vivanoise,global.SFXvolume/100,0)} with selfatk{seten=instance_place(x,y,parEnemy) if place_meeting(x,y,seten) if seten.x<hitSource.x seten.image_xscale=1 else seten.image_xscale=-1 with seten if hp!=0 and dead=0 {if place_free(x-2*image_xscale,y) x-=2*image_xscale anim=4 canmove=0 AnimFrame=0 shaketime=2 targetHeightHit=GrabFrame sprite_index=ThrownSpr image_index=targetHeightHit hp-=0.01 if hp<=0 {HitType=19936 event_user(0)}}}}} else {screamset=0} if screamset=0 audio_stop_sound(snd_vivanoise)
+
 
 	walkSpeed=2
 	damage=0.05
