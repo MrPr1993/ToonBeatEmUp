@@ -55,6 +55,7 @@ if AnimFrame>3.5 canbeGrabbed=1
 if AnimFrame>4.5 {atk=0 canmove=1}
 }
 
+////Fireballs
 if anim=1100 ////64,60
 {if AnimFrame=0 {specialcheck4=0 PlaySound(snd_seaweed3)} sprite_index=spr_seaweed_attack1
 frame_set(0,0,0.25) damage=0.1 MoveType=1
@@ -80,6 +81,7 @@ frame_set(3,0,0.1) if AnimFrame=clamp(AnimFrame,2,3) {sentflying=8*image_xscale 
 if AnimFrame>3.5 canmove=1
 }
 
+////Curse
 if anim=13
 {bombRecharge=choose(200,220,240,260)
 if AnimFrame=0 {specialtimes[0]=0
@@ -125,7 +127,7 @@ with bone{
 	sprite_index=spr_seaweed_column
 	
 selfscript = function()
-{MoveType=1 damage=0.1 depth=-y
+{MoveType=1 damage=0.1 depth=-y 
 depth=6666
 frame_set(0,0,0.2)
 frame_set(1,1,0.2)

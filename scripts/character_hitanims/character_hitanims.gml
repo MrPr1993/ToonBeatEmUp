@@ -787,6 +787,15 @@ if ground {
 	zSpeed=-2 AnimFrame=0 anim=4 targetHeightHit=0 AnimFrame=0.9}
 }
 
+///Scared at the respawn
+if anim=595000
+{if AnimFrame=0 {image_index=0}
+if hasscaredSpr=0 {sprite_index=ThrownSpr image_index=GrabFrame}
+else {sprite_index=scaredSpr image_index+=0.25 if image_index=3 image_index=1}
+AnimFrame+=1
+
+if AnimFrame=100 {canmove=1 hurt=0}
+}
 
 }
 
