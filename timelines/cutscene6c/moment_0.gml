@@ -24,9 +24,9 @@ actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 oCameoChar.x+=160;
 
-SceneX=320
+SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
-SceneY=128
+SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
@@ -50,73 +50,15 @@ cutsceneline="THE PLANE'S GOING DOWN!"
 }
 }
 
-if scenetime=200
-{
-with oControl
-{cutscenename="BAHATI"
-cutsceneline="OH NO! WHAT DO WE DO?!"
-}
-}
-
-if scenetime=280
-{
-with oControl
-{cutscenename="HINA"
-cutsceneline="WOW. IT'S A LONG WAY DOWN..."
-}
-}
-
-if scenetime=360
-{
-with oControl
-{cutscenename="SOFIA"
-cutsceneline="LOOK THERE, CHICAS!!"
-}
-}
-
-if scenetime=480
-{
-with oControl
-{
-}
-
-actor6=instance_create_depth(80,130,-1,oCameoChar) with actor6
-{sprite_index=spr_hwolf_stand anim=9999 image_xscale=-1}
-}
-
-if scenetime=580
-{
-with actor6 {shadow=-1; PlaySound(snd_jump) spdZ=-4 newscript=function()
-{
-z+=spdZ;
-
-spdZ+=0.45
-
-hspeed=-0.2 vspeed=0.2
-
-}}
-
-}
-
-
-
-if scenetime=clamp(scenetime,500,639)
-with oControl {if SceneX>0 SceneX-=4 else SceneX=0}
-
-if scenetime=640
-{
-with oControl
-{
-SceneX=320
-__view_set( e__VW.XView, 0, SceneX )
-SceneY=128
-__view_set( e__VW.XView, 0, SceneY )
-
-cutscenename="SOFIA"
-cutsceneline="DAMN IT! SHE'S GETTING AWAY AGAIN!"
-}
-}
-
+cutscenename="FIONA" cutsceneline= "SNIFF SNIFF... Stupid.... Insects...!"
+cutscenename="VIVA" cutsceneline= "Well I'm officially lost... What are we going to do now?"
+cutscenename="SOFIA" cutsceneline= "We're stuck high in the sky... It'd take a miracle to get to the hideout from here..."
+cutscenename="HINA" cutsceneline= "Maybe this castle has something we could use?"
+cutscenename="BAHATI" cutsceneline= "It'd take forever to search this place though... Wait, does anyone else hear a vacuum cleaner?"
+//Whirrrrrrr
+cutscenename="DIVAS" cutsceneline= "Uh oh..."
+//Vacuum suck and eject
+cutscenename="FIONA" cutsceneline= "BEGONE, FILTH!!!!!"
 if scenetime=760
 {
 	with oControl
@@ -146,9 +88,9 @@ if scenetime=clamp(scenetime,760,799) scenetime=764
 timeline_position=10
 timeline_speed=0
 
-SceneX=320
+SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
-SceneY=128
+SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 

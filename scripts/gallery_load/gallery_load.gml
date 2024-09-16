@@ -10,35 +10,52 @@ pictureMax=6
 	
 if galno=1
 {
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/VivaArtwork1.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/VivaOnADrink.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/VivaGettingReady.png",0,0,1,0,0)
-picturetext[5]="???"sprite_replace(spr_galleryimg5,"Gallery/VivaArtwork2.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/VivaArtwork1.png",0,0,1,0,0)
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/VivaArtwork1.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/VivaArtwork2.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/VivaArtwork3.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/VivaArtwork4.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/VivaArtwork5.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/VivaArtwork6.png",0,0,1,0,0)
 }
 if galno=2
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/HinasMorning.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork2.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/HinaArtwork3.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/HinaArtwork4.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/HinaArtwork5.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/HinaArtwork6.png",0,0,1,0,0)
 }
 if galno=3
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/BahatiArtwork1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/BahatiWorkout.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/BahatiArtwork2.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/BahatiArtwork3.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/BahatiArtwork4.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/BahatiArtwork5.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/BahatiArtwork6.png",0,0,1,0,0)
 }
 if galno=4
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/SofiaArtwork1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/SofiaAfterWork.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/SofiaArtwork2.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/SofiaArtwork3.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/SofiaArtwork4.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/SofiaArtwork5.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/SofiaArtwork6.png",0,0,1,0,0)
 }
 if galno=5
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+//Note - some characters who aren't fanservicey will be in the background
+////Chill and Spice
+////The Burgs and Sneak abs
+////
+////
 }
 if galno=6
 {

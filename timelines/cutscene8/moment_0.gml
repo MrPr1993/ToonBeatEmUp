@@ -24,9 +24,9 @@ actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 oCameoChar.x+=160;
 
-SceneX=320
+SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
-SceneY=128
+SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
@@ -50,72 +50,43 @@ cutsceneline="THE PLANE'S GOING DOWN!"
 }
 }
 
-if scenetime=200
-{
-with oControl
-{cutscenename="BAHATI"
-cutsceneline="OH NO! WHAT DO WE DO?!"
-}
-}
+///-All's Well that Ends Well-
+cutscenename="VIVA" cutsceneline= "Urgh.... That was a rough landing... Anyone find our stuff?"
+cutscenename="BAHATI" cutsceneline= "Be patient, there's alot of rubble to dig through."
+cutscenename="HINA" cutsceneline= "I called the police to take the baddies away!"
+cutscenename="SOFIA" cutsceneline= "Aha! Here we are!"
+//Gleam
+cutscenename="DIVAS" cutsceneline= "OUR TREASURES!!!"
+cutscenename="VIVA" cutsceneline= "Finally! My beautiful diamond, safe and sound!" 
+cutscenename="HINA" cutsceneline= "So much work... But it was worth it!"
+cutscenename="BAHATI" cutsceneline= "Next time we'll have to keep them under tighter wraps."
+cutscenename="SOFIA" cutsceneline= "Well how about it? Ready to get the show back on?"
+cutscenename="DIVAS" cutsceneline= "LET'S PARTY!!!"
 
-if scenetime=280
-{
-with oControl
-{cutscenename="HINA"
-cutsceneline="WOW. IT'S A LONG WAY DOWN..."
-}
-}
-
-if scenetime=360
-{
-with oControl
-{cutscenename="SOFIA"
-cutsceneline="LOOK THERE, CHICAS!!"
-}
-}
-
-if scenetime=480
-{
-with oControl
-{
-}
-
-actor6=instance_create_depth(80,130,-1,oCameoChar) with actor6
-{sprite_index=spr_hwolf_stand anim=9999 image_xscale=-1}
-}
-
-if scenetime=580
-{
-with actor6 {shadow=-1; PlaySound(snd_jump) spdZ=-4 newscript=function()
-{
-z+=spdZ;
-
-spdZ+=0.45
-
-hspeed=-0.2 vspeed=0.2
-
-}}
-
-}
+//-Viva Las Rage-as-
+//All's Well That Ends Well dialogue until after "OUR TREASURES!!!"
+cutscenename="BAHATI" cutsceneline= "We can finally rest easy, after all those obstacles..."
+cutscenename="VIVA" cutsceneline= "Right... All those... Obstacles... Including all the times I got smacked around... Humiliated... WHY WAS IT ALWAYS ME?! WHAT DID I DO TO DESERVE ALL THAT PAIN?!"
+cutscenename="HINA" cutsceneline= "Uh oh... She's losing it..."
+cutscenename="VIVA" cutsceneline= "YOU'RE DAMN RIGHT I'M LOSING IT!!! HOWCOME YOU THREE DIDN'T GET HORRIBLY BRUTALIZED AS MUCH AS I DID?!"
+cutscenename="SOFIA" cutsceneline= "Calm down! It's all over with now!"
+cutscenename="VIVA" cutsceneline= "Right... You're right... Still..."
+//Viva is rapidly approaching your location
+cutscenename="VIVA" cutsceneline= "I WOULDN'T HAVE GOTTEN ALL THOSE LUMPS IF YOU PICKED A BETTER ROUTE!!! C'MERE!!!"
+//Camera crash
+cutscenename="VIVA" cutsceneline= "OOF!"
+//-Jail Songbirds-
+//All's Well That Ends Well dialogue for first 4 lines. Suddenly cuffed.
+cutscenename="VIVA" cutsceneline= "W-What?! Why are WE getting cuffed?!"
+cutscenename="COP" cutsceneline= "You ladies are under arrest for numerous counts of trespassing and destruction of private AND public property! You have the right to remain silent!"
+cutscenename="BAHATI" cutsceneline= "Oh... We DID do quite a bit of damage..."
+cutscenename="SOFIA" cutsceneline= "You've gotta be kidding..."
+//Yeet into police truck
+cutscenename="HINA" cutsceneline= "Do you think they'll let us perform for the prison?"
+cutscenename="VIVA" cutsceneline= "WAIT! THERE HAS TO BE SOME MISTAKE! THE THIEVES WERE THE ONES WRECKING EVERYTHING! WAIT, YOU MORONS!!!"
+//Door shut
 
 
-
-if scenetime=clamp(scenetime,500,639)
-with oControl {if SceneX>0 SceneX-=4 else SceneX=0}
-
-if scenetime=640
-{
-with oControl
-{
-SceneX=320
-__view_set( e__VW.XView, 0, SceneX )
-SceneY=128
-__view_set( e__VW.XView, 0, SceneY )
-
-cutscenename="SOFIA"
-cutsceneline="DAMN IT! SHE'S GETTING AWAY AGAIN!"
-}
-}
 
 if scenetime=760
 {
@@ -146,9 +117,9 @@ if scenetime=clamp(scenetime,760,799) scenetime=764
 timeline_position=10
 timeline_speed=0
 
-SceneX=320
+SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
-SceneY=128
+SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 

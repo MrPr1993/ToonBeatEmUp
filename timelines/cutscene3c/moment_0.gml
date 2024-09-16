@@ -50,72 +50,20 @@ cutsceneline="THE PLANE'S GOING DOWN!"
 }
 }
 
-if scenetime=200
-{
-with oControl
-{cutscenename="BAHATI"
-cutsceneline="OH NO! WHAT DO WE DO?!"
-}
-}
+cutscenename="FUKUKIJO" cutsceneline= "Such strength... Why do you assault our employees and customers?"
+cutscenename="VIVA" cutsceneline= "We want answers!"
+cutscenename="SOFIA" cutsceneline= "What're those thieves planning to do with our treasure?!"
+//suddenly surrounded
+cutscenename="SHOKIJO" cutsceneline= "You would do well to mind your manners..."
+cutscenename="FUKUKIJO" cutsceneline= "We shall release you... But first, let's play a game."
+cutscenename="BAHATI" cutsceneline= "A game? What do you mean?"
+cutscenename="SHOKIJO" cutsceneline= "Just that. Answer our riddle, and in exchange, we'll send you on a path to the answers you seek."
+cutscenename="HINA" cutsceneline= "Oh a riddle! How fun! Lay it on us!"
+cutscenename="FUKUKIJO" cutsceneline= "One of us speaks only the truth... Like about how we wax our horns..."
+cutscenename="SHOKIJO" cutsceneline= "...While the other only lies... Like about how we are 300 years old..."
+cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "Which of us is the liar?"
+//Choices appear 
 
-if scenetime=280
-{
-with oControl
-{cutscenename="HINA"
-cutsceneline="WOW. IT'S A LONG WAY DOWN..."
-}
-}
-
-if scenetime=360
-{
-with oControl
-{cutscenename="SOFIA"
-cutsceneline="LOOK THERE, CHICAS!!"
-}
-}
-
-if scenetime=480
-{
-with oControl
-{
-}
-
-actor6=instance_create_depth(80,130,-1,oCameoChar) with actor6
-{sprite_index=spr_hwolf_stand anim=9999 image_xscale=-1}
-}
-
-if scenetime=580
-{
-with actor6 {shadow=-1; PlaySound(snd_jump) spdZ=-4 newscript=function()
-{
-z+=spdZ;
-
-spdZ+=0.45
-
-hspeed=-0.2 vspeed=0.2
-
-}}
-
-}
-
-
-
-if scenetime=clamp(scenetime,500,639)
-with oControl {if SceneX>0 SceneX-=4 else SceneX=0}
-
-if scenetime=640
-{
-with oControl
-{
-SceneX=320
-__view_set( e__VW.XView, 0, SceneX )
-SceneY=128
-__view_set( e__VW.XView, 0, SceneY )
-
-cutscenename="SOFIA"
-cutsceneline="DAMN IT! SHE'S GETTING AWAY AGAIN!"
-}
-}
 
 if scenetime=760
 {

@@ -50,72 +50,28 @@ cutsceneline="THE PLANE'S GOING DOWN!"
 }
 }
 
-if scenetime=200
-{
-with oControl
-{cutscenename="BAHATI"
-cutsceneline="OH NO! WHAT DO WE DO?!"
-}
-}
-
-if scenetime=280
-{
-with oControl
-{cutscenename="HINA"
-cutsceneline="WOW. IT'S A LONG WAY DOWN..."
-}
-}
-
-if scenetime=360
-{
-with oControl
-{cutscenename="SOFIA"
-cutsceneline="LOOK THERE, CHICAS!!"
-}
-}
-
-if scenetime=480
-{
-with oControl
-{
-}
-
-actor6=instance_create_depth(80,130,-1,oCameoChar) with actor6
-{sprite_index=spr_hwolf_stand anim=9999 image_xscale=-1}
-}
-
-if scenetime=580
-{
-with actor6 {shadow=-1; PlaySound(snd_jump) spdZ=-4 newscript=function()
-{
-z+=spdZ;
-
-spdZ+=0.45
-
-hspeed=-0.2 vspeed=0.2
-
-}}
-
-}
-
-
-
-if scenetime=clamp(scenetime,500,639)
-with oControl {if SceneX>0 SceneX-=4 else SceneX=0}
-
-if scenetime=640
-{
-with oControl
-{
-SceneX=320
-__view_set( e__VW.XView, 0, SceneX )
-SceneY=128
-__view_set( e__VW.XView, 0, SceneY )
-
-cutscenename="SOFIA"
-cutsceneline="DAMN IT! SHE'S GETTING AWAY AGAIN!"
-}
-}
+cutscenename="VIVA" cutsceneline="Huh?! Where'd that haughty ghost get off to?"
+cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
+cutscenename="HINA" cutsceneline= "Umm... Girls...?"
+cutscenename="SOFIA" cutsceneline= "Not now Hina, can't you see we're trying to catch that specter?"
+cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
+//CHOP
+cutscenename="ANNAMARI" cutsceneline= "FOOOOOLS!!!"
+cutscenename="DIVAS" cutsceneline= "AAAAAAAAHHHH!!!!!"
+cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for thinking you could put a damper on my joyous haunting! The living cannot harm the dead!"
+cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
+cutscenename="SOFIA" cutsceneline= "The living huh...?"
+cutscenename="BAHATI" cutsceneline= "Well we're not living right now..."
+cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
+//Beatdown ensues.
+cutscenename="ANNAMARI" cutsceneline= "WAIT WAIT WAIT!!! I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
+cutscenename="BAHATI" cutsceneline= "Your family heirloom...?"
+cutscenename="HINA" cutsceneline= "Just like us...."
+cutscenename="VIVA" cutsceneline= "Hmm... Let's make a deal since we're in the same situation... You revive us, and we'll get back your heirloom along with ours!"
+cutscenename="ANNAMARI" cutsceneline= "Y-You will?! You promise?!"
+cutscenename="SOFIA" cutsceneline= "Of course! Just tell us where you last saw those punks run off to!"
+cutscenename="ANNAMARI" cutsceneline= "Well...."
+//choices appear
 
 if scenetime=760
 {

@@ -386,7 +386,7 @@ creditmoment="VOICES BY\n \nMIMI HUNG\nFLIRTY FAWN\nCINDER\nSED2116\nMIZZPEACHY\
 else if creditsTime<7+5*6
 creditmoment="GRAPHICS BY\n \nMRPR1993\nFROTHIER\nDR.LILI M.D." ;
 else if creditsTime<7+5*7
-creditmoment="WRITING BY\n \nMRPR1993\nSHADES\nSED2116" ;
+creditmoment="WRITING BY\n \nMRPR1993\nSHADES\nSED2116\nFLASH TRICKSTAR" ;
 else if creditsTime<7+5*8
 creditmoment="CHARACTER DESIGN BY\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
 else if creditsTime<7+5*9

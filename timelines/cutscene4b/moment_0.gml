@@ -50,72 +50,11 @@ cutsceneline="THE PLANE'S GOING DOWN!"
 }
 }
 
-if scenetime=200
-{
-with oControl
-{cutscenename="BAHATI"
-cutsceneline="OH NO! WHAT DO WE DO?!"
-}
-}
-
-if scenetime=280
-{
-with oControl
-{cutscenename="HINA"
-cutsceneline="WOW. IT'S A LONG WAY DOWN..."
-}
-}
-
-if scenetime=360
-{
-with oControl
-{cutscenename="SOFIA"
-cutsceneline="LOOK THERE, CHICAS!!"
-}
-}
-
-if scenetime=480
-{
-with oControl
-{
-}
-
-actor6=instance_create_depth(80,130,-1,oCameoChar) with actor6
-{sprite_index=spr_hwolf_stand anim=9999 image_xscale=-1}
-}
-
-if scenetime=580
-{
-with actor6 {shadow=-1; PlaySound(snd_jump) spdZ=-4 newscript=function()
-{
-z+=spdZ;
-
-spdZ+=0.45
-
-hspeed=-0.2 vspeed=0.2
-
-}}
-
-}
-
-
-
-if scenetime=clamp(scenetime,500,639)
-with oControl {if SceneX>0 SceneX-=4 else SceneX=0}
-
-if scenetime=640
-{
-with oControl
-{
-SceneX=320
-__view_set( e__VW.XView, 0, SceneX )
-SceneY=128
-__view_set( e__VW.XView, 0, SceneY )
-
-cutscenename="SOFIA"
-cutsceneline="DAMN IT! SHE'S GETTING AWAY AGAIN!"
-}
-}
+cutscenename="CIRCE" cutsceneline= "How could you?! First you pick on my sweet Larry and NOW you attack me?! What's wrong with you?!"
+cutscenename="BAHATI" cutsceneline= "We HAVE been too gung-ho on the whole 'fight first, ask questions later' approach, girls..."
+cutscenename="VIVA" cutsceneline= "Look, we've had some VERY valuable personal treasures stolen from us, and we need to get them back. Do you know where they are?"
+//Circe sighs
+cutscenename="CIRCE" cutsceneline= "Very well... I suppose I'll let this incident go since Larry attacked you first. Larry, fetch my crystal ball would you, sweetie?"
 
 if scenetime=760
 {

@@ -1,6 +1,6 @@
 enemy_data()
 
-name="LILY"
+name="SYNTHESA"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=33
 
