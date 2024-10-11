@@ -1719,6 +1719,7 @@
     {"name":"spr_beelady_frozen","order":6,"path":"sprites/spr_beelady_frozen/spr_beelady_frozen.yy",},
     {"name":"spr_beelady_hit","order":3,"path":"sprites/spr_beelady_hit/spr_beelady_hit.yy",},
     {"name":"spr_beelady_move","order":2,"path":"sprites/spr_beelady_move/spr_beelady_move.yy",},
+    {"name":"spr_beelady_panic","order":18,"path":"sprites/spr_beelady_panic/spr_beelady_panic.yy",},
     {"name":"spr_bgglass","order":1,"path":"sprites/spr_bgglass/spr_bgglass.yy",},
     {"name":"spr_bigbullrun","order":15,"path":"sprites/spr_bigbullrun/spr_bigbullrun.yy",},
     {"name":"spr_bigsmoke","order":20,"path":"sprites/spr_bigsmoke/spr_bigsmoke.yy",},

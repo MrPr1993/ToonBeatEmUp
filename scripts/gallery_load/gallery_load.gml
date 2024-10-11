@@ -47,6 +47,8 @@ picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/SofiaArtwork4.png",
 picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/SofiaArtwork5.png",0,0,1,0,0)
 picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/SofiaArtwork6.png",0,0,1,0,0)
 }
+
+////Enemy Art
 if galno=5
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
@@ -72,28 +74,49 @@ if galno=8
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 }
+
+////Boss Art
 if galno=9
-{
+{pictureMax=4
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+picturetext[1]="Lady Wolf getting herself ready to bite someone." sprite_replace(spr_galleryimg1,"Gallery/BossArt1.png",0,0,1,0,0)
+picturetext[2]="Harpilda used to be a little lighter. She laughs." sprite_replace(spr_galleryimg2,"Gallery/BossArt2.png",0,0,1,0,0)
+picturetext[3]="Rosy taking a break after a hard work at the cruise ship." sprite_replace(spr_galleryimg3,"Gallery/BossArt3.png",0,0,1,0,0)
+picturetext[4]="Dolores enjoys a bit of sun at the Loco Dos." sprite_replace(spr_galleryimg4,"Gallery/BossArt4.png",0,0,1,0,0)
+
 }
 if galno=10
-{
+{pictureMax=6
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+picturetext[1]="Annamari loves to spook people with her beheaded head." sprite_replace(spr_galleryimg1,"Gallery/BossArt5.png",0,0,1,0,0)
+picturetext[2]="Hathor taking a smoke and going to show some regality." sprite_replace(spr_galleryimg2,"Gallery/BossArt6.png",0,0,1,0,0)
+picturetext[3]="The Oni Sisters have a huge hand to help each other." sprite_replace(spr_galleryimg3,"Gallery/BossArt7.png",0,0,1,0,0)
+picturetext[4]="Kiandra has been shoved inside her own cauldron. Who did that?" sprite_replace(spr_galleryimg4,"Gallery/BossArt8.png",0,0,1,0,0)
+picturetext[5]="Dixie wants you to taste her pie. Her actual pie she has." sprite_replace(spr_galleryimg5,"Gallery/BossArt9.png",0,0,1,0,0)
+picturetext[6]="Circe and Larry dancing it out to old music for fun." sprite_replace(spr_galleryimg6,"Gallery/BossArt10.png",0,0,1,0,0)
 }
 if galno=11
-{
+{pictureMax=6
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+picturetext[1]="The space captain Kween demands your space treasure." sprite_replace(spr_galleryimg1,"Gallery/BossArt11.png",0,0,1,0,0)
+picturetext[2]="Prince lookin' good while at the surface to show off." sprite_replace(spr_galleryimg2,"Gallery/BossArt12.png",0,0,1,0,0)
+picturetext[3]="Haifa and her lover have become a couple for a long time." sprite_replace(spr_galleryimg3,"Gallery/BossArt13.png",0,0,1,0,0)
+
+picturetext[4]="Mirrosa can do a reflective posing in her divine mirror." sprite_replace(spr_galleryimg4,"Gallery/BossArt14.png",0,0,1,0,0)
+picturetext[5]="Synthesa enjoys a good party and has claimed a new partner." sprite_replace(spr_galleryimg5,"Gallery/BossArt15.png",0,0,1,0,0)
+picturetext[6]="Fiona has found someone cut and is ready for a little smooch." sprite_replace(spr_galleryimg6,"Gallery/BossArt16.png",0,0,1,0,0)
 }
 if galno=12
-{
+{pictureMax=3
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+picturetext[1]="Dr. Fran is not going to let you go past this point." sprite_replace(spr_galleryimg1,"Gallery/BossArt17.png",0,0,1,0,0)
+picturetext[2]="A dapper Van Vad going out to get some goods." sprite_replace(spr_galleryimg2,"Gallery/BossArt18.png",0,0,1,0,0)
+picturetext[3]="Van Bad, founder of thieves, the vampire and elegant boss." sprite_replace(spr_galleryimg3,"Gallery/BossArt19.png",0,0,1,0,0)
 }
+
+///Misc
 if galno=13
-{
+{pictureMax=6
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 }
