@@ -53,7 +53,7 @@ cutsceneline="THE PLANE'S GOING DOWN!"
 cutscenename="HATHOR" cutsceneline= "Ungh.... We cannot BELIEVE we lost to a bunch of mortals! Atleast all my treasure is still..."
 //Pan to thieves taking off with treasure
 cutscenename="HATHOR" cutsceneline= "What do those fools think they're doing?!"
-cutscenename="VIVA" cutsceneline= "Looks like they're taking your treasure just like they took ours.
+cutscenename="VIVA" cutsceneline= "Looks like they're taking your treasure just like they took ours."
 cutscenename="BAHATI" cutsceneline= "They do seem to be on a looting spree..."
 cutscenename="HATHOR" cutsceneline= "What?!"
 //Hathor grabs Viva and shakes her
