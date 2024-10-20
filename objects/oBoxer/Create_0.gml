@@ -56,6 +56,8 @@ hasCut=1
 cutSpr1=spr_boxer_cut1
 cutSpr2=spr_boxer_cut2
 
+hasscaredSpr=1 scaredSpr=spr_boxer_panic
+
 current_pal=2;
 my_pal_sprite=spr_boxerpal
 spritepos_setup(1,24,3,53)

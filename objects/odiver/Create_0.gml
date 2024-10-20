@@ -50,6 +50,8 @@ BurnSpr=spr_diver_burned
 FrozenSpr=spr_diver_frozen
 hasDizzy=1 DizzySpr=spr_diver_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_diver_panic
+
 hasCut=1
 cutSpr1=spr_diver_cut1
 cutSpr2=spr_diver_cut2

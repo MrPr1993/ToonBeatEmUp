@@ -49,6 +49,8 @@ BurnSpr=spr_wolfita_burned
 FrozenSpr=spr_wolfita_frozen
 DizzySpr=spr_wolfita_hit
 
+hasscaredSpr=1 scaredSpr=spr_wolfita_panic
+
 isBoss=1
 specialBossState=1
 

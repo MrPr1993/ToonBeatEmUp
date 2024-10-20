@@ -51,6 +51,8 @@ BurnSpr=spr_dastardly2_burned
 FrozenSpr=spr_dastardly2_frozen
 DizzySpr = spr_dastardly2_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_dastardly2_panic
+
 enemyID=177
 
 spritepos_setup(1,24,13,52)

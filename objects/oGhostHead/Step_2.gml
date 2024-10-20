@@ -93,4 +93,5 @@ if AnimFrame>17.75 anim=0
 }
 
 
+
 z+=spdZ

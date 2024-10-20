@@ -48,6 +48,8 @@ BurnSpr=spr_nurse_burned
 FrozenSpr=spr_nurse_frozen
 hasDizzy=1 DizzySpr=spr_nurse_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_nurse_panic
+
 hasCut=1
 cutSpr1=spr_nurse_cut1
 cutSpr2=spr_nurse_cut2

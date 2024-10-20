@@ -272,5 +272,14 @@ GheadX=10
 GheadY=-104
 }
 
+if sprite_index=scaredSpr
+{
+headSpr=spr_ghost_head_panic
+headInd=image_index
+
+GheadX=10
+GheadY=-104
+}
+
 	if hp<=0
 x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)

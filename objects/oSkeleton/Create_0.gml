@@ -45,6 +45,8 @@ BurnSpr=spr_skeleton_burned
 FrozenSpr=spr_skeleton_frozen
 DizzySpr=spr_skeleton_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_skeleton_panic
+
 spritepos_setup(1,24,1,44)
 
 spritepos_setup(2,0,-1,73)

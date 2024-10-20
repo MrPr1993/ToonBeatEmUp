@@ -55,6 +55,8 @@ BurnSpr=spr_cobra_burned
 FrozenSpr=spr_cobra_frozen
 hasDizzy=1 DizzySpr=spr_cobra_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_cobra_panic
+
 hasCut=1
 cutSpr1=spr_cobra_cut1
 cutSpr2=spr_cobra_cut2

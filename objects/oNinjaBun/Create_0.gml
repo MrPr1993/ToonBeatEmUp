@@ -59,6 +59,8 @@ BurnSpr=spr_ninjabun_burned
 FrozenSpr=spr_ninjabun_frozen
 hasDizzy=1 DizzySpr=spr_ninjabun_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_ninjabun_panic
+
 hasCut=1
 cutSpr1=spr_ninjabun_cut1
 cutSpr2=spr_ninjabun_cut2

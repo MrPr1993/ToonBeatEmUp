@@ -48,6 +48,8 @@ BurnSpr=spr_martianb_burned
 FrozenSpr=spr_martianb_frozen
 DizzySpr=spr_martianb_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_martianb_panic
+
 spritepos_setup(1,24,-3,64)
 spritepos_setup(2,24,9,93)
 

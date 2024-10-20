@@ -54,6 +54,8 @@ DizzySpr=spr_prince_dizzy hasDizzy=1
 isBoss=1
 specialBossState=1
 
+hasscaredSpr=1 scaredSpr=spr_prince_panic
+
 spritepos_setup(1,24,5,58)
 spritepos_setup(2,24,1,96)
 

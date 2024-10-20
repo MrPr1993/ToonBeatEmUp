@@ -50,6 +50,8 @@ BurnSpr=spr_monk_burned
 FrozenSpr=spr_monk_frozen
 DizzySpr=spr_monk_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_monk_panic
+
 hasCut=1
 cutSpr1=spr_monk_cut1
 cutSpr2=spr_monk_cut2

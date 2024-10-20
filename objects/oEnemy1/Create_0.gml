@@ -24,6 +24,8 @@ enemyIdle4=spr_burglar_idle
 enemyIdle5=spr_burglar_idle
 	enemyIdle3=spr_burglar_idle3
 	enemyIdle3Spd=0.25
+	
+hasscaredSpr=1 scaredSpr=spr_burglar_panic
 
 pointshit=10
 points=100

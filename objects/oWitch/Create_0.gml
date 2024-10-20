@@ -49,6 +49,7 @@ ShockSpr=spr_witch_elec
 BurnSpr=spr_witch_burned
 FrozenSpr=spr_witch_frozen
 
+hasscaredSpr=1 scaredSpr=spr_witch_panic
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal

@@ -59,6 +59,8 @@ BurnSpr=spr_martian_burned
 FrozenSpr=spr_martian_burned
 hasDizzy=1 DizzySpr=spr_martian_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_martian_panic
+
 hasCut=1
 cutSpr1=spr_martian_cut1
 cutSpr2=spr_martian_cut2

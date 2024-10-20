@@ -58,6 +58,8 @@ hasCut=1
 cutSpr1=spr_beelady_cut1
 cutSpr2=spr_beelady_cut2
 
+hasscaredSpr=1 scaredSpr=spr_beelady_panic
+
 	hasFront=1
 	FrontSpr=spr_beelady_front
 hasDizzy=1 DizzySpr=spr_beelady_dizzy

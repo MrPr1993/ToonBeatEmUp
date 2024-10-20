@@ -52,6 +52,8 @@ BurnSpr=spr_samurai_burned
 FrozenSpr=spr_samurai_frozen
 hasDizzy=1 DizzySpr=spr_samurai_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_samurai_panic
+
 hasCut=1
 cutSpr1=spr_samurai_cut1
 cutSpr2=spr_samurai_cut2

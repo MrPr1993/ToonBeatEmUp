@@ -77,6 +77,8 @@ BurnSpr=spr_swing_burned
 FrozenSpr=spr_swing_frozen
 DizzySpr=spr_swing_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_swing_panic
+
 hasCut=1
 cutSpr1=spr_swing_cut1
 cutSpr2=spr_swing_cut2

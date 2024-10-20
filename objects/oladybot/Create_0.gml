@@ -55,6 +55,8 @@ hasCut=1
 cutSpr1=spr_ladybot_cut1
 cutSpr2=spr_ladybot_cut2
 
+hasscaredSpr=1 scaredSpr=spr_ladybot_panic
+
 current_pal=0;
 my_pal_sprite=spr_robotpal
 

@@ -101,6 +101,8 @@ hasCut=1
 cutSpr1=spr_sneak_cut1
 cutSpr2=spr_sneak_cut2
 
+hasscaredSpr=1 scaredSpr=spr_sneak_panic
+
 spritepos_setup(1,24,2,40)
 spritepos_setup(2,6,1,0)
 spritepos_setup(2,24,2,64)

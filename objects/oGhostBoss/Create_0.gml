@@ -85,6 +85,7 @@ BurnSpr=spr_ghost_burned
 FrozenSpr=spr_ghost_frozen
 DizzySpr=spr_ghost_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_ghost_panic
 
 enemyID=155
 

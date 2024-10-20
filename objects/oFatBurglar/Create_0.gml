@@ -58,6 +58,8 @@ BurnSpr=spr_fatburglar_burned
 FrozenSpr=spr_fatburglar_frozen
 DizzySpr=spr_fatburglar_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_fatburglar_panic
+
 hasCut=1
 cutSpr1=spr_fatburglar_cut1
 cutSpr2=spr_fatburglar_cut2

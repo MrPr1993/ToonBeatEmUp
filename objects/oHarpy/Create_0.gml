@@ -55,6 +55,8 @@ AtkSpr5=spr_burglar_attack
 JumpAtkSpr=spr_burglar_attack
 JumpAtkSpr2=spr_burglar_attack
 
+hasscaredSpr=1 scaredSpr=spr_harpy_panic
+
 JumpSpr=spr_harpy_stand
 JumpSpr2=spr_harpy_stand
 ThrownSpr=spr_harpy_hit

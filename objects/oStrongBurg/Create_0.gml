@@ -54,6 +54,8 @@ ShockSpr=spr_strongburg_elec
 BurnSpr=spr_strongburg_burned
 FrozenSpr=spr_strongburg_frozen
 
+hasscaredSpr=1 scaredSpr=spr_strongburg_panic
+
 hasCut=1
 cutSpr1=spr_strongburg_cut1
 cutSpr2=spr_strongburg_cut2

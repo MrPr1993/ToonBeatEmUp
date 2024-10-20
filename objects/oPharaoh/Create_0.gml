@@ -49,6 +49,8 @@ DizzySpr=spr_pharaoh_hit
 
 DizzySpr=spr_pharaoh_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_pharaoh_panic
+
 isBoss=1
 specialBossState=1
 

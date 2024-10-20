@@ -59,6 +59,8 @@ BurnSpr=spr_merman_burned
 FrozenSpr=spr_merman_frozen
 hasDizzy=1 DizzySpr=spr_merman_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_merman_panic
+
 enemyIdle1=spr_merman_idle1
 enemyIdle2=spr_merman_front
 

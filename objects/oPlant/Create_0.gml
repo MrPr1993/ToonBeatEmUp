@@ -57,6 +57,8 @@ hasCut=1
 cutSpr1=spr_plant_cut1
 cutSpr2=spr_plant_cut2
 
+hasscaredSpr=1 scaredSpr=spr_plant_panic
+
 current_pal=0;
 my_pal_sprite=spr_plantpal
 

@@ -70,6 +70,8 @@ enemyID=167
 isHeavy=1
 throwHeavy=1
 
+hasscaredSpr=1 scaredSpr=spr_genie_panic
+
 isBoss=1
 specialBossState=1
 

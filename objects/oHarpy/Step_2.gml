@@ -130,8 +130,8 @@ if anim=13 ///Sing
 	}
 	
 	if anim=14 ///Wings
-	{if AnimFrame=0 {specialcheck0=30 PlaySound(snd_harpy9)}
-	
+	{if AnimFrame=0 {specialtimes[0]=0 specialcheck0=30 PlaySound(snd_harpy9)}
+	specialtimes[0]+=1;
 	specialcheck0-=1
 	if specialcheck0<0 {specialcheck0=30
 		PlaySoundNoStack(snd_steal) card=instance_create_depth(x+(24+AnimFrame*4)*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=6*image_xscale
@@ -145,7 +145,7 @@ if anim=13 ///Sing
 		zSpeed=0 z-=0.25 sentflying=-0.1*image_xscale
 oPlayer.x+=3*image_xscale
 	AnimFrame+=0.1
-		if AnimFrame>20.7 or z<-100
+		if specialtimes[0]>207 or z<-100
 		{canmove=1 sentflying=0 alarm[1]=60}
 	}
 	

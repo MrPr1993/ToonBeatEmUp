@@ -50,6 +50,8 @@ BurnSpr=spr_dastardly_burned
 FrozenSpr=spr_dastardly_frozen
 DizzySpr=spr_dastardly_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_dastardly_panic
+
 isBoss=1
 specialBossState=1
 

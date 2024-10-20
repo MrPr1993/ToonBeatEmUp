@@ -54,6 +54,8 @@ BurnSpr=spr_goblin_burned
 FrozenSpr=spr_goblin_frozen
 hasDizzy=1 DizzySpr=spr_goblin_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_goblin_panic
+
 hasCut=1
 cutSpr1=spr_goblin_cut1
 cutSpr2=spr_goblin_cut2

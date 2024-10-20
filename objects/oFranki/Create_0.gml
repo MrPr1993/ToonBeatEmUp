@@ -51,7 +51,7 @@ AtkSpr5=spr_wolfita_attack
 JumpAtkSpr=spr_wolfita_attack
 JumpAtkSpr2=spr_wolfita_attack
 
-
+hasscaredSpr=1 scaredSpr=spr_franki_panic
 
 JumpSpr=spr_franki_stand
 JumpSpr2=spr_franki_stand

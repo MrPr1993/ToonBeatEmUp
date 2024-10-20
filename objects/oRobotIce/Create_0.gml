@@ -89,6 +89,7 @@ hasCut=1
 cutSpr1=spr_robot_cut1
 cutSpr2=spr_robot_cut2
 
+hasscaredSpr=1 scaredSpr=spr_robot_panic
 
 spritepos_setup(1,16,5,50)
 

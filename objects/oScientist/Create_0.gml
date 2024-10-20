@@ -46,6 +46,8 @@ BurnSpr=spr_scientistm_burned
 FrozenSpr=spr_scientistm_frozen
 DizzySpr=spr_scientistm_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_scientistm_panic
+
 isHeavy=1
 
 current_pal=0;

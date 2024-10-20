@@ -52,7 +52,7 @@ ShockSpr=spr_seaweed_elec
 BurnSpr=spr_seaweed_burned
 FrozenSpr=spr_seaweed_frozen
 DizzySpr=spr_seaweed_dizzy hasDizzy=1
-
+hasscaredSpr=1 scaredSpr=spr_seaweed_panic
 isBoss=1
 specialBossState=1
 

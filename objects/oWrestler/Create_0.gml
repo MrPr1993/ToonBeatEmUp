@@ -58,6 +58,9 @@ BurnSpr=spr_wrestler_burned
 FrozenSpr=spr_wrestler_frozen
 cutSpr1=spr_wrestler_cut1
 cutSpr2=spr_wrestler_cut2
+
+hasscaredSpr=1 scaredSpr=spr_wrestler_panic
+
 hasCut=1
 
 DizzySpr=spr_wrestler_dizzy hasDizzy=1

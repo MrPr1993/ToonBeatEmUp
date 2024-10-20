@@ -50,6 +50,8 @@ BurnSpr=spr_shroom_burned
 FrozenSpr=spr_shroom_frozen
 hasDizzy=1 DizzySpr=spr_shroom_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_shroom_panic
+
 hasCut=1
 cutSpr1=spr_shroom_cut1
 cutSpr2=spr_shroom_cut2

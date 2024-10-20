@@ -51,6 +51,8 @@ ShockSpr=spr_slime_elec
 BurnSpr=spr_slime_burned
 FrozenSpr=spr_slime_frozen
 
+hasscaredSpr=1 scaredSpr=spr_slime_panic
+
 hasCut=1
 cutSpr1=spr_slime_cut1
 cutSpr2=spr_slime_cut2

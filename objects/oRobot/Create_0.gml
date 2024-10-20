@@ -87,6 +87,8 @@ FrozenSpr=spr_robot_frozen
 DizzySpr=spr_robot_dizzy hasDizzy=1
 FrontSpr=spr_robot_front
 
+hasscaredSpr=1 scaredSpr=spr_robot_panic
+
 hasCut=1
 cutSpr1=spr_robot_cut1
 cutSpr2=spr_robot_cut2

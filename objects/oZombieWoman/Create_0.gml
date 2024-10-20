@@ -56,6 +56,8 @@ hasCut=1
 cutSpr1=spr_zombiew_cut1
 cutSpr2=spr_zombiew_cut2
 
+hasscaredSpr=1 scaredSpr=spr_zombiew_panic
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

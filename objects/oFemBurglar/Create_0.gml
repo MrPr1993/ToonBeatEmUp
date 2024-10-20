@@ -60,6 +60,8 @@ hasCut=1
 cutSpr1=spr_femburglar_cut1
 cutSpr2=spr_femburglar_cut2
 
+hasscaredSpr=1 scaredSpr=spr_femburglar_panic
+
 	enemyIdle2=spr_femburglar_move
 	enemyIdle3=spr_femburglar_idle3
 	enemyIdle3Spd=0.1

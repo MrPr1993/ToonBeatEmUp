@@ -50,6 +50,8 @@ BurnSpr=spr_catman_burned
 FrozenSpr=spr_catman_frozen
 DizzySpr=spr_catman_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_catman_panic
+
 hasCut=1
 cutSpr1=spr_catman_cut1
 cutSpr2=spr_catman_cut2

@@ -41,6 +41,8 @@ ShockSpr=spr_hwolf_elec
 BurnSpr=spr_hwolf_burned
 FrozenSpr=spr_hwolf_frozen
 
+hasscaredSpr=1 scaredSpr=spr_hwolf_panic
+
 specialBossState=1
 
 DamageVoice1=snd_hwolf2

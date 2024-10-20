@@ -51,6 +51,8 @@ BurnSpr=spr_alienrobot_burned
 FrozenSpr=spr_alienrobot_frozen
 hasDizzy=1 DizzySpr=spr_alienrobot_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_alienrobot_panic
+
 hasCut=1
 cutSpr1=spr_alienrobot_cut1
 cutSpr2=spr_alienrobot_cut2

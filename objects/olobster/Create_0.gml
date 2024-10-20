@@ -49,6 +49,8 @@ BurnSpr=spr_lobster_burned
 FrozenSpr=spr_lobster_burned
 hasDizzy=1 DizzySpr=spr_lobster_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_lobster_panic
+
 hasCut=1
 cutSpr1=spr_lobster_cut1
 cutSpr2=spr_lobster_cut2

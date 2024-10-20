@@ -56,6 +56,8 @@ BurnSpr=spr_siren_burned
 FrozenSpr=spr_siren_frozen
 hasDizzy=1 DizzySpr=spr_siren_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_siren_panic
+
 hasCut=1
 cutSpr1=spr_siren_cut1
 cutSpr2=spr_siren_cut2

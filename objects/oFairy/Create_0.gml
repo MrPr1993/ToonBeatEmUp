@@ -49,6 +49,8 @@ BurnSpr=spr_fairy_burned
 FrozenSpr=spr_fairy_frozen
 hasDizzy=1 DizzySpr=spr_fairy_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_fairy_panic
+
 hasCut=1
 cutSpr1=spr_fairy_cut1
 cutSpr2=spr_fairy_cut2

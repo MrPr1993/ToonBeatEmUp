@@ -62,6 +62,8 @@ cutSpr2=spr_snowgirl_cut2
 hasFront=1
 FrontSpr=spr_snowgirl_front
 
+hasscaredSpr=1 scaredSpr=spr_snowgirl_panic
+
 enemyID=107
 
 current_pal=0;

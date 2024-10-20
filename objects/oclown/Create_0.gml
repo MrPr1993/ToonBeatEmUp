@@ -52,6 +52,8 @@ FrozenSpr=spr_clown_frozen
 FrontSpr=spr_clown_front hasFront=1
 hasDizzy=1 DizzySpr=spr_clown_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_clown_panic
+
 hasCut=1
 cutSpr1=spr_clown_cut1
 cutSpr2=spr_clown_cut2

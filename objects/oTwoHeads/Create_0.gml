@@ -56,6 +56,8 @@ ShockSpr=spr_twoheads_elec
 BurnSpr=spr_twoheads_burned
 FrozenSpr=spr_twoheads_frozen
 
+hasscaredSpr=1 scaredSpr=spr_twoheads_panic
+
 spritepos_setup(1,24,6,62)
 
 spritepos_setup(2,0,15,90)

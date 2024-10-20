@@ -11,8 +11,8 @@ ground=0
 zSpeed=-4
 sentflying=-2
 image_index=3 sprite_index=ThrownSpr
-
+if x>oPlayer.x image_xscale=-1 else image_xscale=1
 AnimFrame=3 anim=5
-AnimFrame=0 anim=595000
+image_index=0 AnimFrame=0 anim=595000 sentflying=0
 }}
 }

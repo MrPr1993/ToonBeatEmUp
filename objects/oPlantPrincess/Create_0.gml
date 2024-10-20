@@ -51,6 +51,8 @@ BurnSpr=spr_plantprincess_burned
 FrozenSpr=spr_plantprincess_frozen
 DizzySpr = spr_plantprincess_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_plantprincess_panic
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

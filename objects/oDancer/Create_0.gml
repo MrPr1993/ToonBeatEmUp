@@ -51,6 +51,8 @@ BurnSpr=spr_dancer_burned
 FrozenSpr=spr_dancer_frozen
 DizzySpr=spr_dancer_dizzy
 
+hasscaredSpr=1 scaredSpr=spr_dancer_panic
+
 hasCut=1
 cutSpr1=spr_dancer_cut1
 cutSpr2=spr_dancer_cut2

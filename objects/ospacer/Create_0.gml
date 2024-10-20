@@ -54,6 +54,8 @@ hasCut=1
 cutSpr1=spr_spacer_cut1
 cutSpr2=spr_spacer_cut2
 
+hasscaredSpr=1 scaredSpr=spr_spacer_panic
+
 enemyID=93
 
 current_pal=0;
