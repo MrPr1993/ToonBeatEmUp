@@ -434,6 +434,8 @@ isCutscene=0
 isPaused=0
 PauseBuffer=0
 
+
+
 TVfx=global.CRTfx
 shade=shd_television
 tvshade_set()
