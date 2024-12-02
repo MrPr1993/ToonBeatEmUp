@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clown_stand",
-    "path":"sprites/spr_clown_stand/spr_clown_stand.yy",
+    "name":"spr_clown_panic",
+    "path":"sprites/spr_clown_panic/spr_clown_panic.yy",
   },
   "spriteMaskId":{
     "name":"mask_small",

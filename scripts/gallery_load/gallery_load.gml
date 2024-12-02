@@ -51,28 +51,38 @@ picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/SofiaArtwork6.png",
 ////Enemy Art
 if galno=5
 {
-//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
-//Note - some characters who aren't fanservicey will be in the background
-////Chill and Spice
-////The Burgs and Sneak abs
-////
-////
+pictureMax=4
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/EnemySetA1.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/EnemySetA2.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/EnemySetA3.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/EnemySetA4.png",0,0,1,0,0)
 }
 if galno=6
 {
-//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+pictureMax=6
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/EnemySetB1.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/EnemySetB2.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/EnemySetB3.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/EnemySetB4.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/EnemySetB5.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/EnemySetB6.png",0,0,1,0,0)
 }
 if galno=7
 {
-//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+pictureMax=5
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/EnemySetC1.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/EnemySetC2.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/EnemySetC3.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/EnemySetC4.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/EnemySetC5.png",0,0,1,0,0)
 }
 if galno=8
 {
-//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+pictureMax=4
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/EnemySetD1.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/EnemySetD2.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/EnemySetD3.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/EnemySetD4.png",0,0,1,0,0)
 }
 
 ////Boss Art
@@ -142,7 +152,7 @@ picturetext[11]="???" sprite_replace(spr_galleryimg11,"Gallery/HinaArtwork1.png"
 picturetext[12]="???" sprite_replace(spr_galleryimg12,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 }
 if galno=16 ///Guest Art
-{pictureMax=30
+{pictureMax=17
 picturetext[1]="JAMEARTS" sprite_replace(spr_galleryimg1,"Gallery/GuestArt/GuestArt_JameArts.png",0,0,1,0,0)
 picturetext[2]="J U I C Y I N B I O" sprite_replace(spr_galleryimg2,"Gallery/GuestArt/GuestArt_J U I C Y I N B I O.png",0,0,1,0,0)
 picturetext[3]="Needlebugg" sprite_replace(spr_galleryimg3,"Gallery/GuestArt/GuestArt_Needlebugg.png",0,0,1,0,0)
@@ -157,9 +167,9 @@ picturetext[11]="Galactabee" sprite_replace(spr_galleryimg11,"Gallery/GuestArt/G
 picturetext[12]="bella" sprite_replace(spr_galleryimg12,"Gallery/GuestArt/GuestArt_bella.png",0,0,1,0,0)
 picturetext[13]="thedarkcartoon" sprite_replace(spr_galleryimg13,"Gallery/GuestArt/GuestArt_thedarkcartoon.png",0,0,1,0,0)
 picturetext[14]="goodbyeyellow" sprite_replace(spr_galleryimg14,"Gallery/GuestArt/GuestArt_goodbyeyellow.png",0,0,1,0,0)
-picturetext[15]="???" sprite_replace(spr_galleryimg15,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
-picturetext[16]="???" sprite_replace(spr_galleryimg16,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
-picturetext[17]="???" sprite_replace(spr_galleryimg17,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
+picturetext[15]="RAVEN PEREZ" sprite_replace(spr_galleryimg15,"Gallery/GuestArt/GuestArt_RavenPerez.png",0,0,1,0,0)
+picturetext[16]="DoppleDadko" sprite_replace(spr_galleryimg16,"Gallery/GuestArt/GuestArt_DoppleDadko.png",0,0,1,0,0)
+picturetext[17]="Important Business Dinosaur" sprite_replace(spr_galleryimg17,"Gallery/GuestArt/GuestArt_ImportantBusinessDinosaur.png",0,0,1,0,0)
 picturetext[18]="???" sprite_replace(spr_galleryimg18,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
 picturetext[19]="???" sprite_replace(spr_galleryimg19,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
 picturetext[20]="???" sprite_replace(spr_galleryimg20,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
