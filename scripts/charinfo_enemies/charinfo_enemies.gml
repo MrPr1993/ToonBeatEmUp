@@ -479,6 +479,8 @@ break;
   charinfo_set(12,spr_goblin_stand,2,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBERT",
 "This is one busy goblin, who hates getting their work disrupted. They want people away from their mine zone!")
   if dataPal=2 {enemy_switch("GOHNNY",0) weapon_add("PICKAXE")}
+  
+  
 
 	if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,17,-24,89,weaponcolor)
