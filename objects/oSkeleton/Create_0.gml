@@ -56,3 +56,5 @@ current_pal=0;
 my_pal_sprite=spr_mummypal
 
 enemyID=45
+
+idlestyle=1

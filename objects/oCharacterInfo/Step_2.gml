@@ -20,7 +20,7 @@ wobbleY=lerp(wobbleY,1,0.25)
 weaponanim(mask_none,0,0,0,0,0)
 weaponanim_2(mask_none,0,0,0,0,0)
 
-if -key_left_pressed {arrowSel1=2 wobbleX=1.1 wobbleY=0.9
+if -key_left_pressed {arrowSel1=2 wobbleX=1.1 wobbleY=0.9 weaponIndex=0 weaponIndex2=0
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 overwriteStand=0 image_index=0 AnimFrame=0 PlaySound(snd_select) if dataSelect=1 dataSelect=dataRowMax else dataSelect-=1
 	
 	name="???" desc="" image_blend=c_black idlestyle=0
@@ -34,21 +34,21 @@ if key_right_pressed {
 	  descleft=""
 descright=""
 dataabilities=""
-	arrowSel2=2 wobbleX=1.1 wobbleY=0.9
+	arrowSel2=2 wobbleX=1.1 wobbleY=0.9 weaponIndex=0 weaponIndex2=0
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 AnimFrame=0 PlaySound(snd_select) if dataSelect=dataRowMax dataSelect=1 else dataSelect+=1}
 if key_up_pressed {arrowSel3=2
 		name="???" desc="" image_blend=c_black idlestyle=0
 	  descleft=""
 descright=""
 dataabilities=""
-	wobbleX=1.1 wobbleY=0.9
+	wobbleX=1.1 wobbleY=0.9 weaponIndex=0 weaponIndex2=0
 	image_alpha=1 dataPalMax=3 showBlend=1 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 AnimFrame=0 PlaySound(snd_select) if dataRow=1 dataRow=4 else dataRow-=1}
 if -key_down_pressed {arrowSel4=2
 		name="???" desc="" image_blend=c_black idlestyle=0
 	  descleft=""
 descright=""
 dataabilities=""
-	wobbleX=1.1 wobbleY=0.9
+	wobbleX=1.1 wobbleY=0.9 weaponIndex=0 weaponIndex2=0
 	image_alpha=1 dataPalMax=3 dataPal=1 specialscript=-1 overwriteStand=0 image_index=0 AnimFrame=0 PlaySound(snd_select) if dataRow=4 dataRow=1 else dataRow+=1}
 
 descleft="";

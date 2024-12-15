@@ -1,3 +1,4 @@
+
 enemy_endstep()
 throw_step()
 
@@ -304,3 +305,5 @@ canmove=1
 }
 
 }
+
+if image_xscale=1 current_pal=1; else current_pal=2;

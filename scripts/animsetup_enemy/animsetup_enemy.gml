@@ -69,6 +69,10 @@ if idlestyle=2
 	frame_set(15,3,0.1)
 	if AnimFrame>15.9 AnimFrame=0
 }
+if idlestyle=3
+{
+image_index+=0.1 if image_index>7-0.1 image_index=0
+}
 
 	}
 	if isIdle=1 and hasIdle=1///idle

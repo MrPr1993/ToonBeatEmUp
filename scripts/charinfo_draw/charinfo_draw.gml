@@ -151,7 +151,7 @@ draw_charinfoicon(12,spr_enemyface,54,24*12,c_white*global.UnlockEnemy[163])
 else
 if dataSet=-144*2
 {
-draw_charinfoicon(13,spr_enemyface,54,24*13,c_white*global.UnlockEnemy[164])
+draw_charinfoicon(13,spr_enemyface,57,24*13,c_white*global.UnlockEnemy[164])
 draw_charinfoicon(14,spr_enemyface,30,24*14,c_white*global.UnlockEnemy[165])
 draw_charinfoicon(15,spr_enemyface,47,24*15,c_white*global.UnlockEnemy[167])
 draw_charinfoicon(16,spr_enemyface,62,24*16,c_white*global.UnlockEnemy[168])
@@ -161,8 +161,8 @@ draw_charinfoicon(18,spr_enemyface,56,24*18,c_white*global.UnlockEnemy[174])
 else
 if dataSet=-144*3
 {
-draw_charinfoicon(36,spr_enemyface,19,24*19,c_white*global.UnlockEnemy[175])
-draw_charinfoicon(58,spr_enemyface,20,24*20,c_white*global.UnlockEnemy[177])
+draw_charinfoicon(19,spr_enemyface,19,24*19,c_white*global.UnlockEnemy[175])
+draw_charinfoicon(20,spr_enemyface,20,24*20,c_white*global.UnlockEnemy[177])
 if global.UnlockEnemy[200]!=0
 draw_charinfoicon(21,spr_enemyface,59,24*21,c_white*global.UnlockEnemy[200])
 //draw_charinfoicon(22,spr_enemyface,22,24*22,c_white*global.UnlockEnemy[71])

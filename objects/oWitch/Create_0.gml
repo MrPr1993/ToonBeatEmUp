@@ -51,8 +51,8 @@ FrozenSpr=spr_witch_frozen
 
 hasscaredSpr=1 scaredSpr=spr_witch_panic
 
-current_pal=0;
-my_pal_sprite=spr_zombiepal
+current_pal=1;
+my_pal_sprite=pal_witch
 
 enemyID=159
 

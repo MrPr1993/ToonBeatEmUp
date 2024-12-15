@@ -4,23 +4,25 @@ function charinfo_bosses(){hp=2
 switch (dataSelect)
 {
   case 1:
-  hasVariants=1 enemyID=150 hp=1
-  if dataPal=1
+  hasVariants=1 enemyID=150 hp=1 
+  if dataPal=1{idlestyle=1
  charinfo_set(11,spr_hwolf_stand,2,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,9,"LADY WOLF",
  "A shady woman who works with the thieves to steal the treasures of the divas. And she appears to be hiding something else...")
+}
  if dataPal=2
-	  {enemyID=151
+	  {enemyID=151 idlestyle=0
 		  hp=2
 		  charinfo_set(11,spr_wolfita_stand,2,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,5,"LADY WOLF",
  "A shady woman who works with the thieves to steal the treasures of the divas. And she appears to be hiding something else...")}
 
 break;
   case 2:enemyID=152
-
+idlestyle=3
  charinfo_set(12,spr_harpy_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,34,"HARPILDA",
  "She is big. She is round. She is full of singing sensations. She battles and it won't be over until the fat lady sings.") break;
 
 case 3:enemyID=153
+idlestyle=1
  charinfo_set(12,spr_franki_stand,1,animsetup_enemy,draw_enemy,spr_boxerpal,0,spr_enemyface,10,"CAPTAIN ROSY",
  "A colossal woman who rides her beloved cruise ship to ferry the passengers. Those who intrude her ship will go for a little shock.") break;
  
@@ -33,21 +35,26 @@ charinfo_set(12,spr_twoheads_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,s
  "She likes collecting heads in life. She became a ghost after getting her own head. She likes cutting heads. Too much.") break;
   
   case 6:enemyID=156
+  idlestyle=1
  charinfo_set(12,spr_pharaoh_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,11,"HATHOR",
  "A goddess who usually comes down for parties. Those who defy her will have to face her divine punishment. ") break;
    case 7:enemyID=157
      hasVariants=1
   if dataPal=1
- charinfo_set(12,spr_oni_stand,2,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,31,"FUKUKIJO",
+ charinfo_set(12,spr_oni_stand,2,animsetup_enemy,draw_swing,spr_ninjapal,0,spr_enemyface,31,"FUKUKIJO",
  "The eldest of the Oni Sisters. She focuses on the power of cards and element of her fiery personality.")
    if dataPal=2
  {enemyID=158
-	 charinfo_set(12,spr_oni_stand,2,animsetup_enemy,draw_enemy,spr_ninjapal,7,spr_enemyface,31,"SHOKIJO",
+	 charinfo_set(12,spr_oni_stand,2,animsetup_enemy,draw_swing,spr_ninjapal,7,spr_enemyface,31,"SHOKIJO",
  "The youngest of the Oni Sisters. She focuses on the power of dice and element of her chilly personality.")}
+ 
+ weapon_add("ONI CLUB")
+ weaponanim(weaponspr,weaponIndex,34,-95,180*image_xscale,weaponcolor)
+ 
  break;
    case 8:
   idlestyle=1 enemyID=159
- charinfo_set(12,spr_witch_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,32,"KIANDRA",
+ charinfo_set(12,spr_witch_stand,1,animsetup_enemy,draw_enemy,pal_witch,1,spr_enemyface,32,"KIANDRA",
  "She lives in solitude in her swamp with her undead as she works on her cauldron. She is a druid, not a witch.") break;
    case 9:
    enemyID=160
@@ -55,17 +62,37 @@ charinfo_set(12,spr_twoheads_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,s
  "The carnival's biggest attraction. She is a wacky duck toy person... thing. She is a little insane. Quack.") break;
     case 10: enemyID=161
  charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,octopus_draw,spr_enemypal,0,spr_enemyface,40,"LARRY",
- "An octopus who is the a pet who is protective of their master and will take care of interlopers with their tentacles.") break;
-   case 11: enemyID=162 idlestyle=0
+ "An octopus who is the a pet who is protective of their master and will take care of interlopers with their tentacles.")
+  
+var watchtarget=0;
+watchtarget=point_direction(x,y,x,y+16)
+eyeX=x
+eyeY=y+5
+eyeY=clamp(eyeY,z+y,z+y+10)    
+
+break;
+  
+  case 11: enemyID=162 idlestyle=0
  charinfo_set(12,spr_seaweed_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,41,"CIRCE",
  "A sea witch living in a cave who enjoys ompany as long as they don't cause harm. Otherwise, she'll give tham a spankin'.") break;
    case 12: enemyID=163
  charinfo_set(12,spr_martianb_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,54,"KWINN",
  "She is the captain of a crew from space. They are pirates. Space Pirates! And they will crush you with their space arsenal!") break;
    case 13: enemyID=164
- charinfo_set(12,spr_submarine,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,54,"SEA BANDIT",
- "One of the thieving foes' submarine that dives underwater to look for treasure under the sea.") break;
-    case 14: enemyID=165
+ charinfo_set(12,spr_submarine,1,animsetup_enemy,draw_swing_2,spr_enemypal,0,spr_enemyface,57,"SEA BANDIT",
+ "One of the thieving foes' submarine that dives underwater to look for treasure under the sea.")
+ image_index=0;
+ weaponBack=1 weaponangle=0
+  weaponBack2=1
+weaponspr=spr_submarine_scope weaponIndex=2
+weaponspr2=spr_submarine_rotor
+weaponIndex=0
+ weaponIndex2+=0.1
+weaponX=0 weaponY=0 weaponX2=0 weaponY2=0
+  
+ break;
+ 
+   case 14: enemyID=165
 idlestyle=1 hasVariants=1
  charinfo_set(12,spr_prince_stand,2,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,30,"PRINCE",
  "An incredibly flamboyant ruler of the seven seas who looks for a great challenge with style and flex. Oh and he's Viva's cousin.")
@@ -80,23 +107,25 @@ idlestyle=1 hasVariants=1
     case 15: enemyID=167 idlestyle=1
  charinfo_set(12,spr_genie_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,47,"HAIFA",
  "A genie of the lamp who listens to their master as they have a go and crush intruders.") break;
-     case 16: enemyID=168
+     case 16: enemyID=168 idlestyle=2
      hasVariants=1
  if dataPal=1
-charinfo_set(12,spr_mirrorlady_stand,4,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,62,"MIRROSA",
+ {idlestyle=1
+charinfo_set(12,spr_mirrorlady_stand,5,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,62,"MIRROSA",
  "The lady behind the mirror, who decides to have a little fun by sending out reflections of their intruders.")  
+}
  if dataPal=2
  {enemyID=169 hp=1
-	 charinfo_set(12,spr_viva_stand,4,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_playerface,0,"MIRROR VIVA",
+	 charinfo_set(12,spr_viva_stand,5,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_playerface,0,"MIRROR VIVA",
  "Viva's reflection, who is as tempered as she is. She is as fragile as Viva's waistline being a mirror.") }
   if dataPal=3{enemyID=170 hp=1
- charinfo_set(12,spr_hina_stand,4,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_playerface,1,"MIRROR HINA",
+ charinfo_set(12,spr_hina_stand,5,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_playerface,1,"MIRROR HINA",
  "Hina's reflection, who is as odd as she is stretchy. She can still be as weird as the original fire woman.") }
   if dataPal=4
-{hp=1 enemyID=171 charinfo_set(12,spr_bahati_stand,4,animsetup_enemy,draw_enemy,spr_playerface,2,spr_enemyface,2,"MIRROR BAHATI",
+{hp=1 enemyID=171 charinfo_set(12,spr_bahati_stand,5,animsetup_enemy,draw_enemy,spr_playerface,2,spr_playerface,2,"MIRROR BAHATI",
  "Bahati's reflection, who is as full-figured as she is. For a mirror, she is as strong as the real deal.") }
   if dataPal=5
- {hp=1 enemyID=172 charinfo_set(12,spr_sofia_stand,4,animsetup_enemy,draw_enemy,spr_playerface,3,spr_enemyface,3,"MIRROR SOFIA",
+ {hp=1 enemyID=172 charinfo_set(12,spr_sofia_stand,5,animsetup_enemy,draw_enemy,spr_playerface,3,spr_playerface,3,"MIRROR SOFIA",
  "Sofia's reflection, who has her aggressive demeanor. She may be small, but she hits as much as she can.") }
  
  break;

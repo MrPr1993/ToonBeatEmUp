@@ -17,7 +17,7 @@ weaponanim(weaponspr,weaponIndex,25,-39,-1,weaponcolor)
 	if image_index=clamp(image_index,1,1.9)
 weaponanim(weaponspr,weaponIndex,26,-38,-1,weaponcolor)
 	if image_index=clamp(image_index,2,2.9)
-weaponanim(weaponspr,weaponIndex,27,-36,-1,weaponcolor)
+weaponanim(weaponspr,weaponIndex,26,-36,-1,weaponcolor)
 }
 
 if anim=1

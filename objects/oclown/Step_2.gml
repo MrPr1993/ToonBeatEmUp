@@ -16,7 +16,7 @@ overwriteAttack3=1
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>distcheck
 	anim=12 else anim=11
 	
-	if anim=11 {if weaponspr2=-1 {weaponspr2=weaponspr weaponspr=-1} if weaponspr!=-1 anim=1100
+	if anim=11 or anim=12 {if weaponspr2=-1 {weaponspr2=weaponspr weaponspr=-1} if weaponspr!=-1 anim=1100
 	if weaponspr2!=-1 { anim=1100	}
 	}
 	}
@@ -44,6 +44,7 @@ weaponanim_2(weaponspr2,weaponIndex2,-16,-84,464,weaponcolor)}
 	if image_index=clamp(image_index,3,3.9)
 {weaponanim(weaponspr,weaponIndex,44,-72,439,weaponcolor)
 weaponanim_2(weaponspr2,weaponIndex2,-28,-68,456,weaponcolor)}
+	
 	}
 	
 	if anim=12
@@ -150,15 +151,14 @@ weaponanim_2(weaponspr2,weaponIndex2,54+9999*weaponhide2,-41,specialtimes[0],wea
 if anim=0
 {
 if image_index=clamp(image_index,0,0.9)
-{weaponanim(weaponspr,weaponIndex,34,-87,86,weaponcolor)
-weaponanim_2(weaponspr2,weaponIndex2,-26,-67,86,weaponcolor)}
-if image_index=clamp(image_index,1,1.9)
-{weaponanim(weaponspr,weaponIndex,35,-86,86,weaponcolor)
-weaponanim_2(weaponspr2,weaponIndex2,-25,-67,86,weaponcolor)}
-if image_index=clamp(image_index,2,2.9)
-{weaponanim(weaponspr,weaponIndex,33,-86,86,weaponcolor)
+{weaponanim(weaponspr,weaponIndex,33,-88,86,weaponcolor)
 weaponanim_2(weaponspr2,weaponIndex2,-27,-68,86,weaponcolor)}
-
+if image_index=clamp(image_index,1,1.9)
+{weaponanim(weaponspr,weaponIndex,34,-87,86,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,-26,-69,86,weaponcolor)}
+if image_index=clamp(image_index,2,2.9)
+{weaponanim(weaponspr,weaponIndex,35,-86,86,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,-25,-70,86,weaponcolor)}
 }
 ///Move
 if anim=1

@@ -744,7 +744,7 @@ draw_set_halign(fa_center) //▲►▼◄
 //draw_text(160,184+40-4-24,string_hash_to_newline("HIGH SCORE"))
 }
 
-draw_text(160,184+24,string_hash_to_newline("©2024 MRPR1993"))
+draw_text(160,184+24,string_hash_to_newline("©2025 MRPR1993"))
 if global.Continues=-1
 draw_text(160,1184+40,string_hash_to_newline("CREDIT ∞"))
 else

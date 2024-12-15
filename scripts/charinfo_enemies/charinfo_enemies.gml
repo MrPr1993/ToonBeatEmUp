@@ -115,6 +115,15 @@ if dataPal=3 {weapon_add("WHIP") enemy_switch("MS.DOMI",0)}
 if dataPal=4 {weapon_add("DYNAMITE") enemy_switch("MS.THRU",0)}
 if dataPal=5 {weapon_add("KNIFE") enemy_switch("MS.BRAN",0)}
 
+if image_index<1
+weaponanim(weaponspr,weaponIndex,14,-65,180*image_xscale,weaponcolor)
+else if image_index<2
+weaponanim(weaponspr,weaponIndex,14+1,-65+2,180*image_xscale,weaponcolor)
+else
+weaponanim(weaponspr,weaponIndex,14+1,-65+1,180*image_xscale,weaponcolor)
+
+if dataPal=2 or dataPal=4 or dataPal=5 weaponangle-=90*image_xscale
+
 break;
   case 7:  enemyID=25 hp=0.8
  charinfo_set(11,spr_fatburglar_stand,3,animsetup_enemy,draw_enemy,spr_enemypal,2,spr_enemyface,3,"MR.LARGE",
@@ -167,7 +176,7 @@ enemy_switch("MS.MANA",0)
 
 break;
   case 12: hp=0.3
- idlestyle=1 enemyID=37
+ idlestyle=3 enemyID=37
  charinfo_set(16,spr_harpye_stand,2,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,61,"WINGY",
 "They take on the skies with fashion sense, and will aim those who they will love to bother as they tackle them down.")
 if dataPal=2
@@ -199,7 +208,7 @@ enemy_switch("RIGORA",0)
 
 break;
   case 15:
-  hp=0.25 enemyID=45
+  hp=0.25 enemyID=45  idlestyle=1
    if dataPal=1
 {current_pal=0
  charinfo_set(12,spr_skeleton_stand,2,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,21,"SKELLA", 
@@ -210,12 +219,12 @@ break;
  "These skeletons of jugglers will show up and have a bone to pick with you! And throw it.")} 
 break;
   case 16: enemyID=47 hp=0.3
-  weapon_add("AXE")
+  weapon_add("AXE") 
  weaponX=14
 weaponY=-69
   weaponanim(weaponspr,weaponIndex,lerp(weaponX,0,1),lerp(weaponY,0,1),lerp(weaponangle,90,1),weaponcolor)
   
- charinfo_set(12,mask_none,1,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_miscface,0,"POLTERGEIST",
+ charinfo_set(12,mask_none,1,animsetup_enemy,draw_swing,spr_zombiepal,0,spr_miscface,0,"POLTERGEIST",
 "A haunted bladed weapon that's taken over with remnants of a spirit obsessed with heads.")
 break;
   case 17:
@@ -267,7 +276,7 @@ enemy_switch("BASTET",0)
 
 break;
   case 19:
-  idlestyle= hp=0.5 enemyID=53
+  idlestyle= hp=0.5 enemyID=53 idlestyle=1
  charinfo_set(12,spr_cobra_stand,2,animsetup_enemy,draw_enemy,spr_mummypal,0,spr_enemyface,24,"ASPA",
 "They have snake for hands, and will use them to bite at you.")
 if dataPal=2
@@ -285,7 +294,7 @@ enemy_switch("KONI",0)
 
 break;
   case 21:
-  hp=0.4 enemyID=58
+  hp=0.4 enemyID=58 idlestyle=1
  charinfo_set(12,spr_samurai_stand,2,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,16,"SAKE",
 "A samurai in gear styled after dominos who will take a bit before slicing you in half.")
 if dataPal=2
@@ -294,28 +303,20 @@ break;
   case 22: enemyID=60
   idlestyle=1
   hp=0.3
+
+weapon_add_double("JUGGLE")
+if dataPal=2 weapon_add_double("TWIRL")
   
   if image_index=clamp(image_index,0,0.9)
-{weaponanim(weaponspr,weaponIndex,31,-83,90,weaponcolor)
-weaponanim_2(weaponspr2,weaponIndex2,-31,-64,93,weaponcolor)}
+{weaponanim(weaponspr,weaponIndex,33,-88,86,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,-27,-68,86,weaponcolor)}
 if image_index=clamp(image_index,1,1.9)
-{weaponanim(weaponspr,weaponIndex,31,-88,93,weaponcolor)
-weaponanim_2(weaponspr2,weaponIndex2,-30,-74,90,weaponcolor)}
+{weaponanim(weaponspr,weaponIndex,34,-87,86,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,-26,-69,86,weaponcolor)}
 if image_index=clamp(image_index,2,2.9)
-{weaponanim(weaponspr,weaponIndex,33,-76,102,weaponcolor)
-weaponanim_2(weaponspr2,weaponIndex2,-23,-88,81,weaponcolor)}
-if image_index=clamp(image_index,3,3.9)
-{weaponanim(weaponspr,weaponIndex,33,-71,109,weaponcolor)
-weaponanim_2(weaponspr2,weaponIndex2,-15,-90,74,weaponcolor)}
-if image_index=clamp(image_index,4,4.9)
-{weaponanim(weaponspr,weaponIndex,33,-79,103,weaponcolor)
-weaponanim_2(weaponspr2,weaponIndex2,-20,-90,79,weaponcolor)}
-if image_index=clamp(image_index,5,5.9)
-{weaponanim(weaponspr,weaponIndex,34,-82,97,weaponcolor)
-weaponanim_2(weaponspr2,weaponIndex2,-26,-78,84,weaponcolor)}
-
+{weaponanim(weaponspr,weaponIndex,35,-86,86,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,-25,-70,86,weaponcolor)}
   
-  weapon_add_double("JUGGLE")
  charinfo_set(12,spr_clown_stand,3,animsetup_enemy,draw_swing_2,spr_bearpal,0,spr_enemyface,38,"ANETTE",
 "A silly marionette lady who does a good show with their skills and pain towards the offenders.")
  if dataPal=2
@@ -371,7 +372,7 @@ break;
 break;
 
   case 27: enemyID=75
-  idlestyle=1 hp=0.2
+  hp=0.2
  charinfo_set(12,spr_lobster_stand,2,animsetup_enemy,draw_enemy,spr_lobsterpal,0,spr_enemyface,42,"PINCHO",
 "A lobster who's big, and has claws that will give you a strong pinch.")
   if dataPal=2 {enemy_switch("PINCHER",0)}
@@ -381,8 +382,16 @@ break;
 case 28: enemyID=77
 weapon_add("SCIMITAR")
 idlestyle=1 hp=0.25
-charinfo_set(12,spr_dancer_stand,3,animsetup_enemy,draw_enemy,spr_dancerpal,0,spr_enemyface,50,"DANZA",
+charinfo_set(12,spr_dancer_stand,3,animsetup_enemy,draw_swing,spr_dancerpal,0,spr_enemyface,50,"DANZA",
 "They have the knowledge for enteratinment, with their amorous agility as sharp as their blades.")
+ 
+ weaponBack=1
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,-16,-91,0,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,-15,-90,0,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,-15,-88,0,weaponcolor)
  
   if dataPal=2 {enemy_switch("RULA",0)}
   if dataPal=3 {enemy_switch("JAZMYN",0)}
@@ -392,27 +401,39 @@ charinfo_set(12,spr_dancer_stand,3,animsetup_enemy,draw_enemy,spr_dancerpal,0,sp
  hp=0.25 enemyID=80
 idlestyle=1
 
+
+ charinfo_set(12,spr_diver_stand,2,animsetup_enemy,draw_swing,spr_ninjapal,0,spr_enemyface,45,"MR.DIVE",
+"An underwater minion who seeks for their foes under the sea and rob of the treasures. An underwater chump.")
+  if dataPal=2 {weapon_add("HARPOONGUN") enemy_switch("MR.DROP",0)}
+
 	////Stand
 	if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,25,-39,-1,weaponcolor)
 	if image_index=clamp(image_index,1,1.9)
 weaponanim(weaponspr,weaponIndex,26,-38,-1,weaponcolor)
 	if image_index=clamp(image_index,2,2.9)
-weaponanim(weaponspr,weaponIndex,27,-36,-1,weaponcolor)
- charinfo_set(12,spr_diver_stand,2,animsetup_enemy,draw_swing,spr_ninjapal,0,spr_enemyface,45,"MR.DIVE",
-"An underwater minion who seeks for their foes under the sea and rob of the treasures. An underwater chump.")
-  if dataPal=2 {weapon_add("HARPOONGUN") enemy_switch("MR.DROP",0)}
-
-
+weaponanim(weaponspr,weaponIndex,26,-36,-1,weaponcolor)
 
 break;
 
-case 30: hp=0.3 enemyID=82
- charinfo_set(12,spr_merman_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,25,"DOUGLAS",
+case 30: hp=0.3 enemyID=82 weaponBack=0
+ charinfo_set(12,spr_merman_stand,3,animsetup_enemy,draw_merman,spr_zombiepal,0,spr_enemyface,25,"DOUGLAS",
 "A fish man guard who's tasked in taking intruders out and use either a spear or trident to stab you with.")
 
-  if dataPal=2 {enemy_switch("ERIK",0)}
+  if dataPal=1 weapon_add("SPEAR")
+
+  if dataPal=2 {enemy_switch("ERIK",0) weapon_add("TRIDENT")}
   if dataPal=3 {enemy_switch("ADAM",0)}
+armsX=0
+if image_index<1
+{
+weaponanim(weaponspr,weaponIndex,-3,-37,42,weaponcolor) armsY=0}
+else if image_index<2
+{weaponanim(weaponspr,weaponIndex,-3,-36,42,weaponcolor) armsY=1}
+else
+{weaponanim(weaponspr,weaponIndex,-3,-36,42,weaponcolor) armsY=1}
+
+
 break;
   case 31:
  idlestyle=1 hp=0.2 enemyID=85
@@ -425,11 +446,20 @@ break;
   case 32:
  idlestyle=1
  hp=0.25 enemyID=88 
- charinfo_set(12,spr_martian_stand,3,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,23,"MARTIA",
+ charinfo_set(12,spr_martian_stand,3,animsetup_enemy,draw_swing,spr_zombiepal,0,spr_enemyface,23,"MARTIA",
 "These space babes have been capturing specimens and will try and catch you with a shock or with their heads!")
 
-  if dataPal=2 {enemy_switch("INVA",0)}
-  if dataPal=3 {enemy_switch("EXTA",0)}
+  if dataPal=2 {enemy_switch("INVA",0) weapon_add("TASER")}
+  if dataPal=3 {enemy_switch("EXTA",0) weapon_add("LASERGUN")}
+
+var _weaponang=0; var _weaponadd=0; if spawnID=oLaserGun {_weaponang=-90; _weaponadd=lengthdir_y(4,weaponangle)}
+weaponBack=1
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,15+_weaponadd,-48+_weaponadd,90+_weaponang,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,16+_weaponadd,-47+_weaponadd,90+_weaponang,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,17+_weaponadd,-46+_weaponadd,90+_weaponang,weaponcolor)
 
 break;
   case 33: hp=0.2 enemyID=90
@@ -445,11 +475,17 @@ break;
   if dataPal=2 {enemy_switch("VER",0)}
 
 break;
-  case 35: hp=0.3 enemyID=95
+  case 35: hp=0.3 enemyID=95 idlestyle=1
   charinfo_set(12,spr_goblin_stand,2,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBERT",
 "This is one busy goblin, who hates getting their work disrupted. They want people away from their mine zone!")
-  if dataPal=2 {enemy_switch("GOHNNY",0)}
+  if dataPal=2 {enemy_switch("GOHNNY",0) weapon_add("PICKAXE")}
 
+	if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,17,-24,89,weaponcolor)
+	if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,19,-22,89,weaponcolor)
+	if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,19,-19,89,weaponcolor)
 
 break;
   case 36:

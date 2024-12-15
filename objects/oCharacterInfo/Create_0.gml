@@ -7,6 +7,10 @@ hasback=0
 
 infoname=0
 
+armsX=0
+armsY=0
+armspr=spr_merman_arms
+
 name="VIVA"
 enemyPortraitSpr=spr_playerface
 enemyPortraitIndex=0

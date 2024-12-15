@@ -1045,7 +1045,7 @@ showtext=1
 pictureX=160
 pictureY=120
 gallerySet=1
-pictureZoom=0.25/3
+pictureZoom=0.25/2
 
 filtermode=false
 

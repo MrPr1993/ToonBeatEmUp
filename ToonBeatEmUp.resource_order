@@ -1488,6 +1488,7 @@
     {"name":"mask_templetrap","order":45,"path":"sprites/mask_templetrap/mask_templetrap.yy",},
     {"name":"mask_torpedo","order":6,"path":"sprites/mask_torpedo/mask_torpedo.yy",},
     {"name":"oTrainFXSpotSpr","order":70,"path":"sprites/oTrainFXSpotSpr/oTrainFXSpotSpr.yy",},
+    {"name":"pal_witch","order":24,"path":"sprites/pal_witch/pal_witch.yy",},
     {"name":"spr_1up","order":49,"path":"sprites/spr_1up/spr_1up.yy",},
     {"name":"spr_acidfloor","order":20,"path":"sprites/spr_acidfloor/spr_acidfloor.yy",},
     {"name":"spr_aircraftcart","order":3,"path":"sprites/spr_aircraftcart/spr_aircraftcart.yy",},
