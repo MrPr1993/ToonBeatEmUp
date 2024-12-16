@@ -416,15 +416,15 @@ weaponanim(weaponspr,weaponIndex,26,-36,-1,weaponcolor)
 
 break;
 
-case 30: hp=0.3 enemyID=82 weaponBack=0
- charinfo_set(12,spr_merman_stand,3,animsetup_enemy,draw_merman,spr_zombiepal,0,spr_enemyface,25,"DOUGLAS",
+case 30: hp=0.3 enemyID=82 
+ charinfo_set(12,spr_merman_stand,3,animsetup_merman,draw_merman,spr_zombiepal,0,spr_enemyface,25,"DOUGLAS",
 "A fish man guard who's tasked in taking intruders out and use either a spear or trident to stab you with.")
 
   if dataPal=1 weapon_add("SPEAR")
 
   if dataPal=2 {enemy_switch("ERIK",0) weapon_add("TRIDENT")}
   if dataPal=3 {enemy_switch("ADAM",0)}
-armsX=0
+armsX=0 armspr=spr_merman_arms anim=0 weaponBack=0
 if image_index<1
 {
 weaponanim(weaponspr,weaponIndex,-3,-37,42,weaponcolor) armsY=0}
@@ -452,14 +452,16 @@ break;
   if dataPal=2 {enemy_switch("INVA",0) weapon_add("TASER")}
   if dataPal=3 {enemy_switch("EXTA",0) weapon_add("LASERGUN")}
 
-var _weaponang=0; var _weaponadd=0; if spawnID=oLaserGun {_weaponang=-90; _weaponadd=lengthdir_y(4,weaponangle)}
+var _weaponaddX=0;
+var _weaponang=0; var _weaponadd=0; if spawnID=oLaserGun {_weaponang=-90; _weaponaddX=lengthdir_x(2,weaponangle) _weaponadd=lengthdir_y(8,weaponangle)}
+
 weaponBack=1
 if image_index=clamp(image_index,0,0.9)
-weaponanim(weaponspr,weaponIndex,15+_weaponadd,-48+_weaponadd,90+_weaponang,weaponcolor)
+weaponanim(weaponspr,weaponIndex,15+_weaponaddX,-48+_weaponadd,90+_weaponang,weaponcolor)
 if image_index=clamp(image_index,1,1.9)
-weaponanim(weaponspr,weaponIndex,16+_weaponadd,-47+_weaponadd,90+_weaponang,weaponcolor)
+weaponanim(weaponspr,weaponIndex,16+_weaponaddX,-47+_weaponadd,90+_weaponang,weaponcolor)
 if image_index=clamp(image_index,2,2.9)
-weaponanim(weaponspr,weaponIndex,17+_weaponadd,-46+_weaponadd,90+_weaponang,weaponcolor)
+weaponanim(weaponspr,weaponIndex,17+_weaponaddX,-46+_weaponadd,90+_weaponang,weaponcolor)
 
 break;
   case 33: hp=0.2 enemyID=90
@@ -476,12 +478,10 @@ break;
 
 break;
   case 35: hp=0.3 enemyID=95 idlestyle=1
-  charinfo_set(12,spr_goblin_stand,2,animsetup_enemy,draw_enemy,spr_zombiepal,0,spr_enemyface,27,"GOBERT",
+  charinfo_set(12,spr_goblin_stand,2,animsetup_enemy,draw_swing,spr_zombiepal,0,spr_enemyface,27,"GOBERT",
 "This is one busy goblin, who hates getting their work disrupted. They want people away from their mine zone!")
   if dataPal=2 {enemy_switch("GOHNNY",0) weapon_add("PICKAXE")}
   
-  
-
 	if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,17,-24,89,weaponcolor)
 	if image_index=clamp(image_index,1,1.9)

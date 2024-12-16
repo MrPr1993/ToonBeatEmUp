@@ -60,15 +60,14 @@ charinfo_set(12,spr_twoheads_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,s
    enemyID=160
  charinfo_set(12,spr_duck_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,39,"DIXIE",
  "The carnival's biggest attraction. She is a wacky duck toy person... thing. She is a little insane. Quack.") break;
-    case 10: enemyID=161
- charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,octopus_draw,spr_enemypal,0,spr_enemyface,40,"LARRY",
+    case 10: enemyID=161 idlestyle=1
+ charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,draw_swing_2,spr_enemypal,0,spr_enemyface,40,"LARRY",
  "An octopus who is the a pet who is protective of their master and will take care of interlopers with their tentacles.")
   
 var watchtarget=0;
-watchtarget=point_direction(x,y,x,y+16)
-eyeX=x
-eyeY=y+5
-eyeY=clamp(eyeY,z+y,z+y+10)    
+watchtarget=point_direction(x,y,x,y+16) weaponBack=1
+weaponspr=spr_octopus_eye weaponIndex=0 weaponX=0 weaponY=0
+weaponspr2=spr_octopus_eye weaponIndex2=1 weaponX2=0 weaponY2=8
 
 break;
   
