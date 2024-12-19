@@ -25,7 +25,7 @@ idlestyle=1
 hp=0.25
 maxhp=0.25
 
-height=80
+height=74
 
 specialFX=0
 
@@ -68,8 +68,8 @@ my_pal_sprite=spr_ninjapal
 
 enemyID=80
 
-spritepos_setup(1,24,6,38)
-spritepos_setup(2,24,13,63)
+spritepos_setup(1,24,5,34)
+spritepos_setup(2,24,12,57)
 
 if oControl.betatest if keyboard_check(vk_control)
 weapon_add("HARPOONGUN")

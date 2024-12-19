@@ -158,12 +158,12 @@ case "DR.GLUCO": enemy_modify(spr_ninjapal,10,_name,0,0.4,0.4) enemyID=113 break
 case "METR-A": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=115 break;
 
 ///Cowboy
-case "BUCK": enemy_modify(spr_ninjapal,1,_name,0,0.8,0.8) enemyID=120 break;
-case "PESO": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=121 break;
+case "BUCK": enemy_modify(spr_ninjapal,1,_name,0,0.8,0.8) enemyID=131 break;
+case "PESO": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=132 break;
 
 ///Knight
-case "LANCER": enemy_modify(spr_robotpal,1,_name,0,0.8,0.8) enemyID=123 break;
-case "ARTIE": enemy_modify(spr_robotpal,2,_name,0,0.8,0.8) enemyID=124 break;
+case "LANCER": enemy_modify(spr_robotpal,1,_name,0,0.8,0.8) enemyID=134 break;
+case "ARTIE": enemy_modify(spr_robotpal,2,_name,0,0.8,0.8) enemyID=135 break;
 
 
 }

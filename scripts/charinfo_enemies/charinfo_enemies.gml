@@ -184,7 +184,7 @@ enemy_switch("ICARA",0)
 break;
 
   case 13: ////Cowboy
- hp=0.3 enemyID=119 idlestyle=1
+ hp=0.3 enemyID=130 idlestyle=1
  charinfo_set(12,spr_cowboy_stand,3,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,64,"BILL",
  "This man from the west will shuffle around and try to make you eat lead with that iron he carries with im'.")
 
@@ -233,7 +233,7 @@ break;
 break;
 
   case 17: ////Knight
- hp=0.3 enemyID=122 idlestyle=1
+ hp=0.3 enemyID=133 idlestyle=1
  charinfo_set(12,spr_knight_stand,3,animsetup_enemy,draw_enemy,spr_robotpal,0,spr_enemyface,65,"GARETH",
  "This knight wields a weapon to use against you and turn you to mince meat. Such a tin man.")
 
@@ -435,11 +435,11 @@ idlestyle=1
 
 	////Stand
 	if image_index=clamp(image_index,0,0.9)
-weaponanim(weaponspr,weaponIndex,25,-39,-1,weaponcolor)
+weaponanim(weaponspr,weaponIndex,25*0.9,-39*0.9,-1,weaponcolor)
 	if image_index=clamp(image_index,1,1.9)
-weaponanim(weaponspr,weaponIndex,26,-38,-1,weaponcolor)
+weaponanim(weaponspr,weaponIndex,26*0.9,-38*0.9,-1,weaponcolor)
 	if image_index=clamp(image_index,2,2.9)
-weaponanim(weaponspr,weaponIndex,26,-36,-1,weaponcolor)
+weaponanim(weaponspr,weaponIndex,26*0.9,-36*0.9,-1,weaponcolor)
 
 break;
 

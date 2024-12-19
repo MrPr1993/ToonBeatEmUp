@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":3,
   "conversionMode":0,
-  "duration":14.816429,
+  "duration":14.811429,
   "name":"msc_countdown",
   "parent":{
     "name":"Music",

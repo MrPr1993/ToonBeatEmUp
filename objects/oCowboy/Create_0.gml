@@ -16,6 +16,12 @@ OneAttack=2
 hp=0.3
 maxhp=0.3
 
+DeathCry=snd_deathcry1
+
+DamageVoice1=snd_enemy3
+DamageVoice2=snd_enemy3
+DamageVoice3=snd_enemy3
+
 height=74
 
 specialFX=0
@@ -44,8 +50,13 @@ FrozenSpr=spr_cowboy_frozen
 scaredSpr=spr_cowboy_panic hasscaredSpr=1
 DizzySpr=spr_cowboy_dizzy hasDizzy=1
 
-enemyID=119
+hasCut=1 cutSpr1=spr_cowboy_cut1 cutSpr1=spr_cowboy_cut2
+
+enemyID=130
 
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal
+
+spritepos_setup(1,24,2,22)
+spritepos_setup(2,24,8,54)

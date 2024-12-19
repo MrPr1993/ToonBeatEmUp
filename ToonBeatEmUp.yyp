@@ -2245,6 +2245,8 @@
     {"id":{"name":"spr_continuenum","path":"sprites/spr_continuenum/spr_continuenum.yy",},},
     {"id":{"name":"spr_continuet","path":"sprites/spr_continuet/spr_continuet.yy",},},
     {"id":{"name":"spr_cowboy_burned","path":"sprites/spr_cowboy_burned/spr_cowboy_burned.yy",},},
+    {"id":{"name":"spr_cowboy_cut1","path":"sprites/spr_cowboy_cut1/spr_cowboy_cut1.yy",},},
+    {"id":{"name":"spr_cowboy_cut2","path":"sprites/spr_cowboy_cut2/spr_cowboy_cut2.yy",},},
     {"id":{"name":"spr_cowboy_dizzy","path":"sprites/spr_cowboy_dizzy/spr_cowboy_dizzy.yy",},},
     {"id":{"name":"spr_cowboy_elec","path":"sprites/spr_cowboy_elec/spr_cowboy_elec.yy",},},
     {"id":{"name":"spr_cowboy_flat","path":"sprites/spr_cowboy_flat/spr_cowboy_flat.yy",},},

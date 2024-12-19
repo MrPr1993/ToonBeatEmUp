@@ -1943,6 +1943,8 @@
     {"name":"spr_continuenum","order":2,"path":"sprites/spr_continuenum/spr_continuenum.yy",},
     {"name":"spr_continuet","order":57,"path":"sprites/spr_continuet/spr_continuet.yy",},
     {"name":"spr_cowboy_burned","order":6,"path":"sprites/spr_cowboy_burned/spr_cowboy_burned.yy",},
+    {"name":"spr_cowboy_cut1","order":10,"path":"sprites/spr_cowboy_cut1/spr_cowboy_cut1.yy",},
+    {"name":"spr_cowboy_cut2","order":11,"path":"sprites/spr_cowboy_cut2/spr_cowboy_cut2.yy",},
     {"name":"spr_cowboy_dizzy","order":8,"path":"sprites/spr_cowboy_dizzy/spr_cowboy_dizzy.yy",},
     {"name":"spr_cowboy_elec","order":5,"path":"sprites/spr_cowboy_elec/spr_cowboy_elec.yy",},
     {"name":"spr_cowboy_flat","order":4,"path":"sprites/spr_cowboy_flat/spr_cowboy_flat.yy",},

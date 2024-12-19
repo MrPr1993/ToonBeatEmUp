@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_robotpal",
   "bboxMode":0,
-  "bbox_bottom":36,
+  "bbox_bottom":7,
   "bbox_left":0,
-  "bbox_right":3,
+  "bbox_right":7,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":37,
+  "height":8,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"22c7b2a7-3a66-459b-a211-95bba10a86b1","blendMode":0,"displayName":"default","isLocked":false,"name":"22c7b2a7-3a66-459b-a211-95bba10a86b1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":4,
+  "width":8,
 }

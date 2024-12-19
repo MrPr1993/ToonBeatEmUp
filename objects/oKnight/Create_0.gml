@@ -20,6 +20,11 @@ height=80
 
 specialFX=0
 
+DeathCry=snd_merman2
+DamageVoice1=snd_merman1
+DamageVoice2=snd_merman1
+DamageVoice3=snd_merman1
+
 StandSpr=spr_knight_stand
 MoveSpr=spr_knight_move
 RunSpr=spr_knight_move
@@ -42,7 +47,10 @@ FrozenSpr=spr_knight_frozen
 scaredSpr=spr_knight_panic hasscaredSpr=1
 DizzySpr=spr_knight_dizzy hasDizzy=1
 
-enemyID=122
+enemyID=133
 
 current_pal=0;
 my_pal_sprite=spr_robotpal
+
+spritepos_setup(1,24,2,42)
+spritepos_setup(2,24,16,75)
