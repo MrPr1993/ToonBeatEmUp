@@ -10,8 +10,8 @@
   ],
   "name":"cutsceneint1",
   "parent":{
-    "name":"Other Scenes",
-    "path":"folders/1c - Cutscenes/Other Scenes.yy",
+    "name":"Intermission1",
+    "path":"folders/1c - Cutscenes/Other Scenes/Intermission1.yy",
   },
   "resourceType":"GMTimeline",
   "resourceVersion":"2.0",

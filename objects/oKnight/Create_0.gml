@@ -5,6 +5,8 @@ enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=65
 
 enemyscript=animsetup_enemy
+chardraw=draw_swing;
+
 
 pointshit=10
 points=100
@@ -46,11 +48,16 @@ BurnSpr=spr_knight_burned
 FrozenSpr=spr_knight_frozen
 scaredSpr=spr_knight_panic hasscaredSpr=1
 DizzySpr=spr_knight_dizzy hasDizzy=1
+hasCut=1 cutSpr1=spr_knight_cut1 cutSpr2=spr_knight_cut2
 
 enemyID=133
 
+idlestyle=1
+
 current_pal=0;
 my_pal_sprite=spr_robotpal
+
+weapon_add("SWORD")
 
 spritepos_setup(1,24,2,42)
 spritepos_setup(2,24,16,75)

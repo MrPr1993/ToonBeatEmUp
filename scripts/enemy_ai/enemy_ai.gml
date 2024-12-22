@@ -72,7 +72,7 @@ else
 	{anim=1
 	{dashing=0 doubledash=0}
 
-	if x!=clamp(x,targetX-rangeX-8-sprite_get_width(mask_index)/2,targetX+rangeX+8+sprite_get_width(mask_index)/2)
+	if x=clamp(x,targetX-rangeX-8-sprite_get_width(mask_index)/2,targetX+rangeX+8+sprite_get_width(mask_index)/2)
 	{if x<targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
 
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)

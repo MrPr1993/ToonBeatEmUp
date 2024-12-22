@@ -242,6 +242,16 @@ enemy_switch("LANCER",0)
 if dataPal=3
 enemy_switch("ARTIE",0)
 
+weapon_add("SWORD")
+
+	////Stand
+	if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,21,-36,90,weaponcolor)
+	if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,22,-37,90,weaponcolor)
+	if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,23,-36,90,weaponcolor)
+
 break;
 
   case 18: enemyID=47 hp=0.3
