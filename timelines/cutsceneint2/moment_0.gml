@@ -31,7 +31,7 @@ with oCameoChar isDepth=0
 
 with actor1
 {
-x=0 y=0 sprite_index=spr_int2_1 image_speed=0.5
+x=0 y=0 sprite_index=spr_int2_1 image_speed=0.5  depth=-2000 isDepth=0
 }
 
 actorscreen=instance_create_depth(0,0,-1,oCameoChar) with actorscreen
@@ -40,8 +40,8 @@ x=0 shadow=-1 y=-240
 
 with oControl
 with actor2 {isDepth=0
-depth=-2000 sprite_index=spr_block
-image_xscale=30 image_yscale=30 x=0 y=0
+depth=-1800 sprite_index=spr_block
+image_xscale=30 image_yscale=30 x=0 y=0 image_blend=c_black;
 }
 
 
@@ -68,12 +68,15 @@ if scenetime>=540 and scenetime<=620
 
 if scenetime=900
 {
-sprite_index=spr_int2_3 x=70 y=80 image_speed=0
-with oControl {
-cutscenename="MR.SNEAK" cutsceneline= "Yes, boss!"
+with oCameoChar y=-9999
+with oControl 
+{
+cutscenename="MR.SNEAK" cutsceneline="Yes, boss!"
 with actor1 {sprite_index=spr_int2_4 x=-148 y=0 depth=-3010} 
-
 }
+
+
+sprite_index=spr_int2_3 x=70 y=88 image_speed=0
 }
 
 if scenetime=clamp(scenetime,900,1100) {image_index+=0.25 if image_index>=2 image_index=0}
@@ -149,8 +152,8 @@ cutscenename="DR.FRAN" cutsceneline= "Yes, Master Van Bad."
 
 
 if scenetime=2280
-{x=80 with oControl actor1.x=-9999
-	sprite_index=spr_int1_4	
+{x=80 y=0 with oControl actor1.x=-9999 image_speed=0 image_index=0
+	sprite_index=spr_int2_5
 with oControl
 {
 
@@ -158,8 +161,12 @@ cutscenename="VAN BAD" cutsceneline= "Bothersome little divas... You're about to
 
 }
 }
+if scenetime>=2280 if x>0 x-=0.5
+
 if scenetime>=2580
-x=lerp(x,0,0.025)
+{
+if image_index<=5.5 image_index+=0.25 if image_index=2 {oControl.quakeFXTime=10}
+}
 
 if scenetime>=2780 image_alpha-=0.025
 

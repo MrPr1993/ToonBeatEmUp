@@ -2613,6 +2613,7 @@
     {"name":"spr_int2_2","order":3,"path":"sprites/spr_int2_2/spr_int2_2.yy",},
     {"name":"spr_int2_3","order":4,"path":"sprites/spr_int2_3/spr_int2_3.yy",},
     {"name":"spr_int2_4","order":5,"path":"sprites/spr_int2_4/spr_int2_4.yy",},
+    {"name":"spr_int2_5","order":6,"path":"sprites/spr_int2_5/spr_int2_5.yy",},
     {"name":"spr_introarrow","order":3,"path":"sprites/spr_introarrow/spr_introarrow.yy",},
     {"name":"spr_introdoor","order":29,"path":"sprites/spr_introdoor/spr_introdoor.yy",},
     {"name":"spr_introfilm","order":4,"path":"sprites/spr_introfilm/spr_introfilm.yy",},

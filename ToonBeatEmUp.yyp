@@ -2930,6 +2930,7 @@
     {"id":{"name":"spr_int2_2","path":"sprites/spr_int2_2/spr_int2_2.yy",},},
     {"id":{"name":"spr_int2_3","path":"sprites/spr_int2_3/spr_int2_3.yy",},},
     {"id":{"name":"spr_int2_4","path":"sprites/spr_int2_4/spr_int2_4.yy",},},
+    {"id":{"name":"spr_int2_5","path":"sprites/spr_int2_5/spr_int2_5.yy",},},
     {"id":{"name":"spr_introarrow","path":"sprites/spr_introarrow/spr_introarrow.yy",},},
     {"id":{"name":"spr_introdoor","path":"sprites/spr_introdoor/spr_introdoor.yy",},},
     {"id":{"name":"spr_introfilm","path":"sprites/spr_introfilm/spr_introfilm.yy",},},
