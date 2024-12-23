@@ -24,7 +24,7 @@ WhitDisappear=1
 canFlash=0
 
 angleImage=90
-zAddGround=-32
+zAddGround=0
 
 WspriteFX=spr_hitflash
 HitSound=snd_hit

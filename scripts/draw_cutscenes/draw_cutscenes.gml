@@ -11,7 +11,7 @@ draw_sprite(bg_cuts1,0,0-320+MenuMoveX,0)
 draw_sprite(bg_cuts2,0.2+MenuScaleX,160+320-MenuMoveX,72)
 
 
-if -key_left_pressed {if global.MovieSel=0 global.MovieSel=20 else global.MovieSel-=1 PlaySound(snd_select)}
+if -key_left_pressed {if global.MovieSel=0 global.MovieSel=22 else global.MovieSel-=1 PlaySound(snd_select)}
 if key_right_pressed {if global.MovieSel=20 global.MovieSel=0 else global.MovieSel+=1 PlaySound(snd_select)}
 
 var imgscene=0;
@@ -41,29 +41,37 @@ if global.MovieSel=7 {MenuText="GRAVEYARD CUTSCENE"
 global.StageGoing=rm_cutscene3b}
 if global.MovieSel=8 {MenuText="CASINO CUTSCENE"
 global.StageGoing=rm_cutscene3c}
-if global.MovieSel=9 {MenuText="CARNIVAL CUTSCENE"
+
+if global.MovieSel=9 {MenuText="ANGRY WOMEN"
+global.StageGoing=rm_intermission1}
+
+if global.MovieSel=10 {MenuText="CARNIVAL CUTSCENE"
 global.StageGoing=rm_cutscene4a}
-if global.MovieSel=10 {MenuText="SWAMP CUTSCENE"
+if global.MovieSel=11 {MenuText="SWAMP CUTSCENE"
 global.StageGoing=rm_cutscene4b}
-if global.MovieSel=11 {MenuText="BEACH CUTSCENE"
+if global.MovieSel=12 {MenuText="BEACH CUTSCENE"
 global.StageGoing=rm_cutscene4c}
-if global.MovieSel=12 {MenuText="MERMAID SCENE"
+if global.MovieSel=13 {MenuText="MERMAID SCENE"
 global.StageGoing=rm_cutscene5a}
-if global.MovieSel=13 {MenuText="ESCAPE FROM SPACE"
+if global.MovieSel=14 {MenuText="ESCAPE FROM SPACE"
 global.StageGoing=rm_cutscene5b}
-if global.MovieSel=14 {MenuText="GENIE'S WISH"
+if global.MovieSel=15 {MenuText="GENIE'S WISH"
 global.StageGoing=rm_cutscene5c}
-if global.MovieSel=15 {MenuText="ROYAL PLANT"
+
+if global.MovieSel=16 {MenuText="PULL OUT ALL THE STOPS"
+global.StageGoing=rm_intermission2}
+
+if global.MovieSel=17 {MenuText="ROYAL PLANT"
 global.StageGoing=rm_cutscene6a}
-if global.MovieSel=16 {MenuText="BROKEN REFLECTION"
+if global.MovieSel=18 {MenuText="BROKEN REFLECTION"
 global.StageGoing=rm_cutscene6b}
-if global.MovieSel=17 {MenuText="MAIDEN DRAGON"
+if global.MovieSel=19 {MenuText="MAIDEN DRAGON"
 global.StageGoing=rm_cutscene6c}
-if global.MovieSel=18 {MenuText="GET THAT BLIMP!"
+if global.MovieSel=20 {MenuText="GET THAT BLIMP!"
 global.StageGoing=rm_cutscene6c}
-if global.MovieSel=19 {MenuText="ENDING SCENE"
+if global.MovieSel=21 {MenuText="ENDING SCENE"
 global.StageGoing=rm_cutscene6c}
-if global.MovieSel=20 {MenuText="CREDITS"
+if global.MovieSel=22 {MenuText="CREDITS"
 global.StageGoing=rm_creditscene}
 imgscene=global.MovieSel+1
 

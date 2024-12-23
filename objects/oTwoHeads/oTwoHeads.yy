@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_twoheads_stand",
-    "path":"sprites/spr_twoheads_stand/spr_twoheads_stand.yy",
+    "name":"spr_twoheads_badge",
+    "path":"sprites/spr_twoheads_badge/spr_twoheads_badge.yy",
   },
   "spriteMaskId":{
     "name":"mask_mid",
