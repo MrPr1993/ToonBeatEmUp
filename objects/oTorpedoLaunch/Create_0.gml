@@ -26,7 +26,7 @@ atk=1
 
 dizzyAtk=0
 
-damage=0
+damage=0.2
 
 MoveType=0
 HitType=0
@@ -65,6 +65,6 @@ current_pal=0
 alarm[0]=120
 
 MoveType=5
-spriteFX=snd_explosion
+spriteFX=spr_explosion
 
 speciayY=y+16

@@ -28,6 +28,7 @@ or anim=7
 or anim=30
 or anim=31
 or dead=1
+or anim=595000
 {
 	with oOctopusT if anim!=4 {AnimFrame=0 anim=4}
 	

@@ -3,6 +3,7 @@ controller_setup()
 
 character_setup()
 
+
 screamset=0 key_scream=0
 
 specialanimscript=-1;

@@ -79,10 +79,11 @@ if enemySpawn=15 {enemySpawnName="5-c Genie" spawnUnit=oGenie}//?Genie
 if enemySpawn=16 {enemySpawnName="6-a Mirror Lady" spawnUnit=oMirrorLady}//?Genie
 if enemySpawn=17 {enemySpawnName="6-b Plant Princess" spawnUnit=oPlantPrincess}//Plant Princess
 if enemySpawn=18 {enemySpawnName="6-c Dragon Maiden" spawnUnit=oDragonMaiden}//?Genie
-if enemySpawn=19 {enemySpawnName="7- Scientist Boss" spawnUnit=oScientist}//?Genie
-if enemySpawn=20 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
-if enemySpawn=21 {enemySpawnName="Dastardly?" spawnUnit=oDastardly2}
-if enemySpawn=22 {enemySpawnName="???" spawnUnit=oPainter}
+if enemySpawn=19 {enemySpawnName="7-a Scientist Screen" spawnUnit=oScienceScreen}//?Genie
+if enemySpawn=20 {enemySpawnName="7-b Scientist Boss" spawnUnit=oScientist}//?Genie
+if enemySpawn=21 {enemySpawnName="Dastardly" spawnUnit=oDastardly}
+if enemySpawn=22 {enemySpawnName="Dastardly?" spawnUnit=oDastardly2}
+if enemySpawn=23 {enemySpawnName="???" spawnUnit=oPainter}
 }
 
 if spawnType="Item"
@@ -106,11 +107,12 @@ if enemySpawn=15 {enemySpawnName="16 Taser" spawnUnit=oTaser}
 if enemySpawn=16 {enemySpawnName="17 Sword" spawnUnit=oSword}
 if enemySpawn=17 {enemySpawnName="18 Pie" spawnUnit=oPie}
 if enemySpawn=18 {enemySpawnName="19 Whip" spawnUnit=oWhip}
-if enemySpawn=18 {enemySpawnName="20 Staff" spawnUnit=oStaff}
-if enemySpawn=19 {enemySpawnName="21 Treasure" spawnUnit=-1}
-if enemySpawn=20 {enemySpawnName="22 1-Up" spawnUnit=o1up}
-if enemySpawn=21 {enemySpawnName="23 Harpoon" spawnUnit=oHarpoonGun}
-if enemySpawn=22 {enemySpawnName="24 Laser Gun" spawnUnit=oLaserGun}
+if enemySpawn=19 {enemySpawnName="20 Staff" spawnUnit=oStaff}
+if enemySpawn=20 {enemySpawnName="21 Treasure" spawnUnit=-1}
+if enemySpawn=21 {enemySpawnName="22 1-Up" spawnUnit=o1up}
+if enemySpawn=22 {enemySpawnName="23 Harpoon" spawnUnit=oHarpoonGun}
+if enemySpawn=23 {enemySpawnName="24 Laser Gun" spawnUnit=oLaserGun}
+if enemySpawn=24 {enemySpawnName="25 Spicy Chilli" spawnUnit=oSpicyChilli}
 }
 
 if spawnType="Obstacle"

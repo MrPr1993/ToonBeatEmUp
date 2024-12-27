@@ -183,6 +183,7 @@ weapontargetHeight=2
 weapontype=4
 weaponHitType=0
 weaponProjFlashSpr=spr_gunflash
+weaponProjSnd=snd_handgun
 }
 
 if wpadd="LASERGUN"

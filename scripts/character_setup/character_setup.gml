@@ -10,6 +10,8 @@ specialtaunt=-1
 specialanim=-1
 specialtimes[9]=0
 
+specialitemreaction=-1;
+
 playerGet=0
 
 Cweather=0

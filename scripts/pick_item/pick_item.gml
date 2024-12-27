@@ -23,7 +23,7 @@ if item.PickupSound!=-1
 	{weaponspawn=item.itemname weaponLife=item.weaponLife }
 	PlayerScore+=item.points
 	
-
+specialitemreaction=item.specialitemreaction;
 	
 
 
@@ -124,7 +124,7 @@ if item.iscarry=0 item.itemto=playerNO
 	with item if iscarry=0 {itemeffect() instance_destroy()}
 	else {carry=1 }
 	}
-
+special_item_reaction_start();
 	}
 	}
 	else {

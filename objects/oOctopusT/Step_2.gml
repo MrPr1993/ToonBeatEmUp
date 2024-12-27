@@ -158,7 +158,18 @@ targetID=-1
 
 throwing=0 AnimFrame=0 anim=0 canmove=1 throwcombo=2
 alarm[1]=2
-}}
+}
+
+if targetID!=-1 if targetID.hp=0 
+{
+with targetID
+{
+	AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+	HitForceReact=-4*image_xscale throw_quickrelease() ground=0 zSpeed=-4 sentflying=-2*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
+}
+AnimFrame=0 anim=4 mask_index=mask_none
+}
+}
 
 
 

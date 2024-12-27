@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.601179,
+  "duration":0.743039,
   "name":"snd_explosion",
   "parent":{
     "name":"Items",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_explosion",
+  "soundFile":"snd_explosion.wav",
   "type":0,
   "volume":1.0,
 }

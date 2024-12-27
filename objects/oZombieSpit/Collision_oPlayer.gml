@@ -8,6 +8,7 @@ with other
 {
 if other.immune=0 and other.hurt=0 and other.recovery=0 and other.Throw=0
 {flashFX(x,y,z,hitflash,0,1,10,1,1,c_white,1)
+		if haspal {fx.haspal=1 fx.my_pal_sprite=my_pal_sprite  fx.current_pal=current_pal}
 if other.x>xstart {other.HitForceReact=2}
 else {other.HitForceReact=-2}
 other.cutDMG=isCut

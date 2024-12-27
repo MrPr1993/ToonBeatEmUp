@@ -39,7 +39,7 @@ JumpSpr=spr_submarine
 JumpSpr2=spr_submarine
 ThrownSpr=spr_submarine
 FlatSpr=spr_submarine_flat
-ShockSpr=mask_none
+ShockSpr=spr_submarine_elecB
 BurnSpr=spr_submarine
 FrozenSpr=spr_submarine
 

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.160329,
+  "duration":0.097234,
   "name":"snd_gun",
   "parent":{
     "name":"Items",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_gun",
+  "soundFile":"snd_gun.wav",
   "type":0,
   "volume":1.0,
 }

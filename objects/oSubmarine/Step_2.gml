@@ -224,7 +224,7 @@ AnimFrame=0 anim=6 wobbleX=1.2 wobbleY=0.1
 		if hurt=1
 	{
 	if anim=30 ///Thrown
-	{
+	{sprite_index=spr_submarine
 	minebuffer=120
 mineind=0
 
@@ -242,7 +242,7 @@ scopespr=spr_submarine_scope_hit scopeind=0
 
 	if anim=31 ///Special Thrown
 	if overwriteThrown=0
-	{hurt=1 recovery=30
+	{hurt=1 recovery=30 sprite_index=spr_submarine
 	minebuffer=120
 mineind=0
 
@@ -310,4 +310,14 @@ if AnimFrame>14.5
 	
 	}
 	
-	
+	////Panic
+if anim=595000
+{if AnimFrame=0 {image_index=0 recovery=0 scopeind=0 recoveryThrow=0 }
+
+scopespr=spr_submarine_scope_panic
+
+{sprite_index=spr_submarine scopeind+=0.5 if scopeind=3 scopeind=1 if AnimFrame>46 or AnimFrame<4 image_index=0.5}
+AnimFrame+=1
+
+if AnimFrame=50 {canmove=1 hurt=0}
+}

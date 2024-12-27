@@ -164,7 +164,7 @@ if AnimFrame>15.75 {canmove=1 atk=0}
 
 ///mermaid punch
 if anim=13
-{damage=0.2
+{damage=0.2 atkcol_set(24,0,0,1,1,48) MoveType=1
 if AnimFrame=0 {sprite_index=spr_siren_charge specialtimes[0]=0}
 frame_set(0,0,0.1)
 frame_set(1,1,0.1) if AnimFrame=2 {PlaySound(snd_femenemy5) PlaySoundNoStack(snd_swing)}

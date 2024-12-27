@@ -62,7 +62,7 @@ enemyID=101
 bombRecharge=0
 
 current_pal=0;
-my_pal_sprite=spr_zombiepal
+my_pal_sprite=spr_slimepal
 
 spritepos_setup(1,24,11,61)
 spritepos_setup(2,24,11,91)

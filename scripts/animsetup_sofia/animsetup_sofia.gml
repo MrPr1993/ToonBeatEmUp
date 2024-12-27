@@ -1080,6 +1080,7 @@ MoveType=0
 	if AnimFrame=clamp(AnimFrame,0,1.5)
 	AnimFrame+=0.2 else AnimFrame+=0.1 if AnimFrame>1.5 {hurt=0 atk=0 canmove=1 hit=0 
 	}
+	special_item_reaction_end();
 	}
 	
 	///Lift Heavy Object

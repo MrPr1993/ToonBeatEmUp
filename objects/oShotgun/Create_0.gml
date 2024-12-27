@@ -23,6 +23,7 @@ weaponExtraAngle=270
 weaponIsGun=1
 weaponLife=5
 
+weaponProjSnd=snd_shotgun
 weaponProjFlashSpr=spr_shotgunfx
 PickupSound=snd_getweapon
 

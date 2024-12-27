@@ -123,7 +123,7 @@ sentflying=lerp(sentflying,0,0.1)
 	if distance_to_point(targetEnemy.x,targetEnemy.y)>150
 	anim=12 else anim=11
 	
-	if current_pal=1 if anim=11  anim=12222
+	if current_pal=1 or current_pal=5 if anim=11  anim=12222
 	
 	if anim=11 if current_pal=5 anim=choose(11,12)
 	

@@ -18,7 +18,11 @@ instance_destroy()
 if ground if bounce!=0 {z=0 z-=4 zSpeed=boucespd bounce-=1}
 else
 if hit=0
-{puddle=instance_create(x,y,oFlashFX) puddle.alarm[0]=-1 puddle.sprite_index=endflash puddle.image_speed=0.5   instance_destroy()}
+{puddle=instance_create(x,y,oFlashFX) puddle.alarm[0]=-1 puddle.sprite_index=endflash puddle.image_speed=0.5  
+	
+	if haspal {puddle.haspal=1 puddle.my_pal_sprite=my_pal_sprite  puddle.current_pal=current_pal}
+	
+	instance_destroy()}
 
 if z>0 {z=0 if bounce=0 hspeed=0 zSpeed=0 ground=1} else ground=0
 

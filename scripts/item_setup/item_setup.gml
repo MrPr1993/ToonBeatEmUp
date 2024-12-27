@@ -14,6 +14,8 @@ function item_setup() {
 	altSpr=-1
 	altInd=-1
 	
+specialitemreaction=-1;
+	
 	colorshade_setup()
 
 dead=0

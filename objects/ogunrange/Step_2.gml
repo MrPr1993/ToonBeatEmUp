@@ -48,7 +48,7 @@ if fire=1
 	if firing=0
 		{
 		fire=2 shootbuffer=0
-		PlaySound(snd_gun)
+		PlaySound(snd_shotgun)
 		
 		}
 	else

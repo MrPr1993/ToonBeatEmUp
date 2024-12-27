@@ -787,6 +787,35 @@ if ground {
 	zSpeed=-2 AnimFrame=0 anim=4 targetHeightHit=0 AnimFrame=0.9}
 }
 
+if anim=591200 ////SPICY!!!!!!!! Eaten spicy item
+{recovery=2 hurt=0
+if AnimFrame=0 {image_index=0 ground=0 zSpeed=-4 specialtimes[8]=choose(-4,4)}
+AnimFrame+=1;
+
+if AnimFrame>=60
+{sprite_index=spr_viva_run image_index+=0.5
+MoveType=1 damage=0.25
+selfatk.atk=1 atk=1 atkcol_set(0,0,0+1,2,2,96)
+
+if place_free(x+8*image_xscale,y) x+=8*image_xscale else {image_xscale=-image_xscale x+=8*image_xscale}
+if place_free(x,y+specialtimes[8]) y+=specialtimes[8] else {specialtimes[8]=-specialtimes[8] y+=specialtimes[8]}
+
+if (specialtimes[8]=4 and y>=oControl.camY+240-4-4)
+or (specialtimes[8]=-4 and y<=oControl.camY+4+4)
+specialtimes[8]=-specialtimes[8]
+
+if (image_xscale=1 and x>=oControl.camX+320-4-12)
+or (image_xscale=-1 and x<=oControl.camX+4+12)
+image_xscale=-image_xscale
+oControl.quakeFXTime=2
+if image_index=2 or image_index=4 or image_index=6 dust_make(x,y,z-4,0,0,0)
+if image_index>=6 image_index=0
+}
+
+
+if AnimFrame>= 320 {canmove=1 hurt=0 }
+}
+
 ///Scared at the respawn
 if anim=595000
 {if AnimFrame=0 {image_index=0 recovery=0 recoveryThrow=0 }

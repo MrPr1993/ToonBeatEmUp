@@ -340,7 +340,23 @@ targetID=-1
 
 throwing=0 AnimFrame=0 anim=0 canmove=1 throwcombo=2
 alarm[1]=2
-}}
+}
+
+if targetID!=-1 if targetID.hp=0 
+{
+with targetID
+{
+	AnimFrame=0 HitType=0 hurt=1 hit=0 Throw=0 hitBack=0
+	HitForceReact=-4*image_xscale throw_quickrelease() ground=0 zSpeed=-4 sentflying=-2*image_xscale anim=5 canmove=0 recovery=0 recoveryThrow=0 shake=0 shaketime=0
+}
+byetime=0
+lockX-=10*image_xscale	
+AnimFrame+=0.1
+if oDragonMaiden.dead=0
+if AnimFrame>20 {hp=0.1 AnimFrame=0 anim=0} 
+
+}
+}
 
 
 
