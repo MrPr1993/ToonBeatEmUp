@@ -24,7 +24,6 @@ weapontype=19935
 
 weaponLife=12
 
-HitSound=snd_cut
 WswingSound=snd_swing3
 
 PickupSound=snd_getweapon

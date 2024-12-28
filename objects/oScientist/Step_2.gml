@@ -181,7 +181,7 @@ if AnimFrame>12 {AnimFrame=0 specialanim-=1}
 }
 
 if specialanim=2
-{x-=2 sprite_index=spr_scientist_move image_index+=0.25
+{x+=2*image_xscale sprite_index=spr_scientist_move image_index+=0.25
 AnimFrame+=0.1
 
 if AnimFrame>4 {AnimFrame=0 specialanim-=1}

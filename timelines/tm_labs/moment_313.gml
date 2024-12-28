@@ -1,5 +1,5 @@
 if bosscreen.specialcheck[1]=3
-{PlaySound(snd_scientist1) with oEnemySpawner cammoveUP=0
+{ with oEnemySpawner cammoveUP=0
 boss=instance_create_depth(oControl.camX+160,220,-1,oScienceScreen)
 
 

@@ -234,7 +234,7 @@ break;
 
   case 17: ////Knight
  hp=0.3 enemyID=133 idlestyle=1
- charinfo_set(12,spr_knight_stand,3,animsetup_enemy,draw_enemy,spr_robotpal,0,spr_enemyface,65,"GARETH",
+ charinfo_set(12,spr_knight_stand,3,animsetup_enemy,draw_swing,spr_robotpal,0,spr_enemyface,65,"GARETH",
  "This knight wields a weapon to use against you and turn you to mince meat. Such a tin man.")
 
 if dataPal=2

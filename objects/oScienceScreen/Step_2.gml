@@ -34,7 +34,9 @@ wobbleX=lerp(wobbleX,1,0.1)
 wobbleY=lerp(wobbleY,1,0.1)
 
 if anim=9999 ////Dead
-{if AnimFrame=0 {z=0 scopespr=mask_none  specialcheck0=1 specialcheck1=0
+{if AnimFrame=0 { scopespr=mask_none  specialcheck0=1 specialcheck1=0
+
+z=lerp(z,0,0.1)
 
 var brokenpartX=0; var brokenpartY=1; var brokenpartz=0;
 var brokenpartV=random(3); var brokenpartHSPD=0;
@@ -123,7 +125,7 @@ if hp=0 or hp<=0 or dead=1 if anim!=9999
 
 if anim=0
 {
-if z>-100 z-=4 else {z=lerp(z,-100,0.1)}
+if z>-150 z-=4 else {z=lerp(z,-150,0.1)}
 
 
 frame_set(0,0,0.1)
@@ -308,7 +310,15 @@ scopespr=spr_submarine_scope_hit scopeind=0
 	
 	
 	if anim=10 ///Attack
-	{anim=11 AnimFrame=0
+	{
+	if z>-150 z-=4 else {z=lerp(z,-150,0.1)}
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,1,0.1)
+if AnimFrame>=4 AnimFrame=0	
+	if z<=-98
+	{anim=11 AnimFrame=0}
 	}
 	
 	
@@ -343,13 +353,14 @@ if targetEnemy.y>y y+=1 else y-=1
 	if anim=100{immune=1 
 		
 if AnimFrame<=6 {screenSpr=spr_science_intro screenInd+=0.25 if screenInd=3 screenInd=0}
-else {screenSpr=spr_science_idle specialanim=0}
+else {screenSpr=spr_science_intro specialanim=0 screenInd+=0.1 screenInd=clamp(screenInd,3,7)}
 
 AnimFrame+=0.1
 
+if AnimFrame>10
 z=lerp(z,-120,0.1)
 
-if AnimFrame>14.5
+if AnimFrame>20.5
 {immune=0 anim=0 canmove=1}
 	
 	}

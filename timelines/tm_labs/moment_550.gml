@@ -1,8 +1,8 @@
 /// @description Head to the End
 
-if __view_get( e__VW.XView, 0 )>=7644+920-2-320
+if __view_get( e__VW.XView, 0 )>=7644+320-160+920-2-320
 {
-if oControl.allPlayersEdge and oControl.allPlayersMove
+if oControl.allPlayersMid and oControl.allPlayersMove
 {
 
 with oControl
