@@ -7,7 +7,7 @@ with en3 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_switch("UNDA",0)
 
 	}	
 
-en4=instance_create(__view_get( e__VW.XView, 0)+320+64,190+32,oSnowGirl)
+en4=instance_create(__view_get( e__VW.XView, 0)+320+64,190+64,oSnowGirl)
 with en4 {image_xscale=-1 canAttack=5 alarm[1]=60 enemy_switch("UNDA",0)
 	
 	}	

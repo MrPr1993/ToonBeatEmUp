@@ -1,17 +1,9 @@
-/// @description Freeze Player's Controls
-
-if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
+if !instance_exists(oScienceScreen)
 {
-oPlayer.canControl=0
-oPlayer.areaEntry=1
-
-with oPlayer
-{key_right=0 doubledash=0 dashing=0
-}
-with oControl {oControl.stageNext=rm_cutscene4c event_user(9) stageBoss="SCIENTIST"}
+with oControl {//camMove=0 camMax=room_width
+goActive=1 alarm[1]=90 MusicFade=1
+xGoCheck=__view_get( e__VW.XView, 0 )+320}
+spawner_followset("WaveSet1",0,7644+320+920-8,1)
 }
 else
-{
-timeline_position-=1
-}
-
+timeline_position-=1;

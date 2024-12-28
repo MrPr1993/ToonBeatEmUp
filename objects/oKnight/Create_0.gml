@@ -59,5 +59,12 @@ my_pal_sprite=spr_robotpal
 
 weapon_add("SWORD")
 
+if oControl.betatest=1
+{if keyboard_check(vk_shift)
+weapon_add("CLUB") //if keyboard_check(vk_control) weapon_add("LASERGUN")
+}
+
+
+
 spritepos_setup(1,24,2,42)
 spritepos_setup(2,24,16,75)

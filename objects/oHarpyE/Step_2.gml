@@ -134,3 +134,4 @@ if anim=13 ///Sing
 	if AnimFrame>20.7 {canmove=1 sentflying=0 alarm[1]=60}
 
 	}
+

@@ -43,8 +43,8 @@
     "path":"sprites/spr_science_idle/spr_science_idle.yy",
   },
   "spriteMaskId":{
-    "name":"mask_sub",
-    "path":"sprites/mask_sub/mask_sub.yy",
+    "name":"mask_mid",
+    "path":"sprites/mask_mid/mask_mid.yy",
   },
   "visible":true,
 }

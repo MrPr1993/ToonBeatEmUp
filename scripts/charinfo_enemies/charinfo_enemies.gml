@@ -244,6 +244,8 @@ enemy_switch("ARTIE",0)
 
 weapon_add("SWORD")
 
+if dataPal=2 weapon_add("CLUB")
+//if dataPal=3 weapon_add("CLUB")
 	////Stand
 	if image_index=clamp(image_index,0,0.9)
 weaponanim(weaponspr,weaponIndex,21,-36,90,weaponcolor)

@@ -1,3 +1,23 @@
+if instance_exists(oScienceScreen) with oScienceScreen
+{
+var altsprite=0;
+if anim=8 or anim=9 or anim=40 altsprite=1;
+draw_sprite(spr_science_bg,0,screenX,screenY+screenZ)
+if altsprite=0
+draw_sprite(screenSpr,screenInd,screenX,screenY+screenZ)
+else
+{
+if anim=8 ///Electrified
+draw_sprite(spr_science_elec,image_index,screenX,screenY+screenZ)
+if anim=9 ///Electrified
+draw_sprite(spr_science_flat,0,screenX,screenY+screenZ)
+if anim=40 ///Burned
+draw_sprite(spr_science_burned,image_index,screenX,screenY+screenZ)
+}
+
+}
+
+
 if instance_exists(oPlayer) with oPlayer if visible and hasShadow=1 and sprite_index!=mask_none
 {
 if !place_meeting(x,y,oHeight32) and !place_meeting(x,y,oFallHole)

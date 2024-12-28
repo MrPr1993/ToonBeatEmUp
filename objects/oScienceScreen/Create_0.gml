@@ -1,9 +1,8 @@
 enemy_data()
 
-name="SEA BANDIT"
+name="DR.FRAN"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=57
-
+enemyPortraitIndex=60//36
 
 enemyscript=animsetup_enemy
 
@@ -19,7 +18,7 @@ defense=1.5
 hp=2.0
 maxhp=2.0
 
-height=128
+height=96
 
 specialFX=0
 
@@ -37,17 +36,17 @@ JumpAtkSpr2=spr_octopus_stand
 
 JumpSpr=spr_submarine
 JumpSpr2=spr_submarine
-ThrownSpr=spr_submarine
+ThrownSpr=spr_science_b
 FlatSpr=spr_submarine_flat
 ShockSpr=spr_submarine_elecB
 BurnSpr=spr_submarine
 FrozenSpr=spr_submarine
 
 
-lockPos=1;
+lockPos=0;
 lockX=x;
 lockY=y;
-lockZ=z;
+lockZ=0;
 
 shadow=mask_none
 
@@ -88,13 +87,19 @@ lockXaddTime=120
 enemyID=180;
 
 screenAnim=0;
-screenSpr=spr_science_idle
+screenSpr=mask_none
 screenFrame=0;
 screenInd=0;
 screenX=x;
 screenY=y;
 screenZ=-48;
 
+atkAir=1
+noHitFall=1
+
 isBoss=1
 
 z=-48
+immune=0
+
+sprite_index=spr_science_b

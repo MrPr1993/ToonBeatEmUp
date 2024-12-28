@@ -1,8 +1,8 @@
 if boss.hp<1 and enemySpawn0=0
 {
 enemySpawn0=1
-en1=instance_create(__view_get( e__VW.XView, 0 )-64,160+16,oNurse) en1.image_xscale=1
-en2=instance_create(__view_get( e__VW.XView, 0 )-64,160+32,oNurse) en2.image_xscale=1
+//en1=instance_create(__view_get( e__VW.XView, 0 )-64,160+16,oNurse) en1.image_xscale=1
+//en2=instance_create(__view_get( e__VW.XView, 0 )-64,160+32,oNurse) en2.image_xscale=1
 }
 else
 {

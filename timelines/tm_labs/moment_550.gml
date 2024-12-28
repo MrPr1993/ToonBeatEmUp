@@ -1,19 +1,30 @@
-/// @description Prepare Boss
+/// @description Head to the End
+
+if __view_get( e__VW.XView, 0 )>=7644+920-2-320
+{
+if oControl.allPlayersEdge and oControl.allPlayersMove
+{
 
 with oControl
-{timecheck=alarm[0] alarm[0]=10000000}
-
-if oPlayer.x>=2847+320+64
-and oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
 {
-oPlayer.canControl=0
-oPlayer.areaEntry=1
+PlaySound(snd_hitgroundmetal)
+quakeFXTime=10
 
 with oPlayer
-{key_right=0 doubledash=0 dashing=0
+{
+automoveX=oControl.camX+320-32
+automoveY=oControl.wallY+16+16*controlNO
+canControl=0
+automove=1
 }
 
-with oControl MusicFade=1
+}
+
+}
+else
+{
+timeline_position-=1
+}
 }
 else
 {

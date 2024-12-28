@@ -38,6 +38,11 @@ weapon_setup(oSword,spr_sword,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,1,64)
 WspriteFX=spr_blood2 weaponCut=1
 }
 
+if wpadd="CLUB"
+{
+weapon_setup(oClub,spr_club,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+}
+
 if wpadd="SCIMITAR"
 {
 weapon_setup(oScimitar,spr_scimitar,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,1,64)
@@ -57,7 +62,6 @@ weapon_setup(oFishingRod,spr_fishingrod,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,
 if wpadd="PIPE"
 {
 weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
-
 }
 
 if wpadd="SHOVEL"
