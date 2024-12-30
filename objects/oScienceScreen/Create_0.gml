@@ -2,7 +2,7 @@ enemy_data()
 
 name="DR.FRAN"
 enemyPortraitSpr=spr_enemyface
-enemyPortraitIndex=60//36
+enemyPortraitIndex=36//36
 
 enemyscript=animsetup_enemy
 
@@ -13,7 +13,7 @@ rangeAtk=320
 
 OneAttack=2
 
-defense=1.5
+defense=1
 
 hp=2.0
 maxhp=2.0
@@ -37,10 +37,10 @@ JumpAtkSpr2=spr_octopus_stand
 JumpSpr=spr_submarine
 JumpSpr2=spr_submarine
 ThrownSpr=spr_science_b
-FlatSpr=spr_submarine_flat
-ShockSpr=spr_submarine_elecB
-BurnSpr=spr_submarine
-FrozenSpr=spr_submarine
+FlatSpr=spr_burglar_flat
+ShockSpr=spr_burglar_elec
+BurnSpr=spr_burglar_burned
+FrozenSpr=spr_burglar_frozen
 
 
 lockPos=0;
@@ -69,6 +69,7 @@ tent2=-1;
 tent3=-1;
 tent4=-1;
 
+shockbuffer=800;
 
 scopespr=spr_submarine_scope
 scopeind=0
@@ -101,5 +102,10 @@ isBoss=1
 
 z=-48
 immune=0
+
+screenDamage=0;
+screenF=0;
+
+clawSpr=spr_science_b
 
 sprite_index=spr_science_b

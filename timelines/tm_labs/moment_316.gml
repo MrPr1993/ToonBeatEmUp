@@ -2,7 +2,7 @@ if boss.specialanim=0
 {
 with oControl 
 {MusicFade=0 MusicFadeAdd=1
-musicplaystart(msc_boss) PlaySound(snd_scientist1)
+musicplaystart(msc_boss4) PlaySound(snd_scientist1)
 }
 
 oControl.bossID=boss

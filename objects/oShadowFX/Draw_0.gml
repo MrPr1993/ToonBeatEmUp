@@ -1,18 +1,23 @@
 if instance_exists(oScienceScreen) with oScienceScreen
 {
 var altsprite=0;
-if anim=8 or anim=9 or anim=40 altsprite=1;
+if sprite_index=ShockSpr or sprite_index=FlatSpr or sprite_index=BurnSpr altsprite=1;
 draw_sprite(spr_science_bg,0,screenX,screenY+screenZ)
 if altsprite=0
 draw_sprite(screenSpr,screenInd,screenX,screenY+screenZ)
 else
 {
-if anim=8 ///Electrified
+if sprite_index=ShockSpr ///Electrified
 draw_sprite(spr_science_elec,image_index,screenX,screenY+screenZ)
-if anim=9 ///Electrified
+if sprite_index=FlatSpr ///Electrified
 draw_sprite(spr_science_flat,0,screenX,screenY+screenZ)
-if anim=40 ///Burned
+if sprite_index=BurnSpr ///Burned
 draw_sprite(spr_science_burned,image_index,screenX,screenY+screenZ)
+}
+
+if screenDamage>0 
+{draw_sprite_ext(spr_science_intro,screenF,screenX,screenY+screenZ,1,1,0,c_white,screenDamage)
+screenDamage-=0.1;
 }
 
 }

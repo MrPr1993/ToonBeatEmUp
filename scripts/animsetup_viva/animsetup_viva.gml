@@ -566,19 +566,20 @@ selfatk.spriteFX=spr_hitflash
 	 or AnimFrame=clamp(AnimFrame,0+16,3.9+16)
 	  or AnimFrame=clamp(AnimFrame,0+24,3.9+24)
 
-	{  damage=0.02  sprite_index=spr_viva_attack3 targetHeight=0 MoveType=0}
+	{  damage=0.02  sprite_index=spr_viva_specialpunch1 targetHeight=0 MoveType=0}
 
 	 if AnimFrame=clamp(AnimFrame,0,3.9+4)
 	 or AnimFrame=clamp(AnimFrame,0+8+4,3.9+8+4)
 	 or AnimFrame=clamp(AnimFrame,0+16+4,3.9+16+4)
 	  or AnimFrame=clamp(AnimFrame,0+24+4,3.9+24+4)
-	{damage=0.02 sprite_index=spr_viva_attack4 targetHeight=2 MoveType=0
+	{damage=0.02 sprite_index=spr_viva_specialpunch2 targetHeight=2 MoveType=0
 		//if AnimFrame=clamp(AnimFrame,0+24+4,3.9+24+4) sprite_index=spr_viva_special2b
 		}
-	image_index=AnimFrame image_speed=0 
 
 	    if AnimFrame=clamp(AnimFrame,0+30,3.9+30)
-	{damage=0.08 sprite_index=spr_viva_special2b targetHeight=2 MoveType=3 }
+	{damage=0.08 sprite_index=spr_viva_specialpunch3 targetHeight=2 MoveType=3 }
+	
+	image_index=AnimFrame image_speed=0 
 
 	 if AnimFrame=clamp(AnimFrame,1,1.9)
 	  or AnimFrame=clamp(AnimFrame,1+4,1.9+4)
@@ -604,15 +605,15 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	AnimFrame+=0.5 else AnimFrame+=0.1
 	if AnimFrame=30 {
 			selfatk.HitForce=-4  selfatk.HitForceZ=-4  PlaySoundNoStack(snd_shocked3)
-		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66,spr_elecex,0,0.25,0,1,1,c_white,1)  PlaySoundNoStack(snd_shocked2)
+		oControl.quakeFX=10 flashFX(x+40*image_xscale,y+1,z-66+15,spr_elecex,0,0.25,0,1,1,c_white,1)  PlaySoundNoStack(snd_shocked2)
 		selfatk.spriteFX=spr_elecflash selfatk.MoveType=3 
 		}
-	if sprite_index=spr_viva_special2b {selfatk.MoveType=3 selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
+	if sprite_index=spr_viva_specialpunch3 {selfatk.MoveType=3 selfatk.HitForce=-4 selfatk.HitForceZ=-4 HitForce=-4 HitForceZ=-4}
 
 	if AnimFrame>32.5 {powlock=0 hurt=0 atk=0 canmove=1 hit=0
 	if powcheck=0
 	hp-=powhp else {pow=0 powlock=0}
-	  if hp<0.01 hp=0.01
+	  if hp<=0.01 hp=0.01
 	}
 	}
 

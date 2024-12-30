@@ -15,6 +15,7 @@ and recovery=0 and anim!=6
 
 
 if (z-height)<(other.z) and (z)>(other.z-other.height)
-{other.MoveType=0 enemyhit()}
+{other.MoveType=0 enemyhit() screenDamage=0.25;	
+	}
 }
 

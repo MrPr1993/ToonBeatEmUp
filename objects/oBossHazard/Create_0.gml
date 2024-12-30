@@ -31,6 +31,8 @@ enemyPortraitIndex=0
 //
 //
 
+createSource=-1;
+
 hitID=-1
 height=64
 z=0

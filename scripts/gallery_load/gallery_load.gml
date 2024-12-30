@@ -6,46 +6,48 @@ var galno;
 galno=argument0;
 
 galleryname="BY MRPR1993"
-pictureMax=6
+pictureMax=7
 	
 if galno=1
 {
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/VivaArtwork1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/VivaArtwork2.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/VivaArtwork3.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/VivaArtwork4.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/VivaArtwork5.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/VivaArtwork6.png",0,0,1,0,0)
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/VivaRef.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/VivaArtwork1.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/VivaArtwork2.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/VivaArtwork3.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/VivaArtwork4.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/VivaArtwork5.png",0,0,1,0,0)
+picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/VivaArtwork6.png",0,0,1,0,0)
 }
 if galno=2
 {
-//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork2.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/HinaArtwork3.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/HinaArtwork4.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/HinaArtwork5.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/HinaArtwork6.png",0,0,1,0,0)
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaRef.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/HinaArtwork2.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/HinaArtwork3.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/HinaArtwork4.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/HinaArtwork5.png",0,0,1,0,0)
+picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/HinaArtwork6.png",0,0,1,0,0)
 }
 if galno=3
 {
-//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/BahatiArtwork1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/BahatiArtwork2.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/BahatiArtwork3.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/BahatiArtwork4.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/BahatiArtwork5.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/BahatiArtwork6.png",0,0,1,0,0)
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/BahatiRef.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/BahatiArtwork1.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/BahatiArtwork2.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/BahatiArtwork3.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/BahatiArtwork4.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/BahatiArtwork5.png",0,0,1,0,0)
+picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/BahatiArtwork6.png",0,0,1,0,0)
 }
 if galno=4
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/SofiaArtwork1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/SofiaArtwork2.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/SofiaArtwork3.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/SofiaArtwork4.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/SofiaArtwork5.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/SofiaArtwork6.png",0,0,1,0,0)
+picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/SofiaRef.png",0,0,1,0,0)
+picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/SofiaArtwork1.png",0,0,1,0,0)
+picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/SofiaArtwork2.png",0,0,1,0,0)
+picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/SofiaArtwork3.png",0,0,1,0,0)
+picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/SofiaArtwork4.png",0,0,1,0,0)
+picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/SofiaArtwork5.png",0,0,1,0,0)
+picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/SofiaArtwork6.png",0,0,1,0,0)
 }
 
 ////Enemy Art
@@ -152,7 +154,7 @@ picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/VivaKeyArt2.png",0,
 //picturetext[12]="???" sprite_replace(spr_galleryimg12,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 }
 if galno=16 ///Guest Art
-{pictureMax=26
+{pictureMax=28
 picturetext[1]="JAMEARTS" sprite_replace(spr_galleryimg1,"Gallery/GuestArt/GuestArt_JameArts.png",0,0,1,0,0)
 picturetext[2]="J U I C Y I N B I O" sprite_replace(spr_galleryimg2,"Gallery/GuestArt/GuestArt_J U I C Y I N B I O.png",0,0,1,0,0)
 picturetext[3]="Needlebugg" sprite_replace(spr_galleryimg3,"Gallery/GuestArt/GuestArt_Needlebugg.png",0,0,1,0,0)
@@ -174,13 +176,13 @@ picturetext[18]="BorisGrim414" sprite_replace(spr_galleryimg18,"Gallery/GuestArt
 picturetext[19]="AgentC24" sprite_replace(spr_galleryimg19,"Gallery/GuestArt/GuestArt_AgentC24.png",0,0,1,0,0)
 picturetext[20]="Leo Laifa" sprite_replace(spr_galleryimg20,"Gallery/GuestArt/GuestArt_Leo Laifa.png",0,0,1,0,0)
 picturetext[21]="Pinart" sprite_replace(spr_galleryimg21,"Gallery/GuestArt/GuestArt_Pinart.png",0,0,1,0,0)
-picturetext[22]="Radji" sprite_replace(spr_galleryimg26,"Gallery/GuestArt/GuestArt_Radji.png",0,0,1,0,0)
-picturetext[23]="Kapptastic" sprite_replace(spr_galleryimg22,"Gallery/GuestArt/GuestArt_Kapptastic.png",0,0,1,0,0)
-picturetext[24]="PolkaToonZ" sprite_replace(spr_galleryimg23,"Gallery/GuestArt/GuestArt_PolkaToonZ.png",0,0,1,0,0)
-picturetext[25]="RavernClouk Design" sprite_replace(spr_galleryimg24,"Gallery/GuestArt/GuestArt_RavernClouk Design.png",0,0,1,0,0)
-picturetext[26]="Aaron Schmit" sprite_replace(spr_galleryimg25,"Gallery/GuestArt/GuestArt_Aaron Schmit.png",0,0,1,0,0)
-picturetext[27]="???" sprite_replace(spr_galleryimg27,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
-picturetext[28]="???" sprite_replace(spr_galleryimg28,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
+picturetext[22]="PyrasTerran" sprite_replace(spr_galleryimg22,"Gallery/GuestArt/PyrasTerran.png",0,0,1,0,0)
+picturetext[23]="Kapptastic" sprite_replace(spr_galleryimg23,"Gallery/GuestArt/GuestArt_Kapptastic.png",0,0,1,0,0)
+picturetext[24]="Radji" sprite_replace(spr_galleryimg24,"Gallery/GuestArt/GuestArt_Radji.png",0,0,1,0,0)
+picturetext[25]="PolkaToonZ" sprite_replace(spr_galleryimg25,"Gallery/GuestArt/GuestArt_PolkaToonZ.png",0,0,1,0,0)
+picturetext[26]="RavernClouk Design" sprite_replace(spr_galleryimg26,"Gallery/GuestArt/GuestArt_RavernClouk Design.png",0,0,1,0,0)
+picturetext[27]="Aaron Schmit" sprite_replace(spr_galleryimg27,"Gallery/GuestArt/GuestArt_Aaron Schmit.png",0,0,1,0,0)
+picturetext[28]="TovioRogers" sprite_replace(spr_galleryimg28,"Gallery/GuestArt/GuestArt_TovioRogers.png",0,0,1,0,0)
 picturetext[29]="???" sprite_replace(spr_galleryimg29,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
 picturetext[30]="???" sprite_replace(spr_galleryimg30,"Gallery/GuestArt/HinaArtwork1.png",0,0,1,0,0)
 }
