@@ -67,3 +67,5 @@ spritepos_setup(1,24,-1,40)
 
 spritepos_setup(2,0,5,65)
 spritepos_setup(2,24,3,65)
+
+itemID=oKatana

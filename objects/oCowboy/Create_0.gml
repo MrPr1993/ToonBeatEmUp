@@ -63,3 +63,5 @@ my_pal_sprite=spr_ninjapal
 
 spritepos_setup(1,24,2,22)
 spritepos_setup(2,24,8,54)
+
+itemID=oGun

@@ -3,6 +3,9 @@
 if __view_get( e__VW.XView, 0 )>=1105+160
 {
 en3=instance_create(__view_get( e__VW.XView, 0 )-140,240,oEntryHorse) en3.rideX=1662 en3.rangeX=0 en3.xAdd=-128
+
+with en3 { spawnFall=spr_cowboy_jump riderSpr=spr_cowboy_ride spawnEnemy=oCowboy enemy_switch("BUCK") }
+
 }
 else
 timeline_position-=1

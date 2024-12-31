@@ -185,7 +185,7 @@ break;
 
   case 13: ////Cowboy
  hp=0.3 enemyID=130 idlestyle=1
- charinfo_set(12,spr_cowboy_stand,3,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,64,"BILL",
+ charinfo_set(12,spr_cowboy_stand,2,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,64,"BILL",
  "This man from the west will shuffle around and try to make you eat lead with that iron he carries with im'.")
 
 if dataPal=2
@@ -234,7 +234,7 @@ break;
 
   case 17: ////Knight
  hp=0.3 enemyID=133 idlestyle=1
- charinfo_set(12,spr_knight_stand,3,animsetup_enemy,draw_swing,spr_robotpal,0,spr_enemyface,65,"GARETH",
+ charinfo_set(12,spr_knight_stand,2,animsetup_enemy,draw_swing,spr_robotpal,0,spr_enemyface,65,"GARETH",
  "This knight wields a weapon to use against you and turn you to mince meat. Such a tin man.")
 
 if dataPal=2

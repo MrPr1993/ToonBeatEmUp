@@ -84,7 +84,10 @@ keytick=0
     stick_down_released = false;
 }	
 
+if controlNO=1 controller_p1(1)// if controlNO=2 controller_p1(2) if controlNO=3 controller_p1(3) if controlNO=4 controller_p1(4)
+
 	if controlNO=1 or controlNO=2 or controlNO=3 or controlNO=4
+if controlNO=9999 ///Disable this for now
 {
 gamepadMap = ds_list_create();	
 

@@ -279,7 +279,7 @@ frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.05)
 frame_set(3,3,0.25) if AnimFrame=4
-{
+{PlaySound(snd_quakeground)
 	var repplant=1; var repdir=point_direction(x,y,targetEnemy.x,targetEnemy.y);
 repeat(8)
 {
