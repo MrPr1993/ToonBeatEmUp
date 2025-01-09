@@ -8,8 +8,8 @@ CDtextA="ABANDON SHIP!"
 CDtextB="TAKE THE WHEEL!"
 CDtextC="TRY TO WAKE ROSY UP!"
 
-cutscenename="VIVA"
-cutsceneline="OKAY THAT WAS ROUGH."
+cutscenename=""
+cutsceneline=""
 }
 
 actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
@@ -33,54 +33,116 @@ actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
 
 newscript=function()
 {scenetime+=1;
-
+///280 for short sentences
 if scenetime=60
 {
 with oControl
-{PlaySound(snd_explosion) quakeFXTime=10
+{cutscenename="VIVA"
+cutsceneline="WELL THAT WAS SOMETHING."
 }
 }
 
-if scenetime=120
+if scenetime=340
+{
+with oControl
+{cutscenename="HINA"
+cutsceneline="WOW SHE'S HUGE."
+}
+}
+
+if scenetime=680
 {
 with oControl
 {cutscenename="VIVA"
-cutsceneline="THE PLANE'S GOING DOWN!"
+cutsceneline="UGH... BUT THAT TRUCK GOT AWAY. NOW WHAT?"
 }
 }
 
-cutscenename="HATHOR" cutsceneline= "Ungh.... We cannot BELIEVE we lost to a bunch of mortals! Atleast all my treasure is still..."
-//Pan to thieves taking off with treasure
-cutscenename="HATHOR" cutsceneline= "What do those fools think they're doing?!"
-cutscenename="VIVA" cutsceneline= "Looks like they're taking your treasure just like they took ours."
-cutscenename="BAHATI" cutsceneline= "They do seem to be on a looting spree..."
-cutscenename="HATHOR" cutsceneline= "What?!"
-//Hathor grabs Viva and shakes her
-cutscenename="HATHOR" cutsceneline= "THERE WILL BE TERRIBLE CONSEQUENCES IF OUR TREASURE FALLS INTO THE WRONG HANDS! You MUST get them back this instant! Luckily we know two people who could be of assistance..."
-cutscenename="HINA" cutsceneline= "And those would be...?"
-//choices appear
+if scenetime=1000
+{
+with oControl
+{cutscenename="BAHATI"
+cutsceneline="WE COULD ASK FOR THE CAPTAIN OF THE SHIP TO DRIVE US TO A PORT?"
+}
+}
 
-if scenetime=760
+if scenetime=1280
+{
+with oControl
+{cutscenename="VIVA"
+cutsceneline="WELL OF COURSE..."
+}
+}
+
+if scenetime=1560
+{
+with oControl
+{cutscenename="SOFIA"
+cutsceneline="ONE PROBLEM."
+}
+}
+
+if scenetime=1740
+{
+with oControl
+{cutscenename="VIVA"
+cutsceneline="AND WHAT'S THAT?"
+}
+}
+
+if scenetime=1920
+{
+specialdraw=function()
+{draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
+draw_sprite(spr_cutscene2a,0,160,192)
+draw_sprite(spr_cutscene2a2,0,160,192)
+}
+
+with oControl
+{cutscenename="SOFIA"
+cutsceneline="THRE IS NO ONE AT THE WHEEL!"
+quakeFXTime=10
+}
+}
+
+if scenetime=2200
+{
+with oControl
+{cutscenename="VIVA"
+cutsceneline="YOU CAN'T BE SERIOUS!"
+}
+}
+
+if scenetime=2480
+{y=480
+specialdraw=function()
+{y--; y=clamp(y,192,999)
+draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
+draw_sprite(spr_cutscene2a2,1,160,y)
+draw_sprite(spr_cutscene2a2,0,160,192)
+}
+
+with oControl
+{cutscenename=""
+cutsceneline=""
+}
+}
+
+if scenetime=3100
 {
 	with oControl
 	{canSkipCutscene=0
 cutscenename="VIVA"
-cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
+cutsceneline="SO... ANY OF YOU KNOW HOW TO DRIVE THIS?"
 
 timeline_position=5700
 timeline_speed=1
 }
 
-if scenetime=clamp(scenetime,760,799) scenetime=764
+if scenetime=clamp(scenetime,3060,3099) scenetime=3064
 
 }
-
-
-
-
-
 //////	
-
 
 }
 }
@@ -101,7 +163,7 @@ if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
 cutsceneline=""
 audio_stop_all()
 
-actorscreen.scenetime=761
+actorscreen.scenetime=2580
 
 global.CutsceneSkip=0
 
@@ -110,9 +172,27 @@ timeline_speed=1
 
 canSkipCutscene=0
 
-cutscenename="VIVA"
-cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
-	}
+cutscenename=""
+cutsceneline=""
 
+with actorscreen
+{scenetime=2580+240
+{y=192
+specialdraw=function()
+{y--; y=clamp(y,192,999)
+draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
+draw_sprite(spr_cutscene2a2,1,160,y)
+draw_sprite(spr_cutscene2a2,0,160,192)
+}
+
+with oControl
+{
+cutscenename="VIVA"
+cutsceneline="SO... ANY OF YOU KNOW HOW TO DRIVE THIS?"
+}
+}
+}
+
+}
 
 
