@@ -32,7 +32,8 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene1a anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_ending1a anim=9999 isDepth=0 depth=-3000 shadow=-1;
+	x=0; y=0;
 
 specialdraw=function()
 {
@@ -41,17 +42,18 @@ draw_sprite(spr_ending1b,0,0,0)
 
 draw_sprite_ext(sprite_index,image_index,round(x),round(y),1,1,0,c_white,1)
 
-if scenetime<60
+if scenetime<500
+draw_sprite(spr_ending1a,image_index,0,0)
+
+if scenetime<120
 draw_sprite_ext(spr_whitecol,0,0,0,88,88,0,c_black,1)
 }
-
-
 
 newscript=function()
 {scenetime+=1;
 
 if scenetime=120
-{image_index=1
+{image_index=0
 with oControl
 {cutscenename="VIVA"
 cutsceneline="...WHERE IS IT?"
@@ -60,7 +62,7 @@ PlaySound(snd_hitground) quakeFXTime=10
 }
 
 if scenetime=240
-{image_index=2
+{image_index=1
 with oControl
 {cutscenename="VIVA"
 cutsceneline="WHERE IS IT?!"
@@ -87,7 +89,7 @@ cutsceneline="MY DIAMOND!"
 
 if scenetime=500
 {sprite_index=spr_ending1c
-vspeed=0.01
+vspeed=-0.05
 with oControl
 {cutscenename="SOFIA"
 cutsceneline="WE GOT OUR STUFF BACK!"
@@ -110,16 +112,8 @@ cutsceneline="SO MUCH WORK... BUT IT WAS WORTH IT!"
 }
 }
 
-if scenetime=1260
-{vspeed=0 y=0
-with oControl
-{cutscenename="HINA"
-cutsceneline="SO MUCH WORK... BUT IT WAS WORTH IT!"
-}
-}
-
-if scenetime=1600
-{vspeed=0 y=0
+if scenetime=1200
+{vspeed=0;
 with oControl
 {cutscenename=""
 cutsceneline=""
@@ -222,8 +216,16 @@ cutsceneline="Well how about it? Ready to get the show back on?"
 }
 }
 
+if scenetime=6300
+{vspeed=0 y=0
+with oControl
+{cutscenename="DIVAS"
+cutsceneline="LET'S PARTY!"
+}
+}
+
 if scenetime=6600
-{
+{CutsceneStage=rm_creditscene
 with oControl
 stageEndFX=1
 }

@@ -7,7 +7,8 @@ CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
 CDtextA="GET THE PARACHUTES!"
 CDtextB="JUMP OFF THE PLANE!"
 CDtextC="USE THE HARPY!"
-
+cutscenename=""
+cutsceneline=""
 }
 
 
@@ -29,16 +30,17 @@ __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(0,0,-1,oCameoChar) with actorscreen
 {sprite_index=spr_blimpscene anim=9999 isDepth=0 depth=-3000 shadow=-1;
-image_index=1 y=-96; vspeed=2;
+image_index=1 y=-96; vspeed=2; x=160;
 newscript=function()
-{
-if scenetime=0 if vspeed>=160 {vspeed=0;
-scenetime=10; PlaySound(snd_explosion) oControl.quakeFXTime=60;
+{image_index+=0.25 if image_index>=4 image_index=1
+if scenetime=0 if y>=130 {vspeed=0;
+scenetime=20;  PlaySound(snd_explosion) oControl.quakeFXTime=60;
 
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
-{image_alpha=0 fadeSpd=0.01 isfading=1
-sprite_index=spr_whitecol
+{image_alpha=0 fadeSpd=0.01 isfading=1 image_xscale=99 image_yscale=99
+sprite_index=spr_whitecol depth=-4000
 }
+
 }
 
 if scenetime>=10 scenetime+=1;
@@ -47,19 +49,12 @@ if scenetime=320 hspeed=0
 }
 
 
-if scenetime=360
-{
-with oControl
-stageEndFX=1
-}
 
 //////	
 
 }
 
-	
-timeline_position=10
-timeline_speed=0
+
 
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )

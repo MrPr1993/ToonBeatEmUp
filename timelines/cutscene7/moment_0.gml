@@ -12,17 +12,7 @@ cutscenename=""
 cutsceneline=""
 }
 
-actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
-{sprite_index=spr_viva_cutscene image_index=0 anim=9999}
-actor2=instance_create_depth(50,144,-1,oCameoChar) with actor2
-{sprite_index=spr_hina_point image_index=0 anim=9999}
-actor3=instance_create_depth(46,160,-1,oCameoChar) with actor3
-{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
-actor4=instance_create_depth(76,188,-1,oCameoChar) with actor4
-{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
-actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
-oCameoChar.x+=160;
+
 
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
@@ -30,68 +20,37 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene2a anim=9999 isDepth=0 depth=-3000
+{sprite_index=spr_cutscene2a anim=9999 isDepth=0 depth=-3000 shadow=-1;
+
+
 
 newscript=function()
 {scenetime+=1;
 
-if scenetime=60
+var tilecheck=layer_get_id("BTG1")
+layer_x(tilecheck,round(-scenetime*0.1))
+
+if scenetime=1
 {
-with oControl
-{PlaySound(snd_explosion) quakeFXTime=10
-}
+var tilecheck=layer_get_id("BTG0")
+layer_hspeed(tilecheck,-2)
+
+actor1=instance_create_depth(-340,170,-1,oCameoChar) with actor1
+{sprite_index=spr_viva_run image_speed=0.25 image_index=0 anim=9999 hspeed=2}
+actor2=instance_create_depth(-340,144,-1,oCameoChar) with actor2
+{sprite_index=spr_hina_run image_speed=0.25  image_index=0 anim=9999 hspeed=2}
+actor3=instance_create_depth(-340,160,-1,oCameoChar) with actor3
+{sprite_index=spr_bahati_run image_speed=0.25  image_index=1 anim=9999 hspeed=2}
+actor4=instance_create_depth(-340,188,-1,oCameoChar) with actor4
+{sprite_index=spr_sofia_run image_speed=0.25  image_index=0 anim=9999 hspeed=2}
+
 }
 
-if scenetime=120
+if scenetime=340
 {
-with oControl
-{cutscenename="VIVA"
-cutsceneline="THE PLANE'S GOING DOWN!"
+with oCameoChar hspeed=0;
 }
-}
-
-cutscenename="SOFIA" cutsceneline= "That was gruesome..."
-cutscenename="HINA" cutsceneline= "Wonder what was in that stuff she was making?"
-cutscenename="VIVA" cutsceneline= "Nevermind that, look! The zeppelin's taking off again! After it!"
-cutscenename="BAHATI" cutsceneline="The chains! Grab on!"
-cutscenename="VIVA" cutsceneline= "Nowhere to run this time! Let's finish this and get our show back on!"
-////Divas run to zeppelin
-
-
-////Bad ending
-//-All for Nothing-
-cutscenename="VIVA" cutsceneline= "Huff... Huff... Had enough... Freakshow...?"
-cutscenename="FRAN" cutsceneline= "Blegh... It doesn't matter if I lose... You're too late now..."
-cutscenename="VIVA" cutsceneline= "What're you... Wait..."
-cutscenename="BAHATI" cutsceneline= "THE BLIIIIIMP!!!!"
-cutscenename="SOFIA" cutsceneline= "That scientist took up all our time..."
-cutscenename="BAHATI" cutsceneline= "There's no way we can catch that thing now..."
-cutscenename="HINA" cutsceneline= "Our treasure... All gone..."
-cutscenename="VIVA" cutsceneline= "All that nonsense... All those bruises... And nothing to show for it..."
-cutscenename="BAHATI" cutsceneline= "Pack it in, girls... Nothing left to do but head home..." 
-///
-
-if scenetime=760
-{
-	with oControl
-	{canSkipCutscene=0
-cutscenename="VIVA"
-cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
-
-timeline_position=5700
-timeline_speed=1
-}
-
-if scenetime=clamp(scenetime,760,799) scenetime=764
-
-}
-
-
-
-
-
-//////	
-
+/////	
 
 }
 }
