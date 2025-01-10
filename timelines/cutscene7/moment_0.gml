@@ -63,7 +63,7 @@ cutscenename="VIVA" cutsceneline= "Nowhere to run this time! Let's finish this a
 cutscenename="VIVA" cutsceneline= "Huff... Huff... Had enough... Freakshow...?"
 cutscenename="FRAN" cutsceneline= "Blegh... It doesn't matter if I lose... You're too late now..."
 cutscenename="VIVA" cutsceneline= "What're you... Wait..."
-cutscenename="BLIMP" cutsceneline= "THE BLIIIIIMP!!!!"
+cutscenename="BAHATI" cutsceneline= "THE BLIIIIIMP!!!!"
 cutscenename="SOFIA" cutsceneline= "That scientist took up all our time..."
 cutscenename="BAHATI" cutsceneline= "There's no way we can catch that thing now..."
 cutscenename="HINA" cutsceneline= "Our treasure... All gone..."

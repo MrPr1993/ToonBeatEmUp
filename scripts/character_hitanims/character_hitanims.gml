@@ -789,8 +789,10 @@ if ground {
 
 if anim=591200 ////SPICY!!!!!!!! Eaten spicy item
 {recovery=2 hurt=0
-if AnimFrame=0 {image_index=0 ground=0 zSpeed=-4 specialtimes[8]=choose(-4,4)}
+if AnimFrame=0 {image_index=0 ground=0 zSpeed=-4 specialtimes[7]=0; specialtimes[8]=choose(-4,4)}
 AnimFrame+=1;
+
+
 
 if AnimFrame>=60
 {sprite_index=spr_viva_run image_index+=0.5
@@ -811,7 +813,7 @@ oControl.quakeFXTime=2
 if image_index=2 or image_index=4 or image_index=6 dust_make(x,y,z-4,0,0,0)
 if image_index>=6 image_index=0
 }
-
+else specialtimes[7]+=0.01
 
 if AnimFrame>= 320 {canmove=1 hurt=0 }
 }

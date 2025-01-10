@@ -3,6 +3,14 @@ function draw_character() {
 	if specialFX=0
 	pal_swap_set(my_pal_sprite,current_pal,false);
 
+///Body
+if anim=591200
+{
+var spicyshade=specialtimes[7];
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),0.75*spicyshade)
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),-1.0*spicyshade)	
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),-1.0*spicyshade)	
+}
 
 	//draw_sprite_part_ext(sprite_index,image_index,0,0,sprite_width*image_xscale,sprite_height,round(x+((sprite_xoffset+floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale),
 //	round(y+(floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY),image_xscale,image_yscale,image_blend,image_alpha)

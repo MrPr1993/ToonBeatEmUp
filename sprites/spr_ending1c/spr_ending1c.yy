@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Other Scenes",
-    "path":"folders/1c - Cutscenes/Other Scenes.yy",
+    "name":"Ending1",
+    "path":"folders/1c - Cutscenes/Cutscene8Final/Ending1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

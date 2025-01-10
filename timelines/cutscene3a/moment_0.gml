@@ -43,7 +43,7 @@ actorC2=instance_create_depth(215+140,170+32,-1,oCameoChar) with actorC2
 {sprite_index=spr_cowboy_move image_index=9 anim=99999 image_xscale=-1}
 
 actorscreen=instance_create_depth(0,0,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene2c0 anim=9999 isDepth=0 depth=-3000 image_speed=0.1 sceneno=0 y=-24 shadow=-1
+{sprite_index=spr_cutscene3a0 anim=9999 isDepth=0 depth=-3000 image_speed=0.1 sceneno=0 y=-24 shadow=-1
 
 with oControl
 {cutscenename="HATHOR" cutsceneline= "Ungh.... I cannot BELIEVE I lost to a bunch of mortals!"

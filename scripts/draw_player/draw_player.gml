@@ -35,7 +35,7 @@ shader_reset()
 
 draw_set_blend_mode(bm_normal);
 
-///Body
+
 draw_character()
 
 

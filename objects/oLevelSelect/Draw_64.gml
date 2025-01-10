@@ -213,7 +213,7 @@ draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 2"));
 if level=93 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 3"));
 if level=94 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 4"));
 if level=95 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=96 draw_set_color(c_yellow) else draw_set_color(c_gray)

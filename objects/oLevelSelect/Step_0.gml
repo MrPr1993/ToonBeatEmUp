@@ -99,6 +99,12 @@ if level=68 roomGo=rm_cutscene8
 if level=69 roomGo=rm_intermission1
 if level=70 roomGo=rm_intermission2
 
+if level=91 roomGo=rm_ending1
+if level=92 roomGo=rm_ending2
+if level=93 roomGo=rm_ending3
+if level=94 roomGo=rm_ending4
+
+
 if level=100 roomGo=rm_secret
 
 
