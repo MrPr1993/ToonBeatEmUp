@@ -1,4 +1,6 @@
 //background_
+if cutscenePlaying=0
+{
 instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
@@ -235,5 +237,6 @@ cutscenename="VIVA"
 cutsceneline="OH! UH..."
 	}
 
+cutscenePlaying=1
 
-
+}

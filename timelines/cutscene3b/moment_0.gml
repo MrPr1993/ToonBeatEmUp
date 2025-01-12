@@ -1,4 +1,6 @@
 //background_
+if cutscenePlaying=0
+{
 instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
@@ -126,6 +128,6 @@ canSkipCutscene=0
 cutscenename="VIVA"
 cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
 	}
-
-
+cutscenePlaying=1
+}
 

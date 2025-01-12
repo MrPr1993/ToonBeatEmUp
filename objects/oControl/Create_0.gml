@@ -73,6 +73,7 @@ specialcheck3=0
 specialcheck4=0
 specialcheck5=0
 
+cutscenePlaying=0;
 cutscenedecision=0
 cutsceneDecmode=0
 CDtextT="LADY WOLF IS GETTING AWAY!\nWHAT WILL YOU DO?"

@@ -1,6 +1,8 @@
 //background_
 instance_create_depth(-999,-999,-1,oTextBox)
 
+if cutscenePlaying=0
+{
 with oControl
 {
 CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
@@ -35,21 +37,47 @@ if scenetime=1
 var tilecheck=layer_get_id("BTG0")
 layer_hspeed(tilecheck,-2)
 
-actor1=instance_create_depth(-340,170,-1,oCameoChar) with actor1
+actor1=instance_create_depth(-160,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_run image_speed=0.25 image_index=0 anim=9999 hspeed=2}
-actor2=instance_create_depth(-340,144,-1,oCameoChar) with actor2
+actor2=instance_create_depth(-160,144,-1,oCameoChar) with actor2
 {sprite_index=spr_hina_run image_speed=0.25  image_index=0 anim=9999 hspeed=2}
-actor3=instance_create_depth(-340,160,-1,oCameoChar) with actor3
+actor3=instance_create_depth(-160,160,-1,oCameoChar) with actor3
 {sprite_index=spr_bahati_run image_speed=0.25  image_index=1 anim=9999 hspeed=2}
-actor4=instance_create_depth(-340,188,-1,oCameoChar) with actor4
+actor4=instance_create_depth(-160,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_run image_speed=0.25  image_index=0 anim=9999 hspeed=2}
 
 }
 
-if scenetime=340
+if scenetime=120
 {
 with oCameoChar hspeed=0;
 }
+
+if scenetime>=160
+{
+with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
+
+with actor2 { sprite_index=spr_bahati_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
+}
+if scenetime>=200
+{
+with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
+
+with actor3 {sprite_index=spr_hina_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
+}
+if scenetime>=240
+{
+with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
+
+with actor4 {sprite_index=spr_sofia_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
+}
+if scenetime>=280
+{
+with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
+
+with actor1 {sprite_index=spr_viva_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
+}
+
 /////	
 
 }
@@ -83,6 +111,7 @@ canSkipCutscene=0
 cutscenename="VIVA"
 cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
 	}
-
+cutscenePlaying=1
+}
 
 

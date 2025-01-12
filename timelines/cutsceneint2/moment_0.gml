@@ -1,4 +1,6 @@
 //background_
+if cutscenePlaying=0
+{
 instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
@@ -200,4 +202,5 @@ canSkipCutscene=2
 
 
 //-Intermission 2-
-
+cutscenePlaying=1
+}

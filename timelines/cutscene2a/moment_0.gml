@@ -1,4 +1,6 @@
 //background_
+if cutscenePlaying=0
+{
 instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
@@ -195,4 +197,5 @@ cutsceneline="SO... ANY OF YOU KNOW HOW TO DRIVE THIS?"
 
 }
 
-
+cutscenePlaying=1
+}

@@ -1,4 +1,6 @@
 //background_
+if cutscenePlaying=0
+{
 instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
@@ -262,3 +264,5 @@ cutscenename="HATHOR" cutsceneline= "What?!"
 cutscenename="HATHOR" cutsceneline= "THERE WILL BE TERRIBLE CONSEQUENCES IF OUR TREASURE FALLS INTO THE WRONG HANDS! You MUST get them back this instant! Luckily we know two people who could be of assistance..."
 cutscenename="HINA" cutsceneline= "And those would be...?"
 //choices appear
+cutscenePlaying=1
+}

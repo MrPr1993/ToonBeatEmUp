@@ -1,4 +1,6 @@
 //background_
+if cutscenePlaying=0
+{
 instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
@@ -308,3 +310,6 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 canSkipCutscene=2
+cutscenePlaying=1
+
+}
