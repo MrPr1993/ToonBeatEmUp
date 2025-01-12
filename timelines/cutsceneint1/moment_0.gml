@@ -15,15 +15,15 @@ cutscenename="MR.BURG" cutsceneline= "Boss! BOSS! There's 4 crazy dames followin
 
 
 actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
-{sprite_index=spr_viva_cutscene image_index=0 anim=9999 shadow=-1}
+{sprite_index=mask_none image_index=0 anim=9999 shadow=-1}
 actor2=instance_create_depth(50,144,-1,oCameoChar) with actor2
-{sprite_index=spr_hina_point image_index=0 anim=9999 shadow=-1}
+{sprite_index=mask_none image_index=0 anim=9999 shadow=-1}
 actor3=instance_create_depth(46,160,-1,oCameoChar) with actor3
-{sprite_index=spr_bahati_cutscene image_index=1 anim=9999 shadow=-1}
+{sprite_index=mask_none image_index=1 anim=9999 shadow=-1}
 actor4=instance_create_depth(76,188,-1,oCameoChar) with actor4
-{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999 shadow=-1}
+{sprite_index=mask_none image_index=0 anim=9999 shadow=-1}
 actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1 shadow=-1}
+{sprite_index=mask_none anim=9999 image_xscale=-1 shadow=-1}
 oCameoChar.x+=160;
 
 SceneX=0
