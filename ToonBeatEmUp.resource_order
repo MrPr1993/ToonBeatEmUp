@@ -2023,6 +2023,7 @@
     {"name":"spr_cutscene5a2","order":5,"path":"sprites/spr_cutscene5a2/spr_cutscene5a2.yy",},
     {"name":"spr_cutscene5a3","order":6,"path":"sprites/spr_cutscene5a3/spr_cutscene5a3.yy",},
     {"name":"spr_cutscene5a4","order":8,"path":"sprites/spr_cutscene5a4/spr_cutscene5a4.yy",},
+    {"name":"spr_cutscene5a5","order":9,"path":"sprites/spr_cutscene5a5/spr_cutscene5a5.yy",},
     {"name":"spr_cutscene5b","order":1,"path":"sprites/spr_cutscene5b/spr_cutscene5b.yy",},
     {"name":"spr_cutscene5c","order":1,"path":"sprites/spr_cutscene5c/spr_cutscene5c.yy",},
     {"name":"spr_cutscene5c1","order":3,"path":"sprites/spr_cutscene5c1/spr_cutscene5c1.yy",},

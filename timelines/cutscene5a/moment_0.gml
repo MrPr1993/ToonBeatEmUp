@@ -33,13 +33,29 @@ actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 actor5=instance_create_depth(11215,170,-1,oCameoChar) with actor5
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
+actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+
+actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+
+actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+
+if global.CutsceneSkip=0 with oControl canSkipCutscene=1
+
 with oControl
 {
 cutscenename="PRINCE" cutsceneline= "Hahahahahaha! Congratulations on a fight well won, my dear Viva and friends!"
 }
 
 newscript=function()
-{scenetime+=1;
+{
+scenetime+=1;
+
+
+if scenetime<=2
+if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
 if scenetime<340 {y=lerp(y,240,0.1)}
 if scenetime=340
@@ -129,7 +145,7 @@ with oControl
 
 if scenetime=clamp(scenetime,3140,3440) {image_index+=0.5; if image_index>=6 image_index=4}
 
-if scenetime=3640
+if scenetime=3440
 {
 specialdraw=-1;
 
@@ -139,17 +155,17 @@ with oControl
 cutscenename="VIVA" cutsceneline= "Oh yeah... I can... about that..."}
 }
 
-if scenetime=3940
+if scenetime=3840
 {
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
-{image_alpha=0 fadeSpd=0.01 isfading=1 image_xscale=99 image_yscale=99
+{image_alpha=0 fadeSpd=0.02 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
 }
 
 if scenetime=clamp(scenetime,3960,4040) if flashscreen.image_alpha>=2
-{
-with flashscreen {fadeSpd=0 image_alpha=1}
+{x=160; y=320; sprite_index=spr_cutscene5a5; image_index=0;
+with flashscreen {fadeSpd=0 image_alpha=0}
 scenetime=4050
 
 with oControl
@@ -157,7 +173,88 @@ with oControl
 cutscenename="PRINCE" cutsceneline= "Sweet scallops this is terrible! That diamond is enchanted! Terrible things could happen with the wrong hands!"}
 } else scenetime=3970;
 
+if scenetime=clamp(scenetime,3970,3390)
+{y=lerp(y,192,0.1)
+}
 
+if scenetime=4400
+{image_index=1;
+with oControl
+{
+cutscenename="HINA" cutsceneline= "Does he always do that?"}
+}
+
+if scenetime=4600
+{
+with oControl
+{
+cutscenename="VIVA" cutsceneline= "Yeah, most of the time. Prince, do you have any way to help us?"}
+}
+
+if scenetime=4900
+{specialcheck[0]=321;
+with oControl
+{
+cutscenename="PRINCE" cutsceneline= "Of course! Quickly! We must pursue those fiends posthaste! My servants and I will send you on your way!"}
+
+specialdraw=function()
+{
+draw_self();
+
+draw_sprite_ext(spr_whitecol,0,specialcheck[0],0,21,20,0,c_black,1)
+}
+
+}
+
+if scenetime=clamp(scenetime,5500,5600)
+{scenetime=5540
+specialcheck[0]-=8;
+if specialcheck[0]<=0 {scenetime=6000-60 with oControl canSkipCutscene=0}
+}
+
+if scenetime=6000
+{
+sprite_index=mask_none
+
+with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
+with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
+with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
+with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
+with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
+
+with actor6 {x=400}
+with actor7 {x=520 }
+with actor8 {x=640}
+
+with oControl
+{
+cutscenename="PRINCE" cutsceneline= "Alright, cousin. You have a choice between these rides. Which one will you take?"}
+}
+
+if scenetime=6120
+{
+with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
+with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
+with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
+with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
+with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
+}
+
+if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
+
+if scenetime=clamp(scenetime,6120,6300)
+{
+with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
+}
+
+if scenetime=6500
+{
+with oControl
+{
+timeline_position=6000-60;
+timeline_speed=1
+}
+}
 
 //cutscenename="SOFIA" cutsceneline= "Viva you never told us this royal fishman hunk was your cousin! What was up with you?"
 //cutscenename="VIVA" cutsceneline= "Simple, I find him obnoxious."
@@ -199,30 +296,13 @@ if scenetime=clamp(scenetime,760,799) scenetime=764
 timeline_position=10
 timeline_speed=0
 
+
+
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
-
-	
-if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
-	cutscenename=""
-cutsceneline=""
-audio_stop_all()
-
-actorscreen.scenetime=761
-
-global.CutsceneSkip=0
-
-timeline_position=5700
-timeline_speed=1
-
-canSkipCutscene=0
-
-cutscenename="VIVA"
-cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
-	}
 
 cutscenePlaying=1
 }
