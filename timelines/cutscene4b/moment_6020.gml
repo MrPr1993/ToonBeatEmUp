@@ -8,12 +8,12 @@ if cutsceneDecmode=0
 with oControl {
 
 
-//-The Stars-
-cutscenename="CIRCE" cutsceneline= "I see... Your destiny lies in a cornfield, where you will take to the stars..."
-cutscenename="SOFIA" cutsceneline= "The cornfield? But that's such a long walk!"
-cutscenename="BAHATI" cutsceneline= "It's our only lead Sofi. You don't want your treasure to be lost forever do you?"
-cutscenename="SOFIA" cutsceneline= "Ughhhhhh.... Fine, let's go..."
-//Flash Trickstar — 09/07/2024 10:44 PM
+//-Cornfields-
+cutscenename="KIANDRA" cutsceneline= "Well it seems like there's some commotion going on around this cornfield."
+cutscenename="SOFIA" cutsceneline= "That's quite a walk..."
+cutscenename="KIANDRA" cutsceneline= "Well, that's not my problem! Now..."
+//Zombies grab the divas and chuck them out
+cutscenename="KIANDRA" cutsceneline= "GET LOST!!!"
 
 
 //The "PBBBBBBBBTH" is meant to imply her blowing a raspberry at them if that wasn't clear.
@@ -33,14 +33,12 @@ if scenetime=3200 oControl.stageEndFX=1
 if cutsceneDecmode=1
 {CutsceneStage=rm_stagemermaid
 with oControl {
-//-The Crown-
-cutscenename="CIRCE" cutsceneline= "Hmmm... It seems you must meet with a prince beneath the ocean to get closer to your goal..."
-cutscenename="VIVA" cutsceneline= "'Prince'? Oh boy.... Well what do we do about getting there?"
-cutscenename="CIRCE" cutsceneline= "Drink this, and you'll find underwater travel to be a breeze."
-//Some dubious drinks later...
-cutscenename="VIVA" cutsceneline= "Hey, this is pretty good!"
-cutscenename="SOFIA" cutsceneline= "Speak for yourself..."
-cutscenename="HINA" cutsceneline= "Bleghhhhhh..."
+//-Underwater-
+cutscenename="KIANDRA" cutsceneline= "Supposedly a prince lives in the nearby waters... But you'll need this potion to tread the seafloor..."
+cutscenename="VIVA" cutsceneline= "Ohh don't mind if I do!"
+cutscenename="SOFIA" cutsceneline= "Are your tastebuds warped or something?!"
+cutscenename="HINA" cutsceneline= "It smells awful..."
+//Flash Trickstar — 09/07/2024 11:16 PM
 
 	}
 with actorscreen newscript=function()
@@ -57,12 +55,12 @@ if cutsceneDecmode=2
 {CutsceneStage=rm_stagedesert
 with oControl {
 //-Slap Her-
-//POW
-//-The Pyramid-
-cutscenename="CIRCE" cutsceneline= "Ahhh here we are... You must seek an ancient tomb in the desert... There you will find some assistance..."
-cutscenename="HINA" cutsceneline= "But how would we get there?"
-cutscenename="CIRCE" cutsceneline= "Follow this line of sandstone... It will take you from the shores to the dunes!"
-
+//-The Desert-
+cutscenename="KIANDRA" cutsceneline= "Looks like your path leads into the desert..."
+cutscenename="BAHATI" cutsceneline= "Alright but... Where exactly?"
+cutscenename="KIANDRA" cutsceneline= "I don't know, find out yourself! In fact... Just to get you out of here faster..."
+//POOF!
+//How's that?
 
 }
 with actorscreen newscript=function()

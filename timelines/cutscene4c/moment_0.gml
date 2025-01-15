@@ -10,55 +10,225 @@ CDtextA="GET THE PARACHUTES!"
 CDtextB="JUMP OFF THE PLANE!"
 CDtextC="USE THE HARPY!"
 
-cutscenename=""
-cutsceneline=""
+cutscenename="CIRCE" cutsceneline= "How could you?! First you pick on my sweet Larry and NOW you attack me?! What's wrong with you?!"
 }
 
-actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
-{sprite_index=spr_viva_cutscene image_index=0 anim=9999}
-actor2=instance_create_depth(50,144,-1,oCameoChar) with actor2
-{sprite_index=spr_hina_point image_index=0 anim=9999}
-actor3=instance_create_depth(46,160,-1,oCameoChar) with actor3
-{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
-actor4=instance_create_depth(76,188,-1,oCameoChar) with actor4
-{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
-actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
-oCameoChar.x+=160;
 
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
-actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene2a anim=9999 isDepth=0 depth=-3000
+actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
+{sprite_index=spr_cutscene4c0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+
+actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
+{sprite_index=spr_viva_cutscene image_index=0 anim=9999}
+actor2=instance_create_depth(1150,144,-1,oCameoChar) with actor2
+{sprite_index=spr_hina_point image_index=0 anim=9999}
+actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
+{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
+actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
+{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
+actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
+{sprite_index=spr_seaweed_stand image_index=10 anim=9999 image_xscale=-1
+	}
+
+actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+
+actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+
+actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+
+if global.CutsceneSkip=0 with oControl canSkipCutscene=1
+
+with oControl
+{
+
+}
 
 newscript=function()
-{scenetime+=1;
-
-if scenetime=60
 {
-with oControl
-{PlaySound(snd_explosion) quakeFXTime=10
-}
-}
+scenetime+=1;
 
+
+if scenetime<=2
+if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
+
+
+
+
+
+if scenetime<80 {y--;}
 if scenetime=120
 {
+with actor1 {x=64}
+with actor2 {x=64}
+with actor3 {x=64}
+with actor4 {x=64}
+with actor5 {x=320-64}
+	
+sprite_index=mask_none
+with oControl
+{
+cutscenename="BAHATI" cutsceneline="Sorry. We HAVE been too gung-ho on the whole 'fight first, ask questions later' approach..."
+} x=0
+y=0 vspeed=-0.2
+}
+
+if scenetime=640
+{sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
+
+	
 with oControl
 {cutscenename="VIVA"
-cutsceneline="THE PLANE'S GOING DOWN!"
+cutsceneline="Look, we've had some VERY valuable personal treasures stolen from us, and we need to get them back. Do you know where they are?"
+}
+}
+if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
+
+
+if scenetime=1060
+{with oControl
+{
+cutsceneline= "My boss ain't gonna be happy to see all this damage!"
 }
 }
 
-cutscenename="SOFIA" cutsceneline= "Where'd those thieves go, witch?!"
-cutscenename="KIANDRA" cutsceneline= "Grahhhhh!! I am no witch, I am a DRUID! And how DARE you disturb my home! I was enjoying peace and quiet with my undead, flora and fauna until you showed up!"
-cutscenename="BAHATI" cutsceneline= "We're very sorry, miss Druid... But we need to know where the thieves who took our treasure ran off to. Please help us."
-cutscenename="KIANDRA" cutsceneline= "Grr... Well if it gets you out of here faster, then so be it... Let us consult my cauldron for your paths..."
+if scenetime=1460
+{	
+with oControl
+{image_index=1
+cutscenename="BAHATI" cutsceneline= "Your boss?"
+}
+hspeed=-2 
+}
+
+if scenetime=1660
+{	
+with oControl
+{image_index=1
+cutscenename="VIVA" cutsceneline= "And who's that? Speak up, birdbrain, now!"}
+hspeed=-2 
+}
+
+if scenetime=2040
+{
+with oControl
+{
+cutscenename="CIRCE" cutsceneline= "Very well... I suppose I'll let this incident go since Larry attacked you first. Larry, fetch my crystal ball would you, sweetie?"
+}
+}
+
+if scenetime=2440
+{
+with oControl
+{
+cutscenename="LARRY" cutsceneline= "..."
+}
+}
+
+if scenetime=2840
+{
+with oControl
+{
+cutscenename="CIRCE" cutsceneline= "Oh, come now, mommy will take you to a shop to get your favorite treat, 'kay?"
+}
+}
+
+if scenetime=3100
+{
+with oControl
+{
+cutscenename="HINA" cutsceneline= "Ya know? That octopus looked adorable."
+}
+}
+
+if scenetime=3300
+{
+with oControl
+{
+cutscenename="CIRCE" cutsceneline= "Yes. They used to be a sailor."
+}
+}
+
+if scenetime=3400
+{
+with oControl
+{
+cutscenename="VIVA" cutsceneline= "What."
+}
+}
+
+if scenetime=3500
+{
+with oControl
+{
+cutscenename="CIRCE" cutsceneline= "Oh, here we are, thank you dear!"
+}
+}
+
+if scenetime=3800 scenetime=6000
+
+if scenetime=6000
+{
+sprite_index=mask_none
+
+with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
+with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
+with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
+with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
+with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
+
+with actor6 {x=400}
+with actor7 {x=520 }
+with actor8 {x=640}
+
+with oControl
+{
+cutscenename="CIRCE" cutsceneline= "Let's see what you can see in this crystal ball!"}
+}
+
+if scenetime=6120
+{
+with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
+with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
+with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
+with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
+with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
+}
+
+if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
+
+if scenetime=clamp(scenetime,6120,6300)
+{
+with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
+}
+
+if scenetime=6500
+{
+with oControl
+{
+timeline_position=6000-60;
+timeline_speed=1
+}
+}
+
+//cutscenename="SOFIA" cutsceneline= "Viva you never told us this royal fishman hunk was your cousin! What was up with you?"
+//cutscenename="VIVA" cutsceneline= "Simple, I find him obnoxious."
+//cutscenename="PRINCE" cutsceneline= "I'm terribly sorry that my people attacked you so suddenly, but they needed to test you! Although... What brings you here anyway? And how is that diamond I gave you, Viva?"
+//cutscenename="VIVA" cutsceneline= "Err... I can answer both of those questions at once... Thieves are on the run with it and these girls' treasures as well..."
+//cutscenename="PRINCE" cutsceneline= "WHAT?! OH SWEET SCALLOPS THIS IS TERRIBLE! That diamond is enchanted! Terrible things could happen with it in the wrong hands! Quickly! We must pursue those fiends posthaste! My servants and I will send you on your way!" 
+
+//MrPr1993 — 09/08/2024 11:21 PM
+///Ooh ooh make Viva's reply about the diamond with a very nervous tone 
+//Flash Trickstar — 09/08/2024 11:31 PM
 
 
-if scenetime=760
+if scenetime=57600
 {
 	with oControl
 	{canSkipCutscene=0
@@ -87,31 +257,16 @@ if scenetime=clamp(scenetime,760,799) scenetime=764
 timeline_position=10
 timeline_speed=0
 
+
+
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 
-	
-if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
-	cutscenename=""
-cutsceneline=""
-audio_stop_all()
-
-actorscreen.scenetime=761
-
-global.CutsceneSkip=0
-
-timeline_position=5700
-timeline_speed=1
-
-canSkipCutscene=0
-
-cutscenename="VIVA"
-cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
-	}
-
-
 cutscenePlaying=1
 }
+
+
+

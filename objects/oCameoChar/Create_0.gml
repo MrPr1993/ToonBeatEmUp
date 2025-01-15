@@ -29,3 +29,5 @@ specialdraw=-1;
 
 sceneno=0;
 scenetime=0;
+
+colorshade_setup()
