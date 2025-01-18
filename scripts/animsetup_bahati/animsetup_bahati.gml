@@ -14,6 +14,7 @@ function animsetup_bahati() {
 	DamageVoice3=snd_bahati8
 
 	ReturnVoice=snd_bahati6
+	ScreamSnd=snd_BahatiScream
 
 	commandChargeColor=c_yellow
 

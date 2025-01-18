@@ -13,6 +13,7 @@ function animsetup_sofia() {
 	DamageVoice1=snd_sofia10
 	DamageVoice2=snd_sofia9
 	DamageVoice3=snd_sofia8
+	ScreamSnd=snd_SofiaScream
 
 	commandChargeColor=c_green//00bd5b
 

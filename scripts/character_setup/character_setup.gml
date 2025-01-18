@@ -177,6 +177,7 @@ stagePose=1
 	armX=0
 	armY=0
 	////Weapon effects and sounds
+	ScreamSnd=snd_VivaScream
 	DeathCry=-1//snd_deathcry2
 	DeathCryOnce=0
 	HitGround=snd_hitground

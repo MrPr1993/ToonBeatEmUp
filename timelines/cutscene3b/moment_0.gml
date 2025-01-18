@@ -10,7 +10,7 @@ CDtextA="GET THE PARACHUTES!"
 CDtextB="JUMP OFF THE PLANE!"
 CDtextC="USE THE HARPY!"
 
-cutscenename="DIXIE" cutsceneline= "WHAT'S THE BIG IDEA?!"
+cutscenename="VIVA" cutsceneline="Huh?! Where'd that haughty ghost get off to?"
 
 }
 
@@ -75,7 +75,7 @@ with actor5 {x=320-64}
 sprite_index=mask_none scenetime=340
 with oControl
 {
-cutscenename="VIVA" cutsceneline="Well, you attacked us. And your staff..."
+cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
 } x=0
 y=0 vspeed=-0.2
 }
@@ -85,8 +85,7 @@ if scenetime=640
 
 	
 with oControl
-{cutscenename="DIXIE"
-cutsceneline="What're you broads doin' are breakin' in, smackin' me and the staff around..."
+{cutscenename="HINA" cutsceneline= "Umm... Girls...?"
 }
 }
 if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
@@ -94,7 +93,7 @@ if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
 if scenetime=940
 {with oControl
 {
-cutsceneline= "And ruinin' my show!"
+cutscenename="SOFIA" cutsceneline= "Not now Hina, can't you see we're trying to catch that specter?"
 }
 }
 

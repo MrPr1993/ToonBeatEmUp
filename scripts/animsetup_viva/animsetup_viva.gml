@@ -26,6 +26,7 @@ function animsetup_viva() {
 	DamageVoice2=snd_viva10
 	DamageVoice3=snd_viva11
 	ReturnVoice=snd_viva8
+	ScreamSnd=snd_VivaScream
 	
 	if 	ThrownSpr!=spr_viva_hit
 	{

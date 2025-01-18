@@ -51,7 +51,7 @@ DamageVoice1=snd_viva9
 DamageVoice2=snd_viva10
 DamageVoice3=snd_viva11
 ReturnVoice=snd_viva8
-
+ScreamSnd=snd_VivaScream
 
 
 

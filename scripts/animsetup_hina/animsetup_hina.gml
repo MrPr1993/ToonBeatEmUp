@@ -15,6 +15,7 @@ function animsetup_hina() {
 	DamageVoice1=snd_hina12
 	DamageVoice2=snd_hina11
 	DamageVoice3=snd_hina10
+	ScreamSnd=snd_HinaScream
 
 	HitReactionScript=hina_hitreaction
 

@@ -271,7 +271,7 @@ if x=-999999999999999999999999999999
 
 	frame_set(0,0,0.01)
 	frame_set(1,1,0.25)
-	frame_set(2,2,0.25)  if AnimFrame=3 {PlaySound(DeathCry)}
+	frame_set(2,2,0.25)  if AnimFrame=3 {PlaySound(ScreamSnd)}
 	frame_set(3,3,0.25)
 	frame_set(4,4,0.25)
 	frame_set(5,5,0.25)
