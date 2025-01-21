@@ -602,6 +602,7 @@
     {"name":"checkwall","order":7,"path":"scripts/checkwall/checkwall.yy",},
     {"name":"colorshade_setup","order":88,"path":"scripts/colorshade_setup/colorshade_setup.yy",},
     {"name":"controller_backup","order":32,"path":"scripts/controller_backup/controller_backup.yy",},
+    {"name":"controller_backup2","order":34,"path":"scripts/controller_backup2/controller_backup2.yy",},
     {"name":"controller_menu","order":8,"path":"scripts/controller_menu/controller_menu.yy",},
     {"name":"controller_p1","order":9,"path":"scripts/controller_p1/controller_p1.yy",},
     {"name":"controller_p2","order":10,"path":"scripts/controller_p2/controller_p2.yy",},

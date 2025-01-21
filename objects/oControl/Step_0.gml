@@ -1,4 +1,8 @@
 /// @description Beta Test
+
+
+
+
 if isPaused=0
 {
 camX=__view_get( e__VW.XView, 0 )	

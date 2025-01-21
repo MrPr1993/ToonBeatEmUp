@@ -25,6 +25,9 @@ recordAng2=0
 threshold = 0.9; keytick=0	
 canControl=0
 controlNO=9
+
+controlset[12]=0;
+
 controller_setup()
 canControl=1
 

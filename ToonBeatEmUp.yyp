@@ -861,6 +861,7 @@
     {"id":{"name":"checkwall","path":"scripts/checkwall/checkwall.yy",},},
     {"id":{"name":"colorshade_setup","path":"scripts/colorshade_setup/colorshade_setup.yy",},},
     {"id":{"name":"controller_backup","path":"scripts/controller_backup/controller_backup.yy",},},
+    {"id":{"name":"controller_backup2","path":"scripts/controller_backup2/controller_backup2.yy",},},
     {"id":{"name":"controller_menu","path":"scripts/controller_menu/controller_menu.yy",},},
     {"id":{"name":"controller_p1","path":"scripts/controller_p1/controller_p1.yy",},},
     {"id":{"name":"controller_p2","path":"scripts/controller_p2/controller_p2.yy",},},
