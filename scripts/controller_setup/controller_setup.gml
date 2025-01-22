@@ -95,51 +95,7 @@ keytick=0
 
 if controlNO=1
 controller_p1(1)
-
-	if controlNO=1 or controlNO=2 or controlNO=3 or controlNO=4
-if controlNO=9999 ///Disable this for now
-{
-gamepadMap = ds_list_create();	
-
-//if ds_list_size(gamepadMap) < gamepad_get_device_count() // ** Change gamepad_get_device_count() to how many players you expect there to be
-    {
-    // Loop through all gamepads
-for (var i=0; i<gamepad_get_device_count();i++)
-        {
-        // If this gamepad is on
-        if gamepad_is_connected(i)
-            {
-                // If they hadn't already been assigned
-                if is_undefined(ds_list_find_value(gamepadMap,i))
-                    {
-                    // Assign them to the next available player number
-                    ds_list_add(gamepadMap,i,ds_list_size(gamepadMap));
-                    }   
-					
-
-	
-            }
-     
-
-        }
-    }
-	
-ds_list_sort(gamepadMap,0)
-   
-if !is_undefined(ds_list_find_value(gamepadMap,controlNO-1))
-{
-	if controlNO=1
-	{controller_p1(ds_list_find_value(gamepadMap,controlNO-1))}
-	else
-	{controller_p2(ds_list_find_value(gamepadMap,controlNO-1))
-	}
-}
-
-	
-	
-ds_list_destroy(gamepadMap)
-} 
-	    
+    
 	
 	
 	

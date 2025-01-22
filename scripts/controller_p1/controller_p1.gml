@@ -53,9 +53,15 @@ else
 
 }
 
-if gamepad_is_connected(oControl.controlset[_controlno])
+
+var sourcecontrol=-1;
+if instance_exists(oControl) sourcecontrol=oControl.controlset[_controlno];
+else if instance_exists(oContinueScreen) sourcecontrol=oContinueScreen.controlset[_controlno];
+
+if sourcecontrol!=-1
+if gamepad_is_connected(sourcecontrol)
 {
-var i=oControl.controlset[_controlno];
+var i=sourcecontrol;
 {
 	key_A+=gamepad_button_check_pressed(i,gp_face1)
 	key_B+=gamepad_button_check_pressed(i,gp_face2)

@@ -15,6 +15,8 @@ continueStageScore=0
 cheatpenalty=0;
 playerGet=1
 
+controlset[12]=0;
+
 finalStageEnd=0
 if instance_exists(oControl)
 finalStageEnd=oControl.finalStageEnd
