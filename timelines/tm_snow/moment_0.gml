@@ -1,7 +1,7 @@
 /// @description Stage Starting
 spawner_followset("WaveSet1",0,692+224,1)
 
-oControl.stageNext=rm_stage4
+oControl.stageNext=rm_cutscene6b
 
 if instance_number(oPlayer)!=1
 with oPlayer

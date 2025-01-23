@@ -95,7 +95,12 @@ keytick=0
 
 if controlNO=1
 controller_p1(1)
-    
+if controlNO=2
+controller_p1(2)
+if controlNO=3
+controller_p1(3)
+if controlNO=4
+controller_p1(4)
 	
 	
 	

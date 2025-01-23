@@ -3,7 +3,7 @@ spawner_followset("WaveSet1",0,1048,1)
 
 instance_create_depth(0,0,-1,oRainFX)
 
-oControl.stageNext=rm_stage4
+oControl.stageNext=rm_cutscene4b
 
 if instance_number(oPlayer)!=1
 with oPlayer

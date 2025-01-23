@@ -6,7 +6,7 @@ oPlayer.areaEntry=1
 with oPlayer
 {key_right=0 doubledash=0 dashing=0
 }
-with oControl {oControl.stageNext=rm_cutscene2b event_user(9) stageBoss="HARPILDA"}
+with oControl {stageNext=rm_cutscene2b event_user(9) stageBoss="HARPILDA"}
 }
 else
 {

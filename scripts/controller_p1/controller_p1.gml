@@ -50,7 +50,43 @@ key_right = keyboard_check(ord("D"));
 }
 else
 {
+key_right = 0//keyboard_check(ord("D"));
+	key_left = 0//-keyboard_check(ord("A"));
+	key_right_pressed = 0//keyboard_check_pressed(ord("D"));
+	key_left_pressed = 0//-keyboard_check_pressed(ord("A"));
 
+	key_jump = 0//keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord(global.ControlJump[_controlno]));
+	key_jump_hold =  0//keyboard_check(vk_space) or keyboard_check(ord(global.ControlJump[_controlno]));
+	key_up = 0//keyboard_check(ord("W"));
+	key_down = 0//keyboard_check(ord("S"));
+	key_up_pressed = 0//keyboard_check_pressed(ord("W"));
+	key_down_pressed = 0//-keyboard_check_pressed(ord("S"));
+	key_attack = 0//keyboard_check_pressed(ord(global.ControlAttack[_controlno]));
+	key_charge= 0//keyboard_check(ord(global.ControlAttack[_controlno]));
+	key_release= 0//keyboard_check_released(ord(global.ControlAttack[_controlno]));
+	key_shield = 0//keyboard_check(ord(global.ControlShield[_controlno]));
+	key_shield_pressed = 0//keyboard_check_pressed(ord(global.ControlShield[_controlno]));
+	key_super=0//keyboard_check_pressed(ord(global.ControlSuper[_controlno]));
+	
+	key_scream=0//keyboard_check(ord("O"));
+	key_screamP=0//keyboard_check_pressed(ord("O"));
+
+	key_interact = 0//global.LegacyMode[_controlno]*keyboard_check_pressed(ord(global.ControlInteract[_controlno]));
+	
+	key_X=0
+	key_Y=0
+	key_A=0
+	key_B=0
+	key_LB=0
+	key_LT=0
+	key_RB=0
+	key_RT=0
+	
+	key_taunt=0
+	key_punchback=0
+	
+	key_pause=0 ///Pause
+	key_start=0
 }
 
 

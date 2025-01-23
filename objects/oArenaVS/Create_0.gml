@@ -54,6 +54,7 @@ if p4Over=1 with oControl.p4
 {with oArenaSurvival alarmgo(); oArenaSurvival.playerwinner=name stagePose=1 immune=1 if hp=0 hp=0.01 dead=0}
 
 
+
 }
 }
 }

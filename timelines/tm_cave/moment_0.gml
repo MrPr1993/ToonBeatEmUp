@@ -1,7 +1,7 @@
 /// @description Stage Starting
 spawner_followset("WaveSet1",0,596+320,1)
 
-oControl.stageNext=rm_stage4
+oControl.stageNext=rm_cutscene6a
 
 ////Skip to Plane
 //spawner_followset("WaveSet1",0,5800,1)

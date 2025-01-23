@@ -15,3 +15,4 @@ en2=instance_create(468+64, 194,oSwing) with en2
 	
 	}
 
+oControl.stageNext=rm_cutscene3b

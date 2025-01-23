@@ -3,7 +3,7 @@ spawner_followset("WaveSet1",0,692+224,1)
 
 layer_set_visible("TILE_AUDIENCE",0)
 
-oControl.stageNext=rm_stage4
+oControl.stageNext=rm_cutscene4a
 
 ////Skip to Plane
 //spawner_followset("WaveSet1",0,5800,1)

@@ -8,7 +8,7 @@ oPlayer.areaEntry=1
 with oPlayer
 {key_right=0 doubledash=0 dashing=0
 }
-with oControl {oControl.stageNext=rm_cutscene5c event_user(9) stageBoss="HAIFA"}
+with oControl {stageNext=rm_cutscene5c event_user(9) stageBoss="HAIFA"}
 }
 else
 {

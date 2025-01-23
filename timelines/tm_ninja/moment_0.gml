@@ -20,3 +20,5 @@ en2=instance_create_depth(534,160,-1,oEntryBreak) with en2
 	xSpeed=0
 	ySpeed=0.5
 	}
+
+oControl.stageNext=rm_cutscene3c

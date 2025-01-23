@@ -2,6 +2,8 @@
 oPlayer.visible=1
 oPlayer.alarm[0]=-1
 
+
+
 oPlayer.carMode=1
 oPlayer.anim=200
 
@@ -70,3 +72,4 @@ alarm[0]=0 hspeed=-12 depth=16777016
 with oEnemySpawner
 if selfID="WaveSet1" {oControl.canMove=0 wave=0 xLock=1 image_xscale=10}
 
+oControl.stageNext=rm_cutscene2a

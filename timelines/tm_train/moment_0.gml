@@ -28,3 +28,5 @@ en2=instance_create(662+64,176,oEnemy1B) en2.canAttack=6 en2.isIdle=1 en2.alarm[
 en2.idleRange=0 en2.IdleSpr=spr_burglarB_cards
 
 PlaySound(snd_train)
+
+oControl.stageNext=rm_cutscene2c
