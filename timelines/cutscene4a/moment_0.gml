@@ -21,7 +21,7 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene4b0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_cutscene4a0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -152,15 +152,6 @@ if scenetime=6000
 {
 sprite_index=mask_none
 
-with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
-with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
-with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
-
-with actor6 {x=400}
-with actor7 {x=520 }
-with actor8 {x=640}
 
 with oControl
 {
@@ -178,12 +169,7 @@ with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed
 
 if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
 
-if scenetime=clamp(scenetime,6120,6300)
-{
-with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
-}
-
-if scenetime=6500
+if scenetime=6121
 {
 with oControl
 {
