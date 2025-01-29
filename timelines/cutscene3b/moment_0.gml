@@ -93,59 +93,152 @@ if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
 if scenetime=940
 {with oControl
 {
+cutscenename="VIVA" cutsceneline="Huh?! Where'd that haughty ghost get off to?"
+}
+}
+
+if scenetime=1140
+{
+with oControl
+{
+cutscenename="HINA" cutsceneline= "Umm... Girls...?"
+}
+}
+
+if scenetime=1440
+{
+with oControl
+{
 cutscenename="SOFIA" cutsceneline= "Not now Hina, can't you see we're trying to catch that specter?"
 }
 }
-
-if scenetime=1260
-{with oControl
+if scenetime=1740
 {
-cutsceneline= "My boss ain't gonna be happy to see all this damage!"
-}
-}
-
-if scenetime=1460
-{	
 with oControl
-{image_index=1
-cutscenename="BAHATI" cutsceneline= "Your boss?"
+{
+cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
 }
-hspeed=-2 
 }
-
-if scenetime=1660
-{	
-with oControl
-{image_index=1
-cutscenename="VIVA" cutsceneline= "And who's that? Speak up, birdbrain, now!"}
-hspeed=-2 
-}
-
 if scenetime=2040
 {
 with oControl
 {
-cutscenename="DIXIE" cutsceneline="LET ME THINK..."
+cutscenename="" cutsceneline= "CHOP!"
 }
 }
-if scenetime=2180
+
+if scenetime=2340
 {
 with oControl
 {
-cutscenename="DIXIE" cutsceneline= "PBBBBBBBTH!!!"
-}
+//CHOP
+cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for thinking you could put a damper on my joyous haunting! The living cannot harm the dead!"
 }
 
-if scenetime=2380
+}
+
+if scenetime=2340
 {
 with oControl
 {
-cutscenename="DIXIE" cutsceneline= "I ain't sayin' NOTHIN' 'bout my boss, 'specially after you come in here rufflin' my feathers AND my show!"
+cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
 }
 }
 
+if scenetime=2440
+{
+with oControl
+{
+cutscenename="SOFIA" cutsceneline= "The living huh...?"
+}
+}
 
-if scenetime=2840 scenetime=6000
+if scenetime=2740
+{
+with oControl
+{
+cutscenename="BAHATI" cutsceneline= "Well we're not living right now..."
+}
+}
+if scenetime=3040
+{
+with oControl
+{
+cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
+}
+}
+if scenetime=3340
+{
+with oControl
+{
+cutscenename="" cutsceneline= "Beating ensues"
+}
+}
+if scenetime=3640
+{
+with oControl
+{
+//Beatdown ensues.
+}
+}
+if scenetime=3940
+{
+with oControl
+{
+cutscenename="ANNAMARI" cutsceneline= "WAIT WAIT WAIT!!! I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
+}
+}
+if scenetime=4240
+{
+with oControl
+{
+cutscenename="BAHATI" cutsceneline= "Your family heirloom...?"
+}
+}
+if scenetime=4540
+{
+with oControl
+{
+cutscenename="HINA" cutsceneline= "Just like us...."
+}
+}
+
+if scenetime=4840
+{
+with oControl
+{
+cutscenename="ANNAMARI" cutsceneline= "Hmm... Let's make a deal since we're in the same situation... I revive you all, and you'll get back my heirloom along with yours!"
+}
+}
+if scenetime=5140
+{
+with oControl
+{
+cutscenename="VIVA" cutsceneline= "Wait how are you..."
+}
+}
+if scenetime=5440
+{
+with oControl
+{
+cutscenename="" cutsceneline= "Squish"
+}
+}
+if scenetime=5640
+{
+with oControl
+{
+cutscenename="VIVA" cutsceneline= "OH. So unconfortable for my neck..."
+}
+}
+if scenetime=5940
+{
+with oControl
+{
+cutscenename="BAHATI" cutsceneline= "Well, where the thieves went, miss Annamari?"
+}
+}
+
 
 if scenetime=6000
 {
@@ -163,7 +256,7 @@ with actor8 {x=640}
 
 with oControl
 {
-cutscenename="DIXIE" cutsceneline= "How about that?"}
+cutscenename="ANNAMARI" cutsceneline= "Well...."}
 }
 
 if scenetime=6120
@@ -242,26 +335,5 @@ __view_set( e__VW.XView, 0, SceneY )
 cutscenePlaying=1
 }
 
-cutscenename="VIVA" cutsceneline="Huh?! Where'd that haughty ghost get off to?"
-cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
-cutscenename="HINA" cutsceneline= "Umm... Girls...?"
-cutscenename="SOFIA" cutsceneline= "Not now Hina, can't you see we're trying to catch that specter?"
-cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
-//CHOP
-cutscenename="ANNAMARI" cutsceneline= "FOOOOOLS!!!"
-cutscenename="DIVAS" cutsceneline= "AAAAAAAAHHHH!!!!!"
-cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for thinking you could put a damper on my joyous haunting! The living cannot harm the dead!"
-cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
-cutscenename="SOFIA" cutsceneline= "The living huh...?"
-cutscenename="BAHATI" cutsceneline= "Well we're not living right now..."
-cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
-//Beatdown ensues.
-cutscenename="ANNAMARI" cutsceneline= "WAIT WAIT WAIT!!! I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
-cutscenename="BAHATI" cutsceneline= "Your family heirloom...?"
-cutscenename="HINA" cutsceneline= "Just like us...."
-cutscenename="VIVA" cutsceneline= "Hmm... Let's make a deal since we're in the same situation... You revive us, and we'll get back your heirloom along with ours!"
-cutscenename="ANNAMARI" cutsceneline= "Y-You will?! You promise?!"
-cutscenename="SOFIA" cutsceneline= "Of course! Just tell us where you last saw those punks run off to!"
-cutscenename="ANNAMARI" cutsceneline= "Well...."
-//choices appear
+
 

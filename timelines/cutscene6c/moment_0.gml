@@ -10,111 +10,168 @@ CDtextA="GET THE PARACHUTES!"
 CDtextB="JUMP OFF THE PLANE!"
 CDtextC="USE THE HARPY!"
 
-cutscenename=""
-cutsceneline=""
+cutscenename="" cutsceneline= "Divas come down"
+
 }
 
-actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
-{sprite_index=spr_viva_cutscene image_index=0 anim=9999}
-actor2=instance_create_depth(50,144,-1,oCameoChar) with actor2
-{sprite_index=spr_hina_point image_index=0 anim=9999}
-actor3=instance_create_depth(46,160,-1,oCameoChar) with actor3
-{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
-actor4=instance_create_depth(76,188,-1,oCameoChar) with actor4
-{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
-actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
-oCameoChar.x+=160;
 
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
-actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene2a anim=9999 isDepth=0 depth=-3000
+///@description Decision Results
+canSkipCutscene=2
+actorscreen.scenetime=0
+timeline_speed=0
+
+
+CutsceneStage=rm_stageswamp
+
+actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
+{sprite_index=spr_cutscene4a0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+
+actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
+{sprite_index=spr_viva_cutscene image_index=0 anim=9999}
+actor2=instance_create_depth(1150,144,-1,oCameoChar) with actor2
+{sprite_index=spr_hina_point image_index=0 anim=9999}
+actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
+{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
+actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
+{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
+actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
+{sprite_index=spr_duck_stand image_index=10 anim=9999 image_xscale=-1
+	}
+
+actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+
+actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+
+actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+sprite_index=mask_none
+x=0
+y=0
 
 newscript=function()
-{scenetime+=1;
-
-if scenetime=60
 {
-with oControl
-{PlaySound(snd_explosion) quakeFXTime=10
-}
-}
+scenetime+=1;
 
 if scenetime=120
 {
 with oControl
-{cutscenename="VIVA"
-cutsceneline="THE PLANE'S GOING DOWN!"
-}
-}
-
-cutscenename="FIONA" cutsceneline= "SNIFF SNIFF... Stupid.... Insects...!"
-cutscenename="VIVA" cutsceneline= "Well I'm officially lost... What are we going to do now?"
-cutscenename="SOFIA" cutsceneline= "We're stuck high in the sky... It'd take a miracle to get to the hideout from here..."
-cutscenename="HINA" cutsceneline= "Maybe this castle has something we could use?"
-cutscenename="BAHATI" cutsceneline= "It'd take forever to search this place though... Wait, does anyone else hear a vacuum cleaner?"
-//Whirrrrrrr
-cutscenename="DIVAS" cutsceneline= "Uh oh..."
-//Vacuum suck and eject
-cutscenename="FIONA" cutsceneline= "BEGONE, FILTH!!!!!"
-if scenetime=760
 {
-	with oControl
-	{canSkipCutscene=0
-cutscenename="VIVA"
-cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
-
-timeline_position=5700
-timeline_speed=1
-}
-
-if scenetime=clamp(scenetime,760,799) scenetime=764
-
-}
-
-
-
-
-
-//////	
-
+with oControl {cutscenename="VIVA" cutsceneline= "We need to find a way out of here!"
 
 }
 }
+}
+
+if scenetime=340
+{
+with oControl
+{
+with oControl {cutscenename="SOFIA" cutsceneline= "How?! We're thousands of feet from the ground!"
+}
+}
+}
+
+if scenetime=520
+{
+with oControl
+{
+cutscenename="FIONA" cutsceneline= "WAAAAAAAAAAAAAHHHHHHHHHHHH!"
+
+}
+}
+
+if scenetime=660
+{
+with oControl {cutscenename="FIONA" cutsceneline= "You meanies! Why did you hurt me?!"
+}
+}
+
+if scenetime=860
+{with oControl {cutscenename="FIONA" cutsceneline= "I just wanted my place clean for my future husband! Waaaaah!"
+}
+}
+
+if scenetime=1060
+{
+with oControl {cutscenename="VIVA" cutsceneline= "Now I feel terrible."}
+}
+
+if scenetime=1260
+{
+with oControl {cutscenename="BAHATI" cutsceneline= "I got this."}
+}
+
+if scenetime=1460
+{
+with oControl {cutscenename="BAHATI" cutsceneline= "Hey sorry for us harming you, but we were trying to defend ourselves."}
+}
+
+if scenetime=1660
+{
+with oControl {cutscenename="BAHATI" cutsceneline= "We want your help. We are trying to find a way out of your home."}
+}
+
+if scenetime=2000
+{with oControl {cutscenename="FIONA" cutsceneline= "SNIFF! You were only protecting yourself? Oh that's terrible! Here let me help!"
+}
+}
+
+if scenetime=2400
+{
+with oControl {cutscenename="BAHATI" cutsceneline= "And this is how being nice is, Viva. Helping helps."}
+}
+
+if scenetime=2700
+{
+with oControl {cutscenename="VIVA" cutsceneline= "Right... okay now she's taking us, and-why is she heading to the window?"}
+}
+
+if scenetime=3000
+{with oControl {cutscenename="FIONA" cutsceneline= "Here you go! Fly away, pretty butterflies!"
+}
+}
+
+if scenetime=3400
+{
+with oControl {cutscenename="VIVA" cutsceneline= "Oh you gotta be KIDDING ME! WE'RE NOT BUUUUUUUUUUUUUUUGSSSSS!!!!"}
+}
+
+if scenetime=3700
+{with oControl {cutscenename="FIONA" cutsceneline= "Oopsie daisies."
+}
+}
+
+if scenetime=4020
+{
+oControl.stageEndFX=1
+}
+}
+}
+
+
 
 	
 timeline_position=10
 timeline_speed=0
 
+
+
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 
-	
-if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
-	cutscenename=""
-cutsceneline=""
-audio_stop_all()
-
-actorscreen.scenetime=761
-
-global.CutsceneSkip=0
-
-timeline_position=5700
-timeline_speed=1
-
-canSkipCutscene=0
-
-cutscenename="VIVA"
-cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
-	}
-
-
 cutscenePlaying=1
 }
+CutsceneStage=rm_stagelab
+canSkipCutscene=2
+
+
