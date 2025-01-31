@@ -34,13 +34,13 @@ actor5=instance_create_depth(11215,170,-1,oCameoChar) with actor5
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
 actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+{sprite_index=spr_mermaidcutscene_clam anim=9999 image_xscale=-1}
 
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+{sprite_index=spr_mermaidcutscene_seahorse anim=9999 image_xscale=-1}
 
 actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+{sprite_index=spr_mermaidcutscene_pool anim=9999 image_xscale=-1}
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 

@@ -56,10 +56,18 @@ with oControl {cutscenename="" cutsceneline= "The divas leave"}
 
 if scenetime=1120
 {
-with oControl {cutscenename="CIRCE" cutsceneline= "Why am I having a real feeling I'm forgetting something to warn them..."}
+with oControl {cutscenename="CIRCE" cutsceneline= "Why am I having a real feeling I'm forgetting something..."}
 }
 
+if scenetime=1420
+{
+with oControl {cutscenename="CIRCE" cutsceneline= "Ah..."}
+}
 
+if scenetime=1720
+{
+with oControl {cutscenename="CIRCE" cutsceneline="Well it's no longer my problem."}
+}
 
 if scenetime=2320
 {
