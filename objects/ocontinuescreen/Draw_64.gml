@@ -449,6 +449,17 @@ draw_text(320-10,round(240-16+GoldY),string("+")+string(GoldGet)+string("$"))
 draw_set_halign(fa_left)
 }
 
+if global.DisplayFeats=1
+{
+if instance_exists(oFeatDisplay) with oFeatDisplay
+{draw_set_alpha(1) draw_set_font(global.scorefont)
+draw_set_color(c_white) draw_rectangle(0+featX,240-24,128+featX,240,false)
+draw_set_color(c_black) draw_rectangle(0+2+featX,240-24+2,128-2+featX,240-3,false)
+draw_set_halign(fa_left)
+draw_set_color(c_white) draw_text(6+featX,240-24+4,"FEAT COMPLETE:")
+draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
+}}
+
 if fadetoblack=1
 {faderec-=8 draw_set_color(c_black) draw_set_alpha(1)
 draw_rectangle(faderec,-888,899,999,false)

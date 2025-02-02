@@ -14,7 +14,7 @@ draw_sprite(spr_escapeblimpbg,4,round(x),round((240*4)+y+z))
 	
 newscript=function()
 {x=oControl.camX-2
-z-=0.25;
+z-=0.3;
 }
 }
 }

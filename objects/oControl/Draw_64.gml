@@ -83,6 +83,8 @@ if showHUD
 draw_set_font(global.timefont)///Timer
 if continueScreen=0
 {
+if eventTimerMode=0
+{
 if !instance_exists(oArenaSurvival)
 {
 if time>=10
@@ -97,7 +99,13 @@ else
 {time=99
 with oArenaSurvival drawscript()
 }
-
+}
+if eventTimerMode=1
+{draw_set_halign(fa_center);
+draw_set_font(global.scorefont)
+draw_text(160,64,eventTimerText)
+draw_text(160,64+8,string(eventTimer)+":"+string(eventTimerTick))
+}
 }
 draw_set_font(-1)
 draw_set_halign(fa_left);

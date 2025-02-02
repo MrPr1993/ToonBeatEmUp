@@ -120,48 +120,7 @@ global.SaveFileNO=1;
 global.SaveNumber=0;
 global.SaveText="EMPTY";
 	
-global.HiScoreSurvival=0
 
-global.HiScoreBossBattles=0
-global.HiScoreBossBattlesScore=0
-global.HiScoreFishing=0	
-global.HiScoreMini1=0	
-global.HiScoreMini2=0
-global.HiScoreMini3=0
-global.HiScoreMini4=0
-global.HiScoreMini5=0
-global.HiScoreMini6=0
-
-global.ArenaType=0;
-	
-global.FishingUnlock=0;
-global.SlotMachineUnlock=0;	
-global.MiniGameUnlock1=0;
-global.MiniGameUnlock2=0;
-global.MiniGameUnlock3=0;
-global.MiniGameUnlock4=0;
-global.MiniGameUnlock5=0;
-global.MiniGameUnlock6=0;
-global.SurvivalUnlock=0;
-global.BossBattleUnlock=0;
-
-global.SkipDifficulty=0;
-global.P1Only=0;
-
-global.CheatPenalty=0;
-global.Cheat[20]=0;
-
-global.NoCheat=1;
-global.CheatUnlock[20]=0;
-var hahaha=0;
-repeat(17)
-{
-global.CheatUnlock[hahaha]=1;
-hahaha+=1;
-}
-
-global.Gallery[20]=0;
-global.GalleryUnlock[20]=0;
 	
 global.IsMovie=0
 global.MovieSel=0
@@ -213,73 +172,6 @@ global.PrevStage6=0
 global.PrevStage7=0
 global.PrevStage8=0
 
-global.UnlockFeats=1
-
-global.UnlockStage[20]=0
-global.LevelHiScore[20]=0
-
-
-global.UnlockStageA[1]=1
-global.UnlockStageA[2]=1
-global.UnlockStageA[3]=0
-global.UnlockStageA[4]=0
-global.UnlockStageA[5]=0
-global.UnlockStageA[6]=0
-global.UnlockStageA[7]=0
-global.UnlockStageA[8]=0
-global.UnlockStageA[9]=0
-global.UnlockStageA[10]=0
-global.UnlockStageA[11]=0
-global.UnlockStageA[12]=0
-global.UnlockStageA[13]=0
-global.UnlockStageA[14]=0
-global.UnlockStageA[15]=0
-global.UnlockStageA[16]=0
-global.UnlockStageA[17]=0
-global.UnlockStageA[18]=0
-global.UnlockStageA[19]=0
-global.UnlockStageA[20]=0
-
-global.UnlockStageB[1]=1
-global.UnlockStageB[2]=1
-global.UnlockStageB[3]=0
-global.UnlockStageB[4]=0
-global.UnlockStageB[5]=0
-global.UnlockStageB[6]=0
-global.UnlockStageB[7]=0
-global.UnlockStageB[8]=0
-global.UnlockStageB[9]=0
-global.UnlockStageB[10]=0
-global.UnlockStageB[11]=0
-global.UnlockStageB[12]=0
-global.UnlockStageB[13]=0
-global.UnlockStageB[14]=0
-global.UnlockStageB[15]=0
-global.UnlockStageB[16]=0
-
-global.UnlockStageC[1]=1
-global.UnlockStageC[2]=1
-global.UnlockStageC[3]=0
-global.UnlockStageC[4]=0
-global.UnlockStageC[5]=0
-global.UnlockStageC[6]=0
-global.UnlockStageC[7]=0
-global.UnlockStageC[8]=0
-global.UnlockStageC[9]=0
-global.UnlockStageC[10]=0
-global.UnlockStageC[11]=0
-global.UnlockStageC[12]=0
-global.UnlockStageC[13]=0
-global.UnlockStageC[14]=0
-global.UnlockStageC[15]=0
-global.UnlockStageC[16]=0
-
-
-
-
-global.UnlockEnemy[200]=0
-global.EnemyDeath=0
-
 
 global.MenuGlobal=0
 global.MenuSkip=0
@@ -320,12 +212,11 @@ global.Continues=-1
 
 global.LifeStart=2
 
-
 global.DisplayFeats=1
 
 global.StageName=""
 
-global.Gold=0
+
 global.GoldShow=1 //global.GoldShow=1 Show Gold
 
 global.Difficulty=2
@@ -376,8 +267,7 @@ global.P2available=0
 global.P3available=0
 global.P4available=0
 
-stagedata_load()
-enemydata_load()
+
 
 globalcontrols(12)
 globalcontrols(13)
@@ -394,7 +284,11 @@ globalcontrols(3)
 globalcontrols(2)
 globalcontrols(1)
 
-shopreset()
+
+data_setup()
+
+stagedata_load()
+enemydata_load()
 
 global.StageSelect=0
 }
@@ -494,8 +388,16 @@ P1SpawnYadd=208
 
 AnimFrame=0
 
+eventTimerMode=0;
+eventTimerSet=60;
+eventTimer=60;
+eventTimerTick=60;
+eventTimerText="TIME LEFT FOR VAN BAD TO ESCAPE!";
+
 if !variable_global_exists("Bappo")
 {
+global.Ending=0;	
+
 global.Bappo=0
 global.P1Life=2
 global.P2Life=2
@@ -906,7 +808,7 @@ if !variable_global_exists("LOADSET")
 settings_load() ///Controlshere
 unlock_load()
 gold_load()
-
+feats_load()
 }
 
 /////Map Screen

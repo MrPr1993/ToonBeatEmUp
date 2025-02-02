@@ -3,6 +3,8 @@
 
 /// @description Insert description here
 // You can write your code in this editor
+
+
 check1up=1
 
 shade=shd_television
@@ -380,9 +382,8 @@ continueStageScore=clamp(continueStageScore,0,99999999999)
 if global.Difficulty>=global.LevelDif[stagecheck] global.LevelDif[stagecheck]=global.Difficulty
 
 global.UnlockStage[stagecheck]=1
-stagedata_save()
-enemydata_save()
-unlock_save()
+
+
 
 
 
@@ -494,6 +495,12 @@ GoldShow=global.GoldShow
 
 
 }
+
+feats_check()
+feats_save()
+stagedata_save()
+enemydata_save()
+unlock_save()
 
 colorshade_setup()
 

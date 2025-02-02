@@ -9,6 +9,9 @@ draw_set_font(global.scorefont)
 //draw_sprite(spr_featicon,0,4+24,4+32)
 //(c_white) draw_text(4+24,4+24,"SHOWTIME")
 //draw_text(4+28+32,4+32,"DEFEAT 100 ENEMIES")
+
+////////Default feats
+
 if key_up_pressed {PlaySound(snd_select) if featsel=1 {featY=lerp(featY,-48*96,1) featsel=100} else featsel-=1}
 if -key_down_pressed {PlaySound(snd_select) if featsel=100 {featY=lerp(featY,0,1) featsel=1} else featsel+=1}
 

@@ -1,7 +1,14 @@
 /// @description Beta Test
+feats_check()
 
-
-
+if eventTimerMode!=0 time=99;
+if eventTimerMode=1
+{
+if eventTimer!=0
+{
+eventTimerTick--; if eventTimerTick<=0 {eventTimerTick=60 eventTimer-=1}
+}
+}
 
 if isPaused=0
 {
@@ -327,8 +334,8 @@ global.P4Life+=global.P4Life*global.Cheat[2]*global.NoCheat
 
 global.GlobalBeta=betatest
 
-//if global.CurrentMusic!=-1
-//audio_sound_gain(global.CurrentMusic, 0+MusicFadeAdd, 0);
+if global.CurrentMusic!=-1
+audio_sound_gain(global.CurrentMusic, 0+MusicFadeAdd, 0);
 
 if MusicFade=1 global.MusicFade-=0.01
 
@@ -390,6 +397,10 @@ __view_set( e__VW.YView, 0, quakeFX)
 
 if betatest=1
 {
+if keyboard_check_pressed(ord("P"))	and keyboard_check(vk_tab)
+if show_question("Reset all unlocks?")
+data_setup()
+
 if keyboard_check_pressed(ord("G"))
 if camMove=0
 {}//camMove=1 camMax=room_width} else {camMove=0 camMax=0}
