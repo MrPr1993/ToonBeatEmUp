@@ -34,8 +34,19 @@ draw_surface(application_surface, 0, 0);
 
 ///
 draw_set_color(c_white) draw_set_alpha(1)
-
+shader_set(shd_grayscale)
 draw_sprite(spr_photoplaceholder,0,0,0)
+shader_reset()
+
+draw_sprite_ext(spr_photoplaceholder,0,0,0,1,1,0,c_white,1-1*filmY)
+filmY=lerp(filmY,1,0.1)
+mapXFilm-=1 if mapXFilm<-16 mapXFilm+=16
+for (var iI=0; iI<=240+64; iI+=16)
+{
+draw_sprite_ext(spr_filmpart,1,round(-9+9*filmY),mapXFilm+iI,1,1,90,c_white,1);
+draw_sprite_ext(spr_filmpart,1,312+round(9-9*filmY),mapXFilm+iI,1,1,90,c_white,1);
+}
+
 
 if !instance_exists(oSettings) and AreYouSure=0
 {

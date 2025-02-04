@@ -17,6 +17,8 @@ playerGet=0
 Cweather=0
 ///1 - cold - 2 - hot
 
+showtimehit=0;
+
 randomanim=0
 
 screamset=0

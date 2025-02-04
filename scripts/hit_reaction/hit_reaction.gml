@@ -1,5 +1,5 @@
 /// @description Hurt
-function hit_reaction() {
+function hit_reaction() {if isBoss oControl.showtimehit=showtimehit else oControl.showtimehit=0
 	if act=1
 	{
 if targetID!=-1

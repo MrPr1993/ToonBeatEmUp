@@ -13,6 +13,10 @@ canControl=0
 controller_setup()
 canControl=1
 
+mapXFilm=0;
+filmY=0;
+
+
 stagePause=oControl.stagePause
 
 PlaySoundNoStack(snd_picked)

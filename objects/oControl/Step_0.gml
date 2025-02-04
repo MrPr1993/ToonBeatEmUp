@@ -1,6 +1,15 @@
 /// @description Beta Test
 feats_check()
 
+if betatest
+{
+if keyboard_check_pressed(ord("P"))	and keyboard_check(vk_shift)
+{
+var setquestion=get_string("0 - Reset Data, 1 - All Stages, 2 - All Minigames, 3 - All Enemy Data",0)
+if setquestion=0 if show_question("Reset all unlocks?") data_setup()
+}
+}
+
 if eventTimerMode!=0 time=99;
 if eventTimerMode=1
 {
@@ -397,9 +406,7 @@ __view_set( e__VW.YView, 0, quakeFX)
 
 if betatest=1
 {
-if keyboard_check_pressed(ord("P"))	and keyboard_check(vk_tab)
-if show_question("Reset all unlocks?")
-data_setup()
+
 
 if keyboard_check_pressed(ord("G"))
 if camMove=0

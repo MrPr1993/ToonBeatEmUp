@@ -2,23 +2,50 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function feats_default(){
 global.Feats[1]=2 ///Default to show them
-	
+global.Feats[2]=2 ///Default to show them
+global.Feats[3]=2 ///Default to show them
+global.Feats[4]=2 ///Default to show them
+global.Feats[5]=2 ///Default to show them
+}
+
+function feats_stageunlock(){
+
+
+
 }
 
 function feats_check(){
-var savefeats=0;
+var setfeats=0; var savefeats=0;
 var featname=""
 for (var i=0; i<100; i++)
-{savefeats=0;
+{setfeats=0;
 switch(i)
 {
-case 1: featname="DIVA'S DEBUT!"
-if object_index=oContinueScreen and stageClear=1 and room=rm_stage1 {savefeats=1} break;
+case 1: featname="DIVA'S DEBUT"
+if object_index=oContinueScreen and stageClear=1 and room=rm_stage1 {setfeats=1} break;
 
+case 2: featname="MUST PET!"
+if instance_exists(oPlayer) if oPlayer.anim=10010 setfeats=1 break;
 
+case 3: featname="ENCORE!"
+if instance_exists(oPlayer) if oPlayer.continueScreen=2 setfeats=1 break;
+
+case 4: featname="SHOWTIME FINISH"
+if object_index=oControl if showtimehit setfeats=1 break;
+
+case 5: featname="WOLF WHISPERER"
+if room=rm_stage1 and stageClear=1
+if object_index=oControl {if instance_exists(oPlayer) with oPlayer if hp<maxhp oControl.perfecthp=0 if perfecthp setfeats=1} break;
+
+case 6: featname="ONE LONG NOTE"
+if stageClear=1
+if object_index=oControl {if instance_exists(oPlayer) with oPlayer if hp<=0 oControl.nodeath=0 if nodeath setfeats=1} break;
 
 }
-if savefeats {global.Feats[i]=1 feat_create(featname)}
+
+if global.Feats[i]!=1
+{if setfeats {savefeats=1 global.Feats[i]=1 feat_create(featname)}}
+
 }
 
 

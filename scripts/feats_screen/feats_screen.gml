@@ -12,21 +12,24 @@ draw_set_font(global.scorefont)
 
 ////////Default feats
 
+if betatest if keyboard_check_pressed(ord("P")) 
+for (var i=0; i<100; i++) {global.Feats[i]=1}
+
 if key_up_pressed {PlaySound(snd_select) if featsel=1 {featY=lerp(featY,-48*96,1) featsel=100} else featsel-=1}
 if -key_down_pressed {PlaySound(snd_select) if featsel=100 {featY=lerp(featY,0,1) featsel=1} else featsel+=1}
 
-draw_feat(1,spr_featicon,1,c_white,"DIVA'S DEBUT!","CLEAR STAGE 1")
+draw_feat(1,spr_featicon,1,c_white,"DIVA'S DEBUT","CLEAR STAGE 1")
 draw_feat(2,spr_featicon,2,c_white,"MUST PET!","PET THE FIRST ANIMAL IN ANY STAGE.")
-draw_feat(3,spr_featicon,3,c_white,"ENCORE!","CONTINUE AS THE SAME DIVA.")
-draw_feat(4,spr_featicon,4,c_white,"SHOWTIME!","DEFEAT A BOSS WITH A SHOWTIME ATTACK.")
-draw_feat(5,spr_featicon,5,c_white,"Wolf Whisperer","Defeat Lady Wolf Without Taking Damage")
-draw_feat(6,spr_featicon,6,c_white,"One long note","Complete a stage without dying once")
-draw_feat(7,spr_featicon,7,c_white,"BOO!","F2000 POUNDS")
-draw_feat(8,spr_featicon,8,c_white,"BOO!","F2000 POUNDS")
-draw_feat(9,spr_featicon,9,c_white,"BOO!","F2000 POUNDS")
-draw_feat(10,spr_featicon,10,c_white,"BOO!","F2000 POUNDS")
-draw_feat(11,spr_featicon,11,c_white,"BOO!","F2000 POUNDS")
-draw_feat(12,spr_featicon,12,c_white,"BOO!","F2000 POUNDS")
+draw_feat(3,spr_featicon,3,c_white,"ENCORE!","USE YOUR FIRST CONTINUE.")
+draw_feat(4,spr_featicon,4,c_white,"SHOWTIME FINISH","DEFEAT A BOSS WITH A SHOWTIME ATTACK.")
+draw_feat(5,spr_featicon,5,c_white,"One long note","Complete a stage without dying once.")
+draw_feat(6,spr_featicon,6,c_white,"I'm Not Stage Frightened!","Beat any Stage without using Your Special once.")
+draw_feat(7,spr_featicon,7,c_white,"Legendary Dancing Diva!","Beat Arcade Mode WITHOUT LOSING A SINGLE LIFE/ (Normal difficulty or higher only)")
+draw_feat(8,spr_featicon,8,c_white,"Don't Touch the Diva","Beat any stage WITHOUT TAKING DAMAGE.")
+draw_feat(9,spr_featicon,9,c_white,"Dashin' Diva","Beat any stage WITHOUT DYING.")
+draw_feat(10,spr_featicon,10,c_white,"Sorry, I'm on a Diet...","Beat any stage without Picking up any Food.")
+draw_feat(11,spr_featicon,11,c_white,"Almost Went Off Key","Beat any Stage with 10% of Your health left WITHOUT DYING.")
+draw_feat(12,spr_featicon,12,c_white,"Wolf Whisperer","Defeat Lady Wolf.")
 draw_feat(13,spr_featicon,13,c_white,"BOO!","F2000 POUNDS")
 draw_feat(14,spr_featicon,14,c_white,"BOO!","F2000 POUNDS")
 draw_feat(15,spr_featicon,15,c_white,"BOO!","F2000 POUNDS")

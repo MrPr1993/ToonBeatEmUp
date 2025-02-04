@@ -3,7 +3,7 @@
 
 /// @description Insert description here
 // You can write your code in this editor
-
+filmY=0 mapXFilm=0
 
 check1up=1
 
@@ -496,11 +496,13 @@ GoldShow=global.GoldShow
 
 }
 
-feats_check()
-feats_save()
+
 stagedata_save()
 enemydata_save()
 unlock_save()
+feats_stageunlock()
+feats_check()
+feats_save()
 
 colorshade_setup()
 

@@ -106,7 +106,7 @@ global.MultiSuper=isPlayer
 	   if Throw=0 and dead=0
 	   	   	if isPlayer!=global.MultiSuper
 	{superThrown=0 hspeed=0 sentflying=-16 hp-=0.5-0.25*isBoss ////Super Attack Damage
-	 hud_show() hpscan() AnimFrame=0 image_index=0
+	 hud_show() hpscan() AnimFrame=0 image_index=0 showtimehit=1
 	 if hp<=0
 	other.PlayerScore+=points
 	else other.PlayerScore+=pointshit

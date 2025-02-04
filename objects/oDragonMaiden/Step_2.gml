@@ -262,7 +262,7 @@ lockX-=4*image_xscale specialtimes[6]=point_distance(x,0,targetEnemy.x-24*image_
 	
 	if anim=12 //Fire Breath
 	{
-	
+
 if AnimFrame=0 {AnimFrame=0.01 specialtimes[0]=0 specialtimes[1]=0 lockX=x sprite_index=spr_dragonmaiden_head}
 	selfatk.damage=0.25 selfatk.MoveType=1
 	atkcol_set(14,0,0,3.65,1,89)
@@ -305,7 +305,7 @@ HitQuake=10;
 	}
 	
 	}
-	
+		
 if anim=13 ///Change location
 {
 if AnimFrame=0 {AnimFrame=0.01 specialtimes[0]=0 specialtimes[5]=0  lockX=x sprite_index=spr_dragonmaiden_head}
@@ -393,5 +393,5 @@ if anim=595000
 {sprite_index=spr_dragonmaiden_headpanic image_index+=0.5 if image_index=3 image_index=1 if AnimFrame>46 or AnimFrame<4 image_index=0.5}
 AnimFrame+=1
 
-if AnimFrame=50 {canmove=1 hurt=0}
+if AnimFrame>=50 {canmove=0 AnimFrame=6 anim=12 hurt=0 screenInd=0 }
 }

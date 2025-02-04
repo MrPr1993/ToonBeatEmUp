@@ -247,13 +247,12 @@ if AnimFrame>14.5
 {immune=0 anim=0 canmove=1}
 	
 	}
-	
-	
+
 ////Panic
 if anim=595000
 {if AnimFrame=0 {image_index=0 recovery=0 recoveryThrow=0 }
 {sprite_index=spr_octopus_panic image_index+=0.5 if image_index=3 image_index=1 if AnimFrame>46 or AnimFrame<4 image_index=0.5}
 AnimFrame+=1
 
-if AnimFrame=50 {canmove=1 hurt=0}
+if AnimFrame>=50 {canmove=0 AnimFrame=14 anim=66 hurt=0 screenInd=0 }
 }

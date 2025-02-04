@@ -2,6 +2,10 @@ room_speed=60
 
 roomfast=0
 
+showtimehit=0;
+perfecthp=1;
+nodeath=1;
+
 playNO=1
 
 camX=0;
@@ -78,6 +82,7 @@ specialcheck5=0
 
 cutscenePlaying=0;
 cutscenedecision=0
+cutsceneSnap=0;
 cutsceneDecmode=0
 CDtextT="LADY WOLF IS GETTING AWAY!\nWHAT WILL YOU DO?"
 CDtextA="FOLLOW HER."
@@ -661,7 +666,7 @@ mapXFilm=0
 mapPX=0
 mapPY=0
 mapPflicker=0
-
+filmY2=0;
 
 skipScene=0
 

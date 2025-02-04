@@ -1632,7 +1632,35 @@ controller_setup()
 		
 	
 	if cutscenedecision=1
-	{if cutsceneDecbuffer!=0 cutsceneDecbuffer-=1 cutsceneDecbufferBG=lerp(cutsceneDecbufferBG,0.8,0.1) 
+	{
+	if cutsceneSnap=0
+	{
+surface_resize(application_surface,320,240)
+surface_save_part(application_surface,"screenshot",0,0,320,192)
+surface_resize(application_surface,320,240)
+surface_free(application_surface)
+
+sprite_replace(spr_photoplaceholder,"screenshot",0,false,false,0,0)	
+	cutsceneSnap=1;
+mapXFilm=0;
+filmY2=0;
+	}
+	
+draw_set_color(c_white) draw_set_alpha(1)
+shader_set(shd_grayscale)
+draw_sprite(spr_photoplaceholder,0,0,0)
+shader_reset()
+
+draw_sprite_ext(spr_photoplaceholder,0,0,0,1,1,0,c_white,1-1*filmY2)
+if cutsceneSnap=2 filmY2=lerp(filmY2,0,0.1) else filmY2=lerp(filmY2,1,0.1)
+mapXFilm-=1 if mapXFilm<-16 mapXFilm+=16
+for (var iI=0; iI<=240+64; iI+=16)
+{
+draw_sprite_ext(spr_filmpart,1,round(-9+9*filmY2),mapXFilm+iI,1,1,90,c_white,1);
+draw_sprite_ext(spr_filmpart,1,312+round(9-9*filmY2),mapXFilm+iI,1,1,90,c_white,1);
+}
+		
+	if cutsceneDecbuffer!=0 cutsceneDecbuffer-=1 cutsceneDecbufferBG=lerp(cutsceneDecbufferBG,0.8,0.1) 
 	CDtextTy=lerp(CDtextTy,0,0.1)
 	CDtextAx=lerp(CDtextAx,0,0.1)
 	CDtextBx=lerp(CDtextBx,0,0.1)
@@ -1659,7 +1687,7 @@ if key_attack or key_jump or key_super or key_shield or keyboard_check_pressed(v
 	else cutscenedecision=0
 	
 	CutsceneSaveBuffer-=0.5
-	if CutsceneSaveBuffer=0 arcade_save(CutsceneStage)
+	if CutsceneSaveBuffer=0 {cutsceneSnap=2 arcade_save(CutsceneStage)}
 	
 	CDtextTy=lerp(CDtextTy,-400,0.1)
 	if cutsceneDecmode=0 {CDtextAy=lerp(CDtextAy,-10,0.1) CDtextAs=lerp(CDtextAs,1.5,0.1)} else CDtextAx=lerp(CDtextAx,240,0.1)

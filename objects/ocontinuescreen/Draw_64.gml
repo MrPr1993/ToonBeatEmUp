@@ -38,13 +38,33 @@ draw_surface(application_surface, 0, 0);
 ///
 draw_set_color(c_white) draw_set_alpha(1)
 
+shader_set(shd_grayscale)
 draw_sprite(spr_photoplaceholder,0,0,0)
+shader_reset()
+
+
+draw_sprite_ext(spr_photoplaceholder,0,0,0,1,1,0,c_white,1-1*filmY)
+
+if stageClear=1 or isGameOver=1
+{
+filmY=lerp(filmY,1,0.1)
+mapXFilm-=1 if mapXFilm<-16 mapXFilm+=16
+for (var iI=0; iI<=240+64; iI+=16)
+{
+draw_sprite_ext(spr_filmpart,1,round(-9+9*filmY),mapXFilm+iI,1,1,90,c_white,1);
+draw_sprite_ext(spr_filmpart,1,312+round(9-9*filmY),mapXFilm+iI,1,1,90,c_white,1);
+}
+}
+
 draw_set_alpha(stageclearblack) draw_set_color(c_black)
 draw_rectangle(-999,-999,999,999,false)
 if stageclearblack<0.75
 stageclearblack+=0.05
 
 draw_set_alpha(1) draw_set_color(c_white)
+
+
+
 if stageClear=0
 {
 if !instance_exists(oSettings) and AreYouSure=0
@@ -75,6 +95,9 @@ draw_sprite(bg_continue,0,0,0+round(quakeFX))
 //if continueCountdown<1
 ////countdownTrain+=0.005
 //else
+
+
+
 if deathGameOver=0
 {
 if continueCountdown<6
@@ -194,6 +217,17 @@ draw_sprite_ext(spr_continue,isGameOver,160,round(100+gameOverYAdd+20*isGameOver
 d3d_set_culling(true)
 draw_sprite_ext(spr_continue,isGameOver,160,round(100+gameOverYAdd+20*isGameOver),sin(gameOverSpin),1,0,c_white,1)///Game Over Text
 d3d_set_culling(false)
+
+if stageClear=1 or isGameOver=1
+{
+filmY=lerp(filmY,1,0.1)
+mapXFilm-=1 if mapXFilm<-16 mapXFilm+=16
+for (var iI=0; iI<=240+64; iI+=16)
+{
+draw_sprite_ext(spr_filmpart,1,round(-9+9*filmY),mapXFilm+iI,1,1,90,c_white,1);
+draw_sprite_ext(spr_filmpart,1,312+round(9-9*filmY),mapXFilm+iI,1,1,90,c_white,1);
+}
+}
 
 gameOverFlash-=0.01
 draw_set_alpha(gameOverFlash)///
@@ -420,6 +454,7 @@ d3d_transform_set_identity()
 
 
 }
+
 
 if optionSelect=1
 {draw_set_halign(fa_center)
