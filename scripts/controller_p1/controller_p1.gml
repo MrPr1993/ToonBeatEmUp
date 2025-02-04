@@ -224,7 +224,7 @@ key_down=clamp(key_down,-1,1)
 if room=rm_characterselect
 key_shield_pressed +=  gamepad_button_check_pressed(i,global.gpControlAttack[_controlno]) 
 	else
-	key_shield_pressed =  gamepad_button_check_pressed(i,global.gpControlShield[_controlno]);
+	key_shield_pressed +=  gamepad_button_check_pressed(i,global.gpControlShield[_controlno]);
 
 if room=rm_characterselect
 	key_jump += gamepad_button_check_pressed(i,global.gpControlShield[_controlno]);

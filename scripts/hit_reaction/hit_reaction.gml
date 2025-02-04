@@ -1,5 +1,5 @@
 /// @description Hurt
-function hit_reaction() {if isBoss oControl.showtimehit=showtimehit else oControl.showtimehit=0
+function hit_reaction() {
 	if act=1
 	{
 if targetID!=-1
@@ -347,5 +347,5 @@ wobbleY=0.9
 	}
 
 
-
+if isBoss and hp<=0 {oControl.showtimehit=showtimehit} else oControl.showtimehit=0
 }
