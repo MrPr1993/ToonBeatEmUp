@@ -1,6 +1,6 @@
 /// @description Head to the End
 
-if __view_get( e__VW.XView, 0 )>=7644+320-160+920-2-320
+if __view_get( e__VW.XView, 0 )>=7644+320-160+920-2-320+32
 {
 if oControl.allPlayersMid and oControl.allPlayersMove
 {
@@ -12,7 +12,8 @@ quakeFXTime=10
 
 with oPlayer
 {
-automoveX=oControl.camX+320-32
+areaEntry=1
+automoveX=7644+320-160+920-2+96+32//oControl.camX+320-32
 automoveY=oControl.wallY+16+16*controlNO
 canControl=0
 automove=1

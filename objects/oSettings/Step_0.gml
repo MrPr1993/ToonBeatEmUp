@@ -9,7 +9,8 @@ if controlSettings=0
 ///Reset Settings
 if key_Y
 {
-if menuSelect=0 {global.BGMvolume=50 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
+if menuSelect=-1 {global.Mastervolume=50 audio_master_gain(global.Mastervolume/100)}
+if menuSelect=0 {global.BGMvolume=50 if global.CurrentMusic!=-1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
 if menuSelect=1 global.SFXvolume=50
 if menuSelect=2 {}
 if menuSelect=3 global.CRTfx=0
@@ -30,12 +31,13 @@ if menuSelect=15 global.DisplayFeats=1
 }	
 
 
-if key_up_pressed {PlaySound(snd_select) if menuSelect=0 menuSelect=16 else menuSelect-=1}
-if -key_down_pressed {PlaySound(snd_select) if menuSelect=16 menuSelect=0 else menuSelect+=1}
+if key_up_pressed {PlaySound(snd_select) if menuSelect=-1 menuSelect=16 else menuSelect-=1}
+if -key_down_pressed {PlaySound(snd_select) if menuSelect=16 menuSelect=-1 else menuSelect+=1}
 
 if -key_left
 {
-if menuSelect=0 {if global.BGMvolume!=0 global.BGMvolume-=1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
+if menuSelect=-1 {if global.Mastervolume!=0 global.Mastervolume-=1 audio_master_gain(global.Mastervolume/100)}
+if menuSelect=0 {if global.BGMvolume!=0 global.BGMvolume-=1 if global.CurrentMusic!=-1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
 if menuSelect=1 if global.SFXvolume!=0 global.SFXvolume-=1
 
 if TVfx=7
@@ -49,7 +51,8 @@ if menuSelect=12 {if global.CutsceneSkipSpd>0.01 global.CutsceneSkipSpd-=0.01}
 
 if key_right
 {
-if menuSelect=0 {if global.BGMvolume!=100 global.BGMvolume+=1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
+if menuSelect=-1 {if global.Mastervolume!=100 global.Mastervolume+=1 audio_master_gain(global.Mastervolume/100)}
+if menuSelect=0 {if global.BGMvolume!=100 global.BGMvolume+=1 if global.CurrentMusic!=-1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)}
 if menuSelect=1 if global.SFXvolume!=100 global.SFXvolume+=1
 
 if TVfx=7

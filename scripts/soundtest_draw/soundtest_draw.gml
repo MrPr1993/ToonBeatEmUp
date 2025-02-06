@@ -2,9 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function soundtest_draw(){
 if room=rm_soundtest
-{fpsY=8 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)
-
-
+{fpsY=8 if global.CurrentMusic!=-1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)
 	
 controller_setup()
 

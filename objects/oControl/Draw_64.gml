@@ -102,9 +102,14 @@ with oArenaSurvival drawscript()
 }
 if eventTimerMode=1
 {draw_set_halign(fa_center);
+draw_set_color(c_white) if eventTimer<10 draw_set_color(c_red)
 draw_set_font(global.scorefont)
-draw_text(160,64,eventTimerText)
-draw_text(160,64+8,string(eventTimer)+":"+string(eventTimerTick))
+var ticktext="0"+string(eventTimer) if eventTimer>9 ticktext=string(eventTimer)
+if eventTimer=0 and eventTimerTick=0 draw_text(160,64,eventTimerText2)
+else draw_text(160,64,eventTimerText)
+var ticktext="0"+string(eventTimerTick) if eventTimerTick>9 ticktext=string(eventTimerTick)
+draw_text(160,64+8,string(eventTimer)+":"+string(ticktext))
+
 }
 }
 draw_set_font(-1)

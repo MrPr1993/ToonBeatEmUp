@@ -1,6 +1,8 @@
 /// @description Beta Test
 feats_check()
 
+audio_master_gain(global.Mastervolume/100)
+
 if betatest
 {
 if keyboard_check_pressed(ord("P"))	and keyboard_check(vk_shift)
@@ -13,9 +15,8 @@ if setquestion=0 if show_question("Reset all unlocks?") data_setup()
 if eventTimerMode!=0 time=99;
 if eventTimerMode=1
 {
-if eventTimer!=0
 {
-eventTimerTick--; if eventTimerTick<=0 {eventTimerTick=60 eventTimer-=1}
+if eventTimerTick!=0 eventTimerTick--; if eventTimerTick<=0  if eventTimer!=0 {eventTimerTick=60 eventTimer-=1}
 }
 }
 

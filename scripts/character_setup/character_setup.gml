@@ -134,7 +134,7 @@ stagePose=1
 	superturn=1; ///When a player uses a super move, the enemy will turn to them
 	///------------------------
 
-
+spawnOrder=0;
 
 	spawnID=-1 ///For character's Weapon when they pick it up; the weapon's data will be transferred to them and when they drop it that data will be transferred to it
 	weaponspr=-1

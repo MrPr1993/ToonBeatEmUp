@@ -2,8 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function settings_load(){
 ini_open("GAMEDATA/settings.ini");
-global.BGMvolume=ini_read_real("SETTINGS", "BGM", 100);
-global.SFXvolume=ini_read_real("SETTINGS", "VFX", 100);
+global.Mastervolume=ini_read_real("SETTINGS", "MASTER", 100);
+global.BGMvolume=ini_read_real("SETTINGS", "BGM", 50);
+global.SFXvolume=ini_read_real("SETTINGS", "VFX", 50);
 global.CRTfx=ini_read_real("SETTINGS", "CRT", 0);
 
 global.CRTcustomDistort=ini_read_real("SETTINGS", "CRTcustom1", true);

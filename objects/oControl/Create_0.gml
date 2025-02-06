@@ -204,8 +204,9 @@ global.MonochromeFX=0
 
 global.CutsceneSkipSpd=0.01
 
-global.BGMvolume=100
-global.SFXvolume=100
+global.Mastervolume=100
+global.BGMvolume=50
+global.SFXvolume=50
 
 global.Screenshake=1
 global.Screenflash=1
@@ -395,9 +396,10 @@ AnimFrame=0
 
 eventTimerMode=0;
 eventTimerSet=60;
-eventTimer=60;
+eventTimer=59;
 eventTimerTick=60;
 eventTimerText="TIME LEFT FOR VAN BAD TO ESCAPE!";
+eventTimerText2="VAN BAD ESCAPED...";
 
 if !variable_global_exists("Bappo")
 {

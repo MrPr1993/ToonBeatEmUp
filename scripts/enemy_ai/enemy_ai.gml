@@ -152,12 +152,24 @@ else
 	{key_up=0 key_down=0}
 	}
 
-	if canAttack=6 ///Stand Still until player gets close
-	{anim=0
+	if canAttack=6 or canAttack=60 ///Stand Still until player gets close
+	{if canAttack=6 anim=0 if canAttack=60 anim=1
 	{dashing=0 doubledash=0}
 	if x=clamp(x,targetX-idleRange,targetX+idleRange)
 	{isIdle=0 alarm[1]=2 canAttack=choose(0,1,2,3,4)}
 	}
+	
+	if canAttack=0 or canAttack=1 or canAttack=3 or canAttack=4  ////Move apart from other enemies
+	{
+	var closeally=instance_nearest(x,y,oEnemy1)
+	if instance_exists(closeally) if place_meeting(x,y,closeally)
+	{if closeally.y<y {key_up=choose(1,0)} if closeally.y>y {key_down=choose(1,0)}}
+	}
+	
+	if canAttack=0 or canAttack=1 or canAttack=2 or canAttack=3 or canAttack=4
+	if x=clamp(x,targetX-32,targetX+32) if canAttack!=0 canAttack=0
+	//if x<targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
+	
 	}
 	else {key_left=0 key_right=0 key_up=0 key_down=0 key_attack=0}
 	}

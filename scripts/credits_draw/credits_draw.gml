@@ -369,7 +369,15 @@ draw_sprite_ext(spr_viva_microphone,1,40+240-2,200+4,dancer1turn,1,0,c_black,dan
 
 var musictime=creditsTime;
 
+
+
 draw_rectangle(-2,-2,340,340,false)
+
+draw_sprite(spr_creditsart,0,360-creditsTime,192)
+draw_sprite(spr_creditsart,1,120+360-creditsTime,192)
+draw_sprite(spr_creditsart,2,240+360-creditsTime,192)
+draw_sprite(spr_creditsart,3,360+360-creditsTime,192)
+
 draw_set_color(c_white) draw_set_alpha(1)
 var creditmoment="";
 

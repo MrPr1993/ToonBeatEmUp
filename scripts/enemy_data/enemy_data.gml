@@ -2,7 +2,7 @@
 function enemy_data() {
 	character_setup()
 	
-	
+	spawnOrder=instance_number(oEnemy1)
 
 	enemyscript=animsetup_enemy
 	enemyai=enemy_ai

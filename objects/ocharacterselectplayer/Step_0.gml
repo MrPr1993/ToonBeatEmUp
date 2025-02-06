@@ -5,7 +5,7 @@
 if introbuffer!=0 introbuffer-=1
 if charbuffer!=0 charbuffer-=1
 
-
+var canselect=1;
 
 SelectingX=lerp(SelectingX,0,0.5)
 

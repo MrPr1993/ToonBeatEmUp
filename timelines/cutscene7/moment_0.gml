@@ -94,24 +94,9 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 	
-if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
-	cutscenename=""
-cutsceneline=""
-audio_stop_all()
-
-actorscreen.scenetime=761
-
-global.CutsceneSkip=0
-
-timeline_position=5700
-timeline_speed=1
-
-canSkipCutscene=0
-
-cutscenename="VIVA"
-cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
-	}
+canSkipCutscene=2
 cutscenePlaying=1
 }
+
 
 

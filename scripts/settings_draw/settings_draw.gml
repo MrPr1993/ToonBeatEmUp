@@ -19,6 +19,7 @@ if controlSettings=0
 {
 ///LEFT SIDE
 draw_set_halign(fa_right)
+draw_text(160,24,languagetext[38]+string(" "))
 draw_text(160,32,languagetext[1]+string(" "))
 draw_text(160,40,languagetext[2]+string(" "))
 draw_text(160,48+4,languagetext[3]+string(" "))
@@ -49,6 +50,7 @@ draw_text(160,112+8+48+16+16,languagetext[14]+string(" "))
 
 ///RIGHT SIDE
 draw_set_halign(fa_left)
+draw_text(160,24," "+string(global.Mastervolume)+string("%"))
 draw_text(160,32," "+string(global.BGMvolume)+string("%"))
 draw_text(160,40," "+string(global.SFXvolume)+string("%"))
 
@@ -145,6 +147,7 @@ draw_text(160,112+8+48+16+8," "+string(" "+string(languagetext[18])))
 draw_text(160,112+8+48+16+16," "+string(languagetext[29]))
 
 //STAR
+if menuSelect=-1 StarY=-8
 if menuSelect=0 StarY=0
 if menuSelect=1 StarY=8
 if menuSelect=2 StarY=16+4

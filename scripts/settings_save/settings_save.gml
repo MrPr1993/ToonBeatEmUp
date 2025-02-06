@@ -5,6 +5,7 @@ function settings_save(){
 
 	
 ini_open("GAMEDATA/settings.ini");
+ini_write_real("SETTINGS", "MASTER", global.Mastervolume);
 ini_write_real("SETTINGS", "BGM", global.BGMvolume)
 ini_write_real("SETTINGS", "VFX", global.SFXvolume)
 ini_write_real("SETTINGS", "CRT", global.CRTfx)
