@@ -27,7 +27,7 @@ if scenetime=120
 {
 with oControl
 {
-with oControl {cutscenename="SOFIA" cutsceneline="YOU DON'T HAVE TO TELL ME TWICE!"}
+cutscenename="SOFIA" cutsceneline="YOU DON'T HAVE TO TELL ME TWICE!"
 }
 }
 
@@ -39,16 +39,57 @@ with oControl {cutscenename="VIVA" cutsceneline="ABANDON SHIP!"}
 }
 }
 
-if scenetime=520
-{
+if scenetime=420
+{y=0
+{sprite_index=spr_cutscene2a2
+specialdraw=function()
+{y--; y=clamp(y,192,999)
+draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
+draw_sprite(spr_cutscene2a2,1,160,y)
+draw_sprite(spr_cutscene2a2,0,160,192)
+draw_self();
+}
+
 with oControl
-{
-cutscenename="" cutsceneline= "SHIP SCENE"
+{cutscenename=""
+cutsceneline=""
 }
 }
 
-if scenetime=660
+x=320 hspeed=-2
+sprite_index=spr_allblackscreen image_xscale=8
+}
+
+if scenetime=480
 {
+with oControl
+{
+cutscenename="" cutsceneline= ""
+}
+specialdraw=-1;
+x=0 hspeed=-2
+sprite_index=spr_allblackscreen image_xscale=1
+}
+
+if scenetime=520
+{
+with actor1 {sprite_index=spr_viva_jump1 x=160-16 image_index=1 y=200 z=-200 newscript=function(){z+=8}}
+with actor2 {sprite_index=spr_hina_jump1 x=160-40 image_index=1 y=200 z=-240 newscript=function(){z+=8}}
+with actor3 {sprite_index=spr_bahati_jump1 x=160+16 image_index=1 y=200 z=-230 newscript=function(){z+=8}}
+with actor4 {sprite_index=spr_sofia_jump1 x=160+40 image_index=1 y=200 z=-210 newscript=function(){z+=8}}
+}
+
+if scenetime=640
+{
+y=0
+x=320 hspeed=-4
+sprite_index=spr_allblackscreen image_xscale=8
+}
+
+if scenetime=720
+{
+x=0 hspeed=-4
+sprite_index=spr_allblackscreen image_xscale=1
 with oControl {cutscenename="BAHATI" cutsceneline="AND THERE IT GOES..."}
 }
 
@@ -61,31 +102,26 @@ if scenetime=1060
 with oControl {cutscenename="SOFIA" cutsceneline="HEY I SEE LAND OVER THERE!"}
 }
 
-if scenetime=1360
-{
-with oControl {cutscenename="SOFIA" cutsceneline="HEY I SEE LAND OVER THERE!"}
-}
-
-if scenetime=1620
+if scenetime=1220
 {
 with oControl {cutscenename="VIVA" cutsceneline="GREAT! LET'S GO THERE! WAIT... WHERE'S..."}
 }
 
-if scenetime=1920
+if scenetime=1420
 {
-with oControl {cutscenename="VIVA" cutsceneline="I'M NOT DOING MOUTH TO MOUTH."}
+with oControl {cutscenename="VIVA" cutsceneline="OH. ONE OF US HAS TO DO MOUTH TO MOUTH."}
 }
 
-if scenetime=2200
+if scenetime=1600
 {
-with oControl {cutscenename="HINA" cutsceneline="BLBLBBLLBLBLALsbLB."}
+with oControl {cutscenename="HINA" cutsceneline="BLBLBBLLBLBLALSbLB."}
 }
-if scenetime=2500
+if scenetime=1800
 {
 with oControl {cutscenename="VIVA" cutsceneline="OH NEVER MIND SHE'S BREATHING. I THINK..."}
 }
 
-if scenetime=3020
+if scenetime=2020
 {
 oControl.stageEndFX=1
 }
@@ -113,18 +149,13 @@ newscript=function()
 {
 scenetime+=1;
 
-
-if scenetime=520
+if scenetime=360
 {
-with oControl {cutscenename="HINA" cutsceneline="LIKE THIS?"}
+
+with oControl {quakeFXTime=10; cutscenename="HINA" cutsceneline="LIKE THIS?"}
 }
 
-if scenetime=660
-{
-with oControl {cutscenename="HINA" cutsceneline="LIKE THIS?"}
-}
-
-if scenetime=860
+if scenetime=560
 {
 with oControl {cutscenename="BAHATI" cutsceneline="OH MY GOSH! THAT'S NOT WHAT SHE MEANT!"}
 }
@@ -163,7 +194,7 @@ oControl.stageEndFX=1
 }
 
 /////////////DECISION 3
-if cutsceneDecmode=3
+if cutsceneDecmode=2
 {
 CutsceneStage=rm_stage5
 

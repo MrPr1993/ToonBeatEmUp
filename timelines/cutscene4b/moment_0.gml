@@ -19,7 +19,7 @@ __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
-actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
+actorscreen=instance_create_depth(160,192+96,-1,oCameoChar) with actorscreen
 {sprite_index=spr_cutscene4b0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
@@ -51,11 +51,14 @@ actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
+
 with oControl
 {
 cutscenename="KIANDRA"
 cutsceneline="...YOU..."
 }
+
+y=180
 
 newscript=function()
 {
@@ -65,23 +68,26 @@ scenetime+=1;
 if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
-if scenetime<160 {y++;}
+if scenetime<120 {if y<192 y+=0.2;}
 if scenetime=120
 {sprite_index=mask_none scenetime=340
-with oControl
-{
-cutsceneline="Why did you break into my home and beat me up?! Didn't you read the signs?!"
-} x=0
-y=0 vspeed=-0.2
-}
-
-if scenetime=640
-{sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
+	
 with actor1 {x=64}
 with actor2 {x=64}
 with actor3 {x=64}
 with actor4 {x=64}
 with actor5 {x=320-64}
+	
+with oControl
+{
+cutsceneline="Why did you break into my home and beat me up?! Didn't you read the signs?!"
+} x=0
+y=0 vspeed=-0.2 hspeed=0
+}
+
+if scenetime=640
+{sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
+
 	
 with oControl
 {
@@ -114,7 +120,7 @@ if scenetime=1660
 with oControl
 {image_index=1
 cutscenename="BAHATI" cutsceneline= "Right, sorry... can you still help us? We are after thieves who were stealing treasures."}
-hspeed=-2 
+
 }
 
 if scenetime=2040
@@ -126,41 +132,23 @@ with oControl
 if scenetime=2440 scenetime=6000
 
 if scenetime=6000
-{
-sprite_index=mask_none
+{hspeed=0
+with actor1 {x=640}
+with actor2 {x=640}
+with actor3 {x=640}
+with actor4 {x=640}
+with actor5 {x=620}		
 
-with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
-with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
-with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
-
-with actor6 {x=400}
-with actor7 {x=520 }
-with actor8 {x=640}
+sprite_index=spr_cauldronshow x=0 y=100
 
 with oControl
 {
 cutscenename="KIANDRA" cutsceneline= "Have a look at the cauldron and I'll show you the way from what you choose."}
 }
 
-if scenetime=6120
-{
-with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
-with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
-with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
-with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
-with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
-}
+if scenetime=clamp(scenetime,6000,6100) y--;
 
-if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
-
-if scenetime=clamp(scenetime,6120,6300)
-{
-with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
-}
-
-if scenetime=6500
+if scenetime=6200
 {
 with oControl
 {

@@ -14,6 +14,16 @@ cutscenename=""
 cutsceneline=""
 }
 
+
+
+SceneX=0
+__view_set( e__VW.XView, 0, SceneX )
+SceneY=0
+__view_set( e__VW.XView, 0, SceneY )
+
+actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
+{sprite_index=spr_cutscene2a anim=9999 isDepth=0 depth=-3000
+
 actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
 actor2=instance_create_depth(50,144,-1,oCameoChar) with actor2
@@ -24,14 +34,6 @@ actor4=instance_create_depth(76,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
 {sprite_index=spr_franki_hit image_index=21 shadow=spr_carshadow anim=9999 image_xscale=-1}
-
-SceneX=0
-__view_set( e__VW.XView, 0, SceneX )
-SceneY=0
-__view_set( e__VW.XView, 0, SceneY )
-
-actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene2a anim=9999 isDepth=0 depth=-3000
 
 newscript=function()
 {scenetime+=1;
@@ -116,11 +118,11 @@ cutsceneline="YOU CAN'T BE SERIOUS!"
 }
 
 if scenetime=2480
-{y=480
+{y=480 sprite_index=spr_cutscene2a2
 specialdraw=function()
 {y--; y=clamp(y,192,999)
 draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
-draw_sprite(spr_cutscene2a2,1,160,y)
+draw_sprite(sprite_index,1,160,y)
 draw_sprite(spr_cutscene2a2,0,160,192)
 }
 
@@ -130,18 +132,18 @@ cutsceneline=""
 }
 }
 
-if scenetime=3100
+if scenetime=3090
 {
 	with oControl
 	{canSkipCutscene=0
 cutscenename="VIVA"
 cutsceneline="SO... ANY OF YOU KNOW HOW TO DRIVE THIS?"
 
-timeline_position=5700
+timeline_position=5800
 timeline_speed=1
 }
 
-if scenetime=clamp(scenetime,3060,3099) scenetime=3064
+if scenetime=clamp(scenetime,3160,3199) scenetime=3164
 
 }
 //////	
@@ -165,11 +167,11 @@ if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
 cutsceneline=""
 audio_stop_all()
 
-actorscreen.scenetime=2580
+actorscreen.scenetime=3100
 
 global.CutsceneSkip=0
 
-timeline_position=5700
+timeline_position=5800
 timeline_speed=1
 
 canSkipCutscene=0
@@ -179,11 +181,11 @@ cutsceneline=""
 
 with actorscreen
 {scenetime=2580+240
-{y=192
+{y=192 sprite_index=spr_cutscene2a2 image_index=1
 specialdraw=function()
-{y--; y=clamp(y,192,999)
+{y--; y=clamp(y,192,999) 
 draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
-draw_sprite(spr_cutscene2a2,1,160,y)
+draw_sprite(sprite_index,1,160,y)
 draw_sprite(spr_cutscene2a2,0,160,192)
 }
 

@@ -85,7 +85,7 @@ if scenetime=clamp(scenetime,330,335)
 {
 if flashscreen.image_alpha>=1.5
 {x=0; y=0; sprite_index=spr_cutscene5a5; image_index=0;
-with flashscreen {fadeSpd=-0.05 isfading=0 image_alpha=1}
+with flashscreen {fadeSpd=0 isfading=0 image_alpha=1}
 scenetime=620
 }
 }

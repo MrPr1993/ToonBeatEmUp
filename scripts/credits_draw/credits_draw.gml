@@ -373,10 +373,7 @@ var musictime=creditsTime;
 
 draw_rectangle(-2,-2,340,340,false)
 
-draw_sprite(spr_creditsart,0,360-creditsTime,192)
-draw_sprite(spr_creditsart,1,120+360-creditsTime,192)
-draw_sprite(spr_creditsart,2,240+360-creditsTime,192)
-draw_sprite(spr_creditsart,3,360+360-creditsTime,192)
+
 
 draw_set_color(c_white) draw_set_alpha(1)
 var creditmoment="";
@@ -518,6 +515,12 @@ draw_rectangle(160-80+1,24+1,-1+160-80+160*skipScene,32-1,false)
 if creditsTime>=134 {global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_hiscore)
 	
 	}
+
+x-=2;
+draw_sprite(spr_creditsart,0,360+x,100)
+draw_sprite(spr_creditsart,1,120+360+x,100)
+draw_sprite(spr_creditsart,2,240+360+x,100)
+draw_sprite(spr_creditsart,3,360+360+x,100)
 
 if creditsTime<=60
 draw_sprite_ext(spr_gametitle,creditsTime*10,160,120-320+(320*dancersfade),1,1,0,c_white,1-1*(creditsAlpha*10))
