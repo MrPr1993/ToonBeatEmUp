@@ -207,13 +207,13 @@ draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 9"));
 if level=90 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("CUTSCENE 10"));
 if level=91 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 1"));
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 1, NORMAL ENDING"));
 if level=92 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 2"));
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 2, JAIL ENDING"));
 if level=93 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 3"));
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 3, ANGER ENDING"));
 if level=94 draw_set_color(c_yellow) else draw_set_color(c_gray)
-draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 4"));
+draw_text(10, yy++ * 10, string_hash_to_newline("ENDING 4, BAD ENDING"));
 if level=95 draw_set_color(c_yellow) else draw_set_color(c_gray)
 draw_text(10, yy++ * 10, string_hash_to_newline("PLACEHOLDER"));
 if level=96 draw_set_color(c_yellow) else draw_set_color(c_gray)

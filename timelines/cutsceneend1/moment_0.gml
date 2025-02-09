@@ -16,17 +16,7 @@ cutsceneline=""
 
 }
 
-actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
-{sprite_index=spr_viva_cutscene image_index=0 anim=9999}
-actor2=instance_create_depth(50,144,-1,oCameoChar) with actor2
-{sprite_index=spr_hina_point image_index=0 anim=9999}
-actor3=instance_create_depth(46,160,-1,oCameoChar) with actor3
-{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
-actor4=instance_create_depth(76,188,-1,oCameoChar) with actor4
-{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
-actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
-oCameoChar.x+=160;
+
 
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
@@ -36,6 +26,20 @@ __view_set( e__VW.XView, 0, SceneY )
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
 {sprite_index=spr_ending1a anim=9999 isDepth=0 depth=-3000 shadow=-1;
 	x=0; y=0;
+	
+actor1=instance_create_depth(86,1709,-1,oCameoChar) with actor1
+{sprite_index=spr_viva_cutscene image_index=0 anim=9999}
+actor2=instance_create_depth(50,1449,-1,oCameoChar) with actor2
+{sprite_index=spr_hina_point image_index=0 anim=9999}
+actor3=instance_create_depth(46,1609,-1,oCameoChar) with actor3
+{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
+actor4=instance_create_depth(76,1889,-1,oCameoChar) with actor4
+{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
+actor5=instance_create_depth(215,1709,-1,oCameoChar) with actor5
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+oCameoChar.x+=160;
+
+x=0
 
 specialdraw=function()
 {
@@ -116,25 +120,39 @@ cutsceneline="SO MUCH WORK... BUT IT WAS WORTH IT!"
 
 if scenetime=1200
 {vspeed=0;
+sprite_index=spr_divasseecops image_index=0 x=0 y=0
+
 with oControl
 {cutscenename=""
 cutsceneline=""
 }
 }
 
+if scenetime=1300
+{scenetime=1400
+with actor1 {sprite_index=spr_divasseecops hspeed=2 image_index=1 x=-320 y=0 shadow=-1 }
+with actor2 {sprite_index=spr_divasseecops hspeed=-2 image_index=2 x=430 y=0 shadow=-1 }
+}
+
+if scenetime=1550 actor1.hspeed=0
+if scenetime=1700 actor2.hspeed=0
+
 if scenetime=1860
 {vspeed=0 y=0
+actor1.y=9999
+actor2.y=9999
+sprite_index=spr_incomingcops image_index=0
 with oControl
 {cutscenename="COP"
-cutsceneline="ALRIGHT, ALRIGHT, SPREAD OUT!"
+cutsceneline="ALRIGHT, ALRIGHT, EVERYONE, SPREAD OUT!"
 }
 }
 
 if scenetime=2060
-{vspeed=0 y=0
+{vspeed=0 y=0 sprite_index=spr_incomingcops image_index=1
 with oControl
 {cutscenename="VIVA"
-cutsceneline="OH, SO THE CAVALRY HAS FINALLY ARRIVED. WHERE HAVE ALL OF YOU BEEN?"
+cutsceneline="OH, SO THE CAVALRY'S FINALLY HERE. WHERE HAVE ALL OF YOU BEEN?"
 }
 }
 
@@ -155,15 +173,18 @@ cutsceneline="OH, THEN YOU GOT ANOTHER ONE FOR YOU TO CATCH."
 }
 
 if scenetime=3000
-{vspeed=0 y=0 hspeed=-0.01
+{vspeed=0 x=0 y=0 hspeed=-0.1 sprite_index=spr_incomingcops image_index=2
 with oControl
 {cutscenename=""
-cutsceneline="."
+cutsceneline=""
 }
 }
 
 if scenetime=3600
 {vspeed=0 y=0 hspeed=0 x=0
+
+sprite_index=spr_nowthatsover image_index=0
+	
 with oControl
 {cutscenename="HINA"
 cutsceneline="WELL NOW THAT'S OVER."
@@ -172,6 +193,8 @@ cutsceneline="WELL NOW THAT'S OVER."
 
 if scenetime=3900
 {vspeed=0 y=0
+	
+
 with oControl
 {cutscenename="BAHATI"
 cutsceneline="NEXT TIME WE'LL HAVE TO KEEP THEM UNDER TIGHTER WRAPS."
@@ -179,23 +202,23 @@ cutsceneline="NEXT TIME WE'LL HAVE TO KEEP THEM UNDER TIGHTER WRAPS."
 }
 
 if scenetime=4550
-{vspeed=0 y=0
+{vspeed=0 y=0 sprite_index=spr_nowthatsover image_index=1
 with oControl
 {cutscenename="VIVA"
 cutsceneline="And uh..."
 }
 }
 
-if scenetime=4850 ////Cleaning up
-{vspeed=0 y=0
+if scenetime=4750 ////Cleaning up
+{vspeed=0 y=0 sprite_index=spr_nowthatsover image_index=2
 with oControl
 {cutscenename=""
 cutsceneline=""
 }
 }
 
-if scenetime=5150
-{vspeed=0 y=0
+if scenetime=4950
+{vspeed=0 y=0 sprite_index=spr_nowthatsover image_index=3
 with oControl
 {cutscenename="VIVA"
 cutsceneline="So girls! What do you want to do now?"
@@ -219,7 +242,10 @@ cutsceneline="Well how about it? Ready to get the show back on?"
 }
 
 if scenetime=6300
-{vspeed=0 y=0
+{
+sprite_index=spr_divasletsparty
+	
+vspeed=0 y=0
 with oControl
 {cutscenename="DIVAS"
 cutsceneline="LET'S PARTY!"
@@ -308,7 +334,7 @@ __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
-
+CutsceneStage=rm_creditscene
 canSkipCutscene=2
 cutscenePlaying=1
 

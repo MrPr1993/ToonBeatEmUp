@@ -1,6 +1,8 @@
 //background_
 instance_create_depth(-999,-999,-1,oTextBox)
 
+
+
 if cutscenePlaying=0
 {
 with oControl
@@ -22,18 +24,8 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene2a anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=mask_none anim=9999 isDepth=0 depth=-3000 shadow=-1;
 
-
-
-newscript=function()
-{scenetime+=1;
-
-var tilecheck=layer_get_id("BTG1")
-layer_x(tilecheck,round(-scenetime*0.1))
-
-if scenetime=1
-{
 var tilecheck=layer_get_id("BTG0")
 layer_hspeed(tilecheck,-2)
 
@@ -46,7 +38,14 @@ actor3=instance_create_depth(-160,160,-1,oCameoChar) with actor3
 actor4=instance_create_depth(-160,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_run image_speed=0.25  image_index=0 anim=9999 hspeed=2}
 
-}
+actor5=instance_create_depth(320,152,-1,oCameoChar) with actor5
+{sprite_index=spr_zeppelinladder image_speed=0.25  image_index=0 anim=9999 hspeed=-1}
+
+newscript=function()
+{scenetime+=1;
+
+var tilecheck=layer_get_id("BTG1")
+layer_x(tilecheck,round(-scenetime*0.1))
 
 if scenetime=120
 {
@@ -57,13 +56,13 @@ if scenetime>=160
 {
 with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
 
-with actor2 { sprite_index=spr_bahati_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
+with actor3 { sprite_index=spr_bahati_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
 }
 if scenetime>=200
 {
 with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
 
-with actor3 {sprite_index=spr_hina_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
+with actor2 {sprite_index=spr_hina_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
 }
 if scenetime>=240
 {
@@ -76,6 +75,35 @@ if scenetime>=280
 with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
 
 with actor1 {sprite_index=spr_viva_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
+}
+
+if scenetime=300 with actor5 newscript=function() {z-=4}
+
+if scenetime=400
+{
+flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
+{image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
+sprite_index=spr_whitecol image_blend=c_black depth=-4000
+}
+}
+
+if scenetime=clamp(scenetime,400,435)
+{scenetime=410 actor5.z-=4
+if flashscreen.image_alpha>=1.5
+{x=0; y=0; sprite_index=spr_cutscene7; image_index=0;
+with flashscreen {fadeSpd=-0.25 isfading=1 image_alpha=1}
+scenetime=620
+}
+}
+
+if scenetime=620
+{
+vspeed=-0.25
+}
+
+if scenetime=900
+{
+oControl.stageEndFX=1
 }
 
 /////	
@@ -94,6 +122,7 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 	
+CutsceneStage=rm_stagefinal
 canSkipCutscene=2
 cutscenePlaying=1
 }
