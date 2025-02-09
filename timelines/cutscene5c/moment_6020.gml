@@ -16,7 +16,7 @@ with oControl
 {
 //-Red Oni is lying(Swamp)-
 //-I wish to be somewhere cooler-
-cutscenename="SOFIA" cutsceneline= "The heat here's been murder on us..."
+cutscenename="HINA" cutsceneline= "The heat here's been murder on us..."
 }
 x=0
 y=0
@@ -49,7 +49,7 @@ if scenetime=520
 {
 with oControl
 {
-cutscenename="SOFIA" cutsceneline= "Sorry!! I-I-It was so hot my head was swimming!"
+cutscenename="HINA" cutsceneline= "Sorry!! I-I-It was so hot my head was swimming!"
 }
 }
 
@@ -64,7 +64,7 @@ with oControl {cutscenename="VIVA" cutsceneline= "Or you should mean up..."}
 }
 
 
-if scenetime=2520
+if scenetime=1320
 {
 oControl.stageEndFX=1
 }

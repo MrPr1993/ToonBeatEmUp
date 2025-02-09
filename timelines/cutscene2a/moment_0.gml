@@ -1,3 +1,4 @@
+
 //background_
 if cutscenePlaying=0
 {
@@ -5,16 +6,14 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE SHIP WON'T STOP!\nWHAT WILL YOU DO?"
-CDtextA="ABANDON SHIP!"
-CDtextB="TAKE THE WHEEL!"
-CDtextC="TRY TO WAKE ROSY UP!"
+CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
+CDtextA="GET THE PARACHUTES!"
+CDtextB="JUMP OFF THE PLANE!"
+CDtextC="USE THE HARPY!"
 
 cutscenename=""
 cutsceneline=""
 }
-
-
 
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
@@ -35,8 +34,14 @@ actor4=instance_create_depth(76,188,-1,oCameoChar) with actor4
 actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
 {sprite_index=spr_franki_hit image_index=21 shadow=spr_carshadow anim=9999 image_xscale=-1}
 
+if global.CutsceneSkip=0 with oControl canSkipCutscene=1
+
 newscript=function()
 {scenetime+=1;
+	
+if scenetime<=2
+if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 scenetime=6000}
+	
 ///280 for short sentences
 if scenetime=60
 {
@@ -132,8 +137,17 @@ cutsceneline=""
 }
 }
 
-if scenetime=3090
+if scenetime=3090 scenetime=6000
+
+if scenetime=6000
 {
+y=192 sprite_index=spr_cutscene2a2 image_index=1
+specialdraw=function()
+{y--; y=clamp(y,192,999) 
+draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
+draw_sprite(sprite_index,1,160,y)
+draw_sprite(spr_cutscene2a2,0,160,192)
+}
 	with oControl
 	{canSkipCutscene=0
 cutscenename="VIVA"
@@ -143,7 +157,7 @@ timeline_position=5800
 timeline_speed=1
 }
 
-if scenetime=clamp(scenetime,3160,3199) scenetime=3164
+if scenetime=clamp(scenetime,6000,6199) scenetime=6164
 
 }
 //////	
@@ -155,49 +169,15 @@ if scenetime=clamp(scenetime,3160,3199) scenetime=3164
 timeline_position=10
 timeline_speed=0
 
+
+
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 
-	
-if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0
-	cutscenename=""
-cutsceneline=""
-audio_stop_all()
-
-actorscreen.scenetime=3100
-
-global.CutsceneSkip=0
-
-timeline_position=5800
-timeline_speed=1
-
-canSkipCutscene=0
-
-cutscenename=""
-cutsceneline=""
-
-with actorscreen
-{scenetime=2580+240
-{y=192 sprite_index=spr_cutscene2a2 image_index=1
-specialdraw=function()
-{y--; y=clamp(y,192,999) 
-draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
-draw_sprite(sprite_index,1,160,y)
-draw_sprite(spr_cutscene2a2,0,160,192)
-}
-
-with oControl
-{
-cutscenename="VIVA"
-cutsceneline="SO... ANY OF YOU KNOW HOW TO DRIVE THIS?"
-}
-}
-}
-
-}
-
 cutscenePlaying=1
 }
+
+

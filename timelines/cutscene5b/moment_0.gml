@@ -5,10 +5,10 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
-CDtextA="GET THE PARACHUTES!"
-CDtextB="JUMP OFF THE PLANE!"
-CDtextC="USE THE HARPY!"
+CDtextT="WHICH WAY WILL\nYOU GO?"
+CDtextA="THE SNOWY MOUNTAIN."
+CDtextB="THE MAGIC CAVE."
+CDtextC="THE HOT AIR BALLOON."
 
 cutscenename=""
 cutsceneline=""

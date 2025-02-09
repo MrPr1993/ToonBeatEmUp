@@ -5,10 +5,10 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
-CDtextA="GET THE PARACHUTES!"
-CDtextB="JUMP OFF THE PLANE!"
-CDtextC="USE THE HARPY!"
+CDtextT="MAK A WISH!\nCHOOSE WISELY!"
+CDtextA="SOMEWHERE COOLER."
+CDtextB="BE ON LAND."
+CDtextC="REACH GREATER HEIGHTS."
 
 cutscenename=""
 cutsceneline=""
@@ -20,7 +20,7 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene5a0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_cutscene5c1 anim=9999 isDepth=0 depth=-3000 shadow=-1;
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -59,24 +59,31 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene
 
 if scenetime<340 {y=lerp(y,240,0.1)}
 if scenetime=340
-{sprite_index=spr_cutscene5a1
+{
+with actor8 {sprite_index=spr_geniehug x=0 y=0 shadow=-1 isDepth=0 depth=10}	
+
 with oControl
 {
 cutscenename="HAIFA" cutsceneline= "Please! Do not harm my beloved!"
 } x=0
-y=0 vspeed=-0.2
+y=0
 }
 
 if scenetime=540
-{sprite_index=spr_cutscene5a2 image_index=0 vspeed=0 x=0 y=0
+{ image_index=0 vspeed=0 x=-160 y=0 sprite_index=spr_geniehug hspeed=4
 with oControl
 {
 cutscenename="DIVAS" cutsceneline= "'Beloved'?!"
 }
 }
 
+scenetime=576 hspeed=0
+
 if scenetime=640
-{with oControl
+{actor6.sprite_index=mask_none
+	sprite_index=mask_none
+	
+with oControl
 {
 cutscenename="BURGUSON" cutsceneline= "I got lost while lookin' for the rest of the gang... But then I met this beautiful dame and we fell madly in love!"
 	
@@ -86,7 +93,7 @@ cutscenename="BURGUSON" cutsceneline= "I got lost while lookin' for the rest of 
 
 
 if scenetime=940
-{sprite_index=spr_cutscene5a3 image_index=1 vspeed=0 x=0 y=0 specialcheck[0]=0
+{
 with oControl
 {
 cutscenename="HAIFA" cutsceneline= "It is true! And if you leave us be, I will grant you one wish."
@@ -96,12 +103,16 @@ cutscenename="HAIFA" cutsceneline= "It is true! And if you leave us be, I will g
 
 if scenetime=1140
 {
+with actor6 sprite_index=spr_cutscene5a3
+
 with oControl
 {cutscenename="HAIFA" cutsceneline= "I could give you wealth!"}
 }
 
 if scenetime=1300
 {
+x=0 sprite_index=spr_geniewishes2
+
 with oControl
 {cutscenename="VIVA" cutsceneline= "We... got that? We're rich already."}
 }
@@ -139,7 +150,7 @@ with oControl
 if scenetime=2300
 {
 with oControl
-{cutscenename="HAIFA" cutsceneline= "Fine then! How about this..."}
+{cutscenename="HAIFA" cutsceneline= "..."}
 }
 
 if scenetime=2450
@@ -159,30 +170,11 @@ with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
 with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
 with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
 
-with actor6 {x=400}
-with actor7 {x=520 }
-with actor8 {x=640}
 
 with oControl
 {
 cutscenename="HAIFA" cutsceneline= "Tell me just what you need... But choose your words carefully..." 
 }
-}
-
-if scenetime=6120
-{
-with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
-with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
-with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
-with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
-with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
-}
-
-if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
-
-if scenetime=clamp(scenetime,6120,6300)
-{
-with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
 }
 
 if scenetime=6500

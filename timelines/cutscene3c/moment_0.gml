@@ -5,10 +5,10 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
-CDtextA="GET THE PARACHUTES!"
-CDtextB="JUMP OFF THE PLANE!"
-CDtextC="USE THE HARPY!"
+CDtextT="TRY AND SOLVE THE\nONI SISTERS' RIDDLE!"
+CDtextA="THE RED ONI IS LYING."
+CDtextB="BOTH ONI ARE LYING."
+CDtextC="THE BLUE ONI IS LYING."
 
 cutscenename="FUKUKIJO" cutsceneline= "Such strength..."
 }
@@ -201,14 +201,15 @@ cutscenename="HINA" cutsceneline= "Oh a riddle! How fun! Lay it on us!"
 }
 
 if scenetime=4000 ////Cut to black
-{
+{sprite_index=spr_allblackscreen x=0 y=0 hspeed=0 vspeed=0
 with oControl
 {quakeFXTime=10
 }
 }
 
 if scenetime=4250 ////Cut to black
-{
+{sprite_index=spr_oniriddle
+	
 with oControl
 {
 cutscenename="FUKUKIJO" cutsceneline= "One of us speaks only the truth... Like about how we wax our horns..."
@@ -227,38 +228,12 @@ if scenetime=4800 scenetime=6000
 
 if scenetime=6000
 {
-sprite_index=mask_none
-
-with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
-with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
-with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
-
-with actor6 {x=400}
-with actor7 {x=520 }
-with actor8 {x=640}
+sprite_index=spr_oniriddle
 
 with oControl
 {
 cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "Which of us is the liar?"
 }
-}
-
-if scenetime=6120
-{
-with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
-with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
-with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
-with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
-with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
-}
-
-if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
-
-if scenetime=clamp(scenetime,6120,6300)
-{
-with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
 }
 
 if scenetime=6500

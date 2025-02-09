@@ -14,7 +14,7 @@ with actorscreen
 sprite_index=mask_none
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "I have a friend in the swamp, she prefers to be alone but she doesn't mind my zombies visiting. I'm sure she can tell you!"
+cutscenename="ANNAMARI" cutsceneline= "This one leads to the swamp. There's a good neighbor of mine who treats undead well."
 }
 x=0
 y=0
@@ -91,7 +91,7 @@ with actorscreen
 sprite_index=mask_none
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "The thieves may have wandered to the nearby carnival. I'd go myself but... Ducks give me the vapors..."
+cutscenename="ANNAMARI" cutsceneline= "This leads to a carnival. I'd go myself but... Ducks give me the vapors..."
 }
 x=0
 y=0
@@ -167,7 +167,7 @@ CutsceneStage=rm_stagebeach
 
 with actorscreen
 {scenetime=0;
-with oControl {cutscenename="ANNAMARI" cutsceneline= "There's a sea witch who lurks around the beach at night. Maybe you can get her to help you?"
+with oControl {cutscenename="ANNAMARI" cutsceneline= "This one leads to a beach. A sea witch lives there. Maybe you can get her to help you?"
 }
 sprite_index=mask_none
 x=0

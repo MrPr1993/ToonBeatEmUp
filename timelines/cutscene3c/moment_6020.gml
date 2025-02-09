@@ -49,8 +49,8 @@ cutscenename="BAHATI" cutsceneline=  "Is that... A swamp?"
 }
 
 if scenetime=660
-{
-with oControl {cutscenename="" cutsceneline= "SMASH!"}
+{sprite_index=spr_redsmack
+with oControl {quakeFXTime=20 cutscenename="" cutsceneline= "SMASH!"}
 }
 
 if scenetime=1060
@@ -111,7 +111,8 @@ with oControl {cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "Hmph! TOUGH LUCK
 
 if scenetime=1300
 {////They walk off
-with oControl {cutscenename="" cutsceneline="BIG SMASH!"}
+	sprite_index=spr_bothsmack
+with oControl {quakeFXTime=20 cutscenename="" cutsceneline="BIG SMASH!"}
 }
 
 if scenetime=1500
@@ -186,8 +187,8 @@ with oControl {cutscenename="HINA" cutsceneline= "Oh, the beach looks pretty ton
 }
 
 if scenetime=1300
-{
-with oControl {cutscenename="" cutsceneline="SMASH!!!"}
+{sprite_index=spr_bluesmack
+with oControl {quakeFXTime=20 cutscenename="" cutsceneline="SMASH!!!"}
 }
 
 if scenetime=1500

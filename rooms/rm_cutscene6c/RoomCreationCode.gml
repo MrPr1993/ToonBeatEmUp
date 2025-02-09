@@ -5,6 +5,6 @@ oControl.isNotStage=1
 
 oControl.isCutscene=1
 
-oControl.timeline_index=cutscene6a
+oControl.timeline_index=cutscene6c
 oControl.timeline_speed=1
 oControl.timeline_running=1

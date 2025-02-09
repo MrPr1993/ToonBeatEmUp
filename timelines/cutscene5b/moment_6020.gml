@@ -34,7 +34,7 @@ cutscenename="VIVA" cutsceneline= "Fine by me... I'll climb it all on my own!"
 }
 
 if scenetime=340
-{
+{with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
 with oControl
 {
 cutscenename="SOFIA" cutsceneline= "Wait a minute, you dumb blonde!"

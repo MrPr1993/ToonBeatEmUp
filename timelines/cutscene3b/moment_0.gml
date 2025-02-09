@@ -5,10 +5,10 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
-CDtextA="GET THE PARACHUTES!"
-CDtextB="JUMP OFF THE PLANE!"
-CDtextC="USE THE HARPY!"
+CDtextT="WHICH ONE\nWILL YOU WANT?"
+CDtextA="RED DOOR."
+CDtextB="GREEN DOOR."
+CDtextC="BLUE DOOR."
 
 cutscenename="VIVA" cutsceneline="Huh?! Where'd that haughty ghost get off to?"
 
@@ -46,10 +46,7 @@ actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
-with oControl
-{
-
-}
+sprite_index=spr_whereisghost
 
 newscript=function()
 {
@@ -121,14 +118,17 @@ cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
 }
 if scenetime=2040
 {
+sprite_index=spr_ghostslash
+
 with oControl
-{
+{quakeFXTime=10
 cutscenename="" cutsceneline= "CHOP!"
 }
 }
 
 if scenetime=2340
 {
+sprite_index=spr_cutscene3b3 image_index=0
 with oControl
 {
 //CHOP
@@ -138,7 +138,7 @@ cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for th
 }
 
 if scenetime=2340
-{
+{sprite_index=spr_cutscene3b3 image_index=1
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
@@ -168,7 +168,7 @@ cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
 }
 }
 if scenetime=3340
-{
+{sprite_index=spr_allblackscreen x=0 y=0
 with oControl
 {
 cutscenename="" cutsceneline= "Beating ensues"
@@ -182,7 +182,7 @@ with oControl
 }
 }
 if scenetime=3940
-{
+{sprite_index=spr_beatghost image_index=0
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "WAIT WAIT WAIT!!! I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
@@ -218,7 +218,7 @@ cutscenename="VIVA" cutsceneline= "Wait how are you..."
 }
 }
 if scenetime=5440
-{
+{sprite_index=spr_putheadback image_index=0
 with oControl
 {
 cutscenename="" cutsceneline= "Squish"
@@ -256,7 +256,7 @@ with actor8 {x=640}
 
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "Well...."}
+cutscenename="ANNAMARI" cutsceneline= "They kinda spread out into my spooky doors... so you should pick which one."}
 }
 
 if scenetime=6120

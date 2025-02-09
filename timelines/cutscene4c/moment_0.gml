@@ -30,12 +30,12 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 {sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
-actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
+actor5=instance_create_depth(3200-64,150,-1,oCameoChar) with actor5
 {sprite_index=spr_seaweed_stand image_index=10 anim=9999 image_xscale=-1
 	}
 
 actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+{sprite_index=spr_octopus_tiny anim=9999 image_xscale=1}
 
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
@@ -70,53 +70,28 @@ with actor2 {x=64}
 with actor3 {x=64}
 with actor4 {x=64}
 with actor5 {x=320-64}
+with actor {x=320-32 y=160}
 	
 sprite_index=mask_none
 with oControl
 {
 cutscenename="BAHATI" cutsceneline="Sorry. We HAVE been too gung-ho on the whole 'fight first, ask questions later' approach..."
 } x=0
-y=0 vspeed=-0.2
+y=0
 }
 
 if scenetime=640
 {sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
-
+scenetime=1700
 	
 with oControl
 {cutscenename="VIVA"
 cutsceneline="Look, we've had some VERY valuable personal treasures stolen from us, and we need to get them back. Do you know where they are?"
 }
 }
-if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
-
-
-if scenetime=1060
-{with oControl
-{
-cutsceneline= "My boss ain't gonna be happy to see all this damage!"
-}
-}
-
-if scenetime=1460
-{	
-with oControl
-{image_index=1
-cutscenename="BAHATI" cutsceneline= "Your boss?"
-}
-hspeed=-2 
-}
-
-if scenetime=1660
-{	
-with oControl
-{image_index=1
-cutscenename="VIVA" cutsceneline= "And who's that? Speak up, birdbrain, now!"}
-hspeed=-2 
-}
 
 if scenetime=2040
-{
+{actor5.image_xscale=1
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Very well... I suppose I'll let this incident go since Larry attacked you first. Larry, fetch my crystal ball would you, sweetie?"
@@ -140,7 +115,7 @@ cutscenename="CIRCE" cutsceneline= "Oh, come now, mommy will take you to a shop 
 }
 
 if scenetime=3100
-{
+{actor5.hspeed=2
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Ya know? That octopus looked adorable."
@@ -164,49 +139,26 @@ cutscenename="VIVA" cutsceneline= "What."
 }
 
 if scenetime=3500
-{
+{actor6.hspeed=-2 actor6.x=380
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Oh, here we are, thank you dear!"
 }
 }
 
+if scenetime=3700 actor6.hspeed=0
+
 if scenetime=3800 scenetime=6000
 
 if scenetime=6000
 {
-sprite_index=mask_none
-
-with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
-with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
-with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
-
-with actor6 {x=400}
-with actor7 {x=520 }
-with actor8 {x=640}
+sprite_index=spr_witchcrystalball x=0 y=0
 
 with oControl
 {
-cutscenename="CIRCE" cutsceneline= "Let's see what you can see in this crystal ball!"}
+cutscenename="CIRCE" cutsceneline= "Now, let's see what you can see in this crystal ball!"}
 }
 
-if scenetime=6120
-{
-with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
-with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
-with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
-with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
-with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
-}
-
-if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
-
-if scenetime=clamp(scenetime,6120,6300)
-{
-with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
-}
 
 if scenetime=6500
 {

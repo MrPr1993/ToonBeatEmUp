@@ -51,7 +51,12 @@ cutscenename="VIVA" cutsceneline= "Ughhhhhh.... Fine, let's go..."
 
 if scenetime=660
 {
-with oControl {cutscenename="" cutsceneline= "The divas leave"}
+with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
+with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
+with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=2}
+with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2}	
+
+with oControl {cutscenename="" cutsceneline= ""}
 }
 
 if scenetime=1120
@@ -66,6 +71,7 @@ with oControl {cutscenename="CIRCE" cutsceneline= "Ah..."}
 
 if scenetime=1720
 {
+with actor5 {sprite_index=spr_seaweed_move image_xscale=-1 hspeed=-1}
 with oControl {cutscenename="CIRCE" cutsceneline="Well it's no longer my problem."}
 }
 
@@ -140,10 +146,15 @@ cutscenename="CIRCE" cutsceneline= "I'm going to send you to the ocean with my m
 
 if scenetime=2300
 {
-with oControl {cutscenename="" cutsceneline= "Teleport"}
+with actor1 x=9999
+with actor2 x=9999
+with actor3 x=9999
+with actor4 x=9999
+
+with oControl {cutscenename="" cutsceneline= ""}
 }
 
-if scenetime=2300
+if scenetime=2700
 {
 with oControl {cutscenename="CIRCE" cutsceneline= "Yes, yes. That beanpole reminded me of him. Such a tiny waist. Jeez."}
 }
@@ -190,7 +201,10 @@ with oControl {cutscenename="CIRCE" cutsceneline= "It's... right over there."
 }
 }
 
-if scenetime=860
+if scenetime=clamp(scenetime,700,900)
+{SceneX+=1 __view_set( e__VW.XView, 0, SceneX )}
+
+if scenetime=1060
 {
 with oControl {cutscenename="VIVA" cutsceneline="Was that ever been there?"
 
@@ -198,32 +212,38 @@ with oControl {cutscenename="VIVA" cutsceneline="Was that ever been there?"
 	}
 }
 
-if scenetime=1060
+if scenetime=1260
 {
 with oControl {cutscenename="CIRCE" cutsceneline="Follow that road and it will take you from the shores to the dunes!"
 }
 }
 
-if scenetime=1300
+if scenetime=1500
 {
 with oControl {cutscenename="VIVA" cutsceneline="Well that's piece of cake. Let's go girls!"}
 }
 
-if scenetime=1500
+
+if scenetime=1700
 {
+with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
+with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
+with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=2}
+with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2}		
+
 with oControl {//Divas move
 cutscenename="" cutsceneline=""}
 
 }
 
-if scenetime=1700
+if scenetime=1900
 {
 with oControl {//SMASH!
 cutscenename="CIRCE" cutsceneline="Yes. She is skinny, the poor thing."}
 }
 
 
-if scenetime=2020
+if scenetime=2220
 {
 oControl.stageEndFX=1
 }

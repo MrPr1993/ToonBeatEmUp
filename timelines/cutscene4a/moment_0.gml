@@ -5,10 +5,10 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
-CDtextA="GET THE PARACHUTES!"
-CDtextB="JUMP OFF THE PLANE!"
-CDtextC="USE THE HARPY!"
+CDtextT="SHE'S NOT TALKING.\nWHAT DO YOU DO?"
+CDtextA="LEAVE THE CIRCUS."
+CDtextB="HELP HER OUT."
+CDtextC="HIT THE DUCK."
 
 cutscenename="DIXIE" cutsceneline= "WHAT'S THE BIG IDEA?!"
 
@@ -92,14 +92,20 @@ cutsceneline="What're you broads doin' are breakin' in, smackin' me and the staf
 if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
 
 if scenetime=940
-{with oControl
+{
+	sprite_index=spr_cutscene4a x=0 y=0
+
+with oControl
 {
 cutsceneline= "And ruinin' my show!"
 }
 }
 
 if scenetime=1260
-{with oControl
+{sprite_index=mask_none
+with actor5 image_xscale=1
+	
+with oControl
 {
 cutsceneline= "My boss ain't gonna be happy to see all this damage!"
 }
@@ -115,7 +121,7 @@ hspeed=-2
 }
 
 if scenetime=1660
-{	
+{	with actor5 image_xscale=-1
 with oControl
 {image_index=1
 cutscenename="VIVA" cutsceneline= "And who's that? Speak up, birdbrain, now!"}
@@ -158,18 +164,7 @@ with oControl
 cutscenename="DIXIE" cutsceneline= "How about that?"}
 }
 
-if scenetime=6120
-{
-with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
-with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
-with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
-with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
-with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
-}
-
-if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
-
-if scenetime=6121
+if scenetime=6021
 {
 with oControl
 {

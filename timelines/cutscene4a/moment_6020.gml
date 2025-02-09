@@ -69,7 +69,7 @@ cutscenename="DIXIE" cutsceneline= "Heheheh... Those palookas got no clue people
 }
 }
 
-if scenetime=1020
+if scenetime=1120
 {
 oControl.stageEndFX=1
 }
@@ -127,24 +127,46 @@ cutscenename="HINA" cutsceneline= "Shhhh, let's trust Bahati on this."
 }
 }
 
-if scenetime=660
-{
+if scenetime=740
+{sprite_index=spr_allblackscreen
+}
+
+if scenetime=840
+{sprite_index=spr_allblackscreen
+cutscenename="VIVA" cutsceneline= "Hey this isn't their costume room."
+}
+
+if scenetime=1260
+{sprite_index=spr_gotchacannon
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "And now for the grand finale... THESE DAMES ARE GOIN' ON A TRIP TO THE OCEAN! COURTESY OF THE DIXIE CANNON!"
 }
 }
 
-if scenetime=860
-{
+if scenetime=1460
+{sprite_index=spr_byetent x=0 y=0
 with oControl
 {
-cutscenename="DIVAS" cutsceneline= "WHAT?!!?"
+cutscenename="" cutsceneline= ""
 }
 }
 
-if scenetime=1060
-{
+if scenetime=1660
+{sprite_index=spr_byetent x=0 y=0
+with oControl
+{quakeFXTime=10
+cutscenename="" cutsceneline= ""
+}
+}
+
+if scenetime=1860
+{actor5.x=9999
+with actor1 {sprite_index=spr_viva_hit image_index=7 x=160 shadow=-1}
+with actor2 {sprite_index=spr_hina_hit image_index=7 x=160 shadow=-1}
+with actor3 {sprite_index=spr_bahati_hit image_index=7 x=160 shadow=-1}
+with actor4 {sprite_index=spr_sofia_hit image_index=7 x=160 shadow=-1}
+
 with oControl
 {
 
@@ -153,7 +175,11 @@ cutscenename="VIVA" cutsceneline= "I KNEW we shouldn't have helped that @#$% duc
 }
 }
 
-if scenetime=1320
+if scenetime>=1860
+{with oCameoChar vspeed+=0.45
+}
+
+if scenetime=2320
 {
 oControl.stageEndFX=1
 }
@@ -168,10 +194,10 @@ CutsceneStage=rm_stagedesert
 
 with actorscreen
 {scenetime=0;
-
-sprite_index=mask_none
+x=0 y=0
+sprite_index=spr_hitherface
 with oControl
-{
+{quakeFXTime=10
 cutscenename="" cutsceneline= "SLAP!"
 }
 x=0
@@ -208,12 +234,18 @@ cutscenename="SOFIA" cutsceneline= "Already on it! TAXIIIIII!"
 }
 
 if scenetime=860
-{
+{actor6.sprite_index=spr_taxidesert actor6.hspeed=6
 with oControl
 {
 cutscenename="" cutsceneline= ""
 }
 }
+
+if scenetime=860 actor6.hspeed=0
+
+if scenetime=920 {actor6.hspeed=6
+	actor1.y=999 actor2.y=999 actor3.y=999 actor4.y=999
+	}
 
 if scenetime=1020
 {

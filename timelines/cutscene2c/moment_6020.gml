@@ -30,11 +30,42 @@ depth=-9999 image_xscale=320 image_yscale=240
 }
 
 if scenetime=920
-{sprite_index=mask_none}
+{sprite_index=mask_none
+	
+	
+with actor1 {x=160-16 y=144 sprite_index=spr_viva_hit image_index=17 ground=0 spdZ=-8 hspeed=5 anim=9999
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
+if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
+	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_point image_index=0}}}}
+	
+with actor2 {x=160+16 y=144 sprite_index=spr_hina_hit image_index=17 ground=0 spdZ=-9 hspeed=3.5 anim=9999
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
+if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
+	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_hina_point image_index=0}}}}
+	
+with actor3 {x=160-32 y=144 sprite_index=spr_bahati_hit image_index=17 ground=0 spdZ=-8.5 hspeed=4 anim=9999
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
+if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
+	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_bahati_point image_index=0}}}}
+	
+with actor4 {x=160+32 y=144 sprite_index=spr_sofia_hit image_index=17 ground=0 spdZ=-9 hspeed=5 anim=9999
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
+if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
+	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_sofia_point image_index=0}}}}
+	
+	}
+
+
 
 if scenetime=980
-{	
-with oControl {cutscenename="VIVA" cutsceneline="HONEST?! WELL, THAT'S WHAT WE GET!"}
+{
+if actor1.ground=1 scenetime=970
+else
+with oControl {cutscenename="VIVA" cutsceneline="HONESTY?! THAT'S WHAT YOU GOT?!"}
 }
 
 if scenetime=1000
@@ -48,12 +79,19 @@ with oControl {cutscenename="VIVA" cutsceneline="OH NO MATTER. WE HAD NO WAY TO 
 }
 
 if scenetime=1420
+{x=0 y=0 vspeed=-0.5
+sprite_index=spr_lookamansion
+with oControl {cutscenename="" cutsceneline=""}
+}
+
+if scenetime=1620
 {
+
 with oControl {cutscenename="VIVA" cutsceneline="WHERE ARE WE...?"}
 }
 
 ////END SCENE PART
-if scenetime=1600 oControl.stageEndFX=1
+if scenetime=1800 oControl.stageEndFX=1
 }
 }
 //////
@@ -72,13 +110,26 @@ with actorscreen {isDepth=0 x=0 y=0 depth=-9999 specialcheck[0]=-320 specialchec
 newscript=function()
 {scenetime+=1;
 if scenetime=60{ x=0 y=0
-with oControl {cutscenename="DOLORES" cutsceneline="C'MON I DON'T HAVE ALL DAY AND!"}
+with oControl {cutscenename="DOLORES" cutsceneline="C'MON! I DON'T HAVE ALL DAY AND-"}
 }
 if scenetime=120*4{ x=0 y=0
-with oControl {cutscenename="VIVA" cutsceneline="QUICK RUSH EM'!"}}
+with oControl {cutscenename="VIVA" cutsceneline="QUICK RUSH EM'!"}
+
+with actor1 {sprite_index=spr_viva_run image_speed=0.25 hspeed=4}
+with actor2 {sprite_index=spr_hina_run image_speed=0.25 hspeed=4}
+with actor3 {sprite_index=spr_bahati_run image_speed=0.25 hspeed=4}
+with actor4 {sprite_index=spr_sofia_run image_speed=0.25 hspeed=4}
+
+}
 
 if scenetime=180*4{ x=0 y=0
-with oControl {cutscenename="DOLORES" cutsceneline="OW! HEY GET BACK HERE!"}}
+	
+	with actor5 {sprite_index=spr_twoheads_hit image_index=24}
+	with actor6 {sprite_index=spr_cowboy_hit image_index=24}	
+	with actor7 {sprite_index=spr_cowboy_hit image_index=24}	
+	
+
+with oControl {cutscenename="DOLORES" cutsceneline="HEY GET BACK HERE!"}}
 
 if scenetime=240*4{ x=0 y=0
 with oControl {cutscenename="SOFIA" cutsceneline="I CALL DIBS ON THE COAL!"}}
@@ -92,7 +143,12 @@ with oControl {cutscenename="BAHATI" cutsceneline="HEY ARE YOU SURE YOU KNOW WHA
 if scenetime=420*4{ x=0 y=0
 with oControl {cutscenename="VIVA" cutsceneline="AHHHHH WE DON'T WE DON'T!"}}
 
-if scenetime=520*4{ x=0 y=0
+if scenetime>=520*4 oControl.quakeFXTime=10
+
+if scenetime=520*4{ x=-480 y=128
+	
+sprite_index=spr_trainzoom hspeed=2
+	
 with oControl {cutscenename="DIVAS" cutsceneline="AAAAAAAAAAAAAAAAAAAHHHHHHH!!!!"}}
 
 ////END SCENE PART
@@ -138,6 +194,15 @@ with oControl {cutscenename="VIVA" cutsceneline="COME ON. LET'S TAKE A SEAT. I G
 }
 if scenetime=2420{ x=0 y=0
 with oControl {cutscenename="VIVA" cutsceneline="A LOT OF IT."}
+}
+
+if scenetime=2620
+{
+x=-480 y=128
+	
+sprite_index=spr_trainzoom hspeed=1
+	
+with oControl {cutscenename="" cutsceneline=""}
 }
 
 ////END SCENE PART

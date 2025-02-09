@@ -73,7 +73,7 @@ draw_sprite(spr_cutscene2bB1,image_index,0,round(specialcheck[0]))
 if scenetime<60 {draw_set_color(c_black) draw_rectangle(-999,-999,9999,9999,false) draw_set_color(c_white)}
 else
 {
-if scenetime<500
+if scenetime<-100+420*4
 {
 specialcheck[0]=lerp(specialcheck[0],0,0.03)
 specialcheck[1]=lerp(specialcheck[1],0,0.04)
@@ -97,9 +97,6 @@ newscript=function()
 if scenetime=60{ x=0 y=0
 with oControl {cutscenename="VIVA" cutsceneline="WHAT WAS I THINKING?! WE ARE GONNA DIE!"}
 }
-if scenetime=120*4{ x=0 y=0
-with oControl {cutscenename="SOFIA" cutsceneline="LET'S GO!"}}
-
 if scenetime=180*4{ x=0 y=0
 with oControl {cutscenename="SOFIA" cutsceneline="WOW, DIDN'T YOU THINK OF A GOOD PLAN?"}}
 

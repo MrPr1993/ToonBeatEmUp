@@ -87,9 +87,9 @@ sprite_index=spr_allblackscreen image_xscale=8
 }
 
 if scenetime=720
-{
-x=0 hspeed=-4
-sprite_index=spr_allblackscreen image_xscale=1
+{sprite_index=spr_lookshipgo
+x=0 y=0 hspeed=0
+image_xscale=1
 with oControl {cutscenename="BAHATI" cutsceneline="AND THERE IT GOES..."}
 }
 
@@ -137,7 +137,6 @@ CutsceneStage=rm_stage3
 with actorscreen
 {scenetime=0;
 
-sprite_index=mask_none
 with oControl
 {
 cutscenename="VIVA" cutsceneline="WE GOTTA TAKE THE WHEEL!"
@@ -151,7 +150,8 @@ scenetime+=1;
 
 if scenetime=360
 {
-
+specialdraw=-1;
+sprite_index=spr_grabdawheel image_index=1
 with oControl {quakeFXTime=10; cutscenename="HINA" cutsceneline="LIKE THIS?"}
 }
 
@@ -176,12 +176,12 @@ with oControl {cutscenename="VIVA" cutsceneline="SHE WAS BEING SARCASTIC!"}
 }
 
 if scenetime=1750
-{
+{image_index=2
 with oControl {cutscenename="VIVA" cutsceneline="AHHHHH LOOK OUT!!!!"}
 }
 
 if scenetime=2000
-{
+{image_index=3
 with oControl {cutscenename="DIVAS" cutsceneline="AAAAAAAAAAAAAAAAAAAHHHHHHH!!!!"}
 }
 
