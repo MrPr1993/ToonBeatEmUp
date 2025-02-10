@@ -1,7 +1,10 @@
 /// @description Hurt
 function hit_reaction() {
+
 	if act=1
 	{
+var hpregister=hp;	
+
 if targetID!=-1
 {
 character_release(0,-4,2*image_xscale,0,3,5)
@@ -342,10 +345,10 @@ wobbleY=0.9
 	///Special State for certain enemies after
 	
 
-	
+if hpregister!=hp {oControl.perfecthp=0}	
 	
 	}
 
 
-if isBoss and hp<=0 {oControl.showtimehit=showtimehit} else oControl.showtimehit=0
+if isBoss and hp<=0 {oControl.showtimehit=showtimehit} showtimehit=0
 }

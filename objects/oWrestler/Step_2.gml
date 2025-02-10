@@ -48,7 +48,7 @@ sprite_index=spr_wrestler_airattack
 		if AnimFrame=clamp(AnimFrame,1,2) if ground {PlaySoundNoStack(snd_swing) PlaySound(snd_hwolf3) z-=2 ground=0 zSpeed=-8}
 	if !ground 
 	{MoveType=4 AnimFrame=2.9
-	isThrow=0 throwing=0 atkcol_set(7,0,0,1.75,1,64)
+	isThrow=0 throwing=0 atkcol_set(7,0,0,1.925,1,64)
 	if place_free(x+2*targetX,y) x+=2*image_xscale
 	//if place_free(x,y+2*targetY) if y<view_yview[0]+240-2 y+=2*targetY
 	if zSpeed>0 z+=0.45
@@ -90,7 +90,7 @@ if AnimFrame>8 {atk=0 canmove=1 anim=0}
 /////Grab Charge
 if anim=12
 {
-	atkcol_set(13*2,0,0,0.85,1,1) damage=0 MoveType=0
+	atkcol_set(28,0,0,0.925,1,1) damage=0 MoveType=0
 AnimFrame+=0.01 //selfatk.HitSound=-1
 if AnimFrame<0.25 {sprite_index=StandSpr image_index=1}
 else
@@ -156,14 +156,14 @@ targetID.hurt=1
 
 
 if image_index<1
-{targetID.x=x+24*image_xscale
+{targetID.x=x+26*image_xscale
 targetID.image_index=GrabFrame
 targetID.image_xscale=-image_xscale
 }
 else
 {
 	if !ground
-	{targetID.x=x+32*image_xscale zSpeed+=0.45
+	{targetID.x=x+35*image_xscale zSpeed+=0.45
 	if special1<2 special1+=0.1 
 targetID.image_index=3+special1
 targetID.image_xscale=image_xscale

@@ -35,7 +35,7 @@ if object_index=oControl if showtimehit setfeats=1 break;
 
 case 5: featname="WOLF WHISPERER"
 if room=rm_stage1 and stageClear=1
-if object_index=oControl {if instance_exists(oPlayer) with oPlayer if hp<maxhp oControl.perfecthp=0 if perfecthp setfeats=1} break;
+if object_index=oControl {if perfecthp setfeats=1} break;
 
 case 6: featname="ONE LONG NOTE"
 if stageClear=1

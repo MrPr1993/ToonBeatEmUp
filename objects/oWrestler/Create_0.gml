@@ -31,7 +31,7 @@ OneAttack=2
 hp=0.8
 maxhp=0.8
 
-height=78
+height=86
 
 specialFX=0
 
@@ -73,10 +73,10 @@ current_pal=0;
 my_pal_sprite=spr_ninjapal
 //Usagi, Nousagi, Koni
 
-spritepos_setup(1,24,6,20)
+spritepos_setup(1,24,7,22)
 
-spritepos_setup(2,0,29,35)
-spritepos_setup(2,24,28,36)
+spritepos_setup(2,0,32,39)
+spritepos_setup(2,24,31,40)
 
 enemyscript=animsetup_zombie
 
