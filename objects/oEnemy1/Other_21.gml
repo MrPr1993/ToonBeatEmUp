@@ -9,12 +9,13 @@ PlaySoundNoStackPitch(choose(DamageVoice1,DamageVoice2,DamageVoice3),1+choose(-r
 }
 
 
-if oControl.enemyID=-1
-{oControl.enemyhp=hp oControl.hpLerp=hp}
+//if oControl.enemyID=-1
+//{oControl.enemyhp=hp oControl.hpLerp=hp}
 
-oControl.enemyShowTime=30
-oControl.hpLerp=hp
+//oControl.enemyShowTime=30
+//oControl.hpLerp=hp
 
-oControl.enemyID=1
+//oControl.enemyID=1
 }
+
 

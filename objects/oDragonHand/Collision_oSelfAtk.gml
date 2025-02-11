@@ -30,6 +30,7 @@ recovery=90
 PlaySoundNoStack(snd_hit)
 
 
+
 	oControl.showhp=1
 
 	oControl.enemyhp=hp oControl.hpLerp=hp oControl.enemymaxhp=maxhp

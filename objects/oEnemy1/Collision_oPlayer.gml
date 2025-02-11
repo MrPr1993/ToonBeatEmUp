@@ -6,6 +6,8 @@ if Throw=0 and dead=0 and other.thrownAtk=1 and anim!=6
 if other.z>z-height and other.z<z+2 and other.thrownPlayer!=-1 and other.thrownPlayer!=isPlayer and other.anim=5
 if recovery=0
 {
+playerFrom=1;	
+
 hp-=other.thrownAtkDmg/(defense+extradefense)
 
 if !instance_exists(hitSource) hitSource=-1
@@ -20,6 +22,8 @@ else
 with other hitSource.PlayerScore+=pointshit
 }
 }
+
+if other.object_index=oPlayer playerFrom=other.playerNO
 
 shaketime=30
 

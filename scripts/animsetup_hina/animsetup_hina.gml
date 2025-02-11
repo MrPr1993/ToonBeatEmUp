@@ -691,6 +691,7 @@ if AnimFrame>5.5 AnimFrame+=0.25
 	sprite_index=spr_hina_grab
 	image_index=0 image_speed=0
 	sentFlying=0 hspeed=0
+	targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
 	targetID.hit=2 targetID.recoveryThrow=10
 	canmove=0 targetID.hitSource=id
@@ -741,6 +742,7 @@ if AnimFrame>5.5 AnimFrame+=0.25
 	targetID.ground=0
 	targetID.atk=0
 	targetID.hurt=1
+	targetID.playerFrom=playerNO
 	///Drag Enemy
 	if AnimFrame<3 targetID.targetHeightHit=targetID.GrabFrame else targetID.targetHeightHit=0
 	grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale
@@ -762,6 +764,7 @@ if AnimFrame>5.5 AnimFrame+=0.25
 
 
 	}
+	targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()
 	}
 
@@ -778,6 +781,7 @@ if AnimFrame>5.5 AnimFrame+=0.25
 	targetID.x=x
 	if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
+	targetID.playerFrom=playerNO
 	with targetID
 	{
 	hurt=1
@@ -803,6 +807,7 @@ if AnimFrame>5.5 AnimFrame+=0.25
 	{
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
+	targetID.playerFrom=playerNO
 	with targetID
 	{
 	hurt=1
@@ -837,7 +842,7 @@ if AnimFrame>5.5 AnimFrame+=0.25
 	Throw=1
 	sprite_index=spr_hina_throw
 	image_speed=0
-
+targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
 	targetID.hit=2 //targetID.ThrowDamage=0.1
 	targetID.ground=0
@@ -870,6 +875,7 @@ atkcol_set(24,0,25,1.55,1,52)
 	if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
 	targetID.y=y
+	targetID.playerFrom=playerNO
 flashFX(x+39*image_xscale,y,z-77,spr_hitflash,0,0.5,0,1,1,c_white,1)
 	with targetID
 	{
@@ -914,7 +920,9 @@ flashFX(x+39*image_xscale,y,z-77,spr_hitflash,0,0.5,0,1,1,c_white,1)
 	image_speed=0
 	if instance_exists(targetID) targetID.depth=depth-1
 if targetID!=-1
+{targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
+}
 	targetID.hit=2 targetID.ThrowDamage=0
 	targetID.ground=0
 	targetID.atk=0
@@ -974,7 +982,7 @@ if targetID!=-1
 	targetID.x=x
 	if !place_free(targetID.x-1*image_xscale,y)
 	targetID.x=x
-	
+	targetID.playerFrom=playerNO
 	with targetID
 	{
 	recovery=90 Throw=0

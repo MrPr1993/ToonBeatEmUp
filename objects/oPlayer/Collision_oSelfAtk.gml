@@ -10,8 +10,9 @@ and other.atk=1 and invincible=0 and recovery=0 and superThrown=0 and anim!=6
 
 if (z-height)<(other.z) and (z)>(other.z-other.height)
 {if other.HitQuake!=0 oControl.quakeFXTime=other.HitQuake
+	hpregister=hp
 		other.comboHit=90 if global.Cheat[4] if global.NoCheat hp=0
-hitresponse() with other {with selfsource {hitCheck=1 hud_show() 
+hitresponse() other.selfsource.playerFrom=playerNO with other { with selfsource {hitCheck=1 hud_show() 
 
 event_user(14)
 if HitReactionScript!=-1
@@ -30,10 +31,15 @@ if (z-height)<(other.z) and (z)>(other.z-other.height)
 and recovery=0 and superThrown=0 and anim!=6
 {if global.Cheat[4] if global.NoCheat hp=0
 	other.comboHit=90
-hitresponse() with other {with selfsource {hitCheck=1 hud_show() event_user(14) ///Special Hit for enemy hitting player
+	
+	
+hitresponse() other.selfsource.playerFrom=playerNO with other { with selfsource {hitCheck=1 hud_show() event_user(14) ///Special Hit for enemy hitting player
 
 }if object_index=oBossHazard hitscript()}
 super+=0.25*canSuper
+
+if hpregister!=hp {oControl.perfecthp=0}
+
 }
 }
 }

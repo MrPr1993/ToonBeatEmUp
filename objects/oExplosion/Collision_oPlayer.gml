@@ -2,9 +2,11 @@ if act=1
 if canHarm=1
 {
 if other.z=clamp(other.z,z,z+128) and other.immune=0 and other.hurt=0 and other.recovery=0 and other.Throw=0 and atk=1
-{other.hp-=damage/(other.defense+other.extradefense)
-with other
 {
+with other hpregister=hp
+other.hp-=damage/(other.defense+other.extradefense)
+with other
+{if hpregister!=hp {oControl.perfecthp=0}
 HitType=5 event_user(0)
 }
 }

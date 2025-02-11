@@ -102,7 +102,7 @@ frame_set(5,18,0.25) if AnimFrame>5.75 AnimFrame=0
 	if (key_jump_hold and dead=0 and hp!=0 and prevanim!=8 and prevanim!=9)
 	{hurt=0 AnimFrame=0 anim=25 exit;}///Break out of fall
 hurt=1
-	
+	hpregister=hp
 		hp-=thrownDMG //The character will take damage if it's a throw attack
 
 	hground=instance_create_depth(x,y,0,oFlashFX)
@@ -117,6 +117,8 @@ hurt=1
 	if isEnemy=1
 	{event_user(10) hp-=ThrowDamage hpscan() hud_show() ThrowDamage=0} //If land take damage
 	else {hp-=ThrowDamage ThrowDamage=0}
+ 
+ if hpregister!=hp {oControl.perfecthp=0}
  
 	 recovery=10 
  

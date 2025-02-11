@@ -2,14 +2,14 @@ oControl.quakeFXTime=20
 PlaySound(snd_break)
 PlaySound(snd_explosion)
 
-oControl.enemyhp=0 oControl.hpLerp=0 oControl.enemymaxhp=1.0
-oControl.enemyPortraitSpr=spr_miscface
-oControl.enemyPortraitIndex=0
-oControl.enemyname="WALL"
-oControl.enemyShowTime=30
-oControl.hpLerp=0
-oControl.enemyhplayer=0
-oControl.enemyID=0
+oControl.Penemyhp[1]=0 oControl.PhpLerp[1]=0 oControl.Penemymaxhp[1]=1.0
+oControl.PenemyPortraitSpr[1]=spr_miscface
+oControl.PenemyPortraitIndex[1]=0
+oControl.Penemyname[1]="WALL"
+oControl.PenemyShowTime[1]=30
+oControl.PhpLerp[1]=0
+oControl.Penemyhplayer[1]=0
+oControl.PenemyID[1]=0
 with oControl
 {current_pal=0;
 my_pal_sprite=spr_enemypal

@@ -3,7 +3,7 @@ function hit_reaction() {
 
 	if act=1
 	{
-var hpregister=hp;	
+
 
 if targetID!=-1
 {
@@ -345,7 +345,7 @@ wobbleY=0.9
 	///Special State for certain enemies after
 	
 
-if hpregister!=hp {oControl.perfecthp=0}	
+
 	
 	}
 

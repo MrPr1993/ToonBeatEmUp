@@ -11,9 +11,10 @@ if other.isPlayer!=isPlayer and other.atk=1 and Throw=0 and dead=0 and superThro
 and anim!=6 and recovery=0
 
 if (z-height)<(other.z) and (z)>(other.z-other.height)
-{
+{hpregister=hp
 	if canBlock=0
 	{
+	
 	hp-=other.damage/(defense+extradefense)
 
 	other.hitID=id
@@ -39,6 +40,8 @@ if (z-height)<(other.z) and (z)>(other.z-other.height)
 	hp-=0.01
 
 	}
+	
+if hpregister!=hp {oControl.perfecthp=0}
 
 	shaketime=30
 thrownPlayer=-1 

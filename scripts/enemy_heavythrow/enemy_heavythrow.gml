@@ -22,7 +22,8 @@ function enemy_heavythrow(argument0, argument1, argument2, argument3) {
 	oControl.quakeFXTime=16 PlaySoundNoStack(targetID.HitGround)
 	targetID=-1
 	hurt=1 AnimFrame=0 anim=9
-	hp-=0.25
+	hpregister=hp
+	hp-=0.25 if hpregister!=hp {oControl.perfecthp=0}
 	exit;
 	} 
 	//////////

@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+playerFrom=1
 image_speed=0
 act=1
 targetEnemy=-1

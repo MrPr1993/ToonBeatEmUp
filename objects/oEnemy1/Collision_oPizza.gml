@@ -7,6 +7,7 @@ if other.attack=1 and Throw=0 and dead=0 and anim!=6
 if other.z>z-height and other.z<z+2
 if recovery=0
 {
+playerFrom=1;
 
 if other.canHit=1
 {

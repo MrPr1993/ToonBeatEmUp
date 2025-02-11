@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+playerFrom=1
 image_speed=0
 hitBack=0
 act=1
@@ -54,6 +55,8 @@ shaketime=0
 HitType=0
 
 alarm[0]=160
+
+ThrownSpr=spr_octopus_tent4
 
  HitReactionScript=-1;
  

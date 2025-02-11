@@ -826,6 +826,7 @@ image_index=0
 
 
 	sentFlying=0 hspeed=0
+	targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
 	targetID.hit=2 targetID.recoveryThrow=10
 	canmove=0 targetID.hitSource=id
@@ -890,6 +891,7 @@ if !place_free(targetID.x+1*image_xscale,y)
 	super+=0.25*canSuper targetID.hp-=0.06
 	if targetID.hp>=0
 	PlayerScore+=targetID.pointshit else PlayerScore+=targetID.points
+	targetID.playerFrom=playerNO
 	with targetID {event_user(11) ///Hit Enemy
 	shaketime=10 grabbed=1 PlaySound(snd_hit)
 
@@ -900,6 +902,7 @@ if !place_free(targetID.x+1*image_xscale,y)
 
 
 	}
+	targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()
 	}
 
@@ -916,6 +919,7 @@ if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
 if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
+	targetID.playerFrom=playerNO
 	with targetID
 	{
 	hurt=1
@@ -944,6 +948,7 @@ if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
 if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
+	targetID.playerFrom=playerNO
 	with targetID
 	{
 	hurt=1
@@ -985,7 +990,7 @@ if instance_exists(targetID) targetID.depth=depth+1
 	specialcheck1=(key_right - -key_left)
 	}
 	if place_free(x+specialcheck1*1,y) x+=specialcheck1*1
-
+targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
 	targetID.hit=2 targetID.hitSource=id targetID.ThrowDamage=0
 	targetID.ground=0
@@ -1039,7 +1044,7 @@ if instance_exists(targetID) targetID.depth=depth+1
 
 	if !place_free(x+1,y)
 	targetID.x=x
-
+targetID.playerFrom=playerNO
 	if targetID!=-1
 	with targetID
 	{
@@ -1081,7 +1086,9 @@ if instance_exists(targetID) targetID.depth=depth+1
 	image_speed=0
 	if instance_exists(targetID) targetID.depth=depth+1
 if targetID!=-1
+{targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
+}
 	targetID.hit=2 targetID.ThrowDamage=0
 	targetID.ground=0
 	targetID.atk=0
@@ -1129,7 +1136,7 @@ if targetID!=-1
 	targetID.x=x
 	if !place_free(targetID.x-1*image_xscale,y)
 	targetID.x=x
-
+targetID.playerFrom=playerNO
 	with targetID
 	{
 	recovery=90 Throw=0
@@ -1293,6 +1300,7 @@ if targetID!=-1
 	grabX=24*image_xscale grabY=0 grabZ=0 targetID.image_xscale=-image_xscale
 	targetID.depth=depth+1
 	atk=0 ///Anim End
+	targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()
 	}
 

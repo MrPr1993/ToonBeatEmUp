@@ -14,6 +14,10 @@ and recovery=0 and anim!=6
 
 
 if (z-height)<(other.z) and (z)>(other.z-other.height)
+{
+playerFrom=1;
+
 enemyhit()
+}
 }
 

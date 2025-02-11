@@ -5,13 +5,6 @@ if !hp<=0.01
 PlaySoundNoStack(choose(DamageVoice1,DamageVoice2,DamageVoice3))
 }
 
-if oControl.enemyID=-1
-{oControl.enemyhp=hp oControl.hpLerp=hp}
-
-oControl.enemyShowTime=30
-oControl.hpLerp=hp
-
-oControl.enemyID=1
 }
 
 ///Special State

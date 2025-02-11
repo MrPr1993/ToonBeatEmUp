@@ -166,8 +166,11 @@ else
 	{if closeally.y<y {key_up=choose(1,0)} if closeally.y>y {key_down=choose(1,0)}}
 	}
 	
-	if canAttack=1
-	if x=clamp(x,targetX-32,targetX+32) if canAttack!=0 canAttack=0
+	if canAttack=1//0 or canAttack=1 or canAttack=2 or canAttack=3 or canAttack=4
+	if x=clamp(x,targetX-32,targetX+32) and y=clamp(y,targetY-6,targetY+6)
+	if canAttack!=0 {canAttack=0 alarm[1]=2}
+	//if x<targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
+	//if canAttack!=0 canAttack=0
 	//if x<targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
 	
 	}

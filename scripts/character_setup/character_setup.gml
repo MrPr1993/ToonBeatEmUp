@@ -6,6 +6,8 @@ function character_setup() {
 	
 	colorshade_setup()
 
+
+
 specialtaunt=-1
 specialanim=-1
 specialtimes[9]=0
@@ -549,4 +551,8 @@ if itemID!=-1 {if itemID=oGemstone global.TreasureSet=treasureno _item=instance_
 
 }
 
+hpregister=hp;	
+playerFrom=1;
+
 }
+

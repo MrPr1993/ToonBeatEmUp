@@ -6,7 +6,10 @@ if Throw=0 and dead=0 and other.thrownAtk=1 and anim!=6
 if other.z>z-height and other.z<z+2 and other.thrownPlayer!=-1 and other.thrownPlayer!=isPlayer and other.anim=5
 if recovery=0
 {
+hpregister=hp	
+
 hp-=other.thrownAtkDmg/(defense+extradefense)
+if hpregister!=hp {oControl.perfecthp=0}
 
 if !instance_exists(hitSource) hitSource=-1
 
@@ -19,6 +22,7 @@ with other hitSource.PlayerScore+=points
 else
 with other hitSource.PlayerScore+=pointshit
 }
+hitSource.playerFrom=other.playerNO
 }
 
 shaketime=30

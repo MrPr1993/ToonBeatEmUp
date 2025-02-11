@@ -137,22 +137,28 @@ if superFlashFrame2!=0 superFlashFrame2-=0.25 else superFlashFrame2=2
 //draw_sprite(spr_hud,0,240,0)
 
 d3d_transform_set_identity()
-d3d_transform_set_translation(-2,2,0)
-
-if enemyShowTime!=0
-enemyShowTime-=1 else
-if enemyID!=-1 {enemyID=-1 enemyShowTime=0}
-
-enemyhp=hpLerp
-
-if enemyID!=-1
+for (var i=1; i<5; i++)
+{var spaceadd=0;
+switch(i)
 {
-if ShowEnemyHP=1///Enemy's HP
+case 2: spaceadd=72; break;
+case 3: spaceadd=320-144; break;
+case 4: spaceadd=320-72; break;
+}
+d3d_transform_set_translation(-2+spaceadd,2,0)
+
+if PenemyShowTime[i]!=0
+PenemyShowTime[i]-=1 else
+if PenemyID[i]!=-1 {PenemyID[i]=-1 PenemyShowTime[i]=0}
+
+if PenemyID[i]!=-1
 {
-if showhp=1
+if ShowEnemyHP///Enemy's HP
+{
+if Pshowhp[i]=1
 {
 draw_set_color(c_white)
-if enemymaxhp>1
+if Penemymaxhp[i]>1
 {
 draw_rectangle(25-1,48-1,25+(1*45)+1,48+8+1,false)
 draw_set_color(c_red)
@@ -160,72 +166,73 @@ draw_rectangle(25,48,25+(1*45),48+8,false)
 }
 else
 {
-draw_rectangle(25-1,48-1,25+(enemymaxhp*45)+1,48+8+1,false)
+draw_rectangle(25-1,48-1,25+(Penemymaxhp[i]*45)+1,48+8+1,false)
 draw_set_color(c_red)
-draw_rectangle(25,48,25+(enemymaxhp*45),48+8,false)
+draw_rectangle(25,48,25+(Penemymaxhp[i]*45),48+8,false)
 }
-if enemyhp>=0{///HP Layers
-if enemymaxhp>1
+if Penemyhp[i]>=0{///HP Layers
+if Penemymaxhp[i]>1
 {
-if enemyhp<=1
-{draw_set_color(c_yellow)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
-if enemyhp>1 if enemyhp<=2
+if Penemyhp[i]<=1
+{draw_set_color(c_yellow)draw_rectangle(25,48,25+(Penemyhp[i]*45),48+8,false)}
+if Penemyhp[i]>1 if Penemyhp[i]<=2
 {draw_set_color(c_yellow) draw_rectangle(25,48,25+(1*45),48+8,false)
-draw_set_color(c_orange)draw_rectangle(25,48,25+((enemyhp-1)*45),48+8,false)}
-if enemyhp>2 if enemyhp<=3
+draw_set_color(c_orange)draw_rectangle(25,48,25+((Penemyhp[i]-1)*45),48+8,false)}
+if Penemyhp[i]>2 if Penemyhp[i]<=3
 {draw_set_color(c_orange) draw_rectangle(25,48,25+((1)*45),48+8,false)
-draw_set_color(c_blue)draw_rectangle(25,48,25+((enemyhp-2)*45),48+8,false)}
-if enemyhp>3 if enemyhp<=4
+draw_set_color(c_blue)draw_rectangle(25,48,25+((Penemyhp[i]-2)*45),48+8,false)}
+if Penemyhp[i]>3 if Penemyhp[i]<=4
 {draw_set_color(c_blue) draw_rectangle(25,48,25+(1*45),48+8,false)
-draw_set_color(c_green)draw_rectangle(25,48,25+((enemyhp-3)*45),48+8,false)}
-if enemyhp>4 if enemyhp<=5
+draw_set_color(c_green)draw_rectangle(25,48,25+((Penemyhp[i]-3)*45),48+8,false)}
+if Penemyhp[i]>4 if Penemyhp[i]<=5
 {draw_set_color(c_green) draw_rectangle(25,48,25+(1*45),48+8,false)
-draw_set_color(c_olive)draw_rectangle(25,48,25+((enemyhp-4)*45),48+8,false)}
-if enemyhp>5 if enemyhp<=6
+draw_set_color(c_olive)draw_rectangle(25,48,25+((Penemyhp[i]-4)*45),48+8,false)}
+if Penemyhp[i]>5 if Penemyhp[i]<=6
 {draw_set_color(c_olive) draw_rectangle(25,48,25+(1*45),48+8,false)
-draw_set_color(c_navy)draw_rectangle(25,48,25+((enemyhp-5)*45),48+8,false)}
-if enemyhp>6 if enemyhp<=7
+draw_set_color(c_navy)draw_rectangle(25,48,25+((Penemyhp[i]-5)*45),48+8,false)}
+if Penemyhp[i]>6 if Penemyhp[i]<=7
 {draw_set_color(c_navy) draw_rectangle(25,48,25+(1*45),48+8,false)
-draw_set_color(c_maroon)draw_rectangle(25,48,25+((enemyhp-6)*45),48+8,false)}
-if enemyhp>7 if enemyhp<=8
+draw_set_color(c_maroon)draw_rectangle(25,48,25+((Penemyhp[i]-6)*45),48+8,false)}
+if Penemyhp[i]>7 if Penemyhp[i]<=8
 {draw_set_color(c_maroon) draw_rectangle(25,48,25+(1*45),48+8,false)
-draw_set_color(c_gray)draw_rectangle(25,48,25+((enemyhp-7)*45),48+8,false)}
-if enemyhp>8 if enemyhp<=9
+draw_set_color(c_gray)draw_rectangle(25,48,25+((Penemyhp[i]-7)*45),48+8,false)}
+if Penemyhp[i]>8 if Penemyhp[i]<=9
 {draw_set_color(c_gray) draw_rectangle(25,48,25+(1*45),48+8,false)
-draw_set_color(c_dkgray)draw_rectangle(25,48,25+((enemyhp-8)*45),48+8,false)}
-if enemyhp>9{draw_set_color(c_dkgray) draw_rectangle(25,48,25+(1*45),48+8,false)
-draw_set_color(c_black)draw_rectangle(25,48,25+((enemyhp-9)*45),48+8,false)}
+draw_set_color(c_dkgray)draw_rectangle(25,48,25+((Penemyhp[i]-8)*45),48+8,false)}
+if Penemyhp[i]>9{draw_set_color(c_dkgray) draw_rectangle(25,48,25+(1*45),48+8,false)
+draw_set_color(c_black)draw_rectangle(25,48,25+((Penemyhp[i]-9)*45),48+8,false)}
 }
 else
-{draw_set_color(c_yellow)draw_rectangle(25,48,25+(enemyhp*45),48+8,false)}
+{draw_set_color(c_yellow)draw_rectangle(25,48,25+(Penemyhp[i]*45),48+8,false)}
 }
-{if enemyhplayer=0
-if enemyHPflash=0 enemyHPflash=2 else enemyHPflash-=0.5}
+{if Penemyhplayer[i]=0
+if PenemyHPflash[i]=0 PenemyHPflash[i]=2 else PenemyHPflash[i]-=0.5}
 }
-pal_swap_set(my_pal_sprite,current_pal,false);
-draw_sprite(enemyPortraitSpr,enemyPortraitIndex,4,32)
+pal_swap_set(Pmy_pal_sprite[i],Pcurrent_pal[i],false);
+draw_sprite(PenemyPortraitSpr[i],PenemyPortraitIndex[i],4,32)
 pal_swap_reset();
 draw_sprite(spr_miscface,1,4,32)
-if enemyHPflash>1
-if enemydead=1
+if PenemyHPflash[i]>1
+if Penemydead[i]=1
 draw_sprite(spr_enemyface,0,4,32)///X Mark for portrait
-else enemyhplayer=0
+else Penemyhplayer[i]=0
 
 draw_set_halign(fa_left); draw_set_valign(fa_top);
 draw_set_font(global.scorefont)
 draw_set_color(c_white)///Enemy Name Here
-if string_length(enemyname)<=6
-draw_text(27,38,string_hash_to_newline(enemyname)) 
-else if string_length(enemyname)<=7
-draw_text_transformed(27,38,string_hash_to_newline(enemyname),0.8,1,0) 
-else if string_length(enemyname)<=8
-draw_text_transformed(27,38,string_hash_to_newline(enemyname),0.7,1,0) 
+if string_length(Penemyname[i])<=6
+draw_text(27,38,string_hash_to_newline(Penemyname[i])) 
+else if string_length(Penemyname[i])<=7
+draw_text_transformed(27,38,string_hash_to_newline(Penemyname[i]),0.8,1,0) 
+else if string_length(Penemyname[i])<=8
+draw_text_transformed(27,38,string_hash_to_newline(Penemyname[i]),0.7,1,0) 
 else
-draw_text_transformed(27,38,string_hash_to_newline(enemyname),0.65,1,0) 
+draw_text_transformed(27,38,string_hash_to_newline(Penemyname[i]),0.65,1,0) 
 
 draw_set_font(-1)
 }}
-else enemyHPflash=0
+else PenemyHPflash[i]=0
+}
 
 d3d_transform_set_identity()
 

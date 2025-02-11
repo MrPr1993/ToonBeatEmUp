@@ -4,6 +4,8 @@ function item_setup() {
 	ScreenDestroy=0
 	specialscript=-1;
 	
+	playerFrom=1
+	
 	height=32
 	canGrav=1
 	wThrowGrav=0

@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 event_inherited()
+playerFrom=1
 enemyPortraitIndex=56
 ground=1
 name="HAND"

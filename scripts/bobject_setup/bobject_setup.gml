@@ -1,6 +1,8 @@
 function bobject_setup() {
 colorshade_setup()	
 
+playerFrom=1
+
 iceFX=0
 
 	z=0

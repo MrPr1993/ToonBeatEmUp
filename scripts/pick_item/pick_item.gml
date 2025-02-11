@@ -25,17 +25,17 @@ if item.PickupSound!=-1
 	
 specialitemreaction=item.specialitemreaction;
 	
+if object_index=oPlayer playerFrom=playerNO
 
-
-	oControl.showhp=0
-	oControl.enemyhp=0 oControl.hpLerp=0 oControl.enemymaxhp=0
-	oControl.enemyPortraitSpr=item.enemyPortraitSpr
-	oControl.enemyPortraitIndex=item.enemyPortraitIndex
-	oControl.enemyname=item.name
-	oControl.enemyShowTime=30
-	oControl.hpLerp=0
-	oControl.enemyhplayer=0
-	oControl.enemyID=0
+	oControl.Pshowhp[playerFrom]=0
+	oControl.Penemyhp[playerFrom]=0 oControl.PhpLerp[playerFrom]=0 oControl.Penemymaxhp[playerFrom]=0
+	oControl.PenemyPortraitSpr[playerFrom]=item.enemyPortraitSpr
+	oControl.PenemyPortraitIndex[playerFrom]=item.enemyPortraitIndex
+	oControl.Penemyname[playerFrom]=item.name
+	oControl.PenemyShowTime[playerFrom]=30
+	oControl.PhpLerp[playerFrom]=0
+	oControl.Penemyhplayer[playerFrom]=0
+	oControl.PenemyID[playerFrom]=0
 	with oControl
 	{current_pal=0;
 	my_pal_sprite=spr_enemypal

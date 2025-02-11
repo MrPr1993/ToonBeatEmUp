@@ -494,6 +494,22 @@ instance_create(-9999,-9999,parEnemy)
 instance_create(0,0,oShadowFX)
 instance_create(0,0,oSpotlightFX)
 
+playerFrom=1;
+
+	Pshowhp[4]=0
+	Penemyhp[4]=0 PhpLerp[4]=0 Penemymaxhp[4]=0
+	PenemyPortraitSpr[4]=0
+	PenemyPortraitIndex[4]=0
+	Penemyname[4]=0
+	PenemyShowTime[4]=0
+	PhpLerp[4]=0
+	Penemyhplayer[4]=0
+	PenemyID[4]=0
+	Pcurrent_pal[4]=0
+	Pmy_pal_sprite[4]=0
+    Penemydead[4]=0
+	PenemyHPflash[4]=0
+
 showhp=0
 
 hpLerp=0
@@ -529,6 +545,7 @@ global.ScreenSize=0
 
 
 ShowEnemyHP=1
+//PShowEnemyHP[4]=0;
 
 ////Cheats
 StrongMode=0

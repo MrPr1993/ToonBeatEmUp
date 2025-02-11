@@ -6,6 +6,8 @@ if Throw=0 and dead=0 and other.thrownAtk=1 and anim!=6
 if other.z>z-height and other.z<z+2 and other.thrownPlayer!=-1 and other.thrownPlayer!=isPlayer and other.anim=5
 if recovery=0
 {
+hpregister=hp
+
 hp-=other.thrownAtkDmg/(defense+extradefense)
 
 if !instance_exists(hitSource) hitSource=-1
@@ -27,6 +29,8 @@ recovery=90
 
 PlaySoundNoStack(snd_hit)
 
+if hpregister!=hp {oControl.perfecthp=0}
+playerFrom=other.playerNO
 hud_show()
 
 cutDMG=0

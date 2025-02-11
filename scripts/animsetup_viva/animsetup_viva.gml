@@ -688,6 +688,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	sprite_index=spr_viva_grab
 	image_index=0 image_speed=0
 	sentFlying=0 hspeed=0
+	targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
 	targetID.hit=2 targetID.recoveryThrow=10
 	canmove=0 targetID.hitSource=id
@@ -750,7 +751,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	with targetID {event_user(11) ///Hit Enemy
 	shaketime=10 grabbed=1 PlaySound(snd_hit)
 
-
+targetID.playerFrom=playerNO
 	hud_show() hpscan()
 	} 
 
@@ -758,6 +759,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 
 
 	}else atk=0
+	targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()
 	}
 
@@ -772,6 +774,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
+	targetID.playerFrom=playerNO
 	with targetID
 	{
 	hurt=1
@@ -798,6 +801,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	{
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
+	targetID.playerFrom=playerNO
 	with targetID
 	{
 	hurt=1
@@ -832,7 +836,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	Throw=1 recovery=10
 	sprite_index=spr_viva_throw
 	image_index=AnimFrame image_speed=0
-
+targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
 	targetID.hit=2 targetID.hitSource=id targetID.ThrowDamage=0
 	targetID.ground=0
@@ -864,6 +868,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	targetID.x=x
 	if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
+	targetID.playerFrom=playerNO
 	if instance_exists(targetID) targetID.depth=depth+1
 	with targetID
 	{event_user(11) PlaySound(snd_hit)  ////This is for the enemy they grab, setting up the animations and effects
@@ -899,7 +904,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	Throw=1
 	sprite_index=spr_viva_throwback
 	image_speed=0
-
+targetID.playerFrom=playerNO
 	with targetID {hud_show() hpscan()}
 	targetID.hit=2 targetID.ThrowDamage=0.1
 	targetID.ground=0
@@ -937,10 +942,12 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
     if targetID.hp<=0  PlayerScore+=targetID.points
 	else PlayerScore+=targetID.pointshit
 
+
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
 	if !place_free(targetID.x+1*image_xscale,y)
 	targetID.x=x
+	targetID.playerFrom=playerNO
 	with targetID
 	{
 	PlaySound(snd_swing)

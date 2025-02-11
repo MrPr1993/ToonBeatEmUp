@@ -19,3 +19,5 @@ trainz=0
 	headPos=0
 	headPosX[60]=0
 	headPosY[60]=0
+	
+Spotlight[4]=0

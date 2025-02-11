@@ -6,14 +6,14 @@ if hit=0
 {
 mask_index=mask_none
 
-oControl.enemyhp=0 oControl.hpLerp=0 oControl.enemymaxhp=0.1
-oControl.enemyPortraitSpr=spr_miscface
-oControl.enemyPortraitIndex=0
-oControl.enemyname=name
-oControl.enemyShowTime=30
-oControl.hpLerp=0
-oControl.enemyhplayer=0
-oControl.enemyID=0
+oControl.Penemyhp[playerFrom]=0 oControl.PhpLerp[playerFrom]=0 oControl.Penemymaxhp[playerFrom]=0.1
+oControl.PenemyPortraitSpr[playerFrom]=spr_miscface
+oControl.PenemyPortraitIndex[playerFrom]=0
+oControl.Penemyname[playerFrom]=name
+oControl.PenemyShowTime[playerFrom]=30
+oControl.PhpLerp[playerFrom]=0
+oControl.Penemyhplayer[playerFrom]=0
+oControl.PenemyID[playerFrom]=0
 with oControl
 {current_pal=0;
 my_pal_sprite=spr_enemypal

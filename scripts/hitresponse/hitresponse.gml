@@ -1,4 +1,6 @@
 function hitresponse() {
+	
+	
 	hp-=other.damage/(defense+extradefense)
 	roll=other.roll
 thrownPlayer=-1

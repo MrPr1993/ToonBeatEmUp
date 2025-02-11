@@ -31,24 +31,26 @@ PlaySoundNoStack(snd_hit)
 
 if other.hitSource.x>x image_xscale=1 else image_xscale=-1
 
-	oControl.showhp=1
+playerFrom=other.hitSource.playerNO
 
-	oControl.enemyhp=hp oControl.hpLerp=hp oControl.enemymaxhp=maxhp
-	oControl.enemyPortraitSpr=enemyPortraitSpr
-	oControl.enemyPortraitIndex=enemyPortraitIndex
-	oControl.enemyname=name
-	oControl.enemyShowTime=30
-	oControl.hpLerp=hp
-	oControl.enemyhplayer=hplayer
-	oControl.enemyID=1
-	oControl.current_pal=current_pal
-	oControl.my_pal_sprite=my_pal_sprite
+	oControl.Pshowhp[playerFrom]=1
+
+	oControl.Penemyhp[playerFrom]=hp oControl.PhpLerp[playerFrom]=hp oControl.Penemymaxhp[playerFrom]=maxhp
+	oControl.PenemyPortraitSpr[playerFrom]=enemyPortraitSpr
+	oControl.PenemyPortraitIndex[playerFrom]=enemyPortraitIndex
+	oControl.Penemyname[playerFrom]=name
+	oControl.PenemyShowTime[playerFrom]=30
+	oControl.PhpLerp[playerFrom]=hp
+	oControl.Penemyhplayer[playerFrom]=hplayer
+	oControl.PenemyID[playerFrom]=1
+	oControl.Pcurrent_pal[playerFrom]=current_pal
+	oControl.Pmy_pal_sprite[playerFrom]=my_pal_sprite
 
 
 	if hp<=0 and hplayer=0
 	{
-	oControl.enemydead=1
-	} else oControl.enemydead=0
+	oControl.Penemydead[playerFrom]=1
+	} else oControl.Penemydead[playerFrom]=0
 
 flashFX(x,y+2,z-32,spr_hitflash,0,1,5,1,1,c_white,1)
 
