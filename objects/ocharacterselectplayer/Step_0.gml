@@ -369,7 +369,7 @@ charadded=2 charaddedbuffer=10 isReady=1 image_index=1
 if charadded=2
 {
 
-if image_index<4.5 image_index+=0.25 if image_index=2 PlaySound(picksound)
+if image_index<5.5 image_index+=0.25 if image_index=2 PlaySound(picksound)
 
 if charaddedbuffer=0
 {
