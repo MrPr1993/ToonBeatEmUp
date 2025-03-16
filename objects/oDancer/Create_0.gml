@@ -66,3 +66,19 @@ weapon_add("SCIMITAR")
 
 spritepos_setup(1,24,1,50) ///Waist, Frame 24
 spritepos_setup(2,24,1,74) ///Head, Frame 24
+
+specialtaunt=function()
+{weaponanim(weaponspr,weaponIndex,7,9999,76,weaponcolor)
+sprite_index=spr_catman_taunt
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,0,0.25)
+frame_set(3,1,0.25)
+frame_set(4,2,0.25)
+frame_set(5,3,0.25)
+frame_set(6,4,0.25)
+frame_set(7,3,0.25)
+frame_set(8,4,0.25)
+frame_set(9,2,0.25)
+if AnimFrame>9.9 AnimFrame=0
+}

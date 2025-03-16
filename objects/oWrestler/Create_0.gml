@@ -89,5 +89,5 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,0,0.1)
 frame_set(3,2,0.1)
-if AnimFrame>3.9 AnimFrame=0
+if AnimFrame>=3.9 AnimFrame=0
 }

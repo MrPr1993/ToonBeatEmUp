@@ -67,3 +67,11 @@ bombRecharge=0
 
 my_pal_sprite=spr_mummypal
 current_pal=0
+
+specialtaunt=function()
+{
+sprite_index=spr_catman_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}
