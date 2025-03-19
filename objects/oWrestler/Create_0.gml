@@ -85,9 +85,10 @@ enemyscript=animsetup_zombie
 specialtaunt=function()
 {
 sprite_index=spr_wrestler_taunt
-frame_set(0,0,0.1)
-frame_set(1,1,0.1)
-frame_set(2,0,0.1)
-frame_set(3,2,0.1)
+frame_set(0,0,0.2)
+frame_set(1,1,0.2)
+frame_set(2,2,0.2)
+frame_set(3,1,0.2)
 if AnimFrame>=3.9 AnimFrame=0
 }
+

@@ -30,6 +30,25 @@ overwriteAttack4=1
 
 image_index=AnimFrame
 
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1
+	{
+	if AnimFrame>4
+	{
+	robotArmLAngle=lerp(robotArmLAngle,-45,0.1)
+	robotArmRAngle=lerp(robotArmRAngle,45,0.1)
+	}
+else
+{
+	robotArmLAngle=lerp(robotArmLAngle,45,0.1)
+	robotArmRAngle=lerp(robotArmRAngle,-45,0.1)
+}	
+	AnimFrame+=0.25 if AnimFrame>8 AnimFrame=0
+	exit;
+	}
+
 	if AnimFrame<1
 	{	robotArmLY=lerp(robotArmLY,-64,0.5)	robotArmRY=lerp(robotArmRY,-64,0.5)	}
 	else if AnimFrame<3.90

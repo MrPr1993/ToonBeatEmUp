@@ -73,3 +73,12 @@ spritepos_setup(2,24,12,57)
 
 if oControl.betatest if keyboard_check(vk_control)
 weapon_add("HARPOONGUN")
+
+specialtaunt=function()
+{
+sprite_index=spr_diver_taunt
+frame_set(0,0,0.2)
+frame_set(1,1,0.2)
+frame_set(2,2,0.2)
+if AnimFrame>=2.9 AnimFrame=0
+}

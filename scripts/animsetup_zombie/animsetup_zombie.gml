@@ -7,7 +7,15 @@ overwriteStand=1
 canRun=1
 
 if anim=0
-{sprite_index=StandSpr
+{
+	if specialtaunt!=-1
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	{specialtaunt(); exit;}
+	
+sprite_index=StandSpr
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 frame_set(2,2,0.1)

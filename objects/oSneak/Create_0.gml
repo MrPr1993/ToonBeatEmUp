@@ -114,7 +114,10 @@ current_pal=0
 grabMax=0
 
 specialtaunt=function()
-{weaponanim(weaponspr,weaponIndex,7,9999,76,weaponcolor)
+{
+if weaponspr!=-1
+sprite_index=spr_sneak_tauntgun
+else
 sprite_index=spr_sneak_taunt
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)

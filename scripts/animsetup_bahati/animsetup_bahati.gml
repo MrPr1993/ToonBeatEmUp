@@ -876,7 +876,7 @@ if !place_free(targetID.x+1*image_xscale,y)
 	image_index=AnimFrame image_speed=0
 	sentFlying=0 hspeed=0
 
-
+targetID.playerFrom=playerNO
 	targetID.hit=2 canmove=0 
 	targetID.ground=0
 	targetID.atk=0
@@ -891,7 +891,7 @@ if !place_free(targetID.x+1*image_xscale,y)
 	super+=0.25*canSuper targetID.hp-=0.06
 	if targetID.hp>=0
 	PlayerScore+=targetID.pointshit else PlayerScore+=targetID.points
-	targetID.playerFrom=playerNO
+	
 	with targetID {event_user(11) ///Hit Enemy
 	shaketime=10 grabbed=1 PlaySound(snd_hit)
 

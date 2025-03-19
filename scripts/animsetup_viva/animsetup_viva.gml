@@ -733,7 +733,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	sprite_index=spr_viva_grab
 	image_index=AnimFrame image_speed=0
 	sentFlying=0 hspeed=0
-
+targetID.playerFrom=playerNO
 	targetID.hit=2 canmove=0 
 	targetID.ground=0
 	targetID.atk=0
@@ -751,7 +751,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	with targetID {event_user(11) ///Hit Enemy
 	shaketime=10 grabbed=1 PlaySound(snd_hit)
 
-targetID.playerFrom=playerNO
+
 	hud_show() hpscan()
 	} 
 

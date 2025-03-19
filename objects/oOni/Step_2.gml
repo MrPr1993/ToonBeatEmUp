@@ -9,6 +9,10 @@ overwriteAttack=1
 overwriteAttack1=1
 overwriteAttack2=1
 
+var sispitch=1.0;
+
+if current_pal!=0 sispitch=1.2;
+
 if weaponspr=-1 if anim=0 or anim=1
 if instance_exists(oOniClub)
 {with instance_nearest(x,y,oOniClub) {
@@ -56,7 +60,7 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)>150
 ///Swing Attack
 if anim=11
 {
-if AnimFrame=0 {PlaySound(choose(snd_oni3,snd_oni4))}
+if AnimFrame=0 {PlaySoundPitch(choose(snd_oni3,snd_oni4),sispitch)}
 ///With weapon
 if weaponspr!=-1
 {
@@ -97,7 +101,7 @@ if AnimFrame>5.8 {atk=0 canmove=1 anim=0}
 ///Fan Attack
 if anim=12
 {
-if AnimFrame=0 {PlaySound(choose(snd_oni3,snd_oni13))}	
+if AnimFrame=0 {PlaySoundPitch(choose(snd_oni3,snd_oni13),sispitch)}	
 sprite_index=spr_oni_range
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
@@ -126,7 +130,7 @@ weaponanim(weaponspr,weaponIndex,33,-94,180,weaponcolor)
 ///Roll Attack
 if anim=13
 {
-if AnimFrame=0 {PlaySound(choose(snd_oni5,snd_oni8))}	
+if AnimFrame=0 {PlaySoundPitch(choose(snd_oni5,snd_oni8),sispitch)}	
 sprite_index=spr_oni_hit
 if AnimFrame=0 special0=0
 damage=0.2 selfatk.MoveType=1

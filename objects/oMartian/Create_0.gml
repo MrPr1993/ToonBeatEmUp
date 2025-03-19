@@ -78,3 +78,13 @@ enemyID=88
 spritepos_setup(1,24,3,54)
 spritepos_setup(2,6,1,0)
 spritepos_setup(2,24,9,83)
+
+specialtaunt=function()
+{
+weaponanim(weaponspr,weaponIndex,915+_weaponaddX,-48+_weaponadd,90+_weaponang,weaponcolor)
+sprite_index=spr_martian_taunt
+frame_set(0,0,0.2)
+frame_set(1,1,0.2)
+frame_set(2,2,0.2)
+if AnimFrame>=2.9 AnimFrame=0
+}
