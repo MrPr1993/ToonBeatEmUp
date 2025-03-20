@@ -136,7 +136,7 @@ specialtimes[0]-=2
 frame_set(0,0,0.05) if AnimFrame=clamp(AnimFrame,1,2) atk=1 else atk=0
 frame_set(1,1,0.1) if AnimFrame=2
 {PlaySound(snd_shocked) oControl.quakeFXTime=10
-selfball=instance_create_depth(x,y+1,-1,oBossHazard) selfball.image_xscale=image_xscale selfball.z=z-240
+selfball=instance_create_depth(x,y+1,-1,oBossHazard) selfball.playerNO=playerNO selfball.image_xscale=image_xscale selfball.z=z-240
 with selfball
 {HitSound=snd_shocked damage=0.25
 shadow=spr_mediumshadow mask_index=spr_mediumshadow height=128 sprite_index=spr_dastardly2_ball image_speed=0.25

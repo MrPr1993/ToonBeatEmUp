@@ -93,7 +93,7 @@ if specialtimes[0]=0
 {//projectile_create(x+48*image_xscale,y+1,z-32,32,spr_seaweed_curse,4*image_xscale,mask_small,spr_hitflash,0.1,2,591000,0,0)
 specialtimes[0]=10
 bone=instance_create_depth(x+48*image_xscale,y+1,-1,oBossHazard) bone.hitSource=self.id bone.height=30
-bone.z=z-32 bone.hspeed=4*image_xscale with bone
+bone.z=z-32 bone.playerNO=playerNO bone.hspeed=4*image_xscale with bone
 {
 selfscript = function()
 {MoveType=591002 damage=0.1 depth=-y

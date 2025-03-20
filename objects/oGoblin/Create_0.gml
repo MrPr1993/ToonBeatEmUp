@@ -68,3 +68,13 @@ enemyID=95
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
+
+specialtaunt=function()
+{
+sprite_index=spr_goblin_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if AnimFrame>2.9 AnimFrame=0
+}
+

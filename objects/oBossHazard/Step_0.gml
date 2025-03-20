@@ -8,6 +8,7 @@ hp=hitSource.hp
 maxhp=hitSource.hp
 current_pal=hitSource.current_pal
 my_pal_sprite=hitSource.my_pal_sprite
+
 name=hitSource.name
 enemyPortraitSpr=hitSource.enemyPortraitSpr
 enemyPortraitIndex=hitSource.enemyPortraitIndex

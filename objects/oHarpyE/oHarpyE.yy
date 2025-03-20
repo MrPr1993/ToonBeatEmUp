@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_harpye_stand",
-    "path":"sprites/spr_harpye_stand/spr_harpye_stand.yy",
+    "name":"spr_harpye_taunt",
+    "path":"sprites/spr_harpye_taunt/spr_harpye_taunt.yy",
   },
   "spriteMaskId":{
     "name":"mask_small",

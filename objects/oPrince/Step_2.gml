@@ -79,7 +79,7 @@ var repwave=0;
 repeat(12)
 {
 waveatk=instance_create_depth(checkdir,oControl.wallY+16*repwave,-1,oBossHazard) waveatk.image_xscale=image_xscale
-waveatk.hspeed=4*image_xscale
+waveatk.hspeed=4*image_xscale waveatk.playerNO=playerNO
 with waveatk
 {image_speed=0.25 sprite_index=spr_prince_tidalwave mask_index=wavemask
 selfscript=function()

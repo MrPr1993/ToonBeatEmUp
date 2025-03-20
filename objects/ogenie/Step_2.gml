@@ -77,7 +77,7 @@ frame_set(2,2,0.1) if AnimFrame=3
 {var _swordrep=0
 repeat(7)
 {
-hazz=instance_create_depth(x+(56+56*_swordrep)*image_xscale,y,-1,oBossHazard) with hazz
+hazz=instance_create_depth(x+(56+56*_swordrep)*image_xscale,y,-1,oBossHazard) hazz.playerNO=playerNO with hazz
 {
 selfscript = function()
 {MoveType=1 damage=0.1 isCut=1 spriteFX=spr_blood2 HitSound=snd_cut

@@ -69,5 +69,13 @@ enemyID=107
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 
+specialtaunt=function()
+{
+sprite_index=spr_snowgirl_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}
+
 spritepos_setup(1,24,1,37)
 spritepos_setup(2,24,12,79)

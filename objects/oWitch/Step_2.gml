@@ -133,7 +133,7 @@ frame_set(8,2,0.5)
 frame_set(9,2,0.5) if AnimFrame=10 
 {
 bone=instance_create_depth(targetEnemy.x,targetEnemy.y,-1,oBossHazard)
-bone.hitSource=self.id
+bone.hitSource=self.id bone.playerNO=playerNO
 }
 frame_set(10,3,0.25) if AnimFrame=2.5 if specialtimes[0]!=2 {specialtimes[0]+=1 AnimFrame=9.5}
 frame_set(11,4,0.25)
@@ -164,7 +164,7 @@ for(var drawparts = -1; drawparts < 2; drawparts++)
 {
 //projectile_create(x+28*image_xscale,y+1,z-32,32,spr_spacer_bubbleproj,4*image_xscale,mask_small,spr_hitflash,0.1,591000,2,0,0)
 bone=instance_create_depth(x+40*image_xscale,y,-1,oBossHazard)
-bone.z=z-70 bone.zSpeed=-4 
+bone.z=z-70 bone.zSpeed=-4 bone.playerNO=playerNO
 bone.hitSource=self.id bone.sprite_index=spr_witch_bomb bone.shadow=spr_shadow bone.image_xscale=image_xscale
 bone.sentflying=1*((point_distance(x,0,targetX,0)/48)/2)*image_xscale bone.vspeed=1*drawparts
 if image_xscale=1 

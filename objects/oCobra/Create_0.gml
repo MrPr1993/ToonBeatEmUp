@@ -72,3 +72,12 @@ bombRecharge=0
 
 current_pal=0;
 my_pal_sprite=spr_mummypal
+
+
+specialtaunt=function()
+{
+sprite_index=spr_cobra_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}

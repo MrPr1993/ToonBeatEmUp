@@ -68,3 +68,13 @@ spritepos_setup(1,24,3,40)
 
 spritepos_setup(2,0,17,70)
 spritepos_setup(2,24,18,67)
+
+
+specialtaunt=function()
+{
+sprite_index=spr_zombiem_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if AnimFrame>2.9 AnimFrame=0
+}

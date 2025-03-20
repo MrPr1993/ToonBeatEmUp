@@ -63,3 +63,14 @@ my_pal_sprite=spr_playerpal
 
 spritepos_setup(1,24,6,26) ///Waist, Frame 24
 spritepos_setup(2,24,8,48) ///Head, Frame 24
+
+
+specialtaunt=function()
+{
+sprite_index=spr_shroom_taunt
+frame_set(0,0,0.2)
+frame_set(1,1,0.2)
+frame_set(2,2,0.2)
+frame_set(3,3,0.2)
+if AnimFrame>=3.9 AnimFrame=0
+}

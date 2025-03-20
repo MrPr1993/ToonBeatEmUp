@@ -17,7 +17,16 @@ if atkBuffer1!=0 atkBuffer1-=1
 
 canbeGrabbed=1
 
-if anim=0 or anim=1 {sprite_index=StandSpr image_index+=0.1 if image_index>7-0.1 image_index=0}
+if anim=0 or anim=1 {sprite_index=StandSpr
+	
+	if specialtaunt!=-1
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	sprite_index=spr_harpye_taunt
+	
+	image_index+=0.1 if image_index>7-0.1 image_index=0}
 
 if anim=0 or anim=1
 {hover=1

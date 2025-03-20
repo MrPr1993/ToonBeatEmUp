@@ -6,7 +6,7 @@ function character_setup() {
 	
 	colorshade_setup()
 
-
+playerNO=0
 
 specialtaunt=-1
 specialanim=-1

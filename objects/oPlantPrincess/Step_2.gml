@@ -284,7 +284,7 @@ frame_set(3,3,0.25) if AnimFrame=4
 repeat(8)
 {
 bone=instance_create_depth(x+lengthdir_x(64*repplant,repdir),y+lengthdir_y(64*repplant,repdir),-1,oBossHazard) bone.image_xscale=image_xscale
-bone.hitSource=self.id with bone
+bone.hitSource=self.id bone.playerNO=playerNO with bone
 {sprite_index=spr_plantprincess_vine
 selfscript = function()
 {MoveType=1 damage=0.1

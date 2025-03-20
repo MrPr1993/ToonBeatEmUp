@@ -66,3 +66,11 @@ hasDizzy=1 DizzySpr=spr_beelady_dizzy
 
 my_pal_sprite=spr_dancerpal
 current_pal=0
+
+specialtaunt=function()
+{
+sprite_index=spr_beelady_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}

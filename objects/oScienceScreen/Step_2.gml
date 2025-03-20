@@ -356,7 +356,7 @@ var xspawn=oControl.camX;
 var yspawn=oControl.wallY;
 
 waveatk=instance_create_depth(xspawn,yspawn,-1,oBossHazard) waveatk.createSource=self.id;
-
+waveatk.playerNO=playerNO
 if specialtimes[5]=1 {xspawn=oControl.camX+8 yspawn=oControl.wallY waveatk.image_angle=270; waveatk.image_xscale=0.5 waveatk.image_yscale=1.5}
 if specialtimes[5]=2 {xspawn=oControl.camX+320-8 yspawn=oControl.wallY waveatk.image_angle=270; waveatk.image_xscale=0.5 waveatk.image_yscale=1.5}
 

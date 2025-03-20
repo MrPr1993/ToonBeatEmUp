@@ -81,7 +81,7 @@ spritepos_setup(2,24,9,83)
 
 specialtaunt=function()
 {
-weaponanim(weaponspr,weaponIndex,915+_weaponaddX,-48+_weaponadd,90+_weaponang,weaponcolor)
+weaponanim(weaponspr,weaponIndex,915,-48,90,weaponcolor)
 sprite_index=spr_martian_taunt
 frame_set(0,0,0.2)
 frame_set(1,1,0.2)

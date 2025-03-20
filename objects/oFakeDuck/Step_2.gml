@@ -5,6 +5,7 @@ atk=0
 if anim=4
 {if AnimFrame=0 {AnimFrame=1 PlaySound(snd_duck7)}
 faked=instance_create_depth(x,y,-1,oBossHazard)
+faked.playerNO=playerNO
 faked.image_xscale=image_xscale faked.hitSource=oDuckBoss
 faked.MoveType=45 faked.HitType=45
 with faked
