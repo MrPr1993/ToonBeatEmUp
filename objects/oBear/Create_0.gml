@@ -72,3 +72,14 @@ enemyID=63
 
 if oControl.betatest if keyboard_check(vk_control)
 weapon_add("TOYHAMMER")
+
+specialtaunt=function()
+{
+sprite_index=spr_bear_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,1,0.1)
+if AnimFrame>3.9 AnimFrame=0
+}
+

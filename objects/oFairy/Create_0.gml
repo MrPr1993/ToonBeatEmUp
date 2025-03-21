@@ -65,3 +65,11 @@ enemyID=69
 
 spritepos_setup(1,24,-1,47)
 spritepos_setup(2,24,-2,65)
+
+specialtaunt=function()
+{
+sprite_index=spr_monk_taunt
+frame_set(0,0,0.05)
+frame_set(1,1,0.05)
+if AnimFrame>1.9 AnimFrame=0
+}

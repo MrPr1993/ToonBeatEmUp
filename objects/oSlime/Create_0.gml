@@ -66,3 +66,13 @@ my_pal_sprite=spr_slimepal
 
 spritepos_setup(1,24,11,61)
 spritepos_setup(2,24,11,91)
+
+specialtaunt=function()
+{
+sprite_index=spr_slime_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,1,0.1)
+if AnimFrame>=3.9 AnimFrame=0
+}

@@ -145,8 +145,20 @@ clawSpr=spr_science_b
 
 if screenAnim=0
 {
-screenSpr=spr_science_idle
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	{
+screenSpr=spr_science_taunt
 screenFrame+=0.1
+if screenFrame>=3 screenFrame=0
+	}
+	else
+{
+screenSpr=spr_science_idle
+screenFrame+=0.1}
+
 if screenFrame>=4 screenFrame=0
 
 if screenFrame=0 screenInd=0

@@ -166,3 +166,8 @@ weaponanim(weaponspr,weaponIndex,23,-35,79,weaponcolor)
 if image_index=clamp(image_index,24,24.9)
 weaponanim(weaponspr,weaponIndex,23,-36,90,weaponcolor)
 }
+
+if sprite_index=spr_knight_taunt
+{
+weaponanim(weaponspr,weaponIndex,28,-75-1*image_index,90,weaponcolor)
+}

@@ -25,7 +25,7 @@ isPlayer=0
 NoKnock=0
 Gatk=0
 type=0
-name="FIST"
+name="HIDETEXT"
 enemyPortraitSpr=spr_miscface
 enemyPortraitIndex=0
 //0 - Normal //1 - Strong Flying //2 - Throw // //

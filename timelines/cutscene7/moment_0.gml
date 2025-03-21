@@ -98,7 +98,7 @@ scenetime=620
 
 if scenetime=620
 {
-vspeed=-0.25
+vspeed=-0.25/2
 }
 
 if scenetime=900

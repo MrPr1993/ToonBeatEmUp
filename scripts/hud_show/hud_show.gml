@@ -4,6 +4,8 @@ function hud_show() {
 
 	if object_index!=oPlayer
 	{
+	if name!="HIDETEXT"
+	{
 	var _maxplayer=playerFrom _maxplayer=clamp(_maxplayer,1,4)
 	
 	oControl.Pshowhp[_maxplayer]=showhp
@@ -55,6 +57,7 @@ if x=-999999
 	
 	
 	}
+}
 
 
 }

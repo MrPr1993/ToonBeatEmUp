@@ -19,12 +19,7 @@ canbeGrabbed=1
 
 if anim=0 or anim=1 {sprite_index=StandSpr
 	
-	if specialtaunt!=-1
-	if oControl.p1.dead=1 
-	and oControl.p2.dead=1 
-	and oControl.p3.dead=1 
-	and oControl.p4.dead=1 
-	sprite_index=spr_harpye_taunt
+
 	
 	image_index+=0.1 if image_index>7-0.1 image_index=0}
 
@@ -37,6 +32,12 @@ if targetEnemy.x>x-64*image_xscale image_xscale=1 else image_xscale=-1
 if (key_left=0 and key_right=0 and key_up=0 and key_down=0)
 {
 sprite_index=StandSpr
+
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	sprite_index=spr_harpye_taunt
 }
 else
 {

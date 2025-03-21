@@ -28,6 +28,13 @@ if targetEnemy.x>x image_xscale=1 else image_xscale=-1
 if (key_left=0 and key_right=0 and key_up=0 and key_down=0)
 {
 sprite_index=StandSpr
+
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	sprite_index=spr_harpy_taunt
+
 }
 else
 {
