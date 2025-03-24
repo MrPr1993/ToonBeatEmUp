@@ -13,6 +13,7 @@ if anim=0 or anim=1 or anim=4 or anim=13
 z=lerp(z,-16+hoverZ,0.1)
 zSpeed=0
 
+
 if anim=0 or anim=1
 {
 if targetEnemy.x>x image_xscale=1 else image_xscale=-1
@@ -26,6 +27,8 @@ if (key_left=0 and key_right=0 and key_up=0 and key_down=0)
 GheadX=10
 GheadY=-90
 sprite_index=spr_ghost_stand
+
+
 }
 else
 {
@@ -279,6 +282,21 @@ headInd=image_index
 
 GheadX=10
 GheadY=-104
+}
+
+if sprite_index=spr_ghost_stand
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	sprite_index=spr_harpye_taunt
+
+if sprite_index=spr_ghost_taunt
+{
+headSpr=spr_ghost_head_taunt
+headInd=image_index
+GheadX=10
+GheadY=-88-image_index
 }
 
 	if hp<=0

@@ -59,7 +59,7 @@ draw_text(160,34+10+64,"GET THE\nTROPHY!")
 else
 {
 if gameready=3
-draw_text(160,34+10,string(playerwinner)+" WINS!")
+draw_text(160,34+10,string(playerwinner))
 }
 	draw_set_halign(fa_left)
 }

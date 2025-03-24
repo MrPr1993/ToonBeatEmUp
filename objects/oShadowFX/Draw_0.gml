@@ -1,5 +1,7 @@
 if instance_exists(oScienceScreen) with oScienceScreen
 {
+if instance_exists(oArenaBossBattles)	
+draw_sprite(spr_science_bossbg,0,screenX,screenY+screenZ)
 var altsprite=0;
 if sprite_index=ShockSpr or sprite_index=FlatSpr or sprite_index=BurnSpr altsprite=1;
 draw_sprite(spr_science_bg,0,screenX,screenY+screenZ)

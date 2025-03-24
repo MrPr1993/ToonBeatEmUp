@@ -5,7 +5,8 @@ hp=clamp(hp,0,9999)
 
 ///Intro
 if anim=100
-{alarm[0]=0 if image_alpha=0 PlaySound(snd_mirrorlady1)
+{
+alarm[0]=0 if image_alpha=0 PlaySound(snd_mirrorlady1)
 if image_alpha<1 image_alpha+=0.01 else image_alpha=1
 sprite_index=spr_mirrorlady_laugh
 

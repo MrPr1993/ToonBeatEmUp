@@ -61,6 +61,15 @@ enemyID=163
 isBoss=1
 specialBossState=1
 
+specialtaunt=function()
+{
+sprite_index=spr_martianb_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if AnimFrame>=2.9 AnimFrame=0
+}
+
 
 if oControl.betatest=1
 if keyboard_check(vk_control)

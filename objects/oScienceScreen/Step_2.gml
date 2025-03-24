@@ -480,6 +480,19 @@ if AnimFrame>=5 {screenSpr=spr_science_action if screenInd<=3.5 screenInd+=0.25;
 	if AnimFrame>=9 {AnimFrame+=0.25 if AnimFrame>=21 {canmove=1 anim=0 AnimFrame=0}}
 }
 
+///Boss Battle Intro
+if anim=110
+{immune=1
+screenSpr=mask_none
+screenZ=lerp(screenZ,-44,0.1)
+AnimFrame+=1
+
+if AnimFrame>=240
+{
+AnimFrame=0 anim=100
+}
+}
+
 	///Intro
 	if anim=100{immune=1 
 		
@@ -495,6 +508,7 @@ if AnimFrame>20.5
 {immune=0 anim=0 canmove=1}
 	
 	}
+	
 	
 	////Panic
 if anim=595000

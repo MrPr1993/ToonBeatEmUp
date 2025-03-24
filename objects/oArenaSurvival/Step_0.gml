@@ -11,8 +11,7 @@ if gamesetting=0
 with oControl
 {global.Continues=0; with oPlayer PlayerLife=0
 if oArenaSurvival.playerFight
-with oPlayer {isPlayer=playerNO selfatk.isPlayer=playerNO 
-
+with oPlayer {isPlayer=playerNO selfatk.isPlayer=playerNO
 
 	if oArenaSurvival.object_index=oArenaSurvival {PlayerLife=0;	
 		

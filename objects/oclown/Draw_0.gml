@@ -1,0 +1,6 @@
+////Puppet Strings
+//draw_set_color(c_white)
+//draw_line(round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index])*SpritePos)*image_xscale+(shake+weaponX*wobbleX)*image_xscale),round(y+trainz+(floorPosY[image_index]+waistPosY[image_index]+headPosY[image_index])*SpritePos+weaponY*wobbleY+z+extraY),round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index])*SpritePos)*image_xscale+(shake+weaponX*wobbleX)*image_xscale),round(y+trainz+(floorPosY[image_index]+waistPosY[image_index]+headPosY[image_index])*SpritePos+weaponY*wobbleY+z+extraY-999))
+//draw_line(round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index])*SpritePos)*image_xscale+(shake+weaponX2*wobbleX)*image_xscale),round(y+trainz+(floorPosY[image_index]+waistPosY[image_index]+headPosY[image_index])*SpritePos+weaponY2*wobbleY+z+extraY),round(x+((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index])*SpritePos)*image_xscale+(shake+weaponX2*wobbleX)*image_xscale),round(y+trainz+(floorPosY[image_index]+waistPosY[image_index]+headPosY[image_index])*SpritePos+weaponY2*wobbleY+z+extraY-999))
+
+script_execute(chardraw);

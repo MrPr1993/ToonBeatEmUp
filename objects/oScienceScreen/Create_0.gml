@@ -87,6 +87,8 @@ lockXaddTime=120
 
 enemyID=180;
 
+
+
 screenAnim=0;
 screenSpr=mask_none
 screenFrame=0;

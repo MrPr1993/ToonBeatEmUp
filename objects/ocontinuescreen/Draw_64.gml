@@ -381,15 +381,19 @@ if altresult2!=-1
 draw_text(0,144+16+8,string_hash_to_newline(altresult2))
 }
 else
+if oContinueScreen.altresult2!=-1
 draw_text(0,144+16+8,string_hash_to_newline(oContinueScreen.altresult2))
 }
 
 if oContinueScreen.AltScore3!=-2
 {
+if oContinueScreen.altresult3!=-1
+{
 if oContinueScreen.AltScore3=0
 draw_text(0,144+32+8,string_hash_to_newline(round(oContinueScreen.time*200)))
 else
 draw_text(0,144+32+8,string_hash_to_newline(oContinueScreen.altresult3))
+}
 }
 if oContinueScreen.scoreClearSet=0
 {oContinueScreen.scoreClearSet=1

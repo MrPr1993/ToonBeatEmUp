@@ -65,5 +65,13 @@ my_pal_sprite=spr_zombiepal
 spritepos_setup(1,24,3,58)
 spritepos_setup(2,24,21,86)
 
+specialtaunt=function()
+{
+sprite_index=spr_duck_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}
+
 if oControl.betatest=1
 {if keyboard_check(vk_control) {canmove=0 anim=100 z=-200 ground=0}}

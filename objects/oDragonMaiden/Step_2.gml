@@ -18,6 +18,19 @@ wobbleY=lerp(wobbleY,1,0.1)
 
 if anim=0
 {if handL.anim=9999 handL.anim=0
+	
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	{
+sprite_index=spr_dragonmaiden_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if AnimFrame>2.9 AnimFrame=0 exit;
+	}
+	
 if image_xscale=1 {lockX=lerp(lockX,oControl.camX+96,0.01) lockX=clamp(lockX,x-9999999,oControl.camX+160)} else {lockX=lerp(lockX,oControl.camX+320-96,0.01) lockX=clamp(lockX,oControl.camX+320-160,x+9999999)}
 
 body.image_index=image_index
@@ -44,8 +57,11 @@ if AnimFrame=clamp(AnimFrame,1,2)
 if image_xscale=1 specialtimes[0]-=0.45 else specialtimes[0]+=0.45
 x+=specialtimes[0]
 if x=clamp(x,oControl.camX-200,oControl.camX+320+200) AnimFrame=1.8 else {
+	if instance_exists(oArenaBossBattles)
+	{dead=1 instance_destroy() exit;}
 	PlaySound(snd_dragon9)
-	specialtimes[0]=0 AnimFrame=3.5}
+	specialtimes[0]=0 AnimFrame=3.5
+	}
 }
 if AnimFrame>3
 {

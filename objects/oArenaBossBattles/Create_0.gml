@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+ArenaOver=0;
+
 enemiesdefeated=0
 useonce=0
 

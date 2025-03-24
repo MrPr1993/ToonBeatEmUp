@@ -17,7 +17,14 @@ overwriteAttack5=1
 
 canbeGrabbed=1
 
-if anim=0 or anim=1 {sprite_index=StandSpr image_index+=0.1 if image_index>7-0.1 image_index=0}
+
+	
+if anim=0 or anim=1 {sprite_index=StandSpr
+	
+
+
+	
+	image_index+=0.1 if image_index>7-0.1 image_index=0}
 
 if anim=0 or anim=1
 {
@@ -158,3 +165,11 @@ oPlayer.x+=3*image_xscale
 	
 	if hp<=0
 x=clamp(x,__view_get( e__VW.XView, 0 )+32,__view_get( e__VW.XView, 0 )+320-32)
+
+
+if sprite_index=StandSpr
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	sprite_index=spr_harpy_taunt

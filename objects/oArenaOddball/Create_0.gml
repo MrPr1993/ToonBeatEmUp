@@ -9,6 +9,8 @@ playerFight=1
 gameready=0
 playerFight=1
 
+PointsTime=60;
+
 ///Create object here
 instance_create_depth(160,180,-1,oOddball)
 

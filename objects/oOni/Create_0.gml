@@ -58,9 +58,19 @@ DizzySpr=spr_oni_dizzy hasDizzy=1
 
 enemyID=157
 
+CanFade=0;
+
 spritepos_setup(1,24,4,72)
 spritepos_setup(2,0,0,102)
 spritepos_setup(2,24,0,102)
 
 current_pal=0;
 my_pal_sprite=spr_ninjapal
+
+specialtaunt=function()
+{
+sprite_index=spr_oni_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}

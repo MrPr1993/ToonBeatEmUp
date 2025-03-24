@@ -28,6 +28,21 @@ if hover=-1
 hoverZ=lerp(hoverZ,-2,0.025) if hoverZ<-1.8 hover=1
 } 
 
+if instance_exists(oGhostBoss)
+if oGhostBoss.anim=595000
+{alarm[0]=choose(4,16,24)
+sprite_index=spr_ghost_head_panic
+image_index=oGhostBoss.image_index
+exit;
+}
+
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	if anim=0
+	{sprite_index=spr_ghost_head_taunt image_index+=0.1 if image_index>3 image_index=0; exit;}
+
 if anim=0
 {if targetEnemy.x>x image_xscale=1 else image_xscale=-1
 if x!=clamp(x,targetX-4,targetX+4)
@@ -54,7 +69,7 @@ else {if hp<=0
 	{
 	if ownBody!=-1 with ownBody
 	{headRespawn=100}	
-	flashFX(x+10*image_xscale,y,z+12,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
+	flashFX(x+10*image_xscale,y,z-12,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
 	instance_destroy()
 	}
 	image_index=9}
@@ -91,6 +106,7 @@ frame_set(16,4,0.025)
 frame_set(17,0,0.025)
 if AnimFrame>17.75 anim=0
 }
+
 
 
 

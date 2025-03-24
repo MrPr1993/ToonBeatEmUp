@@ -67,7 +67,7 @@ spritepos_setup(2,24,0,71)
 specialtaunt=function()
 {
 sprite_index=spr_monk_taunt
-frame_set(0,0,0.1)
-frame_set(1,1,0.1)
+frame_set(0,0,0.2)
+frame_set(1,1,0.2)
 if AnimFrame>1.9 AnimFrame=0
 }

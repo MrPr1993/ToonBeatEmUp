@@ -33,10 +33,9 @@ function animsetup_enemy() {
 	and oControl.p2.dead=1 
 	and oControl.p3.dead=1 
 	and oControl.p4.dead=1 
-	specialtaunt(); else
-	{sprite_index=StandSpr
-	image_index+=0.2 if image_index>2.8 image_index=0}
-	exit;
+	{specialtaunt(); exit;}
+	//{sprite_index=StandSpr
+	//image_index+=0.2 if image_index>2.8 image_index=0}
 	}	
 	
 	sprite_index=StandSpr

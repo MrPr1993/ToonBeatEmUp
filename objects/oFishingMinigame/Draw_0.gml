@@ -44,7 +44,9 @@ draw_sprite_ext(sprite_index,image_index,x,y+z+inwater,oPlayer.image_xscale,1,im
 if fishout=3
 {draw_set_font(global.scorefont)
 draw_set_color(c_white)
+draw_set_halign(fa_center)
 draw_text(x,y-16,fishname)
 draw_text(x,y-24,fishscore)
+draw_set_halign(fa_left)
 }
 }
