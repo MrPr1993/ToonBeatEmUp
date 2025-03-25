@@ -75,3 +75,11 @@ spritepos_setup(2,0,5,65)
 spritepos_setup(2,24,3,65)
 
 enemyID=55
+
+specialtaunt=function()
+{
+sprite_index=spr_ninjabun_taunt
+frame_set(0,0,0.2)
+frame_set(1,1,0.2)
+if AnimFrame>1.9 AnimFrame=0
+}

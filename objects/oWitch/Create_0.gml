@@ -70,3 +70,11 @@ if keyboard_check(vk_shift)
 {
 canmove=0 anim=100 AnimFrame=0;
 }
+
+specialtaunt=function()
+{
+sprite_index=spr_witch_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}

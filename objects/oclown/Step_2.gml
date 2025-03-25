@@ -266,7 +266,7 @@ if image_index=clamp(image_index,24,24.9)
 {weaponanim(weaponspr,weaponIndex,33,-87,450,weaponcolor)
 weaponanim_2(weaponspr2,weaponIndex2,-25,-68,451,weaponcolor)}
 }weaponBack=1 weaponBack2=0
-if sprite_index=spr_bear_front
+if sprite_index=spr_clown_front
 {weaponBack=0
 if image_index=clamp(image_index,0,0.9) or image_index=clamp(image_index,3,3.9)
 {weaponanim(weaponspr,weaponIndex,19,-62,image_xscale,weaponcolor)
@@ -277,4 +277,11 @@ weaponanim_2(weaponspr2,weaponIndex2,-19,-63,image_xscale,weaponcolor)}
 if image_index=clamp(image_index,2,2.9) or image_index=clamp(image_index,5,5.9)
 {weaponanim(weaponspr,weaponIndex,19,-64,image_xscale,weaponcolor)
 weaponanim_2(weaponspr2,weaponIndex2,-19,-64,image_xscale,weaponcolor)}
+}
+
+
+if sprite_index=spr_clown_taunt
+{
+weaponanim(weaponspr,weaponIndex,22,-105-image_index,90,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,-12-image_index,-56-image_index,270,weaponcolor2)
 }

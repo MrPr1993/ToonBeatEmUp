@@ -66,3 +66,11 @@ if oControl.betatest if keyboard_check(vk_control) {canmove=0 anim=100
 	if keyboard_check(vk_shift) specialtaunt=3
 	
 	}
+	
+	specialtaunt=function()
+{
+sprite_index=spr_scientistm_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}

@@ -67,3 +67,13 @@ enemyID=154
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
+
+specialtaunt=function()
+{
+sprite_index=spr_twoheads_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,3,0.1)
+if AnimFrame>3.9 AnimFrame=0
+}

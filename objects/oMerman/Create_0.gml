@@ -76,3 +76,11 @@ enemyID=82
 
 spritepos_setup(1,24,3,44)
 spritepos_setup(2,24,15,73)
+
+specialtaunt=function()
+{
+sprite_index=spr_merman_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+if AnimFrame>1.9 AnimFrame=0
+}

@@ -18,14 +18,10 @@ if AnimFrame>5.8 {AnimFrame=0 anim=10}
 ////Stand
 if anim=0
 {
+
 	
 
 sprite_index=spr_mirrorlady_stand
-frame_set(0,0,0.1)
-frame_set(1,1,0.1)
-frame_set(2,2,0.1)
-frame_set(3,1,0.1)
-if AnimFrame>3.9 AnimFrame=0
 
 if enemyset!=0
 {
@@ -33,9 +29,31 @@ if hp=0
 {AnimFrame=0 anim=11 specialcheck1=0
 	
 	if enemyset=3 anim=12 ///Defeat
+	exit;
 	}
 
 }
+
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	{
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if AnimFrame>2.9 AnimFrame=0		
+
+	sprite_index=spr_mirrorlady_taunt exit;
+	}
+
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,1,0.1)
+if AnimFrame>3.9 AnimFrame=0
+
+
 }
 
 ////Spawn Units

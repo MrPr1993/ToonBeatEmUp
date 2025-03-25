@@ -5,7 +5,15 @@ function animsetup_swing(){
 	animsetup_enemy()
 	
 if anim=0 
-{sprite_index=StandSpr
+{
+	if specialtaunt!=-1
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	{specialtaunt(); exit;}	
+
+sprite_index=StandSpr
 	
 if AnimFrame>1 AnimFrame+=0.25 else AnimFrame+=0.01 if AnimFrame>3 AnimFrame=0
 image_index=AnimFrame

@@ -16,6 +16,7 @@ zSpeed=0
 
 if anim=0 or anim=1
 {
+image_index+=0.1 if image_index>=3 image_index=0;
 if targetEnemy.x>x image_xscale=1 else image_xscale=-1
 
 headSpr=spr_ghost_head
@@ -289,7 +290,7 @@ if sprite_index=spr_ghost_stand
 	and oControl.p2.dead=1 
 	and oControl.p3.dead=1 
 	and oControl.p4.dead=1 
-	sprite_index=spr_harpye_taunt
+	sprite_index=spr_ghost_taunt
 
 if sprite_index=spr_ghost_taunt
 {

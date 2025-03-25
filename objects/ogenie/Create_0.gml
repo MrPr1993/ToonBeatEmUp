@@ -82,3 +82,13 @@ my_pal_sprite=spr_zombiepal
 if oControl.betatest if keyboard_check(vk_control) {canmove=0 anim=100
 	if keyboard_check(vk_shift) {instance_create_depth(x,y,-1,oGenieMaster); instance_destroy();}
 	}
+
+
+specialtaunt=function()
+{
+sprite_index=spr_genie_taunt
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+if AnimFrame>=2.9 AnimFrame=0
+}

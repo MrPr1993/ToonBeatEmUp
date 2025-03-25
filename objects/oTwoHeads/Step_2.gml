@@ -45,7 +45,7 @@ if AnimFrame>4.5 {atk=0 canmove=1}
 if anim=12
 {
 if AnimFrame=0  {PlaySound(choose(snd_twoheads10,snd_twoheads3,snd_twoheads11))}
-damage=0.2 
+damage=0.2  MoveType=1
 atkcol_set(29,0,-9,1.75,1,64)
 if AnimFrame<1 {atk=0 sprite_index=spr_twoheads_attack1 image_index=3 AnimFrame+=0.1}
 else if !ground {sprite_index=spr_twoheads_jump AnimFrame+=0.1 if AnimFrame>3 {sprite_index=spr_twoheads_attack2
@@ -59,21 +59,55 @@ if AnimFrame=1 {ground=0 zSpeed=-16 sentflying=-4*image_xscale}
 
 ///Bullet Fire
 if anim=13
-{
+{var ismoving=0;
+	
+var shootf2=2;
+var shootf3=3;
+var shootf4=4;
+var shootf5=5;
+	
 if AnimFrame=0  {PlaySound(choose(snd_twoheads3,snd_twoheads10,snd_twoheads8))}
-	if AnimFrame=0 specialcheck5=6 sprite_index=spr_twoheads_shoot
+	if AnimFrame=0 {specialcheck4=choose(1,-1) specialcheck3=0
+		
+		specialcheck5=6}
+
+if specialcheck5!=6
+if AnimFrame=clamp(AnimFrame,0,6)
+{
+if y>oControl.wallY+4 and specialcheck4=-1 {ismoving=1 y-=2}
+if y<oControl.camY+240-4 and specialcheck4=1 {ismoving=1 y+=2}
+}		
+		
+sprite_index=spr_twoheads_shoot
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
-frame_set(2,2,0.25) if AnimFrame=3
+
+if specialcheck5!=6
+if ismoving=1 {specialcheck3+=0.1 if specialcheck3>=6 specialcheck3=0;
+sprite_index=spr_twoheads_shootmove
+shootf2=6+specialcheck3;
+shootf3=0+specialcheck3;
+shootf4=6+specialcheck3;
+shootf5=6+specialcheck3;
+}
+
+frame_set(2,shootf2,0.25)
+
+
+if AnimFrame=3
 {PlaySound(snd_gun) 
 bul1=instance_create_depth(x+10*image_xscale,y+1,-1,oProjectile) bul1.z=-62 bul1.hspeed=4*image_xscale bul1.image_xscale=image_xscale bul1.damage=0.1
 bul1=instance_create_depth(x+(10+23)*image_xscale,y+1,-1,oProjectile) bul1.z=-62 bul1.hspeed=4*image_xscale bul1.image_xscale=image_xscale bul1.damage=0.1
 flashFX(x+10*image_xscale,y+1,z-62,spr_gunflash,0,1,0,1,1,c_white,1)
 flashFX(x+10*image_xscale,y+1,z-62,spr_gunflash,0,1,0,1,1,c_white,1)
 	}
-frame_set(3,3,0.5)
-frame_set(4,4,0.5)
-frame_set(5,5,0.5) if AnimFrame>6 if specialcheck5!=1 {specialcheck5-=1 AnimFrame=2}
+
+
+
+frame_set(3,shootf3,0.5)
+frame_set(4,shootf4,0.5)
+
+frame_set(5,shootf5,0.5) if AnimFrame>6 if specialcheck5!=1 {specialcheck5-=1 AnimFrame=2}
 frame_set(6,2,0.05)
 frame_set(7,1,0.1)
 frame_set(8,0,0.1)

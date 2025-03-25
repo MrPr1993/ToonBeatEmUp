@@ -208,3 +208,9 @@ if sprite_index=spr_swing_frozen
 {armsX=99999999999999999999
 weaponanim(weaponspr,weaponIndex,40,-27,48,weaponcolor)
 }
+
+
+if sprite_index=spr_merman_taunt
+{armsX=0 armsY=900
+weaponanim(weaponspr,weaponIndex,-26,-57,90,weaponcolor)
+}
