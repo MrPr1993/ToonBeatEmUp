@@ -53,8 +53,26 @@ hp=maxhp
 
 AnimFrame=0
 //disappearTime=90 canmove=1 PlaySound(ReturnVoice)
+if playerNO=1
+{
 x=__view_get( e__VW.XView, 0 )+oControl.P1SpawnX
 y=__view_get( e__VW.YView, 0 )+oControl.P1SpawnY
+}
+if playerNO=2
+{
+x=__view_get( e__VW.XView, 0 )+oControl.P2SpawnX
+y=__view_get( e__VW.YView, 0 )+oControl.P2SpawnY
+}
+if playerNO=3
+{
+x=__view_get( e__VW.XView, 0 )+oControl.P3SpawnX
+y=__view_get( e__VW.YView, 0 )+oControl.P3SpawnY
+}
+if playerNO=4
+{
+x=__view_get( e__VW.XView, 0 )+oControl.P4SpawnX
+y=__view_get( e__VW.YView, 0 )+oControl.P4SpawnY
+}
 z=0
 ground=1
 recovery=180

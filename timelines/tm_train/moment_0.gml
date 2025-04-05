@@ -5,6 +5,12 @@ oPlayer.canControl=0
 oControl.showMap=0
 oControl.P1SpawnX=90
 oControl.P1SpawnY=232
+oControl.P2SpawnX=90
+oControl.P2SpawnY=232
+oControl.P3SpawnX=90
+oControl.P3SpawnY=232
+oControl.P4SpawnX=90
+oControl.P4SpawnY=232
 oPlayer.areaEntry=0
 oPlayer.canmove=0
 

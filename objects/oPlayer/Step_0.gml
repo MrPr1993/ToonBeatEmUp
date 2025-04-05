@@ -279,6 +279,24 @@ y=lerp(y,autoYMOVE,0.1) if y=clamp(y,autoYMOVE-2,autoYMOVE+2) {y=autoYMOVE autoY
 }
 else
 {
+if playerNO=1
+{
 x=__view_get( e__VW.XView, 0 )+oControl.P1SpawnX
 y=__view_get( e__VW.YView, 0 )+oControl.P1SpawnY
+}
+if playerNO=2
+{
+x=__view_get( e__VW.XView, 0 )+oControl.P2SpawnX
+y=__view_get( e__VW.YView, 0 )+oControl.P2SpawnY
+}
+if playerNO=3
+{
+x=__view_get( e__VW.XView, 0 )+oControl.P3SpawnX
+y=__view_get( e__VW.YView, 0 )+oControl.P3SpawnY
+}
+if playerNO=4
+{
+x=__view_get( e__VW.XView, 0 )+oControl.P4SpawnX
+y=__view_get( e__VW.YView, 0 )+oControl.P4SpawnY
+}
 }

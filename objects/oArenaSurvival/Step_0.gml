@@ -23,6 +23,20 @@ with oPlayer {isPlayer=playerNO selfatk.isPlayer=playerNO
 	hp=maxhp
 	}
 	}
+	
+
+P1SpawnX=32
+P1SpawnY=176
+
+P2SpawnX=320-32
+P2SpawnY=176
+
+P3SpawnX=32
+P3SpawnY=224
+
+P4SpawnX=320-32
+P4SpawnY=224
+	
 with p1 if object_index=oPlayer {alarm[0]=90 x=-96 y=176 key_right=1 } else {visible=0 x=-99999999999}
 with p2 if object_index=oPlayer  {alarm[0]=90 x=320+96 y=176 key_right=0  key_left=-1 image_xscale=-1 } else {visible=0 x=-99999999999}
 with p3 if object_index=oPlayer  {alarm[0]=90 x=-96 y=224 key_right=1 } else {visible=0 x=-99999999999}

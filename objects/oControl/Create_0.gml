@@ -392,6 +392,21 @@ P1SpawnY=208
 P1SpawnXadd=32
 P1SpawnYadd=208
 
+P2SpawnX=32
+P2SpawnY=208
+P2SpawnXadd=32
+P2SpawnYadd=208
+
+P3SpawnX=32
+P3SpawnY=208
+P3SpawnXadd=32
+P3SpawnYadd=208
+
+P4SpawnX=32
+P4SpawnY=208
+P4SpawnXadd=32
+P4SpawnYadd=208
+
 AnimFrame=0
 
 eventTimerMode=0;

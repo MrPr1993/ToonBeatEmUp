@@ -50,7 +50,7 @@ actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 
 actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
-sprite_index=mask_none
+sprite_index=spr_angrymirror
 x=0
 y=0
 
@@ -58,13 +58,13 @@ newscript=function()
 {
 scenetime+=1;
 
-if scenetime=160
+if scenetime=360
 {
 image_index=1
 oControl.quakeFXTime=10
 }
 
-if scenetime=320
+if scenetime=520
 {sprite_index=spr_gonnabreakyou
 with oControl
 {
@@ -74,8 +74,14 @@ with oControl {cutscenename="VIVA" cutsceneline= "Oh please, you're not doing an
 }
 }
 
-if scenetime=540
+if scenetime=940
 {sprite_index=mask_none
+	
+with actor1 {x=96}
+with actor2 {x=86}
+with actor3 {x=76}
+with actor4 {x=92}
+	
 with oControl
 {
 with oControl {cutscenename="MIRROSA" cutsceneline= "WaitwaitwaitWAIT! Mercy, mercy! What do you want from me anyway?!"
@@ -83,7 +89,7 @@ with oControl {cutscenename="MIRROSA" cutsceneline= "WaitwaitwaitWAIT! Mercy, me
 }
 }
 
-if scenetime=820
+if scenetime=1320
 {
 with oControl
 {
@@ -92,18 +98,18 @@ cutscenename="BAHATI" cutsceneline= "We're looking for the hideout of some thiev
 }
 }
 
-if scenetime=1160
+if scenetime=1660
 {
 with oControl {cutscenename="MIRROSA" cutsceneline= "Okay okay! There's an emergency exit door just nearby that'll take you there!"
 }
 }
 
-if scenetime=1460
+if scenetime=1960
 {with oControl {cutscenename="SOFIA" cutsceneline= "All we needed to hear! Let's mosey, chicas! Time to raise some hell!"
 }
 }
 
-if scenetime=1600
+if scenetime=2200
 {
 with actor1 {sprite_index=spr_viva_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
 with actor2 {sprite_index=spr_hina_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
@@ -111,12 +117,12 @@ with actor3 {sprite_index=spr_bahati_move image_index=0 anim=9999 image_speed=0.
 with actor4 {sprite_index=spr_sofia_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
 }
 
-if scenetime=1860
+if scenetime=2560
 {
 with oControl {cutscenename="MIRROSA" cutsceneline= "My lovely palace... My mirror... Such brutes...."}
 }
 
-if scenetime=2100
+if scenetime=3000
 {
 with oControl {cutscenename="" cutsceneline=""}
 
@@ -126,22 +132,22 @@ sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
 }
 
-if scenetime=clamp(scenetime,2100,2115)
-{scenetime=2110 actor5.z-=4
+if scenetime=clamp(scenetime,3000,3015)
+{scenetime=3010 actor5.z-=4
 if flashscreen.image_alpha>=1.5
 {x=0; y=0; sprite_index=spr_snowlab; image_index=0;
 with flashscreen {fadeSpd=-0.25 isfading=1 image_alpha=1}
-scenetime=2120
+scenetime=3020
 }
 }
 
-if scenetime=2120
+if scenetime=3020
 {
 vspeed=-0.25
 }
 
 
-if scenetime=2620
+if scenetime=3720
 {
 oControl.stageEndFX=1
 }

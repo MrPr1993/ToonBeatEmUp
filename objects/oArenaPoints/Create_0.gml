@@ -94,5 +94,5 @@ if p4Over=1 with oControl.p4
 
 alarmgo=function()
 {gameready=2
-with oPlayer {canControl=0 if anim=1 {canmove=0 anim=0}} alarm[1]=30
+with oPlayer { canControl=0 if anim=1 {canmove=0 anim=0}} alarm[1]=30
 }
