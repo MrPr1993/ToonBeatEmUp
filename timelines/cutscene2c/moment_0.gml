@@ -37,7 +37,7 @@ timeline_speed=0
 with oCameoChar sprite_index=mask_none
 
 actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
-{sprite_index=spr_twoheads_hit image_index=9 anim=99999 image_xscale=-1}
+{sprite_index=spr_twoheads_beaten  image_speed=0.1 anim=99999 image_xscale=-1}
 
 actorC1=instance_create_depth(215+140,170-32,-1,oCameoChar) with actorC1
 {sprite_index=spr_cowboy_move image_index=9 anim=99999 image_xscale=-1}
@@ -97,7 +97,7 @@ if scenetime=720
 {
 with oControl
 {
-with actor5 {image_index=0 sprite_index=spr_twoheads_badge}
+with actor5 {image_speed=0 image_index=0 sprite_index=spr_twoheads_badge}
 }
 }
 
@@ -184,7 +184,7 @@ if scenetime=1620
 with oControl with actor5 {image_index=1}
 if scenetime=1630
 {scenetime=1644
-with oControl with actor5 {sprite_index=spr_twoheads_stand image_index=0
+with oControl with actor5 {sprite_index=spr_twoheads_talk image_index=0
 	
 with oControl
 {
@@ -227,6 +227,23 @@ audio_stop_all()
 actorscreen.scenetime=1641
 
 global.CutsceneSkip=0
+
+with actor1
+{sprite_index=spr_viva_wildtake image_index=0 anim=9999}
+with actor2
+{sprite_index=spr_hina_point image_index=0 anim=9999}
+with actor3
+{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
+with actor4
+{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
+
+with actor5
+{sprite_index=spr_twoheads_talk image_index=0 image_speed=0 anim=9999}
+
+with actorC1
+{sprite_index=spr_cowboy_stand x=oControl.actor5.x image_index=0 image_speed=0 anim=9999}
+with actorC2
+{sprite_index=spr_cowboy_stand x=oControl.actor5.x image_index=0 image_speed=0 anim=9999}
 
 timeline_position=5901
 timeline_speed=1
