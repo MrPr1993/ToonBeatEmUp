@@ -3,6 +3,8 @@ if cutscenePlaying=0
 {
 instance_create_depth(-999,-999,-1,oTextBox)
 
+layer_set_visible("Sky2",0)
+
 with oControl
 {
 CDtextT="YOU DO HAVE A TICKET,\nDON'T YOU?"
@@ -21,13 +23,16 @@ __view_set( e__VW.XView, 0, SceneY )
 
 if timeline_position<=2
 {
+BLACKFX=instance_create_depth(340,0,-1,oCameoChar) with BLACKFX
+{shadow=-1 sprite_index=spr_allblackscreen image_index=0 anim=99999 image_xscale=2 isDepth=0 depth=-999}
+
 actor1=instance_create_depth(86,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=99999}
 actor2=instance_create_depth(50,144,-1,oCameoChar) with actor2
 {sprite_index=spr_hina_point image_index=0 anim=99999}
 actor3=instance_create_depth(46,160,-1,oCameoChar) with actor3
 {sprite_index=spr_bahati_cutscene image_index=1 anim=99999}
-actor4=instance_create_depth(76,188,-1,oCameoChar) with actor4
+actor4=instance_create_depth(48,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=99999}
 }
 
@@ -241,9 +246,9 @@ with actor5
 {sprite_index=spr_twoheads_talk image_index=0 image_speed=0 anim=9999}
 
 with actorC1
-{sprite_index=spr_cowboy_stand x=oControl.actor5.x image_index=0 image_speed=0 anim=9999}
+{sprite_index=spr_cowboy_stand x-=100 image_index=0 image_speed=0 anim=9999}
 with actorC2
-{sprite_index=spr_cowboy_stand x=oControl.actor5.x image_index=0 image_speed=0 anim=9999}
+{sprite_index=spr_cowboy_stand x-=100 image_index=0 image_speed=0 anim=9999}
 
 timeline_position=5901
 timeline_speed=1

@@ -31,7 +31,7 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
-{sprite_index=spr_witch_hit image_index=10 anim=9999 image_xscale=-1
+{sprite_index=spr_witch_beaten image_speed=0.25 anim=9999 image_xscale=-1
 	specialdraw=function()
 	{var flip=1; if image_xscale=-1 flip=2;
 pal_swap_set(pal_witch,flip,false);
@@ -98,7 +98,8 @@ cutsceneline= "Hey, it's what we do. We have questions for you, miss witch."
 if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
 
 if scenetime=940
-{with oControl
+{with actor5 {sprite_index=spr_witch_attack2 image_speed=0 image_index=0}
+with oControl
 {cutscenename="KIANDRA" cutsceneline= "...do you ever get answers through violence, what is wrong with you?!"}
 }
 
@@ -110,7 +111,7 @@ if scenetime=1260
 if scenetime=1460
 {	
 with oControl
-{image_index=1
+{image_index=1 with actor5 {sprite_index=spr_witch_talk image_speed=0 image_index=0}
 cutscenename="KIANDRA" cutsceneline= "Also, I'm not a witch. I'm a druid!"}
 hspeed=-2 
 }
@@ -138,6 +139,12 @@ with actor2 {x=640}
 with actor3 {x=640}
 with actor4 {x=640}
 with actor5 {x=620}		
+
+extrablack=instance_create_depth(0,0,-1,oCameoChar) with extrablack
+{
+sprite_index=spr_allblackscreen isDepth=0 anim=99999 depth=999
+vspeed=-1
+}
 
 sprite_index=spr_cauldronshow x=0 y=100
 
