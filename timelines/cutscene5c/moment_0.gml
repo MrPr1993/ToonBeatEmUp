@@ -5,7 +5,7 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="MAK A WISH!\nCHOOSE WISELY!"
+CDtextT="MAKE A WISH!\nCHOOSE WISELY!"
 CDtextA="SOMEWHERE COOLER."
 CDtextB="BE ON LAND."
 CDtextC="REACH GREATER HEIGHTS."

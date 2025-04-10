@@ -13,19 +13,18 @@ CDtextC="USE THE HARPY!"
 cutscenename=""
 cutsceneline=""
 
-if timeline_position<=2
-{
-actor1=instance_create_depth(86+320,170+24,-1,oCameoChar) with actor1
+
+actor1=instance_create_depth(114+320,170+24,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
-actor2=instance_create_depth(50+320,144+24,-1,oCameoChar) with actor2
+actor2=instance_create_depth(46+320,160+24,-1,oCameoChar) with actor2
 {sprite_index=spr_hina_point image_index=0 anim=9999}
-actor3=instance_create_depth(46+320,160+24,-1,oCameoChar) with actor3
+actor3=instance_create_depth(50+320,144+24,-1,oCameoChar) with actor3
 {sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
 actor4=instance_create_depth(76+320,188+24,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(215+320,170+24,-1,oCameoChar) with actor5
 {sprite_index=spr_harpy_dizzy anim=9999 image_speed=0.1 image_xscale=-1}
-}
+
 timeline_position=10
 timeline_speed=0
 
@@ -78,7 +77,7 @@ cutsceneline="OH NO! WHAT DO WE DO?!"
 }
 }
 
-if scenetime=600
+if scenetime=400
 {
 with oControl
 {cutscenename="HINA"
@@ -87,7 +86,7 @@ with actor2 {sprite_index=spr_hina_cutscene image_index=0 image_xscale=-1}
 }
 }
 
-if scenetime=860
+if scenetime=660
 {
 with oControl
 {cutscenename="SOFIA"
@@ -99,20 +98,20 @@ with actor4 {sprite_index=spr_sofia_point image_index=1 image_xscale=-1}
 
 
 
-if scenetime=1080
+if scenetime=880
 {
 with oControl
 {
 }
 
-actor6=instance_create_depth(80,130,-1,oCameoChar) with actor6
-{sprite_index=spr_hwolf_stand anim=9999 image_xscale=-1}
+actor6=instance_create_depth(80,140,-1,oCameoChar) with actor6
+{sprite_index=spr_hwolf_parachute image_index=0 anim=9999 image_xscale=-1}
 
 }
 
 if scenetime=1180
 {
-with actor6 {shadow=-1; PlaySound(snd_jump) spdZ=-4 newscript=function()
+with actor6 {shadow=-1; image_index=1 PlaySound(snd_jump) spdZ=-4 newscript=function()
 {
 z+=spdZ;
 
@@ -124,10 +123,10 @@ hspeed=-0.2 vspeed=0.2
 
 }
 
-
-
-if scenetime=clamp(scenetime,1100,1239)
+if scenetime=clamp(scenetime,880,1179)
 with oControl {if SceneX>0 SceneX-=4 else SceneX=0}
+
+
 
 if scenetime=1240
 {
@@ -208,6 +207,9 @@ with actor4 {sprite_index=spr_sofia_point image_index=2 image_xscale=-1}
 cutscenename="VIVA"
 cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
 	}
+	
+SceneY=32
+__view_set( e__VW.XView, 0, SceneY )
 
 cutscenePlaying=1
 

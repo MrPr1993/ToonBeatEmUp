@@ -6,10 +6,10 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
-CDtextA="GET THE PARACHUTES!"
-CDtextB="JUMP OFF THE PLANE!"
-CDtextC="USE THE HARPY!"
+CDtextT="THE SHIP HAS NO DRIVER!\nWHAT NOW?!"
+CDtextA="ABANDON SHIP!"
+CDtextB="TAKE THE WHEEL!"
+CDtextC="WAKE ROSY!"
 
 cutscenename=""
 cutsceneline=""
@@ -103,8 +103,7 @@ if scenetime=1920
 {
 specialdraw=function()
 {draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
-draw_sprite(spr_cutscene2a,0,160,192)
-draw_sprite(spr_cutscene2a2,0,160,192)
+draw_sprite(spr_cutscene2a,0,0,0)
 }
 
 with oControl

@@ -19,8 +19,8 @@ __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
-actorscreen=instance_create_depth(160,100,-1,oCameoChar) with actorscreen
-{sprite_index=spr_blimpscene anim=9999 isDepth=0 depth=-3000 shadow=-1;
+actorscreen=instance_create_depth(160,150,-1,oCameoChar) with actorscreen
+{sprite_index=spr_ufofall anim=9999 isDepth=0 depth=-3000 shadow=-1;
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -33,7 +33,7 @@ actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 actor5=instance_create_depth(11215,170,-1,oCameoChar) with actor5
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
-actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
+actor6=instance_create_depth(11215,17099,-1,oCameoChar) with actor6
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
@@ -68,14 +68,14 @@ if specialcheck[0]=120 { scenetime=310 vspeed=2 PlaySound(snd_explosion) oContro
 if scenetime=clamp(scenetime,310,315)
 {
 scenetime=312
-if y>=240 {scenetime=320 x=480 hspeed=-1 vspeed=1 y=-80}
+if y>=240 {layer_set_visible("SpaceBG",0) scenetime=320 x=200 hspeed=-0.1 vspeed=1 y=-80}
 }
 
 if scenetime=clamp(scenetime,320,325)
 {scenetime=322
 if y>=180 {PlaySound(snd_explosion) scenetime=330 vspeed=0 hspeed=0
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
-{image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
+{image_alpha=0 fadeSpd=0.025 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_white depth=-4000
 }	
 	}
@@ -84,9 +84,11 @@ sprite_index=spr_whitecol image_blend=c_white depth=-4000
 if scenetime=clamp(scenetime,330,335)
 {
 if flashscreen.image_alpha>=1.5
-{x=0; y=0; sprite_index=spr_cutscene5a5; image_index=0;
-with flashscreen {fadeSpd=0 isfading=0 image_alpha=1}
-scenetime=620
+{x=0; y=0; sprite_index=spr_divasleaveufo; image_index=0;  specialdraw=-1;
+with flashscreen {fadeSpd=0 isfading=0 image_alpha=1
+	
+	}
+scenetime=680
 }
 }
 
@@ -141,7 +143,7 @@ if specialcheck[0]<=0 {scenetime=6000-60 with oControl canSkipCutscene=0}
 }
 
 if scenetime=6000
-{
+{layer_set_visible("SpaceBG",0)
 sprite_index=mask_none
 
 with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
@@ -150,8 +152,8 @@ with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
 with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
 
 with actor6 {x=400}
-with actor7 {x=520 }
-with actor8 {x=640}
+with actor7 {x=520-32 sprite_index=spr_ufoscene_signs}
+with actor8 {x=640-32 sprite_index=spr_hotairballoon image_index=0}
 
 with oControl
 {

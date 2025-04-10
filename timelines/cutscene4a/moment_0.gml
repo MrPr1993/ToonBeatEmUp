@@ -32,7 +32,7 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
-{sprite_index=spr_duck_stand image_index=10 anim=9999 image_xscale=-1
+{sprite_index=spr_duck_talk1 image_index=0 anim=9999 image_xscale=-1
 	}
 
 actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
@@ -51,6 +51,8 @@ with oControl
 
 }
 
+y=320
+
 newscript=function()
 {
 scenetime+=1;
@@ -63,7 +65,7 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene
 
 
 
-if scenetime<80 {y--;}
+if scenetime<80 {y=lerp(y,230,0.1)}
 if scenetime=120
 {
 with actor1 {x=64}
@@ -83,6 +85,7 @@ y=0 vspeed=-0.2
 if scenetime=640
 {sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
 
+with actor5 {sprite_index=spr_duck_talk1 image_speed=0.25}
 	
 with oControl
 {cutscenename="DIXIE"
@@ -103,7 +106,7 @@ cutsceneline= "And ruinin' my show!"
 
 if scenetime=1260
 {sprite_index=mask_none
-with actor5 image_xscale=1
+with actor5 {image_xscale=1 image_speed=0}
 	
 with oControl
 {
@@ -112,7 +115,7 @@ cutsceneline= "My boss ain't gonna be happy to see all this damage!"
 }
 
 if scenetime=1460
-{	
+{	with actor5 {sprite_index=spr_duck_hit image_index=24}
 with oControl
 {image_index=1
 cutscenename="BAHATI" cutsceneline= "Your boss?"
@@ -121,7 +124,7 @@ hspeed=-2
 }
 
 if scenetime=1660
-{	with actor5 image_xscale=-1
+{	with actor5 {image_xscale=-1 sprite_index=spr_duck_attack1 image_index=0}
 with oControl
 {image_index=1
 cutscenename="VIVA" cutsceneline= "And who's that? Speak up, birdbrain, now!"}
@@ -129,24 +132,27 @@ hspeed=-2
 }
 
 if scenetime=2040
-{
+{with actor5 {sprite_index=spr_duck_lemmethink image_index=0}
+
 with oControl
 {
+
 cutscenename="DIXIE" cutsceneline="LET ME THINK..."
 }
 }
 if scenetime=2180
-{
+{with actor5 {newscript=function(){image_index+=0.1 if image_index>=4 image_index=2 } }
 with oControl
 {
+
 cutscenename="DIXIE" cutsceneline= "PBBBBBBBTH!!!"
 }
 }
 
 if scenetime=2380
-{
+{with actor5 newscript=-1;
 with oControl
-{
+{sprite_index=spr_duck_taunt image_speed=0.1
 cutscenename="DIXIE" cutsceneline= "I ain't sayin' NOTHIN' 'bout my boss, 'specially after you come in here rufflin' my feathers AND my show!"
 }
 }
@@ -156,6 +162,12 @@ if scenetime=2840 scenetime=6000
 
 if scenetime=6000
 {
+with actor1 {x=64}
+with actor2 {x=64}
+with actor3 {x=64}
+with actor4 {x=64}
+with actor5 {x=320-64 newscript=-1; sprite_index=spr_duck_talk2 image_speed=0.1}	
+	
 sprite_index=mask_none
 
 

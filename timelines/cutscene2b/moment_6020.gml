@@ -57,12 +57,17 @@ if cutsceneDecmode=1
 
 
 with oControl {
+cutscenename=""
+cutsceneline=""
+layer_set_visible("Tiles_1",0)
+layer_set_visible("Clouds",0)
+
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 }
-with actorscreen {isDepth=0 x=0 y=0 depth=-9999 specialcheck[0]=-320 specialcheck[1]=-320 specialcheck[2]=-320 specialcheck[3]=-320
+with actorscreen {shadow=-1 isDepth=0 x=0 y=0 depth=-9999 specialcheck[0]=-320 specialcheck[1]=-320 specialcheck[2]=-320 specialcheck[3]=-320
 specialdraw=function()
 {image_index+=0.25
 draw_sprite(spr_cutscene2bB4,image_index,0,round(specialcheck[3]))
@@ -73,12 +78,12 @@ draw_sprite(spr_cutscene2bB1,image_index,0,round(specialcheck[0]))
 if scenetime<60 {draw_set_color(c_black) draw_rectangle(-999,-999,9999,9999,false) draw_set_color(c_white)}
 else
 {
-if scenetime<-100+420*4
+if scenetime<1260
 {
-specialcheck[0]=lerp(specialcheck[0],0,0.03)
-specialcheck[1]=lerp(specialcheck[1],0,0.04)
-specialcheck[2]=lerp(specialcheck[2],0,0.05)
-specialcheck[3]=lerp(specialcheck[3],0,0.06)
+specialcheck[0]=lerp(specialcheck[0],0+choose(-random(2),random(2)),0.03)
+specialcheck[1]=lerp(specialcheck[1],0+choose(-random(2),random(2)),0.04)
+specialcheck[2]=lerp(specialcheck[2],0+choose(-random(2),random(2)),0.05)
+specialcheck[3]=lerp(specialcheck[3],0+choose(-random(2),random(2)),0.06)
 }
 else
 {
@@ -97,23 +102,23 @@ newscript=function()
 if scenetime=60{ x=0 y=0
 with oControl {cutscenename="VIVA" cutsceneline="WHAT WAS I THINKING?! WE ARE GONNA DIE!"}
 }
-if scenetime=180*4{ x=0 y=0
+if scenetime=260{ x=0 y=0
 with oControl {cutscenename="SOFIA" cutsceneline="WOW, DIDN'T YOU THINK OF A GOOD PLAN?"}}
 
-if scenetime=240*4{ x=0 y=0
+if scenetime=460{ x=0 y=0
 with oControl {cutscenename="BAHATI" cutsceneline="YOU SERIOUS? WE ARE GONNA GO SPLAT!"}}
 
-if scenetime=300*4{ x=0 y=0
+if scenetime=680{ x=0 y=0
 with oControl {cutscenename="HINA" cutsceneline="NOT UNLESS WE LAND ON SOMETHING TO BREAK OUR FALL."}}
 
-if scenetime=360*4{ x=0 y=0
+if scenetime=1100{ x=0 y=0
 with oControl {cutscenename="VIVA" cutsceneline="WHAT- HOW ARE WE GONNA DO THAT?"}}
 
-if scenetime=420*4{ x=0 y=0
+if scenetime=1260{ x=0 y=0 
 with oControl {cutscenename="HINA" cutsceneline="I KNOW A TRICK. TRUST ME. LOOK DOWN!"}}
 
 ////END SCENE PART
-if scenetime=540*4 oControl.stageEndFX=1
+if scenetime=1560 oControl.stageEndFX=1
 }
 }
 }

@@ -5,10 +5,10 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
-CDtextA="GET THE PARACHUTES!"
-CDtextB="JUMP OFF THE PLANE!"
-CDtextC="USE THE HARPY!"
+CDtextT="WHAT DO YOU SEE\nIN THE CRYSTAL BALL?"
+CDtextA="A CORN!"
+CDtextB="A CROWN!"
+CDtextC="A LAMP!"
 
 cutscenename="CIRCE" cutsceneline= "How could you?! First you pick on my sweet Larry and NOW you attack me?! What's wrong with you?!"
 }
@@ -31,7 +31,7 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(3200-64,150,-1,oCameoChar) with actor5
-{sprite_index=spr_seaweed_stand image_index=10 anim=9999 image_xscale=-1
+{sprite_index=spr_seaweed_beaten image_index=10 anim=9999 image_xscale=1 image_speed=0.1
 	}
 
 actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
@@ -59,18 +59,15 @@ if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
 
-
-
-
-if scenetime<80 {y--;}
-if scenetime=120
+if scenetime<60 {y--;}
+if scenetime=340
 {
 with actor1 {x=64}
 with actor2 {x=64}
 with actor3 {x=64}
 with actor4 {x=64}
 with actor5 {x=320-64}
-with actor {x=320-32 y=160}
+with actor6 {x=320-32 y=160}
 	
 sprite_index=mask_none
 with oControl
@@ -80,7 +77,7 @@ cutscenename="BAHATI" cutsceneline="Sorry. We HAVE been too gung-ho on the whole
 y=0
 }
 
-if scenetime=640
+if scenetime=740
 {sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
 scenetime=1700
 	
@@ -90,16 +87,17 @@ cutsceneline="Look, we've had some VERY valuable personal treasures stolen from 
 }
 }
 
-if scenetime=2040
-{actor5.image_xscale=1
+if scenetime=2140
+{actor5.image_xscale=-1 with actor5 {sprite_index=spr_seaweed_attack4 image_index=1 image_speed=0}
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Very well... I suppose I'll let this incident go since Larry attacked you first. Larry, fetch my crystal ball would you, sweetie?"
 }
 }
 
-if scenetime=2440
+if scenetime=2600
 {
+with actor5 {sprite_index=spr_seaweed_talk1 image_index=0 image_speed=0}
 with oControl
 {
 cutscenename="LARRY" cutsceneline= "..."
@@ -107,7 +105,7 @@ cutscenename="LARRY" cutsceneline= "..."
 }
 
 if scenetime=2840
-{
+{with actor5 {sprite_index=spr_seaweed_talk1 image_speed=0.1}
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Oh, come now, mommy will take you to a shop to get your favorite treat, 'kay?"
@@ -115,7 +113,8 @@ cutscenename="CIRCE" cutsceneline= "Oh, come now, mommy will take you to a shop 
 }
 
 if scenetime=3100
-{actor5.hspeed=2
+{actor6.hspeed=2 with actor5 {sprite_index=spr_seaweed_talk1 image_index=0 image_speed=0}
+
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Ya know? That octopus looked adorable."
@@ -124,6 +123,7 @@ cutscenename="HINA" cutsceneline= "Ya know? That octopus looked adorable."
 
 if scenetime=3300
 {
+with actor5 {sprite_index=spr_seaweed_talk2 image_index=1 image_speed=0.1}
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Yes. They used to be a sailor."
@@ -132,6 +132,11 @@ cutscenename="CIRCE" cutsceneline= "Yes. They used to be a sailor."
 
 if scenetime=3400
 {
+with actor1 {sprite_index=spr_viva_screamdown image_index=0 image_speed=0}
+with actor2 {sprite_index=spr_hina_wildtake image_index=0 image_speed=0}
+with actor3 {sprite_index=spr_bahati_wildtake image_index=0 image_speed=0}
+with actor4 {sprite_index=spr_sofia_wildtake image_index=0 image_speed=0}
+
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "What."
@@ -140,18 +145,37 @@ cutscenename="VIVA" cutsceneline= "What."
 
 if scenetime=3500
 {actor6.hspeed=-2 actor6.x=380
+	with actor1 {sprite_index=spr_viva_wildtake image_index=0 image_speed=0}
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Oh, here we are, thank you dear!"
 }
 }
 
-if scenetime=3700 actor6.hspeed=0
+if scenetime=3600 actor6.hspeed=0
+
+if scenetime=3650
+{
+flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
+{image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
+sprite_index=spr_whitecol image_blend=c_black depth=-4000
+}
+}
+
+if scenetime=clamp(scenetime,3700,3710)
+{scenetime=3705 actor5.z-=4
+if flashscreen.image_alpha>=1.5
+{x=0; y=0; image_index=0;
+with flashscreen {fadeSpd=-0.25 isfading=1 image_alpha=1}
+scenetime=3800
+}
+}
+
 
 if scenetime=3800 scenetime=6000
 
 if scenetime=6000
-{
+{with actor5 sprite_index=spr_seaweed_talk2
 sprite_index=spr_witchcrystalball x=0 y=0
 
 with oControl
@@ -160,7 +184,7 @@ cutscenename="CIRCE" cutsceneline= "Now, let's see what you can see in this crys
 }
 
 
-if scenetime=6500
+if scenetime=6300
 {
 with oControl
 {

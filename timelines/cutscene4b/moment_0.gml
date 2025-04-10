@@ -5,10 +5,10 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
-CDtextA="GET THE PARACHUTES!"
-CDtextB="JUMP OFF THE PLANE!"
-CDtextC="USE THE HARPY!"
+CDtextT="WHAT DO YOU SEE\nIN THE CAULDRON?"
+CDtextA="A CORNFIELD!"
+CDtextB="THE SEA!"
+CDtextC="THE DESERT!"
 
 cutscenename=""
 cutsceneline=""
@@ -68,7 +68,7 @@ scenetime+=1;
 if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
-if scenetime<120 {if y<192 y+=0.2;}
+if scenetime<120 {if y<230 y+=0.2;}
 if scenetime=120
 {sprite_index=mask_none scenetime=340
 	
@@ -109,9 +109,9 @@ if scenetime=1260
 }
 
 if scenetime=1460
-{	
+{	with actor5 {sprite_index=spr_witch_talk image_speed=0 image_index=0}
 with oControl
-{image_index=1 with actor5 {sprite_index=spr_witch_talk image_speed=0 image_index=0}
+{image_index=1 
 cutscenename="KIANDRA" cutsceneline= "Also, I'm not a witch. I'm a druid!"}
 hspeed=-2 
 }
@@ -130,7 +130,15 @@ with oControl
 {cutscenename="KIANDRA" cutsceneline="...fine. If it gets you out of here faster, then so be it... Let us consult my cauldron for your paths..."}
 }
 
-if scenetime=2440 scenetime=6000
+if scenetime=2340
+{
+flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
+{image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
+sprite_index=spr_whitecol image_blend=c_black depth=-4000
+}
+}
+
+if scenetime=2440 {flashscreen.image_alpha=0 flashscreen.image_xscale=0 scenetime=6000}
 
 if scenetime=6000
 {hspeed=0
