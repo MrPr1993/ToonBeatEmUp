@@ -4332,6 +4332,7 @@
     {"id":{"name":"tiles_ufo","path":"tilesets/tiles_ufo/tiles_ufo.yy",},},
     {"id":{"name":"tileset_muse","path":"tilesets/tileset_muse/tileset_muse.yy",},},
     {"id":{"name":"tileset_yyy","path":"tilesets/tileset_yyy/tileset_yyy.yy",},},
+    {"id":{"name":"TileSet38","path":"tilesets/TileSet38/TileSet38.yy",},},
     {"id":{"name":"tilesmermaid","path":"tilesets/tilesmermaid/tilesmermaid.yy",},},
     {"id":{"name":"tl_beach","path":"tilesets/tl_beach/tl_beach.yy",},},
     {"id":{"name":"tl_grav","path":"tilesets/tl_grav/tl_grav.yy",},},

@@ -225,13 +225,13 @@ with oControl {cutscenename="" cutsceneline= ""}
 if scenetime=3700 
 {sprite_index=mask_none image_blend=c_white x=0 y=0 image_xscale=1 image_yscale=1
 	
-with actor1 {x=100 y=140 sprite_index=spr_viva_cutscene}
+with actor1 {x=100 y=160 sprite_index=spr_viva_cutscene}
 
-with actor2 {x=160-96 y=160 sprite_index=spr_hina_hit image_index=21}
-with actor3 {x=160 y=160 sprite_index=spr_bahati_hit image_index=21}
-with actor4 {x=160+96 y=160 sprite_index=spr_bahati_hit image_index=21}
+with actor2 {x=160-96 y=180 sprite_index=spr_hina_hit image_index=21}
+with actor3 {x=160 y=180 sprite_index=spr_sofia_hit image_index=21}
+with actor4 {x=160+96 y=180 sprite_index=spr_bahati_hit image_index=21}
 
-with actor5 {y=220 y=140 sprite_index=spr_witch_talk image_xscale=-1}
+with actor5 {x=220 y=160 sprite_index=spr_witch_talk image_xscale=-1}
 	
 with oControl {cutscenename="" cutsceneline= ""}
 }
@@ -309,12 +309,12 @@ with oControl {cutscenename="" cutsceneline=""}
 }
 
 if scenetime=1120 {flashscreen.fadeSpd=0 x=0 y=0
-sprite_index=spr_hotdesert image_index=0 vspeed=-0.1
+sprite_index=spr_hotdesert image_index=0 vspeed=-0.2
 }
 if scenetime>=1120 flashscreen.image_alpha-=0.1
 
 if scenetime=1300
-{x=48 y=32 hspeed=-0.1 vspeed=-0.01
+{x=48 y=32 hspeed=-0.1 vspeed=-0.02
 sprite_index=spr_hotdesert image_index=1
 with oControl {cutscenename="VIVA" cutsceneline= "Well that's a quick trip. MY FOOT!"
 }

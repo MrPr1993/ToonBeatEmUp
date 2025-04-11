@@ -31,7 +31,7 @@ newscript=function()
 {
 scenetime+=1;
 
-if scenetime=220
+if scenetime=320
 {
 with oControl
 {
@@ -39,7 +39,7 @@ cutscenename="SOFIA" cutsceneline= "The cornfield? But that's such a long walk!"
 }
 }
 
-if scenetime=440
+if scenetime=640
 {
 with oControl
 {
@@ -47,7 +47,7 @@ cutscenename="BAHATI" cutsceneline= "It's our only lead Sofia. You don't want yo
 }
 }
 
-if scenetime=680
+if scenetime=1100
 {
 with oControl
 {
@@ -56,7 +56,7 @@ cutscenename="VIVA" cutsceneline= "Ughhhhhh.... Fine, let's go..."
 }
 }
 
-if scenetime=720
+if scenetime=1280
 {
 with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
 with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
@@ -66,23 +66,23 @@ with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2}
 with oControl {cutscenename="" cutsceneline= ""}
 }
 
-if scenetime=920
+if scenetime=1520
 {with actor5 {sprite_index=spr_seaweed_talk1 image_speed=0 image_index=0}
 with oControl {cutscenename="CIRCE" cutsceneline= "Why am I having a real feeling I'm forgetting something..."}
 }
 
-if scenetime=1220
+if scenetime=1720
 {with actor5 {sprite_index=spr_seaweed_hit image_speed=0 image_index=24}
 with oControl {cutscenename="CIRCE" cutsceneline= "Ah..."}
 }
 
-if scenetime=1520
+if scenetime=1820
 {
-with actor5 {sprite_index=spr_seaweed_move image_xscale=-1 hspeed=-1}
+with actor5 {sprite_index=spr_seaweed_move image_xscale=-1 image_speed=0.25 hspeed=-1}
 with oControl {cutscenename="CIRCE" cutsceneline="Well it's no longer my problem."}
 }
 
-if scenetime=2020
+if scenetime=2120
 {
 oControl.stageEndFX=1
 }
@@ -264,7 +264,7 @@ cutscenename="" cutsceneline=""}
 if scenetime=1900
 {
 with oControl {//SMASH!
-cutscenename="CIRCE" cutsceneline="Yes. She is skinny, the poor thing."}
+cutscenename="CIRCE" cutsceneline="Yes. The blond one is skinny, the poor thing."}
 }
 
 

@@ -94,6 +94,8 @@ cutsceneline="LOOK THERE, CHICAS!!"
 
 with actor4 {sprite_index=spr_sofia_point image_index=1 image_xscale=-1}
 }
+
+scenetime=740
 }
 
 
@@ -124,7 +126,7 @@ hspeed=-0.2 vspeed=0.2
 }
 
 if scenetime=clamp(scenetime,880,1179)
-with oControl {if SceneX>0 SceneX-=4 else SceneX=0}
+with oControl {if SceneX>0 SceneX-=4 else {SceneX=0}}
 
 
 

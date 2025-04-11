@@ -73,7 +73,7 @@ if y>=240 {layer_set_visible("SpaceBG",0) scenetime=320 x=200 hspeed=-0.1 vspeed
 
 if scenetime=clamp(scenetime,320,325)
 {scenetime=322
-if y>=180 {PlaySound(snd_explosion) scenetime=330 vspeed=0 hspeed=0
+if y>=180 {PlaySound(snd_explosion) scenetime=340 vspeed=0 hspeed=0
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 {image_alpha=0 fadeSpd=0.025 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_white depth=-4000
@@ -81,10 +81,10 @@ sprite_index=spr_whitecol image_blend=c_white depth=-4000
 	}
 }
 
-if scenetime=clamp(scenetime,330,335)
-{
+if scenetime=clamp(scenetime,340,345)
+{scenetime=342
 if flashscreen.image_alpha>=1.5
-{x=0; y=0; sprite_index=spr_divasleaveufo; image_index=0;  specialdraw=-1;
+{x=0; y=0; sprite_index=spr_divasleaveufo; image_index=0; image_alpha=1 specialdraw=-1;
 with flashscreen {fadeSpd=0 isfading=0 image_alpha=1
 	
 	}
@@ -99,7 +99,7 @@ with oControl
 cutscenename="VIVA" cutsceneline= "...So we're all in agreement to never speak of this again, right?"}
 }
 
-if scenetime=clamp(scenetime,360,720) flashscreen.image_alpha-=0.1;
+if scenetime=clamp(scenetime,720,800) flashscreen.image_alpha-=0.1;
 
 if scenetime=1020
 {	

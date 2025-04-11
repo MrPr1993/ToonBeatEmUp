@@ -9,15 +9,20 @@ if cutsceneDecmode=0
 CutsceneStage=rm_stage4
 
 with actorscreen
-{scenetime=0;
+{scenetime=0; shadow=-1;
+	
+specialdraw=function()
+{
+draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
+draw_sprite(spr_cutscene2a2,2,160,y)
+draw_sprite(spr_cutscene2a2,0,160,y)
+}
 
 sprite_index=mask_none
 with oControl
 {
 cutscenename="VIVA" cutsceneline="WE NEED TO JUMP!"
 }
-x=0
-y=0
 
 newscript=function()
 {
@@ -40,54 +45,49 @@ with oControl {cutscenename="VIVA" cutsceneline="ABANDON SHIP!"}
 }
 
 if scenetime=420
-{y=0
-{sprite_index=spr_cutscene2a2
-specialdraw=function()
-{y--; y=clamp(y,192,999)
-draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
-draw_sprite(spr_cutscene2a2,1,160,y)
-draw_sprite(spr_cutscene2a2,0,160,192)
-draw_self();
-}
+{
+with actor1 x=999
+with actor2 x=999
+with actor3 x=999
+with actor4 x=999
+with actor5 x=9000
 
-with oControl
-{cutscenename=""
-cutsceneline=""
-}
-}
-
-x=320 hspeed=-2
-sprite_index=spr_allblackscreen image_xscale=8
+with oControl {cutscenename="" cutsceneline=""}
+specialdraw=-1; x=0 y=0
+sprite_index=spr_allblackscreen image_xscale=1 image_yscale=1
 }
 
 if scenetime=480
 {
+layer_set_visible("ShipBG",1)	
+
 with oControl
 {
 cutscenename="" cutsceneline= ""
 }
 specialdraw=-1;
-x=0 hspeed=-2
+x=0 hspeed=-16
 sprite_index=spr_allblackscreen image_xscale=1
 }
 
 if scenetime=520
 {
-with actor1 {sprite_index=spr_viva_jump1 x=160-16 image_index=1 y=200 z=-200 newscript=function(){z+=8}}
+
+with actor1 {sprite_index=spr_viva_jump1 x=160-32 image_index=1 y=200 z=-200 newscript=function(){z+=8}}
 with actor2 {sprite_index=spr_hina_jump1 x=160-40 image_index=1 y=200 z=-240 newscript=function(){z+=8}}
-with actor3 {sprite_index=spr_bahati_jump1 x=160+16 image_index=1 y=200 z=-230 newscript=function(){z+=8}}
+with actor3 {sprite_index=spr_bahati_jump1 x=160+32 image_index=1 y=200 z=-230 newscript=function(){z+=8}}
 with actor4 {sprite_index=spr_sofia_jump1 x=160+40 image_index=1 y=200 z=-210 newscript=function(){z+=8}}
 }
 
 if scenetime=640
 {
 y=0
-x=320 hspeed=-4
-sprite_index=spr_allblackscreen image_xscale=8
+x=320 hspeed=-16
+sprite_index=spr_allblackscreen image_xscale=24
 }
 
 if scenetime=720
-{sprite_index=spr_lookshipgo
+{sprite_index=spr_lookshipgo layer_set_visible("ShipBG",0)	
 x=0 y=0 hspeed=0
 image_xscale=1
 with oControl {cutscenename="BAHATI" cutsceneline="AND THERE IT GOES..."}
@@ -98,9 +98,11 @@ if scenetime=860
 }
 
 if scenetime=1060
-{
+{hspeed=-2
 with oControl {cutscenename="SOFIA" cutsceneline="HEY I SEE LAND OVER THERE!"}
 }
+
+if scenetime=1100 hspeed=0
 
 if scenetime=1220
 {
@@ -108,20 +110,25 @@ with oControl {cutscenename="VIVA" cutsceneline="GREAT! LET'S GO THERE! WAIT... 
 }
 
 if scenetime=1420
+{image_index=1
+with oControl {cutscenename="" cutsceneline=""}
+}
+
+if scenetime=1720
 {
 with oControl {cutscenename="VIVA" cutsceneline="OH. ONE OF US HAS TO DO MOUTH TO MOUTH."}
 }
 
-if scenetime=1600
+if scenetime=1900
 {
 with oControl {cutscenename="HINA" cutsceneline="BLBLBBLLBLBLALSbLB."}
 }
-if scenetime=1800
+if scenetime=2100
 {
 with oControl {cutscenename="VIVA" cutsceneline="OH NEVER MIND SHE'S BREATHING. I THINK..."}
 }
 
-if scenetime=2020
+if scenetime=2320
 {
 oControl.stageEndFX=1
 }
@@ -136,7 +143,7 @@ CutsceneStage=rm_stage3
 
 with actorscreen
 {scenetime=0;
-
+sprite_index=spr_grabdawheel image_index=1
 with oControl
 {
 cutscenename="VIVA" cutsceneline="WE GOTTA TAKE THE WHEEL!"
@@ -150,8 +157,13 @@ scenetime+=1;
 
 if scenetime=360
 {
-specialdraw=-1;
-sprite_index=spr_grabdawheel image_index=1
+specialdraw=function()
+{
+draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
+draw_sprite(sprite_index,image_index,160,y)
+}
+
+sprite_index=spr_grabdawheel image_index=2
 with oControl {quakeFXTime=10; cutscenename="HINA" cutsceneline="LIKE THIS?"}
 }
 
@@ -176,16 +188,18 @@ with oControl {cutscenename="VIVA" cutsceneline="SHE WAS BEING SARCASTIC!"}
 }
 
 if scenetime=1750
-{image_index=2
-with oControl {cutscenename="VIVA" cutsceneline="AHHHHH LOOK OUT!!!!"}
+{image_index=3
+with oControl {cutscenename="VIVA" cutsceneline="AHHHHH LOOK OUT! WE'RE GONNA CRASH!"}
 }
 
+if scenetime>=2000 {image_index+=0.25 if image_index>=6 image_index=4}
+
 if scenetime=2000
-{image_index=3
+{
 with oControl {cutscenename="DIVAS" cutsceneline="AAAAAAAAAAAAAAAAAAAHHHHHHH!!!!"}
 }
 
-if scenetime=2320
+if scenetime=2220
 {
 oControl.stageEndFX=1
 }
@@ -195,11 +209,14 @@ oControl.stageEndFX=1
 
 /////////////DECISION 3
 if cutsceneDecmode=2
-{
+{shadow=-1;
 CutsceneStage=rm_stage5
 
 with actorscreen
 {scenetime=0;
+
+specialdraw=-1;
+
 with oControl {cutscenename="VIVA" cutsceneline="HEY! HEY LADY! WAKE UP!"}
 sprite_index=mask_none
 x=0

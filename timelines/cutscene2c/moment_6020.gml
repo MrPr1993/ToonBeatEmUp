@@ -39,25 +39,25 @@ layer_set_visible("SpookyPart3",1)
 sprite_index=mask_none
 	with oControl
 	{with actorC1 x=999 with actorC2 x=999 with actor5 x=999
-with actor1 {x=30-16 y=-8 y-=170 z-=80 vspeed=8 sprite_index=spr_viva_hit image_index=17 ground=0 spdZ=-8 hspeed=5/4 anim=9999
+with actor1 {x=92-16 y=-8+64 y-=170 z-=80 vspeed=6.1 sprite_index=spr_viva_hit image_index=17 ground=0 spdZ=-8 hspeed=5/4 anim=9999
 newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_point image_index=0}}}}
 	
-with actor2 {x=30+16 y=-8 z-=80 y-=170 vspeed=9 sprite_index=spr_hina_hit image_index=17 ground=0 spdZ=-9 hspeed=3.5/4 anim=9999
+with actor2 {x=92+16 y=-8+64 z-=80 y-=170 vspeed=5.9 sprite_index=spr_hina_hit image_index=17 ground=0 spdZ=-9 hspeed=6.5/4 anim=9999
 newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_hina_point image_index=0}}}}
 	
-with actor3 {x=30-32 y=-8 z-=80 y-=170 vspeed=6 sprite_index=spr_bahati_hit image_index=17 ground=0 spdZ=-8.5 hspeed=4/4 anim=9999
+with actor3 {x=92-32 y=-8+64 z-=80 y-=170 vspeed=5.5 sprite_index=spr_bahati_hit image_index=17 ground=0 spdZ=-8.5 hspeed=4/4 anim=9999
 newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_bahati_point image_index=0}}}}
 	
-with actor4 {x=30+32 y=-8 z-=80 y-=170 vspeed=5 sprite_index=spr_sofia_hit image_index=17 ground=0 spdZ=-9 hspeed=5/4 anim=9999
+with actor4 {x=92+32 y=-8+64 z-=80 y-=170 vspeed=5 sprite_index=spr_sofia_hit image_index=17 ground=0 spdZ=-9 hspeed=5/4 anim=9999
 newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
@@ -85,8 +85,8 @@ with oControl {cutscenename="VIVA" cutsceneline="OH NO MATTER. WE HAD NO WAY TO 
 
 if scenetime=1920
 {
-x=0 y=0 vspeed=-0.5 depth=-999 isDepth=0 vspeed=-0.02
-sprite_index=spr_lookamansion
+x=0 y=-48 vspeed=-0.5 depth=-999 isDepth=0 vspeed=0.1
+sprite_index=spr_lookamansion image_blend=c_white image_xscale=1 image_yscale=1
 with oControl {cutscenename="" cutsceneline=""}
 }
 
@@ -127,6 +127,11 @@ with actor1 {sprite_index=spr_viva_run image_speed=0.25 hspeed=4}
 with actor2 {sprite_index=spr_hina_run image_speed=0.25 hspeed=4}
 with actor3 {sprite_index=spr_bahati_run image_speed=0.25 hspeed=4}
 with actor4 {sprite_index=spr_sofia_run image_speed=0.25 hspeed=4}
+
+	with actor5 {sprite_index=spr_twoheads_hit image_index=24}
+	with actorC1 {sprite_index=spr_cowboy_hit image_index=24}	
+	with actorC2 {sprite_index=spr_cowboy_hit image_index=24}
+
 }
 
 }

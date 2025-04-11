@@ -3981,6 +3981,7 @@
     {"name":"tiles_ufo","order":44,"path":"tilesets/tiles_ufo/tiles_ufo.yy",},
     {"name":"tileset_muse","order":25,"path":"tilesets/tileset_muse/tileset_muse.yy",},
     {"name":"tileset_yyy","order":26,"path":"tilesets/tileset_yyy/tileset_yyy.yy",},
+    {"name":"TileSet38","order":9,"path":"tilesets/TileSet38/TileSet38.yy",},
     {"name":"tilesmermaid","order":62,"path":"tilesets/tilesmermaid/tilesmermaid.yy",},
     {"name":"tl_beach","order":31,"path":"tilesets/tl_beach/tl_beach.yy",},
     {"name":"tl_grav","order":32,"path":"tilesets/tl_grav/tl_grav.yy",},

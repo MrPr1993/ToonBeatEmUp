@@ -8,7 +8,7 @@ if cutsceneDecmode=0
 {CutsceneStage=rm_stage4  ///Abandon Ship
 with oControl {cutscenename="VIVA" cutsceneline="WE NEED TO GET THE PARACHUTES! BUT THE DOOR'S TOO FAR AWAY..."}
 with actorscreen newscript=function()
-{scenetime+=1;
+{scenetime+=1; shadow=-1;
 if scenetime=240{ x=0 y=0
 with oControl {cutscenename="HINA" cutsceneline="I GOT THEM!"}
 }
@@ -19,7 +19,7 @@ with oControl {cutscenename="VIVA" cutsceneline="HOW DID YOU- ERR. ALRIGHT. LET'
 
 if scenetime=720
 {
-with oControl {
+with oControl {cutscenename="" cutsceneline=""
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
@@ -30,25 +30,32 @@ depth=-9999 image_xscale=320 image_yscale=240
 }
 
 if scenetime=920
-{sprite_index=mask_none}
+{sprite_index=spr_cutscene2b image_speed=0 image_index=0 x=0 y=0
+	vspeed=0.1
+
+layer_set_visible("Clouds",0)
+layer_set_visible("Tiles_1",0)
+
+	
+	}
 
 if scenetime=980
 {	
 with oControl {cutscenename="BAHATI" cutsceneline="THE PLANE'S GOING TO CRASH..."}
 }
 
-if scenetime=1000
+if scenetime=1200
 {
 with oControl {cutscenename="VIVA" cutsceneline="EHH I'M SURE THEY'LL BE FINE. WHERE ARE WE GOING TO LAND?"}
 }
 
-if scenetime=1220
-{
+if scenetime=1420
+{image_index=1 x=0 y=0 hspeed=0 vspeed=0
 with oControl {cutscenename="SOFIA" cutsceneline="WOAH. SPOOKY. LET'S LAND THERE!"}
 }
 
 ////END SCENE PART
-if scenetime=1000 oControl.stageEndFX=1
+if scenetime=1600 oControl.stageEndFX=1
 }
 }
 //////
@@ -124,46 +131,79 @@ if scenetime=1560 oControl.stageEndFX=1
 }
 
 if cutsceneDecmode=2
-{CutsceneStage=rm_stage5 ///Try to wake Rosy up
+{CutsceneStage=rm_stage5 ///Grab the harpy
 with oControl {cutscenename="VIVA" cutsceneline="THE HARPY! LET'S GRAB HER AND HANG ON TO THEM!"}
 with actorscreen newscript=function()
-{scenetime+=1;
+{scenetime+=1; shadow=-1;
 if scenetime=240{ x=0 y=0
 with oControl {cutscenename="BAHATI" cutsceneline="I GOT THIS!"}
 }
-if scenetime=480{ x=0 y=0
-with oControl {cutscenename="HARPILDA" cutsceneline="WELL I NEVER! YOU BETTER ANSWER ME WHAT ARE YOU DOING BEFORE I SHAKE YOU ALL OFF OF ME!"}
+
+if scenetime=480
+{
+with oControl {cutscenename="" cutsceneline=""}
+
+
+
 }
-if scenetime=700{ x=0 y=0
-with oControl {cutscenename="VIVA" cutsceneline="WE?! YOU ATTACJED US FIRST!"}
+
+if scenetime=680{ x=0 y=0
+	
+with oControl
+{
+with actor5
+{x=160 y=150 z=-300 shadow=-1;
+sprite_index=spr_harpy_stand image_speed=0.25
 }
-if scenetime=920{ x=0 y=0
-with oControl {cutscenename="HARPILDA" cutsceneline="OF COURSE! YOU NO GOOD THIEVES WENT INTO MY TURF TO STEAL FROM THE WEAK!"}
+SceneX=0
+__view_set( e__VW.XView, 0, SceneX )
+SceneY=0
+__view_set( e__VW.XView, 0, SceneY )
+}
+	
+with oControl {
+layer_set_visible("Tiles_1",0)
+layer_set_visible("Clouds",0)
+	
+	cutscenename="HARPILDA" cutsceneline="WELL I NEVER! YOU BETTER ANSWER ME WHAT ARE YOU DOING BEFORE I SHAKE YOU ALL OFF OF ME!"}
+}
+
+if scenetime>=680
+{
+with oControl
+actor5.z=lerp(actor5.z,0,0.1)
+}
+
+if scenetime=1000{ x=0 y=0
+with oControl {cutscenename="VIVA" cutsceneline="WE?! YOU ATTACKED US FIRST!"}
 }
 if scenetime=1220{ x=0 y=0
+with oControl {cutscenename="HARPILDA" cutsceneline="OF COURSE! YOU NO GOOD THIEVES WENT INTO MY TURF TO STEAL FROM THE WEAK!"}
+}
+if scenetime=1520{ x=0 y=0
 with oControl {cutscenename="BAHATI" cutsceneline="OH... YOU MAY HAVE GOTTEN THE WRONG PEOPLE, MA'AM. WE GOT ROBBED TOO!"}
 }
-if scenetime=1420{ x=0 y=0
+if scenetime=1720{ x=0 y=0
 with oControl {cutscenename="VIVA" cutsceneline="THEY STOLE MY TREASURE."}
 }
-if scenetime=1620{ x=0 y=0
+if scenetime=1920{ x=0 y=0
 with oControl {cutscenename="SOFIA" cutsceneline="OUR TREASURE!!!"}
 }
-if scenetime=1820{ x=0 y=0
+if scenetime=1120{ x=0 y=0
 with oControl {cutscenename="HARPILDA" cutsceneline="OH, WELL THAT’S EMBARRASSING. WELL, I DO APOLOGIZE. MAYBE I CAN MAKE IT UP TO YOU DEARIES BY TAKING YOU TO ONE PLACE THEY MIGHT HAVE SHOWN UP MOSTLY?"}
 }
-if scenetime=2020{ x=0 y=0
+if scenetime=2320{ x=0 y=0
 with oControl {cutscenename="HINA" cutsceneline="WHAT PLACE IS IT?"}
 }
-if scenetime=2220{ x=0 y=0
+if scenetime=2520{ x=0 y=0
 with oControl {cutscenename="HARPILDA" cutsceneline="THAT CASINO HAS TOUGH SECURITY, BUT THAT’S ONE PLACE WHERE YOU CAN FIND CLUES FOR WHERE YOUR PRECIOUS THINGS GOT TAKEN TO."}
 }
-if scenetime=2420{ x=0 y=0
+if scenetime=2720{ x=0 y=0 sprite_index=spr_dojocasinoplace hspeed=0.1
 with oControl {cutscenename="VIVA" cutsceneline="THEN LET'S GO. HOW HARD CAN IT BE?"}
 }
 
 ////END SCENE PART
-if scenetime=3200 oControl.stageEndFX=1
+if scenetime=3400 oControl.stageEndFX=1
 }
 }
 

@@ -5,7 +5,7 @@ instance_create_depth(-999,-999,-1,oTextBox)
 
 with oControl
 {
-CDtextT="WHICH ONE\nWILL YOU WANT?"
+CDtextT="WHICH DOOR\nWILL YOU GO?"
 CDtextA="RED DOOR."
 CDtextB="GREEN DOOR."
 CDtextC="BLUE DOOR."
@@ -32,7 +32,16 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
-{sprite_index=spr_duck_stand image_index=10 anim=9999 image_xscale=-1
+{sprite_index=spr_ghost_move image_index=10 anim=9999 image_xscale=-1 specialcheck[6]=spr_ghost_head
+	specialdraw=function()
+	{
+
+	var headX=0; var headY=0; var headfacespr=specialcheck[6]; var headfaceimg=specialcheck[7];
+	if sprite_index=spr_ghost_stand {headX=10 headY=-90}
+	if sprite_index=spr_ghost_move {headX=20 headY=-88}	
+	draw_sprite_ext(sprite_index,image_index,round(x),round(y+z),image_xscale,image_yscale,0,c_white,0.8)
+	draw_sprite_ext(headfacespr,headfaceimg,round(x+headX*image_xscale),round(y+z+headY),image_xscale,image_yscale,0,c_white,0.8)	
+	}
 	}
 
 actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
@@ -44,9 +53,20 @@ actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
+actBG1=instance_create_depth(11215,170,-1,oCameoChar) with actBG1
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=1}
+
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
 sprite_index=spr_whereisghost
+
+drawscript=function()
+{
+if scenetime>=640 specialcheck[6]=lerp(specialcheck[6],0.8,0.05)
+draw_sprite(spr_allblackscreen,0,0,0)
+draw_sprite_ext(spr_whereisghost,1,round(x-scenetime/8),round(y),1,1,0,c_white,specialcheck[6])
+draw_self()
+}
 
 newscript=function()
 {
@@ -57,10 +77,8 @@ if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
 
+sprite_index=spr_whereisghost hspeed=-0.5 x=64
 
-
-
-if scenetime<80 {y--;}
 if scenetime=120
 {
 with actor1 {x=64}
@@ -69,7 +87,7 @@ with actor3 {x=64}
 with actor4 {x=64}
 with actor5 {x=320-64}
 	
-sprite_index=mask_none scenetime=340
+ scenetime=340
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
@@ -117,17 +135,27 @@ cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
 }
 }
 if scenetime=2040
-{
+{specialcheck[6]=0
+drawscript=function() {x=lerp(x,0,0.1) draw_self();}; x=32
+
 sprite_index=spr_ghostslash
 
 with oControl
 {quakeFXTime=10
-cutscenename="" cutsceneline= "CHOP!"
+cutscenename="" cutsceneline= "FOOLS!"
 }
 }
 
 if scenetime=2340
 {
+drawscript=function()
+{
+if scenetime>=2340 specialcheck[6]=lerp(specialcheck[6],0.8,0.05)
+draw_sprite(spr_allblackscreen,0,0,0)
+draw_sprite_ext(spr_cutscene3b3,2,round(x),round(y),1,1,0,c_white,specialcheck[6])
+draw_self()
+}	
+
 sprite_index=spr_cutscene3b3 image_index=0
 with oControl
 {
@@ -137,7 +165,7 @@ cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for th
 
 }
 
-if scenetime=2340
+if scenetime=2780
 {sprite_index=spr_cutscene3b3 image_index=1
 with oControl
 {
@@ -145,7 +173,7 @@ cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
 }
 }
 
-if scenetime=2440
+if scenetime=2800
 {
 with oControl
 {
@@ -153,25 +181,25 @@ cutscenename="SOFIA" cutsceneline= "The living huh...?"
 }
 }
 
-if scenetime=2740
+if scenetime=2940
 {
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "Well we're not living right now..."
 }
 }
-if scenetime=3040
+if scenetime=3200
 {
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
 }
 }
-if scenetime=3340
-{sprite_index=spr_allblackscreen x=0 y=0
+if scenetime=3300
+{sprite_index=spr_allblackscreen x=0 y=0 drawscript=-1;
 with oControl
 {
-cutscenename="" cutsceneline= "Beating ensues"
+cutscenename="" cutsceneline= "" ///Beating ensues
 }
 }
 if scenetime=3640
@@ -182,20 +210,20 @@ with oControl
 }
 }
 if scenetime=3940
-{sprite_index=spr_beatghost image_index=0
+{sprite_index=spr_beatghost image_index=0 x=0 y=0
 with oControl
-{
+{quakeFXTime=10
 cutscenename="ANNAMARI" cutsceneline= "WAIT WAIT WAIT!!! I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
 }
 }
-if scenetime=4240
+if scenetime=4440
 {
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "Your family heirloom...?"
 }
 }
-if scenetime=4540
+if scenetime=4600
 {
 with oControl
 {
@@ -210,13 +238,16 @@ with oControl
 cutscenename="ANNAMARI" cutsceneline= "Hmm... Let's make a deal since we're in the same situation... I revive you all, and you'll get back my heirloom along with yours!"
 }
 }
-if scenetime=5140
+if scenetime=5200
 {
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Wait how are you..."
 }
 }
+
+
+
 if scenetime=5440
 {sprite_index=spr_putheadback image_index=0
 with oControl
@@ -248,7 +279,7 @@ with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
 with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
 with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
 with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
-with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
+with actor5 {x=60; image_speed=0.25 sprite_index=spr_ghost_move; image_xscale=1 hspeed=2}
 
 with actor6 {x=400}
 with actor7 {x=520 }
@@ -265,7 +296,7 @@ with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
 with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
 with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
 with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
-with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
+with actor5 {image_speed=0 sprite_index=spr_ghost_stand; image_xscale=-1 hspeed=0}
 }
 
 if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;

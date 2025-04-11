@@ -24,7 +24,7 @@ newscript=function()
 scenetime+=1;
 
 if scenetime=320
-{
+{with actor5 {sprite_index=spr_duck_talk1 image_speed=0 image_index=0}
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "Why I oughta.... Fine! Exit's through the cornfield, let the door hit yer rears on the way out!"
@@ -54,7 +54,7 @@ cutscenename="VIVA" cutsceneline= "No, Hina. She means what she said."
 }
 
 if scenetime=860
-{with actor5 {sprite_index=spr_duck_attack3 image_speed=0 image_index=1}
+{
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "...."
@@ -97,7 +97,7 @@ newscript=function()
 {
 scenetime+=1;
 
-if scenetime=300
+if scenetime=380
 {
 with oControl
 {
@@ -105,7 +105,7 @@ cutscenename="DIXIE" cutsceneline= "Aw shucks, ya mean it?! That'd make this all
 }
 }
 
-if scenetime=540
+if scenetime=600
 {
 
 
@@ -134,7 +134,8 @@ cutscenename="" cutsceneline= ""
 
 if scenetime=1040
 {sprite_index=spr_allblackscreen
-cutscenename="VIVA" cutsceneline= "Hey this isn't their costume room."
+with oControl
+{cutscenename="VIVA" cutsceneline= "Hey this isn't their costume room."}
 }
 
 if scenetime=1260
@@ -147,7 +148,7 @@ cutscenename="DIXIE" cutsceneline= "And now for the grand finale... THESE DAMES 
 }
 }
 
-if scenetime=1460
+if scenetime=1620
 {sprite_index=spr_byetent x=0 y=0 vspeed=0
 with oControl
 {
@@ -155,7 +156,7 @@ cutscenename="" cutsceneline= ""
 }
 }
 
-if scenetime=1660
+if scenetime=1700
 {sprite_index=spr_byetent x=0 y=0
 with oControl
 {quakeFXTime=10
@@ -166,10 +167,10 @@ cutscenename="" cutsceneline= ""
 if scenetime=1860
 {actor5.y=9999 sprite_index=mask_none
 
-with actor1 {sprite_index=spr_viva_hit image_index=7 x=160 shadow=-1 image_speed=0}
-with actor2 {sprite_index=spr_hina_hit image_index=7 x=160 shadow=-1 image_speed=0}
-with actor3 {sprite_index=spr_bahati_hit image_index=7 x=160 shadow=-1 image_speed=0}
-with actor4 {sprite_index=spr_sofia_hit image_index=7 x=160 shadow=-1 image_speed=0}
+with actor1 {z=-32 sprite_index=spr_viva_hit image_index=7 x=-160 shadow=-1 image_speed=0}
+with actor2 {z=-32 sprite_index=spr_hina_hit image_index=7 x=-160 shadow=-1 image_speed=0}
+with actor3 {z=-32 sprite_index=spr_bahati_hit image_index=7 x=-160 shadow=-1 image_speed=0}
+with actor4 {z=-32 sprite_index=spr_sofia_hit image_index=7 x=-160 shadow=-1 image_speed=0}
 
 with oControl
 {
@@ -181,18 +182,23 @@ cutscenename="VIVA" cutsceneline= "I KNEW we shouldn't have helped that @#$% duc
 
 if scenetime>=1860
 {
-with actor1 {hspeed=0 x=lerp(x,160,0.1)}
-with actor2 {hspeed=0 x=lerp(x,160-4,0.1)}
-with actor3 {hspeed=0 x=lerp(x,160+8,0.1)}
-with actor4 {hspeed=0 x=lerp(x,160-12,0.1)}
+specialcheck[1]+=1
+specialcheck[2]+=0.8
+specialcheck[3]+=1.2
+specialcheck[4]+=0.9
+
+with actor1 {hspeed=0 x=lerp(x+lengthdir_x(4,oControl.actorscreen.specialcheck[1]),160,0.1)}
+with actor2 {hspeed=0 x=lerp(x+lengthdir_x(4,oControl.actorscreen.specialcheck[2]),160-4,0.1)}
+with actor3 {hspeed=0 x=lerp(x+lengthdir_x(4,oControl.actorscreen.specialcheck[3]),160+8,0.1)}
+with actor4 {hspeed=0 x=lerp(x+lengthdir_x(4,oControl.actorscreen.specialcheck[4]),160-12,0.1)}
 }
 
-if scenetime>=2060
+if scenetime>=2460
 {with oCameoChar vspeed+=0.1
 
 }
 
-if scenetime=2320
+if scenetime=2820
 {
 oControl.stageEndFX=1
 }
@@ -216,10 +222,12 @@ cutscenename="" cutsceneline= ""
 x=70
 y=0
 
+scenetime=120
+
 specialdraw=function()
-{hspeed=0
-if scenetime<200
-image_index+=0.25
+{hspeed=0 image_speed=0
+if scenetime<280
+image_index+=0.2
 else
 image_index=2
 
@@ -244,9 +252,9 @@ cutscenename="DIXIE" cutsceneline= "...Yer' despicable..."
 }
 
 if scenetime=560
-{with actor5 {sprite_index=spr_duck_tbeakflip image_index=0}
+{with actor5 {sprite_index=spr_duck_tbeakflip image_index=0 image_speed=0}
 
-specialdraw=-1 
+specialdraw=-1 sprite_index=mask_none
 
 with oControl
 {
@@ -255,7 +263,7 @@ cutscenename="DIXIE" cutsceneline= "Fine, I had to take over my boss's job here 
 }
 }
 
-if scenetime=840
+if scenetime=980
 {
 with oControl
 {
@@ -263,7 +271,7 @@ cutscenename="VIVA" cutsceneline= "The desert! Let's get moving, ladies!"
 }
 }
 
-if scenetime=1000
+if scenetime=1140
 {
 with oControl
 {
@@ -271,21 +279,35 @@ cutscenename="SOFIA" cutsceneline= "Already on it! TAXIIIIII!"
 }
 }
 
-if scenetime=1100
-{actor6.sprite_index=spr_taxidesert actor6.hspeed=6
+if scenetime=1300
+{actor6.sprite_index=spr_taxidesert actor6.hspeed=7 actor6.y=192 actor6.x=-200
 with oControl
 {
 cutscenename="" cutsceneline= ""
 }
 }
 
-if scenetime=1060 actor6.hspeed=0
+if scenetime=1340 actor6.hspeed=0
 
-if scenetime=1060 {actor6.hspeed=6
+if scenetime>=1350 and scenetime<=1400
+{
+actor1.x=lerp(actor1.x,actor6.x,0.1)
+actor2.x=lerp(actor2.x,actor6.x,0.1)
+actor3.x=lerp(actor3.x,actor6.x,0.1)
+actor4.x=lerp(actor4.x,actor6.x,0.1)
+
+actor1.y=lerp(actor1.y,actor6.y-2,0.1)
+actor2.y=lerp(actor2.y,actor6.y-2,0.1)
+actor3.y=lerp(actor3.y,actor6.y-2,0.1)
+actor4.y=lerp(actor4.y,actor6.y-2,0.1)
+
+}
+
+if scenetime=1460 {actor6.hspeed=6
 	actor1.y=999 actor2.y=999 actor3.y=999 actor4.y=999
 	}
 
-if scenetime=1220
+if scenetime=1620
 {
 oControl.stageEndFX=1
 }

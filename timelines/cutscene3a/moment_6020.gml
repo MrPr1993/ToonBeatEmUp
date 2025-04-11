@@ -14,7 +14,7 @@ with actorscreen
 sprite_index=mask_none
 with oControl
 {
-{cutscenename="VIVA" cutsceneline=  "What about the one from the beach?"}	
+{cutscenename="VIVA" cutsceneline=  "What about the one from the swamp?"}	
 
 }
 x=0
@@ -54,7 +54,18 @@ with oControl {cutscenename="VIVA" cutsceneline="WAIT we're not-"}
 }
 
 if scenetime=1060
-{with oControl {cutscenename="VIVA" cutsceneline="...ready..."}
+{
+flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
+{image_alpha=1 fadeSpd=-0.025 isfading=1 image_xscale=99 image_yscale=99
+sprite_index=spr_whitecol image_blend=c_white depth=-4000
+}		
+
+layer_set_visible("SwampBG1",1)	
+layer_set_visible("SwampBG2",1)	
+
+with actor5 x=999
+	
+with oControl {cutscenename="VIVA" cutsceneline="...ready..."}
 }
 
 if scenetime=1260
@@ -155,7 +166,7 @@ oControl.stageEndFX=1
 }
 
 /////////////DECISION 3
-if cutsceneDecmode=3
+if cutsceneDecmode=2
 {
 CutsceneStage=rm_stagebeach
 
@@ -193,13 +204,50 @@ with oControl {cutscenename="HATHOR" cutsceneline= "Very well. We wish you luck 
 
 if scenetime=1300
 {
-with oControl {cutscenename="" cutsceneline="TELEPORT."}
+layer_set_visible("BeachBG1",1)	
+layer_set_visible("BeachBG2",1)
+
+flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
+{image_alpha=1 fadeSpd=-0.025 isfading=1 image_xscale=99 image_yscale=99
+sprite_index=spr_whitecol image_blend=c_white depth=-4000
+}	
+
+with oControl {cutscenename="" cutsceneline=""}
+
+with actor5 x=999
+with actor1 {x=92-16 z-=200 vspeed=6.1 sprite_index=spr_viva_hit image_index=17 ground=0 spdZ=-8 hspeed=0 anim=9999
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
+	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_point image_index=0}}}}
+	
+with actor2 {x=92+16 z-=200 vspeed=5.9 sprite_index=spr_hina_hit image_index=17 ground=0 spdZ=-9 hspeed=0 anim=9999
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
+	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_hina_point image_index=0}}}}
+	
+with actor3 {x=92-32 z-=200 vspeed=5.5 sprite_index=spr_bahati_hit image_index=17 ground=0 spdZ=-8.5 hspeed=0 anim=9999
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
+	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_bahati_point image_index=0}}}}
+	
+with actor4 {x=92+32 z-=200 vspeed=5 sprite_index=spr_sofia_hit image_index=17 ground=0 spdZ=-9 hspeed=0 anim=9999
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
+	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_sofia_point image_index=0}}}}
+
+with actor1 {x=160-24 y=160}
+with actor2 {x=160+24 y=160}
+with actor3 {x=160-64 y=160}
+with actor4 {x=160+64 y=160}
 }
 
-if scenetime=1500
-{
-with oControl {cutscenename="" cutsceneline="THUD."}
-
+if scenetime=clamp(scenetime,1301,1350)
+{scenetime=1310
+if actor1.ground {oControl.quakeFXTime=10 scenetime=1500}
 }
 
 if scenetime=1750
