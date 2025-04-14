@@ -19,7 +19,7 @@ __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
-actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
+actorscreen=instance_create_depth(0,0,-1,oCameoChar) with actorscreen
 {sprite_index=spr_cutscene5c1 anim=9999 isDepth=0 depth=-3000 shadow=-1;
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
@@ -63,7 +63,7 @@ if scenetime=340
 with actor8 {sprite_index=spr_geniehug x=0 y=0 shadow=-1 isDepth=0 depth=10}	
 
 with oControl
-{
+{quakeFXTime=10
 cutscenename="HAIFA" cutsceneline= "Please! Do not harm my beloved!"
 } x=0
 y=0
@@ -77,7 +77,7 @@ cutscenename="DIVAS" cutsceneline= "'Beloved'?!"
 }
 }
 
-scenetime=576 hspeed=0
+if scenetime=576 hspeed=0
 
 if scenetime=640
 {actor6.sprite_index=mask_none
@@ -150,30 +150,21 @@ with oControl
 if scenetime=2300
 {
 with oControl
-{cutscenename="HAIFA" cutsceneline= "..."}
+{cutscenename="HAIFA" cutsceneline= "...alright."}
 }
 
 if scenetime=2450
 {image_index=1; scenetime=6000
-with oControl
-{
-cutscenename="HINA" cutsceneline= "Does he always do that?"}
 }
 
 if scenetime=6000
 {
 sprite_index=mask_none
 
-with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
-with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
-with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
-
 
 with oControl
 {
-cutscenename="HAIFA" cutsceneline= "Tell me just what you need... But choose your words carefully..." 
+cutscenename="HAIFA" cutsceneline= "Just tell me what you need... But choose your words carefully..." 
 }
 }
 

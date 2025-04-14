@@ -2789,6 +2789,7 @@
     {"name":"spr_locusts","order":4,"path":"sprites/spr_locusts/spr_locusts.yy",},
     {"name":"spr_lookamansion","order":7,"path":"sprites/spr_lookamansion/spr_lookamansion.yy",},
     {"name":"spr_lookshipgo","order":6,"path":"sprites/spr_lookshipgo/spr_lookshipgo.yy",},
+    {"name":"spr_looksnowmountain","order":8,"path":"sprites/spr_looksnowmountain/spr_looksnowmountain.yy",},
     {"name":"spr_martian_airkick","order":9,"path":"sprites/spr_martian_airkick/spr_martian_airkick.yy",},
     {"name":"spr_martian_attack","order":12,"path":"sprites/spr_martian_attack/spr_martian_attack.yy",},
     {"name":"spr_martian_attack2","order":8,"path":"sprites/spr_martian_attack2/spr_martian_attack2.yy",},

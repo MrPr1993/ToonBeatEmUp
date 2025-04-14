@@ -11,7 +11,6 @@ CutsceneStage=rm_stageswamp
 with actorscreen
 {scenetime=0;
 
-sprite_index=mask_none
 with oControl
 {
 //-Red Oni is lying(Swamp)-
@@ -24,7 +23,7 @@ newscript=function()
 {
 scenetime+=1;
 
-if scenetime=120
+if scenetime=200
 {
 with oControl
 {
@@ -32,7 +31,7 @@ cutscenename="BAHATI" cutsceneline=  "We don't know how they live their lives, V
 }
 }
 
-if scenetime=340
+if scenetime=400
 {
 with oControl
 {
@@ -40,20 +39,37 @@ cutscenename="FUKUKIJO" cutsceneline=  "Ha! So that's your answer, huh? Alright 
 }
 }
 
-if scenetime=520
-{
+if scenetime=620
+{hspeed=4;
 with oControl
 {
 cutscenename="BAHATI" cutsceneline=  "Is that... A swamp?"
 }
 }
 
-if scenetime=660
-{sprite_index=spr_redsmack
-with oControl {quakeFXTime=20 cutscenename="" cutsceneline= "SMASH!"}
+if scenetime=700 hspeed=0
+
+if scenetime=860
+{sprite_index=spr_redsmack x=0 y=0
+with oControl {quakeFXTime=20 cutscenename="" cutsceneline= ""}
 }
 
-if scenetime=1060
+if scenetime=920
+{hspeed=0 x=0 y=0
+sprite_index=spr_cutscene3c
+}
+
+if scenetime=1000
+{with oControl quakeFXTime=10
+with actor1 {sprite_index=spr_viva_hit x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
+
+with actor5 {sprite_index=spr_oni_stand x=140 y=160}
+with actor6 {sprite_index=spr_oni_stand x=160 y=188}
+}
+
+
+
+if scenetime=1260
 {with oControl {//SMASH!
 cutscenename="FUKUKIJO" cutsceneline=  "Oh yeah, our ninjas were hired to hunt you down, so don't think you've seen the last of them!"}
 }
@@ -74,8 +90,7 @@ CutsceneStage=rm_stagecarnival
 
 with actorscreen
 {scenetime=0;
-
-sprite_index=mask_none
+scenetime=100
 with oControl
 {
 //-Both are lying(Carnival)-
@@ -89,7 +104,7 @@ newscript=function()
 scenetime+=1;
 
 
-if scenetime=520
+if scenetime=480
 {
 with oControl {cutscenename="SOFIA" cutsceneline="Yeah, clearly they're both messing with us!"}
 }
@@ -112,28 +127,40 @@ with oControl {cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "Hmph! TOUGH LUCK
 if scenetime=1300
 {////They walk off
 	sprite_index=spr_bothsmack
-with oControl {quakeFXTime=20 cutscenename="" cutsceneline="BIG SMASH!"}
+with oControl {quakeFXTime=20 cutscenename="" cutsceneline=""}
 }
 
 if scenetime=1500
-{
+{hspeed=0 x=0 y=0
+sprite_index=spr_cutscene3c
+}
+
+if scenetime=1600
+{with oControl quakeFXTime=10
+with actor1 {sprite_index=spr_viva_hit x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
+
+with actor5 {sprite_index=spr_oni_stand x=140 y=160}
+with actor6 {sprite_index=spr_oni_stand x=160 y=188}
+
 with oControl {//KERSMASH!
 cutscenename="BAHATI" cutsceneline=  "YOU SHOULD HAVE PLAYED ALONG!!!"}
 }
 
-if scenetime=2300
+if scenetime=2000 {sprite_index=mask_none}
+
+if scenetime=2050
 {
 with oControl {cutscenename="FUKUKIJO" cutsceneline="That's quite a shame, sister."}
 }
 
 
-if scenetime=2600
+if scenetime=2200
 {
 with oControl {cutscenename="SHOKIJO" cutsceneline="Yes. Now they'll have to face our employees on the way there."}
 }
 
 
-if scenetime=2920
+if scenetime=2420
 {
 oControl.stageEndFX=1
 }
@@ -142,16 +169,18 @@ oControl.stageEndFX=1
 }
 
 /////////////DECISION 3
-if cutsceneDecmode=3
+if cutsceneDecmode=2
 {
 CutsceneStage=rm_stagebeach
 
 with actorscreen
 {scenetime=0;
-with oControl {//-Blue Oni is lying(Beach)-
+
+with oControl
+{
+//-Red Oni is lying(Swamp)-
 cutscenename="HINA" cutsceneline= "Blue! Blue is the liar!"
 }
-sprite_index=mask_none
 x=0
 y=0
 
@@ -159,16 +188,19 @@ newscript=function()
 {
 scenetime+=1;
 
-
-if scenetime=520
+if scenetime=120
 {
-with oControl {cutscenename="SOFIA" cutsceneline="Huh?! What makes you so sure?"
+with oControl
+{
+cutscenename="SOFIA" cutsceneline="Huh?! What makes you so sure?"
 }
 }
 
-if scenetime=660
+if scenetime=340
 {
-with oControl {cutscenename="HINA" cutsceneline= "We have a story about this! The blue oni puts on an evil facade so their sibling can be a hero!"
+with oControl
+{
+cutscenename="HINA" cutsceneline= "We have a story about this! The blue oni puts on an evil facade so their sibling can be a hero!"
 }
 }
 
@@ -181,28 +213,49 @@ with oControl {cutscenename="SHOKIJO" cutsceneline="Hmm... So that is your answe
 }
 
 if scenetime=1060
+{hspeed=-4;
+with oControl
 {
-with oControl {cutscenename="HINA" cutsceneline= "Oh, the beach looks pretty tonight!"
+cutscenename="HINA" cutsceneline= "Oh, the beach looks pretty tonight!"
 }
 }
+
+if scenetime=1240 hspeed=0
 
 if scenetime=1300
-{sprite_index=spr_bluesmack
-with oControl {quakeFXTime=20 cutscenename="" cutsceneline="SMASH!!!"}
+{sprite_index=spr_bluesmack x=0 y=0
+with oControl {quakeFXTime=20 cutscenename="" cutsceneline= ""}
 }
 
-if scenetime=1500
+if scenetime=1360
+{hspeed=0 x=0 y=0
+sprite_index=spr_cutscene3c
+}
+
+if scenetime=1440
+{with oControl quakeFXTime=10
+with actor1 {sprite_index=spr_viva_hit x=160 y=160 hspeed=8 vspeed=-8 isDepth=0 depth=-2800}
+
+with actor5 {sprite_index=spr_oni_stand x=140 y=160}
+with actor6 {sprite_index=spr_oni_stand x=160 y=188}
+}
+
+if scenetime=1600
 {
-with oControl {//SMASH!
-cutscenename="SHOKIJO" cutsceneline="Be aware! Our ninjas have been hired to hunt you, so watch your steps!"}
+sprite_index=mask_none
+}
 
+if scenetime=1880
+{with oControl {//SMASH!
+cutscenename="FUKUKIJO" cutsceneline=  "Oh yeah, our ninjas were hired to hunt you down, so don't think you've seen the last of them!"}
 }
 
 
-if scenetime=2020
+if scenetime=2420
 {
 oControl.stageEndFX=1
 }
 }
 }
 }
+

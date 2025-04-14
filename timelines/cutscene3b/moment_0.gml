@@ -21,7 +21,7 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene4b0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_whereisghost anim=9999 isDepth=0 depth=-3000 shadow=-1; x=0 y=0
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -59,12 +59,11 @@ actBG1=instance_create_depth(11215,170,-1,oCameoChar) with actBG1
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
 sprite_index=spr_whereisghost
-
-drawscript=function()
+hspeed=0.15 x=-64 y=0
+specialdraw=function()
 {
-if scenetime>=640 specialcheck[6]=lerp(specialcheck[6],0.8,0.05)
 draw_sprite(spr_allblackscreen,0,0,0)
-draw_sprite_ext(spr_whereisghost,1,round(x-scenetime/8),round(y),1,1,0,c_white,specialcheck[6])
+draw_sprite_ext(spr_whereisghost,1,round(x),round(y),1,1,0,c_white,specialcheck[6])
 draw_self()
 }
 
@@ -72,43 +71,40 @@ newscript=function()
 {
 scenetime+=1;
 
-
 if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
+if scenetime<=1739
+if scenetime>=640 specialcheck[6]=lerp(specialcheck[6],0.8,0.05)
 
-sprite_index=spr_whereisghost hspeed=-0.5 x=64
-
-if scenetime=120
+if scenetime=440
 {
-with actor1 {x=64}
-with actor2 {x=64}
-with actor3 {x=64}
-with actor4 {x=64}
-with actor5 {x=320-64}
+//with actor1 {x=64}
+//with actor2 {x=64}
+//with actor3 {x=64}
+//with actor4 {x=64}
+//with actor5 {x=320-64}
 	
- scenetime=340
+ scenetime=440
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
-} x=0
-y=0 vspeed=-0.2
+}
 }
 
-if scenetime=640
-{sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
+if scenetime=700
+{
 
 	
 with oControl
 {cutscenename="HINA" cutsceneline= "Umm... Girls...?"
 }
 }
-if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
 
 if scenetime=940
 {with oControl
 {
-cutscenename="VIVA" cutsceneline="Huh?! Where'd that haughty ghost get off to?"
+cutscenename="VIVA" cutsceneline="Not now, Hina. Now where did she have gone off to...?"
 }
 }
 
@@ -116,7 +112,7 @@ if scenetime=1140
 {
 with oControl
 {
-cutscenename="HINA" cutsceneline= "Umm... Girls...?"
+cutscenename="HINA" cutsceneline= "Girls...?"
 }
 }
 
@@ -135,28 +131,41 @@ cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
 }
 }
 if scenetime=2040
-{specialcheck[6]=0
-drawscript=function() {x=lerp(x,0,0.1) draw_self();}; x=32
+{specialcheck[6]=0 hspeed=0
+specialdraw=function() {  draw_self();}; x=32
 
-sprite_index=spr_ghostslash
+sprite_index=spr_ghostslash image_speed=0
 
 with oControl
 {quakeFXTime=10
-cutscenename="" cutsceneline= "FOOLS!"
+cutscenename="ANNAMARI" cutsceneline= "FOOLS!"
+}
+}
+
+if scenetime=clamp(scenetime,2040,2339) x=lerp(x,0,0.1)
+
+if scenetime=2120
+{
+flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
+{image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
+sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
 }
 
 if scenetime=2340
+{with flashscreen{image_alpha=1 fadeSpd=-0.05}
+specialdraw=function()
 {
-drawscript=function()
-{
-if scenetime>=2340 specialcheck[6]=lerp(specialcheck[6],0.8,0.05)
+
 draw_sprite(spr_allblackscreen,0,0,0)
 draw_sprite_ext(spr_cutscene3b3,2,round(x),round(y),1,1,0,c_white,specialcheck[6])
 draw_self()
 }	
 
+
+
 sprite_index=spr_cutscene3b3 image_index=0
+x=180 y=182
 with oControl
 {
 //CHOP
@@ -164,6 +173,8 @@ cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for th
 }
 
 }
+
+if scenetime=clamp(scenetime,2780,2879) specialcheck[6]=lerp(specialcheck[6],0.8,0.05)
 
 if scenetime=2780
 {sprite_index=spr_cutscene3b3 image_index=1
@@ -173,7 +184,7 @@ cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
 }
 }
 
-if scenetime=2800
+if scenetime=2880
 {
 with oControl
 {
@@ -181,49 +192,42 @@ cutscenename="SOFIA" cutsceneline= "The living huh...?"
 }
 }
 
-if scenetime=2940
+if scenetime=3040
 {
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "Well we're not living right now..."
 }
 }
-if scenetime=3200
+if scenetime=3400
 {
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
 }
 }
-if scenetime=3300
-{sprite_index=spr_allblackscreen x=0 y=0 drawscript=-1;
+if scenetime=3500
+{sprite_index=spr_allblackscreen x=0 y=0 specialdraw=-1;
 with oControl
 {
 cutscenename="" cutsceneline= "" ///Beating ensues
 }
 }
 if scenetime=3640
-{
-with oControl
-{
-//Beatdown ensues.
-}
-}
-if scenetime=3940
-{sprite_index=spr_beatghost image_index=0 x=0 y=0
+{sprite_index=spr_beatghost image_index=0 x=0 y=0 image_alpha=0.8
 with oControl
 {quakeFXTime=10
-cutscenename="ANNAMARI" cutsceneline= "WAIT WAIT WAIT!!! I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
+cutscenename="ANNAMARI" cutsceneline= "I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
 }
 }
-if scenetime=4440
+if scenetime=4140
 {
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "Your family heirloom...?"
 }
 }
-if scenetime=4600
+if scenetime=4300
 {
 with oControl
 {
@@ -231,11 +235,11 @@ cutscenename="HINA" cutsceneline= "Just like us...."
 }
 }
 
-if scenetime=4840
+if scenetime=4540
 {
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "Hmm... Let's make a deal since we're in the same situation... I revive you all, and you'll get back my heirloom along with yours!"
+cutscenename="ANNAMARI" cutsceneline= "Let's... make a deal since we're in the same issue... I revive you all, and you'll get back my heirloom along with yours!"
 }
 }
 if scenetime=5200
@@ -248,28 +252,27 @@ cutscenename="VIVA" cutsceneline= "Wait how are you..."
 
 
 
-if scenetime=5440
-{sprite_index=spr_putheadback image_index=0
+if scenetime=5300
+{sprite_index=spr_allblackscreen image_index=0 image_alpha=1 x=0 y=0
 with oControl
 {
 cutscenename="" cutsceneline= "Squish"
 }
 }
-if scenetime=5640
-{
+if scenetime=5380
+{sprite_index=spr_putheadback image_index=0 image_alpha=1
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "OH. So unconfortable for my neck..."
 }
 }
-if scenetime=5940
+if scenetime=5760
 {
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "Well, where the thieves went, miss Annamari?"
 }
 }
-
 
 if scenetime=6000
 {

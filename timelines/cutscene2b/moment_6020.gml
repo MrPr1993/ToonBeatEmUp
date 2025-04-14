@@ -30,7 +30,7 @@ depth=-9999 image_xscale=320 image_yscale=240
 }
 
 if scenetime=920
-{sprite_index=spr_cutscene2b image_speed=0 image_index=0 x=0 y=0
+{sprite_index=spr_cutscene2b image_speed=0 image_index=0 x=0 y=0 image_blend=c_white
 	vspeed=0.1
 
 layer_set_visible("Clouds",0)

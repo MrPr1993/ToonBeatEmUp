@@ -30,11 +30,18 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 {sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
-actor5=instance_create_depth(3200-64,182+16,-1,oCameoChar) with actor5
+actor5=instance_create_depth(3200-64,160,-1,oCameoChar) with actor5
 {sprite_index=spr_oni_hit image_index=10 anim=9999 image_xscale=-1
 	}
-actor6=instance_create_depth(3200-64,182-16,-1,oCameoChar) with actor6
+actor6=instance_create_depth(3200-64,188,-1,oCameoChar) with actor6
 {sprite_index=spr_oni_hit image_index=10 anim=9999 image_xscale=-1
+
+	specialdraw=function()
+	{
+pal_swap_set(spr_ninjapal,6,false);
+	draw_sprite_ext(sprite_index,image_index,round(x),round(y+z+trainz),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+pal_swap_reset()
+	}
 	}
 
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
@@ -50,6 +57,8 @@ with oControl
 
 }
 
+y=240
+
 newscript=function()
 {
 scenetime+=1;
@@ -62,29 +71,25 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene
 
 
 
-if scenetime<80 {y--;}
-if scenetime=100
+if scenetime<480 {y-=0.2;}
+if scenetime=120
 {
 
-	
-sprite_index=mask_none
 with oControl
 {
 cutscenename="SHOKIJO" cutsceneline= "Such power..."
-} x=0
-y=0 vspeed=-0.2
+}
 }
 
-if scenetime=200
+if scenetime=240
 {
 
 	
-sprite_index=mask_none
+
 with oControl
 {
 cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "To use to assault our employees and customers."
-} x=0
-y=0 vspeed=-0.2
+}
 }
 
 
@@ -95,6 +100,7 @@ with actor2 {x=64}
 with actor3 {x=64}
 with actor4 {x=64}
 with actor5 {x=320-64}	
+with actor6 {x=320-56}	
 
 sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
 
@@ -119,7 +125,7 @@ cutsceneline= "Well, how arrogant of you."
 }
 
 if scenetime=1560
-{	
+{sprite_index=spr_cutscene3c
 with oControl
 {image_index=1 quakeFXTime=10
 cutscenename="" cutsceneline= ""
@@ -192,7 +198,7 @@ cutscenename="SHOKIJO" cutsceneline= "Just that. Answer our riddle, and in excha
 }
 }
 
-if scenetime=3800
+if scenetime=3900
 {
 with oControl
 {
@@ -200,7 +206,7 @@ cutscenename="HINA" cutsceneline= "Oh a riddle! How fun! Lay it on us!"
 }
 }
 
-if scenetime=4000 ////Cut to black
+if scenetime=4100 ////Cut to black
 {sprite_index=spr_allblackscreen x=0 y=0 hspeed=0 vspeed=0
 with oControl
 {quakeFXTime=10
@@ -227,7 +233,7 @@ cutscenename="SHOKIJO" cutsceneline= "...While the other only lies... Like about
 if scenetime=4800 scenetime=6000
 
 if scenetime=6000
-{
+{x=0 y=0
 sprite_index=spr_oniriddle
 
 with oControl
@@ -236,7 +242,7 @@ cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "Which of us is the liar?"
 }
 }
 
-if scenetime=6500
+if scenetime=6250
 {
 with oControl
 {

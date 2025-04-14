@@ -237,7 +237,7 @@ with oControl
 cutscenename="HATHOR" cutsceneline="What is your decision, mortals?"}
 }
 
-if scenetime=6021
+if scenetime=6121
 {
 with oControl
 {

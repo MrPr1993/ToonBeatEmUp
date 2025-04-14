@@ -40,7 +40,9 @@ actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 {sprite_index=spr_mermaidcutscene_seahorse anim=9999 image_xscale=-1}
 
 actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
-{sprite_index=spr_mermaidcutscene_pool anim=9999 image_xscale=-1}
+{sprite_index=spr_mermaidcutscene_pool shadow=-1; anim=9999 isDepth=0 depth=1000 image_xscale=-1}
+
+
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 

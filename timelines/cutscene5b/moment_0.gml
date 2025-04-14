@@ -125,7 +125,7 @@ cutscenename="SOFIA" cutsceneline= "Talk about what again?"}
 if scenetime=1340
 {	
 with oControl
-{image_index=1
+{image_index=1 specialcheck[0]=320
 cutscenename="VIVA" cutsceneline= "GOOD."}
 
 specialdraw=function()
@@ -136,7 +136,7 @@ draw_sprite_ext(spr_whitecol,0,specialcheck[0],0,21,20,0,c_black,1)
 }
 }
 
-if scenetime=clamp(scenetime,1400,1500)
+if scenetime=clamp(scenetime,1400,5600)
 {scenetime=5540
 specialcheck[0]-=8;
 if specialcheck[0]<=0 {scenetime=6000-60 with oControl canSkipCutscene=0}
@@ -157,7 +157,7 @@ with actor8 {x=640-32 sprite_index=spr_hotairballoon image_index=0}
 
 with oControl
 {
-cutscenename="VIVA" cutsceneline= "Good... Now.... Which way are we going here...?"}
+cutscenename="VIVA" cutsceneline= "Now.... Which way are we going here...?"}
 }
 
 if scenetime=6120

@@ -3120,6 +3120,7 @@
     {"id":{"name":"spr_locusts","path":"sprites/spr_locusts/spr_locusts.yy",},},
     {"id":{"name":"spr_lookamansion","path":"sprites/spr_lookamansion/spr_lookamansion.yy",},},
     {"id":{"name":"spr_lookshipgo","path":"sprites/spr_lookshipgo/spr_lookshipgo.yy",},},
+    {"id":{"name":"spr_looksnowmountain","path":"sprites/spr_looksnowmountain/spr_looksnowmountain.yy",},},
     {"id":{"name":"spr_luggage","path":"sprites/spr_luggage/spr_luggage.yy",},},
     {"id":{"name":"spr_martian_airkick","path":"sprites/spr_martian_airkick/spr_martian_airkick.yy",},},
     {"id":{"name":"spr_martian_attack","path":"sprites/spr_martian_attack/spr_martian_attack.yy",},},
