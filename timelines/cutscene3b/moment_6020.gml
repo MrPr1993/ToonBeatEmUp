@@ -23,6 +23,11 @@ newscript=function()
 {
 scenetime+=1;
 
+if scenetime=clamp(scenetime,0,1000)
+{
+with oControl {SceneX-=2; SceneX=clamp(SceneX,0,999999) __view_set( e__VW.XView, 0, SceneX )}
+}
+
 if scenetime=120
 {
 with oControl
@@ -31,7 +36,7 @@ cutscenename="VIVA" cutsceneline= "The swamp? Great... Can't wait to trudge thro
 }
 }
 
-if scenetime=340
+if scenetime=540
 {
 with oControl
 {
@@ -39,7 +44,7 @@ cutscenename="HINA" cutsceneline= "Ohhhh, sounds gooey..."
 }
 }
 
-if scenetime=520
+if scenetime=720
 {
 with oControl
 {
@@ -47,29 +52,34 @@ cutscenename="BAHATI" cutsceneline= "Now now, girls. No time to whine, might as 
 }
 }
 
-if scenetime=660
+if scenetime=1060
 {
 with oControl {cutscenename="SOFIA" cutsceneline= "I say bring it on! I've run through my fair share of swamps, so follow me!"}
 }
 
-if scenetime=860
+if scenetime=1360
 {with oControl {cutscenename="VIVA" cutsceneline="What do you mean by that...?"}
 }
 
-if scenetime=1060
+if scenetime=1560
 {
 with oControl {cutscenename="SOFIA" cutsceneline="What? Never gone to mud fights before?"}
 }
 
-if scenetime=1360
+if scenetime=1760
 {
 with oControl {cutscenename="VIVA" cutsceneline="..."}
 }
 
 ////
-if scenetime=1620
+if scenetime=1820
 {///Walk away
 with oControl {cutscenename="VIVA" cutsceneline="Let's keep going."}
+
+with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
+with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
+with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=2}
+with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2}
 }
 
 if scenetime=2320
@@ -100,6 +110,10 @@ newscript=function()
 {
 scenetime+=1;
 
+if scenetime=clamp(scenetime,0,1000)
+{
+with oControl {SceneX-=2; SceneX=clamp(SceneX,0,999999) __view_set( e__VW.XView, 0, SceneX )}
+}
 
 if scenetime=520
 {
@@ -124,6 +138,10 @@ with oControl {cutscenename="BAHATI" cutsceneline= "Always looking ahead, that g
 if scenetime=1300
 {////They walk off
 with oControl {cutscenename="" cutsceneline="Divas walk"}
+
+with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
+with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=2}
+with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2}
 }
 
 if scenetime=1500
@@ -133,17 +151,35 @@ with oControl {cutscenename="VIVA" cutsceneline="Well, at least this can get me 
 
 if scenetime=1750
 {
+with actor5 hspeed=0.1
 with oControl {cutscenename="ANNAMARI" cutsceneline="OH REALLY?"}
 }
 
 if scenetime=2000
 {
+	
+layer_set_visible("TilesCarnival",1)	
+layer_set_visible("BTG1",0)	
+layer_set_visible("BTG2",0)	
+layer_set_visible("BTG3",0)	
+
+with actor1 {x=-96}
+with actor2 {x=200 sprite_index=spr_hina_stand image_speed=0 hspeed=0}
+with actor3 {x=200 sprite_index=spr_bahati_stand image_speed=0 hspeed=0}
+with actor4 {x=200 sprite_index=spr_sofia_stand image_speed=0 hspeed=0}	
+with actor5 y=-999
 with oControl {cutscenename="BAHATI" cutsceneline="Hey where's Viva?"}
 }
 
 if scenetime=2300
 {
 with oControl {cutscenename="VIVA" cutsceneline="Okay girls let's go to the carnival."}
+with actor1 {sprite_index=spr_viva_move image_speed=0.25/2 hspeed=1}
+}
+
+if scenetime=2450
+{
+with actor1 {sprite_index=spr_viva_stand image_speed=0 hspeed=0}
 }
 
 if scenetime=2600
@@ -161,7 +197,7 @@ oControl.stageEndFX=1
 }
 
 /////////////DECISION 3
-if cutsceneDecmode=3
+if cutsceneDecmode=2
 {
 CutsceneStage=rm_stagebeach
 
@@ -177,49 +213,57 @@ newscript=function()
 {
 scenetime+=1;
 
+if scenetime=clamp(scenetime,0,1000)
+{
+with oControl {SceneX-=2; SceneX=clamp(SceneX,0,999999) __view_set( e__VW.XView, 0, SceneX )}
+}
 
 if scenetime=520
 {
-with oControl {cutscenename="SOFIA" cutsceneline= "A walk on the beach sounds good, actually. Just wish I brought my swimsuit..."
+with oControl {cutscenename="SOFIA" cutsceneline= "A walk on the beach sounds good, actually. Lucky I have swimsuit underneath~"
 }
 }
 
-if scenetime=660
+if scenetime=860
 {
 with oControl {cutscenename="VIVA" cutsceneline= "We're not going there to swim! Come on, we got a witch to catch!"
 }
 }
 
-if scenetime=860
+if scenetime=1160
 {
 with oControl {cutscenename="HINA" cutsceneline= "Atleast we can enjoy the view on the way! The ocean's so pretty at night..."
 
 	}
 }
 
-if scenetime=1060
+if scenetime=1460
 {
 with oControl {cutscenename="BAHATI" cutsceneline= "Stay sharp... If we're going at dark, there's bound to be some creeps waiting."}
 }
 
-if scenetime=1300
+if scenetime=1700
 {
-with oControl {cutscenename="" cutsceneline="DIVAS RUN."}
+with actor1 {sprite_index=spr_viva_run image_speed=0.25 hspeed=4}
+with actor2 {sprite_index=spr_hina_run image_speed=0.25 hspeed=4}
+with actor3 {sprite_index=spr_bahati_run image_speed=0.25 hspeed=4}
+with actor4 {sprite_index=spr_sofia_run image_speed=0.25 hspeed=4}	
+	
+with oControl {cutscenename="" cutsceneline=""}
 }
 
-if scenetime=1500
+if scenetime=1800
 {
-with oControl {cutscenename="SOFIA" cutsceneline="Oh wait...  haven't brought a swimsuit... oh well."}
+with oControl {cutscenename="SOFIA" cutsceneline="Oh hold on. I haven't  brought a swimsuit. oh well."}
 
 }
 
-if scenetime=1750
+if scenetime=2150
 {
 with oControl {cutscenename="ANNAMARI" cutsceneline="Weirdos."}
-
 }
 
-if scenetime=2020
+if scenetime=2350
 {
 oControl.stageEndFX=1
 }

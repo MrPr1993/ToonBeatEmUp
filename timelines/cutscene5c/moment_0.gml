@@ -31,10 +31,9 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(11215,170,-1,oCameoChar) with actor5
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
-
+{sprite_index=spr_genie_stand anim=9999 image_xscale=-1}
 actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+{sprite_index=spr_geniemaster_intro image_index=0 anim=9999 image_xscale=-1}
 
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
@@ -57,10 +56,9 @@ scenetime+=1;
 if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
-if scenetime<340 {y=lerp(y,240,0.1)}
 if scenetime=340
-{
-with actor8 {sprite_index=spr_geniehug x=0 y=0 shadow=-1 isDepth=0 depth=10}	
+{sprite_index=spr_geniehug
+with actor8 {sprite_index=spr_geniewhat x=-160 y=0 shadow=-1 isDepth=0 depth=-3010}	
 
 with oControl
 {quakeFXTime=10
@@ -70,7 +68,7 @@ y=0
 }
 
 if scenetime=540
-{ image_index=0 vspeed=0 x=-160 y=0 sprite_index=spr_geniehug hspeed=4
+{ with actor8 {hspeed=4}
 with oControl
 {
 cutscenename="DIVAS" cutsceneline= "'Beloved'?!"
@@ -80,7 +78,7 @@ cutscenename="DIVAS" cutsceneline= "'Beloved'?!"
 if scenetime=576 hspeed=0
 
 if scenetime=640
-{actor6.sprite_index=mask_none
+{actor8.sprite_index=mask_none
 	sprite_index=mask_none
 	
 with oControl
@@ -88,11 +86,19 @@ with oControl
 cutscenename="BURGUSON" cutsceneline= "I got lost while lookin' for the rest of the gang... But then I met this beautiful dame and we fell madly in love!"
 	
 	}
+
+with actor1 {x=64 y=170}
+with actor2 {x=64 y=144}
+with actor3 {x=64 y=160}
+with actor4 {x=64 y=188}
+
+with actor5 {x=215 y=144}
+with actor6 {x=220 y=160}
 }
 
 
 
-if scenetime=940
+if scenetime=1120
 {
 with oControl
 {
@@ -101,7 +107,7 @@ cutscenename="HAIFA" cutsceneline= "It is true! And if you leave us be, I will g
 
 }
 
-if scenetime=1140
+if scenetime=1340
 {
 with actor6 sprite_index=spr_cutscene5a3
 
@@ -109,7 +115,7 @@ with oControl
 {cutscenename="HAIFA" cutsceneline= "I could give you wealth!"}
 }
 
-if scenetime=1300
+if scenetime=1500
 {
 x=0 sprite_index=spr_geniewishes2
 
@@ -117,43 +123,43 @@ with oControl
 {cutscenename="VIVA" cutsceneline= "We... got that? We're rich already."}
 }
 
-if scenetime=1450
+if scenetime=1750
 {
 with oControl
 {cutscenename="HAIFA" cutsceneline= "Oh. What about fame?"}
 }
 
-if scenetime=1600
+if scenetime=1900
 {
 with oControl
 {cutscenename="BAHATI" cutsceneline= "We got all the fame we need."}
 }
 
-if scenetime=1750
+if scenetime=2150
 {
 with oControl
 {cutscenename="HAIFA" cutsceneline= "What about love?! Love is one important thing."}
 }
 
-if scenetime=1900
+if scenetime=2300
 {
 with oControl
 {cutscenename="SOFIA" cutsceneline= "All covered."}
 }
 
-if scenetime=2120
+if scenetime=2520
 {
 with oControl
 {cutscenename="HINA" cutsceneline= "This is our kind of love."}
 }
 
-if scenetime=2300
+if scenetime=2700
 {
 with oControl
 {cutscenename="HAIFA" cutsceneline= "...alright."}
 }
 
-if scenetime=2450
+if scenetime=2850
 {image_index=1; scenetime=6000
 }
 
@@ -161,6 +167,13 @@ if scenetime=6000
 {
 sprite_index=mask_none
 
+with actor1 {x=64 y=170}
+with actor2 {x=64 y=144}
+with actor3 {x=64 y=160}
+with actor4 {x=64 y=188}
+
+with actor5 {x=215 y=144}
+with actor6 {x=220 y=160}
 
 with oControl
 {
@@ -168,7 +181,7 @@ cutscenename="HAIFA" cutsceneline= "Just tell me what you need... But choose you
 }
 }
 
-if scenetime=6500
+if scenetime=6300
 {
 with oControl
 {

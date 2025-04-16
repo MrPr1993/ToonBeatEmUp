@@ -136,15 +136,20 @@ with oControl {cutscenename="" cutsceneline= ""}
 
 if scenetime=860
 {
-flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
-{image_alpha=0 fadeSpd=0.025 isfading=1 image_xscale=99 image_yscale=99
-sprite_index=spr_whitecol image_blend=c_white depth=-4000
-}	
+layer_set_visible("MineBG",1)
+layer_set_visible("BTG1",0)
+layer_set_visible("BTG2",0)
+layer_set_visible("BTG3",0)
+layer_set_visible("BTG4",0)
+layer_set_visible("BGcity",1)
+
 
 with oControl {//Riding
 //POOF
 cutscenename="" cutsceneline= ""
 }
+
+
 }
 
 

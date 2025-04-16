@@ -123,9 +123,9 @@ cutscenename="SOFIA" cutsceneline= "Talk about what again?"}
 }
 
 if scenetime=1340
-{	
+{	specialcheck[0]=320
 with oControl
-{image_index=1 specialcheck[0]=320
+{image_index=1 
 cutscenename="VIVA" cutsceneline= "GOOD."}
 
 specialdraw=function()
