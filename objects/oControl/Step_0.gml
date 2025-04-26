@@ -3,6 +3,28 @@ feats_check()
 
 audio_master_gain(global.Mastervolume/100)
 
+if global.CurrentMusic!=-1
+{
+if global.BGMvolume>1
+{
+if audio_is_playing(global.CurrentMusic)
+{
+audio_resume_sound(global.CurrentMusic)
+audio_sound_gain(global.CurrentMusic,(global.BGMvolume/100)*global.MusicFade,0)
+}
+}
+else
+{
+if audio_is_playing(global.CurrentMusic)
+{
+audio_pause_sound(global.CurrentMusic)
+audio_sound_gain(global.CurrentMusic,0,0)
+}
+}
+}
+
+//if global.CurrentMusic!=-1 audio_sound_gain(global.CurrentMusic, 0+MusicFadeAdd, 0);
+
 if betatest
 {
 if keyboard_check_pressed(ord("P"))	and keyboard_check(vk_shift)
@@ -344,8 +366,7 @@ global.P4Life+=global.P4Life*global.Cheat[2]*global.NoCheat
 
 global.GlobalBeta=betatest
 
-if global.CurrentMusic!=-1
-audio_sound_gain(global.CurrentMusic, 0+MusicFadeAdd, 0);
+
 
 if MusicFade=1 global.MusicFade-=0.01
 
