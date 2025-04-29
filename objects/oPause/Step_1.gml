@@ -1,3 +1,4 @@
+
 if global.BGMvolume>1
 {
 //if audio_is_playing(global.CurrentMusic)

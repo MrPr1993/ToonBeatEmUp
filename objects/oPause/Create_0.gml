@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
 shade=shd_television
 
 menuSelect=0
@@ -32,6 +34,7 @@ sprite_replace(spr_photoplaceholder,"screenshot",0,false,false,0,0)
 
 instance_deactivate_all(true)
 
+instance_activate_object(input_controller_object)
 
 pauseBuffer=10
 

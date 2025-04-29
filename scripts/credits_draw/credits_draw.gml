@@ -395,8 +395,10 @@ creditmoment="WRITING BY\n \nMRPR1993\nSHADES\nSED2116\nFLASH TRICKSTAR" ;
 else if creditsTime<7+5*8
 creditmoment="CHARACTER DESIGN BY\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
 else if creditsTime<7+5*9
-creditmoment="CONCEPT ART BY\n \nMRPR1993\nSHADES\nSED2116" ;
+creditmoment="CODING BY\n \nMrPr1993\nPixelated pope\nJujuAdams" ;
 else if creditsTime<7+5*10
+creditmoment="CONCEPT ART BY\n \nMRPR1993\nSHADES\nSED2116" ;
+else if creditsTime<7+5*11
 creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nFLASH TRICKSTAR\nSHADO\nSHADES" ;
 else
 {

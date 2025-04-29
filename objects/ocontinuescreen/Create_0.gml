@@ -263,6 +263,8 @@ actPorgT=0
 
 instance_deactivate_all(true)
 
+instance_activate_object(input_controller_object)
+
 if PlayerLife1!=-1{
 	
 if global.GlobalBeta=1

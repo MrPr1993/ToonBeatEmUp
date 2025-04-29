@@ -1,3 +1,5 @@
+
+
 press = clamp(press,0,maxlevel);
 
 if keyboard_check_pressed(ord("W")) level-=1

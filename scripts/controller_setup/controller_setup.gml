@@ -94,18 +94,18 @@ keytick=0
 
 
 if controlNO=1
-controller_p1(1)
+controller_pinput(0)
 if controlNO=2
-controller_p1(2)
+controller_pinput(1)
 if controlNO=3
-controller_p1(3)
+controller_pinput(2)
 if controlNO=4
-controller_p1(4)
+controller_pinput(3)
 	
 	
 	
 	if controlNO=9
-	controller_menu()	   
+	controller_menuinput()	   
 	        }
 
 
