@@ -42,6 +42,15 @@ key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
 	key_RB=input_check_pressed("key_rt",_controlno)
 	key_RT=input_check_pressed("key_rt",_controlno)
 	
+	key_Xh=input_check("key_x",_controlno)
+	key_Yh=input_check("key_y",_controlno)
+	key_Ah=input_check("key_a",_controlno)
+	key_Bh=input_check("key_b",_controlno)
+	key_LBh=input_check("key_lt",_controlno)
+	key_LTh=input_check("key_lt",_controlno)
+	key_RBh=input_check("key_rt",_controlno)
+	key_RTh=input_check("key_rt",_controlno)
+	
 	key_taunt=input_check_pressed("key_rt",_controlno)
 	key_punchback=input_check_pressed("key_lt",_controlno)
 	

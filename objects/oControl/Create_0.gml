@@ -1037,12 +1037,9 @@ if room=rm_characterselect
 p1=instance_create_depth(0,53,-1,oCharacterSelectPlayer) with p1 {canControl=1 controlNO=1}
 if global.P1Only=0
 {
-
 p2=instance_create_depth(80,53,-1,oCharacterSelectPlayer) with p2 {canControl=1 controlNO=2}
 p3=instance_create_depth(160,53,-1,oCharacterSelectPlayer) with p3 {canControl=1 controlNO=3}
 p4=instance_create_depth(240,53,-1,oCharacterSelectPlayer) with p4 {canControl=1 controlNO=4}
-
-
 }
 else {p1.x=120
 
@@ -1057,6 +1054,8 @@ if global.MenuGlobal=0
 arcade_load(0)
 }
 
+
+
 //if global.CRTfx=7 global.MonochromeFX=1 else global.MonochromeFX=0
 
 if room=rm_settings
@@ -1064,50 +1063,57 @@ if room=rm_settings
 
 if instance_exists(oPlayer)
 {
-
+var Px=oPlayer.x; var Py=oPlayer.y;
+with oPlayer instance_destroy();
 with oControl
 {
-p1=oPlayer
-p1.PlayerLife=global.P1Char p1.PlayerScore=global.P1Score
+//p1=oPlayer
+//p1.PlayerLife=global.P1Char p1.PlayerScore=global.P1Score
+p1=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p1 {controlNO=0 playerNO=1 playerGet=0 dead=1}
 p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=0 playerNO=2 playerGet=0 dead=1}
 p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=0 playerNO=3 playerGet=0 dead=1}
 p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=0 playerNO=4 playerGet=0 dead=1}
 }
 
-if global.multiMode>1
+//if global.multiMode>1
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper
 {//global.P1available=1
 
 
 	playernear=p1
-	with p1 {if global.P1available=0 ContinueMode=1
-PlayerLife=global.P1Life
-PlayerScore=global.P1Score my_pal_sprite=global.p1Pals
-		}
+	if global.P1available=1	
+{p1=instance_create_depth(160,208+16*instance_number(oPlayer),-1,oPlayer) p1.playerNO=1 p1.controlNO=1 p1.character=0
+	if global.P1available=0 p1.ContinueMode=1 else p1.ContinueMode=0 p1.playerGet=0
+	p1.PlayerLife=global.P1Life
+p1.PlayerScore=global.P1Score p1.my_pal_sprite=global.p1Pals}
 	if global.P2available=1	
 {p2=instance_create_depth(160,208+16*instance_number(oPlayer),-1,oPlayer) p2.playerNO=2 p2.controlNO=2 p2.character=1
 	if global.P2available=0 p2.ContinueMode=1 else p2.ContinueMode=0 p2.playerGet=0
-	PlayerLife=global.P2Life
-PlayerScore=global.P2Score my_pal_sprite=global.p2Pals
+	p2.PlayerLife=global.P2Life
+p2.PlayerScore=global.P2Score p2.my_pal_sprite=global.p2Pals
 	}
 	if global.P3available=1
 {p3=instance_create_depth(160,208+16*instance_number(oPlayer),-1,oPlayer) p3.playerNO=3 p3.controlNO=3 p3.character=2
 		if global.P3available=0 p3.ContinueMode=1 else p3.ContinueMode=0 p3.playerGet=0
-		PlayerLife=global.P3Life
-PlayerScore=global.P3Score my_pal_sprite=global.p3Pals
+		p3.PlayerLife=global.P3Life
+p3.PlayerScore=global.P3Score p3.my_pal_sprite=global.p3Pals
 		} 
 	if global.P4available=1		
 {p4=instance_create_depth(160,208+16*instance_number(oPlayer),-1,oPlayer) p4.playerNO=4 p4.controlNO=4 p4.character=3
 		if global.P4available=0 p4.ContinueMode=1 else p4.ContinueMode=0 p4.playerGet=0
-		PlayerLife=global.P4Life
-PlayerScore=global.P4Score my_pal_sprite=global.p4Pals
+		p4.PlayerLife=global.P4Life
+p4.PlayerScore=global.P4Score p4.my_pal_sprite=global.p4Pals
 		}
 		
 
-		
-}
+if instance_number(oPlayer)<=0
+{p1=instance_create_depth(160,208+16*instance_number(oPlayer),-1,oPlayer) p1.playerNO=1 p1.controlNO=1 p1.character=0
+	if global.P1available=0 p1.ContinueMode=1 else p1.ContinueMode=0 p1.playerGet=0
+	p1.PlayerLife=global.P1Life
+p1.PlayerScore=global.P1Score p1.my_pal_sprite=global.p1Pals}
 
+}
 }
 
 /////Modes And Multu
@@ -1141,3 +1147,7 @@ instance_create_depth(0,0,-1,oPaletteEditor)
 languagetext[40]=0; ///First 10 will be for the setting stuff
 language_check();
 
+input_source_mode_set(INPUT_SOURCE_MODE.FIXED);
+
+//Drop player sources
+//var _i = 0; repeat(INPUT_MAX_PLAYERS) {input_source_clear(_i);  ++_i;}

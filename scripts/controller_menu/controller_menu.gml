@@ -34,25 +34,44 @@ key_right = keyboard_check(ord("D"));
 	key_LT=keyboard_check_pressed(ord("U"))
 	key_RB=keyboard_check_pressed(ord("I"))
 	key_RT=keyboard_check_pressed(ord("O"))
+
+	key_Xh=keyboard_check(ord("H"))
+	key_Yh=keyboard_check(ord("L"))
+	key_Ah=keyboard_check(ord("K"))  or keyboard_check(vk_space) ///Accept
+	key_Bh=keyboard_check(ord("J"))  ///Cancel
+	key_LBh=keyboard_check(ord("Y"))
+	key_LTh=keyboard_check(ord("U"))
+	key_RBh=keyboard_check(ord("I"))
+	key_RTh=keyboard_check(ord("O"))	
+
+	
 	key_pause=keyboard_check_pressed(vk_escape) ///Pause
 
 	for (var i=0;i<gamepad_get_device_count();i++)
 	{
 	    if (gamepad_is_connected(i)) 
 	        {
-	key_A=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space)
-	key_B=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("J"))
-	key_X=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("H"))
+	key_X=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space)
+	key_A=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("J"))
+	key_B=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("H"))
 	key_Y=gamepad_button_check_pressed(i,gp_face4) or keyboard_check_pressed(ord("L"))
 	key_LB=keyboard_check_pressed(ord("Y"))
 	key_LT=gamepad_button_check_pressed(i,gp_shoulderl) or keyboard_check_pressed(ord("U"))
 	key_RB=keyboard_check_pressed(ord("I"))
 	key_RT=gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("O"))
 
+	key_Xh=gamepad_button_check(i,gp_face1) or keyboard_check(ord("K"))  or keyboard_check(vk_space)
+	key_Ah=gamepad_button_check(i,gp_face2) or keyboard_check(ord("J"))
+	key_Bh=gamepad_button_check(i,gp_face3) or keyboard_check(ord("H"))
+	key_Yh=gamepad_button_check(i,gp_face4) or keyboard_check(ord("L"))
+	key_LBh=keyboard_check(ord("Y"))
+	key_LTh=gamepad_button_check(i,gp_shoulderl) or keyboard_check(ord("U"))
+	key_RBh=keyboard_check(ord("I"))
+	key_RTh=gamepad_button_check(i,gp_shoulderr) or keyboard_check(ord("O"))
 	
 	key_pause=0
 
-	
+
 	 // left pressed
     if (!stick_left_held && gamepad_axis_value(i,gp_axislh) <= -threshold)
     {
@@ -71,7 +90,6 @@ key_right = keyboard_check(ord("D"));
         keytick=1;
     }
 
-
     // right pressed
     if (!stick_right_held && gamepad_axis_value(i,gp_axislh) >= threshold)
     {
@@ -89,8 +107,7 @@ key_right = keyboard_check(ord("D"));
         stick_right_released = true;
         keytick=1;
     }
-
-  
+ 
     // up pressed
     if (!stick_up_held && gamepad_axis_value(i,gp_axislv) >= threshold)
     {
@@ -109,7 +126,6 @@ key_right = keyboard_check(ord("D"));
         keytick=1;
     }
 
-
     // down pressed
     if (!stick_down_held && gamepad_axis_value(i,gp_axislv) <= -threshold)
     {
@@ -127,6 +143,27 @@ key_right = keyboard_check(ord("D"));
         stick_down_released = true;
         keytick=1;
     }
+	
+	      if gamepad_button_check_pressed(i,gp_padr) or stick_right_pressed
+	      key_right_pressed += 1
+	if gamepad_button_check_pressed(i,gp_padl) or stick_left_pressed
+	    key_left_pressed += -1
+		
+	       if gamepad_button_check_pressed(i,gp_padu) or stick_up_pressed
+	    key_up_pressed=1
+	if gamepad_button_check_pressed(i,gp_padd) or stick_down_pressed
+	    key_down_pressed=-1
+   
+if gamepad_axis_value(i, gp_axislh)>0.1 or gamepad_button_check(i,gp_padr)
+key_right=1
+if gamepad_axis_value(i, gp_axislh)<-0.1 or gamepad_button_check(i,gp_padl)
+key_left=1
+		
+		   if stick_down_held or gamepad_button_check(i,gp_padu)
+	       key_up=1
+	        if stick_up_held or gamepad_button_check(i,gp_padd)
+	       key_down=1
+
         
 	        if keyboard_check(ord("D")) or gamepad_axis_value(i, gp_axislh)>0.1 or gamepad_button_check(i,gp_padr)
 	       key_right= 1 else key_right=0

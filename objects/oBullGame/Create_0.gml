@@ -6,7 +6,7 @@ p2Over=1
 p3Over=1
 p4Over=1
 
-p1=instance_create_depth(0,0,0,oPlayerNoControl)
+p1=instance_create_depth(0,0,0,oPlayerNoControl) with p1 {controlNO=1 playerNO=1}
 p2=instance_create_depth(0,0,0,oPlayerNoControl) with p2 {controlNO=2 playerNO=2}
 p3=instance_create_depth(0,0,0,oPlayerNoControl) with p3 {controlNO=3 playerNO=3}
 p4=instance_create_depth(0,0,0,oPlayerNoControl) with p4 {controlNO=4 playerNO=4}

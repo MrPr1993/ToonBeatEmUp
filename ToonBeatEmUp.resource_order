@@ -283,6 +283,7 @@
     {"name":"oBikeBomb","order":36,"path":"objects/oBikeBomb/oBikeBomb.yy",},
     {"name":"obj_desaturate_example","order":1,"path":"objects/obj_desaturate_example/obj_desaturate_example.yy",},
     {"name":"obj_dummy","order":2,"path":"objects/obj_dummy/obj_dummy.yy",},
+    {"name":"obj_example_drop_in_gameplay","order":29,"path":"objects/obj_example_drop_in_gameplay/obj_example_drop_in_gameplay.yy",},
     {"name":"obj_full_fade_example","order":3,"path":"objects/obj_full_fade_example/obj_full_fade_example.yy",},
     {"name":"obj_gradual_example","order":4,"path":"objects/obj_gradual_example/obj_gradual_example.yy",},
     {"name":"obj_palette_manager","order":5,"path":"objects/obj_palette_manager/obj_palette_manager.yy",},

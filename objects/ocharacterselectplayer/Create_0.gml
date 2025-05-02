@@ -80,3 +80,4 @@ difficultymode=1
 
 palettemode=0
 
+exitroom=0;

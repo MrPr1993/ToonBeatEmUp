@@ -5,6 +5,17 @@
 if introbuffer!=0 introbuffer-=1
 if charbuffer!=0 charbuffer-=1
 
+var _exitroom=0;
+if controlNO=9
+{
+if controlNO!=0 controller_setup()
+if (key_Bh or keyboard_check(vk_escape))
+{exitroom+=0.01; if difficultymode=1 exitroom=9} else exitroom=0;
+if exitroom>=1
+{_exitroom=1;}
+}
+
+
 var canselect=1;
 
 SelectingX=lerp(SelectingX,0,0.5)
@@ -63,13 +74,10 @@ controller_setup()
 
 if controlNO=9
 {
+
+
 if difficultymode=1 
 {
-if key_B or keyboard_check_pressed(vk_escape) or key_B
-{
-if global.StageSelect=0 room_goto(rm_menu) else 
-if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
-}
 
 oCharacterSelectPlayer.charadded=0
 oCharacterSelectPlayer.charaddedbuffer=0
@@ -116,18 +124,19 @@ else
 
 }
 
-if key_B 
-if introbuffer=0
-{
-if global.StageSelect=0 room_goto(rm_menu) else 
-if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
-}
-
 if global.TrainingRoom=1 or global.MultiVS=2 or global.SkipDifficulty=1
 {
 	difficultymode=0 oControl.charsetting=1
 		oCharacterSelectPlayer.hspeed=-32
-	
+
+//Drop player sources
+var _i = 0;
+repeat(INPUT_MAX_PLAYERS)
+{
+    input_source_clear(_i);
+    ++_i;
+}
+input_source_mode_set(INPUT_SOURCE_MODE.JOIN);	
 introtextaddspd=-32
 	
 layer_hspeed("BGbricks",-32)
@@ -146,6 +155,14 @@ key_A or key_attack {if key_A or key_attack
 	
 if oControl.charselectgo=1
 {
+//Drop player sources
+var _i = 0;
+repeat(INPUT_MAX_PLAYERS)
+{
+    input_source_clear(_i);
+    ++_i;
+}
+
 	difficultymode=0 oControl.charsetting=1
 		oCharacterSelectPlayer.hspeed=-32
 	
@@ -170,9 +187,9 @@ if introprep=0
 
 }
 
-if oControl.p1.isReady=0
+//if oControl.p1.isReady=0
 isReady=0
-else
+//else
 isReady=(oControl.p1.isReady)+(oControl.p2.isReady)+(oControl.p3.isReady)+(oControl.p4.isReady)
 
 if isReady!=0 oControl.characterSelReady=1
@@ -199,13 +216,8 @@ layer_hspeed("BGbricks",-16) introtextaddspd=-16
 	
 	}
 
-if charaddedbuffer=0
-if (oControl.p1.isReady=0 and key_B and oControl.p1.charadded=0 and palettemode=0) 
-or keyboard_check_pressed(vk_escape)
-{
-if global.StageSelect=0 room_goto(rm_menu) else 
-if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
-}
+
+
 }
 }
 else
@@ -214,27 +226,22 @@ if charadded=0
 {isReady=0
 if introbuffer=0
 {
-if key_attack or controlNO=1
+if key_A // or controlNO=1
 {charadded=1 charaddedbuffer=20
-	if controlNO!=1
-PlaySoundNoStack(snd_picked)
+	//if controlNO!=1 
+	PlaySoundNoStack(snd_picked)
 }
 }
 }
 
 if charaddedbuffer!=0 charaddedbuffer-=1
 
+
+
 if charadded=1 and charaddedbuffer=0
 {image_index=0 isReady=0
 
 if key_B
-{
-if controlNO=1 if palettemode=0
-{
-if global.StageSelect=0 room_goto(rm_menu) else 
-if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
-}
-else
 {
 if palettemode=0
 {
@@ -242,8 +249,6 @@ charadded=0 charaddedbuffer=20 oControl.p5.charaddedbuffer=2
 PlaySoundNoStack(snd_steal)
 }
 }
-}
-
 
 
 if controlNO=1
@@ -339,7 +344,7 @@ if charaddedbuffer=0
 {
 if palettemode=1 if key_attack or key_jump or key_super or key_super {charaddedbuffer=2 palettemode=0 PlaySoundNoStack(snd_steal)}
 
-if key_super
+if key_Y
 if palettemode=0
 {PlaySoundNoStack(snd_steal) charaddedbuffer=2
 palettemode=1
@@ -347,7 +352,7 @@ palettemode=1
 }
 
 ////Select Character
-if key_attack or key_start or keyboard_check_pressed(vk_enter)
+if key_A or key_start or keyboard_check_pressed(vk_enter)
 if palettemode=0
 {
 if (playerNO=1 and keyboard_check_pressed(vk_enter))
@@ -373,9 +378,15 @@ if image_index<5.5 image_index+=0.25 if image_index=2 PlaySound(picksound)
 
 if charaddedbuffer=0
 {
-if key_jump { PlaySound(snd_steal) image_index=0 charadded=1  charaddedbuffer=10}
+if key_B { PlaySound(snd_steal) image_index=0 charadded=1  charaddedbuffer=10}
 }
 }
 
+}
+
+if _exitroom
+{
+if global.StageSelect=0 room_goto(rm_menu) else 
+if global.IsMinigame=0 room_goto(rm_map) else room_goto(rm_minigames)
 }
 }

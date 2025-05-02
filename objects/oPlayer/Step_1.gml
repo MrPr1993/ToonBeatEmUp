@@ -68,3 +68,7 @@ x+=sentflying} else checkwall()
 
 
 }
+else
+{
+x=oControl.camX+99999999
+}

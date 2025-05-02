@@ -454,6 +454,7 @@
     {"id":{"name":"obj_basic_example","path":"objects/obj_basic_example/obj_basic_example.yy",},},
     {"id":{"name":"obj_desaturate_example","path":"objects/obj_desaturate_example/obj_desaturate_example.yy",},},
     {"id":{"name":"obj_dummy","path":"objects/obj_dummy/obj_dummy.yy",},},
+    {"id":{"name":"obj_example_drop_in_gameplay","path":"objects/obj_example_drop_in_gameplay/obj_example_drop_in_gameplay.yy",},},
     {"id":{"name":"obj_full_fade_example","path":"objects/obj_full_fade_example/obj_full_fade_example.yy",},},
     {"id":{"name":"obj_gradual_example","path":"objects/obj_gradual_example/obj_gradual_example.yy",},},
     {"id":{"name":"obj_palette_manager","path":"objects/obj_palette_manager/obj_palette_manager.yy",},},

@@ -3,6 +3,9 @@ feats_check()
 
 audio_master_gain(global.Mastervolume/100)
 
+
+
+
 if global.CurrentMusic!=-1
 {
 if global.BGMvolume>1

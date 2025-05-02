@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function controller_menuinput(){
+function controller_menuinput(_controlno){
+_controlno=all;
 
-	
 //var _controlno=1;
 keytick=0;
 	key_right_pressed = 0;
@@ -18,10 +18,10 @@ key_right = input_check("right")//keyboard_check(ord("D"));
 
 	key_jump = input_check_pressed("key_a")//keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord(global.ControlJump[_controlno]));
 	key_jump_hold =  input_check("key_a")//keyboard_check(vk_space) or keyboard_check(ord(global.ControlJump[_controlno]));
-	key_up = -input_check("up")//keyboard_check(ord("W"));
-	key_down = input_check("down")//keyboard_check(ord("S"));
-	key_up_pressed = -input_check_pressed("up")//keyboard_check_pressed(ord("W"));
-	key_down_pressed = input_check_pressed("down")//-keyboard_check_pressed(ord("S"));
+	key_up = input_check("up")//keyboard_check(ord("W"));
+	key_down = -input_check("down")//keyboard_check(ord("S"));
+	key_up_pressed = input_check_pressed("up")//keyboard_check_pressed(ord("W"));
+	key_down_pressed = -input_check_pressed("down")//-keyboard_check_pressed(ord("S"));
 	key_attack = input_check_pressed("key_x")//keyboard_check_pressed(ord(global.ControlAttack[_controlno]));
 	key_charge= input_check("key_x")//keyboard_check(ord(global.ControlAttack[_controlno]));
 	key_release= input_check_released("key_x")//keyboard_check_released(ord(global.ControlAttack[_controlno]));
@@ -43,13 +43,18 @@ key_right = input_check("right")//keyboard_check(ord("D"));
 	key_RB=input_check_pressed("key_rt")
 	key_RT=input_check_pressed("key_rt")
 	
+	key_Xh=input_check("key_x")
+	key_Yh=input_check("key_y")
+	key_Ah=input_check("key_a")
+	key_Bh=input_check("key_b")
+	key_LBh=input_check("key_lt")
+	key_LTh=input_check("key_lt")
+	key_RBh=input_check("key_rt")
+	key_RTh=input_check("key_rt")
+	
 	key_taunt=input_check_pressed("key_rt")
 	key_punchback=input_check_pressed("key_lt")
 	
-	key_pause=input_check_pressed("pause")
-	key_start=input_check_pressed("pause")
-
-	
-	key_pause=0
-
+	key_pause=input_check_pressed("pause",0)
+	key_start=input_check_pressed("pause",0)
 }

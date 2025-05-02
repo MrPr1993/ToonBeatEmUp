@@ -1141,8 +1141,19 @@ if characterSelReady=2
 draw_set_color(c_black) draw_rectangle(-1,-1,321,241,false)
 }
 
+with oCharacterSelectPlayer
+if controlNO=9
+if exitroom!=0
+{
+draw_set_font(global.scorefont)
+draw_set_halign(fa_center) draw_set_color(c_white)
+draw_text_transformed(160,20,"QUITTING...",1,1,0)
+draw_set_color(c_black)
+draw_rectangle(160-80,24,160+80,32,false)
+draw_set_color(c_white)
+draw_rectangle(160-80+1,24+1,-1+160-80+160*exitroom,32-1,false)
+}draw_set_halign(fa_left)
 draw_set_color(c_white) draw_set_alpha(1)
-
 }
 
 ///Hi-Score Screen - Draw_GUI

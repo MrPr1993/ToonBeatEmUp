@@ -61,6 +61,15 @@ function controller_setup() {
 	key_RB=0
 	key_RT=0
 	
+	key_Xh=0
+	key_Yh=0
+	key_Ah=0
+	key_Bh=0
+	key_LBh=0
+	key_LTh=0
+	key_RBh=0
+	key_RTh=0
+	
 key_scream=0
 key_screamP=0
 	
@@ -105,7 +114,7 @@ controller_pinput(3)
 	
 	
 	if controlNO=9
-	controller_menuinput()	   
+	controller_menuinput(0)	   
 	        }
 
 
