@@ -7,30 +7,18 @@ if charbuffer!=0 charbuffer-=1
 soldout=0;
 
 /////See if the character is available
-if  
-(controlNO=1 and
-(oControl.p2.isReady and global.P2Char=global.P1Char)
-or (oControl.p3.isReady and global.P3Char=global.P1Char)
-or (oControl.p4.isReady and global.P4Char=global.P1Char)
-)
-or
-(controlNO=2 and
-(oControl.p1.isReady and global.P1Char=global.P2Char)
-or (oControl.p3.isReady and global.P3Char=global.P2Char)
-or (oControl.p4.isReady and global.P4Char=global.P2Char)
-)
-or
-(controlNO=3 and
-(oControl.p2.isReady and global.P2Char=global.P3Char)
-or (oControl.p1.isReady and global.P1Char=global.P3Char)
-or (oControl.p4.isReady and global.P4Char=global.P3Char)
-)
-or
-(controlNO=4 and
-(oControl.p2.isReady and global.P2Char=global.P4Char)
-or (oControl.p3.isReady and global.P3Char=global.P4Char)
-or (oControl.p1.isReady and global.P1Char=global.P4Char)
-)
+if (controlNO=1 and oControl.p2.charadded=2 and oControl.p2.charno=charno)
+or (controlNO=1 and oControl.p3.charadded=2 and oControl.p3.charno=charno)
+or (controlNO=1 and oControl.p4.charadded=2 and oControl.p4.charno=charno)
+or (controlNO=2 and oControl.p1.charadded=2 and oControl.p1.charno=charno)
+or (controlNO=2 and oControl.p3.charadded=2 and oControl.p3.charno=charno)
+or (controlNO=2 and oControl.p4.charadded=2 and oControl.p4.charno=charno)
+or (controlNO=3 and oControl.p2.charadded=2 and oControl.p2.charno=charno)
+or (controlNO=3 and oControl.p1.charadded=2 and oControl.p1.charno=charno)
+or (controlNO=3 and oControl.p4.charadded=2 and oControl.p4.charno=charno)
+or (controlNO=4 and oControl.p2.charadded=2 and oControl.p2.charno=charno)
+or (controlNO=4 and oControl.p3.charadded=2 and oControl.p3.charno=charno)
+or (controlNO=4 and oControl.p1.charadded=2 and oControl.p1.charno=charno)
 soldout=1;
 ////
 
@@ -38,7 +26,7 @@ var _exitroom=0;
 if controlNO=9
 {
 if controlNO!=0 controller_setup()
-if (key_Bh or keyboard_check(vk_escape))
+if (key_cancelH or keyboard_check(vk_escape))
 {exitroom+=0.01; if difficultymode=1 exitroom=9} else exitroom=0;
 if exitroom>=1
 {_exitroom=1;}

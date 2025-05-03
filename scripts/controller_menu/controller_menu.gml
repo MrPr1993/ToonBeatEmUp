@@ -2,14 +2,21 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function controller_menu(){
 //var _controlno=1;
-keytick=0;
-	key_right_pressed = 0;
-	key_left_pressed = 0;
-	key_up_pressed = 0;
-	key_down_pressed = 0;
+	if keytick=1 {
+keytick=0	
+
+  stick_left_pressed = false;
+    stick_right_pressed = false;
+    stick_up_pressed = false;
+    stick_down_pressed = false;
+
+    stick_left_released = false;
+    stick_right_released = false;
+    stick_up_released = false;
+    stick_down_released = false;
+}	
 	
-if _controlno=1
-{
+
 key_right = keyboard_check(ord("D"));
 	key_left = -keyboard_check(ord("A"));
 	key_right_pressed = keyboard_check_pressed(ord("D"));
@@ -47,18 +54,15 @@ key_up = keyboard_check(ord("W"));
 	key_taunt=0;
 	key_punchback=0;
 	
-	key_pause=keyboard_check_pressed(vk_escape) ///Pause
-	key_start=keyboard_check_pressed(vk_escape)
-}
+	key_pause=keyboard_check_pressed(vk_enter) ///Pause
+	key_start=keyboard_check_pressed(vk_enter)
+key_cancel=keyboard_check_pressed(vk_escape)
+key_cancelH= keyboard_check(vk_escape)
 
-var sourcecontrol=-1;
-if instance_exists(oControl) sourcecontrol=oControl.controlset[_controlno];
-else if instance_exists(oContinueScreen) sourcecontrol=oContinueScreen.controlset[_controlno];
 
-if sourcecontrol!=-1
-if gamepad_is_connected(sourcecontrol)
+for (var i=0;i<gamepad_get_device_count();i++)
 {
-var i=sourcecontrol;
+if gamepad_is_connected(i)
 {
 	key_X=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("H"))
 	key_A=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("K")) or keyboard_check_pressed(vk_space)
@@ -93,8 +97,10 @@ var i=sourcecontrol;
 	key_taunt= gamepad_button_check_pressed(i,gp_shoulderl)
 	key_punchback= gamepad_button_check_pressed(i,gp_shoulderr)
 
-key_pause= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk_escape)
-key_start= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk_escape)
+key_pause= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk_enter)
+key_start= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk_enter)
+key_cancel= gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(vk_escape)
+key_cancelH= gamepad_button_check(i,gp_face3) or keyboard_check(vk_escape)
 
 	 // left pressed
     if (!stick_left_held && gamepad_axis_value(i,gp_axislh) <= -threshold)
@@ -168,15 +174,25 @@ key_start= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk
         keytick=1;
     }
 	
-	      if gamepad_button_check_pressed(i,gp_padr) or stick_right_pressed
+	      if stick_right_pressed
+	      key_right_pressed = 1
+	if stick_left_pressed
+	    key_left_pressed = -1
+		
+	       if stick_up_pressed
+	    key_up_pressed=1
+	if stick_down_pressed
+	    key_down_pressed=-1
+		
+	      if gamepad_button_check_pressed(i,gp_padr)
 	      key_right_pressed += 1
-	if gamepad_button_check_pressed(i,gp_padl) or stick_left_pressed
+	if gamepad_button_check_pressed(i,gp_padl)
 	    key_left_pressed += -1
 		
-	       if gamepad_button_check_pressed(i,gp_padu) or stick_up_pressed
-	    key_up_pressed=1
-	if gamepad_button_check_pressed(i,gp_padd) or stick_down_pressed
-	    key_down_pressed=-1
+	       if gamepad_button_check_pressed(i,gp_padu)
+	    key_up_pressed+=1
+	if gamepad_button_check_pressed(i,gp_padd)
+	    key_down_pressed+=-1
    
 if gamepad_axis_value(i, gp_axislh)>0.1 or gamepad_button_check(i,gp_padr)
 key_right=1
@@ -196,9 +212,8 @@ key_left=clamp(key_left,-1,1)
 key_up=clamp(key_up,-1,1)	
 key_down=clamp(key_down,-1,1)	
 
-
-}}
-
+}
+}
 			
 	
 }	

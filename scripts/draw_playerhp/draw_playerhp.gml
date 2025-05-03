@@ -74,27 +74,27 @@ soldout=0;
 /////See if the character is available
 if  
 (controlNO=1 and
-(oControl.p2.continueScreen=0 and global.P2Char=global.P1Char)
-or (oControl.p3.continueScreen=0 and global.P3Char=global.P1Char)
-or (oControl.p4.continueScreen=0 and global.P4Char=global.P1Char)
+(oControl.p2.continueScreen=0 and oControl.p2.characterSelect=characterSelect)
+or (oControl.p3.continueScreen=0 and oControl.p3.characterSelect=characterSelect)
+or (oControl.p4.continueScreen=0 and oControl.p4.characterSelect=characterSelect)
 )
 or
 (controlNO=2 and
-(oControl.p1.continueScreen=0 and global.P1Char=global.P2Char)
-or (oControl.p3.continueScreen=0 and global.P3Char=global.P2Char)
-or (oControl.p4.continueScreen=0 and global.P4Char=global.P2Char)
+(oControl.p1.continueScreen=0 and oControl.p2.characterSelect=characterSelect)
+or (oControl.p3.continueScreen=0 and oControl.p3.characterSelect=characterSelect)
+or (oControl.p4.continueScreen=0 and oControl.p4.characterSelect=characterSelect)
 )
 or
 (controlNO=3 and
-(oControl.p2.continueScreen=0 and global.P2Char=global.P3Char)
-or (oControl.p1.continueScreen=0 and global.P1Char=global.P3Char)
-or (oControl.p4.continueScreen=0 and global.P4Char=global.P3Char)
+(oControl.p2.continueScreen=0 and oControl.p2.characterSelect=characterSelect)
+or (oControl.p3.continueScreen=0 and oControl.p3.characterSelect=characterSelect)
+or (oControl.p4.continueScreen=0 and oControl.p4.characterSelect=characterSelect)
 )
 or
 (controlNO=4 and
-(oControl.p2.continueScreen=0 and global.P2Char=global.P4Char)
-or (oControl.p3.continueScreen=0 and global.P3Char=global.P4Char)
-or (oControl.p1.continueScreen=0 and global.P1Char=global.P4Char)
+(oControl.p2.continueScreen=0 and oControl.p2.characterSelect=characterSelect)
+or (oControl.p3.continueScreen=0 and oControl.p3.characterSelect=characterSelect)
+or (oControl.p1.continueScreen=0 and oControl.p4.characterSelect=characterSelect)
 )
 soldout=1;
 ////

@@ -15,6 +15,7 @@ specialanimscript=function()
 {
 if !ground
 {
+
 if playerSpawnNO!=1 if x<592 {}
 if playerSpawnNO=2 {y+=2 x+=0}
 if playerSpawnNO=3 {y+=4 x+=1}

@@ -47,6 +47,7 @@ function controller_setup() {
 	key_attackanditem=0
 	
 	key_cancel=0
+	key_cancelH=0
 	key_accept=0
 	key_switch=0
 	
