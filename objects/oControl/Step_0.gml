@@ -241,6 +241,7 @@ else
 if keyboard_check(vk_backspace)
 {
 	//global.P1available=(oControl.p1.isReady)
+	global.P1available=get_string("P1 Active?",global.P1available)
 	global.P2available=get_string("P2 Active?",global.P2available)
 	global.P3available=get_string("P3 Active?",global.P3available)
 	global.P4available=get_string("P4 Active?",global.P4available)

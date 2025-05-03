@@ -114,7 +114,8 @@ controller_pinput(3)
 	
 	
 	if controlNO=9
-	controller_menuinput(0)	   
+	controller_menu()	  
+	
 	        }
 
 

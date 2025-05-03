@@ -4,6 +4,35 @@
 // You can write your code in this editor
 if introbuffer!=0 introbuffer-=1
 if charbuffer!=0 charbuffer-=1
+soldout=0;
+
+/////See if the character is available
+if  
+(controlNO=1 and
+(oControl.p2.isReady and global.P2Char=global.P1Char)
+or (oControl.p3.isReady and global.P3Char=global.P1Char)
+or (oControl.p4.isReady and global.P4Char=global.P1Char)
+)
+or
+(controlNO=2 and
+(oControl.p1.isReady and global.P1Char=global.P2Char)
+or (oControl.p3.isReady and global.P3Char=global.P2Char)
+or (oControl.p4.isReady and global.P4Char=global.P2Char)
+)
+or
+(controlNO=3 and
+(oControl.p2.isReady and global.P2Char=global.P3Char)
+or (oControl.p1.isReady and global.P1Char=global.P3Char)
+or (oControl.p4.isReady and global.P4Char=global.P3Char)
+)
+or
+(controlNO=4 and
+(oControl.p2.isReady and global.P2Char=global.P4Char)
+or (oControl.p3.isReady and global.P3Char=global.P4Char)
+or (oControl.p1.isReady and global.P1Char=global.P4Char)
+)
+soldout=1;
+////
 
 var _exitroom=0;
 if controlNO=9
@@ -13,6 +42,11 @@ if (key_Bh or keyboard_check(vk_escape))
 {exitroom+=0.01; if difficultymode=1 exitroom=9} else exitroom=0;
 if exitroom>=1
 {_exitroom=1;}
+
+	global.P1available=(oControl.p1.isReady)
+	global.P2available=(oControl.p2.isReady)
+	global.P3available=(oControl.p3.isReady)
+	global.P4available=(oControl.p4.isReady)
 }
 
 
@@ -207,10 +241,7 @@ layer_hspeed("BGbricks",-16) introtextaddspd=-16
 	image_blend=c_black isDepth=0 depth=-8888 alarm[0]=100 image_speed=0  haspal=0
 	}
 	
-	global.P1available=(oControl.p1.isReady)
-	global.P2available=(oControl.p2.isReady)
-	global.P3available=(oControl.p3.isReady)
-	global.P4available=(oControl.p4.isReady)
+
 	
  global.multiMode=(oControl.p1.isReady)+(oControl.p2.isReady)+(oControl.p3.isReady)+(oControl.p4.isReady)
 	
@@ -226,7 +257,8 @@ if charadded=0
 {isReady=0
 if introbuffer=0
 {
-if key_A // or controlNO=1
+//if key_A // or controlNO=1
+if (key_LT and key_RTh) or (key_RT and key_LTh)
 {charadded=1 charaddedbuffer=20
 	//if controlNO!=1 
 	PlaySoundNoStack(snd_picked)
@@ -351,8 +383,15 @@ palettemode=1
 }
 }
 
+
+
+
+
 ////Select Character
 if key_A or key_start or keyboard_check_pressed(vk_enter)
+if soldout=1 {PlaySound(snd_steal)}
+else
+{
 if palettemode=0
 {
 if (playerNO=1 and keyboard_check_pressed(vk_enter))
@@ -366,6 +405,7 @@ else
 PlaySoundNoStack(snd_picked) selectedflash=0 oControl.p5.charbuffer=2
 selectedflashing=1
 charadded=2 charaddedbuffer=10 isReady=1 image_index=1
+}
 }
 }
 

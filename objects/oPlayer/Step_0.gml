@@ -299,4 +299,5 @@ if playerNO=4
 x=__view_get( e__VW.XView, 0 )+oControl.P4SpawnX
 y=__view_get( e__VW.YView, 0 )+oControl.P4SpawnY
 }
+x=oControl.camX+340
 }

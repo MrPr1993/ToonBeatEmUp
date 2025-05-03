@@ -14,10 +14,13 @@ if controlNO!=1 x-=20
 specialanimscript=function()
 {
 if !ground
-{if controlNO!=1 if x<592 {}
-if controlNO=2 {y+=2 x+=0}
-if controlNO=3 {y+=4 x+=1}
-if controlNO=4 {y+=6 x+=2}
+{
+if playerSpawnNO!=1 if x<592 {}
+if playerSpawnNO=2 {y+=2 x+=0}
+if playerSpawnNO=3 {y+=4 x+=1}
+if playerSpawnNO=4 {y+=6 x+=2}
+
+
 }
 else
 if anim!=21

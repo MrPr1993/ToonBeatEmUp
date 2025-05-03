@@ -20,7 +20,19 @@ draw_set_color(c_white)
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
 if introbuffer=0
-draw_text(x+40,y+80,"P"+string(controlNO)+"\nPRESS\nSTART\nTO PLAY!")
+{
+if  !(input_player_connected(controlNO-1))//!(input_source_using(INPUT_GAMEPAD, controlNO-1))
+draw_text(x+40,y+80,"P"+string(controlNO)+"\nPRESS\nANY TO\nCONNECT!")
+else
+{var commandsave=global.ConsoleType;
+if !(input_source_using(INPUT_GAMEPAD, controlNO-1))
+global.ConsoleType="PC";
+draw_command(14)
+draw_set_halign(fa_center)
+draw_text(x+40,y+72,"P"+string(controlNO)+"\nPRESS\n\n\nTO JOIN!")
+global.ConsoleType=commandsave;
+}
+}
 draw_set_halign(fa_left)
 
 signup=lerp(signup,0,0.1)
@@ -83,7 +95,8 @@ draw_sprite_part(sprite_index,image_index,0,0+136-136*signup,80,136,round(x+Sele
 pal_swap_reset()
 draw_sprite_ext(spr_characterselect,3,x+1+SelectingX,round(y-1+136-136*signup)+1,1,1-1*signup,0,c_white,1)
 
-
+if soldout
+draw_sprite_part(spr_characterselect,5,0,0+136-136*signup,80,136,round(x+SelectingX),round(y+136-136*signup))
 
 if charadded=2
 {

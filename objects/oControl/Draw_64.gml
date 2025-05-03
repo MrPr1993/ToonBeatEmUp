@@ -412,7 +412,7 @@ if continueScreen=300 ///Set Hi-Score Input
 {
 if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 
-if oPlayer.key_attack
+if oPlayer.key_A
 {
 //hiscore_check()
 if hiScoreInputNum=3
@@ -790,7 +790,7 @@ draw_set_color(c_white) draw_set_alpha(1)
 if titleShow=1 introSkip=1
 
 if selectScreen=0
-if key_attack or keyboard_check_pressed(vk_enter) or key_start
+if key_A or  key_B or keyboard_check_pressed(vk_enter) or key_start
 if introSkip=0
 {
 introSkip=1 noWhite=1
@@ -1309,7 +1309,7 @@ else {global.MenuSkip=0 global.IntroSkip=1} //global.MenuSkip=1 global.IntroSkip
 if global.HiScoreSee=0
 {global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_titlescreen)}
 else
-if !key_attack and !key_start
+if !key_B and !key_start
 {
 room_goto(rm_menu)
 }
@@ -1400,8 +1400,8 @@ draw_dialogue()
 
 draw_sprite_ext(spr_newspaper,0,160,120,4,4,0,c_black,newsFadeA)
 
-if key_attack or keyboard_check_pressed(vk_enter)
-or key_jump or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
+if key_A or keyboard_check_pressed(vk_enter)
+or key_B or keyboard_check_pressed(ord("J")) or keyboard_check_pressed(ord("K"))
 {////Hiscore to Title Screen
 if global.IsMovie=0
 {
@@ -1496,7 +1496,7 @@ draw_set_color(c_black) draw_rectangle(-32,-32,777,777,0)
 if room=rm_creditscene
 credits_draw()
 
-if room=rm_howtoplay
+if room=rm_howtoplay ////UNUSED
 {
 controller_setup()
 if creditsGo=0
@@ -1583,7 +1583,7 @@ if creditsGo=0
 creditsTime-=1
 controller_setup()
 /////Skip Cutscene if cutsceneMode=0
-if key_charge or key_jump_hold or key_shield or keyboard_check(vk_enter)
+if key_Ah or key_Bh or keyboard_check(vk_enter)
 {
 
 

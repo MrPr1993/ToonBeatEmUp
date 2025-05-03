@@ -8,8 +8,11 @@ if (_new_source != undefined)
     var _i = 0;
     repeat(INPUT_MAX_PLAYERS)
     {
-        if (!input_player_connected(_i))
-        {
+		
+
+		
+		if (!input_player_connected(_i))
+		{
             input_source_set(_new_source, _i, true);
             input_verb_consume(all, _i);
             break;
@@ -71,7 +74,13 @@ if room=rm_stagesnow
 oPlayer.Cweather=1;
 }
 
-
+if instance_exists(oPlayerNoControl) 
+{
+oPlayerNoControl.x=camX+320
+oPlayerNoControl.ground=instance_nearest(camX+320,0,oPlayer).ground
+oPlayerNoControl.canmove=instance_nearest(camX+320,0,oPlayer).canmove
+oPlayerNoControl.anim=instance_nearest(camX+320,0,oPlayer).anim
+}
 
 if p1.x>camX+160 and p2.x>camX+160 and p3.x>camX+160 and p4.x>camX+160
 allPlayersMid=1 else allPlayersMid=0
@@ -85,13 +94,7 @@ and (p3.canmove and p3.ground)
 and (p4.canmove and p4.ground)
 allPlayersMove=1 else allPlayersMove=0
 
-if instance_exists(oPlayerNoControl) 
-{
-oPlayerNoControl.x=camX+320
-oPlayerNoControl.ground=instance_nearest(camX+320,0,oPlayer).ground
-oPlayerNoControl.canmove=instance_nearest(camX+320,0,oPlayer).canmove
-oPlayerNoControl.anim=instance_nearest(camX+320,0,oPlayer).anim
-}
+
 }
 charstatsetup=1
 

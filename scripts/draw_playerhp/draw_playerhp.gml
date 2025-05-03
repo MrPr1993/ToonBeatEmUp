@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_playerhp(){
-	
+	draw_set_halign(fa_left)
 if object_index=oPlayer
 {
 if showp1=1
@@ -63,10 +63,44 @@ draw_sprite_ext(spr_playerface,characterSelect,23*characterSelect,0,1,1,0,c_whit
 draw_set_color(c_white)
 
 draw_set_font(global.scorefont)
-draw_text(23*characterSelect+2,2,string_hash_to_newline(characterTimer))
+//draw_text(23*characterSelect+2,2,string_hash_to_newline(characterTimer))
 
 if continueFlash<1
 draw_sprite_ext(spr_playerface,4,23*characterSelect,0,1,1,0,c_white,1)
+
+
+soldout=0;
+
+/////See if the character is available
+if  
+(controlNO=1 and
+(oControl.p2.continueScreen=0 and global.P2Char=global.P1Char)
+or (oControl.p3.continueScreen=0 and global.P3Char=global.P1Char)
+or (oControl.p4.continueScreen=0 and global.P4Char=global.P1Char)
+)
+or
+(controlNO=2 and
+(oControl.p1.continueScreen=0 and global.P1Char=global.P2Char)
+or (oControl.p3.continueScreen=0 and global.P3Char=global.P2Char)
+or (oControl.p4.continueScreen=0 and global.P4Char=global.P2Char)
+)
+or
+(controlNO=3 and
+(oControl.p2.continueScreen=0 and global.P2Char=global.P3Char)
+or (oControl.p1.continueScreen=0 and global.P1Char=global.P3Char)
+or (oControl.p4.continueScreen=0 and global.P4Char=global.P3Char)
+)
+or
+(controlNO=4 and
+(oControl.p2.continueScreen=0 and global.P2Char=global.P4Char)
+or (oControl.p3.continueScreen=0 and global.P3Char=global.P4Char)
+or (oControl.p1.continueScreen=0 and global.P1Char=global.P4Char)
+)
+soldout=1;
+////
+
+if soldout
+draw_sprite_ext(spr_enemyface,0,23*characterSelect,0,1,1,0,c_white,1)
 
 if key_Y
 {PlaySound(snd_steal)
@@ -117,8 +151,13 @@ else characterSelect-=1
 if key_right_pressed if characterSelect=3 characterSelect=0
 else characterSelect+=1
 
-if key_attack
-{ContinueSelect=0
+if key_A or key_B
+if soldout=0
+{PlaySound(snd_steal)
+}
+else
+{
+ContinueSelect=0
 //if global.Continues!=-1 global.Continues-=1
 if playerNO=1 {global.P1Char=characterSelect}
 if playerNO=2 {global.P2Char=characterSelect}

@@ -3,6 +3,7 @@ controller_setup()
 
 character_setup()
 
+soldout=0;
 
 screamset=0 key_scream=0
 
@@ -32,6 +33,7 @@ playerGet=1
 
 ///To show which player is which
 playerNO=1
+playerSpawnNO=instance_number(oPlayer);
 chardraw=draw_player;
 
 enemyai=player_ai

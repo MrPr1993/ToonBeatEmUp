@@ -5,6 +5,9 @@
 AttackOrItem=0
 canControl=0
 controlNO=0
+
+soldout=0;
+
 controller_setup()
 
 colorshade_setup()

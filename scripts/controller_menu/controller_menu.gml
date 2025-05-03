@@ -1,76 +1,100 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function controller_menu(){
+//var _controlno=1;
+keytick=0;
+	key_right_pressed = 0;
+	key_left_pressed = 0;
+	key_up_pressed = 0;
+	key_down_pressed = 0;
 	
-	
+if _controlno=1
+{
 key_right = keyboard_check(ord("D"));
 	key_left = -keyboard_check(ord("A"));
 	key_right_pressed = keyboard_check_pressed(ord("D"));
 	key_left_pressed = -keyboard_check_pressed(ord("A"));
-
-	key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("K"));
-	key_jump_hold =  keyboard_check(vk_space) or keyboard_check(ord("K"));
-	key_up = keyboard_check(ord("W"));
+key_up = keyboard_check(ord("W"));
 	key_down = keyboard_check(ord("S"));
 	key_up_pressed = keyboard_check_pressed(ord("W"));
 	key_down_pressed = -keyboard_check_pressed(ord("S"));
-	key_attack = keyboard_check_pressed(ord("J"));
-	key_charge= keyboard_check(ord("J"));
-	key_release= keyboard_check_released(ord("J"));
-	key_shield = keyboard_check(ord("L"));
-	key_shield_pressed = keyboard_check_pressed(ord("L"));
-	key_super=keyboard_check_pressed(ord("H"));
-		key_taunt=keyboard_check_pressed(ord("Y"))
-	key_punchback=keyboard_check_pressed(ord("U"))
-		key_start=keyboard_check_pressed(vk_enter)
-		
-		key_interact=0;
-	
-	key_X=keyboard_check_pressed(ord("H"))
-	key_Y=keyboard_check_pressed(ord("L"))
-	key_A=keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space) ///Accept
-	key_B=keyboard_check_pressed(ord("J"))  ///Cancel
-	key_LB=keyboard_check_pressed(ord("Y"))
-	key_LT=keyboard_check_pressed(ord("U"))
-	key_RB=keyboard_check_pressed(ord("I"))
-	key_RT=keyboard_check_pressed(ord("O"))
 
-	key_Xh=keyboard_check(ord("H"))
-	key_Yh=keyboard_check(ord("L"))
-	key_Ah=keyboard_check(ord("K"))  or keyboard_check(vk_space) ///Accept
-	key_Bh=keyboard_check(ord("J"))  ///Cancel
-	key_LBh=keyboard_check(ord("Y"))
+	key_X= keyboard_check_pressed(ord("H"))
+	key_A= keyboard_check_pressed(ord("K")) or keyboard_check_pressed(vk_space)
+	key_B= keyboard_check_pressed(ord("J"))
+	key_Y= keyboard_check_pressed(ord("L"))
+	key_LB=0
+	key_LT= keyboard_check_pressed(ord("U"))
+	key_RB=0
+	key_RT= keyboard_check_pressed(ord("I"))
+
+	key_Xh= keyboard_check(ord("H"))
+	key_Ah=keyboard_check(ord("K"))  or keyboard_check(vk_space)
+	key_Bh= keyboard_check(ord("J"))
+	key_Yh= keyboard_check(ord("L"))
+	key_LBh=0
 	key_LTh=keyboard_check(ord("U"))
-	key_RBh=keyboard_check(ord("I"))
-	key_RTh=keyboard_check(ord("O"))	
-
+	key_RBh=0
+	key_RTh=keyboard_check(ord("I"))
+	
+	key_attack = 0
+	key_interact = 0
+	key_charge=  0
+	key_release= 0
+	key_shield = 0
+	key_shield_pressed =  0
+	
+	key_taunt=0;
+	key_punchback=0;
 	
 	key_pause=keyboard_check_pressed(vk_escape) ///Pause
+	key_start=keyboard_check_pressed(vk_escape)
+}
 
-	for (var i=0;i<gamepad_get_device_count();i++)
-	{
-	    if (gamepad_is_connected(i)) 
-	        {
-	key_X=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space)
-	key_A=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("J"))
-	key_B=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("H"))
+var sourcecontrol=-1;
+if instance_exists(oControl) sourcecontrol=oControl.controlset[_controlno];
+else if instance_exists(oContinueScreen) sourcecontrol=oContinueScreen.controlset[_controlno];
+
+if sourcecontrol!=-1
+if gamepad_is_connected(sourcecontrol)
+{
+var i=sourcecontrol;
+{
+	key_X=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("H"))
+	key_A=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("K")) or keyboard_check_pressed(vk_space)
+	key_B=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("J"))
 	key_Y=gamepad_button_check_pressed(i,gp_face4) or keyboard_check_pressed(ord("L"))
-	key_LB=keyboard_check_pressed(ord("Y"))
+	key_LB=0
 	key_LT=gamepad_button_check_pressed(i,gp_shoulderl) or keyboard_check_pressed(ord("U"))
-	key_RB=keyboard_check_pressed(ord("I"))
-	key_RT=gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("O"))
+	key_RB=0
+	key_RT=gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("I"))
 
-	key_Xh=gamepad_button_check(i,gp_face1) or keyboard_check(ord("K"))  or keyboard_check(vk_space)
-	key_Ah=gamepad_button_check(i,gp_face2) or keyboard_check(ord("J"))
-	key_Bh=gamepad_button_check(i,gp_face3) or keyboard_check(ord("H"))
+	key_Xh=gamepad_button_check(i,gp_face1) or keyboard_check(ord("H"))
+	key_Ah=gamepad_button_check(i,gp_face2) or keyboard_check(ord("K"))  or keyboard_check(vk_space)
+	key_Bh=gamepad_button_check(i,gp_face3) or keyboard_check(ord("J"))
 	key_Yh=gamepad_button_check(i,gp_face4) or keyboard_check(ord("L"))
-	key_LBh=keyboard_check(ord("Y"))
+	key_LBh=0
 	key_LTh=gamepad_button_check(i,gp_shoulderl) or keyboard_check(ord("U"))
-	key_RBh=keyboard_check(ord("I"))
-	key_RTh=gamepad_button_check(i,gp_shoulderr) or keyboard_check(ord("O"))
+	key_RBh=0
+	key_RTh=gamepad_button_check(i,gp_shoulderr) or keyboard_check(ord("I"))
 	
-	key_pause=0
+	key_attack = gamepad_button_check_pressed(i,gp_face1)
+	key_interact = gamepad_button_check_pressed(i,gp_face1) 
+	key_charge=  gamepad_button_check(i,gp_face1)
+	key_release= gamepad_button_check_released(i,gp_face1);
+	key_shield = gamepad_button_check(i,gp_face3)
+	key_shield_pressed =  gamepad_button_check_pressed(i,gp_face3)
 
+	key_jump = gamepad_button_check_pressed(i,gp_face2)
+		key_jump_hold = gamepad_button_check(i,gp_face2)
+
+	key_super= gamepad_button_check_pressed(i,gp_face4)
+			
+	key_taunt= gamepad_button_check_pressed(i,gp_shoulderl)
+	key_punchback= gamepad_button_check_pressed(i,gp_shoulderr)
+
+key_pause= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk_escape)
+key_start= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk_escape)
 
 	 // left pressed
     if (!stick_left_held && gamepad_axis_value(i,gp_axislh) <= -threshold)
@@ -163,48 +187,24 @@ key_left=1
 	       key_up=1
 	        if stick_up_held or gamepad_button_check(i,gp_padd)
 	       key_down=1
+ 
 
-        
-	        if keyboard_check(ord("D")) or gamepad_axis_value(i, gp_axislh)>0.1 or gamepad_button_check(i,gp_padr)
-	       key_right= 1 else key_right=0
-	        if keyboard_check(ord("A")) or gamepad_axis_value(i, gp_axislh)<-0.1 or gamepad_button_check(i,gp_padl)
-	       key_left= -1 else key_left=0
-       
-  
-	      if keyboard_check_pressed(ord("D"))  or gamepad_button_check_pressed(i,gp_padr) or stick_right_pressed
-	      key_right_pressed = 1 else  key_right_pressed = 0
-	if   keyboard_check_pressed(ord("A"))  or gamepad_button_check_pressed(i,gp_padl) or stick_left_pressed
-	    key_left_pressed = -1 else  key_left_pressed = 0
-    
-	          if keyboard_check_pressed(ord("W"))  or gamepad_button_check_pressed(i,gp_padu) or stick_down_pressed
-	      key_up_pressed = 1 else  key_up_pressed = 0
-	if   keyboard_check_pressed(ord("S"))  or gamepad_button_check_pressed(i,gp_padd) or stick_up_pressed
-	    key_down_pressed = -1 else  key_down_pressed = 0
 
-	key_up = keyboard_check(ord("W")) or gamepad_axis_value(i, gp_axislv)<-0.1 or gamepad_button_check(i,gp_padu)
-	key_down = keyboard_check(ord("S")) or gamepad_axis_value(i, gp_axislv)>0.9 or gamepad_button_check(i,gp_padd)
-	key_attack = keyboard_check_pressed(ord("J")) or gamepad_button_check_pressed(i,gp_face1) 
-	key_interact = keyboard_check_pressed(ord("J")) or gamepad_button_check_pressed(i,gp_face1) 
-	key_charge= keyboard_check(ord("J")) or gamepad_button_check(i,gp_face1)
-	key_release= keyboard_check_released(ord("J")) or gamepad_button_check_released(i,gp_face1);
-	key_shield = gamepad_button_check(i,gp_face3) or keyboard_check(ord("L"));
-	key_shield_pressed =  gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("L"));
+key_right=clamp(key_right,-1,1)	  
+if key_left!=0 key_left=-1
+key_left=clamp(key_left,-1,1)	
+key_up=clamp(key_up,-1,1)	
+key_down=clamp(key_down,-1,1)	
 
-	key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(i,gp_face2)
-		key_jump_hold = keyboard_check(vk_space) or keyboard_check(ord("K")) or gamepad_button_check(i,gp_face2)
 
-	key_super=keyboard_check_pressed(ord("H")) or gamepad_button_check_pressed(i,gp_face4)
+}}
+
 			
-	key_taunt=keyboard_check_pressed(ord("Y"))  or gamepad_button_check_pressed(i,gp_shoulderl)
-	key_punchback=keyboard_check_pressed(ord("U")) or gamepad_button_check_pressed(i,gp_shoulderr)
-
-
-key_start=keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(i,gp_start) 
-
 	
-			}
+}	
+	
+	
 			
 
 			
-	}
-}
+	

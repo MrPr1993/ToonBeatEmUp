@@ -3,13 +3,6 @@
 function controller_pinput(_controlno){
 
 //var _controlno=1;
-keytick=0;
-	key_right_pressed = 0;
-	key_left_pressed = 0;
-	key_up_pressed = 0;
-	key_down_pressed = 0;
-
-
 key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
 	key_left = -input_check("left",_controlno)//-keyboard_check(ord("A"));
 	key_right_pressed = input_check_pressed("right",_controlno)//keyboard_check_pressed(ord("D"));
@@ -18,9 +11,16 @@ key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
 	key_jump = input_check_pressed("key_a",_controlno)//keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord(global.ControlJump[_controlno]));
 	key_jump_hold =  input_check("key_a",_controlno)//keyboard_check(vk_space) or keyboard_check(ord(global.ControlJump[_controlno]));
 	key_up = input_check("up",_controlno)//keyboard_check(ord("W"));
-	key_down = input_check("down",_controlno)//keyboard_check(ord("S"));
+
 	key_up_pressed = input_check_pressed("up",_controlno)//keyboard_check_pressed(ord("W"));
+	key_down_pressed = -input_check_pressed("down",_controlno)//-keyboard_check_pressed(ord("S"));
+	key_down = -input_check("down",_controlno)//keyboard_check(ord("S"));
+	if object_index=oPlayer
+	{
 	key_down_pressed = input_check_pressed("down",_controlno)//-keyboard_check_pressed(ord("S"));
+	key_down = input_check("down",_controlno)//keyboard_check(ord("S"));	
+	}
+	
 	key_attack = input_check_pressed("key_x",_controlno)//keyboard_check_pressed(ord(global.ControlAttack[_controlno]));
 	key_charge= input_check("key_x",_controlno)//keyboard_check(ord(global.ControlAttack[_controlno]));
 	key_release= input_check_released("key_x",_controlno)//keyboard_check_released(ord(global.ControlAttack[_controlno]));
@@ -54,7 +54,7 @@ key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
 	key_taunt=input_check_pressed("key_rt",_controlno)
 	key_punchback=input_check_pressed("key_lt",_controlno)
 	
-	key_pause=0 ///Pause
-	key_start=0
+	key_pause=input_check_pressed("pause",0)
+	key_start=input_check_pressed("pause",0)
 	
 }

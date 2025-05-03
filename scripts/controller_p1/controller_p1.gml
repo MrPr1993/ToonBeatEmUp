@@ -8,6 +8,7 @@ keytick=0;
 	key_left_pressed = 0;
 	key_up_pressed = 0;
 	key_down_pressed = 0;
+	
 if _controlno=1
 {
 key_right = keyboard_check(ord("D"));

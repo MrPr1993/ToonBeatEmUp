@@ -246,10 +246,10 @@ if x=-999999999999999999999999999999
 	sprite_index=PointSpr
 	image_index=0 image_speed=0
 	
-	var pointimg=1; if playerNO!=1 pointimg=0;
+	var pointimg=1; if playerSpawnNO!=1 pointimg=0;
 
-	frame_set(0,0,0.03) if AnimFrame=0.99 {if playerNO=1 PlaySound(PointDialouge1) AnimFrame=1}
-	frame_set(1,pointimg,0.01) if AnimFrame=2 {if playerNO=1 PlaySound(PointDialouge2)}
+	frame_set(0,0,0.03) if AnimFrame=0.99 {if playerSpawnNO=1 PlaySound(PointDialouge1) AnimFrame=1}
+	frame_set(1,pointimg,0.01) if AnimFrame=2 {if playerSpawnNO=1 PlaySound(PointDialouge2)}
 	frame_set(2,pointimg,0.1)
 	frame_set(3,pointimg,0.25)
 	frame_set(4,2,0.01) if AnimFrame=5 canmove=1

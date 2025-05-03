@@ -29,8 +29,8 @@ function __input_config_verbs()
 	key_b: input_binding_key("J"),
 	key_x: input_binding_key("H"),
 	key_y: input_binding_key("L"),		
-	key_lt: input_binding_key("U"),
-	key_rt: input_binding_key("O"),
+	key_lt: input_binding_key("Y"),
+	key_rt: input_binding_key("U"),
 	
             //No aiming verbs since we use the mouse for that (see below for aiming verb examples)
             shoot: input_binding_mouse_button(mb_left),
