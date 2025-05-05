@@ -53,8 +53,8 @@ key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
 	
 	key_taunt=input_check_pressed("key_rt",_controlno)
 	key_punchback=input_check_pressed("key_lt",_controlno)
-	
+	key_accept=input_check_pressed("accept",0)
 	key_pause=input_check_pressed("pause",0)
 	key_start=input_check_pressed("pause",0)
-	
+	key_cancel=input_check_pressed("cancel",0)
 }

@@ -123,6 +123,8 @@ charsetting=0
 
 if !variable_global_exists("CurrentMusic")
 {	
+
+
 global.SaveFileNO=1;
 global.SaveNumber=0;
 global.SaveText="EMPTY";
@@ -1069,10 +1071,10 @@ instance_destroy(oPlayer);
 
 //p1=oPlayer
 //p1.PlayerLife=global.P1Char p1.PlayerScore=global.P1Score
-p1=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p1 {controlNO=0 playerNO=1 playerGet=0 dead=1}
-p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=0 playerNO=2 playerGet=0 dead=1}
-p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=0 playerNO=3 playerGet=0 dead=1}
-p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=0 playerNO=4 playerGet=0 dead=1}
+p1=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p1 {controlNO=1 playerNO=1 playerGet=0 dead=1}
+p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=2 playerNO=2 playerGet=0 dead=1}
+p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=3 playerNO=3 playerGet=0 dead=1}
+p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=4 playerNO=4 playerGet=0 dead=1}
 
 
 	playernear=p1
@@ -1140,7 +1142,6 @@ languagetext[40]=0; ///First 10 will be for the setting stuff
 language_check();
 
 input_source_mode_set(INPUT_SOURCE_MODE.FIXED);
-
 
 //Drop player sources
 //var _i = 0; repeat(INPUT_MAX_PLAYERS) {input_source_clear(_i);  ++_i;}

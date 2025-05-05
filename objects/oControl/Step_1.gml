@@ -35,6 +35,7 @@ repeat(INPUT_MAX_PLAYERS)
 }
 
 
+
 if charstatsetup=0
 {
 if instance_exists(oPlayer)

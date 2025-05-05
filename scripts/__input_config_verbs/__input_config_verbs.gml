@@ -21,14 +21,14 @@ function __input_config_verbs()
             right: [input_binding_key(vk_right), input_binding_key("D")],
             
             accept:  input_binding_key(vk_space),
-            cancel:  input_binding_key(vk_backspace),
+            cancel:  [input_binding_key(vk_escape),  input_binding_key("L")],
             action:  input_binding_key(vk_enter),
             special: input_binding_key(vk_shift),
 			
 	key_a: input_binding_key("K"),
-	key_b: input_binding_key("J"),
-	key_x: input_binding_key("H"),
-	key_y: input_binding_key("L"),		
+	key_b: input_binding_key("L"),
+	key_x: input_binding_key("J"),
+	key_y: input_binding_key("H"),		
 	key_lt: input_binding_key("Y"),
 	key_rt: input_binding_key("U"),
 	

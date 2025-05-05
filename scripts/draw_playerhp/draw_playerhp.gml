@@ -31,8 +31,21 @@ if object_index=oPlayerNoControl
 {
 draw_set_font(global.scorefont) draw_set_color(c_white) draw_set_alpha(1)
 draw_set_halign(fa_center)
+var _insertcoin=0;
 if oControl.nopleasewait=1
-draw_text(34,8,"GAME\nOVER") else draw_text(34,8,"PLEASE\nWAIT")
+{
+
+if  (input_player_connected(playerNO-1)) _insertcoin=1;
+
+if _insertcoin
+{
+draw_text(34,8,"PRESS\nA OR B")
+}
+else
+draw_text(34,8,"GAME\nOVER")
+}
+else draw_text(34,8,"PLEASE\nWAIT")
+
 }
 else
 {
@@ -72,30 +85,18 @@ draw_sprite_ext(spr_playerface,4,23*characterSelect,0,1,1,0,c_white,1)
 soldout=0;
 
 /////See if the character is available
-if  
-(controlNO=1 and
-(oControl.p2.continueScreen=0 and oControl.p2.characterSelect=characterSelect)
-or (oControl.p3.continueScreen=0 and oControl.p3.characterSelect=characterSelect)
-or (oControl.p4.continueScreen=0 and oControl.p4.characterSelect=characterSelect)
-)
-or
-(controlNO=2 and
-(oControl.p1.continueScreen=0 and oControl.p2.characterSelect=characterSelect)
-or (oControl.p3.continueScreen=0 and oControl.p3.characterSelect=characterSelect)
-or (oControl.p4.continueScreen=0 and oControl.p4.characterSelect=characterSelect)
-)
-or
-(controlNO=3 and
-(oControl.p2.continueScreen=0 and oControl.p2.characterSelect=characterSelect)
-or (oControl.p3.continueScreen=0 and oControl.p3.characterSelect=characterSelect)
-or (oControl.p4.continueScreen=0 and oControl.p4.characterSelect=characterSelect)
-)
-or
-(controlNO=4 and
-(oControl.p2.continueScreen=0 and oControl.p2.characterSelect=characterSelect)
-or (oControl.p3.continueScreen=0 and oControl.p3.characterSelect=characterSelect)
-or (oControl.p1.continueScreen=0 and oControl.p4.characterSelect=characterSelect)
-)
+if (controlNO=1 and oControl.p2.ContinueMode=1 and global.P2Char=character)
+or (controlNO=1 and oControl.p3.ContinueMode=1 and global.P3Char=character)
+or (controlNO=1 and oControl.p4.ContinueMode=1 and global.P4Char=character)
+or (controlNO=2 and oControl.p1.ContinueMode=1 and global.P1Char=character)
+or (controlNO=2 and oControl.p3.ContinueMode=1 and global.P3Char=character)
+or (controlNO=2 and oControl.p4.ContinueMode=1 and global.P4Char=character)
+or (controlNO=3 and oControl.p2.ContinueMode=1 and global.P2Char=character)
+or (controlNO=3 and oControl.p1.ContinueMode=1 and global.P1Char=character)
+or (controlNO=3 and oControl.p4.ContinueMode=1 and global.P4Char=character)
+or (controlNO=4 and oControl.p2.ContinueMode=1 and global.P2Char=character)
+or (controlNO=4 and oControl.p3.ContinueMode=1 and global.P3Char=character)
+or (controlNO=4 and oControl.p1.ContinueMode=1 and global.P1Char=character)
 soldout=1;
 ////
 

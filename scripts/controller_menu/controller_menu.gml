@@ -18,13 +18,13 @@ keytick=0
 	
 
 key_right = keyboard_check(ord("D"));
-	key_left = -keyboard_check(ord("A"));
-	key_right_pressed = keyboard_check_pressed(ord("D"));
-	key_left_pressed = -keyboard_check_pressed(ord("A"));
+key_right_pressed = keyboard_check_pressed(ord("D"));
+key_left = -keyboard_check(ord("A"));
+key_left_pressed = -keyboard_check_pressed(ord("A"));
 key_up = keyboard_check(ord("W"));
-	key_down = keyboard_check(ord("S"));
-	key_up_pressed = keyboard_check_pressed(ord("W"));
-	key_down_pressed = -keyboard_check_pressed(ord("S"));
+key_up_pressed = keyboard_check_pressed(ord("W"));
+key_down = -keyboard_check(ord("S"));
+key_down_pressed = -keyboard_check_pressed(ord("S"));
 
 	key_X= keyboard_check_pressed(ord("H"))
 	key_A= keyboard_check_pressed(ord("K")) or keyboard_check_pressed(vk_space)
@@ -64,43 +64,43 @@ for (var i=0;i<gamepad_get_device_count();i++)
 {
 if gamepad_is_connected(i)
 {
-	key_X=gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("H"))
-	key_A=gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("K")) or keyboard_check_pressed(vk_space)
-	key_B=gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("J"))
-	key_Y=gamepad_button_check_pressed(i,gp_face4) or keyboard_check_pressed(ord("L"))
-	key_LB=0
-	key_LT=gamepad_button_check_pressed(i,gp_shoulderl) or keyboard_check_pressed(ord("U"))
-	key_RB=0
-	key_RT=gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("I"))
+	key_X+=gamepad_button_check_pressed(i,gp_face1)
+	key_A+=gamepad_button_check_pressed(i,gp_face2)
+	key_B+=gamepad_button_check_pressed(i,gp_face3)
+	key_Y+=gamepad_button_check_pressed(i,gp_face4)
+	key_LB+=0
+	key_LT+=gamepad_button_check_pressed(i,gp_shoulderl)
+	key_RB+=0
+	key_RT+=gamepad_button_check_pressed(i,gp_shoulderr)
 
-	key_Xh=gamepad_button_check(i,gp_face1) or keyboard_check(ord("H"))
-	key_Ah=gamepad_button_check(i,gp_face2) or keyboard_check(ord("K"))  or keyboard_check(vk_space)
-	key_Bh=gamepad_button_check(i,gp_face3) or keyboard_check(ord("J"))
-	key_Yh=gamepad_button_check(i,gp_face4) or keyboard_check(ord("L"))
-	key_LBh=0
-	key_LTh=gamepad_button_check(i,gp_shoulderl) or keyboard_check(ord("U"))
-	key_RBh=0
-	key_RTh=gamepad_button_check(i,gp_shoulderr) or keyboard_check(ord("I"))
+	key_Xh+=gamepad_button_check(i,gp_face1)
+	key_Ah+=gamepad_button_check(i,gp_face2)
+	key_Bh+=gamepad_button_check(i,gp_face3)
+	key_Yh+=gamepad_button_check(i,gp_face4)
+	key_LBh+=0
+	key_LTh+=gamepad_button_check(i,gp_shoulderl)
+	key_RBh+=0
+	key_RTh+=gamepad_button_check(i,gp_shoulderr)
 	
-	key_attack = gamepad_button_check_pressed(i,gp_face1)
-	key_interact = gamepad_button_check_pressed(i,gp_face1) 
-	key_charge=  gamepad_button_check(i,gp_face1)
-	key_release= gamepad_button_check_released(i,gp_face1);
-	key_shield = gamepad_button_check(i,gp_face3)
-	key_shield_pressed =  gamepad_button_check_pressed(i,gp_face3)
+	key_attack += gamepad_button_check_pressed(i,gp_face1)
+	key_interact += gamepad_button_check_pressed(i,gp_face1) 
+	key_charge+=  gamepad_button_check(i,gp_face1)
+	key_release+= gamepad_button_check_released(i,gp_face1);
+	key_shield += gamepad_button_check(i,gp_face3)
+	key_shield_pressed +=  gamepad_button_check_pressed(i,gp_face3)
 
-	key_jump = gamepad_button_check_pressed(i,gp_face2)
-		key_jump_hold = gamepad_button_check(i,gp_face2)
+	key_jump += gamepad_button_check_pressed(i,gp_face2)
+		key_jump_hold += gamepad_button_check(i,gp_face2)
 
-	key_super= gamepad_button_check_pressed(i,gp_face4)
+	key_super+= gamepad_button_check_pressed(i,gp_face4)
 			
-	key_taunt= gamepad_button_check_pressed(i,gp_shoulderl)
-	key_punchback= gamepad_button_check_pressed(i,gp_shoulderr)
+	key_taunt+= gamepad_button_check_pressed(i,gp_shoulderl)
+	key_punchback+= gamepad_button_check_pressed(i,gp_shoulderr)
 
-key_pause= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk_enter)
-key_start= gamepad_button_check_pressed(i,gp_start) or keyboard_check_pressed(vk_enter)
-key_cancel= gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(vk_escape)
-key_cancelH= gamepad_button_check(i,gp_face3) or keyboard_check(vk_escape)
+key_pause+= gamepad_button_check_pressed(i,gp_start)
+key_start+= gamepad_button_check_pressed(i,gp_start)
+key_cancel+= gamepad_button_check_pressed(i,gp_face3)
+key_cancelH+= gamepad_button_check(i,gp_face3)
 
 	 // left pressed
     if (!stick_left_held && gamepad_axis_value(i,gp_axislh) <= -threshold)
@@ -174,25 +174,15 @@ key_cancelH= gamepad_button_check(i,gp_face3) or keyboard_check(vk_escape)
         keytick=1;
     }
 	
-	      if stick_right_pressed
-	      key_right_pressed = 1
-	if stick_left_pressed
-	    key_left_pressed = -1
-		
-	       if stick_up_pressed
-	    key_up_pressed=1
-	if stick_down_pressed
-	    key_down_pressed=-1
-		
-	      if gamepad_button_check_pressed(i,gp_padr)
+	      if gamepad_button_check_pressed(i,gp_padr) or stick_right_pressed
 	      key_right_pressed += 1
-	if gamepad_button_check_pressed(i,gp_padl)
+	if gamepad_button_check_pressed(i,gp_padl) or stick_left_pressed
 	    key_left_pressed += -1
 		
-	       if gamepad_button_check_pressed(i,gp_padu)
-	    key_up_pressed+=1
-	if gamepad_button_check_pressed(i,gp_padd)
-	    key_down_pressed+=-1
+	       if gamepad_button_check_pressed(i,gp_padu) or stick_up_pressed
+	    key_up_pressed=1
+	if gamepad_button_check_pressed(i,gp_padd) or stick_down_pressed
+	    key_down_pressed=-1
    
 if gamepad_axis_value(i, gp_axislh)>0.1 or gamepad_button_check(i,gp_padr)
 key_right=1
@@ -204,13 +194,15 @@ key_left=1
 	        if stick_up_held or gamepad_button_check(i,gp_padd)
 	       key_down=1
  
+  
+
 
 
 key_right=clamp(key_right,-1,1)	  
 if key_left!=0 key_left=-1
 key_left=clamp(key_left,-1,1)	
 key_up=clamp(key_up,-1,1)	
-key_down=clamp(key_down,-1,1)	
+key_down=clamp(key_down,-1,1)
 
 }
 }

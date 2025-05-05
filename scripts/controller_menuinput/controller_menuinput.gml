@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function controller_menuinput(_controlno){
-_controlno=all;
+function controller_menuinput(){
 
 //var _controlno=1;
 keytick=0;
@@ -9,7 +8,6 @@ keytick=0;
 	key_left_pressed = 0;
 	key_up_pressed = 0;
 	key_down_pressed = 0;
-
 
 key_right = input_check("right")//keyboard_check(ord("D"));
 	key_left = -input_check("left")//-keyboard_check(ord("A"));
@@ -55,6 +53,8 @@ key_right = input_check("right")//keyboard_check(ord("D"));
 	key_taunt=input_check_pressed("key_rt")
 	key_punchback=input_check_pressed("key_lt")
 	
-	key_pause=input_check_pressed("pause",0)
-	key_start=input_check_pressed("pause",0)
+	key_pause=input_check_pressed("pause")
+	key_start=input_check_pressed("pause")
+	key_cancel=input_check_pressed("cancel") or input_check_pressed("key_b")
+	key_cancelH=input_check("cancel") or input_check("key_b")
 }
