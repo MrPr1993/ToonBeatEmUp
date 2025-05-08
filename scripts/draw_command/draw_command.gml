@@ -26,18 +26,18 @@ draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"",commandL[1])
 
 if commandType=2
 {
-draw_buttontext(8,8,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext_ext(8,8,8,"",spr_commandbutton,0,"J",commandL[0],0.75,1,1,1,0.75,1.0)
 
 if p5.difficultymode=0
 {
-draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"",commandL[1])
+draw_buttontext_ext(8,8+16,8,"",spr_commandbutton,2,"",commandL[1],0.75,1,1,1,0.75,1.0)
 if global.UnlockAltPal=1
-draw_buttontext(320-8,8,8,commandL[2],spr_commandbutton,0,"H","")
+draw_buttontext_ext(320-8,8,8,commandL[2],spr_commandbutton,0,"H","",0.75,1,1,1,0.75,1.0)
 }
 else
 {
-draw_buttontext(320-8,8,8,commandL[1],spr_commandbutton,2,"","")
-draw_buttontext(8,8+16,8,"",spr_commandbutton,0,"H",commandL[22])
+draw_buttontext_ext(320-8,8,8,commandL[1],spr_commandbutton,2,"","",0.75,1,1,1,0.75,1.0)
+draw_buttontext_ext(8,8+16,8,"",spr_commandbutton,0,"H",commandL[22],0.75,1,1,1,0.75,1.0)
 }
 
 }
@@ -190,17 +190,17 @@ draw_buttontext(8,240-32+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1]
 
 if commandType=2
 {
-draw_buttontext(8,8,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0])
+draw_buttontext_ext(8,8,8,"",spr_commandbutton,4+6*commandMul,"",commandL[0],0.75,1,1,1,0.75,1.0)
 
 if p5.difficultymode=0
 {
 if global.UnlockAltPal=1
-draw_buttontext(320-8,8,8,commandL[2],spr_commandbutton,7+6*commandMul,"","")
-draw_buttontext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1])
+draw_buttontext_ext(320-8,8,8,commandL[2],spr_commandbutton,7+6*commandMul,"","",0.75,1,1,1,0.75,1.0)
+draw_buttontext_ext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1],0.75,1,1,1,0.75,1.0)
 }
 else
-{draw_buttontext(8,8+16,8,"",spr_commandbutton,7+6*commandMul,"J",commandL[22])
-draw_buttontext(320-8,8,8,commandL[1],spr_commandbutton,5+6*commandMul,"","")
+{draw_buttontext_ext(8,8+16,8,"",spr_commandbutton,7+6*commandMul,"J",commandL[22],0.75,1,1,1,0.75,1.0)
+draw_buttontext_ext(320-8,8,8,commandL[1],spr_commandbutton,5+6*commandMul,"","",0.75,1,1,1,0.75,1.0)
 }
 }
 

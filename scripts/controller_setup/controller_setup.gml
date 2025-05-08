@@ -83,6 +83,11 @@ else
 	if keytick=1 {
 keytick=0	
 
+key_left_pressed=0
+key_right_pressed=0
+key_up_pressed=0
+key_down_pressed=0
+
   stick_left_pressed = false;
     stick_right_pressed = false;
     stick_up_pressed = false;
@@ -115,8 +120,9 @@ controller_pinput(3)
 	
 	
 	if controlNO=9
+	{
 	controller_menu()	  
-	
+	}
 	        }
 
 

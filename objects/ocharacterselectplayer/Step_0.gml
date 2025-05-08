@@ -25,7 +25,7 @@ soldout=1;
 var _exitroom=0;
 if controlNO=9
 {
-if controlNO!=0 controller_setup()
+controller_setup()
 if (key_cancelH or keyboard_check(vk_escape))
 {exitroom+=0.01; if difficultymode=1 exitroom=9} else exitroom=0;
 if exitroom>=1

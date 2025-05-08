@@ -2,20 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function controller_menu(){
 //var _controlno=1;
-	if keytick=1 {
-keytick=0	
 
-  stick_left_pressed = false;
-    stick_right_pressed = false;
-    stick_up_pressed = false;
-    stick_down_pressed = false;
-
-    stick_left_released = false;
-    stick_right_released = false;
-    stick_up_released = false;
-    stick_down_released = false;
-}	
-	
 
 key_right = keyboard_check(ord("D"));
 key_right_pressed = keyboard_check_pressed(ord("D"));
@@ -61,7 +48,7 @@ key_cancelH= keyboard_check(vk_escape)
 
 
 for (var i=0;i<gamepad_get_device_count();i++)
-{
+{//var i=0;
 if gamepad_is_connected(i)
 {
 	key_X+=gamepad_button_check_pressed(i,gp_face1)
@@ -174,36 +161,60 @@ key_cancelH+= gamepad_button_check(i,gp_face3)
         keytick=1;
     }
 	
-	      if gamepad_button_check_pressed(i,gp_padr) or stick_right_pressed
+
+
+	
+	      if stick_right_pressed = true
 	      key_right_pressed += 1
-	if gamepad_button_check_pressed(i,gp_padl) or stick_left_pressed
+	if stick_left_pressed = true
 	    key_left_pressed += -1
 		
-	       if gamepad_button_check_pressed(i,gp_padu) or stick_up_pressed
-	    key_up_pressed=1
-	if gamepad_button_check_pressed(i,gp_padd) or stick_down_pressed
-	    key_down_pressed=-1
+	       if stick_up_pressed = true
+	  	  key_down_pressed=-1
+	if stick_down_pressed = true
+   key_up_pressed=1
    
-if gamepad_axis_value(i, gp_axislh)>0.1 or gamepad_button_check(i,gp_padr)
+if gamepad_axis_value(i, gp_axislh)>0.1
 key_right=1
-if gamepad_axis_value(i, gp_axislh)<-0.1 or gamepad_button_check(i,gp_padl)
+if gamepad_axis_value(i, gp_axislh)<-0.1
 key_left=1
 		
-		   if stick_down_held or gamepad_button_check(i,gp_padu)
+		   if stick_down_held
+	      key_down=-1
+	        if stick_up_held
 	       key_up=1
-	        if stick_up_held or gamepad_button_check(i,gp_padd)
-	       key_down=1
- 
-  
+		   
+		   
 
+		   
+var _gp_right=gamepad_button_check(i,gp_padr);
+var _gp_left=gamepad_button_check(i,gp_padl);
+var _gp_up=gamepad_button_check(i,gp_padu);
+var _gp_down=gamepad_button_check(i,gp_padd);
 
+var _gp_rightP=gamepad_button_check(i,gp_padr);
+var _gp_leftP=gamepad_button_check(i,gp_padl);
+var _gp_upP=gamepad_button_check(i,gp_padu);
+var _gp_downP=gamepad_button_check(i,gp_padd)
 
-key_right=clamp(key_right,-1,1)	  
-if key_left!=0 key_left=-1
-key_left=clamp(key_left,-1,1)	
-key_up=clamp(key_up,-1,1)	
-key_down=clamp(key_down,-1,1)
+if  keyboard_check(ord("D")) or _gp_right
+key_right = 1;
+if keyboard_check_pressed(ord("D")) or _gp_rightP
+key_right_pressed = 1;
+if keyboard_check(ord("A")) or _gp_left
+key_left = -1
+if keyboard_check_pressed(ord("A")) or _gp_leftP
+key_left_pressed = -1;
+if keyboard_check(ord("W")) or _gp_up
+key_up = 1;
+if keyboard_check_pressed(ord("W")) or _gp_upP
+key_up_pressed = 1;
+if keyboard_check(ord("S")) or _gp_down
+key_down = -1;
+if keyboard_check_pressed(ord("S")) or _gp_downP
+key_down_pressed = -1;
 
+exit;
 }
 }
 			

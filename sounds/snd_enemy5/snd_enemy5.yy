@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.701633,
+  "duration":0.7016327,
   "name":"snd_enemy5",
   "parent":{
     "name":"Enemies",

@@ -20,17 +20,21 @@ if z>16 {zSpeed=0 z=16
 	alarm[1]=60
 	}
 	}
+if npcDriverOn=0
+{npcDriverOn=2
+alarm[2]=2
+}
 }
 
 if npcDriverOn=1
 {npcDriverTimer+=1
 
-if npcDriverTimer=80
+if npcDriverTimer=40
 {driver.hspeed=0 with driver
-	{shaketime=10 sprite_index=spr_burglar_hit image_speed=0 image_index=24}
+	{PlaySound(snd_ohmecar) shaketime=10 sprite_index=spr_burglar_hit image_speed=0 image_index=24}
 }
 	
-	if npcDriverTimer=160 with driver
+	if npcDriverTimer=120 with driver
 	{sprite_index=spr_burglar_cry image_speed=0.25}
 
 }

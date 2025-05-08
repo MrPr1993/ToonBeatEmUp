@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.413062,
+  "duration":0.4130839,
   "name":"snd_enemy4",
   "parent":{
     "name":"Enemies",

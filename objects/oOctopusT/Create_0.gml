@@ -38,7 +38,7 @@ shadow=spr_shadow
 fallHole=0
 atk=0
 showhp=1
-
+playerNO=0
 targetID=-1;
 
 canBounce=0

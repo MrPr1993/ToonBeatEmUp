@@ -3,6 +3,7 @@
 canControl=0
 controller_setup()
 isReady=0
+charadded=0
 character_setup()
 	hasShadow=0;
 	shadowSpr=mask_none

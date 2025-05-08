@@ -1,25 +1,32 @@
-/// @description draw_buttontext(x,y,sep,lefttext,buttonspr,buttonind,midtext,righttext)
-/// @param _x
-/// @param _y
-/// @param _sep
-/// @param _lefttext
-/// @param _buttonspr
-/// @param _buttonind
-/// @param _midtext
-/// @param _righttext
-
-function draw_buttontext(){	
-var BtextX=round(argument0);
-var BtextY=round(argument1);
-var BtextSep=round(argument2);
-draw_sprite(argument4,argument5,BtextX,BtextY+4)
+function draw_buttontext(_x,_y,_sep,_lefttext,_buttonspr,_buttonind,_midtext,_righttext){	
+var BtextX=round(_x);
+var BtextY=round(_y);
+var BtextSep=round(_sep);
+draw_sprite(_buttonspr,_buttonind,BtextX,BtextY+4)
 draw_set_color(c_white)
 draw_set_halign(fa_right)
-draw_text(BtextX-BtextSep/2,BtextY,argument3)
+draw_text(BtextX-BtextSep/2,BtextY,_lefttext)
 draw_set_halign(fa_left)
 draw_set_color(c_black)
 draw_set_halign(fa_center)
-draw_text(BtextX,BtextY,argument6) draw_set_color(c_white)
+draw_text(BtextX,BtextY,_midtext) draw_set_color(c_white)
 draw_set_halign(fa_left)
-draw_text(BtextX+BtextSep/2,BtextY,argument7)
+draw_text(BtextX+BtextSep/2,BtextY,_righttext)
+}
+
+
+function draw_buttontext_ext(_x,_y,_sep,_lefttext,_buttonspr,_buttonind,_midtext,_righttext,_lscaleX,_lscaleY,_mscaleX,_mscaleY,_rscaleX,_rscaleY){	
+var BtextX=round(_x);
+var BtextY=round(_y);
+var BtextSep=round(_sep);
+draw_sprite(_buttonspr,_buttonind,BtextX,BtextY+4)
+draw_set_color(c_white)
+draw_set_halign(fa_right)
+draw_text_transformed(BtextX-BtextSep/2,BtextY,_lefttext,_lscaleX,_lscaleY,0)
+draw_set_halign(fa_left)
+draw_set_color(c_black)
+draw_set_halign(fa_center)
+draw_text_transformed(BtextX,BtextY,_midtext,_mscaleX,_mscaleY,0) draw_set_color(c_white)
+draw_set_halign(fa_left)
+draw_text_transformed(BtextX+BtextSep/2,BtextY,_righttext,_rscaleX,_rscaleY,0)
 }
