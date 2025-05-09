@@ -2110,6 +2110,7 @@
     {"id":{"name":"bg_carpet","path":"sprites/bg_carpet/bg_carpet.yy",},},
     {"id":{"name":"bg_cave","path":"sprites/bg_cave/bg_cave.yy",},},
     {"id":{"name":"bg_charselect","path":"sprites/bg_charselect/bg_charselect.yy",},},
+    {"id":{"name":"bg_charselectcity","path":"sprites/bg_charselectcity/bg_charselectcity.yy",},},
     {"id":{"name":"bg_club","path":"sprites/bg_club/bg_club.yy",},},
     {"id":{"name":"bg_continue","path":"sprites/bg_continue/bg_continue.yy",},},
     {"id":{"name":"bg_credits","path":"sprites/bg_credits/bg_credits.yy",},},

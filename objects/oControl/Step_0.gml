@@ -546,3 +546,4 @@ quakeFX=0 quakeFXTime=0
 
 }
 
+if triggerarcadesave=2 {triggerarcadesave=0 arcade_save(stageNext)}

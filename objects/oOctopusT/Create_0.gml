@@ -51,6 +51,8 @@ GrabFrame=24
 height=96
 recovery=0
 shaketime=0
+pow=0
+powhp=0
 
 HitType=0
 

@@ -832,6 +832,10 @@ if room=rm_characterselect
 {fpsY=32
 draw_set_color(c_white) draw_set_alpha(1)
 
+//draw_sprite(bg_charselectcity,0,320+0+p5.introtextadd,0)
+draw_sprite(bg_charselectcity,0,-640+p5.introtextadd,0)
+draw_sprite(bg_charselectcity,0,-320+p5.introtextadd,0)
+
 draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))
 
 if global.TrainingRoom=0
@@ -885,7 +889,7 @@ if -key_left_pressed or key_right_pressed {deletefileC^=1; PlaySound(snd_select)
 if key_B {oControl.deletefile=0 introbuffer=2}
 
 if key_A
-{introbuffer=2 if deletefileC=0 oControl.deletefile=0 else {oControl.deletefile=0 global.SaveNumber=0  arcade_save(rm_opening) global.SaveNumber=0 global.SaveText="EMPTY";} }
+{introbuffer=2 if deletefileC=0 oControl.deletefile=0 else {oControl.deletefile=0 global.SaveNumber=0 file_delete("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini") global.SaveNumber=0  arcade_load(0)} }
 }
 
 }
@@ -902,6 +906,8 @@ var diftext=""
 var diftext2=""
 if global.SaveNumber=0
 {
+
+
 if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)\n(4 LIVES, 5 CONTINUES)" 
 	diftext2="YOU TAKE WAY LESS DAMAGE AND DEAL MORE."
 	global.LifeStart=4; global.Continues=5;}
@@ -1710,7 +1716,7 @@ if key_attack or key_jump or key_super or key_shield or keyboard_check_pressed(v
 	else cutscenedecision=0
 	
 	CutsceneSaveBuffer-=0.5
-	if CutsceneSaveBuffer=0 {cutsceneSnap=2 arcade_save(CutsceneStage)}
+	if CutsceneSaveBuffer=0 {cutsceneSnap=2 triggerarcadesave=2}//arcade_save(CutsceneStage)}
 	
 	CDtextTy=lerp(CDtextTy,-400,0.1)
 	if cutsceneDecmode=0 {CDtextAy=lerp(CDtextAy,-10,0.1) CDtextAs=lerp(CDtextAs,1.5,0.1)} else CDtextAx=lerp(CDtextAx,240,0.1)

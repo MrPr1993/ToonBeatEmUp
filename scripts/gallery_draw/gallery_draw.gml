@@ -6,6 +6,29 @@ if room=rm_gallery
 
 controller_setup()
 
+if betatest
+{if keyboard_check_pressed(ord("7"))
+{
+global.Gallery[0]=1
+global.Gallery[0]=2
+global.Gallery[0]=3
+global.Gallery[0]=4
+global.Gallery[0]=5
+global.Gallery[0]=6
+global.Gallery[0]=7
+global.Gallery[0]=8
+global.Gallery[0]=9
+global.Gallery[0]=10
+global.Gallery[0]=11
+global.Gallery[0]=12
+global.Gallery[0]=13
+global.Gallery[0]=14
+global.Gallery[0]=15
+global.Gallery[0]=16
+}
+}
+
+
 if gallerybuffer!=0 gallerybuffer-=1
 if galleryload!=0 galleryload-=1
 

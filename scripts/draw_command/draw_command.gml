@@ -37,7 +37,8 @@ draw_buttontext_ext(320-8,8,8,commandL[2],spr_commandbutton,0,"H","",0.75,1,1,1,
 else
 {
 draw_buttontext_ext(320-8,8,8,commandL[1],spr_commandbutton,2,"","",0.75,1,1,1,0.75,1.0)
-draw_buttontext_ext(8,8+16,8,"",spr_commandbutton,0,"H",commandL[22],0.75,1,1,1,0.75,1.0)
+if global.MultiVS=0
+draw_buttontext(8,240-(8+16),8,"",spr_commandbutton,0,"H",commandL[22])
 }
 
 }
@@ -199,7 +200,9 @@ draw_buttontext_ext(320-8,8,8,commandL[2],spr_commandbutton,7+6*commandMul,"",""
 draw_buttontext_ext(8,8+16,8,"",spr_commandbutton,5+6*commandMul,"",commandL[1],0.75,1,1,1,0.75,1.0)
 }
 else
-{draw_buttontext_ext(8,8+16,8,"",spr_commandbutton,7+6*commandMul,"J",commandL[22],0.75,1,1,1,0.75,1.0)
+{
+if global.MultiVS=0
+draw_buttontext(8,240-(8+16),8,"",spr_commandbutton,7+6*commandMul,"",commandL[22])
 draw_buttontext_ext(320-8,8,8,commandL[1],spr_commandbutton,5+6*commandMul,"","",0.75,1,1,1,0.75,1.0)
 }
 }

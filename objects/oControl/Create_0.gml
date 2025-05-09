@@ -2,6 +2,8 @@ room_speed=60
 
 roomfast=0
 
+triggerarcadesave=2;
+
 showtimehit=0;
 perfecthp=1;
 nodeath=1;
