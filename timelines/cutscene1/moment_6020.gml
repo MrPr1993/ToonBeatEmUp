@@ -1,6 +1,8 @@
 ///@description Decision Results
 canSkipCutscene=2
 
+
+
 ///Decision 1
 if cutsceneDecmode=0
 {CutsceneStage=rm_stage2b
@@ -48,6 +50,6 @@ with paper {alarm[0]=-1 animEnd=0 sprite_index=spr_prop16 isDepth=0 depth=-10
 	}
 
 }
-
+arcade_saving(CutsceneStage)
 //cutscenename="VIVA"
 //cutsceneline="WHAT?!"

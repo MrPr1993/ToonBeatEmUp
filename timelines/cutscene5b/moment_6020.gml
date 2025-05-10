@@ -311,3 +311,6 @@ with oControl {cutscenename="VIVA" cutsceneline="HEY! WAKE UP!"}
 if scenetime=3200 oControl.stageEndFX=1
 }
 }
+
+
+arcade_saving(CutsceneStage)

@@ -207,5 +207,7 @@ if scenetime=3400 oControl.stageEndFX=1
 }
 }
 
+arcade_saving(CutsceneStage)
+
 //cutscenename="VIVA"
 //cutsceneline="WHAT?!"

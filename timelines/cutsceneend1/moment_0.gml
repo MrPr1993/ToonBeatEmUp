@@ -339,3 +339,6 @@ canSkipCutscene=2
 cutscenePlaying=1
 
 }
+
+
+arcade_saving(rm_opening)

@@ -8,6 +8,7 @@ if stageclearfakeout=2
 musicplayonce(msc_finalbossclear)
 }
 
+CutsceneStage=stageNext
 
 if keyboard_check(vk_control)
 {
@@ -34,6 +35,7 @@ global.P4Char=character
 canmove=0  key_charge=0
 key_left=0 key_right=0 key_up=0 key_down=0
 }
+
 
 
 with oPlayer if stagePose!=0 {anim=210 AnimFrame=0}

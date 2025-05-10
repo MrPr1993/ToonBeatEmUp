@@ -9,6 +9,12 @@ global.UnlockStage[StageNumber]=1
 global.StageClear=1
 sc=instance_create_depth(0,0,-1,oContinueScreen) with sc
 {
+stageNext=oControl.stageNext
+CutsceneStage=oControl.CutsceneStage
+
+global.P5Score=global.P1Score+PlayerScore1+global.P2Score+PlayerScore2+global.P3Score+PlayerScore3+global.P4Score+PlayerScore4
+arcade_saving(stageNext)
+
 if global.MenuGlobal=0 or global.MenuGlobal=1
 {
 ///Cheat Penalty
@@ -49,7 +55,6 @@ global.P1ScoreS=global.P1Score
 global.P2ScoreS=global.P2Score
 global.P3ScoreS=global.P3Score
 global.P4ScoreS=global.P4Score
-arcade_save(stageNext)
 }
 
 

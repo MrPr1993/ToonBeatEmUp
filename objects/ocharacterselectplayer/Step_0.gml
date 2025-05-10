@@ -168,7 +168,7 @@ layer_hspeed("BGbricks",-32)
 if introbuffer=0
 {
 if global.TrainingRoom=1 or global.MultiVS=2 or global.SkipDifficulty=1 or
-key_A {
+key_A or key_accept {
 	
 	if oControl.deletefile=0
 	{
@@ -261,7 +261,7 @@ if charaddedbuffer!=0 charaddedbuffer-=1
 if charadded=1 and charaddedbuffer=0
 {image_index=0 isReady=0
 
-if key_B
+if key_B or key_cancel
 {
 if palettemode=0
 {
@@ -362,7 +362,7 @@ charno=global.P4Char}
 if global.UnlockAltPal=1
 if charaddedbuffer=0
 {
-if palettemode=1 if key_A or key_B or key_X or key_Y {charaddedbuffer=2 palettemode=0 PlaySoundNoStack(snd_steal)}
+if palettemode=1 if key_A or key_B or key_X or key_Y or key_accept {charaddedbuffer=2 palettemode=0 PlaySoundNoStack(snd_steal)}
 
 if key_Y
 if palettemode=0
@@ -376,13 +376,13 @@ palettemode=1
 
 
 ////Select Character
-if key_A
+if key_A or key_accept
 if soldout=1 {PlaySound(snd_steal)}
 else
 {
 if palettemode=0
 {
-if (playerNO=1 and (key_A))
+if (playerNO=1 and (key_A or key_accept))
 {
 PlaySoundNoStack(snd_picked) selectedflash=0 oControl.p5.charbuffer=2
 selectedflashing=1
@@ -406,7 +406,7 @@ if image_index<5.5 image_index+=0.25 if image_index=2 PlaySound(picksound)
 
 if charaddedbuffer=0
 {
-if key_B { PlaySound(snd_steal) image_index=0 charadded=1  charaddedbuffer=10}
+if key_B or key_cancel { PlaySound(snd_steal) image_index=0 charadded=1  charaddedbuffer=10}
 }
 }
 

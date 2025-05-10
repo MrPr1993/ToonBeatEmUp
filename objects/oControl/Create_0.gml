@@ -2,7 +2,7 @@ room_speed=60
 
 roomfast=0
 
-triggerarcadesave=2;
+triggerarcadesave=0;
 
 showtimehit=0;
 perfecthp=1;
@@ -125,7 +125,9 @@ charsetting=0
 
 if !variable_global_exists("CurrentMusic")
 {	
+global.StageSave=rm_opening;
 
+global.StageInfo=rm_opening;
 
 global.SaveFileNO=1;
 global.SaveNumber=0;
@@ -146,6 +148,7 @@ global.MinigameSelStage=0
 	
 global.StageGoing=rm_opening
 
+global.StageSave=0;
 
 global.ConsoleType="XBOX"
 
@@ -245,10 +248,12 @@ global.P1Score=0
 global.P2Score=0
 global.P3Score=0
 global.P4Score=0
+global.P5Score=0
 global.P1ScoreS=0
 global.P2ScoreS=0
 global.P3ScoreS=0
 global.P4ScoreS=0
+global.P5ScoreS=0
 global.P1LifeS=0
 global.P2LifeS=0
 global.P3LifeS=0
@@ -1054,9 +1059,7 @@ p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {con
 
 }
 p5=instance_create_depth(2400,53,-1,oCharacterSelectPlayer) with p5 {canControl=1 controlNO=9}
-
-if global.MenuGlobal=0
-arcade_load(0)
+if global.MenuGlobal=0 arcade_load()
 }
 
 
@@ -1147,3 +1150,4 @@ input_source_mode_set(INPUT_SOURCE_MODE.FIXED);
 
 //Drop player sources
 //var _i = 0; repeat(INPUT_MAX_PLAYERS) {input_source_clear(_i);  ++_i;}
+stage_globalcheck();

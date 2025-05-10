@@ -872,9 +872,9 @@ if -p5.key_left_pressed or p5.key_right_pressed {global.FriendlyFire^=1 PlaySoun
 
 if oControl.multiVSsetting=2 
 {
-if -p5.key_left_pressed {if global.SaveFileNO=0 global.SaveFileNO=3 else global.SaveFileNO-=1 arcade_load(0) PlaySound(snd_select)}
+if -p5.key_left_pressed {if global.SaveFileNO=0 global.SaveFileNO=3 else global.SaveFileNO-=1 arcade_load() PlaySound(snd_select)}
 
-if p5.key_right_pressed {if global.SaveFileNO=3 global.SaveFileNO=0 else global.SaveFileNO+=1 arcade_load(0) PlaySound(snd_select)}
+if p5.key_right_pressed {if global.SaveFileNO=3 global.SaveFileNO=0 else global.SaveFileNO+=1 arcade_load() PlaySound(snd_select)}
 }
 
 if key_Y if global.SaveFileNO!=0
@@ -889,7 +889,7 @@ if -key_left_pressed or key_right_pressed {deletefileC^=1; PlaySound(snd_select)
 if key_B {oControl.deletefile=0 introbuffer=2}
 
 if key_A
-{introbuffer=2 if deletefileC=0 oControl.deletefile=0 else {oControl.deletefile=0 global.SaveNumber=0 file_delete("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini") global.SaveNumber=0  arcade_load(0)} }
+{introbuffer=2 if deletefileC=0 oControl.deletefile=0 else {oControl.deletefile=0 global.SaveNumber=0 file_delete("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini") global.SaveNumber=0  arcade_load()} }
 }
 
 }
@@ -977,7 +977,7 @@ if global.SaveNumber=0
 draw_text(xadd,128+64,string(savename)+"\nNEW GAME")
 else
 draw_text(xadd,128+64,string(savename)+"\n"+string(global.SaveText)+"\nTOTAL SCORE\n"+string(
-global.P1Score+global.P2Score+global.P3Score+global.P4Score
+global.P5Score
 ))
 }
 draw_set_color(c_white)

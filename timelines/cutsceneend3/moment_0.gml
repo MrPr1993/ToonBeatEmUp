@@ -307,3 +307,6 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 canSkipCutscene=2
+
+
+arcade_saving(rm_opening)

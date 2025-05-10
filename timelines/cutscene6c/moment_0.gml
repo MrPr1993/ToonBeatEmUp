@@ -234,3 +234,4 @@ CutsceneStage=rm_stagelab
 canSkipCutscene=2
 
 
+arcade_saving(CutsceneStage)

@@ -85,3 +85,6 @@ global.Continues=global.ContinueStart
 
 
 }
+
+//if savetick>0 {savetick-=1; if savetick=1 {global.P5Score=global.P1Score+PlayerScore1+global.P2Score+PlayerScore2+global.P3Score+PlayerScore3+global.P4Score+PlayerScore4
+//arcade_saving(stageNext)}}

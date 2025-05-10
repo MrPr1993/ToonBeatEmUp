@@ -347,3 +347,4 @@ oControl.stageEndFX=1
 }
 }
 
+arcade_saving(CutsceneStage)

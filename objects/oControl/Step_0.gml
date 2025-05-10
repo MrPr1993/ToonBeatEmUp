@@ -546,4 +546,4 @@ quakeFX=0 quakeFXTime=0
 
 }
 
-if triggerarcadesave=2 {triggerarcadesave=0 arcade_save(stageNext)}
+//if triggerarcadesave>0 {triggerarcadesave-=1 if triggerarcadesave=1 arcade_saving(CutsceneStage)}

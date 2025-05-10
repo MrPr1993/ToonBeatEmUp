@@ -252,7 +252,10 @@ timeClear=oControl.timeClear
 //time=oControl.time
 time=(oControl.stagetime/oControl.stagetimemax)*100
 stageNext=oControl.stageNext
+CutsceneStage=oControl.CutsceneStage
 finalStage=oControl.finalStage
+
+
 
 stageClearCheck=0
 
@@ -494,11 +497,11 @@ sprite_replace(spr_photoplaceholder,"screenshot",0,false,false,0,0)
 //musicplayonce(msc_stageclear)
 stageClear=1
 GoldShow=global.GoldShow
-
-
 }
 
 
+global.P5Score=global.P1Score+PlayerScore1+global.P2Score+PlayerScore2+global.P3Score+PlayerScore3+global.P4Score+PlayerScore4
+arcade_saving(global.StageSave)
 stagedata_save()
 enemydata_save()
 unlock_save()
@@ -515,3 +518,4 @@ optionSelectX=200
 
 languagetext[40]=0; ///First 10 will be for the setting stuff
 language_check();
+

@@ -4,6 +4,8 @@ oPlayer.alarm[0]=0
 oPlayer.canControl=0
 oControl.showMap=0
 
+oControl.stageNext=rm_cutscene1
+
 with oControl
 {timecheck=alarm[0] alarm[0]=10000000}
 
