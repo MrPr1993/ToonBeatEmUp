@@ -3,7 +3,7 @@
 if bossesdefeated=20
 {
 
-if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
+if oControl.allPlayersMove
 {ArenaOver=1
 oPlayer.areaEntry=1
 

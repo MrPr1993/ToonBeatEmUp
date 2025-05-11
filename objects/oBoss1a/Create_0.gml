@@ -51,6 +51,7 @@ DamageVoice3=snd_hwolf2
 
 enemyID=150
 
+idlestyle=1
 
 DeathCry=snd_hwolf1
 

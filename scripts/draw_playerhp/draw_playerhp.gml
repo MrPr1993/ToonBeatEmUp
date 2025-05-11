@@ -57,7 +57,7 @@ if ContinueSelect=1
 if continueScreen=2 ///Character Select
 {
 
-if continueFlash<0 continueFlash=2 else continueFlash-=0.5
+//if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 
 var playernum1=global.p1Pals;
 var playernum2=global.p1Pal;
@@ -65,45 +65,70 @@ if playerNO=2 {playernum1=global.p2Pals;  playernum2=global.p2Pal;}
 if playerNO=3 {playernum1=global.p3Pals;  playernum2=global.p3Pal;}
 if playerNO=4 {playernum1=global.p4Pals;  playernum2=global.p4Pal;}
 
-draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_dkgray,1)
-draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_dkgray,1)
-draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_dkgray,1)
-draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_dkgray,1)
-pal_swap_set(playernum1,playernum2,false)
-draw_sprite_ext(spr_playerface,characterSelect,23*characterSelect,0,1,1,0,c_white,1) pal_swap_reset()
+//draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_dkgray,1)
+//draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_dkgray,1)
+//draw_sprite_ext(spr_playerface,2,46,0,1,1,0,c_dkgray,1)
+//draw_sprite_ext(spr_playerface,3,69,0,1,1,0,c_dkgray,1)
+//pal_swap_set(playernum1,playernum2,false)
+//draw_sprite_ext(spr_playerface,characterSelect,23*characterSelect,0,1,1,0,c_white,1) pal_swap_reset()
 
+
+if characterSelect!=0 draw_sprite_ext(spr_viva_map,1,9+0,32,1,1,0,c_dkgray,1)
+if characterSelect!=1 draw_sprite_ext(spr_hina_map,1,9+18,32,1,1,0,c_dkgray,1)
+if characterSelect!=2 draw_sprite_ext(spr_bahati_map,1,9+36,32,1,1,0,c_dkgray,1)
+if characterSelect!=3 draw_sprite_ext(spr_sofia_map,1,9+54,32,1,1,0,c_dkgray,1)
 
 draw_set_color(c_white)
 
 draw_set_font(global.scorefont)
 //draw_text(23*characterSelect+2,2,string_hash_to_newline(characterTimer))
 
-if continueFlash<1
-draw_sprite_ext(spr_playerface,4,23*characterSelect,0,1,1,0,c_white,1)
+//if continueFlash<1
+//draw_sprite_ext(spr_playerface,4,23*characterSelect,0,1,1,0,c_white,1)
 
 
 soldout=0;
 
+character=-1;
+
 /////See if the character is available
-if (controlNO=1 and oControl.p2.ContinueMode=1 and global.P2Char=character)
-or (controlNO=1 and oControl.p3.ContinueMode=1 and global.P3Char=character)
-or (controlNO=1 and oControl.p4.ContinueMode=1 and global.P4Char=character)
-or (controlNO=2 and oControl.p1.ContinueMode=1 and global.P1Char=character)
-or (controlNO=2 and oControl.p3.ContinueMode=1 and global.P3Char=character)
-or (controlNO=2 and oControl.p4.ContinueMode=1 and global.P4Char=character)
-or (controlNO=3 and oControl.p2.ContinueMode=1 and global.P2Char=character)
-or (controlNO=3 and oControl.p1.ContinueMode=1 and global.P1Char=character)
-or (controlNO=3 and oControl.p4.ContinueMode=1 and global.P4Char=character)
-or (controlNO=4 and oControl.p2.ContinueMode=1 and global.P2Char=character)
-or (controlNO=4 and oControl.p3.ContinueMode=1 and global.P3Char=character)
-or (controlNO=4 and oControl.p1.ContinueMode=1 and global.P1Char=character)
+if (controlNO=1 and oControl.p2.ContinueMode=0 and oControl.p2.character=characterSelect)
+or (controlNO=1 and oControl.p3.ContinueMode=0 and oControl.p3.character=characterSelect)
+or (controlNO=1 and oControl.p4.ContinueMode=0 and oControl.p4.character=characterSelect)
+or (controlNO=2 and oControl.p1.ContinueMode=0 and oControl.p1.character=characterSelect)
+or (controlNO=2 and oControl.p3.ContinueMode=0 and oControl.p3.character=characterSelect)
+or (controlNO=2 and oControl.p4.ContinueMode=0 and oControl.p4.character=characterSelect)
+or (controlNO=3 and oControl.p2.ContinueMode=0 and oControl.p2.character=characterSelect)
+or (controlNO=3 and oControl.p1.ContinueMode=0 and oControl.p1.character=characterSelect)
+or (controlNO=3 and oControl.p4.ContinueMode=0 and oControl.p4.character=characterSelect)
+or (controlNO=4 and oControl.p2.ContinueMode=0 and oControl.p2.character=characterSelect)
+or (controlNO=4 and oControl.p3.ContinueMode=0 and oControl.p3.character=characterSelect)
+or (controlNO=4 and oControl.p1.ContinueMode=0 and oControl.p1.character=characterSelect)
 soldout=1;
 ////
 
-if soldout
-draw_sprite_ext(spr_enemyface,0,23*characterSelect,0,1,1,0,c_white,1)
+pal_swap_set(playernum1,playernum2,false)
 
-if key_Y
+var _charselect=spr_viva_map;
+if characterSelect=1 _charselect=spr_hina_map
+if characterSelect=2 _charselect=spr_bahati_map
+if characterSelect=3 _charselect=spr_sofia_map
+
+continueFlash+=0.1 if continueFlash>=4 continueFlash=0
+var _mapframe=0;
+if continueFlash<1 _mapframe=0
+else if continueFlash<2 _mapframe=1
+else if continueFlash<3 _mapframe=0
+else _mapframe=2
+draw_sprite_ext(_charselect,_mapframe,9+18*characterSelect,34,1,1,0,c_white,1) pal_swap_reset()
+if soldout 
+draw_sprite_ext(_charselect,_mapframe,9+18*characterSelect,34,1,1,0,c_red,0.25)
+
+
+//if soldout draw_sprite_ext(spr_enemyface,0,23*characterSelect,0,1,1,0,c_white,1)
+
+if key_Y or key_LT or key_RT
+if soldout=0
 {PlaySound(snd_steal)
 if playerNO=1 global.p1CPal^=1
 if playerNO=2 global.p2CPal^=1
@@ -112,10 +137,11 @@ if playerNO=4 global.p4CPal^=1
 }
 
 if global.UnlockAltPal=1
+if soldout=0
 {var palmax=15; if global.UnlockAltPal palmax=31;
 if playerNO=1
 {if key_up_pressed {if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
+if key_down_pressed {if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
 if character=0 if global.p1CPal=0 global.p1Pals=spr_vivapal else global.p1Pals=spr_custompal
 if character=1 if global.p1CPal=0 global.p1Pals=spr_hinapal else global.p1Pals=spr_custompal2
 if character=2 if global.p1CPal=0 global.p1Pals=spr_bahatipal else global.p1Pals=spr_custompal3
@@ -123,7 +149,7 @@ if character=3 if global.p1CPal=0 global.p1Pals=spr_sofiapal else global.p1Pals=
 }
 if playerNO=2
 {if key_up_pressed {if global.p2Pal=0 global.p2Pal=palmax else global.p2Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1 PlaySound(snd_steal)}
+if key_down_pressed {if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1 PlaySound(snd_steal)}
 if character=0 if global.p2CPal=0 global.p2Pals=spr_vivapal else global.p2Pals=spr_custompal
 if character=1 if global.p2CPal=0 global.p2Pals=spr_hinapal else global.p2Pals=spr_custompal2
 if character=2 if global.p2CPal=0 global.p2Pals=spr_bahatipal else global.p2Pals=spr_custompal3
@@ -131,7 +157,7 @@ if character=3 if global.p2CPal=0 global.p2Pals=spr_sofiapal else global.p2Pals=
 }
 if playerNO=3
 {if key_up_pressed {if global.p3Pal=0 global.p3Pal=palmax else global.p3Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1 PlaySound(snd_steal)}
+if key_down_pressed {if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1 PlaySound(snd_steal)}
 if character=0 if global.p3CPal=0 global.p3Pals=spr_vivapal else global.p3Pals=spr_custompal
 if character=1 if global.p3CPal=0 global.p3Pals=spr_hinapal else global.p3Pals=spr_custompal2
 if character=2 if global.p3CPal=0 global.p3Pals=spr_bahatipal else global.p3Pals=spr_custompal3
@@ -139,7 +165,7 @@ if character=3 if global.p3CPal=0 global.p3Pals=spr_sofiapal else global.p3Pals=
 }
 if playerNO=4
 {if key_up_pressed {if global.p4Pal=0 global.p4Pal=palmax else global.p4Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1 PlaySound(snd_steal)}
+if key_down_pressed {if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1 PlaySound(snd_steal)}
 if character=0 if global.p4CPal=0 global.p4Pals=spr_vivapal else global.p4Pals=spr_custompal
 if character=1 if global.p4CPal=0 global.p4Pals=spr_hinapal else global.p4Pals=spr_custompal2
 if character=2 if global.p4CPal=0 global.p4Pals=spr_bahatipal else global.p4Pals=spr_custompal3
@@ -152,8 +178,8 @@ else characterSelect-=1
 if key_right_pressed if characterSelect=3 characterSelect=0
 else characterSelect+=1
 
-if key_A or key_B
-if soldout=0
+if key_A or key_B or key_X
+if soldout
 {PlaySound(snd_steal)
 }
 else

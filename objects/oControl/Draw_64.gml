@@ -161,13 +161,13 @@ draw_set_color(c_white)
 if Penemymaxhp[i]>1
 {
 draw_rectangle(25-1,48-1,25+(1*45)+1,48+8+1,false)
-draw_set_color(c_red)
+draw_set_color(c_black)
 draw_rectangle(25,48,25+(1*45),48+8,false)
 }
 else
 {
 draw_rectangle(25-1,48-1,25+(Penemymaxhp[i]*45)+1,48+8+1,false)
-draw_set_color(c_red)
+draw_set_color(c_black)
 draw_rectangle(25,48,25+(Penemymaxhp[i]*45),48+8,false)
 }
 if Penemyhp[i]>=0{///HP Layers
@@ -208,6 +208,23 @@ else
 {if Penemyhplayer[i]=0
 if PenemyHPflash[i]=0 PenemyHPflash[i]=2 else PenemyHPflash[i]-=0.5}
 }
+
+////HP overlay
+gpu_set_blendmode_ext(bm_dest_color,bm_src_color)
+//if Penemymaxhp[i]<=0.25
+//draw_sprite_part_ext(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48,0.25,1,c_white,1)
+//else if Penemymaxhp[i]<=0.5
+//draw_sprite_part_ext(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48,0.5,1,c_white,1)
+//else if Penemymaxhp[i]<=0.75
+//draw_sprite_part_ext(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48,0.75,1,c_white,1)
+//else
+//draw_sprite_part(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48)
+//var maxbar=((1/45)*(Penemymaxhp[i]*45))-round(-0.5+Penemyhp[i]); maxbar=clamp(maxbar,0,1)
+var hpscale=(Penemymaxhp[i]); hpscale=clamp(hpscale,0,1);
+draw_sprite_ext(spr_enemyhpbar,0,26,48,hpscale,1,0,c_white,1)
+gpu_set_blendmode(bm_normal)
+////
+
 pal_swap_set(Pmy_pal_sprite[i],Pcurrent_pal[i],false);
 draw_sprite(PenemyPortraitSpr[i],PenemyPortraitIndex[i],4,32)
 pal_swap_reset();
@@ -252,7 +269,7 @@ draw_text(160,240-32,string_hash_to_newline(BossHPName)) draw_set_font(-1)
 
 draw_set_color(c_white)
 draw_rectangle(64,240-24,320-64,240-16,false)
-draw_set_color(c_red)
+draw_set_color(c_black)
 draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
 
 BossHP=BossHPID.hp
@@ -280,6 +297,11 @@ draw_set_color(c_black)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,fal
 
 draw_set_halign(fa_left)
 
+////HP overlay
+gpu_set_blendmode_ext(bm_dest_color,bm_src_color)
+draw_sprite(spr_bosshpbar,0,64+1,240-24+1)
+gpu_set_blendmode(bm_normal)
+////
 
 }
 

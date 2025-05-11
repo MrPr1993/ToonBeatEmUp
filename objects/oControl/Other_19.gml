@@ -17,12 +17,12 @@ betatest=0
 }
 
 //stageClear=1
-
+nopleasewait=0
 with oPlayer
 if ContinueMode=0
 {
 if oControl.stageclearfakeout!=1
-{
+{global.StageClear=1
 if playerNO=1	
 global.P1Char=character
 if playerNO=2

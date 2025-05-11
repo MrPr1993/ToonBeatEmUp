@@ -106,6 +106,12 @@ musicplaystart(global.CurrentMusic)
 
 }
 
+if continuePlayer=1 with oControl with p1 if object_index=oPlayerNoControl {key_A=1; triggerspawn();}
+if continuePlayer=2 with oControl with p2 if object_index=oPlayerNoControl {key_A=1; triggerspawn();}
+if continuePlayer=3 with oControl with p3 if object_index=oPlayerNoControl {key_A=1; triggerspawn();}
+if continuePlayer=4 with oControl with p4 if object_index=oPlayerNoControl {key_A=1; triggerspawn();}
+
+
 oControl.TVfx=TVfx
 oControl.var_distort=global.CRTcustomDistort
 oControl.var_distortion_ammount=global.CRTcustomDistortAM

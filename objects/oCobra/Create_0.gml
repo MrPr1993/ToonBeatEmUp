@@ -73,6 +73,7 @@ bombRecharge=0
 current_pal=0;
 my_pal_sprite=spr_mummypal
 
+idlestyle=1
 
 specialtaunt=function()
 {

@@ -237,6 +237,7 @@ fishname=""
 fishscore=0
 fishstr=0
 
+if character=-1 character=0;
 
 if global.Cheat[7]=1 if global.NoCheat=1
 {

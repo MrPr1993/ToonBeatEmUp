@@ -501,13 +501,18 @@ GoldShow=global.GoldShow
 
 
 global.P5Score=global.P1Score+PlayerScore1+global.P2Score+PlayerScore2+global.P3Score+PlayerScore3+global.P4Score+PlayerScore4
-arcade_saving(global.StageSave)
+
+if global.StageClear=1
+{
 stagedata_save()
 enemydata_save()
 unlock_save()
+arcade_saving(global.StageSave)
 feats_stageunlock()
 feats_check()
 feats_save()
+}
+global.StageClear=0;
 
 colorshade_setup()
 

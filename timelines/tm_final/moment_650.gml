@@ -1,6 +1,6 @@
 /// @description Fakeout
 
-if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
+if oControl.allPlayersMove
 {
 oControl.stageclearfakeout=1
 oPlayer.canControl=0

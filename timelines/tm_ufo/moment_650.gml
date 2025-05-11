@@ -1,6 +1,6 @@
 /// @description Freeze Player's Controls
 
-if oPlayer.ground=1 and oPlayer.atk=0 and oPlayer.dead=0 and oPlayer.hurt=0
+if oControl.allPlayersMove
 {
 oPlayer.canControl=0
 oPlayer.areaEntry=1
