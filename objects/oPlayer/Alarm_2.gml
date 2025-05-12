@@ -10,6 +10,7 @@ else
 ContinueCountdown=9
 ContinueCTime=90
 continueScreen=1 ContinueSelect=1
+if global.Continues=0 {ContinueCountdown=-1 ContinueCTime=0}
 oControl.characterSelect=character
 oControl.playNO=playerNO
 ContinueMode=1

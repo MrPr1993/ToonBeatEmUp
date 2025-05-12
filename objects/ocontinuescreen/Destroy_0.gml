@@ -106,6 +106,9 @@ musicplaystart(global.CurrentMusic)
 
 }
 
+if instance_exists(oPlayerNoControl) with oPlayerNoControl { }
+if instance_exists(oPlayer) with oPlayer {ContinueCountdown=9 ContinueCTime=90}
+
 if continuePlayer=1 with oControl with p1 if object_index=oPlayerNoControl {key_A=1; triggerspawn();}
 if continuePlayer=2 with oControl with p2 if object_index=oPlayerNoControl {key_A=1; triggerspawn();}
 if continuePlayer=3 with oControl with p3 if object_index=oPlayerNoControl {key_A=1; triggerspawn();}

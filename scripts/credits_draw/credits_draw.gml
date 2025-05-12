@@ -449,6 +449,7 @@ var creditscameol=""+
 "\n"+
 "\n"+
 "\n"
+
 var creditscameor="\n"+
 "\nSED2116"+
 "\nBLUETOMATO"+
@@ -484,6 +485,17 @@ var creditscameor="\n"+
 "\n"+
 "\n"
 
+///New cameos
+//JameArts - Alice on cloud stage
+//Gaming Electross - ???
+//Rovenami - Cowgirl
+//Gatordragon - jester gal
+//Wolfzeta - Blue hair gal on beach
+//shademanv4 - Sexy mermaid
+//
+//
+//
+//
 
 
 draw_text(320-4,320+16+round(creditsCameoY),creditscameor)

@@ -186,6 +186,7 @@ character=-1;
 
 triggerspawn=function()
 {
+if global.P1Only=0
 if oControl.nopleasewait=1
 {
 if key_A or key_B or key_X or key_Y
