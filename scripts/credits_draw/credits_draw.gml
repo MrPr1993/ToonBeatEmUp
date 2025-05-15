@@ -399,7 +399,7 @@ creditmoment="CODING BY\n \nMrPr1993\nPixelated pope\nJujuAdams" ;
 else if creditsTime<7+5*10
 creditmoment="CONCEPT ART BY\n \nMRPR1993\nSHADES\nSED2116" ;
 else if creditsTime<7+5*11
-creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nFLASH TRICKSTAR\nSHADO\nSHADES" ;
+creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nFLASH TRICKSTAR\nSHADO\nSHADES\nWEEBJESUSAMEN" ;
 else
 {
 creditsCameoY-=0.18
