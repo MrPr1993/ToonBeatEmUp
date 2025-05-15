@@ -25,6 +25,13 @@ function __input_config_verbs()
             action:  input_binding_key(vk_enter),
             special: input_binding_key(vk_shift),
 			
+	key_ABUTTON: input_binding_key("K"),
+	key_BBUTTON: input_binding_key("L"),
+	key_XBUTTON: input_binding_key("J"),
+	key_YBUTTON: input_binding_key("H"),		
+	key_LTBUTTON: input_binding_key("Y"),
+	key_RTBUTTON: input_binding_key("U"),
+			
 	key_a: input_binding_key("K"),
 	key_b: input_binding_key("L"),
 	key_x: input_binding_key("J"),
@@ -58,6 +65,12 @@ function __input_config_verbs()
 	key_lt: input_binding_gamepad_button(gp_shoulderl),// gamepad_button_check_pressed(i,gp_shoulderl) or keyboard_check_pressed(ord("U"))
 	key_rt: input_binding_gamepad_button(gp_shoulderr),//gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("O"))
 	
+	key_ABUTTON: input_binding_gamepad_button(gp_face1),//gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space)
+	key_BBUTTON: input_binding_gamepad_button(gp_face2),//gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("J"))
+	key_XBUTTON: input_binding_gamepad_button(gp_face3),//gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("H"))
+	key_YBUTTON: input_binding_gamepad_button(gp_face4),//gamepad_button_check_pressed(i,gp_face4) or keyboard_check_pressed(ord("L"))			
+	key_LTBUTTON: input_binding_gamepad_button(gp_shoulderl),// gamepad_button_check_pressed(i,gp_shoulderl) or keyboard_check_pressed(ord("U"))
+	key_RTBUTTON: input_binding_gamepad_button(gp_shoulderr),//gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("O"))
             
             aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
             aim_down:  input_binding_gamepad_axis(gp_axisrv, false),
@@ -88,7 +101,14 @@ function __input_config_verbs()
 	key_y: input_binding_virtual_button(),
 	key_lt: input_binding_virtual_button(),
 	key_rt: input_binding_virtual_button(),
-	
+
+	key_ABUTTON: input_binding_virtual_button(),//gamepad_button_check_pressed(i,gp_face1) or keyboard_check_pressed(ord("K"))  or keyboard_check_pressed(vk_space)
+	key_BBUTTON: input_binding_virtual_button(),//gamepad_button_check_pressed(i,gp_face2) or keyboard_check_pressed(ord("J"))
+	key_XBUTTON: input_binding_virtual_button(),//gamepad_button_check_pressed(i,gp_face3) or keyboard_check_pressed(ord("H"))
+	key_YBUTTON: input_binding_virtual_button(),//gamepad_button_check_pressed(i,gp_face4) or keyboard_check_pressed(ord("L"))			
+	key_LTBUTTON: input_binding_virtual_button(),// gamepad_button_check_pressed(i,gp_shoulderl) or keyboard_check_pressed(ord("U"))
+	key_RTBUTTON: input_binding_virtual_button(),//gamepad_button_check_pressed(i,gp_shoulderr) or keyboard_check_pressed(ord("O"))
+ 	
 		
 		}
     };

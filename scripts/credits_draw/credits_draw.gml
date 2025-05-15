@@ -485,18 +485,34 @@ var creditscameor="\n"+
 "\n"+
 "\n"
 
-///New cameos
-//JameArts - Alice on cloud stage
-//Gaming Electross - ???
-//Rovenami - Cowgirl
-//Gatordragon - jester gal
-//Wolfzeta - Blue hair gal on beach
-//shademanv4 - Sexy mermaid
-//
-//
-//
-//
+///New cameos: 21
+////SKETCHED
+//1 RJ - new gal
+//2 Wolfzeta - Blue hair gal on beach
+//3 Gatordragon - jester gal
+//4 Rovenami - Cowgirl
+//5 Gaming Eelektross - Dragon Guard sleepng on snow stage
+//6 shademanv4 - Sexy mermaid
+//7 Vauvenader - Underwater shark
+//8 shyguywhy - Beef shark on beach
+//9 Nfate - Hypno gal at beach
+//10 JameArts - Alice on cloud stage
 
+
+//SKEPTICAL - snek gal
+//butchtheamazing - ???
+//guiterman13 - Soda punk
+//Meme supreme - Chicken wrestler
+//PsychoJosh - beach Duo (unpaid)
+//TWEENIES - Buff lad (not yet paid)
+//toainsully - 
+//Zengumi - cloudy kiss
+//Wobbleblot - cloudy kiss
+//Flash Trickstar
+//Peterjuice
+//Fva 
+//
+//
 
 draw_text(320-4,320+16+round(creditsCameoY),creditscameor)
 draw_set_halign(fa_left)

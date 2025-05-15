@@ -61,3 +61,6 @@ enemySpawn4=0
 
 
 specialscript=-1;
+
+noextraenemies=1;
+extraenemies_set();

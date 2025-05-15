@@ -29,6 +29,7 @@ ini_write_real("SETTINGS", "FPS", global.fpsMode)
 ini_write_real("SETTINGS", "GOLDSHOW", global.GoldShow)
 ini_write_real("SETTINGS", "FEATSHOW", global.DisplayFeats)
 
+globalcontrols_save(0)
 globalcontrols_save(1)
 globalcontrols_save(2)
 globalcontrols_save(3)

@@ -1,6 +1,6 @@
 ///@description Plane Door
 
-if !instance_exists(en1)
+if !instance_exists(en1) and noextraenemies
 and !instance_exists(en2)
 and !instance_exists(en3)
 and !instance_exists(en4)

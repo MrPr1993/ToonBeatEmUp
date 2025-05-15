@@ -43,6 +43,7 @@ global.Continues=global.ContinueStart
 
 
 ///Controls
+globalcontrols_load(0) ///Keyboard
 globalcontrols_load(1)
 globalcontrols_load(2)
 globalcontrols_load(3)

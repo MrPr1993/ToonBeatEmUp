@@ -156,8 +156,8 @@ if key_A or keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("J"))
 {
 if menuSelect=16 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied
 	
-	{menuSelect=-1 LegacyMode=global.LegacyMode[instance_number(oPlayerDisembodied)]}
-	
+	{menuSelect=-1 LegacyMode=global.LegacyMode[instance_number(oPlayerDisembodied)-1]}
+	canControl=1 controlNO=instance_number(oPlayerDisembodied)
 	}
 }
 

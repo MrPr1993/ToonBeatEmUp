@@ -1,4 +1,4 @@
-if !instance_exists(en1)//8
+if !instance_exists(en1) and noextraenemies//8
 and !instance_exists(en2)
 and !instance_exists(en3)
 and !instance_exists(en4)

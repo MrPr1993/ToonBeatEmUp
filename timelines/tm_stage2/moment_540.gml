@@ -1,4 +1,4 @@
-if !instance_exists(en1)
+if !instance_exists(en1) and noextraenemies
 and !instance_exists(en2)
 {
 en1=instance_create(1936+24,16+112,oAreaSpawner)

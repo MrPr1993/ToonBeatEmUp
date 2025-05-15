@@ -11,6 +11,7 @@ nodeath=1;
 playNO=1
 
 playerleader=0;
+playerAmount=0;
 
 camX=0;
 camY=0;
@@ -299,7 +300,7 @@ globalcontrols(4)
 globalcontrols(3)
 globalcontrols(2)
 globalcontrols(1)
-
+globalcontrols(0)
 
 data_setup()
 

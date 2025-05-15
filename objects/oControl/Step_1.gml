@@ -35,12 +35,14 @@ repeat(INPUT_MAX_PLAYERS)
 }
 
 
-
+playerAmount=0;
 if charstatsetup=0
 {
 if instance_exists(oPlayer)
-{with oPlayer
 {
+with oPlayer
+{
+if ContinueMode=0 oControl.playerAmount+=1;
 	
 if controlNO=1 {PlayerLife=global.P1Life PlayerScore=global.P1Score character=global.P1Char;
 	
@@ -71,8 +73,10 @@ oPlayer.PlayerScore=0 PlayerLife=global.LifeStart global.Continues=global.Contin
 
 if global.FriendlyFire {isPlayer=playerNO selfatk.isPlayer=isPlayer}
 
+
+
 if room=rm_stagesnow
-oPlayer.Cweather=1;
+oPlayer.Cweather=1; 
 }
 
 if instance_exists(oPlayerNoControl) 

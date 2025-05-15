@@ -311,6 +311,7 @@ matrix_set(matrix_world,matrix_build_identity())
 if commandType=11 ///For Controller Setup
 {
 
+
 draw_set_halign(fa_center) if Joystick=0 draw_text(40,32+16+8*15,oSettings.commandL[20]) else draw_text(40,32+16+8*15,oSettings.commandL[21])
 draw_buttontext(40-16,32+16+8*16+8,8,"",spr_commandbutton,8+6*commandMul,"","")
 draw_buttontext(40+16,32+16+8*16+8,8,"",spr_commandbutton,9+6*commandMul,"","")
@@ -320,13 +321,12 @@ if Joystick=1
 var commandcheck=0;
 commandcheck[9]=0;
 
-var _controlno=controlNO;
+var _controlno=controlNO-1;
 
 var keycheck=1;
 var keyanalyze=global.gpControlAttack[_controlno];
 repeat(9)
 {
-
 if keycheck=1 keyanalyze=global.gpControlJump[_controlno];
 if keycheck= 2 keyanalyze=global.gpControlAttack[_controlno];
 if keycheck= 3 keyanalyze=global.gpControlShield[_controlno];
@@ -337,14 +337,14 @@ if keycheck= 7 keyanalyze=global.gpControlAttack[_controlno];
 if keycheck= 8 keyanalyze=global.gpControlAttack[_controlno];
 if keycheck= 9 keyanalyze=global.gpControlAttack[_controlno];
 
-if keyanalyze=gp_face1 commandcheck[keycheck]=4;
-if keyanalyze=gp_face2 commandcheck[keycheck]=5;
-if keyanalyze=gp_face3 commandcheck[keycheck]=6;
-if keyanalyze=gp_face4 commandcheck[keycheck]=7;
-if keyanalyze=gp_shoulderl commandcheck[keycheck]=8;
-if keyanalyze=gp_shoulderr commandcheck[keycheck]=9;
-if keyanalyze=gp_shoulderlb commandcheck[keycheck]=0;
-if keyanalyze=gp_shoulderrb commandcheck[keycheck]=0;
+if keyanalyze="key_ABUTTON" commandcheck[keycheck]=4;
+if keyanalyze="key_BBUTTON" commandcheck[keycheck]=5;
+if keyanalyze="key_XBUTTON" commandcheck[keycheck]=6;
+if keyanalyze="key_YBUTTON" commandcheck[keycheck]=7;
+if keyanalyze="key_LTBUTTON" commandcheck[keycheck]=8;
+if keyanalyze="key_RTBUTTON" commandcheck[keycheck]=9;
+if keyanalyze="key_LBBUTTON" commandcheck[keycheck]=0;
+if keyanalyze="key_RBBUTTON" commandcheck[keycheck]=0;
 
 draw_sprite_ext(spr_commandbutton,commandcheck[keycheck]+6*commandMul,88-18,2*keycheck+32+20+8*keycheck,1,1,0,c_white,1)
 keycheck+=1;

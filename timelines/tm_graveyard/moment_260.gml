@@ -1,6 +1,6 @@
 /// @description Plane 2
 ////Make sure to only count the previous ones, otherwise you'll get an error.
-if !instance_exists(en1)
+if !instance_exists(en1) and noextraenemies
 and !instance_exists(en2)
 {
 with thunder

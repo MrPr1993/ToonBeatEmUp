@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+oControl.nopleasewait=0;
 
 if shaketime!=0
 {shaketime-=1
