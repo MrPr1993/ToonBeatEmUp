@@ -1,24 +1,30 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function controller_pinput(_controlno){
-
-if !(input_source_using(INPUT_GAMEPAD, _controlno))
-if _controlno=99999999
+var _attack=global.gpControlAttack[_controlno]//"key_XBUTTON";
+var _jump=global.gpControlJump[_controlno]//"key_ABUTTON";
+var _special=global.gpControlShield[_controlno]//"key_BBUTTON";
+var _super=global.gpControlSuper[_controlno]//"key_YBUTTON";
+var _taunt=global.gpControlPunchback[_controlno]//"key_RTBUTTON";
+var _punchback=global.gpControlTaunt[_controlno]//"key_LTBUTTON";
+var _interact="key_LTBUTTON";
+	
+	if (input_source_using(INPUT_KEYBOARD, _controlno))
 {
-key_right = keyboard_check(ord("D"));
-	key_left = -keyboard_check(ord("A"));
-	key_right_pressed =keyboard_check_pressed(ord("D"));
-	key_left_pressed = -keyboard_check_pressed(ord("A"));
+key_right = keyboard_check(ord("D")) or keyboard_check(vk_right);
+	key_left = -(keyboard_check(ord("A")) or keyboard_check(vk_left));
+	key_right_pressed =keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right);
+	key_left_pressed = -(keyboard_check_pressed(ord("A")) or keyboard_check_pressed(vk_left));
 
-	key_up = keyboard_check(ord("W"));
+	key_up = keyboard_check(ord("W")) or keyboard_check(vk_up);
 
-	key_up_pressed = keyboard_check_pressed(ord("W"));
-	key_down_pressed = -keyboard_check_pressed(ord("S"));
-	key_down = keyboard_check(ord("S"));
+	key_up_pressed = keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up);
+	key_down_pressed = -(keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down));
+	key_down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 	if object_index=oPlayer
 	{
-	key_down_pressed = -keyboard_check_pressed(ord("S"));
-	key_down = keyboard_check(ord("S"));	
+	key_down_pressed = -keyboard_check_pressed(ord("S")) or -keyboard_check_pressed(vk_down);
+	key_down = keyboard_check(ord("S")) or keyboard_check(vk_down);	
 	}
 	
 	key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord(global.ControlJump[_controlno]));
@@ -43,8 +49,8 @@ key_right = keyboard_check(ord("D"));
 	key_B=keyboard_check_pressed(ord("L"))
 	key_LB=keyboard_check_pressed(ord("Y"))
 	key_LT=keyboard_check_pressed(ord("Y"))
-	key_RB=keyboard_check_pressed(ord("T"))
-	key_RT=keyboard_check_pressed(ord("T"))
+	key_RB=keyboard_check_pressed(ord("U"))
+	key_RT=keyboard_check_pressed(ord("U"))
 	
 	key_Xh=keyboard_check(ord("J"))
 	key_Yh=keyboard_check(ord("H"))
@@ -52,8 +58,8 @@ key_right = keyboard_check(ord("D"));
 	key_Bh=keyboard_check(ord("L"))
 	key_LBh=keyboard_check(ord("Y"))
 	key_LTh=keyboard_check(ord("Y"))
-	key_RBh=keyboard_check(ord("T"))
-	key_RTh=keyboard_check(ord("T"))
+	key_RBh=keyboard_check(ord("U"))
+	key_RTh=keyboard_check(ord("U"))
 	
 	key_accept=keyboard_check_pressed(ord("K")) or keyboard_check_pressed(vk_space)
 	key_pause=keyboard_check_pressed(vk_escape);
@@ -63,13 +69,7 @@ key_right = keyboard_check(ord("D"));
 }
 else
 {
-var _attack=global.gpControlAttack[_controlno]//"key_XBUTTON";
-var _jump=global.gpControlJump[_controlno]//"key_ABUTTON";
-var _special=global.gpControlShield[_controlno]//"key_BBUTTON";
-var _super=global.gpControlSuper[_controlno]//"key_YBUTTON";
-var _taunt=global.gpControlPunchback[_controlno]//"key_RTBUTTON";
-var _punchback=global.gpControlTaunt[_controlno]//"key_LTBUTTON";
-var _interact="key_LTBUTTON";
+
 
 //var _controlno=1;
 key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
@@ -128,3 +128,4 @@ key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
 	key_cancel=input_check_pressed("cancel",_controlno)
 }
 }
+

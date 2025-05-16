@@ -18,7 +18,7 @@ layer_background_visible(bgfog1,0)
 
 oPlayer.x-=64
 
-oPlayer.y+=240
+oPlayer.y+=240+32
 
 if instance_number(oPlayer)!=1
 with oPlayer

@@ -31,9 +31,9 @@ controlSettings=0
 
 
 p1=instance_create_depth(0,0,0,oPlayerDisembodied) p1.controlNO=1 p1.canControl=1
-p2=instance_create_depth(0,0,0,oPlayerDisembodied) p2.controlNO=2 p2.canControl=0
-p3=instance_create_depth(0,0,0,oPlayerDisembodied) p3.controlNO=3 p3.canControl=0
-p4=instance_create_depth(0,0,0,oPlayerDisembodied) p4.controlNO=4 p4.canControl=0
+p2=instance_create_depth(0,0,0,oPlayerDisembodied) p2.controlNO=2 p2.canControl=1
+p3=instance_create_depth(0,0,0,oPlayerDisembodied) p3.controlNO=3 p3.canControl=1
+p4=instance_create_depth(0,0,0,oPlayerDisembodied) p4.controlNO=4 p4.canControl=1
 
 
 languagetext[40]=0; ///First 10 will be for the setting stuff

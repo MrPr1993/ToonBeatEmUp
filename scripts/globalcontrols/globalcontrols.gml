@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function globalcontrols(_controlno){
+	_controlno=clamp(_controlno,0,12)
 global.LegacyMode[_controlno]=0;
 
 ///Keyboard

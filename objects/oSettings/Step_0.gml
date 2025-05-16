@@ -157,7 +157,7 @@ if key_A or keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("J"))
 if menuSelect=16 {controlSettings=1 PlaySound(snd_picked) with oPlayerDisembodied
 	
 	{menuSelect=-1 LegacyMode=global.LegacyMode[instance_number(oPlayerDisembodied)-1]}
-	canControl=1 controlNO=instance_number(oPlayerDisembodied)
+	
 	}
 }
 
@@ -179,7 +179,7 @@ oPause.var_distortion_ammount=global.CRTcustomDistortAM
 oPause.var_border=global.CRTcustomBorder
 }
 
-if keyboard_check_pressed(vk_escape) or key_B
+if keyboard_check_pressed(vk_escape) or key_cancel
 if p1.ControlChange=0 and p2.ControlChange=0 and p3.ControlChange=0 and p4.ControlChange=0
 {
 if controlSettings=1

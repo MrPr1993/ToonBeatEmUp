@@ -1,3 +1,4 @@
+
 if controlNO=1
 {current_pal=global.p1Pal;
 my_pal_sprite=global.p1Pals
@@ -14,8 +15,6 @@ if controlNO=4
 {current_pal=global.p4Pal;
 my_pal_sprite=global.p4Pals
 }
-
-
 
 
 if ContinueMode=0

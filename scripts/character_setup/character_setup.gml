@@ -49,6 +49,7 @@ stagePose=1
 
 	hp=1
 	maxhp=1
+	hpD=1;
 	extraheal=0
 	showhp=1
 	showp1=0

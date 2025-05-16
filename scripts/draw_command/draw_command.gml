@@ -152,8 +152,8 @@ if commandType=11
 {
 
 draw_set_halign(fa_center) if Joystick=0 draw_text(80,32+16+8*15,oSettings.commandL[20]) else draw_text(80,32+16+8*15,oSettings.commandL[21])
-draw_buttontext(80-16,32+16+8*16+8,8,"",spr_commandbutton,8,"Y","")
-draw_buttontext(80+16,32+16+8*16+8,8,"",spr_commandbutton,9,"U","")
+//draw_buttontext(80-16,32+16+8*16+8,8,"",spr_commandbutton,8,"Y","")
+//draw_buttontext(80+16,32+16+8*16+8,8,"",spr_commandbutton,9,"U","")
 }
 
 if commandType=12
@@ -313,8 +313,8 @@ if commandType=11 ///For Controller Setup
 
 
 draw_set_halign(fa_center) if Joystick=0 draw_text(40,32+16+8*15,oSettings.commandL[20]) else draw_text(40,32+16+8*15,oSettings.commandL[21])
-draw_buttontext(40-16,32+16+8*16+8,8,"",spr_commandbutton,8+6*commandMul,"","")
-draw_buttontext(40+16,32+16+8*16+8,8,"",spr_commandbutton,9+6*commandMul,"","")
+//draw_buttontext(40-16,32+16+8*16+8,8,"",spr_commandbutton,8+6*commandMul,"","")
+//draw_buttontext(40+16,32+16+8*16+8,8,"",spr_commandbutton,9+6*commandMul,"","")
 
 if Joystick=1
 {

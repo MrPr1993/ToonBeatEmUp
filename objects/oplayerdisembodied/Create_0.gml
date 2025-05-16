@@ -66,3 +66,4 @@ keyToGameOver=0
 keyNo=1
 keyNoCheck="A"
 
+enabled_keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890";
