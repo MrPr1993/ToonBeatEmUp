@@ -3737,6 +3737,7 @@
     {"name":"spr_slime_punch2","order":11,"path":"sprites/spr_slime_punch2/spr_slime_punch2.yy",},
     {"name":"spr_slime_shoot","order":15,"path":"sprites/spr_slime_shoot/spr_slime_shoot.yy",},
     {"name":"spr_slime_stand","order":7,"path":"sprites/spr_slime_stand/spr_slime_stand.yy",},
+    {"name":"spr_slime_tackle","order":25,"path":"sprites/spr_slime_tackle/spr_slime_tackle.yy",},
     {"name":"spr_slime_taunt","order":24,"path":"sprites/spr_slime_taunt/spr_slime_taunt.yy",},
     {"name":"spr_slime_uppercut","order":9,"path":"sprites/spr_slime_uppercut/spr_slime_uppercut.yy",},
     {"name":"spr_slimepal","order":27,"path":"sprites/spr_slimepal/spr_slimepal.yy",},

@@ -100,11 +100,25 @@ frame_set(5,5,0.1)
 frame_set(6,1,0.1) if AnimFrame>6.5 canmove=1
 }
 
-
+	if anim=12223 ///Slime Tackle
+{ hit=0  bombRecharge=choose(320,340,360,380,400)
+sprite_index=spr_slime_tackle MoveType=1 damage=0.2
+image_speed=0
+atkcol_set(0,0,-8,1.5,1,50)
+frame_set(0,0,0.2)
+frame_set(1,1,0.2)
+frame_set(2,2,0.1)
+frame_set(3,3,0.25)
+frame_set(4,4,0.25)
+if AnimFrame=5
+{AnimFrame=6 ground=0 sentflying=7*image_xscale zSpeed=-6 recovery=2 atk=1 
+}
+if AnimFrame>=6 {image_index+=0.25 if image_index>=9 image_index=5 if ground{atk=0 selfatk.atk=0 sentflying=0 AnimFrame=0 anim=60}}
+}
 	
 	///Instantly Tech From Fall
 	if anim=60
-	{thrownAtk=0 Throw=0
+	{thrownAtk=0 Throw=0 atk=0
 	if AnimFrame=0 sprite_index=ThrownSpr
 	frame_set(0,9,0.25) if AnimFrame=1 sprite_index=spr_slime_down
 	frame_set(1,4,0.25)
@@ -126,7 +140,7 @@ sentflying=lerp(sentflying,0,0.1)
 	if current_pal=1 or current_pal=5 if anim=11  anim=12222
 	
 	if anim=11 if current_pal=5 anim=choose(11,12)
-	
+	if anim=12 if current_pal=2 anim=12223
 	
 	}
 	//if distance_to_point(targetEnemy.x,targetEnemy.y)>60
