@@ -1,7 +1,7 @@
 if act=1
 {
 if active=0
-if oPlayer.x=clamp(oPlayer.x,x-32,x+32) and oPlayer.y=clamp(oPlayer.y,y-32,y+32) 
+if collision_rectangle(x-32,y-32,x+32,y+32,oPlayer,0,1)
 {if selfswing=1
 active=1
 }

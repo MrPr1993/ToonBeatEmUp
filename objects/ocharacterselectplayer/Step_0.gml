@@ -251,6 +251,10 @@ if (key_LT and key_RTh) or (key_RT and key_LTh)
 	//if controlNO!=1 
 	PlaySoundNoStack(snd_picked)
 }
+if key_B or key_cancel
+{
+ input_source_clear(controlNO-1);
+}
 }
 }
 

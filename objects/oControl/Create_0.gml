@@ -1,7 +1,7 @@
 room_speed=60
 
 roomfast=0
-
+carMode=0;
 triggerarcadesave=0;
 
 showtimehit=0;

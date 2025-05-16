@@ -1,8 +1,11 @@
 active=0
 
+playernumber=0;
 playernear=0
 
 selfID="WaveSet1"
+
+playerClosest=oPlayer;
 
 ////Here to set up your enemies to spawn
 timeline=tm_blank

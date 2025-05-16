@@ -215,7 +215,7 @@ if PenemyHPflash[i]=0 PenemyHPflash[i]=2 else PenemyHPflash[i]-=0.5}
 }
 
 ////HP overlay
-gpu_set_blendmode_ext(bm_dest_color,bm_src_color)
+
 //if Penemymaxhp[i]<=0.25
 //draw_sprite_part_ext(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48,0.25,1,c_white,1)
 //else if Penemymaxhp[i]<=0.5
@@ -226,7 +226,7 @@ gpu_set_blendmode_ext(bm_dest_color,bm_src_color)
 //draw_sprite_part(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48)
 //var maxbar=((1/45)*(Penemymaxhp[i]*45))-round(-0.5+Penemyhp[i]); maxbar=clamp(maxbar,0,1)
 if Penemyhp[i]>=0
-{
+{gpu_set_blendmode_ext(bm_dest_color,bm_src_color)
 var hpscale=(Penemymaxhp[i]); hpscale=clamp(hpscale,0,1);
 draw_sprite_ext(spr_enemyhpbar,0,26,48,hpscale,1,0,c_white,1)
 gpu_set_blendmode(bm_normal)
@@ -405,7 +405,7 @@ draw_set_alpha(1) draw_set_color(c_white)
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 
-if continueScreen=200 ///Character Select
+if continueScreen=200 ///Character Select - UNUSED
 {
 if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 

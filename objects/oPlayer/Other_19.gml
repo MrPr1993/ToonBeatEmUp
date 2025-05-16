@@ -42,6 +42,7 @@ alarm[4]=2
 
 hspeed=0
 
+areaEntry=0
 cutSpawn=0
 sentflying=0
 fallHole=0
