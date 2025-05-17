@@ -522,14 +522,16 @@ instance_create(0,0,oSpotlightFX)
 
 playerFrom=1;
 
+    Penemyid=-1;
 	Pshowhp[4]=0
-	Penemyhp[4]=0 PhpLerp[4]=0 Penemymaxhp[4]=0
+	Penemyhp[4]=0 PhpLerp[4]=0 Penemymaxhp[4]=0 PenemyhpD[4]=0
 	PenemyPortraitSpr[4]=0
 	PenemyPortraitIndex[4]=0
 	Penemyname[4]=0
 	PenemyShowTime[4]=0
 	PhpLerp[4]=0
 	Penemyhplayer[4]=0
+	PenemyIDtag[4]=0
 	PenemyID[4]=0
 	Pcurrent_pal[4]=0
 	Pmy_pal_sprite[4]=0
@@ -770,6 +772,7 @@ TextDialogue=""
 BossHPID=-1
 BossHPName="LADY WOLF"
 BossHP=0
+BossHPD=0;
 BossHPMax=0
 BossHPSub=2
 

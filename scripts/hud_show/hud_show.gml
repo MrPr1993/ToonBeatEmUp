@@ -11,6 +11,12 @@ function hud_show() {
 	oControl.Pshowhp[_maxplayer]=showhp
 
 	oControl.Penemyhp[_maxplayer]=hp oControl.PhpLerp[_maxplayer]=hp oControl.Penemymaxhp[_maxplayer]=maxhp
+	
+	if oControl.PenemyIDtag[_maxplayer]!=id
+	{oControl.PenemyIDtag[_maxplayer]=id;
+	oControl.PenemyhpD[_maxplayer]=hp
+	}
+	
 	oControl.PenemyPortraitSpr[_maxplayer]=enemyPortraitSpr
 	oControl.PenemyPortraitIndex[_maxplayer]=enemyPortraitIndex
 	oControl.Penemyname[_maxplayer]=name

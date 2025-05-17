@@ -1,5 +1,14 @@
 /// @description Insert description here
 //Feather disable all
+var i=0;
+repeat(4)
+{
+if PenemyhpD[i]!=clamp(PenemyhpD[i],Penemyhp[i]-0.05,Penemyhp[i]+0.05)
+{
+if PenemyhpD[i]>Penemyhp[i] PenemyhpD[i]-=0.025 else PenemyhpD[i]+=0.025
+}else PenemyhpD[i]=Penemyhp[i]
+i+=1;
+}
 
 //Scan for new input from a new source, and assign it to an unconnected player
 var _new_source = input_source_detect_new();

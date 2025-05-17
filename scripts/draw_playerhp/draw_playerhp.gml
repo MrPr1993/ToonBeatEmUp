@@ -280,8 +280,8 @@ else
 ////PLAYER STATS
 draw_sprite(spr_hud,0,0,0)	
 
-if hp>0
-draw_sprite_part_ext(spr_hpbar,character,0,0,(hp/maxhp)*44,6,25,21,1,1,c_white,1)
+if hpD>0
+draw_sprite_part_ext(spr_hpbar,character,0,0,(hpD/maxhp)*44,6,25,21,1,1,c_white,1)
 //draw_sprite_part_ext(spr_hpbar,character,0,0,44*hp,6,25,21,1,1,c_white,1)
 pal_swap_set(my_pal_sprite,current_pal,false);
 draw_sprite(spr_playerface,character,2,8)

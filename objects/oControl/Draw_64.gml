@@ -175,40 +175,40 @@ draw_sprite_part_ext(spr_enemyhpbase,0,0,0,1,12,25,48-1,(Penemymaxhp[i]*45),1,c_
 //draw_rectangle(25-1,48-1,25+(Penemymaxhp[i]*45)+1,48+8+1,false)
 
 }
-if Penemyhp[i]>=0{///HP Layers
+if PenemyhpD[i]>=0{///HP Layers
 if Penemymaxhp[i]>1
 {
-if Penemyhp[i]<=1
-{draw_set_color(c_yellow)draw_rectangle(25,48,25+(Penemyhp[i]*45),48+7,false)}
-if Penemyhp[i]>1 if Penemyhp[i]<=2
+if PenemyhpD[i]<=1
+{draw_set_color(c_yellow)draw_rectangle(25,48,25+(PenemyhpD[i]*45),48+7,false)}
+if PenemyhpD[i]>1 if PenemyhpD[i]<=2
 {draw_set_color(c_yellow) draw_rectangle(25,48,25+(1*45),48+7,false)
-draw_set_color(c_orange)draw_rectangle(25,48,25+((Penemyhp[i]-1)*45),48+7,false)}
-if Penemyhp[i]>2 if Penemyhp[i]<=3
+draw_set_color(c_orange)draw_rectangle(25,48,25+((PenemyhpD[i]-1)*45),48+7,false)}
+if PenemyhpD[i]>2 if PenemyhpD[i]<=3
 {draw_set_color(c_orange) draw_rectangle(25,48,25+((1)*45),48+7,false)
-draw_set_color(c_blue)draw_rectangle(25,48,25+((Penemyhp[i]-2)*45),48+7,false)}
-if Penemyhp[i]>3 if Penemyhp[i]<=4
+draw_set_color(c_blue)draw_rectangle(25,48,25+((PenemyhpD[i]-2)*45),48+7,false)}
+if PenemyhpD[i]>3 if PenemyhpD[i]<=4
 {draw_set_color(c_blue) draw_rectangle(25,48,25+(1*45),48+7,false)
-draw_set_color(c_green)draw_rectangle(25,48,25+((Penemyhp[i]-3)*45),48+7,false)}
-if Penemyhp[i]>4 if Penemyhp[i]<=5
+draw_set_color(c_green)draw_rectangle(25,48,25+((PenemyhpD[i]-3)*45),48+7,false)}
+if PenemyhpD[i]>4 if PenemyhpD[i]<=5
 {draw_set_color(c_green) draw_rectangle(25,48,25+(1*45),48+7,false)
-draw_set_color(c_olive)draw_rectangle(25,48,25+((Penemyhp[i]-4)*45),48+7,false)}
-if Penemyhp[i]>5 if Penemyhp[i]<=6
+draw_set_color(c_olive)draw_rectangle(25,48,25+((PenemyhpD[i]-4)*45),48+7,false)}
+if PenemyhpD[i]>5 if PenemyhpD[i]<=6
 {draw_set_color(c_olive) draw_rectangle(25,48,25+(1*45),48+7,false)
-draw_set_color(c_navy)draw_rectangle(25,48,25+((Penemyhp[i]-5)*45),48+7,false)}
-if Penemyhp[i]>6 if Penemyhp[i]<=7
+draw_set_color(c_navy)draw_rectangle(25,48,25+((PenemyhpD[i]-5)*45),48+7,false)}
+if PenemyhpD[i]>6 if PenemyhpD[i]<=7
 {draw_set_color(c_navy) draw_rectangle(25,48,25+(1*45),48+7,false)
-draw_set_color(c_maroon)draw_rectangle(25,48,25+((Penemyhp[i]-6)*45),48+7,false)}
-if Penemyhp[i]>7 if Penemyhp[i]<=8
+draw_set_color(c_maroon)draw_rectangle(25,48,25+((PenemyhpD[i]-6)*45),48+7,false)}
+if PenemyhpD[i]>7 if PenemyhpD[i]<=8
 {draw_set_color(c_maroon) draw_rectangle(25,48,25+(1*45),48+7,false)
-draw_set_color(c_gray)draw_rectangle(25,48,25+((Penemyhp[i]-7)*45),48+7,false)}
-if Penemyhp[i]>8 if Penemyhp[i]<=9
+draw_set_color(c_gray)draw_rectangle(25,48,25+((PenemyhpD[i]-7)*45),48+7,false)}
+if PenemyhpD[i]>8 if PenemyhpD[i]<=9
 {draw_set_color(c_gray) draw_rectangle(25,48,25+(1*45),48+7,false)
-draw_set_color(c_dkgray)draw_rectangle(25,48,25+((Penemyhp[i]-8)*45),48+7,false)}
-if Penemyhp[i]>9{draw_set_color(c_dkgray) draw_rectangle(25,48,25+(1*45),48+7,false)
-draw_set_color(c_black)draw_rectangle(25,48,25+((Penemyhp[i]-9)*45),48+7,false)}
+draw_set_color(c_dkgray)draw_rectangle(25,48,25+((PenemyhpD[i]-8)*45),48+7,false)}
+if PenemyhpD[i]>9{draw_set_color(c_dkgray) draw_rectangle(25,48,25+(1*45),48+7,false)
+draw_set_color(c_black)draw_rectangle(25,48,25+((PenemyhpD[i]-9)*45),48+7,false)}
 }
 else
-{draw_set_color(c_yellow)draw_rectangle(25,48,25+(Penemyhp[i]*45),48+7,false)}
+{draw_set_color(c_yellow)draw_rectangle(25,48,25+(PenemyhpD[i]*45),48+7,false)}
 }
 {if Penemyhplayer[i]=0
 if PenemyHPflash[i]=0 PenemyHPflash[i]=2 else PenemyHPflash[i]-=0.5}
@@ -224,10 +224,11 @@ if PenemyHPflash[i]=0 PenemyHPflash[i]=2 else PenemyHPflash[i]-=0.5}
 //draw_sprite_part_ext(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48,0.75,1,c_white,1)
 //else
 //draw_sprite_part(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48)
-//var maxbar=((1/45)*(Penemymaxhp[i]*45))-round(-0.5+Penemyhp[i]); maxbar=clamp(maxbar,0,1)
-if Penemyhp[i]>=0
+//var maxbar=((1/45)*(Penemymaxhp[i]*45))-round(-0.5+PenemyhpD[i]); maxbar=clamp(maxbar,0,1)
+
 {gpu_set_blendmode_ext(bm_dest_color,bm_src_color)
 var hpscale=(Penemymaxhp[i]); hpscale=clamp(hpscale,0,1);
+if PenemyhpD[i]>=0
 draw_sprite_ext(spr_enemyhpbar,0,26,48,hpscale,1,0,c_white,1)
 gpu_set_blendmode(bm_normal)
 draw_sprite(spr_enemyhpbase,0,25+(hpscale*45),48-1)
@@ -263,54 +264,6 @@ else PenemyHPflash[i]=0
 draw_set_color(c_white)
 d3d_transform_set_identity()
 
-
-if BossHPID!=-1
-{
-if !instance_exists(BossHPID) {BossHPID=-1 exit;}
-
-if BossHPID.dead=1 {BossHPID=-1 exit;}
-
-if BossHPID.hp<=0 and BossHPID.hplayer=0 {BossHPID=-1 exit;}
-
-draw_set_halign(fa_center); draw_set_valign(fa_top);
-draw_set_font(global.scorefont)
-draw_set_color(c_white)///Enemy Name Here
-draw_text(160,240-32,string_hash_to_newline(BossHPName)) draw_set_font(-1)
-
-draw_sprite(spr_bosshpbase,0,64,240-24)
-
-//draw_set_color(c_white)
-//draw_rectangle(64,240-24,320-64,240-16,false)
-//draw_set_color(c_black)
-//draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-
-BossHP=BossHPID.hp
-
-if BossHPID.hplayer=0
-{draw_set_color(c_yellow)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=1{draw_set_color(c_yellow) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_orange)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=2{draw_set_color(c_orange) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_blue)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=3{draw_set_color(c_blue) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_green)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=4{draw_set_color(c_green) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_olive)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=5{draw_set_color(c_olive) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_navy)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=6{draw_set_color(c_navy) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_maroon)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=7{draw_set_color(c_maroon) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_gray)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=8{draw_set_color(c_gray) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_dkgray)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-if BossHPID.hplayer=9{draw_set_color(c_dkgray) draw_rectangle(64+1,240-24+1,320-64-1,240-16-1,false)
-draw_set_color(c_black)draw_rectangle(64+1,240-24+1,64-1+192*BossHP,240-16-1,false)}
-
-draw_set_halign(fa_left)
-
-
-}
 
 draw_set_color(c_white)
 
@@ -616,8 +569,13 @@ draw_set_halign(fa_left)
 
 if bossID!=-1 if !instance_exists(bossID) bossID=-1;
 else
-if bossID.hp>=0
+if BossHPD>=0//bossID.hp>=0
 {
+if BossHPD!=clamp(BossHPD,bossID.hp-0.05,bossID.hp+0.05)
+{
+if BossHPD>bossID.hp BossHPD-=0.025 else BossHPD+=0.025
+}else BossHPD=bossID.hp
+
 {
 ///Boss Name and Bar
 draw_set_halign(fa_center); draw_set_valign(fa_top);
@@ -630,8 +588,8 @@ draw_text(160,240-24,string_hash_to_newline(bossID.name)) draw_set_font(-1)
 draw_sprite(spr_bosshpbase,0,32-1,226-1)
 
 draw_set_color(c_yellow) draw_set_alpha(1) 
-if bossID.hp!=0
-draw_rectangle(160-128,240-24+10,160-128+((bossID.hp/bossID.maxhp)*256),240-24+14,false)
+if bossID.hpD>0
+draw_rectangle(160-128,240-24+10,160-128+((BossHPD/bossID.maxhp)*256),240-24+14,false)
 
 ////HP overlay
 draw_set_alpha(1)

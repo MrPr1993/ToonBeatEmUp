@@ -1,3 +1,7 @@
+if hpD!=clamp(hpD,hp-0.05,hp+0.05)
+{
+if hpD>hp hpD-=0.025 else hpD+=0.025
+}else hpD=hp
 
 if controlNO=1
 {current_pal=global.p1Pal;
