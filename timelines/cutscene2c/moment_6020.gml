@@ -186,7 +186,7 @@ y=0 hspeed=-4 image_xscale=1
 x=0
 }
 
-x=-500 y=193 sprite_index=spr_trainzoom hspeed=0.5
+x=-500*5 y=193 sprite_index=spr_trainzoom hspeed=0.5*5
 
 with oControl {cutscenename="SOFIA" cutsceneline="I CALL DIBS ON THE COAL!"}}
 
@@ -196,7 +196,7 @@ with oControl {cutscenename="HINA" cutsceneline="I'LL GIVE IT MORE FIRE."}}
 if scenetime=540{
 with oControl {cutscenename="BAHATI" cutsceneline="HEY ARE YOU SURE YOU KNOW WHAT YOU'RE DOING?!"}}
 
-if scenetime=720{ hspeed=3
+if scenetime=720{ hspeed=3*5
 with oControl {cutscenename="VIVA" cutsceneline="AHHHHH WE DON'T WE DON'T!"}}
 
 if scenetime>=720 oControl.quakeFXTime=10
@@ -317,7 +317,7 @@ with oCameoChar if sprite_index=spr_cowboy_stand {image_xscale=1 hspeed=2 image_
 if scenetime=1820{ x=0 y=0
 with oControl {
 		with actor1 {AnimFrame=6}
-	with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2} cutscenename="BAHATI" cutsceneline="HEY VIVA ANYTHING IN THE NOTE THAT WOLF WOMAN LEFT?"}
+	with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=-2 image_xscale=-1} cutscenename="BAHATI" cutsceneline="HEY VIVA ANYTHING IN THE NOTE THAT WOLF WOMAN LEFT?"}
 }
 if scenetime=2120{ x=0 y=0
 with oControl {
@@ -325,13 +325,13 @@ with oControl {
 	cutscenename="VIVA" cutsceneline="LOOKS LIKE THIS TRAIN IS HEADED TO THIS PLACE CALLED THE LUCKY DOJO CASINO."}
 }
 if scenetime=2420{ x=0 y=0
-with oControl {with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2} cutscenename="SOFIA" cutsceneline="I HEARD OF THAT PLACE! IT'S GOT NINJA BUNNYGIRLS! I WANT TO FIGHT ONE!"}
+with oControl {with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=-2 image_xscale=-1} cutscenename="SOFIA" cutsceneline="I HEARD OF THAT PLACE! IT'S GOT NINJA BUNNYGIRLS! I WANT TO FIGHT ONE!"}
 }
 if scenetime=2660{ x=0 y=0
 with oControl {with actor1 {sprite_index=spr_viva_cutscene image_index=0} cutscenename="VIVA" cutsceneline="AND WE WILL TO GET OUR ANSWERS ABOUT OUR STOLEN STUFF."}
 }
 if scenetime=2880{ x=0 y=0
-with oControl {with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2} cutscenename="VIVA" cutsceneline="COME ON. LET'S TAKE A SEAT. I GOTTA ORDER ME COMFORT FOOD."}
+with oControl {with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=-2 image_xscale=-1} cutscenename="VIVA" cutsceneline="COME ON. LET'S TAKE A SEAT. I GOTTA ORDER ME COMFORT FOOD."}
 }
 if scenetime=3220{ x=0 y=0
 with oControl {
@@ -340,7 +340,7 @@ with oControl {
 sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
 	
-	with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=2} cutscenename="VIVA" cutsceneline="A LOT OF IT."}
+	with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=-2 image_xscale=-1} cutscenename="VIVA" cutsceneline="A LOT OF IT."}
 }
 
 if scenetime=3320
@@ -350,9 +350,9 @@ layer_set_visible("TrainPart1",0)
 layer_set_visible("TrainPart2",0)
 layer_set_visible("Sky2",1)
 
-x=-500 y=193
+x=-500*5 y=193
 	
-sprite_index=spr_trainzoom hspeed=1
+sprite_index=spr_trainzoom hspeed=5
 	
 with oControl {cutscenename="" cutsceneline=""
 	with flashscreen instance_destroy();

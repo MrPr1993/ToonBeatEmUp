@@ -2,10 +2,10 @@
   "$GMSprite":"",
   "%Name":"spr_mermaidcutscene_clam_lookmountain",
   "bboxMode":0,
-  "bbox_bottom":129,
+  "bbox_bottom":238,
   "bbox_left":0,
-  "bbox_right":157,
-  "bbox_top":65,
+  "bbox_right":319,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":130,
+  "height":240,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"9ac0c41f-9458-4db3-a3f6-12083f9b185a","blendMode":0,"displayName":"default","isLocked":false,"name":"9ac0c41f-9458-4db3-a3f6-12083f9b185a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -63,12 +63,16 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":240.0,
+    "seqWidth":320.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","path":"sprites/spr_mermaidcutscene_clam_lookmountain/spr_mermaidcutscene_clam_lookmountain.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ad2e76c0-66ba-46b0-9604-f9490deea20a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","path":"sprites/spr_mermaidcutscene_clam_lookmountain/spr_mermaidcutscene_clam_lookmountain.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ad2e76c0-66ba-46b0-9604-f9490deea20a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -84,5 +88,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":159,
+  "width":320,
 }

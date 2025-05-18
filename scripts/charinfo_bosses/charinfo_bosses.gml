@@ -59,10 +59,10 @@ charinfo_set(12,spr_twoheads_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,s
    case 9:
    enemyID=160
  charinfo_set(12,spr_duck_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,39,"DIXIE",
- "The carnival's biggest attraction. She is a wacky duck toy person... thing. She is a little insane. Quack.") break;
+ "The carnival's ringmaster. She is a wacky duck toy person... thing. She is a little insane. Quack.") break;
     case 10: enemyID=161 idlestyle=1
  charinfo_set(12,spr_octopus_stand,1,animsetup_enemy,draw_swing_2,spr_enemypal,0,spr_enemyface,40,"LARRY",
- "An octopus who is the a pet who is protective of their master and will take care of interlopers with their tentacles.")
+ "An octopus who is the pet who is protective of their master and will take care of interlopers with their tentacles.")
   
 var watchtarget=0;
 watchtarget=point_direction(x,y,x,y+16) weaponBack=1
@@ -73,7 +73,7 @@ break;
   
   case 11: enemyID=162 idlestyle=0
  charinfo_set(12,spr_seaweed_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,41,"CIRCE",
- "A sea witch living in a cave who enjoys ompany as long as they don't cause harm. Otherwise, she'll give tham a spankin'.") break;
+ "A sea witch living in a cave who enjoys ompany as long as they don't cause harm. Otherwise, she'll give them a spankin'.") break;
    case 12: enemyID=163
  charinfo_set(12,spr_martianb_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,spr_enemyface,54,"KWINN",
  "She is the captain of a crew from space. They are pirates. Space Pirates! And they will crush you with their space arsenal!") break;
