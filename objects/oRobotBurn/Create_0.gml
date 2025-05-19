@@ -2,7 +2,7 @@ enemy_data()
 ///This enemy has a pretty different moveset. You can change their settings here
 
 specialFX=0
-name="MR.BURNS"
+name="MR.HEAT"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=4
 chardraw=draw_robot;

@@ -88,7 +88,7 @@ if scenetime=340
 {
 with oControl
 {
-with oControl {cutscenename="SOFIA" cutsceneline= "How?! We're thousands of feet from the ground!"
+with oControl {cutscenename="SOFIA" cutsceneline= "How?! We're thousands of feet above the ground!"
 }
 }
 }
@@ -112,7 +112,7 @@ if scenetime=660
 {
 vspeed=0.1 image_speed=0.01 y=-64
 sprite_index=spr_cutscene6c0
-with oControl {cutscenename="FIONA" cutsceneline= "You meanies! Why did you hurt me?! You beat my pretty face!"
+with oControl {cutscenename="FIONA" cutsceneline= "You meanies! Why did you hurt me?! You bruised my pretty face!"
 }
 }
 
@@ -120,28 +120,28 @@ if scenetime=960
 {y=0 image_speed=0 image_index=0 vspeed=0
 sprite_index=spr_divasfeelbad
 	
-with oControl {cutscenename="FIONA" cutsceneline= "Now I won't be able to find my future husband! Waaaaah!"
+with oControl {cutscenename="FIONA" cutsceneline= "Now I'll never find my future husband! Waaaaah!"
 }
 }
 
 if scenetime=1200
 {
-with oControl {cutscenename="VIVA" cutsceneline= "Now I feel terrible."}
+with oControl {cutscenename="VIVA" cutsceneline= "Okay now I feel terrible..."}
 }
 
 if scenetime=1460
 {sprite_index=spr_divasfeelbad image_index=1
-with oControl {cutscenename="BAHATI" cutsceneline= "I got this."}
+with oControl {cutscenename="BAHATI" cutsceneline= "I've got this."}
 }
 
 if scenetime=1700
 {sprite_index=spr_dragoncalming
-with oControl {cutscenename="BAHATI" cutsceneline= "Hey sorry for us beating you up, we were defending ourselves."}
+with oControl {cutscenename="BAHATI" cutsceneline="Sorry for the bruises, we only meant to defend ourselves."}
 }
 
 if scenetime=1900
 {image_index=1
-with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know a good way to fix your face. And you can help us leave this castle."}
+with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know how to fix up your face. And you can help us leave the castle."}
 }
 
 if scenetime=2200
@@ -157,18 +157,18 @@ if scenetime=2700
 with flashscreen instance_destroy();
 	
 sprite_index=spr_dragonpicking image_index=0
-with oControl {cutscenename="FIONA" cutsceneline= "SNIFF! Oh, this is great! I love it so much! Just wait until I find a new husband! Thank you chunky yellow ladybug!"
+with oControl {cutscenename="FIONA" cutsceneline= "SNIFF! Oh, this is wonderful! I adore it! Just wait until I find my soulmate! Thank you, chunky yellow ladybug!"
 }
 }
 
 if scenetime=3100
 {image_index=1
-with oControl {cutscenename="BAHATI" cutsceneline= "And this is how being nice is, Viva. Helping helps."}
+with oControl {cutscenename="BAHATI" cutsceneline= "This is why being nice helps, Viva. It's called 'karma'."}
 }
 
 if scenetime=3350
 {image_index=1
-with oControl {cutscenename="VIVA" cutsceneline= "Right... okay now she's taking us, and-why is she heading to the window?"}
+with oControl {cutscenename="VIVA" cutsceneline= "Right... I guess you have a point-why is she heading toward the window?"}
 }
 
 if scenetime=3450
@@ -182,7 +182,7 @@ sprite_index=spr_windowthrow image_index=0
 
 with actor5 {shadow=-1 }
 	
-with oControl {cutscenename="FIONA" cutsceneline= "Here you go! Fly away, pretty bug ladies!"
+with oControl {cutscenename="FIONA" cutsceneline= "Here you go! Fly, pretty bug ladies!"
 }
 }
 
@@ -192,18 +192,18 @@ with actor6 {sprite_index=spr_divasfall shadow=-1 image_xscale=2 image_yscale=2 
 	newscript=function() {if image_xscale>0 {image_xscale-=0.01 image_yscale-=0.01}}
 	}
 	
-with oControl {cutscenename="VIVA" cutsceneline= "Oh you gotta be KIDDING ME! WE'RE NOT BUUUUUUUUUUUUUUUGSSSSS!!!!"}
+with oControl {cutscenename="VIVA" cutsceneline= "Oh you've gotta be KIDDING ME! WE'RE NOT BUUUUUUUUUUUUUUUGSSSSS!!!!"}
 }
 
 if scenetime=4000
 {sprite_index=spr_dragonoopsies
-with oControl {cutscenename="FIONA" cutsceneline= "They don't fly...? Oops..."
+with oControl {cutscenename="FIONA" cutsceneline= "They can't fly...? Oops..."
 }
 }
 
 if scenetime=4250
 {sprite_index=spr_dragonoopsies
-with oControl {cutscenename="FIONA" cutsceneline= "Well... they kinda deserve it for hurting me but... ooooh..."
+with oControl {cutscenename="FIONA" cutsceneline= "Well... they DID hurt me but... Ooh dear..." 
 }
 }
 
@@ -235,3 +235,5 @@ canSkipCutscene=2
 
 
 arcade_saving(CutsceneStage)
+
+

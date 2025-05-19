@@ -15,7 +15,7 @@ with en7
 {instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 my_pal_sprite=spr_plantpal;
 	shellSpawnSpd=0.25 spawnSprFX=spr_plant_rise hidden=1; image_xscale=-1;
 	spawnFall=spr_plant_stand	spawnEnemy=oPlant
-	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 spawnX=0  enemy_switch("FAUNA",0)
+	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 spawnX=0  enemy_switch("PETI",0)
 	}
 
 }

@@ -171,3 +171,31 @@ canSkipCutscene=2
 
 arcade_saving(CutsceneStage)
 
+
+
+//SYNTHESA: "Oh, you all going somewhere~?"
+//VIVA: "Uhh yeah? We're getting outta here ya crazy weed!"
+//SYNTHESA: "Weed?! How rude!"
+//BAHATI: "yeah that was Rude Viva. Especially towards royalty."
+//SYNTHESA: "Yes. But all that brawling was so much fun! Let's go another round!"
+//SOFIA: "Yeah, no. We're outta here, menina planta."
+//HINA: "If you'll just excuse us..."
+//Vines surround them as soon they walk away
+//SYNTHESA: "Ohohoho~ Nonono, you lot are going nowhere... You belong to me now!"
+//The divas see plant monsters and humanoids pop up
+//"JOIN OUR KINGDOM! JOIN OUR KINGDOM!"
+//Synthesa turns gigantic and monstrous.
+//SYNTHESA: "AND BECOME ONE OF US!"
+//The divas break through the vines in a panic
+//VIVA: "She can't be serious! Run!!"
+//They look back and see that Synthesa is slowing down. The background goes dark. After a moment, they look back and see Synthesa stopped chasing them.
+//VIVA: "I think they stopped."
+//SOFIA: "Did they just gave up?"
+//BAHATI "It's too bad. Her place was well decorated!"
+//HINA: "Question!"
+//VIVA: "Yes, Hina?"
+//HINA: "Can we fly?"
+//VIVA: "Why do you ask...?"
+//The lights go on and they realize they're standing in midair
+//VIVA: "...Son of a..."
+//The divas fall into the depth below, leading to the lab level

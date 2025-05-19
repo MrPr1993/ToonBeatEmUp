@@ -21,7 +21,7 @@ turn0=-1
 enemytype0=oHarpyE//  turn0=-1 name0="MORTI" hp0=0.15 pal0=2 palS0=spr_zombiepal;
 enemytype1=oHarpyE turn1=-1 name1="ICARA"
 enemytype2=oBear turn2=-1 name2="PADDY"
-enemytype3=oBear turn2=-1 name2="RONI"
+enemytype3=oBear turn2=-1 name2="MONO"
 enemyMax=3
 }
 }

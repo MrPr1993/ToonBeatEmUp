@@ -141,7 +141,7 @@ desc="THIS BIG, FANCY BOT\n"+
 if dataPal=2
 {current_pal=2
 	robotArmRsprite=spr_robot_flame
-	name="MR.BURNS"
+	name="MR.HEAT"
 desc="THIS LARGE ROBOT\n"+
 	 "WILL BURN YOU TO DUST\n"+
 	 "WITH THEIR TRUSY, BUT\n"+

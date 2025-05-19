@@ -31,7 +31,7 @@ enemyMax=1
 	 }
 
  en3=instance_create_depth(6334,192,-1,oEntrySeat) en3.rangeX=6276-60
- with en3 {sittingSpr=spr_bear_hang2 spawnFall=spr_bear_front z=-64 spawnEnemy=oBear enemy_switch("RONI",0)}
+ with en3 {sittingSpr=spr_bear_hang2 spawnFall=spr_bear_front z=-64 spawnEnemy=oBear enemy_switch("MONO",0)}
 
 
 }

@@ -15,10 +15,10 @@ with en2 {image_xscale=-1 canAttack=5 alarm[1]=60
 	}	
 
 en3=instance_create(__view_get( e__VW.XView, 0)-64,208,oPlant)
-with en3 {image_xscale=1 canAttack=5 alarm[1]=60 enemy_switch("FAUNA",0)}	
+with en3 {image_xscale=1 canAttack=5 alarm[1]=60 enemy_switch("PETI",0)}	
 
 en4=instance_create(__view_get( e__VW.XView, 0)-64,260,oPlant)
-with en4 {image_xscale=1 canAttack=5 alarm[1]=60 enemy_switch("FAUNA",0)}	
+with en4 {image_xscale=1 canAttack=5 alarm[1]=60 enemy_switch("PETI",0)}	
 
 
 }

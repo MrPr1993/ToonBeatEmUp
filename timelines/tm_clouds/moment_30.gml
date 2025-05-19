@@ -19,7 +19,7 @@ with en2
 	spawnFall=spr_plant_stand	spawnEnemy=oPlant image_xscale=-1
 	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 rangeX=0
 	
-	enemy_switch("FAUNA",0)
+	enemy_switch("PETI",0)
 	}	
 	
 	

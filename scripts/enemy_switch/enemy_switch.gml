@@ -25,7 +25,7 @@ case "MS.CHILL": enemy_modify(spr_enemypal,4,"MS.CHILL",0,0.2,0.2) enemyID=16  b
 ///Ms. Swing
 case "MS.TRIG": enemy_modify(spr_swingpal,4,_name,0,0.2,0.2) enemyID=21 break;
 case "MS.DOMI": enemy_modify(spr_swingpal,6,_name,0,0.4,0.4) enemyID=22 break;
-case "MS.THRU": enemy_modify(spr_swingpal,8,_name,0,0.2,0.2) enemyID=23 break;
+case "MS.BOOM": enemy_modify(spr_swingpal,8,_name,0,0.2,0.2) enemyID=23 break;
 case "MS.BRAN": enemy_modify(spr_swingpal,10,_name,0,0.3,0.3) enemyID=24 break;
 
 
@@ -85,14 +85,14 @@ case "TEDDIE": enemy_modify(spr_bearpal,1,_name,0,0.2,0.2) enemyID=64 break;
 case "YOGI": enemy_modify(spr_bearpal,2,_name,0,0.15,0.15) enemyID=65 break;
 case "FOZZI": enemy_modify(spr_bearpal,3,_name,0,0.15,0.15) enemyID=66 break;
 case "PADDY": enemy_modify(spr_bearpal,4,_name,0,0.2,0.2) enemyID=67 break;
-case "RONI": enemy_modify(spr_bearpal,5,_name,0,0.2,0.2) enemyID=68 break;
+case "MONO": enemy_modify(spr_bearpal,5,_name,0,0.2,0.2) enemyID=68 break;
 
 ///Fairy
 case "WENDY": enemy_modify(spr_fairypal,1,_name,0,0.5,0.5) enemyID=70 break;
 case "LUSH": enemy_modify(spr_fairypal,3,_name,0,0.4,0.4) enemyID=71 break;
 
 ///Plant
-case "FAUNA": enemy_modify(spr_plantpal,1,_name,0,0.5,0.5) enemyID=73 break;
+case "PETI": enemy_modify(spr_plantpal,1,_name,0,0.5,0.5) enemyID=73 break;
 case "FOLI": enemy_modify(spr_plantpal,3,_name,0,0.7,0.7) enemyID=74 break;
 
 ///Beeatrice
@@ -162,7 +162,7 @@ case "BUCK": enemy_modify(spr_ninjapal,1,_name,0,0.8,0.8) enemyID=131 break;
 case "PESO": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=132 break;
 
 ///Knight
-case "LANCER": enemy_modify(spr_robotpal,1,_name,0,0.8,0.8) enemyID=134 break;
+case "DANIEL": enemy_modify(spr_robotpal,1,_name,0,0.8,0.8) enemyID=134 break;
 case "ARTIE": enemy_modify(spr_robotpal,2,_name,0,0.8,0.8) enemyID=135 break;
 
 
