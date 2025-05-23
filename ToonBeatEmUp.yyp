@@ -2876,6 +2876,7 @@
     {"id":{"name":"spr_dizzy","path":"sprites/spr_dizzy/spr_dizzy.yy",},},
     {"id":{"name":"spr_dog_scared","path":"sprites/spr_dog_scared/spr_dog_scared.yy",},},
     {"id":{"name":"spr_dog","path":"sprites/spr_dog/spr_dog.yy",},},
+    {"id":{"name":"spr_dojocasinobuild","path":"sprites/spr_dojocasinobuild/spr_dojocasinobuild.yy",},},
     {"id":{"name":"spr_dojocasinoplace","path":"sprites/spr_dojocasinoplace/spr_dojocasinoplace.yy",},},
     {"id":{"name":"spr_donut","path":"sprites/spr_donut/spr_donut.yy",},},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
