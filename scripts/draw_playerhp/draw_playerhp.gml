@@ -42,7 +42,7 @@ if _insertcoin
 draw_text(34,8,"PRESS\nA OR B")
 }
 else
-draw_text(34,8,"GAME\nOVER")
+draw_text(34,8,"INSERT\nCOIN")
 }
 else draw_text(34,8,"PLEASE\nWAIT")
 

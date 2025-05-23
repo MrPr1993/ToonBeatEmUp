@@ -6,7 +6,7 @@ isPaused=0
 //Draw Map
 if room=rm_map
 {
-controller_setup()
+//controller_setup()
 
 if betatest=1
 {
@@ -205,12 +205,12 @@ if gallerybuffer=0
 if -key_left pictureX-=1
 if key_right pictureX+=1
 if key_up pictureY-=1
-if key_down pictureY+=1
-if key_charge if pictureZoom<5 pictureZoom+=0.001
-if key_shield if pictureZoom>0.01 pictureZoom-=0.001
-if key_B room_goto(rm_menu)
+if -key_down pictureY+=1
+if key_Ah if pictureZoom<5 pictureZoom+=0.001
+if key_Xh if pictureZoom>0.01 pictureZoom-=0.001
+//if key_B {gallerychoosing=0 gallerybuffer=2}//room_goto(rm_menu)
 
-if key_charge and key_shield pictureZoom=0.25/3
+if key_A and key_X pictureZoom=0.25/3
 
 //if key_LB//
 if key_super if showtext=1 showtext=0 else showtext=1

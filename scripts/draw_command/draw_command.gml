@@ -13,20 +13,20 @@ if global.ConsoleType="PC"
 if commandType=0
 {
 ///Menu
-draw_buttontext(8,240-32-16,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32-16,8,"",spr_commandbutton,0,"K",commandL[0])
 draw_buttontext(8,240-32,8,"",spr_commandbutton,2,"",commandL[1])
 }
 
 if commandType=1
 {
 ///Menu
-draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"K",commandL[0])
 draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"",commandL[1]) 
 }
 
 if commandType=2
 {
-draw_buttontext_ext(8,8,8,"",spr_commandbutton,0,"J",commandL[0],0.75,1,1,1,0.75,1.0)
+draw_buttontext_ext(8,8,8,"",spr_commandbutton,0,"K",commandL[0],0.75,1,1,1,0.75,1.0)
 
 if p5.difficultymode=0
 {
@@ -49,12 +49,12 @@ draw_buttontext(320-8,240-16,8,commandL[1],spr_commandbutton,2,"","")
  if hasVariants=1
  {
 //draw_text(224+8,0,"\nPRESS J TO SWITCH\nVARIATION ("+string(dataPal)+string("/")+string(dataPalMax)+")") //Name
- draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,0,"J",commandL[3]+"\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
+ draw_buttontext(224+8-70-1,8,8,"",spr_commandbutton,0,"K",commandL[3]+"\n      ("+string(dataPal)+string("/")+string(dataPalMax)+")")
  }}
 
 if commandType=4
 {
-draw_buttontext(320-8,8,8,commandL[0],spr_commandbutton,0,"J","")
+draw_buttontext(320-8,8,8,commandL[0],spr_commandbutton,0,"K","")
 draw_buttontext(320-8,8+16,8,commandL[1],spr_commandbutton,2,"","") 
 }
 
@@ -62,7 +62,7 @@ if commandType=5
 {
 ///Menu
 draw_buttontext(8,8,8,"",spr_commandbutton,2,"",commandL[1]) 
-draw_buttontext(320-8-16,8,8,commandL[4],spr_commandbutton,0,"J","")
+draw_buttontext(320-8-16,8,8,commandL[4],spr_commandbutton,0,"K","")
 draw_buttontext(320-8,8,8,"/",spr_commandbutton,0,"L","")
 draw_buttontext(320-8,8+16,8,commandL[5],spr_commandbutton,0,"H","")
 draw_buttontext(160-16,8,8,commandL[6],spr_commandbutton,0,"Y","")
@@ -74,7 +74,7 @@ if commandType=6
 ///Menu
 if songtext=1
 {
-draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"K",commandL[0])
 draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"",commandL[1]) 
 draw_buttontext(320-8,240-32,8,commandL[8],spr_commandbutton,0,"L","")
 draw_buttontext(320-8,240-32+16,8,commandL[9],spr_commandbutton,0,"H","")
@@ -89,15 +89,15 @@ draw_buttontext(8,8+16,8,"",spr_commandbutton,2,"",commandL[10])
 if commandType=8
 {
 ///Menu
-draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"K",commandL[0])
 }
 
 if commandType=9
 {
-///Menudraw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
+///Menudraw_buttontext(8,240-32,8,"",spr_commandbutton,0,"K",commandL[0])
 ///Menu
-draw_buttontext(8,240-24-4,8,"",spr_commandbutton,0,"J",oControl.commandL[0])
-draw_buttontext(8,240-8-4,8,"",spr_commandbutton,0,"K",oControl.commandL[1])
+draw_buttontext(8,240-24-4,8,"",spr_commandbutton,0,"K",oControl.commandL[0])
+draw_buttontext(8,240-8-4,8,"",spr_commandbutton,0,"J",oControl.commandL[1])
 
 if pickedcolor=1
 draw_buttontext(45-32+32+64,184-16+8,8,"",spr_commandbutton,0,"L","",oControl.commandL[11])
@@ -127,16 +127,16 @@ draw_set_halign(fa_left)
 var atext=oControl.commandL[17]; var btext=oControl.commandL[18];
 
 if slotmachineplay=3 {atext=oControl.commandL[19]; btext=oControl.commandL[19];
-	draw_buttontext(16,240-24-4,8,"",spr_commandbutton,0,"J",atext)
+	draw_buttontext(16,240-24-4,8,"",spr_commandbutton,0,"K",atext)
 	}
 else
 {
-draw_buttontext(16,190,8,"",spr_commandbutton,0,"J",string(atext)+" 10")
+draw_buttontext(16,190,8,"",spr_commandbutton,0,"K",string(atext)+" 10")
 draw_buttontext(104,190,8,"",spr_commandbutton,0,"L",string(atext)+" 25")
 draw_buttontext(192,190,8,"",spr_commandbutton,0,"H",string(atext)+" 50")
 }
 
-draw_buttontext(160,240-24-4,8,"",spr_commandbutton,0,"K",btext)
+draw_buttontext(160,240-24-4,8,"",spr_commandbutton,0,"J",btext)
 
 draw_set_halign(fa_right)
 draw_text(128,240-24-4,string(moneyBet)+"$")
@@ -158,7 +158,7 @@ draw_set_halign(fa_center) if Joystick=0 draw_text(80,32+16+8*15,oSettings.comma
 
 if commandType=12
 {
-draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"J",commandL[0])
+draw_buttontext(8,240-32,8,"",spr_commandbutton,0,"K",commandL[0])
 draw_buttontext(8,240-32+16,8,"",spr_commandbutton,2,"",commandL[1]) 
 draw_buttontext(320-8,240-32,8,commandL[12],spr_commandbutton,0,"L","")
 }

@@ -18,7 +18,7 @@ d3d_transform_set_translation(320+MenuMoveX,0,0)
 
 
 if -key_left_pressed {if global.MinigameSetSel=0 global.MinigameSetSel=2 else global.MinigameSetSel-=1 PlaySound(snd_select)}
-if key_right_pressed {if global.MinigameSetSel=2 global.MinigameSel3=0 else global.MinigameSetSel+=1 PlaySound(snd_select)}
+if key_right_pressed {if global.MinigameSetSel=2 global.MinigameSetSel=0 else global.MinigameSetSel+=1 PlaySound(snd_select)}
 
 
 MenuText="???"

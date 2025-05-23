@@ -1,6 +1,8 @@
 function controller_setup() {
 	AttackOrItem=0
 	
+
+	
 	if canControl=0
 	{keytick=0 threshold = 0.9;
 		
@@ -83,11 +85,6 @@ else
 	if keytick=1 {
 keytick=0	
 
-key_left_pressed=0
-key_right_pressed=0
-key_up_pressed=0
-key_down_pressed=0
-
   stick_left_pressed = false;
     stick_right_pressed = false;
     stick_up_pressed = false;
@@ -97,10 +94,7 @@ key_down_pressed=0
     stick_right_released = false;
     stick_up_released = false;
     stick_down_released = false;
-}	
-
-
-
+}
 //if controlNO=1
 //for (var i=0; i<gamepad_get_device_count();i++)
 //{

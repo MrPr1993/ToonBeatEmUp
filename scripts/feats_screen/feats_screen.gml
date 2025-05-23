@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function feats_screen(){
-	controller_setup()
+	//controller_setup()
 draw_set_halign(fa_left)
 draw_set_font(global.scorefont)
 //draw_set_color(c_black) draw_set_alpha(0.75)

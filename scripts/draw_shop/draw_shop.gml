@@ -38,7 +38,7 @@ if keyboard_check_pressed(ord("8"))
 
 
 	
-controller_setup() 
+//controller_setup() 
 if room=rm_shop
 {fpsX=260 fpsY=8
 

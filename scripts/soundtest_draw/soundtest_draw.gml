@@ -4,7 +4,7 @@ function soundtest_draw(){
 if room=rm_soundtest
 {fpsY=8 if global.CurrentMusic!=-1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)
 	
-controller_setup()
+//controller_setup()
 
 draw_sprite(bg_soundtest,0,0,0)
 draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)

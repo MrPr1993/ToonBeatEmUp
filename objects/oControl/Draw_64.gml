@@ -1501,7 +1501,7 @@ credits_draw()
 
 if room=rm_howtoplay ////UNUSED
 {
-controller_setup()
+//controller_setup()
 if creditsGo=0
 {if creditsAlpha>-0.1 creditsAlpha-=0.1} else creditsAlpha+=0.1
 
@@ -1584,7 +1584,7 @@ if creditsGo=0
 {if creditsAlpha>-0.1 creditsAlpha-=0.1} else creditsAlpha+=0.1
 
 creditsTime-=1
-controller_setup()
+//controller_setup()
 /////Skip Cutscene if cutsceneMode=0
 if key_Ah or key_Bh or keyboard_check(vk_enter)
 {
@@ -1653,7 +1653,7 @@ draw_dialogue()
 ///Decision Text
 if cutscenedecision!=0
 {
-controller_setup()
+//controller_setup()
 	
 		
 	

@@ -3,7 +3,7 @@ feats_check()
 
 audio_master_gain(global.Mastervolume/100)
 
-
+controller_setup()
 
 
 if global.CurrentMusic!=-1
@@ -374,11 +374,11 @@ global.GlobalBeta=betatest
 
 if MusicFade=1 global.MusicFade-=0.01
 
-if room=rm_titlescreen
-controller_setup()
+//if room=rm_titlescreen
+//controller_setup()
 
-if room=rm_characterselect
-controller_setup()
+//if room=rm_characterselect
+//controller_setup()
 
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and  room!=rm_howtoplay and room!=rm_cutscene1

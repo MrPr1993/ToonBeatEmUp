@@ -4,27 +4,12 @@ function gallery_draw(){
 if room=rm_gallery
 {
 
-controller_setup()
+//controller_setup()
 
 if betatest
 {if keyboard_check_pressed(ord("7"))
 {
-global.Gallery[0]=1
-global.Gallery[0]=2
-global.Gallery[0]=3
-global.Gallery[0]=4
-global.Gallery[0]=5
-global.Gallery[0]=6
-global.Gallery[0]=7
-global.Gallery[0]=8
-global.Gallery[0]=9
-global.Gallery[0]=10
-global.Gallery[0]=11
-global.Gallery[0]=12
-global.Gallery[0]=13
-global.Gallery[0]=14
-global.Gallery[0]=15
-global.Gallery[0]=16
+global.Gallery[galleryNO]^=1;
 }
 }
 
@@ -32,8 +17,10 @@ global.Gallery[0]=16
 if gallerybuffer!=0 gallerybuffer-=1
 if galleryload!=0 galleryload-=1
 
+if gallerybuffer
+{
 if key_B or keyboard_check_pressed(vk_escape) {if gallerychoosing=1 {PlaySound(snd_steal) gallerychoosing=0} else room_goto(rm_menu)}
-
+}
 if gallerychoosing=0
 if galleryTime=0
 {
@@ -123,8 +110,8 @@ if galleryTime=0
 
 //display_set_gui_size(window_get_width(),window_get_height())
 	//display_set_gui_size(320,240)
-if key_taunt {if pictureNO=1 pictureNO=pictureMax else pictureNO-=1 PlaySound(snd_select)}
-if key_punchback {if pictureNO=pictureMax pictureNO=1 else pictureNO+=1 PlaySound(snd_select)}
+if key_LT {if pictureNO=1 pictureNO=pictureMax else pictureNO-=1 PlaySound(snd_select)}
+if key_RT {if pictureNO=pictureMax pictureNO=1 else pictureNO+=1 PlaySound(snd_select)}
 
 
 draw_set_font(global.scorefont) draw_set_color(c_white)
