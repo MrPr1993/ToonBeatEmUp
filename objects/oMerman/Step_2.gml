@@ -13,6 +13,7 @@ walkSpeed=0.5
 walkSpeedY=0.5
 }
 
+weaponBack=0
 
 enemy_endstep()
 throw_step()

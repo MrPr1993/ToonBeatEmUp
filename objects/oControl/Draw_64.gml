@@ -288,6 +288,17 @@ if goFrame!=0 goFrame-=0.25 else {goFrame=6 if goActive=1 PlaySound(snd_go)}
 }
 if betatest=1 and TextBeta=1
 {draw_set_halign(fa_left)
+
+if instance_exists(oEnemySpawner) with oEnemySpawner
+{
+if keyboard_check(vk_shift) and keyboard_check_pressed(ord("7"))
+{
+var _str=get_integer("Player Count Test",autoplayercount)
+_str=clamp(_str,0,4) autoplayercount=_str;
+}
+draw_text(0,96,"PLAYER COUNT:"+string(autoplayercount))
+}
+
 draw_set_color(c_black)
 draw_text_transformed(8,204,string_hash_to_newline("STRONG MODE: "+string(StrongMode)+string(" Press P to be stronk    X ")+string(oPlayer.x)+string("Y ")+string(oPlayer.y)),0.5,0.5,0)
 draw_text_transformed(8,210,string_hash_to_newline("IGNORE: "+string(oPlayer.ignore)+string(" Press I to disable enemy AI")),0.5,0.5,0)
@@ -1835,6 +1846,9 @@ draw_sprite(spr_photoplaceholder,0,0,0)
 draw_set_color(c_black) draw_set_alpha(0.5)
 }
 ////
+
+
+
 crt_fxset()
 
 

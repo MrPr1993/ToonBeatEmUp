@@ -3,8 +3,9 @@
 playernumber=0;
 if instance_exists(oPlayer)
 {with oPlayer if ContinueMode=0 oEnemySpawner.playernumber+=1;
-		
 }
+
+if autoplayercount>0 playernumber=autoplayercount;
 
 if !instance_exists(P2en1)
 and !instance_exists(P2en2)

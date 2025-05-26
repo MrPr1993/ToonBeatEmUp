@@ -485,37 +485,31 @@ var creditscameor="\n"+
 "\n"+
 "\n"
 
-////PIXELED
-//1 RJ - new gal
-//2 Wolfzeta - Blue hair gal on beach
-//3 Gatordragon - jester gal
-//4 Rovenami - Cowgirl
+///ON STAGE - needs animation
+//RJ - new gal - ON STAGE
+//SKEPTICAL - snek gal
+//Wolfzeta - Blue hair gal on beach
+//shyguywhy - Beef shark on beach
+//Nfate - Hypno gal at beach
+//Fva - demon gal
+//Rovenami - Cowgirl - train
+//toainsully - train
+//Gatordragon - jester gal
+//guiterman13 - Soda punk
+////Cryptic Draws - drink person
 //5 Gaming Eelektross - Dragon Guard sleepng on snow stage
 //6 shademanv4 - Sexy mermaid
-//8 shyguywhy - Beef shark on beach
-//9 Nfate - Hypno gal at beach
-//10 JameArts - Alice on cloud stage
 //7 Vauvenader - Underwater shark
-//guiterman13 - Soda punk
-//Fva 
 
-///New cameos: 21
-////SKETCHED
-
-
-//toainsully - 
-
-
+////PIXELED
+ //10 JameArts - Alice on cloud stage
 //Meme supreme - Chicken wrestler
-//SKEPTICAL - snek gal
 
 
+///OTHER
 //butchtheamazing - ???
-
-
 //PsychoJosh - beach Duo (unpaid)
 //TWEENIES - Buff lad (not yet paid)
-
 //Zengumi - cloudy kiss
 //Wobbleblot - cloudy kiss
 //Flash Trickstar

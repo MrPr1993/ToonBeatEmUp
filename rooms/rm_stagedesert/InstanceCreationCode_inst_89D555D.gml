@@ -1,4 +1,5 @@
-sprite_index=spr_bcameo37
+sprite_index=spr_bcameo60
+////RJ - 
 
 framespd=0.025
 
