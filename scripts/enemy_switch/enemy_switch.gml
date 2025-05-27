@@ -70,7 +70,7 @@ case "VIPERA": enemy_modify(spr_mummypal,1,_name,0,0.6,0.6) enemyID=54 break;
 
 ///Usagi
 case "NOUSAGI": enemy_modify(spr_ninjapal,2,_name,0,0.3,0.3) enemyID=56 break;
-case "KONI": enemy_modify(spr_ninjapal,4,_name,0,0.4,0.4) enemyID=57 break;
+case "KONI": enemy_modify(spr_ninjapal,4,_name,0,0.7,0.7) enemyID=57 break;
 
 ///Sake
 case "MUGI": enemy_modify(spr_ninjapal,2,_name,0,0.3,0.3) enemyID=59 break;

@@ -38,6 +38,8 @@ enC=instance_create_depth(4326,132,-1,oEntryBreak) with enC
 	{image_xscale=-1 canAttack=5 alarm[1]=40
 		enemy_switch("MUGI",0)
 		}
+	
+
 en1=instance_create(3984, 165,oEnemy1B) with en1
 {canmove=0 isIdle=1 alarm[1]=60 anim=70002 idleRange=30}
 

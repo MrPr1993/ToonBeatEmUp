@@ -296,7 +296,8 @@ if keyboard_check(vk_shift) and keyboard_check_pressed(ord("7"))
 var _str=get_integer("Player Count Test",autoplayercount)
 _str=clamp(_str,0,4) autoplayercount=_str;
 }
-draw_text(0,96,"PLAYER COUNT:"+string(autoplayercount))
+if autoplayercount!=0
+draw_text(0,96,"PLAYER COUNT:"+string(playernumber)+ "NOEXTRAENEMIES:"+string(noextraenemies))
 }
 
 draw_set_color(c_black)

@@ -52,4 +52,19 @@ depth=-y
 	if x!=clamp(x,oControl.camX-100,oControl.camX+320+100) instance_destroy()
 }
 
+
+case 3: ////Boots - Asterix type
+
+break;
+
+case 4: ////Solid bounce
+
+break;
+
+case 5: ////Paper/Leaf/Floating object
+
+break;
+
+
+
 }

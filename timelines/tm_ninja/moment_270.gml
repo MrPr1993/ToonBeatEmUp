@@ -17,6 +17,9 @@ oControl.time=99
 en1=instance_create(3000-320,214-16,oEntryTeleport)
 en2=instance_create(3000-320,214+16,oEntryTeleport)
 
+if playernumber>=2 P2en1=instance_create(3000-320,214,oEntryTeleport)
+if playernumber>=3 P2en2=instance_create(3000-320,214-32,oEntryTeleport)
+if playernumber>=4 P2en3=instance_create(3000-320,214+32,oEntryTeleport)
 
 }
 else

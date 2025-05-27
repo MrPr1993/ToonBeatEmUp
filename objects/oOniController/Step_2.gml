@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if hpD>hp hpD-=0.025 else hpD+=0.025
+
 if animLock=0
 {
 if mode=0

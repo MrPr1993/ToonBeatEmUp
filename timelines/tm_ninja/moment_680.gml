@@ -5,3 +5,4 @@ musicplaystart(msc_boss)
 oControl.MusicFade=0
 	
 PlaySound(snd_oni6)
+PlaySoundPitch(snd_oni6,1.2);

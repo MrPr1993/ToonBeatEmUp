@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+hpD=0;
+
+
+
 mode=0
 modetime=400
 

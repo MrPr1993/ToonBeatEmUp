@@ -16,6 +16,39 @@ with en2
 	spawnEnemy=oNinjaBun
 enemy_switch("NOUSAGI",0)
 	}
+	
+
+if playernumber>=2 {P2en2=instance_create(1902, 150,oEntryFenceJump)
+with P2en2
+{
+depth=16777215 isDepth=0 rideX=2096 xAdd=-128*2
+	spawnFall=spr_ninjabun_jump
+	moveSpr=spr_ninjabun_run rangeX=0 rangeXAdd=240
+	spawnEnemy=oNinjaBun
+enemy_switch("NOUSAGI",0)
+}}
+
+if playernumber>=3 {P2en3=instance_create(1902, 150,oEntryFenceJump)
+with P2en3
+{
+depth=16777215 isDepth=0 rideX=2096 xAdd=-128*3
+	spawnFall=spr_ninjabun_jump
+	moveSpr=spr_ninjabun_run rangeX=0 rangeXAdd=240
+	spawnEnemy=oNinjaBun
+enemy_switch("NOUSAGI",0)
+}}
+
+if playernumber>=4 {P2en4=instance_create(1902, 150,oEntryFenceJump)
+with P2en4
+{
+depth=16777215 isDepth=0 rideX=2096 xAdd=-128*4
+	spawnFall=spr_ninjabun_jump
+	moveSpr=spr_ninjabun_run rangeX=0 rangeXAdd=240
+	spawnEnemy=oNinjaBun
+enemy_switch("NOUSAGI",0)
+}}
+	
+
 }
 else
 {
