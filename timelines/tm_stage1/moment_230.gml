@@ -12,6 +12,15 @@ with en6 enemy_switch("MR.LAR",0) en6.canEvent0=0 en6.ySpeed=1.2 en6.spawnSpeedZ
 with oCameoChar if sprite_index=spr_bcameo34
 {image_index=3 anim=666 newscript=function() {image_index+=0.2 if image_index=6-0.2 image_index=4}}
 
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0 )+320+32, 196,oEnemy1)
+with P2en1 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+320+32, 196+32,oEnemy1)
+with P2en2 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+320+32, 196+64,oEnemy1)
+with P2en3 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
 }
 else
 timeline_position-=1

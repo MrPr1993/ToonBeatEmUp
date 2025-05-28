@@ -3,28 +3,29 @@
 if __view_get( e__VW.XView, 0 )>=5340-2
 {
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,200,oMerman)
-with en1 {image_xscale=-1 weapon_add("TRIDENT") 	
+with en1 {image_xscale=-1 
 	enemy_switch("ERIK",0)
-		canAttack=5 alarm[1]=60 weapon_add("SPEAR")
+		canAttack=5 alarm[1]=60 weapon_add("TRIDENT") 	
 	}
 
 en2=instance_create(__view_get( e__VW.XView, 0)-64,200,oMerman)
-with en2 {image_xscale=1 weapon_add("TRIDENT") 	
+with en2 {image_xscale=1 
 	enemy_switch("ERIK",0)
-		canAttack=5 alarm[1]=60 weapon_add("SPEAR")
-	}
-	
-en3=instance_create(__view_get( e__VW.XView, 0)+320+64,250,oMerman)
-with en3 {image_xscale=-1 weapon_add("TRIDENT") 	
-	enemy_switch("ERIK",0)
-		canAttack=5 alarm[1]=60 weapon_add("SPEAR")
+		canAttack=5 alarm[1]=60 weapon_add("TRIDENT") 	
 	}
 
-en4=instance_create(__view_get( e__VW.XView, 0)-64,250,oMerman)
-with en4 {image_xscale=1 weapon_add("TRIDENT") 	
-	enemy_switch("ERIK",0)
-		canAttack=5 alarm[1]=60 weapon_add("SPEAR")
-	}
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0 )-64, 200+24,oMerman)
+with P2en1 {canAttack=5 alarm[1]=60 image_xscale=1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )-64, 200+48,oSiren)
+with P2en2 {canAttack=5 alarm[1]=60 image_xscale=1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )-64, 200+72,oMerman)
+with P2en3 {canAttack=5 alarm[1]=60 image_xscale=1}}
+////
+
 
 }
 else

@@ -15,7 +15,7 @@ trainFX=0
 image_speed=0
 
 spawnDelay=0
-
+isBoss=-1
 hidden=0
 
 risespd=0.025

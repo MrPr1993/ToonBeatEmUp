@@ -8,9 +8,23 @@ en1=instance_create_depth(5918,128,-1,oEntryFenceJump) with en1
 	moveSpr=spr_lobster_move
 	spawnEnemy=oLobster}
 
-en2=instance_create(__view_get( e__VW.XView, 0)+320+64,210,oLobster)
+en2=instance_create(__view_get( e__VW.XView, 0)+320+64,150,oLobster)
 with en2 {image_xscale=-1 canAttack=5 alarm[1]=60
-	}	
+	}
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0 )+320+32, 150+24,oEnemy1)
+with P2en1 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+320+32, 150+48,oEnemy1B)
+with P2en2 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+320+32, 150+72,oEnemy1)
+with P2en3 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+////
+
+
+
 
 }
 else

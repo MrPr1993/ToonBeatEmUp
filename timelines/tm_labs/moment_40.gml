@@ -56,11 +56,24 @@ with en1 {rangeX=0 image_xscale=-1}
 
 en2=instance_create(1750,250,oEntryJump)
 with en2 {rangeX=0 image_xscale=-1	spawnFall=spr_burglarB_jump	spawnEnemy=oEnemy1B}	
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+64,200,oEntryJump)
+with P2en1 {rangeX=0 image_xscale=1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+64,224,oEntryJump)
+with P2en2 {rangeX=0 image_xscale=1	spawnFall=spr_burglarB_jump	spawnEnemy=oEnemy1B}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+64,248,oEntryJump)
+with P2en3 {rangeX=0 image_xscale=1}}
+////
+
+
 }
 
 if specialSet6=60 
 {
-en3=instance_create(__view_get( e__VW.XView, 0)+64,200,oFatBurglar)
+en3=instance_create(__view_get( e__VW.XView, 0)+160,200,oFatBurglar)
 with en3 {
 image_xscale=1 z=-320 canmove=0 anim=11 PlaySoundNoStack(snd_fatburglar)
 sprite_index=AtkSpr2 AnimFrame=2.9 ground=0 zSpeed=8 specialcheck2=0
@@ -84,6 +97,7 @@ with en6 {rangeX=0 image_xscale=1 	spawnFall=spr_sneak_jump	spawnEnemy=oSneak}
 
 en7=instance_create(1570,250,oEntryJump)
 with en7 {rangeX=0 image_xscale=1	spawnFall=spr_sneak_jump	spawnEnemy=oSneak}	
+
 }
 
 if specialSet6=240 
@@ -92,7 +106,19 @@ en8=instance_create(1750,190,oEntryJump)
 with en8 {rangeX=0 image_xscale=-1 spawnFall=spr_monk_jump	spawnEnemy=oMonk}	
 
 en9=instance_create(1750,250,oEntryJump)
-with en9 {rangeX=0 image_xscale=-1	spawnFall=spr_monk_jump	spawnEnemy=oMonk}	
+with en9 {rangeX=0 image_xscale=-1	spawnFall=spr_monk_jump	spawnEnemy=oMonk}
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+64,200,oEntryJump)
+with P2en1 {rangeX=0 image_xscale=1 	spawnFall=spr_monk_jump	spawnEnemy=oMonk}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+64,224,oEntryJump)
+with P2en2 {rangeX=0 image_xscale=1		spawnFall=spr_monk_jump	spawnEnemy=oMonk}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+64,248,oEntryJump)
+with P2en3 {rangeX=0 image_xscale=1 	spawnFall=spr_monk_jump	spawnEnemy=oMonk}}
+////
+
 }
 
 

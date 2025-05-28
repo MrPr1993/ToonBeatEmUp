@@ -26,6 +26,16 @@ with en9
 enemy_switch("MS.CHILL",0)
 }
 en10=instance_create(__view_get( e__VW.XView, 0 )-32,192,oSneak)
+
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0 )+320+32, 166,oEnemy1)
+with P2en1 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+320+32, 166+32,oEnemy1)
+with P2en2 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+320+32, 254,oEnemy1)
+with P2en3 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
 }
 else
 {

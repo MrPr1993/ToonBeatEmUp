@@ -1,6 +1,8 @@
 /// @description NEXT
 ////Make sure to only count the previous ones, otherwise you'll get an error.
 if oBoss1a.x>2054+64
+{
+if noextraenemies
 {with oBoss1a instance_destroy()
 
 oControl.time=99	
@@ -20,6 +22,9 @@ with oEnemySpawner if selfID="WaveSet1"
 
 spawner_followset("WaveSet1",0,2600,1)
 
+}
+else
+timeline_position-=1
 }
 else
 timeline_position-=1

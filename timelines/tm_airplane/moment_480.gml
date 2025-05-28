@@ -29,6 +29,9 @@ en4=instance_create_depth(3214+80*12+640,128+28,-1,oEntrySeat) with en4
 en5=instance_create_depth(3214+80*13+640,128+28,-1,oEntrySeat) with en5
 {depth=16777212 isDepth=0 sittingSpr=spr_femburglar_seat spawnFall=spr_femburglar_jump
 	spawnEnemy=oFemBurglar rangeX=3214+640-64+80*13 rangeXAdd=0 enemy_switch("MS.CHILL",0)}
+
+
+
 }
 else
 timeline_position-=1

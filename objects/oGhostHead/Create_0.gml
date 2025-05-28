@@ -36,6 +36,7 @@ hp=0.5
 shadow=spr_shadow
 fallHole=0
 atk=0
+hpD=0;
 
 height=64
 recovery=0

@@ -1,8 +1,11 @@
 en3=instance_create_depth(__view_get( e__VW.XView, 0 )+320+64,176,0,oEnemy1)
-with en3 enemy_switch("MR.LAR",0)
+with en3 {enemy_switch("MR.LAR",0)}
 //enemy_switch("MR.LAR",0)
 en4=instance_create_depth(__view_get( e__VW.XView, 0 )+320+32,192,0,oEnemy1)
-with en4 enemy_switch("MR.LAR",0)
+with en4 {enemy_switch("MR.LAR",0)}
+
+
+
 //enemy_switch("MR.LAR",0)
 
 with chairen instance_destroy()

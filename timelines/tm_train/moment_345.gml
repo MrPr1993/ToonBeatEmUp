@@ -11,7 +11,7 @@ riderSpr=spr_fatburglar_ride spawnEnemy=oFatBurglar
 	sprite_index=spr_fathorserun
 }
 
-en6=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16,170,0,oFatBurglar) with en6
+en6=instance_create_depth(__view_get( e__VW.XView, 0 )+320+64,170,0,oFatBurglar) with en6
 {enemy_switch("MR.WIDE",0) image_xscale=-1 canAttack=5 alarm[1]=60
 	
 		weaponspr=spr_crate

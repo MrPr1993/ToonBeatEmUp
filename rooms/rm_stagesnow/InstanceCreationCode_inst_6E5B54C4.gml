@@ -6,7 +6,7 @@ framespd=0.025
 anim=666
 
 //image_xscale=-1
-
+x-=8 y-=8
 framespd=0.1
 
 newscript=function()

@@ -11,7 +11,7 @@ depth=-5000
 
 if raintype=1
 {
-x2-=fallSpd*0.9
+x2=lengthdir_x(32,x)//-=fallSpd*0.9
 y2+=fallSpd*0.9
 //if x2=-64*0.9 {x2=0 y2=0}
 }

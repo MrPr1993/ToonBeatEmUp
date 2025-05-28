@@ -40,6 +40,7 @@ atk=0
 showhp=1
 playerNO=0
 targetID=-1;
+hpD=0;
 
 canBounce=0
 isThrow=0

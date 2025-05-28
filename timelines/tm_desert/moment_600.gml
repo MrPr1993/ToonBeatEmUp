@@ -15,6 +15,24 @@ with en2 {spawnFall=spr_dancer_sword1 sprite_index=spawnFall rangeX=0
 	spawnEnemy=oDancer image_index=4 image_xscale=-1
 	enemy_switch("RULA",0)
 	}
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+160,200,oEntryTeleport)
+with P2en1 {spawnFall=spr_dancer_sword1 sprite_index=spawnFall rangeX=0
+	spawnEnemy=oDancer image_index=4 image_xscale=-1
+	}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+160-64,200,oEntryTeleport)
+with P2en2 {spawnFall=spr_dancer_sword1 sprite_index=spawnFall rangeX=0
+	spawnEnemy=oDancer image_index=4 image_xscale=1
+	enemy_switch("RULA",0)}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+160+64,200,oEntryTeleport)
+with P2en3 {spawnFall=spr_dancer_sword1 sprite_index=spawnFall rangeX=0
+	spawnEnemy=oDancer image_index=4 image_xscale=-1
+	}}
+////
+
 }
 if boss.hp<1
 {
@@ -33,8 +51,28 @@ with en2 {spawnFall=spr_dancer_sword1 sprite_index=spawnFall rangeX=0
 	spawnEnemy=oDancer image_index=4 image_xscale=-1
 	enemy_switch("JAZMYN",0)
 	}
+	
+	
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+160,200,oEntryTeleport)
+with P2en1 {spawnFall=spr_dancer_sword1 sprite_index=spawnFall rangeX=0
+	spawnEnemy=oDancer image_index=4 image_xscale=-1
+	enemy_switch("JAZMYN",0)}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+160-64,200,oEntryTeleport)
+with P2en2 {spawnFall=spr_dancer_sword1 sprite_index=spawnFall rangeX=0
+	spawnEnemy=oDancer image_index=4 image_xscale=1
+	enemy_switch("JAZMYN",0)}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+160+64,200,oEntryTeleport)
+with P2en3 {spawnFall=spr_dancer_sword1 sprite_index=spawnFall rangeX=0
+	spawnEnemy=oDancer image_index=4 image_xscale=-1
+	enemy_switch("JAZMYN",0)}}
+////
 }
 }
 else timeline_position-=1
 }
 else timeline_position-=1
+
+

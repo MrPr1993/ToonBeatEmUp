@@ -1,26 +1,7 @@
 /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
 if __view_get( e__VW.XView, 0 )>=2614
 {
-	
-if x=-9999999999999
-{
-en1=instance_create(3328, 176,oAreaSpawner) with en1
-{
-spawnX=3328-330 ///768
-enemytype0=oZombieMan MaxSpawnFrame=0 visible=1
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-turn0=-1 enemyMax=0 current_pal=1 name="ZOMBOBBY" enemy_switch("ZOMBOBBY",0)
-}
-en2=instance_create(3664,160,oAreaSpawner) with en2
-{
-spawnX=3664-330 ///768
-enemytype0=oZombieWoman MaxSpawnFrame=0 visible=1
-name0="ZOMBELLE" pal0=1 enemy_switch("ZOMBELLE",0)
-enemytype1=oZombieMan
-FXtype=3 canDraw=0 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-turn0=-1 enemyMax=1
-}
-}
+
 
 en1=instance_create_depth(3168, 160,-1,oEntryPainting) with en1
 {rangeX=3168-160 z=-16 enemyID=48}
@@ -38,6 +19,16 @@ with en4 {canmove=0 anim=61 image_xscale=-1 idleRange=15+64}
 en5=instance_create_depth(__view_get( e__VW.XView, 0 )+320+16+16,192+16,0,oSkeleton)
 with en5 {canmove=0 anim=61 idleRange=15+16}
 
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0 )+320+32, 200,oSkeleton)
+with P2en1 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+320+32, 200+32,oSkeleton)
+with P2en2 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+320+32, 200+64,oSkeleton)
+with P2en3 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+////
 }
 else
 {

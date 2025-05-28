@@ -2704,6 +2704,7 @@
     {"id":{"name":"spr_cowboy_dizzy","path":"sprites/spr_cowboy_dizzy/spr_cowboy_dizzy.yy",},},
     {"id":{"name":"spr_cowboy_elec","path":"sprites/spr_cowboy_elec/spr_cowboy_elec.yy",},},
     {"id":{"name":"spr_cowboy_flat","path":"sprites/spr_cowboy_flat/spr_cowboy_flat.yy",},},
+    {"id":{"name":"spr_cowboy_front","path":"sprites/spr_cowboy_front/spr_cowboy_front.yy",},},
     {"id":{"name":"spr_cowboy_frozen","path":"sprites/spr_cowboy_frozen/spr_cowboy_frozen.yy",},},
     {"id":{"name":"spr_cowboy_hit","path":"sprites/spr_cowboy_hit/spr_cowboy_hit.yy",},},
     {"id":{"name":"spr_cowboy_jump","path":"sprites/spr_cowboy_jump/spr_cowboy_jump.yy",},},

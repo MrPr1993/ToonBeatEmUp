@@ -12,6 +12,17 @@ with en4 {image_xscale=-1 canAttack=5 alarm[1]=60
 	enemy_switch("WASPELLA",0)
 	}	
 
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)-64,208,oBear)
+with P2en1 {canAttack=5 alarm[1]=60 image_xscale=1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)-64,200+32,oBear)
+with P2en2 {canAttack=5 alarm[1]=60 image_xscale=1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)-64,200+60,oBear)
+with P2en3 {canAttack=5 alarm[1]=60 image_xscale=1}}
+////
+
 }
 else
 {

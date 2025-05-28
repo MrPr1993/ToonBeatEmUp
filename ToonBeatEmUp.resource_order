@@ -2349,6 +2349,7 @@
     {"name":"spr_cowboy_dizzy","order":8,"path":"sprites/spr_cowboy_dizzy/spr_cowboy_dizzy.yy",},
     {"name":"spr_cowboy_elec","order":5,"path":"sprites/spr_cowboy_elec/spr_cowboy_elec.yy",},
     {"name":"spr_cowboy_flat","order":4,"path":"sprites/spr_cowboy_flat/spr_cowboy_flat.yy",},
+    {"name":"spr_cowboy_front","order":17,"path":"sprites/spr_cowboy_front/spr_cowboy_front.yy",},
     {"name":"spr_cowboy_frozen","order":7,"path":"sprites/spr_cowboy_frozen/spr_cowboy_frozen.yy",},
     {"name":"spr_cowboy_hit","order":2,"path":"sprites/spr_cowboy_hit/spr_cowboy_hit.yy",},
     {"name":"spr_cowboy_jump","order":15,"path":"sprites/spr_cowboy_jump/spr_cowboy_jump.yy",},

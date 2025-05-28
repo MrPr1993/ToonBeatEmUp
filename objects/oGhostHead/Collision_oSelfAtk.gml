@@ -34,7 +34,7 @@ if other.hitSource.x>x image_xscale=1 else image_xscale=-1
 playerFrom=other.hitSource.playerNO
 
 	oControl.Pshowhp[playerFrom]=1
-
+    
 	oControl.Penemyhp[playerFrom]=hp oControl.PhpLerp[playerFrom]=hp oControl.Penemymaxhp[playerFrom]=maxhp
 	oControl.PenemyPortraitSpr[playerFrom]=enemyPortraitSpr
 	oControl.PenemyPortraitIndex[playerFrom]=enemyPortraitIndex

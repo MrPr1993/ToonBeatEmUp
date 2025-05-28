@@ -6,7 +6,7 @@ with en3
 en4=instance_create(__view_get( e__VW.XView, 0)-64-300,180,oEntryFenceJump)
 with en4
 {depth=16777208.5 isDepth=0 rangeXAdd=-48 xAdd=-160
-		spawnFall=spr_burglarB_front moveSpr=spr_burglarB_run spawnEnemy=oEnemy1B}
+		spawnFall=spr_cowboy_front moveSpr=spr_cowboy_move spawnEnemy=oCowboy}
 
 en5=instance_create(__view_get( e__VW.XView, 0)-64-200,180,oEntryFenceJump)
 with en5
@@ -24,6 +24,17 @@ with en6
 	enemy_switch("MR.WIDE",0)
 	}
 
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0 )-32, 200,oEnemy1)
+with P2en1 {canAttack=5 alarm[1]=30 image_xscale=1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )-32, 200+32,oEnemy1B)
+with P2en2 {canAttack=5 alarm[1]=30 image_xscale=1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )-32, 200+64,oEnemy1)
+with P2en3 {canAttack=5 alarm[1]=30 image_xscale=1}}
+////
 }
 else
 timeline_position-=1;

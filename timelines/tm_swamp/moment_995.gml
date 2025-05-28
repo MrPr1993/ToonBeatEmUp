@@ -31,7 +31,7 @@ oControl.time=99
 
 with oPlayer
 {hspeed=0
-
+shadowSpr=spr_shadow
 areaEntry=0 z=-400
 //canControl=1
 canmove=0

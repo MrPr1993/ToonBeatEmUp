@@ -7,6 +7,7 @@ and !instance_exists(en6)
 and !instance_exists(en7)
 and !instance_exists(en8)
 and !instance_exists(en9)
+and !instance_exists(en10)
 and specialSet6=300
 {
 if specialSet8=0
@@ -63,10 +64,10 @@ with en2 {rangeX=0 image_xscale=1	spawnFall=spr_wrestler_move spawnEnemy=oWrestl
 if specialSet6=60 
 {
 en3=instance_create(4300,206,oEntryJump)
-with en3 {rangeX=0 image_xscale=-1 	spawnFall=spr_sneak_jump spawnEnemy=oSneak}
+with en3 {rangeX=0 enemy_switch("NOUSAGI",0) image_xscale=-1 	spawnFall=spr_ninjabun_jump spawnEnemy=oNinjaBun}
 
 en4=instance_create(4300,236,oEntryJump)
-with en4 {rangeX=0 image_xscale=-1	spawnFall=spr_sneak_jump spawnEnemy=oSneak
+with en4 {rangeX=0 enemy_switch("NOUSAGI",0) image_xscale=-1	spawnFall=spr_ninjabun_jump spawnEnemy=oNinjaBun
 	
 	}	
 }
@@ -74,25 +75,42 @@ with en4 {rangeX=0 image_xscale=-1	spawnFall=spr_sneak_jump spawnEnemy=oSneak
 if specialSet6=120 
 {
 en5=instance_create(__view_get( e__VW.XView, 0)+320-64,224,oEntryJump)
-with en5 {rangeX=0	spawnFall=spr_nurse_move image_xscale=-1	spawnEnemy=oNurse}	
+with en5 {rangeX=0 	spawnFall=spr_ninjabun_jump image_xscale=-1	spawnEnemy=oNinjaBun}	
 en6=instance_create(__view_get( e__VW.XView, 0)+320-64,256,oEntryJump)
-with en6 {rangeX=0	spawnFall=spr_nurse_move image_xscale=-1	spawnEnemy=oNurse}	
+with en6 {rangeX=0 	spawnFall=spr_ninjabun_jump image_xscale=-1	spawnEnemy=oNinjaBun}	
+
 }
 
 if specialSet6=180 
 {
 en7=instance_create(4060,190,oEntryJump)
-with en7 {rangeX=0 image_xscale=1}	
+with en7 {rangeX=0 image_xscale=1 spawnFall=spr_ninjabun_jump enemy_switch("KONI",0) spawnEnemy=oNinjaBun}	
 
 en8=instance_create(4060,250,oEntryJump)
-with en8 {rangeX=0 image_xscale=1	spawnFall=spr_burglarB_jump	spawnEnemy=oEnemy1B}	
+with en8 {rangeX=0 image_xscale=1 spawnFall=spr_ninjabun_jump enemy_switch("KONI",0) spawnEnemy=oNinjaBun}	
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+320-64,190,oEntryJump)
+with P2en1 {image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+320-64,222,oEntryJump)
+with P2en2 {image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+320-64,258,oEntryJump)
+with P2en3 {image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
+////
+
 }
 
 if specialSet6=240 
 {
 
 en9=instance_create(__view_get( e__VW.XView, 0)+64,200,oEntryJump)
-with en9 {rangeX=0 image_xscale=-1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot}	
+with en9 {rangeX=0 image_xscale=1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot}	
+
+en10=instance_create(__view_get( e__VW.XView, 0)+320-64,200,oEntryJump)
+with en10 {rangeX=0 image_xscale=-1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot}	
+
 }
 
 timeline_position-=1;

@@ -20,6 +20,25 @@ with en3 {image_xscale=-1
 	canAttack=5 alarm[1]=30 canAttack5Move=11
 	}	
 
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+320+64,190,oLadybot)
+with P2en1 {image_xscale=-1
+	enemy_switch("METR-A",0)
+	canAttack=5 alarm[1]=30 canAttack5Move=11}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+320+64,256,oLadybot)
+with P2en2 {image_xscale=-1
+	enemy_switch("METR-A",0)
+	canAttack=5 alarm[1]=30 canAttack5Move=11}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)-64,224,oLadybot)
+with P2en3 {image_xscale=1
+	enemy_switch("METR-A",0)
+	canAttack=5 alarm[1]=30 canAttack5Move=11}}
+////
+
+
 }
 else
 {

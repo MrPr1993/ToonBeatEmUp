@@ -30,6 +30,17 @@ enemytype2=oBeeLady turn2=-1
 enemyMax=2
 }
 
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0 )+320+32, 178,oZombieWoman)
+with P2en1 {enemy_switch("RIGORA",0) canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+320+32, 178+32,oZombieWoman)
+with P2en2 {enemy_switch("RIGORA",0) canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+320+32, 178+64,oZombieWoman)
+with P2en3 {enemy_switch("RIGORA",0) canAttack=5 alarm[1]=30 image_xscale=-1}}
+////
+
 }
 else
 {

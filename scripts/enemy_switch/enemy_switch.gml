@@ -158,13 +158,17 @@ case "DR.GLUCO": enemy_modify(spr_ninjapal,10,_name,0,0.4,0.4) enemyID=113 break
 case "METR-A": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=115 break;
 
 ///Cowboy
-case "BUCK": enemy_modify(spr_ninjapal,1,_name,0,0.8,0.8) enemyID=131 break;
+case "BUCK": enemy_modify(spr_ninjapal,6,_name,0,0.8,0.8) enemyID=131 break;
 case "PESO": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=132 break;
 
 ///Knight
 case "DANIEL": enemy_modify(spr_robotpal,1,_name,0,0.8,0.8) enemyID=134 break;
 case "ARTIE": enemy_modify(spr_robotpal,2,_name,0,0.8,0.8) enemyID=135 break;
 
+
+////////Boss only
+///Water Prince
+case "W.PRINCE": enemy_modify(spr_zombiepal,7,_name,0,0.5,0.5) isBoss=0  enemyID=166 break;
 
 }
 

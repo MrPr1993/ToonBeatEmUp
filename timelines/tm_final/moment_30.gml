@@ -41,6 +41,17 @@ with en16{spawnX=0 rangeX=0 zAppear=-128-128*5 spawnSpeedZMax=4 spawnSpr=spr_sne
 //en6.enemytype0=oRobot
 //en7.enemytype0=oRobotIce
 
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+320+64,180,oSneak)
+with P2en1 {image_xscale=-1 canAttack=5 alarm[1]=60}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+320+64,220,oSneak)
+with P2en2 {image_xscale=-1 canAttack=5 alarm[1]=60}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+320+64,260,oSneak)
+with P2en3 {image_xscale=-1 canAttack=5 alarm[1]=60}}
+////
+
 
 }
 else

@@ -21,20 +21,23 @@ specialSet6+=1
 
 if specialSet6=10 
 {
-en1=instance_create(4374,190,oEntryJump)
-with en1 {rangeX=0 image_xscale=1 	spawnFall=spr_wrestler_move	spawnEnemy=oWrestler}
+en1=instance_create(7674,190,oEntryJump)
+with en1 {rangeX=0 image_xscale=1 	spawnFall=spr_nurse_move	spawnEnemy=oNurse}
 
-en2=instance_create(4374,256,oEntryJump)
-with en2 {rangeX=0 image_xscale=1	spawnFall=spr_fatburglar_move spawnEnemy=oFatBurglar}	
+en2=instance_create(7674,256,oEntryJump)
+with en2 {rangeX=0 image_xscale=1	spawnFall=spr_nurse_move spawnEnemy=oNurse}	
+
+
+
 }
 
 if specialSet6=60 
 {
-en3=instance_create(4300,206,oEntryJump)
-with en3 {rangeX=0 image_xscale=-1 	spawnFall=spr_monk_jump spawnEnemy=oMonk}
+en3=instance_create(7732,206,oEntryJump)
+with en3 {rangeX=0 image_xscale=1 	spawnFall=spr_nurse_move spawnEnemy=oNurse}
 
-en4=instance_create(4300,236,oEntryJump)
-with en4 {rangeX=0 image_xscale=-1	spawnFall=spr_monk_jump spawnEnemy=oMonk
+en4=instance_create(7732,236,oEntryJump)
+with en4 {rangeX=0 image_xscale=1	spawnFall=spr_nurse_move spawnEnemy=oNurse
 	
 	}	
 }
@@ -49,22 +52,37 @@ with en6 {rangeX=0	spawnFall=spr_nurse_move image_xscale=-1	spawnEnemy=oNurse}
 
 if specialSet6=180 
 {
-en7=instance_create(4060,190,oEntryJump)
+en7=instance_create(__view_get( e__VW.XView, 0)+64,190,oEntryJump)
 with en7 {rangeX=0 image_xscale=1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot
 	enemy_switch("METR-A",0)
 	}	
 
-en8=instance_create(4060,250,oEntryJump)
+en8=instance_create(__view_get( e__VW.XView, 0)+64,250,oEntryJump)
 with en8 {rangeX=0 image_xscale=-1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot
 	enemy_switch("METR-A",0)
 	}	
+
+
+
 }
 
 if specialSet6=240 
 {
 
 en9=instance_create(__view_get( e__VW.XView, 0)+64,200,oEntryJump)
-with en9 {rangeX=0 image_xscale=-1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot}	
+with en9 {rangeX=0 image_xscale=1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot}	
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+64,264,oLadybot)
+with P2en1 {rangeX=0 image_xscale=1 spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot canAttack=5 alarm[1]=60}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+320-64,224,oLadybot)
+with P2en2 {rangeX=0 image_xscale=-1 spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot canAttack=5 alarm[1]=60}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+320-64,270,oLadybot)
+with P2en3 {rangeX=0 image_xscale=-1 spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot canAttack=5 alarm[1]=60}}
+////
+
 }
 
 
