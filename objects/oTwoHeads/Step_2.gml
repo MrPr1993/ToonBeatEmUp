@@ -74,8 +74,8 @@ if AnimFrame=0  {PlaySound(choose(snd_twoheads3,snd_twoheads10,snd_twoheads8))}
 if specialcheck5!=6
 if AnimFrame=clamp(AnimFrame,0,6)
 {
-if y>oControl.wallY+4 and specialcheck4=-1 {ismoving=1 y-=2}
-if y<oControl.camY+240-4 and specialcheck4=1 {ismoving=1 y+=2}
+if y>oControl.wallY+4 and specialcheck4=-1 {ismoving=1 if place_free(x,y-2) y-=2}
+if y<oControl.camY+240-4 and specialcheck4=1 {ismoving=1 if place_free(x,y+2) y+=2}
 }		
 		
 sprite_index=spr_twoheads_shoot

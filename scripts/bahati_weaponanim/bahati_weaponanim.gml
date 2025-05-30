@@ -204,7 +204,34 @@ if AnimFrame=clamp(AnimFrame,2,2.9) weaponBack=0 else weaponBack=1
 	if AnimFrame=clamp(AnimFrame,3,3.9) atk=1 else atk=0
 	if AnimFrame>5.5 {hurt=0 atk=0 canmove=1 hit=0}
 	}
-	
+
+////Small Swinging Weapon
+	if weapontype=19936
+	{frame_set(0,0,0.25) frame_set(1,2,0.25)
+if AnimFrame=2 {if key_charge {if -key_left image_xscale=-1 if key_right image_xscale=1 AnimFrame-=0.25}}
+frame_set(2,1,0.25) if AnimFrame=3 {PlaySound(WswingSound)}
+frame_set(3,3,0.25) frame_set(4,7,0.1) frame_set(5,5,0.25)
+
+if AnimFrame=clamp(AnimFrame,2,2.9) weaponBack=0 else weaponBack=1
+
+	if AnimFrame=clamp(AnimFrame,0,0.9)
+	{weaponanim(weaponspr,weaponIndex,9,-68,90*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,1,1.9)
+	{weaponanim(weaponspr,weaponIndex,-28,-82,129*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,2,2.9)
+	{weaponanim(weaponspr,weaponIndex,-23,-82,102*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,3,3.9)
+	{weaponanim(weaponspr,weaponIndex,54,-51,0*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,4,4.9)
+	{weaponanim(weaponspr,weaponIndex,53,-47,0*image_xscale,weaponcolor)}
+	if AnimFrame=clamp(AnimFrame,5,5.9)
+	{weaponanim(weaponspr,weaponIndex,25,-66,111*image_xscale,weaponcolor)}
+	sprite_index=spr_bahati_whip
+	image_speed=0
+	if AnimFrame=clamp(AnimFrame,3,3.9) atk=1 else atk=0
+	if AnimFrame>5.5 {hurt=0 atk=0 canmove=1 hit=0}
+	}
+
 ///Flamethrower
 	if weapontype=19945
 	{

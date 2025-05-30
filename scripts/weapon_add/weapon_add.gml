@@ -22,6 +22,8 @@ weaponHitType=4
 WswingSound=snd_swing5
 if wpadd="TOYHAMMER"
 {weaponHitType=1
+spawnID=oToyHammer
+weapontype=19936
 weaponspr=spr_hammer2
 weaponX=7
 }

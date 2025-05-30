@@ -56,6 +56,8 @@ BurnSpr=spr_oni_burned
 FrozenSpr=spr_oni_frozen
 DizzySpr=spr_oni_dizzy hasDizzy=1
 
+hasscaredSpr=1 scaredSpr=spr_oni_panic
+
 enemyID=157
 
 CanFade=0;
