@@ -504,17 +504,16 @@ var creditscameor="\n"+
 ////PIXELED
  //10 JameArts - Alice on cloud stage
 //Meme supreme - Chicken wrestler
+//PsychoJosh - beach Duo
+//Zengumi - cloudy kiss
+//Wobbleblot - cloudy kiss
 
 
 ///OTHER
 //butchtheamazing - ???
-//PsychoJosh - beach Duo (unpaid)
-//TWEENIES - Buff lad (not yet paid)
-//Zengumi - cloudy kiss
-//Wobbleblot - cloudy kiss
 //Flash Trickstar
 //Peterjuice
-
+//YinSeiryu - Samurai with cats 
 //
 //
 

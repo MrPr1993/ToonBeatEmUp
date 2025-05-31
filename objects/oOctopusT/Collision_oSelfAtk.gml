@@ -43,7 +43,7 @@ playerFrom=other.hitSource.playerNO
 	oControl.PenemyID[playerFrom]=1
 	oControl.Pcurrent_pal[playerFrom]=current_pal
 	oControl.Pmy_pal_sprite[playerFrom]=my_pal_sprite
-
+   oControl.PenemyhpD[playerFrom]=0;
 
 
 	if hp<=0 and hplayer=0

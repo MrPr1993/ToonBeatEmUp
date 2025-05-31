@@ -553,6 +553,12 @@ if itemID!=-1 {if itemID=oGemstone global.TreasureSet=treasureno _item=instance_
 
 }
 
+canclothesremains=0
+clothesremains=function(_no)
+{
+/////Clothes remain
+}
+
 hpregister=hp;	
 playerFrom=1;
 

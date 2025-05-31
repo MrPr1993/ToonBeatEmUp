@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 hp=clamp(hp,0,9999)
+if !instance_exists(oMirrorDiva) hp=0.001;
 
 ///Intro
 if anim=100

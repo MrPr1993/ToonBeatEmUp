@@ -212,6 +212,8 @@ if AnimFrame=2 {if key_charge {if -key_left image_xscale=-1 if key_right image_x
 frame_set(2,1,0.25) if AnimFrame=3 {PlaySound(WswingSound)}
 frame_set(3,3,0.25) frame_set(4,7,0.1) frame_set(5,5,0.25)
 
+atkAddX+=32; ///S
+
 if AnimFrame=clamp(AnimFrame,2,2.9) weaponBack=0 else weaponBack=1
 
 	if AnimFrame=clamp(AnimFrame,0,0.9)

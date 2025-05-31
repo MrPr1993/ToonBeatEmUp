@@ -19,7 +19,7 @@ food=0
 weaponLife=6
 weaponCut=1
 
-weapontype=19935
+weapontype=19936
 
 WspriteFX=spr_blood
 HitSound=snd_cut

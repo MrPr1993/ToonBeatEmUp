@@ -43,7 +43,7 @@ PlaySoundNoStack(snd_hit)
 	oControl.enemyID=1
 	oControl.current_pal=current_pal
 	oControl.my_pal_sprite=my_pal_sprite
-
+oControl.PenemyhpD[playerFrom]=0;
 
 
 	if hp<=0 and hplayer=0
