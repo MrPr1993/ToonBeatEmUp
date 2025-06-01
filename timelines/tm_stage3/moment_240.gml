@@ -31,6 +31,24 @@ spawnFall=spr_wrestler_grab
 spawnEnemy=oWrestler
 }
 
+
+////
+if playernumber>=2 {P2en1=instance_create(1916,192+32,oEntryJump)
+with P2en1 {z=-44 image_xscale=-1 rangeX=x-67 enemy_switch("MS.CRUSH",0)
+sittingSpr=spr_wrestler_stand
+spawnFall=spr_wrestler_grab
+spawnEnemy=oWrestler
+}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+320+32, 180,oEnemy1)
+with P2en2 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+320+32, 200,oEnemy1B)
+with P2en3 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+////
+
+
+
 }
 else
 timeline_position-=1

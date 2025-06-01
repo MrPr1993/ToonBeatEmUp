@@ -4,6 +4,20 @@ if __view_get( e__VW.XView, 0 )>=2896-320
 en6=instance_create(__view_get( e__VW.XView, 0 )+320+64,192,oBoxer)
 with en6
 {image_xscale=-1 alarm[1]=60 canAttack=5}
+
+////
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0 )+320+32, 202,oBoxer)
+with P2en1 {//enemy_switch("NOUSAGI",0) 
+	canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+320+32, 176,oEnemy1)
+with P2en2 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+320+32, 222,oEnemy1B)
+with P2en3 {canAttack=5 alarm[1]=30 image_xscale=-1}}
+////
+
+
 }
 else
 {

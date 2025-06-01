@@ -225,14 +225,14 @@ if PenemyHPflash[i]=0 PenemyHPflash[i]=2 else PenemyHPflash[i]-=0.5}
 //else
 //draw_sprite_part(spr_enemyhpbar,0,0,0,(Penemymaxhp[i]*45),9,26,48)
 //var maxbar=((1/45)*(Penemymaxhp[i]*45))-round(-0.5+PenemyhpD[i]); maxbar=clamp(maxbar,0,1)
-
+if Pshowhp[i]
 {gpu_set_blendmode_ext(bm_dest_color,bm_src_color)
 var hpscale=(Penemymaxhp[i]); hpscale=clamp(hpscale,0,1);
 if PenemyhpD[i]>=0
 draw_sprite_ext(spr_enemyhpbar,0,26,48,hpscale,1,0,c_white,1)
 gpu_set_blendmode(bm_normal)
 draw_sprite(spr_enemyhpbase,0,25+(hpscale*45),48-1)
-}
+} else gpu_set_blendmode(bm_normal)
 ////
 
 pal_swap_set(Pmy_pal_sprite[i],Pcurrent_pal[i],false);

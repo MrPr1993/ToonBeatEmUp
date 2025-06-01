@@ -135,7 +135,7 @@ damage=0.01
 			///Kick Attack
 if anim=14
 {
-selfatk.NoKnock=1 dizzyAtk=0 damage=0.01
+selfatk.NoKnock=1 dizzyAtk=0 damage=0.01 selfatk.MoveType=0
 	weaponBack=2
 	comboBreak=0
 	flashX=6
