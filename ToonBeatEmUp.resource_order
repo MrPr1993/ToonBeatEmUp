@@ -4184,6 +4184,7 @@
     {"name":"spr_vivaoohyum","order":7,"path":"sprites/spr_vivaoohyum/spr_vivaoohyum.yy",},
     {"name":"spr_vivapal","order":19,"path":"sprites/spr_vivapal/spr_vivapal.yy",},
     {"name":"spr_vivasnap","order":2,"path":"sprites/spr_vivasnap/spr_vivasnap.yy",},
+    {"name":"spr_wakerosy","order":8,"path":"sprites/spr_wakerosy/spr_wakerosy.yy",},
     {"name":"spr_waterbub","order":2,"path":"sprites/spr_waterbub/spr_waterbub.yy",},
     {"name":"spr_waterfx","order":11,"path":"sprites/spr_waterfx/spr_waterfx.yy",},
     {"name":"spr_waterhover","order":41,"path":"sprites/spr_waterhover/spr_waterhover.yy",},
