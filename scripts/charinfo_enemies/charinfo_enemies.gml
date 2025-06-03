@@ -15,10 +15,12 @@ descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
 if dataPal=2
 {
 enemy_switch("MR.LAR",0) 
+desc="Burg’s higher ranked relative. Not much stronger by comparison, but they can still kick!"
 }
 if dataPal=3
 {
 enemy_switch("MR.ROB",0)
+desc="The cream of the Mr. Burg crop! Keep an eye out, as they’ve got a mean jump kick!"
 }
 charNO=1
 
@@ -273,7 +275,7 @@ break;
 break;
 
   case 17: ////Knight
- hp=0.3 enemyID=133 idlestyle=1
+ hp=0.5 enemyID=133 idlestyle=1
  charinfo_set(12,spr_knight_stand,2,animsetup_enemy,draw_swing,spr_robotpal,0,spr_enemyface,65,"GARETH",
  "Once respected knights, but now chivalry is dead to these fellows! And by their sword, you may be too!")
 if dataPal=2
@@ -486,7 +488,7 @@ desc="Her stinger is much nastier than others. The venom makes you blimp up like
 break;
 
   case 29: enemyID=75
-  hp=0.2
+  hp=0.2 idlestyle=1
  charinfo_set(12,spr_lobster_stand,2,animsetup_enemy,draw_enemy,spr_lobsterpal,0,spr_enemyface,42,"PINCHO",
 "A big bipedal lobster with an even bigger pinch. Has quite the bubbly temper, too.")
   if dataPal=2 {enemy_switch("PINCHER",0)
@@ -681,7 +683,7 @@ desc="These amorous cave beasts will shake the earth itself just so they can get
 break;
 
   case 41:
-  idlestyle=1 hp=0.2 enemyID=110
+  hp=0.2 enemyID=110
  charinfo_set(12,spr_nurse_stand,4,animsetup_enemy,draw_enemy,spr_ninjapal,0,spr_enemyface,48,"DR.PERO",
  "Scientists who work under Dr. Fran. They act as support by throwing exploding beakers.")
   if dataPal=2 {enemy_switch("DR.SULF",0)

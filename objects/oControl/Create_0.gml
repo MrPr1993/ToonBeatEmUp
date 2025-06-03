@@ -8,6 +8,8 @@ showtimehit=0;
 perfecthp=1;
 nodeath=1;
 
+bonusstage=0;
+
 playNO=1
 
 playerleader=0;
@@ -152,6 +154,9 @@ global.StageGoing=rm_opening
 global.StageSave=0;
 
 global.ConsoleType="XBOX"
+
+global.BonusStageNext=rm_stage4
+global.VanBadSceneNext=rm_stage4
 
 global.HiScoreLevel=1
 

@@ -59,7 +59,7 @@ current_pal=0;
 my_pal_sprite=spr_lobsterpal
 
 enemyID=75
-
+idlestyle=1
 spritepos_setup(1,24,0,39)
 spritepos_setup(2,24,13,64)
 

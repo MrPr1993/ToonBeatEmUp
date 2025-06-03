@@ -54,6 +54,7 @@ oControl.timeclick=60
 npcDriverOn=0
 npcDriverTimer=0
 
+oControl.CutsceneStage=global.BonusStageNext
 
 with oPlayer {canmove=0 anim=0 key_left=0 key_right=0 altresult2=0}
 
@@ -66,6 +67,9 @@ altresult2d=0
 }
 alarm[0]=180
 hithereY=0
+
+
+oControl.stageNext=global.VanBadSceneNext
 
 with oPlayer altresult2=0
 if instance_exists(oPlayerDisembodied) with oPlayerDisembodied altresult2=0

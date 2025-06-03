@@ -1,5 +1,8 @@
 // You can write your code in this editor
 
+
+oControl.stageNext=global.VanBadSceneNext
+
 p1Over=1
 p2Over=1
 p3Over=1

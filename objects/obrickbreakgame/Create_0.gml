@@ -1,5 +1,6 @@
 // You can write your code in this editor
 
+
 p1Over=1
 p2Over=1
 p3Over=1
@@ -144,3 +145,5 @@ stageIntro=1
 oControl.stagePause=0
 
 with oBrickBreakPlayer canControl=0 alarm[0]=120
+
+oControl.stageNext=global.VanBadSceneNext

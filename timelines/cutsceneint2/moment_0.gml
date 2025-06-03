@@ -196,11 +196,12 @@ __view_set( e__VW.XView, 0, SceneY )
 	
 canSkipCutscene=2
 
-
-
 //-Intermission 2-
 
 
 //-Intermission 2-
 cutscenePlaying=1
 }
+
+oControl.CutsceneStage=global.BonusStageNext
+

@@ -43,8 +43,8 @@ case "MS.CRUSH": enemy_modify(spr_ninjapal,6,_name,0,0.8,0.8)  enemyID=31 break;
 case "MR.DALE": enemy_modify(spr_enemypal,12,_name,0,0.8,0.8)  enemyID=33 break;
 
 ///Ms. Ki
-case "MS.CHI": enemy_modify(spr_ninjapal,0,_name,0,0.35,0.35)  enemyID=35 break;
-case "MS.MANA": enemy_modify(spr_ninjapal,4,_name,0,0.35,0.35)  enemyID=36 break;
+case "MS.CHI": enemy_modify(spr_ninjapal,0,_name,0,0.5,0.5)  enemyID=35 break;
+case "MS.MANA": enemy_modify(spr_ninjapal,4,_name,0,0.7,0.7)  enemyID=36 break;
 
 
 
@@ -56,7 +56,7 @@ case "ZOMBOBBY": enemy_modify(spr_zombiepal,1,_name,0,0.25,0.25) enemyID=40 brea
 case "MORTI": enemy_modify(spr_zombiepal,2,_name,0,0.15,0.15) enemyID=41 break;
 
 //Zombetty
-case "ZOMBELLE": enemy_modify(spr_zombiepal,1,_name,0,0.25,0.25) enemyID=43 break;
+case "ZOMBELLE": enemy_modify(spr_zombiepal,1,_name,0,0.3,0.3) enemyID=43 break;
 case "RIGORA": enemy_modify(spr_zombiepal,2,_name,0,0.15,0.15) enemyID=44 break;
 
 ///Skeleton
@@ -66,10 +66,10 @@ case "SKELIE": enemy_modify(spr_mummypal,1,_name,0,0.3,0.3) enemyID=46 break;
 case "BASTET": enemy_modify(spr_mummypal,1,_name,0,0.3,0.3) enemyID=52 break;
 
 ////Aspa
-case "VIPERA": enemy_modify(spr_mummypal,1,_name,0,0.6,0.6) enemyID=54 break;
+case "VIPERA": enemy_modify(spr_mummypal,1,_name,0,0.8,0.8) enemyID=54 break;
 
 ///Usagi
-case "NOUSAGI": enemy_modify(spr_ninjapal,2,_name,0,0.3,0.3) enemyID=56 break;
+case "NOUSAGI": enemy_modify(spr_ninjapal,2,_name,0,0.2,0.2) enemyID=56 break;
 case "KONI": enemy_modify(spr_ninjapal,4,_name,0,0.7,0.7) enemyID=57 break;
 
 ///Sake
@@ -82,8 +82,8 @@ case "POPPI": enemy_modify(spr_bearpal,2,_name,0,0.4,0.4) enemyID=62 break;
 ///Teddy Bears
 //case "ROOSEVELT": enemy_modify(spr_bearpal,0,"ROOSEVELT",0,0.2,0.2) break;
 case "TEDDIE": enemy_modify(spr_bearpal,1,_name,0,0.2,0.2) enemyID=64 break;
-case "YOGI": enemy_modify(spr_bearpal,2,_name,0,0.15,0.15) enemyID=65 break;
-case "FOZZI": enemy_modify(spr_bearpal,3,_name,0,0.15,0.15) enemyID=66 break;
+case "YOGI": enemy_modify(spr_bearpal,2,_name,0,0.2,0.2) enemyID=65 break;
+case "FOZZI": enemy_modify(spr_bearpal,3,_name,0,0.2,0.2) enemyID=66 break;
 case "PADDY": enemy_modify(spr_bearpal,4,_name,0,0.2,0.2) enemyID=67 break;
 case "MONO": enemy_modify(spr_bearpal,5,_name,0,0.2,0.2) enemyID=68 break;
 
@@ -158,7 +158,7 @@ case "DR.GLUCO": enemy_modify(spr_ninjapal,10,_name,0,0.4,0.4) enemyID=113 break
 case "METR-A": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=115 break;
 
 ///Cowboy
-case "BUCK": enemy_modify(spr_ninjapal,6,_name,0,0.8,0.8) enemyID=131 break;
+case "BUCK": enemy_modify(spr_ninjapal,6,_name,0,0.5,0.5) enemyID=131 break;
 case "PESO": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=132 break;
 
 ///Knight

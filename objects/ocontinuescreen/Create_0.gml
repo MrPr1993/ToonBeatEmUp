@@ -18,17 +18,18 @@ cheatpenalty=0;
 playerGet=1
 
 controlset[12]=0;
-
+bonusstage=0
 finalStageEnd=0
 if instance_exists(oControl)
+{
 finalStageEnd=oControl.finalStageEnd
-
+bonusstage=oControl.bonusstage
+}
 finalStage=0
 finalStageHi=0
 finalStageMono=1
 
 TVfx=oControl.TVfx
-
 stageClear=0
 stageClearIndex=0
 stageClearY=-120

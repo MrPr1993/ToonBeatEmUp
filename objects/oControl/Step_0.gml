@@ -278,25 +278,29 @@ if keyboard_check_pressed(vk_f9)
 switch(room)
 {
 case rm_stage1: stageNext=rm_cutscene1 break;	
+
 case rm_stage2: stageNext=rm_cutscene2a break;	
-case rm_stage3: stageNext=rm_cutscene3a break;	
-case rm_stagecarnival: stageNext=rm_cutscene4a break;	
-case rm_stagemermaid: stageNext=rm_cutscene5a break;	
-case rm_stagecave: stageNext=rm_cutscene6a break;	
-
 case rm_stage2b: stageNext=rm_cutscene2b break;	
-case rm_stage4: stageNext=rm_cutscene3b break;	
-case rm_stageswamp: stageNext=rm_cutscene4b break;	
-case rm_stageufo: stageNext=rm_cutscene5b break;	
-case rm_stagesnow: stageNext=rm_cutscene6b break;	
-
 case rm_stage2c: stageNext=rm_cutscene2c break;	
-case rm_stage5: stageNext=rm_cutscene3b break;	
-case rm_stagebeach: stageNext=rm_cutscene4b break;	
-case rm_stagedesert: stageNext=rm_cutscene5b break;	
+
+case rm_stagecarnival: stageNext=rm_cutscene4a break;	
+case rm_stageswamp: stageNext=rm_cutscene4b break;	
+case rm_stagebeach: stageNext=rm_cutscene4c break;	
+
+case rm_stagemermaid: stageNext=rm_cutscene5a break;	
+case rm_stageufo: stageNext=rm_cutscene5b break;	
+case rm_stagedesert: stageNext=rm_cutscene5c break;	
+
+case rm_stagecave: stageNext=rm_cutscene6a break;	
+case rm_stagesnow: stageNext=rm_cutscene6b break;	
 case rm_stageclouds: stageNext=rm_cutscene6b break;	
 
+case rm_stage3: stageNext=rm_cutscene3a break;	
+case rm_stage4: stageNext=rm_cutscene3b break;	
+case rm_stage5: stageNext=rm_cutscene3c break;	
+
 case rm_stagelab: stageNext=rm_cutscene7 break;	
+
 case rm_stagefinal: stageNext=rm_cutscene8 break;
 }
 

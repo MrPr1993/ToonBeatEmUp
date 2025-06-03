@@ -54,18 +54,18 @@ if anim=12
 atkcol_set(89,0,13,4.15,1,79)
 if AnimFrame=0 {specialcheck4=0} sprite_index=spr_scientistm_attack2
 frame_set(0,0,0.1) damage=0.1 MoveType=1
-frame_set(1,1,0.1)
-frame_set(2,2,0.2)
-frame_set(3,3,0.1)
-frame_set(4,4,0.2)
-frame_set(5,5,0.2) //
-frame_set(6,6,0.2)
-frame_set(7,7,0.2)
-frame_set(8,8,0.2)
-frame_set(9,9,0.1)
+frame_set(1,1,0.25) if AnimFrame=2 PlaySound(snd_swing5)
+frame_set(2,2,0.25)
+frame_set(3,3,0.25)
+frame_set(4,4,0.25)
+frame_set(5,5,0.25) //
+frame_set(6,6,0.25) if AnimFrame=7 PlaySound(snd_swing5)
+frame_set(7,7,0.25)
+frame_set(8,8,0.25)
+frame_set(9,9,0.25) if AnimFrame>=10 {if specialcheck4!=2 {PlaySound(snd_swing5) AnimFrame=2 specialcheck4+=1}}
 
 frame_set(10,9,0.1) if AnimFrame=clamp(AnimFrame,2,3.9) or AnimFrame=clamp(AnimFrame,7,8.9) {sentflying=2*image_xscale atk=1} else {sentflying=0 atk=0}
-frame_set(11,9,0.1) if AnimFrame>11-0.2 {if specialcheck4!=2 {AnimFrame=2 specialcheck4+=1}}
+frame_set(11,9,0.1) 
 frame_set(12,9,0.1)
 frame_set(13,10,0.1)
 if AnimFrame>13.5 canmove=1
@@ -76,10 +76,10 @@ if AnimFrame>13.5 canmove=1
 if anim=13
 {sprite_index=spr_scientistm_attack3
 	//if AnimFrame=0 PlaySoundNoStack(snd_fzombie3)
-frame_set(0,0,0.125)
-frame_set(1,1,0.125)
-frame_set(2,2,0.125)
-frame_set(3,3,0.05)
+frame_set(0,0,0.25)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25)
+frame_set(3,3,0.1)
 frame_set(4,1,0.25) if AnimFrame=5 
 {
 PlaySoundNoStack(snd_scientist7)
@@ -147,6 +147,7 @@ if AnimFrame>6.5 canbeGrabbed=1
 if AnimFrame>7.5 {atk=0 canmove=1}
 }
 
+///Flying Tentacles
 if anim=65
 {atkcol_set(83,0,-158,5.85,1,194)
 sprite_index=spr_scientistm_attack5
@@ -160,10 +161,10 @@ frame_set(4,4,0.25)
 frame_set(5,5,0.1)
 frame_set(6,6,0.25)
 frame_set(7,7,0.25)
-frame_set(8,8,0.1)
-frame_set(9,9,0.1)
-frame_set(10,5,0.1)
-frame_set(11,10,0.1)
+frame_set(8,8,0.25)
+frame_set(9,9,0.25) if AnimFrame=10 zSpeed=8
+frame_set(10,5,0.25)
+frame_set(11,10,0.25)
 if AnimFrame>11 if ground {atk=0 canmove=1}
 
 }

@@ -143,4 +143,7 @@ ready=0
 stageIntro=1
 oControl.stagePause=0
 
+
+oControl.stageNext=global.VanBadSceneNext
+
 with oEatingContestPlayer canControl=0 alarm[0]=120
