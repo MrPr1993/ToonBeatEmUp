@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":28.473469,
+  "duration":28.444468,
   "name":"msc_action",
   "parent":{
     "name":"Music",

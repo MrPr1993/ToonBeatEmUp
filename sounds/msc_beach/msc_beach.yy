@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":73.87428,
+  "duration":73.84617,
   "name":"msc_beach",
   "parent":{
     "name":"Music",

@@ -26,7 +26,7 @@ if item.PickupSound!=-1
 specialitemreaction=item.specialitemreaction;
 	
 if object_index=oPlayer playerFrom=playerNO
-
+oControl.PenemyhpD[playerFrom]=0
 	oControl.Pshowhp[playerFrom]=0
 	oControl.Penemyhp[playerFrom]=0 oControl.PhpLerp[playerFrom]=0 oControl.Penemymaxhp[playerFrom]=0
 	oControl.PenemyPortraitSpr[playerFrom]=item.enemyPortraitSpr

@@ -17,7 +17,7 @@ global.Gallery[galleryNO]^=1;
 if gallerybuffer!=0 gallerybuffer-=1
 if galleryload!=0 galleryload-=1
 
-if gallerybuffer
+if gallerybuffer=0
 {
 if key_B or keyboard_check_pressed(vk_escape) {if gallerychoosing=1 {PlaySound(snd_steal) gallerychoosing=0} else room_goto(rm_menu)}
 }

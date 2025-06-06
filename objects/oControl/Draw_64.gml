@@ -799,7 +799,7 @@ draw_set_color(c_white) draw_set_alpha(1)
 if titleShow=1 introSkip=1
 
 if selectScreen=0
-if key_A or  key_B or keyboard_check_pressed(vk_enter) or key_start
+if key_A or key_B or keyboard_check_pressed(vk_enter) or key_start
 if introSkip=0
 {
 introSkip=1 noWhite=1
@@ -1707,7 +1707,7 @@ draw_sprite_ext(spr_filmpart,1,312+round(9-9*filmY2),mapXFilm+iI,1,1,90,c_white,
 if key_up_pressed {PlaySound(snd_select) if cutsceneDecmode=0 cutsceneDecmode=2 else cutsceneDecmode-=1}
 if -key_down_pressed {PlaySound(snd_select) if cutsceneDecmode=2 cutsceneDecmode=0 else cutsceneDecmode+=1}
 
-if key_attack or key_jump or key_super or key_shield or keyboard_check_pressed(vk_enter)
+if key_attack or key_jump or key_super or key_shield or keyboard_check_pressed(vk_enter) or key_A or key_B
 {cutscenedecision=2 PlaySound(snd_picked) cutsceneDecbuffer=120
 	CDtextTy=0
 	CDtextAx=0

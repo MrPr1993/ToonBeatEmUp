@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":66.24653,
+  "duration":66.20692,
   "name":"msc_ufo",
   "parent":{
     "name":"Music",

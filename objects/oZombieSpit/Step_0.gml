@@ -7,7 +7,7 @@ z+=zSpeed
 
 depth=-y
 
-if animLock=0
+if animLock
 {
 if image_index=3 image_speed=0
 }

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":3,
   "conversionMode":0,
-  "duration":14.811429,
+  "duration":14.769252,
   "name":"msc_charselect",
   "parent":{
     "name":"Music",

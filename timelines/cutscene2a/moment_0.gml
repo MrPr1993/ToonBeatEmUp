@@ -136,7 +136,7 @@ cutsceneline=""
 }
 }
 
-if scenetime=3090 scenetime=6000
+if scenetime=2790 scenetime=6000
 
 if scenetime=6000
 {

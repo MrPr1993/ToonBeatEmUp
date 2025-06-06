@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":34.951836,
+  "duration":34.909092,
   "name":"msc_casinogame",
   "parent":{
     "name":"Music",

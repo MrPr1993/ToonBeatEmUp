@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":38.034286,
+  "duration":38.001793,
   "name":"msc_gallery",
   "parent":{
     "name":"Music",

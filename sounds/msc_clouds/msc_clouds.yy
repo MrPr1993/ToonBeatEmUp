@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":64.02612,
+  "duration":64.0,
   "name":"msc_clouds",
   "parent":{
     "name":"Music",

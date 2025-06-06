@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":49.580406,
+  "duration":49.54839,
   "name":"msc_survival",
   "parent":{
     "name":"Music",

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":62.641632,
+  "duration":62.608707,
   "name":"msc_snowmountain",
   "parent":{
     "name":"Music",

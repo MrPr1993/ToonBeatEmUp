@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":71.23588,
+  "duration":71.235916,
   "name":"msc_stage4",
   "parent":{
     "name":"Music",

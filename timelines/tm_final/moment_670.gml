@@ -28,7 +28,7 @@ with fx {isDepth=0 depth=-6005}
 else
 if AnimFrame<=240
 {
-x+=abs(0.01*(AnimFrame-240))
+//x+=abs(0.01*(AnimFrame-240))
 y+=0.25
 image_index+=0.25 if image_index=3 image_index=1
 

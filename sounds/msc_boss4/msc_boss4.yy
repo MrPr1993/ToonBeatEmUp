@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":60.525715,
+  "duration":60.48,
   "name":"msc_boss4",
   "parent":{
     "name":"Music",

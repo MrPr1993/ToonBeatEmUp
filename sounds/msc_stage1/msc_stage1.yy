@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":50.573063,
+  "duration":50.526325,
   "name":"msc_stage1",
   "parent":{
     "name":"Music",

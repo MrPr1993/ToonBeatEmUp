@@ -11,12 +11,13 @@ function throw_command(argument0, argument1, argument2, argument3, argument4) {
 	and targetID.canbeGrabbed=1 and ((targetID.x>x and image_xscale=1) or (targetID.x<x and image_xscale=-1) )// and object_index=oPlayer
 	{throwing=1 atk=1 canmove=0 isThrow=1 selfatk.isThrow=1 recovery=10
 
+/////
 	if object_index=oPlayer
 	{
 	if carry=1 {dropitem=0 
 	event_user(2) item.spdX=0 item.ground=0 item.carry=0 throwcombo=2
 	item.iscarry=1     item.carryID=-1}///Drop item
-	event_user(1)///Drop weapon
+	//event_user(1)///Drop weapon
 	}
 
 	AnimFrame=0 anim=35//anim=20

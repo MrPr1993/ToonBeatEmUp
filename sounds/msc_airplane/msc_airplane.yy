@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":67.89224,
+  "duration":67.864876,
   "name":"msc_airplane",
   "parent":{
     "name":"Music",

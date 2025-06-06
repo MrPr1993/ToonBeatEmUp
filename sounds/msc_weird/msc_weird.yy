@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":36.04898,
+  "duration":36.0,
   "name":"msc_weird",
   "parent":{
     "name":"Music",

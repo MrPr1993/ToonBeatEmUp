@@ -622,7 +622,7 @@ MoveType=0
 
 
 	if anim=35 ///Grab Enemy
-	{weaponBack=2 prevanim=36
+	{weaponBack=2 prevanim=36 weaponY=999999
 	throwStrengthTime=90 throwStrengthMax=0
 
 	if AnimFrame>0.1
@@ -721,7 +721,7 @@ MoveType=0
 	}
 
 	if anim=36 ///Pummel
-	{prevanim=36
+	{prevanim=36 weaponY=999999
 	isThrow=1
 	throwing=1
 	selfatk.image_xscale=0
@@ -820,7 +820,7 @@ targetID.playerFrom=playerNO
 	}
 
 	if anim=37 ///Throw Forwards
-	{
+	{weaponY=999999
 	if AnimFrame=0
 
 	prevanim=37
@@ -886,7 +886,7 @@ targetID.playerFrom=playerNO
 	}
 
 	if anim=38 ///Throw Backards
-	{
+	{weaponY=999999
 
 	prevanim=38
 	isThrow=1 recovery=10
@@ -1008,7 +1008,7 @@ targetID.playerFrom=playerNO
 
 	///Throw End
 	if anim=39
-	{
+	{weaponY=999999
 	comboBreak=0
 	selfatk.recovery=30
 	Throw=0

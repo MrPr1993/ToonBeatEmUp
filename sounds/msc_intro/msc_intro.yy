@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":86.15184,
+  "duration":86.11767,
   "name":"msc_intro",
   "parent":{
     "name":"Music",

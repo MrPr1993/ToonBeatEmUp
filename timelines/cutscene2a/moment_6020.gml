@@ -73,9 +73,9 @@ sprite_index=spr_allblackscreen image_xscale=1
 if scenetime=520
 {
 
-with actor1 {sprite_index=spr_viva_jump1 x=160-32 image_index=1 y=200 z=-200 newscript=function(){z+=8}}
+with actor1 {sprite_index=spr_viva_jump1 x=160-64 image_index=1 y=200 z=-200 newscript=function(){z+=8}}
 with actor2 {sprite_index=spr_hina_jump1 x=160-40 image_index=1 y=200 z=-240 newscript=function(){z+=8}}
-with actor3 {sprite_index=spr_bahati_jump1 x=160+32 image_index=1 y=200 z=-230 newscript=function(){z+=8}}
+with actor3 {sprite_index=spr_bahati_jump1 x=160+64 image_index=1 y=200 z=-230 newscript=function(){z+=8}}
 with actor4 {sprite_index=spr_sofia_jump1 x=160+40 image_index=1 y=200 z=-210 newscript=function(){z+=8}}
 }
 
@@ -217,8 +217,8 @@ with actorscreen
 
 specialdraw=-1;
 
-with oControl {cutscenename="VIVA" cutsceneline="HEY! HEY LADY! WAKE UP!"}
-sprite_index=mask_none
+with oControl {cutscenename="" cutsceneline=""}
+sprite_index=spr_wakerosy image_index=0
 x=0
 y=0
 
@@ -226,65 +226,80 @@ newscript=function()
 {
 scenetime+=1;
 
+if scenetime=120
+{image_index=1 scenetime=320
+with oControl {quakeFXTime=10 PlaySound(snd_hit) PlaySound(snd_franki2)}
 
-if scenetime=520
-{
+}
+
+if scenetime=420
+{image_index=2
 with oControl {cutscenename="ROSY" cutsceneline="HUH?! YOU?! WHY YOU..."}
 }
 
 if scenetime=660
-{
+{image_index=3
 with oControl {cutscenename="VIVA" cutsceneline="NO TIME TO BEAT MY PRETTY FACE IN! THERE'S NO ONE ON THE WHEEL!"}
 }
 
-if scenetime=860
-{
+if scenetime=960
+{scenetime=1060
 with oControl {cutscenename="ROSY" cutsceneline="ACH, CRAP! OUTTA MY WAY!"}
 }
 
-if scenetime=1060
+if scenetime=1260
+{sprite_index=spr_allblackscreen
+layer_hspeed("BGsky",0)
+with oControl {cutscenename="" cutsceneline=""}
+
+with actor5 {sprite_index=spr_franki_stand}
+}
+
+if scenetime=1460 hspeed=-16
+
+if scenetime=1660
 {
 with oControl {cutscenename="VIVA" cutsceneline="SO YOU AREN'T WORKING WITH THEM?"}
 }
 
-if scenetime=1300
+if scenetime=1900
 {
 with oControl {cutscenename="ROSY" cutsceneline="HECK NO! I WAS BUSY KICKING OUT STOWAWAYS THAT GOT ALL OVER MY PRECIOUS SHIP."}
 }
 
-if scenetime=1500
+if scenetime=2200
 {
 with oControl {cutscenename="BAHATI" cutsceneline="WELL I'M GLAD WE MANAGED TO SETTLE THIS ISSUE. AND I'M HAPPY YOU'RE GIVING US A HAND."}
 
 }
 
-if scenetime=1750
+if scenetime=2550
 {
 with oControl {cutscenename="ROSY" cutsceneline="OF COURSE, BAHATI! I'M YOUR BIGGEST FAN!"}
 
 }
 
-if scenetime=2000
+if scenetime=2800
 {
-with oControl {cutscenename="SOFIA" cutsceneline="THAT EXPLAINS A LOT. SO, WHERE IS THIS SHIP HEADIN?"}
+with oControl {cutscenename="SOFIA" cutsceneline="THAT EXPLAINS A LOT. SO, WHERE IS THIS SHIP HEADING?"}
 }
 
-if scenetime=2300
+if scenetime=3100
 {
 with oControl {cutscenename="ROSY" cutsceneline="IT'S HEADING TO THE PORT NEAR THAT DOJO CASINO PLACE. I DID HEAR THERE ARE SHADY PEOPLE SHOWING UP THERE RECENTLY."}
 }
 
-if scenetime=2600
+if scenetime=3560
 {
 with oControl {cutscenename="VIVA" cutsceneline="THEN THAT'S WHERE WE GOTTA GO TO FIND WHERE OUR TREASURE'S TAKEN."}
 }
 
-if scenetime=2900
+if scenetime=3860
 {
 with oControl {cutscenename="SOFIA" cutsceneline="GOOD! I CAN'T WAIT TO BEAT UP SOME NINJAS!"}
 }
 
-if scenetime=3320
+if scenetime=4280
 {
 oControl.stageEndFX=1
 }

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":3,
   "conversionMode":0,
-  "duration":5.177245,
+  "duration":5.14288,
   "name":"msc_gameover",
   "parent":{
     "name":"Music",

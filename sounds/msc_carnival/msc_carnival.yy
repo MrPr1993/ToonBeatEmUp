@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":60.839184,
+  "duration":60.8,
   "name":"msc_carnival",
   "parent":{
     "name":"Music",

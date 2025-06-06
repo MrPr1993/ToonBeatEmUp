@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.201361,
+  "duration":0.20136054,
   "name":"snd_franki1",
   "parent":{
     "name":"Franki",

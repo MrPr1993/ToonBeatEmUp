@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":32.026123,
+  "duration":32.0,
   "name":"msc_scary",
   "parent":{
     "name":"Music",

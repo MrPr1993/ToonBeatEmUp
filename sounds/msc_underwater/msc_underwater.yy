@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":82.285675,
+  "duration":82.28571,
   "name":"msc_underwater",
   "parent":{
     "name":"Music",

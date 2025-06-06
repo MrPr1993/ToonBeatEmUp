@@ -631,6 +631,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 
 	if (key_attack or key_jump) and !key_right and !-key_left
 	{
+weaponY=999999
 
 	///instantly use Down Up Move
 	if key_attack and (commandDown!=0 and commandUp!=0)
@@ -724,7 +725,7 @@ if AnimFrame=1+4 or AnimFrame=8+4 or AnimFrame=16+4  or AnimFrame=24+4
 	}
 
 	if anim=36 ///Pummel
-	{prevanim=36
+	{prevanim=36 weaponY=999999
 	isThrow=1
 	throwing=1
 	comboBreak=0 recovery=10
@@ -825,7 +826,7 @@ targetID.playerFrom=playerNO
 	}
 
 	if anim=37 ///Throw Forwards
-	{
+	{weaponY=999999
 	if AnimFrame=0
 	prevanim=37
 	isThrow=1
@@ -894,7 +895,7 @@ targetID.playerFrom=playerNO
 	}
 
 	if anim=38 ///Throw Backards
-	{
+	{weaponY=999999
 	prevanim=38
 	isThrow=1 recovery=10
 	throwing=1
@@ -979,7 +980,7 @@ targetID.playerFrom=playerNO
 
 	///Throw End
 	if anim=39
-	{atk=0
+	{atk=0 weaponY=999999
 	comboBreak=0
 	selfatk.recovery=30
 	Throw=0

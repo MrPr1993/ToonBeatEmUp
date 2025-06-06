@@ -86,7 +86,7 @@ PlaySoundNoStack(snd_scientist7)
 spit=instance_create_depth(x+102*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=-55 spit.image_xscale=image_xscale
 spit.sprite_index=spr_scientistm_egg spit.bounce=3
 with spit
-{
+{animLock=0
 hitflash=spr_scientistm_egg3
 endflash=spr_scientistm_egg2
 }

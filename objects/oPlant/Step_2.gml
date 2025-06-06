@@ -72,7 +72,7 @@ sm=instance_create_depth(x+32*image_xscale,y+1,0,oPharaohSmoke) sm.hspeed=1*imag
 	{
 		{PlaySoundNoStack(snd_swing4)
 		spit=instance_create_depth(x+6*image_xscale,y+2,depth,oZombieSpit) spit.hspeed=4*image_xscale spit.z=z-66 spit.image_xscale=image_xscale}
-	with spit {boucespd=-6 MoveType=1 bounce=3 
+	with spit {boucespd=-6 MoveType=1 bounce=3 animLock=0
 	sprite_index=spr_plant_seed
 hitflash=spr_plant_seed2 hitSnd=snd_hit
 endflash=spr_plant_seed2

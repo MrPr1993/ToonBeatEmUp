@@ -37,7 +37,7 @@ MoveType=44
 
 bounce=0
 boucespd=-4
-animLock=0
+animLock=1
 
 hitflash=spr_zombiespithit
 endflash=spr_zombiespitend

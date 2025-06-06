@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":29.570612,
+  "duration":29.53848,
   "name":"msc_secretboss",
   "parent":{
     "name":"Music",

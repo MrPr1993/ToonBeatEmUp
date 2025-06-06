@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":59.76816,
+  "duration":59.733334,
   "name":"msc_finalboss2",
   "parent":{
     "name":"Music",

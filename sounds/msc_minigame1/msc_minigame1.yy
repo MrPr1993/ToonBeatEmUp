@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":33.436733,
+  "duration":33.391315,
   "name":"msc_minigame1",
   "parent":{
     "name":"Music",

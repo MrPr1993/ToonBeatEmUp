@@ -8,6 +8,8 @@ function hud_show() {
 	{
 	var _maxplayer=playerFrom _maxplayer=clamp(_maxplayer,1,4)
 	
+	if oControl.Pshowhp[_maxplayer]=0 oControl.PenemyIDtag[_maxplayer]=0
+	
 	oControl.Pshowhp[_maxplayer]=showhp
 
 	oControl.Penemyhp[_maxplayer]=hp oControl.PhpLerp[_maxplayer]=hp oControl.Penemymaxhp[_maxplayer]=maxhp
