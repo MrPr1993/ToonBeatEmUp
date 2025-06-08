@@ -3,6 +3,8 @@ if cutscenePlaying=0
 {
 instance_create_depth(-999,-999,-1,oTextBox)
 
+musicplaystart(msc_mystery)
+
 with oControl
 {canSkipCutscene=0
 CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"

@@ -127,5 +127,19 @@ key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
 	key_start=input_check_pressed("pause",_controlno)
 	key_cancel=input_check_pressed("cancel",_controlno)
 }
+
+if oControl.mirrorMode
+{
+var saveL=key_left;
+var saveLP=key_left_pressed;
+var saveR=key_right;
+var saveRP=key_right_pressed;
+
+key_left=-abs(saveR)
+key_left_pressed=-abs(saveRP)
+key_right=abs(saveL)
+key_right_pressed=abs(saveLP)
+}
+
 }
 

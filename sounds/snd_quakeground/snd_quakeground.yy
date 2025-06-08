@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.669229,
+  "duration":0.6692517,
   "name":"snd_quakeground",
   "parent":{
     "name":"General",

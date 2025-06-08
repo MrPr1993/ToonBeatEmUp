@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.609524,
+  "duration":0.60952383,
   "name":"snd_break",
   "parent":{
     "name":"Objects",

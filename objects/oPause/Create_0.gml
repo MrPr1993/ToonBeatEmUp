@@ -19,6 +19,7 @@ mapXFilm=0;
 filmY=0;
 
 
+
 stagePause=oControl.stagePause
 
 PlaySoundNoStack(snd_picked)

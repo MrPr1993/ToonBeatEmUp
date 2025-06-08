@@ -1,5 +1,6 @@
 room_speed=60
 
+mirrorMode=0;
 roomfast=0
 carMode=0;
 triggerarcadesave=0;

@@ -3,6 +3,8 @@ if cutscenePlaying=0
 {
 instance_create_depth(-999,-999,-1,oTextBox)
 
+musicplaystart(msc_action)
+
 with oControl
 {canSkipCutscene=0
 CDtextT="THE PLANE'S GOING DOWN!\nWHAT YOU'LL DO?!"
@@ -63,7 +65,7 @@ if scenetime=510 specialcheck[0]=0
 if scenetime>=540 and scenetime<=620 
 {
 {if y<0 y+=16 else {y=0 
-	if specialcheck[0]=0 {specialcheck[0]=1 oControl.quakeFXTime=10}}
+	if specialcheck[0]=0 {PlaySound(snd_quakeground) specialcheck[0]=1 oControl.quakeFXTime=10}}
 }
 
 }
@@ -167,7 +169,7 @@ if scenetime>=2280 if x>0 x-=0.5
 
 if scenetime>=2580
 {
-if image_index<=5.5 image_index+=0.25 if image_index=2 {oControl.quakeFXTime=10}
+if image_index<=5.5 image_index+=0.25 if image_index=2 {audio_stop_all() PlaySound(snd_glassbreakm) oControl.quakeFXTime=10}
 }
 
 if scenetime>=2780 image_alpha-=0.025

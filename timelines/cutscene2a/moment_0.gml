@@ -4,6 +4,7 @@ if cutscenePlaying=0
 {
 instance_create_depth(-999,-999,-1,oTextBox)
 
+
 with oControl
 {
 CDtextT="THE SHIP HAS NO DRIVER!\nWHAT NOW?!"
@@ -101,6 +102,9 @@ cutsceneline="AND WHAT'S THAT?"
 
 if scenetime=1920
 {
+PlaySound(snd_explosion2)	
+musicplaystart(msc_action)
+
 specialdraw=function()
 {draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)
 draw_sprite(spr_cutscene2a,0,0,0)
@@ -148,7 +152,7 @@ draw_sprite(sprite_index,1,160,y)
 draw_sprite(spr_cutscene2a2,0,160,192)
 }
 	with oControl
-	{canSkipCutscene=0
+	{canSkipCutscene=0 audio_stop_all()
 cutscenename="VIVA"
 cutsceneline="SO... ANY OF YOU KNOW HOW TO DRIVE THIS?"
 

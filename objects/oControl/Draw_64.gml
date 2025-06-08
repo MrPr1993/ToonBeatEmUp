@@ -44,7 +44,11 @@ surface_resize(new_surf,320,240)
 
 surface_set_target(new_surf);
 draw_clear_alpha(c_black, 0.0);
-draw_surface(application_surface, 0, 0);
+
+
+
+draw_surface_ext(application_surface, 0+320*mirrorMode, 0,1-2*mirrorMode,1,0,c_white,1);
+//draw_surface(application_surface, 0, 0);
 //shader_reset()
 	}
 ////////////////

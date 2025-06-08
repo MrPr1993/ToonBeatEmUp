@@ -2,6 +2,42 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function controller_menu(){
 //var _controlno=1;
+var _KEY_right0 = 0;
+var _KEY_right_pressed0 = 0;
+var _KEY_left0 = 0;
+var _KEY_left_pressed0 = 0;
+var _KEY_up0 = 0;
+var _KEY_up_pressed0 = 0;
+var _KEY_down0 = 0;
+var _KEY_down_pressed0 = 0;
+
+var _KEY_right1 = 0;
+var _KEY_right_pressed1 = 0;
+var _KEY_left1 = 0;
+var _KEY_left_pressed1 = 0;
+var _KEY_up1 = 0;
+var _KEY_up_pressed1 = 0;
+var _KEY_down1 = 0;
+var _KEY_down_pressed1 = 0;
+
+var _KEY_right2 = 0;
+var _KEY_right_pressed2 = 0;
+var _KEY_left2 = 0;
+var _KEY_left_pressed2 = 0;
+var _KEY_up2 = 0;
+var _KEY_up_pressed2 = 0;
+var _KEY_down2 = 0;
+var _KEY_down_pressed2 = 0;
+
+var _KEY_right3 = 0;
+var _KEY_right_pressed3 = 0;
+var _KEY_left3 = 0;
+var _KEY_left_pressed3 = 0;
+var _KEY_up3 = 0;
+var _KEY_up_pressed3 = 0;
+var _KEY_down3 = 0;
+var _KEY_down_pressed3 = 0;
+
 var _KEY_right = 0;
 var _KEY_right_pressed = 0;
 var _KEY_left = 0;
@@ -101,6 +137,43 @@ key_cancelH=0;
 
 if canControl=1
 {
+
+_KEY_right0 = input_check("right",0);
+_KEY_right_pressed0 = input_check_pressed("right",0);
+_KEY_left0 = input_check("left",0);
+_KEY_left_pressed0 = input_check_pressed("left",0);
+_KEY_up0 = input_check("up",0);
+_KEY_up_pressed0 = input_check_pressed("up",0);
+_KEY_down0 = input_check("down",0);
+_KEY_down_pressed0 = input_check_pressed("down",0);
+
+_KEY_right1 = input_check("right",1);
+_KEY_right_pressed1 = input_check_pressed("right",1);
+_KEY_left1 = input_check("left",1);
+_KEY_left_pressed1 = input_check_pressed("left",1);
+_KEY_up1 = input_check("up",1);
+_KEY_up_pressed1 = input_check_pressed("up",1);
+_KEY_down1 = input_check("down",1);
+_KEY_down_pressed1 = input_check_pressed("down",1);
+
+_KEY_right2 = input_check("right",2);
+_KEY_right_pressed2 = input_check_pressed("right",2);
+_KEY_left2 = input_check("left",2);
+_KEY_left_pressed2 = input_check_pressed("left",2);
+_KEY_up2 = input_check("up",2);
+_KEY_up_pressed2 = input_check_pressed("up",2);
+_KEY_down2 = input_check("down",2);
+_KEY_down_pressed2 = input_check_pressed("down",2);
+
+_KEY_right3 = input_check("right",3);
+_KEY_right_pressed3 = input_check_pressed("right",3);
+_KEY_left3 = input_check("left",3);
+_KEY_left_pressed3 = input_check_pressed("left",3);
+_KEY_up3 = input_check("up",3);
+_KEY_up_pressed3 = input_check_pressed("up",3);
+_KEY_down3 = input_check("down",3);
+_KEY_down_pressed3 = input_check_pressed("down",3);
+
 _KEY_right = keyboard_check(ord("D"));
 _KEY_right_pressed = keyboard_check_pressed(ord("D"));
 _KEY_left = keyboard_check(ord("A"));
@@ -153,16 +226,6 @@ for (var i=0;i<gamepad_get_device_count();i++)
 {//var i=0;
 if gamepad_is_connected(i)
 {
-
-	
-key_right =_KEY_right;
-key_right_pressed =_KEY_right_pressed
-key_left =-_KEY_left
-key_left_pressed =-_KEY_left_pressed
-key_up =_KEY_up
-key_up_pressed =_KEY_up_pressed
-key_down =-_KEY_down
-key_down_pressed =-_KEY_down_pressed
 
 	key_X=_KEY_X or gamepad_button_check_pressed(i,gp_face1)
 	key_A=_KEY_A or gamepad_button_check_pressed(i,gp_face2)
@@ -309,14 +372,14 @@ var _DpadRh=abs(gamepad_button_check(i,gp_padr))
 var _DpadUh=abs(gamepad_button_check(i,gp_padu))
 var _DpadDh=abs(gamepad_button_check(i,gp_padd))
 
-key_right =(_KEY_right || stick_right_held || _DpadRh)
-key_right_pressed =(_KEY_right_pressed || stick_right_pressed || _DpadR)
-key_left =(_KEY_left || stick_left_held || _DpadLh)
-key_left_pressed =(_KEY_left_pressed || stick_left_pressed || _DpadL)
-key_up =(_KEY_up || stick_down_held || _DpadUh)
-key_up_pressed =(_KEY_up_pressed || stick_down_pressed || _DpadU)
-key_down =(_KEY_down || stick_up_held || _DpadDh)
-key_down_pressed =(_KEY_down_pressed || stick_up_pressed || _DpadD)
+key_right =(_KEY_right || stick_right_held || _DpadRh || _KEY_right0 || _KEY_right1 || _KEY_right2 || _KEY_right3)
+key_right_pressed =(_KEY_right_pressed || stick_right_pressed || _DpadR || _KEY_right_pressed0 || _KEY_right_pressed1 || _KEY_right_pressed2 || _KEY_right_pressed3)
+key_left =(_KEY_left || stick_left_held || _DpadLh || _KEY_left0 || _KEY_left1 || _KEY_left2 || _KEY_left3)
+key_left_pressed =(_KEY_left_pressed || stick_left_pressed || _DpadL || _KEY_left_pressed0 || _KEY_left_pressed1 || _KEY_left_pressed2 || _KEY_left_pressed3)
+key_up =(_KEY_up || stick_down_held || _DpadUh || _KEY_up0 || _KEY_up1 || _KEY_up2 || _KEY_up3)
+key_up_pressed =(_KEY_up_pressed || stick_down_pressed || _DpadU || _KEY_up_pressed0 || _KEY_up_pressed1 || _KEY_up_pressed2 || _KEY_up_pressed3)
+key_down =(_KEY_down || stick_up_held || _DpadDh || _KEY_down0 || _KEY_down1 || _KEY_down2 || _KEY_down3)
+key_down_pressed =(_KEY_down_pressed || stick_up_pressed || _DpadD || _KEY_down_pressed0 || _KEY_down_pressed1 || _KEY_down_pressed2 || _KEY_down_pressed3)
 
 if key_left!=0 key_left=-1;
 if key_left_pressed!=0 key_left_pressed=-1;
@@ -327,14 +390,14 @@ if key_down_pressed!=0 key_down_pressed=-1;
 exit;
 }
 
-key_right =_KEY_right;
-key_right_pressed =_KEY_right_pressed
-key_left =_KEY_left
-key_left_pressed =_KEY_left_pressed
-key_up =_KEY_up
-key_up_pressed =_KEY_up_pressed
-key_down =_KEY_down
-key_down_pressed =_KEY_down_pressed
+key_right =_KEY_right or _KEY_right0 or _KEY_right1 or _KEY_right2 or _KEY_right3;
+key_right_pressed =_KEY_right_pressed or _KEY_right_pressed0 or _KEY_right_pressed1 or _KEY_right_pressed2 or _KEY_right_pressed3
+key_left =_KEY_left or _KEY_left0 or _KEY_left1 or _KEY_left2 or _KEY_left3
+key_left_pressed =_KEY_left_pressed or _KEY_left_pressed0 or _KEY_left_pressed1 or _KEY_left_pressed2 or _KEY_left_pressed3
+key_up =_KEY_up or _KEY_up0 or _KEY_up1 or _KEY_up2 or _KEY_up3
+key_up_pressed =_KEY_up_pressed or _KEY_up_pressed0 or _KEY_up_pressed1 or _KEY_up_pressed2 or _KEY_up_pressed3
+key_down =_KEY_down or _KEY_down0 or _KEY_down1 or _KEY_down2 or _KEY_down3
+key_down_pressed =_KEY_down_pressed or _KEY_down_pressed0 or _KEY_down_pressed1 or _KEY_down_pressed2 or _KEY_down_pressed3
 
 	key_X=_KEY_X
 	key_A=_KEY_A

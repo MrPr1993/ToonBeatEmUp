@@ -80,7 +80,7 @@ with actor4 {sprite_index=spr_sofia_jump1 x=160+40 image_index=1 y=200 z=-210 ne
 }
 
 if scenetime=640
-{
+{PlaySound(snd_splash2)
 y=0
 x=320 hspeed=-16
 sprite_index=spr_allblackscreen image_xscale=24
@@ -110,7 +110,7 @@ with oControl {cutscenename="VIVA" cutsceneline="GREAT! LET'S GO THERE! WAIT... 
 }
 
 if scenetime=1420
-{image_index=1
+{image_index=1 PlaySound(snd_splash1)
 with oControl {cutscenename="" cutsceneline=""}
 }
 
@@ -156,7 +156,7 @@ newscript=function()
 scenetime+=1;
 
 if scenetime=360
-{
+{PlaySound(snd_metalbreakl)
 specialdraw=function()
 {
 draw_sprite_ext(spr_whitecol,0,0,0,99,99,0,c_black,1)

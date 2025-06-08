@@ -30,6 +30,9 @@ audio_sound_gain(global.CurrentMusic,0,0)
 
 if betatest
 {
+if keyboard_check_pressed(ord("M"))	and keyboard_check(vk_shift)	
+{mirrorMode^=1;}
+
 if keyboard_check_pressed(ord("P"))	and keyboard_check(vk_shift)
 {
 var setquestion=get_string("0 - Reset Data, 1 - All Stages, 2 - All Minigames, 3 - All Enemy Data",0)

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":0.66931975,
   "name":"snd_metalbreakm",
   "parent":{
     "name":"General",
