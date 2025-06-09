@@ -128,6 +128,8 @@ key_right = input_check("right",_controlno)//keyboard_check(ord("D"));
 	key_cancel=input_check_pressed("cancel",_controlno)
 }
 
+if object_index=oPlayer
+if ContinueSelect=0
 if oControl.mirrorMode
 {
 var saveL=key_left;

@@ -20,8 +20,9 @@ playerGet=1
 controlset[12]=0;
 bonusstage=0
 finalStageEnd=0
+mirrorMode=0
 if instance_exists(oControl)
-{
+{mirrorMode=oControl.mirrorMode
 finalStageEnd=oControl.finalStageEnd
 bonusstage=oControl.bonusstage
 }

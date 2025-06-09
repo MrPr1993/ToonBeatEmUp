@@ -2,13 +2,14 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_playerhp(){
 	draw_set_halign(fa_left)
+d3d_transform_set_identity()
 if object_index=oPlayer
-{
+{var _xcamx=x-oControl.camX if oControl.mirrorMode _xcamx=320-x+oControl.camX
 if showp1=1
-draw_sprite(playerIcon,playerNO-1,round(x-oControl.camX),round(y+z-height-4-oControl.camY))
+draw_sprite(playerIcon,playerNO-1,round(_xcamx),round(y+z-height-4-oControl.camY))
 if showmash=1
 {
-draw_sprite(spr_buttonmash,showmashI,round(x-oControl.camX),round(y+z-height-4-oControl.camY))
+draw_sprite(spr_buttonmash,showmashI,round(_xcamx),round(y+z-height-4-oControl.camY))
 if showmashI=1.75 showmashI=0 else showmashI+=0.25
 }
 }

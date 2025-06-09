@@ -129,6 +129,8 @@ charsetting=0
 
 if !variable_global_exists("CurrentMusic")
 {	
+global.GMirrorMode=0;	
+
 global.StageSave=rm_opening;
 
 global.StageInfo=rm_opening;

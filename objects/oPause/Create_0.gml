@@ -19,7 +19,7 @@ mapXFilm=0;
 filmY=0;
 
 
-
+mirrorMode=oControl.mirrorMode
 stagePause=oControl.stagePause
 
 PlaySoundNoStack(snd_picked)
