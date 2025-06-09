@@ -197,10 +197,10 @@ if scenetime=520
 {with flashscreen{image_alpha=1 fadeSpd=-0.05}
 with oCameoChar x=-999
 
-with actor1 {x=-96; image_speed=0.1 sprite_index=spr_viva_seahorse; hspeed=2}
-with actor2 {x=-100; image_speed=0.1 sprite_index=spr_hina_seahorse; hspeed=2}
-with actor3 {x=-90; image_speed=0.1 sprite_index=spr_bahati_seahorse; hspeed=2}
-with actor4 {x=-92; image_speed=0.1 sprite_index=spr_sofia_seahorse; hspeed=2}
+with actor1 {x=-96; image_speed=0.25 sprite_index=spr_viva_seahorse; hspeed=2}
+with actor2 {x=-130; image_speed=0.25 sprite_index=spr_hina_seahorse; hspeed=2}
+with actor3 {x=-90; image_speed=0.25 sprite_index=spr_bahati_seahorse; hspeed=2}
+with actor4 {x=-122; image_speed=0.25 sprite_index=spr_sofia_seahorse; hspeed=2}
 
 with oControl {cutscenename="" cutsceneline= ""}
 
@@ -236,10 +236,10 @@ cutscenename="HINA" cutsceneline= "Wait... I think they're speeding up!"
 if scenetime=1300
 {////They walk off
 
-with actor1 {image_speed=0.2 sprite_index=spr_viva_seahorse2; hspeed=4}
-with actor2 {image_speed=0.2 sprite_index=spr_hina_seahorse2; hspeed=4}
-with actor3 {image_speed=0.2 sprite_index=spr_bahati_seahorse2; hspeed=4}
-with actor4 {image_speed=0.2 sprite_index=spr_sofia_seahorse2; hspeed=4}
+with actor1 {image_speed=0.5 sprite_index=spr_viva_seahorse2; hspeed=4}
+with actor2 {image_speed=0.5 sprite_index=spr_hina_seahorse2; hspeed=4}
+with actor3 {image_speed=0.5 sprite_index=spr_bahati_seahorse2; hspeed=4}
+with actor4 {image_speed=0.5 sprite_index=spr_sofia_seahorse2; hspeed=4}
 
 layer_hspeed("BGcity",-8)
 layer_hspeed("BGcity2",-8)

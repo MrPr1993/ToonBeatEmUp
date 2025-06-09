@@ -3218,6 +3218,7 @@
     {"name":"spr_mermaidcutscene_clam","order":9,"path":"sprites/spr_mermaidcutscene_clam/spr_mermaidcutscene_clam.yy",},
     {"name":"spr_mermaidcutscene_crazyhair","order":23,"path":"sprites/spr_mermaidcutscene_crazyhair/spr_mermaidcutscene_crazyhair.yy",},
     {"name":"spr_mermaidcutscene_pool","order":11,"path":"sprites/spr_mermaidcutscene_pool/spr_mermaidcutscene_pool.yy",},
+    {"name":"spr_mermaidcutscene_pool2","order":24,"path":"sprites/spr_mermaidcutscene_pool2/spr_mermaidcutscene_pool2.yy",},
     {"name":"spr_mermaidcutscene_seahorse","order":10,"path":"sprites/spr_mermaidcutscene_seahorse/spr_mermaidcutscene_seahorse.yy",},
     {"name":"spr_mermaidcutscene_seahorse2","order":18,"path":"sprites/spr_mermaidcutscene_seahorse2/spr_mermaidcutscene_seahorse2.yy",},
     {"name":"spr_merman_airkick","order":19,"path":"sprites/spr_merman_airkick/spr_merman_airkick.yy",},
