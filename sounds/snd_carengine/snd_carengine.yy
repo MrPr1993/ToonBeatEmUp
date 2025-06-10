@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.857596,
+  "duration":1.8575964,
   "name":"snd_carengine",
   "parent":{
     "name":"Objects",

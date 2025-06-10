@@ -23,6 +23,8 @@ __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
+PlaySoundNoStackPitch(snd_carengine,0.25)
+
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
 {sprite_index=mask_none anim=9999 isDepth=0 depth=-3000 shadow=-1;
 
@@ -53,25 +55,25 @@ with oCameoChar hspeed=0;
 }
 
 if scenetime>=160
-{
+{if scenetime=160 PlaySound(snd_jump)
 with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
 
-with actor3 { sprite_index=spr_bahati_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
+with actor3 {sprite_index=spr_bahati_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
 }
 if scenetime>=200
-{
+{if scenetime=200 PlaySound(snd_jump)
 with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
 
 with actor2 {sprite_index=spr_hina_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
 }
 if scenetime>=240
-{
+{if scenetime=240 PlaySound(snd_jump)
 with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
 
 with actor4 {sprite_index=spr_sofia_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
 }
 if scenetime>=280
-{
+{if scenetime=280 PlaySound(snd_jump)
 with oCameoChar {if !ground {spdZ+=0.45 z+=spdZ} else {z=0 spdZ=0}}
 
 with actor1 {sprite_index=spr_viva_jump1 image_speed=0 image_index=1 ground=0 hspeed=2 spdZ=-8}
@@ -88,7 +90,7 @@ sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
 
 if scenetime=clamp(scenetime,400,435)
-{scenetime=410 actor5.z-=4
+{scenetime=410 actor5.z-=4 
 if flashscreen.image_alpha>=1.5
 {x=0; y=0; sprite_index=spr_cutscene7; image_index=0;
 with flashscreen {fadeSpd=-0.25 isfading=1 image_alpha=1}
@@ -97,7 +99,7 @@ scenetime=620
 }
 
 if scenetime=620
-{
+{PlaySoundNoStackPitch(snd_wind,0.5)
 vspeed=-0.25/2
 }
 
@@ -107,6 +109,15 @@ oControl.stageEndFX=1
 }
 
 /////	
+if actor1.ground=0 actor1.y=lerp(actor1.y,actor5.y,0.1)
+if actor2.ground=0 actor2.y=lerp(actor2.y,actor5.y,0.1)
+if actor3.ground=0 actor3.y=lerp(actor3.y,actor5.y,0.1)
+if actor4.ground=0 actor4.y=lerp(actor4.y,actor5.y,0.1)
+
+if actor1.x>=actor5.x actor1.hspeed=0
+if actor2.x>=actor5.x actor2.hspeed=0
+if actor3.x>=actor5.x actor3.hspeed=0
+if actor4.x>=actor5.x actor4.hspeed=0
 
 }
 }

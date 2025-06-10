@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.309637,
+  "duration":0.3096372,
   "name":"snd_hit3",
   "parent":{
     "name":"Objects",

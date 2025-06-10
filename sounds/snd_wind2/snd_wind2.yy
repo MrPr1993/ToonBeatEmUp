@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":2.326458,
+  "duration":2.3264625,
   "name":"snd_wind2",
   "parent":{
     "name":"General",

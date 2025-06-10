@@ -219,7 +219,7 @@ cutscenename="SOFIA" cutsceneline= "Can't they go any faster?!"
 
 if scenetime=860
 {
-with oControl {cutscenename="BAHATI" cutsceneline= "We'll never catch that blimp at this rate!"
+with oControl {cutscenename="BAHATI" cutsceneline= "We'll never catch those crooks at this rate!"
 }
 }
 
@@ -235,7 +235,7 @@ cutscenename="HINA" cutsceneline= "Wait... I think they're speeding up!"
 
 if scenetime=1300
 {////They walk off
-
+PlaySound(snd_carengine) oControl.quakeFXTime=10
 with actor1 {image_speed=0.5 sprite_index=spr_viva_seahorse2; hspeed=4}
 with actor2 {image_speed=0.5 sprite_index=spr_hina_seahorse2; hspeed=4}
 with actor3 {image_speed=0.5 sprite_index=spr_bahati_seahorse2; hspeed=4}
@@ -264,7 +264,7 @@ if scenetime=1700
 with oControl {//KERSMASH!
 	quakeFXTime=10
 cutscenename="" cutsceneline= ""}
-sprite_index=spr_cutscene5a x=0 y=0
+sprite_index=spr_mermaidcutscene_crazyhair x=0 y=0 PlaySound(snd_hit2)
 with oControl {SceneX=0; __view_set( e__VW.XView, 0, SceneX )}
 layer_hspeed("BGcity",0)
 layer_hspeed("BGcity2",0)
