@@ -37,7 +37,7 @@ with oControl {SceneX-=2; __view_set( e__VW.XView, 0, SceneX )}
 }
 
 if scenetime=200
-{
+{with actor4 {sprite_index=spr_sofia_itemthrow} with actor5 {sprite_index=spr_prince_stand image_speed=0 image_index=0}
 with oControl
 {
 //One clam ride later
@@ -52,20 +52,23 @@ with oControl
 cutscenename="VIVA" cutsceneline= "Thank you, cousin. Alright girls let's go!"
 }
 
-with actor1 {image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
-with actor4 {image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
+//with actor1 {image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
+//with actor2 {image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
+//with actor3 {image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
+//with actor4 {image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
 
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 {image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
+
+
+
 }
 
 //////
 if scenetime=620
-{
+{musicplaystart(msc_stageselect) with oBGwave spr_background=bg_stylefx2
 with flashscreen{image_alpha=1 fadeSpd=-0.05}
 with oControl
 {
@@ -74,12 +77,14 @@ with oCameoChar x=9999
 
 with oControl {SceneX=0 __view_set( e__VW.XView, 0, 0)}
 
-cutscenename="" cutsceneline= "Clam swims up"
+cutscenename="" cutsceneline= ""
 }
 with actor6
-{x=160 shadow=-1 y=240 vspeed=-4
+{x=160 shadow=-1 y=240 vspeed=-4 image_index=1 image_xscale=1
 }
 
+layer_set_visible("BGcity2",0)
+layer_set_visible("BGcity",0)
 
 }
 
@@ -96,32 +101,24 @@ with oControl {cutscenename="" cutsceneline= ""}
 if scenetime=800
 {
 with actor6
-{
-x=160 y=160 vspeed=0
+{PlaySound(snd_splash2) flashFX(x,y+2,0,spr_watersplash,0,0.25,10,1,1,c_white,1)
+x=160 y=160 vspeed=0 image_index=2
 sprite_index=spr_mermaidcutscene_clam
 }
 }
 
 if scenetime=900
-{
+{audio_stop_all() PlaySound(snd_woodbreakl) PlaySound(snd_hit4) oControl.quakeFXTime=10
 with actor6
 {
 x=160 y=160
-sprite_index=spr_mermaidcutscene_clam_ew
+image_index=3
 }
-}
-
-if scenetime=1120
-{
-with actor6
-{
-newscript=function()
-{
-if !ground {spdZ+=0.45} z+=spdZ if z>=0 ground=1 if ground{z=0 spdZ=0}
-
-}
+scenetime=1220
 }
 
+if scenetime=1220
+{
 with oControl {cutscenename="BAHATI" cutsceneline= "BLECHHHHHH!!!!!"}
 }
 
@@ -147,7 +144,7 @@ with oControl {cutscenename="HINA" cutsceneline= "Woah is just me or is it cold 
 
 if scenetime=2120
 {
-sprite_index=spr_mermaidcutscene_clam_lookmountain x=160 y=192 vspeed=0.01
+sprite_index=spr_mermaidcutscene_clam_lookmountain x=0 y=-48 vspeed=0.2
 with oControl {cutscenename="VIVA" cutsceneline= "Well, Hina, it's because that's why."}
 }
 
@@ -191,16 +188,17 @@ flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 {image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
+musicplaystart(msc_stageselect)
 }
 
 if scenetime=520
 {with flashscreen{image_alpha=1 fadeSpd=-0.05}
 with oCameoChar x=-999
 
-with actor1 {x=-96; image_speed=0.25 sprite_index=spr_viva_seahorse; hspeed=2}
-with actor2 {x=-130; image_speed=0.25 sprite_index=spr_hina_seahorse; hspeed=2}
-with actor3 {x=-90; image_speed=0.25 sprite_index=spr_bahati_seahorse; hspeed=2}
-with actor4 {x=-122; image_speed=0.25 sprite_index=spr_sofia_seahorse; hspeed=2}
+with actor1 {x=-96; image_speed=0.25 sprite_index=spr_viva_seahorse; hspeed=2.5}
+with actor2 {x=-130; y+=4 image_speed=0.25 sprite_index=spr_hina_seahorse; hspeed=1.9}
+with actor3 {x=-90; image_speed=0.25 sprite_index=spr_bahati_seahorse; hspeed=2.3}
+with actor4 {x=-122; image_speed=0.25 sprite_index=spr_sofia_seahorse; hspeed=2.1}
 
 with oControl {cutscenename="" cutsceneline= ""}
 
@@ -250,7 +248,7 @@ with oControl {cutscenename="VIVA" cutsceneline= "Woah woah WOAH! NOT THAT MUCH!
 }
 
 if scenetime=1500
-{
+{audio_stop_all()
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 {image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_black depth=-4000
@@ -295,10 +293,13 @@ CutsceneStage=rm_stageclouds
 with actorscreen
 {scenetime=0;
 with oControl {//-Blue Oni is lying(Beach)-
-cutscenename="" cutsceneline= "" SceneX+=32; __view_set( e__VW.XView, 0, SceneX )
+cutscenename="" cutsceneline= "" //SceneX-=32; __view_set( e__VW.XView, 0, SceneX )
 }
 
-sprite_index=spr_allblackscreen x=oControl.SceneX y=0
+sprite_index=spr_allblackscreen image_xscale=2000 x=oControl.SceneX+320 hspeed=-16 y=0
+
+
+musicplaystart(msc_action)
 
 with actor1
 {x=11215-16 y=171 image_xscale=-1}
@@ -314,9 +315,16 @@ newscript=function()
 scenetime+=1;
 
 if scenetime=60
-{with actor6 {x=9999} with actor7 {x=9999} 
+{
+sprite_index=spr_allblackscreen image_xscale=1 x=oControl.SceneX hspeed=-16 y=0
 
-with actor5 {image_xscale=1 x=oControl.SceneX+80}
+with oControl {SceneX-=0; __view_set( e__VW.XView, 0, SceneX )}
+	
+with actor6 {x=9999} with actor7 {x=9999} 
+
+//with flashscreen {image_alpha=1 fadeSpd=-0.05}
+
+with actor5 {image_xscale=1 x=oControl.SceneX+110}
 
 actor1.x=actor8.x-24 actor1.y=actor8.y actor1.image_xscale=-1
 actor2.x=actor8.x+24 actor2.y=actor8.y actor1.image_xscale=-1
@@ -327,15 +335,26 @@ sprite_index=mask_none
 with oControl {cutscenename="PRINCE" cutsceneline= "Water will rocket out of this spout! Ride it and you should be able to catch those miscreants!"}
 }
 
+if scenetime=clamp(scenetime,620,660) {with oControl {SceneX-=0.5; __view_set( e__VW.XView, 0, SceneX )}}
 
 if scenetime=620
-{
+{actor6.y=actor5.y
+with actor6 {x=oControl.camX-128 image_xscale=1 sprite_index=spr_davey_move image_speed=0.25 hspeed=3.5}	
+
+with actor5 {image_xscale=-1 image_speed=0 image_index=24 sprite_index=spr_prince_hit}
+
 with oControl {cutscenename="DAVEY" cutsceneline= "Your highness! WE GOT A PROBLEM!"
 }
 }
 
-if scenetime=860
+if scenetime=660
 {
+with actor6 {hspeed=0 image_speed=0 image_speed=0 image_index=24 sprite_index=spr_davey_stand}
+
+}
+
+if scenetime=860
+{audio_stop_all();
 with oControl {cutscenename="DAVEY" cutsceneline= "The trajectory of the spout is way off!"
 
 	}
@@ -345,23 +364,32 @@ if scenetime=1060
 {
 with oControl {cutscenename="DIVAS" cutsceneline= "WHAT?!"
 }
+with actor1 {image_speed=0 image_index=0 sprite_index=spr_viva_wildtake}
+with actor2 {image_speed=0 image_index=0 sprite_index=spr_hina_wildtake}
+with actor3 {image_speed=0 image_index=0 sprite_index=spr_bahati_wildtake}
+with actor4 {image_speed=0 image_index=0 sprite_index=spr_sofia_wildtake}
+
+with actor5 image_xscale=1
 }
 
 if scenetime=1200
-{
+{PlaySound(snd_tremor2)
 with oControl {quakeFXTime=160 cutscenename="VIVA" cutsceneline="PRINCE YOU STUPID FU-"}
 scenetime=1400
 }
 
 if scenetime=1480
-{
+{with actor8 {sprite_index=spr_mermaidcutscene_pool2 image_speed=0.5 flashFX(x,y+4,0,spr_watersplash,0,0.25,10,1,1,c_white,1)}
 with oControl {//Divas move
-cutscenename="" cutsceneline=""}
+cutscenename="" cutsceneline="" PlaySound(snd_explosion)}
 
-with actor1 {shadow=-1; newscript=function(){z-=16}}
-with actor2 {shadow=-1; newscript=function(){z-=16}}
-with actor3 {shadow=-1; newscript=function(){z-=16}}
-with actor4 {shadow=-1; newscript=function(){z-=16}}
+with actor1 {sprite_index=spr_viva_bdance shadow=-1; newscript=function(){z-=16}}
+with actor2 {sprite_index=spr_hina_bdance shadow=-1; newscript=function(){z-=16}}
+with actor3 {sprite_index=spr_bahati_bdance shadow=-1; newscript=function(){z-=16}}
+with actor4 {sprite_index=spr_sofia_bdance shadow=-1; newscript=function(){z-=16}}
+
+with actor5 {sprite_index=spr_prince_cutscene image_index=0}
+with actor6 {sprite_index=spr_davey_stand image_index=1}
 
 }
 
@@ -375,12 +403,19 @@ if scenetime=1800
 {
 with oControl {//SMASH!
 cutscenename="PRINCE" cutsceneline="I'm pretty sure they'll be fine."}
+
+//with actor5 {sprite_index=spr_prince_hit image_index=24}
+with actor6 {sprite_index=spr_davey_stand image_index=0}
+
 }
 
 if scenetime=1960
 {
 with oControl {//SMASH!
 cutscenename="PRINCE" cutsceneline="Hoo boy..."}
+
+with actor5 {sprite_index=spr_prince_cutscene image_index=1}
+
 }
 
 if scenetime=2120

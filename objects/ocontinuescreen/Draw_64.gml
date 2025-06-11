@@ -246,9 +246,9 @@ if finalStageHi=1
 {
 finalStageMono-=0.01
 shader_set(shd_grayscale)
-draw_sprite(spr_photoplaceholder,0,0,0)
+draw_sprite_ext(spr_photoplaceholder,0,0+320*mirrorMode,0,1-2*mirrorMode,1,0,c_white,1)
 shader_reset()
-draw_sprite_ext(spr_photoplaceholder,0,0,0,1,1,0,c_white,finalStageMono)
+draw_sprite_ext(spr_photoplaceholder,0,0+320*mirrorMode,0,1-2*mirrorMode,1,0,c_white,finalStageMono)
 }
 draw_set_halign(fa_left)
 if playNO=1 with p1

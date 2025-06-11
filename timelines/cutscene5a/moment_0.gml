@@ -20,7 +20,10 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene5a0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_cutscene5a0 image_speed=0.25 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+
+actorBG=instance_create_depth(0,0,-1,oCameoChar) with actorBG
+{sprite_index=spr_cutscene5a anim=9999 isDepth=0 depth=16777210 shadow=-1;}
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -33,13 +36,13 @@ actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 actor5=instance_create_depth(11215,170,-1,oCameoChar) with actor5
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
-actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
+actor6=instance_create_depth(11215+120,170,-1,oCameoChar) with actor6
 {sprite_index=spr_mermaidcutscene_clam anim=9999 image_xscale=-1}
 
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
-{sprite_index=spr_mermaidcutscene_seahorse anim=9999 image_xscale=-1}
+{sprite_index=spr_mermaidcutscene_seahorse anim=9999 image_speed=0.2 image_xscale=-1}
 
-actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
+actor8=instance_create_depth(11215-110,170,-1,oCameoChar) with actor8
 {sprite_index=spr_mermaidcutscene_pool shadow=-1; anim=9999 isDepth=0 depth=1000 image_xscale=-1}
 
 
@@ -47,7 +50,7 @@ actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
 with oControl
-{
+{musicplaystart(msc_gallery)
 cutscenename="PRINCE" cutsceneline= "Hahahahahaha! Congratulations on a fight well won, my dear Viva and friends!"
 }
 
@@ -61,7 +64,7 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene
 
 if scenetime<340 {y=lerp(y,240,0.1)}
 if scenetime=340
-{sprite_index=spr_cutscene5a1
+{sprite_index=spr_cutscene5a1 actorBG.sprite_index=spr_cutscene5a image_speed=0 image_index=0
 with oControl
 {
 cutscenename="PRINCE"
@@ -71,7 +74,7 @@ y=0 vspeed=-0.2
 }
 
 if scenetime=540
-{sprite_index=spr_cutscene5a2 image_index=0 vspeed=0 x=0 y=0
+{sprite_index=spr_cutscene5a2 image_index=0 vspeed=0 x=0 y=0 actorBG.image_index=1
 with oControl
 {
 cutscenename="SOFIA"
@@ -95,17 +98,17 @@ if scenetime=1000
 
 if scenetime=1260
 {
-	
+actorBG.hspeed=-0.25	
 with oControl
 {image_index=1
 cutscenename="PRINCE" cutsceneline= "Oh, my slim cousin of mine..."}
 hspeed=-2 
 }
 
-if scenetime=1300 hspeed=0
+if scenetime=1300 {hspeed=0 actorBG.hspeed=0}
 
 if scenetime=1540
-{sprite_index=spr_cutscene5a3 image_index=1 vspeed=0 x=0 y=0 specialcheck[0]=0
+{sprite_index=spr_cutscene5a3 image_index=1 vspeed=0 x=0 y=0 specialcheck[0]=0 actorBG.image_index=2 actorBG.x=0;
 with oControl
 {
 cutscenename="PRINCE" cutsceneline= "I'm terribly sorry that my people attacked you so suddenly, but they needed to test you!"
@@ -145,13 +148,16 @@ with oControl
 {cutscenename="PRINCE" cutsceneline= "And how is that diamond I gave you, cousin?"}
 }
 
-if scenetime=clamp(scenetime,3140,3440) {image_index+=0.5; if image_index>=6 image_index=4}
+if scenetime=3140 {audio_stop_all() PlaySound(snd_splash5)}
+if scenetime=clamp(scenetime,3140,3440) {
+	
+	image_index+=0.5; if image_index>=6 image_index=4}
 
 if scenetime=3440
 {
 specialdraw=-1;
 
-sprite_index=spr_cutscene5a2 image_index=3 x=0 y=0
+sprite_index=spr_cutscene5a2 image_index=3 x=0 y=0 actorBG.image_index=3
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Oh yeah... I can... about that..."}
@@ -166,35 +172,38 @@ sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
 
 if scenetime=clamp(scenetime,3960,4040) if flashscreen.image_alpha>=2
-{x=160; y=320; sprite_index=spr_cutscene5a5; image_index=0;
+{x=160; y=320; sprite_index=spr_cutscene5a5; image_index=0; actorBG.image_index=4
+	
+PlaySound(snd_explosion2) PlaySound(msc_mystery)
+	
 with flashscreen {fadeSpd=0 image_alpha=0}
-scenetime=4050
+scenetime=4050 actorBG.image_index=4
 
 with oControl
 {quakeFXTime=10;
 cutscenename="PRINCE" cutsceneline= "Sweet scallops this is terrible! That diamond is enchanted! Terrible things could happen with the wrong hands!"}
 } else scenetime=3970;
 
-if scenetime=clamp(scenetime,3970,3390)
+if scenetime=clamp(scenetime,3970,4390)
 {y=lerp(y,192,0.1)
 }
 
 if scenetime=4400
-{image_index=1;
+{image_index=1; actorBG.image_index=5 audio_stop_all()
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Does he always do that?"}
 }
 
 if scenetime=4600
-{
+{image_index=2
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Yeah, most of the time. Prince, do you have any way to help us?"}
 }
 
 if scenetime=4900
-{specialcheck[0]=321;
+{specialcheck[0]=321; 
 with oControl
 {
 cutscenename="PRINCE" cutsceneline= "Of course! Quickly! We must pursue those fiends posthaste! My servants and I will send you on your way!"}
@@ -215,7 +224,7 @@ if specialcheck[0]<=0 {scenetime=6000-60 with oControl canSkipCutscene=0}
 }
 
 if scenetime=6000
-{
+{actorBG.sprite_index=mask_none
 sprite_index=mask_none
 
 with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
@@ -224,9 +233,9 @@ with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
 with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
 with actor5 {x=60; image_speed=0.25 sprite_index=spr_prince_move; image_xscale=1 hspeed=2}
 
-with actor6 {x=400}
+with actor6 {x=400+56}
 with actor7 {x=520 }
-with actor8 {x=640}
+with actor8 {x=640-32}
 
 with oControl
 {
@@ -239,7 +248,7 @@ with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
 with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
 with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
 with actor4 {image_speed=0 sprite_index=spr_sofia_stand; hspeed=0}
-with actor5 {image_speed=0 sprite_index=spr_prince_stand; image_xscale=-1 hspeed=0}
+with actor5 {image_speed=0.25 sprite_index=spr_prince_talk; image_xscale=-1 hspeed=0}
 }
 
 if scenetime=clamp(scenetime,6000,6300) specialcheck[0]-=8;
@@ -249,7 +258,7 @@ if scenetime=clamp(scenetime,6120,6300)
 with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
 }
 
-if scenetime=6500
+if scenetime=6350
 {
 with oControl
 {

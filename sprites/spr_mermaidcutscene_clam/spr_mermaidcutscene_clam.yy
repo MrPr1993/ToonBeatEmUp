@@ -13,6 +13,8 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"02696b9b-0302-4be3-b1c6-52344763520d","name":"02696b9b-0302-4be3-b1c6-52344763520d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"7536f548-ca5a-4cb9-8f42-8c8d36ee49da","name":"7536f548-ca5a-4cb9-8f42-8c8d36ee49da","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"7f416053-c20a-461d-b4b3-dfb981937b9c","name":"7f416053-c20a-461d-b4b3-dfb981937b9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -50,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":2.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -75,8 +77,14 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","path":"sprites/spr_mermaidcutscene_clam/spr_mermaidcutscene_clam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ad2e76c0-66ba-46b0-9604-f9490deea20a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"02696b9b-0302-4be3-b1c6-52344763520d","path":"sprites/spr_mermaidcutscene_clam/spr_mermaidcutscene_clam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"650c8f01-d5c0-49cd-bcc4-8526fbde8c83","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7536f548-ca5a-4cb9-8f42-8c8d36ee49da","path":"sprites/spr_mermaidcutscene_clam/spr_mermaidcutscene_clam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3c896883-1dcd-4d90-b65d-85e4f546db84","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7f416053-c20a-461d-b4b3-dfb981937b9c","path":"sprites/spr_mermaidcutscene_clam/spr_mermaidcutscene_clam.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"252f15f6-00a3-41df-b76e-d52754ca3a9b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"252f15f6-00a3-41df-b76e-d52754ca3a9b","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

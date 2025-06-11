@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.529687,
+  "duration":0.5297052,
   "name":"snd_woodbreakm",
   "parent":{
     "name":"General",

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.22059,
+  "duration":0.22058956,
   "name":"snd_splash4",
   "parent":{
     "name":"General",

@@ -6,4 +6,6 @@ monochrome=0
 SpinMode=0
 SpinSpd=0.25
 
+fadeclamp=0
+
 fadeMax=99999
