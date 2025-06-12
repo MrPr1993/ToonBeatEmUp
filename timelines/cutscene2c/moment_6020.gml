@@ -188,6 +188,15 @@ x=0
 
 x=-500*5 y=193 sprite_index=spr_trainzoom hspeed=0.5*5
 
+specialdraw=function() {
+draw_sprite(sprite_index,0,x+320*0,y)
+draw_sprite(sprite_index,1,x+320*1,y)
+draw_sprite(sprite_index,2,x+320*2,y)
+draw_sprite(sprite_index,3,x+320*3,y)
+draw_sprite(sprite_index,4,x+320*4,y)
+draw_sprite(sprite_index,5,x+320*5,y)
+}
+
 with oControl {cutscenename="SOFIA" cutsceneline="I CALL DIBS ON THE COAL!"}}
 
 if scenetime=420{
@@ -346,6 +355,8 @@ sprite_index=spr_whitecol image_blend=c_black depth=-4000
 if scenetime=3320
 {with oCameoChar {x=-99 y=-999}
 
+PlaySound(snd_train)
+
 layer_set_visible("TrainPart1",0)
 layer_set_visible("TrainPart2",0)
 layer_set_visible("Sky2",1)
@@ -353,10 +364,20 @@ layer_set_visible("Sky2",1)
 x=-500*5 y=193
 	
 sprite_index=spr_trainzoom hspeed=5
-	
+
+specialdraw=function() {
+draw_sprite(sprite_index,0,x+320*0,y)
+draw_sprite(sprite_index,1,x+320*1,y)
+draw_sprite(sprite_index,2,x+320*2,y)
+draw_sprite(sprite_index,3,x+320*3,y)
+draw_sprite(sprite_index,4,x+320*4,y)
+draw_sprite(sprite_index,5,x+320*5,y)
+}
+
 with oControl {cutscenename="" cutsceneline=""
 	with flashscreen instance_destroy();
 	}
+
 }
 
 ////END SCENE PART

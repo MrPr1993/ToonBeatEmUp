@@ -485,20 +485,26 @@ var creditscameor="\n"+
 "\n"+
 "\n"
 
-///ON STAGE - needs animation
+///COMPLETE
+//6 shademanv4 - Sexy mermaid
 //RJ - new gal - ON STAGE
+//guiterman13 - Soda punk
+//Nfate - Hypno gal at beach
+
+
+///////ON STAGE - needs animation
 //SKEPTICAL - snek gal
 //Wolfzeta - Blue hair gal on beach
 //shyguywhy - Beef shark on beach
-//Nfate - Hypno gal at beach
 //Fva - demon gal
 //Rovenami - Cowgirl - train
 //toainsully - train
 //Gatordragon - jester gal
-//guiterman13 - Soda punk
+
+
 ////Cryptic Draws - drink person
 //5 Gaming Eelektross - Dragon Guard sleepng on snow stage
-//6 shademanv4 - Sexy mermaid
+
 //7 Vauvenader - Underwater shark
 
 ////PIXELED
@@ -507,12 +513,12 @@ var creditscameor="\n"+
 //PsychoJosh - beach Duo
 //Zengumi - cloudy kiss
 //Wobbleblot - cloudy kiss
-
+///Flash Trickstar - needs partner
 
 ///OTHER
 //butchtheamazing - ???
 //Flash Trickstar
-//Peterjuice
+//Peterjuice - PAID
 //YinSeiryu - Samurai with cats 
 //
 //
