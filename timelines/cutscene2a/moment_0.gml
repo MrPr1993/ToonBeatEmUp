@@ -45,7 +45,7 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 scenetime=6000}
 	
 ///280 for short sentences
 if scenetime=60
-{
+{with actor1 {sprite_index=spr_viva_talk2 image_speed=0.1}
 with oControl
 {cutscenename="VIVA"
 cutsceneline="WELL THAT WAS SOMETHING."
@@ -54,6 +54,9 @@ cutsceneline="WELL THAT WAS SOMETHING."
 
 if scenetime=340
 {
+with actor1 {image_index=0 image_speed=0}
+with actor2 {sprite_index=spr_hina_talk2 image_speed=0.1}
+
 with oControl
 {cutscenename="HINA"
 cutsceneline="WOW SHE'S HUGE."
@@ -62,6 +65,10 @@ cutsceneline="WOW SHE'S HUGE."
 
 if scenetime=680
 {
+with actor2 {image_index=0 image_speed=0}
+
+with actor1 {sprite_index=spr_viva_idle image_index=1 image_speed=0}
+
 with oControl
 {cutscenename="VIVA"
 cutsceneline="UGH... BUT THAT TRUCK GOT AWAY. NOW WHAT?"
@@ -70,6 +77,8 @@ cutsceneline="UGH... BUT THAT TRUCK GOT AWAY. NOW WHAT?"
 
 if scenetime=1000
 {
+with actor3 {sprite_index=spr_bahati_talk image_speed=0.1}
+
 with oControl
 {cutscenename="BAHATI"
 cutsceneline="WE COULD ASK FOR THE CAPTAIN OF THE SHIP TO DRIVE US TO A PORT?"
@@ -78,6 +87,9 @@ cutsceneline="WE COULD ASK FOR THE CAPTAIN OF THE SHIP TO DRIVE US TO A PORT?"
 
 if scenetime=1280
 {
+with actor3 {image_index=0 image_speed=0}
+with actor1 {sprite_index=spr_viva_cutscene image_index=1}	
+
 with oControl
 {cutscenename="VIVA"
 cutsceneline="WELL OF COURSE..."
@@ -86,6 +98,9 @@ cutsceneline="WELL OF COURSE..."
 
 if scenetime=1560
 {
+with actor1 {image_index=0 image_speed=0}
+with actor4 {sprite_index=spr_sofia_talk2 image_speed=0.1}
+
 with oControl
 {cutscenename="SOFIA"
 cutsceneline="ONE PROBLEM."
@@ -94,6 +109,9 @@ cutsceneline="ONE PROBLEM."
 
 if scenetime=1740
 {
+with actor4 {image_index=0 image_speed=0}
+with actor1 {sprite_index=spr_viva_cutscene image_index=0}	
+
 with oControl
 {cutscenename="VIVA"
 cutsceneline="AND WHAT'S THAT?"

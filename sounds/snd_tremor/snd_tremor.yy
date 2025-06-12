@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.293,
+  "duration":1.2930158,
   "name":"snd_tremor",
   "parent":{
     "name":"General",

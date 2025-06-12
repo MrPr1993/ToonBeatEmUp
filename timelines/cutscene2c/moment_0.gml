@@ -47,7 +47,14 @@ actor5=instance_create_depth(215,170,-1,oCameoChar) with actor5
 actorC1=instance_create_depth(215+140,170-32,-1,oCameoChar) with actorC1
 {sprite_index=spr_cowboy_move image_index=9 anim=99999 image_xscale=-1}
 actorC2=instance_create_depth(215+140,170+32,-1,oCameoChar) with actorC2
-{sprite_index=spr_cowboy_move image_index=9 anim=99999 image_xscale=-1}
+{sprite_index=spr_cowboy_move image_index=9 anim=99999 image_xscale=-1
+		specialdraw=function()
+	{
+pal_swap_set(spr_ninjapal,6,false);
+	draw_sprite_ext(sprite_index,image_index,round(x),round(y+z+trainz),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
+pal_swap_reset()
+	}
+	}
 
 actorscreen=instance_create_depth(0,0,-1,oCameoChar) with actorscreen
 {sprite_index=spr_cutscene2c0 anim=9999 isDepth=0 depth=-3000 image_speed=0.1 sceneno=0 y=-24 shadow=-1
@@ -56,6 +63,8 @@ with oControl
 {cutscenename="DOLORES"
 cutsceneline="DARN IT!"
 }
+
+musicplaystart(msc_training)
 
 newscript=function()
 {scenetime+=1;
@@ -102,7 +111,7 @@ if scenetime=720
 {
 with oControl
 {
-with actor5 {image_speed=0 image_index=0 sprite_index=spr_twoheads_badge}
+with actor5 {PlaySound(snd_steal) image_speed=0 image_index=0 sprite_index=spr_twoheads_badge}
 }
 }
 
@@ -110,11 +119,10 @@ if scenetime=740
 {
 with oCameoChar x+=320
 
-
-
 layer_set_visible("BGcity2",0)
 
-layer_set_visible("CarTiles1",0)
+layer_set_visible("TrainPart1",0)
+layer_set_visible("TrainPart2",0)
 
 var bgstretch = layer_background_get_id("Backgrounds_1")
 layer_background_stretch(bgstretch,1)
@@ -127,12 +135,13 @@ with actor5 {image_index=3 sprite_index=spr_twoheads_badge}
 x=640 y=0 hspeed=-8 sprite_index=spr_cutscene2c1
 }
 
-if scenetime=780 {hspeed=0 oControl.quakeFXTime=10}
+if scenetime=780 {audio_stop_all() PlaySound(snd_hit2) hspeed=0 oControl.quakeFXTime=10}
 
 if scenetime=880
 {sprite_index=mask_none
 layer_set_visible("BGcity2",1)
-layer_set_visible("CarTiles1",1)	
+layer_set_visible("TrainPart1",1)
+layer_set_visible("TrainPart2",1)	
 
 var bgstretch = layer_background_get_id("Backgrounds_1")
 layer_background_stretch(bgstretch,0)

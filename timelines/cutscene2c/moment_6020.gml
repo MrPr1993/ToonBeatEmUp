@@ -7,15 +7,18 @@ timeline_speed=0
 if cutsceneDecmode=0
 {CutsceneStage=rm_stage4  ///Abandon Ship
 with oControl {cutscenename="BAHATI" cutsceneline="LADIES, WE GOT TO BE HONEST TO THE SHERIFF SO WE'LL TELL THE TRUTH."}
-with actor3 sprite_index=spr_bahati_cutscene
+with actor3 {sprite_index=spr_bahati_talk image_speed=0.1}
 with actorscreen newscript=function()
 {scenetime+=1;
 if scenetime=240{ x=0 y=0
-with oControl {with actor5 {sprite_index=spr_twoheads_shoot image_index=0} cutscenename="DOLORES" cutsceneline="NONE OF YOU HAVE TICKETS DO YOU?"}
+with oControl {with actor3 {image_speed=0 image_index=0} with actor5 {sprite_index=spr_twoheads_shoot image_index=0} cutscenename="DOLORES" cutsceneline="NONE OF YOU HAVE TICKETS DO YOU?"}
 }
 
-if scenetime=480{ x=0 y=0
-with oControl {cutscenename="BAHATI" cutsceneline="NO... WE DON'T."}
+if scenetime=480{ x=0 y=0 
+with oControl {with actor3 {sprite_index=spr_bahati_cutscene image_index=2} cutscenename="BAHATI" cutsceneline="NO... WE DON'T."}
+
+
+
 }
 
 if scenetime=660
@@ -36,29 +39,34 @@ layer_set_visible("SpookyPart1",1)
 layer_set_visible("SpookyPart2",1)
 layer_set_visible("SpookyPart3",1)
 
+PlaySound(snd_viva11)
+PlaySound(snd_hina10)
+PlaySound(snd_bahati8)
+PlaySound(snd_sofia9)
+
 sprite_index=mask_none
 	with oControl
 	{with actorC1 x=999 with actorC2 x=999 with actor5 x=999
 with actor1 {x=92-16 y=-8+64 y-=170 z-=80 vspeed=6.1 sprite_index=spr_viva_hit image_index=17 ground=0 spdZ=-8 hspeed=5/4 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 {hspeed=0 PlaySoundNoStack(snd_hitground)} z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
-	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_point image_index=0}}}}
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_anger image_speed=0.25 image_index=0}}}}
 	
 with actor2 {x=92+16 y=-8+64 z-=80 y-=170 vspeed=5.9 sprite_index=spr_hina_hit image_index=17 ground=0 spdZ=-9 hspeed=6.5/4 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 {hspeed=0 PlaySoundNoStack(snd_hitground)} z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_hina_point image_index=0}}}}
 	
 with actor3 {x=92-32 y=-8+64 z-=80 y-=170 vspeed=5.5 sprite_index=spr_bahati_hit image_index=17 ground=0 spdZ=-8.5 hspeed=4/4 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 {hspeed=0 PlaySoundNoStack(snd_hitground)} z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
-	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_bahati_point image_index=0}}}}
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_bahati_badend image_index=0}}}}
 	
 with actor4 {x=92+32 y=-8+64 z-=80 y-=170 vspeed=5 sprite_index=spr_sofia_hit image_index=17 ground=0 spdZ=-9 hspeed=5/4 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 {hspeed=0 PlaySoundNoStack(snd_hitground)} z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_sofia_point image_index=0}}}}
@@ -75,12 +83,18 @@ with oControl {cutscenename="VIVA" cutsceneline="HONESTY?! THAT'S WHAT YOU GOT?!
 
 if scenetime=1200
 {
-with oControl {cutscenename="BAHATI" cutsceneline="I'M SORRY I DIDN'T THINK SHE COULD ACTUALLY THROW US OFF LIKE THAT EVEN IN THAT STATE!"}
+with oControl {with actor1 {image_speed=0 image_index=0} with actor3 {image_speed=0.1} cutscenename="BAHATI" cutsceneline="I'M SORRY I DIDN'T THINK SHE COULD ACTUALLY THROW US OFF LIKE THAT EVEN IN THAT STATE!"}
 }
 
 if scenetime=1620
 {
-with oControl {cutscenename="VIVA" cutsceneline="OH NO MATTER. WE HAD NO WAY TO STAY ON THE TRAIN ANYWAY."}
+
+with oControl {
+with actor1 {sprite_index=spr_viva_talk2 image_index=0}
+with actor2 {sprite_index=spr_hina_lookaround image_index=2}
+with actor3 {image_speed=0 image_index=0}
+with actor4 {sprite_index=spr_sofia_lookaround image_index=0}	
+cutscenename="VIVA" cutsceneline="OH NO MATTER. WE HAD NO WAY TO STAY ON THE TRAIN ANYWAY."}
 }
 
 if scenetime=1920
@@ -122,7 +136,7 @@ if scenetime=140{ x=0 y=0
 with oControl {cutscenename="VIVA" cutsceneline="QUICK RUSH EM'!"}
 
 with oControl
-{
+{PlaySound(snd_swing5)
 with actor1 {sprite_index=spr_viva_run image_speed=0.25 hspeed=4}
 with actor2 {sprite_index=spr_hina_run image_speed=0.25 hspeed=4}
 with actor3 {sprite_index=spr_bahati_run image_speed=0.25 hspeed=4}
@@ -138,7 +152,7 @@ with actor4 {sprite_index=spr_sofia_run image_speed=0.25 hspeed=4}
 
 if scenetime=180{ x=0 y=0
 	with oControl
-	{quakeFXTime=10
+	{quakeFXTime=10 PlaySound(snd_hit) PlaySound(snd_twoheads1) PlaySound(snd_enemy3)
 	with actor5 {sprite_index=spr_twoheads_hit image_index=24}
 	with actorC1 {sprite_index=spr_cowboy_hit image_index=24}	
 	with actorC2 {sprite_index=spr_cowboy_hit image_index=24}	
@@ -186,7 +200,7 @@ y=0 hspeed=-4 image_xscale=1
 x=0
 }
 
-x=-500*5 y=193 sprite_index=spr_trainzoom hspeed=0.5*5
+x=-500*4 y=193 sprite_index=spr_trainzoom hspeed=0.5*4
 
 specialdraw=function() {
 draw_sprite(sprite_index,0,x+320*0,y)
@@ -205,7 +219,7 @@ with oControl {cutscenename="HINA" cutsceneline="I'LL GIVE IT MORE FIRE."}}
 if scenetime=540{
 with oControl {cutscenename="BAHATI" cutsceneline="HEY ARE YOU SURE YOU KNOW WHAT YOU'RE DOING?!"}}
 
-if scenetime=720{ hspeed=3*5
+if scenetime=720{ hspeed=3*4 PlaySound(snd_explosion) PlaySoundNoStackPitch(snd_train,0.8)
 with oControl {cutscenename="VIVA" cutsceneline="AHHHHH WE DON'T WE DON'T!"}}
 
 if scenetime>=720 oControl.quakeFXTime=10
@@ -301,7 +315,7 @@ with oControl {cutscenename="DOLORES" cutsceneline="WELL LET ME SEE..."
 	newscript=function() {y=lerp(y,oControl.actor2.y,0.1)
 		if x<=oControl.actor2.x+34 {
 			with oControl.actor2 {sprite_index=spr_hina_grab image_index=0 }
-			
+			PlaySound(snd_steal)
 			newscript=-1; sprite_index=spr_twoheads_talk image_speed=0 hspeed=0}
 		}
 	
@@ -361,7 +375,7 @@ layer_set_visible("TrainPart1",0)
 layer_set_visible("TrainPart2",0)
 layer_set_visible("Sky2",1)
 
-x=-500*5 y=193
+x=-500*4 y=193
 	
 sprite_index=spr_trainzoom hspeed=5
 

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.097166,
+  "duration":0.09716553,
   "name":"snd_swing4",
   "parent":{
     "name":"Objects",

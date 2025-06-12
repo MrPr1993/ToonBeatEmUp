@@ -71,7 +71,7 @@ sprite_index=spr_allblackscreen image_xscale=1
 }
 
 if scenetime=520
-{
+{PlaySound(snd_jump)
 
 with actor1 {sprite_index=spr_viva_jump1 x=160-64 image_index=1 y=200 z=-200 newscript=function(){z+=8}}
 with actor2 {sprite_index=spr_hina_jump1 x=160-40 image_index=1 y=200 z=-240 newscript=function(){z+=8}}
@@ -79,8 +79,10 @@ with actor3 {sprite_index=spr_bahati_jump1 x=160+64 image_index=1 y=200 z=-230 n
 with actor4 {sprite_index=spr_sofia_jump1 x=160+40 image_index=1 y=200 z=-210 newscript=function(){z+=8}}
 }
 
+if scenetime=600 PlaySound(snd_splash2)
+
 if scenetime=640
-{PlaySound(snd_splash2)
+{
 y=0
 x=320 hspeed=-16
 sprite_index=spr_allblackscreen image_xscale=24
@@ -111,6 +113,10 @@ with oControl {cutscenename="VIVA" cutsceneline="GREAT! LET'S GO THERE! WAIT... 
 
 if scenetime=1420
 {image_index=1 PlaySound(snd_splash1)
+
+flashFX(x,0,0,spr_hinasplash,0,0.25,30,1,1,c_white,1) 
+with fx {isDepth=0 depth=-3005}
+
 with oControl {cutscenename="" cutsceneline=""}
 }
 
@@ -121,7 +127,7 @@ with oControl {cutscenename="VIVA" cutsceneline="OH. ONE OF US HAS TO DO MOUTH T
 
 if scenetime=1900
 {
-with oControl {cutscenename="HINA" cutsceneline="BLBLBBLLBLBLALSbLB."}
+with oControl {cutscenename="HINA" cutsceneline="BLBLBBLLBLBLALSBLB."}
 }
 if scenetime=2100
 {
@@ -192,6 +198,8 @@ if scenetime=1750
 with oControl {cutscenename="VIVA" cutsceneline="AHHHHH LOOK OUT! WE'RE GONNA CRASH!"}
 }
 
+if scenetime=1800 {PlaySoundNoStackPitch(snd_tremor,0.5) oControl.quakeFXTime=400}
+
 if scenetime>=2000 {image_index+=0.25 if image_index>=6 image_index=4}
 
 if scenetime=2000
@@ -240,6 +248,9 @@ with oControl {cutscenename="ROSY" cutsceneline="HUH?! YOU?! WHY YOU..."}
 if scenetime=660
 {image_index=3
 with oControl {cutscenename="VIVA" cutsceneline="NO TIME TO BEAT MY PRETTY FACE IN! THERE'S NO ONE ON THE WHEEL!"}
+
+musicplaystart(msc_action)
+
 }
 
 if scenetime=960
@@ -248,54 +259,75 @@ with oControl {cutscenename="ROSY" cutsceneline="ACH, CRAP! OUTTA MY WAY!"}
 }
 
 if scenetime=1260
-{sprite_index=spr_allblackscreen
+{sprite_index=spr_allblackscreen audio_stop_all()
 layer_hspeed("BGsky",0)
 with oControl {cutscenename="" cutsceneline=""}
 
-with actor5 {sprite_index=spr_franki_stand}
+with actor5 {sprite_index=spr_franki_talk}
 }
 
 if scenetime=1460 hspeed=-16
 
 if scenetime=1660
 {
+with actor1 {sprite_index=spr_viva_talk2 image_speed=0.1}
+
 with oControl {cutscenename="VIVA" cutsceneline="SO YOU AREN'T WORKING WITH THEM?"}
 }
 
 if scenetime=1900
 {
+with actor1 {image_index=0 image_speed=0}
+with actor5 {sprite_index=spr_franki_talk image_speed=0.1}
+
 with oControl {cutscenename="ROSY" cutsceneline="HECK NO! I WAS BUSY KICKING OUT STOWAWAYS THAT GOT ALL OVER MY PRECIOUS SHIP."}
 }
 
 if scenetime=2200
 {
-with oControl {cutscenename="BAHATI" cutsceneline="WELL I'M GLAD WE MANAGED TO SETTLE THIS ISSUE. AND I'M HAPPY YOU'RE GIVING US A HAND."}
+with actor5 {image_index=0 image_speed=0}
+with actor3 {sprite_index=spr_bahati_talk2 image_speed=0.1}
 
+with oControl {cutscenename="BAHATI" cutsceneline="WELL I'M GLAD WE MANAGED TO SETTLE THIS ISSUE. AND I'M HAPPY YOU'RE GIVING US A HAND."}
 }
 
 if scenetime=2550
 {
-with oControl {cutscenename="ROSY" cutsceneline="OF COURSE, BAHATI! I'M YOUR BIGGEST FAN!"}
+with actor3 {image_index=0 image_speed=0}
+with actor5 {sprite_index=spr_franki_taunt image_speed=0.1}
 
+with oControl {cutscenename="ROSY" cutsceneline="OF COURSE, BAHATI! I'M YOUR BIGGEST FAN!"}
 }
 
 if scenetime=2800
 {
+with actor5 {image_index=0 image_speed=0}
+with actor4 {sprite_index=spr_sofia_talk image_speed=0.1}	
+
 with oControl {cutscenename="SOFIA" cutsceneline="THAT EXPLAINS A LOT. SO, WHERE IS THIS SHIP HEADING?"}
 }
 
 if scenetime=3100
 {
+with actor4 {image_index=0 image_speed=0}
+with actor5 {sprite_index=spr_franki_talk image_speed=0.1}		
+
 with oControl {cutscenename="ROSY" cutsceneline="IT'S HEADING TO THE PORT NEAR THAT DOJO CASINO PLACE. I DID HEAR THERE ARE SHADY PEOPLE SHOWING UP THERE RECENTLY."}
 }
 
 if scenetime=3560
 {
+with actor5 {image_index=0 image_speed=0}
+with actor1 {sprite_index=spr_viva_talk image_speed=0.1}		
+
 with oControl {cutscenename="VIVA" cutsceneline="THEN THAT'S WHERE WE GOTTA GO TO FIND WHERE OUR TREASURE'S TAKEN."}
 }
 
 if scenetime=3860
 {
+with actor1 {image_index=0 image_speed=0}
+with actor4 {sprite_index=spr_sofia_opening image_speed=0.1}	
+
 with oControl {cutscenename="SOFIA" cutsceneline="GOOD! I CAN'T WAIT TO BEAT UP SOME NINJAS!"}
 }
 
