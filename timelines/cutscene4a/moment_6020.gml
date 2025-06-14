@@ -11,6 +11,8 @@ CutsceneStage=rm_stageufo
 with actorscreen
 {scenetime=0;
 
+with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25}
+
 sprite_index=mask_none
 with oControl
 {
@@ -24,7 +26,11 @@ newscript=function()
 scenetime+=1;
 
 if scenetime=320
-{with actor5 {sprite_index=spr_duck_talk1 image_speed=0 image_index=0}
+{
+with actor1 {sprite_index=spr_viva_talk2 image_index=0}
+	
+
+with actor5 {sprite_index=spr_duck_talk1 image_speed=0 image_index=0}
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "Why I oughta.... Fine! Exit's through the cornfield, let the door hit yer rears on the way out!"
@@ -212,9 +218,9 @@ if cutsceneDecmode=2
 CutsceneStage=rm_stagedesert
 
 with actorscreen
-{scenetime=0;
+{scenetime=0; BGspr.sprite_index=spr_quackBG BGspr.image_index=1
 x=0 y=0
-sprite_index=spr_hitherface
+sprite_index=spr_hitherface PlaySound(snd_hit) PlaySound(snd_duck11)
 with oControl
 {quakeFXTime=10
 cutscenename="" cutsceneline= ""
@@ -252,8 +258,15 @@ cutscenename="DIXIE" cutsceneline= "...Yer' despicable..."
 }
 
 if scenetime=560
-{with actor5 {sprite_index=spr_duck_tbeakflip image_index=0 image_speed=0}
+{
+	
+with actor1 {sprite_index=spr_viva_talk image_index=0}
+with actor2 {sprite_index=spr_hina_attack image_index=0}
+with actor3 {sprite_index=spr_bahati_attack image_index=0}
+with actor4 {sprite_index=spr_sofia_taunt3 image_index=0}
 
+	with actor5 {sprite_index=spr_duck_tbeakflip image_index=0 image_speed=0}
+BGspr.sprite_index=mask_none
 specialdraw=-1 sprite_index=mask_none
 
 with oControl
@@ -265,6 +278,8 @@ cutscenename="DIXIE" cutsceneline= "Fine, I had to take over my boss's job here 
 
 if scenetime=980
 {
+with actor1 {sprite_index=spr_viva_talk2 image_index=0 image_speed=0.25}	
+
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "The desert! Let's get moving, ladies!"
@@ -273,6 +288,10 @@ cutscenename="VIVA" cutsceneline= "The desert! Let's get moving, ladies!"
 
 if scenetime=1140
 {
+with actor1 {image_index=0 image_speed=0}
+
+with actor4 {sprite_index=spr_sofia_win image_index=2}
+
 with oControl
 {
 cutscenename="SOFIA" cutsceneline= "Already on it! TAXIIIIII!"
@@ -280,14 +299,26 @@ cutscenename="SOFIA" cutsceneline= "Already on it! TAXIIIIII!"
 }
 
 if scenetime=1300
-{actor6.sprite_index=spr_taxidesert actor6.hspeed=7 actor6.y=192 actor6.x=-200
+{actor6.sprite_index=spr_taxidesert actor6.hspeed=8 actor6.y=192 actor6.x=-200 actor6.image_xscale=1
+
+PlaySound(snd_carengine3)	
+
 with oControl
 {
 cutscenename="" cutsceneline= ""
 }
 }
 
-if scenetime=1340 actor6.hspeed=0
+if scenetime=1340 {actor6.hspeed=0 PlaySound(snd_carengine2)}
+
+if scenetime=1350
+{
+with actor1 {sprite_index=spr_viva_move image_speed=0.25}
+with actor2 {sprite_index=spr_hina_move image_speed=0.25}
+with actor3 {sprite_index=spr_bahati_move image_speed=0.25}
+with actor4 {sprite_index=spr_sofia_move image_speed=0.25}
+
+}
 
 if scenetime>=1350 and scenetime<=1400
 {
@@ -303,7 +334,7 @@ actor4.y=lerp(actor4.y,actor6.y-2,0.1)
 
 }
 
-if scenetime=1460 {actor6.hspeed=6
+if scenetime=1460 {actor6.hspeed=8 PlaySound(snd_carengine)
 	actor1.y=999 actor2.y=999 actor3.y=999 actor4.y=999
 	}
 
