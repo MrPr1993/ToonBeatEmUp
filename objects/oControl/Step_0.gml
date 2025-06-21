@@ -1,5 +1,5 @@
 /// @description Beta Test
-feats_check()
+feats_check(-1)
 
 audio_master_gain(global.Mastervolume/100)
 

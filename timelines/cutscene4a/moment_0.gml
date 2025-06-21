@@ -76,11 +76,11 @@ if scenetime=120
 {BGspr.sprite_index=mask_none
 with actor1 {x=64}
 with actor2 {x=64-16}
-with actor3 {x=64}
+with actor3 {x=64+32}
 with actor4 {x=64-16}
 with actor5 {x=320-64}
 	
-with actor1 {sprite_index=spr_viva_cutscene image_speed=0.25}
+with actor1 {sprite_index=spr_viva_talk3 image_speed=0.25}
 	
 sprite_index=mask_none scenetime=340
 with oControl
@@ -171,6 +171,14 @@ cutscenename="DIXIE" cutsceneline="LET ME THINK..."
 if scenetime=2180
 {with actor5 {newscript=function(){image_index+=0.25 if image_index>=4 image_index=2 } 
 
+
+
+}
+with oControl
+{
+cutscenename="DIXIE" cutsceneline= "PBBBBBBBTH!!!"
+}
+
 if actor5.image_index=2
 {
 with actor1 {sprite_index=spr_viva_point image_index=2}
@@ -179,11 +187,6 @@ with actor3 {sprite_index=spr_bahati_point image_index=2}
 with actor4 {sprite_index=spr_sofia_point image_index=2}
 }
 
-}
-with oControl
-{
-cutscenename="DIXIE" cutsceneline= "PBBBBBBBTH!!!"
-}
 }
 
 if scenetime=2380
@@ -197,8 +200,13 @@ cutscenename="DIXIE" cutsceneline= "I ain't sayin' NOTHIN' 'bout my boss, 'speci
 if scenetime=2840 scenetime=6000
 
 if scenetime=6000
-{BGspr.sprite_index=mask_none
+{BGspr.sprite_index=mask_none audio_stop_all();
 	
+with actor1 {x=64}
+with actor2 {x=64-16}
+with actor3 {x=64+32}
+with actor4 {x=64-16}
+with actor5 {x=320-64}
 	
 with actor1 {sprite_index=spr_viva_point image_index=0}
 with actor2 {sprite_index=spr_hina_point image_index=0}

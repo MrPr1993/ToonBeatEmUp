@@ -5,6 +5,8 @@ framespd=0.025
 
 anim=666
 
+x+=12;
+
 //image_xscale=-1
 
 framespd=0.1

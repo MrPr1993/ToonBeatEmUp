@@ -490,7 +490,7 @@ var creditscameor="\n"+
 //RJ - new gal - ON STAGE
 //guiterman13 - Soda punk
 //Nfate - Hypno gal at beach
-
+//7 Vauvenader - Underwater shark
 
 ///////ON STAGE - needs animation
 //SKEPTICAL - snek gal
@@ -500,12 +500,8 @@ var creditscameor="\n"+
 //Rovenami - Cowgirl - train
 //toainsully - train
 //Gatordragon - jester gal
-
-
 ////Cryptic Draws - drink person
 //5 Gaming Eelektross - Dragon Guard sleepng on snow stage
-
-//7 Vauvenader - Underwater shark
 
 ////PIXELED
  //10 JameArts - Alice on cloud stage
@@ -513,7 +509,7 @@ var creditscameor="\n"+
 //PsychoJosh - beach Duo
 //Zengumi - cloudy kiss
 //Wobbleblot - cloudy kiss
-///Flash Trickstar - needs partner
+///Flash Trickstar - And Peterjuice
 
 ///OTHER
 //butchtheamazing - ???

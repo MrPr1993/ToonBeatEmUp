@@ -511,8 +511,8 @@ enemydata_save()
 unlock_save()
 arcade_saving(global.StageSave)
 feats_stageunlock()
-feats_check()
-feats_save()
+feats_check(-1)
+feats_save(-1)
 }
 global.StageClear=0;
 

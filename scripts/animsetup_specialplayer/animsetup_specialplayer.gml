@@ -1,5 +1,11 @@
 /// @description Car Mode
 function animsetup_specialplayer() {
+if anim=51 ////Super Move Joining
+{
+
+}
+	
+
 	if anim=200
 	{
 	defMask=spr_shadow3

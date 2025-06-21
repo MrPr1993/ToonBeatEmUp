@@ -11,7 +11,7 @@ CutsceneStage=rm_stageufo
 with actorscreen
 {scenetime=0;
 
-with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25}
+with actor1 {sprite_index=spr_viva_talk2 image_speed=0.1}
 
 sprite_index=mask_none
 with oControl
@@ -105,6 +105,9 @@ scenetime+=1;
 
 if scenetime=380
 {
+
+with actor5 {sprite_index=spr_duck_talk2 image_speed=0 image_index=0}
+
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "Aw shucks, ya mean it?! That'd make this all better lickety split!"
@@ -145,7 +148,7 @@ with oControl
 }
 
 if scenetime=1260
-{sprite_index=spr_gotchacannon
+{sprite_index=spr_gotchacannon musicplaystartpitch(msc_carnival,1.25)
 vspeed=-0.1	
 
 with oControl
@@ -155,7 +158,7 @@ cutscenename="DIXIE" cutsceneline= "And now for the grand finale... THESE DAMES 
 }
 
 if scenetime=1620
-{sprite_index=spr_byetent x=0 y=0 vspeed=0
+{sprite_index=spr_byetent x=0 y=0 vspeed=0 audio_stop_all()
 with oControl
 {
 cutscenename="" cutsceneline= ""
@@ -163,7 +166,14 @@ cutscenename="" cutsceneline= ""
 }
 
 if scenetime=1700
-{sprite_index=spr_byetent x=0 y=0
+{sprite_index=spr_byetent x=0 y=0 PlaySound(snd_explosion)
+
+flashFX(124,120,0,spr_explosion4,0,0.25,30,1,1,c_white,1) with fx
+{isDepth=0 depth=-3004}
+	
+flashFX(124,120,0,spr_byetent2,0,0,9999,1,1,c_white,1) with fx
+{isDepth=0 depth=-3005 hspeed=24 vspeed=-12}
+	
 with oControl
 {quakeFXTime=10
 cutscenename="" cutsceneline= ""
@@ -171,12 +181,12 @@ cutscenename="" cutsceneline= ""
 }
 
 if scenetime=1860
-{actor5.y=9999 sprite_index=mask_none
+{actor5.y=9999 sprite_index=mask_none ///124, 120
 
-with actor1 {z=-32 sprite_index=spr_viva_hit image_index=7 x=-160 shadow=-1 image_speed=0}
-with actor2 {z=-32 sprite_index=spr_hina_hit image_index=7 x=-160 shadow=-1 image_speed=0}
-with actor3 {z=-32 sprite_index=spr_bahati_hit image_index=7 x=-160 shadow=-1 image_speed=0}
-with actor4 {z=-32 sprite_index=spr_sofia_hit image_index=7 x=-160 shadow=-1 image_speed=0}
+with actor1 {z=-32 sprite_index=spr_viva_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
+with actor2 {z=-32 sprite_index=spr_hina_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
+with actor3 {z=-32 sprite_index=spr_bahati_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
+with actor4 {z=-32 sprite_index=spr_sofia_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
 
 with oControl
 {
@@ -260,7 +270,7 @@ cutscenename="DIXIE" cutsceneline= "...Yer' despicable..."
 if scenetime=560
 {
 	
-with actor1 {sprite_index=spr_viva_talk image_index=0}
+with actor1 {sprite_index=spr_viva_attack image_index=0}
 with actor2 {sprite_index=spr_hina_attack image_index=0}
 with actor3 {sprite_index=spr_bahati_attack image_index=0}
 with actor4 {sprite_index=spr_sofia_taunt3 image_index=0}
@@ -278,7 +288,7 @@ cutscenename="DIXIE" cutsceneline= "Fine, I had to take over my boss's job here 
 
 if scenetime=980
 {
-with actor1 {sprite_index=spr_viva_talk2 image_index=0 image_speed=0.25}	
+with actor1 {sprite_index=spr_viva_talk2 image_index=0 image_speed=0.1}	
 
 with oControl
 {

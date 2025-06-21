@@ -110,5 +110,7 @@ global.MultiSuper=isPlayer
 
 
 
+/////Combination Attack - Viva & Hina
+
 
 }

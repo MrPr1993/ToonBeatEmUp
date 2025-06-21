@@ -21,25 +21,62 @@ for (var i=0; i<100; i++)
 {setfeats=0;
 switch(i)
 {
-case 1: featname="DIVA'S DEBUT"
+case 1: featname="DIVA'S DEBUT" ///Clear Stage 1
 if object_index=oContinueScreen and stageClear=1 and room=rm_stage1 {setfeats=1} break;
 
-case 2: featname="MUST PET!"
+case 2: featname="MUST PET!" ///PET THE FIRST ANIMAL IN ANY STAGE.
 if instance_exists(oPlayer) if oPlayer.anim=10010 setfeats=1 break;
 
-case 3: featname="ENCORE!"
+case 3: featname="ENCORE!" ///USE YOUR FIRST CONTINUE.
 if instance_exists(oPlayer) if oPlayer.continueScreen=2 setfeats=1 break;
 
-case 4: featname="SHOWTIME FINISH"
+case 4: featname="SHOWTIME FINISH" ///DEFEAT A BOSS WITH A SHOWTIME ATTACK.
 if object_index=oControl if showtimehit setfeats=1 break;
 
-case 5: featname="WOLF WHISPERER"
+case 5: featname="ONE LONG NOTE"
+if stageClear=1
+if object_index=oControl {if instance_exists(oPlayer) with oPlayer if hp<=0 oControl.nodeath=0 if nodeath setfeats=1} break;
+
+case 6: featname="I'm Not Stage Frightened!" ///Beat any Stage without using Showtime once.
+break;
+
+case 7: featname="Legendary Dancing Diva!" ///Beat arcade mode without dying
+break;
+
+case 8: featname="Don't Touch the Diva" ///Beat any stage without taking damage
+break;
+
+case 9: featname="Sorry, I'm on a Diet..." ///Beat any stage without taking any food
+break;
+
+case 12: featname="WOLF WHISPERER" ///Defeat Lady Wolf without taking any damage
 if room=rm_stage1 and stageClear=1
 if object_index=oControl {if perfecthp setfeats=1} break;
 
-case 6: featname="ONE LONG NOTE"
-if stageClear=1
-if object_index=oControl {if instance_exists(oPlayer) with oPlayer if hp<=0 oControl.nodeath=0 if nodeath setfeats=1} break;
+///45 feats
+///
+///Defeat 
+///
+///
+///
+///
+///
+///Pet all the animals
+///Clear all stages
+///Complete training with all 4 Divas
+///Complete Enemy Info
+///Buy all Extras
+///Buy all Cheats
+///Buy All Gallery
+///Clear the Final Stage
+///
+///Clear All Stage Mode
+///Clear Boss Battles
+///Get a High Score on Survival
+///
+///
+///
+
 
 }
 
