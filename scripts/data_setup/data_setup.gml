@@ -114,3 +114,19 @@ feats_default()
 
 shopreset()
 }
+
+function data_unlock(_no)
+{
+///Stages
+if _no=1 or _no=0  for (var i=0; i<100; i++) {global.Feats[i]=1;}
+
+///Minigames
+if _no=2 or _no=0  for (var i=0; i<100; i++) {global.Feats[i]=1;}
+
+///Feats
+if _no=3 or _no=0 enemydata_unlockall()
+
+///Feats
+if _no=4 or _no=0 for (var i=0; i<100; i++) {global.Feats[i]=1;}
+
+}

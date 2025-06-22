@@ -12,10 +12,15 @@ draw_set_font(global.scorefont)
 
 ////////Default feats
 
-if betatest if keyboard_check_pressed(ord("P")) 
+if betatest
+{
+if keyboard_check_pressed(ord("P")) 
 for (var i=0; i<100; i++) {global.Feats[i]=1}
-
-var _maxfeat=45;//100
+if keyboard_check_pressed(ord("O")) {if global.Feats[featsel]=2 global.Feats[featsel]=0 else global.Feats[featsel]^=1
+	if keyboard_check(vk_shift) global.Feats[featsel]=2
+	}
+}
+var _maxfeat=48;//100
 
 if key_up_pressed {PlaySound(snd_select) if featsel=1 {featY=lerp(featY,-48*96,1) featsel=_maxfeat} else featsel-=1}
 if -key_down_pressed {PlaySound(snd_select) if featsel=_maxfeat {featY=lerp(featY,0,1) featsel=1} else featsel+=1}
@@ -49,27 +54,27 @@ draw_feat(26,spr_featicon,26,c_white,"Royally Planted","Defeat Synthesa without 
 draw_feat(27,spr_featicon,27,c_white,"Mean To Dragon","Defeat Fiona without taking damage.")
 draw_feat(28,spr_featicon,28,c_white,"Science Project","Defeat Dr.Fran without taking damage.")
 draw_feat(29,spr_featicon,29,c_white,"Dastardly Bite","Defeat Van Bad without taking damage.")
-draw_feat(30,spr_featicon,30,c_white,"World Mapper","Clear all stages in the game.")
-draw_feat(31,spr_featicon,31,c_white,"Finale Over","Clear the Final Stage.")
-draw_feat(32,spr_featicon,32,c_white,"Baddy Bruiser.","Defeat 100 enemies.")
-draw_feat(33,spr_featicon,33,c_white,"Crook Crusher.","Defeat 500 enemies.")
-draw_feat(34,spr_featicon,34,c_white,"Minion Mulcher.","Defeat 1000 enemies.")
-draw_feat(35,spr_featicon,35,c_white,"Shopping List","Buy out all of the Extras.")
-draw_feat(36,spr_featicon,36,c_white,"Big Cheater","Buy out all of the Cheats.")
-draw_feat(37,spr_featicon,37,c_white,"Art Collector","Buy out all of the Gallery.")
-draw_feat(38,spr_featicon,38,c_white,"Missed The Ride","Get the Bad Ending.")
-draw_feat(39,spr_featicon,39,c_white,"All Written","Complete the Profile & Info")
-draw_feat(40,spr_featicon,40,c_white,"Filmography","Unlock All Cutscenes")
-draw_feat(41,spr_featicon,41,c_white,"Back From World Tour","Clear All Stage Mode.")
-draw_feat(42,spr_featicon,42,c_white,"Animal Tamer","Pet all animals from all stages.")
-draw_feat(43,spr_featicon,43,c_white,"Secret Raider","Find all secrets from all stages.")
-draw_feat(44,spr_featicon,44,c_white,"Diva Survivor","Get a High Score on Survival Mode.")
-draw_feat(45,spr_featicon,45,c_white,"Diva Champion","Beat Boss Battles Mode.")
+draw_feat(30,spr_featicon,30,c_white,"That's All Folks!","Clear Arcade Mode for the First Time.")
+draw_feat(31,spr_featicon,31,c_white,"Best In Show","Clear Arcade Mode on Very Hard.")
+draw_feat(32,spr_featicon,32,c_white,"World Mapper","Clear all stages in the game.")
+draw_feat(33,spr_featicon,33,c_white,"Animal Tamer","Pet all animals from all stages.")
+draw_feat(34,spr_featicon,34,c_white,"Diva Detective.","Find all Stage Secrets.")
+draw_feat(35,spr_featicon,35,c_white,"Goon Bruiser.","Defeat 100 enemies.")
+draw_feat(36,spr_featicon,36,c_white,"Goon Crusher.","Defeat 500 enemies.")
+draw_feat(37,spr_featicon,37,c_white,"Goon Slayer.","Defeat 1000 enemies.")
+draw_feat(38,spr_featicon,38,c_white,"Shopping List","Buy out all of the Extras.")
+draw_feat(39,spr_featicon,39,c_white,"Big Cheater","Buy out all of the Cheats.")
+draw_feat(40,spr_featicon,40,c_white,"Art Collector","Buy out all of the Gallery.")
+draw_feat(41,spr_featicon,41,c_white,"Missed The Ride","Get the Bad Ending.")
+draw_feat(42,spr_featicon,42,c_white,"All Written","Complete the Profile & Info")
+draw_feat(43,spr_featicon,43,c_white,"Filmography","Unlock All Cutscenes")
+draw_feat(44,spr_featicon,44,c_white,"Back From World Tour","Clear All Stage Mode.")
+draw_feat(45,spr_featicon,45,c_white,"Baddy Bruiser.","Defeat 100 enemies.")
+draw_feat(46,spr_featicon,46,c_white,"Secret Raider","Find all secrets from all stages.")
+draw_feat(47,spr_featicon,47,c_white,"Diva Survivor","Get a High Score on Survival Mode.")
+draw_feat(48,spr_featicon,48,c_white,"Diva Champion","Beat Boss Battles Mode.")
 if x=9999999
 {
-draw_feat(46,spr_featicon,46,c_white,"BOO!","F2000 POUNDS")
-draw_feat(47,spr_featicon,47,c_white,"BOO!","F2000 POUNDS")
-draw_feat(48,spr_featicon,48,c_white,"BOO!","F2000 POUNDS")
 draw_feat(49,spr_featicon,49,c_white,"BOO!","F2000 POUNDS")
 draw_feat(50,spr_featicon,50,c_white,"BOO!","F2000 POUNDS")
 draw_feat(51,spr_featicon,51,c_white,"BOO!","F2000 POUNDS")

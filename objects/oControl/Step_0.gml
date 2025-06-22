@@ -33,11 +33,20 @@ if betatest
 if keyboard_check_pressed(ord("M"))	and keyboard_check(vk_shift)	
 {mirrorMode^=1;}
 
-if keyboard_check_pressed(ord("P"))	and keyboard_check(vk_shift)
+if keyboard_check_pressed(ord("P"))
 {
-var setquestion=get_string("0 - Reset Data, 1 - All Stages, 2 - All Minigames, 3 - All Enemy Data",0)
-if setquestion=0 if show_question("Reset all unlocks?") data_setup()
+if keyboard_check(vk_shift)
+{
+if show_question("Reset all unlocks?") data_setup()
 }
+if keyboard_check(vk_alt)
+{
+var setquestion=get_integer("0 - Unlock All, 1 - All Stages, 2 - All Minigames, 3 - All Enemy Data, 4 - Feats",0)
+if setquestion=0 {if show_question("Unlock All?") data_unlock(0)} else data_unlock(setquestion)
+}
+
+}
+
 }
 
 if eventTimerMode!=0 time=99;

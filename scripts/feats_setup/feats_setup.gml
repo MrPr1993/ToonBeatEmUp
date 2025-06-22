@@ -1,6 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function feats_default(){
+	
+for (var i=0; i<100; i++)
+{global.Feats[i]=0;}
+
 global.Feats[1]=2 ///Default to show them
 global.Feats[2]=2 ///Default to show them
 global.Feats[3]=2 ///Default to show them
