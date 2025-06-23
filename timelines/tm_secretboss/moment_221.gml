@@ -1,6 +1,6 @@
 with oPlayer
 {
-x=11426 y=206
+y=206
 
 canmove=0 anim=9999
 sprite_index=PointSpr image_index=0

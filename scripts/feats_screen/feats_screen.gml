@@ -20,9 +20,9 @@ if keyboard_check_pressed(ord("O")) {if global.Feats[featsel]=2 global.Feats[fea
 	if keyboard_check(vk_shift) global.Feats[featsel]=2
 	}
 }
-var _maxfeat=48;//100
+var _maxfeat=52;//100
 
-if key_up_pressed {PlaySound(snd_select) if featsel=1 {featY=lerp(featY,-48*96,1) featsel=_maxfeat} else featsel-=1}
+if key_up_pressed {PlaySound(snd_select) if featsel=1 {featY=lerp(featY,-48*_maxfeat,1) featsel=_maxfeat} else featsel-=1}
 if -key_down_pressed {PlaySound(snd_select) if featsel=_maxfeat {featY=lerp(featY,0,1) featsel=1} else featsel+=1}
 
 draw_feat(1,spr_featicon,1,c_white,"DIVA'S DEBUT","CLEAR STAGE 1")
@@ -69,16 +69,17 @@ draw_feat(41,spr_featicon,41,c_white,"Missed The Ride","Get the Bad Ending.")
 draw_feat(42,spr_featicon,42,c_white,"All Written","Complete the Profile & Info")
 draw_feat(43,spr_featicon,43,c_white,"Filmography","Unlock All Cutscenes")
 draw_feat(44,spr_featicon,44,c_white,"Back From World Tour","Clear All Stage Mode.")
-draw_feat(45,spr_featicon,45,c_white,"Baddy Bruiser.","Defeat 100 enemies.")
-draw_feat(46,spr_featicon,46,c_white,"Secret Raider","Find all secrets from all stages.")
-draw_feat(47,spr_featicon,47,c_white,"Diva Survivor","Get a High Score on Survival Mode.")
-draw_feat(48,spr_featicon,48,c_white,"Diva Champion","Beat Boss Battles Mode.")
+draw_feat(45,spr_featicon,45,c_white,"Diva Survivor","Get a High Score on Survival Mode.") //
+draw_feat(46,spr_featicon,46,c_white,"Diva Champion","Beat Boss Battles Mode.") //
+draw_feat(47,spr_featicon,47,c_white,"Game Queen","Win all of the six Minigames.")
+draw_feat(48,spr_featicon,48,c_white,"Beauty Fishing","Get all fish in the Fishing minigame.")
+draw_feat(49,spr_featicon,49,c_white,"It's Bad For You!","Smoke up to 4 times in a row as Viva.") //Smoke 4 times as Viva 
+draw_feat(50,spr_featicon,50,c_white,"Zzz...","Remain in idle as Hina for one minute.") //
+draw_feat(51,spr_featicon,51,c_white,"Nice froggy...","Pet a toad as Bahati.")
+draw_feat(52,spr_featicon,52,c_white,"Boingy, Boingy!","Bounce on an enemy 8 times in a row as Sofia!")
 if x=9999999
 {
-draw_feat(49,spr_featicon,49,c_white,"BOO!","F2000 POUNDS")
-draw_feat(50,spr_featicon,50,c_white,"BOO!","F2000 POUNDS")
-draw_feat(51,spr_featicon,51,c_white,"BOO!","F2000 POUNDS")
-draw_feat(52,spr_featicon,52,c_white,"BOO!","F2000 POUNDS")
+
 draw_feat(53,spr_featicon,53,c_white,"BOO!","F2000 POUNDS")
 draw_feat(54,spr_featicon,54,c_white,"BOO!","F2000 POUNDS")
 draw_feat(55,spr_featicon,55,c_white,"BOO!","F2000 POUNDS")

@@ -1,5 +1,6 @@
 sprite_index=spr_bcameo43
 
+shadow=-1;
 
 anim=666
 
