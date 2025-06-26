@@ -20,5 +20,5 @@ if specialcheck[0]!=0 {specialcheck[0]-=1 AnimFrame=0}
 frame_set(5,4+specialcheck[1],0.01)
 frame_set(6,3,framespd) 
 if AnimFrame=7-framespd
-{specialcheck[0]=20 specialcheck[1]=6 AnimFrame=0}
+{specialcheck[0]=40 specialcheck[1]=6 AnimFrame=0}
 }

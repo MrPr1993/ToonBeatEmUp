@@ -5,9 +5,12 @@ roomfast=0
 carMode=0;
 triggerarcadesave=0;
 
+/////Feats Check
 showtimehit=0;
 perfecthp=1;
+perfectbosshp=1;
 nodeath=1;
+noshowtime=1;
 
 bonusstage=0;
 

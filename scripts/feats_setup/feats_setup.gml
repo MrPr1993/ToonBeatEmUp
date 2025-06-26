@@ -42,12 +42,15 @@ if stageClear=1
 if object_index=oControl {if instance_exists(oPlayer) with oPlayer if hp<=0 oControl.nodeath=0 if nodeath setfeats=1} break;
 
 case 6: featname="I'm Not Stage Frightened!" ///Beat any Stage without using Showtime once.
+if noshowtime setfeats=1
 break;
 
 case 7: featname="Legendary Dancing Diva!" ///Beat arcade mode without dying
+
 break;
 
 case 8: featname="Don't Touch the Diva" ///Beat any stage without taking damage
+
 break;
 
 case 9: featname="Sorry, I'm on a Diet..." ///Beat any stage without taking any food
@@ -56,6 +59,9 @@ break;
 case 12: featname="WOLF WHISPERER" ///Defeat Lady Wolf without taking any damage
 if room=rm_stage1 and stageClear=1
 if object_index=oControl {if perfecthp setfeats=1} break;
+
+case 49: featname="It's Bad For You!"
+if object_index=oPlayer {if sprite_index=spr_viva_cough setfeats=1}
 
 ///45 feats
 ///

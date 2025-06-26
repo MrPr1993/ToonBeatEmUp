@@ -491,16 +491,17 @@ var creditscameor="\n"+
 //guiterman13 - Soda punk
 //Nfate - Hypno gal at beach
 //7 Vauvenader - Underwater shark
+//Fva - demon gal
+//Wolfzeta - Blue hair gal on beach
+//shyguywhy - Beef shark on beach
+////Cryptic Draws - drink person
+
 
 ///////ON STAGE - needs animation
 //SKEPTICAL - snek gal
-//Wolfzeta - Blue hair gal on beach
-//shyguywhy - Beef shark on beach
-//Fva - demon gal
 //Rovenami - Cowgirl - train
 //toainsully - train
 //Gatordragon - jester gal
-////Cryptic Draws - drink person
 //5 Gaming Eelektross - Dragon Guard sleepng on snow stage
 
 ////PIXELED
@@ -510,12 +511,15 @@ var creditscameor="\n"+
 //Zengumi - cloudy kiss
 //Wobbleblot - cloudy kiss
 ///Flash Trickstar - And Peterjuice
+//YinSeiryu - Samurai with cats 
+//AnastasiaSols - Gal
+
 
 ///OTHER
 //butchtheamazing - ???
 //Flash Trickstar
 //Peterjuice - PAID
-//YinSeiryu - Samurai with cats 
+
 //
 //
 

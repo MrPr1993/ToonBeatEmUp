@@ -49,7 +49,10 @@ playerAmount=0;
 if charstatsetup=0
 {
 if instance_exists(oPlayer)
-{mirrorMode=global.GMirrorMode;
+{
+if oPlayer.anim=50 noshowtime=0
+
+mirrorMode=global.GMirrorMode;
 with oPlayer
 {
 if ContinueMode=0 oControl.playerAmount+=1;
