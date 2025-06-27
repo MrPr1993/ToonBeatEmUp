@@ -3270,6 +3270,7 @@
     {"name":"spr_mirrorlady_laugh","order":4,"path":"sprites/spr_mirrorlady_laugh/spr_mirrorlady_laugh.yy",},
     {"name":"spr_mirrorlady_taunt","order":8,"path":"sprites/spr_mirrorlady_taunt/spr_mirrorlady_taunt.yy",},
     {"name":"spr_mirrorlady_uhoh","order":5,"path":"sprites/spr_mirrorlady_uhoh/spr_mirrorlady_uhoh.yy",},
+    {"name":"spr_mirrorpieces","order":6,"path":"sprites/spr_mirrorpieces/spr_mirrorpieces.yy",},
     {"name":"spr_miscface","order":8,"path":"sprites/spr_miscface/spr_miscface.yy",},
     {"name":"spr_monk_attack","order":8,"path":"sprites/spr_monk_attack/spr_monk_attack.yy",},
     {"name":"spr_monk_attack2","order":9,"path":"sprites/spr_monk_attack2/spr_monk_attack2.yy",},

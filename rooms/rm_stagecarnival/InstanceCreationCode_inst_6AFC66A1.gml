@@ -16,7 +16,7 @@ frame_set(5,5,framespd)
 frame_set(6,6,framespd)
 frame_set(7,7,framespd)
 //
-if specialcheck[0]>0
+if specialcheck[0]>=1
 {
 frame_set(8,8,framespd)
 frame_set(9,9,framespd)

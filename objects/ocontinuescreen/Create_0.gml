@@ -16,7 +16,7 @@ stageClearMode=0
 continueStageScore=0
 cheatpenalty=0;
 playerGet=1
-
+noshowtime=0
 controlset[12]=0;
 bonusstage=0
 finalStageEnd=0
@@ -25,6 +25,7 @@ if instance_exists(oControl)
 {mirrorMode=oControl.mirrorMode
 finalStageEnd=oControl.finalStageEnd
 bonusstage=oControl.bonusstage
+noshowtime=oControl.noshowtime
 }
 finalStage=0
 finalStageHi=0

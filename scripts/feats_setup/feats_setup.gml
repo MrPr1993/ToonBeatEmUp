@@ -35,14 +35,14 @@ case 3: featname="ENCORE!" ///USE YOUR FIRST CONTINUE.
 if instance_exists(oPlayer) if oPlayer.continueScreen=2 setfeats=1 break;
 
 case 4: featname="SHOWTIME FINISH" ///DEFEAT A BOSS WITH A SHOWTIME ATTACK.
-if object_index=oControl if showtimehit setfeats=1 break;
+if object_index=oControl if showtimehit and stageClear=1 setfeats=1 break;
 
 case 5: featname="ONE LONG NOTE"
 if stageClear=1
 if object_index=oControl {if instance_exists(oPlayer) with oPlayer if hp<=0 oControl.nodeath=0 if nodeath setfeats=1} break;
 
 case 6: featname="I'm Not Stage Frightened!" ///Beat any Stage without using Showtime once.
-if noshowtime setfeats=1
+if object_index=oContinueScreen if noshowtime and stageClear=1 setfeats=1
 break;
 
 case 7: featname="Legendary Dancing Diva!" ///Beat arcade mode without dying
@@ -91,7 +91,7 @@ if object_index=oPlayer {if sprite_index=spr_viva_cough setfeats=1}
 }
 
 if global.Feats[i]!=1
-{if setfeats {savefeats=1 global.Feats[i]=1 feat_create(featname)}}
+{if setfeats {savefeats=1 global.Feats[i]=1 feat_create(featname) featc.featNO=i; }}
 
 }
 
@@ -103,7 +103,7 @@ function feat_create(_text)
 {
 featc=instance_create_depth(0,0,0,oFeatDisplay) with featc
 {featX=-128-128*instance_number(oFeatDisplay)
-} featc.name=_text
+} featc.name=_text 
 }
 
 function feats_save()

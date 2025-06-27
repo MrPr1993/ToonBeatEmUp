@@ -61,7 +61,7 @@
     "name":"spr_sofia_talk",
     "playback":1,
     "playbackSpeed":30.0,
-    "playbackSpeedType":1,
+    "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
     "seqHeight":96.0,

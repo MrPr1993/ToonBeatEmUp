@@ -46,7 +46,7 @@ surface_set_target(new_surf);
 draw_clear_alpha(c_black, 0.0);
 
 
-
+draw_set_color(c_white) draw_rectangle(-2,-2,555,555,false)
 draw_surface_ext(application_surface, 0+320*mirrorMode, 0,1-2*mirrorMode,1,0,c_white,1);
 //draw_surface(application_surface, 0, 0);
 //shader_reset()
@@ -1580,8 +1580,9 @@ if instance_exists(oFeatDisplay) with oFeatDisplay
 draw_set_color(c_white) draw_rectangle(0+featX,240-24,128+featX,240,false)
 draw_set_color(c_black) draw_rectangle(0+2+featX,240-24+2,128-2+featX,240-3,false)
 draw_set_halign(fa_left)
-draw_set_color(c_white) draw_text(6+featX,240-24+4,"FEAT COMPLETE:")
-draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
+draw_sprite(spr_featicon,featNO,6+featX,240-38+4)
+draw_set_color(c_white) draw_text(6+33+featX,240-24+4,"FEAT\nCOMPLETE!")
+//draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
 }}
 
 ///This will be used to play the cutscenes
