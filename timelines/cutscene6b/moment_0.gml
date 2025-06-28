@@ -162,7 +162,7 @@ scenetime=3020
 
 if scenetime=3020
 {
-vspeed=-0.25
+vspeed=0.01
 }
 
 

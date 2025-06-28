@@ -6,8 +6,8 @@ instance_create_depth(-999,-999,-1,oTextBox)
 with oControl
 {
 CDtextT="WHICH DOOR\nWILL YOU GO?"
-CDtextA="RED DOOR."
-CDtextB="GREEN DOOR."
+CDtextA="GREEN DOOR."
+CDtextB="RED DOOR."
 CDtextC="BLUE DOOR."
 
 cutscenename="VIVA" cutsceneline="Huh?! Where'd that haughty ghost get off to?"
@@ -45,16 +45,16 @@ actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
 	}
 
 actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
-{sprite_index=spr_harpy_dizzy anim=9999 shadow=-1; image_xscale=-1}
+{sprite_index=spr_spookydoor anim=9999 shadow=-1; image_index=0; image_xscale=1}
 
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
-{sprite_index=spr_harpy_dizzy anim=9999 shadow=-1; image_xscale=-1}
+{sprite_index=spr_spookydoor anim=9999 shadow=-1; image_index=1; image_xscale=1}
 
 actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
-{sprite_index=spr_harpy_dizzy anim=9999 shadow=-1; image_xscale=-1}
+{sprite_index=spr_spookydoor anim=9999 shadow=-1; image_index=2; image_xscale=1}
 
 actBG1=instance_create_depth(11215,170,-1,oCameoChar) with actBG1
-{sprite_index=spr_harpy_dizzy anim=9999 shadow=-1; image_xscale=1}
+{sprite_index=spr_spookydoor anim=9999 shadow=-1; image_xscale=1}
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
@@ -63,7 +63,7 @@ hspeed=0.15 x=-64 y=0
 specialdraw=function()
 {
 draw_sprite(spr_allblackscreen,0,0,0)
-draw_sprite_ext(spr_whereisghost,1,round(x),round(y),1,1,0,c_white,specialcheck[6])
+draw_sprite_ext(spr_whereisghost,1,round(x-128),round(y),1,1,0,c_white,specialcheck[6])
 draw_self()
 }
 
@@ -75,7 +75,7 @@ if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
 if scenetime<=1739
-if scenetime>=640 specialcheck[6]=lerp(specialcheck[6],0.8,0.05)
+if scenetime>=640 specialcheck[6]=lerp(specialcheck[6],0.8,0.01)
 
 if scenetime=440
 {
@@ -85,20 +85,21 @@ if scenetime=440
 //with actor4 {x=64}
 //with actor5 {x=320-64}
 	
- scenetime=440
+ scenetime=400
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
 }
 }
 
-if scenetime=700
+if scenetime=520
 {
 
 	
 with oControl
 {cutscenename="HINA" cutsceneline= "Umm... Girls...?"
 }
+scenetime=860
 }
 
 if scenetime=940
@@ -114,6 +115,7 @@ with oControl
 {
 cutscenename="HINA" cutsceneline= "Girls...?"
 }
+scenetime=1360
 }
 
 if scenetime=1440
@@ -129,6 +131,7 @@ with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
 }
+scenetime=1860
 }
 if scenetime=2040
 {specialcheck[6]=0 hspeed=0
@@ -158,7 +161,8 @@ specialdraw=function()
 {
 
 draw_sprite(spr_allblackscreen,0,0,0)
-draw_sprite_ext(spr_cutscene3b3,2,round(x),round(y),1,1,0,c_white,specialcheck[6])
+draw_sprite_ext(spr_cutscene3b3,2,round(x+100),round(y),1,1,0,c_white,specialcheck[6])
+draw_sprite_ext(spr_cutscene3b3,3,round(x-100),round(y),1,1,0,c_white,specialcheck[6])
 draw_self()
 }	
 
@@ -196,7 +200,7 @@ if scenetime=3040
 {
 with oControl
 {
-cutscenename="BAHATI" cutsceneline= "Well we're not living right now..."
+cutscenename="VIVA" cutsceneline= "Well we're not living right now..."
 }
 }
 if scenetime=3400
@@ -207,7 +211,7 @@ cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
 }
 }
 if scenetime=3500
-{sprite_index=spr_allblackscreen x=0 y=0 specialdraw=-1;
+{sprite_index=spr_allblackscreen x=0 y=0 specialdraw=function() {draw_sprite(spr_allblackscreen,0,0,0) draw_self()}
 with oControl
 {
 cutscenename="" cutsceneline= "" ///Beating ensues
@@ -236,27 +240,28 @@ cutscenename="HINA" cutsceneline= "Just like us...."
 }
 
 if scenetime=4540
-{
+{image_index=1
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "Let's... make a deal since we're in the same issue... I revive you all, and you'll get back my heirloom along with yours!"
 }
 }
-if scenetime=5200
+if scenetime=5130
 {
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Wait how are you..."
 }
+scenetime=5200
 }
 
 
 
 if scenetime=5300
-{sprite_index=spr_allblackscreen image_index=0 image_alpha=1 x=0 y=0
+{sprite_index=spr_allblackscreen image_index=0 image_alpha=1 x=0 y=0 specialdraw=-1;
 with oControl
 {
-cutscenename="" cutsceneline= "Squish"
+cutscenename="" cutsceneline= ""
 }
 }
 if scenetime=5380

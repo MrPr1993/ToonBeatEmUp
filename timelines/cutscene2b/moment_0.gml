@@ -36,7 +36,7 @@ SceneY=-128
 __view_set( e__VW.YView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,480,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene2a anim=9999 isDepth=0 depth=-3000
+{sprite_index=mask_none anim=9999 isDepth=0 depth=-3000
 
 newscript=function()
 {scenetime+=1;
