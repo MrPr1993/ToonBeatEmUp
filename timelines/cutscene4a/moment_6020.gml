@@ -126,7 +126,7 @@ cutscenename="VIVA" cutsceneline= "Are you out of your mind?!"
 
 if scenetime=clamp(scenetime,610,639)
 {actor2.sprite_index=spr_hina_attack actor2.image_index=0
-actor2.y=lerp(actor2.y.actor1.y,0.1) actor2.x=lerp(actor2.x.actor1.x+12,0.1)
+actor2.y=lerp(actor2.y.actor1.y,0.1) actor2.x=lerp(actor2.x,actor1.x+12,0.1)
 }
 
 

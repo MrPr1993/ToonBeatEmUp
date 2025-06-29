@@ -21,6 +21,8 @@ __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
 {sprite_index=spr_cutscene4c0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+	
+	x=0 y=0
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -59,7 +61,7 @@ if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
 
-if scenetime<60 {y--;}
+if scenetime<60 {x--;}
 if scenetime=340
 {
 with actor1 {x=64}
@@ -70,6 +72,9 @@ with actor5 {x=320-64}
 with actor6 {x=320-32 y=160}
 	
 sprite_index=mask_none
+
+with actor3 {sprite_index=spr_bahati_talk2 image_speed=0.25}
+
 with oControl
 {
 cutscenename="BAHATI" cutsceneline="Sorry. We HAVE been too gung-ho on the whole 'fight first, ask questions later' approach..."
@@ -80,7 +85,11 @@ y=0
 if scenetime=740
 {sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
 scenetime=1700
-	
+
+with actor3 {sprite_index=spr_bahati_talk2 image_speed=0 image_index=0}
+
+with actor1 {sprite_index=spr_viva_talk3 image_speed=0.25}	
+
 with oControl
 {cutscenename="VIVA"
 cutsceneline="Look, we've had some VERY valuable personal treasures stolen from us, and we need to get them back. Do you know where they are?"
@@ -89,6 +98,9 @@ cutsceneline="Look, we've had some VERY valuable personal treasures stolen from 
 
 if scenetime=2140
 {actor5.image_xscale=-1 with actor5 {sprite_index=spr_seaweed_attack4 image_index=1 image_speed=0}
+
+with actor1 {image_speed=0 image_index=0}
+
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Very well... I suppose I'll let this incident go since Larry attacked you first. Larry, fetch my crystal ball would you, sweetie?"
@@ -98,6 +110,9 @@ cutscenename="CIRCE" cutsceneline= "Very well... I suppose I'll let this inciden
 if scenetime=2600
 {
 with actor5 {sprite_index=spr_seaweed_talk1 image_index=0 image_speed=0}
+
+with actor6 {sprite_index=spr_octopus_cutscene image_index=0}
+
 with oControl
 {
 cutscenename="LARRY" cutsceneline= "..."
@@ -113,7 +128,12 @@ cutscenename="CIRCE" cutsceneline= "Oh, come now, mommy will take you to a shop 
 }
 
 if scenetime=3100
-{actor6.hspeed=2 with actor5 {sprite_index=spr_seaweed_talk1 image_index=0 image_speed=0}
+{
+with actor6 {sprite_index=spr_octopus_scene1 image_speed=0.1 image_index=0}
+	
+actor6.hspeed=2 with actor5 {sprite_index=spr_seaweed_talk1 image_index=0 image_speed=0}
+
+with actor2 {sprite_index=spr_hina_cutscene image_index=0}
 
 with oControl
 {
@@ -144,7 +164,7 @@ cutscenename="VIVA" cutsceneline= "What."
 }
 
 if scenetime=3500
-{actor6.hspeed=-2 actor6.x=380
+{actor6.hspeed=-2  actor6.x=380 with actor6 {sprite_index=spr_octopus_scene2 image_index=0}
 	with actor1 {sprite_index=spr_viva_wildtake image_index=0 image_speed=0}
 with oControl
 {
@@ -152,7 +172,7 @@ cutscenename="CIRCE" cutsceneline= "Oh, here we are, thank you dear!"
 }
 }
 
-if scenetime=3600 actor6.hspeed=0
+if scenetime=3600 {actor6.hspeed=0 actor6.image_speed=0}
 
 if scenetime=3650
 {

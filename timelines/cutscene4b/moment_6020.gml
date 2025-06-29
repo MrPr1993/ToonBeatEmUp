@@ -11,6 +11,8 @@ CutsceneStage=rm_stageufo
 with actorscreen
 {scenetime=0;
 
+actor8.image_index=0 actor8.specialcheck[3]=10; with actor8 x=xstart;
+
 with oControl
 {
 //-Red Oni is lying(Swamp)-
@@ -49,7 +51,7 @@ cutscenename="" cutsceneline= ""
 }
 
 if scenetime=920
-{sprite_index=mask_none image_blend=c_white
+{sprite_index=mask_none image_blend=c_white actor8.x=9999;
 	
 with actor1 {x=0 sprite_index=spr_viva_hit image_index=17 ground=0 spdZ=-8 hspeed=5 anim=9999
 newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
@@ -98,10 +100,14 @@ with oControl {cutscenename="VIVA" cutsceneline= "Stupid mask-wearing haggy lone
 }
 
 
-
 if scenetime=1700
 {
+with actor2  {sprite_index=spr_hina_cutscene image_index=3}
+with actor3  {sprite_index=spr_bahati_cutscene image_index=3}
+with actor4  {sprite_index=spr_sofia_talk3 image_index=0}
+
 with oControl {cutscenename="" cutsceneline= ""}
+
 }
 
 if scenetime=1800
@@ -127,6 +133,8 @@ CutsceneStage=rm_stagemermaid
 
 with actorscreen
 {scenetime=0;
+	
+	actor8.image_index=0 actor8.specialcheck[3]=11; with actor8 x=xstart;
 
 with oControl
 {
@@ -147,7 +155,7 @@ with oControl {cutscenename="VIVA" cutsceneline= "And what is it?"}
 }
 
 if scenetime=660
-{sprite_index=spr_cutscene4b image_blend=c_black x=0 y=0 image_xscale=2 image_yscale=2
+{sprite_index=spr_cutscene4b image_blend=c_black x=0 y=0 image_xscale=2 image_yscale=2 actor8.x=9999;
 with oControl {cutscenename="" cutsceneline= ""}
 }
 
@@ -227,32 +235,42 @@ if scenetime=3700
 	
 with actor1 {x=100 y=160 sprite_index=spr_viva_cutscene}
 
-with actor2 {x=160-96 y=180 sprite_index=spr_hina_hit image_index=21}
-with actor3 {x=160 y=180 sprite_index=spr_sofia_hit image_index=21}
-with actor4 {x=160+96 y=180 sprite_index=spr_bahati_hit image_index=21}
+with actor2 {x=160-96 y=180 sprite_index=spr_hina_cutscene image_index=4}
+with actor3 {x=160 y=180 sprite_index=spr_sofia_cutscene image_index=0}
+with actor4 {x=160+96 y=180 sprite_index=spr_bahati_cutscene image_index=4}
 
-with actor5 {x=220 y=160 sprite_index=spr_witch_talk image_xscale=-1}
+with actor5 {x=220 y=160 sprite_index=spr_witch_intro image_xscale=-1 image_index=7}
 	
 with oControl {cutscenename="" cutsceneline= ""}
 }
 
 if scenetime=4000
 {
+with actor1 {sprite_index=spr_viva_talk image_speed=0.25 }
+
 with oControl {cutscenename="VIVA" cutsceneline="I know him. I never wanted to meet him because of the situation, but I guess we have no other choice."}
 }
 
 if scenetime=4400
 {
+with actor1 {sprite_index=spr_viva_talk image_speed=0 image_index=0}
+
+with actor5 {image_index=8}
+
 with oControl {cutscenename="KIANDRA" cutsceneline="Well I wish you luck with that. At least I got to meet someone who appreciates my work."}
 }
 
 if scenetime=4750
 {
+with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25 }
+
 with oControl {cutscenename="VIVA" cutsceneline="Come on, girls. Stop overreacting. That soup was great."}
 }
 
 if scenetime=5000
 {
+with actor1 {image_speed=0 image_index=0}
+
 with oControl {cutscenename="BAHATI" cutsceneline="Viva even put mayo and ketchup on the soup as a condiment. That's... not..."}
 }
 
@@ -284,6 +302,7 @@ newscript=function()
 {
 scenetime+=1;
 
+actor8.image_index=0 actor8.specialcheck[3]=12; with actor8 x=xstart;
 
 if scenetime=480
 {
@@ -308,7 +327,7 @@ sprite_index=spr_whitecol image_blend=c_white depth=-4000
 with oControl {cutscenename="" cutsceneline=""}
 }
 
-if scenetime=1120 {flashscreen.fadeSpd=0 x=0 y=0
+if scenetime=1120 {flashscreen.fadeSpd=0 x=0 y=0 actor8.x=9999;
 sprite_index=spr_hotdesert image_index=0 vspeed=-0.2
 }
 if scenetime>=1120 flashscreen.image_alpha-=0.1

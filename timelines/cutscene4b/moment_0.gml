@@ -46,8 +46,19 @@ actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
-actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+////Cauldron Smoke
+actor8=instance_create_depth(160,146,-1,oCameoChar) with actor8
+{sprite_index=spr_cauldronspawn anim=9999 image_xscale=1 x+=999999 isDepth=0 depth=-3001
+	
+	specialdraw=function()
+	{
+	image_index+=0.2 if image_index>=10 image_index=7
+	if image_index>=4
+	draw_sprite(spr_cauldronspawn,specialcheck[3],x,y)
+	draw_sprite(spr_cauldronspawn,image_index,x,y)
+	
+	}
+	}
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
