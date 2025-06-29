@@ -34,8 +34,8 @@ if scenetime=260
 with oControl
 {
 	with actor1 {hspeed=4 sprite_index=spr_viva_wildtake7 image_index=2}
-	with actor3 {hspeed=6 sprite_index=spr_bahati_wildtake7 image_index=2}
-	with actor4 {hspeed=6 sprite_index=spr_sofia_wildtake7 image_index=2}
+	with actor3 {hspeed=9 sprite_index=spr_bahati_wildtake7 image_index=2}
+	with actor4 {hspeed=9 sprite_index=spr_sofia_wildtake7 image_index=2}
 }
 
 if scenetime=262
@@ -58,7 +58,7 @@ depth=-9999 image_xscale=320 image_yscale=240 scenetime=800
 }
 
 if scenetime=920
-{image_xscale=1 image_yscale=1
+{image_xscale=1 image_yscale=1 PlaySoundNoStackPitch(snd_carengine,0.5)
 with oCameoChar y=9999
 
 flashFX(100,-108,0,spr_planefalling,0,0.1,99999,1,1,c_white,1) fx.isDepth=0 fx.depth=999
@@ -209,8 +209,10 @@ layer_set_visible("Clouds",0)
 
 if scenetime>=680
 {
+layer_hspeed("Backgrounds_1",-1)	
+
 with oControl
-actor5.z=lerp(actor5.z,0,0.1)
+actor5.z=lerp(actor5.z,70,0.1)
 }
 
 if scenetime=1000{ 
@@ -232,7 +234,9 @@ if scenetime=2120{
 with oControl {cutscenename="HARPILDA" cutsceneline="OH, WELL THAT’S EMBARRASSING. WELL, I DO APOLOGIZE. MAYBE I CAN MAKE IT UP TO YOU DEARIES BY TAKING YOU TO ONE PLACE THEY MIGHT HAVE SHOWN UP MOSTLY?"}
 }
 if scenetime=2620{ 
-with oControl {cutscenename="HINA" cutsceneline="WHAT PLACE IS IT?"}
+with oControl {
+	with actor5 sprite_index=spr_divasonharpy2
+	cutscenename="HINA" cutsceneline="WHAT PLACE IS IT?"}
 }
 if scenetime=2780{ 
 with oControl {cutscenename="HARPILDA" cutsceneline="THAT CASINO HAS TOUGH SECURITY, BUT THAT’S ONE PLACE WHERE YOU CAN FIND CLUES FOR WHERE YOUR PRECIOUS THINGS GOT TAKEN TO."}

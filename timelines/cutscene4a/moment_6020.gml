@@ -116,16 +116,24 @@ cutscenename="DIXIE" cutsceneline= "Aw shucks, ya mean it?! That'd make this all
 
 if scenetime=600
 {
-
+with actor1 {sprite_index=spr_viva_anger image_index=0}
 
 with oControl
 {
-cutscenename="VIVA" cutsceneline= "Are you out of your mi-MMMMPH!"
+cutscenename="VIVA" cutsceneline= "Are you out of your mind?!"
 }
 }
 
+if scenetime=clamp(scenetime,610,639)
+{actor2.sprite_index=spr_hina_attack actor2.image_index=0
+actor2.y=lerp(actor2.y.actor1.y,0.1) actor2.x=lerp(actor2.x.actor1.x+12,0.1)
+}
+
+
 if scenetime=640
 {
+with actor1 {sprite_index=spr_viva_cutscene image_index=6}
+with actor2 sprite_index=mask_none
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Shhhh, let's trust Bahati on this."

@@ -2520,6 +2520,7 @@
     {"name":"spr_divasleaveufo","order":5,"path":"sprites/spr_divasleaveufo/spr_divasleaveufo.yy",},
     {"name":"spr_divasletsparty","order":11,"path":"sprites/spr_divasletsparty/spr_divasletsparty.yy",},
     {"name":"spr_divasonharpy","order":12,"path":"sprites/spr_divasonharpy/spr_divasonharpy.yy",},
+    {"name":"spr_divasonharpy2","order":13,"path":"sprites/spr_divasonharpy2/spr_divasonharpy2.yy",},
     {"name":"spr_divasparachute","order":9,"path":"sprites/spr_divasparachute/spr_divasparachute.yy",},
     {"name":"spr_divasseecops","order":8,"path":"sprites/spr_divasseecops/spr_divasseecops.yy",},
     {"name":"spr_diver_airkick","order":9,"path":"sprites/spr_diver_airkick/spr_diver_airkick.yy",},

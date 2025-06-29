@@ -20,7 +20,7 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,192+96,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene4b0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_cutscene4b0 anim=9999 isDepth=0 depth=-3000 shadow=-1; x=0; y=0; image_speed=0.02
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -58,7 +58,7 @@ cutscenename="KIANDRA"
 cutsceneline="...YOU..."
 }
 
-y=180
+y=-48
 
 newscript=function()
 {
@@ -70,7 +70,7 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene
 
 if scenetime<120 {if y<230 y+=0.2;}
 if scenetime=120
-{sprite_index=mask_none scenetime=340
+{sprite_index=mask_none scenetime=340 image_speed=0
 	
 with actor1 {x=64}
 with actor2 {x=64}
@@ -82,12 +82,13 @@ with oControl
 {
 cutsceneline="Why did you break into my home and beat me up?! Didn't you read the signs?!"
 } x=0
-y=0 vspeed=-0.2 hspeed=0
+y=0 vspeed=0.2 hspeed=0
 }
 
 if scenetime=640
 {sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
 
+with actor4 {image_xscale=-1 sprite_index=spr_sofia_talk2 image_speed=0.25}
 	
 with oControl
 {
@@ -98,13 +99,22 @@ cutsceneline= "Hey, it's what we do. We have questions for you, miss witch."
 if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
 
 if scenetime=940
-{with actor5 {sprite_index=spr_witch_attack2 image_speed=0 image_index=0}
+{
+with actor4 {image_xscale=1 image_index=0 sprite_index=spr_sofia_stand image_speed=0}
+	
+with actor5 {sprite_index=spr_witch_attack2 image_speed=0 image_index=0}
 with oControl
 {cutscenename="KIANDRA" cutsceneline= "...do you ever get answers through violence, what is wrong with you?!"}
 }
 
 if scenetime=1260
-{with oControl
+{
+with actor1 {sprite_index=spr_viva_cutscene image_index=7}
+with actor2 {sprite_index=spr_hina_cutscene image_index=1}
+with actor3 {sprite_index=spr_bahati_talk2 image_index=0}
+with actor4 {sprite_index=spr_sofia_talk3 image_index=0}
+
+with oControl
 {cutscenename="HINA" cutsceneline= "Oh... um..."}
 }
 
@@ -118,6 +128,8 @@ hspeed=-2
 
 if scenetime=1660
 {	
+with actor3 {sprite_index=spr_bahati_talk2 image_speed=0.25}
+
 with oControl
 {image_index=1
 cutscenename="BAHATI" cutsceneline= "Right, sorry... can you still help us? We are after thieves who were stealing treasures."}
@@ -126,6 +138,8 @@ cutscenename="BAHATI" cutsceneline= "Right, sorry... can you still help us? We a
 
 if scenetime=2040
 {
+with actor3 {image_speed=0 image_index=0}	
+
 with oControl
 {cutscenename="KIANDRA" cutsceneline="...fine. If it gets you out of here faster, then so be it... Let us consult my cauldron for your paths..."}
 }
@@ -161,7 +175,7 @@ with oControl
 cutscenename="KIANDRA" cutsceneline= "Have a look at the cauldron and I'll show you the way from what you choose."}
 }
 
-if scenetime=clamp(scenetime,6000,6100) y--;
+if scenetime=clamp(scenetime,6000,6100) {y--; y=clamp(y,0,9999)}
 
 if scenetime=6200
 {

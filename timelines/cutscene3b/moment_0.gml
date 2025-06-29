@@ -75,9 +75,9 @@ if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
 if scenetime<=1739
-if scenetime>=640 specialcheck[6]=lerp(specialcheck[6],0.8,0.01)
+if scenetime>=640 specialcheck[6]=lerp(specialcheck[6],0.8,0.001)
 
-if scenetime=440
+if scenetime=380
 {
 //with actor1 {x=64}
 //with actor2 {x=64}
@@ -85,14 +85,14 @@ if scenetime=440
 //with actor4 {x=64}
 //with actor5 {x=320-64}
 	
- scenetime=400
+ scenetime=500
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
 }
 }
 
-if scenetime=520
+if scenetime=600
 {
 
 	
@@ -161,8 +161,8 @@ specialdraw=function()
 {
 
 draw_sprite(spr_allblackscreen,0,0,0)
-draw_sprite_ext(spr_cutscene3b3,2,round(x+100),round(y),1,1,0,c_white,specialcheck[6])
-draw_sprite_ext(spr_cutscene3b3,3,round(x-100),round(y),1,1,0,c_white,specialcheck[6])
+draw_sprite_ext(spr_cutscene3b3,2,round(x+160),round(y),1,1,0,c_white,specialcheck[6])
+draw_sprite_ext(spr_cutscene3b3,3,round(x-60),round(y),1,1,0,c_white,specialcheck[6])
 draw_self()
 }	
 
@@ -197,7 +197,7 @@ cutscenename="SOFIA" cutsceneline= "The living huh...?"
 }
 
 if scenetime=3040
-{
+{scenetime=3180
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Well we're not living right now..."
