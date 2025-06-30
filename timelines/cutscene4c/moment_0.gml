@@ -6,9 +6,9 @@ instance_create_depth(-999,-999,-1,oTextBox)
 with oControl
 {
 CDtextT="WHAT DO YOU SEE\nIN THE CRYSTAL BALL?"
-CDtextA="A CORN!"
-CDtextB="A CROWN!"
-CDtextC="A LAMP!"
+CDtextA="THE STARS!"
+CDtextB="THE SEAS!"
+CDtextC="THE SANDS!"
 
 cutscenename="CIRCE" cutsceneline= "How could you?! First you pick on my sweet Larry and NOW you attack me?! What's wrong with you?!"
 }
@@ -22,6 +22,8 @@ __view_set( e__VW.XView, 0, SceneY )
 actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
 {sprite_index=spr_cutscene4c0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
 	
+musicplaystart(msc_countdown)	
+
 	x=0 y=0
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
@@ -42,8 +44,12 @@ actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
 actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
-actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+actor8=instance_create_depth(0,0,-1,oCameoChar) with actor8
+{x=9999 sprite_index=spr_crystalballshow image_alpha=0 anim=9999 image_xscale=1 x+=999999 isDepth=0 depth=-3001
+newscript=function() {if specialcheck[0]=1 image_alpha+=0.01}
+	}
+	
+
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
@@ -65,9 +71,9 @@ if scenetime<60 {x--;}
 if scenetime=340
 {
 with actor1 {x=64}
-with actor2 {x=64}
-with actor3 {x=64}
-with actor4 {x=64}
+with actor2 {x=64+16}
+with actor3 {x=64+32}
+with actor4 {x=64-24}
 with actor5 {x=320-64}
 with actor6 {x=320-32 y=160}
 	
@@ -151,7 +157,7 @@ cutscenename="CIRCE" cutsceneline= "Yes. They used to be a sailor."
 }
 
 if scenetime=3400
-{
+{audio_stop_all();
 with actor1 {sprite_index=spr_viva_screamdown image_index=0 image_speed=0}
 with actor2 {sprite_index=spr_hina_wildtake image_index=0 image_speed=0}
 with actor3 {sprite_index=spr_bahati_wildtake image_index=0 image_speed=0}
@@ -194,9 +200,20 @@ scenetime=3800
 
 if scenetime=3800 scenetime=6000
 
+if scenetime>=6000 {y=lerp(y,-48,0.1)}
+
 if scenetime=6000
 {with actor5 sprite_index=spr_seaweed_talk2
 sprite_index=spr_witchcrystalball x=0 y=0
+
+audio_stop_all();
+
+with actor1 {sprite_index=spr_viva_cutscene image_index=0 image_speed=0 x=64}
+with actor2 {sprite_index=spr_hina_cutscene image_index=1 image_speed=0 x=64+16}
+with actor3 {sprite_index=spr_bahati_cutscene image_index=1 image_speed=0 x=64+32}
+with actor4 {sprite_index=spr_sofia_talk3 image_index=0 image_speed=0 x=64-24}
+with actor5 {sprite_index=spr_seaweed_talk1 x=320-64 image_index=0 image_speed=0}
+with actor6 {image_speed=0 x=320-32 y=160 sprite_index=spr_octopus_scene2}
 
 with oControl
 {

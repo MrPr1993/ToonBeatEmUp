@@ -42,7 +42,10 @@ cutscenename="KIANDRA" cutsceneline= "Well, that's not my problem! Now..."
 }
 
 if scenetime=800
-{sprite_index=spr_cutscene4b image_blend=c_black x=0 y=0 image_xscale=2 image_yscale=2
+{sprite_index=spr_allblackscreen image_blend=c_black x=0 y=0 image_xscale=2 image_yscale=2
+
+sprite_index=mask_none image_blend=c_white actor8.x=9999;
+
 with oControl
 {
 cutscenename="" cutsceneline= ""
@@ -51,28 +54,33 @@ cutscenename="" cutsceneline= ""
 }
 
 if scenetime=920
-{sprite_index=mask_none image_blend=c_white actor8.x=9999;
+{
+	
+PlaySound(snd_viva11)
+PlaySound(snd_hina10)
+PlaySound(snd_bahati8)
+PlaySound(snd_sofia9)
 	
 with actor1 {x=0 sprite_index=spr_viva_hit image_index=17 ground=0 spdZ=-8 hspeed=5 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 {hspeed=0 PlaySoundNoStack(snd_hitground)} z=0 ground=1} if ground{ anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_cutscene2 image_speed=0.2 image_index=0}}}}
 	
 with actor2 {x=0 sprite_index=spr_hina_hit image_index=17 ground=0 spdZ=-9 hspeed=3.5 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 {hspeed=0 PlaySoundNoStack(snd_hitground)} z=0 ground=1} if ground{ anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_hina_point image_index=0}}}}
 	
 with actor3 {x=0 sprite_index=spr_bahati_hit image_index=17 ground=0 spdZ=-8.5 hspeed=4 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 {hspeed=0 PlaySoundNoStack(snd_hitground)} z=0 ground=1} if ground{ anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_bahati_point image_index=0}}}}
 	
 with actor4 {x=0 sprite_index=spr_sofia_hit image_index=17 ground=0 spdZ=-9 hspeed=5 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{ anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 {hspeed=0 PlaySoundNoStack(snd_hitground)} z=0 ground=1} if ground{ anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_sofia_point image_index=0}}}}
@@ -96,11 +104,15 @@ with oControl {cutscenename="VIVA" cutsceneline= "Well that's rude! Fine! We did
 if scenetime=1300
 {
 with actor1 {sprite_index=spr_viva_moveangry image_xscale=1 hspeed=1 image_speed=0.25}
+with actor2 image_xscale=1
+with actor3 image_xscale=1
+with actor4 image_xscale=1
+
 with oControl {cutscenename="VIVA" cutsceneline= "Stupid mask-wearing haggy loner... she and her rotting corpses..."}
 }
 
 
-if scenetime=1700
+if scenetime=1400
 {
 with actor2  {sprite_index=spr_hina_cutscene image_index=3}
 with actor3  {sprite_index=spr_bahati_cutscene image_index=3}
@@ -110,7 +122,7 @@ with oControl {cutscenename="" cutsceneline= ""}
 
 }
 
-if scenetime=1800
+if scenetime=1500
 {
 with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2 image_xscale=1}
 with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2 image_xscale=1}
@@ -118,7 +130,7 @@ with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=2 image_xscale
 with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2 image_xscale=1}
 }
 
-if scenetime=2320
+if scenetime=1720
 {
 oControl.stageEndFX=1
 }
@@ -139,7 +151,7 @@ with actorscreen
 with oControl
 {
 //-Both are lying(Carnival)-
-cutscenename="KIANDRA" cutsceneline= "Supposedly a prince lives in the nearby waters... But you'll need this potion to tread the seafloor..."
+cutscenename="KIANDRA" cutsceneline= "Supposedly a prince lives in the nearby waters... But you'll need a thing to tread the seafloor..."
 }
 x=0
 y=0
@@ -160,12 +172,15 @@ with oControl {cutscenename="" cutsceneline= ""}
 }
 
 if scenetime=800
-{sprite_index=spr_grosspot image_blend=c_white x=0 y=0 image_xscale=1 image_yscale=1
+{sprite_index=spr_grosspot image_blend=c_white x=0 y=0 image_xscale=1 image_yscale=1 PlaySound(snd_squeaky)
 with oControl {cutscenename="" cutsceneline= ""}
 }
 
 if scenetime=960
-{sprite_index=spr_cutscene4b3
+{sprite_index=spr_cutscene4b3 
+	
+with BGactor {sprite_index=spr_allblackscreen x=0 y=0}
+	
 with oControl {
 }
 }
@@ -173,7 +188,7 @@ with oControl {
 if scenetime=1060
 {
 vivaface=instance_create_depth(0,192,-1,oCameoChar) with vivaface
-{isDepth=0 depth=-10000 sprite_index=spr_vivaoohyum
+{isDepth=0 depth=-10000 sprite_index=spr_vivaoohyum musicplaystart(msc_training)
 newscript=function()
 {y=lerp(y,-48,0.1)
 }
@@ -190,7 +205,7 @@ with oControl {cutscenename="VIVA" cutsceneline="Mmm what is your recipe?"}
 }
 
 if scenetime=1500
-{
+{with BGactor sprite_index=mask_none
 with oControl {//KERSMASH!
 cutscenename="KIANDRA" cutsceneline=  "Well now, you find this appetizing? That's a first."}
 }
@@ -198,15 +213,16 @@ cutscenename="KIANDRA" cutsceneline=  "Well now, you find this appetizing? That'
 if scenetime=1800
 {sprite_index=spr_vivalikesit 
 with oControl {cutscenename="SOFIA" cutsceneline= "Are your tastebuds warped or something?!"}
+scenetime=2100
 }
 
 if scenetime=2300
-{
+{scenetime=2500
 with oControl {cutscenename="HINA" cutsceneline= "Are you even human..."}
 }
 
 if scenetime=2600
-{
+{scenetime=2750
 with oControl {cutscenename="BAHATI" cutsceneline="Is it even safe to eat...?"}
 }
 
@@ -221,7 +237,7 @@ with oControl {cutscenename="BAHATI" cutsceneline="BUT-"}
 }
 
 if scenetime=3400
-{sprite_index=spr_vivalikesit image_index=2
+{sprite_index=spr_vivalikesit image_index=2 audio_stop_all() PlaySound(snd_hitgroundheavy)
 with oControl {quakeFXTime=10 cutscenename="VIVA" cutsceneline="Eat!"}
 }
 
@@ -239,7 +255,7 @@ with actor2 {x=160-96 y=180 sprite_index=spr_hina_cutscene image_index=4}
 with actor3 {x=160 y=180 sprite_index=spr_sofia_cutscene image_index=0}
 with actor4 {x=160+96 y=180 sprite_index=spr_bahati_cutscene image_index=4}
 
-with actor5 {x=220 y=160 sprite_index=spr_witch_intro image_xscale=-1 image_index=7}
+with actor5 {image_speed=0 x=220 y=160 sprite_index=spr_witch_intro image_xscale=-1 image_index=7}
 	
 with oControl {cutscenename="" cutsceneline= ""}
 }
@@ -298,11 +314,13 @@ cutscenename="KIANDRA" cutsceneline= "Looks like your path leads into the desert
 x=0
 y=0
 
+actor8.image_index=0 actor8.specialcheck[3]=12; with actor8 x=xstart;
+
 newscript=function()
 {
 scenetime+=1;
 
-actor8.image_index=0 actor8.specialcheck[3]=12; with actor8 x=xstart;
+
 
 if scenetime=480
 {
@@ -329,6 +347,8 @@ with oControl {cutscenename="" cutsceneline=""}
 
 if scenetime=1120 {flashscreen.fadeSpd=0 x=0 y=0 actor8.x=9999;
 sprite_index=spr_hotdesert image_index=0 vspeed=-0.2
+BGactor.sprite_index=spr_cutscene4b BGactor.x=0 BGactor.y=0
+
 }
 if scenetime>=1120 flashscreen.image_alpha-=0.1
 

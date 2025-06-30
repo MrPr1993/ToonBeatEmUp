@@ -27,7 +27,7 @@ scenetime+=1;
 
 if scenetime=320
 {
-with actor1 {sprite_index=spr_viva_talk2 image_index=0}
+with actor1 {sprite_index=spr_viva_talk2 image_speed=0 image_index=0}
 	
 
 with actor5 {sprite_index=spr_duck_talk1 image_speed=0 image_index=0}
@@ -37,7 +37,7 @@ cutscenename="DIXIE" cutsceneline= "Why I oughta.... Fine! Exit's through the co
 }
 }
 
-if scenetime=540
+if scenetime=640
 {
 with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
 with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
@@ -51,7 +51,7 @@ cutscenename="HINA" cutsceneline=  "You mean 'Don't let it'?"
 }
 }
 
-if scenetime=720
+if scenetime=760
 {
 with oControl
 {
@@ -59,7 +59,7 @@ cutscenename="VIVA" cutsceneline= "No, Hina. She means what she said."
 }
 }
 
-if scenetime=860
+if scenetime=900
 {
 with oControl
 {
@@ -75,7 +75,7 @@ cutscenename="DIXIE" cutsceneline= "Heheheh... Those palookas got no clue people
 }
 }
 
-if scenetime=1320
+if scenetime=1380
 {
 oControl.stageEndFX=1
 }
@@ -90,6 +90,8 @@ CutsceneStage=rm_stagemermaid
 
 with actorscreen
 {scenetime=0;
+	
+with actor3 {sprite_index=spr_bahati_talk image_speed=0.1}
 
 sprite_index=mask_none
 with oControl
@@ -105,6 +107,7 @@ scenetime+=1;
 
 if scenetime=380
 {
+with actor3 {sprite_index=spr_bahati_talk image_index=0 image_speed=0}
 
 with actor5 {sprite_index=spr_duck_talk2 image_speed=0 image_index=0}
 
@@ -125,13 +128,13 @@ cutscenename="VIVA" cutsceneline= "Are you out of your mind?!"
 }
 
 if scenetime=clamp(scenetime,610,639)
-{actor2.sprite_index=spr_hina_attack actor2.image_index=0
-actor2.y=lerp(actor2.y.actor1.y,0.1) actor2.x=lerp(actor2.x,actor1.x+12,0.1)
+{actor2.sprite_index=spr_hina_attack actor2.image_index=0 
+actor2.y=lerp(actor2.y,actor1.y,0.1) actor2.x=lerp(actor2.x,actor1.x+12,0.1)
 }
 
 
 if scenetime=640
-{
+{PlaySound(snd_steal)
 with actor1 {sprite_index=spr_viva_cutscene image_index=6}
 with actor2 sprite_index=mask_none
 with oControl
@@ -141,13 +144,15 @@ cutscenename="HINA" cutsceneline= "Shhhh, let's trust Bahati on this."
 }
 
 if scenetime=940
-{sprite_index=spr_allblackscreen
+{sprite_index=spr_allblackscreen PlaySound(snd_hitgroundheavy)
 	
 with oControl
 {
 cutscenename="" cutsceneline= ""
 }
 }
+
+if scenetime=980 PlaySound(snd_hitgroundmetal)
 
 if scenetime=1040
 {sprite_index=spr_allblackscreen
@@ -166,7 +171,7 @@ cutscenename="DIXIE" cutsceneline= "And now for the grand finale... THESE DAMES 
 }
 
 if scenetime=1620
-{sprite_index=spr_byetent x=0 y=0 vspeed=0 audio_stop_all()
+{sprite_index=spr_byetent image_index=0 x=0 y=0 vspeed=0 audio_stop_all()
 with oControl
 {
 cutscenename="" cutsceneline= ""
@@ -174,7 +179,7 @@ cutscenename="" cutsceneline= ""
 }
 
 if scenetime=1700
-{sprite_index=spr_byetent x=0 y=0 PlaySound(snd_explosion)
+{sprite_index=spr_byetent x=0 y=0 PlaySound(snd_explosion) image_index=1
 
 flashFX(124,120,0,spr_explosion4,0,0.25,30,1,1,c_white,1) with fx
 {isDepth=0 depth=-3004}
@@ -191,10 +196,13 @@ cutscenename="" cutsceneline= ""
 if scenetime=1860
 {actor5.y=9999 sprite_index=mask_none ///124, 120
 
+layer_set_visible("BTG1",0)
+layer_set_visible("BTG2",0)
+
 with actor1 {z=-32 sprite_index=spr_viva_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
-with actor2 {z=-32 sprite_index=spr_hina_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
-with actor3 {z=-32 sprite_index=spr_bahati_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
-with actor4 {z=-32 sprite_index=spr_sofia_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
+with actor2 {z=-32 sprite_index=spr_hina_cannonball image_index=7 x=-160 y-=32 shadow=-1 image_speed=0.25}
+with actor3 {z=-32 sprite_index=spr_bahati_cannonball image_index=7 x=-160 y+=24 shadow=-1 image_speed=0.25}
+with actor4 {z=-32 sprite_index=spr_sofia_cannonball image_index=7 x=-160 y+=48 shadow=-1 image_speed=0.25}
 
 with oControl
 {
@@ -217,12 +225,18 @@ with actor3 {hspeed=0 x=lerp(x+lengthdir_x(4,oControl.actorscreen.specialcheck[3
 with actor4 {hspeed=0 x=lerp(x+lengthdir_x(4,oControl.actorscreen.specialcheck[4]),160-12,0.1)}
 }
 
-if scenetime>=2460
-{with oCameoChar vspeed+=0.1
+if scenetime>=2260
+{
 
+	
+with oCameoChar vspeed+=0.1
+
+if actor1.y<=270 scenetime=2265
 }
 
-if scenetime=2820
+if scenetime=2270 PlaySound(snd_splash2)
+
+if scenetime=2320
 {
 oControl.stageEndFX=1
 }
@@ -352,11 +366,11 @@ actor4.y=lerp(actor4.y,actor6.y-2,0.1)
 
 }
 
-if scenetime=1460 {actor6.hspeed=8 PlaySound(snd_carengine)
+if scenetime=1400 {actor6.hspeed=8 PlaySound(snd_carengine)
 	actor1.y=999 actor2.y=999 actor3.y=999 actor4.y=999
 	}
 
-if scenetime=1620
+if scenetime=1520
 {
 oControl.stageEndFX=1
 }

@@ -23,6 +23,8 @@ __view_set( e__VW.XView, 0, SceneY )
 actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
 {sprite_index=spr_whereisghost anim=9999 isDepth=0 depth=-3000 shadow=-1; x=0 y=0
 
+musicplaystart(msc_weird)
+
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
 actor2=instance_create_depth(1150,144,-1,oCameoChar) with actor2
@@ -126,7 +128,7 @@ cutscenename="SOFIA" cutsceneline= "Not now Hina, can't you see we're trying to 
 }
 }
 if scenetime=1740
-{
+{audio_stop_all()
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
@@ -134,7 +136,7 @@ cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
 scenetime=1860
 }
 if scenetime=2040
-{specialcheck[6]=0 hspeed=0
+{specialcheck[6]=0 hspeed=0 PlaySound(snd_hit3)
 specialdraw=function() {  draw_self();}; x=32
 
 sprite_index=spr_ghostslash image_speed=0
@@ -166,7 +168,7 @@ draw_sprite_ext(spr_cutscene3b3,3,round(x-60),round(y),1,1,0,c_white,specialchec
 draw_self()
 }	
 
-
+musicplaystart(msc_scary)
 
 sprite_index=spr_cutscene3b3 image_index=0
 x=180 y=182
@@ -181,7 +183,7 @@ cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for th
 if scenetime=clamp(scenetime,2780,2879) specialcheck[6]=lerp(specialcheck[6],0.8,0.05)
 
 if scenetime=2780
-{sprite_index=spr_cutscene3b3 image_index=1
+{sprite_index=spr_cutscene3b3 image_index=1 audio_stop_all()
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
@@ -217,8 +219,16 @@ with oControl
 cutscenename="" cutsceneline= "" ///Beating ensues
 }
 }
+
+if scenetime=3510 PlaySound(snd_hit)
+if scenetime=3570 PlaySound(snd_hit2)
+if scenetime=3630 PlaySound(snd_hit5)
+
 if scenetime=3640
 {sprite_index=spr_beatghost image_index=0 x=0 y=0 image_alpha=0.8
+	
+musicplaystart(msc_training)
+	
 with oControl
 {quakeFXTime=10
 cutscenename="ANNAMARI" cutsceneline= "I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
@@ -259,13 +269,14 @@ scenetime=5200
 
 if scenetime=5300
 {sprite_index=spr_allblackscreen image_index=0 image_alpha=1 x=0 y=0 specialdraw=-1;
+	audio_stop_all()
 with oControl
 {
 cutscenename="" cutsceneline= ""
 }
 }
 if scenetime=5380
-{sprite_index=spr_putheadback image_index=0 image_alpha=1
+{sprite_index=spr_putheadback image_index=0 image_alpha=1 PlaySound(snd_steal)
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "OH. So unconfortable for my neck..."
@@ -280,12 +291,12 @@ cutscenename="BAHATI" cutsceneline= "Well, where the thieves went, miss Annamari
 }
 
 if scenetime=6000
-{
+{audio_stop_all()
 sprite_index=mask_none
 
 with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {x=0; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=0; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
+with actor2 {x=-33; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
+with actor3 {x=32; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
 with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
 with actor5 {x=60; image_speed=0.25 sprite_index=spr_ghost_move; image_xscale=1 hspeed=2}
 

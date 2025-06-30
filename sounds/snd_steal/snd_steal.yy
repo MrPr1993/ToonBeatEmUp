@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.125986,
+  "duration":0.1259864,
   "name":"snd_steal",
   "parent":{
     "name":"General",

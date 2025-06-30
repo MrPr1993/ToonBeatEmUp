@@ -7,8 +7,8 @@ with oControl
 {
 CDtextT="WHAT DO YOU SEE\nIN THE CAULDRON?"
 CDtextA="A CORNFIELD!"
-CDtextB="THE SEA!"
-CDtextC="THE DESERT!"
+CDtextB="A PRINCE!"
+CDtextC="A DESERT!"
 
 cutscenename=""
 cutsceneline=""
@@ -20,7 +20,9 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,192+96,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene4b0 anim=9999 isDepth=0 depth=-3000 shadow=-1; x=0; y=0; image_speed=0.02
+{sprite_index=spr_cutscene4b0 anim=9999 isDepth=0 depth=-3000 shadow=-1; x=0; y=0; image_speed=0.05
+
+musicplaystart(msc_weird)
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -47,8 +49,10 @@ actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
 ////Cauldron Smoke
-actor8=instance_create_depth(160,146,-1,oCameoChar) with actor8
+actor8=instance_create_depth(160,186,-1,oCameoChar) with actor8
 {sprite_index=spr_cauldronspawn anim=9999 image_xscale=1 x+=999999 isDepth=0 depth=-3001
+	
+
 	
 	specialdraw=function()
 	{
@@ -59,6 +63,9 @@ actor8=instance_create_depth(160,146,-1,oCameoChar) with actor8
 	
 	}
 	}
+
+BGactor=instance_create_depth(0,0,-1,oCameoChar) with BGactor
+{sprite_index=mask_none shadow=-1 anim=9999 isDepth=0 depth=10000}
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
@@ -84,9 +91,9 @@ if scenetime=120
 {sprite_index=mask_none scenetime=340 image_speed=0
 	
 with actor1 {x=64}
-with actor2 {x=64}
-with actor3 {x=64}
-with actor4 {x=64}
+with actor2 {x=64-16}
+with actor3 {x=64+32}
+with actor4 {x=64-16}
 with actor5 {x=320-64}
 	
 with oControl
@@ -166,7 +173,8 @@ sprite_index=spr_whitecol image_blend=c_black depth=-4000
 if scenetime=2440 {flashscreen.image_alpha=0 flashscreen.image_xscale=0 scenetime=6000}
 
 if scenetime=6000
-{hspeed=0
+{hspeed=0 audio_stop_all();
+	x=0 y=0
 with actor1 {x=640}
 with actor2 {x=640}
 with actor3 {x=640}
@@ -179,7 +187,7 @@ sprite_index=spr_allblackscreen isDepth=0 anim=99999 depth=999
 vspeed=-1
 }
 
-sprite_index=spr_cauldronshow x=0 y=100
+sprite_index=spr_cauldronshow x=0 y=100 image_speed=0
 
 with oControl
 {

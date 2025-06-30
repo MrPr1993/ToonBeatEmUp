@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.161088,
+  "duration":0.16108844,
   "name":"snd_cut",
   "parent":{
     "name":"Items",

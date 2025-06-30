@@ -30,6 +30,8 @@ with oControl {SceneX-=2; SceneX=clamp(SceneX,0,999999) __view_set( e__VW.XView,
 
 if scenetime=120
 {
+with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25}
+
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "The swamp? Great... Can't wait to trudge through muck..."
@@ -38,6 +40,9 @@ cutscenename="VIVA" cutsceneline= "The swamp? Great... Can't wait to trudge thro
 
 if scenetime=540
 {
+with actor1 {image_index=0 image_speed=0}
+with actor2 {sprite_index=spr_hina_talk2 image_speed=0.25}
+
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Ohhhh, sounds gooey..."
@@ -46,6 +51,9 @@ cutscenename="HINA" cutsceneline= "Ohhhh, sounds gooey..."
 
 if scenetime=720
 {
+with actor2 {image_index=0 image_speed=0}
+with actor3 {sprite_index=spr_bahati_talk image_speed=0.25}	
+
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "Now now, girls. No time to whine, might as well get it over with!"
@@ -54,15 +62,24 @@ cutscenename="BAHATI" cutsceneline= "Now now, girls. No time to whine, might as 
 
 if scenetime=1060
 {
+with actor3 {image_index=0 image_speed=0}
+with actor4 {sprite_index=spr_sofia_talk2 image_speed=0.25}	
+
 with oControl {cutscenename="SOFIA" cutsceneline= "I say bring it on! I've run through my fair share of swamps, so follow me!"}
 }
 
 if scenetime=1360
-{with oControl {cutscenename="VIVA" cutsceneline="What do you mean by that...?"}
+{
+with actor4 {image_index=0 image_speed=0}
+with actor2 {sprite_index=spr_viva_cutscene image_index=7}	
+
+with oControl {cutscenename="VIVA" cutsceneline="What do you mean by that...?"}
 }
 
 if scenetime=1560
 {
+with actor2 {sprite_index=spr_sofia_win2 image_index=3}
+
 with oControl {cutscenename="SOFIA" cutsceneline="What? Never gone to mud fights before?"}
 }
 
@@ -81,6 +98,9 @@ with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
 with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=2}
 with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2}
 }
+
+if scenetime>=1820
+if actor1.x>actor5.x actor5.image_xscale=1
 
 if scenetime=2320
 {
@@ -117,6 +137,8 @@ with oControl {SceneX-=2; SceneX=clamp(SceneX,0,999999) __view_set( e__VW.XView,
 
 if scenetime=520
 {
+	
+
 with oControl {cutscenename="SOFIA" cutsceneline= "Ducks? Really...?"}
 }
 
@@ -137,7 +159,7 @@ with oControl {cutscenename="BAHATI" cutsceneline= "Always looking ahead, that g
 
 if scenetime=1300
 {////They walk off
-with oControl {cutscenename="" cutsceneline="Divas walk"}
+with oControl {cutscenename="" cutsceneline=""}
 
 with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
 with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=2}
@@ -151,7 +173,7 @@ with oControl {cutscenename="VIVA" cutsceneline="Well, at least this can get me 
 
 if scenetime=1750
 {
-with actor5 hspeed=0.1
+with actor5 {hspeed=-0.1 specialcheck[6]=spr_ghost_head_taunt}
 with oControl {cutscenename="ANNAMARI" cutsceneline="OH REALLY?"}
 }
 
@@ -174,21 +196,27 @@ with oControl {cutscenename="BAHATI" cutsceneline="Hey where's Viva?"}
 if scenetime=2300
 {
 with oControl {cutscenename="VIVA" cutsceneline="Okay girls let's go to the carnival."}
-with actor1 {sprite_index=spr_viva_move image_speed=0.25/2 hspeed=1}
+with actor1 {sprite_index=spr_viva_movespook image_speed=0.25/2 hspeed=1}
+
+with actor2 {x=200 sprite_index=spr_hina_cutscene image_index=2 image_speed=0 hspeed=0 image_xscale=-1}
+with actor3 {x=200 sprite_index=spr_bahati_cutscene image_index=3 image_speed=0 hspeed=0 image_xscale=-1}
+with actor4 {x=200 sprite_index=spr_sofia_cutscene image_index=1 image_speed=0 hspeed=0 image_xscale=-1}	
 }
 
-if scenetime=2450
+if scenetime>=2300
 {
-with actor1 {sprite_index=spr_viva_stand image_speed=0 hspeed=0}
+if actor1.x=actor2.x {actor2.image_xscale=1 actor3.image_xscale=1 actor4.image_xscale=1}
 }
 
-if scenetime=2600
+if scenetime=2400
 {
+with actor4 {sprite_index=spr_sofia_cutscene image_speed=0.25}
+
 with oControl {cutscenename="SOFIA" cutsceneline="...was she even that pale?"}
 }
 
 
-if scenetime=2920
+if scenetime=2620
 {
 oControl.stageEndFX=1
 }
@@ -260,6 +288,7 @@ with oControl {cutscenename="SOFIA" cutsceneline="Oh hold on. I haven't  brought
 
 if scenetime=2150
 {
+with actor5 {image_xscale=-1 hspeed=-1}
 with oControl {cutscenename="ANNAMARI" cutsceneline="Weirdos."}
 }
 

@@ -207,16 +207,15 @@ if anim=13 ///Teleport
 {if AnimFrame=0 sprite_index=spr_witch_attack1
 frame_set(0,0,0.1) if AnimFrame=1
 {
-var teled=0; repeat(6) {dust_make(x-10,y,z-4*teled,-0.1,0,-0.1-0.1*teled) teled+=1}
-teled=0; repeat(6) {dust_make(x+10,y,z-4*teled,0.1,0,-0.1-0.1*teled) teled+=1}
+dust_make(x,y,z,0,0,0) dustmk.sprite_index=spr_smoket
 
 if instance_nearest(x,y,oPlayer).x< oControl.camX+160
 x=oControl.camX+160+32*random_range(1,5)
 else
 x=oControl.camX+32*random_range(1,5)
 
-var teled=0; repeat(6) {dust_make(x-10,y,z-4*teled,-0.1,0,-0.1-0.1*teled) teled+=1}
-teled=0; repeat(6) {dust_make(x+10,y,z-4*teled,0.1,0,-0.1-0.1*teled) teled+=1}
+dust_make(x,y,z,0,0,0) dustmk.sprite_index=spr_smoket
+
 sprite_index=spr_witch_attack2
 }
 frame_set(1,1,0.05)
