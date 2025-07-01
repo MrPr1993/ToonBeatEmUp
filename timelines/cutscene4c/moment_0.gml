@@ -20,7 +20,7 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene4c0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_cutscene4c0 anim=9999 isDepth=0 depth=-3000 shadow=-1; image_speed=0.25
 	
 musicplaystart(msc_countdown)	
 
@@ -204,7 +204,7 @@ if scenetime>=6000 {y=lerp(y,-48,0.1)}
 
 if scenetime=6000
 {with actor5 sprite_index=spr_seaweed_talk2
-sprite_index=spr_witchcrystalball x=0 y=0
+sprite_index=spr_witchcrystalball x=0 y=0 image_speed=0
 
 audio_stop_all();
 
@@ -212,8 +212,8 @@ with actor1 {sprite_index=spr_viva_cutscene image_index=0 image_speed=0 x=64}
 with actor2 {sprite_index=spr_hina_cutscene image_index=1 image_speed=0 x=64+16}
 with actor3 {sprite_index=spr_bahati_cutscene image_index=1 image_speed=0 x=64+32}
 with actor4 {sprite_index=spr_sofia_talk3 image_index=0 image_speed=0 x=64-24}
-with actor5 {sprite_index=spr_seaweed_talk1 x=320-64 image_index=0 image_speed=0}
-with actor6 {image_speed=0 x=320-32 y=160 sprite_index=spr_octopus_scene2}
+with actor5 {sprite_index=spr_seaweed_talk1 x=320-64 image_index=0 image_xscale=-1 image_speed=0}
+with actor6 {image_speed=0 x=320-32 y=160 image_xscale=1 sprite_index=spr_octopus_scene2}
 
 with oControl
 {

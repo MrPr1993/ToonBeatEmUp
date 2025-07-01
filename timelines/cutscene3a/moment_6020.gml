@@ -11,6 +11,7 @@ CutsceneStage=rm_stageswamp
 with actorscreen
 {scenetime=0;
 
+
 sprite_index=mask_none
 with oControl
 {
@@ -20,12 +21,17 @@ with oControl
 x=0
 y=0
 
+with actor1 {sprite_index=spr_viva_talk image_speed=0.25}
+
 newscript=function()
 {
 scenetime+=1;
 
 if scenetime=120
 {
+with actor1 {image_index=0 image_speed=0}
+with actor5 {sprite_index=spr_pharaoh_talk3 image_speed=0.25}
+
 with oControl
 {
 with oControl {cutscenename="HATHOR" cutsceneline=  "We recall sharing a bond with a mystic in the swamps... We can sense their presence still there. Quickly! We will teleport you there now!"}
@@ -34,6 +40,9 @@ with oControl {cutscenename="HATHOR" cutsceneline=  "We recall sharing a bond wi
 
 if scenetime=540
 {
+with actor5 {image_index=0 image_speed=0}
+with actor4 {sprite_index=spr_sofia_opening image_speed=0.25}
+
 with oControl
 {
 with oControl {cutscenename="SOFIA" cutsceneline="Sounds sticky. I like the sound of it."}
@@ -42,6 +51,11 @@ with oControl {cutscenename="SOFIA" cutsceneline="Sounds sticky. I like the soun
 
 if scenetime=720
 {
+with actor1 {image_index=0 image_speed=0}
+with actor5 {sprite_index=spr_pharaoh_magic
+newscript=function() {image_index+=0.25 if image_index>=5 image_index=3}
+}	
+
 with oControl
 {
 cutscenename="HATHOR" cutsceneline= "And away you all will go!"
@@ -50,11 +64,21 @@ cutscenename="HATHOR" cutsceneline= "And away you all will go!"
 
 if scenetime=860
 {
+with actor1 {sprite_index=spr_viva_wildtake image_speed=0 image_index=0}
+with actor2 {sprite_index=spr_hina_wildtake image_speed=0 image_index=0}
+with actor3 {sprite_index=spr_bahati_wildtake image_speed=0 image_index=0}
+with actor4 {sprite_index=spr_sofia_wildtake image_speed=0 image_index=0}
+
 with oControl {cutscenename="VIVA" cutsceneline="WAIT we're not-"}
 }
 
 if scenetime=1060
 {
+with actor1 {sprite_index=spr_viva_point image_speed=0 image_index=2}
+with actor2 {sprite_index=spr_hina_point image_speed=0 image_index=2}
+with actor3 {sprite_index=spr_bahati_point image_speed=0 image_index=2}
+with actor4 {sprite_index=spr_sofia_point image_speed=0 image_index=2}	
+
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 {image_alpha=1 fadeSpd=-0.025 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_white depth=-4000
@@ -75,11 +99,21 @@ with oControl {cutscenename="HINA" cutsceneline="Wow she's good."}
 
 if scenetime=1560
 {
+with actor1 {sprite_index=spr_viva_point image_speed=0 image_index=0}
+with actor2 {sprite_index=spr_hina_cutscene image_speed=0 image_index=1}
+with actor3 {sprite_index=spr_bahati_lookaround image_speed=0 image_index=2}
+with actor4 {sprite_index=spr_sofia_talk3 image_speed=0 image_index=0}	
+
 with oControl {cutscenename="BAHATI" cutsceneline="It sure is dark in here..."}
 }
 
 if scenetime=1820
 {
+with actor1 {sprite_index=spr_viva_move image_speed=0.25 image_index=0 hspeed=2}
+with actor2 {sprite_index=spr_hina_move image_speed=0.25 image_index=0 hspeed=2}
+with actor3 {sprite_index=spr_bahati_move image_speed=0.25 image_index=0 hspeed=2}
+with actor4 {sprite_index=spr_sofia_move image_speed=0.25 image_index=0 hspeed=2}	
+
 with oControl {cutscenename="VIVA" cutsceneline="Whatever. Let's find this mystic person. Bet she's a witch."}
 }
 
@@ -107,6 +141,8 @@ cutscenename="VIVA" cutsceneline=  "Come on, Hina, we don't have time to listen 
 x=0
 y=0
 
+with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25}
+
 newscript=function()
 {
 scenetime+=1;
@@ -114,6 +150,8 @@ scenetime+=1;
 
 if scenetime=520
 {
+with actor5 {sprite_index=spr_pharaoh_talk4 image_speed=0.25}
+
 with oControl {cutscenename="HATHOR" cutsceneline=  "Fossil?! HOW DARE YOU!! Hey! Where are you-"}
 
 with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
@@ -126,6 +164,8 @@ if scenetime=580 with actor5 {image_xscale=1}
 
 if scenetime=660
 {
+with actor5 {image_index=0 image_speed=0}	
+
 with oControl {cutscenename="HINA" cutsceneline=  "Carnival~? Ohh, I wonder if they have any fun games there?"}
 }
 
@@ -146,11 +186,15 @@ with oControl {cutscenename="VIVA" cutsceneline="Focus, girls. Focus..."}
 
 if scenetime=1500
 {
+with actor5 {sprite_index=spr_pharaoh_talk}
+
 with oControl {cutscenename="HATHOR" cutsceneline="..."}
 }
 
 if scenetime=1750
 {
+with actor5 {sprite_index=spr_pharaoh_cutscene2 image_index=1}
+
 with oControl {cutscenename="HATHOR" cutsceneline="Carn-e-val?"}
 }
 
@@ -179,6 +223,8 @@ sprite_index=mask_none
 x=0
 y=0
 
+with actor5 {sprite_index=spr_pharaoh_talk image_speed=0.25}
+
 newscript=function()
 {
 scenetime+=1;
@@ -186,22 +232,40 @@ scenetime+=1;
 
 if scenetime=520
 {
+with actor5 {image_index=0 image_speed=0}	
+with actor3 {sprite_index=spr_bahati_talk image_speed=0.25}	
+
 with oControl {cutscenename="BAHATI" cutsceneline= "Is that so? Could be helpful."}
 }
 
 if scenetime=660
 {
+with actor3 {image_index=0 image_speed=0}	
+with actor5 {sprite_index=spr_pharaoh_talk3 image_speed=0.25}		
+
 with oControl {cutscenename="HATHOR" cutsceneline="OF COURSE! I'M A GODDESS!"}
 }
 
 if scenetime=860
 {
+with actor5 {image_index=0 image_speed=0}	
+with actor4 {sprite_index=spr_sofia_talk2 image_speed=0.25}
+
 with oControl {cutscenename="SOFIA" cutsceneline= "Well what are we waiting for? Teleport away!"}
 }
 
 if scenetime=1060
 {
+with actor4 {image_index=0 image_speed=0}
+
 with oControl {cutscenename="HATHOR" cutsceneline= "Very well. We wish you luck and will await your return..."}
+}
+
+if scenetime=1160
+{
+with actor5 {sprite_index=spr_pharaoh_magic
+newscript=function() {image_index+=0.25 if image_index>=5 image_index=3}
+}
 }
 
 if scenetime=1300
@@ -218,7 +282,15 @@ with oControl {cutscenename="" cutsceneline=""}
 
 with actor5 x=999
 with actor1 {x=92-16 z-=200 vspeed=0 sprite_index=spr_viva_hit image_index=17 ground=0 spdZ=-8 hspeed=0 anim=9999
-newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
+newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 
+	{PlaySound(snd_hitgroundheavy) 
+PlaySound(snd_viva11)
+PlaySound(snd_hina10)
+PlaySound(snd_bahati8)
+PlaySound(snd_sofia9)
+	hspeed=0 
+	}
+	z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
 	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_point image_index=0}}}}

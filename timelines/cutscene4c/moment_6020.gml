@@ -11,7 +11,7 @@ CutsceneStage=rm_stageufo
 with actorscreen
 {scenetime=0;
 
-actor8.specialcheck[0]=1 actor8.image_index=0 actor8.x=0
+actor8.specialcheck[0]=1 actor8.image_index=0 actor8.x=0 actor8.y=y
 
 
 with oControl
@@ -74,14 +74,14 @@ with oControl {cutscenename="CIRCE" cutsceneline= "Why am I having a real feelin
 }
 
 if scenetime=1720
-{with actor5 {sprite_index=spr_seaweed_hit image_speed=0 image_index=24}
+{with actor5 {sprite_index=spr_seaweed_talk4 image_speed=0 image_index=0}
 with oControl {cutscenename="CIRCE" cutsceneline= "Ah..."}
 
 with actor6 {sprite_index=spr_octopus_scene3 image_index=2}
 
 }
 
-if scenetime=1820
+if scenetime=1880
 {
 with actor5 {sprite_index=spr_seaweed_move image_xscale=-1 image_speed=0.25 hspeed=-1}
 with oControl {cutscenename="CIRCE" cutsceneline="Well it's no longer my problem."}
@@ -104,7 +104,7 @@ CutsceneStage=rm_stagemermaid
 with actorscreen
 {scenetime=0;
 
-actor8.specialcheck[0]=1 actor8.image_index=1 actor8.x=0
+actor8.specialcheck[0]=1 actor8.image_index=1 actor8.x=0 actor8.y=y
 
 
 with oControl
@@ -135,7 +135,7 @@ if scenetime=860
 with actor5 {sprite_index=spr_seaweed_talk2 image_speed=0.25}
 
 with actor1 {sprite_index=spr_viva_drink image_index=0 dust_make(x+19,y+1,z-64,0,0,0)}	
-with actor2 {sprite_index=spr_viva_drink image_index=0 dust_make(x+18,y+1,z-69,0,0,0)}	
+with actor2 {sprite_index=spr_hina_drink image_index=0 dust_make(x+18,y+1,z-69,0,0,0)}	
 with actor3 {sprite_index=spr_bahati_drink image_index=0 dust_make(x+26,y+1,z-64,0,0,0)}	
 with actor4 {sprite_index=spr_sofia_drink image_index=0 dust_make(x+21,y+1,z-52,0,0,0)}	
 
@@ -178,13 +178,13 @@ if scenetime=1400
 with oControl {cutscenename="SOFIA" cutsceneline="Refreshing!"}
 }
 
-if scenetime=1600
+if scenetime=1500
 {
 with oControl {//KERSMASH!
 cutscenename="CIRCE" cutsceneline= "I'm going to send you to the ocean with my magic, so off you go~ Have a safe trip!"}
 }
 
-if scenetime=2300
+if scenetime=1800
 {
 with actor5 {image_index=0 sprite_index=spr_seaweed_attack4 newscript=function()
 	{
@@ -198,7 +198,7 @@ image_index+=0.25 image_index=clamp(image_index,0,6.5)
 with oControl {cutscenename="" cutsceneline= ""}
 }
 
-if scenetime>=2300 if actor5.image_index>=6
+if scenetime>=1800 if actor5.image_index>=6
 if actor1.x!=9999
 {
 with actor1 {dust_make(x,y,0,0,0,0) dustmk.sprite_index=spr_smoket x=9999}
@@ -207,7 +207,7 @@ with actor3 {dust_make(x,y,0,0,0,0) dustmk.sprite_index=spr_smoket x=9999}
 with actor4 {dust_make(x,y,0,0,0,0) dustmk.sprite_index=spr_smoket x=9999}
 }
 
-if scenetime=2700
+if scenetime=1900
 {with actor5 {newscript=-1; sprite_index=spr_seaweed_talk4 image_index=0}
 
 with oControl {cutscenename="CIRCE" cutsceneline= "Oh... I lost my chance to spike the drinks with the permanent pig effect... shame."}
@@ -215,7 +215,7 @@ with oControl {cutscenename="CIRCE" cutsceneline= "Oh... I lost my chance to spi
 
 ///Splash
 
-if scenetime=3120
+if scenetime=2200
 {
 oControl.stageEndFX=1
 }
@@ -232,7 +232,7 @@ with actorscreen
 {
 scenetime=0;
 
-actor8.specialcheck[0]=1 actor8.image_index=2 actor8.x=0
+actor8.specialcheck[0]=1 actor8.image_index=2 actor8.x=0 actor8.y=y
 
 with oControl {//-Blue Oni is lying(Beach)-
 cutscenename="CIRCE" cutsceneline= "Ahhh here we are... You must seek an ancient tomb in the desert... There you will find some assistance..."
@@ -258,10 +258,11 @@ if scenetime=660
 with oControl {cutscenename="CIRCE" cutsceneline= "It's... right over there."
 
 }
+scenetime=760
 }
 
-if scenetime=clamp(scenetime,700,900)
-{with oControl {SceneX+=1 __view_set( e__VW.XView, 0, SceneX )}}
+if scenetime=clamp(scenetime,800,900)
+{with oControl {SceneX+=2 __view_set( e__VW.XView, 0, SceneX )}}
 
 if scenetime=1060
 {
@@ -311,14 +312,21 @@ cutscenename="" cutsceneline=""}
 
 if scenetime=1900
 {
+with actor5 {sprite_index=spr_seaweed_talk4 image_index=0}
 
+with actor6 {sprite_index=spr_octopus_scene3 image_index=1}
+}
+
+if scenetime=2000
+{
+with actor5 {sprite_index=spr_seaweed_talk1 image_speed=0.1}	
 
 with oControl {//SMASH!
 cutscenename="CIRCE" cutsceneline="Yes. The blond one is skinny, the poor thing."}
 }
 
 
-if scenetime=2220
+if scenetime=2320
 {
 oControl.stageEndFX=1
 }

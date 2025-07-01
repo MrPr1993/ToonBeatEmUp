@@ -33,7 +33,7 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 {sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
-actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
+actor5=instance_create_depth(3200-64,170,-1,oCameoChar) with actor5
 {sprite_index=spr_ghost_move image_index=10 anim=9999 image_xscale=-1 specialcheck[6]=spr_ghost_head
 	specialdraw=function()
 	{
@@ -87,14 +87,14 @@ if scenetime=380
 //with actor4 {x=64}
 //with actor5 {x=320-64}
 	
- scenetime=500
+ scenetime=600
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
 }
 }
 
-if scenetime=600
+if scenetime=800
 {
 
 	
@@ -111,7 +111,7 @@ cutscenename="VIVA" cutsceneline="Not now, Hina. Now where did she have gone off
 }
 }
 
-if scenetime=1140
+if scenetime=1340
 {
 with oControl
 {
@@ -163,7 +163,7 @@ specialdraw=function()
 {
 
 draw_sprite(spr_allblackscreen,0,0,0)
-draw_sprite_ext(spr_cutscene3b3,2,round(x+160),round(y),1,1,0,c_white,specialcheck[6])
+draw_sprite_ext(spr_cutscene3b3,2,round(x+150),round(y),1,1,0,c_white,specialcheck[6])
 draw_sprite_ext(spr_cutscene3b3,3,round(x-60),round(y),1,1,0,c_white,specialcheck[6])
 draw_self()
 }	
@@ -221,8 +221,8 @@ cutscenename="" cutsceneline= "" ///Beating ensues
 }
 
 if scenetime=3510 PlaySound(snd_hit)
-if scenetime=3570 PlaySound(snd_hit2)
-if scenetime=3630 PlaySound(snd_hit5)
+if scenetime=3560 PlaySound(snd_hit2)
+if scenetime=3600 PlaySound(snd_hit5)
 
 if scenetime=3640
 {sprite_index=spr_beatghost image_index=0 x=0 y=0 image_alpha=0.8
@@ -294,15 +294,17 @@ if scenetime=6000
 {audio_stop_all()
 sprite_index=mask_none
 
-with actor1 {x=0; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {x=-33; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=32; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
-with actor4 {x=0; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
-with actor5 {x=60; image_speed=0.25 sprite_index=spr_ghost_move; image_xscale=1 hspeed=2}
+specialdraw=-1;
 
-with actor6 {x=400}
+with actor1 {x=0-140; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
+with actor2 {x=-33-140; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
+with actor3 {x=32-140; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
+with actor4 {x=0-140-32; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
+with actor5 {x=32; image_speed=0.25 sprite_index=spr_ghost_move; image_xscale=1 hspeed=2}
+
+with actor6 {x=400+32}
 with actor7 {x=520 }
-with actor8 {x=640}
+with actor8 {x=640-32}
 
 with oControl
 {
@@ -325,7 +327,7 @@ if scenetime=clamp(scenetime,6120,6300)
 with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
 }
 
-if scenetime=6500
+if scenetime=6350
 {
 with oControl
 {

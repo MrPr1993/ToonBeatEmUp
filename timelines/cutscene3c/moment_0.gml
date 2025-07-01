@@ -57,7 +57,7 @@ with oControl
 
 }
 
-y=240
+y=-48
 
 newscript=function()
 {
@@ -68,10 +68,7 @@ if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
 
-
-
-
-if scenetime<480 {y-=0.2;}
+if scenetime<480 {y+=0.2; y=clamp(y,-48,0)}
 if scenetime=120
 {
 
@@ -96,9 +93,9 @@ cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "To use to assault our employees
 if scenetime=640
 {
 with actor1 {x=64}
-with actor2 {x=64}
-with actor3 {x=64}
-with actor4 {x=64}
+with actor2 {x=96}
+with actor3 {x=32}
+with actor4 {x=48}
 with actor5 {x=320-64}	
 with actor6 {x=320-56}	
 

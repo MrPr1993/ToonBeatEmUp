@@ -33,6 +33,7 @@ actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(3200-64,160,-1,oCameoChar) with actor5
 {sprite_index=spr_pharaoh_beaten image_index=10 anim=9999 image_xscale=1
+	image_speed=0.25
 	}
 
 actor6=instance_create_depth(11215,170,-1,oCameoChar) with actor6
@@ -42,7 +43,9 @@ actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
 actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+{sprite_index=spr_cutscene3a anim=9999 image_xscale=1 isDepth=0 depth=9000}
+
+
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
@@ -52,6 +55,8 @@ with oControl
 }
 
 y+=80;
+
+x=0 y=-48
 
 newscript=function()
 {
@@ -65,14 +70,20 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene
 
 
 
-if scenetime<80 {y--;}
+if scenetime<80 {y++; y=clamp(y,-48,0)}
 if scenetime=180
 {
+
 with actor1 {x=64}
-with actor2 {x=64}
-with actor3 {x=64}
-with actor4 {x=64}
+with actor2 {x=64+32}
+with actor3 {x=64+16}
+with actor4 {x=64-32}
 with actor5 {x=320-64}
+
+with actor1 {sprite_index=spr_viva_point image_speed=0 image_index=2}
+with actor2 {sprite_index=spr_hina_point image_speed=0 image_index=2}
+with actor3 {sprite_index=spr_bahati_point image_speed=0 image_index=2}
+with actor4 {sprite_index=spr_sofia_point image_speed=0 image_index=2}
 	
 sprite_index=mask_none scenetime=340
 with oControl
@@ -85,7 +96,7 @@ y=0 vspeed=-0.2
 if scenetime=700
 {
 with oControl
-{quakeFXTime=10
+{quakeFXTime=10 PlaySound(snd_glassbreakm) PlaySound(snd_quakeground)
 cutscenename="" cutsceneline=""
 }
 }
@@ -99,14 +110,16 @@ with oControl
 
 if scenetime=840
 {
+with actor5 {sprite_index=spr_pharaoh_cutscene image_index=0 image_speed=0}	
+
 thief1=instance_create_depth(400,144,-1,oCutHalfFX) with thief1
-{type=999 sprite_index=spr_burglar_run image_speed=0.25	current_pal=2; my_pal_sprite=spr_enemypal hspeed=4}
+{type=999 depth=-y sprite_index=spr_burglar_run image_speed=0.25	current_pal=2; my_pal_sprite=spr_enemypal hspeed=4}
 thief1=instance_create_depth(450,170,-1,oCutHalfFX) with thief1
-{type=999 sprite_index=spr_burglarB_run image_speed=0.25	current_pal=2; my_pal_sprite=spr_enemypal hspeed=4}
+{type=999 depth=-y sprite_index=spr_burglarB_run image_speed=0.25	current_pal=2; my_pal_sprite=spr_enemypal hspeed=4}
 thief1=instance_create_depth(430,160,-1,oCutHalfFX) with thief1
-{type=999 sprite_index=spr_fatburglar_move image_speed=0.25	current_pal=2; my_pal_sprite=spr_enemypal hspeed=2.5 }
+{type=999 depth=-y sprite_index=spr_fatburglar_move image_speed=0.25	current_pal=2; my_pal_sprite=spr_enemypal hspeed=2.5 }
 thief1=instance_create_depth(480,188,-1,oCutHalfFX) with thief1
-{type=999 sprite_index=spr_sneak_move image_speed=0.25 hspeed=3}
+{type=999 depth=-y sprite_index=spr_sneak_move image_speed=0.25 hspeed=3}
 
 
 with oControl
@@ -117,6 +130,8 @@ cutscenename="HATHOR" cutsceneline="HEY! WHERE ARE THOSE FOOLS DOING?!"
 
 if scenetime=1140
 {
+with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25}	
+
 with oControl {SceneX=0 __view_set( e__VW.XView, 0, SceneX )}
 with oControl
 	{
@@ -126,6 +141,8 @@ cutscenename="VIVA" cutsceneline="Well they're not on our side. Our things got s
 
 if scenetime=1380
 {
+with actor1 {sprite_index=spr_viva_opening image_speed=0.25}
+
 with oControl
 {
 cutscenename="VIVA" cutsceneline="What's the deal with those things, anyway?"
@@ -144,7 +161,13 @@ cutscenename="" cutsceneline=""
 
 if scenetime=1700
 {sprite_index=spr_cutscene3a2 oControl.quakeFXTime=10 image_speed=0.25
-	
+
+actor8.x=0 actor8.y=0
+
+PlaySound(snd_hit)
+
+musicplaystart(msc_mystery)
+
 with actor1 x=-999
 with actor2 x=-999
 with actor3 x=-999
@@ -159,7 +182,7 @@ cutscenename="HATHOR" cutsceneline="THOSE THINGS?! They are ancient relics, you 
 }
 }
 
-if scenetime=1880
+if scenetime=1900
 {
 with oControl
 {
@@ -168,7 +191,7 @@ cutscenename="HATHOR" cutsceneline="There will be consequences if they are taken
 }
 
 if scenetime=2100
-{sprite_index=mask_none
+{sprite_index=mask_none actor8.x=99999
 	
 with actor2 {x=64}
 with actor3 {x=64}
@@ -192,8 +215,8 @@ cutscenename="HATHOR" cutsceneline="Right... of course."
 if scenetime=2640
 {
 
-with actor1 {x=320-64-48 sprite_index=spr_viva_spin image_speed=0 image_index=0} actor1.y=actor5.y
-with actor5 {sprite_index=spr_pharaoh_talk}
+with actor1 {x=320-64-48 sprite_index=spr_viva_dizzy image_speed=0.25 image_index=0} actor1.y=actor5.y
+with actor5 {sprite_index=spr_pharaoh_cutscene2 image_speed=0 image_index=0}
 with oControl
 {
 
@@ -205,14 +228,22 @@ cutscenename="HATHOR" cutsceneline="..."
 }
 if scenetime=2880
 {
+with actor1 {sprite_index=spr_viva_shakehead image_speed=0.5}	
+
+with actor5 {sprite_index=spr_pharaoh_talk image_speed=0.25 image_index=0}
+
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="I've been gone for quite a while. But maybe we could assist you."
 }
 }
 
+if scenetime=3000 {with actor1 {x=320-64-48 sprite_index=spr_viva_attack image_speed=0 image_index=0}}
+
 if scenetime=3180
 {
+with actor5 {sprite_index=spr_pharaoh_talk3 image_speed=0.25 image_index=0}
+
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="We may have some friends from the swamp and the beach. They should still be around."
@@ -223,14 +254,14 @@ cutscenename="HATHOR" cutsceneline="We may have some friends from the swamp and 
 if scenetime=3480 scenetime=6000
 
 if scenetime=6000
-{
+{audio_stop_all();
 sprite_index=mask_none
 
-with actor2 {x=64}
-with actor3 {x=64}
-with actor4 {x=64}
-with actor5 {image_xscale=-1 x=320-64 sprite_index=spr_pharaoh_talk2 image_speed=0.2}	
-with actor1 {x=320-64-48 sprite_index=spr_viva_spin image_speed=0 image_index=0} actor1.y=actor5.y
+with actor2 {x=64+32}
+with actor3 {x=64+16}
+with actor4 {x=64-32}
+with actor5 {image_xscale=-1 x=320-64 sprite_index=spr_pharaoh_talk2 image_speed=0.25}	
+with actor1 {x=320-64-48 sprite_index=spr_viva_attack image_speed=0 image_index=0} actor1.y=actor5.y
 
 with oControl
 {
@@ -239,6 +270,8 @@ cutscenename="HATHOR" cutsceneline="What is your decision, mortals?"}
 
 if scenetime=6121
 {
+with actor5 {image_xscale=-1 x=320-64 sprite_index=spr_pharaoh_talk2 image_index=0 image_speed=0}	
+
 with oControl
 {
 timeline_position=6000-60;

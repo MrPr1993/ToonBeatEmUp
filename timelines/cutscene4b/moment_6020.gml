@@ -44,7 +44,7 @@ cutscenename="KIANDRA" cutsceneline= "Well, that's not my problem! Now..."
 if scenetime=800
 {sprite_index=spr_allblackscreen image_blend=c_black x=0 y=0 image_xscale=2 image_yscale=2
 
-sprite_index=mask_none image_blend=c_white actor8.x=9999;
+ image_blend=c_white actor8.x=9999;
 
 with oControl
 {
@@ -54,7 +54,7 @@ cutscenename="" cutsceneline= ""
 }
 
 if scenetime=920
-{
+{sprite_index=mask_none
 	
 PlaySound(snd_viva11)
 PlaySound(snd_hina10)
