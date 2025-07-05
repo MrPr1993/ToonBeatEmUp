@@ -26,6 +26,7 @@ if instance_exists(oControl)
 finalStageEnd=oControl.finalStageEnd
 bonusstage=oControl.bonusstage
 noshowtime=oControl.noshowtime
+nofood=oControl.nofood
 }
 finalStage=0
 finalStageHi=0

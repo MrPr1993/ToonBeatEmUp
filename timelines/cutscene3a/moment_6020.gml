@@ -27,7 +27,7 @@ newscript=function()
 {
 scenetime+=1;
 
-if scenetime=120
+if scenetime=180
 {
 with actor1 {image_index=0 image_speed=0}
 with actor5 {sprite_index=spr_pharaoh_talk3 image_speed=0.25}
@@ -38,7 +38,7 @@ with oControl {cutscenename="HATHOR" cutsceneline=  "We recall sharing a bond wi
 }
 }
 
-if scenetime=540
+if scenetime=600
 {
 with actor5 {image_index=0 image_speed=0}
 with actor4 {sprite_index=spr_sofia_opening image_speed=0.25}
@@ -49,9 +49,9 @@ with oControl {cutscenename="SOFIA" cutsceneline="Sounds sticky. I like the soun
 }
 }
 
-if scenetime=720
+if scenetime=780
 {
-with actor1 {image_index=0 image_speed=0}
+with actor4 {image_index=0 image_speed=0}
 with actor5 {sprite_index=spr_pharaoh_magic
 newscript=function() {image_index+=0.25 if image_index>=5 image_index=3}
 }	
@@ -148,7 +148,7 @@ newscript=function()
 scenetime+=1;
 
 
-if scenetime=520
+if scenetime=460
 {
 with actor5 {sprite_index=spr_pharaoh_talk4 image_speed=0.25}
 
@@ -230,7 +230,7 @@ newscript=function()
 scenetime+=1;
 
 
-if scenetime=520
+if scenetime=460
 {
 with actor5 {image_index=0 image_speed=0}	
 with actor3 {sprite_index=spr_bahati_talk image_speed=0.25}	
@@ -238,7 +238,7 @@ with actor3 {sprite_index=spr_bahati_talk image_speed=0.25}
 with oControl {cutscenename="BAHATI" cutsceneline= "Is that so? Could be helpful."}
 }
 
-if scenetime=660
+if scenetime=620
 {
 with actor3 {image_index=0 image_speed=0}	
 with actor5 {sprite_index=spr_pharaoh_talk3 image_speed=0.25}		
@@ -293,25 +293,25 @@ PlaySound(snd_sofia9)
 	z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
-	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_point image_index=0}}}}
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_viva_dizzy image_index=0}}}}
 	
 with actor2 {x=92+16 z-=200 vspeed=0 sprite_index=spr_hina_hit image_index=17 ground=0 spdZ=-9 hspeed=0 anim=9999
 newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
-	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_hina_point image_index=0}}}}
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_hina_dizzy image_index=0}}}}
 	
 with actor3 {x=92-32 z-=200 vspeed=0 sprite_index=spr_bahati_hit image_index=17 ground=0 spdZ=-8.5 hspeed=0 anim=9999
 newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
-	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_bahati_point image_index=0}}}}
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_bahati_dizzy image_index=0}}}}
 	
 with actor4 {x=92+32 z-=200 vspeed=0 sprite_index=spr_sofia_hit image_index=17 ground=0 spdZ=-9 hspeed=0 anim=9999
 newscript=function(){if !ground spdZ+=0.45 z+=spdZ if z>=0 {if anim!=9998 hspeed=0 z=0 ground=1} if ground{vspeed=0 anim=9998}
 if anim=9998	{frame_set(0,19,0.25) frame_set(1,20,0.25)	frame_set(2,21,0.1)
 	frame_set(3,21,0.1)	frame_set(4,21,0.1)	frame_set(5,22,0.25) frame_set(6,23,0.25)
-	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_sofia_point image_index=0}}}}
+	if AnimFrame=7 {AnimFrame=8 image_xscale=-1 sprite_index=spr_sofia_dizzy image_index=0}}}}
 
 with actor1 {x=160-24 y=160}
 with actor2 {x=160+24 y=160}
@@ -324,13 +324,15 @@ if scenetime=clamp(scenetime,1301,1350)
 if actor1.ground {oControl.quakeFXTime=10 scenetime=1500}
 }
 
-if scenetime=1750
+if scenetime=1650
 {
+with actor1 {sprite_index=spr_viva_anger image_speed=0.25}
+
 with oControl {cutscenename="VIVA" cutsceneline="OW?! Can't she teleport us lower?!"}
 
 }
 
-if scenetime=2020
+if scenetime=1920
 {
 oControl.stageEndFX=1
 }

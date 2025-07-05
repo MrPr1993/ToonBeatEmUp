@@ -56,7 +56,7 @@ with oControl
 
 y+=80;
 
-x=0 y=-48
+x=0 y=-48 image_speed=0.25
 
 newscript=function()
 {
@@ -72,7 +72,7 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene
 
 if scenetime<80 {y++; y=clamp(y,-48,0)}
 if scenetime=180
-{
+{image_speed=0
 
 with actor1 {x=64}
 with actor2 {x=64+32}
@@ -193,9 +193,9 @@ cutscenename="HATHOR" cutsceneline="There will be consequences if they are taken
 if scenetime=2100
 {sprite_index=mask_none actor8.x=99999
 	
-with actor2 {x=64}
-with actor3 {x=64}
-with actor4 {x=64}
+with actor2 {x=64+32}
+with actor3 {x=64+16}
+with actor4 {x=64-32}
 with actor5 {image_xscale=-1 x=320-64 sprite_index=spr_pharaoh_shakeviva image_speed=0.2}	
 with oControl
 {
@@ -254,7 +254,7 @@ cutscenename="HATHOR" cutsceneline="We may have some friends from the swamp and 
 if scenetime=3480 scenetime=6000
 
 if scenetime=6000
-{audio_stop_all();
+{audio_stop_all(); image_speed=0
 sprite_index=mask_none
 
 with actor2 {x=64+32}

@@ -56,15 +56,15 @@ with oControl {quakeFXTime=20 cutscenename="" cutsceneline= ""}
 
 if scenetime=920
 {hspeed=0 x=0 y=0
-sprite_index=spr_cutscene3c
+sprite_index=spr_dojocasinobuild
 }
 
 if scenetime=1000
 {with oControl quakeFXTime=10
-with actor1 {sprite_index=spr_viva_hit x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
+with actor1 {sprite_index=spr_byetent2 x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
 
-with actor5 {sprite_index=spr_oni_stand x=140 y=160}
-with actor6 {sprite_index=spr_oni_stand x=160 y=188}
+with actor5 {sprite_index=spr_oni_stand image_index=0 image_speed=0 x=140 y=160}
+with actor6 {sprite_index=spr_oni_talk image_index=0 image_speed=0 x=160 y=188}
 }
 
 
@@ -132,12 +132,12 @@ with oControl {quakeFXTime=20 cutscenename="" cutsceneline=""}
 
 if scenetime=1500
 {hspeed=0 x=0 y=0
-sprite_index=spr_cutscene3c
+sprite_index=spr_dojocasinobuild
 }
 
 if scenetime=1600
 {with oControl quakeFXTime=10
-with actor1 {sprite_index=spr_viva_hit x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
+with actor1 {sprite_index=spr_byetent2 x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
 
 with actor5 {sprite_index=spr_oni_stand x=140 y=160}
 with actor6 {sprite_index=spr_oni_stand x=160 y=188}
@@ -229,12 +229,12 @@ with oControl {quakeFXTime=20 cutscenename="" cutsceneline= ""}
 
 if scenetime=1360
 {hspeed=0 x=0 y=0
-sprite_index=spr_cutscene3c
+sprite_index=spr_dojocasinobuild
 }
 
 if scenetime=1440
 {with oControl quakeFXTime=10
-with actor1 {sprite_index=spr_viva_hit x=160 y=160 hspeed=8 vspeed=-8 isDepth=0 depth=-2800}
+with actor1 {sprite_index=spr_byetent2 x=160 y=160 hspeed=8 vspeed=-8 isDepth=0 depth=-2800}
 
 with actor5 {sprite_index=spr_oni_stand x=140 y=160}
 with actor6 {sprite_index=spr_oni_stand x=160 y=188}

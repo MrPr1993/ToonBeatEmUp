@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Cc Train",
-    "path":"folders/1c - Cutscenes/Cutscene2/Cc Train.yy",
+    "name":"Cc Casino",
+    "path":"folders/1c - Cutscenes/Cutscene3/Cc Casino.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

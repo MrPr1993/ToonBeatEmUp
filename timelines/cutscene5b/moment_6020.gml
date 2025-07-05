@@ -15,6 +15,8 @@ sprite_index=mask_none
 with oControl
 {
 //-Snow-
+with actor3 {sprite_index=spr_bahati_talk image_speed=0.25}
+
 cutscenename="BAHATI" cutsceneline= "Looks like a long way up that mountain..."
 }
 x=0
@@ -26,6 +28,9 @@ scenetime+=1;
 
 if scenetime=120
 {
+with actor3 {image_index=0 image_speed=0}	
+with actor1 {sprite_index=spr_viva_talk image_speed=0.25}
+
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Fine by me... I'll climb it all on my own!"
@@ -34,7 +39,10 @@ cutscenename="VIVA" cutsceneline= "Fine by me... I'll climb it all on my own!"
 }
 
 if scenetime=340
-{with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
+{
+with actor1 {sprite_index=spr_sofia_point image_index=3}
+	
+with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
 with oControl
 {
 cutscenename="SOFIA" cutsceneline= "Wait a minute, you dumb blonde!"

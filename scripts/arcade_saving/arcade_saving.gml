@@ -26,7 +26,9 @@ ini_write_real("SAVE", "P3LS", global.P3ScoreLife)
 ini_write_real("SAVE", "P4LS", global.P4ScoreLife)
 ini_write_real("SAVE", "CONT", global.Continues)
 ini_write_real("SAVE", "DIF", global.Difficulty)
+ini_write_real("SAVE", "AND", global.ArcadeDeath)
 ini_write_string("SAVE", "STG", global.SaveText)
+
 ini_close()
 }
 }

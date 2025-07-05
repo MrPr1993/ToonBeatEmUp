@@ -31,10 +31,10 @@ actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(3200-64,160,-1,oCameoChar) with actor5
-{sprite_index=spr_oni_hit image_index=10 anim=9999 image_xscale=-1
+{sprite_index=spr_oni_cutscene image_index=0 anim=9999 image_xscale=-1
 	}
 actor6=instance_create_depth(3200-64,188,-1,oCameoChar) with actor6
-{sprite_index=spr_oni_hit image_index=10 anim=9999 image_xscale=-1
+{sprite_index=spr_oni_cutscene image_index=0 anim=9999 image_xscale=-1
 
 	specialdraw=function()
 	{
@@ -57,7 +57,12 @@ with oControl
 
 }
 
+x=0;
 y=-48
+
+image_speed=0.25
+
+musicplaystart(msc_mystery)
 
 newscript=function()
 {
@@ -81,7 +86,7 @@ cutscenename="SHOKIJO" cutsceneline= "Such power..."
 if scenetime=240
 {
 
-	
+	scenetime=340
 
 with oControl
 {
@@ -91,13 +96,13 @@ cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "To use to assault our employees
 
 
 if scenetime=640
-{
-with actor1 {x=64}
-with actor2 {x=96}
-with actor3 {x=32}
-with actor4 {x=48}
-with actor5 {x=320-64}	
-with actor6 {x=320-56}	
+{image_speed=0
+with actor1 {x=64+32 sprite_index=spr_viva_talk3 image_speed=0.25}
+with actor2 {x=96+32}
+with actor3 {x=32+32}
+with actor4 {x=48+32}
+with actor5 {x=320-64-24}	
+with actor6 {x=320-56-24}	
 
 sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
 
@@ -110,19 +115,34 @@ cutscenename="VIVA" cutsceneline= "We want answers! What're those thieves planni
 
 if scenetime=1000
 {
+with actor1 {image_index=0 image_speed=0}	
+with actor4 {sprite_index=spr_sofia_talk image_speed=0.25}
+
 with oControl
 {cutscenename="SOFIA" cutsceneline= "You better speak up, chicas. We're 4-to-2."}
 }
 
 if scenetime=1360
-{with oControl
 {
-cutsceneline= "Well, how arrogant of you."
+with actor4 {image_index=0 image_speed=0}	
+//with actor5 {sprite_index=spr_oni_talk image_speed=0.25} ///Fuku
+	
+with oControl
+{cutscenename="FUKUKIJO"
+cutsceneline= "Well, how arrogant of you..."
 }
 }
 
 if scenetime=1560
-{sprite_index=spr_cutscene3c
+{
+with actor5 {image_index=0 image_speed=0} ///Fuku
+
+with actor1 {sprite_index=spr_viva_wildtake image_index=0}
+with actor2 {sprite_index=spr_hina_wildtake image_index=0}
+with actor3 {sprite_index=spr_bahati_wildtake image_index=0}
+with actor4 {sprite_index=spr_sofia_wildtake image_index=0}
+
+sprite_index=spr_cutscene3c x=0 y=0 vspeed=0 hspeed=0 sprite_index=spr_cutscene3c
 with oControl
 {image_index=1 quakeFXTime=10
 cutscenename="" cutsceneline= ""
@@ -131,16 +151,24 @@ hspeed=-2
 }
 
 if scenetime=1660
-{	
+{
+with actor1 {sprite_index=spr_viva_point}
+
 with oControl
 {image_index=1
 cutscenename="VIVA" cutsceneline= "You and your big mouth..."
 }
 hspeed=-2 
+scenetime=1860
 }
+
 
 if scenetime=2040
 {
+sprite_index=mask_none
+
+with actor6 {sprite_index=spr_oni_talk image_speed=0.25}
+
 with oControl
 {
 cutscenename="SHOKIJO" cutsceneline= "You would do well to mind your manners..."
@@ -149,6 +177,9 @@ cutscenename="SHOKIJO" cutsceneline= "You would do well to mind your manners..."
 
 if scenetime=2340
 {
+with actor6 {image_index=0 image_speed=0} ///Fuku	
+with actor5 {sprite_index=spr_oni_talk image_speed=0.25} ///Fuku
+
 with oControl
 {
 cutscenename="FUKUKIJO" cutsceneline= "And we would want to put you all in pieces here and now..."
@@ -157,6 +188,9 @@ cutscenename="FUKUKIJO" cutsceneline= "And we would want to put you all in piece
 
 if scenetime=2740
 {
+with actor6 {image_index=0 sprite_index=spr_oni_talk image_speed=0.25} ///Fuku
+with actor5 {image_index=0 sprite_index=spr_oni_talk image_speed=0.25} ///Fuku
+
 with oControl
 {
 cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "But we find all of you amusing."
@@ -165,6 +199,11 @@ cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "But we find all of you amusing.
 
 if scenetime=3100
 {
+with actor5 {image_index=0 image_speed=0} ///Fuku	
+with actor6 {image_index=0 image_speed=0}
+
+with actor2 {sprite_index=spr_hina_cutscene image_index=0}
+
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Okay...?"
@@ -173,6 +212,8 @@ cutscenename="HINA" cutsceneline= "Okay...?"
 
 if scenetime=3200
 {
+with actor5 {sprite_index=spr_oni_talk image_speed=0.25} ///Fuku	
+
 with oControl
 {
 cutscenename="FUKUKIJO" cutsceneline= "We shall release you... But first, let's play a game."
@@ -181,6 +222,10 @@ cutscenename="FUKUKIJO" cutsceneline= "We shall release you... But first, let's 
 
 if scenetime=3450
 {
+
+with actor5 {image_index=0 image_speed=0} ///Fuku	
+with actor3 {sprite_index=spr_bahati_talk2 image_speed=0.25} ///Fuku
+
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "A game? What do you mean?"
@@ -189,6 +234,15 @@ cutscenename="BAHATI" cutsceneline= "A game? What do you mean?"
 
 if scenetime=3600
 {
+
+with actor1 {sprite_index=spr_viva_point image_index=2}
+with actor2 {sprite_index=spr_hina_point image_index=2}
+with actor3 {sprite_index=spr_bahati_point image_index=2}
+with actor4 {sprite_index=spr_sofia_point image_index=2}
+
+with actor3 {image_index=0 image_speed=0} ///Fuku	
+with actor6 {sprite_index=spr_oni_talk image_speed=0.25} ///Fuku	
+
 with oControl
 {
 cutscenename="SHOKIJO" cutsceneline= "Just that. Answer our riddle, and in exchange, we'll send you on a path to the answers you seek."
@@ -197,6 +251,10 @@ cutscenename="SHOKIJO" cutsceneline= "Just that. Answer our riddle, and in excha
 
 if scenetime=3900
 {
+
+with actor6 {image_index=0 image_speed=0} ///Fuku	
+with actor2 {sprite_index=spr_hina_opening image_speed=0.25} ///Fuku	
+
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Oh a riddle! How fun! Lay it on us!"
@@ -204,7 +262,10 @@ cutscenename="HINA" cutsceneline= "Oh a riddle! How fun! Lay it on us!"
 }
 
 if scenetime=4100 ////Cut to black
-{sprite_index=spr_allblackscreen x=0 y=0 hspeed=0 vspeed=0
+{
+
+	
+sprite_index=spr_allblackscreen x=0 y=0 hspeed=0 vspeed=0
 with oControl
 {quakeFXTime=10
 }
@@ -230,7 +291,7 @@ cutscenename="SHOKIJO" cutsceneline= "...While the other only lies... Like about
 if scenetime=4800 scenetime=6000
 
 if scenetime=6000
-{x=0 y=0
+{x=0 y=0 audio_stop_all();
 sprite_index=spr_oniriddle
 
 with oControl

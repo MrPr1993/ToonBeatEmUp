@@ -55,6 +55,8 @@ if oPlayer.anim=50 noshowtime=0
 mirrorMode=global.GMirrorMode;
 with oPlayer
 {
+if dead global.ArcadeDeath=1
+
 if ContinueMode=0 oControl.playerAmount+=1;
 	
 if controlNO=1 {PlayerLife=global.P1Life PlayerScore=global.P1Score character=global.P1Char;

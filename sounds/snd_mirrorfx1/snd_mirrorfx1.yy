@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.434603,
+  "duration":1.4346032,
   "name":"snd_mirrorfx1",
   "parent":{
     "name":"General",

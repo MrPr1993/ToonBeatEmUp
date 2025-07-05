@@ -11,6 +11,7 @@ perfecthp=1;
 perfectbosshp=1;
 nodeath=1;
 noshowtime=1;
+nofood=1;
 
 bonusstage=0;
 
@@ -132,7 +133,8 @@ charsetting=0
 
 if !variable_global_exists("CurrentMusic")
 {	
-global.GMirrorMode=0;	
+global.GMirrorMode=0;
+global.ArcadeDeath=0;
 
 global.StageSave=rm_opening;
 

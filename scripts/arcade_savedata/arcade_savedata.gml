@@ -21,6 +21,10 @@ global.P2ScoreLife=0
 global.P3ScoreLife=0
 global.P4ScoreLife=0
 
+global.ArcadeDeath=0;
+
+
+
 global.SaveText="EMPTY";
 
 ini_open("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini");
@@ -45,6 +49,7 @@ global.P4ScoreLife=ini_read_real("SAVE", "P4LS", 0)
 global.Continues=ini_read_real("SAVE", "CONT", global.ContinueStart)
 global.Difficulty=ini_read_real("SAVE", "DIF", 2)
 global.SaveText=ini_read_string("SAVE", "STG", "EMPTY")
+global.ArcadeDeath=ini_read_real("SAVE", "AND", 0)
 ini_close()
 global.StageGoing=stagesave
 }

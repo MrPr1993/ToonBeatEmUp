@@ -94,7 +94,7 @@ with oControl {cutscenename="SOFIA" cutsceneline= "How?! We're thousands of feet
 }
 
 if scenetime=520
-{sprite_index=spr_tearsondivas image_speed=0.5
+{sprite_index=spr_tearsondivas image_speed=0.5 musicplaystart(msc_countdown) PlaySound(snd_splash2)
 
 actor1.x=9999
 actor2.x=9999
@@ -145,69 +145,83 @@ with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know how to fix up y
 }
 
 if scenetime=2200
-{
+{audio_stop_all() musicplaystart(msc_gallery)
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 {image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
+
 }
 
 if scenetime=2700
 {
 with flashscreen instance_destroy();
-	
-sprite_index=spr_dragonpicking image_index=0
-with oControl {cutscenename="FIONA" cutsceneline= "SNIFF! Oh, this is wonderful! I adore it! Just wait until I find my soulmate! Thank you, chunky yellow ladybug!"
+	y=192
+sprite_index=spr_newdragon image_index=0
+with oControl {cutscenename="" cutsceneline= ""
 }
 }
 
+if scenetime=clamp(scenetime,2700,3099) y=lerp(y,0,0.1)
+
 if scenetime=3100
-{image_index=1
+{x=0 y=0
+sprite_index=spr_newdragon2 image_index=0
+with oControl {cutscenename="FIONA" cutsceneline= "SNIFF! Oh, this is wonderful! I adore it! Just wait until I find my soulmate! Thank you, chunky yellow ladybug!"}
+}
+
+if scenetime=3300
+{sprite_index=spr_dragonpicking image_index=0 x=60 y=0
 with oControl {cutscenename="BAHATI" cutsceneline= "This is why being nice helps, Viva. It's called 'karma'."}
 }
 
-if scenetime=3350
-{image_index=1
+if scenetime=clamp(scenetime,3300,3549) {x-=0.1 x=clamp(x,0,99)}
+
+if scenetime=3550
+{image_index=0
 with oControl {cutscenename="VIVA" cutsceneline= "Right... I guess you have a point-why is she heading toward the window?"}
 }
 
-if scenetime=3450
-{image_index=2
+if scenetime=3650
+{image_index=1 
 }
 
 
-if scenetime=3600
-{
+if scenetime=3800
+{audio_stop_all() PlaySound(snd_hit)
 sprite_index=spr_windowthrow image_index=0
 
 with actor5 {shadow=-1 }
 	
-with oControl {cutscenename="FIONA" cutsceneline= "Here you go! Fly, pretty bug ladies!"
+with oControl {quakeFXTime=10 cutscenename="FIONA" cutsceneline= "Here you go! Fly, pretty bug ladies!"
 }
 }
 
-if scenetime=3800
-{sprite_index=mask_none
+if scenetime=4000
+{sprite_index=mask_none PlaySoundNoStackPitch(snd_fall,0.5)
+
+with actor5 {isDepth=0 sprite_index=spr_cutscene6c shadow=-1 image_xscale=1 x=0 y=0 depth=99999}	
+
 with actor6 {sprite_index=spr_divasfall shadow=-1 image_xscale=2 image_yscale=2  x=160 y=192/2
-	newscript=function() {if image_xscale>0 {image_xscale-=0.01 image_yscale-=0.01}}
+	newscript=function() {if image_xscale>0 {image_xscale-=0.01 image_yscale-=0.01} image_xscale=clamp(image_xscale,0,99) image_yscale=clamp(image_yscale,0,99)}
 	}
 	
 with oControl {cutscenename="VIVA" cutsceneline= "Oh you've gotta be KIDDING ME! WE'RE NOT BUUUUUUUUUUUUUUUGSSSSS!!!!"}
 }
 
-if scenetime=4000
-{sprite_index=spr_dragonoopsies
-with oControl {cutscenename="FIONA" cutsceneline= "They can't fly...? Oops..."
-}
-}
+//if scenetime=4200
+//{sprite_index=spr_dragonoopsies with actor5 x=999999999
+//with oControl {cutscenename="FIONA" cutsceneline= "They can't fly...? Oops..."
+//}
+//}
 
-if scenetime=4250
-{sprite_index=spr_dragonoopsies
-with oControl {cutscenename="FIONA" cutsceneline= "Well... they DID hurt me but... Ooh dear..." 
-}
-}
+//if scenetime=4450
+//{sprite_index=spr_dragonoopsies
+//with oControl {cutscenename="FIONA" cutsceneline= "Well... they DID hurt me but... Ooh dear..." 
+//}
+//}
 
-if scenetime=4620
+if scenetime=4200//scenetime=4820
 {
 oControl.stageEndFX=1
 }
