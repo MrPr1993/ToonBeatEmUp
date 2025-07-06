@@ -19,7 +19,7 @@
   "height":512,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ebe13bdb-4241-4bed-9cc8-05736916c334","blendMode":0,"displayName":"default","isLocked":false,"name":"ebe13bdb-4241-4bed-9cc8-05736916c334","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"11517b19-1edb-44bc-a009-f7106a4f7a3b","blendMode":0,"displayName":"default","isLocked":false,"name":"11517b19-1edb-44bc-a009-f7106a4f7a3b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_cloudtile",
   "nineSlice":null,

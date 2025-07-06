@@ -20,7 +20,7 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 actorscreen=instance_create_depth(0,0,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene5c1 anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_cutscene5c1 anim=9999 isDepth=0 depth=-3000 shadow=-1; x=0; y=0; image_speed=0.5
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -39,7 +39,10 @@ actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
 
 actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=1}
+
+geniewishes=instance_create_depth(11215,170,-1,oCameoChar)
+{sprite_index=mask_none isDepth=0 depth=-3001 shadow=-1 image_speed=0}
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
@@ -47,6 +50,8 @@ with oControl
 {
 cutscenename="MR.BURG" cutsceneline="I SURRENDER! PLEASE DON'T HURT MEEE!!!"
 }
+
+sprite_index=spr_cutscene5c1 image_speed=0.5
 
 newscript=function()
 {
@@ -57,7 +62,7 @@ if scenetime<=2
 if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene=1 scenetime=6000}
 
 if scenetime=340
-{sprite_index=spr_geniehug
+{sprite_index=spr_geniehug image_speed=0 image_index=0 musicplaystart(msc_profile) PlaySound(snd_steal)
 with actor8 {sprite_index=spr_geniewhat x=-160 y=0 shadow=-1 isDepth=0 depth=-3010}	
 
 with oControl
@@ -68,18 +73,23 @@ y=0
 }
 
 if scenetime=540
-{ with actor8 {hspeed=4}
+{ 
 with oControl
 {
 cutscenename="DIVAS" cutsceneline= "'Beloved'?!"
 }
 }
 
-if scenetime=576 hspeed=0
+if scenetime=clamp(scenetime,540,639)
+{actor8.x=lerp(actor8.x,0,0.1)
+}
 
 if scenetime=640
 {actor8.sprite_index=mask_none
 	sprite_index=mask_none
+	
+with actor5 {sprite_index=spr_genie_talk image_index=0}
+with actor6 {sprite_index=spr_geniemaster_talk image_speed=0.25}
 	
 with oControl
 {
@@ -87,19 +97,22 @@ cutscenename="BURGUSON" cutsceneline= "I got lost while lookin' for the rest of 
 	
 	}
 
-with actor1 {x=64 y=170}
-with actor2 {x=64 y=144}
-with actor3 {x=64 y=160}
-with actor4 {x=64 y=188}
+with actor1 {x=80 y=170 sprite_index=spr_viva_point image_index=2}
+with actor2 {x=64 y=144 sprite_index=spr_hina_point image_index=2}
+with actor3 {x=56 y=160 sprite_index=spr_bahati_point image_index=2}
+with actor4 {x=28 y=188 sprite_index=spr_sofia_point image_index=2}
 
-with actor5 {x=215 y=144}
-with actor6 {x=220 y=160}
+with actor5 {x=215 y=164}
+with actor6 {x=220 y=180}
 }
 
 
 
 if scenetime=1120
 {
+with actor5 {sprite_index=spr_genie_talk image_speed=0.25}
+with actor6 {sprite_index=spr_geniemaster_talk image_index=0 image_speed=0}
+
 with oControl
 {
 cutscenename="HAIFA" cutsceneline= "It is true! And if you leave us be, I will grant you one wish."
@@ -109,7 +122,19 @@ cutscenename="HAIFA" cutsceneline= "It is true! And if you leave us be, I will g
 
 if scenetime=1340
 {
-with actor6 sprite_index=spr_cutscene5a3
+with geniewishes
+{x=-320; y=0; specialcheck[0]=-320; isDepth=0 depth=-4000
+	sprite_index=spr_geniewishes2 image_speed=0
+	newscript=function() {x=lerp(x,specialcheck[0],0.1)}
+specialdraw=function()
+{
+draw_sprite(spr_cutscene5c,0,0,0)
+
+draw_sprite(spr_geniewishes,specialcheck[1],80,0)
+
+draw_sprite(sprite_index,specialcheck[2],round(x),round(y))
+}
+}
 
 with oControl
 {cutscenename="HAIFA" cutsceneline= "I could give you wealth!"}
@@ -117,7 +142,7 @@ with oControl
 
 if scenetime=1500
 {
-x=0 sprite_index=spr_geniewishes2
+geniewishes.specialcheck[0]=0
 
 with oControl
 {cutscenename="VIVA" cutsceneline= "We... got that? We're rich already."}
@@ -125,24 +150,32 @@ with oControl
 
 if scenetime=1750
 {
+geniewishes.specialcheck[0]=-320
+
 with oControl
 {cutscenename="HAIFA" cutsceneline= "Oh. What about fame?"}
 }
 
 if scenetime=1900
 {
+geniewishes.specialcheck[0]=0 geniewishes.specialcheck[2]=1	
+
 with oControl
 {cutscenename="BAHATI" cutsceneline= "We got all the fame we need."}
 }
 
 if scenetime=2150
 {
+geniewishes.specialcheck[0]=-320	
+
 with oControl
 {cutscenename="HAIFA" cutsceneline= "What about love?! Love is one important thing."}
 }
 
-if scenetime=2300
+if scenetime=2360
 {
+geniewishes.specialcheck[0]=0 geniewishes.specialcheck[2]=2
+
 with oControl
 {cutscenename="SOFIA" cutsceneline= "All covered."}
 }
@@ -154,26 +187,26 @@ with oControl
 }
 
 if scenetime=2700
-{
+{geniewishes.specialcheck[1]=1
 with oControl
 {cutscenename="HAIFA" cutsceneline= "...alright."}
 }
 
 if scenetime=2850
-{image_index=1; scenetime=6000
+{image_index=1; scenetime=6000 with geniewishes {instance_destroy();}
 }
 
 if scenetime=6000
-{
+{audio_stop_all()
 sprite_index=mask_none
 
-with actor1 {x=64 y=170}
-with actor2 {x=64 y=144}
-with actor3 {x=64 y=160}
-with actor4 {x=64 y=188}
+with actor1 {x=80 y=170 sprite_index=spr_viva_cutscene image_index=0}
+with actor2 {x=64 y=144 sprite_index=spr_hina_cutscene image_index=1}
+with actor3 {x=56 y=160 sprite_index=spr_bahati_cutscene image_index=2}
+with actor4 {x=28 y=188 sprite_index=spr_sofia_talk3 image_index=0}
 
-with actor5 {x=215 y=144}
-with actor6 {x=220 y=160}
+with actor5 {x=215 y=164 sprite_index=spr_genie_talk2 image_speed=0.25}
+with actor6 {x=220 y=180 sprite_index=spr_geniemaster_talk image_speed=0 image_index=0}
 
 with oControl
 {
@@ -183,6 +216,8 @@ cutscenename="HAIFA" cutsceneline= "Just tell me what you need... But choose you
 
 if scenetime=6300
 {
+with actor5 {image_speed=0 image_index=0}
+
 with oControl
 {
 timeline_position=6000-60;

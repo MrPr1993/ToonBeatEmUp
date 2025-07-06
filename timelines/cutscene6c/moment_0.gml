@@ -110,7 +110,7 @@ cutscenename="FIONA" cutsceneline= "WAAAAAAAAAAAAAHHHHHHHHHHHH!"
 
 if scenetime=660
 {
-vspeed=0.1 image_speed=0.01 y=-64
+vspeed=0.1 image_speed=0.05 y=-64
 sprite_index=spr_cutscene6c0
 with oControl {cutscenename="FIONA" cutsceneline= "You meanies! Why did you hurt me?! You bruised my pretty face!"
 }
@@ -135,59 +135,60 @@ with oControl {cutscenename="BAHATI" cutsceneline= "I've got this."}
 }
 
 if scenetime=1700
-{sprite_index=spr_dragoncalming
+{sprite_index=spr_dragoncalming image_index=0
 with oControl {cutscenename="BAHATI" cutsceneline="Sorry for the bruises, we only meant to defend ourselves."}
 }
 
 if scenetime=1900
 {image_index=1
-with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know how to fix up your face. And you can help us leave the castle."}
+with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know how to fix up you up. And you can help us leave the castle."}
 }
 
 if scenetime=2200
-{audio_stop_all() musicplaystart(msc_gallery)
+{audio_stop_all() 
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 {image_alpha=0 fadeSpd=0.05 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
-
+scenetime=2400
 }
 
 if scenetime=2700
-{
+{musicplaystart(msc_gallery)
 with flashscreen instance_destroy();
-	y=192
+	y=-192
 sprite_index=spr_newdragon image_index=0
 with oControl {cutscenename="" cutsceneline= ""
 }
+scenetime=2850
 }
 
-if scenetime=clamp(scenetime,2700,3099) y=lerp(y,0,0.1)
+if scenetime=clamp(scenetime,2700,2999) y=lerp(y,-32,0.1)
 
-if scenetime=3100
-{x=0 y=0
+if scenetime=3000
+{x=-60 y=0
 sprite_index=spr_newdragon2 image_index=0
 with oControl {cutscenename="FIONA" cutsceneline= "SNIFF! Oh, this is wonderful! I adore it! Just wait until I find my soulmate! Thank you, chunky yellow ladybug!"}
 }
 
-if scenetime=3300
-{sprite_index=spr_dragonpicking image_index=0 x=60 y=0
+if scenetime=clamp(scenetime,3000,3399) {x+=0.1 x=clamp(x,-60,0)}
+
+if scenetime=3400
+{sprite_index=spr_dragonpicking image_index=0 x=0 y=0
 with oControl {cutscenename="BAHATI" cutsceneline= "This is why being nice helps, Viva. It's called 'karma'."}
 }
 
-if scenetime=clamp(scenetime,3300,3549) {x-=0.1 x=clamp(x,0,99)}
-
-if scenetime=3550
+if scenetime=3650
 {image_index=0
 with oControl {cutscenename="VIVA" cutsceneline= "Right... I guess you have a point-why is she heading toward the window?"}
 }
 
-if scenetime=3650
+if scenetime=3750
 {image_index=1 
 }
 
 
-if scenetime=3800
+if scenetime=3900
 {audio_stop_all() PlaySound(snd_hit)
 sprite_index=spr_windowthrow image_index=0
 
@@ -197,7 +198,7 @@ with oControl {quakeFXTime=10 cutscenename="FIONA" cutsceneline= "Here you go! F
 }
 }
 
-if scenetime=4000
+if scenetime=4100
 {sprite_index=mask_none PlaySoundNoStackPitch(snd_fall,0.5)
 
 with actor5 {isDepth=0 sprite_index=spr_cutscene6c shadow=-1 image_xscale=1 x=0 y=0 depth=99999}	
@@ -221,7 +222,7 @@ with oControl {cutscenename="VIVA" cutsceneline= "Oh you've gotta be KIDDING ME!
 //}
 //}
 
-if scenetime=4200//scenetime=4820
+if scenetime=4400//scenetime=4820
 {
 oControl.stageEndFX=1
 }

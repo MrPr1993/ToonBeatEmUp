@@ -385,7 +385,7 @@ creditmoment="GAME BY\n \nMRPR1993" ;
 else if creditsTime<7+5*3
 creditmoment="MUSIC BY\n \nJONORSI\nEVADER MUSIC" ;
 else if creditsTime<7+5*4
-creditmoment="SOUNDS BY\n \nMRPR1993\nMASTERSAUCE\nSOUNDSOFKOOKIE";
+creditmoment="SOUNDS BY\n \nMRPR1993\nMASTERSAUCE\nSOUNDSOFKOOKIE\nTHE AUDIO HORIZON SOUND FX";
 else if creditsTime<7+5*5
 creditmoment="VOICES BY\n \nMIMI HUNG\nFLIRTY FAWN\nCINDER\nSED2116\nMIZZPEACHY\nSUCCUBOO\nSHYGUYWHY" ;
 else if creditsTime<7+5*6
