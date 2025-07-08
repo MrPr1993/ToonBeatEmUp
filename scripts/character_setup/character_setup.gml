@@ -367,6 +367,7 @@ turnanim=1
 	hit=0
 	hittype=0
 	character=0
+	charchoose=0
 	targetID=-1
 	grabX=0
 	grabY=0

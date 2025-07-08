@@ -67,7 +67,7 @@ var shootf4=4;
 var shootf5=5;
 	
 if AnimFrame=0  {PlaySound(choose(snd_twoheads3,snd_twoheads10,snd_twoheads8))}
-	if AnimFrame=0 {specialcheck4=choose(1,-1) specialcheck3=0
+	if AnimFrame=0 {specialcheck4=choose(1,-1) specialtimes[3]=0
 		
 		specialcheck5=6}
 
@@ -83,12 +83,12 @@ frame_set(0,0,0.1)
 frame_set(1,1,0.1)
 
 if specialcheck5!=6
-if ismoving=1 {specialcheck3+=0.1 if specialcheck3>=6 specialcheck3=0;
+if ismoving=1 {specialtimes[3]+=0.25 if specialtimes[3]>=6 specialtimes[3]=0;
 sprite_index=spr_twoheads_shootmove
-shootf2=6+specialcheck3;
-shootf3=0+specialcheck3;
-shootf4=6+specialcheck3;
-shootf5=6+specialcheck3;
+shootf2=6+specialtimes[3];
+shootf3=0+specialtimes[3];
+shootf4=6+specialtimes[3];
+shootf5=6+specialtimes[3];
 }
 
 frame_set(2,shootf2,0.25)
@@ -101,8 +101,6 @@ bul1=instance_create_depth(x+(10+23)*image_xscale,y+1,-1,oProjectile) bul1.z=-62
 flashFX(x+10*image_xscale,y+1,z-62,spr_gunflash,0,1,0,1,1,c_white,1)
 flashFX(x+10*image_xscale,y+1,z-62,spr_gunflash,0,1,0,1,1,c_white,1)
 	}
-
-
 
 frame_set(3,shootf3,0.5)
 frame_set(4,shootf4,0.5)

@@ -5,6 +5,8 @@ function entry_setup(){
 // You can write your code in this editor
 enemyID=-1
 
+commonenemy=0;
+
 colorshade_setup()
 
 spawnname="Default"

@@ -49,6 +49,9 @@ with oControl
 cutscenename="" cutsceneline= ""
 }
 
+layer_set_visible("SpaceBG",1)
+layer_set_visible("BTG1",0)
+
 newscript=function()
 {
 scenetime+=1;
@@ -143,12 +146,12 @@ if specialcheck[0]<=0 {scenetime=6000-60 with oControl canSkipCutscene=0}
 }
 
 if scenetime=6000
-{layer_set_visible("SpaceBG",0)
+{layer_set_visible("SpaceBG",0) layer_set_visible("BTG1",1)
 sprite_index=mask_none
 
 with actor1 {x=48; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
 with actor2 {x=32; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=32; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
+with actor3 {x=52; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
 with actor4 {x=24; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
 
 with actor6 {x=400}
@@ -176,7 +179,7 @@ if scenetime=clamp(scenetime,6120,6300)
 with oControl {SceneX+=2; __view_set( e__VW.XView, 0, SceneX )}
 }
 
-if scenetime=6500
+if scenetime=6310
 {
 with oControl
 {

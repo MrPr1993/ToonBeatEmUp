@@ -14,6 +14,8 @@ if tidalBuffer!=0 tidalBuffer-=1
 
 ///AI for enemy doing blocks
 //if name="BBB" ///To lock block to make boss easier
+if current_pal=0
+{
 if canmove=1 and (anim=0 or anim=1)
 if distance_to_object(targetEnemy)<64
 and (targetEnemy.y=clamp(targetEnemy.y,y-8,y+8))
@@ -25,6 +27,7 @@ or (image_xscale=-1 and x>targetEnemy.x and targetEnemy.image_xscale=1)
 if targetEnemy.atk=1 if anim!=60
 {AnimFrame=0 canmove=0 recovery=0
 anim=60 
+}
 }
 }
 
@@ -61,6 +64,8 @@ if anim=10
 		
 		} else anim=11
 if anim=12 if instance_exists(oNinjaBunCard) anim=13
+
+if anim=6500 or anim=6501 {if current_pal!=0 anim=13}
 }
 
 ///Tidal Wave!
@@ -156,6 +161,8 @@ frame_set(10,1,0.25) if AnimFrame=11
 {//with bub instance_destroy() bub=-1
 //PlaySound(snd_femenemy5) PlaySound(snd_flame)
 var reppart=0;
+if current_pal=0
+{
 repeat(5)
 {
 card=instance_create_depth(x+32*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=8*image_xscale
@@ -173,8 +180,18 @@ case 4: card.vspeed=1 card.hspeed=7*image_xscale break;
 }
 reppart+=1;
 }
+}
+else
+{
+card=instance_create_depth(x+32*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=8*image_xscale
+card.sprite_index=spr_prince_proj
+if distance_to_point(targetEnemy.x,targetEnemy.y)<120
+{card.zSpeed=1 card.zSpeedAdd=-0.1} else card.sidespeedadd=-0.2*image_xscale
+card.z=z-64 card.image_xscale=image_xscale card.disappearHit=0 card.damage=0.1
+}
 
 }
+
 frame_set(11,2,0.25)
 frame_set(12,3,0.25)
 frame_set(13,3,0.25)
@@ -306,4 +323,15 @@ if AnimFrame>=16 {image_index=6
 	if ground canmove=1
 	}
 
+}
+
+if current_pal!=0
+if dead=1 if visible
+{PlaySound(snd_splash1)
+	flashFX(x,y+1,0,spr_watersplash,0,0.25,30,1,1,c_white,1)
+	canmove=0
+	hurt=1
+	shaketime=30
+	throwing=0 dead=1;
+	visible=0 disappearTime=0 alarm[2]=90///Instantly kill and shatter character while frozen
 }

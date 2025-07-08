@@ -3068,6 +3068,7 @@
     {"name":"spr_horsepal","order":14,"path":"sprites/spr_horsepal/spr_horsepal.yy",},
     {"name":"spr_horserun","order":5,"path":"sprites/spr_horserun/spr_horserun.yy",},
     {"name":"spr_hotairballoon","order":10,"path":"sprites/spr_hotairballoon/spr_hotairballoon.yy",},
+    {"name":"spr_hotairballoon2","order":11,"path":"sprites/spr_hotairballoon2/spr_hotairballoon2.yy",},
     {"name":"spr_hotdesert","order":9,"path":"sprites/spr_hotdesert/spr_hotdesert.yy",},
     {"name":"spr_hotdog","order":19,"path":"sprites/spr_hotdog/spr_hotdog.yy",},
     {"name":"spr_hpbar","order":6,"path":"sprites/spr_hpbar/spr_hpbar.yy",},
