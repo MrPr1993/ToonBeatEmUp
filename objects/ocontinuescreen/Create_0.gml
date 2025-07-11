@@ -27,6 +27,9 @@ finalStageEnd=oControl.finalStageEnd
 bonusstage=oControl.bonusstage
 noshowtime=oControl.noshowtime
 nofood=oControl.nofood
+showtimehit=oControl.showtimehit
+nodeath=oControl.nodeath
+perfecthp=oControl.perfecthp
 }
 finalStage=0
 finalStageHi=0

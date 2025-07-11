@@ -1575,15 +1575,8 @@ featc=instance_create_depth(0,0,0,oFeatDisplay) with featc
 
 if global.DisplayFeats=1
 {
-if instance_exists(oFeatDisplay) with oFeatDisplay
-{draw_set_alpha(1) draw_set_font(global.scorefont)
-draw_set_color(c_white) draw_rectangle(0+featX,240-24,128+featX,240,false)
-draw_set_color(c_black) draw_rectangle(0+2+featX,240-24+2,128-2+featX,240-3,false)
-draw_set_halign(fa_left)
-draw_sprite(spr_featicon,featNO,6+featX,240-38+4)
-draw_set_color(c_white) draw_text(6+33+featX,240-24+4,"FEAT\nCOMPLETE!")
-//draw_set_color(c_white) draw_text(6+featX,240-24+4+8,name)
-}}
+if instance_exists(oFeatDisplay) with oFeatDisplay drawscript();
+}
 
 ///This will be used to play the cutscenes
 if room=rm_cutscene1 or room=rm_opening or (room=rm_newspaper and global.IsMovie=1)

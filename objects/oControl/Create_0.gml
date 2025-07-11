@@ -877,6 +877,8 @@ gold_load()
 feats_load()
 }
 
+global.SaveFeat=0;
+
 /////Map Screen
 lockedMap[30]=0
 check_unlockedmap()
