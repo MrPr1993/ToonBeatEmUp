@@ -31,6 +31,7 @@ MoveType=1 damage=0.1
 
 	if anim=12
 	{
+	if AnimFrame=0 {specialtimes[3]=0; if current_pal=6 specialtimes[3]=2}
 	 hit=0  sprite_index=spr_cowboy_shoot
 
 frame_set(0,0,0.1)
@@ -41,7 +42,7 @@ frame_set(2,2,0.1) if AnimFrame=3
 	projectile_create(x+32*image_xscale,y,z-45,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
 	projectile.HitSound=weaponProjHitSnd
 }
-frame_set(3,3,0.1)
+frame_set(3,3,0.1) if AnimFrame>=4 {if specialtimes[3]!=0 {specialtimes[3]-=1 AnimFrame=1.9}}
 frame_set(4,2,0.1)
 frame_set(5,1,0.1)
 frame_set(6,0,0.1)

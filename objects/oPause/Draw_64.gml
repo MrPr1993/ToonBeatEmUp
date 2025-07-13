@@ -104,6 +104,9 @@ draw_command(1)
 draw_set_halign(fa_center)
 
 settings_draw()
+
+if global.DisplayFeats=1
+if instance_exists(oFeatDisplay) with oFeatDisplay drawscript();
 ////
 
 crt_fxset()

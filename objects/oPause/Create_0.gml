@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+seefeats=0;
+if instance_exists(oFeatDisplay) seefeats=1;
 
 shade=shd_television
 
@@ -36,6 +37,7 @@ sprite_replace(spr_photoplaceholder,"screenshot",0,false,false,0,0)
 instance_deactivate_all(true)
 
 instance_activate_object(input_controller_object)
+if seefeats instance_activate_object(oFeatDisplay)
 
 pauseBuffer=10
 

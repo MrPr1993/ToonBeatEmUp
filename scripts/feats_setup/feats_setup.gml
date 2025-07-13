@@ -10,6 +10,7 @@ global.Feats[2]=2 ///Default to show them
 global.Feats[3]=2 ///Default to show them
 global.Feats[4]=2 ///Default to show them
 global.Feats[5]=2 ///Default to show them
+global.Feats[35]=2 ///Default to show them
 }
 
 function feats_stageunlock(){
@@ -18,16 +19,43 @@ function feats_stageunlock(){
 
 }
 
-function feats_check(){
+function feats_check(_no){
 
-var setfeats=0; var savefeats=0;
+
+var setfeats=0; var savefeats=0; var checkfeat=0;
 var featname=""
+
+if _no=-1
+{
 for (var i=0; i<100; i++)
-{setfeats=0;
-switch(i)
+{setfeats=0 checkfeat=feat_data(i); if checkfeat setfeats=1
+if global.Feats[i]!=1
+{if setfeats {global.SaveFeat=1 global.Feats[i]=1 feat_create(featname) featc.featNO=i;}}
+}
+}
+else
+{setfeats=feat_data(_no); i=_no
+	
+	if global.Feats[i]!=1
+{if setfeats {global.SaveFeat=1 global.Feats[i]=1 feat_create(featname) featc.featNO=i;}}
+	}
+
+if setfeats global.SaveFeat=1
+
+
+if global.Feats[35]=1 if global.Feats[36]=0 global.Feats[36]=2
+if global.Feats[36]=1 if global.Feats[37]=0 global.Feats[37]=2
+
+if global.SaveFeat feats_save() global.SaveFeat=0
+}
+
+
+function feat_data(_no)
+{var setfeats=0; var featname=""
+switch(_no)
 {
 case 1: featname="DIVA'S DEBUT" ///Clear Stage 1
-if object_index=oContinueScreen and stageClear=1 and room=rm_stage1 {setfeats=1} break;
+if object_index=oContinueScreen if stageClear=1 and room=rm_stage1 {setfeats=1} break;
 
 case 2: featname="MUST PET!" ///PET THE FIRST ANIMAL IN ANY STAGE.
 if instance_exists(oPlayer) if oPlayer.anim=10010 setfeats=1 break;
@@ -36,135 +64,148 @@ case 3: featname="ENCORE!" ///USE YOUR FIRST CONTINUE.
 if instance_exists(oPlayer) if oPlayer.continueScreen=2 setfeats=1 break;
 
 case 4: featname="SHOWTIME FINISH" ///DEFEAT A BOSS WITH A SHOWTIME ATTACK.
-if object_index=oContinueScreen if showtimehit and stageClear=1 setfeats=1 break;
+if object_index=oContinueScreen if showtimehit if stageClear=1 setfeats=1 break;
 
 case 5: featname="ONE LONG NOTE"
-if stageClear=1
-if object_index=oContinueScreen {if nodeath setfeats=1} break;
+if object_index=oContinueScreen if stageClear=1 {if nodeath setfeats=1} break;
 
 case 6: featname="I'm Not Stage Frightened!" ///Beat any Stage without using Showtime once.
-if object_index=oContinueScreen if noshowtime and stageClear=1 setfeats=1
+if object_index=oContinueScreen if noshowtime if stageClear=1 setfeats=1
 break;
 
 case 7: featname="Legendary Dancing Diva!" ///Beat arcade mode without dying
-if object_index=oContinueScreen and stageClear=1 and stageClear=1 and global.ArcadeDeath=0 and room=rm_stagefinal setfeats=1
+if object_index=oContinueScreen if stageClear=1 if stageClear=1 and global.ArcadeDeath=0 and room=rm_stagefinal setfeats=1
 break;
 
 case 8: featname="Don't Touch the Diva" ///Beat any stage without taking damage
-if object_index=oContinueScreen and stageClear=1 {if perfecthp	setfeats=1}
+if object_index=oContinueScreen if stageClear=1 {if perfecthp	setfeats=1}
 break;
 
 case 9: featname="Sorry, I'm on a Diet..." ///Beat any stage without taking any food
-if object_index=oContinueScreen and stageClear=1 {if nofood setfeats=1}
+if object_index=oContinueScreen if stageClear=1 {if nofood setfeats=1}
 break;
 
 case 12: featname="WOLF WHISPERER" ///Defeat Lady Wolf without taking any damage
-if room=rm_stage1 and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stage1 if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 13: featname="HARPILDA" ///Defeat Lady Wolf without taking any damage
-if room=rm_stage2b and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stage2b if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 14: featname="ROSY" ///Defeat Lady Wolf without taking any damage
-if room=rm_stage2 and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stage2 if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 15: featname="DOLORES" ///Defeat Lady Wolf without taking any damage
-if room=rm_stage2c and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stage2c if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 16: featname="ANNAMARI" ///Defeat Lady Wolf without taking any damage
-if room=rm_stage4 and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stage4 if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 17: featname="HATHOR" ///Defeat Lady Wolf without taking any damage
-if room=rm_stage3 and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stage3 if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 18: featname="ONI SISTERS" ///Defeat Lady Wolf without taking any damage
-if room=rm_stage5 and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stage5 if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 19: featname="KIANDRA" ///Defeat Lady Wolf without taking any damage
-if room=rm_stageswamp and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stageswamp if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 20: featname="DUCK" ///Defeat Lady Wolf without taking any damage
-if room=rm_stagecarnival and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stagecarnival if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 21: featname="CIRCE" ///Defeat Lady Wolf without taking any damage
-if room=rm_stagebeach and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stagebeach if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 22: featname="UFO" ///Defeat Lady Wolf without taking any damage
-if room=rm_stageufo and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stageufo if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 23: featname="PRINCE" ///Defeat Lady Wolf without taking any damage
-if room=rm_stagemermaid and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stagemermaid if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 24: featname="GENIE" ///Defeat Lady Wolf without taking any damage
-if room=rm_stagedesert and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stagedesert if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 25: featname="MIRROR" ///Defeat Lady Wolf without taking any damage
-if room=rm_stagesnow and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stagesnow if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 26: featname="PLANT" ///Defeat Lady Wolf without taking any damage
-if room=rm_stagecave and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stagecave if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 27: featname="DRAGON" ///Defeat Lady Wolf without taking any damage
-if room=rm_stageclouds and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stageclouds if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 28: featname="LAB" ///Defeat Lady Wolf without taking any damage
-if room=rm_stagelab and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stagelab if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
 
 case 29: featname="FINAL" ///Defeat Lady Wolf without taking any damage
-if room=rm_stagefinal and stageClear=1
-if object_index=oContinueScreen {//if perfecthp
+if object_index=oContinueScreen if room=rm_stagefinal if stageClear=1
+{//if perfecthp
 	setfeats=1}
 break;
+
+case 35: featname="ENEMY KILL" ///
+if global.EnemyDeath>=100 setfeats=1;
+break;
+
+case 36: featname="ENEMY KILL" ///
+if global.EnemyDeath>=500 setfeats=1;
+break;
+
+case 37: featname="ENEMY KILL" ///
+if global.EnemyDeath>=1000 setfeats=1;
+break;
+
+
 case 49: featname="It's Bad For You!"
 if object_index=oPlayer {if sprite_index=spr_viva_cough setfeats=1}
 break;
@@ -191,24 +232,16 @@ break;
 ///
 ///
 ///
-
-
 }
-
-if setfeats global.SaveFeat=1
-
-if global.Feats[i]!=1
-{if setfeats {global.SaveFeat=1 global.Feats[i]=1 feat_create(featname) featc.featNO=i;}}
-}
-
-if global.SaveFeat feats_save() global.SaveFeat=0
+return setfeats;
 }
 
 function feat_create(_text)
 {
-featc=instance_create_depth(0,0,0,oFeatDisplay) with featc
-{featX=-128-128*instance_number(oFeatDisplay)
-} featc.name=_text 
+with oControl
+{
+featc=instance_create_depth(0,0,0,oFeatDisplay) featc.depth=depth with featc depth-=instance_number(oFeatDisplay)
+}
 }
 
 function feats_save()

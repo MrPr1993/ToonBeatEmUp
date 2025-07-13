@@ -781,6 +781,7 @@ SceneX=0
 SceneY=0
 
 TextDialogue=""
+TextDuration=0;
 
 BossHPID=-1
 BossHPName="LADY WOLF"

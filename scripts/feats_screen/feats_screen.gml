@@ -14,13 +14,17 @@ draw_set_font(global.scorefont)
 
 if betatest
 {
-if keyboard_check_pressed(ord("P")) 
-for (var i=0; i<100; i++) {global.Feats[i]=1}
+if keyboard_check(ord("I"))	global.EnemyDeath=0
+
+if keyboard_check_pressed(ord("P")) {
+for (var i=0; i<100; i++) {global.Feats[i]=1} if keyboard_check(vk_control) feats_default()}
 if keyboard_check_pressed(ord("O")) {if global.Feats[featsel]=2 global.Feats[featsel]=0 else global.Feats[featsel]^=1
 	if keyboard_check(vk_shift) global.Feats[featsel]=2
 	}
 }
 var _maxfeat=52;//100
+
+
 
 if key_up_pressed {PlaySound(snd_select) if featsel=1 {featY=lerp(featY,-48*_maxfeat,1) featsel=_maxfeat} else featsel-=1}
 if -key_down_pressed {PlaySound(snd_select) if featsel=_maxfeat {featY=lerp(featY,0,1) featsel=1} else featsel+=1}
@@ -59,9 +63,9 @@ draw_feat(31,spr_featicon,31,c_white,"Best In Show","Clear Arcade Mode on Very H
 draw_feat(32,spr_featicon,32,c_white,"World Mapper","Clear all stages in the game.")
 draw_feat(33,spr_featicon,33,c_white,"Animal Tamer","Pet all animals from all stages.")
 draw_feat(34,spr_featicon,34,c_white,"Diva Detective.","Find all Stage Secrets.")
-draw_feat(35,spr_featicon,35,c_white,"Goon Bruiser.","Defeat 100 enemies.")
-draw_feat(36,spr_featicon,36,c_white,"Goon Crusher.","Defeat 500 enemies.")
-draw_feat(37,spr_featicon,37,c_white,"Goon Slayer.","Defeat 1000 enemies.")
+draw_feat(35,spr_featicon,35,c_white,"Goon Bruiser.","Defeat 100 enemies.\n"+string(clamp(global.EnemyDeath,0,100))+"/100")
+draw_feat(36,spr_featicon,36,c_white,"Goon Crusher.","Defeat 500 enemies.\n"+string(clamp(global.EnemyDeath,0,500))+"/500")
+draw_feat(37,spr_featicon,37,c_white,"Goon Slayer.","Defeat 1000 enemies.\n"+string(clamp(global.EnemyDeath,0,1000))+"/1000")
 draw_feat(38,spr_featicon,38,c_white,"Shopping List","Buy out all of the Extras.")
 draw_feat(39,spr_featicon,39,c_white,"Big Cheater","Buy out all of the Cheats.")
 draw_feat(40,spr_featicon,40,c_white,"Art Collector","Buy out all of the Gallery.")

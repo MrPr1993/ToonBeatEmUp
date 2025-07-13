@@ -8,7 +8,10 @@ disappear=2
 
 alarm[1]=2
 
-alarm[1]+=120*instance_number(oFeatDisplay)
+
+alarm[1]+=-120+(120*instance_number(oFeatDisplay))
+
+if alarm[1]<=2 alarm[1]=2
 
 drawscript=function()
 {

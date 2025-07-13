@@ -1176,7 +1176,7 @@ sprite_index=spr_viva_win2 //-4,-72
 	frame_set(2,2,0.01)
 	frame_set(3,1,0.1) if AnimFrame=4
 			{
-			if specialtimes[0]<3		
+			if specialtimes[0]<=6	
 			{
 			specialtimes[0]+=1			
 			hrt=instance_create_depth(x-4*image_xscale,y,-1,oFlashFX)
@@ -1186,7 +1186,7 @@ sprite_index=spr_viva_win2 //-4,-72
 zSpeed=-.04 zSpeedAdd=-0.1 isDepth=0}
 			}
 else
-{specialtimes[0]=0 specialcheck5=0
+{specialtimes[0]=0 specialcheck5=0 sprite_index=spr_viva_cough feats_check(-1);
 			specialanim=10 AnimFrame=1
 			}
 }

@@ -18,6 +18,28 @@ or hp=0
 {
 if weaponspr!=-1
 {
+var spawnsc=0;
+
+if current_pal=2 if dead=0 or hp>0 spawnsc=1;
+
+
+if spawnsc
+{
+Scimitar=instance_create_depth(x,y+2,-1,oAnimatedObject) with Scimitar
+{
+	pointshit=0
+	points=0
+name="SCIMITAR"
+weaponspr=spr_scimitar
+enemyID=-1;
+anim=5
+}
+Scimitar.sentflying=0
+
+weaponspr=-1
+}
+else
+{
 weapon=instance_create_depth(x,y,depth,spawnID)
 weapon.z=z-96 weapon.spdZ=-4 weapon.ground=0 weapon.airSpin=1
 weapon.image_blend=weaponcolor
@@ -33,5 +55,9 @@ weaponangle=0
 weaponcolor=c_white
 weaponspawn=-1
 spawnID=-1
-}}
 }
+}
+}
+}
+
+if Scimitar!=-1 {if !instance_exists(Scimitar) Scimitar=-1; else {if hp=0 or dead=1 {Scimitar.hp=0; Scimitar.HitType=1; Scimitar=-1;}}}

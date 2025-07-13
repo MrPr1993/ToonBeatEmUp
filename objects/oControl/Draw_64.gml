@@ -583,7 +583,9 @@ d3d_set_culling(false)
 draw_set_halign(fa_center); draw_set_valign(fa_top);
 draw_set_font(global.scorefont) draw_set_alpha(1)
 draw_set_color(c_white)///Enemy Name Here
-draw_text(160,240-24,string_hash_to_newline(TextDialogue))
+if TextDuration>0
+{TextDuration--;
+draw_text(160,240-24,string_hash_to_newline(TextDialogue))}
 draw_set_font(-1)
 draw_set_halign(fa_left)
 

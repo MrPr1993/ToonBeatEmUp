@@ -1,5 +1,12 @@
 /// @description Super Attack
 function player_super() {
+var _checksuper=1;
+
+with oPlayer if anim=50 _checksuper=0;
+
+if _checksuper=0 {//player_special()
+	exit;}
+
 	if carry=1
 	{dropitem=0 event_user(2)}
 
@@ -10,7 +17,7 @@ function player_super() {
 	AnimFrame=0
 	anim=50 ///SUPER
 	}
-	else {atk=1 event_user(4)}
+	else {atk=1 player_special()}
 
 
 

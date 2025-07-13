@@ -25,6 +25,7 @@ screenDamage-=0.1;
 }
 
 
+
 if instance_exists(oPlayer) with oPlayer if visible and hasShadow=1 and sprite_index!=mask_none
 {
 if !place_meeting(x,y,oHeight32) and !place_meeting(x,y,oFallHole)
@@ -156,6 +157,7 @@ if specialShow=1
 draw_set_color(colorChange) draw_set_alpha(0.5)
 draw_rectangle(__view_get( e__VW.XView, 0 )-4,__view_get( e__VW.YView, 0 )-4,__view_get( e__VW.XView, 0 )+800,__view_get( e__VW.YView, 0 )+600,false)
 draw_set_color(c_white) draw_set_alpha(1)
+
 
 
 //if spotlightWidth<1 spotlightWidth+=0.1 else spotlightWidth=1

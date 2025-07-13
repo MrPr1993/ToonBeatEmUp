@@ -67,6 +67,8 @@ weapon_add("SCIMITAR")
 spritepos_setup(1,24,1,50) ///Waist, Frame 24
 spritepos_setup(2,24,1,74) ///Head, Frame 24
 
+Scimitar=-1;
+
 specialtaunt=function()
 {weaponanim(weaponspr,weaponIndex,7,9999,76,weaponcolor)
 sprite_index=spr_dancer_taunt

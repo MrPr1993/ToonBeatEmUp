@@ -5,6 +5,9 @@
 // You can write your code in this editor
 filmY=0 mapXFilm=0
 
+seefeats=0;
+if instance_exists(oFeatDisplay) seefeats=1;
+
 check1up=1
 
 shade=shd_television
@@ -274,6 +277,7 @@ actPorgT=0
 instance_deactivate_all(true)
 
 instance_activate_object(input_controller_object)
+if seefeats instance_activate_object(oFeatDisplay)
 
 if PlayerLife1!=-1{
 	
@@ -517,7 +521,7 @@ unlock_save()
 arcade_saving(global.StageSave)
 feats_stageunlock()
 feats_check(-1)
-feats_save(-1)
+feats_save()
 }
 global.StageClear=0;
 
