@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.716621,
+  "duration":3.7166214,
   "name":"snd_hwolf5",
   "parent":{
     "name":"Lady Wolf",

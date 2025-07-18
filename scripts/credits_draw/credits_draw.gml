@@ -529,8 +529,7 @@ draw_text(4,320+16+round(creditsCameoY),creditscameol)
 
 if betatest=1 draw_text(8,8,musictime)
 
-if key_A or key_B or key_X or key_Y or key_cancel or key_accept
-or key_charge
+if key_Ah or key_Bh or key_Xh or key_Yh or key_cancelH or key_accept
 {
 if skipScene<1 skipScene+=0.01
 else

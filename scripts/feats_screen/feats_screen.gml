@@ -21,6 +21,14 @@ for (var i=0; i<100; i++) {global.Feats[i]=1} if keyboard_check(vk_control) feat
 if keyboard_check_pressed(ord("O")) {if global.Feats[featsel]=2 global.Feats[featsel]=0 else global.Feats[featsel]^=1
 	if keyboard_check(vk_shift) global.Feats[featsel]=2
 	}
+
+if keyboard_check(ord("U"))
+{
+if featsel=35 global.EnemyDeath=99
+if featsel=36 global.EnemyDeath=499
+if featsel=37 global.EnemyDeath=999
+}
+
 }
 var _maxfeat=52;//100
 

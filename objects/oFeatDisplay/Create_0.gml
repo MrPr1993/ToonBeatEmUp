@@ -8,6 +8,7 @@ disappear=2
 
 alarm[1]=2
 
+depth=-9999
 
 alarm[1]+=-120+(120*instance_number(oFeatDisplay))
 

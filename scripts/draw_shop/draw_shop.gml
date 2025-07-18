@@ -169,7 +169,12 @@ case 16: global.Gallery[16]=1; break; ///Guest Art
 } break;
 
 }
+feats_check(38);
+feats_check(39);
+feats_check(40);
 	 unlock_save()
+	 
+	 
 	}/// BUY ITEM
 }
 

@@ -21,7 +21,7 @@ function feats_stageunlock(){
 
 function feats_check(_no){
 
-
+var i=_no;
 var setfeats=0; var savefeats=0; var checkfeat=0;
 var featname=""
 
@@ -30,14 +30,14 @@ if _no=-1
 for (var i=0; i<100; i++)
 {setfeats=0 checkfeat=feat_data(i); if checkfeat setfeats=1
 if global.Feats[i]!=1
-{if setfeats {global.SaveFeat=1 global.Feats[i]=1 feat_create(featname) featc.featNO=i;}}
+{if setfeats {global.SaveFeat=1 global.Feats[i]=1 feat_create(i)}}
 }
 }
 else
 {setfeats=feat_data(_no); i=_no
 	
 	if global.Feats[i]!=1
-{if setfeats {global.SaveFeat=1 global.Feats[i]=1 feat_create(featname) featc.featNO=i;}}
+{if setfeats {global.SaveFeat=1 global.Feats[i]=1 feat_create(i)}}
 	}
 
 if setfeats global.SaveFeat=1
@@ -205,6 +205,35 @@ case 37: featname="ENEMY KILL" ///
 if global.EnemyDeath>=1000 setfeats=1;
 break;
 
+case 38: featname="BUY ALL ITEMS" ///
+if global.UnlockCharacterData=1 
+and global.UnlockAltPal=1 
+and global.UnlockAltPal2=2 
+and global.UnlockAltPal3=3 
+and global.UnlockSoundTest=1 
+and global.UnlockMovies=1 
+and global.FishingUnlock=1 
+and global.SlotMachineUnlock=1 
+and global.MiniGameUnlock1=1 
+and global.MiniGameUnlock2=1 
+and global.MiniGameUnlock3=1 
+and global.MiniGameUnlock4=1 
+and global.MiniGameUnlock5=1 
+and global.MiniGameUnlock6=1 
+and global.SurvivalUnlock=1 
+and global.BossBattleUnlock=1 
+setfeats=1;
+break;
+case 39: featname="BUY ALL CHEATS" ///
+if global.CheatUnlock[1] and global.CheatUnlock[2] and global.CheatUnlock[3] and global.CheatUnlock[4] and global.CheatUnlock[5] and global.CheatUnlock[6] and global.CheatUnlock[7] and global.CheatUnlock[8] and global.CheatUnlock[9] and global.CheatUnlock[10] and global.CheatUnlock[11]
+and global.CheatUnlock[12] and global.CheatUnlock[13] and global.CheatUnlock[14] and global.CheatUnlock[15] and global.CheatUnlock[16] setfeats=1
+break;
+case 40: featname="BUY ALL GALLERY" ///
+if global.Gallery[1] and global.Gallery[2] and global.Gallery[3] and global.Gallery[4] and global.Gallery[5] and global.Gallery[6] and global.Gallery[7] and global.Gallery[8] and global.Gallery[9] and global.Gallery[10] and global.Gallery[11]
+and global.Gallery[12] and global.Gallery[13] and global.Gallery[14] and global.Gallery[15] and global.Gallery[16] setfeats=1
+break;
+
+
 
 case 49: featname="It's Bad For You!"
 if object_index=oPlayer {if sprite_index=spr_viva_cough setfeats=1}
@@ -236,11 +265,14 @@ break;
 return setfeats;
 }
 
-function feat_create(_text)
+function feat_create(_no)
 {
-with oControl
+var _existfeater=oControl; if !instance_exists(oControl) if instance_exists(oContinueScreen) _existfeater=oContinueScreen;
+
+if instance_exists(_existfeater)
+with _existfeater
 {
-featc=instance_create_depth(0,0,0,oFeatDisplay) featc.depth=depth with featc depth-=instance_number(oFeatDisplay)
+featc=instance_create_depth(0,0,0,oFeatDisplay); featc.featNO=_no// featc.depth=depth with featc depth-=instance_number(oFeatDisplay)
 }
 }
 

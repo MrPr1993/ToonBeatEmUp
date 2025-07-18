@@ -9,6 +9,9 @@ oEnemySpawner.roomMove=0 //3488
 
 //oControl.TextDialogue="STILL FOLLOWING US?"
 PlaySound(snd_hwolf6)
+var _playerquote="DOM'T THINK YOU HAVE TAKEN ME DOWN JUST YET!"		
+gamedialogue_play(_playerquote,audio_sound_length(snd_hwolf6))
+
 fk=instance_create_depth(boss.x,boss.y,-1,oFlashFX) with fk
 {sprite_index=spr_hwolf_angry image_speed=0.1 image_xscale=-1 animEnd=0 FlashShadow=1 alarm[0]=99999}
 boss.y+=9999
