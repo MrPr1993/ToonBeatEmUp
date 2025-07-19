@@ -30,7 +30,7 @@ scenetime+=1;
 if scenetime=clamp(scenetime,0,160)
 {with oControl {SceneX-=8; SceneX=clamp(SceneX,240,9999) __view_set( e__VW.XView, 0, SceneX )}}
 
-if scenetime=160
+if scenetime=240
 {
 with actor3 {image_index=0 image_speed=0}	
 with actor1 {sprite_index=spr_viva_talk image_speed=0.25}
@@ -42,7 +42,7 @@ cutscenename="VIVA" cutsceneline= "Fine by me... I'll climb it all on my own!"
 }
 }
 
-if scenetime=320
+if scenetime=400
 {
 with actor4 {sprite_index=spr_sofia_point image_index=3}
 	
@@ -54,7 +54,7 @@ cutscenename="SOFIA" cutsceneline= "Wait a minute, you dumb blonde!"
 }
 
 //////
-if scenetime=520
+if scenetime=570
 {
 with oControl
 {
@@ -66,10 +66,10 @@ cutscenename="VIVA" cutsceneline= "Wait nothing, I'm getting my diamond back no 
 
 if scenetime=860
 {
-sprite_index=spr_allblackscreen x=0 y=0 image_xscale=2 image_yscale=2	
+sprite_index=spr_allblackscreen x=0 y=0 image_xscale=3 image_yscale=2	
 
 with oControl {//Agonizing climb later...
-cutscenename="" cutsceneline= "..."
+cutscenename="" cutsceneline= ""
 //faceplant
 }
 }
@@ -166,41 +166,86 @@ cutscenename="SOFIA" cutsceneline= "That cave's looking quite sketchy... Perfect
 x=0
 y=0
 
+with actor1 {image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
+with actor2 {image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
+with actor3 {image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
+with actor4 {image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
+
+
 newscript=function()
 {
 scenetime+=1;
 
 if scenetime=clamp(scenetime,0,160)
-{with oControl {SceneX+=8; SceneX=clamp(SceneX,0,480) __view_set( e__VW.XView, 0, SceneX )}}
+{with oControl {SceneX+=8; SceneX=clamp(SceneX,0,720) __view_set( e__VW.XView, 0, SceneX )}}
 
-if scenetime=520
+if scenetime=280
+{scenetime=300
+with actor1 {image_speed=0 image_index=0 sprite_index=spr_viva_cutscene; hspeed=0}
+with actor2 {image_speed=0 image_index=1 sprite_index=spr_hina_cutscene; hspeed=0}
+with actor3 {image_speed=0 image_index=1 sprite_index=spr_bahati_cutscene; hspeed=0}
+with actor4 {image_speed=0 image_index=0 sprite_index=spr_sofia_talk3; hspeed=0}
+}
+
+if scenetime=320
 {
 with oControl {cutscenename="HINA" cutsceneline= "Looks super deep though... Wonder just how much."
 }
 }
 
-if scenetime=660
-{
+
+
+if scenetime=580
+{scenetime=880
+with actor1 {shadow=-1;  image_speed=0.25 sprite_index=spr_viva_move; hspeed=2 image_index=16}
+	
 with oControl {//Riding
-cutscenename="VIVA" cutsceneline= "Only one way to find-trips over rock and tumbles through cave-OUUUUUUUUUUUT!!!!!"
+cutscenename="VIVA" cutsceneline= "Only one way to find out."
 }
 }
 
-if scenetime=860
+if scenetime=900
+{scenetime=1200
+	
+with actor2 {image_index=0 sprite_index=spr_hina_wildtake; hspeed=0}
+with actor3 {image_index=0 sprite_index=spr_bahati_wildtake; hspeed=0}
+with actor4 {image_index=0 sprite_index=spr_sofia_wildtake; hspeed=0}
+	
+with actor1 {PlaySound(snd_hit) PlaySound(snd_viva9) spdZ=-4 image_speed=0 image_index=16 sprite_index=spr_viva_hit; hspeed=2
+	
+
+	
+newscript=function()
+	{if image_index<=18.5 image_index+=0.2
+	spdZ+=0.25 z+=spdZ
+	}
+	
+	}
+with oControl
 {
-with oControl {cutscenename="" cutsceneline= "Big tumble!"
+cutscenename="VIVA" cutsceneline= "OUUUUUUUUUUUT!!!!!"
 }
 }
 
-if scenetime=1060
+if scenetime=1360
+{
+with oControl {cutscenename="" cutsceneline= ""
+	quakeFXTime=10 PlaySound(snd_hitgroundheavy)
+}
+}
+
+if scenetime=1660
 {
 with oControl {
 cutscenename="VIVA" cutsceneline= "OW... my spine..." 
 }
 }
 
-if scenetime=1300
+if scenetime=1800
 {////They walk off
+	
+with actor3 {image_speed=0.25 sprite_index=spr_bahati_talk2; hspeed=0}
+	
 with oControl {cutscenename="BAHATI" cutsceneline= "Well, guess we better get down there and help her..." 
 //Nyoom and splash onto cave entrance
 //Flash Trickstar — 09/08/2024 11:40 PM
@@ -209,7 +254,7 @@ with oControl {cutscenename="BAHATI" cutsceneline= "Well, guess we better get do
 
 ///Splash
 
-if scenetime=2620
+if scenetime=2080
 {
 oControl.stageEndFX=1
 }
@@ -321,13 +366,13 @@ cutscenename="" cutsceneline=""}
 
 }
 
-if scenetime=11700
+if scenetime=11550
 {
 with oControl {//SMASH!
 cutscenename="VIVA, BAHATI & SOFIA" cutsceneline= "HINAAAAAAAAAAA!!!" }
 }
 
-if scenetime=11900
+if scenetime=11700
 {
 oControl.stageEndFX=1
 }

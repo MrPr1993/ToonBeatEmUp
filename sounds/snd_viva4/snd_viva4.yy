@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.452625,
+  "duration":0.45263037,
   "name":"snd_viva4",
   "parent":{
     "name":"Players",

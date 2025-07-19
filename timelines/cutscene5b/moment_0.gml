@@ -149,14 +149,14 @@ if scenetime=6000
 {layer_set_visible("SpaceBG",0) layer_set_visible("BTG1",1)
 sprite_index=mask_none
 
-with actor1 {x=48; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
-with actor2 {x=32; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
-with actor3 {x=52; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
+with actor1 {x=52; image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
+with actor2 {x=48; image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
+with actor3 {x=32; image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
 with actor4 {x=24; image_speed=0.25 sprite_index=spr_sofia_move; hspeed=2}
 
 with actor6 {x=400}
-with actor7 {x=520-32 sprite_index=spr_ufoscene_signs}
-with actor8 {x=640-32 sprite_index=spr_hotairballoon image_index=0}
+with actor7 {x=520-32 sprite_index=spr_ufoscene_signs image_xscale=1}
+with actor8 {x=640-32 sprite_index=spr_hotairballoon image_xscale=1 image_index=0}
 
 with oControl
 {
@@ -165,6 +165,8 @@ cutscenename="VIVA" cutsceneline= "Now.... Which way are we going here...?"}
 
 if scenetime=6120
 {
+	
+	
 with actor1 {image_speed=0 sprite_index=spr_viva_stand; hspeed=0}
 with actor2 {image_speed=0 sprite_index=spr_hina_stand; hspeed=0}
 with actor3 {image_speed=0 sprite_index=spr_bahati_stand; hspeed=0}
