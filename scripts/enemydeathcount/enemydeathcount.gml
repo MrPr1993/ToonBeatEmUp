@@ -8,9 +8,9 @@ global.UnlockEnemy[enemyID]+=1;
 global.EnemyDeath+=1;
 ini_write_real("EN", enemyID, global.UnlockEnemy[enemyID]);
 ini_write_real("ENB", 0, global.EnemyDeath);
-feats_check(35) feats_check(36) feats_check(37)
 ini_close()
 
+feats_check(35) feats_check(36) feats_check(37)
 	}
 
 }

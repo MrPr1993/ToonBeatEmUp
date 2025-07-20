@@ -32,7 +32,7 @@ global.P3Char=character
 if playerNO=4
 global.P4Char=character
 }
-canmove=0  key_charge=0
+canmove=0  key_charge=0 combo_stop()
 key_left=0 key_right=0 key_up=0 key_down=0
 }
 

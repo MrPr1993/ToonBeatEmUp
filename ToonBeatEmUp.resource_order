@@ -1087,6 +1087,7 @@
     {"name":"PlaySound","order":27,"path":"scripts/PlaySound/PlaySound.yy",},
     {"name":"PlaySoundNoStack","order":28,"path":"scripts/PlaySoundNoStack/PlaySoundNoStack.yy",},
     {"name":"projectile_create","order":57,"path":"scripts/projectile_create/projectile_create.yy",},
+    {"name":"score_settings","order":2,"path":"scripts/score_settings/score_settings.yy",},
     {"name":"scr_keytostring","order":90,"path":"scripts/scr_keytostring/scr_keytostring.yy",},
     {"name":"screen_size","order":13,"path":"scripts/screen_size/screen_size.yy",},
     {"name":"script45","order":58,"path":"scripts/script45/script45.yy",},

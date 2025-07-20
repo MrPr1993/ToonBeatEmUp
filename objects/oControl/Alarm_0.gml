@@ -15,7 +15,7 @@ if timedead=1
 with oPlayer
 {
 if hurt=0
-{
+{combo_stop()
 hp=0 canmove=0 hurt=1 HitType=1
 event_user(0)
 }

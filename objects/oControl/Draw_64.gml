@@ -1575,10 +1575,7 @@ featc=instance_create_depth(0,0,0,oFeatDisplay) with featc
 }
 }
 
-if global.DisplayFeats=1
-{
-if instance_exists(oFeatDisplay) with oFeatDisplay drawscript();
-}
+
 
 ///This will be used to play the cutscenes
 if room=rm_cutscene1 or room=rm_opening or (room=rm_newspaper and global.IsMovie=1)
@@ -1835,6 +1832,7 @@ draw_minigames()
 draw_cutscenes()
 
 
+
 if global.fpsMode=1
 {draw_set_font(global.scorefont) draw_set_halign(fa_right)
 draw_set_color(c_white)
@@ -1852,7 +1850,10 @@ draw_set_color(c_black) draw_set_alpha(0.5)
 }
 ////
 
-
+if global.DisplayFeats=1
+{
+if instance_exists(oFeatDisplay) with oFeatDisplay drawscript();
+}
 
 crt_fxset()
 

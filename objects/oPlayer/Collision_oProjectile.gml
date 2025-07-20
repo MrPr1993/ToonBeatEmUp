@@ -41,7 +41,7 @@ if (z-height)<(other.z) and (z)>(other.z-other.height)
 
 	}
 	
-if hpregister!=hp {oControl.perfecthp=0}
+if hpregister!=hp {oControl.perfecthp=0 combo_stop()}
 
 	shaketime=30
 thrownPlayer=-1 

@@ -38,7 +38,7 @@ cutDMG=other.isCut
 	if hp<=0
 	other.PlayerScore=points
 	else other.PlayerScore=pointshit
-	with other {hitSource.PlayerScore+=PlayerScore}
+	with other {hitSource.PlayerScore+=PlayerScore with hitSource combo_points()}
 	}
 	else
 	{
@@ -48,7 +48,7 @@ cutDMG=other.isCut
 	if hp<=0
 	other.PlayerScore=points
 	else other.PlayerScore=1
-	with other {hitSource.PlayerScore+=PlayerScore}
+	with other {hitSource.PlayerScore+=PlayerScore with hitSource combo_points()}
 	}
 	
 

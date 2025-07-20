@@ -747,6 +747,8 @@ targetID.playerFrom=playerNO
 	super+=0.25*canSuper targetID.hp-=0.04
 	if targetID.hp>=0
 	PlayerScore+=targetID.pointshit else PlayerScore+=targetID.points
+	combo_points()
+	
 	with targetID {event_user(11) ///Hit Enemy
 	shaketime=10 grabbed=1 PlaySound(snd_hit)
 
@@ -769,6 +771,7 @@ targetID.playerFrom=playerNO
 
 	if targetID.hp>=0
 	PlayerScore+=targetID.pointshit else PlayerScore+=targetID.points
+	combo_points()
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
@@ -858,6 +861,7 @@ targetID.playerFrom=playerNO
 
 	if targetID.hp<=0  PlayerScore+=targetID.points
 	else PlayerScore+=targetID.pointshit
+	combo_points()
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x
@@ -975,6 +979,7 @@ targetID.playerFrom=playerNO
 
 	if targetID.hp<=0  PlayerScore+=targetID.points
 	else PlayerScore+=targetID.pointshit
+	combo_points()
 
 	if !place_free(x+1*image_xscale,y)
 	targetID.x=x

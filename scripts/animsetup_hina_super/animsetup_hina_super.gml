@@ -143,6 +143,7 @@ if AnimFrame=8 PlaySoundNoStack(snd_flamelong)
 	 if hp<=0
 	other.PlayerScore+=points
 	else other.PlayerScore+=pointshit
+	with other combo_points()
 	HitType=5 event_user(0)
 	fire=instance_create_depth(x,y+1,depth,oFlashFX) fire.z=z fire.attachID=id
 	fire.isDepth=0 fire.depth=depth-1

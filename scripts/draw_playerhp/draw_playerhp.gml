@@ -313,7 +313,13 @@ draw_set_font(global.scorefont)
 draw_set_halign(fa_right)
 var lifecheck=clamp(PlayerLife,0,9); if global.Cheat[14] and global.NoCheat lifecheck="∞"
 draw_text(70,12,string_hash_to_newline(lifecheck)) //draw_text(39,0,7400)
-draw_text(70,2,string_hash_to_newline(round(PlayerScore))) //draw_text(39,0,7400)
+var _playerscore=string(round(PlayerScore));
+if comboScore!=0 { _playerscore="✰ "+string(round(comboScore/10))}
+draw_text(70,2,string_hash_to_newline(_playerscore)) //draw_text(39,0,7400)
+if comboScore!=0
+{draw_set_color(c_yellow) draw_set_alpha((comboScoreTime/160)*1)
+draw_text(70,2,string_hash_to_newline(_playerscore))
+}
 draw_set_halign(fa_left)
 }
 d3d_transform_set_identity()

@@ -118,7 +118,7 @@ hurt=1
 	{event_user(10) hp-=ThrowDamage hpscan() hud_show() ThrowDamage=0} //If land take damage
 	else {hp-=ThrowDamage ThrowDamage=0}
  
- if hpregister!=hp {oControl.perfecthp=0}
+ if object_index=oPlayer if hpregister!=hp {oControl.perfecthp=0 combo_stop()}
  
 	 recovery=10 
  

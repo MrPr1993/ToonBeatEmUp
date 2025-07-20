@@ -363,7 +363,9 @@ turnanim=1
 	///
 
 	comboHit=0
-
+	comboScore=0;
+    comboScoreTime=0;
+	
 	hit=0
 	hittype=0
 	character=0

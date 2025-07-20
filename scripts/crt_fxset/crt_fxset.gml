@@ -15,6 +15,8 @@ function crt_fxset(){
 	{surface_reset_target();
 application_surface_draw_enable(false);
 
+  gpu_set_alphatestenable(false)
+
 shader_set(shade)
 
 
@@ -24,7 +26,7 @@ shader_set(shade)
   shader_set_uniform_f(border, var_border);
   draw_clear_alpha(c_black, 0.0);
   
- draw_set_color(c_white)
+ draw_set_color(c_black)
 
 
 if global.ColorMode=9 {shader_set(shd_grayscale)
@@ -86,10 +88,12 @@ shader_set(shd_gbTV) /// One colo
 
 	}
 draw_set_color(c_black)
-draw_rectangle(-4,-4,344,244,false)	draw_set_color(c_white)
+  gpu_set_alphatestenable(true)
+//draw_rectangle(-4,-4,344,244,false)	draw_set_color(c_white)
 draw_surface_part_ext(new_surf, 0, 0, view_wview[0], view_hview[0], screenX, screenY, crt_surface_scale, crt_surface_scale, c_white, 1);
 
 shader_reset();
+
 
 //draw_sprite_ext(spr_screenfx,0,0,0,(sprite_get_width(spr_screenfx)/(window_get_width()-100))/16,(sprite_get_height(spr_screenfx)/window_get_height())/16,0,c_white,1)
 if TVfx=8

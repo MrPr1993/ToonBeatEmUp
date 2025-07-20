@@ -10,6 +10,11 @@ case 4: lifescore_check(1,playerNO,global.P4ScoreLife,0,1); break;
 
 if ContinueMode=0
 {
+	
+
+if comboScoreTime!=0 comboScoreTime-=1;	
+else if comboScore!=0 {PlayerScore+=comboScore comboScore=0}
+
 	if global.NoCheat
 	{
 if global.Cheat[10] super+=0.001

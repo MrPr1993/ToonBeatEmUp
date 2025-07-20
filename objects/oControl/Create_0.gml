@@ -5,6 +5,11 @@ roomfast=0
 carMode=0;
 triggerarcadesave=0;
 
+entag=0;
+//ini_write_real("EN", enemyID, global.UnlockEnemy[enemyID]);
+//ini_write_real("ENB", 0, global.EnemyDeath);
+
+
 /////Feats Check
 showtimehit=0;
 perfecthp=1;
@@ -12,6 +17,8 @@ perfectbosshp=1;
 nodeath=1;
 noshowtime=1;
 nofood=1;
+
+ComboTime=240;
 
 bonusstage=0;
 

@@ -1403,6 +1403,7 @@
     {"id":{"name":"PlaySound","path":"scripts/PlaySound/PlaySound.yy",},},
     {"id":{"name":"PlaySoundNoStack","path":"scripts/PlaySoundNoStack/PlaySoundNoStack.yy",},},
     {"id":{"name":"projectile_create","path":"scripts/projectile_create/projectile_create.yy",},},
+    {"id":{"name":"score_settings","path":"scripts/score_settings/score_settings.yy",},},
     {"id":{"name":"scr_keytostring","path":"scripts/scr_keytostring/scr_keytostring.yy",},},
     {"id":{"name":"screen_size","path":"scripts/screen_size/screen_size.yy",},},
     {"id":{"name":"script45","path":"scripts/script45/script45.yy",},},

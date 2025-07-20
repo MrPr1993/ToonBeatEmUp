@@ -103,6 +103,7 @@ global.MultiSuper=isPlayer
 	 if hp<=0
 	other.PlayerScore+=points
 	else other.PlayerScore+=pointshit
+	with other combo_points()
 	HitType=4 event_user(0)
 	}}
     

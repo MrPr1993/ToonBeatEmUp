@@ -109,6 +109,7 @@ oControl.PenemyhpD[playerFrom]=0
 
 	}else if item.food=0 spawnID=-1
 	hp+=item.hp*maxhp//extraheal
+	hpregister=hp;
 	if item.hp!=0 if global.Cheat[8] and global.NoCheat hp=maxhp
 	
 	if item.timeAdd!=0

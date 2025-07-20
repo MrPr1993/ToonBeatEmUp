@@ -1,3 +1,5 @@
+
+
 if hpD!=clamp(hpD,hp-0.05,hp+0.05)
 {
 if hpD>hp hpD-=0.025 else hpD+=0.025
@@ -23,6 +25,8 @@ my_pal_sprite=global.p4Pals
 
 if ContinueMode=0
 {
+if hurt and canmove=0 {if hpregister!=hp combo_stop()}	
+	
 if anim!=30 and anim!=31
 isGrabbed=0 else isGrabbed=1
 
