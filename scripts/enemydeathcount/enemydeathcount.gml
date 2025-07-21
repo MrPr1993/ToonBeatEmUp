@@ -3,12 +3,12 @@
 function enemydeathcount(){
 	if enemyID!=-1
 	{
-ini_open("GAMEDATA/hiscore.ini");
+//ini_open("GAMEDATA/hiscore.ini");
 global.UnlockEnemy[enemyID]+=1;
 global.EnemyDeath+=1;
-ini_write_real("EN", enemyID, global.UnlockEnemy[enemyID]);
-ini_write_real("ENB", 0, global.EnemyDeath);
-ini_close()
+//ini_write_real("EN", enemyID, global.UnlockEnemy[enemyID]);
+//ini_write_real("ENB", 0, global.EnemyDeath);
+//ini_close()
 
 feats_check(35) feats_check(36) feats_check(37)
 	}

@@ -314,10 +314,12 @@ draw_set_halign(fa_right)
 var lifecheck=clamp(PlayerLife,0,9); if global.Cheat[14] and global.NoCheat lifecheck="∞"
 draw_text(70,12,string_hash_to_newline(lifecheck)) //draw_text(39,0,7400)
 var _playerscore=string(round(PlayerScore));
-if comboScore!=0 { _playerscore="✰ "+string(round(comboScore/10))}
+if comboScore!=0 {draw_sprite(spr_hitfont,0,70,2) _playerscore=""+string(round((comboScore+10)/10))+"  "}
 draw_text(70,2,string_hash_to_newline(_playerscore)) //draw_text(39,0,7400)
 if comboScore!=0
-{draw_set_color(c_yellow) draw_set_alpha((comboScoreTime/160)*1)
+{
+draw_sprite_ext(spr_hitfont,0,70,2,1,1,0,c_yellow,(comboScoreTime/160)*1)
+draw_set_color(c_yellow) draw_set_alpha((comboScoreTime/160)*1)
 draw_text(70,2,string_hash_to_newline(_playerscore))
 }
 draw_set_halign(fa_left)

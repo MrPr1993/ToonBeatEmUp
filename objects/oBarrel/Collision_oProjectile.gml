@@ -10,8 +10,9 @@ if other.hitSource.object_index=oPlayer
 playerFrom=other.hitSource.playerNO
 with other.hitSource
 {if object_index=oPlayer
-if weaponAttack=1
-weaponLife-=1-1*global.Cheat[10]*global.NoCheat
+{
+comboScoreTime=oControl.ComboTime
+}
 }
 event_user(0)
 }

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+oControl.minigameroom=1
+
 if (p1Over=1 and p2Over=1 and p3Over=1 and p4Over=1)
 if stageClear=0
 {

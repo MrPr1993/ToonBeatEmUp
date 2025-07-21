@@ -3435,6 +3435,7 @@
     {"id":{"name":"spr_hitflash3","path":"sprites/spr_hitflash3/spr_hitflash3.yy",},},
     {"id":{"name":"spr_hitflash4","path":"sprites/spr_hitflash4/spr_hitflash4.yy",},},
     {"id":{"name":"spr_hitflash5","path":"sprites/spr_hitflash5/spr_hitflash5.yy",},},
+    {"id":{"name":"spr_hitfont","path":"sprites/spr_hitfont/spr_hitfont.yy",},},
     {"id":{"name":"spr_hitground","path":"sprites/spr_hitground/spr_hitground.yy",},},
     {"id":{"name":"spr_hitherface","path":"sprites/spr_hitherface/spr_hitherface.yy",},},
     {"id":{"name":"spr_hitherface2","path":"sprites/spr_hitherface2/spr_hitherface2.yy",},},

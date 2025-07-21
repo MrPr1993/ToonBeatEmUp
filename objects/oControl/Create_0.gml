@@ -27,6 +27,8 @@ playNO=1
 playerleader=0;
 playerAmount=0;
 
+minigameroom=0;
+
 camX=0;
 camY=0;
 

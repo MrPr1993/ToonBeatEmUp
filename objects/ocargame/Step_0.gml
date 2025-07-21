@@ -2,6 +2,8 @@
 // You can write your code in this editor
 oControl.nopleasewait=0;
 
+oControl.minigameroom=1
+
 if shaketime!=0
 {shaketime-=1
 if shakefrom=-1

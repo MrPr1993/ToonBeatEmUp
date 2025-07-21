@@ -11,7 +11,7 @@ gamesetting=0
 
 charwinner="PLAYER"
 
-
+ishiscore=0;
 
 drawscript=function()
 {

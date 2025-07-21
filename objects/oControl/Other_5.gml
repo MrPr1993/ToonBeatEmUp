@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-oControl.nopleasewait=0;
-oControl.minigameroom=1
+enemydata_save()

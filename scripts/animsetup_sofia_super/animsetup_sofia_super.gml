@@ -8,6 +8,8 @@ function animsetup_sofia_super() {
 	flashX=6
 	flashY=2
 	flashZ=48
+	
+comboScoreTime=oControl.ComboTime
 
 	if AnimFrame=0 PlaySound(snd_sofia13)
 

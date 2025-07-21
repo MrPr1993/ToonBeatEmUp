@@ -13,6 +13,7 @@ if enemiesdefeated>32 enemyset=choose(oEnemy1,oEnemy1B,oSneak,oFemBurglar,oFatBu
 if enemiesdefeated>52 enemyset=choose(oStrongBurg,oEnemy1,oEnemy1B,oSneak,oFemBurglar,oFatBurglar,oWrestler,oNinjaBun,oSamurai,oZombieMan,oZombieWoman,oSkeleton,oCobra,oCatman,oPainting,oAnimatedObject)
 
 
+
 if enemiesdefeated>12 if useonce=0 {useonce=1 enemyset=oBoss1a alarm[0]+=100}
 if enemiesdefeated>18 if useonce=1 {useonce=2 enemyset=oRobot alarm[0]+=100}
 if enemiesdefeated>24 if useonce=2 if !instance_exists(oBoss1a) {useonce=3 enemyset=oBoss1 alarm[0]+=200}

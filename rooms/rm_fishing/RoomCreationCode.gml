@@ -23,3 +23,4 @@ with oEnemySpawner
 oControl.stagePause=1
 oControl.showHUD=0
 oControl.disableTimer=1
+oControl.minigameroom=1

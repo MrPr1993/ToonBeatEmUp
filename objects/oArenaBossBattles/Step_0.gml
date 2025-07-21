@@ -2,6 +2,8 @@
 // You can write your code in this editor
 event_inherited()
 
+oControl.minigameroom=1
+
 if ArenaOver=0
 if oPlayer.hp<=0 ArenaOver=1
 

@@ -8,6 +8,8 @@ function animsetup_viva_super() {
 	flashX=6
 	flashY=2
 	flashZ=48
+
+comboScoreTime=oControl.ComboTime
 	
 var targeten=oEnemy1
 if global.MultiVS=1 targeten=oPlayer

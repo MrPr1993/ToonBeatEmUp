@@ -64,25 +64,25 @@ case 3: featname="ENCORE!" ///USE YOUR FIRST CONTINUE.
 if instance_exists(oPlayer) if oPlayer.continueScreen=2 setfeats=1 break;
 
 case 4: featname="SHOWTIME FINISH" ///DEFEAT A BOSS WITH A SHOWTIME ATTACK.
-if object_index=oContinueScreen if showtimehit if stageClear=1 setfeats=1 break;
+if object_index=oContinueScreen if showtimehit and minigameroom=0 if stageClear=1 setfeats=1 break;
 
 case 5: featname="ONE LONG NOTE"
-if object_index=oContinueScreen if stageClear=1 {if nodeath setfeats=1} break;
+if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if nodeath setfeats=1} break;
 
 case 6: featname="I'm Not Stage Frightened!" ///Beat any Stage without using Showtime once.
-if object_index=oContinueScreen if noshowtime if stageClear=1 setfeats=1
+if object_index=oContinueScreen if noshowtime and minigameroom=0 if stageClear=1 setfeats=1
 break;
 
 case 7: featname="Legendary Dancing Diva!" ///Beat arcade mode without dying
-if object_index=oContinueScreen if stageClear=1 if stageClear=1 and global.ArcadeDeath=0 and room=rm_stagefinal setfeats=1
+if object_index=oContinueScreen if stageClear=1 and minigameroom=0 if stageClear=1 and global.ArcadeDeath=0 and room=rm_stagefinal setfeats=1
 break;
 
 case 8: featname="Don't Touch the Diva" ///Beat any stage without taking damage
-if object_index=oContinueScreen if stageClear=1 {if perfecthp	setfeats=1}
+if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if perfecthp	setfeats=1}
 break;
 
 case 9: featname="Sorry, I'm on a Diet..." ///Beat any stage without taking any food
-if object_index=oContinueScreen if stageClear=1 {if nofood setfeats=1}
+if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if nofood setfeats=1}
 break;
 
 case 12: featname="WOLF WHISPERER" ///Defeat Lady Wolf without taking any damage
@@ -194,15 +194,15 @@ if object_index=oContinueScreen if room=rm_stagefinal if stageClear=1
 break;
 
 case 35: featname="ENEMY KILL" ///
-if global.EnemyDeath>=100 setfeats=1;
+if global.EnemyDeath>=100 {setfeats=1; if global.Feats[35]!=1 enemydata_save()}
 break;
 
 case 36: featname="ENEMY KILL" ///
-if global.EnemyDeath>=500 setfeats=1;
+if global.EnemyDeath>=500 {setfeats=1; if global.Feats[36]!=1 enemydata_save()}
 break;
 
 case 37: featname="ENEMY KILL" ///
-if global.EnemyDeath>=1000 setfeats=1;
+if global.EnemyDeath>=1000 {setfeats=1; if global.Feats[37]!=1 enemydata_save()}
 break;
 
 case 38: featname="BUY ALL ITEMS" ///
@@ -234,6 +234,10 @@ and global.Gallery[12] and global.Gallery[13] and global.Gallery[14] and global.
 break;
 
 
+
+case 46:
+if object_index=oContinueScreen if isbossbattle=1 if stageClear=1 setfeats=1
+break;
 
 case 49: featname="It's Bad For You!"
 if object_index=oPlayer {if sprite_index=spr_viva_cough setfeats=1}

@@ -10,6 +10,9 @@ if instance_exists(oFeatDisplay) seefeats=1;
 
 check1up=1
 
+isbossbattle=0;
+if instance_exists(oArenaBossBattles) isbossbattle=1;
+
 shade=shd_television
 
 isStageClear=0
@@ -33,10 +36,12 @@ nofood=oControl.nofood
 showtimehit=oControl.showtimehit
 nodeath=oControl.nodeath
 perfecthp=oControl.perfecthp
+minigameroom=oControl.minigameroom;
 }
 finalStage=0
 finalStageHi=0
 finalStageMono=1
+
 
 TVfx=oControl.TVfx
 stageClear=0

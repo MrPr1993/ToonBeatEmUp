@@ -15,6 +15,8 @@ global.MultiSuper=isPlayer
 	flashX=6
 	flashY=2
 	flashZ=48
+	
+comboScoreTime=oControl.ComboTime
 
 	invincible=1
 
