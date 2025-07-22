@@ -108,7 +108,12 @@ global.Gallery[14]=ini_read_real("SHOPG","14",0)
 global.Gallery[15]=ini_read_real("SHOPG","15",0)
 global.Gallery[16]=ini_read_real("SHOPG","16",0)
 
-///Cheats
+///Training
+global.TrainingClear[0]=ini_read_real("Tdata", "0", 0);
+global.TrainingClear[1]=ini_read_real("Tdata", "1", 0);
+global.TrainingClear[2]=ini_read_real("Tdata", "2", 0);
+global.TrainingClear[3]=ini_read_real("Tdata", "3", 0);
+global.TrainingClear[4]=ini_read_real("Tdata", "4", 0);
 
 
 ini_close()

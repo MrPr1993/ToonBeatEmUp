@@ -111,6 +111,11 @@ ini_write_real("SHOPG", "14", global.Gallery[14])
 ini_write_real("SHOPG", "15", global.Gallery[15])
 ini_write_real("SHOPG", "16", global.Gallery[16])
 
+ini_write_real("Tdata", "0", global.TrainingClear[0])
+ini_write_real("Tdata", "1", global.TrainingClear[1])
+ini_write_real("Tdata", "2", global.TrainingClear[2])
+ini_write_real("Tdata", "3", global.TrainingClear[3])
+ini_write_real("Tdata", "4", global.TrainingClear[4])
 
 ini_close()
 }

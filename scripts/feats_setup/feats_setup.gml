@@ -27,7 +27,7 @@ var featname=""
 
 if _no=-1
 {
-for (var i=0; i<100; i++)
+for (var i=0; i<60; i++)
 {setfeats=0 checkfeat=feat_data(i); if checkfeat setfeats=1
 if global.Feats[i]!=1
 {if setfeats {global.SaveFeat=1 global.Feats[i]=1 feat_create(i)}}
@@ -67,7 +67,7 @@ case 4: featname="SHOWTIME FINISH" ///DEFEAT A BOSS WITH A SHOWTIME ATTACK.
 if object_index=oContinueScreen if showtimehit and minigameroom=0 if stageClear=1 setfeats=1 break;
 
 case 5: featname="ONE LONG NOTE"
-if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if nodeath setfeats=1} break;
+if object_index=oContinueScreen if stageClear=1 and minigameroom=0 and global.Difficulty>=2 {if nodeath setfeats=1} break;
 
 case 6: featname="I'm Not Stage Frightened!" ///Beat any Stage without using Showtime once.
 if object_index=oContinueScreen if noshowtime and minigameroom=0 if stageClear=1 setfeats=1
@@ -78,11 +78,21 @@ if object_index=oContinueScreen if stageClear=1 and minigameroom=0 if stageClear
 break;
 
 case 8: featname="Don't Touch the Diva" ///Beat any stage without taking damage
-if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if perfecthp	setfeats=1}
+if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if perfecthp setfeats=1}
 break;
 
 case 9: featname="Sorry, I'm on a Diet..." ///Beat any stage without taking any food
 if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if nofood setfeats=1}
+break;
+
+case 10: featname="Went off key" ///10% health
+if object_index=oContinueScreen
+if hppercent1<=10 or hppercent2<=10 or hppercent3<=10 or hppercent4<=10
+{if nodeath setfeats=1} break;
+
+case 11: featname="trainer" ///training
+if global.TrainingClear[0]=1 and global.TrainingClear[1]=1 and global.TrainingClear[2]=1
+and global.TrainingClear[3]=1 and global.TrainingClear[4]=1 setfeats=1;
 break;
 
 case 12: featname="WOLF WHISPERER" ///Defeat Lady Wolf without taking any damage
@@ -189,6 +199,27 @@ break;
 
 case 29: featname="FINAL" ///Defeat Lady Wolf without taking any damage
 if object_index=oContinueScreen if room=rm_stagefinal if stageClear=1
+{//if perfecthp
+	setfeats=1}
+break;
+
+case 30: featname="FINAL" ///Clear arcade mode
+if object_index=oContinueScreen if room=rm_stagefinal if stageClear=1
+{//if perfecthp
+	setfeats=1}
+break;
+
+case 31: featname="HARDMODE" ///Clear arcade mode on very hard
+if object_index=oContinueScreen if room=rm_stagefinal and global.Difficulty>=4 if stageClear=1
+{//if perfecthp
+	setfeats=1}
+break;
+
+case 32: featname="UNLOCK ALL STAGES" ///Clear arcade mode on very hard
+if object_index=oContinueScreen 
+if global.UnlockStage[1] and global.UnlockStage[2] and global.UnlockStage[3] and global.UnlockStage[4] and global.UnlockStage[5] and global.UnlockStage[6] and global.UnlockStage[7] and global.UnlockStage[8] and global.UnlockStage[9] and global.UnlockStage[10]
+and global.UnlockStage[11] and global.UnlockStage[12] and global.UnlockStage[13] and global.UnlockStage[14] and global.UnlockStage[15] and global.UnlockStage[16] and global.UnlockStage[17] and global.UnlockStage[18]
+if stageClear=1
 {//if perfecthp
 	setfeats=1}
 break;

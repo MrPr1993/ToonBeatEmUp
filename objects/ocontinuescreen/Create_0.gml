@@ -5,6 +5,8 @@
 // You can write your code in this editor
 filmY=0 mapXFilm=0
 
+
+
 seefeats=0;
 if instance_exists(oFeatDisplay) seefeats=1;
 
@@ -173,8 +175,19 @@ var cheatp16=999999*global.Cheat[16]
 cheatpenalty+=cheatp1+cheatp2+cheatp3+cheatp4+cheatp5+cheatp6+cheatp7+cheatp8+cheatp9+cheatp10+cheatp11+cheatp12+cheatp13+cheatp14+cheatp15+cheatp16
 
 
+hppercent1=0;
+hppercent2=0;
+hppercent3=0;
+hppercent4=0;
 
-
+if instance_exists(oPlayer) with oPlayer
+if dead=0
+{
+if playerNO=1 oContinueScreen.hppercent1=(hp/maxhp)*100
+if playerNO=2 oContinueScreen.hppercent2=(hp/maxhp)*100
+if playerNO=3 oContinueScreen.hppercent3=(hp/maxhp)*100
+if playerNO=4 oContinueScreen.hppercent4=(hp/maxhp)*100
+}
 
 if instance_exists(oControl.p1)
 {

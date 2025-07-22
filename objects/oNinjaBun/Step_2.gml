@@ -13,6 +13,38 @@ overwriteAttack5=1
 
 if DeathCryOnce=0 hasBounce=0 else hasBounce=1
 
+///Counter
+if current_pal!=4 counterMove=-1; else counterMove=9915
+
+if anim=9915
+{
+dust_make_ext(x,y+1,z,0,0,0,spr_smoket,0)
+
+part=instance_create_depth(x,y,depth,oDisappearPart)
+part.z=z-48 part.image_angle=random(360) part.sprite_index=spr_ninjabun_log
+part.image_xscale=image_xscale part.spdZ=-2;
+
+if targetEnemy.x>x image_xscale=-1 else image_xscale=1
+if place_free(targetEnemy.x+32,y) and image_xscale=-1 x=targetEnemy.x+32
+if place_free(targetEnemy.x-32,y) and image_xscale=1 x=targetEnemy.x-32
+
+
+
+anim=9916 ground=0 z=-480 
+}
+
+if anim=9916
+{
+z+=8
+if AnimFrame=0 sprite_index=spr_ninjabun_airkick atkcol_set(28,0,10,1.45,1,29) MoveType=1
+frame_set(0,0,0.05)
+if AnimFrame=1 {image_index=1 sentflying=0 PlaySoundNoStack(snd_swing) ground=0}
+frame_set(1,1,0.1)
+if AnimFrame>1.5 if ground {AnimFrame+=0.1 sprite_index=ThrownSpr image_index=10 sentflying=0 atk=0} else {sprite_index=spr_ninjabun_airkick sentflying=0 atk=1}
+
+if AnimFrame>3 and ground {canmove=1}
+}
+
 	///Attacks
 	if anim=10 ///Attack Stand
 	{AnimFrame=0 canmove=0 specialcheck0=0
@@ -157,6 +189,8 @@ frame_set(3,3,0.25)
 frame_set(4,4,0.25)
 frame_set(5,5,0.25) if AnimFrame=6 {AnimFrame=0 canmove=1 atk=0 anim=0}
 }
+
+
 
 /////Grab Charge
 if anim=9912
@@ -402,6 +436,7 @@ frame_set(3,3,0.1)
 frame_set(4,4,0.1) 
 frame_set(5,4,0.25) if AnimFrame>5 {AnimFrame=3 anim=11}
 }
+
 
 if anim=65 ///Air Kick
 {if AnimFrame=0 sprite_index=spr_ninjabun_airkick atkcol_set(28,0,10,1.45,1,29) MoveType=1

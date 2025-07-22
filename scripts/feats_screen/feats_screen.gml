@@ -37,14 +37,14 @@ var _maxfeat=52;//100
 if key_up_pressed {PlaySound(snd_select) if featsel=1 {featY=lerp(featY,-48*_maxfeat,1) featsel=_maxfeat} else featsel-=1}
 if -key_down_pressed {PlaySound(snd_select) if featsel=_maxfeat {featY=lerp(featY,0,1) featsel=1} else featsel+=1}
 
-draw_feat(1,spr_featicon,1,c_white,"DIVA'S DEBUT","CLEAR STAGE 1")
-draw_feat(2,spr_featicon,2,c_white,"MUST PET!","PET THE FIRST ANIMAL IN ANY STAGE.")
-draw_feat(3,spr_featicon,3,c_white,"ENCORE!","USE YOUR FIRST CONTINUE.")
-draw_feat(4,spr_featicon,4,c_white,"SHOWTIME FINISH","DEFEAT A BOSS WITH A SHOWTIME ATTACK.")
-draw_feat(5,spr_featicon,5,c_white,"One long note","Beat any stage WITHOUT DYING.")
-draw_feat(6,spr_featicon,6,c_white,"I'm Not Stage Frightened!","Beat any Stage without using Showtime once.")
+draw_feat(1,spr_featicon,1,c_white,"DIVA'S DEBUT","CLEAR STAGE 1") //DONE
+draw_feat(2,spr_featicon,2,c_white,"MUST PET!","PET THE FIRST ANIMAL IN ANY STAGE.") //DONE
+draw_feat(3,spr_featicon,3,c_white,"ENCORE!","USE YOUR FIRST CONTINUE.") //DONE
+draw_feat(4,spr_featicon,4,c_white,"SHOWTIME FINISH","DEFEAT A BOSS WITH A SHOWTIME ATTACK.") //DONE
+draw_feat(5,spr_featicon,5,c_white,"One long note","Beat any stage WITHOUT DYING.") //DONE
+draw_feat(6,spr_featicon,6,c_white,"I'm Not Stage Frightened!","Beat any Stage without using Showtime once.") //DONE
 draw_feat(7,spr_featicon,7,c_white,"Legendary Dancing Diva!","Beat Arcade Mode WITHOUT LOSING A SINGLE LIFE/ (Normal difficulty or higher only)")
-draw_feat(8,spr_featicon,8,c_white,"Don't Touch the Diva","Beat any stage WITHOUT TAKING DAMAGE.")
+draw_feat(8,spr_featicon,8,c_white,"Don't Touch the Diva","Beat any stage WITHOUT TAKING DAMAGE.") //DONE
 draw_feat(9,spr_featicon,9,c_white,"Sorry, I'm on a Diet...","Beat any stage without Picking up any Food.")
 draw_feat(10,spr_featicon,10,c_white,"Almost Went Off Key","Beat any Stage with 10% of Your health left WITHOUT DYING.")
 draw_feat(11,spr_featicon,11,c_white,"Performer Practice","Clear training mode with all 4 Divas.")
@@ -74,9 +74,9 @@ draw_feat(34,spr_featicon,34,c_white,"Diva Detective.","Find all Stage Secrets."
 draw_feat(35,spr_featicon,35,c_white,"Goon Bruiser.","Defeat 100 enemies.\n"+string(clamp(global.EnemyDeath,0,100))+"/100")
 draw_feat(36,spr_featicon,36,c_white,"Goon Crusher.","Defeat 500 enemies.\n"+string(clamp(global.EnemyDeath,0,500))+"/500")
 draw_feat(37,spr_featicon,37,c_white,"Goon Slayer.","Defeat 1000 enemies.\n"+string(clamp(global.EnemyDeath,0,1000))+"/1000")
-draw_feat(38,spr_featicon,38,c_white,"Shopping List","Buy out all of the Extras.")
-draw_feat(39,spr_featicon,39,c_white,"Big Cheater","Buy out all of the Cheats.")
-draw_feat(40,spr_featicon,40,c_white,"Art Collector","Buy out all of the Gallery.")
+draw_feat(38,spr_featicon,38,c_white,"Shopping List","Buy out all of the Extras.") ///V
+draw_feat(39,spr_featicon,39,c_white,"Big Cheater","Buy out all of the Cheats.") ///V
+draw_feat(40,spr_featicon,40,c_white,"Art Collector","Buy out all of the Gallery.") //V
 draw_feat(41,spr_featicon,41,c_white,"Missed The Ride","Get the Bad Ending.")
 draw_feat(42,spr_featicon,42,c_white,"All Written","Complete the Profile & Info")
 draw_feat(43,spr_featicon,43,c_white,"Filmography","Unlock All Cutscenes")

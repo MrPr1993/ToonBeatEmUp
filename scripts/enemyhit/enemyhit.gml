@@ -1,5 +1,15 @@
 function enemyhit() {
 
+if counterBuffer=0
+{
+if counterMove!=-1 if counterNum=0
+{counterBuffer=320;
+AnimFrame=0 anim=counterMove 
+counterNum=3; recovery=2;
+exit;
+}
+}
+
 
 	if canBlock=0
 	{if other.HitQuake!=0 oControl.quakeFXTime=other.HitQuake
@@ -66,6 +76,8 @@ cutDMG=other.isCut
 	if HitReactionScript!=-1
 	script_execute(HitReactionScript)
 	}
+	
+	
 
 	shaketime=30
 

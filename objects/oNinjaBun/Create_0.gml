@@ -1,5 +1,7 @@
 enemy_data()
 
+counterMove=9915
+
 name="USAGI"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=15

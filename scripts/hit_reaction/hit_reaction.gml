@@ -4,6 +4,7 @@ function hit_reaction() {
 	if act=1
 	{
 
+if damageFall>=0 counterNum-=1 else counterNum=3;
 
 if targetID!=-1
 {
@@ -349,6 +350,8 @@ wobbleY=0.9
 	
 	}
 
+if !ground counterNum=3;
 
 if isBoss and hp<=0 {oControl.showtimehit=showtimehit} showtimehit=0
+
 }

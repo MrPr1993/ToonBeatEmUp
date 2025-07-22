@@ -5,6 +5,10 @@ function character_setup() {
 	controller_setup()
 	
 	colorshade_setup()
+	
+counterMove=-1;
+counterNum=3;
+counterBuffer=0;
 
 playerNO=0
 

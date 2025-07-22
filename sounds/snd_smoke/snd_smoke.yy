@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.659025,
+  "duration":0.65902495,
   "name":"snd_smoke",
   "parent":{
     "name":"Items",

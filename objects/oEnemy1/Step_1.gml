@@ -1,3 +1,5 @@
+if counterBuffer!=0 counterBuffer-=1;
+
 if image_xscale=1
 {
 if sentflying<0

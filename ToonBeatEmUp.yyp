@@ -3720,6 +3720,7 @@
     {"id":{"name":"spr_ninjabun_idle1","path":"sprites/spr_ninjabun_idle1/spr_ninjabun_idle1.yy",},},
     {"id":{"name":"spr_ninjabun_jump","path":"sprites/spr_ninjabun_jump/spr_ninjabun_jump.yy",},},
     {"id":{"name":"spr_ninjabun_kick","path":"sprites/spr_ninjabun_kick/spr_ninjabun_kick.yy",},},
+    {"id":{"name":"spr_ninjabun_log","path":"sprites/spr_ninjabun_log/spr_ninjabun_log.yy",},},
     {"id":{"name":"spr_ninjabun_move","path":"sprites/spr_ninjabun_move/spr_ninjabun_move.yy",},},
     {"id":{"name":"spr_ninjabun_panic","path":"sprites/spr_ninjabun_panic/spr_ninjabun_panic.yy",},},
     {"id":{"name":"spr_ninjabun_run","path":"sprites/spr_ninjabun_run/spr_ninjabun_run.yy",},},

@@ -260,7 +260,11 @@ trainingdetect=function() {	 if oPlayer.anim=50 detectsuper=4 else detectsuper-=
 } break;
 
 case 21: 
-{with oPlayer canControl=0 alarm[0]=160
+{with oPlayer {canControl=0
+	
+	global.TrainingClear[character+1]=1
+	feats_check(11)
+	} alarm[0]=160
 trainingdetect=function() {	 
 trainingreact(1) 
 tutorialtext="AND THAT IS IT FOR THE TRAINING."}

@@ -3338,6 +3338,7 @@
     {"name":"spr_ninjabun_idle1","order":17,"path":"sprites/spr_ninjabun_idle1/spr_ninjabun_idle1.yy",},
     {"name":"spr_ninjabun_jump","order":18,"path":"sprites/spr_ninjabun_jump/spr_ninjabun_jump.yy",},
     {"name":"spr_ninjabun_kick","order":19,"path":"sprites/spr_ninjabun_kick/spr_ninjabun_kick.yy",},
+    {"name":"spr_ninjabun_log","order":35,"path":"sprites/spr_ninjabun_log/spr_ninjabun_log.yy",},
     {"name":"spr_ninjabun_move","order":20,"path":"sprites/spr_ninjabun_move/spr_ninjabun_move.yy",},
     {"name":"spr_ninjabun_panic","order":33,"path":"sprites/spr_ninjabun_panic/spr_ninjabun_panic.yy",},
     {"name":"spr_ninjabun_run","order":21,"path":"sprites/spr_ninjabun_run/spr_ninjabun_run.yy",},

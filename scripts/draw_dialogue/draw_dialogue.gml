@@ -87,7 +87,7 @@ function gamedialogue_play(_text,_duration)
 {
 with oControl
 {
-TextDialogue=_text
-TextDuration=round(_duration)*60;
+//TextDialogue=_text
+//TextDuration=round(_duration)*60;
 }
 }

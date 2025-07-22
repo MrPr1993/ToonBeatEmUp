@@ -1,11 +1,14 @@
 room_speed=60
 
+if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
+
 mirrorMode=0;
 roomfast=0
 carMode=0;
 triggerarcadesave=0;
-
 entag=0;
+allstagemode=0;
+
 //ini_write_real("EN", enemyID, global.UnlockEnemy[enemyID]);
 //ini_write_real("ENB", 0, global.EnemyDeath);
 
@@ -199,6 +202,7 @@ global.MultiSuper=1 ///players be affected by the super move during multi
 global.HiScoreSee=0
 
 global.TrainingRoom=0
+global.TrainingClear[4]=0;
 
 global.PrevStage1=0
 global.PrevStage2=0
@@ -261,6 +265,8 @@ global.Difficulty=2
 
 global.enemytest=0
 global.enemytestB=0
+
+global.AllStageMode=0;
 
 global.P1Life=global.LifeStart
 global.P2Life=global.LifeStart
