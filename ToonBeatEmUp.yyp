@@ -3128,6 +3128,7 @@
     {"id":{"name":"spr_franki_wavefx","path":"sprites/spr_franki_wavefx/spr_franki_wavefx.yy",},},
     {"id":{"name":"spr_fries","path":"sprites/spr_fries/spr_fries.yy",},},
     {"id":{"name":"spr_frog","path":"sprites/spr_frog/spr_frog.yy",},},
+    {"id":{"name":"spr_frogpet","path":"sprites/spr_frogpet/spr_frogpet.yy",},},
     {"id":{"name":"spr_fullmoon","path":"sprites/spr_fullmoon/spr_fullmoon.yy",},},
     {"id":{"name":"spr_galleryicon","path":"sprites/spr_galleryicon/spr_galleryicon.yy",},},
     {"id":{"name":"spr_galleryimg1","path":"sprites/spr_galleryimg1/spr_galleryimg1.yy",},},

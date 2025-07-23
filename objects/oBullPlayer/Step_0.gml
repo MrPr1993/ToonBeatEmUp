@@ -83,7 +83,7 @@ breakresult=0
 		
 		altresult2Text="DISTANCE" altresult2=oBullGame.rundist
 
-if win=1 {altresult2Text="PERFECT" altresult2=10000
+if win=1 {altresult2Text="PERFECT" altresult2=10000  with oControl minigameIDwin=1;
 if AnimFrame=0 {ground=0 spdZ=-8 AnimFrame=1}	
 if ground=0 sprite_index=jumpSpr
 if spdZ>=0 {sprite_index=hangSpr spdZ=0}

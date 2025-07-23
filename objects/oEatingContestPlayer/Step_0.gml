@@ -77,11 +77,16 @@ if foodhp<oEatingContestGame.p1.foodhp
 and foodhp<oEatingContestGame.p3.foodhp 
 and foodhp<oEatingContestGame.p2.foodhp win=1
 
+
+
 }
 
 var haslose=0;
 
+if win with oControl minigameIDwin=1;
+
 if win=0 haslose=1;
+
 
 frame_set(0,6,0.1)	
 frame_set(1,7+2*haslose,0.1)	

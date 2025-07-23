@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 oControl.minigameroom=1
+ with oControl minigameID=5;
 
 bulltime+=1 if bulltime=60 {oControl.quakeFXTime=120 PlaySound(snd_bull)}
 

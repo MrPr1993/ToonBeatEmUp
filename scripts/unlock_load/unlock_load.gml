@@ -116,5 +116,19 @@ global.TrainingClear[3]=ini_read_real("Tdata", "3", 0);
 global.TrainingClear[4]=ini_read_real("Tdata", "4", 0);
 
 
+global.MinigameWin[1]=ini_read_real("Mdata", "1", 0);
+global.MinigameWin[2]=ini_read_real("Mdata", "2", 0);
+global.MinigameWin[3]=ini_read_real("Mdata", "3", 0);
+global.MinigameWin[4]=ini_read_real("Mdata", "4", 0);
+global.MinigameWin[5]=ini_read_real("Mdata", "5", 0);
+global.MinigameWin[6]=ini_read_real("Mdata", "6", 0);
+
+var _rep=1;
+repeat(30)
+{
+global.UnlockCutscene=ini_read_real("UCdata", ""+string(_rep), 0);
+_rep+=1;
+}
+
 ini_close()
 }

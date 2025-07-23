@@ -86,7 +86,7 @@ if AnimFrame=3
 	{ //snd_viva13
  oSingGame.resulttext1="BONUS"
 
-{PlaySound(snd_break) 
+{PlaySound(snd_break)  with oControl minigameIDwin=1;
 			altresult2Text="PERFECT" altresult2=10000
 windowon=0
 		//	with oFlashFX isDepth=0 oFlashFX.depth=depth-1

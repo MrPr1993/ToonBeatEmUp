@@ -159,11 +159,11 @@ case "METR-A": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=115 break;
 
 ///Cowboy
 case "BUCK": enemy_modify(spr_ninjapal,6,_name,0,0.5,0.5) enemyID=131 break;
-case "PESO": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=132 break;
+case "PESO": enemy_modify(spr_robotpal,3,_name,0,0.8,0.8) enemyID=132 break; ///Unused
 
 ///Knight
 case "DANIEL": enemy_modify(spr_robotpal,1,_name,0,0.8,0.8) enemyID=134 break;
-case "ARTIE": enemy_modify(spr_robotpal,2,_name,0,0.8,0.8) enemyID=135 break;
+case "ARTIE": enemy_modify(spr_robotpal,2,_name,0,0.8,0.8) enemyID=135 break; ///Unused
 
 
 ////////Boss only

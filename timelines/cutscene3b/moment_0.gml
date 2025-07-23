@@ -3,6 +3,8 @@ if cutscenePlaying=0
 {
 instance_create_depth(-999,-999,-1,oTextBox)
 
+global.UnlockCutscene[6]=1 feats_check(43);
+
 with oControl
 {
 CDtextT="WHICH DOOR\nWILL YOU GO?"

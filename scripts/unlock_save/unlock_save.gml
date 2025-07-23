@@ -117,5 +117,19 @@ ini_write_real("Tdata", "2", global.TrainingClear[2])
 ini_write_real("Tdata", "3", global.TrainingClear[3])
 ini_write_real("Tdata", "4", global.TrainingClear[4])
 
+ini_write_real("Mdata", "1", global.MinigameWin[1])
+ini_write_real("Mdata", "2", global.MinigameWin[2])
+ini_write_real("Mdata", "3", global.MinigameWin[3])
+ini_write_real("Mdata", "4", global.MinigameWin[4])
+ini_write_real("Mdata", "5", global.MinigameWin[5])
+ini_write_real("Mdata", "6", global.MinigameWin[6])
+
+var _rep=1;
+repeat(30)
+{
+ini_write_real("UCdata", ""+string(_rep), global.UnlockCutscene[_rep])
+_rep+=1;
+}
+
 ini_close()
 }

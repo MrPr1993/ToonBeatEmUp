@@ -43,47 +43,47 @@ draw_feat(3,spr_featicon,3,c_white,"ENCORE!","USE YOUR FIRST CONTINUE.") //DONE
 draw_feat(4,spr_featicon,4,c_white,"SHOWTIME FINISH","DEFEAT A BOSS WITH A SHOWTIME ATTACK.") //DONE
 draw_feat(5,spr_featicon,5,c_white,"One long note","Beat any stage WITHOUT DYING.") //DONE
 draw_feat(6,spr_featicon,6,c_white,"I'm Not Stage Frightened!","Beat any Stage without using Showtime once.") //DONE
-draw_feat(7,spr_featicon,7,c_white,"Legendary Dancing Diva!","Beat Arcade Mode WITHOUT LOSING A SINGLE LIFE/ (Normal difficulty or higher only)")
+draw_feat(7,spr_featicon,7,c_white,"Legendary Dancing Diva!","Beat Arcade Mode WITHOUT LOSING A SINGLE LIFE/ (Normal difficulty or higher only)") ///DONE
 draw_feat(8,spr_featicon,8,c_white,"Don't Touch the Diva","Beat any stage WITHOUT TAKING DAMAGE.") //DONE
-draw_feat(9,spr_featicon,9,c_white,"Sorry, I'm on a Diet...","Beat any stage without Picking up any Food.")
+draw_feat(9,spr_featicon,9,c_white,"Sorry, I'm on a Diet...","Beat any stage without Picking up any Food.") ///DONE
 draw_feat(10,spr_featicon,10,c_white,"Almost Went Off Key","Beat any Stage with 10% of Your health left WITHOUT DYING.")
-draw_feat(11,spr_featicon,11,c_white,"Performer Practice","Clear training mode with all 4 Divas.")
-draw_feat(12,spr_featicon,12,c_white,"Wolf Whisperer","Defeat Lady Wolf.")
-draw_feat(13,spr_featicon,13,c_white,"Singing Fat Lady","Defeat Harpilda.")
-draw_feat(14,spr_featicon,14,c_white,"We Can Do It","Defeat Captain Rosy.")
-draw_feat(15,spr_featicon,15,c_white,"Double Header","Defeat Dolores.")
-draw_feat(16,spr_featicon,16,c_white,"Off With Her Head","Defeat Annamari.")
-draw_feat(17,spr_featicon,17,c_white,"Divine Punishment","Defeat Hathor.")
-draw_feat(18,spr_featicon,18,c_white,"Oni Jackpot","Defeat The Oni Sisters.")
-draw_feat(19,spr_featicon,19,c_white,"Swamped Out","Defeat Kiandra.")
-draw_feat(20,spr_featicon,20,c_white,"Daffy Amuck","Defeat Dixie.")
-draw_feat(21,spr_featicon,21,c_white,"Beached Witch","Defeat Circe.")
-draw_feat(22,spr_featicon,22,c_white,"Spaced Out","Defeat Kuinn.")
-draw_feat(23,spr_featicon,23,c_white,"Watered Prince","Defeat Prince.")
-draw_feat(24,spr_featicon,24,c_white,"Wished Beating","Defeat Haifa.")
-draw_feat(25,spr_featicon,25,c_white,"All Shattered","Defeat Mirrosa.")
-draw_feat(26,spr_featicon,26,c_white,"Royally Planted","Defeat Synthesa.")
-draw_feat(27,spr_featicon,27,c_white,"Mean To Dragon","Defeat Fiona.")
-draw_feat(28,spr_featicon,28,c_white,"Science Project","Defeat Dr.Fran.")
-draw_feat(29,spr_featicon,29,c_white,"Dastardly Bite","Defeat Van Bad.")
-draw_feat(30,spr_featicon,30,c_white,"That's All Folks!","Clear Arcade Mode for the First Time.")
-draw_feat(31,spr_featicon,31,c_white,"Best In Show","Clear Arcade Mode on Very Hard.")
-draw_feat(32,spr_featicon,32,c_white,"World Mapper","Clear all stages in the game.")
+draw_feat(11,spr_featicon,11,c_white,"Performer Practice","Clear training mode with all 4 Divas.") ///DONE
+draw_feat(12,spr_featicon,12,c_white,"Wolf Whisperer","Defeat Lady Wolf.") ///DONE
+draw_feat(13,spr_featicon,13,c_white,"Singing Fat Lady","Defeat Harpilda.") ///DONE
+draw_feat(14,spr_featicon,14,c_white,"We Can Do It","Defeat Captain Rosy.") ///DONE
+draw_feat(15,spr_featicon,15,c_white,"Double Header","Defeat Dolores.") ///DONE
+draw_feat(16,spr_featicon,16,c_white,"Off With Her Head","Defeat Annamari.") ///DONE
+draw_feat(17,spr_featicon,17,c_white,"Divine Punishment","Defeat Hathor.") ///DONE
+draw_feat(18,spr_featicon,18,c_white,"Oni Jackpot","Defeat The Oni Sisters.") ///DONE
+draw_feat(19,spr_featicon,19,c_white,"Swamped Out","Defeat Kiandra.") ///DONE
+draw_feat(20,spr_featicon,20,c_white,"Daffy Amuck","Defeat Dixie.") ///DONE
+draw_feat(21,spr_featicon,21,c_white,"Beached Witch","Defeat Circe.") ///DONE
+draw_feat(22,spr_featicon,22,c_white,"Spaced Out","Defeat Kuinn.") ///DONE
+draw_feat(23,spr_featicon,23,c_white,"Watered Prince","Defeat Prince.") ///DONE
+draw_feat(24,spr_featicon,24,c_white,"Wished Beating","Defeat Haifa.") ///DONE
+draw_feat(25,spr_featicon,25,c_white,"All Shattered","Defeat Mirrosa.") ///DONE
+draw_feat(26,spr_featicon,26,c_white,"Royally Planted","Defeat Synthesa.") ///DONE
+draw_feat(27,spr_featicon,27,c_white,"Mean To Dragon","Defeat Fiona.") ///DONE
+draw_feat(28,spr_featicon,28,c_white,"Science Project","Defeat Dr.Fran.") ///DONE
+draw_feat(29,spr_featicon,29,c_white,"Dastardly Bite","Defeat Van Bad.") ///DONE
+draw_feat(30,spr_featicon,30,c_white,"That's All Folks!","Clear Arcade Mode for the First Time.") ///DONE
+draw_feat(31,spr_featicon,31,c_white,"Best In Show","Clear Arcade Mode on Very Hard.") ///DONE
+draw_feat(32,spr_featicon,32,c_white,"World Mapper","Clear all stages in the game.") ///DONE
 draw_feat(33,spr_featicon,33,c_white,"Animal Tamer","Pet all animals from all stages.")
 draw_feat(34,spr_featicon,34,c_white,"Diva Detective.","Find all Stage Secrets.")
 draw_feat(35,spr_featicon,35,c_white,"Goon Bruiser.","Defeat 100 enemies.\n"+string(clamp(global.EnemyDeath,0,100))+"/100")
 draw_feat(36,spr_featicon,36,c_white,"Goon Crusher.","Defeat 500 enemies.\n"+string(clamp(global.EnemyDeath,0,500))+"/500")
 draw_feat(37,spr_featicon,37,c_white,"Goon Slayer.","Defeat 1000 enemies.\n"+string(clamp(global.EnemyDeath,0,1000))+"/1000")
-draw_feat(38,spr_featicon,38,c_white,"Shopping List","Buy out all of the Extras.") ///V
-draw_feat(39,spr_featicon,39,c_white,"Big Cheater","Buy out all of the Cheats.") ///V
-draw_feat(40,spr_featicon,40,c_white,"Art Collector","Buy out all of the Gallery.") //V
-draw_feat(41,spr_featicon,41,c_white,"Missed The Ride","Get the Bad Ending.")
-draw_feat(42,spr_featicon,42,c_white,"All Written","Complete the Profile & Info")
-draw_feat(43,spr_featicon,43,c_white,"Filmography","Unlock All Cutscenes")
-draw_feat(44,spr_featicon,44,c_white,"Back From World Tour","Clear All Stage Mode.")
-draw_feat(45,spr_featicon,45,c_white,"Diva Survivor","Get a High Score on Survival Mode.") //
-draw_feat(46,spr_featicon,46,c_white,"Diva Champion","Beat Boss Battles Mode.") //
-draw_feat(47,spr_featicon,47,c_white,"Game Queen","Win all of the six Minigames.")
+draw_feat(38,spr_featicon,38,c_white,"Shopping List","Buy out all of the Extras.") ///DONE
+draw_feat(39,spr_featicon,39,c_white,"Big Cheater","Buy out all of the Cheats.") ///DONE
+draw_feat(40,spr_featicon,40,c_white,"Art Collector","Buy out all of the Gallery.") //DONE
+draw_feat(41,spr_featicon,41,c_white,"Missed The Ride","Get the Bad Ending.") //DONE
+draw_feat(42,spr_featicon,42,c_white,"All Written","Complete the Profile & Info") //DONE
+draw_feat(43,spr_featicon,43,c_white,"Filmography","Unlock All Cutscenes")  ///DONE
+draw_feat(44,spr_featicon,44,c_white,"Back From World Tour","Clear All Stage Mode./ (Normal difficulty or higher only)")
+draw_feat(45,spr_featicon,45,c_white,"Diva Survivor","Get a High Score of 50000 on Survival Mode.") //DONE
+draw_feat(46,spr_featicon,46,c_white,"Diva Champion","Beat Boss Battles Mode.") //DONE
+draw_feat(47,spr_featicon,47,c_white,"Game Queen","Win all of the six Minigames.") //DONE
 draw_feat(48,spr_featicon,48,c_white,"Beauty Fishing","Get all fish in the Fishing minigame.")
 draw_feat(49,spr_featicon,49,c_white,"It's Bad For You!","Smoke up to 4 times in a row as Viva.") //Smoke 4 times as Viva 
 draw_feat(50,spr_featicon,50,c_white,"Zzz...","Remain in idle as Hina for one minute.") //

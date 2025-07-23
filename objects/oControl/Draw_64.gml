@@ -982,6 +982,8 @@ if global.SaveNumber=0 alphaset=0.75
 draw_set_color(setsave)
 draw_sprite_ext(spr_savefile,0,xadd,128+48,1,1,0,setsave,alphaset)
 
+
+
 draw_text(xadd,128+48,"SAVE FILE")
 var savename="SLOT A" if global.SaveFileNO=2 savename="SLOT B" if global.SaveFileNO=3 savename="SLOT C"
 if global.SaveFileNO=0 savename="NO SAVE"
@@ -989,6 +991,7 @@ if global.SaveFileNO=0 savename="NO SAVE"
 if global.SaveFileNO=0
 {global.SaveNumber=0
 draw_text(xadd,128+64,"NO SAVE")
+
 }
 else
 {

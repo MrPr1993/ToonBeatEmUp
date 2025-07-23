@@ -2759,6 +2759,7 @@
     {"name":"spr_franki_wavefx","order":14,"path":"sprites/spr_franki_wavefx/spr_franki_wavefx.yy",},
     {"name":"spr_fries","order":13,"path":"sprites/spr_fries/spr_fries.yy",},
     {"name":"spr_frog","order":7,"path":"sprites/spr_frog/spr_frog.yy",},
+    {"name":"spr_frogpet","order":17,"path":"sprites/spr_frogpet/spr_frogpet.yy",},
     {"name":"spr_galleryicon","order":3,"path":"sprites/spr_galleryicon/spr_galleryicon.yy",},
     {"name":"spr_galleryimg1","order":4,"path":"sprites/spr_galleryimg1/spr_galleryimg1.yy",},
     {"name":"spr_galleryimg10","order":18,"path":"sprites/spr_galleryimg10/spr_galleryimg10.yy",},

@@ -2,12 +2,16 @@ room_speed=60
 
 if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
 
+
+minigameID=0;
+minigameIDwin=0;
 mirrorMode=0;
 roomfast=0
 carMode=0;
 triggerarcadesave=0;
 entag=0;
 allstagemode=0;
+global.FeatTrigger=0;
 
 //ini_write_real("EN", enemyID, global.UnlockEnemy[enemyID]);
 //ini_write_real("ENB", 0, global.EnemyDeath);
@@ -203,6 +207,7 @@ global.HiScoreSee=0
 
 global.TrainingRoom=0
 global.TrainingClear[4]=0;
+global.MinigameWin[6]=0;
 
 global.PrevStage1=0
 global.PrevStage2=0
@@ -233,6 +238,8 @@ global.CRTfx=1
 global.CRTcustomDistort=true;
 global.CRTcustomDistortAM=0.12;
 global.CRTcustomBorder=true;
+
+global.UnlockCutscene[30]=0;
 
 global.ColorMode=0;
 

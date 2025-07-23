@@ -29,4 +29,6 @@ draw_text(160,34+10,"ENEMIES DEFEATED: "+string(enemiesdefeated))
 	draw_set_halign(fa_left)
 }
 
+
+
 extrastep=-1;

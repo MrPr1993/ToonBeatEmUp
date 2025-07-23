@@ -20,7 +20,7 @@ if hpAll<0
 zSpeed=-8 //oControl.quakeFX=30
 
 if destroyed=0
-{destroyed=1 PlaySound(snd_explosion)
+{destroyed=1 PlaySound(snd_explosion) with oControl minigameIDwin=1;
 repeat(4)
 {
 part=instance_create_depth(x-37,y+11,depth,oDisappearPart)

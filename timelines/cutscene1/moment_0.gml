@@ -1,6 +1,8 @@
 //background_
 instance_create_depth(-999,-999,-1,oTextBox)
 
+global.UnlockCutscene[1]=1 feats_check(43);
+
 layer_hspeed("BGcity",-0.5)
 
 if global.CutsceneSkip=0

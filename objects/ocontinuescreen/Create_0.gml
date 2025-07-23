@@ -5,7 +5,7 @@
 // You can write your code in this editor
 filmY=0 mapXFilm=0
 
-
+minigameID=0;
 
 seefeats=0;
 if instance_exists(oFeatDisplay) seefeats=1;
@@ -39,7 +39,12 @@ showtimehit=oControl.showtimehit
 nodeath=oControl.nodeath
 perfecthp=oControl.perfecthp
 minigameroom=oControl.minigameroom;
+minigameID=oControl.minigameID;
+minigameIDwin=oControl.minigameIDwin;
 }
+
+global.MinigameWin[minigameID]=minigameIDwin;
+
 finalStage=0
 finalStageHi=0
 finalStageMono=1
@@ -283,6 +288,36 @@ stageNext=oControl.stageNext
 CutsceneStage=oControl.CutsceneStage
 finalStage=oControl.finalStage
 
+//////////////World Tour Mode
+if global.AllStageMode
+if global.StageClear=1
+{
+var stnext=rm_stage2
+switch(room)
+{
+case rm_stage1: global.StageSave=rm_stage2 break;
+case rm_stage2: global.StageSave=rm_stage2b break;
+case rm_stage2b: global.StageSave=rm_stage2c break;
+case rm_stage2c: global.StageSave=rm_stage3 break;
+case rm_stage3: global.StageSave=rm_stage4 break;
+case rm_stage4: global.StageSave=rm_stage5 break;
+case rm_stage5: global.StageSave=rm_stageswamp break;
+case rm_stagecarnival: global.StageSave=rm_stageswamp break;
+case rm_stageswamp: global.StageSave=rm_stagebeach break;
+case rm_stagebeach: global.StageSave=rm_stagemermaid break;
+case rm_stagemermaid: global.StageSave=rm_stageufo break;
+case rm_stageufo: global.StageSave=rm_stagedesert break;
+case rm_stagedesert: global.StageSave=rm_stagecave break;
+case rm_stagecave: global.StageSave=rm_stagesnow break;
+case rm_stagesnow: global.StageSave=rm_stageclouds break;
+case rm_stageclouds: global.StageSave=rm_stagelab break;
+case rm_stagelab: global.StageSave=rm_stagefinal break;
+case rm_stagefinal: global.StageSave=rm_creditscene break;
+}
+stageNext=stnext;
+CutsceneStage=stnext;
+global.StageSave=stnext;
+}
 
 
 stageClearCheck=0
@@ -541,6 +576,9 @@ feats_stageunlock()
 feats_check(-1)
 feats_save()
 }
+
+feats_check(45);
+
 global.StageClear=0;
 
 colorshade_setup()

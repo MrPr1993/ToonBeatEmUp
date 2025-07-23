@@ -3,7 +3,8 @@
 depth=10
 
 oControl.minigameroom=1
-
+ with oControl minigameID=4;
+ 
 if stageClear=0
 if songdone=0
 {

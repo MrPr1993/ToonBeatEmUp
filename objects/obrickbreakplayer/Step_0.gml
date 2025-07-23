@@ -50,6 +50,7 @@ frame_set(2,4,0.25) if AnimFrame=3
  oBrickBreakGame.resulttext1="BONUS"
 
 if meter=clamp(meter,2+32,78-32) {PlaySound(snd_explosion) brickbreak=3  oControl.quakeFXTime=10
+	 with oControl minigameIDwin=1;
 			altresult2Text="PERFECT" altresult2=10000
 			dust_make(x+40,240+8,0,0,0,0)
 			dust_make(x+40,240+8-16,0,0,0,0)

@@ -87,7 +87,7 @@ break;
 
 case 10: featname="Went off key" ///10% health
 if object_index=oContinueScreen
-if hppercent1<=10 or hppercent2<=10 or hppercent3<=10 or hppercent4<=10
+if hppercent1<=1 or hppercent2<=1 or hppercent3<=1 or hppercent4<=1
 {if nodeath setfeats=1} break;
 
 case 11: featname="trainer" ///training
@@ -204,7 +204,7 @@ if object_index=oContinueScreen if room=rm_stagefinal if stageClear=1
 break;
 
 case 30: featname="FINAL" ///Clear arcade mode
-if object_index=oContinueScreen if room=rm_stagefinal if stageClear=1
+if object_index=oContinueScreen if finalStage if stageClear=1
 {//if perfecthp
 	setfeats=1}
 break;
@@ -223,6 +223,9 @@ if stageClear=1
 {//if perfecthp
 	setfeats=1}
 break;
+
+
+
 
 case 35: featname="ENEMY KILL" ///
 if global.EnemyDeath>=100 {setfeats=1; if global.Feats[35]!=1 enemydata_save()}
@@ -264,10 +267,78 @@ if global.Gallery[1] and global.Gallery[2] and global.Gallery[3] and global.Gall
 and global.Gallery[12] and global.Gallery[13] and global.Gallery[14] and global.Gallery[15] and global.Gallery[16] setfeats=1
 break;
 
+case 41: ///Bad Ending
+if room=rm_cutscenebadend setfeats=1;
+break;
 
+case 42: 
+if object_index=oContinueScreen or object_index=oControl
+{
+if global.UnlockEnemy[1] and global.UnlockEnemy[2] and global.UnlockEnemy[3] and global.UnlockEnemy[5] and global.UnlockEnemy[6]
+and global.UnlockEnemy[7] and global.UnlockEnemy[10] and global.UnlockEnemy[11] and global.UnlockEnemy[12] and global.UnlockEnemy[13]
+and global.UnlockEnemy[14] and global.UnlockEnemy[15] and global.UnlockEnemy[16] and global.UnlockEnemy[20] and global.UnlockEnemy[21]
+and global.UnlockEnemy[22] and global.UnlockEnemy[23] and global.UnlockEnemy[24] and global.UnlockEnemy[25] and global.UnlockEnemy[26]
+and global.UnlockEnemy[27] and global.UnlockEnemy[28] and global.UnlockEnemy[29] and global.UnlockEnemy[30] and global.UnlockEnemy[31]
+and global.UnlockEnemy[32] and global.UnlockEnemy[33] and global.UnlockEnemy[34] and global.UnlockEnemy[35] and global.UnlockEnemy[36]
+and global.UnlockEnemy[37] and global.UnlockEnemy[38] and global.UnlockEnemy[39] and global.UnlockEnemy[40] and global.UnlockEnemy[41]
+and global.UnlockEnemy[42] and global.UnlockEnemy[43] and global.UnlockEnemy[44] and global.UnlockEnemy[45] and global.UnlockEnemy[46]
+and global.UnlockEnemy[51] and global.UnlockEnemy[52] and global.UnlockEnemy[53] and global.UnlockEnemy[54] and global.UnlockEnemy[55]
+and global.UnlockEnemy[56] and global.UnlockEnemy[57] and global.UnlockEnemy[58] and global.UnlockEnemy[59] and global.UnlockEnemy[60]
+and global.UnlockEnemy[61] and global.UnlockEnemy[62] and global.UnlockEnemy[63] and global.UnlockEnemy[64] and global.UnlockEnemy[65]
+and global.UnlockEnemy[66] and global.UnlockEnemy[67] and global.UnlockEnemy[68] and global.UnlockEnemy[69] and global.UnlockEnemy[70]
+and global.UnlockEnemy[71] and global.UnlockEnemy[72] and global.UnlockEnemy[73] and global.UnlockEnemy[74] and global.UnlockEnemy[117]
+and global.UnlockEnemy[118] and global.UnlockEnemy[119] and global.UnlockEnemy[75] and global.UnlockEnemy[76] and global.UnlockEnemy[77]
+and global.UnlockEnemy[78] and global.UnlockEnemy[79] and global.UnlockEnemy[80] and global.UnlockEnemy[81] and global.UnlockEnemy[82]
+and global.UnlockEnemy[83] and global.UnlockEnemy[84] and global.UnlockEnemy[85] and global.UnlockEnemy[86] and global.UnlockEnemy[87]
+and global.UnlockEnemy[88] and global.UnlockEnemy[89] and global.UnlockEnemy[90] and global.UnlockEnemy[91] and global.UnlockEnemy[92]
+and global.UnlockEnemy[93] and global.UnlockEnemy[94] and global.UnlockEnemy[95] and global.UnlockEnemy[96] and global.UnlockEnemy[97]
+and global.UnlockEnemy[98] and global.UnlockEnemy[99] and global.UnlockEnemy[100] and global.UnlockEnemy[101] and global.UnlockEnemy[102]
+and global.UnlockEnemy[103] and global.UnlockEnemy[104] and global.UnlockEnemy[105] and global.UnlockEnemy[106] and global.UnlockEnemy[107]
+and global.UnlockEnemy[108] and global.UnlockEnemy[109] and global.UnlockEnemy[110] and global.UnlockEnemy[111] and global.UnlockEnemy[112]
+and global.UnlockEnemy[113] and global.UnlockEnemy[114] and global.UnlockEnemy[115] and global.UnlockEnemy[130] and global.UnlockEnemy[131]
+and global.UnlockEnemy[133] and global.UnlockEnemy[134] and global.UnlockEnemy[166] and global.UnlockEnemy[17] and global.UnlockEnemy[18]
+and global.UnlockEnemy[19] and global.UnlockEnemy[47] and global.UnlockEnemy[48] and global.UnlockEnemy[49] and global.UnlockEnemy[50]
+and global.UnlockEnemy[125] and global.UnlockEnemy[126] and global.UnlockEnemy[127] and global.UnlockEnemy[128]
+and global.UnlockEnemy[150] and global.UnlockEnemy[151] and global.UnlockEnemy[152] and global.UnlockEnemy[153] and global.UnlockEnemy[154]
+and global.UnlockEnemy[155] and global.UnlockEnemy[156] and global.UnlockEnemy[157] and global.UnlockEnemy[158] and global.UnlockEnemy[159]
+and global.UnlockEnemy[160] and global.UnlockEnemy[161] and global.UnlockEnemy[162] and global.UnlockEnemy[163] and global.UnlockEnemy[164]
+and global.UnlockEnemy[165] and global.UnlockEnemy[166] and global.UnlockEnemy[167] and global.UnlockEnemy[168] and global.UnlockEnemy[169]
+and global.UnlockEnemy[170] and global.UnlockEnemy[171] and global.UnlockEnemy[172] and global.UnlockEnemy[173] and global.UnlockEnemy[174]
+and global.UnlockEnemy[175] and global.UnlockEnemy[176] and global.UnlockEnemy[177]// and global.UnlockEnemy[1] and global.UnlockEnemy[1]
+//and global.UnlockEnemy[1] and global.UnlockEnemy[1] and global.UnlockEnemy[1] and global.UnlockEnemy[1] and global.UnlockEnemy[1]
+//and global.UnlockEnemy[1] and global.UnlockEnemy[1] and global.UnlockEnemy[1] and global.UnlockEnemy[1] and global.UnlockEnemy[1]
+setfeats=1;
 
-case 46:
+}
+break;
+
+case 43: /////All cutscenes
+if global.UnlockCutscene[1] and global.UnlockCutscene[2] and global.UnlockCutscene[3]
+and global.UnlockCutscene[4] and global.UnlockCutscene[5] and global.UnlockCutscene[6]
+and global.UnlockCutscene[7] and global.UnlockCutscene[8] and global.UnlockCutscene[9]
+and global.UnlockCutscene[10] and global.UnlockCutscene[11] and global.UnlockCutscene[12]
+and global.UnlockCutscene[13] and global.UnlockCutscene[14] and global.UnlockCutscene[15]
+and global.UnlockCutscene[16] and global.UnlockCutscene[17] and global.UnlockCutscene[18]
+and global.UnlockCutscene[19]// and global.UnlockCutscene[2] and global.UnlockCutscene[3]
+and global.UnlockCutscene[25] and global.UnlockCutscene[26] and global.UnlockCutscene[43]
+setfeats=1;
+break;
+
+case 44: //////World Tour Mode
+if object_index=oContinueScreen if room=rm_stagefinal and global.AllStageMode if stageClear=1 setfeats=1;
+break;
+//Diva Survivor
+case 45: 
+if global.HiScoreSurvival>=50000 setfeats=1
+break;
+
+case 46: ///Boss fight
 if object_index=oContinueScreen if isbossbattle=1 if stageClear=1 setfeats=1
+break;
+
+case 47: ///Minigame Queen
+if object_index=oContinueScreen if global.MinigameWin[1] and global.MinigameWin[2] and global.MinigameWin[3] and global.MinigameWin[4] and global.MinigameWin[5] and global.MinigameWin[6]
+setfeats=1;
 break;
 
 case 49: featname="It's Bad For You!"

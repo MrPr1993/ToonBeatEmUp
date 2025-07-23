@@ -1,7 +1,7 @@
 //background_
 instance_create_depth(-999,-999,-1,oTextBox)
 
-
+global.UnlockCutscene[17]=1 feats_check(43);
 
 if cutscenePlaying=0
 {

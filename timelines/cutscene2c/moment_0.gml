@@ -3,6 +3,8 @@ if cutscenePlaying=0
 {
 instance_create_depth(-999,-999,-1,oTextBox)
 
+global.UnlockCutscene[4]=1 feats_check(43);
+
 layer_set_visible("Sky2",0)
 
 with oControl
