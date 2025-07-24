@@ -5,7 +5,7 @@ and !instance_exists(en4)
 and !instance_exists(en5)
 {
 with oControl {//camMove=0 camMax=room_width
-goActive=1 alarm[1]=90
+goActive=1; ambushtime=0; alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320
 spawner_followset("WaveSet1",0,2847+320,1)
 //__view_set( e__VW.XView, 0, 2848 )

@@ -126,7 +126,21 @@ global.MinigameWin[6]=ini_read_real("Mdata", "6", 0);
 var _rep=1;
 repeat(30)
 {
-global.UnlockCutscene=ini_read_real("UCdata", ""+string(_rep), 0);
+global.UnlockCutscene[_rep]=ini_read_real("UCdata", ""+string(_rep), 0);
+_rep+=1;
+}
+
+var _rep=1;
+repeat(20)
+{
+global.PetPetted[_rep]=ini_read_real("PETdata", ""+string(_rep), 0)
+_rep+=1;
+}
+
+var _rep=1;
+repeat(30)
+{
+global.SecretBreak[_rep]=ini_read_real("SECdata", ""+string(_rep), 0)
 _rep+=1;
 }
 

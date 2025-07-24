@@ -71,5 +71,4 @@ ShockSpr=spr_burglar_hit
 BurnSpr=spr_burglar_burned
 FrozenSpr=spr_burglar_frozen
 
-
-
+enemyID=47

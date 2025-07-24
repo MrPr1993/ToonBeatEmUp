@@ -224,8 +224,13 @@ if stageClear=1
 	setfeats=1}
 break;
 
+case 33: ///Animal Tamer
+if global.PetPetted[1] and global.PetPetted[2] and global.PetPetted[3] and global.PetPetted[4]
+and global.PetPetted[5] and global.PetPetted[6] and global.PetPetted[7] setfeats=1;
+break;
 
-
+case 34: featname="Detective"
+break;
 
 case 35: featname="ENEMY KILL" ///
 if global.EnemyDeath>=100 {setfeats=1; if global.Feats[35]!=1 enemydata_save()}
@@ -320,7 +325,7 @@ and global.UnlockCutscene[10] and global.UnlockCutscene[11] and global.UnlockCut
 and global.UnlockCutscene[13] and global.UnlockCutscene[14] and global.UnlockCutscene[15]
 and global.UnlockCutscene[16] and global.UnlockCutscene[17] and global.UnlockCutscene[18]
 and global.UnlockCutscene[19]// and global.UnlockCutscene[2] and global.UnlockCutscene[3]
-and global.UnlockCutscene[25] and global.UnlockCutscene[26] and global.UnlockCutscene[43]
+and global.UnlockCutscene[25] and global.UnlockCutscene[26]// and global.UnlockCutscene[23]
 setfeats=1;
 break;
 

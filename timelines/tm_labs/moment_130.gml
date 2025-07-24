@@ -3,23 +3,23 @@
 if __view_get( e__VW.XView, 0 )>=5840-2-320
 {
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,224-32,oNurse)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}
+with en1 {enemy_switch("DR.SULF",0) image_xscale=-1 canAttack=5 alarm[1]=60}
 
 en2=instance_create(__view_get( e__VW.XView, 0)+320+64,224+32,oNurse)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60}	
+with en2 {enemy_switch("DR.SULF",0) image_xscale=-1 canAttack=5 alarm[1]=60}	
 
 en3=instance_create(__view_get( e__VW.XView, 0)+320+64,224,oLadybot)
 with en3 { image_xscale=-1 canAttack=5 alarm[1]=60}
 if playernumber>=2 en3.y-=16
 ////
-if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+320+64,224+16,oRobot)
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+320+64,224+16,oLadybot)
 with P2en1 {image_xscale=-1 canAttack=5 alarm[1]=60}}
 
 if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+320+64,164,oNurse)
-with P2en2 {image_xscale=-1 canAttack=5 alarm[1]=60}}
+with P2en2 {enemy_switch("DR.SULF",0) image_xscale=-1 canAttack=5 alarm[1]=60}}
 
 if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+320+64,280,oNurse)
-with P2en3 {image_xscale=-1 canAttack=5 alarm[1]=60}}
+with P2en3 {enemy_switch("DR.SULF",0) image_xscale=-1 canAttack=5 alarm[1]=60}}
 ////
 
 

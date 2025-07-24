@@ -13,7 +13,7 @@ en1=instance_create_depth(2134,160,-1,oEntryClimb) en1.z=-64 en1.rangeX=2134-240
 en3=instance_create_depth(2178,160,-1,oEntryClimb) en3.z=-64 en3.rangeX=2134-240 en3.rangeXAdd=0
 	
 with oControl {//camMove=0 camMax=room_width
- goActive=1 alarm[1]=90
+ goActive=1; ambushtime=0; alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
  
 with oEnemySpawner if selfID="WaveSet1"

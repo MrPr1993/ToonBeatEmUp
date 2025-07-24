@@ -2,6 +2,7 @@ room_speed=60
 
 if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
 
+ambushtime=0;
 
 minigameID=0;
 minigameIDwin=0;
@@ -240,6 +241,8 @@ global.CRTcustomDistortAM=0.12;
 global.CRTcustomBorder=true;
 
 global.UnlockCutscene[30]=0;
+global.PetPetted[20]=0;
+global.SecretBreak[30]=0;
 
 global.ColorMode=0;
 

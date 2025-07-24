@@ -10,7 +10,7 @@ and !instance_exists(en7)
 and !instance_exists(en8)
 {
 with oControl {//camMove=0 camMax=room_width
- goActive=1 alarm[1]=90
+ goActive=1; ambushtime=0; alarm[1]=90
 xGoCheck=2560}
 
 axe1=instance_create_depth(4320-96, 174,-1,oFlashFX) with axe1

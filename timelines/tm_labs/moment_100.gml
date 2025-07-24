@@ -14,7 +14,7 @@ if specialSet8=0
 {//camMove=0 camMax=room_width
 with oControl
 {time=99
- goActive=1 alarm[1]=90
+ goActive=1; ambushtime=0; alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320
 spawner_followset("WaveSet1",0,5200,1)
 layer_y("ElevatorBG",0)

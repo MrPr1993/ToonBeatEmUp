@@ -31,6 +31,10 @@ iconheight=-48
 
 scared=0
 
+petNO=1;
+
+petcheck=0;
+
 standSpr=spr_dog
 scaredSpr=spr_dog_scared
 

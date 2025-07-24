@@ -79,10 +79,10 @@ cBlue=0.0;
 cGreen=-0.25;
 
 image_speed=0 spawnEnemy=oMirrorDiva
-if character=0 sprite_index=spr_viva_stand
-if character=1 sprite_index=spr_hina_stand
-if character=2 sprite_index=spr_bahati_stand
-if character=3 sprite_index=spr_sofia_stand
+if character=0 {sprite_index=spr_viva_stand enemyID=169}
+if character=1 {sprite_index=spr_hina_stand enemyID=170}
+if character=2 {sprite_index=spr_bahati_stand enemyID=171}
+if character=3 {sprite_index=spr_sofia_stand enemyID=172}
 image_alpha=0 image_yscale=0 spawned=1 visible=1
 
 

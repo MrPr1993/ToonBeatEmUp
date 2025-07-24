@@ -133,3 +133,15 @@ _rep+=1;
 
 ini_close()
 }
+
+function pet_save(_no){
+ini_open("GAMEDATA/hiscore.ini");
+ini_write_real("PETdata", ""+string(_no), global.PetPetted[_no])
+ini_close()
+}
+
+function breaksecret_save(_no){
+ini_open("GAMEDATA/hiscore.ini");
+ini_write_real("SECdata", ""+string(_no), global.SecretBreak[_no])
+ini_close()
+}

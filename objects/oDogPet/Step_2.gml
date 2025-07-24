@@ -12,8 +12,11 @@ frame_set(1,1,0.1) if AnimFrame>2 AnimFrame=0
 frame_set(2,1,0.1)
 }
 
-if anim=1
+if anim=1 ///Petted
 {sprite_index=standSpr
+	
+if global.PetPetted[petNO]=0 {global.PetPetted[petNO]=1; pet_save(petNO)}
+	
 frame_set(0,2,0.1)
 frame_set(1,3,0.1)
 frame_set(2,3,0.1)

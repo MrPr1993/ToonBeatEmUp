@@ -5,6 +5,8 @@ function draw_shop(){controlNO=9
 ///Autounlock
 global.UnlockStageA[1]=1
 global.UnlockStageA[2]=1
+
+
 if global.UnlockAltPal=1 global.UnlockStageA[3]=1
 if global.UnlockAltPal2 global.UnlockStageA[4]=1
 

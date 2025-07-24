@@ -5,6 +5,7 @@ audio_master_gain(global.Mastervolume/100)
 
 controller_setup()
 
+//ambushtime++;
 
 if global.CurrentMusic!=-1
 {
