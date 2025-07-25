@@ -94,7 +94,7 @@ draw_surface_part_ext(new_surf, 0, 0, view_wview[0], view_hview[0], screenX, scr
 
 shader_reset();
 
-
+draw_set_color(c_white) draw_set_alpha(1)
 //draw_sprite_ext(spr_screenfx,0,0,0,(sprite_get_width(spr_screenfx)/(window_get_width()-100))/16,(sprite_get_height(spr_screenfx)/window_get_height())/16,0,c_white,1)
 if TVfx=8
 {

@@ -1,8 +1,7 @@
 /// @description Break & Create Object
-if hit=0
-{
 mask_index=mask_none
 
+oControl.Pshowhp[playerFrom]=0
 oControl.Penemyhp[playerFrom]=0 oControl.PhpLerp[playerFrom]=0 oControl.Penemymaxhp[playerFrom]=0.1
 oControl.PenemyPortraitSpr[playerFrom]=spr_miscface
 oControl.PenemyPortraitIndex[playerFrom]=0
@@ -24,11 +23,11 @@ ground=0
 spdZ=-8
 sentflying=-2
 image_index=1
-alarm[0]=2
+alarm[4]=2
 
 if item!=-1
 {
 item=instance_create_depth(x,y,depth,itemID)
 item.image_blend=itemcolor
-}}
+}
 

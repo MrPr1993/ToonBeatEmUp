@@ -33,6 +33,19 @@ if other.hitSource.x>x image_xscale=1 else image_xscale=-1
 
 playerFrom=other.hitSource.playerNO
 
+	var _maxplayer=playerFrom _maxplayer=clamp(_maxplayer,1,4)
+	
+	if oControl.Pshowhp[_maxplayer]=0 oControl.PenemyIDtag[_maxplayer]=0
+	
+	oControl.Pshowhp[_maxplayer]=showhp
+
+	oControl.Penemyhp[_maxplayer]=hp oControl.PhpLerp[_maxplayer]=hp oControl.Penemymaxhp[_maxplayer]=maxhp
+	
+	if oControl.PenemyIDtag[_maxplayer]!=id
+	{oControl.PenemyIDtag[_maxplayer]=id;
+	oControl.PenemyhpD[_maxplayer]=hp
+	}
+
 	oControl.Pshowhp[playerFrom]=1
     
 	oControl.Penemyhp[playerFrom]=hp oControl.PhpLerp[playerFrom]=hp oControl.Penemymaxhp[playerFrom]=maxhp

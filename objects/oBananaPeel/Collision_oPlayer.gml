@@ -1,3 +1,5 @@
+if hit=0
+{
 with (other) {
 if (z-height)<(other.z) and (z)>(other.z-other.height)
 with other
@@ -10,9 +12,10 @@ with other
 {PlaySoundNoStack(snd_swing) cutDMG=0
 HitType=8 event_user(0) recovery=120
 //flashFX(x-8*image_xscale,y+2,z-32,spr_hitflash,0,1,10,1,1,c_white,1)
-}if other.x>x image_xscale=1 else image_xscale=-1 event_user(0)
+} hit=1 if other.x>x image_xscale=1 else image_xscale=-1 event_user(0)
 }
 }
 }
 
+}
 }

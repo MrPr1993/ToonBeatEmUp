@@ -3,7 +3,7 @@
 if danger=0
 if __view_get( e__VW.XView, 0 )>rangeX
 {image_xscale=1
-danger=1 dangerTime=120
+danger=1 dangerTime=60
 }
 
 if danger=1

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 rangeX=0
 
-danger=0
+danger=1
 
 image_xscale=-1
 

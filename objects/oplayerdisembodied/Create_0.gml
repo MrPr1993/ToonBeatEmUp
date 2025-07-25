@@ -4,7 +4,7 @@ AttackOrItem=0
 canControl=0
 controlNO=0
 controller_setup()
-
+playerIcon=mask_none
 colorshade_setup()
 
 specialanimscript=-1;

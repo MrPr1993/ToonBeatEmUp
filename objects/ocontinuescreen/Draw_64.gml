@@ -366,6 +366,11 @@ draw_sprite(spr_playerface,characterSelect,round(-23/2),144-28)
 pal_swap_reset()
 draw_sprite(spr_p1,controlNO-1,0,144-30)
 
+if playerIcon=spr_extralifep
+{
+draw_sprite(spr_extralifep,characterSelect,round(0),144-28-32)
+}
+
 draw_set_halign(fa_center)
 if oContinueScreen.AltScore1=0
 {

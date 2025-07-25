@@ -8,6 +8,7 @@ if hp=0 if !ground {x=clamp(x,oControl.camX+32,oControl.camX+320-32)}
 headFront=1
 
 
+
 if anim=0 or anim=1 or anim=4 or anim=13
 {
 z=lerp(z,-16+hoverZ,0.1)

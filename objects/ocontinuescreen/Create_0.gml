@@ -466,6 +466,18 @@ if brickgamenum=2 with oPlayerDisembodied x+=160-80
 if brickgamenum=3 with oPlayerDisembodied x+=160-120
 if brickgamenum=4 with oPlayerDisembodied x+=0
 
+if global.StageClear=1
+with oPlayerDisembodied
+{
+switch(playerNO)
+{
+case 1: lifescore_check(1,playerNO,global.P1ScoreLife,0,0); break;
+case 2: lifescore_check(1,playerNO,global.P2ScoreLife,0,0); break;
+case 3: lifescore_check(1,playerNO,global.P3ScoreLife,0,0); break;
+case 4: lifescore_check(1,playerNO,global.P4ScoreLife,0,0); break;
+}
+}
+
 p5=instance_create_depth(0,0,-1,oPlayerDisembodied) with p5 {canControl=1 controlNO=9}
 
 continuePlayer=1

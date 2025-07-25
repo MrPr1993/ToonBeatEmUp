@@ -23,10 +23,10 @@ if _player=2 global.P2ScoreLife+=1;
 if _player=3 global.P3ScoreLife+=1;
 if _player=4 global.P4ScoreLife+=1;
 }
-PlaySoundNoStack(snd_1up)
+PlaySoundNoStack(snd_1up) playerIcon=spr_extralifep
 if _isplayer
 {
-showp1=1 alarm[5]=120 playerIcon=spr_extralifep
+showp1=1 alarm[5]=120 
 PlayerLife+=1; 
 }
 }

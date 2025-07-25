@@ -5,7 +5,7 @@
 
 if oControl.continueScreen=0
 {
-if specialSet8<21
+if specialSet8<20
 {
 if specialSet8=0
 barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,192,0,1,-1,0,1,0,-8)
