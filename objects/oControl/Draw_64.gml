@@ -42,14 +42,17 @@ if (surface_exists(new_surf) == false) {
 	{
 surface_resize(new_surf,320,240)
 
+ gpu_set_alphatestenable(false)
+
 surface_set_target(new_surf);
 draw_clear_alpha(c_black, 0.0);
 
 
-draw_set_color(c_white) draw_rectangle(-2,-2,555,555,false)
+draw_set_color(c_black) draw_rectangle(-2,-2,555,555,false)
 draw_surface_ext(application_surface, 0+320*mirrorMode, 0,1-2*mirrorMode,1,0,c_white,1);
 //draw_surface(application_surface, 0, 0);
 //shader_reset()
+  gpu_set_alphatestenable(true)
 	}
 ////////////////
 	

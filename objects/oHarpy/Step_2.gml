@@ -159,7 +159,7 @@ if anim=13 ///Sing
 		zSpeed=0 z-=0.25 sentflying=-0.1*image_xscale
 oPlayer.x+=3*image_xscale
 	AnimFrame+=0.1
-		if specialtimes[0]>207 or z<-100
+		if specialtimes[0]>207 or z<-100 or AnimFrame>=27
 		{canmove=1 sentflying=0 alarm[1]=60}
 	}
 	

@@ -1,5 +1,6 @@
 /// @description Break & Create Object
 if hit=0
+if breakable
 {
 mask_index=mask_none
 

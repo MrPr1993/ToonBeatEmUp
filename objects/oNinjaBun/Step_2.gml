@@ -29,7 +29,7 @@ if place_free(targetEnemy.x+32,y) and image_xscale=-1 x=targetEnemy.x+32
 if place_free(targetEnemy.x-32,y) and image_xscale=1 x=targetEnemy.x-32
 
 
-
+canmove=0;
 anim=9916 ground=0 z=-480 
 }
 

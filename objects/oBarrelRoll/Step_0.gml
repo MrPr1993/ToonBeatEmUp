@@ -2,13 +2,14 @@ depth=-y
 
 //controller_setup()
 
-
+if obstacletype=0
+{
 z+=zSpeed
 if !ground 
 {
 if place_free(x+sentflying*image_xscale,y)
 x+=sentflying*image_xscale
-if zSpeed<4 zSpeed+=0.4
+if zSpeed<rollSpd zSpeed+=0.4
 if z>0 {ground=1 zSpeed=0 z=0}
 }
 
@@ -38,4 +39,11 @@ watsplash.z=waterMax watsplash.image_speed=0.5 watsplash.sprite_index=spr_waters
 watsplash.alarm[0]=0
 waterSplash=10; 
 }if ground waterSplash=0;
+}
+}
+
+if obstacletype=1
+{
+if image_xscale=-1 and x<oControl.camX-200 instance_destroy()
+x+=4*image_xscale
 }

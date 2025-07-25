@@ -9,8 +9,9 @@ specialSet7=random(100)
 
 if specialSet8=5
 {
-barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,160,0,1,-1,1,1,0,-2)
-barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,224,0,1,-1,1,1,0,-2)
+//barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,160,0,1,-1,1,1,0,-2)
+//barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,224,0,1,-1,1,1,0,-2)
+sd=instance_create(oControl.camX+320-40,144,oSwampDanger) sd.type=0
 }
 
 if specialSet8=6
@@ -23,6 +24,7 @@ if specialSet8=7
 {
 barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,192,0,1,-1,1,2,0,-2)
 barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,224,0,1,-1,1,2,0,-2)
+sd=instance_create(oControl.camX+320-40,144,oSwampDanger) sd.type=0
 }
 
 if specialSet8=8

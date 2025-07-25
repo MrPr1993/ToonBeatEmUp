@@ -29,11 +29,15 @@ if (surface_exists(new_surf) == false) {
 	{
 surface_resize(new_surf,320,240)
 
+  gpu_set_alphatestenable(false)
+
 surface_set_target(new_surf);
 draw_clear_alpha(c_black, 0.0);
 draw_set_color(c_white) draw_rectangle(-2,-2,555,555,false);
 if global.MonochromeFX=1 shader_set(shd_grayscale)
 draw_surface(application_surface, 0, 0);
+
+  gpu_set_alphatestenable(true)
 	}
 ///
 draw_set_color(c_white) draw_set_alpha(1)
