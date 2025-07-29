@@ -9,6 +9,11 @@ global.ArenaType=0
 if key_B room_goto(rm_menu)
 draw_set_font(global.scorefont)	
 
+if oControl.betatest
+{
+if keyboard_check_pressed(ord("4")) global.SecretBoss^=1;
+}
+
 d3d_transform_set_identity()
 
 global.SkipDifficulty=0;
@@ -46,6 +51,10 @@ draw_sprite_ext(spr_extraposter,4,28,24+36+72-72*global.MinigameSel,1,1,0,c_gray
 draw_sprite_ext(spr_extraposter,5,28,24+36+72+72-72*global.MinigameSel,1,1,0,c_gray*global.BossBattleUnlock,-sell1+0.5+0.5*1)
 draw_sprite_ext(spr_extraposter,6,28,24+36+72+72+72-72*global.MinigameSel,1,1,0,c_gray*global.FishingUnlock,-sell1+0.5+0.5*1)
 draw_sprite_ext(spr_extraposter,7,28,24+36+72+72+72+72-72*global.MinigameSel,1,1,0,c_gray*global.SlotMachineUnlock,-sell1+0.5+0.5*1)
+
+if global.SecretBoss
+draw_sprite_ext(spr_extraposter,8,28,24+36+72+72+72+72+72-72*global.MinigameSel,1,1,0,c_gray*global.SecretBoss,-sell1+0.5+0.5*1)
+
 
 if global.MinigameSetSel=0
 {
@@ -86,7 +95,10 @@ draw_sprite_ext(spr_miniposter,global.MinigameSel3,220,24+36,1,1,0,c_white*isunl
 
 if key_up_pressed {PlaySound(snd_select)
 if global.MinigameSetSel=0
-{if global.MinigameSel=0 global.MinigameSel=4 else global.MinigameSel-=1}
+{
+	
+if global.MinigameSel=0 global.MinigameSel=4+global.SecretBoss else global.MinigameSel-=1
+}
 
 if global.MinigameSetSel=1
 {if global.MinigameSel2=0 global.MinigameSel2=2 else global.MinigameSel2-=1}
@@ -98,7 +110,7 @@ if global.MinigameSetSel=2
 	}
 if -key_down_pressed {PlaySound(snd_select)
 if global.MinigameSetSel=0
-{if global.MinigameSel=4 global.MinigameSel=0 else global.MinigameSel+=1}	
+{if global.MinigameSel=4+global.SecretBoss global.MinigameSel=0 else global.MinigameSel+=1}	
 	
 if global.MinigameSetSel=1
 {if global.MinigameSel2=2 global.MinigameSel2=0 else global.MinigameSel2+=1}
@@ -135,6 +147,11 @@ if global.FishingUnlock=0 MenuText="LOCKED"
 if global.MinigameSel=4 {MenuText="HAVE SOME FUN AT A LITTLE GAMBLE!\n"+"$"+string(global.Gold) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_slotmachine instantroom=1 stagewent=rm_slotmachine
 if global.SlotMachineUnlock=0 MenuText="LOCKED"
+}
+
+////SECRET BOSS
+if global.MinigameSel=5 {MenuText="???" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+global.StageGoing=rm_secret instantroom=1 stagewent=rm_secret
 }
 
 }

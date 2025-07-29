@@ -7,3 +7,5 @@ vis=1
 item=oBurger
 itemID=oBurger
 zAdd=0
+
+breakID=0;

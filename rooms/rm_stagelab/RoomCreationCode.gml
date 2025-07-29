@@ -7,6 +7,8 @@ oControl.stagePause=1
 
 oControl.stageNext=rm_cutscene7
 
+global.StageRecord[7]=0;
+
 with oEnemySpawner
 {
 	GoBackY=1 

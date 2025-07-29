@@ -2,6 +2,8 @@ musicplaystart(msc_stage2)
 global.HiScoreStage=1
 oControl.showMap=0
 
+global.StageRecord[2]=0;
+
 if instance_exists(oHeight32) with oHeight32 
 {
 name="Remove"
@@ -26,6 +28,7 @@ oControl.stagePause=1
 oControl.StageNumber=3
 
 global.HiScoreLevel=2
+
 
 with oControl
 {

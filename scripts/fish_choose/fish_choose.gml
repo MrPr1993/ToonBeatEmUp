@@ -81,4 +81,7 @@ fishname="SQUID"
 fishscore=round(100)
 }
 
+if _fishtype!=0
+global.FishData[_fishtype]=1
+
 }

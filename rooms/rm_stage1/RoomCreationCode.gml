@@ -7,6 +7,8 @@ oControl.stagePause=1
 oControl.StageNumber=1
 global.HiScoreLevel=1
 
+global.StageRecord[1]=0;	
+
 with oControl
 {
 stagename="DOWNTOWN BEAT"

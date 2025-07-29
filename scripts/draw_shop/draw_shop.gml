@@ -3,14 +3,70 @@
 function draw_shop(){controlNO=9
 
 ///Autounlock
+
+
+
+
+
+///////Unlockables
+///General
 global.UnlockStageA[1]=1
 global.UnlockStageA[2]=1
-
-
 if global.UnlockAltPal=1 global.UnlockStageA[3]=1
 if global.UnlockAltPal2 global.UnlockStageA[4]=1
 
+//Clear all stages
+if global.Feats[30] global.UnlockStageA[5]=1 ///Sound Test
+if global.Feats[30] global.UnlockStageA[6]=1 ///Cutscenes
+if global.Feats[32] global.UnlockStageA[7]=1 ///Fishing
+if global.Feats[31] global.UnlockStageA[8]=1 ///Slot Machine
+///9-14 are Minigames and they have room that will unlock them automatically
+if global.Feats[30] global.UnlockStageA[15]=1 ///Survival
+if global.Feats[32] global.UnlockStageA[16]=1 ///Boss battle
 
+///Gallery
+global.GalleryUnlock[1]=1 ///Viva
+global.GalleryUnlock[2]=1 ///Hina
+global.GalleryUnlock[3]=1 ///Bahati
+global.GalleryUnlock[4]=1 ///Sofia
+
+if global.Feats[30]
+{
+//Enemies
+global.GalleryUnlock[5]=1
+
+if global.UnlockStage[1] and global.UnlockStage[2] and global.UnlockStage[3]
+and global.UnlockStage[4] and global.UnlockStage[5] and global.UnlockStage[6]
+global.GalleryUnlock[6]=1
+
+if global.UnlockStage[7] and global.UnlockStage[8] and global.UnlockStage[9]
+and global.UnlockStage[10] and global.UnlockStage[11] and global.UnlockStage[12]
+global.GalleryUnlock[7]=1
+
+if global.UnlockStage[13] and global.UnlockStage[14] and global.UnlockStage[15]
+and global.UnlockStage[16] and global.UnlockStage[17] and global.UnlockStage[18]
+global.GalleryUnlock[8]=1
+
+//Bosses
+if global.UnlockStage[1] and global.UnlockStage[2] and global.UnlockStage[3]
+and global.UnlockStage[4]
+global.GalleryUnlock[9]=1
+
+if global.UnlockStage[5] and global.UnlockStage[6] and global.UnlockStage[7]
+and global.UnlockStage[8] and global.UnlockStage[9] and global.UnlockStage[10]
+global.GalleryUnlock[10]=1
+
+if global.UnlockStage[11] and global.UnlockStage[12] and global.UnlockStage[13]
+and global.UnlockStage[14] and global.UnlockStage[15] and global.UnlockStage[16]
+global.GalleryUnlock[11]=1
+
+if global.UnlockStage[17] and global.UnlockStage[18]
+global.GalleryUnlock[12]=1
+}
+global.GalleryUnlock[13]=1
+if global.Feats[32] global.GalleryUnlock[14]=1 ///Concept Art
+global.GalleryUnlock[15]=1
+global.GalleryUnlock[16]=1
 	
 ///For testing
 if x=-9999999999999999
@@ -25,15 +81,16 @@ if x=-9999999999999999
 
 }
 if keyboard_check_pressed(ord("8"))
-{var unlockall=1;
+or keyboard_check_pressed(ord("7"))
+{var unlockall=1; var unlocker=0;
+
+if keyboard_check_pressed(ord("8")) unlocker=1
+	
 	repeat(16)
 	{
-	if shopSet=0 global.UnlockStageA[unlockall]=1;
-	if shopSet=1 global.CheatUnlock[unlockall]=1;
-	if shopSet=2 global.GalleryUnlock[unlockall]=1;
-	
-	
-	
+	if shopSet=0 global.UnlockStageA[unlockall]=unlocker;
+	if shopSet=1 global.CheatUnlock[unlockall]=unlocker;
+	if shopSet=2 global.GalleryUnlock[unlockall]=unlocker;
 	unlockall+=1;
 	}
 }
@@ -138,7 +195,7 @@ case 3: global.CheatUnlock[3]=1; break; ///Extra Power
 case 4: global.CheatUnlock[4]=1; break; ///1-KO
 case 5: global.CheatUnlock[5]=1; break; ///Mini Mode
 case 6: global.CheatUnlock[6]=1; break; ///Random Diva
-case 7: global.CheatUnlock[7]=1; break; ///Random Weapon
+case 7: global.CheatUnlock[7]=1; break; ///Mirror Mode
 case 8: global.CheatUnlock[8]=1; break; ///Full Heal
 case 9: global.CheatUnlock[9]=1; break; ///Special Non-Drainable
 case 10: global.CheatUnlock[10]=1; break; ///Chargable Super
@@ -316,8 +373,8 @@ if shopselY=1 and shopselX=1
 shopDesc="\nWHEN YOU RESPWAWN,\nYOU BECOME A\nDIFFERENT DIVA!"
 if global.CheatUnlock[6]=0 shopSelect=6 else shopSelect=-3}
 if shopselY=1 and shopselX=2
-{shopPrice=10000 shopName="WEAPON RANDOMIZER" shopCheatNO=7; shopCheatP=-2000
-shopDesc="\nWHEN YOU RESPWAWN,\nYOU GET A\nRANDOM WEAPON!"
+{shopPrice=10000 shopName="MIRROR MODE" shopCheatNO=7; shopCheatP=-1000
+shopDesc="\nPLAY THE GAME,\nWITH A MIRRORED\nVIEW!"
 if global.CheatUnlock[7]=0 shopSelect=7 else shopSelect=-3}
 if shopselY=1 and shopselX=3
 {shopPrice=25000 shopName="FULL HEAL" shopCheatNO=8; shopCheatP=-2000

@@ -28,8 +28,15 @@ ini_write_real("SAVE", "CONT", global.Continues)
 ini_write_real("SAVE", "DIF", global.Difficulty)
 ini_write_real("SAVE", "AND", global.ArcadeDeath)
 ini_write_string("SAVE", "STG", global.SaveText)
-ini_write_string("SAVE", "ASM", global.AllStageMode)
+ini_write_real("SAVE", "ASM", global.AllStageMode)
 
+var _rep=1;
+repeat(10)
+{
+ini_write_real("SAVE", "SR", global.StageRecord[_rep])
+global.StageRecord[_rep]=ini_write_real("SAVE", "SR"+string(_rep), global.StageRecord[_rep])
+_rep+=1;
+}
 
 ini_close()
 }

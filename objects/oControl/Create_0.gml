@@ -169,6 +169,8 @@ global.MovieSel=0
 global.IsMinigame=0
 global.MinigameSel=0
 
+global.SecretBoss=0;
+
 global.MinigameSetSel=0
 global.MinigameSel2=0
 global.MinigameSel3=0	
@@ -243,6 +245,8 @@ global.CRTcustomBorder=true;
 global.UnlockCutscene[30]=0;
 global.PetPetted[20]=0;
 global.SecretBreak[30]=0;
+global.StageRecord[20]=0;
+global.FishData[20]=0;
 
 global.ColorMode=0;
 

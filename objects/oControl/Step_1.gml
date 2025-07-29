@@ -48,11 +48,13 @@ repeat(INPUT_MAX_PLAYERS)
 playerAmount=0;
 if charstatsetup=0
 {
+
 if instance_exists(oPlayer)
 {
 if oPlayer.anim=50 noshowtime=0
 
-mirrorMode=global.GMirrorMode;
+if global.Cheat[7] and global.NoCheat=1 and minigameroom=0
+mirrorMode=global.Cheat[7];
 with oPlayer
 {
 if dead global.ArcadeDeath=1

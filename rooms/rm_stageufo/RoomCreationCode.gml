@@ -5,6 +5,8 @@ global.HiScoreLevel=6
 
 oControl.stagePause=1
 
+global.StageRecord[5]=1;
+
 with oEnemySpawner
 {
 	GoBackY=1 

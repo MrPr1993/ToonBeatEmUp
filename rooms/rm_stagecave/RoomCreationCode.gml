@@ -5,6 +5,8 @@ global.HiScoreLevel=6
 
 oControl.stagePause=1
 
+global.StageRecord[6]=0;
+
 oControl.stageNext=rm_cutscene6a
 
 with oEnemySpawner

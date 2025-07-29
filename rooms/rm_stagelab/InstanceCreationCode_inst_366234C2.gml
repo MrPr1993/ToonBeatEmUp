@@ -1,3 +1,5 @@
-item=oHammer
-itemID=oHammer
+item=oShotgun
+itemID=oShotgun
 zAdd=-96
+
+breakID=17

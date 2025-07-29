@@ -131,6 +131,15 @@ ini_write_real("UCdata", ""+string(_rep), global.UnlockCutscene[_rep])
 _rep+=1;
 }
 
+ini_open("GAMEDATA/hiscore.ini");
+var _rep=1;
+repeat(20)
+{
+ini_write_real("FISHdata", ""+string(_rep), global.FishData[_rep])
+_rep+=1;
+}
+ini_close()
+
 ini_close()
 }
 
@@ -145,3 +154,4 @@ ini_open("GAMEDATA/hiscore.ini");
 ini_write_real("SECdata", ""+string(_no), global.SecretBreak[_no])
 ini_close()
 }
+

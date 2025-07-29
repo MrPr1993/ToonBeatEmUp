@@ -5,6 +5,8 @@ global.HiScoreLevel=5
 
 oControl.stagePause=1
 
+global.StageRecord[5]=2;
+
 oControl.stageNext=rm_cutscene5c
 
 

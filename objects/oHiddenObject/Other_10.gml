@@ -13,5 +13,7 @@ flashFX(x,y,z+zAdd,spr_hitflash,0,0.5,99999,1,1,c_white,1)
 item=instance_create_depth(x,y,depth,itemID)
 item.image_blend=itemcolor item.z=z+zAdd item.spdZ=-4
 }
+if global.SecretBreak[breakID]=0 {global.SecretBreak[breakID]=1 breaksecret_save(breakID)}
+
 
 instance_destroy()

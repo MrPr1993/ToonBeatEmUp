@@ -12,7 +12,7 @@ oControl.stageNext=rm_cutscene3b
 oControl.stagePause=1
 oControl.StageNumber=7
 
-
+global.StageRecord[3]=1;
 
 global.HiScoreLevel=3
 

@@ -3,6 +3,8 @@ global.HiScoreStage=4
 global.HiScoreLevel=4
 //with oEnemySpawner {timeline=tm_stage3 event_user(0)}
 
+global.StageRecord[4]=0;
+
 oControl.stagePause=1
 
 oControl.stageNext=rm_cutscene4a

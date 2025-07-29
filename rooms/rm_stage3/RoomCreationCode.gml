@@ -10,6 +10,7 @@ oControl.stagePause=1
 
 oControl.StageNumber=6
 
+global.StageRecord[3]=0;
 
 global.HiScoreLevel=3
 

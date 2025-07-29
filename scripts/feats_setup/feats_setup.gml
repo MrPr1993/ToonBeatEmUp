@@ -11,6 +11,9 @@ global.Feats[3]=2 ///Default to show them
 global.Feats[4]=2 ///Default to show them
 global.Feats[5]=2 ///Default to show them
 global.Feats[35]=2 ///Default to show them
+
+
+
 }
 
 function feats_stageunlock(){
@@ -215,6 +218,7 @@ if object_index=oContinueScreen if room=rm_stagefinal and global.Difficulty>=4 i
 	setfeats=1}
 break;
 
+
 case 32: featname="UNLOCK ALL STAGES" ///Clear arcade mode on very hard
 if object_index=oContinueScreen 
 if global.UnlockStage[1] and global.UnlockStage[2] and global.UnlockStage[3] and global.UnlockStage[4] and global.UnlockStage[5] and global.UnlockStage[6] and global.UnlockStage[7] and global.UnlockStage[8] and global.UnlockStage[9] and global.UnlockStage[10]
@@ -230,6 +234,9 @@ and global.PetPetted[5] and global.PetPetted[6] and global.PetPetted[7] setfeats
 break;
 
 case 34: featname="Detective"
+if global.SecretBreak[1] and global.SecretBreak[2] and global.SecretBreak[3] and global.SecretBreak[4] and global.SecretBreak[5] and global.SecretBreak[6] and global.SecretBreak[7] and global.SecretBreak[8] and global.SecretBreak[9] and global.SecretBreak[10]
+and global.SecretBreak[11] and global.SecretBreak[12] and global.SecretBreak[13] and global.SecretBreak[14] and global.SecretBreak[15] and global.SecretBreak[16] and global.SecretBreak[17] and global.SecretBreak[18]
+setfeats=1;
 break;
 
 case 35: featname="ENEMY KILL" ///
@@ -343,6 +350,12 @@ break;
 
 case 47: ///Minigame Queen
 if object_index=oContinueScreen if global.MinigameWin[1] and global.MinigameWin[2] and global.MinigameWin[3] and global.MinigameWin[4] and global.MinigameWin[5] and global.MinigameWin[6]
+setfeats=1;
+break;
+
+case 48:
+if object_index=oContinueScreen if global.FishData[1] and global.FishData[2] and global.FishData[3] and global.FishData[4] and global.FishData[5]
+and global.FishData[6] and global.FishData[7] and global.FishData[8] and global.FishData[9] and global.FishData[10]
 setfeats=1;
 break;
 

@@ -239,7 +239,7 @@ fishstr=0
 
 if character=-1 character=0;
 
-if global.Cheat[7]=1 if global.NoCheat=1
+if global.Cheat[7]=1000000 if global.NoCheat=1
 {
 var randomweapon=choose("HAMMER","TASER","SCIMITAR","PIPE","SHOVEL","PICKAXE","KNIFE","ONI CLUB","SPEAR","TRIDENT","TOMMYGUN","HARPOONGUN","DYNAMITE","KNIFE","PIE","WHIP")
 weapon_add(randomweapon)

@@ -5,17 +5,22 @@ switch (dataSelect)
 {
   case 1:
   hp=0.2 enemyID=1
-  descleft="AGE:32\nNAT.:USA\nH: 4'10\nW: 140LBS"
-descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
+
   charinfo_set(5,spr_burglar_stand,3,animsetup_burglar,draw_enemy,spr_enemypal,2,spr_enemyface,1,"MR.BURG",
 "Just your run of the mill small fry burglar, but stay sharp! They come in groups!")
-	dataabilities="BIKING,PUNCHING,KICKING"
 
+descleft="AGE:32\nNAT.:USA\nH: 4'10\nW: 140LBS"
+descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
+dataabilities="BIKING,PUNCHING,KICKING"
 
 if dataPal=2
 {
 enemy_switch("MR.LAR",0) 
 desc="Burg’s higher ranked relative. Not much stronger by comparison, but they can still kick!"
+
+descleft="AGE:33\nNAT.:USA\nH: 4'10\nW: 140LBS"
+descright="LIKES:STEALING,FRIES\nDISLIKES:DOGS\nHOBBY:HIKING"
+dataabilities="BIKING,PUNCHING,KICKING"
 }
 if dataPal=3
 {

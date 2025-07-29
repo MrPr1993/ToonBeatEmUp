@@ -1,3 +1,5 @@
-item=o1up
-itemID=o1up
+item=oWhip
+itemID=oWhip
 zAdd=0
+
+breakID=10

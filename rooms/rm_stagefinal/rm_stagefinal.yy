@@ -33,6 +33,7 @@
     {"name":"inst_5FD076C4","path":"rooms/rm_stagefinal/rm_stagefinal.yy",},
     {"name":"inst_5AECFE23","path":"rooms/rm_stagefinal/rm_stagefinal.yy",},
     {"name":"inst_1099EC0D","path":"rooms/rm_stagefinal/rm_stagefinal.yy",},
+    {"name":"inst_1CD25295","path":"rooms/rm_stagefinal/rm_stagefinal.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -66,6 +67,7 @@
         {"$GMRInstance":"v2","%Name":"inst_5FD076C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5FD076C4","objectId":{"name":"oFries","path":"objects/oFries/oFries.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":10912.0,"y":224.0,},
         {"$GMRInstance":"v2","%Name":"inst_5AECFE23","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5AECFE23","objectId":{"name":"oPizza","path":"objects/oPizza/oPizza.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":11008.0,"y":256.0,},
         {"$GMRInstance":"v2","%Name":"inst_1099EC0D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1099EC0D","objectId":{"name":"oApple","path":"objects/oApple/oApple.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":10944.0,"y":192.0,},
+        {"$GMRInstance":"v2","%Name":"inst_1CD25295","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CD25295","objectId":{"name":"oHiddenObject","path":"objects/oHiddenObject/oHiddenObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":160.0,},
       ],"layers":[],"name":"Compatibility_Instances_Depth_0","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
     {"$GMRTileLayer":"","%Name":"FinalPhase","depth":16777200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"FinalPhase","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":18,"SerialiseWidth":751,"TileCompressedData":[
           -709,-2147483648,6,458,459,268435960,268435959,503,504,-9,-2147483648,10,458,459,268435992,268435991,

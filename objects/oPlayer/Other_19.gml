@@ -18,7 +18,7 @@ if controlNO=2 global.P2Char=choose(0,1,2,3)
 if controlNO=3 global.P3Char=choose(0,1,2,3)
 if controlNO=4 global.P4Char=choose(0,1,2,3)
 }
-if global.Cheat[7]
+if global.Cheat[7]=999999
 and global.NoCheat
 {
 var randomweapon=choose("HAMMER","TASER","SCIMITAR","PIPE","SHOVEL","PICKAXE","KNIFE","ONI CLUB","SPEAR","TRIDENT","TOMMYGUN","HARPOONGUN","DYNAMITE","KNIFE","PIE","WHIP")

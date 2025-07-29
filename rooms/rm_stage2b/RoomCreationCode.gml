@@ -1,5 +1,7 @@
 musicplaystart(msc_airplane)
 
+global.StageRecord[2]=1;
+
 with oEnemySpawner
 {
 	GoBackY=1 

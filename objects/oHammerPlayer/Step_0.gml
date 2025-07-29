@@ -93,7 +93,10 @@ frame_set(2,2,0.25) if AnimFrame=3
 PlaySoundNoStack(snd_hit) 	PlaySound(voice2) breakresult=0
 shaketime=10 altresult2Text="SCORE" altresult2=0	
 	
-if win { with oControl minigameIDwin=1; altresult2Text="PERFECT" altresult2=10000}
+////It's near impossible to get a perfect win this for the feat so...
+with oControl minigameIDwin=1;
+	
+if win { altresult2Text="PERFECT" altresult2=10000}
 	
 strGo=1
 	var towermax=(toweramount*32);

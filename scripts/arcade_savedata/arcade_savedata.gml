@@ -51,6 +51,15 @@ global.Difficulty=ini_read_real("SAVE", "DIF", 2)
 global.SaveText=ini_read_string("SAVE", "STG", "EMPTY")
 global.ArcadeDeath=ini_read_real("SAVE", "AND", 0)
 global.AllStageMode=ini_read_real("SAVE", "ASM", 0)
+
+var _rep=1;
+repeat(10)
+{
+ini_write_real("SAVE", "SR", global.StageRecord[_rep])
+global.StageRecord[_rep]=ini_read_real("SAVE", "SR"+string(_rep), 0)
+_rep+=1;
+}
+
 ini_close()
 global.StageGoing=stagesave
 }
