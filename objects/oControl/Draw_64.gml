@@ -860,6 +860,8 @@ draw_sprite(bg_charselectcity,0,-320+p5.introtextadd,0)
 
 draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))
 
+
+
 if global.TrainingRoom=0
 if global.SkipDifficulty=0
 {
@@ -898,6 +900,10 @@ if -p5.key_left_pressed {if global.SaveFileNO=0 global.SaveFileNO=3 else global.
 
 if p5.key_right_pressed {if global.SaveFileNO=3 global.SaveFileNO=0 else global.SaveFileNO+=1 arcade_load() PlaySound(snd_select)}
 }
+
+if global.AllStageModeUnlock and global.MultiVS=0
+if global.SaveNumber=0 and global.MenuGlobal=0
+if key_LT {PlaySound(snd_select) global.AllStageMode^=1;}
 
 if key_Y if global.SaveFileNO!=0
 if global.SaveNumber!=0
@@ -982,8 +988,9 @@ if oControl.multiVSsetting=2 {alphaset=1 setsave=c_white}
 
 if global.SaveNumber=0 alphaset=0.75
 
+
 draw_set_color(setsave)
-draw_sprite_ext(spr_savefile,0,xadd,128+48,1,1,0,setsave,alphaset)
+draw_sprite_ext(spr_savefile,global.AllStageMode,xadd,128+48,1,1,0,setsave,alphaset)
 
 
 

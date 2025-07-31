@@ -124,6 +124,9 @@ ini_write_real("Mdata", "4", global.MinigameWin[4])
 ini_write_real("Mdata", "5", global.MinigameWin[5])
 ini_write_real("Mdata", "6", global.MinigameWin[6])
 
+ini_write_real("ULdata", "0", global.AllStageModeUnlock)
+ini_write_real("ULdata", "1", global.SecretBoss)
+
 var _rep=1;
 repeat(30)
 {

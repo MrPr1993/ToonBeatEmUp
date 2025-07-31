@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 enemy_endstep()
-throw_step()
+
 
 	///This overwrites the above's moves
 overwriteHitAir=1
@@ -447,3 +447,5 @@ if AnimFrame>1.5 if ground {AnimFrame+=0.1 sprite_index=ThrownSpr image_index=10
 
 if AnimFrame>3 and ground {canmove=1}
 }
+
+throw_step()

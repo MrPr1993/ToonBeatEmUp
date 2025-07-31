@@ -150,5 +150,9 @@ global.FishData[_rep]=ini_read_real("FISHdata", ""+string(_rep), 0);
 _rep+=1;
 }
 
+global.AllStageModeUnlock=ini_read_real("ULdata", "0", 0)
+global.SecretBoss=ini_read_real("ULdata", "1", 0)
+
+
 ini_close()
 }

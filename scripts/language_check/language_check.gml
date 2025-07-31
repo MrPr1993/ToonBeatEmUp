@@ -37,6 +37,8 @@ languagetext[20]="WATCH THE MORE CINEMATIC CUTSCENES!"
 languagetext[21]="CUTSCENES"
 languagetext[22]="CHECK OUT WHO'S ON TOP!"
 languagetext[23]="HIGH SCORE"
+languagetext[24]="WORLD TOUR"
+
 break;	
 case 1:
 languagetext[0]="¡LUCHA EN TODAS LAS ETAPAS DEL MODO ARCADE!"
@@ -63,6 +65,7 @@ languagetext[20]="¡MIRA LAS ESCENAS MÁS CINEMÁTICAS!"
 languagetext[21]="ESCENARIOS"
 languagetext[22]="¡MIRA QUIÉN ESTÁ ARRIBA!"
 languagetext[23]="PUNTUACIÓN ALTA"
+languagetext[24]="VIAJE MUNDIAL"
 break;}
 
 }
@@ -213,6 +216,7 @@ commandL[19]="STOP"
 commandL[20]="KEYBOARD"
 commandL[21]="JOYSTICK"
 commandL[22]="DELETE"
+commandL[23]="WORLD TOUR"
 break;
 case 1:
 commandL[0]="SELECCIONAR"
@@ -238,6 +242,7 @@ commandL[19]="DETENER"
 commandL[20]="TECLADO"
 commandL[21]="JOYSTICK"
 commandL[22]="BORRAR"
+commandL[23]="VIAJE MUNDIAL"
 break;
 
 }

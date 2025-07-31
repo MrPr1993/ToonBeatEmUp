@@ -43,3 +43,4 @@ with oPlayer if stagePose!=0 {anim=210 AnimFrame=0}
 alarm[6]=80
 
 pauseBuffer=888888888888888888
+

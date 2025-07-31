@@ -4,6 +4,9 @@ function arcade_saving(_no){
 if global.MenuGlobal=0 and global.SaveFileNO!=0
 {
 ini_open("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini");
+
+ini_write_real("SAVE", "ASM", global.AllStageMode)
+
 var stagenoset=_no//rm_opening;
 if room=rm_stagefinal stagenoset=rm_opening
 var stagesave=stage_check(stagenoset);
@@ -28,13 +31,12 @@ ini_write_real("SAVE", "CONT", global.Continues)
 ini_write_real("SAVE", "DIF", global.Difficulty)
 ini_write_real("SAVE", "AND", global.ArcadeDeath)
 ini_write_string("SAVE", "STG", global.SaveText)
-ini_write_real("SAVE", "ASM", global.AllStageMode)
+
 
 var _rep=1;
 repeat(10)
 {
 ini_write_real("SAVE", "SR", global.StageRecord[_rep])
-global.StageRecord[_rep]=ini_write_real("SAVE", "SR"+string(_rep), global.StageRecord[_rep])
 _rep+=1;
 }
 

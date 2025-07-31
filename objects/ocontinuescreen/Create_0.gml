@@ -301,7 +301,7 @@ case rm_stage2b: global.StageSave=rm_stage2c break;
 case rm_stage2c: global.StageSave=rm_stage3 break;
 case rm_stage3: global.StageSave=rm_stage4 break;
 case rm_stage4: global.StageSave=rm_stage5 break;
-case rm_stage5: global.StageSave=rm_stageswamp break;
+case rm_stage5: global.StageSave=rm_stagecarnival break;
 case rm_stagecarnival: global.StageSave=rm_stageswamp break;
 case rm_stageswamp: global.StageSave=rm_stagebeach break;
 case rm_stagebeach: global.StageSave=rm_stagemermaid break;
@@ -314,9 +314,8 @@ case rm_stageclouds: global.StageSave=rm_stagelab break;
 case rm_stagelab: global.StageSave=rm_stagefinal break;
 case rm_stagefinal: global.StageSave=rm_creditscene break;
 }
-stageNext=stnext;
-CutsceneStage=stnext;
-global.StageSave=stnext;
+stageNext=global.StageSave;
+CutsceneStage=global.StageSave;
 }
 
 

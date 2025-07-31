@@ -94,10 +94,16 @@ if AnimFrame<0.75 {sentflying=0 atk=0 AnimFrame+=0.01
 var getv=oControl.camX//__view_get( e__VW.XView, 0);
 
 if x!=clamp(x,getv-128,getv+320+128 )
+if canAttack=7 
+{
+instance_destroy();
+}
+else
 {PlaySoundNoStack(snd_carengine2)
 if image_xscale=1 {x=getv+320 x+=32} else {x=getv x-=32}
 
 	image_xscale=-image_xscale AnimFrame=0  y=targetEnemy.y}
+	
 
 }
 

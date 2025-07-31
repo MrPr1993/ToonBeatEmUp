@@ -35,7 +35,7 @@ global.P4Score=p4.PlayerScore
 global.P4Life=p4.PlayerLife
 HiScoreCheck=global.P4Score
 }
-if (HiScoreCheck>=global.HiScore10 and keyToGameOver=0 and global.StageSelect=0)
+if (HiScoreCheck>=global.HiScore10 and keyToGameOver=0 and global.StageSelect=0 and global.AllStageMode=0)
 {
 gameover_set() continueScreen=1
 }

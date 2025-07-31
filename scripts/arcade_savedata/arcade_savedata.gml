@@ -28,6 +28,9 @@ global.AllStageMode=0;
 global.SaveText="EMPTY";
 
 ini_open("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini");
+
+global.AllStageMode=ini_read_real("SAVE", "ASM", 0)
+
 var stagenoset="0";
 stagenoset=ini_read_string("SAVE","RMid", "0")
 var stagesave=stage_checkload(string(stagenoset));
@@ -50,12 +53,10 @@ global.Continues=ini_read_real("SAVE", "CONT", global.ContinueStart)
 global.Difficulty=ini_read_real("SAVE", "DIF", 2)
 global.SaveText=ini_read_string("SAVE", "STG", "EMPTY")
 global.ArcadeDeath=ini_read_real("SAVE", "AND", 0)
-global.AllStageMode=ini_read_real("SAVE", "ASM", 0)
 
 var _rep=1;
 repeat(10)
 {
-ini_write_real("SAVE", "SR", global.StageRecord[_rep])
 global.StageRecord[_rep]=ini_read_real("SAVE", "SR"+string(_rep), 0)
 _rep+=1;
 }
@@ -119,6 +120,36 @@ case rm_cutscene7: _findstage="7C"; global.SaveNumber=7; global.SaveText="STAGE 
 //
 case rm_stagefinal: _findstage="8"; global.SaveNumber=8; global.SaveText="STAGE 8"; break;
 }
+
+///For All Stage Mode
+if global.AllStageMode and global.MenuGlobal=0
+{
+var stnext=rm_stage2
+switch(room)
+{
+case rm_stage1: _findstage="2a"; global.StageSave=rm_stage2 global.SaveText="STAGE 2" break;
+case rm_stage2: _findstage="2b"; global.StageSave=rm_stage2b global.SaveText="STAGE 3" break;
+case rm_stage2b: _findstage="2c"; global.StageSave=rm_stage2c global.SaveText="STAGE 4" break;
+case rm_stage2c: _findstage="3a"; global.StageSave=rm_stage3 global.SaveText="STAGE 5" break;
+case rm_stage3: _findstage="3b"; global.StageSave=rm_stage4 global.SaveText="STAGE 6" break;
+case rm_stage4: _findstage="3c"; global.StageSave=rm_stage5 global.SaveText="STAGE 7" break;
+case rm_stage5: _findstage="4a"; global.StageSave=rm_stagecarnival global.SaveText="STAGE 8" break;
+case rm_stagecarnival: _findstage="4b"; global.StageSave=rm_stageswamp global.SaveText="STAGE 9" break;
+case rm_stageswamp: _findstage="4c"; global.StageSave=rm_stagebeach global.SaveText="STAGE 10" break;
+case rm_stagebeach: _findstage="5a"; global.StageSave=rm_stagemermaid global.SaveText="STAGE 11" break;
+case rm_stagemermaid: _findstage="5b"; global.StageSave=rm_stageufo global.SaveText="STAGE 12" break;
+case rm_stageufo: _findstage="5c"; global.StageSave=rm_stagedesert global.SaveText="STAGE 13" break;
+case rm_stagedesert: _findstage="6a"; global.StageSave=rm_stagecave global.SaveText="STAGE 14" break;
+case rm_stagecave: _findstage="6b"; global.StageSave=rm_stagesnow global.SaveText="STAGE 15" break;
+case rm_stagesnow: _findstage="6c"; global.StageSave=rm_stageclouds global.SaveText="STAGE 16" break;
+case rm_stageclouds: _findstage="7"; global.StageSave=rm_stagelab global.SaveText="STAGE 17" break;
+case rm_stagelab:  _findstage="8"; global.StageSave=rm_stagefinal global.SaveText="STAGE 18" break;
+case rm_stagefinal: _findstage="0"; global.StageSave=rm_creditscene break;
+}
+stageNext=global.StageSave;
+CutsceneStage=global.StageSave;
+}
+
 
 return _findstage
 }

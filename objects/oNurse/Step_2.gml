@@ -97,13 +97,15 @@ instance_destroy()
 
 }}
 
+}
+
 if current_pal=6 {bombRecharge=300+choose(320,340,360,380,400)
 	with bomb
 {
 destroyscript=function()
 {
 	flashFX(x,y,z,spr_smokemid,0,0.25,20,1,1,c_white,1)
-sm=instance_create_depth(x+32*image_xscale,y+1,0,oPharaohSmoke) sm.hspeed=1*image_xscale
+sm=instance_create_depth(x+32*image_xscale,y+1,0,oPharaohSmoke) sm.hspeed=0*image_xscale
 		sm.z=z-16 sm.dizzyHit=1 sm.MoveType=0 sm.isPharaoh=0
 		sm.sprite_index=spr_bigsmoke sm.mainSmoke=spr_bigsmoke
 	
@@ -113,9 +115,6 @@ PlaySound(snd_break)
 instance_destroy()
 
 }}
-}
-
-
 }
 
 }

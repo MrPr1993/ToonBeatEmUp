@@ -50,7 +50,8 @@ targetID.z=z+grabZ
 }
 targetID.vspeed=0
 targetID.hspeed=0
-}}
+}
+}
 
 if recovery!=0 recovery-=1 else {recovery=0}
 if recoveryThrow!=0 recoveryThrow-=1 else recoveryThrow=0

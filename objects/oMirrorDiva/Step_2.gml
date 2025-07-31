@@ -85,6 +85,7 @@ or anim=17 or anim=35 or anim=36 or anim=37 or anim=38 or anim=39 or anim=80 or 
 {enemyscript=mirrorscript}
 else {enemyscript=animsetup_enemy}
 
+throw_step()
 
 if dead=1 if visible
 {

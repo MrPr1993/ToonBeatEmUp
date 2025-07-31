@@ -395,7 +395,7 @@ creditmoment="WRITING BY\n \nMRPR1993\nSHADES\nSED2116\nFLASH TRICKSTAR" ;
 else if creditsTime<7+5*8
 creditmoment="CHARACTER DESIGN BY\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
 else if creditsTime<7+5*9
-creditmoment="CODING BY\n \nMrPr1993\nPixelated pope\nJujuAdams" ;
+creditmoment="CODING BY\n \nMRPR1993\nPIXELATED POPE\nJUJUADAMS" ;
 else if creditsTime<7+5*10
 creditmoment="CONCEPT ART BY\n \nMRPR1993\nSHADES\nSED2116" ;
 else if creditsTime<7+5*11
@@ -410,7 +410,28 @@ draw_set_halign(fa_center)
 draw_text(160,16,"")
 draw_text(160,32,creditmoment)
 
-if creditsTime>=120 draw_text(160,124,"THANKS FOR PLAYING!")
+var _setsave=0;
+
+if global.AllStageModeUnlock=0 if global.Feats[32]
+{global.AllStageModeUnlock=1 _setsave=1; creditsText="NICE JOB!\nALL STAGE MODE IS UNLOCKED!"}
+
+if global.SecretBoss=0 if global.Feats[44]
+{global.SecretBoss=1 _setsave=1; creditsText="NICE JOB...\nMEET ME AT THE EXTRAS..."}
+
+if _setsave { unlock_save()} ///44
+
+if creditsTime>=120
+{
+draw_text(160,124,"THANKS FOR PLAYING!")
+draw_set_color(c_white) creditsFlash+=1 if creditsFlash>=60 creditsFlash=0
+if creditsFlash>30
+draw_set_color(c_yellow)
+draw_text(160,124+12,string(creditsText))
+draw_set_color(c_white)
+}
+
+creditsText=""
+creditsFlash=0;
 
 draw_text(160,320+16+round(creditsCameoY),"CAMEO CUSTOMERS")
 draw_set_halign(fa_right)
@@ -445,7 +466,7 @@ var creditscameol=""+
 "\nKITE"+
 "\nTAKE2ACTION"+
 "\nASPIRING IDOL MERCURY"+
-"\IKKIn"+
+"\nIKKI"+
 "\n"+
 "\n"+
 "\n"

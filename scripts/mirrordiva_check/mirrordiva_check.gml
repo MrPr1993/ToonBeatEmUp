@@ -15,7 +15,7 @@ DamageVoice3=snd_viva11
 
 StandSpr=spr_viva_stand
 MoveSpr=spr_viva_move
-RunSpr=spr_viva_move
+RunSpr=spr_viva_run
 AtkSpr=spr_viva_attack
 AtkSpr2=spr_viva_attack2
 AtkSpr3=spr_wolfita_attack
@@ -50,7 +50,7 @@ DamageVoice3=snd_hina10
 
 StandSpr=spr_hina_stand
 MoveSpr=spr_hina_move
-RunSpr=spr_hina_move
+RunSpr=spr_hina_run
 AtkSpr=spr_viva_attack
 AtkSpr2=spr_viva_attack2
 AtkSpr3=spr_wolfita_attack
@@ -86,7 +86,7 @@ DamageVoice3=snd_bahati8
 
 StandSpr=spr_bahati_stand
 MoveSpr=spr_bahati_move
-RunSpr=spr_bahati_move
+RunSpr=spr_bahati_run
 AtkSpr=spr_bahati_attack
 AtkSpr2=spr_bahati_attack2
 AtkSpr3=spr_wolfita_attack
@@ -122,7 +122,7 @@ DamageVoice3=snd_sofia8
 
 StandSpr=spr_sofia_stand
 MoveSpr=spr_sofia_move
-RunSpr=spr_sofia_move
+RunSpr=spr_sofia_run
 AtkSpr=spr_viva_attack
 AtkSpr2=spr_viva_attack2
 AtkSpr3=spr_wolfita_attack

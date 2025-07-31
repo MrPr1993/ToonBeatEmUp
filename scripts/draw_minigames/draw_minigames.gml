@@ -150,7 +150,7 @@ if global.SlotMachineUnlock=0 MenuText="LOCKED"
 }
 
 ////SECRET BOSS
-if global.MinigameSel=5 {MenuText="???" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+if global.MinigameSel=5 {MenuText="...?" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_secret instantroom=1 stagewent=rm_secret
 }
 

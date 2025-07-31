@@ -48,6 +48,8 @@ if controlNO=2 charno=global.P2Char
 if controlNO=3 charno=global.P3Char
 if controlNO=4 charno=global.P4Char
 
+
+
 var palmax=15; if global.UnlockAltPal2 palmax=31;
 var charcheck=spr_vivapal;
 var customcheck=spr_custompal
