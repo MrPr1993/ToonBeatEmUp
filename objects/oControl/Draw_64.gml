@@ -901,6 +901,11 @@ if -p5.key_left_pressed {if global.SaveFileNO=0 global.SaveFileNO=3 else global.
 if p5.key_right_pressed {if global.SaveFileNO=3 global.SaveFileNO=0 else global.SaveFileNO+=1 arcade_load() PlaySound(snd_select)}
 }
 
+if oControl.betatest
+{
+if keyboard_check_pressed(ord("4")) global.AllStageModeUnlock^=1;
+}
+
 if global.AllStageModeUnlock and global.MultiVS=0
 if global.SaveNumber=0 and global.MenuGlobal=0
 if key_LT {PlaySound(snd_select) global.AllStageMode^=1;}
@@ -1331,12 +1336,14 @@ draw_sprite_ext(spr_difficultystar,global.HiScoreDif10, 320-64,round((yy4++ * 26
 
 if global.HiScoreSee=1
 {
-if key_up if hiScoreY>-10 hiScoreY-=0.1
-if key_down if hiScoreY<10 hiScoreY+=0.1
-hiScoreY=clamp(hiScoreY,-2.5,2.5)
-draw_text(8,8+16+16,"▲▼MOVE")
+//if key_up if hiScoreY>-10 hiScoreY-=0.1
+//if key_down if hiScoreY<10 hiScoreY+=0.1
+draw_text(8,8+16+16,"▲▼"+string(languagetext[24]))
 draw_command(7) global.StageGoing=rm_menu
 }
+
+
+
 if pauseBuffer!=0 pauseBuffer-=1
 if key_attack or key_start or key_A or key_B
 or key_cancel or keyboard_check_pressed(vk_escape)

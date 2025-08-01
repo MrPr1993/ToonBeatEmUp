@@ -26,6 +26,12 @@ weapon_add(randomweapon)
 }
 }
 
+featno[0]=0
+featno[1]=0
+featno[2]=0
+featno[3]=0
+featno[4]=0
+
 if controlNO=1
 current_pal=global.p1Pal;
 if controlNO=2
@@ -37,6 +43,8 @@ current_pal=global.p4Pal;
 
 //spawnplayericon()
 player_anim()
+
+
 
 alarm[4]=2
 

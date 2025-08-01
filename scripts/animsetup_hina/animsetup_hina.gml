@@ -1337,6 +1337,44 @@ if image_index=clamp(image_index,24,24.9)
 weaponanim(weaponspr,weaponIndex,5,-47,44*image_xscale,weaponcolor)
 }	
 
+if sprite_index=spr_hina_idle
+featno[2]++; else featno[2]=0;
+
+if featno[2]>=1200 {image_index=0 featno[2]=0 featno[3]=0 canmove=0 AnimFrame=0 anim=86}
+
+///86 - Sleep
+if anim=86
+{
+height=22
+sprite_index=spr_hina_sleep feats_check(50)
+
+if featno[3]=0
+{
+image_index+=0.25 if image_index=3 PlaySound(snd_hitground) image_index=clamp(image_index,0,4.5)
+
+AnimFrame++; if AnimFrame>=60 {AnimFrame=0
+	
+	{hrt=instance_create_depth(x+(39-4*image_xscale)*image_xscale,y+1,-1,oFlashFX)
+		hrt.z=z-20 hrt.depth=depth-1 hrt.hspeed=0.8*image_xscale
+		with hrt
+		{alarm[0]=60 sprite_index=spr_scorefont image_speed=0 animEnd=0
+image_index=35 zSpeed=2.04 zSpeedAdd=-0.1 isDepth=0
+}}
+	
+	}
+if image_index>=4.2
+if key_right or -key_left or key_up or -key_down or key_attack or key_super or key_shield_pressed or key_punchback or key_taunt or key_jump
+{featno[3]=1 AnimFrame=0 image_index=5}
+}
+
+if featno[3]=1
+{
+AnimFrame+=1
+if AnimFrame>=30 {image_index=6} if AnimFrame>=35 {image_index=0 sprite_index=spr_hina_stand canmove=1}
+}
+
+}
+
 	///Stand
 	///Move
 	///Jump

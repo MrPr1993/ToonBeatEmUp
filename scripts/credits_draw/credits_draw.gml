@@ -412,11 +412,15 @@ draw_text(160,32,creditmoment)
 
 var _setsave=0;
 
+
+if global.MenuGlobal=0
+{
 if global.AllStageModeUnlock=0 if global.Feats[32]
 {global.AllStageModeUnlock=1 _setsave=1; creditsText="NICE JOB!\nALL STAGE MODE IS UNLOCKED!"}
 
 if global.SecretBoss=0 if global.Feats[44]
 {global.SecretBoss=1 _setsave=1; creditsText="NICE JOB...\nMEET ME AT THE EXTRAS..."}
+}
 
 if _setsave { unlock_save()} ///44
 
@@ -534,7 +538,7 @@ var creditscameor="\n"+
 ///Flash Trickstar - And Peterjuice
 //YinSeiryu - Samurai with cats 
 //AnastasiaSols - Gal
-
+///ANAccount & RolyHolyBoly
 
 ///OTHER
 //butchtheamazing - ???

@@ -52,12 +52,14 @@ draw_sprite_ext(spr_photoplaceholder,0,0+320*mirrorMode,0,1-2*mirrorMode,1,0,c_w
 if stageClear=1 or isGameOver=1
 {
 filmY=lerp(filmY,1,0.1)
+
 mapXFilm-=1 if mapXFilm<-16 mapXFilm+=16
 for (var iI=0; iI<=240+64; iI+=16)
 {
 draw_sprite_ext(spr_filmpart,1,round(-9+9*filmY),mapXFilm+iI,1,1,90,c_white,1);
 draw_sprite_ext(spr_filmpart,1,312+round(9-9*filmY),mapXFilm+iI,1,1,90,c_white,1);
 }
+
 }
 
 draw_set_alpha(stageclearblack) draw_set_color(c_black)

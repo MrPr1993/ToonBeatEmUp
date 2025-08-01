@@ -139,7 +139,7 @@ global.StageGoing=rm_arena global.ArenaType=3;
 if global.BossBattleUnlock=0 MenuText="LOCKED"
 }
 
-if global.MinigameSel=3 {MenuText="RELAX AS YOU TAKE ON THE LAKE TO FISH.\n"+"HIGH SCORE:"+string(global.HiScoreFishing) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+if global.MinigameSel=3 {MenuText="RELAX AS YOU TAKE ON THE LAKE TO FISH.\n"//+"HIGH SCORE:"+string(global.HiScoreFishing) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_fishing 
 if global.FishingUnlock=0 MenuText="LOCKED"
 }
@@ -169,17 +169,17 @@ global.StageGoing=rm_eatinggame  global.ArenaType=7;}
 
 if global.MinigameSetSel=2
 {global.MultiVS=0
-if global.MinigameSel3=0 {MenuText="WRECK THAT CAR TO BITS!\n"+"HIGH SCORE:"+string(global.HiScoreMini1) if global.MiniGameUnlock1=0 MenuText="LOCKED"
+if global.MinigameSel3=0 {MenuText="WRECK THAT CAR TO BITS!\n" if global.MiniGameUnlock1=0 MenuText="LOCKED"
 global.StageGoing=rm_cargame}
-if global.MinigameSel3=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION!\n"+"HIGH SCORE:"+string(global.HiScoreMini2) if global.MiniGameUnlock2=0 MenuText="LOCKED"
+if global.MinigameSel3=1 {MenuText="BREAK A BUNCH OF BRICKS WITH PERCISION!\n" if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_brickbreak}
-if global.MinigameSel3=2 {MenuText="EAT A MEAL IN THIS EATING COMPETITION!\n"+"HIGH SCORE:"+string(global.HiScoreMini3) if global.MiniGameUnlock3=0 MenuText="LOCKED"
+if global.MinigameSel3=2 {MenuText="EAT A MEAL IN THIS EATING COMPETITION!\n" if global.MiniGameUnlock3=0 MenuText="LOCKED"
 global.StageGoing=rm_eatinggame}
-if global.MinigameSel3=3 {MenuText="SING TO SHATTER THE COMPETITION!\n"+"HIGH SCORE:"+string(global.HiScoreMini4) if global.MiniGameUnlock4=0 MenuText="LOCKED"
+if global.MinigameSel3=3 {MenuText="SING TO SHATTER THE COMPETITION!\n" if global.MiniGameUnlock4=0 MenuText="LOCKED"
 global.StageGoing=rm_singgame}
-if global.MinigameSel3=4 {MenuText="RUN FROM THE BIG BAD BULL!\n"+"HIGH SCORE:"+string(global.HiScoreMini5) if global.MiniGameUnlock5=0 MenuText="LOCKED"
+if global.MinigameSel3=4 {MenuText="RUN FROM THE BIG BAD BULL!\n" if global.MiniGameUnlock5=0 MenuText="LOCKED"
 global.StageGoing=rm_bullstage}
-if global.MinigameSel3=5 {MenuText="RING THE BELL WITH A SLAM OF THE HAMMER!\n"+"HIGH SCORE:"+string(global.HiScoreMini6) if global.MiniGameUnlock6=0 MenuText="LOCKED"
+if global.MinigameSel3=5 {MenuText="RING THE BELL WITH A SLAM OF THE HAMMER!\n" if global.MiniGameUnlock6=0 MenuText="LOCKED"
 global.StageGoing=rm_hammergame}
 }	
 

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.672744,
+  "duration":0.36120182,
   "name":"snd_plant3",
   "parent":{
     "name":"Enemies",

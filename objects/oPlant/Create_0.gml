@@ -22,8 +22,8 @@ height=90
 
 specialFX=0
 
-isHeavy=1
-throwHeavy=1
+isHeavy=0
+throwHeavy=0
 
 DeathCry=snd_plant2
 DamageVoice1=snd_plant1

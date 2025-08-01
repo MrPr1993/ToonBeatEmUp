@@ -94,7 +94,7 @@ if hppercent1<=1 or hppercent2<=1 or hppercent3<=1 or hppercent4<=1
 {if nodeath setfeats=1} break;
 
 case 11: featname="trainer" ///training
-if global.TrainingClear[0]=1 and global.TrainingClear[1]=1 and global.TrainingClear[2]=1
+if global.TrainingClear[1]=1 and global.TrainingClear[2]=1
 and global.TrainingClear[3]=1 and global.TrainingClear[4]=1 setfeats=1;
 break;
 
@@ -362,6 +362,19 @@ break;
 case 49: featname="It's Bad For You!"
 if object_index=oPlayer {if sprite_index=spr_viva_cough setfeats=1}
 break;
+
+case 50: featname="ZZZ"
+if object_index=oPlayer {if sprite_index=spr_hina_sleep setfeats=1}
+break;
+
+case 51: featname="Nice Froggy..."
+if object_index=oPlayer {if sprite_index=spr_bahati_petlowF setfeats=1}
+break;
+
+case 52: featname="Boingy"
+if object_index=oPlayer {if featno[2]>=8  setfeats=1}
+break;
+
 ///45 feats
 ///
 ///Defeat 

@@ -1,10 +1,9 @@
 function sofia_hitreaction() {
 	if anim=16 or anim=18
 	{
-
+    
 
 	with selfatk 
-
 	if hitID!=-1
 	if instance_exists(hitID)
 	{
@@ -13,8 +12,5 @@ function sofia_hitreaction() {
 	damageFall-=1 damageFallTime=60}
 	}
 	}
-
-
-
 
 }

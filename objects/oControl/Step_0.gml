@@ -106,6 +106,16 @@ if instance_exists(oSettings) with oSettings language_check();
 if instance_exists(oCharacterInfo) with oCharacterInfo language_check();
 }
 
+if room=rm_hiscore
+{
+if global.HiScoreSee=1
+{
+if key_up if hiScoreY>-10 hiScoreY-=0.1
+if key_down if hiScoreY<10 hiScoreY+=0.1
+hiScoreY=clamp(hiScoreY,-2.5,2.5)
+}
+}
+
 if room!=rm_titlescreen and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and room!=rm_howtoplay
 and room!=rm_cutscene1 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop

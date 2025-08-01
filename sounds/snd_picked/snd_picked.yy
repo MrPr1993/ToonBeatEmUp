@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.392245,
+  "duration":0.3922449,
   "name":"snd_picked",
   "parent":{
     "name":"General",

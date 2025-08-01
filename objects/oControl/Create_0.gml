@@ -281,7 +281,7 @@ global.enemytest=0
 global.enemytestB=0
 
 global.AllStageMode=0;
-global.AllStageModeUnlock=1;
+global.AllStageModeUnlock=0;
 
 global.P1Life=global.LifeStart
 global.P2Life=global.LifeStart

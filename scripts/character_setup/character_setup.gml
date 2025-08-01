@@ -15,6 +15,7 @@ playerNO=0
 specialtaunt=-1
 specialanim=-1
 specialtimes[9]=0
+featno[4]=0;
 
 specialitemreaction=-1;
 

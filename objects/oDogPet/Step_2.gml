@@ -25,6 +25,9 @@ if AnimFrame>2 AnimFrame=0
 
 if petID!=-1
 {
+
+if petNO=7 and petID.character=2 with petID {sprite_index=spr_bahati_petlowF feats_check(51)}
+
 if anim=1 if petID.anim!=10010 {petID=-1 anim=0 interact=0}
 	
 if !instance_exists(petID) petID=-1
