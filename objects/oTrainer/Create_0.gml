@@ -44,6 +44,8 @@ locksuper=1
 
 detectsuper=0
 
+timeradd=0;
+
 trainingcheck=0
 trainingdraw=function() {}
 

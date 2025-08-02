@@ -12,10 +12,10 @@ targetID=selfatk.hitID
 	targetID.thrownDMG=0
 	targetID.vspeed=0
 	targetID.hspeed=0
-	targetID.canDrag=0
-	targetID.grabLockX=x	
+	targetID.canDrag=1
+	//targetID.grabLockX=x	
 	with targetID
-	{shaketime=0
+	{shaketime=0 sentflying=0
 	Throw=1
 	AnimFrame=0 ///Grab Enemy Frame
 	anim=30

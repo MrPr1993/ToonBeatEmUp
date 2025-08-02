@@ -1,10 +1,10 @@
 enemy_endstep()
-throw_step()
 
 cRed=-0.25;
 cBlue=0.0;
 cGreen=-0.25;
 
+character=charchoose;
 
 overwriteAttack=1
 overwriteAttack1=1
@@ -15,26 +15,37 @@ overwriteAttack5=1
 
 if anim=0 {key_right=0 key_left=0 key_attack=0 sprite_index=StandSpr}
 
+
 if anim=35
 {mirrorAIThrowTime+=1
 if mirrorAIThrowTime>10+random(10)
-{AnimFrame=0
-	mirrorAIThrowTime=choose(0,1,2)
+{AnimFrame=0 
+	mirrorAIThrowTime=choose(0,1,0)
+	var _voice=snd_viva4
+	if character=1 _voice=snd_hina5
+	if character=2 _voice=snd_bahati3
+	if character=3 _voice=snd_sofia4
+		
 	switch(mirrorAIThrowTime)
 	{
-	case 0: 	anim=37 break;
-	case 1: 	anim=38 break;
-	case 2: anim=36 break;
+	case 0: anim=37 PlaySound(_voice) break;
+	case 1: anim=38 PlaySound(_voice) break;
+	//case 2: anim=36  break;
 	
 	}
+	if anim=37 and character=2 {AnimFrame=0 ground=0 z-=2 zSpeed=-8}
+	
+	
 	}
 }
+
+if anim=82 and character=2 {if !ground key_attack=1}
 
 if anim=9000
 {AnimFrame=0 key_right=0 key_left=0
 if distance_to_point(targetEnemy.x,targetEnemy.y)>50 {
 if image_xscale=1 key_right=1 else key_left=-1 
-anim=choose(10,80,81,15,9001,9002)
+anim=choose(10,80,15,9001,9002) //81
 
 if anim=15 {ground=0 zSpeed=-6}
 
@@ -48,7 +59,7 @@ if anim=9001 ///Running attack
 {sprite_index=RunSpr 
 sentflying=4*image_xscale
 AnimFrame+=0.1
-image_index+=0.2
+image_index+=0.2 if image_index>=6 image_index=0
 
 if y!=clamp(y,targetEnemy.y-4,targetEnemy.y+4)
 {
@@ -81,11 +92,13 @@ if AnimFrame>2 {atk=0 canmove=1 anim=0}
 }
 
 if anim=10 or anim=11 or anim=12 or anim=13 or anim=14 or anim=15 or anim=16
-or anim=17 or anim=35 or anim=36 or anim=37 or anim=38 or anim=39 or anim=80 or anim=81 or anim=25
+or anim=17 or anim=35 or anim=36 or anim=37 or anim=38 or anim=39 or anim=80 or anim=81 or anim=82 or anim=25
 {enemyscript=mirrorscript}
 else {enemyscript=animsetup_enemy}
 
 throw_step()
+
+
 
 if dead=1 if visible
 {

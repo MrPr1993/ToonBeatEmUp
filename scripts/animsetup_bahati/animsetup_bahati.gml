@@ -1258,14 +1258,14 @@ targetID.playerFrom=playerNO
 
 	///Side Attack
 	if anim=81
-	{if AnimFrame=0 PlaySound(snd_bahati5) weaponBack=-1
+	{if AnimFrame=0 {PlaySound(snd_bahati5) sentflying=0} weaponBack=-1
 
 
 	sprite_index=spr_bahati_sideatk image_index=AnimFrame
 
 	atkcol_set(15,0,14,1.75,1,64) MoveType=1 damage=0.18
 
-	if AnimFrame=clamp(AnimFrame,0.8,2.2) {afterimage_create(4,make_colour_rgb(239,222, 0),current_pal,my_pal_sprite,0) sentflying=12*image_xscale atk=1} else {sentflying=lerp(sentflying,0,0.3) atk=0}
+	if AnimFrame=clamp(AnimFrame,0.8,2.2) {afterimage_create(4,make_colour_rgb(239,222, 0),current_pal,my_pal_sprite,0) sentflying=4*image_xscale atk=1} else {sentflying=lerp(sentflying,0,0.3) atk=0}
 
 	frame_set(0,0,0.2) if AnimFrame=1 {zSpeed=-4}
 	frame_set(1,1,0.5)

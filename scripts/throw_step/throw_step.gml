@@ -20,6 +20,7 @@ function throw_step() {
 	sentflying=-2
 	AnimFrame=3
 	anim=5
+	throwcombo=2
 	}
 
 	if targetID.canDrag=1

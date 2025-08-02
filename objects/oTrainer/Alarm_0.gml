@@ -207,7 +207,7 @@ tutorialtext="OKAY WE MIGHT HAVE KINDA ROUGHED UP BAGGY TOO MUCH. SO LET'S GIVE 
 } break;
 
 case 15: {
-tutorialtext="USE TAUNT WITH"
+tutorialtext="USE TAUNT WITH" 
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
 draw_buttontext(244+60,80,8,"",spr_commandbutton,9+6*commandMul,"","")};
 trainingdetect=function() {
@@ -215,7 +215,7 @@ if oPlayer.anim=83
 with oTrainer {trainingreact(1)}}} break;
 
 case 16: 
-{alarm[0]=1600
+{alarm[0]=3200
 trainingdetect=function() {	with oPlayer canmove=0 
 trainingreact(0) 
 tutorialtext="NOW FOR THE SPECIALS. THEY CAN BE USED FOR STRONGER MOVES BUT THEY DRAIN YOUR HEALTH. SO TAKE IT EASY ON EM'."}
@@ -241,7 +241,7 @@ with oTrainer {trainingreact(1)}}} break;
 ////Training Parts
 
 case 19: 
-{with oPlayer {canControl=0 } alarm[0]=1500 locksuper=0
+{with oPlayer {canControl=0 } alarm[0]=3400 locksuper=0
 trainingdetect=function() {	 
 trainingreact(0) 
 tutorialtext="AND NOW FOR THE GRAND FINALE. SHOWTIME. YOU CAN FILL YOUR BAR BY DEALING OR TAKING DAMAGE."}
