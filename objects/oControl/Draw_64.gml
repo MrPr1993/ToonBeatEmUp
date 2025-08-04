@@ -643,7 +643,27 @@ draw_set_halign(fa_left)
 if stageIntro!=0 stageIntro-=0.05 else stageIntro=0
 draw_set_color(c_black) draw_set_alpha(1)
 if stageIntro!=0
-draw_rectangle(-2,-2,320*stageIntro,999,false)
+{
+//draw_rectangle(-2,-2,320*stageIntro,999,false)
+
+if (surface_exists(surf_circle)) {
+draw_set_color(c_black);
+surface_set_target(surf_circle)
+draw_rectangle(0,0,480,270,false)
+gpu_set_blendmode(bm_subtract)
+var defx=160; var defy=120; if isCutscene defy=192/2
+var irisout=stageIntro*30
+if irisout<=29
+draw_circle(defx,defy,200-((irisout/30)*200),false)
+gpu_set_blendmode(bm_normal)
+surface_reset_target()
+draw_surface(surf_circle,0,0)
+}
+else
+{
+surf_circle = surface_create(320,240)
+}
+}
 draw_set_color(c_white) draw_set_alpha(1)
 
 ///Screen FX for exit
@@ -1784,8 +1804,30 @@ draw_set_halign(fa_left)
 ///Screen FX for intro
 if stageIntro!=0 stageIntro-=0.05 else stageIntro=0
 draw_set_color(c_black) draw_set_alpha(1)
+
 if stageIntro!=0
-draw_rectangle(-2,-2,320*stageIntro,999,false)
+{
+//draw_rectangle(240-(irisout/30)*240,135-(irisout/30)*135,240+(irisout/30)*240,135+(irisout/30)*135,false)
+if (surface_exists(surf_circle)) {
+draw_set_color(c_black);
+surface_set_target(surf_circle)
+draw_rectangle(0,0,480,270,false)
+gpu_set_blendmode(bm_subtract)
+var defx=160; var defy=120; if isCutscene defy=192/2
+var irisout=stageIntro*30
+if irisout<=29
+draw_circle(defx,defy,200-((irisout/30)*200),false)
+gpu_set_blendmode(bm_normal)
+surface_reset_target()
+draw_surface(surf_circle,0,0)
+}
+else
+{
+surf_circle = surface_create(320,240)
+}
+
+//draw_rectangle(-2,-2,320*stageIntro,999,false)
+}
 draw_set_color(c_white) draw_set_alpha(1)
 
 ///Screen FX for exit
@@ -1794,7 +1836,29 @@ if stageEndFX=1
 stageEnd+=0.05 if stageEnd>1.5 room_goto(CutsceneStage) ///Cutscene End
 draw_set_color(c_black) draw_set_alpha(1)
 if stageEnd!=0
-draw_rectangle(320-320*stageEnd,-2,320+2,999,false)
+{
+//draw_rectangle(320-320*stageEnd,-2,320+2,999,false)
+
+
+if (surface_exists(surf_circle)) {
+draw_set_color(c_black);
+surface_set_target(surf_circle)
+draw_rectangle(0,0,480,270,false)
+gpu_set_blendmode(bm_subtract)
+var defx=160; var defy=120; if isCutscene defy=192/2
+var irisout=stageEnd*30
+if irisout<=29
+draw_circle(defx,defy,200-((irisout/30)*200),false)
+gpu_set_blendmode(bm_normal)
+surface_reset_target()
+draw_surface(surf_circle,0,0)
+}
+else
+{
+surf_circle = surface_create(320,240)
+}
+
+}
 draw_set_color(c_white) draw_set_alpha(1)
 }
 }
@@ -1838,6 +1902,38 @@ if quickMapLerp!=0
 draw_sprite_ext(spr_whitecol,0,-8,-8,99999,9999,0,c_black,1)
 
 draw_command(1)
+}
+
+if instance_exists(oBrickBreakGame) or instance_exists(oBullGame) or instance_exists(oEatingContestGame)
+or instance_exists(oSingGame) or instance_exists(oHammerGame)  or instance_exists(objSlotParent) or room=rm_paletteeditor
+{
+if stageIntro!=0 stageIntro-=0.05 else stageIntro=0
+draw_set_color(c_black) draw_set_alpha(1)
+
+if stageIntro!=0
+{
+//draw_rectangle(240-(irisout/30)*240,135-(irisout/30)*135,240+(irisout/30)*240,135+(irisout/30)*135,false)
+if (surface_exists(surf_circle)) {
+draw_set_color(c_black);
+surface_set_target(surf_circle)
+draw_rectangle(0,0,480,270,false)
+gpu_set_blendmode(bm_subtract)
+var defx=160; var defy=120; if isCutscene defy=192/2
+var irisout=stageIntro*30
+if irisout<=29
+draw_circle(defx,defy,200-((irisout/30)*200),false)
+gpu_set_blendmode(bm_normal)
+surface_reset_target()
+draw_surface(surf_circle,0,0)
+}
+else
+{
+surf_circle = surface_create(320,240)
+}
+
+//draw_rectangle(-2,-2,320*stageIntro,999,false)
+}	
+draw_set_color(c_white) draw_set_alpha(1)
 }
 
 menu_draw()

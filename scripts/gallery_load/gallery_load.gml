@@ -134,33 +134,33 @@ picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0
 }
 if galno=14 ///Concept Art
 {pictureMax=20
-//sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="Enemy Concept Art 1" sprite_replace(spr_galleryimg1,"Gallery/EnemyConcept1.png",0,0,1,0,0)
-picturetext[2]="Enemy Concept Art 2" sprite_replace(spr_galleryimg2,"Gallery/EnemyConcept2.png",0,0,1,0,0)
-picturetext[3]="Enemy Concept Art 3" sprite_replace(spr_galleryimg3,"Gallery/EnemyConcept3.png",0,0,1,0,0)
-picturetext[4]="Enemy Concept Art 4" sprite_replace(spr_galleryimg4,"Gallery/EnemyConcept4.png",0,0,1,0,0)
-picturetext[5]="Enemy Concept Art 5" sprite_replace(spr_galleryimg5,"Gallery/EnemyConcept5.png",0,0,1,0,0)
+//sprite_replace(spr_galleryimg1,"Gallery/ConceptArt/VivaBeach.png",0,0,1,0,0)
+picturetext[1]="Enemy Concept Art 1" sprite_replace(spr_galleryimg1,"Gallery/ConceptArt/EnemyConcept1.png",0,0,1,0,0)
+picturetext[2]="Enemy Concept Art 2" sprite_replace(spr_galleryimg2,"Gallery/ConceptArt/EnemyConcept2.png",0,0,1,0,0)
+picturetext[3]="Enemy Concept Art 3" sprite_replace(spr_galleryimg3,"Gallery/ConceptArt/EnemyConcept3.png",0,0,1,0,0)
+picturetext[4]="Enemy Concept Art 4" sprite_replace(spr_galleryimg4,"Gallery/ConceptArt/EnemyConcept4.png",0,0,1,0,0)
+picturetext[5]="Enemy Concept Art 5" sprite_replace(spr_galleryimg5,"Gallery/ConceptArt/EnemyConcept5.png",0,0,1,0,0)
 
-picturetext[6]="Boss Concept Art 1" sprite_replace(spr_galleryimg6,"Gallery/BossConcept1.png",0,0,1,0,0)
-picturetext[7]="Boss Concept Art 2" sprite_replace(spr_galleryimg7,"Gallery/BossConcept2.png",0,0,1,0,0)
-picturetext[8]="Boss Concept Art 3" sprite_replace(spr_galleryimg8,"Gallery/BossConcept3.png",0,0,1,0,0)
-picturetext[9]="Boss Concept Art 4" sprite_replace(spr_galleryimg9,"Gallery/BossConcept4.png",0,0,1,0,0)
-picturetext[10]="Boss Concept Art 5" sprite_replace(spr_galleryimg10,"Gallery/BossConcept5.png",0,0,1,0,0)
-picturetext[11]="Boss Concept Art 6" sprite_replace(spr_galleryimg11,"Gallery/BossConcept6.png",0,0,1,0,0)
+picturetext[6]="Boss Concept Art 1" sprite_replace(spr_galleryimg6,"Gallery/ConceptArt/BossConcept1.png",0,0,1,0,0)
+picturetext[7]="Boss Concept Art 2" sprite_replace(spr_galleryimg7,"Gallery/ConceptArt/BossConcept2.png",0,0,1,0,0)
+picturetext[8]="Boss Concept Art 3" sprite_replace(spr_galleryimg8,"Gallery/ConceptArt/BossConcept3.png",0,0,1,0,0)
+picturetext[9]="Boss Concept Art 4" sprite_replace(spr_galleryimg9,"Gallery/ConceptArt/BossConcept4.png",0,0,1,0,0)
+picturetext[10]="Boss Concept Art 5" sprite_replace(spr_galleryimg10,"Gallery/ConceptArt/BossConcept5.png",0,0,1,0,0)
+picturetext[11]="Boss Concept Art 6" sprite_replace(spr_galleryimg11,"Gallery/ConceptArt/BossConcept6.png",0,0,1,0,0)
 
-picturetext[12]="NPC Concept" sprite_replace(spr_galleryimg12,"Gallery/NPCconcept.png",0,0,1,0,0)
+picturetext[12]="NPC Concept" sprite_replace(spr_galleryimg12,"Gallery/ConceptArt/NPCconcept.png",0,0,1,0,0)
 
-picturetext[13]="Misc Concept 1" sprite_replace(spr_galleryimg13,"Gallery/MiscConcept1.png",0,0,1,0,0)
-picturetext[14]="Misc Concept 2" sprite_replace(spr_galleryimg14,"Gallery/MiscConcept2.png",0,0,1,0,0)
+picturetext[13]="Misc Concept 1" sprite_replace(spr_galleryimg13,"Gallery/ConceptArt/MiscConcept1.png",0,0,1,0,0)
+picturetext[14]="Misc Concept 2" sprite_replace(spr_galleryimg14,"Gallery/ConceptArt/MiscConcept2.png",0,0,1,0,0)
 
-picturetext[15]="Underwater Stage" sprite_replace(spr_galleryimg15,"Gallery/StageConcept1.png",0,0,1,0,0)
+picturetext[15]="Underwater Stage" sprite_replace(spr_galleryimg15,"Gallery/ConceptArt/StageConcept1.png",0,0,1,0,0)
 
-picturetext[16]="Shade's Stages 1" sprite_replace(spr_galleryimg16,"Gallery/ShadesStages1.png",0,0,1,0,0)
-picturetext[17]="Shade's Stages 2" sprite_replace(spr_galleryimg17,"Gallery/ShadesStages2.png",0,0,1,0,0)
+picturetext[16]="Shade's Stages 1" sprite_replace(spr_galleryimg16,"Gallery/ConceptArt/ShadesStages1.png",0,0,1,0,0)
+picturetext[17]="Shade's Stages 2" sprite_replace(spr_galleryimg17,"Gallery/ConceptArt/ShadesStages2.png",0,0,1,0,0)
 
-picturetext[18]="Shade's Concepts 1" sprite_replace(spr_galleryimg18,"Gallery/SEDConcept1.png",0,0,1,0,0)
-picturetext[19]="Shade's Concepts 2" sprite_replace(spr_galleryimg19,"Gallery/SEDConcept2.png",0,0,1,0,0)
-picturetext[20]="Shade's Concepts 3" sprite_replace(spr_galleryimg20,"Gallery/SEDConcept3.png",0,0,1,0,0)
+picturetext[18]="Shade's Concepts 1" sprite_replace(spr_galleryimg18,"Gallery/ConceptArt/SEDConcept1.png",0,0,1,0,0)
+picturetext[19]="Shade's Concepts 2" sprite_replace(spr_galleryimg19,"Gallery/ConceptArt/SEDConcept2.png",0,0,1,0,0)
+picturetext[20]="Shade's Concepts 3" sprite_replace(spr_galleryimg20,"Gallery/ConceptArt/SEDConcept3.png",0,0,1,0,0)
 
 }
 if galno=15

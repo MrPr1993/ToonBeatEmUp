@@ -5,6 +5,8 @@
 // You can write your code in this editor
 filmY=0 mapXFilm=0
 
+surf_circle = surface_create(320,240);
+
 minigameID=0;
 
 seefeats=0;
@@ -482,7 +484,7 @@ p5=instance_create_depth(0,0,-1,oPlayerDisembodied) with p5 {canControl=1 contro
 continuePlayer=1
 
 fadetoblack=0
-faderec=320
+faderec=0//320
 
 alarm[2]=90
 continueScreen=1

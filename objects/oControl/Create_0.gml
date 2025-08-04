@@ -2,6 +2,8 @@ room_speed=60
 
 if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
 
+surf_circle = surface_create(320,240);
+
 ambushtime=0;
 
 minigameID=0;
