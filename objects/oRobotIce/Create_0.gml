@@ -52,12 +52,12 @@ robotArmLYscale=1
 
 losepartR=0.25
 robotArmR=1
-robotArmRsprite=spr_robot_flame
+robotArmRsprite=spr_robot_freezer
 robotArmRIndex=0
 robotArmRX=14
 robotArmRY=-64
 robotArmRAngle=0
-robotArmRobject=oFlameArm
+robotArmRobject=oIceArm
 robotArmRXscale=1
 robotArmRYscale=1
 

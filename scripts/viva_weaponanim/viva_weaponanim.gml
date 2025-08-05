@@ -266,6 +266,38 @@ with flame	{z=-57 image_speed=0.5 sprite_index=spr_hina_firebreath2 alarm[0]=0}
 	if AnimFrame>3.9 {hurt=0 atk=0 canmove=1 hit=0}
 	}	
 
+	///Ice Gun
+	if weapontype=19946
+	{
+	if AnimFrame=0 {weaponLife-=1-1*global.Cheat[10]*global.NoCheat specialtimes[6]=0 specialtimes[5]=0}
+	specialtimes[6]+=0.25 if specialtimes[6]=2 specialtimes[6]=0
+	sprite_index=spr_viva_gunstand if AnimFrame<1 atk=1 else atk=0
+	frame_set(0,0,0.5) if AnimFrame=1 {
+		PlaySoundNoStack(weaponProjSnd)
+	}
+	frame_set(1,1+specialtimes[6],0.025) if AnimFrame=clamp(AnimFrame,1,2) {atk=1
+		if specialtimes[5]=0 {specialtimes[5]=1 
+flame=instance_create_depth(x+38*image_xscale,y,depth,oFlashFX) flame.image_xscale=image_xscale
+with flame	{z=-57 image_speed=0.25 sprite_index=spr_robot_ice alarm[0]=0}
+	} specialtimes[5]=1 if !instance_exists(flame) 	
+	{
+	flame=instance_create_depth(x+38*image_xscale,y,depth,oFlashFX) flame.image_xscale=image_xscale
+with flame	{z=-57 image_speed=0.25 sprite_index=spr_robot_ice image_index=4 alarm[0]=0}
+	}}		
+		 else atk=0
+		 if AnimFrame=2
+		 {
+		flame=instance_create_depth(x+38*image_xscale,y,depth,oFlashFX) flame.image_xscale=image_xscale
+with flame	{z=-57 image_speed=0 sprite_index=spr_robot_ice image_index=2 alarm[0]=5}
+		 }
+	frame_set(2,0,0.1)
+	frame_set(3,0,0.1) 
+	
+	if image_index<1 weaponanim(weaponspr,weaponIndex,6,-50,90*image_xscale,weaponcolor)
+	else weaponanim(weaponspr,weaponIndex,6-1,-50,90*image_xscale,weaponcolor)
+	if AnimFrame>3.9 {hurt=0 atk=0 canmove=1 hit=0}
+	}	
+	
 	}
 
 }
