@@ -121,6 +121,8 @@ spritepos_setup(2,24,-4,56+_shortadd)
 
 //13
 
+hasscaredSpr=1
+
 rangeAtk=320
 
 
@@ -134,3 +136,15 @@ cGreen=-0.25;
 my_pal_sprite=spr_playerpal
 
 
+specialtaunt=function()
+{
+
+sprite_index=spr_viva_win
+if character=1 sprite_index=spr_hina_win
+if character=2 sprite_index=spr_bahati_win
+if character=3 sprite_index=spr_sofia_win
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+//if AnimFrame>2.9 AnimFrame=0
+}

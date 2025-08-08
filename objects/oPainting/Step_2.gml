@@ -27,15 +27,25 @@ atkAir=0
 noHitFall=0
 }
 
-paintingInd=0
 if sprite_index=ThrownSpr 
 {
+if anim=4
+{if AnimFrame=0 {if image_xscale=-1 frameInd=15}
+
+if image_xscale=1 {if frameInd<15 frameInd+=0.5 else  frameInd=15}
+else {if frameInd>=0 frameInd-=0.5 else frameInd=0}
+
+}
+
 	if anim=5
 	{
 if image_xscale=1 {frameInd+=0.25 if frameInd>16 frameInd=0}
 else {frameInd-=0.25 if frameInd<0 frameInd=15.75}
 	}
 	paintingInd=1
+
+if sprite_index=ThrownSpr and image_index=grabframe
+paintingInd=8
 }
 
 overwriteAttack=1
@@ -45,11 +55,29 @@ overwriteAttack3=1
 overwriteAttack4=1
 
 if anim=0 or anim=1
+{
 frameInd=lerp(frameInd,0,0.1)
+
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	{
+	paintingInd=clamp(paintingInd,6,8)
+	paintingInd+=0.2 if paintingInd>=8 paintingInd=6
+	}
+	else paintingInd=0
+}
 
 if anim=10
 {AnimFrame=0
 anim=11
+}
+
+if sprite_index=DizzySpr
+{
+	paintingInd=clamp(paintingInd,11,15)
+	paintingInd+=0.2 if paintingInd>=15 paintingInd=11
 }
 
 if anim=11
@@ -75,7 +103,19 @@ if AnimFrame>8 {AnimFrame=0 anim=0 canmove=1}
 
 
 if anim=10 or anim=11
+{
+
 paintingInd=2
+}
+
+if anim=595000
+{
+paintingInd=8+image_index
+
+if AnimFrame<=3 frameInd=0
+if AnimFrame=3 {frameInd=1 if image_xscale=-1 frameInd=15}
+if AnimFrame=6 {frameInd=2 if image_xscale=-1 frameInd=14}
+}
 
 if anim=9999
 {
@@ -101,6 +141,7 @@ else if frameInd=clamp(frameInd,13,13.9)  {frameTotal=13 paintingScale=0.25}
 else if frameInd=clamp(frameInd,14,14.9)  {frameTotal=14 paintingScale=0.5}
 else if frameInd=clamp(frameInd,15,15.9)  {frameTotal=15 paintingScale=0.75}
 else {paintingScale=1 frameTotal=0}
+
 
 
 if dead=1 if visible

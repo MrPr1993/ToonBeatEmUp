@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function lifescore_check(_enable,_player,_currentP,_instant,_isplayer){
-	
+if global.ArenaType!=0 _enable=0;
 if _enable
 {
 var _get1up=_instant;
@@ -31,4 +31,5 @@ PlayerLife+=1;
 }
 }
 }
+
 }

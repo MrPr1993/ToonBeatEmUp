@@ -81,7 +81,7 @@ draw_feat(41,spr_featicon,41,c_white,"Missed The Ride","Get the Bad Ending.") //
 draw_feat(42,spr_featicon,42,c_white,"All Written","Complete the Profile & Info") //DONE
 draw_feat(43,spr_featicon,43,c_white,"Filmography","Unlock All Cutscenes")  ///DONE
 draw_feat(44,spr_featicon,44,c_white,"Back From World Tour","Clear All Stage Mode./ (Normal difficulty or higher only)")
-draw_feat(45,spr_featicon,45,c_white,"Diva Survivor","Get a High Score of 50000 on Survival Mode.") //DONE
+draw_feat(45,spr_featicon,45,c_white,"Diva Survivor","Get a High Score of 10000 on Survival Mode.") //DONE
 draw_feat(46,spr_featicon,46,c_white,"Diva Champion","Beat Boss Battles Mode.") //DONE
 draw_feat(47,spr_featicon,47,c_white,"Game Queen","Win all of the six Minigames.") //DONE
 draw_feat(48,spr_featicon,48,c_white,"Beauty Fishing","Get all fish in the Fishing minigame.")

@@ -1,3 +1,5 @@
+if flicker visible^=1;
+
 if isDepth
 depth=-y
 

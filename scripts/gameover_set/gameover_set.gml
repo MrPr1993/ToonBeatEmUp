@@ -22,7 +22,7 @@ audio_stop_all()
 
 if global.ArenaType!=0
 {
-if global.ArenaType=1
+if global.ArenaType=2
 {
 var scorecheck=p1.PlayerScore+p2.PlayerScore+p3.PlayerScore+p4.PlayerScore
 if scorecheck>=global.HiScoreSurvival {global.HiScoreSurvival=scorecheck
@@ -32,7 +32,7 @@ ini_close()
 	}
 }
 
-if global.ArenaType=2
+if global.ArenaType=3
 {
 var scorecheck=p1.PlayerScore+p2.PlayerScore+p3.PlayerScore+p4.PlayerScore
 if scorecheck>=global.HiScoreBossBattlesScore {global.HiScoreBossBattlesScore=scorecheck

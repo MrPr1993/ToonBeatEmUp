@@ -24,6 +24,7 @@ frameSpr=spr_painting_base
 frameSprElec=spr_painting_elec
 frameInd=0
 frameTotal=0
+frameSprFrozen=spr_painting_frozen
 
 paintingSpr=spr_painting1
 paintingInd=0
@@ -73,6 +74,12 @@ enemyIdle1=spr_burglarB_idle
 enemyIdle2=spr_burglarB_front
 bikeSpr=spr_burglarB_bike
 	JumpAtkSpr=spr_burglarB_airattack
+	
+	 hasscaredSpr=1
+	 scaredSpr=spr_burglar_panic
+	 
+	 hasDizzy=1
+	 DizzySpr=spr_burglar_dizzy
 
 	enemyIdle3=spr_burglarB_idle3
 	enemyIdle3Spd=0.25

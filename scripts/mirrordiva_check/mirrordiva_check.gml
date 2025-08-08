@@ -33,6 +33,8 @@ FrozenSpr=spr_viva_frozen
 DizzySpr=spr_viva_dizzy
 cutSpr1=spr_viva_cut1
 cutSpr2=spr_viva_cut2
+scaredSpr=spr_viva_panic
+
 
 }
 	
@@ -66,6 +68,8 @@ ShockSpr=spr_hina_elec
 BurnSpr=spr_hina_burned
 FrozenSpr=spr_hina_frozen
 DizzySpr=spr_hina_dizzy
+
+scaredSpr=spr_hina_panic
 
 cutSpr1=spr_hina_cut1
 cutSpr2=spr_hina_cut2
@@ -103,6 +107,8 @@ BurnSpr=spr_bahati_burned
 FrozenSpr=spr_bahati_frozen
 DizzySpr=spr_bahati_dizzy
 
+scaredSpr=spr_bahati_panic
+
 cutSpr1=spr_bahati_cut1
 cutSpr2=spr_bahati_cut2
 }
@@ -138,6 +144,8 @@ ShockSpr=spr_sofia_elec
 BurnSpr=spr_sofia_burned
 FrozenSpr=spr_sofia_frozen
 DizzySpr=spr_sofia_dizzy
+
+scaredSpr=spr_sofia_panic
 
 cutSpr1=spr_sofia_cut1
 cutSpr2=spr_sofia_cut2

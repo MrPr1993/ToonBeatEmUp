@@ -23,6 +23,8 @@ frameSprElec=spr_hieroglyph_elec
 frameInd=0
 frameTotal=0
 
+frameSprFrozen=spr_hieroglyph_frozen
+
 hasback=1
 
 paintingSpr=spr_heye

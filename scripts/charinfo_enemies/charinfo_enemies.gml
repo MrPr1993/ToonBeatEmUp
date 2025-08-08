@@ -318,7 +318,7 @@ weaponY=-69-4
 break;
 
   case 19:
-  
+ 
   ////Paintings
   hp=0.5 enemyID=48
   paintingSpr=spr_painting1 frameSpr=spr_painting_base
@@ -343,7 +343,7 @@ break;
 		{paintingSpr=spr_heys enemyID=126 frameSpr=spr_hieroglyph_base 
  charinfo_set(12,spr_hieroglyph_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"SCARAB",
 "A living hieroglyph of a scarab. A single one of them carries the fury of an entire swarm.")}
-	    if dataPal=6
+	    if dataPal=6 
 		{paintingSpr=spr_heyankh enemyID=127 frameSpr=spr_hieroglyph_base
  charinfo_set(12,spr_hieroglyph_base,7,animsetup_enemy,painting_draw,spr_zombiepal,0,spr_miscface,0,"ANKH",
 "A living hieroglyph of an ankh. Normally a symbol of life, but this one will try to bring you death.")}

@@ -4,6 +4,8 @@ depth=0
 
 colorshade_setup()
 
+flicker=0;
+
 z=0
 trainz=0
 trainFX=0

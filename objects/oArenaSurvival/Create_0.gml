@@ -13,6 +13,9 @@ charwinner="PLAYER"
 
 ishiscore=0;
 
+arrayamount=0;
+twinswitch=0;
+
 drawscript=function()
 {
 draw_set_font(global.scorefont)

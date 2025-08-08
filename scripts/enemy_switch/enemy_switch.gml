@@ -142,6 +142,8 @@ case "BANANA": enemy_modify(spr_slimepal,3,_name,0,0.4,0.4) enemyID=104 break;
 case "CALCIUM": enemy_modify(spr_slimepal,4,_name,0,0.3,0.3) enemyID=105 break;
 case "CHEMI": enemy_modify(spr_slimepal,5,_name,0,0.4,0.4) enemyID=106 break;
 
+
+
 ///Snow Girl
 case "EVA": enemy_modify(spr_zombiepal,1,_name,0,0.5,0.5) enemyID=108 break;
 case "UNDA": enemy_modify(spr_zombiepal,2,_name,0,0.6,0.6) enemyID=109 break;
