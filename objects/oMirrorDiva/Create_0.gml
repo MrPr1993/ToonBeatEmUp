@@ -138,7 +138,6 @@ my_pal_sprite=spr_playerpal
 
 specialtaunt=function()
 {
-
 sprite_index=spr_viva_win
 if character=1 sprite_index=spr_hina_win
 if character=2 sprite_index=spr_bahati_win

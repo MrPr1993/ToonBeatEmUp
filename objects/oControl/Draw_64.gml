@@ -1356,8 +1356,8 @@ draw_sprite_ext(spr_difficultystar,global.HiScoreDif10, 320-64,round((yy4++ * 26
 
 if global.HiScoreSee=1
 {
-//if key_up if hiScoreY>-10 hiScoreY-=0.1
-//if key_down if hiScoreY<10 hiScoreY+=0.1
+if key_up if hiScoreY>-10 hiScoreY-=0.1
+if -key_down if hiScoreY<10 hiScoreY+=0.1
 draw_text(8,8+16+16,"▲▼"+string(languagetext[24]))
 draw_command(7) global.StageGoing=rm_menu
 }

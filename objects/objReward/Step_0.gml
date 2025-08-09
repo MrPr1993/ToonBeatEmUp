@@ -85,13 +85,13 @@ slotflipperY=lerp(slotflipperY,0,0.1)
 
 if slotmachineplay=0
 {objSlotParent.winFrame=0 oControl.stagePause=1
-if key_attack
+if key_A
 {if global.Gold>=10
 {moneyBet+=10 PlaySound(snd_select) global.Gold-=10;} else PlaySound(snd_steal)}
-if key_shield_pressed
+if key_X
 {if global.Gold>=25
 {moneyBet+=25 PlaySound(snd_select) global.Gold-=25;} else PlaySound(snd_steal)}
-if key_super
+if key_Y
 {if global.Gold>=50
 {moneyBet+=50 PlaySound(snd_select) global.Gold-=50;} else PlaySound(snd_steal)}
 
@@ -99,7 +99,7 @@ if key_super
 
 }else oControl.stagePause=0
 
-if key_jump if slotmachineplay=0
+if key_B if slotmachineplay=0
 if moneyBet=0 PlaySound(snd_steal)
 else
 {

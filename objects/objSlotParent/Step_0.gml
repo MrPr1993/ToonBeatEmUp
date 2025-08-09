@@ -4,7 +4,7 @@
 controller_setup()
 
 if running=true
-if key_attack or key_jump
+if key_A or key_B
 {
 	
 if (object_index=objSlot1 and objSlot2.running=true and objSlot3.running=true)

@@ -1,6 +1,5 @@
 /// @description /Make sure to only count the previous ones, otherwise you'll get an error.
-if __view_get( e__VW.XView, 0 )>=3638
-and !instance_exists(en1)
+if !instance_exists(en1) and noextraenemies
 and !instance_exists(en2)
 and !instance_exists(en3)
 and !instance_exists(en4)
@@ -9,9 +8,11 @@ and !instance_exists(en6)
 and !instance_exists(en7)
 and !instance_exists(en8)
 and !instance_exists(en9)
+and !instance_exists(en10)
+and !instance_exists(en11)
+and !instance_exists(en12)
+and !instance_exists(en13)
 {
-	
-
 	
 en1=instance_create_depth(__view_get( e__VW.XView, 0 )+320-48,178,-1,oEntryTeleport)
 with en1 {enemy_switch("KONI",0) rangeX=0 enemy_switch("KONI",0) rangeX=0 image_xscale=-1}

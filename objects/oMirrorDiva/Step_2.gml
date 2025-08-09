@@ -13,7 +13,15 @@ overwriteAttack3=1
 overwriteAttack4=1
 overwriteAttack5=1
 
-if anim=0 {key_right=0 key_left=0 key_attack=0 sprite_index=StandSpr}
+if anim=0 {key_right=0 key_left=0 key_attack=0 sprite_index=StandSpr
+	
+	if oControl.p1.dead=1 
+	and oControl.p2.dead=1 
+	and oControl.p3.dead=1 
+	and oControl.p4.dead=1 
+	{specialtaunt(); animsetup_enemy(); exit;}
+	
+	}
 
 
 if anim=35

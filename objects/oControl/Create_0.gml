@@ -16,6 +16,8 @@ entag=0;
 allstagemode=0;
 global.FeatTrigger=0;
 
+/////A
+
 //ini_write_real("EN", enemyID, global.UnlockEnemy[enemyID]);
 //ini_write_real("ENB", 0, global.EnemyDeath);
 
@@ -154,6 +156,8 @@ if !variable_global_exists("CurrentMusic")
 {	
 global.GMirrorMode=0;
 global.ArcadeDeath=0;
+
+global.ArcadeMode=0; ////This one will be set so if arcade machines do happen.
 
 global.StageSave=rm_opening;
 

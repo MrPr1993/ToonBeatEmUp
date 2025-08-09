@@ -10,6 +10,7 @@ immune=0
 hplayer=0
 trainz=0
 side=0
+showhp=1
 ownBody=-1
 targetX=0
 targetY=0

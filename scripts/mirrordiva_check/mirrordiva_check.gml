@@ -150,4 +150,5 @@ scaredSpr=spr_sofia_panic
 cutSpr1=spr_sofia_cut1
 cutSpr2=spr_sofia_cut2
 }
+character=charchoose
 }

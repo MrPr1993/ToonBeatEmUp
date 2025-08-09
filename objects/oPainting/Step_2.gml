@@ -44,7 +44,7 @@ else {frameInd-=0.25 if frameInd<0 frameInd=15.75}
 	}
 	paintingInd=1
 
-if sprite_index=ThrownSpr and image_index=grabframe
+if sprite_index=ThrownSpr and image_index=GrabFrame
 paintingInd=8
 }
 

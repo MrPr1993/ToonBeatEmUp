@@ -5,7 +5,7 @@ hp=clamp(hp,0,9999)
 if !instance_exists(oMirrorDiva) hp=0.001;
 
 if instance_exists(oMirrorDiva)
-{with oMirrorDiva if AnimFrame<=2 if anim=595000 with oMirrorDiva if anim!=595000 {AnimFrame=0 anim=595000}
+{with oMirrorDiva if AnimFrame<=2 if anim=595000 with oMirrorLady if anim!=595000 {AnimFrame=0 anim=595000}
 }
 
 ///Scared at the respawn
