@@ -9,7 +9,8 @@ overwriteAttack3=1
 
 if specialcheck0!=0 specialcheck0-=1 //////Brain reload
 var _weaponaddX=0;
-var _weaponang=0; var _weaponadd=0; if spawnID=oLaserGun {_weaponang=-90; _weaponaddX=lengthdir_x(2,weaponangle) _weaponadd=lengthdir_y(8,weaponangle)}
+var _weaponang=0; var _weaponadd=0; if spawnID=oLaserGun {_weaponang=-90; weaponspr=spr_lasergunE
+	}
 
 if anim=10
 {
@@ -99,7 +100,7 @@ if AnimFrame>3 and ground {canmove=1}
 
 if anim=1340 ///Gunfire
 {var imgskp=0;
-sprite_index=spr_martian_handgun
+sprite_index=spr_martian_handgun weaponspr=spr_lasergun
 if AnimFrame<1
 {
 if AnimFrame<0.5 {weaponanim(weaponspr,weaponIndex,21,-69-1,63,weaponcolor) imgskp=1 }

@@ -669,11 +669,33 @@ draw_set_color(c_white) draw_set_alpha(1)
 ///Screen FX for exit
 if stageEndFX=1
 {
-if stageEnd!=1 stageEnd+=0.05 else stageEnd=1
+//if stageEnd!=1 stageEnd+=0.05 else stageEnd=1
+//draw_set_color(c_black) draw_set_alpha(1)
+//if stageEnd!=0
+//draw_rectangle(-2,-2,320*stageEnd,999,false)
+//draw_set_color(c_white) draw_set_alpha(1)
+
+stageEnd+=0.05//-=8 
 draw_set_color(c_black) draw_set_alpha(1)
-if stageEnd!=0
-draw_rectangle(-2,-2,320*stageEnd,999,false)
-draw_set_color(c_white) draw_set_alpha(1)
+	
+if (surface_exists(surf_circle)) {
+draw_set_color(c_black);
+surface_set_target(surf_circle)
+draw_rectangle(0,0,480,270,false)
+gpu_set_blendmode(bm_subtract)
+var defx=160; var defy=120;// if isCutscene defy=192/2
+var irisout=stageEnd*30
+if irisout<=29
+draw_circle(defx,defy,200-((irisout/30)*200),false)
+gpu_set_blendmode(bm_normal)
+surface_reset_target()
+draw_surface(surf_circle,0,0)
+}
+else
+{
+surf_circle = surface_create(320,240)
+}
+
 }
 }////Draw main game end
 

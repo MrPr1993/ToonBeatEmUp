@@ -40,3 +40,15 @@ with oControl
 
 if anim=0
 {if oPlayer.x>x image_xscale=1 else image_xscale=-1}
+
+if tutorialwords
+{
+var _tuttext=choose(1,2,3,4);
+if _tuttext=0 {tutorialtext="PERFECT!" PlaySound(snd_olga4)}
+if _tuttext=1 {tutorialtext="GOOD JOB!" PlaySound(snd_olga5)}
+if _tuttext=2 {tutorialtext="EXCELLENT!" PlaySound(snd_olga6)}
+if _tuttext=3 {tutorialtext="NOT BAD!" PlaySound(snd_olga7)}
+if _tuttext=4 {tutorialtext="VERY GOOD!" PlaySound(snd_olga8)}
+
+tutorialwords=0;
+}

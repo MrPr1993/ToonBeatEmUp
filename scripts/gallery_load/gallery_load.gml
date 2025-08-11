@@ -10,7 +10,7 @@ pictureMax=7
 	
 if galno=1
 {
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/VivaRef.png",0,0,1,0,0)
+picturetext[1]="Reference Sheet" sprite_replace(spr_galleryimg1,"Gallery/VivaRef.png",0,0,1,0,0)
 picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/VivaArtwork1.png",0,0,1,0,0)
 picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/VivaArtwork2.png",0,0,1,0,0)
 picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/VivaArtwork3.png",0,0,1,0,0)
@@ -20,7 +20,7 @@ picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/VivaArtwork6.png",0
 }
 if galno=2
 {
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaRef.png",0,0,1,0,0)
+picturetext[1]="Reference Sheet" sprite_replace(spr_galleryimg1,"Gallery/HinaRef.png",0,0,1,0,0)
 picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/HinaArtwork2.png",0,0,1,0,0)
 picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/HinaArtwork3.png",0,0,1,0,0)
@@ -30,7 +30,7 @@ picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/HinaArtwork6.png",0
 }
 if galno=3
 {
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/BahatiRef.png",0,0,1,0,0)
+picturetext[1]="Reference Sheet" sprite_replace(spr_galleryimg1,"Gallery/BahatiRef.png",0,0,1,0,0)
 picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/BahatiArtwork1.png",0,0,1,0,0)
 picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/BahatiArtwork2.png",0,0,1,0,0)
 picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/BahatiArtwork3.png",0,0,1,0,0)
@@ -41,7 +41,7 @@ picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/BahatiArtwork6.png"
 if galno=4
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/SofiaRef.png",0,0,1,0,0)
+picturetext[1]="Reference Sheet" sprite_replace(spr_galleryimg1,"Gallery/SofiaRef.png",0,0,1,0,0)
 picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/SofiaArtwork1.png",0,0,1,0,0)
 picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/SofiaArtwork2.png",0,0,1,0,0)
 picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/SofiaArtwork3.png",0,0,1,0,0)
@@ -158,9 +158,9 @@ picturetext[15]="Underwater Stage" sprite_replace(spr_galleryimg15,"Gallery/Conc
 picturetext[16]="Shade's Stages 1" sprite_replace(spr_galleryimg16,"Gallery/ConceptArt/ShadesStages1.png",0,0,1,0,0)
 picturetext[17]="Shade's Stages 2" sprite_replace(spr_galleryimg17,"Gallery/ConceptArt/ShadesStages2.png",0,0,1,0,0)
 
-picturetext[18]="Shade's Concepts 1" sprite_replace(spr_galleryimg18,"Gallery/ConceptArt/SEDConcept1.png",0,0,1,0,0)
-picturetext[19]="Shade's Concepts 2" sprite_replace(spr_galleryimg19,"Gallery/ConceptArt/SEDConcept2.png",0,0,1,0,0)
-picturetext[20]="Shade's Concepts 3" sprite_replace(spr_galleryimg20,"Gallery/ConceptArt/SEDConcept3.png",0,0,1,0,0)
+picturetext[18]="SED's Concepts 1" sprite_replace(spr_galleryimg18,"Gallery/ConceptArt/SEDConcept1.png",0,0,1,0,0)
+picturetext[19]="SED's Concepts 2" sprite_replace(spr_galleryimg19,"Gallery/ConceptArt/SEDConcept2.png",0,0,1,0,0)
+picturetext[20]="SED's Concepts 3" sprite_replace(spr_galleryimg20,"Gallery/ConceptArt/SEDConcept3.png",0,0,1,0,0)
 
 }
 if galno=15

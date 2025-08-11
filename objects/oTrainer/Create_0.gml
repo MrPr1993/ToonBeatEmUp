@@ -17,6 +17,8 @@ canControl=0
 controlNO=9
 controller_setup()
 
+PlaySound(choose(snd_olga1,snd_olga2,snd_olga3))
+
 anim=0
 
 petID=-1
@@ -48,6 +50,7 @@ timeradd=0;
 
 trainingcheck=0
 trainingdraw=function() {}
+timertime=160;
 
 alarm[0]=30
 
@@ -60,6 +63,8 @@ trainingdetect=function()
 
 //trainingnumbers=9
 
+tutorialwords=0;
+
 trainingmoment=function() {} 
 
 with oControl specialcommanddraw=function()
@@ -69,9 +74,9 @@ trainingreact=function(_willchange)
 {specialcheck[9]=0
 with oControl specialcommanddraw=function() {};
 
-alarm[0]=160 trainingcheck=12 trainingnumbers+=1 if _willchange {AnimFrame=0 anim=1}
+alarm[0]=timertime trainingcheck=12 trainingnumbers+=1 if _willchange {tutorialwords=1 AnimFrame=0 anim=1}
 with oSandbag sandbagreact=function() {}
-tutorialtext=choose("GOOD!", "GREAT!", "EXCELLENT")
+
 trainingdraw=function() {}
 trainingdetect=function() {}
 }

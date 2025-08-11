@@ -7,6 +7,13 @@ with oPlayer
 {canControl=0 areaEntry=1
 key_up=0 key_down=0 key_left=0
 key_right=1 doubledash=0 dashing=0
+
+specialanimscript=function()
+{
+if y>=224 y-=2;
+if y<=200 y+=2;
+if x>=5212 specialanimscript=-1;
+}
 }
 
 spawner_followset("WaveSet1",0,5290,1)

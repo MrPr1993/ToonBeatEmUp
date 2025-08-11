@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.659138,
+  "duration":1.6591383,
   "name":"snd_olga1",
   "parent":{
     "name":"Olga",

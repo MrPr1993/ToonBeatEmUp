@@ -200,13 +200,13 @@ with oTrainer {trainingreact(1)}}} break;
 
 
 case 14: 
-{alarm[0]=1600
+{timertime=400
 trainingdetect=function() {	with oPlayer canmove=0 
 trainingreact(0) 
 tutorialtext="OKAY WE MIGHT HAVE KINDA ROUGHED UP BAGGY TOO MUCH. SO LET'S GIVE IT A KISS."}
 } break;
 
-case 15: {
+case 15: {timertime=160
 tutorialtext="USE TAUNT WITH" 
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
 draw_buttontext(244+60,80,8,"",spr_commandbutton,9+6*commandMul,"","")};
@@ -215,13 +215,13 @@ if oPlayer.anim=83
 with oTrainer {trainingreact(1)}}} break;
 
 case 16: 
-{alarm[0]=3200
+{timertime=400
 trainingdetect=function() {	with oPlayer canmove=0 
 trainingreact(0) 
 tutorialtext="NOW FOR THE SPECIALS. THEY CAN BE USED FOR STRONGER MOVES BUT THEY DRAIN YOUR HEALTH. SO TAKE IT EASY ON EM'."}
 } break;
 
-case 17: {	with oPlayer canmove=1
+case 17: {timertime=160	with oPlayer canmove=1
 tutorialtext="USE YOUR FIRST SPECIAL WITH"
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
 draw_buttontext(244+60,80,8,"",spr_commandbutton,5+6*commandMul,"","")};
@@ -241,20 +241,20 @@ with oTrainer {trainingreact(1)}}} break;
 ////Training Parts
 
 case 19: 
-{with oPlayer {canControl=0 } alarm[0]=3400 locksuper=0
+{timertime=400 with oPlayer {canControl=0 } alarm[0]=3400 locksuper=0
 trainingdetect=function() {	 
 trainingreact(0) 
 tutorialtext="AND NOW FOR THE GRAND FINALE. SHOWTIME. YOU CAN FILL YOUR BAR BY DEALING OR TAKING DAMAGE."}
 } break;
 
 case 20: 
-{with oPlayer canControl=1 tutorialtext="HAVE A GO WITH." oPlayer.super=100
+{timertime=160 with oPlayer canControl=1 tutorialtext="HAVE A GO WITH." oPlayer.super=100
 tutorialtext="TO USE YOUR SHOWTIME USE"
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
 draw_buttontext(244+60,80,8,"",spr_commandbutton,7+6*commandMul,"","")};
 trainingdetect=function() {	 if oPlayer.anim=50 detectsuper=4 else detectsuper-=1 
 	
-	if oSandbag.anim>4 and detectsuper=2 {trainingreact(1) tutorialtext="GREAT SHOW!" }
+	if oSandbag.anim>4 and detectsuper=2 {trainingreact(1) PlaySound(snd_olga4) tutorialwords=0 tutorialtext="PERFECT!" }
 	} 
 
 } break;
@@ -269,14 +269,14 @@ with oPlayer {canControl=0
 	feats_check(11)
 	} alarm[0]=160 
 trainingdetect=function() {	 
-trainingreact(1) 
+trainingreact(0) 
 tutorialtext="AND THAT IS IT FOR THE TRAINING."}
 } break;
 
 case 22: 
 {with oPlayer canControl=0
 trainingdetect=function() {	 
-trainingreact(1) 
+trainingreact(0) 
 tutorialtext="A'IGHT. BEAT UP BAGGY HERE TO YOUR HEART'S CONTENT."}
 } break;
 } break;

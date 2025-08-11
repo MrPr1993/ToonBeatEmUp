@@ -114,6 +114,7 @@ enemyID=18
 if dataPal=3
 {current_pal=1
 	name="MR.COLD"
+	robotArmRsprite=spr_robot_freezer
 desc="A cold machine with an even colder ice gun that’ll send more than a chill down your spine! Brrrr…"
 enemyID=19
 }  
@@ -594,7 +595,7 @@ desc="Illustrious invaders who are armed with powerful laser guns for frying or 
 }
 
 var _weaponaddX=0;
-var _weaponang=0; var _weaponadd=0; if spawnID=oLaserGun {_weaponang=-90; _weaponaddX=lengthdir_x(2,weaponangle) _weaponadd=lengthdir_y(8,weaponangle)}
+var _weaponang=0; var _weaponadd=0; if spawnID=oLaserGun {_weaponang=-90; weaponspr=spr_lasergunE}
 
 weaponBack=1
 if image_index=clamp(image_index,0,0.9)

@@ -60,7 +60,7 @@ with en5
 }
 
 
-spawner_followset("WaveSet1",0,5270,1)
+spawner_followset("WaveSet1",0,5170,1)
 }
 else
 timeline_position-=1
