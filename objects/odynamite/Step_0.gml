@@ -10,7 +10,7 @@ if image_index>2.75 image_index=1
 triggertime-=1 if triggertime<0
 {
 ex=instance_create_depth(x,y,depth,oExplosion) ex.z=z ex.depth=depth
-PlaySound(snd_explosion) ex.damage=0.2
+PlaySoundNoStack(snd_explosion) ex.damage=0.2
 oControl.quakeFXTime=10
 instance_destroy()
 }

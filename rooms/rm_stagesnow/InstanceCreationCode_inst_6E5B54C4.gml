@@ -8,20 +8,23 @@ anim=666
 //image_xscale=-1
 x-=8 y-=8
 framespd=0.1
-
+specialcheck[0]=4
 newscript=function()
 {
-frame_set(0,0,framespd)
-frame_set(1,1,framespd)
-frame_set(2,0,framespd)
-frame_set(3,2,framespd)
-frame_set(4,3,framespd) if AnimFrame=4-framespd 
+frame_set(0,0,0.005)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,3,0.005)
+frame_set(4,2,0.1) 
+frame_set(5,1,0.1)
+if AnimFrame>=5
 if specialcheck[0]!=0 {specialcheck[0]-=1 AnimFrame=0}
-frame_set(5,4,framespd)
-frame_set(6,5,0.05)
-frame_set(7,3,framespd) 
-if AnimFrame=8-framespd
-{specialcheck[0]=20 specialcheck[1]=6 AnimFrame=0}
+frame_set(6,0,0.1)
+frame_set(7,4,0.1)
+frame_set(8,5,0.05)
+frame_set(9,4,0.1) 
+if AnimFrame>=10
+{specialcheck[0]=4 specialcheck[1]=6 AnimFrame=0}
 
 }
 

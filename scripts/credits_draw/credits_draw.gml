@@ -520,25 +520,28 @@ var creditscameor="\n"+
 //Wolfzeta - Blue hair gal on beach
 //shyguywhy - Beef shark on beach
 ////Cryptic Draws - drink person
-
-
-///////ON STAGE - needs animation
 //SKEPTICAL - snek gal
-//Rovenami - Cowgirl - train
-//toainsully - train
 //Gatordragon - jester gal
-//5 Gaming Eelektross - Dragon Guard sleepng on snow stage
-
-////PIXELED
- //10 JameArts - Alice on cloud stage
-//Meme supreme - Chicken wrestler
-//PsychoJosh - beach Duo
 //Zengumi - cloudy kiss
 //Wobbleblot - cloudy kiss
+//Rovenami - Cowgirl - train
 ///Flash Trickstar - And Peterjuice
-//YinSeiryu - Samurai with cats 
-//AnastasiaSols - Gal
-///ANAccount & RolyHolyBoly
+
+
+/////ANIMATED
+//Meme supreme - Chicken wrestler
+ //10 JameArts - Alice on cloud stage
+ //toainsully - train
+ //5 Gaming Eelektross - Dragon Guard sleepng on snow stage
+ //YinSeiryu - Samurai with cats 
+ //PsychoJosh - beach Duo
+ //AnastasiaSolstice - Gal
+ 
+ 
+///////ON STAGE - needs animation
+
+////PIXELED
+///AnAccount & RolyHolyBoly
 
 ///OTHER
 //butchtheamazing - ???

@@ -182,10 +182,11 @@ var cheatp16=999999*global.Cheat[16]
 cheatpenalty+=cheatp1+cheatp2+cheatp3+cheatp4+cheatp5+cheatp6+cheatp7+cheatp8+cheatp9+cheatp10+cheatp11+cheatp12+cheatp13+cheatp14+cheatp15+cheatp16
 
 
-hppercent1=0;
-hppercent2=0;
-hppercent3=0;
-hppercent4=0;
+hppercent1=100;
+hppercent2=100;
+hppercent3=100;
+hppercent4=100;
+
 
 if instance_exists(oPlayer) with oPlayer
 if dead=0

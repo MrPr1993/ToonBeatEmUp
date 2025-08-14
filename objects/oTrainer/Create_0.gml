@@ -17,7 +17,7 @@ canControl=0
 controlNO=9
 controller_setup()
 
-PlaySound(choose(snd_olga1,snd_olga2,snd_olga3))
+
 
 anim=0
 
@@ -54,6 +54,8 @@ timertime=160;
 
 alarm[0]=30
 
+introvoice=0;
+
 instance_create_depth(0,0,-1,oTextBox)
 
 trainingdetect=function()
@@ -62,6 +64,10 @@ trainingdetect=function()
 }
 
 //trainingnumbers=9
+
+oControl.nopleasewait=0;
+
+
 
 tutorialwords=0;
 

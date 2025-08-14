@@ -90,7 +90,7 @@ break;
 
 case 10: featname="Went off key" ///10% health
 if object_index=oContinueScreen
-if hppercent1<=0.1 or hppercent2<=0.1 or hppercent3<=0.1 or hppercent4<=0.1
+if hppercent1<=10 or hppercent2<=10 or hppercent3<=10 or hppercent4<=10
 {if nodeath setfeats=1} break;
 
 case 11: featname="trainer" ///training

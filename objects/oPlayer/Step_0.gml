@@ -1,5 +1,7 @@
 showmash=0
 
+if hp=0 and dead with oControl nodeath=0;
+
 switch(playerNO)
 {
 case 1: lifescore_check(1,playerNO,global.P1ScoreLife,0,1); break;
