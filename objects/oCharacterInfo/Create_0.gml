@@ -164,6 +164,7 @@ arrowSel2=0
 arrowSel3=0
 arrowSel4=0
 
+dataabilitiesB="ABILITIES"
 dataabilities="ELECTRICITY,SINGING,\nCOOKING,CHESS,FILMS"
 
 dataRowMax=4

@@ -291,7 +291,7 @@ var tex_start_y = ( (ceil(0))+ padding-8);
 //desc="aaafseroenre4235"
 draw_text_ext(tex_start_x+146+2-144-4,tex_start_y+32+52+32+8,string_upper(desc),8,136) //Description 188
 draw_text_ext_transformed(4,240-24,string_upper(dataabilities),8,102,0.75,1,0)
-draw_text_transformed(4,240-32,"ABILITIES:",0.75,1,0)
+draw_text_transformed(4,240-32,string_upper(dataabilitiesB),0.75,1,0)
 
 draw_sprite(spr_selface,0,round(144-arrowSel2-24),54-19) if arrowSel1>0 arrowSel1-=0.1 else arrowSel1=0
 draw_sprite(spr_selface,1,round(0+arrowSel1),54-19) if arrowSel2>0 arrowSel2-=0.1 else arrowSel2=0

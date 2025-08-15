@@ -1,6 +1,31 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function charinfo_bosses(){hp=2
+function charinfo_bosses(){
+var _ageT="AGE";
+var _likesT="LIKES";
+var _dislikesT="DISLIKES";
+var _hobbyT="HOBBY";
+var _heightT="H";
+var _weightT="W";
+var _abilitiesT="ABILITIES"
+
+
+switch(global.Language)
+{
+case 1:
+_ageT="EDAD";
+_likesT="GUSTOS";
+_dislikesT="DISGUSTOS";
+_hobbyT="PASATIEMPOS";
+_heightT="A";
+_weightT="P";
+_abilitiesT="ABILIDADES"
+break;
+}	
+
+dataabilitiesB=_abilitiesT;
+
+hp=2
 switch (dataSelect)
 {
   case 1:

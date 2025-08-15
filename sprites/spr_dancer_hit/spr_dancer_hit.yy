@@ -43,7 +43,7 @@
   "height":96,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"39d8e422-0273-494e-8153-b24c3fa40f1f","blendMode":0,"displayName":"default","isLocked":false,"name":"39d8e422-0273-494e-8153-b24c3fa40f1f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4db1aef1-9d56-4a24-a8f4-c3c7b3aa0650","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"4db1aef1-9d56-4a24-a8f4-c3c7b3aa0650","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_dancer_hit",
   "nineSlice":null,
@@ -87,6 +87,8 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":96.0,
+    "seqWidth":96.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,

@@ -1,6 +1,30 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function charinfo_enemies(){
+
+var _ageT="AGE";
+var _likesT="LIKES";
+var _dislikesT="DISLIKES";
+var _hobbyT="HOBBY";
+var _heightT="H";
+var _weightT="W";
+var _abilitiesT="ABILITIES"
+
+switch(global.Language)
+{
+case 1:
+_ageT="EDAD";
+_likesT="GUSTOS";
+_dislikesT="DISGUSTOS";
+_hobbyT="PASATIEMPOS";
+_heightT="A";
+_weightT="P";
+_abilitiesT="ABILIDADES"
+break;
+}
+
+dataabilitiesB=_abilitiesT;
+
 switch (dataSelect) 
 {
   case 1:
@@ -9,8 +33,8 @@ switch (dataSelect)
   charinfo_set(5,spr_burglar_stand,3,animsetup_burglar,draw_enemy,spr_enemypal,2,spr_enemyface,1,"MR.BURG",
 "Just your run of the mill small fry burglar, but stay sharp! They come in groups!")
 
-descleft="AGE:32\nNAT.:USA\nH: 4'10\nW: 140LBS"
-descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
+descleft=string(_ageT)+":32\nNAT.:USA\n"+string(_heightT)+":4'10"+string(_weightT)+": 140LBS"
+descright=string(_likesT)+":STEALING,ROLLS\n"+string(_dislikesT)+":DOGS\n"+string(_hobbyT)+":BIKING"
 dataabilities="BIKING,PUNCHING,KICKING"
 
 if dataPal=2
@@ -18,8 +42,8 @@ if dataPal=2
 enemy_switch("MR.LAR",0) 
 desc="Burg’s higher ranked relative. Not much stronger by comparison, but they can still kick!"
 
-descleft="AGE:33\nNAT.:USA\nH: 4'10\nW: 140LBS"
-descright="LIKES:STEALING,FRIES\nDISLIKES:DOGS\nHOBBY:HIKING"
+descleft=string(_ageT)+":33\nNAT.:USA\n"+string(_heightT)+":4'10"+string(_weightT)+": 140LBS"
+descright=string(_likesT)+":STEALING,FRIES\n"+string(_dislikesT)+":DOGS\n"+string(_hobbyT)+":HIKING"
 dataabilities="BIKING,PUNCHING,KICKING"
 }
 if dataPal=3
@@ -236,8 +260,8 @@ break;
 
   case 14:
   hp=0.25 enemyID=39
-descleft="AGE:32\nNAT.:USA\nH: 4'10\nW: 140LBS"
-descright="LIKES:STEALING,ROLLS\nDISLIKES:DOGS\nHOBBY:BIKING"
+descleft=string(_ageT)+":32\nNAT.:USA\n"+string(_heightT)+":4'10"+string(_weightT)+": 140LBS"
+descright=string(_likesT)+":STEALING,ROLLS\n"+string(_dislikesT)+":DOGS\n"+string(_hobbyT)+":BIKING"
  charinfo_set(17,spr_zombiem_stand,3,animsetup_zombie,draw_enemy,spr_zombiepal,0,spr_enemyface,13,"ZOMBILLY",
  "A clumsy zombie who rushes his foes, but is prone to tripping and accidentally tackling them.")
 if dataPal=2

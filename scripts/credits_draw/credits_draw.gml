@@ -471,9 +471,14 @@ var creditscameol=""+
 "\nTAKE2ACTION"+
 "\nASPIRING IDOL MERCURY"+
 "\nIKKI"+
-"\n"+
-"\n"+
-"\n"
+"\nGUITERMAN13"+
+"\nNFATE"+
+"\nVAUVENADER"+
+"\nWOBBLEBLOT"+
+"\nMEME SUPREME"+
+"\nJAMEARTS"+
+"\nTOAINSULLY"+
+"\nANACCOUNT"
 
 var creditscameor="\n"+
 "\nSED2116"+
@@ -503,53 +508,17 @@ var creditscameor="\n"+
 "\nGREEDYBOLT"+
 "\nFLAREJOLT"+
 "\nBLUE MOBIUS"+
-"\n"+
-"\n"+
-"\n"+
-"\n"+
-"\n"+
-"\n"
-
-///COMPLETE
-//6 shademanv4 - Sexy mermaid
-//RJ - new gal - ON STAGE
-//guiterman13 - Soda punk
-//Nfate - Hypno gal at beach
-//7 Vauvenader - Underwater shark
-//Fva - demon gal
-//Wolfzeta - Blue hair gal on beach
-//shyguywhy - Beef shark on beach
-////Cryptic Draws - drink person
-//SKEPTICAL - snek gal
-//Gatordragon - jester gal
-//Zengumi - cloudy kiss
-//Wobbleblot - cloudy kiss
-//Rovenami - Cowgirl - train
-///Flash Trickstar - And Peterjuice
-
-
-/////ANIMATED
-//Meme supreme - Chicken wrestler
- //10 JameArts - Alice on cloud stage
- //toainsully - train
- //5 Gaming Eelektross - Dragon Guard sleepng on snow stage
- //YinSeiryu - Samurai with cats 
- //PsychoJosh - beach Duo
- //AnastasiaSolstice - Gal
- 
- 
-///////ON STAGE - needs animation
-
-////PIXELED
-///AnAccount & RolyHolyBoly
-
-///OTHER
-//butchtheamazing - ???
-//Flash Trickstar
-//Peterjuice - PAID
-
-//
-//
+"\nFVA"+
+"\nWOLFZETA"+
+"\nSHYGUYWHY"+
+"\nCRYPTIC DRAWS"+
+"\nGATORDRAGON"+
+"\nZENGUMI"+
+"\nROVENAMI"+
+"\nYINSEIRYU"+
+"\nPSYCHOJOSH"+
+"\nANASTASIASOLSTICE"+
+"\nROLYHOLYBOLY"
 
 draw_text(320-4,320+16+round(creditsCameoY),creditscameor)
 draw_set_halign(fa_left)
