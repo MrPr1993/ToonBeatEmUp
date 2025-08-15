@@ -10,7 +10,7 @@ name="C.ROSY"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=10
 
-shadowSpr=spr_carshadow
+shadow=spr_bigshadow
 hasShadow=1
 
 grabRecharge=0

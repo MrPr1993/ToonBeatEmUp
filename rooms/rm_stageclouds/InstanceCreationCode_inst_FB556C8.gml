@@ -7,23 +7,26 @@ anim=666
 framespd=0.1
 
 ground=0;
-x=-240
-z=-240
+x=-416/2
+z=-416
 newscript=function()
 {
-if oControl.camX>=320
-{shadow=spr_shadow
+if oControl.camX>=160
+{
+if shadow=-1	
+{shadow=spr_shadow x=oControl.camX-48}
 if !ground
 {
-x+=2;
+x+=1.5;
 z+=2;
 image_index+=0.25 if image_index>=2 image_index=0
+if z>=0 {ground=1 z=0}
 }
 else
 {
 if sprite_index=spr_bcameo64
 {if image_index<2 image_index=2
-image_index+=0.25
+image_index+=0.1
 if image_index>=4 {sprite_index=spr_bcameo64b image_index=0}
 }
 else

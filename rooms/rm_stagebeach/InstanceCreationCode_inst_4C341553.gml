@@ -5,7 +5,7 @@ framespd=0.025
 
 anim=666
 
-image_xscale=-1
+image_xscale=1
 
 shadow=spr_bcameo72s
 

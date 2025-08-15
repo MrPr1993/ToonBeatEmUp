@@ -2518,6 +2518,7 @@
     {"id":{"name":"spr_beelady_taunt","path":"sprites/spr_beelady_taunt/spr_beelady_taunt.yy",},},
     {"id":{"name":"spr_bgglass","path":"sprites/spr_bgglass/spr_bgglass.yy",},},
     {"id":{"name":"spr_bigbullrun","path":"sprites/spr_bigbullrun/spr_bigbullrun.yy",},},
+    {"id":{"name":"spr_bigshadow","path":"sprites/spr_bigshadow/spr_bigshadow.yy",},},
     {"id":{"name":"spr_bigsmoke","path":"sprites/spr_bigsmoke/spr_bigsmoke.yy",},},
     {"id":{"name":"spr_bigstarfx","path":"sprites/spr_bigstarfx/spr_bigstarfx.yy",},},
     {"id":{"name":"spr_bike","path":"sprites/spr_bike/spr_bike.yy",},},
