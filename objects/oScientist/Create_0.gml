@@ -49,6 +49,7 @@ DizzySpr=spr_scientistm_dizzy hasDizzy=1
 hasscaredSpr=1 scaredSpr=spr_scientistm_panic
 
 isHeavy=1
+throwHeavy=1
 
 current_pal=0;
 my_pal_sprite=spr_zombiepal
