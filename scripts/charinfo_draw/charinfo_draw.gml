@@ -304,8 +304,13 @@ maxhp=hp
 if image_blend!=c_black
 if  hp!=0
 {
+
 draw_set_color(c_white) draw_rectangle(224+8-1-round(maxhp*45/2),8-1+20,224+8+1+round(maxhp*45/2),8+8+1+20,false)
 draw_set_color(c_yellow) draw_rectangle(224+8-round(maxhp*45/2),8+20,224+8+round(maxhp*45/2),8+8+20,false)
+
+//draw_sprite_part_ext(spr_enemyhpbase,0,0,0,1,12,224+8,8-1+20+2,round(maxhp*45/2),1,c_white,1)
+//draw_sprite(spr_enemyhpbase,0,224+8,8-1+20+2+round(maxhp*45/2))
+
 draw_set_halign(fa_right)
 draw_set_color(c_white) draw_text_transformed(224+8-2-round(maxhp*45/2),8-1+20+2,"HP",0.5,1,0)
 }

@@ -36,3 +36,5 @@ en2.idleRange=0 en2.IdleSpr=spr_burglarB_cards
 PlaySound(snd_train)
 
 oControl.stageNext=rm_cutscene2c
+
+with oControl timer_set(0)

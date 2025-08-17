@@ -36,5 +36,7 @@ with oPlayer
 }
 }
 
+with oControl timer_set(1)
+
 
 

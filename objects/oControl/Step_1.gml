@@ -94,6 +94,9 @@ if global.FriendlyFire {isPlayer=playerNO selfatk.isPlayer=isPlayer}
 
 if room=rm_stagesnow
 oPlayer.Cweather=1; 
+
+difficulty_check()
+
 }
 
 if instance_exists(oPlayerNoControl) 

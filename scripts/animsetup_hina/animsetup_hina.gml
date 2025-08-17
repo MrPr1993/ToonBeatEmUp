@@ -1338,7 +1338,7 @@ weaponanim(weaponspr,weaponIndex,5,-47,44*image_xscale,weaponcolor)
 }	
 
 if sprite_index=spr_hina_idle
-featno[2]++; else featno[2]=0;
+{if Cweather=0 featno[2]++;} else featno[2]=0;
 
 if featno[2]>=1200 {image_index=0 featno[2]=0 featno[3]=0 canmove=0 AnimFrame=0 anim=86}
 

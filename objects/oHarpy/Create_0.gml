@@ -9,7 +9,7 @@ enemyscript=animsetup_enemy
 pointshit=10
 points=100
 
-shadowSpr=spr_carshadow
+shadowSpr=spr_bigshadow
 
 rangeAtk=400
 
