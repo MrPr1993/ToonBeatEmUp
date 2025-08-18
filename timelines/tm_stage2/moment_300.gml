@@ -12,6 +12,9 @@ hspeed=-16
 vspeed=0
 
 }
+
+oControl.carMode=0
+
 var bg1	= layer_get_id("StreetBG");
 layer_hspeed(bg1,-20)
 var bg2	= layer_get_id("GroundImg");

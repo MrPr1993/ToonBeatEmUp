@@ -24,7 +24,7 @@ layer_vspeed("ElevatorBG",0)
 
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,192,oNurse)
 with en1 {image_xscale=-1 canAttack=5 alarm[1]=60
-	enemy_switch("DR.MONIA",0)
+	//enemy_switch("DR.MONIA",0)
 	}
 en2=instance_create(__view_get( e__VW.XView, 0)+320+64,224,oNurse)
 with en2 {image_xscale=-1 canAttack=5 alarm[1]=60
@@ -32,7 +32,7 @@ with en2 {image_xscale=-1 canAttack=5 alarm[1]=60
 	}
 en3=instance_create(__view_get( e__VW.XView, 0)+320+64,256,oNurse)
 with en3 {image_xscale=-1 canAttack=5 alarm[1]=60
-	enemy_switch("DR.MONIA",0)
+	//enemy_switch("DR.MONIA",0)
 	}
 
 specialscript=-1;

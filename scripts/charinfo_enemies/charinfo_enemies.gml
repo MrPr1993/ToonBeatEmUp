@@ -117,7 +117,7 @@ descleft=string(_ageT)+":36\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_wei
 desc="These crazy turncoats run around with bombs in their pockets!…How do they hide them?"
 
 descright=string(_likesT)+":SPICES,MICE\n"+string(_dislikesT)+":COLD FOOD\n"+string(_hobbyT)+":EXPLOSIVES"
-dataabilities="Sneaking,Sliding,Bombing"
+dataabilities="Sneaking,Sliding,\nBombing"
 }
 if dataPal=3
 {
@@ -126,7 +126,7 @@ descleft=string(_ageT)+":34\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_wei
 desc="Lanky though they may be, they’ll grab and throw you around if you’re not careful!"
 
 descright=string(_likesT)+":SNAKES,EGGS\n"+string(_dislikesT)+":JOCKS\n"+string(_hobbyT)+":DISK THROWING"
-dataabilities="Sneaking,Sliding,Throwing"
+dataabilities="Sneaking,Sliding,\nThrowing"
 
 }
 if dataPal=4
@@ -136,7 +136,7 @@ descleft=string(_ageT)+":32\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_wei
 desc="With a nasty spring in their step, they’ll leap into the air to kick you in the face!"
 
 descright=string(_likesT)+":MONKEYS,ORANGES\n"+string(_dislikesT)+":LATENESS\n"+string(_hobbyT)+":BOWLING"
-dataabilities="Sneaking,Sliding,Kicking"
+dataabilities="Sneaking,Sliding,\nKicking"
 
 }
 if dataPal=5
@@ -146,7 +146,7 @@ descleft=string(_ageT)+":40\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_wei
 desc="Sliding, bombing, grappling and kicking are all things this creep’s got up his sleeves!"
 
 descright=string(_likesT)+":BANANAS,CRYSTALS\n"+string(_dislikesT)+":LOW RANKS\n"+string(_hobbyT)+":CHESS"
-dataabilities="Sneaking,Sliding,Throwing"
+dataabilities="Sneaking,Sliding,\nSpy"
 
 }
 break;
@@ -189,7 +189,7 @@ desc="This fancy robot comes equipped with a shocking laser and strong, but deta
 	 charNO=5 enemyID=17
 
 descright=string(_likesT)+":SERVING,BREAKING\n"+string(_dislikesT)+":RUST\n"+string(_hobbyT)+":BARTENDING"
-dataabilities="Electricity,Bruising,Brewing"
+dataabilities="Electricity,Bruising,\nBrewing"
 
 }
 if dataPal=2
@@ -200,8 +200,8 @@ desc="This temperamental bot has a flamethrower on one arm, don’t get burned t
 enemyID=18
 
 
-descright=string(_likesT)+":SERVING,BURNING\n"+string(_dislikesT)+":WATER\n"+string(_hobbyT)+":COOKING"
-dataabilities="Fire,Bruising,Brewing"
+descright=string(_likesT)+":SERVING,BURNING\n"+string(_dislikesT)+":WATER\n"+string(_hobbyT)+":CHEF"
+dataabilities="Fire,Bruising,Cooking"
 
 }
 if dataPal=3
@@ -212,7 +212,7 @@ desc="A cold machine with an even colder ice gun that’ll send more than a chil
 enemyID=19
 
 descright=string(_likesT)+":SERVING,FREEZING\n"+string(_dislikesT)+":HEAT\n"+string(_hobbyT)+":RESERVING"
-dataabilities="Cold,Bruising,Brewing"
+dataabilities="Cold,Bruising,Freezing"
 }  
    
 break;
@@ -307,7 +307,7 @@ break;
  
   descleft=string(_ageT)+":38\nNAT.:GERMANY\n"+string(_heightT)+":8'2"+" "+string(_weightT)+":320LBS"
  
-  descright=string(_likesT)+":KNOCKOUTS,FAIR FIGHTS\n"+string(_dislikesT)+":FLYING THINGS\n"+string(_hobbyT)+":FASHION"
+  descright=string(_likesT)+":KNOCKOUTS,BEEF\n"+string(_dislikesT)+":FLYING THINGS\n"+string(_hobbyT)+":FASHION"
 dataabilities="Boxing,Charging"
  
 if dataPal=2
@@ -316,7 +316,7 @@ enemy_switch("MS.JAB",0)
 descleft=string(_ageT)+":38\nNAT.:GERMANY\n"+string(_heightT)+":8'1"+" "+string(_weightT)+":300LBS"
 desc="These pugilists are still in the pumping process, taking notes from their punching mentors."
 
- descright=string(_likesT)+":KNOCKOUTS,WINNING\n"+string(_dislikesT)+":CROWS\n"+string(_hobbyT)+":BAR HOPPING"
+ descright=string(_likesT)+":KNOCKOUTS,HAM\n"+string(_dislikesT)+":CROWS\n"+string(_hobbyT)+":BAR HOPPING"
 dataabilities="Crushing,Charging"
 }
 break;
@@ -327,7 +327,7 @@ break;
 
 descleft=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":500LBS" 
 
- descright=string(_likesT)+":DOMINATING,CHOCOLATE\n"+string(_dislikesT)+":TOMATOES\n"+string(_hobbyT)+":PIE BAKING"
+ descright=string(_likesT)+":DOMINATING,TEA\n"+string(_dislikesT)+":TOMATOES\n"+string(_hobbyT)+":PIE BAKING"
 dataabilities="Wrestling,Rolling"
 
 if dataPal=2
@@ -479,7 +479,7 @@ enemy_switch("ZOMBELLE",0)
 desc="This undead primadonna takes pride in her nails… Because they’re sharp as blades."
 descleft=string(_ageT)+":DEAD\nNAT.:BRITAIN\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":82LBS" 
 
- descright=string(_likesT)+":FANCY DRESSES,PAINTINGS\n"+string(_dislikesT)+":NAIL BREAKING\n"+string(_hobbyT)+":NAIL CARE"
+ descright=string(_likesT)+":PLAYS,PAINTINGS\n"+string(_dislikesT)+":NAIL BREAKING\n"+string(_hobbyT)+":NAIL CARE"
 dataabilities="Sharp Nails"
 }
 if dataPal=3
@@ -519,7 +519,7 @@ dataabilities="Juggling, Bone Throwing"
 break;
 
   case 17: ////Knight
- hp=0.5 enemyID=133 idlestyle=1
+ hp=1.0 enemyID=133 idlestyle=1
  charinfo_set(12,spr_knight_stand,2,animsetup_enemy,draw_swing,spr_robotpal,0,spr_enemyface,65,"GARETH",
  "Once respected knights, but now chivalry is dead to these fellows! And by their sword, you may be too!")
    descleft=string(_ageT)+":32\nNAT.:BRITAIN\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":170LBS" 
@@ -533,7 +533,7 @@ enemy_switch("DANIEL",0)
 desc="Skilled with blunt weaponry, they'll bonk you good! Apparently has bad history with arrows."
    descleft=string(_ageT)+":33\nNAT.:BRITAIN\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":170LBS" 
 
-  descright=string(_likesT)+":STORIES,STATUES\n"+string(_dislikesT)+":THINGS IN THEIR EYES\n"+string(_hobbyT)+":BOOK WRITING"
+  descright=string(_likesT)+":STORIES,STATUES\n"+string(_dislikesT)+":POINTY THINGS\n"+string(_hobbyT)+":BOOK WRITING"
 dataabilities="Club Swinging"
 
 }
@@ -699,7 +699,7 @@ desc="The bouncers of the casino, they’ll grab their targets for a devastating
 descleft=string(_ageT)+":30\nNAT.:JAPAN\n"+string(_heightT)+":5'9"+" "+string(_weightT)+":130LBS" 
 
 descright=string(_likesT)+":PROMOTIONS,CARROTS\n"+string(_dislikesT)+":CHEATS\n"+string(_hobbyT)+":BARTENDING"
-dataabilities="Ninjutsu,Gambling,Brewing"
+dataabilities="Ninjutsu,Gambling,\nBrewing"
 
 }
 break;
@@ -753,7 +753,7 @@ dataabilities="Puppetry,Juggling"
 desc="These mischievous marionettes love carousels so much they even spin like one at times!"
 descleft=string(_ageT)+":22\nNAT.:ITALY\n"+string(_heightT)+":6'10"+" "+string(_weightT)+":120LBS" 
 
-descright=string(_likesT)+":CAROUSELS,Cotton Candy\n"+string(_dislikesT)+":GRUMPS\n"+string(_hobbyT)+":Parading"
+descright=string(_likesT)+":CAROUSELS,Candy\n"+string(_dislikesT)+":GRUMPS\n"+string(_hobbyT)+":Parading"
 dataabilities="Puppetry,Juggling"
 
  }
@@ -802,7 +802,7 @@ dataabilities="Plush Combat"
   if dataPal=5 {enemy_switch("PADDY",0) _tedage=28
 	  desc="A kind and polite bear who’s popular with kids. Bad people are greeted with a hard stare."
  
- descright=string(_likesT)+":MARMALADE,SANDWICHES\n"+string(_dislikesT)+":BAD PEOPLE\n"+string(_hobbyT)+":BOOK READING"
+ descright=string(_likesT)+":MARMALADE,BALLOONS\n"+string(_dislikesT)+":BAD PEOPLE\n"+string(_hobbyT)+":BOOK READING"
  
  }
   if dataPal=6 {enemy_switch("MONO",0) _tedage=19
@@ -953,7 +953,7 @@ desc="With a mysterious spell, they can bring their scimitars to life for assist
 
  descleft=string(_ageT)+":ANCIENT\nNAT.:MIDDLE EAST\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":130LBS"
 	
-descright=string(_likesT)+":FANCYNESS,GEMSTONES\n"+string(_dislikesT)+":INTERLOPERS\n"+string(_hobbyT)+":MASSAGES"
+descright=string(_likesT)+":FANCYNESS,JEWELS\n"+string(_dislikesT)+":INTERLOPERS\n"+string(_hobbyT)+":MASSAGES"
  dataabilities="Magic Sword Fighting,Acrobatics"
 	
 	}
@@ -1108,7 +1108,7 @@ break;
 
  descleft="NAT.:ALIEN\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":180LBS"
 
- descright=string(_likesT)+":VIOLENCE,DESTRUCTION\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":HUNTING"
+ descright=string(_likesT)+":VIOLENCE,ACTION\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":HUNTING"
  dataabilities="TECHNOLOGY"
 
   if dataPal=2 {enemy_switch("DESTRON",0)
@@ -1116,7 +1116,7 @@ desc="These drones support the invading troops by launching powerful, bouncing b
 
  descleft="NAT.:ALIEN\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":190LBS"
 	 
- descright=string(_likesT)+":VIOLENCE,DESTRUCTION\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":HUNTING"
+ descright=string(_likesT)+":ACTION,VIOLENCE\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":HUNTING"
  dataabilities="TECHNOLOGY"
 	 
 	 }
@@ -1136,7 +1136,7 @@ break;
 desc="Specially trained, these beasts fire beams to inflate targets into helpless balloons for capture." 
 	  descleft=string(_ageT)+":6\nNAT.:ALIEN\n"+string(_heightT)+":6'5"+" "+string(_weightT)+":110LBS"
 	 	 
- descright=string(_likesT)+":MEALS,APPROVAL\n"+string(_dislikesT)+":LACK OF ATTENTION\n"+string(_hobbyT)+":NAPPING"
+ descright=string(_likesT)+":MEALS,APPROVAL\n"+string(_dislikesT)+":NO ATTENTION\n"+string(_hobbyT)+":NAPPING"
  dataabilities="ALIEN POWERS"
 		 
 		 }
@@ -1214,7 +1214,7 @@ break;
  
  descleft=string(_ageT)+":26\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
  
-  descright=string(_likesT)+":SHOWING OFF,MELONS\n"+string(_dislikesT)+":SHOWOFFS\n"+string(_hobbyT)+":EXERCISE"
+  descright=string(_likesT)+":SHOW OFF,MELONS\n"+string(_dislikesT)+":SHOWOFFS\n"+string(_hobbyT)+":EXERCISE"
  dataabilities="Slime Powers, Sneaking"
  
    if dataPal=2 {enemy_switch("CHERRY",0)
@@ -1229,7 +1229,7 @@ break;
     if dataPal=3 {enemy_switch("BLUEBERRY",0)
 		desc="Buoyant and bouncy, they like tackling their opponents as a big slimy cannonball!"
 		
-  descright=string(_likesT)+":PARTIES,BLUEBERRIES\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PARTYING"
+  descright=string(_likesT)+":PARTY,BLUEBERRIES\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PARTYING"
  dataabilities="Slime Powers, Brawling"
 		
  descleft=string(_ageT)+":27\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
@@ -1287,7 +1287,7 @@ desc="These amorous cave beasts will shake the earth itself just so they can get
 
   descleft=string(_ageT)+":43\nNAT.:RUSSIA\n"+string(_heightT)+":6'4"+" "+string(_weightT)+":345LBS"
 		
-    descright=string(_likesT)+":LOVE,HUGS\n"+string(_dislikesT)+":RUNAWAYS\n"+string(_hobbyT)+":ROCK SCULPTING"
+    descright=string(_likesT)+":LOVE,HUGS\n"+string(_dislikesT)+":RUNAWAYS\n"+string(_hobbyT)+":MUD SCULPTING"
  dataabilities="Crushing, Smashing"
 		
 		}
@@ -1338,13 +1338,13 @@ break;
 
    descleft=string(_heightT)+":8'5"+" "+string(_weightT)+":180LBS"
   
- descright=string(_likesT)+":DESTROYING,ELIMINATING\n"+string(_dislikesT)+":MISTAKES\n"+string(_hobbyT)+":MUSIC PLAYING"
+ descright=string(_likesT)+":DESTROYING,FILMS\n"+string(_dislikesT)+":MISTAKES\n"+string(_hobbyT)+":MUSIC PLAYING"
  dataabilities="Robotic Kick, Charging"
 
    if dataPal=2 {enemy_switch("METR-A",0)
 	   desc="This model is more explosive, with “ballistics” they launch at will to blast intruders to ash."	   
 	  
- descright=string(_likesT)+":DESTROYING,EXPLODING\n"+string(_dislikesT)+":ERRORS\n"+string(_hobbyT)+":BALL DANCING"
+ descright=string(_likesT)+":DESTROYING,BOOKS\n"+string(_dislikesT)+":ERRORS\n"+string(_hobbyT)+":BALL DANCING"
  dataabilities="Robotic Kick, Ballistics"
 	  
 	  }

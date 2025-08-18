@@ -6,6 +6,8 @@ surf_circle = surface_create(320,240);
 
 ambushtime=0;
 
+carMode=0;
+
 minigameID=0;
 minigameIDwin=0;
 mirrorMode=0;

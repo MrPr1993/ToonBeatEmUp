@@ -2,7 +2,7 @@
 oPlayer.visible=1
 oPlayer.alarm[0]=-1
 
-
+oControl.carMode=1
 
 oPlayer.carMode=1
 oPlayer.anim=200

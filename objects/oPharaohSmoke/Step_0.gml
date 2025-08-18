@@ -5,6 +5,7 @@
 if image_index>3
 {
 hspeed=lerp(hspeed,0,0.01)
+vspeed=lerp(vspeed,0,0.01)
 }
 
 if sprite_index=mainSmoke

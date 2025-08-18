@@ -77,6 +77,12 @@ damage=0.01
 	
 	if AnimFrame=2 {sm=instance_create_depth(x+64*image_xscale,y,0,oPharaohSmoke) sm.hspeed=1*image_xscale
 		sm.z=z-54
+		
+		var _smokeaim=point_direction(x+64*image_xscale,y,targetEnemy.x,targetEnemy.y);
+		
+sm.hspeed=lengthdir_x(1,_smokeaim)
+sm.vspeed=lengthdir_y(1,_smokeaim)
+		
 		}
 		
 	if AnimFrame>5.5 {hurt=0 atk=0 canmove=1 hit=0

@@ -5,7 +5,7 @@ if oPlayer.x>3390
 
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0	
-
+oControl.carMode=1
 timer_set(1)
 oControl.time=99
 with oPlayer

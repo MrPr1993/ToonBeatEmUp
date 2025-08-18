@@ -45,5 +45,5 @@ waterSplash=10;
 if obstacletype=1
 {
 if image_xscale=-1 and x<oControl.camX-200 instance_destroy()
-x+=4*image_xscale
+x+=6*image_xscale
 }

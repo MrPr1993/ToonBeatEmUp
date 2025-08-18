@@ -139,7 +139,7 @@ dataabilities="GAMBLING,PERFORMING,\nRIDDLES,SMASHING,ICE"
  descleft=string(_ageT)+":ANCIENT?\nNAT.:CELTIC\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":160LBS"
  
   descright=+string(_ageT)+":ISOLATION\n"+string(_dislikesT)+":TRESSPASSERS\n"+string(_hobbyT)+":SWIMMING"
-dataabilities="MAGIC,BREWING,EXPERIMENTING\nCOOKING,POSSESSING"
+dataabilities="MAGIC,BREWING,\nEXPERIMENTING,\nCOOKING,POSSESSING"
  
  break;
    case 9:
@@ -361,7 +361,7 @@ dataabilities="VAMPIRE,THIEVERY\nCONTROL,MECHANICS"
  "I don't understand… I have no recorded info on this subject… Who is she? What is she? Where’d she even come from?!")
  descleft=""
 descright=""
- 
+ dataabilities=""
  break;
 
 }

@@ -14,12 +14,18 @@ with port image_blend=c_black
 
 ghostfx=instance_create_depth(4272, 178,-1,oFlashFX) with ghostfx
 {sprite_index=spr_ghost_head hspeed=5 image_speed=0 z=-80 image_blend=c_black image_alpha=0.5 haspal=0 animEnd=0 alarm[0]=0
-flashFX(4320-32,176+2,-80-32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
-flashFX(4320,176+2,-80-32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
-flashFX(4320+32,176+2,-80-32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
-flashFX(4320-32,176+2,-80+32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
-flashFX(4320,176+2,-80+32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
-flashFX(4320+32,176+2,-80+32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
+//flashFX(4320-32,176+2,-80-32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
+//flashFX(4320,176+2,-80-32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
+//flashFX(4320+32,176+2,-80-32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
+//flashFX(4320-32,176+2,-80+32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
+//flashFX(4320,176+2,-80+32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
+//flashFX(4320+32,176+2,-80+32,spr_ghost_poof,0,0.25,60,1,1,c_white,1)
+
+flashFX(4320,176+2,-80,spr_smokelarge,0,0.25,60,1,1,c_white,1)
+with fx {haspal=1
+current_pal=3;
+my_pal_sprite=spr_smokepal
+}
 	}
 
 ghost=instance_create_depth(4512-32+480-128+32,190+32,-1,oFlashFX) with ghost

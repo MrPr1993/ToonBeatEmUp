@@ -11,6 +11,7 @@ automoveX=3340 automoveY=160+16+16*controlNO automove=1
 vspeed=0
 }
 
+oControl.carMode=0
 
 }
 else
