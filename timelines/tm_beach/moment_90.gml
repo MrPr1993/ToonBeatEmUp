@@ -57,7 +57,7 @@ if automove=0
 specialanimscript=function()
 {
 if AnimFrame=0
-{
+{image_index=0
 if character=0 sprite_index=spr_viva_point
 if character=1 sprite_index=spr_hina_point
 if character=2 sprite_index=spr_bahati_point

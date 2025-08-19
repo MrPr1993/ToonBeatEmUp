@@ -19,7 +19,7 @@ overwriteAttack3=1
 overwriteAttack4=1
 overwriteAttack5=1
 
-if weapontype=3 or weapontype=4 rangeAtk=160
+if weapontype=1 or weapontype=3 or weapontype=4 rangeAtk=160
 else rangeAtk=90
 
 if overwriteAttack=1

@@ -1,23 +1,23 @@
 if __view_get( e__VW.XView, 0 )>=8680-2
 {
-en8=instance_create_depth(8734, 190,-1,oEntryBreak)
-with en8
+en10=instance_create_depth(8734, 190,-1,oEntryBreak)
+with en10
 {instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 my_pal_sprite=spr_plantpal;
-	shellSpawnSpd=0.25 spawnSprFX=spr_plant_rise hidden=1;
+	shellSpawnSpd=0.25 spawnSprFX=spr_plant_rise hidden=1; current_pal=0;
 	spawnFall=spr_plant_stand	spawnEnemy=oPlant
 	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 
 	}
 	
-en9=instance_create_depth(8734, 229,-1,oEntryBreak)
-with en9
+en11=instance_create_depth(8734, 229,-1,oEntryBreak)
+with en11
 {instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 my_pal_sprite=spr_plantpal;
-	shellSpawnSpd=0.25 spawnSprFX=spr_plant_rise hidden=1;
+	shellSpawnSpd=0.25 spawnSprFX=spr_plant_rise hidden=1; current_pal=0;
 	spawnFall=spr_plant_stand	spawnEnemy=oPlant
 	xSpeed=0 ySpeed=0 zSpeed=0 ground=1
 	}
 
 //8848
-en10=instance_create(8848, 190,oAreaSpawner) with en10
+en12=instance_create(8848, 190,oAreaSpawner) with en12
 {
 spawnX=0 ///768
 MaxSpawnFrame=0 visible=1

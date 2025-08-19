@@ -14,3 +14,6 @@ with dustmk {sprite_index=sprite_ image_speed=0.5 animEnd=1 alarm[0]=999 isDepth
 		
 	}
 }
+
+
+////Environment Dust effect

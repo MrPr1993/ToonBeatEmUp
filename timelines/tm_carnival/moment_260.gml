@@ -28,8 +28,13 @@ enemy_switch("MS.CHILL",0)
 }
 
 
-en7=instance_create_depth(__view_get( e__VW.XView, 0 )-32,232,-1,oWrestler)
-enemy_switch("MS.CRUSH",0)
+en7=instance_create_depth(__view_get( e__VW.XView, 0 )-32,232,-1,oSwing)
+with en7 {weapon_add("WHIP") enemy_switch("MS.DOMI",0)}
+
+en8=instance_create_depth(__view_get( e__VW.XView, 0 )-32,232+32,-1,oSwing)
+with en8 {weapon_add("WHIP") enemy_switch("MS.DOMI",0)}
+
+//enemy_switch("MS.CRUSH",0)
 
 enG=instance_create(__view_get( e__VW.XView, 0 )+160,240,oGunRange)
 

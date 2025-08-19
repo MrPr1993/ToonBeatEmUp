@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.595397,
+  "duration":0.5953968,
   "name":"snd_alien2",
   "parent":{
     "name":"Objects",

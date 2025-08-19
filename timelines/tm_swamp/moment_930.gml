@@ -10,14 +10,14 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,7000,1)
 
 
-en1=instance_create_depth(__view_get( e__VW.XView, 0)+320+64,200-32,-1,oZombieWoman)
+en1=instance_create_depth(__view_get( e__VW.XView, 0)+320+64,200-32,-1,oSkeleton)
 with en1 {image_xscale=-1 canAttack=5 alarm[1]=30
-	enemy_switch("RIGORA",0)
+	//enemy_switch("RIGORA",0)
 	}
 
-en2=instance_create_depth(__view_get( e__VW.XView, 0)+320+64,200+32,-1,oZombieMan)
+en2=instance_create_depth(__view_get( e__VW.XView, 0)+320+64,200+32,-1,oSkeleton)
 with en2 {image_xscale=-1 canAttack=5 alarm[1]=30
-	enemy_switch("MORTI",0)	
+	//enemy_switch("MORTI",0)	
 	}
 
 en3=instance_create_depth(5375, 166,-1,oEntryBreak)

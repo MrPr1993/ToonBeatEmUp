@@ -16,14 +16,10 @@ en4=instance_create_depth(814,448,-1,oAreaSpawner)
 with en4
 {
 spawnX=804-160 ///768
-enemyMax=1
+MaxSpawnFrame=0 visible=1
+FXtype=4 canDraw=1 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 enemytype0=oNinjaBun
 enemytype1=oNinjaBun
-visible=1
-FXtype=4 canDraw=1 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
-
-
-
 }
 
 ////

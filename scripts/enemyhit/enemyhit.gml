@@ -32,11 +32,26 @@ thrownPlayer=-1
 	targetEnemy=other.hitSource.id
 if other.hitSource.object_index=oPlayer playerFrom=other.hitSource.playerNO
 
+
+	
+////Chance their low HP increases their stun
+var _hpstun=(hp*maxhp)*100 
 dizzyPercentage=random_range(0,100)
+
+if _hpstun>10
+{
 	if !dizzyPercentage=clamp(dizzyPercentage,dizzyPercentageMin,dizzyPercentageMax)
 	dizzyHit=1;
 	else
 	dizzyHit=other.dizzyAtk
+}
+else
+{
+	if !dizzyPercentage=clamp(dizzyPercentage,0,50)
+	dizzyHit=1;
+	else
+	dizzyHit=other.dizzyAtk
+}
 
 cutDMG=other.isCut
 

@@ -18,20 +18,36 @@ spawner_followset("WaveSet1",0,9000,1)
 
 en1=instance_create(6928,118,oEntryPool) en1.rangeXAdd=0 en1.splashspr=-1
 with en1
-{spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-80 z=-60 spawnname="Bones"
+{spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-200 z=-60 spawnname="Bones"
 	canEvent0=0 ySpeed=1 spawnFall=spr_skeleton_front
 	
 	}
 en2=instance_create(7440,118,oEntryPool) en2.rangeXAdd=0 en2.splashspr=-1
 with en2
-{spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-80 z=-60 spawnname="Bones"
+{spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-200 z=-60 spawnname="Bones"
 		current_pal=1 name="SKELIE" my_pal_sprite=spr_mummypal
 		canEvent0=0 ySpeed=1.5 spawnFall=spr_skeleton_front enemy_switch("SKELIE",0)
 		
 		}
-en3=instance_create(7900,118,oEntryPool) en3.rangeXAdd=0 en3.splashspr=-1
+		
+en3=instance_create(7440-32,118,oEntryPool) en3.rangeXAdd=0 en3.splashspr=-1
 with en3
-{spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-80 z=-60 spawnname="Bones"
+{spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=7440-200 z=-60 spawnname="Bones"
+		current_pal=0 my_pal_sprite=spr_mummypal
+		canEvent0=0 ySpeed=1.5 spawnFall=spr_skeleton_front 		
+		}
+		
+en4=instance_create(7440-32,118,oEntryPool) en4.rangeXAdd=0 en4.splashspr=-1
+with en4
+{spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=7440-200 z=-60 spawnname="Bones"
+		current_pal=0 my_pal_sprite=spr_mummypal
+		canEvent0=0 ySpeed=1.5 spawnFall=spr_skeleton_front 		
+		}
+		
+		
+en5=instance_create(7900,118,oEntryPool) en5.rangeXAdd=0 en5.splashspr=-1
+with en5
+{spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-200 z=-60 spawnname="Bones"
 		canEvent0=0 ySpeed=1 spawnFall=spr_skeleton_front
 		
 		}	
@@ -62,7 +78,7 @@ part.current_pal=0
 }
 }
 
-en4=instance_create(6336, 136,oAreaSpawner) with en4
+en6=instance_create(6336, 136,oAreaSpawner) with en6
 {
 spawnX=6336-240 ///768
 enemytype0=oZombieWoman MaxSpawnFrame=0 visible=1 turn0=-1
@@ -71,7 +87,7 @@ turn0=-1 enemyMax=0 name0="RIGORA" hp0=0.15
 pal0=2 palS0=spr_zombiepal;
 }
 
-en5=instance_create(6144, 136,oAreaSpawner) with en5
+en7=instance_create(6144, 136,oAreaSpawner) with en7
 {
 spawnX=6144-240 ///768
 enemytype0=oZombieMan MaxSpawnFrame=0 visible=1 turn0=-1
@@ -80,8 +96,8 @@ turn0=-1 enemyMax=0 name0="MORTI" hp0=0.15
 pal0=2 palS0=spr_zombiepal;
 }
 
-en6=instance_create_depth(8390, 166+64,-1,oEntryBreak)
-with en6
+en8=instance_create_depth(8390, 166+64,-1,oEntryBreak)
+with en8
 {instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 my_pal_sprite=spr_zombiepal;
 	shellSpawnSpd=0.25 spawnSprFX=spr_zombiem_rise hidden=1; image_xscale=-1
 	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan
@@ -89,8 +105,8 @@ with en6
 	enemy_switch("MORTI",0)	
 	}
 	
-en7=instance_create_depth(8390, 166+64,-1,oEntryBreak)
-with en7
+en9=instance_create_depth(8390, 166+64,-1,oEntryBreak)
+with en9
 {instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 my_pal_sprite=spr_zombiepal;
 	shellSpawnSpd=0.25 spawnSprFX=spr_zombiem_rise hidden=1; image_xscale=-1
 	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan

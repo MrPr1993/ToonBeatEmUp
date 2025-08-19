@@ -226,32 +226,7 @@ break;
  descright=string(_likesT)+":SMASHING,SMOKING\n"+string(_dislikesT)+":MILK\n"+string(_hobbyT)+":BASEBALL"
 dataabilities="Swinging,Dancing"
  
-  
-if dataPal=2 {weapon_add("HANDGUN") enemy_switch("MS.TRIG",0)
-desc="A gun-toting loony who’ll make swiss cheese out of you if you’re not careful. RATATAT-TAT!"
- descleft=string(_ageT)+":23\nNAT.:FRANCE\n"+string(_heightT)+":5'7"+" "+string(_weightT)+":115LBS"	
-	
- descright=string(_likesT)+":SHOOTING,HOTDOGS\n"+string(_dislikesT)+":DUCKS\n"+string(_hobbyT)+":CLAY SHOOTING"
-dataabilities="Shooting,Skiing"
-	
-	}
-if dataPal=3 {weapon_add("WHIP") enemy_switch("MS.DOMI",0)
- descleft=string(_ageT)+":27\nNAT.:RUSSIA\n"+string(_heightT)+":5'9"+" "+string(_weightT)+":130LBS"
-desc="This sadist will crack her whip at you, laughing with every lash you get."
-	
- descright=string(_likesT)+":WHIPPING,SPICES\n"+string(_dislikesT)+"CATS:\n"+string(_hobbyT)+":TAMING"
-dataabilities="Whips,Riding"
-	
-	}
-if dataPal=4 {weapon_add("DYNAMITE") enemy_switch("MS.BOOM",0)
- descleft=string(_ageT)+":28\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":112LBS"
-desc="DANGER! This lady throws dynamite around like it’s candy! Don’t get caught in the blast!"
-
- descright=string(_likesT)+":EXPLODING,VULTURES\n"+string(_dislikesT)+":QUIET\n"+string(_hobbyT)+":CHECKERS"
-dataabilities="EXPLOSIVES,Swinging"
-
-}
-if dataPal=5 {weapon_add("KNIFE") enemy_switch("MS.BRAN",0)
+if dataPal=2 {weapon_add("KNIFE") enemy_switch("MS.BRAN",0)
  descleft=string(_ageT)+":20\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":108LBS"
 desc="A devious woman who knows many tricks with her knives, namely piercing her foes from afar!"
 	
@@ -259,6 +234,35 @@ desc="A devious woman who knows many tricks with her knives, namely piercing her
 dataabilities="Slicing,Knife Throwing"
 	
 	}
+	
+if dataPal=3 {weapon_add("DYNAMITE") enemy_switch("MS.BOOM",0)
+ descleft=string(_ageT)+":28\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":112LBS"
+desc="DANGER! This lady throws dynamite around like it’s candy! Don’t get caught in the blast!"
+
+ descright=string(_likesT)+":EXPLODING,VULTURES\n"+string(_dislikesT)+":QUIET\n"+string(_hobbyT)+":CHECKERS"
+dataabilities="EXPLOSIVES,Swinging"
+}
+
+if dataPal=4 {weapon_add("WHIP") enemy_switch("MS.DOMI",0)
+ descleft=string(_ageT)+":27\nNAT.:RUSSIA\n"+string(_heightT)+":5'9"+" "+string(_weightT)+":130LBS"
+desc="This sadist will crack her whip at you, laughing with every lash you get."
+	
+ descright=string(_likesT)+":WHIPPING,SPICES\n"+string(_dislikesT)+"CATS:\n"+string(_hobbyT)+":TAMING"
+dataabilities="Whips,Riding"
+	
+	}
+  
+if dataPal=5 {weapon_add("HANDGUN") enemy_switch("MS.TRIG",0) ///UNUSED
+desc="A gun-toting loony who’ll make swiss cheese out of you if you’re not careful. RATATAT-TAT!"
+ descleft=string(_ageT)+":23\nNAT.:FRANCE\n"+string(_heightT)+":5'7"+" "+string(_weightT)+":115LBS"	
+	
+ descright=string(_likesT)+":SHOOTING,HOTDOGS\n"+string(_dislikesT)+":DUCKS\n"+string(_hobbyT)+":CLAY SHOOTING"
+dataabilities="Shooting,Skiing"
+	
+	}
+
+
+
 
 if image_index<1
 weaponanim(weaponspr,weaponIndex,14,-65,180*image_xscale,weaponcolor)

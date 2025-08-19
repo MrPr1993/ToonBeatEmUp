@@ -3,7 +3,7 @@
 if __view_get( e__VW.XView, 0 )>=7440-2-320+320
 {
 en5=instance_create_depth(7352,128,-1,oEntryFenceJump) with en5
-{depth=16777213 isDepth=0 ySpeed=2 spawnSpeedZ=-4 rangeXAdd=0 rangeX=0 newSpawn=1 newSpawnX=7684-128 rideX=7540
+{depth=16777213 isDepth=0 ySpeed=2 spawnSpeedZ=-4 rangeXAdd=0 rangeX=0 newSpawn=1 newSpawnX=7684-400 rideX=7540
 			spawnFall=spr_lobster_front
 	moveSpr=spr_lobster_move
 	spawnEnemy=oLobster

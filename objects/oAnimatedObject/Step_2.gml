@@ -51,7 +51,7 @@ if AnimFrame<2
 weaponanim(weaponspr,weaponIndex,lerp(weaponX,0,0.1),lerp(weaponY,0,0.1),lerp(weaponangle,175,0.1),weaponcolor)
 }
 else
-if AnimFrame<12-1
+if AnimFrame<10-1
 {atk=1 sentflying=4*image_xscale
 
 selfatk.isCut=1

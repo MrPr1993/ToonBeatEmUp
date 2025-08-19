@@ -15,8 +15,6 @@ en7=enemy_ambusher(0,176+64,oSwing,-1,1,32,20,1,1,0,132)
 with en7 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}
 en8=enemy_ambusher(0,176+80,oSwing,-1,1,32,20,1,1,0,132)
 with en8 {weapon_add("KNIFE") enemy_switch("MS.BRAN",1)}
-
-
 }
 else
 {

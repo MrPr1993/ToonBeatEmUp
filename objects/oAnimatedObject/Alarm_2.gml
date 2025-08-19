@@ -5,6 +5,8 @@ if act=1
 {
 if specialBossState=0
 {
+flashFX(x,y+1,z,spr_smokets,0,0.5,0,1,1,c_white,1)	
+
 if disappearTime=0 instance_destroy()
 else
 {
@@ -16,7 +18,7 @@ if visible=0 visible=1 else visible=0
 
 if visible
 {
-flashFX(x,y+1,z-8,spr_ghost_poof,0,0.5,0,1,1,c_white,1)
+
 fx.zSpeed=-1
 }
 

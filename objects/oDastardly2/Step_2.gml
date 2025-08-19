@@ -15,6 +15,18 @@ overwriteAttack3=1
 overwriteAttack4=1
 overwriteAttack5=1
 
+////Viva Palette
+//
+//
+//Hina
+//
+//
+//Bahati
+//
+//
+//Sofia
+//
+//
 
 if anim=100
 {if AnimFrame=0 {AnimFrame=0.1 specialtimes[1]=-200 specialtimes[0]=-200
@@ -59,6 +71,35 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)<120
 }
 	else
 	anim=11
+
+//////Change Palette
+var _changepal=0;
+if (hp<=3.5 and paltimes=0) _changepal=1
+else if (hp<=3 and paltimes=1) _changepal=1
+else if  (hp<=2.5 and paltimes=2) _changepal=1
+else if  (hp<=2 and paltimes=3) _changepal=1
+else if (hp<=1.5 and paltimes=4) _changepal=1
+
+if _changepal {PlaySound(snd_magic2) {paltimes+=1; paltimes=clamp(paltimes,0,5) current_pal=palset[paltimes] anim=1340 recovery=2 image_index=0 specialFX=1 alarm[3]=5}}
+}
+
+////Once she takes too much damage she changes back
+if current_pal!=0
+{var _changepal=0;
+if (hp<=3 and paltimes=1) _changepal=1
+else if  (hp<=2.5 and paltimes=2) _changepal=1
+else if  (hp<=2 and paltimes=3) _changepal=1
+else if (hp<=1.5 and paltimes=4) _changepal=1
+if _changepal {current_pal=0 PlaySound(snd_magic2) specialFX=1 alarm[3]=5}
+}
+
+////CHANGE FORM
+if anim=1340
+{recovery=2 sprite_index=spr_dastardly2_changeform
+image_index+=0.25 
+image_index=clamp(image_index,0,6.5)
+AnimFrame+=0.25
+if AnimFrame>=10 {canmove=1}
 }
 
 if anim=11 ///Kick

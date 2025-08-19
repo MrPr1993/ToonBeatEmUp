@@ -288,7 +288,7 @@ if object_index=oContinueScreen or object_index=oControl
 {
 if global.UnlockEnemy[1] and global.UnlockEnemy[2] and global.UnlockEnemy[3] and global.UnlockEnemy[5] and global.UnlockEnemy[6]
 and global.UnlockEnemy[7] and global.UnlockEnemy[10] and global.UnlockEnemy[11] and global.UnlockEnemy[12] and global.UnlockEnemy[13]
-and global.UnlockEnemy[14] and global.UnlockEnemy[15] and global.UnlockEnemy[16] and global.UnlockEnemy[20] and global.UnlockEnemy[21]
+and global.UnlockEnemy[14] and global.UnlockEnemy[15] and global.UnlockEnemy[16] and global.UnlockEnemy[20]// and global.UnlockEnemy[21] //21 - TRIG unused
 and global.UnlockEnemy[22] and global.UnlockEnemy[23] and global.UnlockEnemy[24] and global.UnlockEnemy[25] and global.UnlockEnemy[26]
 and global.UnlockEnemy[27] and global.UnlockEnemy[28] and global.UnlockEnemy[29] and global.UnlockEnemy[30] and global.UnlockEnemy[31]
 and global.UnlockEnemy[32] and global.UnlockEnemy[33] and global.UnlockEnemy[34] and global.UnlockEnemy[35] and global.UnlockEnemy[36]

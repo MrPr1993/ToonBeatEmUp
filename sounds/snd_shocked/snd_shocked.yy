@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.674921,
+  "duration":0.6749206,
   "name":"snd_shocked",
   "parent":{
     "name":"Objects",

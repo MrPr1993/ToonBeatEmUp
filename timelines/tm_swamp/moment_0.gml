@@ -28,6 +28,7 @@ with en2
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
 	spawnEnemy=oSneak
+	enemy_switch("MR.SLINK",0)
 }
 
 en3=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
@@ -43,6 +44,7 @@ with en4
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
 	spawnEnemy=oSneak
+	enemy_switch("MR.SIDLE",0)
 }
 en5=instance_create(__view_get( e__VW.XView, 0)+320+64+280,132,oEntryFenceJump)
 with en5
@@ -50,6 +52,7 @@ with en5
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
 	spawnEnemy=oSneak
+	enemy_switch("MR.SLINK",0)
 }
 en6=instance_create(__view_get( e__VW.XView, 0)-64-200,132,oEntryFenceJump)
 with en6
@@ -57,6 +60,7 @@ with en6
 	spawnFall=spr_sneak_front
 	moveSpr=spr_sneak_move
 	spawnEnemy=oSneak
+	enemy_switch("MR.SIDLE",0)
 }
 
 bgfog1=layer_background_get_id(layer_get_id("BGclouds"));

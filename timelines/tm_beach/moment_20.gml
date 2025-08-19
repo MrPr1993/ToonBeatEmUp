@@ -9,10 +9,12 @@ xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,2640-640-320,1)
 
 en1=instance_create_depth(__view_get( e__VW.XView, 0)+320+96,200+64+240,-1,oSneak)
-with en1 {image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("TOMMYGUN")}
+with en1 {image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("TOMMYGUN")
+	enemy_switch("MR.SLINK",0)
+	}
 
 en2=instance_create_depth(__view_get( e__VW.XView, 0)+320+96,200+128+240,-1,oSwing)
-with en2 {image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("HAMMER")}
+with en2 {image_xscale=-1 canAttack=5 alarm[1]=60 weapon_add("WHIP") enemy_switch("MS.DOMI",0)}
 
 
 }

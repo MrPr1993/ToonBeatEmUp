@@ -107,7 +107,7 @@ if AnimFrame<0.5 {weaponanim(weaponspr,weaponIndex,21,-69-1,63,weaponcolor) imgs
 else {weaponanim(weaponspr,weaponIndex,21,-45,0,weaponcolor)}}
 
 frame_set(0,imgskp,0.05)
-	if AnimFrame=1 {		PlaySound(snd_alien1)		
+	if AnimFrame=1 {		PlaySoundNoStack(snd_alien1)		
 	flashFX(x+38*image_xscale,y,z-50,weaponProjFlashSpr,0,1,0,1,1,c_white,1)
 	projectile_create(x+38*image_xscale,y,z-50,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
 	projectile.HitSound=weaponProjHitSnd

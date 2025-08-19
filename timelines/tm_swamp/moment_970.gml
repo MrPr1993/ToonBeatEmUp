@@ -8,6 +8,8 @@ and !instance_exists(en7)
 and !instance_exists(en8)
 and !instance_exists(en9)
 and !instance_exists(en10)
+and !instance_exists(en11)
+and !instance_exists(en12)
 {
 with oControl
 {

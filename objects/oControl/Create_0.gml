@@ -555,6 +555,7 @@ superFlashFrame2=0
 
 goActive=0
 goFrame=0
+goTimes=0
 xGoCheck=0
 
 ///Time Limit

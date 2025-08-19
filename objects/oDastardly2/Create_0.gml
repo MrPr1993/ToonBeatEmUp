@@ -21,8 +21,8 @@ OneAttack=2
 
 isHeavy=1
 
-hp=3
-maxhp=3
+hp=4
+maxhp=4
 
 height=110
 
@@ -75,3 +75,19 @@ frame_set(1,1,0.1)
 frame_set(2,2,0.1)
 if AnimFrame>2.9 AnimFrame=0
 }
+
+
+////Randomize Palette Form Order
+my_pal_sprite=pal_dastardlyelements
+current_pal=0
+
+var _array = [1,2,3,4];
+var _array_shuffled = array_shuffle(_array);
+
+palset[5]=0;
+palset[1]=_array_shuffled[0];
+palset[2]=_array_shuffled[1];
+palset[3]=_array_shuffled[2];
+palset[4]=_array_shuffled[3];
+paltimes=0;
+

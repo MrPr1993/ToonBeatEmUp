@@ -31,6 +31,6 @@ en1=instance_create_depth(440,448,-1,oAreaSpawner)
 with en1
 {
 spawnX=430-160 ///768
-enemytype0=oSneak MaxSpawnFrame=0 visible=1
+enemytype0=oSneak MaxSpawnFrame=0 visible=1 name0="MR.SLINK"
 FXtype=4 canDraw=1 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 }

@@ -294,8 +294,8 @@ if mirrorMode
 draw_sprite(spr_gom,goFrame,0,80)
 else
 draw_sprite(spr_go,goFrame,320-50,80)
-}
-if goFrame!=0 goFrame-=0.25 else {goFrame=6 if goActive=1 PlaySound(snd_go)}
+} else goTimes=3
+if goFrame!=0 goFrame-=0.25 else {goFrame=6 if goActive=1 {if goTimes!=0 {goTimes-=1; PlaySound(snd_go)}}}
 }
 if betatest=1 and TextBeta=1
 {draw_set_halign(fa_left)

@@ -2,11 +2,11 @@
 
 if __view_get( e__VW.XView, 0 )>=3702-320
 {
-en7=enemy_ambusher(0,176,oSwing,-1,1,32,20,2,0,0,132)
+en7=enemy_ambusher(0,176,oSwing,-1,1,32,20,1,1,0,132)
 with en7 {weapon_add("DYNAMITE") enemy_switch("MS.BOOM",0)}
-en8=enemy_ambusher(0,176+16,oSwing,-1,1,32,20,2,0,0,132)
-with en8 {weapon_add("DYNAMITE") enemy_switch("MS.BOOM",0)}
-en9=enemy_ambusher(0,176+32,oSwing,-1,1,32,20,2,0,0,132)
+//en8=enemy_ambusher(0,176+16,oSwing,-1,1,32,20,2,0,0,132)
+//with en8 {weapon_add("DYNAMITE") enemy_switch("MS.BOOM",0)}
+en9=enemy_ambusher(0,176+32,oSwing,-1,1,32,20,1,1,0,132)
 with en9 {weapon_add("DYNAMITE") enemy_switch("MS.BOOM",0)}
 
 ////

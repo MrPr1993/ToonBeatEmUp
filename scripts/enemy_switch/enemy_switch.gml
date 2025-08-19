@@ -23,7 +23,7 @@ case "MR.PROWL": enemy_modify(spr_sneakpal,4,_name,0,0.45,0.45) enemyID=14 break
 case "MS.CHILL": enemy_modify(spr_enemypal,4,"MS.CHILL",0,0.2,0.2) enemyID=16  break;
 
 ///Ms. Swing
-case "MS.TRIG": enemy_modify(spr_swingpal,4,_name,0,0.2,0.2) enemyID=21 break;
+case "MS.TRIG": enemy_modify(spr_swingpal,4,_name,0,0.2,0.2) enemyID=21 break; ///UNUSED
 case "MS.DOMI": enemy_modify(spr_swingpal,6,_name,0,0.4,0.4) enemyID=22 break;
 case "MS.BOOM": enemy_modify(spr_swingpal,8,_name,0,0.2,0.2) enemyID=23 break;
 case "MS.BRAN": enemy_modify(spr_swingpal,10,_name,0,0.3,0.3) enemyID=24 break;
