@@ -4,6 +4,8 @@ enemiesdefeated=0
 
 playerwinner="PLAYER"
 
+totalscore=-1
+
 playerFight=1
 
 gameready=0

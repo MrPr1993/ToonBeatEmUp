@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+totalscore=-1
+
 ArenaOver=0;
 
 enemiesdefeated=0

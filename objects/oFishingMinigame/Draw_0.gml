@@ -13,8 +13,23 @@ with oPlayer
 oFishingMinigame.weaponAngle=weaponangle+weaponExtraAngle*image_xscale
 oFishingMinigame.weaponX=round(x+(((floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX))*minimodediv)
 oFishingMinigame.weaponY=round(y+trainz+((floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY)*minimodediv)
+
+
+if anim=26 and AnimFrame=1.3
+{
+draw_set_color(c_white)
+draw_rectangle(x+64-1,y-32+1,x+64+16+1,y-32-100-1,false)
+
+draw_set_color(c_red)
+draw_rectangle(x+64,y-32,x+64+16,y-32-100,false)
+draw_set_color(c_yellow)
+draw_rectangle(x+64,y-32,x+64+16,y-32-specialtimes[1],false)
+
+draw_set_color(c_white)
+}
 }
 
+if oControl.betatest {draw_text(x,y,x+240)}
 
 var ropeang=matrix_build(weaponX,weaponY,0,0,0,weaponAngle*oPlayer.image_xscale,1*oPlayer.image_xscale,1,1);
 var ropeang2=matrix_multiply(matrix_build(weaponXadd,weaponYadd,0,0,0,0,1,1,1),ropeang);

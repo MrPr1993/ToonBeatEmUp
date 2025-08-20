@@ -86,6 +86,8 @@ z=0
 ground=1
 recovery=180
 
+carMode=oControl.carMode
+
 if carMode=0
 {visible=0
 anim=255 //2

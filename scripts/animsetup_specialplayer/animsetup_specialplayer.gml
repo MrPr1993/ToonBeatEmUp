@@ -453,17 +453,27 @@ if weapontype=0
 if spawnID=oFishingRod
 	{if AnimFrame=0 {image_xscale=1
 	hp=maxhp
-fish_choose(choose(0,1,2,3,4,5,6,7,8,9,10))
+	//var _fishget=fish_choose(choose(0,1,2,3,4,5,6,7,8,9,10))
 	
 	}
 	////Hammer Swing
 frame_set(0,0,0.1)
-frame_set(1,1,0.05) if AnimFrame=2
+frame_set(1,1,0.05) if AnimFrame=clamp(AnimFrame,1,1.5)
+{////Choose strength
+AnimFrame=1.3
+
+if specialtimes[0]=0 {specialtimes[1]+=4 if specialtimes[1]>=100 {specialtimes[0]=1 specialtimes[1]=100}}
+else {specialtimes[1]-=4 if specialtimes[1]<=0 {specialtimes[0]=0 specialtimes[1]=0}}
+
+if key_attack AnimFrame=2
+
+}
+if AnimFrame=2
 {areaEntry=1
 PlaySound(snd_swing5)
 oFishingMinigame.x=x+32 oFishingMinigame.y=y oFishingMinigame.z=z-96
 with oFishingMinigame
-{spdX=8 spdZ=-8
+{spdX=0.08*oPlayer.specialtimes[1] spdZ=-0.08*oPlayer.specialtimes[1]
 Thrown=1 
 }
 }
@@ -612,7 +622,11 @@ if key_attack {oFishingMinigame.x-=16
 
 ///Fish Get!
 if anim=260001
-{if AnimFrame=0 image_xscale=1
+{if AnimFrame=0 
+	{image_xscale=1
+	var _fishget=fish_choose(specialtimes[2])
+	global.FishData[_fishget]=1	
+	}
 
 var fishcatch=0;
 if oFishingMinigame.fishout=1
@@ -629,7 +643,7 @@ with oControl
 {alarm[6]=120
 resulttext1=""
 altresult1=0
-resulttext2="BONUS"
+resulttext2=""
 AltScore2=oPlayer.fishscore
 resulttext3=""
 altresult3=0
@@ -696,7 +710,7 @@ oFishingMinigame.fishout=3
 	
 }
 frame_set(3,0,0.25)
-var hasboot=0; if fishname="BOOT" hasboot=1;
+var hasboot=0; if fishname="JUNK" hasboot=1;
 frame_set(4,1+hasboot,0.25)
 	
 

@@ -132,12 +132,16 @@ SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 
 
-	
+
 CutsceneStage=rm_stagefinal
 canSkipCutscene=2
 cutscenePlaying=1
 }
 
+
+
+CutsceneStage=rm_stagefinal
+canSkipCutscene=2
 
 
 arcade_saving(CutsceneStage)

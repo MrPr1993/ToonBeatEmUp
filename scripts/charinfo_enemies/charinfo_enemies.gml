@@ -218,7 +218,7 @@ dataabilities="Cold,Bruising,Freezing"
 break;
   case 6:
   weapon_add("HAMMER") enemyID=20
-   charinfo_set(10,spr_swing_stand,5,animsetup_swing,draw_swing,spr_swingpal,2,spr_enemyface,7,"MS.SWING",
+   charinfo_set(10,spr_swing_stand,4,animsetup_swing,draw_swing,spr_swingpal,2,spr_enemyface,7,"MS.SWING",
    "This giggly ditz will swing any nearby weapon at you, but disarm her and she’ll crumple like paper!")
   
  descleft=string(_ageT)+":21\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":110LBS"

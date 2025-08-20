@@ -6,8 +6,16 @@ if gameready=0
 if gamesetting=0
 {gamesetting=1
 	
+if totalscore!=-1
+{
+totalscore=0;
+with oPlayer
+{
+oArenaSurvival.totalscore+=PlayerScore
+}	
+if totalscore>=global.HiScoreSurvival {global.HiScoreSurvival=totalscore}
+}
 
-	
 with oControl
 {global.Continues=0; with oPlayer PlayerLife=0
 if oArenaSurvival.playerFight

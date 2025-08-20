@@ -15,6 +15,8 @@ ishiscore=0;
 
 arrayamount=0;
 twinswitch=0;
+totalscore=0;
+
 
 drawscript=function()
 {
@@ -27,7 +29,7 @@ draw_text(160,34+10+64,"GET READY")
 else
 {
 
-draw_text(160,34+10,"ENEMIES DEFEATED: "+string(enemiesdefeated))
+draw_text(160,34+10,"ENEMIES DEFEATED:"+string(enemiesdefeated)+"\nTOTAL SCORE:"+string(totalscore))
 }
 	draw_set_halign(fa_left)
 }

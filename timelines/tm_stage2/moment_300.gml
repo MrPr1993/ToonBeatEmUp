@@ -13,6 +13,7 @@ vspeed=0
 
 }
 
+timer_set(0)
 oControl.carMode=0
 
 var bg1	= layer_get_id("StreetBG");

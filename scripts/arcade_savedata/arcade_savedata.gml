@@ -144,7 +144,7 @@ case rm_stagecave: _findstage="6b"; global.StageSave=rm_stagesnow global.SaveTex
 case rm_stagesnow: _findstage="6c"; global.StageSave=rm_stageclouds global.SaveText="STAGE 16" break;
 case rm_stageclouds: _findstage="7"; global.StageSave=rm_stagelab global.SaveText="STAGE 17" break;
 case rm_stagelab:  _findstage="8"; global.StageSave=rm_stagefinal global.SaveText="STAGE 18" break;
-case rm_stagefinal: _findstage="0"; global.StageSave=rm_creditscene break;
+case rm_stagefinal: _findstage="0"; global.StageSave=rm_creditscene global.SaveText="STAGE END" break;
 }
 stageNext=global.StageSave;
 CutsceneStage=global.StageSave;
@@ -208,7 +208,7 @@ case "6cC": _findstage=rm_cutscene3c; global.SaveNumber=6 global.SaveText="STAGE
 case "7": _findstage=rm_stagelab; global.SaveNumber=7 global.SaveText="STAGE 7" break;
 case "7C": _findstage=rm_cutscene7; global.SaveNumber=7 global.SaveText="STAGE 8" break;
 //
-case "8": _findstage=rm_stagefinal; _findstage="8"; global.SaveNumber=8 global.SaveText="STAGE 8" break;
+case "8": _findstage=rm_stagefinal; global.SaveNumber=8 global.SaveText="STAGE 8" break;
 }
 
 return _findstage

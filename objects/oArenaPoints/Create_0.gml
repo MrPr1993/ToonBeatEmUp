@@ -1,5 +1,7 @@
 event_inherited()
 
+totalscore=-1
+
 enemiesdefeated=0
 
 playerwinner="DRAW"
