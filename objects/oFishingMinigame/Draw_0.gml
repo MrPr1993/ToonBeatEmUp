@@ -4,6 +4,7 @@
 
 
 if oPlayer.spawnID=oFishingRod
+if oPlayer.anim!=85 and oPlayer.anim!=80 and oPlayer.anim!=81 and oPlayer.anim!=82 and oPlayer.anim!=83 and oPlayer.anim!=84
 {
 draw_set_color(c_white)
 if instance_exists(oPlayer)

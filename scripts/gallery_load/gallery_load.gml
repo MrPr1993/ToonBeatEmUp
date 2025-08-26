@@ -11,126 +11,131 @@ pictureMax=7
 if galno=1
 {
 picturetext[1]="Reference Sheet" sprite_replace(spr_galleryimg1,"Gallery/VivaRef.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/VivaArtwork1.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/VivaArtwork2.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/VivaArtwork3.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/VivaArtwork4.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/VivaArtwork5.png",0,0,1,0,0)
-picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/VivaArtwork6.png",0,0,1,0,0)
+picturetext[2]="Viva 1" sprite_replace(spr_galleryimg2,"Gallery/VivaArtwork1.png",0,0,1,0,0)
+picturetext[3]="Viva 2" sprite_replace(spr_galleryimg3,"Gallery/VivaArtwork2.png",0,0,1,0,0)
+picturetext[4]="Viva 3" sprite_replace(spr_galleryimg4,"Gallery/VivaArtwork3.png",0,0,1,0,0)
+picturetext[5]="Viva 4" sprite_replace(spr_galleryimg5,"Gallery/VivaArtwork4.png",0,0,1,0,0)
+picturetext[6]="Viva 5" sprite_replace(spr_galleryimg6,"Gallery/VivaArtwork5.png",0,0,1,0,0)
+picturetext[7]="Viva 6" sprite_replace(spr_galleryimg7,"Gallery/VivaArtwork6.png",0,0,1,0,0)
 }
 if galno=2
 {
 picturetext[1]="Reference Sheet" sprite_replace(spr_galleryimg1,"Gallery/HinaRef.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/HinaArtwork2.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/HinaArtwork3.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/HinaArtwork4.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/HinaArtwork5.png",0,0,1,0,0)
-picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/HinaArtwork6.png",0,0,1,0,0)
+picturetext[2]="Hina 1" sprite_replace(spr_galleryimg2,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+picturetext[3]="Hina 2" sprite_replace(spr_galleryimg3,"Gallery/HinaArtwork2.png",0,0,1,0,0)
+picturetext[4]="Hina 3" sprite_replace(spr_galleryimg4,"Gallery/HinaArtwork3.png",0,0,1,0,0)
+picturetext[5]="Hina 4" sprite_replace(spr_galleryimg5,"Gallery/HinaArtwork4.png",0,0,1,0,0)
+picturetext[6]="Hina 5" sprite_replace(spr_galleryimg6,"Gallery/HinaArtwork5.png",0,0,1,0,0)
+picturetext[7]="Hina 6" sprite_replace(spr_galleryimg7,"Gallery/HinaArtwork6.png",0,0,1,0,0)
 }
 if galno=3
 {
 picturetext[1]="Reference Sheet" sprite_replace(spr_galleryimg1,"Gallery/BahatiRef.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/BahatiArtwork1.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/BahatiArtwork2.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/BahatiArtwork3.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/BahatiArtwork4.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/BahatiArtwork5.png",0,0,1,0,0)
-picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/BahatiArtwork6.png",0,0,1,0,0)
+picturetext[2]="Bahati 1" sprite_replace(spr_galleryimg2,"Gallery/BahatiArtwork1.png",0,0,1,0,0)
+picturetext[3]="Bahati 2" sprite_replace(spr_galleryimg3,"Gallery/BahatiArtwork2.png",0,0,1,0,0)
+picturetext[4]="Bahati 3" sprite_replace(spr_galleryimg4,"Gallery/BahatiArtwork3.png",0,0,1,0,0)
+picturetext[5]="Bahati 4" sprite_replace(spr_galleryimg5,"Gallery/BahatiArtwork4.png",0,0,1,0,0)
+picturetext[6]="Bahati 5" sprite_replace(spr_galleryimg6,"Gallery/BahatiArtwork5.png",0,0,1,0,0)
+picturetext[7]="Bahati 6" sprite_replace(spr_galleryimg7,"Gallery/BahatiArtwork6.png",0,0,1,0,0)
 }
 if galno=4
 {
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 picturetext[1]="Reference Sheet" sprite_replace(spr_galleryimg1,"Gallery/SofiaRef.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/SofiaArtwork1.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/SofiaArtwork2.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/SofiaArtwork3.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/SofiaArtwork4.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/SofiaArtwork5.png",0,0,1,0,0)
-picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/SofiaArtwork6.png",0,0,1,0,0)
+picturetext[2]="Sofia 1" sprite_replace(spr_galleryimg2,"Gallery/SofiaArtwork1.png",0,0,1,0,0)
+picturetext[3]="Sofia 2" sprite_replace(spr_galleryimg3,"Gallery/SofiaArtwork2.png",0,0,1,0,0)
+picturetext[4]="Sofia 3" sprite_replace(spr_galleryimg4,"Gallery/SofiaArtwork3.png",0,0,1,0,0)
+picturetext[5]="Sofia 4" sprite_replace(spr_galleryimg5,"Gallery/SofiaArtwork4.png",0,0,1,0,0)
+picturetext[6]="Sofia 5" sprite_replace(spr_galleryimg6,"Gallery/SofiaArtwork5.png",0,0,1,0,0)
+picturetext[7]="Sofia 6" sprite_replace(spr_galleryimg7,"Gallery/SofiaArtwork6.png",0,0,1,0,0)
 }
 
 ////Enemy Art
 if galno=5
 {
 pictureMax=4
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/EnemySetA1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/EnemySetA2.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/EnemySetA3.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/EnemySetA4.png",0,0,1,0,0)
+picturetext[1]="Goons and Mooks" sprite_replace(spr_galleryimg1,"Gallery/EnemySetA1.png",0,0,1,0,0)
+picturetext[2]="Goons' Bar" sprite_replace(spr_galleryimg2,"Gallery/EnemySetA2.png",0,0,1,0,0)
+picturetext[3]="Goons' Workout" sprite_replace(spr_galleryimg3,"Gallery/EnemySetA3.png",0,0,1,0,0)
+picturetext[4]="Goons' Science" sprite_replace(spr_galleryimg4,"Gallery/EnemySetA4.png",0,0,1,0,0)
 }
 if galno=6
 {
 pictureMax=6
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/EnemySetB1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/EnemySetB2.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/EnemySetB3.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/EnemySetB4.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/EnemySetB5.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/EnemySetB6.png",0,0,1,0,0)
+picturetext[1]="Wingy Song" sprite_replace(spr_galleryimg1,"Gallery/EnemySetB1.png",0,0,1,0,0)
+picturetext[2]="Zombie Dance" sprite_replace(spr_galleryimg2,"Gallery/EnemySetB2.png",0,0,1,0,0)
+picturetext[3]="Ancient Servants" sprite_replace(spr_galleryimg3,"Gallery/EnemySetB3.png",0,0,1,0,0)
+picturetext[4]="Employee of the Month" sprite_replace(spr_galleryimg4,"Gallery/EnemySetB4.png",0,0,1,0,0)
+picturetext[5]="Bee Ad" sprite_replace(spr_galleryimg5,"Gallery/EnemySetB5.png",0,0,1,0,0)
+picturetext[6]="Flora's Grin" sprite_replace(spr_galleryimg6,"Gallery/EnemySetB6.png",0,0,1,0,0)
 }
 if galno=7
 {
 pictureMax=5
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/EnemySetC1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/EnemySetC2.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/EnemySetC3.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/EnemySetC4.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/EnemySetC5.png",0,0,1,0,0)
+picturetext[1]="Pincho" sprite_replace(spr_galleryimg1,"Gallery/EnemySetC1.png",0,0,1,0,0)
+picturetext[2]="Circus Toys" sprite_replace(spr_galleryimg2,"Gallery/EnemySetC2.png",0,0,1,0,0)
+picturetext[3]="Ballerina Fairy" sprite_replace(spr_galleryimg3,"Gallery/EnemySetC3.png",0,0,1,0,0)
+picturetext[4]="Martians' Finding" sprite_replace(spr_galleryimg4,"Gallery/EnemySetC4.png",0,0,1,0,0)
+picturetext[5]="Underwater Impression" sprite_replace(spr_galleryimg5,"Gallery/EnemySetC5.png",0,0,1,0,0)
 }
 if galno=8
 {
 pictureMax=4
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/EnemySetD1.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/EnemySetD2.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/EnemySetD3.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/EnemySetD4.png",0,0,1,0,0)
+picturetext[1]="Magical Bellydancer" sprite_replace(spr_galleryimg1,"Gallery/EnemySetD1.png",0,0,1,0,0)
+picturetext[2]="Goblins at Work" sprite_replace(spr_galleryimg2,"Gallery/EnemySetD2.png",0,0,1,0,0)
+picturetext[3]="Slime Mania" sprite_replace(spr_galleryimg3,"Gallery/EnemySetD3.png",0,0,1,0,0)
+picturetext[4]="Yeti's Work of Art" sprite_replace(spr_galleryimg4,"Gallery/EnemySetD4.png",0,0,1,0,0)
 }
 
 ////Boss Art
 if galno=9
 {pictureMax=4
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="Lady Wolf getting herself ready to bite someone." sprite_replace(spr_galleryimg1,"Gallery/BossArt1.png",0,0,1,0,0)
-picturetext[2]="Harpilda used to be a little lighter. She laughs." sprite_replace(spr_galleryimg2,"Gallery/BossArt2.png",0,0,1,0,0)
-picturetext[3]="Rosy taking a break after a hard work at the cruise ship." sprite_replace(spr_galleryimg3,"Gallery/BossArt3.png",0,0,1,0,0)
-picturetext[4]="Dolores enjoys a bit of sun at the Loco Dos." sprite_replace(spr_galleryimg4,"Gallery/BossArt4.png",0,0,1,0,0)
+picturetext[1]="Lady Wolf" sprite_replace(spr_galleryimg1,"Gallery/BossArt1.png",0,0,1,0,0)
+picturetext[2]="Harpilda" sprite_replace(spr_galleryimg2,"Gallery/BossArt2.png",0,0,1,0,0)
+picturetext[3]="Captain Rosy" sprite_replace(spr_galleryimg3,"Gallery/BossArt3.png",0,0,1,0,0)
+picturetext[4]="Dolores" sprite_replace(spr_galleryimg4,"Gallery/BossArt4.png",0,0,1,0,0)
 
 }
 if galno=10
 {pictureMax=6
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="Annamari loves to spook people with her beheaded head." sprite_replace(spr_galleryimg1,"Gallery/BossArt5.png",0,0,1,0,0)
-picturetext[2]="Hathor taking a smoke and going to show some regality." sprite_replace(spr_galleryimg2,"Gallery/BossArt6.png",0,0,1,0,0)
-picturetext[3]="The Oni Sisters have a huge hand to help each other." sprite_replace(spr_galleryimg3,"Gallery/BossArt7.png",0,0,1,0,0)
-picturetext[4]="Kiandra has been shoved inside her own cauldron. Who did that?" sprite_replace(spr_galleryimg4,"Gallery/BossArt8.png",0,0,1,0,0)
-picturetext[5]="Dixie wants you to taste her pie. Her actual pie she has." sprite_replace(spr_galleryimg5,"Gallery/BossArt9.png",0,0,1,0,0)
-picturetext[6]="Circe and Larry dancing it out to old music for fun." sprite_replace(spr_galleryimg6,"Gallery/BossArt10.png",0,0,1,0,0)
+picturetext[1]="Annamari" sprite_replace(spr_galleryimg1,"Gallery/BossArt5.png",0,0,1,0,0)
+picturetext[2]="Hathor" sprite_replace(spr_galleryimg2,"Gallery/BossArt6.png",0,0,1,0,0)
+picturetext[3]="The Oni Sisters" sprite_replace(spr_galleryimg3,"Gallery/BossArt7.png",0,0,1,0,0)
+picturetext[4]="Kiandra" sprite_replace(spr_galleryimg4,"Gallery/BossArt8.png",0,0,1,0,0)
+picturetext[5]="Dixie" sprite_replace(spr_galleryimg5,"Gallery/BossArt9.png",0,0,1,0,0)
+picturetext[6]="Circe and Larry" sprite_replace(spr_galleryimg6,"Gallery/BossArt10.png",0,0,1,0,0)
 }
 if galno=11
 {pictureMax=6
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="The space captain Kween demands your space treasure." sprite_replace(spr_galleryimg1,"Gallery/BossArt11.png",0,0,1,0,0)
-picturetext[2]="Prince lookin' good while at the surface to show off." sprite_replace(spr_galleryimg2,"Gallery/BossArt12.png",0,0,1,0,0)
-picturetext[3]="Haifa and her lover have become a couple for a long time." sprite_replace(spr_galleryimg3,"Gallery/BossArt13.png",0,0,1,0,0)
+picturetext[1]="Admiral Kween" sprite_replace(spr_galleryimg1,"Gallery/BossArt11.png",0,0,1,0,0)
+picturetext[2]="Prince" sprite_replace(spr_galleryimg2,"Gallery/BossArt12.png",0,0,1,0,0)
+picturetext[3]="Haifa and her lover" sprite_replace(spr_galleryimg3,"Gallery/BossArt13.png",0,0,1,0,0)
 
-picturetext[4]="Mirrosa can do a reflective posing in her divine mirror." sprite_replace(spr_galleryimg4,"Gallery/BossArt14.png",0,0,1,0,0)
-picturetext[5]="Synthesa enjoys a good party and has claimed a new partner." sprite_replace(spr_galleryimg5,"Gallery/BossArt15.png",0,0,1,0,0)
-picturetext[6]="Fiona has found someone cut and is ready for a little smooch." sprite_replace(spr_galleryimg6,"Gallery/BossArt16.png",0,0,1,0,0)
+picturetext[4]="Mirrosa" sprite_replace(spr_galleryimg4,"Gallery/BossArt14.png",0,0,1,0,0)
+picturetext[5]="Princess Synthesa" sprite_replace(spr_galleryimg5,"Gallery/BossArt15.png",0,0,1,0,0)
+picturetext[6]="Fiona" sprite_replace(spr_galleryimg6,"Gallery/BossArt16.png",0,0,1,0,0)
 }
 if galno=12
 {pictureMax=3
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="Dr. Fran is not going to let you go past this point." sprite_replace(spr_galleryimg1,"Gallery/BossArt17.png",0,0,1,0,0)
-picturetext[2]="A dapper Van Vad going out to get some goods." sprite_replace(spr_galleryimg2,"Gallery/BossArt18.png",0,0,1,0,0)
-picturetext[3]="Van Bad, founder of thieves, the vampire and elegant boss." sprite_replace(spr_galleryimg3,"Gallery/BossArt19.png",0,0,1,0,0)
+picturetext[1]="Dr. Fran" sprite_replace(spr_galleryimg1,"Gallery/BossArt17.png",0,0,1,0,0)
+picturetext[2]="Van Vad" sprite_replace(spr_galleryimg2,"Gallery/BossArt18.png",0,0,1,0,0)
+picturetext[3]="The True Van Bad" sprite_replace(spr_galleryimg3,"Gallery/BossArt19.png",0,0,1,0,0)
 }
 
 ///Misc
 if galno=13
 {pictureMax=6
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/HinaArtwork1.png",0,0,1,0,0)
+picturetext[1]="Diva Heads" sprite_replace(spr_galleryimg1,"Gallery/DivaHeads.png",0,0,1,0,0)
+picturetext[2]="Betty" sprite_replace(spr_galleryimg1,"Gallery/BettyArt.png",0,0,1,0,0)
+picturetext[3]="Olga" sprite_replace(spr_galleryimg1,"Gallery/OlgaArt.png",0,0,1,0,0)
+picturetext[4]="Animals" sprite_replace(spr_galleryimg1,"Gallery/AnimalArt.png",0,0,1,0,0)
+picturetext[5]="Treasure" sprite_replace(spr_galleryimg1,"Gallery/TreasureArt.png",0,0,1,0,0)
+picturetext[6]="Game Logo" sprite_replace(spr_galleryimg1,"Gallery/DivaLogo.png",0,0,1,0,0)
 }
 if galno=14 ///Concept Art
 {pictureMax=20
@@ -166,13 +171,13 @@ picturetext[20]="SED's Concepts 3" sprite_replace(spr_galleryimg20,"Gallery/Conc
 if galno=15
 {pictureMax=7
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
-picturetext[1]="???" sprite_replace(spr_galleryimg1,"Gallery/DDivasArtwork2b.png",0,0,1,0,0)
-picturetext[2]="???" sprite_replace(spr_galleryimg2,"Gallery/DDivasArtworkb.png",0,0,1,0,0)
-picturetext[3]="???" sprite_replace(spr_galleryimg3,"Gallery/DivaArtwork3b.png",0,0,1,0,0)
-picturetext[4]="???" sprite_replace(spr_galleryimg4,"Gallery/DivaElements.png",0,0,1,0,0)
-picturetext[5]="???" sprite_replace(spr_galleryimg5,"Gallery/DivasBeach.png",0,0,1,0,0)
-picturetext[6]="???" sprite_replace(spr_galleryimg6,"Gallery/VivaKeyArt1.png",0,0,1,0,0)
-picturetext[7]="???" sprite_replace(spr_galleryimg7,"Gallery/VivaKeyArt2.png",0,0,1,0,0)
+picturetext[1]="Key Art 1" sprite_replace(spr_galleryimg1,"Gallery/DDivasArtwork2b.png",0,0,1,0,0)
+picturetext[2]="Key Art 2" sprite_replace(spr_galleryimg2,"Gallery/DDivasArtworkb.png",0,0,1,0,0)
+picturetext[3]="Key Art 3" sprite_replace(spr_galleryimg3,"Gallery/DivaArtwork3b.png",0,0,1,0,0)
+picturetext[4]="Diva Elements" sprite_replace(spr_galleryimg4,"Gallery/DivaElements.png",0,0,1,0,0)
+picturetext[5]="Divas' Summer" sprite_replace(spr_galleryimg5,"Gallery/DivasBeach.png",0,0,1,0,0)
+picturetext[6]="Viva and Hina" sprite_replace(spr_galleryimg6,"Gallery/VivaKeyArt1.png",0,0,1,0,0)
+picturetext[7]="Bahati and Sofia" sprite_replace(spr_galleryimg7,"Gallery/VivaKeyArt2.png",0,0,1,0,0)
 //picturetext[8]="???" sprite_replace(spr_galleryimg8,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 //picturetext[9]="???" sprite_replace(spr_galleryimg9,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 //picturetext[10]="???" sprite_replace(spr_galleryimg10,"Gallery/HinaArtwork1.png",0,0,1,0,0)

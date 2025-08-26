@@ -284,11 +284,33 @@ stageClearIndex+=0.5
 if stageClearY<120 stageClearY+=16
 draw_sprite_ext(stageCspr,stageClearIndex,160,stageClearY-32-24,1,1,0,c_white,1)///Game Over Text
 draw_set_alpha(1) draw_set_color(c_white)
+
+var _showplayer=1;
+
+/////Fishing Room
+if room=rm_fishing
+{_showplayer=0
+
+/////
+draw_sprite_ext(spr_fish1,0,70,300-stageClearY,-1,1,270,c_white*global.FishData[1],1)
+draw_sprite_ext(spr_fish2,0,120,300-stageClearY,-1,1,270,c_white*global.FishData[2],1)
+draw_sprite_ext(spr_fish3,0,180,300-stageClearY,-1,1,270,c_white*global.FishData[3],1)
+draw_sprite_ext(spr_fish4,0,230,300-stageClearY,-1,1,270,c_white*global.FishData[4],1)
+draw_sprite_ext(spr_fish5,0,292,300-stageClearY,-1,1,270,c_white*global.FishData[5],1)
+
+draw_sprite_ext(spr_fish6,0,92,300-stageClearY+32,-1,1,270,c_white*global.FishData[6],1)
+draw_sprite_ext(spr_fish7,0,142,300-stageClearY+32,-1,1,270,c_white*global.FishData[7],1)
+draw_sprite_ext(spr_fish8,0,210,300-stageClearY+32,-1,1,270,c_white*global.FishData[8],1)
+draw_sprite_ext(spr_fish9,0,260,300-stageClearY+32,-1,1,270,c_white*global.FishData[9],1)
+draw_sprite_ext(spr_fish10,0,280,300-stageClearY+32-20,1,1,0,c_white*global.FishData[10],1)
+}
+
 if stageScore=1
 {alarm[0]=0 
 draw_set_font(global.scorefont)
 
-if stagecheck!=0
+
+if _showplayer
 {
 draw_set_halign(fa_left)
 draw_text(160,220,""+string_hash_to_newline(string(continueStageScore)))
@@ -322,6 +344,8 @@ else
 if actPorg=4 actPorgT=0 ///1
 else
 actPorgT=20 ///3
+
+if _showplayer=0
 with oPlayerDisembodied
 {
 d3d_transform_set_identity()
@@ -445,6 +469,7 @@ gold_save()
 stageClearCheck=1
 }
 
+if _showplayer=0
 with oPlayerDisembodied
 {
 if playerNO=1
@@ -460,6 +485,8 @@ if playerNO=4
 {global.P4Score=PlayerScore
 global.P4Life=PlayerLife}
 }
+
+
 
 draw_set_halign(fa_left)
 }

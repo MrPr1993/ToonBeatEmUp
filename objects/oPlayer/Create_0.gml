@@ -313,3 +313,4 @@ spritepos_setup(2,21,20,3)
 spritepos_setup(2,22,8,31)
 spritepos_setup(2,23,3,49)
 spritepos_setup(2,24,-4,56)
+

@@ -12,7 +12,9 @@ CDtextA="GET THE PARACHUTES!"
 CDtextB="JUMP OFF THE PLANE!"
 CDtextC="USE THE HARPY!"
 
-cutscenename="SYNTHESA" cutsceneline= "Heeheehee~! What fun what fun! Congratulations on your victory, friends!"
+
+/////Synthesa grabs Viva's hands
+cutscenename="" cutsceneline= ""
 
 }
 
@@ -29,14 +31,14 @@ timeline_speed=0
 CutsceneStage=rm_stagelab
 
 actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
-{sprite_index=spr_cutscene6a anim=9999 isDepth=0 depth=-3000 shadow=-1;
+{sprite_index=spr_grabvivahands x=0 y=0 anim=9999 isDepth=0 depth=-3000 shadow=-1;
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
 actor2=instance_create_depth(1150,144,-1,oCameoChar) with actor2
 {sprite_index=spr_hina_point image_index=0 anim=9999}
 actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
-{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
+{sprite_index=spr_bahati_cutscene image_index=0 anim=9999}
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
 actor5=instance_create_depth(3200-64,182,-1,oCameoChar) with actor5
@@ -51,74 +53,120 @@ actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
 
 actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
 {sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
-sprite_index=mask_none
-x=0
-y=0
 
 newscript=function()
 {
 scenetime+=1;
 
-if scenetime=120
-{sprite_index=mask_none
+if scenetime=80
+{image_index=1 scenetime=240
+with oControl {quakeFXTime=2 PlaySound(snd_steal)}
+}
+
+if scenetime=320
+{sprite_index=spr_cheeryplant x=0 y=0
 with oControl
 {
-with oControl {cutscenename="VIVA" cutsceneline= "Yeah, yeah thanks and all that... Now where are the thieves hiding?"}
+with oControl {
+cutscenename="SYNTHESA" cutsceneline= "Heeheehee~! What fun what fun! Congratulations on your victory, friends!"
+}
 }
 }
 
-if scenetime=340
-{
+if scenetime=clamp(scenetime,320,378) x-=1;
+
+if scenetime=600
+{sprite_index=mask_none;
 with actor5 
+{sprite_index=spr_viva_spin image_speed=0 image_index=0
+x=160 y=160
+}
+//with actor1 {sprite_index=spr_viva_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
+with actor2 {x=48 y=140 }
+with actor3 {x=64 y=150 }
+with actor4 {x=56 y=180 }
+with oControl
 {
+cutscenename="VIVA" cutsceneline= "Yeah, yeah thanks and all that... Now where are the thieves hiding?"
+}
+}
 
+if scenetime=800
+{
+with actor5 {newscript=function() {image_index+=0.25 if image_index>=6 image_index=1}
 }
 
 with oControl
 {
-with oControl {cutscenename="SYNTHESA" cutsceneline= "Wheeeeheeheehee~! Lalalalaaa~!"}
+cutscenename="SYNTHESA" cutsceneline= "How about we dance!"
 }
 }
 
-if scenetime=520
+if scenetime=920
 {
 with oControl
 {
-cutscenename="VIVA" cutsceneline= "Hey... are you even listening?!"
+cutscenename="VIVA" cutsceneline= "Hey! Stop spinning! Are you even listening?!"
 }
-}
-
-if scenetime=660
-{
-with oControl {cutscenename="SYNTHESA" cutsceneline="Victory~ Victory~ You deserve the victory~"}
-}
-
-if scenetime=860
-{with oControl {cutscenename="VIVA" cutsceneline= "HEY!!! WHERE. ARE. THE. THIEVES?!"}
-}
-
-if scenetime=1060
-{
-with oControl {cutscenename="SYNTHESA" cutsceneline= "Oh! They should be up those stairs!"}
 }
 
 if scenetime=1360
 {
-with oControl {cutscenename="VIVA" cutsceneline= "FINALLY. Let's get our treasure back, ladies!"}
+with oControl {cutscenename="SYNTHESA" cutsceneline="Victory! Victory! You deserve the victory!"}
+}
+
+if scenetime=1560
+{with oControl {cutscenename="VIVA" cutsceneline= "HEY!!! WHERE. ARE. THE. THIEVES?!"}
+}
+
+if scenetime=1760
+{PlaySound(snd_viva11)
+with actor1 {x=200 y=160 image_xscale=1 sprite_index=spr_viva_hit image_index=16 hspeed=6}
+with actor5 {image_xscale=1 sprite_index=spr_plantprincess_attack5 AnimFrame=0 image_index=4 newscript=function() 
+	{
+	frame_set(0,4,0.25)	
+	frame_set(1,5,0.01)	if AnimFrame=2 {image_index=1 sprite_index=spr_plantprincess_attack2}
+	frame_set(2,1,0.25)	
+	frame_set(3,0,0.25)
+	}
+	}
+
+with oControl {cutscenename="SYNTHESA" cutsceneline= "Oh! They should be up those stairs!"}
+/////Synthesa throws Viva off-screen
+}
+
+if scenetime=1860
+{
+with oControl {quakeFXTime=10 PlaySound(snd_hitgroundheavy)}
+}
+
+if scenetime=1960
+{
+with oControl {cutscenename="VIVA" cutsceneline= "Ow... Let's get our treasure back, ladies..."}
+
+
+}
+
+if scenetime=2160
+{
+with actor5 {newscript=-1;}
 
 with actor1 {sprite_index=spr_viva_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
 with actor2 {sprite_index=spr_hina_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
 with actor3 {sprite_index=spr_bahati_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
 with actor4 {sprite_index=spr_sofia_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
 
+with oControl {cutscenename="" cutsceneline=""}
 }
 
-if scenetime=1620
-{with actor5 {image_xscale=1}
-with oControl {cutscenename="SYNTHESA" cutsceneline="TA-TA! Tell the doctor I said hi~"}
+if scenetime=2220
+{scenetime=2560
+with actor5 {image_xscale=1 sprite_index=spr_plantprincess_bye image_speed=0.25}
+with oControl {cutscenename="SYNTHESA" cutsceneline="TA-TA! Tell the doctor I said hi."}
 }
 
-if scenetime=1800
+
+if scenetime=3000
 {
 with oControl {cutscenename="" cutsceneline=""}
 
@@ -128,22 +176,22 @@ sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
 }
 
-if scenetime=clamp(scenetime,1800,1815)
-{scenetime=1810 actor5.z-=4
+if scenetime=clamp(scenetime,3000,3015)
+{scenetime=3010
 if flashscreen.image_alpha>=1.5
-{x=0; y=0; sprite_index=spr_cavelab; image_index=0;
+{x=0; y=-48; sprite_index=spr_cavelab; image_index=0;
 with flashscreen {fadeSpd=-0.25 isfading=1 image_alpha=1}
-scenetime=1820
+scenetime=3020
 }
 }
 
-if scenetime=1820
+if scenetime=3020
 {
-vspeed=-0.25
+vspeed=0.01
 }
 
 
-if scenetime=2320
+if scenetime=3720
 {
 oControl.stageEndFX=1
 }

@@ -583,9 +583,9 @@ with oFishingMinigame
 	
 	if dodgetime<0 {dodgetime=100+random(100)+choose(0,200)} else dodgetime-=1
 	if dodgetime<200
-	spdY-=random_range(0,2)/12
+	spdY-=(random_range(0,2)/12)*fishstr
 	else
-	spdY+=random_range(0,2)/12
+	spdY+=(random_range(0,2)/12)*fishstr
 	
 	if oPlayer.key_up
 	if y<oPlayer.y {y=lerp(y,oPlayer.y,0.01)}
@@ -593,13 +593,14 @@ with oFishingMinigame
 	if -oPlayer.key_down
 	if y>oPlayer.y {y=lerp(y,oPlayer.y,0.01)}
 	
-	x+=0.25*oPlayer.fishstr+fishstr+0.1*point_distance(0,y,0,oPlayer.y)/16
+	x+=((spdY/4)+0.25)*oPlayer.fishstr+fishstr+0.1*point_distance(0,y,0,oPlayer.y)/16
 	
 fishstr+=0.05
 if fishstr>10 or x>1080
 {	with oPlayer {canmove=1 anim=0 AnimFrame=0} Thrown=0
 		fishout=0
-		
+
+////If they go too far they'll be thrown out	
 
 }
 }
