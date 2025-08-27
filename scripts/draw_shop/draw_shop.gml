@@ -116,13 +116,13 @@ else
 {
 canControl=0
  shopHelloR=choose(0,1,2,3)
-
+///Leave Shop
 	if shopHelloR=0 PlaySound(snd_betty5)
 	if shopHelloR=1 PlaySound(snd_betty6)
 	if shopHelloR=2 PlaySound(snd_betty7)
 	if shopHelloR=3 PlaySound(snd_betty8)		
 
-alarm[4]=80 global.StageGoing=rm_menu gold_save()
+alarm[4]=80 global.StageGoing=rm_menu gold_save() unlock_save()
 shopDialogueAlt=8
 }
 }
