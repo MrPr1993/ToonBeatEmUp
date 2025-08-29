@@ -169,8 +169,8 @@ cutsceneline="DON'T BLAME ME, MA'AM. WE'VE BEEN BUSY TRACKING DOWN THE PERPS AND
 if scenetime=2700
 {vspeed=0 y=0
 with oControl
-{cutscenename="VIVA"
-cutsceneline="OH, THEN YOU GOT ANOTHER ONE FOR YOU TO CATCH."
+{cutscenename="COP"
+cutsceneline="NOW LET US TAKE IT FROM HERE. YOU HAVE DONE A LOT TO BRING THAT BLIMP DOWN."
 }
 }
 
