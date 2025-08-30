@@ -107,17 +107,17 @@ if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
 
 if scenetime=940
 {
-	sprite_index=spr_cutscene4a x=0 y=0
+sprite_index=spr_cutscene4a x=0 y=0
 
 with oControl
-{
+{quakeFXTime=10
 cutsceneline= "And ruinin' my show!"
 }
 }
 
 if scenetime=1260
 {sprite_index=mask_none
-with actor5 {image_xscale=1 image_speed=0}
+with actor5 {sprite_index=spr_duck_talk3 image_xscale=1 image_speed=0}
 	
 with oControl
 {
@@ -195,7 +195,7 @@ if scenetime=2380
 {with actor5 newscript=-1;
 with oControl
 {sprite_index=spr_duck_taunt image_speed=0.1
-cutscenename="DIXIE" cutsceneline= "I ain't sayin' NOTHIN' 'bout my boss, 'specially after you come in here rufflin' my feathers AND my show!"
+cutscenename="DIXIE" cutsceneline= "I ain't sayin' NOTHIN' 'bout my boss, 'specially after you come in here rufflin' my feathers AND my performance!"
 }
 }
 

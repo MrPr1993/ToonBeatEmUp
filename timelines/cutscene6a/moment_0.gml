@@ -77,6 +77,9 @@ if scenetime=clamp(scenetime,320,378) x-=1;
 
 if scenetime=600
 {sprite_index=mask_none;
+	
+with actor1 {x=160-34 sprite_index=mask_none y=160}
+	
 with actor5 
 {sprite_index=spr_viva_spin image_speed=0 image_index=0
 x=160 y=160
@@ -93,7 +96,9 @@ cutscenename="VIVA" cutsceneline= "Yeah, yeah thanks and all that... Now where a
 
 if scenetime=800
 {
-with actor5 {newscript=function() {image_index+=0.25 if image_index>=6 image_index=1}
+with actor1 {x=160-34 sprite_index=mask_none y=1600}
+
+with actor5 {newscript=function() {image_index+=0.25 if image_index>=6 image_index=2}
 }
 
 with oControl

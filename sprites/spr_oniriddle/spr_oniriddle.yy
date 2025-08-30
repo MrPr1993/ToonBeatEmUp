@@ -3,9 +3,9 @@
   "%Name":"spr_oniriddle",
   "bboxMode":0,
   "bbox_bottom":239,
-  "bbox_left":0,
-  "bbox_right":319,
-  "bbox_top":0,
+  "bbox_left":17,
+  "bbox_right":157,
+  "bbox_top":12,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -13,6 +13,8 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"55651f9e-18b9-491a-9186-df7dbb20b93f","name":"55651f9e-18b9-491a-9186-df7dbb20b93f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"8bb09966-ae52-497b-99e8-fcd8b81605b0","name":"8bb09966-ae52-497b-99e8-fcd8b81605b0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"46996d16-0dc7-41cf-a1d8-420d385d4ca6","name":"46996d16-0dc7-41cf-a1d8-420d385d4ca6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -49,7 +51,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":3.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -64,7 +66,7 @@
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
     "seqHeight":240.0,
-    "seqWidth":320.0,
+    "seqWidth":160.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
@@ -73,6 +75,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"55651f9e-18b9-491a-9186-df7dbb20b93f","path":"sprites/spr_oniriddle/spr_oniriddle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8648f41b-0927-4f89-8659-f6e069569801","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8bb09966-ae52-497b-99e8-fcd8b81605b0","path":"sprites/spr_oniriddle/spr_oniriddle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1b0e0c44-bfcd-4750-a730-71b3269065e3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"46996d16-0dc7-41cf-a1d8-420d385d4ca6","path":"sprites/spr_oniriddle/spr_oniriddle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f8cd9bb1-a639-42d8-8bb7-8c39e76a1869","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -88,5 +96,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":320,
+  "width":160,
 }
