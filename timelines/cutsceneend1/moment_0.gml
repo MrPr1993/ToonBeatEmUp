@@ -88,7 +88,7 @@ PlaySound(snd_hitground) quakeFXTime=10
 }
 
 if scenetime=380
-{image_index=2
+{image_index=2 musicplayonce(msc_intro)
 with oControl
 {cutscenename="VIVA"
 cutsceneline="MY DIAMOND!"
@@ -121,7 +121,7 @@ cutsceneline="SO MUCH WORK... BUT IT WAS WORTH IT!"
 }
 
 if scenetime=1200
-{vspeed=0;
+{vspeed=0; PlaySound(snd_carengine)
 sprite_index=spr_divasseecops image_index=0 x=0 y=0
 
 with oControl
@@ -131,26 +131,28 @@ cutsceneline=""
 }
 
 if scenetime=1300
-{scenetime=1400
-with actor1 {sprite_index=spr_divasseecops hspeed=2 image_index=1 x=-320 y=0 shadow=-1 }
-with actor2 {sprite_index=spr_divasseecops hspeed=-2 image_index=2 x=430 y=0 shadow=-1 }
+{scenetime=1400 
+with actor1 {sprite_index=spr_divasseecops hspeed=4 image_index=1 x=-320 y=0 shadow=-1 }
+with actor2 {sprite_index=spr_divasseecops hspeed=-6 image_index=2 x=600 y=0 shadow=-1 }
 }
 
-if scenetime=1550 actor1.hspeed=0
-if scenetime=1700 actor2.hspeed=0
+if scenetime=1475 {actor1.hspeed=0 PlaySound(snd_carengine2)}
+if scenetime=1500 {scenetime=1760 actor2.hspeed=0 PlaySound(snd_carengine2)}
+
+
 
 if scenetime=1860
 {vspeed=0 y=0
 actor1.y=9999
-actor2.y=9999
+actor2.y=9999 PlaySound(snd_break2)
 sprite_index=spr_incomingcops image_index=0
 with oControl
-{cutscenename="COP"
+{cutscenename="COP" quakeFXTime=10
 cutsceneline="ALRIGHT, ALRIGHT, EVERYONE, SPREAD OUT!"
 }
 }
 
-if scenetime=2060
+if scenetime=2100
 {vspeed=0 y=0 sprite_index=spr_incomingcops image_index=1
 with oControl
 {cutscenename="VIVA"
@@ -158,24 +160,37 @@ cutsceneline="OH, SO THE CAVALRY'S FINALLY HERE. WHERE HAVE ALL OF YOU BEEN?"
 }
 }
 
-if scenetime=2350
+if scenetime=2400
 {vspeed=0 y=0
 with oControl
 {cutscenename="COP"
-cutsceneline="DON'T BLAME ME, MA'AM. WE'VE BEEN BUSY TRACKING DOWN THE PERPS AND CATCHING THEM ALL THE WAY HERE."
+cutsceneline="DON'T BLAME US, MA'AM. WE'VE BEEN BUSY TRACKING DOWN THE MOOKS ALL THE WAY HERE."
 }
 }
 
 if scenetime=2700
 {vspeed=0 y=0
+scenetime=2800
+
 with oControl
 {cutscenename="COP"
-cutsceneline="NOW LET US TAKE IT FROM HERE. YOU HAVE DONE A LOT TO BRING THAT BLIMP DOWN."
+cutsceneline="NOW LET US TAKE IT FROM HERE."
 }
 }
 
+if scenetime=2900
+{
+flashend=instance_create_depth(0,0,-1,oCameoChar) with flashend
+{shadow=-1 image_alpha=0 image_blend=c_black sprite_index=spr_whitecol isDepth=0 depth=-3010 image_xscale=99 image_yscale=99 anim=9999 newscript=function() {image_alpha+=0.025} }
+
+}
+
 if scenetime=3000
-{vspeed=0 x=0 y=0 hspeed=-0.1 sprite_index=spr_incomingcops image_index=2
+{
+with flashend
+{newscript=function() {image_alpha-=0.025}}
+	
+vspeed=0 x=0 y=0 hspeed=-0.1 sprite_index=spr_copssearch image_index=0
 with oControl
 {cutscenename=""
 cutsceneline=""
@@ -183,7 +198,7 @@ cutsceneline=""
 }
 
 if scenetime=3600
-{vspeed=0 y=0 hspeed=0 x=0
+{vspeed=0 y=0 hspeed=0 x=0 scenetime=3700
 
 sprite_index=spr_nowthatsover image_index=0
 	
@@ -194,14 +209,13 @@ cutsceneline="WELL NOW THAT'S OVER."
 }
 
 if scenetime=3900
-{vspeed=0 y=0
-	
-
+{scenetime=4200
 with oControl
 {cutscenename="BAHATI"
 cutsceneline="NEXT TIME WE'LL HAVE TO KEEP THEM UNDER TIGHTER WRAPS."
 }
 }
+
 
 if scenetime=4550
 {vspeed=0 y=0 sprite_index=spr_nowthatsover image_index=1
@@ -213,10 +227,23 @@ cutsceneline="And uh..."
 
 if scenetime=4750 ////Cleaning up
 {vspeed=0 y=0 sprite_index=spr_nowthatsover image_index=2
+	
 with oControl
 {cutscenename=""
 cutsceneline=""
 }
+}
+
+if scenetime=clamp(scenetime,4750,4950)
+{
+if specialcheck[9]=0 {dust_make(random_range(64,320-64),random_range(64,320-64),0,0,0,0)
+with dustmk {sprite_index=spr_dustmid isDepth=0 depth=-3002} 
+
+specialcheck[9]=2
+
+if specialcheck[8]=0 {PlaySoundNoStack(snd_steal) specialcheck[8]=4} else specialcheck[8]-=1;
+
+} else specialcheck[9]-=1
 }
 
 if scenetime=4950
@@ -236,23 +263,34 @@ cutsceneline="Chica, you know what we do."
 }
 
 if scenetime=5700
-{vspeed=0 y=0
+{vspeed=0 y=0 scenetime=5850
 with oControl
 {cutscenename="VIVA"
 cutsceneline="Well how about it? Ready to get the show back on?"
 }
 }
 
-if scenetime=6300
+if scenetime=5900
 {
+with flashend
+{image_alpha=0 image_blend=c_black sprite_index=spr_whitecol isDepth=0 depth=-3010 image_xscale=99 image_yscale=99 anim=9999 newscript=function() {image_alpha+=0.01} }
+
+}
+
+if scenetime=6300
+{PlaySound(snd_1up)
 sprite_index=spr_divasletsparty
-	
-vspeed=0 y=0
+
+with flashend {image_alpha=1 image_blend=c_white newscript=function() {image_alpha-=0.1}}	
+
+vspeed=0 y=-192
 with oControl
 {cutscenename="DIVAS"
 cutsceneline="LET'S PARTY!"
 }
+
 }
+if scenetime>=6300 {y=lerp(y,-32,0.1)}
 
 if scenetime=6600
 {CutsceneStage=rm_creditscene

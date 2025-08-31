@@ -64,7 +64,7 @@ with oControl {quakeFXTime=2 PlaySound(snd_steal)}
 }
 
 if scenetime=320
-{sprite_index=spr_cheeryplant x=0 y=0
+{sprite_index=spr_cheeryplant x=0 y=0 musicplaystart(msc_training)
 with oControl
 {
 with oControl {
@@ -78,10 +78,10 @@ if scenetime=clamp(scenetime,320,378) x-=1;
 if scenetime=600
 {sprite_index=mask_none;
 	
-with actor1 {x=160-34 sprite_index=mask_none y=160}
+with actor1 {x=160-68 sprite_index=mask_none y=160}
 	
 with actor5 
-{sprite_index=spr_viva_spin image_speed=0 image_index=0
+{sprite_index=spr_plantprincessviva image_xscale=1 image_speed=0 image_index=0
 x=160 y=160
 }
 //with actor1 {sprite_index=spr_viva_move image_index=0 anim=9999 image_speed=0.25 hspeed=2}
@@ -94,11 +94,15 @@ cutscenename="VIVA" cutsceneline= "Yeah, yeah thanks and all that... Now where a
 }
 }
 
-if scenetime=800
+if scenetime=850
 {
-with actor1 {x=160-34 sprite_index=mask_none y=1600}
+with actor1 {x=160-68 sprite_index=mask_none y=1600}
 
-with actor5 {newscript=function() {image_index+=0.25 if image_index>=6 image_index=2}
+with actor2 {sprite_index=spr_hina_point image_index=0}
+with actor3 {sprite_index=spr_bahati_point image_index=0}
+with actor4 {sprite_index=spr_sofia_point image_index=0}
+
+with actor5 {newscript=function() {image_index+=0.25 if image_index>=6 {image_index=2 PlaySoundNoStack(snd_swing2)}}
 }
 
 with oControl
@@ -107,7 +111,7 @@ cutscenename="SYNTHESA" cutsceneline= "How about we dance!"
 }
 }
 
-if scenetime=920
+if scenetime=1020
 {
 with oControl
 {
@@ -127,6 +131,11 @@ if scenetime=1560
 if scenetime=1760
 {PlaySound(snd_viva11)
 with actor1 {x=200 y=160 image_xscale=1 sprite_index=spr_viva_hit image_index=16 hspeed=6}
+
+with actor2 {sprite_index=spr_hina_point image_index=2}
+with actor3 {sprite_index=spr_bahati_point image_index=2}
+with actor4 {sprite_index=spr_sofia_point image_index=2}
+
 with actor5 {image_xscale=1 sprite_index=spr_plantprincess_attack5 AnimFrame=0 image_index=4 newscript=function() 
 	{
 	frame_set(0,4,0.25)	
@@ -172,7 +181,7 @@ with oControl {cutscenename="SYNTHESA" cutsceneline="TA-TA! Tell the doctor I sa
 
 
 if scenetime=3000
-{
+{audio_stop_all();
 with oControl {cutscenename="" cutsceneline=""}
 
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
@@ -192,11 +201,11 @@ scenetime=3020
 
 if scenetime=3020
 {
-vspeed=0.01
+vspeed=0.05
 }
 
 
-if scenetime=3720
+if scenetime=3310
 {
 oControl.stageEndFX=1
 }

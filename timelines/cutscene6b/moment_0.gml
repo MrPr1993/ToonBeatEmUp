@@ -164,11 +164,11 @@ scenetime=3020
 
 if scenetime=3020
 {
-vspeed=0.01
+vspeed=0.05
 }
 
 
-if scenetime=3720
+if scenetime=3310
 {
 oControl.stageEndFX=1
 }

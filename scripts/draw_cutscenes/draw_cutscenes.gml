@@ -33,9 +33,9 @@ if global.MovieSel=3 {if global.UnlockCutscene[2] MenuText="WHO'S DRIVING?"
 global.StageGoing=rm_cutscene2a}
 if global.MovieSel=4 {if global.UnlockCutscene[3] MenuText="GOING DOWN"
 global.StageGoing=rm_cutscene2b}
-if global.MovieSel=5 {if global.UnlockCutscene[4] MenuText="TRAIN CUTSCENE"
+if global.MovieSel=5 {if global.UnlockCutscene[4] MenuText="THE SHERIFF"
 global.StageGoing=rm_cutscene2c}
-if global.MovieSel=6 {if global.UnlockCutscene[5] MenuText="THE SHERIFF"
+if global.MovieSel=6 {if global.UnlockCutscene[5] MenuText="PHARAOH PROBLEM"
 global.StageGoing=rm_cutscene3a}
 if global.MovieSel=7 {if global.UnlockCutscene[6] MenuText="OFF WITH THEIR HEADS"
 global.StageGoing=rm_cutscene3b}

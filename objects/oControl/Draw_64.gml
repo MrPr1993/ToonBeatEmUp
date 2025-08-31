@@ -1470,6 +1470,10 @@ if newsFade=2 {if newsFadeA<1 newsFadeA+=0.05 else newsFade=0}
 if newsText=1
 {fpsY=240-56
 draw_set_alpha(1) draw_set_color(c_black)
+
+draw_rectangle(-32,-32,333,quakeFX,false)
+draw_rectangle(-32,192+quakeFX,333,666,false)
+
 draw_rectangle(-32,192,333,666,false)
 draw_set_color(c_white)
 draw_set_font(global.scorefont)

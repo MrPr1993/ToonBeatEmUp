@@ -100,7 +100,7 @@ with actor5 {sprite_index=spr_duck_talk1 image_speed=0.25}
 	
 with oControl
 {cutscenename="DIXIE"
-cutsceneline="What're you broads doin' are breakin' in, smackin' me and the staff around..."
+cutsceneline="What're you broads doin' are breakin' in, smackin' me and my crew around..."
 }
 }
 if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
@@ -117,7 +117,7 @@ cutsceneline= "And ruinin' my show!"
 
 if scenetime=1260
 {sprite_index=mask_none
-with actor5 {sprite_index=spr_duck_talk3 image_xscale=1 image_speed=0}
+with actor5 {sprite_index=spr_duck_talk3 image_xscale=1 image_speed=0.1}
 	
 with oControl
 {
@@ -139,7 +139,7 @@ with actor3 {sprite_index=spr_bahati_talk image_index=0 image_speed=0.25}
 with actor4 {sprite_index=spr_sofia_talk3 image_index=0}
 
 	
-with actor5 {sprite_index=spr_duck_hit image_index=24}
+with actor5 {sprite_index=spr_duck_hit image_speed=0 image_index=24}
 with oControl
 {image_index=1
 cutscenename="BAHATI" cutsceneline= "Your boss?"
@@ -181,14 +181,15 @@ with oControl
 cutscenename="DIXIE" cutsceneline= "PBBBBBBBTH!!!"
 }
 
+}
+
+if scenetime=clamp(scenetime,2180,2370)
 if actor5.image_index=2
 {
 with actor1 {sprite_index=spr_viva_point image_index=2}
 with actor2 {sprite_index=spr_hina_point image_index=2}
 with actor3 {sprite_index=spr_bahati_point image_index=2}
 with actor4 {sprite_index=spr_sofia_point image_index=2}
-}
-
 }
 
 if scenetime=2380
