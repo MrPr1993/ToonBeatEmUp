@@ -28,7 +28,7 @@ actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
 actor2=instance_create_depth(1150,144,-1,oCameoChar) with actor2
 {sprite_index=spr_hina_point image_index=0 anim=9999}
-actor3=instance_create_depth(1146,160,-1,oCameoChar) with actor3
+actor3=instance_create_depth(1146+24,160,-1,oCameoChar) with actor3
 {sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
 actor4=instance_create_depth(1176,188,-1,oCameoChar) with actor4
 {sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
@@ -46,11 +46,34 @@ pal_swap_reset()
 	}
 	}
 
-actor7=instance_create_depth(11215,180,-1,oCameoChar) with actor7
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+actor7=instance_create_depth(0+320,0,-1,oCameoChar) with actor7
+{shadow=-1 sprite_index=spr_dojosurrounded anim=9999 image_xscale=1}
 
-actor8=instance_create_depth(11215,170,-1,oCameoChar) with actor8
-{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1}
+actor8=instance_create_depth(0,-32,-1,oCameoChar) with actor8 ///Riddle Onis
+{sprite_index=spr_harpy_dizzy anim=9999 image_xscale=-1 isDepth=0 depth=-3010 shadow=-1 specialcheck[7]=1;
+	
+specialdraw=function()
+{
+if specialcheck[0]=1
+{y++; y=clamp(y,-32,0) specialcheck[7]-=0.02
+	
+if specialcheck[5]=-1 {x-=2 x=clamp(x,-160,9999)}
+if specialcheck[5]=1 {x+=2 x=clamp(x,-9999,160)}
+	
+draw_sprite_ext(spr_onibg,0,x,y,-1,1,0,c_white,1)
+draw_sprite_ext(spr_onibg,1,x+320,y,1,1,0,c_white,1)
+draw_sprite(spr_allblackscreen,0,x,y)
+
+draw_sprite(spr_oniriddle,specialcheck[1],x,y)
+
+pal_swap_set(spr_ninjapal,7,false);
+draw_sprite_ext(spr_oniriddle,specialcheck[2],x+320,y,-1,1,0,c_white,1)
+pal_swap_reset();
+
+draw_sprite_ext(spr_allblackscreen,0,x,y,1,2,0,c_white,specialcheck[7])
+}
+}
+	}
 
 if global.CutsceneSkip=0 with oControl canSkipCutscene=1
 
@@ -101,7 +124,7 @@ if scenetime=640
 {image_speed=0
 with actor1 {x=64+32 sprite_index=spr_viva_talk3 image_speed=0.25}
 with actor2 {x=96+32}
-with actor3 {x=32+32}
+with actor3 {x=32+32+32}
 with actor4 {x=48+32}
 with actor5 {x=320-64-24}	
 with actor6 {x=320-56-24}	
@@ -137,6 +160,31 @@ cutsceneline= "Well, how arrogant of you..."
 
 if scenetime=1560
 {
+with actor7 {x=0} ///Ninja Summon
+dust_make_ext(96,130,0,0,0,0,spr_smoket,0)
+dust_make_ext(213,130,0,0,0,0,spr_smoket,0)
+
+dust_make_ext(90,103,0,0,0,0,spr_smoket,0)
+dust_make_ext(148,102,0,0,0,0,spr_smoket,0)
+dust_make_ext(258,105,0,0,0,0,spr_smoket,0)
+dust_make_ext(282,99,0,0,0,0,spr_smoket,0)
+
+dust_make_ext(104,100,-100,0,0,0,spr_smokemid,0)
+dust_make_ext(220,100,-100,0,0,0,spr_smokemid,0)
+
+dust_make_ext(0,100,-48,0,0,0,spr_smokemid,0)
+dust_make_ext(96,100,-48,0,0,0,spr_smokemid,0)
+dust_make_ext(96*2,100,-48,0,0,0,spr_smokemid,0)
+dust_make_ext(96*3,100,-48,0,0,0,spr_smokemid,0)
+dust_make_ext(96*4,100,-48,0,0,0,spr_smokemid,0)
+dust_make_ext(96*5,100,-48,0,0,0,spr_smokemid,0)
+dust_make_ext(96*6,100,-48,0,0,0,spr_smokemid,0)
+
+dust_make_ext(15,156,0,0,0,0,spr_smokemid,0) with dustmk {isDepth=0 depth=-3010}
+dust_make_ext(21,36,0,0,0,0,spr_smokemid,0) with dustmk {isDepth=0 depth=-3010}
+dust_make_ext(305,38,0,0,0,0,spr_smokemid,0) with dustmk {isDepth=0 depth=-3010}
+dust_make_ext(294,166,0,0,0,0,spr_smokemid,0) with dustmk {isDepth=0 depth=-3010}
+
 with actor5 {image_index=0 image_speed=0} ///Fuku
 
 with actor1 {sprite_index=spr_viva_wildtake image_index=0}
@@ -144,12 +192,13 @@ with actor2 {sprite_index=spr_hina_wildtake image_index=0}
 with actor3 {sprite_index=spr_bahati_wildtake image_index=0}
 with actor4 {sprite_index=spr_sofia_wildtake image_index=0}
 
-sprite_index=spr_cutscene3c x=0 y=0 vspeed=0 hspeed=0 sprite_index=spr_cutscene3c
 with oControl
 {image_index=1 quakeFXTime=10
 cutscenename="" cutsceneline= ""
 }
-hspeed=-2 
+
+sprite_index=spr_dojosurrounded image_index=1 image_speed=0
+
 }
 
 if scenetime=1660
@@ -160,14 +209,12 @@ with oControl
 {image_index=1
 cutscenename="VIVA" cutsceneline= "You and your big mouth..."
 }
-hspeed=-2 
 scenetime=1860
 }
 
 
 if scenetime=2040
 {
-sprite_index=mask_none
 
 with actor6 {sprite_index=spr_oni_talk image_speed=0.25}
 
@@ -251,7 +298,7 @@ cutscenename="SHOKIJO" cutsceneline= "Just that. Answer our riddle, and in excha
 }
 }
 
-if scenetime=3900
+if scenetime=3960
 {
 
 with actor6 {image_index=0 image_speed=0} ///Fuku	
@@ -263,9 +310,9 @@ cutscenename="HINA" cutsceneline= "Oh a riddle! How fun! Lay it on us!"
 }
 }
 
-if scenetime=4100 ////Cut to black
+if scenetime=4160 ////Cut to black
 {
-
+audio_stop_all(); PlaySound(snd_steal)
 	
 sprite_index=spr_allblackscreen x=0 y=0 hspeed=0 vspeed=0
 with oControl
@@ -274,7 +321,11 @@ with oControl
 }
 
 if scenetime=4250 ////Cut to black
-{sprite_index=spr_oniriddle
+{sprite_index=spr_oniriddle with actor7 {x=9999}
+
+sprite_index=mask_none
+
+with actor8 {specialcheck[0]=1}
 	
 with oControl
 {
@@ -294,7 +345,8 @@ if scenetime=4800 scenetime=6000
 
 if scenetime=6000
 {x=0 y=0 audio_stop_all();
-sprite_index=spr_oniriddle
+with oCameoChar x=99999
+sprite_index=spr_oniriddle with actor8 {specialcheck[0]=1 specialcheck[7]=0 x=0; y=0;}
 
 with oControl
 {

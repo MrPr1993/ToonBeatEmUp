@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.210385,
+  "duration":1.2103854,
   "name":"snd_homerun",
   "parent":{
     "name":"Objects",

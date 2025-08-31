@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.743039,
+  "duration":0.74303854,
   "name":"snd_explosion",
   "parent":{
     "name":"Items",

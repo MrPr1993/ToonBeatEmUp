@@ -33,6 +33,8 @@ cutscenename="BAHATI" cutsceneline=  "We don't know how they live their lives, V
 
 if scenetime=400
 {
+with actor8 {specialcheck[1]=1}	
+
 with oControl
 {
 cutscenename="FUKUKIJO" cutsceneline=  "Ha! So that's your answer, huh? Alright then... Look over there."
@@ -40,7 +42,9 @@ cutscenename="FUKUKIJO" cutsceneline=  "Ha! So that's your answer, huh? Alright 
 }
 
 if scenetime=620
-{hspeed=4;
+{
+with actor8 {specialcheck[5]=1}	
+
 with oControl
 {
 cutscenename="BAHATI" cutsceneline=  "Is that... A swamp?"
@@ -50,32 +54,40 @@ cutscenename="BAHATI" cutsceneline=  "Is that... A swamp?"
 if scenetime=700 hspeed=0
 
 if scenetime=860
-{sprite_index=spr_redsmack x=0 y=0
+{PlaySound(snd_hit2) image_speed=0.25 sprite_index=spr_redsmack x=0 y=0 with actor8 {specialcheck[0]=0}	
+
 with oControl {quakeFXTime=20 cutscenename="" cutsceneline= ""}
 }
 
 if scenetime=920
 {hspeed=0 x=0 y=0
-sprite_index=spr_dojocasinobuild
+sprite_index=spr_dojocasinobuild image_speed=0 image_index=0
+
+layer_set_visible("BTG2",0)
+layer_set_visible("BTG1",0)
+layer_set_visible("BGcity",0)
+
 }
 
 if scenetime=1000
 {with oControl quakeFXTime=10
-with actor1 {sprite_index=spr_byetent2 x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
-
-with actor5 {sprite_index=spr_oni_stand image_index=0 image_speed=0 x=140 y=160}
-with actor6 {sprite_index=spr_oni_talk image_index=0 image_speed=0 x=160 y=188}
+with actor1 {sprite_index=spr_byetent2 shadow=-1 x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
+PlaySound(snd_explosion)
+with actor5 {sprite_index=spr_oni_stand image_index=0 image_speed=0 x=1400 y=160}
+with actor6 {sprite_index=spr_oni_talk image_index=0 image_speed=0 x=1600 y=188}
 }
 
 
 
 if scenetime=1260
-{with oControl {//SMASH!
+{
+	
+with oControl {//SMASH!
 cutscenename="FUKUKIJO" cutsceneline=  "Oh yeah, our ninjas were hired to hunt you down, so don't think you've seen the last of them!"}
 }
 
 
-if scenetime=2320
+if scenetime=1620
 {
 oControl.stageEndFX=1
 }
@@ -121,40 +133,48 @@ with oControl {cutscenename="BAHATI" cutsceneline= "Uhh, girls...?"}
 
 if scenetime=1060
 {
+with actor8 {specialcheck[1]=2 specialcheck[2]=2}	
+
 with oControl {cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "Hmph! TOUGH LUCK!"}
 }
 
 if scenetime=1300
 {////They walk off
+with actor8 {specialcheck[0]=0}	
+PlaySound(snd_hit2) image_speed=0.25
 	sprite_index=spr_bothsmack
 with oControl {quakeFXTime=20 cutscenename="" cutsceneline=""}
 }
 
 if scenetime=1500
 {hspeed=0 x=0 y=0
-sprite_index=spr_dojocasinobuild
+sprite_index=spr_dojocasinobuild image_speed=0 image_index=0
+
+layer_set_visible("BTG2",0)
+layer_set_visible("BTG1",0)
+layer_set_visible("BGcity",0)
 }
 
 if scenetime=1600
 {with oControl quakeFXTime=10
-with actor1 {sprite_index=spr_byetent2 x=160 y=160 hspeed=-8 vspeed=-8 isDepth=0 depth=-2800}
-
-with actor5 {sprite_index=spr_oni_stand x=140 y=160}
-with actor6 {sprite_index=spr_oni_stand x=160 y=188}
+with actor1 {sprite_index=spr_byetent2 shadow=-1 x=160 y=160 hspeed=0 vspeed=-8 isDepth=0 depth=-2800}
+PlaySound(snd_explosion)
+with actor5 {sprite_index=spr_oni_stand x=14000 y=160}
+with actor6 {sprite_index=spr_oni_stand x=16000 y=188}
 
 with oControl {//KERSMASH!
 cutscenename="BAHATI" cutsceneline=  "YOU SHOULD HAVE PLAYED ALONG!!!"}
 }
 
-if scenetime=2000 {sprite_index=mask_none}
+//if scenetime=2000 {sprite_index=mask_none}
 
-if scenetime=2050
+if scenetime=1950
 {
 with oControl {cutscenename="FUKUKIJO" cutsceneline="That's quite a shame, sister."}
 }
 
 
-if scenetime=2200
+if scenetime=2100
 {
 with oControl {cutscenename="SHOKIJO" cutsceneline="Yes. Now they'll have to face our employees on the way there."}
 }
@@ -206,6 +226,9 @@ cutscenename="HINA" cutsceneline= "We have a story about this! The blue oni puts
 
 if scenetime=860
 {
+	
+with actor8 {specialcheck[2]=1}	
+
 with oControl {cutscenename="SHOKIJO" cutsceneline="Hmm... So that is your answer? Very well... Look this way."
 
 
@@ -213,7 +236,9 @@ with oControl {cutscenename="SHOKIJO" cutsceneline="Hmm... So that is your answe
 }
 
 if scenetime=1060
-{hspeed=-4;
+{
+with actor8 {specialcheck[5]=-1}		
+
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Oh, the beach looks pretty tonight!"
@@ -223,35 +248,40 @@ cutscenename="HINA" cutsceneline= "Oh, the beach looks pretty tonight!"
 if scenetime=1240 hspeed=0
 
 if scenetime=1300
-{sprite_index=spr_bluesmack x=0 y=0
+{PlaySound(snd_hit2) image_speed=0.25 sprite_index=spr_bluesmack x=0 y=0 with actor8 {specialcheck[0]=0}	
+
 with oControl {quakeFXTime=20 cutscenename="" cutsceneline= ""}
 }
 
 if scenetime=1360
 {hspeed=0 x=0 y=0
-sprite_index=spr_dojocasinobuild
+sprite_index=spr_dojocasinobuild image_speed=0 image_index=0
+
+layer_set_visible("BTG2",0)
+layer_set_visible("BTG1",0)
+layer_set_visible("BGcity",0)
 }
 
 if scenetime=1440
 {with oControl quakeFXTime=10
-with actor1 {sprite_index=spr_byetent2 x=160 y=160 hspeed=8 vspeed=-8 isDepth=0 depth=-2800}
-
-with actor5 {sprite_index=spr_oni_stand x=140 y=160}
-with actor6 {sprite_index=spr_oni_stand x=160 y=188}
+with actor1 {sprite_index=spr_byetent2 shadow=-1 x=160 y=160 hspeed=8 vspeed=-8 isDepth=0 depth=-2800}
+PlaySound(snd_explosion)
+with actor5 {sprite_index=spr_oni_stand x=14000 y=160}
+with actor6 {sprite_index=spr_oni_stand x=16000 y=188}
 }
 
 if scenetime=1600
 {
-sprite_index=mask_none
+//sprite_index=mask_none
 }
 
-if scenetime=1880
+if scenetime=1680
 {with oControl {//SMASH!
 cutscenename="FUKUKIJO" cutsceneline=  "Oh yeah, our ninjas were hired to hunt you down, so don't think you've seen the last of them!"}
 }
 
 
-if scenetime=2420
+if scenetime=2020
 {
 oControl.stageEndFX=1
 }
