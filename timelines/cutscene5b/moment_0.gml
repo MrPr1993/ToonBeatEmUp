@@ -66,7 +66,11 @@ if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 canSkipCutscene
 
 if scenetime<300 {specialcheck[0]++; scenetime=100;
 
-if specialcheck[0]=120 { scenetime=310 vspeed=2 PlaySound(snd_explosion) oControl.quakeFXTime=10}
+if specialcheck[0]=120 { scenetime=310 vspeed=2 PlaySound(snd_explosion) oControl.quakeFXTime=10
+	
+	dust_make_ext(x,y+2,z-59,0,0,0,spr_explosion2,0) with dustmk {isDepth=0 depth=-3010}
+	
+	}
 
 }
 
@@ -83,6 +87,9 @@ flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 {image_alpha=0 fadeSpd=0.025 isfading=1 image_xscale=99 image_yscale=99
 sprite_index=spr_whitecol image_blend=c_white depth=-4000
 }	
+
+dust_make_ext(x,y+2,z,0,0,0,spr_explosion,0) with dustmk {isDepth=0 depth=-3010}
+
 	}
 }
 

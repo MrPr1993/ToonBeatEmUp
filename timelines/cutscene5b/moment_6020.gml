@@ -75,69 +75,144 @@ cutscenename="" cutsceneline= ""
 }
 
 if scenetime=920
-{
-SceneX=0 __view_set( e__VW.XView, 0, SceneX )
+{scenetime=1000 musicplaystart(msc_stageselect)
 image_xscale=1 image_yscale=1 hspeed=-16
 
-with actor1 {sprite_index=spr_viva_snowclimb image_speed=0.25 vspeed=-1 x=160 y=192}
+with actor5 {isDepth=0 depth=-2980 shadow=-1 image_xscale=1 image_yscale=1 sprite_index=spr_viva_snowclimb image_index=0 image_speed=0 hspeed=0 vspeed=0 x=0 y=0
+	newscript=function() {
+	if sprite_index=spr_viva_snowclimb {x-=0.2 x=clamp(x,-80,320)}
+	if sprite_index=spr_viva_snowclimb2 {y+=0.2 y=clamp(y,-80,0)} ///x=0 y=-48
+	if sprite_index=spr_viva_snowclimb3 {x+=0.2 x=clamp(x,-80,0)}
+	if sprite_index=spr_viva_snowclimb4 {y-=0.2 y=clamp(y,-48,0)} ///x=0 y=0
+	}
+	}
+
+with oControl {SceneX=0; __view_set( e__VW.XView, 0, SceneX )}
 
 }
 
-if scenetime=1120
+if scenetime=1200
 {
-x=320
+flashend=instance_create_depth(0,0,-1,oCameoChar) with flashend
+{specialcheck[0]=0.025 shadow=-1 image_alpha=0 sprite_index=spr_whitecol isDepth=0 depth=-3010 image_xscale=99 image_yscale=99 anim=9999 newscript=function() {
+image_alpha+=specialcheck[0]}}
 }
 
-if scenetime=clamp(scenetime,1120,1220) x=clamp(x,0,9999)
-
-if scenetime=1220
+if scenetime=1300
 {
+with actor5 {x=0 y=-48 sprite_index=spr_viva_snowclimb2}
+with flashend {image_alpha=1 specialcheck[0]=-0.025}
+}
 
-}if scenetime=1520 {x=320 }
-
-if scenetime=clamp(scenetime,1520,1720) x=clamp(x,0,9999)
-
-if scenetime=1720
+if scenetime=1500
 {
-
-}if scenetime=2020 {x=320 }
-
-if scenetime=clamp(scenetime,2020,2320) x=clamp(x,0,9999)
-
-if scenetime=2320 {sprite_index=mask_none SceneX=320 __view_set( e__VW.XView, 0, SceneX )
- layer_set_visible("BGTsnow2",1)
+with flashend {image_alpha=0 specialcheck[0]=0.025}
 }
 
-if scenetime=clamp(scenetime,2320,9999)
-{SceneX-=2 SceneX=clamp(SceneX,240,9999) __view_set( e__VW.XView, 0, SceneX )
+if scenetime=1600
+{
+with actor5 {x=-80 y=0 sprite_index=spr_viva_snowclimb3}
+with flashend {image_alpha=1 specialcheck[0]=-0.025}
 }
 
-if scenetime=2600 scenetime=11120
+if scenetime=1800
+{
+with flashend {image_alpha=0 specialcheck[0]=0.025}
+}
+
+if scenetime=1900
+{
+with actor5 {x=0 y=0 sprite_index=spr_viva_snowclimb4}
+with flashend {image_alpha=1 specialcheck[0]=-0.025}
+}
+
+if scenetime=2100
+{
+with flashend {image_alpha=0 specialcheck[0]=0.025}
+}
+
+if scenetime=2200
+{audio_stop_all(); PlaySound(snd_wind)
+with actor5 {x=9990 y=0 sprite_index=mask_none}
+with flashend {image_alpha=1 specialcheck[0]=-0.025}
+
+with actor2 x=9999
+with actor3 x=9999
+with actor4 x=9999
+
+layer_set_visible("BGTsnow2",1)
+skybg=layer_background_get_id(layer_get_id("BGSKY"));
+layer_background_sprite(skybg,background17)
+
+with oControl {SceneX=160; __view_set( e__VW.XView, 0, SceneX )}
+
+with actor1 {x=70 y=160 sprite_index=spr_viva_snowend image_index=0 hspeed=0
+newscript=function()
+{
+if specialcheck[0]=0 {image_index+=0.25 if image_index>=2 image_index=0}
+if specialcheck[0]=1 image_index=2
+if specialcheck[0]=2 image_index=3
+if specialcheck[0]=3 {image_index+=0.25 if image_index>=5 {PlaySound(snd_hitground) specialcheck[0]=4}}
+if specialcheck[0]=4 image_index=5
+}
+}
+}
+
+if scenetime=clamp(scenetime,2200,2399)
+{
+with oControl {SceneX-=1; SceneX=clamp(SceneX,0,9999) __view_set( e__VW.XView, 0, SceneX )}
+}
+
+if scenetime=2400 scenetime=11120
 
 if scenetime=11120
 {
+with actor1 specialcheck[0]=1	
+
+with actor2 {image_xscale=-1 hspeed=-3 image_speed=0.4 sprite_index=spr_hina_move x=370}
+with actor3 {image_xscale=-1 hspeed=-3 image_speed=0.4 sprite_index=spr_bahati_move x=380}
+with actor4 {image_xscale=-1 hspeed=-3 image_speed=0.4 sprite_index=spr_sofia_move x=360}
+
 with oControl {cutscenename="SOFIA" cutsceneline= "There you are! You should have let me finish!"
 }
+}
+
+if scenetime=11160
+{
+with actor2 {hspeed=0 sprite_index=spr_hina_cutscene image_index=0 image_speed=0}
+with actor3 {hspeed=0 sprite_index=spr_bahati_cutscene image_index=3 image_speed=0}
+with actor4 {hspeed=0 sprite_index=spr_sofia_talk image_index=0 image_speed=0.25}
 }
 
 if scenetime=11320
 {
 with oControl {cutscenename="HINA" cutsceneline= "There was an elevator right by where you started climbing! Super cozy, too!"
 }
+
+with actor2 {hspeed=0 sprite_index=spr_hina_talk2 image_index=0 image_speed=0.25}
+with actor4 {hspeed=0 image_index=0 image_speed=0}
 }
 
 if scenetime=11620
 {
+with actor3 {hspeed=0 sprite_index=spr_bahati_talk2 image_index=0 image_speed=0.25}
+with actor2 {hspeed=0 image_index=0 image_speed=0}	
+
 with oControl {cutscenename="BAHATI" cutsceneline= "You've been gone for five minutes!"}
 }
 
 if scenetime=11820
 {
+with actor1 specialcheck[0]=2
+
+with actor3 {hspeed=0 image_index=0 image_speed=0}	
+
 with oControl {cutscenename="VIVA" cutsceneline= "F-five... oh for the love of..."}
 }
 
 if scenetime=11920
-{PlaySound(snd_hitground)
+{//PlaySound(snd_hitground)
+with actor1 specialcheck[0]=3
 with oControl {cutscenename="" cutsceneline= ""}
 }
 
@@ -319,14 +394,16 @@ with oControl {cutscenename="HINA" cutsceneline= "Oooookay!"
 }
 
 if scenetime=1100
-{
+{musicplaystart(msc_stageselect)
 sprite_index=spr_allblackscreen x=0 y=0 image_xscale=1 image_yscale=1 x=0 y=0 hspeed=-16
 with oControl {SceneX=0; __view_set( e__VW.XView, 0, SceneX )}
 layer_set_visible("BTG1",0)
 layer_set_visible("BTG0",0)
 layer_hspeed("Backgrounds_1",-1)
 with oCameoChar x=99999
-with actor1 {sprite_index=spr_hotairballoon shadow=-1 x=-120 y=180 image_index=1 image_speed=0 hspeed=2}
+with actor1 {sprite_index=spr_hotairballoon3 shadow=-1 x=-120 y=180 image_index=1 image_speed=0.2 hspeed=2}
+
+PlaySound(snd_flamelong)
 }
 
 if scenetime=1300
@@ -337,7 +414,7 @@ x=320
 if scenetime=1320
 {scenetime=11060 layer_hspeed("Backgrounds_1",-0.5)
 
-with actor1 {sprite_index=spr_hotairballoon2 shadow=-1 x=160 y=180 image_index=0 image_speed=0 hspeed=0}	
+with actor1 {sprite_index=spr_hotairballoon4 shadow=-1 x=160 y=180 image_index=0 image_speed=0.2 hspeed=0}	
 
 }
 
@@ -359,7 +436,9 @@ with oControl {cutscenename="VIVA" cutsceneline= "Slow down you airhead!!"
 
 if scenetime=11500
 {
-with actor1 {vspeed=-8} oControl.quakeFXTime=10	
+with actor1 {sprite_index=spr_hotairballoon5 vspeed=-8} oControl.quakeFXTime=10	
+
+PlaySound(snd_explosion)
 
 with oControl {//Divas move
 cutscenename="" cutsceneline=""}

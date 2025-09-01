@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":3.4624035,
   "name":"snd_flamelong",
   "parent":{
     "name":"General",
