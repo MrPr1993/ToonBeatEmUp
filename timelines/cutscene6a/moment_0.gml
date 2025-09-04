@@ -68,7 +68,7 @@ if scenetime=320
 with oControl
 {
 with oControl {
-cutscenename="SYNTHESA" cutsceneline= "Heeheehee~! What fun what fun! Congratulations on your victory, friends!"
+cutscenename="SYNTHESA" cutsceneline= "Heeheehee~! What fun, what fun! Congratulations on your victory, friends!"
 }
 }
 }

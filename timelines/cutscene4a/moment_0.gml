@@ -87,7 +87,7 @@ with actor1 {sprite_index=spr_viva_talk3 image_speed=0.25}
 sprite_index=mask_none scenetime=340
 with oControl
 {
-cutscenename="VIVA" cutsceneline="Well, you attacked us. And your staff..."
+cutscenename="VIVA" cutsceneline="Well, you attacked us. And your goons..."
 } x=0
 y=0 vspeed=-0.2
 }
@@ -100,7 +100,7 @@ with actor5 {sprite_index=spr_duck_talk1 image_speed=0.25}
 	
 with oControl
 {cutscenename="DIXIE"
-cutsceneline="What're you broads doin' are breakin' in, smackin' me and my crew around..."
+cutsceneline="What're you broads doin' are breakin' in, smackin' me and my staff around..."
 }
 }
 if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
@@ -121,7 +121,7 @@ with actor5 {sprite_index=spr_duck_talk3 image_xscale=1 image_speed=0.1}
 	
 with oControl
 {
-cutsceneline= "My boss ain't gonna be happy to see all this damage!"
+cutsceneline= "My boss ain't gonna be happy to see all this mess!"
 }
 
 with actor1 {sprite_index=spr_viva_lookaround image_index=0}

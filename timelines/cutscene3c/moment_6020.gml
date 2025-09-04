@@ -277,7 +277,7 @@ if scenetime=1600
 
 if scenetime=1680
 {with oControl {//SMASH!
-cutscenename="FUKUKIJO" cutsceneline=  "Oh yeah, our ninjas were hired to hunt you down, so don't think you've seen the last of them!"}
+cutscenename="FUKUKIJO" cutsceneline=  "Oh yes, our employees are also out after you, so expect them to show up sooner than later."}
 }
 
 

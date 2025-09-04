@@ -71,7 +71,7 @@ if scenetime=440
 with oControl
 {
 //POOF
-cutscenename="VIVA" cutsceneline= "S-S-Seriously?! You couldn't heve been m-m-more specific?!"
+cutscenename="VIVA" cutsceneline= "S-S-Seriously?! You couldn't have been m-m-more specific?!"
 }
 }
 

@@ -60,12 +60,12 @@ with actor2 {sprite_index=spr_hina_talk2 image_speed=0.1}
 
 with oControl
 {cutscenename="HINA"
-cutsceneline="WOW SHE'S HUGE."
+cutsceneline="MY SHE'S HUGE."
 }
 }
 
 if scenetime=680
-{
+{scenetime=780
 with actor2 {image_index=0 image_speed=0}
 
 with actor1 {sprite_index=spr_viva_idle image_index=1 image_speed=0}
@@ -87,7 +87,7 @@ cutsceneline="WE COULD ASK FOR THE CAPTAIN OF THE SHIP TO DRIVE US TO A PORT?"
 }
 
 if scenetime=1280
-{
+{scenetime=1350
 with actor3 {image_index=0 image_speed=0}
 with actor1 {sprite_index=spr_viva_cutscene image_index=1}	
 

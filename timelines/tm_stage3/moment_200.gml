@@ -1,10 +1,13 @@
 /// @description Stage Start
 
-if oPlayer.ground=0
+if oPlayer.anim!=0
 {oViewTarget.x=0
 __view_set( e__VW.Object, 0, oViewTarget )
 oEnemySpawner.canFollow=0
 oControl.camMove=1
+
+with oPlayer if anim=42 {if AnimFrame<5 AnimFrame=5.1}
+
 timeline_position-=1
 }
 else

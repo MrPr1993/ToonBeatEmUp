@@ -264,7 +264,7 @@ with actor4 {image_speed=0 image_index=0 sprite_index=spr_sofia_talk3; hspeed=0}
 
 if scenetime=320
 {
-with oControl {cutscenename="HINA" cutsceneline= "Looks super deep though... Wonder just how much."
+with oControl {cutscenename="HINA" cutsceneline= "Looks super deep though... I wonder just how much."
 }
 }
 

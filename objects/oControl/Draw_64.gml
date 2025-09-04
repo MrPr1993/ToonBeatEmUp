@@ -984,10 +984,10 @@ if global.SaveNumber=0
 
 
 if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)\n(4 LIVES, 5 CONTINUES)" 
-	diftext2="YOU TAKE WAY LESS DAMAGE AND DEAL MORE."
+	diftext2="SUITABLE FOR FIRST TIMERS ON BRAWLING."
 	global.LifeStart=4; global.Continues=5;}
 if global.Difficulty=1 {diftext="FIRST GIG\n(EASY)\n(3 LIVES, 4 CONTINUES)"  
-	diftext2="YOU TAKE LESS DAMAGE."
+	diftext2="WEAKER FOES, YOU TAKE LESS DAMAGE."
 		global.LifeStart=3; global.Continues=4;}
 	
 if global.Difficulty=2 {diftext="FAVORITE AT THE CLUB\n(MEDIUM)\n(2 LIVES, 3 CONTINUES)" 
@@ -1144,14 +1144,14 @@ if global.MultiStage=4 {oControl.charselectgo=global.UnlockStage[4] global.Stage
 if global.MultiStage=5 {oControl.charselectgo=global.UnlockStage[5] global.StageGoing=rm_stage3bmulti diftext="ANNA MARI'S GRAVES" } ///Random
 if global.MultiStage=6 {oControl.charselectgo=global.UnlockStage[6] global.StageGoing=rm_stage3amulti diftext="MASHED MUSEUM" } ///Random
 if global.MultiStage=7 {oControl.charselectgo=global.UnlockStage[7] global.StageGoing=rm_stage3cmulti diftext="LUCKY DOJO CASINO" } ///Random
-if global.MultiStage=8 {oControl.charselectgo=global.UnlockStage[8] global.StageGoing=rm_stage4bmulti diftext="SWAMP OF THE WITCH" } ///Random
+if global.MultiStage=8 {oControl.charselectgo=global.UnlockStage[8] global.StageGoing=rm_stage4bmulti diftext="SWAMP OF THE DRUID" } ///Random
 if global.MultiStage=9 {oControl.charselectgo=global.UnlockStage[9] global.StageGoing=rm_stage4amulti diftext="DUCK CARNIVAL" } ///Random
 if global.MultiStage=10 {oControl.charselectgo=global.UnlockStage[10] global.StageGoing=rm_stage4cmulti diftext="WAYSIDE BEACH" } ///Random
 if global.MultiStage=11 {oControl.charselectgo=global.UnlockStage[11] global.StageGoing=rm_stage5bmulti diftext="MARTIAN UFO" } ///Random
 if global.MultiStage=12 {oControl.charselectgo=global.UnlockStage[12] global.StageGoing=rm_stage5amulti diftext="PRINCE'S SEA" } ///Random
 if global.MultiStage=13 {oControl.charselectgo=global.UnlockStage[13] global.StageGoing=rm_stage5cmulti diftext="BURNING DESERT" } ///Random
 if global.MultiStage=14 {oControl.charselectgo=global.UnlockStage[14] global.StageGoing=rm_stage6bmulti diftext="SNOWY MOUNTAIN" } ///Random
-if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[15] global.StageGoing=rm_stage6amulti diftext="GOBLIN CAVERN" } ///Random
+if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[15] global.StageGoing=rm_stage6amulti diftext="DUNGEON CAVERN" } ///Random
 if global.MultiStage=16 {oControl.charselectgo=global.UnlockStage[16] global.StageGoing=rm_stage6cmulti diftext="FLUFFY CLOUDY SKY" } ///Random
 if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[17] global.StageGoing=rm_stage7multi diftext="MAD DOCTOR'S LAB" } ///Random
 if global.MultiStage=18 {oControl.charselectgo=global.UnlockStage[18] global.StageGoing=rm_stage8multi diftext="THE DASTARDLY BLIMP" } ///Random

@@ -25,8 +25,8 @@ switch(oPlayer.character)
 {
 case 0: tutorialtext="ALRIGHT, BONEY. LET'S BEGIN." break;
 case 1: tutorialtext="RIGHT, RUBBERS. LET'S START" break;
-case 2: tutorialtext="OKAY, BIG GIRL. LET'S START." break;
-case 3: tutorialtext="LET'S BEGIN, SHORTSTACK." break;
+case 2: tutorialtext="OKAY, BIG GIRL. LET'S GO." break;
+case 3: tutorialtext="GET READY, SHORTSTACK." break;
 }
 
 

@@ -151,7 +151,7 @@ with oTrainer {trainingreact(1)}}}
 {
 tutorialtext="YOU CAN USE YOUR FIST AND ZOOM WITH"
 if oPlayer.character=1 tutorialtext="WHIP EM' GOOD WITH YOUR STRETCHY ARM WITH"
-if oPlayer.character=2 tutorialtext="GIVE EM' A GOOD GUT BUMP WITH"
+if oPlayer.character=2 tutorialtext="GIVE EM' A GOOD BELLY BUMP WITH"
 if oPlayer.character=3 tutorialtext="NOW GIVE EM' QUITE A KICK WITH"
 
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
@@ -203,7 +203,7 @@ case 14:
 {timertime=400
 trainingdetect=function() {	with oPlayer canmove=0 
 trainingreact(0) 
-tutorialtext="OKAY WE MIGHT HAVE KINDA ROUGHED UP BAGGY TOO MUCH. SO LET'S GIVE IT A KISS."}
+tutorialtext="OKAY WE MIGHT HAVE KINDA ROUGHED UP BAGGY TOO MUCH. SO LET'S BLOW EM' KISS."}
 } break;
 
 case 15: {timertime=160
@@ -248,7 +248,7 @@ tutorialtext="AND NOW FOR THE GRAND FINALE. SHOWTIME. YOU CAN FILL YOUR BAR BY D
 } break;
 
 case 20: 
-{timertime=160 with oPlayer canControl=1 tutorialtext="HAVE A GO WITH." oPlayer.super=100
+{timertime=160 with oPlayer canControl=1 oPlayer.super=100
 tutorialtext="TO USE YOUR SHOWTIME USE"
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
 draw_buttontext(244+60,80,8,"",spr_commandbutton,7+6*commandMul,"","")};

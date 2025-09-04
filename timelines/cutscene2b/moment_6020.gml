@@ -154,7 +154,7 @@ if scenetime=680{ x=0 y=0
 with oControl {cutscenename="HINA" cutsceneline="NOT UNLESS WE LAND ON SOMETHING TO BREAK OUR FALL."}}
 
 if scenetime=1100{ x=0 y=0
-with oControl {cutscenename="VIVA" cutsceneline="WHAT- HOW ARE WE GONNA DO THAT?"}}
+with oControl {cutscenename="VIVA" cutsceneline="WHAT- HOW ARE WE GONNA DO THAT?!"}}
 
 if scenetime=1260{ x=0 y=0 
 with oControl {cutscenename="HINA" cutsceneline="I KNOW A TRICK. TRUST ME. LOOK DOWN!"}}

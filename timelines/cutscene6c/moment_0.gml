@@ -143,7 +143,7 @@ with oControl {cutscenename="BAHATI" cutsceneline="Sorry for the bruises, we onl
 
 if scenetime=1900
 {image_index=1
-with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know how to fix up you up. And you can help us leave the castle."}
+with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know how to fix you up. And you can help us leave the castle."}
 }
 
 if scenetime=2200

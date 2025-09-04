@@ -73,7 +73,7 @@ global.StageGoing=rm_cutscene7}
 if global.MovieSel=21 {if global.UnlockCutscene[18] MenuText="BAD END"
 global.StageGoing=rm_cutscenebadend}
 
-if global.MovieSel=22 {if global.UnlockCutscene[19] MenuText="ENDING SCENE"
+if global.MovieSel=22 {if global.UnlockCutscene[19] MenuText="AND SCENE"
 global.StageGoing=rm_cutscene8}
 if global.MovieSel=23 {if global.UnlockCutscene[30] MenuText="CREDITS"
 global.StageGoing=rm_creditscene}

@@ -363,7 +363,7 @@ with oControl {
 sprite_index=spr_whitecol image_blend=c_black depth=-4000
 }
 	
-	with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=-2 image_xscale=-1} cutscenename="VIVA" cutsceneline="A LOT OF IT."}
+	with actor3 {sprite_index=spr_bahati_move image_speed=0.25 hspeed=-2 image_xscale=-1} cutscenename="VIVA" cutsceneline="AND A LOT OF IT."}
 }
 
 if scenetime=3320

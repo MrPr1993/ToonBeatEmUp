@@ -331,7 +331,7 @@ with oControl {cutscenename="BAHATI" cutsceneline= "Alright but... Where exactly
 
 if scenetime=660
 {
-with oControl {cutscenename="KIANDRA" cutsceneline= "I don't know, find out yourself! In fact... Just to get you out of here faster... I'll make this a quick trip."
+with oControl {cutscenename="KIANDRA" cutsceneline= "I don't know, find out for yourself! In fact... Just to get you out of here faster... I'll make this a quick trip."
 }
 }
 

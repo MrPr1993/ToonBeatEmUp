@@ -63,7 +63,7 @@ if scenetime=900
 {
 with oControl
 {
-cutscenename="DIXIE" cutsceneline= "...."
+cutscenename="DIXIE" cutsceneline= "..."
 }
 }
 

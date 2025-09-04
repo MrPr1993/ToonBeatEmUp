@@ -30,7 +30,7 @@ if global.ConsoleType="SWITCH" commandMul=2;
 btnind=5+6*commandMul btnT2=""
 }
 
-btnT3="FOR SPECIAL ATTACK"
+btnT3="FOR A SPECIAL ATTACK"
 }
 	
 with oControl {//camMove=0 camMax=room_width

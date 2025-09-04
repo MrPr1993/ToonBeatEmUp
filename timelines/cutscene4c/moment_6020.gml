@@ -13,11 +13,11 @@ with actorscreen
 
 actor8.specialcheck[0]=1 actor8.image_index=0 actor8.x=0 actor8.y=y
 
-
+scenetime=80
 with oControl
 {
 //-Red Oni is lying(Swamp)-
-cutscenename="CIRCE" cutsceneline= "I see... Your destiny lies in a cornfield, where you will take to the stars..."
+cutscenename="CIRCE" cutsceneline= "I see... Your destiny lies in a big cornfield."
 }
 
 newscript=function()
@@ -294,7 +294,7 @@ with actor5 {sprite_index=spr_seaweed_talk1 image_index=0 image_speed=0}
 
 with actor1 {sprite_index=spr_viva_talk image_index=0 image_speed=0.25}	
 
-with oControl {cutscenename="VIVA" cutsceneline="Well that's piece of cake. Let's go girls!"}
+with oControl {cutscenename="VIVA" cutsceneline="Well that's a piece of cake. Let's go girls!"}
 }
 
 
@@ -322,7 +322,7 @@ if scenetime=2000
 with actor5 {sprite_index=spr_seaweed_talk1 image_speed=0.1}	
 
 with oControl {//SMASH!
-cutscenename="CIRCE" cutsceneline="Yes. The blond one is skinny, the poor thing."}
+cutscenename="CIRCE" cutsceneline="Yes. The blond one is that skinny, the poor thing."}
 }
 
 

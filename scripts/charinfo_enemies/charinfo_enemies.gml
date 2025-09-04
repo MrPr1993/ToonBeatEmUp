@@ -151,7 +151,7 @@ dataabilities="Sneaking,Sliding,\nSpy"
 }
 break;
   case 4:
-   charinfo_set(8,spr_femburglar_stand,2,animsetup_femburglar,draw_enemy,spr_enemypal,2,spr_enemyface,2,"MR.CHILL",
+   charinfo_set(8,spr_femburglar_stand,2,animsetup_femburglar,draw_enemy,spr_enemypal,2,spr_enemyface,2,"MS.CHILL",
    "")
      hp=0.2 enemyID=15
 if dataPal=1

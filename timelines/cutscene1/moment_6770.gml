@@ -13,6 +13,6 @@ alarm[5]=40
 
 
 cutscenename="VIVA"
-cutsceneline="I HEARD ABOUT THAT ONE. DAMN. HOW ARE WE GOING TO GET THERE...?"
+cutsceneline="I KNOW WHERE IT IS. DAMN. BUT HOW ARE WE GOING TO GET THERE...?"
 
 

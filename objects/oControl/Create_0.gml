@@ -978,7 +978,7 @@ songID=-1
 if room=rm_soundtest
 {
 songno=0
-songname="SELECT A SOUND OR SOUND"
+songname="SELECT MUSIC OR SOUND"
 soundno=1
 soundname="VIVA 1"
 playingsongname=""

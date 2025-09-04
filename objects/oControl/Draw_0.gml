@@ -81,7 +81,7 @@ if mapSelX=1 and mapSelY=-1 {global.StageGoing=rm_stage2b mapSXlerp=190 mapSYler
 draw_sprite_ext(bg_mapB,1,123,48,1,1,0,c_white,1-1*lockedMap[2])
 	}else draw_sprite_ext(bg_mapB,1,123,48,1,1,0,c_white,1-0.8*lockedMap[2])
 
-if mapSelX=1 and mapSelY=0 {global.StageGoing=rm_stage2 mapSXlerp=152 mapSYlerp=142 mapHighScore=global.LevelHiScore[3] mapDif=global.LevelDif[3] if lockedMap[3]=1 mapSName="STAGE 2\nRUSH OVER THE SEA"
+if mapSelX=1 and mapSelY=0 {global.StageGoing=rm_stage2 mapSXlerp=152 mapSYlerp=142 mapHighScore=global.LevelHiScore[3] mapDif=global.LevelDif[3] if lockedMap[3]=1 mapSName="STAGE 2\nRUSH OVER THE SEAS"
 draw_sprite_ext(bg_mapB,2,91,101,1,1,0,c_white,1-1*lockedMap[3])
 	}else draw_sprite_ext(bg_mapB,2,91,101,1,1,0,c_white,1-0.8*lockedMap[3])
 if mapSelX=1 and mapSelY=1 {global.StageGoing=rm_stage2c mapSXlerp=102 mapSYlerp=194 mapHighScore=global.LevelHiScore[4] mapDif=global.LevelDif[4] if lockedMap[4]=1 mapSName="STAGE 2-C\nTRAINING TRAVEL"

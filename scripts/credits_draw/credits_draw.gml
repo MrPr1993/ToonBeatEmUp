@@ -402,7 +402,7 @@ else if creditsTime<7+5*11
 creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nFLASH TRICKSTAR\nSHADO\nSHADES\nWEEBJESUSAMEN" ;
 else
 {
-creditsCameoY-=0.18
+creditsCameoY-=0.22
 }
 
 draw_set_font(global.scorefont)

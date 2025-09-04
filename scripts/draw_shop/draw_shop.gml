@@ -263,7 +263,7 @@ if global.UnlockCharacterData=0 shopSelect=1 else {shopSelect=-2 shopCost="SOLD 
 }
 if shopselY=0 and shopselX=1
 {shopPrice=4000 shopName="PALETTE SWAP" shopCost="COST:4000"
-shopDesc="BORING OF YOUR\nCLOTHING COLOR?\nYOU CAN CHANGE IT\nWITH THIS!"
+shopDesc="BORING OF YOUR\nCOSTUME COLOR?\nYOU CAN CHANGE IT\nWITH THIS!"
 if global.UnlockAltPal=0 shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=2
@@ -377,7 +377,7 @@ if shopselY=1 and shopselX=2
 shopDesc="\nPLAY THE GAME,\nWITH A MIRRORED\nVIEW!"
 if global.CheatUnlock[7]=0 shopSelect=7 else shopSelect=-3}
 if shopselY=1 and shopselX=3
-{shopPrice=25000 shopName="FULL HEAL" shopCheatNO=8; shopCheatP=-2000
+{shopPrice=25000 shopName="FULL HEAL SNACKS" shopCheatNO=8; shopCheatP=-2000
 shopDesc="\nHEALTH WILL BE\nFULLY RESTORED\nFROM ANY FOOD!"
 if global.CheatUnlock[8]=0 shopSelect=8 else shopSelect=-3}
 //
@@ -386,8 +386,8 @@ if shopselY=2 and shopselX=0
 shopDesc="\nDISABLE THE HEALTH\nDRAIN FROM USING\nTHE SPECIALS!"
 if global.CheatUnlock[9]=0 shopSelect=9 else shopSelect=-3}
 if shopselY=2 and shopselX=1
-{shopPrice=25000 shopName="SUPER RECHARGER" shopCheatNO=10; shopCheatP=-2000
-shopDesc="\nYOUR SUPER SLOWLY\nCHARGES OVER TIME!"
+{shopPrice=25000 shopName="SHOWTIME RECHARGER" shopCheatNO=10; shopCheatP=-2000
+shopDesc="\nYOUR SHOWTIME\nCHARGES OVER TIME!"
 if global.CheatUnlock[10]=0 shopSelect=10 else shopSelect=-3}
 if shopselY=2 and shopselX=2
 {shopPrice=40000 shopName="UNBREAKABLE" shopCheatNO=11; shopCheatP=-5000
@@ -399,7 +399,7 @@ shopDesc="\nDISABLE THE TIMER!"
 if global.CheatUnlock[12]=0 shopSelect=12 else shopSelect=-3}
 //
 if shopselY=3 and shopselX=0
-{shopPrice=99999 shopName="SUPERWOMAN" shopCheatNO=13; shopCheatP=-10000
+{shopPrice=99999 shopName="SUPERDIVA" shopCheatNO=13; shopCheatP=-10000
 shopDesc="\nINFINITE HEALTH!"
 if global.CheatUnlock[13]=0 shopSelect=13 else shopSelect=-3}
 if shopselY=3 and shopselX=1
@@ -436,70 +436,70 @@ if shopSet=2
 {
 if shopselY=0 and shopselX=0
 {shopPrice=5000 shopName="VIVA'S GALLERY" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nTHUNDEROUS VIVA!"
+shopDesc="ARTWORK OF THE\nTHUNDEROUS VIVA!"
 if global.Gallery[1]=0 shopSelect=1 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=1
 {shopPrice=5000 shopName="HINA'S GALLERY" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nFLAMING HOT HINA!"
+shopDesc="ARTWORK OF THE\nFLAMING HOT HINA!"
 if global.Gallery[2]=0  shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=2
 {shopPrice=5000 shopName="BAHATI'S GALLERY" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nBIG AND FABULOUS\nBAHATI!"
+shopDesc="ARTWORK OF THE\nBIG AND FABULOUS\nBAHATI!"
 if global.Gallery[3]=0  shopSelect=3 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=3
 {shopPrice=5000 shopName="SOFIA'S GALLERY" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nSPICY AND LEGGY\nSOFIA!"
+shopDesc="ARTWORK OF THE\nSPICY AND LEGGY\nSOFIA!"
 if global.Gallery[4]=0  shopSelect=4 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 ////
 if shopselY=1 and shopselX=0
 {shopPrice=5000 shopName="ENEMY GALLERY 1" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nENEMIES FROM THE\n1-2 STAGES!"
+shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n1-2 STAGES!"
 if global.Gallery[5]=0  shopSelect=5 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=1
 {shopPrice=5000 shopName="ENEMY GALLERY 2" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nENEMIES FROM THE\n3-4 STAGES!"
+shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n3-4 STAGES!"
 if global.Gallery[6]=0  shopSelect=6 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=2
 {shopPrice=5000 shopName="ENEMY GALLERY 3" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nENEMIES FROM THE\n5-6 STAGES!"
+shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n5-6 STAGES!"
 if global.Gallery[7]=0 shopSelect=7 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=3
 {shopPrice=5000 shopName="ENEMY GALLERY 4" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nENEMIES FROM THE\n7-8 STAGES!"
+shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n7-8 STAGES!"
 if global.Gallery[8]=0  shopSelect=8 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 /////
 if shopselY=2 and shopselX=0
 {shopPrice=5000 shopName="BOSS GALLERY 1" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nBOSSES FROM THE\n1-2 STAGES!"
+shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n1-2 STAGES!"
 if global.Gallery[9]=0  shopSelect=9 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=1
 {shopPrice=5000 shopName="BOSS GALLERY 2" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nBOSSES FROM THE\n3-4 STAGES!"
+shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n3-4 STAGES!"
 if global.Gallery[10]=0  shopSelect=10 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=2
 {shopPrice=5000 shopName="BOSS GALLERY 3" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nBOSSES FROM THE\n5-6 STAGES!"
+shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n5-6 STAGES!"
 if global.Gallery[11]=0  shopSelect=11 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=3
 {shopPrice=5000 shopName="BOSS GALLERY 4" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nBOSSES FROM THE\n7-8 STAGES!"
+shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n7-8 STAGES!"
 if global.Gallery[12]=0  shopSelect=12 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 ///
 if shopselY=3 and shopselX=0
 {shopPrice=5000 shopName="MISC GALLERY" shopCost="COST:5000"
-shopDesc="ARTWORK FOR THE\nSOME OTHER\nCHARACTERS...\nWHICH INCLUDES ME."
+shopDesc="ARTWORK OF THE\nSOME OTHER\nCHARACTERS...\nWHICH INCLUDES ME."
 if global.Gallery[13]=0  shopSelect=13 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=1

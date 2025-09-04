@@ -147,7 +147,7 @@ actor1.y=9999
 actor2.y=9999 PlaySound(snd_break2)
 sprite_index=spr_incomingcops image_index=0
 with oControl
-{cutscenename="COP" quakeFXTime=10
+{cutscenename="Chief" quakeFXTime=10
 cutsceneline="ALRIGHT, ALRIGHT, EVERYONE, SPREAD OUT!"
 }
 }
@@ -163,7 +163,7 @@ cutsceneline="OH, SO THE CAVALRY'S FINALLY HERE. WHERE HAVE ALL OF YOU BEEN?"
 if scenetime=2400
 {vspeed=0 y=0
 with oControl
-{cutscenename="COP"
+{cutscenename="CHIEF"
 cutsceneline="DON'T BLAME US, MA'AM. WE'VE BEEN BUSY TRACKING DOWN THE MOOKS ALL THE WAY HERE."
 }
 }
@@ -173,7 +173,7 @@ if scenetime=2700
 scenetime=2800
 
 with oControl
-{cutscenename="COP"
+{cutscenename="CHIEF"
 cutsceneline="NOW LET US TAKE IT FROM HERE."
 }
 }
@@ -319,7 +319,7 @@ stageEndFX=1
 //cutscenename="VIVA" cutsceneline= "Right... All those... Obstacles... Including all the times I got smacked around... Humiliated... WHY WAS IT ALWAYS ME?! WHAT DID I DO TO DESERVE ALL THAT PAIN?!"
 //cutscenename="HINA" cutsceneline= "Uh oh... She's losing it..."
 //cutscenename="VIVA" cutsceneline= "YOU'RE DAMN RIGHT I'M LOSING IT!!! HOWCOME YOU THREE DIDN'T GET HORRIBLY BRUTALIZED AS MUCH AS I DID?!"
-//cutscenename="SOFIA" cutsceneline= "Calm down! It's all over with now!"
+//cutscenename="SOFIA" cutsceneline= "Calm down! It's all over now!"
 //cutscenename="VIVA" cutsceneline= "Right... You're right... Still..."
 //Viva is rapidly approaching your location
 //cutscenename="VIVA" cutsceneline= "I WOULDN'T HAVE GOTTEN ALL THOSE LUMPS IF YOU PICKED A BETTER ROUTE!!! C'MERE!!!"
