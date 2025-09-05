@@ -83,9 +83,6 @@ image_index=frameadd
 ///SWING
 if anim=10
 {
-
-
-
 frame_set(0,image_index,0.05)
 frame_set(1,0,0.5)
 frame_set(2,2,0.25) if AnimFrame=3

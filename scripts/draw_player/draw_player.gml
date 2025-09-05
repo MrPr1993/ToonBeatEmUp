@@ -12,6 +12,12 @@ var minimodediv=1; if global.Cheat[5]=1 if global.NoCheat minimodediv=0.25;
 
 ///if targetID!=-1 if targetID.y<=y with targetID {script_execute(chardraw);}
 
+if anim=50
+{
+if oShadowFX.Spotlight[playerNO]<1 oShadowFX.Spotlight[playerNO]+=0.1 else oShadowFX.Spotlight[playerNO]=1
+draw_sprite_ext(spr_spotlight,0,x,y,oShadowFX.Spotlight[playerNO],1,0,c_white,1)
+}
+
 if carMode=0
 {
 

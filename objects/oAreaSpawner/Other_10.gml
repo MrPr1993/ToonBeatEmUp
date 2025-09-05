@@ -49,10 +49,10 @@ sentflying=1 image_index=2 alarm[0]=2 	isDepth=0 depth=-y
 
 }
 
-if FXtype=6 ////Teleport
+if FXtype=7 ////Teleport
 {
 //PlaySoundNoStack(SoundSpawn0)
-oControl.quakeFXTime=10
+oControl.quakeFXTime=10 PlaySoundNoStack(snd_shocked)
 image_index=0
 image_speed=0 visible=0
 dust_make(x,y+1,0,0,0,0) with dustmk sprite_index=spr_ateleporter

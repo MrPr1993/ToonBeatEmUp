@@ -92,7 +92,7 @@ commandChargeFrame=0
 commandChargeColor=c_white
 commandChargeAlpha=1
 
-
+recovery=0
 
 ///recoveryTime=0
 charScript=animsetup_viva

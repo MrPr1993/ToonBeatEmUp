@@ -1,11 +1,28 @@
 if oPlayer.x>-100
+{
 timeline_position-=1
+
+}
 else
-{specialSet8=0
+{
+with truck {x-=100
+	
+hspeed=8 newscript=function() {
+	if specialcheck[0]=0
+	if x>=300 {specialcheck[0]=1 spdZ=-16 PlaySound(snd_break2) sprite_index=spr_truck2}
+	
+	z+=spdZ;
+	
+	}
+	
+	}
+
+specialSet8=0
 oEnemySpawner.canFollow=0
 oControl.camMove=0
 oEnemySpawner.roomHSpd=8
 oEnemySpawner.roomMove=1
+
 oPlayer.hspeed=8
 oPlayer.x=-100
 oPlayer.y=200

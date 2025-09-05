@@ -70,8 +70,9 @@ draw_sprite(spr_bullarrow,character,26+264*(runpos/oBullGame.runmax),224)
 	pal_swap_reset();
 	shader_reset()
 
+draw_sprite(spr_bullhang,0,oBullGame.runmax-96,y)
 }
 
-draw_sprite(spr_bullhang,0,oBullGame.runmax-96,y)
+
 
 if oControl.betatest=1 {draw_text(32,32,rundist)}

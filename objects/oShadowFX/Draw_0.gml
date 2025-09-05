@@ -161,14 +161,14 @@ draw_set_color(c_white) draw_set_alpha(1)
 
 
 //if spotlightWidth<1 spotlightWidth+=0.1 else spotlightWidth=1
-{
-if instance_exists(oPlayer) with oPlayer
-if anim=50
-{
-if oShadowFX.Spotlight[playerNO]<1 oShadowFX.Spotlight[playerNO]+=0.1 else oShadowFX.Spotlight[playerNO]=1
-draw_sprite_ext(spr_spotlight,0,x,y,oShadowFX.Spotlight[playerNO],1,0,c_white,1)
-}
-}
+//{
+//if instance_exists(oPlayer) with oPlayer
+//if anim=50
+//{
+//if oShadowFX.Spotlight[playerNO]<1 oShadowFX.Spotlight[playerNO]+=0.1 else oShadowFX.Spotlight[playerNO]=1
+//draw_sprite_ext(spr_spotlight,0,x,y,oShadowFX.Spotlight[playerNO],1,0,c_white,1)
+//}
+//}
 
 if instance_exists(oPlayer) with oPlayer if visible and
 !place_meeting(x,y,oFallHole) and fallHole=0 and sprite_index!=mask_none

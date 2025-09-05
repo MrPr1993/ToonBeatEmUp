@@ -33,27 +33,30 @@ if AnimFrame>4-0.1 AnimFrame=0
 
 z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
 
-if key_jump {
+if key_jump {PlaySoundNoStack(snd_jump)
 if ground {ground=0 spdZ=-8}
 }
 
 if key_attack
 {x+=12 x=clamp(x,0,320-32)
+	PlaySoundNoStack(snd_steal)
 	//if meter=clamp(meter,2+16,78-16) win=1 else win=0
 	//PlaySound(voice1)
-
 }
 
 
 
-if x<64 {AnimFrame=0 anim=10 win=0 z=0 ground=1}
+if x<64 {AnimFrame=0 anim=10 win=0 z=0 ground=1 PlaySound(snd_hit)}
 
 }
 
 
 ///hurt
 if anim=1
-{image_index=0 z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
+{
+if AnimFrame=0 {PlaySound(snd_hit) PlaySound(voice2)}
+	
+image_index=0 z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
 sprite_index=ThrownSpr
 AnimFrame+=0.1 shaketime=2
 if AnimFrame>3 {AnimFrame=0 anim=0}

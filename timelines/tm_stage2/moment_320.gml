@@ -1,3 +1,4 @@
+with truck instance_destroy();
 
 with oPlayer {hasShadow=0 areaEntry=0 z=-999990}
 

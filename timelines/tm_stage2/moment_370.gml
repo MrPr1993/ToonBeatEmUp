@@ -5,6 +5,10 @@ if oPlayer.ground
 timer_set(1)
 
 oControl.time=99
+
+truck=instance_create_depth(oControl.camX-48,80,-1,oCameoChar) with truck
+{anim=9999 shadow=-1 hspeed=2 image_speed=0.25 vspeed=-0.02 sprite_index=spr_truck3 isDepth=0 depth=16777214}
+
 	
 oPlayer.canControl=1
 oPlayer.areaEntry=0
@@ -38,7 +42,7 @@ with oPlayer
 car=instance_create_depth(x,y,depth,oCar) car.dead=1 car.sprite_index=spr_car_dead
 car.image_xscale=image_xscale car.z=z car.ground=0 car.mask_index=mask_none
 player_jump() canmove=1 canControl=1}
-oControl.quakeFXTime=8 PlaySound(snd_explosion)
+oControl.quakeFXTime=10 PlaySound(snd_explosion)
 }
 else
 {

@@ -531,7 +531,10 @@ if key_Ah or key_Bh or key_Xh or key_Yh or key_cancelH or key_accept
 if skipScene<1 skipScene+=0.01
 else
 {
-{global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_hiscore)}
+if global.IsMovie=0
+{ global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_hiscore)}
+else room_goto(rm_cutscenes)
+
 }
 
 
@@ -547,9 +550,10 @@ draw_rectangle(160-80+1,24+1,-1+160-80+160*skipScene,32-1,false)
 
 }else credFram=0
 
-if creditsTime>=134 {global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_hiscore)
-	
-	}
+if creditsTime>=134 
+if global.IsMovie=0
+{global.MenuSkip=0 global.IntroSkip=1 room_goto(rm_hiscore)}
+else room_goto(rm_cutscenes)
 
 x-=2;
 draw_sprite(spr_creditsart,0,360+x,100-16)

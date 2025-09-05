@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_playerhp(){
 	draw_set_halign(fa_left)
+draw_set_alpha(1) draw_set_color(c_white)
 d3d_transform_set_identity()
 if object_index=oPlayer
 {var _xcamx=x-oControl.camX if oControl.mirrorMode _xcamx=320-x+oControl.camX

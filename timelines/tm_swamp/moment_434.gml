@@ -11,7 +11,13 @@ ground=0 spdZ=-8 hspeed=4 zSpeed=-16
 
 vehSpr=spr_boat vehWSpr=spr_emptyarea
 carMode=1; anim=200 canmove=0
+}
 
+PlaySound(snd_break2)
+
+with oControl
+{
+vehSpr=spr_boat vehWSpr=spr_emptyarea
 }
 
 spawner_followset("WaveSet1",0,3264+160,1)

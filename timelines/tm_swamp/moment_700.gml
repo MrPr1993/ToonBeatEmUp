@@ -1,6 +1,7 @@
 /// @description Prepare to jump from ramp
 
 if oControl.p1.anim=200 and oControl.p2.anim=200 and oControl.p3.anim=200 and oControl.p4.anim=200
+and oControl.p1.recovery=0 and oControl.p2.recovery=0 and oControl.p3.recovery=0 and oControl.p4.recovery=0
 	{
 with oPlayer 
 {//x=160 =160

@@ -87,6 +87,8 @@ ground=1
 recovery=180
 
 carMode=oControl.carMode
+vehSpr=oControl.vehSpr
+vehWSpr=oControl.vehWSpr
 
 if carMode=0
 {visible=0

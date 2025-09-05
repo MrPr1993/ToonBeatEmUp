@@ -13,6 +13,9 @@ minigameIDwin=0;
 mirrorMode=0;
 roomfast=0
 carMode=0;
+vehSpr=spr_car
+vehWSpr=spr_car_wheels
+
 triggerarcadesave=0;
 entag=0;
 allstagemode=0;

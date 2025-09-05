@@ -23,7 +23,7 @@ PlayerLife=-1
 isInctive=0
 
 
-
+areaEntry=0
 StarY=0
 menuSelect=-1
 LegacyMode=0
@@ -43,6 +43,8 @@ ContinueMode=0
 isInctive=1
 
 playerDED=0
+
+recovery=0
 
 continueFlash=0 characterSelect=global.P1Char
 characterTimer=9 hiScoreInputNum=3
