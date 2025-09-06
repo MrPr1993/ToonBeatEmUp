@@ -61,6 +61,8 @@ draw_sprite(spr_bullbar,0,26,224)
 if instance_exists(oBullPlayer)
 with oBullPlayer
 {
+draw_sprite(spr_bullhang,0,320+16+oBullGame.runmax-oBullGame.runmax*(oBullGame.rundist/oBullGame.runmax),y-96-64+7)
+
 	pal_swap_set(my_pal_sprite,current_pal,false);
 
 draw_sprite_ext(sprite_index,image_index,round(x+shake),round(y+z),image_xscale,1,0,c_white,1)
@@ -70,7 +72,7 @@ draw_sprite(spr_bullarrow,character,26+264*(runpos/oBullGame.runmax),224)
 	pal_swap_reset();
 	shader_reset()
 
-draw_sprite(spr_bullhang,0,oBullGame.runmax-96,y)
+
 }
 
 

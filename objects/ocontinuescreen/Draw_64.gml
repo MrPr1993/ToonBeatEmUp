@@ -345,7 +345,7 @@ if actPorg=4 actPorgT=0 ///1
 else
 actPorgT=20 ///3
 
-if _showplayer=0
+if _showplayer
 with oPlayerDisembodied
 {
 d3d_transform_set_identity()

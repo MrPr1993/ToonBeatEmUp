@@ -20,7 +20,8 @@ if anim=0
 	x-=1
 if oBullGame.ready=1
 {
-meter+=1 runpos+=8
+if anim!=10
+{meter+=1 runpos+=8}
 }
 
 
@@ -33,8 +34,8 @@ if AnimFrame>4-0.1 AnimFrame=0
 
 z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
 
-if key_jump {PlaySoundNoStack(snd_jump)
-if ground {ground=0 spdZ=-8}
+if key_jump {
+if ground {ground=0 spdZ=-8 PlaySoundNoStack(snd_jump)}
 }
 
 if key_attack
@@ -46,7 +47,7 @@ if key_attack
 
 
 
-if x<64 {AnimFrame=0 anim=10 win=0 z=0 ground=1 PlaySound(snd_hit)}
+if x<64 {AnimFrame=0 PlaySound(snd_hit3) oControl.quakeFXTime=5 anim=10 win=0 z=0 ground=1 }
 
 }
 
@@ -61,6 +62,11 @@ sprite_index=ThrownSpr
 AnimFrame+=0.1 shaketime=2
 if AnimFrame>3 {AnimFrame=0 anim=0}
 x-=1
+
+if anim!=10
+{
+meter+=1 runpos+=8}
+
 if x<64 {AnimFrame=0 anim=10 win=0 z=0 ground=1}
 }
 
