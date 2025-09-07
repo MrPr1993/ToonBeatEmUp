@@ -3,7 +3,7 @@
 
 oControl.minigameroom=1
 
- with oControl minigameIDwin=6;
+ with oControl minigameID=6;
 
 if (p1Over=1 and p2Over=1 and p3Over=1 and p4Over=1)
 if stageClear=0

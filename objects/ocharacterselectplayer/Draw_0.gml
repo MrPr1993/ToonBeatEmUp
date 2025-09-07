@@ -29,7 +29,7 @@ if !(input_source_using(INPUT_GAMEPAD, controlNO-1))
 global.ConsoleType="PC";
 draw_command(14)
 draw_set_halign(fa_center)
-draw_text(x+40,y+72,"P"+string(controlNO)+"\nPRESS\n\n\nTO CONNECT!")
+draw_text(x+40,y+72,"P"+string(controlNO)+"\nPRESS\n\n\nTO\nCONNECT!")
 global.ConsoleType=commandsave;
 }
 }

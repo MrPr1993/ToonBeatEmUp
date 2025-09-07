@@ -45,6 +45,7 @@ minigameID=oControl.minigameID;
 minigameIDwin=oControl.minigameIDwin;
 }
 
+if global.MinigameWin[minigameID]=0
 global.MinigameWin[minigameID]=minigameIDwin;
 
 finalStage=0
@@ -290,6 +291,8 @@ time=(oControl.stagetime/oControl.stagetimemax)*100
 stageNext=oControl.stageNext
 CutsceneStage=oControl.CutsceneStage
 finalStage=oControl.finalStage
+
+
 
 //////////////World Tour Mode
 if global.AllStageMode

@@ -61,7 +61,7 @@ draw_sprite(spr_bullbar,0,26,224)
 if instance_exists(oBullPlayer)
 with oBullPlayer
 {
-draw_sprite(spr_bullhang,0,320+16+oBullGame.runmax-oBullGame.runmax*(oBullGame.rundist/oBullGame.runmax),y-96-64+7)
+draw_sprite(spr_bullhang,0,320+16+oBullGame.runmax-oBullGame.runmax*(oBullGame.rundist/oBullGame.runmax),y-96-64-7)
 
 	pal_swap_set(my_pal_sprite,current_pal,false);
 

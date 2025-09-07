@@ -83,7 +83,7 @@ and foodhp<oEatingContestGame.p2.foodhp win=1
 
 var haslose=0;
 
-if win with oControl minigameIDwin=1;
+if win {with oControl minigameIDwin=1; altresult2Text="PERFECT" altresult2=10000}
 
 if win=0 haslose=1;
 

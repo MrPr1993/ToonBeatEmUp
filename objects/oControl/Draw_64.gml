@@ -1380,7 +1380,14 @@ if global.HiScoreSee=1
 {
 if key_up if hiScoreY>-10 hiScoreY-=0.1
 if -key_down if hiScoreY<10 hiScoreY+=0.1
-draw_text(8,8+16+16,"▲▼"+string(languagetext[24]))
+
+var _language="MOVE";
+switch(global.Language)
+{
+case 1:  _language="MOVER"; break;
+}
+
+draw_text(8,8+16+16,"▲▼"+string(_language))
 draw_command(7) global.StageGoing=rm_menu
 }
 

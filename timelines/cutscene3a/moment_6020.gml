@@ -73,7 +73,7 @@ with oControl {cutscenename="VIVA" cutsceneline="WAIT we're not-"}
 }
 
 if scenetime=1060
-{
+{PlaySound(snd_magic2)
 with actor1 {sprite_index=spr_viva_point image_speed=0 image_index=2}
 with actor2 {sprite_index=spr_hina_point image_speed=0 image_index=2}
 with actor3 {sprite_index=spr_bahati_point image_speed=0 image_index=2}
@@ -269,7 +269,7 @@ newscript=function() {image_index+=0.25 if image_index>=5 image_index=3}
 }
 
 if scenetime=1300
-{
+{PlaySound(snd_magic2)
 layer_set_visible("BeachBG1",1)	
 layer_set_visible("BeachBG2",1)
 

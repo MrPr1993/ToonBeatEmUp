@@ -312,6 +312,8 @@ draw_set_font(global.scorefont)
 
 if _showplayer
 {
+if minigameID=0
+{
 draw_set_halign(fa_left)
 draw_text(160,220,""+string_hash_to_newline(string(continueStageScore)))
 
@@ -332,6 +334,7 @@ draw_text_transformed(160,90,"CHEAT PENALTY: -"+string(cheatpenalty),0.75,1,0)
 draw_set_color(c_white)
 draw_set_halign(fa_right)
 draw_text_transformed(160,220,"STAGE SCORE:",0.75,1,0)
+}
 }
 
 actPorg=(actP1+actP2+actP3+actP4)

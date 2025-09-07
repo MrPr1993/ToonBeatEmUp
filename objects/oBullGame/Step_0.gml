@@ -54,7 +54,7 @@ with oBullPlayer {if x=clamp(x,oBullGame.obstacleX-8,oBullGame.obstacleX+8)
 	if ground {AnimFrame=0 anim=1}	
 	}
 
-if rundist>runmax {with oBullPlayer
+if rundist>runmax {with oBullPlayer if anim!=10
 {win=1
 	} gameplaying=0 stageClear=1
 

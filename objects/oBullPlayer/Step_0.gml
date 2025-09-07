@@ -97,8 +97,11 @@ if AnimFrame=0 {ground=0 spdZ=-8 AnimFrame=1}
 if ground=0 sprite_index=jumpSpr
 if spdZ>=0 {sprite_index=hangSpr spdZ=0}
 
+
+
 z+=spdZ if ground=0 {spdZ+=0.45 if z>0 {ground=1 spdZ=0 z=0}} else {z=0}
 
+z=clamp(z,-80,0)
 	
 }
 	

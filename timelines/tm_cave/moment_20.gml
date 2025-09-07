@@ -1,5 +1,6 @@
 if !instance_exists(en1) and noextraenemies
 and !instance_exists(en2)
+and !instance_exists(enM)
 {
 with oControl {//camMove=0 camMax=room_width
  goActive=1; ambushtime=0; alarm[1]=90
