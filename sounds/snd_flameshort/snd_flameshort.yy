@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":1.1580952,
   "name":"snd_flameshort",
   "parent":{
     "name":"General",

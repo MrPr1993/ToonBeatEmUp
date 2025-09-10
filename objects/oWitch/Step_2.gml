@@ -22,8 +22,15 @@ if distance_to_point(targetEnemy.x,targetEnemy.y)<50
 anim=choose(21,13)
 else
 {
+	
+if distance_to_point(targetEnemy.x,targetEnemy.y)<120
+anim=1202
+else
+{
 if distance_to_point(targetEnemy.x,targetEnemy.y)<100
 anim=choose(12,11,1201) else {anim=choose(1200,1201,11,12)
+}
+
 	
 	if anim=1200 if x!=clamp(x,oControl.camX+40,oControl.camX+320-40) anim=1201
 	}
@@ -44,7 +51,7 @@ if anim=1200
 frame_set(0,0,0.25)
 frame_set(1,1,0.25)
 frame_set(2,2,0.1)
-frame_set(3,3+specialtimes[0],0.01) if AnimFrame=4
+frame_set(3,3+specialtimes[0],0.025) if AnimFrame=4
 {
 	
 with oPlayer
@@ -222,6 +229,28 @@ frame_set(1,1,0.05)
 frame_set(2,0,0.1)
 
 if AnimFrame>2.75 {canmove=1 atk=0}
+}
+
+////Sickle Attack
+if anim=1202
+{
+MoveType=1 damage=0.25 selfatk.isCut=1 selfatk.HitSound=snd_cut
+sprite_index=spr_witch_sickle
+image_index=AnimFrame
+
+atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=3.5*image_xscale selfatk.image_yscale=1
+
+frame_set(0,0,0.1)
+frame_set(1,1,0.25)
+frame_set(2,2,0.25) if AnimFrame=3 {PlaySound(snd_swing5) PlaySound(choose(snd_witch8,snd_witch5))}
+frame_set(3,3,0.5)
+if AnimFrame=clamp(AnimFrame,3,3.99){atk=1 sentflying=6*image_xscale
+} else { atk=0 sentflying=0}
+frame_set(4,4,0.05)
+frame_set(5,2,0.25)
+frame_set(6,0,0.25)
+
+if AnimFrame>6.5 {atk=0 canmove=1}
 }
 
 ///Kick Away

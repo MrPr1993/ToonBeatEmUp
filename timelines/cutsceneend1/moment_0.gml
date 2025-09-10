@@ -160,6 +160,13 @@ cutsceneline="OH, SO THE CAVALRY'S FINALLY HERE. WHERE HAVE ALL OF YOU BEEN?"
 }
 }
 
+//////////////////////////
+//////////ENDING 2 - JAIL
+
+
+
+
+///////////////////////////////////
 if scenetime=2400
 {vspeed=0 y=0
 with oControl
@@ -216,7 +223,15 @@ cutsceneline="NEXT TIME WE'LL HAVE TO KEEP THEM UNDER TIGHTER WRAPS."
 }
 }
 
+////////////////////////////////////////////////
+/////////////////ENDING 3 - ANGER
+////////////
+////////////
 
+
+////////////
+////////////
+//////////////ENDING 1
 if scenetime=4550
 {vspeed=0 y=0 sprite_index=spr_nowthatsover image_index=1
 with oControl

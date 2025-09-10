@@ -34,7 +34,7 @@ if anim=11 ///Slash Attack
 {if AnimFrame=0 {PlaySound(choose(snd_seaweed7,snd_seaweed8))}
 //if AnimFrame=0  PlaySound(snd_wolfita7)
 atkcol_set(37,0,39,2.15,1,46)
-canbeGrabbed=0 isCut=1
+canbeGrabbed=0// isCut=1
 MoveType=1 damage=0.15
 sprite_index=spr_seaweed_attack5
 image_index=AnimFrame
@@ -44,15 +44,16 @@ image_index=AnimFrame
 frame_set(0,0,0.1)
 frame_set(1,1,0.25)
 
-frame_set(2,2,0.25)
-if AnimFrame=clamp(AnimFrame,2,2.99){atk=1 sentflying=4*image_xscale
+frame_set(2,2,0.5)
+if AnimFrame=clamp(AnimFrame,2,2.99){atk=1 sentflying=6*image_xscale
 } else {sentflying=0 atk=0}
 
 frame_set(3,3,0.05)
-frame_set(4,1,0.5)
+frame_set(4,4,0.25)
+frame_set(5,5,0.25)
 if AnimFrame>3.5 canbeGrabbed=1
 
-if AnimFrame>4.5 {atk=0 canmove=1}
+if AnimFrame>5.5 {atk=0 canmove=1}
 }
 
 ////Fireballs
@@ -71,6 +72,7 @@ frame_set(9,0,0.1)
 if AnimFrame>9.5 canmove=1
 }
 
+////Headbutt
 if anim=12 
 {sprite_index=spr_seaweed_attack2 damage=0.2
 	if AnimFrame=0 {specialtimes[0]=0 PlaySound(snd_seaweed7)}
@@ -90,10 +92,17 @@ if AnimFrame=0 {specialtimes[0]=0
 frame_set(0,0,0.1)
 frame_set(1,1,0.1) if AnimFrame=clamp(AnimFrame,2,4) 
 if specialtimes[0]=0
+if specialcheck4=0
 {//projectile_create(x+48*image_xscale,y+1,z-32,32,spr_seaweed_curse,4*image_xscale,mask_small,spr_hitflash,0.1,2,591000,0,0)
 specialtimes[0]=10
 bone=instance_create_depth(x+48*image_xscale,y+1,-1,oBossHazard) bone.hitSource=self.id bone.height=30
-bone.z=z-32 bone.playerNO=playerNO bone.hspeed=4*image_xscale with bone
+bone.z=z-32 bone.playerNO=playerNO 
+
+//bone.hspeed=4*image_xscale
+
+bone.speed=4 bone.direction=point_direction(x,y,targetX,targetY)
+
+with bone
 {
 selfscript = function()
 {MoveType=591002 damage=0.1 depth=-y
@@ -121,28 +130,9 @@ frame_set(1,1,0.1)
 frame_set(2,2,0.1) if AnimFrame=3
 {
 bone=instance_create_depth(targetEnemy.x,targetEnemy.y,-1,oBossHazard)
-bone.hitSource=self.id 
+bone.hitSource=self.id bone.playerNO=playerNO
 
-with bone{
-	sprite_index=spr_seaweed_column
-	
-selfscript = function()
-{MoveType=1 damage=0.1 depth=-y 
-depth=6666
-frame_set(0,0,0.2)
-frame_set(1,1,0.2)
-frame_set(2,2,0.1)
-if AnimFrame>2.7 {oControl.quakeFXTime=10 PlaySound(snd_explosion)
-	exx=instance_create_depth(x,y,-1,oExplosion)
-	with exx {harmEnemy=0}
-	
-	instance_destroy()
-	
-	
-}
-}
-}
-
+with bone sprite_index=spr_seaweed_column
 }
 frame_set(3,3,0.5) 
 frame_set(4,4,0.1)

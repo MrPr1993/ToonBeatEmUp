@@ -18,10 +18,11 @@ AnimFrame=0 canmove=0 specialcheck0=0
 if distance_to_point(targetEnemy.x,targetEnemy.y)>80
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)>150
-	anim=choose(13,13,13,13,13,12) else anim=12
+	anim=choose(13,130,13,130,13,12) else anim=12
 }
 	else
 	anim=11
+
 }
 
 ///Kick
@@ -112,6 +113,51 @@ frame_set(8,0,0.1)
 if AnimFrame>8 canmove=1
 
 }	
+
+///Bullet Fire Jump
+if anim=130
+{var ismoving=0;
+	
+var shootf2=2;
+var shootf3=3;
+var shootf4=3;
+var shootf5=2;
+	
+if AnimFrame=0  {PlaySound(choose(snd_twoheads3,snd_twoheads10,snd_twoheads8))}
+	if AnimFrame=0 {specialcheck4=choose(1,-1) specialtimes[3]=0
+		
+		specialcheck5=6}
+		
+sprite_index=spr_twoheads_shootjump
+frame_set(0,0,0.1)
+frame_set(1,1,0.1) if AnimFrame=2 and ground {ground=0 sentflying=4*image_xscale zSpeed=-12}
+
+frame_set(2,shootf2,0.25)
+
+if AnimFrame=3
+{PlaySound(snd_gun) 
+bul1=instance_create_depth(x+5*image_xscale,y+1,-1,oProjectile) bul1.sprite_index=spr_bullet2 bul1.z=z-58 bul1.hspeed=(8)*image_xscale bul1.spdZ=4 bul1.image_xscale=image_xscale bul1.damage=0.1
+bul1=instance_create_depth(x+(20)*image_xscale,y+1,-1,oProjectile) bul1.sprite_index=spr_bullet2 bul1.z=z-43 bul1.hspeed=(8)*image_xscale bul1.spdZ=4 bul1.image_xscale=image_xscale bul1.damage=0.1
+flashFX(x+10*image_xscale,y+1,z-62,spr_gunflash,0,1,0,1,1,c_white,1)
+flashFX(x+10*image_xscale,y+1,z-62,spr_gunflash,0,1,0,1,1,c_white,1)
+}
+
+frame_set(3,shootf3,0.5)
+frame_set(4,shootf4,0.5)
+frame_set(5,shootf5,0.5) if AnimFrame>=6 and AnimFrame<6.5 {AnimFrame=2}
+
+if AnimFrame=clamp(AnimFrame,2,6) sentflying=4*image_xscale else sentflying=0
+
+if z>=0 {ground=1 z=0}
+
+if AnimFrame>=3 and ground and AnimFrame<6.5 {sentflying=0 AnimFrame=7}
+
+frame_set(7,1,0.1)
+frame_set(8,0,0.1)
+if AnimFrame>8 canmove=1
+
+}	
+
 
 ///Lasso
 if anim=14

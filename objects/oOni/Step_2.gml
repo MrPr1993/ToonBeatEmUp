@@ -9,6 +9,8 @@ overwriteAttack=1
 overwriteAttack1=1
 overwriteAttack2=1
 
+if firebuffer!=0 firebuffer--;
+
 var sispitch=1.0;
 
 if current_pal!=0 sispitch=1.2;
@@ -51,11 +53,69 @@ weaponanim(weaponspr,weaponIndex,34,-92-2,180*image_xscale,weaponcolor)
 if distance_to_point(targetEnemy.x,targetEnemy.y)>100
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)>150
-	anim=12 else anim=13
+	anim=12 
+	else 
+	{anim=choose(13,130)
+	if anim=130 if firebuffer=0 {firebuffer=200} else anim=13
+	}
 }
 	else
-	anim=11
+	{
+	anim=11	
 	}
+	}
+	
+////Breath Attack
+if anim=130
+{
+if AnimFrame=0 {PlaySoundPitch(choose(snd_oni3,snd_oni4),sispitch)}
+sprite_index=spr_oni_breathefire
+
+frame_set(0,0,0.25)
+frame_set(1,1,0.1)
+frame_set(2,2,0.1)
+frame_set(3,3,0.25)
+
+if AnimFrame=clamp(AnimFrame,3,5) sentflying=4*image_xscale else sentflying=0
+if AnimFrame=4
+{PlaySound(snd_flameshort) oControl.quakeFXTime=5
+bone=instance_create_depth(x,y+1,-1,oBossHazard)
+bone.image_xscale=image_xscale bone.hspeed=4*image_xscale
+bone.mask_index=spr_oni_breathefirem bone.sprite_index=spr_oni_breathefire2 if current_pal!=0 bone.sprite_index=spr_oni_breathefire3
+bone.hitSource=self.id bone.playerNO=playerNO bone.haspal=1 bone.current_pal=current_pal
+bone.MoveType=5 if current_pal!=0 bone.MoveType=6
+with bone
+{
+my_pal_sprite=spr_flamepal
+selfscript = function()
+{damage=0.12
+depth=-y
+image_index+=0.2
+if image_index=clamp(image_index,1,2) atk=1 else atk=0
+if image_index>6.7 {instance_destroy()}
+}
+}
+}
+
+frame_set(4,4,0.25)
+frame_set(5,5,0.05)
+frame_set(6,0,0.25)
+if AnimFrame>=6.7 {canmove=1}
+
+if image_index=clamp(image_index,0,1)
+weaponanim(weaponspr,weaponIndex,32,-94,189,weaponcolor)
+if image_index=clamp(image_index,1,2)
+weaponanim(weaponspr,weaponIndex,27,-96,189,weaponcolor)
+if image_index=clamp(image_index,2,3)
+weaponanim(weaponspr,weaponIndex,25,-96,189,weaponcolor)
+if image_index=clamp(image_index,3,4)
+weaponanim(weaponspr,weaponIndex,35,-92,189,weaponcolor)	
+if image_index=clamp(image_index,4,5)
+weaponanim(weaponspr,weaponIndex,48,-59,90,weaponcolor)
+if image_index=clamp(image_index,5,6)
+weaponanim(weaponspr,weaponIndex,46,-72,90,weaponcolor)
+
+}
 
 ///Swing Attack
 if anim=11

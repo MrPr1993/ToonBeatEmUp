@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+colorshade_setup();
+
 AnimFrame=0
 anim=0
 atk=0
@@ -32,6 +34,8 @@ enemyPortraitIndex=0
 //
 //
 //
+
+
 
 createSource=-1;
 
@@ -85,6 +89,8 @@ sentflying=0;
 shadow=-1;//spr_shadow
 
 specialtimes[9]=0
+
+haspal=0;
 
 selfscript = function()
 {MoveType=1 damage=0.1

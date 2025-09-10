@@ -62,6 +62,8 @@ enemyID=157
 
 CanFade=0;
 
+firebuffer=0;
+
 spritepos_setup(1,24,4,72)
 spritepos_setup(2,0,0,102)
 spritepos_setup(2,24,0,102)
