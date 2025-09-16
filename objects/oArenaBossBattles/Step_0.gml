@@ -4,8 +4,23 @@ event_inherited()
 
 oControl.minigameroom=1
 
-if ArenaOver=0
-if oPlayer.hp<=0 ArenaOver=1
+var _arenaover=0;
+
+if ArenaOver=2
+if oControl.p1.hp<=0 
+and oControl.p2.hp<=0
+and oControl.p3.hp<=0
+and oControl.p4.hp<=0
+_arenaover=1
+
+//if _arenaover=0
+//if instance_exists(oDastardly2)
+//if bossesdefeated>=20 and oDastardly2.hp<=0 {_arenaover=1}
+
+//if ArenaOver=2
+//if _arenaover {ArenaOver=3 alarm[0]=120};
+
+var _arenascore=0;
 
 if ArenaOver=1
 {
@@ -51,12 +66,15 @@ x=0 y=-176
 
 if bossesdefeated=0
 alarm[0]=120 else alarm[0]=240
+
+
 }
 else
 {
 if ownboss!=0
 {
 if !instance_exists(ownboss) {ownboss=-1}
+if instance_exists(oDastardly2) if oDastardly2.dead ownboss=-1;
 }
 }
 

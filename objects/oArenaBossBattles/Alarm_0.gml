@@ -1,10 +1,43 @@
 /// @description Insert description here
 // You can write your code in this editor
-if bossesdefeated=20
 {
+var enemyset=oBoss1;
+
+if bossesdefeated=1 enemyset=oFranki
+if bossesdefeated=2 enemyset=oHarpy
+if bossesdefeated=3 enemyset=oTwoHeads
+if bossesdefeated=4 enemyset=oPharaoh
+if bossesdefeated=5 enemyset=oGhostBoss
+if bossesdefeated=6 enemyset=oOniController
+if bossesdefeated=7 enemyset=oDuckBoss
+if bossesdefeated=8 enemyset=oWitch
+if bossesdefeated=9 enemyset=oSeaweed
+if bossesdefeated=10 enemyset=oPrince
+if bossesdefeated=11 enemyset=oMartianBoss
+if bossesdefeated=12 enemyset=oGenie
+if bossesdefeated=13 enemyset=oPlantPrincess
+if bossesdefeated=14 enemyset=oMirrorLady
+if bossesdefeated=15 enemyset=oDragonMaiden
+if bossesdefeated=16 enemyset=oScienceScreen
+if bossesdefeated=17 enemyset=oScientist
+if bossesdefeated=18 enemyset=oDastardly
+if bossesdefeated=19 enemyset=oDastardly2
+
+if bossesdefeated>=20 
+{
+with oControl
+{
+var totalscore=(p1.PlayerScore+p2.PlayerScore+p3.PlayerScore+p4.PlayerScore)
+
+if oPlayer.hp!=0 totalscore*=(global.Difficulty+1)
+
+if totalscore>=global.HiScoreBossBattlesScore global.HiScoreBossBattlesScore=totalscore;
+}
+if bossesdefeated-1>=global.HiScoreBossBattles
+global.HiScoreBossBattles=bossesdefeated-1;
 
 if oControl.allPlayersMove
-{ArenaOver=1
+{
 oPlayer.areaEntry=1
 
 with oPlayer
@@ -13,31 +46,8 @@ with oPlayer
 with oControl {event_user(9) stageBoss="BOSS BATTLE"}
 }
 else alarm[0]=2
+exit;
 }
-else
-{
-var enemyset=oBoss1;
-
-if bossesdefeated=1 enemyset=oHarpy
-if bossesdefeated=2 enemyset=oFranki
-if bossesdefeated=3 enemyset=oTwoHeads
-if bossesdefeated=4 enemyset=oGhostBoss
-if bossesdefeated=5 enemyset=oPharaoh
-if bossesdefeated=6 enemyset=oOniController
-if bossesdefeated=7 enemyset=oDuckBoss
-if bossesdefeated=8 enemyset=oSeaweed
-if bossesdefeated=9 enemyset=oWitch
-if bossesdefeated=10 enemyset=oGenie
-if bossesdefeated=11 enemyset=oMartianBoss
-if bossesdefeated=12 enemyset=oPrince
-if bossesdefeated=13 enemyset=oDragonMaiden
-if bossesdefeated=14 enemyset=oMirrorLady
-if bossesdefeated=15 enemyset=oPlantPrincess
-if bossesdefeated=16 enemyset=oScienceScreen
-if bossesdefeated=17 enemyset=oScientist
-if bossesdefeated=18 enemyset=oDastardly
-if bossesdefeated=19 enemyset=oDastardly2
-
 ownboss=instance_create_depth(320+96,192,-1,enemyset)
 with ownboss
 {

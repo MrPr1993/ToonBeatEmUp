@@ -169,15 +169,16 @@ picturetext[20]="SED's Concepts 3" sprite_replace(spr_galleryimg20,"Gallery/Conc
 
 }
 if galno=15
-{pictureMax=7
+{pictureMax=8
 //sprite_replace(spr_galleryimg1,"Gallery/VivaBeach.png",0,0,1,0,0)
 picturetext[1]="Key Art 1" sprite_replace(spr_galleryimg1,"Gallery/DDivasArtwork2b.png",0,0,1,0,0)
 picturetext[2]="Key Art 2" sprite_replace(spr_galleryimg2,"Gallery/DDivasArtworkb.png",0,0,1,0,0)
 picturetext[3]="Key Art 3" sprite_replace(spr_galleryimg3,"Gallery/DivaArtwork3b.png",0,0,1,0,0)
-picturetext[4]="Diva Elements" sprite_replace(spr_galleryimg4,"Gallery/DivaElements.png",0,0,1,0,0)
-picturetext[5]="Divas' Summer" sprite_replace(spr_galleryimg5,"Gallery/DivasBeach.png",0,0,1,0,0)
-picturetext[6]="Viva and Hina" sprite_replace(spr_galleryimg6,"Gallery/VivaKeyArt1.png",0,0,1,0,0)
-picturetext[7]="Bahati and Sofia" sprite_replace(spr_galleryimg7,"Gallery/VivaKeyArt2.png",0,0,1,0,0)
+picturetext[4]="JAMOARTS' Key Art" sprite_replace(spr_galleryimg4,"Gallery/DDJamoArts.png",0,0,1,0,0)
+picturetext[5]="Diva Elements" sprite_replace(spr_galleryimg5,"Gallery/DivaElements.png",0,0,1,0,0)
+picturetext[6]="Divas' Summer" sprite_replace(spr_galleryimg6,"Gallery/DivasBeach.png",0,0,1,0,0)
+picturetext[7]="Viva and Hina" sprite_replace(spr_galleryimg7,"Gallery/VivaKeyArt1.png",0,0,1,0,0)
+picturetext[8]="Bahati and Sofia" sprite_replace(spr_galleryimg8,"Gallery/VivaKeyArt2.png",0,0,1,0,0)
 //picturetext[8]="???" sprite_replace(spr_galleryimg8,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 //picturetext[9]="???" sprite_replace(spr_galleryimg9,"Gallery/HinaArtwork1.png",0,0,1,0,0)
 //picturetext[10]="???" sprite_replace(spr_galleryimg10,"Gallery/HinaArtwork1.png",0,0,1,0,0)

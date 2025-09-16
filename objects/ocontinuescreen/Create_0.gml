@@ -583,6 +583,8 @@ GoldShow=global.GoldShow
 
 global.P5Score=global.P1Score+PlayerScore1+global.P2Score+PlayerScore2+global.P3Score+PlayerScore3+global.P4Score+PlayerScore4
 
+feats_check(45);
+
 if global.StageClear=1
 {
 stagedata_save()
@@ -593,8 +595,6 @@ feats_stageunlock()
 feats_check(-1)
 feats_save()
 }
-
-feats_check(45);
 
 global.StageClear=0;
 

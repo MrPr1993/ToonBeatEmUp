@@ -12,6 +12,7 @@ counterBuffer=0;
 
 playerNO=0
 
+
 specialtaunt=-1
 specialanim=-1
 specialtimes[9]=0

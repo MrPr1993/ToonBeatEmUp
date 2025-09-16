@@ -341,7 +341,7 @@ if object_index=oContinueScreen if room=rm_stagefinal and global.AllStageMode if
 break;
 //Diva Survivor
 case 45: 
-if global.HiScoreSurvival>=15000 setfeats=1
+if global.HiScoreSurvival>=10000 setfeats=1
 break;
 
 case 46: ///Boss fight

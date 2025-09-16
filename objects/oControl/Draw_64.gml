@@ -651,7 +651,7 @@ draw_set_color(c_black);
 surface_set_target(surf_circle)
 draw_rectangle(0,0,480,270,false)
 gpu_set_blendmode(bm_subtract)
-var defx=160; var defy=120; if isCutscene defy=192/2
+var defx=160; var defy=120; if isCutscene defy=192/2 if room=rm_newspaper defy=120;
 var irisout=stageIntro*30
 if irisout<=29
 draw_circle(defx,defy,200-((irisout/30)*200),false)

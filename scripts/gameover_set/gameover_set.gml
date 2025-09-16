@@ -67,6 +67,9 @@ global.P3Score=0
 global.P4Score=0
 
 musicplayonce(msc_gameover)
+
+saveall();
+
 isGameOver=1 continueScreen=1
 alarm[3]=320
 }

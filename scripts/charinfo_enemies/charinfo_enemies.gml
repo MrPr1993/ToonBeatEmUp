@@ -36,7 +36,7 @@ switch (dataSelect)
 descleft=string(_ageT)+":37\nNAT.:USA\n"+string(_heightT)+":4'5"+" "+string(_weightT)+":110LBS"
 
 
-descright=+string(_ageT)+":CHICKENS,STEALING\n"+string(_dislikesT)+":DOGS\n"+string(_hobbyT)+":Biking"
+descright=+string(_likesT)+":CHICKENS,STEALING\n"+string(_dislikesT)+":DOGS\n"+string(_hobbyT)+":Biking"
 dataabilities="Bruising,Kicking,Biking"
 
 if dataPal=2

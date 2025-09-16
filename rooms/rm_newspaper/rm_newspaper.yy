@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_newspaper",
-  "creationCodeFile":"${project_dir}/rooms/rm_newspaper/RoomCreationCode.gml",
+  "creationCodeFile":"rooms/rm_newspaper/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

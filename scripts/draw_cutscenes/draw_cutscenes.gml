@@ -85,7 +85,7 @@ draw_sprite_ext(bg_cuts2frames,imgscene,160+6+320-MenuMoveX,72+6,1,1,0,c_white,M
 	
 draw_set_halign(fa_center) draw_set_alpha(1) draw_set_color(c_white)
 draw_text(round(224+320-MenuMoveX),64-8,"SELECT A CUTSCENE\nTO PLAY")
-draw_text(round(224+320-MenuMoveX),64+8+84+16,"◄ "+string(MenuText)+" ►\n"+string(global.MovieSel+1)+"/20")
+draw_text(round(224+320-MenuMoveX),64+8+84+16,"◄ "+string(MenuText)+" ►\n"+string(global.MovieSel+1)+"/24")
 fpsY=8
 if MenuSil=0
 {if MenuScaleX=1 MenuScaleX=0.8 else MenuScaleX=1 MenuSil=1}

@@ -99,9 +99,9 @@ case 11: brokenpartX=9 brokenpartz=-130 brokenpartHSPD=0; break;
 
 dust_make(x,y+1,z-25,0,0,-1)
 dustmk.sprite_index=spr_explosion2
-dust_make(screenX-32,screenY+1,screenZ,-1,0,0)
+dust_make(screenX-32,screenY+1,screenZ-48,-1,0,0)
 dustmk.sprite_index=spr_explosion2
-dust_make(screenX+32,screenY+1,screenZ,1,0,0)
+dust_make(screenX+32,screenY+1,screenZ-48,1,0,0)
 dustmk.sprite_index=spr_explosion2
 
 brokenpartV+=1;

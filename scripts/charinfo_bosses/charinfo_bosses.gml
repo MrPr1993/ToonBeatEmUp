@@ -27,7 +27,7 @@ dataabilitiesB=_abilitiesT;
 
 hp=2
 
-descright=+string(_ageT)+":LEATHER,PIGS\n"+string(_dislikesT)+":SILVER\n"+string(_hobbyT)+":STARGAZING"
+descright=+string(_likesT)+":LEATHER,PIGS\n"+string(_dislikesT)+":SILVER\n"+string(_hobbyT)+":STARGAZING"
 dataabilities="SCHEMING,SLAPPING"
 
 switch (dataSelect)
@@ -59,7 +59,7 @@ idlestyle=3
  "She’s big. She’s round. She has a song in her heart. A fight with her won't be over until the fat lady sings.")
   descleft=string(_ageT)+":56\nNAT.:GREECE\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":1200LBS"
  
- descright=+string(_ageT)+":GLITTER,THEATERS\n"+string(_dislikesT)+":NEW MUSIC\n"+string(_hobbyT)+":OPERA"
+ descright=+string(_likesT)+":GLITTER,THEATERS\n"+string(_dislikesT)+":NEW MUSIC\n"+string(_hobbyT)+":OPERA"
 dataabilities="FLYING,SING,CRUSHING,\nAERODYNAMICS"
  
  break;
@@ -70,7 +70,7 @@ idlestyle=1
  "A colossal woman who ferries passengers on her beloved ship. Stowaways will be in for a shock in more ways than one.")
   descleft=string(_ageT)+":35\nNAT.:GERMANY\n"+string(_heightT)+":8'2"+" "+string(_weightT)+":1000LBS"
  
- descright=+string(_ageT)+":TRAVELING,SPINACH\n"+string(_dislikesT)+":SABOTEURS\n"+string(_hobbyT)+":CUSTOMIZING BOATS"
+ descright=+string(_likesT)+":TRAVELING,SPINACH\n"+string(_dislikesT)+":SABOTEURS\n"+string(_hobbyT)+":CUSTOMIZING BOATS"
 dataabilities="BRAWLING,WRESTLING,\nSAILING,LIGHTNING"
  
  break;
@@ -80,7 +80,7 @@ charinfo_set(12,spr_twoheads_stand,1,animsetup_enemy,draw_enemy,spr_enemypal,0,s
  "This cowgirl in charge of the Loco Dos hunts down stowaways. Two heads, and guns, are better than one.")
    descleft=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":7'0"+" "+string(_weightT)+":160LBS"
  
- descright=+string(_ageT)+":MILK,CACTI\n"+string(_dislikesT)+":VARMINTS\n"+string(_hobbyT)+":HORSE RIDING"
+ descright=+string(_likesT)+":MILK,CACTI\n"+string(_dislikesT)+":VARMINTS\n"+string(_hobbyT)+":HORSE RIDING"
 dataabilities="SHOOTING,LASSO TRICKS,\nBREWING,CARD GAMES"
  
  break;
@@ -90,7 +90,7 @@ dataabilities="SHOOTING,LASSO TRICKS,\nBREWING,CARD GAMES"
  "A head collector in life. She became a ghost after taking her own head. She may enjoy beheadings a bit too much...")
     descleft=string(_ageT)+":DEAD\nNAT.:FRANCE\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
  
- descright=+string(_ageT)+":HEADS,AXES\n"+string(_dislikesT)+":CAKES\n"+string(_hobbyT)+":HEADS"
+ descright=+string(_likesT)+":HEADS,AXES\n"+string(_dislikesT)+":CAKES\n"+string(_hobbyT)+":HEADS"
 dataabilities="GHOST,CUTTING,SCARING\nCUTTING SCARING"
  
  break;
@@ -101,7 +101,7 @@ dataabilities="GHOST,CUTTING,SCARING\nCUTTING SCARING"
  "A goddess who enjoys a good party. But those who disrespect her will be met with some good old fashioned divine punishment.")
      descleft=string(_ageT)+":ANCIENT\nNAT.:EGYPT\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":170LBS"
  
- descright=+string(_ageT)+":COWS,MUSIC\n"+string(_dislikesT)+":INFIDELS\n"+string(_hobbyT)+":PARTYING"
+ descright=+string(_likesT)+":COWS,MUSIC\n"+string(_dislikesT)+":INFIDELS\n"+string(_hobbyT)+":PARTYING"
 dataabilities="DIVINE,CURSES,CONNECTING\nORGANIZING,LOVEMAKING"
  
  break;
@@ -113,7 +113,7 @@ dataabilities="DIVINE,CURSES,CONNECTING\nORGANIZING,LOVEMAKING"
  
   descleft=string(_ageT)+":37\nNAT.:JAPAN\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
  
- descright=+string(_ageT)+":SAKE,MONEY\n"+string(_dislikesT)+":CHEATS\n"+string(_hobbyT)+":CALLIGRAPHY"
+ descright=+string(_likesT)+":SAKE,MONEY\n"+string(_dislikesT)+":CHEATS\n"+string(_hobbyT)+":CALLIGRAPHY"
 dataabilities="GAMBLING,PERFORMING,\nRIDDLES,SMASHING,FIRE"
  
    if dataPal=2
@@ -122,7 +122,7 @@ dataabilities="GAMBLING,PERFORMING,\nRIDDLES,SMASHING,FIRE"
  "The younger of the Oni Sisters. With a chilling aura, she freezes her foes and rolls magic dice.")
  descleft=string(_ageT)+":36\nNAT.:JAPAN\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
  
-  descright=+string(_ageT)+":SAKE,MONEY\n"+string(_dislikesT)+":DISRESPECT\n"+string(_hobbyT)+":POETRY"
+  descright=+string(_likesT)+":SAKE,MONEY\n"+string(_dislikesT)+":DISRESPECT\n"+string(_hobbyT)+":POETRY"
 dataabilities="GAMBLING,PERFORMING,\nRIDDLES,SMASHING,ICE"
  
  }
@@ -138,7 +138,7 @@ dataabilities="GAMBLING,PERFORMING,\nRIDDLES,SMASHING,ICE"
  
  descleft=string(_ageT)+":ANCIENT?\nNAT.:CELTIC\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":160LBS"
  
-  descright=+string(_ageT)+":ISOLATION\n"+string(_dislikesT)+":TRESSPASSERS\n"+string(_hobbyT)+":SWIMMING"
+  descright=+string(_likesT)+":ISOLATION\n"+string(_dislikesT)+":TRESSPASSERS\n"+string(_hobbyT)+":SWIMMING"
 dataabilities="MAGIC,BREWING,\nEXPERIMENTING,\nCOOKING,POSSESSING"
  
  break;
@@ -149,7 +149,7 @@ dataabilities="MAGIC,BREWING,\nEXPERIMENTING,\nCOOKING,POSSESSING"
  
   descleft=string(_ageT)+":31\nNAT.:FRANCE\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
  
-  descright=+string(_ageT)+":FUN,AUDIENCE\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PRANKING"
+  descright=+string(_likesT)+":FUN,AUDIENCE\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PRANKING"
 dataabilities="LOONY,QUACKING\nJUGGLING,BAKING"
  
  break;
@@ -164,7 +164,7 @@ watchtarget=point_direction(x,y,x,y+16) weaponBack=1
 weaponspr=spr_octopus_eye weaponIndex=0 weaponX=0 weaponY=0
 weaponspr2=spr_octopus_eye weaponIndex2=1 weaponX2=0 weaponY2=8
 
-  descright=+string(_ageT)+":CIRCE,MOLLUSKS\n"+string(_dislikesT)+":DOLPHINS\n"+string(_hobbyT)+":SANDCASTLES"
+  descright=+string(_likesT)+":CIRCE,MOLLUSKS\n"+string(_dislikesT)+":DOLPHINS\n"+string(_hobbyT)+":SANDCASTLES"
 dataabilities="TENTACLES,DANCING,\nCRAFTING,SAILING"
 
 break;
@@ -175,7 +175,7 @@ break;
  
 descleft=string(_ageT)+":ANCIENT\nNAT.:GREECE\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":360LBS"
  
-   descright=+string(_ageT)+":PETS,TRANSFORMING\n"+string(_dislikesT)+":BAD MEN\n"+string(_hobbyT)+":SUNBATHING"
+   descright=+string(_likesT)+":PETS,TRANSFORMING\n"+string(_dislikesT)+":BAD MEN\n"+string(_hobbyT)+":SUNBATHING"
 dataabilities="MAGIC,ENCHANT,BREWING,\nSUMMONING,CURSING"
  
  break;
@@ -185,7 +185,7 @@ dataabilities="MAGIC,ENCHANT,BREWING,\nSUMMONING,CURSING"
  
  descleft=string(_ageT)+":48\nNAT.:ALIEN\n"+string(_heightT)+":9'0"+" "+string(_weightT)+":190LBS"
  
-   descright=+string(_ageT)+":GOLD,SPECIMENS\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":COLLECTING"
+   descright=+string(_likesT)+":GOLD,SPECIMENS\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":COLLECTING"
 dataabilities="CYBERNETICS,BRAINPOWER,\nFENCING,CANNONING"
  
  break;
@@ -216,7 +216,7 @@ idlestyle=1 hasVariants=1
  
  descleft=string(_ageT)+":38\nNAT.:GREECE\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":180LBS"
  
-   descright=+string(_ageT)+":STRENGTH,WORKOUTS\n"+string(_dislikesT)+":FAKERS\n"+string(_hobbyT)+":SCULPTING"
+   descright=+string(_likesT)+":STRENGTH,WORKOUTS\n"+string(_dislikesT)+":FAKERS\n"+string(_hobbyT)+":SCULPTING"
 dataabilities="WATER,BRAWLING\nMAGIC,ATHLETE"
  
   if dataPal=2 
@@ -239,7 +239,7 @@ dataabilities=""
  
   descleft=string(_ageT)+":ANCIENT\nNAT.:MIDDLE EAST\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
  
-descright=+string(_ageT)+":HER MASTER,LOVE\n"+string(_dislikesT)+":EXPLOITERS\n"+string(_hobbyT)+":WORKOUTS"
+descright=+string(_likesT)+":HER MASTER,LOVE\n"+string(_dislikesT)+":EXPLOITERS\n"+string(_hobbyT)+":WORKOUTS"
 dataabilities="WISHES,MAGIC\nBRAWLING,DANCING"
  
  break;
@@ -256,7 +256,7 @@ charinfo_set(12,spr_mirrorlady_stand,5,animsetup_enemy,draw_enemy,spr_enemypal,0
 
   descleft=string(_ageT)+":ANCIENT\nNAT.:GERMANY\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":0LBS"
 
-  descright=+string(_ageT)+":MIRRORS,HERSELF\n"+string(_dislikesT)+":SHATTERING\n"+string(_hobbyT)+":FIGURE SKATING"
+  descright=+string(_likesT)+":MIRRORS,HERSELF\n"+string(_dislikesT)+":SHATTERING\n"+string(_hobbyT)+":FIGURE SKATING"
 dataabilities="SNEAKING,MIRROR COPY,\nREFLECTING,DECORATING"
 
 }
@@ -298,7 +298,7 @@ idlestyle=1
  
    descleft=string(_ageT)+":ANCIENT\nNAT.:BRITAIN\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":190LBS"
  
-   descright=+string(_ageT)+":PARTIES,ATTENTION\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":GARDENING"
+   descright=+string(_likesT)+":PARTIES,ATTENTION\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":GARDENING"
 dataabilities="PLANT,MUSIC\nSINGING,FLOWERING"
  
  break;
@@ -309,7 +309,7 @@ idlestyle=1
  
     descleft=string(_ageT)+":18\nNAT.:BRITAIN\n"+string(_heightT)+":50'0"+" "+string(_weightT)+":10000LBS"
  
-   descright=+string(_ageT)+":LOVE,LOVING\n"+string(_dislikesT)+":BUGS\n"+string(_hobbyT)+":KNITTING"
+   descright=+string(_likesT)+":LOVE,LOVING\n"+string(_dislikesT)+":BUGS\n"+string(_hobbyT)+":KNITTING"
 dataabilities="FIRE BREATH,\nCLEANING,GARDENING"
  
  break;
@@ -320,7 +320,7 @@ idlestyle=1 hasVariants=1 hp=0.1
  
  descleft=string(_ageT)+":64\nNAT.:GERMANY\n"+string(_heightT)+":3'2"+" "+string(_weightT)+":80LBS"
  
-   descright=+string(_ageT)+":SCIENCE,SQUIDS\n"+string(_dislikesT)+":INCOMPETENCE\n"+string(_hobbyT)+":EXPERIMENTING"
+   descright=+string(_likesT)+":SCIENCE,SQUIDS\n"+string(_dislikesT)+":INCOMPETENCE\n"+string(_hobbyT)+":EXPERIMENTING"
 dataabilities="SCIENCE,ROBOTICS,\nBIOLOGY,MEDICINE"
  
       if dataPal=2
@@ -340,7 +340,7 @@ idlestyle=0
  
    descleft=string(_ageT)+":???\nNAT.:BRITAIN\n"+string(_heightT)+":11'2"+" "+string(_weightT)+":190LBS"
  
-    descright=+string(_ageT)+":???\n"+string(_dislikesT)+":???\n"+string(_hobbyT)+":???"
+    descright=+string(_likesT)+":???\n"+string(_dislikesT)+":???\n"+string(_hobbyT)+":???"
 dataabilities="???"
  
   if dataPal=2
@@ -351,7 +351,7 @@ idlestyle=1
  
    descleft=string(_ageT)+":300\nNAT.:BRITAIN\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":180LBS"
  
-    descright=+string(_ageT)+":TREASURE,BLOOD\n"+string(_dislikesT)+":DISORDER\n"+string(_hobbyT)+":ORGANIZING"
+    descright=+string(_likesT)+":TREASURE,BLOOD\n"+string(_dislikesT)+":DISORDER\n"+string(_hobbyT)+":ORGANIZING"
 dataabilities="VAMPIRE,THIEVERY\nCONTROL,MECHANICS"
  
 }
