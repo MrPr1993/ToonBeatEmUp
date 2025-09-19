@@ -5,6 +5,40 @@ throw_step()
 
 ///Robot Variation will have own attack
 	if anim=12 ///Flamethrower Attack
+	if robotArmR=0
+{
+	if AnimFrame<3
+	{
+	robotArmLAngle=lerp(robotArmLAngle,90,0.1)
+	robotArmRAngle=lerp(robotArmRAngle,90,0.1)
+	}
+	else
+	{
+	robotArmLAngle=lerp(robotArmLAngle,-90,0.5)
+	robotArmRAngle=lerp(robotArmRAngle,-90,0.5)
+	}
+
+	sprite_index=spr_robot_chest2
+
+	frame_set(0,0,0.25)
+	frame_set(1,1,0.25)
+	frame_set(2,2,0.04) if AnimFrame=3
+	{PlaySoundNoStack(snd_explosion2) projectile_create(x+4*image_xscale,y,-42,24,spr_seaweed_flame,4*image_xscale,mask_small,spr_explosion3,0.15,1,5,-4,-4)
+		projectile.isDepth=0 projectile.depth=depth-1
+		}
+	frame_set(3,3,0.25)
+	frame_set(4,4,0.25)
+	frame_set(5,3,0.25)
+	frame_set(6,4,0.25)
+	frame_set(7,3,0.25)
+	frame_set(8,4,0.25)
+	frame_set(9,3,0.25)
+	frame_set(10,4,0.25)
+	frame_set(11,3,0.25)
+	frame_set(12,5,0.05)
+	if AnimFrame>12.75 {hurt=0 atk=0 canmove=1 hit=0}
+	}
+	else
 	{
 	if AnimFrame=0 {specialcheck4=10}	
 	HitForce=-4

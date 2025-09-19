@@ -3,6 +3,8 @@ if cutscenePlaying=0
 {
 instance_create_depth(-999,-999,-1,oTextBox)
 
+//brend=instance_create_depth(0,0,-10000,oCameoChar) with brend {anim=9999 sprite_index=bg_border2}
+
 global.UnlockCutscene[19]=1 feats_check(43);
 
 with oControl

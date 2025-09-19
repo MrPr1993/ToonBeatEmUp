@@ -35,6 +35,7 @@ draw_set_color(c_white)
 
 ///Robot Flames
 if object_index=oRobotBurn
+if robotArmR!=0
 if anim=12 and AnimFrame=clamp(AnimFrame,3,11)
 {if specialcheck5=4 specialcheck5=0 else specialcheck5+=0.25
 if AnimFrame!=clamp(AnimFrame,4,11)
@@ -45,6 +46,7 @@ draw_sprite_ext(spr_hina_firebreath,specialcheck5,x+34*image_xscale,y-42,image_x
 
 ///Robot Ice
 if object_index=oRobotIce
+if robotArmR!=0
 if anim=12 and AnimFrame=clamp(AnimFrame,3,11)
 {if specialcheck5=4.5 specialcheck5=4.5 else specialcheck5+=0.25 if specialcheck3=0 specialcheck3=1 else specialcheck3-=0.5
 if specialcheck3=0

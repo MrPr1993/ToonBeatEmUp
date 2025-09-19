@@ -53,7 +53,7 @@ draw_set_alpha(1)
 }
 else if AnimFrame<=320
 {
-x+=abs(0.01*(AnimFrame-240))
+//x+=abs(0.01*(AnimFrame-240))
 y+=0.25
 if AnimFrame=320
 {

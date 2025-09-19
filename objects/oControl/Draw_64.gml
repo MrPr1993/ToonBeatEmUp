@@ -60,6 +60,8 @@ draw_surface_ext(application_surface, 0+320*mirrorMode, 0,1-2*mirrorMode,1,0,c_w
 if isPaused=0
 {
 
+
+
 if room!=rm_titlescreen and room!=rm_characterselect and room!=rm_hiscore
 and room!=rm_animeditor and room!=rm_newspaper and room!=rm_creditscene and room!=rm_howtoplay and room!=rm_cutscene1
 and room!=rm_map and room!=rm_chardata and room!=rm_feats and room!=rm_shop and room!=rm_opening
@@ -1478,8 +1480,11 @@ if newsText=1
 {fpsY=240-56
 draw_set_alpha(1) draw_set_color(c_black)
 
-draw_rectangle(-32,-32,333,quakeFX,false)
-draw_rectangle(-32,192+quakeFX,333,666,false)
+//draw_rectangle(-32,-32,333,quakeFX,false)
+//draw_rectangle(-32,192+quakeFX,333,666,false)
+
+draw_sprite_ext(bg_border,0,0,-20+quakeFX,10,1,0,c_white,1)
+draw_sprite_ext(bg_border2,0,0,quakeFX,10,1,0,c_white,1)
 
 draw_rectangle(-32,192,333,666,false)
 draw_set_color(c_white)
@@ -1487,8 +1492,13 @@ draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
 draw_text(160,210-16,cutscenename)
 draw_set_halign(fa_left)
+
+
 if instance_exists(oTextBox)
 {
+
+
+
 //draw_text(8,220-16,cutsceneline)
 // Draw the text
 with oTextBox

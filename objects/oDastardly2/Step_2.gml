@@ -31,7 +31,7 @@ overwriteAttack5=1
 if anim=100
 {if AnimFrame=0 {AnimFrame=0.1 specialtimes[1]=-200 specialtimes[0]=-200
 	
-	specialtimes[2]=180 specialtimes[3]=0
+	specialtimes[2]=180 specialtimes[3]=0 specialtimes[4]=0
 	
 	PlaySound(snd_fdas6)
 	}
@@ -43,14 +43,56 @@ spdZ=0
 
 z=specialtimes[0]
 
-if specialtimes[3]=0 if z>-100 {specialtimes[3]=1 PlaySound(snd_fdas7)}
+specialtimes[4]++;
+
+var _thunderflash=0;
+
+if specialtimes[4]=60 or specialtimes[4]=160
+{
+_thunderflash=1;
+}
+
+if specialtimes[3]=0 if z>-100 { specialtimes[3]=1 PlaySound(snd_fdas7)}
 
 if z<0 specialtimes[0]+=0.9 else if AnimFrame=0.1 {AnimFrame=1}
 specialtimes[2]+=0.25
 
 frame_set(1,0,0.05) 
 frame_set(2,0,0.05) 
-frame_set(3,1,0.25) if AnimFrame=4 PlaySound(snd_fdas5)
+frame_set(3,1,0.25) if AnimFrame=4 
+{PlaySound(snd_fdas5)
+
+var _hspeed=0.8; var _xscale=1; 
+var _zspeed=2.04;
+
+var _rep=1;
+repeat(12)
+{
+if _rep>=7 _xscale=-1;
+///1
+if _rep=2 {_hspeed=0.9 _zspeed=2.00}
+if _rep=3 {_hspeed=1.4 _zspeed=1.96}
+if _rep=4 {_hspeed=1.9 _zspeed=1.92}
+if _rep=5 {_hspeed=2.4 _zspeed=1.88}
+if _rep=6 {_hspeed=2.9 _zspeed=1.84}
+///7
+if _rep=8 {_hspeed=0.9 _zspeed=2.00}
+if _rep=9 {_hspeed=1.4 _zspeed=1.96}
+if _rep=10 {_hspeed=1.9 _zspeed=1.92}
+if _rep=11 {_hspeed=2.4 _zspeed=1.88}
+if _rep=12 {_hspeed=2.9 _zspeed=1.84}
+
+hrt=instance_create_depth(x+4*_xscale,y,-1,oFlashFX)
+		hrt.z=z-32 hrt.depth=depth-1 hrt.hspeed=_hspeed*_xscale hrt.image_xscale=_xscale
+		hrt.zSpeed=_zspeed
+		with hrt
+		{alarm[0]=640 sprite_index=spr_dastardly2_bat image_speed=0.25 animEnd=0;
+image_index=0.9995  zSpeedAdd=-0.1 isDepth=0}
+_rep+=1;
+}
+
+_thunderflash=1
+}
 frame_set(4,2,0.25) 
 frame_set(5,3,0.25)
 frame_set(6,4,0.25)
@@ -60,6 +102,16 @@ frame_set(9,6,0.02)
 frame_set(10,6,0.02)
 frame_set(11,6,0.02)
 if AnimFrame>11.5 canmove=1
+
+if _thunderflash
+{
+oControl.quakeFXTime=10 PlaySound(snd_thunder)
+flashend=instance_create_depth(oControl.camX-2,oControl.camY-2,-1,oCameoChar)
+with flashend {
+sprite_index=spr_whitecol image_xscale=99 image_yscale=99	
+isDepth=0 depth=16777203 image_alpha=1 image_blend=c_white newscript=function() {image_alpha-=0.1 if image_alpha<=0 instance_destroy();}}	
+}
+
 }
 
 if anim=10

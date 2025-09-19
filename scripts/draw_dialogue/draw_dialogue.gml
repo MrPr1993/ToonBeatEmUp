@@ -5,6 +5,7 @@ function draw_dialogue(){
 // You can write your code in this editor
 /// @description  Draw the string and the box
 
+
 messagesize=2 goout=0 skip=0
 dialogue=cutsceneline
 
