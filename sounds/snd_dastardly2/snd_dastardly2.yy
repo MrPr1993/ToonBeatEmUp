@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.015292,
+  "duration":2.0153062,
   "name":"snd_dastardly2",
   "parent":{
     "name":"Dastardly",

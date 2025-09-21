@@ -90,9 +90,7 @@ if specialSet8=12
 barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,192,0,1,-1,0,1,0,-8)
 barrel_create_alt(oCroc,__view_get( e__VW.XView, 0)+320+64,224,0,1,-1,0,1,0,-8)
 
-sd=instance_create(oControl.camX+320-40,144,oSwampDanger) sd.type=1
-sd=instance_create(oControl.camX+320-40,144,oSwampDanger) sd.type=2
-sd=instance_create(oControl.camX+320-40,144,oSwampDanger) sd.type=3
+sd=instance_create(oControl.camX+320-40,144,oSwampDanger) sd.type=0
 }
 
 if specialSet8=13

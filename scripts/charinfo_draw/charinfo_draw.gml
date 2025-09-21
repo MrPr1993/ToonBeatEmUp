@@ -130,7 +130,7 @@ if dataRow=3 ///Bosses
 {
 if dataSet=0
 {
-draw_charinfoicon(1,spr_enemyface,1,9,c_white*global.UnlockEnemy[150]) //20
+draw_charinfoicon(1,spr_enemyface,9,24,c_white*global.UnlockEnemy[150]) //20
 draw_charinfoicon(2,spr_enemyface,34,24*2,c_white*global.UnlockEnemy[152])
 draw_charinfoicon(3,spr_enemyface,10,24*3,c_white*global.UnlockEnemy[153])
 draw_charinfoicon(4,spr_enemyface,35,24*4,c_white*global.UnlockEnemy[154])

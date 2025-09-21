@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.713146,
+  "duration":2.713152,
   "name":"snd_fdas27",
   "parent":{
     "name":"Dastardly 2",

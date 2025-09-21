@@ -21,8 +21,10 @@ OneAttack=2
 
 isHeavy=1
 
-hp=4
-maxhp=4
+hp=5
+maxhp=5
+
+movebuffer=0;
 
 height=110
 
