@@ -3,7 +3,7 @@ function item_setup() {
 	enemyPortraitIndex=0
 	ScreenDestroy=0
 	specialscript=-1;
-	
+	armorbreak=0;
 	playerFrom=1
 	
 	height=32

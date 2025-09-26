@@ -64,10 +64,15 @@ if AnimFrame>=8.75 {atk=0 canmove=1}
 ///Nom Plant
 if anim=6500
 {
-atkcol_set(80,0,15,2.85,1,45)
+atkcol_set(80,0,15,2.85,1,45) if AnimFrame=0 {specialtimes[0]=0;}
 	sprite_index=spr_plantprincess_attack1
+	
+var _bite=1;
+specialtimes[0]+=1; if specialtimes[0]>=10 specialtimes[0]=0;
+if specialtimes[0]>=5 _bite=6
+	
 frame_set(0,0,0.25) 
-frame_set(1,1,0.25) if AnimFrame=2 {PlaySound(snd_princess2)}
+frame_set(1,_bite,0.25) if AnimFrame=2 {PlaySound(snd_princess2)}
 frame_set(2,2,0.05) if AnimFrame=clamp(AnimFrame,3,4) {atk=1} else {atk=0}
 frame_set(3,3,0.1)
 frame_set(4,4,0.05)

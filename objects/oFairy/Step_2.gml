@@ -41,11 +41,11 @@ if anim=12
 	sprite_index=spr_fairy_attack2
 frame_set(0,0,0.25) 
 frame_set(1,1,0.1) if AnimFrame=2
-{
+{PlaySoundNoStack(snd_magic2)
 //26, -43
 
 projectile_create(x+26*image_xscale,y+1,z-43,32,spr_fairy_heart,2*image_xscale,mask_small,spr_hitflash,0.2,1,2,0,0)
-if current_pal=3 {projectile.MoveType=6 projectile.HitType=6}
+if current_pal=3 {projectile.sprite_index=spr_fairy_heartice projectile.MoveType=6 projectile.HitType=6}
 }
 frame_set(2,2,0.5)
 frame_set(3,3,0.05)

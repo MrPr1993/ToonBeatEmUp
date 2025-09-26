@@ -146,7 +146,7 @@ frame_set(8,2,0.5)
 frame_set(9,2,0.5)
 frame_set(10,1,0.25) if AnimFrame=11
 {//with bub instance_destroy() bub=-1
-PlaySound(snd_femenemy5) PlaySound(snd_flame)
+PlaySound(snd_femenemy5) PlaySound(snd_magic2)
 card=instance_create_depth(x+32*image_xscale,y+1,depth,oNinjaBunCard) card.hspeed=4*image_xscale
 card.sprite_index=spr_siren_proj3
 if distance_to_point(targetEnemy.x,targetEnemy.y)<120

@@ -415,7 +415,7 @@ selfatk.spriteFX=spr_hitflash
 	weaponanim(weaponspr,weaponIndex,-7,-56,90*image_xscale,weaponcolor)
 	}
 	if sprite_index=spr_hina_attackair2
-	{ weaponBack=0
+	{ weaponBack=0 selfatk.armorbreak=1
 	if image_index<1
 	weaponanim(weaponspr,weaponIndex,-17,-61,-27*image_xscale,weaponcolor)
 	else
@@ -441,7 +441,7 @@ selfatk.spriteFX=spr_hitflash
 	}
 	
 if sprite_index=spr_hina_attackair3
-{AnimFrame=1 atk=1
+{AnimFrame=1 atk=1 selfatk.armorbreak=1
 atkcol_set(27,0,0,1.25,1,37)
 damage=0.02
 hit=1
@@ -1095,7 +1095,7 @@ combo_points()
 
 	///Down Up Attack
 	if anim=80
-	{
+	{selfatk.armorbreak=1
 	weaponBack=-1
 weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	if AnimFrame=0 {PlaySound(snd_hina4)}

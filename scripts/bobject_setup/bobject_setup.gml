@@ -1,6 +1,6 @@
 function bobject_setup() {
 colorshade_setup()	
-
+armorbreak=0;
 breakable=1;
 
 playerFrom=1

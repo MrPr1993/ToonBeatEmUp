@@ -23,7 +23,7 @@
   "height":128,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"02c64098-736d-49d1-9d49-fcffac012d96","blendMode":0,"displayName":"default","isLocked":false,"name":"02c64098-736d-49d1-9d49-fcffac012d96","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7d39efa2-b751-413b-af35-50266127ff69","blendMode":0,"displayName":"default","isLocked":false,"name":"7d39efa2-b751-413b-af35-50266127ff69","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_plantprincess_eat",
   "nineSlice":null,
@@ -67,6 +67,8 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":128.0,
+    "seqWidth":128.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,

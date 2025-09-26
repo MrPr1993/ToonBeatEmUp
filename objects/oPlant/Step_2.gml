@@ -38,10 +38,14 @@ MoveType=1 damage=0.15
 
 
 if anim=12
-{atkcol_set(49,0,15,2.85,1,45)
+{atkcol_set(49,0,15,2.85,1,45) if AnimFrame=0 {specialtimes[0]=0;}
 	sprite_index=spr_plant_attack
 frame_set(0,0,0.25) 
-frame_set(1,1,0.025) if AnimFrame=clamp(AnimFrame,2,3) {atk=1} else {atk=0}
+var _bite=1;
+specialtimes[0]+=1; if specialtimes[0]>=10 specialtimes[0]=0;
+if specialtimes[0]>=5 _bite=5
+
+frame_set(1,_bite,0.025) if AnimFrame=2 PlaySound(snd_swing4) if AnimFrame=clamp(AnimFrame,2,3) {atk=1} else {atk=0}
 frame_set(2,2,0.1)
 frame_set(3,3,0.05)
 frame_set(4,0,0.1)
@@ -61,11 +65,11 @@ frame_set(0,4,0.1)
 frame_set(1,2,0.1) 
 frame_set(2,1,0.25) 
 if AnimFrame=3
-{sprite_index=spr_plant_attack
+{sprite_index=spr_plant_attack PlaySound(snd_swing4)
 	if current_pal=2
 	{
 sm=instance_create_depth(x+32*image_xscale,y+1,0,oPharaohSmoke) sm.hspeed=1*image_xscale
-		sm.z=z-16 sm.dizzyHit=0 sm.MoveType=6 sm.isPharaoh=0
+		sm.z=z-16 sm.dizzyHit=1 sm.MoveType=0 sm.isPharaoh=0
 		sm.sprite_index=spr_bigsmoke sm.mainSmoke=spr_bigsmoke
 	}
 	else

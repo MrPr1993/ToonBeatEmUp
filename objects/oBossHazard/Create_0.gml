@@ -30,6 +30,7 @@ type=0
 name="HIDETEXT"
 enemyPortraitSpr=spr_miscface
 enemyPortraitIndex=0
+armorbreak=0;
 //0 - Normal //1 - Strong Flying //2 - Throw // //
 //
 //

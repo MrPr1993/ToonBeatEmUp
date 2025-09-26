@@ -397,7 +397,7 @@ selfatk.spriteFX=spr_hitflash
 	}
 
 	if anim=15 ///Attack Air - and Forwards Attack Ait
-	{selfatk.NoKnock=0 dizzyAtk=0
+	{selfatk.NoKnock=0 dizzyAtk=0 
 	selfatk.spriteFX=spr_hitflash
 	if AnimFrame=0 
 	{
@@ -418,14 +418,14 @@ selfatk.spriteFX=spr_hitflash
 
 	////Change your attack colission box
 	if sprite_index=spr_viva_attackair
-	{ weaponBack=0 atkcol_set(25,0,-1,1.25,1,86)
+	{ weaponBack=0 atkcol_set(25,0,-1,1.25,1,86) 
 	if image_index<1
 	weaponanim(weaponspr,weaponIndex,2,-41,90*image_xscale,weaponcolor)
 	else
 	weaponanim(weaponspr,weaponIndex,-7,-56,90*image_xscale,weaponcolor)
 	}
 	if sprite_index=spr_viva_attackair2
-	{ weaponBack=0 atkcol_set(20,0,17,2.15,1,26)
+	{ weaponBack=0 atkcol_set(20,0,17,2.15,1,26) selfatk.armorbreak=1
 	if image_index<1
 	weaponanim(weaponspr,weaponIndex,13,-46,90*image_xscale,weaponcolor)
 	else
@@ -450,7 +450,7 @@ selfatk.spriteFX=spr_hitflash
 	 }
  
  if sprite_index=spr_viva_attackair3
-{AnimFrame=1 atk=1
+{AnimFrame=1 atk=1 selfatk.armorbreak=1
 atkcol_set(4,0,11,0.65,1,30)
 weaponanim(weaponspr,weaponIndex,13,-69,90*image_xscale,weaponcolor)
 damage=0.02

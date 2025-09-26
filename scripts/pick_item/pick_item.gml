@@ -36,10 +36,14 @@ oControl.PenemyhpD[playerFrom]=0
 	oControl.PhpLerp[playerFrom]=0
 	oControl.Penemyhplayer[playerFrom]=0
 	oControl.PenemyID[playerFrom]=0
-	with oControl
-	{current_pal=0;
-	my_pal_sprite=spr_enemypal
-	}
+	oControl.PenemyID[playerFrom]=0
+	oControl.Pcurrent_pal[playerFrom]=0
+	oControl.Pmy_pal_sprite[playerFrom]=spr_enemypal
+
+	//with oControl
+	//{current_pal=0;
+	//my_pal_sprite=spr_enemypal
+	//}
 
 	if item.isweapon=1 ///Get Weapon
 	{

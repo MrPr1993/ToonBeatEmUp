@@ -105,6 +105,7 @@ selfatk.flashZ=flashZ
 selfatk.canSuper=canSuper
 selfatk.HitQuake=HitQuake
 
+
 HitQuake=0
 
 if canmove=1

@@ -11,7 +11,7 @@ counterNum=3;
 counterBuffer=0;
 
 playerNO=0
-
+armorbreak=0;
 
 specialtaunt=-1
 specialanim=-1

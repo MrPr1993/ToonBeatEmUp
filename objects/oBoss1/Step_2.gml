@@ -132,22 +132,35 @@ or anim=4
 
 
 if anim=12 ///Swing Attack
-{prevanim=12 if AnimFrame=0 PlaySound(snd_wolfita5)
+{prevanim=12 
+if AnimFrame=0 {PlaySound(snd_wolfita5) PlaySound(snd_steal)
+specialtimes[0]=0;
+
+flashFX(x+24*image_xscale,y+1,z-122,spr_sparkflash,0,0.25,10,1,1,c_white,1)
+
+}
 MoveType=2 damage=0.3 selfatk.isCut=1
+selfatk.HitSound=snd_cut selfatk.HitSpark=spr_blood
 sprite_index=AtkSpr2
 image_index=AnimFrame
 
 atkAddX=64 atkAddY=0 atkAddZ=0 selfatk.image_xscale=4*image_xscale selfatk.image_yscale=2
 selfatk.height=128
 
-frame_set(0,0,0.025)
-if AnimFrame=0.025
-or AnimFrame=0.025+0.050*1
-or AnimFrame=0.025+0.050*5
-or AnimFrame=0.025+0.050*9
-or AnimFrame=0.025+0.050*13
-or AnimFrame=0.025+0.050*17
-{specialFX=1 alarm[3]=2}
+var _bite=0;
+specialtimes[0]+=1; if specialtimes[0]>=10 specialtimes[0]=0;
+if specialtimes[0]>=5 _bite=5
+
+
+
+frame_set(0,_bite,0.025)
+//if AnimFrame=0.025
+//or AnimFrame=0.025+0.050*1
+//or AnimFrame=0.025+0.050*5
+//or AnimFrame=0.025+0.050*9
+//or AnimFrame=0.025+0.050*13
+//or AnimFrame=0.025+0.050*17
+//{specialFX=1 alarm[3]=2}
 
 frame_set(1,1,0.25)
 

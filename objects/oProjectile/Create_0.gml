@@ -1,7 +1,7 @@
 hitSource=-1
 
 colorshade_setup()
-
+armorbreak=0;
 HitSound=snd_hit
 
 z=0

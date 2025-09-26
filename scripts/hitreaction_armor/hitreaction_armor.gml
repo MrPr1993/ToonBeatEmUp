@@ -9,7 +9,7 @@ if act=1
 //	if superarmortime>600 superarmorhp=5
 //	else superarmortime=60
 //	}
-if (superarmor=0) or superarmorhp=0 or (superarmor=1 and hp<=0 and hplayer=0)
+if (superarmor=0) or superarmorhp=0 or (superarmor=1 and hp<=0 and hplayer=0) or other.armorbreak
 {hit_reaction() exit;}
 else
 {recovery=8 superarmorhp-=1 superarmortime=0}

@@ -384,7 +384,7 @@ if AnimFrame=clamp(AnimFrame,2,3.25) sentflying=2*image_xscale else sentflying=0
 	}
 
 	if anim=15 ///Attack Air - and Forwards Attack Ait
-	{selfatk.NoKnock=0 dizzyAtk=0 selfatk.spriteFX=spr_hitflash
+	{selfatk.NoKnock=0 dizzyAtk=0 selfatk.spriteFX=spr_hitflash 
 	if AnimFrame=0 
 	{
 	PlaySound(snd_swing) 
@@ -417,7 +417,7 @@ selfatk.spriteFX=spr_hitflash
 
 
 	if sprite_index=spr_bahati_attackair
-	{ weaponBack=1  MoveType=1 damage=0.08 
+	{ weaponBack=1  MoveType=1 damage=0.08 selfatk.armorbreak=1
 	if image_index<1
 	weaponanim(weaponspr,weaponIndex,25,-35,90*image_xscale,weaponcolor)
 	else
@@ -426,7 +426,7 @@ selfatk.spriteFX=spr_hitflash
 	}
 	
 	if sprite_index=spr_bahati_attackair3
-	{ weaponBack=1  MoveType=1 damage=0.08 
+	{ weaponBack=1  MoveType=1 damage=0.08 selfatk.armorbreak=1
 	if image_index<1
 	weaponanim(weaponspr,weaponIndex,11,-57,123*image_xscale,weaponcolor)
 	else
@@ -436,7 +436,7 @@ selfatk.spriteFX=spr_hitflash
 
 	if sprite_index=spr_bahati_attackair2
 	{ weaponBack=1 MoveType=4 sentflying=lerp(sentflying,0,0.1) zSpeed+=0.1
-
+selfatk.armorbreak=1
 		if !ground and zSpeed>=0.1 {wobbleX=lerp(wobbleX,0.8,0.1) wobbleY=lerp(wobbleY,1.2,0.1)}
 		
 	if image_index<5
@@ -865,7 +865,7 @@ if !place_free(targetID.x+1*image_xscale,y)
 	}
 
 	if anim=36 ///Pummel
-	{prevanim=36 weaponY=999999
+	{prevanim=36 weaponY=999999 
 	isThrow=1
 	throwing=1
 	selfatk.image_xscale=0
@@ -971,8 +971,8 @@ if !place_free(targetID.x+1*image_xscale,y)
 	}
 	}
 
-	if anim=37 ///Throw Forwards / Air Throw / Piledriver
-	{grabLockX=x weaponY=999999
+	if anim=37 ///Throw Forwards / Air Throw / Piledriver / Suplex
+	{grabLockX=x weaponY=999999 selfatk.armorbreak=1
 	if AnimFrame=0
 
 	prevanim=37
@@ -980,7 +980,7 @@ if !place_free(targetID.x+1*image_xscale,y)
 	throwing=1
 	selfatk.image_xscale=2
 	comboBreak=0
-	selfatk.recovery=90
+	selfatk.recovery=90 
 	Throw=1 recovery=10
 	sprite_index=spr_bahati_throwair
 	image_speed=0
@@ -1263,7 +1263,7 @@ targetID.playerFrom=playerNO
 
 	sprite_index=spr_bahati_sideatk image_index=AnimFrame
 
-	atkcol_set(15,0,14,1.75,1,64) MoveType=1 damage=0.18
+	atkcol_set(15,0,14,2.2,1.25,64) MoveType=1 damage=0.18
 
 	if AnimFrame=clamp(AnimFrame,0.8,2.2) {afterimage_create(4,make_colour_rgb(239,222, 0),current_pal,my_pal_sprite,0) sentflying=4*image_xscale atk=1} else {sentflying=lerp(sentflying,0,0.3) atk=0}
 

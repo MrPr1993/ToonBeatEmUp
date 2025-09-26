@@ -191,7 +191,7 @@ global.StageGoing=rm_opening
 
 global.StageSave=0;
 
-global.ConsoleType="XBOX"
+global.ConsoleType="PS";
 
 global.BonusStageNext=rm_stage4
 global.VanBadSceneNext=rm_stage4

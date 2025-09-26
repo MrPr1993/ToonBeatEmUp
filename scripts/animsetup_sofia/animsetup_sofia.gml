@@ -423,7 +423,7 @@ atkcol_set(34,0,26,1.55,1,47)
 	weaponanim(weaponspr,weaponIndex,-9,-35,-25*image_xscale,weaponcolor)
 	}
 	if sprite_index=spr_sofia_attackair2
-	{ weaponBack=0
+	{ weaponBack=0 selfatk.armorbreak=1
 	if image_index<1
 	{weaponBack=1
 	weaponanim(weaponspr,weaponIndex,15,-45,74*image_xscale,weaponcolor)
@@ -453,7 +453,7 @@ atkcol_set(34,0,26,1.55,1,47)
 	}
  
  if sprite_index=spr_sofia_attackair3
-{AnimFrame=1 atk=1
+{AnimFrame=1 atk=1 selfatk.armorbreak=1
 atkcol_set(15,0,0,0.85,1,26)
 damage=0.01
 hit=1

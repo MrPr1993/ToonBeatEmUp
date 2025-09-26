@@ -16,7 +16,7 @@ function enemy_endstep() {
 	selfatk.HitForceZ=HitForceZ
 	selfatk.targetHeight=targetHeight
 	selfatk.HitQuake=HitQuake
-
+    selfatk.armorbreak=0
 
 	aff.x=x aff.y=y aff.z=z
 	aff.dead=dead aff.canmove=canmove

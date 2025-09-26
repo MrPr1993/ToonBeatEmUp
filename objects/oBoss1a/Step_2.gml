@@ -80,7 +80,7 @@ if ground {AnimFrame=0 anim=14}
 	}
 	
 if anim=130 ///Swing Attack
-{prevanim=12 if AnimFrame=0 PlaySound(snd_hwolf3)
+{prevanim=12 if AnimFrame=0 {PlaySound(snd_hwolf3) specialtimes[0]=0;}
 MoveType=2 damage=0.3 
 sprite_index=spr_hwolf_attack3
 image_index=AnimFrame
@@ -88,14 +88,18 @@ image_index=AnimFrame
 atkAddX=32 atkAddY=0 atkAddZ=0 selfatk.image_xscale=2*image_xscale selfatk.image_yscale=1.5
 selfatk.height=128
 
-frame_set(0,0,0.025)
-if AnimFrame=0.025
-or AnimFrame=0.025+0.050*1
-or AnimFrame=0.025+0.050*5
-or AnimFrame=0.025+0.050*9
-or AnimFrame=0.025+0.050*13
-or AnimFrame=0.025+0.050*17
-{specialFX=1 alarm[3]=2}
+var _bite=0;
+specialtimes[0]+=1; if specialtimes[0]>=10 specialtimes[0]=0;
+if specialtimes[0]>=5 _bite=5
+
+frame_set(0,_bite,0.025)
+//if AnimFrame=0.025
+//or AnimFrame=0.025+0.050*1
+//or AnimFrame=0.025+0.050*5
+//or AnimFrame=0.025+0.050*9
+//or AnimFrame=0.025+0.050*13
+//or AnimFrame=0.025+0.050*17
+//{specialFX=1 alarm[3]=2}
 
 frame_set(1,1,0.25)
 
@@ -103,10 +107,10 @@ frame_set(2,2,0.25)
 if AnimFrame=clamp(AnimFrame,2,2.99){if AnimFrame<=2.25 {PlaySoundNoStack(snd_swing) PlaySound(snd_hwolf2)} atk=1 canbeGrabbed=0
 
 if image_xscale=-1 and x>__view_get( e__VW.XView, 0 )+80
-if place_free(x-20,y) x-=20
+if place_free(x-40,y) x-=40
 
 if image_xscale=1 and x<__view_get( e__VW.XView, 0 )+320-80
-if place_free(x+20,y) x+=20
+if place_free(x+40,y) x+=40
 
 } else { atk=0 canbeGrabbed=1}
 

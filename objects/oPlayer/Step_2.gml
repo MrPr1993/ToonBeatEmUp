@@ -66,7 +66,7 @@ selfatk.MoveType=MoveType
 selfatk.dizzyAtk=dizzyAtk
 selfatk.HitForce=HitForce
 selfatk.HitForceZ=HitForceZ
-
+selfatk.armorbreak=0
 
 aff.affID=id
 aff.x=x aff.y=y aff.z=z
