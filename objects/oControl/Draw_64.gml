@@ -778,7 +778,11 @@ if noWhite=0
 draw_rectangle(-4,-4,340,260,false)
 
 draw_set_font(global.scorefont)
-{draw_set_halign(fa_center) draw_set_alpha(1)
+{
+draw_set_halign(fa_right)
+draw_text(318,230,"BUILD TEST MODE")
+
+draw_set_halign(fa_center) draw_set_alpha(1)
 if pressStartTime=0 pressStartTime=2 else pressStartTime-=0.025
 if pressStart=0
 {
