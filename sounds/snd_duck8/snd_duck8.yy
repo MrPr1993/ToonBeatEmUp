@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.928458,
+  "duration":0.92848074,
   "name":"snd_duck8",
   "parent":{
     "name":"Duck Boss",

@@ -70,5 +70,13 @@ layer_background_visible(bgfog1,0)
 
 oPlayer.x-=64
 
+if global.StageRecord[3]=2
+{
+timer_set(0)
+with oPlayer
+{canmove=0; key_right=0; x=50; z=-620 zSpeed=12.5 prevanim=8; ground=0;
+anim=5 AnimFrame=0 sentflying=0; hashitBack=1 dizzyHit=0 key_jump_hold=0;
+}
+}
 
 //{oPlayer.x=4910 oEnemySpawner.MaxX=4910+320 timeline_skip(910)}

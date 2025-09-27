@@ -2,6 +2,7 @@
 spawner_followset("WaveSet1",0,692+224,1)
 
 layer_set_visible("TILE_AUDIENCE",0)
+layer_set_visible("BGAudience",0)
 
 oControl.stageNext=rm_cutscene4a
 
@@ -36,4 +37,13 @@ if instance_number(oPlayer)!=1
 with oPlayer
 {
 y=oControl.wallY+16*controlNO
+}
+
+if global.StageRecord[3]=2
+{
+timer_set(0)
+with oPlayer
+{canmove=0; key_right=0; x=50; z=-620 zSpeed=12.5 prevanim=8; ground=0;
+anim=5 AnimFrame=0 sentflying=0; hashitBack=1 dizzyHit=0 key_jump_hold=0;
+}
 }

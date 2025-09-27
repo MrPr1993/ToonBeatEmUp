@@ -61,6 +61,8 @@ specialBossState=1
 fakeducks=2
 fakeduckbuffer=360
 
+piebuffer=360
+
 current_pal=0;
 my_pal_sprite=spr_zombiepal
 

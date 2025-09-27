@@ -17,6 +17,7 @@ draw_set_alpha(1)
 
 with oPlayer
 {layer_set_visible("TILE_AUDIENCE",1)
+	layer_set_visible("BGAudience",1)
 	
 canControl=1 automove=0 canmove=1
 }

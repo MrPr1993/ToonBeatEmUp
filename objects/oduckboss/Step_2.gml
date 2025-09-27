@@ -7,6 +7,8 @@ if fakeduckbuffer!=0 fakeduckbuffer-=1;
 
 if runCharge!=0 runCharge-=1
 
+if piebuffer!=0 piebuffer--;
+
 if anim=10
 {offScreen=0 AnimFrame=0
 if distance_to_point(targetEnemy.x,targetEnemy.y)<70
@@ -14,7 +16,10 @@ anim=choose(11)
 else
 {
 if distance_to_point(targetEnemy.x,targetEnemy.y)<100
-anim=choose(12,13,14,6501) else anim=choose(13,14,6501)
+anim=choose(12,13,130,14,6501) else anim=choose(13,130,14,6501)
+
+if anim=130 if piebuffer=0
+piebuffer=360 else anim=130
 
 if anim=6501 if fakeduckbuffer=0
 {fakeduckbuffer=360
@@ -23,6 +28,31 @@ anim=6500 {}
 
 if anim=12 or anim=13 if runCharge!=0 {anim=14 runCharge=choose(320,340,360)}
 }
+}
+
+///Pie Attack!
+if anim=130
+{sprite_index=spr_duck_pies var _markpos=0;
+if AnimFrame=0 {PlaySound(snd_duck6) specialtimes[1]=0;
+}
+frame_set(0,0,0.1)
+frame_set(1,1,0.1)
+frame_set(2,2,0.25)
+if AnimFrame=3 _markpos=1
+if _markpos {specialtimes[0]=y+choose(-16,0,16) specialtimes[0]=clamp(specialtimes[0],oControl.wallY+16,room_height-16)}
+frame_set(3,3,0.2) if AnimFrame=clamp(AnimFrame,3,4)
+{y=lerp(y,specialtimes[0],0.5) y=round(y)
+}
+if AnimFrame=4
+{PlaySound(choose(snd_duck10,snd_duck9)) PlaySound(snd_swing4)
+projectile_create(x+34*image_xscale,y,-60,24,spr_pie,6*image_xscale,mask_small,spr_pieflash,0.15,1,5,-4,-4)
+}
+//34,-60
+
+frame_set(4,4,0.25)
+frame_set(5,5,0.1) 
+frame_set(6,0,0.1) if AnimFrame>=6.3 {if specialtimes[1]<=4 {AnimFrame=2 specialtimes[1]+=1;}} if AnimFrame>=6 sprite_index=spr_duck_attack3
+if AnimFrame>=6.5 canmove=1
 }
 
 ///Fake Ducks

@@ -24,7 +24,7 @@ throw_step()
 	frame_set(0,0,0.25)
 	frame_set(1,1,0.25)
 	frame_set(2,2,0.04) if AnimFrame=3
-	{PlaySoundNoStack(snd_explosion2) projectile_create(x+4*image_xscale,y,-48,24,spr_snowball,2*image_xscale,mask_small,spr_snowballflash,0.15,1,5,-4,-4)
+	{PlaySoundNoStack(snd_explosion2) projectile_create(x+4*image_xscale,y,-48,24,spr_snowball,4*image_xscale,mask_small,spr_snowballflash,0.15,1,5,-4,-4)
 		projectile.isDepth=0 projectile.depth=depth-1
 		}
 	frame_set(3,3,0.25)

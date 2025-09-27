@@ -198,6 +198,8 @@ if scenetime=1860
 
 layer_set_visible("BTG1",0)
 layer_set_visible("BTG2",0)
+layer_set_visible("BGAudience",0)
+
 
 with actor1 {z=-32 sprite_index=spr_viva_cannonball image_index=7 x=-160 shadow=-1 image_speed=0.25}
 with actor2 {z=-32 sprite_index=spr_hina_cannonball image_index=7 x=-160 y-=32 shadow=-1 image_speed=0.25}

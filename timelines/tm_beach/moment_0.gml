@@ -34,3 +34,12 @@ spawnX=430-160 ///768
 enemytype0=oSneak MaxSpawnFrame=0 visible=1 name0="MR.SLINK"
 FXtype=4 canDraw=1 FrameVis=1 hasFake=0 sprite_index=spr_doortrap
 }
+
+if global.StageRecord[3]=2
+{
+timer_set(0)
+with oPlayer
+{canmove=0; key_right=0; x=50; z=-620 zSpeed=12.5 prevanim=8; ground=0;
+anim=5 AnimFrame=0 sentflying=0; hashitBack=1 dizzyHit=0 key_jump_hold=0;
+}
+}

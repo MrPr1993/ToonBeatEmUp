@@ -82,9 +82,9 @@ if y<oControl.camY+240-4 and specialcheck4=1 {ismoving=1 if place_free(x,y+2) y+
 sprite_index=spr_twoheads_shoot
 frame_set(0,0,0.1)
 frame_set(1,1,0.1)
-
-if specialcheck5!=6
-if ismoving=1 {specialtimes[3]+=0.25 if specialtimes[3]>=6 specialtimes[3]=0;
+specialtimes[3]+=0.2 if specialtimes[3]>=6 specialtimes[3]=0;
+if specialcheck5!=1
+if ismoving=1 {
 sprite_index=spr_twoheads_shootmove
 shootf2=6+specialtimes[3];
 shootf3=0+specialtimes[3];
