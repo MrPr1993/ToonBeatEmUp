@@ -3812,6 +3812,7 @@
     {"name":"spr_shroom_panic","order":15,"path":"sprites/spr_shroom_panic/spr_shroom_panic.yy",},
     {"name":"spr_shroom_shoot","order":9,"path":"sprites/spr_shroom_shoot/spr_shroom_shoot.yy",},
     {"name":"spr_shroom_taunt","order":16,"path":"sprites/spr_shroom_taunt/spr_shroom_taunt.yy",},
+    {"name":"spr_singbag","order":11,"path":"sprites/spr_singbag/spr_singbag.yy",},
     {"name":"spr_singmic","order":2,"path":"sprites/spr_singmic/spr_singmic.yy",},
     {"name":"spr_singnote","order":10,"path":"sprites/spr_singnote/spr_singnote.yy",},
     {"name":"spr_siren_attack","order":1,"path":"sprites/spr_siren_attack/spr_siren_attack.yy",},

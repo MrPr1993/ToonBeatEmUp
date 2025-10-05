@@ -4228,6 +4228,7 @@
     {"id":{"name":"spr_shroom_shoot","path":"sprites/spr_shroom_shoot/spr_shroom_shoot.yy",},},
     {"id":{"name":"spr_shroom_stand","path":"sprites/spr_shroom_stand/spr_shroom_stand.yy",},},
     {"id":{"name":"spr_shroom_taunt","path":"sprites/spr_shroom_taunt/spr_shroom_taunt.yy",},},
+    {"id":{"name":"spr_singbag","path":"sprites/spr_singbag/spr_singbag.yy",},},
     {"id":{"name":"spr_singmic","path":"sprites/spr_singmic/spr_singmic.yy",},},
     {"id":{"name":"spr_singnote","path":"sprites/spr_singnote/spr_singnote.yy",},},
     {"id":{"name":"spr_siren_attack","path":"sprites/spr_siren_attack/spr_siren_attack.yy",},},

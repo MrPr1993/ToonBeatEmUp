@@ -5,7 +5,9 @@ depth=10
 oControl.minigameroom=1
  with oControl minigameID=4;
  
+ 
 if stageClear=0
+if stoptimer=0
 if songdone=0
 {
 songbeattime-=1 if songbeattime<0 {songbeattime=120-songbeaten songbeating=2 songdir=choose(0,1) PlaySoundNoStack(snd_beat) songbeaten+=2

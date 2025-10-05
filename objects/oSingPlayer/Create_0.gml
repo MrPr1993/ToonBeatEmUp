@@ -44,6 +44,8 @@ voice1=snd_VivaSing1
 voice2=snd_VivaSing2
 voice3=snd_VivaSing3
 
+voice4=snd_viva11 
+
 win=0
 
 breakresult=0
@@ -53,6 +55,8 @@ altresult2=0
 shakefrom=1
 
 superFlashFrame1=0
+
+bagged=0;
 
 playerNO=1
 

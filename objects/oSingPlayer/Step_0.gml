@@ -20,8 +20,8 @@ if key_jump {if oSingGame.songdir=0 {audio_stop_sound(voice1) PlaySound(voice2) 
 
 singhp=clamp(singhp,0,100)
 
-if singhp=100
-{AnimFrame=0 anim=10 extraframe=0
+if singhp>=100
+{AnimFrame=0 anim=10 extraframe=0 oSingGame.stoptimer=1
 	with oSingPlayer {win=0 AnimFrame=0 anim=10}
 	win=1	
 	audio_stop_sound(voice1) audio_stop_sound(voice2)
@@ -78,7 +78,19 @@ if AnimFrame=clamp(AnimFrame,2.5,3) oControl.quakeFXTime=10
 }
 
 if AnimFrame=3
-{if win=0
+{
+	if bagged!=0
+	{AnimFrame=8 oControl.quakeFXTime=10
+		breakresult=0 windx=x
+		
+		shaketime=10 altresult2Text="NO BONUS" altresult2=0
+	PlaySound(snd_hit) PlaySound(voice4) 
+	image_index=8
+	vspeed=8	
+	}
+	else
+	{
+if win=0
 	{breakresult=0 windx=x
 		
 		shaketime=10 altresult2Text="NO BONUS" altresult2=0}
@@ -99,7 +111,10 @@ windowon=0
 			}
 		
 		}
+}		
+		
 }
+
 if win=0
 frame_set(3,8,0.01) else frame_set(3,5,0.01) 
 if AnimFrame>4 

@@ -14,7 +14,7 @@ key_up=0 key_down=0 key_left=0
 key_right=0 doubledash=0 dashing=0
 }
 
-oEnemySpawner.roomHSpd=6
+oEnemySpawner.roomHSpd=6.7
 oEnemySpawner.roomMove=1
 spawner_followset("WaveSet1",0,1280+640+320,1)
 

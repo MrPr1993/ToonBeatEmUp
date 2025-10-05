@@ -23,6 +23,15 @@ if (_new_source != undefined)
 		
 		if (!input_player_connected(_i))
 		{
+		    if _i=0
+			{
+			if input_source_using(__INPUT_ON_PS, 0)
+			global.ConsoleType="PS"
+			if input_source_using(__INPUT_ON_XBOX, 0)
+			global.ConsoleType="XBOX"	
+			if input_source_using(__INPUT_ON_SWITCH, 0)
+			global.ConsoleType="SWITCH"	
+			}
             input_source_set(_new_source, _i, true);
             input_verb_consume(all, _i);
             break;
