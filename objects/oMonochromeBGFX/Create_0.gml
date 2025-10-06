@@ -12,6 +12,22 @@ bgname="BGbg"
 bgdistmin=360;
 bgdistmax=1600;
 
+monoalpha=0;
+disappear=0;
+
+crazymode=0;
+
+flashy=-1;
+
 depth=16777210
 
 layer_get_id(tilename)
+
+
+shader=shd_wave
+uTime = shader_get_uniform(shader, "Time");
+uTexel = shader_get_uniform(shader, "Texel");
+spr_background=sprite_index
+xscale=1
+yscale=1
+

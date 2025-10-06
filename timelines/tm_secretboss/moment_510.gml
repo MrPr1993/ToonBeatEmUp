@@ -1,6 +1,12 @@
 if boss.canmove
 {
 ///To prevent boss getting stuck when off-screen
+//PlaySound(snd_magic3)
+//with oMonochromeBGFX
+//{
+//flashy=1
+//crazymode=1
+//}
 
 with oControl 
 {MusicFade=0 MusicFadeAdd=1

@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"bg_secretboss",
+    "path":"sprites/bg_secretboss/bg_secretboss.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -52,7 +52,7 @@ draw_sprite_ext(spr_extraposter,5,28,24+36+72+72-72*global.MinigameSel,1,1,0,c_g
 draw_sprite_ext(spr_extraposter,6,28,24+36+72+72+72-72*global.MinigameSel,1,1,0,c_gray*global.FishingUnlock,-sell1+0.5+0.5*1)
 draw_sprite_ext(spr_extraposter,7,28,24+36+72+72+72+72-72*global.MinigameSel,1,1,0,c_gray*global.SlotMachineUnlock,-sell1+0.5+0.5*1)
 
-if global.SecretBoss
+if global.SecretBoss=1
 draw_sprite_ext(spr_extraposter,8,28,24+36+72+72+72+72+72-72*global.MinigameSel,1,1,0,c_gray*global.SecretBoss,-sell1+0.5+0.5*1)
 
 
@@ -151,7 +151,8 @@ if global.SlotMachineUnlock=0 MenuText="LOCKED"
 
 ////SECRET BOSS
 if global.MinigameSel=5 {MenuText="...?" //if global.MiniGameUnlock2=0 MenuText="LOCKED"
-global.StageGoing=rm_secret instantroom=1 stagewent=rm_secret
+global.StageGoing=rm_secret global.SkipDifficulty=1 global.Difficulty=2
+global.P1Only=1
 }
 
 }

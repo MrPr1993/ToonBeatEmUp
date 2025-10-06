@@ -7,6 +7,8 @@ oControl.stageNext=rm_menu
 
 oPlayer.x-=64
 
+oPlayer.PlayerLife=0;
+
 oControl.nopleasewait=0;
 
 instance_create_depth(0,0,-1,oMonochromeBGFX)
