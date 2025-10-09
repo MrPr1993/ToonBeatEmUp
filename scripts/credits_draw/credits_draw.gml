@@ -341,31 +341,41 @@ oControl.dancersfade+=0.01
 
 }
 /////
-draw_sprite_ext(spr_shadow,0,40,200,dancer1turn,1,0,1-1*dancersfade,1)
+
+/////BAD ENDING
+if global.Ending=3
+{
+draw_sprite_ext(spr_allblackscreen,0,0,0,1,1,0,c_black,0.75)
+
+draw_sprite_ext(spr_canceledsign,0,160,200,1,1,0,c_white,1)
+draw_sprite_ext(spr_canceledsign,0,160,200,1,1,0,c_black,dancersfade)
+}
+else
+{///DEFAULT
+draw_sprite_ext(spr_shadow,0,40,200,dancer1turn,1,0,1-1*dancersfade,1-dancersfade)
 draw_sprite_ext(dancer1spr,dancer1img,40,200,dancer1turn,1,0,c_white,1) ///Viva
 draw_sprite_ext(dancer1spr,dancer1img,40,200,dancer1turn,1,0,c_black,dancersfade)
 draw_sprite_ext(spr_viva_microphone,0,40,200+4,dancer1turn,1,0,c_white,1) ///Viva
 draw_sprite_ext(spr_viva_microphone,0,40,200+4,dancer1turn,1,0,c_black,dancersfade)
 
-
-draw_sprite_ext(spr_shadow,0,40+80-6,200,dancer1turn,1,0,1-1*dancersfade,1)
+draw_sprite_ext(spr_shadow,0,40+80-6,200,dancer1turn,1,0,1-1*dancersfade,1-dancersfade)
 draw_sprite_ext(dancer2spr,dancer2img,40+80-6,200,dancer2turn,1,0,c_white,1) ///Hina
 draw_sprite_ext(dancer2spr,dancer2img,40+80-6,200,dancer2turn,1,0,c_black,dancersfade)
 draw_sprite_ext(spr_viva_microphone,0,40+80-6,200+4,dancer1turn,1,0,c_white,1) ///Viva
 draw_sprite_ext(spr_viva_microphone,0,40+80-6,200+4,dancer1turn,1,0,c_black,dancersfade)
 
-draw_sprite_ext(spr_shadow,0,40+160,200,dancer1turn,1,0,1-1*dancersfade,1)
+draw_sprite_ext(spr_shadow,0,40+160,200,dancer1turn,1,0,1-1*dancersfade,1-dancersfade)
 draw_sprite_ext(dancer3spr,dancer3img,40+160,200,dancer3turn,1,0,c_white,1) ///Bahati
 draw_sprite_ext(dancer3spr,dancer3img,40+160,200,dancer3turn,1,0,c_black,dancersfade)
 draw_sprite_ext(spr_viva_microphone,0,40+160,200+2,dancer1turn,1,0,c_white,1) ///Viva
 draw_sprite_ext(spr_viva_microphone,0,40+160,200+2,dancer1turn,1,0,c_black,dancersfade)
 
-draw_sprite_ext(spr_shadow,0,40+240-2,200,dancer1turn,1,0,1-1*dancersfade,1)
+draw_sprite_ext(spr_shadow,0,40+240-2,200,dancer1turn,1,0,1-1*dancersfade,1-dancersfade)
 draw_sprite_ext(dancer4spr,dancer4img,40+240-2,200,dancer4turn,1,0,c_white,1) ///Sofia
 draw_sprite_ext(dancer4spr,dancer4img,40+240-2,200,dancer4turn,1,0,c_black,dancersfade)
 draw_sprite_ext(spr_viva_microphone,1,40+240-2,200+4,dancer1turn,1,0,c_white,1) ///Viva
 draw_sprite_ext(spr_viva_microphone,1,40+240-2,200+4,dancer1turn,1,0,c_black,dancersfade)
-
+}
 
 var musictime=creditsTime;
 

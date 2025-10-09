@@ -20,7 +20,7 @@ triggerarcadesave=0;
 entag=0;
 allstagemode=0;
 global.FeatTrigger=0;
-
+global.DemoMode=0;
 /////A
 
 //ini_write_real("EN", enemyID, global.UnlockEnemy[enemyID]);

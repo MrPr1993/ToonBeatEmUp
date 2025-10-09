@@ -16,11 +16,7 @@ CDtextC="USE THE HARPY!"
 
 cutscenename=""
 cutsceneline=""
-
-
 }
-
-
 
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
@@ -149,7 +145,7 @@ actor1.y=9999
 actor2.y=9999 PlaySound(snd_break2)
 sprite_index=spr_incomingcops image_index=0
 with oControl
-{cutscenename="Chief" quakeFXTime=10
+{cutscenename="CHIEF" quakeFXTime=10
 cutsceneline="ALRIGHT, ALRIGHT, EVERYONE, SPREAD OUT!"
 }
 }
@@ -164,7 +160,129 @@ cutsceneline="OH, SO THE CAVALRY'S FINALLY HERE. WHERE HAVE ALL OF YOU BEEN?"
 
 //////////////////////////
 //////////ENDING 2 - JAIL
+if scenetime=2400 and global.Ending=1
+{scenetime=0 specialdraw=-1;
+audio_stop_all()
+vspeed=0 x=0 y=0
+actor1.y=9999
+actor2.y=9999 PlaySound(snd_break2)
+sprite_index=spr_vivacuffs image_index=0
+with oControl
+{cutscenename="" quakeFXTime=10
+cutsceneline=""
+}
+newscript=function()
+{
+scenetime++;
 
+if scenetime=120
+{musicplayonce(msc_countdown)
+with oControl
+{cutscenename="VIVA"
+cutsceneline="W-What?! Why are WE getting cuffed?!"
+}
+}
+
+if scenetime=340
+{
+sprite_index=spr_divasarrest
+with oControl
+{cutscenename="CHIEF"
+cutsceneline="You ladies are under arrest for numerous counts of trespassing and destruction of private AND public property!"
+}
+}
+
+if scenetime=780
+{
+with oControl
+{cutscenename="CHIEF"
+cutsceneline="You have the right to remain silent!!"
+}
+}
+
+if scenetime=clamp(scenetime,440,1299)
+if sprite_index=spr_divasarrest {x-=0.1 x=clamp(x,-150,0)}
+
+if scenetime=1000
+{
+with oControl
+{cutscenename="BAHATI"
+cutsceneline="Oh... We DID do quite a bit of damage..."
+}
+}
+
+if scenetime=1200
+{
+with oControl
+{cutscenename="SOFIA"
+cutsceneline= "You've gotta be kidding..."
+}
+}
+
+if scenetime=1350
+{
+sprite_index=spr_divasinvan x=0 y=0 oControl.quakeFXTime=10 PlaySound(snd_break2)
+with oControl
+{cutscenename=""
+cutsceneline= ""
+}
+}
+
+if scenetime=1400
+{
+with oControl
+{cutscenename="HINA"
+cutsceneline= "Do you think they'll let us perform for the prison?"
+}
+}
+
+if scenetime=1650
+{
+with oControl
+{cutscenename="VIVA"
+cutsceneline= "WAIT! THERE HAS TO BE SOME MISTAKE! THE THIEVES WERE THE ONES WRECKING EVERYTHING! WAIT, YOU MORONS!!!"
+}
+}
+
+if scenetime=2000
+{
+with oControl
+{cutscenename="VIVA"
+cutsceneline= "I WANT A LAWYER! DO YOU HAVE ANY IDEA WHO I AM?! I WANT YOUR SUPERVISOR!"
+}
+}
+
+if scenetime=2200
+{actor1.depth=depth-1 actor2.depth=depth-1
+with actor1 {sprite_index=spr_policedoor image_index=0 x=-160 y=0 shadow=-1 }
+with actor2 {sprite_index=spr_policedoor image_index=1 x=320+160 y=0 shadow=-1 }
+}
+
+if scenetime=clamp(scenetime,2200,9999)
+{
+if actor1.x<-1 actor1.x+=8 else {actor1.x=0 if actor1.specialcheck[9]=0 with actor1 {audio_stop_all() specialcheck[9]=1 PlaySound(snd_hitgroundmetal) oControl.quakeFXTime=10}}
+
+actor2.x=160-actor1.x
+}
+
+if scenetime=2350
+{CutsceneStage=rm_creditscene
+with oControl
+stageEndFX=1
+}
+
+//cutscenename="VIVA" cutsceneline= "W-What?! Why are WE getting cuffed?!"
+//cutscenename="COP" cutsceneline= "You ladies are under arrest for numerous counts of trespassing and destruction of private AND public property! You have the right to remain silent!"
+//cutscenename="BAHATI" cutsceneline= "Oh... We DID do quite a bit of damage..."
+///cutscenename="SOFIA" cutsceneline= "You've gotta be kidding..."
+//Yeet into police truck
+//cutscenename="HINA" cutsceneline= "Do you think they'll let us perform for the prison?"
+//cutscenename="VIVA" cutsceneline= "WAIT! THERE HAS TO BE SOME MISTAKE! THE THIEVES WERE THE ONES WRECKING EVERYTHING! WAIT, YOU MORONS!!!"
+//cutscenename="VIVA" cutsceneline= "I WANT A LAWYER! DO YOU HAVE ANY IDEA WHO I AM?! I WANT YOUR SUPERVISOR!"
+
+
+}
+}
 
 
 
@@ -230,6 +348,17 @@ cutsceneline="NEXT TIME WE'LL HAVE TO KEEP THEM UNDER TIGHTER WRAPS."
 ////////////
 ////////////
 
+//All's Well That Ends Well dialogue until after "OUR TREASURES!!!"
+//cutscenename="BAHATI" cutsceneline= "We can finally rest easy, after all those obstacles..."
+//cutscenename="VIVA" cutsceneline= "Right... All those... Obstacles... Including all the times I got smacked around... Humiliated... WHY WAS IT ALWAYS ME?! WHAT DID I DO TO DESERVE ALL THAT PAIN?!"
+//cutscenename="HINA" cutsceneline= "Uh oh... She's losing it..."
+//cutscenename="VIVA" cutsceneline= "YOU'RE DAMN RIGHT I'M LOSING IT!!! HOWCOME YOU THREE DIDN'T GET HORRIBLY BRUTALIZED AS MUCH AS I DID?!"
+//cutscenename="SOFIA" cutsceneline= "Calm down! It's all over now!"
+//cutscenename="VIVA" cutsceneline= "Right... You're right... Still..."
+//Viva is rapidly approaching your location
+//cutscenename="VIVA" cutsceneline= "I WOULDN'T HAVE GOTTEN ALL THOSE LUMPS IF YOU PICKED A BETTER ROUTE!!! C'MERE!!!"
+//Camera crash
+//cutscenename="VIVA" cutsceneline= "OOF!"
 
 ////////////
 ////////////

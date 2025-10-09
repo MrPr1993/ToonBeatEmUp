@@ -2,6 +2,7 @@
 instance_create_depth(-999,-999,-1,oTextBox)
 
 global.UnlockCutscene[18]=1 feats_check(43);
+global.Ending=3
 
 feats_check(41)
 
