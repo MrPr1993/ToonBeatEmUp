@@ -1019,6 +1019,7 @@ targetID.playerFrom=playerNO
 	targetID.targetHeightHit=5
 	}
 	 if AnimFrame=clamp(AnimFrame,3,3.9) 
+	 if ground
 	{if image_index!=3 {
 
 	hground=instance_create_depth(targetID.x+targetID.headPosX[6]*targetID.image_xscale,y,depth,oFlashFX)
@@ -1267,7 +1268,7 @@ targetID.playerFrom=playerNO
 
 	if AnimFrame=clamp(AnimFrame,0.8,2.2) {afterimage_create(4,make_colour_rgb(239,222, 0),current_pal,my_pal_sprite,0) sentflying=4*image_xscale atk=1} else {sentflying=lerp(sentflying,0,0.3) atk=0}
 
-	frame_set(0,0,0.2) if AnimFrame=1 {zSpeed=-4}
+	frame_set(0,0,0.2) if AnimFrame=1 {ground=0 zSpeed=-4}
 	frame_set(1,1,0.5)
 	frame_set(2,1,0.5)
 	frame_set(3,1,0.5)

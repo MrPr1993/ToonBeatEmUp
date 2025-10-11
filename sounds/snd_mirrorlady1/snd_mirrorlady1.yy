@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":11.907292,
+  "duration":11.907279,
   "name":"snd_mirrorlady1",
   "parent":{
     "name":"Mirror Lady",

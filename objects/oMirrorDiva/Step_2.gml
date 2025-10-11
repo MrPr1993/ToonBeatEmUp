@@ -41,7 +41,7 @@ if mirrorAIThrowTime>10+random(10)
 	//case 2: anim=36  break;
 	
 	}
-	if anim=37 and character=2 {AnimFrame=0 ground=0 z-=2 zSpeed=-8}
+	if anim=37 and character=2 {AnimFrame=0 image_index=0 ground=0 z-=2 zSpeed=-8}
 	
 	
 	}

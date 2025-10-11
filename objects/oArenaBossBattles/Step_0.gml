@@ -86,5 +86,4 @@ y=lerp(y,176,0.1)
 if bossesdefeated=15 and !instance_exists(oMirrorLady)
 {
 y-=8 with oFlashFX if sprite_index=spr_mirrorlady_front {y-=8;}
-
 }
