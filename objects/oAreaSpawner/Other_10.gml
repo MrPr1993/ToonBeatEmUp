@@ -22,10 +22,10 @@ door=instance_create_depth(x,y,depth,oDoorTrap) door.depth=depth door.active=1
 
 if FXtype=5 ////Spawn type for sliding door
 {
-PlaySoundNoStack(SoundSpawn0)
-oControl.quakeFXTime=10
-image_index=0
-image_speed=0 visible=0
+//PlaySoundNoStack(SoundSpawn0)
+//oControl.quakeFXTime=10
+///image_index=0
+image_speed=0
 }
 
 if FXtype=6 ////Spawn tree parts

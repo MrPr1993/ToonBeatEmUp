@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.327857,
+  "duration":0.32285714,
   "name":"snd_vivavoice1",
   "parent":{
     "name":"Players",

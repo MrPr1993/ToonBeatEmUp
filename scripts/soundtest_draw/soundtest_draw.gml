@@ -282,8 +282,10 @@ draw_text(160,64+24-4,"✰")
 //soundname="VIVA 1" playSFX=snd_viva4 voiceActor=""
 voiceActor=""
 
-if -key_left_pressed if soundno=1 soundno=30 else soundno-=1
-if key_right_pressed if soundno=300 soundno=1 else soundno+=1
+var _maxsounds=564
+
+if -key_left_pressed if soundno=1 soundno=_maxsounds else soundno-=1
+if key_right_pressed if soundno=_maxsounds soundno=1 else soundno+=1
 soundtest_sounds()
 
 if key_A {PlaySound(playSFX)}

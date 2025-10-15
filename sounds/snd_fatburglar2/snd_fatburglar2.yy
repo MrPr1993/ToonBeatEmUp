@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.253875,
+  "duration":0.25387755,
   "name":"snd_fatburglar2",
   "parent":{
     "name":"Enemies",

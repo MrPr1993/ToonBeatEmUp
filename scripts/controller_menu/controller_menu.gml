@@ -82,6 +82,7 @@ var _KEY_down_pressed = 0;
 	var _KEY_start=0;
 var _KEY_cancel=0;
 var _KEY_cancelH=0;
+var _KEY_exitroom=0;
 
 var _DpadL=0;
 var _DpadR=0;
@@ -221,7 +222,8 @@ _KEY_cancel=keyboard_check_pressed(vk_escape)
 _KEY_cancelH= keyboard_check(vk_escape)
 
 }
-
+{
+if x=-9999999999999999999{
 for (var i=0;i<gamepad_get_device_count();i++)
 {//var i=0;
 if gamepad_is_connected(i)
@@ -442,7 +444,109 @@ if key_down!=0 key_down=-1;
 if key_down_pressed!=0 key_down_pressed=-1;
 
 }
-			
+}
+key_right =_KEY_right or _KEY_right0 or _KEY_right1 or _KEY_right2 or _KEY_right3;
+key_right_pressed =_KEY_right_pressed or _KEY_right_pressed0 or _KEY_right_pressed1 or _KEY_right_pressed2 or _KEY_right_pressed3
+key_left =_KEY_left or _KEY_left0 or _KEY_left1 or _KEY_left2 or _KEY_left3
+key_left_pressed =_KEY_left_pressed or _KEY_left_pressed0 or _KEY_left_pressed1 or _KEY_left_pressed2 or _KEY_left_pressed3
+key_up =_KEY_up or _KEY_up0 or _KEY_up1 or _KEY_up2 or _KEY_up3
+key_up_pressed =_KEY_up_pressed or _KEY_up_pressed0 or _KEY_up_pressed1 or _KEY_up_pressed2 or _KEY_up_pressed3
+key_down =_KEY_down or _KEY_down0 or _KEY_down1 or _KEY_down2 or _KEY_down3
+key_down_pressed =_KEY_down_pressed or _KEY_down_pressed0 or _KEY_down_pressed1 or _KEY_down_pressed2 or _KEY_down_pressed3
+
+if x=-9999
+{
+	key_X=_KEY_X
+	key_A=_KEY_A
+	key_B=_KEY_B
+	key_Y=_KEY_Y
+	key_LB=_KEY_LB
+	key_LT=_KEY_LT
+	key_RB=_KEY_RB
+	key_RT=_KEY_RT
+
+	key_Xh=_KEY_Xh
+	key_Ah=_KEY_Ah
+	key_Bh=_KEY_Bh
+	key_Yh=_KEY_Yh
+	key_LBh=_KEY_LBh
+	key_LTh=_KEY_LTh
+	key_RBh=_KEY_RBh
+	key_RTh=_KEY_RTh
+}
+
+	key_X= _KEY_X or input_check_pressed("key_x",0) or input_check_pressed("key_x",1) or input_check_pressed("key_x",2) or input_check_pressed("key_x",3)
+	key_Y= _KEY_Y or input_check_pressed("key_y",0) or input_check_pressed("key_y",1) or input_check_pressed("key_y",2) or input_check_pressed("key_y",3)
+	key_A= _KEY_A or input_check_pressed("key_a",0) or input_check_pressed("key_a",1) or input_check_pressed("key_a",2) or input_check_pressed("key_a",3)
+	key_B= _KEY_B or input_check_pressed("key_b",0) or input_check_pressed("key_b",1) or input_check_pressed("key_b",2) or input_check_pressed("key_b",3)
+	key_LB= _KEY_LB or input_check_pressed("key_lt",0) or input_check_pressed("key_lt",1) or input_check_pressed("key_lt",2) or input_check_pressed("key_lt",3)
+	key_LT= _KEY_LT or input_check_pressed("key_lt",0) or input_check_pressed("key_lt",1) or input_check_pressed("key_lt",2) or input_check_pressed("key_lt",3)
+	key_RB= _KEY_RB or input_check_pressed("key_rt",0) or input_check_pressed("key_rt",1) or input_check_pressed("key_rt",2) or input_check_pressed("key_rt",3)
+	key_RT= _KEY_RT or input_check_pressed("key_rt",0) or input_check_pressed("key_rt",1) or input_check_pressed("key_rt",2) or input_check_pressed("key_rt",3)
+	
+	key_Xh= _KEY_Xh or input_check("key_x",0) or input_check("key_x",1) or input_check("key_x",2) or input_check("key_x",3)
+	key_Yh= _KEY_Yh or input_check("key_y",0) or input_check("key_y",1) or input_check("key_y",2) or input_check("key_y",3)
+	key_Ah= _KEY_Ah or input_check("key_a",0) or input_check("key_a",1) or input_check("key_a",2) or input_check("key_a",3)
+	key_Bh= _KEY_Bh or input_check("key_b",0) or input_check("key_b",1) or input_check("key_b",2) or input_check("key_b",3)
+	key_LBh= _KEY_LBh or input_check("key_lt",0) or input_check("key_lt",1) or input_check("key_lt",2) or input_check("key_lt",3)
+	key_LTh= _KEY_LTh or input_check("key_lt",0) or input_check("key_lt",1) or input_check("key_lt",2) or input_check("key_lt",3)
+	key_RBh= _KEY_RBh or input_check("key_rt",0) or input_check("key_rt",1) or input_check("key_rt",2) or input_check("key_rt",3)
+	key_RTh= _KEY_RTh or input_check("key_rt",0) or input_check("key_rt",1) or input_check("key_rt",2) or input_check("key_rt",3)
+	
+	key_accept= _KEY_pause or input_check_pressed("accept",0) or input_check_pressed("accept",1) or input_check_pressed("accept",2) or input_check_pressed("accept",3)
+	key_pause= _KEY_pause or input_check_pressed("pause",0) or input_check_pressed("pause",1) or input_check_pressed("pause",2) or input_check_pressed("pause",3)
+	key_start= _KEY_start or input_check_pressed("pause",0) or input_check_pressed("pause",1) or input_check_pressed("pause",2) or input_check_pressed("pause",3)
+	key_cancel= _KEY_cancel or input_check_pressed("cancel",0) or input_check_pressed("cancel",1) or input_check_pressed("cancel",2) or input_check_pressed("cancel",3)
+		//or gamepad_button_check_pressed(0,gp_face3)
+	//or gamepad_button_check_pressed(1,gp_face3)
+//	or gamepad_button_check_pressed(2,gp_face3)
+	//or gamepad_button_check_pressed(3,gp_face3)
+	//or gamepad_button_check_pressed(4,gp_face3)
+	//or gamepad_button_check_pressed(5,gp_face3)
+	//or gamepad_button_check_pressed(6,gp_face3)
+//	or gamepad_button_check_pressed(7,gp_face3)
+//	or gamepad_button_check_pressed(8,gp_face3)
+//	or gamepad_button_check_pressed(9,gp_face3)
+//	or gamepad_button_check_pressed(10,gp_face3)
+//	or gamepad_button_check_pressed(11,gp_face3)
+	
+	key_cancelH= _KEY_cancelH or input_check("cancel",0) or input_check("cancel",1) or input_check("cancel",2) or input_check("cancel",3)
+	or gamepad_button_check(0,gp_face3)
+	or gamepad_button_check(1,gp_face3)
+	or gamepad_button_check(2,gp_face3)
+	or gamepad_button_check(3,gp_face3)
+	or gamepad_button_check(4,gp_face3)
+	or gamepad_button_check(5,gp_face3)
+	or gamepad_button_check(6,gp_face3)
+	or gamepad_button_check(7,gp_face3)
+	or gamepad_button_check(8,gp_face3)
+	or gamepad_button_check(9,gp_face3)
+	or gamepad_button_check(10,gp_face3)
+	or gamepad_button_check(11,gp_face3)
+	
+	KEY_exitroom=key_cancelH
+		
+	key_attack =_KEY_attack
+	key_interact =_KEY_interact
+	key_charge=_KEY_charge
+	key_release=_KEY_release
+	key_shield =_KEY_shield
+	key_shield_pressed =_KEY_shield_pressed
+	key_super =_KEY_super
+		
+	key_taunt=_KEY_taunt
+	key_punchback=_KEY_punchback
+}
+//key_pause=_KEY_pause or input_check_pressed("accept",0) ///Pause
+//key_start=_KEY_start
+//key_cancel=_KEY_cancel
+//key_cancelH=_KEY_cancelH
+
+if key_left!=0 key_left=-1;
+if key_left_pressed!=0 key_left_pressed=-1;
+
+if key_down!=0 key_down=-1;
+if key_down_pressed!=0 key_down_pressed=-1;		
 	
 }	
 	

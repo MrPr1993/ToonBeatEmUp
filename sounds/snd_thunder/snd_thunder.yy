@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.731646,
+  "duration":0.73163265,
   "name":"snd_thunder",
   "parent":{
     "name":"General",

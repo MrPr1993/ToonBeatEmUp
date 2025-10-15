@@ -37,8 +37,10 @@ en2=instance_create_depth(3320,160,-1,oAreaSpawner)
 en3=instance_create_depth(3448,160,-1,oAreaSpawner)
 
 with oAreaSpawner
-{spawnX=999999 sprite_index=spr_doorzep visible=1
-	MaxSpawnFrame=5.5 FrameSpd=0.25 FrameVis=1 FXtype=5
+{spawnX=999999
+	sprite_index=spr_doorzep visible=1
+	MaxSpawnFrame=5.5 
+	FrameSpd=0.25 FrameVis=1 FXtype=5
 }
 
 ////

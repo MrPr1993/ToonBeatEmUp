@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.847354,
+  "duration":0.8473696,
   "name":"snd_ant4",
   "parent":{
     "name":"Antoinette",

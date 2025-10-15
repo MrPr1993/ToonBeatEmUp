@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.049312,
+  "duration":1.0493197,
   "name":"snd_Hina_YouDidGreat",
   "parent":{
     "name":"Players",

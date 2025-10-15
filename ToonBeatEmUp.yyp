@@ -4051,6 +4051,7 @@
     {"id":{"name":"spr_prince_hit","path":"sprites/spr_prince_hit/spr_prince_hit.yy",},},
     {"id":{"name":"spr_prince_intro","path":"sprites/spr_prince_intro/spr_prince_intro.yy",},},
     {"id":{"name":"spr_prince_move","path":"sprites/spr_prince_move/spr_prince_move.yy",},},
+    {"id":{"name":"spr_prince_notbad","path":"sprites/spr_prince_notbad/spr_prince_notbad.yy",},},
     {"id":{"name":"spr_prince_panic","path":"sprites/spr_prince_panic/spr_prince_panic.yy",},},
     {"id":{"name":"spr_prince_proj","path":"sprites/spr_prince_proj/spr_prince_proj.yy",},},
     {"id":{"name":"spr_prince_stand","path":"sprites/spr_prince_stand/spr_prince_stand.yy",},},

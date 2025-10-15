@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.824308,
+  "duration":0.8243084,
   "name":"snd_harpye",
   "parent":{
     "name":"Enemies",

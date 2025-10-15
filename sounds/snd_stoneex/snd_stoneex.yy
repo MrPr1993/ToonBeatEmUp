@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.320083,
+  "duration":1.3200907,
   "name":"snd_stoneex",
   "parent":{
     "name":"General",

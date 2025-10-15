@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.911021,
+  "duration":0.9110431,
   "name":"snd_Hina_ComeOn",
   "parent":{
     "name":"Players",

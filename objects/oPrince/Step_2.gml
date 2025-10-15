@@ -335,3 +335,34 @@ if dead=1 if visible
 	throwing=0 dead=1;
 	visible=0 disappearTime=0 alarm[2]=90///Instantly kill and shatter character while frozen
 }
+
+///Death - Not Bad
+if anim=101
+{
+
+sprite_index=spr_prince_hit
+var _frame0=8;
+var _frame1=9;
+var _frame2=10;
+if hitBack!=0 {_frame0=21;_frame1=22;_frame2=23;}
+
+frame_set(0,_frame0,0.1) if AnimFrame=1 {PlaySound(snd_prince21)}
+frame_set(1,_frame1,0.2)
+frame_set(2,_frame2,0.2)
+if AnimFrame=3 {if x>=targetX image_xscale=-1 else image_xscale=1}
+if AnimFrame>=3 sprite_index=spr_prince_notbad
+if AnimFrame=clamp(AnimFrame,3,3.9)
+{
+image_index+=0.2
+if image_index>=2 image_index=0
+}
+frame_set(3,image_index,0.01)
+frame_set(4,2,0.2)
+
+if AnimFrame>4.2
+if specialBossState=1
+{specialBossState=0
+}
+
+
+}

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.448186,
+  "duration":0.44818595,
   "name":"snd_wolfita6",
   "parent":{
     "name":"Lady Wolf",

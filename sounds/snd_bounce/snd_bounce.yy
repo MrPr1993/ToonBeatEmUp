@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.534059,
+  "duration":0.5340589,
   "name":"snd_bounce",
   "parent":{
     "name":"Objects",

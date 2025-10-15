@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.634649,
+  "duration":0.6346485,
   "name":"snd_bahati21",
   "parent":{
     "name":"Players",

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.211882,
+  "duration":0.21188208,
   "name":"snd_bear3",
   "parent":{
     "name":"Enemies",

@@ -4,6 +4,8 @@ canSkipCutscene=2
 newsBox=0
 newsText=0
 
+oControl.circlerepos=120;
+
 treas1=instance_create_depth(128+112-24+24-3, 96-20+2,-1,oFlashFX);
 with treas1 {alarm[0]=-1 animEnd=0 image_speed=0 sprite_index=spr_treasure}
 

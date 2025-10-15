@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.596521,
+  "duration":0.5965079,
   "name":"snd_femenemy3",
   "parent":{
     "name":"Enemies",

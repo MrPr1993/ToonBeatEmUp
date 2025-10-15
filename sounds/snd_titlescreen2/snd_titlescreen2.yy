@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.538521,
+  "duration":1.538526,
   "name":"snd_titlescreen2",
   "parent":{
     "name":"General",

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.099388,
+  "duration":0.09938776,
   "name":"snd_land",
   "parent":{
     "name":"Objects",

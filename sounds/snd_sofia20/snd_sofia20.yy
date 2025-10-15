@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.805896,
+  "duration":1.8058957,
   "name":"snd_sofia20",
   "parent":{
     "name":"Players",

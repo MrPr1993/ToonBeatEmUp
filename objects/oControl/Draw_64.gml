@@ -654,6 +654,7 @@ surface_set_target(surf_circle)
 draw_rectangle(0,0,480,270,false)
 gpu_set_blendmode(bm_subtract)
 var defx=160; var defy=120; if isCutscene defy=192/2 if room=rm_newspaper or room=rm_opening defy=160;
+if circlerepos!=-1 defy=circlerepos
 var irisout=stageIntro*30
 if irisout<=29
 draw_circle(defx,defy,200-((irisout/30)*200),false)
@@ -686,6 +687,7 @@ surface_set_target(surf_circle)
 draw_rectangle(0,0,480,270,false)
 gpu_set_blendmode(bm_subtract)
 var defx=160; var defy=120;// if isCutscene defy=192/2
+if circlerepos!=-1 defy=circlerepos
 var irisout=stageEnd*30
 if irisout<=29
 draw_circle(defx,defy,200-((irisout/30)*200),false)
@@ -1861,6 +1863,9 @@ surface_set_target(surf_circle)
 draw_rectangle(0,0,480,270,false)
 gpu_set_blendmode(bm_subtract)
 var defx=160; var defy=120; if isCutscene defy=192/2
+
+if circlerepos!=-1 defy=circlerepos
+
 var irisout=stageIntro*30
 if irisout<=29
 draw_circle(defx,defy,200-((irisout/30)*200),false)
@@ -2025,8 +2030,15 @@ crt_fxset()
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 
+var _pausing=0;
+
 if pauseBuffer!=0 pauseBuffer-=1
 if key_start=1 or keyboard_check_pressed(vk_escape)
+ _pausing=1
+ 
+ if autopause  _pausing=1
+
+if  _pausing
 if pauseBuffer=0
 if stagePause=1
 {pauseBuffer=10 game_pause()}

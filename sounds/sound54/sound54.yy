@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":1.607188,
+  "duration":1.6021996,
   "name":"sound54",
   "parent":{
     "name":"Enemies",

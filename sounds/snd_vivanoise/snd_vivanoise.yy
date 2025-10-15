@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.160998,
+  "duration":1.1609977,
   "name":"snd_vivanoise",
   "parent":{
     "name":"Players",

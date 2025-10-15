@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.361429,
+  "duration":0.36142856,
   "name":"snd_deathcry2",
   "parent":{
     "name":"Enemies",

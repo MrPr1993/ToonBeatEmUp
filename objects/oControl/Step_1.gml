@@ -1,6 +1,6 @@
 /// @description Insert description here
 //Feather disable all
-
+autopause=0;
 var i=0;
 repeat(4)
 {
@@ -34,6 +34,12 @@ if (_new_source != undefined)
 			}
             input_source_set(_new_source, _i, true);
             input_verb_consume(all, _i);
+			
+			//if input_player_disconnect(_i) 
+			
+			
+				
+				
             break;
         }
         
@@ -48,6 +54,7 @@ repeat(INPUT_MAX_PLAYERS)
     if (input_player_connected(_i))
     {
        // if (input_check_pressed("pause", _i)) input_source_clear(_i);
+	   if (!input_player_connected(_i)) autopause=1
     }
     
     ++_i;

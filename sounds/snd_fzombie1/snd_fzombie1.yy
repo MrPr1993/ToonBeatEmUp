@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.882521,
+  "duration":0.8825397,
   "name":"snd_fzombie1",
   "parent":{
     "name":"Enemies",

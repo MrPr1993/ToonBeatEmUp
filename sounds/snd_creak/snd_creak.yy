@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.870748,
+  "duration":0.8707483,
   "name":"snd_creak",
   "parent":{
     "name":"Objects",

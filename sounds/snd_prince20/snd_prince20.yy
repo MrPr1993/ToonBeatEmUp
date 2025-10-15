@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.379104,
+  "duration":1.3791157,
   "name":"snd_prince20",
   "parent":{
     "name":"Prince",

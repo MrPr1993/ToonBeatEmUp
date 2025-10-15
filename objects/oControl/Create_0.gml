@@ -3,8 +3,9 @@ room_speed=60
 if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
 
 surf_circle = surface_create(320,240);
-
+circlerepos=-1;
 ambushtime=0;
+autopause=0;
 
 carMode=0;
 
@@ -983,7 +984,7 @@ if room=rm_soundtest
 songno=0
 songname="SELECT MUSIC OR SOUND"
 soundno=1
-soundname="VIVA 1"
+soundname="SND 1"
 playingsongname=""
 playingloop=0
 playSFX=snd_viva4

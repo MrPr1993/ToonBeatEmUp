@@ -165,7 +165,7 @@ frame_set(6,2,0.5)
 frame_set(7,2,0.5)
 frame_set(8,2,0.5)
 frame_set(9,2,0.5)
-frame_set(10,1,0.25)
+frame_set(10,1,0.25) if AnimFrame=11 PlaySoundNoStack(snd_swing2)
 if AnimFrame=11
 for(var drawparts = -1; drawparts < 2; drawparts++)
 {

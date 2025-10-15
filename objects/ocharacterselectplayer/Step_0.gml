@@ -26,8 +26,9 @@ var _exitroom=0;
 if controlNO=9
 {
 controller_setup()
-if (key_cancelH or keyboard_check(vk_escape))
-{exitroom+=0.01; if difficultymode=1 exitroom=9} else exitroom=0;
+if (KEY_exitroom or keyboard_check(vk_escape))
+{exitroom+=0.01; if difficultymode=1 exitroom=9}
+if key_cancelH=0 exitroom=0;
 if exitroom>=1
 {_exitroom=1;}
 
@@ -254,8 +255,7 @@ if (key_LT and key_RTh) or (key_RT and key_LTh)
 	PlaySoundNoStack(snd_picked)
 }
 if key_B or key_cancel
-{
- input_source_clear(controlNO-1);
+{ input_source_clear(controlNO-1); //exitroom+=0.01
 }
 }
 }

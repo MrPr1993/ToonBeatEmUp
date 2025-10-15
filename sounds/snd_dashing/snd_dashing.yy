@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.119116,
+  "duration":0.11911564,
   "name":"snd_dashing",
   "parent":{
     "name":"Objects",

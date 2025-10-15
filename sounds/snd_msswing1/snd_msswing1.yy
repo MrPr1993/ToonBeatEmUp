@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":1.911604,
+  "duration":1.91161,
   "name":"snd_msswing1",
   "parent":{
     "name":"Enemies",

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.335021,
+  "duration":1.335034,
   "name":"snd_hina20",
   "parent":{
     "name":"Players",

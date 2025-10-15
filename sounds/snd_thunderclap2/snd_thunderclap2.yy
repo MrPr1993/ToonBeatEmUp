@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.545667,
+  "duration":0.54566896,
   "name":"snd_thunderclap2",
   "parent":{
     "name":"General",

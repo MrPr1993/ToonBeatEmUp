@@ -12,8 +12,8 @@
   "duration":0.8707483,
   "name":"snd_squeaky",
   "parent":{
-    "name":"Enemies",
-    "path":"folders/f - Sounds/Voice Clips/Enemies.yy",
+    "name":"General",
+    "path":"folders/f - Sounds/General.yy",
   },
   "preload":true,
   "resourceType":"GMSound",

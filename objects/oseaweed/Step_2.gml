@@ -21,7 +21,7 @@ anim=11 else anim=12
 }
 else {
 if distance_to_object(targetEnemy)<100
-anim=choose(13,14) else anim=choose(1100,12,14)}
+anim=choose(13,14) else anim=choose(1101,1100,12,14)}
 }
 
 if anim=13 or anim=14 if bombRecharge!=0 anim=12
@@ -56,7 +56,7 @@ if AnimFrame>3.5 canbeGrabbed=1
 if AnimFrame>5.5 {atk=0 canmove=1}
 }
 
-////Fireballs
+////Fire Attack
 if anim=1100 ////64,60
 {if AnimFrame=0 {specialcheck4=0 PlaySound(snd_seaweed3)} sprite_index=spr_seaweed_attack1
 frame_set(0,0,0.25) damage=0.1 MoveType=1
@@ -70,6 +70,37 @@ frame_set(7,4,0.1) if AnimFrame>7-0.2 {if specialcheck4!=2 {AnimFrame=2 specialc
 frame_set(8,1,0.1)
 frame_set(9,0,0.1)
 if AnimFrame>9.5 canmove=1
+}
+
+///Butt Attack
+if anim=1101
+{hit=0 
+sprite_index=spr_seaweed_booty
+damage=0.4
+	if AnimFrame=clamp(AnimFrame,1,1.5) if ground {specialcheck2=2 PlaySoundNoStack(snd_jump) PlaySound(choose(snd_seaweed7,snd_seaweed8)) z-=2 ground=0 zSpeed=-10}
+	if !ground 
+	{MoveType=4 AnimFrame=2.9 SoundCount0=0
+	isThrow=0 throwing=0 atkAddX=0 atkAddY=0 atkAddZ=32 selfatk.image_xscale=1.5*image_xscale selfatk.image_yscale=1
+	sentflying=2*image_xscale
+	if place_free(x,y+specialcheck2*targetYcheck) if y<__view_get( e__VW.YView, 0 )+240-2 y+=specialcheck2*targetYcheck
+	if zSpeed>4 z+=0.45 
+	}
+
+	image_index=AnimFrame image_speed=0
+	if AnimFrame=clamp(AnimFrame,2,3) and zSpeed>-1 atk=1 else atk=0
+
+
+	if AnimFrame=clamp(AnimFrame,3,3.5)
+	{
+	if SoundCount0=0 {SoundCount0=1 PlaySoundNoStack(HitGround)}
+	oControl.quakeFXTime=10
+	}
+
+	if AnimFrame=clamp(AnimFrame,0,1.5)
+	AnimFrame+=0.2 else {if ground 
+
+	AnimFrame+=0.1 AnimFrame+=0.001} if AnimFrame>4.5 {hurt=0 atk=0 canmove=1 hit=0}
+
 }
 
 ////Headbutt

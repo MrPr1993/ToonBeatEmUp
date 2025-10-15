@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":1.030624,
+  "duration":1.0256236,
   "name":"snd_deathcryviva",
   "parent":{
     "name":"Players",

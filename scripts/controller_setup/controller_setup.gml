@@ -50,6 +50,7 @@ function controller_setup() {
 	
 	key_cancel=0
 	key_cancelH=0
+	KEY_exitroom=0
 	key_accept=0
 	key_switch=0
 	
