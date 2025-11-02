@@ -21,6 +21,24 @@ with oControl
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Então você tem um amigo nos pântanos?"
+languagedialogue[2]="Recordo-me de ter compartilhado profundo laço com um ser místico nos pântanos... Sinto ainda sua presença lá. Depressa! Levar-vos-ei até lá agora!"
+languagedialogue[3]="Lugares quentes e úmidos. Os meus favoritos."
+languagedialogue[4]="E ireis vós todos em partença!"
+languagedialogue[5]="ESPERA nós não estamos-"
+languagedialogue[6]="...pronta."
+languagedialogue[7]="Nossa quanta eficiência."
+languagedialogue[8]="Tá um baita breu aqui..."
+languagedialogue[9]="Tanto faz. Vamos achar essa tal pessoa mística. Certeza que é uma bruxa."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 with actor1 {sprite_index=spr_viva_talk image_speed=0.25}
 
 newscript=function()
@@ -34,7 +52,9 @@ with actor5 {sprite_index=spr_pharaoh_talk3 image_speed=0.25}
 
 with oControl
 {
-with oControl {cutscenename="HATHOR" cutsceneline=  "We recall sharing a bond with a mystic in the swamps... We can sense their presence still there. Quickly! We will teleport you there now!"}
+with oControl {cutscenename="HATHOR" cutsceneline=  "We recall sharing a bond with a mystic in the swamps... We can sense their presence still there. Quickly! We will teleport you there now!"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}
 }
 }
 
@@ -45,7 +65,9 @@ with actor4 {sprite_index=spr_sofia_opening image_speed=0.25}
 
 with oControl
 {
-with oControl {cutscenename="SOFIA" cutsceneline="Sounds sticky. I like the sound of it."}
+with oControl {cutscenename="SOFIA" cutsceneline="Sounds sticky. I like the sound of it."
+	if global.Language!=0 cutsceneline=languagedialogue[3]
+	}
 }
 }
 
@@ -59,6 +81,7 @@ newscript=function() {image_index+=0.25 if image_index>=5 image_index=3}
 with oControl
 {
 cutscenename="HATHOR" cutsceneline= "And away you all will go!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -69,7 +92,9 @@ with actor2 {sprite_index=spr_hina_wildtake image_speed=0 image_index=0}
 with actor3 {sprite_index=spr_bahati_wildtake image_speed=0 image_index=0}
 with actor4 {sprite_index=spr_sofia_wildtake image_speed=0 image_index=0}
 
-with oControl {cutscenename="VIVA" cutsceneline="WAIT we're not-"}
+with oControl {cutscenename="VIVA" cutsceneline="WAIT we're not-"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1060
@@ -89,12 +114,16 @@ layer_set_visible("SwampBG2",1)
 
 with actor5 x=999
 	
-with oControl {cutscenename="VIVA" cutsceneline="...ready..."}
+with oControl {cutscenename="VIVA" cutsceneline="...ready..."
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 if scenetime=1260
 {
-with oControl {cutscenename="HINA" cutsceneline="Wow she's good."}
+with oControl {cutscenename="HINA" cutsceneline="Wow she's good."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=1560
@@ -104,7 +133,9 @@ with actor2 {sprite_index=spr_hina_cutscene image_speed=0 image_index=1}
 with actor3 {sprite_index=spr_bahati_lookaround image_speed=0 image_index=2}
 with actor4 {sprite_index=spr_sofia_talk3 image_speed=0 image_index=0}	
 
-with oControl {cutscenename="BAHATI" cutsceneline="It sure is dark in here..."}
+with oControl {cutscenename="BAHATI" cutsceneline="It sure is dark in here..."
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=1820
@@ -114,7 +145,9 @@ with actor2 {sprite_index=spr_hina_move image_speed=0.25 image_index=0 hspeed=2}
 with actor3 {sprite_index=spr_bahati_move image_speed=0.25 image_index=0 hspeed=2}
 with actor4 {sprite_index=spr_sofia_move image_speed=0.25 image_index=0 hspeed=2}	
 
-with oControl {cutscenename="VIVA" cutsceneline="Whatever. Let's find this mystic person. Bet she's a witch."}
+with oControl {cutscenename="VIVA" cutsceneline="Whatever. Let's find this mystic person. Bet she's a witch."
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 
 if scenetime=2320
@@ -141,6 +174,24 @@ cutscenename="VIVA" cutsceneline=  "Come on, Hina, we don't have time to listen 
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Qualé, Hina, nós não temos tempo para ouvir esse fóssil. Sem contar que eu vi eles entrando em um parque de diversões."
+languagedialogue[2]="Fóssil?! COMO OUSAIS VÓS TAL AFRONTA?! Ei! Onde estais —"
+languagedialogue[3]="Parque~? Ohh, será que lá tem alguma brincadeira gostosa de se jogar?"
+languagedialogue[4]="Oooh tem algum teste de força lá?"
+languagedialogue[5]="Eu quero quebrar recordes na tourada!"
+languagedialogue[6]="Foco, garotas. Foco..."
+languagedialogue[7]="..."
+languagedialogue[8]="Par-qi?"
+languagedialogue[9]="Por quantas eras me fui?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25}
 
 newscript=function()
@@ -152,7 +203,9 @@ if scenetime=460
 {
 with actor5 {sprite_index=spr_pharaoh_talk4 image_speed=0.25}
 
-with oControl {cutscenename="HATHOR" cutsceneline=  "Fossil?! HOW DARE YOU!! Hey! Where are you-"}
+with oControl {cutscenename="HATHOR" cutsceneline=  "Fossil?! HOW DARE YOU!! Hey! Where are you-"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}
 
 with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
 with actor2 {sprite_index=spr_hina_move image_speed=0.25 hspeed=2}
@@ -166,41 +219,55 @@ if scenetime=660
 {
 with actor5 {image_index=0 image_speed=0}	
 
-with oControl {cutscenename="HINA" cutsceneline=  "Carnival~? Ohh, I wonder if they have any fun games there?"}
+with oControl {cutscenename="HINA" cutsceneline=  "Carnival~? Ohh, I wonder if they have any fun games there?"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
+	}
 }
 
 if scenetime=860
 {
-with oControl {cutscenename="BAHATI" cutsceneline="Oooh will there be a strength game?"}
+with oControl {cutscenename="BAHATI" cutsceneline="Oooh will there be a strength game?"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 }
 
 if scenetime=1060
 {
-with oControl {cutscenename="SOFIA" cutsceneline="I wanna ride the biggest bull!"}
+with oControl {cutscenename="SOFIA" cutsceneline="I wanna ride the biggest bull!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1300
 {
-with oControl {cutscenename="VIVA" cutsceneline="Focus, girls. Focus..."}
+with oControl {cutscenename="VIVA" cutsceneline="Focus, girls. Focus..."
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 if scenetime=1500
 {
 with actor5 {sprite_index=spr_pharaoh_talk}
 
-with oControl {cutscenename="HATHOR" cutsceneline="..."}
+with oControl {cutscenename="HATHOR" cutsceneline="..."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=1750
 {
 with actor5 {sprite_index=spr_pharaoh_cutscene2 image_index=1}
 
-with oControl {cutscenename="HATHOR" cutsceneline="Carn-e-val?"}
+with oControl {cutscenename="HATHOR" cutsceneline="Carn-e-val?"
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=2000
 {
-with oControl {cutscenename="HATHOR" cutsceneline="How long was I even gone?"}
+with oControl {cutscenename="HATHOR" cutsceneline="How long was I even gone?"
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 
 if scenetime=2320
@@ -223,6 +290,22 @@ sprite_index=mask_none
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Fizemos amizade com alguém de grande poder nos tempos da Odisseia. Com facilidade, vos levaremos ao seu domínio."
+languagedialogue[2]="Sério? Seria uma ajuda e tanto."
+languagedialogue[3]="CLARO! SOU UMA DEUSA!"
+languagedialogue[4]="Então o que estamos esperando? Manda a gente pra lá!"
+languagedialogue[5]="Muito bem. Desejamos-vos sorte e aguardaremos o vosso regresso..."
+languagedialogue[6]="AW?! por que não teleportou a gente no chão?!"
+cutsceneline=languagedialogue[1]
+
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 with actor5 {sprite_index=spr_pharaoh_talk image_speed=0.25}
 
 newscript=function()
@@ -235,7 +318,9 @@ if scenetime=460
 with actor5 {image_index=0 image_speed=0}	
 with actor3 {sprite_index=spr_bahati_talk image_speed=0.25}	
 
-with oControl {cutscenename="BAHATI" cutsceneline= "Is that so? Could be helpful."}
+with oControl {cutscenename="BAHATI" cutsceneline= "Is that so? Could be helpful."
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}
 }
 
 if scenetime=620
@@ -243,7 +328,9 @@ if scenetime=620
 with actor3 {image_index=0 image_speed=0}	
 with actor5 {sprite_index=spr_pharaoh_talk3 image_speed=0.25}		
 
-with oControl {cutscenename="HATHOR" cutsceneline="OF COURSE! I'M A GODDESS!"}
+with oControl {cutscenename="HATHOR" cutsceneline="OF COURSE! I'M A GODDESS!"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
+	}
 }
 
 if scenetime=860
@@ -251,14 +338,18 @@ if scenetime=860
 with actor5 {image_index=0 image_speed=0}	
 with actor4 {sprite_index=spr_sofia_talk2 image_speed=0.25}
 
-with oControl {cutscenename="SOFIA" cutsceneline= "Well what are we waiting for? Teleport away!"}
+with oControl {cutscenename="SOFIA" cutsceneline= "Well what are we waiting for? Teleport away!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 }
 
 if scenetime=1060
 {
 with actor4 {image_index=0 image_speed=0}
 
-with oControl {cutscenename="HATHOR" cutsceneline= "Very well. We wish you luck and will await your return..."}
+with oControl {cutscenename="HATHOR" cutsceneline= "Very well. We wish you luck and will await your return..."
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1160
@@ -328,7 +419,9 @@ if scenetime=1650
 {
 with actor1 {sprite_index=spr_viva_anger image_speed=0.25}
 
-with oControl {cutscenename="VIVA" cutsceneline="OW?! Can't she teleport us lower?!"}
+with oControl {cutscenename="VIVA" cutsceneline="OW?! Can't she teleport us lower?!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 
 }
 

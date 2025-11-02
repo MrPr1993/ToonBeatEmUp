@@ -9,6 +9,6 @@ scene1.vspeed=-0.22
 newsRepeat=2
 
 cutsceneline="SHE KNOWS HOW TO MAKE YOU RUN LIKE THE WIND TO GO TO HER!"
-
+if global.Language!=0 cutsceneline=languagedialogue[8]
 with scenebg {image_index=3 x=0 y=8
 	hspeed=0 vspeed=-0.2/4 depth=6}

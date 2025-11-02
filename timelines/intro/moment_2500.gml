@@ -10,3 +10,4 @@ scene1.x=0 scene1.vspeed=-0.1
 scene1.y=0
 
 cutsceneline="THIS DAY, THIS WILL BE THE GREATEST SHOW EVER! HAVE A VERY GOOD NIGHT!"
+if global.Language!=0 cutsceneline=languagedialogue[10]

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_hieroglyph_base",
   "bboxMode":0,
   "bbox_bottom":56,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dcbf3af1-736b-4b65-a747-dd0eba50b360","name":"dcbf3af1-736b-4b65-a747-dd0eba50b360","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"766d3b53-8098-4f6e-85ed-f8344c6e2dca","name":"766d3b53-8098-4f6e-85ed-f8344c6e2dca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"2326ce49-9ef6-4704-b4ca-1545bc61546c","name":"2326ce49-9ef6-4704-b4ca-1545bc61546c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"9126968f-7212-467b-bd13-6c860041f052","name":"9126968f-7212-467b-bd13-6c860041f052","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c5b77fa0-4fd0-410b-b6a4-f95e2613cb56","name":"c5b77fa0-4fd0-410b-b6a4-f95e2613cb56","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b645c8ed-7dd2-430d-a0b7-e17277f4abe2","name":"b645c8ed-7dd2-430d-a0b7-e17277f4abe2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"70d555a0-96e4-4998-aa90-c7b62a92b622","name":"70d555a0-96e4-4998-aa90-c7b62a92b622","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3b2cd121-edf9-410d-8556-46107d7fbee3","name":"3b2cd121-edf9-410d-8556-46107d7fbee3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dcbf3af1-736b-4b65-a747-dd0eba50b360","name":"dcbf3af1-736b-4b65-a747-dd0eba50b360","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"766d3b53-8098-4f6e-85ed-f8344c6e2dca","name":"766d3b53-8098-4f6e-85ed-f8344c6e2dca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2326ce49-9ef6-4704-b4ca-1545bc61546c","name":"2326ce49-9ef6-4704-b4ca-1545bc61546c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9126968f-7212-467b-bd13-6c860041f052","name":"9126968f-7212-467b-bd13-6c860041f052","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c5b77fa0-4fd0-410b-b6a4-f95e2613cb56","name":"c5b77fa0-4fd0-410b-b6a4-f95e2613cb56","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b645c8ed-7dd2-430d-a0b7-e17277f4abe2","name":"b645c8ed-7dd2-430d-a0b7-e17277f4abe2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"70d555a0-96e4-4998-aa90-c7b62a92b622","name":"70d555a0-96e4-4998-aa90-c7b62a92b622","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3b2cd121-edf9-410d-8556-46107d7fbee3","name":"3b2cd121-edf9-410d-8556-46107d7fbee3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -77,30 +77,14 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dcbf3af1-736b-4b65-a747-dd0eba50b360","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b9d9a284-9d30-4b74-9f78-7e39d2ddf234","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"766d3b53-8098-4f6e-85ed-f8344c6e2dca","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9f341f16-e903-45f4-a0b0-47dcec18b454","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2326ce49-9ef6-4704-b4ca-1545bc61546c","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"59a77013-ea4e-4b74-82c6-9ccb289fd14b","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9126968f-7212-467b-bd13-6c860041f052","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"19076bf1-06dd-4fac-b130-888ec7cdfc49","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c5b77fa0-4fd0-410b-b6a4-f95e2613cb56","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"16eb15d2-1b86-4ea4-855c-02e8431f5853","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b645c8ed-7dd2-430d-a0b7-e17277f4abe2","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d17675bf-b010-40c2-8f77-1ea600c1a39e","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"70d555a0-96e4-4998-aa90-c7b62a92b622","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"49580630-ccdb-4706-bffc-0728b828b0d0","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3b2cd121-edf9-410d-8556-46107d7fbee3","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"40c6062e-ac5d-481b-8612-93c8466f1e07","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dcbf3af1-736b-4b65-a747-dd0eba50b360","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b9d9a284-9d30-4b74-9f78-7e39d2ddf234","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"766d3b53-8098-4f6e-85ed-f8344c6e2dca","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9f341f16-e903-45f4-a0b0-47dcec18b454","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"2326ce49-9ef6-4704-b4ca-1545bc61546c","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"59a77013-ea4e-4b74-82c6-9ccb289fd14b","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9126968f-7212-467b-bd13-6c860041f052","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"19076bf1-06dd-4fac-b130-888ec7cdfc49","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c5b77fa0-4fd0-410b-b6a4-f95e2613cb56","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"16eb15d2-1b86-4ea4-855c-02e8431f5853","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b645c8ed-7dd2-430d-a0b7-e17277f4abe2","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d17675bf-b010-40c2-8f77-1ea600c1a39e","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"70d555a0-96e4-4998-aa90-c7b62a92b622","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"49580630-ccdb-4706-bffc-0728b828b0d0","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3b2cd121-edf9-410d-8556-46107d7fbee3","path":"sprites/spr_hieroglyph_base/spr_hieroglyph_base.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"40c6062e-ac5d-481b-8612-93c8466f1e07","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

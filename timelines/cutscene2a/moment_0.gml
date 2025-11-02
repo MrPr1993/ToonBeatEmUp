@@ -50,6 +50,7 @@ if scenetime=60
 with oControl
 {cutscenename="VIVA"
 cutsceneline="WELL THAT WAS SOMETHING."
+if global.Language!=0 cutsceneline=languagedialogue[1]
 }
 }
 
@@ -61,6 +62,7 @@ with actor2 {sprite_index=spr_hina_talk2 image_speed=0.1}
 with oControl
 {cutscenename="HINA"
 cutsceneline="MY SHE'S HUGE."
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -73,6 +75,7 @@ with actor1 {sprite_index=spr_viva_idle image_index=1 image_speed=0}
 with oControl
 {cutscenename="VIVA"
 cutsceneline="UGH... BUT THAT TRUCK GOT AWAY. NOW WHAT?"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -83,6 +86,7 @@ with actor3 {sprite_index=spr_bahati_talk image_speed=0.1}
 with oControl
 {cutscenename="BAHATI"
 cutsceneline="WE COULD ASK FOR THE CAPTAIN OF THE SHIP TO DRIVE US TO A PORT?"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -94,6 +98,7 @@ with actor1 {sprite_index=spr_viva_cutscene image_index=1}
 with oControl
 {cutscenename="VIVA"
 cutsceneline="WELL OF COURSE..."
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -105,6 +110,7 @@ with actor4 {sprite_index=spr_sofia_talk2 image_speed=0.1}
 with oControl
 {cutscenename="SOFIA"
 cutsceneline="ONE PROBLEM."
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 
@@ -116,6 +122,7 @@ with actor1 {sprite_index=spr_viva_cutscene image_index=0}
 with oControl
 {cutscenename="VIVA"
 cutsceneline="AND WHAT'S THAT?"
+if global.Language!=0 cutsceneline=languagedialogue[7]
 }
 }
 
@@ -132,6 +139,7 @@ draw_sprite(spr_cutscene2a,0,0,0)
 with oControl
 {cutscenename="SOFIA"
 cutsceneline="THRE IS NO ONE AT THE WHEEL!"
+if global.Language!=0 cutsceneline=languagedialogue[8]
 quakeFXTime=10
 }
 }
@@ -141,6 +149,7 @@ if scenetime=2200
 with oControl
 {cutscenename="VIVA"
 cutsceneline="YOU CAN'T BE SERIOUS!"
+if global.Language!=0 cutsceneline=languagedialogue[9]
 }
 }
 
@@ -174,7 +183,7 @@ draw_sprite(spr_cutscene2a2,0,160,192)
 	{canSkipCutscene=0 audio_stop_all()
 cutscenename="VIVA"
 cutsceneline="SO... ANY OF YOU KNOW HOW TO DRIVE THIS?"
-
+if global.Language!=0 cutsceneline=languagedialogue[10]
 timeline_position=5800
 timeline_speed=1
 }
@@ -200,6 +209,31 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="O NAVIO NÃO TEM TIMONEIRO!\nE AGORA?!"
+CDtextA="ABANDONAR O NAVIO!"
+CDtextB="ASSUMIR O LEME!"
+CDtextC="ACORDAR A ROSY!"
+languagedialogue[1]="É, DEU PRA AQUECER."
+languagedialogue[2]="NOSSA! QUE TONHONA."
+languagedialogue[3]="UGH... MAS O CAMINHÃO SE FOI. E AGORA?"
+languagedialogue[4]="PODEMOS PEDIR AO CAPITÃO DO NAVIO PARA NOS LEVAR PRO PORTO?"
+languagedialogue[5]="CLARO..."
+languagedialogue[6]="SÓ UM PROBLEMA."
+languagedialogue[7]="E QUAL É?"
+languagedialogue[8]="NÃO TEM NINGUÉM AO LEME!"
+languagedialogue[9]="VOCÊ SÓ PODE ESTAR DE BRINCADEIRA!"
+languagedialogue[10]="ENTÃO... ALGUMA DE VOCÊS SABE COMO MEXER NISSO?"
+//cutsceneline=languagedialogue[1]
+break;
+}
+
+
+
 }
 
 

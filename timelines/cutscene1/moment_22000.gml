@@ -2,3 +2,4 @@ with diva2 {sprite_index=spr_hina_opening image_xscale=1 image_speed=0.1 image_i
 
 cutscenename="HINA"
 cutsceneline="I HAVE WAYS TO GET ON TRIPS IF I LOSE A TICKET."
+if global.Language!=0 cutsceneline=languagedialogue[9]

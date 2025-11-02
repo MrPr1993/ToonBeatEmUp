@@ -10,3 +10,4 @@ cutscenename="SOFIA"
 cutsceneline="I WAS GOING TO SUGGEST WE'D USE A DOG WHISTLE."
 
 
+if global.Language!=0 cutsceneline=languagedialogue[18]

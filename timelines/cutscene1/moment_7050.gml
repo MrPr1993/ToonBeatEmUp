@@ -11,3 +11,4 @@ cutscenename="SOFIA"
 cutsceneline="HEY. LOOK OVER THERE!"
 
 
+if global.Language!=0 cutsceneline=languagedialogue[4]

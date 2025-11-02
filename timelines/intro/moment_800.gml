@@ -10,7 +10,7 @@ scene1.x=99999
 
 newsRepeat=1
 cutsceneline="AND THE WONDERFUL HINA! SHE CAME FROM JAPAN TO PERFORM AS WELL!"
-
+if global.Language!=0 cutsceneline=languagedialogue[3]
 scenebg.x=99999
 
 newspaperspin=0

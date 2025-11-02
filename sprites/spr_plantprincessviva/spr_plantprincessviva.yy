@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_plantprincessviva",
   "bboxMode":0,
   "bbox_bottom":129,
@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"25b154af-a2bf-40e5-a3d8-8d05c5a0e877","name":"25b154af-a2bf-40e5-a3d8-8d05c5a0e877","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"23f3f8e0-ceba-4b41-8ffd-3d3a64ece5d5","name":"23f3f8e0-ceba-4b41-8ffd-3d3a64ece5d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"57b6a482-bfd5-4285-8bf9-45db492d7f18","name":"57b6a482-bfd5-4285-8bf9-45db492d7f18","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"262f1b33-c9c0-4041-b8ab-66886f533c9d","name":"262f1b33-c9c0-4041-b8ab-66886f533c9d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"e7199b58-35e4-4bf0-9361-612891ab91a7","name":"e7199b58-35e4-4bf0-9361-612891ab91a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"9ed0879a-c8df-44a8-9719-d77fe6dedc70","name":"9ed0879a-c8df-44a8-9719-d77fe6dedc70","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"25b154af-a2bf-40e5-a3d8-8d05c5a0e877","name":"25b154af-a2bf-40e5-a3d8-8d05c5a0e877","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"23f3f8e0-ceba-4b41-8ffd-3d3a64ece5d5","name":"23f3f8e0-ceba-4b41-8ffd-3d3a64ece5d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"57b6a482-bfd5-4285-8bf9-45db492d7f18","name":"57b6a482-bfd5-4285-8bf9-45db492d7f18","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"262f1b33-c9c0-4041-b8ab-66886f533c9d","name":"262f1b33-c9c0-4041-b8ab-66886f533c9d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e7199b58-35e4-4bf0-9361-612891ab91a7","name":"e7199b58-35e4-4bf0-9361-612891ab91a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9ed0879a-c8df-44a8-9719-d77fe6dedc70","name":"9ed0879a-c8df-44a8-9719-d77fe6dedc70","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -75,24 +75,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"25b154af-a2bf-40e5-a3d8-8d05c5a0e877","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7acda3e4-034c-4d64-8c86-27b85f5ddadc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23f3f8e0-ceba-4b41-8ffd-3d3a64ece5d5","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d837792d-81eb-449d-ab98-13e3b5b21810","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"57b6a482-bfd5-4285-8bf9-45db492d7f18","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"84cf067f-f6eb-4d8d-b8ca-383a8748f3d9","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"262f1b33-c9c0-4041-b8ab-66886f533c9d","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9f08a99f-242c-43eb-b9be-e59bbc9864e2","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e7199b58-35e4-4bf0-9361-612891ab91a7","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"23ca5df5-2140-4952-9376-295a1340a182","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9ed0879a-c8df-44a8-9719-d77fe6dedc70","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5a887ea6-f886-4370-81f5-cd4e965dd151","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"25b154af-a2bf-40e5-a3d8-8d05c5a0e877","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7acda3e4-034c-4d64-8c86-27b85f5ddadc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"23f3f8e0-ceba-4b41-8ffd-3d3a64ece5d5","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d837792d-81eb-449d-ab98-13e3b5b21810","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"57b6a482-bfd5-4285-8bf9-45db492d7f18","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"84cf067f-f6eb-4d8d-b8ca-383a8748f3d9","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"262f1b33-c9c0-4041-b8ab-66886f533c9d","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9f08a99f-242c-43eb-b9be-e59bbc9864e2","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e7199b58-35e4-4bf0-9361-612891ab91a7","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"23ca5df5-2140-4952-9376-295a1340a182","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9ed0879a-c8df-44a8-9719-d77fe6dedc70","path":"sprites/spr_plantprincessviva/spr_plantprincessviva.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5a887ea6-f886-4370-81f5-cd4e965dd151","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

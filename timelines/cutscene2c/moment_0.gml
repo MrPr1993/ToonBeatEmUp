@@ -18,6 +18,8 @@ cutscenename=""
 cutsceneline=""
 }
 
+
+
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
@@ -64,6 +66,7 @@ actorscreen=instance_create_depth(0,0,-1,oCameoChar) with actorscreen
 with oControl
 {cutscenename="DOLORES"
 cutsceneline="DARN IT!"
+if global.Language!=0 cutsceneline=languagedialogue[1]
 }
 
 musicplaystart(msc_training)
@@ -79,6 +82,7 @@ with oControl
 {
 cutscenename="DOLORES"
 cutsceneline="DON'T THINK YA WON YET!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -98,6 +102,7 @@ with actor4
 with oControl
 {cutscenename="VIVA"
 cutsceneline="THAT WE DID. NOW WHO DO YOU THINK YOU ARE?"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -106,6 +111,7 @@ if scenetime=640
 with oControl
 {cutscenename="DOLORES"
 cutsceneline="ME?! OH I'LL TELL YOU ALRIGHT..."
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -162,6 +168,7 @@ with oCameoChar x-=320
 
 cutscenename="VIVA"
 cutsceneline="YOU'RE A SHERIFF?!"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -171,7 +178,7 @@ with oControl
 {
 cutscenename="DOLORES"
 cutsceneline="THAT'S RIGHT. ME AND MY BOYS HAVE BEEN ROUNDIN' UP SOME STOWAWAYS AND NERDOWELLS WHO GOT INTO THE TRAIN WITHOUT PAYING!"
-
+if global.Language!=0 cutsceneline=languagedialogue[6]
 with actorC1 {hspeed=-2 image_speed=0.25}
 with actorC2 {hspeed=-2 image_speed=0.25}
 }
@@ -189,7 +196,7 @@ if scenetime=1600
 	{canSkipCutscene=0
 cutscenename="DOLORES"
 cutsceneline="...BUT SEEING THAT YOU TOOK CARE OF A MAJORITY OF EM', I CAN LET YA GO IF YA GOT A TICKET."
-
+if global.Language!=0 cutsceneline=languagedialogue[7]
 
 }
 }
@@ -268,8 +275,32 @@ canSkipCutscene=0
 
 cutscenename="VIVA"
 cutsceneline="OH! UH..."
+if global.Language!=0 cutsceneline=languagedialogue[8]
 	}
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="VOCÊ TEM UM INGRESSO,\nNÃO TEM?"
+CDtextA="NÃO TEMOS NENHUM..."
+CDtextB="TOMAR O TREM!"
+CDtextC="ENTREGAR OS INGRESSOS."
+
+languagedialogue[1]="DIACHO!"
+languagedialogue[2]="Ô CABA! NEM PENSE QUE SAIU POR CIMA!"
+languagedialogue[3]="VENCER É O MEU TRABALHO. AGORA QUEM VOCÊ PENSA QUE É?"
+languagedialogue[4]="EU?! CALMA ZÉ QUE TE CONTO PRA JÁ..."
+languagedialogue[5]="VOCÊ É UMA XERIFE?!"
+languagedialogue[6]="SIM, SENHORA. EU E MEUS HOMIS TAVA DANDO UM TRATO NESSES PILATRAS E JAGUNÇOS QUE CALOTEARAM O TREM!"
+languagedialogue[7]="...MAS PARECE QUE SEU BANDO DEU CONTA DESSES MALANDROS, POSSO ENGROSSAR AS VISTA PROCÊS SE MOSTRAREM SEUS BILHETES."
+languagedialogue[8]="AH! ENTÃO..."
+
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
 
 }

@@ -43,3 +43,4 @@ canSkipCutscene=0
 cutscenename="HINA"
 cutsceneline="WOLFY LADY'S GONE."
 
+if global.Language!=0 cutsceneline=languagedialogue[31]

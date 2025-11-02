@@ -4,3 +4,4 @@ cutscenename="VIVA"
 cutsceneline="AND THAT IS...?"
 
 
+if global.Language!=0 cutsceneline=languagedialogue[10]

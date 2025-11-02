@@ -15,3 +15,6 @@ layer_set_visible("BGcity2",1)
 
 cutscenename="SOFIA"
 cutsceneline="WHERE DID THEY TAKE MY TREASURE?! TALK PERRA OR I'LL SHOVE MY FOOT RIGHT UP YOUR-"
+
+
+if global.Language!=0 cutsceneline=languagedialogue[8]

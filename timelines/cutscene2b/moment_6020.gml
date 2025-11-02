@@ -7,11 +7,30 @@ timeline_speed=0
 if cutsceneDecmode=0
 {CutsceneStage=rm_stage4  ///Abandon Ship
 with oControl {cutscenename="VIVA" cutsceneline="WE NEED TO GET THE PARACHUTES! BUT THE DOOR'S TOO FAR AWAY..."}
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="PRECISAMOS DAQUELES PARAQUEDAS! MAS A PORTA TÁ NO QUINTO DOS INFERNO..."
+languagedialogue[2]="TÁ NA MÃO!"
+languagedialogue[3]="MAS COMO QUE TU- BAH. BELEZA. VAMOS SAIR LOGO DAQUI!"
+languagedialogue[4]="O AVIÃO CONTINUA CAINDO..."
+languagedialogue[5]="ÉEH CERTEZA QUE ELES IRÃO FICAR BEM. ONDE A GENTE VAI ATERRISSAR?"
+languagedialogue[6]="UUUH. SINISTRO. VAI SER LÁ MESMO!"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 with actorscreen newscript=function()
 {scenetime+=1; shadow=-1;
 
 if scenetime=240{ x=0 y=0
-with oControl {cutscenename="HINA" cutsceneline="I GOT THEM!"}
+with oControl {cutscenename="HINA" cutsceneline="I GOT THEM!"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}
 
 with oControl
 with actor2
@@ -42,7 +61,9 @@ if scenetime=262
 with oControl {with oCameoChar hspeed=0}
 
 if scenetime=480{ x=0 y=0
-with oControl {cutscenename="VIVA" cutsceneline="HOW DID YOU- ERR. ALRIGHT. LET'S HURRY AND GET OFF!"}
+with oControl {cutscenename="VIVA" cutsceneline="HOW DID YOU- ERR. ALRIGHT. LET'S HURRY AND GET OFF!"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
+	}
 }
 
 if scenetime=720
@@ -76,17 +97,23 @@ layer_set_visible("Tiles_1",0)
 
 if scenetime=980
 {	
-with oControl {cutscenename="BAHATI" cutsceneline="THE PLANE'S GOING TO CRASH..."}
+with oControl {cutscenename="BAHATI" cutsceneline="THE PLANE'S GOING TO CRASH..."
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 }
 
 if scenetime=1200
 {
-with oControl {cutscenename="VIVA" cutsceneline="EHH I'M SURE THEY'LL BE FINE. WHERE ARE WE GOING TO LAND?"}
+with oControl {cutscenename="VIVA" cutsceneline="EHH I'M SURE THEY'LL BE FINE. WHERE ARE WE GOING TO LAND?"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1420
 {image_index=0 x=0 y=0 hspeed=-0.05 vspeed=0 sprite_index=spr_lookamanor
-with oControl {cutscenename="SOFIA" cutsceneline="WOAH. SPOOKY. LET'S LAND THERE!"}
+with oControl {cutscenename="SOFIA" cutsceneline="WOAH. SPOOKY. LET'S LAND THERE!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 ////END SCENE PART
@@ -109,6 +136,22 @@ __view_set( e__VW.XView, 0, SceneX )
 SceneY=0
 __view_set( e__VW.XView, 0, SceneY )
 }
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="O QUE EU TAVA PENSANDO?! NÓS VAMOS MORRER!"
+languagedialogue[2]="UÉ, VOCÊ NÃO ACHOU QUE SERIA UM BOM PLANO?"
+languagedialogue[3]="SÉRIO ISSO? A GENTE VAI VIRAR PRESUNTO!"
+languagedialogue[4]="APENAS SE A GENTE NÃO CAIR EM ALGO QUE AMORTEÇA A QUEDA."
+languagedialogue[5]="QUÊ- MAS COMO QUE A GENTE VAI FAZER ISSO?!"
+languagedialogue[6]="TENHO MEUS TRUQUES. CONFIA. OLHA SÓ!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 with actorscreen {shadow=-1 isDepth=0 x=0 y=0 depth=-9999 specialcheck[0]=-320 specialcheck[1]=-320 specialcheck[2]=-320 specialcheck[3]=-320
 specialdraw=function()
 {image_index+=0.25
@@ -142,22 +185,34 @@ specialcheck[3]+=4
 newscript=function()
 {scenetime+=1;
 if scenetime=60{ x=0 y=0
-with oControl {cutscenename="VIVA" cutsceneline="WHAT WAS I THINKING?! WE ARE GONNA DIE!"}
+with oControl {cutscenename="VIVA" cutsceneline="WHAT WAS I THINKING?! WE ARE GONNA DIE!"
+	if global.Language!=0 cutsceneline=languagedialogue[1]
+	}
 }
 if scenetime=260{ x=0 y=0
-with oControl {cutscenename="SOFIA" cutsceneline="WOW, DIDN'T YOU THINK OF A GOOD PLAN?"}}
+with oControl {cutscenename="SOFIA" cutsceneline="WOW, DIDN'T YOU THINK OF A GOOD PLAN?"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}}
 
 if scenetime=460{ x=0 y=0
-with oControl {cutscenename="BAHATI" cutsceneline="YOU SERIOUS? WE ARE GONNA GO SPLAT!"}}
+with oControl {cutscenename="BAHATI" cutsceneline="YOU SERIOUS? WE ARE GONNA GO SPLAT!"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
+	}}
 
 if scenetime=680{ x=0 y=0
-with oControl {cutscenename="HINA" cutsceneline="NOT UNLESS WE LAND ON SOMETHING TO BREAK OUR FALL."}}
+with oControl {cutscenename="HINA" cutsceneline="NOT UNLESS WE LAND ON SOMETHING TO BREAK OUR FALL."
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}}
 
 if scenetime=1100{ x=0 y=0
-with oControl {cutscenename="VIVA" cutsceneline="WHAT- HOW ARE WE GONNA DO THAT?!"}}
+with oControl {cutscenename="VIVA" cutsceneline="WHAT- HOW ARE WE GONNA DO THAT?!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}}
 
 if scenetime=1260{ x=0 y=0 
-with oControl {cutscenename="HINA" cutsceneline="I KNOW A TRICK. TRUST ME. LOOK DOWN!"}}
+with oControl {cutscenename="HINA" cutsceneline="I KNOW A TRICK. TRUST ME. LOOK DOWN!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}}
 
 ////END SCENE PART
 if scenetime=1560 oControl.stageEndFX=1
@@ -169,6 +224,27 @@ if cutsceneDecmode=2
 {CutsceneStage=rm_stage5 ///Grab the harpy
 with oControl {cutscenename="VIVA" cutsceneline="THE HARPY! LET'S GRAB HER AND HANG ON TO THEM!"}
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="A HARPIA! PEGUEM ELA E MONTEM EM CIMA!"
+languagedialogue[2]="SHOW DE BOLA!"
+languagedialogue[3]="VÂNDALOS! SUGIRO QUE EXPLIQUEM SUAS PRETENSÕES ANTES QUE EU OS CONDENE A UMA FATAL QUEDA!"
+languagedialogue[4]="NÓS?! VOCÊ QUE VEIO PRA CIMA!"
+languagedialogue[5]="CERTAMENTE! CONTRA MELIANTES SUJOS COMO VÓS. OS QUAIS INVADIRAM O MEU NINHO PARA USURPAR DOS INDEFESOS!"
+languagedialogue[6]="AH... VOCÊ MIROU NA GALERA ERRADA, MADAME. NÓS TAMBÉM FOMOS ROUBADOS!"
+languagedialogue[7]="ELES LEVARAM O MEU TESOURO."
+languagedialogue[8]="NOSSOS TESOUROS!!!"
+languagedialogue[9]="OH, QUANTO CONSTRAGIMENTO! SENDO ASSIM, PEÇO PERDÃO. ME PERMITIRIAM REPARAR MEUS ATOS CONTRA VÓS LEVANDO-LHES À LOCALIDADE ONDE OS VÂNDALOS PODEM ESTAR?"
+languagedialogue[10]="E QUE LUGAR SERIA?"
+languagedialogue[11]="TAL CASINO TEM UMA SEGURANÇA ROBUSTA, MAS É UM LOCAL ONDE SERÃO CAPAZES DE ENCONTRAR INDÍCIOS SOBRE ONDE SUAS PRECIOSIDADES FORAM LEVADAS."
+languagedialogue[12]="ENTÃO VAMOS LÁ. VAI SER MAMÃO COM AÇUCAR, NÃO É?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 with actor1 {sprite_index=spr_viva_point image_index=0 image_xscale=1}
 with actor2 {sprite_index=spr_hina_point image_index=0 image_xscale=1}
 with actor3 {sprite_index=spr_bahati_point image_index=0 image_xscale=1}
@@ -177,8 +253,12 @@ with actor4 {sprite_index=spr_sofia_point image_index=0 image_xscale=1}
 with actorscreen newscript=function()
 {scenetime+=1; shadow=-1;
 if scenetime=240{ x=0 y=0
-with oControl {cutscenename="BAHATI" cutsceneline="I GOT THIS!"}
+with oControl {cutscenename="BAHATI" cutsceneline="I GOT THIS!"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}
 }
+
+
 
 if scenetime=480
 {sprite_index=spr_allblackscreen x=0 y=0 image_xscale=999
@@ -204,7 +284,9 @@ with oControl {
 layer_set_visible("Tiles_1",0)
 layer_set_visible("Clouds",0)
 	
-	cutscenename="HARPILDA" cutsceneline="WELL I NEVER! YOU BETTER ANSWER ME WHAT ARE YOU DOING BEFORE I SHAKE YOU ALL OFF OF ME!"}
+	cutscenename="HARPILDA" cutsceneline="WELL I NEVER! YOU BETTER ANSWER ME WHAT ARE YOU DOING BEFORE I SHAKE YOU ALL OFF OF ME!"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
+	}
 }
 
 if scenetime>=680
@@ -216,33 +298,51 @@ actor5.z=lerp(actor5.z,70,0.1)
 }
 
 if scenetime=1000{ 
-with oControl {cutscenename="VIVA" cutsceneline="WE?! YOU ATTACKED US FIRST!"}
+with oControl {cutscenename="VIVA" cutsceneline="WE?! YOU ATTACKED US FIRST!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 }
 if scenetime=1220{ 
-with oControl {cutscenename="HARPILDA" cutsceneline="OF COURSE! YOU NO GOOD THIEVES WENT INTO MY TURF TO STEAL FROM THE WEAK!"}
+with oControl {cutscenename="HARPILDA" cutsceneline="OF COURSE! YOU NO GOOD THIEVES WENT INTO MY TURF TO STEAL FROM THE WEAK!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 if scenetime=1520{
-with oControl {cutscenename="BAHATI" cutsceneline="OH... YOU MAY HAVE GOTTEN THE WRONG PEOPLE, MA'AM. WE GOT ROBBED TOO!"}
+with oControl {cutscenename="BAHATI" cutsceneline="OH... YOU MAY HAVE GOTTEN THE WRONG PEOPLE, MA'AM. WE GOT ROBBED TOO!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 if scenetime=1820{ 
-with oControl {cutscenename="VIVA" cutsceneline="THEY STOLE MY TREASURE."}
+with oControl {cutscenename="VIVA" cutsceneline="THEY STOLE MY TREASURE."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 if scenetime=1920{ 
-with oControl {cutscenename="SOFIA" cutsceneline="OUR TREASURE!!!"}
+with oControl {cutscenename="SOFIA" cutsceneline="OUR TREASURE!!!"
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 if scenetime=2120{ 
-with oControl {cutscenename="HARPILDA" cutsceneline="OH, WELL THAT’S EMBARRASSING. WELL, I DO APOLOGIZE. MAYBE I CAN MAKE IT UP TO YOU DEARIES BY TAKING YOU TO ONE PLACE THEY MIGHT HAVE SHOWN UP MOSTLY?"}
+with oControl {cutscenename="HARPILDA" cutsceneline="OH, WELL THAT’S EMBARRASSING. WELL, I DO APOLOGIZE. MAYBE I CAN MAKE IT UP TO YOU DEARIES BY TAKING YOU TO ONE PLACE THEY MIGHT HAVE SHOWN UP MOSTLY?"
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 if scenetime=2620{ 
 with oControl {
 	with actor5 sprite_index=spr_divasonharpy2
-	cutscenename="HINA" cutsceneline="WHAT PLACE IS IT?"}
+	cutscenename="HINA" cutsceneline="WHAT PLACE IS IT?"
+	if global.Language!=0 cutsceneline=languagedialogue[10]
+	}
 }
 if scenetime=2780{ 
-with oControl {cutscenename="HARPILDA" cutsceneline="THAT CASINO HAS TOUGH SECURITY, BUT THAT’S ONE PLACE WHERE YOU CAN FIND CLUES FOR WHERE YOUR PRECIOUS THINGS GOT TAKEN TO."}
+with oControl {cutscenename="HARPILDA" cutsceneline="THAT CASINO HAS TOUGH SECURITY, BUT THAT’S ONE PLACE WHERE YOU CAN FIND CLUES FOR WHERE YOUR PRECIOUS THINGS GOT TAKEN TO."
+	if global.Language!=0 cutsceneline=languagedialogue[11]
+	}
 }
 if scenetime=3180{ x=0 y=0 sprite_index=spr_dojocasinoplace hspeed=-0.1
-with oControl {cutscenename="VIVA" cutsceneline="THEN LET'S GO. HOW HARD CAN IT BE?"}
+with oControl {cutscenename="VIVA" cutsceneline="THEN LET'S GO. HOW HARD CAN IT BE?"
+	if global.Language!=0 cutsceneline=languagedialogue[12]
+	}
 }
 
 ////END SCENE PART

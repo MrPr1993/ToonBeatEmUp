@@ -14,3 +14,4 @@ with scenebg {alarm[0]=-1 isDepth=0 animEnd=0 image_speed=0 sprite_index=spr_div
 	hspeed=-0.2/4 vspeed-=0.05/2 depth=6}
 
 cutsceneline="AN ELECTRIFYING BEAUTY AIN'T SHE? SHE'LL BRING OUT GLAMOUR THROUGH HER\nSONGS."
+if global.Language!=0 cutsceneline=languagedialogue[2]

@@ -33,3 +33,61 @@ with blackbg {haspal=0 alarm[0]=4 depth=-999999999 isDepth=0 animEnd=0 image_spe
 stageIntro=0
 }
 
+
+
+
+switch(global.Language)
+{
+case 2: ////Portuguese
+
+CDtextT="LADY WOLF ESTÁ FUGINDO!\nO QUE VOCÊ VAI FAZER?"
+CDtextA="SEGUIR ELA."
+CDtextB="IMPEDIR ELA."
+CDtextC="POUPAR ELA."
+
+languagedialogue[1]="BELEZA. PRA ONDE O CAMINHÃO FOI? ABRE O BICO CACHORRA!"
+languagedialogue[2]="E-EII! ISSO É GROSSERIA!"
+languagedialogue[3]="E EU NÃO VOU PEGAR LEVE ATÉ VOCÊ ME DIZER PRA ONDE LEVARAM MEU DIAMANTE!"
+languagedialogue[4]="Ô GAROTA. TALVEZ SEJA MELHOR SE ACALMAR. ELA JÁ FOI ESPANCADA O BASTANTE."
+languagedialogue[5]="AH É. VOCÊS TRÊS. SUAS COISAS TAMBÉM FORAM ROUBADAS."
+languagedialogue[6]="POIS É... E OS LÁBIOS DESSA AÍ PARECEM ESTAR BEM SELADOS..."
+languagedialogue[7]="OH~HOHO, PERMITA-ME! DE PERSUASÃO EU ENTENDO BEM."
+languagedialogue[8]="PRA ONDE FOI O MEU TESOURO?! COMEÇE A HABLAR, PERRA, OU O MEU PÉ VAI PARAR DENTRO DO TEU-"
+languagedialogue[9]="URGH! GHAK!- CAI DENTRO!"
+languagedialogue[10]="UAU, ISSO NÃO É MEIO BRUTAL?"
+languagedialogue[11]= "QUALÉ, NÃO TEM PRA QUE BATER EM CACHORRO MORTO PRA CONSEGUIR RESPOSTAS."
+languagedialogue[12]= "HMM... COM LICENÇA?"
+languagedialogue[13]= "OLHA SÓ PRA COITADA, JÁ TEVE O SUFICIENTE. INTERROGATÓRIO AGRESSIVO NEM SEM FUNCIONA. NUNCA VIU NOS FILMES?"
+languagedialogue[14]="BEM, ENTÃO O QUE VOCÊ SUGERE?"
+languagedialogue[15]= "ÚH, VOCÊS DUAS PODEM BANCAR A POLICIAL MÁ E A POLICIAL BOA!"
+languagedialogue[16]= "POLICIAL BOA! FALEI PRIMEIRO!"
+languagedialogue[17]="QUE- QUANTOS ANOS VOCÊ ACHA QUE TEM? 5!?"
+languagedialogue[18]="EU IA SUGERIR USAR UM APITO DE CACHORRO."
+//(the divas start arguing)
+languagedialogue[19]="APITO DE CACHORRO?!"
+languagedialogue[20]="ISSO É RIDÍCULO, COMO ISSO VAI AJUDAR?"
+languagedialogue[21]="COMO ASSIM?! É UMA EXCELENTE IDÉIA!"
+languagedialogue[22]="ISSO PARECE MEIO BOBO, MAS... SABE COMO É..."
+languagedialogue[23]="GOSTO DESSE PLANO... MAS SEI LÁ..."
+languagedialogue[24]="OLHA, TENHO UM PLANO MELHOR! E É TIPO..."
+languagedialogue[25]="NÃO, EU QUE TENHO UM PLANO MELHOR! E É..."
+languagedialogue[26]="UH... SENHORITAS?"
+languagedialogue[27]="TENHO UMA IDÉIA! E VOU..."
+languagedialogue[28]="(BAITA DEBATE)"
+languagedialogue[29]="OPA, POSSO FALA MAIS UMA COISINHA TAMBÉM?"
+languagedialogue[30]="...O QUE É?"
+languagedialogue[31]="A LOBINHA FOI PASSEAR."
+languagedialogue[32]="COMO É QUE É?!"
+languagedialogue[33]="PARADA JÁ AÍ!"
+
+
+
+cutsceneline=languagedialogue[1]
+
+break;
+}
+
+
+
+
+

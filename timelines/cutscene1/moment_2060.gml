@@ -7,3 +7,4 @@ cutsceneline="GUCK! GACK!- BITE ME!"
 
 layer_hspeed("BGcity",0)
 
+if global.Language!=0 cutsceneline=languagedialogue[9]

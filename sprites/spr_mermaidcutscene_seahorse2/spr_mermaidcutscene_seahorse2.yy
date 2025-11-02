@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_mermaidcutscene_seahorse2",
   "bboxMode":0,
   "bbox_bottom":123,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"1ef06628-07d2-4c07-bdd6-0df2a67630b0","name":"1ef06628-07d2-4c07-bdd6-0df2a67630b0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"388f0d42-44c9-4cf3-ad8e-785d635b5efb","name":"388f0d42-44c9-4cf3-ad8e-785d635b5efb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1ef06628-07d2-4c07-bdd6-0df2a67630b0","name":"1ef06628-07d2-4c07-bdd6-0df2a67630b0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"388f0d42-44c9-4cf3-ad8e-785d635b5efb","name":"388f0d42-44c9-4cf3-ad8e-785d635b5efb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -72,15 +72,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","path":"sprites/spr_mermaidcutscene_seahorse2/spr_mermaidcutscene_seahorse2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ad2e76c0-66ba-46b0-9604-f9490deea20a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ef06628-07d2-4c07-bdd6-0df2a67630b0","path":"sprites/spr_mermaidcutscene_seahorse2/spr_mermaidcutscene_seahorse2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d7a06058-2105-46b5-aa98-c6bc52397679","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"388f0d42-44c9-4cf3-ad8e-785d635b5efb","path":"sprites/spr_mermaidcutscene_seahorse2/spr_mermaidcutscene_seahorse2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e292cc46-bb71-4a33-89aa-7bbaac6ec7e4","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9b1a5057-51f3-4ee8-a453-b7a96b8169ef","path":"sprites/spr_mermaidcutscene_seahorse2/spr_mermaidcutscene_seahorse2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ad2e76c0-66ba-46b0-9604-f9490deea20a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ef06628-07d2-4c07-bdd6-0df2a67630b0","path":"sprites/spr_mermaidcutscene_seahorse2/spr_mermaidcutscene_seahorse2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d7a06058-2105-46b5-aa98-c6bc52397679","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"388f0d42-44c9-4cf3-ad8e-785d635b5efb","path":"sprites/spr_mermaidcutscene_seahorse2/spr_mermaidcutscene_seahorse2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e292cc46-bb71-4a33-89aa-7bbaac6ec7e4","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -3,6 +3,7 @@ newsShow=1
 newsText=1
 cutscenename="NARRATOR"
 cutsceneline="AH, THE LOVELY VIVA, HAILING FROM LAS VEGAS!"
+if global.Language!=0 cutsceneline=languagedialogue[1]
 newspaperspin=0
 newsScale=0.01
 newsIndex=0

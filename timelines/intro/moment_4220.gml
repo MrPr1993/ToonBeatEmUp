@@ -5,3 +5,4 @@ scene1.x=0 scene1.vspeed=0.8
 scene2.vspeed=-0.4
 
 cutsceneline="IT'S SHOWTIME!"
+if global.Language!=0 cutsceneline=languagedialogue[14]

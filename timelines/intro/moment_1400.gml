@@ -9,6 +9,6 @@ scene1.vspeed=-0.05
 newsRepeat=2
 
 cutsceneline="A WONDER WITH SUCH EARTHLY STRENGTH, SHE'S ONE FABULOUS GAL!"
-
+if global.Language!=0 cutsceneline=languagedialogue[6]
 with scenebg {image_index=2 x=8 y=-44
 	hspeed=-0.2/4 vspeed=0 depth=6}

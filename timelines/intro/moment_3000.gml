@@ -11,3 +11,4 @@ scene2.vspeed=0
 
 cutscenename="VAN BAD"
 cutsceneline="OH YES...A VERY GOOD NIGHT INDEED... AND THERE THEY ARE. RIGHT THERE, EASY, EASY LOOT!"
+if global.Language!=0 cutsceneline=languagedialogue[11]

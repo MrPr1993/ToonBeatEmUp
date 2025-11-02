@@ -48,3 +48,4 @@ cutscenename="HINA"
 cutsceneline="WOAH, THAT SEEMS KINDA HARSH?"
 
 
+if global.Language!=0 cutsceneline=languagedialogue[10]

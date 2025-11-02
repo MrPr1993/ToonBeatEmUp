@@ -16,3 +16,4 @@ cutscenename="VIVA"
 cutsceneline="I KNOW WHERE IT IS. DAMN. BUT HOW ARE WE GOING TO GET THERE...?"
 
 
+if global.Language!=0 cutsceneline=languagedialogue[3]

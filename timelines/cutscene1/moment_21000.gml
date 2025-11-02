@@ -3,3 +3,5 @@ with diva3 {sprite_index=spr_bahati_talk image_xscale=1 image_speed=0.1 image_in
 
 cutscenename="BAHATI"
 cutsceneline="OH DEAR! IT'S GONNA LEAVE SOON! BUT THE TICKETS ARE SOLD OUT."
+
+if global.Language!=0 cutsceneline=languagedialogue[5]

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_mirrorlady_uhoh",
   "bboxMode":0,
   "bbox_bottom":143,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4290d4c3-26d1-481f-962c-758c8912d1d0","name":"4290d4c3-26d1-481f-962c-758c8912d1d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"27d6516e-34dd-494e-bc80-5b9552e0d845","name":"27d6516e-34dd-494e-bc80-5b9552e0d845","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4b5c4393-902a-46e2-b529-91ca209c4e8d","name":"4b5c4393-902a-46e2-b529-91ca209c4e8d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4290d4c3-26d1-481f-962c-758c8912d1d0","name":"4290d4c3-26d1-481f-962c-758c8912d1d0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"27d6516e-34dd-494e-bc80-5b9552e0d845","name":"27d6516e-34dd-494e-bc80-5b9552e0d845","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4b5c4393-902a-46e2-b529-91ca209c4e8d","name":"4b5c4393-902a-46e2-b529-91ca209c4e8d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -72,15 +72,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4290d4c3-26d1-481f-962c-758c8912d1d0","path":"sprites/spr_mirrorlady_uhoh/spr_mirrorlady_uhoh.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"57c45d03-54be-4a0d-be78-020124e4d37f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"27d6516e-34dd-494e-bc80-5b9552e0d845","path":"sprites/spr_mirrorlady_uhoh/spr_mirrorlady_uhoh.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b39e7d1c-a8a3-4d6f-a5ea-5b31c905a99b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4b5c4393-902a-46e2-b529-91ca209c4e8d","path":"sprites/spr_mirrorlady_uhoh/spr_mirrorlady_uhoh.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4eb000fb-66bf-4a22-ab28-be20a831c9c5","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4290d4c3-26d1-481f-962c-758c8912d1d0","path":"sprites/spr_mirrorlady_uhoh/spr_mirrorlady_uhoh.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"57c45d03-54be-4a0d-be78-020124e4d37f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"27d6516e-34dd-494e-bc80-5b9552e0d845","path":"sprites/spr_mirrorlady_uhoh/spr_mirrorlady_uhoh.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b39e7d1c-a8a3-4d6f-a5ea-5b31c905a99b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4b5c4393-902a-46e2-b529-91ca209c4e8d","path":"sprites/spr_mirrorlady_uhoh/spr_mirrorlady_uhoh.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4eb000fb-66bf-4a22-ab28-be20a831c9c5","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

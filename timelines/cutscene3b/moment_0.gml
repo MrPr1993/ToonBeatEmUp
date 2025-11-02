@@ -12,6 +12,8 @@ CDtextA="GREEN DOOR."
 CDtextB="RED DOOR."
 CDtextC="BLUE DOOR."
 
+
+
 cutscenename="VIVA" cutsceneline="Huh?! Where'd that haughty ghost get off to?"
 
 }

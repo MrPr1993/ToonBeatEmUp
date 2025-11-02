@@ -62,7 +62,7 @@ if scenetime=120
 with oControl
 {cutscenename="VIVA"
 cutsceneline="THE PLANE'S GOING DOWN!"
-
+if global.Language!=0 cutsceneline=languagedialogue[1]
 with actor1 {sprite_index=spr_viva_point image_index=0 image_xscale=-1}
 with actor2 {sprite_index=spr_hina_point image_index=0 image_xscale=-1}
 with actor3 {sprite_index=spr_bahati_point image_index=0 image_xscale=-1}
@@ -76,6 +76,7 @@ if scenetime=300
 with oControl
 {cutscenename="BAHATI"
 cutsceneline="OH NO! WHAT DO WE DO?!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -84,6 +85,7 @@ if scenetime=400
 with oControl
 {cutscenename="HINA"
 cutsceneline="WOW. IT'S A LONG WAY DOWN..."
+if global.Language!=0 cutsceneline=languagedialogue[3]
 with actor2 {sprite_index=spr_hina_cutscene image_index=0 image_xscale=-1}
 }
 }
@@ -93,7 +95,7 @@ if scenetime=660
 with oControl
 {cutscenename="SOFIA"
 cutsceneline="LOOK THERE, CHICAS!!"
-
+if global.Language!=0 cutsceneline=languagedialogue[4]
 with actor4 {sprite_index=spr_sofia_point image_index=1 image_xscale=-1}
 }
 
@@ -148,6 +150,7 @@ __view_set( e__VW.YView, 0, SceneY )
 
 cutscenename="SOFIA"
 cutsceneline="DAMN IT! SHE'S GETTING AWAY AGAIN!"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -157,7 +160,7 @@ if scenetime=1460
 	{canSkipCutscene=0
 cutscenename="VIVA"
 cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
-
+if global.Language!=0 cutsceneline=languagedialogue[6]
 with actor1 {sprite_index=spr_viva_point image_index=0 image_xscale=-1}
 
 timeline_position=5700
@@ -216,5 +219,25 @@ SceneY=32
 __view_set( e__VW.XView, 0, SceneY )
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="O NAVIO NÃO TEM TIMONEIRO!\nE AGORA?!"
+CDtextA="PEGAR OS PARAQUEDAS!"
+CDtextB="PULAR DO AVIÃO!"
+CDtextC="USAR A HARPIA!"
+
+languagedialogue[1]="O AVIÃO TÁ CAINDO!"
+languagedialogue[2]="DANOU-SE! O QUE A GENTE FAZ?!"
+languagedialogue[3]="UAU. É UMA QUEDA E TANTO..."
+languagedialogue[4]="OLHEM LÁ, CHICAS!!"
+languagedialogue[5]="SAFADA! ELA ESTÁ FUGINDO DE NOVO!"
+languagedialogue[6]="ESQUEÇE ISSO! PRECISAMOS PENSAR EM COMO SE SAFAR DESSA!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
 
 }

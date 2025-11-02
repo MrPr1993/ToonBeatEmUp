@@ -4,6 +4,9 @@ scene1.hspeed=1.5
 
 cutscenename="VIVA"
 cutsceneline="OH RIGHT. YOU THREE. YOUR THINGS GOT STOLEN TOO."
+
+if global.Language!=0 cutsceneline=languagedialogue[5]
+
 scene1.image_index=0 scene1.image_speed=0
 with scene1
 {hspeed=1 vspeed=-0.1 lerpslow=0}

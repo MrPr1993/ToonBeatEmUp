@@ -21,3 +21,4 @@ cutsceneline="OOH, YOU TWO CAN PLAY GOOD COP, BAD COP!"
 
 SceneX=0 __view_set( e__VW.XView, 0, SceneX ) //324
 
+if global.Language!=0 cutsceneline=languagedialogue[15]

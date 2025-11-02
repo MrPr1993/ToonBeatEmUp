@@ -37,7 +37,7 @@ __view_set( e__VW.YView, 0, SceneY )
 
 cutscenename="HINA"
 cutsceneline="WOLFY LADY'S GONE."
-
+if global.Language!=0 cutsceneline=languagedialogue[31]
 global.CutsceneSkip=0
 
 timeline_position=5552

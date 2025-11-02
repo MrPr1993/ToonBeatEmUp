@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_snowgirl_dizzy",
   "bboxMode":0,
   "bbox_bottom":107,
@@ -12,10 +12,10 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"68528c92-a2ef-4a64-aa5c-d580a59d5673","name":"68528c92-a2ef-4a64-aa5c-d580a59d5673","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3890c4b1-13ee-410b-9291-834aa4219dcd","name":"3890c4b1-13ee-410b-9291-834aa4219dcd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ad164e07-d099-4eba-bb3e-5646436c8ff4","name":"ad164e07-d099-4eba-bb3e-5646436c8ff4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b1700bb9-cf2f-479e-9e2f-670fafbddcb9","name":"b1700bb9-cf2f-479e-9e2f-670fafbddcb9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"68528c92-a2ef-4a64-aa5c-d580a59d5673","name":"68528c92-a2ef-4a64-aa5c-d580a59d5673","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3890c4b1-13ee-410b-9291-834aa4219dcd","name":"3890c4b1-13ee-410b-9291-834aa4219dcd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ad164e07-d099-4eba-bb3e-5646436c8ff4","name":"ad164e07-d099-4eba-bb3e-5646436c8ff4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b1700bb9-cf2f-479e-9e2f-670fafbddcb9","name":"b1700bb9-cf2f-479e-9e2f-670fafbddcb9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -71,18 +71,10 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"68528c92-a2ef-4a64-aa5c-d580a59d5673","path":"sprites/spr_snowgirl_dizzy/spr_snowgirl_dizzy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a64fb5ab-31b1-4e7a-9705-1bb5eb871b44","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3890c4b1-13ee-410b-9291-834aa4219dcd","path":"sprites/spr_snowgirl_dizzy/spr_snowgirl_dizzy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c90dc5b3-9fc4-4187-a892-5bb2ddc73323","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ad164e07-d099-4eba-bb3e-5646436c8ff4","path":"sprites/spr_snowgirl_dizzy/spr_snowgirl_dizzy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7952210a-ac09-4c20-9dfa-0f7aba57498c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b1700bb9-cf2f-479e-9e2f-670fafbddcb9","path":"sprites/spr_snowgirl_dizzy/spr_snowgirl_dizzy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9c9490f7-0c46-4b98-a884-47b60ac75442","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"68528c92-a2ef-4a64-aa5c-d580a59d5673","path":"sprites/spr_snowgirl_dizzy/spr_snowgirl_dizzy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a64fb5ab-31b1-4e7a-9705-1bb5eb871b44","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3890c4b1-13ee-410b-9291-834aa4219dcd","path":"sprites/spr_snowgirl_dizzy/spr_snowgirl_dizzy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c90dc5b3-9fc4-4187-a892-5bb2ddc73323","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ad164e07-d099-4eba-bb3e-5646436c8ff4","path":"sprites/spr_snowgirl_dizzy/spr_snowgirl_dizzy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7952210a-ac09-4c20-9dfa-0f7aba57498c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b1700bb9-cf2f-479e-9e2f-670fafbddcb9","path":"sprites/spr_snowgirl_dizzy/spr_snowgirl_dizzy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9c9490f7-0c46-4b98-a884-47b60ac75442","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

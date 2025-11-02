@@ -8,3 +8,4 @@ cutscenename="VIVA"
 cutsceneline="WHA- HOW OLD DO YOU THINK WE ARE, 5!?"
 
 
+if global.Language!=0 cutsceneline=languagedialogue[17]

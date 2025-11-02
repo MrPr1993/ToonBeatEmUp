@@ -2,7 +2,7 @@
 // You can write your code in this editor
 controller_setup()
 
-var languagemax=1;
+var languagemax=2;
 
 if controlSettings=0
 {

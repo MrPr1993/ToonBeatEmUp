@@ -20,4 +20,5 @@ scene2.vspeed=0
 timeline_position=4080
 }
 cutsceneline="HAHAHAHAHAHA!!!"
+if global.Language!=0 cutsceneline=languagedialogue[13]
 

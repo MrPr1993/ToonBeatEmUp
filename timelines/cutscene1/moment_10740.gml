@@ -5,3 +5,4 @@ cutscenename="BAHATI"
 cutsceneline="THE AIRPORT? WELL. GUESS IT'S A GOOD START."
 
 
+if global.Language!=0 cutsceneline=languagedialogue[6]

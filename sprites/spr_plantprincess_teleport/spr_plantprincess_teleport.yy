@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_plantprincess_teleport",
   "bboxMode":0,
   "bbox_bottom":133,
@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5d2691fc-d36f-48e4-a9d0-7b4e20a44486","name":"5d2691fc-d36f-48e4-a9d0-7b4e20a44486","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"71b57ab3-f05a-4efc-b1e8-fe766e754e16","name":"71b57ab3-f05a-4efc-b1e8-fe766e754e16","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f9ad8d07-ae4e-47c9-afbf-59c498834530","name":"f9ad8d07-ae4e-47c9-afbf-59c498834530","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3f0eb9de-3a45-4297-af80-f412dbbc758a","name":"3f0eb9de-3a45-4297-af80-f412dbbc758a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"10a754ec-1714-4160-b904-ee542a00dbfd","name":"10a754ec-1714-4160-b904-ee542a00dbfd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"98306620-14d0-4778-8f8a-f11cec5c9767","name":"98306620-14d0-4778-8f8a-f11cec5c9767","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5d2691fc-d36f-48e4-a9d0-7b4e20a44486","name":"5d2691fc-d36f-48e4-a9d0-7b4e20a44486","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"71b57ab3-f05a-4efc-b1e8-fe766e754e16","name":"71b57ab3-f05a-4efc-b1e8-fe766e754e16","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f9ad8d07-ae4e-47c9-afbf-59c498834530","name":"f9ad8d07-ae4e-47c9-afbf-59c498834530","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3f0eb9de-3a45-4297-af80-f412dbbc758a","name":"3f0eb9de-3a45-4297-af80-f412dbbc758a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"10a754ec-1714-4160-b904-ee542a00dbfd","name":"10a754ec-1714-4160-b904-ee542a00dbfd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"98306620-14d0-4778-8f8a-f11cec5c9767","name":"98306620-14d0-4778-8f8a-f11cec5c9767","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -75,24 +75,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5d2691fc-d36f-48e4-a9d0-7b4e20a44486","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e336f64e-efd1-4229-ac76-6d9a6d109050","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"71b57ab3-f05a-4efc-b1e8-fe766e754e16","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"08288286-7f70-4a7e-98d1-a47dbeec586f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f9ad8d07-ae4e-47c9-afbf-59c498834530","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c4201945-e421-436b-9d22-f15cffd7ec1a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3f0eb9de-3a45-4297-af80-f412dbbc758a","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3dcdf952-85fb-4350-9822-0f5585b73974","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"10a754ec-1714-4160-b904-ee542a00dbfd","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"37fd73d3-6859-475d-b4b7-60e6bb6fcf50","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"98306620-14d0-4778-8f8a-f11cec5c9767","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c11b5a6f-be94-4e80-96ea-d00556df96d0","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"5d2691fc-d36f-48e4-a9d0-7b4e20a44486","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e336f64e-efd1-4229-ac76-6d9a6d109050","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"71b57ab3-f05a-4efc-b1e8-fe766e754e16","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"08288286-7f70-4a7e-98d1-a47dbeec586f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f9ad8d07-ae4e-47c9-afbf-59c498834530","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c4201945-e421-436b-9d22-f15cffd7ec1a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3f0eb9de-3a45-4297-af80-f412dbbc758a","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3dcdf952-85fb-4350-9822-0f5585b73974","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"10a754ec-1714-4160-b904-ee542a00dbfd","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"37fd73d3-6859-475d-b4b7-60e6bb6fcf50","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"98306620-14d0-4778-8f8a-f11cec5c9767","path":"sprites/spr_plantprincess_teleport/spr_plantprincess_teleport.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c11b5a6f-be94-4e80-96ea-d00556df96d0","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

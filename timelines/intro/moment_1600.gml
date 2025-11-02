@@ -10,6 +10,7 @@ scene1.x=99999
 
 newsRepeat=1
 cutsceneline="AND LET'S NOT FORGET SOFIA! A LOVELY BEAUTY FROM MEXICO!"
+if global.Language!=0 cutsceneline=languagedialogue[7]
 scenebg.x=99999
 
 newspaperspin=0

@@ -91,6 +91,7 @@ sprite_index=mask_none scenetime=340
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="Well, this is what we get for using my weak avatar... we may as well-"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 } x=0
 y=0 vspeed=-0.2
 }
@@ -127,6 +128,7 @@ thief1=instance_create_depth(480,188,-1,oCutHalfFX) with thief1
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="HEY! WHERE ARE THOSE FOOLS DOING?!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -138,6 +140,7 @@ with oControl {SceneX=0 __view_set( e__VW.XView, 0, SceneX )}
 with oControl
 	{
 cutscenename="VIVA" cutsceneline="Well they're not on our side. Our things got stolen too."
+if global.Language!=0 cutsceneline=languagedialogue[4]
 	}
 }
 
@@ -148,6 +151,7 @@ with actor1 {sprite_index=spr_viva_opening image_speed=0.25}
 with oControl
 {
 cutscenename="VIVA" cutsceneline="What's the deal with those things, anyway?"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -181,6 +185,7 @@ with actor5 image_xscale=1
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="THOSE THINGS?! They are ancient relics, you dunce!"
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 
@@ -189,6 +194,7 @@ if scenetime=1900
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="There will be consequences if they are taken to the wrong hands!"
+if global.Language!=0 cutsceneline=languagedialogue[7]
 }
 }
 
@@ -202,6 +208,7 @@ with actor5 {image_xscale=-1 x=320-64 sprite_index=spr_pharaoh_shakeviva image_s
 with oControl
 {
 cutscenename="BAHATI" cutsceneline="Like ours... we both are after those thieves who took your treasures. Um... can you please let go of Miss Viva?"
+if global.Language!=0 cutsceneline=languagedialogue[8]
 }
 }
 
@@ -211,6 +218,7 @@ with actor5 {image_speed=0}
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="Right... of course."
+if global.Language!=0 cutsceneline=languagedialogue[9]
 }
 }
 
@@ -225,6 +233,7 @@ with oControl
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="..."
+if global.Language!=0 cutsceneline=languagedialogue[10]
 }
 }
 }
@@ -237,6 +246,7 @@ with actor5 {sprite_index=spr_pharaoh_talk image_speed=0.25 image_index=0}
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="I've been gone for quite a while. But maybe we could assist you."
+if global.Language!=0 cutsceneline=languagedialogue[11]
 }
 }
 
@@ -249,6 +259,7 @@ with actor5 {sprite_index=spr_pharaoh_talk3 image_speed=0.25 image_index=0}
 with oControl
 {
 cutscenename="HATHOR" cutsceneline="We may have some friends from the swamp and the beach. They should still be around."
+if global.Language!=0 cutsceneline=languagedialogue[12]
 }
 }
 
@@ -267,7 +278,9 @@ with actor1 {x=320-64-48 sprite_index=spr_viva_attack image_speed=0 image_index=
 
 with oControl
 {
-cutscenename="HATHOR" cutsceneline="What is your decision, mortals?"}
+cutscenename="HATHOR" cutsceneline="What is your decision, mortals?"
+if global.Language!=0 cutsceneline=languagedialogue[13]
+}
 }
 
 if scenetime=6121
@@ -330,6 +343,35 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="ELA ESTÁ OFERECENDO\nAJUDA."
+CDtextA="PERGUNTAR SOBRE O PÂNTANO."
+CDtextB="NEGAR A AJUDA."
+CDtextC="PERGUNTAR SOBRE A PRAIA."
+
+languagedialogue[1]="Urgh.... “É-me inconcebível que minha queda se deva a vis mortais!"
+languagedialogue[2]="Ora, eis o que colho por lançar crenças em meu avatar débil... bem podemos, então-"
+languagedialogue[3]="ORDEM! DE QUAL NATUREZA SÃO ESTES SALTEADORES?!"
+languagedialogue[4]="Eles não estão com a gente. Nós fomos roubadas também."
+languagedialogue[5]="Mas enfim, o que é que são essas coisas?"
+languagedialogue[6]="ESTAS COUSAS?! São antiquíssimas relíquias, vossa tolicetude!"
+languagedialogue[7]="Há de haver consequências caso estejam entre as posses de maus homens!"
+languagedialogue[8]="Como agora... todas nós estamos atrás desses ladrões que levaram os seus tesouros. hmm... poderia soltar a senhorita Viva, por favor?"
+languagedialogue[9]="Deveras... certamente."
+languagedialogue[10]="..."
+languagedialogue[11]="Não estive em presença faz eras. Porém porventura eu lhe concederei assistência.."
+languagedialogue[12]="Podemos ainda contar com alguns amigos vindos do pântano e da praia. creio que por estas bandas inda se acham..."
+languagedialogue[13]="Ó mortais. Que caminho haveis de escolher?"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 

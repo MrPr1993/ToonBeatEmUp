@@ -9,3 +9,4 @@ changespr=spr_bahati_cutscene
 changeimgspd=0
 changeimpindex=0
 	}
+if global.Language!=0 cutsceneline=languagedialogue[2]

@@ -6,3 +6,4 @@ cutscenename="BAHATI"
 cutsceneline="GOOD COP, CALLED IT FIRST!"
 
 
+if global.Language!=0 cutsceneline=languagedialogue[16]

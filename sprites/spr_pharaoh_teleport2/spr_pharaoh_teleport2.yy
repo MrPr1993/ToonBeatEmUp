@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_pharaoh_teleport2",
   "bboxMode":0,
   "bbox_bottom":27,
@@ -12,9 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ae858a9c-7d6c-414f-87d6-2cae24f5c430","name":"ae858a9c-7d6c-414f-87d6-2cae24f5c430","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a99506a1-b048-41b7-9fcf-e127bf252412","name":"a99506a1-b048-41b7-9fcf-e127bf252412","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f25a33eb-a2c4-4a58-ad8f-3ee2738c8d4c","name":"f25a33eb-a2c4-4a58-ad8f-3ee2738c8d4c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ae858a9c-7d6c-414f-87d6-2cae24f5c430","name":"ae858a9c-7d6c-414f-87d6-2cae24f5c430","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a99506a1-b048-41b7-9fcf-e127bf252412","name":"a99506a1-b048-41b7-9fcf-e127bf252412","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f25a33eb-a2c4-4a58-ad8f-3ee2738c8d4c","name":"f25a33eb-a2c4-4a58-ad8f-3ee2738c8d4c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -70,15 +70,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae858a9c-7d6c-414f-87d6-2cae24f5c430","path":"sprites/spr_pharaoh_teleport2/spr_pharaoh_teleport2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7920c85a-9a0b-49d7-8dd9-14dbc6d73142","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a99506a1-b048-41b7-9fcf-e127bf252412","path":"sprites/spr_pharaoh_teleport2/spr_pharaoh_teleport2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1267dcb5-eadf-4e73-ad6d-157bd97ce823","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f25a33eb-a2c4-4a58-ad8f-3ee2738c8d4c","path":"sprites/spr_pharaoh_teleport2/spr_pharaoh_teleport2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1a82dc16-422a-4a20-9f32-986aea3f3b07","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae858a9c-7d6c-414f-87d6-2cae24f5c430","path":"sprites/spr_pharaoh_teleport2/spr_pharaoh_teleport2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7920c85a-9a0b-49d7-8dd9-14dbc6d73142","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a99506a1-b048-41b7-9fcf-e127bf252412","path":"sprites/spr_pharaoh_teleport2/spr_pharaoh_teleport2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1267dcb5-eadf-4e73-ad6d-157bd97ce823","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f25a33eb-a2c4-4a58-ad8f-3ee2738c8d4c","path":"sprites/spr_pharaoh_teleport2/spr_pharaoh_teleport2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1a82dc16-422a-4a20-9f32-986aea3f3b07","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

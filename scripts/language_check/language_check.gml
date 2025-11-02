@@ -40,7 +40,7 @@ languagetext[23]="HIGH SCORE"
 languagetext[24]="WORLD TOUR"
 languagetext[25]="MOVE"
 break;	
-case 1:
+case 1: ////SPANISH
 languagetext[0]="¡LUCHA EN TODAS LAS ETAPAS DEL MODO ARCADE!"
 languagetext[1]="MODO ARCADE"
 languagetext[2]="¡SELECCIONA UNA ETAPA PARA REPETIR!"
@@ -67,7 +67,36 @@ languagetext[22]="¡MIRA QUIÉN ESTÁ ARRIBA!"
 languagetext[23]="PUNTUACIÓN ALTA"
 languagetext[24]="VIAJE MUNDIAL"
 languagetext[25]="MOVER"
-break;}
+break;
+case 2: //PORTUGUÊSE
+languagetext[0]="LUTE EM TODOS OS NÍVEIS NO MODO ARCADE!"
+languagetext[1]="MODO ARCADE"
+languagetext[2]="SELECIONE UM ESTÁGIO PARA REJOGAR!"
+languagetext[3]="SELEÇÃO DE FASE"
+languagetext[4]="VEJA O QUE VOCÊ GANHOU NO JOGO!"
+languagetext[5]="CONQUISTAS"
+languagetext[6]="RECONFIGURE SEU JOGO!"
+languagetext[7]="CONFIGURAÇÕES"
+languagetext[8]="VISITE BETTY O'HARA E COMPRE ITENS!"
+languagetext[9]="LOJA"
+languagetext[10]="PRATIQUE SUAS HABILIDADES DE DIVA!"
+languagetext[11]="TREINAMENTO"
+languagetext[12]="JOGUE ALGUNS JOGOS OU ENFRENTE OUTROS!"
+languagetext[13]="MINIJOGOS & VS"
+languagetext[14]="VEJA OS DADOS DOS PERSONAGENS E PALCOS!"
+languagetext[15]="PERFIL E INFO"
+languagetext[16]="VEJA A ARTE E O ARTE CONCEITUAL!"
+languagetext[17]="GALERIA"
+languagetext[18]="TOQUE MÚSICAS E TESTE SONS!"
+languagetext[19]="TESTE DE SOM"
+languagetext[20]="ASSISTA AS CENAS MAIS CINEMÁTICAS!"
+languagetext[21]="CENAS"
+languagetext[22]="CONFIRA QUEM ESTÁ NO TOPO!"
+languagetext[23]="PONTUAÇÃO TOTAL"
+languagetext[24]="TURNÊ MUNDIAL"
+languagetext[25]="MOVER"
+break;
+}
 
 }
 }
@@ -117,7 +146,7 @@ languagetext[38]="MASTER VOLUME"
 languagetext[39]="SETTINGS"
 languagetext[40]="SETTINGS"
 break;
-case 1:
+case 1: ///ESPAÑOL
 languagetext[0]="AJUSTES"
 languagetext[1]="VOLUMEN DE MÚSICA"
 languagetext[2]="VOLUMEN DE SFX"
@@ -160,6 +189,49 @@ languagetext[38]="VOLUMEN MAESTRO"
 languagetext[39]="AJUSTES"
 languagetext[40]="AJUSTES"
 break;
+case 2: //PORTUGUÊSE
+languagetext[0]="CONFIGURAÇÕES"
+languagetext[1]="VOLUME DA MÚSICA"
+languagetext[2]="VOLUME DOS SONS"
+languagetext[3]="PROPORÇÃO DA IMAGEM"
+languagetext[4]="ESTILO CRT"
+languagetext[5]="DISTORÇÃO CRT"
+languagetext[6]="NÍVEL DE DISTORÇÃO CRT"
+languagetext[7]="NÍVEL DE BORDAS CRT"
+languagetext[8]="CONFIGURAÇÕES DE COR"
+languagetext[9]="CAMADA DA TELA"
+languagetext[10]="VIBRAÇÃO DA TELA"
+languagetext[11]="FLASH DA TELA"
+languagetext[12]="VIDAS INICIAIS"
+languagetext[13]="PULAR CENA"//"CONTINUES"
+languagetext[14]="CONTROLE" ///Control settings
+languagetext[15]="NENHUM"
+languagetext[16]="PERSONALIZADO"
+languagetext[17]="MODO"
+languagetext[18]="LIGADO"
+languagetext[19]="DESLIGADO"
+languagetext[20]="PADRÃO"
+languagetext[21]="MONOCROMÁTICO"
+languagetext[22]="SÉPIA"
+languagetext[23]="2 FAIXAS"
+languagetext[24]="UMA-COR"
+languagetext[25]="FASH"
+languagetext[26]="ARCADE"
+languagetext[27]="SALA"
+languagetext[28]="INFINITO"
+languagetext[29]="CONFIGURAÇÃO"
+languagetext[30]="JOGADOR"
+languagetext[31]="INSTANTE"
+languagetext[32]="LANGUAGEM"
+languagetext[33]="PORTUGUÊSE"
+languagetext[34]="SALA NOTURNA"
+languagetext[35]="MOSTRAR DINHEIRO"
+languagetext[36]="MOSTRAR CONQUISTA"
+languagetext[37]="VELHO LCD"
+languagetext[38]="VOLUME MESTRE"
+languagetext[39]="CONFIGURAÇÕES"
+languagetext[40]="CONFIGURAÇÕES"
+break;
 }
 }
 if object_index=oCharacterInfo
@@ -171,13 +243,19 @@ languagetext[1]="ENEMIES"
 languagetext[2]="BOSSES"
 languagetext[3]="LOCATIONS"
 languagetext[4]="DEFEATED"
-
 break;
-case 1:
+case 1: ///ESPANOL
 languagetext[0]="DIVAS"
 languagetext[1]="ENEMIGOS"
 languagetext[2]="JEFES"
 languagetext[3]="UBICACIONES"
+languagetext[4]="DERROTADOS"
+break;
+case 2: ///PORTUGUESE
+languagetext[0]="DIVAS"
+languagetext[1]="INIMIGOS"
+languagetext[2]="CHEFES"
+languagetext[3]="LOCAIS"
 languagetext[4]="DERROTADOS"
 break;
 
@@ -220,7 +298,7 @@ commandL[22]="DELETE"
 commandL[23]="WORLD TOUR"
 commandL[24]="MOVE"
 break;
-case 1:
+case 1: ///ESPANOL
 commandL[0]="SELECCIONAR"
 commandL[1]="CANCELAR"
 commandL[2]="PALETA"
@@ -247,7 +325,33 @@ commandL[22]="BORRAR"
 commandL[23]="VIAJE MUNDIAL"
 commandL[24]="MOVER"
 break;
-
+case 2: ///PORTUGUESE
+commandL[0]="SELECIONAR"
+commandL[1]="CANCELAR"
+commandL[2]="PALETA"
+commandL[3]="TROCAR VARIANTE"
+commandL[4]="ZOOM"
+commandL[5]="OCULTAR TEXTO"
+commandL[6]="ANTERIOR" //prev
+commandL[7]="PRÓXIMO" ///prox
+commandL[8]="LOOP"
+commandL[9]="OCULTAR"
+commandL[10]="SAIR"
+commandL[11]="SEGURE PARA APLICAR\nA TODAS AS CORES"
+commandL[12]="REINICIAR"
+commandL[13]="COIAR"
+commandL[14]="COLAR"
+commandL[15]="ALTERAR PERSONAGEM"
+commandL[16]="EDITOR DE PALETA"
+commandL[17]="APOSTA"
+commandL[18]="GIRAR"
+commandL[19]="PARAR"
+commandL[20]="TECLADO"
+commandL[21]="CONTROLE"
+commandL[22]="EXCLUIR"
+commandL[23]="TURNE MUNDIAL"
+commandL[24]="MOVER"
+break;
 }
 
 }

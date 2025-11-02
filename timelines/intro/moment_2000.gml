@@ -6,6 +6,7 @@ scene1.x=999999
 scene1.y=0
 scene1.vspeed=-0.05
 cutsceneline="ALL FOUR CAME TO THIS JOINT FOR A PERFORMANCE! AND EACH ONE BROUGHT A SACRED TREASURE WITH THEM! A GOOD EYE AIN'T THEY?"
+if global.Language!=0 cutsceneline=languagedialogue[9]
 with scenebg instance_destroy()
 
 mono=instance_create_depth(0,0,-1,oAlphaFadeFX) 

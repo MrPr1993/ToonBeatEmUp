@@ -2,3 +2,4 @@ with diva4 {sprite_index=spr_sofia_point image_speed=0 image_index=2 image_xscal
 
 cutscenename="SOFIA"
 cutsceneline="HEY! HOLD IT! I'M NOT DONE WITH HER JUST YET!"
+if global.Language!=0 cutsceneline=languagedialogue[5]

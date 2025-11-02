@@ -5,3 +5,5 @@ with diva1 {sprite_index=spr_viva_idle loopimg=1 image_xscale=1 image_speed=0.1 
 
 cutscenename="VIVA"
 cutsceneline="OH BOTHER... HOW ARE WE EVEN GONNA GO AFTER THEM NOW?"
+
+if global.Language!=0 cutsceneline=languagedialogue[6]

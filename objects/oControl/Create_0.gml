@@ -1,5 +1,9 @@
 room_speed=60
 
+global.CanGlobalBeta=1 //////////SET TO 0 TO DEACTIVATE BETA MODE
+
+gamever="V.0.991"
+
 if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
 
 surf_circle = surface_create(320,240);
@@ -511,11 +515,11 @@ global.P2Char=1
 global.P3Char=2
 global.P4Char=3
 
-global.CanGlobalBeta=1
 
-global.GlobalBeta=1
-global.GlobalCBeta=1
-global.GlobalTBeta=1
+
+global.GlobalBeta=global.CanGlobalBeta
+global.GlobalCBeta=global.CanGlobalBeta
+global.GlobalTBeta=global.CanGlobalBeta
 }
 
 charstatsetup=0
@@ -621,7 +625,7 @@ enemyShowTime=0
 if !variable_global_exists("timefont")
 {
 global.timefont=font_add_sprite_ext(spr_timefont, "0123456789", false, 0);
-global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,&△◯╳◻Ñ¡ÁÉÍÓÚÀÈÌÒÙÃẼĨÕŨÂÊÎÔÛËͶЫЭюЯбвГДЖзкЛмнптфЦЧШЩЪь", false, 0);
+global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,&△◯╳◻Ñ¡ÁÉÍÓÚÀÈÌÒÙÃẼĨÕŨÂÊÎÔÛËͶЫЭюЯбвГДЖзкЛмнптфЦЧШЩЪьÇ", false, 0);
 }
 
 if !variable_global_exists("ScreenSize")
@@ -982,7 +986,11 @@ songID=-1
 if room=rm_soundtest
 {
 songno=0
-songname="SELECT MUSIC OR SOUND"
+var _snl="SELECT MUSIC OR SOUND";
+if global.Language=1 _snl="SELECCIONE MÚSICA O SONIDO"
+if global.Language=1 _snl="SELECIONE MÚSICA OU SOM"
+
+songname= _snl
 soundno=1
 soundname="SND 1"
 playingsongname=""
@@ -1209,6 +1217,8 @@ if room=rm_paletteeditor
 instance_create_depth(0,0,-1,oPaletteEditor)
 
 languagetext[40]=0; ///First 10 will be for the setting stuff
+languagedialogue[40]=0;
+
 language_check();
 
 input_source_mode_set(INPUT_SOURCE_MODE.FIXED);

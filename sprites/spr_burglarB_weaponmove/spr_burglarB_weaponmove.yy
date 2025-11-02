@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_burglarB_weaponmove",
   "bboxMode":0,
   "bbox_bottom":95,
@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"418d4d5b-52ff-4e17-a482-85b5fb857b2b","name":"418d4d5b-52ff-4e17-a482-85b5fb857b2b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"266e7f46-55de-407e-a8e2-5de1b84c4ddc","name":"266e7f46-55de-407e-a8e2-5de1b84c4ddc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"32c1d656-a41d-480d-ac0a-6b21c3789e8b","name":"32c1d656-a41d-480d-ac0a-6b21c3789e8b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b642a1fe-6be8-4f11-aee8-8e526caa2db0","name":"b642a1fe-6be8-4f11-aee8-8e526caa2db0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"1ce5b102-ad67-415d-b237-e5ad1021fdd0","name":"1ce5b102-ad67-415d-b237-e5ad1021fdd0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7d4755ac-2735-4b79-93f9-2df4594a1223","name":"7d4755ac-2735-4b79-93f9-2df4594a1223","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"418d4d5b-52ff-4e17-a482-85b5fb857b2b","name":"418d4d5b-52ff-4e17-a482-85b5fb857b2b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"266e7f46-55de-407e-a8e2-5de1b84c4ddc","name":"266e7f46-55de-407e-a8e2-5de1b84c4ddc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"32c1d656-a41d-480d-ac0a-6b21c3789e8b","name":"32c1d656-a41d-480d-ac0a-6b21c3789e8b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b642a1fe-6be8-4f11-aee8-8e526caa2db0","name":"b642a1fe-6be8-4f11-aee8-8e526caa2db0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1ce5b102-ad67-415d-b237-e5ad1021fdd0","name":"1ce5b102-ad67-415d-b237-e5ad1021fdd0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7d4755ac-2735-4b79-93f9-2df4594a1223","name":"7d4755ac-2735-4b79-93f9-2df4594a1223","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -73,24 +73,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"418d4d5b-52ff-4e17-a482-85b5fb857b2b","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2d6c1692-f2e5-462e-965c-cb4f3a4b1254","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"266e7f46-55de-407e-a8e2-5de1b84c4ddc","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"29b0ae01-b121-45aa-9151-c620c320fd5e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"32c1d656-a41d-480d-ac0a-6b21c3789e8b","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0c7b8db1-949f-4559-9484-d690100a2cd0","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b642a1fe-6be8-4f11-aee8-8e526caa2db0","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4b1430f3-0651-4055-8f26-93acf1db57fb","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ce5b102-ad67-415d-b237-e5ad1021fdd0","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6cd2fca8-0115-474b-86ed-ba8e37fe6409","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7d4755ac-2735-4b79-93f9-2df4594a1223","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b0382ba7-d26a-4212-a41e-e1cf63deef2f","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"418d4d5b-52ff-4e17-a482-85b5fb857b2b","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"2d6c1692-f2e5-462e-965c-cb4f3a4b1254","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"266e7f46-55de-407e-a8e2-5de1b84c4ddc","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"29b0ae01-b121-45aa-9151-c620c320fd5e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"32c1d656-a41d-480d-ac0a-6b21c3789e8b","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0c7b8db1-949f-4559-9484-d690100a2cd0","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b642a1fe-6be8-4f11-aee8-8e526caa2db0","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4b1430f3-0651-4055-8f26-93acf1db57fb","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ce5b102-ad67-415d-b237-e5ad1021fdd0","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6cd2fca8-0115-474b-86ed-ba8e37fe6409","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7d4755ac-2735-4b79-93f9-2df4594a1223","path":"sprites/spr_burglarB_weaponmove/spr_burglarB_weaponmove.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b0382ba7-d26a-4212-a41e-e1cf63deef2f","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

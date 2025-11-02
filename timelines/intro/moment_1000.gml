@@ -7,7 +7,7 @@ newsRepeat=2
 
 
 cutsceneline="AND SHE HAS QUITE THE FLEXIBLE PERSONALITY. SHE'LL BRING OUT THE\nHEAT!"
-
+if global.Language!=0 cutsceneline=languagedialogue[4]
 scene1.hspeed=0.2
 scene1.vspeed=0.05
 

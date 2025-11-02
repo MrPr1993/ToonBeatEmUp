@@ -7,3 +7,4 @@ scene1.y=-32-24
 scene2.vspeed=0.4
 
 cutsceneline="MORE ANCIENT RELICS TO COLLECT!"
+if global.Language!=0 cutsceneline=languagedialogue[12]

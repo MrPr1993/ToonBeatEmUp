@@ -9,6 +9,7 @@ newsIndex+=1
 scene1.x=99999
 newsRepeat=1
 cutsceneline="THE AMAZING BAHATI! SHE CAME FROM NIGERIA TO JOIN US HERE!"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 scenebg.x=99999
 
 newspaperspin=0
