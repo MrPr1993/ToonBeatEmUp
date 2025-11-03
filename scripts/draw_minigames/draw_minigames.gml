@@ -124,8 +124,20 @@ if global.MinigameSetSel=0
 {
 global.MultiVS=0
 
+var _tt0="LOCKED"
+var _tt1="GIVE YOU DIVAS CUSTOM COLORS!"
+var _tt2="\nPRESS\n\n\nTO\nCONNECT!"
+
+switch(global.Language)
+{
+case 2:
+var _tt1="\nPRESSIONE\nQUALQUER\nTECLA PARA\nCONECTAR!"
+var _tt2="\nPRESSIONE\n\nPARA\nCONECTAR!"
+break;
+}
+
 global.MultiVS=0
-if global.MinigameSel=0 {MenuText="GIVE YOU DIVAS CUSTOM COLORS!" //if global.MiniGameUnlock1=0 MenuText="LOCKED"
+if global.MinigameSel=0 {MenuText=_tt1 //if global.MiniGameUnlock1=0 MenuText="LOCKED"
 global.StageGoing=rm_paletteeditor instantroom=1; stagewent=rm_paletteeditor
 if global.UnlockAltPal3=0 MenuText="LOCKED"
 }

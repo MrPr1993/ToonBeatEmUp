@@ -13,6 +13,13 @@ with oControl
 {
 stagename="DOWNTOWN BEAT"
 
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="DISTRITO BEAT"
+break;
+	}
+
 prevstagecheck1=0
 prevstagecheck2=0
 prevstagecheck3=0

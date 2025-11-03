@@ -101,6 +101,7 @@ with actor5 {x=320-64}
 with oControl
 {
 cutsceneline="Why did you break into my home and beat me up?! Didn't you read the signs?!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 } x=0
 y=0 vspeed=0.2 hspeed=0
 }
@@ -114,6 +115,7 @@ with oControl
 {
 cutscenename="SOFIA"
 cutsceneline= "Hey, it's what we do. We have questions for you, miss witch."
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
@@ -124,7 +126,9 @@ with actor4 {image_xscale=1 image_index=0 sprite_index=spr_sofia_stand image_spe
 	
 with actor5 {sprite_index=spr_witch_attack2 image_speed=0 image_index=0}
 with oControl
-{cutscenename="KIANDRA" cutsceneline= "...do you ever get answers through violence, what is wrong with you?!"}
+{cutscenename="KIANDRA" cutsceneline= "...do you ever get answers through violence, what is wrong with you?!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 }
 
 if scenetime=1260
@@ -135,14 +139,18 @@ with actor3 {sprite_index=spr_bahati_talk2 image_index=0}
 with actor4 {sprite_index=spr_sofia_talk3 image_index=0}
 
 with oControl
-{cutscenename="HINA" cutsceneline= "Oh... um..."}
+{cutscenename="HINA" cutsceneline= "Oh... um..."
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1460
 {	with actor5 {sprite_index=spr_witch_talk image_speed=0 image_index=0}
 with oControl
 {image_index=1 
-cutscenename="KIANDRA" cutsceneline= "Also, I'm not a witch. I'm a druid!"}
+cutscenename="KIANDRA" cutsceneline= "Also, I'm not a witch. I'm a druid!"
+if global.Language!=0 cutsceneline=languagedialogue[6]
+}
 hspeed=-2 
 }
 
@@ -152,7 +160,9 @@ with actor3 {sprite_index=spr_bahati_talk2 image_speed=0.25}
 
 with oControl
 {image_index=1
-cutscenename="BAHATI" cutsceneline= "Right, sorry... can you still help us? We are after thieves who were stealing treasures."}
+cutscenename="BAHATI" cutsceneline= "Right, sorry... can you still help us? We are after thieves who were stealing treasures."
+if global.Language!=0 cutsceneline=languagedialogue[7]
+}
 
 }
 
@@ -161,7 +171,9 @@ if scenetime=2040
 with actor3 {image_speed=0 image_index=0}	
 
 with oControl
-{cutscenename="KIANDRA" cutsceneline="...fine. If it gets you out of here faster, then so be it... Let us consult my cauldron for your paths..."}
+{cutscenename="KIANDRA" cutsceneline="...fine. If it gets you out of here faster, then so be it... Let us consult my cauldron for your paths..."
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=2340
@@ -193,7 +205,9 @@ sprite_index=spr_cauldronshow x=0 y=100 image_speed=0
 
 with oControl
 {
-cutscenename="KIANDRA" cutsceneline= "Have a look at the cauldron and I'll show you the way from what you choose."}
+cutscenename="KIANDRA" cutsceneline= "Have a look at the cauldron and I'll show you the way from what you choose."
+if global.Language!=0 cutsceneline=languagedialogue[9]
+}
 }
 
 if scenetime=clamp(scenetime,6000,6100) {y--; y=clamp(y,0,9999)}
@@ -256,6 +270,31 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="O QUE VOCÊ VÊ NO\nCALDEIRÃO?"
+CDtextA="UM MILHARAL!"
+CDtextB="UM PRÍNCIPE!"
+CDtextC="UM DESERTO!"
+
+languagedialogue[1]="...VOCÊS..."
+languagedialogue[2]="Por que invadiram minha casa e me agrediram?! Não leram as placas?!"
+languagedialogue[3]="É, é o que fazemos. E temos perguntas para você, senhorita bruxa."
+languagedialogue[4]="...vocês tiram respostas através da violência? O que há de errado com vocês?!"
+languagedialogue[5]="Oh... hum..."
+languagedialogue[6]="Além disso, não sou uma bruxa. Sou uma druida!"
+languagedialogue[7]="Certo, foi mal... pode nos ajudar mesmo assim? Estamos atrás de ladrões que roubam tesouros."
+languagedialogue[8]="...certo. Se isso fizer com que vocês saiam daqui rápido, que seja... Vamos consultar meu caldeirão para saber seus caminhos..."
+languagedialogue[9]="Dêem uma olhada no caldeirão e eu mostrarei o caminho a partir do que vocês escolherem."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 

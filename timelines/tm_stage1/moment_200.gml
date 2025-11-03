@@ -49,7 +49,14 @@ btnind=6+6*commandMul btnT2=""
 }
 
 btnT3="TO ATTACK"
+
+switch(global.Language)
+{
+case 2: btnT1="PRESSIONE" btnT3="PARA ATACAR" break;
 }
+
+}
+
 
 en1=instance_create(850,164,oEnemy1) en1.canmove=0 en1.isIdle=1 en1.alarm[1]=60 en1.anim=70000
 en1.idleRange=30

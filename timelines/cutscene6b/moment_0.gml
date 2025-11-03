@@ -77,7 +77,7 @@ if scenetime=520
 with oControl
 {
 with oControl {cutscenename="VIVA" cutsceneline= "Oh please, you're not doing anything like that. Maybe I should break you even more though..."
-
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 }
@@ -94,6 +94,7 @@ with actor4 {x=64}
 with oControl
 {
 with oControl {cutscenename="MIRROSA" cutsceneline= "WaitwaitwaitWAIT! Mercy, mercy! What do you want from me anyway?!"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 }
@@ -106,6 +107,7 @@ with actor5 {image_speed=0 image_index=0}
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "We're looking for the hideout of some thieves. Tell us where it is."
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -115,6 +117,7 @@ with actor3 {image_index=0 image_speed=0}
 with actor5 {image_speed=0.25 image_index=0}
 
 with oControl {cutscenename="MIRROSA" cutsceneline= "Okay okay! There's an emergency exit door just nearby that'll take you there!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -125,6 +128,7 @@ with actor3 {image_index=0 image_speed=0}
 with actor5 {image_speed=0 image_index=0}
 
 with oControl {cutscenename="SOFIA" cutsceneline= "All we needed to hear! Let's mosey, chicas! Time to raise some hell!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 
@@ -140,7 +144,9 @@ if scenetime=2560
 {
 with actor5 {image_speed=0.1 image_index=0}
 
-with oControl {cutscenename="MIRROSA" cutsceneline= "My lovely palace... My mirror... Such brutes...."}
+with oControl {cutscenename="MIRROSA" cutsceneline= "My lovely palace... My mirror... Such brutes...."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=3000
@@ -192,6 +198,24 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Vocês... VOCÊS DESTRUIRAM MEUS CRISTAIS! EU VOU EMPALAR TODAS VOCÊS!!!"
+languagedialogue[2]="Ah, pelo amor, você não vai fazer isso tão cedo. Talvez eu devesse te quebrar ainda mais..."
+languagedialogue[3]="calmacalmaCALMA! Piedade, piedade! O que você quer de mim, afinal?!"
+languagedialogue[4]="Estamos procurando o esconderijo de alguns ladrões. Me fala onde fica."
+languagedialogue[5]="Okay, okay! Há uma porta de saída de emergência bem aqui perto que vai levar vocês até lá!"
+languagedialogue[6]="Bem que eu suspeitei desde o princípio! Vamos lá, señoritas! Um espetáculo de brutalidade nos espera!"
+languagedialogue[7]="Meu adorável palácio... Meus espelhos... Essas brutas..."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 CutsceneStage=rm_stagelab
 canSkipCutscene=2

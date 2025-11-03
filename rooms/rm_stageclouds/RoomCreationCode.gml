@@ -21,6 +21,13 @@ with oControl
 {
 stagename="AHEAD IN THE CLOUDS"		
 
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="ACIMA DAS NUVENS"
+break;
+	}
+
 global.PrevStage6=16
 prevstagecheck1=global.PrevStage3
 prevstagecheck2=global.PrevStage4

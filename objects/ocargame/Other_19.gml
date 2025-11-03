@@ -6,11 +6,25 @@ stagePose=0
 AltScore1=1
 AltScore2=1
 AltScore3=1
+
+var _t1="PERFECT"
+var _t2="NO BONUS"
+var _t3="DAMAGE"
+var _t4="TIME"
+switch(global.Language)
+{
+case 2:
+_t1="PERFEITO"
+_t2="SEM BÔNUS"
+_t3="DANO"
+_t4="TEMPO"
+break;
+}
 	
 stageClear=0
 stageClearIndex=0
 stageClearY=-120
-stageBoss="PERFECT"
+stageBoss=_t1
 stageScore=0
 scoreClearSet=0
 bossScore=0
@@ -19,11 +33,11 @@ bossMaxHP=2
 stageclearMusic=0
 stageclearfade=0
 
-resulttext1="NO BONUS"
+resulttext1=_t2
 altresult1=0
 
-resulttext2="DAMAGE"
-resulttext3="TIME"
+resulttext2=_t3
+resulttext3=_t4
 altresult3=round(oControl.time*200)*2
 //stageClearDelay=120
  event_user(9)

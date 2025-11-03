@@ -20,6 +20,13 @@ with oControl
 {
 stagename="AERIAL WALK"	
 
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="TOUR AÉRIO"
+break;
+	}
+
 global.PrevStage2=2
 prevstagecheck1=0
 prevstagecheck2=0

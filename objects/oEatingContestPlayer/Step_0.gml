@@ -50,9 +50,26 @@ if anim=10
 {
 if AnimFrame=0
 {
-oEatingContestGame.resulttext1="BONUS"
+var _t1="NO BONUS"
+var _t2="BONUS"
+var _t3="PERFECT"
+var _t4="GOOD"
+var _t5="TIME"
 
-			altresult2Text="TIME" altresult2=abs(foodno)*20
+switch(global.Language)
+{
+case 2:
+var _t1="SEM BÔNUS"
+var _t2="BÔNUS"
+var _t3="PERFEITO"
+var _t4="BOM"
+var _t5="TEMPO"
+break;
+}
+	
+oEatingContestGame.resulttext1=_t2
+
+			altresult2Text=_t5 altresult2=abs(foodno)*20
 
 //if win=0
 with oEatingContestPlayer win=0
@@ -83,7 +100,7 @@ and foodhp<oEatingContestGame.p2.foodhp win=1
 
 var haslose=0;
 
-if win {with oControl minigameIDwin=1; altresult2Text="PERFECT" altresult2=10000}
+if win {with oControl minigameIDwin=1; altresult2Text=_t3 altresult2=10000}
 
 if win=0 haslose=1;
 

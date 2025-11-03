@@ -69,6 +69,7 @@ with oControl
 {
 with oControl {
 cutscenename="SYNTHESA" cutsceneline= "Heeheehee~! What fun, what fun! Congratulations on your victory, friends!"
+if global.Language!=0 cutsceneline=languagedialogue[1]
 }
 }
 }
@@ -91,6 +92,7 @@ with actor4 {x=56 y=180 }
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Yeah, yeah thanks and all that... Now where are the thieves hiding?"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -108,6 +110,7 @@ with actor5 {newscript=function() {image_index+=0.25 if image_index>=6 {image_in
 with oControl
 {
 cutscenename="SYNTHESA" cutsceneline= "How about we dance!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -116,16 +119,21 @@ if scenetime=1020
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Hey! Stop spinning! Are you even listening?!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
 if scenetime=1360
 {
-with oControl {cutscenename="SYNTHESA" cutsceneline="Victory! Victory! You deserve the victory!"}
+with oControl {cutscenename="SYNTHESA" cutsceneline="Victory! Victory! You deserve the victory!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1560
-{with oControl {cutscenename="VIVA" cutsceneline= "HEY!!! WHERE. ARE. THE. THIEVES?!"}
+{with oControl {cutscenename="VIVA" cutsceneline= "HEY!!! WHERE. ARE. THE. THIEVES?!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 if scenetime=1760
@@ -145,7 +153,9 @@ with actor5 {image_xscale=1 sprite_index=spr_plantprincess_attack5 AnimFrame=0 i
 	}
 	}
 
-with oControl {cutscenename="SYNTHESA" cutsceneline= "Oh! They should be up those stairs!"}
+with oControl {cutscenename="SYNTHESA" cutsceneline= "Oh! They should be up those stairs!"
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 /////Synthesa throws Viva off-screen
 }
 
@@ -156,7 +166,9 @@ with oControl {quakeFXTime=10 PlaySound(snd_hitgroundheavy)}
 
 if scenetime=1960
 {
-with oControl {cutscenename="VIVA" cutsceneline= "Ow... Let's get our treasure back, ladies..."}
+with oControl {cutscenename="VIVA" cutsceneline= "Ow... Let's get our treasure back, ladies..."
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 
 
 }
@@ -176,7 +188,9 @@ with oControl {cutscenename="" cutsceneline=""}
 if scenetime=2220
 {scenetime=2560
 with actor5 {image_xscale=1 sprite_index=spr_plantprincess_bye image_speed=0.25}
-with oControl {cutscenename="SYNTHESA" cutsceneline="TA-TA! Tell the doctor I said hi."}
+with oControl {cutscenename="SYNTHESA" cutsceneline="TA-TA! Tell the doctor I said hi."
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 
 
@@ -228,6 +242,26 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Heeheehee~! Diversão, quanta diversão! Parabéns pela vitória, amigos!"
+languagedialogue[2]="Sim, claro valeu e tudo mais... Agora onde que os ladrões estão se escondendo?"
+languagedialogue[3]="Que tal uma dancinha!"
+languagedialogue[4]="EII! Para de girar! Tá me ouvindo?!"
+languagedialogue[5]="Vitória! Vitória! Vocês merecem a vitória!"
+languagedialogue[6]="EII!!! ONDE. ESTÃO. OS. LADRÕES?!"
+languagedialogue[7]="Ah! Eles devem ter subido aquela escada!"
+languagedialogue[8]="Aw... Vamos pegar nossos tesouros de volta, meninas..."
+languagedialogue[9]="TÉ-TÉ! Fala pra doutora que eu mandei oi."
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 CutsceneStage=rm_stagelab
 canSkipCutscene=2

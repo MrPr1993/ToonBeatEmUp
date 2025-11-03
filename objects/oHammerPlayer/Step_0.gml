@@ -89,7 +89,25 @@ frame_set(2,2,0.25) if AnimFrame=3
 {
 PlaySoundNoStack(snd_hit) 	//PlaySound(voice2)
 breakresult=0
-shaketime=10 altresult2Text="SCORE" altresult2=0	
+
+var _t1="NO BONUS"
+var _t2="BONUS"
+var _t3="PERFECT"
+var _t4="GOOD"
+var _t5="SCORE"
+
+switch(global.Language)
+{
+case 2:
+var _t1="SEM BÔNUS"
+var _t2="BÔNUS"
+var _t3="PERFEITO"
+var _t4="BOM"
+var _t5="PONTUAÇÃO"
+break;
+}
+
+shaketime=10 altresult2Text=_t5 altresult2=0	
 	
 ////It's near impossible to get a perfect win this for the feat so...
 
@@ -123,7 +141,7 @@ if slotY>((((strtotal)/maxpoints))*(maxpoints))-1000// or slotY>(toweramount*32)
 		PlaySoundNoStack(snd_explosion)
 		flashFX(x+40,oHammerGame.screenY+y-32-slotYdraw,0,spr_explosion,0,0.5,40,1,1,c_white,1)			
 		}
-	if win {with oControl minigameIDwin=1; altresult2Text="PERFECT" altresult2=10000}	
+	if win {with oControl minigameIDwin=1; altresult2Text=_t3 altresult2=10000}	
 	
 	strGo=0 altresult2=slotY altresult2=clamp(altresult2,0,maxpoints) slotSpd=1 lerp(slotYdraw,(source1)*(toweramount*32),1)}
 

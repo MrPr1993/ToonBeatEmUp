@@ -15,6 +15,12 @@ with oControl
 resulttext1=""
 altresult1=0
 resulttext2="BONUS"
+
+switch(global.Language)
+{
+case 2: resulttext2="BÔNUS" break;
+}
+
 AltScore2=1
 resulttext3=""
 altresult3=0

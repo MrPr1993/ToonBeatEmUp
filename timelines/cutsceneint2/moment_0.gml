@@ -59,6 +59,7 @@ if scenetime=540
 with oControl
 {
 cutscenename="VAN BAD" cutsceneline= "Grr... Pull out all the stops, spare no expense, do whatever it takes to STOP THEM!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 
 }
@@ -78,6 +79,7 @@ with oCameoChar y=-9999
 with oControl 
 {
 cutscenename="MR.SNEAK" cutsceneline="Yes, boss!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 with actor1 {sprite_index=spr_int2_4 x=-148 y=0 depth=-3010} 
 }
 
@@ -92,6 +94,7 @@ if scenetime=1100
 with oControl
 {
 cutscenename="VAN BAD" cutsceneline= "DR. FRAN!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 
 }
@@ -101,6 +104,7 @@ if scenetime=1220
 with oControl
 {
 cutscenename="DR.FRAN" cutsceneline= "Yes, Master Van Bad?"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 
 	actor1.hspeed=3.5
 	}
@@ -117,7 +121,7 @@ with oControl
 {actor1.hspeed=0
 	actor2.hspeed=0
 cutscenename="VAN BAD" cutsceneline= "Are the treasures ready for 'IT', yet?!"
-
+if global.Language!=0 cutsceneline=languagedialogue[6]
 	
 	}
 }
@@ -128,7 +132,7 @@ with oControl
 {
 	
 cutscenename="DR.FRAN" cutsceneline= "They will be soon, Master Van Bad."
-	
+	if global.Language!=0 cutsceneline=languagedialogue[7]
 	}
 }
 
@@ -141,7 +145,7 @@ with oControl
 {
 	
 cutscenename="VAN BAD" cutsceneline= "Well HURRY IT UP! We're running out of time!"
-	
+	if global.Language!=0 cutsceneline=languagedialogue[8]
 	}
 }
 
@@ -152,7 +156,7 @@ with oControl
 {
 	
 cutscenename="DR.FRAN" cutsceneline= "Yes, Master Van Bad."
-	
+	if global.Language!=0 cutsceneline=languagedialogue[9]
 	}
 }
 
@@ -164,7 +168,7 @@ with oControl
 {
 
 cutscenename="VAN BAD" cutsceneline= "Bothersome little divas... You're about to find out what happens to those who cross Van Bad..."
-
+if global.Language!=0 cutsceneline=languagedialogue[10]
 }
 }
 if scenetime>=2280 if x>0 x-=0.5
@@ -205,6 +209,26 @@ canSkipCutscene=2
 
 //-Intermission 2-
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="CHEFEEEEEE!!! Aqueles cantores de bar enfurecidos estão nos alcançando e realmente prejudicando a gangue! Temos que fazer alguma coisa antes que eles nos peguem!"
+languagedialogue[2]="Grr... Usaremos todos os recursos, não pouparemos despesas, faremos o que for preciso para DETÊ-LOS!"
+languagedialogue[3]="Sim, chefe!"
+languagedialogue[4]="Dr. Fran!"
+languagedialogue[5]="Sim, Mestre Van Bad?"
+languagedialogue[6]="Os tesouros já estão prontos para 'ISTO'?!"
+languagedialogue[7]="Eles chegarão em breve, Mestre Van Bad."
+languagedialogue[8]="Vamos logo! Estamos ficando sem tempo!"
+languagedialogue[9]="Sim, Mestre Van Bad."
+languagedialogue[10]="Pequenas divas irritantes... Vocês estão prestes a descobrir o que acontece com quem se mete com Van Bad..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 oControl.CutsceneStage=global.BonusStageNext

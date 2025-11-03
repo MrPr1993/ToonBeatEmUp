@@ -22,6 +22,13 @@ with oControl
 {
 stagename="GREAT CLIMBING COLD"		
 
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="ALPES DO BATE-QUEIXO"
+break;
+	}
+
 global.PrevStage6=14
 prevstagecheck1=global.PrevStage3
 prevstagecheck2=global.PrevStage4

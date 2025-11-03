@@ -51,7 +51,9 @@ newscript=function()
 
 if scenetime=120
 {
-with oControl {cutscenename="VIVA" cutsceneline="WE'RE TOO LATE..."}
+with oControl {cutscenename="VIVA" cutsceneline="WE'RE TOO LATE..."
+	if global.Language!=0 cutsceneline=languagedialogue[1]
+	}
 }
 
 if scenetime=270
@@ -59,7 +61,9 @@ if scenetime=270
 
 with oControl { 
 	SceneX=128 __view_set( e__VW.XView, 0, SceneX )
-	hspeed=0 cutscenename="SOFIA" cutsceneline="There's no way we can catch that thing now..."}
+	hspeed=0 cutscenename="SOFIA" cutsceneline="There's no way we can catch that thing now..."
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}
 }
 
 if scenetime>=270
@@ -69,13 +73,19 @@ SceneX-=0.25 SceneX=clamp(SceneX,0,9999) __view_set( e__VW.XView, 0, SceneX )
 }
 
 if scenetime=500
-with oControl { cutscenename="HINA" cutsceneline="Our treasure... All gone..."}
+with oControl { cutscenename="HINA" cutsceneline="Our treasure... All gone..."
+	if global.Language!=0 cutsceneline=languagedialogue[3]
+	}
 
 if scenetime=800
-with oControl {cutscenename="VIVA" cutsceneline="All that nonsense... All those bruises... And nothing to show for it..."}
+with oControl {cutscenename="VIVA" cutsceneline="All that nonsense... All those bruises... And nothing to show for it..."
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 
 if scenetime=1100
-with oControl {cutscenename="BAHATI" cutsceneline="Pack it in, girls... Nothing left to do but head home..."}
+with oControl {cutscenename="BAHATI" cutsceneline="Pack it in, girls... Nothing left to do but head home..."
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 
 if scenetime=1250
 {
@@ -117,6 +127,22 @@ __view_set( e__VW.XView, 0, SceneY )
 CutsceneStage=rm_creditscene
 canSkipCutscene=2
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="É TARDE DEMAIS..."
+languagedialogue[2]="Não tem como alcançar aquilo agora..."
+languagedialogue[3]="Nossos tesouros... Se foi tudo..."
+languagedialogue[4]="Todos esses absurdos... Todas essas feridas... Tudo isso pra nada..."
+languagedialogue[5]="Acabou, madames... Não há nada que possamos fazer além de voltar para casa..."
+
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 

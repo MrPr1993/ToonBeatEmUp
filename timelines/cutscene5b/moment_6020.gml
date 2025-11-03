@@ -23,6 +23,24 @@ cutscenename="BAHATI" cutsceneline= "Looks like a long way up that mountain..."
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Parece ser uma boa e longa subida até ao topo da montanha..."
+languagedialogue[2]="Por mim, tudo bem... Vou escalar tudo eu mesma!"
+languagedialogue[3]="Calma, não criemos pânico, loira burra!"
+languagedialogue[4]="Nem vem, vou recuperar meu diamante custe o que custar! Prazer conhecê-las, meninas."
+languagedialogue[5]="Aí está você! Você devia ter deixado eu terminar de falar!"
+languagedialogue[6]="Tinha um elevador pertinho de onde você começou a escalar! Um super confortável ainda!"
+languagedialogue[7]="Você sumiu por cinco minutos!"
+languagedialogue[8]="Ci-cinco... ah vai se fu..."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 newscript=function()
 {
 scenetime+=1;
@@ -38,7 +56,7 @@ with actor1 {sprite_index=spr_viva_talk image_speed=0.25}
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Fine by me... I'll climb it all on my own!"
-
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -50,6 +68,7 @@ with actor1 {sprite_index=spr_viva_move image_speed=0.25 hspeed=2}
 with oControl
 {
 cutscenename="SOFIA" cutsceneline= "Wait a minute, you dumb blonde!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -59,6 +78,7 @@ if scenetime=570
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Wait nothing, I'm getting my diamond back no matter what! Nice knowing you girls."
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -174,6 +194,7 @@ with actor3 {image_xscale=-1 hspeed=-3 image_speed=0.4 sprite_index=spr_bahati_m
 with actor4 {image_xscale=-1 hspeed=-3 image_speed=0.4 sprite_index=spr_sofia_move x=360}
 
 with oControl {cutscenename="SOFIA" cutsceneline= "There you are! You should have let me finish!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -187,6 +208,7 @@ with actor4 {hspeed=0 sprite_index=spr_sofia_talk image_index=0 image_speed=0.25
 if scenetime=11320
 {
 with oControl {cutscenename="HINA" cutsceneline= "There was an elevator right by where you started climbing! Super cozy, too!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 
 with actor2 {hspeed=0 sprite_index=spr_hina_talk2 image_index=0 image_speed=0.25}
@@ -198,7 +220,9 @@ if scenetime=11620
 with actor3 {hspeed=0 sprite_index=spr_bahati_talk2 image_index=0 image_speed=0.25}
 with actor2 {hspeed=0 image_index=0 image_speed=0}	
 
-with oControl {cutscenename="BAHATI" cutsceneline= "You've been gone for five minutes!"}
+with oControl {cutscenename="BAHATI" cutsceneline= "You've been gone for five minutes!"
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=11820
@@ -207,7 +231,9 @@ with actor1 specialcheck[0]=2
 
 with actor3 {hspeed=0 image_index=0 image_speed=0}	
 
-with oControl {cutscenename="VIVA" cutsceneline= "F-five... oh for the love of..."}
+with oControl {cutscenename="VIVA" cutsceneline= "F-five... oh for the love of..."
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=11920
@@ -241,6 +267,22 @@ cutscenename="SOFIA" cutsceneline= "That cave's looking quite sketchy... Perfect
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Essa caverna tá bem suspeita... Perfeita para ladrões se esconderem!"
+languagedialogue[2]="Parece bem profunda... Mas o quão profunda deve ser?"
+languagedialogue[3]="Só tem um jeito de descobrir."
+languagedialogue[4]="BRIIIIIIIIIIIIIIR!!!!!"
+languagedialogue[5]="AW... minha espinha..." 
+languagedialogue[6]="Bem, acho melhor irmos até lá e ajudá-la..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
+
 with actor1 {image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
 with actor2 {image_speed=0.25 sprite_index=spr_hina_move; hspeed=2}
 with actor3 {image_speed=0.25 sprite_index=spr_bahati_move; hspeed=2}
@@ -265,6 +307,7 @@ with actor4 {image_speed=0 image_index=0 sprite_index=spr_sofia_talk3; hspeed=0}
 if scenetime=320
 {
 with oControl {cutscenename="HINA" cutsceneline= "Looks super deep though... I wonder just how much."
+	if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -276,6 +319,7 @@ with actor1 {shadow=-1;  image_speed=0.25 sprite_index=spr_viva_move; hspeed=2 i
 	
 with oControl {//Riding
 cutscenename="VIVA" cutsceneline= "Only one way to find out."
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -299,6 +343,7 @@ newscript=function()
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "OUUUUUUUUUUUT!!!!!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -313,6 +358,7 @@ if scenetime=1660
 {
 with oControl {
 cutscenename="VIVA" cutsceneline= "OW... my spine..." 
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -322,6 +368,7 @@ if scenetime=1800
 with actor3 {image_speed=0.25 sprite_index=spr_bahati_talk2; hspeed=0}
 	
 with oControl {cutscenename="BAHATI" cutsceneline= "Well, guess we better get down there and help her..." 
+	if global.Language!=0 cutsceneline=languagedialogue[6]
 //Nyoom and splash onto cave entrance
 //Flash Trickstar — 09/08/2024 11:40 PM
 }
@@ -351,6 +398,23 @@ sprite_index=mask_none
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Espera, isso é um balão de ar quente?"
+languagedialogue[2]="Ei... Isso pode deixar a viagem mais tranquila E dar uma visão bacana para encontrar aqueles ladrões!"
+languagedialogue[3]="Certo, Hina, é sua hora de brilhar!"
+languagedialogue[4]="Oooookay!"
+languagedialogue[5]="Beleza já deu...!" 
+languagedialogue[6]="Te acalma cabeça-de-vento!!"
+languagedialogue[7]="HINAAAAAAAAAAA!!!"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+
+break;
+}
+
 with actor1 {sprite_index=spr_viva_talk image_speed=0.25}	
 
 newscript=function()
@@ -366,7 +430,7 @@ with actor1 {image_speed=0 image_index=0}
 with actor3 {sprite_index=spr_bahati_talk image_speed=0.25}	
 
 with oControl {cutscenename="BAHATI" cutsceneline= "Hey... This could make for a smoother trip AND give us a better view to spot those thieves!"
-
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -378,8 +442,7 @@ with actor3 {image_speed=0 image_index=0}
 with actor4 {sprite_index=spr_sofia_talk image_speed=0.25}		
 
 with oControl {cutscenename="SOFIA" cutsceneline= "Alright, Hina, your time to shine!"
-
-
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -389,7 +452,7 @@ with actor4 {image_speed=0 image_index=0}
 with actor2 {sprite_index=spr_hina_opening image_speed=0.25}		
 
 with oControl {cutscenename="HINA" cutsceneline= "Oooookay!"
-
+if global.Language!=0 cutsceneline=languagedialogue[4]
 	}
 }
 
@@ -422,14 +485,14 @@ if scenetime=11060
 {
 with oControl {//Firebreath intensifies
 cutscenename="SOFIA" cutsceneline= "Okay that's enough...!" 
-
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
 if scenetime=11300
 {
 with oControl {cutscenename="VIVA" cutsceneline= "Slow down you airhead!!"
-
+if global.Language!=0 cutsceneline=languagedialogue[6]
 //How's this?
 }
 }
@@ -448,7 +511,9 @@ cutscenename="" cutsceneline=""}
 if scenetime=11550
 {
 with oControl {//SMASH!
-cutscenename="VIVA, BAHATI & SOFIA" cutsceneline= "HINAAAAAAAAAAA!!!" }
+cutscenename="VIVA, BAHATI & SOFIA" cutsceneline= "HINAAAAAAAAAAA!!!" 
+if global.Language!=0 cutsceneline=languagedialogue[7]
+}
 }
 
 if scenetime=11700

@@ -46,6 +46,17 @@ p2Over=0
 p3Over=0
 p4Over=0	
 
+var _t1="HAS IT!"
+var _t2="GET THE\nTROPHY!"
+
+switch(global.Language)
+{
+case 2:
+var _t1="CONSEGUIU!"
+var _t2="PEGUE\nO TROFÉU!"
+break;
+}
+
 with oPlayer {
 	playerGet=0 stagePose=0
 	PlayerLife=9 if weaponspawn!=-1 {playerGet=1 stagePose=1
@@ -63,7 +74,7 @@ if playerNO=2 oArenaOddball.p2Over=1
 if playerNO=3 oArenaOddball.p3Over=1
 if playerNO=4 oArenaOddball.p4Over=1
 
-	draw_text(40+80*(playerNO-1),50,"HAS IT!")
+	draw_text(40+80*(playerNO-1),50,_t1)
 	}
 	
 	}
@@ -73,7 +84,7 @@ if playerNO=4 oArenaOddball.p4Over=1
 	
 if gameready=0
 {
-draw_text(160,34+10+64,"GET THE\nTROPHY!") alarm[1]=60
+draw_text(160,34+10+64,_t2) alarm[1]=60
 }
 else
 {

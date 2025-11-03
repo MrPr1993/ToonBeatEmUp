@@ -44,7 +44,9 @@ newscript=function()
 if scenetime=240
 {hspeed=-1.1
 with oControl
-{cutscenename="VAN BAD" cutsceneline= "Eh? Oh don't get your mask in a twist over a few angry women. Now leave me to my treasures!"}
+{cutscenename="VAN BAD" cutsceneline= "Eh? Oh don't get your mask in a twist over a few angry women. Now leave me to my treasures!"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}
 
 }
 
@@ -53,14 +55,18 @@ if scenetime=320 hspeed=0
 if scenetime=700
 {x=0 hspeed=-0 sprite_index=spr_int1_2
 with oControl
-{cutscenename="MR.BURG" cutsceneline= "Yes, boss..."}
+{cutscenename="MR.BURG" cutsceneline= "Yes, boss..."
+	if global.Language!=0 cutsceneline=languagedialogue[3]
+	}
 }
+
+
 
 if scenetime=800
 {image_speed=0 image_index=1
 with oControl
 {cutscenename="VAN BAD" cutsceneline= "Hmmm... Dr. Fran!"
-
+if global.Language!=0 cutsceneline=languagedialogue[4]
 with actor1
 {sprite_index=spr_int1_3 x=160 y=192 image_index=0 anim=9999 shadow=-1}
 }
@@ -71,6 +77,7 @@ if scenetime=920
 {hspeed=-2 
 with oControl
 {cutscenename="DR.FRAN" cutsceneline= "Yes, Master Van Bad?"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
 	actor1.hspeed=2.5
 	}
 }
@@ -80,13 +87,17 @@ if scenetime=960
 if scenetime=1120
 {
 with oControl
-{cutscenename="VAN BAD" cutsceneline= "Be a dear and... Analyze our four pursuers, would you...?"}
+{cutscenename="VAN BAD" cutsceneline= "Be a dear and... Analyze our four pursuers, would you...?"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 if scenetime=1380
 {
 with oControl
-{cutscenename="DR.FRAN" cutsceneline= "Right away, Master Van Bad."}
+{cutscenename="DR.FRAN" cutsceneline= "Right away, Master Van Bad."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime>=1480 with oControl actor1.image_alpha-=0.025
@@ -97,8 +108,12 @@ if scenetime=1580
 with oControl
 {
 
-cutscenename="VAN BAD" cutsceneline= "Hmhmhmhm... Soon enough I'm going to turn the world on its head..."}
+cutscenename="VAN BAD" cutsceneline= "Hmhmhmhm... Soon enough I'm going to turn the world on its head..."
+if global.Language!=0 cutsceneline=languagedialogue[8]
 }
+}
+
+
 if scenetime>=1580
 x=lerp(x,0,0.025)
 
@@ -128,6 +143,24 @@ __view_set( e__VW.XView, 0, SceneY )
 	
 canSkipCutscene=2
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Chefe! CHEFE! Tem quatro loucas nos seguindo e batendo na gente!"
+languagedialogue[2]="Hein? Ah, não se estresse com algumas mulheres irritadas. Agora me deixe em paz com meus tesouros!"
+languagedialogue[3]="Sim, chefe..."
+languagedialogue[4]="Hum... Dr. Fran!"
+languagedialogue[5]="Sim, Mestre Van Bad?"
+languagedialogue[6]="Seja um querida e... Analise nossos quatro perseguidores, por favor...?"
+languagedialogue[7]="Imediatamente, Master Van Bad."
+languagedialogue[8]="Hmhmhmhm... Em breve, vou virar o mundo de cabeça para baixo..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 oControl.CutsceneStage=global.BonusStageNext

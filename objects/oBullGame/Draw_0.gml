@@ -12,14 +12,50 @@ if instance_exists(oBullPlayer) with oBullPlayer draw_sprite(spr_shadow,0,round(
 
 if ready=0
 {
+
+var _t1="NO BONUS"
+var _t2="BONUS"
+var _t3="PERFECT"
+var _t4="GOOD"
+var _t5="SCORE"
+
+switch(global.Language)
+{
+case 2:
+var _t1="SEM BÔNUS"
+var _t2="BÔNUS"
+var _t3="PERFEITO"
+var _t4="BOM"
+var _t5="PONTUAÇÃO"
+break;
+}
+
+
+var _t1="GET READY TO RUN!"
+var _t2="ATTACK  \nFOR RUN"
+var _t3="  JUMP\nFOR AVOIDING\nOBSTACLES"
+var _t4="GOOD"
+var _t5="SCORE"
+
+switch(global.Language)
+{
+case 2:
+var _t1="PREPARE-SE PARA CORRER!"
+var _t2="ATACAR  /nPARA CORRER"
+var _t3="  SALTAR\nPARA EVITAR\nOBSTÁCULOS"
+var _t4="BOM"
+var _t5="PONTUAÇÃO"
+break;
+}
+	
 draw_set_font(global.scorefont)
 draw_set_color(c_white)
 draw_set_halign(fa_center)
-draw_text(160,20,"GET READY TO RUN!")
+draw_text(160,20,_t1)
 draw_set_halign(fa_right)
-draw_text(160,32,"ATTACK  \nFOR RUN")
+draw_text(160,32,_t2)
 draw_set_halign(fa_left)
-draw_text(160,32,"  JUMP\nFOR AVOIDING\nOBSTACLES")
+draw_text(160,32,_t3)
 
 
 }

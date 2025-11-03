@@ -71,6 +71,7 @@ with oControl
 {
 cutscenename="PRINCE"
 cutsceneline="Don't be shy, my guests! Eat up!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 } x=0
 y=0 vspeed=-0.2
 }
@@ -81,6 +82,7 @@ with oControl
 {
 cutscenename="SOFIA"
 cutsceneline= "Viva you never told us this royal fishman hunk was your cousin! What was up with you?"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 
 specialdraw=function()
@@ -95,7 +97,9 @@ if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
 
 if scenetime=1000
 {with oControl
-{cutscenename="VIVA" cutsceneline= "Simple, I find him obnoxious."}
+{cutscenename="VIVA" cutsceneline= "Simple, I find him obnoxious."
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 }
 
 if scenetime=1260
@@ -103,7 +107,9 @@ if scenetime=1260
 actorBG.hspeed=-0.25	
 with oControl
 {image_index=1
-cutscenename="PRINCE" cutsceneline= "Oh, my slim cousin of mine..."}
+cutscenename="PRINCE" cutsceneline= "Oh, my slim cousin of mine..."
+if global.Language!=0 cutsceneline=languagedialogue[5]
+}
 hspeed=-2 
 }
 
@@ -114,6 +120,7 @@ if scenetime=1540
 with oControl
 {
 cutscenename="PRINCE" cutsceneline= "I'm terribly sorry that my people attacked you so suddenly, but they needed to test you!"
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 
 specialdraw=function()
@@ -129,25 +136,33 @@ draw_sprite(sprite_index,image_index,0,0)
 if scenetime=2040
 {
 with oControl
-{cutscenename="VIVA" cutsceneline= "As you usually do to protect your kingdom, huh?"}
+{cutscenename="VIVA" cutsceneline= "As you usually do to protect your kingdom, huh?"
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=2340
 {
 with oControl
-{cutscenename="PRINCE" cutsceneline= "As a custom! This is a warrior's country after all."}
+{cutscenename="PRINCE" cutsceneline= "As a custom! This is a warrior's country after all."
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=2640
 {image_index=3
 with oControl
-{cutscenename="PRINCE" cutsceneline= "Although... What brings you here anyway?"}
+{cutscenename="PRINCE" cutsceneline= "Although... What brings you here anyway?"
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 
 if scenetime=2940
 {
 with oControl
-{cutscenename="PRINCE" cutsceneline= "And how is that diamond I gave you, cousin?"}
+{cutscenename="PRINCE" cutsceneline= "And how is that diamond I gave you, cousin?"
+	if global.Language!=0 cutsceneline=languagedialogue[10]
+	}
 }
 
 if scenetime=3140 {audio_stop_all() PlaySound(snd_splash5)}
@@ -162,7 +177,9 @@ specialdraw=-1;
 sprite_index=spr_cutscene5a2 image_index=3 x=0 y=0 actorBG.image_index=3
 with oControl
 {
-cutscenename="VIVA" cutsceneline= "Oh yeah... I can... about that..."}
+cutscenename="VIVA" cutsceneline= "Oh yeah... I can... about that..."
+if global.Language!=0 cutsceneline=languagedialogue[11]
+}
 }
 
 if scenetime=3840
@@ -183,7 +200,9 @@ scenetime=4050 actorBG.image_index=4
 
 with oControl
 {quakeFXTime=10;
-cutscenename="PRINCE" cutsceneline= "Sweet scallops this is terrible! That diamond is enchanted! Terrible things could happen with the wrong hands!"}
+cutscenename="PRINCE" cutsceneline= "Sweet scallops this is terrible! That diamond is enchanted! Terrible things could happen with the wrong hands!"
+if global.Language!=0 cutsceneline=languagedialogue[12]
+}
 } else scenetime=3970;
 
 if scenetime=clamp(scenetime,3970,4390)
@@ -194,21 +213,27 @@ if scenetime=4400
 {image_index=1; actorBG.image_index=5 audio_stop_all()
 with oControl
 {
-cutscenename="HINA" cutsceneline= "Does he always do that?"}
+cutscenename="HINA" cutsceneline= "Does he always do that?"
+if global.Language!=0 cutsceneline=languagedialogue[13]
+}
 }
 
 if scenetime=4600
 {image_index=2
 with oControl
 {
-cutscenename="VIVA" cutsceneline= "Yeah, most of the time. Prince, do you have any way to help us?"}
+cutscenename="VIVA" cutsceneline= "Yeah, most of the time. Prince, do you have any way to help us?"
+if global.Language!=0 cutsceneline=languagedialogue[14]
+}
 }
 
 if scenetime=4900
 {specialcheck[0]=321; 
 with oControl
 {
-cutscenename="PRINCE" cutsceneline= "Of course! Quickly! We must pursue those fiends posthaste! My servants and I will send you on your way!"}
+cutscenename="PRINCE" cutsceneline= "Of course! Quickly! We must pursue those fiends posthaste! My servants and I will send you on your way!"
+if global.Language!=0 cutsceneline=languagedialogue[15]
+}
 
 specialdraw=function()
 {
@@ -241,7 +266,9 @@ with actor8 {x=640-32}
 
 with oControl
 {
-cutscenename="PRINCE" cutsceneline= "Alright, cousin. You have a choice between these rides. Which one will you take?"}
+cutscenename="PRINCE" cutsceneline= "Alright, cousin. You have a choice between these rides. Which one will you take?"
+if global.Language!=0 cutsceneline=languagedialogue[16]
+}
 }
 
 if scenetime=6120
@@ -318,4 +345,35 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="QUAL MONTARIA VOCÊ\nVAI ESCOLHER?"
+CDtextA="A AMÊIJOA!!"
+CDtextB="O CAVALO-MARINHO!"
+CDtextC="O GÊISER"
+
+languagedialogue[1]="Hahahahaha! Meus parabéns pela bela conquista, minha querida Viva e suas amigas!"
+languagedialogue[2]="Não sejam timidas, convidadas! deleitem-se!"
+languagedialogue[3]="Viva você nunca disse pra gente que esse galã tritão da realeza era seu primo! O que você tinha na cabeça?"
+languagedialogue[4]="Simples, ei acho ele um Mala sem alça."
+languagedialogue[5]="Ora, minha magricela prima..."
+languagedialogue[6]="Sinto muitissimo que meu povo tenha atacado vocês repentinamente, mas eles tinham que testá-las!"
+languagedialogue[7]="É o seu jeito de proteger seu reino, não é?"
+languagedialogue[8]="De facto! Afinal, este é um país de guerreiros."
+languagedialogue[9]="Mas de todo modo... o que a traz aqui?"
+languagedialogue[10]="E como está aquele diamante que eu lhe presenteei, prima?"
+languagedialogue[11]="Ah, sim... Então... sobre isso..."
+languagedialogue[12]="Santa Anfitrite, isso é terrível! Este diamante é encantado! Desastres podem ocorrer quando em mãos erradas!"
+languagedialogue[13]="Ele é sempre assim?"
+languagedialogue[14]="Sim, quase sempre. Príncipe, você tem alguma maneira de nos ajudar?"
+languagedialogue[15]="Claro! Rápido! Precisamos perseguir esses demônios imediatamente! Meus servos e eu vamos ajudá-las a partir!"
+languagedialogue[16]="Certo, priminha. Você pode escolher qulaquer uma dessa montarias. Qual você prefere?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }

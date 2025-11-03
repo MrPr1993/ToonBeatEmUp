@@ -19,7 +19,14 @@ with oEnemySpawner {timeline=tm_mermaid event_user(0)}
 
 with oControl
 {
-stagename="UNDER THE SEA JAM"		
+stagename="UNDER THE SEA JAM"	
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="POR ÁGUA ABAIXO"
+break;
+	}
 
 global.PrevStage5=12
 prevstagecheck1=global.PrevStage2

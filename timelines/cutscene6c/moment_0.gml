@@ -81,7 +81,7 @@ if scenetime=120
 with oControl
 {
 with oControl {cutscenename="VIVA" cutsceneline= "We need to find a way out of here!"
-
+if global.Language!=0 cutsceneline=languagedialogue[1]
 }
 }
 }
@@ -91,6 +91,7 @@ if scenetime=340
 with oControl
 {
 with oControl {cutscenename="SOFIA" cutsceneline= "How?! We're thousands of feet above the ground!"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 }
@@ -106,7 +107,7 @@ actor4.x=9999
 with oControl
 {quakeFXTime=10
 cutscenename="FIONA" cutsceneline= "WAAAAAAAAAAAAAHHHHHHHHHHHH!"
-
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -115,6 +116,7 @@ if scenetime=660
 vspeed=0.1 image_speed=0.05 y=-64
 sprite_index=spr_cutscene6c0
 with oControl {cutscenename="FIONA" cutsceneline= "You meanies! Why did you hurt me?! You bruised my pretty face!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -123,27 +125,36 @@ if scenetime=960
 sprite_index=spr_divasfeelbad
 	
 with oControl {cutscenename="FIONA" cutsceneline= "Now I'll never find my future husband! Waaaaah!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
 if scenetime=1200
 {
-with oControl {cutscenename="VIVA" cutsceneline= "Okay now I feel terrible..."}
+with oControl {cutscenename="VIVA" cutsceneline= "Okay now I feel terrible..."
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 if scenetime=1460
 {sprite_index=spr_divasfeelbad image_index=1
-with oControl {cutscenename="BAHATI" cutsceneline= "I've got this."}
+with oControl {cutscenename="BAHATI" cutsceneline= "I've got this."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=1700
 {sprite_index=spr_dragoncalming image_index=0
-with oControl {cutscenename="BAHATI" cutsceneline="Sorry for the bruises, we only meant to defend ourselves."}
+with oControl {cutscenename="BAHATI" cutsceneline="Sorry for the bruises, we only meant to defend ourselves."
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=1900
 {image_index=1
-with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know how to fix you up. And you can help us leave the castle."}
+with oControl {cutscenename="BAHATI" cutsceneline= "Here, I know how to fix you up. And you can help us leave the castle."
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 
 if scenetime=2200
@@ -170,19 +181,25 @@ if scenetime=clamp(scenetime,2700,2999) y=lerp(y,-32,0.1)
 if scenetime=3000
 {x=-60 y=0
 sprite_index=spr_newdragon2 image_index=0
-with oControl {cutscenename="FIONA" cutsceneline= "SNIFF! Oh, this is wonderful! I adore it! Just wait until I find my soulmate! Thank you, chunky yellow ladybug!"}
+with oControl {cutscenename="FIONA" cutsceneline= "SNIFF! Oh, this is wonderful! I adore it! Just wait until I find my soulmate! Thank you, chunky yellow ladybug!"
+	if global.Language!=0 cutsceneline=languagedialogue[10]
+	}
 }
 
 if scenetime=clamp(scenetime,3000,3399) {x+=0.1 x=clamp(x,-60,0)}
 
 if scenetime=3400
 {sprite_index=spr_dragonpicking image_index=0 x=0 y=0
-with oControl {cutscenename="BAHATI" cutsceneline= "This is why being nice helps, Viva. It's called 'karma'."}
+with oControl {cutscenename="BAHATI" cutsceneline= "This is why being nice helps, Viva. It's called 'karma'."
+	if global.Language!=0 cutsceneline=languagedialogue[11]
+	}
 }
 
 if scenetime=3650
 {image_index=0
-with oControl {cutscenename="VIVA" cutsceneline= "Right... I guess you have a point-why is she heading toward the window?"}
+with oControl {cutscenename="VIVA" cutsceneline= "Right... I guess you have a point-why is she heading toward the window?"
+	if global.Language!=0 cutsceneline=languagedialogue[12]
+	}
 }
 
 if scenetime=3750
@@ -197,6 +214,7 @@ sprite_index=spr_windowthrow image_index=0
 with actor5 {shadow=-1 }
 	
 with oControl {quakeFXTime=10 cutscenename="FIONA" cutsceneline= "Here you go! Fly, pretty bug ladies!"
+	if global.Language!=0 cutsceneline=languagedialogue[13]
 }
 }
 
@@ -209,7 +227,9 @@ with actor6 {sprite_index=spr_divasfall shadow=-1 image_xscale=2 image_yscale=2 
 	newscript=function() {if image_xscale>0 {image_xscale-=0.01 image_yscale-=0.01} image_xscale=clamp(image_xscale,0,99) image_yscale=clamp(image_yscale,0,99)}
 	}
 	
-with oControl {cutscenename="VIVA" cutsceneline= "Oh you've gotta be KIDDING ME! WE'RE NOT BUUUUUUUUUUUUUUUGSSSSS!!!!"}
+with oControl {cutscenename="VIVA" cutsceneline= "Oh you've gotta be KIDDING ME! WE'RE NOT BUUUUUUUUUUUUUUUGSSSSS!!!!"
+	if global.Language!=0 cutsceneline=languagedialogue[14]
+	}
 }
 
 //if scenetime=4200
@@ -246,6 +266,33 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Temos que encontrar uma maneira de sair daqui!"
+languagedialogue[2]="Como?! Estamos a milhares de metros céu acima!"
+languagedialogue[3]="WAAAAAAAAAAAAAHHHHHHHHHHHH!"
+languagedialogue[4]="Seus malvados! Por que me machucaram?! Vocês feriram meu lindo rosto!"
+languagedialogue[5]="Agora eu nunca vou encontrar meu futuro marido! Waaaaah!"
+languagedialogue[6]="Agora estou me sentindo péssima..."
+languagedialogue[7]="Deixa comigo."
+languagedialogue[8]="Desculpe pelos hematomas, só queríamos nos defender."
+languagedialogue[9]="Olha, eu sei como ajeitar isso. E você pode nos ajudar a sair do castelo."
+languagedialogue[10]="SNIFF! Oh, que maravilha! Eu adorei! Espere até eu encontrar minha alma gêmea! Obrigada, joaninha amarela cheinha!"
+languagedialogue[11]="É por isso que vale a pena ser gentil, Viva. Isso se chama ‘karma’."
+languagedialogue[12]="Tudo bem... Acho que você tem razão-Por que ela está indo em direção à janela?"
+languagedialogue[13]="Pronto! Voem, belas damas joaninhas!"
+languagedialogue[14]="Ah, Só pode ser brincadeira! NÓS NÃO SOMOS JOANINHAAAAAAAAAASSSS!!!!"
+
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
+
 }
 CutsceneStage=rm_stagelab
 canSkipCutscene=2

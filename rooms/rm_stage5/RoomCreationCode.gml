@@ -20,6 +20,13 @@ with oControl
 {
 stagename="LUCKY DOJO CASINO"		
 
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="CASINO DOJO LUCKY"
+break;
+	}
+
 global.PrevStage3=7
 prevstagecheck1=0
 prevstagecheck2=1

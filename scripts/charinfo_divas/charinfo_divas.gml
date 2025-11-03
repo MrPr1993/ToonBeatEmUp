@@ -20,6 +20,15 @@ _heightT="A";
 _weightT="P";
 _abilitiesT="ABILIDADES"
 break;
+case 2: ///Portuguese
+_ageT="IDADE";
+_likesT="GOSTA";
+_dislikesT="DESGOSTA";
+_hobbyT="PASSATIEMPOS";
+_heightT="A";
+_weightT="P";
+_abilitiesT="HABILIDADES"
+break;
 }	
 
 dataabilitiesB=_abilitiesT;

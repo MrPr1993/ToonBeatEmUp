@@ -20,7 +20,14 @@ with oEnemySpawner {timeline=tm_cave event_user(0)}
 
 with oControl
 {
-stagename="FANTASTIC FANTASY CAVERNS"		
+stagename="FANTASTIC FANTASY CAVERNS"	
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="FANTÁSTICA CAVERNA DAS FANTASIAS"
+break;
+	}
 
 global.PrevStage6=15
 prevstagecheck1=global.PrevStage3

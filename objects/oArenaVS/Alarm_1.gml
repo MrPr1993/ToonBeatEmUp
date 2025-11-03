@@ -11,6 +11,20 @@ with oControl
 {
 with oPlayer
 {stagePose=0
+
+var _t1="DRAW GAME"
+var _t2="BONUS"
+var _t3=" WINS!"
+
+switch(global.Language)
+{
+case 2:
+var _t1="EMPATE"
+var _t2="BÔNUS"
+var _t3=" VENCEU!"
+break;
+}
+	
 if dead=0
 {
 if ContinueMode=0
@@ -25,7 +39,7 @@ if playerNO=4
 global.P4Char=character
 canmove=0  AnimFrame=0 stagePose=1
 key_left=0 key_right=0 key_up=0 key_down=0 anim=0
-}if stagePose=1 {oArenaSurvival.playerwinner=string(name)+" WINS!" anim=210}
+}if stagePose=1 {oArenaSurvival.playerwinner=string(name)+string(_t3) anim=210}
 }
 }
 
@@ -33,7 +47,7 @@ with oControl
 {
 resulttext1=""
 altresult1=0
-resulttext2="BONUS"
+resulttext2=_t2
 AltScore2=1
 resulttext3=""
 altresult3=0

@@ -571,7 +571,15 @@ draw_sprite_ext(spr_filmpart,0,-160-64+mapXFilm+iB,+30,1,1,0,c_white,1);
 
 draw_set_font(global.scorefont) draw_set_color(c_white)
 draw_set_halign(fa_center)
-draw_text(0,-30,"STAGE "+string(global.HiScoreLevel))
+var _tt="STAGE "
+
+switch(global.Language)
+{
+
+case 2: _tt="PALCO " break;
+}
+
+draw_text(0,-30,_tt+string(global.HiScoreLevel))
 draw_text(0,30,stagename)
 
 draw_set_halign(fa_left)
@@ -999,21 +1007,66 @@ if global.SaveNumber=0
 
 if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)\n(4 LIVES, 5 CONTINUES)" 
 	diftext2="SUITABLE FOR FIRST TIMERS ON BRAWLING."
+	
+switch(global.Language)
+{
+case 2: ///Portuguese
+diftext="AINDA NA BANDA DE GARAGEM\n(MUITO FÁCIL)\n(4 VIDAS, 5 CONTINUAÇÕES)" 
+diftext2="ADEQUADO PARA INICIANTES EM BRIGAS DE RUA."
+break;
+}
+	
 	global.LifeStart=4; global.Continues=5;}
 if global.Difficulty=1 {diftext="FIRST GIG\n(EASY)\n(3 LIVES, 4 CONTINUES)"  
 	diftext2="WEAKER FOES, YOU TAKE LESS DAMAGE."
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+diftext="PRIMEIRO SHOW\n(FÁCIL)\n(3 VIDAS, 4 CONTINUAÇÕES)" 
+diftext2="INIMIGOS MAIS FRACOS, VOCÊ SOFRE MENOS DANO."
+break;
+}	
+
 		global.LifeStart=3; global.Continues=4;}
 	
 if global.Difficulty=2 {diftext="FAVORITE AT THE CLUB\n(MEDIUM)\n(2 LIVES, 3 CONTINUES)" 
 	diftext2="NORMAL DIFFICULTY, THE BASICS."
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+diftext="FAVORITO NO BOTECO\n(MÉDIO)\n(2 VIDAS, 3 CONTINUAÇÕES)" 
+diftext2="DIFICULDADE NORMAL, O FEIJÃO COM O ARROZ."
+break;
+}		
 		global.LifeStart=2; global.Continues=3;}
 	
 if global.Difficulty=3 {diftext="THE MAIN EVENT AT THE CONCERT\n(HARD)\n(2 LIVES, 2 CONTINUES)" 
 	diftext2="TOUGHER FOES, YOU TAKE MORE DAMAGE."
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+diftext="O EVENTO PRINCIPAL DO CONCERTO\n(DIFÍCIL)\n(2 VIDAS, 2 CONTINUAÇÕES)" 
+diftext2="DIFICULDADE NORMAL, O FEIJÃO COM O ARROZ."
+break;
+}			
+
 		global.LifeStart=2; global.Continues=2;}
 	
 if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)\n(2 LIVES, 1 CONTINUE)" 
 	diftext2="NOT SUITABLE FOR NEWBIES."
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+diftext="PELO DISCO DE OURO\n(MUITO DIFÍCIL)\n(2 VIDAS, 1 CONTINUAÇÃO)" 
+diftext2="NADA ADEQUADO PARA NOOBS."
+
+break;
+}			
+
 		global.LifeStart=2; global.Continues=1;}
 
 
@@ -1022,9 +1075,23 @@ if global.Cheat[15] global.Continues=-1;
 }
 else
 {
-diftext="DIFFICULTY CHANGE IS DISABLED"
-if deletefile=1 {diftext2="DELETE FILE?"
-	if deletefileC=0 diftext2+="✰NO YES" else diftext2+=" NO✰YES"
+var _t1="DIFFICULTY CHANGE IS DISABLED"
+var _t2="DELETE FILE?"
+var _t3="✰NO YES"
+var _t4=" NO✰YES"
+switch(global.Language)
+{
+case 2: ///Portuguese
+var _t1="ALTERAÇÃO DE DIFICULDADE DESATIVADA"
+var _t2="EXCLUIR ARQUIVO?"
+var _t3="✰NÃO  SIM"
+var _t4="✰NÃO  ✰SIM"
+break;
+}	
+
+diftext=_t1
+if deletefile=1 {diftext2=_t2
+	if deletefileC=0 diftext2+=_t3 else diftext2+=_t4
 	
 	//draw_text(xadd,128+16,"NO")
 	//draw_text(xadd,128+24,"YES")
@@ -1035,9 +1102,19 @@ if deletefile=1 {diftext2="DELETE FILE?"
 }
 
 if oControl.multiVSsetting=1
-{diftext="FRIENDLY FIRE" 
-	diftext2="THE OTHER DIVAS CAN GET HIT BY YOUR OWN MOVES.\n(SHOWTIME WON'T APPLY TO THEM)"}
+{
+diftext="FRIENDLY FIRE" 
+diftext2="THE OTHER DIVAS CAN GET HIT BY YOUR OWN MOVES.\n(SHOWTIME WON'T APPLY TO THEM)"
 
+switch(global.Language)
+{
+case 2: ///Portuguese
+diftext="FOGO AMIGO"
+diftext2="DIVAS PODEM SOFRER ATAQUES DE OUTRAS DIVAS.\n(EXCETO ESPETÁCULO)."
+break;
+}	
+
+}
 
 draw_text(xadd,120-32-24,diftext)
 draw_text(xadd,128+8,diftext2)
@@ -1053,23 +1130,33 @@ if global.SaveNumber=0 alphaset=0.75
 draw_set_color(setsave)
 draw_sprite_ext(spr_savefile,global.AllStageMode,xadd,128+48,1,1,0,setsave,alphaset)
 
-
-
+var _t1="SLOT"
+var _t2="NO SAVE"
+var _t3="NEW GAME"
+var _t4="TOTAL SCORE"
+switch(global.Language)
+{
+case 2: ///Portuguese
+_t1="ARQUIVO"
+_t2="NÃO ARQUIVO"
+_t3="NOVO JOGO"
+_t4="PONTUAÇÃO TOTAL"
+}
 draw_text(xadd,128+48,"SAVE FILE")
-var savename="SLOT A" if global.SaveFileNO=2 savename="SLOT B" if global.SaveFileNO=3 savename="SLOT C"
-if global.SaveFileNO=0 savename="NO SAVE"
+var savename=string(_t1)+" A" if global.SaveFileNO=2 savename=string(_t1)+" B" if global.SaveFileNO=3 savename=string(_t1)+"SLOT C"
+if global.SaveFileNO=0 savename=_t2
 
 if global.SaveFileNO=0
 {global.SaveNumber=0
-draw_text(xadd,128+64,"NO SAVE")
+draw_text(xadd,128+64,_t2)
 
 }
 else
 {
 if global.SaveNumber=0
-draw_text(xadd,128+64,string(savename)+"\nNEW GAME")
+draw_text(xadd,128+64,string(savename)+"\n"+string(_t3))
 else
-draw_text(xadd,128+64,string(savename)+"\n"+string(global.SaveText)+"\nTOTAL SCORE\n"+string(
+draw_text(xadd,128+64,string(savename)+"\n"+string(global.SaveText)+"\n"+string(_t4)+"\n"+string(
 global.P5Score
 ))
 }
@@ -1122,11 +1209,27 @@ if key_right_pressed {if global.MultiStage=18 global.MultiStage=-1 else global.M
 }
 }
 
+var _t1="LOCKED"
+var _t2="RANDOM"
+var _t3="HEALTH LEVEL "
+var _t4="LIVES "
+var _t5="TIME "
+var _t6="STAGE SELECT"
 
+switch(global.Language)
+{
+case 2: ///Portuguese
+_t1="BLOQUEADO"
+_t2="ALEATÓRIO"
+_t3="NÍVEL DE SAÚDE "
+_t4="VIDAS "
+_t5="TEMPO "
+_t6="SELECCIÓN DE ETAPA"
+}
 
-diftext="LOCKED"
+diftext=_t1
 global.StageGoing=rm_arena
-if global.MultiStage=-1 {oControl.charselectgo=1 diftext="RANDOM"
+if global.MultiStage=-1 {oControl.charselectgo=1 diftext=_t2
 	
 	global.StageGoing=choose(rm_arena,rm_stage1multi)
 	if global.StageGoing=rm_stage1multi if global.UnlockStage[1]=0 global.StageGoing=rm_arena
@@ -1150,41 +1253,88 @@ if global.MultiStage=-1 {oControl.charselectgo=1 diftext="RANDOM"
 	
 	
 	} ///Random
-if global.MultiStage=0 {oControl.charselectgo=1 diftext="ARENA"} ///Random
-if global.MultiStage=1 {oControl.charselectgo=global.UnlockStage[1] global.StageGoing=rm_stage1multi diftext="DOWNTOWN STREET" } ///Random
-if global.MultiStage=2 {oControl.charselectgo=global.UnlockStage[2] global.StageGoing=rm_stage2bmulti diftext="AIRPORT CATWALK" } ///Random
-if global.MultiStage=3 {oControl.charselectgo=global.UnlockStage[3] global.StageGoing=rm_stage2amulti diftext="SEA CRUISE SHIP" } ///Random
-if global.MultiStage=4 {oControl.charselectgo=global.UnlockStage[4] global.StageGoing=rm_stage2cmulti diftext="EL LOCO DOS" } ///Random
-if global.MultiStage=5 {oControl.charselectgo=global.UnlockStage[5] global.StageGoing=rm_stage3bmulti diftext="ANNA MARI'S GRAVES" } ///Random
-if global.MultiStage=6 {oControl.charselectgo=global.UnlockStage[6] global.StageGoing=rm_stage3amulti diftext="MASHED MUSEUM" } ///Random
-if global.MultiStage=7 {oControl.charselectgo=global.UnlockStage[7] global.StageGoing=rm_stage3cmulti diftext="LUCKY DOJO CASINO" } ///Random
-if global.MultiStage=8 {oControl.charselectgo=global.UnlockStage[8] global.StageGoing=rm_stage4bmulti diftext="SWAMP OF THE DRUID" } ///Random
-if global.MultiStage=9 {oControl.charselectgo=global.UnlockStage[9] global.StageGoing=rm_stage4amulti diftext="DUCK CARNIVAL" } ///Random
-if global.MultiStage=10 {oControl.charselectgo=global.UnlockStage[10] global.StageGoing=rm_stage4cmulti diftext="WAYSIDE BEACH" } ///Random
-if global.MultiStage=11 {oControl.charselectgo=global.UnlockStage[11] global.StageGoing=rm_stage5bmulti diftext="MARTIAN UFO" } ///Random
-if global.MultiStage=12 {oControl.charselectgo=global.UnlockStage[12] global.StageGoing=rm_stage5amulti diftext="PRINCE'S SEA" } ///Random
-if global.MultiStage=13 {oControl.charselectgo=global.UnlockStage[13] global.StageGoing=rm_stage5cmulti diftext="BURNING DESERT" } ///Random
-if global.MultiStage=14 {oControl.charselectgo=global.UnlockStage[14] global.StageGoing=rm_stage6bmulti diftext="SNOWY MOUNTAIN" } ///Random
-if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[15] global.StageGoing=rm_stage6amulti diftext="DUNGEON CAVERN" } ///Random
-if global.MultiStage=16 {oControl.charselectgo=global.UnlockStage[16] global.StageGoing=rm_stage6cmulti diftext="FLUFFY CLOUDY SKY" } ///Random
-if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[17] global.StageGoing=rm_stage7multi diftext="MAD DOCTOR'S LAB" } ///Random
-if global.MultiStage=18 {oControl.charselectgo=global.UnlockStage[18] global.StageGoing=rm_stage8multi diftext="THE DASTARDLY BLIMP" } ///Random
+var _sn0="ARENA"
+var _sn1="DOWNTOWN STREET"
+var _sn2="AIRPORT CATWALK"
+var _sn3="SEA CRUISE SHIP"
+var _sn4="EL LOCO DOS"
+var _sn5="ANNA MARI'S GRAVES"
+var _sn6="MASHED MUSEUM"
+var _sn7="LUCKY DOJO CASINO"
+var _sn8="SWAMP OF THE DRUID"
+var _sn9="DUCK CARNIVAL"
+var _sn10="WAYSIDE BEACH"
+var _sn11="MARTIAN UFO"
+var _sn12="PRINCE'S SEA"
+var _sn13="BURNING DESERT"
+var _sn14="SNOWY MOUNTAIN"
+var _sn15="DUNGEON CAVERN"
+var _sn16="FLUFFY CLOUDY SKY"
+var _sn17="MAD DOCTOR'S LAB"
+var _sn18="THE DASTARDLY BLIMP"
+var _sn19="STAGE 1\nDOWNTOWN BEAT"
+var _sn20="STAGE 1\nDOWNTOWN BEAT"
 
-if oControl.charselectgo=0 diftext="LOCKED"
+	switch(global.Language)
+	{
+case 2:///Portuguese
+_sn0="ARENA"
+_sn1="VIELA DISTRITAL"
+_sn2="ROLÊ AÉRIO"
+_sn3="CRUZEIRO MARÍTIMO"
+_sn4="EL LOCO DOS"
+_sn5="TUMBA DA ANNA MARIA"
+_sn6="MUSEU MASHUPADO"
+_sn7="LUCKY DOJO CASINO"
+_sn8="PÂNTANO DA DRUIDA"
+_sn9="CARNAVAL QUÁ-QUÁ"
+_sn10="COSTA TROPICAL"
+_sn11="DISCO MARCIANO"
+_sn12="MAR DO PRÍNCIPE"
+_sn13="DESERTO ARDENTE"
+_sn14="MONTANHA GLACIAL"
+_sn15="DUNGEON CAVERNOSA"
+_sn16="CÉU DE ALGODÃO-DOCE"
+_sn17="LABBORATÓRIO DO DR. LOUCO"
+_sn18="O DIRIGÍVEL MEDROSO"
+break;	
+	}	
+
+if global.MultiStage=0 {oControl.charselectgo=1 diftext=_sn0} ///Random
+if global.MultiStage=1 {oControl.charselectgo=global.UnlockStage[1] global.StageGoing=rm_stage1multi diftext=_sn1 } ///Random
+if global.MultiStage=2 {oControl.charselectgo=global.UnlockStage[2] global.StageGoing=rm_stage2bmulti diftext=_sn2 } ///Random
+if global.MultiStage=3 {oControl.charselectgo=global.UnlockStage[3] global.StageGoing=rm_stage2amulti diftext=_sn3 } ///Random
+if global.MultiStage=4 {oControl.charselectgo=global.UnlockStage[4] global.StageGoing=rm_stage2cmulti diftext=_sn4 } ///Random
+if global.MultiStage=5 {oControl.charselectgo=global.UnlockStage[5] global.StageGoing=rm_stage3bmulti diftext=_sn5 } ///Random
+if global.MultiStage=6 {oControl.charselectgo=global.UnlockStage[6] global.StageGoing=rm_stage3amulti diftext=_sn6 } ///Random
+if global.MultiStage=7 {oControl.charselectgo=global.UnlockStage[7] global.StageGoing=rm_stage3cmulti diftext=_sn7 } ///Random
+if global.MultiStage=8 {oControl.charselectgo=global.UnlockStage[8] global.StageGoing=rm_stage4bmulti diftext=_sn8 } ///Random
+if global.MultiStage=9 {oControl.charselectgo=global.UnlockStage[9] global.StageGoing=rm_stage4amulti diftext=_sn9 } ///Random
+if global.MultiStage=10 {oControl.charselectgo=global.UnlockStage[10] global.StageGoing=rm_stage4cmulti diftext=_sn10 } ///Random
+if global.MultiStage=11 {oControl.charselectgo=global.UnlockStage[11] global.StageGoing=rm_stage5bmulti diftext=_sn11 } ///Random
+if global.MultiStage=12 {oControl.charselectgo=global.UnlockStage[12] global.StageGoing=rm_stage5amulti diftext=_sn12 } ///Random
+if global.MultiStage=13 {oControl.charselectgo=global.UnlockStage[13] global.StageGoing=rm_stage5cmulti diftext=_sn13 } ///Random
+if global.MultiStage=14 {oControl.charselectgo=global.UnlockStage[14] global.StageGoing=rm_stage6bmulti diftext=_sn14 } ///Random
+if global.MultiStage=15 {oControl.charselectgo=global.UnlockStage[15] global.StageGoing=rm_stage6amulti diftext=_sn15 } ///Random
+if global.MultiStage=16 {oControl.charselectgo=global.UnlockStage[16] global.StageGoing=rm_stage6cmulti diftext=_sn16 } ///Random
+if global.MultiStage=17 {oControl.charselectgo=global.UnlockStage[17] global.StageGoing=rm_stage7multi diftext=_sn17 } ///Random
+if global.MultiStage=18 {oControl.charselectgo=global.UnlockStage[18] global.StageGoing=rm_stage8multi diftext=_sn18 } ///Random
+
+if oControl.charselectgo=0 diftext=_t2
 
 var xadd=-640+160+introtextadd;
 
 draw_set_halign(fa_center)
 
 draw_set_color(c_gray) if oControl.multiVSsetting=0 draw_set_color(c_white)
-draw_text(xadd,120-48,"HEALTH LEVEL "+string(round(global.MultiVSHP*100))+"%")///Stage Name
+draw_text(xadd,120-48,string(_t3)+string(round(global.MultiVSHP*100))+"%")///Stage Name
 draw_set_color(c_gray) if oControl.multiVSsetting=1 draw_set_color(c_white)
-draw_text(xadd,120-48+16,"LIVES "+string(global.MultiVSLife))///Stage Name
+draw_text(xadd,120-48+16,string(_t4)+string(global.MultiVSLife))///Stage Name
 draw_set_color(c_gray) if oControl.multiVSsetting=2 draw_set_color(c_white)
-draw_text(xadd,120-48+32,"TIME "+string(global.MultiTime))///Time
+draw_text(xadd,120-48+32,string(_t5)+string(global.MultiTime))///Time
 
 draw_set_color(c_gray) if oControl.multiVSsetting=3 draw_set_color(c_white)
-draw_text(xadd,120-48+32+16,"STAGE SELECT")///Time
+draw_text(xadd,120-48+32+16,_t6)///Time
 
 draw_set_color(c_gray) var bgcol=c_gray; var bga=0; if oControl.multiVSsetting=3 {bgcol=c_white bga=0.25;}
 if global.MultiStage>0.5
@@ -1201,6 +1351,24 @@ draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))
 
 draw_set_halign(fa_left)
 
+
+var _t1="FRIENDLY FIRE" 
+var _t2="OFF"
+var _t3="ON"
+var _t4="PRESS START TO PLAY"
+var _t5="QUITTING..."
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+_t1="FOGO AMIGO"
+_t2="ATIVADO"
+_t3="DESATIVADO"
+_t4="PRESSIONE START PARA JOGAR"
+_t5="SAINDO…"
+break;
+}	
+
 //draw_sprite_ext(spr_characterselect,2,xadd,16,1,1,0,c_white,0.5)
 var difadd=0; global.Difficulty=clamp(global.Difficulty,0,4)
 if global.Difficulty=1 difadd=16
@@ -1215,8 +1383,8 @@ if global.MultiVS=0
 draw_sprite_ext(spr_difficultystar,global.Difficulty,-32*iI+xadd+difadd,120-8,1,1,0,selecty,1)
 selecty=c_gray if oControl.multiVSsetting=1 selecty=c_white
 draw_set_color(selecty)
- var onoff="OFF" if global.FriendlyFire onoff="ON" draw_set_halign(fa_center)
-draw_text(-640+160+p5.introtextadd,120+32,"FRIENDLY FIRE:"+string(onoff))
+ var onoff=_t2 if global.FriendlyFire onoff=_t3 draw_set_halign(fa_center)
+draw_text(-640+160+p5.introtextadd,120+32,string(_t1)+string(onoff))
 draw_set_color(c_white) draw_set_halign(fa_left)
 }
 }
@@ -1228,7 +1396,7 @@ draw_command(2)
 draw_set_halign(fa_center)
 if characterSelReady=1
 {charselLerp=lerp(charselLerp,-6,0.1)
-draw_text(160+p5.introtextadd,44,"PRESS START TO PLAY")
+draw_text(160+p5.introtextadd,44,_t4)
 }else charselLerp=lerp(charselLerp,0,0.1)
 
 draw_set_font(global.timefont)
@@ -1246,7 +1414,7 @@ if exitroom!=0
 {
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center) draw_set_color(c_white)
-draw_text_transformed(160,20,"QUITTING...",1,1,0)
+draw_text_transformed(160,20,_t5,1,1,0)
 draw_set_color(c_black)
 draw_rectangle(160-80,24,160+80,32,false)
 draw_set_color(c_white)
@@ -1399,6 +1567,7 @@ var _language="MOVE";
 switch(global.Language)
 {
 case 1:  _language="MOVER"; break;
+case 2:  _language="MOVER"; break; ///portuguese
 }
 
 draw_text(8,8+16+16,"▲▼"+string(_language))
@@ -1704,7 +1873,13 @@ if canSkipCutscene=2 or canSkipCutscene=1
 {
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center) draw_set_color(c_white)
-draw_text_transformed(160,8,"SKIPPING",1.5,1.5,0)
+var _tt="SKIPPING"
+switch(global.Language)
+{
+case 1: _tt="SALTANDO" break;
+case 2: _tt="PULANDO" break;
+}
+draw_text_transformed(160,8,_tt,1.5,1.5,0)
 draw_set_color(c_black)
 draw_rectangle(160-80,24,160+80,32,false)
 draw_set_color(c_white)
@@ -1940,15 +2115,25 @@ if mapDif=2 textdif="✰✰✰"
 if mapDif=3 textdif="✰✰✰✰"
 if mapDif=4 textdif="✰✰✰✰✰"
 
+var _tt1="LOCKED"
+var _tt2="HIGH SCORE: "
+switch(global.Language)
+{
+case 2: 
+_tt1="BLOQUEADO"
+_tt2="PONTUAÇÃO TOTAL: "
+break;
+}
+
 draw_set_font(global.scorefont) draw_set_color(c_white)
 draw_set_halign(fa_center)
 if mapSName!="LOCKED"
 {
-draw_text(160,44,string(mapSName)+"\nHIGH SCORE: "+string(mapHighScore))
+draw_text(160,44,string(mapSName)+"\n"+string(_tt2)+string(mapHighScore))
 draw_text(160,44+24,string(textdif))
 }
 else
-draw_text(160,44,string(mapSName))
+draw_text(160,44,string(_tt1))
 
 
 

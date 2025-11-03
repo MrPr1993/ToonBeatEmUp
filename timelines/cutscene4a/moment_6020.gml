@@ -21,6 +21,20 @@ cutscenename="VIVA" cutsceneline= "Forget it, Her beak's obviously too tight for
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Esquece, esse bico tá selado demais pra essa informação valer a pena. Onde está a saída?"
+languagedialogue[2]="Porque eu deveria.... Tá! A saída é pelo milharal, deixem a porta bater nas suas costas ao sair!"
+languagedialogue[3]="Você quis dizer pra não deixar?"
+languagedialogue[4]="Não, Hina. Ela queria dizer aquilo mesmo."
+languagedialogue[5]="Quáquáquá... Essas paspalhonas não fazem ideia de que tem gente desaparecendo por lá..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 newscript=function()
 {
 scenetime+=1;
@@ -34,6 +48,7 @@ with actor5 {sprite_index=spr_duck_talk1 image_speed=0 image_index=0}
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "Why I oughta.... Fine! Exit's through the cornfield, let the door hit yer rears on the way out!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -48,6 +63,7 @@ with actor4 {sprite_index=spr_sofia_move image_speed=0.25 hspeed=2}
 with oControl
 {
 cutscenename="HINA" cutsceneline=  "You mean 'Don't let it'?"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -56,6 +72,7 @@ if scenetime=760
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "No, Hina. She means what she said."
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -72,6 +89,7 @@ if scenetime=1060
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "Heheheh... Those palookas got no clue people've been goin' missin' out there..."
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -101,6 +119,22 @@ cutscenename="BAHATI" cutsceneline= "Alright alright, how about we make it up to
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Beleza, beleza, que tal compensarmos ajudando com o show? Poderia nos contar depois?"
+languagedialogue[2]="Ai poxa, faria isso por mim?! Isso ia resolver tudo num vapt-vupt!"
+languagedialogue[3]="Você perdeu a cabeça?!"
+languagedialogue[4]="Shhhh, vamos confiar na Bahati nessa."
+languagedialogue[5]="Ei, aqui não é o camarim deles."
+languagedialogue[6]="E para o grand finale... ESSAS ZÉ RUELAS SERÃO JOGADAS NO OCEANO! CORTESIA DO CANHÃO DIXIE!"
+languagedialogue[7]="Eu SABIA que a gente não devia ter ajudado aquela @#$%# pata! Mas se vamos ao oceano... conheço alguém que podemos fazer uma visita..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 newscript=function()
 {
 scenetime+=1;
@@ -114,6 +148,7 @@ with actor5 {sprite_index=spr_duck_talk2 image_speed=0 image_index=0}
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "Aw shucks, ya mean it?! That'd make this all better lickety split!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -124,6 +159,7 @@ with actor1 {sprite_index=spr_viva_anger image_index=0}
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Are you out of your mind?!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -140,6 +176,7 @@ with actor2 sprite_index=mask_none
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Shhhh, let's trust Bahati on this."
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -157,7 +194,9 @@ if scenetime=980 PlaySound(snd_hitgroundmetal)
 if scenetime=1040
 {sprite_index=spr_allblackscreen
 with oControl
-{cutscenename="VIVA" cutsceneline= "Hey this isn't their costume room."}
+{cutscenename="VIVA" cutsceneline= "Hey this isn't their costume room."
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1260
@@ -167,6 +206,7 @@ vspeed=-0.1
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "And now for the grand finale... THESE DAMES ARE GOIN' ON A TRIP TO THE OCEAN! COURTESY OF THE DIXIE CANNON!"
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 
@@ -210,6 +250,7 @@ with oControl
 {
 
 cutscenename="VIVA" cutsceneline= "I KNEW we shouldn't have helped that @#$% duck! But if we're going to the ocean... I know someone we can pay a visit..."
+if global.Language!=0 cutsceneline=languagedialogue[7]
 
 }
 }
@@ -262,6 +303,19 @@ cutscenename="" cutsceneline= ""
 x=70
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="...Suas asquerosas..."
+languagedialogue[2]="Tá, tive que assumir o trampo da chefia aqui porque foram atrás de um tesouro, acho que era em algum lugar no deserto do Saara."
+languagedialogue[3]="O deserto! Vamos nessa, meninas!"
+languagedialogue[4]="É pra já! TAXIIIIII!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 scenetime=120
 
 specialdraw=function()
@@ -287,7 +341,7 @@ if scenetime=340
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "...Yer' despicable..."
-
+if global.Language!=0 cutsceneline=languagedialogue[1]
 }
 }
 
@@ -306,7 +360,7 @@ specialdraw=-1 sprite_index=mask_none
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "Fine, I had to take over my boss's job here cuz he ran off on a treasure hunt, think it was somewhere in the sahara desert."
-
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -317,6 +371,7 @@ with actor1 {sprite_index=spr_viva_talk2 image_index=0 image_speed=0.1}
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "The desert! Let's get moving, ladies!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -329,6 +384,7 @@ with actor4 {sprite_index=spr_sofia_win image_index=2}
 with oControl
 {
 cutscenename="SOFIA" cutsceneline= "Already on it! TAXIIIIII!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 

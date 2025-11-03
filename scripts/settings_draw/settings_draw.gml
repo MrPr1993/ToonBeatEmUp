@@ -356,15 +356,51 @@ draw_command(11)
 draw_set_halign(fa_center)
 
 ////Draw the bits
+var _t1="PRESS\nANY TO\nCONNECT!"
+var _t2="LEGACY MODE:OFF"
+var _t3="LEGACY MODE:ON"
+var _t4="JUMP"
+var _t5="ATTACK"
+var _t6="SPECIAL"
+var _t7="SHOWTIME"
+var _t8="BACK ATTACK"
+var _t9="TAUNT"
+var _t10="INTERACT"
+var _t11="CHARGE"
+var _t12="HOLD "
+var _t13="HOLD  "
+var _t14="RESET"
+var _t15="DISCONNECT"
+switch(global.Language)
+{
+case 2: ///Portuguese
+_t1="PRESSIONE\nQUALQUER\nTECLA PARA\nCONECTAR!"
+_t2="NÃO ARQUIVO"
+_t3="NOVO JOGO"
+var _t4="SALTAR"
+var _t5="ATACAR"
+var _t6="ESPECIAL"
+var _t7="SHOWTIME"
+var _t8="RETALIAR"
+var _t9="PROVOCAR"
+var _t10="INTERAGIR"
+var _t11="CARGA"
+var _t12="AGTA. "
+var _t13="AGTA.  "
+var _t14="RESET"
+var _t15="DESCONECTAR"
+}
 
 if !(input_player_connected(_controlno))
 {
 draw_set_color(c_white)
-draw_set_halign(fa_center) draw_text_transformed(40,128,"PRESS ANY\nTO\nCONNECT",1,1,0)
+draw_set_halign(fa_center) draw_text_transformed(40,128,_t1,1,1,0)
 draw_set_halign(fa_left)
 }
 else
 {
+
+
 if LegacyMode=0
 {if ControlChange=0
 	{
@@ -381,44 +417,44 @@ if menuSelect=9 or menuSelect=8 or menuSelect=0 ControlChange=0
 
 draw_set_color(c_gray)
 if menuSelect=0 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_text_transformed(40,32+16,"LEGACY MODE:OFF",0.5,1,0) draw_set_color(c_gray)
+draw_text_transformed(40,32+16,_t2,0.5,1,0) draw_set_color(c_gray)
 if menuSelect=1 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*1+32+16+8,"JUMP",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*1+32+16+8,_t4,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*1+32+16+8,global.ControlJump[_controlno],0.75,1,0) draw_set_color(c_gray)
 if menuSelect=2 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*2+32+16+8*2,"ATTACK",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*2+32+16+8*2,_t5,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*2+32+16+8*2,global.ControlAttack[_controlno],0.75,1,0) draw_set_color(c_gray)
 if menuSelect=3 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*3+32+16+8*3,"SPECIAL",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*3+32+16+8*3,_t6,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*3+32+16+8*3,global.ControlShield[_controlno],0.75,1,0) draw_set_color(c_gray)
 if menuSelect=4 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*4+32+16+8*4,"SHOWTIME",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*4+32+16+8*4,_t7,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*4+32+16+8*4,global.ControlSuper[_controlno],0.75,1,0) draw_set_color(c_gray)
 if menuSelect=5 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*5+32+16+8*5,"BACK ATTACK",0.5,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*5+32+16+8*5,_t8,0.5,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*5+32+16+8*5,global.ControlPunchback[_controlno],0.75,1,0) draw_set_color(c_gray)
 if menuSelect=6 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*6+32+16+8*6,"TAUNT",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*6+32+16+8*6,_t9,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0  draw_text_transformed(80-6,2*6+32+16+8*6,global.ControlTaunt[_controlno],0.75,1,0) draw_set_color(c_dkgray)
-draw_set_halign(fa_left) draw_text_transformed(6,2*7+32+16+8*7,"INTERACT",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*7+32+16+8*7,_t10,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0
 if !LegacyMode {draw_text_transformed(80-6,2*7+32+16+8*7,global.ControlAttack[_controlno],0.75,1,0)}
 else {draw_text_transformed(80-6,2*7+32+16+8*7,global.ControlInteract[_controlno],0.75,1,0)}
 
 draw_set_color(c_dkgray)
-draw_set_halign(fa_left) draw_text_transformed(6,2*8+32+16+8*8,"BACK ATTACK",0.5,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*8+32+16+8*8,_t8,0.5,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*8+32+16+8*8,"◄"+string(global.ControlAttack[_controlno]),0.75,1,0)
 else  draw_text_transformed(80-6,2*8+32+16+8*8,"◄ ",0.75,1,0)
 draw_set_color(c_dkgray)
-draw_set_halign(fa_left) draw_text_transformed(6,2*9+32+16+8*9,"CHARGE",0.5,1,0)
-draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*9+32+16+8*9,"HOLD "+string(global.ControlAttack[_controlno]),0.75,1,0)
-else draw_text_transformed(80-6,2*9+32+16+8*9,"HOLD  ",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*9+32+16+8*9,_t11,0.5,1,0)
+draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*9+32+16+8*9,string(_t12)+string(global.ControlAttack[_controlno]),0.75,1,0)
+else draw_text_transformed(80-6,2*9+32+16+8*9,_t13,0.75,1,0)
 draw_set_color(c_gray)
 if menuSelect=8 draw_set_color(c_white)
-draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*13,"RESET",1,1,0)
+draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*13,_t14,1,1,0)
 draw_set_color(c_gray)
 if menuSelect=9 draw_set_color(c_white)
-draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*14,"DISCONNECT",1,1,0)
+draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*14,_t15,1,1,0)
 }
 else
 {
@@ -429,40 +465,40 @@ if -key_down_pressed if menuSelect=5 menuSelect=0 else menuSelect+=1
 	}
 draw_set_color(c_gray)
 if menuSelect=0 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_text_transformed(40,32+16,"LEGACY MODE:ON",0.5,1,0) draw_set_color(c_gray)
+draw_text_transformed(40,32+16,_t3,0.5,1,0) draw_set_color(c_gray)
 if menuSelect=1 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*1+32+16+8,"JUMP",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*1+32+16+8,_t4,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*1+32+16+8,global.ControlJump[_controlno],0.75,1,0) draw_set_color(c_gray)
 if menuSelect=2 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*2+32+16+8*2,"ATTACK",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*2+32+16+8*2,_t5,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*2+32+16+8*2,global.ControlAttack[_controlno],0.75,1,0) draw_set_color(c_gray)
 if menuSelect=3 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*3+32+16+8*3,"SPECIAL",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*3+32+16+8*3,_t6,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*3+32+16+8*3,global.ControlShield[_controlno],0.75,1,0) draw_set_color(c_gray)
 if menuSelect=4 if ControlChange=0 draw_set_color(c_white) else draw_set_color(c_yellow)
-draw_set_halign(fa_left) draw_text_transformed(6,2*4+32+16+8*4,"SHOWTIME",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*4+32+16+8*4,_t7,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*4+32+16+8*4,global.ControlSuper[_controlno],0.75,1,0) draw_set_color(c_dkgray)
-draw_set_halign(fa_left) draw_text_transformed(6,2*5+32+16+8*5,"BACK ATTACK",0.5,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*5+32+16+8*5,_t8,0.5,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*5+32+16+8*5,global.ControlPunchback[_controlno],0.75,1,0) 
-draw_set_halign(fa_left) draw_text_transformed(6,2*6+32+16+8*6,"TAUNT",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*6+32+16+8*6,_t9,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*6+32+16+8*6,global.ControlTaunt[_controlno],0.75,1,0) draw_set_color(c_dkgray)
-draw_set_halign(fa_left) draw_text_transformed(6,2*7+32+16+8*7,"INTERACT",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*7+32+16+8*7,_t10,0.75,1,0)
 draw_set_halign(fa_right) if Joystick=0
 if !LegacyMode {draw_text_transformed(80-6,2*7+32+16+8*7,global.ControlAttack[_controlno],0.75,1,0)}
 else {draw_text_transformed(80-6,2*7+32+16+8*7,global.ControlInteract[_controlno],0.75,1,0)}
 
 draw_set_color(c_dkgray)
-draw_set_halign(fa_left) draw_text_transformed(6,2*8+32+16+8*8,"BACK ATTACK",0.5,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*8+32+16+8*8,_t8,0.5,1,0)
 draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*8+32+16+8*8,"◄"+string(global.ControlAttack[_controlno]),0.75,1,0) else
  draw_text_transformed(80-6,2*8+32+16+8*8,"◄ ",0.75,1,0)draw_set_color(c_dkgray)
-draw_set_halign(fa_left) draw_text_transformed(6,2*9+32+16+8*9,"CHARGE",0.5,1,0)
-draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*9+32+16+8*9,"HOLD "+string(global.ControlAttack[_controlno]),0.75,1,0)
-else  draw_text_transformed(80-6,2*9+32+16+8*9,"HOLD  ",0.75,1,0)
+draw_set_halign(fa_left) draw_text_transformed(6,2*9+32+16+8*9,_t11,0.5,1,0)
+draw_set_halign(fa_right) if Joystick=0 draw_text_transformed(80-6,2*9+32+16+8*9,string(_t12)+string(global.ControlAttack[_controlno]),0.75,1,0)
+else  draw_text_transformed(80-6,2*9+32+16+8*9,_t13,0.75,1,0)
 draw_set_color(c_gray)
 if menuSelect=5 draw_set_color(c_white)
-draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*13,"RESET",1,1,0)
+draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*13,_t14,1,1,0)
 if menuSelect=6 draw_set_color(c_white)
-draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*14,"DISCONNECT",1,1,0)
+draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*14,_t15,1,1,0)
 }
 }
 }

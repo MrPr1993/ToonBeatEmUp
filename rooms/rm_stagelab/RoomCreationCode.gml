@@ -20,7 +20,14 @@ with oEnemySpawner {timeline=tm_labs event_user(0)}
 
 with oControl
 {
-stagename="DANGEROUS SCIENCE"		
+stagename="DANGEROUS SCIENCE"
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="CIÊNCIA CABULOSA"
+break;
+	}
 
 global.PrevStage7=17
 prevstagecheck1=global.PrevStage4

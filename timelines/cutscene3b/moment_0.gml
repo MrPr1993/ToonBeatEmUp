@@ -95,6 +95,7 @@ if scenetime=380
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "She was just here a second ago!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -104,6 +105,7 @@ if scenetime=800
 	
 with oControl
 {cutscenename="HINA" cutsceneline= "Umm... Girls...?"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 scenetime=860
 }
@@ -112,6 +114,7 @@ if scenetime=940
 {with oControl
 {
 cutscenename="VIVA" cutsceneline="Not now, Hina. Now where did she have gone off to...?"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -120,6 +123,7 @@ if scenetime=1340
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Girls...?"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 scenetime=1360
 }
@@ -129,6 +133,7 @@ if scenetime=1440
 with oControl
 {
 cutscenename="SOFIA" cutsceneline= "Not now Hina, can't you see we're trying to catch that specter?"
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 if scenetime=1740
@@ -136,6 +141,7 @@ if scenetime=1740
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
+if global.Language!=0 cutsceneline=languagedialogue[7]
 }
 scenetime=1860
 }
@@ -148,6 +154,7 @@ sprite_index=spr_ghostslash image_speed=0
 with oControl
 {quakeFXTime=10
 cutscenename="ANNAMARI" cutsceneline= "FOOLS!"
+if global.Language!=0 cutsceneline=languagedialogue[8]
 }
 }
 
@@ -180,6 +187,7 @@ with oControl
 {
 //CHOP
 cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for thinking you could put a damper on my joyous haunting! The living cannot harm the dead!"
+if global.Language!=0 cutsceneline=languagedialogue[9]
 }
 
 }
@@ -191,6 +199,7 @@ if scenetime=2780
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
+if global.Language!=0 cutsceneline=languagedialogue[10]
 }
 }
 
@@ -199,6 +208,7 @@ if scenetime=2880
 with oControl
 {
 cutscenename="SOFIA" cutsceneline= "The living huh...?"
+if global.Language!=0 cutsceneline=languagedialogue[11]
 }
 }
 
@@ -207,6 +217,7 @@ if scenetime=3040
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Well we're not living right now..."
+if global.Language!=0 cutsceneline=languagedialogue[12]
 }
 }
 if scenetime=3400
@@ -214,6 +225,7 @@ if scenetime=3400
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
+if global.Language!=0 cutsceneline=languagedialogue[13]
 }
 }
 if scenetime=3500
@@ -236,6 +248,7 @@ musicplaystart(msc_training)
 with oControl
 {quakeFXTime=10
 cutscenename="ANNAMARI" cutsceneline= "I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
+if global.Language!=0 cutsceneline=languagedialogue[14]
 }
 }
 if scenetime=4140
@@ -243,6 +256,7 @@ if scenetime=4140
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "Your family heirloom...?"
+if global.Language!=0 cutsceneline=languagedialogue[15]
 }
 }
 if scenetime=4300
@@ -250,6 +264,7 @@ if scenetime=4300
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Just like us...."
+if global.Language!=0 cutsceneline=languagedialogue[16]
 }
 }
 
@@ -258,6 +273,7 @@ if scenetime=4540
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "Let's... make a deal since we're in the same issue... I revive you all, and you'll get back my heirloom along with yours!"
+if global.Language!=0 cutsceneline=languagedialogue[17]
 }
 }
 if scenetime=5130
@@ -265,6 +281,7 @@ if scenetime=5130
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Wait how are you..."
+if global.Language!=0 cutsceneline=languagedialogue[18]
 }
 scenetime=5200
 }
@@ -284,6 +301,7 @@ if scenetime=5380
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "OH. So unconfortable for my neck..."
+if global.Language!=0 cutsceneline=languagedialogue[19]
 }
 }
 if scenetime=5760
@@ -291,6 +309,7 @@ if scenetime=5760
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "Well, where the thieves went, miss Annamari?"
+if global.Language!=0 cutsceneline=languagedialogue[20]
 }
 }
 
@@ -313,6 +332,7 @@ with actor8 {x=640-32}
 with oControl
 {
 cutscenename="ANNAMARI" cutsceneline= "They kinda spread out into my spooky doors... so you should pick which one."}
+if global.Language!=0 cutsceneline=languagedialogue[21]
 }
 
 if scenetime=6120
@@ -389,6 +409,71 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="VOCÊ IRÁ ESCOLHER\nQUAL PORTA?"
+CDtextA="PORTA VERDE."
+CDtextB="PORTA VERMELHA."
+CDtextC="PORTA AZUL."
+
+languagedialogue[1]="Huh?! Pra onde que o fantasma foi?"
+
+languagedialogue[2]="Ela tava aqui faz um segundinho atrás!"
+
+languagedialogue[3]="Umm... Meninas...?"
+
+languagedialogue[4]="Agora não, Hina. Onde que ela se meteu...?"
+
+languagedialogue[5]="Meninas...?"
+
+languagedialogue[6]="Calma Hina, não tá vendo que estamos procurando aquela assombração?"
+
+languagedialogue[7]="Fufufu... Todas..."
+
+//(Annamari decapitates them!)
+
+languagedialogue[8]="TOLAS!"
+
+languagedialogue[9]="OOOOHOHOHOHO! Bem te serve por pensardes que conteriam meu jubiloso assombro! Nenhum sopro dos vivos ferirá os que habitam além do véu da morte."
+
+languagedialogue[10]="OHOHOH-oh...?" //(the divas’ ghosts surround her)
+
+languagedialogue[11]="Os vivos né...?"
+
+languagedialogue[12]="Não estou me sentindo tão viva..."
+
+languagedialogue[13]="...Oh céus..."
+
+//(beatdown ensues)
+
+languagedialogue[14]="RENDO-ME! Suplico clemência! Assombrei este solar apenas para extravasar amargas aflições graças a vis ladrões que furtaram a herança sagrada de minha família!"
+
+languagedialogue[15]="Sua herança de família...?"
+
+languagedialogue[16]="Que nem a gente..."
+
+languagedialogue[17]="Façamos... um acordo visto que nossas questões se entrelaçam.... Eu ressuscito a todos vós e em retorno vós restituís minha herança e também a vossa!"
+
+languagedialogue[18]="Peraí como que você vai..."
+
+//(Annamari brings them back to life putting their head back and using duct tape)
+
+languagedialogue[19]="AI! Meu pescoço não tá confortável não..."
+
+languagedialogue[20]="Então, onde que os ladrões foram, dama Annamari?"
+
+languagedialogue[21]="Eles se espalharam pelas minhas portas assombradas... então cabe a vós escolher qual delas seguir."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
+
+
 }
 
 

@@ -27,6 +27,8 @@ actorscreen=instance_create_depth(160,192,-1,oCameoChar) with actorscreen
 musicplaystart(msc_countdown)	
 
 	x=0 y=0
+	
+
 
 actor1=instance_create_depth(1186,170,-1,oCameoChar) with actor1
 {sprite_index=spr_viva_cutscene image_index=0 anim=9999}
@@ -86,6 +88,7 @@ with actor3 {sprite_index=spr_bahati_talk2 image_speed=0.25}
 with oControl
 {
 cutscenename="BAHATI" cutsceneline="Sorry. We HAVE been too gung-ho on the whole 'fight first, ask questions later' approach..."
+if global.Language!=0 cutsceneline=languagedialogue[2]
 } x=0
 y=0
 }
@@ -101,6 +104,7 @@ with actor1 {sprite_index=spr_viva_talk3 image_speed=0.25}
 with oControl
 {cutscenename="VIVA"
 cutsceneline="Look, we've had some VERY valuable personal treasures stolen from us, and we need to get them back. Do you know where they are?"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -112,6 +116,7 @@ with actor1 {image_speed=0 image_index=0}
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Very well... I suppose I'll let this incident go since Larry attacked you first. Larry, fetch my crystal ball would you, sweetie?"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -132,6 +137,7 @@ if scenetime=2840
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Oh, come now, mommy will take you to a shop to get your favorite treat, 'kay?"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -146,6 +152,7 @@ with actor2 {sprite_index=spr_hina_cutscene image_index=0}
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Ya know? That octopus looked adorable."
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 
@@ -155,6 +162,7 @@ with actor5 {sprite_index=spr_seaweed_talk2 image_index=1 image_speed=0.1}
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Yes. They used to be a sailor."
+if global.Language!=0 cutsceneline=languagedialogue[7]
 }
 }
 
@@ -168,6 +176,7 @@ with actor4 {sprite_index=spr_sofia_wildtake image_index=0 image_speed=0}
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "What."
+if global.Language!=0 cutsceneline=languagedialogue[8]
 }
 }
 
@@ -177,6 +186,7 @@ if scenetime=3500
 with oControl
 {
 cutscenename="CIRCE" cutsceneline= "Oh, here we are, thank you dear!"
+if global.Language!=0 cutsceneline=languagedialogue[9]
 }
 }
 
@@ -219,7 +229,9 @@ with actor6 {image_speed=0 x=320-32 y=160 image_xscale=1 sprite_index=spr_octopu
 
 with oControl
 {
-cutscenename="CIRCE" cutsceneline= "Now, let's see what you can see in this crystal ball!"}
+cutscenename="CIRCE" cutsceneline= "Now, let's see what you can see in this crystal ball!"
+if global.Language!=0 cutsceneline=languagedialogue[10]
+}
 }
 
 
@@ -281,6 +293,32 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="O QUE VOCÊ VÊ NA BOLA DE\nCRISTAL?"
+CDtextA="AS ESTRELAS!"
+CDtextB="OS MARES!"
+CDtextC="AS AREIAS!"
+
+languagedialogue[1]="Como pôde?! Primeiro maltratam meu doce Larryzinho e AGORA me atacam?! qual o problema de vocês?!"
+languagedialogue[2]="Perdão. É que entramos demais no clima de 'espancar primeiro, perguntar depois'..."
+languagedialogue[3]="Olha, roubaram alguns tesouros pessoais MUITO valiosos de nós, e precisamos recuperá-los. Você sabe onde estão?"
+languagedialogue[4]="Está bem... Acho que vou fazer vista grossa pra esse tropeço, já que o Larry atacou primeiro. Larryzinho, poderia pegar minha bola de cristal, docinho?"
+languagedialogue[5]="Oh, vamos amor, a mamãe vai comprar o seu doce favorito depois, tá bom?"
+languagedialogue[6]="Aquele polvo é uma gracinha, não acha?"
+languagedialogue[7]="Sim. Ele costumava ser um marinheiro."
+languagedialogue[8]="Como é."
+languagedialogue[9]="Oh, aqui está, obrigada, docinho!"
+languagedialogue[10]="Agora, vamos ver o que você enxerga nessa bola de cristal!"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 

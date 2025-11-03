@@ -105,6 +105,7 @@ if scenetime=120
 with oControl
 {
 cutscenename="SHOKIJO" cutsceneline= "Such power..."
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -116,6 +117,7 @@ if scenetime=240
 with oControl
 {
 cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "To use to assault our employees and customers."
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -135,6 +137,7 @@ sprite_index=mask_none image_index=0 vspeed=0 x=0 y=0
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "We want answers! What're those thieves planning to do with our treasure?!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -144,7 +147,9 @@ with actor1 {image_index=0 image_speed=0}
 with actor4 {sprite_index=spr_sofia_talk image_speed=0.25}
 
 with oControl
-{cutscenename="SOFIA" cutsceneline= "You better speak up, chicas. We're 4-to-2."}
+{cutscenename="SOFIA" cutsceneline= "You better speak up, chicas. We're 4-to-2."
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1360
@@ -155,6 +160,7 @@ with actor4 {image_index=0 image_speed=0}
 with oControl
 {cutscenename="FUKUKIJO"
 cutsceneline= "Well, how arrogant of you..."
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 
@@ -208,6 +214,7 @@ with actor1 {sprite_index=spr_viva_point}
 with oControl
 {image_index=1
 cutscenename="VIVA" cutsceneline= "You and your big mouth..."
+if global.Language!=0 cutsceneline=languagedialogue[7]
 }
 scenetime=1860
 }
@@ -221,6 +228,7 @@ with actor6 {sprite_index=spr_oni_talk image_speed=0.25}
 with oControl
 {
 cutscenename="SHOKIJO" cutsceneline= "You would do well to mind your manners..."
+if global.Language!=0 cutsceneline=languagedialogue[8]
 }
 }
 
@@ -232,6 +240,7 @@ with actor5 {sprite_index=spr_oni_talk image_speed=0.25} ///Fuku
 with oControl
 {
 cutscenename="FUKUKIJO" cutsceneline= "And we would want to put you all in pieces here and now..."
+if global.Language!=0 cutsceneline=languagedialogue[9]
 }
 }
 
@@ -243,6 +252,7 @@ with actor5 {image_index=0 sprite_index=spr_oni_talk image_speed=0.25} ///Fuku
 with oControl
 {
 cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "But we find all of you amusing."
+if global.Language!=0 cutsceneline=languagedialogue[10]
 }
 }
 
@@ -256,6 +266,7 @@ with actor2 {sprite_index=spr_hina_cutscene image_index=0}
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Okay...?"
+if global.Language!=0 cutsceneline=languagedialogue[11]
 }
 }
 
@@ -266,6 +277,7 @@ with actor5 {sprite_index=spr_oni_talk image_speed=0.25} ///Fuku
 with oControl
 {
 cutscenename="FUKUKIJO" cutsceneline= "We shall release you... But first, let's play a game."
+if global.Language!=0 cutsceneline=languagedialogue[12]
 }
 }
 
@@ -278,6 +290,7 @@ with actor3 {sprite_index=spr_bahati_talk2 image_speed=0.25} ///Fuku
 with oControl
 {
 cutscenename="BAHATI" cutsceneline= "A game? What do you mean?"
+if global.Language!=0 cutsceneline=languagedialogue[13]
 }
 }
 
@@ -295,6 +308,7 @@ with actor6 {sprite_index=spr_oni_talk image_speed=0.25} ///Fuku
 with oControl
 {
 cutscenename="SHOKIJO" cutsceneline= "Just that. Answer our riddle, and in exchange, we'll send you on a path to the answers you seek."
+if global.Language!=0 cutsceneline=languagedialogue[14]
 }
 }
 
@@ -307,6 +321,7 @@ with actor2 {sprite_index=spr_hina_opening image_speed=0.25} ///Fuku
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Oh a riddle! How fun! Lay it on us!"
+if global.Language!=0 cutsceneline=languagedialogue[15]
 }
 }
 
@@ -330,6 +345,7 @@ with actor8 {specialcheck[0]=1}
 with oControl
 {
 cutscenename="FUKUKIJO" cutsceneline= "One of us speaks only the truth... Like about how we wax our horns..."
+if global.Language!=0 cutsceneline=languagedialogue[16]
 }
 }
 
@@ -338,6 +354,7 @@ if scenetime=4500 ////Cut to black
 with oControl
 {
 cutscenename="SHOKIJO" cutsceneline= "...While the other only lies... Like about how we are 300 years old..."
+if global.Language!=0 cutsceneline=languagedialogue[17]
 }
 }
 
@@ -351,6 +368,7 @@ sprite_index=spr_oniriddle with actor8 {specialcheck[0]=1 specialcheck[7]=0 x=0;
 with oControl
 {
 cutscenename="FUKUKIJO & SHOKIJO" cutsceneline= "Which of us is the liar?"
+if global.Language!=0 cutsceneline=languagedialogue[18]
 }
 }
 
@@ -412,6 +430,39 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="TENTE RESOLVER A CHARADA\nDAS IRMÃS ONI!"
+CDtextA="ONI VERMELHO ESTÁ MENTINDO."
+CDtextB="AMBAS AS ONI ESTÃO MENTINDO."
+CDtextC="ONI AZUL ESTÁ MENTINDO."
+
+languagedialogue[1]="Tanta força..."
+languagedialogue[2]="Tanto poder..."
+languagedialogue[3]="Usado para atacar nossos empregados e clientes."
+languagedialogue[4]="Queremos respostas! O que esses ladrões estão planejando com os nossos tesouros?!"
+languagedialogue[5]="É melhor falar, chicas. Somos 4 contra 2."
+languagedialogue[6]="Quanta arrogância de vocês..."
+languagedialogue[7]="Você e sua boca grande..."
+languagedialogue[8]="Faria bem a vocês corrigirem suas maneiras..."
+languagedialogue[9]="E faria bem a nós reduzir vocês a pedacinhos aqui e agora..."
+languagedialogue[10]="Mas nós achamos vocês divertidas demais para fazer isso."
+languagedialogue[11]="Maneiro...?"
+languagedialogue[12]="Nós iremos te libertar... Mas antes, vamos jogar um jogo."
+languagedialogue[13]="Um jogo? Como assim?"
+languagedialogue[14]="Simples assim. Responda nossa charada, em troca, te enviaremos em direção às respostas que procuram."
+languagedialogue[15]="Oh uma charada! Demais! Pode mandar!"
+languagedialogue[16]="Uma de nós apenas fala a verdade... Sobre como enceramos nossos chifres..."
+languagedialogue[17]="...Enquanto a outra apenas mentiras... Sobre termos 300 anos de idade..."
+languagedialogue[18]="Qual de nós estamos mentindo?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 

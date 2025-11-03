@@ -70,6 +70,7 @@ with actor8 {sprite_index=spr_geniewhat x=-160 y=0 shadow=-1 isDepth=0 depth=-30
 with oControl
 {quakeFXTime=10
 cutscenename="HAIFA" cutsceneline= "Please! Do not harm my beloved!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 } x=0
 y=0
 }
@@ -79,6 +80,7 @@ if scenetime=540
 with oControl
 {
 cutscenename="DIVAS" cutsceneline= "'Beloved'?!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -96,7 +98,7 @@ with actor6 {sprite_index=spr_geniemaster_talk image_speed=0.25}
 with oControl
 {
 cutscenename="BURGUSON" cutsceneline= "I got lost while lookin' for the rest of the gang... But then I met this beautiful dame and we fell madly in love!"
-	
+	if global.Language!=0 cutsceneline=languagedialogue[4]
 	}
 
 with actor1 {x=80 y=170 sprite_index=spr_viva_point image_index=2}
@@ -118,6 +120,7 @@ with actor6 {sprite_index=spr_geniemaster_talk image_index=0 image_speed=0}
 with oControl
 {
 cutscenename="HAIFA" cutsceneline= "It is true! And if you leave us be, I will grant you one wish."
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 
 }
@@ -139,7 +142,9 @@ draw_sprite(sprite_index,specialcheck[2],round(x),round(y))
 }
 
 with oControl
-{cutscenename="HAIFA" cutsceneline= "I could give you wealth!"}
+{cutscenename="HAIFA" cutsceneline= "I could give you wealth!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 if scenetime=1500
@@ -147,7 +152,9 @@ if scenetime=1500
 geniewishes.specialcheck[0]=0
 
 with oControl
-{cutscenename="VIVA" cutsceneline= "We... got that? We're rich already."}
+{cutscenename="VIVA" cutsceneline= "We... got that? We're rich already."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=1750
@@ -155,7 +162,9 @@ if scenetime=1750
 geniewishes.specialcheck[0]=-320
 
 with oControl
-{cutscenename="HAIFA" cutsceneline= "Oh. What about fame?"}
+{cutscenename="HAIFA" cutsceneline= "Oh. What about fame?"
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=1900
@@ -163,7 +172,9 @@ if scenetime=1900
 geniewishes.specialcheck[0]=0 geniewishes.specialcheck[2]=1	
 
 with oControl
-{cutscenename="BAHATI" cutsceneline= "We got all the fame we need."}
+{cutscenename="BAHATI" cutsceneline= "We got all the fame we need."
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 
 if scenetime=2150
@@ -171,7 +182,9 @@ if scenetime=2150
 geniewishes.specialcheck[0]=-320	
 
 with oControl
-{cutscenename="HAIFA" cutsceneline= "What about love?! Love is one important thing."}
+{cutscenename="HAIFA" cutsceneline= "What about love?! Love is one important thing."
+	if global.Language!=0 cutsceneline=languagedialogue[10]
+	}
 }
 
 if scenetime=2360
@@ -179,19 +192,25 @@ if scenetime=2360
 geniewishes.specialcheck[0]=0 geniewishes.specialcheck[2]=2
 
 with oControl
-{cutscenename="SOFIA" cutsceneline= "All covered."}
+{cutscenename="SOFIA" cutsceneline= "All covered."
+	if global.Language!=0 cutsceneline=languagedialogue[11]
+	}
 }
 
 if scenetime=2520
 {
 with oControl
-{cutscenename="HINA" cutsceneline= "This is our kind of love."}
+{cutscenename="HINA" cutsceneline= "This is our kind of love."
+	if global.Language!=0 cutsceneline=languagedialogue[12]
+	}
 }
 
 if scenetime=2700
 {geniewishes.specialcheck[1]=1
 with oControl
-{cutscenename="HAIFA" cutsceneline= "...alright."}
+{cutscenename="HAIFA" cutsceneline= "...alright."
+	if global.Language!=0 cutsceneline=languagedialogue[13]
+	}
 }
 
 if scenetime=2850
@@ -213,6 +232,7 @@ with actor6 {x=220 y=180 sprite_index=spr_geniemaster_talk image_speed=0 image_i
 with oControl
 {
 cutscenename="HAIFA" cutsceneline= "Just tell me what you need... But choose your words carefully..." 
+if global.Language!=0 cutsceneline=languagedialogue[14]
 }
 }
 
@@ -276,6 +296,38 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="FAÇA UM DESEJO!\nESCOLHA COM SABEDORIA!"
+CDtextA="UM LUGAR MAIS FRIO."
+CDtextB="ESTAR EM TERRA FIRME."
+CDtextC="ALCANÇAR ALTURAS MAIORES."
+
+languagedialogue[1]="EU ME RENDO! POR FAVOR NÃO ME MACHUQUEEEEM!!!"
+languagedialogue[2]="Por favor! Não machuquem o meu amado!"
+languagedialogue[3]="Amado?!"
+languagedialogue[4]="Eu me perdi enquanto procurava o resto da gangue... Mas então conheci essa bela dama e nos apaixonamos loucamente!"
+languagedialogue[5]="É verdade! E se nos deixar em paz, eu concederei um desejo."
+languagedialogue[6]="Eu poderia lhe dar riqueza!"
+languagedialogue[7]="Nós... temos isso? Já somos ricas."
+languagedialogue[8]="Ah. E fama?"
+languagedialogue[9]="Temos toda a fama que precisamos."
+languagedialogue[10]="E amor?! O amor é uma coisa importante."
+languagedialogue[11]="Tudo nos conformes."
+languagedialogue[12]="Esse é o nosso tipo de amor."
+languagedialogue[13]="... tudo bem."
+languagedialogue[14]="Apenas diga o que você precisa... Mas escolha suas palavras com cuidado..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+
+break;
+}
+
+
 }
 
 

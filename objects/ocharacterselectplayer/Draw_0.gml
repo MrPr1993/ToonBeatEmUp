@@ -13,6 +13,16 @@ else
 {
 draw_sprite_ext(spr_characterselect,2,x+1,y+1,1,1,0,c_black,0.5)
 
+var _tt1="\nPRESS\nANY TO\nCONNECT!"
+var _tt2="\nPRESS\n\n\nTO\nCONNECT!"
+
+switch(global.Language)
+{
+case 2:
+var _tt1="\nPRESSIONE\nQUALQUER\nTECLA PARA\nCONECTAR!"
+var _tt2="\nPRESSIONE\n\nPARA\nCONECTAR!"
+break;
+}
 
 if charadded=0
 {
@@ -22,14 +32,14 @@ draw_set_halign(fa_center)
 if introbuffer=0
 {
 if  !(input_player_connected(controlNO-1))//!(input_source_using(INPUT_GAMEPAD, controlNO-1))
-draw_text(x+40,y+80,"P"+string(controlNO)+"\nPRESS\nANY TO\nCONNECT!")
+draw_text(x+40,y+80,"P"+string(controlNO)+string(_tt1))
 else
 {var commandsave=global.ConsoleType;
 if !(input_source_using(INPUT_GAMEPAD, controlNO-1))
 global.ConsoleType="PC";
 draw_command(14)
 draw_set_halign(fa_center)
-draw_text(x+40,y+72,"P"+string(controlNO)+"\nPRESS\n\n\nTO\nCONNECT!")
+draw_text(x+40,y+72,"P"+string(controlNO)+string(_tt2))
 global.ConsoleType=commandsave;
 }
 }
@@ -46,19 +56,38 @@ draw_set_valign(fa_top)
 draw_set_halign(fa_center)
 if palettemode=0
 {
-draw_text(x+40,190,string_hash_to_newline("POWER"))
+var _t1="POWER"
+var _t2="SPEED"
+var _t3="REACH"
+var _t4="PALETTE"
+var _t5="NORMAL"
+var _t5="CUSTOM"
+switch(global.Language)
+{
+
+case 2:
+var _t1="PODER"
+var _t2="VELOC."
+var _t3="ALCANZ."
+var _t4="PALETTE"
+var _t5="NORMAL"
+var _t5="PERSON."
+break;
+}
+
+draw_text(x+40,190,string_hash_to_newline(_t1))
 draw_text(x+40,190+8,string_hash_to_newline(ability1))
-draw_text(x+40,190+16,string_hash_to_newline("SPEED"))
+draw_text(x+40,190+16,string_hash_to_newline(_t2))
 draw_text(x+40,190+24,string_hash_to_newline(ability2))
-draw_text(x+40,190+32,string_hash_to_newline("REACH"))
+draw_text(x+40,190+32,string_hash_to_newline(_t3))
 draw_text(x+40,190+40,string_hash_to_newline(ability3))
 }
 else
 {
-draw_text(x+40,190,string_hash_to_newline("PALETTE"))
+draw_text(x+40,190,string_hash_to_newline(_t4))
 
 var palmax=16; if global.UnlockAltPal2 palmax=32;
-var checkpal="NORMAL" if custommode checkpal="CUSTOM"
+var checkpal=_t5 if custommode checkpal=_t6
 
 if controlNO=1
 draw_text(x+40,190+16,"▲SET▼\n"+string(checkpal)+"\n◄"+string(global.p1Pal+1)+"/"+string(palmax)+"►")

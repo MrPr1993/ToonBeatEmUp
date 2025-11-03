@@ -23,7 +23,14 @@ with oEnemySpawner {timeline=tm_desert event_user(0)}
 
 with oControl
 {
-stagename="HEATING HOT DESERT"		
+stagename="HEATING HOT DESERT"	
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="DESERTO ISKH-AL DANT"
+break;
+	}
 
 global.PrevStage5=13
 prevstagecheck1=global.PrevStage2

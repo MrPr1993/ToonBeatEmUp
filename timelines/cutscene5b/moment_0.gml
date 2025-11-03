@@ -108,7 +108,9 @@ if scenetime=720
 {
 with oControl
 {image_index=1 
-cutscenename="VIVA" cutsceneline= "...So we're all in agreement to never speak of this again, right?"}
+cutscenename="VIVA" cutsceneline= "...So we're all in agreement to never speak of this again, right?"
+if global.Language!=0 cutsceneline=languagedialogue[1]
+}
 }
 
 if scenetime=clamp(scenetime,720,800) flashscreen.image_alpha-=0.1;
@@ -117,28 +119,36 @@ if scenetime=1020
 {	
 with oControl
 {image_index=1
-cutscenename="HINA" cutsceneline= "YUP."}
+cutscenename="HINA" cutsceneline= "YUP."
+if global.Language!=0 cutsceneline=languagedialogue[2]
+}
 }
 
 if scenetime=1100
 {	
 with oControl
 {image_index=1
-cutscenename="BAHATI" cutsceneline= "Absolutely."}
+cutscenename="BAHATI" cutsceneline= "Absolutely."
+if global.Language!=0 cutsceneline=languagedialogue[3]
+}
 }
 
 if scenetime=1200
 {	
 with oControl
 {image_index=1
-cutscenename="SOFIA" cutsceneline= "Talk about what again?"}
+cutscenename="SOFIA" cutsceneline= "Talk about what again?"
+if global.Language!=0 cutsceneline=languagedialogue[4]
+}
 }
 
 if scenetime=1340
 {	specialcheck[0]=320
 with oControl
 {image_index=1 
-cutscenename="VIVA" cutsceneline= "GOOD."}
+cutscenename="VIVA" cutsceneline= "GOOD."
+if global.Language!=0 cutsceneline=languagedialogue[5]
+}
 
 specialdraw=function()
 {
@@ -169,7 +179,9 @@ with actor8 {x=640-32 sprite_index=spr_hotairballoon image_xscale=1 image_index=
 
 with oControl
 {
-cutscenename="VIVA" cutsceneline= "Now.... Which way are we going here...?"}
+cutscenename="VIVA" cutsceneline= "Now.... Which way are we going here...?"
+if global.Language!=0 cutsceneline=languagedialogue[6]
+}
 }
 
 if scenetime=6120
@@ -248,6 +260,27 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="PARA ONDE VOCÊS VÃO?"
+CDtextA="A MONTANHA NEVADA."
+CDtextB="A CAVERNA MÁGICA."
+CDtextC="O BALÃO DE AR QUENTE."
+
+languagedialogue[1]="...Então, estamos todos de acordo em nunca mais falar sobre isso, certo?"
+languagedialogue[2]="Sim."
+languagedialogue[3]="Com certeza."
+languagedialogue[4]="Falar sobre o quê?"
+languagedialogue[5]="ÓTIMO."
+languagedialogue[6]="Agora... Para onde vamos?"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 

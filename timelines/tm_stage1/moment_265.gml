@@ -46,6 +46,12 @@ btnind=7+6*commandMul btnT2=""
 }
 
 btnT3="FOR A SHOWTIME IF BAR'S FULL!"
+
+switch(global.Language)
+{
+case 2: btnT1="PRESSIONE" btnT3="PARA O ESPETÁCULO SE A BARRA ESTIVER CHEIA!" break;
+}
+
 }
 }
 timeline_position-=1

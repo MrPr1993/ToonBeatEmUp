@@ -12,7 +12,7 @@ var _abilitiesT="ABILITIES"
 
 switch(global.Language)
 {
-case 1:
+case 1: ///Espanol
 _ageT="EDAD";
 _likesT="GUSTOS";
 _dislikesT="DISGUSTOS";
@@ -20,6 +20,15 @@ _hobbyT="PASATIEMPOS";
 _heightT="A";
 _weightT="P";
 _abilitiesT="ABILIDADES"
+break;
+case 2: ///Portuguese
+_ageT="IDADE";
+_likesT="GOSTA";
+_dislikesT="DESGOSTA";
+_hobbyT="PASSATIEMPOS";
+_heightT="A";
+_weightT="P";
+_abilitiesT="HABILIDADES"
 break;
 }	
 

@@ -16,7 +16,14 @@ global.HiScoreLevel=3
 
 with oControl
 {
-stagename="MASHUP MUSEUM"		
+stagename="MASHUP MUSEUM"	
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="MUSEU MASHUP"
+break;
+	}
 
 global.PrevStage3=6
 prevstagecheck1=0

@@ -84,15 +84,25 @@ frame_set(1,0,0.1)
 ///Win/Lose
 if anim=10
 {
+var _t1="DISTANCE"
+var _t2="PERFECT"
+switch(global.Language)
+{
+case 2:
+var _t1="DISTÂNCIA"
+var _t2="PERFEITO"
+break;
+}	
+
 	if oBullGame.stageClear=0
 	x-=8
 if win=0 sprite_index=flatSpr
 	
 breakresult=0
 		
-		altresult2Text="DISTANCE" altresult2=oBullGame.rundist
+		altresult2Text=_t1 altresult2=oBullGame.rundist
 
-if win=1 {altresult2Text="PERFECT" altresult2=10000  with oControl minigameIDwin=1;
+if win=1 {altresult2Text=_t2 altresult2=10000  with oControl minigameIDwin=1;
 if AnimFrame=0 {ground=0 spdZ=-8 AnimFrame=1}	
 if ground=0 sprite_index=jumpSpr
 if spdZ>=0 {sprite_index=hangSpr spdZ=0}

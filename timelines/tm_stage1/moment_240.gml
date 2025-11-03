@@ -31,6 +31,13 @@ btnind=5+6*commandMul btnT2=""
 }
 
 btnT3="FOR A SPECIAL ATTACK"
+
+switch(global.Language)
+{
+case 2: btnT1="PRESSIONE" btnT3="PARA UM ATAQUE ESPECIAL" break;
+}
+
+
 }
 	
 with oControl {//camMove=0 camMax=room_width

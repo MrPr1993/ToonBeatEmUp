@@ -58,11 +58,54 @@ mapSY=mapSYlerp x=mapSXlerp
 ///Check Map Locations
 //A
 
+var _sn1="STAGE 1\nDOWNTOWN BEAT"
+var _sn2="STAGE 2-B\nAERIAL WALK"
+var _sn3="STAGE 2\nRUSH OVER THE SEAS"
+var _sn4="STAGE 2-C\nTRAINING TRAVEL"
+var _sn5="STAGE 3-B\nGRITTY GRAVES"
+var _sn6="STAGE 3\nMASHUP MUSEUM"
+var _sn7="STAGE 3-C\nLUCKY DOJO CASINO"
+var _sn8="STAGE 4-B\nDEEP DEAD SWAMPS"
+var _sn9="STAGE 4\nCLOWNY HONKY CARNIVAL"
+var _sn10="STAGE 4-C\nDOWNSIDE BEACH"
+var _sn11="STAGE 5-B\nUFO BEYOND THE STARS"
+var _sn12="STAGE 5\nUNDER THE SEA JAM"
+var _sn13="STAGE 5-C\nHEATING HOT DESERT"
+var _sn14="STAGE 6-B\nGREAT CLIMBING COLD"
+var _sn15="STAGE 6\nFANTASTIC FANTASY CAVERNS"
+var _sn16="STAGE 6-C\nAHEAD IN THE CLOUDS"
+var _sn17="STAGE 7\nDANGEROUS SCIENCE"
+var _sn18="STAGE 8\nZEPPELIN FINALE"
+var _sn19="STAGE 1\nDOWNTOWN BEAT"
+var _sn20="STAGE 1\nDOWNTOWN BEAT"
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+_sn1="PALCO 1\nDISTRITO BEAT"
+_sn2="PALCO 2-B\nTOUR AÉRIO"
+_sn3="PALCO 2\nLARGADA SOB O MAR"
+_sn4="PALCO 2-C\nTREMENDA VIAGEM"
+_sn5="PALCO 3-B\nDENSAS TUMBAS"
+_sn6="PALCO 3\nMUSEU MASHUP"
+_sn7="PALCO 3-C\n“CASINO DOJO LUCKY"
+_sn8="PALCO 4-B\nBREJO DOS AFOGADOS"
+_sn9="PALCO 4\nFESTIVAL DAS PALHAÇAS ALBINAS"
+_sn10="PALCO 4-C\nLITORAL TROPICAL"
+_sn11="PALCO 5-B\nDISCOS ALÉM DAS ESTRELAS"
+_sn12="PALCO 5\nPOR ÁGUA ABAIXO"
+_sn13="PALCO 5-C\nDESERTO ISKH-AL DANT"
+_sn14="PALCO 6-B\nALPES DO BATE-QUEIXO"
+_sn15="PALCO 6\nFANTÁSTICA CAVERNA DAS FANTASIAS"
+_sn16="PALCO 6-C\nACIMA DAS NUVENS"
+_sn17="PALCO 7\nCIÊNCIA CABULOSA"
+_sn18="PALCO 8\nZEPPELIN FINALE"
+break;	
+	}
+
 if mapSelX=0 and mapSelY=-1
-{mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 mapHighScore=global.LevelHiScore[1] mapDif=global.LevelDif[1] if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"
+{mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 mapHighScore=global.LevelHiScore[1] mapDif=global.LevelDif[1] if lockedMap[1]=1 mapSName=_sn1
 }
-
-
 
 if (mapSelX=0 and mapSelY=-1)
 or mapSelX=0 and mapSelY=0
@@ -71,67 +114,71 @@ draw_sprite_ext(bg_mapB,0,0,7,1,1,0,c_white,1-1*lockedMap[1])
 else
 draw_sprite_ext(bg_mapB,0,0,7,1,1,0,c_white,1-0.8*lockedMap[1])
 
+
+
+
+
 if mapSelX=0 and mapSelY=0
-{global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 mapHighScore=global.LevelHiScore[1] mapDif=global.LevelDif[1] if lockedMap[1]=1 mapSName="STAGE 1\nDOWNTOWN BEAT"}
+{global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 mapHighScore=global.LevelHiScore[1] mapDif=global.LevelDif[1] if lockedMap[1]=1 mapSName=_sn1}
 
 if mapSelX=0 and mapSelY=1
-{mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 mapHighScore=global.LevelHiScore[1] mapDif=global.LevelDif[1] if lockedMap[1]=1  mapSName="STAGE 1\nDOWNTOWN BEAT"}
+{mapSelY=0 global.StageGoing=rm_stage1 mapSXlerp=80 mapSYlerp=121 mapHighScore=global.LevelHiScore[1] mapDif=global.LevelDif[1] if lockedMap[1]=1  mapSName=_sn1}
 //B
-if mapSelX=1 and mapSelY=-1 {global.StageGoing=rm_stage2b mapSXlerp=190 mapSYlerp=102 mapHighScore=global.LevelHiScore[2] mapDif=global.LevelDif[2] if lockedMap[2]=1 mapSName="STAGE 2-B\nAERIAL WALK"
+if mapSelX=1 and mapSelY=-1 {global.StageGoing=rm_stage2b mapSXlerp=190 mapSYlerp=102 mapHighScore=global.LevelHiScore[2] mapDif=global.LevelDif[2] if lockedMap[2]=1 mapSName=_sn2
 draw_sprite_ext(bg_mapB,1,123,48,1,1,0,c_white,1-1*lockedMap[2])
 	}else draw_sprite_ext(bg_mapB,1,123,48,1,1,0,c_white,1-0.8*lockedMap[2])
 
-if mapSelX=1 and mapSelY=0 {global.StageGoing=rm_stage2 mapSXlerp=152 mapSYlerp=142 mapHighScore=global.LevelHiScore[3] mapDif=global.LevelDif[3] if lockedMap[3]=1 mapSName="STAGE 2\nRUSH OVER THE SEAS"
+if mapSelX=1 and mapSelY=0 {global.StageGoing=rm_stage2 mapSXlerp=152 mapSYlerp=142 mapHighScore=global.LevelHiScore[3] mapDif=global.LevelDif[3] if lockedMap[3]=1 mapSName=_sn3
 draw_sprite_ext(bg_mapB,2,91,101,1,1,0,c_white,1-1*lockedMap[3])
 	}else draw_sprite_ext(bg_mapB,2,91,101,1,1,0,c_white,1-0.8*lockedMap[3])
-if mapSelX=1 and mapSelY=1 {global.StageGoing=rm_stage2c mapSXlerp=102 mapSYlerp=194 mapHighScore=global.LevelHiScore[4] mapDif=global.LevelDif[4] if lockedMap[4]=1 mapSName="STAGE 2-C\nTRAINING TRAVEL"
+if mapSelX=1 and mapSelY=1 {global.StageGoing=rm_stage2c mapSXlerp=102 mapSYlerp=194 mapHighScore=global.LevelHiScore[4] mapDif=global.LevelDif[4] if lockedMap[4]=1 mapSName=_sn4
 	draw_sprite_ext(bg_mapB,3,73,123,1,1,0,c_white,1-1*lockedMap[4])
 	}else draw_sprite_ext(bg_mapB,3,73,123,1,1,0,c_white,1-0.8*lockedMap[4])
 //C
-if mapSelX=2 and mapSelY=-1 {global.StageGoing=rm_stage4 mapSXlerp=248 mapSYlerp=109 mapHighScore=global.LevelHiScore[5] mapDif=global.LevelDif[5] if lockedMap[5]=1 mapSName="STAGE 3-B\nGRITTY GRAVES"
+if mapSelX=2 and mapSelY=-1 {global.StageGoing=rm_stage4 mapSXlerp=248 mapSYlerp=109 mapHighScore=global.LevelHiScore[5] mapDif=global.LevelDif[5] if lockedMap[5]=1 mapSName=_sn5
 	draw_sprite_ext(bg_mapB,4,201,1,1,1,0,c_white,1-1*lockedMap[5])
 	}else draw_sprite_ext(bg_mapB,4,201,1,1,1,0,c_white,1-0.8*lockedMap[5])
 	
-if mapSelX=2 and mapSelY=0 {global.StageGoing=rm_stage3 mapSXlerp=228 mapSYlerp=154 mapHighScore=global.LevelHiScore[6] mapDif=global.LevelDif[6] if lockedMap[6]=1 mapSName="STAGE 3\nMASHUP MUSEUM"
+if mapSelX=2 and mapSelY=0 {global.StageGoing=rm_stage3 mapSXlerp=228 mapSYlerp=154 mapHighScore=global.LevelHiScore[6] mapDif=global.LevelDif[6] if lockedMap[6]=1 mapSName=_sn6
 	draw_sprite_ext(bg_mapB,5,195,117,1,1,0,c_white,1-1*lockedMap[6])
 	}else draw_sprite_ext(bg_mapB,5,195,117,1,1,0,c_white,1-0.8*lockedMap[6])
-if mapSelX=2 and mapSelY=1 {global.StageGoing=rm_stage5 mapSXlerp=204 mapSYlerp=212 mapHighScore=global.LevelHiScore[7] mapDif=global.LevelDif[7] if lockedMap[7]=1 mapSName="STAGE 3-C\nLUCKY DOJO CASINO"
+if mapSelX=2 and mapSelY=1 {global.StageGoing=rm_stage5 mapSXlerp=204 mapSYlerp=212 mapHighScore=global.LevelHiScore[7] mapDif=global.LevelDif[7] if lockedMap[7]=1 mapSName=_sn7
 	draw_sprite_ext(bg_mapB,6,170,162,1,1,0,c_white,1-1*lockedMap[7])
 	}else draw_sprite_ext(bg_mapB,6,170,162,1,1,0,c_white,1-0.8*lockedMap[7])
 //D
-if mapSelX=3 and mapSelY=-1 {global.StageGoing=rm_stageswamp mapSXlerp=320 mapSYlerp=111 mapHighScore=global.LevelHiScore[8] mapDif=global.LevelDif[8] if lockedMap[8]=1 mapSName="STAGE 4-B\nDEEP DEAD SWAMPS"
+if mapSelX=3 and mapSelY=-1 {global.StageGoing=rm_stageswamp mapSXlerp=320 mapSYlerp=111 mapHighScore=global.LevelHiScore[8] mapDif=global.LevelDif[8] if lockedMap[8]=1 mapSName=_sn8
 	draw_sprite_ext(bg_mapB,7,280,17,1,1,0,c_white,1-1*lockedMap[8])
 	}else draw_sprite_ext(bg_mapB,7,280,17,1,1,0,c_white,1-0.8*lockedMap[8])
-if mapSelX=3 and mapSelY=0 {global.StageGoing=rm_stagecarnival mapSXlerp=320 mapSYlerp=157 mapHighScore=global.LevelHiScore[9] mapDif=global.LevelDif[9] if lockedMap[9]=1 mapSName="STAGE 4\nCLOWNY HONKY CARNIVAL"
+if mapSelX=3 and mapSelY=0 {global.StageGoing=rm_stagecarnival mapSXlerp=320 mapSYlerp=157 mapHighScore=global.LevelHiScore[9] mapDif=global.LevelDif[9] if lockedMap[9]=1 mapSName=_sn9
 	draw_sprite_ext(bg_mapB,8,273,117,1,1,0,c_white,1-1*lockedMap[9])
 	}else draw_sprite_ext(bg_mapB,8,273,117,1,1,0,c_white,1-0.8*lockedMap[9])
-if mapSelX=3 and mapSelY=1 {global.StageGoing=rm_stagebeach mapSXlerp=320 mapSYlerp=215 mapHighScore=global.LevelHiScore[10] mapDif=global.LevelDif[10] if lockedMap[10]=1 mapSName="STAGE 4-C\nDOWNSIDE BEACH"
+if mapSelX=3 and mapSelY=1 {global.StageGoing=rm_stagebeach mapSXlerp=320 mapSYlerp=215 mapHighScore=global.LevelHiScore[10] mapDif=global.LevelDif[10] if lockedMap[10]=1 mapSName=_sn10
 	draw_sprite_ext(bg_mapB,9,275,173,1,1,0,c_white,1-1*lockedMap[10])
 	}else draw_sprite_ext(bg_mapB,9,275,173,1,1,0,c_white,1-0.8*lockedMap[10])
 //E
-if mapSelX=4 and mapSelY=-1 {global.StageGoing=rm_stageufo mapSXlerp=640-248 mapSYlerp=109 mapHighScore=global.LevelHiScore[11] mapDif=global.LevelDif[11] if lockedMap[11]=1 mapSName="STAGE 5-B\nUFO BEYOND THE STARS"
+if mapSelX=4 and mapSelY=-1 {global.StageGoing=rm_stageufo mapSXlerp=640-248 mapSYlerp=109 mapHighScore=global.LevelHiScore[11] mapDif=global.LevelDif[11] if lockedMap[11]=1 mapSName=_sn11
 	draw_sprite_ext(bg_mapB,10,363,36,1,1,0,c_white,1-1*lockedMap[11])
 	}else draw_sprite_ext(bg_mapB,10,363,36,1,1,0,c_white,1-0.8*lockedMap[11])
-if mapSelX=4 and mapSelY=0 {global.StageGoing=rm_stagemermaid mapSXlerp=640-228 mapSYlerp=154 mapHighScore=global.LevelHiScore[12] mapDif=global.LevelDif[12] if lockedMap[12]=1 mapSName="STAGE 5\nUNDER THE SEA JAM"
+if mapSelX=4 and mapSelY=0 {global.StageGoing=rm_stagemermaid mapSXlerp=640-228 mapSYlerp=154 mapHighScore=global.LevelHiScore[12] mapDif=global.LevelDif[12] if lockedMap[12]=1 mapSName=_sn12
 	draw_sprite_ext(bg_mapB,11,359,107,1,1,0,c_white,1-1*lockedMap[12])
 	}else draw_sprite_ext(bg_mapB,11,359,107,1,1,0,c_white,1-0.8*lockedMap[12])
-if mapSelX=4 and mapSelY=1 {global.StageGoing=rm_stagedesert mapSXlerp=640-204 mapSYlerp=212  mapHighScore=global.LevelHiScore[13] mapDif=global.LevelDif[13] if lockedMap[13]=1 mapSName="STAGE 5-C\nHEATING HOT DESERT"
+if mapSelX=4 and mapSelY=1 {global.StageGoing=rm_stagedesert mapSXlerp=640-204 mapSYlerp=212  mapHighScore=global.LevelHiScore[13] mapDif=global.LevelDif[13] if lockedMap[13]=1 mapSName=_sn13
 	draw_sprite_ext(bg_mapB,12,389,166,1,1,0,c_white,1-1*lockedMap[13])
 	}else draw_sprite_ext(bg_mapB,12,389,166,1,1,0,c_white,1-0.8*lockedMap[13])
 //F
-if mapSelX=5 and mapSelY=-1 {global.StageGoing=rm_stagesnow mapSXlerp=640-190 mapSYlerp=102 mapHighScore=global.LevelHiScore[14] mapDif=global.LevelDif[14] if lockedMap[14]=1 mapSName="STAGE 6-B\nGREAT CLIMBING COLD"
+if mapSelX=5 and mapSelY=-1 {global.StageGoing=rm_stagesnow mapSXlerp=640-190 mapSYlerp=102 mapHighScore=global.LevelHiScore[14] mapDif=global.LevelDif[14] if lockedMap[14]=1 mapSName=_sn14
 	draw_sprite_ext(bg_mapB,13,417,21,1,1,0,c_white,1-1*lockedMap[14])
 	}else draw_sprite_ext(bg_mapB,13,417,21,1,1,0,c_white,1-0.8*lockedMap[14])
-if mapSelX=5 and mapSelY=0 {global.StageGoing=rm_stagecave mapSXlerp=640-152 mapSYlerp=142  mapHighScore=global.LevelHiScore[15] mapDif=global.LevelDif[15] if lockedMap[15]=1 mapSName="STAGE 6\nFANTASTIC FANTASY CAVERNS"
+if mapSelX=5 and mapSelY=0 {global.StageGoing=rm_stagecave mapSXlerp=640-152 mapSYlerp=142  mapHighScore=global.LevelHiScore[15] mapDif=global.LevelDif[15] if lockedMap[15]=1 mapSName=_sn15
 	draw_sprite_ext(bg_mapB,14,455,95,1,1,0,c_white,1-1*lockedMap[15])
 	}else draw_sprite_ext(bg_mapB,14,455,95,1,1,0,c_white,1-0.8*lockedMap[15])
-if mapSelX=5 and mapSelY=1 {global.StageGoing=rm_stageclouds mapSXlerp=640-102 mapSYlerp=194 mapHighScore=global.LevelHiScore[16] mapDif=global.LevelDif[16] if lockedMap[16]=1 mapSName="STAGE 6-C\nAHEAD IN THE CLOUDS"
+if mapSelX=5 and mapSelY=1 {global.StageGoing=rm_stageclouds mapSXlerp=640-102 mapSYlerp=194 mapHighScore=global.LevelHiScore[16] mapDif=global.LevelDif[16] if lockedMap[16]=1 mapSName=_sn16
 	draw_sprite_ext(bg_mapB,15,486,141,1,1,0,c_white,1-1*lockedMap[16])
 	}else draw_sprite_ext(bg_mapB,15,486,141,1,1,0,c_white,1-0.8*lockedMap[16])
 //G
-if mapSelX=6 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121  mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
-if mapSelX=6 and mapSelY=0 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1 mapSName="STAGE 7\nDANGEROUS SCIENCE"}
-if mapSelX=6 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1  mapSName="STAGE 7\nDANGEROUS SCIENCE"}
+if mapSelX=6 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121  mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1 mapSName=_sn17}
+if mapSelX=6 and mapSelY=0 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1 mapSName=_sn17}
+if mapSelX=6 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagelab mapSXlerp=640-80 mapSYlerp=121 mapHighScore=global.LevelHiScore[17] mapDif=global.LevelDif[17] if lockedMap[17]=1  mapSName=_sn17}
 
 if mapSelX=6
 draw_sprite_ext(bg_mapB,16,516,48,1,1,0,c_white,1-1*lockedMap[18])
@@ -140,9 +187,9 @@ else draw_sprite_ext(bg_mapB,16,516,48,1,1,0,c_white,1-0.8*lockedMap[18])
 //if mapSelX=6 and mapSelY=0 {mapSXlerp=640-80 mapSYlerp=121 if lockedMap[18]=1 mapSName="STAGE 1G"}
 //if mapSelX=6 and mapSelY=1 {mapSXlerp=640-24 mapSYlerp=166 if lockedMap[19]=1 mapSName="STAGE 2G"}
 //H
-if mapSelX=7 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
-if mapSelX=7 and mapSelY=0 {global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
-if mapSelX=7 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName="STAGE 8\nZEPPELIN FINALE"}
+if mapSelX=7 and mapSelY=-1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName=_sn18}
+if mapSelX=7 and mapSelY=0 {global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName=_sn18}
+if mapSelX=7 and mapSelY=1 {mapSelY=0 global.StageGoing=rm_stagefinal mapSXlerp=640-40 mapSYlerp=121 mapHighScore=global.LevelHiScore[18] mapDif=global.LevelDif[18] if lockedMap[18]=1 mapSName=_sn18}
 
 if mapSelX=7
 draw_sprite_ext(bg_mapB,17,567,44,1,1,0,c_white,1-1*lockedMap[18])

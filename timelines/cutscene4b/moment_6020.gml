@@ -21,6 +21,22 @@ cutscenename="KIANDRA" cutsceneline= "Well it seems like there's some commotion 
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Hmph, parece que está tendo alguma agitação ao redor desse milharal."
+languagedialogue[2]="Um milharal? Tem certeza de que precisamos ir até lá?"
+languagedialogue[3]="“Não é como se isso fosse problema meu! Agora..."
+languagedialogue[4]="SUMAM DAQUI!!!"
+languagedialogue[5]="Que mal-educada! Tá bem! A gente nem precisava da sua ajuda mesmo!"
+languagedialogue[6]="Aquela otária mascarada antissocial... ela e seus cadáveres podres..."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 newscript=function()
 {
 scenetime+=1;
@@ -30,6 +46,7 @@ if scenetime=400
 with oControl
 {
 cutscenename="SOFIA" cutsceneline= "A cornfield? You sure we really have to go there?"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -38,6 +55,7 @@ if scenetime=640
 with oControl
 {
 cutscenename="KIANDRA" cutsceneline= "Well, that's not my problem! Now..."
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -92,13 +110,16 @@ layer_set_visible("CornSky1",1)
 layer_set_visible("CornSky",1)
 //Zombies grab the divas and chuck them out
 cutscenename="KIANDRA" cutsceneline= "GET LOST!!!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 	
 }
 }
 
 if scenetime=1060
 {
-with oControl {cutscenename="VIVA" cutsceneline= "Well that's rude! Fine! We didn't even needed your help anyways!"}
+with oControl {cutscenename="VIVA" cutsceneline= "Well that's rude! Fine! We didn't even needed your help anyways!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1300
@@ -108,7 +129,9 @@ with actor2 image_xscale=1
 with actor3 image_xscale=1
 with actor4 image_xscale=1
 
-with oControl {cutscenename="VIVA" cutsceneline= "Stupid mask-wearing haggy loner... she and her rotting corpses..."}
+with oControl {cutscenename="VIVA" cutsceneline= "Stupid mask-wearing haggy loner... she and her rotting corpses..."
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 
@@ -156,6 +179,31 @@ cutscenename="KIANDRA" cutsceneline= "Supposedly a prince lives in the nearby wa
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Supostamente, um príncipe vive nas águas próximas... Mas você precisará de algo para pisar no fundo do mar..."
+languagedialogue[2]="E isso seria?"
+languagedialogue[3]="Uau o que é isso?!"
+languagedialogue[4]="Mmm qual é a sua receita?"
+languagedialogue[5]="Ora, achou o meu preparo apetitoso? Você é a primeira."
+languagedialogue[6]="Seu paladar foi corrompido ou algo assim?!"
+languagedialogue[7]="Você é mesmo humana...?"
+languagedialogue[8]="É seguro comer isso...?"
+languagedialogue[9]="Meninas, não sejam rudes com nossa anfitriã! Comam a sopa!"
+languagedialogue[10]="MAS-"
+languagedialogue[11]="COMAM!"
+languagedialogue[12]="Eu conheço ele. Não queria encontra ele nem a pau por causa da situação, mas acho que não temos escolha."
+languagedialogue[13]="Desejo-lhe sorte com isso. Ao menos eu conheci alguém que aprecia o meu trabalho."
+languagedialogue[14]="Vamos lá, meninas. Parem de espetáculo. A sopa estava ótima."
+languagedialogue[15]="A Viva até colocou maionese e ketchup na sopa pra dar uma temperada. Benza... Deus..."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 newscript=function()
 {
 scenetime+=1;
@@ -163,7 +211,9 @@ scenetime+=1;
 
 if scenetime=520
 {
-with oControl {cutscenename="VIVA" cutsceneline= "And what is it?"}
+with oControl {cutscenename="VIVA" cutsceneline= "And what is it?"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
+	}
 }
 
 if scenetime=660
@@ -196,49 +246,66 @@ newscript=function()
 
 with oControl {
 cutscenename="VIVA" cutsceneline= "Oh what's this?!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
 if scenetime=1300
 {sprite_index=spr_vivalikesit image_index=0 with vivaface x=999
-with oControl {cutscenename="VIVA" cutsceneline="Mmm what is your recipe?"}
+with oControl {cutscenename="VIVA" cutsceneline="Mmm what is your recipe?"
+	if global.Language!=0 cutsceneline=languagedialogue[4]	
+	}
 }
 
 if scenetime=1500
 {with BGactor sprite_index=mask_none
 with oControl {//KERSMASH!
-cutscenename="KIANDRA" cutsceneline=  "Well now, you find this appetizing? That's a first."}
+cutscenename="KIANDRA" cutsceneline=  "Well now, you find this appetizing? That's a first."
+if global.Language!=0 cutsceneline=languagedialogue[5]
+}
 }
 
 if scenetime=1800
 {sprite_index=spr_vivalikesit 
-with oControl {cutscenename="SOFIA" cutsceneline= "Are your tastebuds warped or something?!"}
+with oControl {cutscenename="SOFIA" cutsceneline= "Are your tastebuds warped or something?!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 scenetime=2100
 }
 
 if scenetime=2300
 {scenetime=2500
-with oControl {cutscenename="HINA" cutsceneline= "Are you even human..."}
+with oControl {cutscenename="HINA" cutsceneline= "Are you even human..."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=2600
 {scenetime=2750
-with oControl {cutscenename="BAHATI" cutsceneline="Is it even safe to eat...?"}
+with oControl {cutscenename="BAHATI" cutsceneline="Is it even safe to eat...?"
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=2900
 {image_index=1
-with oControl {cutscenename="VIVA" cutsceneline="Girls, don't be rude to our host! Eat the soup!"}
+with oControl {cutscenename="VIVA" cutsceneline="Girls, don't be rude to our host! Eat the soup!"
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 
 if scenetime=3260
 {
-with oControl {cutscenename="BAHATI" cutsceneline="BUT-"}
+with oControl {cutscenename="BAHATI" cutsceneline="BUT-"
+	if global.Language!=0 cutsceneline=languagedialogue[10]
+	}
 }
 
 if scenetime=3400
 {sprite_index=spr_vivalikesit image_index=2 audio_stop_all() PlaySound(snd_hitgroundheavy)
-with oControl {quakeFXTime=10 cutscenename="VIVA" cutsceneline="Eat!"}
+with oControl {quakeFXTime=10 cutscenename="VIVA" cutsceneline="Eat!"
+	if global.Language!=0 cutsceneline=languagedialogue[11]
+	}
 }
 
 if scenetime=3500
@@ -264,7 +331,9 @@ if scenetime=4000
 {
 with actor1 {sprite_index=spr_viva_talk image_speed=0.25 }
 
-with oControl {cutscenename="VIVA" cutsceneline="I know him. I never wanted to meet him because of the situation, but I guess we have no other choice."}
+with oControl {cutscenename="VIVA" cutsceneline="I know him. I never wanted to meet him because of the situation, but I guess we have no other choice."
+	if global.Language!=0 cutsceneline=languagedialogue[12]
+	}
 }
 
 if scenetime=4400
@@ -273,21 +342,27 @@ with actor1 {sprite_index=spr_viva_talk image_speed=0 image_index=0}
 
 with actor5 {image_index=8}
 
-with oControl {cutscenename="KIANDRA" cutsceneline="Well I wish you luck with that. At least I got to meet someone who appreciates my work."}
+with oControl {cutscenename="KIANDRA" cutsceneline="Well I wish you luck with that. At least I got to meet someone who appreciates my work."
+	if global.Language!=0 cutsceneline=languagedialogue[13]
+	}
 }
 
 if scenetime=4750
 {
 with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25 }
 
-with oControl {cutscenename="VIVA" cutsceneline="Come on, girls. Stop overreacting. That soup was great."}
+with oControl {cutscenename="VIVA" cutsceneline="Come on, girls. Stop overreacting. That soup was great."
+	if global.Language!=0 cutsceneline=languagedialogue[14]
+	}
 }
 
 if scenetime=5000
 {
 with actor1 {image_speed=0 image_index=0}
 
-with oControl {cutscenename="BAHATI" cutsceneline="Viva even put mayo and ketchup on the soup as a condiment. That's... not..."}
+with oControl {cutscenename="BAHATI" cutsceneline="Viva even put mayo and ketchup on the soup as a condiment. That's... not..."
+	if global.Language!=0 cutsceneline=languagedialogue[15]
+	}
 }
 
 ///Splash
@@ -314,6 +389,23 @@ cutscenename="KIANDRA" cutsceneline= "Looks like your path leads into the desert
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Parece que o seu caminho cai em um deserto..."
+languagedialogue[2]="Beleza, mas... Onde exatamente?"
+languagedialogue[3]="Não sei, descubra por si mesma! Pensando melhor... Vou acelerar essa viagem... Para vocês darem o fora daqui mais rápido."
+languagedialogue[4]="É, foi uma viagem rápida. TÔ ACABADA!"
+languagedialogue[5]="Está... quente... quente demais até para mim..."
+languagedialogue[6]="Acostumem-se, chicas. É o deserto."
+languagedialogue[7]="Ei, olha lá! Deve ser aquilo!"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 actor8.image_index=0 actor8.specialcheck[3]=12; with actor8 x=xstart;
 
 newscript=function()
@@ -325,13 +417,14 @@ scenetime+=1;
 if scenetime=480
 {
 with oControl {cutscenename="BAHATI" cutsceneline= "Alright but... Where exactly?"
-
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
 if scenetime=660
 {
 with oControl {cutscenename="KIANDRA" cutsceneline= "I don't know, find out for yourself! In fact... Just to get you out of here faster... I'll make this a quick trip."
+	if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -356,25 +449,32 @@ if scenetime=1300
 {x=48 y=32 hspeed=-0.1 vspeed=-0.02
 sprite_index=spr_hotdesert image_index=1
 with oControl {cutscenename="VIVA" cutsceneline= "Well that's a quick trip. MY FOOT!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
 if scenetime=1500
 {
-with oControl {cutscenename="HINA" cutsceneline="It's... hot... too hot even for me..."}
+with oControl {cutscenename="HINA" cutsceneline="It's... hot... too hot even for me..."
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1700
 {
 with oControl {//SMASH!
-cutscenename="SOFIA" cutsceneline="Get used to it, chica. It's the desert."}
+cutscenename="SOFIA" cutsceneline="Get used to it, chica. It's the desert."
+if global.Language!=0 cutsceneline=languagedialogue[6]
+}
 
 }
 
 if scenetime=1900
 {sprite_index=spr_hotdesert image_index=2 hspeed=0 x=0 y=0 vspeed=-0.1
 with oControl {//SMASH!
-cutscenename="BAHATI" cutsceneline="OH hey look over there! That must be it!"}
+cutscenename="BAHATI" cutsceneline="OH hey look over there! That must be it!"
+if global.Language!=0 cutsceneline=languagedialogue[7]
+}
 }
 
 

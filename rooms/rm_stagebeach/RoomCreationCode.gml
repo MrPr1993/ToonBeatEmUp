@@ -35,6 +35,13 @@ with oControl
 {
 stagename="DOWN SIDE BEACH"		
 
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="LITORAL TROPICAL"
+break;
+	}
+
 global.PrevStage4=10
 prevstagecheck1=1
 prevstagecheck2=global.PrevStage2

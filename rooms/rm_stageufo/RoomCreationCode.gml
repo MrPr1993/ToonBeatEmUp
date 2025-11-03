@@ -20,7 +20,14 @@ with oEnemySpawner {timeline=tm_ufo event_user(0)}
 
 with oControl
 {
-stagename="UFO BEYOND THE STARS"		
+stagename="UFO BEYOND THE STARS"	
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="DISCOS ALÉM DAS ESTRELAS"
+break;
+	}
 
 global.PrevStage5=11
 prevstagecheck1=global.PrevStage2

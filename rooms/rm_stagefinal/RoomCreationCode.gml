@@ -22,6 +22,13 @@ with oControl
 {
 stagename="ZEPPELIN FINALE"	
 	
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="ZEPPELIN FINALE"
+break;
+	}
+	
 global.PrevStage8=18
 prevstagecheck1=global.PrevStage5
 prevstagecheck2=global.PrevStage6

@@ -14,6 +14,13 @@ with oControl
 {
 stagename="TRAINING TRAVEL"	
 
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="TREMENDA VIAGEM"
+break;
+	}
+
 global.PrevStage2=4
 prevstagecheck1=0
 prevstagecheck2=0

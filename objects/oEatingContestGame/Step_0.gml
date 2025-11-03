@@ -14,7 +14,26 @@ with oControl
 {alarm[6]=60
 resulttext1=""
 altresult1=0
-resulttext2="BONUS"
+
+var _t1="NO BONUS"
+var _t2="BONUS"
+var _t3="PERFECT"
+var _t4="GOOD"
+var _t5="AVERAGE"
+
+switch(global.Language)
+{
+case 2:
+var _t1="SEM BÔNUS"
+var _t2="BÔNUS"
+var _t3="PERFEITO"
+var _t4="BOM"
+var _t5="MEDIOCRE"
+break;
+}
+
+resulttext2=_t2
+
 AltScore2=1
 resulttext3=""
 altresult3=0

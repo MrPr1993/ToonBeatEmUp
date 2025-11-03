@@ -63,6 +63,7 @@ if scenetime=120
 with oControl
 {cutscenename="VIVA"
 cutsceneline="...WHERE IS IT?"
+if global.Language!=0 cutsceneline=languagedialogue[1]
 PlaySound(snd_hitground) quakeFXTime=10
 }
 }
@@ -72,6 +73,7 @@ if scenetime=240
 with oControl
 {cutscenename="VIVA"
 cutsceneline="WHERE IS IT?!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 PlaySound(snd_hitground) quakeFXTime=10
 }
 }
@@ -90,6 +92,7 @@ if scenetime=380
 with oControl
 {cutscenename="VIVA"
 cutsceneline="MY DIAMOND!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -99,6 +102,7 @@ vspeed=-0.05
 with oControl
 {cutscenename="SOFIA"
 cutsceneline="WE GOT OUR STUFF BACK!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -107,6 +111,7 @@ if scenetime=740
 with oControl
 {cutscenename="BAHATI"
 cutsceneline="SAFE AND SOUND!"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -115,6 +120,7 @@ if scenetime=960
 with oControl
 {cutscenename="HINA"
 cutsceneline="SO MUCH WORK... BUT IT WAS WORTH IT!"
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 
@@ -147,6 +153,7 @@ sprite_index=spr_incomingcops image_index=0
 with oControl
 {cutscenename="CHIEF" quakeFXTime=10
 cutsceneline="ALRIGHT, ALRIGHT, EVERYONE, SPREAD OUT!"
+if global.Language!=0 cutsceneline=languagedialogue[7]
 }
 }
 
@@ -155,6 +162,7 @@ if scenetime=2100
 with oControl
 {cutscenename="VIVA"
 cutsceneline="OH, SO THE CAVALRY'S FINALLY HERE. WHERE HAVE ALL OF YOU BEEN?"
+if global.Language!=0 cutsceneline=languagedialogue[8]
 }
 }
 
@@ -167,10 +175,29 @@ vspeed=0 x=0 y=0
 actor1.y=9999
 actor2.y=9999 PlaySound(snd_break2)
 sprite_index=spr_vivacuffs image_index=0
+
 with oControl
 {cutscenename="" quakeFXTime=10
 cutsceneline=""
 }
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="O quê?! Por que estamos sendo algemadas?!"
+languagedialogue[2]="Vocês estão presas por várias acusações de invasão e destruição de propriedade privada e pública!"
+languagedialogue[3]=" Vocês têm o direito de permanecerem caladas!"
+languagedialogue[4]="Puxa... Nós fizemos uma bagunça e tanto..."
+languagedialogue[5]="So pode ser brincadeira..."
+languagedialogue[6]="Você acha que eles permitem espetáculos na prisão?"
+languagedialogue[7]="ESPERA! DEVE HAVER ALGUM ERRO! FORAM OS LADRÕES QUE DESTRUÍRAM TUDO! ESPEREM, SEUS IDIOTAS!!!"
+languagedialogue[8]="QUERO UM ADVOGADO! VOCÊS TÊM IDEIA DE QUEM EU SOU?! QUERO FALAR COM O SEU SUPERVISOR!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 newscript=function()
 {
 scenetime++;
@@ -180,6 +207,7 @@ if scenetime=120
 with oControl
 {cutscenename="VIVA"
 cutsceneline="W-What?! Why are WE getting cuffed?!"
+if global.Language!=0 cutsceneline=languagedialogue[1]
 }
 }
 
@@ -189,6 +217,7 @@ sprite_index=spr_divasarrest
 with oControl
 {cutscenename="CHIEF"
 cutsceneline="You ladies are under arrest for numerous counts of trespassing and destruction of private AND public property!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -197,6 +226,7 @@ if scenetime=780
 with oControl
 {cutscenename="CHIEF"
 cutsceneline="You have the right to remain silent!!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -208,6 +238,7 @@ if scenetime=1000
 with oControl
 {cutscenename="BAHATI"
 cutsceneline="Oh... We DID do quite a bit of damage..."
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -216,6 +247,7 @@ if scenetime=1200
 with oControl
 {cutscenename="SOFIA"
 cutsceneline= "You've gotta be kidding..."
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -233,6 +265,7 @@ if scenetime=1400
 with oControl
 {cutscenename="HINA"
 cutsceneline= "Do you think they'll let us perform for the prison?"
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 }
 
@@ -241,6 +274,7 @@ if scenetime=1650
 with oControl
 {cutscenename="VIVA"
 cutsceneline= "WAIT! THERE HAS TO BE SOME MISTAKE! THE THIEVES WERE THE ONES WRECKING EVERYTHING! WAIT, YOU MORONS!!!"
+if global.Language!=0 cutsceneline=languagedialogue[7]
 }
 }
 
@@ -249,6 +283,7 @@ if scenetime=2000
 with oControl
 {cutscenename="VIVA"
 cutsceneline= "I WANT A LAWYER! DO YOU HAVE ANY IDEA WHO I AM?! I WANT YOUR SUPERVISOR!"
+if global.Language!=0 cutsceneline=languagedialogue[8]
 }
 }
 
@@ -292,6 +327,7 @@ if scenetime=2400
 with oControl
 {cutscenename="CHIEF"
 cutsceneline="DON'T BLAME US, MA'AM. WE'VE BEEN BUSY TRACKING DOWN THE MOOKS ALL THE WAY HERE."
+if global.Language!=0 cutsceneline=languagedialogue[9]
 }
 }
 
@@ -302,6 +338,7 @@ scenetime=2800
 with oControl
 {cutscenename="CHIEF"
 cutsceneline="NOW LET US TAKE IT FROM HERE."
+if global.Language!=0 cutsceneline=languagedialogue[10]
 }
 }
 
@@ -332,6 +369,7 @@ sprite_index=spr_nowthatsover image_index=0
 with oControl
 {cutscenename="HINA"
 cutsceneline="WELL NOW THAT'S OVER."
+if global.Language!=0 cutsceneline=languagedialogue[11]
 }
 }
 
@@ -340,6 +378,7 @@ if scenetime=3900
 with oControl
 {cutscenename="BAHATI"
 cutsceneline="NEXT TIME WE'LL HAVE TO KEEP THEM UNDER TIGHTER WRAPS."
+if global.Language!=0 cutsceneline=languagedialogue[12]
 }
 }
 
@@ -347,6 +386,51 @@ cutsceneline="NEXT TIME WE'LL HAVE TO KEEP THEM UNDER TIGHTER WRAPS."
 /////////////////ENDING 3 - ANGER
 ////////////
 ////////////
+
+if scenetime=2400 and global.Ending=2
+{
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="O quê?! Por que estamos sendo algemadas?!"
+languagedialogue[2]="Vocês estão presas por várias acusações de invasão e destruição de propriedade privada e pública!"
+languagedialogue[3]=" Vocês têm o direito de permanecerem caladas!"
+languagedialogue[4]="Puxa... Nós fizemos uma bagunça e tanto..."
+languagedialogue[5]="So pode ser brincadeira..."
+languagedialogue[6]="Você acha que eles permitem espetáculos na prisão?"
+languagedialogue[7]="ESPERA! DEVE HAVER ALGUM ERRO! FORAM OS LADRÕES QUE DESTRUÍRAM TUDO! ESPEREM, SEUS IDIOTAS!!!"
+languagedialogue[8]="QUERO UM ADVOGADO! VOCÊS TÊM IDEIA DE QUEM EU SOU?! QUERO FALAR COM O SEU SUPERVISOR!"
+
+//Bahati: "É MELHOR MANTER NOSSOS OLHOS AFIADOS PARA A PRÓXIMA VEZ."
+
+//Viva: “Sim. Sim...” (fist shaking)
+
+//Hina: “...Viva?”
+
+//Viva: “Pois é... Todos aqueles... Obstáculos... Incluindo todas as vezes que fui espancada... Humilhada...”
+
+//(Viva loses it)
+//Viva: POR QUE SEMPRE COMIGO?! O QUE EU FIZ PARA MERECER TANTO CASTIGO?!”
+
+//Bahati: “Essa não... Ela está perdendo o controle...”
+
+//(gets closer to camera)
+//Viva: “É CLARO QUE ESTOU PERDENDO O CONTROLE!!! POR QUE VOCÊS TRÊS NÃO SOFRERAM TANTO QUANTO EU?!”
+
+//Sofia: “Se acalma! Isso Já é passado!”
+
+//Viva: (calms down) “verdade... Você está certa... Mas...”
+//Viva: (gets angry again) “EU NÃO TERIA ME MACHUCADO TANTO SE VOCÊ TIVESSEM ESCOLHIDO UMA ROTA MELHOR!!! VEM AQUI!!!”
+
+//(Viva attacks the camera)
+
+
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+}
 
 //All's Well That Ends Well dialogue until after "OUR TREASURES!!!"
 //cutscenename="BAHATI" cutsceneline= "We can finally rest easy, after all those obstacles..."
@@ -368,6 +452,7 @@ if scenetime=4550
 with oControl
 {cutscenename="VIVA"
 cutsceneline="And uh..."
+if global.Language!=0 cutsceneline=languagedialogue[13]
 }
 }
 
@@ -397,6 +482,7 @@ if scenetime=4950
 with oControl
 {cutscenename="VIVA"
 cutsceneline="So girls! What do you want to do now?"
+if global.Language!=0 cutsceneline=languagedialogue[14]
 }
 }
 
@@ -405,6 +491,7 @@ if scenetime=5400
 with oControl
 {cutscenename="SOFIA"
 cutsceneline="Chica, you know what we do."
+if global.Language!=0 cutsceneline=languagedialogue[15]
 }
 }
 
@@ -413,6 +500,7 @@ if scenetime=5700
 with oControl
 {cutscenename="VIVA"
 cutsceneline="Well how about it? Ready to get the show back on?"
+if global.Language!=0 cutsceneline=languagedialogue[16]
 }
 }
 
@@ -433,6 +521,7 @@ vspeed=0 y=-192
 with oControl
 {cutscenename="DIVAS"
 cutsceneline="LET'S PARTY!"
+if global.Language!=0 cutsceneline=languagedialogue[17]
 }
 
 }
@@ -523,6 +612,32 @@ __view_set( e__VW.XView, 0, SceneY )
 CutsceneStage=rm_creditscene
 canSkipCutscene=2
 cutscenePlaying=1
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="... ONDE ESTÁ?"
+languagedialogue[2]="ONDE ESTÁ?!"
+languagedialogue[3]="MEU DIAMANTE!"
+languagedialogue[4]="RECUPERAMOS NOSSAS COISAS!"
+languagedialogue[5]="SÃS E SALVAS!"
+languagedialogue[6]="BAITA TRABALHEIRA... MAS VALEU A PENA!"
+languagedialogue[7]="TUDO BEM, TUDO BEM, PESSOAL, CIRCULANDO!"
+languagedialogue[8]="AH, ENFIM CHEGOU A CAVALARIA. ONDE VOCÊS ESTAVAM?"
+languagedialogue[9]="NÃO NOS CULPE, SENHORA. ESTÁVAMOS OCUPADOS RASTREANDO OS BANDIDOS ATÉ AQUI."
+languagedialogue[10]="AGORA DEIXEM CONOSCO."
+languagedialogue[11]="BEM, AGORA CHEGOU AO FIM."
+languagedialogue[12]="É MELHOR MANTER NOSSOS OLHOS AFIADOS PARA A PRÓXIMA VEZ."
+languagedialogue[13]="e hmm..."
+languagedialogue[14]="Então, meninas! O que vocês querem fazer agora?"
+languagedialogue[15]="Chica, você sabe o que fazemos."
+languagedialogue[16]="Bem, o que acham? Prontas para voltar ao espetáculo?"
+languagedialogue[17]="HOJE É FESTA!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
 
 }
 

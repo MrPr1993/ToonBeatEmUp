@@ -134,6 +134,16 @@ if canControl=0 {shopDialogueAlt=8
 	if shopHelloR=2 shopDesc="      SO LONG!" 
 	if shopHelloR=3 shopDesc="      GOODBYE!" 
 	
+switch(global.Language)
+{
+case 2: ///Portuguese
+	if shopHelloR=0 shopDesc=" TCHAU TCHAU!" 
+	if shopHelloR=1 shopDesc="     TE VEJO\nDEPOIS!" 
+	if shopHelloR=2 shopDesc="    ATÉ MAIS!" 
+	if shopHelloR=3 shopDesc="      ADEUS!" 	
+break;	
+}
+	
 	shopAltFace=3 shopName="" shopCost=""
 }
 	}
@@ -253,90 +263,239 @@ shopDesc=""
 shopCost=""
 shopSelect=-1
 
+var _tp="COST"
+switch(global.Language)
+{
+case 2: ///Portuguese
+_tp="CUSTO"
+break;
+}
 ////// Shop items - Set 1
 if shopSet=0 
 {
+
 if shopselY=0 and shopselX=0
-{shopPrice=3000 shopName="CHARACTER PROFILE" shopCost="COST:3000"
+{shopPrice=3000
+shopName="CHARACTER PROFILE" shopCost=string(_tp)+":3000"
 shopDesc="CHECK THEIR INFO! \nBUT TO GET THE\nENEMY DATA YOU\nGOTTA BEAT EM' UP!"
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="PERFIL DO PERSONAGEM"
+shopDesc="VEJA AS INFORMAÇÕES\nDELES! MAS PARA\nOBTER DADOS\nDO INIMIGO,\nVOCÊ PRECISA DERROTA-LOS!"
+break;
+}
 if global.UnlockCharacterData=0 shopSelect=1 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=1
-{shopPrice=4000 shopName="PALETTE SWAP" shopCost="COST:4000"
+{shopPrice=4000 shopName="PALETTE SWAP" shopCost=string(_tp)+":4000"
 shopDesc="BORING OF YOUR\nCOSTUME COLOR?\nYOU CAN CHANGE IT\nWITH THIS!"
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="TROCA DE PALETA"
+shopDesc="CANSADA DAS SUAS CORES? VOCÊ\nPODE MUDÁ-LAS COM\nISTO!"
+break;
+}
 if global.UnlockAltPal=0 shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=2
-{shopPrice=6000 shopName="PALETTE SWAP 2" shopCost="COST:4000"
+{shopPrice=6000 shopName="PALETTE SWAP 2" shopCost=string(_tp)+":4000"
 shopDesc="MORE COLORS!\nAND MORE PALETTES!\nHAVE MORE COLORS\nWITH THIS ONE!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="TROCA DE PALETA 2"
+shopDesc="MAIS CORES!\nMAIS PALETAS! TENHA\nMAIS CORES COM ISSO!"
+break;
+}
+
 if global.UnlockAltPal2=0 shopSelect=3 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=3
-{shopPrice=8000 shopName="CUSTOM PALETTE" shopCost="COST:8000"
+{shopPrice=8000 shopName="CUSTOM PALETTE" shopCost=string(_tp)+":8000"
 shopDesc="WANT TO MAKE\nYOUR OWN PALETTE? \nUSE THIS TO\nRECOLOR THE DIVAS!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="PALETA PERSONALIZADA"
+shopDesc="QUER CRIAR\nSUA PRÓPRIA PALETA?\nUSE ISSO PARA\nRECORIR AS DIVAS!"
+break;
+}
+
 if global.UnlockAltPal3=0 shopSelect=4 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 ////
 if shopselY=1 and shopselX=0
-{shopPrice=5000 shopName="SOUND TEST" shopCost="COST:5000"
+{shopPrice=5000 shopName="SOUND TEST" shopCost=string(_tp)+":5000"
 shopDesc="WANNA HEAR SOME\nTUNES? HAVE A\nLISTEN TO THIS!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="TESTE DE SOM"
+shopDesc="QUER OUVIR UM\nSOM? DÊ UMA\nOUVIDA NISSO AQUI!"
+break;
+}
+
 if global.UnlockSoundTest=0 shopSelect=5 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=1
-{shopPrice=5000 shopName="CUTSCENES" shopCost="COST:5000"
+{shopPrice=5000 shopName="CUTSCENES" shopCost=string(_tp)+":5000"
 shopDesc="WATCH AGAIN\nSCENES YOU HAVE\nSEEN HERE IN THE\nRECORDER!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="CENAS"
+shopDesc="REVEJA CENAS\nQUE VOCÊ VIU AQUI\nNO GRAVADOR!"
+break;
+}
+
 if global.UnlockMovies=0 shopSelect=6 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=2
-{shopPrice=7500 shopName="FISHING GAME" shopCost="COST:7500"
+{shopPrice=7500 shopName="FISHING GAME" shopCost=string(_tp)+":7500"
 shopDesc="SPEND YOUR\nTIME AT THE LAKE\nFISHING IN THIS\nMINIGAME!"
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="JOGO DE PESCA"
+shopDesc="PASSE SEU\nTEMPO NO LAGO\nPESCANDO NESTE\nMINIGAME!"
+break;
+}
+
 if global.FishingUnlock=0 shopSelect=7 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=3
-{shopPrice=10000 shopName="SLOT MACHINE" shopCost="COST:10000"
+{shopPrice=10000 shopName="SLOT MACHINE" shopCost=string(_tp)+":10000"
 shopDesc="PLAY WITH THE\n BIG GOOD OL'\nONE-ARMED BANDIT:\nTHE SLOT MACHINE!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="CAÇA-NÍQUEIS"
+shopDesc="ENCARE O BOM E\nVELHO LADRÃO\nDE METAIS:\nO CAÇA-NÍQUEIS!"
+break;
+}
+
 if global.SlotMachineUnlock=0 shopSelect=8 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 /////
 if shopselY=2 and shopselX=0
-{shopPrice=5000 shopName="CAR BASH" shopCost="COST:5000"
+{shopPrice=5000 shopName="CAR BASH" shopCost=string(_tp)+":5000"
 shopDesc="WRECK SOME CHUMP'S\nCAR IN THIS\nMINIGAME!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="ACIDENTE DE CARRO"
+shopDesc="DESTRUA O CARRO\nDE ALGUM IDIOTA\nNESTE MINIGAME!"
+break;
+}
+
 if global.MiniGameUnlock1=0 shopSelect=9 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=1
-{shopPrice=5000 shopName="BRICK CHOP" shopCost="COST:5000"
+{shopPrice=5000 shopName="BRICK CHOP" shopCost=string(_tp)+":5000"
 shopDesc="TEST YOUR MIGHT!\nBREAK THE BRICKS\nIN THIS MINAGE!"
+
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="QUEBRA DE TIJOLOS"
+shopDesc="TESTE SUA FORÇA!\nQUEBRE OS TIJOLOS\nNESTA MINIGAME!"
+break;
+}
+
 if global.MiniGameUnlock2=0 shopSelect=10 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=2
-{shopPrice=5000 shopName="CHOW TIME" shopCost="COST:5000"
+{shopPrice=5000 shopName="CHOW TIME" shopCost=string(_tp)+":5000"
 shopDesc="AN EATING\nCOMPETITION! HOW\nMUCH CAN YOU EAT?"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="HORA DA BOIA"
+shopDesc="UMA COMPETIÇÃO\nDE COMIDA!\nQUANTO VOCÊ\nCONSEGUE COMER?"
+break;
+}
+
 if global.MiniGameUnlock3=0 shopSelect=11 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=3
-{shopPrice=5000 shopName="CRASHING CACOPHONY" shopCost="COST:5000"
+{shopPrice=5000 shopName="CRASHING CACOPHONY" shopCost=string(_tp)+":5000"
 shopDesc="OUTSING YOUR\nRIVALS WITH A\nVERY HIGH NOTE!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="CACOFONIA VIOLENTA"
+shopDesc="SUPERE SEUS\nRIVAIS COM UMA\nNOTA MUITO ALTA!"
+break;
+}
+
 if global.MiniGameUnlock4=0 shopSelect=12 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 ///
 if shopselY=3 and shopselX=0
-{shopPrice=5000 shopName="BULL RUSH" shopCost="COST:5000"
+{shopPrice=5000 shopName="BULL RUSH" shopCost=string(_tp)+":5000"
 shopDesc="RUN FROM THE BULL!\nTRY SURVIVIN'\nIN THIS MINIGAME!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="TOURO AGITADO"
+shopDesc="FUJA DO TOURO!\nTENTE SOBREVIVER\nNESTE MINIGAME!"
+break;
+}
+
 if global.MiniGameUnlock5=0 shopSelect=13 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=1
-{shopPrice=5000 shopName="HIGH STRIKER" shopCost="COST:5000"
+{shopPrice=5000 shopName="HIGH STRIKER" shopCost=string(_tp)+":5000"
 shopDesc="HAMMER DOWN TO\nTEST YOUR POWER\nIN THIS MINIGAME!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="MARTELO DE FORÇA"
+shopDesc="MARTELE PARA\nTESTAR SUA FORÇA\nNESTE MINIGAME!"
+break;
+}
+
 if global.MiniGameUnlock6=0 shopSelect=14 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=2
-{shopPrice=7500 shopName="SURVIVAL MODE" shopCost="COST:7500"
+{shopPrice=7500 shopName="SURVIVAL MODE" shopCost=string(_tp)+":7500"
 shopDesc="CAN YOU SURVIVE\nTHE BADDIES'\nONSLAUGHT?"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="MODO DE SOBREVIVÊNCIA"
+shopDesc="VOCÊ CONSEGUE\nSOBREVIVER À\nINVESTIDA\nDOS MALVADOS?"
+break;
+}
+
 if global.SurvivalUnlock=0 shopSelect=15 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=3
-{shopPrice=7500 shopName="BOSS BATTLES" shopCost="COST:7500"
+{shopPrice=7500 shopName="BOSS BATTLES" shopCost=string(_tp)+":7500"
 shopDesc="CAN YOU DEFEAT\nEVERY SINGLE\nBOSS?"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="MODO CAÇA-CHEFES"
+shopDesc="VOCÊ CONSEGUE\nDERROTAR CADA\nUM DOS CHEFÕES?"
+break;
+}
+
 if global.BossBattleUnlock=0 shopSelect=16 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselX=4
@@ -350,80 +509,242 @@ if shopSet=1  ///Cheats
 if shopselY=0 and shopselX=0
 {shopPrice=10000 shopName="DOUBLE HP" shopCheatNO=1; shopCheatP=-1000
 shopDesc="\nYOU'LL HAVE\nDOUBLE HEALTH!"
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="HP DOBRADO"
+shopDesc="\nVOCÊ TERÁ SAÚDE\nEM DOBRO!"
+break;
+}
+
 if global.CheatUnlock[1]=0 shopSelect=1 else shopSelect=-3}
 if shopselY=0 and shopselX=1
 {shopPrice=10000 shopName="DOUBLE LIFE" shopCheatNO=2; shopCheatP=-1000
 shopDesc="\nYOU START WITH\nDOUBLE YOUR\nLIFE!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="VIDAS EM DOBRO"
+shopDesc="\nVOCÊ COMEÇA COM\nO DOBRO DE\nVIDAS!"
+break;
+}
+
 if global.CheatUnlock[2]=0 shopSelect=2 else shopSelect=-3}
 if shopselY=0 and shopselX=2
 {shopPrice=10000 shopName="EXTRA POWER" shopCheatNO=3; shopCheatP=-1000
 shopDesc="\nYOU WILL BE A\nLITTLE MORE\nPOWEFUL!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="PODER EXTRA"
+shopDesc="\nVOCÊ SERÁ UM\nPOUCO MAIS\nPODEROSO!"
+break;
+}
+
 if global.CheatUnlock[3]=0 shopSelect=3 else shopSelect=-3}
 if shopselY=0 and shopselX=3
 {shopPrice=5000 shopName="1-HIT MODE" shopCheatNO=4; shopCheatP=0
 shopDesc="\nIF YOU GET HIT,\nYOU'LL DIE!\nCHALLENGING!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="MODO 1 TAPA"
+shopDesc="\nSE VOCÊ FOR\nATINGIDO,\nVOCÊ MORRE!\nTENSO!"
+break;
+}
+
 if global.CheatUnlock[4]=0 shopSelect=4 else shopSelect=-3}
 //
 if shopselY=1 and shopselX=0
 {shopPrice=10000 shopName="MINI MODE" shopCheatNO=5; shopCheatP=-1000
 shopDesc="\nYOU BECOME TINY!\nIT'S ONLY JUST\nFOR SHOW..."
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="MODO PÍTICO"
+shopDesc="\nVOCÊ FICA PEQUENO!\nMAS SÓ EM\nAPARÂNCIA..."
+break;
+}
+
 if global.CheatUnlock[5]=0 shopSelect=5 else shopSelect=-3}
 if shopselY=1 and shopselX=1
 {shopPrice=10000 shopName="DIVA RANDOMIZER" shopCheatNO=6; shopCheatP=-1000
 shopDesc="\nWHEN YOU RESPWAWN,\nYOU BECOME A\nDIFFERENT DIVA!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="ROLETA DE DIVAS"
+shopDesc="\nSE TORNE UMA DIVA\nDIFERENTEnQUANDO\nRENASCER!"
+break;
+}
+
 if global.CheatUnlock[6]=0 shopSelect=6 else shopSelect=-3}
 if shopselY=1 and shopselX=2
 {shopPrice=10000 shopName="MIRROR MODE" shopCheatNO=7; shopCheatP=-1000
 shopDesc="\nPLAY THE GAME,\nWITH A MIRRORED\nVIEW!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="MODO ESPELHO"
+shopDesc="\nJOGUE COM A\nVISÃO ESPELHADA!"
+break;
+}
+
 if global.CheatUnlock[7]=0 shopSelect=7 else shopSelect=-3}
 if shopselY=1 and shopselX=3
 {shopPrice=25000 shopName="FULL HEAL SNACKS" shopCheatNO=8; shopCheatP=-2000
 shopDesc="\nHEALTH WILL BE\nFULLY RESTORED\nFROM ANY FOOD!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="LANCHES CURA-TUDO"
+shopDesc="\nA SAÚDE SERÁ\nTOTALMENTE\nRESTAURADA A\nPARTIR DE\nQUALQUER COMIDA!"
+break;
+}
+
 if global.CheatUnlock[8]=0 shopSelect=8 else shopSelect=-3}
 //
 if shopselY=2 and shopselX=0
 {shopPrice=25000 shopName="NO MORE DRAIN" shopCheatNO=9; shopCheatP=-2000
 shopDesc="\nDISABLE THE HEALTH\nDRAIN FROM USING\nTHE SPECIALS!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="DIETA DE VAMPIRO"
+shopDesc="\nDESATIVE A PERCA DE\nSAÚDE AO USAR\nESPECIAIS!"
+
+break;
+}
+
 if global.CheatUnlock[9]=0 shopSelect=9 else shopSelect=-3}
 if shopselY=2 and shopselX=1
 {shopPrice=25000 shopName="SHOWTIME RECHARGER" shopCheatNO=10; shopCheatP=-2000
 shopDesc="\nYOUR SHOWTIME\nCHARGES OVER TIME!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="CARREGADOR DE ESPETÁCULO"
+shopDesc="\nSEU ESPETÁCULO\nCARREGA COM O TEMPO!"
+break;
+}
+
 if global.CheatUnlock[10]=0 shopSelect=10 else shopSelect=-3}
 if shopselY=2 and shopselX=2
 {shopPrice=40000 shopName="UNBREAKABLE" shopCheatNO=11; shopCheatP=-5000
 shopDesc="\nYOUR WEAPON WILL\nNEVER RUN OUT OF\nUSES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="INQUEBRÁVEL"
+shopDesc="\nSUAS ARMAS NUNCA\nQUEBRARÃO!"
+break;
+}
+
 if global.CheatUnlock[11]=0 shopSelect=11 else shopSelect=-3}
 if shopselY=2 and shopselX=3
 {shopPrice=25000 shopName="TIMELESS" shopCheatNO=12; shopCheatP=-5000
 shopDesc="\nDISABLE THE TIMER!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="ATEMPORAL"
+shopDesc="\nDESATIVE O TEMPO!"
+break;
+}
+
 if global.CheatUnlock[12]=0 shopSelect=12 else shopSelect=-3}
 //
 if shopselY=3 and shopselX=0
 {shopPrice=99999 shopName="SUPERDIVA" shopCheatNO=13; shopCheatP=-10000
 shopDesc="\nINFINITE HEALTH!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="SUPERDIVA"
+shopDesc="\nSAÚDE INFINITA!"
+break;
+}
+
 if global.CheatUnlock[13]=0 shopSelect=13 else shopSelect=-3}
 if shopselY=3 and shopselX=1
 {shopPrice=99999 shopName="MS.IMMORTAL" shopCheatNO=14; shopCheatP=-10000
 shopDesc="\nLIVES BECOME\nINFINITE!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="SRTA. IMORTAL"
+shopDesc="\nVIDAS INFINITAS!"
+break;
+}
+
 if global.CheatUnlock[14]=0 shopSelect=14 else shopSelect=-3}
 if shopselY=3 and shopselX=2
 {shopPrice=99999 shopName="UNLIMITED TOKENS" shopCheatNO=15; shopCheatP=-10000
 shopDesc="\nCONTINUES BECOME\nINFINITE!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="FICHAS ILIMITADAS"
+shopDesc="\nCONTINUE VOLTANDO\nINFINITAMENTE!"
+break;
+}
+
 if global.CheatUnlock[15]=0 shopSelect=15 else shopSelect=-3}
 if shopselY=3 and shopselX=3
 {shopPrice=999999 shopName="GOD MODE" shopCheatNO=16; shopCheatP=-999999
 shopDesc="\nUNLIMITED POWER!!!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="MODO DEUSA"
+shopDesc="\nPODER ONIPOTENTE!!!"
+break;
+}
+
 if global.CheatUnlock[16]=0 shopSelect=16 else shopSelect=-3}
 //
 
 
 if shopSelect!=-1
 {
-shopCost="COST:"+string(shopPrice)+"\n(PENALTY:"+string(shopCheatP)+")"
+var _tp="PENALTY"
+switch(global.Language)
+{///Portuguese
+case 2:
+_tp="PÊNALTI"
+break;
+}
+
+var _tp="COST"
+var _ct="CHEAT"
+switch(global.Language)
+{
+case 2: ///Portuguese
+_tp="CUSTO"
+_ct="TRAPAÇA"
+break;
+}
+
+shopCost=string(_tp)+":"+string(shopPrice)+"\n("+string(_tp)+":"+string(shopCheatP)+")"
 if global.CheatUnlock[shopCheatNO]
 {shopPrice=0
-if global.Cheat[shopCheatNO]=0 shopCost="CHEAT:OFF\nPENALTY"+string(shopCheatP)
-if global.Cheat[shopCheatNO]=1 shopCost="CHEAT:ON\nPENALTY"+string(shopCheatP)
+if global.Cheat[shopCheatNO]=0 shopCost=string(_ct)+":OFF\n"+string(_tp)+string(shopCheatP)
+if global.Cheat[shopCheatNO]=1 shopCost=string(_ct)+":ON\n"+string(_tp)+string(shopCheatP)
 }
 }
 
@@ -437,84 +758,228 @@ if shopSet=2
 if shopselY=0 and shopselX=0
 {shopPrice=5000 shopName="VIVA'S GALLERY" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nTHUNDEROUS VIVA!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DA VIVA"
+shopDesc="ARTES DA\nTROVEJANTE VIVA!"
+break;
+}
+
 if global.Gallery[1]=0 shopSelect=1 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=1
 {shopPrice=5000 shopName="HINA'S GALLERY" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nFLAMING HOT HINA!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DA HINA"
+shopDesc="ARTES DA\nARDENTE HINA!"
+break;
+}
+
 if global.Gallery[2]=0  shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=2
 {shopPrice=5000 shopName="BAHATI'S GALLERY" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nBIG AND FABULOUS\nBAHATI!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DA BAHATI"
+shopDesc="ARTES DA GRANDE\nE FABULOSA\nBAHATI!"
+break;
+}
+
 if global.Gallery[3]=0  shopSelect=3 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=3
 {shopPrice=5000 shopName="SOFIA'S GALLERY" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nSPICY AND LEGGY\nSOFIA!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DA SOFIA"
+shopDesc="ARTES DA\nPICANTE E COXUDA\nSOFIA!"
+break;
+}
+
 if global.Gallery[4]=0  shopSelect=4 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 ////
 if shopselY=1 and shopselX=0
 {shopPrice=5000 shopName="ENEMY GALLERY 1" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n1-2 STAGES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DO INIMIGOS 1"
+shopDesc="ARTES DOS\nINIMIGOS DOS\nPALCOS 1 E 2!"
+break;
+}
+
 if global.Gallery[5]=0  shopSelect=5 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=1
 {shopPrice=5000 shopName="ENEMY GALLERY 2" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n3-4 STAGES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DO INIMIGOS 2"
+shopDesc="ARTES DOS\nINIMIGOS DOS\nPALCOS 3 E 4!"
+break;
+}
+
 if global.Gallery[6]=0  shopSelect=6 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=2
 {shopPrice=5000 shopName="ENEMY GALLERY 3" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n5-6 STAGES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DO INIMIGOS 3"
+shopDesc="ARTES DOS\nINIMIGOS DOS\nPALCOS 5 E 6!"
+break;
+}
+
 if global.Gallery[7]=0 shopSelect=7 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=3
 {shopPrice=5000 shopName="ENEMY GALLERY 4" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n7-8 STAGES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DO INIMIGOS 4"
+shopDesc="ARTES DOS\nINIMIGOS DOS\nPALCOS 7 E 8!"
+break;
+}
+
 if global.Gallery[8]=0  shopSelect=8 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 /////
 if shopselY=2 and shopselX=0
 {shopPrice=5000 shopName="BOSS GALLERY 1" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n1-2 STAGES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DE CHEFES 1"
+shopDesc="ARTES DOS\nCHEFES DOS\nPALCOS 1 E 2!"
+break;
+}
+
 if global.Gallery[9]=0  shopSelect=9 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=1
 {shopPrice=5000 shopName="BOSS GALLERY 2" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n3-4 STAGES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DE CHEFES 2"
+shopDesc="ARTES DOS\nCHEFES DOS\nPALCOS 3 E 4!"
+break;
+}
+
 if global.Gallery[10]=0  shopSelect=10 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=2
 {shopPrice=5000 shopName="BOSS GALLERY 3" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n5-6 STAGES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DE CHEFES 3"
+shopDesc="ARTES DOS\nCHEFES DOS\nPALCOS 5 E 6!"
+break;
+}
+
 if global.Gallery[11]=0  shopSelect=11 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=3
 {shopPrice=5000 shopName="BOSS GALLERY 4" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n7-8 STAGES!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIA DE CHEFES 4"
+shopDesc="ARTES DOS\nCHEFES DOS\nPALCOS 7 E 8!"
+break;
+}
+
 if global.Gallery[12]=0  shopSelect=12 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 ///
 if shopselY=3 and shopselX=0
 {shopPrice=5000 shopName="MISC GALLERY" shopCost="COST:5000"
 shopDesc="ARTWORK OF THE\nSOME OTHER\nCHARACTERS...\nWHICH INCLUDES ME."
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="GALERIAS DIVERSAS"
+shopDesc="ARTES DE ALGUNS\nOUTROS\nPERSONAGENS...\nINCLUINDO EU."
+break;
+}
+
 if global.Gallery[13]=0  shopSelect=13 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=1
 {shopPrice=5000 shopName="CONCEPT ART" shopCost="COST:5000"
 shopDesc="DEVELOPMENT ART\nOF THIS\nHERE GAME!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="ARTES CONCEITUAIS"
+shopDesc="ARTES DE\nDESENVOLVIMENTO\nDESTE JOGO MESMO!"
+break;
+}
+
 if global.Gallery[14]=0  shopSelect=14 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=2
 {shopPrice=5000 shopName="KEY ART" shopCost="COST:5000"
 shopDesc="PROMOTIONAL,\nNICE ART OF\nTHE GAME!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="ARTES-CHAVE"
+shopDesc="BELA ARTE\nPROMOCIONAL DO\nJOGO!"
+break;
+}
+
 if global.Gallery[15]=0  shopSelect=15 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=3
 {shopPrice=5000 shopName="GUEST ART" shopCost="COST:5000"
 shopDesc="ARTWORK DONE\nBY OTHER PEOPLE!\nNICE STUFF!"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopName="ARTES DOS CONVIDADOS"
+shopDesc="ARTE FEITA\nPOR OUTRAS PESSOAS\nINCRÍVEIS!\nMUITO MASSA!"
+break;
+}
+
 if global.Gallery[16]=0  shopSelect=16 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 
@@ -530,16 +995,40 @@ if shopDialogueAlt!=0
 	{
 if shopDialogueAlt=1
 {
+
 if shopHelloR=0	shopDesc="     WELCOME!"
 if shopHelloR=1	shopDesc="   HELLO THERE!"
 if shopHelloR=2	shopDesc="  HOW DO YOU DO?"
 if shopHelloR=3	shopDesc="  WHAT'LL IT BE?"	
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE."
+if shopHelloR=0	shopDesc="    BEM-VINDA!"
+if shopHelloR=1	shopDesc="  OLÁ, FALA AÍ!"
+if shopHelloR=2	shopDesc="   TUDO EM CIMA?"
+if shopHelloR=3	shopDesc="  O QUE VAI SER?"	
+break;
+}
+
 	
 	shopName="" shopCost=""}
 if shopDialogueAlt=2
-{shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE." shopAltFace=3 shopName="" shopCost=""}
+{
+shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE."
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopDesc="PERDÃO,ESSE TÁ\nINDISPONÍVEL." break;
+}
+	
+shopAltFace=3 shopName="" shopCost=""}
 if shopDialogueAlt=3
-{shopDesc="  WANT THAT ONE?" shopAltFace=-1}
+{
+
+shopDesc="  WANT THAT ONE?" 
+	
+shopAltFace=-1}
 shopDialogueTime-=1 if shopDialogueTime=0 {shopDialogueAlt=0 shopAltFace=-1}
 if shopDialogueAlt=4
 {
@@ -548,22 +1037,57 @@ if shopHelloR=1	shopDesc="      SOLD!"
 if shopHelloR=2	shopDesc="THANKS FOR BUYING!"
 if shopHelloR=3	shopDesc="   HERE YOU GO!"	
 	
-
+switch(global.Language)
+{
+case 2: ///Portuguese
+if shopHelloR=0	shopDesc="     OBRIGADA!"
+if shopHelloR=1	shopDesc="     VENDIDO!"
+if shopHelloR=2	shopDesc="OBRIGADA POR\nCOMPRAR!"
+if shopHelloR=3	shopDesc="      LÁ VAI!"	
+break;
+}
 	
 	shopName="" shopCost="" shopAltFace=5
 	
 	}
 if shopDialogueAlt=5 {}
 if shopDialogueAlt=6
-{shopDesc="OH YOU BOUGHT\nTHAT ONE ALREADY." shopAltFace=3 shopName="" shopCost=""}
+{shopDesc="OH YOU BOUGHT\nTHAT ONE ALREADY."
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopDesc="AH VOCÊ JÁ\nCOMPROU ESSE." break;
+}	
+
+	shopAltFace=3 shopName="" shopCost=""}
 if shopDialogueAlt=7
-{shopDesc="SORRY,YOU DON'T\nHAVE ENOUGH CASH." shopAltFace=3 shopName="" shopCost=""}
+{shopDesc="SORRY,YOU DON'T\nHAVE ENOUGH CASH." 
+switch(global.Language)
+{
+case 2: ///Portuguese
+shopDesc="PERDÃO, VOCÊ NÃO\nTEM GRANA O\nSUFICIENTE." break;
+}		
+
+	shopAltFace=3 shopName="" shopCost=""}
 if shopDialogueAlt=8
 {
+	
+	
 	if shopHelloR=0 shopDesc="     BYE BYE!" 
 	if shopHelloR=1 shopDesc="     SEE YA!" 
 	if shopHelloR=2 shopDesc="     SO LONG!" 
 	if shopHelloR=3 shopDesc="     GOODBYE!" 
+switch(global.Language)
+{
+case 2: ///Portuguese
+	if shopHelloR=0 shopDesc=" TCHAU TCHAU!" 
+	if shopHelloR=1 shopDesc="     TE VEJO\nDEPOIS!" 
+	if shopHelloR=2 shopDesc="    ATÉ MAIS!" 
+	if shopHelloR=3 shopDesc="      ADEUS!" 	
+break;	
+}
+	
 	shopAltFace=3 shopName="" shopCost=""}
 }else {
 	if shopHelloR=0 shopDesc="     BYE BYE!" 
@@ -571,6 +1095,17 @@ if shopDialogueAlt=8
 	if shopHelloR=2 shopDesc="     SO LONG!" 
 	if shopHelloR=3 shopDesc="     GOODBYE!" 
 	shopAltFace=3 shopName="" shopCost=""}
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+	if shopHelloR=0 shopDesc=" TCHAU TCHAU!" 
+	if shopHelloR=1 shopDesc="     TE VEJO\nDEPOIS!" 
+	if shopHelloR=2 shopDesc="    ATÉ MAIS!" 
+	if shopHelloR=3 shopDesc="      ADEUS!" 	
+break;	
+}
+
 }
 else
 {
@@ -639,7 +1174,14 @@ draw_set_color(c_black) draw_set_alpha(0.8)
 draw_rectangle(-4,-4,160,300,false)
 draw_set_color(c_white) draw_set_alpha(1)
 draw_set_halign(fa_center) draw_set_font(global.scorefont)
-draw_text(80,4,"SHOP")
+var _tt="SHOP"
+switch(global.Language)
+{
+case 2: ///Portuguese
+_tt="LOJA"
+break;	
+}
+draw_text(80,4,_tt)
 draw_set_halign(fa_left)
 draw_text(80,12,"")
 
@@ -807,8 +1349,32 @@ draw_rectangle(320-10-96,240-16-1,320-10,240-16+8,false)
 
 draw_set_halign(fa_center) draw_set_color(c_white)
 draw_text(80,180+4-24,shopName)
-if shopCost="SOLD OUT!" or global.Gold<shopPrice draw_set_color(c_red)
-draw_text(80,180+4-16,shopCost) draw_set_color(c_white)
+var _tt="SOLD OUT!" var _st=0;
+if shopCost="SOLD OUT!" _st=1
+switch(global.Language)
+{
+case 2:
+_tt="ESGOTADO!"
+break;
+}
+
+if shopCost="LOCKED"
+{_tt="LOCKED" _st=1
+	
+switch(global.Language)
+{
+case 2:
+_tt="BLOQUEADO"
+break;
+}
+}
+
+if _st=1 or global.Gold<shopPrice draw_set_color(c_red)
+if _st=0
+draw_text(80,180+4-16,shopCost)
+else
+draw_text(80,180+4-16,_tt)
+draw_set_color(c_white)
 draw_set_halign(fa_left)
 
 draw_text(8,180+4+10-8,shopDesc)
@@ -818,12 +1384,34 @@ if shopSet=1 {if global.CheatUnlock[shopCheatNO]=1
 {global.Cheat[shopCheatNO]^=1 PlaySound(snd_select) shopBuy=-1; shopBuy=-1 shopDialogueTime=2 shopDialogueAlt=5 exit;}
 }
 
-
+switch(global.Language)
+{
+case 0: ///English
 draw_text(8,180+4+10,"     NO    YES")
 if shopBuy=0
 draw_text(8,180+4+10,"       ✰     ")
 else
 draw_text(8,180+4+10,"              ✰")
+break;
+
+case 1: ///Espanol
+draw_text(8,180+4+10,"     NO     SI")
+if shopBuy=0
+draw_text(8,180+4+10,"       ✰     ")
+else
+draw_text(8,180+4+10,"              ✰")
+break;
+
+case 2: ///Portuguese
+draw_text(8,180+4+10,"    NÃO     SIM")
+if shopBuy=0
+draw_text(8,180+4+10,"       ✰     ")
+else
+draw_text(8,180+4+10,"              ✰")
+break;
+}
+
+
 }
 
 draw_command(4)

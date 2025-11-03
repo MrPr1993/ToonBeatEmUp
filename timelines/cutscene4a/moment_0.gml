@@ -88,6 +88,7 @@ sprite_index=mask_none scenetime=340
 with oControl
 {
 cutscenename="VIVA" cutsceneline="Well, you attacked us. And your goons..."
+if global.Language!=0 cutsceneline=languagedialogue[2]
 } x=0
 y=0 vspeed=-0.2
 }
@@ -101,6 +102,7 @@ with actor5 {sprite_index=spr_duck_talk1 image_speed=0.25}
 with oControl
 {cutscenename="DIXIE"
 cutsceneline="What're you broads doin' are breakin' in, smackin' me and my staff around..."
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 if scenetime=clamp(scenetime,1260,1300) specialcheck[0]-=3;
@@ -112,6 +114,7 @@ sprite_index=spr_cutscene4a x=0 y=0
 with oControl
 {quakeFXTime=10
 cutsceneline= "And ruinin' my show!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
@@ -122,6 +125,7 @@ with actor5 {sprite_index=spr_duck_talk3 image_xscale=1 image_speed=0.1}
 with oControl
 {
 cutsceneline= "My boss ain't gonna be happy to see all this mess!"
+if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 
 with actor1 {sprite_index=spr_viva_lookaround image_index=0}
@@ -143,6 +147,7 @@ with actor5 {sprite_index=spr_duck_hit image_speed=0 image_index=24}
 with oControl
 {image_index=1
 cutscenename="BAHATI" cutsceneline= "Your boss?"
+if global.Language!=0 cutsceneline=languagedialogue[6]
 }
 hspeed=-2 
 }
@@ -155,7 +160,9 @@ with actor1 {sprite_index=spr_viva_talk2 image_speed=0.25}
 
 with oControl
 {image_index=1
-cutscenename="VIVA" cutsceneline= "And who's that? Speak up, birdbrain, now!"}
+cutscenename="VIVA" cutsceneline= "And who's that? Speak up, birdbrain, now!"
+if global.Language!=0 cutsceneline=languagedialogue[7]
+}
 hspeed=-2 
 }
 
@@ -168,6 +175,7 @@ with oControl
 {
 
 cutscenename="DIXIE" cutsceneline="LET ME THINK..."
+if global.Language!=0 cutsceneline=languagedialogue[8]
 }
 }
 if scenetime=2180
@@ -179,6 +187,7 @@ if scenetime=2180
 with oControl
 {
 cutscenename="DIXIE" cutsceneline= "PBBBBBBBTH!!!"
+if global.Language!=0 cutsceneline=languagedialogue[9]
 }
 
 }
@@ -197,6 +206,7 @@ if scenetime=2380
 with oControl
 {sprite_index=spr_duck_taunt image_speed=0.1
 cutscenename="DIXIE" cutsceneline= "I ain't sayin' NOTHIN' 'bout my boss, 'specially after you come in here rufflin' my feathers AND my performance!"
+if global.Language!=0 cutsceneline=languagedialogue[10]
 }
 }
 
@@ -223,7 +233,9 @@ sprite_index=mask_none
 
 with oControl
 {
-cutscenename="DIXIE" cutsceneline= "How about that?"}
+cutscenename="DIXIE" cutsceneline= "How about that?"
+if global.Language!=0 cutsceneline=languagedialogue[11]
+}
 }
 
 if scenetime=6021
@@ -284,6 +296,33 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 cutscenePlaying=1
+
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+CDtextT="O BICO NÃO ABRE! O\nQUE FAZER?"
+CDtextA="DEIXAR O CIRCO."
+CDtextB="AJUDAR ELA."
+CDtextC="SOCAR A PATA."
+
+languagedialogue[1]="QUÁ-QUALÉ DESSE SHOWZINHO?!"
+languagedialogue[2]="Bem, você nos atacou. E seus capangas..."
+languagedialogue[3]="Enquanto sardinhas como vocês entram de penetra, batem em mim, nos meus funcionários..."
+languagedialogue[4]="E acabam com o meu Show!"
+languagedialogue[5]="Meu chefe não vai ficar feliz com tanta pataquada!"
+languagedialogue[6]="Seu chefe?"
+languagedialogue[7]="Quem é ele? Abre o bico, cabeça de alpiste!"
+languagedialogue[8]="UM QUÁQUE DE CADA VEZ..."
+languagedialogue[9]="PBBBBBBBTH!!!"
+languagedialogue[10]="Do meu bico não sai um quá sequer sobre o meu chefe, muito menos depois de bagunçarem minha penas E minha apresentação"
+languagedialogue[11]="Vão fazer o que?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 }
 
 

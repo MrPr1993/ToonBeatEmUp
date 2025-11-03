@@ -23,6 +23,26 @@ cutscenename="PRINCE" cutsceneline= "In here! Bevalve will give you a lift to th
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Entrem! Esta Bivalve levará vocês até à superfície!"
+languagedialogue[2]="É impressão minha ou essa amêijoa fede ainda mais por dentro..."
+languagedialogue[3]="Obrigada, primo. Muito bem, meninas, vamos lá!"
+languagedialogue[4]="BLEHHHHHH!!!!!"
+languagedialogue[5]="Tão... gosmento..."
+languagedialogue[6]="É o ditado, quem ri por último come mais chocolate..."
+languagedialogue[7]="“Prince... mais um motivo pra eu não visitar..."
+languagedialogue[8]="“Uau, é impressão minha ou está frio aqui?"
+languagedialogue[9]="É porque tá mesmo, Hina."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+
+break;
+}
+
 //with actor6 {x=400}
 //with actor7 {x=520 }
 //with actor8 {x=640}
@@ -42,6 +62,7 @@ with oControl
 {
 //One clam ride later
 cutscenename="SOFIA" cutsceneline= "Is it me or is this clam smellier on the inside..."
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -50,6 +71,7 @@ if scenetime=400
 with oControl
 {
 cutscenename="VIVA" cutsceneline= "Thank you, cousin. Alright girls let's go!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 
 //with actor1 {image_speed=0.25 sprite_index=spr_viva_move; hspeed=2}
@@ -119,33 +141,45 @@ scenetime=1220
 
 if scenetime=1220
 {
-with oControl {cutscenename="BAHATI" cutsceneline= "BLECHHHHHH!!!!!"}
+with oControl {cutscenename="BAHATI" cutsceneline= "BLECHHHHHH!!!!!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 }
 
 if scenetime=1320
 {
-with oControl {cutscenename="HINA" cutsceneline= "So... gooey..."}
+with oControl {cutscenename="HINA" cutsceneline= "So... gooey..."
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1520
 {
-with oControl {cutscenename="SOFIA" cutsceneline= "Well this wasn't something I'm meant to get sooner..."}
+with oControl {cutscenename="SOFIA" cutsceneline= "Well this wasn't something I'm meant to get sooner..."
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 if scenetime=1720
 {
-with oControl {cutscenename="VIVA" cutsceneline= "Prince... another reason I don't visit..."}
+with oControl {cutscenename="VIVA" cutsceneline= "Prince... another reason I don't visit..."
+	if global.Language!=0 cutsceneline=languagedialogue[7]
+	}
 }
 
 if scenetime=1920
 {
-with oControl {cutscenename="HINA" cutsceneline= "Woah is just me or is it cold here?"}
+with oControl {cutscenename="HINA" cutsceneline= "Woah is just me or is it cold here?"
+	if global.Language!=0 cutsceneline=languagedialogue[8]
+	}
 }
 
 if scenetime=2120
 {
 sprite_index=spr_mermaidcutscene_clam_lookmountain x=0 y=-48 vspeed=0.2
-with oControl {cutscenename="VIVA" cutsceneline= "Well, Hina, it's because that's why."}
+with oControl {cutscenename="VIVA" cutsceneline= "Well, Hina, it's because that's why."
+	if global.Language!=0 cutsceneline=languagedialogue[9]
+	}
 }
 
 if scenetime=2320
@@ -172,6 +206,23 @@ cutscenename="PRINCE" cutsceneline= "Take our seahorses! They'll get you to your
 }
 x=0
 y=0
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Use nossos cavalos-marinhos! Eles irão levá-las ao seu destino num piscar de olhos!"
+languagedialogue[2]="Eles não podem ir mais rápido, não?!"
+languagedialogue[3]="Nesse ritmo, nunca vamos pegar aqueles bandidos!"
+languagedialogue[4]="Pera aí... acho que eles estão acelerando!"
+languagedialogue[5]="Wow wow WOW! NÃO TANTO ASSIM!!!"
+languagedialogue[6]="...Nenhuma palavra... Apenas... Andem..."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+
+break;
+}
 
 newscript=function()
 {
@@ -212,12 +263,14 @@ if scenetime=660
 {
 with oControl {//Riding
 cutscenename="SOFIA" cutsceneline= "Can't they go any faster?!"
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
 if scenetime=860
 {
 with oControl {cutscenename="BAHATI" cutsceneline= "We'll never catch those crooks at this rate!"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -227,6 +280,7 @@ layer_hspeed("BGcity",-4)
 layer_hspeed("BGcity2",-4)
 with oControl {
 cutscenename="HINA" cutsceneline= "Wait... I think they're speeding up!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 
 }
 }
@@ -242,6 +296,7 @@ with actor4 {image_speed=0.5 sprite_index=spr_sofia_seahorse2; hspeed=4}
 layer_hspeed("BGcity",-8)
 layer_hspeed("BGcity2",-8)
 with oControl {cutscenename="VIVA" cutsceneline= "Woah woah WOAH! NOT THAT MUCH!!!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
 //Nyoom and splash onto cave entrance
 //Flash Trickstar — 09/08/2024 11:40 PM
 }
@@ -270,7 +325,9 @@ layer_hspeed("BGcity2",0)
 
 if scenetime=1800
 {
-with oControl {cutscenename="VIVA" cutsceneline="...Not one word... Just... Go..."}
+with oControl {cutscenename="VIVA" cutsceneline="...Not one word... Just... Go..."
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 ///Splash
@@ -294,6 +351,24 @@ with actorscreen
 {scenetime=0;
 with oControl {//-Blue Oni is lying(Beach)-
 cutscenename="" cutsceneline= "" //SceneX-=32; __view_set( e__VW.XView, 0, SceneX )
+}
+
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="A água vai jorrar deste gêiser! Aproveitem o impulso e vocês conseguirão capturar esses malfeitores!"
+languagedialogue[2]="Vossa Alteza! Temos um problema!"
+languagedialogue[3]="A trajetória do jato está muito desviada!"
+languagedialogue[4]="O quê?!"
+languagedialogue[5]="Prince, seu sardinha filho da-"
+languagedialogue[6]="..."
+languagedialogue[7]="Tenho certeza de que elas ficarão bem."
+languagedialogue[8]="Santo Poseidon..."
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+
+break;
 }
 
 sprite_index=spr_allblackscreen image_xscale=2000 x=oControl.SceneX+320 hspeed=-16 y=0
@@ -332,7 +407,9 @@ actor3.x=actor8.x-24 actor3.y=actor8.y-8 actor1.image_xscale=-1
 actor4.x=actor8.x+24 actor4.y=actor8.y-8 actor1.image_xscale=-1
 
 sprite_index=mask_none
-with oControl {cutscenename="PRINCE" cutsceneline= "Water will rocket out of this spout! Ride it and you should be able to catch those miscreants!"}
+with oControl {cutscenename="PRINCE" cutsceneline= "Water will rocket out of this spout! Ride it and you should be able to catch those miscreants!"
+	if global.Language!=0 cutsceneline=languagedialogue[1]
+	}
 }
 
 if scenetime=clamp(scenetime,620,660) {with oControl {SceneX-=0.5; __view_set( e__VW.XView, 0, SceneX )}}
@@ -344,6 +421,7 @@ with actor6 {x=oControl.camX-128 image_xscale=1 sprite_index=spr_davey_move imag
 with actor5 {image_xscale=-1 image_speed=0 image_index=24 sprite_index=spr_prince_hit}
 
 with oControl {cutscenename="DAVEY" cutsceneline= "Your highness! WE GOT A PROBLEM!"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 }
 
@@ -356,6 +434,7 @@ with actor6 {hspeed=0 image_speed=0 image_speed=0 image_index=24 sprite_index=sp
 if scenetime=860
 {audio_stop_all();
 with oControl {cutscenename="DAVEY" cutsceneline= "The trajectory of the spout is way off!"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
 
 	}
 }
@@ -363,6 +442,7 @@ with oControl {cutscenename="DAVEY" cutsceneline= "The trajectory of the spout i
 if scenetime=1060
 {
 with oControl {cutscenename="DIVAS" cutsceneline= "WHAT?!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 with actor1 {image_speed=0 image_index=0 sprite_index=spr_viva_wildtake}
 with actor2 {image_speed=0 image_index=0 sprite_index=spr_hina_wildtake}
@@ -374,7 +454,9 @@ with actor5 image_xscale=1
 
 if scenetime=1200
 {PlaySound(snd_tremor2)
-with oControl {quakeFXTime=160 cutscenename="VIVA" cutsceneline="PRINCE YOU STUPID FU-"}
+with oControl {quakeFXTime=160 cutscenename="VIVA" cutsceneline="PRINCE YOU STUPID FU-"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 scenetime=1400
 }
 
@@ -396,13 +478,17 @@ with actor6 {sprite_index=spr_davey_stand image_index=1}
 if scenetime=1700
 {
 with oControl {//SMASH!
-cutscenename="PRINCE" cutsceneline="..."}
+cutscenename="PRINCE" cutsceneline="..."
+if global.Language!=0 cutsceneline=languagedialogue[6]
+}
 }
 
 if scenetime=1800
 {
 with oControl {//SMASH!
-cutscenename="PRINCE" cutsceneline="I'm pretty sure they'll be fine."}
+cutscenename="PRINCE" cutsceneline="I'm pretty sure they'll be fine."
+if global.Language!=0 cutsceneline=languagedialogue[7]
+}
 
 //with actor5 {sprite_index=spr_prince_hit image_index=24}
 with actor6 {sprite_index=spr_davey_stand image_index=0}
@@ -412,7 +498,9 @@ with actor6 {sprite_index=spr_davey_stand image_index=0}
 if scenetime=1960
 {
 with oControl {//SMASH!
-cutscenename="PRINCE" cutsceneline="Hoo boy..."}
+cutscenename="PRINCE" cutsceneline="Hoo boy..."
+if global.Language!=0 cutsceneline=languagedialogue[8]
+}
 
 with actor5 {sprite_index=spr_prince_cutscene image_index=1}
 

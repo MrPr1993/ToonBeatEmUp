@@ -4,7 +4,19 @@
 if timer=0
 {
 with oPlayer stagePose=0
-playerwinner="DRAW GAME."	
+var _t1="DRAW GAME"
+var _t2="BONUS"
+var _t3=" WINS!"
+
+switch(global.Language)
+{
+case 2:
+var _t1="EMPATE"
+var _t2="BÔNUS"
+var _t3=" VENCEU!"
+break;
+}
+playerwinner=_t1	
 harmed2=noone;
 harmed=noone;
 var _radius=2
@@ -23,7 +35,7 @@ harmed2=harmed;
 }}}
 if harmed2!=noone
 {
-with harmed2 {with oArenaSurvival alarmgo(); oArenaSurvival.playerwinner=string(name)+" WINS!" stagePose=1 immune=1 if hp<=0 hp=0.01 dead=0}
+with harmed2 {with oArenaSurvival alarmgo(); oArenaSurvival.playerwinner=string(name)+string(_t3) stagePose=1 immune=1 if hp<=0 hp=0.01 dead=0}
 }
 ds_list_destroy(_list);	
 
@@ -33,7 +45,7 @@ with oControl
 {
 resulttext1=""
 altresult1=0
-resulttext2="BONUS"
+resulttext2=_t2
 AltScore2=1
 resulttext3=""
 altresult3=0

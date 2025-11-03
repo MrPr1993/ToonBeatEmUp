@@ -20,6 +20,13 @@ with oControl
 {
 stagename="GRITTY GRAVES"		
 
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="DENSAS TUMBAS"
+break;
+	}
+
 global.PrevStage3=5
 prevstagecheck1=0
 prevstagecheck2=1

@@ -19,7 +19,15 @@ with oEnemySpawner {timeline=tm_carnival event_user(0)}
 
 with oControl
 {
-stagename="CLOWNY HONKY CARNIVAL"		
+stagename="CLOWNY HONKY CARNIVAL"	
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="FESTIVAL DAS PALHAÇAS ALBINAS"
+break;
+	}
+
 wallY=192
 global.PrevStage4=9
 prevstagecheck1=1

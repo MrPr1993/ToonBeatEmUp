@@ -32,7 +32,14 @@ global.HiScoreLevel=2
 
 with oControl
 {
-stagename="RUSH OVER THE SEA"	
+stagename="RUSH OVER THE SEA"
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="LARGADA SOB O MAR"
+break;
+	}
 
 global.PrevStage2=3
 prevstagecheck1=0

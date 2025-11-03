@@ -19,7 +19,14 @@ with oEnemySpawner {timeline=tm_swamp event_user(0)}
 
 with oControl
 {
-stagename="DEEP DEAD SWAMPS"		
+stagename="DEEP DEAD SWAMPS"	
+
+	switch(global.Language)
+	{
+case 2:///Portuguese
+stagename="BREJO DOS AFOGADOS"
+break;
+	}
 
 global.PrevStage4=8
 prevstagecheck1=1

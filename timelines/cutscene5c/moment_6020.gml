@@ -23,6 +23,21 @@ cutscenename="HINA" cutsceneline= "The heat here's been murder on us..."
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Pra me chamar de churrasco só falta o espeto nesse calor..."
+languagedialogue[2]="Pois bem, seu desejo é uma ordem!"
+languagedialogue[3]="S-S-Sério?! Não podia ter sido m-m-mais específica?!"
+languagedialogue[4]="Desculpa!! T-T-Tava tão quente que a minha cabeça tava derretendo!"
+languagedialogue[5]="Não tem jeito... Ficar parada aqui é só ladeira abaixo..."
+languagedialogue[6]="E andar é só ladeira acima..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 newscript=function()
 {
 scenetime+=1;
@@ -37,7 +52,7 @@ with oControl
 {
 //One clam ride later
 cutscenename="HAIFA" cutsceneline= "Very well, your wish is granted!"
-
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 
 flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
@@ -72,6 +87,7 @@ with oControl
 {
 //POOF
 cutscenename="VIVA" cutsceneline= "S-S-Seriously?! You couldn't have been m-m-more specific?!"
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -81,19 +97,24 @@ if scenetime=680
 with oControl
 {
 cutscenename="HINA" cutsceneline= "Sorry!! I-I-It was so hot my head was swimming!"
+if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 }
 
 if scenetime=900
 {
-with oControl {cutscenename="BAHATI" cutsceneline= "Nothing for it... We'll just have to climb our way down..." }
+with oControl {cutscenename="BAHATI" cutsceneline= "Nothing for it... We'll just have to climb our way down..." 
+	if global.Language!=0 cutsceneline=languagedialogue[5]
+	}
 }
 
 if scenetime=1220 ///Seeing minions walking to palace
 {
 sprite_index=spr_looksnowmountain x=0 y=0 vspeed=-0.1
 
-with oControl {cutscenename="VIVA" cutsceneline= "Or you should mean up..."}
+with oControl {cutscenename="VIVA" cutsceneline= "Or you should mean up..."
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 
@@ -122,6 +143,21 @@ cutscenename="BAHATI" cutsceneline= "I wish we could be on land..."
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Gostaria que a gente estivesse em um campo..."
+languagedialogue[2]="Que assim seja..."
+languagedialogue[3]="Ufa... Ar fresco..."
+languagedialogue[4]="Você devia ter pedido um campo em TERRA FIRME!!!"
+languagedialogue[5]="OLHA! Uma mina! E eu vi que tem alguma coisa passando nela!"
+languagedialogue[6]="Ei... ei! Não me deixem aqui! Voltem!"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 newscript=function()
 {
 scenetime+=1;
@@ -137,7 +173,7 @@ flashscreen=instance_create_depth(0,0,-1,oAlphaFadeFX) with flashscreen
 sprite_index=spr_whitecol image_blend=c_white depth=-4000
 }	
 with oControl {cutscenename="HAIFA" cutsceneline= "So be it..."
-
+if global.Language!=0 cutsceneline=languagedialogue[2]
 }
 scenetime=520
 }
@@ -177,6 +213,7 @@ if scenetime=1060
 with oControl {//Riding
 //POOF
 cutscenename="VIVA" cutsceneline= "Phew... Fresh air..."
+if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -199,6 +236,7 @@ if scenetime=1360
 layer_set_visible("MineBG2",1)
 
 with oControl {cutscenename="VIVA" cutsceneline= "You should have said STABLE LAND!!!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
 }
 with actor1 {shadow=-1 vspeed=8}
 
@@ -224,6 +262,7 @@ if scenetime=1760
 with actor4 { sprite_index=spr_sofia_talk2 image_speed=0.25}
 
 with oControl {cutscenename="SOFIA" cutsceneline= "OH LOOK! A mine! I can also see something heading past it!"
+	if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }
 
@@ -237,7 +276,9 @@ with oControl {cutscenename="" cutsceneline=""}
 
 if scenetime=2160
 {
-with oControl {cutscenename="VIVA" cutsceneline= "Hey... hey! Don't leave me here! Get back here!"}
+with oControl {cutscenename="VIVA" cutsceneline= "Hey... hey! Don't leave me here! Get back here!"
+	if global.Language!=0 cutsceneline=languagedialogue[6]
+	}
 }
 
 if scenetime=2360
@@ -271,6 +312,19 @@ sprite_index=mask_none
 x=0
 y=0
 
+with oControl
+switch(global.Language)
+{
+case 2: ////Portuguese
+languagedialogue[1]="Queremos superar o limite dos céus pelos nossos objetivos!"
+languagedialogue[2]="Ah, isso deve ser fácil!"
+languagedialogue[3]="Espera, o que você vai-"
+languagedialogue[4]="MALDITAS ESPECIFICAÇÕES DE DESEJOS!"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+}
+
 with actor1 {sprite_index=spr_viva_talk image_speed=0.25}
 
 scenetime=320
@@ -287,6 +341,7 @@ with actor1 {image_index=0 image_speed=0}
 with actor5 {sprite_index=spr_genie_attack1 image_index=0}	
 
 with oControl {cutscenename="HAIFA" cutsceneline= "Ah, that should be simple!"
+	if global.Language!=0 cutsceneline=languagedialogue[2]
 
 }
 }
@@ -302,6 +357,7 @@ with actor5 {sprite_index=spr_genie_attack2 PlaySound(snd_jump) ground=0 z=-1 sp
 	
 
 with oControl {cutscenename="VIVA" cutsceneline= "Wait, what're you-"
+	if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }
 
@@ -350,7 +406,9 @@ if scenetime=1500
 {
 with actor1 {shadow=-1 x=160 y=160 z=0 sprite_index=spr_byetent2}
 
-with oControl {quakeFXTime=10 PlaySound(snd_explosion) cutscenename="VIVA" cutsceneline="STUPID WISH SPECIFICATIONS!"}
+with oControl {quakeFXTime=10 PlaySound(snd_explosion) cutscenename="VIVA" cutsceneline="STUPID WISH SPECIFICATIONS!"
+	if global.Language!=0 cutsceneline=languagedialogue[4]
+	}
 }
 
 if scenetime=1820

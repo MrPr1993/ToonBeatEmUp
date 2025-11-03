@@ -79,11 +79,28 @@ if AnimFrame=clamp(AnimFrame,2.5,3) oControl.quakeFXTime=10
 
 if AnimFrame=3
 {
+var _t1="NO BONUS"
+var _t2="BONUS"
+var _t3="PERFECT"
+var _t4="GOOD"
+var _t5="SCORE"
+
+switch(global.Language)
+{
+case 2:
+var _t1="SEM BÔNUS"
+var _t2="BÔNUS"
+var _t3="PERFEITO"
+var _t4="BOM"
+var _t5="PONTUAÇÃO"
+break;
+}	
+
 	if bagged!=0
 	{AnimFrame=8 oControl.quakeFXTime=10
 		breakresult=0 windx=x
 		
-		shaketime=10 altresult2Text="NO BONUS" altresult2=0
+		shaketime=10 altresult2Text=_t1 altresult2=0
 	PlaySound(snd_hit) PlaySound(voice4) 
 	image_index=8
 	vspeed=8	
@@ -93,13 +110,13 @@ if AnimFrame=3
 if win=0
 	{breakresult=0 windx=x
 		
-		shaketime=10 altresult2Text="NO BONUS" altresult2=0}
+		shaketime=10 altresult2Text=_t1 altresult2=0}
 	else
 	{ //snd_viva13
- oSingGame.resulttext1="BONUS"
+ oSingGame.resulttext1=_t2
 
 {PlaySound(snd_break)  with oControl minigameIDwin=1;
-			altresult2Text="PERFECT" altresult2=10000
+			altresult2Text=_t3 altresult2=10000
 windowon=0
 		//	with oFlashFX isDepth=0 oFlashFX.depth=depth-1
 			oSingPlayer.hitsource=x
