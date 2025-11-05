@@ -20,7 +20,7 @@ switch(global.Language)
 {
 case 2:
 var _tt1="\nPRESSIONE\nQUALQUER\nTECLA PARA\nCONECTAR!"
-var _tt2="\nPRESSIONE\n\nPARA\nCONECTAR!"
+var _tt2="\nPRESSIONE\n\n\nPARA\nCONECTAR!"
 break;
 }
 

@@ -4,7 +4,150 @@ function soundtest_draw(){
 if room=rm_soundtest
 {fpsY=8 if global.CurrentMusic!=-1 audio_sound_gain(global.CurrentMusic,global.BGMvolume/100,0)
 	
-//controller_setup()
+///Translation
+var _t0="SOUND TEST"
+var _t1="PLAYING:"
+var _t2=" (LOOPED)"
+var _t3="MUSIC"
+var _t4="COMPOSER:"
+var _t5="MUSIC SPEED"
+var _t6="MUSIC VOLUME"
+var _t7="SOUND VOLUME"
+var _t8="SOUNDS"
+var _t9="SETTINGS"
+var _t10="SOUND"
+var _t11="VOICED BY:"
+
+var _sn0="OPENING FILM"
+var _sn1="DOWNTOWN BEAT"
+var _sn2="AERIAL WALK"
+var _sn3="RUSH OVER THE SEAS"
+var _sn4="TRAINING TRAVEL"
+var _sn5="GRITTY GRAVES"
+var _sn6="MASHUP MUSEUM"
+var _sn7="LUCKY DOJO CASINO"
+var _sn8="DEEP DEAD SWAMPS"
+var _sn9="CLOWNY HONKY CARNIVAL"
+var _sn10="DOWNSIDE BEACH"
+var _sn11="UFO BEYOND THE STARS"
+var _sn12="UNDER THE SEA JAM"
+var _sn13="HEATING HOT DESERT"
+var _sn14="GREAT CLIMBING COLD"
+var _sn15="FANTASTIC FANTASY CAVERNS"
+var _sn16="AHEAD IN THE CLOUDS"
+var _sn17="DANGEROUS SCIENCE"
+var _sn18="ZEPPELIN FINALE"
+var _sn19="NASTY FOE TUNE"
+var _sn20="BADDY BADDIES JAM"
+var _sn21="QUICK VILE MELODY"
+var _sn22="DANGEROUS OF TONES"
+var _sn23="DASTARDLY SUBJECT"
+var _sn24="PIECE OF THE NIGHT"
+var _sn25="RISKY REVIVAL"
+var _sn26="SHOW'S CANCELLED"
+var _sn27="GOOD SHOW"
+var _sn28="MARVELOUS FINALE"
+var _sn29="ROUGH ROUGHHOUSING"
+var _sn30="CONCENTRATING BREAK"
+///
+var _sn31="MAIN LOBBY"
+var _sn32="TONIGHT'S SHOW"
+var _sn33="LITTLE IRISH SHOP"
+var _sn34="PICKING INFORMATION"
+var _sn35="STAGE PREPARATIONS"
+var _sn36="TRAININ' GROUNDS"
+var _sn37="SOUR SURVIVAL"
+var _sn38="CALM FISHER"
+var _sn39="HAPPY GAMBLING"
+var _sn40="ODD TIME"
+var _sn41="FRIGHT MOMENT"
+var _sn42="MYSTERY INVESTIGATION"
+var _sn43="ACTION SCENE"
+var _sn44="SHOW'S END"
+var _sn45="OUT OF PLACE..."
+
+
+switch(global.Language)
+{
+case 1: ///Espanol
+_t0="PRUEBA DE SONIDO"
+_t1="TOCANDO:"
+_t2=" (EN LOOP)"
+_t3="MÚSICA"
+_t4="COMPOSITOR:"
+_t5="VEL.DE MÚSICA"
+_t6="VOL.DE MÚSICA"
+_t7="VOL.DE SONIDO"
+_t8="SONIDOS"
+_t9="AJUSTES"
+_t10="SONIDO"
+_t11="VOZ POR:"
+break;	
+case 2: ///Portuguese
+_t0="PRUEBA DE SONIDO"
+_t1="TOCANDO:"
+_t2=" (EM LOOP)"
+_t3="MÚSICA"
+_t4="COMPOSITOR:"
+_t5="VEL.DE MÚSICA"
+_t6="VOL.DA MÚSICA"
+_t7="VOL.DO SOM"
+_t8="SONS"
+_t9="CONFIGURAÇÕES"
+_t10="SOM"
+_t11="DUBLADA POR:"
+
+_sn0="FILME DE ABERTURA"
+_sn1="DISTRITO BEAT"
+_sn2="TOUR AÉRIO"
+_sn3="LARGADA SOB O MAR"
+_sn4="TREMENDA VIAGEM"
+_sn5="DENSAS TUMBAS"
+_sn6="MUSEU MASHUP"
+_sn7="CASINO DOJO LUCKY"
+_sn8="BREJO DOS AFOGADOS"
+_sn9="FESTIVAL DAS PALHAÇAS ALBINAS"
+_sn10="LITORAL TROPICAL"
+_sn11="DISCOS ALÉM DAS ESTRELAS"
+_sn12="POR ÁGUA ABAIXO"
+_sn13="DESERTO ISKH-AL DANT"
+_sn14="ALPES DO BATE-QUEIXO"
+_sn15="FANTÁSTICA CAVERNA DAS FANTASIAS"
+_sn16="ACIMA DAS NUVENS"
+_sn17="CIÊNCIA CABULOSA"
+_sn18="ZEPPELIN FINALE"
+
+_sn19="MELODIA INIMIGO CRUEL"
+_sn20="JAM DESA DESAGRADÁVEL"
+_sn21="MELODÍA RÁPIDA E VIL"
+_sn22="PERIGOSO DOS TONS"
+_sn23="ASUNTO VIL"
+_sn24="PEDAÇO DA NOITE"
+_sn25="REAVIVAMENTO ARRISCADO"
+_sn26="SHOW FOI CANCELADO"
+_sn27="BOM SHOW"
+_sn28="FINAL MARAVILHOSO"
+_sn29="BROMCADEORAS BRUTAS"
+_sn30="DISJUNTOR DE CONCENTRAÇÃO"
+///
+_sn31="LOBBY PRINCIPAL"
+_sn32="SHOW DESTA NOITE"
+_sn33="PEQUENA LOJA IRLANDESA"
+_sn34="ESCOLHENDO INFORMAÇÕES"
+_sn35="PREPARATIVOS DE PALCO"
+_sn36="CAMPOS DE TREINAMENTO"
+_sn37="SOBREVIVÊNCIA DIFÍCIL"
+_sn38="PESCADOR CALMO"
+_sn39="JOGO FELIZ"
+_sn40="HORA ESTRANHA"
+_sn41="MOMENTO DE SUSTO"
+_sn42="INVESTIGAÇÃO MISTERIOSA"
+_sn43="CENA DE AÇÃO"
+_sn44="MOSTRA FIM"
+_sn45="FORA DO LUGAR"
+
+break;
+}
 
 draw_sprite(bg_soundtest,0,0,0)
 draw_sprite_ext(bg_soundtest,0,320,0,-1,1,0,c_white,1)
@@ -119,25 +262,26 @@ playingloop=1
 if -key_left_pressed if songno=0 songno=45 else songno-=1
 if key_right_pressed if songno=45 songno=0 else songno+=1
 
-if songno=0 {recordcol2=c_white songname="OPENING FILM" playingSound=msc_intro songcomposer="JONORSI"}
-if songno=1 {recordcol2=#AC482F songname="DOWNTOWN BEAT" playingSound=msc_stage1 songcomposer="JONORSI"}
-if songno=2 {recordcol2=#737A65 songname="AERIAL WALK" playingSound=msc_airplane songcomposer="JONORSI"}
-if songno=3 {recordcol2=#006B9C songname="RUSH OVER THE SEA" playingSound=msc_stage2 songcomposer="JONORSI"}
-if songno=4 {recordcol2=#BD6300 songname="TRAINING TRAVEL" playingSound=msc_train songcomposer="JONORSI"}
-if songno=5 {recordcol2=#005026 songname="GRITTY GRAVES" playingSound=msc_stage4 songcomposer="JONORSI"}
-if songno=6 {recordcol2=#D5D7CF songname="MASHUP MUSEUM" playingSound=msc_stage3 songcomposer="JONORSI"}
-if songno=7 {recordcol2=#FF65A0 songname="LUCKY DOJO CASINO" playingSound=msc_stage5 songcomposer="JONORSI"}
-if songno=8 {recordcol2=#66710E songname="DEEP DEAD SWAMPS" playingSound=msc_swamp songcomposer="JONORSI"}
-if songno=9 {recordcol2=#29B6F9 songname="CLOWNY HONKY CARNIVAL" playingSound=msc_carnival songcomposer="EVADER MUSIC"}
-if songno=10 {recordcol2=#FFEE70 songname="DOWNSIDE BEACH" playingSound=msc_beach songcomposer="EVADER MUSIC"}
-if songno=11 {recordcol2=#9147B2 songname="UFO BEYOND THE STARS" playingSound=msc_ufo songcomposer="EVADER MUSIC"}
-if songno=12 {recordcol2=#29397B songname="UNDER THE SEA JAM" playingSound=msc_underwater songcomposer="JONORSI"}
-if songno=13 {recordcol2=#EAC685 songname="HEATING HOT DESERT" playingSound=msc_desert songcomposer="EVADER MUSIC"}
-if songno=14 {recordcol2=#3277BE songname="GREAT CLIMBING COLD" playingSound=msc_snowmountain songcomposer="EVADER MUSIC"}//X
-if songno=15 {recordcol2=#72004A songname="FANTASTIC FANTASY CAVERNS" playingSound=msc_cave songcomposer="EVADER MUSIC"}//X
-if songno=16 {recordcol2=#E55BE0 songname="AHEAD IN THE CLOUDS" playingSound=msc_clouds songcomposer="EVADER MUSIC"}//X
-if songno=17 {recordcol2=#5B9995 songname="DANGEROUS SCIENCE" playingSound=msc_lab songcomposer="JONORSI"}
-if songno=18 {recordcol2=c_red songname="ZEPPELIN FINALE" playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}//X
+
+if songno=0 {recordcol2=c_white songname=_sn0 playingSound=msc_intro songcomposer="JONORSI"}
+if songno=1 {recordcol2=#AC482F songname=_sn1 playingSound=msc_stage1 songcomposer="JONORSI"}
+if songno=2 {recordcol2=#737A65 songname=_sn2 playingSound=msc_airplane songcomposer="JONORSI"}
+if songno=3 {recordcol2=#006B9C songname=_sn3 playingSound=msc_stage2 songcomposer="JONORSI"}
+if songno=4 {recordcol2=#BD6300 songname=_sn4 playingSound=msc_train songcomposer="JONORSI"}
+if songno=5 {recordcol2=#005026 songname=_sn5 playingSound=msc_stage4 songcomposer="JONORSI"}
+if songno=6 {recordcol2=#D5D7CF songname=_sn6 playingSound=msc_stage3 songcomposer="JONORSI"}
+if songno=7 {recordcol2=#FF65A0 songname=_sn7 playingSound=msc_stage5 songcomposer="JONORSI"}
+if songno=8 {recordcol2=#66710E songname=_sn8 playingSound=msc_swamp songcomposer="JONORSI"}
+if songno=9 {recordcol2=#29B6F9 songname=_sn9 playingSound=msc_carnival songcomposer="EVADER MUSIC"}
+if songno=10 {recordcol2=#FFEE70 songname=_sn10 playingSound=msc_beach songcomposer="EVADER MUSIC"}
+if songno=11 {recordcol2=#9147B2 songname=_sn11 playingSound=msc_ufo songcomposer="EVADER MUSIC"}
+if songno=12 {recordcol2=#29397B songname=_sn12 playingSound=msc_underwater songcomposer="JONORSI"}
+if songno=13 {recordcol2=#EAC685 songname=_sn13 playingSound=msc_desert songcomposer="EVADER MUSIC"}
+if songno=14 {recordcol2=#3277BE songname=_sn14 playingSound=msc_snowmountain songcomposer="EVADER MUSIC"}//X
+if songno=15 {recordcol2=#72004A songname=_sn15 playingSound=msc_cave songcomposer="EVADER MUSIC"}//X
+if songno=16 {recordcol2=#E55BE0 songname=_sn16 playingSound=msc_clouds songcomposer="EVADER MUSIC"}//X
+if songno=17 {recordcol2=#5B9995 songname=_sn17 playingSound=msc_lab songcomposer="JONORSI"}
+if songno=18 {recordcol2=c_red songname=_sn18 playingSound=msc_zeppelin songcomposer="EVADER MUSIC"}//X
 if songno=19 {recordcol2=#890200 songname="NASTY FOE TUNE" playingSound=msc_boss songcomposer="JONORSI"}
 if songno=20 {recordcol2=#990200 songname="BADDY BADDIES JAM" playingSound=msc_boss2 songcomposer="JONORSI"}
 if songno=21 {recordcol2=#C91122 songname="QUICK VILE MELODY" playingSound=msc_boss3 songcomposer="EVADER MUSIC"}//X
@@ -199,19 +343,19 @@ secondsMAX3 = round(songMaxTime) div 3600
 
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center) draw_set_color(c_white)
-draw_text(160,8,"SOUND TEST")
+draw_text(160,8,_t0)
 if playingsongname!=""
 {
 if playingloop=0
-draw_text(160,32-8,"PLAYING:"+string(playingsongname))
+draw_text(160,32-8,string(_t1)+string(playingsongname))
 else
-draw_text(160,32-8,"PLAYING:"+string(playingsongname)+" (LOOPED)")
+draw_text(160,32-8,string(_t1)+string(playingsongname)+_t2)
 }
-draw_text(160,32,"MUSIC")
+draw_text(160,32,_t3)
 draw_text(64,32+8,"")
 draw_text(320-64,32+8,"")
 draw_text(160,32+8,"◄ "+string(songname)+" ►")
-draw_text(160,32+24,"COMPOSER:"+string(songcomposer))
+draw_text(160,32+24,string(_t4)+string(songcomposer))
 if songplaying!=-1
 {
 ////Beta Test for timer
@@ -247,10 +391,10 @@ draw_text(160+4,32+16,"0:00")
 
 
 draw_set_halign(fa_right)
-draw_text(160-4,32+16+16,"MUSIC SPEED")
+draw_text(160-4,32+16+16,_t5)
 
-draw_text(160-4,64+24+8+8,"MUSIC VOLUME")
-draw_text(160-4,64+24+8+16,"SOUND VOLUME")
+draw_text(160-4,64+24+8+8,_t6)
+draw_text(160-4,64+24+8+16,_t7)
 
 draw_set_halign(fa_center)
 if soundSelect=2
@@ -265,16 +409,18 @@ draw_set_halign(fa_center)
 //string(secondsMAX3)+string(":")+string(secondsMAX2)+string(":")+string(secondsMAX)
 //draw_text(160,32+16,string(audio_sound_get_))
 
-draw_set_color(c_white)
-draw_text(160,64+16-4,"SOUNDS") //songSPD=1
 
-draw_text(160,64+24+8,"SETTINGS") //songSPD=1
+
+draw_set_color(c_white)
+draw_text(160,64+16-4,_t8) //songSPD=1
+
+draw_text(160,64+24+8,_t9) //songSPD=1
 draw_set_halign(fa_right)
 
-draw_text(160-4,64+24-4,"◄ SOUND "+string(soundno))
+draw_text(160-4,64+24-4,"◄ "+string(_t10)+" "+string(soundno))
 draw_set_halign(fa_center)
 if voiceActor!=""
-draw_text(160-4,64+32-4,"VOICED BY:"+string(voiceActor))
+draw_text(160-4,64+32-4,string(_t11)+string(voiceActor))
 if soundSelect=3
 {////Check Sounds
 draw_text(160,64+24-4,"✰")

@@ -36,17 +36,30 @@ draw_set_halign(fa_center)
 var _insertcoin=0;
 if oControl.nopleasewait=1
 {
+	
+var _t1="PRES.\nA OR B"
+var _t2="INSERTE\nMONEDA"
+var _t3="ESPERE\n"
+var _t4="GAME\nOVER"
+switch(global.Language)
+{
+case 2: ///Portuguese
+_t1="PRESS.\nA O B"
+_t2="INSERIRT\nMONEDA"
+_t3="AGUARDE\nWAIT"
+_t4="GAME\nOVER"
+}
 
 if  (input_player_connected(playerNO-1)) _insertcoin=1;
 
 if _insertcoin
 {
-draw_text(34,8,"PRESS\nA OR B")
+draw_text(34,8,_t1)
 }
 else
-draw_text(34,8,"INSERT\nCOIN")
+draw_text(34,8,_t2)
 }
-else draw_text(34,8,"PLEASE\nWAIT")
+else draw_text(34,8,_t3)
 
 }
 else

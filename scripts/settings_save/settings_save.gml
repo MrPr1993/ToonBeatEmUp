@@ -26,6 +26,8 @@ ini_write_real("SETTINGS", "LIFE", global.LifeStart)
 ini_write_real("SETTINGS", "CONTINUES", global.ContinueStart)
 ini_write_real("SETTINGS", "FPS", global.fpsMode)
 
+ini_write_real("LANGUAGE","0", global.Language)
+
 ini_write_real("SETTINGS", "GOLDSHOW", global.GoldShow)
 ini_write_real("SETTINGS", "FEATSHOW", global.DisplayFeats)
 

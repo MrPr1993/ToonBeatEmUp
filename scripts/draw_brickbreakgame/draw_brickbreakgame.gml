@@ -114,7 +114,20 @@ with oBrickBreakGame
 {draw_set_font(global.scorefont)
 draw_set_color(c_white)
 draw_set_halign(fa_center)
-draw_text(160,32,"DESTROY THE BRICKS!")
+
+var _t="DESTROY THE BRICKS!"
+switch(global.Language)
+{
+case 1:
+_t="DESTRUYE LOS LADRILLOS!"
+break;
+
+case 2:
+_t="DESTRUA OS TIJOLOS!"
+break;
+}
+
+draw_text(160,32,_t)
 
 }
 }
@@ -136,7 +149,19 @@ with oEatingContestPlayer
 draw_set_font(global.scorefont)
 draw_set_color(c_white)
 draw_set_halign(fa_center)
-draw_text(160,32,"EATING CONTEST!")
+
+var _t="EATING CONTEST!"
+switch(global.Language)
+{
+case 1:
+_t="CONCURSO DE COMIDA!"
+break;
+
+case 2:
+_t="CONCURSO DE COMER!"
+break;
+}
+draw_text(160,32,_t)
 
 
 draw_set_color(c_white) draw_set_alpha(1)
@@ -159,7 +184,21 @@ with oHammerPlayer
 draw_set_font(global.scorefont)
 draw_set_color(c_white)
 draw_set_halign(fa_center)
-draw_text(160,32,"TEST YOUR STRENGTH!")
+
+//Ç
+var _t="TEST YOUR STRENGTH!"
+switch(global.Language)
+{
+case 1:
+_t="PRUEBA TU FUERZA!"
+break;
+
+case 2:
+_t="TESTE SUA FORÇA!"
+break;
+}
+
+draw_text(160,32,_t)
 
 
 draw_set_color(c_white) draw_set_alpha(1)

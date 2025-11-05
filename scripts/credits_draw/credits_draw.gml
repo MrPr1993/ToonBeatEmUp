@@ -3,6 +3,66 @@
 function credits_draw(){
 controller_setup()	
 
+///Translation
+var _t0="GAME BY"
+var _t1="MUSIC BY"
+var _t2="SOUNDS BE"
+var _t3="VOICES BY"
+var _t4="GRAPHICS BY"
+var _t5="WRITING BY"
+var _t6="CHARACTER DESIGN BY"
+var _t7="TRANSLATION"
+var _t8="CODING BY"
+var _t9="CONCEPT ART BY"
+var _t10="PLAYTESTERS"
+var _t11="CAMEO CUSTOMERS"
+var _t12="THANKS FOR PLAYING!"
+var _t13="NICE JOB!\nALL STAGE MODE IS UNLOCKED!"
+var _t14="NICE JOB…\nMEET ME AT THE EXTRAS..."//(unlocking a secret at the Extras & VS mode)
+var _t15="SKIPPING"
+
+switch(global.Language)
+{
+case 1: ///	Espanol
+var _t0="JUEGO POR"
+var _t1="MÚSICA POR"
+var _t2="SONIDOS POR"
+var _t3="VOCES POR"
+var _t4="GRÁFICOS POR"
+var _t5="ESCRITO POR"
+var _t6="DISEÑOS DE PERSONAJES POR"
+var _t7="TRADUCCIÓN"
+var _t8="CÓDIGOS POR"
+var _t9="ARTE CONCEPTUAL POR"
+var _t10="PLAYTESTERS"
+var _t11="CLIENTES DE CAMEO"
+var _t12="GRACIAS POR JUGAR!"
+var _t13="BIEN HECHO!\nMODO GIRA MUNDIAL\nESTÁ DESBLOQUEADO!"
+var _t14="BIEN HECHO…\nMEET ME AT THE EXTRAS..."//(unlocking a secret at the Extras & VS mode)
+var _t15="SALTANDO"
+break;
+
+case 2: ///Portuguese
+_t0="JOGO POR"
+_t1="MÚSICA POR"
+_t2="SONS POR"
+_t3="VOZES POR"
+_t4="GRÁFICOS POR"
+_t5="ROTEIRO POR"
+_t6="DESIGN DE PERSONAGEM POR"
+_t7="TRADUÇÃO"
+_t8="PROGRAMAÇÃO POR"
+_t9="CONCEPT ART POR"
+_t10="PLAYTESTERS"
+_t11="PARTICIPAÇÕES ESPECIAIS"
+_t12="OBRIGADO POR JOGAR!"
+_t13="BOM TRABALHO!\nMODO TOUR MUNDIAL\nESTÁ DESBLOQUEADO!"
+_t14="BOM TRABALHO…\nME ENCONTRE NOS EXTRAS..."//(unlocking a secret at the Extras & VS mode)
+_t15="PULANDO"
+
+break;
+}
+
 draw_sprite(bg_credits,0,0,0)	
 draw_sprite_ext(bg_credits,0,320,0,-1,1,0,c_white,1)
 
@@ -391,25 +451,27 @@ var creditmoment="";
 if creditsTime<5 ///8 Per line?
 creditmoment="" ;
 else if creditsTime<5+5*2
-creditmoment="GAME BY\n \nMRPR1993" ;
+creditmoment=string(_t0)+"\n \nMRPR1993" ;
 else if creditsTime<7+5*3
-creditmoment="MUSIC BY\n \nJONORSI\nEVADER MUSIC" ;
+creditmoment=string(_t1)+"\n \nJONORSI\nEVADER MUSIC" ;
 else if creditsTime<7+5*4
-creditmoment="SOUNDS BY\n \nMRPR1993\nMASTERSAUCE\nSOUNDSOFKOOKIE\nTHE AUDIO HORIZON SOUND FX";
+creditmoment=string(_t2)+"\n \nMRPR1993\nMASTERSAUCE\nSOUNDSOFKOOKIE\nTHE AUDIO HORIZON SOUND FX";
 else if creditsTime<7+5*5
-creditmoment="VOICES BY\n \nMIMI HUNG\nFLIRTY FAWN\nCINDER\nSED2116\nMIZZPEACHY\nSUCCUBOO\nSHYGUYWHY" ;
+creditmoment=string(_t3)+"\n \nMIMI HUNG\nFLIRTY FAWN\nCINDER\nSED2116\nMIZZPEACHY\nSUCCUBOO\nSHYGUYWHY" ;
 else if creditsTime<7+5*6
-creditmoment="GRAPHICS BY\n \nMRPR1993\nFROTHIER\nDR.LILI M.D." ;
+creditmoment=string(_t4)+"\n \nMRPR1993\nFROTHIER\nDR.LILI M.D." ;
 else if creditsTime<7+5*7
-creditmoment="WRITING BY\n \nMRPR1993\nSHADES\nSED2116\nFLASH TRICKSTAR" ;
+creditmoment=string(_t5)+"\n \nMRPR1993\nSHADES\nSED2116\nFLASH TRICKSTAR" ;
 else if creditsTime<7+5*8
-creditmoment="CHARACTER DESIGN BY\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
-else if creditsTime<7+5*9
-creditmoment="CODING BY\n \nMRPR1993\nPIXELATED POPE\nJUJUADAMS" ;
+creditmoment=string(_t6)+"\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
 else if creditsTime<7+5*10
-creditmoment="CONCEPT ART BY\n \nMRPR1993\nSHADES\nSED2116" ;
+creditmoment=string(_t7)+"\n \nMRPR1993\nBRIOCHITTOS" ;
+else if creditsTime<7+5*10
+creditmoment=string(_t8)+"\nMRPR1993\nPIXELATED POPE\nJUJUADAMS" ;
 else if creditsTime<7+5*11
-creditmoment="PLAYTESTERS\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nFLASH TRICKSTAR\nSHADO\nSHADES\nWEEBJESUSAMEN" ;
+creditmoment=string(_t9)+"\n \nMRPR1993\nSHADES\nSED2116" ;
+else if creditsTime<7+5*12
+creditmoment=string(_t10)+"\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nFLASH TRICKSTAR\nSHADO\nSHADES\nWEEBJESUSAMEN" ;
 else
 {
 creditsCameoY-=0.22
@@ -426,17 +488,17 @@ var _setsave=0;
 if global.MenuGlobal=0
 {
 if global.AllStageModeUnlock=0 if global.Feats[32]
-{global.AllStageModeUnlock=1 _setsave=1; creditsText="NICE JOB!\nALL STAGE MODE IS UNLOCKED!"}
+{global.AllStageModeUnlock=1 _setsave=1; creditsText=_t13}
 
 if global.SecretBoss=0 if global.Feats[44]
-{global.SecretBoss=1 _setsave=1; creditsText="NICE JOB...\nMEET ME AT THE EXTRAS..."}
+{global.SecretBoss=1 _setsave=1; creditsText=_t14}
 }
 
 if _setsave { unlock_save()} ///44
 
 if creditsTime>=120
 {
-draw_text(160,124,"THANKS FOR PLAYING!")
+draw_text(160,124,_t12)
 draw_set_color(c_white) creditsFlash+=1 if creditsFlash>=60 creditsFlash=0
 if creditsFlash>30
 draw_set_color(c_yellow)
@@ -447,7 +509,7 @@ draw_set_color(c_white)
 creditsText=""
 creditsFlash=0;
 
-draw_text(160,320+16+round(creditsCameoY),"CAMEO CUSTOMERS")
+draw_text(160,320+16+round(creditsCameoY),_t11)
 draw_set_halign(fa_right)
 ////Credit Cameo Text
 var creditscameol=""+
@@ -497,7 +559,7 @@ var creditscameor="\n"+
 "\nBRADFLAKES"+
 "\nLILGAMERDUDE64"+
 "\nJM297"+
-"\nFLASHTRICKSTAR"+
+"\nNEOGENO450"+
 "\nPIGGYBANK"+
 "\nSTUNTMAN"+
 "\nJAMOART"+
@@ -551,7 +613,7 @@ else room_goto(rm_cutscenes)
 
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center) draw_set_color(c_white)
-draw_text_transformed(160,8,"SKIPPING",1.5,1.5,0)
+draw_text_transformed(160,8,_t15,1.5,1.5,0)
 draw_set_color(c_black)
 draw_rectangle(160-80,24,160+80,32,false)
 draw_set_color(c_white)

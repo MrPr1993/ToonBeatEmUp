@@ -61,6 +61,38 @@ if menuSelect=1 {StarSpace=120 StarY=116+8}
 if menuSelect=2 {StarSpace=120 StarY=116+16}
 if menuSelect=3 {StarSpace=136 StarY=116+24}
 
+var _t1="PAUSE"
+var _t2="RESUME"
+var _t3="RESTART"
+var _t4="SETTINGS"
+var _t5="QUIT"
+var _t6="ARE YOU SURE?"
+var _t7="NO "
+var _t8=" YES" 
+switch(global.Language)
+{
+case 1: //Espanol
+_t1="PAUSA"
+_t2="REASUMIR"
+_t3="REINICIAR"
+_t4="AJUSTES"
+_t5="SALIR"
+var _t6="ESTAS SEGURO?"
+var _t7="NO "
+var _t8=" SI"
+break;
+case 2: //Portuguese
+_t1="PAUSA"
+_t2="RETOMAR"
+_t3="REINICIAR"
+_t4="CONFIGURAÇÕES"
+_t5="SAIR"
+var _t6="TEM CERTEZA?"
+var _t7="NÃO "     
+var _t8=" SIM"
+break;
+}
+
 draw_set_color(c_black) draw_set_alpha(0.5)
 draw_rectangle(-2,-2,888,888,false)
 draw_set_color(c_white) draw_set_alpha(1)
@@ -74,12 +106,14 @@ draw_set_font(global.scorefont)
 draw_set_halign(fa_center)
 if AreYouSure=0
 {
-draw_text(160,120-24,"PAUSE")
-draw_text(160,120-8,"RESUME")
+	
+	
+draw_text(160,120-24,_t1)
+draw_text(160,120-8,_t2)
 if global.StageSelect=0 draw_set_color(c_dkgray)
-draw_text(160,120,"RESTART") draw_set_color(c_white)
-draw_text(160,120+8,"SETTINGS")
-draw_text(160,120+16,"QUIT")
+draw_text(160,120,_t3) draw_set_color(c_white)
+draw_text(160,120+8,_t4)
+draw_text(160,120+16,_t5)
 }
 
 if AreYouSure=1
@@ -90,11 +124,11 @@ if -key_left_pressed or key_right_pressed
 draw_set_color(c_black) draw_set_alpha(0.5)
 draw_rectangle(-2,-2,888,888,false)
 draw_set_color(c_white) draw_set_alpha(1)
-draw_text(160,120,"ARE YOU SURE?")
+draw_text(160,120,_t6)
 draw_set_halign(fa_right)
-draw_text(160,120+16,"NO ")
+draw_text(160,120+16,_t7)
 draw_set_halign(fa_left)
-draw_text(160,120+16," YES")
+draw_text(160,120+16,_t8)
 draw_sprite(spr_scorefont,43,-8+160-24+32*Sure,120+16)
 }
 

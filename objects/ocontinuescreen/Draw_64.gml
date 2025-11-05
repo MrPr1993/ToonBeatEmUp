@@ -3,6 +3,37 @@
 
 /// @description Insert description here
 // You can write your code in this editor
+var _t1="CREDIT"
+var _t2="INFINITE"
+var _t3="RESTART"
+var _t4="SETTINGS"
+var _t5="QUIT"
+var _t6="ARE YOU SURE?"
+var _t7="NO "
+var _t8=" YES" 
+switch(global.Language)
+{
+case 1: //Espanol
+_t1="CRÉDITO"
+_t2="INFINITO"
+_t3="REINICIAR"
+_t4="AJUSTES"
+_t5="SALIR"
+var _t6="ESTAS SEGURO?"
+var _t7="NO "
+var _t8=" SI"
+break;
+case 2: //Portuguese
+_t1="CRÉDITO"
+_t2="INFINITO"
+_t3="REINICIAR"
+_t4="CONFIGURAÇÕES"
+_t5="SAIR"
+var _t6="TEM CERTEZA?"
+var _t7="NÃO "     
+var _t8=" SIM"
+break;
+}
 
 	if TVfx!=9999
 {application_surface_draw_enable(false);
@@ -184,7 +215,7 @@ draw_sprite(spr_continue,0,160,48-24)
 draw_set_halign(fa_center)
 draw_set_font(global.scorefont)
 if global.Continues=-1
-draw_text(160,220,"CREDIT INFINITE")
+draw_text(160,220,string(_t1)+" "+string(_t2))
 else
 draw_text(160,220,"CREDIT "+string(global.Continues))
 }
@@ -509,9 +540,9 @@ draw_set_alpha(1)
 if optionSelectX!=0 optionSelectX-=20
 draw_set_color(c_gray)
 if optionPick=0 draw_set_color(c_white)
-draw_text(round(160-optionSelectX),120,"RESTART") draw_set_color(c_gray)
+draw_text(round(160-optionSelectX),120,_t3) draw_set_color(c_gray)
 if optionPick=1 draw_set_color(c_white)
-draw_text(round(160+optionSelectX),120+8,"QUIT") 
+draw_text(round(160+optionSelectX),120+8,_t5) 
 if optionSelectA<0.75 optionSelectA+=0.05
 draw_set_color(c_white)
 draw_set_halign(fa_left)

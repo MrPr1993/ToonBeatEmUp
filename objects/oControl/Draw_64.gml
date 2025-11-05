@@ -803,7 +803,17 @@ if pressStartTime=0 pressStartTime=2 else pressStartTime-=0.025
 if pressStart=0
 {
 if pressStartTime<1
-{draw_text(160,184,string_hash_to_newline("PRESS START"))
+{
+var _t1="PRESS START"
+switch(global.Language)
+{
+case 1: ///Espanol
+_t1="PRESSONE START"
+case 2: ///Portuguese
+_t1="PRESSIONE START"
+}	
+
+draw_text(160,184,string_hash_to_newline(_t1))
 }
 }
 else ///Select Menu
@@ -1396,6 +1406,15 @@ draw_command(2)
 draw_set_halign(fa_center)
 if characterSelReady=1
 {charselLerp=lerp(charselLerp,-6,0.1)
+var _t4="PRESS START TO PLAY"
+
+switch(global.Language)
+{
+case 2: ///Portuguese
+_t4="PRESSIONE START PARA JOGAR"
+break;
+}		
+
 draw_text(160+p5.introtextadd,44,_t4)
 }else charselLerp=lerp(charselLerp,0,0.1)
 
@@ -1414,6 +1433,16 @@ if exitroom!=0
 {
 draw_set_font(global.scorefont)
 draw_set_halign(fa_center) draw_set_color(c_white)
+
+var _t5="QUITTING..."
+
+switch(global.Language)
+{
+case 2:
+_t5="SAINDO…"
+break;
+}	
+
 draw_text_transformed(160,20,_t5,1,1,0)
 draw_set_color(c_black)
 draw_rectangle(160-80,24,160+80,32,false)
