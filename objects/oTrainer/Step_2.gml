@@ -43,12 +43,27 @@ if anim=0
 
 if tutorialwords
 {
+var _tt0="PERFECT!"
+var _tt1="GOOD JOB!"
+var _tt2="EXCELLENT!"
+var _tt3="NOT BAD!"
+var _tt4="VERY GOOD!"
+switch(global.Language)
+{
+case 2: ///Portuguese
+var _tt0="PERFEITO!"
+var _tt1="BOM TRABALHO!"
+var _tt2="EXCELENTE!"
+var _tt3="NADA MAL!"
+var _tt4="MUITO BOM!"
+break;
+}
 var _tuttext=choose(1,2,3,4);
-if _tuttext=0 {tutorialtext="PERFECT!" PlaySound(snd_olga4)}
-if _tuttext=1 {tutorialtext="GOOD JOB!" PlaySound(snd_olga5)}
-if _tuttext=2 {tutorialtext="EXCELLENT!" PlaySound(snd_olga6)}
-if _tuttext=3 {tutorialtext="NOT BAD!" PlaySound(snd_olga7)}
-if _tuttext=4 {tutorialtext="VERY GOOD!" PlaySound(snd_olga8)}
+if _tuttext=0 {tutorialtext=_tt0 PlaySound(snd_olga4)}
+if _tuttext=1 {tutorialtext=_tt1 PlaySound(snd_olga5)}
+if _tuttext=2 {tutorialtext=_tt2 PlaySound(snd_olga6)}
+if _tuttext=3 {tutorialtext=_tt3 PlaySound(snd_olga7)}
+if _tuttext=4 {tutorialtext=_tt4 PlaySound(snd_olga8)}
 
 tutorialwords=0;
 }

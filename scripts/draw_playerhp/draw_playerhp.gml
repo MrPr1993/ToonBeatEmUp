@@ -1,6 +1,19 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_playerhp(){
+var _t1="PRES.\nA OR B"
+var _t2="INSERTE\nMONEDA"
+var _t3="ESPERE\n"
+var _t4="GAME\nOVER"
+switch(global.Language)
+{
+case 2: ///Portuguese
+_t1="PRESS.\nA O B"
+_t2="INSERIRT\nMONEDA"
+_t3="AGUARDE\nWAIT"
+_t4="GAME\nOVER"
+}	
+
 	draw_set_halign(fa_left)
 draw_set_alpha(1) draw_set_color(c_white)
 d3d_transform_set_identity()
@@ -37,18 +50,7 @@ var _insertcoin=0;
 if oControl.nopleasewait=1
 {
 	
-var _t1="PRES.\nA OR B"
-var _t2="INSERTE\nMONEDA"
-var _t3="ESPERE\n"
-var _t4="GAME\nOVER"
-switch(global.Language)
-{
-case 2: ///Portuguese
-_t1="PRESS.\nA O B"
-_t2="INSERIRT\nMONEDA"
-_t3="AGUARDE\nWAIT"
-_t4="GAME\nOVER"
-}
+
 
 if  (input_player_connected(playerNO-1)) _insertcoin=1;
 

@@ -38,10 +38,18 @@ switch (dataSelect)
  case 1:
  hp=1;
 descleft=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":160LBS"
-descright=+string(_likesT)+":DINING,RABBITS\n"+string(_dislikesT)+":MISFORTUNE\n"+string(_hobbyT)+":PAINTING"
+descright=+string(_likesT)+":JANTAR,COELHOS\n"+string(_dislikesT)+":MISFORTUNE\n"+string(_hobbyT)+":PAINTING"
   charinfo_set(1,spr_viva_stand,1,animsetup_viva,draw_enemy,spr_playerpal,0,spr_playerface,0,"VIVA VEGAS",
     "LOVELY, BUT TEMPERAMENTAL, VIVA'S SINGING IS ELECTRIFYING IN MORE WAYS THAN ONE! THOUGH HER LUCK IS... SOUR...")
 	dataabilities="LIGHTNING,SING,BALLET,\nCOOKING,CHESS,FILMS"
+switch(global.Language)
+{
+case 2:
+descright=+string(_likesT)+":DINING,RABBITS\n"+string(_dislikesT)+":MISFORTUNE\n"+string(_hobbyT)+":PAINTING"
+desc="AMÁVEL, MAS TEMPERAMENTAL, A MELODIA DE VIVA É ELETRIZANTE EM MAIS DE UM SENTIDO! AINDA QUE SUA SORTE SEJA... MAGRA..."
+	dataabilities="LIGHTNING,SING,BALLET,\nCOOKING,CHESS,FILMS"
+	break;
+}
 break;
   case 2:
   hp=1;
@@ -50,14 +58,32 @@ break;
     charinfo_set(2,spr_hina_stand,1,animsetup_hina,draw_enemy,spr_playerpal,0,spr_playerface,1,"HINA TATSUO",
   "HEAD TENDS TO BE IN THE CLOUDS, BUT SHE'S GOT STRETCHINESS AND A DRAGON'S FIRE ON HER SIDE! BIZARRE...")
   dataabilities="FIRE,ELASTICITY,YOGA,\nPOEMS,FISHING,PINBALL"
+ switch(global.Language)
+{
+case 2:
+  descright=+string(_likesT)+":SEAFOOD,CATS\n"+string(_dislikesT)+":SPICE\n"+string(_hobbyT)+":NAPPING"
+desc="COM UMA CABEÇA QUE TENDE A ESTAR NAS NUVENS, MAS COM SUA FLEXIBILIDADE E AS CHAMAS DE UM DRAGÃO AO SEU LADO! BIZARRO..."
+  dataabilities="FIRE,ELASTICITY,YOGA,\nPOEMS,FISHING,PINBALL"
+	break;
+}
+  
 break;
   case 3:
   hp=1;
   descleft=string(_ageT)+":27\nNAT.:NIGERIA\n"+string(_heightT)+":6'0"+" "+string(_weightT)+":260LBS"
   descright=+string(_likesT)+":HELPING,OWLS\n"+string(_dislikesT)+":FROGS\n"+string(_hobbyT)+":WORKOUTS"
-    charinfo_set(3,spr_bahati_stand,1,animsetup_bahati,draw_enemy,spr_playerpal,0,spr_playerface,2,"BAHATI ABARA",
-	"LARGE N' HAMMY! SHE'S QUITE THE BRUISER DUE TO HER SIZE AND WRESTLING PROWESS. BUT UNDER THAT GIRTH LIES A BIG HEART.")
+ charinfo_set(3,spr_bahati_stand,1,animsetup_bahati,draw_enemy,spr_playerpal,0,spr_playerface,2,"BAHATI ABARA",
+"LARGE N' HAMMY! SHE'S QUITE THE BRUISER DUE TO HER SIZE AND WRESTLING PROWESS. BUT UNDER THAT GIRTH LIES A BIG HEART.")
   dataabilities="EARTH,WRESTLING,STAMINA,\nHISTORY,QUILTS,MEDICINE"
+  switch(global.Language)
+{
+case 2:
+  descright=+string(_likesT)+":HELPING,OWLS\n"+string(_dislikesT)+":FROGS\n"+string(_hobbyT)+":WORKOUTS"
+desc= "GRANDE E RECHONCHUDA! É UMA BAITA DE UMA BRUTAMONTE DEVIDO AO SEU TAMANHO E HABILIDADES MARCIAIS. MAS ABAIXO DE TANTOS MÚSCULOS SE ENCONTRA UM GRANDE CORAÇÃO."
+  dataabilities="EARTH,WRESTLING,STAMINA,\nHISTORY,QUILTS,MEDICINE"
+	break;
+}
+  
 break;
  case 4:
  hp=1;
@@ -66,7 +92,18 @@ break;
  charinfo_set(4,spr_sofia_stand,1,animsetup_sofia,draw_enemy,spr_playerpal,0,spr_playerface,3,"SOFIA MORENO",
 "AS SPICY AS SHE IS DARING, SOFIA PARTIES DOWN TO TRIP UP ENEMIES WITH FOOTWORK SO FAST, YOU'D THINK SHE'S THE WIND!")
   dataabilities="WIND,ACROBATICS,SPEED,\nGARDENING,BOUNCING,BREW"
+  
+   switch(global.Language)
+{
+case 2:
+ descright=+string(_likesT)+":PARTIES,DOGS\n"+string(_dislikesT)+":CHEATERS\n"+string(_hobbyT)+":GYMNASTICS"
+desc="TÃO PICANTE QUANTO OUSADA, SOFIA DERROTA SEUS INIMIGOS USANDO APENAS SEUS PARES DE PERNAS E COXAS TÃO VELOZES QUANTO O VENTO!"
+  dataabilities="WIND,ACROBATICS,SPEED,\nGARDENING,BOUNCING,BREW"
+	break;
+}
+  
 break;
+
 }
 charNO=0
 }

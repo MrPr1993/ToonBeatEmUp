@@ -29,6 +29,10 @@ frameParts=spr_painting_part
 descleft=""
 descright=""
 
+descleftT[30]=""
+descrightT[30]=""
+descT[30]=""
+
 OwnDescTest=0
 OwnDesc=""
 
@@ -166,7 +170,7 @@ arrowSel4=0
 
 dataabilitiesB="ABILITIES"
 dataabilities="ELECTRICITY,SINGING,\nCOOKING,CHESS,FILMS"
-
+dataabilitiesT[30]=""
 dataRowMax=4
 
 categoryNames="DIVAS"

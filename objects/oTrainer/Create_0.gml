@@ -4,6 +4,8 @@ z=0
 
 specialcheck[9]=0
 
+translated[9]=0
+
 image_speed=0
 
 trainz=0
