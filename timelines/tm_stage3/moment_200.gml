@@ -24,6 +24,8 @@ timeline_running=true
 with oControl{showMap=1
 alarm[0]=60 timecheck=-1}
 
+timer_set(1)
+
 
 en1=instance_create(662,176,oSwing) en1.canAttack=6 en1.isIdle=1 en1.alarm[1]=60
 en1.idleRange=90 

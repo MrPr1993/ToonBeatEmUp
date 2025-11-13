@@ -18,6 +18,6 @@ oPlayer.visible=0
 oPlayer.alarm[0]=0
 oPlayer.canControl=0
 
-
+timer_set(1)
 
 oControl.specialcheck0=90

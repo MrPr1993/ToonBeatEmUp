@@ -6,6 +6,8 @@ if oControl.allPlayersEdge and oControl.allPlayersMove
 oPlayer.canControl=0
 oPlayer.areaEntry=1
 
+timer_set(0)
+
 with oPlayer
 {
 key_up=0 key_down=0 key_left=0

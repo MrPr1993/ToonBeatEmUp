@@ -79,7 +79,7 @@ if oOctopus.anim=0 {specialanimscript=-1; AnimFrame=0 anim=0 image_index=0 canmo
 }
 }
 }
-
+timer_set(0)
 oControl.MusicFade=1 oControl.MusicFadeAdd=1
 specialSet8+=1
 timeline_position-=1

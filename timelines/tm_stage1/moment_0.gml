@@ -9,6 +9,8 @@ oControl.stageNext=rm_cutscene1
 with oControl
 {timecheck=alarm[0] alarm[0]=10000000}
 
+timer_set(0)
+
 oEnemySpawner.roomHSpd=4
 oEnemySpawner.roomMove=1
 

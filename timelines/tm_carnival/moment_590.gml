@@ -1,5 +1,5 @@
 if boss.canmove
-{oControl.time=99
+{oControl.time=99 timer_set(1)
 with bgsetter
 {y=-9999999
 image_alpha=1

@@ -5,7 +5,7 @@ else
 {
 oControl.tutorialTextTime=300
 
-
+timer_set(1)
 
 if oPlayer.ground=0
 {oViewTarget.x=0

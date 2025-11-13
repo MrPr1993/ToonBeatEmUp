@@ -9,7 +9,7 @@ with oPlayer
 y=196+16*controlNO
 }
 
-timer_set(1)
+//timer_set(1)
 
 if instance_number(oPlayer)!=1
 with oPlayer

@@ -1,5 +1,5 @@
 if oControl.allPlayersMove
-{
+{timer_set(0)
 with bgsetter
 {
 newscript=function()

@@ -1,5 +1,5 @@
 if !instance_exists(en1) and noextraenemies
-{oControl.time=99
+{oControl.time=99 timer_set(1)
 with oControl {//camMove=0 camMax=room_width
  goActive=1; ambushtime=0; alarm[1]=90 oControl.MusicFade=0 oControl.MusicFadeAdd=1 musicplaystart(msc_beach) 
 xGoCheck=2560}

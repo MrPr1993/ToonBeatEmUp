@@ -13,6 +13,8 @@ oPlayer.areaEntry=0
 oPlayer.hspeed=0
 oPlayer.canControl=1
 
+timer_set(1)
+
 with oBlock {y=ystart}	
 with oBlock image_yscale=2
 

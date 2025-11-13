@@ -4,7 +4,7 @@ if !instance_exists(boss)
 }
 else
 {
-if boss.dead=1 timer_set(0)
+if boss.anim=12 timer_set(0)
 timeline_position-=1
 }
 
