@@ -394,6 +394,17 @@ if AnimFrame>14.5
 	
 	}
 	
+////Special Intro
+if anim=101
+{sprite_index=spr_dragonmaiden_headhurt handL.x=-9999
+immune=1 
+if AnimFrame=0 {PlaySound(snd_explosion) oControl.quakeFXTime=10}
+lockZ=lerp(lockZ,0,0.1)
+z=lockZ
+AnimFrame++;
+if AnimFrame>120 {lockX=x lockY=y lockZ=0 immune=0 anim=0 lockPos=1 alarm[1]=100 canmove=1}
+}
+	
 	if dead=0
 	{
 	selfatk.x=x+atkAddX

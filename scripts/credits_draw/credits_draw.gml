@@ -590,7 +590,8 @@ var creditscameor="\n"+
 "\nYINSEIRYU"+
 "\nPSYCHOJOSH"+
 "\nANASTASIASOLSTICE"+
-"\nROLYHOLYBOLY"
+"\nROLYHOLYBOLY"+
+"\nGEARGAMERJONESY"
 
 draw_text(320-4,320+16+round(creditsCameoY),creditscameor)
 draw_set_halign(fa_left)

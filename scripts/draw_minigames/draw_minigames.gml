@@ -246,7 +246,7 @@ if global.MinigameSel3=3 {MenuText=_tt11 if global.MiniGameUnlock4=0 MenuText="L
 global.StageGoing=rm_singgame}
 if global.MinigameSel3=4 {MenuText=_tt12 if global.MiniGameUnlock5=0 MenuText="LOCKED"
 global.StageGoing=rm_bullstage}
-if global.MinigameSel3=5 {MenuText=_tt12 if global.MiniGameUnlock6=0 MenuText="LOCKED"
+if global.MinigameSel3=5 {MenuText=_tt13 if global.MiniGameUnlock6=0 MenuText="LOCKED"
 global.StageGoing=rm_hammergame}
 }	
 
