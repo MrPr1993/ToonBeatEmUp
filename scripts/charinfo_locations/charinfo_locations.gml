@@ -22,10 +22,13 @@ descright=""
 	
    switch(global.Language)
 {
+case 1:
+name="CALLE DEL CENTRO"
+desc="Las divas estaban listas para actuar aquí. Pero gracias a la inacción del alcalde, esta ciudad se ha convertido en un lugar sórdido e indómito, un foco de peleas entre delincuentes de todo tipo, ¡así que mantente alerta!"
+break;
 case 2:
 name="VIELA DISTRITAL"
 desc="As divas estavam programadas para se apresentar aqui. Mas, graças à inação do prefeito, esta cidade se tornou um antro decadente e violento, palco de brigas entre bandidos de todos os tipos, então fique atento!"
-
 break;
 }
 	
@@ -38,8 +41,13 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="AEROPUERTO EVERFLIGHT"
+desc="Aviones construidos y mantenidos de manera barata están estacionados aquí. Hay rumores de frecuentes accidentes, pero se dice que los superiores sobornaron a las autoridades para mantenerlos ocultos."
+break;	
+
 case 2:
-name="ROLÊ AÉRIO"
+name="AÉRIO EVERFLIGHT"
 desc="Aqui ficam estacionados aviões de construção e manutenção baratas. Há rumores de frequentes acidentes, mas dizem que os superiores subornaram as autoridades para abafar o caso."
 break;
 }	
@@ -53,8 +61,11 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+desc="Este crucero de lujo transporta a la crema de la sociedad... y es testigo de una pelea desordenada a bordo. Algunos ya están presentando quejas sobre estas condiciones de viaje."
+break;	
+
 case 2:
-name="CRUZEIRO MARÍTIMO"
 desc="Este cruzeiro de luxo transporta a nata da sociedade... e testemunha uma briga desordeira a bordo. Alguns já estão apresentando queixas sobre essas condições de viagem."
 break;
 }		
@@ -68,8 +79,10 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+desc="Este rápido tren expreso es frecuentemente objetivo de robos por bandoleros de todo tipo. Aunque informes recientes han señalado un aumento en su seguridad para enfrentar a los delincuentes."
+break;	
 case 2:
-name="EL LOCO DOS"
 desc="Este trem expresso de alta velocidade é frequentemente alvo de roubos por bandidos de todos os tipos. Embora relatos recentes tenham apontado um reforço em sua segurança para lidar com os criminosos."
 break;
 }		
@@ -83,6 +96,10 @@ descright=""
 	
    switch(global.Language)
 {
+case 1:
+name="CEMENTERIO MARI"
+desc="Este inquietante cementerio tiene un camino que conduce a una mansión antigua aún más aterradora. Los visitantes tienden a irse decapitados... Aparentemente es popular entre adolescentes en busca de emociones."
+break;
 case 2:
 name="TUMBA DA MARI"
 desc="Este cemitério perturbador tem um caminho que leva a uma antiga mansão ainda mais assustadora. Os visitantes costumam sair decapitados… Aparentemente, é um local popular entre adolescentes em busca de emoções fortes."
@@ -98,6 +115,10 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="GRANDE MUSEO"
+desc="Este museo es muy conocido por sus artefactos y exposiciones. Lamentablemente, se planea trasladar la exposición egipcia a otro museo. Espero que no ocurra nada loco…"
+break;
 case 2:
 name="GRANDE MUSEU"
 desc="Este museu é muito conhecido por seus artefatos e exposições. Infelizmente, a coleção egípcia será transferida para outro museu. Espero que nada de grave aconteça…"
@@ -113,8 +134,10 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+desc="Un casino oriental. Antes era una antigua fortaleza, pero las Hermanas Oni la transformaron después de ganarla en una apuesta, convirtiéndola en un lugar de luces, dinero y mercenarios."
+break;
 case 2:
-name="LUCKY DOJO CASINO"
 desc="Um cassino oriental. Outrora uma antiga fortaleza, foi transformada pelas Irmãs Oni após ganhá-la em uma aposta, tornando-se um lugar de luzes, dinheiro e mercenários."
 break;
 }		
@@ -128,6 +151,11 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="PANTANOS MUERTOS"
+desc="Este pantano espeluznante en realidad ofrece relajantes paseos en bote. Solo no bebas el agua y mantente alejado tanto de las aguas infestadas de cocodrilos como de la aldea de zombis de la bruja."
+break;	
+
 case 2:
 name="PÂNTANOS MORTOS"
 desc="Este pântano misterioso oferece passeios de barco relaxantes. Só não beba a água e mantenha-se longe das águas infestadas de crocodilos e da vila zumbi da bruxa."
@@ -143,6 +171,11 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="CARNAVAL CUAC"
+desc="Transmitido a un pato por un oscuro maestro de ceremonias, ganó más popularidad con sus exhibiciones más salvajes, su carpa de circo más alocada y un personal de juguetes vivos totalmente no disgruntled."
+break;	
+
 case 2:
 name="CARNAVAL QUÁ-QUÁ"
 desc="Herdado de um mestre de cerimônias duvidoso e passado para um pato, o circo ganhou ainda mais popularidade com suas exibições mais extravagantes, sua tenda mais maluca e uma equipe de brinquedos vivos que, no mínimo, não demonstravam nenhum descontentamento."
@@ -158,8 +191,12 @@ descright=""
 	
    switch(global.Language)
 {
+case 1:
+name="PLAYA ODISEA"
+desc="Una trampa turística tropical con una cala donde se dice que reside una legendaria bruja del mar en lo profundo con su kraken mascota… Camina con cuidado…"
+break;
 case 2:
-name="COSTA TROPICAL"
+name="PRAIA ODYSSEY"
 desc="Uma armadilha turística tropical com uma enseada onde dizem que reside uma lendária bruxa do mar com seu kraken de estimação… Cuidado ao caminhar…"
 break;
 }		
@@ -173,6 +210,10 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="NAVE MARCIANA"
+desc="Un OVNI dirigido por una banda de piratas espaciales marcianos que abducen personas para investigarlas y venderlas al mejor postor. ¡Qué codicia galáctica!"
+break;
 case 2:
 name="DISCO MARCIANO"
 desc="Um OVNI operado por um bando de piratas espaciais marcianos que sequestram pessoas para pesquisa e para vendê-las ao maior lance. Que ganância galáctica!"
@@ -188,6 +229,10 @@ descright=""
 	
    switch(global.Language)
 {
+case 1:
+name="REINO DEL MAR"
+desc="Para sobrevivir en este dominio acuático, debes demostrar tu fortaleza interactuando con sus habitantes en la cultura de “beat ‘em up”. ¡Según la ley del príncipe: el poder es belleza!"
+break;
 case 2:
 name="MAR DO PRÍNCIPE"
 desc="Para sobreviver neste domínio aquático, você precisa provar sua força enfrentando seus habitantes na cultura do 'bate-bate'. Pela lei do príncipe: Poder é beleza!"
@@ -203,6 +248,10 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="RUINAS DEL DESIERTO"
+desc="Se rumorea que escondido en medio de este desierto y sus brutales tormentas de arena yace un antiguo templo, donde duerme un tesoro misterioso…"
+break;
 case 2:
 name="DESERTO ARDENTE"
 desc="Dizem que, escondido em meio a este deserto e suas brutais tempestades de areia, jaz um antigo templo, onde repousa um tesouro misterioso…"
@@ -213,14 +262,17 @@ break;
  case 14:
 descright=""
   charinfo_set(1,spr_viva_stand,1,animsetup_viva,draw_enemy,spr_playerpal,0,spr_playerface,14,"MT.REFLECT",
-    "Em algum lugar nas alturas gélidas desta montanha, existe um palácio imaculado onde se diz que uma imperatriz e seu povo viveram por muito tempo e em prosperidade.")
+    "Somewhere in the icy heights of this mountain, there is an immaculate palace where it is said that an empress and her people lived for a long time in prosperity.")
 	dataabilities=""
 
    switch(global.Language)
 {
+case 1:
+desc="En algún lugar en las alturas heladas de esta montaña, hay un palacio inmaculado donde se dice que una emperatriz y su pueblo vivieron durante mucho tiempo en prosperidad."
+break;
+
 case 2:
-name="MT.REFLECT"
-desc="Dizem que, escondido em meio a este deserto e suas brutais tempestades de areia, jaz um antigo templo, onde repousa um tesouro misterioso…"
+desc="Em algum lugar nas alturas gélidas desta montanha, existe um palácio imaculado onde se diz que uma imperatriz e seu povo viveram por muito tempo e em prosperidade."
 break;
 }		
 
@@ -233,6 +285,10 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="MINAS DE DIAMANTES"
+desc="Estas cuevas parecen un simple sitio de excavación de goblins a primera vista, pero quienes se adentren más profundo se encontrarán con una sorpresa… Tan grande que puede que nunca salgan…"
+break;
 case 2:
 name="MINAS DE DIAMANTES"
 desc="À primeira vista, essas cavernas parecem um simples sítio de escavação de goblins, mas aqueles que se aventurarem mais fundo encontrarão uma surpresa… Uma surpresa tão grande que talvez nunca mais queiram sair…"
@@ -249,6 +305,10 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="VILLA NUBE"
+desc="Una tierra en el cielo tan extraña que parece un sueño. ¿Es un sueño? ¿O es real? ¿Es real también el castillo gobernado por una gigantesca dama dragón? Tal vez nunca lo sepamos…"
+break;
 case 2:
 name="VILLA NUBE"
 desc="Uma terra suspensa no céu, tão bizarra que parece um sonho. Será um sonho? Ou será real? Será que o castelo governado por uma gigantesca dama dragão também é real? Talvez nunca saibamos…"
@@ -264,6 +324,10 @@ descright=""
 
    switch(global.Language)
 {
+case 1:
+name="LABORATORIO DE FRANS"
+desc="Una enorme instalación dirigida por Dr. Fran y mantenida gracias a la financiación obtenida de la investigación sobre descubrimientos salvajes como gemas mágicas, artefactos y especímenes orgánicos."
+break;
 case 2:
 name="LABBORATÓRIO DO FRANS"
 desc="Uma enorme instalação administrada pela Dr. Fran e mantida por financiamento obtido através de pesquisas sobre descobertas na natureza, como gemas mágicas, artefatos e espécimes orgânicos."
@@ -279,6 +343,10 @@ descright=""
 	
    switch(global.Language)
 {
+case 1:
+name="EL EMPERADOR BANDIDO"
+desc="El dirigible de Van Bad, esta aeronave sorprendentemente rápida les ha permitido cometer innumerables crímenes por todo el mundo mientras permanecen justo fuera del alcance de la ley."
+break;
 case 2:
 name="O IMPERADOR BANDIDO"
 desc="O dirigível de Van Bad, essa aeronave surpreendentemente veloz, permitiu que eles cometessem inúmeros crimes em todo o mundo, permanecendo fora do alcance da lei."

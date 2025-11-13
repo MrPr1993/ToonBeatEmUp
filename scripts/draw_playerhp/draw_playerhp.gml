@@ -1,17 +1,24 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function draw_playerhp(){
-var _t1="PRES.\nA OR B"
-var _t2="INSERTE\nMONEDA"
-var _t3="ESPERE\n"
+var _t1="PRESS\nA OR B"
+var _t2="INSERT\nCOIN"
+var _t3="PLEASE\nWAIT"
 var _t4="GAME\nOVER"
 switch(global.Language)
 {
+case 1:
+_t1="PRESIONE\nA O B"
+_t2="INSERTE\nMONEDA"
+_t3="ESPERE\n"
+_t4="GAME\nOVER"
+break;
 case 2: ///Portuguese
 _t1="PRESS.\nA O B"
 _t2="INSERIRT\nMONEDA"
-_t3="AGUARDE\nWAIT"
+_t3="POR FAVOR\nAGUARDE"
 _t4="GAME\nOVER"
+break;
 }	
 
 	draw_set_halign(fa_left)

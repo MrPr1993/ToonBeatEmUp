@@ -80,6 +80,27 @@ altresult2Tc=-1
 altresult2Td=-1
 
 resulttext3="TIME"
+
+var _tt1="BOSS"
+var _tt2="VITALS"
+var _tt3="TIME"
+switch(global.Language)
+{
+case 1:
+_tt1="JEFE"
+_tt2="VITALES"
+_tt3="TIEMPO"
+break;
+case 2:
+_tt1="CHEFE"
+_tt2="VITAIS"
+_tt3="TEMPO"
+break;
+}
+resulttext1=_tt1
+resulttext2=_tt2
+resulttext3=_tt3
+
 altresult3=-1
 AltScore1=0
 AltScore2=0

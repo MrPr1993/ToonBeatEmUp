@@ -11,6 +11,10 @@ var _t5="QUIT"
 var _t6="ARE YOU SURE?"
 var _t7="NO "
 var _t8=" YES" 
+var _t9="NEW RECORD!"
+var _t10="CHEAT PENALTY: -"
+var _t11="STAGE SCORE:"
+
 switch(global.Language)
 {
 case 1: //Espanol
@@ -19,9 +23,12 @@ _t2="INFINITO"
 _t3="REINICIAR"
 _t4="AJUSTES"
 _t5="SALIR"
-var _t6="ESTAS SEGURO?"
-var _t7="NO "
-var _t8=" SI"
+_t6="ESTAS SEGURO?"
+_t7="NO "
+_t8=" SI"
+_t9="NUEVO RECORD!"
+_t10="PENALIZACIÓN POR TRAMPA: -"
+_t11="PUNTOS DE ETAPA:"
 break;
 case 2: //Portuguese
 _t1="CRÉDITO"
@@ -29,9 +36,12 @@ _t2="INFINITO"
 _t3="REINICIAR"
 _t4="CONFIGURAÇÕES"
 _t5="SAIR"
-var _t6="TEM CERTEZA?"
-var _t7="NÃO "     
-var _t8=" SIM"
+_t6="TEM CERTEZA?"
+_t7="NÃO "     
+_t8=" SIM"
+_t9="NOVO RECORD!"
+_t10="PENALIDADE DE TRAPAÇA: -"
+_t11="PONTUAÇA DO PALCO:"
 break;
 }
 
@@ -350,7 +360,10 @@ draw_text(160,220,""+string_hash_to_newline(string(continueStageScore)))
 
 if newrecord=1 {draw_set_halign(fa_center)
 newrecordframe-=0.25 if newrecordframe<0 newrecordframe=2 if newrecordframe<1 draw_set_color(c_red) else draw_set_color(c_yellow)
-draw_text_transformed(160,220-8,"NEW RECORD!",0.75,1,0)
+
+
+
+draw_text_transformed(160,220-8,_t9,0.75,1,0)
 }
 
 draw_set_halign(fa_center)
@@ -359,12 +372,12 @@ if global.MenuGlobal=0 or global.MenuGlobal=1
 if cheatpenalty!=0
 {
 	
-draw_text_transformed(160,90,"CHEAT PENALTY: -"+string(cheatpenalty),0.75,1,0)
+draw_text_transformed(160,90,string(_t10)+string(cheatpenalty),0.75,1,0)
 }
 
 draw_set_color(c_white)
 draw_set_halign(fa_right)
-draw_text_transformed(160,220,"STAGE SCORE:",0.75,1,0)
+draw_text_transformed(160,220,_t11,0.75,1,0)
 }
 }
 

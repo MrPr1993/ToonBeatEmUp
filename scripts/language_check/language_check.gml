@@ -72,7 +72,7 @@ case 2: //PORTUGUÊSE
 languagetext[0]="LUTE EM TODOS OS NÍVEIS NO MODO ARCADE!"
 languagetext[1]="MODO ARCADE"
 languagetext[2]="SELECIONE UM ESTÁGIO PARA REJOGAR!"
-languagetext[3]="SELEÇÃO DE FASE"
+languagetext[3]="SELEÇÃO DE PALCO"
 languagetext[4]="VEJA O QUE VOCÊ GANHOU NO JOGO!"
 languagetext[5]="CONQUISTAS"
 languagetext[6]="RECONFIGURE SEU JOGO!"

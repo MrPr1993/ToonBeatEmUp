@@ -102,7 +102,7 @@ if AnimFrame>2.5 {image_index=2  AnimFrame+=0.25}
 {
 	if AnimFrame=0
 	PlaySound(snd_franki6)
-	damage=0 MoveType=0
+	damage=0 MoveType=0 
 	if AnimFrame=0 sprite_index=spr_franki_shoulder
 	if AnimFrame>1 sprite_index=spr_franki_grab
 
@@ -143,8 +143,7 @@ else
 targetID.x=x
 targetID.y=y
 targetID.z=z
-with targetID
-{image_index=4}
+with targetID {image_index=4}
 }
 }	
 	if AnimFrame=0

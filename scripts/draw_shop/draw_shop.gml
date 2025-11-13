@@ -1094,8 +1094,8 @@ break;
 	if shopHelloR=1 shopDesc="     SEE YA!" 
 	if shopHelloR=2 shopDesc="     SO LONG!" 
 	if shopHelloR=3 shopDesc="     GOODBYE!" 
-	shopAltFace=3 shopName="" shopCost=""}
-
+	shopAltFace=3 shopName="" shopCost=""
+	
 switch(global.Language)
 {
 case 2: ///Portuguese
@@ -1105,6 +1105,10 @@ case 2: ///Portuguese
 	if shopHelloR=3 shopDesc="      ADEUS!" 	
 break;	
 }
+	
+	}
+
+
 
 }
 else

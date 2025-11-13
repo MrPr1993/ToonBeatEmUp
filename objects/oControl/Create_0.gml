@@ -625,8 +625,9 @@ enemyShowTime=0
 if !variable_global_exists("timefont")
 {
 global.timefont=font_add_sprite_ext(spr_timefont, "0123456789", false, 0);
-global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,&△◯╳◻Ñ¡ÁÉÍÓÚÀÈÌÒÙÃẼĨÕŨÂÊÎÔÛËͶЫЭюЯбвГДЖзкЛмнптфЦЧШЩЪьÇ", false, 0);
+global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,&△◯╳◻Ñ¡ÁÉÍÓÚÀÈÌÒÙÃẼĨÕŨÂÊÎÔÛËͶЫЭюЯбвГДЖзкЛмнптфЦЧШЩЪьÇç", false, 0);
 }
+
 
 if !variable_global_exists("ScreenSize")
 global.ScreenSize=0
@@ -719,15 +720,35 @@ bossID=-1
 bossMaxHP=2
 stageclearMusic=1
 stageclearfade=0
-resulttext1="BOSS"
+if !variable_global_exists("Language") global.Language=0;
+var _tt1="BOSS"
+var _tt2="VITALS"
+var _tt3="TIME"
+switch(global.Language)
+{
+case 1:
+_tt1="JEFE"
+_tt2="VITALES"
+_tt3="TIEMPO"
+break;
+case 2:
+_tt1="CHEFE"
+_tt2="VITAIS"
+_tt3="TEMPO"
+break;
+}
+
+resulttext1=_tt1
 altresult1=-1
-resulttext2="VITALS"
+
+resulttext2=_tt2
 altresult2=-1
 altresult2a=-1
 altresult2b=-1
 altresult2c=-1
 altresult2d=-1
-resulttext3="TIME"
+
+resulttext3=_tt3
 altresult3=-1
 AltScore1=0
 AltScore2=0

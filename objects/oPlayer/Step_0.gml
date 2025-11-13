@@ -68,6 +68,9 @@ PlaySound(DeathCry)
 if weaponLife<=0 and spawnID!=-1 and canmove=1 and weaponIsGun=0
 event_user(1)
 
+if dead=1 or hp<=0 or anim=9
+event_user(1)
+
 if weaponCanFlash=0 weaponFlash=2
 else
 {

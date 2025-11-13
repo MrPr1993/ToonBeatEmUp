@@ -45,15 +45,14 @@ descrightT[0]=string(_likesT)+":CHICKENS,STEALING\n"+string(_dislikesT)+":DOGS\n
 dataabilitiesT[0]="Bruising,Kicking,Biking"
 descT[0]="Just your run of the mill small fry burglar, but stay sharp! They come in groups!"
 
-//descrightT[2]=string(_likesT)+":CHICKENS,STEALING\n"+string(_dislikesT)+":DOGS\n"+string(_hobbyT)+":Biking"
-//dataabilitiesT[2]="Bruising,Kicking,Biking"
-//descT[2]="Só um trombadinha qualquer, mas fique atento! Eles vêm em grupos!"
+descrightT[2]=string(_likesT)+":CHICKENS,STEALING\n"+string(_dislikesT)+":DOGS\n"+string(_hobbyT)+":Biking"
+dataabilitiesT[2]="Bruising,Kicking,Biking"
+descT[2]="Só um trombadinha qualquer, mas fique atento! Eles vêm em grupos!"
 
 
   charinfo_set(5,spr_burglar_stand,3,animsetup_burglar,draw_enemy,spr_enemypal,2,spr_enemyface,1,"MR.BURG",
 descT[global.Language])
 
-descleft=descleftT[global.Language]
 descright=descrightT[global.Language]
 dataabilities=dataabilitiesT[global.Language]
 
