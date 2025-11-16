@@ -32,6 +32,7 @@ descright=""
 descleftT[30]=""
 descrightT[30]=""
 descT[30]=""
+descabsT[30]=""
 
 OwnDescTest=0
 OwnDesc=""

@@ -6,10 +6,14 @@ timerset=argument0
 if timerset=0
 {
 with oControl
-{nopleasewait=0 timecheck=alarm[0] alarm[0]=10000000}}
+{if instance_exists(oPlayer) with oPlayer {recovery=9999 recoveryThrow=9999}
+	
+nopleasewait=0 timecheck=alarm[0] alarm[0]=10000000}}
 else
 with oControl
-{nopleasewait=1
+{
+if instance_exists(oPlayer) with oPlayer {recovery=2 recoveryThrow=2}
+nopleasewait=1
 alarm[0]=60
 }
 

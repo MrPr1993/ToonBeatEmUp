@@ -38,16 +38,22 @@ switch (dataSelect)
  case 1:
  hp=1;
 descleft=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":160LBS"
-descright=+string(_likesT)+":JANTAR,COELHOS\n"+string(_dislikesT)+":MISFORTUNE\n"+string(_hobbyT)+":PAINTING"
+descright=+string(_likesT)+":DINING,RABBITS\n"+string(_dislikesT)+":MISFORTUNE\n"+string(_hobbyT)+":PAINTING"
   charinfo_set(1,spr_viva_stand,1,animsetup_viva,draw_enemy,spr_playerpal,0,spr_playerface,0,"VIVA VEGAS",
     "LOVELY, BUT TEMPERAMENTAL, VIVA'S SINGING IS ELECTRIFYING IN MORE WAYS THAN ONE! THOUGH HER LUCK IS... SOUR...")
 	dataabilities="LIGHTNING,SING,BALLET,\nCOOKING,CHESS,FILMS"
 switch(global.Language)
 {
+case 1:
+descright=+string(_likesT)+":CENANDO,CONEJOS\n"+string(_dislikesT)+":MISFORTUNA\n"+string(_hobbyT)+":PINTANDO"
+//desc="AMÁVEL, MAS TEMPERAMENTAL, A MELODIA DE VIVA É ELETRIZANTE EM MAIS DE UM SENTIDO! AINDA QUE SUA SORTE SEJA... MAGRA..."
+	dataabilities="RAIO,CANTAR,BALÉ,\nCOZINHAR,XADREZ,FILMES"
+	break;
+
 case 2:
-descright=+string(_likesT)+":DINING,RABBITS\n"+string(_dislikesT)+":MISFORTUNE\n"+string(_hobbyT)+":PAINTING"
+descright=+string(_likesT)+":JANTAR,COELHOS\n"+string(_dislikesT)+":DESGRAÇA\n"+string(_hobbyT)+":PINTURA"
 desc="AMÁVEL, MAS TEMPERAMENTAL, A MELODIA DE VIVA É ELETRIZANTE EM MAIS DE UM SENTIDO! AINDA QUE SUA SORTE SEJA... MAGRA..."
-	dataabilities="LIGHTNING,SING,BALLET,\nCOOKING,CHESS,FILMS"
+	dataabilities="RAIO,CANTAR,BALÉ,\nCOZINHAR,XADREZ,FILMES"
 	break;
 }
 break;
@@ -60,10 +66,18 @@ break;
   dataabilities="FIRE,ELASTICITY,YOGA,\nPOEMS,FISHING,PINBALL"
  switch(global.Language)
 {
+case 1:
+  descleft=string(_ageT)+":DRAGÓN\nNAT.:JAPÓN\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":100LBS"
+  descright=+string(_likesT)+":MARISCOS,GATOS\n"+string(_dislikesT)+":ESPECIA\n"+string(_hobbyT)+":SIESTAS"
+//desc="COM UMA CABEÇA QUE TENDE A ESTAR NAS NUVENS, MAS COM SUA FLEXIBILIDADE E AS CHAMAS DE UM DRAGÃO AO SEU LADO! BIZARRO..."
+  dataabilities="FUEGO,ELASTICIDAD,YOGA,\nPOEMAS,PESCA,PINBALL"
+	break;	
+
 case 2:
-  descright=+string(_likesT)+":SEAFOOD,CATS\n"+string(_dislikesT)+":SPICE\n"+string(_hobbyT)+":NAPPING"
+  descleft=string(_ageT)+":DRAGÃO\nNAT.:JAPÃO\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":100LBS"
+  descright=+string(_likesT)+":MARISCOS,GATOS\n"+string(_dislikesT)+":ESPECIARIAS\n"+string(_hobbyT)+":COSTINHO"
 desc="COM UMA CABEÇA QUE TENDE A ESTAR NAS NUVENS, MAS COM SUA FLEXIBILIDADE E AS CHAMAS DE UM DRAGÃO AO SEU LADO! BIZARRO..."
-  dataabilities="FIRE,ELASTICITY,YOGA,\nPOEMS,FISHING,PINBALL"
+  dataabilities="FOGO,ELASTICIDADE,IOGA,\nPOEMAS,PESCA,PINBALL"
 	break;
 }
   
@@ -77,10 +91,15 @@ break;
   dataabilities="EARTH,WRESTLING,STAMINA,\nHISTORY,QUILTS,MEDICINE"
   switch(global.Language)
 {
+case 1:
+  descright=+string(_likesT)+":AYUDAS,BÚHOS\n"+string(_dislikesT)+":RANAS\n"+string(_hobbyT)+":EJERCISIOS"
+//desc= "GRANDE E RECHONCHUDA! É UMA BAITA DE UMA BRUTAMONTE DEVIDO AO SEU TAMANHO E HABILIDADES MARCIAIS. MAS ABAIXO DE TANTOS MÚSCULOS SE ENCONTRA UM GRANDE CORAÇÃO."
+  dataabilities="TIERRA,LUCHA,RESISTENCIA,\nHISTORIA,COLCHAS,MEDICINA"
+
 case 2:
-  descright=+string(_likesT)+":HELPING,OWLS\n"+string(_dislikesT)+":FROGS\n"+string(_hobbyT)+":WORKOUTS"
+  descright=+string(_likesT)+":AJUDANDO,CORUJAS\n"+string(_dislikesT)+":SAPOS\n"+string(_hobbyT)+":EXERCÍCIOS"
 desc= "GRANDE E RECHONCHUDA! É UMA BAITA DE UMA BRUTAMONTE DEVIDO AO SEU TAMANHO E HABILIDADES MARCIAIS. MAS ABAIXO DE TANTOS MÚSCULOS SE ENCONTRA UM GRANDE CORAÇÃO."
-  dataabilities="EARTH,WRESTLING,STAMINA,\nHISTORY,QUILTS,MEDICINE"
+  dataabilities="TERRA,LUTA LIVRE,RESISTÊNCIA,\nHISTÓRIA,COLCHA,MEDICINA"
 	break;
 }
   
@@ -95,10 +114,16 @@ break;
   
    switch(global.Language)
 {
+case 1:
+ descright=+string(_likesT)+":FIESTAS,PERROS\n"+string(_dislikesT)+":TRAMPOSOS\n"+string(_hobbyT)+":GIMNASIAS"
+//desc="TÃO PICANTE QUANTO OUSADA, SOFIA DERROTA SEUS INIMIGOS USANDO APENAS SEUS PARES DE PERNAS E COXAS TÃO VELOZES QUANTO O VENTO!"
+  dataabilities="VIENTO,ACROBACIAS,VELOCIDAD,\nJARDINERÍA,SALTOS,CERVEZA"
+	break;	
+
 case 2:
- descright=+string(_likesT)+":PARTIES,DOGS\n"+string(_dislikesT)+":CHEATERS\n"+string(_hobbyT)+":GYMNASTICS"
+ descright=+string(_likesT)+":FESTAS,CACHORROS\n"+string(_dislikesT)+":TRAPACEIRAS\n"+string(_hobbyT)+":GINÁSTICAS"
 desc="TÃO PICANTE QUANTO OUSADA, SOFIA DERROTA SEUS INIMIGOS USANDO APENAS SEUS PARES DE PERNAS E COXAS TÃO VELOZES QUANTO O VENTO!"
-  dataabilities="WIND,ACROBATICS,SPEED,\nGARDENING,BOUNCING,BREW"
+  dataabilities="VENTO,ACROBACIAS,VELOCIDADE,\nJARDINAGEM,SALTO,CERVEJA"
 	break;
 }
   
