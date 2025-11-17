@@ -14,7 +14,7 @@ function enemy_data() {
 	enemyPortraitSpr=spr_enemyface
 	enemyPortraitIndex=1
 
-	targetEnemy=oPlayer
+	targetEnemy=instance_nearest(x,y,oPlayer)
 	defense=1
 
 idlestyle=0

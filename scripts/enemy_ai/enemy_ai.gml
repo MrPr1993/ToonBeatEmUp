@@ -3,8 +3,24 @@ function enemy_ai() {
 	if reFocusTime=0
 	{
 	if targetEnemy=-1
-	if oPlayer.dead=0
-	targetEnemy=oPlayer
+	{
+	
+harmed=noone
+var _list = ds_list_create();
+var _num = collision_rectangle_list(oControl.camX, oControl.camY, oControl.camX+320,oControl.camY+240, oPlayer, false,true, _list, true);
+if (_num > 0)
+{for (var i = 0; i < _num; ++i;)
+{harmed=_list[| i];
+if harmed!=noone
+if harmed.hp>0 and harmed.ContinueMode=0
+{
+targetEnemy=harmed.id
+}
+}
+}
+ds_list_destroy(_list);	
+	
+	}
 	////////AI SETUP
 	{		if leaveMode=1 
 		
@@ -47,6 +63,10 @@ else
 	fight_target(oEnemy1)
 	else {targetEnemy=-1 exit;}
 	}
+	
+	if targetEnemy.object_index=oPlayer
+	if targetEnemy.hp<=0 or targetEnemy.ContinueMode!=0
+	{targetEnemy=-1; exit;}
 
 
 	if hurt=0 and canmove=1 and oControl.ignore=0 and targetEnemy.dead=0

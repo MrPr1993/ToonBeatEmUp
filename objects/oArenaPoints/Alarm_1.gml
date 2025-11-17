@@ -11,6 +11,13 @@ var _t3=" WINS!"
 
 switch(global.Language)
 {
+
+case 1:
+var _t1="EMPATE"
+var _t2="BONUS"
+var _t3=" GANA!"
+break;
+
 case 2:
 var _t1="EMPATE"
 var _t2="BÔNUS"

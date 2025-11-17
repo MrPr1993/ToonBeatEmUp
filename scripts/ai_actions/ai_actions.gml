@@ -49,6 +49,7 @@ if canAttack!=7 and canAttack!=8
 	AIchoose=0
 
 	if hurt=0 and targetEnemy.ignore=0 and (targetEnemy.hurt=0 or (targetEnemy.anim=30 or targetEnemy.anim=31 ))
+and targetEnemy.id!=id
 	{
 	if x=clamp(x,targetX-rangeAtk,targetX+rangeAtk)
 	if y=clamp(y,targetY-rangeAtk*0.1,targetY+rangeAtk*0.1)
