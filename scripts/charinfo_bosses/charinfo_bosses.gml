@@ -613,12 +613,12 @@ descabsT[0]="FIRE BREATH,\nCLEANING,GARDENING"
 
 
 descT[1]=  "A maiden from the clouds looking for true love. But failing to find suitors keeps her in a terrible mood."
-descleftT[1]=string(_ageT)+":18\nNAT.:CLOUDSVILLE\n"+string(_heightT)+":50'0"+" "+string(_weightT)+":10000LBS"
+descleftT[1]=string(_ageT)+":18\nNAT.:VILLA NUBE\n"+string(_heightT)+":50'0"+" "+string(_weightT)+":10000LBS"
 descrightT[1]=string(_likesT)+":AMOR,ROMANCE\n"+string(_dislikesT)+":INSECTOS\n"+string(_hobbyT)+":TEJIDO"
 descabsT[1]="ALIENTO DE FUEGO,\nLIMPIEZA,JARDINERÍA"
 
 descT[2]="Uma donzela das nuvens em busca do amor verdadeiro. Mas não encontrar pretendentes a deixa de mau humor."
-descleftT[2]=string(_ageT)+":18\nNAT.:CLOUDSVILLE\n"+string(_heightT)+":50'0"+" "+string(_weightT)+":10000LBS"
+descleftT[2]=string(_ageT)+":18\nNAT.:VILLA NUBE\n"+string(_heightT)+":50'0"+" "+string(_weightT)+":10000LBS"
 descrightT[2]=string(_likesT)+":AMOR,ROMANCE\n"+string(_dislikesT)+":INSETOS\n"+string(_hobbyT)+":TRICÔ"
 descabsT[2]="SOPRO DE FOGO,\nLIMPEZA,JARDINAGEM"
 
