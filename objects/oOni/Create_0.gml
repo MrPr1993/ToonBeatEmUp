@@ -33,6 +33,8 @@ isHeavy=1
 
 height=120
 
+isBossCheck=1
+
 specialFX=0
 
 StandSpr=spr_oni_stand

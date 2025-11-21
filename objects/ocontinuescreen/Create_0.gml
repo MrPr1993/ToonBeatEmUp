@@ -395,14 +395,16 @@ if keyboard_check(vk_shift)
 	}
 }
 
-if actP1=0
-continueStageScore+=PlayerScore1-global.P1Score-cheatpenalty
-if actP2=0
-continueStageScore+=PlayerScore2-global.P2Score-cheatpenalty
-if actP3=0
-continueStageScore+=PlayerScore3-global.P3Score-cheatpenalty
-if actP4=0
-continueStageScore+=PlayerScore4-global.P4Score-cheatpenalty
+
+
+//if actP1=0
+//continueStageScore+=PlayerScore1-global.P1Score-cheatpenalty
+//if actP2=0
+//continueStageScore+=PlayerScore2-global.P2Score-cheatpenalty
+//if actP3=0
+//continueStageScore+=PlayerScore3-global.P3Score-cheatpenalty
+//if actP4=0
+//continueStageScore+=PlayerScore4-global.P4Score-cheatpenalty
 
 
 
@@ -476,9 +478,46 @@ p4=instance_create_depth(-9999,0,-1,oPlayerDisembodied) with p4 {canControl=1 co
 		} else {actPTotal4=9999 }
 		} else {actPTotal4=9999 }
 
-continueStageScore+=bossScore//-global.P1Score-global.P2Score-global.P3Score-global.P4Score
-with oPlayerDisembodied if isInctive=0 oContinueScreen.continueStageScore+=round(hp*2000)
-continueStageScore+=round(time*200)
+//-global.P1Score-global.P2Score-global.P3Score-global.P4Score
+var _ttt=0
+var _sc1=0;
+var _sc2=0;
+var _sc3=0;
+var _isstage=0;
+with oPlayerDisembodied if isInctive=0 
+if global.StageClear=1
+{
+var _sc=0; _isstage=0;
+
+if oContinueScreen.AltScore1=0 {if playerGet=1 {_sc+=oContinueScreen.bossScore _sc1=oContinueScreen.bossScore _isstage=1}}
+else if playerGet=1 {_sc+=oContinueScreen.altresult1}
+
+if oContinueScreen.AltScore2=0 {_sc+=round(hp*20000) _sc2=round(hp*20000) _isstage=1}
+else if altresult2!=-1 _sc+=altresult2
+else if oContinueScreen.altresult2!=-1 _sc+=oContinueScreen.altresult2
+
+var _tt=0
+
+//if oContinueScreen.AltScore3!=-2
+{
+if oContinueScreen.AltScore3=0 
+{_tt=(round(oContinueScreen.time*200)) _sc3=(round(oContinueScreen.time*200)) _isstage=1}
+else
+if oContinueScreen.altresult3!=-1
+_tt=oContinueScreen.altresult3
+}
+_sc+=_tt
+
+PlayerScore+=_sc
+PlayerScore=clamp(PlayerScore,0,9999999999999999)
+
+if _isstage=1
+oContinueScreen.continueStageScore+=_sc1+_sc2
+
+}
+if _isstage=1
+oContinueScreen.continueStageScore+=_sc3
+
 newrecord=0 newrecordframe=0
 if continueStageScore>global.LevelHiScore[stagecheck]
 {global.LevelHiScore[stagecheck]=continueStageScore 
@@ -509,6 +548,11 @@ case 2: lifescore_check(1,playerNO,global.P2ScoreLife,0,0); break;
 case 3: lifescore_check(1,playerNO,global.P3ScoreLife,0,0); break;
 case 4: lifescore_check(1,playerNO,global.P4ScoreLife,0,0); break;
 }
+
+if playerNO=1 {global.P1Score=PlayerScore global.P1Life=PlayerLife}
+if playerNO=2 {global.P2Score=PlayerScore global.P2Life=PlayerLife}
+if playerNO=3 {global.P3Score=PlayerScore global.P3Life=PlayerLife}
+if playerNO=4 {global.P4Score=PlayerScore global.P4Life=PlayerLife}
 }
 
 p5=instance_create_depth(0,0,-1,oPlayerDisembodied) with p5 {canControl=1 controlNO=9}
@@ -609,7 +653,7 @@ GoldShow=global.GoldShow
 }
 
 
-global.P5Score=global.P1Score+PlayerScore1+global.P2Score+PlayerScore2+global.P3Score+PlayerScore3+global.P4Score+PlayerScore4
+global.P5Score=global.P1Score+global.P2Score+global.P3Score+global.P4Score
 
 feats_check(45);
 

@@ -60,6 +60,7 @@ enemyID=159
 
 isBoss=1
 specialBossState=1
+isBossCheck=1
 
 bombRecharge=0
 bombRecharge2=0

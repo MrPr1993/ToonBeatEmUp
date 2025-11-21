@@ -5,7 +5,7 @@ enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=36//36
 
 enemyscript=animsetup_enemy
-
+isBossCheck=1
 pointshit=10
 points=100
 

@@ -29,7 +29,7 @@ playerIcon=spr_p1
 altresult2Text=-1
 altresult2=-1
 
-playerGet=1
+playerGet=0
 
 	isIdle=1
 

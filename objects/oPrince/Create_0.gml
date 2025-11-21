@@ -27,7 +27,7 @@ maxhp=2
 isHeavy=1
 
 height=110
-
+isBossCheck=1
 specialFX=0
 
 StandSpr=spr_prince_stand

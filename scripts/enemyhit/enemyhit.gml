@@ -30,9 +30,10 @@ thrownPlayer=-1
 	hitBack=1 else hitBack=0
 
 	targetEnemy=other.hitSource.id
-if other.hitSource.object_index=oPlayer playerFrom=other.hitSource.playerNO
-
-
+if other.hitSource.object_index=oPlayer
+{playerFrom=other.hitSource.playerNO
+with oPlayer playerGet=0 if isBossCheck targetEnemy.playerGet=1
+}
 	
 ////Chance their low HP increases their stun
 var _hpstun=(hp/maxhp)*100 

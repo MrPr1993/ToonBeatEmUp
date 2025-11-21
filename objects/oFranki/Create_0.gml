@@ -62,7 +62,7 @@ BurnSpr=spr_franki_burned
 FrozenSpr=spr_franki_frozen
 DizzySpr=spr_franki_dizzy hasDizzy=1
 
-isBoss=1
+isBoss=1 isBossCheck=1
 specialBossState=1
 
 offScreen=0

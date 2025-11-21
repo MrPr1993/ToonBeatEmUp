@@ -100,3 +100,8 @@ imageang=0
 }
 if fishout=3
 image_speed=0.25
+
+if playerNO=1 oControl.altresult2a=altresult2
+if playerNO=2 oControl.altresult2b=altresult2
+if playerNO=3 oControl.altresult2c=altresult2
+if playerNO=4 oControl.altresult2d=altresult2

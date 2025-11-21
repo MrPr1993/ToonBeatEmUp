@@ -27,8 +27,8 @@ PlaySoundNoStack(snd_1up) playerIcon=spr_extralifep
 if _isplayer
 {
 showp1=1 alarm[5]=120 
-PlayerLife+=1; 
 }
+PlayerLife+=1; 
 }
 }
 

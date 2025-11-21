@@ -6,7 +6,11 @@ and room!=rm_soundtest  and room!=rm_gallery and room!=rm_loading and room!=rm_b
 and room!=rm_menu and room!=rm_settings and room!=rm_minigames and room!=rm_cutscenes and room!=rm_paletteeditor
 and room!=rm_slotmachine and room!=rm_eatinggame and room!=rm_singgame and isNotStage=0
 {
-if oPlayer.dead=0
+var _nodead=0
+	
+with oPlayer if dead=0 _nodead=1
+
+if _nodead
 {if stagetime!=0 stagetime-=1;
 if time!=0 {time-=1-1*global.Cheat[12] alarm[0]=timeclick}
 else
@@ -26,5 +30,7 @@ else
 if specialTimer!=-1 with specialTimer event_user(9)
 }
 }
+
+
 }
 

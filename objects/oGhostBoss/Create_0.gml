@@ -60,7 +60,7 @@ OneAttack=2
 
 height=100
 
-isBoss=1
+isBoss=1 isBossCheck=1
 
 specialFX=0
 

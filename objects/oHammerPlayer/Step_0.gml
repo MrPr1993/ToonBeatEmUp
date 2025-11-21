@@ -161,3 +161,8 @@ slotSpd-=0.01 slotY+=0 slotY=clamp(slotY,0,99999)
 frame_set(4,7,0.25)
 if win=0 frame_set(5,9,0) else frame_set(5,8,0)
 }
+
+if playerNO=1 oControl.altresult2a=altresult2
+if playerNO=2 oControl.altresult2b=altresult2
+if playerNO=3 oControl.altresult2c=altresult2
+if playerNO=4 oControl.altresult2d=altresult2

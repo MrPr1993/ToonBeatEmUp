@@ -10,7 +10,7 @@ pointshit=10
 points=100
 
 rangeAtk=360
-
+isBossCheck=1
 OneAttack=2
 
 isHeavy=1

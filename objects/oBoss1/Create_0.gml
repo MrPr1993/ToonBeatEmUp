@@ -52,6 +52,7 @@ DizzySpr=spr_wolfita_hit hasDizzy=1
 hasscaredSpr=1 scaredSpr=spr_wolfita_panic
 
 isBoss=1
+isBossCheck=1
 specialBossState=1
 
 offScreen=0

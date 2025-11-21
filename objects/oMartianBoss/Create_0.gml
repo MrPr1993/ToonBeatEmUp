@@ -22,6 +22,7 @@ hp=2
 maxhp=2
 
 isHeavy=1
+isBossCheck=1
 
 height=110
 

@@ -114,3 +114,8 @@ frame_set(2,8+2*haslose,0.1) if AnimFrame>2-0.1 {AnimFrame=1
 			if controlNO=3	oEatingContestGame.p3Over=1
 				if controlNO=4	oEatingContestGame.p4Over=1}
 }
+
+if playerNO=1 oControl.altresult2a=altresult2
+if playerNO=2 oControl.altresult2b=altresult2
+if playerNO=3 oControl.altresult2c=altresult2
+if playerNO=4 oControl.altresult2d=altresult2

@@ -28,7 +28,7 @@ maxhp=2
 height=110
 
 HitGround=snd_hitground
-isBoss=1
+isBoss=1 isBossCheck=1
 
 offScreen=0
 offScreenMode=1
