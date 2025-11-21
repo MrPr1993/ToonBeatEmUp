@@ -461,7 +461,7 @@ draw_text(0,144+8,string_hash_to_newline(""))
 else if playerGet=1 
 draw_text(0,144+8,string_hash_to_newline(oContinueScreen.altresult1))
 if oContinueScreen.AltScore2=0
-draw_text(0,144+16+8,string_hash_to_newline(round(hp*20000)))
+draw_text(0,144+16+8,string_hash_to_newline(round(hp*10000)))
 else
 {
 if altresult2!=-1
@@ -478,7 +478,7 @@ if oContinueScreen.AltScore3!=-2
 if oContinueScreen.altresult3!=-1
 {
 if oContinueScreen.AltScore3=0
-draw_text(0,144+32+8,string_hash_to_newline(round(oContinueScreen.time*200)))
+draw_text(0,144+32+8,string_hash_to_newline(round(oContinueScreen.time*100)))
 else
 draw_text(0,144+32+8,string_hash_to_newline(oContinueScreen.altresult3))
 }
@@ -488,8 +488,8 @@ if oContinueScreen.scoreClearSet=0
 alarm[8]=240+oContinueScreen.stageClearDelay///Stage change time
 
 if oContinueScreen.AltScore1=0 oContinueScreen.altresult1=oContinueScreen.bossScore
-if oContinueScreen.AltScore2=0 oContinueScreen.altresult2=hp*20000
-if oContinueScreen.AltScore3=0 oContinueScreen.altresult3=round(oContinueScreen.time*200)
+if oContinueScreen.AltScore2=0 oContinueScreen.altresult2=hp*10000
+if oContinueScreen.AltScore3=0 oContinueScreen.altresult3=round(oContinueScreen.time*100)
 
 }
 }

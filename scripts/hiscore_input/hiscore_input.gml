@@ -96,11 +96,11 @@ if instance_exists(oContinueScreen)
 with oContinueScreen
 {
 GoldShow=1
-GoldGet+=round(p1.PlayerScore/100)
-GoldGet+=round(p2.PlayerScore/100)
-GoldGet+=round(p3.PlayerScore/100)
-GoldGet+=round(p4.PlayerScore/100)
-GoldGet+=round(continueStageScore/100)
+GoldGet+=round(p1.PlayerScore/50)
+GoldGet+=round(p2.PlayerScore/50)
+GoldGet+=round(p3.PlayerScore/50)
+GoldGet+=round(p4.PlayerScore/50)
+GoldGet+=round(continueStageScore/50)
 setGameOver=1
 global.Gold+=GoldGet gold_save()
 }

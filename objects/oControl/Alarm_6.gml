@@ -51,11 +51,11 @@ if global.StageSelect=1 or global.IsMinigame=1
 
 
 GoldShow=1
-GoldGet+=round(p1.PlayerScore/100)
-GoldGet+=round(p2.PlayerScore/100)
-GoldGet+=round(p3.PlayerScore/100)
-GoldGet+=round(p4.PlayerScore/100)
-GoldGet+=round(continueStageScore/100)
+GoldGet+=round(p1.PlayerScore/50)
+GoldGet+=round(p2.PlayerScore/50)
+GoldGet+=round(p3.PlayerScore/50)
+GoldGet+=round(p4.PlayerScore/50)
+GoldGet+=round(continueStageScore/50)
 
 if GoldGet!=0
 {

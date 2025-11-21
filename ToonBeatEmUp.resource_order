@@ -373,7 +373,7 @@
     {"name":"oFallingFake","order":27,"path":"objects/oFallingFake/oFallingFake.yy",},
     {"name":"oFancyTable","order":16,"path":"objects/oFancyTable/oFancyTable.yy",},
     {"name":"oFeatDisplay","order":28,"path":"objects/oFeatDisplay/oFeatDisplay.yy",},
-    {"name":"oFishingMinigame","order":84,"path":"objects/oFishingMinigame/oFishingMinigame.yy",},
+    {"name":"oFishingMinigame","order":14,"path":"objects/oFishingMinigame/oFishingMinigame.yy",},
     {"name":"oFishingRod","order":24,"path":"objects/oFishingRod/oFishingRod.yy",},
     {"name":"oFisingFish","order":85,"path":"objects/oFisingFish/oFisingFish.yy",},
     {"name":"oFlameArm","order":4,"path":"objects/oFlameArm/oFlameArm.yy",},

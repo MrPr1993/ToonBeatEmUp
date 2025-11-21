@@ -78,18 +78,7 @@ image_index=frameadd
 	if image_index=clamp(AnimFrame,3,3.9)
 	{weaponanim(weaponspr,weaponIndex,9,-31,45*image_xscale,weaponcolor)}
 	}
-
-///SWING
-if anim=10
-{
-if AnimFrame=0 PlaySound(voice1)
-frame_set(0,image_index,0.05)
-frame_set(1,0,0.5)
-frame_set(2,2,0.25) if AnimFrame=3
-{
-PlaySoundNoStack(snd_hit) 	//PlaySound(voice2)
-breakresult=0
-
+	
 var _t1="NO BONUS"
 var _t2="BONUS"
 var _t3="PERFECT"
@@ -106,6 +95,19 @@ var _t4="BOM"
 var _t5="PONTUAÇÃO"
 break;
 }
+
+///SWING
+if anim=10
+{
+if AnimFrame=0 PlaySound(voice1)
+frame_set(0,image_index,0.05)
+frame_set(1,0,0.5)
+frame_set(2,2,0.25) if AnimFrame=3
+{
+PlaySoundNoStack(snd_hit) 	//PlaySound(voice2)
+breakresult=0
+
+
 
 shaketime=10 altresult2Text=_t5 altresult2=0	
 	

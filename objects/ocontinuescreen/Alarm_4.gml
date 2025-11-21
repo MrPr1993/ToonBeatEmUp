@@ -49,11 +49,11 @@ GoldShow=global.GoldShow
 
 if global.ArenaType=2 or global.ArenaType=3
 {
-GoldGet+=round(p1.PlayerScore/100)
-GoldGet+=round(p2.PlayerScore/100)
-GoldGet+=round(p3.PlayerScore/100)
-GoldGet+=round(p4.PlayerScore/100)
-GoldGet+=round(continueStageScore/100)
+GoldGet+=round(p1.PlayerScore/50)
+GoldGet+=round(p2.PlayerScore/50)
+GoldGet+=round(p3.PlayerScore/50)
+GoldGet+=round(p4.PlayerScore/50)
+GoldGet+=round(continueStageScore/50)
 global.Gold+=GoldGet gold_save()
 
 GoldShow=global.GoldShow

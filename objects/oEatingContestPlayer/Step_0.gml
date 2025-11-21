@@ -43,13 +43,6 @@ frame_set(1,3+2*eatframe,0.1)
 frame_set(2,3+2*eatframe,0.1)
 if AnimFrame>3-0.1 {AnimFrame=0 anim=0}
 }
-
-
-///SWING
-if anim=10
-{
-if AnimFrame=0
-{
 var _t1="NO BONUS"
 var _t2="BONUS"
 var _t3="PERFECT"
@@ -66,6 +59,15 @@ var _t4="BOM"
 var _t5="TEMPO"
 break;
 }
+
+///SWING
+if anim=10
+{
+if AnimFrame=0
+{
+
+
+
 	
 oEatingContestGame.resulttext1=_t2
 

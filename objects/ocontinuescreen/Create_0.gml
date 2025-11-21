@@ -492,7 +492,7 @@ var _sc=0; _isstage=0;
 if oContinueScreen.AltScore1=0 {if playerGet=1 {_sc+=oContinueScreen.bossScore _sc1=oContinueScreen.bossScore _isstage=1}}
 else if playerGet=1 {_sc+=oContinueScreen.altresult1}
 
-if oContinueScreen.AltScore2=0 {_sc+=round(hp*20000) _sc2=round(hp*20000) _isstage=1}
+if oContinueScreen.AltScore2=0 {_sc+=round(hp*10000) _sc2=round(hp*10000) _isstage=1}
 else if altresult2!=-1 _sc+=altresult2
 else if oContinueScreen.altresult2!=-1 _sc+=oContinueScreen.altresult2
 
@@ -501,7 +501,7 @@ var _tt=0
 //if oContinueScreen.AltScore3!=-2
 {
 if oContinueScreen.AltScore3=0 
-{_tt=(round(oContinueScreen.time*200)) _sc3=(round(oContinueScreen.time*200)) _isstage=1}
+{_tt=(round(oContinueScreen.time*100)) _sc3=(round(oContinueScreen.time*100)) _isstage=1}
 else
 if oContinueScreen.altresult3!=-1
 _tt=oContinueScreen.altresult3

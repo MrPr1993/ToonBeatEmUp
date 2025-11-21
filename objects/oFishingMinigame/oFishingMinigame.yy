@@ -10,8 +10,8 @@
   "name":"oFishingMinigame",
   "overriddenProperties":[],
   "parent":{
-    "name":"1 - General Objects",
-    "path":"folders/1 - General Objects.yy",
+    "name":"Fishing",
+    "path":"folders/1d - Extras and Minigames/Fishing.yy",
   },
   "parentObjectId":null,
   "persistent":false,
