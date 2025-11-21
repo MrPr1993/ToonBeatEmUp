@@ -13,7 +13,7 @@ with fakeen2 instance_destroy()
 
 oControl.bossID=boss
 
-oControl.time=99
+oControl.time=99 timer_set(1)
 
 timeline_position=1760
 }

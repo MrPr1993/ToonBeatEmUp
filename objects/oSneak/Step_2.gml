@@ -406,4 +406,18 @@ frame_set(4,4,0.1)
 frame_set(5,4,0.25) if AnimFrame>5 {canmove=1}
 }
 
+
+if sprite_index=DizzySpr
+{
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,-4,-25,0,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,-3,-24,0,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,-4,-24,0,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,-5,-25,0,weaponcolor)
+}
+
+
 throw_step()

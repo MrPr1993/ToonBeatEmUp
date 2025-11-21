@@ -9,6 +9,8 @@ surf_circle = surface_create(320,240);
 
 minigameID=0;
 
+finalstageclear=0;
+
 seefeats=0;
 if instance_exists(oFeatDisplay) seefeats=1;
 
@@ -43,7 +45,20 @@ perfecthp=oControl.perfecthp
 minigameroom=oControl.minigameroom;
 minigameID=oControl.minigameID;
 minigameIDwin=oControl.minigameIDwin;
+
+if global.StageClear=1 and room=rm_stagefinal and global.MenuGlobal=0
+{
+if instance_exists(oPlayer)
+{
+finalstageclear+=5000+5000*global.Difficulty
+
+with oPlayer if dead=0 {PlayerScore+=oContinueScreen.finalstageclear}
+
 }
+}
+}
+
+
 
 if global.MinigameWin[minigameID]=0
 global.MinigameWin[minigameID]=minigameIDwin;
@@ -210,7 +225,11 @@ hppercent3=100;
 hppercent4=100;
 
 
-if instance_exists(oPlayer) with oPlayer
+if instance_exists(oPlayer)
+{
+
+
+with oPlayer
 if dead=0
 {
 if playerNO=1 oContinueScreen.hppercent1=(hp/maxhp)*100
@@ -218,7 +237,7 @@ if playerNO=2 oContinueScreen.hppercent2=(hp/maxhp)*100
 if playerNO=3 oContinueScreen.hppercent3=(hp/maxhp)*100
 if playerNO=4 oContinueScreen.hppercent4=(hp/maxhp)*100
 }
-
+}
 if instance_exists(oControl.p1)
 {
 oControl.p1.PlayerScore-=cheatpenalty oControl.p1.PlayerScore=clamp(oControl.p1.PlayerScore,0,9999999999)
@@ -387,7 +406,7 @@ continueStageScore+=PlayerScore4-global.P4Score-cheatpenalty
 
 
 
-if global.MenuGlobal!=0
+if global.MenuGlobal=99999
 {
 if actP1=0
 continueStageScore+=global.P1Score-cheatpenalty
@@ -397,8 +416,6 @@ if actP3=0
 continueStageScore+=global.P3Score-cheatpenalty
 if actP4=0
 continueStageScore+=global.P4Score-cheatpenalty
-
-
 }
 
 
@@ -460,7 +477,7 @@ p4=instance_create_depth(-9999,0,-1,oPlayerDisembodied) with p4 {canControl=1 co
 		} else {actPTotal4=9999 }
 
 continueStageScore+=bossScore//-global.P1Score-global.P2Score-global.P3Score-global.P4Score
-with oPlayerDisembodied if isInctive=0 oContinueScreen.continueStageScore+=round(hp*20000)
+with oPlayerDisembodied if isInctive=0 oContinueScreen.continueStageScore+=round(hp*2000)
 continueStageScore+=round(time*200)
 newrecord=0 newrecordframe=0
 if continueStageScore>global.LevelHiScore[stagecheck]
@@ -476,15 +493,6 @@ continueStageScore=clamp(continueStageScore,0,99999999999)
 if global.Difficulty>=global.LevelDif[stagecheck] global.LevelDif[stagecheck]=global.Difficulty
 
 global.UnlockStage[stagecheck]=1
-
-
-
-
-
-if global.MenuGlobal!=0
-if global.StageClear=1
-{
-}
 
 if brickgamenum=1 with oPlayerDisembodied x+=160-40
 if brickgamenum=2 with oPlayerDisembodied x+=160-80

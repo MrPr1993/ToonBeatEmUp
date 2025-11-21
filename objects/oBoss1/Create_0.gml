@@ -47,7 +47,7 @@ FlatSpr=spr_wolfita_flat
 ShockSpr=spr_wolfita_elec
 BurnSpr=spr_wolfita_burned
 FrozenSpr=spr_wolfita_frozen
-DizzySpr=spr_wolfita_hit
+DizzySpr=spr_wolfita_hit hasDizzy=1
 
 hasscaredSpr=1 scaredSpr=spr_wolfita_panic
 

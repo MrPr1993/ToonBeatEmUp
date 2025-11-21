@@ -212,3 +212,8 @@ weaponanim(weaponspr,weaponIndex,18+_weaponaddX,-48+_weaponadd,90+_weaponang,wea
 
 }
 
+
+if sprite_index=DizzySpr
+{
+weaponanim(weaponspr,weaponIndex,12000,-19,0,weaponcolor)
+}

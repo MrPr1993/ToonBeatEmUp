@@ -324,3 +324,15 @@ if place_free(x+0.1*-image_xscale,y) x+=0.1*-image_xscale
 sprite_index=spr_dancer_block
 if AnimFrame>2 {anim=65}
 }
+
+if sprite_index=spr_dancer_dizzy
+{
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,-21,-88,0,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,-21,-87,0,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,-21,-88,0,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,-21,-89,0,weaponcolor)
+}

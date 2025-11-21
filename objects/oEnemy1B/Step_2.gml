@@ -129,3 +129,15 @@ weaponanim(weaponspr,weaponIndex,8,-26,429,weaponcolor)
 if image_index=clamp(image_index,24,24.9)
 weaponanim(weaponspr,weaponIndex,9,-26,429,weaponcolor)
 }
+
+if sprite_index=spr_burglarB_dizzy
+{
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,12,-19,0,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,10,-19,0,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,12,-18,0,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,13,-19,0,weaponcolor)
+}

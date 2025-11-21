@@ -285,3 +285,28 @@ if sprite_index=spr_clown_taunt
 weaponanim(weaponspr,weaponIndex,22,-105-image_index,90,weaponcolor)
 weaponanim_2(weaponspr2,weaponIndex2,-12-image_index,-56-image_index,270,weaponcolor2)
 }
+
+
+if sprite_index=DizzySpr
+{
+if image_index=clamp(image_index,0,0.9)
+{
+weaponanim(weaponspr,weaponIndex,16,-91,45,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,24,-91,-45,weaponcolor2)
+}
+if image_index=clamp(image_index,1,1.9)
+{
+weaponanim(weaponspr,weaponIndex,14,-93,46,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,22,-93,-46,weaponcolor2)
+}
+if image_index=clamp(image_index,2,2.9)
+{
+weaponanim(weaponspr,weaponIndex,16,-93,45,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,24,-93,-45,weaponcolor2)
+}
+if image_index=clamp(image_index,3,3.9)
+{
+weaponanim(weaponspr,weaponIndex,17,-90,47,weaponcolor)
+weaponanim_2(weaponspr2,weaponIndex2,25,-90,-47,weaponcolor2)
+}
+}

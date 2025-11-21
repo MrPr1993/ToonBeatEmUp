@@ -7,6 +7,26 @@ stageScore=1
 ///Unlock Stage
 global.UnlockStage[StageNumber]=1
 global.StageClear=1
+
+var _p=p1;
+
+repeat(0)
+{
+if instance_exists(_p) if _p.object_index=oPlayer with _p
+{
+if oControl.AltScore1=0 oControl.altresult1=oControl.bossScore
+if oControl.AltScore2=0 oControl.altresult2=hp*2000
+if oControl.AltScore3=0 oControl.altresult3=round(oControl.time*200)	
+
+if playerGet=1 PlayerScore+=oControl.altresult1
+if altresult2!=-1 PlayerScore+=altresult2 else PlayerScore+=oControl.altresult2
+PlayerScore+=oControl.altresult3
+
+}
+
+if _p=p1 _p=p2 else if _p=p2 _p=p3 else if _p=p3 _p=p4
+}
+
 sc=instance_create_depth(0,0,-1,oContinueScreen) with sc
 {
 stageNext=oControl.stageNext

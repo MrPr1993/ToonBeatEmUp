@@ -2,7 +2,7 @@ if !instance_exists(en1) and noextraenemies
 and !instance_exists(en2)
 and !instance_exists(en3)
 and !instance_exists(en4)
-{specialSet8=0 oControl.time=99
+{specialSet8=0 oControl.time=99 timer_set(1)
 with oControl {//camMove=0 camMax=room_width
  goActive=1; ambushtime=0; alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}

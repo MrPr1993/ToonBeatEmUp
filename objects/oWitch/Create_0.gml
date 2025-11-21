@@ -49,6 +49,8 @@ ShockSpr=spr_witch_elec
 BurnSpr=spr_witch_burned
 FrozenSpr=spr_witch_frozen
 
+hasDizzy=1 DizzySpr=spr_witch_dizzy
+
 hasscaredSpr=1 scaredSpr=spr_witch_panic
 
 current_pal=1;

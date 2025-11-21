@@ -2,6 +2,7 @@
 oControl.TextDialogue=""
 
 oControl.time=99
+timer_set(1)
 
 oPlayer.canControl=1
 oPlayer.areaEntry=0

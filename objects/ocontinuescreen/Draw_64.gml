@@ -14,6 +14,7 @@ var _t8=" YES"
 var _t9="NEW RECORD!"
 var _t10="CHEAT PENALTY: -"
 var _t11="STAGE SCORE:"
+var _t12="FINAL STAGE CLEAR:"
 
 switch(global.Language)
 {
@@ -29,6 +30,7 @@ _t8=" SI"
 _t9="NUEVO RECORD!"
 _t10="PENALIZACIÓN POR TRAMPA: -"
 _t11="PUNTOS DE ETAPA:"
+_t12="ETAPA FINAL COMPLETADA:"
 break;
 case 2: //Portuguese
 _t1="CRÉDITO"
@@ -42,6 +44,7 @@ _t8=" SIM"
 _t9="NOVO RECORD!"
 _t10="PENALIDADE DE TRAPAÇA: -"
 _t11="PONTUAÇA DO PALCO:"
+_t12="ETAPA FINAL CONCLUÍDA:"
 break;
 }
 
@@ -321,9 +324,9 @@ else
 if stageClear=1
 {
 stageClearIndex+=0.5
-
+var _yc=0; if finalstageclear!=0 _yc=-16
 if stageClearY<120 stageClearY+=16
-draw_sprite_ext(stageCspr,stageClearIndex,160,stageClearY-32-24,1,1,0,c_white,1)///Game Over Text
+draw_sprite_ext(stageCspr,stageClearIndex,160,stageClearY-32-24+_yc,1,1,0,c_white,1)///Game Over Text
 draw_set_alpha(1) draw_set_color(c_white)
 
 var _showplayer=1;
@@ -374,8 +377,11 @@ if cheatpenalty!=0
 	
 draw_text_transformed(160,90,string(_t10)+string(cheatpenalty),0.75,1,0)
 }
-
 draw_set_color(c_white)
+if finalstageclear!=0
+draw_text_transformed(160,120-32-24+24,string(_t12)+string(finalstageclear),0.75,1,0)
+
+
 draw_set_halign(fa_right)
 draw_text_transformed(160,220,_t11,0.75,1,0)
 }

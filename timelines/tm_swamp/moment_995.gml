@@ -27,7 +27,7 @@ with oEnemySpawner cammoveUP=1
 boss=instance_create_depth(9312+8,144,-1,oWitch)
 with boss {canmove=0 anim=100 image_xscale=-1}
 
-oControl.time=99
+oControl.time=99 timer_set(1)
 
 with oPlayer
 {hspeed=0

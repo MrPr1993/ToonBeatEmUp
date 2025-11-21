@@ -171,3 +171,6 @@ if sprite_index=spr_knight_taunt
 {
 weaponanim(weaponspr,weaponIndex,28,-75-1*image_index,90,weaponcolor)
 }
+
+if sprite_index=spr_knight_dizzy
+weaponanim(weaponspr,weaponIndex,9,-23,0,weaponcolor)

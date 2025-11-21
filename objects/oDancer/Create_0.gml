@@ -49,6 +49,7 @@ FlatSpr=spr_dancer_flat
 ShockSpr=spr_dancer_elec
 BurnSpr=spr_dancer_burned
 FrozenSpr=spr_dancer_frozen
+hasDizzy=1
 DizzySpr=spr_dancer_dizzy
 
 hasscaredSpr=1 scaredSpr=spr_dancer_panic

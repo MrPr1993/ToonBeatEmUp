@@ -340,3 +340,15 @@ atkcol_set(93,0,27,5.25,1,38)
 if AnimFrame=clamp(AnimFrame,4,4.5) atk=1 else atk=0
 if AnimFrame>6.7 {canmove=1 anim=0}
 } else weaponIndex=0
+
+if sprite_index=DizzySpr
+{
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,12,-41,0,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,10,-42,0,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,12,-41,0,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,14,-40,0,weaponcolor)
+}

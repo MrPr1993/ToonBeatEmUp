@@ -215,3 +215,15 @@ if sprite_index=spr_merman_taunt
 {armsX=0 armsY=900
 weaponanim(weaponspr,weaponIndex,-26,-57,90,weaponcolor)
 }
+
+if sprite_index=DizzySpr
+{
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,18,-37+25,90,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,13,-37+25,90,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,18,-37+25,90,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,24,-37+25,90,weaponcolor)
+}

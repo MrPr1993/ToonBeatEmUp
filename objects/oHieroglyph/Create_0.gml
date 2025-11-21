@@ -5,7 +5,7 @@ event_inherited()
 
 isNoBlood=1
 
-height=64
+height=56
 
 name="HIEROGLYPH"
 enemyPortraitSpr=spr_miscface
