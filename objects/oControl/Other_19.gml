@@ -36,6 +36,27 @@ canmove=0  key_charge=0 combo_stop()
 key_left=0 key_right=0 key_up=0 key_down=0
 }
 
+if global.MenuGlobal=0
+{
+if global.StageClear=1
+{
+global.P1available=0
+global.P2available=0
+global.P3available=0
+global.P4available=0
+with oPlayer
+{
+if playerNO=1	
+global.P1available=1
+if playerNO=2
+global.P2available=1
+if playerNO=3
+global.P3available=1
+if playerNO=4
+global.P4available=1
+}
+}
+}
 
 
 with oPlayer if stagePose!=0 {anim=210 AnimFrame=0}

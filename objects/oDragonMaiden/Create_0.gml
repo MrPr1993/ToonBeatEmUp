@@ -12,7 +12,7 @@ enemyscript=animsetup_enemy
 
 pointshit=10
 points=100
-isBossCheck=1
+BossTag=1
 rangeAtk=320
 
 OneAttack=2

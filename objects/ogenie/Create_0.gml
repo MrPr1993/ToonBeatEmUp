@@ -24,7 +24,7 @@ superarmor=1
 
 isHeavy=1
 throwHeavy=1
-isBossCheck=1
+BossTag=1
 hp=2
 maxhp=2
 

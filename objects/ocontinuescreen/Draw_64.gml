@@ -379,7 +379,7 @@ draw_text_transformed(160,90,string(_t10)+string(cheatpenalty),0.75,1,0)
 }
 draw_set_color(c_white)
 if finalstageclear!=0
-draw_text_transformed(160,120-32-24+24,string(_t12)+string(finalstageclear),0.75,1,0)
+draw_text_transformed(160,120-32-24+24,string(finalstagecleartext)+string(finalstageclear),0.75,1,0)
 
 
 draw_set_halign(fa_right)

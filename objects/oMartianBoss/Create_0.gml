@@ -22,7 +22,7 @@ hp=2
 maxhp=2
 
 isHeavy=1
-isBossCheck=1
+BossTag=1
 
 height=110
 
@@ -61,6 +61,7 @@ enemyID=163
 
 isBoss=1
 specialBossState=1
+
 
 specialtaunt=function()
 {

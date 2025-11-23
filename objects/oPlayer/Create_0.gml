@@ -2,6 +2,7 @@ canControl=0
 controller_setup()
 
 character_setup()
+charready=0;
 
 nameupdate="";
 

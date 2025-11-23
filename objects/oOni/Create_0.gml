@@ -33,7 +33,7 @@ isHeavy=1
 
 height=120
 
-isBossCheck=1
+BossTag=1
 
 specialFX=0
 

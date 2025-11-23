@@ -9,6 +9,18 @@ surf_circle = surface_create(320,240);
 
 minigameID=0;
 
+var _t12="FINAL STAGE CLEAR:"
+switch(global.Language)
+{
+case 1: //Espanol
+
+_t12="ETAPA FINAL COMPLETADA:"
+break;
+case 2: //Portuguese
+_t12="ETAPA FINAL CONCLUÍDA:"
+break;
+}
+finalstagecleartext=_t12;
 finalstageclear=0;
 
 seefeats=0;
@@ -46,7 +58,7 @@ minigameroom=oControl.minigameroom;
 minigameID=oControl.minigameID;
 minigameIDwin=oControl.minigameIDwin;
 
-if global.StageClear=1 and room=rm_stagefinal and global.MenuGlobal=0
+if global.StageClear=1 and room=rm_stagefinal and global.MenuGlobal!=1
 {
 if instance_exists(oPlayer)
 {

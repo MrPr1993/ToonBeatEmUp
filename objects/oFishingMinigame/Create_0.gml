@@ -14,6 +14,7 @@ weaponXadd=58;
 weaponYadd=10;
 weaponAngleAdding=0
 
+altresult2=""
 
 ground=0
 

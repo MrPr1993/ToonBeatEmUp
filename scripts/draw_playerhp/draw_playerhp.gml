@@ -280,6 +280,12 @@ if playerNO=3 global.P3Score=0
 if playerNO=4 global.P4Score=0
 }
 
+if playerNO=1 with oControl {p1=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p1 {controlNO=1 playerNO=1 playerGet=0 dead=1}}
+if playerNO=2 with oControl {p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=2 playerNO=2 playerGet=0 dead=1}}
+if playerNO=3 with oControl {p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=3 playerNO=3 playerGet=0 dead=1}}
+if playerNO=4 with oControl {p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=4 playerNO=4 playerGet=0 dead=1}}
+with selfatk instance_destroy()
+instance_destroy();
 draw_text(34,8,"GAME\nOVER")
 }
 draw_set_halign(fa_left)

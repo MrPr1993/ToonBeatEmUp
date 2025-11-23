@@ -1,6 +1,6 @@
 room_speed=60
 
-global.CanGlobalBeta=0 //////////SET TO 0 TO DEACTIVATE BETA MODE
+global.CanGlobalBeta=1 //////////SET TO 0 TO DEACTIVATE BETA MODE
 
 gamever="V.0.995"
 
@@ -12,6 +12,11 @@ ambushtime=0;
 autopause=0;
 
 carMode=0;
+
+gameOverToResult=0;
+specialScoreText="BOSSES DEFEATED";
+specialScore=0;
+
 
 minigameID=0;
 minigameIDwin=0;

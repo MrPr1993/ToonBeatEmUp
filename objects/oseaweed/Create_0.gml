@@ -55,7 +55,7 @@ DizzySpr=spr_seaweed_dizzy hasDizzy=1
 hasscaredSpr=1 scaredSpr=spr_seaweed_panic
 isBoss=1
 specialBossState=1
-isBossCheck=1
+BossTag=1
 
 spritepos_setup(1,24,17,53)
 spritepos_setup(2,24,5,95)

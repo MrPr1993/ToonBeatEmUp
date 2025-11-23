@@ -11,6 +11,7 @@ DeathCry=snd_deathcryviva
 HitGround=snd_hitground
 
 idlestyle=2
+BossTag=2
 
 hp=1
 maxhp=1

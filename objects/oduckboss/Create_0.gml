@@ -18,7 +18,7 @@ rangeAtk=360
 
 OneAttack=2
 
-isBoss=1 isBossCheck=1
+isBoss=1 BossTag=1
 
 hp=2
 maxhp=2

@@ -10,7 +10,7 @@ enemyPortraitIndex=60//36
 	DamageVoice3=snd_scientist12
 
 enemyscript=animsetup_enemy
-isBossCheck=1
+BossTag=1
 pointshit=10
 points=100
 

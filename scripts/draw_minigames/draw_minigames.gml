@@ -200,7 +200,7 @@ global.StageGoing=rm_arena global.ArenaType=2;
 if global.SurvivalUnlock=0 MenuText="LOCKED"
 }
 
-if global.MinigameSel=2 {MenuText=string(_tt2)+"\n"+string(_tt8)+":"+string(global.HiScoreBossBattles)+"\nHIGH SCORE:"+string(global.HiScoreBossBattlesScore) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
+if global.MinigameSel=2 {MenuText=string(_tt2)+"\n"+string(_tta8)+":"+string(global.HiScoreBossBattles)+"\n"+string(_tta6)+":"+string(global.HiScoreBossBattlesScore) //if global.MiniGameUnlock2=0 MenuText="LOCKED"
 global.StageGoing=rm_arena global.ArenaType=3;
 if global.BossBattleUnlock=0 MenuText="LOCKED"
 }

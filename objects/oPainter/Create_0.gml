@@ -47,7 +47,7 @@ runCharge=0
 
 isBoss=1
 specialBossState=1
-
+BossTag=1
 fakeducks=2
 fakeduckbuffer=360
 

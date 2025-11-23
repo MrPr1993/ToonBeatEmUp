@@ -32,7 +32,7 @@ thrownPlayer=-1
 	targetEnemy=other.hitSource.id
 if other.hitSource.object_index=oPlayer
 {playerFrom=other.hitSource.playerNO
-with oPlayer playerGet=0 if isBossCheck targetEnemy.playerGet=1
+with oPlayer playerGet=0 if BossTag!=0 targetEnemy.playerGet=1
 }
 	
 ////Chance their low HP increases their stun

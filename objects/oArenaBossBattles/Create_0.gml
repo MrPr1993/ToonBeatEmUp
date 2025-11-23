@@ -15,7 +15,7 @@ gamesetting=0
 
 charwinner="PLAYER"
 
-
+oControl.gameOverToResult=1
 
 drawscript=function()
 {
