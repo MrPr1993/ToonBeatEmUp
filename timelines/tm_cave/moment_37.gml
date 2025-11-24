@@ -3,6 +3,7 @@ and !instance_exists(en2)
 and !instance_exists(en3)
 and !instance_exists(en4)
 and !instance_exists(en5)
+and !instance_exists(enM)
 {
 en1=instance_create(__view_get( e__VW.XView, 0)+320+64,224,oKnight)
 with en1 {image_xscale=-1 canAttack=5 alarm[1]=60}	

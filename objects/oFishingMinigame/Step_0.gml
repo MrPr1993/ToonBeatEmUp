@@ -3,6 +3,8 @@
 
 oControl.nopleasewait=0;
 
+oControl.overwriteGold=fishscore
+
 if oControl.betatest
 {
 if keyboard_check_pressed(ord("P"))

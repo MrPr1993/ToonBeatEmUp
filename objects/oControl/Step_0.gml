@@ -175,6 +175,7 @@ and p3.ContinueMode=1
 and p4.ContinueMode=1
 {
 cont=instance_create_depth(0,0,-1,oContinueScreen)
+cont.overwriteGold=overwriteGold
 cont.TVfx=TVfx cont.playNO=playNO
 exit;
 }

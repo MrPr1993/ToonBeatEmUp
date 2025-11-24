@@ -1,4 +1,4 @@
-if !instance_exists(oMineCart)
+if !instance_exists(enM)
 {
 en5=instance_create(1880,172,oAreaSpawner) with en5
 {

@@ -11,6 +11,8 @@ circlerepos=-1;
 ambushtime=0;
 autopause=0;
 
+
+
 carMode=0;
 
 gameOverToResult=0;
@@ -118,6 +120,7 @@ introTime=0
 
 GoldShow=0
 GoldGet=0
+overwriteGold=-1;
 GoldY=32
 
 StageNumber=0

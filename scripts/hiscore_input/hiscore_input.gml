@@ -101,6 +101,9 @@ GoldGet+=round(p2.PlayerScore/25)
 GoldGet+=round(p3.PlayerScore/25)
 GoldGet+=round(p4.PlayerScore/25)
 GoldGet+=round(continueStageScore/25)
+
+if overwriteGold!=-1 GoldGet=overwriteGold
+
 setGameOver=1
 global.Gold+=GoldGet gold_save()
 }

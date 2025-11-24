@@ -4,7 +4,7 @@ if !instance_exists(en1) and noextraenemies
 and !instance_exists(en2)
 {
 with thunder
-{sprite_index=spr_whitecol oControl.quakeFXTime=10 image_alpha=1 image_xscale=999999 image_yscale=99999999 isfading=1 PlaySound(snd_thunder)}
+{sprite_index=spr_whitecol oControl.quakeFXTime=10 image_alpha=1 image_xscale=999999 image_yscale=99999999 isfading=1 PlaySound(snd_thunderclap)}
 	
 	
 en1=instance_create(__view_get( e__VW.XView, 0 )+160-64,224-32,oEntryBreak)

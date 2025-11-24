@@ -62,7 +62,7 @@ if fishout=3
 draw_set_color(c_white)
 draw_set_halign(fa_center)
 draw_text(x,y-16,fishname)
-draw_text(x,y-24,fishscore)
+draw_text(x,y-24,"$"+string(fishscore))
 draw_set_halign(fa_left)
 }
 }

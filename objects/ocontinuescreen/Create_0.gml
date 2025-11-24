@@ -9,6 +9,8 @@ surf_circle = surface_create(320,240);
 
 minigameID=0;
 
+overwriteGold=oControl.overwriteGold
+
 var _t12="FINAL STAGE CLEAR:"
 switch(global.Language)
 {
@@ -36,7 +38,7 @@ shade=shd_television
 isStageClear=0
 StageClearCheck=0
 stageClearMode=0
-
+overwriteGold=-1;
 continueStageScore=0
 cheatpenalty=0;
 playerGet=1

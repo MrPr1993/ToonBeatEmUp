@@ -12,6 +12,13 @@ overwriteAttack5=1
 
 if tidalBuffer!=0 tidalBuffer-=1
 
+if current_pal!=0
+{
+isBoss=0
+specialBossState=0
+BossTag=0
+}
+
 ///AI for enemy doing blocks
 //if name="BBB" ///To lock block to make boss easier
 if current_pal=0

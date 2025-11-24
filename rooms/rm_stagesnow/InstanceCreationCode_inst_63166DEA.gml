@@ -1,0 +1,2 @@
+sprite_index=spr_snowman3
+carrySpr=sprite_index

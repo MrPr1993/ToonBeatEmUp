@@ -13,6 +13,9 @@ and oControl.p3.hp<=0
 and oControl.p4.hp<=0
 _arenaover=1
 
+var _extrabonus=0; if bossesdefeated>=20 _extrabonus=5000*global.Difficulty
+oControl.overwriteGold=(1000*(bossesdefeated-1))+_extrabonus
+
 //if _arenaover=0
 //if instance_exists(oDastardly2)
 //if bossesdefeated>=20 and oDastardly2.hp<=0 {_arenaover=1}

@@ -65,6 +65,7 @@ with enemyspawn[2] character=2
 with enemyspawn[3] character=3
 }
 
+if enemyset!=3
 with enemyspawn[0]
 {
 my_pal_sprite=oControl.p1.my_pal_sprite

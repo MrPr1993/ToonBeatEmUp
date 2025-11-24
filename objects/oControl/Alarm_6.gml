@@ -9,8 +9,10 @@ global.UnlockStage[StageNumber]=1
 global.StageClear=1
 
 
-sc=instance_create_depth(0,0,-1,oContinueScreen) with sc
-{
+sc=instance_create_depth(0,0,-1,oContinueScreen)
+
+with sc
+{overwriteGold=oControl.overwriteGold
 stageNext=oControl.stageNext
 CutsceneStage=oControl.CutsceneStage
 
@@ -38,6 +40,8 @@ GoldGet+=round(p2.PlayerScore/25)
 GoldGet+=round(p3.PlayerScore/25)
 GoldGet+=round(p4.PlayerScore/25)
 GoldGet+=round(continueStageScore/25)
+
+if overwriteGold!=-1 GoldGet=overwriteGold
 
 if GoldGet!=0
 {

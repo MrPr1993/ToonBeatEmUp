@@ -14,7 +14,7 @@ with axe1 shaketime=60
 with axe2 shaketime=60
 
 with thunder
-{sprite_index=spr_whitecol oControl.quakeFXTime=10 image_alpha=1 image_xscale=999999 image_yscale=99999999 isfading=1 PlaySound(snd_thunder)}
+{sprite_index=spr_whitecol oControl.quakeFXTime=10 image_alpha=1 image_xscale=999999 image_yscale=99999999 isfading=1 PlaySound(snd_thunderclap)}
 
 port=instance_create_depth(4272, 32,-1,oFlashFX) with port
 {depth=16777201 haspal=0 sprite_index=spr_ghostport image_speed=0.5 animEnd=0 alarm[0]=0}

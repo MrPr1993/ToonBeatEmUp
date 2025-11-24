@@ -4,6 +4,7 @@ wfx=instance_place(x,y,oWaterFX)
 waterMax=wfx.z+wfx.zAdd
 }
 
+
 if OBJcheck=1
 if place_meeting(x+2,y,oPizza)
 {

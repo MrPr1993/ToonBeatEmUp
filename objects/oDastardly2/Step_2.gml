@@ -105,7 +105,7 @@ if AnimFrame>11.5 canmove=1
 
 if _thunderflash
 {
-oControl.quakeFXTime=10 PlaySound(snd_thunder)
+oControl.quakeFXTime=10 PlaySound(snd_thunderclap)
 flashend=instance_create_depth(oControl.camX-2,oControl.camY-2,-1,oCameoChar)
 with flashend {
 sprite_index=spr_whitecol image_xscale=99 image_yscale=99	

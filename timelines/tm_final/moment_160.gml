@@ -11,6 +11,12 @@ and !instance_exists(en10)
 and !instance_exists(en11)
 and !instance_exists(en12)
 and !instance_exists(en13)
+and !instance_exists(en14)
+and !instance_exists(en15)
+and !instance_exists(en16)
+and !instance_exists(en17)
+and !instance_exists(en18)
+and !instance_exists(en19)
 {
 with oControl {//camMove=0 camMax=room_width
  goActive=1; ambushtime=0; alarm[1]=90

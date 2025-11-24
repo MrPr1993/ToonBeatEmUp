@@ -10,17 +10,17 @@ and !instance_exists(en9)
 and !instance_exists(en10)
 and !instance_exists(en11)
 and !instance_exists(en12)
+and !instance_exists(en13)
+and !instance_exists(en14)
+and !instance_exists(en15)
+and !instance_exists(en16)
+and !instance_exists(en17)
+and !instance_exists(en18)
 {
 with oControl {//camMove=0 camMax=room_width
  goActive=1; ambushtime=0; alarm[1]=90
 xGoCheck=__view_get( e__VW.XView, 0 )+320}
 spawner_followset("WaveSet1",0,10380,1)
-
-   
-
-
-
-
 
 en1=instance_create_depth(9064,156,-1,oEntryFenceJump) with en1
 {depth=16777204 isDepth=0 ySpeed=2 spawnSpeedZ=-6 rangeXAdd=0 rangeX=9064-200 newSpawn=1 newSpawnX=9064-240 rideX=9064
