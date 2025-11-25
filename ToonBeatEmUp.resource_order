@@ -2533,6 +2533,7 @@
     {"name":"spr_dastardly2_bat","order":17,"path":"sprites/spr_dastardly2_bat/spr_dastardly2_bat.yy",},
     {"name":"spr_dastardly2_burned","order":3,"path":"sprites/spr_dastardly2_burned/spr_dastardly2_burned.yy",},
     {"name":"spr_dastardly2_changeform","order":22,"path":"sprites/spr_dastardly2_changeform/spr_dastardly2_changeform.yy",},
+    {"name":"spr_dastardly2_defeat1","order":26,"path":"sprites/spr_dastardly2_defeat1/spr_dastardly2_defeat1.yy",},
     {"name":"spr_dastardly2_dizzy","order":16,"path":"sprites/spr_dastardly2_dizzy/spr_dastardly2_dizzy.yy",},
     {"name":"spr_dastardly2_elec","order":5,"path":"sprites/spr_dastardly2_elec/spr_dastardly2_elec.yy",},
     {"name":"spr_dastardly2_firebreath","order":24,"path":"sprites/spr_dastardly2_firebreath/spr_dastardly2_firebreath.yy",},

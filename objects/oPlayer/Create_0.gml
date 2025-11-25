@@ -4,6 +4,8 @@ controller_setup()
 character_setup()
 charready=0;
 
+gameover=0;
+
 nameupdate="";
 
 soldout=0;

@@ -543,9 +543,11 @@ continueStageScore-=cheatpenalty
 
 continueStageScore=clamp(continueStageScore,0,99999999999)
 
+if global.StageClear=1
+{
 if global.Difficulty>=global.LevelDif[stagecheck] global.LevelDif[stagecheck]=global.Difficulty
-
 global.UnlockStage[stagecheck]=1
+}
 
 if brickgamenum=1 with oPlayerDisembodied x+=160-40
 if brickgamenum=2 with oPlayerDisembodied x+=160-80

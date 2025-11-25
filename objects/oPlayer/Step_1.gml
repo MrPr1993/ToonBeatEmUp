@@ -1,3 +1,6 @@
+
+
+
 if ContinueMode=0
 
 if hpD!=clamp(hpD,hp-0.05,hp+0.05)

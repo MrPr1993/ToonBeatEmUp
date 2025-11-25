@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.521292,
+  "duration":2.5212924,
   "exportDir":"",
   "name":"snd_fdas7",
   "parent":{

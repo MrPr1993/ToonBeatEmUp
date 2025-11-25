@@ -1,3 +1,14 @@
+//if gameover
+//{
+//if playerNO=1 {p1=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p1 {controlNO=1 playerNO=1 playerGet=0 dead=1} oControl.p1=p1.id}
+//if playerNO=2 {p2=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p2 {controlNO=2 playerNO=2 playerGet=0 dead=1} oControl.p2=p2.id}
+//if playerNO=3 {p3=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p3 {controlNO=3 playerNO=3 playerGet=0 dead=1} oControl.p3=p3.id}
+//if playerNO=4 {p4=instance_create_depth(-999999999,-999999999,-1,oPlayerNoControl) with p4 {controlNO=4 playerNO=4 playerGet=0 dead=1} oControl.p4=p4.id}
+
+//with selfatk instance_destroy()
+//instance_destroy();
+//}
+
 showmash=0
 
 if hp=0 and dead with oControl nodeath=0;

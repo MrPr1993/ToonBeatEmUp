@@ -28,6 +28,62 @@ overwriteAttack5=1
 //
 //
 
+
+////Defeat
+if anim=101
+{sentflying=0
+if AnimFrame=0
+{sprite_index=spr_dastardly2_defeat1
+PlaySound(snd_fdas29)
+}
+
+if AnimFrame<200
+{image_index+=0.2 if image_index>=4 image_index=2
+if image_index>=2
+if y>oControl.wallY y-=2;
+if x!=clamp(x,oControl.camX+160-2,oControl.camX+160+2)
+{if x>oControl.camX+160 x-=2 else x+=2}
+}
+
+AnimFrame++;
+
+if AnimFrame=200
+{specialtimes[0]=-240
+PlaySound(snd_fall)
+drop=instance_create_depth(x,y+1,-1,oCameoChar)
+drop.anim=9999 drop.z=z-240
+drop.sprite_index=spr_barrel
+}
+
+if AnimFrame>200 and AnimFrame<9999
+{
+	drop.z=specialtimes[0]
+	specialtimes[0]+=8
+	var _a=0;
+
+if specialtimes[0]>=-90
+{PlaySound(snd_hitgroundheavy) PlaySound(snd_hit) oControl.quakeFXTime=10
+AnimFrame=10000 sprite_index=mask_none shadow=mask_none hasShadow=0
+dor1=instance_create_depth(drop.x,drop.y,0,oBarrel)
+dor1.z=drop.z
+with dor1 
+{sprite_index=spr_barrel image_index=1
+image_xscale=1 solid=false hit=1 ground=0 zSpeed=-8 hspeed=0 mask_index=mask_none
+sentflying=0 image_index=1 alarm[0]=2}
+with drop instance_destroy()
+PlaySound(snd_fdas2) 
+
+drop=instance_create_depth(x,y-1,-1,oCameoChar)
+drop.anim=9999 drop.spdZ=-8 drop.shadow=-1
+drop.sprite_index=spr_dastardly2_hit drop.image_index=3
+with drop newscript=function() {spdZ+=0.225 z+=spdZ if spdZ>0 {if image_index<5.5 image_index+=0.2 isDepth=0 depth=16777209}}
+
+y=-9999
+}
+}
+}
+
+
 if anim=100
 {if AnimFrame=0 {AnimFrame=0.1 specialtimes[1]=-200 specialtimes[0]=-200
 	

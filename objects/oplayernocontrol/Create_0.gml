@@ -302,6 +302,7 @@ CountdownMode=0}
 //if global.Continues!=0 and _costcontinue=1 {global.Continues-=1;}
 }
 carMode=oControl.carMode
+instance_destroy();
 }
 
 }

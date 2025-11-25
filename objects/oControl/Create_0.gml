@@ -2,7 +2,7 @@ room_speed=60
 
 global.CanGlobalBeta=1 //////////SET TO 0 TO DEACTIVATE BETA MODE
 
-gamever="V.0.995"
+gamever="V.0.996"
 
 if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
 

@@ -251,11 +251,13 @@ if specialanim=0
 {image_xscale=1 shadowSpr=mask_none
 AnimFrame+=0.01
 
-if AnimFrame=2 image_index=1
+if AnimFrame<2 {image_index+=0.1 if image_index=2 image_index=0}
+
+if AnimFrame=2 image_index=2
 
 if AnimFrame=2 PlaySound(snd_dastardly5)
 
-if AnimFrame>=2 {image_index+=0.25 if image_index=4 image_index=2}
+if AnimFrame>=2 {image_index+=0.25 if image_index=5 image_index=3}
 
 if AnimFrame>4 {PlaySound(snd_jump) AnimFrame=0 specialanim+=1 ground=0 zSpeed=-4 z=-3}
 }

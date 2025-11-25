@@ -8,7 +8,8 @@ DamageVoice1=snd_fdas1
 DamageVoice2=snd_fdas1
 DamageVoice3=snd_fdas1
 BossTag=1
-DeathCry=snd_fdas2
+DeathCry=snd_fdas1
+if room=rm_arena DeathCry=snd_fdas2
 
 enemyscript=animsetup_enemy
 
