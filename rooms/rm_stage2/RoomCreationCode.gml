@@ -36,6 +36,9 @@ stagename="RUSH OVER THE SEA"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="CORRER SOBRE LOS MARES"
+break;
 case 2:///Portuguese
 stagename="LARGADA SOB O MAR"
 break;

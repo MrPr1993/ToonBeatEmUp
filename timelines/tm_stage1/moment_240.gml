@@ -34,6 +34,7 @@ btnT3="FOR A SPECIAL ATTACK"
 
 switch(global.Language)
 {
+case 1: btnT1="PRESIONA" btnT3="PARA UN ATAQUE ESPECIAL" break;
 case 2: btnT1="PRESSIONE" btnT3="PARA UM ATAQUE ESPECIAL" break;
 }
 

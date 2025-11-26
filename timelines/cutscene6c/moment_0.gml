@@ -271,6 +271,25 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¡Tenemos que encontrar una salida de aquí!"
+languagedialogue[2]="¿¡Cómo?! ¡Estamos a miles de pies del suelo!"
+languagedialogue[3]="¡¡WAAAAAAAAAAAAAH!!"
+languagedialogue[4]="¡Malvadas! ¡¿Por qué me lastimaron?! ¡Me dejaron fea!"
+languagedialogue[5]="¡Ahora nunca encontraré a mi futuro esposo! ¡BUAAAAH!"
+languagedialogue[6]="Okay… ahora sí me siento mal…"
+languagedialogue[7]="Déjenme a mí."
+languagedialogue[8]="Perdón por los moretones, solo queríamos defendernos."
+languagedialogue[9]="Mira, puedo arreglarte. Y puedes ayudarnos a salir."
+languagedialogue[10]="Sniff¡Oh,esto es maravilloso!¡Lo adoro!¡Esperen a que encuentre a mi alma gemela!¡Gracias,gordita mariquita amarilla!"
+languagedialogue[11]="¿Ves Viva? Por esto ser amable funciona. Se llama karma."
+languagedialogue[12]="Sí, sí… supongo que tienes razón—¿por qué se dirige a la ventana?"
+languagedialogue[13]="¡Aquí tienen! ¡Vuelen, lindas mariquitas!"
+languagedialogue[14]="¡Oh no puede ser! ¡¡¡NO SOMOS INSEEEEEEECTOOOOOOS!!!"
+
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="Temos que encontrar uma maneira de sair daqui!"
 languagedialogue[2]="Como?! Estamos a milhares de metros céu acima!"

@@ -131,6 +131,16 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="LLEGAMOS TARDE…"
+languagedialogue[2]="No hay forma de alcanzar esa cosa ahora…"
+languagedialogue[3]="Nuestro tesoro… perdido…"
+languagedialogue[4]="Todo ese caos… todos los golpes… y para nada…"
+languagedialogue[5]="Empaquen, chicas… No queda nada por hacer más que volver a casa…"
+
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="É TARDE DEMAIS..."
 languagedialogue[2]="Não tem como alcançar aquilo agora..."

@@ -616,6 +616,27 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¿…DÓNDE ESTÁ?"
+languagedialogue[2]="¿¡DÓNDE ESTÁÁÁ?!"
+languagedialogue[3]="¡MI DIAMANTE!"
+languagedialogue[4]="¡RECUPERAMOS NUESTRAS COSAS!"
+languagedialogue[5]="¡SANAS Y SALVAS!"
+languagedialogue[6]="TANTÍSIMO TRABAJO… ¡PERO VALIÓ LA PENA!"
+languagedialogue[7]="¡A VER, A VER, TODOS A SUS POSICIONES!"
+languagedialogue[8]="OH, ASÍ QUE POR FIN LLEGA LA CABALLERÍA. ¿DÓNDE HAN ESTADO?"
+languagedialogue[9]="NO NOS CULPE, SEÑORA. ANDÁBAMOS SIGUIENDO A ESOS MATONES HASTA AQUÍ."
+languagedialogue[10]="AHORA DÉJENOS A NOSOTROS."
+languagedialogue[11]="BUENO, SE ACABÓ."
+languagedialogue[12]="LA PRÓXIMA VEZ LOS VIGILAMOS MEJOR."
+languagedialogue[13]="Y eh..."
+languagedialogue[14]="Entonces, chicas, ¿qué quieren hacer ahora?"
+languagedialogue[15]="Chica… tú sabes."
+languagedialogue[16]="Bueno, ¿y qué tal? ¿Listas para retomar el show?"
+languagedialogue[17]="¡¡A FIESTAR!!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="... ONDE ESTÁ?"
 languagedialogue[2]="ONDE ESTÁ?!"

@@ -202,6 +202,19 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¡Tú… TÚ HAS DESTROZADO MI BRILLANTEZ! ¡VOY A ATRAVESARLAS!!!"
+languagedialogue[2]="Ay por favor, no vas a hacer nada de eso. Aunque quizá debería romperte aún más…"
+languagedialogue[3]="¡Esperaesperaespera! ¡Misericordia, misericordia! ¿Qué quieren de mí?!"
+languagedialogue[4]="Buscamos el escondite de unos ladrones. Dinos dónde está."
+languagedialogue[5]="¡Okay okay! ¡Hay una puerta de emergencia por aquí cerca que las llevará directo!"
+languagedialogue[6]="¡Justo lo que queríamos oír! ¡Vámonos, chicas! ¡A repartir caos!"
+languagedialogue[7]="Mi bello palacio… Mi espejo… Qué brutas…"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Vocês... VOCÊS DESTRUIRAM MEUS CRISTAIS! EU VOU EMPALAR TODAS VOCÊS!!!"
 languagedialogue[2]="Ah, pelo amor, você não vai fazer isso tão cedo. Talvez eu devesse te quebrar ainda mais..."

@@ -274,6 +274,26 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT="¿QUÉ VES EN EL\nCALDERO?"
+CDtextA="¡UN CAMPO DE MAÍZ!"
+CDtextB="¡UN PRÍNCIPE!"
+CDtextC="¡UN DESIERTO!"
+
+languagedialogue[1]="…USTEDES…"
+languagedialogue[2]="¿Por qué irrumpieron en mi hogar y me golpearon? ¡¿No leyeron los letreros?!"
+languagedialogue[3]="Oye, es lo que hacemos. Tenemos preguntas para ti, señorita bruja."
+languagedialogue[4]="¿…Alguna vez consiguen respuestas con violencia? ¡¿Qué les pasa?!"
+languagedialogue[5]="Oh… eh…"
+languagedialogue[6]="Y además, no soy bruja. ¡Soy druida!"
+languagedialogue[7]= "Cierto, perdón… ¿puedes ayudarnos igual? Buscamos a unos ladrones que estaban robando tesoros."
+languagedialogue[8]= "…Está bien. Si eso las hace irse más rápido, que así sea… Consultemos mi caldero sobre sus caminos…"
+languagedialogue[9]= "Miren dentro del caldero y les mostraré el camino según lo que elijan."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 CDtextT="O QUE VOCÊ VÊ NO\nCALDEIRÃO?"
 CDtextA="UM MILHARAL!"

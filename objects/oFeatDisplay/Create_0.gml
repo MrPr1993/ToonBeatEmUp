@@ -19,9 +19,9 @@ with oFeatDisplay vspeed=4 vspeed=0
 drawscript=function()
 {
 draw_set_alpha(1) draw_set_font(global.scorefont)
-draw_set_color(c_white) draw_rectangle(0+featX,240-24+y,128+featX,240,false)
-draw_set_color(c_black) draw_rectangle(0+2+featX,240-24+2+y,128-2+featX,240-3,false)
+draw_set_color(c_white) draw_rectangle(0+featX,240-24+y,128+featX,240+y,false)
+draw_set_color(c_black) draw_rectangle(0+2+featX,240-24+2+y,128-2+featX,240-3+y,false)
 draw_set_halign(fa_left)
-draw_sprite(spr_featicon,featNO,6+featX+y,240-38+4)
-draw_set_color(c_white) draw_text(6+33+featX+y,240-24+4,"FEAT\nCOMPLETE!")
+draw_sprite(spr_featicon,featNO,6+featX,240-38+4+y)
+draw_set_color(c_white) draw_text(6+33+featX,240-24+4+y,"FEAT\nCOMPLETE!")
 }

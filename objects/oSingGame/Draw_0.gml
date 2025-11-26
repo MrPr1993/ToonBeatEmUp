@@ -15,6 +15,13 @@ var _t5="SCORE"
 
 switch(global.Language)
 {
+case 1:
+var _t1="SIGUE EL ÍCONO Y CANTA!"
+var _t2="ATACAR  "
+var _t3="  SALTAR"
+var _t4="BIEN"
+var _t5="PUNTOS"
+break;
 case 2:
 var _t1="SIGA O ÍCONE E CANTE"
 var _t2="ATACAR  "

@@ -12,6 +12,10 @@ var _t1="OH ME\nCAR!"
 var _t2="HIT\nHERE!\n▼"
 switch(global.Language)
 {
+case 1:
+_t1="AY MI\nAUTO!"
+_t2="ATAQUE\nAQUÍ\n▼"
+break;
 case 2:
 _t1="OH MEU\nCARRO!"
 _t2="ATAQUE\nAQUI\n▼"

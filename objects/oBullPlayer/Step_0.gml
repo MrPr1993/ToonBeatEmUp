@@ -88,6 +88,10 @@ var _t1="DISTANCE"
 var _t2="PERFECT"
 switch(global.Language)
 {
+case 1:
+var _t1="DISTANCIA"
+var _t2="PERFECTO"
+break;
 case 2:
 var _t1="DISTÂNCIA"
 var _t2="PERFEITO"

@@ -413,6 +413,64 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT="¿QUÉ PUERTA\nELEGIRÁN?"
+CDtextA="PUERTA VERDE."
+CDtextB="PUERTA ROJA."
+CDtextC="PUERTA AZUL."
+
+languagedialogue[1]="¿Huh? ¿A dónde se fue ese fantasma altanero?"
+
+languagedialogue[2]="¡Si estaba aquí hace un segundo!"
+
+languagedialogue[3]="Umm… Chicas…?"
+
+languagedialogue[4]="Ahora no, Hina. ¿Dónde se habrá escondido…?"
+
+languagedialogue[5]="Chicas…?"
+
+languagedialogue[6]="Ahora no, Hina, ¿no ves que intentamos atrapar a ese espectro?"
+
+languagedialogue[7]="Fufufu… Ustedes…"
+
+//(Annamari decapitates them!)
+
+languagedialogue[8]="¡INSENSATAS!"
+
+languagedialogue[9]= "¡OOOOHOHOHOHO! ¡Eso les pasa por creer que podían arruinar mi encantadora ronda de apariciones! ¡Los vivos no pueden dañar a los muertos!"
+
+languagedialogue[10]="OHOHOH— ¿oh…?" //(the divas’ ghosts surround her)
+
+languagedialogue[11]="Pues nosotras no estamos vivas ahora mismo…"
+
+languagedialogue[12]="Não estou me sentindo tão viva..."
+
+languagedialogue[13]="…Oh cielos…"
+
+//(beatdown ensues)
+
+languagedialogue[14]="¡ME RINDO! ¡Lo siento! ¡Solo embrujaba este lugar para desahogar mis frustraciones después de que UNOS LADRONES ASQUEROSOS irrumpieran y robaran la reliquia de mi familia!"
+
+languagedialogue[15]="¿Tu reliquia familiar…?"
+
+languagedialogue[16]="Igual que nosotras…"
+
+languagedialogue[17]= "Hagamos… un trato dado que tenemos el mismo problema… Yo las revivo, y ustedes recuperan mi reliquia junto con la suya."
+
+languagedialogue[18]="Espera, ¿cómo vas a—?"
+
+//(Annamari brings them back to life putting their head back and using duct tape)
+
+languagedialogue[19]="AH. Qué incómodo para mi cuello…"
+
+languagedialogue[20]="Bueno, ¿a dónde fueron los ladrones, señorita Annamari?"
+
+languagedialogue[21]="Se dispersaron por mis puertas espeluznantes… así que tendrán que elegir una."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 CDtextT="VOCÊ IRÁ ESCOLHER\nQUAL PORTA?"
 CDtextA="PORTA VERDE."

@@ -52,6 +52,10 @@ var _t2="GET THE\nTROPHY!"
 switch(global.Language)
 {
 case 2:
+var _t1="LO TINENE!"
+var _t2="¡AGARRA\nEL TROFEO!"
+break;
+case 2:
 var _t1="CONSEGUIU!"
 var _t2="PEGUE\nO TROFÉU!"
 break;

@@ -297,6 +297,27 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT="¿QUÉ VES EN LA BOLA DE\nCRISTAL?"
+CDtextA="¡LAS ESTRELLAS!"
+CDtextB="¡LOS MARES!"
+CDtextC="¡LAS ARENAS!"
+
+languagedialogue[1]= "¡¿Cómo pudieron?! Primero se meten con mi dulce Larry y ¡AHORA me atacan a mí!? ¿Qué les pasa?!"
+languagedialogue[2]= "Perdón… Hemos estado demasiado impulsivas con eso de ‘pelear primero, preguntar después’…"
+languagedialogue[3]= "Mira, nos robaron tesoros MUY valiosos y personales, y necesitamos recuperarlos. ¿Sabes dónde están?"
+languagedialogue[4]="Muy bien… Supongo que dejaré pasar este incidente ya que Larry las atacó primero. Larry, tráeme mi bola de cristal, ¿sí, cariño?"
+languagedialogue[5]="Oh, vamos, mamá te llevará a una tienda a comprarte tu bocadillo favorito, ¿sí?"
+languagedialogue[6]="¿Sabes? Ese pulpo estaba adorable."
+languagedialogue[7]="Sí. Antes era marinero."
+languagedialogue[8]="¿Qué."
+languagedialogue[9]="Aquí estamos, ¡gracias, querido!"
+languagedialogue[10]="Ahora, ¡veamos qué pueden ver en esta bola de cristal!"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 CDtextT="O QUE VOCÊ VÊ NA BOLA DE\nCRISTAL?"
 CDtextA="AS ESTRELAS!"

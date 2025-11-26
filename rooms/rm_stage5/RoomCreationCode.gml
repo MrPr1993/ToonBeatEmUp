@@ -22,6 +22,9 @@ stagename="LUCKY DOJO CASINO"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="CASINO SUERTUDO DE DOJO"
+break;
 case 2:///Portuguese
 stagename="CASINO DOJO LUCKY"
 break;

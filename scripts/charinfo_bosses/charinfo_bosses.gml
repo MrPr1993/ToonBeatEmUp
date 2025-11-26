@@ -50,7 +50,7 @@ descleftT[0]=string(_ageT)+":29\nNAT.:BRITAIN\n"+string(_heightT)+":5'10"+" "+st
 descrightT[0]=string(_likesT)+":LEATHER,PIGS\n"+string(_dislikesT)+":SILVER\n"+string(_hobbyT)+":STARGAZING"
 descabsT[0]="SCHEMING,SLAPPING"
 
-descT[1]="A shady woman who works with the thieves to steal the divas’ treasures. And she seems to be hiding something else..."	   
+descT[1]= "Una mujer sombría que trabaja con los ladrones para robar los tesoros de las divas. Y parece que esconde algo más..."   
 descleftT[1]=string(_ageT)+":29\nNAT.:G.BRETAÑA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":120LBS"
 descrightT[1]=string(_likesT)+":CUERO,CERDOS\n"+string(_dislikesT)+":PLATA\n"+string(_hobbyT)+":ASTRÓNOMÍA"
 descabsT[1]="PLANEANDO,BOFETANDO"
@@ -79,7 +79,7 @@ descabsT[0]="SCHEMING,SLAPPING,\nMAULING,HOWLING"
 descleftT[0]=string(_ageT)+":29\nNAT.:BRITAIN\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":180LBS"
 
 
-descT[1]=   "Her true form! When this aggressive wolf comes out, beware her fearsome fangs or she’ll rip you apart!" 
+descT[1]=  "¡Su verdadera forma! Cuando sale esta agresiva loba, cuidado con sus temibles colmillos o te hará pedazos."
 
 descleftT[1]=string(_ageT)+":29\nNAT.:G.BRETAÑA\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":180LBS"
 
@@ -108,7 +108,7 @@ descleftT[0]=string(_ageT)+":56\nNAT.:GREECE\n"+string(_heightT)+":7'4"+" "+stri
 descrightT[0]=string(_likesT)+":GLITTER,THEATERS\n"+string(_dislikesT)+":NEW MUSIC\n"+string(_hobbyT)+":OPERA"
 descabsT[0]="FLYING,SING,CRUSHING,\nAERODYNAMICS"
 
-descT[1]=    "She’s big. She’s round. She has a song in her heart. A fight with her won't be over until the fat lady sings."
+descT[1]= "Es grande. Es redonda. Tiene una canción en su corazón. Una pelea con ella no terminará hasta que la gorda cante."
 descleftT[1]=string(_ageT)+":56\nNAT.:GRECIA\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":1200LBS"
 descrightT[1]=string(_likesT)+":BRILLOS,TEATROS\n"+string(_dislikesT)+":NUEVA MÚSICA\n"+string(_hobbyT)+":ÓPERA"
 descabsT[1]="VOLANDO,CANTAR,\nAPLASTANDO,AERODINÁMICA"
@@ -131,7 +131,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:GERMANY\n"+string(_heightT)+":8'2"+" "+str
 descrightT[0]=string(_likesT)+":TRAVELING,SPINACH\n"+string(_dislikesT)+":SABOTEURS\n"+string(_hobbyT)+":CUSTOMIZING BOATS"
 descabsT[0]="BRAWLING,WRESTLING,\nSAILING,LIGHTNING"
 
-descT[1]="A colossal woman who ferries passengers on her beloved ship. Stowaways will be in for a shock in more ways than one."
+descT[1]= "Una mujer colosal que transporta pasajeros en su amado barco. Los polizones se llevarán una sorpresa… de más de una manera."
 descleftT[1]=string(_ageT)+":35\nNAT.:ALEMANIA\n"+string(_heightT)+":8'2"+" "+string(_weightT)+":1000LBS"
 descrightT[1]=string(_likesT)+":VIAJANDO,ESPINACA\n"+string(_dislikesT)+":SABOTEADORES\n"+string(_hobbyT)+":PERSONALIZANDO BARCOS"
 descabsT[1]="PELEA,LUCHA,\nNAVEGACIÓN,RELÁMPAGO"
@@ -154,7 +154,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":7'0"+" "+string(
 descrightT[0]=string(_likesT)+":MILK,CACTI\n"+string(_dislikesT)+":VARMINTS\n"+string(_hobbyT)+":HORSE RIDING"
 descabsT[0]="SHOOTING,LASSO TRICKS,\nBREWING,CARD GAMES"
 
- descT[1]= "This cowgirl in charge of the Loco Dos hunts down stowaways. Two heads, and guns, are better than one."
+ descT[1]=  "Esta vaquera a cargo del Loco Dos caza polizones. Dos cabezas —y dos armas— son mejores que una."
 descleftT[1]=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":7'0"+" "+string(_weightT)+":160LBS"
 descrightT[1]=string(_likesT)+":LECHE,CACTOS\n"+string(_dislikesT)+":MALOS\n"+string(_hobbyT)+":EQUITACIÓN"
 descabsT[1]="DISPAROS,TRUCOS CON LAZO,\nCERVEZAS, JUEGOS DE CARTAS"
@@ -176,7 +176,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:FRANCE\n"+string(_heightT)+":8'0"+" "+st
 descrightT[0]=string(_likesT)+":HEADS,AXES\n"+string(_dislikesT)+":CAKES\n"+string(_hobbyT)+":HEADS"
 descabsT[0]="GHOST,CUTTING,SCARING\nCUTTING SCARING"
 
-  descT[1]=  "A head collector in life. She became a ghost after taking her own head. She may enjoy beheadings a bit too much..."
+  descT[1]=  "Recolectora de cabezas en vida. Se volvió un fantasma después de arrancarse la suya propia. Quizás disfruta demasiado las decapitaciones…"
 descleftT[1]=string(_ageT)+":MUERTA\nNAT.:FRANCIA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":CABEZAS,HACHAS\n"+string(_dislikesT)+":PASTELLES\n"+string(_hobbyT)+":CAVEZAS"
 descabsT[1]="FANTASMA,CORTANDO,ASSUSTANDO\nCORTANDO,ASSUSTANDO"
@@ -200,7 +200,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:EGYPT\n"+string(_heightT)+":7'4"+" "+
 descrightT[0]=string(_likesT)+":COWS,MUSIC\n"+string(_dislikesT)+":INFIDELS\n"+string(_hobbyT)+":PARTYING"
 descabsT[0]="DIVINE,CURSES,CONNECTING\nORGANIZING,LOVEMAKING"
 
-    descT[1]=  "A goddess who enjoys a good party. But those who disrespect her will be met with some good old fashioned divine punishment."
+    descT[1]=  "Una diosa que disfruta una buena fiesta. Pero quienes la irrespeten recibirán un buen castigo divino a la antigua."
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:EGIPTO\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":170LBS"
 descrightT[1]=string(_likesT)+":VACAS,MÚSICA\n"+string(_dislikesT)+":INFIELES\n"+string(_hobbyT)+":FESTEJANDO"
 descabsT[1]="DIVINO,MALDICIONES,CONECTANDO\nORGANIZANDO,HACIENDO EL AMOR"
@@ -226,7 +226,7 @@ descleftT[0]=string(_ageT)+":37\nNAT.:JAPAN\n"+string(_heightT)+":8'0"+" "+strin
 descrightT[0]=string(_likesT)+":SAKE,MONEY\n"+string(_dislikesT)+":CHEATS\n"+string(_hobbyT)+":CALLIGRAPHY"
 descabsT[0]="GAMBLING,PERFORMING,\nRIDDLES,SMASHING,FIRE"
 
- descT[1]=  "The eldest of the Oni Sisters. With fire in her eyes, she scorches opponents and throws magic cards."
+ descT[1]=  "La mayor de las Hermanas Oni. Con fuego en los ojos, calcina a sus oponentes y lanza cartas mágicas."
 descleftT[1]=string(_ageT)+":37\nNAT.:JAPÓN\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":SAKE,DINERO\n"+string(_dislikesT)+":TRAMPOSOS\n"+string(_hobbyT)+":CALIGRAFÍA"
 descabsT[1]="JUEGOS DE AZAR,ACTUAR,\nACERTIJOS,ROMPER,FUEGO"
@@ -252,7 +252,7 @@ descleftT[0]=string(_ageT)+":36\nNAT.:JAPAN\n"+string(_heightT)+":8'0"+" "+strin
 descrightT[0]=string(_likesT)+":SAKE,MONEY\n"+string(_dislikesT)+":DISRESPECT\n"+string(_hobbyT)+":POETRY"
 descabsT[0]="GAMBLING,PERFORMING,\nRIDDLES,SMASHING,ICE"
 
- descT[1]=  "The eldest of the Oni Sisters. With fire in her eyes, she scorches opponents and throws magic cards."
+ descT[1]=  "La menor de las Hermanas Oni. Con un aura helada, congela a sus enemigos y lanza dados mágicos."
 descleftT[1]=string(_ageT)+":36\nNAT.:JAPÓN\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":SAKE,DINERO\n"+string(_dislikesT)+":TRAMPOSOS\n"+string(_hobbyT)+":POESÍA"
 descabsT[1]="JUEGOS DE AZAR,ACTUAR,\nACERTIJOS,ROMPER,HIELO"
@@ -277,7 +277,7 @@ descrightT[0]=string(_likesT)+":ISOLATION\n"+string(_dislikesT)+":TRESSPASSERS\n
 descleftT[0]=string(_ageT)+":ANCIENT?\nNAT.:CELTIC\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":120LBS"
 descabsT[0]="MAGIC,BREWING,\nEXPERIMENTING,\nCOOKING,POSSESSING"
 
-descT[1]=   "She dwells in the swamp alone with the undead as she stirs her cauldron. She’s a druid, not a witch. Don’t mix it up…"
+descT[1]=  "Vive sola en el pantano junto a los muertos mientras remueve su caldero. Es una druida, no una bruja. No lo confundas…"
 descrightT[1]=string(_likesT)+":AISLAMIENTO\n"+string(_dislikesT)+":INTRUSOS\n"+string(_hobbyT)+":NATACIÓN"
 descleftT[1]=string(_ageT)+":ANTIGUA?\nNAT.:CÉLTICA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":120LBS"
 descabsT[1]="MAGIA,HECHICERÍA,\nEXPERIMENTACIÓN,\nCOCINA,POSESIÓN"
@@ -298,7 +298,7 @@ descleftT[0]=string(_ageT)+":31\nNAT.:FRANCE\n"+string(_heightT)+":8'0"+" "+stri
 descrightT[0]=string(_likesT)+":FUN,AUDIENCE\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PRANKING"
 descabsT[0]="LOONY,QUACKING,\nJUGGLING,BAKING"
 
-descT[1]= "The carnival's crazy ringmaster. She’s a cartoon duck toy person... thing. She’s quite the quack."
+descT[1]= "La loca maestra de pista del carnaval. Es una especie de… persona-juguete-pato de caricatura. Está bien loca."
 descleftT[1]=string(_ageT)+":31\nNAT.:FRANCIA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":DIVERSIÓN,PÚBLICO\n"+string(_dislikesT)+":ABURRIMIENTO\n"+string(_hobbyT)+":BROMEAR"
 descabsT[1]="LOCURAS,CUA CUA,\nMALABARISMO,HORNEANDO"
@@ -323,7 +323,7 @@ descleftT[0]=string(_ageT)+":26\nNAT.:GREECE\n"+string(_heightT)+":8'4"+" "+stri
 descrightT[0]=string(_likesT)+":CIRCE,MOLLUSKS\n"+string(_dislikesT)+":DOLPHINS\n"+string(_hobbyT)+":SANDCASTLES"
 descabsT[0]="TENTACLES,DANCING,\nCRAFTING,SAILING"
 	
-descT[1]=  "The sea witch’s protective pet octopus who mercilessly beats down any interlopers with his tentacles."
+descT[1]=  "La mascota pulpo protectora de la bruja marina, que golpea sin piedad a cualquier intruso con sus tentáculos."
 descleftT[1]=string(_ageT)+":26\nNAT.:GRECIA\n"+string(_heightT)+":8'4"+" "+string(_weightT)+":900LBS"
 descrightT[1]=string(_likesT)+":CIRCE,MOLLUSCOS\n"+string(_dislikesT)+":DELFINES\n"+string(_hobbyT)+":CASTILLOS DE ARENA"
 descabsT[1]="TENTÁCULOS,BAILANDO,\nARTESANÍA,NAVEGACIÓN"
@@ -350,7 +350,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:GREECE\n"+string(_heightT)+":8'0"+" "
 descrightT[0]=string(_likesT)+":PETS,TRANSFORMING\n"+string(_dislikesT)+":BAD MEN\n"+string(_hobbyT)+":SUNBATHING"
 descabsT[0]="MAGIC,ENCHANT,BREWING,\nSUMMONING,CURSING" 
 		
-descT[1]=  "A cave dwelling sea witch who enjoys company so long as they don't cause trouble. Otherwise, they get a spankin'."
+descT[1]=   "Una bruja marina de caverna que disfruta la compañía mientras no causen problemas. De lo contrario… se lleva una buena paliza."
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:GRECIA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":360LBS"
 descrightT[1]=string(_likesT)+":MASCOTAS,TRANSFORMANDO\n"+string(_dislikesT)+":HOMBRES MALOS\n"+string(_hobbyT)+":TOMAR EL SOL"
 descabsT[1]="MAGIA,ENCANTAR,ELABORACIÓN,\nINVOCACIÓN,MALDICIONES" 
@@ -371,7 +371,7 @@ descleftT[0]=string(_ageT)+":48\nNAT.:ALIEN\n"+string(_heightT)+":9'0"+" "+strin
 descrightT[0]=string(_likesT)+":GOLD,SPECIMENS\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":COLLECTING"
 descabsT[0]="CYBERNETICS,BRAINPOWER,\nFENCING,CANNONING"  
 
-descT[1]= "She is the captain of a space pirate crew! And they’ll crush anyone in their way with their out of this world technology!"
+descT[1]= "Es la capitana de una tripulación de piratas espaciales. Y aplastarán a quien se les cruce con su tecnología fuera de este mundo."
 descleftT[1]=string(_ageT)+":48\nNAT.:EXTRATERRESTRE\n"+string(_heightT)+":9'0"+" "+string(_weightT)+":210LBS"
 descrightT[1]=string(_likesT)+":ORO,MUESTRAS\n"+string(_dislikesT)+":JUSTICIA\n"+string(_hobbyT)+":COLECCIONANDO"
 descabsT[1]="CIBERNÉTICA,PODER MENTAL,\nESGRIMA,CAÑONEO"  
@@ -394,7 +394,7 @@ descleftT[0]=string(_heightT)+":12'0"+" "+string(_weightT)+":6000LBS"
 descrightT[0]=""
 descabsT[0]="MISSILES,MINES,DIVING"
 
-descT[1]= "One of the thieves' submarines that dive into the depths, plundering the sea’s treasures."
+descT[1]=  "Uno de los submarinos de los ladrones que se sumergen en las profundidades para saquear los tesoros del mar."
 descleftT[1]=string(_heightT)+":12'0"+" "+string(_weightT)+":6000LBS"
 descrightT[1]=""
 descabsT[1]="MISILES, MINAS, BUCEO"
@@ -427,7 +427,7 @@ descleftT[0]=string(_ageT)+":38\nNAT.:GREECE\n"+string(_heightT)+":7'4"+" "+stri
 descrightT[0]=string(_likesT)+":STRENGTH,WORKOUTS\n"+string(_dislikesT)+":FAKERS\n"+string(_hobbyT)+":SCULPTING"
 descabsT[0]="WATER,BRAWLING\nMAGIC,ATHLETE"
 
-descT[1]=  "The incredibly flamboyant ruler of the seven seas who seeks great challenges with style and lots of flexing. Oh, and he's Viva's cousin."
+descT[1]=  "El increíblemente extravagante gobernante de los siete mares, que busca grandes desafíos con estilo y muchos músculos. Ah, y es primo de Viva."
 descleftT[1]=string(_ageT)+":38\nNAT.:GRECIA\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":FUERZA,ENTRENAMIENTOS\n"+string(_dislikesT)+":FALSOS\n"+string(_hobbyT)+":ESCULTURA"
 descabsT[1]="AGUA,PELEA,\nMAGIA,ATLETA" 			
@@ -448,7 +448,7 @@ descT[global.Language] )
 descT[0]=  "He prefers summoning copies of himself over making his troops join in, to even the odds for a fairer fight. Or so he says."
 descleftT[0]=string(_heightT)+":7'4"+" "+string(_weightT)+":180LBS"
 
-descT[1]=  "He prefers summoning copies of himself over making his troops join in, to even the odds for a fairer fight. Or so he says."
+descT[1]=  "Prefiere invocar copias de sí mismo en lugar de hacer que sus tropas participen, para equilibrar la pelea de forma “más justa”. O eso dice."
 descleftT[1]=string(_heightT)+":7'4"+" "+string(_weightT)+":180LBS"
 
 descT[2]="Ele prefere invocar cópias de si mesmo à fazer tropas se unirem a ele, equilibrando as chances, tornando a luta mais justa. Pelo menos é o que ele diz."
@@ -475,7 +475,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:MIDDLE EAST\n"+string(_heightT)+":8'0
 descrightT[0]=string(_likesT)+":HER MASTER,LOVE\n"+string(_dislikesT)+":EXPLOITERS\n"+string(_hobbyT)+":WORKOUTS"
 descabsT[0]="WISHES,MAGIC\nBRAWLING,DANCING"
 
- descT[1]=   "A genie of the lamp who willingly listens to her master as she crushes intruders. How deep is her devotion?"
+ descT[1]=   "Una genio de la lámpara que obedece voluntariamente a su amo mientras aplasta intrusos. ¿Qué tan profunda es su devoción?"
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:MEDIO O.\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":1333LBS"
 descrightT[1]=string(_likesT)+":SU AMO,AMOR\n"+string(_dislikesT)+":EXPLOTADORES\n"+string(_hobbyT)+":EJERCISIOS"
 descabsT[1]="DESEOS,MAGIA\nPELEAS,BAILANDO"	
@@ -509,7 +509,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:GERMANY\n"+string(_heightT)+":5'10"+"
 descrightT[0]=string(_likesT)+":MIRRORS,HERSELF\n"+string(_dislikesT)+":SHATTERING\n"+string(_hobbyT)+":FIGURE SKATING"
 descabsT[0]="SNEAKING,MIRROR COPY,\nREFLECTING,DECORATING"
 
- descT[1]= "The mistress of the mirror, who enjoys toying with intruders by sending their reflections after them."
+ descT[1]= "La dama del espejo, que disfruta jugar con intrusos enviando sus propios reflejos contra ellos."
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:ALEMANIA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":0LBS"
 descrightT[1]=string(_likesT)+":ESPEJOS,ELLA MISMA\n"+string(_dislikesT)+":ROMPIÉNDOSE\n"+string(_hobbyT)+":PATINAJE ARTÍSTICO"
 descabsT[1]="FISGÓN,COPIA ESPEJO,\nREFLEJANDO,DECORANDO"
@@ -527,6 +527,7 @@ descT[global.Language] )
  {enemyID=169 hp=1
 	 
  descT[0]= "Viva's reflection, who’s as ill-tempered as she is. Being a mirror she’s as fragile as the original’s waistline."
+descT[1]= "El reflejo de Viva, tan malhumorado como ella. Siendo un espejo, es tan frágil como la cintura de la original."
 descT[2]="O reflexo da Viva, que é tão mal-humorado quanto ela. Por ser um espelho, é tão frágil quanto a cintura da original."
 desc=descT[global.Language]
 	 
@@ -539,6 +540,7 @@ descleftT[global.Language]=string(_heightT)+":5'10"+" "+string(_weightT)+":160LB
   if dataPal=3{enemyID=170 hp=1
 	  
 	 descT[0]="Hina's reflection, who’s as odd as she is stretchy. She’s just as weird and fiery as the genuine article."
+descT[1]="El reflejo de Hina, tan extraña y elástica como ella. Igual de rara y ardiente que la auténtica."
 descT[2]="O reflexo da Hina, que é tão estranha quanto elástica. Ela é tão esquisita e ardente quanto a original."
 desc=descT[global.Language]
 	  
@@ -552,6 +554,7 @@ descleftT[global.Language]=string(_heightT)+":6'2"+" "+string(_weightT)+":100LBS
 {hp=1 enemyID=171 
 	
 	 descT[0]="Bahati's reflection, who’s as full-figured as she is. For a mirror, she’s as strong as the real deal."
+descT[1]= "El reflejo de Bahati, tan bien formada como ella. Para ser un espejo, es tan fuerte como la real."
 descT[2]="O reflexo da Bahati, que é tão cheio quanto ela. Para um espelho, ela é tão forte quanto a original."
 desc=descT[global.Language]
 	
@@ -565,6 +568,7 @@ descleftT[global.Language]=string(_heightT)+":6'0"+" "+string(_weightT)+":260LBS
  {hp=1 enemyID=172
 	 
 	 descT[0]="Sofia's reflection, who has her aggressive demeanor. She may be small, but she’s just as quick and deadly."
+descT[1]="El reflejo de Sofia, que tiene su mismo carácter agresivo. Será pequeña, pero igual de rápida y letal."
 descT[2]="O reflexo da Sofia, que tem um comportamento agressivo. Ela pode ser pequena, mas é igualmente veloz e letal."
 desc=descT[global.Language]
 	 
@@ -585,7 +589,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:BRITAIN\n"+string(_heightT)+":8'0"+" 
 descrightT[0]=string(_likesT)+":PARTIES,ATTENTION\n"+string(_dislikesT)+":LONELINESS\n"+string(_hobbyT)+":GARDENING"
 descabsT[0]="PLANT,MUSIC\nSINGING,FLOWERING"
 
-descT[1]= "A pretty plant who rules the fantastical depths of the caverns. This party loving plant princess won’t let you leave anytime soon..."
+descT[1]=  "Una bella planta que gobierna las fantásticas profundidades de las cavernas. Esta princesa fiestera no te dejará irte tan pronto..."
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:G.BRETAÑA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":190LBS"
 descrightT[1]=string(_likesT)+":FIESTAS,ATENCIÓN\n"+string(_dislikesT)+":SOLEDAD\n"+string(_hobbyT)+":JARDINERÍA"
 descabsT[1]="PLANTA,MÚSICA\nCANTANDO,FLORACIÓN"
@@ -612,7 +616,7 @@ descrightT[0]=string(_likesT)+":LOVE,ROMANCE\n"+string(_dislikesT)+":BUGS\n"+str
 descabsT[0]="FIRE BREATH,\nCLEANING,GARDENING"
 
 
-descT[1]=  "A maiden from the clouds looking for true love. But failing to find suitors keeps her in a terrible mood."
+descT[1]=  "Una doncella de las nubes que busca el amor verdadero. Pero no encontrar pretendientes la mantiene de muy mal humor."
 descleftT[1]=string(_ageT)+":18\nNAT.:VILLA NUBE\n"+string(_heightT)+":50'0"+" "+string(_weightT)+":10000LBS"
 descrightT[1]=string(_likesT)+":AMOR,ROMANCE\n"+string(_dislikesT)+":INSECTOS\n"+string(_hobbyT)+":TEJIDO"
 descabsT[1]="ALIENTO DE FUEGO,\nLIMPIEZA,JARDINERÍA"
@@ -636,7 +640,7 @@ descleftT[0]=string(_ageT)+":74\nNAT.:GERMANY\n"+string(_heightT)+":3'2"+" "+str
 descrightT[0]=string(_likesT)+":SCIENCE,SQUIDS\n"+string(_dislikesT)+":INCOMPETENCE\n"+string(_hobbyT)+":EXPERIMENTING"
 descabsT[0]="SCIENCE,ROBOTICS,\nBIOLOGY,MEDICINE"
 
-descT[1]=  "The scientist who runs the factory and is Van Bad’s most loyal underling. She’ll pull out all the stops to finish the divas."
+descT[1]= "La científica que dirige la fábrica y la subordinada más leal de Van Bad. Hará lo que sea para acabar con las divas."
 descleftT[1]=string(_ageT)+":74\nNAT.:ALEMANIA\n"+string(_heightT)+":3'2"+" "+string(_weightT)+":80LBS"
 descrightT[1]=string(_likesT)+":CIENCIA,CALAMARES\n"+string(_dislikesT)+":INCOMPETENCIA\n"+string(_hobbyT)+":EXPERIMENTANDO"
 descabsT[1]="CIENCIA,ROBÓTICA,\nBIOLOGÍA,MEDICINA"
@@ -654,7 +658,7 @@ descT[global.Language] )
 	{hp=2
 		
  descT[0]=  "With her security failing, she resorts to mutation. This berserker is the definition of 'mad science'!"
- descT[1]=  "With her security failing, she resorts to mutation. This berserker is the definition of 'mad science'!"
+ descT[1]=   "Con su seguridad fallando, recurre a la mutación. Esta berserker es la definición de ‘ciencia loca’."
 descT[2]="Com sua segurança falhando, ela recorre à mutação. Essa berserker é a definição de ‘cientista maluca’!"
 desc=descT[global.Language]
 		
@@ -676,7 +680,7 @@ descleftT[0]=string(_ageT)+":???\nNAT.:BRITAIN\n"+string(_heightT)+":11'2"+" "+s
 descrightT[0]=string(_likesT)+":???\n"+string(_dislikesT)+":???\n"+string(_hobbyT)+":???"
 descabsT[0]="???"
 
-descT[1]=  "The one and only head honcho, he scours the world for treasure of all kinds to add to his vast collection."
+descT[1]=   "El único y verdadero mandamás, recorre el mundo buscando tesoros de todo tipo para añadirlos a su vasta colección."
 descleftT[1]=string(_ageT)+":???\nNAT.:G.BRETAÑA\n"+string(_heightT)+":11'2"+" "+string(_weightT)+":???LBS"
 descrightT[1]=string(_likesT)+":???\n"+string(_dislikesT)+":???\n"+string(_hobbyT)+":???"
 descabsT[1]="???"
@@ -700,7 +704,7 @@ descleftT[0]=string(_ageT)+":666\nNAT.:BRITAIN\n"+string(_heightT)+":7'4"+" "+st
 descrightT[0]=string(_likesT)+":TREASURE,BLOOD\n"+string(_dislikesT)+":DISORDER\n"+string(_hobbyT)+":ORGANIZING"
 descabsT[0]="VAMPIRE,THIEVERY\nCONTROL,MECHANICS"
 
-descT[1]= "The head honcho was an illustrious vampire all along! She merely disguised herself as a cartoon villain. Now the real show can begin."
+descT[1]=  "¡El mandamás era una ilustre vampira todo este tiempo! Sólo se disfrazó de villano de caricatura. Ahora puede comenzar el verdadero espectáculo."
 descleftT[1]=string(_ageT)+":666\nNAT.:G.BRETAÑA\n"+string(_heightT)+":7'4"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":TESORO,SANGRE\n"+string(_dislikesT)+":DESORDEN\n"+string(_hobbyT)+":ORGANIZANDO"
 descabsT[1]="VAMPIRA,ROBO,\nCONTROL,MECÁNICAS"
@@ -725,6 +729,7 @@ descrightT[global.Language]=""
 descabsT[global.Language]=""
 	   
 descT[0]=  "I don't understand… I have no recorded info on this subject… Who is she? What is she? Where’d she even come from?!"
+descT[1]= "No lo entiendo... No tengo información registrada sobre este sujeto… ¿Quién es ella? ¿Qué es ella? ¿De dónde salió?"
 descT[2]="Não entendo... Não tenho nenhuma informação registrada sobre esse indivíduo... Quem é ela? O que ela é? De onde ela veio?!"
 desc=descT[global.Language]
 	   

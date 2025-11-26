@@ -264,8 +264,25 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT="¿A DÓNDE IRÁS?"
+CDtextA="LA MONTAÑA NEVADA."
+CDtextB="LA CUEVA MÁGICA."
+CDtextC="EL GLOBO AEROSTÁTICO."
+
+
+languagedialogue[1]="...Así que estamos todas de acuerdo en no volver a hablar de esto nunca más, ¿cierto?"
+languagedialogue[2]="Sip."
+languagedialogue[3]="Totalmente."
+languagedialogue[4]="¿Hablar de qué otra vez?"
+languagedialogue[5]="BIEN."
+languagedialogue[6]="Ahora… ¿Hacia dónde vamos…?"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
-CDtextT="PARA ONDE VOCÊS VÃO?"
+CDtextT="PARA ONDE\nVOCÊS VÃO?"
 CDtextA="A MONTANHA NEVADA."
 CDtextB="A CAVERNA MÁGICA."
 CDtextC="O BALÃO DE AR QUENTE."

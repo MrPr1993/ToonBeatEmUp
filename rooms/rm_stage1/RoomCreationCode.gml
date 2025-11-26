@@ -15,6 +15,9 @@ stagename="DOWNTOWN BEAT"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="RITMO DEL CENTRO"
+break;
 case 2:///Portuguese
 stagename="DISTRITO BEAT"
 break;

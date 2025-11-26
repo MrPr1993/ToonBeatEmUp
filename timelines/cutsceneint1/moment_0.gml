@@ -147,6 +147,17 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Spanish
+languagedialogue[1]="¡Jefe! ¡JEFE! ¡Hay cuatro locas siguiéndonos y pegándonos!"
+languagedialogue[2]="¿Eh? Ah, no te preocupes por unas mujeres enfadadas. ¡Ahora déjame en paz con mis tesoros!"
+languagedialogue[3]="Sí, jefe..."
+languagedialogue[4]="Hmm... ¡Dr.Fran!"
+languagedialogue[5]="Sí, Maestro Van Bad?"
+languagedialogue[6]="Sé un cariño y... ¿Analiza a nuestros cuatro perseguidores, por favor...?"
+languagedialogue[7]="Inmediatamente, Maestro Van Bad."
+languagedialogue[8]="Hmhmhmhm... Pronto, pondré el mundo patas arriba..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1] break;
 case 2: ////Portuguese
 languagedialogue[1]="Chefe! CHEFE! Tem quatro loucas nos seguindo e batendo na gente!"
 languagedialogue[2]="Hein? Ah, não se estresse com algumas mulheres irritadas. Agora me deixe em paz com meus tesouros!"

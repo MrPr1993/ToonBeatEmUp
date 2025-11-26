@@ -24,6 +24,10 @@ stagename="UFO BEYOND THE STARS"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="OVNI MÁS ALLÁ DE LAS ESTRELLAS"
+break;		
+
 case 2:///Portuguese
 stagename="DISCOS ALÉM DAS ESTRELAS"
 break;

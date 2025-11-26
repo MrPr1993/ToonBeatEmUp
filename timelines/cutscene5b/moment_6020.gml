@@ -26,6 +26,20 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Parece un camino muuuy largo cuesta arriba…"
+languagedialogue[2]="Me da igual… ¡La escalaré yo sola!"
+languagedialogue[3]="¡Espera un momento, rubia tonta!"
+languagedialogue[4]="No espero nada, voy a recuperar mi diamante cueste lo que cueste. Fue un gusto, chicas."
+languagedialogue[5]="¡Aquí estás! ¡Debiste dejarme terminar!"
+languagedialogue[6]="¡Había un ascensor justo donde empezaste a escalar! Súper cómodo, además."
+languagedialogue[7]="¡Estuviste fuera sólo cinco minutos!"
+languagedialogue[8]="C-cinco… oh por el amor de—"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Parece ser uma boa e longa subida até ao topo da montanha..."
 languagedialogue[2]="Por mim, tudo bem... Vou escalar tudo eu mesma!"
@@ -270,6 +284,17 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Esa cueva se ve bastante sospechosa… ¡Perfecta para que los ladrones anden escondiéndose!"
+languagedialogue[2]="Pero se ve súper profunda… Me pregunto cuánto."
+languagedialogue[3]="Sólo hay una forma de descubrir."
+languagedialogue[4]="¡¡¡BRIIIIIIIIIIIIIIR!!!!!"
+languagedialogue[5]="Agh… mi columna…" 
+languagedialogue[6]="Bueno… supongo que tendremos que bajar a ayudarla…"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 languagedialogue[1]="Essa caverna tá bem suspeita... Perfeita para ladrões se esconderem!"
 languagedialogue[2]="Parece bem profunda... Mas o quão profunda deve ser?"
@@ -401,6 +426,19 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Un momento, ¿ese es un globo aerostático?"
+languagedialogue[2]="Oye… ¡Esto podría darnos un viaje más suave Y darnos mejor vista para encontrar a esos ladrones!"
+languagedialogue[3]="Bien, Hina, llegó tu momento!"
+languagedialogue[4]="Deee acuerdo~"
+languagedialogue[5]="Ya, ya, ¡con eso basta…!" 
+languagedialogue[6]="¡¡Más lento, cabeza de aire!!"
+languagedialogue[7]="¡¡¡¡HINAAAAAAA!!!!"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Espera, isso é um balão de ar quente?"
 languagedialogue[2]="Ei... Isso pode deixar a viagem mais tranquila E dar uma visão bacana para encontrar aqueles ladrões!"

@@ -56,7 +56,12 @@ if playerNO=4 oArenaOddball.p4Over=1
 	
 if gameready=0
 {
-draw_text(160,34+10+64,"GET THE\nTROPHY!")
+if global.Language=0
+draw_text(160,34+10+64,"GET THE\nHIGHEST SCORE!")
+if global.Language=1
+draw_text(160,34+10+64,"¡OBTÉN LA PUNTUACIÓN\nMÁS ALTA!")
+if global.Language=2
+draw_text(160,34+10+64,"CONQUISTE A\nMAIOR PONTUAÇÃO!")
 }
 else
 {

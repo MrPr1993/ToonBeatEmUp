@@ -24,10 +24,22 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Parece que hay algo de alboroto en ese campo de maíz."
+languagedialogue[2]="¿Un campo de maíz? ¿En serio debemos ir ahí?"
+languagedialogue[3]="¡Bueno, ese no es mi problema! Ahora…"
+languagedialogue[4]="¡LÁRGUENSE!"
+languagedialogue[5]="¡Qué grosera! ¡Bien! ¡Ni siquiera necesitábamos tu ayuda!"
+languagedialogue[6]="Estúpida ermitaña enmascarada… ella y sus cadáveres podridos…"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Hmph, parece que está tendo alguma agitação ao redor desse milharal."
 languagedialogue[2]="Um milharal? Tem certeza de que precisamos ir até lá?"
-languagedialogue[3]="“Não é como se isso fosse problema meu! Agora..."
+languagedialogue[3]="Não é como se isso fosse problema meu! Agora..."
 languagedialogue[4]="SUMAM DAQUI!!!"
 languagedialogue[5]="Que mal-educada! Tá bem! A gente nem precisava da sua ajuda mesmo!"
 languagedialogue[6]="Aquela otária mascarada antissocial... ela e seus cadáveres podres..."
@@ -182,6 +194,27 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]= "Se supone que un príncipe vive en las aguas cercanas… pero necesitarán algo para caminar por el fondo marino…"
+languagedialogue[2]="¿Y qué es?"
+languagedialogue[3]="¡¿Oh, qué es esto?!"
+languagedialogue[4]="Mmm ¿cuál es tu receta?"
+languagedialogue[5]= "Vaya… ¿te resulta apetitoso? Esta es nueva."
+languagedialogue[6]="¿Tus papilas gustativas están rotas o qué?!"
+languagedialogue[7]= "¿Eres siquiera humana…?"
+languagedialogue[8]="¿Eso es seguro para comer…?"
+languagedialogue[9]="Chicas, no sean groseras con nuestra anfitriona. ¡Coman la sopa!"
+languagedialogue[10]="PERO—"
+languagedialogue[11]="¡COMAN!"
+languagedialogue[12]="Lo conozco. Nunca quise verlo por… la situación, pero supongo que no tenemos otra opción."
+languagedialogue[13]= "Pues les deseo suerte con eso. Al menos conocí a alguien que aprecia mi trabajo."
+languagedialogue[14]="Vamos, chicas. Dejen de exagerar. La sopa estuvo buenísima."
+languagedialogue[15]="Viva incluso le puso mayonesa y kétchup como condimento. Eso… no…"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Supostamente, um príncipe vive nas águas próximas... Mas você precisará de algo para pisar no fundo do mar..."
 languagedialogue[2]="E isso seria?"
@@ -392,6 +425,18 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Parece que su camino las lleva al desierto…"
+languagedialogue[2]="Bien pero… ¿a qué parte exactamente?"
+languagedialogue[3]="No sé, ¡descúbranlo ustedes! De hecho… para que se vayan más rápido… haré que el viaje sea corto."
+languagedialogue[4]="Vaya viaje rápido… ¡MIS PIES!"
+languagedialogue[5]="Hace… calor… demasiado incluso para mí…"
+languagedialogue[6]="Acostúmbrate, chica. Es el desierto."
+languagedialogue[7]="¡OH miren allá! ¡Debe ser eso!"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Parece que o seu caminho cai em um deserto..."
 languagedialogue[2]="Beleza, mas... Onde exatamente?"

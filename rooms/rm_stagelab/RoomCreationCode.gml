@@ -24,6 +24,9 @@ stagename="DANGEROUS SCIENCE"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="CIENCIA PELIGROSA"
+break;
 case 2:///Portuguese
 stagename="CIÊNCIA CABULOSA"
 break;

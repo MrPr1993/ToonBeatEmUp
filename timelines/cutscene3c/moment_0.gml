@@ -434,6 +434,34 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT="¡INTENTA RESOLVER EL\nACERTIJO DE LAS ONI!"
+CDtextA="LA ONI ROJA MIENTE."
+CDtextB="AMBAS ONI MIENTEN."
+CDtextC="LA ONI AZUL MIENTE."
+
+languagedialogue[1]="Qué fuerza…"
+languagedialogue[2]="Qué poder…"
+languagedialogue[3]="Para usarlo y atacar a nuestras empleadas y clientas."
+languagedialogue[4]="¡Queremos respuestas! ¿Qué planean esos ladrones hacer con nuestro tesoro?!"
+languagedialogue[5]="Será mejor que hablen, chicas. Somos cuatro contra dos."
+languagedialogue[6]= "Qué arrogantes…"
+languagedialogue[7]="Tú y tu gran bocota…"
+languagedialogue[8]= "Deberían aprender a comportarse…"
+languagedialogue[9]= "Y bien podríamos hacerlas pedazos aquí mismo…"
+languagedialogue[10]="Pero ustedes son demasiado divertidas para hacer eso."
+languagedialogue[11]="Okay…?"
+languagedialogue[12]="Las dejaremos ir… pero primero, juguemos un juego."
+languagedialogue[13]="¿Un juego? ¿Qué quieres decir?"
+languagedialogue[14]= "Solo eso. Resuelvan nuestro acertijo, y a cambio las enviaremos por el camino hacia las respuestas que buscan."
+languagedialogue[15]="¡Oh, un acertijo! ¡Qué divertido! ¡Denlo de una vez!"
+languagedialogue[16]= "Una de nosotras siempre dice la verdad… como sobre cómo enceramos nuestros cuernos…"
+languagedialogue[17]="…mientras la otra siempre miente… como sobre tener 300 años…"
+languagedialogue[18]="¿Cuál de nosotras es la mentirosa?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 CDtextT="TENTE RESOLVER A CHARADA\nDAS IRMÃS ONI!"
 CDtextA="ONI VERMELHO ESTÁ MENTINDO."

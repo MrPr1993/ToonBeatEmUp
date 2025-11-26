@@ -23,6 +23,9 @@ stagename="AHEAD IN THE CLOUDS"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="ADELANTE ENTRE LAS NUBES"
+break;
 case 2:///Portuguese
 stagename="ACIMA DAS NUVENS"
 break;

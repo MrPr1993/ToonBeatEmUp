@@ -22,6 +22,30 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Esta lleva al pantano. Allí vive una buena vecina mía que trata bien a los no-muertos."
+
+languagedialogue[2]="¿Al pantano? Genial… No puedo esperar a caminar entre lodo…"
+
+languagedialogue[3]="Ohhhh, suena baboso…"
+
+languagedialogue[4]="Vamos chicas. Nada de quejarse, mejor terminemos con esto."
+
+languagedialogue[5]="¡Yo digo que venga! He corrido por varios pantanos, ¡síganme!"
+
+languagedialogue[6]="¿Qué quieres decir con eso…?"
+
+languagedialogue[7]="¿Qué? ¿Nunca fueron a peleas de lodo?"
+
+languagedialogue[8]="..."
+
+languagedialogue[9]="Sigamos."
+
+languagedialogue[10]="…ups. Olvidé decirles que ella no es muy sociable. Ni modo."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="Esta porta conduz ao pântano. Lá habita uma boa vizinha minha muito cordial para com os mortos-vivos.."
 
@@ -176,6 +200,31 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Esta lleva a un carnaval. Iría yo misma, pero… los patos me dan desmayos…"
+
+languagedialogue[2]="¿Patos? ¿En serio…?"
+
+languagedialogue[3]="¿¡Carnaval?! ¡Ohhh me encantan los carnavales! ¡Vamos, VAMOS!"
+
+languagedialogue[4]="Es como si olvidara por completo que nos acaban de decapitar…"
+
+languagedialogue[5]="Siempre mirando hacia adelante, esa chica. Será mejor seguirle el paso."
+
+
+languagedialogue[6]="Bueno, al menos esto me distrae de ti. Tampoco dabas tanto miedo."
+
+languagedialogue[7]= "¿¡AH, NO!?!"
+
+languagedialogue[8]="¿Dónde está Viva?"
+
+languagedialogue[9]="Muy bien chicas, vámonos al carnaval."
+
+languagedialogue[10]="…¿Siempre fue tan pálida?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Esta leva a uma festividade. Eu mesmo iria, se não fosse pelo detalhe que... patos me assombram..."
 
@@ -349,6 +398,24 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Esta lleva a una playa. Allí vive una bruja marina. Quizá logren que las ayude."
+
+languagedialogue[2]= "Un paseo por la playa suena bien, la verdad. Menos mal que tengo traje de baño debajo."
+
+languagedialogue[3]= "¡No vamos a nadar! Vamos a buscar a una bruja, ¡en marcha!"
+
+languagedialogue[4]="Igual podemos disfrutar la vista en el camino. El mar se ve tan bonito de noche…"
+
+languagedialogue[5]="Manténganse alertas… Si vamos de noche, seguro habrá tipos raros esperando."
+
+languagedialogue[6]="Ah esperen, no traje traje de baño. Oh bueno."
+
+languagedialogue[7]="Ah, como en los viejos tiempos…"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Esta leva a uma praia. Lá reside uma bruxa do mar. Talvez consigas convencê-la a prestar auxílio?"
 

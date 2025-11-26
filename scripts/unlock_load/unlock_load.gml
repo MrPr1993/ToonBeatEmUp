@@ -143,7 +143,7 @@ repeat(30)
 global.SecretBreak[_rep]=ini_read_real("SECdata", ""+string(_rep), 0)
 _rep+=1;
 }
-
+var _rep=1;
 repeat(30)
 {
 global.FishData[_rep]=ini_read_real("FISHdata", ""+string(_rep), 0);

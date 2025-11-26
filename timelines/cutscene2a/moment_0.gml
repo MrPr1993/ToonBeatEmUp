@@ -213,6 +213,23 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Espanol
+CDtextT="¡EL BARCO NO TIENE PILOTO!\n¿Y AHORA?!"
+CDtextA="¡ABANDONEN EL BARCO!"
+CDtextB="¡TOMEN EL TIMÓN!"
+CDtextC="¡DESPIERTA A ROSY!"
+languagedialogue[1]="BUENO, ESO FUE ALGO."
+languagedialogue[2]="VAYA, ES ENORME."
+languagedialogue[3]="Ugh... PERO ESE CAMIÓN SE ESCAPÓ. ¿Y AHORA?"
+languagedialogue[4]="PODRÍAMOS PEDIRLE AL CAPITÁN DEL BARCO QUE NOS LLEVE HASTA UN PUERTO?"
+languagedialogue[5]="PUES CLARO..."
+languagedialogue[6]="UN PROBLEMA."
+languagedialogue[7]="¿Y CUÁL ES?"
+languagedialogue[8]="¡NO HAY NADIE AL TIMÓN!"
+languagedialogue[9]="¡NO PUEDES HABLAR EN SERIO!"
+languagedialogue[10]="ENTONCES... ¿ALGUNA DE USTEDES SABE MANEJAR ESTO?"
+//cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 CDtextT="O NAVIO NÃO TEM TIMONEIRO!\nE AGORA?!"
 CDtextA="ABANDONAR O NAVIO!"

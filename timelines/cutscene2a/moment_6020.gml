@@ -27,6 +27,21 @@ cutscenename="VIVA" cutsceneline="WE NEED TO JUMP!"
 with oControl
 switch(global.Language)
 {
+case 1: ////Espanol
+languagedialogue[1]="¡TENEMOS QUE SALTAR!"
+languagedialogue[2]="¡NO ME LO TIENES QUE DECIR DOS VECES!"
+languagedialogue[3]="¡ABANDONEN EL BARCO!"
+languagedialogue[4]="Y AHÍ VA..."
+languagedialogue[5]="...ASÍ QUE NOS TOCA NADAR."
+languagedialogue[6]="¡HEY, VEO TIERRA ALLÁ!"
+languagedialogue[7]="¡GENIAL! ¡VAMOS ALLÁ! ESPERA... ¿DÓNDE ESTÁ...?"
+languagedialogue[8]="OH. UNA DE NOSOTRAS TIENE QUE HACER RCP."
+languagedialogue[9]="BLBLBBLLBLBLALSBLB."
+languagedialogue[10]="MEJOR OLVIDA, ESTÁ RESPIRANDO. CREO..."
+
+cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 languagedialogue[1]="TEMOS QUE DAR O FORA DAQUI!"
 languagedialogue[2]="É PRA JÁ! A ÚLTIMA É MULHER DO PADRE!"
@@ -196,6 +211,19 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Espanol
+languagedialogue[1]="¡TENEMOS QUE TOMAR EL TIMÓN!"
+languagedialogue[2]="¿ASÍ?"
+languagedialogue[3]="¡DIOS MÍO! ¡NO ERA ESO LO QUE QUERÍA DECIR!"
+languagedialogue[4]="¡BUENO, ESTO ES GENIAL!"
+languagedialogue[5]="GRACIAS."
+languagedialogue[6]="¡ESTABA SIENDO SARCÁSTICA!"
+languagedialogue[7]="¡AHHHHH! ¡CUIDADO! ¡VAMOS A CHOCAR!"
+languagedialogue[8]="¡AAAAAAAAAAAAAAAAAAAHHHHHHH!!!!"
+
+cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="NÓS VAMOS PEGAR O LEME!"
 languagedialogue[2]="TIPO ASSIM?"
@@ -302,6 +330,21 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¿Eh? ¿TÚ? ¿POR QUÉ TÚ...?"
+languagedialogue[2]="¡NO HAY TIEMPO PARA PEGARLE A MI HERMOSA CARA! ¡NO HAY NADIE EN EL TIMÓN!"
+languagedialogue[3]="¡Ah, rayos! ¡Fuera de mi camino!"
+languagedialogue[4]="¿ASÍ QUE NO ESTÁS TRABAJANDO CON ELLOS?"
+languagedialogue[5]="¡CLARO QUE NO! ESTABA OCUPADA SACANDO A POLIZONES QUE SE HABÍAN METIDO EN MI PRECIOSO BARCO."
+languagedialogue[6]="PUES ME ALEGRA QUE HAYAMOS RESUELTO ESTO. Y ME ALEGRA QUE NOS ECHES UNA MANO."
+languagedialogue[7]="¡CLARO, BAHATI! ¡SOY TU MAYOR FAN!"
+languagedialogue[8]="ESO LO EXPLICA TODO. ENTONCES, ¿A DÓNDE SE DIRIGE ESTE BARCO?"
+languagedialogue[9]="VA HACIA EL PUERTO CERCA DE ESE LUGAR DEL DOJO CASINO. HE OÍDO QUE HAY GENTE SOSPECHOSA APARECIENDO ALLÍ."
+languagedialogue[10]="ENTONCES AHÍ DEBEMOS IR PARA ENCONTRAR DÓNDE LLEVARON NUESTRO TESORO."
+languagedialogue[11]="¡GENIAL! ¡NO PUEDO ESPERAR A PEGARLES A UNOS NINJAS!"
+//cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="HUH?! TU?! MAS POR QUE TU..."
 languagedialogue[2]="NÃO É HORA PRA BATER NO MEU LINDO ROSTO! TEM NINGUÉM NO LEME!"

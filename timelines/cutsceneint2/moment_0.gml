@@ -213,6 +213,20 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Spanish
+languagedialogue[1]="¡JEEEEEFE!!! ¡Esos cantantes de bar enfurecidos nos están alcanzando y realmente están perjudicando a la pandilla! ¡Tenemos que hacer algo antes de que nos atrapen!"
+languagedialogue[2]="Grr... ¡Usaremos todos los recursos, no escatimaremos gastos, haremos lo que sea necesario para DETENERLOS!"
+languagedialogue[3]="¡Sí, jefe!"
+languagedialogue[4]="¡Dr. Fran!"
+languagedialogue[5]="Sí, Maestro Van Bad?"
+languagedialogue[6]="¿Los tesoros ya están listos para 'ESTO'?"
+languagedialogue[7]="Llegarán pronto, Maestro Van Bad."
+languagedialogue[8]="¡Vamos, ya! ¡Se nos acaba el tiempo!"
+languagedialogue[9]="Sí, Maestro Van Bad."
+languagedialogue[10]="Pequeñas divas molestas... Pronto descubrirán lo que pasa con quienes se meten con Van Bad..."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="CHEFEEEEEE!!! Aqueles cantores de bar enfurecidos estão nos alcançando e realmente prejudicando a gangue! Temos que fazer alguma coisa antes que eles nos peguem!"
 languagedialogue[2]="Grr... Usaremos todos os recursos, não pouparemos despesas, faremos o que for preciso para DETÊ-LOS!"

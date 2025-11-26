@@ -18,6 +18,7 @@ resulttext2="BONUS"
 
 switch(global.Language)
 {
+case 1: resulttext2="BONUS" break;
 case 2: resulttext2="BÔNUS" break;
 }
 

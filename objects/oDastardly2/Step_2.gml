@@ -41,8 +41,7 @@ if AnimFrame<200
 {image_index+=0.2 if image_index>=4 image_index=2
 if image_index>=2
 if y>oControl.wallY y-=2;
-if x!=clamp(x,oControl.camX+160-2,oControl.camX+160+2)
-{if x>oControl.camX+160 x-=2 else x+=2}
+if x!=clamp(x,oControl.camX+160-2,oControl.camX+160+2) {if x>oControl.camX+160 x-=2 else x+=2}
 }
 
 AnimFrame++;

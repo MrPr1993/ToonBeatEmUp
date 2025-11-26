@@ -69,7 +69,7 @@ player_extramovesettings()
 
 if hp<=0
 if DeathCryOnce=0
-{DeathCryOnce=1 disappearTime=24
+{DeathCryOnce=1 disappearTime=24 global.ArcadeDeath=1
 PlaySound(DeathCry)
 }
 

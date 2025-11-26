@@ -301,6 +301,31 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT="¡PIDAN UN DESEO!\n¡ESCOJAN CON SABIDURÍA!"
+CDtextA="ALGO MÁS FRESCO."
+CDtextB="ESTAR SOBRE TIERRA FIRME."
+CDtextC="ALCANZAR MAYORES ALTURAS."
+
+languagedialogue[1]="¡ME RINDO! ¡¡POR FAVOR NO ME LASTIMEN!!"
+languagedialogue[2]="¡Por favor! ¡No hagan daño a mi amado!"
+languagedialogue[3]="¿¡¿Amado?!?"
+languagedialogue[4]="Me perdí buscando al resto de la banda… ¡Pero entonces conocí a esta preciosa dama y nos enamoramos perdidamente!"
+languagedialogue[5]="¡Es verdad! Y si nos dejan ir, les concederé un deseo."
+languagedialogue[6]="Puedo darles riqueza."
+languagedialogue[7]="Eh… ya tenemos eso. Somos ricas."
+languagedialogue[8]="Oh… ¿Y fama?"
+languagedialogue[9]="Tenemos toda la fama que necesitamos."
+languagedialogue[10]="¿Y amor? ¡El amor es muy importante!"
+languagedialogue[11]="Todo cubierto."
+languagedialogue[12]="Este es nuestro tipo de amor."
+languagedialogue[13]="…De acuerdo."
+languagedialogue[14]="Solo díganme qué desean… Pero elijan sus palabras con cuidado…"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+
+break;	
+
 case 2: ////Portuguese
 CDtextT="FAÇA UM DESEJO!\nESCOLHA COM SABEDORIA!"
 CDtextA="UM LUGAR MAIS FRIO."

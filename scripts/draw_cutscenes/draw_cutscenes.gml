@@ -47,6 +47,44 @@ var _sn26="CREDITS"
 
 switch(global.Language)
 {
+case 1:
+_sn0="SELECCIONA UNA\nCINEMÁTICA PARA REPRODUCIR"
+_sn1="¡HORA DE LAS DIVAS!"
+_sn2="EL CAOS"
+_sn3="LOBIZONEADAS"
+_sn4="¿QUIÉN ESTÁ CONDUCIENDO?"
+_sn5="BAJANDO"
+_sn6="EL SHERIFF"
+_sn7="PROBLEMA DEL FARAÓN"
+_sn8="¡QUE LES CORTEN LA CABEZA!"
+_sn9="LA APUESTA DEL ONI"
+
+_sn10="MULHERES OURIÇADAS"
+
+_sn11="PATOS Y LOCURA"
+_sn12="BRUJA ANEGADA"
+_sn13="MAMÁ MARINA"
+_sn14="PRÍNCIPE APUESTO"
+_sn15="DE VUELTA DEL ESPACIO"
+_sn16="AMOR DEL GENIO"
+
+_sn17="A DARLO TODO"
+
+_sn18="PLANTA REAL"
+
+_sn19="REFLEJO ROTO"
+_sn20="DRAGÓN TRISTE"
+_sn21="¡ATRAPEN ESE DIRIGIBLE!"
+
+_sn22="MAL FINAL"
+_sn23="Y FIN"// (normal ending)
+_sn24="Y ARRESTADAS"// (final com as divas presas por seguirem um caminho que envolveu danos colaterais)
+_sn25="Y FURIOSA"// (ending with Viva very angry at the player for making them suffer taking the worst and painfully humiliating paths (ex. Jumping off a plane, Viva getting bruised on a cutscene))
+_sn26="CRÉDITOS"
+ 
+
+break;	
+
 case 2:
 _sn0="SELECIONE UMA CENA\nPARA TOCAR"
 _sn1="MOMENTO DIVA!"

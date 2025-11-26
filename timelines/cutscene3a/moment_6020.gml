@@ -24,6 +24,20 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¿Qué hay de la del pantano?"
+languagedialogue[2]="Recordamos haber compartido un lazo con una mística del pantano… aún podemos sentir su presencia allí. ¡Rápido! ¡Las teletransportaremos ahora!"
+languagedialogue[3]="Suena pegajoso. Me gusta cómo suena."
+languagedialogue[4]="¡Y allá van!"
+languagedialogue[5]="ESPERA, no estamos-"
+languagedialogue[6]="...listas."
+languagedialogue[7]="Wow, es buena."
+languagedialogue[8]="Está muy oscuro aquí…"
+languagedialogue[9]="Da igual. Vamos a encontrar a esa mística. Apuesto a que es una bruja."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Então você tem um amigo nos pântanos?"
 languagedialogue[2]="Recordo-me de ter compartilhado profundo laço com um ser místico nos pântanos... Sinto ainda sua presença lá. Depressa! Levar-vos-ei até lá agora!"
@@ -177,6 +191,20 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Vamos, Hina, no tenemos tiempo para escuchar a este fósil, además las vi correr hacia un carnaval."
+languagedialogue[2]= "¿¡FÓSIL!? ¡¡CÓMO TE ATREVES!! OYE, ¿A DÓNDE-?"
+languagedialogue[3]="¿Carnaval~? Ohh, ¿tendrán juegos divertidos?"
+languagedialogue[4]="Oooh, ¿habrá un juego de fuerza?"
+languagedialogue[5]="¡Quiero montar el toro más grande!"
+languagedialogue[6]="Concéntrense, chicas. Concéntrense…"
+languagedialogue[7]="..."
+languagedialogue[8]="¿Carn-e-val?"
+languagedialogue[9]="¿Cuánto tiempo estuve fuera?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Qualé, Hina, nós não temos tempo para ouvir esse fóssil. Sem contar que eu vi eles entrando em um parque de diversões."
 languagedialogue[2]="Fóssil?! COMO OUSAIS VÓS TAL AFRONTA?! Ei! Onde estais —"
@@ -293,6 +321,18 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]= "Hicimos amistad con alguien bastante poderosa en los días de la odisea. Podemos teletransportarlas a su dominio con facilidad."
+languagedialogue[2]="¿En serio? Podría ser útil."
+languagedialogue[3]="¡POR SUPUESTO! ¡SOY UNA DIOSA!"
+languagedialogue[4]="¿Y qué esperamos entonces? ¡Teletranspórtanos!"
+languagedialogue[5]="Muy bien. Les deseamos suerte y esperaremos su regreso…"
+languagedialogue[6]="¡AY! ¿NO PODÍA TELETRANSPORTARNOS MÁS CERCA DEL SUELO?!"
+cutsceneline=languagedialogue[1]
+
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Fizemos amizade com alguém de grande poder nos tempos da Odisseia. Com facilidade, vos levaremos ao seu domínio."
 languagedialogue[2]="Sério? Seria uma ajuda e tanto."

@@ -19,6 +19,20 @@ var _sn10="SQUID"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+_sn0="CHATARRA"
+_sn1="LOBINA"
+_sn2="MOJARRA AZUL"
+_sn3="LUCIO"
+_sn4="BAGRE"
+_sn5="ESTURIÓN"
+_sn6="PEJELAGARTO DE NARIZ LARGA"
+_sn7=" SALMÓN"
+_sn8=" LUCHO ALMIZCLERO"
+_sn9=" PEZ GLOBO"
+_sn10=" CALAMAR"
+break;			
+
 case 2:///Portuguese
 _sn0="LIXO"
 _sn1="ROBALO"

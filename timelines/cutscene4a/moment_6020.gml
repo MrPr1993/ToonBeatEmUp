@@ -24,6 +24,16 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]= "Olvídenlo, su pico está demasiado apretado para soltar algo útil. ¿Dónde está la salida?"
+languagedialogue[2]="¡Pero mira nada más…! ¡Bien! La salida está por el campo de maíz, que la puerta les dé en el trasero al salir."
+languagedialogue[3]="¿No quiso decir ‘que no les dé’?"
+languagedialogue[4]="No, Hina. Dijo exactamente lo que quería decir."
+languagedialogue[5]= "Jejejeh… Esas papanatas no tienen idea de que la gente ha estado desapareciendo por ahí…"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Esquece, esse bico tá selado demais pra essa informação valer a pena. Onde está a saída?"
 languagedialogue[2]="Porque eu deveria.... Tá! A saída é pelo milharal, deixem a porta bater nas suas costas ao sair!"
@@ -122,6 +132,18 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Bien bien, ¿y si lo compensamos ayudándote con tu show? ¿Nos dirías entonces?"
+languagedialogue[2]="¡Aw cielos, de verdad lo harían?! ¡Eso arreglaría todo en un dos por tres!"
+languagedialogue[3]="¿¡Estás loca?!"
+languagedialogue[4]="Shhhh, confiemos en Bahati."
+languagedialogue[5]="Oigan, esta no es la sala de vestuario…"
+languagedialogue[6]= "Y ahora, para el gran final… ¡ESTAS DAMAS SE VAN DE VIAJE AL OCÉANO! ¡CORTESÍA DEL CAÑÓN DE DIXIE!"
+languagedialogue[7]="¡LO SABÍA! ¡Sabía que no debimos ayudar a ese @#$% pato! Pero si vamos hacia el océano… conozco a alguien a quien podemos visitar…"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Beleza, beleza, que tal compensarmos ajudando com o show? Poderia nos contar depois?"
 languagedialogue[2]="Ai poxa, faria isso por mim?! Isso ia resolver tudo num vapt-vupt!"
@@ -306,6 +328,14 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="…Son despreciables…"
+languagedialogue[2]= "Bien, tuve que encargarme del trabajo de mi jefe porque él se fue de cacería de tesoros… creo que a algún lugar del desierto del Sahara."
+languagedialogue[3]="¡El desierto! ¡En marcha, chicas!"
+languagedialogue[4]="¡Ya voy! ¡TAAAAXIIIIII!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="...Suas asquerosas..."
 languagedialogue[2]="Tá, tive que assumir o trampo da chefia aqui porque foram atrás de um tesouro, acho que era em algum lugar no deserto do Saara."

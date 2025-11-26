@@ -102,6 +102,7 @@ global.MultiSuper=isPlayer
 	}
 
 	}     } 
+	var _bb=0;
 	   if AnimFrame=16.1 ///Clear Screen
 	   if instance_exists(targeten) with targeten if canact=1 and act=1 and immune=0
 	 //  if x<camera_get_view_x(view_camera[0])+320+sprite_get_width(mask_index)/2 and x>camera_get_view_x(view_camera[0])-sprite_get_width(mask_index)/2
@@ -113,6 +114,8 @@ global.MultiSuper=isPlayer
 	other.PlayerScore+=points
 	else other.PlayerScore+=pointshit
 	with other combo_points()
+		 if _bb=0 if other.object_index=oPlayer {playerFrom=other.playerNO with oPlayer playerGet=0 if BossTag!=0 {targetEnemy.playerGet=1 _bb=1}}
+	
 	HitType=19936 hit_reaction()// event_user(0)
 	}
     

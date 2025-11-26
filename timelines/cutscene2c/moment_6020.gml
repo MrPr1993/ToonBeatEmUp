@@ -11,6 +11,18 @@ with oControl {cutscenename="BAHATI" cutsceneline="LADIES, WE GOT TO BE HONEST T
 with oControl
 switch(global.Language)
 {
+case 1: ////Espanol
+languagedialogue[1]="CHICAS, HAY QUE SER HONESTAS CON LA SHERIFF, LE DIREMOS LA VERDAD."
+languagedialogue[2]="NINGUNA TIENE BOLETOS, ¿VERDAD?"
+languagedialogue[3]="NO... NO TENEMOS."
+languagedialogue[4]="¿¡HONESTIDAD!? ¿¡ESO ES LO MEJOR QUE TENÍAS?!"
+languagedialogue[5]="¡LO SIENTO! ¡NO PENSÉ QUE DE VERDAD NOS FUERA A TIRAR ASÍ, EN ESE ESTADO!"
+languagedialogue[6]="YA NO IMPORTA. IGUAL NO TENÍAMOS FORMA DE QUEDARNOS EN EL TREN."
+languagedialogue[7]="¿DÓNDE ESTAMOS...?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 languagedialogue[1]="CHEGA DE ESPETÁCULO, MADAMES, VAMOS FALAR A VERDADE PARA A XERIFE."
 languagedialogue[2]="NENHUMA SANTA ALMA PAGOU O BILHETE?"
@@ -158,6 +170,19 @@ __view_set( e__VW.XView, 0, SceneY )
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¡VAMOS! NO TENGO TODO EL DÍA Y-"
+languagedialogue[2]="¡RÁPIDO, A EMBESTIRLOS!"
+languagedialogue[3]="¡MALDITAS—!"
+languagedialogue[4]="¡YO PIDO LA PARTE DEL CARBÓN!"
+languagedialogue[5]="YO LE DARÉ MÁS FUEGO."
+languagedialogue[6]="¡OIGAN, ¿ESTÁN SEGURAS DE LO QUE HACEN?!"
+languagedialogue[7]="¡AHHHH, NO! ¡NO LO ESTAMOS, NO LO ESTAMOS!"
+languagedialogue[8]="¡AAAAAAAAAAAAAAAAAAAAAAHHHHHH!!!!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="ABRE O BICO! MEU RELÓGIO NÃO DOR-"
 languagedialogue[2]="PÉ NA TÁBUA!"
@@ -306,6 +331,24 @@ with oControl {cutscenename="HINA" cutsceneline="OH... TICKETS!"
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="OH… ¡BOLETOS!"
+languagedialogue[2]="¡¿CUÁNDO DEMONIOS COMPRASTE BOLETOS?!"
+languagedialogue[3]="CUANDO SUBIMOS AL TREN. SIEMPRE ES LO CORRECTO."
+languagedialogue[4]="…QUÉ ALMA TAN PURA, HINA."
+languagedialogue[5]="A VER..."
+languagedialogue[6]="SÍ. TODO EN ORDEN. BUSQUEN SUS ASIENTOS Y NO CAUSEN MÁS PROBLEMAS DE LOS QUE YA TENEMOS."
+languagedialogue[7]="HEY VIVA, ¿ALGO EN LA NOTA QUE DEJÓ ESA MUJER LOBA?"
+languagedialogue[8]="PARECE QUE ESTE TREN VA A UN LUGAR LLAMADO LUCKY DOJO CASINO."
+languagedialogue[9]="¡HE OÍDO DE ESE LUGAR! ¡TIENE CONEJITAS NINJA! ¡QUIERO PELEAR CON UNA!"
+languagedialogue[10]="Y LO HAREMOS PARA ENCONTRAR RESPUESTAS SOBRE LO QUE NOS ROBARON."
+languagedialogue[11]= "VAMOS. VAMOS A TOMAR ASIENTO. NECESITO ORDENAR MI COMIDA DE CONSUELO."
+languagedialogue[12]= "Y MUCHA."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 languagedialogue[1]="ATÁ... OS INGRESSOS!"
 languagedialogue[2]="QUANDO QUE VOCÊ COMPROU OS INGRESSOS?!"

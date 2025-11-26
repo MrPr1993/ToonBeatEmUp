@@ -11,6 +11,18 @@ with oControl {cutscenename="VIVA" cutsceneline="WE NEED TO GET THE PARACHUTES! 
 with oControl
 switch(global.Language)
 {
+case 1: ////Espanol
+languagedialogue[1]="¡NECESITAMOS LOS PARACAÍDAS! PERO LA PUERTA ESTÁ MUY LEJOS..."
+languagedialogue[2]="¡LOS TENGO!"
+languagedialogue[3]="¿CÓMO LOS—? ERR… BIEN. ¡APURÉMONOS Y SALGAMOS!"
+languagedialogue[4]="EL AVIÓN VA A ESTRELLARSE..."
+languagedialogue[5]="EHH, SEGURO ESTARÁN BIEN. ¿A DÓNDE VAMOS A CAER?"
+languagedialogue[6]="WOW. QUÉ TENEBROSO. ¡ATERRICEMOS ALLÍ!"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="PRECISAMOS DAQUELES PARAQUEDAS! MAS A PORTA TÁ NO QUINTO DOS INFERNO..."
 languagedialogue[2]="TÁ NA MÃO!"
@@ -140,6 +152,17 @@ __view_set( e__VW.XView, 0, SceneY )
 with oControl
 switch(global.Language)
 {
+case 1: ////Espanol
+languagedialogue[1]="¿¡QUÉ ESTABA PENSANDO?! ¡VAMOS A MORIR!"
+languagedialogue[2]="WOW, ¿NO SE TE OCURRIÓ UN PLAN MEJOR?"
+languagedialogue[3]="¿EN SERIO? ¡VAMOS A ESTALLAR CONTRA EL SUELO!"
+languagedialogue[4]="NO SI CAEMOS SOBRE ALGO QUE FRENÉ NUESTRA CAÍDA."
+languagedialogue[5]="¿QUÉ—? ¡¿CÓMO SE SUPONE QUE HAREMOS ESO?!"
+languagedialogue[6]="CONOZCO UN TRUCO. CONFÍEN EN MÍ. ¡MIREN ABAJO!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="O QUE EU TAVA PENSANDO?! NÓS VAMOS MORRER!"
 languagedialogue[2]="UÉ, VOCÊ NÃO ACHOU QUE SERIA UM BOM PLANO?"
@@ -227,6 +250,23 @@ with oControl {cutscenename="VIVA" cutsceneline="THE HARPY! LET'S GRAB HER AND H
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¡LA HARPIA! ¡AGÁRRENLA Y SUJÉNENSE!"
+languagedialogue[2]="¡YO ME ENCARGO!"
+languagedialogue[3]="¡BUENO, LO QUE FALTABA! ¡SERÁ MEJOR QUE ME EXPLIQUEN QUÉ HACEN ANTES DE QUE LAS SACUDA A TODAS!"
+languagedialogue[4]="¿NOSOTRAS? ¡TÚ NOS ATACASTE PRIMERO!"
+languagedialogue[5]="¡POR SUPUESTO! USTEDES, LADRONZUELAS, SE METIERON EN MI TERRITORIO A ROBAR A LOS DÉBILES!"
+languagedialogue[6]= "OH... PUEDE QUE HAYA CONFUNDIDO A LAS PERSONAS, SEÑORA. ¡A NOSOTRAS TAMBIÉN NOS ROBARON!"
+languagedialogue[7]="SE LLEVARON MI TESORO."
+languagedialogue[8]="¡NUESTRO TESORO!"
+languagedialogue[9]= "OH, BUENO, QUÉ VERGÜENZA. EN FIN, ME DISCULPO. TAL VEZ PUEDA COMPENSARLAS LLEVÁNDOLAS A UN LUGAR DONDE PROBABLEMENTE APARECIERON."
+languagedialogue[10]="¿A QUÉ LUGAR?"
+languagedialogue[11]= "ESE CASINO TIENE SEGURIDAD DURA, PERO AHÍ PODRÁN ENCONTRAR PISTAS DE A DÓNDE LLEVARON SUS COSAS PRECIOSAS."
+languagedialogue[12]="ENTONCES VAMOS. ¿QUÉ TAN DIFÍCIL PUEDE SER?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="A HARPIA! PEGUEM ELA E MONTEM EM CIMA!"
 languagedialogue[2]="SHOW DE BOLA!"

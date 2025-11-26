@@ -23,6 +23,10 @@ stagename="DEEP DEAD SWAMPS"
 
 	switch(global.Language)
 	{
+		
+case 1:///Portuguese
+stagename="PANTANOS PROFUNDAMENTE MUERTOS"
+break;
 case 2:///Portuguese
 stagename="BREJO DOS AFOGADOS"
 break;

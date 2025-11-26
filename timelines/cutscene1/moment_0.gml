@@ -38,6 +38,52 @@ stageIntro=0
 
 switch(global.Language)
 {
+case 1: ////Portuguese
+
+CDtextT="¡LADY WOLF SE ESTÁ\nESCAPANDO! ¿QUÉ HARÁS?"
+CDtextA="SEGUIRLA."
+CDtextB="DETENERLA."
+CDtextC="DEJARLA IR."
+
+languagedialogue[1]="BIEN. ¿A DÓNDE SE FUE ESE CAMIÓN? ¡HABLA, PERRITA!"
+languagedialogue[2]="¡H-Hey! ¡QUÉ DESCARADA!"
+languagedialogue[3]="¡Y NO SERÉ MÁS AMABLE HASTA QUE ME DIGAS ADÓNDE SE LLEVARON MI DIAMANTE!"
+languagedialogue[4]="OIGA SEÑORITA, ¿POR QUÉ NO SE CALMA? YA LES DIMOS SU BUENA PALIZA."
+languagedialogue[5]="AH CIERTO. USTEDES TRES… TAMBIÉN LES ROBARON SUS COSAS."
+languagedialogue[6]="SÍ… ¿Y ELLA NO PARECE MUY DISPUESTA A HABLAR…"
+languagedialogue[7]="OH, ¡PERMÍTANME! YO SÉ UNA BUENA FORMA DE PERSUADIRLAS."
+languagedialogue[8]="¿A DÓNDE SE LLEVARON MI TESORO? ¡HABLA, PERRA, O TE METO MI PATA POR EL-"
+languagedialogue[9]="¡GUCK! ¡GACK!- ¡MUÉRDANME!"
+languagedialogue[10]="O-OYE, ESO SUENA UN POCO FUERTE…"
+languagedialogue[11]="VAMOS, NO TIENE SENTIDO SEGUIR GOLPEANDO A UNA PERRA MEDIO MUERTA SI QUIERES RESPUESTAS."
+languagedialogue[12]="EH… ¿PERDÓN?"
+languagedialogue[13]= "MÍRELA, ¡YA TUVO SUFICIENTE! LA INTERROGACIÓN BRUTA NO SIEMPRE FUNCIONA. ¿NO LO HA VISTO EN LAS PELÍCULAS?"
+languagedialogue[14]="¿ENTONCES QUÉ SUGIERES?"
+languagedialogue[15]= "¡OH! ¡USTEDES DOS PUEDEN HACER DE POLICÍA BUENA Y POLICÍA MALA!"
+languagedialogue[16]= "¡YO SOY LA POLICÍA BUENA! ¡PRIMERO!"
+languagedialogue[17]="¿QUÉ-? ¿CUÁNTOS AÑOS CREES QUE TENEMOS, 5?!"
+languagedialogue[18]="YO IBA A SUGERIR QUE USÁRAMOS UN SILBATO PARA PERROS."
+//(the divas start arguing)
+languagedialogue[19]="¿UN SILBATO PARA PERROS?!"
+languagedialogue[20]="¡ESO ES RIDÍCULO! ¿CÓMO VA A AYUDAR ESO?"
+languagedialogue[21]="¿CÓMO QUE NO? ¡ES UNA BUENA IDEA!"
+languagedialogue[22]="SUENA TONTO, PERO… ES UN POCO-"
+languagedialogue[23]="ME GUSTA ESE PLAN, PERO OYE-"
+languagedialogue[24]="¡YO TENGO UN MEJOR PLAN! Y SE TRATA DE-"
+languagedialogue[25]= "¡NO, YO TENGO UN PLAN MEJOR! Y ES-"
+languagedialogue[26]="EH… ¿CHICAS?"
+languagedialogue[27]= "¡YO TENGO UNA IDEA! ¡Y VOY A-"
+languagedialogue[28]="(SEGUIMOS DISCUTIENDO)"
+languagedialogue[29]="OH, ¿PUEDO DECIR UNA COSA MÁS?"
+languagedialogue[30]="...¿QUÉ COSA?"
+languagedialogue[31]="LA SEÑORA LOBA YA NO ESTÁ."
+languagedialogue[32]="¿¡QUÉ!?"
+languagedialogue[33]="¡HEY! ¡DETENTE!"
+
+cutsceneline=languagedialogue[1]
+
+break;	
+
 case 2: ////Portuguese
 
 CDtextT="LADY WOLF ESTÁ FUGINDO!\nO QUE VOCÊ VAI FAZER?"
@@ -79,8 +125,6 @@ languagedialogue[30]="...O QUE É?"
 languagedialogue[31]="A LOBINHA FOI PASSEAR."
 languagedialogue[32]="COMO É QUE É?!"
 languagedialogue[33]="PARADA JÁ AÍ!"
-
-
 
 cutsceneline=languagedialogue[1]
 

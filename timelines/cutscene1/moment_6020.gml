@@ -9,6 +9,14 @@ if cutsceneDecmode=0
 	
 switch(global.Language)
 {
+case 1: ////Espanol
+languagedialogue[1]="SIGÁMOSLA."
+languagedialogue[2]="¿SABES A DÓNDE VA?"
+languagedialogue[3]="HAY UN AEROPUERTO CERCA. ASÍ QUE MÁS VALE IR A PIE."
+languagedialogue[4]="¡VAMOS!"
+languagedialogue[5]="¡OYE! ¡ESPERA! ¡TODAVÍA NO HE TERMINADO CON ELLA!"
+languagedialogue[6]="¿EL AEROPUERTO? BUENO… SUPONGO QUE ES UN BUEN COMIENZO."
+break;	
 case 2: ////Portuguese
 languagedialogue[1]="VAMOS SEGUIR ELA."
 languagedialogue[2]="VOCÊ SABE ONDE ELA ESTÁ INDO?"
@@ -43,6 +51,13 @@ cutsceneline="HOLD IT RIGHT THERE!"
 
 switch(global.Language)
 {
+case 1: ////Espanol
+languagedialogue[1]="¡DETENTE AHÍ MISMO!"
+languagedialogue[2]="...BIEN, ESTÁ BIEN. LLEVAMOS LAS COSAS AL BARCO QUE ESPERA JUNTO AL PUENTE, ¿CONTENTAS?"
+languagedialogue[3]="SÉ DÓNDE ES. MALDICIÓN. PERO… ¿CÓMO SE SUPONE QUE VAMOS A LLEGAR…?"
+languagedialogue[4]="OIGAN. ¡MIREN ALLÁ!"
+languagedialogue[5]="...BUENO ENTONCES. ¿NOS VAMOS?"
+break;	
 case 2: ////Portuguese
 languagedialogue[1]="VAI SE ANIMANDO NÃO!"
 languagedialogue[2]="...OKAY. TÁ BOM. LEVAMOS A MERCADORIA PARA UM NAVIO ANCORADO PERTO DA PONTE, FELIZ AGORA?"
@@ -70,6 +85,26 @@ cutsceneline="...LET HER GO. SHE'S NOT WORTH IT."
 
 switch(global.Language)
 {
+case 1: ////Espanol
+languagedialogue[1]="...DÉJENLA IR. NO VALE LA PENA."
+languagedialogue[2]="OYE… SE LE CAYÓ ESO."
+languagedialogue[3]="ES SOBRE UN TREN… LLAMADO EL LOCO DOS."
+languagedialogue[4]="¡ESOS IDIOTAS! ¿TAMBIÉN VAN A ROBAR UN TREN?"
+languagedialogue[5]="¡AY DIOS! ¡SALDRÁ PRONTO! PERO LOS BOLETOS ESTÁN AGOTADOS."
+languagedialogue[6]="OH, VAYA… ¿CÓMO SE SUPONE QUE VAMOS A SEGUIRLOS AHORA?"
+languagedialogue[7]="¡TENGO UNA IDEA!"
+languagedialogue[8]="...¿QUÉ COSA? ¿HINA, VERDAD?"
+languagedialogue[9]="TENGO FORMAS DE SUBIR A VIAJES CUANDO PIERDO UN BOLETO."
+languagedialogue[10]="¿Y ESA ES…?"
+languagedialogue[11]="¡¿ESTA ES TU IDEA?! ¡NO PUEDO SENTIR MIS PIERNAS!"
+languagedialogue[12]="¿NO SON TODAS TAN FLEXIBLES?"
+languagedialogue[13]="DISCÚLPENME… ¡PERO ESTO ESTÁ MUY APRETADO!"
+languagedialogue[14]="¡AHORA ME PREGUNTO CÓMO NOS METISTE A TODAS AQUÍ! ¿Y DE QUIÉN ES ESTE PIE?"
+languagedialogue[15]="ES MÍO."
+languagedialogue[16]="¡NO PUEDO SOPORTARLO MÁS! ¡QUIERO SALIR!"
+
+break;
+
 case 2: ////Portuguese
 languagedialogue[1]="...DEIXA ELA IR. NÃO VALE O ESFORÇO."
 languagedialogue[2]="OLHA... ELA DEIXOU ISSO CAIR."

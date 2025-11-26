@@ -465,7 +465,7 @@ creditmoment=string(_t5)+"\n \nMRPR1993\nSHADES\nSED2116\nFLASH TRICKSTAR" ;
 else if creditsTime<7+5*8
 creditmoment=string(_t6)+"\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
 else if creditsTime<7+5*10
-creditmoment=string(_t7)+"\n \nMRPR1993\nBRIOCHITTOS" ;
+creditmoment=string(_t7)+"\n \nMRPR1993\nSAID\nBRIOCHITTOS" ;
 else if creditsTime<7+5*10
 creditmoment=string(_t8)+"\nMRPR1993\nPIXELATED POPE\nJUJUADAMS" ;
 else if creditsTime<7+5*11

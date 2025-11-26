@@ -16,6 +16,9 @@ stagename="TRAINING TRAVEL"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="VIAJE DE TRENAMIENTO"
+break;
 case 2:///Portuguese
 stagename="TREMENDA VIAGEM"
 break;

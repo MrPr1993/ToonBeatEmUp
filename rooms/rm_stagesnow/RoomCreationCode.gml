@@ -24,6 +24,9 @@ stagename="GREAT CLIMBING COLD"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="GRAN ESCALADA HELADA"
+break;		
 case 2:///Portuguese
 stagename="ALPES DO BATE-QUEIXO"
 break;

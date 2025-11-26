@@ -223,6 +223,22 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT="¡EL AVIÓN SE CAE!\n¿QUÉ HARÁS?"
+CDtextA="¡AGARRAR LOS PARACAÍDAS!"
+CDtextB="¡SALTAR DEL AVIÓN!"
+CDtextC="¡USAR A LA HARPIA!"
+
+languagedialogue[1]="¡EL AVIÓN SE VIENE ABAJO!"
+languagedialogue[2]="¡OH NO! ¿QUÉ HACEMOS?!"
+languagedialogue[3]="WOW. ES UNA CAÍDA LARGUÍSIMA..."
+languagedialogue[4]="¡MIREN, CHICAS!"
+languagedialogue[5]="¡MALDICIÓN! ¡SE NOS ESCAPA OTRA VEZ!"
+languagedialogue[6]="OLVÍDENLA. ¡TENEMOS QUE PENSAR CÓMO SALIR DE ESTA!"
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 CDtextT="O NAVIO NÃO TEM TIMONEIRO!\nE AGORA?!"
 CDtextA="PEGAR OS PARAQUEDAS!"

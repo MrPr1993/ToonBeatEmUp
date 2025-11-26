@@ -23,6 +23,9 @@ stagename="CLOWNY HONKY CARNIVAL"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="CARNAVAL PAYASILLO Y RUIDOSO"
+break;
 case 2:///Portuguese
 stagename="FESTIVAL DAS PALHAÇAS ALBINAS"
 break;

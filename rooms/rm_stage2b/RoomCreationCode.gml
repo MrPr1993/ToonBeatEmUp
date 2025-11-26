@@ -22,6 +22,9 @@ stagename="AERIAL WALK"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="CAMINATA AÉREA"
+break;
 case 2:///Portuguese
 stagename="TOUR AÉRIO"
 break;

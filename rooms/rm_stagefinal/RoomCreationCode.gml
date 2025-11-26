@@ -24,6 +24,9 @@ stagename="ZEPPELIN FINALE"
 	
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="ZEPPELIN FINAL"
+break;
 case 2:///Portuguese
 stagename="ZEPPELIN FINALE"
 break;

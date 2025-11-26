@@ -27,6 +27,9 @@ stagename="HEATING HOT DESERT"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="DESIERTO ARDIENTE"
+break;
 case 2:///Portuguese
 stagename="DESERTO ISKH-AL DANT"
 break;

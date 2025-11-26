@@ -22,6 +22,16 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Obviamente la roja está mintiendo. ¿Encerado de cuernos? ¿En serio?"
+languagedialogue[2]= "No sabemos cómo viven, Viva…"
+languagedialogue[3]= "¡Ja! ¿Así que esa es su respuesta? Muy bien… Miren allá."
+languagedialogue[4]="¿Es eso… un pantano?"
+languagedialogue[4]="¡Ah sí! Nuestras ninjas fueron contratadas para cazarlas, así que no crean que es lo último que verán de ellas."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Óbvio que a vermelha é a mentirosa! Encerar chifres? Sério?"
 languagedialogue[2]="Cada um vive a vida que tem, Viva..."
@@ -133,12 +143,26 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Esto es una pérdida de tiempo… Mejor vámonos."
+languagedialogue[2]="Sí, claramente las dos nos están tomando el pelo."
+languagedialogue[3]="¡Miren chicas, el carnaval está ahí cerca!"
+languagedialogue[4]="Uhh… chicas…?"
+languagedialogue[5]="¡HMPH! ¡QUÉ MALA SUERTE!"
+languagedialogue[6]="¡¡DEBIERON HABER JUGADO EL JUEGO!!!"
+languagedialogue[7]="Una pena, hermana."
+languagedialogue[8]="Sí. Ahora tendrán que enfrentar a nuestras empleadas en el camino."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 languagedialogue[1]="Isso é perda de tempo... Vamos dar o fora daqui."
 languagedialogue[2]="É, tá óbvio que tão se aproveitando da nossa nobreza!"
 languagedialogue[3]="Olha pessoal, um festival está acontecendo aqui perto!"
 languagedialogue[4]="Uhh, madames...?"
-languagedialogue[5]="“Hmph! AZAR DE VOCÊS!"
+languagedialogue[5]="Hmph! AZAR DE VOCÊS!"
 languagedialogue[6]="VOCÊS DEVERIAM TER ENTRADO NA BRINCADEIRA!!!"
 languagedialogue[7]="É uma pena, irmã."
 languagedialogue[8]="Sim. Agora nossos funcionários serão as pedras em seus no caminhos."
@@ -258,14 +282,25 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¡Azul! ¡La azul es la mentirosa!"
+languagedialogue[2]="¿Ah? ¿Y cómo lo sabes?"
+languagedialogue[3]= "¡Tenemos una historia sobre esto! La oni azul actúa malvada para que su hermana pueda ser la heroína."
+languagedialogue[4]="Hmm… ¿Esa es su respuesta? Muy bien… Miren hacia allá."
+languagedialogue[5]="¡Ohh, la playa se ve bonita esta noche!"
+languagedialogue[6]= "Ah sí, nuestras empleadas también las están buscando, así que espérenlas muy pronto."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
-languagedialogue[1]="Óbvio que a vermelha é a mentirosa! Encerar chifres? Sério?"
-languagedialogue[2]="Azul! A Azul é a mentirosa!"
-languagedialogue[3]="Hã?! Como você sabe disso?"
-languagedialogue[4]="Tem uma história sobre isso! A Oni Azul finge ser má para que sua irmã possa ser a heróina!"
-languagedialogue[5]="Hmm... Então essa é a sua resposta? Muito bem... Olhem para cá."
-languagedialogue[6]="Oh, a praia está tão linda esta noite!"
-languagedialogue[7]="Bom lembrar, nossos funcionários também estão atrás de vocês, mais cedo ou mais tarde vocês irão se encontrar."
+languagedialogue[1]="Azul! A Azul é a mentirosa!"
+languagedialogue[2]="Hã?! Como você sabe disso?"
+languagedialogue[3]="Tem uma história sobre isso! A Oni Azul finge ser má para que sua irmã possa ser a heróina!"
+languagedialogue[4]="Hmm... Então essa é a sua resposta? Muito bem... Olhem para cá."
+languagedialogue[5]="Oh, a praia está tão linda esta noite!"
+languagedialogue[6]="Bom lembrar, nossos funcionários também estão atrás de vocês, mais cedo ou mais tarde vocês irão se encontrar."
 
 cutsceneline=languagedialogue[1]
 //if global.Language!=0 cutsceneline=languagedialogue[1]

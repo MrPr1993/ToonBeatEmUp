@@ -26,7 +26,7 @@ audio_stop_sound(snd_pharaoh3)
 	if anim=10 ///Attack Pick
 	{
 if distance_to_object(oPlayer)<60
-{anim=choose(14,21) exit;}	
+{anim=choose(14,21)}	
 	
 if y=clamp(y,targetEnemy.y-10,targetEnemy.y+10)
 and (x=clamp(x,targetEnemy.x-160,targetEnemy.x) or x=clamp(x,targetEnemy.x,targetEnemy.x+160))

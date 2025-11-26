@@ -247,6 +247,20 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¡Heeheehee~! ¡Qué divertido, qué divertido! ¡Felicidades por su victoria, amigas!"
+languagedialogue[2]="Sí, sí, gracias y todo eso… Ahora, ¿dónde se esconden los ladrones?"
+languagedialogue[3]="¡Bailemos!"
+languagedialogue[4]="¡Oye! ¡Deja de girar! ¿¡Me estás escuchando siquiera?!"
+languagedialogue[5]="¡Victoria! ¡Victoria! ¡Te mereces la victoria!"
+languagedialogue[6]="¡¡¡OYE!!! ¿DÓNDE. ESTÁN. LOS. LADRONES?!"
+languagedialogue[7]="¡Oh! ¡Deben estar por esas escaleras!"
+languagedialogue[8]="Agh… Vamos, chicas… recuperemos nuestro tesoro…"
+languagedialogue[9]="¡ADIÓS~! Díganle al doctor que le mando saludos."
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 languagedialogue[1]="Heeheehee~! Diversão, quanta diversão! Parabéns pela vitória, amigos!"
 languagedialogue[2]="Sim, claro valeu e tudo mais... Agora onde que os ladrões estão se escondendo?"

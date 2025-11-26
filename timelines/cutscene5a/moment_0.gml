@@ -349,6 +349,31 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT="¿QUÉ TRANSPORTE\nELEGIRÁN?"
+CDtextA="¡LA ALMEJA!"
+CDtextB="¡LOS CABALLITOS DE MAR!"
+CDtextC="¡EL GEISER!"
+
+languagedialogue[1]="¡Jajajajajaja! ¡Felicidades por una pelea bien ganada, mi querida Viva y amigas!"
+languagedialogue[2]="¡No sean tímidas, invitadas mías! ¡Coman, coman!"
+languagedialogue[3]= "Viva, ¡nunca nos dijiste que este rey pez tan guapote era tu primo! ¿Qué te pasaba?"
+languagedialogue[4]="Simple: lo encuentro insoportable."
+languagedialogue[5]="Oh, mi esbelta prima…"
+languagedialogue[6]= "Lamento muchísimo que mi gente las atacara tan repentinamente, ¡pero debían ponerlas a prueba!"
+languagedialogue[7]="Como siempre haces para proteger tu reino, ¿eh?"
+languagedialogue[8]="¡Es tradición! Este es un país de guerreros, después de todo."
+languagedialogue[9]="Aunque… ¿qué las trae por aquí?"
+languagedialogue[10]="¿Y cómo está el diamante que te di, prima?"
+languagedialogue[11]= "Ah sí… yo… sobre eso…"
+languagedialogue[12]="¡Santas vieiras, esto es terrible! ¡Ese diamante está encantado! ¡Cosas horribles pueden pasar en manos equivocadas!"
+languagedialogue[13]= "¿Siempre hace eso?"
+languagedialogue[14]="Sí, casi siempre. Príncipe, ¿tienes alguna manera de ayudarnos?"
+languagedialogue[15]="¡Por supuesto! ¡Rápido! ¡Debemos perseguir a esos malhechores cuanto antes! ¡Mis sirvientes y yo las enviaremos en su camino!"
+languagedialogue[16]="Muy bien, prima. Tienes que elegir uno de estos transportes. ¿Cuál tomarán?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 CDtextT="QUAL MONTARIA VOCÊ\nVAI ESCOLHER?"
 CDtextA="A AMÊIJOA!!"

@@ -24,6 +24,9 @@ stagename="FANTASTIC FANTASY CAVERNS"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="CAVERNAS DE FANTASÍA FANTÁSTICA"
+break;
 case 2:///Portuguese
 stagename="FANTÁSTICA CAVERNA DAS FANTASIAS"
 break;

@@ -34,6 +34,36 @@ var _tt13="RING THE BELL WITH A SLAM OF THE HAMMER!"
 
 switch(global.Language)
 {
+case 1:
+_tta1="SELECCIONA UN MODO"
+_tta2="EXTRAS"
+_tta3="MULTI"
+_tta4="MINIJUEGOS"
+
+_tta5="NOTA: LAS TRAMPAS SERÁN DESACTIVADOS"
+
+_tta6="PUNTUACIÓN MÁS ALTA"
+_tta7="ENEMIGOS DERROTADOS"
+_tta8="JEFES DERROTADOS"
+
+_tt0="¡DA COLORES PERSONALIZADOS A TUS DIVAS!"
+_tt1=" ¡SOBREVIVE A LA AVALANCHA DE MALOS!"
+_tt2=" ¿PUEDES DERROTAR A TODOS? ¿PUEDES?"
+_tt3="RELÁJATE MIENTRAS SALES A PESCAR AL LAGO"
+_tt4="¡DIVIÉRTETE CON UNA PEQUEÑA APUESTA!"
+
+_tt5="¡UN BUEN PELEADOR A LA ANTIGUA EN VS!"
+_tt6="¡QUIÉN TENGA EL TROFEO, GANA!"
+_tt7="¡CONSIGUE LA MAYOR CANTIDAD DE ESTRELLAS."
+
+_tt8="¡DESTRUYE ESE AUTO EN PEDAZOS!"
+_tt9="¡ROMPE UN MONTÓN DE LADRILLOS CON PRECISIÓN!"
+_tt10="¡COME TODO EN ESTA COMPETENCIA DE COMIDA!"
+_tt11="¡CANTA PARA DESTRUIR A LA COMPETENCIA!"
+_tt12="¡CORRE DEL TORO GRANDE Y MALO!"
+_tt13="¡HAZ SONAR LA CAMPANA CON UN GOLPE DE MARTILLO!"
+break;	
+
 case 2:
 _tta1="SELECIONE UM MODO"
 _tta2="EXTRAS"
@@ -261,7 +291,14 @@ draw_set_alpha(1)
 
 draw_rectangle(0,240-10-4-10+2+8-2-32,320,240-10-4+2+8-2-32,false)
 draw_set_alpha(1)draw_set_color(c_white)
-var _ttt=MenuText if MenuText="LOCKED" _ttt=_tt0
+var _ttt=MenuText if MenuText!="LOCKED" _ttt=_tt0
+else
+{
+if global.Language=0 _ttt="LOCKED"
+if global.Language=1 _ttt="ENCERRADO"
+if global.Lanugage=2 _ttt="BLOQUEADO"
+}
+
 draw_text(round(160),240-10-4-32,_ttt)
 draw_text(160,8,_tta1)
 

@@ -136,10 +136,17 @@ if canControl=0 {shopDialogueAlt=8
 	
 switch(global.Language)
 {
+case 1: ///Portuguese
+	if shopHelloR=0 shopDesc="       CHAO!" 
+	if shopHelloR=1 shopDesc="         NOS\nVEMOS!" 
+	if shopHelloR=2 shopDesc="    HASTA\nLUEGO!"
+	if shopHelloR=3 shopDesc="      ADIÓS!" 	
+break;	
+
 case 2: ///Portuguese
 	if shopHelloR=0 shopDesc=" TCHAU TCHAU!" 
 	if shopHelloR=1 shopDesc="     TE VEJO\nDEPOIS!" 
-	if shopHelloR=2 shopDesc="    ATÉ MAIS!" 
+	if shopHelloR=2 shopDesc="       ATÉ MAIS!" 
 	if shopHelloR=3 shopDesc="      ADEUS!" 	
 break;	
 }
@@ -280,6 +287,10 @@ shopName="CHARACTER PROFILE" shopCost=string(_tp)+":3000"
 shopDesc="CHECK THEIR INFO! \nBUT TO GET THE\nENEMY DATA YOU\nGOTTA BEAT EM' UP!"
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="PERFIL DE PERSONAJE"
+shopDesc="¡REVISA SU INFO! ¡PERO\nPARA OBTENER\nLOS DATOS DEL ENEMIGO\nTIENES QUE DARLES UNA PALIZA!"
+break;
 case 2: ///Portuguese
 shopName="PERFIL DO PERSONAGEM"
 shopDesc="VEJA AS INFORMAÇÕES\nDELES! MAS PARA\nOBTER DADOS\nDO INIMIGO,\nVOCÊ PRECISA DERROTA-LOS!"
@@ -292,6 +303,11 @@ if shopselY=0 and shopselX=1
 shopDesc="BORING OF YOUR\nCOSTUME COLOR?\nYOU CAN CHANGE IT\nWITH THIS!"
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="CAMBIO DE PALETA"
+shopDesc="¿TE ABURRIÓ EL\nCOLOR DE TU\nTRAJE? ¡PUEDES\nCAMBIARLO CON ESTO!"
+break;
+
 case 2: ///Portuguese
 shopName="TROCA DE PALETA"
 shopDesc="CANSADA DAS SUAS CORES? VOCÊ\nPODE MUDÁ-LAS COM\nISTO!"
@@ -305,6 +321,11 @@ shopDesc="MORE COLORS!\nAND MORE PALETTES!\nHAVE MORE COLORS\nWITH THIS ONE!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="CAMBIO DE PALETA 2"
+shopDesc="¡MÁS COLORES!\n¡Y MÁS PALETAS!\n¡TEN MÁS COLORES\nCON ESTE!"
+break;	
+
 case 2: ///Portuguese
 shopName="TROCA DE PALETA 2"
 shopDesc="MAIS CORES!\nMAIS PALETAS! TENHA\nMAIS CORES COM ISSO!"
@@ -319,6 +340,11 @@ shopDesc="WANT TO MAKE\nYOUR OWN PALETTE? \nUSE THIS TO\nRECOLOR THE DIVAS!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="PALETA PERSONALIZADA"
+shopDesc="¡MÁS COLORES!\n¡Y MÁS PALETAS!\n¡TEN MÁS COLORES\nCON ESTE!"
+break;		
+
 case 2: ///Portuguese
 shopName="PALETA PERSONALIZADA"
 shopDesc="QUER CRIAR\nSUA PRÓPRIA PALETA?\nUSE ISSO PARA\nRECORIR AS DIVAS!"
@@ -334,6 +360,11 @@ shopDesc="WANNA HEAR SOME\nTUNES? HAVE A\nLISTEN TO THIS!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="PRUEBA DE SONIDO"
+shopDesc="¿QUIERES ESCUCHAR\nUNAS MELODÍAS?\n¡DALE UNA ESCUCHADA\nA ESTO!"
+break;			
+
 case 2: ///Portuguese
 shopName="TESTE DE SOM"
 shopDesc="QUER OUVIR UM\nSOM? DÊ UMA\nOUVIDA NISSO AQUI!"
@@ -348,6 +379,11 @@ shopDesc="WATCH AGAIN\nSCENES YOU HAVE\nSEEN HERE IN THE\nRECORDER!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="CINEMÁTICAS"
+shopDesc="¡VUELVE A VER\nAQUELLAS ESCENAS\nQUE YA HAS VISTO\nEN LA GRABADORA!"
+break;	
+
 case 2: ///Portuguese
 shopName="CENAS"
 shopDesc="REVEJA CENAS\nQUE VOCÊ VIU AQUI\nNO GRAVADOR!"
@@ -361,6 +397,11 @@ if shopselY=1 and shopselX=2
 shopDesc="SPEND YOUR\nTIME AT THE LAKE\nFISHING IN THIS\nMINIGAME!"
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="JUEGO DE PESCA"
+shopDesc="¡PASA TU TIEMPO\nEN EL LAGO\nPESCANDO EN ESTE\nMINIJUEGO!"
+break;	
+
 case 2: ///Portuguese
 shopName="JOGO DE PESCA"
 shopDesc="PASSE SEU\nTEMPO NO LAGO\nPESCANDO NESTE\nMINIGAME!"
@@ -375,6 +416,10 @@ shopDesc="PLAY WITH THE\n BIG GOOD OL'\nONE-ARMED BANDIT:\nTHE SLOT MACHINE!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="TRAGAMONEDAS"
+shopDesc="¡JUEGA CON LA\nBUENA Y VIEJA\nMÁQUINA DE UN SOLO BRAZO:\nLA TRAGAMONEDAS!"
+break;
 case 2: ///Portuguese
 shopName="CAÇA-NÍQUEIS"
 shopDesc="ENCARE O BOM E\nVELHO LADRÃO\nDE METAIS:\nO CAÇA-NÍQUEIS!"
@@ -390,6 +435,10 @@ shopDesc="WRECK SOME CHUMP'S\nCAR IN THIS\nMINIGAME!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="DESTRUYE EL AUTO"
+shopDesc="¡DESTROZA EL AUTO DE ALGÚN POBRE TIPO EN ESTE MINIJUEGO!"
+break;
 case 2: ///Portuguese
 shopName="ACIDENTE DE CARRO"
 shopDesc="DESTRUA O CARRO\nDE ALGUM IDIOTA\nNESTE MINIGAME!"
@@ -400,11 +449,15 @@ if global.MiniGameUnlock1=0 shopSelect=9 else {shopSelect=-2 shopCost="SOLD OUT!
 }
 if shopselY=2 and shopselX=1
 {shopPrice=5000 shopName="BRICK CHOP" shopCost=string(_tp)+":5000"
-shopDesc="TEST YOUR MIGHT!\nBREAK THE BRICKS\nIN THIS MINAGE!"
+shopDesc="TEST YOUR MIGHT!\nBREAK THE BRICKS\nIN THIS MINIGAME!"
 
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="DESTRUYE EL AUTO"
+shopDesc="¡DESTROZA EL\nAUTO DE ALGÚN POBRE\nTIPO EN ESTE\nMINIJUEGO!"
+break;
 case 2: ///Portuguese
 shopName="QUEBRA DE TIJOLOS"
 shopDesc="TESTE SUA FORÇA!\nQUEBRE OS TIJOLOS\nNESTA MINIGAME!"
@@ -419,6 +472,11 @@ shopDesc="AN EATING\nCOMPETITION! HOW\nMUCH CAN YOU EAT?"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="HORA DE COMER"
+shopDesc="¡UNA COMPETENCIA\nDE COMIDA! ¿CUÁNTO\nPUEDES COMER?"
+break;
+
 case 2: ///Portuguese
 shopName="HORA DA BOIA"
 shopDesc="UMA COMPETIÇÃO\nDE COMIDA!\nQUANTO VOCÊ\nCONSEGUE COMER?"
@@ -433,6 +491,11 @@ shopDesc="OUTSING YOUR\nRIVALS WITH A\nVERY HIGH NOTE!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="CACOFONÍA ESTRELLADA"
+shopDesc=" ¡SUPERA A TUS\nRIVALES CON\nUNA NOTA MUY ALTA!"
+break;	
+
 case 2: ///Portuguese
 shopName="CACOFONIA VIOLENTA"
 shopDesc="SUPERE SEUS\nRIVAIS COM UMA\nNOTA MUITO ALTA!"
@@ -444,10 +507,17 @@ if global.MiniGameUnlock4=0 shopSelect=12 else {shopSelect=-2 shopCost="SOLD OUT
 ///
 if shopselY=3 and shopselX=0
 {shopPrice=5000 shopName="BULL RUSH" shopCost=string(_tp)+":5000"
+	
+	
 shopDesc="RUN FROM THE BULL!\nTRY SURVIVIN'\nIN THIS MINIGAME!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="EMBESTIDA DEL TORO"
+shopDesc="¡CORRE DEL TORO!\n¡INTENTA\nSOBREVIVIR EN\nESTE MINIJUEGO!"
+break;	
+
 case 2: ///Portuguese
 shopName="TOURO AGITADO"
 shopDesc="FUJA DO TOURO!\nTENTE SOBREVIVER\nNESTE MINIGAME!"
@@ -462,6 +532,11 @@ shopDesc="HAMMER DOWN TO\nTEST YOUR POWER\nIN THIS MINIGAME!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GOLPE DE FUERZA"
+shopDesc="¡USA EL MARTILLO\nPARA PONER A\nPRUEBA TU PODER\nEN ESTE MINIJUEGO!"
+break;	
+
 case 2: ///Portuguese
 shopName="MARTELO DE FORÇA"
 shopDesc="MARTELE PARA\nTESTAR SUA FORÇA\nNESTE MINIGAME!"
@@ -476,6 +551,11 @@ shopDesc="CAN YOU SURVIVE\nTHE BADDIES'\nONSLAUGHT?"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="MODO SUPERVIVENCIA"
+shopDesc="¿PUEDES SOBREVIVIR\nA LA AVALANCHA\nDE MALOS?"
+break;	
+
 case 2: ///Portuguese
 shopName="MODO DE SOBREVIVÊNCIA"
 shopDesc="VOCÊ CONSEGUE\nSOBREVIVER À\nINVESTIDA\nDOS MALVADOS?"
@@ -490,9 +570,13 @@ shopDesc="CAN YOU DEFEAT\nEVERY SINGLE\nBOSS?"
 
 switch(global.Language)
 {
-case 2: ///Portuguese
+case 1: ///Portuguese
 shopName="MODO CAÇA-CHEFES"
 shopDesc="VOCÊ CONSEGUE\nDERROTAR CADA\nUM DOS CHEFÕES?"
+break;
+case 2: ///Portuguese
+shopName="BATALLAS CONTRA JEFES"
+shopDesc="¿PUEDES DERROTAR\nA CADA UNO DE\nLOS JEFES?"
 break;
 }
 
@@ -511,6 +595,11 @@ if shopselY=0 and shopselX=0
 shopDesc="\nYOU'LL HAVE\nDOUBLE HEALTH!"
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="DOBLE SALUD"
+shopDesc="\n¡TENDRÁS EL DOBLE\nDE SALUD!"
+break;
+
 case 2: ///Portuguese
 shopName="HP DOBRADO"
 shopDesc="\nVOCÊ TERÁ SAÚDE\nEM DOBRO!"
@@ -524,6 +613,11 @@ shopDesc="\nYOU START WITH\nDOUBLE YOUR\nLIFE!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="DOBLE VIDA"
+shopDesc="\n¡COMIENZAS CON\nEL DOBLE DE\nTU VIDA!"
+break;	
+
 case 2: ///Portuguese
 shopName="VIDAS EM DOBRO"
 shopDesc="\nVOCÊ COMEÇA COM\nO DOBRO DE\nVIDAS!"
@@ -537,6 +631,11 @@ shopDesc="\nYOU WILL BE A\nLITTLE MORE\nPOWEFUL!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="PODER EXTRA"
+shopDesc="\n¡SERÁS UN POCO\nMÁS PODEROSO!"
+break;
+
 case 2: ///Portuguese
 shopName="PODER EXTRA"
 shopDesc="\nVOCÊ SERÁ UM\nPOUCO MAIS\nPODEROSO!"
@@ -550,6 +649,11 @@ shopDesc="\nIF YOU GET HIT,\nYOU'LL DIE!\nCHALLENGING!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="MODO 1-GOLPE"
+shopDesc="\n¡SI TE GOLPEAN,\nMUERES!\n¡DESAFIANTE!"
+break;
+
 case 2: ///Portuguese
 shopName="MODO 1 TAPA"
 shopDesc="\nSE VOCÊ FOR\nATINGIDO,\nVOCÊ MORRE!\nTENSO!"
@@ -564,6 +668,11 @@ shopDesc="\nYOU BECOME TINY!\nIT'S ONLY JUST\nFOR SHOW..."
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="MODO MINI"
+shopDesc="\n¡TE VUELVES\nMINÚSCULO! SOLO\nES PARA MOSTRAR…"
+break;	
+
 case 2: ///Portuguese
 shopName="MODO PÍTICO"
 shopDesc="\nVOCÊ FICA PEQUENO!\nMAS SÓ EM\nAPARÂNCIA..."
@@ -577,6 +686,11 @@ shopDesc="\nWHEN YOU RESPWAWN,\nYOU BECOME A\nDIFFERENT DIVA!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="DIVAS ALEATORIAS"
+shopDesc="\n¡AL REAPARECER,\nTE CONVERTIRÁS EN\nUNA DIVA DIFERENTE!"
+break;	
+
 case 2: ///Portuguese
 shopName="ROLETA DE DIVAS"
 shopDesc="\nSE TORNE UMA DIVA\nDIFERENTEnQUANDO\nRENASCER!"
@@ -590,6 +704,11 @@ shopDesc="\nPLAY THE GAME,\nWITH A MIRRORED\nVIEW!"
 
 switch(global.Language)
 {
+
+case 1: ///Portuguese
+shopName="MODO ESPEJO"
+shopDesc="\n¡JUEGA CON LA\nPANTALLA\nINVERTIDA!"
+break;	
 case 2: ///Portuguese
 shopName="MODO ESPELHO"
 shopDesc="\nJOGUE COM A\nVISÃO ESPELHADA!"
@@ -603,6 +722,10 @@ shopDesc="\nHEALTH WILL BE\nFULLY RESTORED\nFROM ANY FOOD!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="BOCADILLOS DE CURA TOTAL"
+shopDesc="\n¡LA SALUD SE\nRESTAURARÁ\nCOMPLETAMENTE\nCON CUALQUIER\nCOMIDA!"
+break;
 case 2: ///Portuguese
 shopName="LANCHES CURA-TUDO"
 shopDesc="\nA SAÚDE SERÁ\nTOTALMENTE\nRESTAURADA A\nPARTIR DE\nQUALQUER COMIDA!"
@@ -617,10 +740,13 @@ shopDesc="\nDISABLE THE HEALTH\nDRAIN FROM USING\nTHE SPECIALS!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="SIN DRENAJE"
+shopDesc="\n¡DESACTIVA EL\nCONSUMO DE SALUD\nAL USAR LOS\nESPECIALES!"
+break;
 case 2: ///Portuguese
 shopName="DIETA DE VAMPIRO"
 shopDesc="\nDESATIVE A PERCA DE\nSAÚDE AO USAR\nESPECIAIS!"
-
 break;
 }
 
@@ -631,9 +757,14 @@ shopDesc="\nYOUR SHOWTIME\nCHARGES OVER TIME!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="RECARGA DE SHOWTIME"
+shopDesc="\n¡TU SHOWTIME SE\nRECARGARÁ CON EL\nTIEMPO!"
+break;	
+
 case 2: ///Portuguese
-shopName="CARREGADOR DE ESPETÁCULO"
-shopDesc="\nSEU ESPETÁCULO\nCARREGA COM O TEMPO!"
+shopName="CARREGADOR DE SHOWTIME"
+shopDesc="\nSEU SHOWTIME\nCARREGA COM O TEMPO!"
 break;
 }
 
@@ -644,6 +775,11 @@ shopDesc="\nYOUR WEAPON WILL\nNEVER RUN OUT OF\nUSES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="IRROMPIBLE"
+shopDesc="\n¡TU ARMA NUNCA SE\nQUEDARÁ SIN USOS!"
+break;	
+
 case 2: ///Portuguese
 shopName="INQUEBRÁVEL"
 shopDesc="\nSUAS ARMAS NUNCA\nQUEBRARÃO!"
@@ -657,6 +793,10 @@ shopDesc="\nDISABLE THE TIMER!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="SIN TIEMPO"
+shopDesc="\n¡DESACTIVA EL\nTEMPORIZADOR!"
+break;
 case 2: ///Portuguese
 shopName="ATEMPORAL"
 shopDesc="\nDESATIVE O TEMPO!"
@@ -671,6 +811,10 @@ shopDesc="\nINFINITE HEALTH!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="SUPERDIVA"
+shopDesc="\n¡SALUD INFINITA!"
+break;
 case 2: ///Portuguese
 shopName="SUPERDIVA"
 shopDesc="\nSAÚDE INFINITA!"
@@ -684,6 +828,10 @@ shopDesc="\nLIVES BECOME\nINFINITE!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="SEÑORITA INMORTAL"
+shopDesc="\n¡LAS VIDAS SE\nVUELVEN INFINITAS!"
+break;
 case 2: ///Portuguese
 shopName="SRTA. IMORTAL"
 shopDesc="\nVIDAS INFINITAS!"
@@ -697,6 +845,10 @@ shopDesc="\nCONTINUES BECOME\nINFINITE!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="FICHAS ILIMITADAS"
+shopDesc="\n¡LOS CONTINÚES SE\nVUELVEN INFINITOS!"
+break;
 case 2: ///Portuguese
 shopName="FICHAS ILIMITADAS"
 shopDesc="\nCONTINUE VOLTANDO\nINFINITAMENTE!"
@@ -710,6 +862,10 @@ shopDesc="\nUNLIMITED POWER!!!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="MODO DIOSA"
+shopDesc="\n¡PODER ILIMITADO!!!"
+break;
 case 2: ///Portuguese
 shopName="MODO DEUSA"
 shopDesc="\nPODER ONIPOTENTE!!!"
@@ -725,6 +881,9 @@ if shopSelect!=-1
 var _tp="PENALTY"
 switch(global.Language)
 {///Portuguese
+case 1:
+_tp="PENALIZACIÓN"
+break;
 case 2:
 _tp="PÊNALTI"
 break;
@@ -734,6 +893,10 @@ var _tp="COST"
 var _ct="CHEAT"
 switch(global.Language)
 {
+case 1: ///Portuguese
+_tp="COSTO"
+_ct="TRAMPA"
+break;
 case 2: ///Portuguese
 _tp="CUSTO"
 _ct="TRAPAÇA"
@@ -761,6 +924,11 @@ shopDesc="ARTWORK OF THE\nTHUNDEROUS VIVA!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE VIVA"
+shopDesc="¡ARTE DE LA\nATRONADORA VIVA!"
+break;
+
 case 2: ///Portuguese
 shopName="GALERIA DA VIVA"
 shopDesc="ARTES DA\nTROVEJANTE VIVA!"
@@ -775,6 +943,11 @@ shopDesc="ARTWORK OF THE\nFLAMING HOT HINA!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE HINA"
+shopDesc="¡ARTE DE LA\nARDIENTE HINA!"
+break;	
+
 case 2: ///Portuguese
 shopName="GALERIA DA HINA"
 shopDesc="ARTES DA\nARDENTE HINA!"
@@ -789,6 +962,11 @@ shopDesc="ARTWORK OF THE\nBIG AND FABULOUS\nBAHATI!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE BAHATI"
+shopDesc="¡ARTE DE LA GRAN\nY FABULOSA BAHATI!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DA BAHATI"
 shopDesc="ARTES DA GRANDE\nE FABULOSA\nBAHATI!"
@@ -803,6 +981,11 @@ shopDesc="ARTWORK OF THE\nSPICY AND LEGGY\nSOFIA!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE SOFIA"
+shopDesc="¡ARTE DE LA PICANTE\nY PIERNUDA SOFIA!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DA SOFIA"
 shopDesc="ARTES DA\nPICANTE E COXUDA\nSOFIA!"
@@ -818,6 +1001,11 @@ shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n1-2 STAGES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE ENEMIGOS 1"
+shopDesc="¡ARTE DE LOS\nENEMIGOS DE LAS\nETAPAS 1–2!"
+break;	
+
 case 2: ///Portuguese
 shopName="GALERIA DO INIMIGOS 1"
 shopDesc="ARTES DOS\nINIMIGOS DOS\nPALCOS 1 E 2!"
@@ -832,6 +1020,11 @@ shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n3-4 STAGES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE ENEMIGOS 2"
+shopDesc="¡ARTE DE LOS\nENEMIGOS DE LAS\nETAPAS 3–4!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DO INIMIGOS 2"
 shopDesc="ARTES DOS\nINIMIGOS DOS\nPALCOS 3 E 4!"
@@ -846,6 +1039,11 @@ shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n5-6 STAGES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE ENEMIGOS 3"
+shopDesc="¡ARTE DE LOS\nENEMIGOS DE LAS\nETAPAS 5–6!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DO INIMIGOS 3"
 shopDesc="ARTES DOS\nINIMIGOS DOS\nPALCOS 5 E 6!"
@@ -860,6 +1058,11 @@ shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n7-8 STAGES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE ENEMIGOS 4"
+shopDesc="¡ARTE DE LOS\nENEMIGOS DE LAS\nETAPAS 7–8!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DO INIMIGOS 4"
 shopDesc="ARTES DOS\nINIMIGOS DOS\nPALCOS 7 E 8!"
@@ -875,6 +1078,11 @@ shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n1-2 STAGES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE JEFES 1"
+shopDesc="¡ARTE DE LOS\nJEFES DE LAS\nETAPAS 1–2!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DE CHEFES 1"
 shopDesc="ARTES DOS\nCHEFES DOS\nPALCOS 1 E 2!"
@@ -889,6 +1097,11 @@ shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n3-4 STAGES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE JEFES 2"
+shopDesc="¡ARTE DE LOS\nJEFES DE LAS\nETAPAS 3–4!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DE CHEFES 2"
 shopDesc="ARTES DOS\nCHEFES DOS\nPALCOS 3 E 4!"
@@ -903,6 +1116,11 @@ shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n5-6 STAGES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE JEFES 3"
+shopDesc="¡ARTE DE LOS\nJEFES DE LAS\nETAPAS 5–6!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DE CHEFES 3"
 shopDesc="ARTES DOS\nCHEFES DOS\nPALCOS 5 E 6!"
@@ -917,6 +1135,11 @@ shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n7-8 STAGES!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA DE JEFES 4"
+shopDesc="¡ARTE DE LOS\nJEFES DE LAS\nETAPAS 7–8!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIA DE CHEFES 4"
 shopDesc="ARTES DOS\nCHEFES DOS\nPALCOS 7 E 8!"
@@ -932,6 +1155,11 @@ shopDesc="ARTWORK OF THE\nSOME OTHER\nCHARACTERS...\nWHICH INCLUDES ME."
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="GALERÍA VARIADA"
+shopDesc="¡ARTE DE OTROSnPERSONAJES…\nINCLUYÉNDOME A MÍ!"
+break;		
+
 case 2: ///Portuguese
 shopName="GALERIAS DIVERSAS"
 shopDesc="ARTES DE ALGUNS\nOUTROS\nPERSONAGENS...\nINCLUINDO EU."
@@ -946,6 +1174,11 @@ shopDesc="DEVELOPMENT ART\nOF THIS\nHERE GAME!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="ARTE CONCEPTUAL"
+shopDesc="¡ARTE DEL\nDESARROLLO DE\nESTE JUEGO!"
+break;			
+
 case 2: ///Portuguese
 shopName="ARTES CONCEITUAIS"
 shopDesc="ARTES DE\nDESENVOLVIMENTO\nDESTE JOGO MESMO!"
@@ -960,6 +1193,11 @@ shopDesc="PROMOTIONAL,\nNICE ART OF\nTHE GAME!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="ARTE CLAVE"
+shopDesc="¡ARTE DEL\nDESARROLLO DE\nESTE JUEGO!"
+break;		
+
 case 2: ///Portuguese
 shopName="ARTES-CHAVE"
 shopDesc="BELA ARTE\nPROMOCIONAL DO\nJOGO!"
@@ -974,6 +1212,11 @@ shopDesc="ARTWORK DONE\nBY OTHER PEOPLE!\nNICE STUFF!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopName="ARTE INVITADO"
+shopDesc="¡ARTE REALIZADO\nPOR OTRAS PERSONAS!\n¡QUÉ BUEN MATERIAL!"
+break;		
+
 case 2: ///Portuguese
 shopName="ARTES DOS CONVIDADOS"
 shopDesc="ARTE FEITA\nPOR OUTRAS PESSOAS\nINCRÍVEIS!\nMUITO MASSA!"
@@ -1002,8 +1245,16 @@ if shopHelloR=2	shopDesc="  HOW DO YOU DO?"
 if shopHelloR=3	shopDesc="  WHAT'LL IT BE?"	
 switch(global.Language)
 {
+case 1: ///Portuguese
+//shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE."
+if shopHelloR=0	shopDesc="   ¡BIENVENIDO!"
+if shopHelloR=1	shopDesc="      ¡HOLA!"
+if shopHelloR=2	shopDesc="   ¿CÓMO ESTÁS?"
+if shopHelloR=3	shopDesc="  ¿QUÉ VA A SER?"	
+break;	
+
 case 2: ///Portuguese
-shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE."
+//shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE."
 if shopHelloR=0	shopDesc="    BEM-VINDA!"
 if shopHelloR=1	shopDesc="  OLÁ, FALA AÍ!"
 if shopHelloR=2	shopDesc="   TUDO EM CIMA?"
@@ -1018,6 +1269,8 @@ if shopDialogueAlt=2
 shopDesc="SORRY,THIS ONE'S\nUNAVAILABLE."
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopDesc="LO SIENTO, ESTE\nNO ESTÁ DISPONIBLE." break;
 case 2: ///Portuguese
 shopDesc="PERDÃO,ESSE TÁ\nINDISPONÍVEL." break;
 }
@@ -1027,6 +1280,15 @@ if shopDialogueAlt=3
 {
 
 shopDesc="  WANT THAT ONE?" 
+switch (global.Language)
+{
+case 1:
+shopDesc="  QUIERES ESO?" 
+break;
+case 2:
+shopDesc="  QUERO AQUELE?" 
+break;
+}
 	
 shopAltFace=-1}
 shopDialogueTime-=1 if shopDialogueTime=0 {shopDialogueAlt=0 shopAltFace=-1}
@@ -1039,6 +1301,13 @@ if shopHelloR=3	shopDesc="   HERE YOU GO!"
 	
 switch(global.Language)
 {
+case 1: ///Portuguese
+if shopHelloR=0	shopDesc="     GRACIAS!"
+if shopHelloR=1	shopDesc="     VENDIDO!"
+if shopHelloR=2	shopDesc="GRACIAS POR\nCOMPRAR!"
+if shopHelloR=3	shopDesc=" AQUÍ LO TIENES!"	
+break;
+
 case 2: ///Portuguese
 if shopHelloR=0	shopDesc="     OBRIGADA!"
 if shopHelloR=1	shopDesc="     VENDIDO!"
@@ -1056,6 +1325,8 @@ if shopDialogueAlt=6
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopDesc="OH, YA\nCOMPRASTE ESTE." break;
 case 2: ///Portuguese
 shopDesc="AH VOCÊ JÁ\nCOMPROU ESSE." break;
 }	
@@ -1065,6 +1336,9 @@ if shopDialogueAlt=7
 {shopDesc="SORRY,YOU DON'T\nHAVE ENOUGH CASH." 
 switch(global.Language)
 {
+case 1: ///Portuguese
+shopDesc="LO SIENTO, NO\nTIENES SUFICIENTE\nDINERO." break;	
+
 case 2: ///Portuguese
 shopDesc="PERDÃO, VOCÊ NÃO\nTEM GRANA O\nSUFICIENTE." break;
 }		
@@ -1080,6 +1354,13 @@ if shopDialogueAlt=8
 	if shopHelloR=3 shopDesc="     GOODBYE!" 
 switch(global.Language)
 {
+case 1: ///Portuguese
+	if shopHelloR=0 shopDesc="       CHAO!" 
+	if shopHelloR=1 shopDesc="       NOS\nVEMOS!" 
+	if shopHelloR=2 shopDesc="    HASTA\nLUEGO!"
+	if shopHelloR=3 shopDesc="      ADIÓS!" 	
+break;		
+
 case 2: ///Portuguese
 	if shopHelloR=0 shopDesc=" TCHAU TCHAU!" 
 	if shopHelloR=1 shopDesc="     TE VEJO\nDEPOIS!" 
@@ -1098,6 +1379,13 @@ break;
 	
 switch(global.Language)
 {
+case 1: ///Portuguese
+	if shopHelloR=0 shopDesc="       CHAO!" 
+	if shopHelloR=1 shopDesc="       NOS\nVEMOS!" 
+	if shopHelloR=2 shopDesc="    HASTA\nLUEGO!"
+	if shopHelloR=3 shopDesc="      ADIÓS!" 	
+break;		
+
 case 2: ///Portuguese
 	if shopHelloR=0 shopDesc=" TCHAU TCHAU!" 
 	if shopHelloR=1 shopDesc="     TE VEJO\nDEPOIS!" 
@@ -1181,6 +1469,9 @@ draw_set_halign(fa_center) draw_set_font(global.scorefont)
 var _tt="SHOP"
 switch(global.Language)
 {
+case 1: ///Portuguese
+_tt="TIENDA"
+break;	
 case 2: ///Portuguese
 _tt="LOJA"
 break;	
@@ -1357,6 +1648,9 @@ var _tt="SOLD OUT!" var _st=0;
 if shopCost="SOLD OUT!" _st=1
 switch(global.Language)
 {
+case 1:
+_tt="VENDIDO!"
+break;
 case 2:
 _tt="ESGOTADO!"
 break;
@@ -1367,6 +1661,9 @@ if shopCost="LOCKED"
 	
 switch(global.Language)
 {
+case 1:
+_tt="ENCERRADO"
+break;
 case 2:
 _tt="BLOQUEADO"
 break;

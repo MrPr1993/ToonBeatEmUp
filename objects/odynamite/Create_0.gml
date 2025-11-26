@@ -1,6 +1,6 @@
 item_setup()
 name="DYNAMITE"
-hp=0.25
+hp=0
 
 weaponIndex=0
 

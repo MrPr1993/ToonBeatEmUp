@@ -26,6 +26,22 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="¡Por aquí! ¡Bevalve las llevará a la superficie!"
+languagedialogue[2]= "¿Soy yo o esta almeja huele peor por dentro…?"
+languagedialogue[3]="Gracias, primo. Bien chicas, ¡vámonos!"
+languagedialogue[4]= "¡¡BLEEEEEECH!!"
+languagedialogue[5]="Tan… pegajoso…"
+languagedialogue[6]="Bueno, esto sí que no lo vi venir…"
+languagedialogue[7]="Prínce… otra razón por la que no te visito…"
+languagedialogue[8]="Oigan, ¿soy yo o hace frío aquí?"
+languagedialogue[9]= "No, Hina. Es por eso."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Entrem! Esta Bivalve levará vocês até à superfície!"
 languagedialogue[2]="É impressão minha ou essa amêijoa fede ainda mais por dentro..."
@@ -33,8 +49,8 @@ languagedialogue[3]="Obrigada, primo. Muito bem, meninas, vamos lá!"
 languagedialogue[4]="BLEHHHHHH!!!!!"
 languagedialogue[5]="Tão... gosmento..."
 languagedialogue[6]="É o ditado, quem ri por último come mais chocolate..."
-languagedialogue[7]="“Prince... mais um motivo pra eu não visitar..."
-languagedialogue[8]="“Uau, é impressão minha ou está frio aqui?"
+languagedialogue[7]="Prince... mais um motivo pra eu não visitar..."
+languagedialogue[8]="Uau, é impressão minha ou está frio aqui?"
 languagedialogue[9]="É porque tá mesmo, Hina."
 
 cutsceneline=languagedialogue[1]
@@ -211,12 +227,12 @@ with oControl
 switch(global.Language)
 {
 case 2: ////Portuguese
-languagedialogue[1]="Use nossos cavalos-marinhos! Eles irão levá-las ao seu destino num piscar de olhos!"
-languagedialogue[2]="Eles não podem ir mais rápido, não?!"
-languagedialogue[3]="Nesse ritmo, nunca vamos pegar aqueles bandidos!"
-languagedialogue[4]="Pera aí... acho que eles estão acelerando!"
-languagedialogue[5]="Wow wow WOW! NÃO TANTO ASSIM!!!"
-languagedialogue[6]="...Nenhuma palavra... Apenas... Andem..."
+languagedialogue[1]= "¡Tomen nuestros caballitos de mar! ¡Las llevarán a su destino en un abrir y cerrar de ojos!"
+languagedialogue[2]="¡¿No pueden ir más rápido?!"
+languagedialogue[3]="¡Nunca atraparemos a esos ladrones a este paso!"
+languagedialogue[4]="Esperen… ¡creo que están acelerando!"
+languagedialogue[5]= "¡Woah woah WOOAH! ¡¡¡NO TANTO!!!"
+languagedialogue[6]= "…Ni una palabra… Solo… vámonos…"
 
 cutsceneline=languagedialogue[1]
 //if global.Language!=0 cutsceneline=languagedialogue[1]
@@ -357,14 +373,14 @@ with oControl
 switch(global.Language)
 {
 case 2: ////Portuguese
-languagedialogue[1]="A água vai jorrar deste gêiser! Aproveitem o impulso e vocês conseguirão capturar esses malfeitores!"
-languagedialogue[2]="Vossa Alteza! Temos um problema!"
-languagedialogue[3]="A trajetória do jato está muito desviada!"
-languagedialogue[4]="O quê?!"
-languagedialogue[5]="Prince, seu sardinha filho da-"
+languagedialogue[1]= "¡Este geiser expulsará un chorro de agua! ¡Móntenlo y deberían alcanzar a esos bribones!"
+languagedialogue[2]="¡Su alteza! ¡TENEMOS UN PROBLEMA!"
+languagedialogue[3]="¡La trayectoria del geiser está completamente desviada!"
+languagedialogue[4]="¿¡QUÉ?!"
+languagedialogue[5]="¡PRÍNCIPE, MALDITO IMBÉ—"
 languagedialogue[6]="..."
-languagedialogue[7]="Tenho certeza de que elas ficarão bem."
-languagedialogue[8]="Santo Poseidon..."
+languagedialogue[7]= "Estoy bastante seguro de que estarán bien."
+languagedialogue[8]= "Ay madre…"
 //cutsceneline=languagedialogue[1]
 //if global.Language!=0 cutsceneline=languagedialogue[1]
 

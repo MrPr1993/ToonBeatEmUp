@@ -692,7 +692,8 @@ if AnimFrame>5.5 AnimFrame+=0.25
 	image_index=0 image_speed=0
 	sentFlying=0 hspeed=0
 	targetID.playerFrom=playerNO
-	with targetID {hud_show() hpscan()}
+	with targetID {if other.object_index=oPlayer {playerFrom=other.playerNO with oPlayer playerGet=0 if BossTag!=0 targetEnemy.playerGet=1}
+ hud_show() hpscan()}
 	targetID.hit=2 targetID.recoveryThrow=10
 	canmove=0 targetID.hitSource=id
 	targetID.ground=1 targetID.recovery=0
@@ -710,7 +711,9 @@ if AnimFrame>5.5 AnimFrame+=0.25
 	targetID.x=x
 
 	with targetID
-	{recovery=0 AnimFrame=0 
+	{
+		
+		recovery=0 AnimFrame=0 
 	hurt=0 Throw=0
 	atk=0 canmove=1 
 	AnimFrame=EgrabFrame anim=EgrabAnim if anim!=0 canmove=0 throwcombo=2 z+=EgrabzAdd

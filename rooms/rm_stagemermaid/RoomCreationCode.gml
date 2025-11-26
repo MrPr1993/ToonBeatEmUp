@@ -23,6 +23,9 @@ stagename="UNDER THE SEA JAM"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="FIESTA BAJO EL MAR"
+break;	
 case 2:///Portuguese
 stagename="POR ÁGUA ABAIXO"
 break;

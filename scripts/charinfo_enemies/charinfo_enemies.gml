@@ -45,7 +45,7 @@ descleftT[0]=string(_ageT)+":37\nNAT.:USA\n"+string(_heightT)+":4'5"+" "+string(
 descrightT[0]=string(_likesT)+":CHICKENS,STEALING\n"+string(_dislikesT)+":DOGS\n"+string(_hobbyT)+":Biking"
 descabsT[0]="Bruising,Kicking,Biking"
 
-descT[1]="Just your run of the mill small fry burglar, but stay sharp! They come in groups!"   
+descT[1]="Solo un ladróncillo común y corriente, ¡pero mantente alerta! ¡Vienen en grupos!"  
 descleftT[1]=string(_ageT)+":37\nNAT.:USA\n"+string(_heightT)+":4'5"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":GALLINAS,ROBANDO\n"+string(_dislikesT)+":PERROS\n"+string(_hobbyT)+":Motocicleta"
 descabsT[1]="Moretones,Patadas,Motociclismo"
@@ -66,7 +66,7 @@ descleftT[0]=string(_ageT)+":38\nNAT.:USA\n"+string(_heightT)+":4'6"+" "+string(
 descrightT[0]=string(_likesT)+":FRIES,STEALING\n"+string(_dislikesT)+":CATS\n"+string(_hobbyT)+":RIDING"
 descabsT[0]="Bruising,Kicking,Biking"
 
-descT[1]="Burg’s higher ranked relative. Not much stronger by comparison, but they can still kick!"
+descT[1]="Pariente de mayor rango de Burg. No mucho más fuerte, pero aún puede darte una patada."
 descleftT[1]=string(_ageT)+":38\nNAT.:USA\n"+string(_heightT)+":4'6"+" "+string(_weightT)+":111LBS"
 descrightT[1]=string(_likesT)+":PAPAS FRITAS,ROBANDO\n"+string(_dislikesT)+":GATOS\n"+string(_hobbyT)+":MONTANDO"
 descabsT[1]="Moretones,Patadas,Motociclismo"
@@ -87,7 +87,7 @@ descleftT[0]=string(_ageT)+":40\nNAT.:USA\n"+string(_heightT)+":4'7"+" "+string(
 descrightT[0]=string(_likesT)+":ROLLS,STEALING\n"+string(_dislikesT)+":RATS\n"+string(_hobbyT)+":HIKING"
 descabsT[0]="Bruising,Kicking,Biking"
 
-descT[1]="The cream of the Mr. Burg crop! Keep an eye out, as they’ve got a mean jump kick!"
+descT[1]="¡La crema de la crema de los Mr. Burg! Cuidado, porque tiene una patada voladora letal."
 descleftT[1]=string(_ageT)+":40\nNAT.:USA\n"+string(_heightT)+":4'7"+" "+string(_weightT)+":112LBS"
 descrightT[1]=string(_likesT)+":ROLLITOS,ROBANDO\n"+string(_dislikesT)+":RATAS\n"+string(_hobbyT)+":SENDERISMO"
 descabsT[1]="Moretones,Patadas,Motociclismo"
@@ -112,7 +112,7 @@ descleftT[0]=string(_ageT)+":41\nNAT.:FRANCE\n"+string(_heightT)+":4'5"+" "+stri
 descrightT[0]=string(_likesT)+":MILK,STEALING\n"+string(_dislikesT)+":GOATS\n"+string(_hobbyT)+":BASEBALL"
 descabsT[0]="Bruising,Kicking,Biking"
 
-descT[1]="ANOTHER BURGLAR, WHO'S ALSO ANOTHER DUMMY FODDER. BUT HE MAY SHOW UP WITH A WEAPON TO STRIKE YOU WITH! STILL A CHUMP."
+descT[1]="OTRO LADRÓN Y OTRO IDIOTA DESECHABLE. ¡PERO PUEDE APARECER CON UN ARMA PARA GOLPEARTE! SIGUE SIENDO UN MANTENIDO."
 descleftT[1]=string(_ageT)+":41\nNAT.:FRANCIA\n"+string(_heightT)+":4'5"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":LECHE,ROBANDO\n"+string(_dislikesT)+":CABRAS\n"+string(_hobbyT)+":BÉISBOL"
 descabsT[1]="Moretones,Patadas,Motociclismo"
@@ -139,7 +139,7 @@ descleftT[0]=string(_ageT)+":42\nNAT.:FRANCE\n"+string(_heightT)+":4'6"+" "+stri
 descrightT[0]=string(_likesT)+":WINE,STEALING\n"+string(_dislikesT)+":SODA\n"+string(_hobbyT)+":WINE TASTING"
 descabsT[0]="Bruising,Kicking,Biking"
 
-descT[1]="Burg’s higher ranked relative. Not much stronger by comparison, but they can still kick!"
+descT[1]="Pariente de mayor rango de Burg, no mucho más fuerte, pero igual pueden patear."
 descleftT[1]=string(_ageT)+":42\nNAT.:FRANCIA\n"+string(_heightT)+":4'6"+" "+string(_weightT)+":111LBS"
 descrightT[1]=string(_likesT)+":VINO,ROBANDO\n"+string(_dislikesT)+":REFRESCO\n"+string(_hobbyT)+":CATA DE VINOS"
 descabsT[1]="Moretones,Patadas,Motociclismo"
@@ -159,7 +159,7 @@ descleftT[0]=string(_ageT)+":43\nNAT.:FRANCE\n"+string(_heightT)+":4'7"+" "+stri
 descrightT[0]=string(_likesT)+":GAMBLING,STEALING\n"+string(_dislikesT)+":LOW PAY\n"+string(_hobbyT)+":ROULETTES"
 descabsT[0]="Bruising,Kicking,Biking"
 
-descT[1]="The cream of the Mr. Burg crop! Keep an eye out, as they’ve got a mean jump kick!"
+descT[1]="¡El más duro de ellos! Siguen siendo igual de gruñones que los de rango inferior."
 descleftT[1]=string(_ageT)+":43\nNAT.:FRANCIA\n"+string(_heightT)+":4'7"+" "+string(_weightT)+":112LBS"
 descrightT[1]=string(_likesT)+":JUEGO DE AZAR,ROBANDO\n"+string(_dislikesT)+":BAJO SALARIO\n"+string(_hobbyT)+":RULETAS"
 descabsT[1]="Moretones,Patadas,Motociclismo"
@@ -185,7 +185,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(
 descrightT[0]=string(_likesT)+":CHEESE,BIRDS\n"+string(_dislikesT)+":RATS\n"+string(_hobbyT)+":PHOTOGRAPHY"
 descabsT[0]="Sneaking,Sliding,Scent"
 
-descT[1]="This jerk slides around to try and trip you up! Some even have tommy guns!"
+descT[1]= "¡Este idiota se desliza para hacerte tropezar! Algunos incluso tienen ametralladoras."
 descleftT[1]=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":120LBS"
 descrightT[1]=string(_likesT)+":QUESO,AVES\n"+string(_dislikesT)+":TRAIDORES\n"+string(_hobbyT)+":FOTOGRAFÍA"
 descabsT[1]="Acechando,Deslizándose,\nAroma"
@@ -210,7 +210,7 @@ descleftT[0]=string(_ageT)+":36\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(
 descrightT[0]=string(_likesT)+":SPICES,MICE\n"+string(_dislikesT)+":COLD FOOD\n"+string(_hobbyT)+":EXPLOSIVES"
 descabsT[0]="Sneaking,Sliding,\nBombing"
 
-descT[1]="These crazy turncoats run around with bombs in their pockets!…How do they hide them?"
+descT[1]="¡Estos lunáticos corren con bombas en los bolsillos! …¿Cómo las esconden?"
 descleftT[1]=string(_ageT)+":36\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":120LBS"
 descrightT[1]=string(_likesT)+":ESPECIAS, RATONES\n"+string(_dislikesT)+":COMIDA FRÍA\n"+string(_hobbyT)+":EXPLOSIVOS"
 descabsT[1]="Acechando,Deslizándose,\nBombardeo"
@@ -233,7 +233,7 @@ descleftT[0]=string(_ageT)+":34\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(
 descrightT[0]=string(_likesT)+":SNAKES,EGGS\n"+string(_dislikesT)+":JOCKS\n"+string(_hobbyT)+":DISK THROWING"
 descabsT[0]="Sneaking,Sliding,\nThrowing"
 
-descT[1]="Lanky though they may be, they’ll grab and throw you around if you’re not careful!"
+descT[1]="Por muy flacuchos que sean, te agarrarán y te lanzarán si no tienes cuidado."
 descleftT[1]=string(_ageT)+":34\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":120LBS"
 descrightT[1]=string(_likesT)+":SERPIENTES,HUEVOS\n"+string(_dislikesT)+":DEPORTISTAS\n"+string(_hobbyT)+":LANZAMIENTO DE DISCO"
 descabsT[1]="Acechando,Deslizándose,\nLANZANDO"
@@ -255,7 +255,7 @@ descleftT[0]=string(_ageT)+":32\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(
 descrightT[0]=string(_likesT)+":MONKEYS,ORANGES\n"+string(_dislikesT)+":LATENESS\n"+string(_hobbyT)+":BOWLING"
 descabsT[0]="Sneaking,Sliding,\nKicking"
 
-descT[1]="With a nasty spring in their step, they’ll leap into the air to kick you in the face!"
+descT[1]= "Con un resorte mortal en sus pasos, ¡saltan para darte una patada en la cara!"
 descleftT[1]=string(_ageT)+":32\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":120LBS"
 descrightT[1]=string(_likesT)+":MONOS,NARANJAS\n"+string(_dislikesT)+":TARDANZAS\n"+string(_hobbyT)+":BOLICHE"
 descabsT[1]="Acechando,Deslizándose,\nPatadas"
@@ -276,7 +276,7 @@ descleftT[0]=string(_ageT)+":40\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(
 descrightT[0]=string(_likesT)+":BANANAS,CRYSTALS\n"+string(_dislikesT)+":LOW RANKS\n"+string(_hobbyT)+":CHESS"
 descabsT[0]="Sneaking,Sliding,\nSpy"
 
-descT[1]="Sliding, bombing, grappling and kicking are all things this creep’s got up his sleeves!"
+descT[1]= "Deslizarse, bombardear, agarrar y patear: ¡todo eso lo tiene este sujeto bajo la manga!"
 descleftT[1]=string(_ageT)+":40\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":120LBS"
 descrightT[1]=string(_likesT)+":PLÁTANOS,CRISTALES\n"+string(_dislikesT)+":BAJOS RANGOS\n"+string(_hobbyT)+":AJEDREZ"
 descabsT[1]="Acechando,Deslizándose,\nESPÍA"
@@ -306,7 +306,7 @@ descleftT[0]=string(_ageT)+":30\nNAT.:USA\n"+string(_heightT)+":5'10"+" "+string
 descrightT[0]=string(_likesT)+":SPICE,APPLES\n"+string(_dislikesT)+":CORN\n"+string(_hobbyT)+":GYMNASTICS"
 descabsT[0]="Acrobatics,Kicking"
 
-descT[1]="Usually coming in pairs, they’ll pester you with their deadly legs and can block your attacks!"
+descT[1]="Generalmente vienen en pares; te molestan con sus piernas mortales y pueden bloquear tus ataques."
 descleftT[1]=string(_ageT)+":30\nNAT.:USA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":SPICE,MANZANAS\n"+string(_dislikesT)+":MAÍZ\n"+string(_hobbyT)+":GIMNASIAS"
 descabsT[1]="Acrobacias,Patadas"
@@ -329,7 +329,7 @@ descleftT[0]=string(_ageT)+":30\nNAT.:USA\n"+string(_heightT)+":5'10"+" "+string
 descrightT[0]=string(_likesT)+":CHILL,APPLES\n"+string(_dislikesT)+":MAÍZ\n"+string(_hobbyT)+":GYMNASTICS"
 descabsT[0]="Acrobatics,Kicking"
 
-descT[1]="This lady gets a leg up on her chill counterpart with a dastardly spinning kick!"
+descT[1]="Esta señora supera a su par Chill con una pérfida patada giratoria."
 descleftT[1]=string(_ageT)+":30\nNAT.:USA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":CHILL,MANZANAS\n"+string(_dislikesT)+":MAÍZ\n"+string(_hobbyT)+":GIMNASIAS"
 descabsT[1]="Acrobacias,Patadas"
@@ -358,7 +358,7 @@ descT[0]="This fancy robot comes equipped with a shocking laser and strong, but 
 descrightT[0]=string(_likesT)+":SERVING,BREAKING\n"+string(_dislikesT)+":RUST\n"+string(_hobbyT)+":BARTENDING"
 descabsT[0]="Electricity,Bruising,\nBrewing"
 
-descT[1]="This fancy robot comes equipped with a shocking laser and strong, but detachable arms."
+descT[1]= "Este robot elegante viene equipado con un láser impactante y brazos fuertes… pero desprendibles."
 descrightT[1]=string(_likesT)+":SIRVIENDO,ROMPIENDO\n"+string(_dislikesT)+":ÓXIDO\n"+string(_hobbyT)+":BARTENDERÍA"
 descabsT[1]="Electricidad,Moretones,\nCerveza"
 
@@ -382,7 +382,7 @@ descT[0]="This temperamental bot has a flamethrower on one arm, don’t get burn
 descrightT[0]=string(_likesT)+":SERVING,BURNING\n"+string(_dislikesT)+":WATER\n"+string(_hobbyT)+":CHEF"
 descabsT[0]="Fire,Bruising,Cooking"
 
-descT[1]="This temperamental bot has a flamethrower on one arm, don’t get burned to ashes!"
+descT[1]="Este robot temperamental tiene un lanzallamas en un brazo, ¡no te quemes!"
 descrightT[1]=string(_likesT)+":SIRVIENDO,QUEMANDO\n"+string(_dislikesT)+":AGUA\n"+string(_hobbyT)+":CHEF"
 descabsT[1]="Fuego,Moretones,Cocinar"
 
@@ -404,7 +404,7 @@ descT[0]="A cold machine with an even colder ice gun that’ll send more than a 
 descrightT[0]=string(_likesT)+":SERVING,FREEZING\n"+string(_dislikesT)+":HEAT\n"+string(_hobbyT)+":PRESERVING"
 descabsT[0]="Cold,Bruising,Freezing"
 
-descT[1]="A cold machine with an even colder ice gun that’ll send more than a chill down your spine! Brrrr…"
+descT[1]="Una máquina fría con un arma de hielo aún más fría que te dará escalofríos… Brrrr…"
 descrightT[1]=string(_likesT)+":SERVICIO,CONGELACIÓN\n"+string(_dislikesT)+":CALOR\n"+string(_hobbyT)+":PRESERVANDO"
 descabsT[1]="Frío,Moretones,Congelación"
 
@@ -427,7 +427,7 @@ descleftT[0]=string(_ageT)+":21\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(
 descrightT[0]=string(_likesT)+":SMASHING,SMOKING\n"+string(_dislikesT)+":MILK\n"+string(_hobbyT)+":BASEBALL"
 descabsT[0]="Swinging,Dancing"
 
-descT[1]="This giggly ditz will swing any nearby weapon at you, but disarm her and she’ll crumple like paper!"
+descT[1]="Esta boba risueña golpeará cualquier arma cercana contra ti; ¡desármala y caerá como papel!"
 descleftT[1]=string(_ageT)+":21\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":ROMPER,FUMAR\n"+string(_dislikesT)+":LECHE\n"+string(_hobbyT)+":BEISBOL"
 descabsT[1]="Golpear,Bailar"
@@ -449,7 +449,7 @@ descleftT[0]=string(_ageT)+":20\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(
 descrightT[0]=string(_likesT)+":CUTTING,PIGS\n"+string(_dislikesT)+":MEAT\n"+string(_hobbyT)+":WOOD CARVING"
 descabsT[0]="Slicing,Knife Throwing"
 
-descT[1]="A devious woman who knows many tricks with her knives, namely piercing her foes from afar!"
+descT[1]="Mujer taimada experta en trucos con cuchillos, especialmente perforar desde lejos."
 descleftT[1]=string(_ageT)+":20\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":108LBS"
 descrightT[1]=string(_likesT)+":CORTANDO,CERDOS\n"+string(_dislikesT)+":CARNE\n"+string(_hobbyT)+":TALLADO DE MADERA"
 descabsT[1]="Cortar,Lanzamiento de cuchillos"
@@ -472,7 +472,7 @@ descleftT[0]=string(_ageT)+":28\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(
 descrightT[0]=string(_likesT)+":EXPLOSIONS,VULTURES\n"+string(_dislikesT)+":QUIET\n"+string(_hobbyT)+":CHECKERS"
 descabsT[0]="Throwing Explosives"
 
- descT[1]="DANGER! This lady throws dynamite around like it’s candy! Don’t get caught in the blast!"
+ descT[1]="¡PELIGRO! Esta señora lanza dinamita como si fueran dulces. ¡No quedes en la explosión!"
 descleftT[1]=string(_ageT)+":28\nNAT.:USA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":112LBS"
 descrightT[1]=string(_likesT)+":EXPLOSIONES,BUITRES\n"+string(_dislikesT)+":SILENCIO\n"+string(_hobbyT)+":DAMAS"
 descabsT[1]="Lanzar explosivos"
@@ -493,7 +493,7 @@ descleftT[0]=string(_ageT)+":27\nNAT.:RUSSIA\n"+string(_heightT)+":5'9"+" "+stri
 descrightT[0]=string(_likesT)+":WHIPPING,SPICES\n"+string(_dislikesT)+"CATS:\n"+string(_hobbyT)+":TAMING"
 descabsT[0]="Whips,Riding"
 
-descT[1]="This sadist will crack her whip at you, laughing with every lash you get."
+descT[1]="Esta sádica usa su látigo contigo, riéndose con cada latigazo."
 descleftT[1]=string(_ageT)+":27\nNAT.:RUSIA\n"+string(_heightT)+":5'9"+" "+string(_weightT)+":130LBS"
 descrightT[1]=string(_likesT)+":AZOTAR,ESPECIAS\n"+string(_dislikesT)+"GATOS:\n"+string(_hobbyT)+":DOMAR"
 descabsT[1]="Látigos,Montar"
@@ -538,7 +538,7 @@ descleftT[0]=string(_ageT)+":41\nNAT.:RUSSIA\n"+string(_heightT)+":6'2"+" "+stri
 descrightT[0]=string(_likesT)+":BURGERS,BEARS\n"+string(_dislikesT)+":MICE\n"+string(_hobbyT)+":BOWLING"
 descabsT[0]="Crushing,Ramming"
 
-descT[1]="Don’t mistake his size for weakness! One good shoulder charge or butt stomp will flatten you!"
+descT[1]="No confundas su tamaño con debilidad: un embiste con el hombro o un pisotón y te aplasta."
 descleftT[1]=string(_ageT)+":41\nNAT.:RUSIA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":500LBS"
 descrightT[1]=string(_likesT)+":HAMBURGUESAS,OSOS\n"+string(_dislikesT)+":Ratones\n"+string(_hobbyT)+":BOLICHE"
 descabsT[1]="Triturando,Embistiendo"
@@ -565,7 +565,7 @@ descleftT[0]=string(_ageT)+":39\nNAT.:RUSSIA\n"+string(_heightT)+":6'1"+" "+stri
 descrightT[0]=string(_likesT)+":HAM,BEARS\n"+string(_dislikesT)+":MICE\n"+string(_hobbyT)+":FOOTBALL"
 descabsT[0]="Crushing,Ramming"
  
- descT[1]="This big lug hasn’t worked out as much as his peers, but he can still hurt so watch out!"
+ descT[1]="Este grandulón no se entrena tanto como los demás, pero igual duele, así que cuidado."
 descleftT[1]=string(_ageT)+":39\nNAT.:RUSIA\n"+string(_heightT)+":6'1"+" "+string(_weightT)+":480LBS"
 descrightT[1]=string(_likesT)+":JAMÓN,OSOS\n"+string(_dislikesT)+":Ratones\n"+string(_hobbyT)+":FÚTBOL"
 descabsT[1]="Triturando,Embistiendo"
@@ -588,7 +588,7 @@ descleftT[0]=string(_ageT)+":45\nNAT.:RUSSIA\n"+string(_heightT)+":6'3"+" "+stri
 descrightT[0]=string(_likesT)+":BEEF,BEARS\n"+string(_dislikesT)+":MICE\n"+string(_hobbyT)+":BARFIGHTS"
 descabsT[0]="Crushing,Ramming"
 
-descT[1]="Most of his “fat” is actually muscle waiting to flex! His charge is faster, too!"
+descT[1]="La mayoría de su ‘grasa’ es músculo esperando para flexionarse. Su embestida es más rápida."
 descleftT[1]=string(_ageT)+":45\nNAT.:RUSIA\n"+string(_heightT)+":6'3"+" "+string(_weightT)+":550LBS"
 descrightT[1]=string(_likesT)+":CARNE,OSOS\n"+string(_dislikesT)+":Ratones\n"+string(_hobbyT)+":Peleas de bar"
 descabsT[1]="Triturando,Embistiendo"
@@ -612,7 +612,7 @@ descleftT[0]=string(_ageT)+":38\nNAT.:GERMANY\n"+string(_heightT)+":8'2"+" "+str
 descrightT[0]=string(_likesT)+":KNOCKOUTS,BEANS\n"+string(_dislikesT)+":FLYING THINGS\n"+string(_hobbyT)+":FASHION"
 descabsT[0]="Boxing,Charging"
 
-descT[1]= "Quick on her twig legs, her charged punches, uppercuts and combos will have you reeling!"
+descT[1]= "Rápida sobre sus patitas flacas; sus puñetazos cargados, uppercuts y combos te dejarán mareado."
 descleftT[1]=string(_ageT)+":38\nNAT.:ALEMANIA\n"+string(_heightT)+":8'2"+" "+string(_weightT)+":320LBS"
 descrightT[1]=string(_likesT)+":NOQUEOS,FRIJOLES\n"+string(_dislikesT)+":COSAS VOLADORAS\n"+string(_hobbyT)+":MODA"
 descabsT[1]="Boxeo,Carga"
@@ -637,7 +637,7 @@ descleftT[0]=string(_ageT)+":38\nNAT.:GERMANY\n"+string(_heightT)+":8'2"+" "+str
 descrightT[0]=string(_likesT)+":KNOCKOUTS,CORN\n"+string(_dislikesT)+":CROWS\n"+string(_hobbyT)+":BAR HOPPING"
 descabsT[0]="Boxing,Charging"
 
-descT[1]= "These pugilists are still in training, improving thanks to their boxing mentors."
+descT[1]= "Estas pugilistas aún están en entrenamiento, aprendiendo de sus mentoras."
 descleftT[1]=string(_ageT)+":38\nNAT.:ALEMANIA\n"+string(_heightT)+":8'2"+" "+string(_weightT)+":320LBS"
 descrightT[1]=string(_likesT)+":NOQUEOS,MAÍZ\n"+string(_dislikesT)+":CUERVOS\n"+string(_hobbyT)+":BALADA DE BAR EM BAR"
 descabsT[1]="Boxeo,Carga"
@@ -661,7 +661,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(
 descrightT[0]=string(_likesT)+":DOMINATING,TEA\n"+string(_dislikesT)+":TOMATOES\n"+string(_hobbyT)+":PIE BAKING"
 descabsT[0]="Wrestling,Rolling"
  
-  descT[1]="Don’t underestimate these round crooks, they’ll grab, slam and roll you into a floor stain!"
+  descT[1]= "No subestimes a estas rateras redondas; te agarran, te azotan y te convierten en mancha de piso."
 descleftT[1]=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":500LBS" 
 descrightT[1]=string(_likesT)+":DOMINANDO,TÉ\n"+string(_dislikesT)+":TOMATES\n"+string(_hobbyT)+":HORNEADO DE PASTEL"
 descabsT[1]="Lucha,Rodando"
@@ -687,7 +687,7 @@ descleftT[0]=string(_ageT)+":33\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(
 descrightT[0]=string(_likesT)+":CRUSHING,CARAMEL\n"+string(_dislikesT)+":GRAPES\n"+string(_hobbyT)+":CUPCAKE BAKING"
 descabsT[0]="Wrestling,Bellyflop"
 
-descT[1]= "These girls are surprisingly more athletic, and can pancake you with a flying belly flop!"
+descT[1]=  "Más atléticas de lo que parecen; pueden aplastarte con un bombazo de panza voladora."
 descleftT[1]=string(_ageT)+":33\nNAT.:USA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":500LBS" 
 descrightT[1]=string(_likesT)+":APLASTANDO,CARAMELO\n"+string(_dislikesT)+":UVAS\n"+string(_hobbyT)+":ASSANDO CUPCAKES"
 descabsT[1]="Lucha,caídas de barriga"
@@ -709,7 +709,7 @@ descleftT[0]=string(_ageT)+":38\nNAT.:CANADA\n"+string(_heightT)+":8'3"+" "+stri
 descrightT[0]=string(_likesT)+":TREES,MOOSES\n"+string(_dislikesT)+":RUDENESS\n"+string(_hobbyT)+":HOUSE BUILDING"
 descabsT[0]="Wrestling,Spinning"
  
- descT[1]="A former lumberjack with gains, deadly bearhugs and whirling punches to show it!"
+ descT[1]="Ex–leñador musculoso con abrazos de oso y golpes giratorios mortales."
 descleftT[1]=string(_ageT)+":38\nNAT.:CANADÁ\n"+string(_heightT)+":8'3"+" "+string(_weightT)+":400LBS" 
 descrightT[1]=string(_likesT)+":ÁRBOLES,ALCES\n"+string(_dislikesT)+":GROSERÍA\n"+string(_hobbyT)+":CONSTRUIR CASAS"
 descabsT[1]="Lucha,Girando"
@@ -733,7 +733,7 @@ descleftT[0]=string(_ageT)+":37\nNAT.:CANADA\n"+string(_heightT)+":8'2"+" "+stri
 descrightT[0]=string(_likesT)+":TREES,MOOSES\n"+string(_dislikesT)+":RUSHING\n"+string(_hobbyT)+":WOOD CUTTING"
 descabsT[0]="Wrestling,Kicking"
 
-descT[1]="This massive man will jump and kick you back before coming in for a crushing hug!"
+descT[1]="Este gigante salta y te patea para alejarte, ¡y luego te da un abrazo aplastante!"
 descleftT[1]=string(_ageT)+":37\nNAT.:CANADÁ\n"+string(_heightT)+":8'2"+" "+string(_weightT)+":380LBS" 
 descrightT[1]=string(_likesT)+":ÁRBOLES,ALCES\n"+string(_dislikesT)+":APURADO\n"+string(_hobbyT)+":CORTE DE MADERA"
 descabsT[1]="Lucha,Patadas"
@@ -757,7 +757,7 @@ descleftT[0]=string(_ageT)+":28\nNAT.:CHINA\n"+string(_heightT)+":5'7"+" "+strin
 descrightT[0]=string(_likesT)+":BROCCOLI,FISH\n"+string(_dislikesT)+":PANTS\n"+string(_hobbyT)+":FITNESS"
 descabsT[0]="Martial Arts,Knitting"
 
-descT[1]="A well trained martial artist who closes the distance with a thick hip check before unleashing her aura on you!"
+descT[1]= "Artista marcial entrenada que te embiste con la cadera antes de desatar su aura contra ti."
 descleftT[1]=string(_ageT)+":28\nNAT.:CHINA\n"+string(_heightT)+":5'7"+" "+string(_weightT)+":100LBS" 
 descrightT[1]=string(_likesT)+":BRÓCOLI,PESCADO\n"+string(_dislikesT)+":PANTALONES\n"+string(_hobbyT)+":ENTRENAMIENTOS"
 descabsT[1]="Artes Marciales,Tejer"
@@ -781,7 +781,7 @@ descleftT[0]=string(_ageT)+":28\nNAT.:CHINA\n"+string(_heightT)+":5'6"+" "+strin
 descrightT[0]=string(_likesT)+":SOUP,BUTTERFLIES\n"+string(_dislikesT)+":SKIRTS\n"+string(_hobbyT)+":EXERCISE"
 descabsT[0]="Martial Arts,Rapid Fists"
 
- descT[1]="This girl channels her ki into her punches, assaulting you with a flurry of fists!"
+ descT[1]="Canaliza su ki en sus puños, atacando con una lluvia de golpes."
 descleftT[1]=string(_ageT)+":28\nNAT.:CHINA\n"+string(_heightT)+":5'6"+" "+string(_weightT)+":110LBS" 
 descrightT[1]=string(_likesT)+":SOPA,MARIPOSAS\n"+string(_dislikesT)+":FALDAS\n"+string(_hobbyT)+":EJERCICIO"
 descabsT[1]="Artes Marciales,Puños Rápidos"
@@ -805,7 +805,7 @@ descleftT[0]=string(_ageT)+":28\nNAT.:CHINA\n"+string(_heightT)+":5'8"+" "+strin
 descrightT[0]=string(_likesT)+":NOVELS,TIGERS\n"+string(_dislikesT)+":DRESSES\n"+string(_hobbyT)+":MEDITATION"
 descabsT[0]="Martial Arts,Rapid Fists"
 
- descT[1]="A natural ki master, she has both Ki and Chi’s techniques down and then some!"
+ descT[1]="Maestra natural del ki; domina las técnicas de Ki y Chi… y aún más."
 descleftT[1]=string(_ageT)+":28\nNAT.:CHINA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":120LBS" 
 descrightT[1]=string(_likesT)+":NOVELAS,TIGRES\n"+string(_dislikesT)+":VESTIDOS\n"+string(_hobbyT)+":MEDITACIÓN"
 descabsT[1]="Artes Marciales,Puños Rápidos"
@@ -829,7 +829,7 @@ descleftT[0]=string(_ageT)+":21\nNAT.:GREECE\n"+string(_heightT)+":4'5"+" "+stri
 descrightT[0]=string(_likesT)+":FISH,SCENERY\n"+string(_dislikesT)+":INTERRUPTIONS\n"+string(_hobbyT)+":EXPLORING"
 descabsT[0]="Flying,Charging"
 
- descT[1]="They take to the skies with style, mercilessly tackling their prey."
+ descT[1]= "¡Surcan los cielos con estilo, embistiendo sin piedad a su presa!"
 descleftT[1]=string(_ageT)+":21\nNAT.:GRECIA\n"+string(_heightT)+":4'5"+" "+string(_weightT)+":100LBS" 
 descrightT[1]=string(_likesT)+":PECES,PAISAJE\n"+string(_dislikesT)+":INTERRUPCIONES\n"+string(_hobbyT)+":EXPLORANDO"
 descabsT[1]="Volando,Cargando"
@@ -853,7 +853,7 @@ descleftT[0]=string(_ageT)+":23\nNAT.:GREECE\n"+string(_heightT)+":4'5"+" "+stri
 descrightT[0]=string(_likesT)+":FISH,MUSIC\n"+string(_dislikesT)+":DISRUPTIONS\n"+string(_hobbyT)+":SONGWRITING"
 descabsT[0]="Flying,Charging"
 
-descT[1]="Protect your ears! These songbirds have a special song to lull you to instant sleep!"
+descT[1]="¡Protege tus oídos! Estas aves cantoras tienen una canción especial que induce el sueño instantáneo."
 descleftT[1]=string(_ageT)+":23\nNAT.:GRECIA\n"+string(_heightT)+":4'5"+" "+string(_weightT)+":105LBS" 
 descrightT[1]=string(_likesT)+":PESCADO,MÚSICA\n"+string(_dislikesT)+":INTERRUPCIONES\n"+string(_hobbyT)+":ESCRIBIENDO CANCIONES"
 descabsT[1]="Volando,Cargando"
@@ -901,7 +901,7 @@ descleftT[0]=string(_ageT)+":34\nNAT.:USA\n"+string(_heightT)+":4'6"+" "+string(
 descrightT[0]=string(_likesT)+":HORSES,STEAK\n"+string(_dislikesT)+":OUTLAWS\n"+string(_hobbyT)+":PIANO PLAYING"
 descabsT[0]="Shooting,Horse Riding,Piano"
 
-descT[1]="This gunner's a bit more trigger happy than his colleague. Don't get filled with holes!"
+descT[1]="Un pistolero del oeste, más vigilante que forajido. Cuidado con el arma enorme en su cadera."
 descleftT[1]=string(_ageT)+":34\nNAT.:USA\n"+string(_heightT)+":4'6"+" "+string(_weightT)+":107LBS"  
 descrightT[1]=string(_likesT)+":CABALLOS,FILETE\n"+string(_dislikesT)+":FORAJIDOS\n"+string(_hobbyT)+":TOCANDO PIANO"
 descabsT[1]="Tiro,Equitación,Piano"
@@ -928,7 +928,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:BRITAIN\n"+string(_heightT)+":5'12"+" "+
 descrightT[0]=string(_likesT)+":PAINTINGS,DECOR\n"+string(_dislikesT)+":STIFFNESS\n"+string(_hobbyT)+":BALL DANCING"
 descabsT[0]="Ramming,Tripping"
 
-descT[1]= "A clumsy zombie who rushes his foes, but is prone to tripping and accidentally tackling them."
+descT[1]= "Un zombi torpe que se lanza contra sus enemigos, pero es propenso a tropezar y derribarlos accidentalmente."
 descleftT[1]=string(_ageT)+":MUERTO\nNAT.:G.BRETAÑA\n"+string(_heightT)+":5'12"+" "+string(_weightT)+":85LBS"  
 descrightT[1]=string(_likesT)+":PINTURAS,DECORACIÓN\n"+string(_dislikesT)+":RIGIDEZ\n"+string(_hobbyT)+":BAILAR ELEGANTE"
 descabsT[1]="Empujón,Tropiezo"
@@ -952,7 +952,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:FRANCE\n"+string(_heightT)+":5'13"+" "+s
 descrightT[0]=string(_likesT)+":PAINTINGS,WINE\n"+string(_dislikesT)+":BAD BREATH\n"+string(_hobbyT)+":VIOLIN PLAYING"
 descabsT[0]="Ramming,Biting"
 
-descT[1]= "This cadaver’s got more sure footing, and will grab you for a nasty bite!"
+descT[1]= "Este cadáver tiene más firmeza y te va a pillar para un mordisco feo."
 descleftT[1]=string(_ageT)+":MUERTO\nNAT.:FRANCIA\n"+string(_heightT)+":5'13"+" "+string(_weightT)+":87LBS" 
 descrightT[1]=string(_likesT)+":CUADROS,VINO\n"+string(_dislikesT)+":MAL ALIENTO\n"+string(_hobbyT)+":TOCAR EL VIOLÍN"
 descabsT[1]="Embistiendo,mordiendo"
@@ -975,7 +975,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:CAJUN\n"+string(_heightT)+":5'10"+" "+st
 descrightT[0]=string(_likesT)+":NATURE,MUSHROOMS\n"+string(_dislikesT)+":ROT\n"+string(_hobbyT)+":BANJO PLAYING"
 descabsT[0]="Ramming,Biting"
 
-descT[1]= "This bog shambler is a lot more bitey compared to his cousins. Surprisingly cleaner, though."
+descT[1]= "Este deambulador del pantano muerde mucho más que sus primos. Sorprendentemente, aunque, está más limpio."
 descleftT[1]=string(_ageT)+":DEAD\nNAT.:CAJÚN\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":83LBS" 
 descrightT[1]=string(_likesT)+":NATURALEZA,HONGOS\n"+string(_dislikesT)+":PUDRIDAS\n"+string(_hobbyT)+":TOCANDO BANJO"
 descabsT[1]="Embistiendo,mordiendo"
@@ -999,7 +999,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:FRANCE\n"+string(_heightT)+":6'2"+" "+st
 descrightT[0]=string(_likesT)+":MAKEUP,BRUSHES\n"+string(_dislikesT)+":JAWBREAKERS\n"+string(_hobbyT)+":HAIR GROOMING"
 descabsT[0]="Acid Spit"
 
-   descT[1]=  "She calls herself a beauty, despite a missing jaw. Those who are rude will be the subject of her acidic spits!"
+   descT[1]="Se llama a sí misma una belleza, a pesar de no tener mandíbula. ¡Los groseros serán el objetivo de sus escupitajos ácidos!"
 descleftT[1]=string(_ageT)+":MUERTA\nNAT.:FRANCIA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":83LBS" 
 descrightT[1]=string(_likesT)+":MAQUILLAJE,PEINADOS\n"+string(_dislikesT)+":CHICLES DUROS\n"+string(_hobbyT)+":CUIDADO DEL CABELLO"
 descabsT[1]="Escupitajo ácido"
@@ -1025,7 +1025,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:BRITAIN\n"+string(_heightT)+":6'2"+" "+s
 descrightT[0]=string(_likesT)+":PLAYS,ART\n"+string(_dislikesT)+":NAIL BREAKING\n"+string(_hobbyT)+":NAIL CARE"
 descabsT[0]="Sharp Nails"
 
-descT[1]= "This undead primadonna takes pride in her nails… Because they’re sharp as blades."
+descT[1]= "Esta prima donna no muerta se enorgullece de sus uñas… porque son afiladas como cuchillas."
 descleftT[1]=string(_ageT)+":MUERTA\nNAT.:G.BRETAÑA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":82LBS" 
 descrightT[1]=string(_likesT)+":OBRAS,ARTE\n"+string(_dislikesT)+":UÑA ROTA\n"+string(_hobbyT)+":CUIDADO DE UÑAS"
 descabsT[1]="Uñas afiladas"
@@ -1048,7 +1048,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:CAJUN\n"+string(_heightT)+":6'2"+" "+str
 descrightT[0]=string(_likesT)+":NATURE,LETTUCE\n"+string(_dislikesT)+":WORMS\n"+string(_hobbyT)+":HARVESTING"
 descabsT[0]="Acid Spit, Sharp Nails"
 
-descT[1]= "Acid spit and sharp claws are the telltale sign for this jawless shambler! Is she just lonely?"
+descT[1]= "¡El escupitajo ácido y las garras afiladas son la señal característica de este tambaleante sin mandíbula! ¿Está simplemente sola?"
 descleftT[1]=string(_ageT)+":MUERTA\nNAT.:CAJÚN\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":82LBS" 
 descrightT[1]=string(_likesT)+":NATURALEZA,LECHUGA\n"+string(_dislikesT)+":GUSANOS\n"+string(_hobbyT)+":COSECHA"
 descabsT[1]="Escupitajo ácido, Uñas afiladas"
@@ -1075,7 +1075,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:FRENCH\n"+string(_heightT)+":5'10"+" "+s
 descrightT[0]=string(_likesT)+":THEATER,ACTS\n"+string(_dislikesT)+":HECKLERS\n"+string(_hobbyT)+":BALLET"
 descabsT[0]="Ballerina,Kicking"
 
-descT[1]= "Skeletal former ballerinas with the kicks to prove it. They’re quite sassy, too!"
+descT[1]= "Ex bailarinas esqueléticas con las patadas para demostrarlo. ¡También son bastante descaradas!"
 descleftT[1]=string(_ageT)+":MUERTA\nNAT.:FRANCIA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":22LBS" 
 descrightT[1]=string(_likesT)+":TEATRO,ACTOS\n"+string(_dislikesT)+":PERRTURBADORES\n"+string(_hobbyT)+":BALLET"
 descabsT[1]="Bailarina,Pateando"
@@ -1100,7 +1100,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:FRENCH\n"+string(_heightT)+":5'10"+" "+s
 descrightT[0]=string(_likesT)+":THEATER,JOKES\n"+string(_dislikesT)+":HECKLERS\n"+string(_hobbyT)+":JUGGLING"
 descabsT[0]="Juggling, Bone Tossing"
 
-descT[1]="Once jolly jugglers, now bony bombardiers who can chuck pieces of themselves at you!"
+descT[1]="¡Antes eran malabaristas alegres, ahora son bombarderos demacrados que pueden lanzarte partes de sí mismos!"
 descleftT[1]=string(_ageT)+":MUERTO\nNAT.:FRANCIA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":26LBS" 
 descrightT[1]=string(_likesT)+":TEATRO,CHISTES\n"+string(_dislikesT)+":PERRTURBADORES\n"+string(_hobbyT)+":MALABARISMOS"
 descabsT[1]="Malabares, Lanzamiento de Huesos"
@@ -1126,7 +1126,7 @@ descleftT[0]=string(_ageT)+":32\nNAT.:BRITAIN\n"+string(_heightT)+":6'2"+" "+str
 descrightT[0]=string(_likesT)+":TALES,LIONS\n"+string(_dislikesT)+":SCOUNDRELS\n"+string(_hobbyT)+":JOUSTING"
 descabsT[0]="Sword Fighting"
 
- descT[1]=  "Once respected knights, but now chivalry is dead to these fellows! And by their sword, you may be too!"
+ descT[1]= "¡Fueron caballeros respetados, pero ahora la caballerosidad está muerta para estos tipos! ¡Y por su espada, tú también podrías estarlo!"
 descleftT[1]=string(_ageT)+":32\nNAT.:G.BRETAÑA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":170LBS" 
 descrightT[1]=string(_likesT)+":CUENTOS,LEONES\n"+string(_dislikesT)+":CANALLAS\n"+string(_hobbyT)+":JUSTA"
 descabsT[1]="Duelo de espadas"
@@ -1151,10 +1151,10 @@ descleftT[0]=string(_ageT)+":33\nNAT.:BRITAIN\n"+string(_heightT)+":6'2"+" "+str
 descrightT[0]=string(_likesT)+":CUENTOS,ESTATUAS\n"+string(_dislikesT)+":POINTY THINGS\n"+string(_hobbyT)+":BOOK WRITING"
 descabsT[0]="Club Battling"
 
- descT[0]=  "Skilled with blunt weaponry, they'll bonk you good! Apparently has bad history with arrows."
-descleftT[0]=string(_ageT)+":33\nNAT.:G.BRETAÑA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":170LBS" 
-descrightT[0]=string(_likesT)+":CUENTOS,ESTATUAS\n"+string(_dislikesT)+":COSAS PUNTIGUDAS\n"+string(_hobbyT)+":ESCRITURA DE LIBROS"
-descabsT[0]="Combate de garrote"
+ descT[1]= "Hábil con armas contundentes, ¡te dará un buen golpe! Aparentemente tiene mala historia con las flechas."
+descleftT[1]=string(_ageT)+":33\nNAT.:G.BRETAÑA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":170LBS" 
+descrightT[1]=string(_likesT)+":CUENTOS,ESTATUAS\n"+string(_dislikesT)+":COSAS PUNTIGUDAS\n"+string(_hobbyT)+":ESCRITURA DE LIBROS"
+descabsT[1]="Combate de garrote"
 
 descT[2]= "Habilidosos com armas contundentes, vão te dar uma boa pancada! Aparentemente, têm um histórico ruim com flechas."
 descleftT[2]=string(_ageT)+":33\nNAT.:G.BRETANHA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":170LBS" 
@@ -1194,7 +1194,7 @@ descleftT[0]="NAT.:BRITAIN\n"+string(_heightT)+":4'5"+" "+string(_weightT)+":6LB
 descrightT[0]=string(_likesT)+":CUTTING\n"+string(_dislikesT)+":DULLING\n"+string(_hobbyT)+":HEDGE CUTTING"
 descabsT[0]="Axe Possession"
  
-descT[1]= "This cursed axe belongs to a ghostly executioner. Beware, as it still longs for heads to cut off!"
+descT[1]= "Este hacha maldita pertenece a un verdugo fantasmal. ¡Cuidado, porque todavía anhela que le corten cabezas!"
 descleftT[1]="NAT.:G.BRETAÑA\n"+string(_heightT)+":4'5"+" "+string(_weightT)+":6LBS" 
 descrightT[1]=string(_likesT)+":CORTANDO\n"+string(_dislikesT)+":EMBOTE\n"+string(_hobbyT)+":CORTAR SETOS"
 descabsT[1]="Posesión de hacha"
@@ -1229,7 +1229,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:ITALY\n"
 descrightT[0]=string(_likesT)+":HORROR,NOVELS\n"+string(_dislikesT)+":NEW MEDIA\n"+string(_hobbyT)+":FILM MAKING"
 descabsT[0]="Possession,Story Making"
   
-  descT[1]= "This painting houses the spirit of a renowned auteur, forever angry about an unfinished story."
+  descT[1]= "Esta pintura alberga el espíritu de un aclamado autor, siempre enfadado por una historia inconclusa."
 descleftT[1]=string(_ageT)+":MUERTO\nNAT.:ITALIA\n" 
 descrightT[1]=string(_likesT)+":TERROR,NOVELAS\n"+string(_dislikesT)+":NUEVOS MEDIOS\n"+string(_hobbyT)+":ESCRITURA"
 descabsT[1]="Posesión, Creación de Historias"
@@ -1255,7 +1255,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:BRITAIN\n"
 descrightT[0]=string(_likesT)+":FANCINESS,BALLS\n"+string(_dislikesT)+":LOUD COLORS\n"+string(_hobbyT)+":COSTUME MAKING"
 descabsT[0]="Possession,Dress Making"
 	
- descT[1]= "A high class socialite haunts this painting, hoping to make spirits of the living join her."
+ descT[1]= "Una socialité de alta clase acecha este cuadro, esperando que los espíritus de los vivos se unan a ella."
 descleftT[1]=string(_ageT)+":MUERTA\nNAT.:G.BRETAÑA\n" 
 descrightT[1]=string(_likesT)+":ELEGANCIA,BAILES\n"+string(_dislikesT)+":COLORES LLAMATIVOS\n"+string(_hobbyT)+":CONFECCIÓN DE VESTUARIOS"
 descabsT[1]="Posesión, Confección de Ropa"
@@ -1280,7 +1280,7 @@ descleftT[0]=string(_ageT)+":DEAD\nNAT.:GERMANY\n"
 descrightT[0]=string(_likesT)+":WARS,EXPLOSIONS\n"+string(_dislikesT)+":WAR REMINDER\n"+string(_hobbyT)+":WEAPON COLLECTING"
 descabsT[0]="Possession,Marksman"		
 
- descT[1]= "The ghost of a renaissance man commands this portrait, unable to let go of a past war."
+ descT[1]= "El fantasma de un hombre renacentista domina este retrato, incapaz de dejar atrás una guerra pasada."
 descleftT[1]=string(_ageT)+":MUERTO\nNAT.:ALEMANIA\n" 
 descrightT[1]=string(_likesT)+":GUERRAS,EXPLOSIONES\n"+string(_dislikesT)+":RECORDATORIO DE GUERRA\n"+string(_hobbyT)+":COLECCIÓN DE ARMAS"
 descabsT[1]="Posesión,Tirador"	
@@ -1317,7 +1317,7 @@ descabsT[global.Language]=""
 		if dataPal=4
 		{
 descT[0]= "A living hieroglyph of an eye of Horus. It's gaze is harsh, judgemental and utterly soul-piercing."	
-descT[1]= "A living hieroglyph of an eye of Horus. It's gaze is harsh, judgemental and utterly soul-piercing."	
+descT[1]=  "Un jeroglífico viviente del ojo de Horus. Su mirada es dura, juzgadora y totalmente perfora-almas."	
 descT[2]= "Um hieróglifo vivo do olho de Hórus. Seu olhar é severo, julgador e penetra até a alma."
 desc=descT[global.Language]
 			
@@ -1328,7 +1328,7 @@ desc)
 	    if dataPal=5
 		{paintingSpr=spr_heys enemyID=126 frameSpr=spr_hieroglyph_base 
 descT[0]= "A living hieroglyph of a scarab. A single one of them carries the fury of an entire swarm."
-descT[1]= "A living hieroglyph of a scarab. A single one of them carries the fury of an entire swarm."
+descT[1]= "Un jeroglífico viviente de un escarabajo. Uno solo de ellos carga la furia de un enjambre entero."
 descT[2]= "Um hieróglifo vivo de um escaravelho. Um único deles carrega a fúria de um enxame inteiro."
 desc=descT[global.Language]
 			
@@ -1338,7 +1338,7 @@ desc)}
 		{paintingSpr=spr_heyankh enemyID=127 frameSpr=spr_hieroglyph_base
 			
  descT[0]="A living hieroglyph of an ankh. Normally a symbol of life, but this one will try to bring you death."
-  descT[1]="A living hieroglyph of an ankh. Normally a symbol of life, but this one will try to bring you death."
+  descT[1]="Un jeroglífico viviente de un anj. Normalmente un símbolo de vida, pero este intentará darte muerte."
 descT[2]= "Um hieróglifo vivo de um ankh. Normalmente um símbolo de vida, mas este tentará trazer a morte."
 desc=descT[global.Language]
 			
@@ -1348,7 +1348,7 @@ desc)}
 		{paintingSpr=spr_heya enemyID=128 frameSpr=spr_hieroglyph_base
 			
  descT[0]="A living hieroglyph of Anubis. Thinks it's the real deal and angrily strikes those who deny it."
-  descT[1]="A living hieroglyph of Anubis. Thinks it's the real deal and angrily strikes those who deny it."
+  descT[1]="Un jeroglífico viviente de Anubis. Cree que es el verdadero y golpea con rabia a quienes lo niegan."
 descT[2]= "Um hieróglifo vivo de Anubis. Acha que é o verdadeiro e ataca com raiva aqueles que o negam."
 desc=descT[global.Language]			
 			
@@ -1366,7 +1366,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:EGYPT\n"+string(_heightT)+":3'10"+" "
 descrightT[0]=string(_likesT)+":STRING,MICE\n"+string(_dislikesT)+":ROBBERS\n"+string(_hobbyT)+":HARP PLAYING"
 descabsT[0]="Cat Powers,Scratching"
   
-  descT[1]="A cranky old cat whose claws haven’t dulled with time. Don’t become his new scratching post!"
+  descT[1]= "Un viejo gato gruñón cuyas garras no se han desgastado con el tiempo. ¡No te conviertas en su nuevo rascador!"
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:EGIPTO\n"+string(_heightT)+":3'10"+" "+string(_weightT)+":80LBS" 
 descrightT[1]=string(_likesT)+":HILO,RATONES\n"+string(_dislikesT)+":LADRONES\n"+string(_hobbyT)+":TOCANDO EL ARPA"
 descabsT[1]="Cat Powers,Rascándose"
@@ -1390,7 +1390,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:EGYPT\n"+string(_heightT)+":3'9"+" "+
 descrightT[0]=string(_likesT)+":WRAPS,MICE\n"+string(_dislikesT)+":RAIDERS\n"+string(_hobbyT)+":YARN WRAPPING"
 descabsT[0]="Cat Powers, Scratching, Wrapping"
 
- descT[1]="Not as cranky as Mau, but more devious as she can turn you into her yarn with her wraps!"
+ descT[1]= "No tan gruñona como Mau, pero más astuta, ya que puede convertirte en su ovillo con sus envolturas."
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:EGIPTO\n"+string(_heightT)+":3'9"+" "+string(_weightT)+":78LBS" 
 descrightT[1]=string(_likesT)+":ENVOLTURAS,RATONES\n"+string(_dislikesT)+":SAQUEADORES\n"+string(_hobbyT)+":ENVOLTURA DE HILO"
 descabsT[1]="Gatos,Arañando,Envolver"
@@ -1414,15 +1414,15 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:EGYPT\n"+string(_heightT)+":7'2"+" "+
 descrightT[0]=string(_likesT)+":MUSIC,ARTS\n"+string(_dislikesT)+":ROBBERS\n"+string(_hobbyT)+":FLUTE PLAYING"
 descabsT[0]="Snake Hands, Kicking"
 
-descT[1]="A snake lady with snake arms that can stretch long distances to take a bite out of you!"
+descT[1]="Una dama serpiente con brazos de serpiente que pueden estirarse largas distancias para darte una mordida."
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:EGIPTO\n"+string(_heightT)+":7'2"+" "+string(_weightT)+":160LBS" 
 descrightT[1]=string(_likesT)+":MÚSICA,ARTES\n"+string(_dislikesT)+":LADRONES\n"+string(_hobbyT)+":TOCANDO LA FLAUTA"
 descabsT[1]="Manos de serpiente, pateando"
 
 descT[2]= "Uma mulher cobra com braços de cobra que podem se esticar por longas distâncias para dar uma mordida em você!"
-descleftT[0]=string(_ageT)+":ANTIGA\nNAT.:EGITO\n"+string(_heightT)+":7'2"+" "+string(_weightT)+":160LBS" 
-descrightT[0]=string(_likesT)+":MÚSICA,ARTES\n"+string(_dislikesT)+":LADRÕES\n"+string(_hobbyT)+":TOCANDO FLUTE"
-descabsT[0]="Mãos de Cobra, Chutando"
+descleftT[2]=string(_ageT)+":ANTIGA\nNAT.:EGITO\n"+string(_heightT)+":7'2"+" "+string(_weightT)+":160LBS" 
+descrightT[2]=string(_likesT)+":MÚSICA,ARTES\n"+string(_dislikesT)+":LADRÕES\n"+string(_hobbyT)+":TOCANDO FLUTE"
+descabsT[2]="Mãos de Cobra, Chutando"
 
 
 desc=descT[global.Language]	
@@ -1439,7 +1439,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:EGYPT\n"+string(_heightT)+":7'3"+" "+
 descrightT[0]=string(_likesT)+":MUSIC,SCENERY\n"+string(_dislikesT)+":RAIDERS\n"+string(_hobbyT)+":SMOKE TRICKS"
 descabsT[0]="Snake Hands,Poison,Kicking"
 
-descT[1]="This snake’s arms spew poisonous, paralyzing gas! Hold your breath!"
+descT[1]= "Los brazos de esta serpiente expulsan un gas venenoso y paralizante. ¡Aguanta la respiración!"
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:EGIPTO\n"+string(_heightT)+":7'3"+" "+string(_weightT)+":170LBS" 
 descrightT[1]=string(_likesT)+":MÚSICA,PAISAJE\n"+string(_dislikesT)+":SAQUEADORES\n"+string(_hobbyT)+":TRUCOS DE HUMO"
 descabsT[1]="Manos de serpiente,veneno,patadas"
@@ -1462,7 +1462,7 @@ descleftT[0]=string(_ageT)+":27\nNAT.:JAPAN\n"+string(_heightT)+":5'8"+" "+strin
 descrightT[0]=string(_likesT)+":GOOD PAY,CARROTS\n"+string(_dislikesT)+":CHEATS\n"+string(_hobbyT)+":CARD PLAYING"
 descabsT[0]="Ninjutsu,Gambling"
 
-descT[1]="Simultaneously disciplined ninjas and casino bunny girls. Watch for their card tricks!"
+descT[1]= "Simultáneamente ninjas disciplinadas y conejitas de casino. ¡Cuidado con sus trucos de cartas!"
 descleftT[1]=string(_ageT)+":27\nNAT.:JAPÓN\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":150LBS" 
 descrightT[1]=string(_likesT)+":BUEN PAGO,ZANAHORIAS\n"+string(_dislikesT)+":TRAMPOSOS\n"+string(_hobbyT)+":JUGAR CARTAS"
 descabsT[1]="Ninjutsu,Apuestas"
@@ -1486,7 +1486,7 @@ descleftT[0]=string(_ageT)+":22\nNAT.:JAPAN\n"+string(_heightT)+":5'8"+" "+strin
 descrightT[0]=string(_likesT)+":GOOD TIPS,CARROTS\n"+string(_dislikesT)+":CHEAPSTAKES\n"+string(_hobbyT)+":DICE PLAYING"
 descabsT[0]="Ninjutsu,Gambling"	
 
-descT[1]="These bunnies carry lucky fuzzy dice bolas, but you’ll feel unlucky when they catch you!"
+descT[1]= "Estas conejas llevan bolas de peluche de dados de la suerte, pero te sentirás desafortunado cuando te atrapen."
 descleftT[1]=string(_ageT)+":22\nNAT.:JAPÓN\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":140LBS" 
 descrightT[1]=string(_likesT)+":PROPINAS,ZANAHORIAS\n"+string(_dislikesT)+":SORTEO\n"+string(_hobbyT)+":JUGANDO A LOS DADOS"
 descabsT[1]="Ninjutsu,Apuestas"
@@ -1510,7 +1510,7 @@ descleftT[0]=string(_ageT)+":30\nNAT.:JAPAN\n"+string(_heightT)+":5'9"+" "+strin
 descrightT[0]=string(_likesT)+":PROMOTIONS,CARROTS\n"+string(_dislikesT)+":BAD CONDUCTS\n"+string(_hobbyT)+":BARTENDING"
 descabsT[0]="Ninjutsu,Gambling,\nBrewing"
 
- descT[1]="The bouncers of the casino, they’ll grab their targets for a devastating ninja suplex!"
+ descT[1]="Los porteros del casino; agarran a sus objetivos para un devastador suplex ninja."
 descleftT[1]=string(_ageT)+":30\nNAT.:JAPÓN\n"+string(_heightT)+":5'9"+" "+string(_weightT)+":130LBS" 
 descrightT[1]=string(_likesT)+":PROMOCIONES,ZANAHORIAS\n"+string(_dislikesT)+":MALAS CONDUCTAS\n"+string(_hobbyT)+":BARTENDERÍA"
 descabsT[1]="Ninjutsu,Juegos de azar,\nCerverza"
@@ -1533,7 +1533,7 @@ descleftT[0]=string(_ageT)+":32\nNAT.:JAPAN\n"+string(_heightT)+":6'0"+" "+strin
 descrightT[0]=string(_likesT)+":GOOD DRINKS,MEAT\n"+string(_dislikesT)+":BEETLES\n"+string(_hobbyT)+":DOMINOS"
 descabsT[0]="Katana,Gambling" 
  
- descT[1]="Domino themed samurai with a swift guard and an even swifter charging slice!"
+ descT[1]= "Samuráis temáticos de dominó con una guardia veloz y un tajo cargado aún más veloz."
 descleftT[1]=string(_ageT)+":32\nNAT.:JAPÓN\n"+string(_heightT)+":6'0"+" "+string(_weightT)+":140LBS"
 descrightT[1]=string(_likesT)+":BUENAS BEBIDAS,CARNE\n"+string(_dislikesT)+":ESCARABAJOS\n"+string(_hobbyT)+":DOMINOS"
 descabsT[1]="Katana,Juegos de azar" 
@@ -1558,7 +1558,7 @@ descleftT[0]=string(_ageT)+":25\nNAT.:JAPAN\n"+string(_heightT)+":5'9"+" "+strin
 descrightT[0]=string(_likesT)+":NICE DRINKS,MEAT\n"+string(_dislikesT)+":BEES\n"+string(_hobbyT)+":PRACTICING"
 descabsT[0]="Katana,Gambling" 
 
-descT[1]="These samurai are still in training, but they can still knock you down like a row of dominos!"
+descT[1]="¡Estas samuráis todavía están en entrenamiento, pero aún así pueden derribarte como una fila de fichas de dominó!"
 descleftT[1]=string(_ageT)+":25\nNAT.:JAPÓN\n"+string(_heightT)+":5'9"+" "+string(_weightT)+":130LBS"
 descrightT[1]=string(_likesT)+":BUENAS BEBIDAS,CARNE\n"+string(_dislikesT)+":ABEJAS\n"+string(_hobbyT)+":PRACTICANDO"
 descabsT[1]="Katana,Juegos de azar"
@@ -1594,7 +1594,7 @@ descleftT[0]=string(_ageT)+":20\nNAT.:ITALY\n"+string(_heightT)+":6'10"+" "+stri
 descrightT[0]=string(_likesT)+":GOOFING,PIES\n"+string(_dislikesT)+":FROWNS\n"+string(_hobbyT)+":Entertaining"
 descabsT[0]="Puppetry,Juggling"
   
- descT[1]="Silly marionette clowns who put on a good show for the crowd while kicking around foes."
+ descT[1]= "Payasos marioneta tontos que dan un buen espectáculo para la multitud mientras patean a sus enemigos."
 descleftT[1]=string(_ageT)+":20\nNAT.:ITALIA\n"+string(_heightT)+":6'10"+" "+string(_weightT)+":120LBS" 
 descrightT[1]=string(_likesT)+":TONTERÍAS,PASTELES\n"+string(_dislikesT)+":CEÑOS FRUNCIDOS\n"+string(_hobbyT)+":Entretenimiento"
 descabsT[1]="Títeres,Malabarismo"
@@ -1618,7 +1618,7 @@ descleftT[0]=string(_ageT)+":22\nNAT.:ITALY\n"+string(_heightT)+":6'10"+" "+stri
 descrightT[0]=string(_likesT)+":CAROUSELS,Candy\n"+string(_dislikesT)+":GRUMPS\n"+string(_hobbyT)+":Parading"
 descabsT[0]="Puppetry,Juggling"
 	
- descT[1]="These mischievous marionettes love carousels so much they even spin like one at times!"
+ descT[1]= "Estas marionetas traviesas aman tanto los carruseles que incluso giran como uno a veces."
 descleftT[1]=string(_ageT)+":22\nNAT.:ITALIA\n"+string(_heightT)+":6'10"+" "+string(_weightT)+":120LBS" 
 descrightT[1]=string(_likesT)+":CARRUSELES,DULCES\n"+string(_dislikesT)+":GRUÑONES\n"+string(_hobbyT)+":Desfilando"
 descabsT[1]="Títeres,Malabarismo"
@@ -1641,7 +1641,7 @@ descleftT[0]=string(_ageT)+":25\nNAT.:ITALY\n"+string(_heightT)+":6'10"+" "+stri
 descrightT[0]=string(_likesT)+":JOKING,ELEPHANTS\n"+string(_dislikesT)+":SADNESS\n"+string(_hobbyT)+":Animal Taming"
 descabsT[0]="Puppetry,Juggling"
 	
- descT[1]="Talented jugglers, they can also toss their sticks at you and still have more at the ready."
+ descT[1]="Malabaristas talentosos; también pueden lanzarte sus palos y aun así tener más listos."
 descleftT[1]=string(_ageT)+":25\nNAT.:ITALIA\n"+string(_heightT)+":6'10"+" "+string(_weightT)+":120LBS" 
 descrightT[1]=string(_likesT)+":COMEDIA,ELEFANTES\n"+string(_dislikesT)+":TRISTEZA\n"+string(_hobbyT)+":Domar animales"
 descabsT[1]="Títeres,Malabarismo"
@@ -1673,7 +1673,7 @@ descleftT[2]=string(_ageT)+":"+string(_tedage)+"\nNAT.:ITÁLIA\n"+string(_height
 descT[0]="Adorable plush bears with a tendency to deck naughty people until they behave."
 descrightT[0]=string(_likesT)+":CHEERS,GAMES\n"+string(_dislikesT)+":NAUGHTIES\n"+string(_hobbyT)+":FISHING"
   
-descT[1]="Adorable plush bears with a tendency to deck naughty people until they behave."
+descT[1]= "Tiernos ositos de peluche con tendencia a golpear a los malportados hasta que se comporten."
 descrightT[1]=string(_likesT)+":APLAUSOS,JUEGOS\n"+string(_dislikesT)+":TRAVIESOS\n"+string(_hobbyT)+":PESCA"
 
 descT[2]= "Ursos de pelúcia adoráveis com tendência a perserguir pessoas malcriadas até que elas se comportem."
@@ -1697,7 +1697,7 @@ desc=descT[global.Language]
  descT[0]="This bear is a bit shy around crowds, but he seeks friendship… And to punish baddies."
 descrightT[0]=string(_likesT)+":FRIENDSHIP,HUGS\n"+string(_dislikesT)+":CROWDS\n"+string(_hobbyT)+":KNITTING"
  
-  descT[1]="This bear is a bit shy around crowds, but he seeks friendship… And to punish baddies."
+  descT[1]="Este oso es un poco tímido con las multitudes, pero busca amistad… y castigar a los malos."
 descrightT[1]=string(_likesT)+":AMISTAD,ABRAZOS\n"+string(_dislikesT)+":MULTITUD\n"+string(_hobbyT)+":TEJIDO"
   
 descT[2]= "Esse urso é um pouco tímido perto de multidões, mas ele busca amizade... E punição aos maus."
@@ -1712,7 +1712,7 @@ desc=descT[global.Language]
 descT[0]="Often seen giving out snacks to visitors. He also insists he’s smarter than most bears."
 descrightT[0]=string(_likesT)+":SNACKS,PICNICS\n"+string(_dislikesT)+":CAVES\n"+string(_hobbyT)+":EXPLORING"
  
-descT[1]="Often seen giving out snacks to visitors. He also insists he’s smarter than most bears."
+descT[1]="A menudo se le ve dando bocadillos a los visitantes. También insiste en que es más listo que la mayoría de los osos."
 descrightT[1]=string(_likesT)+":Bocadillos,picnics\n"+string(_dislikesT)+":CUEVAS\n"+string(_hobbyT)+":EXPLORANDO"
 
 descT[2]= "Frequentemente visto dando lanches aos visitantes. Ele insiste que é mais inteligente do que a maioria dos ursos."
@@ -1724,7 +1724,7 @@ descrightT[2]=string(_likesT)+":Lanches,piqueniques\n"+string(_dislikesT)+":CAVE
 descT[0]="Having watched many comedians, he does his own stand-up. Jury’s out on the joke quality."
 descrightT[0]=string(_likesT)+":COMEDIES,JOKES\n"+string(_dislikesT)+":HECKLERS\n"+string(_hobbyT)+":WRITING" 
  
- descT[1]="Having watched many comedians, he does his own stand-up. Jury’s out on the joke quality."
+ descT[1]="Habiendo visto a muchos comediantes, hace su propio stand-up. El jurado aún decide la calidad de los chistes."
 descrightT[1]=string(_likesT)+":COMEDIAS,CHISTES\n"+string(_dislikesT)+":PERRTURBADORES\n"+string(_hobbyT)+":ESCRITURA" 
  
 descT[2]= "Ao assistir muitos comediantes, ele fez seu próprio show de comédia. Piadas no entanto são questionáveis."
@@ -1745,7 +1745,7 @@ desc=descT[global.Language]
 descT[0]="A kind and polite bear who’s popular with kids. Bad people are greeted with a hard stare."
 descrightT[0]=string(_likesT)+":MARMALADE,BALLOONS\n"+string(_dislikesT)+":BAD PEOPLE\n"+string(_hobbyT)+":BOOK READING"
  
- descT[1]="A kind and polite bear who’s popular with kids. Bad people are greeted with a hard stare."
+ descT[1]="Un oso amable y educado, popular con los niños. A la gente mala la recibe con una dura mirada."
 descrightT[1]=string(_likesT)+":MERMELADA,GLOBOS\n"+string(_dislikesT)+":MALAS PERSONAS\n"+string(_hobbyT)+":LECTURA DE LIBROS"
   
 descT[2]= "Um urso gentil e educado, popular entre crianças. Delinquentes são recebidos com um olhar severo."
@@ -1758,7 +1758,7 @@ descrightT[2]=string(_likesT)+":GELEIA,BALÕES\n"+string(_dislikesT)+":PESSOAS M
 descT[0]="Underneath its monotone exterior, it enjoys watching others’ misfortune and despair."
 descrightT[0]=string(_likesT)+":PAIN,DESPAIR\n"+string(_dislikesT)+":DISOBEDIENCE\n"+string(_hobbyT)+":TEACHING"
 
-descT[1]="Underneath its monotone exterior, it enjoys watching others’ misfortune and despair."
+descT[1]="Debajo de su exterior monótono, disfruta viendo la desgracia y la desesperación de los demás."
 descrightT[1]=string(_likesT)+":DOLOR,DESESPERACIÓN\n"+string(_dislikesT)+":DESOBEDIENCIA\n"+string(_hobbyT)+":ENSEÑANZA"
 
 descT[2]= "Por baixo de sua aparência monótona, ele gosta de ver o azar e o desespero dos outros."
@@ -1780,7 +1780,7 @@ descleftT[0]=string(_ageT)+":25\nNAT.:FRANCE\n"+string(_heightT)+":5'8"+" "+stri
 descrightT[0]=string(_likesT)+":MUSIC,ARTS\n"+string(_dislikesT)+":SALT\n"+string(_hobbyT)+":BALLET"
 descabsT[0]="Fairy Magic,Ballerina"
  
-descT[1]="With strong legs, elegant ballet moves and magical heart bullets, this fairy is not your friend."
+descT[1]="Con piernas fuertes, elegantes movimientos de ballet y balas mágicas en forma de corazón, esta hada no es tu amiga."
 descleftT[1]=string(_ageT)+":25\nNAT.:FRANCIA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":85LBS"
 descrightT[1]=string(_likesT)+":MÚSICA,ARTES\n"+string(_dislikesT)+":SAL\n"+string(_hobbyT)+":BALLET"
 descabsT[1]="Magia de hadas,Bailarina"
@@ -1803,7 +1803,7 @@ descleftT[0]=string(_ageT)+":26\nNAT.:BRITAIN\n"+string(_heightT)+":5'8"+" "+str
 descrightT[0]=string(_likesT)+":MUSIC,NOVELS\n"+string(_dislikesT)+":PIRATES\n"+string(_hobbyT)+":BOOK READING"
 descabsT[0]="Fairy Magic,Ballerina"
 
-descT[1]="Obsessed with flying, she’ll often spin before leaping through the air with a fierce kick."
+descT[1]="Obsesionada con volar, a menudo gira antes de lanzarse por el aire con una patada feroz."
 descleftT[1]=string(_ageT)+":26\nNAT.:G.BRETAÑA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":85LBS"
 descrightT[1]=string(_likesT)+":MÚSICA,NOVELAS\n"+string(_dislikesT)+":PIRATAS\n"+string(_hobbyT)+":LECTURA DE LIBROS"
 descabsT[1]="Magia de Hadas,Bailarina"
@@ -1826,7 +1826,7 @@ descleftT[0]=string(_ageT)+":28\nNAT.:RUSSIA\n"+string(_heightT)+":5'8"+" "+stri
 descrightT[0]=string(_likesT)+":MUSIC,SNOW\n"+string(_dislikesT)+":SPICE\n"+string(_hobbyT)+":ICE SCULPTING"
 descabsT[0]="Fairy Magic,Ballerina,Cold"   
 
-descT[1]="An ice fairy whose heart bullets are just as cold to the touch as her personality."
+descT[1]= "Un hada de hielo cuyas balas en forma de corazón son tan frías al tacto como su personalidad."
 descleftT[1]=string(_ageT)+":28\nNAT.:RUSIA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":125LBS"
 descrightT[1]=string(_likesT)+":MÚSICA,NIEVE\n"+string(_dislikesT)+":PICANTE\n"+string(_hobbyT)+":ESCULTURA EN HIELO"
 descabsT[1]="Magia de Hadas,Bailarina,Frío"
@@ -1852,7 +1852,7 @@ descleftT[0]=string(_ageT)+":34\nNAT.:USA\n"+string(_heightT)+":6'4"+" "+string(
 descrightT[0]=string(_likesT)+":NATURE,MEAT\n"+string(_dislikesT)+":CHEAP MEAT\n"+string(_hobbyT)+":GARDENING"
 descabsT[0]="Carnivore Plant Powers"
  
-descT[1]="A dangerous carnivorous plant known for chomping people into pieces and swallowing them."
+descT[1]="Una peligrosa planta carnívora conocida por morder a la gente en pedazos y tragarlos."
 descleftT[1]=string(_ageT)+":34\nNAT.:USA\n"+string(_heightT)+":6'4"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":NATURALEZA, CARNE\n"+string(_dislikesT)+":CARNE BARATA\n"+string(_hobbyT)+":JARDINERÍA"
 descabsT[1]="Poderes de planta carnívora"
@@ -1875,7 +1875,7 @@ descleftT[0]=string(_ageT)+":32\nNAT.:USA\n"+string(_heightT)+":6'4"+" "+string(
 descrightT[0]=string(_likesT)+":NATURE,MEAT\n"+string(_dislikesT)+":POLLUTION\n"+string(_hobbyT)+":DECORATING"
 descabsT[0]="Carnivore Plant Powers,Toxin"	  
 
-descT[1]="These crafty predators catch their prey by spraying a stunning toxin at them." 
+descT[1]="Estos astutos depredadores atrapan a su presa rociando una toxina paralizante."
 descleftT[1]=string(_ageT)+":32\nNAT.USA\n"+string(_heightT)+":6'4"+" "+string(_weightT)+":185LBS"
 descrightT[1]=string(_likesT)+":NATURALEZA, CARNE\n"+string(_dislikesT)+":CONTAMINACIÓN\n"+string(_hobbyT)+":DECORAR"
 descabsT[1]="Carnívoro, Poderes de Plantas, Tóxicos"
@@ -1897,7 +1897,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":6'5"+" "+string(
 descrightT[0]=string(_likesT)+":NATURE,MEAT\n"+string(_dislikesT)+":COLD\n"+string(_hobbyT)+":HARVESTING"
 descabsT[0]="Carnivore Plant Powers,Seed Shooting"	  
 	
-descT[1]="Conniving plants that prefer to knock their prey out with spitting seeds as hard as bullets!"
+descT[1]="Plantas maquinadoras que prefieren noquear a sus presas escupiendo semillas tan duras como balas."
 descleftT[1]=string(_ageT)+":35\nNAT.:USA\n"+string(_heightT)+":6'5"+" "+string(_weightT)+":190LBS"
 descrightT[1]=string(_likesT)+":NATURALEZA, CARNE\n"+string(_dislikesT)+":FRÍO\n"+string(_hobbyT)+":COSECHAR"
 descabsT[1]="Poderes de planta carnívora, Disparo de semillas" 
@@ -1924,7 +1924,7 @@ descleftT[0]=string(_ageT)+":25\nNAT.:AFRICA\n"+string(_heightT)+":6'10"+" "+str
 descrightT[0]=string(_likesT)+":FASHION,NECTAR\n"+string(_dislikesT)+":BEARS\n"+string(_hobbyT)+":GARDENING"
 descabsT[0]="Bee Stinger, Acidic Honey"	
   
-descT[1]="A bee lady with style and honey to spare. But provoke her and you’ll face her stinger."
+descT[1]="Una dama abeja con estilo y miel de sobra. Pero si la provocas, enfrentarás su aguijón."
 descleftT[1]=string(_ageT)+":25\nNAT.:ÁFRICAn"+string(_heightT)+":6'10"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":MODA,NECTAR\n"+string(_dislikesT)+":OSOS\n"+string(_hobbyT)+":JARDINERÍA"
 descabsT[1]="Aguijón de abeja, Miel ácida"
@@ -1946,7 +1946,7 @@ descleftT[0]=string(_ageT)+":30\nNAT.:AFRICA\n"+string(_heightT)+":6'11"+" "+str
 descrightT[0]=string(_likesT)+":FASHION,NECTAR\n"+string(_dislikesT)+":NEST BREAKERS\n"+string(_hobbyT)+":DECORATING"
 descabsT[0]="Bee Stinger, Acidic Honey"	
 	
-descT[1]="These buzzing beauties are hardened fighters. Though they may have a hidden sweet side."
+descT[1]="Estas bellezas zumbantes son luchadoras endurecidas. Aunque pueden tener un lado dulce escondido."
 descleftT[1]=string(_ageT)+":30\nNAT.:ÁFRICA\n"+string(_heightT)+":6'11"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":MODA,NECTAR\n"+string(_dislikesT)+":ROMPEDORES DE NIDOS\n"+string(_hobbyT)+":DECORANDO"
 descabsT[1]="Aguijón de abeja, Miel ácida"
@@ -1967,7 +1967,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:AFRICA\n"+string(_heightT)+":6'12"+" "+str
 descrightT[0]=string(_likesT)+":FASHION,NECTAR\n"+string(_dislikesT)+":RUDENESS\n"+string(_hobbyT)+":BALL DANCING"
 descabsT[0]="Nasty Bee Stinger, Acidic Honey"
   
- descT[1]="Her stinger is much nastier than others. The venom makes you blimp up like a balloon!"
+ descT[1]="Su aguijón es mucho más desagradable que los otros. El veneno te infla como un globo."
 descleftT[1]=string(_ageT)+":35\nNAT.:ÁFRICA\n"+string(_heightT)+":6'12"+" "+string(_weightT)+":120LBS"
 descrightT[1]=string(_likesT)+":MODA,NECTAR\n"+string(_dislikesT)+":GROSERÍA\n"+string(_hobbyT)+":BAILE CON BALÓN"
 descabsT[1]="Aguijón de abeja desagradable, miel ácida"
@@ -1994,7 +1994,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:FRANCE\n"+string(_heightT)+":6'11"+" "+str
 descrightT[0]=string(_likesT)+":FANCYNESS,FOOD\n"+string(_dislikesT)+":BAD FOOD\n"+string(_hobbyT)+":FOOD CRITIC"
 descabsT[0]="Lobster Claws, Bubbling"
   
- descT[1]="A big bipedal lobster with an even bigger pinch. Has quite the bubbly temper, too."
+ descT[1]= "Una gran langosta bípedo con una pinza aún más grande. También tiene un temperamento bastante burbujeante."
 descleftT[1]=string(_ageT)+":35\nNAT.:FRANCIA\n"+string(_heightT)+":6'11"+" "+string(_weightT)+":170LIBRAS"
 descrightT[1]=string(_likesT)+":ELEGANCIA,COMIDA\n"+string(_dislikesT)+":MALA COMIDA\n"+string(_hobbyT)+":CRÍTICO GASTRONÓMICO"
 descabsT[1]="Pinzas de langosta, burbujeante"
@@ -2017,7 +2017,7 @@ descleftT[0]=string(_ageT)+":36\nNAT.:FRANCE\n"+string(_heightT)+":6'12"+" "+str
 descrightT[0]=string(_likesT)+":BRAWLING,FOOD\n"+string(_dislikesT)+":OILY FOOD\n"+string(_hobbyT)+":BAR HOPPING"
 descabsT[0]="Claw Charge, Bubbling" 	  
 
-descT[1]="This crustacean has so much fight in him, he’ll crush anyone with his charging claw!" 
+descT[1]="Este crustáceo tiene tanta pelea dentro que aplastará a cualquiera con su garra embestida."
 descleftT[1]=string(_ageT)+":36\nNAT.:FRANCIA\n"+string(_heightT)+":6'12"+" "+string(_weightT)+":175LBS"
 descrightT[1]=string(_likesT)+":PELEA,COMIDA\n"+string(_dislikesT)+":COMIDA GRASA\n"+string(_hobbyT)+":IR DE BAR EN BAR"
 descabsT[1]="Carga de Garra, Burbujeante"	
@@ -2042,7 +2042,7 @@ descleftT[0]=string(_ageT)+":26\nNAT.:MIDDLE EAST\n"+string(_heightT)+":5'8"+" "
 descrightT[0]=string(_likesT)+":FANCYNESS,FLOWERS\n"+string(_dislikesT)+":RUDENESS\n"+string(_hobbyT)+":EXERCISE"
 descabsT[0]="Sword Fighting,Bellydancing"
 
-descT[1]="Graceful entertainers who distract foes with their dance before kicking and cutting them apart."
+descT[1]="Artistas gráciles que distraen a los enemigos con su danza antes de patearlos y cortarlos."
 descleftT[1]=string(_ageT)+":26\nNAT.: MEDIO O.\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":120LBS"
 descrightT[1]=string(_likesT)+":ELEGANCIA,FLORES\n"+string(_dislikesT)+":GROSERÍA\n"+string(_hobbyT)+":EJERCICIO"
 descabsT[1]="Esgrima,Baile del vientre"
@@ -2073,7 +2073,7 @@ descleftT[0]=string(_ageT)+":26\nNAT.:MIDDLE EAST\n"+string(_heightT)+":5'8"+" "
 descrightT[0]=string(_likesT)+":FANCYNESS,ROSES\n"+string(_dislikesT)+":INFIDELS\n"+string(_hobbyT)+":CATERING"
 descabsT[0]="Sword Fighting,Bellydancing" 
 	 
-descT[1]="These mystifying dancers are highly sought after, both as entertainers AND as bodyguards."
+descT[1]="Estas bailarinas enigmáticas son muy solicitadas, tanto como artistas como guardaespaldas."
 descleftT[1]=string(_ageT)+":26\nNAT.:MEDIO O.\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":125LBS"
 descrightT[1]=string(_likesT)+":ELEGANCIA, ROSAS\n"+string(_dislikesT)+":INFIELES\n"+string(_hobbyT)+":SERVICIOS"
 descabsT[1]="Esgrima, Danza del vientre"
@@ -2093,7 +2093,7 @@ descleftT[0]=string(_ageT)+":ANCIENT\nNAT.:MIDDLE EAST\n"+string(_heightT)+":5'8
 descrightT[0]=string(_likesT)+":FANCYNESS,JEWELS\n"+string(_dislikesT)+":INTERLOPERS\n"+string(_hobbyT)+":MASSAGES"
 descabsT[0]="Magic Sword Fighting,Bellydancing" 	  
 
-descT[1]="With a mysterious spell, they can bring their scimitars to life for assistance in battle!"
+descT[1]="Con un hechizo misterioso, pueden dar vida a sus cimitarra para que las asistan en batalla."
 descleftT[1]=string(_ageT)+":ANTIGUA\nNAT.:MEDIO ORIENTE\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":130LBS"
 descrightT[1]=string(_likesT)+":ELEGANCIA, JOYAS\n"+string(_dislikesT)+":INTRUSOS\n"+string(_hobbyT)+":MASAJES"
 descabsT[1]="Lucha con espada mágica, Danza del vientre"
@@ -2125,7 +2125,7 @@ descleftT[0]=string(_ageT)+":34\nNAT.:FRANCE\n"+string(_heightT)+":5'7"+" "+stri
 descrightT[0]=string(_likesT)+":FISH,SCENERY\n"+string(_dislikesT)+":DOLPHINS\n"+string(_hobbyT)+":FISHING"
 descabsT[0]="UNDERWATER COMBAT"
 
-descT[1]="Van Bad’s undersea division, quite agile due to much underwater combat experience."
+descT[1]="La división submarina de Van Bad, bastante ágil debido a mucha experiencia en combate acuático."
 descleftT[1]=string(_ageT)+":34\nNAT.:FRANCIA\n"+string(_heightT)+":5'7"+" "+string(_weightT)+":150LBS"
 descrightT[1]=string(_likesT)+":PESCADO,PAISAJES\n"+string(_dislikesT)+":DELFINES\n"+string(_hobbyT)+":PESCA"
 descabsT[1]="COMBATE SUBMARINO"
@@ -2146,7 +2146,7 @@ descleftT[0]=string(_ageT)+":36\nNAT.:FRANCE\n"+string(_heightT)+":5'8"+" "+stri
 descrightT[0]=string(_likesT)+":FISH,SCENERY\n"+string(_dislikesT)+":WHALES\n"+string(_hobbyT)+":HARPOONING"
 descabsT[0]="UNDERWATER COMBAT,HARPOON"
 
-descT[1]="The elite of the divers, they even have the privilege of carrying harpoon guns!"
+descT[1]= "La élite de los buzos; incluso tienen el privilegio de llevar arpones."
 descleftT[1]=string(_ageT)+":36\nNAT.:FRANCIA\n"+string(_heightT)+":5'8"+" "+string(_weightT)+":155LBS"
 descrightT[1]=string(_likesT)+":PESCADO,PAISAJE\n"+string(_dislikesT)+":BALLENAS\n"+string(_hobbyT)+":LANZAMIENTO DE ARPO"
 descabsT[1]="COMBATE SUBMARINO,ARPO"
@@ -2175,7 +2175,7 @@ descleftT[0]=string(_ageT)+":25\nNAT.:GREECE\n"+string(_heightT)+":5'10"+" "+str
 descrightT[0]=string(_likesT)+":MUSCLES,FIGHTS\n"+string(_dislikesT)+":INJUSTICE\n"+string(_hobbyT)+":WORKOUTS"
 descabsT[0]="SPEAR FIGHTING,BRAWLING"
 
-descT[1]="Gilled guardians of the deep who punish intruders with their spears and physical strength."
+descT[1]= "Guardianes branquiales de las profundidades que castigan intrusos con sus lanzas y fuerza física."
 descleftT[1]=string(_ageT)+":25\nNAT.:GRECIA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":150LBS"
 descrightT[1]=string(_likesT)+":MÚSCULOS, PELEAS\n"+string(_dislikesT)+":INJUSTICIA\n"+string(_hobbyT)+":ENTRENAMIENTOS"
 descabsT[1]="LUCHA CON LANZA,RIÑAS"
@@ -2200,7 +2200,7 @@ descleftT[0]=string(_ageT)+":26\nNAT.:GREECE\n"+string(_heightT)+":5'11"+" "+str
 descrightT[0]=string(_likesT)+":MUSCLES,FIGHTS\n"+string(_dislikesT)+":DISHONOR\n"+string(_hobbyT)+":SCULPTING"
 descabsT[0]="TRIDENT FIGHTING,BRAWLING"	  
 
-descT[1]="Higher in rank, they bring tridents into battle against those who pose a threat to the prince."
+descT[1]= "De rango más alto; llevan tridentes a la batalla contra quienes representan una amenaza para el príncipe."
 descleftT[1]=string(_ageT)+":26\nNAT.:GRECIA\n"+string(_heightT)+":5'11"+""+string(_weightT)+":156LBS"
 descrightT[1]=string(_likesT)+":MÚSCULOS,PELEAS\n"+string(_dislikesT)+":DESHONOR\n"+string(_hobbyT)+":ESCULTURA"
 descabsT[1]="LUCHA CON TRIDENTE,PELEAS"  
@@ -2221,7 +2221,7 @@ descleftT[0]=string(_ageT)+":23\nNAT.:GREECE\n"+string(_heightT)+":5'10"+" "+str
 descrightT[0]=string(_likesT)+":MUSCLES,FIGHTS\n"+string(_dislikesT)+":UNFAIRNESS\n"+string(_hobbyT)+":SURFING"
 descabsT[0]="BRAWLING"	 
 
-descT[1]="Underlings of the sea witch who guard her domain with the utmost loyalty."
+descT[1]= "Subordinados de la bruja marina que protegen su dominio con máxima lealtad."
 descleftT[1]=string(_ageT)+":23\nNAT.:GRECIA\n"+string(_heightT)+":5'10"+" "+string(_weightT)+":152LBS"
 descrightT[1]=string(_likesT)+":MÚSCULOS,PELEAS\n"+string(_dislikesT)+":INJUSTICIA\n"+string(_hobbyT)+":SURFEAR"
 descabsT[1]="PELEAR"
@@ -2256,7 +2256,7 @@ descleftT[0]=string(_ageT)+":22\nNAT.:GREECE\n"+string(_heightT)+":6'2"+" "+stri
 descrightT[0]=string(_likesT)+":MUSCLES,FIGHTS\n"+string(_dislikesT)+":RUDENESS\n"+string(_hobbyT)+":HUNTING"
 descabsT[0]="MERMAID MAGIC,BRAWLING"	
 
-descT[1]="Beautiful but deadly mermaids. They can shoot scalding hot balls of water from their hands!"
+descT[1]= "Hermosas pero mortales sirenas. ¡Pueden disparar bolas de agua hirviendo desde sus manos!"
 descleftT[1]=string(_ageT)+":22\nNAT.:GRECIA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":150LBS"
 descrightT[1]=string(_likesT)+":MÚSCULOS, PELEAS\n"+string(_dislikesT)+":GROSERÍA\n"+string(_hobbyT)+":CAZA"
 descabsT[1]="MAGIA DE SIRENA,REFRIEGO"
@@ -2279,15 +2279,15 @@ descleftT[0]=string(_ageT)+":23\nNAT.:GREECE\n"+string(_heightT)+":6'2"+" "+stri
 descrightT[0]=string(_likesT)+":MUSCLES,FIGHTS\n"+string(_dislikesT)+":RUDENESS\n"+string(_hobbyT)+":DECORATING"
 descabsT[0]="MERMAID MAGIC,BRAWLING"	 
  
- descT[1]="Keep out of their personal space bubble, or her hot charging fist will pop yours and your face!"
+ descT[1]="Mantente fuera de su burbuja de espacio personal, o su puño cargado y caliente explotará la tuya… y tu cara."
 descleftT[1]=string(_ageT)+":23\nNAT.:GRECIA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":150LBS"
 descrightT[1]=string(_likesT)+":MÚSCULOS, PELEAS\n"+string(_dislikesT)+":GROSERÍA\n"+string(_hobbyT)+":DECORAR"
 descabsT[1]="MAGIA DE SIRENA, PLEITOS"
 
 descT[2]="Fique fora da bolha pessoal delas, ou o punho quente delas vai estourar a sua e o seu rosto!"
-descleftT[0]=string(_ageT)+":23\nNAT.:GRÉCIA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":150LBS"
-descrightT[0]=string(_likesT)+":MÚSCULOS,LUTAS\n"+string(_dislikesT)+":GROSSEIRA\n"+string(_hobbyT)+":DECORAÇÃO"
-descabsT[0]="MAGIA DE SEREIA,BRIGA"
+descleftT[2]=string(_ageT)+":23\nNAT.:GRÉCIA\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":150LBS"
+descrightT[2]=string(_likesT)+":MÚSCULOS,LUTAS\n"+string(_dislikesT)+":GROSSEIRA\n"+string(_hobbyT)+":DECORAÇÃO"
+descabsT[2]="MAGIA DE SEREIA,BRIGA"
 	
 desc=descT[global.Language] 
 	 
@@ -2301,7 +2301,7 @@ descleftT[0]=string(_ageT)+":22\nNAT.:CLOUDSVILLE\n"+string(_heightT)+":6'2"+" "
 descrightT[0]=string(_likesT)+":FRUITS,SONGS\n"+string(_dislikesT)+":MERMAIDS\n"+string(_hobbyT)+":SINGING"
 descabsT[0]="SKYMAID MAGIC,BRAWLING"
  
- descT[1]="Keep out of their personal space bubble, or her hot charging fist will pop yours and your face!"
+ descT[1]= "Cielosirenas engañosamente feroces que atraen a su presa con su canto antes de pulverizarla."
 descleftT[1]=string(_ageT)+":22\nNAT.:VILLA NUBE\n"+string(_heightT)+":6'2"+" "+string(_weightT)+":150LIBRAS"
 descrightT[1]=string(_likesT)+":FRUTAS,CANCIONES\n"+string(_dislikesT)+":SIRENAS\n"+string(_hobbyT)+":CANTAR"
 descabsT[1]="MAGIA DE SKYMAID,PELEAS"
@@ -2323,7 +2323,7 @@ descleftT[0]=string(_ageT)+":31\nNAT.:ALIEN\n"+string(_heightT)+":7'0"+" "+strin
 descrightT[0]=string(_likesT)+":GOLD,SPECIMENS\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":RESEARCHING"
 descabsT[0]="BRAINPOWER"
  
-descT[1]="These space babes abduct earthly specimens! Watch out for their psychic brain shock!"
+descT[1]= "¡Estas chicas del espacio abducen especímenes terrestres! ¡Cuidado con su choque psíquico al cerebro!"
 descleftT[1]=string(_ageT)+":31\nNAT.:EXTRATERRESTRE\n"+string(_heightT)+":7'0"+" "+string(_weightT)+":160LBS"
 descrightT[1]=string(_likesT)+":ORO,ESPECÍMENES\n"+string(_dislikesT)+":JUSTICIA\n"+string(_hobbyT)+":INVESTIGACIÓN"
 descabsT[1]="PODER CEREBRAL"
@@ -2347,7 +2347,7 @@ descleftT[0]=string(_ageT)+":34\nNAT.:ALIEN\n"+string(_heightT)+":7'1"+" "+strin
 descrightT[0]=string(_likesT)+":GOLD,SPECIMENS\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":HUNTING"
 descabsT[0]="BRAINPOWER,TECHNOLOGY"
  
-descT[1]="Alien security guards who subdue fleeing specimens with their shocking stun batons." 
+descT[1]= "Guardias de seguridad alienígenas que someten a los especímenes que huyen con sus porras paralizantes."
 descleftT[1]=string(_ageT)+":34\nNAT.:EXTRATERRESTRE\n"+string(_heightT)+":7'1"+" "+string(_weightT)+":162LBS"
 descrightT[1]=string(_likesT)+":ORO,ESPECÍMENES\n"+string(_dislikesT)+":JUSTICIA\n"+string(_hobbyT)+":CAZA"
 descabsT[1]="PODER CEREBRAL,TECNOLOGÍA"
@@ -2367,7 +2367,7 @@ descleftT[0]=string(_ageT)+":28\nNAT.:ALIEN\n"+string(_heightT)+":7'0"+" "+strin
 descrightT[0]=string(_likesT)+":GOLD,SPECIMENS\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":HUNTING"
 descabsT[0]="BRAINPOWER,TECHNOLOGY"
  
-descT[1]="Illustrious invaders who are armed with powerful laser guns for frying or capturing specimens!"
+descT[1]= "Ilustres invasoras armadas con poderosas pistolas láser para freír o capturar especímenes."
 descleftT[1]=string(_ageT)+":28\nNAT.:EXTRATERRESTRE\n"+string(_heightT)+":7'0"+" "+string(_weightT)+":150LBS"
 descrightT[1]=string(_likesT)+":ORO,ESPECÍMENES\n"+string(_dislikesT)+":JUSTICIA\n"+string(_hobbyT)+":CAZA"
 descabsT[1]="PODER CEREBRAL,TECNOLOGÍA"
@@ -2401,7 +2401,7 @@ descleftT[0]="NAT.:ALIEN\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":180LB
 descrightT[0]=string(_likesT)+":VIOLENCE,ACTION\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":HUNTING"
 descabsT[0]="TECHNOLOGY"
  
-descT[1]="These alien security drones are armed with electrically charged arms and lasers."
+descT[1]= "Estos drones de seguridad alienígenas están armados con brazos cargados eléctricamente y láseres."
 descleftT[1]="NAT.:EXTRATERRESTRE\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":VIOLENCIA,ACCIÓN\n"+string(_dislikesT)+":JUSTICIA\n"+string(_hobbyT)+":CAZA"
 descabsT[1]="TECNOLOGÍA"
@@ -2422,7 +2422,7 @@ descleftT[0]="NAT.:ALIEN\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":190LB
 descrightT[0]=string(_likesT)+":VIOLENCE,ACTION\n"+string(_dislikesT)+":JUSTICE\n"+string(_hobbyT)+":HUNTING"
 descabsT[0]="TECHNOLOGY"
  
-descT[1]="These drones support the invading troops by launching powerful, bouncing bombs." 
+descT[1]="Estos drones apoyan a las tropas invasoras lanzando poderosas bombas que rebotan."
 descleftT[1]="NAT.:EXTRATERRESTRE\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":190LBS"
 descrightT[1]=string(_likesT)+":VIOLENCIA,ACCIÓN\n"+string(_dislikesT)+":JUSTICIA\n"+string(_hobbyT)+":CAZA"
 descabsT[1]="TECNOLOGÍA"
@@ -2443,7 +2443,7 @@ descleftT[0]=string(_ageT)+":5\nNAT.:ALIEN\n"+string(_heightT)+":6'4"+" "+string
 descrightT[0]=string(_likesT)+":MEALS,APPROVAL\n"+string(_dislikesT)+":SCOLDS\n"+string(_hobbyT)+":SLEEPING"
 descabsT[0]="ALIEN POWERS"
  
-descT[1]="These aliens’ pets and guard dogs’ eyes turn into frightening fangs to bite into their prey!"
+descT[1]="Las mascotas y perros guardianes de estos aliens convierten sus ojos en colmillos aterradores para morder a su presa."
 descleftT[1]=string(_ageT)+":5\nNAT.:EXTRATERRESTRE\n"+string(_heightT)+":6'4"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":COMIDAS,APROBACIÓN\n"+string(_dislikesT)+":REPRENSIONES\n"+string(_hobbyT)+":DURMIENDO"
 descabsT[1]="PODERES EXTRATERRESTRES"
@@ -2468,7 +2468,7 @@ descleftT[0]=string(_ageT)+":6\nNAT.:ALIEN\n"+string(_heightT)+":6'5"+" "+string
 descrightT[0]=string(_likesT)+":MEALS,APPROVAL\n"+string(_dislikesT)+":NO ATTENTION\n"+string(_hobbyT)+":NAPPING"
 descabsT[0]="ALIEN POWERS"
 
-descT[1]="Specially trained, these beasts fire beams to inflate targets into helpless balloons for capture."
+descT[1]="Entrenados especialmente, estas bestias disparan haces para inflar a los objetivos en globos indefensos para capturarlos."
 descleftT[1]=string(_ageT)+":6\nNAT.:EXTRATERRESTRE\n"+string(_heightT)+":6'5"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":COMIDAS,APROBACIÓN\n"+string(_dislikesT)+":SIN ATENCIÓN\n"+string(_hobbyT)+":DORMIR SIESTAS"
 descabsT[1]="PODERES EXTRATERRESTRES"
@@ -2492,7 +2492,7 @@ descleftT[0]=string(_ageT)+":31\nNAT.:FRANCE\n"+string(_heightT)+":5'0"+" "+stri
 descrightT[0]=string(_likesT)+":WORK,GEMSTONES\n"+string(_dislikesT)+":DISRUPTIONS\n"+string(_hobbyT)+":NONE"
 descabsT[0]="Mining"
 
-descT[1]="Workaholic goblins dedicated to mining. Disturb one and you’ll face a whole mob of ‘em!"
+descT[1]= "Duendes adictos al trabajo dedicados a la minería. Si molestas a uno, ¡enfrentarás a toda una horda!"
 descleftT[1]=string(_ageT)+":31\nNAT.:FRANCIA\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":TRABAJO, GEMAS\n"+string(_dislikesT)+":INTERRUPCIONES\n"+string(_hobbyT)+":NINGUNO"
 descabsT[1]="Minería"
@@ -2516,7 +2516,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:FRANCE\n"+string(_heightT)+":5'0"+" "+stri
 descrightT[0]=string(_likesT)+":WORK,WORK\n"+string(_dislikesT)+":LATE WORK\n"+string(_hobbyT)+":NONE"
 descabsT[0]="Mining"
 
- descT[1]="Agile and armed with the tools of their trade, they won’t hesitate to pummel trespassers!"
+ descT[1]="Ágiles y armados con las herramientas de su oficio, no dudarán en apalear a los intrusos."
 descleftT[1]=string(_ageT)+":35\nNAT.:FRANCIA\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":105LBS"
 descrightT[1]=string(_likesT)+":TRABAJO,TRABAJO\n"+string(_dislikesT)+":TRABAJO TARDÍO\n"+string(_hobbyT)+":NINGUNO"
 descabsT[1]="Minería"
@@ -2548,7 +2548,7 @@ descleftT[0]=string(_ageT)+":21\nNAT.:RUSSIA\n"+string(_heightT)+":5'0"+" "+stri
 descrightT[0]=string(_likesT)+":PARTIES,DANCING\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PARTYING"
 descabsT[0]="Mushroom Powers, Stun Spore"
 
- descT[1]="Cheerful, peppy mushroom girls. They rub their hands together to spread paralyzing spores!"
+ descT[1]=  "Alegres y animadas chicas hongo. Se frotan las manos para esparcir esporas paralizantes."
 descleftT[1]=string(_ageT)+":21\nNAT.:RUSIA\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":FIESTAS,Bailando\n"+string(_dislikesT)+":ABURRIMIENTOn"+string(_hobbyT)+":PARTEAR"
 descabsT[1]="Poderes de Hongo, Espora Aturdidora"
@@ -2570,7 +2570,7 @@ descleftT[0]=string(_ageT)+":22\nNAT.:RUSSIA\n"+string(_heightT)+":5'0"+" "+stri
 descrightT[0]=string(_likesT)+":PARTIES,DANCING\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PARTYING"
 descabsT[0]="Mushroom Powers, Headbutt"
 
-descT[1]="These fun-gals party particularly hard, so much they tend to hit others when headbanging!"
+descT[1]= "Estas ‘chicas-fungi’ festejan tan duro que tienden a golpear a otros cuando mueven la cabeza al ritmo."
 descleftT[1]=string(_ageT)+":22\nNAT.:RUSIA\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":FIESTAS,BALLET\n"+string(_dislikesT)+":ABURRIMIENTO\n"+string(_hobbyT)+":FIESTAR"
 descabsT[1]="Poderes de Hongo, Cabezazo"
@@ -2591,7 +2591,7 @@ descleftT[0]=string(_ageT)+":23\nNAT.:RUSSIA\n"+string(_heightT)+":5'0"+" "+stri
 descrightT[0]=string(_likesT)+":PARTIES,DANCING\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PARTYING"
 descabsT[0]="Mushroom Powers, Stun Spore"
 
-descT[0]="The spores of these party mushrooms tend to send people into a manic haze like theirs."
+descT[1]="Las esporas de estos hongos fiesteros suelen enviar a la gente a un trance maníaco como el de ellas."
 descleftT[1]=string(_ageT)+":23\nNAT.:RUSIA\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":FIESTAS,Bailando\n"+string(_dislikesT)+":ABURRIMIENTOn"+string(_hobbyT)+":PARTEAR"
 descabsT[1]="Poderes de Hongo, Espora Aturdidora"
@@ -2611,7 +2611,7 @@ descleftT[0]=string(_ageT)+":20\nNAT.:RUSSIA\n"+string(_heightT)+":5'0"+" "+stri
 descrightT[0]=string(_likesT)+":PARTIES,DANCING\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PARTYING"
 descabsT[0]="Mushroom Powers, Headbutt"
 
-descT[0]="Playful to a fault, they mean no harm in their headbutts, but don’t realize how hard they are." 
+descT[1]= "Juguetonas hasta el extremo; no tienen mala intención con sus cabezazos, pero no se dan cuenta de lo fuertes que son."
 descleftT[1]=string(_ageT)+":20\nNAT.:RUSIA\n"+string(_heightT)+":5'0"+" "+string(_weightT)+":100LBS"
 descrightT[1]=string(_likesT)+":FIESTAS,BALLET\n"+string(_dislikesT)+":ABURRIMIENTO\n"+string(_hobbyT)+":FIESTAR"
 descabsT[1]="Poderes de Hongo, Cabezazo"
@@ -2635,7 +2635,7 @@ descleftT[0]=string(_ageT)+":26\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(
 descrightT[0]=string(_likesT)+":SHOW OFF,MELONS\n"+string(_dislikesT)+":SHOWOFFS\n"+string(_hobbyT)+":EXERCISE"
 descabsT[0]="Slime Powers,Sneaking"
  
- descT[1]= "These smug slimes have a long reach and can become a puddle before launching an uppercut."
+ descT[1]= "Estos limos presumidos tienen un alcance largo y pueden convertirse en un charco antes de lanzar un uppercut."
 descleftT[1]=string(_ageT)+":26\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":MOSTRAR, MELONES\n"+string(_dislikesT)+":FANFARRONES\n"+string(_hobbyT)+":EJERCICIO"
 descabsT[1]="Poderes de limo,Escabullirse"
@@ -2657,7 +2657,7 @@ descleftT[0]=string(_ageT)+":25\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(
 descrightT[0]=string(_likesT)+":ATTENTION,CHERRIES\n"+string(_dislikesT)+":SHARP THINGS\n"+string(_hobbyT)+":GARDENING"
 descabsT[0]="Slime Powers, Slime Launching"
  
- descT[1]= "Fast self-regeneration allows these girls to launch pieces of themselves at foes with no issue."
+ descT[1]=  "Su rápida autorregeneración les permite lanzar pedazos de sí mismas a los enemigos sin problema."
 descleftT[1]=string(_ageT)+":25\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":ATENCIÓN,CEREZAS\n"+string(_dislikesT)+":COSAS AFILADAS\n"+string(_hobbyT)+":JARDINERÍA"
 descabsT[1]="Poderes de Slime,Lanzamiento de Slime"
@@ -2679,7 +2679,7 @@ descleftT[0]=string(_ageT)+":27\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(
 descrightT[0]=string(_likesT)+":PARTY,BLUEBERRIES\n"+string(_dislikesT)+":BOREDOM\n"+string(_hobbyT)+":PARTYING"
 descabsT[0]="Slime Powers, Brawling"
  
- descT[1]= "Buoyant and bouncy, they like tackling their opponents as a big slimy cannonball!"
+ descT[1]=  "Flotantes y reboteadoras, les encanta taclear a sus oponentes como una gran bala de cañón babosa."
 descleftT[1]=string(_ageT)+":27\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":FIESTA,ARÁNDANOS\n"+string(_dislikesT)+":ABURRIMIENTO\n"+string(_hobbyT)+":FIESTEAR"
 descabsT[1]="Poderes de slime, Peleas"
@@ -2701,7 +2701,7 @@ descleftT[0]=string(_ageT)+":27\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(
 descrightT[0]=string(_likesT)+":HUGS,BANANAS\n"+string(_dislikesT)+":POINTY THINGS\n"+string(_hobbyT)+":BOOK WRITING"
 descabsT[0]="Slime Powers, Absorbing"
  
- descT[1]= "Buoyant and bouncy, they like tackling their opponents as a big slimy cannonball!"
+ descT[1]= "Estas chicas son peligrosamente pegajosas; cuidado con los charcos amarillos o recibirás un gran abrazo baboso."
 descleftT[1]=string(_ageT)+":27\nNAT.:USA\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":ABRAZOS, PLÁTANOS\n"+string(_dislikesT)+":COSAS PUNTIAGUDAS\n"+string(_hobbyT)+":ESCRITURA DE LIBROS"
 descabsT[1]="Poderes de baba, Absorber"
@@ -2727,7 +2727,7 @@ descrightT[global.Language]=""
 descabsT[global.Language]=""
 		
  descT[0]="Bio-engineered underlings of Van Bad based on the cave dwellers. Much more hostile though."
-  descT[1]="Bio-engineered underlings of Van Bad based on the cave dwellers. Much more hostile though."
+  descT[1]= "Subordinados bioingenierizados de Van Bad basados en los habitantes de cavernas. Aunque mucho más hostiles."
 descT[2]="Subordinados vítimas da bio-engenharia de Van Bad baseados nos habitantes das cavernas. Porém muito mais hostis."
 desc=descT[global.Language] 
  
@@ -2743,7 +2743,7 @@ descrightT[global.Language]=""
 descabsT[global.Language]=""
 		
  descT[0]="Constantly hungry lab experiments, they’ll grab and try to absorb anything that moves."
- descT[1]="Constantly hungry lab experiments, they’ll grab and try to absorb anything that moves."
+ descT[1]="Experimentos de laboratorio constantemente hambrientos; agarrarán e intentarán absorber cualquier cosa que se mueva."
 descT[2]="Experiências de laboratório constantemente famintas, elas agarram e tentam absorver qualquer coisa que se mova."
 
 desc=descT[global.Language] 	  
@@ -2763,7 +2763,7 @@ descleftT[0]=string(_ageT)+":45\nNAT.:RUSSIA\n"+string(_heightT)+":6'4"+" "+stri
 descrightT[0]=string(_likesT)+":LOVE,HUGS\n"+string(_dislikesT)+":RUNAWAYS\n"+string(_hobbyT)+":ICE SCULPTING"
 descabsT[0]="Ice Breath,Smashing"
   
- descT[1]="Love-starved, strong yetis who use their strength and ice breath to catch new companions."
+ descT[1]= "Yetis fuertes y hambrientas de amor que usan su fuerza y su aliento helado para atrapar nuevos compañeros."
 descleftT[1]=string(_ageT)+":45\nNAT.:RUSIA\n"+string(_heightT)+":6'4"+" "+string(_weightT)+":360LBS"
 descrightT[1]=string(_likesT)+":AMOR,ABRAZOS\n"+string(_dislikesT)+":ESCAPADAS\n"+string(_hobbyT)+":ESCULTURA EN HIELO"
 descabsT[1]="Aliento de Hielo,Aplastando"
@@ -2786,7 +2786,7 @@ descleftT[0]=string(_ageT)+":42\nNAT.:RUSSIA\n"+string(_heightT)+":6'4"+" "+stri
 descrightT[0]=string(_likesT)+":LOVE,HUGS\n"+string(_dislikesT)+":DITCHERS\n"+string(_hobbyT)+":ROCK SCULPTING"
 descabsT[0]="Crushing,Smashing"
 
-descT[1]= "They lack ice breath, but their mighty leaps are enough for them to pounce on any mates."	
+descT[1]=  "No tienen aliento helado, pero sus potentes saltos son suficientes para abalanzarse sobre cualquier pareja potencial."	
 descleftT[1]=string(_ageT)+":42\nNAT.:RUSIA\n"+string(_heightT)+":6'4"+" "+string(_weightT)+":350LBS"
 descrightT[1]=string(_likesT)+":AMOR,ABRAZOS\n"+string(_dislikesT)+":ABANDONOS\n"+string(_hobbyT)+":ESCULTURA EN PIEDRA"
 descabsT[1]="Aplastando,Rompiendo"
@@ -2806,7 +2806,7 @@ descleftT[0]=string(_ageT)+":43\nNAT.:RUSSIA\n"+string(_heightT)+":6'4"+" "+stri
 descrightT[0]=string(_likesT)+":LOVE,HUGS\n"+string(_dislikesT)+":RUNNERS\n"+string(_hobbyT)+":MUD SCULPTING"
 descabsT[0]="Crushing,Smashing"
 	
- descT[1]= "These amorous cave beasts will shake the earth itself just so they can get you to themselves!"
+ descT[1]= "Estas bestias cavernícolas amorosas harán temblar la tierra misma solo para poder quedarte para ellas solas."
 descleftT[1]=string(_ageT)+":43\nNAT.:RUSIA\n"+string(_heightT)+":6'4"+" "+string(_weightT)+":345LBS"
 descrightT[1]=string(_likesT)+":AMOR,ABRAZOS\n"+string(_dislikesT)+":CORREDORES\n"+string(_hobbyT)+":ESCULTURA DE BARRO"
 descabsT[1]="Aplastando,Destrozando"
@@ -2831,7 +2831,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:GERMANY\n"+string(_heightT)+":5'4"+" "+str
 descrightT[0]=string(_likesT)+":SCIENCE,APPLES\n"+string(_dislikesT)+":FAILURE\n"+string(_hobbyT)+":BOOK CLUB"
 descabsT[0]="Science,Explosive" 
 
-descT[1]=  "Scientists who work under Dr. Fran. They act as support by throwing exploding beakers."
+descT[1]=  "Científicos que trabajan bajo la doctora Fran. Dan apoyo lanzando matraces explosivos."
 descleftT[1]=string(_ageT)+":35\nNAT.:ALEMANIA\n"+string(_heightT)+":5'4"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":CIENCIA,MANZANAS\n"+string(_dislikesT)+":FRACASOS\n"+string(_hobbyT)+":CLUB DE LECTURA"
 descabsT[1]="Ciencia,Explosivo"
@@ -2853,7 +2853,7 @@ descleftT[0]=string(_ageT)+":36\nNAT.:USA\n"+string(_heightT)+":5'3"+" "+string(
 descrightT[0]=string(_likesT)+":SCIENCE,PUDDING\n"+string(_dislikesT)+":FAKERS\n"+string(_hobbyT)+":EXPERIMENTING"
 descabsT[0]="Science, Needle Throwing"
 
-descT[1]= "Usually sedating test subjects, they carry syringes that they can throw with pinpoint accuracy."
+descT[1]=  "Normalmente sedando sujetos de prueba, llevan jeringas que pueden lanzar con una precisión exacta."
 descleftT[1]=string(_ageT)+":36\nNAT.USA\n"+string(_heightT)+":5'3"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":CIENCIA, PUDÍNn"+string(_dislikesT)+":FALSOS\n"+string(_hobbyT)+":EXPERIMENTANDO"
 descabsT[1]="Ciencia, Lanzamiento de Agujas"
@@ -2872,7 +2872,7 @@ descleftT[0]=string(_ageT)+":35\nNAT.:CANADA\n"+string(_heightT)+":5'4"+" "+stri
 descrightT[0]=string(_likesT)+":SCIENCE,SPIDERS\n"+string(_dislikesT)+":USELESSNESS\n"+string(_hobbyT)+":COOKING"
 descabsT[0]="Science, Poison"
 
-descT[1]= "Armed with potions full of dizzying gas. Even without a mask they’ve developed an immunity."
+descT[1]=  "Armada con pociones llenas de gas mareador. Incluso sin máscara han desarrollado inmunidad."
 descleftT[1]=string(_ageT)+":35\nNAT.:CANADÁn"+string(_heightT)+":5'4"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":CIENCIA,ARAÑAS\n"+string(_dislikesT)+":INUTILIDAD\n"+string(_hobbyT)+":COCINA"
 descabsT[1]="Ciencia, Veneno"
@@ -2896,7 +2896,7 @@ descleftT[0]=string(_ageT)+":38\nNAT.:RUSSIA\n"+string(_heightT)+":5'5"+" "+stri
 descrightT[0]=string(_likesT)+":SCIENCE,SNAILS\n"+string(_dislikesT)+":BREAKS\n"+string(_hobbyT)+":RESEARCH"
 descabsT[0]="Science, Melting Acid"
 
-descT[1]="Chemists with a nasty temper and nastier attitude who throw vials that burst into acid puddles."
+descT[1]= "Químicos con un temperamento horrible —y una actitud peor— que lanzan frascos que explotan en charcos de ácido."
 descleftT[1]=string(_ageT)+":38\nNAT.:RUSIA\n"+string(_heightT)+":5'5"+" "+string(_weightT)+":110LBS"
 descrightT[1]=string(_likesT)+":CIENCIA,CARACOLES\n"+string(_dislikesT)+":DESCANSOS\n"+string(_hobbyT)+":INVESTIGACIÓN"
 descabsT[1]="Ciencia, Ácido Fundente"
@@ -2918,7 +2918,7 @@ descleftT[0]=string(_heightT)+":8'5"+" "+string(_weightT)+":180LBS"
 descrightT[0]=string(_likesT)+":DESTROYING,FILMS\n"+string(_dislikesT)+":MISTAKES\n"+string(_hobbyT)+":MUSIC PLAYING"
 descabsT[0]="Robotic Kick, Charging"
   
- descT[1]= "Dr. Fran’s pride and joy, these steel bombshells hit fast and hard with a dizzying punch."
+ descT[1]=  "El orgullo y alegría de la doctora Fran; estas bombas de acero golpean rápido y fuerte con un puñetazo mareador."
 descleftT[1]=string(_heightT)+":8'5"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":DESTRUIR,PELÍCULAS\n"+string(_dislikesT)+":ERRORES\n"+string(_hobbyT)+":TOCAR MÚSICA"
 descabsT[1]="Patada Robótica, Cargando"
@@ -2946,7 +2946,7 @@ descleftT[1]=string(_heightT)+":8'5"+" "+string(_weightT)+":180LBS"
 descrightT[1]=string(_likesT)+":DESTRUIR, LIBROS\n"+string(_dislikesT)+":ERRORES\n"+string(_hobbyT)+":BAILE DE PELOTA"
 descabsT[1]="Patada Robótica, Balística"
 
-descT[2]="Este modelo é mais explosivo, com munição à vontade que eles atiram para reduzir intrusos a cinzas."
+descT[2]="Este modelo es más explosivo, con ‘balísticas’ que lanzan a voluntad para hacer estallar intrusos en cenizas."
 descleftT[2]=string(_heightT)+":8'5"+" "+string(_weightT)+":180LBS"
 descrightT[2]=string(_likesT)+":DESTRUINDO, LIVROS\n"+string(_dislikesT)+":ERROS\n"+string(_hobbyT)+":DANÇA COM BOLA"
 descabsT[2]="Chute Robótico, Balística"

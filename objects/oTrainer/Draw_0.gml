@@ -6,6 +6,12 @@ var _tt3="FREE TRAINING"
 
 switch(global.Language)
 {
+case 1:
+var _tt1="MUY BIEN. AHORA GOLPEA A BAGGY TODO LO QUE QUIERAS."
+var _tt2="ENTRE. DE "+string(tutorialchar)
+var _tt3="ENTRE. LIVRE"
+break;
+
 case 2:
 var _tt1="BELEZA. PODE BATER NESSE BOCÓ AQUI ATÉ SE CANSAR."
 var _tt2="TREINO DE "+string(tutorialchar)
@@ -43,11 +49,21 @@ case 3: tutorialtext="GET READY, SHORTSTACK." break;
 
 switch(global.Language)
 {
+case 1:
+switch(oPlayer.character)
+{
+case 0: tutorialtext="BIEN, FLACUCHA. VAMOS A EMPEZAR." break;
+case 1: tutorialtext="BIEN, GOMITA. VAMOS A COMENZAR." break;
+case 2: tutorialtext="MUY BIEN, GRANDOTA. VAMOS ALLÁ." break;
+case 3: tutorialtext="PREPÁRATE, CHAPARRITA." break;
+}
+break;	
+
 case 2:
 switch(oPlayer.character)
 {
 case 0: tutorialtext="CERTO. HORA DE SE MEXER ESSE ESQUELETO." break;
-case 1: tutorialtext="FANTÁSTICO, AMOEBA. É HORA DE BRINCAR" break;
+case 1: tutorialtext="FANTÁSTICO, AMOEBA. É HORA DE BRINCAR." break;
 case 2: tutorialtext="OKAY, COLOSSUS. VAMOS COMEÇAR." break;
 case 3: tutorialtext="ATENÇÃO, TAMPINHA." break;
 }

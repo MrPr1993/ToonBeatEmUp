@@ -37,6 +37,10 @@ stagename="DOWN SIDE BEACH"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="PLAYA INVERTIDA"
+break;
+
 case 2:///Portuguese
 stagename="LITORAL TROPICAL"
 break;

@@ -283,6 +283,25 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Espanol
+CDtextT= "SÍ TIENES BOLETO,\n¿VERDAD?"
+CDtextA="NO TENEMOS..."
+CDtextB="¡ARREBATA EL TREN!"
+CDtextC= "DÉNLE LOS BOLETOS."
+
+languagedialogue[1]="¡MALDICIÓN!"
+languagedialogue[2]="¡NO CREAS QUE YA GANASTE!"
+languagedialogue[3]="CLARO QUE LO HICIMOS. ¿Y QUIÉN SE SUPONE QUE ERES TÚ?"
+languagedialogue[4]="¿YO? ¡TE LO DIRÉ..."
+languagedialogue[5]="¿¡ERES UNA SHERIFF?!"
+languagedialogue[6]= "ASÍ ES. MIS CHICOS Y YO ESTAMOS CAPTURANDO COLADOS Y BUSCAPLEITOS QUE SE SUBEN AL TREN SIN PAGAR."
+languagedialogue[7]= "…PERO VIENDO QUE USTEDES SE ENCARGARON DE LA MAYORÍA, LAS DEJO IR SI TIENEN BOLETO."
+languagedialogue[8]="¡OH! EH..."
+
+//cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 CDtextT="VOCÊ TEM UM INGRESSO,\nNÃO TEM?"
 CDtextA="NÃO TEMOS NENHUM..."

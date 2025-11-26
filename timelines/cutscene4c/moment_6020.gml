@@ -23,6 +23,19 @@ cutscenename="CIRCE" cutsceneline= "I see... Your destiny lies in a big cornfiel
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Veo… que su destino yace en un gran campo de maíz."
+languagedialogue[2]="¿El campo de maíz? ¡Pero es un caminata larguísima!"
+languagedialogue[3]= "Es nuestra única pista, Sofía. ¿No quieres recuperar tu tesoro antes de que se pierda para siempre?"
+languagedialogue[4]= "Ughhhhh… Bien, vamos…"
+languagedialogue[5]="Tengo la sensación real de que estoy olvidando algo…"
+languagedialogue[6]="Ah..."
+languagedialogue[7]= "Bueno, ya no es mi problema."
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 languagedialogue[1]="Entendo... Seu destino está em um grande milharal."
 languagedialogue[2]="O milharal? Mas é uma caminhada tão longa!"
@@ -142,6 +155,18 @@ cutscenename="CIRCE" cutsceneline= "Hmmm... It seems you must meet with a prince
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]= "Hmm… Parece que deben reunirse con un príncipe bajo los mares para acercarse a su meta…"
+languagedialogue[2]= "¿Príncipe? Oh cielos… Entonces ¿cómo llegamos allá?"
+languagedialogue[3]= "Beban esto y viajar bajo el agua será pan comido."
+languagedialogue[4]="Hey, ¡esto está bastante bueno!"
+languagedialogue[5]="¡Refrescante!"
+languagedialogue[6]="Las enviaré al océano con mi magia, así que allá van~ ¡Tengan un buen viaje!"
+languagedialogue[7]="Oh… perdí la oportunidad de ponerles el efecto de cerdita permanente… qué lástima."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Hmmm... Parece que vocês precisam encontrar um príncipe no fundo do mar para se aproximarem do seu objetivo..."
 languagedialogue[2]="Príncipe? Nossa... o que vamos fazer para chegar lá?"
@@ -290,6 +315,17 @@ cutscenename="CIRCE" cutsceneline= "Ahhh here we are... You must seek an ancient
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]= "Ahhh, aquí estamos… Deben buscar una tumba antigua en el desierto… Allí encontrarán ayuda…"
+languagedialogue[2]="Pero ¿cómo llegamos allá?"
+languagedialogue[3]="Está… justo ahí."
+languagedialogue[4]="¿Eso siempre estuvo ahí?"
+languagedialogue[5]="Sigan ese camino y las llevará de la costa a las dunas."
+languagedialogue[6]="Bueno, eso es pan comido. ¡Vamos, chicas!"
+languagedialogue[7]="Sí. La rubia está así de flaquita, pobrecita."
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="Ahhh, aqui está... Vocês devem procurar uma tumba antiga no deserto... Lá encontrarão ajuda..."
 languagedialogue[2]="Mas como chegaremos lá?"

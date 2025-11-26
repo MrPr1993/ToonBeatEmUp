@@ -26,6 +26,17 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="El calor aquí ha sido una tortura…"
+languagedialogue[2]="Muy bien, ¡su deseo es concedido!"
+languagedialogue[3]="¿E-E-En serio?! ¿¡No podías ser m-m-más específica?!"
+languagedialogue[4]="¡P-P-Perdón!! ¡H-H-Hacía tanto calor que no podía pensar!"
+languagedialogue[5]="Ni modo… Tendremos que bajar caminando…"
+languagedialogue[6]="O… deberías decir subir…"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 languagedialogue[1]="Pra me chamar de churrasco só falta o espeto nesse calor..."
 languagedialogue[2]="Pois bem, seu desejo é uma ordem!"
@@ -78,7 +89,7 @@ with actor3 {x=160-64 y=170 sprite_index=spr_bahati_idlecold newscript=function(
 with actor4 {x=160+64 y=170 sprite_index=spr_sofia_idlecold newscript=function() {image_index+=0.1 if image_index>=3 image_index=1}}
 
 with actor5 x=9999 with actor6 x=9999
-
+PlaySound(snd_magic1)
 }
 
 if scenetime=440
@@ -146,6 +157,16 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Desearía que estuviéramos en tierra… firme."
+languagedialogue[2]="Que así sea…"
+languagedialogue[3]="Uf… Aire fresco…"
+languagedialogue[4]="¡¡¡Debiste decir TIERRA ESTABLE!!!"
+languagedialogue[5]="¡OH, MIREN! ¡Una mina! ¡Y veo algo pasando más allá!"
+languagedialogue[6]="Oigan… ¡Oigan! ¡No me dejen aquí! ¡Regresen!!"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="Gostaria que a gente estivesse em um campo..."
 languagedialogue[2]="Que assim seja..."
@@ -179,7 +200,8 @@ scenetime=520
 }
 
 if scenetime=700
-{
+{PlaySound(snd_magic1)
+
 with flashscreen{image_alpha=1 fadeSpd=-0.05}
 
 layer_set_visible("MineBG",1)
@@ -315,6 +337,14 @@ y=0
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+languagedialogue[1]="Deseamos alcanzar nuestro objetivo desde mayores alturas."
+languagedialogue[2]="Ah, eso es sencillo."
+languagedialogue[3]="Espera, ¿qué estás—?"
+languagedialogue[4]="¡¡¡MALDITAS ESPECIFICACIONES DE LOS DESEOS!!!"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
 case 2: ////Portuguese
 languagedialogue[1]="Queremos superar o limite dos céus pelos nossos objetivos!"
 languagedialogue[2]="Ah, isso deve ser fácil!"

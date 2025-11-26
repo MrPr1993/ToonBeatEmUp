@@ -13,6 +13,12 @@ var _t3="DAMAGE"
 var _t4="TIME"
 switch(global.Language)
 {
+case 1:
+_t1="PERFECTO"
+_t2="NO BONUS"
+_t3="DAÑO"
+_t4="TIEMPO"
+break;
 case 2:
 _t1="PERFEITO"
 _t2="SEM BÔNUS"

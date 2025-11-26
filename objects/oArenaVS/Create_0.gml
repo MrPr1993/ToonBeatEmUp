@@ -26,6 +26,9 @@ var _t1="GET READY"
 
 switch(global.Language)
 {
+case 21:
+var _t1="PREPÁRATE"
+break;
 case 2:
 var _t1="PREPARE-SE"
 break;

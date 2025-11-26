@@ -301,6 +301,27 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT= "NO QUIERE HABLAR.\n¿QUÉ HARÁS?"
+CDtextA="SALIR DEL CIRCO."
+CDtextB="AYUDARLA."
+CDtextC="GOLPEAR AL PATO."
+
+languagedialogue[1]="¿¡QUÉ SE SUPONEN QUE HACEN?!"
+languagedialogue[2]="Bueno, tú nos atacaste. Y tus secuaces también…"
+languagedialogue[3]="¿Qué hacen ustedes, metiéndose aquí, golpeándome a mí y a mi personal…"
+languagedialogue[4]="¡Y arruinando mi show!"
+languagedialogue[5]="¡Mi jefe no va a estar nada feliz con todo este desastre!"
+languagedialogue[6]="¿Tu jefe?"
+languagedialogue[7]="¿Y quién es? ¡Habla, cabeza de chorlito, ahora!"
+languagedialogue[8]="DÉJAME PENSAR…"
+languagedialogue[9]="PBBBBBBBTH!!!"
+languagedialogue[10]="No voy a decir NADA sobre mi jefe, ¡especialmente después de que entraron aquí alborotando mis plumas Y mi presentación!"
+languagedialogue[11]="¿Qué les parece eso?"
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;	
+
 case 2: ////Portuguese
 CDtextT="O BICO NÃO ABRE! O\nQUE FAZER?"
 CDtextA="DEIXAR O CIRCO."

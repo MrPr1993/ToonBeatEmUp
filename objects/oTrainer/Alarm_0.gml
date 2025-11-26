@@ -17,6 +17,16 @@ switch(oPlayer.character)
 }
 switch(global.Language)
 {
+case 1: ///Portuguese
+switch(oPlayer.character)
+{
+	case 0: tutorialtext="VAYA, VAYA, SI NO ES VIVA. ¿TODAVÍA SIN CARNE EN LOS HUESOS? ¿O EN LA CINTURA?" break;
+	case 1: tutorialtext="ASÍ QUE VIENES A ENTRENAR, ¿EH HINA? ¿QUÉ TAN FLEXIBLE ERES, ELÁSTICA?" break;
+	case 2: tutorialtext="¡BAHATI! ME ALEGRA VERTE AQUÍ PARA PRACTICAR TUS MOVIMIENTOS DE LUCHA." break;
+	case 3: tutorialtext="SI NO ES LA PEQUEÑA SOFÍA. ¿VIENES A ENTRENAR ESAS PIERNAS FUERTES?" break;
+}
+break;	
+
 case 2: ///Portuguese
 switch(oPlayer.character)
 {
@@ -33,6 +43,9 @@ case 1:canControl=1
 tutorialtext="ALRIGHT. PICK YOUR CHOICE."
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="BIEN. ELIGE TU OPCIÓN."
+break;
 case 2: ///Portuguese
 tutorialtext="CERTO. FAÇA SUA ESCOLHA."
 break;
@@ -57,6 +70,10 @@ if oPlayer.character=3 tutorialtext="GET CLOSE TO BAGGY AND KICK WITH"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="ACÉRCATE A BAGGY Y GOLPEA CON"
+if oPlayer.character=3 tutorialtext="ACÉRCATE A BAGGY Y PATEA CON"
+break;
 case 2: ///Portuguese
 tutorialtext="SE APROXIME DO BOCÓ E SOQUE COM"
 if oPlayer.character=3 tutorialtext="SE APROXIME DO BOCÓ E CHUTE COM"
@@ -74,6 +91,10 @@ tutorialtext="DO A COMBO AND TRY TO KNOCK EM' DOWN!"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="¡HAZ UN COMBO E INTENTA DERRIBARLO!"
+break;	
+
 case 2: ///Portuguese
 tutorialtext="FAÇA UMA SEQUÊNCIA E TENTE NOCAUTEA-LO!"
 break;
@@ -94,6 +115,10 @@ tutorialtext="NOW RUN AND DO A DASH ATTACK WITH"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="AHORA CORRE Y HAZ UN ATAQUE RÁPIDO CON"
+break;	
+
 case 2: ///Portuguese
 tutorialtext="AGORA CORRA E FAÇA UMA INVESTIDA COM"
 break;
@@ -110,6 +135,11 @@ var _tt="DO A JUMP AND KICK! STAY STILL."
 if oPlayer.character=2 _tt="DO A FLYING MOVE! STAY STILL."
 switch(global.Language)
 {
+case 1: ///Portuguese
+_tt="¡SALTA Y PATEA! QUÉDATE QUIETA."
+if oPlayer.character=2 _tt="¡HAZ UN MOVIMIENTO AÉREO! QUÉDATE QUIETA."
+break;	
+
 case 2: ///Portuguese
 _tt="PULE E CHUTE! SEM ANDAR."
 if oPlayer.character=2 _tt="DÊ UM GOLPE VOADOR! SEM ANDAR."
@@ -144,6 +174,10 @@ var _tt="DO A JUMP AND KICK! STAY STILL."
 if oPlayer.character=2 _tt="DO A FLYING MOVE! STAY STILL."
 switch(global.Language)
 {
+case 1: ///Portuguese
+_tt="AHORA HAZLO MIENTRAS TE MUEVES."
+if oPlayer.character=2 _tt="HAZ TU PATADA AÉREA. ¡EN EL AIRE MIENTRAS TE MUEVES!"
+break;
 case 2: ///Portuguese
 _tt="AGORA FAÇA ISSO ENQUANTO SE MEXE."
 if oPlayer.character=2 _tt="DÊ SEU CHUTE VOADOR. PULE ENQUANTO ANDA!"
@@ -167,6 +201,9 @@ tutorialtext="NOW WHILE IN THE AIR, DO A DOWN ATTACK."
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="AHORA, EN EL AIRE, HAZ UN ATAQUE HACIA ABAJO."
+break;
 case 2: ///Portuguese
 tutorialtext="AGORA ENQUANTO ESTA NO AR, DÊ UM ATAQUE RASANTE."
 break;
@@ -187,6 +224,9 @@ trainingreact(0)
 tutorialtext="NOW FOR THE MORE ADVANCED MOVESET."
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="AHORA VAMOS CON LOS MOVIMIENTOS AVANZADOS."
+break;
 case 2: ///Portuguese
 tutorialtext="VAMOS PARA TÉCNICAS MAIS AVANÇADAS AGORA."
 break;
@@ -201,6 +241,9 @@ tutorialtext="GET CLOSE AND FACE AWAY FROM THEM AND USE"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="ACÉRCATE, DA LA ESPALDA Y USA"
+break;
 case 2: ///Portuguese
 tutorialtext="SE APROXIME, FIQUE DE COSTAS E USE"
 break;
@@ -221,6 +264,12 @@ if oPlayer.character=3 tutorialtext="DO YOUR SPIN KICK WITH"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="HAZ UN GANCHO ASCENDENTE CON"
+if oPlayer.character=1 tutorialtext="TRANSFÓRMATE EN BOLA Y GOLPÉALOS CON"
+if oPlayer.character=2 tutorialtext="USA TU GOLPE APLASTANTE CON"
+if oPlayer.character=3 tutorialtext="HAZ TU PATADA GIRATORIA CON"
+break;
 case 2: ///Portuguese
 tutorialtext="DÊ UM GANCHO ASCENDENTE COM"
 if oPlayer.character=1 tutorialtext="VIRE UMA BOLA E SE ATIRE COM"
@@ -252,6 +301,13 @@ if oPlayer.character=3 tutorialtext="NOW GIVE EM' QUITE A KICK WITH"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="USA TU PUÑO Y LÁNZATE CON"
+if oPlayer.character=1 tutorialtext="DÁLES DURO CON TU BRAZO ELÁSTICO CON"
+if oPlayer.character=2 tutorialtext="DÁLES UN BUEN GOLPE DE PANZA CON"
+if oPlayer.character=3 tutorialtext="AHORA DÁLES UNA BUENA PATADA CON"
+break;	
+
 case 2: ///Portuguese
 tutorialtext="VOCÊ PODE SOCAR EM UM ARRANQUE COM"
 if oPlayer.character=1 tutorialtext="DÊ BOAS CHICOTADAS ESTICANDO SEUS BRAÇOS COM"
@@ -274,9 +330,13 @@ var _tt="HOLD!"
 var _tt2="RELEASE"
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="AHORA PARA USAR UN ATAQUE CARGADO"
+_tt="¡MANTÉN!" _tt2="SOLTE"
+break;
 case 2: ///Portuguese
 tutorialtext="AGORA USE UM ATAQUE CARREGADO"
-_tt="SEGURE!" _tt2="SOLTE"
+_tt="SEGURE!" _tt2="SUELTA"
 break;
 }
 translated[0]=_tt
@@ -295,6 +355,11 @@ var _tt2="GRAB"
 if oPlayer.character=2 _tt="TO GRAB EM' GET CLOSE AND GIVE EM' A GOOD SQUEEZE"
 switch(global.Language)
 {
+case 1: ///Portuguese
+_tt="PARA AGARRARLOS, ACÉRCATE Y GOLPÉALOS."
+if oPlayer.character=2 _tt="PARA AGARRARLOS, ACÉRCATE Y DÁLES UN BUEN APRETÓN."
+var _tt2="AGARRAR"
+break;
 case 2: ///Portuguese
 _tt="PARA AGARRAR-LOS, SE APROXIME E META A PORRADA"
 if oPlayer.character=2 _tt="PARA AGARRAR-LOS, SE APROXIME E DÊ UM BOM ABRAÇO"
@@ -316,6 +381,12 @@ var _tt="GRAB EM' AGAIN AND SLAM EM' WITH"
 var _tt2="GRAB►O◄"
 switch(global.Language)
 {
+case 1: ///Portuguese
+specialcheck[1]="AGARRAR►"
+tutorialtext="VUELVE A AGARRARLOS Y LÁNZALOS CON"
+_tt="UNA VEZ MÁS, Y LÁNZALOS HACIA ATRÁS CON"
+_tt2="AGARRAR►O◄"
+break;
 case 2: ///Portuguese
 specialcheck[1]="AGARRÃO►"
 tutorialtext="AGARRE-OS DE NOVO E ARREMEÇE COM"
@@ -343,6 +414,12 @@ translated[3]="ONCE MORE AND PILEDRIVE EM' WITH"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+translated[0]="AGARRAR"
+translated[1]="VUELVE A AGARRARLOS Y LÁNZALOS CON"
+translated[2]="AIRE" 
+translated[3]="UNA VEZ MÁS Y APLÁSTALOS CON UN PILEDRIVER CON"
+break;
 case 2: ///Portuguese
 translated[0]="AGARRÃO◄"
 translated[1]="REPITA E OS ARREMEÇE PARA TRÁS COM"
@@ -369,6 +446,9 @@ tutorialtext="OKAY WE MIGHT HAVE KINDA ROUGHED UP BAGGY TOO MUCH. SO LET'S BLOW 
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="BIEN, CREO QUE YA LE DIMOS DEMASIADO A BAGGY. ASÍ QUE VAMOS A MANDARLE UN BESO."
+break;
 case 2: ///Portuguese
 tutorialtext="OKAY ACHO QUE FOMOS CRUÉIS DEMAIS COM O BOCÓ. ENTÃO RECOMPENSE ELE COM UM BEIJO."
 break;
@@ -382,6 +462,9 @@ tutorialtext="USE TAUNT WITH"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="USA EL GESTO CON"
+break;
 case 2: ///Portuguese
 tutorialtext="PROVOQUE COM"
 break;
@@ -401,6 +484,9 @@ tutorialtext="NOW FOR THE SPECIALS. THEY CAN BE USED FOR STRONGER MOVES BUT THEY
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="AHORA VAMOS CON LOS ATAQUES ESPECIALES. SON MOVIMIENTOS PODEROSOS, PERO TE QUITAN VIDA, ASÍ QUE ÚSALOS CON CUIDADO."
+break;
 case 2: ///Portuguese
 tutorialtext="AGORA PARA OS ESPECIAIS. ELES SÃO ATAQUES MAIS FORTES MAS ELES DRENAM SUA SAÚDE. ENTÃO PEGUE LEVE."
 break;
@@ -414,6 +500,9 @@ tutorialtext="USE YOUR FIRST SPECIAL WITH"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="USA TU PRIMER ESPECIAL CON"
+break;
 case 2: ///Portuguese
 tutorialtext="USE SEU ESPECIAL PRIMÁRIO COM"
 break;
@@ -431,6 +520,9 @@ tutorialtext="NOW YOUR OTHER SPECIAL. MOVE AND USE"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="AHORA TU OTRO ESPECIAL. MUÉVETE Y USA"
+break;
 case 2: ///Portuguese
 tutorialtext="AGORA SEU OUTRO ESPECIAL. ANDE E USE"
 break;
@@ -452,6 +544,9 @@ tutorialtext="AND NOW FOR THE GRAND FINALE. SHOWTIME. YOU CAN FILL YOUR BAR BY D
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="Y AHORA, PARA EL GRAN FINAL: SHOWTIME. PUEDES LLENAR TU BARRA AL HACER O RECIBIR DAÑO."
+break;
 case 2: ///Portuguese
 tutorialtext="E PARA O GRAND FINALE. ESPETÁCULO. VOCÊ PODE ENCHER SUA BARRA BATENDO OU APANHANDO."
 break;
@@ -466,6 +561,9 @@ tutorialtext="TO USE YOUR SHOWTIME USE"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="PARA USAR TU SHOWTIME, USA"
+break;
 case 2: ///Portuguese
 tutorialtext="FAÇA O SEU ESPETÁCULO COM."
 break;
@@ -495,6 +593,9 @@ tutorialtext="AND THAT IS IT FOR THE TRAINING."
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+tutorialtext="Y ESO SERÍA TODO POR EL ENTRENAMIENTO."
+break;
 case 2: ///Portuguese
 tutorialtext="E ISSO É TUDO DESSE TREINO."
 break;

@@ -22,6 +22,9 @@ stagename="GRITTY GRAVES"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="TUMBAS SOMBRÍAS"
+break;
 case 2:///Portuguese
 stagename="DENSAS TUMBAS"
 break;

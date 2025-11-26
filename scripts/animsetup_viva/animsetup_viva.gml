@@ -690,7 +690,8 @@ weaponY=999999
 	image_index=0 image_speed=0
 	sentFlying=0 hspeed=0
 	targetID.playerFrom=playerNO
-	with targetID {hud_show() hpscan()}
+	with targetID {if other.object_index=oPlayer {playerFrom=other.playerNO with oPlayer playerGet=0 if BossTag!=0 targetEnemy.playerGet=1}
+ hud_show() hpscan()}
 	targetID.hit=2 targetID.recoveryThrow=10
 	canmove=0 targetID.hitSource=id
 	targetID.ground=1 targetID.recovery=0

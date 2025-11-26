@@ -11,6 +11,32 @@ global.P4ScoreLife=0
 
 else
 {
+var _t1="POWER"
+var _t2="SPEED"
+var _t3="REACH"
+var _t4="PALETTE"
+var _t5="NORMAL"
+var _t6="CUSTOM"
+switch(global.Language)
+{
+case 1:
+var _t1="PODER"
+var _t2="VELOZ."
+var _t3="ALCANZ."
+var _t4="PALETA"
+var _t5="NORMAL"
+var _t6="PERSON."
+break;
+case 2:
+var _t1="PODER"
+var _t2="VELOC."
+var _t3="ALCANZ."
+var _t4="PALETA"
+var _t5="NORMAL"
+var _t6="PERSON."
+break;
+}	
+
 draw_sprite_ext(spr_characterselect,2,x+1,y+1,1,1,0,c_black,0.5)
 
 var _tt1="\nPRESS\nANY TO\nCONNECT!"
@@ -18,6 +44,10 @@ var _tt2="\nPRESS\n\n\nTO\nCONNECT!"
 
 switch(global.Language)
 {
+case 1:
+var _tt1="\nPRESIONA\nQUALQUIER\nTECLA PARA\nCONECTAR!"
+var _tt2="\nPRESIONA\n\n\nPARA\nCONECTAR!"
+break;
 case 2:
 var _tt1="\nPRESSIONE\nQUALQUER\nTECLA PARA\nCONECTAR!"
 var _tt2="\nPRESSIONE\n\n\nPARA\nCONECTAR!"
@@ -56,24 +86,7 @@ draw_set_valign(fa_top)
 draw_set_halign(fa_center)
 if palettemode=0
 {
-var _t1="POWER"
-var _t2="SPEED"
-var _t3="REACH"
-var _t4="PALETTE"
-var _t5="NORMAL"
-var _t5="CUSTOM"
-switch(global.Language)
-{
 
-case 2:
-var _t1="PODER"
-var _t2="VELOC."
-var _t3="ALCANZ."
-var _t4="PALETTE"
-var _t5="NORMAL"
-var _t5="PERSON."
-break;
-}
 
 draw_text(x+40,190,string_hash_to_newline(_t1))
 draw_text(x+40,190+8,string_hash_to_newline(ability1))

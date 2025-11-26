@@ -28,9 +28,16 @@ var _t5="AVERAGE"
 
 switch(global.Language)
 {
+case 1:
+var _t1="PREPÁRATE"
+var _t2="ENEMIGOS DERROTADOS:"
+var _t3="\nPUNTUACIÓN TOTAL:"
+var _t4="BIEN"
+var _t5="MEDIOCRE"
+break;
 case 2:
 var _t1="PREPARE-SE"
-var _t2="INIMIGOS DERROTADOS"
+var _t2="INIMIGOS DERROTADOS:"
 var _t3="\nPONTUAÇÃO TOTAL:"
 var _t4="BOM"
 var _t5="MEDIOCRE"

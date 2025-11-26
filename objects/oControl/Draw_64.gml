@@ -575,7 +575,7 @@ var _tt="STAGE "
 
 switch(global.Language)
 {
-
+case 1: _tt="ETAPA " break;
 case 2: _tt="PALCO " break;
 }
 
@@ -808,7 +808,7 @@ var _t1="PRESS START"
 switch(global.Language)
 {
 case 1: ///Espanol
-_t1="PRESSONE START"
+_t1="PRESIONA START"
 case 2: ///Portuguese
 _t1="PRESSIONE START"
 }	
@@ -1020,6 +1020,10 @@ if global.Difficulty=0 {diftext="STILL IN BAND CAMP\n(VERY EASY)\n(4 LIVES, 5 CO
 	
 switch(global.Language)
 {
+case 1: ///Portuguese
+diftext="SIGUES EN LA BANDA\n(MUY FÁCIL)\n(4 VIDAS, 5 CONTINÚES)" 
+diftext2="ADECUADO PARA PRINCIPIANTES EN PELEAS."
+break;
 case 2: ///Portuguese
 diftext="AINDA NA BANDA DE GARAGEM\n(MUITO FÁCIL)\n(4 VIDAS, 5 CONTINUAÇÕES)" 
 diftext2="ADEQUADO PARA INICIANTES EM BRIGAS DE RUA."
@@ -1032,6 +1036,10 @@ if global.Difficulty=1 {diftext="FIRST GIG\n(EASY)\n(3 LIVES, 4 CONTINUES)"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+diftext="PRIMER CONCIERTO\n(FÁCIL)\n(3 VIDAS, 4 CONTINÚES)" 
+diftext2="ENEMIGOS MÁS DÉBILES, RECIBES MENOS DAÑO."
+break;
 case 2: ///Portuguese
 diftext="PRIMEIRO SHOW\n(FÁCIL)\n(3 VIDAS, 4 CONTINUAÇÕES)" 
 diftext2="INIMIGOS MAIS FRACOS, VOCÊ SOFRE MENOS DANO."
@@ -1045,6 +1053,11 @@ if global.Difficulty=2 {diftext="FAVORITE AT THE CLUB\n(MEDIUM)\n(2 LIVES, 3 CON
 
 switch(global.Language)
 {
+	case 1: ///Portuguese
+diftext="FAVORITA DEL CLUB\n(MEDIO)\n(2 VIDAS, 3 CONTINÚES)" 
+diftext2="DIFICULTAD NORMAL, LO BÁSICO."
+break;
+
 case 2: ///Portuguese
 diftext="FAVORITO NO BOTECO\n(MÉDIO)\n(2 VIDAS, 3 CONTINUAÇÕES)" 
 diftext2="DIFICULDADE NORMAL, O FEIJÃO COM O ARROZ."
@@ -1057,6 +1070,11 @@ if global.Difficulty=3 {diftext="THE MAIN EVENT AT THE CONCERT\n(HARD)\n(2 LIVES
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+diftext="EL EVENTO PRINCIPAL DEL CONCIERTO\n(DIFÍCIL)\n(2 VIDAS, 2 CONTINÚES)" 
+diftext2="ENEMIGOS MÁS DUROS, RECIBES MÁS DAÑO."
+break;
+
 case 2: ///Portuguese
 diftext="O EVENTO PRINCIPAL DO CONCERTO\n(DIFÍCIL)\n(2 VIDAS, 2 CONTINUAÇÕES)" 
 diftext2="DIFICULDADE NORMAL, O FEIJÃO COM O ARROZ."
@@ -1070,6 +1088,11 @@ if global.Difficulty=4 {diftext="FOR THE GOLDEN RECORD\n(VERY HARD)\n(2 LIVES, 1
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+diftext="POR EL DISCO DE ORO\n(MUY DIFÍCIL)\n(2 VIDAS, 1 CONTINÚE)" 
+diftext2="NO APTO PARA PRINCIPIANTES."
+
+break;
 case 2: ///Portuguese
 diftext="PELO DISCO DE OURO\n(MUITO DIFÍCIL)\n(2 VIDAS, 1 CONTINUAÇÃO)" 
 diftext2="NADA ADEQUADO PARA NOOBS."
@@ -1086,16 +1109,22 @@ if global.Cheat[15] global.Continues=-1;
 else
 {
 var _t1="DIFFICULTY CHANGE IS DISABLED"
-var _t2="DELETE FILE?"
+var _t2="¿BORRAR ARCHIVO?"
 var _t3="✰NO YES"
 var _t4=" NO✰YES"
 switch(global.Language)
 {
+case 1: ///Portuguese
+var _t1="EL CAMBIO DE DIFICULTAD ESTÁ DESACTIVADO"
+var _t2="BORRAR ARCHIVO?"
+var _t3="✰NO  SI"
+var _t4="NO  ✰SI"
+break;
 case 2: ///Portuguese
 var _t1="ALTERAÇÃO DE DIFICULDADE DESATIVADA"
 var _t2="EXCLUIR ARQUIVO?"
 var _t3="✰NÃO  SIM"
-var _t4="✰NÃO  ✰SIM"
+var _t4=" NÃO  ✰SIM"
 break;
 }	
 
@@ -1118,6 +1147,10 @@ diftext2="THE OTHER DIVAS CAN GET HIT BY YOUR OWN MOVES.\n(SHOWTIME WON'T APPLY 
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+diftext="FUEGO AMIGO"
+diftext2=" LAS OTRAS DIVAS PUEDEN SER GOLPEADAS POR TUS PROPIOS MOVIMIENTOS.\n(SHOWTIME NO SE APLICA A ELLAS)"
+break;
 case 2: ///Portuguese
 diftext="FOGO AMIGO"
 diftext2="DIVAS PODEM SOFRER ATAQUES DE OUTRAS DIVAS.\n(EXCETO ESPETÁCULO)."
@@ -1140,20 +1173,30 @@ if global.SaveNumber=0 alphaset=0.75
 draw_set_color(setsave)
 draw_sprite_ext(spr_savefile,global.AllStageMode,xadd,128+48,1,1,0,setsave,alphaset)
 
+var _t0="SAVE"
 var _t1="SLOT"
 var _t2="NO SAVE"
 var _t3="NEW GAME"
 var _t4="TOTAL SCORE"
 switch(global.Language)
 {
+case 1: ///Portuguese
+_t0="GUARDADO"
+_t1="ARCHIVO"
+_t2="NO ARCHIVO"
+_t3="NUEVO ARCHIVO"
+_t4="PUNTUACIÓN TOTAL"
+break;
 case 2: ///Portuguese
+_t0="SALVO"
 _t1="ARQUIVO"
 _t2="NÃO ARQUIVO"
 _t3="NOVO JOGO"
 _t4="PONTUAÇÃO TOTAL"
+break;
 }
-draw_text(xadd,128+48,"SAVE FILE")
-var savename=string(_t1)+" A" if global.SaveFileNO=2 savename=string(_t1)+" B" if global.SaveFileNO=3 savename=string(_t1)+"SLOT C"
+draw_text(xadd,128+48,_t0)
+var savename=string(_t1)+" A" if global.SaveFileNO=2 savename=string(_t1)+" B" if global.SaveFileNO=3 savename=string(_t1)+" C"
 if global.SaveFileNO=0 savename=_t2
 
 if global.SaveFileNO=0
@@ -1228,13 +1271,20 @@ var _t6="STAGE SELECT"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+_t1="ENCERRADO"
+_t2="RANDOM"
+_t3="NIVEL DE SALUD "
+_t4="VIDAS "
+_t5="TIEMPO "
+_t6="SELECCIÓN DE ETAPA"
 case 2: ///Portuguese
 _t1="BLOQUEADO"
 _t2="ALEATÓRIO"
 _t3="NÍVEL DE SAÚDE "
 _t4="VIDAS "
 _t5="TEMPO "
-_t6="SELECCIÓN DE ETAPA"
+_t6="SELECCIÓN DE PALCO"
 }
 
 diftext=_t1
@@ -1287,6 +1337,27 @@ var _sn20="STAGE 1\nDOWNTOWN BEAT"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+_sn0="ARENA"
+_sn1="CALLE DEL CENTRO"
+_sn2="PASARELA DEL AEROPUERTO"
+_sn3="CRUCERO EN EL MAR"
+_sn4="EL LOCO DOS"
+_sn5="TUMBAS DE ANNA MARI"
+_sn6="MUSEO MACHACADO"
+_sn7="LUCKY DOJO CASINO"
+_sn8="PANTANO DEL DRUIDA"
+_sn9="CARNAVAL DEL PATO"
+_sn10="PLAYA DEL CAMINO"
+_sn11=" OVNI MARCIANO"
+_sn12="MAR DEL PRÍNCIPE"
+_sn13="DESIERTO ARDIENTE"
+_sn14="MONTAÑA NEVADA"
+_sn15="CAVERNA MAZMORRA"
+_sn16="CIELO NUBLADO ESPONJOSO"
+_sn17="LABORATORIO DE LA DOCTORA LOCA"
+_sn18="EL DIRIGIBLE PERVERSO"
+break;	
 case 2:///Portuguese
 _sn0="ARENA"
 _sn1="VIELA DISTRITAL"
@@ -1305,7 +1376,7 @@ _sn13="DESERTO ARDENTE"
 _sn14="MONTANHA GLACIAL"
 _sn15="DUNGEON CAVERNOSA"
 _sn16="CÉU DE ALGODÃO-DOCE"
-_sn17="LABBORATÓRIO DO DR. LOUCO"
+_sn17="LABBORATÓRIO DO DR. LOUCA"
 _sn18="O DIRIGÍVEL MEDROSO"
 break;	
 	}	
@@ -1370,6 +1441,13 @@ var _t5="QUITTING..."
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+_t1="FUEGO AMIGO"
+_t2="ACTIVADO"
+_t3="DESACTIVADO"
+_t4="PRESIONA START PARA JUGAR"
+_t5="SALIENDO..."
+break;
 case 2: ///Portuguese
 _t1="FOGO AMIGO"
 _t2="ATIVADO"
@@ -2148,6 +2226,10 @@ var _tt1="LOCKED"
 var _tt2="HIGH SCORE: "
 switch(global.Language)
 {
+case 1: 
+_tt1="ENCERRADO"
+_tt2="PUNTUACIÓN TOTAL: "
+break;
 case 2: 
 _tt1="BLOQUEADO"
 _tt2="PONTUAÇÃO TOTAL: "

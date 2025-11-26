@@ -51,6 +51,13 @@ var _t5="TIME"
 
 switch(global.Language)
 {
+case 1:
+var _t1="NO BONUS"
+var _t2="BONUS"
+var _t3="PERFECTO"
+var _t4="BIEN"
+var _t5="TIEMPO"
+break;
 case 2:
 var _t1="SEM BÔNUS"
 var _t2="BÔNUS"

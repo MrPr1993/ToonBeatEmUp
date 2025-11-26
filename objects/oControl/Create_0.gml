@@ -1017,7 +1017,7 @@ if room=rm_soundtest
 songno=0
 var _snl="SELECT MUSIC OR SOUND";
 if global.Language=1 _snl="SELECCIONE MÚSICA O SONIDO"
-if global.Language=1 _snl="SELECIONE MÚSICA OU SOM"
+if global.Language=2 _snl="SELECIONE MÚSICA OU SOM"
 
 songname= _snl
 soundno=1

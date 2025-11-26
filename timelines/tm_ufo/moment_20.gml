@@ -86,7 +86,10 @@ with glowlight {image_alpha-=0.001 if image_alpha<0.078 image_alpha=0.8}
 
 	
 		if specialSet7=1
+		{
 		oPlayer.z-=5
+		with oPlayer {if x!=clamp(x,oControl.camX+160-2,oControl.camX+160+2) {if x>oControl.camX+160 x-=1 else x+=1}}
+		}
 		}	
 	}
 

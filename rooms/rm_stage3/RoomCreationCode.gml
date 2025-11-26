@@ -20,6 +20,9 @@ stagename="MASHUP MUSEUM"
 
 	switch(global.Language)
 	{
+case 1:///Portuguese
+stagename="MUSEO MEZCLADO"
+break;
 case 2:///Portuguese
 stagename="MUSEU MASHUP"
 break;

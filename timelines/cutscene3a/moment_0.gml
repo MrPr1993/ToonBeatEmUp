@@ -347,6 +347,30 @@ cutscenePlaying=1
 with oControl
 switch(global.Language)
 {
+case 1: ////Portuguese
+CDtextT= "ESTÁ OFRECIENDO\nAYUDA."
+CDtextA= "PREGUNTAR SOBRE EL PANTANO."
+CDtextB= "RECHAZAR SU AYUDA."
+CDtextC="PREGUNTAR SOBRE LA PLAYA."
+
+languagedialogue[1]="Ungh… ¡NO PUEDO CREER QUE HAYA PERDIDO CONTRA UN GRUPO DE MORTALES!"
+languagedialogue[2]="Bueno, esto es lo que obtenemos por usar mi avatar débil… tal vez deberíamos-"
+languagedialogue[3]="¡HEY! ¿¡QUÉ ESTÁN HACIENDO ESOS INSENSATOS!?"
+languagedialogue[4]="Bueno, no están de nuestro lado. También nos robaron nuestras cosas."
+languagedialogue[5]="¿Y qué onda con esas cosas, de todos modos?"
+languagedialogue[6]="¿¡ESAS COSAS!? ¡Son reliquias antiguas, ignorante!"
+languagedialogue[7]="¡Habrá consecuencias si caen en las manos equivocadas!"
+languagedialogue[8]="Como las nuestras… estamos tras los mismos ladrones que tomaron tus tesoros. Eh… ¿puedes soltar a la señorita Viva, por favor?"
+languagedialogue[9]="Bien… claro."
+languagedialogue[10]="..."
+languagedialogue[11]="He estado ausente por bastante tiempo. Pero quizá podamos asistirlas."
+languagedialogue[12]="Tenemos amigas en el pantano y en la playa. Deberían seguir por ahí."
+languagedialogue[13]="¿Cuál es su decisión, mortales?"
+
+cutsceneline=languagedialogue[1]
+//if global.Language!=0 cutsceneline=languagedialogue[1]
+break;
+
 case 2: ////Portuguese
 CDtextT="ELA ESTÁ OFERECENDO\nAJUDA."
 CDtextA="PERGUNTAR SOBRE O PÂNTANO."

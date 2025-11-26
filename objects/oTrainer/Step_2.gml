@@ -50,6 +50,14 @@ var _tt3="NOT BAD!"
 var _tt4="VERY GOOD!"
 switch(global.Language)
 {
+case 1: ///Portuguese
+var _tt0="PERFECTO!"
+var _tt1="BUEN TRABAJO!"
+var _tt2="EXCELENTE!"
+var _tt3="NADA MAL!"
+var _tt4="MUI BIEN!"
+break;	
+
 case 2: ///Portuguese
 var _tt0="PERFEITO!"
 var _tt1="BOM TRABALHO!"
