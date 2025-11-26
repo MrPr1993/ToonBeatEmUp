@@ -2874,6 +2874,7 @@
     {"name":"spr_ghost_axeobj","order":4,"path":"sprites/spr_ghost_axeobj/spr_ghost_axeobj.yy",},
     {"name":"spr_ghost_burned","order":5,"path":"sprites/spr_ghost_burned/spr_ghost_burned.yy",},
     {"name":"spr_ghost_charge","order":6,"path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},
+    {"name":"spr_ghost_disappear","order":28,"path":"sprites/spr_ghost_disappear/spr_ghost_disappear.yy",},
     {"name":"spr_ghost_dizzy","order":22,"path":"sprites/spr_ghost_dizzy/spr_ghost_dizzy.yy",},
     {"name":"spr_ghost_elec","order":7,"path":"sprites/spr_ghost_elec/spr_ghost_elec.yy",},
     {"name":"spr_ghost_flat","order":8,"path":"sprites/spr_ghost_flat/spr_ghost_flat.yy",},

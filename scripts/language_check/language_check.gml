@@ -322,7 +322,7 @@ commandL[19]="DETENER"
 commandL[20]="TECLADO"
 commandL[21]="JOYSTICK"
 commandL[22]="BORRAR"
-commandL[23]="VIAJE MUNDIAL"
+commandL[23]="GIRA MUNDIAL"
 commandL[24]="MOVER"
 break;
 case 2: ///PORTUGUESE

@@ -61,7 +61,7 @@ OneAttack=2
 height=100
 
 isBoss=1 BossTag=1
-
+specialBossState=1
 specialFX=0
 
 StandSpr=spr_ghost_stand

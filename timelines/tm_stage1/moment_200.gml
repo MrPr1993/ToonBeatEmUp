@@ -52,7 +52,7 @@ btnT3="TO ATTACK"
 
 switch(global.Language)
 {
-case 2: btnT1="PRESSIONE" btnT3="PARA ATACAR" break;
+case 1: btnT1="PRESIONA" btnT3="PARA ATACAR" break;
 case 2: btnT1="PRESSIONE" btnT3="PARA ATACAR" break;
 }
 

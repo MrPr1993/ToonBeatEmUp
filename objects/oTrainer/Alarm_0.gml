@@ -332,11 +332,11 @@ switch(global.Language)
 {
 case 1: ///Portuguese
 tutorialtext="AHORA PARA USAR UN ATAQUE CARGADO"
-_tt="¡MANTÉN!" _tt2="SOLTE"
+_tt="¡MANTÉN!" _tt2="SUELTA"
 break;
 case 2: ///Portuguese
 tutorialtext="AGORA USE UM ATAQUE CARREGADO"
-_tt="SEGURE!" _tt2="SUELTA"
+_tt="SEGURE!" _tt2="SOLTE"
 break;
 }
 translated[0]=_tt
@@ -415,7 +415,7 @@ translated[3]="ONCE MORE AND PILEDRIVE EM' WITH"
 switch(global.Language)
 {
 case 1: ///Portuguese
-translated[0]="AGARRAR"
+translated[0]="AGARRAR◄"
 translated[1]="VUELVE A AGARRARLOS Y LÁNZALOS CON"
 translated[2]="AIRE" 
 translated[3]="UNA VEZ MÁS Y APLÁSTALOS CON UN PILEDRIVER CON"
@@ -612,6 +612,9 @@ tutorialtext="A'IGHT. BEAT UP BAGGY HERE TO YOUR HEART'S CONTENT."
 
 switch(global.Language)
 {
+	case 1:
+	tutorialtext="MUY BIEN. AHORA GOLPEA A BAGGY TODO LO QUE QUIERAS."
+	break;
 case 2: ///Portuguese
 tutorialtext="BELEZA. PODE BATER NESSE BOCÓ AQUI ATÉ SE CANSAR."
 break;

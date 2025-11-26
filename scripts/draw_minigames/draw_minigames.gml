@@ -6,6 +6,7 @@ if room=rm_minigames
 {//global.MinigameSel3=0
 global.ArenaType=0
 
+var _tta0="LOCKED"
 var _tta1="SELECT A MODE"
 var _tta2="EXTRAS"
 var _tta3="MULTI"
@@ -291,8 +292,7 @@ draw_set_alpha(1)
 
 draw_rectangle(0,240-10-4-10+2+8-2-32,320,240-10-4+2+8-2-32,false)
 draw_set_alpha(1)draw_set_color(c_white)
-var _ttt=MenuText if MenuText!="LOCKED" _ttt=_tt0
-else
+var _ttt=MenuText if MenuText="LOCKED"
 {
 if global.Language=0 _ttt="LOCKED"
 if global.Language=1 _ttt="ENCERRADO"

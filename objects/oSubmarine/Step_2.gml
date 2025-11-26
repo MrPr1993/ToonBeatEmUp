@@ -9,7 +9,14 @@ wobbleX=lerp(wobbleX,1,0.1)
 wobbleY=lerp(wobbleY,1,0.1)
 
 if anim=9999 ////Dead
-{if AnimFrame=0 {scopespr=spr_submarine_scope_dead specialcheck0=1 specialcheck1=0}
+{if AnimFrame=0 {oControl.quakeFXTime=10 PlaySound(snd_explosion)  scopespr=spr_submarine_scope_dead specialcheck0=1 specialcheck1=0
+	dust_make(x,y-3,z-25,-1,0,0)
+dustmk.sprite_index=spr_explosion2
+dust_make(x-32,y-3,z-25,0,0,-1)
+dustmk.sprite_index=spr_explosion2
+dust_make(x+32,y-3,z-25,1,0,0)
+dustmk.sprite_index=spr_explosion2
+	}
 selfatk.atk=0 sprite_index=spr_submarine 
 wobbleX=specialcheck0 wobbleY=wobbleX
 

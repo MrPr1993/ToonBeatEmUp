@@ -176,4 +176,14 @@ weaponanim(weaponspr,weaponIndex,16,-22,90,weaponcolor)
 	
 
 
-
+if sprite_index=DizzySpr
+{
+if image_index=clamp(image_index,0,0.9)
+weaponanim(weaponspr,weaponIndex,11,-15,0,weaponcolor)
+if image_index=clamp(image_index,1,1.9)
+weaponanim(weaponspr,weaponIndex,13,-14,0,weaponcolor)
+if image_index=clamp(image_index,2,2.9)
+weaponanim(weaponspr,weaponIndex,11,-15,0,weaponcolor)
+if image_index=clamp(image_index,3,3.9)
+weaponanim(weaponspr,weaponIndex,10,-15,0,weaponcolor)
+}

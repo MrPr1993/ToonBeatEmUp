@@ -1488,6 +1488,9 @@ var _t4="PRESS START TO PLAY"
 
 switch(global.Language)
 {
+case 1: ///Portuguese
+_t4="PRESIONA START PARA JUGAR"
+break;
 case 2: ///Portuguese
 _t4="PRESSIONE START PARA JOGAR"
 break;
@@ -1516,6 +1519,9 @@ var _t5="QUITTING..."
 
 switch(global.Language)
 {
+case 1:
+_t5="SALIENDO..."
+break;
 case 2:
 _t5="SAINDO…"
 break;

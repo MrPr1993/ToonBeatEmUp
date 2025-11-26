@@ -14,7 +14,7 @@ newscript=function()
 frame_set(0,0,framespd)
 frame_set(1,1,framespd)
 frame_set(2,0,framespd)
-if specialcheck[0]=10
+if specialcheck[0]=10 or specialcheck[0]=15
 frame_set(3,6,framespd)
 else
 frame_set(3,2,framespd)

@@ -17,7 +17,7 @@ enemyscript=animsetup_enemy
 
 pointshit=10
 points=100
-
+specialBossState=1
 rangeAtk=400
 
 OneAttack=2

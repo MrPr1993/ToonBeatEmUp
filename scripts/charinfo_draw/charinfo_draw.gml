@@ -289,7 +289,7 @@ var tex_start_x = ( (ceil(0))+ padding-8);
 var tex_start_y = ( (ceil(0))+ padding-8);
 //draw_text(146+2-144,32+52+32+8,desc) //Description 188
 //desc="aaafseroenre4235"
-draw_text_ext(tex_start_x+146+2-144-4,tex_start_y+32+52+32+8,string_upper(desc),8,136) //Description 188
+draw_text_ext(tex_start_x+146+2-144-4,tex_start_y+32+52+32,string_upper(desc),8,136) //Description 188
 draw_text_ext_transformed(4,240-24,string_upper(dataabilities),8,102,0.75,1,0)
 draw_text_transformed(4,240-32,string_upper(dataabilitiesB),0.75,1,0)
 

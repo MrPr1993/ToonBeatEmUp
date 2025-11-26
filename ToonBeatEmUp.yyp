@@ -3275,6 +3275,7 @@
     {"id":{"name":"spr_ghost_axeobj","path":"sprites/spr_ghost_axeobj/spr_ghost_axeobj.yy",},},
     {"id":{"name":"spr_ghost_burned","path":"sprites/spr_ghost_burned/spr_ghost_burned.yy",},},
     {"id":{"name":"spr_ghost_charge","path":"sprites/spr_ghost_charge/spr_ghost_charge.yy",},},
+    {"id":{"name":"spr_ghost_disappear","path":"sprites/spr_ghost_disappear/spr_ghost_disappear.yy",},},
     {"id":{"name":"spr_ghost_dizzy","path":"sprites/spr_ghost_dizzy/spr_ghost_dizzy.yy",},},
     {"id":{"name":"spr_ghost_elec","path":"sprites/spr_ghost_elec/spr_ghost_elec.yy",},},
     {"id":{"name":"spr_ghost_flat","path":"sprites/spr_ghost_flat/spr_ghost_flat.yy",},},

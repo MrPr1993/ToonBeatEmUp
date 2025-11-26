@@ -373,6 +373,23 @@ var _t14="RESET"
 var _t15="DISCONNECT"
 switch(global.Language)
 {
+case 1: ///Portuguese
+_t1="PRESIONA\nQUALQUIER\nTECLA PARA\nCONECTAR!"
+_t2="NUEVO ARCHIVO"
+_t3="NUEVO JUEGO"
+var _t4="SALTAR"
+var _t5="ATACAR"
+var _t6="ESPECIAL"
+var _t7="SHOWTIME"
+var _t8="RETALIAR"
+var _t9="GESTO"
+var _t10="INTERACTUAR"
+var _t11="CARGA"
+var _t12="AGTA. "
+var _t13="AGTA.  "
+var _t14="RESET"
+var _t15="DESCONECTAR"
+break;
 case 2: ///Portuguese
 _t1="PRESSIONE\nQUALQUER\nTECLA PARA\nCONECTAR!"
 _t2="NÃO ARQUIVO"
@@ -389,6 +406,7 @@ var _t12="AGTA. "
 var _t13="AGTA.  "
 var _t14="RESET"
 var _t15="DESCONECTAR"
+break;
 }
 
 if !(input_player_connected(_controlno))

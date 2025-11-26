@@ -49,8 +49,8 @@ btnT3="FOR A SHOWTIME IF BAR'S FULL!"
 
 switch(global.Language)
 {
-case 1: btnT1="PRESIONA" btnT3="PARA UN SHOWTIME SI LA BARRA ESTÁ LLENA!" break;
-case 2: btnT1="PRESSIONE" btnT3="PARA O SHOWTIME SE A BARRA ESTIVER CHEIA!" break;
+case 1: btnT1="PRESIONA" btnT3="PARA UN SHOWTIME SI\nLA BARRA ESTÁ LLENA!" break;
+case 2: btnT1="PRESSIONE" btnT3="PARA O SHOWTIME SE\nA BARRA ESTIVER CHEIA!" break;
 }
 
 }
