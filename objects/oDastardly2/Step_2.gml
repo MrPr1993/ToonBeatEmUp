@@ -51,7 +51,7 @@ if AnimFrame=200
 PlaySound(snd_fall)
 drop=instance_create_depth(x,y+1,-1,oCameoChar)
 drop.anim=9999 drop.z=z-240
-drop.sprite_index=spr_barrel
+drop.sprite_index=spr_finaldebris
 }
 
 if AnimFrame>200 and AnimFrame<9999
@@ -66,7 +66,7 @@ AnimFrame=10000 sprite_index=mask_none shadow=mask_none hasShadow=0
 dor1=instance_create_depth(drop.x,drop.y,0,oBarrel)
 dor1.z=drop.z
 with dor1 
-{sprite_index=spr_barrel image_index=1
+{sprite_index=spr_finaldebris image_index=1
 image_xscale=1 solid=false hit=1 ground=0 zSpeed=-8 hspeed=0 mask_index=mask_none
 sentflying=0 image_index=1 alarm[0]=2}
 with drop instance_destroy()

@@ -1,6 +1,6 @@
 room_speed=60
 
-global.CanGlobalBeta=1 //////////SET TO 0 TO DEACTIVATE BETA MODE
+global.CanGlobalBeta=0 //////////SET TO 0 TO DEACTIVATE BETA MODE
 
 gamever="V.1.0"
 
@@ -633,7 +633,7 @@ enemyShowTime=0
 if !variable_global_exists("timefont")
 {
 global.timefont=font_add_sprite_ext(spr_timefont, "0123456789", false, 0);
-global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,&△◯╳◻Ñ¡ÁÉÍÓÚÀÈÌÒÙÃẼĨÕŨÂÊÎÔÛËͶЫЭюЯбвГДЖзкЛмнптфЦЧШЩЪьÇç", false, 0);
+global.scorefont=font_add_sprite_ext(spr_scorefont, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ()_/\""+"'.✰-+%©∞?!:▲►▼◄$,&△◯╳◻Ñ¡ÁÉÍÓÚÀÈÌÒÙÃẼĨÕŨÂÊÎÔÛËͶЫЭюЯбвГДЖзкЛмнптфЦЧШЩЪьÇç¿", false, 0);
 }
 
 

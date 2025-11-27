@@ -49,14 +49,14 @@ switch(global.Language)
 {
 case 1:
 var _t1="PREPÁRATE PARA CORRER!"
-var _t2="ATACAR  /nPARA CORRER"
+var _t2="ATACAR  \nPARA CORRER"
 var _t3="  SALTAR\nPARA EVITAR\nOBSTÁCULOS"
 var _t4="BIEN"
 var _t5="PUNTOS"
 break;
 case 2:
 var _t1="PREPARE-SE PARA CORRER!"
-var _t2="ATACAR  /nPARA CORRER"
+var _t2="ATACAR  \nPARA CORRER"
 var _t3="  SALTAR\nPARA EVITAR\nOBSTÁCULOS"
 var _t4="BOM"
 var _t5="PONTUAÇÃO"

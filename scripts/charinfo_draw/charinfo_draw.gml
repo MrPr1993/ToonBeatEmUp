@@ -282,7 +282,7 @@ draw_set_halign(fa_right)
 //draw_text_transformed(320-2-144,32+26,descright,0.75,1,0) //Name
 draw_set_halign(fa_left)
 draw_text_transformed(146-144,32+26+4,string_upper(descleft),0.75,1,0) //Name
-draw_text_transformed(146-144,32+26+32+8+4,string_upper(descright),0.75,1,0) //Name
+draw_text_transformed(146-144,32+26+32+4,string_upper(descright),0.75,1,0) //Name
 font_size = font_get_size(global.scorefont);
 var padding = (font_size )
 var tex_start_x = ( (ceil(0))+ padding-8);

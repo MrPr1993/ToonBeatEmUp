@@ -2765,6 +2765,7 @@
     {"name":"spr_filmstage","order":74,"path":"sprites/spr_filmstage/spr_filmstage.yy",},
     {"name":"spr_filmstage2","order":75,"path":"sprites/spr_filmstage2/spr_filmstage2.yy",},
     {"name":"spr_filmstage3","order":96,"path":"sprites/spr_filmstage3/spr_filmstage3.yy",},
+    {"name":"spr_finaldebris","order":71,"path":"sprites/spr_finaldebris/spr_finaldebris.yy",},
     {"name":"spr_fire_ring","order":19,"path":"sprites/spr_fire_ring/spr_fire_ring.yy",},
     {"name":"spr_fire_ringb","order":21,"path":"sprites/spr_fire_ringb/spr_fire_ringb.yy",},
     {"name":"spr_fish0","order":2,"path":"sprites/spr_fish0/spr_fish0.yy",},

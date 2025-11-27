@@ -310,7 +310,7 @@ break;
 
 case 2: ///Portuguese
 shopName="TROCA DE PALETA"
-shopDesc="CANSADA DAS SUAS CORES? VOCÊ\nPODE MUDÁ-LAS COM\nISTO!"
+shopDesc="CANSADA DAS\nSUAS CORES? VOCÊ\nPODE MUDÁ-LAS COM\nISTO!"
 break;
 }
 if global.UnlockAltPal=0 shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}

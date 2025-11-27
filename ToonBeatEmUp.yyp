@@ -3163,6 +3163,7 @@
     {"id":{"name":"spr_filmstage","path":"sprites/spr_filmstage/spr_filmstage.yy",},},
     {"id":{"name":"spr_filmstage2","path":"sprites/spr_filmstage2/spr_filmstage2.yy",},},
     {"id":{"name":"spr_filmstage3","path":"sprites/spr_filmstage3/spr_filmstage3.yy",},},
+    {"id":{"name":"spr_finaldebris","path":"sprites/spr_finaldebris/spr_finaldebris.yy",},},
     {"id":{"name":"spr_fire_ring","path":"sprites/spr_fire_ring/spr_fire_ring.yy",},},
     {"id":{"name":"spr_fire_ringb","path":"sprites/spr_fire_ringb/spr_fire_ringb.yy",},},
     {"id":{"name":"spr_fish0","path":"sprites/spr_fish0/spr_fish0.yy",},},

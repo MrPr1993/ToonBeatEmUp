@@ -170,8 +170,8 @@ trainingdraw=function() {with oControl draw_buttontext(240+72,64+16-8+8,8,comman
 } break;
 case 4: 
 {
-var _tt="DO A JUMP AND KICK! STAY STILL."
-if oPlayer.character=2 _tt="DO A FLYING MOVE! STAY STILL."
+var _tt="DO A JUMP AND KICK WHILE MOVING."
+if oPlayer.character=2 _tt="DO A FLYING MOVE WHILE MOVING."
 switch(global.Language)
 {
 case 1: ///Portuguese
@@ -366,6 +366,7 @@ if oPlayer.character=2 _tt="PARA AGARRAR-LOS, SE APROXIME E DÊ UM BOM ABRAÇO"
 var _tt2="AGARRÃO"
 break;
 }
+tutorialtext=_tt
 translated[0]=_tt2
 
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
@@ -394,8 +395,8 @@ _tt="PEGUE-OS NOVAMENTE E ESMAGUE-OS COM"
 _tt2="AGARRÃO►O◄"
 break;
 }
-translated[0]=_tt
-translated[1]=_tt2
+translated[1]=_tt
+translated[0]=_tt2
 
 
 if oPlayer.character=2 {specialcheck[2]=38 tutorialtext=translated[0] specialcheck[1]=translated[1]}
@@ -407,29 +408,29 @@ with oTrainer {trainingreact(1)}}} break;
 
 case 13: {specialcheck[2]=38 
 
-translated[0]="GRAB◄"
-translated[1]="ONCE MORE AND THROW EM' BACKWARDS WITH"
+translated[1]="GRAB◄"
+translated[0]="ONCE MORE AND THROW EM' BACKWARDS WITH"
 translated[2]="AIR" 
 translated[3]="ONCE MORE AND PILEDRIVE EM' WITH"
 
 switch(global.Language)
 {
 case 1: ///Portuguese
-translated[0]="AGARRAR◄"
-translated[1]="VUELVE A AGARRARLOS Y LÁNZALOS CON"
+translated[1]="AGARRAR◄"
+translated[0]="VUELVE A AGARRARLOS Y LÁNZALOS CON"
 translated[2]="AIRE" 
 translated[3]="UNA VEZ MÁS Y APLÁSTALOS CON UN PILEDRIVER CON"
 break;
 case 2: ///Portuguese
-translated[0]="AGARRÃO◄"
-translated[1]="REPITA E OS ARREMEÇE PARA TRÁS COM"
+translated[1]="AGARRÃO◄"
+translated[0]="REPITA E OS ARREMEÇE PARA TRÁS COM"
 translated[2]="NO AR" 
 translated[3]="REPITA E DÊ UM PILEDRIVE COM"
 break;
 }
 
-oTrainer.specialcheck[1]=translated[0]
-tutorialtext=translated[2]
+oTrainer.specialcheck[1]=translated[1]
+tutorialtext=translated[0]
 if oPlayer.character=2 {specialcheck[2]=37 oTrainer.specialcheck[1]=translated[2] tutorialtext=translated[3]}
 with oControl specialcommanddraw=function() {var commandMul=0; if global.ConsoleType="XBOX" commandMul=0; if global.ConsoleType="PS" commandMul=1; if global.ConsoleType="SWITCH" commandMul=2;
 draw_buttontext(244+60,80,8,oTrainer.specialcheck[1],spr_commandbutton,6+6*commandMul,"","")};
