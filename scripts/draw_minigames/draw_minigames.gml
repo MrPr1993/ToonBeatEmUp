@@ -296,7 +296,7 @@ var _ttt=MenuText if MenuText="LOCKED"
 {
 if global.Language=0 _ttt="LOCKED"
 if global.Language=1 _ttt="ENCERRADO"
-if global.Lanugage=2 _ttt="BLOQUEADO"
+if global.Language=2 _ttt="BLOQUEADO"
 }
 
 draw_text(round(160),240-10-4-32,_ttt)

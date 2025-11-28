@@ -1223,6 +1223,33 @@ draw_sprite(spr_multisetting,0,160+p5.introtextadd-640,round(32+charselLerp))
 
 charselectgo=0;
 
+var _t1="LOCKED"
+var _t2="RANDOM"
+var _t3="HEALTH LEVEL "
+var _t4="LIVES "
+var _t5="TIME "
+var _t6="STAGE SELECT"
+
+switch(global.Language)
+{
+case 1: ///Portuguese
+_t1="ENCERRADO"
+_t2="RANDOM"
+_t3="NIVEL DE SALUD "
+_t4="VIDAS "
+_t5="TIEMPO "
+_t6="SELECCIÓN DE ETAPA"
+break;
+case 2: ///Portuguese
+_t1="BLOQUEADO"
+_t2="ALEATÓRIO"
+_t3="NÍVEL DE SAÚDE "
+_t4="VIDAS "
+_t5="TEMPO "
+_t6="SELECCIÓN DE PALCO"
+break;
+}
+
 with p5
 {
 if oControl.deletefile=0
@@ -1230,7 +1257,7 @@ if oControl.deletefile=0
 if oControl.charsetting=0
 {
 if key_up_pressed{if oControl.multiVSsetting=0 oControl.multiVSsetting=3 else oControl.multiVSsetting-=1 PlaySound(snd_select)}
-if -key_down_pressed{if oControl.multiVSsetting=2 oControl.multiVSsetting=3 else oControl.multiVSsetting+=1 PlaySound(snd_select)}
+if -key_down_pressed{if oControl.multiVSsetting=3 oControl.multiVSsetting=0 else oControl.multiVSsetting+=1 PlaySound(snd_select)}
 ////HP Settings
 if oControl.multiVSsetting=0
 {
@@ -1262,30 +1289,7 @@ if key_right_pressed {if global.MultiStage=18 global.MultiStage=-1 else global.M
 }
 }
 
-var _t1="LOCKED"
-var _t2="RANDOM"
-var _t3="HEALTH LEVEL "
-var _t4="LIVES "
-var _t5="TIME "
-var _t6="STAGE SELECT"
 
-switch(global.Language)
-{
-case 1: ///Portuguese
-_t1="ENCERRADO"
-_t2="RANDOM"
-_t3="NIVEL DE SALUD "
-_t4="VIDAS "
-_t5="TIEMPO "
-_t6="SELECCIÓN DE ETAPA"
-case 2: ///Portuguese
-_t1="BLOQUEADO"
-_t2="ALEATÓRIO"
-_t3="NÍVEL DE SAÚDE "
-_t4="VIDAS "
-_t5="TEMPO "
-_t6="SELECCIÓN DE PALCO"
-}
 
 diftext=_t1
 global.StageGoing=rm_arena
