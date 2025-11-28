@@ -349,7 +349,7 @@ finalStage=oControl.finalStage
 
 
 //////////////World Tour Mode
-if global.AllStageMode
+if global.AllStageMode and global.StageClear=1
 {
 var stnext=rm_stage2
 switch(room)

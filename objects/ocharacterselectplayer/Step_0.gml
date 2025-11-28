@@ -222,7 +222,8 @@ else oControl.characterSelReady=0
 
 if charaddedbuffer!=0 charaddedbuffer-=1
 
-if key_start or keyboard_check_pressed(vk_enter)
+if !keyboard_check(vk_escape)
+if (key_start) or keyboard_check_pressed(vk_enter)
 if isReady!=0 and charbuffer=0 {PlaySound(snd_picked) oCharacterSelectPlayer.canControl=0
 	oControl.alarm[4]=60	 ////PLAY GAME
 	oCharacterSelectPlayer.hspeed=-16

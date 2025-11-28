@@ -809,8 +809,10 @@ switch(global.Language)
 {
 case 1: ///Espanol
 _t1="PRESIONA START"
+break;
 case 2: ///Portuguese
 _t1="PRESSIONE START"
+break;
 }	
 
 draw_text(160,184,string_hash_to_newline(_t1))
@@ -1109,14 +1111,14 @@ if global.Cheat[15] global.Continues=-1;
 else
 {
 var _t1="DIFFICULTY CHANGE IS DISABLED"
-var _t2="¿BORRAR ARCHIVO?"
+var _t2="DELETE FILE?"
 var _t3="✰NO YES"
 var _t4=" NO✰YES"
 switch(global.Language)
 {
 case 1: ///Portuguese
 var _t1="EL CAMBIO DE DIFICULTAD ESTÁ DESACTIVADO"
-var _t2="BORRAR ARCHIVO?"
+var _t2="¿BORRAR ARCHIVO?"
 var _t3="✰NO  SI"
 var _t4="NO  ✰SI"
 break;
@@ -1142,17 +1144,17 @@ if deletefile=1 {diftext2=_t2
 
 if oControl.multiVSsetting=1
 {
-diftext="FRIENDLY FIRE" 
+diftext="FRIENDLY FIRE " 
 diftext2="THE OTHER DIVAS CAN GET HIT BY YOUR OWN MOVES.\n(SHOWTIME WON'T APPLY TO THEM)"
 
 switch(global.Language)
 {
 case 1: ///Portuguese
-diftext="FUEGO AMIGO"
+diftext="FUEGO AMIGO "
 diftext2=" LAS OTRAS DIVAS PUEDEN SER GOLPEADAS POR TUS PROPIOS MOVIMIENTOS.\n(SHOWTIME NO SE APLICA A ELLAS)"
 break;
 case 2: ///Portuguese
-diftext="FOGO AMIGO"
+diftext="FOGO AMIGO "
 diftext2="DIVAS PODEM SOFRER ATAQUES DE OUTRAS DIVAS.\n(EXCETO ESPETÁCULO)."
 break;
 }	
@@ -1437,7 +1439,7 @@ draw_sprite(spr_characterselecttext,0,160+p5.introtextadd,round(32+charselLerp))
 draw_set_halign(fa_left)
 
 
-var _t1="FRIENDLY FIRE" 
+var _t1="FRIENDLY FIRE " 
 var _t2="OFF"
 var _t3="ON"
 var _t4="PRESS START TO PLAY"
@@ -1446,14 +1448,14 @@ var _t5="QUITTING..."
 switch(global.Language)
 {
 case 1: ///Portuguese
-_t1="FUEGO AMIGO"
+_t1="FUEGO AMIGO "
 _t2="ACTIVADO"
 _t3="DESACTIVADO"
 _t4="PRESIONA START PARA JUGAR"
 _t5="SALIENDO..."
 break;
 case 2: ///Portuguese
-_t1="FOGO AMIGO"
+_t1="FOGO AMIGO "
 _t2="ATIVADO"
 _t3="DESATIVADO"
 _t4="PRESSIONE START PARA JOGAR"

@@ -25,6 +25,7 @@ DeathCry=snd_harpy2
 //hoverZ=0
 
 HitGround=snd_hitgroundheavy
+
 isBoss=1 BossTag=1
 specialBossState=1
 offScreen=0

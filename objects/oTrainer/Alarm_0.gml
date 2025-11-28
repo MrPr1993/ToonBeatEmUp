@@ -378,21 +378,21 @@ with oTrainer {trainingreact(1)}}} break;
 case 12: {	 specialcheck[2]=37
 specialcheck[1]="GRAB►"
 tutorialtext="GRAB EM' AGAIN AND THROW WITH"
-var _tt="GRAB EM' AGAIN AND SLAM EM' WITH"
-var _tt2="GRAB►O◄"
+var _tt2="GRAB EM' AGAIN AND SLAM EM' WITH"
+var _tt="GRAB►O◄"
 switch(global.Language)
 {
 case 1: ///Portuguese
 specialcheck[1]="AGARRAR►"
 tutorialtext="VUELVE A AGARRARLOS Y LÁNZALOS CON"
-_tt="UNA VEZ MÁS, Y LÁNZALOS HACIA ATRÁS CON"
-_tt2="AGARRAR►O◄"
+_tt2="UNA VEZ MÁS, Y LÁNZALOS HACIA ATRÁS CON"
+_tt="AGARRAR►O◄"
 break;
 case 2: ///Portuguese
 specialcheck[1]="AGARRÃO►"
 tutorialtext="AGARRE-OS DE NOVO E ARREMEÇE COM"
-_tt="PEGUE-OS NOVAMENTE E ESMAGUE-OS COM"
-_tt2="AGARRÃO►O◄"
+_tt2="PEGUE-OS NOVAMENTE E ESMAGUE-OS COM"
+_tt="AGARRÃO►O◄"
 break;
 }
 translated[1]=_tt

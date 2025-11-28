@@ -207,12 +207,14 @@ if object_index=oContinueScreen if room=rm_stagefinal if stageClear=1
 break;
 
 case 30: featname="FINAL" ///Clear arcade mode
+if global.MenuGlobal=0
 if object_index=oContinueScreen if finalStage if stageClear=1
 {//if perfecthp
 	setfeats=1}
 break;
 
 case 31: featname="HARDMODE" ///Clear arcade mode on very hard
+if global.MenuGlobal=0
 if object_index=oContinueScreen if room=rm_stagefinal and global.Difficulty>=4 if stageClear=1
 {//if perfecthp
 	setfeats=1}
@@ -337,6 +339,7 @@ setfeats=1;
 break;
 
 case 44: //////World Tour Mode
+if global.MenuGlobal=0
 if object_index=oContinueScreen if room=rm_stagefinal and global.AllStageMode if stageClear=1 setfeats=1;
 break;
 //Diva Survivor
