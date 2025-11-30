@@ -9,6 +9,8 @@
 //instance_destroy();
 //}
 
+if global.Cheat[9] powhp=0;
+
 showmash=0
 
 if hp=0 and dead with oControl nodeath=0;

@@ -1,5 +1,6 @@
 ///Special Attack
 function player_special() {
+if global.Cheat[9]=1 powhp=0
 
 	if pow>4 
 	{

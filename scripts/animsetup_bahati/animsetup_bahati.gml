@@ -29,7 +29,7 @@ function animsetup_bahati() {
 	///Hit Sprite Animation Setup
 	defMask=spr_shadow
 	if ThrownSpr!=spr_bahati_hit
-	{
+	{flashcolor=c_yellow//make_colour_rgb(239,222, 0)
 	ThrownSpr=spr_bahati_hit
 	BurnSpr=spr_bahati_burned
 	FrozenSpr=spr_bahati_frozen
@@ -1393,7 +1393,7 @@ weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 
 	atkcol_set(0,0,0,4.45,4.45,16) MoveType=1 damage=0.24
 	
-	frame_set(0,0,0.1)
+	frame_set(0,0,0.05)
 	frame_set(1,1,0.05) if AnimFrame=2 
 	{PlaySound(snd_bahati12)  PlaySound(snd_hitgroundheavy)
 	oControl.quakeFXTime=4

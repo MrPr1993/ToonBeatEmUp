@@ -15,15 +15,15 @@ customadd2="Special/custompalette4.png";}
 controller_setup()
 
 
-if key_shield_pressed if pickedcolor=0
-if SelectChar=0 SelectChar=1 else SelectChar=0
+//if key_X if pickedcolor=0
+//if SelectChar=0 SelectChar=1 else SelectChar=0
 
 ////Reset color
 if SelectChar=0
 {
 
 
-if key_super{	////RESET COLOR
+if key_Y{	////RESET COLOR
 surface_resize(application_surface,320,240)
 surface_save_part(application_surface,customadd2,0,0,32,24)
 surface_resize(application_surface,320,240)
@@ -33,8 +33,8 @@ surface_free(application_surface)
 if pickedcolor=0
 {if key_B or keyboard_check_pressed(vk_escape) room_goto(rm_minigames)
 	
-if key_right_pressed if current_pal=31 current_pal=1 else current_pal+=1
-if -key_left_pressed if current_pal=1 current_pal=31 else current_pal-=1
+if key_right_pressed if current_pal=31 {SelectChar=1 } else current_pal+=1
+if -key_left_pressed if current_pal=1 {SelectChar=1} else current_pal-=1
 
 if key_up_pressed if paletterow=0 paletterow=23 else paletterow-=1
 if -key_down_pressed if paletterow=23 paletterow=0 else paletterow+=1
@@ -43,7 +43,7 @@ if key_A pickedcolor=1
 }
 else
 {
-SelectAll=key_shield
+SelectAll=key_X
 
 if SelectAll=0
 {	
@@ -124,9 +124,10 @@ sprite_replace(customadd,customadd2,0,0,0,0,0)
 }
 else
 {
-if key_B SelectChar=0
-if key_right_pressed if character=3 character=0 else character+=1
-if -key_left_pressed if character=0 character=3 else character-=1
+if -key_left_pressed {SelectChar=0 current_pal=31}
+if key_right_pressed {SelectChar=0 current_pal=1}
+if key_up_pressed if character=3 character=0 else character+=1
+if -key_down_pressed if character=0 character=3 else character-=1
 }
 
 if character=0 {name="VIVA" sprite_index=spr_viva_stand}

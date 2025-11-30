@@ -29,7 +29,7 @@ function animsetup_viva() {
 	ScreamSnd=snd_VivaScream
 	
 	if 	ThrownSpr!=spr_viva_hit
-	{
+	{flashcolor=c_aqua//make_colour_rgb(57, 173, 255)
 	ThrownSpr=spr_viva_hit
 	BurnSpr=spr_viva_burned
 	FrozenSpr=spr_viva_frozen
@@ -1251,13 +1251,13 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 	HitForceZ=-4
 
 
-	damage=0.5
+	damage=0.2
 
 	sprite_index=spr_viva_charge
 
 	atkcol_set(0,0,0,4,3,100) MoveType=3 damage=0.2
 
-	frame_set(0,0,0.1)
+	frame_set(0,0,0.05)
 	frame_set(1,1,0.2) if AnimFrame=2 
 	{PlaySound(snd_viva6) PlaySound(snd_thunder) PlaySound(snd_hitground)  PlaySoundNoStack(snd_shocked2)
 	oControl.quakeFXTime=8

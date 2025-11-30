@@ -6,6 +6,11 @@ function character_setup() {
 	
 	colorshade_setup()
 	
+flashcolor=c_red;
+flashadd=0;
+flashcheck=0;
+flashtime=0
+	
 counterMove=-1;
 counterNum=3;
 counterBuffer=0;

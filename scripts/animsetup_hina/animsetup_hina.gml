@@ -27,7 +27,7 @@ function animsetup_hina() {
 	///Hit Sprite Animation Setup
 	defMask=mask_small
 	if 	ThrownSpr!=spr_hina_hit
-	{
+	{flashcolor=c_red//make_colour_rgb(247,008, 33)
 	ThrownSpr=spr_hina_hit
 	BurnSpr=spr_hina_burned
 	FrozenSpr=spr_hina_frozen
@@ -1236,9 +1236,9 @@ weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 
 	sprite_index=spr_hina_charge
 		
-	atkcol_set(161,0,31,7.55,1,57) MoveType=5 damage=0.2
+	atkcol_set(161,0,31,7.55,1,57) MoveType=5 damage=0.18
 
-	frame_set(0,0,0.1)
+	frame_set(0,0,0.05)
 	frame_set(1,1,0.1) if AnimFrame=2 
 	{PlaySound(snd_hina5) PlaySound(snd_flame)
 	oControl.quakeFXTime=8

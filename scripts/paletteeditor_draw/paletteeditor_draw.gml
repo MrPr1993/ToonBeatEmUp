@@ -22,7 +22,10 @@ pal_swap_set(customadd,current_pal,false);
 draw_sprite(sprite_index,0,320-33,160)
 
 shader_reset()
-
+draw_set_alpha(0.5+0.5*SelectChar)
+draw_sprite(spr_scorefont,52,320-8,160-96)
+draw_sprite(spr_scorefont,54,320-8,160)
+draw_set_alpha(1)
 TotalColor=surface_getpixel(application_surface,current_pal,paletterow);
 var pixelget=surface_getpixel(application_surface,current_pal,paletterow);
 
@@ -81,7 +84,9 @@ draw_set_halign(fa_left)
 
 draw_command(9)
 
-if key_super{	////RESET COLOR
+if key_B or keyboard_check_pressed(vk_escape) room_goto(rm_minigames)
+
+if key_Y if SelectChar=0{	////RESET COLOR
 //draw_sprite_part_ext(customadd,0,0,0+paletterow-1,1,paletterow,1*current_pal,paletterow,1,1,c_white,1)
 
 draw_sprite_part_ext(customadd,0,0,0,1,24,1*current_pal,0,1,1,c_white,1)

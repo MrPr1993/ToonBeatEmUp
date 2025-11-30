@@ -30,7 +30,8 @@ function animsetup_sofia() {
 	///Hit Sprite Animation Setup
 	defMask=mask_small
 if 	ThrownSpr!=spr_sofia_hit
-{
+{flashcolor=c_green//make_colour_rgb(0, 189, 90)
+	
 	ThrownSpr=spr_sofia_hit
 	BurnSpr=spr_sofia_burned
 	FrozenSpr=spr_sofia_frozen
@@ -1234,14 +1235,14 @@ if AnimFrame>3.5 {canmove=1 atk=0}
 	HitForceZ=-4
 
 
-	damage=0.5
+	damage=0.16
 
 if AnimFrame<1
 	sprite_index=spr_sofia_charge
 
 	atkcol_set(0,0,0,3.5,2,100) MoveType=2 damage=0.18
 
-	frame_set(0,0,0.1)
+	frame_set(0,0,0.05)
 	frame_set(1,1,0.2) if AnimFrame=2 
 	{PlaySound(snd_sofia3) PlaySound(snd_swing5)
 	oControl.quakeFXTime=8

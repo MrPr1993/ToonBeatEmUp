@@ -47,4 +47,7 @@ else
 
 }
 else
+{
+
 timeline_position-=1;
+}

@@ -3,6 +3,22 @@ function draw_character() {
 	if specialFX=0
 	pal_swap_set(my_pal_sprite,current_pal,false);
 
+if object_index=oPlayer
+{
+var _flashR=colour_get_red(flashcolor)
+var _flashB=colour_get_blue(flashcolor)
+var _flashG=colour_get_green(flashcolor)	
+_flashR+=lengthdir_x(0.5,current_time)
+_flashB+=lengthdir_x(0.5,current_time)
+_flashG+=lengthdir_x(0.5,current_time)
+_flashR=clamp(_flashR,0,0.5)
+_flashB=clamp(_flashB,0,0.5)
+_flashG=clamp(_flashG,0,0.5)
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecRed"),cRed+cGlow+cShadow+cRedAdd+(_flashR*flashadd));
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),cBlue+cGlow+cShadow+cBlueAdd+_flashB*flashadd);
+shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),cGreen+cGlow+cShadow+cGreenAdd+_flashG*flashadd);
+}
+
 ///Body
 if anim=591200
 {

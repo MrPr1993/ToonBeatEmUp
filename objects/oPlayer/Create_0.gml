@@ -6,6 +6,8 @@ charready=0;
 
 gameover=0;
 
+flashcolor=c_blue//make_colour_rgb(57, 173, 255)
+
 nameupdate="";
 
 soldout=0;

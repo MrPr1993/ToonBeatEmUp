@@ -42,6 +42,9 @@ shader_reset()
 draw_set_blend_mode(bm_normal);
 
 
+
+
+
 draw_character()
 
 
@@ -53,6 +56,8 @@ shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecBlue"),-1.0)
 shader_set_uniform_f(shader_get_uniform(Pal_Shader, "vecGreen"),-1.0)	
 }//shader_set(shd_white_sprite);
 //else
+
+
 
 draw_sprite_ext(weaponspr,weaponIndex,round(x+(( (floorPosX[image_index]*floorPos+waistPosX[image_index]*waistPos+headPosX[image_index]*headPos)*SpritePos)*image_xscale+shake*image_xscale+weaponX*(image_xscale*wobbleX))*minimodediv),round(y+trainz+((floorPosY[image_index]*floorPos+waistPosY[image_index]*waistPos+headPosY[image_index]*headPos)*SpritePos+z+extraY+weaponY*wobbleY)*minimodediv),image_xscale,image_yscale,weaponangle+weaponExtraAngle*image_xscale,weaponcolor,image_alpha)
 
@@ -67,6 +72,8 @@ else
 if anim!=202
 {
 if specialFX=1 shader_set(shd_white_sprite);
+
+
 if vehWSpr!=spr_emptyarea
 draw_sprite_ext(vehWSpr,carAnim,round(x+shake*image_xscale),round(y+z),image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 
@@ -93,7 +100,7 @@ draw_sprite_ext(sprite_index,image_index,round(x+shake*image_xscale),round(y+z+e
 pal_swap_reset()
 }
 
-if commandChargeFrame>3
+if commandChargeFrame>30000
 {
 pal_swap_set(spr_playerpal,6,false);
 
