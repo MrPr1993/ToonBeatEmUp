@@ -331,8 +331,9 @@ with actor8 {x=640-32}
 
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "They kinda spread out into my spooky doors... so you should pick which one."}
+cutscenename="ANNAMARI" cutsceneline= "They kinda spread out into my spooky doors... so you should pick which one."
 if global.Language!=0 cutsceneline=languagedialogue[21]
+}
 }
 
 if scenetime=6120

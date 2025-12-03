@@ -6,7 +6,7 @@ oControl.quakeFXTime=10
 
 PlaySound(snd_quicksand)
 
-with oPlayer event_user(11)
+with oPlayer if dead=0 event_user(11)
 	
 qsand1=instance_create_depth(__view_get( e__VW.XView, 0 )+0,176,-1,oFlashFX) with qsand1
 {sprite_index=spr_quicksand image_speed=0.5 alarm[0]=999999 animEnd=0}

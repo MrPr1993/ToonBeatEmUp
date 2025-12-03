@@ -14,12 +14,16 @@ exit;
 	if canBlock=0
 	{if other.HitQuake!=0 oControl.quakeFXTime=other.HitQuake
 		atk=0 selfatk.atk=0
-		
+
+var _d=1
+if global.Cheat[3] and global.NoCheat=0
+_d=2
+
 if (other.hitSource.weaponAttack=1 and isBoss=1)
 or (other.object_index=oProjectile and isBoss=1)
-hp-=(other.damage/(defense+extradefense))/2
+hp-=((other.damage/(defense+extradefense))/2)*_d
 else
-hp-=other.damage/(defense+extradefense)
+hp-=(other.damage/(defense+extradefense))*_d
 
 thrownPlayer=-1 
 

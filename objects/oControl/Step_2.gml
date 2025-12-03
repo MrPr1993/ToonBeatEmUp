@@ -12,17 +12,88 @@
 
 if instance_exists(oPlayer)
 {
-if p1.x>camX+160 and p2.x>camX+160 and p3.x>camX+160 and p4.x>camX+160
+var _s1=1;
+var _s2=1;
+var _s3=1;
+var _s4=1;
+if instance_exists(oPlayer)
+with oPlayer
+{
+
+if !canmove or !ground
+if playerNO=1 {_s1=0 if gameover _s1=1}
+else if playerNO=2 {_s2=0 if gameover _s2=1}
+else if playerNO=3 {_s3=0 if gameover _s3=1}
+else if playerNO=4 {_s4=0 if gameover _s4=1}
+
+//if ContinueSelect!=0
+//if playerNO=1 _s1=1
+//else if playerNO=2 _s2=1
+//else if playerNO=3 _s3=1
+//else if playerNO=4 _s4=1
+}
+
+if _s1//(p1.canmove and p1.ground)
+and _s2//(p2.canmove and p2.ground)
+and _s3//(p3.canmove and p3.ground)
+and _s4//(p4.canmove and p4.ground)
+allPlayersMove=1 else allPlayersMove=0
+
+var _s1=2;
+var _s2=2;
+var _s3=2;
+var _s4=2;
+
+if instance_exists(oPlayer)
+with oPlayer
+{
+if x<oControl.camX+160
+{
+if playerNO=1 _s1=0
+else if playerNO=2 _s2=0
+else if playerNO=3 _s3=0
+else if playerNO=4 _s4=0
+}
+else
+if x<oControl.camX+296
+{
+if playerNO=1 _s1=1
+else if playerNO=2 _s2=1
+else if playerNO=3 _s3=1
+else if playerNO=4 _s4=1
+}
+
+}
+
+//if p1.x>camX+160 and p2.x>camX+160 and p3.x>camX+160 and p4.x>camX+160
+if _s1>=1//(p1.canmove and p1.ground)
+and _s2>=1//(p2.canmove and p2.ground)
+and _s3>=1//(p3.canmove and p3.ground)
+and _s4>=1//(p4.canmove and p4.ground)
 allPlayersMid=1 else allPlayersMid=0
 
-if p1.x>camX+296 and p2.x>camX+296 and p3.x>camX+296 and p4.x>camX+296
+//if p1.x>camX+296 and p2.x>camX+296 and p3.x>camX+296 and p4.x>camX+296
+if _s1=2//(p1.canmove and p1.ground)
+and _s2=2//(p2.canmove and p2.ground)
+and _s3=2//(p3.canmove and p3.ground)
+and _s4=2//(p4.canmove and p4.ground)
 allPlayersEdge=1 else allPlayersEdge=0
 
-if (p1.canmove and p1.ground)
-and (p2.canmove and p2.ground)
-and (p3.canmove and p3.ground)
-and (p4.canmove and p4.ground)
-allPlayersMove=1 else allPlayersMove=0
+//if p1.x>camX+160 and p2.x>camX+160 and p3.x>camX+160 and p4.x>camX+160
+//allPlayersMid=1 else allPlayersMid=0
+
+//if p1.x>camX+296 and p2.x>camX+296 and p3.x>camX+296 and p4.x>camX+296
+//allPlayersEdge=1 else allPlayersEdge=0
+
+//if (p1.canmove and p1.ground and p1.gameover=0)
+//and (p2.canmove and p2.ground and p2.gameover=0)
+//and (p3.canmove and p3.ground and p3.gameover=0)
+//and (p4.canmove and p4.ground and p4.gameover=0)
+//{allPlayersMove=1
+//}else 
+//{allPlayersMove=0
+//}
+
 
 if instance_exists(oPlayerNoControl)
 oPlayerNoControl.anim=instance_nearest(camX+320,0,oPlayer).anim

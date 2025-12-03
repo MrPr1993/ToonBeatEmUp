@@ -682,6 +682,10 @@ arcade_saving(global.StageSave)
 feats_stageunlock()
 feats_check(-1)
 feats_save()
+
+if global.MenuGlobal=0 and global.SaveFileNO!=0
+if file_exists("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini")
+if finalStage=1 { global.SaveNumber=0 file_delete("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini") global.SaveNumber=0}
 }
 
 if global.StageClear=0 global.ArcadeDeath=1

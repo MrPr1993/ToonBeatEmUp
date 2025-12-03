@@ -2,7 +2,7 @@ room_speed=60
 
 global.CanGlobalBeta=0 //////////SET TO 0 TO DEACTIVATE BETA MODE
 
-gamever="V.1.0.0.2"
+gamever="V.1.0.0.3"
 
 if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
 
@@ -836,6 +836,7 @@ enemySpawn2=0
 enemySpawn3=0
 enemySpawn4=0
 
+pcheck[4]=0;
 
 //Newspaper Sequence
 newsBlack=1
@@ -1241,6 +1242,7 @@ alarm[0]=45 ///Time to stop
 
 }
 
+tabcheck[4]=0;
 
 if room=rm_paletteeditor
 instance_create_depth(0,0,-1,oPaletteEditor)

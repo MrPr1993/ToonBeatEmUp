@@ -73,7 +73,19 @@ musicplaystart(msc_training)
 
 newscript=function()
 {scenetime+=1;
+if scenetime<=2
+if global.CutsceneSkip=1 {audio_stop_all() global.CutsceneSkip=0 scenetime=6000
+	
+sprite_index=mask_none
+with oControl
+{
+with actorC1
+{sprite_index=spr_cowboy_stand x-=100 image_index=0 image_speed=0 anim=9999}
+with actorC2
+{sprite_index=spr_cowboy_stand x-=100 image_index=0 image_speed=0 anim=9999}
+}
 
+	}
 if y<=0 y+=0.1
 
 if scenetime=160
@@ -209,20 +221,58 @@ if scenetime=1630
 {scenetime=1644
 with oControl with actor5 {sprite_index=spr_twoheads_talk image_index=0
 	
-with oControl
-{
-timeline_position=5500
-timeline_speed=1
-}
+
 	
 	}
 }
 
 
-if scenetime=clamp(scenetime,1640,1699)
-{scenetime=1644}
+if scenetime=2000//clamp(scenetime,1640,1699)
+{scenetime=6000
+	with oControl
+{
+timeline_position=5800
+timeline_speed=1
+}
+	}
 
+if scenetime=6000
+with oControl
+{
+stageIntro=0 
+	cutscenename=""
+cutsceneline=""
+audio_stop_all()
+hspeed=-16
+//with actorscreen sprite_index=mask_none
+//actorscreen.scenetime=1641
 
+timeline_position=5800
+timeline_speed=1
+
+global.CutsceneSkip=0
+
+with actor1
+{sprite_index=spr_viva_wildtake image_index=0 anim=9999}
+with actor2
+{sprite_index=spr_hina_point image_index=0 anim=9999}
+with actor3
+{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
+with actor4
+{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
+
+with actor5
+{sprite_index=spr_twoheads_talk image_index=0 image_speed=0 anim=9999}
+
+//timeline_position=5901
+//timeline_speed=1
+
+canSkipCutscene=0
+
+cutscenename="VIVA"
+cutsceneline="OH! UH..."
+if global.Language!=0 cutsceneline=languagedialogue[8]
+}
 
 //////	
 
@@ -242,40 +292,9 @@ __view_set( e__VW.XView, 0, SceneY )
 
 
 	
-if global.CutsceneSkip=0 canSkipCutscene=1 else {stageIntro=0 with actorscreen sprite_index=mask_none
-	cutscenename=""
-cutsceneline=""
-audio_stop_all()
+if global.CutsceneSkip=0 canSkipCutscene=1 else {
+	
 
-actorscreen.scenetime=1641
-
-global.CutsceneSkip=0
-
-with actor1
-{sprite_index=spr_viva_wildtake image_index=0 anim=9999}
-with actor2
-{sprite_index=spr_hina_point image_index=0 anim=9999}
-with actor3
-{sprite_index=spr_bahati_cutscene image_index=1 anim=9999}
-with actor4
-{sprite_index=spr_sofia_taunt3 image_index=0 anim=9999}
-
-with actor5
-{sprite_index=spr_twoheads_talk image_index=0 image_speed=0 anim=9999}
-
-with actorC1
-{sprite_index=spr_cowboy_stand x-=100 image_index=0 image_speed=0 anim=9999}
-with actorC2
-{sprite_index=spr_cowboy_stand x-=100 image_index=0 image_speed=0 anim=9999}
-
-timeline_position=5901
-timeline_speed=1
-
-canSkipCutscene=0
-
-cutscenename="VIVA"
-cutsceneline="OH! UH..."
-if global.Language!=0 cutsceneline=languagedialogue[8]
 	}
 
 cutscenePlaying=1
@@ -299,7 +318,7 @@ languagedialogue[7]= "…PERO VIENDO QUE USTEDES SE ENCARGARON DE LA MAYORÍA, L
 languagedialogue[8]="¡OH! EH..."
 
 //cutsceneline=languagedialogue[1]
-//if global.Language!=0 cutsceneline=languagedialogue[1]
+if global.Language!=0 cutsceneline=languagedialogue[1]
 break;	
 
 case 2: ////Portuguese
@@ -318,7 +337,7 @@ languagedialogue[7]="...MAS PARECE QUE SEU BANDO DEU CONTA DESSES MALANDROS, POS
 languagedialogue[8]="AH! ENTÃO..."
 
 //cutsceneline=languagedialogue[1]
-//if global.Language!=0 cutsceneline=languagedialogue[1]
+if global.Language!=0 cutsceneline=languagedialogue[1]
 break;
 }
 

@@ -118,7 +118,7 @@ with oControl {cutscenename="VIVA" cutsceneline="HONESTY?! THAT'S WHAT YOU GOT?!
 
 if scenetime=1200
 {
-with oControl {with actor1 {image_speed=0 image_index=0} with actor3 {image_speed=0.1} cutscenename="BAHATI" cutsceneline="I'M SORRY I DIDN'T THINK SHE COULD ACTUALLY THROW US OFF LIKE THAT EVEN IN THAT STATE!"
+with oControl {with actor1 {image_speed=0 image_index=0} with actor3 {image_speed=0.1 sprite_index=spr_bahati_talk2} cutscenename="BAHATI" cutsceneline="I'M SORRY I DIDN'T THINK SHE COULD ACTUALLY THROW US OFF LIKE THAT EVEN IN THAT STATE!"
 if global.Language!=0 cutsceneline=languagedialogue[5]
 }
 }

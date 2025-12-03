@@ -162,7 +162,7 @@ cutSpr2B=spr_viva_cutB2
 controlNO=1
 
 GameOver=1
-
+gameover=0
 //(floorPosX+waistPosX+headPosX)*SpritePos
 //(floorPosY+waistPosY+headPosY)*SpritePos
 
@@ -175,7 +175,7 @@ hasAI=0
 
 ActivePlayer=0
 
-ContinueCountdown=9
+ContinueCountdown=-1
 ContinueCTime=90
 CountdownMode=1
 ContinueMode=1

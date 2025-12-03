@@ -316,7 +316,7 @@ break;
 if global.UnlockAltPal=0 shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=2
-{shopPrice=6000 shopName="PALETTE SWAP 2" shopCost=string(_tp)+":4000"
+{shopPrice=6000 shopName="PALETTE SWAP 2" shopCost=string(_tp)+":6000"
 shopDesc="MORE COLORS!\nAND MORE PALETTES!\nHAVE MORE COLORS\nWITH THIS ONE!"
 
 switch(global.Language)
@@ -919,7 +919,7 @@ if shopselX=4
 if shopSet=2
 {
 if shopselY=0 and shopselX=0
-{shopPrice=5000 shopName="VIVA'S GALLERY" shopCost="COST:5000"
+{shopPrice=5000 shopName="VIVA'S GALLERY" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nTHUNDEROUS VIVA!"
 
 switch(global.Language)
@@ -938,7 +938,7 @@ break;
 if global.Gallery[1]=0 shopSelect=1 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=1
-{shopPrice=5000 shopName="HINA'S GALLERY" shopCost="COST:5000"
+{shopPrice=5000 shopName="HINA'S GALLERY" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nFLAMING HOT HINA!"
 
 switch(global.Language)
@@ -957,7 +957,7 @@ break;
 if global.Gallery[2]=0  shopSelect=2 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=2
-{shopPrice=5000 shopName="BAHATI'S GALLERY" shopCost="COST:5000"
+{shopPrice=5000 shopName="BAHATI'S GALLERY" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nBIG AND FABULOUS\nBAHATI!"
 
 switch(global.Language)
@@ -976,7 +976,7 @@ break;
 if global.Gallery[3]=0  shopSelect=3 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=0 and shopselX=3
-{shopPrice=5000 shopName="SOFIA'S GALLERY" shopCost="COST:5000"
+{shopPrice=5000 shopName="SOFIA'S GALLERY" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nSPICY AND LEGGY\nSOFIA!"
 
 switch(global.Language)
@@ -996,7 +996,7 @@ if global.Gallery[4]=0  shopSelect=4 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 ////
 if shopselY=1 and shopselX=0
-{shopPrice=5000 shopName="ENEMY GALLERY 1" shopCost="COST:5000"
+{shopPrice=5000 shopName="ENEMY GALLERY 1" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n1-2 STAGES!"
 
 switch(global.Language)
@@ -1015,7 +1015,7 @@ break;
 if global.Gallery[5]=0  shopSelect=5 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=1
-{shopPrice=5000 shopName="ENEMY GALLERY 2" shopCost="COST:5000"
+{shopPrice=5000 shopName="ENEMY GALLERY 2" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n3-4 STAGES!"
 
 switch(global.Language)
@@ -1034,7 +1034,7 @@ break;
 if global.Gallery[6]=0  shopSelect=6 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=2
-{shopPrice=5000 shopName="ENEMY GALLERY 3" shopCost="COST:5000"
+{shopPrice=5000 shopName="ENEMY GALLERY 3" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n5-6 STAGES!"
 
 switch(global.Language)
@@ -1053,7 +1053,7 @@ break;
 if global.Gallery[7]=0 shopSelect=7 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=1 and shopselX=3
-{shopPrice=5000 shopName="ENEMY GALLERY 4" shopCost="COST:5000"
+{shopPrice=5000 shopName="ENEMY GALLERY 4" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nENEMIES FROM THE\n7-8 STAGES!"
 
 switch(global.Language)
@@ -1073,7 +1073,7 @@ if global.Gallery[8]=0  shopSelect=8 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 /////
 if shopselY=2 and shopselX=0
-{shopPrice=5000 shopName="BOSS GALLERY 1" shopCost="COST:5000"
+{shopPrice=5000 shopName="BOSS GALLERY 1" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n1-2 STAGES!"
 
 switch(global.Language)
@@ -1092,7 +1092,7 @@ break;
 if global.Gallery[9]=0  shopSelect=9 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=1
-{shopPrice=5000 shopName="BOSS GALLERY 2" shopCost="COST:5000"
+{shopPrice=5000 shopName="BOSS GALLERY 2" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n3-4 STAGES!"
 
 switch(global.Language)
@@ -1111,7 +1111,7 @@ break;
 if global.Gallery[10]=0  shopSelect=10 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=2
-{shopPrice=5000 shopName="BOSS GALLERY 3" shopCost="COST:5000"
+{shopPrice=5000 shopName="BOSS GALLERY 3" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n5-6 STAGES!"
 
 switch(global.Language)
@@ -1130,7 +1130,7 @@ break;
 if global.Gallery[11]=0  shopSelect=11 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=2 and shopselX=3
-{shopPrice=5000 shopName="BOSS GALLERY 4" shopCost="COST:5000"
+{shopPrice=5000 shopName="BOSS GALLERY 4" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nBOSSES FROM THE\n7-8 STAGES!"
 
 switch(global.Language)
@@ -1150,7 +1150,7 @@ if global.Gallery[12]=0  shopSelect=12 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 ///
 if shopselY=3 and shopselX=0
-{shopPrice=5000 shopName="MISC GALLERY" shopCost="COST:5000"
+{shopPrice=5000 shopName="MISC GALLERY" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK OF THE\nSOME OTHER\nCHARACTERS...\nWHICH INCLUDES ME."
 
 switch(global.Language)
@@ -1169,7 +1169,7 @@ break;
 if global.Gallery[13]=0  shopSelect=13 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=1
-{shopPrice=5000 shopName="CONCEPT ART" shopCost="COST:5000"
+{shopPrice=5000 shopName="CONCEPT ART" shopCost=string(_tp)+":5000"
 shopDesc="DEVELOPMENT ART\nOF THIS\nHERE GAME!"
 
 switch(global.Language)
@@ -1188,7 +1188,7 @@ break;
 if global.Gallery[14]=0  shopSelect=14 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=2
-{shopPrice=5000 shopName="KEY ART" shopCost="COST:5000"
+{shopPrice=5000 shopName="KEY ART" shopCost=string(_tp)+":5000"
 shopDesc="PROMOTIONAL,\nNICE ART OF\nTHE GAME!"
 
 switch(global.Language)
@@ -1207,7 +1207,7 @@ break;
 if global.Gallery[15]=0  shopSelect=15 else {shopSelect=-2 shopCost="SOLD OUT!"}
 }
 if shopselY=3 and shopselX=3
-{shopPrice=5000 shopName="GUEST ART" shopCost="COST:5000"
+{shopPrice=5000 shopName="GUEST ART" shopCost=string(_tp)+":5000"
 shopDesc="ARTWORK DONE\nBY OTHER PEOPLE!\nNICE STUFF!"
 
 switch(global.Language)

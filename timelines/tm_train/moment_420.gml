@@ -24,7 +24,7 @@ with oControl MusicFade=1
 if instance_number(oPlayer)!=1
 with oPlayer
 {
-autoYMOVE=oControl.wallY+16*controlNO
+autoYMOVE=oControl.wallY+16+16*controlNO
 }
 
 

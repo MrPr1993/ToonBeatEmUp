@@ -3,7 +3,7 @@
 function animsetup_sofia() {
 	walkSpeed=2
 	damage=0.02
-	extradamage=damage*global.Cheat[3]*global.NoCheat
+	extradamage=0//damage*global.Cheat[3]*global.NoCheat
 	defense=1.2
 	extradefense=0
 
@@ -570,7 +570,7 @@ selfatk.height=128
 	comboBreak=0
 	flashX=6
 	flashY=2
-	flashZ=48 damage=0.12
+	flashZ=48 damage=0.6
 MoveType=0
 
 

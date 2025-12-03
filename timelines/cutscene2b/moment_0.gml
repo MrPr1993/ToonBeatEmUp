@@ -213,6 +213,7 @@ with actor4 {sprite_index=spr_sofia_point image_index=2 image_xscale=-1}
 
 cutscenename="VIVA"
 cutsceneline="FORGET IT! WE NEED TO THINK HOW TO GET OUTTA THIS!"
+if global.Language!=0 cutsceneline=languagedialogue[6]
 	}
 	
 SceneY=32
