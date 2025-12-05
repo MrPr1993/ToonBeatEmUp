@@ -5,6 +5,9 @@ if global.MenuGlobal=0 and global.SaveFileNO!=0
 {
 ini_open("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini");
 
+if global.Continues=-1 global.Continues=0
+global.ContinueStart=global.Continues
+
 ini_write_real("SAVE", "ASM", global.AllStageMode)
 
 var stagenoset=_no//rm_opening;
@@ -28,6 +31,8 @@ ini_write_real("SAVE", "P2LS", global.P2ScoreLife)
 ini_write_real("SAVE", "P3LS", global.P3ScoreLife)
 ini_write_real("SAVE", "P4LS", global.P4ScoreLife)
 ini_write_real("SAVE", "CONT", global.Continues)
+ini_write_real("SAVE", "CONT2", global.ContinueStart)
+
 ini_write_real("SAVE", "DIF", global.Difficulty)
 ini_write_real("SAVE", "AND", global.ArcadeDeath)
 ini_write_string("SAVE", "STG", global.SaveText)

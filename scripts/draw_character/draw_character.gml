@@ -2,7 +2,7 @@ function draw_character() {
 	if specialFX=1 shader_set(shd_white_sprite)
 	if specialFX=0
 	pal_swap_set(my_pal_sprite,current_pal,false);
-
+if anim=41 shader_reset();//shader_set(shade_default)
 if object_index=oPlayer
 {
 var _flashR=colour_get_red(flashcolor)

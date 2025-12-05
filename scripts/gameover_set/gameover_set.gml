@@ -67,6 +67,9 @@ global.P1Score=0
 global.P2Score=0
 global.P3Score=0
 global.P4Score=0
+global.P4Score=0
+
+global.Continues=global.ContinueStart
 
 musicplayonce(msc_gameover)
 

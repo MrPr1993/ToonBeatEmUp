@@ -796,6 +796,9 @@ draw_set_halign(fa_right)
 if global.CanGlobalBeta=1
 draw_text(318,230,"BUILD TEST MODE")
 else
+if global.GameDemo
+draw_text(318,230,"DEMO")
+else
 draw_text(318,230,gamever)
 
 draw_set_halign(fa_center) 

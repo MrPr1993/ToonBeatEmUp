@@ -160,7 +160,7 @@ if anim=13 ///Sing
 oPlayer.x+=3*image_xscale
 	AnimFrame+=0.1
 		if specialtimes[0]>207 or z<-100 or AnimFrame>=27
-		{canmove=1 sentflying=0 alarm[1]=60}
+		{canmove=1 anim=0 AnimFrame=0 sentflying=0 alarm[1]=60}
 	}
 	
 	if hp<=0

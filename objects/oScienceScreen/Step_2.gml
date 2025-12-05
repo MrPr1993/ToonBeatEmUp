@@ -515,6 +515,8 @@ if anim=595000
 {
 if AnimFrame=0 {image_index=0 recovery=0 scopeind=0 recoveryThrow=0 }
 
+if z<0 z+=4 else z=0
+
 scopespr=spr_science_b
 
 {clawSpr=spr_science_b scopeind+=0.5 if scopeind=3 scopeind=1 if AnimFrame>46 or AnimFrame<4 image_index=0.5}
@@ -524,7 +526,7 @@ image_index+=0.25 if image_index>=3 image_index=1
 
 screenSpr=spr_science_panic screenInd=image_index;
 
-if AnimFrame>=50 {canmove=0 anim=11 AnimFrame=15 hurt=0 screenInd=0 }
+if AnimFrame>=50 {canmove=0 anim=0 AnimFrame=0 hurt=0 screenInd=0 }
 }
 
 if sprite_index=ThrownSpr or anim=4 clawSpr=spr_science_b

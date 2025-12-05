@@ -204,7 +204,7 @@ if global.Language!=0 cutsceneline=languagedialogue[4]
 
 if scenetime=940
 {sprite_index=spr_allblackscreen PlaySound(snd_hitgroundheavy)
-	
+x=0 y=0; hspeed=0 vspeed=0;
 with oControl
 {
 cutscenename="" cutsceneline= ""

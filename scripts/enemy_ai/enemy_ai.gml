@@ -1,11 +1,12 @@
 /// @description /AI settings
 function enemy_ai() {
+harmed=noone
 	if reFocusTime=0
 	{
 	if targetEnemy=-1
 	{
 	
-harmed=noone
+
 var _list = ds_list_create();
 var _num = collision_rectangle_list(oControl.camX, oControl.camY, oControl.camX+320,oControl.camY+240, oPlayer, false,true, _list, true);
 if (_num > 0)
@@ -80,7 +81,7 @@ else
 	y=clamp(y,0,__view_get( e__VW.YView, 0 )+240)
 
 	////Dash if off-screen
-	var checkRun= x<__view_get( e__VW.XView, 0 )-64 or x>__view_get( e__VW.XView, 0 )+320+64
+	var checkRun= x<oControl.camX-64 or x>oControl.camX+320+64
 	or canAttack=5
 	or distance_to_object(targetEnemy)>90
 	if checkRun
@@ -92,7 +93,7 @@ else
 	{anim=1
 	{dashing=0 doubledash=0}
 
-	if x=clamp(x,targetX-rangeX-8-sprite_get_width(mask_index)/2,targetX+rangeX+8+sprite_get_width(mask_index)/2)
+	if x=clamp(x,targetX-rangeX-12-sprite_get_width(mask_index)/2,targetX+rangeX+12+sprite_get_width(mask_index)/2)
 	{if x<targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
 
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
@@ -112,7 +113,7 @@ else
 
 	if canAttack=1 ///Try to get to the opponent
 	{anim=1
-	if x!=clamp(x,targetX-rangeX-8-sprite_get_width(mask_index)/2,targetX+rangeX+8+sprite_get_width(mask_index)/2)
+	if x!=clamp(x,targetX-rangeX-12-sprite_get_width(mask_index)/2,targetX+rangeX+12+sprite_get_width(mask_index)/2)
 	{if image_xscale=-1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
 		}else 
 		{if image_xscale=-1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}	
@@ -122,8 +123,8 @@ else
 			}else 
 			{
 			if place_meeting(x,y,targetEnemy)
-			if image_xscale=1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}	
-			if canAttack!=2 {key_left=0 key_right=0 anim=0 canAttack=2 alarm[1]=8}
+			if image_xscale=1 {canAttack=0 anim=1 key_left=-1 key_right=0} else {canAttack=0 anim=1 key_right=1 key_left=0}	
+			if canAttack!=0 {key_left=0 key_right=0 anim=0 canAttack=0 alarm[1]=8}
 			}
 		}
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
@@ -136,6 +137,11 @@ else
 	}
 	else {key_up=0 key_down=0}
 	
+	if x!=clamp(x,oControl.camX-8,oControl.camX+328)
+	{key_up=0 key_down=0
+	if y>=targetEnemy key_up=1 else key_down=1
+	}
+	
 	if key_up=0 and key_down=0 and key_left=0 and key_right=0 if anim=1 anim=0
 	}
 
@@ -143,8 +149,8 @@ else
 	 {anim=0 key_left=0 key_right=0 key_up=0 key_down=0 key_attack=0
 
  
-	 if x<__view_get( e__VW.XView, 0 )+16 {canAttack=1}
-	  if x>__view_get( e__VW.XView, 0 )+320-16 {canAttack=1}
+	 if x<oControl.camX+16 {canAttack=1}
+	  if x>oControl.camX+320-16 {canAttack=1}
 	 }
 
 
@@ -183,7 +189,7 @@ else
 	{
 	var closeally=instance_nearest(x,y,oEnemy1)
 	if instance_exists(closeally) if place_meeting(x,y,closeally)
-	{if closeally.y<y {key_up=choose(1,0)} if closeally.y>y {key_down=choose(1,0)}}
+	{if closeally.y<y {key_down=0 key_up=choose(1,1)} if closeally.y>y {key_up=0 key_down=choose(0,1)}}
 	}
 	
 	if canAttack=1//0 or canAttack=1 or canAttack=2 or canAttack=3 or canAttack=4

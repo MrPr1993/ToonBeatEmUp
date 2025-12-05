@@ -23,6 +23,8 @@ global.P4ScoreLife=0
 
 global.ArcadeDeath=0;
 
+global.Continues=global.ContinueStart;
+
 global.AllStageMode=0;
 
 global.SaveText="EMPTY";
@@ -50,6 +52,7 @@ global.P2ScoreLife=ini_read_real("SAVE", "P2LS", 0)
 global.P3ScoreLife=ini_read_real("SAVE", "P3LS", 0)
 global.P4ScoreLife=ini_read_real("SAVE", "P4LS", 0)
 global.Continues=ini_read_real("SAVE", "CONT", global.ContinueStart)
+global.ContinueStart=ini_read_real("SAVE", "CONT", 0)
 global.Difficulty=ini_read_real("SAVE", "DIF", 2)
 global.SaveText=ini_read_string("SAVE", "STG", "EMPTY")
 global.ArcadeDeath=ini_read_real("SAVE", "AND", 0)

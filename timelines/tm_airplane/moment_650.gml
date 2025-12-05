@@ -21,11 +21,12 @@ stageIntro=1
 oEnemySpawner.roomHSpd=0
 oEnemySpawner.roomMove=0
 oEnemySpawner.MaxX=5876+240-48
+__view_set( e__VW.XView, 0, oEnemySpawner.MaxX-320 )
 camMove=1
 }
 with oPlayer
 {hspeed=0 visible=1 PlaySoundNoStack(choose(DamageVoice1,DamageVoice2,DamageVoice3))
-x=5978-160
+x=5978-160 key_jump=0
 y=208 z=-32
 areaEntry=0 zSpeed=-4 hspeed=4 image_xscale=-1 hitBack=0 canBounce=0 anim=5
 }

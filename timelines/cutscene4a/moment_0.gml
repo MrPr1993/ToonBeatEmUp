@@ -214,7 +214,7 @@ if scenetime=2840 scenetime=6000
 
 if scenetime=6000
 {BGspr.sprite_index=mask_none audio_stop_all();
-	
+	hspeed=0 vspeed=0 x=0 y=0
 with actor1 {x=64}
 with actor2 {x=64-16}
 with actor3 {x=64+32}
