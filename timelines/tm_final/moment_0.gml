@@ -21,10 +21,10 @@ with oPlayer
 y=oControl.wallY+16*controlNO
 }
 
-//timeline_skip(178)
-//with oEnemySpawner
-//{
-//skipview=2
-//skipviewX=11360
-//oControl.camX=11360
-//}
+timeline_skip(178)
+with oEnemySpawner
+{
+skipview=2
+skipviewX=11360
+oControl.camX=11360
+}

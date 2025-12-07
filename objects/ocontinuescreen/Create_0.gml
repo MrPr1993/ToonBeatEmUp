@@ -692,6 +692,8 @@ if global.StageClear=0 global.ArcadeDeath=1
 
 global.StageClear=0;
 
+
+
 colorshade_setup()
 
 optionSelect=0

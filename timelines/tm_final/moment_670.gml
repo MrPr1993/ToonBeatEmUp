@@ -64,18 +64,11 @@ if AnimFrame=320
 		x=oControl.camX+48	y=200
 	}
 	
-if instance_number(oPlayer)!=1
 with oPlayer
 {
-if instance_number(oPlayer)=2 
-{if controlNO=1 {y=200} if controlNO=2 {x=oControl.camX+320-48 image_xscale=-1 y=200}}
-else
-{
-{if controlNO=1 {y=200} if controlNO=2 {x=oControl.camX+320-48 image_xscale=-1 y=200}}
-{if controlNO=3 {y=232} if controlNO=4 {x=oControl.camX+320-48 image_xscale=-1 y=232}}
-}
-
-
+if playerNO=2 {x=oControl.camX+320-48 image_xscale=-1 y=200}
+if playerNO=3 {x=oControl.camX+48 image_xscale=1 y=240}
+if playerNO=4 {x=oControl.camX+320-48 image_xscale=-1 y=240}
 }
 	
 	y=6010

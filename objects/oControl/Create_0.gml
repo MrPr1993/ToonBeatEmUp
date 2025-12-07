@@ -1,6 +1,6 @@
 room_speed=60
 
-global.CanGlobalBeta=0 //////////SET TO 0 TO DEACTIVATE BETA MODE
+global.CanGlobalBeta=1 //////////SET TO 0 TO DEACTIVATE BETA MODE
 global.GameDemo=0;
 
 gamever="V.1.0.0.4"
@@ -1148,12 +1148,12 @@ btnT3="TO DO"
 cameraYAdd=0
 if room=rm_characterselect
 {if global.StageSelect global.SaveNumber=0
-p1=instance_create_depth(0,53,-1,oCharacterSelectPlayer) with p1 {canControl=1 controlNO=1}
+p1=instance_create_depth(0,53,-1,oCharacterSelectPlayer) with p1 {canControl=1 controlNO=1 playerNO=1}
 if global.P1Only=0
 {
-p2=instance_create_depth(80,53,-1,oCharacterSelectPlayer) with p2 {canControl=1 controlNO=2}
-p3=instance_create_depth(160,53,-1,oCharacterSelectPlayer) with p3 {canControl=1 controlNO=3}
-p4=instance_create_depth(240,53,-1,oCharacterSelectPlayer) with p4 {canControl=1 controlNO=4}
+p2=instance_create_depth(80,53,-1,oCharacterSelectPlayer) with p2 {canControl=1 controlNO=2 playerNO=2}
+p3=instance_create_depth(160,53,-1,oCharacterSelectPlayer) with p3 {canControl=1 controlNO=3 playerNO=3}
+p4=instance_create_depth(240,53,-1,oCharacterSelectPlayer) with p4 {canControl=1 controlNO=4 playerNO=4}
 }
 else {p1.x=120
 

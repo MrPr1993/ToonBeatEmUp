@@ -305,7 +305,14 @@ dust_make(x,y+2,z,0,1,0)
 frame_set(3,3,0.25)
 frame_set(4,4,0.25)
 frame_set(5,5,0.25)
-frame_set(6,6,0.05)
+frame_set(6,6,0.05) if AnimFrame<6
+{var _noplant=0
+if instance_exists(oPlantPrincess)
+{if oPlantPrincess.dead or oPlantPrincess.hurt=1 _noplant=1
+} else _noplant=1
+
+if _noplant AnimFrame=7
+}
 frame_set(7,5,0.25)
 frame_set(8,3,0.25)
 frame_set(9,2,0.25) 

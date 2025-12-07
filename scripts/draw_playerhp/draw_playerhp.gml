@@ -83,11 +83,7 @@ if continueScreen=2 ///Character Select
 
 //if continueFlash<0 continueFlash=2 else continueFlash-=0.5
 
-var playernum1=global.p1Pals;
-var playernum2=global.p1Pal;
-if playerNO=2 {playernum1=global.p2Pals;  playernum2=global.p2Pal;}
-if playerNO=3 {playernum1=global.p3Pals;  playernum2=global.p3Pal;}
-if playerNO=4 {playernum1=global.p4Pals;  playernum2=global.p4Pal;}
+
 
 //draw_sprite_ext(spr_playerface,0,0,0,1,1,0,c_dkgray,1)
 //draw_sprite_ext(spr_playerface,1,23,0,1,1,0,c_dkgray,1)
@@ -131,7 +127,7 @@ or (controlNO=4 and oControl.p1.ContinueMode=0 and oControl.p1.character=charact
 soldout=1;
 ////
 
-pal_swap_set(playernum1,playernum2,false)
+pal_swap_set(current_pal,my_pal_sprite,false)
 
 var _charselect=spr_viva_map; var _selfpal0=0; var _selfpal1=0; var _selfpal2=0;
 if characterSelect=1 _charselect=spr_hina_map
@@ -149,47 +145,72 @@ var _switchcolor=0;
 if key_Y or key_LT or key_RT
 if global.UnlockAltPal3
 {PlaySound(snd_steal)
-if playerNO=1 {global.p1CPal^=1 }
-if playerNO=2 {global.p2CPal^=1 }
-if playerNO=3 {global.p3CPal^=1 }
-if playerNO=4 {global.p4CPal^=1 }
+if controlNO=1 {global.p1CPal^=1 _switchcolor=1}
+if controlNO=2 {global.p2CPal^=1 _switchcolor=1}
+if controlNO=3 {global.p3CPal^=1 _switchcolor=1}
+if controlNO=4 {global.p4CPal^=1 _switchcolor=1}
 }
 
 if global.UnlockAltPal
 if soldout=0
 {var palmax=15; if global.UnlockAltPal2 palmax=31;
-if playerNO=1
-{if key_up_pressed {if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
+if controlNO=1
+{if key_up_pressed {_switchcolor=1 if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1 PlaySound(snd_steal)}
+if -key_down_pressed {_switchcolor=1  if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
+
+}
+if controlNO=2
+{if key_up_pressed {_switchcolor=1 if global.p2Pal=0 global.p2Pal=palmax else global.p2Pal-=1 PlaySound(snd_steal)}
+if -key_down_pressed {_switchcolor=1 if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1 PlaySound(snd_steal)}
+
+}
+if controlNO=3
+{if key_up_pressed {_switchcolor=1 if global.p3Pal=0 global.p3Pal=palmax else global.p3Pal-=1 PlaySound(snd_steal)}
+if -key_down_pressed {_switchcolor=1 if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1 PlaySound(snd_steal)}
+
+}
+if controlNO=4
+{if key_up_pressed {_switchcolor=1 if global.p4Pal=0 global.p4Pal=palmax else global.p4Pal-=1 PlaySound(snd_steal)}
+if -key_down_pressed {_switchcolor=1 if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1 PlaySound(snd_steal)}
+
+}
+}
+
+if _switchcolor
+{
+if controlNO=1
+{
 if character=0 if global.p1CPal=0 global.p1Pals=spr_vivapal else global.p1Pals=spr_custompal
 if character=1 if global.p1CPal=0 global.p1Pals=spr_hinapal else global.p1Pals=spr_custompal2
 if character=2 if global.p1CPal=0 global.p1Pals=spr_bahatipal else global.p1Pals=spr_custompal3
 if character=3 if global.p1CPal=0 global.p1Pals=spr_sofiapal else global.p1Pals=spr_custompal4
 }
-if playerNO=2
-{if key_up_pressed {if global.p2Pal=0 global.p2Pal=palmax else global.p2Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1 PlaySound(snd_steal)}
+if controlNO=2
+{
 if character=0 if global.p2CPal=0 global.p2Pals=spr_vivapal else global.p2Pals=spr_custompal
 if character=1 if global.p2CPal=0 global.p2Pals=spr_hinapal else global.p2Pals=spr_custompal2
 if character=2 if global.p2CPal=0 global.p2Pals=spr_bahatipal else global.p2Pals=spr_custompal3
 if character=3 if global.p2CPal=0 global.p2Pals=spr_sofiapal else global.p2Pals=spr_custompal4
 }
-if playerNO=3
-{if key_up_pressed {if global.p3Pal=0 global.p3Pal=palmax else global.p3Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1 PlaySound(snd_steal)}
+if controlNO=3
+{
 if character=0 if global.p3CPal=0 global.p3Pals=spr_vivapal else global.p3Pals=spr_custompal
 if character=1 if global.p3CPal=0 global.p3Pals=spr_hinapal else global.p3Pals=spr_custompal2
 if character=2 if global.p3CPal=0 global.p3Pals=spr_bahatipal else global.p3Pals=spr_custompal3
 if character=3 if global.p3CPal=0 global.p3Pals=spr_sofiapal else global.p3Pals=spr_custompal4
 }
-if playerNO=4
-{if key_up_pressed {if global.p4Pal=0 global.p4Pal=palmax else global.p4Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1 PlaySound(snd_steal)}
+if controlNO=4
+{
 if character=0 if global.p4CPal=0 global.p4Pals=spr_vivapal else global.p4Pals=spr_custompal
 if character=1 if global.p4CPal=0 global.p4Pals=spr_hinapal else global.p4Pals=spr_custompal2
 if character=2 if global.p4CPal=0 global.p4Pals=spr_bahatipal else global.p4Pals=spr_custompal3
 if character=3 if global.p4CPal=0 global.p4Pals=spr_sofiapal else global.p4Pals=spr_custompal4
 }
+
+if controlNO=1 {global.p1CPal^=1 current_pal=global.p1Pal; my_pal_sprite=global.p1Pals;}
+if controlNO=2 {global.p2CPal^=1 current_pal=global.p2Pal; my_pal_sprite=global.p2Pals;}
+if controlNO=3 {global.p3CPal^=1 current_pal=global.p3Pal; my_pal_sprite=global.p3Pals;}
+if controlNO=4 {global.p4CPal^=1 current_pal=global.p4Pal; my_pal_sprite=global.p4Pals;}
 }
 
 if -key_left_pressed if characterSelect=0 characterSelect=3
@@ -197,6 +218,8 @@ else characterSelect-=1
 if key_right_pressed if characterSelect=3 characterSelect=0
 else characterSelect+=1
 
+
+pal_swap_set(my_pal_sprite,current_pal,false);
 var _mapframe=0;
 if continueFlash<1 _mapframe=0
 else if continueFlash<2 _mapframe=1

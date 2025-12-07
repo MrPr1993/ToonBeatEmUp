@@ -473,7 +473,7 @@ if AnimFrame=2
 PlaySound(snd_swing5)
 oFishingMinigame.x=x+32 oFishingMinigame.y=y oFishingMinigame.z=z-96
 with oFishingMinigame
-{spdX=0.08*oPlayer.specialtimes[1] spdZ=-0.08*oPlayer.specialtimes[1]
+{spdX=0.10*oPlayer.specialtimes[1] spdZ=-0.10*oPlayer.specialtimes[1]
 Thrown=1 
 }
 }
@@ -487,10 +487,39 @@ fishtime+=1
 
 if fishtime>random_range(200,300)
 {
+
+
 AnimFrame=0 PlaySound(snd_hit2) anim=260000
  PlaySound(snd_splash1)
 with oFishingMinigame
+{
+var _fishdist=240+x;
+
+
+with oPlayer
+{
+var _fishdist=oFishingMinigame.x-240;
+if _fishdist<=100-240 var _fishget=fish_choose(random_range(0,1))
+else if _fishdist<=160-240 var _fishget=fish_choose(random_range(1,2))
+else if _fishdist<=240-240 var _fishget=fish_choose(random_range(2,3))
+else if _fishdist<=320-240 var _fishget=fish_choose(random_range(3,4))
+else if _fishdist<=400-240 var _fishget=fish_choose(random_range(4,5))
+else if _fishdist<=480-240 var _fishget=fish_choose(random_range(5,6))
+else if _fishdist<=560-240 var _fishget=fish_choose(random_range(6,7))
+else if _fishdist<=620-240 var _fishget=fish_choose(random_range(7,8))
+else if _fishdist<=700-240 var _fishget=fish_choose(random_range(8,9))
+else var _fishget=fish_choose(random_range(9,10))
+
+oFishingMinigame.fishstr=fishstr
+oFishingMinigame.fishspr=fishspr
+oFishingMinigame.fishname=fishname
+oFishingMinigame.fishscore=fishscore
+
+specialtimes[2]=_fishget
+}	
+
 flashFX(x,y,z+6,spr_watersplashsmall,0,0.5,10,1,1,c_white,1)
+}
 }
 
 }
@@ -596,7 +625,7 @@ with oFishingMinigame
 	x+=((spdY/4)+0.25)*oPlayer.fishstr+fishstr+0.1*point_distance(0,y,0,oPlayer.y)/16
 	
 fishstr+=0.05
-if fishstr>10 or x>1080
+if fishstr>10 or x>1580
 {	with oPlayer {canmove=1 anim=0 AnimFrame=0} Thrown=0
 		fishout=0
 

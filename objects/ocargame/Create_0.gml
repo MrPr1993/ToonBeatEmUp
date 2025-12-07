@@ -71,6 +71,11 @@ hithereY=0
 
 oControl.stageNext=global.VanBadSceneNext
 
-with oPlayer altresult2=0
+with oPlayer {altresult2=0
+if playerNO=2 {image_xscale=-1 x=320-32}	
+if playerNO=3 {y=192+32}	
+if playerNO=2 {image_xscale=-1 x=320-32 y=192+32}	
+	
+}
 if instance_exists(oPlayerDisembodied) with oPlayerDisembodied altresult2=0
 if instance_exists(oPlayerNoControl) with oPlayerNoControl altresult2=0

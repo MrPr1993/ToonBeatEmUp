@@ -3,6 +3,19 @@
 oControl.nopleasewait=0;
 oControl.minigameID=1;
 oControl.minigameroom=1
+if instance_exists(oPlayer) 
+{with oPlayer hp=maxhp
+	
+if ready=0
+{
+with oPlayer {altresult2=0
+if playerNO=2 {image_xscale=-1 x=320-32}	
+if playerNO=3 {y=192+32}	
+if playerNO=4 {image_xscale=-1 x=320-32 y=192+32}	
+}
+}
+
+}
 
 if shaketime!=0
 {shaketime-=1

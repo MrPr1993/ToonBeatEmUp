@@ -35,25 +35,7 @@ if Thrown=1
 {image_index=0
 if spdZ<4 spdZ+=0.45
 
-var _fishdist=240+x;
 
-
-with oPlayer
-{
-var _fishdist=oFishingMinigame.x-240;
-if _fishdist<=100-240 var _fishget=fish_choose(0,1)
-else if _fishdist<=200-240 var _fishget=fish_choose(0,1,2)
-else if _fishdist<=300-240 var _fishget=fish_choose(0,1,2,3)
-else if _fishdist<=400-240 var _fishget=fish_choose(0,1,2,4)
-else if _fishdist<=500-240 var _fishget=fish_choose(1,2,3,4,5)
-else if _fishdist<=600-240 var _fishget=fish_choose(1,2,3,4,5,6)
-else if _fishdist<=700-240 var _fishget=fish_choose(1,2,3,4,5,6,7)
-else if _fishdist<=800-240 var _fishget=fish_choose(3,4,5,6,7,8,9)
-else if _fishdist<=900-240 var _fishget=fish_choose(3,4,5,6,7,8,10)
-else var _fishget=fish_choose(5,6,7,8,10)
-
-specialtimes[2]=_fishget
-}
 
 
 

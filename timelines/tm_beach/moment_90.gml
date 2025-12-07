@@ -25,7 +25,7 @@ musicplaystart(msc_boss)
 en1=instance_create(4082,178,oOctopus)
 with en1
 {immune=1 anim=66 canmove=0}
-oControl.time=99
+oControl.time=99 timer_set(1)
 with oPlayer {canControl=1}
 
 oControl.bossID=oOctopus
@@ -49,6 +49,9 @@ with oPlayer
 {
 canControl=0
 automoveX=4082-80 automoveY=178 automove=1
+if playerNO=2 automoveX=4082+80
+if playerNO=3 {automoveY=178+32 automoveFace=-1}
+if playerNO=4 {automoveX=4082+80 automoveX=4082+80 automoveFace=-1}
 
 specialanimscript=function()
 {
