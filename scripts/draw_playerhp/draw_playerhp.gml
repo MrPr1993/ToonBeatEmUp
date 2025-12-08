@@ -142,6 +142,24 @@ continueFlash+=0.1 if continueFlash>=4 continueFlash=0
 
 var _switchcolor=0;
 
+if -key_left_pressed {if characterSelect=0 characterSelect=3
+else characterSelect-=1 _switchcolor=1}
+if key_right_pressed {if characterSelect=3 characterSelect=0
+else characterSelect+=1 _switchcolor=1}
+
+var palmax=15; if global.UnlockAltPal2 palmax=31;
+var charcheck=spr_vivapal;
+var customcheck=spr_custompal
+if characterSelect=1 
+{charcheck=spr_hinapal;
+customcheck=spr_custompal2}
+if characterSelect=2
+{charcheck=spr_bahatipal;
+customcheck=spr_custompal3}
+if characterSelect=3 
+{charcheck=spr_sofiapal;
+customcheck=spr_custompal4}
+
 if key_Y or key_LT or key_RT
 if global.UnlockAltPal3
 {PlaySound(snd_steal)
@@ -152,8 +170,7 @@ if controlNO=4 {global.p4CPal^=1 _switchcolor=1}
 }
 
 if global.UnlockAltPal
-if soldout=0
-{var palmax=15; if global.UnlockAltPal2 palmax=31;
+{
 if controlNO=1
 {if key_up_pressed {_switchcolor=1 if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1 PlaySound(snd_steal)}
 if -key_down_pressed {_switchcolor=1  if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
@@ -176,47 +193,16 @@ if -key_down_pressed {_switchcolor=1 if global.p4Pal=palmax global.p4Pal=0 else 
 }
 }
 
-if _switchcolor
-{
-if controlNO=1
-{
-if character=0 if global.p1CPal=0 global.p1Pals=spr_vivapal else global.p1Pals=spr_custompal
-if character=1 if global.p1CPal=0 global.p1Pals=spr_hinapal else global.p1Pals=spr_custompal2
-if character=2 if global.p1CPal=0 global.p1Pals=spr_bahatipal else global.p1Pals=spr_custompal3
-if character=3 if global.p1CPal=0 global.p1Pals=spr_sofiapal else global.p1Pals=spr_custompal4
-}
-if controlNO=2
-{
-if character=0 if global.p2CPal=0 global.p2Pals=spr_vivapal else global.p2Pals=spr_custompal
-if character=1 if global.p2CPal=0 global.p2Pals=spr_hinapal else global.p2Pals=spr_custompal2
-if character=2 if global.p2CPal=0 global.p2Pals=spr_bahatipal else global.p2Pals=spr_custompal3
-if character=3 if global.p2CPal=0 global.p2Pals=spr_sofiapal else global.p2Pals=spr_custompal4
-}
-if controlNO=3
-{
-if character=0 if global.p3CPal=0 global.p3Pals=spr_vivapal else global.p3Pals=spr_custompal
-if character=1 if global.p3CPal=0 global.p3Pals=spr_hinapal else global.p3Pals=spr_custompal2
-if character=2 if global.p3CPal=0 global.p3Pals=spr_bahatipal else global.p3Pals=spr_custompal3
-if character=3 if global.p3CPal=0 global.p3Pals=spr_sofiapal else global.p3Pals=spr_custompal4
-}
-if controlNO=4
-{
-if character=0 if global.p4CPal=0 global.p4Pals=spr_vivapal else global.p4Pals=spr_custompal
-if character=1 if global.p4CPal=0 global.p4Pals=spr_hinapal else global.p4Pals=spr_custompal2
-if character=2 if global.p4CPal=0 global.p4Pals=spr_bahatipal else global.p4Pals=spr_custompal3
-if character=3 if global.p4CPal=0 global.p4Pals=spr_sofiapal else global.p4Pals=spr_custompal4
-}
+if (global.p1CPal=0) {if controlNO=1 global.p1Pals=charcheck} else if controlNO=1 global.p1Pals=customcheck
+if (global.p2CPal=0) {if controlNO=2 global.p2Pals=charcheck} else if controlNO=2 global.p2Pals=customcheck
+if (global.p3CPal=0) {if controlNO=3 global.p3Pals=charcheck} else if controlNO=3 global.p3Pals=customcheck
+if (global.p4CPal=0) {if controlNO=4 global.p4Pals=charcheck} else if controlNO=4 global.p4Pals=customcheck
 
-if controlNO=1 {global.p1CPal^=1 current_pal=global.p1Pal; my_pal_sprite=global.p1Pals;}
-if controlNO=2 {global.p2CPal^=1 current_pal=global.p2Pal; my_pal_sprite=global.p2Pals;}
-if controlNO=3 {global.p3CPal^=1 current_pal=global.p3Pal; my_pal_sprite=global.p3Pals;}
-if controlNO=4 {global.p4CPal^=1 current_pal=global.p4Pal; my_pal_sprite=global.p4Pals;}
-}
 
-if -key_left_pressed if characterSelect=0 characterSelect=3
-else characterSelect-=1
-if key_right_pressed if characterSelect=3 characterSelect=0
-else characterSelect+=1
+if playerNO=1 {current_pal=global.p1Pal; my_pal_sprite=global.p1Pals;}
+if playerNO=2 {current_pal=global.p2Pal; my_pal_sprite=global.p2Pals;}
+if playerNO=3 {current_pal=global.p3Pal; my_pal_sprite=global.p3Pals;}
+if playerNO=4 {current_pal=global.p4Pal; my_pal_sprite=global.p4Pals;}
 
 
 pal_swap_set(my_pal_sprite,current_pal,false);

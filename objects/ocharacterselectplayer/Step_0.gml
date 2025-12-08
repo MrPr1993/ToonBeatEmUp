@@ -278,12 +278,38 @@ PlaySoundNoStack(snd_steal)
 }
 
 
-if controlNO=1
-{
-if palettemode=0 if playerNO=1
-{
-if -key_left_pressed {SelectingX=-2 if global.P1Char=0 global.P1Char=3 else global.P1Char-=1 PlaySoundNoStack(snd_select)}
-if key_right_pressed {SelectingX=2 if global.P1Char=3 global.P1Char=0 else global.P1Char+=1 PlaySoundNoStack(snd_select)}
+if controlNO=1 or controlNO=2 or controlNO=3 or controlNO=4
+{if palettemode=0
+{if -key_left_pressed {SelectingX=-2 
+	if playerNO=1 if global.P1Char=0 global.P1Char=3 else global.P1Char-=1
+	if playerNO=2 if global.P2Char=0 global.P2Char=3 else global.P2Char-=1
+	if playerNO=3 if global.P3Char=0 global.P3Char=3 else global.P3Char-=1
+	if playerNO=4 if global.P4Char=0 global.P4Char=3 else global.P4Char-=1
+	PlaySoundNoStack(snd_select)}
+if key_right_pressed {SelectingX=2 
+	if playerNO=1 if global.P1Char=3 global.P1Char=0 else global.P1Char+=1
+	if playerNO=2 if global.P2Char=3 global.P2Char=0 else global.P2Char+=1
+	if playerNO=3 if global.P3Char=3 global.P3Char=0 else global.P3Char+=1
+	if playerNO=4 if global.P4Char=3 global.P4Char=0 else global.P4Char+=1
+	PlaySoundNoStack(snd_select)}
+}
+if global.UnlockAltPal=1 if palettemode=1
+{if -key_left_pressed 
+	{
+	if playerNO=1 if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1
+	if playerNO=2 if global.p2Pal=0 global.p2Pal=palmax else global.p2Pal-=1
+	if playerNO=3 if global.p3Pal=0 global.p3Pal=palmax else global.p3Pal-=1
+	if playerNO=4 if global.p4Pal=0 global.p4Pal=palmax else global.p4Pal-=1
+	}
+if key_right_pressed {
+	if playerNO=1 if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1
+	if playerNO=2 if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1
+	if playerNO=3 if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1
+	if playerNO=4 if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1
+}
+}
+
+charno=global.P1Char
 }
 
 if palettemode=1
@@ -298,71 +324,6 @@ if playerNO=2 global.p2CPal=custommode
 if playerNO=3 global.p3CPal=custommode
 if playerNO=4 global.p4CPal=custommode
 }
-}
-
-if global.UnlockAltPal=1 if palettemode=1
-{
-if -key_left_pressed if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1
-if key_right_pressed if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1
-
-if global.UnlockAltPal=2
-{
-if key_up_pressed custommode^=1;
-if -key_down_pressed custommode^=1;
-}
-
-}
-charno=global.P1Char}
-if controlNO=2
-{
-if palettemode=0
-{
-if -key_left_pressed {SelectingX=-2 if global.P2Char=0 global.P2Char=3 else global.P2Char-=1 PlaySoundNoStack(snd_select)}
-if key_right_pressed {SelectingX=2 if global.P2Char=3 global.P2Char=0 else global.P2Char+=1 PlaySoundNoStack(snd_select)}
-}
-if global.UnlockAltPal=1 if palettemode=1
-{
-if -key_left_pressed if global.p2Pal=0 global.p2Pal=palmax else global.p2Pal-=1
-if key_right_pressed if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1
-
-
-
-
-
-}
-charno=global.P2Char}
-if controlNO=3
-{
-if palettemode=0
-{
-if -key_left_pressed {SelectingX=-2 if global.P3Char=0 global.P3Char=3 else global.P3Char-=1 PlaySoundNoStack(snd_select)}
-if key_right_pressed {SelectingX=2 if global.P3Char=3 global.P3Char=0 else global.P3Char+=1 PlaySoundNoStack(snd_select)}
-}
-
-if global.UnlockAltPal=1 if palettemode=1
-{
-if -key_left_pressed if global.p3Pal=0 global.p3Pal=palmax else global.p3Pal-=1
-if key_right_pressed if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1
-
-
-}
-charno=global.P3Char}
-if controlNO=4
-{
-if palettemode=0
-{
-if -key_left_pressed {SelectingX=-2 if global.P4Char=0 global.P4Char=3 else global.P4Char-=1 PlaySoundNoStack(snd_select)}
-if key_right_pressed {SelectingX=2 if global.P4Char=3 global.P4Char=0 else global.P4Char+=1 PlaySoundNoStack(snd_select)}
-}
-if global.UnlockAltPal=1 if palettemode=1
-{
-if -key_left_pressed if global.p4Pal=0 global.p4Pal=palmax else global.p4Pal-=1
-if key_right_pressed if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1
-
-
-
-}
-charno=global.P4Char
 }
 
 if global.UnlockAltPal=1
