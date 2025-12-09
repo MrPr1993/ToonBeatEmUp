@@ -127,7 +127,7 @@ thief1=instance_create_depth(480,188,-1,oCutHalfFX) with thief1
 
 with oControl
 {
-cutscenename="HATHOR" cutsceneline="HEY! WHERE ARE THOSE FOOLS DOING?!"
+cutscenename="HATHOR" cutsceneline="HEY! WHERE ARE THOSE FOOLS GOING?!"
 if global.Language!=0 cutsceneline=languagedialogue[3]
 }
 }

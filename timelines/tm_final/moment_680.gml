@@ -35,6 +35,7 @@ with oPlayer
 visible=1
 hspeed=0
 image_xscale=1
+if playerNO=2 or playerNO=4 image_xscale=-1
 areaEntry=0 z=-300 
 canmove=0
 	hurt=1

@@ -56,7 +56,7 @@ if scenetime=320 hspeed=0
 
 }
 
-
+CutsceneStage=rm_ending1
 
 SceneX=0
 __view_set( e__VW.XView, 0, SceneX )

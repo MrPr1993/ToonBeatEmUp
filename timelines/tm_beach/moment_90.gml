@@ -5,6 +5,29 @@ if __view_get( e__VW.XView, 0 )>=4560-2-320-320
 if specialSet8=90
 {specialSet8=0 oControl.MusicFade=0 oControl.MusicFadeAdd=1
 	
+with oControl
+{
+P1SpawnX=32
+P1SpawnY=208
+P1SpawnXadd=32
+P1SpawnYadd=208
+
+P2SpawnX=32
+P2SpawnY=208
+P2SpawnXadd=32
+P2SpawnYadd=208
+
+P3SpawnX=32
+P3SpawnY=208
+P3SpawnXadd=32
+P3SpawnYadd=208
+
+P4SpawnX=32
+P4SpawnY=208
+P4SpawnXadd=32
+P4SpawnYadd=208
+}
+	
 with cast 
 {
 dust_make(x-16,y+1,z,-2,0,0)

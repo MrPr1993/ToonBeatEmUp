@@ -1,6 +1,8 @@
 /// @description Beta Test
 feats_check(-1)
 
+if playerselbuffer!=0 playerselbuffer--;
+
 audio_master_gain(global.Mastervolume/100)
 
 controller_setup()

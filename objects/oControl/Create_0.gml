@@ -1,9 +1,9 @@
 room_speed=60
 
-global.CanGlobalBeta=1 //////////SET TO 0 TO DEACTIVATE BETA MODE
+global.CanGlobalBeta=1; //////////SET TO 0 TO DEACTIVATE BETA MODE
 global.GameDemo=0;
 
-gamever="V.1.0.0.4"
+gamever="V.1.0.0.5"
 
 if instance_exists(oFeatDisplay) with oFeatDisplay instance_destroy();
 
@@ -460,6 +460,7 @@ p2selFrame=0
 p3selFrame=0
 p4selFrame=0
 
+playerselbuffer=0;
 
 ////Screen Effect for Intro
 stageIntro=1

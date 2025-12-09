@@ -13,6 +13,8 @@ with p4 instance_destroy()
 
 instance_activate_all()
 
+with oControl playerselbuffer=2
+
 if continuePlayer=1
 with oControl with p1 {ContinueMode=0 continueScreen=2 ContinueSelect=1
 	continueFlash=0 characterSelect=global.P1Char

@@ -107,6 +107,7 @@ draw_set_font(global.scorefont)
 //draw_sprite_ext(spr_playerface,4,23*characterSelect,0,1,1,0,c_white,1)
 
 
+
 soldout=0;
 
 character=-1;
@@ -173,22 +174,22 @@ if global.UnlockAltPal
 {
 if controlNO=1
 {if key_up_pressed {_switchcolor=1 if global.p1Pal=0 global.p1Pal=palmax else global.p1Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {_switchcolor=1  if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
+if key_down_pressed!=0 {_switchcolor=1  if global.p1Pal=palmax global.p1Pal=0 else global.p1Pal+=1 PlaySound(snd_steal)}
 
 }
 if controlNO=2
 {if key_up_pressed {_switchcolor=1 if global.p2Pal=0 global.p2Pal=palmax else global.p2Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {_switchcolor=1 if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1 PlaySound(snd_steal)}
+if key_down_pressed!=0 {_switchcolor=1 if global.p2Pal=palmax global.p2Pal=0 else global.p2Pal+=1 PlaySound(snd_steal)}
 
 }
 if controlNO=3
 {if key_up_pressed {_switchcolor=1 if global.p3Pal=0 global.p3Pal=palmax else global.p3Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {_switchcolor=1 if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1 PlaySound(snd_steal)}
+if key_down_pressed!=0 {_switchcolor=1 if global.p3Pal=palmax global.p3Pal=0 else global.p3Pal+=1 PlaySound(snd_steal)}
 
 }
 if controlNO=4
 {if key_up_pressed {_switchcolor=1 if global.p4Pal=0 global.p4Pal=palmax else global.p4Pal-=1 PlaySound(snd_steal)}
-if -key_down_pressed {_switchcolor=1 if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1 PlaySound(snd_steal)}
+if key_down_pressed!=0 {_switchcolor=1 if global.p4Pal=palmax global.p4Pal=0 else global.p4Pal+=1 PlaySound(snd_steal)}
 
 }
 }
@@ -215,6 +216,8 @@ draw_sprite_ext(_charselect,_mapframe,9+18*characterSelect,34,1,1,0,c_white,1) p
 if soldout 
 draw_sprite_ext(_charselect,_mapframe,9+18*characterSelect,34,1,1,0,c_red,0.25)
 
+if oControl.playerselbuffer=0
+{
 if key_A or key_B or key_X
 if soldout
 {PlaySound(snd_steal)
@@ -231,6 +234,7 @@ if playerNO=4 {global.P4Char=characterSelect}
 character=characterSelect
 
 PlayerLife=global.LifeStart+1 event_user(9)
+}
 }
 
 }
