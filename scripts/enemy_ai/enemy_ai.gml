@@ -109,6 +109,13 @@ else
 	else {key_up=0 key_down=0}
 	}
 	else {key_up=0 key_down=0}
+	
+				if place_meeting(x,y,targetEnemy)
+			{
+			//if image_xscale=1 {canAttack=0 anim=1 key_left=-1 key_right=0} else {canAttack=0 anim=1 key_right=1 key_left=0}	
+			//if canAttack!=0 {key_left=0 key_right=0 anim=0 canAttack=0 alarm[1]=8}
+			canAttack=53
+			}
 	}
 
 	if canAttack=1 ///Try to get to the opponent
@@ -123,8 +130,11 @@ else
 			}else 
 			{
 			if place_meeting(x,y,targetEnemy)
-			if image_xscale=1 {canAttack=0 anim=1 key_left=-1 key_right=0} else {canAttack=0 anim=1 key_right=1 key_left=0}	
-			if canAttack!=0 {key_left=0 key_right=0 anim=0 canAttack=0 alarm[1]=8}
+			{
+			//if image_xscale=1 {canAttack=0 anim=1 key_left=-1 key_right=0} else {canAttack=0 anim=1 key_right=1 key_left=0}	
+			//if canAttack!=0 {key_left=0 key_right=0 anim=0 canAttack=0 alarm[1]=8}
+			canAttack=53
+			}
 			}
 		}
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
@@ -149,8 +159,8 @@ else
 	 {anim=0 key_left=0 key_right=0 key_up=0 key_down=0 key_attack=0
 
  
-	 if x<oControl.camX+16 {canAttack=1}
-	  if x>oControl.camX+320-16 {canAttack=1}
+	 if x<oControl.camX+16 {canAttack=51 if targetEnemy.y<y canAttack=52 key_right=1}
+	 else if x>oControl.camX+320-16 {canAttack=51 if targetEnemy.y<y canAttack=52 key_left=1}
 	 }
 
 
@@ -171,6 +181,24 @@ else
 	{
 	if x>targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
 	}
+	
+	 if canAttack=51 or canAttack=52///Move On-Screen, Move Up/Down
+	 {key_down=0 key_up=0 if canAttack=51 key_up=1 else key_down=1 dashing=2
+	anim=1
+	{if image_xscale=-1 {key_left=-1 key_right=0} else {key_right=1 key_left=0}}
+	{key_up=0 key_down=0}
+	 
+	 if (x>oControl.camX-sprite_get_width(mask_index)/2 and x<oControl.camX+320+sprite_get_width(mask_index)/2)
+	 {alarm[1]=2 canAttack=choose(0,1,2,3,4)}
+	 }
+	 
+	 if canAttack=53 ////Stab back from enemy
+	 {
+	{if image_xscale=-1 {key_left=-1 key_right=0} else {key_right=1 key_left=0}}
+	if x<targetEnemy.x-sprite_get_width(mask_index)/2 or x>targetEnemy.x+sprite_get_width(mask_index)/2 {alarm[1]=2 canAttack=choose(0,1,2,3,4)}
+	 }
+	 
+
 
 	 if canAttack=5 ///Move On-Screen
 	{anim=1

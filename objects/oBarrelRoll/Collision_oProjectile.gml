@@ -10,7 +10,7 @@ if x>other.SourceX sourceCheckX=-1 else sourceCheckX=1
 with other.hitSource
 {if object_index=oPlayer
 if weaponAttack=1
-weaponLife-=1-1*global.Cheat[10]*global.NoCheat
+weaponLife-=1-1*global.Cheat[11]*global.NoCheat
 }
 event_user(0)
 }

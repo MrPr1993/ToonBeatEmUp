@@ -64,7 +64,7 @@ frame_set(4,3,0.1)
 	///Machine Gun Fire
 	if weapontype=2 or weapontype=3
 	{
-	if AnimFrame=0 weaponLife-=1-1*global.Cheat[10]*global.NoCheat
+	if AnimFrame=0 weaponLife-=1-1*global.Cheat[11]*global.NoCheat
 	if AnimFrame=0
 	or AnimFrame=0.8 or AnimFrame=1.6 or AnimFrame=2.4  or AnimFrame=3.2
 	{
@@ -85,7 +85,7 @@ frame_set(4,3,0.1)
 	{
 	if AnimFrame=0 {
 		if -key_left image_xscale=-1 if key_right image_xscale=1
-		weaponLife-=1-1*global.Cheat[10]*global.NoCheat PlaySound(weaponProjSnd)
+		weaponLife-=1-1*global.Cheat[11]*global.NoCheat PlaySound(weaponProjSnd)
 		
 	flashFX(x+38*image_xscale,y,z-50,weaponProjFlashSpr,0,1,0,1,1,c_white,1)
 	projectile_create(x+38*image_xscale,y,z-50,-8,weaponProjSpr,weaponProjSpd*image_xscale,weaponProjMask,weaponProjHitSpr,weaponDamage,weaponHitType,weapontargetHeight,0,0)
@@ -135,7 +135,7 @@ if AnimFrame>6.7 {canmove=1 anim=0}
 			///Ice Gun Fire
 	if weapontype=6
 	{
-	if AnimFrame=0 weaponLife-=1-1*global.Cheat[10]*global.NoCheat
+	if AnimFrame=0 weaponLife-=1-1*global.Cheat[11]*global.NoCheat
 	if AnimFrame=0
 	{MoveType=weaponHitType
 	PlaySoundNoStack(weaponProjSnd)
@@ -157,7 +157,7 @@ if AnimFrame>6.7 {canmove=1 anim=0}
 	hit=0 selfatk.MoveType=1 selfatk.HitType=1 selfatk.damage=0.25
 		selfatk.HitSound=-1 selfatk.spriteFX=spr_nospace
 		
-	if AnimFrame=0 weaponLife-=1-1*global.Cheat[10]*global.NoCheat
+	if AnimFrame=0 weaponLife-=1-1*global.Cheat[11]*global.NoCheat
 	if AnimFrame=0 
 	{ atk=1
 	PlaySoundNoStack(weaponProjSnd)
@@ -240,7 +240,7 @@ if AnimFrame=clamp(AnimFrame,2,2.9) weaponBack=0 else weaponBack=1
 ///Flamethrower
 	if weapontype=19945
 	{
-	if AnimFrame=0 {weaponLife-=1-1*global.Cheat[10]*global.NoCheat specialtimes[6]=0 specialtimes[5]=0}
+	if AnimFrame=0 {weaponLife-=1-1*global.Cheat[11]*global.NoCheat specialtimes[6]=0 specialtimes[5]=0}
 	specialtimes[6]+=0.25 if specialtimes[6]=2 specialtimes[6]=0
 	sprite_index=spr_sofia_gunstand if AnimFrame<1 atk=1 else atk=0
 	frame_set(0,0,0.5) if AnimFrame=1 {
@@ -272,7 +272,7 @@ with flame	{z=-57+13 image_speed=0.5 sprite_index=spr_hina_firebreath2 alarm[0]=
 ///Ice Gun
 	if weapontype=19946
 	{
-	if AnimFrame=0 {weaponLife-=1-1*global.Cheat[10]*global.NoCheat specialtimes[6]=0 specialtimes[5]=0}
+	if AnimFrame=0 {weaponLife-=1-1*global.Cheat[11]*global.NoCheat specialtimes[6]=0 specialtimes[5]=0}
 	specialtimes[6]+=0.25 if specialtimes[6]=2 specialtimes[6]=0
 	sprite_index=spr_sofia_gunstand if AnimFrame<1 atk=1 else atk=0
 	frame_set(0,0,0.5) if AnimFrame=1 {

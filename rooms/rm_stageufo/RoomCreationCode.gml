@@ -1,6 +1,6 @@
 musicplaystart(-1)
-global.HiScoreStage=6
-global.HiScoreLevel=6
+global.HiScoreStage=5
+global.HiScoreLevel=5
 //with oEnemySpawner {timeline=tm_stage3 event_user(0)}
 
 oControl.stagePause=1

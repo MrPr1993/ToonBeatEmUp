@@ -570,7 +570,7 @@ selfatk.height=128
 	comboBreak=0
 	flashX=6
 	flashY=2
-	flashZ=48 damage=0.6
+	flashZ=48 damage=0.1
 MoveType=0
 
 

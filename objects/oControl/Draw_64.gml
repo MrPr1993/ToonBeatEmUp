@@ -507,8 +507,7 @@ stageEnd=0
 }
 
 ///Check Cheats
-if StrongMode=1
-
+if StrongMode=1 or (global.CheatUnlock[16] and global.NoCheat)
 {oPlayer.extradamage=9999 
 oPlayer.extradefense=9999 
 }else

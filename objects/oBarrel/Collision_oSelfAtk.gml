@@ -12,7 +12,7 @@ with other.hitSource
 {if object_index=oPlayer
 {comboScoreTime=oControl.ComboTime
 if weaponAttack=1
-weaponLife-=1-1*global.Cheat[10]*global.NoCheat
+weaponLife-=1-1*global.Cheat[11]*global.NoCheat
 }
 }
 event_user(0)

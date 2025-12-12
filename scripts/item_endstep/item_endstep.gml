@@ -32,7 +32,7 @@ function item_endstep() {
 	else
 	spdX=2*-image_xscale
 	canGrav=1 gravLandHalt=1 spdZ=-8 attack=0 spinBack=1
-	weaponLife-=1-1*global.Cheat[10]*global.NoCheat
+	weaponLife-=1-1*global.Cheat[11]*global.NoCheat
 	}
 	else
 	{if itemHP!=1 itemHP-=1 else

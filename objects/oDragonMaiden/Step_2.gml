@@ -38,7 +38,7 @@ body.image_index=image_index
 
 
 if anim=9999 ////Dead
-{body.image_index=image_index
+{body.image_index=image_index lockZ=lerp(lockZ,0,0.1)
 	lockPos=0
 	if AnimFrame=0 {sprite_index=spr_dragonmaiden_headdizzy specialtimes[0]=0 specialcheck0=1 specialcheck1=0}
 selfatk.atk=0
@@ -272,7 +272,7 @@ lockX-=4*image_xscale specialtimes[6]=point_distance(x,0,targetEnemy.x-24*image_
 	frame_set(2,1,0.5)
 	frame_set(3,2,0.05)	
 	frame_set(4,1,0.01)
-	if AnimFrame>4.5 {canmove=1 anim=0}
+	if AnimFrame>4.5 {canmove=1 alarm[1]=choose(60,80,100,120) anim=0}
 	}
 	}
 	
@@ -317,7 +317,7 @@ HitQuake=10;
 	frame_set(4,3,0.1)
 	frame_set(5,4,0.1) if AnimFrame=6 {if specialtimes[1]!=3 {specialtimes[1]+=1 AnimFrame=1}}
 	frame_set(6,0,0.1)
-	if AnimFrame>6.5 {anim=0 canmove=1}
+	if AnimFrame>6.5 { alarm[1]=choose(60,80,100,120) anim=0 canmove=1}
 	}
 	
 	}
@@ -343,7 +343,7 @@ lockX-=8*image_xscale
 lockX+=5*image_xscale
 AnimFrame+=0.5
 
-	if AnimFrame>4.5 {canmove=1 anim=0}
+	if AnimFrame>4.5 { alarm[1]=choose(60,80,100,120) canmove=1 anim=0}
 	}
 }
 	
@@ -390,7 +390,7 @@ frame_set(12,0,0.2)
 frame_set(13,0,0.2)
 frame_set(14,0,0.01)
 if AnimFrame>14.5
-{lockY=y lockZ=0 immune=0 anim=0 lockPos=1 alarm[1]=100 canmove=1}
+{lockX=x lockY=y lockZ=z immune=0 anim=0 lockPos=1 alarm[1]=100 canmove=1}
 	
 	}
 	
@@ -420,5 +420,5 @@ if anim=595000
 {sprite_index=spr_dragonmaiden_headpanic image_index+=0.5 if image_index=3 image_index=1 if AnimFrame>46 or AnimFrame<4 image_index=0.5}
 AnimFrame+=1
 
-if AnimFrame>=50 {canmove=0 AnimFrame=6 anim=12 hurt=0 screenInd=0 }
+if AnimFrame>=50 { alarm[1]=choose(60,80,100,120) canmove=1 AnimFrame=6 anim=12 hurt=0 screenInd=0 }
 }
