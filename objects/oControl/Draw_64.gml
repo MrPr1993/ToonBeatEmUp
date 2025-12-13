@@ -327,6 +327,7 @@ if keyboard_check_pressed(ord("1")) HurtTest-=1
 if keyboard_check_pressed(ord("3")) HurtTest+=1
 
 draw_set_halign(fa_right)
+draw_text_transformed(320,192,string_hash_to_newline("ArcadeDeath "+string(global.ArcadeDeath)),0.5,0.5,0)
 draw_text_transformed(320,200,string_hash_to_newline("Stage Time "+string(stagetime)+"/"+string(stagetimemax)),0.5,0.5,0)
 draw_text_transformed(320,216,string_hash_to_newline("P Mid"+string(allPlayersMid)),0.5,0.5,0)
 draw_text_transformed(320,222,string_hash_to_newline("Players Edge"+string(allPlayersEdge)),0.5,0.5,0)
@@ -507,7 +508,9 @@ stageEnd=0
 }
 
 ///Check Cheats
-if StrongMode=1 or (global.CheatUnlock[16] and global.NoCheat)
+if (global.Cheat[16] and global.NoCheat) StrongMode=1
+
+if StrongMode=1
 {oPlayer.extradamage=9999 
 oPlayer.extradefense=9999 
 }else
@@ -985,7 +988,8 @@ if keyboard_check_pressed(ord("4")) global.AllStageModeUnlock^=1;
 }
 
 if global.AllStageModeUnlock and global.MultiVS=0
-if global.SaveNumber=0 and global.MenuGlobal=0
+if global.SaveNumber=0 and 
+global.MenuGlobal=0
 if key_LT {PlaySound(snd_select) global.AllStageMode^=1;}
 
 if key_Y if global.SaveFileNO!=0
@@ -1176,10 +1180,11 @@ if global.SaveNumber=0 alphaset=0.75
 
 draw_set_color(setsave)
 draw_sprite_ext(spr_savefile,global.AllStageMode,xadd,128+48,1,1,0,setsave,alphaset)
-
+draw_sprite(spr_scorefont,55,xadd-58-4,128+48+21)
+draw_sprite(spr_scorefont,53,xadd+58,128+48+21)
 var _t0="SAVE"
 var _t1="SLOT"
-var _t2="NO SAVE"
+var _t2="GUEST\n(NO SAVE)"
 var _t3="NEW GAME"
 var _t4="TOTAL SCORE"
 switch(global.Language)
@@ -1187,14 +1192,14 @@ switch(global.Language)
 case 1: ///Portuguese
 _t0="GUARDADO"
 _t1="ARCHIVO"
-_t2="NO ARCHIVO"
+_t2="INVITADO\n(NO ARCHIVO)"
 _t3="NUEVO ARCHIVO"
 _t4="PUNTUACIÓN TOTAL"
 break;
 case 2: ///Portuguese
 _t0="SALVO"
 _t1="ARQUIVO"
-_t2="NÃO ARQUIVO"
+_t2="CONVIDADO\n(NÃO ARQUIVO)"
 _t3="NOVO JOGO"
 _t4="PONTUAÇÃO TOTAL"
 break;

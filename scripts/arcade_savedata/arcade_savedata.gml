@@ -28,7 +28,8 @@ global.Continues=global.ContinueStart;
 global.AllStageMode=0;
 
 global.SaveText="EMPTY";
-
+if global.SaveFileNO!=0
+{
 ini_open("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini");
 
 global.AllStageMode=ini_read_real("SAVE", "ASM", 0)
@@ -66,6 +67,8 @@ _rep+=1;
 
 ini_close()
 global.StageGoing=stagesave
+}
+
 }
 
 function stage_check(_stagecheck)
@@ -196,17 +199,17 @@ case "5a": _findstage=rm_stagemermaid; global.SaveNumber=5 global.SaveText="STAG
 case "5b": _findstage=rm_stageufo; global.SaveNumber=5 global.SaveText="STAGE 5" break;
 case "5c": _findstage=rm_stagedesert; global.SaveNumber=5 global.SaveText="STAGE 5" break;
 
-case "5aC": _findstage=rm_cutscene3a; global.SaveNumber=5 global.SaveText="STAGE 6" break;
-case "5bC": _findstage=rm_cutscene3b; global.SaveNumber=5 global.SaveText="STAGE 6" break;
-case "5cC": _findstage=rm_cutscene3c; global.SaveNumber=5 global.SaveText="STAGE 6" break;
+case "5aC": _findstage=rm_cutscene5a; global.SaveNumber=5 global.SaveText="STAGE 6" break;
+case "5bC": _findstage=rm_cutscene5b; global.SaveNumber=5 global.SaveText="STAGE 6" break;
+case "5cC": _findstage=rm_cutscene5c; global.SaveNumber=5 global.SaveText="STAGE 6" break;
 //
 case "6a": _findstage=rm_stagecave; global.SaveNumber=6 global.SaveText="STAGE 6" break;
 case "6b": _findstage=rm_stagesnow; global.SaveNumber=6 global.SaveText="STAGE 6" break;
 case "6c": _findstage=rm_stageclouds; global.SaveNumber=6 global.SaveText="STAGE 6" break;
 
-case "6aC": _findstage=rm_cutscene3a; global.SaveNumber=6 global.SaveText="STAGE 7" break;
-case "6bC": _findstage=rm_cutscene3b; global.SaveNumber=6 global.SaveText="STAGE 7" break;
-case "6cC": _findstage=rm_cutscene3c; global.SaveNumber=6 global.SaveText="STAGE 7" break;
+case "6aC": _findstage=rm_cutscene6a; global.SaveNumber=6 global.SaveText="STAGE 7" break;
+case "6bC": _findstage=rm_cutscene6b; global.SaveNumber=6 global.SaveText="STAGE 7" break;
+case "6cC": _findstage=rm_cutscene6c; global.SaveNumber=6 global.SaveText="STAGE 7" break;
 //
 case "7": _findstage=rm_stagelab; global.SaveNumber=7 global.SaveText="STAGE 7" break;
 case "7C": _findstage=rm_cutscene7; global.SaveNumber=7 global.SaveText="STAGE 8" break;

@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function arcade_saving(_no){
-if global.MenuGlobal=0 and global.SaveFileNO!=0
+if global.MenuGlobal=0// and global.SaveFileNO!=0
 {
 ini_open("GAMEDATA/arcade"+string(global.SaveFileNO)+".ini");
 

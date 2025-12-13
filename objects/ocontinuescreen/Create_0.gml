@@ -375,6 +375,7 @@ case rm_stagefinal: global.StageSave=rm_creditscene break;
 }
 stageNext=global.StageSave;
 CutsceneStage=global.StageSave;
+
 }
 
 
@@ -678,6 +679,7 @@ if global.StageClear=1
 stagedata_save()
 enemydata_save()
 unlock_save()
+
 arcade_saving(global.StageSave)
 feats_stageunlock()
 feats_check(-1)

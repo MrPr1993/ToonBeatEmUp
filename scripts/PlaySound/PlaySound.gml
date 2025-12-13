@@ -6,6 +6,7 @@ function PlaySound(argument0) {
 	audio_sound_gain(argument0, timesSound, 0);
 
 audio_sound_gain(argument0,global.SFXvolume/100,0)
+audio_sound_pitch(snd,1)
 
 }
 

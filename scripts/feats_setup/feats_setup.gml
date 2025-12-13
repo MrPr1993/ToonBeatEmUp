@@ -77,7 +77,7 @@ if object_index=oContinueScreen if noshowtime and minigameroom=0 if stageClear=1
 break;
 
 case 7: featname="Legendary Dancing Diva!" ///Beat arcade mode without dying
-if object_index=oContinueScreen if stageClear=1 and minigameroom=0 if stageClear=1 and global.ArcadeDeath=0 and room=rm_stagefinal setfeats=1
+if object_index=oContinueScreen if stageClear=1 and minigameroom=0 and global.ArcadeDeath=0 and global.MenuGlobal=0 and global.Difficulty>=2 and room=rm_stagefinal setfeats=1
 break;
 
 case 8: featname="Don't Touch the Diva" ///Beat any stage without taking damage

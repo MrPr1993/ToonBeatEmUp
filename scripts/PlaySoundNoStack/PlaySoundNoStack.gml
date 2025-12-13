@@ -9,6 +9,7 @@ function PlaySoundNoStack(argument0) {
 	audio_play_sound(snd,1,0)
 	audio_sound_gain(snd, 1, 0);
 	audio_sound_gain(snd,global.SFXvolume/100,0)
+	audio_sound_pitch(snd,1)
 	}
 
 

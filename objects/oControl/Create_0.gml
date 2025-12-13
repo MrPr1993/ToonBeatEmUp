@@ -1,6 +1,6 @@
 room_speed=60
 
-global.CanGlobalBeta=1; //////////SET TO 0 TO DEACTIVATE BETA MODE
+global.CanGlobalBeta=0; //////////SET TO 0 TO DEACTIVATE BETA MODE
 global.GameDemo=0;
 
 gamever="V.1.0.0.6"
