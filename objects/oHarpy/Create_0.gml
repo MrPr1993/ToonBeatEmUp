@@ -42,6 +42,8 @@ maxhp=2
 
 height=104
 
+windbuffer=0;
+
 specialFX=0
 
 StandSpr=spr_harpy_stand

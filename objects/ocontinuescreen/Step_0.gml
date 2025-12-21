@@ -1,5 +1,5 @@
 /// @description Insert description here
-// You can write your code in this editor
+// You can write your code in this editorglobal.Gold+=GoldGet
 
 
 if global.CanGlobalBeta=1
@@ -27,6 +27,8 @@ continueCountdown-=1
 }
 }
 
+if !keyboard_check(vk_escape)
+{
 if instance_exists(p1)
 {
 with p1 {controller_setup()}
@@ -50,6 +52,7 @@ if instance_exists(p4)
 with p4 {controller_setup()}
 if p4.key_start or p4.key_attack
 {continuePlayer=4 instance_destroy()}
+}
 }
 
 }

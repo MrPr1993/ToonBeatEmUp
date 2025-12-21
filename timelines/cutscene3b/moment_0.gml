@@ -140,7 +140,7 @@ if scenetime=1740
 {audio_stop_all()
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "Fufufu... You..."
+cutscenename="ANNA MARI" cutsceneline= "Fufufu... You..."
 if global.Language!=0 cutsceneline=languagedialogue[7]
 }
 scenetime=1860
@@ -153,7 +153,7 @@ sprite_index=spr_ghostslash image_speed=0
 
 with oControl
 {quakeFXTime=10
-cutscenename="ANNAMARI" cutsceneline= "FOOLS!"
+cutscenename="ANNA MARI" cutsceneline= "FOOLS!"
 if global.Language!=0 cutsceneline=languagedialogue[8]
 }
 }
@@ -186,7 +186,7 @@ x=180 y=182
 with oControl
 {
 //CHOP
-cutscenename="ANNAMARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for thinking you could put a damper on my joyous haunting! The living cannot harm the dead!"
+cutscenename="ANNA MARI" cutsceneline= "OOOOHOHOHOHO! Serves you lot right for thinking you could put a damper on my joyous haunting! The living cannot harm the dead!"
 if global.Language!=0 cutsceneline=languagedialogue[9]
 }
 
@@ -198,7 +198,7 @@ if scenetime=2780
 {sprite_index=spr_cutscene3b3 image_index=1 audio_stop_all()
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "OHOHOH-oh...?"
+cutscenename="ANNA MARI" cutsceneline= "OHOHOH-oh...?"
 if global.Language!=0 cutsceneline=languagedialogue[10]
 }
 }
@@ -224,7 +224,7 @@ if scenetime=3400
 {
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "...Oh dear..."
+cutscenename="ANNA MARI" cutsceneline= "...Oh dear..."
 if global.Language!=0 cutsceneline=languagedialogue[13]
 }
 }
@@ -247,7 +247,7 @@ musicplaystart(msc_training)
 	
 with oControl
 {quakeFXTime=10
-cutscenename="ANNAMARI" cutsceneline= "I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
+cutscenename="ANNA MARI" cutsceneline= "I GIVE! I'm sorry! I only haunted this place so to vent my frustrations after some FILTHY thieves rushed in and stole my family heirloom!"
 if global.Language!=0 cutsceneline=languagedialogue[14]
 }
 }
@@ -272,7 +272,7 @@ if scenetime=4540
 {image_index=1
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "Let's... make a deal since we're in the same issue... I revive you all, and you'll get back my heirloom along with yours!"
+cutscenename="ANNA MARI" cutsceneline= "Let's... make a deal since we're in the same issue... I revive you all, and you'll get back my heirloom along with yours!"
 if global.Language!=0 cutsceneline=languagedialogue[17]
 }
 }
@@ -308,7 +308,7 @@ if scenetime=5760
 {
 with oControl
 {
-cutscenename="BAHATI" cutsceneline= "Well, where the thieves went, miss Annamari?"
+cutscenename="BAHATI" cutsceneline= "Well, where the thieves went, miss ANNA MARI?"
 if global.Language!=0 cutsceneline=languagedialogue[20]
 }
 }
@@ -331,7 +331,7 @@ with actor8 {x=640-32}
 
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "They kinda spread out into my spooky doors... so you should pick which one."
+cutscenename="ANNA MARI" cutsceneline= "They kinda spread out into my spooky doors... so you should pick which one."
 if global.Language!=0 cutsceneline=languagedialogue[21]
 }
 }
@@ -434,7 +434,7 @@ languagedialogue[6]="Ahora no, Hina, ¿no ves que intentamos atrapar a ese espec
 
 languagedialogue[7]="Fufufu… Ustedes…"
 
-//(Annamari decapitates them!)
+//(ANNA MARI decapitates them!)
 
 languagedialogue[8]="¡INSENSATAS!"
 
@@ -460,11 +460,11 @@ languagedialogue[17]= "Hagamos… un trato dado que tenemos el mismo problema…
 
 languagedialogue[18]="Espera, ¿cómo vas a—?"
 
-//(Annamari brings them back to life putting their head back and using duct tape)
+//(ANNA MARI brings them back to life putting their head back and using duct tape)
 
 languagedialogue[19]="AH. Qué incómodo para mi cuello…"
 
-languagedialogue[20]="Bueno, ¿a dónde fueron los ladrones, señorita Annamari?"
+languagedialogue[20]="Bueno, ¿a dónde fueron los ladrones, señorita ANNA MARI?"
 
 languagedialogue[21]="Se dispersaron por mis puertas espeluznantes… así que tendrán que elegir una."
 
@@ -492,7 +492,7 @@ languagedialogue[6]="Calma Hina, não tá vendo que estamos procurando aquela as
 
 languagedialogue[7]="Fufufu... Todas..."
 
-//(Annamari decapitates them!)
+//(ANNA MARI decapitates them!)
 
 languagedialogue[8]="TOLAS!"
 
@@ -518,11 +518,11 @@ languagedialogue[17]="Façamos... um acordo visto que nossas questões se entrel
 
 languagedialogue[18]="Peraí como que você vai..."
 
-//(Annamari brings them back to life putting their head back and using duct tape)
+//(ANNA MARI brings them back to life putting their head back and using duct tape)
 
 languagedialogue[19]="AI! Meu pescoço não tá confortável não..."
 
-languagedialogue[20]="Então, onde que os ladrões foram, dama Annamari?"
+languagedialogue[20]="Então, onde que os ladrões foram, dama ANNA MARI?"
 
 languagedialogue[21]="Eles se espalharam pelas minhas portas assombradas... então cabe a vós escolher qual delas seguir."
 

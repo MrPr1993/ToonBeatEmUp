@@ -70,11 +70,15 @@ hoverZ=lerp(hoverZ,-2,0.025) if hoverZ<-1.8 hover=1
 if atkBuffer1!=0 {atkBuffer2=0 atkBuffer1-=1}
 else atkBuffer2=1
 
+if windbuffer!=0 windbuffer--;
+
 if anim=10
 {AnimFrame=0 canmove=0 specialcheck0=0
 
 if atkBuffer2=1 {atkBuffer2=0 atkBuffer1=choose(130,180) anim=choose(13,13,13,14,14) exit;}
 if distance_to_point(targetEnemy.x,targetEnemy.y)>100 anim=11 else anim=12
+
+if anim=14 if windbuffer!=0 anim=11 else if windbuffer=choose(320,400,420)
 
 if anim=13 if x!=clamp(x,oControl.camX-20,oControl.camX+320+20)
 anim=11
@@ -157,7 +161,7 @@ if anim=13 ///Sing
 		sprite_index=spr_harpy_wind
 		image_index+=0.25
 		zSpeed=0 z-=0.25 sentflying=-0.1*image_xscale
-oPlayer.x+=3*image_xscale
+oPlayer.x+=2*image_xscale
 	AnimFrame+=0.1
 		if specialtimes[0]>207 or z<-100 or AnimFrame>=27
 		{canmove=1 anim=0 AnimFrame=0 sentflying=0 alarm[1]=60}

@@ -9,7 +9,7 @@ and !instance_exists(en8)
 and !instance_exists(en9)
 and specialSet6=300
 {
-if specialSet7=0
+if specialSet7<=0
 {//camMove=0 camMax=room_width
 with oControl
 {time=99

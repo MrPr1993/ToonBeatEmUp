@@ -143,7 +143,7 @@ languagetext[35]="SHOW MONEY"
 languagetext[36]="SHOW ACHIEVEMENT"
 languagetext[37]="OLD LCD"
 languagetext[38]="MASTER VOLUME"
-languagetext[39]="SETTINGS"
+languagetext[39]="FULL SCREEN"
 languagetext[40]="SETTINGS"
 break;
 case 1: ///ESPAÑOL
@@ -186,7 +186,7 @@ languagetext[35]="MOSTRAR DINERO"
 languagetext[36]="MOSTRAR LOGROS"
 languagetext[37]="LCD VIEJO"
 languagetext[38]="VOLUMEN MAESTRO"
-languagetext[39]="AJUSTES"
+languagetext[39]="PANTALLA COMPLETA"
 languagetext[40]="AJUSTES"
 break;
 case 2: //PORTUGUÊSE
@@ -229,7 +229,7 @@ languagetext[35]="MOSTRAR DINHEIRO"
 languagetext[36]="MOSTRAR CONQUISTA"
 languagetext[37]="VELHO LCD"
 languagetext[38]="VOLUME MESTRE"
-languagetext[39]="CONFIGURAÇÕES"
+languagetext[39]="TELA CHEIA"
 languagetext[40]="CONFIGURAÇÕES"
 break;
 }

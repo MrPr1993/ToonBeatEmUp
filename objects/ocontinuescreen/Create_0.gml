@@ -384,7 +384,7 @@ stageClearCheck=0
 actPorg=0
 actPorgT=0
 
-
+alreadyGold=0;
 
 instance_deactivate_all(true)
 
@@ -651,6 +651,13 @@ if global.Continues=0
 alarm[2]=0
 alarm[3]=0
 alarm[4]=2
+//GoldShow=1;
+//GoldGet+=round(p1.PlayerScore/50)
+//GoldGet+=round(p2.PlayerScore/50)
+//GoldGet+=round(p3.PlayerScore/50)
+//GoldGet+=round(p4.PlayerScore/50)
+//GoldGet+=round(continueStageScore/50)
+//global.Gold+=GoldGet gold_save()
 }
 else
 musicplayonce(msc_countdown)

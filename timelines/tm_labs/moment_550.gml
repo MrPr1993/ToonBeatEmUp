@@ -13,22 +13,22 @@ quakeFXTime=10
 with oPlayer
 {
 areaEntry=1
-automoveX=oControl.camX+160-64
+automoveX=8848//oControl.camX+160-64
 automoveY=oControl.wallY+16+16*controlNO
 
 if playerNO=2
 {
-automoveX=oControl.camX+160+64
+automoveX=8848//oControl.camX+160+64
 automoveY=oControl.wallY+16+16*controlNO
 }
 if playerNO=3
 {
-automoveX=oControl.camX+160-64
+automoveX=8848//oControl.camX+160-64
 automoveY=oControl.wallY+64+16+16*controlNO
 }
 if playerNO=4
 {
-automoveX=oControl.camX+160+64
+automoveX=8848//oControl.camX+160+64
 automoveY=oControl.wallY+64+16+16*controlNO
 }
 

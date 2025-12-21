@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemy_switch(_name,_isweak){
 
+
 switch(_name)
 {
 ///Mr. Burg

@@ -6,7 +6,7 @@ x=6144+96  y=224 areaEntry=0
 if instance_number(oPlayer)!=1
 with oPlayer
 {
-y=196+16*controlNO
+y=224+16*controlNO
 }
 
 //timer_set(1)
@@ -14,5 +14,5 @@ y=196+16*controlNO
 if instance_number(oPlayer)!=1
 with oPlayer
 {
-y=oControl.wallY+16*controlNO
+y=224+16*controlNO
 }

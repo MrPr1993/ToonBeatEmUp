@@ -35,15 +35,15 @@ spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 image_xscale=-1
 }
 
 ////
-if playernumber>=4 {P2en1=instance_create(__view_get( e__VW.XView, 0 )+160+64,224-32,oZombieMan)
+if playernumber>=4 {P2en1=instance_create(__view_get( e__VW.XView, 0 )+160+64,224-32,oEntryBreak)
 with P2en1 {rangeX=0 instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 image_xscale=-1
 	shellSpawnSpd=0.25	spawnSprFX=spr_zombiem_rise	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 current_pal=0}}
 
-if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+160+64,224+32,oZombieMan)
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0 )+160+64,224+32,oEntryBreak)
 with P2en2 {rangeX=0 instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1 image_xscale=-1
 	shellSpawnSpd=0.25	spawnSprFX=spr_zombiem_rise	spawnFall=spr_zombiem_stand	spawnEnemy=oZombieMan	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 current_pal=0}}
 
-if playernumber>=2 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+160-64,224,oZombieWoman)
+if playernumber>=2 {P2en3=instance_create(__view_get( e__VW.XView, 0 )+160-64,224,oEntryBreak)
 with P2en3 {rangeX=0 instaSpawn=1 spawnSpeedZ=0 shellSpr=0 shellSprMax=5 isDepth=1
 	shellSpawnSpd=0.25	spawnSprFX=spr_zombiew_rise	spawnFall=spr_zombiew_stand	spawnEnemy=oZombieWoman	xSpeed=0 ySpeed=0 zSpeed=0 ground=1 current_pal=0}}
 

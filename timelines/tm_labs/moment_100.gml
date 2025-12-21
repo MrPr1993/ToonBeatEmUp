@@ -10,7 +10,7 @@ and !instance_exists(en9)
 and !instance_exists(en10)
 and specialSet6=300
 {
-if specialSet8=0
+if specialSet8<=0
 {//camMove=0 camMax=room_width
 with oControl
 {time=99
@@ -90,14 +90,14 @@ en8=instance_create(4060,250,oEntryJump)
 with en8 {rangeX=0 image_xscale=1 spawnFall=spr_ninjabun_jump enemy_switch("KONI",0) spawnEnemy=oNinjaBun}	
 
 ////
-if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+320-64,190,oEntryJump)
-with P2en1 {image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
+if playernumber>=2 { P2en1=instance_create(__view_get( e__VW.XView, 0)+320-64,190,oEntryJump)
+with P2en1 {rangeX=0 image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
 
 if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+320-64,222,oEntryJump)
-with P2en2 {image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
+with P2en2 {rangeX=0 image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
 
 if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+320-64,258,oEntryJump)
-with P2en3 {image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
+with P2en3 {rangeX=0 image_xscale=-1 enemy_switch("KONI",0) canAttack=5 alarm[1]=60}}
 ////
 
 }

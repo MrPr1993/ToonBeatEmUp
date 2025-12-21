@@ -62,6 +62,8 @@ global.Gold+=GoldGet gold_save()
 GoldShow=global.GoldShow
 }
 
+gameover_reset()
+
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1
 alarm[3]=320
@@ -75,6 +77,11 @@ audio_stop_all()
 setGameOver=2
 GoldShow=global.GoldShow
 //gold_save()
+
+global.Gold+=GoldGet gold_save()
+
+gameover_reset()
+
 musicplayonce(msc_gameover)
 isGameOver=1 continueScreen=1
 alarm[3]=320

@@ -311,6 +311,8 @@ hiscore_input()
 if playNO=4 with p4
 hiscore_input()
 finalStage=0
+
+
 }
 
 if blackFX!=0

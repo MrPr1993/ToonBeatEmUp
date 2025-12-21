@@ -14,6 +14,12 @@ if keyboard_check_pressed(vk_backspace)
 if keyboard_check(vk_shift) {var stp=1; repeat(20){lockedMap[stp]=0; stp+=1;}}
 else
 {var stp=1; repeat(20){lockedMap[stp]=1; stp+=1;}}
+
+if keyboard_check_pressed(ord("P"))
+{
+{var stp=1; repeat(20){global.UnlockStage[stp]=0; lockedMap[stp]=0; stp+=1;}}
+}
+
 }
 
 if key_A or key_Y or key_X or keyboard_check_pressed(vk_enter) or key_start

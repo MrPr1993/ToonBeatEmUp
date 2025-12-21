@@ -54,7 +54,9 @@ draw_text(160,24," "+string(global.Mastervolume)+string("%"))
 draw_text(160,32," "+string(global.BGMvolume)+string("%"))
 draw_text(160,40," "+string(global.SFXvolume)+string("%"))
 
-draw_text(160,48+4," "+string(window_get_width())+"X"+string(window_get_height()))
+var _screen=string(window_get_width())+"X"+string(window_get_height());
+if global.ScreenSize=2 _screen=string(languagetext[39]);
+draw_text(160,48+4," "+string( _screen))
 
 
 if instance_exists(oPause) TVfx=oPause.TVfx

@@ -339,6 +339,7 @@
     {"$GMIncludedFile":"","%Name":"SEDConcept3.png","CopyToMask":-1,"filePath":"datafiles/Gallery/ConceptArt","name":"SEDConcept3.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ShadesStages1.png","CopyToMask":-1,"filePath":"datafiles/Gallery/ConceptArt","name":"ShadesStages1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ShadesStages2.png","CopyToMask":-1,"filePath":"datafiles/Gallery/ConceptArt","name":"ShadesStages2.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"ShadesStages3.png","CopyToMask":-1,"filePath":"datafiles/Gallery/ConceptArt","name":"ShadesStages3.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"StageConcept1.png","CopyToMask":-1,"filePath":"datafiles/Gallery/ConceptArt","name":"StageConcept1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"DDivasArtwork2b.png","CopyToMask":-1,"filePath":"datafiles/Gallery","name":"DDivasArtwork2b.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"DDivasArtworkb.png","CopyToMask":-1,"filePath":"datafiles/Gallery","name":"DDivasArtworkb.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -443,7 +444,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.212",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"ToonBeatEmUp",
   "resources":[

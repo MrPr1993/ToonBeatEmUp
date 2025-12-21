@@ -498,17 +498,17 @@ var _fishdist=240+x;
 
 with oPlayer
 {
-var _fishdist=oFishingMinigame.x-240;
-if _fishdist<=100-240 var _fishget=fish_choose(random_range(0,1))
-else if _fishdist<=160-240 var _fishget=fish_choose(random_range(1,2))
-else if _fishdist<=240-240 var _fishget=fish_choose(random_range(2,3))
-else if _fishdist<=320-240 var _fishget=fish_choose(random_range(3,4))
-else if _fishdist<=400-240 var _fishget=fish_choose(random_range(4,5))
-else if _fishdist<=480-240 var _fishget=fish_choose(random_range(5,6))
-else if _fishdist<=560-240 var _fishget=fish_choose(random_range(6,7))
-else if _fishdist<=620-240 var _fishget=fish_choose(random_range(7,8))
-else if _fishdist<=700-240 var _fishget=fish_choose(random_range(8,9))
-else var _fishget=fish_choose(random_range(9,10))
+var _fishdist=oFishingMinigame.x;
+if _fishdist<=100+240 var _fishget=fish_choose(choose(0,1))
+else if _fishdist<=160+240 var _fishget=fish_choose(choose(1,2))
+else if _fishdist<=240+240 var _fishget=fish_choose(choose(2,3))
+else if _fishdist<=320+240 var _fishget=fish_choose(choose(3,4))
+else if _fishdist<=400+240 var _fishget=fish_choose(choose(4,5))
+else if _fishdist<=480+240 var _fishget=fish_choose(choose(5,6))
+else if _fishdist<=560+240 var _fishget=fish_choose(choose(6,7))
+else if _fishdist<=620+240 var _fishget=fish_choose(choose(7,8))
+else if _fishdist<=700+240 var _fishget=fish_choose(choose(8,9))
+else var _fishget=fish_choose(choose(9,10))
 
 oFishingMinigame.fishstr=fishstr
 oFishingMinigame.fishspr=fishspr

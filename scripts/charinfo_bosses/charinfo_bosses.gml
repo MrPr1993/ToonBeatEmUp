@@ -186,7 +186,7 @@ descleftT[2]=string(_ageT)+":MORTA\nNAT.:FRANÇA\n"+string(_heightT)+":8'0"+" "+
 descrightT[2]=string(_likesT)+":CABEÇAS,MACHADOS\n"+string(_dislikesT)+":BOLOS\n"+string(_hobbyT)+":CARAS"
 descabsT[2]="FANTASMA,CORTANDO,ASSUSTANDO\nCORTANDO,ASSUSTANDO"
  
- charinfo_set(12,spr_ghost_stand,1,animsetup_enemy,ghost_effect,spr_enemypal,0,spr_enemyface,17,"ANNAMARI",
+ charinfo_set(12,spr_ghost_stand,1,animsetup_enemy,ghost_effect,spr_enemypal,0,spr_enemyface,17,"ANNA MARI",
 descT[global.Language] )
 
  
@@ -241,11 +241,11 @@ desc=descT[global.Language]
 
  
    if dataPal=2
- {enemyID=158
+ {
 	 charinfo_set(12,spr_oni_stand,2,animsetup_enemy,draw_swing,spr_ninjapal,7,spr_enemyface,31,"SHOKIJO",
 descT[global.Language] )
  
-
+enemyID=158
  
  descT[0]= "The younger of the Oni Sisters. With a chilling aura, she freezes her foes and rolls magic dice."
 descleftT[0]=string(_ageT)+":36\nNAT.:JAPAN\n"+string(_heightT)+":8'0"+" "+string(_weightT)+":180LBS"

@@ -122,7 +122,7 @@ if object_index=oContinueScreen if room=rm_stage2c if stageClear=1
 	setfeats=1}
 break;
 
-case 16: featname="ANNAMARI" ///Defeat Lady Wolf without taking any damage
+case 16: featname="ANNA MARI" ///Defeat Lady Wolf without taking any damage
 if object_index=oContinueScreen if room=rm_stage4 if stageClear=1
 {//if perfecthp
 	setfeats=1}

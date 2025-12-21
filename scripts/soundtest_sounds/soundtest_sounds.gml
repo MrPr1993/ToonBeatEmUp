@@ -351,21 +351,21 @@ case 326: soundname="DOLORES 11" playSFX=snd_twoheads11 voiceActor="" break;
 case 327: soundname="DOLORES 12" playSFX=snd_twoheads12 voiceActor="" break;
 
 
-case 328: soundname="ANNAMARI 1" playSFX=snd_ant1 voiceActor="" break;
-case 329: soundname="ANNAMARI 2" playSFX=snd_ant2 voiceActor="" break;
-case 330: soundname="ANNAMARI 3" playSFX=snd_ant3 voiceActor="" break;
-case 331: soundname="ANNAMARI 4" playSFX=snd_ant4 voiceActor="" break;
-case 332: soundname="ANNAMARI 5" playSFX=snd_ant5 voiceActor="" break;
-case 333: soundname="ANNAMARI 6" playSFX=snd_ant6 voiceActor="" break;
-case 334: soundname="ANNAMARI 7" playSFX=snd_ant7 voiceActor="" break;
-case 335: soundname="ANNAMARI 8" playSFX=snd_ant8 voiceActor="" break;
-case 336: soundname="ANNAMARI 9" playSFX=snd_ant9 voiceActor="" break;
-case 337: soundname="ANNAMARI 10" playSFX=snd_ant10 voiceActor="" break;
-case 338: soundname="ANNAMARI 11" playSFX=snd_ant11 voiceActor="" break;
-case 339: soundname="ANNAMARI 12" playSFX=snd_ant12 voiceActor="" break;
-case 340: soundname="ANNAMARI 13" playSFX=snd_ant13 voiceActor="" break;
-case 341: soundname="ANNAMARI 14" playSFX=snd_ant14 voiceActor="" break;
-case 342: soundname="ANNAMARI 15" playSFX=snd_and12 voiceActor="" break;
+case 328: soundname="ANNA MARI 1" playSFX=snd_ant1 voiceActor="" break;
+case 329: soundname="ANNA MARI 2" playSFX=snd_ant2 voiceActor="" break;
+case 330: soundname="ANNA MARI 3" playSFX=snd_ant3 voiceActor="" break;
+case 331: soundname="ANNA MARI 4" playSFX=snd_ant4 voiceActor="" break;
+case 332: soundname="ANNA MARI 5" playSFX=snd_ant5 voiceActor="" break;
+case 333: soundname="ANNA MARI 6" playSFX=snd_ant6 voiceActor="" break;
+case 334: soundname="ANNA MARI 7" playSFX=snd_ant7 voiceActor="" break;
+case 335: soundname="ANNA MARI 8" playSFX=snd_ant8 voiceActor="" break;
+case 336: soundname="ANNA MARI 9" playSFX=snd_ant9 voiceActor="" break;
+case 337: soundname="ANNA MARI 10" playSFX=snd_ant10 voiceActor="" break;
+case 338: soundname="ANNA MARI 11" playSFX=snd_ant11 voiceActor="" break;
+case 339: soundname="ANNA MARI 12" playSFX=snd_ant12 voiceActor="" break;
+case 340: soundname="ANNA MARI 13" playSFX=snd_ant13 voiceActor="" break;
+case 341: soundname="ANNA MARI 14" playSFX=snd_ant14 voiceActor="" break;
+case 342: soundname="ANNA MARI 15" playSFX=snd_and12 voiceActor="" break;
 
 case 343: soundname="HATHOR 1" playSFX=snd_pharaoh1 voiceActor="" break;
 case 344: soundname="HATHOR 2" playSFX=snd_pharaoh2 voiceActor="" break;

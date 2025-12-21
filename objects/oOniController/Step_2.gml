@@ -50,7 +50,7 @@ if oniID2.hp<=0 or oniID2.dead {nooni2=1; oniID2=-1;}
 //or (oniID1.dead=1 and oniID2.dead=1)
 if nooni1=1 and nooni2=1
 {hp=0 dead=1 PlaySoundNoStack(snd_oni2)
-	if instance_exists(oEnemy1) with oEnemy1 if dead=0 {hp=0 DeathCryOnce=1 HitType=1 event_user(0)}
+	if instance_exists(oEnemy1) with oEnemy1 if dead=0 {enemydeathcount() hp=0 DeathCryOnce=1 HitType=1 event_user(0)}
 	if isBoss=1
 	{
 	room_speed=10 

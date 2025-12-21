@@ -3,6 +3,11 @@ spawner_followset("WaveSet1",0,692+224,1)
 
 oControl.stageNext=rm_creditscene
 
+////setup for ending here
+global.Ending=0
+
+///
+
 ////Skip to Plane
 //spawner_followset("WaveSet1",0,5800,1)
 //oPlayer.x=5000

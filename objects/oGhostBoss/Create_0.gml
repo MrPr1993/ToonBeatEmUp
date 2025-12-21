@@ -1,5 +1,5 @@
 enemy_data()
-name="ANNAMARI"
+name="ANNA MARI"
 enemyPortraitSpr=spr_enemyface
 enemyPortraitIndex=17
 

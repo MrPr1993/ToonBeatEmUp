@@ -6,7 +6,7 @@ global.HiScoreLevel=4
 global.StageRecord[4]=0;
 
 oControl.stagePause=1
-
+//oControl.StageNumber=8
 oControl.stageNext=rm_cutscene4a
 
 with oEnemySpawner

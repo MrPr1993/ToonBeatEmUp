@@ -17,6 +17,7 @@ ini_write_string("SAVE","RMid", stagesave)
 ini_write_real("SAVE", "ROOMID", stagenoset)
 if room=rm_stagefinal global.SaveNumber=0
 ini_write_real("SAVE", "ROOMID2", global.SaveNumber)
+
 ini_write_real("SAVE", "P1L", global.P1Life)
 ini_write_real("SAVE", "P2L", global.P2Life)
 ini_write_real("SAVE", "P3L", global.P3Life)

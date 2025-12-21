@@ -60,70 +60,70 @@ fishscore=round(0)
 fishstr=1
 
 if _fishnum=1
-{fishstr=1
+{fishstr=0.5
 fishspr=spr_fish1
 fishname=_sn1
 fishscore=round(50)
 }
 
 if _fishnum=2
-{fishstr=1.5
+{fishstr=0.75
 fishspr=spr_fish2
 fishname=_sn2
 fishscore=round(100)
 }
 
 if _fishnum=3
-{fishstr=2
+{fishstr=1
 fishspr=spr_fish3
 fishname=_sn3
 fishscore=round(150)
 }
 
 if _fishnum=4
-{fishstr=2.5
+{fishstr=1.25
 fishspr=spr_fish4
 fishname=_sn4
 fishscore=round(200)
 }
 
 if _fishnum=5
-{fishstr=3
+{fishstr=1.5
 fishspr=spr_fish5
 fishname=_sn5
 fishscore=round(250)
 }
 
 if _fishnum=6
-{fishstr=3.5
+{fishstr=1.75
 fishspr=spr_fish6
 fishname=_sn6
 fishscore=round(300)
 }
 
 if _fishnum=7
-{fishstr=4
+{fishstr=2
 fishspr=spr_fish7
 fishname=_sn7
 fishscore=round(350)
 }
 
 if _fishnum=8
-{fishstr=4.5
+{fishstr=2.5
 fishspr=spr_fish8
 fishname=_sn8
 fishscore=round(400)
 }
 
 if _fishnum=9
-{fishstr=5
+{fishstr=3
 fishspr=spr_fish9
 fishname=_sn9
 fishscore=round(450)
 }
 
 if _fishnum=10
-{fishstr=5.5
+{fishstr=3.5
 fishspr=spr_fish10
 fishname=_sn10
 fishscore=round(500)

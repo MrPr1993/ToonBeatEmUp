@@ -14,7 +14,7 @@ with actorscreen
 sprite_index=mask_none
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "This one leads to the swamp. There's a good neighbor of mine who treats undead well."
+cutscenename="ANNA MARI" cutsceneline= "This one leads to the swamp. There's a good neighbor of mine who treats undead well."
 }
 x=0
 y=0
@@ -169,7 +169,7 @@ if scenetime>=2020
 if actor1.x>actor5.x actor5.image_xscale=1
 
 if scenetime=2220
-with oControl {cutscenename="ANNAMARI" cutsceneline="...oops. I forgot to tell them she's not a people person. Oh well."
+with oControl {cutscenename="ANNA MARI" cutsceneline="...oops. I forgot to tell them she's not a people person. Oh well."
 	if global.Language!=0 cutsceneline=languagedialogue[10]
 	}
 
@@ -192,7 +192,7 @@ with actorscreen
 sprite_index=mask_none
 with oControl
 {
-cutscenename="ANNAMARI" cutsceneline= "This leads to a carnival. I'd go myself but... Ducks give me the vapors..."
+cutscenename="ANNA MARI" cutsceneline= "This leads to a carnival. I'd go myself but... Ducks give me the vapors..."
 }
 x=0
 y=0
@@ -324,7 +324,7 @@ if scenetime=1850
 with actor1 {sprite_index=spr_viva_opening image_speed=0 image_index=0}	
 
 with actor5 {hspeed=-0.1 specialcheck[6]=spr_ghost_head_taunt}
-with oControl {cutscenename="ANNAMARI" cutsceneline="OH REALLY?"
+with oControl {cutscenename="ANNA MARI" cutsceneline="OH REALLY?"
 	if global.Language!=0 cutsceneline=languagedialogue[7]
 	}
 }
@@ -389,7 +389,7 @@ CutsceneStage=rm_stagebeach
 
 with actorscreen
 {scenetime=0;
-with oControl {cutscenename="ANNAMARI" cutsceneline= "This one leads to a beach. A sea witch lives there. Maybe you can get her to help you?"
+with oControl {cutscenename="ANNA MARI" cutsceneline= "This one leads to a beach. A sea witch lives there. Maybe you can get her to help you?"
 }
 sprite_index=mask_none
 x=0
@@ -504,7 +504,7 @@ with oControl {cutscenename="SOFIA" cutsceneline="Oh hold on. I haven't  brought
 if scenetime=2150
 {
 with actor5 {image_xscale=-1 hspeed=-1}
-with oControl {cutscenename="ANNAMARI" cutsceneline="Ah, just like the old days..."
+with oControl {cutscenename="ANNA MARI" cutsceneline="Ah, just like the old days..."
 	if global.Language!=0 cutsceneline=languagedialogue[7]
 	}
 }
