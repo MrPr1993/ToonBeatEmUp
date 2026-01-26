@@ -73,13 +73,13 @@ en9=instance_create(__view_get( e__VW.XView, 0)+64,200,oEntryJump)
 with en9 {rangeX=0 image_xscale=1	spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot}	
 
 ////
-if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+64,264,oLadybot)
+if playernumber>=2 {P2en1=instance_create(__view_get( e__VW.XView, 0)+64,264,oEntryJump)
 with P2en1 {rangeX=0 image_xscale=1 spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot canAttack=5 alarm[1]=60}}
 
-if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+320-64,224,oLadybot)
+if playernumber>=3 {P2en2=instance_create(__view_get( e__VW.XView, 0)+320-64,224,oEntryJump)
 with P2en2 {rangeX=0 image_xscale=-1 spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot canAttack=5 alarm[1]=60}}
 
-if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+320-64,270,oLadybot)
+if playernumber>=4 {P2en3=instance_create(__view_get( e__VW.XView, 0)+320-64,270,oEntryJump)
 with P2en3 {rangeX=0 image_xscale=-1 spawnFall=spr_ladybot_charge	spawnEnemy=oLadybot canAttack=5 alarm[1]=60}}
 ////
 

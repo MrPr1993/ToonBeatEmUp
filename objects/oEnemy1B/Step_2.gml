@@ -35,7 +35,7 @@ if image_index=clamp(image_index,2,2.9) or image_index=clamp(image_index,5,5.9)
 weaponanim(weaponspr,weaponIndex,13,-38-1,90,weaponcolor)
 }
 
-if anim=10
+if anim=10 or anim=11
 if weaponspr!=-1
 {
 anim=810

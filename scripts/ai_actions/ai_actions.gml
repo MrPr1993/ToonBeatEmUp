@@ -107,3 +107,99 @@ and targetEnemy.id!=id
 
 
 }
+
+
+
+function ai_attack() {alarmCheck1=alarm[1]
+	if canmove=1 and  act=1 and canAttack!=6 and canGrab=0 and oControl.ignore=0 and leaveMode=0
+	{
+
+		
+	canAttack=choose(2,3)
+
+	if y=clamp(y,targetY-1,targetY+1)
+	canAttack=4
+
+	if targetX>x image_xscale=1 else image_xscale=-1
+
+	if distance_to_object(oEnemy1)<range*3
+	{
+	if instance_nearest(x,y,oEnemy1).canAttack=0
+	and instance_nearest(x,y,oEnemy1).dead=1
+	and instance_nearest(x,y,oEnemy1).hurt=1
+	{canAttack=2 alarm[1]=choose(60,70,80)}
+	if instance_nearest(x,y,oEnemy1).canAttack=1
+	and instance_nearest(x,y,oEnemy1).dead=1
+	and instance_nearest(x,y,oEnemy1).hurt=1
+	{canAttack=2 alarm[1]=choose(60,70,80)}
+	}
+	else
+	if canAttack=0 {
+
+	canAttack=choose(2,3)
+
+	} else 
+
+	canAttack=choose(1,2)
+
+	AIchoose=choose(0,1)
+
+	AIchoose=0
+
+	if hurt=0 and targetEnemy.ignore=0 and (targetEnemy.hurt=0 or (targetEnemy.anim=30 or targetEnemy.anim=31 ))
+and targetEnemy.id!=id
+	{
+	if x=clamp(x,targetX-rangeAtk,targetX+rangeAtk)
+	if y=clamp(y,targetY-rangeAtk*0.1,targetY+rangeAtk*0.1)
+	{
+	///Attack
+	if x>targetX image_xscale=-1 else image_xscale=1
+
+	if x<oControl.camX+16 {key_right=1 key_left=0}
+	if x>oControl.camX+320-16 {key_left=-1 key_right=0}
+
+
+
+
+	if AIchoose=1 
+	if ground or atkAir=1  or leaveMode=0
+	{
+	ground=0
+	zSpeed=-16
+	}
+
+	if ground or atkAir=1 or leaveMode=0
+	{
+	if x<oControl.camX+16 {key_right=1 key_left=0}
+	if x>oControl.camX+320-16 {key_left=-1 key_right=0}
+	///
+	if (image_xscale=1 and key_right and dashing=0 and place_meeting(x+range,y,targetEnemy))
+	or (image_xscale=-1 and -key_left and dashing=0 and place_meeting(x-range,y,targetEnemy))
+	{
+	///Stand Attack
+	if (x>oControl.camX-sprite_get_width(mask_index)/2 and x<oControl.camX+320+sprite_get_width(mask_index)/2)
+	{canmove=0 AnimFrame=0
+	image_index=0 anim=animatk} else alarm[1]=2
+	}
+	else
+	{
+	if (x>oControl.camX-sprite_get_width(mask_index)/2 and x<oControl.camX+320+sprite_get_width(mask_index)/2)
+	{canmove=0 AnimFrame=0
+	image_index=0 anim=animatk} else alarm[1]=2
+	}
+
+	}
+	///else {anim=15 sentflying=2 zSpeed=-4}
+	with selfatk
+	{
+	alarm[0]=4
+	}
+	///
+	}
+	else canAttack=0
+	}
+	if alarmCheck1>80 choose(canAttack=0,1)
+
+	}	
+	
+}

@@ -461,7 +461,7 @@ creditmoment=string(_t3)+"\n \nMIMI HUNG\nFLIRTY FAWN\nCINDER\nSED2116\nMIZZPEAC
 else if creditsTime<7+5*6
 creditmoment=string(_t4)+"\n \nMRPR1993\nFROTHIER\nDR.LILI M.D." ;
 else if creditsTime<7+5*7
-creditmoment=string(_t5)+"\n \nMRPR1993\nSHADES\nSED2116\nFLASH TRICKSTAR" ;
+creditmoment=string(_t5)+"\n \nMRPR1993\nSHADES\nSED2116\nNEOGENO450" ;
 else if creditsTime<7+5*8
 creditmoment=string(_t6)+"\n \nMRPR1993\nSHADES\nSED2116\nTHEFLAW" ;
 else if creditsTime<7+5*10
@@ -471,7 +471,7 @@ creditmoment=string(_t8)+"\nMRPR1993\nPIXELATED POPE\nJUJUADAMS" ;
 else if creditsTime<7+5*11
 creditmoment=string(_t9)+"\n \nMRPR1993\nSHADES\nSED2116" ;
 else if creditsTime<7+5*12
-creditmoment=string(_t10)+"\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nFLASH TRICKSTAR\nSHADO\nSHADES\nWEEBJESUSAMEN" ;
+creditmoment=string(_t10)+"\n \nPAOZIN\nW.KOHAKU\nBIT0609\nGAMING EELEKTROSS\nSCRUNGIE\nNEOGENO450\nSHADO\nSHADES\nWEEBJESUSAMEN\nDEMAKOS" ;
 else
 {
 creditsCameoY-=0.22

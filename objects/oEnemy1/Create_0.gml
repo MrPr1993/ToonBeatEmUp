@@ -100,7 +100,6 @@ specialcheck0=0
 //isIdle=1
 //canAttack=6
 
-
 specialtaunt=function()
 {
 sprite_index=spr_burglar_idle4
@@ -111,3 +110,4 @@ if AnimFrame>2.9 AnimFrame=0
 }
 
 enemyID=1
+

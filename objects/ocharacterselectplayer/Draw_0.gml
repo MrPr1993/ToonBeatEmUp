@@ -64,9 +64,19 @@ if introbuffer=0
 if  !(input_player_connected(controlNO-1))//!(input_source_using(INPUT_GAMEPAD, controlNO-1))
 draw_text(x+40,y+80,"P"+string(controlNO)+string(_tt1))
 else
-{var commandsave=global.ConsoleType;
-if !(input_source_using(INPUT_GAMEPAD, controlNO-1))
-global.ConsoleType="PC";
+{var commandsave = global.ConsoleType;
+global.ConsoleType="PC"
+if (input_source_using(INPUT_GAMEPAD, controlNO-1))
+{
+var _gp=input_player_get_gamepad_type(controlNO-1)
+if _gp=INPUT_GAMEPAD_TYPE_XBOX_360 or _gp=INPUT_GAMEPAD_TYPE_XBOX_ONE
+global.ConsoleType="XBOX"
+if _gp=INPUT_GAMEPAD_TYPE_PS5 or _gp=INPUT_GAMEPAD_TYPE_PS4 or _gp=INPUT_GAMEPAD_TYPE_PSX
+global.ConsoleType="PS"
+if _gp=INPUT_GAMEPAD_TYPE_SWITCH or _gp=INPUT_GAMEPAD_TYPE_GAMECUBE// or _gp=INPUT_GAMEPAD_TYPE_UNKNOWN
+global.ConsoleType="SWITCH"
+}
+
 draw_command(14)
 draw_set_halign(fa_center)
 draw_text(x+40,y+72,"P"+string(controlNO)+string(_tt2))

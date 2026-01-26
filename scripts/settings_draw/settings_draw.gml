@@ -286,8 +286,6 @@ else
 {var _controlno=controlNO-1;
 var controllercheck="";
 
-LegacyMode=global.LegacyMode[_controlno];
-
 if key_A or key_B or key_X or key_Y or key_LT or key_RT
 if menuSelect<=6 and menuSelect!=0
 {

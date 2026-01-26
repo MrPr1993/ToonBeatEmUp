@@ -23,16 +23,22 @@ if (_new_source != undefined)
 		
 		if (!input_player_connected(_i))
 		{
-		    if _i=0
-			{
-			if input_source_using(__INPUT_ON_PS, 0)
-			global.ConsoleType="PS"
-			if input_source_using(__INPUT_ON_XBOX, 0)
-			global.ConsoleType="XBOX"	
-			if input_source_using(__INPUT_ON_SWITCH, 0)
-			global.ConsoleType="SWITCH"	
-			}
             input_source_set(_new_source, _i, true);
+
+if _i=0
+{
+global.ConsoleType="PC"
+if (input_source_using(INPUT_GAMEPAD, _i))
+{global.ConsoleType="PS"
+var _gp=input_player_get_gamepad_type(_i)
+if _gp=INPUT_GAMEPAD_TYPE_XBOX_360 or _gp=INPUT_GAMEPAD_TYPE_XBOX_ONE
+global.ConsoleType="XBOX"
+if _gp=INPUT_GAMEPAD_TYPE_PS5 or _gp=INPUT_GAMEPAD_TYPE_PS4 or _gp=INPUT_GAMEPAD_TYPE_PSX
+global.ConsoleType="PS"
+if _gp=INPUT_GAMEPAD_TYPE_SWITCH or _gp=INPUT_GAMEPAD_TYPE_GAMECUBE// or _gp=INPUT_GAMEPAD_TYPE_UNKNOWN
+global.ConsoleType="SWITCH"
+}				
+}
             input_verb_consume(all, _i);
 			
 			//if input_player_disconnect(_i) 

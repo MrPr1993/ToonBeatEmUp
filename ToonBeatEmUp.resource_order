@@ -781,6 +781,7 @@
     {"name":"drop_object","order":16,"path":"scripts/drop_object/drop_object.yy",},
     {"name":"dust_make","order":60,"path":"scripts/dust_make/dust_make.yy",},
     {"name":"enemy_ai","order":8,"path":"scripts/enemy_ai/enemy_ai.yy",},
+    {"name":"enemy_aiV2","order":15,"path":"scripts/enemy_aiV2/enemy_aiV2.yy",},
     {"name":"enemy_ambusher","order":46,"path":"scripts/enemy_ambusher/enemy_ambusher.yy",},
     {"name":"enemy_control","order":9,"path":"scripts/enemy_control/enemy_control.yy",},
     {"name":"enemy_create","order":17,"path":"scripts/enemy_create/enemy_create.yy",},

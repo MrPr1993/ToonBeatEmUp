@@ -5,7 +5,12 @@ function enemy_data() {
 	spawnOrder=instance_number(oEnemy1)
 
 	enemyscript=animsetup_enemy
-	enemyai=enemy_ai
+	enemyai=enemy_ai//V2
+	
+ai_mode = 0; // 0=think, 1=move, 2=attack, 3=retreat
+ai_timer = irandom_range(20, 60);
+aggression = random_range(0.4, 1); // personality
+	
 	enemycontrol=enemy_control
 	specialhit=-1
 

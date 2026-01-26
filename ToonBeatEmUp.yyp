@@ -1091,6 +1091,7 @@
     {"id":{"name":"drop_object","path":"scripts/drop_object/drop_object.yy",},},
     {"id":{"name":"dust_make","path":"scripts/dust_make/dust_make.yy",},},
     {"id":{"name":"enemy_ai","path":"scripts/enemy_ai/enemy_ai.yy",},},
+    {"id":{"name":"enemy_aiV2","path":"scripts/enemy_aiV2/enemy_aiV2.yy",},},
     {"id":{"name":"enemy_ambusher","path":"scripts/enemy_ambusher/enemy_ambusher.yy",},},
     {"id":{"name":"enemy_control","path":"scripts/enemy_control/enemy_control.yy",},},
     {"id":{"name":"enemy_create","path":"scripts/enemy_create/enemy_create.yy",},},

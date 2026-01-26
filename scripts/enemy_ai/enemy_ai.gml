@@ -28,7 +28,7 @@ ds_list_destroy(_list);
 		{if (canAttack!=7 and canAttack!=8) { canAttack=8}
 		if hurt=1 canAttack=8
 		}
-if leaveMode=1 or leaveMode=2
+if leaveMode=1 or leaveMode=2 ///This is just simple parts for them entering or leaving the scene
 {if canmove=1
 		{
 			
@@ -52,7 +52,7 @@ instance_destroy()
 	key_up=0 key_down=0
 	}}
 	}
-else	
+else	////DOWN BELOW is where you gotta tweak the enemy AI - ignore the above
 	if targetEnemy!=-1
 	{
 	if instance_exists(targetEnemy)
@@ -80,7 +80,7 @@ else
 
 	y=clamp(y,0,__view_get( e__VW.YView, 0 )+240)
 
-	////Dash if off-screen
+	////Dash if they are off-screen
 	var checkRun= x<oControl.camX-64 or x>oControl.camX+320+64
 	or canAttack=5
 	or distance_to_object(targetEnemy)>90
@@ -192,7 +192,7 @@ else
 	 {alarm[1]=2 canAttack=choose(0,1,2,3,4)}
 	 }
 	 
-	 if canAttack=53 ////Stab back from enemy
+	 if canAttack=53 ////Stand back from enemy
 	 {
 	{if image_xscale=-1 {key_left=-1 key_right=0} else {key_right=1 key_left=0}}
 	if x<targetEnemy.x-sprite_get_width(mask_index)/2 or x>targetEnemy.x+sprite_get_width(mask_index)/2 {alarm[1]=2 canAttack=choose(0,1,2,3,4)}
@@ -200,7 +200,7 @@ else
 	 
 
 
-	 if canAttack=5 ///Move On-Screen
+	 if canAttack=5 ///Move On-Screen - ignore this one
 	{anim=1
 	{if image_xscale=-1 {key_left=-1 key_right=0} else {key_right=1 key_left=0}}
 	{key_up=0 key_down=0}
