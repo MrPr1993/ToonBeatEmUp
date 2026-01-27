@@ -28,7 +28,7 @@ enC=instance_create_depth(4326,132,-1,oEntryBreak) with enC
 		rangeXAdd=-240 isDepth=0 depth=16777212 
 	spawnSpeedZ=-8
 	xSpeed=0
-	ySpeed=2
+	ySpeed=2 current_pal=0;
 	}
 	enD=instance_create_depth(__view_get( e__VW.XView, 0 )+320+48,180,-1,oSamurai) with enD
 	{image_xscale=-1 canAttack=5 alarm[1]=40

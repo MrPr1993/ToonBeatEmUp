@@ -14,7 +14,7 @@ spawner_followset("WaveSet1",0,5200,1)
 
 en2=instance_create(3548,160,oEntryClimb)
 with en2
-{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0
+{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0 current_pal=0; 
 	rangeX=x-128
 	spawnSpr=spr_goblin_entry1
 	spawnFall=spr_goblin_front
@@ -23,7 +23,7 @@ with en2
 	
 en3=instance_create(3600,160,oEntryClimb)
 with en3
-{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0
+{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0 current_pal=0; 
 	rangeX=x-128
 	spawnSpr=spr_goblin_entry1
 	spawnFall=spr_goblin_front
@@ -42,7 +42,7 @@ with en4
 	
 en5=instance_create(3800,160,oEntryClimb)
 with en5
-{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0
+{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0 current_pal=0; 
 	rangeX=x-128
 	spawnSpr=spr_goblin_entry1
 	spawnFall=spr_goblin_front
@@ -51,7 +51,7 @@ with en5
 	
 en6=instance_create(3900,160,oEntryClimb)
 with en6
-{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0
+{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0 current_pal=0; 
 	rangeX=3800-128
 	spawnSpr=spr_goblin_entry1
 	spawnFall=spr_goblin_front
@@ -60,7 +60,7 @@ with en6
 	
 en7=instance_create(4000,160,oEntryClimb)
 with en7
-{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0
+{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0 current_pal=0; 
 	rangeX=x-128
 	spawnSpr=spr_goblin_entry1
 	spawnFall=spr_goblin_front
@@ -69,7 +69,7 @@ with en7
 	
 en8=instance_create(4100,160,oEntryClimb)
 with en8
-{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0
+{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0 current_pal=0; 
 	rangeX=x-128
 	spawnSpr=spr_goblin_entry1
 	spawnFall=spr_goblin_front
@@ -118,7 +118,7 @@ with en12
 	
 en13=instance_create(4900,160,oEntryClimb)
 with en13
-{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0
+{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0 current_pal=0; 
 	rangeX=x-128
 	spawnSpr=spr_goblin_entry1
 	spawnFall=spr_goblin_front
@@ -128,7 +128,7 @@ with en13
 	
 en14=instance_create(5000,160,oEntryClimb)
 with en14
-{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0
+{depth=1677720 isDepth=0 spawnYAdd=9+16 z=0 current_pal=0; 
 	rangeX=5000-128
 	spawnSpr=spr_goblin_entry1
 	spawnFall=spr_goblin_front

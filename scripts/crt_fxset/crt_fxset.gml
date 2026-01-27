@@ -119,6 +119,14 @@ if global.ArcadeScreen=4
 draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx4,0));
 if global.ArcadeScreen=5
 draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx5,0));
+if global.ArcadeScreen=6
+draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx6,0));
+if global.ArcadeScreen=7
+draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx7,0));
+if global.ArcadeScreen=8
+draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx8,0));
+//if global.ArcadeScreen=9
+//draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_screenfx9,0));
 draw_vertex_texture(-50, 0, 0, 0);
 draw_vertex_texture(320+50, 0, 1, 0);
 draw_vertex_texture(-50, 240, 0, 1);

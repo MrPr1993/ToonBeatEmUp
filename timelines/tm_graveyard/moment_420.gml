@@ -6,7 +6,7 @@ en2=instance_create_depth(__view_get( e__VW.XView, 0 )+320-32,250-48,0,oEntryJum
 	current_pal=1 name="SKELIE" my_pal_sprite=spr_mummypal enemy_switch("SKELIE",0)
 	}
 en3=instance_create_depth(__view_get( e__VW.XView, 0 )+320-32,250,0,oEntryJump) with en3
-{spawnFall=spr_skeleton_kick spawnEnemy=oSkeleton}
+{current_pal=0; spawnFall=spr_skeleton_kick spawnEnemy=oSkeleton}
 }
 else
 {

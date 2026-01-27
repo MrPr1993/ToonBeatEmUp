@@ -6,7 +6,7 @@ controller_setup()
 ///Translation
 var _t0="GAME BY"
 var _t1="MUSIC BY"
-var _t2="SOUNDS BE"
+var _t2="SOUNDS BY"
 var _t3="VOICES BY"
 var _t4="GRAPHICS BY"
 var _t5="WRITING BY"

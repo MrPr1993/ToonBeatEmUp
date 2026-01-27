@@ -19,7 +19,7 @@ spawner_followset("WaveSet1",0,9000,1)
 en1=instance_create(6928,118,oEntryPool) en1.rangeXAdd=0 en1.splashspr=-1
 with en1
 {spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-200 z=-60 spawnname="Bones"
-	canEvent0=0 ySpeed=1 spawnFall=spr_skeleton_front
+	canEvent0=0 ySpeed=1 spawnFall=spr_skeleton_front current_pal=0;
 	
 	}
 en2=instance_create(7440,118,oEntryPool) en2.rangeXAdd=0 en2.splashspr=-1
@@ -40,7 +40,7 @@ with en3
 en4=instance_create(7440-32,118,oEntryPool) en4.rangeXAdd=0 en4.splashspr=-1
 with en4
 {spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=7440-200 z=-60 spawnname="Bones"
-		current_pal=0 my_pal_sprite=spr_mummypal
+		current_pal=0 my_pal_sprite=spr_mummypal current_pal=0;
 		canEvent0=0 ySpeed=1.5 spawnFall=spr_skeleton_front 		
 		}
 		
@@ -48,7 +48,7 @@ with en4
 en5=instance_create(7900,118,oEntryPool) en5.rangeXAdd=0 en5.splashspr=-1
 with en5
 {spawnSpr=spr_skeleton_front spawnEnemy=oSkeleton xAdd=-140 rangeX=x-200 z=-60 spawnname="Bones"
-		canEvent0=0 ySpeed=1 spawnFall=spr_skeleton_front
+		canEvent0=0 ySpeed=1 spawnFall=spr_skeleton_front current_pal=0;
 		
 		}	
 	

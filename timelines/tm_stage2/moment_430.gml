@@ -6,11 +6,11 @@ and !instance_exists(en5)
 and !instance_exists(en6)
 {
 en1=instance_create_depth(1456,132,0,oEntryJump)
-with en1{spawnX=0 rangeX=0 zAppear=-128 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
+with en1{ current_pal=0; spawnX=0 rangeX=0 zAppear=-128 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
 en2=instance_create_depth(1456,132,0,oEntryJump)
 with en2{spawnX=0 rangeX=0 zAppear=-128-128 spawnSpeedZMax=4 spawnSpr=spr_burglar_back spawnFall=spr_burglar_back enemy_switch("MR.LAR",0)}
 en3=instance_create_depth(1456,132,0,oEntryJump)
-with en3{spawnX=0 rangeX=0 zAppear=-128-128*2 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back	spawnFallIndex=0 spawnEnemy=oSneak}
+with en3{ current_pal=0; spawnX=0 rangeX=0 zAppear=-128-128*2 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back	spawnFallIndex=0 spawnEnemy=oSneak}
 en4=instance_create_depth(1456,132,0,oEntryJump)
 with en4{spawnX=0 rangeX=0 zAppear=-128-128*3 spawnSpeedZMax=4 spawnSpr=spr_burglar_back  spawnFall=spr_burglar_back enemy_switch("MR.LAR",0)}
 

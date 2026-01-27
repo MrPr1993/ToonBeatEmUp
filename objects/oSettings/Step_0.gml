@@ -67,7 +67,7 @@ if -key_left_pressed
 {PlaySound(snd_select)
 	
 	if menuSelect=7 {if global.ColorMode=0 global.ColorMode=5 else global.ColorMode-=1}
-	if menuSelect=8 {if global.ArcadeScreen=0 global.ArcadeScreen=5 else global.ArcadeScreen-=1}
+	if menuSelect=8 {if global.ArcadeScreen=0 global.ArcadeScreen=8 else global.ArcadeScreen-=1}
 	
 	//Screen Size
 if menuSelect=2 screen_size(0)
@@ -113,7 +113,7 @@ if key_right_pressed or key_A
 if menuSelect=2 screen_size(1)
 
 if menuSelect=7 {if global.ColorMode=5 global.ColorMode=0 else global.ColorMode+=1}
-if menuSelect=8 {if global.ArcadeScreen=5 global.ArcadeScreen=0 else global.ArcadeScreen+=1}
+if menuSelect=8 {if global.ArcadeScreen=8 global.ArcadeScreen=0 else global.ArcadeScreen+=1}
 
 if menuSelect=3 //6
 {

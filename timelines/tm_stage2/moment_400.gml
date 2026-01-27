@@ -10,7 +10,7 @@ with en4 {enemy_switch("MR.LAR",0)}
 
 with chairen instance_destroy()
 en1=instance_create_depth(908, 108,0,oEntryPool)
-with en1 {rangeX=0
+with en1 {rangeX=0 current_pal=0;
 	spawnSpr=spr_sneak_entry1
 	spawnFall=spr_sneak_front
 	spawnFallIndex=0

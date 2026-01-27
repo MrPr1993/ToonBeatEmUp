@@ -8,7 +8,7 @@ en3=instance_create_depth(4576,160-8,-1,oEntryBreak) with en3
 		rangeXAdd=-240
 	spawnSpeedZ=-7
 	xSpeed=0
-	ySpeed=2
+	ySpeed=2 current_pal=0;
 	}
 	
 en4=instance_create_depth(4720,160-8,-1,oEntryBreak) with en4

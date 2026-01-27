@@ -17,7 +17,7 @@ enA=instance_create_depth(1698,132,-1,oEntryBreak) with enA
 		rangeXAdd=-240 isDepth=0 depth=16777212 
 	spawnSpeedZ=-8
 	xSpeed=0
-	ySpeed=1
+	ySpeed=1 current_pal=0;
 	}
 enB=instance_create(1664, 165,oEnemy1) with enB
 {canmove=0 isIdle=1 alarm[1]=60 anim=70002 idleRange=30+2 }

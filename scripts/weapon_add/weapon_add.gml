@@ -53,7 +53,7 @@ WspriteFX=spr_blood2 weaponCut=1
 
 if wpadd="AXE"
 {
-weapon_setup(oAxe,spr_axe,0,100,0.2,2,2,1,snd_swing5,snd_cut,48,0,0,2,1,64)
+weapon_setup(oAxe,spr_axe,0,100,0.2,2,0,1,snd_swing5,snd_cut,48,0,0,2,1,64)
 }
 
 
@@ -67,10 +67,10 @@ weapon_setup(oPipe,spr_pipe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
 }
 
 if wpadd="SHOVEL"
-weapon_setup(oShovel,spr_shovel,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+weapon_setup(oShovel,spr_shovel,0,100,0.2,2,0,1,snd_swing3,snd_hit,48,0,0,2,1,64)
 
 if wpadd="PICKAXE"
-weapon_setup(oPickaxe,spr_pickaxe,0,100,0.2,2,2,1,snd_swing3,snd_hit,48,0,0,2,1,64)
+weapon_setup(oPickaxe,spr_pickaxe,0,100,0.2,2,0,1,snd_swing3,snd_hit,48,0,0,2,1,64)
 
 
 if wpadd="KNIFE"

@@ -60,7 +60,7 @@ idleRange=30 anim=70000}
 en1=instance_create(1288,160,oEntryClimb)
 en1.z=-48 en1.rangeX=en1.x-200 en1.rangeXAdd=0
 with en1
-{spawnEnemy=oSneak
+{spawnEnemy=oSneak current_pal=0;
 spawnSpr=spr_sneak_entry1
 spawnFall=spr_sneak_front
 }

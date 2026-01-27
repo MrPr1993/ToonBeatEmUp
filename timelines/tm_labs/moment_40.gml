@@ -93,10 +93,10 @@ with en5 {enemy_switch("MS.CHILL",0)
 if specialSet6=180 
 {
 en6=instance_create(1570,190,oEntryJump)
-with en6 {rangeX=0 image_xscale=1 	spawnFall=spr_sneak_jump	spawnEnemy=oSneak}	
+with en6 {current_pal=0; rangeX=0 image_xscale=1 	spawnFall=spr_sneak_jump	spawnEnemy=oSneak}	
 
 en7=instance_create(1570,250,oEntryJump)
-with en7 {rangeX=0 image_xscale=1	spawnFall=spr_sneak_jump	spawnEnemy=oSneak}	
+with en7 {current_pal=0; rangeX=0 image_xscale=1	spawnFall=spr_sneak_jump	spawnEnemy=oSneak}	
 
 }
 

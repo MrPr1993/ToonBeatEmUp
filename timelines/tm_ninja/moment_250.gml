@@ -6,7 +6,7 @@ with en1
 {depth=16777215 isDepth=0 rideX=2096 xAdd=0
 	spawnFall=spr_ninjabun_jump
 	moveSpr=spr_ninjabun_run rangeX=0 rangeXAdd=240
-	spawnEnemy=oNinjaBun
+	spawnEnemy=oNinjaBun current_pal=0;
 	}
 en2=instance_create(1902, 150,oEntryFenceJump)
 with en2

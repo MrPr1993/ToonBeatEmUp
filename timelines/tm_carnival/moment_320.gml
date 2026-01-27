@@ -5,7 +5,7 @@ with en3
 {depth=16777208.5 isDepth=0 rangeXAdd=-48 xAdd=-160-80}
 en4=instance_create(__view_get( e__VW.XView, 0)-64-300,180,oEntryFenceJump)
 with en4
-{depth=16777208.5 isDepth=0 rangeXAdd=-48 xAdd=-160
+{depth=16777208.5 isDepth=0 rangeXAdd=-48 xAdd=-160 current_pal=0; 
 		spawnFall=spr_cowboy_front moveSpr=spr_cowboy_move spawnEnemy=oCowboy}
 
 en5=instance_create(__view_get( e__VW.XView, 0)-64-200,180,oEntryFenceJump)

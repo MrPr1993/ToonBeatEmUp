@@ -5,7 +5,7 @@ if __view_get( e__VW.XView, 0 )>=532
 en3=instance_create(__view_get( e__VW.XView, 0 )+320-64,180,oEntryJump)
 with en3
 {spawnFall=spr_ninjabun_jump image_xscale=-1 rangeX=0
-spawnEnemy=oNinjaBun
+spawnEnemy=oNinjaBun current_pal=0;
 }
 
 en4=instance_create(__view_get( e__VW.XView, 0 )+320-64,240,oEntryJump)

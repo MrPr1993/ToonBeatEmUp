@@ -24,7 +24,7 @@ with en4{spawnX=1184-200 rangeX=1184-200 zAppear=-128-128 spawnSpeedZMax=4 spawn
 	}
 	
 en5=instance_create_depth(1744,168,0,oEntryJump)
-with en5{spawnX=x-240 rangeX=x-240 zAppear=-128-128 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
+with en5{current_pal=0; spawnX=x-240 rangeX=x-240 zAppear=-128-128 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
 
 en6=instance_create_depth(1856,168,0,oEntryJump)
 with en6{spawnX=x-240 rangeX=x-240 zAppear=-128-128 spawnSpeedZMax=4 spawnSpr=spr_burglar_back spawnFall=spr_burglar_back spawnFallIndex=0 spawnEnemy=oEnemy1}

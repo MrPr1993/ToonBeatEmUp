@@ -99,13 +99,19 @@ draw_text(160,56+4+32+8," "+string(languagetext[15])+" "+string(global.ArcadeScr
 if global.ArcadeScreen=1
 draw_text(160,56+4+32+8," "+string(languagetext[26])+" "+string(global.ArcadeScreen))
 if global.ArcadeScreen=2
-draw_text(160,56+4+32+8," "+string(languagetext[27])+" "+string(global.ArcadeScreen))
+draw_text(160,56+4+32+8," "+string(languagetext[26])+" "+string(global.ArcadeScreen)+" B")
 if global.ArcadeScreen=3
-draw_text(160,56+4+32+8," "+string(languagetext[34])+" "+string(global.ArcadeScreen))
+draw_text(160,56+4+32+8," "+string(languagetext[27])+" "+string(global.ArcadeScreen))
 if global.ArcadeScreen=4
-draw_text(160,56+4+32+8," "+string(languagetext[37])+" "+string(global.ArcadeScreen))
+draw_text(160,56+4+32+8," "+string(languagetext[34])+" "+string(global.ArcadeScreen))
 if global.ArcadeScreen=5
+draw_text(160,56+4+32+8," "+string(languagetext[37])+" "+string(global.ArcadeScreen))
+if global.ArcadeScreen=6
 draw_text(160,56+4+32+8," "+string(languagetext[37])+" "+string(global.ArcadeScreen)+" B")
+if global.ArcadeScreen=7
+draw_text(160,56+4+32+8," "+string(languagetext[26])+" "+string(global.ArcadeScreen)+" 2")
+if global.ArcadeScreen=8
+draw_text(160,56+4+32+8," "+string(languagetext[26])+" "+string(global.ArcadeScreen)+" 2B")
 
 if global.Screenshake=1
 draw_text(160,64+8+48," "+string(languagetext[18])) else draw_text(160,64+8+48," "+string(languagetext[19]))

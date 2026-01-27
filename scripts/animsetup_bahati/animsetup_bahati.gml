@@ -1265,7 +1265,7 @@ targetID.playerFrom=playerNO
 
 	sprite_index=spr_bahati_sideatk image_index=AnimFrame
 
-	atkcol_set(15,0,14,2.2,1.25,64) MoveType=1 damage=0.18
+	atkcol_set(10,0,0,2.5,1.25,78) MoveType=1 damage=0.18
 
 	if AnimFrame=clamp(AnimFrame,0.8,2.2) {afterimage_create(4,make_colour_rgb(239,222, 0),current_pal,my_pal_sprite,0) sentflying=4*image_xscale atk=1} else {sentflying=lerp(sentflying,0,0.3) atk=0}
 

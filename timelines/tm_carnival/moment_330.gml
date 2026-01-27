@@ -41,7 +41,7 @@ with en4
 	spawnFallIndex=3
 	riderSpr=spr_wrestler_balloon
 	spawnEnemy=oWrestler
-	
+	 current_pal=0; 
 	spawnAnim=5;
 	spawnAnimFrame=3;
 	spawnCanMove=1;

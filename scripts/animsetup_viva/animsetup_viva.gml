@@ -1098,7 +1098,7 @@ weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 	if AnimFrame<4 afterimage_create(4,make_colour_rgb(57, 173, 255),current_pal,my_pal_sprite,0)
 
 
-	atkcol_set(25,0,0,1.35,1,88)
+	atkcol_set(25,0,0,1.55,1,88)
 
 	MoveType=1 damage=0.14
 

@@ -5,14 +5,14 @@ if __view_get( e__VW.XView, 0 )>=2640-2-320
 //en5=instance_create_depth(2344,160,-1,oAreaSpawner)
 
 en10=instance_create_depth(2592,168,0,oEntryJump)
-with en10{spawnX=0 rangeX=0 zAppear=-128-128*3 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
+with en10{current_pal=0; spawnX=0 rangeX=0 zAppear=-128-128*3 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
 
 en11=instance_create_depth(2464,168,0,oEntryJump)
 with en11{spawnX=0 rangeX=0 zAppear=-128-128*4 spawnSpeedZMax=4 spawnSpr=spr_burglarB_back spawnFall=spr_burglarB_back spawnFallIndex=0 spawnEnemy=oEnemy1B}
 en12=instance_create_depth(2528,168,0,oEntryJump)
 with en12{spawnX=0 rangeX=0 zAppear=-128-128*7 spawnSpeedZMax=4 spawnSpr=spr_burglar_back spawnFall=spr_burglar_back spawnFallIndex=0 spawnEnemy=oEnemy1}
 en13=instance_create_depth(2528,168,0,oEntryJump)
-with en13{spawnX=0 rangeX=0 zAppear=-128-128*2 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
+with en13{current_pal=0; spawnX=0 rangeX=0 zAppear=-128-128*2 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
 
 
 en14=instance_create_depth(2528,168,0,oEntryJump)
@@ -20,7 +20,7 @@ with en14{spawnX=0 rangeX=0 zAppear=-128-128 spawnSpeedZMax=4 spawnSpr=spr_burgl
 en15=instance_create_depth(2592,168,0,oEntryJump)
 with en15{spawnX=0 rangeX=0 zAppear=-128-128*6 spawnSpeedZMax=4 spawnSpr=spr_burglarB_back spawnFall=spr_burglarB_back spawnFallIndex=0 spawnEnemy=oEnemy1B}
 en16=instance_create_depth(2464,168,0,oEntryJump)
-with en16{spawnX=0 rangeX=0 zAppear=-128-128*5 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
+with en16{current_pal=0; spawnX=0 rangeX=0 zAppear=-128-128*5 spawnSpeedZMax=4 spawnSpr=spr_sneak_back spawnFall=spr_sneak_back spawnFallIndex=0 spawnEnemy=oSneak}
 
 
 //en2=instance_create_depth(1456,132,0,oEntryJump)

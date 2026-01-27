@@ -18,7 +18,7 @@ en2=instance_create_depth(534,160,-1,oEntryBreak) with en2
 		rangeXAdd=-240
 	spawnSpeedZ=-8
 	xSpeed=0
-	ySpeed=0.5
+	ySpeed=0.5 current_pal=0;
 	}
 
 oControl.stageNext=rm_cutscene3c
