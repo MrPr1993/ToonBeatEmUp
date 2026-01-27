@@ -25,7 +25,7 @@ en1=instance_create(7674,190,oEntryJump)
 with en1 {current_pal=0; rangeX=0 image_xscale=1 	spawnFall=spr_nurse_move	spawnEnemy=oNurse}
 
 en2=instance_create(7674,256,oEntryJump)
-with en2 {current_pal=0; rangeX=0 image_xscale=1	spawnFall=spr_nurse_move spawnEnemy=oNurse}	
+with en2 {current_pal=0; rangeX=0 image_xscale=1	spawnFall=spr_nurse_move spawnEnemy=oNurse enemy_switch("DR.SULF",false)}	
 
 
 
@@ -34,10 +34,10 @@ with en2 {current_pal=0; rangeX=0 image_xscale=1	spawnFall=spr_nurse_move spawnE
 if specialSet6=60 
 {
 en3=instance_create(7732,206,oEntryJump)
-with en3 {current_pal=0; rangeX=0 image_xscale=1 	spawnFall=spr_nurse_move spawnEnemy=oNurse}
+with en3 {current_pal=0; rangeX=0 image_xscale=1 	spawnFall=spr_nurse_move spawnEnemy=oNurse enemy_switch("DR.SULF",false)}	
 
 en4=instance_create(7732,236,oEntryJump)
-with en4 {current_pal=0; rangeX=0 image_xscale=1	spawnFall=spr_nurse_move spawnEnemy=oNurse
+with en4 {current_pal=0; rangeX=0 image_xscale=1	spawnFall=spr_nurse_move spawnEnemy=oNurse enemy_switch("DR.MONIA",0)
 	
 	}	
 }
@@ -45,7 +45,7 @@ with en4 {current_pal=0; rangeX=0 image_xscale=1	spawnFall=spr_nurse_move spawnE
 if specialSet6=120 
 {
 en5=instance_create(__view_get( e__VW.XView, 0)+320-64,224,oEntryJump)
-with en5 {current_pal=0; rangeX=0	spawnFall=spr_nurse_move image_xscale=-1	spawnEnemy=oNurse}	
+with en5 {current_pal=0; rangeX=0	spawnFall=spr_nurse_move image_xscale=-1	spawnEnemy=oNurse enemy_switch("DR.MONIA",0)}		
 en6=instance_create(__view_get( e__VW.XView, 0)+320-64,256,oEntryJump)
 with en6 {current_pal=0; rangeX=0	spawnFall=spr_nurse_move image_xscale=-1	spawnEnemy=oNurse}	
 }

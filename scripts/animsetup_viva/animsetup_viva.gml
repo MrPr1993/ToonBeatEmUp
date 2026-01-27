@@ -1128,7 +1128,7 @@ weaponanim(weaponspr,weaponIndex,15,-50+999910,90*image_xscale,weaponcolor)
 
 
 
-	atkcol_set(19,0,47,2.15,1,18) MoveType=1 damage=0.14
+	atkcol_set(19,0,47,2.12,1,18) MoveType=1 damage=0.14
 
 	if AnimFrame=clamp(AnimFrame,3,4) {
 		

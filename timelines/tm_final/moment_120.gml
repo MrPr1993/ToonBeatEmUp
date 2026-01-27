@@ -19,15 +19,15 @@ layer_background_change(bgc,bg_sky2)
 
 en1=instance_create_depth(7774,156,-1,oEntryFenceJump) with en1
 {depth=16777204 isDepth=0 ySpeed=2 spawnSpeedZ=-6 rangeXAdd=0 rangeX=7774-200 newSpawn=1 newSpawnX=7774-240 rideX=7774
-enemy_switch("MR.LAR",0) 
+enemy_switch("MR.ROB",0)
 }
 en2=instance_create_depth(8030,156,-1,oEntryFenceJump) with en2
 {depth=16777204 isDepth=0 ySpeed=2 spawnSpeedZ=-6 rangeXAdd=0 rangeX=8030-200 newSpawn=1 newSpawnX=8030-240 rideX=8030
-enemy_switch("MR.ROB",0) 
+enemy_switch("MR.ROB",0)
 }
 en3=instance_create_depth(8030+160,156,-1,oEntryFenceJump) with en3
 {depth=16777204 isDepth=0 ySpeed=2 spawnSpeedZ=-6 rangeXAdd=0 rangeX=8030-200+160 newSpawn=1 newSpawnX=8030-240+160 rideX=8030+160
-
+enemy_switch("MR.ROB",0)
 }
 
 en4=instance_create(__view_get( e__VW.XView, 0)+320+64,208-16,oFatBurglar)

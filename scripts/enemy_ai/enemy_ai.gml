@@ -92,30 +92,74 @@ else	////DOWN BELOW is where you gotta tweak the enemy AI - ignore the above
 	if canAttack=0 ///Stand back from opponent
 	{anim=1
 	{dashing=0 doubledash=0}
-
-	if x=clamp(x,targetX-rangeX-12-sprite_get_width(mask_index)/2,targetX+rangeX+12+sprite_get_width(mask_index)/2)
-	{if x<targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
-
-	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
-	if y!=clamp(y,targetY,targetY)
-	{
-		if y!=clamp(y,targetY-rangeY,targetY+rangeY)
-	{if y>targetY {anim=1 key_up=1 key_down=0} else {anim=1 key_down=1 key_up=0}
+    ai_timer--;
 	
+    var dx = targetX - x;
+    var dy = targetY - y;
+    var dist = point_distance(x, y, targetX, targetY);
 
-		if image_xscale=1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
+    // spacing ranges (beat em up feel)
+    var idealX = rangeX;
+    var idealY = rangeY;
 	
+var desiredDist = rangeX;     // horizontal spacing
+var laneRange   = rangeY * 0.5; // vertical alignment
+var crowdPush   = 12;          // anti-crowd force
+    if (ai_timer <= 0)
+    {ai_timer = irandom_range(20, 60);
+		
+        // too close → back off
+        if (abs(dx) < idealX * 0.6 && abs(dy) < idealY * 0.6)
+        {
+            canAttack = 53; 
+        }
+        // too far → approach
+        else if (abs(dx) > idealX * 1.2)
+        {
+            canAttack = 1;
+        }
+        // wrong Y lane → align
+        else if (abs(dy) > idealY)
+        {
+            canAttack = 4;
+        }
+        // random strafe / wait
+        else
+        {
+            if (random(1) < aggression)
+                canAttack = choose(2, 3);
+            else
+                canAttack = 0;
+		}
 	}
-	else {key_up=0 key_down=0}
-	}
-	else {key_up=0 key_down=0}
+
+	//if x=clamp(x,targetX-rangeX-12-sprite_get_width(mask_index)/2,targetX+rangeX+12+sprite_get_width(mask_index)/2)
+	//{if x<targetX {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}}
+
+	//if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)
+	//if y!=clamp(y,targetY,targetY)
+	//{
+	//	if y!=clamp(y,targetY-rangeY,targetY+rangeY)
+	//{if y>targetY {anim=1 key_up=1 key_down=0} else {anim=1 key_down=1 key_up=0}
 	
+
+	//	if image_xscale=1 {anim=1 key_left=-1 key_right=0} else {anim=1 key_right=1 key_left=0}
+	
+//	}
+	//else {key_up=0 key_down=0}
+	//}
+//	else {key_up=0 key_down=0}
+	//
 				if place_meeting(x,y,targetEnemy)
 			{
 			//if image_xscale=1 {canAttack=0 anim=1 key_left=-1 key_right=0} else {canAttack=0 anim=1 key_right=1 key_left=0}	
 			//if canAttack!=0 {key_left=0 key_right=0 anim=0 canAttack=0 alarm[1]=8}
 			canAttack=53
 			}
+	if x!=clamp(x,oControl.camX-8,oControl.camX+328)
+	{
+	canAttack=choose(1,0)
+	}
 	}
 
 	if canAttack=1 ///Try to get to the opponent
@@ -129,12 +173,48 @@ else	////DOWN BELOW is where you gotta tweak the enemy AI - ignore the above
 		
 			}else 
 			{
-			if place_meeting(x,y,targetEnemy)
-			{
-			//if image_xscale=1 {canAttack=0 anim=1 key_left=-1 key_right=0} else {canAttack=0 anim=1 key_right=1 key_left=0}	
-			//if canAttack!=0 {key_left=0 key_right=0 anim=0 canAttack=0 alarm[1]=8}
-			canAttack=53
-			}
+
+    ai_timer--;
+	
+    var dx = targetX - x;
+    var dy = targetY - y;
+    var dist = point_distance(x, y, targetX, targetY);
+
+    // spacing ranges (beat em up feel)
+    var idealX = rangeX;
+    var idealY = rangeY;
+	
+var desiredDist = rangeX;     // horizontal spacing
+var laneRange   = rangeY * 0.5; // vertical alignment
+var crowdPush   = 12;          // anti-crowd force
+    if (ai_timer <= 0)
+    {ai_timer = irandom_range(20, 60);
+		
+        // too close → back off
+        if (abs(dx) < idealX * 0.6 && abs(dy) < idealY * 0.6)
+        {
+            canAttack = 53; 
+        }
+        // too far → approach
+        else if (abs(dx) > idealX * 1.2)
+        {
+            canAttack = 1;
+        }
+        // wrong Y lane → align
+        else if (abs(dy) > idealY)
+        {
+            canAttack = 4;
+        }
+        // random strafe / wait
+        else
+        {
+            if (random(1) < aggression)
+                canAttack = choose(2, 3);
+            else
+                canAttack = 0;
+		}
+	}
+
 			}
 		}
 	if y!=clamp(y,targetY-rangeY/2,targetY+rangeY/2)

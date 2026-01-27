@@ -357,7 +357,21 @@ if key_A
 if (LegacyMode=0 and menuSelect=9) or (LegacyMode=1 and menuSelect=6)
 {menuSelect=0 input_source_clear(_controlno);}
 
+var commandsave = global.ConsoleType;
+global.ConsoleType="PC"
+if (input_source_using(INPUT_GAMEPAD, _controlno))
+{
+var _gp=input_player_get_gamepad_type(_controlno)
+if _gp=INPUT_GAMEPAD_TYPE_XBOX_360 or _gp=INPUT_GAMEPAD_TYPE_XBOX_ONE
+global.ConsoleType="XBOX"
+if _gp=INPUT_GAMEPAD_TYPE_PS5 or _gp=INPUT_GAMEPAD_TYPE_PS4 or _gp=INPUT_GAMEPAD_TYPE_PSX
+global.ConsoleType="PS"
+if _gp=INPUT_GAMEPAD_TYPE_SWITCH or _gp=INPUT_GAMEPAD_TYPE_GAMECUBE// or _gp=INPUT_GAMEPAD_TYPE_UNKNOWN
+global.ConsoleType="SWITCH"
+}	
+
 draw_command(11)
+global.ConsoleType = commandsave;
 
 draw_set_halign(fa_center)
 
@@ -529,7 +543,9 @@ draw_set_halign(fa_center) draw_text_transformed(40,32+16+8*14,_t15,1,1,0)
 }
 }
 d3d_transform_set_translation(0,0,0)
+
 draw_command(12)
+
 
 if global.fpsMode=1
 {draw_set_halign(fa_right)

@@ -6,6 +6,7 @@ musicplaystart(msc_boss3)
 }
 
 oControl.bossID=boss
+oControl.BossHPD=0;
 
 }
 else

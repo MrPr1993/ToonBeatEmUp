@@ -10,6 +10,8 @@ flashcolor=c_red;
 flashadd=0;
 flashcheck=0;
 flashtime=0
+
+panicbreaker=0;
 	
 counterMove=-1;
 counterNum=3;

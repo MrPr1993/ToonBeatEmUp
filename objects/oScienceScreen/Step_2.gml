@@ -526,7 +526,7 @@ image_index+=0.25 if image_index>=3 image_index=1
 
 screenSpr=spr_science_panic screenInd=image_index;
 
-if AnimFrame>=50 {canmove=1 anim=0 AnimFrame=0 hurt=0 screenInd=0 }
+if AnimFrame>=50 {panicbreaker=0 canmove=1 anim=0 AnimFrame=0 hurt=0 screenInd=0 }
 }
 
 if sprite_index=ThrownSpr or anim=4 clawSpr=spr_science_b
@@ -535,3 +535,6 @@ x=clamp(x,oControl.camX+32,oControl.camX+320-32)
 
 if anim!=66
 z=clamp(z,-250,1)
+
+///Used if the above can't end the panic animation
+if anim=595000 {panicbreaker++; if panicbreaker>50 {recovery=0 recoveryThrow=0 panicbreaker=0 canmove=1 anim=0 AnimFrame=0}}

@@ -1,9 +1,10 @@
+var _height=76;
 if other.atk=1
 if hit=0
-if z<other.z+height-8
+if z<other.z+_height-8
 {
 if z>other.z-1
-or z+height-8<other.z+other.height-8
+or z+_height-8<other.z+other.height-8
 {
 if x>other.SourceX sourceCheckX=-1 else sourceCheckX=1 
 if other.hitSource.object_index=oPlayer
