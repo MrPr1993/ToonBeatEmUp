@@ -109,7 +109,7 @@ draw_buttontext(8,240-8-4,8,"",spr_commandbutton,0,"J",oControl.commandL[1])
 if pickedcolor=1
 draw_buttontext(45-32+32+64,184-16+8,8,"",spr_commandbutton,0,"L","",oControl.commandL[11])
 
-draw_buttontext(320-8,240-32,8,commandL[12],spr_commandbutton,0,"H",oControl.commandL[12])
+draw_buttontext(320-8,240-32,8,oControl.commandL[12],spr_commandbutton,0,"H",oControl.commandL[12])
 
 
 
