@@ -13,13 +13,13 @@ if instance_number(oPlayer)!=1
 with oControl
 {
 if instance_number(oPlayer)=2
-{p1.hspeed=-2 p2.hspeed=2}
+{p1.hspeed=-1 p2.hspeed=1}
 else
 {
-p1.hspeed=-2 p1.vspeed=-1
-p2.hspeed=2 p2.vspeed=-1
-p3.hspeed=-2 p3.vspeed=1
-p4.hspeed=2 p4.vspeed=1
+p1.hspeed=-1 p1.vspeed=-0.2
+p2.hspeed=1 p2.vspeed=-0.2
+p3.hspeed=-1 p3.vspeed=0.2
+p4.hspeed=1 p4.vspeed=0.2
 
 }
 

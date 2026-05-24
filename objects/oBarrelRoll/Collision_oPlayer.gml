@@ -9,7 +9,7 @@ if other.immune=0 and other.hurt=0 and other.recovery=0 and other.Throw=0 and ro
 with other hpregister=hp
 other.hp-=damage/(other.defense+other.extradefense)
 with other
-{PlaySoundNoStack(snd_hit) if hpregister!=hp {oControl.perfecthp=0}
+{PlaySoundNoStack(snd_hit) if hpregister!=hp {global.PerfectRun=0;}
 HitType=4 event_user(0) recovery=60
 flashFX(x-8*image_xscale,y+2,z-32,spr_hitflash,0,1,10,1,1,c_white,1)
 }

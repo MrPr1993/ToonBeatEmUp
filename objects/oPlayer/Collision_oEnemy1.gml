@@ -29,7 +29,7 @@ recovery=90
 
 PlaySoundNoStack(snd_hit)
 
-if hpregister!=hp {oControl.perfecthp=0}
+if hpregister!=hp {global.PerfectRun=0;}
 playerFrom=other.playerNO
 hud_show()
 

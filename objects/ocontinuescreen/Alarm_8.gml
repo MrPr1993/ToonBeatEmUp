@@ -20,6 +20,8 @@ if room=rm_stageufo or room=rm_stagemermaid or room=rm_stagedesert
 global.VanBadSceneNext=rm_intermission2
 }
 
+
+
 if global.AllStageMode and global.StageClear=1
 {
 var stnext=rm_stage2
@@ -53,6 +55,7 @@ CutsceneStage=global.StageSave;
 
 if global.StageSelect=1
 {
+bonusstage=0;
 if optionSelect=0
 {
 if global.IsMinigame=1 room_goto(rm_minigames)

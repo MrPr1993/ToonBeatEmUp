@@ -55,10 +55,12 @@ noshowtime=oControl.noshowtime
 nofood=oControl.nofood
 showtimehit=oControl.showtimehit
 nodeath=oControl.nodeath
-perfecthp=oControl.perfecthp
+perfecthp=global.PerfectRun;//oControl.perfecthp
 minigameroom=oControl.minigameroom;
 minigameID=oControl.minigameID;
 minigameIDwin=oControl.minigameIDwin;
+
+
 
 if global.StageClear=1 and room=rm_stagefinal and global.MenuGlobal!=1
 {

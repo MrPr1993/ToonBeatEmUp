@@ -38,7 +38,7 @@ hitresponse() if other.object_index!=oBossHazard other.selfsource.playerFrom=pla
 }if object_index=oBossHazard hitscript()}
 super+=0.25*canSuper
 
-if hpregister!=hp {oControl.perfecthp=0 combo_stop()}
+if hpregister!=hp {global.PerfectRun=0; combo_stop()}
 
 }
 }

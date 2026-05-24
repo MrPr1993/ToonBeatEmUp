@@ -81,7 +81,7 @@ if object_index=oContinueScreen if stageClear=1 and minigameroom=0 and global.Ar
 break;
 
 case 8: featname="Don't Touch the Diva" ///Beat any stage without taking damage
-if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if perfecthp and nodeath setfeats=1}
+if object_index=oContinueScreen if stageClear=1 and minigameroom=0 {if perfecthp>=1 if nodeath setfeats=1}
 break;
 
 case 9: featname="Sorry, I'm on a Diet..." ///Beat any stage without taking any food

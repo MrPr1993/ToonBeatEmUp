@@ -9,7 +9,7 @@ if recovery=0
 hpregister=hp	
 
 hp-=other.thrownAtkDmg/(defense+extradefense)
-if hpregister!=hp {oControl.perfecthp=0}
+if hpregister!=hp {global.PerfectRun=0;}
 
 if !instance_exists(hitSource) hitSource=-1
 

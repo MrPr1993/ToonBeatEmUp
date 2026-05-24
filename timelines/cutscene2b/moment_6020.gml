@@ -334,7 +334,7 @@ if scenetime>=680
 layer_hspeed("Backgrounds_1",-1)	
 
 with oControl
-actor5.z=lerp(actor5.z,70,0.1)
+actor5.z=lerp(actor5.z,30,0.1)
 }
 
 if scenetime=1000{ 

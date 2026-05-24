@@ -23,7 +23,7 @@ function enemy_heavythrow(argument0, argument1, argument2, argument3) {
 	targetID=-1
 	hurt=1 AnimFrame=0 anim=9
 	hpregister=hp
-	hp-=0.25 if hpregister!=hp {oControl.perfecthp=0}
+	hp-=0.25 if hpregister!=hp {global.PerfectRun=0; if object_index=oPlayer combo_stop(); }
 	exit;
 	} 
 	//////////
