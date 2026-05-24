@@ -352,6 +352,6 @@ wobbleY=0.9
 
 if !ground counterNum=3;
 
-if isBoss and hp<=0 {oControl.showtimehit=showtimehit} showtimehit=0
+if isBoss and hp<=0 {if oControl.showtimehit=0 oControl.showtimehit=showtimehit} showtimehit=0
 
 }

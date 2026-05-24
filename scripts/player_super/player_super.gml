@@ -13,6 +13,7 @@ if _checksuper=0 {//player_special()
 	if ground
 	if super>=17.5
 	{
+	oControl.noshowtime=0;
 	canmove=0 atk=0
 	AnimFrame=0
 	anim=50 ///SUPER

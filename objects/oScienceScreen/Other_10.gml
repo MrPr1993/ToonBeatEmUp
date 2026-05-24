@@ -50,3 +50,5 @@ eyeHit=60
 	}
 	
 	if hp=0 or hp<=0 {AnimFrame=0 anim=9999 canmove=0 dead=1 selfatk.atk=0}
+	
+	if isBoss and hp<=0 {if oControl.showtimehit=0 oControl.showtimehit=showtimehit} showtimehit=0

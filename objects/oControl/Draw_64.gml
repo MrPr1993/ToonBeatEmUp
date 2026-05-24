@@ -314,7 +314,7 @@ draw_text(0,96,"PLAYER COUNT:"+string(playernumber)+ "NOEXTRAENEMIES:"+string(no
 }
 
 draw_set_color(c_black)
-draw_text_transformed(8,196,string_hash_to_newline("No Hit: "+string(global.PerfectRun)),0.5,0.5,0)
+draw_text_transformed(8,188,string_hash_to_newline("No Hit: "+string(global.PerfectRun))+" No Death "+string(nodeath)+" No Super "+string(noshowtime)+" Super hit "+string(showtimehit)+" No Food "+string(nofood),0.5,0.5,0)
 draw_text_transformed(8,204,string_hash_to_newline("STRONG MODE: "+string(StrongMode)+string(" Press P to be stronk    X ")+string(oPlayer.x)+string("Y ")+string(oPlayer.y)),0.5,0.5,0)
 draw_text_transformed(8,210,string_hash_to_newline("IGNORE: "+string(oPlayer.ignore)+string(" Press I to disable enemy AI")),0.5,0.5,0)
 draw_text_transformed(8,216,string_hash_to_newline("L click to SPAWN: -"+string(enemySpawnName)+string("- Roll mid mouse to change")),0.5,0.5,0)
