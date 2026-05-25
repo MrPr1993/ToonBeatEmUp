@@ -25,4 +25,9 @@ areaEntry=1
 else {shaketime=30 AnimFrame=0 anim=201 event_user(11)}
 }
 
+if hp!=hpregister
+oControl.perfecthp=0;
+//global.PerfectRun=0;
+hp=hpregister;
+
 }
